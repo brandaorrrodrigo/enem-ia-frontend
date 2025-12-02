@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { GamificationSection, QuestoesSection } from '@/components/landing';
+import ChalkBackToTop from '@/components/ChalkBackToTop';
 
 export default function HomePage() {
   useEffect(() => {
@@ -189,6 +190,8 @@ export default function HomePage() {
         .chalk-line::after { content: ''; position: absolute; left: 0; bottom: -4px; height: 3px; width: 100%; background: rgba(255, 255, 255, 0.3); animation: drawChalk 2.5s ease-in-out forwards; transform-origin: left; transform: scaleX(0); }
         @keyframes drawChalk { to { transform: scaleX(1); } }
       \`}</style>
+
+      <ChalkBackToTop />
     </main>
   );
 }

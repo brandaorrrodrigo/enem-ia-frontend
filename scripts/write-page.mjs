@@ -1,4 +1,6 @@
-'use client';
+import { writeFileSync } from 'fs';
+
+const content = `'use client';
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -181,12 +183,16 @@ export default function HomePage() {
         </div>
       </footer>
 
-      <style jsx>{`
+      <style jsx>{\`
         .chalk-text { font-family: 'Chalkduster', 'Comic Sans MS', cursive; text-shadow: 0 0 2px #fff, 0 0 10px rgba(255, 255, 255, 0.2); }
         .chalk-line { position: relative; display: block; }
         .chalk-line::after { content: ''; position: absolute; left: 0; bottom: -4px; height: 3px; width: 100%; background: rgba(255, 255, 255, 0.3); animation: drawChalk 2.5s ease-in-out forwards; transform-origin: left; transform: scaleX(0); }
         @keyframes drawChalk { to { transform: scaleX(1); } }
-      `}</style>
+      \`}</style>
     </main>
   );
 }
+`;
+
+writeFileSync('app/page.tsx', content);
+console.log('✅ page.tsx atualizado com sucesso!');

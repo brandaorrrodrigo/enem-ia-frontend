@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot ENEM - Assistente Virtual com IA</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #0b3d2e 0%, #1a5c3e 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; display: flex; flex-direction: column; height: 90vh; }
+        .chat-header { background: linear-gradient(135deg, #0b3d2e 0%, #1a5c3e 100%); color: white; padding: 25px; display: flex; align-items: center; gap: 15px; }
+        .chat-header h1 { font-size: 1.8em; }
+        .chat-header .status { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+        .status-dot { width: 12px; height: 12px; background: #4caf50; border-radius: 50%; animation: pulse 2s infinite; }
+        .status-dot.offline { background: #f44336; animation: none; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .chat-messages { flex: 1; padding: 30px; overflow-y: auto; background: #f5f5f5; }
+        .message { margin-bottom: 20px; display: flex; gap: 12px; animation: slideIn 0.3s ease; }
+        @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .message.bot { flex-direction: row; }
+        .message.user { flex-direction: row-reverse; }
+        .message-avatar { width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5em; flex-shrink: 0; }
+        .message.bot .message-avatar { background: linear-gradient(135deg, #0b3d2e 0%, #1a5c3e 100%); }
+        .message.user .message-avatar { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .message-content { max-width: 70%; padding: 15px 20px; border-radius: 18px; line-height: 1.6; }
+        .message.bot .message-content { background: white; color: #333; border-bottom-left-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .message.user .message-content { background: linear-gradient(135deg, #0b3d2e 0%, #1a5c3e 100%); color: white; border-bottom-right-radius: 5px; }
+        .chat-input-area { padding: 20px; background: white; border-top: 1px solid #e0e0e0; }
+        .input-container { display: flex; gap: 12px; align-items: center; }
+        #messageInput { flex: 1; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 25px; font-size: 1em; outline: none; transition: border-color 0.3s ease; }
+        #messageInput:focus { border-color: #0b3d2e; }
+        #sendBtn { background: linear-gradient(135deg, #0b3d2e 0%, #1a5c3e 100%); color: white; border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 1.3em; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; }
+        #sendBtn:hover { transform: scale(1.1); box-shadow: 0 5px 15px rgba(11, 61, 46, 0.4); }
+        #sendBtn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+        .typing-indicator { display: none; padding: 15px; background: white; border-radius: 18px; width: fit-content; }
+        .typing-indicator.active { display: flex; gap: 5px; }
+        .typing-dot { width: 8px; height: 8px; background: #999; border-radius: 50%; animation: typing 1.4s infinite; }
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typing { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-10px); } }
+        .back-btn { display: inline-block; background: white; color: #0b3d2e; padding: 10px 25px; border-radius: 20px; text-decoration: none; transition: all 0.3s ease; border: 2px solid white; }
+        .back-btn:hover { background: rgba(255,255,255,0.2); color: white; }
+        .quick-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 15px; }
+        .quick-action-card { background: #f8f9fa; padding: 15px; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; border-left: 4px solid #0b3d2e; }
+        .quick-action-card:hover { background: #e9ecef; transform: translateX(5px); }
+        .quick-action-card h4 { color: #0b3d2e; margin-bottom: 5px; font-size: 1em; }
+        .quick-action-card p { color: #666; font-size: 0.85em; }
+        .ai-badge { background: rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 12px; font-size: 0.75em; margin-left: 10px; }
+        code { background: #e8e8e8; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+        @media (max-width: 768px) { .container { height: 100vh; border-radius: 0; } .message-content { max-width: 85%; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <span style="font-size: 2em;">🤖</span>
+            <div>
+                <h1>ChatBot ENEM <span class="ai-badge">Powered by Llama</span></h1>
+                <small>Assistente Virtual com Inteligencia Artificial</small>
+            </div>
+            <div class="status">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Conectando...</span>
+            </div>
+            <a href="index.html" class="back-btn">← Voltar</a>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-avatar">🤖</div>
+                <div>
+                    <div class="message-content">
+                        <strong>Ola! 👋 Sou seu tutor de ENEM com Inteligencia Artificial!</strong><br><br>
+                        Diferente de chatbots comuns, eu uso IA para entender suas duvidas e responder de forma personalizada. Posso te ajudar com:
+                        <ul style="margin: 10px 0 10px 20px;">
+                            <li>Explicar conteudos de qualquer disciplina</li>
+                            <li>Resolver questoes passo a passo</li>
+                            <li>Dicas personalizadas de estudo</li>
+                            <li>Tecnicas de redacao nota 1000</li>
+                            <li>Tirar duvidas especificas</li>
+                        </ul>
+                        Pergunte qualquer coisa sobre o ENEM!
+                    </div>
+                    <div class="quick-actions">
+                        <div class="quick-action-card" onclick="sendQuickMessage('Me explique como fazer uma redacao nota 1000 no ENEM')">
+                            <h4>✍️ Redacao</h4>
+                            <p>Dicas completas para nota maxima</p>
+                        </div>
+                        <div class="quick-action-card" onclick="sendQuickMessage('Quais sao os conteudos mais importantes de matematica para o ENEM?')">
+                            <h4>🔢 Matematica</h4>
+                            <p>Conteudos essenciais</p>
+                        </div>
+                        <div class="quick-action-card" onclick="sendQuickMessage('Como organizar um cronograma de estudos eficiente para o ENEM?')">
+                            <h4>📅 Cronograma</h4>
+                            <p>Organize seu tempo</p>
+                        </div>
+                        <div class="quick-action-card" onclick="sendQuickMessage('Estou muito ansioso com o ENEM, como lidar com isso?')">
+                            <h4>🧘 Ansiedade</h4>
+                            <p>Controle seu estresse</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <div class="input-container">
+                <input type="text" id="messageInput" placeholder="Digite sua pergunta sobre o ENEM..." onkeypress="handleKeyPress(event)">
+                <button id="sendBtn" onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const OLLAMA_URL = 'http://127.0.0.1:11434';
+        const OLLAMA_MODEL = 'llama3';
+        let conversationHistory = [];
+        let isConnected = false;
+        const SYSTEM_PROMPT = 'Voce e um tutor especializado em preparacao para o ENEM (Exame Nacional do Ensino Medio do Brasil). Suas caracteristicas: Responde SEMPRE em portugues brasileiro, e didatico, paciente e motivador, usa exemplos praticos do dia a dia, conhece profundamente todas as areas do ENEM: Linguagens, Matematica, Ciencias da Natureza, Ciencias Humanas e Redacao, da dicas de estudo e organizacao, ajuda com ansiedade e saude mental relacionada aos estudos, usa emojis moderadamente para tornar a conversa mais amigavel, responde de forma clara e estruturada com topicos quando apropriado. Importante: Mantenha as respostas concisas (maximo 400 palavras) mas completas e uteis. Sempre que explicar um conceito, use exemplos praticos. Se a pergunta for sobre uma questao especifica, resolva passo a passo.';
+
+        async function checkOllamaConnection() {
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000);
+                const response = await fetch(OLLAMA_URL + '/api/tags', { method: 'GET', signal: controller.signal });
+                clearTimeout(timeoutId);
+                if (response.ok) {
+                    const data = await response.json();
+                    const hasModel = data.models && data.models.some(m => m.name.includes('llama'));
+                    updateStatus(true, hasModel ? 'IA Online' : 'Modelo nao encontrado');
+                    return hasModel;
+                }
+            } catch (error) { console.log('Ollama nao disponivel:', error.message); }
+            updateStatus(false, 'IA Offline');
+            return false;
+        }
+
+        function updateStatus(online, text) {
+            isConnected = online;
+            document.getElementById('statusDot').className = online ? 'status-dot' : 'status-dot offline';
+            document.getElementById('statusText').textContent = text;
+        }
+
+        async function callLlama(userMessage) {
+            conversationHistory.push({ role: 'user', content: userMessage });
+            let fullPrompt = SYSTEM_PROMPT + '\n\n';
+            const recentHistory = conversationHistory.slice(-10);
+            for (const msg of recentHistory) {
+                fullPrompt += (msg.role === 'user' ? 'Aluno: ' : 'Tutor: ') + msg.content + '\n';
+            }
+            fullPrompt += 'Tutor:';
+            try {
+                const response = await fetch(OLLAMA_URL + '/api/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ model: OLLAMA_MODEL, prompt: fullPrompt, stream: false, options: { temperature: 0.7, top_p: 0.9, num_predict: 600 } })
+                });
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                const data = await response.json();
+                const assistantMessage = data.response.trim();
+                conversationHistory.push({ role: 'assistant', content: assistantMessage });
+                updateStatus(true, 'IA Online');
+                return { success: true, message: assistantMessage };
+            } catch (error) {
+                console.error('Erro ao chamar Llama:', error);
+                updateStatus(false, 'Erro de conexao');
+                return { success: false, message: '⚠️ <strong>Nao consegui conectar ao servidor de IA.</strong><br><br><strong>Para usar o chatbot com IA:</strong><br>1. Abra o terminal<br>2. Execute: <code>ollama serve</code><br>3. Em outro terminal: <code>ollama pull llama3</code><br>4. Recarregue esta pagina<br><br><strong>Erro:</strong> ' + error.message };
+            }
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const sendBtn = document.getElementById('sendBtn');
+            const message = input.value.trim();
+            if (message === '') return;
+            input.disabled = true;
+            sendBtn.disabled = true;
+            addUserMessage(message);
+            input.value = '';
+            showTypingIndicator();
+            try {
+                const response = await callLlama(message);
+                hideTypingIndicator();
+                addBotMessage(response.message);
+            } catch (error) {
+                hideTypingIndicator();
+                addBotMessage('❌ Erro ao processar sua mensagem. Verifique se o Ollama esta rodando.');
+            }
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+
+        function sendQuickMessage(message) {
+            document.getElementById('messageInput').value = message;
+            sendMessage();
+        }
+
+        function addUserMessage(message) {
+            const messagesDiv = document.getElementById('chatMessages');
+            const escapedMessage = message.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            messagesDiv.insertAdjacentHTML('beforeend', '<div class="message user"><div class="message-avatar">👤</div><div class="message-content">' + escapedMessage + '</div></div>');
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function addBotMessage(message) {
+            const messagesDiv = document.getElementById('chatMessages');
+            let formattedMessage = message.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>').replace(/`(.*?)`/g, '<code>$1</code>').replace(/\n/g, '<br>');
+            messagesDiv.insertAdjacentHTML('beforeend', '<div class="message bot"><div class="message-avatar">🤖</div><div><div class="message-content">' + formattedMessage + '</div></div></div>');
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            const messagesDiv = document.getElementById('chatMessages');
+            messagesDiv.insertAdjacentHTML('beforeend', '<div class="message bot" id="typingIndicator"><div class="message-avatar">🤖</div><div class="typing-indicator active"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div></div>');
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function hideTypingIndicator() {
+            const indicator = document.getElementById('typingIndicator');
+            if (indicator) indicator.remove();
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); sendMessage(); }
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            document.getElementById('messageInput').focus();
+            await checkOllamaConnection();
+            setInterval(checkOllamaConnection, 30000);
+        });
+    </script>
+</body>
+</html>

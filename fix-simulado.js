@@ -1,4 +1,6 @@
-'use client';
+const fs = require('fs');
+
+const content = `'use client';
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -69,7 +71,7 @@ export default function SimuladoInicioPage() {
               <label className="block text-white font-bold text-lg mb-4">📝 Questoes: <span className="text-emerald-400">{quantidade}</span></label>
               <div className="grid grid-cols-3 gap-3 mb-4">
                 {[10, 15, 20].map(qtd => (
-                  <button key={qtd} onClick={() => setQuantidade(qtd)} className={`py-3 rounded-lg font-medium transition-all ${quantidade === qtd ? 'bg-emerald-600 text-white' : 'bg-white/10 text-gray-300 hover:bg-white/20'}`}>{qtd} questoes</button>
+                  <button key={qtd} onClick={() => setQuantidade(qtd)} className={\`py-3 rounded-lg font-medium transition-all \${quantidade === qtd ? 'bg-emerald-600 text-white' : 'bg-white/10 text-gray-300 hover:bg-white/20'}\`}>{qtd} questoes</button>
                 ))}
               </div>
               <input type="range" min="5" max="30" step="5" value={quantidade} onChange={(e) => setQuantidade(parseInt(e.target.value))} className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer" />
@@ -80,7 +82,7 @@ export default function SimuladoInicioPage() {
               <label className="block text-white font-bold text-lg mb-4">📚 Area de Conhecimento</label>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {[{ id: '', label: '🌐 Todas' }, { id: 'matematica', label: '📐 Matematica' }, { id: 'linguagens', label: '📚 Linguagens' }, { id: 'humanas', label: '🌍 Humanas' }, { id: 'natureza', label: '🔬 Natureza' }].map(opt => (
-                  <button key={opt.id} onClick={() => setArea(opt.id)} className={`p-3 rounded-lg transition-all ${area === opt.id ? 'bg-emerald-600 border-2 border-emerald-400' : 'bg-white/10 border-2 border-transparent hover:bg-white/20'}`}>{opt.label}</button>
+                  <button key={opt.id} onClick={() => setArea(opt.id)} className={\`p-3 rounded-lg transition-all \${area === opt.id ? 'bg-emerald-600 border-2 border-emerald-400' : 'bg-white/10 border-2 border-transparent hover:bg-white/20'}\`}>{opt.label}</button>
                 ))}
               </div>
             </div>
@@ -110,3 +112,7 @@ export default function SimuladoInicioPage() {
     </div>
   );
 }
+`;
+
+fs.writeFileSync('D:/enem-ia/enem-pro/app/enem/simulado/page.tsx', content);
+console.log('Simulado page fixed!');

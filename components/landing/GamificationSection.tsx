@@ -6,8 +6,8 @@ export function GamificationSection() {
   const features = [
     {
       icon: '⭐',
-      title: 'XP e níveis',
-      description: 'Ganhe XP ao responder questões, finalizar simulados e manter sua sequência de estudos ativa. Suba de nível e desbloqueie conquistas!',
+      title: 'FP e niveis',
+      description: 'Ganhe FP (Focus Points) ao responder questoes, finalizar simulados e manter sua sequencia de estudos ativa. Suba de nivel e desbloqueie conquistas!',
     },
     {
       icon: '🏆',
@@ -81,7 +81,7 @@ export function GamificationSection() {
               </div>
               <div>
                 <div className="text-white font-bold text-lg">Nível Expert</div>
-                <div className="text-white/60 text-sm">3.450 XP totais</div>
+                <div className="text-white/60 text-sm">3.450 FP totais</div>
               </div>
             </div>
 
@@ -108,7 +108,7 @@ export function GamificationSection() {
               <div className="h-3 bg-white/20 rounded-full overflow-hidden">
                 <div className="h-full w-3/4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full" />
               </div>
-              <div className="text-white/60 text-xs mt-1 text-right">550 XP restantes</div>
+              <div className="text-white/60 text-xs mt-1 text-right">550 FP restantes</div>
             </div>
           </div>
         </motion.div>

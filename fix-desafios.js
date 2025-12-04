@@ -1,4 +1,6 @@
-'use client';
+const fs = require('fs');
+
+const content = `'use client';
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
@@ -73,7 +75,7 @@ export default function DesafiosPage() {
     setFpTotal(novoFP);
     coletados.push(desafioId);
     localStorage.setItem('desafios_coletados', JSON.stringify(coletados));
-    alert(`🎉 Parabéns! Você ganhou +${desafio.recompensaFP} FP!`);
+    alert(\`🎉 Parabéns! Você ganhou +\${desafio.recompensaFP} FP!\`);
     carregarDesafios();
   };
 
@@ -120,7 +122,7 @@ export default function DesafiosPage() {
 
         <div className="flex flex-wrap gap-2 mb-8">
           {['todos', 'diario', 'semanal', 'mensal', 'especial'].map(tipo => (
-            <button key={tipo} onClick={() => setFiltroTipo(tipo)} className={`px-4 py-2 rounded-xl font-medium transition ${filtroTipo === tipo ? 'bg-emerald-500 text-white' : 'bg-white/10 text-white/70 hover:bg-white/20'}`}>
+            <button key={tipo} onClick={() => setFiltroTipo(tipo)} className={\`px-4 py-2 rounded-xl font-medium transition \${filtroTipo === tipo ? 'bg-emerald-500 text-white' : 'bg-white/10 text-white/70 hover:bg-white/20'}\`}>
               {tipo === 'todos' ? '📋 Todos' : tipo === 'diario' ? '☀️ Diários' : tipo === 'semanal' ? '📅 Semanais' : tipo === 'mensal' ? '🗓️ Mensais' : '⭐ Especiais'}
             </button>
           ))}
@@ -134,13 +136,13 @@ export default function DesafiosPage() {
             const jaColetou = coletados.includes(desafio.id);
 
             return (
-              <div key={desafio.id} className={`card-ia relative overflow-hidden ${jaColetou ? 'opacity-60' : ''}`}>
+              <div key={desafio.id} className={\`card-ia relative overflow-hidden \${jaColetou ? 'opacity-60' : ''}\`}>
                 {jaColetou && <div className="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">✓ Coletado</div>}
                 {completo && !jaColetou && <div className="absolute top-4 right-4 bg-yellow-500 text-slate-900 text-xs font-bold px-2 py-1 rounded-full animate-pulse">🎁 Coletar!</div>}
 
                 <div className="flex items-start justify-between mb-4">
-                  <div className={`w-14 h-14 bg-gradient-to-br ${desafio.cor} rounded-xl flex items-center justify-center text-2xl`}>{desafio.icone}</div>
-                  <span className={`px-2 py-1 rounded-full text-xs font-bold border ${badge.cor}`}>{badge.label}</span>
+                  <div className={\`w-14 h-14 bg-gradient-to-br \${desafio.cor} rounded-xl flex items-center justify-center text-2xl\`}>{desafio.icone}</div>
+                  <span className={\`px-2 py-1 rounded-full text-xs font-bold border \${badge.cor}\`}>{badge.label}</span>
                 </div>
 
                 <h3 className="text-white font-bold text-lg mb-1">{desafio.titulo}</h3>
@@ -149,10 +151,10 @@ export default function DesafiosPage() {
                 <div className="mb-4">
                   <div className="flex justify-between text-sm mb-1">
                     <span className="text-white/70">{desafio.progresso}/{desafio.meta}</span>
-                    <span className={`font-bold ${completo ? 'text-emerald-400' : 'text-white/70'}`}>{percentual}%</span>
+                    <span className={\`font-bold \${completo ? 'text-emerald-400' : 'text-white/70'}\`}>{percentual}%</span>
                   </div>
                   <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
-                    <div className={`h-full transition-all duration-500 rounded-full ${completo ? 'bg-emerald-500' : `bg-gradient-to-r ${desafio.cor}`}`} style={{ width: `${Math.min(percentual, 100)}%` }} />
+                    <div className={\`h-full transition-all duration-500 rounded-full \${completo ? 'bg-emerald-500' : \`bg-gradient-to-r \${desafio.cor}\`}\`} style={{ width: \`\${Math.min(percentual, 100)}%\` }} />
                   </div>
                 </div>
 
@@ -181,3 +183,7 @@ export default function DesafiosPage() {
     </div>
   );
 }
+`;
+
+fs.writeFileSync('D:/enem-ia/enem-pro/app/enem/desafios/page.tsx', content);
+console.log('Desafios page fixed!');

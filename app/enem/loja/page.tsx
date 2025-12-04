@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import ChalkBackToTop from '@/components/ChalkBackToTop';
+import FloatingNav from '@/components/FloatingNav';
 import {
   ShoppingBag,
   Sparkles,
@@ -50,101 +52,9 @@ export default function LojaPage() {
     carregarDados();
   }, []);
 
-  async function carregarDados() {
-    try {
-      setLoading(true);
+  function carregarDados() { try { setLoading(true); const fpTotal = parseInt(localStorage.getItem("fp_total") || "0"); setUser({ id: "1", nome: "Estudante", email: "estudante@enem-ia.com", pontosFP: fpTotal, nivel: fpTotal >= 1000 ? "Gold" : "Bronze" }); setRewards([{ id: "r1", nome: "Tema Escuro Premium", descricao: "Desbloqueie o tema escuro exclusivo", custoFP: 500, icone: "Star", categoria: "cosmetic", ativo: true, unico: true },{ id: "r2", nome: "Boost de XP 2x", descricao: "Ganhe o dobro de XP nos proximos 5 simulados", custoFP: 300, icone: "Zap", categoria: "boost", ativo: true, unico: false },{ id: "r3", nome: "Avatar Coruja", descricao: "Avatar especial de coruja para seu perfil", custoFP: 200, icone: "Crown", categoria: "cosmetic", ativo: true, unico: true },{ id: "r4", nome: "Distintivo ENEM Master", descricao: "Mostre que voce e um mestre do ENEM", custoFP: 1000, icone: "Trophy", categoria: "premium", ativo: true, unico: true },{ id: "r5", nome: "Dicas Extra IA", descricao: "Receba 10 dicas extras da IA nas questoes", custoFP: 150, icone: "Sparkles", categoria: "item", ativo: true, unico: false }]); } catch (err) { setError("Erro ao carregar dados da loja"); } finally { setLoading(false); } }
 
-      // Buscar usuário (do localStorage ou API)
-      const userLocal = localStorage.getItem('user');
-      if (userLocal) {
-        setUser(JSON.parse(userLocal));
-      }
-
-      // Buscar recompensas da loja (API REAL)
-      const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000';
-      const response = await fetch(`${BACKEND_URL}/api/enem/rewards/loja`);
-      const data = await response.json();
-
-      if (data.recompensas) {
-        // Mapeia para formato esperado
-        const mappedRewards = data.recompensas.map((r: any) => ({
-          id: r.id,
-          nome: r.titulo,
-          descricao: r.descricao,
-          custoFP: r.custoFP,
-          icone: r.emoji === '🌟' ? 'Star' : r.emoji === '👑' ? 'Crown' : r.emoji === '🔥' ? 'Flame' : 'Gift',
-          categoria: r.categoria,
-          ativo: r.disponivel,
-          unico: false
-        }));
-        setRewards(mappedRewards);
-      } else {
-        setError('Erro ao carregar loja');
-      }
-    } catch (err) {
-      console.error('Erro ao carregar dados:', err);
-      setError('Erro ao carregar dados da loja');
-    } finally {
-      setLoading(false);
-    }
-  }
-
-  async function resgatar(reward: Reward) {
-    if (!user) {
-      setError('Você precisa estar logado para resgatar recompensas');
-      return;
-    }
-
-    if (user.pontosFP < reward.custoFP) {
-      setError(`Você precisa de ${reward.custoFP - user.pontosFP} FP a mais para resgatar esta recompensa`);
-      return;
-    }
-
-    try {
-      setResgatando(reward.id);
-      setError(null);
-
-      const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000';
-      const userId = localStorage.getItem('user_email') || user.email;
-
-      const response = await fetch(`${BACKEND_URL}/api/enem/rewards/resgatar`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          user_id: userId,
-          reward_id: reward.id
-        })
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        // Atualizar FP do usuário
-        const updatedUser = { ...user, pontosFP: data.fp_restante };
-        setUser(updatedUser);
-        localStorage.setItem('user', JSON.stringify(updatedUser));
-
-        setSuccessMessage(`${reward.nome} resgatado com sucesso! 🎉`);
-
-        // Limpar mensagem após 3s
-        setTimeout(() => setSuccessMessage(null), 3000);
-
-        // Recarregar se for recompensa única
-        if (reward.unico) {
-          await carregarDados();
-        }
-      } else {
-        setError(data.mensagem || 'Erro ao resgatar recompensa');
-      }
-    } catch (err) {
-      console.error('Erro ao resgatar:', err);
-      setError('Erro ao resgatar recompensa');
-    } finally {
-      setResgatando(null);
-    }
-  }
+  function resgatar(reward: Reward) { if (!user) { setError("Voce precisa estar logado"); return; } if (user.pontosFP < reward.custoFP) { setError("FP insuficientes"); return; } setResgatando(reward.id); const novoFP = user.pontosFP - reward.custoFP; localStorage.setItem("fp_total", String(novoFP)); const resgatadas = JSON.parse(localStorage.getItem("recompensas_resgatadas") || "[]"); resgatadas.push(reward.id); localStorage.setItem("recompensas_resgatadas", JSON.stringify(resgatadas)); setUser({ ...user, pontosFP: novoFP }); setSuccessMessage(reward.nome + " resgatado com sucesso!"); setTimeout(() => setSuccessMessage(null), 3000); if (reward.unico) { setRewards(rewards.filter(r => r.id !== reward.id)); } setResgatando(null); }
 
   function getIconComponent(iconName?: string) {
     const icons: Record<string, any> = {
@@ -184,15 +94,7 @@ export default function LojaPage() {
     <main className="min-h-screen bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50">
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Header */}
-        <div className="mb-8">
-          <button
-            onClick={() => router.back()}
-            className="flex items-center gap-2 text-emerald-700 hover:text-emerald-900 mb-4 transition-colors"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            Voltar
-          </button>
-
+        <div className="mb-8 pt-16">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
               <h1 className="text-3xl md:text-4xl font-extrabold text-emerald-900 flex items-center gap-3 mb-2">
@@ -325,6 +227,8 @@ export default function LojaPage() {
           </div>
         </div>
       </div>
+
+      <ChalkBackToTop />
     </main>
   );
 }

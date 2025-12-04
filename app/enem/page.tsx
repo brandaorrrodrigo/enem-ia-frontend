@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import ChalkBackToTop from '@/components/ChalkBackToTop';
 
 export default function ENEMHomePage() {
   const router = useRouter();
@@ -189,12 +190,110 @@ export default function ENEMHomePage() {
         </div>
       </section>
 
+      {/* REDE SOCIAL */}
+      <section className="pb-16">
+        <div className="max-w-5xl mx-auto">
+          <div className="card-ia p-8 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-2 border-purple-400/30">
+            <div className="text-center mb-6">
+              <h2 className="title-ia-sm mb-2">📱 ENEM-IA Social</h2>
+              <p className="text-white/70">Conecte-se, compita e evolua com outros estudantes!</p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <Link
+                href="/enem/feed"
+                className="card-ia p-4 text-center hover:scale-105 transition-transform bg-white/5"
+              >
+                <span className="text-4xl mb-2 block">📱</span>
+                <span className="text-white font-bold text-sm block">Feed Social</span>
+                <span className="text-white/50 text-xs">Veja o que rola</span>
+              </Link>
+
+              <Link
+                href="/enem/ranking"
+                className="card-ia p-4 text-center hover:scale-105 transition-transform bg-white/5"
+              >
+                <span className="text-4xl mb-2 block">🏆</span>
+                <span className="text-white font-bold text-sm block">Ranking</span>
+                <span className="text-white/50 text-xs">Ligas e competicao</span>
+              </Link>
+
+              <Link
+                href="/enem/perfil"
+                className="card-ia p-4 text-center hover:scale-105 transition-transform bg-white/5"
+              >
+                <span className="text-4xl mb-2 block">👤</span>
+                <span className="text-white font-bold text-sm block">Meu Perfil</span>
+                <span className="text-white/50 text-xs">Suas conquistas</span>
+              </Link>
+
+              <Link
+                href="/enem/amigos"
+                className="card-ia p-4 text-center hover:scale-105 transition-transform bg-white/5"
+              >
+                <span className="text-4xl mb-2 block">👥</span>
+                <span className="text-white font-bold text-sm block">Amigos</span>
+                <span className="text-white/50 text-xs">Conecte-se</span>
+              </Link>
+            </div>
+
+            <div className="text-center mt-6">
+              <p className="text-white/60 text-sm">
+                🔥 O feed esta fervendo! Seus amigos estao subindo no ranking. Bora competir?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ACESSO RAPIDO */}
+      <section className="pb-16">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="title-ia-sm text-center mb-8">Acesso Rapido</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              { nome: 'Contra Relogio', emoji: '⏳', descricao: 'Simulado cronometrado', url: '/enem/simulado-relogio' },
+              { nome: 'Quiz Diario', emoji: '🎯', descricao: '5 questoes + streak', url: '/enem/quiz-diario' },
+              { nome: 'Pomodoro', emoji: '🍅', descricao: 'Timer de foco + FP', url: '/enem/pomodoro' },
+              { nome: 'Dashboard', emoji: '📊', descricao: 'Seu progresso', url: '/enem/dashboard' },
+              { nome: 'Cronograma', emoji: '📅', descricao: 'Planeje seus estudos', url: '/enem/cronograma' },
+              { nome: 'Biblioteca', emoji: '📚', descricao: 'E-books e PDFs', url: '/enem/biblioteca' },
+              { nome: 'Videoaulas', emoji: '🎬', descricao: 'Canais e plataformas', url: '/enem/videoaulas' },
+              { nome: 'Materiais', emoji: '📂', descricao: 'Resumos e formulas', url: '/enem/materiais' },
+              { nome: 'Questoes', emoji: '❓', descricao: 'Questoes comentadas', url: '/enem/questoes-comentadas' },
+              { nome: 'Chatbot IA', emoji: '🤖', descricao: 'Tire suas duvidas', url: '/enem/chatbot' },
+              { nome: 'Gerador IA', emoji: '🧠', descricao: 'Gere questoes', url: '/enem/gerador-questoes' },
+              { nome: 'Organizacao', emoji: '🎯', descricao: 'Metas e habitos', url: '/enem/organizacao' },
+              { nome: 'Tecnicas', emoji: '💡', descricao: 'Metodos de estudo', url: '/enem/tecnicas' },
+              { nome: 'Batalha', emoji: '⚔️', descricao: 'Desafie amigos', url: '/enem/batalha' },
+              { nome: 'Conquistas', emoji: '🏆', descricao: 'Suas medalhas', url: '/enem/conquistas' },
+              { nome: 'Desafios', emoji: '🎖️', descricao: 'Ganhe FP', url: '/enem/desafios' },
+              { nome: 'Loja', emoji: '🛒', descricao: 'Troque seus FP', url: '/enem/loja' },
+              { nome: 'Feed Social', emoji: '📱', descricao: 'Veja a comunidade', url: '/enem/feed' },
+              { nome: 'Ranking', emoji: '🏅', descricao: 'Ligas e posicoes', url: '/enem/ranking' },
+              { nome: 'Meu Perfil', emoji: '👤', descricao: 'Suas conquistas', url: '/enem/perfil' },
+              { nome: 'Amigos', emoji: '👥', descricao: 'Conecte-se', url: '/enem/amigos' },
+            ].map((recurso) => (
+              <Link
+                key={recurso.url}
+                href={recurso.url}
+                className="card-ia p-4 hover:scale-105 transition-transform text-center group"
+              >
+                <div className="text-4xl mb-2 group-hover:scale-110 transition-transform">{recurso.emoji}</div>
+                <h3 className="text-white font-bold text-sm mb-1">{recurso.nome}</h3>
+                <p className="text-white/60 text-xs">{recurso.descricao}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA FINAL */}
       <section className="pb-20">
         <div className="max-w-3xl mx-auto card-ia text-center" style={{ padding: '40px' }}>
-          <h2 className="title-ia-sm text-3xl mb-4">Pronto para começar?</h2>
+          <h2 className="title-ia-sm text-3xl mb-4">Pronto para comecar?</h2>
           <p className="text-white text-lg leading-relaxed mb-8">
-            Transforme seu estudo com inteligência artificial e alcance seus objetivos no ENEM.
+            Transforme seu estudo com inteligencia artificial e alcance seus objetivos no ENEM.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <button
@@ -212,10 +311,12 @@ export default function ENEMHomePage() {
             </Link>
           </div>
           <p className="text-white/70 text-sm">
-            Junte-se a milhares de estudantes que já estão se preparando com o ENEM-IA ✨
+            Junte-se a milhares de estudantes que ja estao se preparando com o ENEM-IA
           </p>
         </div>
       </section>
+
+      <ChalkBackToTop />
     </div>
   );
 }

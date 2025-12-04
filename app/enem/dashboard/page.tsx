@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import CourseSelector from '@/components/CourseSelector';
+import ChalkBackToTop from '@/components/ChalkBackToTop';
+import FloatingNav from '@/components/FloatingNav';
 
 interface Simulado {
   id: string;
@@ -38,7 +40,7 @@ export default function DashboardPage() {
   const [stats, setStats] = useState<UsuarioStats | null>(null);
   const [desempenhoPorArea, setDesempenhoPorArea] = useState<DesempenhoPorArea[]>([]);
 
-  const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000';
+  
 
   useEffect(() => {
     const storedUserId = localStorage.getItem('user_email') || 'usuario@enem-ia.com';
@@ -46,89 +48,7 @@ export default function DashboardPage() {
     loadDashboardData(storedUserId);
   }, []);
 
-  const loadDashboardData = async (userId: string) => {
-    setLoading(true);
-    setError('');
-
-    try {
-      // Tentar carregar dados reais
-      const [historyRes, statsRes, areaRes] = await Promise.allSettled([
-        fetch(`${BACKEND_URL}/api/enem/simulados/history?user_id=${encodeURIComponent(userId)}`),
-        fetch(`${BACKEND_URL}/api/enem/usuario/stats?user_id=${encodeURIComponent(userId)}`),
-        fetch(`${BACKEND_URL}/api/enem/stats/por-area?user_id=${encodeURIComponent(userId)}`),
-      ]);
-
-      // Processar histórico
-      if (historyRes.status === 'fulfilled' && historyRes.value.ok) {
-        const data = await historyRes.value.json();
-        setSimulados(data.simulados || []);
-      } else {
-        // Dados mockados se falhar
-        setSimulados([
-          {
-            id: '1',
-            disciplina: 'Matemática',
-            nota: 720,
-            acertos: 32,
-            total: 45,
-            porcentagem: '71%',
-            data: '2024-11-10',
-          },
-          {
-            id: '2',
-            disciplina: 'Linguagens',
-            nota: 680,
-            acertos: 28,
-            total: 45,
-            porcentagem: '62%',
-            data: '2024-11-08',
-          },
-        ]);
-      }
-
-      // Processar stats
-      if (statsRes.status === 'fulfilled' && statsRes.value.ok) {
-        const data = await statsRes.value.json();
-        setStats(data);
-      } else {
-        setStats({
-          email: userId,
-          nome: 'Estudante',
-          pontosFP: 1250,
-          nivel: 'Gold',
-          streak: 7,
-        });
-      }
-
-      // Processar áreas
-      if (areaRes.status === 'fulfilled' && areaRes.value.ok) {
-        const data = await areaRes.value.json();
-        setDesempenhoPorArea(data.desempenho || []);
-      } else {
-        setDesempenhoPorArea([
-          { area: 'Matemática', porcentagem: 75, simulados: 3 },
-          { area: 'Linguagens', porcentagem: 68, simulados: 2 },
-          { area: 'Ciências Humanas', porcentagem: 82, simulados: 2 },
-          { area: 'Ciências Natureza', porcentagem: 71, simulados: 1 },
-        ]);
-      }
-
-      setLoading(false);
-    } catch (err: any) {
-      console.error('Erro ao carregar dashboard:', err);
-      // Usar dados mockados em caso de erro
-      setStats({
-        email: userId,
-        nome: 'Estudante',
-        pontosFP: 1250,
-        nivel: 'Gold',
-        streak: 7,
-      });
-      setSimulados([]);
-      setDesempenhoPorArea([]);
-      setLoading(false);
-    }
-  };
+  const loadDashboardData = (userId: string) => { setLoading(true); try { const historicoStr = localStorage.getItem("historico_simulados") || "[]"; const historico = JSON.parse(historicoStr); const simuladosFormatados = historico.map((h: any) => ({ id: h.id, disciplina: h.area === "todas" ? "Todas as Areas" : h.area, nota: h.nota, acertos: h.acertos, total: h.total, porcentagem: Math.round((h.acertos / h.total) * 100) + "%", data: new Date(h.data).toLocaleDateString("pt-BR") })); setSimulados(simuladosFormatados); const fpTotal = parseInt(localStorage.getItem("fp_total") || "0"); const streakDias = parseInt(localStorage.getItem("streak_dias") || "0"); let nivel = "Bronze"; if (fpTotal >= 5000) nivel = "Diamante"; else if (fpTotal >= 2000) nivel = "Platina"; else if (fpTotal >= 1000) nivel = "Gold"; else if (fpTotal >= 500) nivel = "Prata"; setStats({ email: userId, nome: "Estudante", pontosFP: fpTotal, nivel: nivel, streak: streakDias }); setDesempenhoPorArea([]); setLoading(false); } catch (err: any) { console.error("Erro:", err); setStats({ email: userId, nome: "Estudante", pontosFP: 0, nivel: "Bronze", streak: 0 }); setSimulados([]); setDesempenhoPorArea([]); setLoading(false); } };
 
   const calcularMediaNotas = (): number => {
     if (simulados.length === 0) return 0;
@@ -151,10 +71,20 @@ export default function DashboardPage() {
 
   return (
     <div className="container-ia min-h-screen py-8">
+      <FloatingNav />
+
+      {/* Slogan Oficial */}
+      <div className="card-ia p-4 mb-6 mt-16 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border-2 border-yellow-400/30 text-center">
+        <p className="text-yellow-300 font-bold text-lg md:text-xl italic">
+          "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
+        </p>
+        <p className="text-white/60 text-sm mt-1">🎯 ENEM-IA - Onde aprender vira jogo</p>
+      </div>
+
       {/* Header */}
       <div className="mb-8">
         <h1 className="title-ia mb-2">📊 Dashboard</h1>
-        <p className="subtitle-ia mb-0">Acompanhe seu progresso e estatísticas</p>
+        <p className="subtitle-ia mb-0">Acompanhe seu progresso e estatisticas</p>
       </div>
 
       {/* Estatísticas Principais */}
@@ -308,6 +238,8 @@ export default function DashboardPage() {
           </div>
         )}
       </div>
+
+      <ChalkBackToTop />
     </div>
   );
 }

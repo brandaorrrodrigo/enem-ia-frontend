@@ -47,14 +47,26 @@ export default function HomePage() {
             </motion.div>
           </motion.div>
 
+          {/* Slogan Oficial */}
+          <motion.div
+            className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 mb-6 border border-yellow-400/30"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <p className="text-yellow-300 font-bold text-xl md:text-2xl italic">
+              "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
+            </p>
+          </motion.div>
+
           <motion.p
             className="text-lg md:text-xl text-white/90 max-w-2xl mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            Simulados personalizados, correção inteligente, histórico de desempenho detalhado e um sistema de pontos
-            que transforma seus estudos em um jogo diário rumo à aprovação.
+            Simulados personalizados, correcao inteligente, historico de desempenho detalhado e um sistema de pontos
+            que transforma seus estudos em um jogo diario rumo a aprovacao.
           </motion.p>
 
           <motion.ul
@@ -69,7 +81,7 @@ export default function HomePage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-yellow-400 text-xl">🎮</span>
-              <span><strong className="text-white">Gamificação completa</strong>: XP, medalhas, streak diária e ranking entre os alunos.</span>
+              <span><strong className="text-white">Gamificacao completa</strong>: FP (Focus Points), medalhas, streak diaria e ranking entre os alunos.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-yellow-400 text-xl">📊</span>

@@ -1,4 +1,6 @@
-'use client';
+const fs = require('fs');
+
+const content = `'use client';
 
 import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
@@ -87,7 +89,7 @@ export default function SimuladoPlayerPage() {
 
     const respondidas = Object.keys(simulado.respostas).length;
     const confirmacao = confirm(
-      `Você respondeu ${respondidas} de ${totalQuestoes} questões.\n\nDeseja realmente finalizar o simulado?`
+      \`Você respondeu \${respondidas} de \${totalQuestoes} questões.\\n\\nDeseja realmente finalizar o simulado?\`
     );
 
     if (!confirmacao) return;
@@ -156,7 +158,7 @@ export default function SimuladoPlayerPage() {
     const porcentagem = Math.round((resultado.acertos / resultado.total) * 100);
 
     return (
-      <div className="min-h-screen bg-[#0d5f3a] text-white py-12 pt-20 px-4">
+      <div className="min-h-screen bg-[#0D1F22] text-white py-12 pt-20 px-4">
         <FloatingNav />
         <div className="max-w-4xl mx-auto">
           <div className="card-ia p-8 text-center mb-8">
@@ -181,7 +183,7 @@ export default function SimuladoPlayerPage() {
               </div>
             </div>
 
-            <div className={`p-4 rounded-lg mb-6 ${porcentagem >= 70 ? 'bg-emerald-500/20 border border-emerald-500/50' : porcentagem >= 50 ? 'bg-yellow-500/20 border border-yellow-500/50' : 'bg-red-500/20 border border-red-500/50'}`}>
+            <div className={\`p-4 rounded-lg mb-6 \${porcentagem >= 70 ? 'bg-emerald-500/20 border border-emerald-500/50' : porcentagem >= 50 ? 'bg-yellow-500/20 border border-yellow-500/50' : 'bg-red-500/20 border border-red-500/50'}\`}>
               <p className="text-lg font-medium">
                 {porcentagem >= 70 ? '🌟 Excelente! Continue assim!' : porcentagem >= 50 ? '💪 Bom trabalho! Pode melhorar!' : '📚 Continue estudando! Você consegue!'}
               </p>
@@ -201,9 +203,9 @@ export default function SimuladoPlayerPage() {
             <h2 className="title-ia text-xl mb-6">📋 Revisão das Questões</h2>
             <div className="space-y-6">
               {resultado.detalhes.map((d: any, idx: number) => (
-                <div key={d.id} className={`p-4 rounded-lg border-2 ${d.acertou ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-red-500/10 border-red-500/30'}`}>
+                <div key={d.id} className={\`p-4 rounded-lg border-2 \${d.acertou ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-red-500/10 border-red-500/30'}\`}>
                   <div className="flex items-start gap-3 mb-3">
-                    <span className={`px-3 py-1 rounded-full text-sm font-bold ${d.acertou ? 'bg-emerald-500 text-white' : 'bg-red-500 text-white'}`}>
+                    <span className={\`px-3 py-1 rounded-full text-sm font-bold \${d.acertou ? 'bg-emerald-500 text-white' : 'bg-red-500 text-white'}\`}>
                       {d.acertou ? '✓' : '✗'} Q{idx + 1}
                     </span>
                     <span className="text-xs bg-white/10 px-2 py-1 rounded">{d.area}</span>
@@ -211,7 +213,7 @@ export default function SimuladoPlayerPage() {
                   <p className="text-white/90 mb-3">{d.enunciado}</p>
                   <div className="space-y-2 mb-3">
                     {d.alternativas.map((alt: string, i: number) => (
-                      <div key={i} className={`p-2 rounded text-sm ${i === d.correta ? 'bg-emerald-500/30 text-emerald-200' : i === d.respostaUsuario && !d.acertou ? 'bg-red-500/30 text-red-200' : 'text-white/60'}`}>
+                      <div key={i} className={\`p-2 rounded text-sm \${i === d.correta ? 'bg-emerald-500/30 text-emerald-200' : i === d.respostaUsuario && !d.acertou ? 'bg-red-500/30 text-red-200' : 'text-white/60'}\`}>
                         {String.fromCharCode(65 + i)}) {alt}
                         {i === d.correta && ' ✓'}
                         {i === d.respostaUsuario && i !== d.correta && ' (sua resposta)'}
@@ -233,7 +235,7 @@ export default function SimuladoPlayerPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#0d5f3a] flex items-center justify-center">
+      <div className="min-h-screen bg-[#0D1F22] flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin text-4xl mb-4">🔄</div>
           <p className="text-white">Carregando simulado...</p>
@@ -244,7 +246,7 @@ export default function SimuladoPlayerPage() {
 
   if (error && !simulado) {
     return (
-      <div className="min-h-screen bg-[#0d5f3a] flex items-center justify-center px-4">
+      <div className="min-h-screen bg-[#0D1F22] flex items-center justify-center px-4">
         <FloatingNav />
         <div className="card-ia max-w-md p-6 text-center">
           <h2 className="text-red-400 text-xl font-bold mb-4">⚠️ Erro</h2>
@@ -262,7 +264,7 @@ export default function SimuladoPlayerPage() {
   const progresso = Math.round((Object.keys(simulado.respostas).length / totalQuestoes) * 100);
 
   return (
-    <div className="min-h-screen bg-[#0d5f3a] text-white py-6 pt-20 px-4">
+    <div className="min-h-screen bg-[#0D1F22] text-white py-6 pt-20 px-4">
       <FloatingNav />
 
       <div className="max-w-4xl mx-auto mb-6">
@@ -279,7 +281,7 @@ export default function SimuladoPlayerPage() {
           <div className="w-full bg-white/10 rounded-full h-3">
             <div
               className="bg-gradient-to-r from-emerald-500 to-emerald-400 h-3 rounded-full transition-all duration-300"
-              style={{ width: `${progresso}%` }}
+              style={{ width: \`\${progresso}%\` }}
             ></div>
           </div>
 
@@ -320,16 +322,16 @@ export default function SimuladoPlayerPage() {
                 <button
                   key={index}
                   onClick={() => marcarAlternativa(index)}
-                  className={`w-full text-left p-4 rounded-xl border-2 transition-all ${
+                  className={\`w-full text-left p-4 rounded-xl border-2 transition-all \${
                     estaMarcada
                       ? 'bg-emerald-500/20 border-emerald-400 transform scale-[1.01]'
                       : 'bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/40'
-                  }`}
+                  }\`}
                 >
                   <div className="flex items-start gap-4">
-                    <span className={`font-bold text-lg flex-shrink-0 ${
+                    <span className={\`font-bold text-lg flex-shrink-0 \${
                       estaMarcada ? 'text-emerald-400' : 'text-white/60'
-                    }`}>
+                    }\`}>
                       {letra})
                     </span>
                     <span className="flex-1 text-white/90 leading-relaxed">
@@ -348,11 +350,11 @@ export default function SimuladoPlayerPage() {
             <button
               onClick={() => irParaQuestao(indiceAtual - 1)}
               disabled={indiceAtual === 0}
-              className={`flex-1 py-3 px-6 rounded-lg font-medium transition-all ${
+              className={\`flex-1 py-3 px-6 rounded-lg font-medium transition-all \${
                 indiceAtual === 0
                   ? 'bg-white/5 text-white/30 cursor-not-allowed'
                   : 'bg-white/10 text-white hover:bg-white/20'
-              }`}
+              }\`}
             >
               ← Anterior
             </button>
@@ -367,11 +369,11 @@ export default function SimuladoPlayerPage() {
             <button
               onClick={() => irParaQuestao(indiceAtual + 1)}
               disabled={indiceAtual === totalQuestoes - 1}
-              className={`flex-1 py-3 px-6 rounded-lg font-medium transition-all ${
+              className={\`flex-1 py-3 px-6 rounded-lg font-medium transition-all \${
                 indiceAtual === totalQuestoes - 1
                   ? 'bg-white/5 text-white/30 cursor-not-allowed'
                   : 'btn-ia'
-              }`}
+              }\`}
             >
               Próxima →
             </button>
@@ -392,13 +394,13 @@ export default function SimuladoPlayerPage() {
                   <button
                     key={q.id}
                     onClick={() => irParaQuestao(idx)}
-                    className={`w-10 h-10 rounded-lg font-bold transition-all ${
+                    className={\`w-10 h-10 rounded-lg font-bold transition-all \${
                       atual
                         ? 'bg-emerald-500 text-white transform scale-110'
                         : respondida
                         ? 'bg-emerald-500/30 text-emerald-300 hover:bg-emerald-500/50'
                         : 'bg-white/10 text-white/60 hover:bg-white/20'
-                    }`}
+                    }\`}
                   >
                     {idx + 1}
                   </button>
@@ -412,3 +414,7 @@ export default function SimuladoPlayerPage() {
     </div>
   );
 }
+`;
+
+fs.writeFileSync('D:/enem-ia/enem-pro/app/enem/simulado/[id]/page.tsx', content);
+console.log('Simulado player page fixed!');

@@ -56,3 +56,5 @@ enem-pro-chalkboard-kit.zip
 dist/
 out/
 prisma/
+
+.vercel

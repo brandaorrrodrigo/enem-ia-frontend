@@ -1011,6 +1011,33 @@ export default function SimuladoPlayerPage() {
             </div>
           )}
 
+          {/* Aviso de ultima questao */}
+          {indiceAtual === totalQuestoes - 1 && (
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(76,175,80,0.2) 0%, rgba(255,193,7,0.2) 100%)',
+              border: '2px solid var(--accent-green)',
+              borderRadius: '12px',
+              padding: '20px',
+              marginBottom: '24px',
+              textAlign: 'center'
+            }}>
+              <p style={{
+                color: 'var(--accent-green)',
+                fontSize: '1.2rem',
+                fontWeight: 'bold',
+                marginBottom: '8px'
+              }}>
+                🎯 Esta e a ultima questao!
+              </p>
+              <p style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.95rem'
+              }}>
+                Apos responder, clique em <strong style={{ color: 'var(--accent-green)' }}>"Finalizar Simulado"</strong> para ver seus resultados.
+              </p>
+            </div>
+          )}
+
           {/* Botões de ação */}
           <div style={{
             display: 'flex',
@@ -1078,42 +1105,53 @@ export default function SimuladoPlayerPage() {
               </button>
             )}
 
+            {/* Botao Finalizar - destaque maior na ultima questao */}
             <button
               onClick={finalizarSimulado}
               className="btn"
               style={{
-                padding: '12px 24px',
-                background: 'rgba(244,67,54,0.2)',
-                border: '2px solid var(--accent-red)',
-                color: 'var(--accent-red)',
+                padding: indiceAtual === totalQuestoes - 1 ? '14px 32px' : '12px 24px',
+                background: indiceAtual === totalQuestoes - 1
+                  ? 'var(--accent-green)'
+                  : 'rgba(244,67,54,0.2)',
+                border: indiceAtual === totalQuestoes - 1
+                  ? 'none'
+                  : '2px solid var(--accent-red)',
+                color: indiceAtual === totalQuestoes - 1
+                  ? '#fff'
+                  : 'var(--accent-red)',
                 borderRadius: '8px',
                 cursor: 'pointer',
-                transition: 'all 0.3s ease'
+                transition: 'all 0.3s ease',
+                fontWeight: indiceAtual === totalQuestoes - 1 ? 'bold' : '600',
+                fontSize: indiceAtual === totalQuestoes - 1 ? '1.1rem' : '1rem',
+                flex: indiceAtual === totalQuestoes - 1 ? '1 1 auto' : 'none',
+                boxShadow: indiceAtual === totalQuestoes - 1 ? '0 4px 15px rgba(76,175,80,0.4)' : 'none'
               }}
             >
-              🏁 Finalizar
+              {indiceAtual === totalQuestoes - 1 ? '✅ Finalizar Simulado e Ver Resultado' : '🏁 Finalizar'}
             </button>
 
-            <button
-              onClick={proximaQuestao}
-              disabled={indiceAtual === totalQuestoes - 1}
-              className="btn btn-yellow"
-              style={{
-                flex: '1 1 auto',
-                padding: '12px 24px',
-                borderRadius: '8px',
-                fontWeight: '600',
-                transition: 'all 0.3s ease',
-                background: indiceAtual === totalQuestoes - 1
-                  ? 'rgba(255,255,255,0.05)'
-                  : 'var(--accent-yellow)',
-                color: indiceAtual === totalQuestoes - 1 ? 'rgba(255,255,255,0.3)' : '#000',
-                border: indiceAtual === totalQuestoes - 1 ? '2px solid rgba(255,255,255,0.1)' : 'none',
-                cursor: indiceAtual === totalQuestoes - 1 ? 'not-allowed' : 'pointer'
-              }}
-            >
-              Próxima →
-            </button>
+            {/* Botao Proxima - escondido na ultima questao */}
+            {indiceAtual < totalQuestoes - 1 && (
+              <button
+                onClick={proximaQuestao}
+                className="btn btn-yellow"
+                style={{
+                  flex: '1 1 auto',
+                  padding: '12px 24px',
+                  borderRadius: '8px',
+                  fontWeight: '600',
+                  transition: 'all 0.3s ease',
+                  background: 'var(--accent-yellow)',
+                  color: '#000',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+              >
+                Próxima →
+              </button>
+            )}
           </div>
 
           <div style={{

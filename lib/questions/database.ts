@@ -1,5 +1,5 @@
 // ========================================
-// BANCO DE QUESTOES DEFINITIVO - ESTRUTURA
+// BANCO DE QUESTOES - USANDO BANCO DE QUALIDADE
 // ========================================
 
 import {
@@ -13,114 +13,8 @@ import {
   questaoCompletaToSimulado,
 } from '../types/questao';
 
-// Importar banco massivo de questões
-import bancoMassivo from '../../data/questoes-massivo.json';
-
-// ========================================
-// TIPOS DO BANCO MASSIVO
-// ========================================
-
-interface QuestaoMassivo {
-  numero: number;
-  ano: number;
-  disciplina: string;
-  enunciado: string;
-  alternativas: { A: string; B: string; C: string; D: string; E: string };
-  correta: 'A' | 'B' | 'C' | 'D' | 'E';
-  tipo?: string;
-  habilidade?: string;
-  competencia?: number;
-  explicacao?: string;
-  source?: string;
-  area: string;
-  difficulty?: number;
-}
-
-interface BancoMassivoData {
-  versao: string;
-  total_questoes: number;
-  questoes: QuestaoMassivo[];
-}
-
-/**
- * Normaliza area para o padrao ENEM
- */
-function normalizarArea(area: string, disciplina: string): AreaENEM {
-  const areaLower = area.toLowerCase();
-  const discLower = disciplina.toLowerCase();
-
-  // Mapeamento de areas nao-padrao para padrao ENEM
-  if (areaLower === 'ciencias_natureza' || areaLower === 'ciencias da natureza') {
-    return 'natureza';
-  }
-  if (areaLower === 'ciencias_humanas' || areaLower === 'ciencias humanas') {
-    return 'humanas';
-  }
-
-  // Mapeamento por disciplina quando area esta errada
-  const disciplinasNatureza = ['fisica', 'física', 'biologia', 'quimica', 'química', 'fisica_mecanica', 'fisica_eletricidade', 'fisica_termodinamica'];
-  const disciplinasHumanas = ['historia', 'história', 'geografia', 'sociologia', 'filosofia'];
-  const disciplinasLinguagens = ['portugues', 'português', 'literatura', 'ingles', 'inglês', 'espanhol', 'gramatica', 'gramática', 'interpretacao', 'interpretação', 'redacao', 'redação'];
-  const disciplinasMatematica = ['matematica', 'matemática', 'porcentagem', 'juros', 'geometria_plana', 'geometria_espacial', 'estatistica', 'estatística', 'funcoes', 'funções', 'progressoes', 'progressões', 'razao_proporcao', 'combinatoria', 'combinatória', 'probabilidade', 'geometria', 'trigonometria', 'algebra', 'álgebra'];
-
-  if (disciplinasNatureza.some(d => discLower.includes(d))) {
-    return 'natureza';
-  }
-  if (disciplinasHumanas.some(d => discLower.includes(d))) {
-    return 'humanas';
-  }
-  if (disciplinasLinguagens.some(d => discLower.includes(d))) {
-    return 'linguagens';
-  }
-  if (disciplinasMatematica.some(d => discLower.includes(d))) {
-    return 'matematica';
-  }
-
-  // Se area ja e padrao, retornar
-  if (['matematica', 'linguagens', 'humanas', 'natureza', 'redacao'].includes(areaLower)) {
-    return areaLower as AreaENEM;
-  }
-
-  // Fallback: mapear areas que sao nomes de disciplinas
-  if (disciplinasNatureza.includes(areaLower)) return 'natureza';
-  if (disciplinasHumanas.includes(areaLower)) return 'humanas';
-  if (disciplinasLinguagens.includes(areaLower)) return 'linguagens';
-
-  // Default para matematica se nao encontrar
-  return 'matematica';
-}
-
-/**
- * Converte questão do banco massivo para QuestaoLegacy
- */
-function convertMassivoToLegacy(q: QuestaoMassivo, index: number): QuestaoLegacy {
-  const letraToIndex: Record<string, number> = { A: 0, B: 1, C: 2, D: 3, E: 4 };
-
-  return {
-    id: index + 1,
-    area: normalizarArea(q.area, q.disciplina),
-    disciplina: q.disciplina.charAt(0).toUpperCase() + q.disciplina.slice(1),
-    assunto: q.habilidade || q.tipo || 'Geral',
-    enunciado: q.enunciado,
-    alternativas: [
-      q.alternativas.A,
-      q.alternativas.B,
-      q.alternativas.C,
-      q.alternativas.D,
-      q.alternativas.E
-    ],
-    correta: letraToIndex[q.correta] || 0,
-    explicacao: q.explicacao || '',
-    dificuldade: (q.difficulty === 1 || q.difficulty === 2 ? 'facil' :
-                  q.difficulty === 4 || q.difficulty === 5 ? 'dificil' : 'medio') as DificuldadeLabel,
-    ano: q.ano,
-    fonte: q.source
-  };
-}
-
-// Carregar banco massivo e converter para formato legado
-const banco = bancoMassivo as BancoMassivoData;
-const bancoQuestoes: QuestaoLegacy[] = banco.questoes.map((q, idx) => convertMassivoToLegacy(q, idx));
+// Importar banco de questoes de qualidade
+import { bancoQuestoes as bancoQualidade } from './banco-questoes';
 
 // ========================================
 // ESTRUTURA DE DADOS EM MEMORIA
@@ -166,8 +60,20 @@ export function inicializarBanco(): void {
   cacheSimulado.clear();
   cacheLegacy.clear();
 
-  // Converter questoes legadas
-  bancoQuestoes.forEach((legado) => {
+  // Resetar indices
+  indiceQuestoes = {
+    porArea: {},
+    porDisciplina: {},
+    porTema: {},
+    porAno: {},
+    porDificuldade: {},
+    porTag: {},
+    total: 0,
+    ultimaAtualizacao: new Date().toISOString(),
+  };
+
+  // Converter questoes do banco de qualidade
+  bancoQualidade.forEach((legado) => {
     const completa = questaoLegacyToCompleta(legado as QuestaoLegacy);
     adicionarQuestaoAoIndice(completa);
   });

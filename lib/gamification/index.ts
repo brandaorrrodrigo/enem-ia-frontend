@@ -1,29 +1,33 @@
 import { Badge, UserGamification } from '../types';
 
-// XP E LEVEL
-export function xpParaProximoLevel(level: number): number {
+// FP (FOCUS POINTS) E LEVEL
+export function fpParaProximoLevel(level: number): number {
   return Math.floor(100 * Math.pow(1.5, level - 1));
 }
 
-export function calcularLevel(xpTotal: number): number {
+export function calcularLevel(fpTotal: number): number {
   let level = 1;
-  let xpAcumulado = 0;
-  while (xpAcumulado + xpParaProximoLevel(level) <= xpTotal) {
-    xpAcumulado += xpParaProximoLevel(level);
+  let fpAcumulado = 0;
+  while (fpAcumulado + fpParaProximoLevel(level) <= fpTotal) {
+    fpAcumulado += fpParaProximoLevel(level);
     level++;
   }
   return level;
 }
 
-export function calcularXPSimulado(resultado: { acertos: number; total: number; tempoMinutos?: number }): number {
+export function calcularFPSimulado(resultado: { acertos: number; total: number; tempoMinutos?: number }): number {
   const { acertos, total } = resultado;
   const porcentagem = (acertos / total) * 100;
-  let xpBase = acertos * 10;
-  if (porcentagem >= 90) xpBase += 100;
-  else if (porcentagem >= 70) xpBase += 50;
-  else if (porcentagem >= 50) xpBase += 25;
-  return xpBase;
+  let fpBase = acertos * 10;
+  if (porcentagem >= 90) fpBase += 100;
+  else if (porcentagem >= 70) fpBase += 50;
+  else if (porcentagem >= 50) fpBase += 25;
+  return fpBase;
 }
+
+// Alias para compatibilidade
+export const xpParaProximoLevel = fpParaProximoLevel;
+export const calcularXPSimulado = calcularFPSimulado;
 
 export function calcularPontosSimulado(resultado: { acertos: number; total: number }): number {
   const { acertos, total } = resultado;
@@ -104,20 +108,20 @@ export const LIGAS_CONFIG = {
 };
 
 export function criarGamificationInicial(): UserGamification {
-  return { xp: 0, level: 1, pontos: 0, streak: 0, badges: [], conquistas: [], posicaoRanking: 0 };
+  return { xp: 0, fp: 0, level: 1, pontos: 0, streak: 0, badges: [], conquistas: [], posicaoRanking: 0 };
 }
 
 export function carregarGamification(): UserGamification {
   if (typeof window === 'undefined') return criarGamificationInicial();
-  const xp = parseInt(localStorage.getItem('xp_total') || '0');
+  const fp = parseInt(localStorage.getItem('fp_total') || '0');
   const pontos = parseInt(localStorage.getItem('pontos_total') || '0');
   const streak = parseInt(localStorage.getItem('streak_atual') || '0');
-  return { xp, level: calcularLevel(xp), pontos, streak, badges: [], conquistas: [], posicaoRanking: 0 };
+  return { xp: fp, fp, level: calcularLevel(fp), pontos, streak, badges: [], conquistas: [], posicaoRanking: 0 };
 }
 
 export function salvarGamification(gamification: UserGamification): void {
   if (typeof window === 'undefined') return;
-  localStorage.setItem('xp_total', String(gamification.xp));
+  localStorage.setItem('fp_total', String(gamification.fp || gamification.xp));
   localStorage.setItem('pontos_total', String(gamification.pontos));
   localStorage.setItem('streak_atual', String(gamification.streak));
 }

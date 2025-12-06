@@ -5,21 +5,52 @@ import { useState, useEffect } from 'react';
 
 export default function ENEMHomePage() {
   const [streak, setStreak] = useState(7);
-  const [xp, setXp] = useState(2450);
+  const [fp, setFp] = useState(2450);
   const [rank, setRank] = useState(234);
   const [showNotification, setShowNotification] = useState(false);
+  const [rankingDrop, setRankingDrop] = useState<number | null>(null);
   const [metaTempo, setMetaTempo] = useState(120);
   const [progressoMeta, setProgressoMeta] = useState(45);
 
+  // Fechar popup de ranking
+  const fecharNotificacao = () => {
+    setShowNotification(false);
+    // Marcar como visto nesta sessao
+    sessionStorage.setItem('ranking_notification_dismissed', 'true');
+  };
+
   useEffect(() => {
-    // Mostrar notificacao apos 3 segundos
-    const timer = setTimeout(() => setShowNotification(true), 3000);
-    // Esconder apos 10 segundos
-    const hideTimer = setTimeout(() => setShowNotification(false), 13000);
-    return () => {
-      clearTimeout(timer);
-      clearTimeout(hideTimer);
-    };
+    // Carregar dados do localStorage
+    const fpTotal = parseInt(localStorage.getItem('fp_total') || '2450');
+    const streakDias = parseInt(localStorage.getItem('streak_dias') || '7');
+    setFp(fpTotal);
+    setStreak(streakDias);
+
+    // Verificar se houve queda no ranking (logica contextual)
+    const ultimaPosicao = parseInt(localStorage.getItem('ultima_posicao_ranking') || '0');
+    const posicaoAtual = parseInt(localStorage.getItem('posicao_ranking') || '234');
+    setRank(posicaoAtual);
+
+    // So mostra notificacao se:
+    // 1. Houve queda no ranking (posicao atual > posicao anterior)
+    // 2. Nao foi dismissada nesta sessao
+    // 3. E a primeira vez que o usuario ve a pagina nesta sessao
+    const jaDismissada = sessionStorage.getItem('ranking_notification_dismissed') === 'true';
+    const jaViuNestaSessao = sessionStorage.getItem('ranking_notification_shown') === 'true';
+
+    if (ultimaPosicao > 0 && posicaoAtual > ultimaPosicao && !jaDismissada && !jaViuNestaSessao) {
+      const queda = posicaoAtual - ultimaPosicao;
+      setRankingDrop(queda);
+      // Mostrar notificacao apos 2 segundos
+      const timer = setTimeout(() => {
+        setShowNotification(true);
+        sessionStorage.setItem('ranking_notification_shown', 'true');
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+
+    // Salvar posicao atual como ultima posicao para proxima verificacao
+    localStorage.setItem('ultima_posicao_ranking', String(posicaoAtual));
   }, []);
 
   const setarMeta = (minutos: number) => {
@@ -41,8 +72,8 @@ export default function ENEMHomePage() {
             <span className="stat-value">{streak}</span>
           </div>
           <div className="stat-item">
-            <span>⭐ XP:</span>
-            <span className="stat-value">{xp.toLocaleString()}</span>
+            <span>⭐ FP:</span>
+            <span className="stat-value">{fp.toLocaleString()}</span>
           </div>
           <div className="stat-item">
             <span>🏆 Rank:</span>
@@ -51,17 +82,58 @@ export default function ENEMHomePage() {
         </div>
       </div>
 
-      {/* Notificacao Duolingo Style */}
-      {showNotification && (
-        <div className="notification">
+      {/* Notificacao de Queda no Ranking (contextual, fechavel) */}
+      {showNotification && rankingDrop && (
+        <div
+          className="notification"
+          style={{
+            position: 'relative',
+            animation: 'slideIn 0.3s ease-out'
+          }}
+        >
+          {/* Botao X para fechar */}
+          <button
+            onClick={fecharNotificacao}
+            style={{
+              position: 'absolute',
+              top: '10px',
+              right: '10px',
+              background: 'rgba(255, 255, 255, 0.2)',
+              border: 'none',
+              borderRadius: '50%',
+              width: '28px',
+              height: '28px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '1.2rem',
+              color: 'var(--chalk-white)',
+              transition: 'background 0.2s ease'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)'}
+            onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'}
+            aria-label="Fechar notificacao"
+          >
+            ✕
+          </button>
           <div className="notification-icon">📉</div>
           <div className="notification-title">Voce caiu no ranking!</div>
           <div className="notification-text">
-            Voce caiu 3 posicoes! Faca um simulado agora para recuperar sua posicao no top 200!
+            Voce caiu {rankingDrop} {rankingDrop === 1 ? 'posicao' : 'posicoes'}! Faca um simulado agora para recuperar sua posicao!
           </div>
-          <Link href="/enem/simulado">
-            <button className="btn btn-yellow w-full">Fazer Simulado Agora!</button>
-          </Link>
+          <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.5rem' }}>
+            <Link href="/enem/simulado" style={{ flex: 1 }}>
+              <button className="btn btn-yellow w-full">Fazer Simulado Agora!</button>
+            </Link>
+            <button
+              className="btn"
+              onClick={fecharNotificacao}
+              style={{ padding: '0.5rem 1rem' }}
+            >
+              Depois
+            </button>
+          </div>
         </div>
       )}
 
@@ -171,7 +243,7 @@ export default function ENEMHomePage() {
             <div style={{ fontWeight: 700 }}>Joao Silva</div>
             <div style={{ fontSize: '0.85rem', opacity: 0.8 }}>Sequencia de 21 dias</div>
           </div>
-          <div className="ranking-score">8.450 XP</div>
+          <div className="ranking-score">8.450 FP</div>
         </div>
 
         <div className="ranking-item" style={{ background: 'rgba(192, 192, 192, 0.2)' }}>
@@ -180,7 +252,7 @@ export default function ENEMHomePage() {
             <div style={{ fontWeight: 700 }}>Maria Santos</div>
             <div style={{ fontSize: '0.85rem', opacity: 0.8 }}>145 Pomodoros esta semana</div>
           </div>
-          <div className="ranking-score">7.890 XP</div>
+          <div className="ranking-score">7.890 FP</div>
         </div>
 
         <div className="ranking-item" style={{ background: 'rgba(205, 127, 50, 0.2)' }}>
@@ -189,7 +261,7 @@ export default function ENEMHomePage() {
             <div style={{ fontWeight: 700 }}>Pedro Costa</div>
             <div style={{ fontSize: '0.85rem', opacity: 0.8 }}>98% de acertos</div>
           </div>
-          <div className="ranking-score">7.120 XP</div>
+          <div className="ranking-score">7.120 FP</div>
         </div>
 
         <div style={{ textAlign: 'center', margin: '1.5rem 0', padding: '1rem', background: 'rgba(255, 255, 255, 0.1)', borderRadius: '10px' }}>
@@ -249,7 +321,7 @@ export default function ENEMHomePage() {
           <Link href="/enem/desafios" className="chalkboard-card text-center">
             <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🏆</div>
             <h3>Desafios</h3>
-            <p style={{ fontSize: '0.85rem', opacity: 0.7 }}>Ganhe XP</p>
+            <p style={{ fontSize: '0.85rem', opacity: 0.7 }}>Ganhe FP</p>
           </Link>
 
           <Link href="/enem/loja" className="chalkboard-card text-center">

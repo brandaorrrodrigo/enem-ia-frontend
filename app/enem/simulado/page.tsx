@@ -568,7 +568,7 @@ export default function SimuladoInicioPage() {
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <span style={{ color: '#4ade80' }}>✓</span>
-                Ganhe XP e FP ao concluir
+                Ganhe FP ao concluir
               </li>
             </ul>
           </div>
@@ -734,7 +734,7 @@ export default function SimuladoInicioPage() {
               color: '#c084fc',
               fontFamily: 'var(--font-kalam)',
             }}>
-              +XP
+              +FP
             </div>
             <div className="stat-label" style={{
               color: 'var(--chalk-dim)',

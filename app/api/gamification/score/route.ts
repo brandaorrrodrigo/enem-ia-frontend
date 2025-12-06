@@ -3,8 +3,10 @@ import { calcularLevel, determinarLiga } from '@/lib/gamification';
 
 export async function GET() {
   try {
+    // Score usando FP (Focus Points)
     const mockScore = {
-      xp: 1500,
+      fp: 1500, // Focus Points (novo sistema)
+      xp: 1500, // Mantido para compatibilidade
       level: calcularLevel(1500),
       pontos: 750,
       liga: determinarLiga(750),

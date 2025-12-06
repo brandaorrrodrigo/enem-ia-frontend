@@ -1,8 +1,51 @@
 'use client';
 
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function HomePage() {
+  // Contagem regressiva para o ENEM 2025 (9 de novembro de 2025)
+  const [diasRestantes, setDiasRestantes] = useState<number | null>(null);
+  const [horasRestantes, setHorasRestantes] = useState<number>(0);
+  const [minutosRestantes, setMinutosRestantes] = useState<number>(0);
+  const [segundosRestantes, setSegundosRestantes] = useState<number>(0);
+
+  useEffect(() => {
+    // Data do ENEM 2025 - Primeiro dia (9 de novembro de 2025)
+    const dataENEM = new Date('2025-11-09T08:00:00-03:00');
+
+    const calcularContagem = () => {
+      const agora = new Date();
+      const diferenca = dataENEM.getTime() - agora.getTime();
+
+      if (diferenca <= 0) {
+        setDiasRestantes(0);
+        setHorasRestantes(0);
+        setMinutosRestantes(0);
+        setSegundosRestantes(0);
+        return;
+      }
+
+      const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+      setDiasRestantes(dias);
+      setHorasRestantes(horas);
+      setMinutosRestantes(minutos);
+      setSegundosRestantes(segundos);
+    };
+
+    // Calcular imediatamente
+    calcularContagem();
+
+    // Atualizar a cada segundo
+    const intervalo = setInterval(calcularContagem, 1000);
+
+    return () => clearInterval(intervalo);
+  }, []);
+
   return (
     <div className="container">
       {/* Header */}
@@ -22,13 +65,90 @@ export default function HomePage() {
           <div className="stat-label">Ebooks Disponiveis</div>
         </div>
         <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
-          <div className="stat-number">180</div>
+          <div className="stat-number" style={{ color: 'var(--accent-yellow)', fontWeight: 'bold' }}>
+            {diasRestantes !== null ? diasRestantes : '--'}
+          </div>
           <div className="stat-label">Dias ate o ENEM</div>
         </div>
         <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
           <div className="stat-number">100K+</div>
           <div className="stat-label">Questoes</div>
         </div>
+      </div>
+
+      {/* Contagem Regressiva Detalhada */}
+      <div
+        className="card"
+        style={{
+          background: 'linear-gradient(135deg, rgba(255, 217, 102, 0.15) 0%, rgba(255, 179, 71, 0.1) 100%)',
+          border: '2px solid var(--accent-yellow)',
+          textAlign: 'center',
+          marginBottom: '2rem'
+        }}
+      >
+        <h2 style={{
+          color: 'var(--accent-yellow)',
+          marginBottom: '1rem',
+          fontFamily: 'var(--font-kalam)',
+          fontSize: '1.5rem'
+        }}>
+          ⏰ Contagem Regressiva para o ENEM 2025
+        </h2>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '1.5rem',
+          flexWrap: 'wrap',
+          marginBottom: '1rem'
+        }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-kalam)'
+            }}>
+              {diasRestantes !== null ? diasRestantes : '--'}
+            </div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--chalk-dim)' }}>dias</div>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-kalam)'
+            }}>
+              {horasRestantes.toString().padStart(2, '0')}
+            </div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--chalk-dim)' }}>horas</div>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-kalam)'
+            }}>
+              {minutosRestantes.toString().padStart(2, '0')}
+            </div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--chalk-dim)' }}>minutos</div>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              color: 'var(--accent-yellow)',
+              fontFamily: 'var(--font-kalam)'
+            }}>
+              {segundosRestantes.toString().padStart(2, '0')}
+            </div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--chalk-dim)' }}>segundos</div>
+          </div>
+        </div>
+        <p style={{ color: 'var(--chalk-dim)', fontSize: '0.9rem' }}>
+          ENEM 2025: 9 e 10 de novembro | Cada segundo conta!
+        </p>
       </div>
 
       {/* Categoria 1: Conteudo e Estudo */}

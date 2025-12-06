@@ -330,13 +330,16 @@ function gerarPassosResolucao(area: Area): string[] {
   }
 }
 
-function calcularXP(dificuldade: Dificuldade, acertou: boolean): number {
+function calcularFP(dificuldade: Dificuldade, acertou: boolean): number {
   const base = dificuldade * 10;
   if (acertou) {
     return base * 2;
   }
-  return Math.floor(base * 0.2); // XP de participação
+  return Math.floor(base * 0.2); // FP de participação
 }
+
+// Alias para compatibilidade
+const calcularXP = calcularFP;
 
 // ========================================
 // EXPORTS

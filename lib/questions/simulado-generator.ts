@@ -404,12 +404,13 @@ export function calcularResultado(simulado: SimuladoConfig): SimuladoResultado {
   const fim = simulado.fim ? new Date(simulado.fim) : new Date();
   const tempoMinutos = Math.round((fim.getTime() - inicio.getTime()) / 60000);
 
-  // Calcular XP e pontos
-  const xpBase = acertos * 10;
-  const bonusTempo = tempoMinutos < (simulado.tempoLimite || 60) ? Math.round(xpBase * 0.1) : 0;
-  const bonusNota = nota >= 70 ? Math.round(xpBase * 0.2) : 0;
-  const xpGanho = xpBase + bonusTempo + bonusNota;
-  const pontosGanhos = Math.round(xpGanho * 0.5);
+  // Calcular FP (Focus Points) e pontos
+  const fpBase = acertos * 10;
+  const bonusTempo = tempoMinutos < (simulado.tempoLimite || 60) ? Math.round(fpBase * 0.1) : 0;
+  const bonusNota = nota >= 70 ? Math.round(fpBase * 0.2) : 0;
+  const fpGanho = fpBase + bonusTempo + bonusNota;
+  const xpGanho = fpGanho; // Alias para compatibilidade
+  const pontosGanhos = Math.round(fpGanho * 0.5);
 
   return {
     id: `res_${Date.now()}`,

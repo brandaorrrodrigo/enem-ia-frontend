@@ -101,8 +101,8 @@ export default function LojaPage() {
         },
         {
           id: "r2",
-          nome: "Boost de XP 2x",
-          descricao: "Ganhe o dobro de XP nos proximos 5 simulados",
+          nome: "Boost de FP 2x",
+          descricao: "Ganhe o dobro de FP nos proximos 5 simulados",
           custoFP: 300,
           icone: "Zap",
           categoria: "boost",

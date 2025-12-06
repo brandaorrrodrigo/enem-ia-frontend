@@ -44,7 +44,8 @@ export interface SimuladoResultado {
   area: string;
   detalhes: QuestaoResultado[];
   data: string;
-  xpGanho: number;
+  fpGanho?: number;
+  xpGanho: number; // Mantido para compatibilidade (alias para fpGanho)
   pontosGanhos: number;
 }
 
@@ -109,7 +110,8 @@ export interface AreaFraca {
 
 // GAMIFICACAO
 export interface UserGamification {
-  xp: number;
+  fp?: number; // Focus Points (novo sistema)
+  xp: number; // Mantido para compatibilidade
   level: number;
   pontos: number;
   streak: number;
@@ -136,7 +138,8 @@ export interface Conquista {
   meta: number;
   concluida: boolean;
   dataConquista?: string;
-  xpRecompensa: number;
+  fpRecompensa?: number; // Focus Points (novo sistema)
+  xpRecompensa: number; // Mantido para compatibilidade
   pontosRecompensa: number;
 }
 
@@ -145,7 +148,8 @@ export interface RankingEntry {
   odUsuario: string;
   nome: string;
   avatar?: string;
-  xp: number;
+  fp?: number; // Focus Points (novo sistema)
+  xp: number; // Mantido para compatibilidade
   level: number;
   pontos: number;
   acertos: number;
@@ -221,7 +225,8 @@ export interface Desafio {
   tipo: 'diario' | 'semanal' | 'mensal' | 'especial';
   meta: number;
   progresso: number;
-  recompensaXP: number;
+  recompensaFP?: number; // Focus Points (novo sistema)
+  recompensaXP: number; // Mantido para compatibilidade
   recompensaPontos: number;
   dataInicio: string;
   dataFim: string;

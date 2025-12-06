@@ -156,7 +156,7 @@ export default function SimuladoPlayerPage() {
     const nota = Math.round((acertos / totalQuestoes) * 1000);
     const tempoGasto = Math.round((Date.now() - new Date(simulado.inicio).getTime()) / 60000);
 
-    const xpGanho = acertos * 10 + (nota >= 700 ? 100 : nota >= 500 ? 50 : 20);
+    const fpGanho = acertos * 10 + (nota >= 700 ? 100 : nota >= 500 ? 50 : 20);
     const pontosGanhos = acertos * 5 + (nota >= 700 ? 50 : nota >= 500 ? 25 : 10);
 
     const resultado = {
@@ -168,7 +168,7 @@ export default function SimuladoPlayerPage() {
       area: simulado.area,
       detalhes,
       data: new Date().toISOString(),
-      xpGanho,
+      fpGanho,
       pontosGanhos
     };
 
@@ -188,10 +188,10 @@ export default function SimuladoPlayerPage() {
     });
     localStorage.setItem('historico_simulados', JSON.stringify(historico.slice(0, 50)));
 
-    // XP e Pontos
-    const xpAtual = parseInt(localStorage.getItem('xp_total') || '0');
+    // FP e Pontos
+    const fpAtual = parseInt(localStorage.getItem('fp_total') || '0');
     const pontosAtual = parseInt(localStorage.getItem('pontos_total') || '0');
-    localStorage.setItem('xp_total', String(xpAtual + xpGanho));
+    localStorage.setItem('fp_total', String(fpAtual + fpGanho));
     localStorage.setItem('pontos_total', String(pontosAtual + pontosGanhos));
 
     // Limpar simulado em andamento
@@ -359,9 +359,9 @@ export default function SimuladoPlayerPage() {
                   color: 'var(--accent-yellow)',
                   marginBottom: '4px'
                 }}>
-                  +{resultado.xpGanho}
+                  +{resultado.fpGanho}
                 </div>
-                <div style={{ color: 'var(--chalk-dim)', fontSize: '0.9rem' }}>XP</div>
+                <div style={{ color: 'var(--chalk-dim)', fontSize: '0.9rem' }}>FP</div>
               </div>
               <div>
                 <div style={{

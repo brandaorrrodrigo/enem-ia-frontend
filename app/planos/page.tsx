@@ -1,222 +1,540 @@
-// app/enem/planos/page.tsx
-import { EnemNavbar } from "@/components/enem/EnemNavbar";
-import Link from "next/link";
+'use client';
 
-export default function EnemPlanosPage() {
+import Link from 'next/link';
+import { useState } from 'react';
+import { Check, X, Star, Zap, Crown, Sparkles } from 'lucide-react';
+
+interface Plano {
+  id: string;
+  nome: string;
+  subtitulo: string;
+  preco: string;
+  precoAnual?: string;
+  periodo: string;
+  destaque: boolean;
+  badge?: string;
+  icon: React.ReactNode;
+  recursos: { nome: string; incluido: boolean; destaque?: boolean }[];
+  cta: string;
+  ctaLink: string;
+}
+
+const PLANOS: Plano[] = [
+  {
+    id: 'lite',
+    nome: 'ENEM PRO Lite',
+    subtitulo: 'Para comecar a estudar',
+    preco: 'Gratis',
+    periodo: 'para sempre',
+    destaque: false,
+    icon: <Star className="w-8 h-8" />,
+    recursos: [
+      { nome: '10 simulados por mes', incluido: true },
+      { nome: 'Questoes com explicacao basica', incluido: true },
+      { nome: 'Dashboard de desempenho', incluido: true },
+      { nome: 'Sistema de FP e ranking', incluido: true },
+      { nome: 'Niveis ate Prata', incluido: true },
+      { nome: 'Simulados ilimitados', incluido: false },
+      { nome: 'Explicacoes por IA avancada', incluido: false },
+      { nome: 'Plano de estudos personalizado', incluido: false },
+      { nome: 'Correcao de redacao por IA', incluido: false },
+      { nome: 'Suporte prioritario', incluido: false },
+    ],
+    cta: 'Comecar Gratis',
+    ctaLink: '/cadastro',
+  },
+  {
+    id: 'pro',
+    nome: 'ENEM PRO',
+    subtitulo: 'O mais escolhido',
+    preco: 'R$ 29,90',
+    precoAnual: 'R$ 19,90',
+    periodo: '/mes',
+    destaque: true,
+    badge: 'MAIS POPULAR',
+    icon: <Zap className="w-8 h-8" />,
+    recursos: [
+      { nome: 'Simulados ilimitados', incluido: true, destaque: true },
+      { nome: 'Explicacoes completas por IA', incluido: true, destaque: true },
+      { nome: 'Dashboard completo de desempenho', incluido: true },
+      { nome: 'Comparacao com notas de corte SISU', incluido: true, destaque: true },
+      { nome: 'Ranking global e desafios', incluido: true },
+      { nome: 'Plano de estudos personalizado', incluido: true, destaque: true },
+      { nome: 'Niveis ate Diamante', incluido: true },
+      { nome: 'Flashcards inteligentes', incluido: true },
+      { nome: '3 correcoes de redacao/mes', incluido: true },
+      { nome: 'Suporte prioritario', incluido: false },
+    ],
+    cta: 'Assinar Agora',
+    ctaLink: '/assinatura/mensal',
+  },
+  {
+    id: 'premium',
+    nome: 'ENEM PRO Premium',
+    subtitulo: 'Para quem quer o maximo',
+    preco: 'R$ 49,90',
+    precoAnual: 'R$ 39,90',
+    periodo: '/mes',
+    destaque: false,
+    badge: 'COMPLETO',
+    icon: <Crown className="w-8 h-8" />,
+    recursos: [
+      { nome: 'Tudo do ENEM PRO', incluido: true, destaque: true },
+      { nome: 'Correcoes de redacao ilimitadas', incluido: true, destaque: true },
+      { nome: 'Mentoria com IA personalizada', incluido: true, destaque: true },
+      { nome: 'Simulados cronometrados oficiais', incluido: true },
+      { nome: 'Relatorios detalhados por competencia', incluido: true },
+      { nome: 'Acesso a banco de 10.000+ questoes', incluido: true },
+      { nome: 'Videoaulas exclusivas', incluido: true },
+      { nome: 'Grupo VIP no WhatsApp', incluido: true },
+      { nome: 'Suporte prioritario 24h', incluido: true, destaque: true },
+      { nome: 'Garantia de satisfacao 30 dias', incluido: true },
+    ],
+    cta: 'Quero o Premium',
+    ctaLink: '/assinatura/anual',
+  },
+];
+
+export default function PlanosPage() {
+  const [periodoAnual, setPeriodoAnual] = useState(false);
+
   return (
-    <main className="min-h-screen w-full bg-[#054930] text-white relative">
-      <EnemNavbar />
+    <div
+      className="min-h-screen py-12 px-4"
+      style={{
+        backgroundColor: 'var(--chalkboard-green)',
+        backgroundImage: 'var(--chalkboard-texture)'
+      }}
+    >
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <Link href="/">
+            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎓</div>
+          </Link>
+          <h1
+            style={{
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-kalam)',
+              marginBottom: '0.5rem'
+            }}
+          >
+            Planos ENEM PRO
+          </h1>
+          <p
+            style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '1.25rem',
+              fontFamily: 'var(--font-kalam)',
+              maxWidth: '600px',
+              margin: '0 auto'
+            }}
+          >
+            Escolha o plano ideal para sua jornada ate a aprovacao
+          </p>
+        </div>
 
-      {/* textura de lousa + brilho */}
-      <div className="pointer-events-none absolute inset-0 opacity-15 mix-blend-soft-light bg-[radial-gradient(circle_at_0_0,rgba(255,255,255,0.22),transparent_55%),radial-gradient(circle_at_100%_0,rgba(255,255,255,0.18),transparent_55%)]" />
+        {/* Toggle Mensal/Anual */}
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '1rem',
+            marginBottom: '3rem'
+          }}
+        >
+          <span
+            style={{
+              color: !periodoAnual ? 'var(--accent-yellow)' : 'var(--chalk-dim)',
+              fontWeight: !periodoAnual ? 'bold' : 'normal',
+              fontFamily: 'var(--font-kalam)'
+            }}
+          >
+            Mensal
+          </span>
+          <button
+            onClick={() => setPeriodoAnual(!periodoAnual)}
+            style={{
+              width: '60px',
+              height: '32px',
+              borderRadius: '16px',
+              backgroundColor: periodoAnual ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.2)',
+              border: 'none',
+              cursor: 'pointer',
+              position: 'relative',
+              transition: 'background-color 0.3s ease'
+            }}
+          >
+            <div
+              style={{
+                width: '24px',
+                height: '24px',
+                borderRadius: '50%',
+                backgroundColor: 'white',
+                position: 'absolute',
+                top: '4px',
+                left: periodoAnual ? '32px' : '4px',
+                transition: 'left 0.3s ease',
+                boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+              }}
+            />
+          </button>
+          <span
+            style={{
+              color: periodoAnual ? 'var(--accent-yellow)' : 'var(--chalk-dim)',
+              fontWeight: periodoAnual ? 'bold' : 'normal',
+              fontFamily: 'var(--font-kalam)'
+            }}
+          >
+            Anual
+          </span>
+          {periodoAnual && (
+            <span
+              style={{
+                backgroundColor: 'rgba(34, 197, 94, 0.3)',
+                color: '#86efac',
+                padding: '0.25rem 0.75rem',
+                borderRadius: '999px',
+                fontSize: '0.75rem',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-kalam)'
+              }}
+            >
+              Economize 33%
+            </span>
+          )}
+        </div>
 
-      {/* “rabiscos de giz” suaves */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.10]">
-        <div className="absolute -left-10 top-16 h-40 w-72 rounded-full border border-emerald-100/40 rotate-[-8deg]" />
-        <div className="absolute right-[-30px] top-32 h-32 w-64 rounded-full border border-emerald-100/35 rotate-[14deg]" />
-        <div className="absolute left-10 bottom-20 h-24 w-40 border-t border-emerald-50/40 rotate-[-6deg]" />
-        <div className="absolute right-16 bottom-32 h-24 w-44 border-b border-emerald-50/35 rotate-[7deg]" />
-      </div>
+        {/* Cards de Planos */}
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '1.5rem',
+            maxWidth: '1200px',
+            margin: '0 auto'
+          }}
+        >
+          {PLANOS.map((plano) => (
+            <div
+              key={plano.id}
+              style={{
+                backgroundColor: plano.destaque
+                  ? 'rgba(251, 191, 36, 0.1)'
+                  : 'rgba(255, 255, 255, 0.08)',
+                border: plano.destaque
+                  ? '3px solid var(--accent-yellow)'
+                  : '3px solid rgba(255, 255, 255, 0.15)',
+                borderRadius: '20px',
+                padding: '2rem',
+                position: 'relative',
+                transform: plano.destaque ? 'scale(1.02)' : 'scale(1)',
+                boxShadow: plano.destaque
+                  ? '0 10px 40px rgba(251, 191, 36, 0.2)'
+                  : '0 4px 20px rgba(0, 0, 0, 0.3)'
+              }}
+            >
+              {/* Badge */}
+              {plano.badge && (
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '-12px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    backgroundColor: plano.destaque ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.2)',
+                    color: plano.destaque ? 'var(--chalkboard-green)' : 'var(--chalk-white)',
+                    padding: '0.25rem 1rem',
+                    borderRadius: '999px',
+                    fontSize: '0.75rem',
+                    fontWeight: 'bold',
+                    fontFamily: 'var(--font-kalam)'
+                  }}
+                >
+                  {plano.badge}
+                </div>
+              )}
 
-      <div className="pt-24 pb-12 flex justify-center px-4 relative z-10">
-        <div className="w-full max-w-5xl rounded-3xl border border-emerald-300/80 bg-gradient-to-b from-emerald-950/95 via-[#02271a] to-emerald-950/95 shadow-[0_0_40px_rgba(0,0,0,0.8)] overflow-hidden">
-          {/* linha clara superior */}
-          <div className="h-1 w-full bg-emerald-300/80" />
-
-          <div className="px-6 sm:px-10 py-8 sm:py-10">
-            {/* título / subtítulo */}
-            <div className="text-center mb-8">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-emerald-50 drop-shadow-[0_0_8px_rgba(0,0,0,0.9)]">
-                Planos do <span className="text-emerald-200">ENEM-IA</span>
-              </h1>
-              <p className="mt-3 text-sm sm:text-base text-emerald-100/85 max-w-2xl mx-auto">
-                Todos os planos usam a inteligência do ENEM-IA para corrigir, explicar e
-                acompanhar sua evolução como se fosse um professor particular 24h na sua lousa.
-              </p>
-            </div>
-
-            {/* cards de plano */}
-            <div className="mt-6 grid gap-5 sm:grid-cols-3">
-              {/* Plano Gratuito */}
-              <div className="rounded-2xl border border-emerald-300/70 bg-emerald-950/85 px-4 py-6 shadow-[0_0_25px_rgba(0,0,0,0.7)] flex flex-col">
-                <p className="text-[10px] uppercase tracking-[0.28em] text-emerald-200/80 mb-2">
-                  Iniciante
-                </p>
-                <h2 className="text-lg font-bold text-emerald-50 mb-1">
-                  Plano Gratuito
+              {/* Icon e Nome */}
+              <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+                <div
+                  style={{
+                    width: '60px',
+                    height: '60px',
+                    borderRadius: '50%',
+                    backgroundColor: plano.destaque
+                      ? 'rgba(251, 191, 36, 0.2)'
+                      : 'rgba(255, 255, 255, 0.1)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto 1rem',
+                    color: plano.destaque ? 'var(--accent-yellow)' : 'var(--chalk-white)'
+                  }}
+                >
+                  {plano.icon}
+                </div>
+                <h2
+                  style={{
+                    fontSize: '1.5rem',
+                    fontWeight: 'bold',
+                    color: plano.destaque ? 'var(--accent-yellow)' : 'var(--chalk-white)',
+                    fontFamily: 'var(--font-kalam)',
+                    marginBottom: '0.25rem'
+                  }}
+                >
+                  {plano.nome}
                 </h2>
-                <p className="text-sm text-emerald-100/90 mb-4">
-                  Para conhecer a plataforma, testar simulados e sentir como a lousa do ENEM-IA funciona.
-                </p>
-
-                <p className="text-2xl font-extrabold text-emerald-200 mb-1">
-                  R$ 0
-                </p>
-                <p className="text-[11px] text-emerald-100/75 mb-4">
-                  acesso grátis para começar
-                </p>
-
-                <ul className="text-xs text-emerald-50/95 space-y-1.5 mb-4">
-                  <li>• Simulados básicos por área</li>
-                  <li>• Algumas explicações por IA</li>
-                  <li>• Dashboard simples de desempenho</li>
-                  <li>• FP e níveis até <span className="font-semibold">Prata</span></li>
-                </ul>
-
-                <Link
-                  href="/disciplinas"
-                  className="mt-auto inline-flex items-center justify-center rounded-xl px-4 py-2.5 text-xs font-semibold bg-emerald-300 text-emerald-950 hover:bg-emerald-200 transition-colors"
+                <p
+                  style={{
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.875rem',
+                    fontFamily: 'var(--font-kalam)'
+                  }}
                 >
-                  Começar grátis
-                </Link>
+                  {plano.subtitulo}
+                </p>
               </div>
 
-              {/* Plano Pro (destaque) */}
-              <div className="rounded-2xl border-2 border-amber-400 bg-gradient-to-b from-emerald-900 via-emerald-950 to-emerald-900 px-4 py-6 shadow-[0_0_32px_rgba(0,0,0,0.9)] flex flex-col relative">
-                <span className="absolute -top-3 right-4 bg-amber-400 text-emerald-950 text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                  MAIS USADO
-                </span>
-
-                <p className="text-[10px] uppercase tracking-[0.28em] text-amber-200/90 mb-2">
-                  Focado
-                </p>
-                <h2 className="text-lg font-bold text-emerald-50 mb-1">
-                  ENEM-IA Pro
-                </h2>
-                <p className="text-sm text-emerald-100/90 mb-4">
-                  Para quem quer simular o ENEM de verdade, com explicações completas, TRI e análise de nota de corte.
-                </p>
-
-                <p className="text-2xl font-extrabold text-amber-300 mb-1">
-                  R$ XX/mês
-                </p>
-                <p className="text-[11px] text-emerald-100/80 mb-4">
-                  acesso total ao ENEM-IA
-                </p>
-
-                <ul className="text-xs text-emerald-50/95 space-y-1.5 mb-4">
-                  <li>• Simulados completos por prova ou por área</li>
-                  <li>• Explicações ilimitadas com IA pedagógica</li>
-                  <li>• Comparação com notas de corte do SISU</li>
-                  <li>• Ranking global e desafios semanais</li>
-                  <li>• Painel de evolução por disciplina</li>
-                  <li>• FP ilimitado e níveis até <span className="font-semibold">Diamante</span></li>
-                </ul>
-
-                <Link
-                  href="/assinatura/mensal"
-                  className="mt-auto inline-flex items-center justify-center rounded-xl px-4 py-2.5 text-xs font-semibold bg-amber-300 text-emerald-950 hover:bg-amber-200 transition-colors"
+              {/* Preco */}
+              <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+                <div
+                  style={{
+                    fontSize: '2.5rem',
+                    fontWeight: 'bold',
+                    color: plano.destaque ? 'var(--accent-yellow)' : 'var(--chalk-white)',
+                    fontFamily: 'var(--font-kalam)'
+                  }}
                 >
-                  Assinar ENEM-IA Pro
-                </Link>
+                  {periodoAnual && plano.precoAnual ? plano.precoAnual : plano.preco}
+                </div>
+                <div
+                  style={{
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.875rem',
+                    fontFamily: 'var(--font-kalam)'
+                  }}
+                >
+                  {plano.periodo}
+                </div>
+                {periodoAnual && plano.precoAnual && (
+                  <div
+                    style={{
+                      color: '#86efac',
+                      fontSize: '0.75rem',
+                      marginTop: '0.25rem',
+                      fontFamily: 'var(--font-kalam)'
+                    }}
+                  >
+                    Cobrado anualmente
+                  </div>
+                )}
               </div>
 
-              {/* Plano Turmas/Escolas */}
-              <div className="rounded-2xl border border-emerald-300/70 bg-emerald-950/85 px-4 py-6 shadow-[0_0_25px_rgba(0,0,0,0.7)] flex flex-col">
-                <p className="text-[10px] uppercase tracking-[0.28em] text-emerald-200/80 mb-2">
-                  Escolas & Cursinhos
-                </p>
-                <h2 className="text-lg font-bold text-emerald-50 mb-1">
-                  ENEM-IA para Turmas
-                </h2>
-                <p className="text-sm text-emerald-100/90 mb-4">
-                  Para quem quer acompanhar uma turma inteira com relatórios, ranking interno e simulados personalizados.
-                </p>
+              {/* Recursos */}
+              <ul style={{ marginBottom: '1.5rem' }}>
+                {plano.recursos.map((recurso, idx) => (
+                  <li
+                    key={idx}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem',
+                      padding: '0.5rem 0',
+                      borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
+                    }}
+                  >
+                    {recurso.incluido ? (
+                      <Check
+                        className="w-5 h-5 flex-shrink-0"
+                        style={{ color: recurso.destaque ? 'var(--accent-yellow)' : '#86efac' }}
+                      />
+                    ) : (
+                      <X
+                        className="w-5 h-5 flex-shrink-0"
+                        style={{ color: 'rgba(255, 255, 255, 0.3)' }}
+                      />
+                    )}
+                    <span
+                      style={{
+                        color: recurso.incluido ? 'var(--chalk-white)' : 'var(--chalk-dim)',
+                        fontSize: '0.875rem',
+                        fontFamily: 'var(--font-kalam)',
+                        fontWeight: recurso.destaque ? 'bold' : 'normal'
+                      }}
+                    >
+                      {recurso.nome}
+                    </span>
+                  </li>
+                ))}
+              </ul>
 
-                <p className="text-2xl font-extrabold text-emerald-200 mb-1">
-                  Sob consulta
-                </p>
-                <p className="text-[11px] text-emerald-100/80 mb-4">
-                  planos flexíveis para escolas
-                </p>
-
-                <ul className="text-xs text-emerald-50/95 space-y-1.5 mb-4">
-                  <li>• Painel do professor e coordenador</li>
-                  <li>• Relatórios por aluno e por turma</li>
-                  <li>• Exportação de desempenhos</li>
-                  <li>• Simulados presenciais + correção pelo ENEM-IA</li>
-                </ul>
-
-                <Link
-                  href="/contato"
-                  className="mt-auto inline-flex items-center justify-center rounded-xl px-4 py-2.5 text-xs font-semibold bg-emerald-200 text-emerald-950 hover:bg-emerald-100 transition-colors"
+              {/* CTA */}
+              <Link href={plano.ctaLink}>
+                <button
+                  className={plano.destaque ? 'btn btn-yellow' : 'btn'}
+                  style={{
+                    width: '100%',
+                    padding: '1rem',
+                    fontSize: '1rem',
+                    fontWeight: 'bold',
+                    fontFamily: 'var(--font-kalam)'
+                  }}
                 >
-                  Falar com a equipe
-                </Link>
-              </div>
+                  {plano.cta}
+                </button>
+              </Link>
             </div>
+          ))}
+        </div>
 
-            {/* FAQ enxuto no tema lousa */}
-            <div className="mt-10 border-t border-emerald-300/40 pt-6">
-              <h2 className="text-lg sm:text-xl font-bold text-emerald-50 mb-4">
-                Perguntas frequentes sobre os planos
-              </h2>
-              <div className="space-y-3 text-xs sm:text-sm text-emerald-100/90">
-                <div>
-                  <p className="font-semibold text-emerald-50">
-                    Preciso de cartão para usar o plano gratuito?
-                  </p>
-                  <p>
-                    Não. Você cria sua conta, escolhe uma disciplina e já pode fazer
-                    simulados de graça na lousa do ENEM-IA.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-emerald-50">
-                    Posso cancelar o plano Pro quando quiser?
-                  </p>
-                  <p>
-                    Sim. O cancelamento é feito direto no painel do aluno, sem burocracia.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-emerald-50">
-                    As explicações são realmente feitas por IA?
-                  </p>
-                  <p>
-                    Sim. A IA foi ajustada para explicar passo a passo, com nível de linguagem
-                    adaptado ao seu desempenho e número de erros.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-emerald-50">
-                    Funciona bem no celular?
-                  </p>
-                  <p>
-                    100%. Todo o ENEM-IA foi pensado para tela pequena: botões grandes,
-                    leitura fácil e lousa responsiva.
-                  </p>
-                </div>
-              </div>
-            </div>
+        {/* FAQ */}
+        <div
+          style={{
+            maxWidth: '800px',
+            margin: '4rem auto 0',
+            padding: '2rem',
+            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            borderRadius: '20px',
+            border: '2px solid rgba(255, 255, 255, 0.1)'
+          }}
+        >
+          <h2
+            style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-kalam)',
+              marginBottom: '1.5rem',
+              textAlign: 'center'
+            }}
+          >
+            Perguntas Frequentes
+          </h2>
 
-            {/* CTA final na própria lousa */}
-            <div className="mt-10 rounded-2xl border border-emerald-200/60 bg-emerald-900/60 px-5 py-5 text-center">
-              <h3 className="text-lg sm:text-xl font-bold text-emerald-50 mb-2">
-                Pronto para subir sua nota no ENEM?
-              </h3>
-              <p className="text-xs sm:text-sm text-emerald-100/90 mb-4">
-                Comece no plano gratuito, faça seus primeiros simulados e, quando estiver firme,
-                migre para o ENEM-IA Pro para treinar como se fosse o dia da prova.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Link
-                  href="/disciplinas"
-                  className="inline-flex items-center justify-center rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold bg-emerald-300 text-emerald-950 hover:bg-emerald-200 transition-colors"
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            {[
+              {
+                pergunta: 'Posso cancelar a qualquer momento?',
+                resposta: 'Sim! Voce pode cancelar sua assinatura a qualquer momento pelo painel do aluno, sem multas ou burocracia.'
+              },
+              {
+                pergunta: 'Preciso de cartao de credito para o plano gratuito?',
+                resposta: 'Nao! O plano Lite e 100% gratuito e nao requer nenhum dado de pagamento.'
+              },
+              {
+                pergunta: 'Como funciona a garantia de 30 dias?',
+                resposta: 'Se voce nao ficar satisfeito nos primeiros 30 dias do plano Premium, devolvemos 100% do seu dinheiro.'
+              },
+              {
+                pergunta: 'Posso trocar de plano depois?',
+                resposta: 'Claro! Voce pode fazer upgrade ou downgrade do seu plano a qualquer momento.'
+              }
+            ].map((faq, idx) => (
+              <div
+                key={idx}
+                style={{
+                  padding: '1rem',
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderRadius: '12px'
+                }}
+              >
+                <h3
+                  style={{
+                    color: 'var(--chalk-white)',
+                    fontWeight: 'bold',
+                    fontSize: '1rem',
+                    marginBottom: '0.5rem',
+                    fontFamily: 'var(--font-kalam)'
+                  }}
                 >
-                  Começar grátis agora
-                </Link>
-                <Link
-                  href="/assinatura/mensal"
-                  className="inline-flex items-center justify-center rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold border border-emerald-200/70 text-emerald-50 hover:bg-emerald-800/70 transition-colors"
+                  {faq.pergunta}
+                </h3>
+                <p
+                  style={{
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.875rem',
+                    fontFamily: 'var(--font-kalam)'
+                  }}
                 >
-                  Ver detalhes do ENEM-IA Pro
-                </Link>
+                  {faq.resposta}
+                </p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
+
+        {/* CTA Final */}
+        <div
+          style={{
+            textAlign: 'center',
+            marginTop: '3rem',
+            padding: '2rem',
+            backgroundColor: 'rgba(251, 191, 36, 0.1)',
+            borderRadius: '20px',
+            border: '2px solid rgba(251, 191, 36, 0.3)'
+          }}
+        >
+          <Sparkles
+            className="w-12 h-12 mx-auto mb-4"
+            style={{ color: 'var(--accent-yellow)' }}
+          />
+          <h2
+            style={{
+              fontSize: '1.75rem',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-kalam)',
+              marginBottom: '0.5rem'
+            }}
+          >
+            Pronto para conquistar sua vaga?
+          </h2>
+          <p
+            style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '1rem',
+              fontFamily: 'var(--font-kalam)',
+              marginBottom: '1.5rem',
+              maxWidth: '500px',
+              margin: '0 auto 1.5rem'
+            }}
+          >
+            Junte-se a milhares de estudantes que ja estao se preparando com o ENEM PRO
+          </p>
+          <Link href="/cadastro">
+            <button
+              className="btn btn-yellow"
+              style={{
+                padding: '1rem 3rem',
+                fontSize: '1.125rem',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-kalam)'
+              }}
+            >
+              Comecar Agora - E Gratis!
+            </button>
+          </Link>
+        </div>
+
+        {/* Footer */}
+        <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+          <Link
+            href="/"
+            style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem',
+              textDecoration: 'none',
+              fontFamily: 'var(--font-kalam)'
+            }}
+          >
+            ← Voltar ao inicio
+          </Link>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }

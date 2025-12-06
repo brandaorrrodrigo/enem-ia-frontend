@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
-import FloatingNav from '@/components/FloatingNav';
+import Link from 'next/link';
 
 interface Material {
   id: string;
@@ -188,38 +187,61 @@ export default function MateriaisPage() {
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando materiais...</p>
+      <div className="container" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div className="loading-spinner" style={{ margin: '0 auto 24px' }}></div>
+          <p style={{ fontSize: '1.125rem', fontWeight: 600, color: 'var(--chalk-white)' }}>Carregando materiais...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container-ia min-h-screen py-8">
-      <FloatingNav />
-
+    <div className="container">
       {/* Header */}
-      <div className="mb-8 pt-16">
-        <h1 className="title-ia flex items-center gap-3 mb-2">
-          📦 Materiais de Estudo
-        </h1>
-        <p className="subtitle-ia mb-0">
-          Resumos, mapas mentais, formulas e muito mais para sua preparacao
-        </p>
+      <div className="header">
+        <h1>📦 Materiais de Estudo</h1>
+        <p>Resumos, mapas mentais, formulas e muito mais para sua preparacao</p>
+      </div>
+
+      {/* Estatisticas */}
+      <div className="stats-bar">
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{materiais.length}</div>
+          <div className="stat-label">Materiais</div>
+        </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{materiais.filter(m => m.tipo === 'resumo').length}</div>
+          <div className="stat-label">Resumos</div>
+        </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{materiais.filter(m => m.tipo === 'mapa-mental').length}</div>
+          <div className="stat-label">Mapas Mentais</div>
+        </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{materiais.filter(m => !m.premium).length}</div>
+          <div className="stat-label">Gratuitos</div>
+        </div>
       </div>
 
       {/* Filtros */}
-      <div className="card-ia mb-8">
-        <div className="flex flex-col md:flex-row gap-4">
-          <div className="flex-1">
-            <label className="block text-white/80 text-sm mb-2">📁 Tipo de Material</label>
+      <div className="card" style={{ marginBottom: '35px' }}>
+        <h2 className="card-title">📋 Filtrar Materiais</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+          <div>
+            <label style={{
+              display: 'block',
+              marginBottom: '8px',
+              fontSize: '0.9rem',
+              color: 'var(--chalk-dim)'
+            }}>
+              📁 Tipo de Material
+            </label>
             <select
               value={filtroTipo}
               onChange={(e) => setFiltroTipo(e.target.value)}
-              className="input-ia w-full"
+              className="input"
+              style={{ width: '100%' }}
             >
               {tiposMaterial.map((t) => (
                 <option key={t.value} value={t.value}>
@@ -229,12 +251,20 @@ export default function MateriaisPage() {
             </select>
           </div>
 
-          <div className="flex-1">
-            <label className="block text-white/80 text-sm mb-2">📚 Disciplina</label>
+          <div>
+            <label style={{
+              display: 'block',
+              marginBottom: '8px',
+              fontSize: '0.9rem',
+              color: 'var(--chalk-dim)'
+            }}>
+              📚 Disciplina
+            </label>
             <select
               value={filtroDisciplina}
               onChange={(e) => setFiltroDisciplina(e.target.value)}
-              className="input-ia w-full"
+              className="input"
+              style={{ width: '100%' }}
             >
               {disciplinas.map((d) => (
                 <option key={d.value} value={d.value}>
@@ -246,105 +276,196 @@ export default function MateriaisPage() {
         </div>
       </div>
 
-      {/* Estatisticas */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="stat-ia">
-          <span className="stat-ia-value">{materiais.length}</span>
-          <span className="stat-ia-label">📦 Materiais</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{materiais.filter(m => m.tipo === 'resumo').length}</span>
-          <span className="stat-ia-label">📝 Resumos</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{materiais.filter(m => m.tipo === 'mapa-mental').length}</span>
-          <span className="stat-ia-label">🧠 Mapas Mentais</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{materiais.filter(m => !m.premium).length}</span>
-          <span className="stat-ia-label">🆓 Gratuitos</span>
-        </div>
-      </div>
-
       {/* Grid de Materiais */}
       {materiaisFiltrados.length === 0 ? (
-        <div className="card-ia text-center py-12">
-          <div className="text-8xl mb-6">📦</div>
-          <h3 className="text-white text-xl font-bold mb-3">Nenhum material encontrado</h3>
-          <p className="text-white/70">Tente ajustar seus filtros.</p>
+        <div className="card" style={{ textAlign: 'center', padding: '60px 20px' }}>
+          <div style={{ fontSize: '5rem', marginBottom: '24px' }}>📦</div>
+          <h3 style={{
+            fontSize: '1.25rem',
+            fontWeight: 700,
+            marginBottom: '12px',
+            color: 'var(--chalk-white)'
+          }}>
+            Nenhum material encontrado
+          </h3>
+          <p style={{ color: 'var(--chalk-dim)' }}>Tente ajustar seus filtros.</p>
         </div>
       ) : (
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {materiaisFiltrados.map((material) => (
-            <div
-              key={material.id}
-              className="card-ia hover:scale-[1.02] transition-all cursor-pointer group relative"
-            >
-              {/* Badge Premium */}
-              {material.premium && (
-                <div className="absolute top-4 right-4 bg-yellow-400 text-slate-900 text-xs font-bold px-2 py-1 rounded-full">
-                  ⭐ PREMIUM
-                </div>
-              )}
+        <div className="category">
+          <div className="category-title">
+            <span>📦</span>
+            Materiais Disponiveis
+          </div>
+          <div className="cards-grid">
+            {materiaisFiltrados.map((material) => (
+              <div key={material.id} className="chalkboard-card">
+                {/* Badge Premium */}
+                {material.premium && (
+                  <div className="badge" style={{
+                    position: 'absolute',
+                    top: '16px',
+                    right: '16px',
+                    background: 'var(--accent-yellow)',
+                    color: '#1e293b',
+                    fontSize: '0.75rem',
+                    fontWeight: 700,
+                    padding: '4px 12px',
+                    borderRadius: '9999px',
+                    zIndex: 10
+                  }}>
+                    ⭐ PREMIUM
+                  </div>
+                )}
 
-              {/* Icone e Tipo */}
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center text-3xl group-hover:bg-white/20 transition">
-                  {material.icone}
+                {/* Icone e Tipo */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '16px' }}>
+                  <div style={{
+                    width: '64px',
+                    height: '64px',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '12px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '2rem',
+                    transition: 'background 0.2s'
+                  }}>
+                    {material.icone}
+                  </div>
+                  <div>
+                    <span className="badge" style={{
+                      background: 'rgba(255, 255, 255, 0.15)',
+                      padding: '4px 12px',
+                      fontSize: '0.75rem',
+                      display: 'inline-block'
+                    }}>
+                      {getTipoLabel(material.tipo)}
+                    </span>
+                    <p style={{
+                      fontSize: '0.75rem',
+                      color: 'var(--chalk-faint)',
+                      marginTop: '4px'
+                    }}>
+                      {material.disciplina}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <span className="badge-ia text-xs">{getTipoLabel(material.tipo)}</span>
-                  <p className="text-white/60 text-xs mt-1">{material.disciplina}</p>
+
+                {/* Titulo e Descricao */}
+                <h3 style={{
+                  fontWeight: 700,
+                  marginBottom: '8px',
+                  fontSize: '1rem',
+                  color: 'var(--chalk-white)'
+                }}>
+                  {material.titulo}
+                </h3>
+                <p style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  marginBottom: '16px',
+                  display: '-webkit-box',
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden'
+                }}>
+                  {material.descricao}
+                </p>
+
+                {/* Footer */}
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  paddingTop: '16px',
+                  borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+                  marginTop: 'auto'
+                }}>
+                  <span style={{
+                    color: 'var(--chalk-faint)',
+                    fontSize: '0.875rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '4px'
+                  }}>
+                    <span>⬇️</span>
+                    {material.downloads.toLocaleString('pt-BR')} downloads
+                  </span>
+
+                  <button
+                    className={material.premium ? 'btn' : 'btn btn-yellow'}
+                    style={{
+                      padding: '6px 16px',
+                      fontSize: '0.875rem',
+                      opacity: material.premium ? 0.7 : 1,
+                      cursor: material.premium ? 'not-allowed' : 'pointer'
+                    }}
+                    disabled={material.premium}
+                  >
+                    {material.premium ? '🔒 Premium' : '📥 Baixar'}
+                  </button>
                 </div>
               </div>
-
-              {/* Titulo e Descricao */}
-              <h3 className="text-white font-bold mb-2">{material.titulo}</h3>
-              <p className="text-white/70 text-sm line-clamp-2 mb-4">{material.descricao}</p>
-
-              {/* Footer */}
-              <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                <span className="text-white/60 text-sm flex items-center gap-1">
-                  <span>⬇️</span>
-                  {material.downloads.toLocaleString('pt-BR')} downloads
-                </span>
-
-                <button
-                  className={`btn-ia-sm ${material.premium ? 'opacity-70' : ''}`}
-                  disabled={material.premium}
-                >
-                  {material.premium ? '🔒 Premium' : '📥 Baixar'}
-                </button>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
 
       {/* Categorias Rapidas */}
-      <div className="card-ia mt-8">
-        <h2 className="title-ia-sm mb-6">🚀 Acesso Rapido por Tipo</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="card" style={{ marginTop: '35px' }}>
+        <h2 className="card-title">🚀 Acesso Rapido por Tipo</h2>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+          gap: '16px'
+        }}>
           {tiposMaterial.filter(t => t.value !== 'todos').map((tipo) => {
             const count = materiais.filter(m => m.tipo === tipo.value).length;
+            const isActive = filtroTipo === tipo.value;
             return (
               <button
                 key={tipo.value}
                 onClick={() => setFiltroTipo(tipo.value)}
-                className={`card-ia-sm text-center hover:scale-105 transition ${
-                  filtroTipo === tipo.value ? 'border-2 border-yellow-300' : ''
-                }`}
+                className="btn"
+                style={{
+                  padding: '20px',
+                  textAlign: 'center',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '8px',
+                  border: isActive ? '2px solid var(--accent-yellow)' : undefined,
+                  background: isActive ? 'rgba(252, 211, 77, 0.1)' : undefined
+                }}
               >
-                <div className="text-4xl mb-2">{tipo.emoji}</div>
-                <p className="text-white font-semibold text-sm">{tipo.label}</p>
-                <p className="text-white/60 text-xs">{count} itens</p>
+                <div style={{ fontSize: '2.5rem' }}>{tipo.emoji}</div>
+                <p style={{
+                  fontWeight: 600,
+                  fontSize: '0.875rem',
+                  margin: 0,
+                  color: 'var(--chalk-white)'
+                }}>
+                  {tipo.label}
+                </p>
+                <p style={{
+                  fontSize: '0.75rem',
+                  color: 'var(--chalk-faint)',
+                  margin: 0
+                }}>
+                  {count} itens
+                </p>
               </button>
             );
           })}
         </div>
       </div>
 
-      <ChalkBackToTop />
+      {/* Footer */}
+      <footer>
+        <p>
+          <Link href="/enem">← Voltar ao Painel</Link>
+        </p>
+      </footer>
     </div>
   );
 }

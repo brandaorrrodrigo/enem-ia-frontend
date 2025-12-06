@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 
 interface MetaUsuario {
   notaDesejada: number;
@@ -284,191 +283,317 @@ export default function PlanoEstudosPage() {
 
   if (etapa === 'config') {
     return (
-      <main className="min-h-screen bg-[#0D1F22] text-white pt-16 pb-24">
+      <main style={{
+        minHeight: '100vh',
+        background: 'var(--chalkboard-bg)',
+        color: 'var(--chalk-white)',
+        paddingTop: '4rem',
+        paddingBottom: '6rem'
+      }}>
         <FloatingNav />
-        <ChalkBackToTop />
 
-        <div className="container-ia py-8 max-w-3xl mx-auto">
-          <div className="text-center mb-8">
-            <h1 className="title-ia text-3xl md:text-4xl mb-4">
+        <div style={{
+          maxWidth: '48rem',
+          margin: '0 auto',
+          padding: '2rem 1rem'
+        }}>
+          {/* Header */}
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <h1 style={{
+              fontSize: 'clamp(1.875rem, 5vw, 2.25rem)',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              marginBottom: '1rem',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+            }}>
               🎯 Plano de Estudos Personalizado
             </h1>
-            <p className="text-gray-400">
+            <p style={{ color: 'var(--chalk-dim)' }}>
               Configure suas metas e preferências para gerar um plano de estudos sob medida.
             </p>
           </div>
 
-          <div className="card-ia p-6 space-y-8">
-            {/* Nota Desejada */}
-            <div>
-              <label className="block text-lg font-bold mb-3">🏆 Qual sua nota desejada no ENEM?</label>
-              <div className="flex items-center gap-4">
-                <input
-                  type="range"
-                  min="400"
-                  max="900"
-                  step="50"
-                  value={meta.notaDesejada}
-                  onChange={(e) => setMeta(prev => ({ ...prev, notaDesejada: Number(e.target.value) }))}
-                  className="flex-1"
-                />
-                <span className="text-3xl font-bold text-emerald-400 w-20 text-center">{meta.notaDesejada}</span>
-              </div>
-              <p className="text-sm text-gray-400 mt-2">
-                {meta.notaDesejada >= 800 ? '🔥 Meta ambiciosa! Requer dedicação intensa.' :
-                 meta.notaDesejada >= 700 ? '💪 Ótima meta! Competitivo para boas universidades.' :
-                 meta.notaDesejada >= 600 ? '👍 Meta equilibrada. Alcançável com estudo consistente.' :
-                 '📚 Meta inicial. Bom ponto de partida!'}
-              </p>
-            </div>
-
-            {/* Curso e Universidade */}
-            <div className="grid md:grid-cols-2 gap-4">
+          {/* Card Principal */}
+          <div className="card" style={{ padding: '1.5rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+              {/* Nota Desejada */}
               <div>
-                <label className="block font-bold mb-2">📚 Curso desejado</label>
-                <select
-                  value={meta.curso}
-                  onChange={(e) => setMeta(prev => ({ ...prev, curso: e.target.value }))}
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-emerald-500 focus:outline-none"
-                >
-                  <option value="">Selecione o curso...</option>
-                  {cursosPopulares.map(curso => (
-                    <option key={curso} value={curso}>{curso}</option>
-                  ))}
-                </select>
+                <label style={{
+                  display: 'block',
+                  fontSize: '1.125rem',
+                  fontWeight: 'bold',
+                  marginBottom: '0.75rem',
+                  color: 'var(--chalk-white)'
+                }}>
+                  🏆 Qual sua nota desejada no ENEM?
+                </label>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <input
+                    type="range"
+                    min="400"
+                    max="900"
+                    step="50"
+                    value={meta.notaDesejada}
+                    onChange={(e) => setMeta(prev => ({ ...prev, notaDesejada: Number(e.target.value) }))}
+                    style={{ flex: 1 }}
+                  />
+                  <span style={{
+                    fontSize: '1.875rem',
+                    fontWeight: 'bold',
+                    color: 'var(--accent-yellow)',
+                    width: '5rem',
+                    textAlign: 'center'
+                  }}>
+                    {meta.notaDesejada}
+                  </span>
+                </div>
+                <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)', marginTop: '0.5rem' }}>
+                  {meta.notaDesejada >= 800 ? '🔥 Meta ambiciosa! Requer dedicação intensa.' :
+                   meta.notaDesejada >= 700 ? '💪 Ótima meta! Competitivo para boas universidades.' :
+                   meta.notaDesejada >= 600 ? '👍 Meta equilibrada. Alcançável com estudo consistente.' :
+                   '📚 Meta inicial. Bom ponto de partida!'}
+                </p>
               </div>
+
+              {/* Curso e Universidade */}
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+                gap: '1rem'
+              }}>
+                <div>
+                  <label style={{
+                    display: 'block',
+                    fontWeight: 'bold',
+                    marginBottom: '0.5rem',
+                    color: 'var(--chalk-white)'
+                  }}>
+                    📚 Curso desejado
+                  </label>
+                  <select
+                    value={meta.curso}
+                    onChange={(e) => setMeta(prev => ({ ...prev, curso: e.target.value }))}
+                    style={{
+                      width: '100%',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid rgba(255, 255, 255, 0.1)',
+                      borderRadius: '0.5rem',
+                      padding: '0.75rem 1rem',
+                      color: 'var(--chalk-white)',
+                      outline: 'none'
+                    }}
+                  >
+                    <option value="">Selecione o curso...</option>
+                    {cursosPopulares.map(curso => (
+                      <option key={curso} value={curso} style={{ background: '#1a1a1a' }}>{curso}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label style={{
+                    display: 'block',
+                    fontWeight: 'bold',
+                    marginBottom: '0.5rem',
+                    color: 'var(--chalk-white)'
+                  }}>
+                    🏛️ Universidade alvo
+                  </label>
+                  <select
+                    value={meta.universidade}
+                    onChange={(e) => setMeta(prev => ({ ...prev, universidade: e.target.value }))}
+                    style={{
+                      width: '100%',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid rgba(255, 255, 255, 0.1)',
+                      borderRadius: '0.5rem',
+                      padding: '0.75rem 1rem',
+                      color: 'var(--chalk-white)',
+                      outline: 'none'
+                    }}
+                  >
+                    <option value="">Selecione a universidade...</option>
+                    {universidadesPopulares.map(uni => (
+                      <option key={uni} value={uni} style={{ background: '#1a1a1a' }}>{uni}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              {/* Horas Disponíveis */}
               <div>
-                <label className="block font-bold mb-2">🏛️ Universidade alvo</label>
-                <select
-                  value={meta.universidade}
-                  onChange={(e) => setMeta(prev => ({ ...prev, universidade: e.target.value }))}
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-emerald-500 focus:outline-none"
-                >
-                  <option value="">Selecione a universidade...</option>
-                  {universidadesPopulares.map(uni => (
-                    <option key={uni} value={uni}>{uni}</option>
+                <label style={{
+                  display: 'block',
+                  fontWeight: 'bold',
+                  marginBottom: '0.75rem',
+                  color: 'var(--chalk-white)'
+                }}>
+                  ⏰ Quantas horas por dia você pode estudar?
+                </label>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {[1, 2, 3, 4, 5, 6, 8].map(h => (
+                    <button
+                      key={h}
+                      onClick={() => setMeta(prev => ({ ...prev, horasDisponiveis: h }))}
+                      className={meta.horasDisponiveis === h ? 'btn btn-yellow' : 'btn'}
+                      style={{
+                        padding: '0.5rem 1rem',
+                        minWidth: '3.5rem'
+                      }}
+                    >
+                      {h}h
+                    </button>
                   ))}
-                </select>
+                </div>
               </div>
-            </div>
 
-            {/* Horas Disponíveis */}
-            <div>
-              <label className="block font-bold mb-3">⏰ Quantas horas por dia você pode estudar?</label>
-              <div className="flex gap-2 flex-wrap">
-                {[1, 2, 3, 4, 5, 6, 8].map(h => (
-                  <button
-                    key={h}
-                    onClick={() => setMeta(prev => ({ ...prev, horasDisponiveis: h }))}
-                    className={`px-4 py-2 rounded-lg transition-colors ${
-                      meta.horasDisponiveis === h
-                        ? 'bg-emerald-600 text-white'
-                        : 'bg-white/10 hover:bg-white/20'
-                    }`}
-                  >
-                    {h}h
-                  </button>
-                ))}
+              {/* Dias Disponíveis */}
+              <div>
+                <label style={{
+                  display: 'block',
+                  fontWeight: 'bold',
+                  marginBottom: '0.75rem',
+                  color: 'var(--chalk-white)'
+                }}>
+                  📅 Quais dias você pode estudar?
+                </label>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {diasSemana.map(dia => (
+                    <button
+                      key={dia.id}
+                      onClick={() => toggleDia(dia.id)}
+                      className={meta.diasDisponiveis.includes(dia.id) ? 'btn btn-yellow' : 'btn'}
+                      style={{
+                        padding: '0.5rem 1rem',
+                        minWidth: '4rem'
+                      }}
+                    >
+                      {dia.nome.slice(0, 3)}
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            {/* Dias Disponíveis */}
-            <div>
-              <label className="block font-bold mb-3">📅 Quais dias você pode estudar?</label>
-              <div className="flex gap-2 flex-wrap">
-                {diasSemana.map(dia => (
-                  <button
-                    key={dia.id}
-                    onClick={() => toggleDia(dia.id)}
-                    className={`px-4 py-2 rounded-lg transition-colors ${
-                      meta.diasDisponiveis.includes(dia.id)
-                        ? 'bg-emerald-600 text-white'
-                        : 'bg-white/10 hover:bg-white/20'
-                    }`}
-                  >
-                    {dia.nome.slice(0, 3)}
-                  </button>
-                ))}
+              {/* Nível Atual */}
+              <div>
+                <label style={{
+                  display: 'block',
+                  fontWeight: 'bold',
+                  marginBottom: '0.75rem',
+                  color: 'var(--chalk-white)'
+                }}>
+                  📊 Qual seu nível atual de conhecimento?
+                </label>
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+                  gap: '0.75rem'
+                }}>
+                  {[
+                    { id: 'iniciante', label: 'Iniciante', desc: 'Estou começando do zero' },
+                    { id: 'intermediario', label: 'Intermediário', desc: 'Tenho base, preciso aprofundar' },
+                    { id: 'avancado', label: 'Avançado', desc: 'Domino a maioria, preciso revisar' }
+                  ].map(nivel => (
+                    <button
+                      key={nivel.id}
+                      onClick={() => setMeta(prev => ({ ...prev, nivelAtual: nivel.id as MetaUsuario['nivelAtual'] }))}
+                      className={meta.nivelAtual === nivel.id ? 'btn btn-yellow' : 'btn'}
+                      style={{
+                        padding: '1rem',
+                        textAlign: 'left',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '0.25rem'
+                      }}
+                    >
+                      <div style={{ fontWeight: 'bold' }}>{nivel.label}</div>
+                      <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>{nivel.desc}</div>
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            {/* Nível Atual */}
-            <div>
-              <label className="block font-bold mb-3">📊 Qual seu nível atual de conhecimento?</label>
-              <div className="grid grid-cols-3 gap-3">
-                {[
-                  { id: 'iniciante', label: 'Iniciante', desc: 'Estou começando do zero' },
-                  { id: 'intermediario', label: 'Intermediário', desc: 'Tenho base, preciso aprofundar' },
-                  { id: 'avancado', label: 'Avançado', desc: 'Domino a maioria, preciso revisar' }
-                ].map(nivel => (
-                  <button
-                    key={nivel.id}
-                    onClick={() => setMeta(prev => ({ ...prev, nivelAtual: nivel.id as MetaUsuario['nivelAtual'] }))}
-                    className={`p-4 rounded-lg text-left transition-colors ${
-                      meta.nivelAtual === nivel.id
-                        ? 'bg-emerald-600 border-2 border-emerald-400'
-                        : 'bg-white/10 hover:bg-white/20 border-2 border-transparent'
-                    }`}
-                  >
-                    <div className="font-bold">{nivel.label}</div>
-                    <div className="text-xs text-gray-300">{nivel.desc}</div>
-                  </button>
-                ))}
+              {/* Áreas Fortes */}
+              <div>
+                <label style={{
+                  display: 'block',
+                  fontWeight: 'bold',
+                  marginBottom: '0.75rem',
+                  color: 'var(--chalk-white)'
+                }}>
+                  💪 Quais são suas áreas FORTES?
+                </label>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {areas.map(area => (
+                    <button
+                      key={area.id}
+                      onClick={() => toggleAreaForte(area.id)}
+                      className={meta.areasFortes.includes(area.id) ? 'btn btn-yellow' : 'btn'}
+                      style={{
+                        padding: '0.5rem 1rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem'
+                      }}
+                    >
+                      <span>{area.icone}</span>
+                      <span>{area.nome}</span>
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            {/* Áreas Fortes */}
-            <div>
-              <label className="block font-bold mb-3">💪 Quais são suas áreas FORTES?</label>
-              <div className="flex gap-2 flex-wrap">
-                {areas.map(area => (
-                  <button
-                    key={area.id}
-                    onClick={() => toggleAreaForte(area.id)}
-                    className={`px-4 py-2 rounded-lg transition-colors flex items-center gap-2 ${
-                      meta.areasFortes.includes(area.id)
-                        ? 'bg-emerald-600 text-white'
-                        : 'bg-white/10 hover:bg-white/20'
-                    }`}
-                  >
-                    <span>{area.icone}</span>
-                    <span>{area.nome}</span>
-                  </button>
-                ))}
+              {/* Áreas Fracas */}
+              <div>
+                <label style={{
+                  display: 'block',
+                  fontWeight: 'bold',
+                  marginBottom: '0.75rem',
+                  color: 'var(--chalk-white)'
+                }}>
+                  📈 Quais são suas áreas que precisam de MAIS FOCO?
+                </label>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {areas.map(area => (
+                    <button
+                      key={area.id}
+                      onClick={() => toggleAreaFraca(area.id)}
+                      className="btn"
+                      style={{
+                        padding: '0.5rem 1rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        background: meta.areasFracas.includes(area.id)
+                          ? 'rgba(234, 179, 8, 0.2)'
+                          : undefined,
+                        borderColor: meta.areasFracas.includes(area.id)
+                          ? 'var(--accent-yellow)'
+                          : undefined
+                      }}
+                    >
+                      <span>{area.icone}</span>
+                      <span>{area.nome}</span>
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            {/* Áreas Fracas */}
-            <div>
-              <label className="block font-bold mb-3">📈 Quais são suas áreas que precisam de MAIS FOCO?</label>
-              <div className="flex gap-2 flex-wrap">
-                {areas.map(area => (
-                  <button
-                    key={area.id}
-                    onClick={() => toggleAreaFraca(area.id)}
-                    className={`px-4 py-2 rounded-lg transition-colors flex items-center gap-2 ${
-                      meta.areasFracas.includes(area.id)
-                        ? 'bg-yellow-600 text-white'
-                        : 'bg-white/10 hover:bg-white/20'
-                    }`}
-                  >
-                    <span>{area.icone}</span>
-                    <span>{area.nome}</span>
-                  </button>
-                ))}
-              </div>
+              {/* Botão Gerar Plano */}
+              <button
+                onClick={gerarPlano}
+                disabled={salvando || meta.diasDisponiveis.length === 0}
+                className="btn btn-yellow"
+                style={{
+                  width: '100%',
+                  padding: '1rem',
+                  fontSize: '1.125rem',
+                  opacity: (salvando || meta.diasDisponiveis.length === 0) ? 0.5 : 1,
+                  cursor: (salvando || meta.diasDisponiveis.length === 0) ? 'not-allowed' : 'pointer'
+                }}
+              >
+                {salvando ? '🔄 Gerando plano...' : '🚀 Gerar Meu Plano de Estudos'}
+              </button>
             </div>
-
-            {/* Botão Gerar Plano */}
-            <button
-              onClick={gerarPlano}
-              disabled={salvando || meta.diasDisponiveis.length === 0}
-              className={`w-full btn-ia py-4 text-lg ${
-                salvando || meta.diasDisponiveis.length === 0 ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
-            >
-              {salvando ? '🔄 Gerando plano...' : '🚀 Gerar Meu Plano de Estudos'}
-            </button>
           </div>
         </div>
       </main>
@@ -476,18 +601,40 @@ export default function PlanoEstudosPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0D1F22] text-white pt-16 pb-24">
+    <main style={{
+      minHeight: '100vh',
+      background: 'var(--chalkboard-bg)',
+      color: 'var(--chalk-white)',
+      paddingTop: '4rem',
+      paddingBottom: '6rem'
+    }}>
       <FloatingNav />
-      <ChalkBackToTop />
 
-      <div className="container-ia py-8">
+      <div style={{
+        maxWidth: '80rem',
+        margin: '0 auto',
+        padding: '2rem 1rem'
+      }}>
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: '2rem',
+          flexWrap: 'wrap',
+          gap: '1rem'
+        }}>
           <div>
-            <h1 className="title-ia text-2xl md:text-3xl mb-2">
+            <h1 style={{
+              fontSize: 'clamp(1.5rem, 4vw, 1.875rem)',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              marginBottom: '0.5rem',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+            }}>
               🎯 Seu Plano de Estudos
             </h1>
-            <p className="text-gray-400">
+            <p style={{ color: 'var(--chalk-dim)' }}>
               {meta.curso && meta.universidade
                 ? `Meta: ${meta.curso} na ${meta.universidade} • Nota: ${meta.notaDesejada}`
                 : `Meta: ${meta.notaDesejada} pontos no ENEM`}
@@ -495,60 +642,102 @@ export default function PlanoEstudosPage() {
           </div>
           <button
             onClick={() => setEtapa('config')}
-            className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors"
+            className="btn"
+            style={{ padding: '0.5rem 1rem' }}
           >
             ⚙️ Reconfigurar
           </button>
         </div>
 
         {/* Resumo */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-emerald-400">{meta.diasDisponiveis.length}</div>
-            <div className="text-gray-400 text-sm">Dias/Semana</div>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+          gap: '1rem',
+          marginBottom: '2rem'
+        }}>
+          <div className="card" style={{ padding: '1.5rem', textAlign: 'center' }}>
+            <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'var(--accent-yellow)' }}>
+              {meta.diasDisponiveis.length}
+            </div>
+            <div style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>Dias/Semana</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-blue-400">{meta.horasDisponiveis}h</div>
-            <div className="text-gray-400 text-sm">Horas/Dia</div>
+          <div className="card" style={{ padding: '1.5rem', textAlign: 'center' }}>
+            <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'var(--accent-blue)' }}>
+              {meta.horasDisponiveis}h
+            </div>
+            <div style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>Horas/Dia</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-purple-400">
+          <div className="card" style={{ padding: '1.5rem', textAlign: 'center' }}>
+            <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'var(--accent-purple)' }}>
               {meta.diasDisponiveis.length * meta.horasDisponiveis}h
             </div>
-            <div className="text-gray-400 text-sm">Horas/Semana</div>
+            <div style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>Horas/Semana</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-yellow-400">{meta.notaDesejada}</div>
-            <div className="text-gray-400 text-sm">Nota Meta</div>
+          <div className="card" style={{ padding: '1.5rem', textAlign: 'center' }}>
+            <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'var(--accent-yellow)' }}>
+              {meta.notaDesejada}
+            </div>
+            <div style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>Nota Meta</div>
           </div>
         </div>
 
         {/* Plano Semanal */}
-        <div className="card-ia p-6 mb-8">
-          <h2 className="text-xl font-bold mb-4">📅 Cronograma Semanal</h2>
-          <div className="space-y-4">
+        <div className="card" style={{ padding: '1.5rem', marginBottom: '2rem' }}>
+          <h2 className="card-title">📅 Cronograma Semanal</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {planoGerado.map((dia, idx) => (
-              <div key={idx} className="bg-white/5 rounded-lg p-4">
-                <h3 className="font-bold text-lg mb-3 text-emerald-400">{dia.dia}</h3>
-                <div className="space-y-2">
+              <div
+                key={idx}
+                className="chalkboard-card"
+                style={{ padding: '1rem' }}
+              >
+                <h3 style={{
+                  fontWeight: 'bold',
+                  fontSize: '1.125rem',
+                  marginBottom: '0.75rem',
+                  color: 'var(--accent-yellow)'
+                }}>
+                  {dia.dia}
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {dia.atividades.map((ativ, aIdx) => {
                     const area = areas.find(a => a.id === ativ.area);
                     return (
                       <div
                         key={aIdx}
-                        className={`flex items-center gap-3 p-3 rounded-lg border-l-4 ${getPrioridadeCor(ativ.prioridade)}`}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '0.75rem',
+                          padding: '0.75rem',
+                          borderRadius: '0.5rem',
+                          borderLeft: '4px solid',
+                          ...(() => {
+                            switch (ativ.prioridade) {
+                              case 'alta': return { borderColor: '#ef4444', background: 'rgba(239, 68, 68, 0.1)' };
+                              case 'media': return { borderColor: '#eab308', background: 'rgba(234, 179, 8, 0.1)' };
+                              case 'baixa': return { borderColor: '#22c55e', background: 'rgba(34, 197, 94, 0.1)' };
+                              default: return { borderColor: '#6b7280', background: 'rgba(107, 114, 128, 0.1)' };
+                            }
+                          })()
+                        }}
                       >
-                        <div className="text-2xl">{area?.icone}</div>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2">
-                            <span className="font-medium">{ativ.tipo}</span>
-                            <span className="text-xs bg-white/10 px-2 py-0.5 rounded">
+                        <div style={{ fontSize: '1.5rem' }}>{area?.icone}</div>
+                        <div style={{ flex: 1 }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                            <span style={{ fontWeight: '500' }}>{ativ.tipo}</span>
+                            <span className="badge">
                               {ativ.duracao}min
                             </span>
                           </div>
-                          <p className="text-sm text-gray-400">{ativ.descricao}</p>
+                          <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
+                            {ativ.descricao}
+                          </p>
                         </div>
-                        <div className="text-sm text-gray-400">{ativ.horario}</div>
+                        <div style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
+                          {ativ.horario}
+                        </div>
                       </div>
                     );
                   })}
@@ -559,30 +748,54 @@ export default function PlanoEstudosPage() {
         </div>
 
         {/* Checkpoints */}
-        <div className="card-ia p-6 mb-8">
-          <h2 className="text-xl font-bold mb-4">🏁 Checkpoints de Progresso</h2>
-          <div className="space-y-3">
+        <div className="card" style={{ padding: '1.5rem', marginBottom: '2rem' }}>
+          <h2 className="card-title">🏁 Checkpoints de Progresso</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             {checkpoints.map((cp, idx) => (
               <div
                 key={cp.id}
-                className={`flex items-center gap-4 p-4 rounded-lg cursor-pointer transition-colors ${
-                  cp.concluido ? 'bg-emerald-500/20 border border-emerald-500/50' : 'bg-white/5 hover:bg-white/10'
-                }`}
                 onClick={() => toggleCheckpoint(cp.id)}
+                className="chalkboard-card"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  padding: '1rem',
+                  cursor: 'pointer',
+                  background: cp.concluido
+                    ? 'rgba(34, 197, 94, 0.2)'
+                    : undefined,
+                  borderColor: cp.concluido
+                    ? 'rgba(34, 197, 94, 0.5)'
+                    : undefined
+                }}
               >
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                  cp.concluido ? 'bg-emerald-500' : 'bg-white/20'
-                }`}>
+                <div style={{
+                  width: '2rem',
+                  height: '2rem',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  background: cp.concluido ? '#22c55e' : 'rgba(255, 255, 255, 0.2)',
+                  fontWeight: 'bold'
+                }}>
                   {cp.concluido ? '✓' : idx + 1}
                 </div>
-                <div className="flex-1">
-                  <h3 className={`font-bold ${cp.concluido ? 'line-through text-gray-400' : ''}`}>
+                <div style={{ flex: 1 }}>
+                  <h3 style={{
+                    fontWeight: 'bold',
+                    textDecoration: cp.concluido ? 'line-through' : 'none',
+                    color: cp.concluido ? 'var(--chalk-dim)' : 'var(--chalk-white)'
+                  }}>
                     {cp.titulo}
                   </h3>
-                  <p className="text-sm text-gray-400">{cp.meta}</p>
+                  <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
+                    {cp.meta}
+                  </p>
                 </div>
-                <div className="text-right text-sm">
-                  <div className="text-gray-400">Prazo</div>
+                <div style={{ textAlign: 'right', fontSize: '0.875rem' }}>
+                  <div style={{ color: 'var(--chalk-dim)' }}>Prazo</div>
                   <div>{new Date(cp.prazo).toLocaleDateString('pt-BR')}</div>
                 </div>
               </div>
@@ -591,34 +804,53 @@ export default function PlanoEstudosPage() {
         </div>
 
         {/* Dicas */}
-        <div className="card-ia p-6">
-          <h2 className="text-xl font-bold mb-4">💡 Dicas para Seguir o Plano</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="font-bold text-emerald-400 mb-2">🎯 Consistência</h3>
-              <p className="text-sm text-gray-400">
+        <div className="card" style={{ padding: '1.5rem' }}>
+          <h2 className="card-title">💡 Dicas para Seguir o Plano</h2>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '1rem'
+          }}>
+            <div className="chalkboard-card" style={{ padding: '1rem' }}>
+              <h3 style={{ fontWeight: 'bold', color: 'var(--accent-yellow)', marginBottom: '0.5rem' }}>
+                🎯 Consistência
+              </h3>
+              <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                 Estudar um pouco todos os dias é melhor do que estudar muito em poucos dias.
               </p>
             </div>
-            <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="font-bold text-blue-400 mb-2">📊 Acompanhe</h3>
-              <p className="text-sm text-gray-400">
+            <div className="chalkboard-card" style={{ padding: '1rem' }}>
+              <h3 style={{ fontWeight: 'bold', color: 'var(--accent-blue)', marginBottom: '0.5rem' }}>
+                📊 Acompanhe
+              </h3>
+              <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                 Use as estatísticas para monitorar seu progresso e ajustar o plano.
               </p>
             </div>
-            <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="font-bold text-purple-400 mb-2">🔄 Flexibilidade</h3>
-              <p className="text-sm text-gray-400">
+            <div className="chalkboard-card" style={{ padding: '1rem' }}>
+              <h3 style={{ fontWeight: 'bold', color: 'var(--accent-purple)', marginBottom: '0.5rem' }}>
+                🔄 Flexibilidade
+              </h3>
+              <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                 Se perder um dia, não desanime. Ajuste e continue no próximo.
               </p>
             </div>
-            <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="font-bold text-yellow-400 mb-2">⚡ Áreas Fracas</h3>
-              <p className="text-sm text-gray-400">
+            <div className="chalkboard-card" style={{ padding: '1rem' }}>
+              <h3 style={{ fontWeight: 'bold', color: 'var(--accent-yellow)', marginBottom: '0.5rem' }}>
+                ⚡ Áreas Fracas
+              </h3>
+              <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                 Dedique mais tempo às áreas que você indicou como fracas.
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Footer */}
+        <div className="footer">
+          <a href="/enem" className="btn">
+            ← Voltar para o Dashboard
+          </a>
         </div>
       </div>
     </main>

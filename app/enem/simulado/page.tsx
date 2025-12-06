@@ -2,111 +2,760 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
+import { motion } from 'framer-motion';
+import { generateSimulado, salvarSimuladoEmAndamento } from '@/lib/questions';
 import FloatingNav from '@/components/FloatingNav';
+import { ChalkIcon } from '@/components/IconFix';
+import {
+  FileText,
+  Clock,
+  Target,
+  Zap,
+  BookOpen,
+  Calculator,
+  Globe,
+  Atom,
+  MessageSquare,
+  ChevronRight,
+  Sparkles
+} from 'lucide-react';
 
-const bancodeQuestoes = [
-  { id: 1, area: 'matematica', enunciado: 'Uma pesquisa com 1000 pessoas mostrou que 60% preferem A, 30% preferem B. Quantas preferem C?', alternativas: ['50 pessoas', '100 pessoas', '150 pessoas', '200 pessoas', '300 pessoas'], correta: 1, explicacao: '100 - 90 = 10%. 10% de 1000 = 100 pessoas.' },
-  { id: 2, area: 'matematica', enunciado: 'Terreno retangular com perimetro 80m. Comprimento = dobro da largura. Qual a area?', alternativas: ['177 m2', '266 m2', '355 m2', '400 m2', '533 m2'], correta: 2, explicacao: '6L=80, L=13.33, C=26.67. Area aproximada de 355 m2.' },
-  { id: 3, area: 'matematica', enunciado: 'PA com a1=3 e razao=4. Qual o decimo termo?', alternativas: ['35', '37', '39', '41', '43'], correta: 2, explicacao: 'a10 = 3 + 9*4 = 39' },
-  { id: 4, area: 'matematica', enunciado: '20% de desconto em R$ 150. Valor final?', alternativas: ['R$ 100', 'R$ 110', 'R$ 120', 'R$ 130', 'R$ 140'], correta: 2, explicacao: '150 - 30 = R$ 120' },
-  { id: 5, area: 'matematica', enunciado: '2x + 5 = 17. Qual o valor de x?', alternativas: ['4', '5', '6', '7', '8'], correta: 2, explicacao: '2x = 12, x = 6' },
-  { id: 6, area: 'linguagens', enunciado: 'Figura de linguagem em: "Aquele politico e uma raposa"', alternativas: ['Hiperbole', 'Metafora', 'Metonimia', 'Ironia', 'Eufemismo'], correta: 1, explicacao: 'Metafora - comparacao implicita' },
-  { id: 7, area: 'linguagens', enunciado: '"Ele comeu o bolo todo" - tipo de sujeito?', alternativas: ['Composto', 'Oculto', 'Simples', 'Indeterminado', 'Inexistente'], correta: 2, explicacao: 'Sujeito simples: Ele' },
-  { id: 8, area: 'linguagens', enunciado: 'Semana de Arte Moderna 1922 - marco do:', alternativas: ['Romantismo', 'Realismo', 'Modernismo', 'Barroco', 'Arcadismo'], correta: 2, explicacao: 'Modernismo brasileiro' },
-  { id: 9, area: 'linguagens', enunciado: 'Autor de "Dom Casmurro":', alternativas: ['Jose de Alencar', 'Machado de Assis', 'Graciliano Ramos', 'Jorge Amado', 'Clarice Lispector'], correta: 1, explicacao: 'Machado de Assis, 1899' },
-  { id: 10, area: 'linguagens', enunciado: 'Qual e linguagem coloquial?', alternativas: ['Vossa Excelencia', 'A presente missiva', 'To chegando ai mano!', 'Solicito gentileza', 'Conforme exposto'], correta: 2, explicacao: 'Girias e informalidade' },
-  { id: 11, area: 'humanas', enunciado: 'Proclamacao da Republica no Brasil:', alternativas: ['1822', '1889', '1891', '1930', '1964'], correta: 1, explicacao: '15 de novembro de 1889' },
-  { id: 12, area: 'humanas', enunciado: '"Penso logo existo" - filosofo:', alternativas: ['Platao', 'Aristoteles', 'Descartes', 'Kant', 'Nietzsche'], correta: 2, explicacao: 'Rene Descartes' },
-  { id: 13, area: 'humanas', enunciado: 'Maior bioma brasileiro em extensao:', alternativas: ['Cerrado', 'Mata Atlantica', 'Amazonia', 'Caatinga', 'Pantanal'], correta: 2, explicacao: 'Amazonia - 49% do territorio' },
-  { id: 14, area: 'humanas', enunciado: 'Conceito de "fato social" - autor:', alternativas: ['Weber', 'Marx', 'Durkheim', 'Comte', 'Foucault'], correta: 2, explicacao: 'Emile Durkheim' },
-  { id: 15, area: 'humanas', enunciado: 'Revolucao Francesa - ano:', alternativas: ['1776', '1789', '1799', '1804', '1815'], correta: 1, explicacao: '1789 - Queda da Bastilha' },
-  { id: 16, area: 'natureza', enunciado: 'Organela da respiracao celular:', alternativas: ['Ribossomo', 'Golgi', 'Mitocondria', 'Lisossomo', 'RE'], correta: 2, explicacao: 'Mitocondria' },
-  { id: 17, area: 'natureza', enunciado: 'Formula da agua:', alternativas: ['H2O', 'CO2', 'NaCl', 'H2SO4', 'HCl'], correta: 0, explicacao: 'H2O - dois hidrogenios e um oxigenio' },
-  { id: 18, area: 'natureza', enunciado: 'Segunda Lei de Newton - F = ?', alternativas: ['m/a', 'm*v', 'm*a', 'v/t', 'a/m'], correta: 2, explicacao: 'F = m * a (massa vezes aceleracao)' },
-  { id: 19, area: 'natureza', enunciado: 'Plantas produzem alimento por:', alternativas: ['Respiracao', 'Fermentacao', 'Fotossintese', 'Digestao', 'Transpiracao'], correta: 2, explicacao: 'Fotossintese' },
-  { id: 20, area: 'natureza', enunciado: 'pH neutro e igual a:', alternativas: ['0', '5', '7', '10', '14'], correta: 2, explicacao: 'pH 7 e neutro' },
-  { id: 21, area: 'matematica', enunciado: 'f(x) = 2x^2 - 3x + 1. Quanto e f(2)?', alternativas: ['1', '2', '3', '4', '5'], correta: 2, explicacao: 'f(2) = 8 - 6 + 1 = 3' },
-  { id: 22, area: 'matematica', enunciado: 'Area de triangulo com base 10cm e altura 6cm:', alternativas: ['20 cm2', '25 cm2', '30 cm2', '35 cm2', '60 cm2'], correta: 2, explicacao: 'Area = (10*6)/2 = 30 cm2' },
-  { id: 23, area: 'matematica', enunciado: 'Probabilidade de numero par em um dado:', alternativas: ['1/6', '1/3', '1/2', '2/3', '5/6'], correta: 2, explicacao: '3 pares de 6 faces = 1/2' },
-  { id: 24, area: 'matematica', enunciado: 'Quanto e 25% de 80?', alternativas: ['15', '18', '20', '22', '25'], correta: 2, explicacao: '0.25 * 80 = 20' },
-  { id: 25, area: 'matematica', enunciado: 'Raiz quadrada de 144:', alternativas: ['10', '11', '12', '13', '14'], correta: 2, explicacao: '12 * 12 = 144' },
-  { id: 26, area: 'humanas', enunciado: 'Era Vargas no Brasil:', alternativas: ['1922-1945', '1930-1945', '1930-1954', '1937-1945', '1937-1954'], correta: 1, explicacao: '1930 a 1945' },
-  { id: 27, area: 'natureza', enunciado: 'Unidade de corrente eletrica no SI:', alternativas: ['Volt', 'Watt', 'Ohm', 'Ampere', 'Coulomb'], correta: 3, explicacao: 'Ampere (A)' },
-  { id: 28, area: 'humanas', enunciado: 'Teoria da mais-valia - autor:', alternativas: ['Adam Smith', 'Locke', 'Marx', 'Weber', 'Hobbes'], correta: 2, explicacao: 'Karl Marx em O Capital' },
-  { id: 29, area: 'natureza', enunciado: 'Pareamento de bases do DNA:', alternativas: ['A-C e G-T', 'A-T e C-G', 'A-G e C-T', 'A-U e C-G', 'G-T e A-C'], correta: 1, explicacao: 'Adenina-Timina e Citosina-Guanina' },
-  { id: 30, area: 'linguagens', enunciado: 'Movimento com pessimismo e analise psicologica:', alternativas: ['Romantismo', 'Realismo', 'Barroco', 'Arcadismo', 'Trovadorismo'], correta: 1, explicacao: 'Realismo' }
+const areas = [
+  { id: '', label: 'Todas as Areas', icon: Target, emoji: '🌐' },
+  { id: 'matematica', label: 'Matematica', icon: Calculator, emoji: '📐' },
+  { id: 'linguagens', label: 'Linguagens', icon: MessageSquare, emoji: '📚' },
+  { id: 'humanas', label: 'Ciencias Humanas', icon: Globe, emoji: '🌍' },
+  { id: 'natureza', label: 'Ciencias da Natureza', icon: Atom, emoji: '🔬' },
+];
+
+const quantidades = [
+  { value: 10, label: '10 questoes', tempo: '~20 min', recomendado: false },
+  { value: 15, label: '15 questoes', tempo: '~30 min', recomendado: true },
+  { value: 20, label: '20 questoes', tempo: '~40 min', recomendado: false },
+  { value: 30, label: '30 questoes', tempo: '~60 min', recomendado: false },
+  { value: 45, label: '45 questoes', tempo: '~90 min', recomendado: false },
 ];
 
 export default function SimuladoInicioPage() {
   const router = useRouter();
-  const [quantidade, setQuantidade] = useState(10);
+  const [quantidade, setQuantidade] = useState(15);
   const [area, setArea] = useState('');
+  const [modoCorrecao, setModoCorrecao] = useState<'imediato' | 'final'>('final');
   const [loading, setLoading] = useState(false);
 
   const handleIniciarSimulado = () => {
     setLoading(true);
-    let questoesFiltradas = area ? bancodeQuestoes.filter(q => q.area === area) : bancodeQuestoes;
-    questoesFiltradas = questoesFiltradas.sort(() => Math.random() - 0.5);
-    const questoesSelecionadas = questoesFiltradas.slice(0, Math.min(quantidade, questoesFiltradas.length));
-    const simuladoId = 'sim_' + Date.now();
-    const simuladoData = { id: simuladoId, questoes: questoesSelecionadas, respostas: {}, questaoAtual: 0, inicio: new Date().toISOString(), area: area || 'todas', quantidade: questoesSelecionadas.length };
-    localStorage.setItem('simulado_em_andamento', JSON.stringify(simuladoData));
-    router.push('/enem/simulado/' + simuladoId);
+
+    try {
+      const simulado = generateSimulado(
+        quantidade,
+        area || undefined,
+        undefined,
+        'misto',
+        modoCorrecao
+      );
+
+      salvarSimuladoEmAndamento(simulado);
+      router.push('/enem/simulado/' + simulado.id);
+    } catch (error) {
+      console.error('Erro ao gerar simulado:', error);
+      setLoading(false);
+    }
   };
 
+  const areaAtual = areas.find(a => a.id === area) || areas[0];
+
   return (
-    <div className="min-h-screen bg-[#0D1F22] text-white flex items-center justify-center py-12 pt-20 px-4">
+    <div className="container" style={{
+      minHeight: '100vh',
+      padding: '2rem 1rem',
+      background: 'var(--chalkboard-bg)',
+    }}>
       <FloatingNav />
-      <div className="w-full max-w-3xl">
-        <div className="card-ia p-6">
-          <div className="text-center mb-8">
-            <h1 className="title-ia text-2xl md:text-3xl mb-3">🎯 Configurar Simulado</h1>
-            <p className="text-gray-400">Personalize seu simulado e teste seus conhecimentos</p>
-          </div>
-          <div className="space-y-6">
-            <div>
-              <label className="block text-white font-bold text-lg mb-4">📝 Questoes: <span className="text-emerald-400">{quantidade}</span></label>
-              <div className="grid grid-cols-3 gap-3 mb-4">
-                {[10, 15, 20].map(qtd => (
-                  <button key={qtd} onClick={() => setQuantidade(qtd)} className={`py-3 rounded-lg font-medium transition-all ${quantidade === qtd ? 'bg-emerald-600 text-white' : 'bg-white/10 text-gray-300 hover:bg-white/20'}`}>{qtd} questoes</button>
-                ))}
-              </div>
-              <input type="range" min="5" max="30" step="5" value={quantidade} onChange={(e) => setQuantidade(parseInt(e.target.value))} className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer" />
-              <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3 mt-4 text-center"><span className="text-blue-400">⏱️</span> Tempo estimado: ~{Math.round(quantidade * 2)} min</div>
-            </div>
-            <div className="border-t border-white/10"></div>
-            <div>
-              <label className="block text-white font-bold text-lg mb-4">📚 Area de Conhecimento</label>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                {[{ id: '', label: '🌐 Todas' }, { id: 'matematica', label: '📐 Matematica' }, { id: 'linguagens', label: '📚 Linguagens' }, { id: 'humanas', label: '🌍 Humanas' }, { id: 'natureza', label: '🔬 Natureza' }].map(opt => (
-                  <button key={opt.id} onClick={() => setArea(opt.id)} className={`p-3 rounded-lg transition-all ${area === opt.id ? 'bg-emerald-600 border-2 border-emerald-400' : 'bg-white/10 border-2 border-transparent hover:bg-white/20'}`}>{opt.label}</button>
-                ))}
-              </div>
-            </div>
-            <div className="border-t border-white/10"></div>
-            <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
-              <h4 className="text-white font-bold mb-3">ℹ️ Sobre este Simulado</h4>
-              <ul className="space-y-2 text-white/80 text-sm">
-                <li>✓ Questoes no estilo ENEM</li>
-                <li>✓ Explicacoes detalhadas ao finalizar</li>
-                <li>✓ Salva progresso automaticamente</li>
-                <li>✓ Ganhe FP ao concluir</li>
-              </ul>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button onClick={handleIniciarSimulado} disabled={loading} className="btn-ia flex-1 py-4 text-lg flex items-center justify-center gap-2">{loading ? (<><span className="animate-spin">🔄</span> Preparando...</>) : (<><span>🚀</span> Iniciar Simulado</>)}</button>
-              <button onClick={() => router.push('/enem')} className="py-4 px-6 bg-white/10 hover:bg-white/20 rounded-lg transition-colors">← Voltar</button>
+
+      <div style={{ maxWidth: '48rem', margin: '0 auto', paddingTop: '2rem' }}>
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="header"
+          style={{
+            textAlign: 'center',
+            marginBottom: '2rem',
+          }}
+        >
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.75rem',
+            marginBottom: '1rem',
+          }}>
+            <div style={{
+              width: '3.5rem',
+              height: '3.5rem',
+              borderRadius: '1rem',
+              background: 'var(--accent-yellow-dim)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              <FileText style={{ width: '1.75rem', height: '1.75rem', color: 'var(--accent-yellow)' }} />
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-3 gap-4 mt-6">
-          <div className="stat-ia text-center"><div className="text-2xl font-bold text-emerald-400">30+</div><div className="text-gray-400 text-sm">Questoes</div></div>
-          <div className="stat-ia text-center"><div className="text-2xl font-bold text-blue-400">100%</div><div className="text-gray-400 text-sm">Estilo ENEM</div></div>
-          <div className="stat-ia text-center"><div className="text-2xl font-bold text-purple-400">+FP</div><div className="text-gray-400 text-sm">Recompensas</div></div>
-        </div>
+          <h1 style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            fontFamily: 'var(--font-kalam)',
+            color: 'var(--chalk-white)',
+            marginBottom: '0.75rem',
+            textShadow: '2px 2px 0 rgba(0,0,0,0.3)',
+          }}>
+            Configurar Simulado
+          </h1>
+          <p style={{
+            fontSize: '1.125rem',
+            color: 'var(--chalk-dim)',
+            fontFamily: 'var(--font-kalam)',
+          }}>
+            Personalize seu simulado e teste seus conhecimentos no estilo ENEM
+          </p>
+        </motion.div>
+
+        {/* Card Principal */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="card"
+          style={{
+            background: 'var(--card-bg)',
+            border: '3px solid var(--wood-border)',
+            borderRadius: '0.75rem',
+            padding: '2rem',
+            boxShadow: '0 8px 16px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1)',
+          }}
+        >
+          {/* Quantidade de questoes */}
+          <div style={{ marginBottom: '2rem' }}>
+            <label style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              color: 'var(--chalk-white)',
+              fontWeight: 'bold',
+              fontSize: '1.125rem',
+              marginBottom: '1rem',
+              fontFamily: 'var(--font-kalam)',
+            }}>
+              <ChalkIcon icon={BookOpen} size={22} color="yellow" />
+              Quantidade de Questoes
+            </label>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
+              gap: '0.75rem',
+            }}>
+              {quantidades.map((q) => (
+                <button
+                  key={q.value}
+                  onClick={() => setQuantidade(q.value)}
+                  style={{
+                    position: 'relative',
+                    padding: '1rem',
+                    borderRadius: '0.75rem',
+                    border: quantidade === q.value
+                      ? '2px solid var(--accent-yellow)'
+                      : '2px solid rgba(255,255,255,0.1)',
+                    background: quantidade === q.value
+                      ? 'var(--accent-yellow-dim)'
+                      : 'rgba(0,0,0,0.2)',
+                    color: quantidade === q.value
+                      ? 'var(--chalk-white)'
+                      : 'var(--chalk-dim)',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s',
+                  }}
+                  onMouseEnter={(e) => {
+                    if (quantidade !== q.value) {
+                      e.currentTarget.style.border = '2px solid rgba(255,255,255,0.3)';
+                      e.currentTarget.style.background = 'rgba(0,0,0,0.3)';
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (quantidade !== q.value) {
+                      e.currentTarget.style.border = '2px solid rgba(255,255,255,0.1)';
+                      e.currentTarget.style.background = 'rgba(0,0,0,0.2)';
+                    }
+                  }}
+                >
+                  {q.recomendado && (
+                    <span style={{
+                      position: 'absolute',
+                      top: '-0.5rem',
+                      right: '-0.5rem',
+                      padding: '0.125rem 0.5rem',
+                      fontSize: '0.75rem',
+                      fontWeight: 'bold',
+                      background: 'var(--accent-yellow)',
+                      color: '#1e293b',
+                      borderRadius: '9999px',
+                    }}>
+                      TOP
+                    </span>
+                  )}
+                  <div style={{
+                    fontSize: '1.5rem',
+                    fontWeight: 'bold',
+                    fontFamily: 'var(--font-kalam)',
+                  }}>
+                    {q.value}
+                  </div>
+                  <div style={{
+                    fontSize: '0.75rem',
+                    color: 'rgba(255,255,255,0.5)',
+                    marginTop: '0.25rem',
+                  }}>
+                    {q.tempo}
+                  </div>
+                </button>
+              ))}
+            </div>
+
+            {/* Slider para ajuste fino */}
+            <div style={{ marginTop: '1rem' }}>
+              <input
+                type="range"
+                min="5"
+                max="45"
+                step="5"
+                value={quantidade}
+                onChange={(e) => setQuantidade(parseInt(e.target.value))}
+                style={{
+                  width: '100%',
+                  height: '0.5rem',
+                  background: 'rgba(0,0,0,0.3)',
+                  borderRadius: '0.5rem',
+                  cursor: 'pointer',
+                  accentColor: 'var(--accent-yellow)',
+                }}
+              />
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                fontSize: '0.75rem',
+                color: 'rgba(255,255,255,0.4)',
+                marginTop: '0.25rem',
+              }}>
+                <span>5</span>
+                <span>25</span>
+                <span>45</span>
+              </div>
+            </div>
+
+            {/* Info tempo estimado */}
+            <div style={{
+              marginTop: '1rem',
+              padding: '0.75rem',
+              background: 'rgba(59, 130, 246, 0.1)',
+              border: '1px solid rgba(59, 130, 246, 0.2)',
+              borderRadius: '0.75rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem',
+            }}>
+              <Clock style={{ width: '1.25rem', height: '1.25rem', color: '#60a5fa' }} />
+              <span style={{ color: '#93c5fd', fontSize: '0.875rem' }}>
+                Tempo estimado: <strong>~{Math.round(quantidade * 2)} minutos</strong>
+              </span>
+            </div>
+          </div>
+
+          <div style={{
+            height: '2px',
+            background: 'linear-gradient(90deg, transparent, var(--chalk-dim), transparent)',
+            margin: '2rem 0',
+            opacity: 0.3,
+          }} />
+
+          {/* Area de conhecimento */}
+          <div style={{ marginBottom: '2rem' }}>
+            <label style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              color: 'var(--chalk-white)',
+              fontWeight: 'bold',
+              fontSize: '1.125rem',
+              marginBottom: '1rem',
+              fontFamily: 'var(--font-kalam)',
+            }}>
+              <ChalkIcon icon={Target} size={22} color="yellow" />
+              Area de Conhecimento
+            </label>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+              gap: '0.75rem',
+            }}>
+              {areas.map((areaItem) => {
+                const Icon = areaItem.icon;
+                return (
+                  <button
+                    key={areaItem.id}
+                    onClick={() => setArea(areaItem.id)}
+                    style={{
+                      padding: '1rem',
+                      borderRadius: '0.75rem',
+                      border: area === areaItem.id
+                        ? '2px solid var(--accent-yellow)'
+                        : '2px solid rgba(255,255,255,0.1)',
+                      background: area === areaItem.id
+                        ? 'var(--accent-yellow-dim)'
+                        : 'rgba(0,0,0,0.2)',
+                      color: area === areaItem.id
+                        ? 'var(--chalk-white)'
+                        : 'var(--chalk-dim)',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem',
+                    }}
+                    onMouseEnter={(e) => {
+                      if (area !== areaItem.id) {
+                        e.currentTarget.style.border = '2px solid rgba(255,255,255,0.3)';
+                        e.currentTarget.style.background = 'rgba(0,0,0,0.3)';
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (area !== areaItem.id) {
+                        e.currentTarget.style.border = '2px solid rgba(255,255,255,0.1)';
+                        e.currentTarget.style.background = 'rgba(0,0,0,0.2)';
+                      }
+                    }}
+                  >
+                    <span style={{ fontSize: '1.5rem' }}>{areaItem.emoji}</span>
+                    <span style={{
+                      fontWeight: '500',
+                      fontFamily: 'var(--font-kalam)',
+                    }}>
+                      {areaItem.label}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div style={{
+            height: '2px',
+            background: 'linear-gradient(90deg, transparent, var(--chalk-dim), transparent)',
+            margin: '2rem 0',
+            opacity: 0.3,
+          }} />
+
+          {/* Modo de correcao */}
+          <div style={{ marginBottom: '2rem' }}>
+            <label style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              color: 'var(--chalk-white)',
+              fontWeight: 'bold',
+              fontSize: '1.125rem',
+              marginBottom: '1rem',
+              fontFamily: 'var(--font-kalam)',
+            }}>
+              <ChalkIcon icon={Sparkles} size={22} color="yellow" />
+              Modo de Correcao
+            </label>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '1rem',
+            }}>
+              {/* Gabarito no Final */}
+              <button
+                onClick={() => setModoCorrecao('final')}
+                style={{
+                  padding: '1.25rem',
+                  borderRadius: '0.75rem',
+                  border: modoCorrecao === 'final'
+                    ? '2px solid rgba(168, 85, 247, 0.5)'
+                    : '2px solid rgba(255,255,255,0.1)',
+                  background: modoCorrecao === 'final'
+                    ? 'rgba(168, 85, 247, 0.2)'
+                    : 'rgba(0,0,0,0.2)',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                  textAlign: 'left',
+                  boxShadow: modoCorrecao === 'final'
+                    ? '0 0 20px rgba(168, 85, 247, 0.1)'
+                    : 'none',
+                }}
+                onMouseEnter={(e) => {
+                  if (modoCorrecao !== 'final') {
+                    e.currentTarget.style.border = '2px solid rgba(255,255,255,0.3)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (modoCorrecao !== 'final') {
+                    e.currentTarget.style.border = '2px solid rgba(255,255,255,0.1)';
+                  }
+                }}
+              >
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  marginBottom: '0.75rem',
+                }}>
+                  <span style={{ fontSize: '1.875rem' }}>🎓</span>
+                  <span style={{
+                    fontWeight: 'bold',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1.125rem',
+                    fontFamily: 'var(--font-kalam)',
+                  }}>
+                    Gabarito no Final
+                  </span>
+                </div>
+                <p style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  lineHeight: '1.5',
+                  margin: 0,
+                }}>
+                  Simula o ENEM real. Veja todas as respostas e explicacoes somente ao finalizar.
+                </p>
+                {modoCorrecao === 'final' && (
+                  <div style={{
+                    marginTop: '0.75rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    color: '#d8b4fe',
+                    fontSize: '0.75rem',
+                    fontWeight: '600',
+                  }}>
+                    <span>✓</span> Selecionado
+                  </div>
+                )}
+              </button>
+
+              {/* Correcao Imediata */}
+              <button
+                onClick={() => setModoCorrecao('imediato')}
+                style={{
+                  padding: '1.25rem',
+                  borderRadius: '0.75rem',
+                  border: modoCorrecao === 'imediato'
+                    ? '2px solid var(--accent-yellow)'
+                    : '2px solid rgba(255,255,255,0.1)',
+                  background: modoCorrecao === 'imediato'
+                    ? 'var(--accent-yellow-dim)'
+                    : 'rgba(0,0,0,0.2)',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                  textAlign: 'left',
+                  boxShadow: modoCorrecao === 'imediato'
+                    ? '0 0 20px rgba(250, 204, 21, 0.1)'
+                    : 'none',
+                }}
+                onMouseEnter={(e) => {
+                  if (modoCorrecao !== 'imediato') {
+                    e.currentTarget.style.border = '2px solid rgba(255,255,255,0.3)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (modoCorrecao !== 'imediato') {
+                    e.currentTarget.style.border = '2px solid rgba(255,255,255,0.1)';
+                  }
+                }}
+              >
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  marginBottom: '0.75rem',
+                }}>
+                  <span style={{ fontSize: '1.875rem' }}>⚡</span>
+                  <span style={{
+                    fontWeight: 'bold',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1.125rem',
+                    fontFamily: 'var(--font-kalam)',
+                  }}>
+                    Correcao Imediata
+                  </span>
+                </div>
+                <p style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  lineHeight: '1.5',
+                  margin: 0,
+                }}>
+                  Modo estudo. Veja se acertou e a explicacao logo apos confirmar cada resposta.
+                </p>
+                {modoCorrecao === 'imediato' && (
+                  <div style={{
+                    marginTop: '0.75rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    color: '#fde047',
+                    fontSize: '0.75rem',
+                    fontWeight: '600',
+                  }}>
+                    <span>✓</span> Selecionado
+                  </div>
+                )}
+              </button>
+            </div>
+          </div>
+
+          <div style={{
+            height: '2px',
+            background: 'linear-gradient(90deg, transparent, var(--chalk-dim), transparent)',
+            margin: '2rem 0',
+            opacity: 0.3,
+          }} />
+
+          {/* Resumo e Info */}
+          <div style={{
+            marginBottom: '2rem',
+            padding: '1rem',
+            background: 'rgba(34, 197, 94, 0.1)',
+            border: '1px solid rgba(34, 197, 94, 0.2)',
+            borderRadius: '0.75rem',
+          }}>
+            <h4 style={{
+              color: 'var(--chalk-white)',
+              fontWeight: 'bold',
+              marginBottom: '0.75rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              fontFamily: 'var(--font-kalam)',
+            }}>
+              <Zap style={{ width: '1.25rem', height: '1.25rem', color: '#4ade80' }} />
+              Sobre este Simulado
+            </h4>
+            <ul style={{
+              listStyle: 'none',
+              padding: 0,
+              margin: 0,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.5rem',
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem',
+            }}>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span style={{ color: '#4ade80' }}>✓</span>
+                Questoes no estilo ENEM oficial
+              </li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span style={{ color: '#4ade80' }}>✓</span>
+                {modoCorrecao === 'final' ? 'Gabarito completo ao finalizar' : 'Feedback imediato por questao'}
+              </li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span style={{ color: '#4ade80' }}>✓</span>
+                Progresso salvo automaticamente
+              </li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span style={{ color: '#4ade80' }}>✓</span>
+                Ganhe XP e FP ao concluir
+              </li>
+            </ul>
+          </div>
+
+          {/* Botoes de acao */}
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1rem',
+          }}>
+            <button
+              onClick={handleIniciarSimulado}
+              disabled={loading}
+              className="btn btn-yellow"
+              style={{
+                flex: 1,
+                padding: '1rem',
+                fontSize: '1.125rem',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-kalam)',
+                background: loading ? 'var(--chalk-dim)' : 'var(--accent-yellow)',
+                color: '#1e293b',
+                border: 'none',
+                borderRadius: '0.5rem',
+                cursor: loading ? 'not-allowed' : 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem',
+                transition: 'all 0.2s',
+                boxShadow: '0 4px 6px rgba(0,0,0,0.3)',
+                opacity: loading ? 0.6 : 1,
+              }}
+              onMouseEnter={(e) => {
+                if (!loading) {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.4)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (!loading) {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.3)';
+                }
+              }}
+            >
+              {loading ? (
+                <>
+                  <div style={{
+                    width: '1.25rem',
+                    height: '1.25rem',
+                    border: '2px solid currentColor',
+                    borderTopColor: 'transparent',
+                    borderRadius: '50%',
+                    animation: 'spin 1s linear infinite',
+                  }} />
+                  Preparando...
+                </>
+              ) : (
+                <>
+                  <span>🚀</span>
+                  Iniciar Simulado
+                  <ChevronRight style={{ width: '1.25rem', height: '1.25rem' }} />
+                </>
+              )}
+            </button>
+
+            <button
+              onClick={() => router.push('/enem')}
+              className="btn"
+              style={{
+                padding: '1rem 1.5rem',
+                fontWeight: '600',
+                fontFamily: 'var(--font-kalam)',
+                background: 'rgba(0,0,0,0.3)',
+                color: 'var(--chalk-white)',
+                border: '2px solid var(--wood-border)',
+                borderRadius: '0.5rem',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'rgba(0,0,0,0.5)';
+                e.currentTarget.style.borderColor = 'var(--chalk-white)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'rgba(0,0,0,0.3)';
+                e.currentTarget.style.borderColor = 'var(--wood-border)';
+              }}
+            >
+              ← Voltar
+            </button>
+          </div>
+        </motion.div>
+
+        {/* Stats rapidas */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="stats-bar"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '1rem',
+            marginTop: '1.5rem',
+          }}
+        >
+          <div className="stat-item" style={{
+            background: 'var(--card-bg)',
+            border: '2px solid var(--wood-border)',
+            borderRadius: '0.5rem',
+            padding: '1rem',
+            textAlign: 'center',
+          }}>
+            <div className="stat-number" style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              color: '#4ade80',
+              fontFamily: 'var(--font-kalam)',
+            }}>
+              90+
+            </div>
+            <div className="stat-label" style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.75rem',
+            }}>
+              Questoes
+            </div>
+          </div>
+          <div className="stat-item" style={{
+            background: 'var(--card-bg)',
+            border: '2px solid var(--wood-border)',
+            borderRadius: '0.5rem',
+            padding: '1rem',
+            textAlign: 'center',
+          }}>
+            <div className="stat-number" style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              color: '#60a5fa',
+              fontFamily: 'var(--font-kalam)',
+            }}>
+              100%
+            </div>
+            <div className="stat-label" style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.75rem',
+            }}>
+              Estilo ENEM
+            </div>
+          </div>
+          <div className="stat-item" style={{
+            background: 'var(--card-bg)',
+            border: '2px solid var(--wood-border)',
+            borderRadius: '0.5rem',
+            padding: '1rem',
+            textAlign: 'center',
+          }}>
+            <div className="stat-number" style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              color: '#c084fc',
+              fontFamily: 'var(--font-kalam)',
+            }}>
+              +XP
+            </div>
+            <div className="stat-label" style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.75rem',
+            }}>
+              Recompensas
+            </div>
+          </div>
+        </motion.div>
       </div>
-      <ChalkBackToTop />
+
+      <style jsx>{`
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      `}</style>
     </div>
   );
 }

@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import CourseSelector from '@/components/CourseSelector';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Simulado {
@@ -40,7 +39,7 @@ export default function DashboardPage() {
   const [stats, setStats] = useState<UsuarioStats | null>(null);
   const [desempenhoPorArea, setDesempenhoPorArea] = useState<DesempenhoPorArea[]>([]);
 
-  
+
 
   useEffect(() => {
     const storedUserId = localStorage.getItem('user_email') || 'usuario@enem-ia.com';
@@ -58,10 +57,26 @@ export default function DashboardPage() {
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
+      <div className="container min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando dashboard...</p>
+          <div
+            className="spinner-ia mx-auto mb-6"
+            style={{
+              width: '50px',
+              height: '50px',
+              border: '4px solid var(--chalk-dim)',
+              borderTop: '4px solid var(--accent-yellow)',
+              borderRadius: '50%',
+              animation: 'spin 1s linear infinite'
+            }}
+          ></div>
+          <p style={{
+            color: 'var(--chalk-white)',
+            fontSize: '1.25rem',
+            fontFamily: 'var(--font-handwriting)'
+          }}>
+            Carregando dashboard...
+          </p>
         </div>
       </div>
     );
@@ -70,81 +85,179 @@ export default function DashboardPage() {
   const mediaNota = calcularMediaNotas();
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div className="container min-h-screen py-8">
       <FloatingNav />
 
       {/* Slogan Oficial */}
-      <div className="card-ia p-4 mb-6 mt-16 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border-2 border-yellow-400/30 text-center">
-        <p className="text-yellow-300 font-bold text-lg md:text-xl italic">
-          "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
+      <div
+        className="p-4 mb-6 mt-16 text-center"
+        style={{
+          background: 'linear-gradient(to right, rgba(255, 217, 102, 0.15), rgba(255, 153, 51, 0.15))',
+          border: '2px solid rgba(255, 217, 102, 0.3)',
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)'
+        }}
+      >
+        <p style={{
+          color: 'var(--accent-yellow)',
+          fontWeight: 'bold',
+          fontSize: '1.25rem',
+          fontStyle: 'italic',
+          fontFamily: 'var(--font-handwriting)'
+        }}>
+          "Diversão e conhecimento: a combinação perfeita para sua aprovação!"
         </p>
-        <p className="text-white/60 text-sm mt-1">🎯 ENEM-IA - Onde aprender vira jogo</p>
+        <p style={{
+          color: 'var(--chalk-dim)',
+          fontSize: '0.875rem',
+          marginTop: '0.25rem'
+        }}>
+          🎯 ENEM-IA - Onde aprender vira jogo
+        </p>
       </div>
 
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="title-ia mb-2">📊 Dashboard</h1>
-        <p className="subtitle-ia mb-0">Acompanhe seu progresso e estatisticas</p>
+      <div className="header mb-8">
+        <h1 style={{
+          fontSize: '2.5rem',
+          fontWeight: 'bold',
+          color: 'var(--chalk-white)',
+          fontFamily: 'var(--font-handwriting)',
+          marginBottom: '0.5rem'
+        }}>
+          📊 Dashboard
+        </h1>
+        <p style={{
+          color: 'var(--chalk-dim)',
+          fontSize: '1.125rem',
+          fontFamily: 'var(--font-handwriting)'
+        }}>
+          Acompanhe seu progresso e estatísticas
+        </p>
       </div>
 
       {/* Estatísticas Principais */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="stat-ia">
-          <span className="stat-ia-value">{stats?.pontosFP || 0}</span>
-          <span className="stat-ia-label">Pontos FP</span>
+      <div className="stats-bar grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div className="stat-item">
+          <span className="stat-number">{stats?.pontosFP || 0}</span>
+          <span className="stat-label">Pontos FP</span>
         </div>
 
-        <div className="stat-ia">
-          <span className="stat-ia-value">{simulados.length}</span>
-          <span className="stat-ia-label">Simulados</span>
+        <div className="stat-item">
+          <span className="stat-number">{simulados.length}</span>
+          <span className="stat-label">Simulados</span>
         </div>
 
-        <div className="stat-ia">
-          <span className="stat-ia-value">{mediaNota}</span>
-          <span className="stat-ia-label">Nota Média</span>
+        <div className="stat-item">
+          <span className="stat-number">{mediaNota}</span>
+          <span className="stat-label">Nota Média</span>
         </div>
 
-        <div className="stat-ia">
-          <span className="stat-ia-value">{stats?.streak || 0}🔥</span>
-          <span className="stat-ia-label">Dias Seguidos</span>
+        <div className="stat-item">
+          <span className="stat-number">{stats?.streak || 0}🔥</span>
+          <span className="stat-label">Dias Seguidos</span>
         </div>
       </div>
 
       {/* Grid Principal */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         {/* Progresso Geral */}
-        <div className="card-ia">
-          <h2 className="title-ia-sm mb-4">📈 Progresso Geral</h2>
+        <div className="card">
+          <h2 className="card-title mb-4">📈 Progresso Geral</h2>
 
           <div className="space-y-4">
             <div>
               <div className="flex justify-between text-sm mb-2">
-                <span className="text-white/80">Nível Atual</span>
-                <span className="badge-ia">{stats?.nivel || 'Iniciante'}</span>
+                <span style={{ color: 'var(--chalk-white)' }}>Nível Atual</span>
+                <span className="badge">{stats?.nivel || 'Iniciante'}</span>
               </div>
-              <div className="progress-ia">
-                <div className="progress-ia-bar" style={{ width: '65%' }}></div>
+              <div style={{
+                width: '100%',
+                height: '8px',
+                background: 'rgba(255, 255, 255, 0.1)',
+                borderRadius: '4px',
+                overflow: 'hidden'
+              }}>
+                <div style={{
+                  width: '65%',
+                  height: '100%',
+                  background: 'var(--accent-yellow)',
+                  transition: 'width 0.3s ease'
+                }}></div>
               </div>
-              <p className="text-white/60 text-xs mt-2">350 pontos para o próximo nível</p>
+              <p style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.75rem',
+                marginTop: '0.5rem'
+              }}>
+                350 pontos para o próximo nível
+              </p>
             </div>
 
-            <div className="divider-ia"></div>
+            <div style={{
+              height: '1px',
+              background: 'rgba(255, 255, 255, 0.1)',
+              margin: '1rem 0'
+            }}></div>
 
             <div>
-              <p className="text-white/80 mb-3 font-semibold">Conquistas Recentes</p>
+              <p style={{
+                color: 'var(--chalk-white)',
+                marginBottom: '0.75rem',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                Conquistas Recentes
+              </p>
               <div className="space-y-2">
-                <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg">
-                  <span className="text-2xl">🏆</span>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '0.75rem',
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  borderRadius: '8px'
+                }}>
+                  <span style={{ fontSize: '2rem' }}>🏆</span>
                   <div>
-                    <p className="text-white font-semibold text-sm">Primeira Vitória</p>
-                    <p className="text-white/60 text-xs">Complete seu primeiro simulado</p>
+                    <p style={{
+                      color: 'var(--chalk-white)',
+                      fontWeight: 'bold',
+                      fontSize: '0.875rem'
+                    }}>
+                      Primeira Vitória
+                    </p>
+                    <p style={{
+                      color: 'var(--chalk-dim)',
+                      fontSize: '0.75rem'
+                    }}>
+                      Complete seu primeiro simulado
+                    </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg">
-                  <span className="text-2xl">🔥</span>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '0.75rem',
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  borderRadius: '8px'
+                }}>
+                  <span style={{ fontSize: '2rem' }}>🔥</span>
                   <div>
-                    <p className="text-white font-semibold text-sm">Sequência de 7 dias</p>
-                    <p className="text-white/60 text-xs">Estude 7 dias consecutivos</p>
+                    <p style={{
+                      color: 'var(--chalk-white)',
+                      fontWeight: 'bold',
+                      fontSize: '0.875rem'
+                    }}>
+                      Sequência de 7 dias
+                    </p>
+                    <p style={{
+                      color: 'var(--chalk-dim)',
+                      fontSize: '0.75rem'
+                    }}>
+                      Estude 7 dias consecutivos
+                    </p>
                   </div>
                 </div>
               </div>
@@ -153,33 +266,64 @@ export default function DashboardPage() {
         </div>
 
         {/* Desempenho por Área */}
-        <div className="card-ia">
-          <h2 className="title-ia-sm mb-4">📚 Desempenho por Área</h2>
+        <div className="card">
+          <h2 className="card-title mb-4">📚 Desempenho por Área</h2>
 
           {desempenhoPorArea.length > 0 ? (
             <div className="space-y-4">
               {desempenhoPorArea.map((area, idx) => (
                 <div key={idx}>
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-white font-semibold">{area.area}</span>
-                    <span className="text-yellow-300 font-bold">{area.porcentagem}%</span>
+                    <span style={{
+                      color: 'var(--chalk-white)',
+                      fontWeight: 'bold',
+                      fontFamily: 'var(--font-handwriting)'
+                    }}>
+                      {area.area}
+                    </span>
+                    <span style={{
+                      color: 'var(--accent-yellow)',
+                      fontWeight: 'bold'
+                    }}>
+                      {area.porcentagem}%
+                    </span>
                   </div>
-                  <div className="progress-ia">
-                    <div
-                      className="progress-ia-bar"
-                      style={{ width: `${area.porcentagem}%` }}
-                    ></div>
+                  <div style={{
+                    width: '100%',
+                    height: '8px',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    borderRadius: '4px',
+                    overflow: 'hidden'
+                  }}>
+                    <div style={{
+                      width: `${area.porcentagem}%`,
+                      height: '100%',
+                      background: 'var(--accent-yellow)',
+                      transition: 'width 0.3s ease'
+                    }}></div>
                   </div>
-                  <p className="text-white/60 text-xs mt-1">{area.simulados} simulados realizados</p>
+                  <p style={{
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.75rem',
+                    marginTop: '0.25rem'
+                  }}>
+                    {area.simulados} simulados realizados
+                  </p>
                 </div>
               ))}
             </div>
           ) : (
             <div className="text-center py-8">
-              <p className="text-white/60 mb-4">Nenhum simulado realizado ainda</p>
+              <p style={{
+                color: 'var(--chalk-dim)',
+                marginBottom: '1rem',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                Nenhum simulado realizado ainda
+              </p>
               <button
                 onClick={() => router.push('/enem/simulado')}
-                className="btn-ia"
+                className="btn btn-yellow"
               >
                 Fazer Primeiro Simulado
               </button>
@@ -190,48 +334,98 @@ export default function DashboardPage() {
 
       {/* Curso Alvo */}
       <div className="mb-8">
-        <div className="card-ia">
-          <h2 className="title-ia-sm mb-4">🎯 Curso Alvo</h2>
+        <div className="card">
+          <h2 className="card-title mb-4">🎯 Curso Alvo</h2>
           <CourseSelector userId={userId} />
         </div>
       </div>
 
       {/* Histórico de Simulados */}
-      <div className="card-ia">
-        <h2 className="title-ia-sm mb-6">📝 Histórico de Simulados</h2>
+      <div className="card">
+        <h2 className="card-title mb-6">📝 Histórico de Simulados</h2>
 
         {simulados.length > 0 ? (
           <div className="space-y-3">
             {simulados.map((sim) => (
               <div
                 key={sim.id}
-                className="card-ia-sm flex justify-between items-center hover:scale-[1.02] transition cursor-pointer"
+                className="chalkboard-card"
                 onClick={() => router.push(`/enem/resultado/${sim.id}`)}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  cursor: 'pointer',
+                  transition: 'transform 0.2s ease',
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
+                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
                 <div>
-                  <p className="text-white font-bold">{sim.disciplina}</p>
-                  <p className="text-white/60 text-sm">
+                  <p style={{
+                    color: 'var(--chalk-white)',
+                    fontWeight: 'bold',
+                    fontFamily: 'var(--font-handwriting)'
+                  }}>
+                    {sim.disciplina}
+                  </p>
+                  <p style={{
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.875rem'
+                  }}>
                     {sim.acertos}/{sim.total} questões ({sim.porcentagem})
                   </p>
                 </div>
-                <div className="text-right">
-                  <p className="text-yellow-300 font-bold text-xl">{sim.nota}</p>
-                  <p className="text-white/60 text-xs">{sim.data}</p>
+                <div style={{ textAlign: 'right' }}>
+                  <p style={{
+                    color: 'var(--accent-yellow)',
+                    fontWeight: 'bold',
+                    fontSize: '1.25rem'
+                  }}>
+                    {sim.nota}
+                  </p>
+                  <p style={{
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.75rem'
+                  }}>
+                    {sim.data}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         ) : (
           <div className="text-center py-16">
-            <div className="text-8xl mb-6">📝</div>
-            <h3 className="text-white text-2xl font-bold mb-3">Você ainda não fez nenhum simulado</h3>
-            <p className="text-white/70 text-lg mb-8 max-w-md mx-auto leading-relaxed">
+            <div style={{ fontSize: '5rem', marginBottom: '1.5rem' }}>📝</div>
+            <h3 style={{
+              color: 'var(--chalk-white)',
+              fontSize: '1.875rem',
+              fontWeight: 'bold',
+              marginBottom: '0.75rem',
+              fontFamily: 'var(--font-handwriting)'
+            }}>
+              Você ainda não fez nenhum simulado
+            </h3>
+            <p style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '1.125rem',
+              marginBottom: '2rem',
+              maxWidth: '28rem',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              lineHeight: '1.75'
+            }}>
               Que tal começar agora? Faça seu primeiro simulado e descubra seu nível de conhecimento!
             </p>
             <button
               onClick={() => router.push('/enem/simulado')}
-              className="btn-ia text-lg px-10 py-5 font-bold"
-              style={{ boxShadow: '0 8px 30px rgba(255, 217, 102, 0.4)' }}
+              className="btn btn-yellow"
+              style={{
+                fontSize: '1.125rem',
+                padding: '1.25rem 2.5rem',
+                fontWeight: 'bold',
+                boxShadow: '0 8px 30px rgba(255, 217, 102, 0.4)'
+              }}
             >
               🚀 FAZER MEU PRIMEIRO SIMULADO
             </button>
@@ -239,7 +433,20 @@ export default function DashboardPage() {
         )}
       </div>
 
-      <ChalkBackToTop />
+      {/* Footer com link de volta */}
+      <div className="footer mt-8 text-center">
+        <button
+          onClick={() => router.push('/enem')}
+          className="btn"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.5rem'
+          }}
+        >
+          ← Voltar para Home
+        </button>
+      </div>
     </div>
   );
 }

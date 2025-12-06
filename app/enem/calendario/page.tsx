@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
+import Link from 'next/link';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Evento {
@@ -53,11 +53,11 @@ export default function CalendarioPage() {
 
   const getTipoColor = (tipo: string) => {
     switch (tipo) {
-      case 'prova': return 'bg-red-500/20 border-red-500/30 text-red-300';
-      case 'inscricao': return 'bg-blue-500/20 border-blue-500/30 text-blue-300';
-      case 'resultado': return 'bg-green-500/20 border-green-500/30 text-green-300';
-      case 'importante': return 'bg-yellow-500/20 border-yellow-500/30 text-yellow-300';
-      default: return 'bg-white/10 text-white/70';
+      case 'prova': return 'var(--accent-pink)';
+      case 'inscricao': return 'var(--accent-blue)';
+      case 'resultado': return 'var(--accent-green)';
+      case 'importante': return 'var(--accent-yellow)';
+      default: return 'var(--chalk-white)';
     }
   };
 
@@ -88,51 +88,82 @@ export default function CalendarioPage() {
   const diasParaProva = getDiasRestantes('2025-11-02');
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div className="container">
       <FloatingNav />
-      <div className="mb-8 pt-16">
-        <h1 className="title-ia flex items-center gap-3 mb-2">📅 Calendario ENEM 2025</h1>
-        <p className="subtitle-ia mb-4">Todas as datas importantes para sua preparacao</p>
+
+      <div className="header">
+        <h1>📅 Calendario ENEM 2025</h1>
+        <p>Todas as datas importantes para sua preparacao</p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-4 mb-8">
-        <div className="card-ia text-center bg-gradient-to-br from-red-500/20 to-orange-500/20 border-red-400/30">
-          <p className="text-6xl font-bold text-white mb-2">{diasParaProva > 0 ? diasParaProva : 'Ja foi!'}</p>
-          <p className="text-white/70">dias para o ENEM</p>
-          <p className="text-yellow-300 text-sm mt-2">1o dia: 02/11/2025</p>
+      {/* Estatísticas principais */}
+      <div className="stats-bar" style={{ marginBottom: '2rem' }}>
+        <div className="stat-item" style={{ background: 'linear-gradient(135deg, rgba(255,107,129,0.15), rgba(255,159,64,0.15))' }}>
+          <div className="stat-number" style={{ fontSize: '3rem', color: 'var(--accent-pink)' }}>
+            {diasParaProva > 0 ? diasParaProva : 'Ja foi!'}
+          </div>
+          <div className="stat-label">dias para o ENEM</div>
+          <div style={{ fontSize: '0.875rem', color: 'var(--accent-yellow)', marginTop: '0.5rem' }}>
+            1o dia: 02/11/2025
+          </div>
         </div>
-        <div className="card-ia text-center">
-          <p className="text-4xl mb-2">📝</p>
-          <p className="text-2xl font-bold text-white">180</p>
-          <p className="text-white/70">questoes no total</p>
-          <p className="text-white/50 text-sm mt-2">90 por dia</p>
+
+        <div className="stat-item">
+          <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>📝</div>
+          <div className="stat-number">180</div>
+          <div className="stat-label">questoes no total</div>
+          <div style={{ fontSize: '0.875rem', color: 'var(--chalk-faint)', marginTop: '0.5rem' }}>
+            90 por dia
+          </div>
         </div>
-        <div className="card-ia text-center">
-          <p className="text-4xl mb-2">⏱️</p>
-          <p className="text-2xl font-bold text-white">10h30</p>
-          <p className="text-white/70">tempo total de prova</p>
-          <p className="text-white/50 text-sm mt-2">5h30 + 5h</p>
+
+        <div className="stat-item">
+          <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>⏱️</div>
+          <div className="stat-number">10h30</div>
+          <div className="stat-label">tempo total de prova</div>
+          <div style={{ fontSize: '0.875rem', color: 'var(--chalk-faint)', marginTop: '0.5rem' }}>
+            5h30 + 5h
+          </div>
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-6 mb-8">
-        <div className="card-ia">
-          <h3 className="text-white font-bold mb-4 flex items-center gap-2">🔔 Proximos Eventos</h3>
-          <div className="space-y-3">
+      {/* Próximos eventos e cronograma */}
+      <div className="cards-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
+        <div className="chalkboard-card">
+          <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            🔔 Proximos Eventos
+          </h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             {proximosEventos.map((evento) => {
               const dias = getDiasRestantes(evento.data);
+              const cor = getTipoColor(evento.tipo);
               return (
-                <div key={evento.id} className={`p-3 rounded-xl border ${getTipoColor(evento.tipo)}`}>
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">{getTipoEmoji(evento.tipo)}</span>
-                    <div className="flex-1">
-                      <p className="text-white font-bold">{evento.titulo}</p>
-                      <p className="text-white/60 text-sm">{formatarData(evento.data)}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-lg font-bold">{dias}</p>
-                      <p className="text-xs text-white/50">dias</p>
-                    </div>
+                <div
+                  key={evento.id}
+                  style={{
+                    padding: '0.75rem',
+                    borderRadius: '12px',
+                    border: `2px solid ${cor}`,
+                    background: `${cor}15`,
+                    display: 'flex',
+                    alignItems: 'flex-start',
+                    gap: '0.75rem'
+                  }}
+                >
+                  <span style={{ fontSize: '1.5rem' }}>{getTipoEmoji(evento.tipo)}</span>
+                  <div style={{ flex: 1 }}>
+                    <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', marginBottom: '0.25rem' }}>
+                      {evento.titulo}
+                    </p>
+                    <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                      {formatarData(evento.data)}
+                    </p>
+                  </div>
+                  <div style={{ textAlign: 'right' }}>
+                    <p style={{ fontSize: '1.125rem', fontWeight: 'bold', color: 'var(--chalk-white)' }}>
+                      {dias}
+                    </p>
+                    <p style={{ fontSize: '0.75rem', color: 'var(--chalk-faint)' }}>dias</p>
                   </div>
                 </div>
               );
@@ -140,15 +171,38 @@ export default function CalendarioPage() {
           </div>
         </div>
 
-        <div className="card-ia">
-          <h3 className="text-white font-bold mb-4 flex items-center gap-2">⏰ Cronograma do Dia da Prova</h3>
-          <div className="space-y-2">
+        <div className="chalkboard-card">
+          <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            ⏰ Cronograma do Dia da Prova
+          </h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             {CRONOGRAMA_PROVA.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-4 p-2 bg-white/5 rounded-lg">
-                <span className="text-yellow-300 font-mono font-bold w-14">{item.horario}</span>
-                <div className="flex-1">
-                  <p className="text-white">{item.evento}</p>
-                  {item.desc && <p className="text-white/50 text-xs">{item.desc}</p>}
+              <div
+                key={idx}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  padding: '0.5rem',
+                  background: 'rgba(255,255,255,0.05)',
+                  borderRadius: '8px'
+                }}
+              >
+                <span style={{
+                  color: 'var(--accent-yellow)',
+                  fontFamily: 'monospace',
+                  fontWeight: 'bold',
+                  width: '3.5rem'
+                }}>
+                  {item.horario}
+                </span>
+                <div style={{ flex: 1 }}>
+                  <p style={{ color: 'var(--chalk-white)' }}>{item.evento}</p>
+                  {item.desc && (
+                    <p style={{ color: 'var(--chalk-faint)', fontSize: '0.75rem' }}>
+                      {item.desc}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
@@ -156,37 +210,100 @@ export default function CalendarioPage() {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-6 mb-8">
-        <div className="card-ia">
-          <h3 className="text-white font-bold mb-4 flex items-center gap-2">📝 1o Dia - Domingo 02/11</h3>
-          <p className="text-white/60 text-sm mb-4">5h30 de prova + Redacao</p>
+      {/* Conteúdo dos dois dias */}
+      <div className="cards-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
+        <div className="chalkboard-card">
+          <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            📝 1o Dia - Domingo 02/11
+          </h3>
+          <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', marginBottom: '1rem' }}>
+            5h30 de prova + Redacao
+          </p>
           {CONTEUDOS_DIA1.map((area, idx) => (
-            <div key={idx} className="mb-4 p-3 bg-white/5 rounded-xl">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-white font-bold">{area.area}</span>
-                <span className="text-yellow-300">{area.questoes} questoes</span>
+            <div
+              key={idx}
+              style={{
+                marginBottom: '1rem',
+                padding: '0.75rem',
+                background: 'rgba(255,255,255,0.05)',
+                borderRadius: '12px'
+              }}
+            >
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                marginBottom: '0.5rem'
+              }}>
+                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
+                  {area.area}
+                </span>
+                <span style={{ color: 'var(--accent-yellow)' }}>
+                  {area.questoes} questoes
+                </span>
               </div>
-              <div className="flex flex-wrap gap-1">
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem' }}>
                 {area.temas.map((tema, i) => (
-                  <span key={i} className="px-2 py-0.5 bg-blue-500/20 text-blue-300 rounded-full text-xs">{tema}</span>
+                  <span
+                    key={i}
+                    className="badge"
+                    style={{
+                      background: 'rgba(99,179,237,0.2)',
+                      color: 'var(--accent-blue)',
+                      border: '1px solid var(--accent-blue)'
+                    }}
+                  >
+                    {tema}
+                  </span>
                 ))}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="card-ia">
-          <h3 className="text-white font-bold mb-4 flex items-center gap-2">📝 2o Dia - Domingo 09/11</h3>
-          <p className="text-white/60 text-sm mb-4">5h de prova</p>
+        <div className="chalkboard-card">
+          <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            📝 2o Dia - Domingo 09/11
+          </h3>
+          <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', marginBottom: '1rem' }}>
+            5h de prova
+          </p>
           {CONTEUDOS_DIA2.map((area, idx) => (
-            <div key={idx} className="mb-4 p-3 bg-white/5 rounded-xl">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-white font-bold">{area.area}</span>
-                <span className="text-yellow-300">{area.questoes} questoes</span>
+            <div
+              key={idx}
+              style={{
+                marginBottom: '1rem',
+                padding: '0.75rem',
+                background: 'rgba(255,255,255,0.05)',
+                borderRadius: '12px'
+              }}
+            >
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                marginBottom: '0.5rem'
+              }}>
+                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
+                  {area.area}
+                </span>
+                <span style={{ color: 'var(--accent-yellow)' }}>
+                  {area.questoes} questoes
+                </span>
               </div>
-              <div className="flex flex-wrap gap-1">
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem' }}>
                 {area.temas.map((tema, i) => (
-                  <span key={i} className="px-2 py-0.5 bg-green-500/20 text-green-300 rounded-full text-xs">{tema}</span>
+                  <span
+                    key={i}
+                    className="badge"
+                    style={{
+                      background: 'rgba(99,217,184,0.2)',
+                      color: 'var(--accent-green)',
+                      border: '1px solid var(--accent-green)'
+                    }}
+                  >
+                    {tema}
+                  </span>
                 ))}
               </div>
             </div>
@@ -194,41 +311,86 @@ export default function CalendarioPage() {
         </div>
       </div>
 
-      <div className="card-ia mb-8">
-        <h3 className="text-white font-bold mb-4 flex items-center gap-2">📋 Todas as Datas Importantes</h3>
-        <div className="space-y-2">
-          {EVENTOS_2025.map((evento) => (
-            <div key={evento.id} className={`flex items-center gap-4 p-3 rounded-xl border ${getTipoColor(evento.tipo)}`}>
-              <span className="text-2xl">{getTipoEmoji(evento.tipo)}</span>
-              <span className="text-white font-mono w-24">{formatarData(evento.data)}</span>
-              <div className="flex-1">
-                <p className="text-white font-bold">{evento.titulo}</p>
-                <p className="text-white/60 text-sm">{evento.descricao}</p>
+      {/* Todas as datas */}
+      <div className="category" style={{ marginBottom: '2rem' }}>
+        <h2 className="category-title">📋 Todas as Datas Importantes</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          {EVENTOS_2025.map((evento) => {
+            const cor = getTipoColor(evento.tipo);
+            return (
+              <div
+                key={evento.id}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  padding: '0.75rem',
+                  borderRadius: '12px',
+                  border: `2px solid ${cor}`,
+                  background: `${cor}15`
+                }}
+              >
+                <span style={{ fontSize: '1.5rem' }}>{getTipoEmoji(evento.tipo)}</span>
+                <span style={{
+                  color: 'var(--chalk-white)',
+                  fontFamily: 'monospace',
+                  width: '6rem'
+                }}>
+                  {formatarData(evento.data)}
+                </span>
+                <div style={{ flex: 1 }}>
+                  <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', marginBottom: '0.25rem' }}>
+                    {evento.titulo}
+                  </p>
+                  <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                    {evento.descricao}
+                  </p>
+                </div>
+                {evento.link && (
+                  <a
+                    href={evento.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                    style={{ fontSize: '0.875rem', padding: '0.5rem 1rem' }}
+                  >
+                    Acessar
+                  </a>
+                )}
               </div>
-              {evento.link && (
-                <a href={evento.link} target="_blank" rel="noopener noreferrer" className="btn-ia-secondary text-sm">
-                  Acessar
-                </a>
-              )}
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
-      <div className="card-ia bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border-yellow-400/30">
-        <h3 className="text-white font-bold mb-4 flex items-center gap-2">🎒 O que levar no dia da prova</h3>
-        <div className="grid md:grid-cols-2 gap-4">
+      {/* O que levar */}
+      <div
+        className="chalkboard-card"
+        style={{
+          background: 'linear-gradient(135deg, rgba(255,206,84,0.15), rgba(255,159,64,0.15))',
+          border: '2px solid var(--accent-yellow)',
+          marginBottom: '2rem'
+        }}
+      >
+        <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          🎒 O que levar no dia da prova
+        </h3>
+        <div className="cards-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
           <div>
-            <h4 className="text-green-400 font-bold mb-2">✓ Obrigatorio</h4>
-            <ul className="space-y-1 text-white/80">
+            <h4 style={{ color: 'var(--accent-green)', fontWeight: 'bold', marginBottom: '0.5rem' }}>
+              ✓ Obrigatorio
+            </h4>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', color: 'var(--chalk-dim)' }}>
               <li>• Documento de identidade original com foto</li>
               <li>• Caneta esferografica preta em tubo transparente</li>
               <li>• Cartao de confirmacao (recomendado)</li>
             </ul>
           </div>
           <div>
-            <h4 className="text-yellow-400 font-bold mb-2">💡 Recomendado</h4>
-            <ul className="space-y-1 text-white/80">
+            <h4 style={{ color: 'var(--accent-yellow)', fontWeight: 'bold', marginBottom: '0.5rem' }}>
+              💡 Recomendado
+            </h4>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', color: 'var(--chalk-dim)' }}>
               <li>• Lanche leve e agua em garrafa transparente</li>
               <li>• Relogio analogico (sem funcoes)</li>
               <li>• Casaco (ar-condicionado)</li>
@@ -237,7 +399,11 @@ export default function CalendarioPage() {
         </div>
       </div>
 
-      <ChalkBackToTop />
+      <footer>
+        <p>
+          <Link href="/enem">← Voltar ao Painel</Link>
+        </p>
+      </footer>
     </div>
   );
 }

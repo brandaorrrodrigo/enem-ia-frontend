@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 import LeagueCard from '@/components/social/LeagueCard';
 import ShareButton from '@/components/social/ShareButton';
@@ -79,304 +78,606 @@ export default function PerfilPage() {
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando perfil...</p>
+      <div style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'var(--chalkboard-green)'
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            width: '48px',
+            height: '48px',
+            border: '4px solid var(--chalk-dim)',
+            borderTopColor: 'var(--accent-yellow)',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite',
+            margin: '0 auto 1.5rem'
+          }}></div>
+          <p style={{
+            color: 'var(--chalk-white)',
+            fontSize: '1.125rem',
+            fontFamily: 'var(--font-handwriting)'
+          }}>
+            Carregando perfil...
+          </p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div style={{
+      minHeight: '100vh',
+      padding: '2rem 1rem',
+      background: 'var(--chalkboard-green)'
+    }}>
       <FloatingNav />
 
-      <div className="pt-16"></div>
-      {/* Header */}
+      <div style={{ paddingTop: '4rem' }}></div>
 
+      {/* Container Principal */}
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
+        {/* Card do Perfil Principal */}
+        <div className="chalkboard-card" style={{ marginBottom: '1.5rem' }}>
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1.5rem'
+          }} className="md:flex-row md:items-center">
+            {/* Avatar */}
+            <div style={{
+              width: '96px',
+              height: '96px',
+              borderRadius: '50%',
+              background: 'linear-gradient(135deg, var(--accent-yellow) 0%, var(--accent-orange) 100%)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '2.25rem',
+              fontWeight: 'bold',
+              color: 'var(--chalkboard-green)',
+              border: '4px solid var(--chalk-dim)',
+              flexShrink: 0
+            }}>
+              {profile.nome.charAt(0)}
+            </div>
 
-      {/* Card do Perfil Principal */}
-      <div className="card-ia p-6 mb-6">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-          {/* Avatar */}
-          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-4xl font-bold text-white border-4 border-white/20 flex-shrink-0">
-            {profile.nome.charAt(0)}
+            {/* Info */}
+            <div style={{ flex: 1 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                <h1 style={{
+                  fontSize: '1.875rem',
+                  fontWeight: 'bold',
+                  color: 'var(--chalk-white)',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  {profile.nome}
+                </h1>
+                <span style={{ fontSize: '1.875rem' }}>
+                  {profile.liga === 'Ouro' ? '🥇' : profile.liga === 'Platina' ? '💎' : '🥉'}
+                </span>
+              </div>
+              <p style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.875rem',
+                marginBottom: '0.75rem'
+              }}>
+                Liga {profile.liga} • Membro desde {new Date(profile.membroDesde).toLocaleDateString('pt-BR')}
+              </p>
+
+              {/* Stats sociais */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+                <button
+                  onClick={() => router.push('/enem/amigos?tab=seguidores')}
+                  style={{
+                    textAlign: 'center',
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    color: 'var(--chalk-white)',
+                    transition: 'color 0.3s'
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-yellow)'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = 'var(--chalk-white)'}
+                >
+                  <span style={{
+                    fontWeight: 'bold',
+                    fontSize: '1.125rem',
+                    display: 'block'
+                  }}>
+                    {profile.seguidores}
+                  </span>
+                  <span style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>seguidores</span>
+                </button>
+                <button
+                  onClick={() => router.push('/enem/amigos?tab=seguindo')}
+                  style={{
+                    textAlign: 'center',
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    color: 'var(--chalk-white)',
+                    transition: 'color 0.3s'
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-yellow)'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = 'var(--chalk-white)'}
+                >
+                  <span style={{
+                    fontWeight: 'bold',
+                    fontSize: '1.125rem',
+                    display: 'block'
+                  }}>
+                    {profile.seguindo}
+                  </span>
+                  <span style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>seguindo</span>
+                </button>
+                <div style={{ textAlign: 'center' }}>
+                  <span style={{
+                    color: 'var(--accent-yellow)',
+                    fontWeight: 'bold',
+                    fontSize: '1.125rem',
+                    display: 'block'
+                  }}>
+                    #{profile.posicaoRanking}
+                  </span>
+                  <span style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>ranking</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Acoes */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <ShareButton tipo="convite" />
+              <button
+                onClick={() => router.push('/enem/perfil/editar')}
+                className="btn"
+                style={{
+                  fontSize: '0.875rem',
+                  padding: '0.5rem 1rem'
+                }}
+              >
+                ⚙️ Editar Perfil
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Stats Bar */}
+        <div className="stats-bar" style={{ marginBottom: '1.5rem' }}>
+          <div className="stat-item">
+            <div className="stat-number" style={{ color: 'var(--accent-yellow)' }}>
+              {profile.pontosFP.toLocaleString()}
+            </div>
+            <div className="stat-label">FP Total</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">{profile.simuladosFeitos}</div>
+            <div className="stat-label">Simulados</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number" style={{ color: 'var(--accent-orange)' }}>
+              {profile.streakAtual}🔥
+            </div>
+            <div className="stat-label">Streak Atual</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">{profile.mediaNotas.toFixed(0)}</div>
+            <div className="stat-label">Media</div>
+          </div>
+        </div>
+
+        {/* Layout principal */}
+        <div className="grid lg:grid-cols-3 gap-6">
+          {/* Conteudo principal */}
+          <div className="lg:col-span-2">
+            {/* Tabs */}
+            <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+              <button
+                onClick={() => setActiveTab('estatisticas')}
+                style={{
+                  padding: '0.5rem 1rem',
+                  borderRadius: '0.75rem',
+                  fontWeight: '600',
+                  transition: 'all 0.3s',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-handwriting)',
+                  background: activeTab === 'estatisticas' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+                  color: activeTab === 'estatisticas' ? 'var(--chalkboard-green)' : 'var(--chalk-dim)'
+                }}
+                onMouseEnter={(e) => {
+                  if (activeTab !== 'estatisticas') {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (activeTab !== 'estatisticas') {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                  }
+                }}
+              >
+                📊 Estatisticas
+              </button>
+              <button
+                onClick={() => setActiveTab('conquistas')}
+                style={{
+                  padding: '0.5rem 1rem',
+                  borderRadius: '0.75rem',
+                  fontWeight: '600',
+                  transition: 'all 0.3s',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-handwriting)',
+                  background: activeTab === 'conquistas' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+                  color: activeTab === 'conquistas' ? 'var(--chalkboard-green)' : 'var(--chalk-dim)'
+                }}
+                onMouseEnter={(e) => {
+                  if (activeTab !== 'conquistas') {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (activeTab !== 'conquistas') {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                  }
+                }}
+              >
+                🏆 Conquistas
+              </button>
+              <button
+                onClick={() => setActiveTab('atividades')}
+                style={{
+                  padding: '0.5rem 1rem',
+                  borderRadius: '0.75rem',
+                  fontWeight: '600',
+                  transition: 'all 0.3s',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-handwriting)',
+                  background: activeTab === 'atividades' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+                  color: activeTab === 'atividades' ? 'var(--chalkboard-green)' : 'var(--chalk-dim)'
+                }}
+                onMouseEnter={(e) => {
+                  if (activeTab !== 'atividades') {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (activeTab !== 'atividades') {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                  }
+                }}
+              >
+                📜 Atividades
+              </button>
+            </div>
+
+            {/* Conteudo das tabs */}
+            {activeTab === 'estatisticas' && (
+              <div className="chalkboard-card">
+                <h3 className="card-title" style={{ marginBottom: '1.5rem' }}>
+                  📊 Desempenho por Area
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  {profile.estatisticasPorArea.map((area) => (
+                    <div key={area.area}>
+                      <div style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        marginBottom: '0.5rem'
+                      }}>
+                        <span style={{
+                          color: 'var(--chalk-white)',
+                          fontWeight: '600',
+                          fontFamily: 'var(--font-handwriting)'
+                        }}>
+                          {area.area}
+                        </span>
+                        <span style={{
+                          color: 'var(--accent-yellow)',
+                          fontWeight: 'bold',
+                          fontFamily: 'var(--font-handwriting)'
+                        }}>
+                          {area.porcentagem}%
+                        </span>
+                      </div>
+                      <div style={{
+                        width: '100%',
+                        height: '8px',
+                        background: 'rgba(255, 255, 255, 0.1)',
+                        borderRadius: '4px',
+                        overflow: 'hidden'
+                      }}>
+                        <div style={{
+                          height: '100%',
+                          background: 'var(--accent-yellow)',
+                          width: `${area.porcentagem}%`,
+                          transition: 'width 0.3s ease'
+                        }} />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div style={{
+                  height: '2px',
+                  background: 'var(--chalk-dim)',
+                  margin: '1.5rem 0',
+                  opacity: 0.3
+                }}></div>
+
+                <h3 className="card-title" style={{ marginBottom: '1rem' }}>
+                  📈 Resumo Geral
+                </h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    borderRadius: '0.75rem',
+                    padding: '1rem'
+                  }}>
+                    <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>Melhor Nota</p>
+                    <p style={{
+                      fontSize: '1.5rem',
+                      fontWeight: 'bold',
+                      color: '#4ade80',
+                      fontFamily: 'var(--font-handwriting)'
+                    }}>
+                      842
+                    </p>
+                  </div>
+                  <div style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    borderRadius: '0.75rem',
+                    padding: '1rem'
+                  }}>
+                    <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>Questoes Respondidas</p>
+                    <p style={{
+                      fontSize: '1.5rem',
+                      fontWeight: 'bold',
+                      color: 'var(--chalk-white)',
+                      fontFamily: 'var(--font-handwriting)'
+                    }}>
+                      1,847
+                    </p>
+                  </div>
+                  <div style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    borderRadius: '0.75rem',
+                    padding: '1rem'
+                  }}>
+                    <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>Taxa de Acerto</p>
+                    <p style={{
+                      fontSize: '1.5rem',
+                      fontWeight: 'bold',
+                      color: 'var(--accent-yellow)',
+                      fontFamily: 'var(--font-handwriting)'
+                    }}>
+                      68%
+                    </p>
+                  </div>
+                  <div style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    borderRadius: '0.75rem',
+                    padding: '1rem'
+                  }}>
+                    <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>Streak Maximo</p>
+                    <p style={{
+                      fontSize: '1.5rem',
+                      fontWeight: 'bold',
+                      color: 'var(--accent-orange)',
+                      fontFamily: 'var(--font-handwriting)'
+                    }}>
+                      {profile.streakMaximo}🔥
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'conquistas' && (
+              <div className="chalkboard-card">
+                <h3 className="card-title" style={{ marginBottom: '1.5rem' }}>
+                  🏆 Todas as Conquistas ({profile.badges.length})
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {profile.badges.map((badge) => (
+                    <div
+                      key={badge.id}
+                      style={{
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        borderRadius: '0.75rem',
+                        padding: '1rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '1rem',
+                        transition: 'background 0.3s',
+                        cursor: 'pointer'
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'}
+                      onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    >
+                      <span style={{ fontSize: '2.25rem' }}>{badge.emoji}</span>
+                      <div>
+                        <p style={{
+                          color: 'var(--chalk-white)',
+                          fontWeight: 'bold',
+                          fontFamily: 'var(--font-handwriting)'
+                        }}>
+                          {badge.nome}
+                        </p>
+                        <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                          Conquistado em {new Date(badge.data).toLocaleDateString('pt-BR')}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Conquistas bloqueadas */}
+                <div style={{
+                  height: '2px',
+                  background: 'var(--chalk-dim)',
+                  margin: '1.5rem 0',
+                  opacity: 0.3
+                }}></div>
+                <h3 style={{
+                  color: 'var(--chalk-dim)',
+                  fontWeight: 'bold',
+                  marginBottom: '1rem',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  🔒 Proximas Conquistas
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4" style={{ opacity: 0.5 }}>
+                  {[
+                    { nome: 'Streak de 30 dias', emoji: '🔥', desc: 'Estude 30 dias seguidos' },
+                    { nome: 'Top 50 Global', emoji: '🌟', desc: 'Entre no top 50' },
+                    { nome: 'Liga Platina', emoji: '💎', desc: 'Alcance a Liga Platina' },
+                  ].map((badge, idx) => (
+                    <div
+                      key={idx}
+                      style={{
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        borderRadius: '0.75rem',
+                        padding: '1rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '1rem'
+                      }}
+                    >
+                      <span style={{ fontSize: '2.25rem', filter: 'grayscale(100%)' }}>{badge.emoji}</span>
+                      <div>
+                        <p style={{
+                          color: 'var(--chalk-white)',
+                          fontWeight: 'bold',
+                          fontFamily: 'var(--font-handwriting)'
+                        }}>
+                          {badge.nome}
+                        </p>
+                        <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>{badge.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'atividades' && (
+              <div className="chalkboard-card">
+                <h3 className="card-title" style={{ marginBottom: '1.5rem' }}>
+                  📜 Atividades Recentes
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  {[
+                    { acao: 'Completou simulado', detalhe: 'Matematica - Nota 780', emoji: '📝', tempo: '2h atras' },
+                    { acao: 'Ganhou conquista', detalhe: 'Mestre da Matematica', emoji: '🏆', tempo: '3h atras' },
+                    { acao: 'Subiu no ranking', detalhe: '+5 posicoes', emoji: '📈', tempo: '5h atras' },
+                    { acao: 'Manteve streak', detalhe: '7 dias seguidos', emoji: '🔥', tempo: '1 dia atras' },
+                    { acao: 'Completou simulado', detalhe: 'Linguagens - Nota 720', emoji: '📝', tempo: '1 dia atras' },
+                  ].map((atividade, idx) => (
+                    <div
+                      key={idx}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '1rem',
+                        padding: '0.75rem',
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        borderRadius: '0.75rem'
+                      }}
+                    >
+                      <span style={{ fontSize: '1.5rem' }}>{atividade.emoji}</span>
+                      <div style={{ flex: 1 }}>
+                        <p style={{
+                          color: 'var(--chalk-white)',
+                          fontWeight: '600',
+                          fontFamily: 'var(--font-handwriting)'
+                        }}>
+                          {atividade.acao}
+                        </p>
+                        <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                          {atividade.detalhe}
+                        </p>
+                      </div>
+                      <span style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                        {atividade.tempo}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
-          {/* Info */}
-          <div className="flex-1">
-            <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-2xl md:text-3xl font-bold text-white">{profile.nome}</h1>
-              <span className="text-3xl">{profile.liga === 'Ouro' ? '🥇' : profile.liga === 'Platina' ? '💎' : '🥉'}</span>
-            </div>
-            <p className="text-white/60 text-sm mb-3">Liga {profile.liga} • Membro desde {new Date(profile.membroDesde).toLocaleDateString('pt-BR')}</p>
+          {/* Sidebar */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            {/* Liga Card */}
+            <LeagueCard userFP={profile.pontosFP} userName={profile.nome} />
 
-            {/* Stats sociais */}
-            <div className="flex items-center gap-6">
-              <button
-                onClick={() => router.push('/enem/amigos?tab=seguidores')}
-                className="text-center hover:text-yellow-300 transition"
-              >
-                <span className="text-white font-bold text-lg block">{profile.seguidores}</span>
-                <span className="text-white/60 text-sm">seguidores</span>
-              </button>
-              <button
-                onClick={() => router.push('/enem/amigos?tab=seguindo')}
-                className="text-center hover:text-yellow-300 transition"
-              >
-                <span className="text-white font-bold text-lg block">{profile.seguindo}</span>
-                <span className="text-white/60 text-sm">seguindo</span>
-              </button>
-              <div className="text-center">
-                <span className="text-yellow-300 font-bold text-lg block">#{profile.posicaoRanking}</span>
-                <span className="text-white/60 text-sm">ranking</span>
+            {/* Compartilhar conquistas */}
+            <div className="chalkboard-card">
+              <h3 className="card-title" style={{ marginBottom: '1rem' }}>
+                📤 Compartilhar
+              </h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <ShareButton tipo="nota" valor={profile.mediaNotas} />
+                <ShareButton tipo="streak" valor={profile.streakAtual} />
+                <ShareButton tipo="liga" valor={profile.liga} />
+              </div>
+            </div>
+
+            {/* Links rapidos */}
+            <div className="chalkboard-card">
+              <h3 className="card-title" style={{ marginBottom: '1rem' }}>
+                ⚡ Acoes Rapidas
+              </h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <button
+                  onClick={() => router.push('/enem/simulado')}
+                  className="btn btn-yellow"
+                  style={{ width: '100%', padding: '0.75rem' }}
+                >
+                  📝 Fazer Simulado
+                </button>
+                <button
+                  onClick={() => router.push('/enem/ranking')}
+                  className="btn"
+                  style={{ width: '100%', padding: '0.75rem' }}
+                >
+                  🏆 Ver Ranking
+                </button>
+                <button
+                  onClick={() => router.push('/enem/amigos')}
+                  className="btn"
+                  style={{ width: '100%', padding: '0.75rem' }}
+                >
+                  👥 Encontrar Amigos
+                </button>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Acoes */}
-          <div className="flex flex-col gap-2">
-            <ShareButton tipo="convite" />
-            <button
-              onClick={() => router.push('/enem/perfil/editar')}
-              className="btn-ia-secondary text-sm"
-            >
-              ⚙️ Editar Perfil
-            </button>
-          </div>
+        {/* Footer */}
+        <div className="footer">
+          <button
+            onClick={() => router.push('/enem')}
+            className="btn"
+          >
+            ← Voltar ao Dashboard
+          </button>
         </div>
       </div>
 
-      {/* Stats Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-        <div className="stat-ia">
-          <span className="stat-ia-value text-yellow-300">{profile.pontosFP.toLocaleString()}</span>
-          <span className="stat-ia-label">FP Total</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{profile.simuladosFeitos}</span>
-          <span className="stat-ia-label">Simulados</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value text-orange-400">{profile.streakAtual}🔥</span>
-          <span className="stat-ia-label">Streak Atual</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{profile.mediaNotas.toFixed(0)}</span>
-          <span className="stat-ia-label">Media</span>
-        </div>
-      </div>
-
-      {/* Layout principal */}
-      <div className="grid lg:grid-cols-3 gap-6">
-        {/* Conteudo principal */}
-        <div className="lg:col-span-2">
-          {/* Tabs */}
-          <div className="flex gap-2 mb-4">
-            <button
-              onClick={() => setActiveTab('estatisticas')}
-              className={`px-4 py-2 rounded-xl font-semibold transition ${
-                activeTab === 'estatisticas'
-                  ? 'bg-yellow-400 text-slate-900'
-                  : 'bg-white/10 text-white/70 hover:bg-white/20'
-              }`}
-            >
-              📊 Estatisticas
-            </button>
-            <button
-              onClick={() => setActiveTab('conquistas')}
-              className={`px-4 py-2 rounded-xl font-semibold transition ${
-                activeTab === 'conquistas'
-                  ? 'bg-yellow-400 text-slate-900'
-                  : 'bg-white/10 text-white/70 hover:bg-white/20'
-              }`}
-            >
-              🏆 Conquistas
-            </button>
-            <button
-              onClick={() => setActiveTab('atividades')}
-              className={`px-4 py-2 rounded-xl font-semibold transition ${
-                activeTab === 'atividades'
-                  ? 'bg-yellow-400 text-slate-900'
-                  : 'bg-white/10 text-white/70 hover:bg-white/20'
-              }`}
-            >
-              📜 Atividades
-            </button>
-          </div>
-
-          {/* Conteudo das tabs */}
-          {activeTab === 'estatisticas' && (
-            <div className="card-ia p-6">
-              <h3 className="text-white font-bold mb-6 flex items-center gap-2">
-                📊 Desempenho por Area
-              </h3>
-              <div className="space-y-4">
-                {profile.estatisticasPorArea.map((area) => (
-                  <div key={area.area}>
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-white font-semibold">{area.area}</span>
-                      <span className="text-yellow-300 font-bold">{area.porcentagem}%</span>
-                    </div>
-                    <div className="progress-ia">
-                      <div
-                        className="progress-ia-bar"
-                        style={{ width: `${area.porcentagem}%` }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="divider-ia my-6"></div>
-
-              <h3 className="text-white font-bold mb-4 flex items-center gap-2">
-                📈 Resumo Geral
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/5 rounded-xl p-4">
-                  <p className="text-white/60 text-sm">Melhor Nota</p>
-                  <p className="text-2xl font-bold text-green-400">842</p>
-                </div>
-                <div className="bg-white/5 rounded-xl p-4">
-                  <p className="text-white/60 text-sm">Questoes Respondidas</p>
-                  <p className="text-2xl font-bold text-white">1,847</p>
-                </div>
-                <div className="bg-white/5 rounded-xl p-4">
-                  <p className="text-white/60 text-sm">Taxa de Acerto</p>
-                  <p className="text-2xl font-bold text-yellow-300">68%</p>
-                </div>
-                <div className="bg-white/5 rounded-xl p-4">
-                  <p className="text-white/60 text-sm">Streak Maximo</p>
-                  <p className="text-2xl font-bold text-orange-400">{profile.streakMaximo}🔥</p>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {activeTab === 'conquistas' && (
-            <div className="card-ia p-6">
-              <h3 className="text-white font-bold mb-6 flex items-center gap-2">
-                🏆 Todas as Conquistas ({profile.badges.length})
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {profile.badges.map((badge) => (
-                  <div
-                    key={badge.id}
-                    className="bg-white/5 rounded-xl p-4 flex items-center gap-4 hover:bg-white/10 transition"
-                  >
-                    <span className="text-4xl">{badge.emoji}</span>
-                    <div>
-                      <p className="text-white font-bold">{badge.nome}</p>
-                      <p className="text-white/50 text-sm">
-                        Conquistado em {new Date(badge.data).toLocaleDateString('pt-BR')}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Conquistas bloqueadas */}
-              <div className="divider-ia my-6"></div>
-              <h3 className="text-white/60 font-bold mb-4">🔒 Proximas Conquistas</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 opacity-50">
-                {[
-                  { nome: 'Streak de 30 dias', emoji: '🔥', desc: 'Estude 30 dias seguidos' },
-                  { nome: 'Top 50 Global', emoji: '🌟', desc: 'Entre no top 50' },
-                  { nome: 'Liga Platina', emoji: '💎', desc: 'Alcance a Liga Platina' },
-                ].map((badge, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-white/5 rounded-xl p-4 flex items-center gap-4"
-                  >
-                    <span className="text-4xl grayscale">{badge.emoji}</span>
-                    <div>
-                      <p className="text-white font-bold">{badge.nome}</p>
-                      <p className="text-white/50 text-sm">{badge.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {activeTab === 'atividades' && (
-            <div className="card-ia p-6">
-              <h3 className="text-white font-bold mb-6 flex items-center gap-2">
-                📜 Atividades Recentes
-              </h3>
-              <div className="space-y-4">
-                {[
-                  { acao: 'Completou simulado', detalhe: 'Matematica - Nota 780', emoji: '📝', tempo: '2h atras' },
-                  { acao: 'Ganhou conquista', detalhe: 'Mestre da Matematica', emoji: '🏆', tempo: '3h atras' },
-                  { acao: 'Subiu no ranking', detalhe: '+5 posicoes', emoji: '📈', tempo: '5h atras' },
-                  { acao: 'Manteve streak', detalhe: '7 dias seguidos', emoji: '🔥', tempo: '1 dia atras' },
-                  { acao: 'Completou simulado', detalhe: 'Linguagens - Nota 720', emoji: '📝', tempo: '1 dia atras' },
-                ].map((atividade, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-4 p-3 bg-white/5 rounded-xl"
-                  >
-                    <span className="text-2xl">{atividade.emoji}</span>
-                    <div className="flex-1">
-                      <p className="text-white font-semibold">{atividade.acao}</p>
-                      <p className="text-white/60 text-sm">{atividade.detalhe}</p>
-                    </div>
-                    <span className="text-white/40 text-sm">{atividade.tempo}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* Sidebar */}
-        <div className="space-y-6">
-          {/* Liga Card */}
-          <LeagueCard userFP={profile.pontosFP} userName={profile.nome} />
-
-          {/* Compartilhar conquistas */}
-          <div className="card-ia p-6">
-            <h3 className="text-white font-bold mb-4 flex items-center gap-2">
-              📤 Compartilhar
-            </h3>
-            <div className="space-y-3">
-              <ShareButton tipo="nota" valor={profile.mediaNotas} />
-              <ShareButton tipo="streak" valor={profile.streakAtual} />
-              <ShareButton tipo="liga" valor={profile.liga} />
-            </div>
-          </div>
-
-          {/* Links rapidos */}
-          <div className="card-ia p-6">
-            <h3 className="text-white font-bold mb-4">⚡ Acoes Rapidas</h3>
-            <div className="space-y-2">
-              <button
-                onClick={() => router.push('/enem/simulado')}
-                className="w-full btn-ia py-3"
-              >
-                📝 Fazer Simulado
-              </button>
-              <button
-                onClick={() => router.push('/enem/ranking')}
-                className="w-full btn-ia-secondary py-3"
-              >
-                🏆 Ver Ranking
-              </button>
-              <button
-                onClick={() => router.push('/enem/amigos')}
-                className="w-full btn-ia-secondary py-3"
-              >
-                👥 Encontrar Amigos
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <ChalkBackToTop />
+      <style jsx>{`
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
     </div>
   );
 }

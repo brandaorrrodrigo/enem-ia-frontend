@@ -2,40 +2,23 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
+import { Questao } from '@/lib/types';
+import { SimuladoConfig, salvarSimuladoEmAndamento, carregarSimuladoEmAndamento } from '@/lib/questions';
 import FloatingNav from '@/components/FloatingNav';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
-
-interface Questao {
-  id: number;
-  area: string;
-  enunciado: string;
-  alternativas: string[];
-  correta: number;
-  explicacao: string;
-}
-
-interface SimuladoData {
-  id: string;
-  questoes: Questao[];
-  respostas: { [key: number]: number };
-  questaoAtual: number;
-  inicio: string;
-  area: string;
-  quantidade: number;
-}
 
 export default function SimuladoPlayerPage() {
   const router = useRouter();
   const params = useParams();
   const simuladoId = params.id as string;
 
-  const [simulado, setSimulado] = useState<SimuladoData | null>(null);
+  const [simulado, setSimulado] = useState<SimuladoConfig | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [mostrarResultado, setMostrarResultado] = useState(false);
+  const [alternativaSelecionada, setAlternativaSelecionada] = useState<number | null>(null);
 
   useEffect(() => {
-    const simuladoSalvo = localStorage.getItem('simulado_em_andamento');
+    const simuladoSalvo = carregarSimuladoEmAndamento();
 
     if (!simuladoSalvo) {
       setError('Simulado não encontrado. Inicie um novo simulado.');
@@ -43,43 +26,99 @@ export default function SimuladoPlayerPage() {
       return;
     }
 
-    try {
-      const data: SimuladoData = JSON.parse(simuladoSalvo);
-
-      if (data.id !== simuladoId) {
-        setError('ID do simulado não corresponde.');
-        setLoading(false);
-        return;
-      }
-
-      setSimulado(data);
-    } catch (e) {
-      setError('Erro ao carregar simulado.');
+    if (simuladoSalvo.id !== simuladoId) {
+      setError('ID do simulado não corresponde.');
+      setLoading(false);
+      return;
     }
+
+    setSimulado(simuladoSalvo);
     setLoading(false);
   }, [simuladoId]);
+
+  // Atualiza alternativa selecionada quando muda de questão
+  useEffect(() => {
+    if (simulado) {
+      const questaoAtual = simulado.questoes[simulado.questaoAtual];
+      if (questaoAtual) {
+        const respostaExistente = simulado.respostas[questaoAtual.id];
+        setAlternativaSelecionada(respostaExistente !== undefined ? respostaExistente : null);
+      }
+    }
+  }, [simulado?.questaoAtual]);
 
   const questaoAtual = simulado?.questoes[simulado.questaoAtual];
   const indiceAtual = simulado?.questaoAtual ?? 0;
   const totalQuestoes = simulado?.questoes.length ?? 0;
-  const respostaMarcada = questaoAtual ? simulado?.respostas[questaoAtual.id] : undefined;
+  const modoCorrecao = simulado?.modoCorrecao ?? 'final';
 
-  const marcarAlternativa = (alternativaIndex: number) => {
-    if (!simulado || !questaoAtual) return;
+  // Verifica se a questão atual já foi confirmada (modo imediato)
+  const questaoConfirmada = questaoAtual
+    ? simulado?.respostasConfirmadas?.[questaoAtual.id] === true
+    : false;
 
-    const novasRespostas = { ...simulado.respostas, [questaoAtual.id]: alternativaIndex };
-    const simuladoAtualizado = { ...simulado, respostas: novasRespostas };
+  // Seleciona alternativa (ainda não confirma)
+  const selecionarAlternativa = (alternativaIndex: number) => {
+    if (!simulado || !questaoAtual || questaoConfirmada) return;
+    setAlternativaSelecionada(alternativaIndex);
+  };
+
+  // Confirma a resposta (para modo imediato)
+  const confirmarResposta = () => {
+    if (!simulado || !questaoAtual || alternativaSelecionada === null) return;
+
+    const novasRespostas = { ...simulado.respostas, [questaoAtual.id]: alternativaSelecionada };
+    const novasConfirmadas = { ...simulado.respostasConfirmadas, [questaoAtual.id]: true };
+
+    const simuladoAtualizado: SimuladoConfig = {
+      ...simulado,
+      respostas: novasRespostas,
+      respostasConfirmadas: novasConfirmadas
+    };
 
     setSimulado(simuladoAtualizado);
-    localStorage.setItem('simulado_em_andamento', JSON.stringify(simuladoAtualizado));
+    salvarSimuladoEmAndamento(simuladoAtualizado);
+  };
+
+  // Marca resposta (modo final - sem confirmação individual)
+  const marcarResposta = () => {
+    if (!simulado || !questaoAtual || alternativaSelecionada === null) return;
+
+    const novasRespostas = { ...simulado.respostas, [questaoAtual.id]: alternativaSelecionada };
+
+    const simuladoAtualizado: SimuladoConfig = {
+      ...simulado,
+      respostas: novasRespostas
+    };
+
+    setSimulado(simuladoAtualizado);
+    salvarSimuladoEmAndamento(simuladoAtualizado);
   };
 
   const irParaQuestao = (indice: number) => {
     if (!simulado || indice < 0 || indice >= totalQuestoes) return;
 
-    const simuladoAtualizado = { ...simulado, questaoAtual: indice };
-    setSimulado(simuladoAtualizado);
-    localStorage.setItem('simulado_em_andamento', JSON.stringify(simuladoAtualizado));
+    // No modo final, salva a resposta atual antes de mudar
+    if (modoCorrecao === 'final' && alternativaSelecionada !== null && questaoAtual) {
+      const novasRespostas = { ...simulado.respostas, [questaoAtual.id]: alternativaSelecionada };
+      const simuladoAtualizado: SimuladoConfig = {
+        ...simulado,
+        respostas: novasRespostas,
+        questaoAtual: indice
+      };
+      setSimulado(simuladoAtualizado);
+      salvarSimuladoEmAndamento(simuladoAtualizado);
+    } else {
+      const simuladoAtualizado: SimuladoConfig = { ...simulado, questaoAtual: indice };
+      setSimulado(simuladoAtualizado);
+      salvarSimuladoEmAndamento(simuladoAtualizado);
+    }
+  };
+
+  const proximaQuestao = () => {
+    if (indiceAtual < totalQuestoes - 1) {
+      irParaQuestao(indiceAtual + 1);
+    }
   };
 
   const finalizarSimulado = () => {
@@ -103,6 +142,8 @@ export default function SimuladoPlayerPage() {
       detalhes.push({
         id: q.id,
         area: q.area,
+        disciplina: q.disciplina,
+        assunto: q.assunto,
         enunciado: q.enunciado,
         alternativas: q.alternativas,
         correta: q.correta,
@@ -115,6 +156,9 @@ export default function SimuladoPlayerPage() {
     const nota = Math.round((acertos / totalQuestoes) * 1000);
     const tempoGasto = Math.round((Date.now() - new Date(simulado.inicio).getTime()) / 60000);
 
+    const xpGanho = acertos * 10 + (nota >= 700 ? 100 : nota >= 500 ? 50 : 20);
+    const pontosGanhos = acertos * 5 + (nota >= 700 ? 50 : nota >= 500 ? 25 : 10);
+
     const resultado = {
       id: simulado.id,
       acertos,
@@ -123,11 +167,14 @@ export default function SimuladoPlayerPage() {
       tempoMinutos: tempoGasto,
       area: simulado.area,
       detalhes,
-      data: new Date().toISOString()
+      data: new Date().toISOString(),
+      xpGanho,
+      pontosGanhos
     };
 
     localStorage.setItem('ultimo_resultado_simulado', JSON.stringify(resultado));
 
+    // Histórico
     const historicoStr = localStorage.getItem('historico_simulados') || '[]';
     const historico = JSON.parse(historicoStr);
     historico.unshift({
@@ -136,19 +183,24 @@ export default function SimuladoPlayerPage() {
       nota: resultado.nota,
       acertos: resultado.acertos,
       total: resultado.total,
-      area: resultado.area
+      area: resultado.area,
+      tempoMinutos: resultado.tempoMinutos
     });
-    localStorage.setItem('historico_simulados', JSON.stringify(historico.slice(0, 20)));
+    localStorage.setItem('historico_simulados', JSON.stringify(historico.slice(0, 50)));
 
-    const fpAtual = parseInt(localStorage.getItem('fp_total') || '0');
-    const fpGanho = acertos * 5 + (nota >= 700 ? 50 : nota >= 500 ? 25 : 10);
-    localStorage.setItem('fp_total', String(fpAtual + fpGanho));
+    // XP e Pontos
+    const xpAtual = parseInt(localStorage.getItem('xp_total') || '0');
+    const pontosAtual = parseInt(localStorage.getItem('pontos_total') || '0');
+    localStorage.setItem('xp_total', String(xpAtual + xpGanho));
+    localStorage.setItem('pontos_total', String(pontosAtual + pontosGanhos));
 
+    // Limpar simulado em andamento
     localStorage.removeItem('simulado_em_andamento');
 
     setMostrarResultado(true);
   };
 
+  // ========== TELA DE RESULTADO ==========
   if (mostrarResultado) {
     const resultadoStr = localStorage.getItem('ultimo_resultado_simulado');
     if (!resultadoStr) return null;
@@ -156,249 +208,974 @@ export default function SimuladoPlayerPage() {
     const porcentagem = Math.round((resultado.acertos / resultado.total) * 100);
 
     return (
-      <div className="min-h-screen bg-[#0d5f3a] text-white py-12 pt-20 px-4">
+      <div style={{
+        minHeight: '100vh',
+        background: 'var(--chalkboard-bg)',
+        color: 'var(--chalk-white)',
+        paddingTop: '80px',
+        paddingBottom: '40px',
+        paddingLeft: '16px',
+        paddingRight: '16px'
+      }}>
         <FloatingNav />
-        <div className="max-w-4xl mx-auto">
-          <div className="card-ia p-8 text-center mb-8">
-            <h1 className="title-ia text-3xl mb-4">🎉 Simulado Finalizado!</h1>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
-              <div className="stat-ia">
-                <div className="text-3xl font-bold text-emerald-400">{resultado.acertos}/{resultado.total}</div>
-                <div className="text-gray-400 text-sm">Acertos</div>
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          {/* Header */}
+          <div className="header" style={{ textAlign: 'center', marginBottom: '40px' }}>
+            <h1 style={{
+              fontSize: '2.5rem',
+              marginBottom: '12px',
+              color: 'var(--accent-yellow)',
+              textShadow: '2px 2px 0 rgba(0,0,0,0.3)'
+            }}>
+              Simulado Finalizado!
+            </h1>
+            <p style={{ color: 'var(--chalk-dim)', fontSize: '1.1rem' }}>
+              Confira seu desempenho
+            </p>
+          </div>
+
+          {/* Stats Bar */}
+          <div className="stats-bar" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: '20px',
+            marginBottom: '40px'
+          }}>
+            <div className="stat-item" style={{
+              background: 'rgba(255,255,255,0.1)',
+              padding: '24px',
+              borderRadius: '12px',
+              border: '2px solid rgba(255,255,255,0.2)',
+              textAlign: 'center'
+            }}>
+              <div className="stat-number" style={{
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'var(--accent-green)',
+                marginBottom: '8px'
+              }}>
+                {resultado.acertos}/{resultado.total}
               </div>
-              <div className="stat-ia">
-                <div className="text-3xl font-bold text-blue-400">{porcentagem}%</div>
-                <div className="text-gray-400 text-sm">Aproveitamento</div>
-              </div>
-              <div className="stat-ia">
-                <div className="text-3xl font-bold text-yellow-400">{resultado.nota}</div>
-                <div className="text-gray-400 text-sm">Nota TRI</div>
-              </div>
-              <div className="stat-ia">
-                <div className="text-3xl font-bold text-purple-400">{resultado.tempoMinutos}min</div>
-                <div className="text-gray-400 text-sm">Tempo</div>
+              <div className="stat-label" style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.9rem'
+              }}>
+                Acertos
               </div>
             </div>
 
-            <div className={`p-4 rounded-lg mb-6 ${porcentagem >= 70 ? 'bg-emerald-500/20 border border-emerald-500/50' : porcentagem >= 50 ? 'bg-yellow-500/20 border border-yellow-500/50' : 'bg-red-500/20 border border-red-500/50'}`}>
-              <p className="text-lg font-medium">
-                {porcentagem >= 70 ? '🌟 Excelente! Continue assim!' : porcentagem >= 50 ? '💪 Bom trabalho! Pode melhorar!' : '📚 Continue estudando! Você consegue!'}
-              </p>
+            <div className="stat-item" style={{
+              background: 'rgba(255,255,255,0.1)',
+              padding: '24px',
+              borderRadius: '12px',
+              border: '2px solid rgba(255,255,255,0.2)',
+              textAlign: 'center'
+            }}>
+              <div className="stat-number" style={{
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'var(--accent-blue)',
+                marginBottom: '8px'
+              }}>
+                {porcentagem}%
+              </div>
+              <div className="stat-label" style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.9rem'
+              }}>
+                Aproveitamento
+              </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button onClick={() => router.push('/enem/simulado')} className="btn-ia px-8">
-                🔄 Novo Simulado
-              </button>
-              <button onClick={() => router.push('/enem')} className="py-3 px-8 bg-white/10 hover:bg-white/20 rounded-lg transition-colors">
-                ← Voltar ao Menu
-              </button>
+            <div className="stat-item" style={{
+              background: 'rgba(255,255,255,0.1)',
+              padding: '24px',
+              borderRadius: '12px',
+              border: '2px solid rgba(255,255,255,0.2)',
+              textAlign: 'center'
+            }}>
+              <div className="stat-number" style={{
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'var(--accent-yellow)',
+                marginBottom: '8px'
+              }}>
+                {resultado.nota}
+              </div>
+              <div className="stat-label" style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.9rem'
+              }}>
+                Nota TRI
+              </div>
+            </div>
+
+            <div className="stat-item" style={{
+              background: 'rgba(255,255,255,0.1)',
+              padding: '24px',
+              borderRadius: '12px',
+              border: '2px solid rgba(255,255,255,0.2)',
+              textAlign: 'center'
+            }}>
+              <div className="stat-number" style={{
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'var(--accent-purple)',
+                marginBottom: '8px'
+              }}>
+                {resultado.tempoMinutos}min
+              </div>
+              <div className="stat-label" style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.9rem'
+              }}>
+                Tempo
+              </div>
             </div>
           </div>
 
-          <div className="card-ia p-6">
-            <h2 className="title-ia text-xl mb-6">📋 Revisão das Questões</h2>
-            <div className="space-y-6">
+          {/* Recompensas */}
+          <div className="card" style={{
+            background: 'linear-gradient(135deg, rgba(255,193,7,0.15) 0%, rgba(156,39,176,0.15) 100%)',
+            border: '2px solid var(--accent-yellow)',
+            borderRadius: '12px',
+            padding: '24px',
+            marginBottom: '40px',
+            textAlign: 'center'
+          }}>
+            <h3 className="card-title" style={{
+              fontSize: '1.4rem',
+              marginBottom: '16px',
+              color: 'var(--accent-yellow)'
+            }}>
+              Recompensas Ganhas
+            </h3>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '60px' }}>
+              <div>
+                <div style={{
+                  fontSize: '2rem',
+                  fontWeight: 'bold',
+                  color: 'var(--accent-yellow)',
+                  marginBottom: '4px'
+                }}>
+                  +{resultado.xpGanho}
+                </div>
+                <div style={{ color: 'var(--chalk-dim)', fontSize: '0.9rem' }}>XP</div>
+              </div>
+              <div>
+                <div style={{
+                  fontSize: '2rem',
+                  fontWeight: 'bold',
+                  color: 'var(--accent-purple)',
+                  marginBottom: '4px'
+                }}>
+                  +{resultado.pontosGanhos}
+                </div>
+                <div style={{ color: 'var(--chalk-dim)', fontSize: '0.9rem' }}>Pontos</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Mensagem motivacional */}
+          <div className="card" style={{
+            background: porcentagem >= 70
+              ? 'rgba(76,175,80,0.2)'
+              : porcentagem >= 50
+              ? 'rgba(255,193,7,0.2)'
+              : 'rgba(244,67,54,0.2)',
+            border: `2px solid ${
+              porcentagem >= 70
+                ? 'var(--accent-green)'
+                : porcentagem >= 50
+                ? 'var(--accent-yellow)'
+                : 'var(--accent-red)'
+            }`,
+            borderRadius: '12px',
+            padding: '20px',
+            marginBottom: '40px',
+            textAlign: 'center'
+          }}>
+            <p style={{ fontSize: '1.2rem', fontWeight: '500' }}>
+              {porcentagem >= 70
+                ? 'Excelente! Continue assim!'
+                : porcentagem >= 50
+                ? 'Bom trabalho! Pode melhorar!'
+                : 'Continue estudando! Você consegue!'}
+            </p>
+          </div>
+
+          {/* Botões de ação */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '16px',
+            justifyContent: 'center',
+            marginBottom: '40px'
+          }}>
+            <button
+              onClick={() => router.push('/enem/simulado')}
+              className="btn btn-yellow"
+              style={{
+                background: 'var(--accent-yellow)',
+                color: '#000',
+                padding: '14px 32px',
+                borderRadius: '8px',
+                border: 'none',
+                fontSize: '1.1rem',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Novo Simulado
+            </button>
+            <button
+              onClick={() => router.push('/enem')}
+              className="btn"
+              style={{
+                background: 'rgba(255,255,255,0.1)',
+                color: 'var(--chalk-white)',
+                padding: '14px 32px',
+                borderRadius: '8px',
+                border: '2px solid rgba(255,255,255,0.3)',
+                fontSize: '1.1rem',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Voltar ao Menu
+            </button>
+          </div>
+
+          {/* Gabarito Comentado */}
+          <div className="card" style={{
+            background: 'rgba(255,255,255,0.05)',
+            border: '2px solid rgba(255,255,255,0.15)',
+            borderRadius: '12px',
+            padding: '32px'
+          }}>
+            <h2 className="card-title" style={{
+              fontSize: '1.8rem',
+              marginBottom: '24px',
+              color: 'var(--chalk-white)',
+              borderBottom: '2px solid rgba(255,255,255,0.2)',
+              paddingBottom: '12px'
+            }}>
+              Gabarito Comentado
+            </h2>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               {resultado.detalhes.map((d: any, idx: number) => (
-                <div key={d.id} className={`p-4 rounded-lg border-2 ${d.acertou ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-red-500/10 border-red-500/30'}`}>
-                  <div className="flex items-start gap-3 mb-3">
-                    <span className={`px-3 py-1 rounded-full text-sm font-bold ${d.acertou ? 'bg-emerald-500 text-white' : 'bg-red-500 text-white'}`}>
+                <div
+                  key={d.id}
+                  className="chalkboard-card"
+                  style={{
+                    background: d.acertou
+                      ? 'rgba(76,175,80,0.1)'
+                      : 'rgba(244,67,54,0.1)',
+                    border: `2px solid ${d.acertou ? 'var(--accent-green)' : 'var(--accent-red)'}`,
+                    borderRadius: '12px',
+                    padding: '20px'
+                  }}
+                >
+                  {/* Tags da questão */}
+                  <div style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    gap: '12px',
+                    marginBottom: '16px'
+                  }}>
+                    <span className="badge" style={{
+                      background: d.acertou ? 'var(--accent-green)' : 'var(--accent-red)',
+                      color: '#fff',
+                      padding: '6px 12px',
+                      borderRadius: '20px',
+                      fontSize: '0.9rem',
+                      fontWeight: 'bold'
+                    }}>
                       {d.acertou ? '✓' : '✗'} Q{idx + 1}
                     </span>
-                    <span className="text-xs bg-white/10 px-2 py-1 rounded">{d.area}</span>
+                    <span className="badge" style={{
+                      background: 'rgba(255,255,255,0.1)',
+                      color: 'var(--chalk-white)',
+                      padding: '6px 12px',
+                      borderRadius: '20px',
+                      fontSize: '0.85rem'
+                    }}>
+                      {d.area}
+                    </span>
+                    {d.disciplina && (
+                      <span className="badge" style={{
+                        background: 'rgba(33,150,243,0.2)',
+                        color: 'var(--accent-blue)',
+                        padding: '6px 12px',
+                        borderRadius: '20px',
+                        fontSize: '0.85rem'
+                      }}>
+                        {d.disciplina}
+                      </span>
+                    )}
+                    {d.assunto && (
+                      <span className="badge" style={{
+                        background: 'rgba(156,39,176,0.2)',
+                        color: 'var(--accent-purple)',
+                        padding: '6px 12px',
+                        borderRadius: '20px',
+                        fontSize: '0.85rem'
+                      }}>
+                        {d.assunto}
+                      </span>
+                    )}
                   </div>
-                  <p className="text-white/90 mb-3">{d.enunciado}</p>
-                  <div className="space-y-2 mb-3">
+
+                  {/* Enunciado */}
+                  <p style={{
+                    color: 'var(--chalk-white)',
+                    marginBottom: '16px',
+                    lineHeight: '1.6'
+                  }}>
+                    {d.enunciado}
+                  </p>
+
+                  {/* Alternativas */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '16px' }}>
                     {d.alternativas.map((alt: string, i: number) => (
-                      <div key={i} className={`p-2 rounded text-sm ${i === d.correta ? 'bg-emerald-500/30 text-emerald-200' : i === d.respostaUsuario && !d.acertou ? 'bg-red-500/30 text-red-200' : 'text-white/60'}`}>
+                      <div
+                        key={i}
+                        style={{
+                          background: i === d.correta
+                            ? 'rgba(76,175,80,0.3)'
+                            : i === d.respostaUsuario && !d.acertou
+                            ? 'rgba(244,67,54,0.3)'
+                            : 'rgba(255,255,255,0.05)',
+                          border: `2px solid ${
+                            i === d.correta
+                              ? 'var(--accent-green)'
+                              : i === d.respostaUsuario && !d.acertou
+                              ? 'var(--accent-red)'
+                              : 'transparent'
+                          }`,
+                          borderRadius: '8px',
+                          padding: '12px',
+                          color: i === d.correta || (i === d.respostaUsuario && !d.acertou)
+                            ? 'var(--chalk-white)'
+                            : 'var(--chalk-dim)',
+                          fontSize: '0.95rem'
+                        }}
+                      >
                         {String.fromCharCode(65 + i)}) {alt}
-                        {i === d.correta && ' ✓'}
-                        {i === d.respostaUsuario && i !== d.correta && ' (sua resposta)'}
+                        {i === d.correta && ' ✓ Correta'}
+                        {i === d.respostaUsuario && i !== d.correta && ' ← Sua resposta'}
                       </div>
                     ))}
+                    {d.respostaUsuario === undefined && (
+                      <div style={{
+                        color: 'var(--accent-yellow)',
+                        fontSize: '0.9rem',
+                        fontStyle: 'italic',
+                        padding: '8px'
+                      }}>
+                        ⚠️ Questão não respondida
+                      </div>
+                    )}
                   </div>
-                  <div className="bg-blue-500/10 border border-blue-500/30 p-3 rounded-lg">
-                    <p className="text-blue-300 text-sm"><strong>💡 Explicação:</strong> {d.explicacao}</p>
+
+                  {/* Explicação */}
+                  <div style={{
+                    background: 'rgba(33,150,243,0.1)',
+                    border: '2px solid var(--accent-blue)',
+                    borderRadius: '8px',
+                    padding: '16px'
+                  }}>
+                    <p style={{
+                      color: 'var(--accent-blue)',
+                      fontSize: '0.95rem',
+                      lineHeight: '1.6'
+                    }}>
+                      <strong style={{ display: 'block', marginBottom: '8px' }}>💡 Explicação:</strong>
+                      {d.explicacao}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+
+          {/* Footer */}
+          <div className="footer" style={{
+            marginTop: '40px',
+            textAlign: 'center',
+            paddingTop: '24px',
+            borderTop: '2px solid rgba(255,255,255,0.1)'
+          }}>
+            <button
+              onClick={() => router.push('/enem')}
+              style={{
+                background: 'transparent',
+                color: 'var(--chalk-dim)',
+                border: 'none',
+                fontSize: '1rem',
+                cursor: 'pointer',
+                textDecoration: 'underline'
+              }}
+            >
+              ← Voltar ao menu principal
+            </button>
+          </div>
         </div>
-        <ChalkBackToTop />
       </div>
     );
   }
 
+  // ========== TELA DE LOADING ==========
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#0d5f3a] flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin text-4xl mb-4">🔄</div>
-          <p className="text-white">Carregando simulado...</p>
+      <div style={{
+        minHeight: '100vh',
+        background: 'var(--chalkboard-bg)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            fontSize: '3rem',
+            marginBottom: '16px',
+            animation: 'spin 1s linear infinite'
+          }}>
+            🔄
+          </div>
+          <p style={{ color: 'var(--chalk-white)', fontSize: '1.2rem' }}>
+            Carregando simulado...
+          </p>
         </div>
       </div>
     );
   }
 
-  if (error && !simulado) {
+  // ========== TELA DE ERRO ==========
+  if (error || !simulado) {
     return (
-      <div className="min-h-screen bg-[#0d5f3a] flex items-center justify-center px-4">
+      <div style={{
+        minHeight: '100vh',
+        background: 'var(--chalkboard-bg)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '16px'
+      }}>
         <FloatingNav />
-        <div className="card-ia max-w-md p-6 text-center">
-          <h2 className="text-red-400 text-xl font-bold mb-4">⚠️ Erro</h2>
-          <p className="text-white/80 mb-6">{error}</p>
-          <button onClick={() => router.push('/enem/simulado')} className="btn-ia">
-            Voltar para Início
+        <div className="card" style={{
+          maxWidth: '500px',
+          background: 'rgba(255,255,255,0.05)',
+          border: '2px solid rgba(255,255,255,0.15)',
+          borderRadius: '12px',
+          padding: '32px',
+          textAlign: 'center'
+        }}>
+          <h2 style={{
+            color: 'var(--accent-red)',
+            fontSize: '1.8rem',
+            fontWeight: 'bold',
+            marginBottom: '16px'
+          }}>
+            ⚠️ Erro
+          </h2>
+          <p style={{
+            color: 'var(--chalk-dim)',
+            marginBottom: '24px',
+            fontSize: '1.1rem'
+          }}>
+            {error || 'Simulado não encontrado'}
+          </p>
+          <button
+            onClick={() => router.push('/enem/simulado')}
+            className="btn btn-yellow"
+            style={{
+              background: 'var(--accent-yellow)',
+              color: '#000',
+              padding: '12px 24px',
+              borderRadius: '8px',
+              border: 'none',
+              fontSize: '1rem',
+              fontWeight: 'bold',
+              cursor: 'pointer'
+            }}
+          >
+            Iniciar Novo Simulado
           </button>
         </div>
       </div>
     );
   }
 
-  if (!simulado || !questaoAtual) return null;
+  if (!questaoAtual) return null;
 
   const progresso = Math.round((Object.keys(simulado.respostas).length / totalQuestoes) * 100);
 
+  // ========== TELA DO SIMULADO ==========
   return (
-    <div className="min-h-screen bg-[#0d5f3a] text-white py-6 pt-20 px-4">
+    <div style={{
+      minHeight: '100vh',
+      background: 'var(--chalkboard-bg)',
+      color: 'var(--chalk-white)',
+      paddingTop: '80px',
+      paddingBottom: '40px',
+      paddingLeft: '16px',
+      paddingRight: '16px'
+    }}>
       <FloatingNav />
 
-      <div className="max-w-4xl mx-auto mb-6">
-        <div className="card-ia p-4">
-          <div className="flex justify-between items-center mb-3">
-            <span className="text-white font-bold text-lg">
-              📝 Questão {indiceAtual + 1} de {totalQuestoes}
+      {/* Header com progresso */}
+      <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', marginBottom: '24px' }}>
+        <div className="card" style={{
+          background: 'rgba(255,255,255,0.05)',
+          border: '2px solid rgba(255,255,255,0.15)',
+          borderRadius: '12px',
+          padding: '20px'
+        }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginBottom: '16px',
+            flexWrap: 'wrap',
+            gap: '12px'
+          }}>
+            <span style={{
+              color: 'var(--chalk-white)',
+              fontWeight: 'bold',
+              fontSize: '1.2rem'
+            }}>
+              Questão {indiceAtual + 1} de {totalQuestoes}
             </span>
-            <span className="bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-sm">
-              {Object.keys(simulado.respostas).length} respondidas
-            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <span className="badge" style={{
+                background: modoCorrecao === 'imediato'
+                  ? 'rgba(255,193,7,0.2)'
+                  : 'rgba(156,39,176,0.2)',
+                color: modoCorrecao === 'imediato'
+                  ? 'var(--accent-yellow)'
+                  : 'var(--accent-purple)',
+                border: `1px solid ${modoCorrecao === 'imediato' ? 'var(--accent-yellow)' : 'var(--accent-purple)'}`,
+                padding: '6px 12px',
+                borderRadius: '20px',
+                fontSize: '0.85rem',
+                fontWeight: '500'
+              }}>
+                {modoCorrecao === 'imediato' ? '⚡ Correção Imediata' : '🎓 Gabarito no Final'}
+              </span>
+              <span className="badge" style={{
+                background: 'rgba(76,175,80,0.2)',
+                color: 'var(--accent-green)',
+                padding: '6px 12px',
+                borderRadius: '20px',
+                fontSize: '0.9rem'
+              }}>
+                {Object.keys(simulado.respostas).length} respondidas
+              </span>
+            </div>
           </div>
 
-          <div className="w-full bg-white/10 rounded-full h-3">
-            <div
-              className="bg-gradient-to-r from-emerald-500 to-emerald-400 h-3 rounded-full transition-all duration-300"
-              style={{ width: `${progresso}%` }}
-            ></div>
+          {/* Barra de progresso */}
+          <div style={{
+            width: '100%',
+            background: 'rgba(255,255,255,0.1)',
+            borderRadius: '20px',
+            height: '12px',
+            overflow: 'hidden'
+          }}>
+            <div style={{
+              background: 'linear-gradient(90deg, var(--accent-green) 0%, #4caf50 100%)',
+              height: '100%',
+              width: `${progresso}%`,
+              transition: 'width 0.3s ease',
+              borderRadius: '20px'
+            }}></div>
           </div>
 
-          <div className="flex justify-between items-center mt-2 text-sm">
-            <span className="text-white/60">{progresso}% completo</span>
-            <span className="text-yellow-400 font-medium">
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginTop: '8px',
+            fontSize: '0.9rem'
+          }}>
+            <span style={{ color: 'var(--chalk-dim)' }}>{progresso}% completo</span>
+            <span style={{ color: 'var(--accent-yellow)', fontWeight: '500' }}>
               {totalQuestoes - Object.keys(simulado.respostas).length} restantes
             </span>
           </div>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto">
-        <div className="card-ia p-6">
-          <div className="flex flex-wrap items-center gap-3 mb-6">
-            <span className="bg-emerald-500 text-white px-4 py-2 rounded-lg font-bold">
+      {/* Card da questão */}
+      <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="card" style={{
+          background: 'rgba(255,255,255,0.05)',
+          border: '2px solid rgba(255,255,255,0.15)',
+          borderRadius: '12px',
+          padding: '32px'
+        }}>
+          {/* Tags da questão */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            gap: '12px',
+            marginBottom: '24px'
+          }}>
+            <span className="badge" style={{
+              background: 'var(--accent-green)',
+              color: '#fff',
+              padding: '8px 16px',
+              borderRadius: '8px',
+              fontWeight: 'bold'
+            }}>
               Q{indiceAtual + 1}
             </span>
-            <span className="bg-blue-500/20 text-blue-400 px-4 py-2 rounded-lg text-sm">
+            <span className="badge" style={{
+              background: 'rgba(33,150,243,0.2)',
+              color: 'var(--accent-blue)',
+              padding: '8px 16px',
+              borderRadius: '8px',
+              fontSize: '0.9rem'
+            }}>
               {questaoAtual.area}
             </span>
+            {questaoAtual.disciplina && (
+              <span className="badge" style={{
+                background: 'rgba(156,39,176,0.2)',
+                color: 'var(--accent-purple)',
+                padding: '6px 12px',
+                borderRadius: '8px',
+                fontSize: '0.85rem'
+              }}>
+                {questaoAtual.disciplina}
+              </span>
+            )}
+            {questaoAtual.dificuldade && (
+              <span className="badge" style={{
+                background: questaoAtual.dificuldade === 'facil'
+                  ? 'rgba(76,175,80,0.2)'
+                  : questaoAtual.dificuldade === 'medio'
+                  ? 'rgba(255,193,7,0.2)'
+                  : 'rgba(244,67,54,0.2)',
+                color: questaoAtual.dificuldade === 'facil'
+                  ? 'var(--accent-green)'
+                  : questaoAtual.dificuldade === 'medio'
+                  ? 'var(--accent-yellow)'
+                  : 'var(--accent-red)',
+                padding: '6px 12px',
+                borderRadius: '8px',
+                fontSize: '0.85rem'
+              }}>
+                {questaoAtual.dificuldade}
+              </span>
+            )}
           </div>
 
-          <div className="mb-8">
-            <p className="text-white text-lg leading-relaxed">
+          {/* Enunciado */}
+          <div style={{ marginBottom: '32px' }}>
+            <p style={{
+              color: 'var(--chalk-white)',
+              fontSize: '1.15rem',
+              lineHeight: '1.8'
+            }}>
               {questaoAtual.enunciado}
             </p>
           </div>
 
-          <div className="border-t border-white/10 my-6"></div>
+          <div style={{
+            borderTop: '1px solid rgba(255,255,255,0.1)',
+            margin: '24px 0'
+          }}></div>
 
-          <div className="space-y-3 mb-8">
+          {/* Alternativas */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '32px' }}>
             {questaoAtual.alternativas.map((alternativa, index) => {
               const letra = String.fromCharCode(65 + index);
-              const estaMarcada = respostaMarcada === index;
+              const estaSelecionada = alternativaSelecionada === index;
+              const eCorreta = index === questaoAtual.correta;
+              const respostaUsuario = simulado.respostas[questaoAtual.id];
+              const usuarioRespondeu = respostaUsuario !== undefined;
+              const usuarioAcertou = respostaUsuario === questaoAtual.correta;
+
+              // Determina o estilo baseado no modo
+              let backgroundStyle = 'rgba(255,255,255,0.05)';
+              let borderStyle = 'rgba(255,255,255,0.2)';
+              let textColor = 'var(--chalk-white)';
+
+              if (modoCorrecao === 'imediato' && questaoConfirmada) {
+                // Modo imediato: mostrar resultado após confirmação
+                if (eCorreta) {
+                  backgroundStyle = 'rgba(76,175,80,0.3)';
+                  borderStyle = 'var(--accent-green)';
+                } else if (index === respostaUsuario && !usuarioAcertou) {
+                  backgroundStyle = 'rgba(244,67,54,0.3)';
+                  borderStyle = 'var(--accent-red)';
+                } else {
+                  backgroundStyle = 'rgba(255,255,255,0.05)';
+                  borderStyle = 'rgba(255,255,255,0.1)';
+                  textColor = 'var(--chalk-dim)';
+                }
+              } else {
+                // Ainda não confirmou ou modo final
+                if (estaSelecionada) {
+                  backgroundStyle = 'rgba(76,175,80,0.2)';
+                  borderStyle = 'var(--accent-green)';
+                }
+              }
 
               return (
                 <button
                   key={index}
-                  onClick={() => marcarAlternativa(index)}
-                  className={`w-full text-left p-4 rounded-xl border-2 transition-all ${
-                    estaMarcada
-                      ? 'bg-emerald-500/20 border-emerald-400 transform scale-[1.01]'
-                      : 'bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/40'
-                  }`}
+                  onClick={() => selecionarAlternativa(index)}
+                  disabled={questaoConfirmada}
+                  style={{
+                    width: '100%',
+                    textAlign: 'left',
+                    padding: '16px',
+                    borderRadius: '12px',
+                    border: `2px solid ${borderStyle}`,
+                    background: backgroundStyle,
+                    color: textColor,
+                    cursor: questaoConfirmada ? 'default' : 'pointer',
+                    transition: 'all 0.3s ease',
+                    display: 'flex',
+                    alignItems: 'flex-start',
+                    gap: '16px'
+                  }}
                 >
-                  <div className="flex items-start gap-4">
-                    <span className={`font-bold text-lg flex-shrink-0 ${
-                      estaMarcada ? 'text-emerald-400' : 'text-white/60'
-                    }`}>
-                      {letra})
-                    </span>
-                    <span className="flex-1 text-white/90 leading-relaxed">
-                      {alternativa}
-                    </span>
-                    {estaMarcada && (
-                      <span className="text-emerald-400 text-xl flex-shrink-0">✓</span>
-                    )}
-                  </div>
+                  <span style={{
+                    fontWeight: 'bold',
+                    fontSize: '1.1rem',
+                    flexShrink: 0,
+                    color: modoCorrecao === 'imediato' && questaoConfirmada
+                      ? eCorreta
+                        ? 'var(--accent-green)'
+                        : index === respostaUsuario
+                        ? 'var(--accent-red)'
+                        : 'rgba(255,255,255,0.4)'
+                      : estaSelecionada
+                      ? 'var(--accent-green)'
+                      : 'rgba(255,255,255,0.6)'
+                  }}>
+                    {letra})
+                  </span>
+                  <span style={{ flex: 1, lineHeight: '1.6' }}>
+                    {alternativa}
+                  </span>
+                  {/* Ícones de feedback */}
+                  {modoCorrecao === 'imediato' && questaoConfirmada && eCorreta && (
+                    <span style={{ color: 'var(--accent-green)', fontSize: '1.5rem', flexShrink: 0 }}>✓</span>
+                  )}
+                  {modoCorrecao === 'imediato' && questaoConfirmada && index === respostaUsuario && !usuarioAcertou && (
+                    <span style={{ color: 'var(--accent-red)', fontSize: '1.5rem', flexShrink: 0 }}>✗</span>
+                  )}
+                  {!questaoConfirmada && estaSelecionada && (
+                    <span style={{ color: 'var(--accent-green)', fontSize: '1.5rem', flexShrink: 0 }}>●</span>
+                  )}
                 </button>
               );
             })}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          {/* Explicação (modo imediato após confirmação) */}
+          {modoCorrecao === 'imediato' && questaoConfirmada && (
+            <div style={{
+              background: 'rgba(33,150,243,0.1)',
+              border: '2px solid var(--accent-blue)',
+              padding: '16px',
+              borderRadius: '12px',
+              marginBottom: '24px'
+            }}>
+              <h4 style={{
+                color: 'var(--accent-blue)',
+                fontWeight: 'bold',
+                marginBottom: '8px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}>
+                💡 Explicação
+              </h4>
+              <p style={{
+                color: 'var(--chalk-white)',
+                lineHeight: '1.6'
+              }}>
+                {questaoAtual.explicacao}
+              </p>
+            </div>
+          )}
+
+          {/* Botões de ação */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '12px',
+            marginBottom: '24px'
+          }}>
             <button
               onClick={() => irParaQuestao(indiceAtual - 1)}
               disabled={indiceAtual === 0}
-              className={`flex-1 py-3 px-6 rounded-lg font-medium transition-all ${
-                indiceAtual === 0
-                  ? 'bg-white/5 text-white/30 cursor-not-allowed'
-                  : 'bg-white/10 text-white hover:bg-white/20'
-              }`}
+              className="btn"
+              style={{
+                flex: '1 1 auto',
+                padding: '12px 24px',
+                borderRadius: '8px',
+                fontWeight: '600',
+                transition: 'all 0.3s ease',
+                background: indiceAtual === 0 ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.1)',
+                color: indiceAtual === 0 ? 'rgba(255,255,255,0.3)' : 'var(--chalk-white)',
+                border: `2px solid ${indiceAtual === 0 ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0.3)'}`,
+                cursor: indiceAtual === 0 ? 'not-allowed' : 'pointer'
+              }}
             >
               ← Anterior
             </button>
 
+            {/* Botão central: Confirmar (imediato) ou Marcar (final) */}
+            {modoCorrecao === 'imediato' && !questaoConfirmada && (
+              <button
+                onClick={confirmarResposta}
+                disabled={alternativaSelecionada === null}
+                className="btn btn-yellow"
+                style={{
+                  padding: '12px 24px',
+                  borderRadius: '8px',
+                  fontWeight: 'bold',
+                  transition: 'all 0.3s ease',
+                  background: alternativaSelecionada === null
+                    ? 'rgba(255,193,7,0.2)'
+                    : 'var(--accent-yellow)',
+                  color: alternativaSelecionada === null ? 'rgba(255,193,7,0.5)' : '#000',
+                  border: 'none',
+                  cursor: alternativaSelecionada === null ? 'not-allowed' : 'pointer'
+                }}
+              >
+                ✓ Confirmar Resposta
+              </button>
+            )}
+
+            {modoCorrecao === 'final' && alternativaSelecionada !== null && simulado.respostas[questaoAtual.id] !== alternativaSelecionada && (
+              <button
+                onClick={marcarResposta}
+                className="btn"
+                style={{
+                  padding: '12px 24px',
+                  background: 'rgba(255,193,7,0.2)',
+                  border: '2px solid var(--accent-yellow)',
+                  color: 'var(--accent-yellow)',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+              >
+                💾 Salvar Resposta
+              </button>
+            )}
+
             <button
               onClick={finalizarSimulado}
-              className="py-3 px-6 bg-red-500/20 border border-red-500/50 text-red-400 rounded-lg hover:bg-red-500/30 transition-all"
+              className="btn"
+              style={{
+                padding: '12px 24px',
+                background: 'rgba(244,67,54,0.2)',
+                border: '2px solid var(--accent-red)',
+                color: 'var(--accent-red)',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}
             >
               🏁 Finalizar
             </button>
 
             <button
-              onClick={() => irParaQuestao(indiceAtual + 1)}
+              onClick={proximaQuestao}
               disabled={indiceAtual === totalQuestoes - 1}
-              className={`flex-1 py-3 px-6 rounded-lg font-medium transition-all ${
-                indiceAtual === totalQuestoes - 1
-                  ? 'bg-white/5 text-white/30 cursor-not-allowed'
-                  : 'btn-ia'
-              }`}
+              className="btn btn-yellow"
+              style={{
+                flex: '1 1 auto',
+                padding: '12px 24px',
+                borderRadius: '8px',
+                fontWeight: '600',
+                transition: 'all 0.3s ease',
+                background: indiceAtual === totalQuestoes - 1
+                  ? 'rgba(255,255,255,0.05)'
+                  : 'var(--accent-yellow)',
+                color: indiceAtual === totalQuestoes - 1 ? 'rgba(255,255,255,0.3)' : '#000',
+                border: indiceAtual === totalQuestoes - 1 ? '2px solid rgba(255,255,255,0.1)' : 'none',
+                cursor: indiceAtual === totalQuestoes - 1 ? 'not-allowed' : 'pointer'
+              }}
             >
               Próxima →
             </button>
           </div>
 
-          <div className="border-t border-white/10 my-6"></div>
+          <div style={{
+            borderTop: '1px solid rgba(255,255,255,0.1)',
+            margin: '24px 0'
+          }}></div>
 
+          {/* Navegação rápida */}
           <div>
-            <p className="text-white/70 text-sm mb-4 font-semibold">
+            <p style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.9rem',
+              marginBottom: '16px',
+              fontWeight: '600'
+            }}>
               🧭 Navegação Rápida
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '8px'
+            }}>
               {simulado.questoes.map((q, idx) => {
                 const respondida = simulado.respostas[q.id] !== undefined;
+                const confirmada = simulado.respostasConfirmadas?.[q.id] === true;
                 const atual = idx === indiceAtual;
+
+                // No modo imediato, mostra verde/vermelho se já confirmou
+                let bgColor = 'rgba(255,255,255,0.1)';
+                let textColor = 'rgba(255,255,255,0.6)';
+                let borderColor = 'transparent';
+                let scale = '1';
+
+                if (atual) {
+                  bgColor = 'var(--accent-green)';
+                  textColor = '#fff';
+                  scale = '1.1';
+                } else if (modoCorrecao === 'imediato' && confirmada) {
+                  const acertou = simulado.respostas[q.id] === q.correta;
+                  bgColor = acertou ? 'rgba(76,175,80,0.5)' : 'rgba(244,67,54,0.5)';
+                  textColor = acertou ? 'var(--accent-green)' : 'var(--accent-red)';
+                } else if (respondida) {
+                  bgColor = 'rgba(76,175,80,0.3)';
+                  textColor = 'var(--accent-green)';
+                }
 
                 return (
                   <button
                     key={q.id}
                     onClick={() => irParaQuestao(idx)}
-                    className={`w-10 h-10 rounded-lg font-bold transition-all ${
-                      atual
-                        ? 'bg-emerald-500 text-white transform scale-110'
-                        : respondida
-                        ? 'bg-emerald-500/30 text-emerald-300 hover:bg-emerald-500/50'
-                        : 'bg-white/10 text-white/60 hover:bg-white/20'
-                    }`}
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      borderRadius: '8px',
+                      fontWeight: 'bold',
+                      transition: 'all 0.3s ease',
+                      background: bgColor,
+                      color: textColor,
+                      border: `2px solid ${borderColor}`,
+                      cursor: 'pointer',
+                      transform: `scale(${scale})`
+                    }}
                   >
                     {idx + 1}
                   </button>
@@ -408,7 +1185,6 @@ export default function SimuladoPlayerPage() {
           </div>
         </div>
       </div>
-      <ChalkBackToTop />
     </div>
   );
 }

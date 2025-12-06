@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Sala {
@@ -355,63 +354,112 @@ export default function ArenaPage() {
   // TELA MENU
   if (tela === 'menu') {
     return (
-      <div className="min-h-screen bg-[#0D1F22] text-white py-8 px-4">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
         <FloatingNav />
-        <div className="max-w-4xl mx-auto pt-16">
-          <div className="text-center mb-12">
-            <h1 className="title-ia text-4xl mb-4">🏟️ Arena de Desafios</h1>
-            <p className="text-white/70 text-lg">Dispute batalhas de conhecimento com amigos!</p>
+
+        <div style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '4rem' }}>
+          <div className="header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--chalk-white)', textShadow: '2px 2px 0 rgba(0,0,0,0.3)' }}>
+              🏟️ Arena de Desafios
+            </h1>
+            <p style={{ color: 'var(--chalk-dim)', fontSize: '1.125rem' }}>
+              Dispute batalhas de conhecimento com amigos!
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="card-ia p-8 hover:scale-105 transition cursor-pointer" onClick={() => setTela('criar')}>
-              <div className="text-6xl mb-4 text-center">🎯</div>
-              <h2 className="text-2xl font-bold text-center mb-2">Criar Sala</h2>
-              <p className="text-white/60 text-center">Crie uma arena e convide amigos para disputar!</p>
+          <div className="cards-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
+            <div
+              className="chalkboard-card"
+              onClick={() => setTela('criar')}
+              style={{ cursor: 'pointer', transition: 'transform 0.2s', textAlign: 'center', padding: '2rem' }}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🎯</div>
+              <h2 className="card-title" style={{ marginBottom: '0.5rem' }}>Criar Sala</h2>
+              <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                Crie uma arena e convide amigos para disputar!
+              </p>
             </div>
 
-            <div className="card-ia p-8 hover:scale-105 transition cursor-pointer" onClick={() => setTela('entrar')}>
-              <div className="text-6xl mb-4 text-center">🚪</div>
-              <h2 className="text-2xl font-bold text-center mb-2">Entrar em Sala</h2>
-              <p className="text-white/60 text-center">Use um codigo para entrar em uma arena existente!</p>
+            <div
+              className="chalkboard-card"
+              onClick={() => setTela('entrar')}
+              style={{ cursor: 'pointer', transition: 'transform 0.2s', textAlign: 'center', padding: '2rem' }}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🚪</div>
+              <h2 className="card-title" style={{ marginBottom: '0.5rem' }}>Entrar em Sala</h2>
+              <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                Use um codigo para entrar em uma arena existente!
+              </p>
             </div>
           </div>
 
-          <div className="card-ia p-6">
-            <h3 className="text-xl font-bold mb-4 flex items-center gap-2">🎮 Modos de Jogo</h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-white/5 p-4 rounded-xl">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-2xl">💎</span>
-                  <span className="font-bold">Show do Milhao</span>
+          <div className="card" style={{ padding: '1.5rem' }}>
+            <h3 className="card-title" style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              🎮 Modos de Jogo
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+              <div style={{ background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                  <span style={{ fontSize: '1.5rem' }}>💎</span>
+                  <span style={{ fontWeight: 'bold', color: 'var(--chalk-white)' }}>Show do Milhao</span>
                 </div>
-                <p className="text-white/60 text-sm">12 perguntas com dificuldade crescente. Use ajudas estrategicamente!</p>
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                  12 perguntas com dificuldade crescente. Use ajudas estrategicamente!
+                </p>
               </div>
-              <div className="bg-white/5 p-4 rounded-xl">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-2xl">⚡</span>
-                  <span className="font-bold">Modo Rapido</span>
+
+              <div style={{ background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                  <span style={{ fontSize: '1.5rem' }}>⚡</span>
+                  <span style={{ fontWeight: 'bold', color: 'var(--chalk-white)' }}>Modo Rapido</span>
                 </div>
-                <p className="text-white/60 text-sm">5 questoes em ritmo acelerado. Ideal para desafios rapidos!</p>
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                  5 questoes em ritmo acelerado. Ideal para desafios rapidos!
+                </p>
               </div>
-              <div className="bg-white/5 p-4 rounded-xl">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-2xl">🏃</span>
-                  <span className="font-bold">Maratona</span>
+
+              <div style={{ background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🏃</span>
+                  <span style={{ fontWeight: 'bold', color: 'var(--chalk-white)' }}>Maratona</span>
                 </div>
-                <p className="text-white/60 text-sm">20 questoes para testar sua resistencia intelectual!</p>
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                  20 questoes para testar sua resistencia intelectual!
+                </p>
               </div>
-              <div className="bg-white/5 p-4 rounded-xl">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-2xl">💀</span>
-                  <span className="font-bold">Eliminatorio</span>
+
+              <div style={{ background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                  <span style={{ fontSize: '1.5rem' }}>💀</span>
+                  <span style={{ fontWeight: 'bold', color: 'var(--chalk-white)' }}>Eliminatorio</span>
                 </div>
-                <p className="text-white/60 text-sm">Errou? Esta fora! Sobreviva o maximo possivel!</p>
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                  Errou? Esta fora! Sobreviva o maximo possivel!
+                </p>
               </div>
             </div>
+          </div>
+
+          <div className="footer" style={{ marginTop: '3rem', textAlign: 'center' }}>
+            <a
+              href="/enem"
+              style={{
+                color: 'var(--accent-yellow)',
+                textDecoration: 'none',
+                fontSize: '1rem',
+                transition: 'opacity 0.2s'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.opacity = '0.8'}
+              onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
+            >
+              ← Voltar ao Dashboard ENEM
+            </a>
           </div>
         </div>
-        <ChalkBackToTop />
       </div>
     );
   }
@@ -419,36 +467,63 @@ export default function ArenaPage() {
   // TELA CRIAR SALA
   if (tela === 'criar') {
     return (
-      <div className="min-h-screen bg-[#0D1F22] text-white py-8 px-4">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
         <FloatingNav />
-        <div className="max-w-2xl mx-auto pt-16">
-          <button onClick={() => setTela('menu')} className="mb-6 text-white/60 hover:text-white flex items-center gap-2">
+
+        <div style={{ maxWidth: '600px', margin: '0 auto', paddingTop: '4rem' }}>
+          <button
+            onClick={() => setTela('menu')}
+            className="btn"
+            style={{ marginBottom: '1.5rem' }}
+          >
             ← Voltar ao menu
           </button>
 
-          <div className="card-ia p-8">
-            <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">🎯 Criar Nova Arena</h2>
+          <div className="card" style={{ padding: '2rem' }}>
+            <h2 className="card-title" style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+              🎯 Criar Nova Arena
+            </h2>
 
-            <div className="space-y-6">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               <div>
-                <label className="block text-white/80 mb-2">Seu Nome</label>
+                <label style={{ display: 'block', color: 'var(--chalk-dim)', marginBottom: '0.5rem' }}>
+                  Seu Nome
+                </label>
                 <input
                   type="text"
                   value={nomeJogador}
                   onChange={(e) => setNomeJogador(e.target.value)}
                   placeholder="Digite seu nome..."
-                  className="input-ia w-full"
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem',
+                    background: 'rgba(255,255,255,0.1)',
+                    border: '2px solid rgba(255,255,255,0.2)',
+                    borderRadius: '0.5rem',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1rem'
+                  }}
                 />
               </div>
 
               <div>
-                <label className="block text-white/80 mb-2">Escolha seu Avatar</label>
-                <div className="flex flex-wrap gap-2">
+                <label style={{ display: 'block', color: 'var(--chalk-dim)', marginBottom: '0.5rem' }}>
+                  Escolha seu Avatar
+                </label>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                   {AVATARS.map(av => (
                     <button
                       key={av}
                       onClick={() => setAvatarJogador(av)}
-                      className={`text-3xl p-2 rounded-lg transition ${avatarJogador === av ? 'bg-yellow-500/30 ring-2 ring-yellow-400' : 'bg-white/10 hover:bg-white/20'}`}
+                      style={{
+                        fontSize: '1.875rem',
+                        padding: '0.5rem',
+                        borderRadius: '0.5rem',
+                        background: avatarJogador === av ? 'rgba(255, 193, 7, 0.3)' : 'rgba(255,255,255,0.1)',
+                        border: avatarJogador === av ? '2px solid var(--accent-yellow)' : '2px solid transparent',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s'
+                      }}
                     >
                       {av}
                     </button>
@@ -457,19 +532,31 @@ export default function ArenaPage() {
               </div>
 
               <div>
-                <label className="block text-white/80 mb-2">Nome da Sala (opcional)</label>
+                <label style={{ display: 'block', color: 'var(--chalk-dim)', marginBottom: '0.5rem' }}>
+                  Nome da Sala (opcional)
+                </label>
                 <input
                   type="text"
                   value={nomeSala}
                   onChange={(e) => setNomeSala(e.target.value)}
                   placeholder="Ex: Desafio da Turma 3B"
-                  className="input-ia w-full"
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem',
+                    background: 'rgba(255,255,255,0.1)',
+                    border: '2px solid rgba(255,255,255,0.2)',
+                    borderRadius: '0.5rem',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1rem'
+                  }}
                 />
               </div>
 
               <div>
-                <label className="block text-white/80 mb-2">Tipo de Sala</label>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <label style={{ display: 'block', color: 'var(--chalk-dim)', marginBottom: '0.5rem' }}>
+                  Tipo de Sala
+                </label>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '0.75rem' }}>
                   {[
                     { tipo: '1x1' as const, label: '1x1', desc: '2 jogadores' },
                     { tipo: 'dupla' as const, label: 'Duplas', desc: '4 jogadores' },
@@ -480,18 +567,28 @@ export default function ArenaPage() {
                     <button
                       key={opt.tipo}
                       onClick={() => setTipoSala(opt.tipo)}
-                      className={`p-3 rounded-xl transition ${tipoSala === opt.tipo ? 'bg-emerald-500 border-emerald-400' : 'bg-white/10 hover:bg-white/20'} border-2 border-transparent`}
+                      style={{
+                        padding: '0.75rem',
+                        borderRadius: '0.75rem',
+                        background: tipoSala === opt.tipo ? 'var(--accent-green)' : 'rgba(255,255,255,0.1)',
+                        border: '2px solid ' + (tipoSala === opt.tipo ? 'var(--accent-green)' : 'transparent'),
+                        cursor: 'pointer',
+                        transition: 'all 0.2s',
+                        color: 'var(--chalk-white)'
+                      }}
                     >
-                      <div className="font-bold">{opt.label}</div>
-                      <div className="text-xs text-white/60">{opt.desc}</div>
+                      <div style={{ fontWeight: 'bold' }}>{opt.label}</div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--chalk-dim)' }}>{opt.desc}</div>
                     </button>
                   ))}
                 </div>
               </div>
 
               <div>
-                <label className="block text-white/80 mb-2">Modo de Jogo</label>
-                <div className="grid grid-cols-2 gap-3">
+                <label style={{ display: 'block', color: 'var(--chalk-dim)', marginBottom: '0.5rem' }}>
+                  Modo de Jogo
+                </label>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.75rem' }}>
                   {[
                     { modo: 'show-milhao' as const, label: '💎 Show do Milhao', rounds: 12 },
                     { modo: 'rapido' as const, label: '⚡ Rapido', rounds: 5 },
@@ -501,22 +598,33 @@ export default function ArenaPage() {
                     <button
                       key={opt.modo}
                       onClick={() => setModoJogo(opt.modo)}
-                      className={`p-3 rounded-xl transition ${modoJogo === opt.modo ? 'bg-emerald-500 border-emerald-400' : 'bg-white/10 hover:bg-white/20'} border-2 border-transparent`}
+                      style={{
+                        padding: '0.75rem',
+                        borderRadius: '0.75rem',
+                        background: modoJogo === opt.modo ? 'var(--accent-green)' : 'rgba(255,255,255,0.1)',
+                        border: '2px solid ' + (modoJogo === opt.modo ? 'var(--accent-green)' : 'transparent'),
+                        cursor: 'pointer',
+                        transition: 'all 0.2s',
+                        color: 'var(--chalk-white)'
+                      }}
                     >
-                      <div className="font-bold">{opt.label}</div>
-                      <div className="text-xs text-white/60">{opt.rounds} rounds</div>
+                      <div style={{ fontWeight: 'bold' }}>{opt.label}</div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--chalk-dim)' }}>{opt.rounds} rounds</div>
                     </button>
                   ))}
                 </div>
               </div>
 
-              <button onClick={criarSala} className="btn-ia w-full py-4 text-lg">
+              <button
+                onClick={criarSala}
+                className="btn btn-yellow"
+                style={{ width: '100%', padding: '1rem', fontSize: '1.125rem' }}
+              >
                 🚀 Criar Arena
               </button>
             </div>
           </div>
         </div>
-        <ChalkBackToTop />
       </div>
     );
   }
@@ -524,36 +632,63 @@ export default function ArenaPage() {
   // TELA ENTRAR NA SALA
   if (tela === 'entrar') {
     return (
-      <div className="min-h-screen bg-[#0D1F22] text-white py-8 px-4">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
         <FloatingNav />
-        <div className="max-w-md mx-auto pt-16">
-          <button onClick={() => setTela('menu')} className="mb-6 text-white/60 hover:text-white flex items-center gap-2">
+
+        <div style={{ maxWidth: '500px', margin: '0 auto', paddingTop: '4rem' }}>
+          <button
+            onClick={() => setTela('menu')}
+            className="btn"
+            style={{ marginBottom: '1.5rem' }}
+          >
             ← Voltar ao menu
           </button>
 
-          <div className="card-ia p-8">
-            <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">🚪 Entrar em Arena</h2>
+          <div className="card" style={{ padding: '2rem' }}>
+            <h2 className="card-title" style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+              🚪 Entrar em Arena
+            </h2>
 
-            <div className="space-y-6">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               <div>
-                <label className="block text-white/80 mb-2">Seu Nome</label>
+                <label style={{ display: 'block', color: 'var(--chalk-dim)', marginBottom: '0.5rem' }}>
+                  Seu Nome
+                </label>
                 <input
                   type="text"
                   value={nomeJogador}
                   onChange={(e) => setNomeJogador(e.target.value)}
                   placeholder="Digite seu nome..."
-                  className="input-ia w-full"
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem',
+                    background: 'rgba(255,255,255,0.1)',
+                    border: '2px solid rgba(255,255,255,0.2)',
+                    borderRadius: '0.5rem',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1rem'
+                  }}
                 />
               </div>
 
               <div>
-                <label className="block text-white/80 mb-2">Escolha seu Avatar</label>
-                <div className="flex flex-wrap gap-2">
+                <label style={{ display: 'block', color: 'var(--chalk-dim)', marginBottom: '0.5rem' }}>
+                  Escolha seu Avatar
+                </label>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                   {AVATARS.map(av => (
                     <button
                       key={av}
                       onClick={() => setAvatarJogador(av)}
-                      className={`text-3xl p-2 rounded-lg transition ${avatarJogador === av ? 'bg-yellow-500/30 ring-2 ring-yellow-400' : 'bg-white/10 hover:bg-white/20'}`}
+                      style={{
+                        fontSize: '1.875rem',
+                        padding: '0.5rem',
+                        borderRadius: '0.5rem',
+                        background: avatarJogador === av ? 'rgba(255, 193, 7, 0.3)' : 'rgba(255,255,255,0.1)',
+                        border: avatarJogador === av ? '2px solid var(--accent-yellow)' : '2px solid transparent',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s'
+                      }}
                     >
                       {av}
                     </button>
@@ -562,24 +697,39 @@ export default function ArenaPage() {
               </div>
 
               <div>
-                <label className="block text-white/80 mb-2">Codigo da Sala</label>
+                <label style={{ display: 'block', color: 'var(--chalk-dim)', marginBottom: '0.5rem' }}>
+                  Codigo da Sala
+                </label>
                 <input
                   type="text"
                   value={codigoEntrada}
                   onChange={(e) => setCodigoEntrada(e.target.value.toUpperCase())}
                   placeholder="Ex: ENEM-X7D4"
-                  className="input-ia w-full text-center text-2xl tracking-widest"
                   maxLength={9}
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem',
+                    background: 'rgba(255,255,255,0.1)',
+                    border: '2px solid rgba(255,255,255,0.2)',
+                    borderRadius: '0.5rem',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1.5rem',
+                    textAlign: 'center',
+                    letterSpacing: '0.1em'
+                  }}
                 />
               </div>
 
-              <button onClick={entrarSala} className="btn-ia w-full py-4 text-lg">
+              <button
+                onClick={entrarSala}
+                className="btn btn-yellow"
+                style={{ width: '100%', padding: '1rem', fontSize: '1.125rem' }}
+              >
                 🎯 Entrar na Arena
               </button>
             </div>
           </div>
         </div>
-        <ChalkBackToTop />
       </div>
     );
   }
@@ -587,105 +737,161 @@ export default function ArenaPage() {
   // TELA SALA (LOBBY)
   if (tela === 'sala' && sala) {
     return (
-      <div className="min-h-screen bg-[#0D1F22] text-white py-8 px-4">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
         <FloatingNav />
-        <div className="max-w-4xl mx-auto pt-16">
-          <div className="grid md:grid-cols-3 gap-6">
+
+        <div style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '4rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
             {/* Info da Sala */}
-            <div className="md:col-span-2 space-y-4">
-              <div className="card-ia p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-xl font-bold">{sala.nome}</h2>
-                  <span className={`px-3 py-1 rounded-full text-sm font-bold ${
-                    sala.status === 'aguardando' ? 'bg-yellow-500/20 text-yellow-300' :
-                    sala.status === 'em_andamento' ? 'bg-green-500/20 text-green-300' :
-                    'bg-gray-500/20 text-gray-300'
-                  }`}>
+            <div style={{ gridColumn: 'span 2' }}>
+              <div className="card" style={{ padding: '1.5rem', marginBottom: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
+                  <h2 className="card-title">{sala.nome}</h2>
+                  <span className="badge" style={{
+                    background: sala.status === 'aguardando' ? 'rgba(255, 193, 7, 0.2)' :
+                               sala.status === 'em_andamento' ? 'rgba(76, 175, 80, 0.2)' :
+                               'rgba(158, 158, 158, 0.2)',
+                    color: sala.status === 'aguardando' ? 'var(--accent-yellow)' :
+                          sala.status === 'em_andamento' ? 'var(--accent-green)' :
+                          'var(--chalk-dim)'
+                  }}>
                     {sala.status === 'aguardando' ? '⏳ Aguardando' :
                      sala.status === 'em_andamento' ? '🎮 Em Jogo' : '🏁 Finalizado'}
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mb-4">
-                  <div className="bg-white/5 p-3 rounded-xl text-center">
-                    <div className="text-2xl font-bold text-yellow-300">{sala.codigo}</div>
-                    <div className="text-xs text-white/60">Codigo da Sala</div>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem', marginBottom: '1rem' }}>
+                  <div style={{ background: 'rgba(255,255,255,0.05)', padding: '0.75rem', borderRadius: '0.75rem', textAlign: 'center' }}>
+                    <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--accent-yellow)' }}>
+                      {sala.codigo}
+                    </div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--chalk-dim)' }}>Codigo da Sala</div>
                   </div>
-                  <div className="bg-white/5 p-3 rounded-xl text-center">
-                    <div className="text-2xl font-bold text-emerald-400">{sala.participantes.length}/{sala.maxParticipantes}</div>
-                    <div className="text-xs text-white/60">Participantes</div>
+                  <div style={{ background: 'rgba(255,255,255,0.05)', padding: '0.75rem', borderRadius: '0.75rem', textAlign: 'center' }}>
+                    <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--accent-green)' }}>
+                      {sala.participantes.length}/{sala.maxParticipantes}
+                    </div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--chalk-dim)' }}>Participantes</div>
                   </div>
                 </div>
 
-                <button onClick={copiarConvite} className="w-full py-3 bg-white/10 hover:bg-white/20 rounded-xl transition flex items-center justify-center gap-2">
+                <button
+                  onClick={copiarConvite}
+                  className="btn"
+                  style={{ width: '100%', padding: '0.75rem' }}
+                >
                   📋 Copiar Convite
                 </button>
               </div>
 
               {/* Chat */}
-              <div className="card-ia p-4" style={{ height: '300px' }}>
-                <div className="h-full flex flex-col">
-                  <h3 className="font-bold mb-2 flex items-center gap-2">💬 Chat da Arena</h3>
-                  <div className="flex-1 overflow-y-auto space-y-2 mb-2">
-                    {mensagens.map(msg => (
-                      <div key={msg.id} className={`p-2 rounded-lg text-sm ${
-                        msg.tipo === 'host' ? 'bg-yellow-500/20 border-l-4 border-yellow-500' :
-                        msg.tipo === 'narrador' ? 'bg-purple-500/20 border-l-4 border-purple-500 italic' :
-                        msg.tipo === 'rival' ? 'bg-red-500/20 border-l-4 border-red-500' :
-                        msg.tipo === 'sistema' ? 'bg-blue-500/20 border-l-4 border-blue-500' :
-                        'bg-white/10'
-                      }`}>
-                        <span className="font-bold">{msg.autor}:</span> {msg.conteudo}
-                      </div>
-                    ))}
-                    <div ref={messagesEndRef} />
-                  </div>
+              <div className="card" style={{ padding: '1rem', height: '300px', display: 'flex', flexDirection: 'column' }}>
+                <h3 className="card-title" style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  💬 Chat da Arena
+                </h3>
+                <div style={{ flex: 1, overflowY: 'auto', marginBottom: '0.5rem' }}>
+                  {mensagens.map(msg => (
+                    <div
+                      key={msg.id}
+                      style={{
+                        padding: '0.5rem',
+                        borderRadius: '0.5rem',
+                        fontSize: '0.875rem',
+                        marginBottom: '0.5rem',
+                        background: msg.tipo === 'host' ? 'rgba(255, 193, 7, 0.2)' :
+                                   msg.tipo === 'narrador' ? 'rgba(156, 39, 176, 0.2)' :
+                                   msg.tipo === 'rival' ? 'rgba(244, 67, 54, 0.2)' :
+                                   msg.tipo === 'sistema' ? 'rgba(33, 150, 243, 0.2)' :
+                                   'rgba(255,255,255,0.1)',
+                        borderLeft: `4px solid ${
+                          msg.tipo === 'host' ? 'var(--accent-yellow)' :
+                          msg.tipo === 'narrador' ? '#9C27B0' :
+                          msg.tipo === 'rival' ? '#F44336' :
+                          msg.tipo === 'sistema' ? '#2196F3' :
+                          'transparent'
+                        }`,
+                        fontStyle: msg.tipo === 'narrador' ? 'italic' : 'normal'
+                      }}
+                    >
+                      <span style={{ fontWeight: 'bold' }}>{msg.autor}:</span> {msg.conteudo}
+                    </div>
+                  ))}
+                  <div ref={messagesEndRef} />
                 </div>
               </div>
             </div>
 
             {/* Participantes e Acoes */}
-            <div className="space-y-4">
-              <div className="card-ia p-4">
-                <h3 className="font-bold mb-3 flex items-center gap-2">👥 Participantes</h3>
-                <div className="space-y-2">
+            <div>
+              <div className="card" style={{ padding: '1rem', marginBottom: '1rem' }}>
+                <h3 className="card-title" style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  👥 Participantes
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {sala.participantes.map((p, i) => (
-                    <div key={p.id} className="flex items-center gap-3 p-2 bg-white/5 rounded-lg">
-                      <span className="text-2xl">{p.avatar}</span>
-                      <div className="flex-1">
-                        <div className="font-medium">{p.nome}</div>
-                        <div className="text-xs text-yellow-300">{p.fp} FP</div>
+                    <div
+                      key={p.id}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.75rem',
+                        padding: '0.5rem',
+                        background: 'rgba(255,255,255,0.05)',
+                        borderRadius: '0.5rem'
+                      }}
+                    >
+                      <span style={{ fontSize: '1.5rem' }}>{p.avatar}</span>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 'bold', color: 'var(--chalk-white)' }}>{p.nome}</div>
+                        <div style={{ fontSize: '0.75rem', color: 'var(--accent-yellow)' }}>{p.fp} FP</div>
                       </div>
-                      {i === 0 && <span className="text-xs bg-yellow-500/30 px-2 py-1 rounded">👑 Host</span>}
+                      {i === 0 && (
+                        <span className="badge" style={{ fontSize: '0.75rem' }}>
+                          👑 Host
+                        </span>
+                      )}
                     </div>
                   ))}
                 </div>
               </div>
 
               {sala.status === 'aguardando' && (
-                <button onClick={iniciarJogo} className="btn-ia w-full py-4 text-lg">
+                <button
+                  onClick={iniciarJogo}
+                  className="btn btn-yellow"
+                  style={{ width: '100%', padding: '1rem', fontSize: '1.125rem', marginBottom: '1rem' }}
+                >
                   🚀 Iniciar Jogo!
                 </button>
               )}
 
               {sala.status === 'finalizado' && (
-                <div className="card-ia p-4 text-center">
-                  <div className="text-4xl mb-2">🏆</div>
-                  <div className="text-2xl font-bold text-yellow-300">{fpGanho} FP</div>
-                  <div className="text-white/60">conquistados!</div>
-                  <button onClick={() => setTela('menu')} className="btn-ia w-full mt-4">
+                <div className="card" style={{ padding: '1rem', textAlign: 'center', marginBottom: '1rem' }}>
+                  <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🏆</div>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--accent-yellow)', marginBottom: '0.25rem' }}>
+                    {fpGanho} FP
+                  </div>
+                  <div style={{ color: 'var(--chalk-dim)' }}>conquistados!</div>
+                  <button
+                    onClick={() => setTela('menu')}
+                    className="btn btn-yellow"
+                    style={{ width: '100%', marginTop: '1rem' }}
+                  >
                     Voltar ao Menu
                   </button>
                 </div>
               )}
 
-              <button onClick={() => setTela('menu')} className="w-full py-3 bg-white/10 hover:bg-white/20 rounded-xl transition">
+              <button
+                onClick={() => setTela('menu')}
+                className="btn"
+                style={{ width: '100%', padding: '0.75rem' }}
+              >
                 ← Sair da Sala
               </button>
             </div>
           </div>
         </div>
-        <ChalkBackToTop />
       </div>
     );
   }
@@ -693,49 +899,64 @@ export default function ArenaPage() {
   // TELA JOGO
   if (tela === 'jogo' && questaoAtual && sala) {
     return (
-      <div className="min-h-screen bg-[#0D1F22] text-white py-8 px-4">
-        <div className="max-w-3xl mx-auto">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           {/* Header do Jogo */}
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-4">
-              <div className="text-center">
-                <div className="text-xs text-white/60">Round</div>
-                <div className="text-2xl font-bold">{questaoIndex + 1}/{questoesJogo.length}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-xs text-white/60">FP</div>
-                <div className="text-2xl font-bold text-yellow-300">{fpGanho}</div>
-              </div>
-              {streak >= 2 && (
-                <div className="text-center">
-                  <div className="text-xs text-white/60">Streak</div>
-                  <div className="text-2xl font-bold text-orange-400">🔥{streak}</div>
-                </div>
-              )}
+          <div className="stats-bar" style={{ marginBottom: '1.5rem' }}>
+            <div className="stat-item">
+              <div className="stat-label">Round</div>
+              <div className="stat-number">{questaoIndex + 1}/{questoesJogo.length}</div>
             </div>
-
-            <div className={`text-4xl font-bold ${tempoRestante <= 10 ? 'text-red-400 animate-pulse' : 'text-white'}`}>
-              ⏱️ {tempoRestante}s
+            <div className="stat-item">
+              <div className="stat-label">FP</div>
+              <div className="stat-number" style={{ color: 'var(--accent-yellow)' }}>{fpGanho}</div>
+            </div>
+            {streak >= 2 && (
+              <div className="stat-item">
+                <div className="stat-label">Streak</div>
+                <div className="stat-number" style={{ color: '#FF9800' }}>🔥{streak}</div>
+              </div>
+            )}
+            <div className="stat-item">
+              <div className="stat-label">Tempo</div>
+              <div
+                className="stat-number"
+                style={{
+                  fontSize: '2rem',
+                  color: tempoRestante <= 10 ? '#F44336' : 'var(--chalk-white)',
+                  animation: tempoRestante <= 10 ? 'pulse 1s infinite' : 'none'
+                }}
+              >
+                ⏱️ {tempoRestante}s
+              </div>
             </div>
           </div>
 
           {/* Questao */}
-          <div className="card-ia p-6 mb-6">
-            <div className="flex items-center gap-2 mb-4">
-              <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                questaoAtual.dificuldade === 'facil' ? 'bg-green-500/30 text-green-300' :
-                questaoAtual.dificuldade === 'media' ? 'bg-yellow-500/30 text-yellow-300' :
-                questaoAtual.dificuldade === 'dificil' ? 'bg-orange-500/30 text-orange-300' :
-                'bg-red-500/30 text-red-300'
-              }`}>
+          <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+              <span className="badge" style={{
+                background: questaoAtual.dificuldade === 'facil' ? 'rgba(76, 175, 80, 0.3)' :
+                           questaoAtual.dificuldade === 'media' ? 'rgba(255, 193, 7, 0.3)' :
+                           questaoAtual.dificuldade === 'dificil' ? 'rgba(255, 152, 0, 0.3)' :
+                           'rgba(244, 67, 54, 0.3)',
+                color: questaoAtual.dificuldade === 'facil' ? '#4CAF50' :
+                      questaoAtual.dificuldade === 'media' ? 'var(--accent-yellow)' :
+                      questaoAtual.dificuldade === 'dificil' ? '#FF9800' :
+                      '#F44336'
+              }}>
                 {questaoAtual.dificuldade.toUpperCase()}
               </span>
-              <span className="text-yellow-300 font-bold">+{questaoAtual.fpValor} FP</span>
+              <span style={{ color: 'var(--accent-yellow)', fontWeight: 'bold' }}>
+                +{questaoAtual.fpValor} FP
+              </span>
             </div>
 
-            <h3 className="text-xl font-bold mb-6">{questaoAtual.enunciado}</h3>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '1.5rem', color: 'var(--chalk-white)' }}>
+              {questaoAtual.enunciado}
+            </h3>
 
-            <div className="space-y-3">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {questaoAtual.alternativas.map((alt, i) => {
                 const eliminada = alternativasEliminadas.includes(i);
                 const selecionada = respostaSelecionada === i;
@@ -746,20 +967,47 @@ export default function ArenaPage() {
                     key={i}
                     onClick={() => !mostrarResultado && !eliminada && verificarResposta(i)}
                     disabled={mostrarResultado || eliminada}
-                    className={`w-full p-4 rounded-xl text-left transition flex items-center gap-3 ${
-                      eliminada ? 'opacity-30 line-through bg-white/5' :
-                      mostrarResultado && correta ? 'bg-green-500/30 border-2 border-green-400' :
-                      mostrarResultado && selecionada && !correta ? 'bg-red-500/30 border-2 border-red-400' :
-                      selecionada ? 'bg-yellow-500/30 border-2 border-yellow-400' :
-                      'bg-white/10 hover:bg-white/20 border-2 border-transparent'
-                    }`}
+                    style={{
+                      width: '100%',
+                      padding: '1rem',
+                      borderRadius: '0.75rem',
+                      textAlign: 'left',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem',
+                      cursor: mostrarResultado || eliminada ? 'default' : 'pointer',
+                      opacity: eliminada ? 0.3 : 1,
+                      textDecoration: eliminada ? 'line-through' : 'none',
+                      background: eliminada ? 'rgba(255,255,255,0.05)' :
+                                 mostrarResultado && correta ? 'rgba(76, 175, 80, 0.3)' :
+                                 mostrarResultado && selecionada && !correta ? 'rgba(244, 67, 54, 0.3)' :
+                                 selecionada ? 'rgba(255, 193, 7, 0.3)' :
+                                 'rgba(255,255,255,0.1)',
+                      border: '2px solid ' + (
+                        mostrarResultado && correta ? '#4CAF50' :
+                        mostrarResultado && selecionada && !correta ? '#F44336' :
+                        selecionada ? 'var(--accent-yellow)' :
+                        'transparent'
+                      ),
+                      transition: 'all 0.2s',
+                      color: 'var(--chalk-white)'
+                    }}
                   >
-                    <span className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center font-bold">
+                    <span style={{
+                      width: '2rem',
+                      height: '2rem',
+                      borderRadius: '50%',
+                      background: 'rgba(255,255,255,0.1)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontWeight: 'bold'
+                    }}>
                       {String.fromCharCode(65 + i)}
                     </span>
-                    <span>{alt}</span>
-                    {mostrarResultado && correta && <span className="ml-auto">✓</span>}
-                    {mostrarResultado && selecionada && !correta && <span className="ml-auto">✗</span>}
+                    <span style={{ flex: 1 }}>{alt}</span>
+                    {mostrarResultado && correta && <span>✓</span>}
+                    {mostrarResultado && selecionada && !correta && <span>✗</span>}
                   </button>
                 );
               })}
@@ -768,25 +1016,40 @@ export default function ArenaPage() {
 
           {/* Ajudas */}
           {!mostrarResultado && (
-            <div className="flex justify-center gap-4 mb-6">
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
               <button
                 onClick={usarAjudaPular}
                 disabled={ajudasDisponiveis.pular <= 0}
-                className={`px-4 py-2 rounded-xl transition ${ajudasDisponiveis.pular > 0 ? 'bg-blue-500/30 hover:bg-blue-500/50' : 'bg-white/10 opacity-50'}`}
+                className="btn"
+                style={{
+                  background: ajudasDisponiveis.pular > 0 ? 'rgba(33, 150, 243, 0.3)' : 'rgba(255,255,255,0.1)',
+                  opacity: ajudasDisponiveis.pular > 0 ? 1 : 0.5,
+                  cursor: ajudasDisponiveis.pular > 0 ? 'pointer' : 'not-allowed'
+                }}
               >
                 ⏭️ Pular ({ajudasDisponiveis.pular})
               </button>
               <button
                 onClick={usarAjudaDica}
                 disabled={ajudasDisponiveis.dica <= 0 || dicaAtiva}
-                className={`px-4 py-2 rounded-xl transition ${ajudasDisponiveis.dica > 0 && !dicaAtiva ? 'bg-purple-500/30 hover:bg-purple-500/50' : 'bg-white/10 opacity-50'}`}
+                className="btn"
+                style={{
+                  background: ajudasDisponiveis.dica > 0 && !dicaAtiva ? 'rgba(156, 39, 176, 0.3)' : 'rgba(255,255,255,0.1)',
+                  opacity: ajudasDisponiveis.dica > 0 && !dicaAtiva ? 1 : 0.5,
+                  cursor: ajudasDisponiveis.dica > 0 && !dicaAtiva ? 'pointer' : 'not-allowed'
+                }}
               >
                 💡 Dica ({ajudasDisponiveis.dica})
               </button>
               <button
                 onClick={usarAjudaEliminar}
                 disabled={ajudasDisponiveis.eliminar <= 0 || alternativasEliminadas.length > 0}
-                className={`px-4 py-2 rounded-xl transition ${ajudasDisponiveis.eliminar > 0 && alternativasEliminadas.length === 0 ? 'bg-red-500/30 hover:bg-red-500/50' : 'bg-white/10 opacity-50'}`}
+                className="btn"
+                style={{
+                  background: ajudasDisponiveis.eliminar > 0 && alternativasEliminadas.length === 0 ? 'rgba(244, 67, 54, 0.3)' : 'rgba(255,255,255,0.1)',
+                  opacity: ajudasDisponiveis.eliminar > 0 && alternativasEliminadas.length === 0 ? 1 : 0.5,
+                  cursor: ajudasDisponiveis.eliminar > 0 && alternativasEliminadas.length === 0 ? 'pointer' : 'not-allowed'
+                }}
               >
                 ❌ Eliminar 2 ({ajudasDisponiveis.eliminar})
               </button>
@@ -795,20 +1058,29 @@ export default function ArenaPage() {
 
           {/* Botao Proxima */}
           {mostrarResultado && (
-            <button onClick={proximaQuestao} className="btn-ia w-full py-4 text-lg">
+            <button
+              onClick={proximaQuestao}
+              className="btn btn-yellow"
+              style={{ width: '100%', padding: '1rem', fontSize: '1.125rem' }}
+            >
               {questaoIndex >= questoesJogo.length - 1 ? '🏁 Ver Resultado' : '➡️ Proxima Questao'}
             </button>
           )}
 
           {/* Mini Chat */}
-          <div className="card-ia p-3 mt-6 max-h-40 overflow-y-auto">
+          <div className="card" style={{ padding: '0.75rem', marginTop: '1.5rem', maxHeight: '160px', overflowY: 'auto' }}>
             {mensagens.slice(-5).map(msg => (
-              <div key={msg.id} className={`text-sm mb-1 ${
-                msg.tipo === 'host' ? 'text-yellow-300' :
-                msg.tipo === 'rival' ? 'text-red-300' :
-                'text-white/60'
-              }`}>
-                <span className="font-bold">{msg.autor}:</span> {msg.conteudo}
+              <div
+                key={msg.id}
+                style={{
+                  fontSize: '0.875rem',
+                  marginBottom: '0.25rem',
+                  color: msg.tipo === 'host' ? 'var(--accent-yellow)' :
+                        msg.tipo === 'rival' ? '#F44336' :
+                        'var(--chalk-dim)'
+                }}
+              >
+                <span style={{ fontWeight: 'bold' }}>{msg.autor}:</span> {msg.conteudo}
               </div>
             ))}
           </div>

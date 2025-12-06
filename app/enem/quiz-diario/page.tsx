@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Questao {
@@ -152,30 +151,71 @@ export default function QuizDiarioPage() {
   // Tela de ja fez hoje
   if (jaFezHoje && !quizIniciado) {
     return (
-      <div className="container-ia min-h-screen py-8">
+      <div className="container min-h-screen py-8 px-4" style={{ background: 'var(--chalkboard)' }}>
         <FloatingNav />
 
-        <div className="card-ia p-8 text-center max-w-lg mx-auto mt-16">
-          <div className="text-8xl mb-6">✅</div>
-          <h1 className="title-ia-sm mb-4">Quiz Diario Completo!</h1>
-          <p className="text-white/70 mb-6">
-            Voce ja completou o quiz de hoje. Volte amanha para manter sua streak!
-          </p>
+        <div className="max-w-2xl mx-auto mt-16">
+          <div className="card p-8 text-center">
+            <div className="text-8xl mb-6">✅</div>
 
-          <div className="bg-white/10 rounded-xl p-4 mb-6">
-            <p className="text-white/60 text-sm">Sua streak atual</p>
-            <p className="text-4xl font-bold text-orange-400">{streakAtual}🔥</p>
+            <div className="header text-center mb-6">
+              <h1 style={{
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'var(--chalk-white)',
+                marginBottom: '1rem'
+              }}>
+                Quiz Diario Completo!
+              </h1>
+              <p style={{ color: 'var(--chalk-dim)', fontSize: '1.1rem' }}>
+                Voce ja completou o quiz de hoje. Volte amanha para manter sua streak!
+              </p>
+            </div>
+
+            <div className="stat-item mb-6" style={{
+              background: 'rgba(255, 255, 255, 0.1)',
+              borderRadius: '12px',
+              padding: '1.5rem'
+            }}>
+              <p className="stat-label" style={{ color: 'var(--chalk-dim)', marginBottom: '0.5rem' }}>
+                Sua streak atual
+              </p>
+              <p className="stat-number" style={{
+                fontSize: '3rem',
+                fontWeight: 'bold',
+                color: 'var(--accent-orange)'
+              }}>
+                {streakAtual}🔥
+              </p>
+            </div>
+
+            <button
+              onClick={() => router.push('/enem/simulado')}
+              className="btn btn-yellow w-full"
+              style={{ padding: '1rem', fontSize: '1.1rem' }}
+            >
+              📝 Fazer um Simulado
+            </button>
           </div>
 
-          <button
-            onClick={() => router.push('/enem/simulado')}
-            className="btn-ia w-full py-3"
-          >
-            📝 Fazer um Simulado
-          </button>
+          <div className="footer mt-8">
+            <button
+              onClick={() => router.push('/enem')}
+              style={{
+                color: 'var(--chalk-dim)',
+                textDecoration: 'none',
+                fontSize: '1rem',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                display: 'block',
+                margin: '0 auto'
+              }}
+            >
+              ← Voltar para o Hub ENEM
+            </button>
+          </div>
         </div>
-
-        <ChalkBackToTop />
       </div>
     );
   }
@@ -183,51 +223,116 @@ export default function QuizDiarioPage() {
   // Tela inicial
   if (!quizIniciado) {
     return (
-      <div className="container-ia min-h-screen py-8">
+      <div className="container min-h-screen py-8 px-4" style={{ background: 'var(--chalkboard)' }}>
         <FloatingNav />
 
-        <div className="card-ia p-8 text-center max-w-lg mx-auto mt-16">
-          <div className="text-8xl mb-6">🎯</div>
-          <h1 className="title-ia-sm mb-4">Quiz Diario</h1>
+        <div className="max-w-2xl mx-auto mt-16">
+          <div className="card p-8 text-center">
+            <div className="text-8xl mb-6">🎯</div>
 
-          <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-xl p-4 mb-6 border border-yellow-400/30">
-            <p className="text-yellow-300 font-bold italic">
-              "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
+            <div className="header text-center mb-6">
+              <h1 style={{
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'var(--chalk-white)',
+                marginBottom: '1rem'
+              }}>
+                Quiz Diario
+              </h1>
+            </div>
+
+            <div style={{
+              background: 'linear-gradient(to right, rgba(251, 191, 36, 0.2), rgba(249, 115, 22, 0.2))',
+              borderRadius: '12px',
+              padding: '1rem',
+              marginBottom: '1.5rem',
+              border: '1px solid rgba(251, 191, 36, 0.3)'
+            }}>
+              <p style={{
+                color: 'var(--accent-yellow)',
+                fontWeight: 'bold',
+                fontStyle: 'italic',
+                fontSize: '1.1rem'
+              }}>
+                "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
+              </p>
+            </div>
+
+            <p style={{
+              color: 'var(--chalk-dim)',
+              marginBottom: '1.5rem',
+              fontSize: '1.1rem'
+            }}>
+              Responda 5 questoes rapidas e ganhe FP! Complete o quiz diariamente para manter sua streak.
             </p>
+
+            <div className="stats-bar mb-6" style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '1rem'
+            }}>
+              <div className="stat-item">
+                <p className="stat-number">5</p>
+                <p className="stat-label">Questoes</p>
+              </div>
+              <div className="stat-item">
+                <p className="stat-number">5min</p>
+                <p className="stat-label">Tempo</p>
+              </div>
+              <div className="stat-item">
+                <p className="stat-number" style={{ color: 'var(--accent-yellow)' }}>+75</p>
+                <p className="stat-label">FP Max</p>
+              </div>
+            </div>
+
+            {streakAtual > 0 && (
+              <div style={{
+                background: 'rgba(249, 115, 22, 0.2)',
+                borderRadius: '12px',
+                padding: '1rem',
+                marginBottom: '1.5rem',
+                border: '1px solid rgba(249, 115, 22, 0.3)'
+              }}>
+                <p style={{
+                  color: 'var(--accent-orange)',
+                  fontWeight: 'bold',
+                  marginBottom: '0.25rem'
+                }}>
+                  🔥 Streak: {streakAtual} dias
+                </p>
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.9rem' }}>
+                  Nao perca! Acerte 3+ para manter.
+                </p>
+              </div>
+            )}
+
+            <button
+              onClick={iniciarQuiz}
+              className="btn btn-yellow w-full"
+              style={{ padding: '1.25rem', fontSize: '1.2rem' }}
+            >
+              🚀 Comecar Quiz
+            </button>
           </div>
 
-          <p className="text-white/70 mb-6">
-            Responda 5 questoes rapidas e ganhe FP! Complete o quiz diariamente para manter sua streak.
-          </p>
-
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <div className="bg-white/10 rounded-xl p-3">
-              <p className="text-2xl font-bold text-white">5</p>
-              <p className="text-white/60 text-xs">Questoes</p>
-            </div>
-            <div className="bg-white/10 rounded-xl p-3">
-              <p className="text-2xl font-bold text-white">5min</p>
-              <p className="text-white/60 text-xs">Tempo</p>
-            </div>
-            <div className="bg-white/10 rounded-xl p-3">
-              <p className="text-2xl font-bold text-yellow-300">+75</p>
-              <p className="text-white/60 text-xs">FP Max</p>
-            </div>
+          <div className="footer mt-8">
+            <button
+              onClick={() => router.push('/enem')}
+              style={{
+                color: 'var(--chalk-dim)',
+                textDecoration: 'none',
+                fontSize: '1rem',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                display: 'block',
+                margin: '0 auto'
+              }}
+            >
+              ← Voltar para o Hub ENEM
+            </button>
           </div>
-
-          {streakAtual > 0 && (
-            <div className="bg-orange-500/20 rounded-xl p-4 mb-6 border border-orange-400/30">
-              <p className="text-orange-300 font-bold">🔥 Streak: {streakAtual} dias</p>
-              <p className="text-white/60 text-sm">Nao perca! Acerte 3+ para manter.</p>
-            </div>
-          )}
-
-          <button onClick={iniciarQuiz} className="btn-ia w-full py-4 text-lg">
-            🚀 Comecar Quiz
-          </button>
         </div>
-
-        <ChalkBackToTop />
       </div>
     );
   }
@@ -238,77 +343,157 @@ export default function QuizDiarioPage() {
     const perfeito = resultado.acertos === resultado.total;
 
     return (
-      <div className="container-ia min-h-screen py-8">
-        <div className="card-ia p-8 text-center max-w-lg mx-auto">
-          <div className="text-8xl mb-6">{perfeito ? '🏆' : resultado.acertos >= 3 ? '🎉' : '📚'}</div>
+      <div className="container min-h-screen py-8 px-4" style={{ background: 'var(--chalkboard)' }}>
+        <FloatingNav />
 
-          <h1 className="title-ia-sm mb-2">
-            {perfeito ? 'PERFEITO!' : resultado.acertos >= 3 ? 'Muito Bem!' : 'Continue Estudando!'}
-          </h1>
-
-          <div className="grid grid-cols-2 gap-4 mb-6">
-            <div className="bg-white/10 rounded-xl p-4">
-              <p className="text-3xl font-bold text-white">{resultado.acertos}/{resultado.total}</p>
-              <p className="text-white/60 text-sm">Acertos</p>
+        <div className="max-w-2xl mx-auto mt-8">
+          <div className="card p-8 text-center">
+            <div className="text-8xl mb-6">
+              {perfeito ? '🏆' : resultado.acertos >= 3 ? '🎉' : '📚'}
             </div>
-            <div className="bg-yellow-500/20 rounded-xl p-4 border border-yellow-400/30">
-              <p className="text-3xl font-bold text-yellow-300">+{resultado.fpGanho}</p>
-              <p className="text-white/60 text-sm">FP Ganhos</p>
+
+            <div className="header text-center mb-6">
+              <h1 style={{
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'var(--chalk-white)',
+                marginBottom: '0.5rem'
+              }}>
+                {perfeito ? 'PERFEITO!' : resultado.acertos >= 3 ? 'Muito Bem!' : 'Continue Estudando!'}
+              </h1>
+            </div>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              gap: '1rem',
+              marginBottom: '1.5rem'
+            }}>
+              <div className="stat-item" style={{ padding: '1.5rem' }}>
+                <p className="stat-number" style={{ fontSize: '2.5rem' }}>
+                  {resultado.acertos}/{resultado.total}
+                </p>
+                <p className="stat-label">Acertos</p>
+              </div>
+              <div className="stat-item" style={{
+                padding: '1.5rem',
+                background: 'rgba(251, 191, 36, 0.2)',
+                border: '1px solid rgba(251, 191, 36, 0.3)'
+              }}>
+                <p className="stat-number" style={{
+                  fontSize: '2.5rem',
+                  color: 'var(--accent-yellow)'
+                }}>
+                  +{resultado.fpGanho}
+                </p>
+                <p className="stat-label">FP Ganhos</p>
+              </div>
+            </div>
+
+            {resultado.acertos >= 3 && (
+              <div style={{
+                background: 'rgba(249, 115, 22, 0.2)',
+                borderRadius: '12px',
+                padding: '1rem',
+                marginBottom: '1.5rem',
+                border: '1px solid rgba(249, 115, 22, 0.3)'
+              }}>
+                <p style={{ color: 'var(--accent-orange)', fontWeight: 'bold', marginBottom: '0.25rem' }}>
+                  🔥 Streak mantida!
+                </p>
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.9rem' }}>
+                  Agora voce tem {streakAtual} dias seguidos!
+                </p>
+              </div>
+            )}
+
+            {perfeito && (
+              <div style={{
+                background: 'rgba(168, 85, 247, 0.2)',
+                borderRadius: '12px',
+                padding: '1rem',
+                marginBottom: '1.5rem',
+                border: '1px solid rgba(168, 85, 247, 0.3)'
+              }}>
+                <p style={{ color: '#c084fc', fontWeight: 'bold' }}>
+                  ⭐ Bonus Perfeito: +25 FP
+                </p>
+              </div>
+            )}
+
+            {/* Revisao das questoes */}
+            <div style={{ textAlign: 'left', marginBottom: '1.5rem' }}>
+              <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', marginBottom: '0.75rem' }}>
+                Revisao:
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                {questoesDiarias.map((q, idx) => (
+                  <div
+                    key={q.id}
+                    style={{
+                      padding: '0.75rem',
+                      borderRadius: '8px',
+                      background: respostas[idx] === q.correta
+                        ? 'rgba(34, 197, 94, 0.2)'
+                        : 'rgba(239, 68, 68, 0.2)',
+                      border: respostas[idx] === q.correta
+                        ? '1px solid rgba(34, 197, 94, 0.3)'
+                        : '1px solid rgba(239, 68, 68, 0.3)'
+                    }}
+                  >
+                    <p style={{ color: 'var(--chalk-white)', fontSize: '0.9rem', marginBottom: '0.25rem' }}>
+                      {idx + 1}. {q.disciplina}
+                    </p>
+                    <p style={{ color: 'var(--chalk-dim)', fontSize: '0.8rem' }}>
+                      {respostas[idx] === q.correta
+                        ? '✓ Correta'
+                        : `✗ Resposta: ${q.alternativas[q.correta]}`}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <button
+                onClick={() => router.push('/enem/feed')}
+                className="btn btn-yellow w-full"
+                style={{ padding: '0.75rem' }}
+              >
+                📱 Ver Feed Social
+              </button>
+              <button
+                onClick={() => router.push('/enem/simulado')}
+                className="btn w-full"
+                style={{
+                  padding: '0.75rem',
+                  background: 'rgba(255, 255, 255, 0.1)',
+                  border: '2px solid var(--chalk-dim)'
+                }}
+              >
+                📝 Fazer Simulado Completo
+              </button>
             </div>
           </div>
 
-          {resultado.acertos >= 3 && (
-            <div className="bg-orange-500/20 rounded-xl p-4 mb-6 border border-orange-400/30">
-              <p className="text-orange-300 font-bold">🔥 Streak mantida!</p>
-              <p className="text-white/60 text-sm">Agora voce tem {streakAtual} dias seguidos!</p>
-            </div>
-          )}
-
-          {perfeito && (
-            <div className="bg-purple-500/20 rounded-xl p-4 mb-6 border border-purple-400/30">
-              <p className="text-purple-300 font-bold">⭐ Bonus Perfeito: +25 FP</p>
-            </div>
-          )}
-
-          {/* Revisao das questoes */}
-          <div className="text-left mb-6">
-            <p className="text-white font-bold mb-3">Revisao:</p>
-            <div className="space-y-2">
-              {questoesDiarias.map((q, idx) => (
-                <div
-                  key={q.id}
-                  className={`p-3 rounded-lg ${
-                    respostas[idx] === q.correta
-                      ? 'bg-green-500/20 border border-green-400/30'
-                      : 'bg-red-500/20 border border-red-400/30'
-                  }`}
-                >
-                  <p className="text-white/80 text-sm">{idx + 1}. {q.disciplina}</p>
-                  <p className="text-white/60 text-xs">
-                    {respostas[idx] === q.correta ? '✓ Correta' : `✗ Resposta: ${q.alternativas[q.correta]}`}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-3">
+          <div className="footer mt-8">
             <button
-              onClick={() => router.push('/enem/feed')}
-              className="btn-ia w-full py-3"
+              onClick={() => router.push('/enem')}
+              style={{
+                color: 'var(--chalk-dim)',
+                textDecoration: 'none',
+                fontSize: '1rem',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                display: 'block',
+                margin: '0 auto'
+              }}
             >
-              📱 Ver Feed Social
-            </button>
-            <button
-              onClick={() => router.push('/enem/simulado')}
-              className="btn-ia-secondary w-full py-3"
-            >
-              📝 Fazer Simulado Completo
+              ← Voltar para o Hub ENEM
             </button>
           </div>
         </div>
-
-        <ChalkBackToTop />
       </div>
     );
   }
@@ -317,58 +502,139 @@ export default function QuizDiarioPage() {
   const questao = questoesDiarias[questaoAtual];
 
   return (
-    <div className="container-ia min-h-screen py-8">
-      {/* Header com timer */}
-      <div className="flex items-center justify-between mb-6">
-        <div className="flex items-center gap-4">
-          <span className="text-white/60">Questao {questaoAtual + 1}/{questoesDiarias.length}</span>
-          <span className="badge-ia">{questao.disciplina}</span>
+    <div className="container min-h-screen py-8 px-4" style={{ background: 'var(--chalkboard)' }}>
+      <FloatingNav />
+
+      <div className="max-w-3xl mx-auto mt-8">
+        {/* Header com timer */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: '1.5rem',
+          flexWrap: 'wrap',
+          gap: '1rem'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <span style={{ color: 'var(--chalk-dim)' }}>
+              Questao {questaoAtual + 1}/{questoesDiarias.length}
+            </span>
+            <span className="badge">{questao.disciplina}</span>
+          </div>
+          <div style={{
+            fontSize: '1.25rem',
+            fontWeight: 'bold',
+            color: tempoRestante < 60 ? '#f87171' : 'var(--accent-yellow)'
+          }}>
+            ⏱️ {formatarTempo(tempoRestante)}
+          </div>
         </div>
-        <div className={`text-xl font-bold ${tempoRestante < 60 ? 'text-red-400' : 'text-yellow-300'}`}>
-          ⏱️ {formatarTempo(tempoRestante)}
+
+        {/* Barra de progresso */}
+        <div style={{
+          width: '100%',
+          height: '8px',
+          background: 'rgba(255, 255, 255, 0.1)',
+          borderRadius: '999px',
+          marginBottom: '1.5rem',
+          overflow: 'hidden'
+        }}>
+          <div style={{
+            height: '100%',
+            background: 'var(--accent-yellow)',
+            width: `${((questaoAtual + 1) / questoesDiarias.length) * 100}%`,
+            transition: 'width 0.3s ease',
+            borderRadius: '999px'
+          }} />
+        </div>
+
+        {/* Questao */}
+        <div className="card p-6 mb-6">
+          <p style={{
+            color: 'var(--chalk-white)',
+            fontSize: '1.25rem',
+            marginBottom: '1.5rem',
+            lineHeight: '1.6'
+          }}>
+            {questao.enunciado}
+          </p>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {questao.alternativas.map((alt, idx) => (
+              <button
+                key={idx}
+                onClick={() => selecionarResposta(idx)}
+                style={{
+                  width: '100%',
+                  padding: '1rem',
+                  borderRadius: '12px',
+                  textAlign: 'left',
+                  transition: 'all 0.2s',
+                  background: respostas[questaoAtual] === idx
+                    ? 'rgba(251, 191, 36, 0.2)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  border: respostas[questaoAtual] === idx
+                    ? '2px solid var(--accent-yellow)'
+                    : '2px solid rgba(255, 255, 255, 0.1)',
+                  cursor: 'pointer'
+                }}
+                onMouseEnter={(e) => {
+                  if (respostas[questaoAtual] !== idx) {
+                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (respostas[questaoAtual] !== idx) {
+                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                  }
+                }}
+              >
+                <span style={{ fontWeight: 'bold', marginRight: '0.75rem', color: 'var(--chalk-white)' }}>
+                  {String.fromCharCode(65 + idx)})
+                </span>
+                <span style={{ color: 'var(--chalk-white)' }}>{alt}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Botao de avancar */}
+        <button
+          onClick={proximaQuestao}
+          disabled={respostas[questaoAtual] === null}
+          className="btn btn-yellow w-full"
+          style={{
+            padding: '1.25rem',
+            fontSize: '1.2rem',
+            opacity: respostas[questaoAtual] === null ? 0.5 : 1,
+            cursor: respostas[questaoAtual] === null ? 'not-allowed' : 'pointer'
+          }}
+        >
+          {questaoAtual < questoesDiarias.length - 1 ? 'Proxima Questao →' : '🏁 Finalizar Quiz'}
+        </button>
+
+        <div className="footer mt-8">
+          <button
+            onClick={() => {
+              if (confirm('Tem certeza que deseja sair? Seu progresso sera perdido.')) {
+                router.push('/enem');
+              }
+            }}
+            style={{
+              color: 'var(--chalk-dim)',
+              textDecoration: 'none',
+              fontSize: '1rem',
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              display: 'block',
+              margin: '0 auto'
+            }}
+          >
+            ← Voltar para o Hub ENEM
+          </button>
         </div>
       </div>
-
-      {/* Barra de progresso */}
-      <div className="progress-ia mb-6">
-        <div
-          className="progress-ia-bar transition-all"
-          style={{ width: `${((questaoAtual + 1) / questoesDiarias.length) * 100}%` }}
-        />
-      </div>
-
-      {/* Questao */}
-      <div className="card-ia p-6 mb-6">
-        <p className="text-white text-lg mb-6">{questao.enunciado}</p>
-
-        <div className="space-y-3">
-          {questao.alternativas.map((alt, idx) => (
-            <button
-              key={idx}
-              onClick={() => selecionarResposta(idx)}
-              className={`w-full p-4 rounded-xl text-left transition-all ${
-                respostas[questaoAtual] === idx
-                  ? 'bg-yellow-400/20 border-2 border-yellow-400'
-                  : 'bg-white/5 border-2 border-white/10 hover:border-white/30'
-              }`}
-            >
-              <span className="font-bold mr-3">{String.fromCharCode(65 + idx)})</span>
-              <span className="text-white">{alt}</span>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Botao de avancar */}
-      <button
-        onClick={proximaQuestao}
-        disabled={respostas[questaoAtual] === null}
-        className="btn-ia w-full py-4 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        {questaoAtual < questoesDiarias.length - 1 ? 'Proxima Questao →' : '🏁 Finalizar Quiz'}
-      </button>
-
-      <ChalkBackToTop />
     </div>
   );
 }

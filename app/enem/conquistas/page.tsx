@@ -1,8 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Conquista {
@@ -103,40 +102,100 @@ export default function ConquistasPage() {
   };
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div style={{
+      minHeight: '100vh',
+      backgroundColor: 'var(--chalkboard-bg)',
+      padding: '2rem 1rem'
+    }}>
       <FloatingNav />
 
       {/* Celebracao */}
       {showCelebration && conquistaCelebrando && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 50,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            padding: '1rem'
+          }}
           onClick={() => setShowCelebration(false)}
         >
-          <div className="card-ia p-8 text-center max-w-md mx-4 animate-bounce" onClick={(e) => e.stopPropagation()}>
-            <div className="text-9xl mb-4">{conquistaCelebrando.emoji}</div>
-            <h2 className="title-ia-sm text-yellow-300 mb-2">Conquista Desbloqueada!</h2>
-            <p className="text-white text-xl font-bold mb-2">{conquistaCelebrando.nome}</p>
-            <p className="text-white/70 mb-4">{conquistaCelebrando.descricao}</p>
-            <div className="bg-yellow-500/20 rounded-xl p-3 border border-yellow-400/30 mb-4">
-              <p className="text-yellow-300 font-bold text-2xl">+{conquistaCelebrando.fpReward} FP</p>
+          <div
+            className="chalkboard-card"
+            style={{
+              padding: '2rem',
+              textAlign: 'center',
+              maxWidth: '28rem',
+              animation: 'bounce 1s infinite'
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div style={{ fontSize: '6rem', marginBottom: '1rem' }}>{conquistaCelebrando.emoji}</div>
+            <h2 style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              color: 'var(--accent-yellow)',
+              marginBottom: '0.5rem',
+              fontFamily: 'var(--font-chalk)'
+            }}>
+              Conquista Desbloqueada!
+            </h2>
+            <p style={{
+              color: 'var(--chalk-white)',
+              fontSize: '1.25rem',
+              fontWeight: 'bold',
+              marginBottom: '0.5rem'
+            }}>
+              {conquistaCelebrando.nome}
+            </p>
+            <p style={{
+              color: 'var(--chalk-dim)',
+              marginBottom: '1rem'
+            }}>
+              {conquistaCelebrando.descricao}
+            </p>
+            <div style={{
+              backgroundColor: 'rgba(234, 179, 8, 0.2)',
+              borderRadius: '0.75rem',
+              padding: '0.75rem',
+              border: '2px solid rgba(234, 179, 8, 0.3)',
+              marginBottom: '1rem'
+            }}>
+              <p style={{
+                color: 'var(--accent-yellow)',
+                fontWeight: 'bold',
+                fontSize: '1.5rem'
+              }}>
+                +{conquistaCelebrando.fpReward} FP
+              </p>
             </div>
-            <p className="text-white/50 text-sm mb-4">
+            <p style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem',
+              marginBottom: '1rem',
+              opacity: 0.7
+            }}>
               Desbloqueada em {conquistaCelebrando.dataDesbloqueio}
             </p>
-            <div className="flex gap-3">
+            <div style={{ display: 'flex', gap: '0.75rem' }}>
               <button
                 onClick={() => setShowCelebration(false)}
-                className="btn-ia flex-1"
+                className="btn btn-yellow"
+                style={{ flex: 1 }}
               >
                 Fechar
               </button>
               <button
                 onClick={() => {
-                  // Compartilhar
                   const text = `🎉 Desbloqueei "${conquistaCelebrando.nome}" no ENEM-IA! ${conquistaCelebrando.emoji}\n\n+${conquistaCelebrando.fpReward} FP\n\nVem estudar comigo!`;
                   window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
                 }}
-                className="btn-ia-secondary flex-1"
+                className="btn"
+                style={{ flex: 1 }}
               >
                 📱 Compartilhar
               </button>
@@ -145,174 +204,354 @@ export default function ConquistasPage() {
         </div>
       )}
 
-      {/* Slogan */}
-      <div className="card-ia p-4 mb-6 mt-16 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border-2 border-yellow-400/30 text-center">
-        <p className="text-yellow-300 font-bold italic">
-          "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
-        </p>
-      </div>
+      {/* Container Principal */}
+      <div className="container" style={{ marginTop: '4rem' }}>
+        {/* Slogan */}
+        <div
+          className="card"
+          style={{
+            padding: '1rem',
+            marginBottom: '1.5rem',
+            background: 'linear-gradient(to right, rgba(234, 179, 8, 0.2), rgba(249, 115, 22, 0.2))',
+            border: '2px solid rgba(234, 179, 8, 0.3)',
+            textAlign: 'center'
+          }}
+        >
+          <p style={{
+            color: 'var(--accent-yellow)',
+            fontWeight: 'bold',
+            fontStyle: 'italic',
+            fontFamily: 'var(--font-chalk)'
+          }}>
+            "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
+          </p>
+        </div>
 
-      <div className="mb-8">
-        <h1 className="title-ia mb-2">🏆 Conquistas & Milestones</h1>
-        <p className="subtitle-ia mb-0">Desbloqueie conquistas e ganhe FP bonus!</p>
-      </div>
+        {/* Header */}
+        <div className="header" style={{ marginBottom: '2rem' }}>
+          <h1>🏆 Conquistas & Milestones</h1>
+          <p>Desbloqueie conquistas e ganhe FP bonus!</p>
+        </div>
 
-      {/* Stats Gerais */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="stat-ia">
-          <span className="stat-ia-value">{totalDesbloqueadas}/{conquistas.length}</span>
-          <span className="stat-ia-label">Conquistas</span>
+        {/* Stats Bar */}
+        <div className="stats-bar" style={{ marginBottom: '2rem' }}>
+          <div className="stat-item">
+            <span className="stat-number">{totalDesbloqueadas}/{conquistas.length}</span>
+            <span className="stat-label">Conquistas</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-number" style={{ color: 'var(--accent-yellow)' }}>+{fpTotalGanho}</span>
+            <span className="stat-label">FP de Conquistas</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-number">{conquistas.filter(c => c.raras && c.desbloqueada).length}</span>
+            <span className="stat-label">Raras</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-number">{Math.round((totalDesbloqueadas / conquistas.length) * 100)}%</span>
+            <span className="stat-label">Progresso</span>
+          </div>
         </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value text-yellow-300">+{fpTotalGanho}</span>
-          <span className="stat-ia-label">FP de Conquistas</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{conquistas.filter(c => c.raras && c.desbloqueada).length}</span>
-          <span className="stat-ia-label">Raras</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{Math.round((totalDesbloqueadas / conquistas.length) * 100)}%</span>
-          <span className="stat-ia-label">Progresso</span>
-        </div>
-      </div>
 
-      {/* Milestones */}
-      <div className="card-ia p-6 mb-8">
-        <h2 className="title-ia-sm mb-4">📊 Milestones de Progresso</h2>
-        <div className="space-y-4">
-          {milestones.map((m) => (
-            <div key={m.id} className="bg-white/5 rounded-xl p-4">
-              <div className="flex items-center justify-between mb-2">
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl">{m.emoji}</span>
-                  <div>
-                    <p className="text-white font-bold">{m.titulo}</p>
-                    <p className="text-white/60 text-sm">{m.descricao}</p>
+        {/* Milestones */}
+        <div className="category" style={{ marginBottom: '2rem' }}>
+          <h2 className="category-title">📊 Milestones de Progresso</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            {milestones.map((m) => (
+              <div
+                key={m.id}
+                className="chalkboard-card"
+                style={{ padding: '1rem' }}
+              >
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: '0.5rem'
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                    <span style={{ fontSize: '2rem' }}>{m.emoji}</span>
+                    <div>
+                      <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>{m.titulo}</p>
+                      <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>{m.descricao}</p>
+                    </div>
+                  </div>
+                  <div style={{ textAlign: 'right' }}>
+                    <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
+                      {m.atual.toLocaleString()}/{m.meta.toLocaleString()}
+                    </p>
+                    <p style={{ color: 'var(--accent-yellow)', fontSize: '0.875rem' }}>+{m.fpBonus} FP</p>
                   </div>
                 </div>
-                <div className="text-right">
-                  <p className="text-white font-bold">{m.atual.toLocaleString()}/{m.meta.toLocaleString()}</p>
-                  <p className="text-yellow-300 text-sm">+{m.fpBonus} FP</p>
+                {/* Progress Bar */}
+                <div style={{
+                  width: '100%',
+                  height: '0.5rem',
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  borderRadius: '0.25rem',
+                  overflow: 'hidden'
+                }}>
+                  <div style={{
+                    width: `${Math.min((m.atual / m.meta) * 100, 100)}%`,
+                    height: '100%',
+                    backgroundColor: 'var(--accent-yellow)',
+                    transition: 'width 0.3s ease'
+                  }} />
+                </div>
+                <p style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.75rem',
+                  marginTop: '0.25rem',
+                  opacity: 0.7
+                }}>
+                  Faltam {(m.meta - m.atual).toLocaleString()} {m.unidade}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Filtros */}
+        <div style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '0.5rem',
+          marginBottom: '1.5rem'
+        }}>
+          {categorias.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setCategoriaAtiva(cat.id as any)}
+              className={categoriaAtiva === cat.id ? 'badge' : ''}
+              style={{
+                padding: '0.5rem 1rem',
+                borderRadius: '0.75rem',
+                fontWeight: '600',
+                transition: 'all 0.2s',
+                backgroundColor: categoriaAtiva === cat.id ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+                color: categoriaAtiva === cat.id ? 'var(--chalkboard-bg)' : 'var(--chalk-dim)',
+                border: 'none',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                if (categoriaAtiva !== cat.id) {
+                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (categoriaAtiva !== cat.id) {
+                  e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                }
+              }}
+            >
+              {cat.emoji} {cat.label}
+            </button>
+          ))}
+
+          <button
+            onClick={() => setShowDesbloqueadas(!showDesbloqueadas)}
+            style={{
+              padding: '0.5rem 1rem',
+              borderRadius: '0.75rem',
+              fontWeight: '600',
+              transition: 'all 0.2s',
+              backgroundColor: showDesbloqueadas ? 'rgb(34, 197, 94)' : 'rgba(255, 255, 255, 0.1)',
+              color: showDesbloqueadas ? 'white' : 'var(--chalk-dim)',
+              border: 'none',
+              cursor: 'pointer',
+              marginLeft: 'auto'
+            }}
+            onMouseEnter={(e) => {
+              if (!showDesbloqueadas) {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (!showDesbloqueadas) {
+                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+              }
+            }}
+          >
+            ✓ Desbloqueadas
+          </button>
+        </div>
+
+        {/* Grid de Conquistas */}
+        <div className="cards-grid">
+          {conquistasFiltradas.map((conquista) => (
+            <div
+              key={conquista.id}
+              onClick={() => celebrarConquista(conquista)}
+              className="chalkboard-card"
+              style={{
+                padding: '1.25rem',
+                transition: 'transform 0.2s',
+                cursor: conquista.desbloqueada ? 'pointer' : 'default',
+                background: conquista.desbloqueada
+                  ? 'linear-gradient(to right, rgba(234, 179, 8, 0.2), rgba(249, 115, 22, 0.2))'
+                  : undefined,
+                border: conquista.desbloqueada
+                  ? '2px solid rgba(234, 179, 8, 0.3)'
+                  : conquista.raras
+                  ? '2px solid rgba(168, 85, 247, 0.5)'
+                  : undefined,
+                opacity: conquista.desbloqueada ? 1 : 0.7
+              }}
+              onMouseEnter={(e) => {
+                if (conquista.desbloqueada) {
+                  e.currentTarget.style.transform = 'scale(1.02)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                <div style={{
+                  fontSize: '3rem',
+                  filter: conquista.desbloqueada ? 'none' : 'grayscale(100%)',
+                  opacity: conquista.desbloqueada ? 1 : 0.5
+                }}>
+                  {conquista.emoji}
+                </div>
+                <div style={{ flex: 1 }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    marginBottom: '0.25rem'
+                  }}>
+                    <h3 style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
+                      {conquista.nome}
+                    </h3>
+                    {conquista.raras && (
+                      <span style={{ color: 'rgb(168, 85, 247)', fontSize: '0.75rem' }}>RARA</span>
+                    )}
+                    {conquista.desbloqueada && (
+                      <span style={{ color: 'rgb(34, 197, 94)' }}>✓</span>
+                    )}
+                  </div>
+                  <p style={{
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.875rem',
+                    marginBottom: '0.5rem'
+                  }}>
+                    {conquista.descricao}
+                  </p>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between'
+                  }}>
+                    <span style={{ color: 'var(--chalk-dim)', fontSize: '0.75rem', opacity: 0.7 }}>
+                      {conquista.requisito}
+                    </span>
+                    <span style={{
+                      color: 'var(--accent-yellow)',
+                      fontWeight: 'bold',
+                      fontSize: '0.875rem'
+                    }}>
+                      +{conquista.fpReward} FP
+                    </span>
+                  </div>
+
+                  {!conquista.desbloqueada && conquista.progresso > 0 && (
+                    <div style={{ marginTop: '0.5rem' }}>
+                      <div style={{
+                        width: '100%',
+                        height: '0.5rem',
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        borderRadius: '0.25rem',
+                        overflow: 'hidden'
+                      }}>
+                        <div style={{
+                          width: `${conquista.progresso}%`,
+                          height: '100%',
+                          backgroundColor: 'var(--accent-yellow)',
+                          transition: 'width 0.3s ease'
+                        }} />
+                      </div>
+                      <p style={{
+                        color: 'var(--chalk-dim)',
+                        fontSize: '0.75rem',
+                        marginTop: '0.25rem',
+                        opacity: 0.7
+                      }}>
+                        {conquista.progresso}% completo
+                      </p>
+                    </div>
+                  )}
+
+                  {conquista.desbloqueada && conquista.dataDesbloqueio && (
+                    <p style={{
+                      color: 'var(--chalk-dim)',
+                      fontSize: '0.75rem',
+                      marginTop: '0.5rem',
+                      opacity: 0.5
+                    }}>
+                      Desbloqueada em {conquista.dataDesbloqueio}
+                    </p>
+                  )}
                 </div>
               </div>
-              <div className="progress-ia">
-                <div
-                  className="progress-ia-bar"
-                  style={{ width: `${Math.min((m.atual / m.meta) * 100, 100)}%` }}
-                />
-              </div>
-              <p className="text-white/50 text-xs mt-1">
-                Faltam {(m.meta - m.atual).toLocaleString()} {m.unidade}
-              </p>
             </div>
           ))}
         </div>
-      </div>
 
-      {/* Filtros */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        {categorias.map((cat) => (
-          <button
-            key={cat.id}
-            onClick={() => setCategoriaAtiva(cat.id as any)}
-            className={`px-4 py-2 rounded-xl font-semibold transition ${
-              categoriaAtiva === cat.id
-                ? 'bg-yellow-400 text-slate-900'
-                : 'bg-white/10 text-white/70 hover:bg-white/20'
-            }`}
-          >
-            {cat.emoji} {cat.label}
-          </button>
-        ))}
+        {conquistasFiltradas.length === 0 && (
+          <div className="chalkboard-card" style={{ padding: '2rem', textAlign: 'center' }}>
+            <span style={{ fontSize: '4rem', marginBottom: '1rem', display: 'block' }}>🔍</span>
+            <p style={{ color: 'var(--chalk-dim)' }}>Nenhuma conquista encontrada nesta categoria</p>
+          </div>
+        )}
 
-        <button
-          onClick={() => setShowDesbloqueadas(!showDesbloqueadas)}
-          className={`px-4 py-2 rounded-xl font-semibold transition ml-auto ${
-            showDesbloqueadas
-              ? 'bg-green-500 text-white'
-              : 'bg-white/10 text-white/70 hover:bg-white/20'
-          }`}
+        {/* Dica */}
+        <div
+          className="card"
+          style={{
+            padding: '1.5rem',
+            marginTop: '2rem',
+            background: 'linear-gradient(to right, rgba(6, 182, 212, 0.2), rgba(59, 130, 246, 0.2))',
+            border: '2px solid rgba(6, 182, 212, 0.3)'
+          }}
         >
-          ✓ Desbloqueadas
-        </button>
-      </div>
-
-      {/* Grid de Conquistas */}
-      <div className="grid md:grid-cols-2 gap-4">
-        {conquistasFiltradas.map((conquista) => (
-          <div
-            key={conquista.id}
-            onClick={() => celebrarConquista(conquista)}
-            className={`card-ia p-5 transition cursor-pointer hover:scale-[1.02] ${
-              conquista.desbloqueada
-                ? 'bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border-2 border-yellow-400/30'
-                : 'opacity-70'
-            } ${conquista.raras ? 'ring-2 ring-purple-400/50' : ''}`}
-          >
-            <div className="flex items-start gap-4">
-              <div className={`text-5xl ${conquista.desbloqueada ? '' : 'grayscale opacity-50'}`}>
-                {conquista.emoji}
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <h3 className="text-white font-bold">{conquista.nome}</h3>
-                  {conquista.raras && <span className="text-purple-400 text-xs">RARA</span>}
-                  {conquista.desbloqueada && <span className="text-green-400">✓</span>}
-                </div>
-                <p className="text-white/60 text-sm mb-2">{conquista.descricao}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-white/50 text-xs">{conquista.requisito}</span>
-                  <span className="text-yellow-300 font-bold text-sm">+{conquista.fpReward} FP</span>
-                </div>
-
-                {!conquista.desbloqueada && conquista.progresso > 0 && (
-                  <div className="mt-2">
-                    <div className="progress-ia h-2">
-                      <div
-                        className="progress-ia-bar"
-                        style={{ width: `${conquista.progresso}%` }}
-                      />
-                    </div>
-                    <p className="text-white/50 text-xs mt-1">{conquista.progresso}% completo</p>
-                  </div>
-                )}
-
-                {conquista.desbloqueada && conquista.dataDesbloqueio && (
-                  <p className="text-white/40 text-xs mt-2">
-                    Desbloqueada em {conquista.dataDesbloqueio}
-                  </p>
-                )}
-              </div>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+            <span style={{ fontSize: '2.5rem' }}>💡</span>
+            <div>
+              <h3 style={{
+                color: 'var(--chalk-white)',
+                fontWeight: 'bold',
+                marginBottom: '0.5rem',
+                fontFamily: 'var(--font-chalk)'
+              }}>
+                Dica para Desbloquear Mais
+              </h3>
+              <ul style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.875rem',
+                listStyle: 'none',
+                padding: 0,
+                margin: 0
+              }}>
+                <li style={{ marginBottom: '0.25rem' }}>• Faca simulados diariamente para manter sua streak</li>
+                <li style={{ marginBottom: '0.25rem' }}>• Use o Pomodoro para ganhar FP enquanto estuda</li>
+                <li style={{ marginBottom: '0.25rem' }}>• Desafie amigos no modo Batalha</li>
+                <li>• Convide amigos para ganhar conquistas sociais</li>
+              </ul>
             </div>
           </div>
-        ))}
-      </div>
-
-      {conquistasFiltradas.length === 0 && (
-        <div className="card-ia p-8 text-center">
-          <span className="text-6xl mb-4 block">🔍</span>
-          <p className="text-white/70">Nenhuma conquista encontrada nesta categoria</p>
         </div>
-      )}
 
-      {/* Dica */}
-      <div className="card-ia p-6 mt-8 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border-2 border-cyan-400/30">
-        <div className="flex items-start gap-4">
-          <span className="text-4xl">💡</span>
-          <div>
-            <h3 className="text-white font-bold mb-2">Dica para Desbloquear Mais</h3>
-            <ul className="text-white/70 text-sm space-y-1">
-              <li>• Faca simulados diariamente para manter sua streak</li>
-              <li>• Use o Pomodoro para ganhar FP enquanto estuda</li>
-              <li>• Desafie amigos no modo Batalha</li>
-              <li>• Convide amigos para ganhar conquistas sociais</li>
-            </ul>
-          </div>
+        {/* Footer */}
+        <div className="footer">
+          <button
+            onClick={() => router.push('/enem')}
+            className="btn btn-yellow"
+          >
+            ← Voltar ao Dashboard
+          </button>
         </div>
       </div>
-
-      <ChalkBackToTop />
     </div>
   );
 }

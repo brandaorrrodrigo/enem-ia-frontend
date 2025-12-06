@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Ferramenta {
@@ -72,112 +71,324 @@ export default function FerramentasPage() {
   };
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div className="min-h-screen py-8 px-4" style={{ backgroundColor: 'var(--chalkboard-bg)' }}>
       <FloatingNav />
-      <div className="mb-8 pt-16">
-        <h1 className="title-ia flex items-center gap-3 mb-2">🛠️ Ferramentas Tecnologicas</h1>
-        <p className="subtitle-ia mb-4">Apps e recursos para turbinar seus estudos</p>
+
+      {/* Header */}
+      <div className="max-w-7xl mx-auto mb-8 pt-16">
+        <h1 className="text-4xl md:text-5xl font-bold mb-3 flex items-center gap-3" style={{
+          color: 'var(--chalk-white)',
+          fontFamily: 'var(--font-handwriting)'
+        }}>
+          🛠️ Ferramentas Tecnologicas
+        </h1>
+        <p className="text-lg md:text-xl" style={{ color: 'var(--chalk-dim)' }}>
+          Apps e recursos para turbinar seus estudos
+        </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="stat-ia">
-          <span className="stat-ia-value">{FERRAMENTAS.length}</span>
-          <span className="stat-ia-label">Ferramentas</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value text-green-400">{ferramentasInternas.length}</span>
-          <span className="stat-ia-label">ENEM-IA</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value text-blue-400">{ferramentasExternas.length}</span>
-          <span className="stat-ia-label">Externas</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value text-yellow-300">{FERRAMENTAS.filter(f => f.gratuito).length}</span>
-          <span className="stat-ia-label">Gratuitas</span>
-        </div>
-      </div>
-
-      <div className="card-ia mb-8">
-        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
-          <div>
-            <p className="text-white/60 text-sm mb-2">Categoria:</p>
-            <div className="flex flex-wrap gap-2">
-              {CATEGORIAS.map((cat) => (
-                <button key={cat.id} onClick={() => setCategoriaAtiva(cat.id)} className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition flex items-center gap-1 ${categoriaAtiva === cat.id ? 'bg-yellow-400 text-slate-900' : 'bg-white/10 text-white/70 hover:bg-white/20'}`}>
-                  <span>{cat.emoji}</span><span>{cat.nome}</span>
-                </button>
-              ))}
+      <div className="max-w-7xl mx-auto">
+        {/* Stats Cards */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div className="card p-4 text-center" style={{
+            backgroundColor: 'var(--card-bg)',
+            borderColor: 'var(--border-color)',
+            borderWidth: '2px',
+            borderStyle: 'solid',
+            borderRadius: '0.5rem'
+          }}>
+            <div className="text-3xl font-bold mb-1" style={{ color: 'var(--chalk-white)' }}>
+              {FERRAMENTAS.length}
             </div>
+            <div className="text-sm" style={{ color: 'var(--chalk-dim)' }}>Ferramentas</div>
           </div>
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input type="checkbox" checked={apenasInternas} onChange={(e) => setApenasInternas(e.target.checked)} className="w-5 h-5 rounded accent-yellow-400" />
-            <span className="text-white/70">Apenas ferramentas ENEM-IA</span>
-          </label>
-        </div>
-      </div>
 
-      <div className="mb-8">
-        <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-2">🌟 Ferramentas ENEM-IA</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {ferramentasFiltradas.filter(f => f.interno).map((ferramenta) => (
-            <div key={ferramenta.id} onClick={() => handleClick(ferramenta)} className="card-ia hover:scale-[1.02] transition-all cursor-pointer group relative">
-              <div className="absolute top-3 right-3">
-                <span className="px-2 py-0.5 bg-green-500/20 text-green-300 rounded-full text-xs font-bold">ENEM-IA</span>
-              </div>
-              <div className={`w-14 h-14 bg-gradient-to-br ${ferramenta.cor} rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition`}>
-                {ferramenta.icone}
-              </div>
-              <h3 className="text-white font-bold mb-2">{ferramenta.nome}</h3>
-              <p className="text-white/60 text-sm mb-4">{ferramenta.descricao}</p>
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-white/40 capitalize">{ferramenta.categoria}</span>
-                <button className="btn-ia text-sm py-1 px-3">Acessar</button>
+          <div className="card p-4 text-center" style={{
+            backgroundColor: 'var(--card-bg)',
+            borderColor: 'var(--border-color)',
+            borderWidth: '2px',
+            borderStyle: 'solid',
+            borderRadius: '0.5rem'
+          }}>
+            <div className="text-3xl font-bold mb-1" style={{ color: '#4ade80' }}>
+              {ferramentasInternas.length}
+            </div>
+            <div className="text-sm" style={{ color: 'var(--chalk-dim)' }}>ENEM-IA</div>
+          </div>
+
+          <div className="card p-4 text-center" style={{
+            backgroundColor: 'var(--card-bg)',
+            borderColor: 'var(--border-color)',
+            borderWidth: '2px',
+            borderStyle: 'solid',
+            borderRadius: '0.5rem'
+          }}>
+            <div className="text-3xl font-bold mb-1" style={{ color: '#60a5fa' }}>
+              {ferramentasExternas.length}
+            </div>
+            <div className="text-sm" style={{ color: 'var(--chalk-dim)' }}>Externas</div>
+          </div>
+
+          <div className="card p-4 text-center" style={{
+            backgroundColor: 'var(--card-bg)',
+            borderColor: 'var(--border-color)',
+            borderWidth: '2px',
+            borderStyle: 'solid',
+            borderRadius: '0.5rem'
+          }}>
+            <div className="text-3xl font-bold mb-1" style={{ color: 'var(--accent-yellow)' }}>
+              {FERRAMENTAS.filter(f => f.gratuito).length}
+            </div>
+            <div className="text-sm" style={{ color: 'var(--chalk-dim)' }}>Gratuitas</div>
+          </div>
+        </div>
+
+        {/* Filtros */}
+        <div className="card p-6 mb-8" style={{
+          backgroundColor: 'var(--card-bg)',
+          borderColor: 'var(--border-color)',
+          borderWidth: '2px',
+          borderStyle: 'solid',
+          borderRadius: '0.75rem'
+        }}>
+          <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+            <div>
+              <p className="text-sm mb-3 font-semibold" style={{ color: 'var(--chalk-dim)' }}>
+                Categoria:
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {CATEGORIAS.map((cat) => (
+                  <button
+                    key={cat.id}
+                    onClick={() => setCategoriaAtiva(cat.id)}
+                    className="px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-2"
+                    style={{
+                      backgroundColor: categoriaAtiva === cat.id ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+                      color: categoriaAtiva === cat.id ? 'var(--chalkboard-bg)' : 'var(--chalk-dim)',
+                      border: categoriaAtiva === cat.id ? 'none' : '2px solid rgba(255, 255, 255, 0.2)'
+                    }}
+                  >
+                    <span>{cat.emoji}</span>
+                    <span>{cat.nome}</span>
+                  </button>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
-      </div>
 
-      {!apenasInternas && (
-        <div className="mb-8">
-          <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-2">🔗 Ferramentas Externas Recomendadas</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {ferramentasFiltradas.filter(f => !f.interno).map((ferramenta) => (
-              <div key={ferramenta.id} onClick={() => handleClick(ferramenta)} className="card-ia hover:scale-[1.02] transition-all cursor-pointer group relative">
-                <div className="absolute top-3 right-3">
-                  {ferramenta.gratuito ? (
-                    <span className="px-2 py-0.5 bg-blue-500/20 text-blue-300 rounded-full text-xs font-bold">Gratuito</span>
-                  ) : (
-                    <span className="px-2 py-0.5 bg-yellow-500/20 text-yellow-300 rounded-full text-xs font-bold">Pago</span>
-                  )}
+            <label className="flex items-center gap-3 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={apenasInternas}
+                onChange={(e) => setApenasInternas(e.target.checked)}
+                className="w-5 h-5 rounded"
+                style={{ accentColor: 'var(--accent-yellow)' }}
+              />
+              <span style={{ color: 'var(--chalk-dim)' }}>Apenas ferramentas ENEM-IA</span>
+            </label>
+          </div>
+        </div>
+
+        {/* Ferramentas ENEM-IA */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold mb-6 flex items-center gap-2" style={{
+            color: 'var(--chalk-white)',
+            fontFamily: 'var(--font-handwriting)'
+          }}>
+            🌟 Ferramentas ENEM-IA
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {ferramentasFiltradas.filter(f => f.interno).map((ferramenta) => (
+              <div
+                key={ferramenta.id}
+                onClick={() => handleClick(ferramenta)}
+                className="chalkboard-card group cursor-pointer"
+                style={{
+                  backgroundColor: 'var(--card-bg)',
+                  borderColor: 'var(--border-color)',
+                  borderWidth: '2px',
+                  borderStyle: 'solid',
+                  borderRadius: '0.75rem',
+                  padding: '1.5rem',
+                  transition: 'all 0.3s ease',
+                  position: 'relative'
+                }}
+              >
+                <div className="absolute top-4 right-4">
+                  <span className="badge" style={{
+                    backgroundColor: 'rgba(74, 222, 128, 0.2)',
+                    color: '#4ade80',
+                    padding: '0.25rem 0.75rem',
+                    borderRadius: '9999px',
+                    fontSize: '0.75rem',
+                    fontWeight: 'bold'
+                  }}>
+                    ENEM-IA
+                  </span>
                 </div>
+
                 <div className={`w-14 h-14 bg-gradient-to-br ${ferramenta.cor} rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition`}>
                   {ferramenta.icone}
                 </div>
-                <h3 className="text-white font-bold mb-2">{ferramenta.nome}</h3>
-                <p className="text-white/60 text-sm mb-4">{ferramenta.descricao}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-white/40 capitalize">{ferramenta.categoria}</span>
-                  <button className="btn-ia-secondary text-sm py-1 px-3">Abrir ↗</button>
+
+                <h3 className="font-bold mb-2 text-lg" style={{ color: 'var(--chalk-white)' }}>
+                  {ferramenta.nome}
+                </h3>
+
+                <p className="text-sm mb-4" style={{ color: 'var(--chalk-dim)' }}>
+                  {ferramenta.descricao}
+                </p>
+
+                <div className="flex items-center justify-between mt-auto">
+                  <span className="text-xs capitalize" style={{ color: 'rgba(255, 255, 255, 0.4)' }}>
+                    {ferramenta.categoria}
+                  </span>
+                  <button className="btn btn-yellow" style={{
+                    backgroundColor: 'var(--accent-yellow)',
+                    color: 'var(--chalkboard-bg)',
+                    padding: '0.25rem 1rem',
+                    borderRadius: '0.375rem',
+                    fontSize: '0.875rem',
+                    fontWeight: 'bold',
+                    border: 'none',
+                    cursor: 'pointer'
+                  }}>
+                    Acessar
+                  </button>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      )}
 
-      <div className="card-ia bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-400/30">
-        <div className="flex items-start gap-4">
-          <span className="text-4xl">💡</span>
-          <div>
-            <h3 className="text-white font-bold mb-2">Dica: Combine as Ferramentas!</h3>
-            <p className="text-white/70">Use o Pomodoro para gerenciar seu tempo, os Cadernos Inteligentes para estudar, o Gerador de Questoes para praticar, e o Chatbot para tirar duvidas. Assim voce aproveita o maximo da plataforma ENEM-IA!</p>
+        {/* Ferramentas Externas */}
+        {!apenasInternas && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold mb-6 flex items-center gap-2" style={{
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-handwriting)'
+            }}>
+              🔗 Ferramentas Externas Recomendadas
+            </h2>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {ferramentasFiltradas.filter(f => !f.interno).map((ferramenta) => (
+                <div
+                  key={ferramenta.id}
+                  onClick={() => handleClick(ferramenta)}
+                  className="chalkboard-card group cursor-pointer"
+                  style={{
+                    backgroundColor: 'var(--card-bg)',
+                    borderColor: 'var(--border-color)',
+                    borderWidth: '2px',
+                    borderStyle: 'solid',
+                    borderRadius: '0.75rem',
+                    padding: '1.5rem',
+                    transition: 'all 0.3s ease',
+                    position: 'relative'
+                  }}
+                >
+                  <div className="absolute top-4 right-4">
+                    {ferramenta.gratuito ? (
+                      <span className="badge" style={{
+                        backgroundColor: 'rgba(96, 165, 250, 0.2)',
+                        color: '#60a5fa',
+                        padding: '0.25rem 0.75rem',
+                        borderRadius: '9999px',
+                        fontSize: '0.75rem',
+                        fontWeight: 'bold'
+                      }}>
+                        Gratuito
+                      </span>
+                    ) : (
+                      <span className="badge" style={{
+                        backgroundColor: 'rgba(250, 204, 21, 0.2)',
+                        color: '#facc15',
+                        padding: '0.25rem 0.75rem',
+                        borderRadius: '9999px',
+                        fontSize: '0.75rem',
+                        fontWeight: 'bold'
+                      }}>
+                        Pago
+                      </span>
+                    )}
+                  </div>
+
+                  <div className={`w-14 h-14 bg-gradient-to-br ${ferramenta.cor} rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition`}>
+                    {ferramenta.icone}
+                  </div>
+
+                  <h3 className="font-bold mb-2 text-lg" style={{ color: 'var(--chalk-white)' }}>
+                    {ferramenta.nome}
+                  </h3>
+
+                  <p className="text-sm mb-4" style={{ color: 'var(--chalk-dim)' }}>
+                    {ferramenta.descricao}
+                  </p>
+
+                  <div className="flex items-center justify-between mt-auto">
+                    <span className="text-xs capitalize" style={{ color: 'rgba(255, 255, 255, 0.4)' }}>
+                      {ferramenta.categoria}
+                    </span>
+                    <button className="btn" style={{
+                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                      color: 'var(--chalk-white)',
+                      padding: '0.25rem 1rem',
+                      borderRadius: '0.375rem',
+                      fontSize: '0.875rem',
+                      fontWeight: 'bold',
+                      border: '2px solid rgba(255, 255, 255, 0.2)',
+                      cursor: 'pointer'
+                    }}>
+                      Abrir ↗
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Dica */}
+        <div className="card p-6" style={{
+          backgroundColor: 'rgba(168, 85, 247, 0.15)',
+          borderColor: 'rgba(168, 85, 247, 0.3)',
+          borderWidth: '2px',
+          borderStyle: 'solid',
+          borderRadius: '0.75rem'
+        }}>
+          <div className="flex items-start gap-4">
+            <span className="text-4xl">💡</span>
+            <div>
+              <h3 className="font-bold mb-2 text-lg" style={{ color: 'var(--chalk-white)' }}>
+                Dica: Combine as Ferramentas!
+              </h3>
+              <p style={{ color: 'var(--chalk-dim)' }}>
+                Use o Pomodoro para gerenciar seu tempo, os Cadernos Inteligentes para estudar, o Gerador de Questoes para praticar, e o Chatbot para tirar duvidas. Assim voce aproveita o maximo da plataforma ENEM-IA!
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <ChalkBackToTop />
+        {/* Footer */}
+        <div className="footer mt-12 pt-8 pb-4 text-center" style={{
+          borderTop: '2px solid var(--border-color)'
+        }}>
+          <a
+            href="/enem"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg transition"
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+              color: 'var(--chalk-white)',
+              border: '2px solid rgba(255, 255, 255, 0.2)',
+              textDecoration: 'none',
+              fontWeight: '600'
+            }}
+          >
+            ← Voltar ao Dashboard
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

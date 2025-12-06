@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Message {
@@ -290,29 +289,57 @@ Como posso te ajudar?`;
   };
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
       <FloatingNav />
 
       {/* Header */}
-      <div className="mb-6 pt-16">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div className="header" style={{ marginBottom: '2rem', paddingTop: '4rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.5rem' }}>
           <div>
-            <h1 className="title-ia flex items-center gap-3 mb-2">
+            <h1 style={{
+              color: 'var(--chalk-white)',
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              marginBottom: '0.5rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem',
+              fontFamily: 'var(--font-handwriting)'
+            }}>
               🤖 Chatbot Assistente
             </h1>
-            <p className="subtitle-ia mb-0">
+            <p style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '1.125rem',
+              margin: 0
+            }}>
               Seu tutor virtual para duvidas do ENEM
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem',
+            flexWrap: 'wrap'
+          }}>
             <select
               value={disciplinaSelecionada}
               onChange={(e) => setDisciplinaSelecionada(e.target.value)}
-              className="input-ia"
+              className="input"
+              style={{
+                padding: '0.75rem 1rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                border: '2px solid var(--chalk-dim)',
+                borderRadius: '0.5rem',
+                color: 'var(--chalk-white)',
+                fontSize: '1rem',
+                cursor: 'pointer',
+                outline: 'none'
+              }}
             >
               {disciplinas.map((d) => (
-                <option key={d.value} value={d.value}>
+                <option key={d.value} value={d.value} style={{ backgroundColor: '#2d3748', color: 'white' }}>
                   {d.emoji} {d.label}
                 </option>
               ))}
@@ -320,7 +347,17 @@ Como posso te ajudar?`;
 
             <button
               onClick={limparHistorico}
-              className="btn-ia-secondary text-sm"
+              className="btn"
+              style={{
+                padding: '0.75rem 1.5rem',
+                backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                color: 'var(--chalk-white)',
+                border: '2px solid rgba(239, 68, 68, 0.5)',
+                borderRadius: '0.5rem',
+                fontSize: '0.875rem',
+                cursor: 'pointer',
+                transition: 'all 0.3s'
+              }}
               title="Limpar historico"
             >
               🗑️ Limpar
@@ -330,28 +367,66 @@ Como posso te ajudar?`;
       </div>
 
       {/* Chat Container */}
-      <div className="card-ia flex flex-col" style={{ height: 'calc(100vh - 280px)', minHeight: '450px' }}>
+      <div className="card" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: 'calc(100vh - 280px)',
+        minHeight: '450px',
+        backgroundColor: 'rgba(255, 255, 255, 0.05)',
+        backdropFilter: 'blur(10px)',
+        border: '3px solid var(--chalk-dim)',
+        borderRadius: '1rem',
+        padding: 0,
+        overflow: 'hidden'
+      }}>
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        <div style={{
+          flex: 1,
+          overflowY: 'auto',
+          padding: '1rem',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1rem'
+        }}>
           {messages.map((message) => (
             <div
               key={message.id}
-              className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
+              style={{
+                display: 'flex',
+                justifyContent: message.role === 'user' ? 'flex-end' : 'flex-start'
+              }}
             >
               <div
-                className={`max-w-[80%] rounded-2xl p-4 ${
-                  message.role === 'user'
-                    ? 'bg-yellow-300/20 text-white rounded-br-sm'
-                    : 'bg-white/10 text-white rounded-bl-sm'
-                }`}
+                style={{
+                  maxWidth: '80%',
+                  borderRadius: '1rem',
+                  padding: '1rem',
+                  backgroundColor: message.role === 'user'
+                    ? 'rgba(251, 191, 36, 0.2)'
+                    : 'rgba(255, 255, 255, 0.1)',
+                  color: 'var(--chalk-white)',
+                  borderBottomRightRadius: message.role === 'user' ? '0.25rem' : '1rem',
+                  borderBottomLeftRadius: message.role === 'assistant' ? '0.25rem' : '1rem'
+                }}
               >
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+                  <span style={{ fontSize: '1.5rem' }}>
                     {message.role === 'user' ? '👤' : '🤖'}
                   </span>
                   <div>
-                    <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>
-                    <p className="text-white/40 text-xs mt-2">
+                    <p style={{
+                      whiteSpace: 'pre-wrap',
+                      lineHeight: '1.6',
+                      margin: 0
+                    }}>
+                      {message.content}
+                    </p>
+                    <p style={{
+                      color: 'var(--chalk-dim)',
+                      fontSize: '0.75rem',
+                      marginTop: '0.5rem',
+                      margin: 0
+                    }}>
                       {new Date(message.timestamp).toLocaleTimeString('pt-BR', {
                         hour: '2-digit',
                         minute: '2-digit',
@@ -364,14 +439,40 @@ Como posso te ajudar?`;
           ))}
 
           {loading && (
-            <div className="flex justify-start">
-              <div className="bg-white/10 rounded-2xl p-4 rounded-bl-sm">
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">🤖</span>
-                  <div className="flex gap-1">
-                    <span className="w-2 h-2 bg-yellow-300 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
-                    <span className="w-2 h-2 bg-yellow-300 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
-                    <span className="w-2 h-2 bg-yellow-300 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></span>
+            <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                borderRadius: '1rem',
+                borderBottomLeftRadius: '0.25rem',
+                padding: '1rem'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🤖</span>
+                  <div style={{ display: 'flex', gap: '0.25rem' }}>
+                    <span style={{
+                      width: '0.5rem',
+                      height: '0.5rem',
+                      backgroundColor: 'var(--accent-yellow)',
+                      borderRadius: '50%',
+                      animation: 'bounce 1s infinite',
+                      animationDelay: '0ms'
+                    }}></span>
+                    <span style={{
+                      width: '0.5rem',
+                      height: '0.5rem',
+                      backgroundColor: 'var(--accent-yellow)',
+                      borderRadius: '50%',
+                      animation: 'bounce 1s infinite',
+                      animationDelay: '150ms'
+                    }}></span>
+                    <span style={{
+                      width: '0.5rem',
+                      height: '0.5rem',
+                      backgroundColor: 'var(--accent-yellow)',
+                      borderRadius: '50%',
+                      animation: 'bounce 1s infinite',
+                      animationDelay: '300ms'
+                    }}></span>
                   </div>
                 </div>
               </div>
@@ -383,14 +484,40 @@ Como posso te ajudar?`;
 
         {/* Sugestoes */}
         {messages.length <= 1 && (
-          <div className="px-4 pb-4">
-            <p className="text-white/60 text-sm mb-3">💡 Sugestoes de perguntas:</p>
-            <div className="flex flex-wrap gap-2">
+          <div style={{ padding: '0 1rem 1rem 1rem' }}>
+            <p style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem',
+              marginBottom: '0.75rem'
+            }}>
+              💡 Sugestoes de perguntas:
+            </p>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '0.5rem'
+            }}>
               {sugestoes.map((sug, idx) => (
                 <button
                   key={idx}
                   onClick={() => usarSugestao(sug.texto)}
-                  className="btn-ia-sm text-xs flex items-center gap-1 hover:scale-105 transition"
+                  className="btn"
+                  style={{
+                    padding: '0.5rem 1rem',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    color: 'var(--chalk-white)',
+                    border: '2px solid var(--chalk-dim)',
+                    borderRadius: '0.5rem',
+                    fontSize: '0.75rem',
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    transition: 'transform 0.2s',
+                    whiteSpace: 'nowrap'
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                  onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                 >
                   <span>{sug.emoji}</span>
                   <span>{sug.texto}</span>
@@ -401,21 +528,46 @@ Como posso te ajudar?`;
         )}
 
         {/* Input */}
-        <div className="border-t border-white/10 p-4">
-          <div className="flex gap-3">
+        <div style={{
+          borderTop: '2px solid var(--chalk-dim)',
+          padding: '1rem'
+        }}>
+          <div style={{ display: 'flex', gap: '0.75rem' }}>
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && enviarMensagem()}
               placeholder="Digite sua duvida sobre o ENEM..."
-              className="input-ia flex-1"
+              className="input"
+              style={{
+                flex: 1,
+                padding: '0.75rem 1rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                border: '2px solid var(--chalk-dim)',
+                borderRadius: '0.5rem',
+                color: 'var(--chalk-white)',
+                fontSize: '1rem',
+                outline: 'none'
+              }}
               disabled={loading}
             />
             <button
               onClick={enviarMensagem}
               disabled={!input.trim() || loading}
-              className="btn-ia px-6 disabled:opacity-50"
+              className="btn btn-yellow"
+              style={{
+                padding: '0.75rem 1.5rem',
+                backgroundColor: 'var(--accent-yellow)',
+                color: '#1a202c',
+                border: 'none',
+                borderRadius: '0.5rem',
+                fontSize: '1rem',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                opacity: (!input.trim() || loading) ? 0.5 : 1,
+                transition: 'all 0.3s'
+              }}
             >
               {loading ? '⏳' : '📤'} Enviar
             </button>
@@ -424,11 +576,34 @@ Como posso te ajudar?`;
       </div>
 
       {/* Dicas */}
-      <div className="card-ia mt-6">
-        <h3 className="text-white font-bold mb-3 flex items-center gap-2">
+      <div className="card" style={{
+        marginTop: '1.5rem',
+        backgroundColor: 'rgba(255, 255, 255, 0.05)',
+        backdropFilter: 'blur(10px)',
+        border: '3px solid var(--chalk-dim)',
+        borderRadius: '1rem',
+        padding: '1.5rem'
+      }}>
+        <h3 style={{
+          color: 'var(--chalk-white)',
+          fontWeight: 'bold',
+          marginBottom: '0.75rem',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          fontSize: '1.25rem'
+        }}>
           💡 Dicas para usar o chatbot
         </h3>
-        <ul className="text-white/70 text-sm space-y-2">
+        <ul style={{
+          color: 'var(--chalk-dim)',
+          fontSize: '0.875rem',
+          margin: 0,
+          paddingLeft: '1.5rem',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '0.5rem'
+        }}>
           <li>📝 Seja especifico nas perguntas para respostas mais precisas</li>
           <li>📸 Descreva questoes que voce quer resolver</li>
           <li>🎯 Selecione a disciplina para respostas mais focadas</li>
@@ -436,7 +611,29 @@ Como posso te ajudar?`;
         </ul>
       </div>
 
-      <ChalkBackToTop />
+      {/* Footer */}
+      <div className="footer" style={{
+        marginTop: '2rem',
+        textAlign: 'center',
+        padding: '1.5rem'
+      }}>
+        <button
+          onClick={() => router.push('/enem')}
+          className="btn"
+          style={{
+            padding: '0.75rem 1.5rem',
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+            color: 'var(--chalk-white)',
+            border: '2px solid var(--chalk-dim)',
+            borderRadius: '0.5rem',
+            fontSize: '1rem',
+            cursor: 'pointer',
+            transition: 'all 0.3s'
+          }}
+        >
+          ← Voltar ao Menu ENEM
+        </button>
+      </div>
     </div>
   );
 }

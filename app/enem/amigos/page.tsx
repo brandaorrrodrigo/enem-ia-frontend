@@ -2,7 +2,6 @@
 
 import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 import ProfileCard from '@/components/social/ProfileCard';
 import FriendButton from '@/components/social/FriendButton';
@@ -88,274 +87,641 @@ function AmigosContent() {
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando amigos...</p>
+      <div style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'var(--chalkboard-bg)',
+        padding: '2rem'
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            width: '48px',
+            height: '48px',
+            border: '4px solid var(--chalk-dim)',
+            borderTopColor: 'var(--accent-yellow)',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite',
+            margin: '0 auto 1.5rem'
+          }}></div>
+          <p style={{
+            fontSize: '1.125rem',
+            fontWeight: '600',
+            color: 'var(--chalk-white)'
+          }}>Carregando amigos...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div style={{
+      minHeight: '100vh',
+      background: 'var(--chalkboard-bg)',
+      padding: '2rem 1rem'
+    }}>
       <FloatingNav />
-      {/* Header */}
-      <div className="mb-6 pt-16">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div>
-            <h1 className="title-ia flex items-center gap-3 mb-2">
-              👥 Amigos & Conexoes
-            </h1>
-            <p className="subtitle-ia mb-0">
-              Conecte-se com outros estudantes e crie sua rede!
-            </p>
-          </div>
 
-          {/* Stats */}
-          <div className="flex items-center gap-4">
-            <div className="stat-ia">
-              <span className="stat-ia-value">{seguindo.length}</span>
-              <span className="stat-ia-label">Seguindo</span>
-            </div>
-            <div className="stat-ia">
-              <span className="stat-ia-value">{seguidores.length}</span>
-              <span className="stat-ia-label">Seguidores</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Barra de busca */}
-      <div className="mb-6">
-        <div className="relative">
-          <input
-            type="text"
-            value={busca}
-            onChange={(e) => {
-              setBusca(e.target.value);
-              if (e.target.value) setActiveTab('buscar');
-              else setActiveTab('seguindo');
-            }}
-            placeholder="🔍 Buscar usuarios por nome..."
-            className="input-ia w-full py-3 pl-4 pr-10"
-          />
-          {busca && (
-            <button
-              onClick={() => {
-                setBusca('');
-                setActiveTab('seguindo');
-              }}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-white/50 hover:text-white"
-            >
-              ✕
-            </button>
-          )}
-        </div>
-      </div>
-
-      {/* Tabs */}
-      <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
-        <button
-          onClick={() => { setActiveTab('seguindo'); setBusca(''); }}
-          className={`px-4 py-2 rounded-xl font-semibold whitespace-nowrap transition ${
-            activeTab === 'seguindo'
-              ? 'bg-yellow-400 text-slate-900'
-              : 'bg-white/10 text-white/70 hover:bg-white/20'
-          }`}
-        >
-          ✓ Seguindo ({seguindo.length})
-        </button>
-        <button
-          onClick={() => { setActiveTab('seguidores'); setBusca(''); }}
-          className={`px-4 py-2 rounded-xl font-semibold whitespace-nowrap transition ${
-            activeTab === 'seguidores'
-              ? 'bg-yellow-400 text-slate-900'
-              : 'bg-white/10 text-white/70 hover:bg-white/20'
-          }`}
-        >
-          👥 Seguidores ({seguidores.length})
-        </button>
-        <button
-          onClick={() => { setActiveTab('sugestoes'); setBusca(''); }}
-          className={`px-4 py-2 rounded-xl font-semibold whitespace-nowrap transition ${
-            activeTab === 'sugestoes'
-              ? 'bg-yellow-400 text-slate-900'
-              : 'bg-white/10 text-white/70 hover:bg-white/20'
-          }`}
-        >
-          ✨ Sugestoes
-        </button>
-      </div>
-
-      {/* Conteudo */}
-      {activeTab === 'buscar' && busca && (
-        <div>
-          <p className="text-white/60 mb-4">
-            {usuariosFiltrados.length} resultado(s) para "{busca}"
-          </p>
-          {usuariosFiltrados.length > 0 ? (
-            <div className="space-y-3">
-              {usuariosFiltrados.map((usuario) => (
-                <ProfileCard
-                  key={usuario.id}
-                  user={usuario}
-                  compact
-                  onFollow={handleFollow}
-                  onUnfollow={handleUnfollow}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="card-ia p-8 text-center">
-              <span className="text-6xl mb-4 block">🔍</span>
-              <p className="text-white/70">Nenhum usuario encontrado</p>
-            </div>
-          )}
-        </div>
-      )}
-
-      {activeTab === 'seguindo' && (
-        <div>
-          {seguindo.length > 0 ? (
-            <div className="space-y-3">
-              {seguindo.map((usuario) => (
-                <ProfileCard
-                  key={usuario.id}
-                  user={usuario}
-                  compact
-                  onFollow={handleFollow}
-                  onUnfollow={handleUnfollow}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="card-ia p-8 text-center">
-              <span className="text-6xl mb-4 block">👥</span>
-              <p className="text-white/70 mb-4">Voce ainda nao segue ninguem</p>
-              <button
-                onClick={() => setActiveTab('sugestoes')}
-                className="btn-ia"
-              >
-                Ver Sugestoes
-              </button>
-            </div>
-          )}
-        </div>
-      )}
-
-      {activeTab === 'seguidores' && (
-        <div>
-          {seguidores.length > 0 ? (
-            <div className="space-y-3">
-              {seguidores.map((usuario) => (
-                <ProfileCard
-                  key={usuario.id}
-                  user={usuario}
-                  compact
-                  onFollow={handleFollow}
-                  onUnfollow={handleUnfollow}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="card-ia p-8 text-center">
-              <span className="text-6xl mb-4 block">📭</span>
-              <p className="text-white/70">Nenhum seguidor ainda</p>
-              <p className="text-white/50 text-sm mt-2">
-                Continue estudando e subindo no ranking para ganhar seguidores!
+      {/* Container principal */}
+      <div style={{
+        maxWidth: '1200px',
+        margin: '0 auto'
+      }}>
+        {/* Header */}
+        <div style={{
+          marginBottom: '2rem',
+          paddingTop: '4rem'
+        }}>
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1.5rem'
+          }}>
+            <div>
+              <h1 style={{
+                fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
+                fontWeight: '700',
+                color: 'var(--chalk-white)',
+                marginBottom: '0.5rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem',
+                textShadow: '2px 2px 0 rgba(0,0,0,0.3)'
+              }}>
+                👥 Amigos & Conexões
+              </h1>
+              <p style={{
+                fontSize: '1.125rem',
+                color: 'var(--chalk-dim)',
+                margin: 0
+              }}>
+                Conecte-se com outros estudantes e crie sua rede!
               </p>
             </div>
-          )}
-        </div>
-      )}
 
-      {activeTab === 'sugestoes' && (
-        <div>
-          <p className="text-white/60 mb-4">
-            Usuarios com FP e nivel similares ao seu
-          </p>
-          <div className="space-y-3">
-            {sugestoes.map((usuario) => (
-              <div key={usuario.id} className="card-ia p-4">
-                <div className="flex items-center gap-4">
-                  {/* Avatar */}
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-xl font-bold text-white flex-shrink-0">
-                    {usuario.nome.charAt(0)}
-                  </div>
-
-                  {/* Info */}
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <span className="text-white font-bold truncate">{usuario.nome}</span>
-                      <span className="text-lg">{usuario.liga === 'Ouro' ? '🥇' : usuario.liga === 'Platina' ? '💎' : '🥈'}</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-sm mt-1">
-                      <span className="text-yellow-300">{usuario.pontosFP.toLocaleString()} FP</span>
-                      <span className="text-white/50">#{usuario.posicaoRanking}</span>
-                      <span className="text-orange-400">{usuario.streakAtual}🔥</span>
-                    </div>
-                    <p className="text-white/50 text-xs mt-1">
-                      {usuario.seguidores} seguidores • {usuario.simuladosFeitos} simulados
-                    </p>
-                  </div>
-
-                  {/* Botoes */}
-                  <div className="flex flex-col gap-2">
-                    <FriendButton
-                      userId={usuario.id}
-                      userName={usuario.nome}
-                      isFollowing={usuario.isFollowing}
-                      onFollow={handleFollow}
-                      onUnfollow={handleUnfollow}
-                      size="sm"
-                    />
-                    <button
-                      onClick={() => router.push(`/enem/perfil/${usuario.id}`)}
-                      className="px-3 py-1.5 bg-white/10 text-white/70 rounded-lg text-xs font-semibold hover:bg-white/20 transition"
-                    >
-                      Ver Perfil
-                    </button>
-                  </div>
-                </div>
+            {/* Stats */}
+            <div style={{
+              display: 'flex',
+              gap: '1rem',
+              flexWrap: 'wrap'
+            }}>
+              <div style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                border: '2px solid rgba(255, 255, 255, 0.1)',
+                borderRadius: '12px',
+                padding: '1rem 1.5rem',
+                textAlign: 'center',
+                minWidth: '120px'
+              }}>
+                <div style={{
+                  fontSize: '2rem',
+                  fontWeight: '700',
+                  color: 'var(--accent-yellow)',
+                  marginBottom: '0.25rem'
+                }}>{seguindo.length}</div>
+                <div style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--chalk-dim)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em'
+                }}>Seguindo</div>
               </div>
-            ))}
+              <div style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                border: '2px solid rgba(255, 255, 255, 0.1)',
+                borderRadius: '12px',
+                padding: '1rem 1.5rem',
+                textAlign: 'center',
+                minWidth: '120px'
+              }}>
+                <div style={{
+                  fontSize: '2rem',
+                  fontWeight: '700',
+                  color: 'var(--accent-yellow)',
+                  marginBottom: '0.25rem'
+                }}>{seguidores.length}</div>
+                <div style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--chalk-dim)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em'
+                }}>Seguidores</div>
+              </div>
+            </div>
           </div>
+        </div>
 
-          <button className="w-full btn-ia-secondary mt-4 py-3">
-            📥 Carregar mais sugestoes
+        {/* Barra de busca */}
+        <div style={{ marginBottom: '1.5rem' }}>
+          <div style={{ position: 'relative' }}>
+            <input
+              type="text"
+              value={busca}
+              onChange={(e) => {
+                setBusca(e.target.value);
+                if (e.target.value) setActiveTab('buscar');
+                else setActiveTab('seguindo');
+              }}
+              placeholder="🔍 Buscar usuarios por nome..."
+              style={{
+                width: '100%',
+                padding: '0.875rem 2.5rem 0.875rem 1rem',
+                background: 'rgba(255, 255, 255, 0.05)',
+                border: '2px solid rgba(255, 255, 255, 0.1)',
+                borderRadius: '12px',
+                color: 'var(--chalk-white)',
+                fontSize: '1rem',
+                outline: 'none',
+                transition: 'all 0.2s'
+              }}
+              onFocus={(e) => {
+                e.target.style.borderColor = 'var(--accent-yellow)';
+                e.target.style.background = 'rgba(255, 255, 255, 0.08)';
+              }}
+              onBlur={(e) => {
+                e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                e.target.style.background = 'rgba(255, 255, 255, 0.05)';
+              }}
+            />
+            {busca && (
+              <button
+                onClick={() => {
+                  setBusca('');
+                  setActiveTab('seguindo');
+                }}
+                style={{
+                  position: 'absolute',
+                  right: '0.75rem',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  background: 'none',
+                  border: 'none',
+                  color: 'rgba(255, 255, 255, 0.5)',
+                  fontSize: '1.25rem',
+                  cursor: 'pointer',
+                  padding: '0.25rem',
+                  transition: 'color 0.2s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--chalk-white)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255, 255, 255, 0.5)'}
+              >
+                ✕
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Tabs */}
+        <div style={{
+          display: 'flex',
+          gap: '0.5rem',
+          marginBottom: '1.5rem',
+          overflowX: 'auto',
+          paddingBottom: '0.5rem'
+        }}>
+          <button
+            onClick={() => { setActiveTab('seguindo'); setBusca(''); }}
+            style={{
+              padding: '0.625rem 1rem',
+              borderRadius: '12px',
+              fontWeight: '600',
+              whiteSpace: 'nowrap',
+              transition: 'all 0.2s',
+              border: 'none',
+              cursor: 'pointer',
+              background: activeTab === 'seguindo' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+              color: activeTab === 'seguindo' ? '#1e293b' : 'rgba(255, 255, 255, 0.7)'
+            }}
+            onMouseEnter={(e) => {
+              if (activeTab !== 'seguindo') {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (activeTab !== 'seguindo') {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+              }
+            }}
+          >
+            ✓ Seguindo ({seguindo.length})
+          </button>
+          <button
+            onClick={() => { setActiveTab('seguidores'); setBusca(''); }}
+            style={{
+              padding: '0.625rem 1rem',
+              borderRadius: '12px',
+              fontWeight: '600',
+              whiteSpace: 'nowrap',
+              transition: 'all 0.2s',
+              border: 'none',
+              cursor: 'pointer',
+              background: activeTab === 'seguidores' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+              color: activeTab === 'seguidores' ? '#1e293b' : 'rgba(255, 255, 255, 0.7)'
+            }}
+            onMouseEnter={(e) => {
+              if (activeTab !== 'seguidores') {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (activeTab !== 'seguidores') {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+              }
+            }}
+          >
+            👥 Seguidores ({seguidores.length})
+          </button>
+          <button
+            onClick={() => { setActiveTab('sugestoes'); setBusca(''); }}
+            style={{
+              padding: '0.625rem 1rem',
+              borderRadius: '12px',
+              fontWeight: '600',
+              whiteSpace: 'nowrap',
+              transition: 'all 0.2s',
+              border: 'none',
+              cursor: 'pointer',
+              background: activeTab === 'sugestoes' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+              color: activeTab === 'sugestoes' ? '#1e293b' : 'rgba(255, 255, 255, 0.7)'
+            }}
+            onMouseEnter={(e) => {
+              if (activeTab !== 'sugestoes') {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (activeTab !== 'sugestoes') {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+              }
+            }}
+          >
+            ✨ Sugestões
           </button>
         </div>
-      )}
 
-      {/* Dica */}
-      <div className="card-ia p-6 mt-6 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border-2 border-cyan-400/30">
-        <div className="flex items-start gap-4">
-          <span className="text-4xl">💡</span>
+        {/* Conteudo */}
+        {activeTab === 'buscar' && busca && (
           <div>
-            <h3 className="text-white font-bold mb-2">Por que conectar com outros estudantes?</h3>
-            <ul className="text-white/70 text-sm space-y-1">
-              <li>✓ Veja o progresso dos seus amigos no feed</li>
-              <li>✓ Receba provocacoes quando alguem te ultrapassar</li>
-              <li>✓ Desafie amigos em competicoes diretas</li>
-              <li>✓ Ganhe FP bonus por indicar novos usuarios</li>
-            </ul>
+            <p style={{
+              color: 'var(--chalk-dim)',
+              marginBottom: '1rem'
+            }}>
+              {usuariosFiltrados.length} resultado(s) para "{busca}"
+            </p>
+            {usuariosFiltrados.length > 0 ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {usuariosFiltrados.map((usuario) => (
+                  <ProfileCard
+                    key={usuario.id}
+                    user={usuario}
+                    compact
+                    onFollow={handleFollow}
+                    onUnfollow={handleUnfollow}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div style={{
+                background: 'rgba(255, 255, 255, 0.03)',
+                border: '2px solid rgba(255, 255, 255, 0.1)',
+                borderRadius: '16px',
+                padding: '3rem 2rem',
+                textAlign: 'center'
+              }}>
+                <span style={{ fontSize: '4rem', display: 'block', marginBottom: '1rem' }}>🔍</span>
+                <p style={{ color: 'var(--chalk-dim)', margin: 0 }}>Nenhum usuario encontrado</p>
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeTab === 'seguindo' && (
+          <div>
+            {seguindo.length > 0 ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {seguindo.map((usuario) => (
+                  <ProfileCard
+                    key={usuario.id}
+                    user={usuario}
+                    compact
+                    onFollow={handleFollow}
+                    onUnfollow={handleUnfollow}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div style={{
+                background: 'rgba(255, 255, 255, 0.03)',
+                border: '2px solid rgba(255, 255, 255, 0.1)',
+                borderRadius: '16px',
+                padding: '3rem 2rem',
+                textAlign: 'center'
+              }}>
+                <span style={{ fontSize: '4rem', display: 'block', marginBottom: '1rem' }}>👥</span>
+                <p style={{ color: 'var(--chalk-dim)', marginBottom: '1rem' }}>Voce ainda não segue ninguém</p>
+                <button
+                  onClick={() => setActiveTab('sugestoes')}
+                  style={{
+                    padding: '0.75rem 1.5rem',
+                    background: 'var(--accent-yellow)',
+                    color: '#1e293b',
+                    border: 'none',
+                    borderRadius: '12px',
+                    fontWeight: '600',
+                    fontSize: '1rem',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s',
+                    boxShadow: '0 4px 0 rgba(0,0,0,0.2)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 6px 0 rgba(0,0,0,0.2)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 4px 0 rgba(0,0,0,0.2)';
+                  }}
+                >
+                  Ver Sugestões
+                </button>
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeTab === 'seguidores' && (
+          <div>
+            {seguidores.length > 0 ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {seguidores.map((usuario) => (
+                  <ProfileCard
+                    key={usuario.id}
+                    user={usuario}
+                    compact
+                    onFollow={handleFollow}
+                    onUnfollow={handleUnfollow}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div style={{
+                background: 'rgba(255, 255, 255, 0.03)',
+                border: '2px solid rgba(255, 255, 255, 0.1)',
+                borderRadius: '16px',
+                padding: '3rem 2rem',
+                textAlign: 'center'
+              }}>
+                <span style={{ fontSize: '4rem', display: 'block', marginBottom: '1rem' }}>📭</span>
+                <p style={{ color: 'var(--chalk-dim)', margin: 0 }}>Nenhum seguidor ainda</p>
+                <p style={{
+                  color: 'rgba(255, 255, 255, 0.4)',
+                  fontSize: '0.875rem',
+                  marginTop: '0.5rem'
+                }}>
+                  Continue estudando e subindo no ranking para ganhar seguidores!
+                </p>
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeTab === 'sugestoes' && (
+          <div>
+            <p style={{
+              color: 'var(--chalk-dim)',
+              marginBottom: '1rem'
+            }}>
+              Usuarios com FP e nivel similares ao seu
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              {sugestoes.map((usuario) => (
+                <div key={usuario.id} style={{
+                  background: 'rgba(255, 255, 255, 0.03)',
+                  border: '2px solid rgba(255, 255, 255, 0.1)',
+                  borderRadius: '16px',
+                  padding: '1rem'
+                }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '1rem',
+                    flexWrap: 'wrap'
+                  }}>
+                    {/* Avatar */}
+                    <div style={{
+                      width: '56px',
+                      height: '56px',
+                      borderRadius: '50%',
+                      background: 'linear-gradient(135deg, #a855f7, #ec4899)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '1.25rem',
+                      fontWeight: '700',
+                      color: 'white',
+                      flexShrink: 0
+                    }}>
+                      {usuario.nome.charAt(0)}
+                    </div>
+
+                    {/* Info */}
+                    <div style={{ flex: 1, minWidth: '200px' }}>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        marginBottom: '0.25rem'
+                      }}>
+                        <span style={{
+                          color: 'var(--chalk-white)',
+                          fontWeight: '700'
+                        }}>{usuario.nome}</span>
+                        <span style={{ fontSize: '1.125rem' }}>
+                          {usuario.liga === 'Ouro' ? '🥇' : usuario.liga === 'Platina' ? '💎' : '🥈'}
+                        </span>
+                      </div>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.75rem',
+                        fontSize: '0.875rem',
+                        marginTop: '0.25rem'
+                      }}>
+                        <span style={{ color: '#fbbf24' }}>{usuario.pontosFP.toLocaleString()} FP</span>
+                        <span style={{ color: 'rgba(255, 255, 255, 0.5)' }}>#{usuario.posicaoRanking}</span>
+                        <span style={{ color: '#fb923c' }}>{usuario.streakAtual}🔥</span>
+                      </div>
+                      <p style={{
+                        color: 'rgba(255, 255, 255, 0.5)',
+                        fontSize: '0.75rem',
+                        marginTop: '0.25rem',
+                        margin: 0
+                      }}>
+                        {usuario.seguidores} seguidores • {usuario.simuladosFeitos} simulados
+                      </p>
+                    </div>
+
+                    {/* Botoes */}
+                    <div style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.5rem'
+                    }}>
+                      <FriendButton
+                        userId={usuario.id}
+                        userName={usuario.nome}
+                        isFollowing={usuario.isFollowing}
+                        onFollow={handleFollow}
+                        onUnfollow={handleUnfollow}
+                        size="sm"
+                      />
+                      <button
+                        onClick={() => router.push(`/enem/perfil/${usuario.id}`)}
+                        style={{
+                          padding: '0.375rem 0.75rem',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          color: 'rgba(255, 255, 255, 0.7)',
+                          border: 'none',
+                          borderRadius: '8px',
+                          fontSize: '0.75rem',
+                          fontWeight: '600',
+                          cursor: 'pointer',
+                          transition: 'all 0.2s'
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)'}
+                        onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'}
+                      >
+                        Ver Perfil
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <button style={{
+              width: '100%',
+              padding: '0.875rem',
+              marginTop: '1rem',
+              background: 'rgba(255, 255, 255, 0.05)',
+              border: '2px solid rgba(255, 255, 255, 0.1)',
+              borderRadius: '12px',
+              color: 'var(--chalk-white)',
+              fontWeight: '600',
+              cursor: 'pointer',
+              transition: 'all 0.2s'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+            }}>
+              📥 Carregar mais sugestões
+            </button>
+          </div>
+        )}
+
+        {/* Dica */}
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(59, 130, 246, 0.15))',
+          border: '2px solid rgba(34, 211, 238, 0.3)',
+          borderRadius: '16px',
+          padding: '1.5rem',
+          marginTop: '1.5rem'
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <span style={{ fontSize: '2.5rem' }}>💡</span>
+            <div style={{ flex: 1 }}>
+              <h3 style={{
+                color: 'var(--chalk-white)',
+                fontWeight: '700',
+                marginBottom: '0.5rem',
+                fontSize: '1.125rem'
+              }}>Por que conectar com outros estudantes?</h3>
+              <ul style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.875rem',
+                listStyle: 'none',
+                padding: 0,
+                margin: 0
+              }}>
+                <li style={{ marginBottom: '0.25rem' }}>✓ Veja o progresso dos seus amigos no feed</li>
+                <li style={{ marginBottom: '0.25rem' }}>✓ Receba provocações quando alguém te ultrapassar</li>
+                <li style={{ marginBottom: '0.25rem' }}>✓ Desafie amigos em competições diretas</li>
+                <li style={{ marginBottom: '0.25rem' }}>✓ Ganhe FP bônus por indicar novos usuários</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      <ChalkBackToTop />
+        {/* Footer */}
+        <div style={{
+          marginTop: '3rem',
+          paddingTop: '2rem',
+          borderTop: '2px solid rgba(255, 255, 255, 0.1)',
+          textAlign: 'center'
+        }}>
+          <a
+            href="/enem"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              color: 'var(--accent-yellow)',
+              textDecoration: 'none',
+              fontWeight: '600',
+              transition: 'all 0.2s'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateX(-4px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateX(0)';
+            }}
+          >
+            ← Voltar ao Dashboard
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
+
 // Wrapper with Suspense for useSearchParams
 export default function AmigosPage() {
   return (
     <Suspense fallback={
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando amigos...</p>
+      <div style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'var(--chalkboard-bg)',
+        padding: '2rem'
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            width: '48px',
+            height: '48px',
+            border: '4px solid var(--chalk-dim)',
+            borderTopColor: 'var(--accent-yellow)',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite',
+            margin: '0 auto 1.5rem'
+          }}></div>
+          <p style={{
+            fontSize: '1.125rem',
+            fontWeight: '600',
+            color: 'var(--chalk-white)'
+          }}>Carregando amigos...</p>
         </div>
       </div>
     }>

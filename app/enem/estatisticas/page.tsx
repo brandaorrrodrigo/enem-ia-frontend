@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 
 interface DadosEstudo {
   data: string;
@@ -207,23 +206,52 @@ export default function EstatisticasPage() {
   const maxMinutos = Math.max(...grafico7Dias.map(d => d.minutos), 60);
 
   return (
-    <main className="min-h-screen bg-[#0D1F22] text-white pt-16 pb-24">
+    <main style={{
+      minHeight: '100vh',
+      backgroundColor: 'var(--chalkboard-bg)',
+      color: 'var(--chalk-white)',
+      paddingTop: '4rem',
+      paddingBottom: '6rem'
+    }}>
       <FloatingNav />
-      <ChalkBackToTop />
 
-      <div className="container-ia py-8">
+      <div className="container" style={{
+        maxWidth: '1200px',
+        margin: '0 auto',
+        padding: '2rem 1rem'
+      }}>
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="title-ia text-3xl md:text-4xl mb-4">
+        <div className="header" style={{
+          textAlign: 'center',
+          marginBottom: '3rem'
+        }}>
+          <h1 style={{
+            fontSize: 'clamp(2rem, 5vw, 3rem)',
+            fontWeight: 700,
+            color: 'var(--chalk-white)',
+            marginBottom: '1rem',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+          }}>
             📊 Estatísticas e Analytics
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p style={{
+            color: 'var(--chalk-dim)',
+            maxWidth: '600px',
+            margin: '0 auto',
+            fontSize: '1rem'
+          }}>
             Acompanhe seu progresso, identifique pontos fracos e visualize sua evolução rumo ao ENEM.
           </p>
         </div>
 
         {/* Seletor de Período */}
-        <div className="flex justify-center gap-2 mb-8">
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '0.5rem',
+          marginBottom: '2rem',
+          flexWrap: 'wrap'
+        }}>
           {[
             { id: '7dias', label: '7 dias' },
             { id: '30dias', label: '30 dias' },
@@ -232,11 +260,13 @@ export default function EstatisticasPage() {
             <button
               key={periodo.id}
               onClick={() => setPeriodoSelecionado(periodo.id as typeof periodoSelecionado)}
-              className={`px-4 py-2 rounded-lg font-medium transition-all ${
-                periodoSelecionado === periodo.id
-                  ? 'bg-emerald-600 text-white'
-                  : 'bg-white/10 text-gray-300 hover:bg-white/20'
-              }`}
+              className={periodoSelecionado === periodo.id ? 'btn btn-yellow' : 'btn'}
+              style={{
+                ...(periodoSelecionado !== periodo.id && {
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  color: 'var(--chalk-dim)'
+                })
+              }}
             >
               {periodo.label}
             </button>
@@ -244,78 +274,162 @@ export default function EstatisticasPage() {
         </div>
 
         {/* Estatísticas Gerais */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-emerald-400">{formatarTempo(estatisticasGerais.tempoTotal)}</div>
-            <div className="text-gray-400 text-sm">Tempo Total</div>
+        <div className="stats-bar" style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+          gap: '1rem',
+          marginBottom: '2rem'
+        }}>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{ color: 'var(--accent-green)' }}>
+              {formatarTempo(estatisticasGerais.tempoTotal)}
+            </div>
+            <div className="stat-label">Tempo Total</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-blue-400">{estatisticasGerais.questoesTotal}</div>
-            <div className="text-gray-400 text-sm">Questões</div>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{ color: 'var(--accent-blue)' }}>
+              {estatisticasGerais.questoesTotal}
+            </div>
+            <div className="stat-label">Questões</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-purple-400">{taxaAcerto}%</div>
-            <div className="text-gray-400 text-sm">Taxa de Acerto</div>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{ color: 'var(--accent-purple)' }}>
+              {taxaAcerto}%
+            </div>
+            <div className="stat-label">Taxa de Acerto</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-yellow-400">{estatisticasGerais.diasEstudados}</div>
-            <div className="text-gray-400 text-sm">Dias Ativos</div>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{ color: 'var(--accent-yellow)' }}>
+              {estatisticasGerais.diasEstudados}
+            </div>
+            <div className="stat-label">Dias Ativos</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-pink-400">{estatisticasGerais.mediaDiaria}min</div>
-            <div className="text-gray-400 text-sm">Média Diária</div>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{ color: 'var(--accent-pink)' }}>
+              {estatisticasGerais.mediaDiaria}min
+            </div>
+            <div className="stat-label">Média Diária</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-cyan-400">{previsaoNota}</div>
-            <div className="text-gray-400 text-sm">Nota Prevista</div>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{ color: 'var(--accent-cyan)' }}>
+              {previsaoNota}
+            </div>
+            <div className="stat-label">Nota Prevista</div>
           </div>
         </div>
 
         {/* Gráfico de Atividade (últimos 7 dias) */}
-        <div className="card-ia p-6 mb-8">
-          <h2 className="text-xl font-bold mb-4">📈 Atividade dos Últimos 7 Dias</h2>
-          <div className="flex items-end justify-between h-40 gap-2">
+        <div className="card" style={{ marginBottom: '2rem' }}>
+          <h2 className="card-title">📈 Atividade dos Últimos 7 Dias</h2>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-end',
+            justifyContent: 'space-between',
+            height: '160px',
+            gap: '0.5rem'
+          }}>
             {grafico7Dias.map((dia, idx) => (
-              <div key={idx} className="flex-1 flex flex-col items-center">
-                <div className="w-full flex flex-col items-center justify-end h-32">
+              <div key={idx} style={{
+                flex: 1,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center'
+              }}>
+                <div style={{
+                  width: '100%',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'flex-end',
+                  height: '120px'
+                }}>
                   <div
-                    className={`w-full rounded-t transition-all ${
-                      dia.minutos > 0 ? 'bg-gradient-to-t from-emerald-600 to-emerald-400' : 'bg-white/10'
-                    }`}
-                    style={{ height: `${Math.max((dia.minutos / maxMinutos) * 100, 5)}%` }}
+                    style={{
+                      width: '100%',
+                      borderRadius: '4px 4px 0 0',
+                      background: dia.minutos > 0
+                        ? 'linear-gradient(to top, var(--accent-green), rgba(52, 211, 153, 0.6))'
+                        : 'rgba(255, 255, 255, 0.1)',
+                      height: `${Math.max((dia.minutos / maxMinutos) * 100, 5)}%`,
+                      transition: 'all 0.3s ease'
+                    }}
                   />
                 </div>
-                <div className="text-xs text-gray-400 mt-2">{dia.dia}</div>
-                <div className="text-xs text-gray-500">{dia.minutos > 0 ? `${dia.minutos}m` : '-'}</div>
+                <div style={{
+                  fontSize: '0.75rem',
+                  color: 'var(--chalk-dim)',
+                  marginTop: '0.5rem'
+                }}>
+                  {dia.dia}
+                </div>
+                <div style={{
+                  fontSize: '0.7rem',
+                  color: 'rgba(255, 255, 255, 0.4)'
+                }}>
+                  {dia.minutos > 0 ? `${dia.minutos}m` : '-'}
+                </div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Metas */}
-        <div className="card-ia p-6 mb-8">
-          <h2 className="text-xl font-bold mb-4">🎯 Suas Metas</h2>
-          <div className="grid md:grid-cols-2 gap-4">
+        <div className="card" style={{ marginBottom: '2rem' }}>
+          <h2 className="card-title">🎯 Suas Metas</h2>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '1rem'
+          }}>
             {metas.map(meta => {
               const progresso = Math.min((meta.atual / meta.meta) * 100, 100);
               const concluida = meta.atual >= meta.meta;
 
               return (
-                <div key={meta.id} className={`bg-white/5 rounded-lg p-4 ${concluida ? 'border border-emerald-500/50' : ''}`}>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-medium">{meta.descricao}</span>
-                    <span className={`text-sm ${concluida ? 'text-emerald-400' : 'text-gray-400'}`}>
+                <div key={meta.id} style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderRadius: '8px',
+                  padding: '1rem',
+                  border: concluida ? '1px solid var(--accent-green)' : 'none'
+                }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    marginBottom: '0.5rem'
+                  }}>
+                    <span style={{ fontWeight: 500, color: 'var(--chalk-white)' }}>
+                      {meta.descricao}
+                    </span>
+                    <span style={{
+                      fontSize: '0.875rem',
+                      color: concluida ? 'var(--accent-green)' : 'var(--chalk-dim)'
+                    }}>
                       {meta.atual}/{meta.meta} {meta.unidade}
                     </span>
                   </div>
-                  <div className="progress-ia">
-                    <div
-                      className={`progress-bar-ia ${concluida ? 'bg-emerald-500' : 'bg-blue-500'}`}
-                      style={{ width: `${progresso}%` }}
-                    />
+                  <div style={{
+                    width: '100%',
+                    height: '8px',
+                    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                    borderRadius: '4px',
+                    overflow: 'hidden'
+                  }}>
+                    <div style={{
+                      width: `${progresso}%`,
+                      height: '100%',
+                      backgroundColor: concluida ? 'var(--accent-green)' : 'var(--accent-blue)',
+                      transition: 'width 0.3s ease'
+                    }} />
                   </div>
                   {concluida && (
-                    <div className="text-xs text-emerald-400 mt-1">✅ Meta atingida!</div>
+                    <div style={{
+                      fontSize: '0.75rem',
+                      color: 'var(--accent-green)',
+                      marginTop: '0.25rem'
+                    }}>
+                      ✅ Meta atingida!
+                    </div>
                   )}
                 </div>
               );
@@ -324,49 +438,95 @@ export default function EstatisticasPage() {
         </div>
 
         {/* Desempenho por Área */}
-        <div className="card-ia p-6 mb-8">
-          <h2 className="text-xl font-bold mb-4">📚 Desempenho por Área</h2>
-          <div className="space-y-4">
+        <div className="card" style={{ marginBottom: '2rem' }}>
+          <h2 className="card-title">📚 Desempenho por Área</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {desempenhoAreas.map(area => {
               const taxaArea = area.questoesTotal > 0
                 ? Math.round((area.acertosTotal / area.questoesTotal) * 100)
                 : 0;
 
               return (
-                <div key={area.area} className="bg-white/5 rounded-lg p-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-3">
-                      <span className="text-2xl">{area.icone}</span>
+                <div key={area.area} style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderRadius: '8px',
+                  padding: '1rem'
+                }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    marginBottom: '1rem',
+                    flexWrap: 'wrap',
+                    gap: '1rem'
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                      <span style={{ fontSize: '2rem' }}>{area.icone}</span>
                       <div>
-                        <h3 className="font-bold">{area.nome}</h3>
-                        <p className="text-sm text-gray-400">
+                        <h3 style={{
+                          fontWeight: 700,
+                          color: 'var(--chalk-white)',
+                          marginBottom: '0.25rem'
+                        }}>
+                          {area.nome}
+                        </h3>
+                        <p style={{
+                          fontSize: '0.875rem',
+                          color: 'var(--chalk-dim)'
+                        }}>
                           {area.questoesTotal} questões • {formatarTempo(area.tempoTotal)}
                         </p>
                       </div>
                     </div>
-                    <div className="text-right">
-                      <div className={`text-2xl font-bold ${
-                        taxaArea >= 70 ? 'text-emerald-400' :
-                        taxaArea >= 50 ? 'text-yellow-400' : 'text-red-400'
-                      }`}>
+                    <div style={{ textAlign: 'right' }}>
+                      <div style={{
+                        fontSize: '2rem',
+                        fontWeight: 700,
+                        color: taxaArea >= 70 ? 'var(--accent-green)' :
+                               taxaArea >= 50 ? 'var(--accent-yellow)' : 'var(--accent-red)'
+                      }}>
                         {taxaArea}%
                       </div>
-                      <div className="text-xs text-gray-400">acertos</div>
+                      <div style={{
+                        fontSize: '0.75rem',
+                        color: 'var(--chalk-dim)'
+                      }}>
+                        acertos
+                      </div>
                     </div>
                   </div>
 
                   {/* Mini gráfico de evolução */}
-                  <div className="flex items-end gap-1 h-8">
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'flex-end',
+                    gap: '0.25rem',
+                    height: '32px'
+                  }}>
                     {area.evolucao.map((valor, idx) => (
                       <div
                         key={idx}
-                        className={`flex-1 rounded-t bg-gradient-to-t ${area.cor}`}
-                        style={{ height: `${Math.max(valor, 10)}%`, opacity: 0.5 + (idx * 0.15) }}
+                        style={{
+                          flex: 1,
+                          borderRadius: '2px 2px 0 0',
+                          background: `linear-gradient(to top, ${area.cor.includes('purple') ? 'var(--accent-purple)' :
+                                                                  area.cor.includes('yellow') ? 'var(--accent-yellow)' :
+                                                                  area.cor.includes('green') ? 'var(--accent-green)' :
+                                                                  area.cor.includes('cyan') ? 'var(--accent-cyan)' : 'var(--accent-pink)'}, rgba(255, 255, 255, 0.3))`,
+                          height: `${Math.max(valor, 10)}%`,
+                          opacity: 0.5 + (idx * 0.15)
+                        }}
                         title={`Semana ${idx + 1}: ${valor}%`}
                       />
                     ))}
                   </div>
-                  <div className="flex justify-between text-xs text-gray-500 mt-1">
+                  <div style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    fontSize: '0.75rem',
+                    color: 'rgba(255, 255, 255, 0.4)',
+                    marginTop: '0.25rem'
+                  }}>
                     <span>4 sem atrás</span>
                     <span>Esta semana</span>
                   </div>
@@ -377,78 +537,183 @@ export default function EstatisticasPage() {
         </div>
 
         {/* Pontos Fracos e Fortes */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '1.5rem',
+          marginBottom: '2rem'
+        }}>
           {/* Pontos Fortes */}
-          <div className="card-ia p-6">
-            <h2 className="text-lg font-bold text-emerald-400 mb-4">💪 Seus Pontos Fortes</h2>
+          <div className="card">
+            <h2 style={{
+              fontSize: '1.125rem',
+              fontWeight: 700,
+              color: 'var(--accent-green)',
+              marginBottom: '1rem'
+            }}>
+              💪 Seus Pontos Fortes
+            </h2>
             {desempenhoAreas
               .filter(a => a.questoesTotal > 0)
               .sort((a, b) => (b.acertosTotal / b.questoesTotal) - (a.acertosTotal / a.questoesTotal))
               .slice(0, 3)
               .map((area, idx) => (
-                <div key={area.area} className="flex items-center gap-3 mb-3">
-                  <span className="text-2xl">{area.icone}</span>
-                  <div className="flex-1">
-                    <div className="font-medium">{area.nome}</div>
-                    <div className="text-sm text-gray-400">
+                <div key={area.area} style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  marginBottom: '1rem'
+                }}>
+                  <span style={{ fontSize: '2rem' }}>{area.icone}</span>
+                  <div style={{ flex: 1 }}>
+                    <div style={{
+                      fontWeight: 500,
+                      color: 'var(--chalk-white)',
+                      marginBottom: '0.25rem'
+                    }}>
+                      {area.nome}
+                    </div>
+                    <div style={{
+                      fontSize: '0.875rem',
+                      color: 'var(--chalk-dim)'
+                    }}>
                       {Math.round((area.acertosTotal / area.questoesTotal) * 100)}% de acertos
                     </div>
                   </div>
-                  <span className="text-emerald-400">#{idx + 1}</span>
+                  <span style={{ color: 'var(--accent-green)', fontWeight: 700 }}>
+                    #{idx + 1}
+                  </span>
                 </div>
               ))}
             {desempenhoAreas.filter(a => a.questoesTotal > 0).length === 0 && (
-              <p className="text-gray-400 text-sm">Responda mais questões para ver seus pontos fortes.</p>
+              <p style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.875rem'
+              }}>
+                Responda mais questões para ver seus pontos fortes.
+              </p>
             )}
           </div>
 
           {/* Pontos a Melhorar */}
-          <div className="card-ia p-6">
-            <h2 className="text-lg font-bold text-yellow-400 mb-4">📈 Pontos a Melhorar</h2>
+          <div className="card">
+            <h2 style={{
+              fontSize: '1.125rem',
+              fontWeight: 700,
+              color: 'var(--accent-yellow)',
+              marginBottom: '1rem'
+            }}>
+              📈 Pontos a Melhorar
+            </h2>
             {desempenhoAreas
               .filter(a => a.questoesTotal > 0)
               .sort((a, b) => (a.acertosTotal / a.questoesTotal) - (b.acertosTotal / b.questoesTotal))
               .slice(0, 3)
               .map((area, idx) => (
-                <div key={area.area} className="flex items-center gap-3 mb-3">
-                  <span className="text-2xl">{area.icone}</span>
-                  <div className="flex-1">
-                    <div className="font-medium">{area.nome}</div>
-                    <div className="text-sm text-gray-400">
+                <div key={area.area} style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  marginBottom: '1rem'
+                }}>
+                  <span style={{ fontSize: '2rem' }}>{area.icone}</span>
+                  <div style={{ flex: 1 }}>
+                    <div style={{
+                      fontWeight: 500,
+                      color: 'var(--chalk-white)',
+                      marginBottom: '0.25rem'
+                    }}>
+                      {area.nome}
+                    </div>
+                    <div style={{
+                      fontSize: '0.875rem',
+                      color: 'var(--chalk-dim)'
+                    }}>
                       {Math.round((area.acertosTotal / area.questoesTotal) * 100)}% de acertos
                     </div>
                   </div>
-                  <span className="text-yellow-400">⚠️</span>
+                  <span style={{ fontSize: '1.25rem' }}>⚠️</span>
                 </div>
               ))}
             {desempenhoAreas.filter(a => a.questoesTotal > 0).length === 0 && (
-              <p className="text-gray-400 text-sm">Responda mais questões para identificar pontos a melhorar.</p>
+              <p style={{
+                color: 'var(--chalk-dim)',
+                fontSize: '0.875rem'
+              }}>
+                Responda mais questões para identificar pontos a melhorar.
+              </p>
             )}
           </div>
         </div>
 
         {/* Previsão de Nota */}
-        <div className="card-ia p-6 bg-gradient-to-r from-emerald-900/30 to-blue-900/30 border-emerald-500/30">
-          <div className="text-center">
-            <h2 className="text-xl font-bold mb-2">🎯 Previsão de Nota no ENEM</h2>
-            <p className="text-gray-400 mb-4">Baseado no seu desempenho atual</p>
+        <div className="card" style={{
+          background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15))',
+          border: '2px solid rgba(16, 185, 129, 0.3)',
+          marginBottom: '2rem'
+        }}>
+          <div style={{ textAlign: 'center' }}>
+            <h2 style={{
+              fontSize: '1.5rem',
+              fontWeight: 700,
+              color: 'var(--chalk-white)',
+              marginBottom: '0.5rem'
+            }}>
+              🎯 Previsão de Nota no ENEM
+            </h2>
+            <p style={{
+              color: 'var(--chalk-dim)',
+              marginBottom: '1.5rem'
+            }}>
+              Baseado no seu desempenho atual
+            </p>
 
-            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400 mb-4">
+            <div style={{
+              fontSize: 'clamp(3rem, 10vw, 4rem)',
+              fontWeight: 700,
+              background: 'linear-gradient(135deg, var(--accent-green), var(--accent-blue))',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              marginBottom: '1.5rem'
+            }}>
               {previsaoNota}
             </div>
 
-            <div className="flex justify-center gap-8 text-sm">
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              gap: '2rem',
+              fontSize: '0.875rem',
+              flexWrap: 'wrap'
+            }}>
               <div>
-                <span className="text-gray-400">Mínimo estimado:</span>
-                <span className="text-yellow-400 ml-2">{Math.max(previsaoNota - 80, 0)}</span>
+                <span style={{ color: 'var(--chalk-dim)' }}>Mínimo estimado: </span>
+                <span style={{
+                  color: 'var(--accent-yellow)',
+                  fontWeight: 600,
+                  marginLeft: '0.5rem'
+                }}>
+                  {Math.max(previsaoNota - 80, 0)}
+                </span>
               </div>
               <div>
-                <span className="text-gray-400">Máximo estimado:</span>
-                <span className="text-emerald-400 ml-2">{Math.min(previsaoNota + 80, 1000)}</span>
+                <span style={{ color: 'var(--chalk-dim)' }}>Máximo estimado: </span>
+                <span style={{
+                  color: 'var(--accent-green)',
+                  fontWeight: 600,
+                  marginLeft: '0.5rem'
+                }}>
+                  {Math.min(previsaoNota + 80, 1000)}
+                </span>
               </div>
             </div>
 
-            <p className="text-xs text-gray-500 mt-4">
+            <p style={{
+              fontSize: '0.75rem',
+              color: 'rgba(255, 255, 255, 0.4)',
+              marginTop: '1rem'
+            }}>
               * Previsão baseada em taxa de acertos, tempo de estudo e constância.
               Continue estudando para aumentar sua nota!
             </p>
@@ -456,44 +721,119 @@ export default function EstatisticasPage() {
         </div>
 
         {/* Dicas */}
-        <div className="mt-8 card-ia p-6">
-          <h2 className="text-xl font-bold mb-4">💡 Dicas Personalizadas</h2>
-          <div className="grid md:grid-cols-2 gap-4">
+        <div className="card">
+          <h2 className="card-title">💡 Dicas Personalizadas</h2>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '1rem'
+          }}>
             {estatisticasGerais.mediaDiaria < 60 && (
-              <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
-                <h3 className="font-bold text-yellow-400 mb-2">⏰ Aumente seu tempo de estudo</h3>
-                <p className="text-sm text-gray-400">
+              <div className="chalkboard-card" style={{
+                backgroundColor: 'rgba(251, 191, 36, 0.1)',
+                border: '1px solid rgba(251, 191, 36, 0.3)'
+              }}>
+                <h3 style={{
+                  fontWeight: 700,
+                  color: 'var(--accent-yellow)',
+                  marginBottom: '0.5rem'
+                }}>
+                  ⏰ Aumente seu tempo de estudo
+                </h3>
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--chalk-dim)'
+                }}>
                   Você está estudando em média {estatisticasGerais.mediaDiaria} minutos por dia.
                   Tente aumentar para 1-2 horas diárias.
                 </p>
               </div>
             )}
             {taxaAcerto < 60 && (
-              <div className="bg-orange-500/10 border border-orange-500/30 rounded-lg p-4">
-                <h3 className="font-bold text-orange-400 mb-2">📚 Revise o conteúdo</h3>
-                <p className="text-sm text-gray-400">
+              <div className="chalkboard-card" style={{
+                backgroundColor: 'rgba(249, 115, 22, 0.1)',
+                border: '1px solid rgba(249, 115, 22, 0.3)'
+              }}>
+                <h3 style={{
+                  fontWeight: 700,
+                  color: '#fb923c',
+                  marginBottom: '0.5rem'
+                }}>
+                  📚 Revise o conteúdo
+                </h3>
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--chalk-dim)'
+                }}>
                   Sua taxa de acerto está em {taxaAcerto}%. Foque em revisar os conteúdos
                   antes de fazer mais questões.
                 </p>
               </div>
             )}
             {desempenhoAreas.some(a => a.questoesTotal === 0) && (
-              <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
-                <h3 className="font-bold text-blue-400 mb-2">🎯 Diversifique os estudos</h3>
-                <p className="text-sm text-gray-400">
+              <div className="chalkboard-card" style={{
+                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                border: '1px solid rgba(59, 130, 246, 0.3)'
+              }}>
+                <h3 style={{
+                  fontWeight: 700,
+                  color: 'var(--accent-blue)',
+                  marginBottom: '0.5rem'
+                }}>
+                  🎯 Diversifique os estudos
+                </h3>
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--chalk-dim)'
+                }}>
                   Algumas áreas ainda não têm dados. Estude todas as matérias
                   para um desempenho equilibrado.
                 </p>
               </div>
             )}
-            <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
-              <h3 className="font-bold text-emerald-400 mb-2">🔥 Mantenha a constância</h3>
-              <p className="text-sm text-gray-400">
+            <div className="chalkboard-card" style={{
+              backgroundColor: 'rgba(16, 185, 129, 0.1)',
+              border: '1px solid rgba(16, 185, 129, 0.3)'
+            }}>
+              <h3 style={{
+                fontWeight: 700,
+                color: 'var(--accent-green)',
+                marginBottom: '0.5rem'
+              }}>
+                🔥 Mantenha a constância
+              </h3>
+              <p style={{
+                fontSize: '0.875rem',
+                color: 'var(--chalk-dim)'
+              }}>
                 Estudar um pouco todos os dias é melhor do que estudar muito
                 em poucos dias. Mantenha o ritmo!
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Footer - Voltar */}
+        <div className="footer" style={{
+          marginTop: '3rem',
+          paddingTop: '2rem',
+          borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+          textAlign: 'center'
+        }}>
+          <a
+            href="/enem"
+            style={{
+              color: 'var(--accent-yellow)',
+              textDecoration: 'none',
+              fontSize: '1rem',
+              fontWeight: 500,
+              transition: 'color 0.2s ease'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.color = 'var(--chalk-white)'}
+            onMouseLeave={(e) => e.currentTarget.style.color = 'var(--accent-yellow)'}
+          >
+            ← Voltar para o Dashboard
+          </a>
         </div>
       </div>
     </main>

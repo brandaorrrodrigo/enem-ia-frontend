@@ -1,9 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
-import FloatingNav from '@/components/FloatingNav';
+import Link from 'next/link';
 
 interface Modulo {
   id: string;
@@ -81,7 +79,6 @@ const CADERNOS_DATA: Caderno[] = [
 ];
 
 export default function BibliotecaPage() {
-  const router = useRouter();
   const [cadernos, setCadernos] = useState<Caderno[]>([]);
   const [categoriaAtiva, setCategoriaAtiva] = useState('todos');
   const [nivelAtivo, setNivelAtivo] = useState('todos');
@@ -143,73 +140,120 @@ export default function BibliotecaPage() {
 
   const totalProgresso = cadernos.length > 0 ? Math.round(cadernos.reduce((acc, c) => acc + c.progresso, 0) / cadernos.length) : 0;
 
-  const getNivelBadge = (nivel: string) => {
+  const getNivelColor = (nivel: string) => {
     switch (nivel) {
-      case 'Basico': return 'bg-green-500/20 text-green-300 border-green-500/30';
-      case 'Intermediario': return 'bg-yellow-500/20 text-yellow-300 border-yellow-500/30';
-      case 'Avancado': return 'bg-red-500/20 text-red-300 border-red-500/30';
-      default: return 'bg-white/10 text-white/70';
+      case 'Basico': return 'var(--accent-green)';
+      case 'Intermediario': return 'var(--accent-yellow)';
+      case 'Avancado': return 'var(--accent-pink)';
+      default: return 'var(--chalk-dim)';
+    }
+  };
+
+  const getCategoriaColor = (categoria: string) => {
+    switch (categoria) {
+      case 'linguagens': return 'var(--accent-blue)';
+      case 'humanas': return 'var(--accent-pink)';
+      case 'natureza': return 'var(--accent-green)';
+      case 'matematica': return 'var(--accent-yellow)';
+      case 'redacao': return 'var(--accent-pink)';
+      case 'interdisciplinar': return 'var(--accent-blue)';
+      default: return 'var(--accent-yellow)';
     }
   };
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando cadernos...</p>
+      <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80vh' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div className="spinner" style={{ margin: '0 auto 1rem' }}></div>
+          <p style={{ fontFamily: "'Caveat', cursive", fontSize: '1.2rem', color: 'var(--chalk-white)' }}>Carregando biblioteca...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container-ia min-h-screen py-8">
-      <FloatingNav />
-      <div className="mb-8 pt-16">
-        <h1 className="title-ia flex items-center gap-3 mb-2">📚 Cadernos Inteligentes ENEM-IA</h1>
-        <p className="subtitle-ia mb-4">41 cadernos organizados por area com conteudo 100% original</p>
-        <div className="card-ia-sm bg-gradient-to-r from-green-500/20 to-emerald-500/20 border-green-400/30 inline-flex items-center gap-2">
-          <span className="text-green-400">✓</span>
-          <span className="text-white/90 text-sm">Todo conteudo e 100% original e exclusivo ENEM-IA</span>
+    <div className="container">
+      <div className="header">
+        <h1>📚 Biblioteca de Cadernos</h1>
+        <p>41 cadernos organizados por area com conteudo 100% original ENEM-IA</p>
+      </div>
+
+      <div className="stats-bar">
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{cadernos.length}</div>
+          <div className="stat-label">Cadernos</div>
+        </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{cadernos.reduce((acc, c) => acc + c.modulos.length, 0)}</div>
+          <div className="stat-label">Modulos</div>
+        </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number" style={{ color: 'var(--accent-yellow)' }}>{totalProgresso}%</div>
+          <div className="stat-label">Progresso</div>
+        </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number" style={{ color: 'var(--accent-green)' }}>{cadernos.filter(c => c.progresso === 100).length}</div>
+          <div className="stat-label">Concluidos</div>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="stat-ia"><span className="stat-ia-value">{cadernos.length}</span><span className="stat-ia-label">Cadernos</span></div>
-        <div className="stat-ia"><span className="stat-ia-value">{cadernos.reduce((acc, c) => acc + c.modulos.length, 0)}</span><span className="stat-ia-label">Modulos</span></div>
-        <div className="stat-ia"><span className="stat-ia-value text-yellow-300">{totalProgresso}%</span><span className="stat-ia-label">Progresso</span></div>
-        <div className="stat-ia"><span className="stat-ia-value text-green-400">{cadernos.filter(c => c.progresso === 100).length}</span><span className="stat-ia-label">Concluidos</span></div>
-      </div>
-
-      <div className="card-ia mb-8">
-        <div className="flex items-center justify-between mb-3">
-          <span className="text-white font-bold">Progresso Geral</span>
-          <span className="text-yellow-300 font-bold">{totalProgresso}%</span>
+      <div className="card" style={{ marginBottom: '35px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
+          <span style={{ fontWeight: 'bold', fontFamily: "'Patrick Hand', cursive" }}>Progresso Geral</span>
+          <span style={{ color: 'var(--accent-yellow)', fontWeight: 'bold' }}>{totalProgresso}%</span>
         </div>
-        <div className="progress-ia"><div className="progress-ia-bar" style={{ width: `${totalProgresso}%` }}></div></div>
+        <div className="challenge-progress">
+          <div className="challenge-progress-bar" style={{ width: `${totalProgresso}%` }}></div>
+        </div>
       </div>
 
-      <div className="card-ia mb-8">
-        <div className="flex flex-col gap-4">
+      <div className="card" style={{ marginBottom: '35px' }}>
+        <h2 className="card-title">🔍 Busca e Filtros</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           <div>
-            <input type="text" value={busca} onChange={(e) => setBusca(e.target.value)} placeholder="🔍 Buscar caderno ou tema..." className="input-ia w-full" />
+            <input
+              type="text"
+              value={busca}
+              onChange={(e) => setBusca(e.target.value)}
+              placeholder="Buscar caderno ou tema..."
+              style={{
+                width: '100%',
+                padding: '0.75rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '2px solid var(--chalk-faint)',
+                borderRadius: '8px',
+                color: 'var(--chalk-white)',
+                fontFamily: "'Caveat', cursive",
+                fontSize: '1.1rem'
+              }}
+            />
           </div>
           <div>
-            <p className="text-white/60 text-sm mb-2">Categoria:</p>
-            <div className="flex flex-wrap gap-2">
+            <p style={{ fontSize: '0.875rem', marginBottom: '0.5rem', fontFamily: "'Caveat', cursive" }}>Categoria:</p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
               {CATEGORIAS.map((cat) => (
-                <button key={cat.id} onClick={() => setCategoriaAtiva(cat.id)} className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition flex items-center gap-1 ${categoriaAtiva === cat.id ? `bg-gradient-to-r ${cat.cor} text-white` : 'bg-white/10 text-white/70 hover:bg-white/20'}`}>
-                  <span>{cat.emoji}</span><span>{cat.nome}</span>
+                <button
+                  key={cat.id}
+                  onClick={() => setCategoriaAtiva(cat.id)}
+                  className={categoriaAtiva === cat.id ? 'btn btn-yellow' : 'btn'}
+                  style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}
+                >
+                  <span>{cat.emoji}</span>
+                  <span>{cat.nome}</span>
                 </button>
               ))}
             </div>
           </div>
           <div>
-            <p className="text-white/60 text-sm mb-2">Nivel:</p>
-            <div className="flex gap-2">
+            <p style={{ fontSize: '0.875rem', marginBottom: '0.5rem', fontFamily: "'Caveat', cursive" }}>Nivel:</p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
               {['todos', 'Basico', 'Intermediario', 'Avancado'].map((nivel) => (
-                <button key={nivel} onClick={() => setNivelAtivo(nivel)} className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition ${nivelAtivo === nivel ? 'bg-yellow-400 text-slate-900' : 'bg-white/10 text-white/70 hover:bg-white/20'}`}>
+                <button
+                  key={nivel}
+                  onClick={() => setNivelAtivo(nivel)}
+                  className={nivelAtivo === nivel ? 'btn btn-yellow' : 'btn'}
+                >
                   {nivel === 'todos' ? 'Todos' : nivel}
                 </button>
               ))}
@@ -219,114 +263,287 @@ export default function BibliotecaPage() {
       </div>
 
       {cadernosFiltrados.length === 0 ? (
-        <div className="card-ia text-center py-12">
-          <div className="text-8xl mb-6">📚</div>
-          <h3 className="text-white text-xl font-bold mb-3">Nenhum caderno encontrado</h3>
-          <p className="text-white/70">Tente ajustar seus filtros de busca.</p>
+        <div className="card" style={{ textAlign: 'center', padding: '3rem 1rem' }}>
+          <div style={{ fontSize: '5rem', marginBottom: '1.5rem' }}>📚</div>
+          <h3 style={{ fontFamily: "'Patrick Hand', cursive", fontSize: '1.5rem', marginBottom: '0.75rem' }}>Nenhum caderno encontrado</h3>
+          <p style={{ fontFamily: "'Caveat', cursive", fontSize: '1.1rem' }}>Tente ajustar seus filtros de busca.</p>
         </div>
       ) : (
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {cadernosFiltrados.map((caderno) => (
-            <div key={caderno.id} onClick={() => setCadernoSelecionado(caderno)} className="card-ia hover:scale-[1.02] transition-all cursor-pointer group relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-white/10">
-                <div className={`h-full bg-gradient-to-r ${caderno.cor} transition-all`} style={{ width: `${caderno.progresso}%` }}></div>
-              </div>
-              <div className={`absolute top-4 right-4 px-2 py-0.5 rounded-full text-xs font-bold border ${getNivelBadge(caderno.nivel)}`}>
-                {caderno.nivel}
-              </div>
-              <div className="text-center mb-4 pt-2">
-                <div className={`w-20 h-20 mx-auto bg-gradient-to-br ${caderno.cor} rounded-2xl flex items-center justify-center text-4xl shadow-lg group-hover:scale-110 transition`}>
-                  {caderno.icone}
+        <div className="category">
+          <div className="category-title">
+            <span>📚</span>
+            Cadernos Disponiveis
+          </div>
+          <div className="cards-grid">
+            {cadernosFiltrados.map((caderno) => (
+              <div key={caderno.id} className="chalkboard-card" onClick={() => setCadernoSelecionado(caderno)} style={{ cursor: 'pointer' }}>
+                <div style={{ position: 'relative', marginBottom: '1rem' }}>
+                  <div style={{ textAlign: 'center', fontSize: '3rem', marginBottom: '0.75rem' }}>
+                    {caderno.icone}
+                  </div>
+                  <div className="badge" style={{
+                    position: 'absolute',
+                    top: '0',
+                    right: '0',
+                    borderColor: getNivelColor(caderno.nivel),
+                    color: getNivelColor(caderno.nivel)
+                  }}>
+                    {caderno.nivel}
+                  </div>
                 </div>
-              </div>
-              <div className="text-center">
-                <h3 className="text-white font-bold mb-2 line-clamp-2">{caderno.titulo}</h3>
-                <p className="text-white/60 text-sm line-clamp-2 mb-3">{caderno.descricao}</p>
-              </div>
-              <div className="flex items-center justify-between text-xs text-white/50 mb-3">
-                <span>{caderno.modulos.length} modulos</span>
-                <span>{caderno.tempoEstimado}</span>
-                <span className="text-yellow-300">+{caderno.fpRecompensa} FP</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="flex-1 h-2 bg-white/10 rounded-full overflow-hidden">
-                  <div className={`h-full bg-gradient-to-r ${caderno.cor}`} style={{ width: `${caderno.progresso}%` }}></div>
+                <h3 style={{
+                  fontFamily: "'Patrick Hand', cursive",
+                  fontSize: '1.25rem',
+                  marginBottom: '0.5rem',
+                  textAlign: 'center',
+                  minHeight: '2.5rem'
+                }}>
+                  {caderno.titulo}
+                </h3>
+                <p style={{
+                  fontFamily: "'Caveat', cursive",
+                  fontSize: '1rem',
+                  marginBottom: '1rem',
+                  textAlign: 'center',
+                  color: 'var(--chalk-dim)',
+                  minHeight: '3rem'
+                }}>
+                  {caderno.descricao}
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  fontSize: '0.85rem',
+                  marginBottom: '0.75rem',
+                  color: 'var(--chalk-dim)',
+                  fontFamily: "'Caveat', cursive"
+                }}>
+                  <span>{caderno.modulos.length} modulos</span>
+                  <span>{caderno.tempoEstimado}</span>
+                  <span style={{ color: 'var(--accent-yellow)' }}>+{caderno.fpRecompensa} FP</span>
                 </div>
-                <span className="text-white/70 text-sm font-bold">{caderno.progresso}%</span>
+                <div style={{ marginBottom: '1rem' }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    marginBottom: '0.25rem',
+                    fontSize: '0.85rem'
+                  }}>
+                    <span style={{ fontFamily: "'Caveat', cursive" }}>Progresso</span>
+                    <span style={{ fontWeight: 'bold' }}>{caderno.progresso}%</span>
+                  </div>
+                  <div className="challenge-progress">
+                    <div className="challenge-progress-bar" style={{ width: `${caderno.progresso}%` }}></div>
+                  </div>
+                </div>
+                <button className="btn btn-yellow" style={{ width: '100%' }}>
+                  {caderno.progresso === 0 ? 'Comecar' : caderno.progresso === 100 ? 'Revisar' : 'Continuar'}
+                </button>
               </div>
-              <button className="btn-ia w-full mt-4">
-                {caderno.progresso === 0 ? 'Comecar' : caderno.progresso === 100 ? 'Revisar' : 'Continuar'}
-              </button>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
 
       {cadernoSelecionado && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={() => setCadernoSelecionado(null)}>
-          <div className="card-ia max-w-2xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
-            <div className="flex items-start gap-4 mb-6">
-              <div className={`w-16 h-16 bg-gradient-to-br ${cadernoSelecionado.cor} rounded-xl flex items-center justify-center text-3xl flex-shrink-0`}>
+        <div
+          style={{
+            position: 'fixed',
+            inset: '0',
+            backgroundColor: 'rgba(0, 0, 0, 0.85)',
+            backdropFilter: 'blur(4px)',
+            zIndex: '50',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '1rem'
+          }}
+          onClick={() => setCadernoSelecionado(null)}
+        >
+          <div
+            className="card"
+            style={{
+              maxWidth: '42rem',
+              width: '100%',
+              maxHeight: '90vh',
+              overflowY: 'auto'
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div style={{ display: 'flex', alignItems: 'start', gap: '1rem', marginBottom: '1.5rem' }}>
+              <div style={{
+                fontSize: '3.5rem',
+                textAlign: 'center',
+                flexShrink: '0'
+              }}>
                 {cadernoSelecionado.icone}
               </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <h2 className="text-xl font-bold text-white">{cadernoSelecionado.titulo}</h2>
-                  <span className={`px-2 py-0.5 rounded-full text-xs font-bold border ${getNivelBadge(cadernoSelecionado.nivel)}`}>
+              <div style={{ flex: '1' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
+                  <h2 style={{ fontFamily: "'Patrick Hand', cursive", fontSize: '1.5rem', margin: '0' }}>
+                    {cadernoSelecionado.titulo}
+                  </h2>
+                  <div className="badge" style={{
+                    borderColor: getNivelColor(cadernoSelecionado.nivel),
+                    color: getNivelColor(cadernoSelecionado.nivel)
+                  }}>
                     {cadernoSelecionado.nivel}
-                  </span>
-                </div>
-                <p className="text-white/70 text-sm">{cadernoSelecionado.descricao}</p>
-              </div>
-              <button onClick={() => setCadernoSelecionado(null)} className="text-white/50 hover:text-white text-2xl">×</button>
-            </div>
-            <div className="grid grid-cols-3 gap-4 mb-6">
-              <div className="bg-white/5 rounded-xl p-3 text-center">
-                <p className="text-white font-bold">{cadernoSelecionado.modulos.length}</p>
-                <p className="text-white/50 text-xs">Modulos</p>
-              </div>
-              <div className="bg-white/5 rounded-xl p-3 text-center">
-                <p className="text-white font-bold">{cadernoSelecionado.tempoEstimado}</p>
-                <p className="text-white/50 text-xs">Tempo</p>
-              </div>
-              <div className="bg-white/5 rounded-xl p-3 text-center">
-                <p className="text-yellow-300 font-bold">+{cadernoSelecionado.fpRecompensa}</p>
-                <p className="text-white/50 text-xs">FP</p>
-              </div>
-            </div>
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-white/70 text-sm">Progresso do Caderno</span>
-                <span className="text-yellow-300 font-bold">{cadernoSelecionado.progresso}%</span>
-              </div>
-              <div className="progress-ia"><div className="progress-ia-bar" style={{ width: `${cadernoSelecionado.progresso}%` }}></div></div>
-            </div>
-            <div className="space-y-2">
-              <h3 className="text-white font-bold mb-3">Indice de Modulos</h3>
-              {cadernoSelecionado.modulos.map((modulo, idx) => (
-                <div key={modulo.id} onClick={() => toggleModulo(cadernoSelecionado.id, idx)} className={`flex items-center gap-3 p-3 rounded-xl cursor-pointer transition ${modulo.concluido ? 'bg-green-500/20 border border-green-500/30' : 'bg-white/5 hover:bg-white/10'}`}>
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${modulo.concluido ? 'bg-green-500 text-white' : 'bg-white/10 text-white/50'}`}>
-                    {modulo.concluido ? '✓' : idx + 1}
                   </div>
-                  <span className={modulo.concluido ? 'text-green-300' : 'text-white'}>{modulo.titulo}</span>
                 </div>
-              ))}
+                <p style={{ fontFamily: "'Caveat', cursive", fontSize: '1.1rem', color: 'var(--chalk-dim)' }}>
+                  {cadernoSelecionado.descricao}
+                </p>
+              </div>
+              <button
+                onClick={() => setCadernoSelecionado(null)}
+                style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '2rem',
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  lineHeight: '1',
+                  padding: '0'
+                }}
+              >
+                ×
+              </button>
             </div>
-            <div className="mt-6 pt-4 border-t border-white/10">
-              <div className="flex flex-wrap gap-2">
-                {cadernoSelecionado.tags.map((tag) => (
-                  <span key={tag} className="px-2 py-1 bg-white/10 rounded-full text-xs text-white/60">#{tag}</span>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '1.5rem' }}>
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '8px',
+                padding: '0.75rem',
+                textAlign: 'center'
+              }}>
+                <p style={{ fontWeight: 'bold', fontFamily: "'Patrick Hand', cursive", fontSize: '1.25rem', margin: '0' }}>
+                  {cadernoSelecionado.modulos.length}
+                </p>
+                <p style={{ fontFamily: "'Caveat', cursive", fontSize: '0.9rem', color: 'var(--chalk-dim)', margin: '0' }}>
+                  Modulos
+                </p>
+              </div>
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '8px',
+                padding: '0.75rem',
+                textAlign: 'center'
+              }}>
+                <p style={{ fontWeight: 'bold', fontFamily: "'Patrick Hand', cursive", fontSize: '1.25rem', margin: '0' }}>
+                  {cadernoSelecionado.tempoEstimado}
+                </p>
+                <p style={{ fontFamily: "'Caveat', cursive", fontSize: '0.9rem', color: 'var(--chalk-dim)', margin: '0' }}>
+                  Tempo
+                </p>
+              </div>
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '8px',
+                padding: '0.75rem',
+                textAlign: 'center'
+              }}>
+                <p style={{ fontWeight: 'bold', fontFamily: "'Patrick Hand', cursive", fontSize: '1.25rem', margin: '0', color: 'var(--accent-yellow)' }}>
+                  +{cadernoSelecionado.fpRecompensa}
+                </p>
+                <p style={{ fontFamily: "'Caveat', cursive", fontSize: '0.9rem', color: 'var(--chalk-dim)', margin: '0' }}>
+                  FP
+                </p>
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '1.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                <span style={{ fontFamily: "'Caveat', cursive", fontSize: '1rem' }}>Progresso do Caderno</span>
+                <span style={{ fontWeight: 'bold', color: 'var(--accent-yellow)' }}>{cadernoSelecionado.progresso}%</span>
+              </div>
+              <div className="challenge-progress">
+                <div className="challenge-progress-bar" style={{ width: `${cadernoSelecionado.progresso}%` }}></div>
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '1.5rem' }}>
+              <h3 style={{ fontFamily: "'Patrick Hand', cursive", fontSize: '1.25rem', marginBottom: '0.75rem' }}>
+                Indice de Modulos
+              </h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                {cadernoSelecionado.modulos.map((modulo, idx) => (
+                  <div
+                    key={modulo.id}
+                    onClick={() => toggleModulo(cadernoSelecionado.id, idx)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem',
+                      padding: '0.75rem',
+                      borderRadius: '8px',
+                      cursor: 'pointer',
+                      backgroundColor: modulo.concluido ? 'rgba(0, 255, 127, 0.1)' : 'rgba(255, 255, 255, 0.05)',
+                      border: modulo.concluido ? '2px solid var(--accent-green)' : '2px solid transparent',
+                      transition: 'all 0.2s'
+                    }}
+                  >
+                    <div style={{
+                      width: '2rem',
+                      height: '2rem',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontWeight: 'bold',
+                      fontSize: '0.875rem',
+                      backgroundColor: modulo.concluido ? 'var(--accent-green)' : 'rgba(255, 255, 255, 0.1)',
+                      color: modulo.concluido ? '#000' : 'var(--chalk-dim)'
+                    }}>
+                      {modulo.concluido ? '✓' : idx + 1}
+                    </div>
+                    <span style={{
+                      fontFamily: "'Caveat', cursive",
+                      fontSize: '1.1rem',
+                      color: modulo.concluido ? 'var(--accent-green)' : 'var(--chalk-white)'
+                    }}>
+                      {modulo.titulo}
+                    </span>
+                  </div>
                 ))}
               </div>
             </div>
-            <button className="btn-ia w-full mt-6 py-4 text-lg">
+
+            <div style={{
+              marginTop: '1.5rem',
+              paddingTop: '1rem',
+              borderTop: '2px solid var(--chalk-faint)'
+            }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
+                {cadernoSelecionado.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    style={{
+                      padding: '0.25rem 0.75rem',
+                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                      borderRadius: '12px',
+                      fontSize: '0.875rem',
+                      color: 'var(--chalk-dim)',
+                      fontFamily: "'Caveat', cursive"
+                    }}
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <button className="btn btn-yellow" style={{ width: '100%', marginTop: '1rem', padding: '1rem', fontSize: '1.125rem' }}>
               {cadernoSelecionado.progresso === 0 ? '🚀 Comecar a Estudar' : cadernoSelecionado.progresso === 100 ? '🔄 Revisar Caderno' : '▶️ Continuar Estudando'}
             </button>
           </div>
         </div>
       )}
 
-      <ChalkBackToTop />
+      <footer>
+        <p><Link href="/enem">← Voltar ao Painel</Link></p>
+      </footer>
     </div>
   );
 }

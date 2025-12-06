@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Completo de Preparação para o ENEM Pro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Patrick+Hand&family=Poppins:wght@300;400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --chalk-white: rgba(255, 255, 255, 0.88);
+            --chalk-dim: rgba(255, 255, 255, 0.6);
+            --chalk-faint: rgba(255, 255, 255, 0.4);
+            --board-green: #2a4a3a;
+            --board-dark: #1d3629;
+            --wood-light: #8B5A2B;
+            --wood-dark: #5D3A1A;
+            --wood-shadow: #3d2512;
+            --accent-yellow: rgba(255, 235, 150, 0.9);
+            --accent-blue: rgba(150, 200, 255, 0.85);
+            --accent-pink: rgba(255, 180, 200, 0.85);
+            --accent-green: rgba(180, 255, 200, 0.85);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(145deg, #1a3328 0%, #2a4a3a 30%, #1d3629 70%, #152a20 100%);
+            min-height: 100vh;
+            padding: 25px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Textura de lousa realista */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Marcas de giz apagado */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse 300px 150px at 20% 30%, rgba(255,255,255,0.03) 0%, transparent 70%),
+                radial-gradient(ellipse 200px 100px at 70% 60%, rgba(255,255,255,0.025) 0%, transparent 70%),
+                radial-gradient(ellipse 250px 120px at 40% 80%, rgba(255,255,255,0.02) 0%, transparent 70%),
+                radial-gradient(ellipse 180px 90px at 85% 20%, rgba(255,255,255,0.03) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Vinheta escura nas bordas */
+        .vignette {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.4) 100%);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+            position: relative;
+            z-index: 10;
+            padding: 20px;
+        }
+        .header h1 {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 3.2em;
+            color: var(--chalk-white);
+            text-shadow:
+                2px 2px 0px rgba(0,0,0,0.3),
+                0 0 20px rgba(255,255,255,0.1),
+                0 0 40px rgba(255,255,255,0.05);
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            animation: chalkWrite 1s ease-out;
+        }
+        .header p {
+            font-family: 'Caveat', cursive;
+            font-size: 1.6em;
+            color: var(--accent-yellow);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        @keyframes chalkWrite {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* STATS BAR - Estilo quadro de avisos */
+        .stats-bar {
+            background: linear-gradient(180deg, rgba(40, 75, 55, 0.98) 0%, rgba(30, 60, 45, 0.98) 100%);
+            border-radius: 4px;
+            padding: 30px 40px;
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 25px;
+            position: relative;
+            border: 3px solid #1a3025;
+            box-shadow:
+                inset 0 2px 10px rgba(0,0,0,0.3),
+                inset 0 -2px 10px rgba(255,255,255,0.02),
+                0 8px 32px rgba(0,0,0,0.4),
+                0 0 0 12px var(--wood-light),
+                0 0 0 16px var(--wood-dark),
+                0 0 0 18px var(--wood-shadow),
+                0 15px 40px rgba(0,0,0,0.3);
+        }
+        .stats-bar::before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            border: 1px dashed rgba(255,255,255,0.1);
+            border-radius: 2px;
+            pointer-events: none;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 10px 20px;
+            transition: transform 0.3s ease;
+        }
+        .stat-item:hover {
+            transform: scale(1.1);
+        }
+        .stat-number {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 3em;
+            font-weight: bold;
+            color: var(--accent-yellow);
+            text-shadow:
+                2px 2px 0px rgba(0,0,0,0.3),
+                0 0 15px rgba(255,235,150,0.3);
+            line-height: 1;
+        }
+        .stat-label {
+            font-family: 'Caveat', cursive;
+            color: var(--chalk-dim);
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+
+        /* CATEGORIAS - Seções do quadro */
+        .category {
+            background: linear-gradient(180deg, rgba(40, 75, 55, 0.95) 0%, rgba(32, 62, 47, 0.95) 100%);
+            border-radius: 4px;
+            padding: 35px;
+            margin-bottom: 35px;
+            position: relative;
+            border: 3px solid #1a3025;
+            box-shadow:
+                inset 0 2px 15px rgba(0,0,0,0.25),
+                inset 0 -2px 10px rgba(255,255,255,0.02),
+                0 8px 32px rgba(0,0,0,0.35),
+                0 0 0 12px var(--wood-light),
+                0 0 0 16px var(--wood-dark),
+                0 0 0 18px var(--wood-shadow),
+                0 15px 40px rgba(0,0,0,0.25);
+            animation: fadeInUp 0.6s ease-out both;
+        }
+        .category:nth-child(2) { animation-delay: 0.1s; }
+        .category:nth-child(3) { animation-delay: 0.2s; }
+        .category:nth-child(4) { animation-delay: 0.3s; }
+        .category:nth-child(5) { animation-delay: 0.4s; }
+        .category:nth-child(6) { animation-delay: 0.5s; }
+
+        /* Decoração de canto */
+        .category::before {
+            content: '✦';
+            position: absolute;
+            top: -8px;
+            left: 20px;
+            font-size: 16px;
+            color: var(--accent-yellow);
+            text-shadow: 0 0 10px rgba(255,235,150,0.5);
+        }
+
+        .category-title {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 2em;
+            color: var(--chalk-white);
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px dashed rgba(255, 255, 255, 0.25);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        .category-title span {
+            font-size: 1.2em;
+            filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
+        }
+        .category-title::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: var(--accent-yellow);
+            box-shadow: 0 0 10px rgba(255,235,150,0.5);
+        }
+
+        /* GRID DE CARDS */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARDS - Post-its / Notas */
+        .card {
+            background: linear-gradient(145deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.06) 100%);
+            border-radius: 8px;
+            padding: 28px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            border: 1px solid rgba(255,255,255,0.15);
+            text-decoration: none;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-yellow), var(--accent-pink), var(--accent-blue));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            background: linear-gradient(145deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.1) 100%);
+            box-shadow:
+                0 20px 40px rgba(0,0,0,0.3),
+                0 0 30px rgba(255,255,255,0.05),
+                inset 0 1px 0 rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.3);
+        }
+        .card:hover::before {
+            opacity: 1;
+        }
+        .card-icon {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+            transition: transform 0.3s ease;
+        }
+        .card:hover .card-icon {
+            transform: scale(1.15) rotate(-5deg);
+        }
+        .card-title {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--chalk-white);
+            margin-bottom: 12px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .card-description {
+            font-family: 'Caveat', cursive;
+            color: var(--chalk-dim);
+            font-size: 1.15em;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            position: relative;
+            z-index: 10;
+        }
+        .footer p {
+            font-family: 'Caveat', cursive;
+            color: var(--chalk-dim);
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        .footer strong {
+            color: var(--chalk-white);
+        }
+        .footer a {
+            color: var(--accent-yellow);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .footer a:hover {
+            color: var(--chalk-white);
+            text-shadow: 0 0 10px rgba(255,235,150,0.5);
+        }
+
+        /* Botão Premium especial */
+        .footer a[href="assinatura.html"] {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-yellow) 0%, #ffd700 50%, var(--accent-yellow) 100%);
+            background-size: 200% 200%;
+            color: #1a3328 !important;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-shadow: none;
+            box-shadow:
+                0 4px 15px rgba(255,215,0,0.4),
+                0 0 30px rgba(255,215,0,0.2);
+            animation: shimmer 2s ease-in-out infinite;
+            transition: all 0.3s ease;
+        }
+        .footer a[href="assinatura.html"]:hover {
+            transform: scale(1.05);
+            box-shadow:
+                0 6px 25px rgba(255,215,0,0.5),
+                0 0 50px rgba(255,215,0,0.3);
+        }
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* ===== ESTILOS PARA OUTRAS PÁGINAS ===== */
+
+        h1, h2, h3 {
+            font-family: 'Patrick Hand', cursive;
+            color: var(--chalk-white);
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+        }
+        h1 { font-size: 2.5em; text-align: center; margin-bottom: 15px; }
+        h2 { font-size: 2em; margin-bottom: 20px; }
+        h3 { font-size: 1.5em; margin-bottom: 15px; }
+
+        .subtitle {
+            text-align: center;
+            font-family: 'Caveat', cursive;
+            color: var(--accent-yellow);
+            font-size: 1.4em;
+            margin-bottom: 40px;
+        }
+
+        .area-section {
+            margin-bottom: 40px;
+        }
+        .area-title {
+            font-family: 'Patrick Hand', cursive;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--chalk-white);
+            padding: 18px 25px;
+            border-radius: 5px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-yellow);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .video-card, .card-item, .item-card, .content-card, .ebook-card, .tool-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 22px;
+            margin-bottom: 18px;
+            border-left: 3px solid var(--accent-blue);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        .video-card:hover, .card-item:hover, .item-card:hover, .content-card:hover, .ebook-card:hover, .tool-card:hover {
+            background: rgba(255, 255, 255, 0.14);
+            transform: translateX(8px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .video-title, .item-title, .ebook-title, .tool-title {
+            font-family: 'Patrick Hand', cursive;
+            color: var(--chalk-white);
+            font-size: 1.35em;
+            margin-bottom: 10px;
+        }
+        .video-info, .card-info, .item-info, .ebook-info, .tool-info {
+            font-family: 'Caveat', cursive;
+            color: var(--chalk-faint);
+            font-size: 1.1em;
+            margin-bottom: 12px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            color: var(--accent-yellow);
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            border: 1px solid rgba(255, 235, 150, 0.3);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn-assistir, .btn-action, .btn-primary, button {
+            background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 100%);
+            color: var(--chalk-white);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 28px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+        .btn-assistir:hover, .btn-action:hover, .btn-primary:hover, button:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(255,255,255,0.1);
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--chalk-white);
+            padding: 14px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-family: 'Poppins', sans-serif;
+        }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(-5px);
+        }
+
+        p, li {
+            color: var(--chalk-dim);
+            line-height: 1.7;
+        }
+        a {
+            color: var(--accent-yellow);
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--chalk-white);
+        }
+        strong, b {
+            color: var(--chalk-white);
+        }
+        ul, ol {
+            margin-left: 25px;
+            color: var(--chalk-dim);
+        }
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* FORMULÁRIOS */
+        input, textarea, select {
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: var(--chalk-white);
+            padding: 14px 18px;
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 18px;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+        input::placeholder, textarea::placeholder {
+            color: var(--chalk-faint);
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--accent-yellow);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 20px rgba(255,235,150,0.1);
+        }
+        label {
+            font-family: 'Caveat', cursive;
+            color: var(--chalk-dim);
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Scrollbar personalizada */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--board-dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--wood-light);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--wood-dark);
+        }
+
+        /* Seleção de texto */
+        ::selection {
+            background: rgba(255, 235, 150, 0.3);
+            color: white;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .header h1 {
+                font-size: 2.2em;
+            }
+            .header p {
+                font-size: 1.3em;
+            }
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-bar {
+                flex-direction: column;
+                gap: 20px;
+                padding: 25px;
+            }
+            .category {
+                padding: 25px;
+            }
+            .category-title {
+                font-size: 1.6em;
+            }
+            .stat-number {
+                font-size: 2.5em;
+            }
+        }
+
+        /* Efeito de partículas de giz flutuando */
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.5; }
+            50% { transform: translateY(-20px) rotate(180deg); opacity: 0.8; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="vignette"></div>
+    <div class="header">
+        <h1>🎓 Sistema Completo de Preparação para o ENEM Pro</h1>
+        <p>Tudo que você precisa para conquistar sua aprovação!</p>
+    </div>
+
+    <div class="container">
+        <!-- Estatísticas -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">24</div>
+                <div class="stat-label">Módulos Completos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Ebooks Disponíveis</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">180</div>
+                <div class="stat-label">Dias até o ENEM</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">🤖</div>
+                <div class="stat-label">ChatBot IA</div>
+            </div>
+        </div>
+
+        <!-- Categoria 1: Conteúdo e Estudo -->
+        <div class="category">
+            <div class="category-title">
+                <span>📚</span>
+                Conteúdo e Materiais de Estudo
+            </div>
+            <div class="cards-grid">
+                <a href="videoaulas.html" class="card">
+                    <div class="card-icon">🎥</div>
+                    <div class="card-title">Videoaulas</div>
+                    <div class="card-description">Aulas em vídeo de todas as disciplinas com os melhores professores</div>
+                </a>
+
+                <a href="biblioteca-ebooks.html" class="card" style="border-left-color: #43e97b;">
+                    <div class="card-icon">📚</div>
+                    <div class="card-title">Biblioteca de Ebooks</div>
+                    <div class="card-description">150+ ebooks gratuitos para consulta e download</div>
+                </a>
+
+                <a href="materiais-estudo.html" class="card">
+                    <div class="card-icon">📖</div>
+                    <div class="card-title">Materiais de Estudo</div>
+                    <div class="card-description">PDFs, resumos, mapas mentais e apostilas completas</div>
+                </a>
+
+                <a href="questoes-comentadas.html" class="card">
+                    <div class="card-icon">❓</div>
+                    <div class="card-title">Questões Comentadas</div>
+                    <div class="card-description">Milhares de questões com resolução detalhada</div>
+                </a>
+
+                <a href="simulados-online.html" class="card">
+                    <div class="card-icon">📝</div>
+                    <div class="card-title">Simulados Online</div>
+                    <div class="card-description">Simule a prova real e avalie seu desempenho</div>
+                </a>
+
+                <a href="chatbot.html" class="card" style="border-left-color: #43e97b;">
+                    <div class="card-icon">🤖</div>
+                    <div class="card-title">ChatBot Assistente</div>
+                    <div class="card-description">Tire suas dúvidas com nosso assistente virtual inteligente</div>
+                </a>
+
+                <a href="gerador-questoes-ia.html" class="card" style="border-left-color: #38f9d7;">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-title">Gerador de Questões IA <span style="font-size: 0.7em; color: #0b3d2e;">⭐ NOVO</span></div>
+                    <div class="card-description">Questões personalizadas geradas automaticamente pela IA</div>
+                </a>
+
+                <a href="gamificacao.html" class="card" style="border-left-color: #FFD700;">
+                    <div class="card-icon">🏆</div>
+                    <div class="card-title">Gamificação e Pontos <span style="font-size: 0.7em; color: #FFD700;">🔥 HOT</span></div>
+                    <div class="card-description">Ganhe pontos, conquiste badges e suba no ranking estudando!</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Categoria 2: Organização -->
+        <div class="category">
+            <div class="category-title">
+                <span>⏰</span>
+                Organização e Planejamento
+            </div>
+            <div class="cards-grid">
+                <a href="cronograma-estudos.html" class="card">
+                    <div class="card-icon">📅</div>
+                    <div class="card-title">Cronograma de Estudos</div>
+                    <div class="card-description">Planeje suas semanas de estudo de forma eficiente</div>
+                </a>
+
+                <a href="gestao-tempo.html" class="card">
+                    <div class="card-icon">⏱️</div>
+                    <div class="card-title">Gestão de Tempo</div>
+                    <div class="card-description">Técnicas para otimizar seu tempo de estudo</div>
+                </a>
+
+                <a href="calendario-provas.html" class="card">
+                    <div class="card-icon">🗓️</div>
+                    <div class="card-title">Calendário de Provas</div>
+                    <div class="card-description">Todas as datas importantes do ENEM Pro</div>
+                </a>
+
+                <a href="ferramentas-tecnologicas.html" class="card">
+                    <div class="card-icon">💻</div>
+                    <div class="card-title">Ferramentas Tecnológicas</div>
+                    <div class="card-description">Apps e sites para turbinar seus estudos</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Categoria 3: Técnicas de Estudo -->
+        <div class="category">
+            <div class="category-title">
+                <span>🧠</span>
+                Técnicas e Métodos de Estudo
+            </div>
+            <div class="cards-grid">
+                <a href="tecnicas-memorizacao.html" class="card">
+                    <div class="card-icon">💡</div>
+                    <div class="card-title">Técnicas de Memorização</div>
+                    <div class="card-description">Memorize melhor e retenha mais conteúdo</div>
+                </a>
+
+                <a href="sistema-redacao.html" class="card">
+                    <div class="card-icon">✍️</div>
+                    <div class="card-title">Sistema de Redação</div>
+                    <div class="card-description">Domine a redação nota 1000 do ENEM</div>
+                </a>
+
+                <a href="grupos-estudo.html" class="card">
+                    <div class="card-icon">👥</div>
+                    <div class="card-title">Grupos de Estudo</div>
+                    <div class="card-description">Estude em grupo e compartilhe conhecimento</div>
+                </a>
+
+                <a href="dicas-motivacao.html" class="card">
+                    <div class="card-icon">💪</div>
+                    <div class="card-title">Dicas de Motivação</div>
+                    <div class="card-description">Mantenha-se motivado durante a jornada</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Categoria 4: Saúde e Bem-estar -->
+        <div class="category">
+            <div class="category-title">
+                <span>🧘</span>
+                Saúde e Bem-estar
+            </div>
+            <div class="cards-grid">
+                <a href="saude-mental.html" class="card">
+                    <div class="card-icon">🌟</div>
+                    <div class="card-title">Saúde Mental</div>
+                    <div class="card-description">Cuide da sua mente durante a preparação</div>
+                </a>
+
+                <a href="alimentacao-estudos.html" class="card">
+                    <div class="card-icon">🥗</div>
+                    <div class="card-title">Alimentação e Estudos</div>
+                    <div class="card-description">Alimente-se bem para estudar melhor</div>
+                </a>
+
+                <a href="exercicios-fisicos.html" class="card">
+                    <div class="card-icon">🏃</div>
+                    <div class="card-title">Exercícios Físicos</div>
+                    <div class="card-description">Pratique atividades físicas regularmente</div>
+                </a>
+
+                <a href="sono-desempenho.html" class="card">
+                    <div class="card-icon">😴</div>
+                    <div class="card-title">Sono e Desempenho</div>
+                    <div class="card-description">Durma bem para render mais nos estudos</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Categoria 5: Dia da Prova -->
+        <div class="category">
+            <div class="category-title">
+                <span>🎯</span>
+                Preparação para o Dia da Prova
+            </div>
+            <div class="cards-grid">
+                <a href="documentacao-inscricao.html" class="card">
+                    <div class="card-icon">📄</div>
+                    <div class="card-title">Documentação e Inscrição</div>
+                    <div class="card-description">Tudo sobre inscrição e documentos necessários</div>
+                </a>
+
+                <a href="local-prova.html" class="card">
+                    <div class="card-icon">📍</div>
+                    <div class="card-title">Local de Prova</div>
+                    <div class="card-description">Como encontrar e chegar ao local da prova</div>
+                </a>
+
+                <a href="dia-prova-checklist.html" class="card">
+                    <div class="card-icon">✅</div>
+                    <div class="card-title">Checklist do Dia da Prova</div>
+                    <div class="card-description">Lista completa do que levar e fazer</div>
+                </a>
+
+                <a href="pos-prova.html" class="card">
+                    <div class="card-icon">🎓</div>
+                    <div class="card-title">Pós-Prova</div>
+                    <div class="card-description">O que fazer após realizar o ENEM</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>💯 Sistema Completo de Preparação ENEM Pro</strong></p>
+            <p>Desenvolvido para você alcançar seus objetivos</p>
+            <p style="margin-top: 10px; opacity: 0.8;">📊 <a href="resumo-final.html" style="color: white; text-decoration: underline;">Ver Resumo Completo e Estatísticas</a></p>
+            <p style="margin-top: 15px;">
+                <a href="assinatura.html" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #0b3d2e; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px;">
+                    ⭐ Ver Planos Premium
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

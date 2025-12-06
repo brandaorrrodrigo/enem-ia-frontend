@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 import LeaderboardTable from '@/components/social/LeaderboardTable';
 import LeagueCard from '@/components/social/LeagueCard';
@@ -51,59 +50,123 @@ export default function RankingPage() {
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando ranking...</p>
+      <div className="container" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            width: '48px',
+            height: '48px',
+            margin: '0 auto 24px',
+            border: '4px solid var(--chalk-dim)',
+            borderTopColor: 'var(--accent-yellow)',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite'
+          }}></div>
+          <p style={{
+            color: 'var(--chalk-white)',
+            fontSize: '1.125rem',
+            fontWeight: '600'
+          }}>Carregando ranking...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div className="container" style={{ minHeight: '100vh', paddingTop: '2rem', paddingBottom: '2rem' }}>
       <FloatingNav />
+
       {/* Header */}
-      <div className="mb-6 pt-16">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div className="header" style={{ marginBottom: '2rem', paddingTop: '4rem' }}>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1rem',
+          marginBottom: '1.5rem'
+        }}>
           <div>
-            <h1 className="title-ia flex items-center gap-3 mb-2">
+            <h1 style={{
+              color: 'var(--chalk-white)',
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              fontFamily: 'var(--font-handwriting)',
+              marginBottom: '0.5rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
               🏆 Ranking & Ligas
             </h1>
-            <p className="subtitle-ia mb-0">
+            <p style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '1.125rem',
+              margin: 0
+            }}>
               Compita com outros estudantes e suba de liga!
             </p>
           </div>
+        </div>
 
-          {/* Posicao atual */}
-          <div className="flex items-center gap-4">
-            <div className="stat-ia">
-              <span className="stat-ia-value">#{userData.posicaoGlobal}</span>
-              <span className="stat-ia-label">Global</span>
-            </div>
-            <div className="stat-ia">
-              <span className="stat-ia-value">#{userData.posicaoLiga}</span>
-              <span className="stat-ia-label">Na Liga</span>
-            </div>
+        {/* Estatísticas */}
+        <div className="stats-bar">
+          <div className="stat-item">
+            <div className="stat-number">#{userData.posicaoGlobal}</div>
+            <div className="stat-label">Global</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">#{userData.posicaoLiga}</div>
+            <div className="stat-label">Na Liga</div>
           </div>
         </div>
       </div>
 
       {/* Sistema de Ligas */}
-      <div className="mb-8">
-        <h2 className="title-ia-sm mb-4">Sistema de Ligas</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+      <div style={{ marginBottom: '2rem' }}>
+        <h2 style={{
+          color: 'var(--chalk-white)',
+          fontSize: '1.5rem',
+          fontWeight: 'bold',
+          fontFamily: 'var(--font-handwriting)',
+          marginBottom: '1rem'
+        }}>Sistema de Ligas</h2>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+          gap: '0.75rem'
+        }}>
           {LIGAS.map((liga) => (
             <div
               key={liga.id}
-              className={`card-ia p-4 text-center bg-gradient-to-br ${liga.cor} border-2 ${
-                userData.liga === liga.nome ? 'ring-2 ring-yellow-400 scale-105' : 'opacity-70'
-              } transition-all hover:opacity-100 cursor-pointer`}
+              className="card"
+              style={{
+                padding: '1rem',
+                textAlign: 'center',
+                backgroundImage: `linear-gradient(to bottom right, ${liga.cor})`,
+                border: `2px solid ${liga.cor.includes('border-amber') ? 'var(--amber-500)' :
+                       liga.cor.includes('border-gray') ? 'var(--gray-400)' :
+                       liga.cor.includes('border-yellow') ? 'var(--accent-yellow)' :
+                       liga.cor.includes('border-cyan') ? 'var(--cyan-400)' :
+                       liga.cor.includes('border-blue') ? 'var(--blue-400)' :
+                       'var(--purple-400)'}`,
+                opacity: userData.liga === liga.nome ? '1' : '0.7',
+                transform: userData.liga === liga.nome ? 'scale(1.05)' : 'scale(1)',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}
             >
-              <span className="text-3xl mb-2 block">{liga.emoji}</span>
-              <p className="text-white font-bold text-sm">{liga.nome}</p>
+              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '0.5rem' }}>{liga.emoji}</span>
+              <p style={{
+                color: 'var(--chalk-white)',
+                fontWeight: 'bold',
+                fontSize: '0.875rem',
+                margin: 0
+              }}>{liga.nome}</p>
               {userData.liga === liga.nome && (
-                <span className="text-yellow-300 text-xs mt-1 block">Voce esta aqui!</span>
+                <span style={{
+                  color: 'var(--accent-yellow)',
+                  fontSize: '0.75rem',
+                  marginTop: '0.25rem',
+                  display: 'block'
+                }}>Você está aqui!</span>
               )}
             </div>
           ))}
@@ -111,38 +174,46 @@ export default function RankingPage() {
       </div>
 
       {/* Layout principal */}
-      <div className="grid lg:grid-cols-3 gap-6">
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr',
+        gap: '1.5rem'
+      }}
+      className="lg:grid-cols-3">
         {/* Ranking */}
         <div className="lg:col-span-2">
           {/* Tabs */}
-          <div className="flex gap-2 mb-4">
+          <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
             <button
               onClick={() => setRankingType('global')}
-              className={`px-4 py-2 rounded-xl font-semibold transition ${
-                rankingType === 'global'
-                  ? 'bg-yellow-400 text-slate-900'
-                  : 'bg-white/10 text-white/70 hover:bg-white/20'
-              }`}
+              className={rankingType === 'global' ? 'btn btn-yellow' : 'btn'}
+              style={{
+                padding: '0.5rem 1rem',
+                fontSize: '0.875rem',
+                fontWeight: '600'
+              }}
             >
               🌍 Global
             </button>
             <button
               onClick={() => setRankingType('liga')}
-              className={`px-4 py-2 rounded-xl font-semibold transition ${
-                rankingType === 'liga'
-                  ? 'bg-yellow-400 text-slate-900'
-                  : 'bg-white/10 text-white/70 hover:bg-white/20'
-              }`}
+              className={rankingType === 'liga' ? 'btn btn-yellow' : 'btn'}
+              style={{
+                padding: '0.5rem 1rem',
+                fontSize: '0.875rem',
+                fontWeight: '600'
+              }}
             >
               🏅 Minha Liga
             </button>
             <button
               onClick={() => setRankingType('amigos')}
-              className={`px-4 py-2 rounded-xl font-semibold transition ${
-                rankingType === 'amigos'
-                  ? 'bg-yellow-400 text-slate-900'
-                  : 'bg-white/10 text-white/70 hover:bg-white/20'
-              }`}
+              className={rankingType === 'amigos' ? 'btn btn-yellow' : 'btn'}
+              style={{
+                padding: '0.5rem 1rem',
+                fontSize: '0.875rem',
+                fontWeight: '600'
+              }}
             >
               👥 Amigos
             </button>
@@ -153,16 +224,16 @@ export default function RankingPage() {
         </div>
 
         {/* Sidebar */}
-        <div className="space-y-6">
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           {/* Sua Liga */}
           <LeagueCard userFP={userData.pontosFP} userName={userData.nome} />
 
           {/* Conquistas de Ranking */}
-          <div className="card-ia p-6">
-            <h3 className="text-white font-bold mb-4 flex items-center gap-2">
+          <div className="chalkboard-card">
+            <h3 className="card-title" style={{ marginBottom: '1rem' }}>
               🏅 Conquistas de Ranking
             </h3>
-            <div className="space-y-3">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {[
                 { nome: 'Top 100', emoji: '🌟', desc: 'Entre no top 100 global', conquistado: userData.posicaoGlobal <= 100 },
                 { nome: 'Top 50', emoji: '⭐', desc: 'Entre no top 50 global', conquistado: userData.posicaoGlobal <= 50 },
@@ -171,44 +242,71 @@ export default function RankingPage() {
               ].map((conquista, idx) => (
                 <div
                   key={idx}
-                  className={`flex items-center gap-3 p-3 rounded-xl ${
-                    conquista.conquistado ? 'bg-yellow-400/20' : 'bg-white/5 opacity-50'
-                  }`}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.75rem',
+                    padding: '0.75rem',
+                    borderRadius: '0.75rem',
+                    backgroundColor: conquista.conquistado ? 'rgba(234, 179, 8, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                    opacity: conquista.conquistado ? '1' : '0.5'
+                  }}
                 >
-                  <span className="text-2xl">{conquista.emoji}</span>
-                  <div>
-                    <p className={`font-semibold text-sm ${conquista.conquistado ? 'text-yellow-300' : 'text-white/70'}`}>
+                  <span style={{ fontSize: '1.5rem' }}>{conquista.emoji}</span>
+                  <div style={{ flex: 1 }}>
+                    <p style={{
+                      fontWeight: '600',
+                      fontSize: '0.875rem',
+                      color: conquista.conquistado ? 'var(--accent-yellow)' : 'var(--chalk-dim)',
+                      margin: 0
+                    }}>
                       {conquista.nome}
                     </p>
-                    <p className="text-white/50 text-xs">{conquista.desc}</p>
+                    <p style={{
+                      color: 'var(--chalk-dim)',
+                      fontSize: '0.75rem',
+                      margin: 0
+                    }}>{conquista.desc}</p>
                   </div>
-                  {conquista.conquistado && <span className="ml-auto text-green-400">✓</span>}
+                  {conquista.conquistado && (
+                    <span style={{ color: '#10b981', marginLeft: 'auto' }}>✓</span>
+                  )}
                 </div>
               ))}
             </div>
           </div>
 
           {/* Dicas */}
-          <div className="card-ia p-6 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border-2 border-blue-400/30">
-            <h3 className="text-white font-bold mb-3 flex items-center gap-2">
+          <div className="chalkboard-card" style={{
+            background: 'linear-gradient(to bottom right, rgba(59, 130, 246, 0.2), rgba(6, 182, 212, 0.2))',
+            borderColor: 'rgba(96, 165, 250, 0.3)'
+          }}>
+            <h3 className="card-title" style={{ marginBottom: '0.75rem' }}>
               💡 Como Subir no Ranking
             </h3>
-            <ul className="space-y-2 text-white/80 text-sm">
-              <li className="flex items-start gap-2">
-                <span className="text-yellow-300">✓</span>
-                <span>Faca simulados diariamente</span>
+            <ul style={{
+              listStyle: 'none',
+              padding: 0,
+              margin: 0,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.5rem'
+            }}>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+                <span style={{ color: 'var(--accent-yellow)' }}>✓</span>
+                <span style={{ color: 'var(--chalk-white)', fontSize: '0.875rem' }}>Faça simulados diariamente</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-yellow-300">✓</span>
-                <span>Mantenha sua streak ativa</span>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+                <span style={{ color: 'var(--accent-yellow)' }}>✓</span>
+                <span style={{ color: 'var(--chalk-white)', fontSize: '0.875rem' }}>Mantenha sua streak ativa</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-yellow-300">✓</span>
-                <span>Complete desafios semanais</span>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+                <span style={{ color: 'var(--accent-yellow)' }}>✓</span>
+                <span style={{ color: 'var(--chalk-white)', fontSize: '0.875rem' }}>Complete desafios semanais</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-yellow-300">✓</span>
-                <span>Participe de salas de desafio</span>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+                <span style={{ color: 'var(--accent-yellow)' }}>✓</span>
+                <span style={{ color: 'var(--chalk-white)', fontSize: '0.875rem' }}>Participe de salas de desafio</span>
               </li>
             </ul>
           </div>
@@ -216,7 +314,12 @@ export default function RankingPage() {
           {/* CTA */}
           <button
             onClick={() => router.push('/enem/simulado')}
-            className="btn-ia w-full py-4 text-lg"
+            className="btn btn-yellow"
+            style={{
+              width: '100%',
+              padding: '1rem',
+              fontSize: '1.125rem'
+            }}
           >
             🚀 Fazer Simulado e Subir!
           </button>
@@ -224,14 +327,34 @@ export default function RankingPage() {
       </div>
 
       {/* Mensagem motivacional */}
-      <div className="card-ia p-6 mt-6 text-center">
-        <p className="text-white text-lg">
-          ⚡ O ranking atualiza em tempo real! Continue estudando para subir de posicao e conquistar a{' '}
-          <span className="text-yellow-300 font-bold">Liga {userData.liga}</span>!
+      <div className="chalkboard-card" style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+        <p style={{
+          color: 'var(--chalk-white)',
+          fontSize: '1.125rem',
+          margin: 0
+        }}>
+          ⚡ O ranking atualiza em tempo real! Continue estudando para subir de posição e conquistar a{' '}
+          <span style={{ color: 'var(--accent-yellow)', fontWeight: 'bold' }}>
+            Liga {userData.liga}
+          </span>!
         </p>
       </div>
 
-      <ChalkBackToTop />
+      {/* Footer */}
+      <div className="footer">
+        <button
+          onClick={() => router.push('/enem')}
+          className="btn"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            margin: '0 auto'
+          }}
+        >
+          ← Voltar ao Dashboard
+        </button>
+      </div>
     </div>
   );
 }

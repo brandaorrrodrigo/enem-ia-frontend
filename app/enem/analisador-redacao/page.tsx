@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 
 interface Competencia {
   id: number;
@@ -279,54 +278,177 @@ export default function AnalisadorRedacaoPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0D1F22] text-white pt-16 pb-24">
+    <main style={{
+      minHeight: '100vh',
+      background: 'var(--chalk-dark)',
+      color: 'var(--chalk-white)',
+      paddingTop: '4rem',
+      paddingBottom: '6rem'
+    }}>
       <FloatingNav />
-      <ChalkBackToTop />
 
-      <div className="container-ia py-8">
+      <div className="container" style={{
+        maxWidth: '1200px',
+        margin: '0 auto',
+        padding: '2rem 1rem'
+      }}>
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="title-ia text-3xl md:text-4xl mb-4">
+        <div className="header" style={{
+          textAlign: 'center',
+          marginBottom: '2rem'
+        }}>
+          <h1 style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            color: 'var(--chalk-white)',
+            marginBottom: '1rem',
+            fontFamily: 'var(--font-chalk)'
+          }}>
             ✍️ Analisador de Redação ENEM-IA
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p style={{
+            color: 'var(--chalk-dim)',
+            maxWidth: '42rem',
+            margin: '0 auto',
+            fontSize: '1rem'
+          }}>
             Escreva sua redação e receba uma análise detalhada das 5 competências do ENEM
             com sugestões de melhoria e repertórios sugeridos.
           </p>
         </div>
 
         {/* Estatísticas */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-emerald-400">{estatisticas.total}</div>
-            <div className="text-gray-400 text-sm">Redações Analisadas</div>
+        <div className="stats-bar" style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+          gap: '1rem',
+          marginBottom: '2rem',
+          padding: '1.5rem',
+          background: 'var(--chalk-board)',
+          borderRadius: '0.5rem',
+          border: '3px solid var(--chalk-border)'
+        }}>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              color: 'var(--accent-green)'
+            }}>
+              {estatisticas.total}
+            </div>
+            <div className="stat-label" style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem'
+            }}>
+              Redações Analisadas
+            </div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-blue-400">{estatisticas.media}</div>
-            <div className="text-gray-400 text-sm">Nota Média</div>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              color: 'var(--accent-blue)'
+            }}>
+              {estatisticas.media}
+            </div>
+            <div className="stat-label" style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem'
+            }}>
+              Nota Média
+            </div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-yellow-400">{estatisticas.melhor}</div>
-            <div className="text-gray-400 text-sm">Melhor Nota</div>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              color: 'var(--accent-yellow)'
+            }}>
+              {estatisticas.melhor}
+            </div>
+            <div className="stat-label" style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem'
+            }}>
+              Melhor Nota
+            </div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-purple-400">{estatisticas.ultima}</div>
-            <div className="text-gray-400 text-sm">Última Nota</div>
+          <div className="stat-item" style={{ textAlign: 'center' }}>
+            <div className="stat-number" style={{
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              color: 'var(--accent-pink)'
+            }}>
+              {estatisticas.ultima}
+            </div>
+            <div className="stat-label" style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem'
+            }}>
+              Última Nota
+            </div>
           </div>
         </div>
 
-        {/* Botão Histórico */}
-        <div className="flex justify-center gap-4 mb-6">
+        {/* Botões de Ação */}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '1rem',
+          marginBottom: '1.5rem',
+          flexWrap: 'wrap'
+        }}>
           <button
             onClick={() => setMostrarHistorico(!mostrarHistorico)}
-            className="btn-ia flex items-center gap-2"
+            className="btn"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem 1.5rem',
+              background: 'var(--chalk-board)',
+              color: 'var(--chalk-white)',
+              border: '2px solid var(--chalk-border)',
+              borderRadius: '0.5rem',
+              cursor: 'pointer',
+              fontSize: '1rem',
+              fontWeight: '600',
+              transition: 'all 0.2s'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'var(--accent-yellow)';
+              e.currentTarget.style.color = 'var(--chalk-dark)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'var(--chalk-board)';
+              e.currentTarget.style.color = 'var(--chalk-white)';
+            }}
           >
             📜 {mostrarHistorico ? 'Ocultar Histórico' : 'Ver Histórico'}
           </button>
           {analise && (
             <button
               onClick={novaRedacao}
-              className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors"
+              className="btn btn-yellow"
+              style={{
+                padding: '0.75rem 1.5rem',
+                background: 'var(--accent-yellow)',
+                color: 'var(--chalk-dark)',
+                border: '2px solid var(--chalk-border)',
+                borderRadius: '0.5rem',
+                cursor: 'pointer',
+                fontSize: '1rem',
+                fontWeight: '600',
+                transition: 'all 0.2s'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(255, 214, 10, 0.3)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
             >
               ✨ Nova Redação
             </button>
@@ -335,27 +457,69 @@ export default function AnalisadorRedacaoPage() {
 
         {/* Histórico */}
         {mostrarHistorico && (
-          <div className="card-ia p-6 mb-8">
-            <h2 className="text-xl font-bold mb-4">📜 Histórico de Redações</h2>
+          <div className="card" style={{
+            background: 'var(--chalk-board)',
+            border: '3px solid var(--chalk-border)',
+            borderRadius: '0.5rem',
+            padding: '1.5rem',
+            marginBottom: '2rem'
+          }}>
+            <h2 className="card-title" style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              marginBottom: '1rem',
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-chalk)'
+            }}>
+              📜 Histórico de Redações
+            </h2>
             {historico.length === 0 ? (
-              <p className="text-gray-400 text-center py-4">
+              <p style={{
+                color: 'var(--chalk-dim)',
+                textAlign: 'center',
+                padding: '1rem'
+              }}>
                 Você ainda não analisou nenhuma redação.
               </p>
             ) : (
-              <div className="space-y-2">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 {historico.map((h, idx) => (
-                  <div key={idx} className="bg-white/5 rounded-lg p-4 flex items-center justify-between">
+                  <div
+                    key={idx}
+                    className="chalkboard-card"
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      borderRadius: '0.5rem',
+                      padding: '1rem',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      flexWrap: 'wrap',
+                      gap: '1rem'
+                    }}
+                  >
                     <div>
-                      <h3 className="font-medium">{h.tema}</h3>
-                      <p className="text-sm text-gray-400">
+                      <h3 style={{
+                        fontWeight: '600',
+                        color: 'var(--chalk-white)',
+                        marginBottom: '0.25rem'
+                      }}>
+                        {h.tema}
+                      </h3>
+                      <p style={{
+                        fontSize: '0.875rem',
+                        color: 'var(--chalk-dim)'
+                      }}>
                         {new Date(h.data).toLocaleDateString('pt-BR')}
                       </p>
                     </div>
-                    <div className={`text-2xl font-bold ${
-                      h.notaTotal >= 800 ? 'text-emerald-400' :
-                      h.notaTotal >= 600 ? 'text-blue-400' :
-                      h.notaTotal >= 400 ? 'text-yellow-400' : 'text-red-400'
-                    }`}>
+                    <div style={{
+                      fontSize: '2rem',
+                      fontWeight: 'bold',
+                      color: h.notaTotal >= 800 ? 'var(--accent-green)' :
+                             h.notaTotal >= 600 ? 'var(--accent-blue)' :
+                             h.notaTotal >= 400 ? 'var(--accent-yellow)' : 'var(--accent-pink)'
+                    }}>
                       {h.notaTotal}
                     </div>
                   </div>
@@ -366,50 +530,113 @@ export default function AnalisadorRedacaoPage() {
         )}
 
         {/* Abas */}
-        <div className="flex justify-center gap-2 mb-6">
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '0.5rem',
+          marginBottom: '1.5rem'
+        }}>
           <button
             onClick={() => setAbaSelecionada('escrever')}
-            className={`px-6 py-2 rounded-lg font-medium transition-all ${
-              abaSelecionada === 'escrever'
-                ? 'bg-emerald-600 text-white'
-                : 'bg-white/10 text-gray-300 hover:bg-white/20'
-            }`}
+            style={{
+              padding: '0.75rem 1.5rem',
+              borderRadius: '0.5rem',
+              fontWeight: '600',
+              transition: 'all 0.2s',
+              cursor: 'pointer',
+              border: abaSelecionada === 'escrever' ? '2px solid var(--accent-yellow)' : '2px solid var(--chalk-border)',
+              background: abaSelecionada === 'escrever' ? 'var(--accent-yellow)' : 'var(--chalk-board)',
+              color: abaSelecionada === 'escrever' ? 'var(--chalk-dark)' : 'var(--chalk-dim)'
+            }}
           >
             ✏️ Escrever
           </button>
           <button
             onClick={() => setAbaSelecionada('resultado')}
             disabled={!analise}
-            className={`px-6 py-2 rounded-lg font-medium transition-all ${
-              abaSelecionada === 'resultado'
-                ? 'bg-emerald-600 text-white'
-                : analise
-                ? 'bg-white/10 text-gray-300 hover:bg-white/20'
-                : 'bg-white/5 text-gray-500 cursor-not-allowed'
-            }`}
+            style={{
+              padding: '0.75rem 1.5rem',
+              borderRadius: '0.5rem',
+              fontWeight: '600',
+              transition: 'all 0.2s',
+              cursor: analise ? 'pointer' : 'not-allowed',
+              border: abaSelecionada === 'resultado' ? '2px solid var(--accent-yellow)' : '2px solid var(--chalk-border)',
+              background: abaSelecionada === 'resultado' ? 'var(--accent-yellow)' :
+                         analise ? 'var(--chalk-board)' : 'rgba(255, 255, 255, 0.05)',
+              color: abaSelecionada === 'resultado' ? 'var(--chalk-dark)' :
+                     analise ? 'var(--chalk-dim)' : 'rgba(255, 255, 255, 0.3)',
+              opacity: analise ? 1 : 0.5
+            }}
           >
             📊 Resultado
           </button>
         </div>
 
         {abaSelecionada === 'escrever' ? (
-          <div className="card-ia p-6">
+          <div className="card" style={{
+            background: 'var(--chalk-board)',
+            border: '3px solid var(--chalk-border)',
+            borderRadius: '0.5rem',
+            padding: '1.5rem'
+          }}>
             {/* Tema */}
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2">Tema da Redação</label>
+            <div style={{ marginBottom: '1.5rem' }}>
+              <label style={{
+                display: 'block',
+                fontSize: '0.875rem',
+                fontWeight: '600',
+                marginBottom: '0.5rem',
+                color: 'var(--chalk-white)'
+              }}>
+                Tema da Redação
+              </label>
               <input
                 type="text"
                 value={tema}
                 onChange={(e) => setTema(e.target.value)}
                 placeholder="Digite o tema ou selecione um abaixo..."
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-emerald-500 focus:outline-none"
+                style={{
+                  width: '100%',
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  border: '2px solid var(--chalk-border)',
+                  borderRadius: '0.5rem',
+                  padding: '0.75rem 1rem',
+                  color: 'var(--chalk-white)',
+                  fontSize: '1rem',
+                  outline: 'none'
+                }}
+                onFocus={(e) => e.currentTarget.style.borderColor = 'var(--accent-yellow)'}
+                onBlur={(e) => e.currentTarget.style.borderColor = 'var(--chalk-border)'}
               />
-              <div className="flex flex-wrap gap-2 mt-3">
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem',
+                marginTop: '0.75rem'
+              }}>
                 {temasExemplo.slice(0, 4).map((t, idx) => (
                   <button
                     key={idx}
                     onClick={() => setTema(t)}
-                    className="text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-full transition-colors"
+                    className="badge"
+                    style={{
+                      fontSize: '0.75rem',
+                      background: 'rgba(255, 255, 255, 0.1)',
+                      padding: '0.375rem 0.75rem',
+                      borderRadius: '1rem',
+                      border: '1px solid var(--chalk-border)',
+                      color: 'var(--chalk-dim)',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
+                      e.currentTarget.style.color = 'var(--chalk-white)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                      e.currentTarget.style.color = 'var(--chalk-dim)';
+                    }}
                   >
                     {t.substring(0, 40)}...
                   </button>
@@ -418,19 +645,48 @@ export default function AnalisadorRedacaoPage() {
             </div>
 
             {/* Área de texto */}
-            <div className="mb-4">
-              <label className="block text-sm font-medium mb-2">Sua Redação</label>
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={{
+                display: 'block',
+                fontSize: '0.875rem',
+                fontWeight: '600',
+                marginBottom: '0.5rem',
+                color: 'var(--chalk-white)'
+              }}>
+                Sua Redação
+              </label>
               <textarea
                 value={texto}
                 onChange={(e) => setTexto(e.target.value)}
                 placeholder="Digite sua redação aqui... (mínimo 100 palavras)"
                 rows={20}
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-emerald-500 focus:outline-none resize-none font-mono text-sm leading-relaxed"
+                style={{
+                  width: '100%',
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  border: '2px solid var(--chalk-border)',
+                  borderRadius: '0.5rem',
+                  padding: '0.75rem 1rem',
+                  color: 'var(--chalk-white)',
+                  fontSize: '0.875rem',
+                  lineHeight: '1.75',
+                  fontFamily: 'monospace',
+                  resize: 'none',
+                  outline: 'none'
+                }}
+                onFocus={(e) => e.currentTarget.style.borderColor = 'var(--accent-yellow)'}
+                onBlur={(e) => e.currentTarget.style.borderColor = 'var(--chalk-border)'}
               />
             </div>
 
             {/* Contadores */}
-            <div className="flex flex-wrap gap-4 mb-6 text-sm text-gray-400">
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '1rem',
+              marginBottom: '1.5rem',
+              fontSize: '0.875rem',
+              color: 'var(--chalk-dim)'
+            }}>
               <span>📝 {contarPalavras(texto)} palavras</span>
               <span>📄 {contarLinhas(texto)} linhas</span>
               <span>✏️ {texto.length} caracteres</span>
@@ -440,13 +696,34 @@ export default function AnalisadorRedacaoPage() {
             <button
               onClick={analisarRedacao}
               disabled={analisando || contarPalavras(texto) < 100}
-              className={`w-full btn-ia py-4 text-lg ${
-                analisando || contarPalavras(texto) < 100 ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
+              className="btn btn-yellow"
+              style={{
+                width: '100%',
+                padding: '1rem',
+                fontSize: '1.125rem',
+                fontWeight: '600',
+                background: (analisando || contarPalavras(texto) < 100) ? 'rgba(255, 214, 10, 0.5)' : 'var(--accent-yellow)',
+                color: 'var(--chalk-dark)',
+                border: '2px solid var(--chalk-border)',
+                borderRadius: '0.5rem',
+                cursor: (analisando || contarPalavras(texto) < 100) ? 'not-allowed' : 'pointer',
+                transition: 'all 0.2s',
+                opacity: (analisando || contarPalavras(texto) < 100) ? 0.5 : 1
+              }}
+              onMouseEnter={(e) => {
+                if (!analisando && contarPalavras(texto) >= 100) {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(255, 214, 10, 0.3)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
             >
               {analisando ? (
-                <span className="flex items-center justify-center gap-2">
-                  <span className="animate-spin">🔄</span> Analisando sua redação...
+                <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                  <span style={{ animation: 'spin 1s linear infinite' }}>🔄</span> Analisando sua redação...
                 </span>
               ) : (
                 '🚀 Analisar Redação'
@@ -454,56 +731,141 @@ export default function AnalisadorRedacaoPage() {
             </button>
 
             {contarPalavras(texto) < 100 && texto.length > 0 && (
-              <p className="text-center text-yellow-400 text-sm mt-2">
+              <p style={{
+                textAlign: 'center',
+                color: 'var(--accent-yellow)',
+                fontSize: '0.875rem',
+                marginTop: '0.5rem'
+              }}>
                 Escreva pelo menos 100 palavras para análise ({100 - contarPalavras(texto)} restantes)
               </p>
             )}
           </div>
         ) : analise && (
-          <div className="space-y-6">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             {/* Nota Total */}
-            <div className="card-ia p-6 text-center">
-              <h2 className="text-xl font-bold mb-4">📊 Resultado da Análise</h2>
-              <div className={`text-6xl font-bold mb-2 ${
-                analise.notaTotal >= 800 ? 'text-emerald-400' :
-                analise.notaTotal >= 600 ? 'text-blue-400' :
-                analise.notaTotal >= 400 ? 'text-yellow-400' : 'text-red-400'
-              }`}>
+            <div className="card" style={{
+              background: 'var(--chalk-board)',
+              border: '3px solid var(--chalk-border)',
+              borderRadius: '0.5rem',
+              padding: '1.5rem',
+              textAlign: 'center'
+            }}>
+              <h2 style={{
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                marginBottom: '1rem',
+                color: 'var(--chalk-white)',
+                fontFamily: 'var(--font-chalk)'
+              }}>
+                📊 Resultado da Análise
+              </h2>
+              <div style={{
+                fontSize: '4rem',
+                fontWeight: 'bold',
+                marginBottom: '0.5rem',
+                color: analise.notaTotal >= 800 ? 'var(--accent-green)' :
+                       analise.notaTotal >= 600 ? 'var(--accent-blue)' :
+                       analise.notaTotal >= 400 ? 'var(--accent-yellow)' : 'var(--accent-pink)'
+              }}>
                 {analise.notaTotal}
               </div>
-              <p className="text-gray-400">de 1000 pontos</p>
-              <p className="mt-4 text-gray-300">{analise.feedbackGeral}</p>
+              <p style={{ color: 'var(--chalk-dim)' }}>de 1000 pontos</p>
+              <p style={{ marginTop: '1rem', color: 'var(--chalk-white)' }}>
+                {analise.feedbackGeral}
+              </p>
             </div>
 
             {/* Competências */}
-            <div className="card-ia p-6">
-              <h3 className="text-xl font-bold mb-4">📋 Análise por Competência</h3>
-              <div className="space-y-4">
+            <div className="card" style={{
+              background: 'var(--chalk-board)',
+              border: '3px solid var(--chalk-border)',
+              borderRadius: '0.5rem',
+              padding: '1.5rem'
+            }}>
+              <h3 style={{
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                marginBottom: '1rem',
+                color: 'var(--chalk-white)',
+                fontFamily: 'var(--font-chalk)'
+              }}>
+                📋 Análise por Competência
+              </h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {analise.competencias.map((comp) => (
-                  <div key={comp.id} className="bg-white/5 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <div>
-                        <h4 className="font-bold">{comp.nome}</h4>
-                        <p className="text-sm text-gray-400">{comp.descricao}</p>
+                  <div
+                    key={comp.id}
+                    className="chalkboard-card"
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      borderRadius: '0.5rem',
+                      padding: '1rem'
+                    }}
+                  >
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      marginBottom: '0.5rem',
+                      flexWrap: 'wrap',
+                      gap: '1rem'
+                    }}>
+                      <div style={{ flex: 1, minWidth: '200px' }}>
+                        <h4 style={{ fontWeight: 'bold', color: 'var(--chalk-white)' }}>
+                          {comp.nome}
+                        </h4>
+                        <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
+                          {comp.descricao}
+                        </p>
                       </div>
-                      <div className={`text-2xl font-bold ${
-                        comp.nota >= 160 ? 'text-emerald-400' :
-                        comp.nota >= 120 ? 'text-blue-400' :
-                        comp.nota >= 80 ? 'text-yellow-400' : 'text-red-400'
-                      }`}>
+                      <div style={{
+                        fontSize: '2rem',
+                        fontWeight: 'bold',
+                        color: comp.nota >= 160 ? 'var(--accent-green)' :
+                               comp.nota >= 120 ? 'var(--accent-blue)' :
+                               comp.nota >= 80 ? 'var(--accent-yellow)' : 'var(--accent-pink)'
+                      }}>
                         {comp.nota}
                       </div>
                     </div>
-                    <div className="progress-ia mb-2">
+                    <div style={{
+                      width: '100%',
+                      height: '8px',
+                      background: 'rgba(255, 255, 255, 0.1)',
+                      borderRadius: '4px',
+                      overflow: 'hidden',
+                      marginBottom: '0.5rem'
+                    }}>
                       <div
-                        className={`progress-bar-ia bg-gradient-to-r ${comp.cor}`}
-                        style={{ width: `${(comp.nota / 200) * 100}%` }}
+                        style={{
+                          height: '100%',
+                          width: `${(comp.nota / 200) * 100}%`,
+                          background: `linear-gradient(to right, ${comp.cor})`,
+                          transition: 'width 0.5s ease'
+                        }}
                       />
                     </div>
-                    <p className="text-sm text-gray-300 mb-2">{comp.feedback}</p>
-                    <div className="flex flex-wrap gap-2">
+                    <p style={{
+                      fontSize: '0.875rem',
+                      color: 'var(--chalk-white)',
+                      marginBottom: '0.5rem'
+                    }}>
+                      {comp.feedback}
+                    </p>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                       {comp.sugestoes.map((sug, idx) => (
-                        <span key={idx} className="text-xs bg-white/10 px-2 py-1 rounded">
+                        <span
+                          key={idx}
+                          className="badge"
+                          style={{
+                            fontSize: '0.75rem',
+                            background: 'rgba(255, 255, 255, 0.1)',
+                            padding: '0.25rem 0.5rem',
+                            borderRadius: '0.25rem',
+                            color: 'var(--chalk-dim)'
+                          }}
+                        >
                           💡 {sug}
                         </span>
                       ))}
@@ -514,49 +876,124 @@ export default function AnalisadorRedacaoPage() {
             </div>
 
             {/* Pontos Fortes e a Melhorar */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="card-ia p-6">
-                <h3 className="text-lg font-bold text-emerald-400 mb-4">✅ Pontos Fortes</h3>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gap: '1.5rem'
+            }}>
+              <div className="card" style={{
+                background: 'var(--chalk-board)',
+                border: '3px solid var(--chalk-border)',
+                borderRadius: '0.5rem',
+                padding: '1.5rem'
+              }}>
+                <h3 style={{
+                  fontSize: '1.125rem',
+                  fontWeight: 'bold',
+                  color: 'var(--accent-green)',
+                  marginBottom: '1rem'
+                }}>
+                  ✅ Pontos Fortes
+                </h3>
                 {analise.pontosFortes.length > 0 ? (
-                  <ul className="space-y-2">
+                  <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     {analise.pontosFortes.map((ponto, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm">
-                        <span className="text-emerald-400">•</span>
+                      <li
+                        key={idx}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'flex-start',
+                          gap: '0.5rem',
+                          fontSize: '0.875rem',
+                          color: 'var(--chalk-white)'
+                        }}
+                      >
+                        <span style={{ color: 'var(--accent-green)' }}>•</span>
                         {ponto}
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-gray-400 text-sm">Continue praticando para identificar seus pontos fortes.</p>
+                  <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                    Continue praticando para identificar seus pontos fortes.
+                  </p>
                 )}
               </div>
 
-              <div className="card-ia p-6">
-                <h3 className="text-lg font-bold text-yellow-400 mb-4">⚠️ Pontos a Melhorar</h3>
+              <div className="card" style={{
+                background: 'var(--chalk-board)',
+                border: '3px solid var(--chalk-border)',
+                borderRadius: '0.5rem',
+                padding: '1.5rem'
+              }}>
+                <h3 style={{
+                  fontSize: '1.125rem',
+                  fontWeight: 'bold',
+                  color: 'var(--accent-yellow)',
+                  marginBottom: '1rem'
+                }}>
+                  ⚠️ Pontos a Melhorar
+                </h3>
                 {analise.pontosMelhorar.length > 0 ? (
-                  <ul className="space-y-2">
+                  <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     {analise.pontosMelhorar.map((ponto, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm">
-                        <span className="text-yellow-400">•</span>
+                      <li
+                        key={idx}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'flex-start',
+                          gap: '0.5rem',
+                          fontSize: '0.875rem',
+                          color: 'var(--chalk-white)'
+                        }}
+                      >
+                        <span style={{ color: 'var(--accent-yellow)' }}>•</span>
                         {ponto}
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-gray-400 text-sm">Parabéns! Sua redação está bem estruturada.</p>
+                  <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                    Parabéns! Sua redação está bem estruturada.
+                  </p>
                 )}
               </div>
             </div>
 
             {/* Repertórios Sugeridos */}
-            <div className="card-ia p-6">
-              <h3 className="text-lg font-bold text-purple-400 mb-4">📚 Repertórios Sugeridos</h3>
-              <p className="text-sm text-gray-400 mb-4">
+            <div className="card" style={{
+              background: 'var(--chalk-board)',
+              border: '3px solid var(--chalk-border)',
+              borderRadius: '0.5rem',
+              padding: '1.5rem'
+            }}>
+              <h3 style={{
+                fontSize: '1.125rem',
+                fontWeight: 'bold',
+                color: 'var(--accent-pink)',
+                marginBottom: '1rem'
+              }}>
+                📚 Repertórios Sugeridos
+              </h3>
+              <p style={{
+                fontSize: '0.875rem',
+                color: 'var(--chalk-dim)',
+                marginBottom: '1rem'
+              }}>
                 Use estas referências para enriquecer suas próximas redações:
               </p>
-              <div className="space-y-2">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 {analise.repertorios.map((rep, idx) => (
-                  <div key={idx} className="bg-white/5 rounded-lg p-3 text-sm">
+                  <div
+                    key={idx}
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      borderRadius: '0.5rem',
+                      padding: '0.75rem',
+                      fontSize: '0.875rem',
+                      color: 'var(--chalk-white)'
+                    }}
+                  >
                     {rep}
                   </div>
                 ))}
@@ -564,10 +1001,29 @@ export default function AnalisadorRedacaoPage() {
             </div>
 
             {/* Ações */}
-            <div className="flex justify-center gap-4">
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
               <button
                 onClick={novaRedacao}
-                className="btn-ia px-8 py-3"
+                className="btn btn-yellow"
+                style={{
+                  padding: '0.75rem 2rem',
+                  background: 'var(--accent-yellow)',
+                  color: 'var(--chalk-dark)',
+                  border: '2px solid var(--chalk-border)',
+                  borderRadius: '0.5rem',
+                  cursor: 'pointer',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  transition: 'all 0.2s'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(255, 214, 10, 0.3)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}
               >
                 ✨ Escrever Nova Redação
               </button>
@@ -577,42 +1033,120 @@ export default function AnalisadorRedacaoPage() {
 
         {/* Dicas */}
         {abaSelecionada === 'escrever' && (
-          <div className="mt-8 card-ia p-6">
-            <h2 className="text-xl font-bold mb-4">💡 Dicas para uma Redação Nota 1000</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="font-bold text-blue-400 mb-2">📝 Estrutura</h3>
-                <p className="text-sm text-gray-400">
+          <div className="card" style={{
+            marginTop: '2rem',
+            background: 'var(--chalk-board)',
+            border: '3px solid var(--chalk-border)',
+            borderRadius: '0.5rem',
+            padding: '1.5rem'
+          }}>
+            <h2 style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              marginBottom: '1rem',
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-chalk)'
+            }}>
+              💡 Dicas para uma Redação Nota 1000
+            </h2>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+              gap: '1rem'
+            }}>
+              <div className="chalkboard-card" style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '0.5rem',
+                padding: '1rem'
+              }}>
+                <h3 style={{
+                  fontWeight: 'bold',
+                  color: 'var(--accent-blue)',
+                  marginBottom: '0.5rem'
+                }}>
+                  📝 Estrutura
+                </h3>
+                <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                   Introdução com tese clara, 2 parágrafos de desenvolvimento e conclusão com proposta.
                 </p>
               </div>
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="font-bold text-purple-400 mb-2">📚 Repertório</h3>
-                <p className="text-sm text-gray-400">
+              <div className="chalkboard-card" style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '0.5rem',
+                padding: '1rem'
+              }}>
+                <h3 style={{
+                  fontWeight: 'bold',
+                  color: 'var(--accent-pink)',
+                  marginBottom: '0.5rem'
+                }}>
+                  📚 Repertório
+                </h3>
+                <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                   Use citações de filósofos, dados estatísticos e referências culturais.
                 </p>
               </div>
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="font-bold text-emerald-400 mb-2">🔗 Conectivos</h3>
-                <p className="text-sm text-gray-400">
+              <div className="chalkboard-card" style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '0.5rem',
+                padding: '1rem'
+              }}>
+                <h3 style={{
+                  fontWeight: 'bold',
+                  color: 'var(--accent-green)',
+                  marginBottom: '0.5rem'
+                }}>
+                  🔗 Conectivos
+                </h3>
+                <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                   Use além disso, portanto, contudo, dessa forma para conectar ideias.
                 </p>
               </div>
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="font-bold text-orange-400 mb-2">🎯 Proposta</h3>
-                <p className="text-sm text-gray-400">
+              <div className="chalkboard-card" style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '0.5rem',
+                padding: '1rem'
+              }}>
+                <h3 style={{
+                  fontWeight: 'bold',
+                  color: 'var(--accent-orange)',
+                  marginBottom: '0.5rem'
+                }}>
+                  🎯 Proposta
+                </h3>
+                <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                   Inclua agente, ação, meio, finalidade e detalhamento na intervenção.
                 </p>
               </div>
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="font-bold text-pink-400 mb-2">✏️ Revisão</h3>
-                <p className="text-sm text-gray-400">
+              <div className="chalkboard-card" style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '0.5rem',
+                padding: '1rem'
+              }}>
+                <h3 style={{
+                  fontWeight: 'bold',
+                  color: 'var(--accent-pink)',
+                  marginBottom: '0.5rem'
+                }}>
+                  ✏️ Revisão
+                </h3>
+                <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                   Revise ortografia, concordância e coerência antes de enviar.
                 </p>
               </div>
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="font-bold text-yellow-400 mb-2">📏 Tamanho</h3>
-                <p className="text-sm text-gray-400">
+              <div className="chalkboard-card" style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '0.5rem',
+                padding: '1rem'
+              }}>
+                <h3 style={{
+                  fontWeight: 'bold',
+                  color: 'var(--accent-yellow)',
+                  marginBottom: '0.5rem'
+                }}>
+                  📏 Tamanho
+                </h3>
+                <p style={{ fontSize: '0.875rem', color: 'var(--chalk-dim)' }}>
                   Escreva entre 25 e 30 linhas para um bom desenvolvimento.
                 </p>
               </div>
@@ -620,6 +1154,47 @@ export default function AnalisadorRedacaoPage() {
           </div>
         )}
       </div>
+
+      {/* Footer */}
+      <div className="footer" style={{
+        marginTop: '3rem',
+        paddingTop: '2rem',
+        borderTop: '2px solid var(--chalk-border)',
+        textAlign: 'center'
+      }}>
+        <a
+          href="/enem"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            color: 'var(--accent-yellow)',
+            textDecoration: 'none',
+            fontSize: '1rem',
+            fontWeight: '600',
+            transition: 'all 0.2s'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateX(-4px)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateX(0)';
+          }}
+        >
+          ← Voltar para ENEM-IA
+        </a>
+      </div>
+
+      <style jsx>{`
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      `}</style>
     </main>
   );
 }

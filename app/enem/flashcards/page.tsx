@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 
 interface Flashcard {
   id: string;
@@ -232,58 +231,62 @@ export default function FlashcardsPage() {
     const deckAtual = decksConfig.find(d => d.id === deckSelecionado);
 
     return (
-      <main className="min-h-screen bg-[#0D1F22] text-white pt-16 pb-24">
+      <main className="min-h-screen pt-16 pb-24" style={{ backgroundColor: 'var(--chalkboard-bg)' }}>
         <FloatingNav />
 
-        <div className="container-ia py-8 max-w-2xl mx-auto">
+        <div className="container max-w-2xl mx-auto px-4 py-8">
           {/* Header do Estudo */}
           <div className="flex items-center justify-between mb-6">
             <button
               onClick={finalizarEstudo}
-              className="text-gray-400 hover:text-white transition-colors"
+              className="transition-colors"
+              style={{ color: 'var(--chalk-dim)' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--chalk-white)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--chalk-dim)'}
             >
               ← Voltar
             </button>
             <div className="text-center">
-              <span className="text-sm text-gray-400">{deckAtual?.nome}</span>
-              <div className="font-bold">{cardAtual + 1} / {cardsParaRevisar.length}</div>
+              <span className="text-sm" style={{ color: 'var(--chalk-dim)' }}>{deckAtual?.nome}</span>
+              <div className="font-bold" style={{ color: 'var(--chalk-white)' }}>{cardAtual + 1} / {cardsParaRevisar.length}</div>
             </div>
             <div className="text-right text-sm">
-              <span className="text-emerald-400">✓ {estatisticasSessao.acertos}</span>
-              <span className="text-gray-400 mx-2">|</span>
-              <span className="text-red-400">✗ {estatisticasSessao.erros}</span>
+              <span style={{ color: 'var(--accent-green)' }}>✓ {estatisticasSessao.acertos}</span>
+              <span className="mx-2" style={{ color: 'var(--chalk-dim)' }}>|</span>
+              <span style={{ color: 'var(--accent-red)' }}>✗ {estatisticasSessao.erros}</span>
             </div>
           </div>
 
           {/* Barra de Progresso */}
-          <div className="progress-ia mb-8">
+          <div className="h-2 rounded-full mb-8" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
             <div
-              className="progress-bar-ia bg-gradient-to-r from-emerald-500 to-emerald-700"
-              style={{ width: `${progresso}%` }}
+              className="h-full rounded-full transition-all"
+              style={{ width: `${progresso}%`, backgroundColor: 'var(--accent-green)' }}
             />
           </div>
 
           {/* Card */}
           <div
-            className={`card-ia p-8 min-h-[300px] flex flex-col items-center justify-center cursor-pointer transition-all duration-300 ${
-              mostrarVerso ? 'bg-gradient-to-br from-emerald-900/30 to-emerald-800/30' : ''
+            className={`chalkboard-card p-8 min-h-[300px] flex flex-col items-center justify-center cursor-pointer transition-all duration-300 ${
+              mostrarVerso ? 'border-green-500/50' : ''
             }`}
             onClick={() => setMostrarVerso(!mostrarVerso)}
+            style={mostrarVerso ? { backgroundColor: 'rgba(34, 197, 94, 0.1)' } : {}}
           >
-            <div className="text-xs text-gray-400 mb-4">
+            <div className="text-xs mb-4" style={{ color: 'var(--chalk-dim)' }}>
               {card.subcategoria} • Nível {card.nivel}/7
             </div>
 
             {!mostrarVerso ? (
               <>
                 <div className="text-4xl mb-4">❓</div>
-                <p className="text-xl text-center font-medium">{card.frente}</p>
-                <p className="text-sm text-gray-400 mt-6">Toque para ver a resposta</p>
+                <p className="text-xl text-center font-medium" style={{ color: 'var(--chalk-white)' }}>{card.frente}</p>
+                <p className="text-sm mt-6" style={{ color: 'var(--chalk-dim)' }}>Toque para ver a resposta</p>
               </>
             ) : (
               <>
                 <div className="text-4xl mb-4">💡</div>
-                <p className="text-xl text-center font-medium text-emerald-400">{card.verso}</p>
+                <p className="text-xl text-center font-medium" style={{ color: 'var(--accent-green)' }}>{card.verso}</p>
               </>
             )}
           </div>
@@ -293,13 +296,23 @@ export default function FlashcardsPage() {
             <div className="flex gap-4 mt-6">
               <button
                 onClick={() => responderCard(false)}
-                className="flex-1 py-4 bg-red-500/20 hover:bg-red-500/30 border border-red-500/50 rounded-xl text-red-400 font-medium transition-colors"
+                className="flex-1 py-4 rounded-xl font-medium transition-colors"
+                style={{
+                  backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                  border: '1px solid rgba(239, 68, 68, 0.5)',
+                  color: 'var(--accent-red)'
+                }}
               >
                 😕 Errei
               </button>
               <button
                 onClick={() => responderCard(true)}
-                className="flex-1 py-4 bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/50 rounded-xl text-emerald-400 font-medium transition-colors"
+                className="flex-1 py-4 rounded-xl font-medium transition-colors"
+                style={{
+                  backgroundColor: 'rgba(34, 197, 94, 0.2)',
+                  border: '1px solid rgba(34, 197, 94, 0.5)',
+                  color: 'var(--accent-green)'
+                }}
               >
                 😊 Acertei
               </button>
@@ -307,7 +320,7 @@ export default function FlashcardsPage() {
           )}
 
           {/* Dica */}
-          <div className="mt-8 text-center text-sm text-gray-400">
+          <div className="mt-8 text-center text-sm" style={{ color: 'var(--chalk-dim)' }}>
             <p>💡 A revisão espaçada ajusta o intervalo baseado no seu desempenho.</p>
             <p>Quanto mais você acerta, maior o intervalo até a próxima revisão!</p>
           </div>
@@ -322,32 +335,31 @@ export default function FlashcardsPage() {
     const taxa = Math.round((estatisticasSessao.acertos / total) * 100);
 
     return (
-      <main className="min-h-screen bg-[#0D1F22] text-white pt-16 pb-24">
+      <main className="min-h-screen pt-16 pb-24" style={{ backgroundColor: 'var(--chalkboard-bg)' }}>
         <FloatingNav />
-        <ChalkBackToTop />
 
-        <div className="container-ia py-8 max-w-lg mx-auto">
-          <div className="card-ia p-8 text-center">
+        <div className="container max-w-lg mx-auto px-4 py-8">
+          <div className="chalkboard-card p-8 text-center">
             <div className="text-6xl mb-4">
               {taxa >= 80 ? '🎉' : taxa >= 50 ? '👍' : '💪'}
             </div>
-            <h2 className="text-2xl font-bold mb-2">Sessão Concluída!</h2>
+            <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--chalk-white)' }}>Sessão Concluída!</h2>
 
             <div className="grid grid-cols-2 gap-4 my-6">
-              <div className="bg-emerald-500/20 rounded-lg p-4">
-                <div className="text-3xl font-bold text-emerald-400">{estatisticasSessao.acertos}</div>
-                <div className="text-sm text-gray-400">Acertos</div>
+              <div className="rounded-lg p-4" style={{ backgroundColor: 'rgba(34, 197, 94, 0.2)' }}>
+                <div className="text-3xl font-bold" style={{ color: 'var(--accent-green)' }}>{estatisticasSessao.acertos}</div>
+                <div className="text-sm" style={{ color: 'var(--chalk-dim)' }}>Acertos</div>
               </div>
-              <div className="bg-red-500/20 rounded-lg p-4">
-                <div className="text-3xl font-bold text-red-400">{estatisticasSessao.erros}</div>
-                <div className="text-sm text-gray-400">Erros</div>
+              <div className="rounded-lg p-4" style={{ backgroundColor: 'rgba(239, 68, 68, 0.2)' }}>
+                <div className="text-3xl font-bold" style={{ color: 'var(--accent-red)' }}>{estatisticasSessao.erros}</div>
+                <div className="text-sm" style={{ color: 'var(--chalk-dim)' }}>Erros</div>
               </div>
             </div>
 
-            <div className="text-4xl font-bold mb-2">{taxa}%</div>
-            <p className="text-gray-400 mb-6">Taxa de acerto</p>
+            <div className="text-4xl font-bold mb-2" style={{ color: 'var(--accent-yellow)' }}>{taxa}%</div>
+            <p className="mb-6" style={{ color: 'var(--chalk-dim)' }}>Taxa de acerto</p>
 
-            <p className="text-sm text-gray-300 mb-6">
+            <p className="text-sm mb-6" style={{ color: 'var(--chalk-white)' }}>
               {taxa >= 80
                 ? 'Excelente! Você está dominando o conteúdo!'
                 : taxa >= 50
@@ -358,13 +370,16 @@ export default function FlashcardsPage() {
             <div className="flex gap-3">
               <button
                 onClick={finalizarEstudo}
-                className="flex-1 py-3 bg-white/10 hover:bg-white/20 rounded-lg transition-colors"
+                className="flex-1 py-3 rounded-lg transition-colors"
+                style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'}
               >
                 Ver Decks
               </button>
               <button
                 onClick={() => deckSelecionado && iniciarEstudo(deckSelecionado)}
-                className="flex-1 btn-ia py-3"
+                className="btn btn-yellow flex-1 py-3"
               >
                 Estudar Mais
               </button>
@@ -376,49 +391,48 @@ export default function FlashcardsPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0D1F22] text-white pt-16 pb-24">
+    <main className="min-h-screen pt-16 pb-24" style={{ backgroundColor: 'var(--chalkboard-bg)' }}>
       <FloatingNav />
-      <ChalkBackToTop />
 
-      <div className="container-ia py-8">
+      <div className="container mx-auto px-4 py-8">
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="title-ia text-3xl md:text-4xl mb-4">
+        <div className="header text-center mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'var(--chalk-white)' }}>
             🃏 Flashcards - Revisão Espaçada
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto" style={{ color: 'var(--chalk-dim)' }}>
             Sistema de memorização baseado em repetição espaçada.
             Quanto mais você acerta, maior o intervalo até a próxima revisão!
           </p>
         </div>
 
         {/* Estatísticas Gerais */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-emerald-400">{estatisticasGerais.totalCards}</div>
-            <div className="text-gray-400 text-sm">Total de Cards</div>
+        <div className="stats-bar mb-8">
+          <div className="stat-item">
+            <div className="stat-number" style={{ color: 'var(--accent-green)' }}>{estatisticasGerais.totalCards}</div>
+            <div className="stat-label">Total de Cards</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-yellow-400">{estatisticasGerais.paraRevisar}</div>
-            <div className="text-gray-400 text-sm">Para Revisar Hoje</div>
+          <div className="stat-item">
+            <div className="stat-number" style={{ color: 'var(--accent-yellow)' }}>{estatisticasGerais.paraRevisar}</div>
+            <div className="stat-label">Para Revisar Hoje</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-purple-400">{estatisticasGerais.dominados}</div>
-            <div className="text-gray-400 text-sm">Cards Dominados</div>
+          <div className="stat-item">
+            <div className="stat-number" style={{ color: 'var(--accent-purple)' }}>{estatisticasGerais.dominados}</div>
+            <div className="stat-label">Cards Dominados</div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-blue-400">{estatisticasGerais.taxaAcerto}%</div>
-            <div className="text-gray-400 text-sm">Taxa de Acerto</div>
+          <div className="stat-item">
+            <div className="stat-number" style={{ color: 'var(--accent-blue)' }}>{estatisticasGerais.taxaAcerto}%</div>
+            <div className="stat-label">Taxa de Acerto</div>
           </div>
         </div>
 
         {/* Revisão do Dia */}
         {estatisticasGerais.paraRevisar > 0 && (
-          <div className="card-ia p-6 mb-8 bg-gradient-to-r from-emerald-900/30 to-emerald-800/30 border-emerald-500/30">
-            <div className="flex items-center justify-between">
+          <div className="chalkboard-card p-6 mb-8 border-green-500/50" style={{ backgroundColor: 'rgba(34, 197, 94, 0.1)' }}>
+            <div className="flex items-center justify-between flex-wrap gap-4">
               <div>
-                <h2 className="text-xl font-bold text-emerald-400">📅 Revisão do Dia</h2>
-                <p className="text-gray-400">
+                <h2 className="text-xl font-bold mb-1" style={{ color: 'var(--accent-green)' }}>📅 Revisão do Dia</h2>
+                <p style={{ color: 'var(--chalk-dim)' }}>
                   Você tem {estatisticasGerais.paraRevisar} cards para revisar hoje
                 </p>
               </div>
@@ -433,7 +447,7 @@ export default function FlashcardsPage() {
                   setEstatisticasSessao({ acertos: 0, erros: 0 });
                   setDeckSelecionado('todos');
                 }}
-                className="btn-ia"
+                className="btn btn-yellow"
               >
                 🚀 Revisar Agora
               </button>
@@ -442,93 +456,102 @@ export default function FlashcardsPage() {
         )}
 
         {/* Grid de Decks */}
-        <h2 className="text-xl font-bold mb-4">📚 Seus Decks</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {decks.map(deck => (
-            <div
-              key={deck.id}
-              className="card-ia overflow-hidden hover:scale-[1.02] transition-transform"
-            >
-              <div className={`bg-gradient-to-r ${deck.cor} p-4`}>
-                <div className="flex items-center justify-between">
-                  <span className="text-4xl">{deck.icone}</span>
-                  {deck.cardsParaRevisar > 0 && (
-                    <span className="bg-white/20 px-2 py-1 rounded-full text-xs font-bold">
-                      {deck.cardsParaRevisar} para revisar
-                    </span>
-                  )}
+        <div className="category mb-8">
+          <div className="category-title">📚 Seus Decks</div>
+          <div className="cards-grid">
+            {decks.map(deck => (
+              <div
+                key={deck.id}
+                className="chalkboard-card overflow-hidden hover:scale-[1.02] transition-transform"
+              >
+                <div className={`bg-gradient-to-r ${deck.cor} p-4`}>
+                  <div className="flex items-center justify-between">
+                    <span className="text-4xl">{deck.icone}</span>
+                    {deck.cardsParaRevisar > 0 && (
+                      <span className="badge px-3 py-1 text-xs">
+                        {deck.cardsParaRevisar} para revisar
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold mt-2" style={{ color: 'var(--chalk-white)' }}>{deck.nome}</h3>
                 </div>
-                <h3 className="text-lg font-bold mt-2">{deck.nome}</h3>
+
+                <div className="p-4">
+                  <div className="flex justify-between text-sm mb-4" style={{ color: 'var(--chalk-dim)' }}>
+                    <span>📝 {deck.totalCards} cards</span>
+                    <span>✅ {cards.filter(c => c.categoria === deck.id && c.nivel >= 5).length} dominados</span>
+                  </div>
+
+                  <div className="h-2 rounded-full mb-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
+                    <div
+                      className={`h-full rounded-full bg-gradient-to-r ${deck.cor}`}
+                      style={{
+                        width: `${deck.totalCards > 0
+                          ? (cards.filter(c => c.categoria === deck.id && c.nivel >= 5).length / deck.totalCards) * 100
+                          : 0}%`
+                      }}
+                    />
+                  </div>
+
+                  <button
+                    onClick={() => iniciarEstudo(deck.id)}
+                    className="btn btn-yellow w-full py-2"
+                  >
+                    {deck.cardsParaRevisar > 0 ? '📖 Revisar' : '🎯 Estudar'}
+                  </button>
+                </div>
               </div>
-
-              <div className="p-4">
-                <div className="flex justify-between text-sm text-gray-400 mb-4">
-                  <span>📝 {deck.totalCards} cards</span>
-                  <span>✅ {cards.filter(c => c.categoria === deck.id && c.nivel >= 5).length} dominados</span>
-                </div>
-
-                <div className="progress-ia mb-4">
-                  <div
-                    className={`progress-bar-ia bg-gradient-to-r ${deck.cor}`}
-                    style={{
-                      width: `${deck.totalCards > 0
-                        ? (cards.filter(c => c.categoria === deck.id && c.nivel >= 5).length / deck.totalCards) * 100
-                        : 0}%`
-                    }}
-                  />
-                </div>
-
-                <button
-                  onClick={() => iniciarEstudo(deck.id)}
-                  className="w-full btn-ia py-2"
-                >
-                  {deck.cardsParaRevisar > 0 ? '📖 Revisar' : '🎯 Estudar'}
-                </button>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Como Funciona */}
-        <div className="mt-12 card-ia p-6">
-          <h2 className="text-xl font-bold mb-4">🧠 Como Funciona a Revisão Espaçada</h2>
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="bg-white/5 rounded-lg p-4">
+        <div className="category">
+          <div className="category-title">🧠 Como Funciona a Revisão Espaçada</div>
+          <div className="grid md:grid-cols-3 gap-4 mb-6">
+            <div className="rounded-lg p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
               <div className="text-3xl mb-2">1️⃣</div>
-              <h3 className="font-bold text-emerald-400 mb-2">Estude o Card</h3>
-              <p className="text-sm text-gray-400">
+              <h3 className="font-bold mb-2" style={{ color: 'var(--accent-green)' }}>Estude o Card</h3>
+              <p className="text-sm" style={{ color: 'var(--chalk-dim)' }}>
                 Veja a pergunta e tente lembrar a resposta antes de revelar.
               </p>
             </div>
-            <div className="bg-white/5 rounded-lg p-4">
+            <div className="rounded-lg p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
               <div className="text-3xl mb-2">2️⃣</div>
-              <h3 className="font-bold text-blue-400 mb-2">Avalie-se</h3>
-              <p className="text-sm text-gray-400">
+              <h3 className="font-bold mb-2" style={{ color: 'var(--accent-blue)' }}>Avalie-se</h3>
+              <p className="text-sm" style={{ color: 'var(--chalk-dim)' }}>
                 Indique se acertou ou errou. Seja honesto para melhor resultado!
               </p>
             </div>
-            <div className="bg-white/5 rounded-lg p-4">
+            <div className="rounded-lg p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
               <div className="text-3xl mb-2">3️⃣</div>
-              <h3 className="font-bold text-purple-400 mb-2">Revisão Inteligente</h3>
-              <p className="text-sm text-gray-400">
+              <h3 className="font-bold mb-2" style={{ color: 'var(--accent-purple)' }}>Revisão Inteligente</h3>
+              <p className="text-sm" style={{ color: 'var(--chalk-dim)' }}>
                 O sistema agenda a próxima revisão. Acertos = intervalos maiores.
               </p>
             </div>
           </div>
 
-          <div className="mt-6 bg-white/5 rounded-lg p-4">
-            <h4 className="font-bold mb-2">📊 Intervalos de Revisão</h4>
+          <div className="rounded-lg p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
+            <h4 className="font-bold mb-3" style={{ color: 'var(--chalk-white)' }}>📊 Intervalos de Revisão</h4>
             <div className="flex flex-wrap gap-2 text-sm">
-              <span className="bg-red-500/20 text-red-400 px-2 py-1 rounded">Nível 0: 1 dia</span>
-              <span className="bg-orange-500/20 text-orange-400 px-2 py-1 rounded">Nível 1: 2 dias</span>
-              <span className="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Nível 2: 4 dias</span>
-              <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded">Nível 3: 7 dias</span>
-              <span className="bg-teal-500/20 text-teal-400 px-2 py-1 rounded">Nível 4: 15 dias</span>
-              <span className="bg-blue-500/20 text-blue-400 px-2 py-1 rounded">Nível 5: 30 dias</span>
-              <span className="bg-purple-500/20 text-purple-400 px-2 py-1 rounded">Nível 6: 60 dias</span>
-              <span className="bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">Nível 7: 120 dias</span>
+              <span className="px-3 py-1 rounded" style={{ backgroundColor: 'rgba(239, 68, 68, 0.2)', color: 'var(--accent-red)' }}>Nível 0: 1 dia</span>
+              <span className="px-3 py-1 rounded" style={{ backgroundColor: 'rgba(251, 146, 60, 0.2)', color: '#fb923c' }}>Nível 1: 2 dias</span>
+              <span className="px-3 py-1 rounded" style={{ backgroundColor: 'rgba(234, 179, 8, 0.2)', color: 'var(--accent-yellow)' }}>Nível 2: 4 dias</span>
+              <span className="px-3 py-1 rounded" style={{ backgroundColor: 'rgba(34, 197, 94, 0.2)', color: 'var(--accent-green)' }}>Nível 3: 7 dias</span>
+              <span className="px-3 py-1 rounded" style={{ backgroundColor: 'rgba(20, 184, 166, 0.2)', color: '#14b8a6' }}>Nível 4: 15 dias</span>
+              <span className="px-3 py-1 rounded" style={{ backgroundColor: 'rgba(59, 130, 246, 0.2)', color: 'var(--accent-blue)' }}>Nível 5: 30 dias</span>
+              <span className="px-3 py-1 rounded" style={{ backgroundColor: 'rgba(168, 85, 247, 0.2)', color: 'var(--accent-purple)' }}>Nível 6: 60 dias</span>
+              <span className="px-3 py-1 rounded" style={{ backgroundColor: 'rgba(34, 197, 94, 0.2)', color: 'var(--accent-green)' }}>Nível 7: 120 dias</span>
             </div>
           </div>
+        </div>
+
+        {/* Footer */}
+        <div className="footer">
+          <a href="/enem" className="hover:underline">
+            ← Voltar ao Painel ENEM
+          </a>
         </div>
       </div>
     </main>

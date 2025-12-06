@@ -1,207 +1,240 @@
 'use client';
 
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { useEffect } from 'react';
-import { GamificationSection, QuestoesSection } from '@/components/landing';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 
 export default function HomePage() {
-  useEffect(() => {
-    const alreadyPlayed = sessionStorage.getItem('chalkSoundPlayed');
-    if (!alreadyPlayed) {
-      const audio = new Audio('https://cdn.pixabay.com/audio/2022/07/06/audio_61a22de8e0.mp3');
-      audio.volume = 0.25;
-      audio.play().catch(() => {});
-      sessionStorage.setItem('chalkSoundPlayed', 'true');
-    }
-  }, []);
-
   return (
-    <main className="min-h-screen relative overflow-hidden">
-      {/* HERO SECTION */}
-      <section className="relative min-h-screen">
-        <div
-          className="absolute inset-0 bg-[url('https://i.imgur.com/CY2Q9iD.jpg')] bg-cover bg-center opacity-95"
-          style={{ backgroundColor: '#0b3d2e', backgroundBlendMode: 'multiply' }}
-        />
-        <div className="absolute inset-0 bg-[url('https://i.imgur.com/kp0uJ3g.png')] bg-repeat opacity-10"></div>
+    <div className="container">
+      {/* Header */}
+      <div className="header">
+        <h1>ENEM Pro - Sistema Completo de Preparacao</h1>
+        <p>Tudo que voce precisa para conquistar sua aprovacao!</p>
+      </div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-20 md:py-32 text-white min-h-screen">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="max-w-4xl mx-auto"
-          >
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold chalk-text mb-6">
-              <span className="chalk-line">Treine para o ENEM como se estivesse na lousa da escola:</span>
-            </h1>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-2xl md:text-4xl font-bold text-yellow-400 mb-6"
-            >
-              100.000+ questões e gamificação em tempo real
-            </motion.div>
-          </motion.div>
-
-          {/* Slogan Oficial */}
-          <motion.div
-            className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 mb-6 border border-yellow-400/30"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <p className="text-yellow-300 font-bold text-xl md:text-2xl italic">
-              "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
-            </p>
-          </motion.div>
-
-          <motion.p
-            className="text-lg md:text-xl text-white/90 max-w-2xl mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
-          >
-            Simulados personalizados, correcao inteligente, historico de desempenho detalhado e um sistema de pontos
-            que transforma seus estudos em um jogo diario rumo a aprovacao.
-          </motion.p>
-
-          <motion.ul
-            className="text-left text-white/80 space-y-3 mb-10 max-w-xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
-            <li className="flex items-start gap-3">
-              <span className="text-yellow-400 text-xl">📚</span>
-              <span>Banco com <strong className="text-white">100.000+ questões</strong> atualizadas e organizadas por área, tema e dificuldade.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-yellow-400 text-xl">🎮</span>
-              <span><strong className="text-white">Gamificacao completa</strong>: FP (Focus Points), medalhas, streak diaria e ranking entre os alunos.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-yellow-400 text-xl">📊</span>
-              <span>Painel com acertos, erros, nota TRI estimada e evolução por caderno e competência.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-yellow-400 text-xl">🤖</span>
-              <span><strong className="text-white">IA que explica</strong> cada questão passo a passo, como seu professor particular.</span>
-            </li>
-          </motion.ul>
-
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-          >
-            <Link
-              href="/simulado"
-              className="bg-yellow-400 hover:bg-yellow-300 text-slate-900 font-bold px-8 py-4 rounded-xl transition text-lg shadow-lg hover:shadow-xl"
-            >
-              🎯 Começar Simulado Grátis
-            </Link>
-            <Link
-              href="/dashboard/conquistas"
-              className="bg-white/20 hover:bg-white/30 text-white font-semibold px-8 py-4 rounded-xl border border-white/30 transition text-lg"
-            >
-              🏆 Ver Conquistas
-            </Link>
-          </motion.div>
-
-          <motion.div
-            className="absolute bottom-8 left-1/2 -translate-x-1/2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [0, 10, 0] }}
-            transition={{ duration: 1.5, delay: 2, repeat: Infinity }}
-          >
-            <div className="text-white/50 text-sm flex flex-col items-center">
-              <span>Role para ver mais</span>
-              <span className="text-2xl mt-1">↓</span>
-            </div>
-          </motion.div>
+      {/* Estatisticas */}
+      <div className="stats-bar">
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">24</div>
+          <div className="stat-label">Modulos Completos</div>
         </div>
-      </section>
-
-      <QuestoesSection />
-      <GamificationSection />
-
-      {/* COMO FUNCIONA */}
-      <section className="relative z-10 bg-white text-slate-800 py-16 px-6 md:px-12">
-        <div className="max-w-5xl mx-auto">
-          <motion.h2
-            className="text-2xl md:text-3xl font-extrabold mb-8 text-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            Como o ENEM-IA te ajuda a passar
-          </motion.h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <motion.div className="bg-slate-50 p-6 rounded-2xl shadow hover:shadow-md transition" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
-              <div className="text-4xl mb-3">🎯</div>
-              <h3 className="text-lg font-bold text-slate-900">Simulados inteligentes</h3>
-              <p className="mt-2 text-slate-600 text-sm">Gere simulados por disciplina e veja onde precisa melhorar.</p>
-            </motion.div>
-            <motion.div className="bg-slate-50 p-6 rounded-2xl shadow hover:shadow-md transition" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}>
-              <div className="text-4xl mb-3">🤖</div>
-              <h3 className="text-lg font-bold text-slate-900">Explicações por IA</h3>
-              <p className="mt-2 text-slate-600 text-sm">A IA resolve cada questão mostrando o raciocínio passo a passo.</p>
-            </motion.div>
-            <motion.div className="bg-slate-50 p-6 rounded-2xl shadow hover:shadow-md transition" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}>
-              <div className="text-4xl mb-3">📈</div>
-              <h3 className="text-lg font-bold text-slate-900">Evolução real</h3>
-              <p className="mt-2 text-slate-600 text-sm">Acompanhe seu progresso, ganhe pontos e medalhas.</p>
-            </motion.div>
-          </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">150+</div>
+          <div className="stat-label">Ebooks Disponiveis</div>
         </div>
-      </section>
-
-      {/* CTA FINAL */}
-      <section className="relative z-10 py-20 px-6 bg-gradient-to-r from-green-900 to-emerald-800 text-white text-center">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <h3 className="text-2xl md:text-4xl font-bold mb-4">Pronto para estudar com inteligência?</h3>
-          <p className="text-white/80 max-w-2xl mx-auto mb-8 text-lg">
-            Comece agora mesmo com o plano gratuito. São mais de <strong>100.000 questões</strong> esperando por você!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/simulado" className="inline-flex items-center justify-center bg-yellow-400 text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-yellow-300 transition text-lg">
-              🚀 Iniciar Agora — É Grátis
-            </Link>
-            <Link href="/precos" className="inline-flex items-center justify-center bg-white/20 text-white font-semibold px-8 py-4 rounded-xl border border-white/30 hover:bg-white/30 transition text-lg">
-              Ver Planos Premium
-            </Link>
-          </div>
-        </motion.div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="relative z-10 bg-slate-900 py-8 border-t border-slate-800 text-center text-sm text-slate-400">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-lg font-bold text-white">ENEM-IA 🎓</div>
-            <div className="flex gap-6">
-              <Link href="/simulado" className="hover:text-white transition">Simulados</Link>
-              <Link href="/dashboard/conquistas" className="hover:text-white transition">Conquistas</Link>
-              <Link href="/precos" className="hover:text-white transition">Planos</Link>
-            </div>
-            <div>© {new Date().getFullYear()} ENEM-IA</div>
-          </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">180</div>
+          <div className="stat-label">Dias ate o ENEM</div>
         </div>
-      </footer>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">100K+</div>
+          <div className="stat-label">Questoes</div>
+        </div>
+      </div>
 
-      <style jsx>{`
-        .chalk-text { font-family: 'Chalkduster', 'Comic Sans MS', cursive; text-shadow: 0 0 2px #fff, 0 0 10px rgba(255, 255, 255, 0.2); }
-        .chalk-line { position: relative; display: block; }
-        .chalk-line::after { content: ''; position: absolute; left: 0; bottom: -4px; height: 3px; width: 100%; background: rgba(255, 255, 255, 0.3); animation: drawChalk 2.5s ease-in-out forwards; transform-origin: left; transform: scaleX(0); }
-        @keyframes drawChalk { to { transform: scaleX(1); } }
-      `}</style>
+      {/* Categoria 1: Conteudo e Estudo */}
+      <div className="category">
+        <div className="category-title">
+          <span>📚</span>
+          Conteudo e Materiais de Estudo
+        </div>
+        <div className="cards-grid">
+          <Link href="/enem/videoaulas" className="chalkboard-card">
+            <div className="card-icon">🎥</div>
+            <div className="card-title">Videoaulas</div>
+            <div className="card-description">Aulas em video de todas as disciplinas com os melhores professores</div>
+          </Link>
 
-      <ChalkBackToTop />
-    </main>
+          <Link href="/enem/biblioteca" className="chalkboard-card">
+            <div className="card-icon">📚</div>
+            <div className="card-title">Biblioteca de Ebooks</div>
+            <div className="card-description">150+ ebooks gratuitos para consulta e download</div>
+          </Link>
+
+          <Link href="/enem/materiais" className="chalkboard-card">
+            <div className="card-icon">📖</div>
+            <div className="card-title">Materiais de Estudo</div>
+            <div className="card-description">PDFs, resumos, mapas mentais e apostilas completas</div>
+          </Link>
+
+          <Link href="/enem/questoes-comentadas" className="chalkboard-card">
+            <div className="card-icon">❓</div>
+            <div className="card-title">Questoes Comentadas</div>
+            <div className="card-description">Milhares de questoes com resolucao detalhada</div>
+          </Link>
+
+          <Link href="/enem/simulado" className="chalkboard-card">
+            <div className="card-icon">📝</div>
+            <div className="card-title">Simulados Online</div>
+            <div className="card-description">Simule a prova real e avalie seu desempenho</div>
+          </Link>
+
+          <Link href="/enem/chatbot" className="chalkboard-card">
+            <div className="card-icon">🤖</div>
+            <div className="card-title">ChatBot Assistente</div>
+            <div className="card-description">Tire suas duvidas com nosso assistente virtual inteligente</div>
+          </Link>
+
+          <Link href="/enem/gerador-questoes" className="chalkboard-card">
+            <div className="card-icon">🎯</div>
+            <div className="card-title">Gerador de Questoes IA</div>
+            <div className="card-description">Questoes personalizadas geradas automaticamente pela IA</div>
+          </Link>
+
+          <Link href="/enem/conquistas" className="chalkboard-card">
+            <div className="card-icon">🏆</div>
+            <div className="card-title">Gamificacao e Pontos</div>
+            <div className="card-description">Ganhe pontos, conquiste badges e suba no ranking estudando!</div>
+          </Link>
+        </div>
+      </div>
+
+      {/* Categoria 2: Organizacao */}
+      <div className="category">
+        <div className="category-title">
+          <span>⏰</span>
+          Organizacao e Planejamento
+        </div>
+        <div className="cards-grid">
+          <Link href="/enem/cronograma" className="chalkboard-card">
+            <div className="card-icon">📅</div>
+            <div className="card-title">Cronograma de Estudos</div>
+            <div className="card-description">Planeje suas semanas de estudo de forma eficiente</div>
+          </Link>
+
+          <Link href="/enem/gestao-tempo" className="chalkboard-card">
+            <div className="card-icon">⏱️</div>
+            <div className="card-title">Gestao de Tempo</div>
+            <div className="card-description">Tecnicas para otimizar seu tempo de estudo</div>
+          </Link>
+
+          <Link href="/enem/calendario" className="chalkboard-card">
+            <div className="card-icon">🗓️</div>
+            <div className="card-title">Calendario de Provas</div>
+            <div className="card-description">Todas as datas importantes do ENEM</div>
+          </Link>
+
+          <Link href="/enem/ferramentas" className="chalkboard-card">
+            <div className="card-icon">💻</div>
+            <div className="card-title">Ferramentas Tecnologicas</div>
+            <div className="card-description">Apps e sites para turbinar seus estudos</div>
+          </Link>
+        </div>
+      </div>
+
+      {/* Categoria 3: Tecnicas de Estudo */}
+      <div className="category">
+        <div className="category-title">
+          <span>🧠</span>
+          Tecnicas e Metodos de Estudo
+        </div>
+        <div className="cards-grid">
+          <Link href="/enem/tecnicas" className="chalkboard-card">
+            <div className="card-icon">💡</div>
+            <div className="card-title">Tecnicas de Memorizacao</div>
+            <div className="card-description">Memorize melhor e retenha mais conteudo</div>
+          </Link>
+
+          <Link href="/enem/analisador-redacao" className="chalkboard-card">
+            <div className="card-icon">✍️</div>
+            <div className="card-title">Sistema de Redacao</div>
+            <div className="card-description">Domine a redacao nota 1000 do ENEM</div>
+          </Link>
+
+          <Link href="/enem/amigos" className="chalkboard-card">
+            <div className="card-icon">👥</div>
+            <div className="card-title">Grupos de Estudo</div>
+            <div className="card-description">Estude em grupo e compartilhe conhecimento</div>
+          </Link>
+
+          <Link href="/enem/pomodoro" className="chalkboard-card">
+            <div className="card-icon">🍅</div>
+            <div className="card-title">Pomodoro Timer</div>
+            <div className="card-description">Tecnica de foco para estudos mais produtivos</div>
+          </Link>
+        </div>
+      </div>
+
+      {/* Categoria 4: Desempenho */}
+      <div className="category">
+        <div className="category-title">
+          <span>📊</span>
+          Desempenho e Estatisticas
+        </div>
+        <div className="cards-grid">
+          <Link href="/enem/dashboard" className="chalkboard-card">
+            <div className="card-icon">📈</div>
+            <div className="card-title">Dashboard</div>
+            <div className="card-description">Acompanhe seu progresso e evolucao</div>
+          </Link>
+
+          <Link href="/enem/estatisticas" className="chalkboard-card">
+            <div className="card-icon">📊</div>
+            <div className="card-title">Estatisticas Detalhadas</div>
+            <div className="card-description">Analise seu desempenho por materia</div>
+          </Link>
+
+          <Link href="/enem/ranking" className="chalkboard-card">
+            <div className="card-icon">🥇</div>
+            <div className="card-title">Ranking</div>
+            <div className="card-description">Compare seu desempenho com outros estudantes</div>
+          </Link>
+
+          <Link href="/enem/perfil" className="chalkboard-card">
+            <div className="card-icon">👤</div>
+            <div className="card-title">Meu Perfil</div>
+            <div className="card-description">Suas conquistas, badges e historico</div>
+          </Link>
+        </div>
+      </div>
+
+      {/* Categoria 5: Extras */}
+      <div className="category">
+        <div className="category-title">
+          <span>🎮</span>
+          Extras e Diversao
+        </div>
+        <div className="cards-grid">
+          <Link href="/enem/quiz-diario" className="chalkboard-card">
+            <div className="card-icon">🎯</div>
+            <div className="card-title">Quiz Diario</div>
+            <div className="card-description">5 questoes por dia para manter o ritmo</div>
+          </Link>
+
+          <Link href="/enem/desafios" className="chalkboard-card">
+            <div className="card-icon">🏆</div>
+            <div className="card-title">Desafios Semanais</div>
+            <div className="card-description">Complete desafios e ganhe recompensas</div>
+          </Link>
+
+          <Link href="/enem/flashcards" className="chalkboard-card">
+            <div className="card-icon">🃏</div>
+            <div className="card-title">Flashcards</div>
+            <div className="card-description">Revise conceitos de forma rapida e eficiente</div>
+          </Link>
+
+          <Link href="/enem/loja" className="chalkboard-card">
+            <div className="card-icon">🛒</div>
+            <div className="card-title">Loja de Recompensas</div>
+            <div className="card-description">Troque seus pontos por itens exclusivos</div>
+          </Link>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="footer">
+        <p><strong>Sistema Completo de Preparacao ENEM Pro</strong></p>
+        <p>Desenvolvido para voce alcancar seus objetivos</p>
+        <p style={{ marginTop: '15px' }}>
+          <Link href="/enem" className="btn btn-yellow">
+            Acessar Painel Principal
+          </Link>
+        </p>
+        <p style={{ marginTop: '15px' }}>
+          <Link href="/planos">
+            Ver Planos Premium
+          </Link>
+        </p>
+      </div>
+    </div>
   );
 }

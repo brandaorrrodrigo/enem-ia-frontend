@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Meta {
@@ -180,10 +179,31 @@ export default function OrganizacaoPage() {
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando...</p>
+      <div style={{
+        minHeight: '100vh',
+        backgroundColor: 'var(--chalkboard-bg)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '2rem'
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            width: '48px',
+            height: '48px',
+            border: '4px solid var(--chalk-dim)',
+            borderTopColor: 'var(--accent-yellow)',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite',
+            margin: '0 auto 1.5rem'
+          }}></div>
+          <p style={{
+            color: 'var(--chalk-white)',
+            fontSize: '1.125rem',
+            fontFamily: 'var(--font-handwriting)'
+          }}>
+            Carregando...
+          </p>
         </div>
       </div>
     );
@@ -193,253 +213,787 @@ export default function OrganizacaoPage() {
   const habitosHoje = habitos.filter(h => getHabitoFeitoHoje(h)).length;
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div style={{
+      minHeight: '100vh',
+      backgroundColor: 'var(--chalkboard-bg)',
+      padding: '2rem 1rem'
+    }}>
       <FloatingNav />
-      {/* Header */}
 
+      {/* Container */}
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
-      <div className="mb-8 pt-16">
-        <h1 className="title-ia flex items-center gap-3 mb-2">
-          📋 Organizacao e Planejamento
-        </h1>
-        <p className="subtitle-ia mb-0">
-          Defina metas, acompanhe habitos e organize seus estudos
-        </p>
-      </div>
+        {/* Header */}
+        <div style={{ marginBottom: '2rem', paddingTop: '4rem' }}>
+          <h1 style={{
+            color: 'var(--chalk-white)',
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            fontFamily: 'var(--font-handwriting)',
+            marginBottom: '0.5rem',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem'
+          }}>
+            📋 Organizacao e Planejamento
+          </h1>
+          <p style={{
+            color: 'var(--chalk-dim)',
+            fontSize: '1.125rem',
+            fontFamily: 'var(--font-handwriting)'
+          }}>
+            Defina metas, acompanhe habitos e organize seus estudos
+          </p>
+        </div>
 
-      {/* Estatisticas */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="stat-ia">
-          <span className="stat-ia-value">{metas.length}</span>
-          <span className="stat-ia-label">🎯 Metas Ativas</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{metasConcluidas}</span>
-          <span className="stat-ia-label">✅ Concluidas</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{habitos.length}</span>
-          <span className="stat-ia-label">🔄 Habitos</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{habitosHoje}/{habitos.length}</span>
-          <span className="stat-ia-label">📅 Feitos Hoje</span>
-        </div>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        {/* Metas */}
-        <div className="card-ia">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="title-ia-sm">🎯 Minhas Metas</h2>
-            <button onClick={() => setShowMetaModal(true)} className="btn-ia-sm">
-              ➕ Nova
-            </button>
+        {/* Estatisticas */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+          gap: '1rem',
+          marginBottom: '2rem'
+        }}>
+          <div style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            border: '2px solid var(--chalk-dim)',
+            borderRadius: '12px',
+            padding: '1.5rem',
+            textAlign: 'center'
+          }}>
+            <span style={{
+              display: 'block',
+              color: 'var(--accent-yellow)',
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              fontFamily: 'var(--font-handwriting)',
+              marginBottom: '0.5rem'
+            }}>
+              {metas.length}
+            </span>
+            <span style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem',
+              fontFamily: 'var(--font-handwriting)'
+            }}>
+              🎯 Metas Ativas
+            </span>
           </div>
 
-          {metas.length === 0 ? (
-            <div className="text-center py-8">
-              <div className="text-6xl mb-4">🎯</div>
-              <p className="text-white/70 mb-4">Nenhuma meta definida</p>
-              <button onClick={() => setShowMetaModal(true)} className="btn-ia">
-                ➕ Criar Meta
+          <div style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            border: '2px solid var(--chalk-dim)',
+            borderRadius: '12px',
+            padding: '1.5rem',
+            textAlign: 'center'
+          }}>
+            <span style={{
+              display: 'block',
+              color: 'var(--accent-yellow)',
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              fontFamily: 'var(--font-handwriting)',
+              marginBottom: '0.5rem'
+            }}>
+              {metasConcluidas}
+            </span>
+            <span style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem',
+              fontFamily: 'var(--font-handwriting)'
+            }}>
+              ✅ Concluidas
+            </span>
+          </div>
+
+          <div style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            border: '2px solid var(--chalk-dim)',
+            borderRadius: '12px',
+            padding: '1.5rem',
+            textAlign: 'center'
+          }}>
+            <span style={{
+              display: 'block',
+              color: 'var(--accent-yellow)',
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              fontFamily: 'var(--font-handwriting)',
+              marginBottom: '0.5rem'
+            }}>
+              {habitos.length}
+            </span>
+            <span style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem',
+              fontFamily: 'var(--font-handwriting)'
+            }}>
+              🔄 Habitos
+            </span>
+          </div>
+
+          <div style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            border: '2px solid var(--chalk-dim)',
+            borderRadius: '12px',
+            padding: '1.5rem',
+            textAlign: 'center'
+          }}>
+            <span style={{
+              display: 'block',
+              color: 'var(--accent-yellow)',
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              fontFamily: 'var(--font-handwriting)',
+              marginBottom: '0.5rem'
+            }}>
+              {habitosHoje}/{habitos.length}
+            </span>
+            <span style={{
+              color: 'var(--chalk-dim)',
+              fontSize: '0.875rem',
+              fontFamily: 'var(--font-handwriting)'
+            }}>
+              📅 Feitos Hoje
+            </span>
+          </div>
+        </div>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '1.5rem'
+        }}>
+          {/* Metas */}
+          <div className="card" style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.08)',
+            border: '3px solid var(--chalk-dim)',
+            borderRadius: '16px',
+            padding: '2rem',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+          }}>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginBottom: '1.5rem'
+            }}>
+              <h2 className="card-title" style={{
+                color: 'var(--chalk-white)',
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                🎯 Minhas Metas
+              </h2>
+              <button
+                onClick={() => setShowMetaModal(true)}
+                className="btn btn-yellow"
+                style={{
+                  backgroundColor: 'var(--accent-yellow)',
+                  color: 'var(--chalkboard-bg)',
+                  padding: '0.5rem 1rem',
+                  borderRadius: '8px',
+                  border: 'none',
+                  fontWeight: 'bold',
+                  cursor: 'pointer',
+                  fontSize: '0.875rem',
+                  fontFamily: 'var(--font-handwriting)',
+                  transition: 'transform 0.2s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+              >
+                ➕ Nova
               </button>
             </div>
-          ) : (
-            <div className="space-y-4">
-              {metas.map((meta) => (
-                <div
-                  key={meta.id}
-                  className={`card-ia-sm ${meta.concluida ? 'bg-green-500/10 border-green-500/30' : ''}`}
+
+            {metas.length === 0 ? (
+              <div style={{ textAlign: 'center', padding: '2rem 0' }}>
+                <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🎯</div>
+                <p style={{
+                  color: 'var(--chalk-dim)',
+                  marginBottom: '1rem',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  Nenhuma meta definida
+                </p>
+                <button
+                  onClick={() => setShowMetaModal(true)}
+                  className="btn btn-yellow"
+                  style={{
+                    backgroundColor: 'var(--accent-yellow)',
+                    color: 'var(--chalkboard-bg)',
+                    padding: '0.75rem 1.5rem',
+                    borderRadius: '8px',
+                    border: 'none',
+                    fontWeight: 'bold',
+                    cursor: 'pointer',
+                    fontFamily: 'var(--font-handwriting)'
+                  }}
                 >
-                  <div className="flex items-start justify-between mb-3">
-                    <div>
-                      <p className={`text-white font-bold ${meta.concluida ? 'line-through opacity-70' : ''}`}>
-                        {meta.titulo}
-                      </p>
-                      <span className="text-white/60 text-xs">{getTipoLabel(meta.tipo)}</span>
-                    </div>
-                    <button
-                      onClick={() => removerMeta(meta.id)}
-                      className="text-red-400 hover:text-red-300 text-sm"
-                    >
-                      🗑️
-                    </button>
-                  </div>
-
-                  <div className="flex items-center gap-3">
-                    <div className="flex-1">
-                      <div className="progress-ia">
-                        <div
-                          className="progress-ia-bar"
-                          style={{ width: `${(meta.progresso / meta.total) * 100}%` }}
-                        ></div>
+                  ➕ Criar Meta
+                </button>
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                {metas.map((meta) => (
+                  <div
+                    key={meta.id}
+                    className="chalkboard-card"
+                    style={{
+                      backgroundColor: meta.concluida ? 'rgba(34, 197, 94, 0.1)' : 'rgba(255, 255, 255, 0.05)',
+                      border: meta.concluida ? '2px solid rgba(34, 197, 94, 0.3)' : '2px solid var(--chalk-dim)',
+                      borderRadius: '12px',
+                      padding: '1rem'
+                    }}
+                  >
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'flex-start',
+                      justifyContent: 'space-between',
+                      marginBottom: '0.75rem'
+                    }}>
+                      <div>
+                        <p style={{
+                          color: 'var(--chalk-white)',
+                          fontWeight: 'bold',
+                          fontFamily: 'var(--font-handwriting)',
+                          textDecoration: meta.concluida ? 'line-through' : 'none',
+                          opacity: meta.concluida ? 0.7 : 1
+                        }}>
+                          {meta.titulo}
+                        </p>
+                        <span style={{
+                          color: 'var(--chalk-dim)',
+                          fontSize: '0.75rem',
+                          fontFamily: 'var(--font-handwriting)'
+                        }}>
+                          {getTipoLabel(meta.tipo)}
+                        </span>
                       </div>
+                      <button
+                        onClick={() => removerMeta(meta.id)}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          color: '#f87171',
+                          cursor: 'pointer',
+                          fontSize: '1rem'
+                        }}
+                      >
+                        🗑️
+                      </button>
                     </div>
-                    <span className="text-yellow-300 font-bold text-sm">
-                      {meta.progresso}/{meta.total}
-                    </span>
+
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem'
+                    }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{
+                          backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                          height: '8px',
+                          borderRadius: '4px',
+                          overflow: 'hidden'
+                        }}>
+                          <div style={{
+                            backgroundColor: 'var(--accent-yellow)',
+                            height: '100%',
+                            width: `${(meta.progresso / meta.total) * 100}%`,
+                            transition: 'width 0.3s ease'
+                          }}></div>
+                        </div>
+                      </div>
+                      <span style={{
+                        color: 'var(--accent-yellow)',
+                        fontWeight: 'bold',
+                        fontSize: '0.875rem',
+                        fontFamily: 'var(--font-handwriting)'
+                      }}>
+                        {meta.progresso}/{meta.total}
+                      </span>
+                    </div>
+
+                    {!meta.concluida && (
+                      <div style={{
+                        display: 'flex',
+                        gap: '0.5rem',
+                        marginTop: '0.75rem'
+                      }}>
+                        <button
+                          onClick={() => atualizarProgresso(meta.id, -1)}
+                          disabled={meta.progresso === 0}
+                          style={{
+                            flex: 1,
+                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                            border: '2px solid var(--chalk-dim)',
+                            color: 'var(--chalk-white)',
+                            padding: '0.5rem',
+                            borderRadius: '8px',
+                            cursor: meta.progresso === 0 ? 'not-allowed' : 'pointer',
+                            opacity: meta.progresso === 0 ? 0.5 : 1,
+                            fontFamily: 'var(--font-handwriting)',
+                            fontSize: '0.875rem'
+                          }}
+                        >
+                          ➖
+                        </button>
+                        <button
+                          onClick={() => atualizarProgresso(meta.id, 1)}
+                          disabled={meta.progresso >= meta.total}
+                          style={{
+                            flex: 1,
+                            backgroundColor: 'var(--accent-yellow)',
+                            border: 'none',
+                            color: 'var(--chalkboard-bg)',
+                            padding: '0.5rem',
+                            borderRadius: '8px',
+                            cursor: meta.progresso >= meta.total ? 'not-allowed' : 'pointer',
+                            opacity: meta.progresso >= meta.total ? 0.5 : 1,
+                            fontWeight: 'bold',
+                            fontFamily: 'var(--font-handwriting)',
+                            fontSize: '0.875rem'
+                          }}
+                        >
+                          ➕ Progresso
+                        </button>
+                      </div>
+                    )}
+
+                    {meta.concluida && (
+                      <p style={{
+                        color: '#22c55e',
+                        fontSize: '0.875rem',
+                        marginTop: '0.75rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        fontFamily: 'var(--font-handwriting)'
+                      }}>
+                        ✅ Meta concluida!
+                      </p>
+                    )}
                   </div>
-
-                  {!meta.concluida && (
-                    <div className="flex gap-2 mt-3">
-                      <button
-                        onClick={() => atualizarProgresso(meta.id, -1)}
-                        className="btn-ia-secondary text-sm flex-1"
-                        disabled={meta.progresso === 0}
-                      >
-                        ➖
-                      </button>
-                      <button
-                        onClick={() => atualizarProgresso(meta.id, 1)}
-                        className="btn-ia text-sm flex-1"
-                        disabled={meta.progresso >= meta.total}
-                      >
-                        ➕ Progresso
-                      </button>
-                    </div>
-                  )}
-
-                  {meta.concluida && (
-                    <p className="text-green-400 text-sm mt-3 flex items-center gap-2">
-                      ✅ Meta concluida!
-                    </p>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Habitos */}
-        <div className="card-ia">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="title-ia-sm">🔄 Habitos Diarios</h2>
-            <button onClick={() => setShowHabitoModal(true)} className="btn-ia-sm">
-              ➕ Novo
-            </button>
+                ))}
+              </div>
+            )}
           </div>
 
-          {habitos.length === 0 ? (
-            <div className="text-center py-8">
-              <div className="text-6xl mb-4">🔄</div>
-              <p className="text-white/70 mb-4">Nenhum habito cadastrado</p>
-              <button onClick={() => setShowHabitoModal(true)} className="btn-ia">
-                ➕ Criar Habito
+          {/* Habitos */}
+          <div className="card" style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.08)',
+            border: '3px solid var(--chalk-dim)',
+            borderRadius: '16px',
+            padding: '2rem',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+          }}>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginBottom: '1.5rem'
+            }}>
+              <h2 className="card-title" style={{
+                color: 'var(--chalk-white)',
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                🔄 Habitos Diarios
+              </h2>
+              <button
+                onClick={() => setShowHabitoModal(true)}
+                className="btn btn-yellow"
+                style={{
+                  backgroundColor: 'var(--accent-yellow)',
+                  color: 'var(--chalkboard-bg)',
+                  padding: '0.5rem 1rem',
+                  borderRadius: '8px',
+                  border: 'none',
+                  fontWeight: 'bold',
+                  cursor: 'pointer',
+                  fontSize: '0.875rem',
+                  fontFamily: 'var(--font-handwriting)',
+                  transition: 'transform 0.2s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+              >
+                ➕ Novo
               </button>
             </div>
-          ) : (
-            <div className="space-y-3">
-              {habitos.map((habito) => {
-                const feitoHoje = getHabitoFeitoHoje(habito);
-                const sequencia = getSequenciaHabito(habito);
 
-                return (
-                  <div
-                    key={habito.id}
-                    className={`card-ia-sm flex items-center justify-between ${
-                      feitoHoje ? 'bg-green-500/10 border-green-500/30' : ''
-                    }`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <button
-                        onClick={() => toggleHabitoHoje(habito.id)}
-                        className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition ${
-                          feitoHoje
-                            ? 'bg-green-500 border-green-500 text-white'
-                            : 'border-white/30 hover:border-yellow-300'
-                        }`}
-                      >
-                        {feitoHoje ? '✓' : habito.emoji}
-                      </button>
-                      <div>
-                        <p className={`text-white font-semibold ${feitoHoje ? 'line-through opacity-70' : ''}`}>
-                          {habito.nome}
-                        </p>
-                        {sequencia > 0 && (
-                          <p className="text-yellow-300 text-xs">🔥 {sequencia} dias seguidos</p>
-                        )}
-                      </div>
-                    </div>
+            {habitos.length === 0 ? (
+              <div style={{ textAlign: 'center', padding: '2rem 0' }}>
+                <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🔄</div>
+                <p style={{
+                  color: 'var(--chalk-dim)',
+                  marginBottom: '1rem',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  Nenhum habito cadastrado
+                </p>
+                <button
+                  onClick={() => setShowHabitoModal(true)}
+                  className="btn btn-yellow"
+                  style={{
+                    backgroundColor: 'var(--accent-yellow)',
+                    color: 'var(--chalkboard-bg)',
+                    padding: '0.75rem 1.5rem',
+                    borderRadius: '8px',
+                    border: 'none',
+                    fontWeight: 'bold',
+                    cursor: 'pointer',
+                    fontFamily: 'var(--font-handwriting)'
+                  }}
+                >
+                  ➕ Criar Habito
+                </button>
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {habitos.map((habito) => {
+                  const feitoHoje = getHabitoFeitoHoje(habito);
+                  const sequencia = getSequenciaHabito(habito);
 
-                    <button
-                      onClick={() => removerHabito(habito.id)}
-                      className="text-red-400 hover:text-red-300"
+                  return (
+                    <div
+                      key={habito.id}
+                      className="chalkboard-card"
+                      style={{
+                        backgroundColor: feitoHoje ? 'rgba(34, 197, 94, 0.1)' : 'rgba(255, 255, 255, 0.05)',
+                        border: feitoHoje ? '2px solid rgba(34, 197, 94, 0.3)' : '2px solid var(--chalk-dim)',
+                        borderRadius: '12px',
+                        padding: '1rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between'
+                      }}
                     >
-                      🗑️
-                    </button>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                        <button
+                          onClick={() => toggleHabitoHoje(habito.id)}
+                          style={{
+                            width: '2.5rem',
+                            height: '2.5rem',
+                            borderRadius: '50%',
+                            border: feitoHoje ? '2px solid #22c55e' : '2px solid var(--chalk-dim)',
+                            backgroundColor: feitoHoje ? '#22c55e' : 'transparent',
+                            color: feitoHoje ? 'white' : 'inherit',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            cursor: 'pointer',
+                            transition: 'all 0.3s',
+                            fontSize: '1.25rem'
+                          }}
+                          onMouseEnter={(e) => {
+                            if (!feitoHoje) e.currentTarget.style.borderColor = 'var(--accent-yellow)';
+                          }}
+                          onMouseLeave={(e) => {
+                            if (!feitoHoje) e.currentTarget.style.borderColor = 'var(--chalk-dim)';
+                          }}
+                        >
+                          {feitoHoje ? '✓' : habito.emoji}
+                        </button>
+                        <div>
+                          <p style={{
+                            color: 'var(--chalk-white)',
+                            fontWeight: '600',
+                            fontFamily: 'var(--font-handwriting)',
+                            textDecoration: feitoHoje ? 'line-through' : 'none',
+                            opacity: feitoHoje ? 0.7 : 1
+                          }}>
+                            {habito.nome}
+                          </p>
+                          {sequencia > 0 && (
+                            <p style={{
+                              color: 'var(--accent-yellow)',
+                              fontSize: '0.75rem',
+                              fontFamily: 'var(--font-handwriting)'
+                            }}>
+                              🔥 {sequencia} dias seguidos
+                            </p>
+                          )}
+                        </div>
+                      </div>
 
-      {/* Links Rapidos */}
-      <div className="card-ia mt-8">
-        <h2 className="title-ia-sm mb-6">🚀 Acesso Rapido</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <button
-            onClick={() => router.push('/enem/cronograma')}
-            className="card-ia-sm text-center hover:scale-105 transition"
-          >
-            <div className="text-4xl mb-2">📅</div>
-            <p className="text-white font-semibold text-sm">Cronograma</p>
-          </button>
-          <button
-            onClick={() => router.push('/enem/tecnicas')}
-            className="card-ia-sm text-center hover:scale-105 transition"
-          >
-            <div className="text-4xl mb-2">🧠</div>
-            <p className="text-white font-semibold text-sm">Tecnicas</p>
-          </button>
-          <button
-            onClick={() => router.push('/enem/simulado')}
-            className="card-ia-sm text-center hover:scale-105 transition"
-          >
-            <div className="text-4xl mb-2">📝</div>
-            <p className="text-white font-semibold text-sm">Simulados</p>
-          </button>
+                      <button
+                        onClick={() => removerHabito(habito.id)}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          color: '#f87171',
+                          cursor: 'pointer',
+                          fontSize: '1rem'
+                        }}
+                      >
+                        🗑️
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Links Rapidos */}
+        <div className="card" style={{
+          backgroundColor: 'rgba(255, 255, 255, 0.08)',
+          border: '3px solid var(--chalk-dim)',
+          borderRadius: '16px',
+          padding: '2rem',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+          marginTop: '2rem'
+        }}>
+          <h2 className="card-title" style={{
+            color: 'var(--chalk-white)',
+            fontSize: '1.5rem',
+            fontWeight: 'bold',
+            fontFamily: 'var(--font-handwriting)',
+            marginBottom: '1.5rem'
+          }}>
+            🚀 Acesso Rapido
+          </h2>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+            gap: '1rem'
+          }}>
+            <button
+              onClick={() => router.push('/enem/cronograma')}
+              className="chalkboard-card"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '2px solid var(--chalk-dim)',
+                borderRadius: '12px',
+                padding: '1.5rem',
+                textAlign: 'center',
+                cursor: 'pointer',
+                transition: 'transform 0.2s'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>📅</div>
+              <p style={{
+                color: 'var(--chalk-white)',
+                fontWeight: '600',
+                fontSize: '0.875rem',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                Cronograma
+              </p>
+            </button>
+
+            <button
+              onClick={() => router.push('/enem/tecnicas')}
+              className="chalkboard-card"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '2px solid var(--chalk-dim)',
+                borderRadius: '12px',
+                padding: '1.5rem',
+                textAlign: 'center',
+                cursor: 'pointer',
+                transition: 'transform 0.2s'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🧠</div>
+              <p style={{
+                color: 'var(--chalk-white)',
+                fontWeight: '600',
+                fontSize: '0.875rem',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                Tecnicas
+              </p>
+            </button>
+
+            <button
+              onClick={() => router.push('/enem/simulado')}
+              className="chalkboard-card"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '2px solid var(--chalk-dim)',
+                borderRadius: '12px',
+                padding: '1.5rem',
+                textAlign: 'center',
+                cursor: 'pointer',
+                transition: 'transform 0.2s'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>📝</div>
+              <p style={{
+                color: 'var(--chalk-white)',
+                fontWeight: '600',
+                fontSize: '0.875rem',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                Simulados
+              </p>
+            </button>
+
+            <button
+              onClick={() => router.push('/enem/dashboard')}
+              className="chalkboard-card"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                border: '2px solid var(--chalk-dim)',
+                borderRadius: '12px',
+                padding: '1.5rem',
+                textAlign: 'center',
+                cursor: 'pointer',
+                transition: 'transform 0.2s'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>📊</div>
+              <p style={{
+                color: 'var(--chalk-white)',
+                fontWeight: '600',
+                fontSize: '0.875rem',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                Dashboard
+              </p>
+            </button>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="footer" style={{
+          marginTop: '3rem',
+          paddingTop: '2rem',
+          borderTop: '2px solid var(--chalk-dim)',
+          textAlign: 'center'
+        }}>
           <button
             onClick={() => router.push('/enem/dashboard')}
-            className="card-ia-sm text-center hover:scale-105 transition"
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'var(--chalk-dim)',
+              cursor: 'pointer',
+              fontFamily: 'var(--font-handwriting)',
+              fontSize: '1rem',
+              textDecoration: 'underline'
+            }}
           >
-            <div className="text-4xl mb-2">📊</div>
-            <p className="text-white font-semibold text-sm">Dashboard</p>
+            ← Voltar ao Dashboard
           </button>
         </div>
       </div>
 
       {/* Modal Nova Meta */}
       {showMetaModal && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
-          <div className="card-ia max-w-md w-full">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="title-ia-sm">🎯 Nova Meta</h2>
-              <button onClick={() => setShowMetaModal(false)} className="text-white/60 hover:text-white text-2xl">
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 50,
+          padding: '1rem'
+        }}>
+          <div className="card" style={{
+            backgroundColor: 'var(--chalkboard-bg)',
+            border: '3px solid var(--chalk-dim)',
+            borderRadius: '16px',
+            padding: '2rem',
+            maxWidth: '28rem',
+            width: '100%',
+            boxShadow: '0 8px 24px rgba(0,0,0,0.5)'
+          }}>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginBottom: '1.5rem'
+            }}>
+              <h2 className="card-title" style={{
+                color: 'var(--chalk-white)',
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                🎯 Nova Meta
+              </h2>
+              <button
+                onClick={() => setShowMetaModal(false)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--chalk-dim)',
+                  cursor: 'pointer',
+                  fontSize: '1.5rem'
+                }}
+              >
                 ✕
               </button>
             </div>
 
-            <div className="space-y-4">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div>
-                <label className="block text-white/80 text-sm mb-2">Titulo da Meta</label>
+                <label style={{
+                  display: 'block',
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  marginBottom: '0.5rem',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  Titulo da Meta
+                </label>
                 <input
                   type="text"
                   value={novaMeta.titulo}
                   onChange={(e) => setNovaMeta({ ...novaMeta, titulo: e.target.value })}
-                  className="input-ia w-full"
                   placeholder="Ex: Fazer 5 simulados"
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                    border: '2px solid var(--chalk-dim)',
+                    borderRadius: '8px',
+                    padding: '0.75rem',
+                    color: 'var(--chalk-white)',
+                    fontFamily: 'var(--font-handwriting)',
+                    fontSize: '1rem'
+                  }}
                 />
               </div>
 
               <div>
-                <label className="block text-white/80 text-sm mb-2">Tipo</label>
+                <label style={{
+                  display: 'block',
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  marginBottom: '0.5rem',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  Tipo
+                </label>
                 <select
                   value={novaMeta.tipo}
                   onChange={(e) => setNovaMeta({ ...novaMeta, tipo: e.target.value as any })}
-                  className="input-ia w-full"
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                    border: '2px solid var(--chalk-dim)',
+                    borderRadius: '8px',
+                    padding: '0.75rem',
+                    color: 'var(--chalk-white)',
+                    fontFamily: 'var(--font-handwriting)',
+                    fontSize: '1rem'
+                  }}
                 >
                   <option value="diaria">📅 Diaria</option>
                   <option value="semanal">📆 Semanal</option>
@@ -448,24 +1002,70 @@ export default function OrganizacaoPage() {
               </div>
 
               <div>
-                <label className="block text-white/80 text-sm mb-2">Quantidade Total</label>
+                <label style={{
+                  display: 'block',
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  marginBottom: '0.5rem',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  Quantidade Total
+                </label>
                 <input
                   type="number"
                   value={novaMeta.total}
                   onChange={(e) => setNovaMeta({ ...novaMeta, total: Number(e.target.value) })}
-                  className="input-ia w-full"
                   min={1}
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                    border: '2px solid var(--chalk-dim)',
+                    borderRadius: '8px',
+                    padding: '0.75rem',
+                    color: 'var(--chalk-white)',
+                    fontFamily: 'var(--font-handwriting)',
+                    fontSize: '1rem'
+                  }}
                 />
               </div>
 
-              <div className="flex gap-3 pt-4">
-                <button onClick={() => setShowMetaModal(false)} className="btn-ia-secondary flex-1">
+              <div style={{
+                display: 'flex',
+                gap: '0.75rem',
+                paddingTop: '1rem'
+              }}>
+                <button
+                  onClick={() => setShowMetaModal(false)}
+                  style={{
+                    flex: 1,
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    border: '2px solid var(--chalk-dim)',
+                    color: 'var(--chalk-white)',
+                    padding: '0.75rem',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    fontFamily: 'var(--font-handwriting)',
+                    fontWeight: '600'
+                  }}
+                >
                   Cancelar
                 </button>
                 <button
                   onClick={adicionarMeta}
                   disabled={!novaMeta.titulo}
-                  className="btn-ia flex-1 disabled:opacity-50"
+                  className="btn btn-yellow"
+                  style={{
+                    flex: 1,
+                    backgroundColor: 'var(--accent-yellow)',
+                    border: 'none',
+                    color: 'var(--chalkboard-bg)',
+                    padding: '0.75rem',
+                    borderRadius: '8px',
+                    cursor: novaMeta.titulo ? 'pointer' : 'not-allowed',
+                    opacity: novaMeta.titulo ? 1 : 0.5,
+                    fontFamily: 'var(--font-handwriting)',
+                    fontWeight: 'bold'
+                  }}
                 >
                   ✅ Criar Meta
                 </button>
@@ -477,39 +1077,124 @@ export default function OrganizacaoPage() {
 
       {/* Modal Novo Habito */}
       {showHabitoModal && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
-          <div className="card-ia max-w-md w-full">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="title-ia-sm">🔄 Novo Habito</h2>
-              <button onClick={() => setShowHabitoModal(false)} className="text-white/60 hover:text-white text-2xl">
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 50,
+          padding: '1rem'
+        }}>
+          <div className="card" style={{
+            backgroundColor: 'var(--chalkboard-bg)',
+            border: '3px solid var(--chalk-dim)',
+            borderRadius: '16px',
+            padding: '2rem',
+            maxWidth: '28rem',
+            width: '100%',
+            boxShadow: '0 8px 24px rgba(0,0,0,0.5)'
+          }}>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginBottom: '1.5rem'
+            }}>
+              <h2 className="card-title" style={{
+                color: 'var(--chalk-white)',
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                🔄 Novo Habito
+              </h2>
+              <button
+                onClick={() => setShowHabitoModal(false)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--chalk-dim)',
+                  cursor: 'pointer',
+                  fontSize: '1.5rem'
+                }}
+              >
                 ✕
               </button>
             </div>
 
-            <div className="space-y-4">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div>
-                <label className="block text-white/80 text-sm mb-2">Nome do Habito</label>
+                <label style={{
+                  display: 'block',
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  marginBottom: '0.5rem',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  Nome do Habito
+                </label>
                 <input
                   type="text"
                   value={novoHabito.nome}
                   onChange={(e) => setNovoHabito({ ...novoHabito, nome: e.target.value })}
-                  className="input-ia w-full"
                   placeholder="Ex: Revisar flashcards"
+                  style={{
+                    width: '100%',
+                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                    border: '2px solid var(--chalk-dim)',
+                    borderRadius: '8px',
+                    padding: '0.75rem',
+                    color: 'var(--chalk-white)',
+                    fontFamily: 'var(--font-handwriting)',
+                    fontSize: '1rem'
+                  }}
                 />
               </div>
 
               <div>
-                <label className="block text-white/80 text-sm mb-2">Emoji</label>
-                <div className="flex flex-wrap gap-2">
+                <label style={{
+                  display: 'block',
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  marginBottom: '0.5rem',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  Emoji
+                </label>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '0.5rem'
+                }}>
                   {emojisHabito.map((emoji) => (
                     <button
                       key={emoji}
                       onClick={() => setNovoHabito({ ...novoHabito, emoji })}
-                      className={`w-10 h-10 rounded-lg text-2xl flex items-center justify-center transition ${
-                        novoHabito.emoji === emoji
-                          ? 'bg-yellow-300/20 border-2 border-yellow-300'
-                          : 'bg-white/5 border border-white/10 hover:bg-white/10'
-                      }`}
+                      style={{
+                        width: '2.5rem',
+                        height: '2.5rem',
+                        borderRadius: '8px',
+                        fontSize: '1.5rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        transition: 'all 0.2s',
+                        backgroundColor: novoHabito.emoji === emoji ? 'rgba(251, 191, 36, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                        border: novoHabito.emoji === emoji ? '2px solid var(--accent-yellow)' : '2px solid var(--chalk-dim)',
+                        cursor: 'pointer'
+                      }}
+                      onMouseEnter={(e) => {
+                        if (novoHabito.emoji !== emoji) {
+                          e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                        }
+                      }}
+                      onMouseLeave={(e) => {
+                        if (novoHabito.emoji !== emoji) {
+                          e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+                        }
+                      }}
                     >
                       {emoji}
                     </button>
@@ -517,14 +1202,43 @@ export default function OrganizacaoPage() {
                 </div>
               </div>
 
-              <div className="flex gap-3 pt-4">
-                <button onClick={() => setShowHabitoModal(false)} className="btn-ia-secondary flex-1">
+              <div style={{
+                display: 'flex',
+                gap: '0.75rem',
+                paddingTop: '1rem'
+              }}>
+                <button
+                  onClick={() => setShowHabitoModal(false)}
+                  style={{
+                    flex: 1,
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    border: '2px solid var(--chalk-dim)',
+                    color: 'var(--chalk-white)',
+                    padding: '0.75rem',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    fontFamily: 'var(--font-handwriting)',
+                    fontWeight: '600'
+                  }}
+                >
                   Cancelar
                 </button>
                 <button
                   onClick={adicionarHabito}
                   disabled={!novoHabito.nome}
-                  className="btn-ia flex-1 disabled:opacity-50"
+                  className="btn btn-yellow"
+                  style={{
+                    flex: 1,
+                    backgroundColor: 'var(--accent-yellow)',
+                    border: 'none',
+                    color: 'var(--chalkboard-bg)',
+                    padding: '0.75rem',
+                    borderRadius: '8px',
+                    cursor: novoHabito.nome ? 'pointer' : 'not-allowed',
+                    opacity: novoHabito.nome ? 1 : 0.5,
+                    fontFamily: 'var(--font-handwriting)',
+                    fontWeight: 'bold'
+                  }}
                 >
                   ✅ Criar Habito
                 </button>
@@ -533,8 +1247,6 @@ export default function OrganizacaoPage() {
           </div>
         </div>
       )}
-
-      <ChalkBackToTop />
     </div>
   );
 }

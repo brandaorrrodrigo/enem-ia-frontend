@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Questao {
@@ -218,7 +217,7 @@ export default function SimuladoRelogioPage() {
           <path
             d="M10,10 L90,10 L90,20 L55,65 L55,75 L90,120 L90,130 L10,130 L10,120 L45,75 L45,65 L10,20 Z"
             fill="none"
-            stroke="#fbbf24"
+            stroke="var(--accent-yellow)"
             strokeWidth="4"
           />
 
@@ -231,7 +230,7 @@ export default function SimuladoRelogioPage() {
             y={15 + (45 * (100 - altura) / 100)}
             width="70"
             height={45 * altura / 100}
-            fill="#fbbf24"
+            fill="var(--accent-yellow)"
             clipPath="url(#topClip)"
             className="transition-all duration-1000"
           />
@@ -243,7 +242,7 @@ export default function SimuladoRelogioPage() {
               y1="60"
               x2="50"
               y2="80"
-              stroke="#fbbf24"
+              stroke="var(--accent-yellow)"
               strokeWidth="3"
               className="animate-pulse"
             />
@@ -258,7 +257,7 @@ export default function SimuladoRelogioPage() {
             y={125 - (45 * (100 - altura) / 100)}
             width="70"
             height={45 * (100 - altura) / 100}
-            fill="#fbbf24"
+            fill="var(--accent-yellow)"
             clipPath="url(#bottomClip)"
             className="transition-all duration-1000"
           />
@@ -266,7 +265,13 @@ export default function SimuladoRelogioPage() {
 
         {/* Tempo */}
         <div className="absolute -bottom-8 left-0 right-0 text-center">
-          <span className={`text-2xl font-bold font-mono ${tempoRestante < 60 ? 'text-red-400 animate-pulse' : 'text-yellow-300'}`}>
+          <span
+            className="text-2xl font-bold font-mono"
+            style={{
+              color: tempoRestante < 60 ? 'var(--error-red)' : 'var(--accent-yellow)',
+              animation: tempoRestante < 60 ? 'pulse 1s infinite' : 'none'
+            }}
+          >
             {formatarTempo(tempoRestante)}
           </span>
         </div>
@@ -277,43 +282,106 @@ export default function SimuladoRelogioPage() {
   // TELA DE CONFIGURAÇÃO
   if (estado === 'config') {
     return (
-      <div className="container-ia min-h-screen py-8">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
         <FloatingNav />
 
+        {/* Header */}
+        <div className="header" style={{ marginTop: '4rem', marginBottom: '2rem' }}>
+          <div style={{ fontSize: '5rem', textAlign: 'center', marginBottom: '1rem' }}>⏳</div>
+          <h1 style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            color: 'var(--chalk-white)',
+            textAlign: 'center',
+            marginBottom: '0.5rem'
+          }}>
+            Simulado Contra o Relogio
+          </h1>
+          <p style={{
+            fontSize: '1.125rem',
+            color: 'var(--chalk-dim)',
+            textAlign: 'center'
+          }}>
+            Responda o maximo de questoes antes do tempo acabar!
+          </p>
+        </div>
+
         {/* Slogan */}
-        <div className="card-ia p-4 mb-6 mt-16 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border-2 border-yellow-400/30 text-center">
-          <p className="text-yellow-300 font-bold italic">
+        <div
+          className="card"
+          style={{
+            maxWidth: '42rem',
+            margin: '0 auto 2rem',
+            padding: '1rem',
+            background: 'linear-gradient(to right, rgba(251, 191, 36, 0.2), rgba(251, 146, 60, 0.2))',
+            border: '2px solid rgba(251, 191, 36, 0.3)',
+            textAlign: 'center'
+          }}
+        >
+          <p style={{
+            color: 'var(--accent-yellow)',
+            fontWeight: 'bold',
+            fontStyle: 'italic'
+          }}>
             "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-8">
-            <div className="text-8xl mb-4">⏳</div>
-            <h1 className="title-ia mb-2">Simulado Contra o Relogio</h1>
-            <p className="subtitle-ia mb-0">Responda o maximo de questoes antes do tempo acabar!</p>
-          </div>
-
+        <div style={{ maxWidth: '42rem', margin: '0 auto' }}>
           {/* Seleção de Tempo */}
-          <div className="card-ia p-6 mb-6">
-            <h2 className="text-white font-bold text-lg mb-4">⏱️ Escolha o Tempo</h2>
-            <div className="grid grid-cols-2 gap-3">
+          <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+            <h2 className="card-title">⏱️ Escolha o Tempo</h2>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              gap: '0.75rem'
+            }}>
               {OPCOES_TEMPO.map((opcao) => (
                 <button
                   key={opcao.tempo}
                   onClick={() => setConfig({ ...config, tempo: opcao.tempo, questoes: opcao.questoes })}
-                  className={`p-4 rounded-xl transition-all ${
-                    config.tempo === opcao.tempo
-                      ? 'bg-yellow-400 text-slate-900 scale-105'
-                      : 'bg-white/10 text-white hover:bg-white/20'
-                  }`}
+                  style={{
+                    padding: '1rem',
+                    borderRadius: '0.75rem',
+                    border: 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s',
+                    background: config.tempo === opcao.tempo
+                      ? 'var(--accent-yellow)'
+                      : 'rgba(255, 255, 255, 0.1)',
+                    color: config.tempo === opcao.tempo
+                      ? 'var(--board-dark)'
+                      : 'var(--chalk-white)',
+                    transform: config.tempo === opcao.tempo ? 'scale(1.05)' : 'scale(1)'
+                  }}
+                  onMouseEnter={(e) => {
+                    if (config.tempo !== opcao.tempo) {
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (config.tempo !== opcao.tempo) {
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                    }
+                  }}
                 >
-                  <div className="text-3xl mb-2">{opcao.emoji}</div>
-                  <div className="font-bold">{opcao.label}</div>
-                  <div className="text-sm opacity-70">{opcao.tempo} min / {opcao.questoes} questoes</div>
-                  <div className="text-xs mt-1 opacity-60">{opcao.descricao}</div>
+                  <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{opcao.emoji}</div>
+                  <div style={{ fontWeight: 'bold' }}>{opcao.label}</div>
+                  <div style={{ fontSize: '0.875rem', opacity: 0.7 }}>
+                    {opcao.tempo} min / {opcao.questoes} questoes
+                  </div>
+                  <div style={{ fontSize: '0.75rem', marginTop: '0.25rem', opacity: 0.6 }}>
+                    {opcao.descricao}
+                  </div>
                   {opcao.fpMultiplier > 1 && (
-                    <div className={`text-xs mt-2 font-bold ${config.tempo === opcao.tempo ? 'text-slate-900' : 'text-yellow-300'}`}>
+                    <div style={{
+                      fontSize: '0.75rem',
+                      marginTop: '0.5rem',
+                      fontWeight: 'bold',
+                      color: config.tempo === opcao.tempo
+                        ? 'var(--board-dark)'
+                        : 'var(--accent-yellow)'
+                    }}>
                       {opcao.fpMultiplier}x FP!
                     </div>
                   )}
@@ -323,55 +391,143 @@ export default function SimuladoRelogioPage() {
           </div>
 
           {/* Seleção de Disciplina */}
-          <div className="card-ia p-6 mb-6">
-            <h2 className="text-white font-bold text-lg mb-4">📚 Escolha a Materia</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+            <h2 className="card-title">📚 Escolha a Materia</h2>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+              gap: '0.75rem'
+            }}>
               {DISCIPLINAS.map((disc) => (
                 <button
                   key={disc.id}
                   onClick={() => setConfig({ ...config, disciplina: disc.id })}
-                  className={`p-4 rounded-xl transition-all ${
-                    config.disciplina === disc.id
-                      ? `bg-gradient-to-br ${disc.cor} text-white scale-105`
-                      : 'bg-white/10 text-white hover:bg-white/20'
-                  }`}
+                  style={{
+                    padding: '1rem',
+                    borderRadius: '0.75rem',
+                    border: 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s',
+                    background: config.disciplina === disc.id
+                      ? `linear-gradient(to bottom right, ${disc.cor.includes('purple') ? '#a855f7' : disc.cor.includes('blue') ? '#3b82f6' : disc.cor.includes('green') && !disc.cor.includes('teal') ? '#10b981' : disc.cor.includes('orange') ? '#f97316' : '#14b8a6'}, ${disc.cor.includes('pink') ? '#ec4899' : disc.cor.includes('cyan') ? '#06b6d4' : disc.cor.includes('emerald') ? '#10b981' : disc.cor.includes('amber') ? '#f59e0b' : '#10b981'})`
+                      : 'rgba(255, 255, 255, 0.1)',
+                    color: 'var(--chalk-white)',
+                    transform: config.disciplina === disc.id ? 'scale(1.05)' : 'scale(1)'
+                  }}
+                  onMouseEnter={(e) => {
+                    if (config.disciplina !== disc.id) {
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (config.disciplina !== disc.id) {
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                    }
+                  }}
                 >
-                  <div className="text-3xl mb-2">{disc.emoji}</div>
-                  <div className="font-bold text-sm">{disc.label}</div>
+                  <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{disc.emoji}</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '0.875rem' }}>{disc.label}</div>
                 </button>
               ))}
             </div>
           </div>
 
           {/* Resumo e Iniciar */}
-          <div className="card-ia p-6 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border-2 border-green-400/30">
-            <h2 className="text-white font-bold text-lg mb-4">📋 Resumo</h2>
-            <div className="grid grid-cols-3 gap-4 mb-6">
-              <div className="text-center">
-                <p className="text-3xl font-bold text-white">{config.tempo}</p>
-                <p className="text-white/60 text-sm">minutos</p>
+          <div
+            className="card"
+            style={{
+              padding: '1.5rem',
+              background: 'linear-gradient(to right, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.2))',
+              border: '2px solid rgba(16, 185, 129, 0.3)'
+            }}
+          >
+            <h2 className="card-title">📋 Resumo</h2>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '1rem',
+              marginBottom: '1.5rem'
+            }}>
+              <div style={{ textAlign: 'center' }}>
+                <p style={{
+                  fontSize: '2rem',
+                  fontWeight: 'bold',
+                  color: 'var(--chalk-white)'
+                }}>
+                  {config.tempo}
+                </p>
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--chalk-dim)'
+                }}>
+                  minutos
+                </p>
               </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-white">{config.questoes}</p>
-                <p className="text-white/60 text-sm">questoes</p>
+              <div style={{ textAlign: 'center' }}>
+                <p style={{
+                  fontSize: '2rem',
+                  fontWeight: 'bold',
+                  color: 'var(--chalk-white)'
+                }}>
+                  {config.questoes}
+                </p>
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--chalk-dim)'
+                }}>
+                  questoes
+                </p>
               </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-yellow-300">{OPCOES_TEMPO.find(o => o.tempo === config.tempo)?.fpMultiplier || 1}x</p>
-                <p className="text-white/60 text-sm">multiplicador FP</p>
+              <div style={{ textAlign: 'center' }}>
+                <p style={{
+                  fontSize: '2rem',
+                  fontWeight: 'bold',
+                  color: 'var(--accent-yellow)'
+                }}>
+                  {OPCOES_TEMPO.find(o => o.tempo === config.tempo)?.fpMultiplier || 1}x
+                </p>
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--chalk-dim)'
+                }}>
+                  multiplicador FP
+                </p>
               </div>
             </div>
 
             <button
               onClick={iniciarSimulado}
-              className="btn-ia w-full py-5 text-xl font-bold"
-              style={{ boxShadow: '0 8px 30px rgba(255, 217, 102, 0.4)' }}
+              className="btn btn-yellow"
+              style={{
+                width: '100%',
+                padding: '1.25rem',
+                fontSize: '1.25rem',
+                fontWeight: 'bold',
+                boxShadow: '0 8px 30px rgba(255, 217, 102, 0.4)'
+              }}
             >
               ⏳ INICIAR SIMULADO
             </button>
           </div>
         </div>
 
-        <ChalkBackToTop />
+        {/* Footer */}
+        <div className="footer">
+          <button
+            onClick={() => router.push('/enem')}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'var(--chalk-dim)',
+              cursor: 'pointer',
+              fontSize: '0.875rem',
+              textDecoration: 'underline',
+              padding: 0
+            }}
+          >
+            ← Voltar ao Menu
+          </button>
+        </div>
       </div>
     );
   }
@@ -382,74 +538,138 @@ export default function SimuladoRelogioPage() {
     const progressoTempo = (tempoRestante / tempoInicial) * 100;
 
     return (
-      <div className="container-ia min-h-screen py-8">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
         {/* Header com ampulheta */}
-        <div className="flex items-start justify-between mb-6">
+        <div style={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          justifyContent: 'space-between',
+          marginBottom: '1.5rem',
+          maxWidth: '64rem',
+          margin: '0 auto 1.5rem'
+        }}>
           <div>
-            <span className="text-white/60 text-sm">Questao {questaoAtual + 1} de {questoes.length}</span>
-            <div className="flex items-center gap-2 mt-1">
-              <span className="badge-ia">{questao?.disciplina}</span>
-              <span className="text-white/50 text-sm">Respondidas: {questoesRespondidas}</span>
+            <span style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+              Questao {questaoAtual + 1} de {questoes.length}
+            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.25rem' }}>
+              <span className="badge">{questao?.disciplina}</span>
+              <span style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                Respondidas: {questoesRespondidas}
+              </span>
             </div>
           </div>
 
           <Ampulheta progresso={progressoTempo} />
         </div>
 
-        {/* Barra de progresso das questões */}
-        <div className="flex gap-1 mb-6">
-          {questoes.map((_, idx) => (
-            <div
-              key={idx}
-              className={`flex-1 h-2 rounded-full transition-all ${
-                respostas[idx] !== null
-                  ? respostas[idx] === questoes[idx].correta
-                    ? 'bg-green-500'
-                    : 'bg-red-500'
-                  : idx === questaoAtual
-                  ? 'bg-yellow-400'
-                  : 'bg-white/20'
-              }`}
-            />
-          ))}
-        </div>
-
-        {/* Questão */}
-        <div className="card-ia p-6 mb-6">
-          <p className="text-white text-lg mb-6">{questao?.enunciado}</p>
-
-          <div className="space-y-3">
-            {questao?.alternativas.map((alt, idx) => (
-              <button
+        <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
+          {/* Barra de progresso das questões */}
+          <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '1.5rem' }}>
+            {questoes.map((_, idx) => (
+              <div
                 key={idx}
-                onClick={() => responder(idx)}
-                className="w-full p-4 rounded-xl text-left transition-all bg-white/5 border-2 border-white/10 hover:border-yellow-400 hover:bg-yellow-400/10"
-              >
-                <span className="font-bold mr-3 text-yellow-300">{String.fromCharCode(65 + idx)})</span>
-                <span className="text-white">{alt}</span>
-              </button>
+                style={{
+                  flex: 1,
+                  height: '0.5rem',
+                  borderRadius: '9999px',
+                  transition: 'all 0.2s',
+                  background: respostas[idx] !== null
+                    ? respostas[idx] === questoes[idx].correta
+                      ? 'var(--success-green)'
+                      : 'var(--error-red)'
+                    : idx === questaoAtual
+                    ? 'var(--accent-yellow)'
+                    : 'rgba(255, 255, 255, 0.2)'
+                }}
+              />
             ))}
           </div>
-        </div>
 
-        {/* Controles */}
-        <div className="flex gap-4">
-          <button
-            onClick={pularQuestao}
-            disabled={questaoAtual >= questoes.length - 1}
-            className="btn-ia-secondary flex-1 py-4 disabled:opacity-50"
-          >
-            ⏭️ Pular
-          </button>
-          <button
-            onClick={finalizarSimulado}
-            className="btn-ia flex-1 py-4 bg-red-500 hover:bg-red-400"
-          >
-            🏁 Finalizar
-          </button>
-        </div>
+          {/* Questão */}
+          <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+            <p style={{
+              color: 'var(--chalk-white)',
+              fontSize: '1.125rem',
+              marginBottom: '1.5rem',
+              lineHeight: '1.75'
+            }}>
+              {questao?.enunciado}
+            </p>
 
-        <ChalkBackToTop />
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              {questao?.alternativas.map((alt, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => responder(idx)}
+                  style={{
+                    width: '100%',
+                    padding: '1rem',
+                    borderRadius: '0.75rem',
+                    textAlign: 'left',
+                    transition: 'all 0.2s',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '2px solid rgba(255, 255, 255, 0.1)',
+                    cursor: 'pointer',
+                    color: 'var(--chalk-white)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = 'var(--accent-yellow)';
+                    e.currentTarget.style.background = 'rgba(251, 191, 36, 0.1)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                  }}
+                >
+                  <span style={{
+                    fontWeight: 'bold',
+                    marginRight: '0.75rem',
+                    color: 'var(--accent-yellow)'
+                  }}>
+                    {String.fromCharCode(65 + idx)})
+                  </span>
+                  <span>{alt}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Controles */}
+          <div style={{ display: 'flex', gap: '1rem' }}>
+            <button
+              onClick={pularQuestao}
+              disabled={questaoAtual >= questoes.length - 1}
+              className="btn"
+              style={{
+                flex: 1,
+                padding: '1rem',
+                background: 'rgba(255, 255, 255, 0.1)',
+                opacity: questaoAtual >= questoes.length - 1 ? 0.5 : 1,
+                cursor: questaoAtual >= questoes.length - 1 ? 'not-allowed' : 'pointer'
+              }}
+            >
+              ⏭️ Pular
+            </button>
+            <button
+              onClick={finalizarSimulado}
+              className="btn"
+              style={{
+                flex: 1,
+                padding: '1rem',
+                background: '#ef4444'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = '#dc2626';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = '#ef4444';
+              }}
+            >
+              🏁 Finalizar
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
@@ -459,60 +679,105 @@ export default function SimuladoRelogioPage() {
     const resultado = calcularResultado();
 
     return (
-      <div className="container-ia min-h-screen py-8">
-        <div className="max-w-lg mx-auto">
-          <div className="card-ia p-8 text-center mb-6">
-            <div className="text-8xl mb-4">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
+        <div style={{ maxWidth: '32rem', margin: '0 auto' }}>
+          <div className="card" style={{ padding: '2rem', textAlign: 'center', marginBottom: '1.5rem' }}>
+            <div style={{ fontSize: '5rem', marginBottom: '1rem' }}>
               {resultado.porcentagem >= 80 ? '🏆' : resultado.porcentagem >= 60 ? '🎉' : resultado.porcentagem >= 40 ? '📚' : '💪'}
             </div>
-            <h1 className="title-ia-sm mb-2">
+            <h1 style={{
+              fontSize: '1.875rem',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              marginBottom: '0.5rem'
+            }}>
               {resultado.porcentagem >= 80 ? 'Excelente!' : resultado.porcentagem >= 60 ? 'Muito Bem!' : resultado.porcentagem >= 40 ? 'Bom Trabalho!' : 'Continue Praticando!'}
             </h1>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div className="bg-white/10 rounded-xl p-4">
-                <p className="text-3xl font-bold text-white">{resultado.acertos}/{resultado.respondidas}</p>
-                <p className="text-white/60 text-sm">Acertos</p>
+            <div className="stats-bar" style={{ marginBottom: '1.5rem' }}>
+              <div className="stat-item">
+                <div className="stat-number">{resultado.acertos}/{resultado.respondidas}</div>
+                <div className="stat-label">Acertos</div>
               </div>
-              <div className="bg-white/10 rounded-xl p-4">
-                <p className="text-3xl font-bold text-white">{resultado.porcentagem}%</p>
-                <p className="text-white/60 text-sm">Aproveitamento</p>
+              <div className="stat-item">
+                <div className="stat-number">{resultado.porcentagem}%</div>
+                <div className="stat-label">Aproveitamento</div>
               </div>
             </div>
 
             {/* FP Ganhos */}
-            <div className="bg-yellow-500/20 rounded-xl p-4 border border-yellow-400/30 mb-6">
-              <p className="text-yellow-300 font-bold text-3xl">+{resultado.fpTotal} FP</p>
-              <p className="text-white/60 text-sm">
+            <div style={{
+              background: 'rgba(251, 191, 36, 0.2)',
+              borderRadius: '0.75rem',
+              padding: '1rem',
+              border: '1px solid rgba(251, 191, 36, 0.3)',
+              marginBottom: '1.5rem'
+            }}>
+              <p style={{
+                color: 'var(--accent-yellow)',
+                fontWeight: 'bold',
+                fontSize: '2rem'
+              }}>
+                +{resultado.fpTotal} FP
+              </p>
+              <p style={{
+                fontSize: '0.875rem',
+                color: 'var(--chalk-dim)'
+              }}>
                 Base: {resultado.acertos * 10} × {fpMultiplier} + Bonus tempo: {resultado.bonusTempo}
               </p>
             </div>
 
             {/* Detalhes */}
-            <div className="text-left bg-white/5 rounded-xl p-4 mb-6">
-              <p className="text-white/60 text-sm mb-2">Detalhes:</p>
-              <div className="space-y-1 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-white/70">Questoes respondidas</span>
-                  <span className="text-white">{resultado.respondidas} de {resultado.total}</span>
+            <div style={{
+              textAlign: 'left',
+              background: 'rgba(255, 255, 255, 0.05)',
+              borderRadius: '0.75rem',
+              padding: '1rem',
+              marginBottom: '1.5rem'
+            }}>
+              <p style={{
+                fontSize: '0.875rem',
+                color: 'var(--chalk-dim)',
+                marginBottom: '0.5rem'
+              }}>
+                Detalhes:
+              </p>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.25rem',
+                fontSize: '0.875rem'
+              }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <span style={{ color: 'var(--chalk-dim)' }}>Questoes respondidas</span>
+                  <span style={{ color: 'var(--chalk-white)' }}>
+                    {resultado.respondidas} de {resultado.total}
+                  </span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-white/70">Tempo restante</span>
-                  <span className="text-white">{formatarTempo(tempoRestante)}</span>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <span style={{ color: 'var(--chalk-dim)' }}>Tempo restante</span>
+                  <span style={{ color: 'var(--chalk-white)' }}>{formatarTempo(tempoRestante)}</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-white/70">Multiplicador</span>
-                  <span className="text-yellow-300">{fpMultiplier}x</span>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <span style={{ color: 'var(--chalk-dim)' }}>Multiplicador</span>
+                  <span style={{ color: 'var(--accent-yellow)' }}>{fpMultiplier}x</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Revisão das questões */}
-          <div className="card-ia p-6 mb-6">
-            <h2 className="text-white font-bold mb-4">📝 Revisao</h2>
-            <div className="space-y-2 max-h-64 overflow-y-auto">
+          <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+            <h2 className="card-title">📝 Revisao</h2>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.5rem',
+              maxHeight: '16rem',
+              overflowY: 'auto'
+            }}>
               {questoes.map((q, idx) => {
                 const respondida = respostas[idx] !== null;
                 const acertou = respostas[idx] === q.correta;
@@ -520,25 +785,44 @@ export default function SimuladoRelogioPage() {
                 return (
                   <div
                     key={q.id}
-                    className={`p-3 rounded-lg ${
-                      !respondida
-                        ? 'bg-white/5 border border-white/10'
+                    style={{
+                      padding: '0.75rem',
+                      borderRadius: '0.5rem',
+                      background: !respondida
+                        ? 'rgba(255, 255, 255, 0.05)'
                         : acertou
-                        ? 'bg-green-500/20 border border-green-400/30'
-                        : 'bg-red-500/20 border border-red-400/30'
-                    }`}
+                        ? 'rgba(16, 185, 129, 0.2)'
+                        : 'rgba(239, 68, 68, 0.2)',
+                      border: !respondida
+                        ? '1px solid rgba(255, 255, 255, 0.1)'
+                        : acertou
+                        ? '1px solid rgba(16, 185, 129, 0.3)'
+                        : '1px solid rgba(239, 68, 68, 0.3)'
+                    }}
                   >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <span className="text-white/60 text-sm">{idx + 1}.</span>
-                        <span className="badge-ia text-xs">{q.disciplina}</span>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between'
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <span style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                          {idx + 1}.
+                        </span>
+                        <span className="badge" style={{ fontSize: '0.75rem' }}>
+                          {q.disciplina}
+                        </span>
                       </div>
-                      <span className="text-sm">
+                      <span style={{ fontSize: '0.875rem', color: 'var(--chalk-white)' }}>
                         {!respondida ? '⏭️ Pulada' : acertou ? '✅ Correta' : '❌ Errada'}
                       </span>
                     </div>
                     {!acertou && respondida && (
-                      <p className="text-white/60 text-xs mt-1">
+                      <p style={{
+                        fontSize: '0.75rem',
+                        color: 'var(--chalk-dim)',
+                        marginTop: '0.25rem'
+                      }}>
                         Resposta: {q.alternativas[q.correta]}
                       </p>
                     )}
@@ -549,27 +833,53 @@ export default function SimuladoRelogioPage() {
           </div>
 
           {/* Botões */}
-          <div className="space-y-3">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <button
               onClick={() => {
                 setEstado('config');
                 setQuestoes([]);
                 setRespostas([]);
               }}
-              className="btn-ia w-full py-4 text-lg"
+              className="btn btn-yellow"
+              style={{
+                width: '100%',
+                padding: '1rem',
+                fontSize: '1.125rem'
+              }}
             >
               ⏳ Jogar Novamente
             </button>
             <button
               onClick={() => router.push('/enem')}
-              className="btn-ia-secondary w-full py-4"
+              className="btn"
+              style={{
+                width: '100%',
+                padding: '1rem',
+                background: 'rgba(255, 255, 255, 0.1)'
+              }}
             >
               🏠 Voltar ao Menu
             </button>
           </div>
         </div>
 
-        <ChalkBackToTop />
+        {/* Footer */}
+        <div className="footer">
+          <button
+            onClick={() => router.push('/enem')}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'var(--chalk-dim)',
+              cursor: 'pointer',
+              fontSize: '0.875rem',
+              textDecoration: 'underline',
+              padding: 0
+            }}
+          >
+            ← Voltar ao Menu
+          </button>
+        </div>
       </div>
     );
   }

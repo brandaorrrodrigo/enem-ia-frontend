@@ -1,44 +1,17 @@
 import { NextResponse } from 'next/server';
-import { prisma } from '@/lib/prisma';
-import { getLeaderboard, getStreakLeaderboard } from '@/lib/gamification';
+import { determinarLiga, calcularLevel } from '@/lib/gamification';
 
-/**
- * GET /api/gamification/leaderboard
- * Retorna ranking de usuários
- */
-export async function GET(request: Request) {
+export async function GET() {
   try {
-    const { searchParams } = new URL(request.url);
-    const tipo = searchParams.get('tipo') || 'pontos'; // pontos | streaks
-    const limit = parseInt(searchParams.get('limit') || '10');
-
-    if (tipo === 'streaks') {
-      const ranking = await getStreakLeaderboard(prisma, limit);
-
-      return NextResponse.json({
-        tipo: 'streaks',
-        ranking: ranking.map((r, i) => ({
-          posicao: i + 1,
-          usuarioId: r.id,
-          nome: r.nome || 'Anônimo',
-          streakAtual: r.streakAtual,
-          streakMaximo: r.streakMaximo,
-        })),
-      });
-    }
-
-    // Ranking por pontos (padrão)
-    const ranking = await getLeaderboard(prisma, limit);
-
-    return NextResponse.json({
-      tipo: 'pontos',
-      ranking,
-    });
+    const mockRanking = [
+      { posicao: 1, nome: 'Maria Silva', xp: 4500, pontos: 2200, liga: 'ouro' },
+      { posicao: 2, nome: 'Joao Pedro', xp: 3800, pontos: 1900, liga: 'prata' },
+      { posicao: 3, nome: 'Ana Clara', xp: 3200, pontos: 1600, liga: 'prata' },
+      { posicao: 4, nome: 'Lucas Oliveira', xp: 2800, pontos: 1400, liga: 'prata' },
+      { posicao: 5, nome: 'Beatriz Santos', xp: 2400, pontos: 1200, liga: 'prata' },
+    ];
+    return NextResponse.json({ tipo: 'pontos', ranking: mockRanking });
   } catch (error) {
-    console.error('Erro ao buscar leaderboard:', error);
-    return NextResponse.json(
-      { error: 'Erro interno' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Erro interno' }, { status: 500 });
   }
 }

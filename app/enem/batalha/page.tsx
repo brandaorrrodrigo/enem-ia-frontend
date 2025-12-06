@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Questao {
@@ -221,79 +220,144 @@ export default function BatalhaPage() {
   // Menu Principal
   if (battleState === 'menu') {
     return (
-      <div className="container-ia min-h-screen py-8">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
         <FloatingNav />
 
         {/* Slogan */}
-        <div className="card-ia p-4 mb-6 mt-16 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border-2 border-yellow-400/30 text-center">
-          <p className="text-yellow-300 font-bold italic">
+        <div
+          className="card"
+          style={{
+            padding: '1rem',
+            marginBottom: '1.5rem',
+            marginTop: '4rem',
+            background: 'linear-gradient(to right, rgba(255, 217, 102, 0.2), rgba(255, 145, 77, 0.2))',
+            border: '2px solid rgba(255, 217, 102, 0.3)',
+            textAlign: 'center'
+          }}
+        >
+          <p style={{
+            color: 'var(--accent-yellow)',
+            fontWeight: 'bold',
+            fontStyle: 'italic',
+            margin: 0
+          }}>
             "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
           </p>
         </div>
 
-        <div className="max-w-lg mx-auto">
-          <div className="text-center mb-8">
-            <div className="text-8xl mb-4">⚔️</div>
-            <h1 className="title-ia mb-2">Modo Batalha</h1>
-            <p className="subtitle-ia mb-0">Desafie outros estudantes em tempo real!</p>
+        <div style={{ maxWidth: '32rem', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <div style={{ fontSize: '5rem', marginBottom: '1rem' }}>⚔️</div>
+            <div className="header">
+              <h1>Modo Batalha</h1>
+              <p>Desafie outros estudantes em tempo real!</p>
+            </div>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-4 mb-8">
-            <div className="stat-ia bg-green-500/20 border border-green-400/30">
-              <span className="stat-ia-value text-green-400">{meusStats.vitorias}</span>
-              <span className="stat-ia-label">Vitorias</span>
+          <div className="stats-bar" style={{ marginBottom: '2rem' }}>
+            <div className="stat-item" style={{
+              backgroundColor: 'rgba(34, 197, 94, 0.2)',
+              border: '1px solid rgba(34, 197, 94, 0.3)'
+            }}>
+              <span className="stat-number" style={{ color: '#22c55e' }}>{meusStats.vitorias}</span>
+              <span className="stat-label">Vitorias</span>
             </div>
-            <div className="stat-ia bg-red-500/20 border border-red-400/30">
-              <span className="stat-ia-value text-red-400">{meusStats.derrotas}</span>
-              <span className="stat-ia-label">Derrotas</span>
+            <div className="stat-item" style={{
+              backgroundColor: 'rgba(239, 68, 68, 0.2)',
+              border: '1px solid rgba(239, 68, 68, 0.3)'
+            }}>
+              <span className="stat-number" style={{ color: '#ef4444' }}>{meusStats.derrotas}</span>
+              <span className="stat-label">Derrotas</span>
             </div>
-            <div className="stat-ia bg-yellow-500/20 border border-yellow-400/30">
-              <span className="stat-ia-value text-yellow-400">{meusStats.empates}</span>
-              <span className="stat-ia-label">Empates</span>
+            <div className="stat-item" style={{
+              backgroundColor: 'rgba(255, 217, 102, 0.2)',
+              border: '1px solid rgba(255, 217, 102, 0.3)'
+            }}>
+              <span className="stat-number" style={{ color: 'var(--accent-yellow)' }}>{meusStats.empates}</span>
+              <span className="stat-label">Empates</span>
             </div>
           </div>
 
           {/* Botao de Batalha */}
           <button
             onClick={buscarOponente}
-            className="btn-ia w-full py-6 text-xl font-bold mb-6"
-            style={{ boxShadow: '0 8px 30px rgba(255, 217, 102, 0.4)' }}
+            className="btn btn-yellow"
+            style={{
+              width: '100%',
+              padding: '1.5rem',
+              fontSize: '1.25rem',
+              fontWeight: 'bold',
+              marginBottom: '1.5rem',
+              boxShadow: '0 8px 30px rgba(255, 217, 102, 0.4)'
+            }}
           >
             ⚔️ ENCONTRAR OPONENTE
           </button>
 
           {/* Regras */}
-          <div className="card-ia p-6">
-            <h3 className="text-white font-bold mb-4">📋 Como Funciona</h3>
-            <ul className="text-white/70 space-y-2 text-sm">
-              <li className="flex items-start gap-2">
-                <span className="text-yellow-300">1.</span>
+          <div className="card" style={{ padding: '1.5rem' }}>
+            <h3 className="card-title">📋 Como Funciona</h3>
+            <ul style={{
+              color: 'var(--chalk-dim)',
+              listStyle: 'none',
+              padding: 0,
+              margin: '1rem 0 0 0'
+            }}>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                <span style={{ color: 'var(--accent-yellow)' }}>1.</span>
                 <span>Voce sera pareado com um oponente de nivel similar</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-yellow-300">2.</span>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                <span style={{ color: 'var(--accent-yellow)' }}>2.</span>
                 <span>Ambos respondem 5 questoes simultaneamente</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-yellow-300">3.</span>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                <span style={{ color: 'var(--accent-yellow)' }}>3.</span>
                 <span>15 segundos por questao - seja rapido!</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-yellow-300">4.</span>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+                <span style={{ color: 'var(--accent-yellow)' }}>4.</span>
                 <span>Quem acertar mais, vence e ganha FP!</span>
               </li>
             </ul>
 
-            <div className="mt-4 p-3 bg-yellow-500/20 rounded-xl border border-yellow-400/30">
-              <p className="text-yellow-300 text-sm font-bold text-center">
+            <div style={{
+              marginTop: '1rem',
+              padding: '0.75rem',
+              backgroundColor: 'rgba(255, 217, 102, 0.2)',
+              borderRadius: '0.75rem',
+              border: '1px solid rgba(255, 217, 102, 0.3)'
+            }}>
+              <p style={{
+                color: 'var(--accent-yellow)',
+                fontSize: '0.875rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+                margin: 0
+              }}>
                 🎁 Vitoria: +50 FP base + 10 FP por acerto
               </p>
             </div>
           </div>
         </div>
 
-        <ChalkBackToTop />
+        {/* Footer */}
+        <div className="footer">
+          <a
+            onClick={() => router.push('/enem')}
+            style={{
+              color: 'var(--accent-yellow)',
+              textDecoration: 'none',
+              cursor: 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}
+          >
+            ← Voltar ao Menu
+          </a>
+        </div>
       </div>
     );
   }
@@ -301,36 +365,84 @@ export default function BatalhaPage() {
   // Buscando Oponente
   if (battleState === 'buscando') {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
+      <div className="container" style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+        <div style={{ textAlign: 'center' }}>
           {!oponente ? (
             <>
-              <div className="spinner-ia mx-auto mb-6"></div>
-              <h2 className="title-ia-sm mb-4">Buscando oponente...</h2>
-              <p className="text-white/60">Encontrando alguem do seu nivel</p>
+              <div style={{
+                width: '64px',
+                height: '64px',
+                border: '4px solid rgba(255, 217, 102, 0.2)',
+                borderTop: '4px solid var(--accent-yellow)',
+                borderRadius: '50%',
+                animation: 'spin 1s linear infinite',
+                margin: '0 auto 1.5rem'
+              }} />
+              <h2 style={{
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                color: 'var(--chalk-white)',
+                marginBottom: '1rem'
+              }}>
+                Buscando oponente...
+              </h2>
+              <p style={{ color: 'var(--chalk-dim)' }}>Encontrando alguem do seu nivel</p>
             </>
           ) : (
             <>
-              <div className="text-8xl mb-6">⚔️</div>
-              <h2 className="title-ia-sm mb-4">Oponente Encontrado!</h2>
-              <div className="card-ia p-6 max-w-sm mx-auto">
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-2xl font-bold text-white">
+              <div style={{ fontSize: '5rem', marginBottom: '1.5rem' }}>⚔️</div>
+              <h2 style={{
+                fontSize: '1.5rem',
+                fontWeight: 'bold',
+                color: 'var(--chalk-white)',
+                marginBottom: '1rem'
+              }}>
+                Oponente Encontrado!
+              </h2>
+              <div className="card" style={{ padding: '1.5rem', maxWidth: '24rem', margin: '0 auto' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <div style={{
+                    width: '64px',
+                    height: '64px',
+                    borderRadius: '50%',
+                    background: 'linear-gradient(to bottom right, #ef4444, #f97316)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '1.5rem',
+                    fontWeight: 'bold',
+                    color: 'white'
+                  }}>
                     {oponente.nome.charAt(0)}
                   </div>
-                  <div className="text-left">
-                    <p className="text-white font-bold text-lg">{oponente.nome}</p>
-                    <p className="text-yellow-300">{oponente.pontosFP.toLocaleString()} FP</p>
-                    <p className="text-white/60 text-sm">
+                  <div style={{ textAlign: 'left' }}>
+                    <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', fontSize: '1.125rem', margin: '0 0 0.25rem 0' }}>
+                      {oponente.nome}
+                    </p>
+                    <p style={{ color: 'var(--accent-yellow)', margin: '0 0 0.25rem 0' }}>
+                      {oponente.pontosFP.toLocaleString()} FP
+                    </p>
+                    <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', margin: 0 }}>
                       {oponente.vitorias}V / {oponente.derrotas}D
                     </p>
                   </div>
                 </div>
               </div>
-              <p className="text-white/60 mt-4">Preparando batalha...</p>
+              <p style={{ color: 'var(--chalk-dim)', marginTop: '1rem' }}>Preparando batalha...</p>
             </>
           )}
         </div>
+
+        <style jsx>{`
+          @keyframes spin {
+            to { transform: rotate(360deg); }
+          }
+        `}</style>
       </div>
     );
   }
@@ -342,83 +454,149 @@ export default function BatalhaPage() {
     const oponenteResposta = oponenteRespostas[questaoAtual];
 
     return (
-      <div className="container-ia min-h-screen py-8">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
         {/* Header com VS */}
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center font-bold text-white">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <div style={{
+              width: '48px',
+              height: '48px',
+              borderRadius: '50%',
+              background: 'linear-gradient(to bottom right, #3b82f6, #06b6d4)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold',
+              color: 'white',
+              fontSize: '0.875rem'
+            }}>
               EU
             </div>
             <div>
-              <p className="text-white font-bold">Voce</p>
-              <p className="text-yellow-300 text-sm">
+              <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', margin: 0 }}>Voce</p>
+              <p style={{ color: 'var(--accent-yellow)', fontSize: '0.875rem', margin: 0 }}>
                 {minhasRespostas.filter((r, i) => r === questoesBatalha[i].correta).length} acertos
               </p>
             </div>
           </div>
 
-          <div className="text-center">
-            <span className="text-3xl font-bold text-yellow-300">VS</span>
-            <p className="text-white/60 text-xs">Questao {questaoAtual + 1}/5</p>
+          <div style={{ textAlign: 'center' }}>
+            <span style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'var(--accent-yellow)' }}>VS</span>
+            <p style={{ color: 'var(--chalk-dim)', fontSize: '0.75rem', margin: 0 }}>
+              Questao {questaoAtual + 1}/5
+            </p>
           </div>
 
-          <div className="flex items-center gap-3">
-            <div className="text-right">
-              <p className="text-white font-bold">{oponente?.nome}</p>
-              <p className="text-red-400 text-sm">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <div style={{ textAlign: 'right' }}>
+              <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', margin: 0 }}>
+                {oponente?.nome}
+              </p>
+              <p style={{ color: '#ef4444', fontSize: '0.875rem', margin: 0 }}>
                 {oponenteRespostas.filter((r, i) => r === questoesBatalha[i].correta).length} acertos
               </p>
             </div>
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center font-bold text-white">
+            <div style={{
+              width: '48px',
+              height: '48px',
+              borderRadius: '50%',
+              background: 'linear-gradient(to bottom right, #ef4444, #f97316)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 'bold',
+              color: 'white'
+            }}>
               {oponente?.nome.charAt(0)}
             </div>
           </div>
         </div>
 
         {/* Timer */}
-        <div className="mb-6">
-          <div className="flex justify-between items-center mb-2">
-            <span className="text-white/60 text-sm">{questao.disciplina}</span>
-            <span className={`text-xl font-bold ${tempoQuestao <= 5 ? 'text-red-400' : 'text-yellow-300'}`}>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+            <span style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>{questao.disciplina}</span>
+            <span style={{
+              fontSize: '1.25rem',
+              fontWeight: 'bold',
+              color: tempoQuestao <= 5 ? '#ef4444' : 'var(--accent-yellow)'
+            }}>
               ⏱️ {tempoQuestao}s
             </span>
           </div>
-          <div className="progress-ia">
+          <div style={{
+            width: '100%',
+            height: '8px',
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+            borderRadius: '9999px',
+            overflow: 'hidden'
+          }}>
             <div
-              className={`progress-ia-bar transition-all ${tempoQuestao <= 5 ? 'bg-red-500' : ''}`}
-              style={{ width: `${(tempoQuestao / 15) * 100}%` }}
+              style={{
+                height: '100%',
+                backgroundColor: tempoQuestao <= 5 ? '#ef4444' : 'var(--accent-yellow)',
+                transition: 'all 0.3s',
+                width: `${(tempoQuestao / 15) * 100}%`
+              }}
             />
           </div>
         </div>
 
         {/* Status dos jogadores */}
-        <div className="flex gap-4 mb-6">
-          <div className={`flex-1 p-3 rounded-xl text-center ${respondeu ? 'bg-green-500/20 border border-green-400/30' : 'bg-white/5'}`}>
-            <p className="text-white/60 text-xs">Voce</p>
-            <p className="text-white font-bold">{respondeu ? '✓ Respondeu' : '⏳ Aguardando'}</p>
+        <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
+          <div style={{
+            flex: 1,
+            padding: '0.75rem',
+            borderRadius: '0.75rem',
+            textAlign: 'center',
+            backgroundColor: respondeu ? 'rgba(34, 197, 94, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+            border: respondeu ? '1px solid rgba(34, 197, 94, 0.3)' : 'none'
+          }}>
+            <p style={{ color: 'var(--chalk-dim)', fontSize: '0.75rem', margin: '0 0 0.25rem 0' }}>Voce</p>
+            <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', margin: 0 }}>
+              {respondeu ? '✓ Respondeu' : '⏳ Aguardando'}
+            </p>
           </div>
-          <div className={`flex-1 p-3 rounded-xl text-center ${oponenteRespondeu ? 'bg-red-500/20 border border-red-400/30' : 'bg-white/5'}`}>
-            <p className="text-white/60 text-xs">{oponente?.nome}</p>
-            <p className="text-white font-bold">{oponenteRespondeu ? '✓ Respondeu' : '⏳ Aguardando'}</p>
+          <div style={{
+            flex: 1,
+            padding: '0.75rem',
+            borderRadius: '0.75rem',
+            textAlign: 'center',
+            backgroundColor: oponenteRespondeu ? 'rgba(239, 68, 68, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+            border: oponenteRespondeu ? '1px solid rgba(239, 68, 68, 0.3)' : 'none'
+          }}>
+            <p style={{ color: 'var(--chalk-dim)', fontSize: '0.75rem', margin: '0 0 0.25rem 0' }}>
+              {oponente?.nome}
+            </p>
+            <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', margin: 0 }}>
+              {oponenteRespondeu ? '✓ Respondeu' : '⏳ Aguardando'}
+            </p>
           </div>
         </div>
 
         {/* Questao */}
-        <div className="card-ia p-6 mb-6">
-          <p className="text-white text-lg mb-6">{questao.enunciado}</p>
+        <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+          <p style={{ color: 'var(--chalk-white)', fontSize: '1.125rem', marginBottom: '1.5rem' }}>
+            {questao.enunciado}
+          </p>
 
-          <div className="space-y-3">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             {questao.alternativas.map((alt, idx) => {
-              let btnClass = 'bg-white/5 border-2 border-white/10 hover:border-white/30';
+              let backgroundColor = 'rgba(255, 255, 255, 0.05)';
+              let borderColor = 'rgba(255, 255, 255, 0.1)';
+              let hoverBorderColor = 'rgba(255, 255, 255, 0.3)';
 
               if (respondeu && oponenteRespondeu) {
                 if (idx === questao.correta) {
-                  btnClass = 'bg-green-500/20 border-2 border-green-400';
+                  backgroundColor = 'rgba(34, 197, 94, 0.2)';
+                  borderColor = '#22c55e';
                 } else if (minhaResposta === idx || oponenteResposta === idx) {
-                  btnClass = 'bg-red-500/20 border-2 border-red-400';
+                  backgroundColor = 'rgba(239, 68, 68, 0.2)';
+                  borderColor = '#ef4444';
                 }
               } else if (minhaResposta === idx) {
-                btnClass = 'bg-yellow-400/20 border-2 border-yellow-400';
+                backgroundColor = 'rgba(255, 217, 102, 0.2)';
+                borderColor = 'var(--accent-yellow)';
               }
 
               return (
@@ -426,12 +604,35 @@ export default function BatalhaPage() {
                   key={idx}
                   onClick={() => responder(idx)}
                   disabled={respondeu}
-                  className={`w-full p-4 rounded-xl text-left transition-all ${btnClass} disabled:cursor-default`}
+                  style={{
+                    width: '100%',
+                    padding: '1rem',
+                    borderRadius: '0.75rem',
+                    textAlign: 'left',
+                    backgroundColor,
+                    border: `2px solid ${borderColor}`,
+                    cursor: respondeu ? 'default' : 'pointer',
+                    transition: 'all 0.2s',
+                    display: 'flex',
+                    alignItems: 'center'
+                  }}
+                  onMouseEnter={(e) => {
+                    if (!respondeu) {
+                      e.currentTarget.style.borderColor = hoverBorderColor;
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (!respondeu && minhaResposta !== idx) {
+                      e.currentTarget.style.borderColor = borderColor;
+                    }
+                  }}
                 >
-                  <span className="font-bold mr-3">{String.fromCharCode(65 + idx)})</span>
-                  <span className="text-white">{alt}</span>
+                  <span style={{ fontWeight: 'bold', marginRight: '0.75rem', color: 'var(--chalk-white)' }}>
+                    {String.fromCharCode(65 + idx)})
+                  </span>
+                  <span style={{ color: 'var(--chalk-white)', flex: 1 }}>{alt}</span>
                   {respondeu && oponenteRespondeu && (
-                    <span className="float-right">
+                    <span>
                       {minhaResposta === idx && '👤'}
                       {oponenteResposta === idx && '👊'}
                     </span>
@@ -441,8 +642,6 @@ export default function BatalhaPage() {
             })}
           </div>
         </div>
-
-        <ChalkBackToTop />
       </div>
     );
   }
@@ -452,91 +651,150 @@ export default function BatalhaPage() {
     const resultado = calcularResultado();
 
     return (
-      <div className="container-ia min-h-screen py-8">
-        <div className="max-w-lg mx-auto">
+      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
+        <div style={{ maxWidth: '32rem', margin: '0 auto' }}>
           {/* Resultado Principal */}
-          <div className="card-ia p-8 text-center mb-6">
-            <div className="text-8xl mb-4">
+          <div className="card" style={{ padding: '2rem', textAlign: 'center', marginBottom: '1.5rem' }}>
+            <div style={{ fontSize: '5rem', marginBottom: '1rem' }}>
               {resultado.resultado === 'vitoria' ? '🏆' : resultado.resultado === 'derrota' ? '😔' : '🤝'}
             </div>
-            <h1 className={`title-ia-sm mb-2 ${
-              resultado.resultado === 'vitoria' ? 'text-green-400' :
-              resultado.resultado === 'derrota' ? 'text-red-400' : 'text-yellow-300'
-            }`}>
+            <h1 style={{
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              marginBottom: '0.5rem',
+              color: resultado.resultado === 'vitoria' ? '#22c55e' :
+                     resultado.resultado === 'derrota' ? '#ef4444' : 'var(--accent-yellow)'
+            }}>
               {resultado.resultado === 'vitoria' ? 'VITORIA!' :
                resultado.resultado === 'derrota' ? 'DERROTA' : 'EMPATE!'}
             </h1>
 
             {/* Placar */}
-            <div className="flex items-center justify-center gap-8 mb-6">
-              <div className="text-center">
-                <p className="text-4xl font-bold text-blue-400">{resultado.meusAcertos}</p>
-                <p className="text-white/60 text-sm">Voce</p>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '2rem',
+              marginBottom: '1.5rem'
+            }}>
+              <div style={{ textAlign: 'center' }}>
+                <p style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#3b82f6', margin: 0 }}>
+                  {resultado.meusAcertos}
+                </p>
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', margin: 0 }}>Voce</p>
               </div>
-              <div className="text-3xl text-white/30">VS</div>
-              <div className="text-center">
-                <p className="text-4xl font-bold text-red-400">{resultado.oponenteAcertos}</p>
-                <p className="text-white/60 text-sm">{oponente?.nome}</p>
+              <div style={{ fontSize: '1.875rem', color: 'rgba(255, 255, 255, 0.3)' }}>VS</div>
+              <div style={{ textAlign: 'center' }}>
+                <p style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#ef4444', margin: 0 }}>
+                  {resultado.oponenteAcertos}
+                </p>
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', margin: 0 }}>
+                  {oponente?.nome}
+                </p>
               </div>
             </div>
 
             {/* FP Ganho */}
-            <div className="bg-yellow-500/20 rounded-xl p-4 border border-yellow-400/30">
-              <p className="text-yellow-300 font-bold text-2xl">+{resultado.fpGanho} FP</p>
-              <p className="text-white/60 text-sm">Pontos ganhos</p>
+            <div style={{
+              backgroundColor: 'rgba(255, 217, 102, 0.2)',
+              borderRadius: '0.75rem',
+              padding: '1rem',
+              border: '1px solid rgba(255, 217, 102, 0.3)'
+            }}>
+              <p style={{ color: 'var(--accent-yellow)', fontWeight: 'bold', fontSize: '1.5rem', margin: '0 0 0.25rem 0' }}>
+                +{resultado.fpGanho} FP
+              </p>
+              <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', margin: 0 }}>Pontos ganhos</p>
             </div>
           </div>
 
           {/* Detalhes */}
-          <div className="card-ia p-6 mb-6">
-            <h3 className="text-white font-bold mb-4">📊 Detalhes da Batalha</h3>
-            <div className="space-y-3">
-              <div className="flex justify-between">
-                <span className="text-white/60">Seus acertos</span>
-                <span className="text-white font-bold">{resultado.meusAcertos}/5</span>
+          <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+            <h3 className="card-title">📊 Detalhes da Batalha</h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <span style={{ color: 'var(--chalk-dim)' }}>Seus acertos</span>
+                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
+                  {resultado.meusAcertos}/5
+                </span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-white/60">Acertos do oponente</span>
-                <span className="text-white font-bold">{resultado.oponenteAcertos}/5</span>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <span style={{ color: 'var(--chalk-dim)' }}>Acertos do oponente</span>
+                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
+                  {resultado.oponenteAcertos}/5
+                </span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-white/60">Seu tempo total</span>
-                <span className="text-white font-bold">{resultado.meuTempoTotal}s</span>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <span style={{ color: 'var(--chalk-dim)' }}>Seu tempo total</span>
+                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
+                  {resultado.meuTempoTotal}s
+                </span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-white/60">Tempo do oponente</span>
-                <span className="text-white font-bold">{resultado.oponenteTempoTotal}s</span>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <span style={{ color: 'var(--chalk-dim)' }}>Tempo do oponente</span>
+                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
+                  {resultado.oponenteTempoTotal}s
+                </span>
               </div>
             </div>
           </div>
 
           {/* Botoes */}
-          <div className="space-y-3">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <button
               onClick={() => {
                 setBattleState('menu');
                 setOponente(null);
               }}
-              className="btn-ia w-full py-4 text-lg"
+              className="btn btn-yellow"
+              style={{ width: '100%', padding: '1rem', fontSize: '1.125rem' }}
             >
               ⚔️ Nova Batalha
             </button>
             <button
               onClick={() => router.push('/enem/feed')}
-              className="btn-ia-secondary w-full py-4"
+              className="btn"
+              style={{
+                width: '100%',
+                padding: '1rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                border: '2px solid rgba(255, 255, 255, 0.2)'
+              }}
             >
               📱 Compartilhar no Feed
             </button>
             <button
               onClick={() => router.push('/enem')}
-              className="btn-ia-outline w-full py-4"
+              className="btn"
+              style={{
+                width: '100%',
+                padding: '1rem',
+                backgroundColor: 'transparent',
+                border: '2px solid var(--accent-yellow)',
+                color: 'var(--accent-yellow)'
+              }}
             >
               🏠 Voltar ao Menu
             </button>
           </div>
         </div>
 
-        <ChalkBackToTop />
+        {/* Footer */}
+        <div className="footer">
+          <a
+            onClick={() => router.push('/enem')}
+            style={{
+              color: 'var(--accent-yellow)',
+              textDecoration: 'none',
+              cursor: 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}
+          >
+            ← Voltar ao Menu
+          </a>
+        </div>
       </div>
     );
   }

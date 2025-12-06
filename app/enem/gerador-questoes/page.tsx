@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface QuestaoGerada {
@@ -210,264 +209,479 @@ export default function GeradorQuestoesPage() {
   };
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div className="min-h-screen py-8 px-4" style={{ background: 'var(--chalkboard-bg)' }}>
       <FloatingNav />
-      {/* Header */}
 
-
-      <div className="mb-8 pt-16">
-        <h1 className="title-ia flex items-center gap-3 mb-2">
-          🤖 Gerador de Questoes IA
-        </h1>
-        <p className="subtitle-ia mb-0">
-          Gere questoes personalizadas para praticar
-        </p>
-      </div>
-
-      {questoesGeradas.length === 0 ? (
-        /* Formulario de Configuracao */
-        <div className="card-ia max-w-2xl mx-auto">
-          <h2 className="title-ia-sm mb-6">⚙️ Configure suas questoes</h2>
-
-          <div className="space-y-6">
-            {/* Disciplina */}
-            <div>
-              <label className="block text-white/80 text-sm mb-2">📚 Disciplina</label>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {disciplinas.map((d) => (
-                  <button
-                    key={d.value}
-                    onClick={() => {
-                      setDisciplina(d.value);
-                      setTema('');
-                    }}
-                    className={`card-ia-sm text-center transition hover:scale-105 ${
-                      disciplina === d.value ? 'border-2 border-yellow-300 bg-yellow-300/10' : ''
-                    }`}
-                  >
-                    <div className="text-3xl mb-2">{d.emoji}</div>
-                    <p className="text-white text-sm font-semibold">{d.label}</p>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Tema */}
-            <div>
-              <label className="block text-white/80 text-sm mb-2">📌 Tema (opcional)</label>
-              <select
-                value={tema}
-                onChange={(e) => setTema(e.target.value)}
-                className="input-ia w-full"
-              >
-                <option value="">Todos os temas</option>
-                {temasDisponiveis.map((t) => (
-                  <option key={t} value={t}>{t}</option>
-                ))}
-              </select>
-            </div>
-
-            {/* Dificuldade */}
-            <div>
-              <label className="block text-white/80 text-sm mb-2">📊 Dificuldade</label>
-              <div className="flex gap-3">
-                {dificuldades.map((d) => (
-                  <button
-                    key={d.value}
-                    onClick={() => setDificuldade(d.value)}
-                    className={`flex-1 card-ia-sm text-center transition hover:scale-105 ${
-                      dificuldade === d.value ? 'border-2 border-yellow-300 bg-yellow-300/10' : ''
-                    }`}
-                  >
-                    <div className="text-2xl mb-1">{d.emoji}</div>
-                    <p className="text-white text-sm">{d.label}</p>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Quantidade */}
-            <div>
-              <label className="block text-white/80 text-sm mb-2">🔢 Quantidade de questoes</label>
-              <div className="flex gap-3">
-                {[5, 10, 15, 20].map((n) => (
-                  <button
-                    key={n}
-                    onClick={() => setQuantidade(n)}
-                    className={`flex-1 card-ia-sm text-center transition hover:scale-105 ${
-                      quantidade === n ? 'border-2 border-yellow-300 bg-yellow-300/10' : ''
-                    }`}
-                  >
-                    <p className="text-white font-bold text-lg">{n}</p>
-                    <p className="text-white/60 text-xs">questoes</p>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Botao Gerar */}
-            <button
-              onClick={gerarQuestoes}
-              disabled={loading}
-              className="btn-ia w-full py-4 text-lg font-bold disabled:opacity-50"
-            >
-              {loading ? (
-                <>
-                  <span className="spinner-ia-sm inline-block mr-2"></span>
-                  Gerando questoes...
-                </>
-              ) : (
-                '🚀 Gerar Questoes'
-              )}
-            </button>
-          </div>
-
-          {/* Info */}
-          <div className="mt-6 p-4 bg-white/5 rounded-xl">
-            <h3 className="text-white font-bold mb-2 flex items-center gap-2">
-              💡 Como funciona
-            </h3>
-            <ul className="text-white/70 text-sm space-y-1">
-              <li>• A IA gera questoes no estilo ENEM</li>
-              <li>• Cada questao tem 5 alternativas</li>
-              <li>• Ao finalizar, voce ve sua pontuacao</li>
-              <li>• Explicacoes detalhadas para cada questao</li>
-            </ul>
-          </div>
+      {/* Container principal */}
+      <div className="container max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="mb-8 pt-16 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{
+            color: 'var(--chalk-white)',
+            textShadow: '2px 2px 0 rgba(255,217,102,0.3)'
+          }}>
+            🤖 Gerador de Questões IA
+          </h1>
+          <p className="text-lg md:text-xl" style={{ color: 'var(--chalk-dim)' }}>
+            Gere questões personalizadas para praticar
+          </p>
         </div>
-      ) : (
-        /* Questoes Geradas */
-        <div>
-          {/* Header do Simulado */}
-          <div className="card-ia mb-6">
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+
+        {questoesGeradas.length === 0 ? (
+          /* Formulário de Configuração */
+          <div className="card max-w-2xl mx-auto" style={{
+            background: 'rgba(255, 255, 255, 0.05)',
+            backdropFilter: 'blur(10px)',
+            border: '2px solid rgba(255, 255, 255, 0.1)',
+            borderRadius: '16px',
+            padding: '2rem'
+          }}>
+            <h2 className="card-title mb-6" style={{
+              color: 'var(--chalk-white)',
+              fontSize: '1.5rem',
+              fontWeight: 'bold'
+            }}>
+              ⚙️ Configure suas questões
+            </h2>
+
+            <div className="space-y-6">
+              {/* Disciplina */}
               <div>
-                <h2 className="title-ia-sm mb-1">
-                  {disciplinas.find(d => d.value === disciplina)?.emoji} {disciplina}
-                  {tema && ` - ${tema}`}
+                <label className="block mb-2" style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem'
+                }}>
+                  📚 Disciplina
+                </label>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  {disciplinas.map((d) => (
+                    <button
+                      key={d.value}
+                      onClick={() => {
+                        setDisciplina(d.value);
+                        setTema('');
+                      }}
+                      className="chalkboard-card text-center transition-all hover:scale-105"
+                      style={{
+                        background: disciplina === d.value ? 'rgba(255, 217, 102, 0.1)' : 'rgba(255, 255, 255, 0.03)',
+                        border: disciplina === d.value ? '2px solid var(--accent-yellow)' : '2px solid rgba(255, 255, 255, 0.1)',
+                        borderRadius: '12px',
+                        padding: '1rem'
+                      }}
+                    >
+                      <div className="text-3xl mb-2">{d.emoji}</div>
+                      <p style={{ color: 'var(--chalk-white)', fontSize: '0.875rem', fontWeight: '600' }}>
+                        {d.label}
+                      </p>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Tema */}
+              <div>
+                <label className="block mb-2" style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem'
+                }}>
+                  📌 Tema (opcional)
+                </label>
+                <select
+                  value={tema}
+                  onChange={(e) => setTema(e.target.value)}
+                  className="w-full p-3 rounded-lg"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '2px solid rgba(255, 255, 255, 0.1)',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1rem'
+                  }}
+                >
+                  <option value="">Todos os temas</option>
+                  {temasDisponiveis.map((t) => (
+                    <option key={t} value={t} style={{ background: 'var(--chalkboard-dark)' }}>
+                      {t}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Dificuldade */}
+              <div>
+                <label className="block mb-2" style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem'
+                }}>
+                  📊 Dificuldade
+                </label>
+                <div className="flex gap-3">
+                  {dificuldades.map((d) => (
+                    <button
+                      key={d.value}
+                      onClick={() => setDificuldade(d.value)}
+                      className="flex-1 text-center transition-all hover:scale-105"
+                      style={{
+                        background: dificuldade === d.value ? 'rgba(255, 217, 102, 0.1)' : 'rgba(255, 255, 255, 0.03)',
+                        border: dificuldade === d.value ? '2px solid var(--accent-yellow)' : '2px solid rgba(255, 255, 255, 0.1)',
+                        borderRadius: '12px',
+                        padding: '1rem'
+                      }}
+                    >
+                      <div className="text-2xl mb-1">{d.emoji}</div>
+                      <p style={{ color: 'var(--chalk-white)', fontSize: '0.875rem' }}>
+                        {d.label}
+                      </p>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Quantidade */}
+              <div>
+                <label className="block mb-2" style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem'
+                }}>
+                  🔢 Quantidade de questões
+                </label>
+                <div className="flex gap-3">
+                  {[5, 10, 15, 20].map((n) => (
+                    <button
+                      key={n}
+                      onClick={() => setQuantidade(n)}
+                      className="flex-1 text-center transition-all hover:scale-105"
+                      style={{
+                        background: quantidade === n ? 'rgba(255, 217, 102, 0.1)' : 'rgba(255, 255, 255, 0.03)',
+                        border: quantidade === n ? '2px solid var(--accent-yellow)' : '2px solid rgba(255, 255, 255, 0.1)',
+                        borderRadius: '12px',
+                        padding: '1rem'
+                      }}
+                    >
+                      <p style={{
+                        color: 'var(--chalk-white)',
+                        fontSize: '1.125rem',
+                        fontWeight: 'bold'
+                      }}>
+                        {n}
+                      </p>
+                      <p style={{
+                        color: 'var(--chalk-dim)',
+                        fontSize: '0.75rem'
+                      }}>
+                        questões
+                      </p>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Botão Gerar */}
+              <button
+                onClick={gerarQuestoes}
+                disabled={loading}
+                className="btn btn-yellow w-full py-4 text-lg font-bold transition-all hover:scale-105 disabled:opacity-50 disabled:hover:scale-100"
+                style={{
+                  background: loading ? 'rgba(255, 217, 102, 0.3)' : 'var(--accent-yellow)',
+                  color: 'var(--chalkboard-dark)',
+                  border: '2px solid var(--accent-yellow)',
+                  borderRadius: '12px',
+                  cursor: loading ? 'not-allowed' : 'pointer'
+                }}
+              >
+                {loading ? (
+                  <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                    <span className="inline-block w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin"></span>
+                    Gerando questões...
+                  </span>
+                ) : (
+                  '🚀 Gerar Questões'
+                )}
+              </button>
+            </div>
+
+            {/* Info */}
+            <div className="mt-6 p-4 rounded-xl" style={{
+              background: 'rgba(255, 255, 255, 0.05)',
+              border: '1px solid rgba(255, 255, 255, 0.1)'
+            }}>
+              <h3 className="font-bold mb-2 flex items-center gap-2" style={{ color: 'var(--chalk-white)' }}>
+                💡 Como funciona
+              </h3>
+              <ul className="space-y-1" style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                <li>• A IA gera questões no estilo ENEM</li>
+                <li>• Cada questão tem 5 alternativas</li>
+                <li>• Ao finalizar, você vê sua pontuação</li>
+                <li>• Explicações detalhadas para cada questão</li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          /* Questões Geradas */
+          <div>
+            {/* Header do Simulado */}
+            <div className="card mb-6" style={{
+              background: 'rgba(255, 255, 255, 0.05)',
+              backdropFilter: 'blur(10px)',
+              border: '2px solid rgba(255, 255, 255, 0.1)',
+              borderRadius: '16px',
+              padding: '1.5rem'
+            }}>
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div>
+                  <h2 className="card-title mb-1" style={{
+                    color: 'var(--chalk-white)',
+                    fontSize: '1.5rem',
+                    fontWeight: 'bold'
+                  }}>
+                    {disciplinas.find(d => d.value === disciplina)?.emoji} {disciplina}
+                    {tema && ` - ${tema}`}
+                  </h2>
+                  <p style={{ color: 'var(--chalk-dim)' }}>
+                    {questoesGeradas.length} questões • {dificuldades.find(d => d.value === dificuldade)?.emoji} {dificuldade}
+                  </p>
+                </div>
+
+                {!mostrarResultado ? (
+                  <div className="flex gap-3">
+                    <button
+                      onClick={reiniciar}
+                      className="btn px-4 py-2 rounded-lg transition-all hover:scale-105"
+                      style={{
+                        background: 'rgba(255, 255, 255, 0.1)',
+                        color: 'var(--chalk-white)',
+                        border: '2px solid rgba(255, 255, 255, 0.2)'
+                      }}
+                    >
+                      🔄 Recomeçar
+                    </button>
+                    <button
+                      onClick={verificarRespostas}
+                      disabled={Object.keys(respostasUsuario).length < questoesGeradas.length}
+                      className="btn btn-yellow px-4 py-2 rounded-lg transition-all hover:scale-105 disabled:opacity-50"
+                      style={{
+                        background: Object.keys(respostasUsuario).length < questoesGeradas.length
+                          ? 'rgba(255, 217, 102, 0.3)'
+                          : 'var(--accent-yellow)',
+                        color: 'var(--chalkboard-dark)',
+                        border: '2px solid var(--accent-yellow)',
+                        cursor: Object.keys(respostasUsuario).length < questoesGeradas.length
+                          ? 'not-allowed'
+                          : 'pointer'
+                      }}
+                    >
+                      ✅ Verificar Respostas
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    onClick={reiniciar}
+                    className="btn btn-yellow px-4 py-2 rounded-lg transition-all hover:scale-105"
+                    style={{
+                      background: 'var(--accent-yellow)',
+                      color: 'var(--chalkboard-dark)',
+                      border: '2px solid var(--accent-yellow)'
+                    }}
+                  >
+                    🔄 Gerar Novas Questões
+                  </button>
+                )}
+              </div>
+            </div>
+
+            {/* Resultado */}
+            {mostrarResultado && (
+              <div className="card mb-6 text-center" style={{
+                background: 'linear-gradient(135deg, rgba(255,217,102,0.2) 0%, rgba(255,217,102,0.05) 100%)',
+                backdropFilter: 'blur(10px)',
+                border: '2px solid var(--accent-yellow)',
+                borderRadius: '16px',
+                padding: '2rem'
+              }}>
+                <div className="text-6xl mb-4">
+                  {calcularPontuacao().porcentagem >= 70 ? '🎉' : calcularPontuacao().porcentagem >= 50 ? '👍' : '📚'}
+                </div>
+                <h2 className="mb-2" style={{
+                  color: 'var(--chalk-white)',
+                  fontSize: '1.5rem',
+                  fontWeight: 'bold'
+                }}>
+                  Resultado Final
                 </h2>
-                <p className="text-white/60">
-                  {questoesGeradas.length} questoes • {dificuldades.find(d => d.value === dificuldade)?.emoji} {dificuldade}
+                <p className="text-4xl font-bold mb-2" style={{ color: 'var(--chalk-white)' }}>
+                  {calcularPontuacao().acertos}/{calcularPontuacao().total}
+                </p>
+                <p className="text-xl" style={{ color: 'var(--accent-yellow)' }}>
+                  {calcularPontuacao().porcentagem}% de acertos
                 </p>
               </div>
+            )}
 
-              {!mostrarResultado ? (
-                <div className="flex gap-3">
-                  <button onClick={reiniciar} className="btn-ia-secondary">
-                    🔄 Recomecar
-                  </button>
-                  <button
-                    onClick={verificarRespostas}
-                    disabled={Object.keys(respostasUsuario).length < questoesGeradas.length}
-                    className="btn-ia disabled:opacity-50"
+            {/* Lista de Questões */}
+            <div className="space-y-6">
+              {questoesGeradas.map((questao, qIdx) => {
+                const respostaUsuario = respostasUsuario[questao.id];
+                const acertou = respostaUsuario === questao.respostaCorreta;
+
+                return (
+                  <div
+                    key={questao.id}
+                    className="chalkboard-card"
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      backdropFilter: 'blur(10px)',
+                      border: mostrarResultado
+                        ? acertou
+                          ? '2px solid #10b981'
+                          : '2px solid #ef4444'
+                        : '2px solid rgba(255, 255, 255, 0.1)',
+                      borderLeft: mostrarResultado
+                        ? acertou
+                          ? '4px solid #10b981'
+                          : '4px solid #ef4444'
+                        : '2px solid rgba(255, 255, 255, 0.1)',
+                      borderRadius: '16px',
+                      padding: '1.5rem'
+                    }}
                   >
-                    ✅ Verificar Respostas
-                  </button>
-                </div>
-              ) : (
-                <button onClick={reiniciar} className="btn-ia">
-                  🔄 Gerar Novas Questoes
-                </button>
-              )}
-            </div>
-          </div>
-
-          {/* Resultado */}
-          {mostrarResultado && (
-            <div className="card-ia mb-6 text-center" style={{ background: 'linear-gradient(135deg, rgba(255,217,102,0.2) 0%, rgba(255,217,102,0.05) 100%)' }}>
-              <div className="text-6xl mb-4">
-                {calcularPontuacao().porcentagem >= 70 ? '🎉' : calcularPontuacao().porcentagem >= 50 ? '👍' : '📚'}
-              </div>
-              <h2 className="title-ia-sm mb-2">Resultado Final</h2>
-              <p className="text-white text-4xl font-bold mb-2">
-                {calcularPontuacao().acertos}/{calcularPontuacao().total}
-              </p>
-              <p className="text-yellow-300 text-xl">
-                {calcularPontuacao().porcentagem}% de acertos
-              </p>
-            </div>
-          )}
-
-          {/* Lista de Questoes */}
-          <div className="space-y-6">
-            {questoesGeradas.map((questao, qIdx) => {
-              const respostaUsuario = respostasUsuario[questao.id];
-              const acertou = respostaUsuario === questao.respostaCorreta;
-
-              return (
-                <div
-                  key={questao.id}
-                  className={`card-ia ${
-                    mostrarResultado
-                      ? acertou
-                        ? 'border-l-4 border-l-green-500'
-                        : 'border-l-4 border-l-red-500'
-                      : ''
-                  }`}
-                >
-                  {/* Numero e Status */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="badge-ia">Questao {qIdx + 1}</span>
-                    {mostrarResultado && (
-                      <span className={acertou ? 'text-green-400' : 'text-red-400'}>
-                        {acertou ? '✅ Correta' : '❌ Incorreta'}
+                    {/* Número e Status */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="badge px-3 py-1 rounded-full" style={{
+                        background: 'var(--accent-yellow)',
+                        color: 'var(--chalkboard-dark)',
+                        fontSize: '0.875rem',
+                        fontWeight: 'bold'
+                      }}>
+                        Questão {qIdx + 1}
                       </span>
+                      {mostrarResultado && (
+                        <span style={{
+                          color: acertou ? '#10b981' : '#ef4444',
+                          fontWeight: 'bold'
+                        }}>
+                          {acertou ? '✅ Correta' : '❌ Incorreta'}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Enunciado */}
+                    <p className="mb-6 leading-relaxed" style={{
+                      color: 'var(--chalk-white)',
+                      fontSize: '1rem'
+                    }}>
+                      {questao.enunciado}
+                    </p>
+
+                    {/* Alternativas */}
+                    <div className="space-y-2">
+                      {questao.alternativas.map((alt, altIdx) => {
+                        const letra = String.fromCharCode(65 + altIdx);
+                        const selecionada = respostaUsuario === altIdx;
+                        const isCorreta = altIdx === questao.respostaCorreta;
+
+                        let estilo: React.CSSProperties = {
+                          background: 'rgba(255, 255, 255, 0.05)',
+                          border: '2px solid rgba(255, 255, 255, 0.1)',
+                          color: 'var(--chalk-white)',
+                          borderRadius: '12px',
+                          padding: '1rem',
+                          textAlign: 'left',
+                          width: '100%',
+                          cursor: mostrarResultado ? 'default' : 'pointer',
+                          transition: 'all 0.2s'
+                        };
+
+                        if (mostrarResultado) {
+                          if (isCorreta) {
+                            estilo = {
+                              ...estilo,
+                              background: 'rgba(16, 185, 129, 0.2)',
+                              border: '2px solid #10b981'
+                            };
+                          } else if (selecionada && !isCorreta) {
+                            estilo = {
+                              ...estilo,
+                              background: 'rgba(239, 68, 68, 0.2)',
+                              border: '2px solid #ef4444'
+                            };
+                          }
+                        } else if (selecionada) {
+                          estilo = {
+                            ...estilo,
+                            background: 'rgba(255, 217, 102, 0.2)',
+                            border: '2px solid var(--accent-yellow)'
+                          };
+                        }
+
+                        return (
+                          <button
+                            key={altIdx}
+                            onClick={() => selecionarResposta(questao.id, altIdx)}
+                            disabled={mostrarResultado}
+                            style={estilo}
+                            onMouseEnter={(e) => {
+                              if (!mostrarResultado) {
+                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                              }
+                            }}
+                            onMouseLeave={(e) => {
+                              if (!mostrarResultado && !selecionada) {
+                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                              }
+                            }}
+                          >
+                            <span style={{
+                              fontWeight: 'bold',
+                              color: 'var(--accent-yellow)',
+                              marginRight: '0.75rem'
+                            }}>
+                              {letra})
+                            </span>
+                            <span style={{ color: 'var(--chalk-white)' }}>{alt}</span>
+                            {mostrarResultado && isCorreta && (
+                              <span style={{ marginLeft: '0.5rem', color: '#10b981' }}>✓</span>
+                            )}
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* Explicação */}
+                    {mostrarResultado && (
+                      <div className="mt-6 p-4 rounded-xl" style={{
+                        background: 'rgba(255, 217, 102, 0.1)',
+                        border: '2px solid rgba(255, 217, 102, 0.3)'
+                      }}>
+                        <h4 className="font-bold mb-2" style={{ color: 'var(--accent-yellow)' }}>
+                          💡 Explicação
+                        </h4>
+                        <p style={{ color: 'var(--chalk-white)' }}>
+                          {questao.explicacao}
+                        </p>
+                      </div>
                     )}
                   </div>
-
-                  {/* Enunciado */}
-                  <p className="text-white mb-6 leading-relaxed">{questao.enunciado}</p>
-
-                  {/* Alternativas */}
-                  <div className="space-y-2">
-                    {questao.alternativas.map((alt, altIdx) => {
-                      const letra = String.fromCharCode(65 + altIdx);
-                      const selecionada = respostaUsuario === altIdx;
-                      const isCorreta = altIdx === questao.respostaCorreta;
-
-                      let estilo = 'bg-white/5 border-white/10 hover:bg-white/10';
-                      if (mostrarResultado) {
-                        if (isCorreta) {
-                          estilo = 'bg-green-500/20 border-green-500';
-                        } else if (selecionada && !isCorreta) {
-                          estilo = 'bg-red-500/20 border-red-500';
-                        }
-                      } else if (selecionada) {
-                        estilo = 'bg-yellow-300/20 border-yellow-300';
-                      }
-
-                      return (
-                        <button
-                          key={altIdx}
-                          onClick={() => selecionarResposta(questao.id, altIdx)}
-                          disabled={mostrarResultado}
-                          className={`w-full p-4 rounded-xl border-2 text-left transition ${estilo} disabled:cursor-default`}
-                        >
-                          <span className="font-bold text-yellow-300 mr-3">{letra})</span>
-                          <span className="text-white">{alt}</span>
-                          {mostrarResultado && isCorreta && (
-                            <span className="ml-2 text-green-400">✓</span>
-                          )}
-                        </button>
-                      );
-                    })}
-                  </div>
-
-                  {/* Explicacao */}
-                  {mostrarResultado && (
-                    <div className="mt-6 p-4 bg-yellow-300/10 border-2 border-yellow-300/30 rounded-xl">
-                      <h4 className="text-yellow-300 font-bold mb-2">💡 Explicacao</h4>
-                      <p className="text-white/90">{questao.explicacao}</p>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      <ChalkBackToTop />
+        {/* Footer */}
+        <div className="footer mt-12 text-center">
+          <button
+            onClick={() => router.push('/enem')}
+            className="btn px-6 py-3 rounded-lg transition-all hover:scale-105"
+            style={{
+              background: 'rgba(255, 255, 255, 0.1)',
+              color: 'var(--chalk-white)',
+              border: '2px solid rgba(255, 255, 255, 0.2)',
+              fontSize: '1rem'
+            }}
+          >
+            ← Voltar para Dashboard
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

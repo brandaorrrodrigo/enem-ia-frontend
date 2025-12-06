@@ -1,9 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
-import FloatingNav from '@/components/FloatingNav';
+import Link from 'next/link';
 
 interface QuestaoComentada {
   id: string;
@@ -19,7 +17,6 @@ interface QuestaoComentada {
 }
 
 export default function QuestoesComentadasPage() {
-  const router = useRouter();
   const [questoes, setQuestoes] = useState<QuestaoComentada[]>([]);
   const [filtroAno, setFiltroAno] = useState('todos');
   const [filtroDisciplina, setFiltroDisciplina] = useState('todos');
@@ -189,12 +186,12 @@ export default function QuestoesComentadasPage() {
     }
   };
 
-  const getDificuldadeColor = (dif: string): string => {
+  const getDificuldadeColor = (dif: string): { borderColor: string; color: string } => {
     switch (dif) {
-      case 'facil': return 'bg-green-500/20 text-green-300 border-green-500';
-      case 'medio': return 'bg-yellow-500/20 text-yellow-300 border-yellow-500';
-      case 'dificil': return 'bg-red-500/20 text-red-300 border-red-500';
-      default: return 'bg-gray-500/20 text-gray-300 border-gray-500';
+      case 'facil': return { borderColor: 'var(--accent-green)', color: 'var(--accent-green)' };
+      case 'medio': return { borderColor: 'var(--accent-yellow)', color: 'var(--accent-yellow)' };
+      case 'dificil': return { borderColor: 'var(--accent-pink)', color: 'var(--accent-pink)' };
+      default: return { borderColor: 'rgba(255,255,255,0.3)', color: 'var(--chalk-white)' };
     }
   };
 
@@ -216,39 +213,62 @@ export default function QuestoesComentadasPage() {
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando questoes...</p>
+      <div className="container" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>⏳</div>
+          <p style={{ color: 'var(--chalk-white)', fontSize: '1.2rem' }}>Carregando questoes...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container-ia min-h-screen py-8">
-      <FloatingNav />
+    <div className="container">
       {/* Header */}
+      <div className="header">
+        <h1>💬 Questoes Comentadas</h1>
+        <p>Questoes do ENEM com resolucao detalhada e comentarios</p>
+      </div>
 
-
-      <div className="mb-8 pt-16">
-        <h1 className="title-ia flex items-center gap-3 mb-2">
-          💬 Questoes Comentadas
-        </h1>
-        <p className="subtitle-ia mb-0">
-          Questoes do ENEM com resolucao detalhada e comentarios
-        </p>
+      {/* Stats Bar */}
+      <div className="stats-bar">
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{questoes.length}</div>
+          <div className="stat-label">Questoes</div>
+        </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{questoes.filter(q => q.visualizado).length}</div>
+          <div className="stat-label">Estudadas</div>
+        </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{questoes.filter(q => q.dificuldade === 'dificil').length}</div>
+          <div className="stat-label">Dificeis</div>
+        </div>
+        <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
+          <div className="stat-number">{new Set(questoes.map(q => q.ano)).size}</div>
+          <div className="stat-label">Anos</div>
+        </div>
       </div>
 
       {/* Filtros */}
-      <div className="card-ia mb-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="card" style={{ marginBottom: '35px' }}>
+        <h2 className="card-title">📋 Filtros</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
           <div>
-            <label className="block text-white/80 text-sm mb-2">📅 Ano</label>
+            <label style={{ display: 'block', color: 'var(--chalk-dim)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>📅 Ano</label>
             <select
               value={filtroAno}
               onChange={(e) => setFiltroAno(e.target.value)}
-              className="input-ia w-full"
+              style={{
+                background: 'rgba(255,255,255,0.08)',
+                border: '2px solid rgba(255,255,255,0.2)',
+                color: 'var(--chalk-white)',
+                padding: '14px 18px',
+                borderRadius: '10px',
+                width: '100%',
+                fontSize: '1rem',
+                cursor: 'pointer'
+              }}
             >
               {anos.map((ano) => (
                 <option key={ano} value={ano}>
@@ -259,11 +279,20 @@ export default function QuestoesComentadasPage() {
           </div>
 
           <div>
-            <label className="block text-white/80 text-sm mb-2">📚 Disciplina</label>
+            <label style={{ display: 'block', color: 'var(--chalk-dim)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>📚 Disciplina</label>
             <select
               value={filtroDisciplina}
               onChange={(e) => setFiltroDisciplina(e.target.value)}
-              className="input-ia w-full"
+              style={{
+                background: 'rgba(255,255,255,0.08)',
+                border: '2px solid rgba(255,255,255,0.2)',
+                color: 'var(--chalk-white)',
+                padding: '14px 18px',
+                borderRadius: '10px',
+                width: '100%',
+                fontSize: '1rem',
+                cursor: 'pointer'
+              }}
             >
               {disciplinas.map((d) => (
                 <option key={d.value} value={d.value}>
@@ -274,11 +303,20 @@ export default function QuestoesComentadasPage() {
           </div>
 
           <div>
-            <label className="block text-white/80 text-sm mb-2">📊 Dificuldade</label>
+            <label style={{ display: 'block', color: 'var(--chalk-dim)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>📊 Dificuldade</label>
             <select
               value={filtroDificuldade}
               onChange={(e) => setFiltroDificuldade(e.target.value)}
-              className="input-ia w-full"
+              style={{
+                background: 'rgba(255,255,255,0.08)',
+                border: '2px solid rgba(255,255,255,0.2)',
+                color: 'var(--chalk-white)',
+                padding: '14px 18px',
+                borderRadius: '10px',
+                width: '100%',
+                fontSize: '1rem',
+                cursor: 'pointer'
+              }}
             >
               {dificuldades.map((d) => (
                 <option key={d.value} value={d.value}>
@@ -290,125 +328,165 @@ export default function QuestoesComentadasPage() {
         </div>
       </div>
 
-      {/* Estatisticas */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="stat-ia">
-          <span className="stat-ia-value">{questoes.length}</span>
-          <span className="stat-ia-label">💬 Questoes</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{questoes.filter(q => q.visualizado).length}</span>
-          <span className="stat-ia-label">✅ Estudadas</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{questoes.filter(q => q.dificuldade === 'dificil').length}</span>
-          <span className="stat-ia-label">🔴 Dificeis</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{new Set(questoes.map(q => q.ano)).size}</span>
-          <span className="stat-ia-label">📅 Anos</span>
-        </div>
-      </div>
-
       {/* Lista de Questoes */}
-      {questoesFiltradas.length === 0 ? (
-        <div className="card-ia text-center py-12">
-          <div className="text-8xl mb-6">💬</div>
-          <h3 className="text-white text-xl font-bold mb-3">Nenhuma questao encontrada</h3>
-          <p className="text-white/70">Tente ajustar seus filtros.</p>
-        </div>
-      ) : (
-        <div className="space-y-4">
-          {questoesFiltradas.map((questao) => (
-            <div
-              key={questao.id}
-              className={`card-ia transition-all ${questao.visualizado ? 'border-l-4 border-l-green-500' : ''}`}
-            >
-              {/* Header da Questao */}
-              <div
-                className="flex items-center justify-between cursor-pointer"
-                onClick={() => toggleQuestao(questao.id)}
-              >
-                <div className="flex items-center gap-4">
-                  <div className={`px-3 py-1 rounded-full text-xs font-bold border ${getDificuldadeColor(questao.dificuldade)}`}>
-                    {getDificuldadeEmoji(questao.dificuldade)} {questao.dificuldade.toUpperCase()}
+      <div className="category">
+        <div className="category-title"><span>📝</span>Questoes</div>
+
+        <div className="cards-grid">
+          {questoesFiltradas.length === 0 ? (
+            <div className="chalkboard-card" style={{ textAlign: 'center', padding: '3rem', gridColumn: '1 / -1' }}>
+              <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>💬</div>
+              <h3 style={{ color: 'var(--chalk-white)', fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.75rem' }}>
+                Nenhuma questao encontrada
+              </h3>
+              <p style={{ color: 'var(--chalk-dim)' }}>Tente ajustar seus filtros.</p>
+            </div>
+          ) : (
+            questoesFiltradas.map((questao) => {
+              const colors = getDificuldadeColor(questao.dificuldade);
+              return (
+                <div
+                  key={questao.id}
+                  className="chalkboard-card"
+                  style={{
+                    borderLeft: questao.visualizado ? '4px solid var(--accent-green)' : undefined,
+                    gridColumn: '1 / -1'
+                  }}
+                >
+                  {/* Header da Questao */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      cursor: 'pointer'
+                    }}
+                    onClick={() => toggleQuestao(questao.id)}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                      <span
+                        className="badge"
+                        style={{
+                          borderColor: colors.borderColor,
+                          color: colors.color
+                        }}
+                      >
+                        {getDificuldadeEmoji(questao.dificuldade)} {questao.dificuldade.toUpperCase()}
+                      </span>
+                      <span className="badge" style={{ borderColor: 'var(--accent-blue)', color: 'var(--accent-blue)' }}>
+                        {questao.disciplina}
+                      </span>
+                      <span style={{ color: 'var(--chalk-faint)', fontSize: '0.9rem' }}>
+                        ENEM {questao.ano}
+                      </span>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                      {questao.visualizado && (
+                        <span style={{ color: 'var(--accent-green)', fontSize: '0.9rem' }}>✅ Estudada</span>
+                      )}
+                      <span style={{ fontSize: '1.5rem', color: 'var(--chalk-faint)' }}>
+                        {questaoExpandida === questao.id ? '▲' : '▼'}
+                      </span>
+                    </div>
                   </div>
-                  <span className="badge-ia">{questao.disciplina}</span>
-                  <span className="text-white/60 text-sm">ENEM {questao.ano}</span>
-                </div>
 
-                <div className="flex items-center gap-3">
-                  {questao.visualizado && (
-                    <span className="text-green-400 text-sm">✅ Estudada</span>
-                  )}
-                  <span className="text-2xl text-white/60">
-                    {questaoExpandida === questao.id ? '▲' : '▼'}
-                  </span>
-                </div>
-              </div>
+                  {/* Tema */}
+                  <p style={{ color: 'var(--accent-yellow)', fontSize: '0.95rem', marginTop: '1rem', fontWeight: '600' }}>
+                    📌 {questao.tema}
+                  </p>
 
-              {/* Tema */}
-              <p className="text-yellow-300 text-sm mt-3 font-semibold">📌 {questao.tema}</p>
+                  {/* Conteudo Expandido */}
+                  {questaoExpandida === questao.id && (
+                    <div style={{ marginTop: '1.5rem' }}>
+                      {/* Enunciado */}
+                      <div style={{
+                        background: 'rgba(255,255,255,0.05)',
+                        borderRadius: '12px',
+                        padding: '1.25rem',
+                        marginBottom: '1.5rem'
+                      }}>
+                        <p style={{ color: 'var(--chalk-white)', lineHeight: '1.6' }}>{questao.enunciado}</p>
+                      </div>
 
-              {/* Conteudo Expandido */}
-              {questaoExpandida === questao.id && (
-                <div className="mt-6 space-y-6">
-                  {/* Enunciado */}
-                  <div className="bg-white/5 rounded-xl p-4">
-                    <p className="text-white leading-relaxed">{questao.enunciado}</p>
-                  </div>
+                      {/* Alternativas */}
+                      <div style={{ marginBottom: '1.5rem' }}>
+                        {questao.alternativas.map((alt, idx) => {
+                          const letra = String.fromCharCode(65 + idx);
+                          const isCorreta = idx === questao.respostaCorreta;
+                          const mostrar = mostrarResposta === questao.id;
 
-                  {/* Alternativas */}
-                  <div className="space-y-2">
-                    {questao.alternativas.map((alt, idx) => {
-                      const letra = String.fromCharCode(65 + idx);
-                      const isCorreta = idx === questao.respostaCorreta;
-                      const mostrar = mostrarResposta === questao.id;
+                          return (
+                            <div
+                              key={idx}
+                              style={{
+                                padding: '1rem',
+                                borderRadius: '12px',
+                                border: mostrar && isCorreta
+                                  ? '2px solid var(--accent-green)'
+                                  : '2px solid rgba(255,255,255,0.1)',
+                                background: mostrar && isCorreta
+                                  ? 'rgba(80,200,120,0.15)'
+                                  : 'rgba(255,255,255,0.05)',
+                                marginBottom: '0.5rem',
+                                transition: 'all 0.3s ease'
+                              }}
+                            >
+                              <span style={{ fontWeight: 'bold', color: 'var(--accent-yellow)', marginRight: '0.75rem' }}>
+                                {letra})
+                              </span>
+                              <span style={{ color: 'var(--chalk-white)' }}>{alt}</span>
+                              {mostrar && isCorreta && (
+                                <span style={{ marginLeft: '0.5rem', color: 'var(--accent-green)' }}>✓ Correta</span>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
 
-                      return (
-                        <div
-                          key={idx}
-                          className={`p-4 rounded-xl border-2 transition ${
-                            mostrar && isCorreta
-                              ? 'bg-green-500/20 border-green-500'
-                              : 'bg-white/5 border-white/10'
-                          }`}
+                      {/* Botao Ver Resposta */}
+                      {mostrarResposta !== questao.id ? (
+                        <button
+                          onClick={() => setMostrarResposta(questao.id)}
+                          className="btn btn-yellow"
+                          style={{ width: '100%' }}
                         >
-                          <span className="font-bold text-yellow-300 mr-3">{letra})</span>
-                          <span className="text-white">{alt}</span>
-                          {mostrar && isCorreta && (
-                            <span className="ml-2 text-green-400">✓ Correta</span>
-                          )}
+                          👁️ Ver Resposta e Comentario
+                        </button>
+                      ) : (
+                        /* Comentario */
+                        <div style={{
+                          background: 'rgba(255,230,100,0.1)',
+                          border: '2px solid rgba(255,230,100,0.3)',
+                          borderRadius: '12px',
+                          padding: '1.5rem'
+                        }}>
+                          <h4 style={{
+                            color: 'var(--accent-yellow)',
+                            fontWeight: 'bold',
+                            marginBottom: '0.75rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem'
+                          }}>
+                            💡 Comentario do Professor
+                          </h4>
+                          <p style={{ color: 'var(--chalk-white)', lineHeight: '1.6' }}>{questao.comentario}</p>
                         </div>
-                      );
-                    })}
-                  </div>
-
-                  {/* Botao Ver Resposta */}
-                  {mostrarResposta !== questao.id ? (
-                    <button
-                      onClick={() => setMostrarResposta(questao.id)}
-                      className="btn-ia w-full"
-                    >
-                      👁️ Ver Resposta e Comentario
-                    </button>
-                  ) : (
-                    /* Comentario */
-                    <div className="bg-yellow-300/10 border-2 border-yellow-300/30 rounded-xl p-6">
-                      <h4 className="text-yellow-300 font-bold mb-3 flex items-center gap-2">
-                        💡 Comentario do Professor
-                      </h4>
-                      <p className="text-white leading-relaxed">{questao.comentario}</p>
+                      )}
                     </div>
                   )}
                 </div>
-              )}
-            </div>
-          ))}
+              );
+            })
+          )}
         </div>
-      )}
+      </div>
 
-      <ChalkBackToTop />
+      {/* Footer */}
+      <footer>
+        <p><Link href="/enem">← Voltar ao Painel</Link></p>
+      </footer>
     </div>
   );
 }

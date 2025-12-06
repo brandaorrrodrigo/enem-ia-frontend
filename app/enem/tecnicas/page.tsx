@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 
 interface Tecnica {
@@ -292,155 +291,390 @@ export default function TecnicasPage() {
   );
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div className="min-h-screen" style={{ background: 'var(--chalkboard-bg)', padding: '2rem 1rem' }}>
       <FloatingNav />
-      {/* Header */}
 
+      {/* Container principal */}
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="mb-8 pt-16">
+          <h1
+            className="text-4xl md:text-5xl font-bold mb-3 flex items-center gap-3"
+            style={{
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-handwriting)',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+            }}
+          >
+            🧠 Tecnicas e Metodos de Estudo
+          </h1>
+          <p
+            className="text-lg md:text-xl"
+            style={{
+              color: 'var(--chalk-dim)',
+              fontFamily: 'var(--font-handwriting)'
+            }}
+          >
+            Aprenda as melhores tecnicas para otimizar seus estudos
+          </p>
+        </div>
 
-      <div className="mb-8 pt-16">
-        <h1 className="title-ia flex items-center gap-3 mb-2">
-          🧠 Tecnicas e Metodos de Estudo
-        </h1>
-        <p className="subtitle-ia mb-0">
-          Aprenda as melhores tecnicas para otimizar seus estudos
-        </p>
-      </div>
+        {/* Filtros */}
+        <div className="card mb-8">
+          <h2
+            className="text-xl font-bold mb-4"
+            style={{
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-handwriting)'
+            }}
+          >
+            📁 Filtrar por Categoria
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {categorias.map((cat) => (
+              <button
+                key={cat.value}
+                onClick={() => setFiltroCategoria(cat.value)}
+                className={`px-4 py-2 rounded-full transition-all duration-200 font-semibold ${
+                  filtroCategoria === cat.value
+                    ? 'btn-yellow'
+                    : 'bg-white/10 hover:bg-white/20'
+                }`}
+                style={{
+                  color: filtroCategoria === cat.value ? '#1a1a1a' : 'var(--chalk-white)',
+                  fontFamily: 'var(--font-handwriting)'
+                }}
+              >
+                {cat.emoji} {cat.label}
+              </button>
+            ))}
+          </div>
+        </div>
 
-      {/* Filtros */}
-      <div className="card-ia mb-8">
-        <h2 className="text-white font-bold mb-4">📁 Filtrar por Categoria</h2>
-        <div className="flex flex-wrap gap-2">
-          {categorias.map((cat) => (
-            <button
-              key={cat.value}
-              onClick={() => setFiltroCategoria(cat.value)}
-              className={`px-4 py-2 rounded-full transition ${
-                filtroCategoria === cat.value
-                  ? 'bg-yellow-300 text-slate-900 font-bold'
-                  : 'bg-white/10 text-white hover:bg-white/20'
-              }`}
+        {/* Estatisticas */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div
+            className="card text-center"
+            style={{
+              background: 'linear-gradient(135deg, rgba(255,217,102,0.15) 0%, rgba(255,217,102,0.05) 100%)'
+            }}
+          >
+            <div
+              className="text-4xl font-bold mb-1"
+              style={{
+                color: 'var(--accent-yellow)',
+                fontFamily: 'var(--font-handwriting)'
+              }}
             >
-              {cat.emoji} {cat.label}
-            </button>
+              {tecnicas.length}
+            </div>
+            <div
+              className="text-sm"
+              style={{
+                color: 'var(--chalk-dim)',
+                fontFamily: 'var(--font-handwriting)'
+              }}
+            >
+              🧠 Tecnicas
+            </div>
+          </div>
+          <div
+            className="card text-center"
+            style={{
+              background: 'linear-gradient(135deg, rgba(34,197,94,0.15) 0%, rgba(34,197,94,0.05) 100%)'
+            }}
+          >
+            <div
+              className="text-4xl font-bold mb-1"
+              style={{
+                color: '#22c55e',
+                fontFamily: 'var(--font-handwriting)'
+              }}
+            >
+              {tecnicas.filter(t => t.dificuldade === 'facil').length}
+            </div>
+            <div
+              className="text-sm"
+              style={{
+                color: 'var(--chalk-dim)',
+                fontFamily: 'var(--font-handwriting)'
+              }}
+            >
+              🟢 Faceis
+            </div>
+          </div>
+          <div
+            className="card text-center"
+            style={{
+              background: 'linear-gradient(135deg, rgba(234,179,8,0.15) 0%, rgba(234,179,8,0.05) 100%)'
+            }}
+          >
+            <div
+              className="text-4xl font-bold mb-1"
+              style={{
+                color: '#eab308',
+                fontFamily: 'var(--font-handwriting)'
+              }}
+            >
+              {tecnicas.filter(t => t.dificuldade === 'medio').length}
+            </div>
+            <div
+              className="text-sm"
+              style={{
+                color: 'var(--chalk-dim)',
+                fontFamily: 'var(--font-handwriting)'
+              }}
+            >
+              🟡 Medias
+            </div>
+          </div>
+          <div
+            className="card text-center"
+            style={{
+              background: 'linear-gradient(135deg, rgba(239,68,68,0.15) 0%, rgba(239,68,68,0.05) 100%)'
+            }}
+          >
+            <div
+              className="text-4xl font-bold mb-1"
+              style={{
+                color: '#ef4444',
+                fontFamily: 'var(--font-handwriting)'
+              }}
+            >
+              {tecnicas.filter(t => t.dificuldade === 'avancado').length}
+            </div>
+            <div
+              className="text-sm"
+              style={{
+                color: 'var(--chalk-dim)',
+                fontFamily: 'var(--font-handwriting)'
+              }}
+            >
+              🔴 Avancadas
+            </div>
+          </div>
+        </div>
+
+        {/* Lista de Tecnicas */}
+        <div className="space-y-4">
+          {tecnicasFiltradas.map((tecnica) => (
+            <div key={tecnica.id} className="chalkboard-card">
+              {/* Header */}
+              <div
+                className="flex items-center justify-between cursor-pointer"
+                onClick={() => setTecnicaExpandida(tecnicaExpandida === tecnica.id ? null : tecnica.id)}
+              >
+                <div className="flex items-center gap-4">
+                  <div className="text-4xl">{tecnica.emoji}</div>
+                  <div>
+                    <h3
+                      className="text-xl font-bold"
+                      style={{
+                        color: 'var(--chalk-white)',
+                        fontFamily: 'var(--font-handwriting)'
+                      }}
+                    >
+                      {tecnica.nome}
+                    </h3>
+                    <div className="flex items-center gap-3 mt-2">
+                      <span className={`badge ${getDificuldadeColor(tecnica.dificuldade)}`}>
+                        {getDificuldadeLabel(tecnica.dificuldade)}
+                      </span>
+                      <span
+                        className="text-xs"
+                        style={{
+                          color: 'var(--chalk-dim)',
+                          fontFamily: 'var(--font-handwriting)'
+                        }}
+                      >
+                        ⏱️ {tecnica.tempoSugerido}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <span
+                  className="text-2xl"
+                  style={{ color: 'var(--chalk-dim)' }}
+                >
+                  {tecnicaExpandida === tecnica.id ? '▲' : '▼'}
+                </span>
+              </div>
+
+              {/* Descricao sempre visivel */}
+              <p
+                className="mt-4 leading-relaxed"
+                style={{
+                  color: 'var(--chalk-white)',
+                  opacity: 0.9,
+                  fontFamily: 'var(--font-handwriting)'
+                }}
+              >
+                {tecnica.descricao}
+              </p>
+
+              {/* Conteudo Expandido */}
+              {tecnicaExpandida === tecnica.id && (
+                <div className="mt-6 space-y-6">
+                  {/* Como Fazer */}
+                  <div
+                    className="rounded-xl p-4"
+                    style={{
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '2px solid rgba(255,217,102,0.3)'
+                    }}
+                  >
+                    <h4
+                      className="font-bold mb-3"
+                      style={{
+                        color: 'var(--accent-yellow)',
+                        fontFamily: 'var(--font-handwriting)'
+                      }}
+                    >
+                      📝 Como Fazer
+                    </h4>
+                    <ol className="space-y-2">
+                      {tecnica.comoFazer.map((passo, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-start gap-3"
+                          style={{
+                            color: 'var(--chalk-white)',
+                            fontFamily: 'var(--font-handwriting)'
+                          }}
+                        >
+                          <span
+                            className="w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0"
+                            style={{
+                              background: 'rgba(255,217,102,0.2)',
+                              color: 'var(--accent-yellow)'
+                            }}
+                          >
+                            {idx + 1}
+                          </span>
+                          <span>{passo}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+
+                  {/* Beneficios */}
+                  <div
+                    className="rounded-xl p-4"
+                    style={{
+                      background: 'rgba(34,197,94,0.1)',
+                      border: '2px solid rgba(34,197,94,0.3)'
+                    }}
+                  >
+                    <h4
+                      className="font-bold mb-3"
+                      style={{
+                        color: '#22c55e',
+                        fontFamily: 'var(--font-handwriting)'
+                      }}
+                    >
+                      ✅ Beneficios
+                    </h4>
+                    <ul className="space-y-2">
+                      {tecnica.beneficios.map((beneficio, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-start gap-2"
+                          style={{
+                            color: 'var(--chalk-white)',
+                            fontFamily: 'var(--font-handwriting)'
+                          }}
+                        >
+                          <span style={{ color: '#22c55e' }}>•</span>
+                          <span>{beneficio}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Exemplo */}
+                  {tecnica.exemplo && (
+                    <div
+                      className="rounded-xl p-4"
+                      style={{
+                        background: 'rgba(59,130,246,0.1)',
+                        border: '2px solid rgba(59,130,246,0.3)'
+                      }}
+                    >
+                      <h4
+                        className="font-bold mb-3"
+                        style={{
+                          color: '#3b82f6',
+                          fontFamily: 'var(--font-handwriting)'
+                        }}
+                      >
+                        💡 Exemplo Pratico
+                      </h4>
+                      <p
+                        style={{
+                          color: 'var(--chalk-white)',
+                          fontFamily: 'var(--font-handwriting)'
+                        }}
+                      >
+                        {tecnica.exemplo}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Botao Comecar */}
+                  <button
+                    onClick={() => router.push('/enem/cronograma')}
+                    className="btn btn-yellow w-full"
+                  >
+                    📅 Adicionar ao Cronograma
+                  </button>
+                </div>
+              )}
+            </div>
           ))}
         </div>
-      </div>
 
-      {/* Estatisticas */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="stat-ia">
-          <span className="stat-ia-value">{tecnicas.length}</span>
-          <span className="stat-ia-label">🧠 Tecnicas</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{tecnicas.filter(t => t.dificuldade === 'facil').length}</span>
-          <span className="stat-ia-label">🟢 Faceis</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{tecnicas.filter(t => t.dificuldade === 'medio').length}</span>
-          <span className="stat-ia-label">🟡 Medias</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{tecnicas.filter(t => t.dificuldade === 'avancado').length}</span>
-          <span className="stat-ia-label">🔴 Avancadas</span>
-        </div>
-      </div>
-
-      {/* Lista de Tecnicas */}
-      <div className="space-y-4">
-        {tecnicasFiltradas.map((tecnica) => (
-          <div key={tecnica.id} className="card-ia">
-            {/* Header */}
-            <div
-              className="flex items-center justify-between cursor-pointer"
-              onClick={() => setTecnicaExpandida(tecnicaExpandida === tecnica.id ? null : tecnica.id)}
-            >
-              <div className="flex items-center gap-4">
-                <div className="text-4xl">{tecnica.emoji}</div>
-                <div>
-                  <h3 className="text-white font-bold text-lg">{tecnica.nome}</h3>
-                  <div className="flex items-center gap-3 mt-1">
-                    <span className={`px-2 py-0.5 rounded text-xs border ${getDificuldadeColor(tecnica.dificuldade)}`}>
-                      {getDificuldadeLabel(tecnica.dificuldade)}
-                    </span>
-                    <span className="text-white/60 text-xs">⏱️ {tecnica.tempoSugerido}</span>
-                  </div>
-                </div>
-              </div>
-
-              <span className="text-2xl text-white/60">
-                {tecnicaExpandida === tecnica.id ? '▲' : '▼'}
-              </span>
-            </div>
-
-            {/* Descricao sempre visivel */}
-            <p className="text-white/80 mt-4 leading-relaxed">{tecnica.descricao}</p>
-
-            {/* Conteudo Expandido */}
-            {tecnicaExpandida === tecnica.id && (
-              <div className="mt-6 space-y-6">
-                {/* Como Fazer */}
-                <div className="bg-white/5 rounded-xl p-4">
-                  <h4 className="text-yellow-300 font-bold mb-3">📝 Como Fazer</h4>
-                  <ol className="space-y-2">
-                    {tecnica.comoFazer.map((passo, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-white/90">
-                        <span className="w-6 h-6 rounded-full bg-yellow-300/20 text-yellow-300 flex items-center justify-center text-sm font-bold flex-shrink-0">
-                          {idx + 1}
-                        </span>
-                        <span>{passo}</span>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-
-                {/* Beneficios */}
-                <div className="bg-green-500/10 rounded-xl p-4">
-                  <h4 className="text-green-300 font-bold mb-3">✅ Beneficios</h4>
-                  <ul className="space-y-2">
-                    {tecnica.beneficios.map((beneficio, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-white/90">
-                        <span className="text-green-400">•</span>
-                        <span>{beneficio}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Exemplo */}
-                {tecnica.exemplo && (
-                  <div className="bg-blue-500/10 rounded-xl p-4">
-                    <h4 className="text-blue-300 font-bold mb-3">💡 Exemplo Pratico</h4>
-                    <p className="text-white/90">{tecnica.exemplo}</p>
-                  </div>
-                )}
-
-                {/* Botao Comecar */}
-                <button
-                  onClick={() => router.push('/enem/cronograma')}
-                  className="btn-ia w-full"
-                >
-                  📅 Adicionar ao Cronograma
-                </button>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      {/* Dica Final */}
-      <div className="card-ia mt-8" style={{ background: 'linear-gradient(135deg, rgba(255,217,102,0.2) 0%, rgba(255,217,102,0.05) 100%)' }}>
-        <div className="text-center">
+        {/* Dica Final */}
+        <div
+          className="card mt-8 text-center"
+          style={{
+            background: 'linear-gradient(135deg, rgba(255,217,102,0.2) 0%, rgba(255,217,102,0.05) 100%)',
+            border: '3px solid var(--accent-yellow)'
+          }}
+        >
           <div className="text-6xl mb-4">💡</div>
-          <h2 className="title-ia-sm mb-2">Dica de Ouro</h2>
-          <p className="text-white/80 max-w-2xl mx-auto">
+          <h2
+            className="text-2xl font-bold mb-3"
+            style={{
+              color: 'var(--accent-yellow)',
+              fontFamily: 'var(--font-handwriting)'
+            }}
+          >
+            Dica de Ouro
+          </h2>
+          <p
+            className="max-w-2xl mx-auto leading-relaxed"
+            style={{
+              color: 'var(--chalk-white)',
+              opacity: 0.9,
+              fontFamily: 'var(--font-handwriting)'
+            }}
+          >
             Nao existe uma tecnica perfeita para todos. Experimente diferentes metodos e descubra quais funcionam melhor para voce.
             O mais importante e a consistencia: estudar um pouco todos os dias e melhor que estudar muito em um so dia!
           </p>
         </div>
-      </div>
 
-      <ChalkBackToTop />
+        {/* Footer */}
+        <div className="footer">
+          <button
+            onClick={() => router.push('/enem')}
+            className="btn"
+          >
+            ← Voltar para o Dashboard
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

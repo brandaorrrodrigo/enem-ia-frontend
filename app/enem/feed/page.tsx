@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 import FloatingNav from '@/components/FloatingNav';
 import ActivityFeed from '@/components/social/ActivityFeed';
 import ProvocacaoCard from '@/components/social/ProvocacaoCard';
@@ -50,183 +49,500 @@ export default function FeedSocialPage() {
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando feed...</p>
+      <div style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'var(--chalkboard-bg)',
+        color: 'var(--chalk-white)'
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            width: '48px',
+            height: '48px',
+            border: '4px solid var(--accent-yellow)',
+            borderTopColor: 'transparent',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite',
+            margin: '0 auto 1.5rem'
+          }}></div>
+          <p style={{ fontSize: '1.125rem', color: 'var(--chalk-dim)' }}>Carregando feed...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div style={{
+      minHeight: '100vh',
+      background: 'var(--chalkboard-bg)',
+      padding: '2rem 1rem'
+    }}>
       <FloatingNav />
 
-      {/* Header */}
-      <div className="mb-6 pt-16">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div>
-            <h1 className="title-ia flex items-center gap-3 mb-2">
-              📱 Feed Social
-            </h1>
-            <p className="subtitle-ia mb-0">
-              Veja o que esta rolando na comunidade ENEM-IA!
-            </p>
-          </div>
+      {/* Container principal */}
+      <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
 
-          {/* Stats rapidos */}
-          <div className="flex items-center gap-4">
-            <div className="stat-ia">
-              <span className="stat-ia-value text-green-400">+{userStats.fpHoje}</span>
-              <span className="stat-ia-label">FP Hoje</span>
-            </div>
-            <div className="stat-ia">
-              <span className="stat-ia-value">#{userStats.posicaoRanking}</span>
-              <span className="stat-ia-label">Ranking</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Provocacao do dia */}
-      <div className="mb-6">
-        <ProvocacaoCard userName={userStats.nome} userFP={userStats.pontosFP} />
-      </div>
-
-      {/* Layout principal */}
-      <div className="grid lg:grid-cols-3 gap-6">
-        {/* Feed principal */}
-        <div className="lg:col-span-2">
-          {/* Tabs de filtro */}
-          <div className="flex gap-2 mb-4">
-            <button
-              onClick={() => setFeedType('global')}
-              className={`px-4 py-2 rounded-xl font-semibold transition ${
-                feedType === 'global'
-                  ? 'bg-yellow-400 text-slate-900'
-                  : 'bg-white/10 text-white/70 hover:bg-white/20'
-              }`}
-            >
-              🌍 Global
-            </button>
-            <button
-              onClick={() => setFeedType('amigos')}
-              className={`px-4 py-2 rounded-xl font-semibold transition ${
-                feedType === 'amigos'
-                  ? 'bg-yellow-400 text-slate-900'
-                  : 'bg-white/10 text-white/70 hover:bg-white/20'
-              }`}
-            >
-              👥 Amigos
-            </button>
-          </div>
-
-          {/* Feed de atividades */}
-          <ActivityFeed feedType={feedType} limit={15} />
-
-          {/* Carregar mais */}
-          <button className="w-full btn-ia-secondary mt-4 py-3">
-            📥 Carregar mais atividades
-          </button>
-        </div>
-
-        {/* Sidebar */}
-        <div className="space-y-6">
-          {/* Card de Liga */}
-          <LeagueCard userFP={userStats.pontosFP} userName={userStats.nome} />
-
-          {/* Estatisticas da semana */}
-          <div className="card-ia p-6">
-            <h3 className="text-white font-bold mb-4 flex items-center gap-2">
-              📊 Sua Semana
-            </h3>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <span className="text-white/70">FP ganho</span>
-                <span className="text-yellow-300 font-bold">+{userStats.fpSemana}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-white/70">Streak atual</span>
-                <span className="text-orange-400 font-bold">{userStats.streak}🔥</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-white/70">Posicao</span>
-                <span className="text-white font-bold">#{userStats.posicaoRanking}</span>
-              </div>
-              <div className="divider-ia"></div>
-              <div className="flex justify-between items-center">
-                <span className="text-white/70">Seguidores</span>
-                <span className="text-white">{userStats.seguidores}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-white/70">Seguindo</span>
-                <span className="text-white">{userStats.seguindo}</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Sugestoes de usuarios */}
-          <div className="card-ia p-6">
-            <h3 className="text-white font-bold mb-4 flex items-center gap-2">
-              👥 Quem Seguir
-            </h3>
-            <div className="space-y-3">
-              {[
-                { nome: 'Maria Silva', fp: 3200, liga: 'Ouro' },
-                { nome: 'Pedro Costa', fp: 2890, liga: 'Ouro' },
-                { nome: 'Julia Santos', fp: 4100, liga: 'Platina' },
-              ].map((user, idx) => (
-                <div key={idx} className="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold">
-                    {user.nome.charAt(0)}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-white font-semibold text-sm truncate">{user.nome}</p>
-                    <p className="text-white/50 text-xs">{user.fp} FP</p>
-                  </div>
-                  <button className="px-3 py-1 bg-yellow-400 text-slate-900 rounded-lg text-xs font-semibold hover:bg-yellow-300 transition">
-                    Seguir
-                  </button>
-                </div>
-              ))}
-            </div>
-            <button
-              onClick={() => router.push('/enem/amigos')}
-              className="w-full btn-ia-secondary mt-4 text-sm py-2"
-            >
-              Ver mais sugestoes
-            </button>
-          </div>
-
-          {/* CTA para simulado */}
-          <div className="card-ia p-6 bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border-2 border-yellow-400/30">
-            <div className="text-center">
-              <span className="text-4xl mb-3 block">🚀</span>
-              <h3 className="text-white font-bold mb-2">Bora ganhar FP?</h3>
-              <p className="text-white/70 text-sm mb-4">
-                Faca um simulado e apareca no feed!
+        {/* Header */}
+        <div style={{ marginBottom: '2rem', paddingTop: '4rem' }}>
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1rem'
+          }}>
+            <div>
+              <h1 style={{
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'var(--chalk-white)',
+                marginBottom: '0.5rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem',
+                fontFamily: 'var(--font-handwriting)'
+              }}>
+                📱 Feed Social
+              </h1>
+              <p style={{
+                fontSize: '1.125rem',
+                color: 'var(--chalk-dim)',
+                margin: 0
+              }}>
+                Veja o que esta rolando na comunidade ENEM-IA!
               </p>
+            </div>
+
+            {/* Stats rapidos */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '1.5rem',
+              flexWrap: 'wrap'
+            }}>
+              <div style={{
+                textAlign: 'center',
+                padding: '0.75rem 1.25rem',
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '0.75rem',
+                border: '2px solid var(--chalk-line)'
+              }}>
+                <div style={{
+                  fontSize: '1.5rem',
+                  fontWeight: 'bold',
+                  color: '#4ade80',
+                  marginBottom: '0.25rem'
+                }}>
+                  +{userStats.fpHoje}
+                </div>
+                <div style={{
+                  fontSize: '0.75rem',
+                  color: 'var(--chalk-dim)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em'
+                }}>
+                  FP Hoje
+                </div>
+              </div>
+              <div style={{
+                textAlign: 'center',
+                padding: '0.75rem 1.25rem',
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '0.75rem',
+                border: '2px solid var(--chalk-line)'
+              }}>
+                <div style={{
+                  fontSize: '1.5rem',
+                  fontWeight: 'bold',
+                  color: 'var(--accent-yellow)',
+                  marginBottom: '0.25rem'
+                }}>
+                  #{userStats.posicaoRanking}
+                </div>
+                <div style={{
+                  fontSize: '0.75rem',
+                  color: 'var(--chalk-dim)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em'
+                }}>
+                  Ranking
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Provocacao do dia */}
+        <div style={{ marginBottom: '2rem' }}>
+          <ProvocacaoCard userName={userStats.nome} userFP={userStats.pontosFP} />
+        </div>
+
+        {/* Layout principal */}
+        <div className="feed-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '2rem'
+        }}>
+            {/* Feed principal */}
+            <div>
+              {/* Tabs de filtro */}
+              <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>
+                <button
+                  onClick={() => setFeedType('global')}
+                  className="btn"
+                  style={{
+                    padding: '0.75rem 1.5rem',
+                    borderRadius: '0.75rem',
+                    fontWeight: '600',
+                    transition: 'all 0.2s',
+                    background: feedType === 'global' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+                    color: feedType === 'global' ? 'var(--chalkboard-bg)' : 'var(--chalk-dim)',
+                    border: feedType === 'global' ? '2px solid var(--accent-yellow)' : '2px solid var(--chalk-line)',
+                    cursor: 'pointer'
+                  }}
+                >
+                  🌍 Global
+                </button>
+                <button
+                  onClick={() => setFeedType('amigos')}
+                  className="btn"
+                  style={{
+                    padding: '0.75rem 1.5rem',
+                    borderRadius: '0.75rem',
+                    fontWeight: '600',
+                    transition: 'all 0.2s',
+                    background: feedType === 'amigos' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+                    color: feedType === 'amigos' ? 'var(--chalkboard-bg)' : 'var(--chalk-dim)',
+                    border: feedType === 'amigos' ? '2px solid var(--accent-yellow)' : '2px solid var(--chalk-line)',
+                    cursor: 'pointer'
+                  }}
+                >
+                  👥 Amigos
+                </button>
+              </div>
+
+              {/* Feed de atividades */}
+              <ActivityFeed feedType={feedType} limit={15} />
+
+              {/* Carregar mais */}
               <button
-                onClick={() => router.push('/enem/simulado')}
-                className="btn-ia w-full py-3"
+                className="btn"
+                style={{
+                  width: '100%',
+                  marginTop: '1.5rem',
+                  padding: '1rem',
+                  background: 'rgba(255, 255, 255, 0.1)',
+                  color: 'var(--chalk-white)',
+                  border: '2px solid var(--chalk-line)',
+                  borderRadius: '0.75rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                }}
               >
-                Fazer Simulado
+                📥 Carregar mais atividades
               </button>
             </div>
-          </div>
+
+            {/* Sidebar */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              {/* Card de Liga */}
+              <LeagueCard userFP={userStats.pontosFP} userName={userStats.nome} />
+
+              {/* Estatisticas da semana */}
+              <div className="card" style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                border: '3px solid var(--chalk-line)',
+                borderRadius: '1rem',
+                padding: '1.5rem',
+                position: 'relative'
+              }}>
+                <h3 style={{
+                  color: 'var(--chalk-white)',
+                  fontWeight: 'bold',
+                  marginBottom: '1.5rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  fontSize: '1.25rem'
+                }}>
+                  📊 Sua Semana
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ color: 'var(--chalk-dim)' }}>FP ganho</span>
+                    <span style={{ color: 'var(--accent-yellow)', fontWeight: 'bold' }}>+{userStats.fpSemana}</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ color: 'var(--chalk-dim)' }}>Streak atual</span>
+                    <span style={{ color: '#fb923c', fontWeight: 'bold' }}>{userStats.streak}🔥</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ color: 'var(--chalk-dim)' }}>Posicao</span>
+                    <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>#{userStats.posicaoRanking}</span>
+                  </div>
+                  <div style={{
+                    height: '2px',
+                    background: 'var(--chalk-line)',
+                    margin: '0.5rem 0'
+                  }}></div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ color: 'var(--chalk-dim)' }}>Seguidores</span>
+                    <span style={{ color: 'var(--chalk-white)' }}>{userStats.seguidores}</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ color: 'var(--chalk-dim)' }}>Seguindo</span>
+                    <span style={{ color: 'var(--chalk-white)' }}>{userStats.seguindo}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sugestoes de usuarios */}
+              <div className="card" style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                border: '3px solid var(--chalk-line)',
+                borderRadius: '1rem',
+                padding: '1.5rem',
+                position: 'relative'
+              }}>
+                <h3 style={{
+                  color: 'var(--chalk-white)',
+                  fontWeight: 'bold',
+                  marginBottom: '1.5rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  fontSize: '1.25rem'
+                }}>
+                  👥 Quem Seguir
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  {[
+                    { nome: 'Maria Silva', fp: 3200, liga: 'Ouro' },
+                    { nome: 'Pedro Costa', fp: 2890, liga: 'Ouro' },
+                    { nome: 'Julia Santos', fp: 4100, liga: 'Platina' },
+                  ].map((user, idx) => (
+                    <div key={idx} style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem',
+                      padding: '0.75rem',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      borderRadius: '0.75rem',
+                      border: '2px solid var(--chalk-line)'
+                    }}>
+                      <div style={{
+                        width: '40px',
+                        height: '40px',
+                        borderRadius: '50%',
+                        background: 'linear-gradient(135deg, #a855f7 0%, #ec4899 100%)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: 'white',
+                        fontWeight: 'bold',
+                        flexShrink: 0
+                      }}>
+                        {user.nome.charAt(0)}
+                      </div>
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <p style={{
+                          color: 'var(--chalk-white)',
+                          fontWeight: '600',
+                          fontSize: '0.875rem',
+                          margin: 0,
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap'
+                        }}>
+                          {user.nome}
+                        </p>
+                        <p style={{
+                          color: 'var(--chalk-dim)',
+                          fontSize: '0.75rem',
+                          margin: 0
+                        }}>
+                          {user.fp} FP
+                        </p>
+                      </div>
+                      <button
+                        className="btn btn-yellow"
+                        style={{
+                          padding: '0.375rem 0.75rem',
+                          background: 'var(--accent-yellow)',
+                          color: 'var(--chalkboard-bg)',
+                          borderRadius: '0.5rem',
+                          fontSize: '0.75rem',
+                          fontWeight: '600',
+                          border: 'none',
+                          cursor: 'pointer',
+                          transition: 'all 0.2s',
+                          flexShrink: 0
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#fbbf24';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'var(--accent-yellow)';
+                        }}
+                      >
+                        Seguir
+                      </button>
+                    </div>
+                  ))}
+                </div>
+                <button
+                  onClick={() => router.push('/enem/amigos')}
+                  className="btn"
+                  style={{
+                    width: '100%',
+                    marginTop: '1rem',
+                    padding: '0.625rem',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    color: 'var(--chalk-white)',
+                    border: '2px solid var(--chalk-line)',
+                    borderRadius: '0.5rem',
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                  }}
+                >
+                  Ver mais sugestoes
+                </button>
+              </div>
+
+              {/* CTA para simulado */}
+              <div className="card" style={{
+                background: 'linear-gradient(135deg, rgba(234, 179, 8, 0.2) 0%, rgba(249, 115, 22, 0.2) 100%)',
+                border: '3px solid rgba(234, 179, 8, 0.4)',
+                borderRadius: '1rem',
+                padding: '1.5rem',
+                position: 'relative'
+              }}>
+                <div style={{ textAlign: 'center' }}>
+                  <span style={{ fontSize: '3rem', marginBottom: '1rem', display: 'block' }}>🚀</span>
+                  <h3 style={{
+                    color: 'var(--chalk-white)',
+                    fontWeight: 'bold',
+                    marginBottom: '0.5rem',
+                    fontSize: '1.25rem'
+                  }}>
+                    Bora ganhar FP?
+                  </h3>
+                  <p style={{
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.875rem',
+                    marginBottom: '1rem'
+                  }}>
+                    Faca um simulado e apareca no feed!
+                  </p>
+                  <button
+                    onClick={() => router.push('/enem/simulado')}
+                    className="btn btn-yellow"
+                    style={{
+                      width: '100%',
+                      padding: '1rem',
+                      background: 'var(--accent-yellow)',
+                      color: 'var(--chalkboard-bg)',
+                      border: 'none',
+                      borderRadius: '0.75rem',
+                      fontWeight: 'bold',
+                      fontSize: '1rem',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = '#fbbf24';
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = 'var(--accent-yellow)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    Fazer Simulado
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        {/* Mensagem motivacional */}
+        <div className="card" style={{
+          background: 'linear-gradient(90deg, rgba(168, 85, 247, 0.2) 0%, rgba(236, 72, 153, 0.2) 100%)',
+          border: '3px solid rgba(168, 85, 247, 0.4)',
+          borderRadius: '1rem',
+          padding: '1.5rem',
+          marginTop: '2rem',
+          textAlign: 'center',
+          position: 'relative'
+        }}>
+          <p style={{
+            color: 'var(--chalk-white)',
+            fontSize: '1.125rem',
+            margin: 0
+          }}>
+            🔥 <span style={{ fontWeight: 'bold', color: 'var(--accent-yellow)' }}>{userStats.nome}</span>, o feed esta fervendo hoje!
+            Nao deixe seus amigos te ultrapassarem!
+          </p>
+        </div>
+
+        {/* Footer com link de volta */}
+        <div className="footer" style={{
+          marginTop: '3rem',
+          paddingTop: '2rem',
+          borderTop: '2px solid var(--chalk-line)',
+          textAlign: 'center'
+        }}>
+          <button
+            onClick={() => router.push('/enem')}
+            className="btn"
+            style={{
+              padding: '0.75rem 1.5rem',
+              background: 'rgba(255, 255, 255, 0.1)',
+              color: 'var(--chalk-white)',
+              border: '2px solid var(--chalk-line)',
+              borderRadius: '0.75rem',
+              fontWeight: '600',
+              cursor: 'pointer',
+              transition: 'all 0.2s',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+            }}
+          >
+            ← Voltar ao Dashboard
+          </button>
         </div>
       </div>
 
-      {/* Mensagem motivacional */}
-      <div className="card-ia p-6 mt-6 text-center bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-2 border-purple-400/30">
-        <p className="text-white text-lg">
-          🔥 <span className="font-bold text-yellow-300">{userStats.nome}</span>, o feed esta fervendo hoje!
-          Nao deixe seus amigos te ultrapassarem!
-        </p>
-      </div>
-
-      <ChalkBackToTop />
+      {/* Animacao de spin para loading */}
+      <style jsx global>{`
+        @keyframes spin {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      `}</style>
     </div>
   );
 }

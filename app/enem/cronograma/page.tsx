@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
+import Link from 'next/link';
 import FloatingNav from '@/components/FloatingNav';
 
 interface StudyEvent {
@@ -23,7 +22,6 @@ interface WeekDay {
 }
 
 export default function CronogramaPage() {
-  const router = useRouter();
   const [eventos, setEventos] = useState<StudyEvent[]>([]);
   const [semanaSelecionada, setSemanaSelecionada] = useState<WeekDay[]>([]);
   const [loading, setLoading] = useState(true);
@@ -170,97 +168,128 @@ export default function CronogramaPage() {
 
   if (loading) {
     return (
-      <div className="container-ia min-h-screen flex items-center justify-center">
+      <div className="container min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="spinner-ia mx-auto mb-6"></div>
-          <p className="title-ia-sm">Carregando cronograma...</p>
+          <div
+            className="w-16 h-16 border-4 border-t-transparent rounded-full animate-spin mx-auto mb-6"
+            style={{ borderColor: 'var(--accent-yellow)', borderTopColor: 'transparent' }}
+          ></div>
+          <p style={{ color: 'var(--chalk-white)', fontSize: '1.25rem', fontWeight: 'bold' }}>
+            Carregando cronograma...
+          </p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container-ia min-h-screen py-8">
+    <div className="container">
       <FloatingNav />
+
       {/* Header */}
+      <div className="header">
+        <h1>📅 Cronograma de Estudos</h1>
+        <p>Organize sua rotina de estudos para o ENEM</p>
+      </div>
 
+      {/* Botão Adicionar */}
+      <div className="mb-8 flex justify-end">
+        <button
+          onClick={() => setShowModal(true)}
+          className="btn btn-yellow"
+          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+        >
+          <span style={{ fontSize: '1.25rem' }}>➕</span>
+          Adicionar Estudo
+        </button>
+      </div>
 
-      <div className="mb-8 pt-16">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div>
-            <h1 className="title-ia flex items-center gap-3 mb-2">
-              📅 Cronograma de Estudos
-            </h1>
-            <p className="subtitle-ia mb-0">
-              Organize sua rotina de estudos para o ENEM
-            </p>
-          </div>
-
-          <button
-            onClick={() => setShowModal(true)}
-            className="btn-ia flex items-center gap-2"
-          >
-            <span className="text-xl">➕</span>
-            Adicionar Estudo
-          </button>
+      {/* Estatísticas da Semana */}
+      <div className="stats-bar">
+        <div className="stat-item">
+          <div className="stat-number">{eventos.length}</div>
+          <div className="stat-label">📚 Total Planejado</div>
+        </div>
+        <div className="stat-item">
+          <div className="stat-number">{eventos.filter(e => e.concluido).length}</div>
+          <div className="stat-label">✅ Concluídos</div>
+        </div>
+        <div className="stat-item">
+          <div className="stat-number">{eventos.filter(e => !e.concluido).length}</div>
+          <div className="stat-label">⏳ Pendentes</div>
+        </div>
+        <div className="stat-item">
+          <div className="stat-number">{Math.round(eventos.reduce((acc, e) => acc + e.duracao, 0) / 60)}h</div>
+          <div className="stat-label">⏱️ Horas Totais</div>
         </div>
       </div>
 
-      {/* Estatisticas da Semana */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="stat-ia">
-          <span className="stat-ia-value">{eventos.length}</span>
-          <span className="stat-ia-label">📚 Total Planejado</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{eventos.filter(e => e.concluido).length}</span>
-          <span className="stat-ia-label">✅ Concluidos</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{eventos.filter(e => !e.concluido).length}</span>
-          <span className="stat-ia-label">⏳ Pendentes</span>
-        </div>
-        <div className="stat-ia">
-          <span className="stat-ia-value">{Math.round(eventos.reduce((acc, e) => acc + e.duracao, 0) / 60)}h</span>
-          <span className="stat-ia-label">⏱️ Horas Totais</span>
-        </div>
-      </div>
+      {/* Calendário Semanal */}
+      <div className="category">
+        <h2 className="category-title">🗓️ Esta Semana</h2>
 
-      {/* Calendario Semanal */}
-      <div className="card-ia mb-8">
-        <h2 className="title-ia-sm mb-6">🗓️ Esta Semana</h2>
-
-        <div className="grid grid-cols-7 gap-2 md:gap-4">
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(7, 1fr)',
+          gap: '1rem',
+          marginTop: '1.5rem'
+        }}>
           {semanaSelecionada.map((dia) => (
             <div
               key={dia.abrev}
-              className={`rounded-xl p-2 md:p-4 transition-all ${
-                isHoje(dia.data)
-                  ? 'bg-yellow-300/20 border-2 border-yellow-300'
-                  : 'bg-white/5 border-2 border-white/10'
-              }`}
+              style={{
+                background: isHoje(dia.data)
+                  ? 'rgba(255, 223, 0, 0.15)'
+                  : 'rgba(255, 255, 255, 0.03)',
+                border: isHoje(dia.data)
+                  ? '3px solid var(--accent-yellow)'
+                  : '2px solid rgba(255, 255, 255, 0.1)',
+                borderRadius: '12px',
+                padding: '1rem',
+                transition: 'all 0.3s ease'
+              }}
             >
-              <div className="text-center mb-3">
-                <p className={`text-xs md:text-sm font-bold ${isHoje(dia.data) ? 'text-yellow-300' : 'text-white/60'}`}>
+              <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
+                <p style={{
+                  fontSize: '0.875rem',
+                  fontWeight: 'bold',
+                  color: isHoje(dia.data) ? 'var(--accent-yellow)' : 'var(--chalk-dim)',
+                  marginBottom: '0.25rem'
+                }}>
                   {dia.abrev}
                 </p>
-                <p className={`text-lg md:text-2xl font-bold ${isHoje(dia.data) ? 'text-yellow-300' : 'text-white'}`}>
+                <p style={{
+                  fontSize: '1.5rem',
+                  fontWeight: 'bold',
+                  color: isHoje(dia.data) ? 'var(--accent-yellow)' : 'var(--chalk-white)'
+                }}>
                   {dia.data.getDate()}
                 </p>
               </div>
 
-              <div className="space-y-1">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 {getEventosDia(dia.data).map((evento) => (
                   <div
                     key={evento.id}
-                    className={`${evento.cor} rounded p-1 md:p-2 text-xs cursor-pointer hover:opacity-80 transition ${
-                      evento.concluido ? 'opacity-50 line-through' : ''
-                    }`}
+                    className={evento.cor}
+                    style={{
+                      borderRadius: '6px',
+                      padding: '0.5rem',
+                      fontSize: '0.75rem',
+                      cursor: 'pointer',
+                      opacity: evento.concluido ? 0.5 : 1,
+                      textDecoration: evento.concluido ? 'line-through' : 'none',
+                      transition: 'opacity 0.2s ease'
+                    }}
                     onClick={() => toggleConcluido(evento.id)}
                     title={`${evento.titulo} - ${evento.horario}`}
                   >
-                    <span className="hidden md:inline">{evento.horario}</span>
-                    <span className="block truncate text-white font-semibold">{evento.titulo.substring(0, 10)}...</span>
+                    <span style={{ display: 'block', color: 'white', fontWeight: 'bold' }}>
+                      {evento.horario}
+                    </span>
+                    <span style={{ display: 'block', color: 'white', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                      {evento.titulo.substring(0, 15)}...
+                    </span>
                   </div>
                 ))}
               </div>
@@ -270,46 +299,95 @@ export default function CronogramaPage() {
       </div>
 
       {/* Lista de Eventos */}
-      <div className="card-ia">
-        <h2 className="title-ia-sm mb-6">📋 Todos os Estudos Planejados</h2>
+      <div className="category" style={{ marginTop: '2rem' }}>
+        <h2 className="category-title">📋 Todos os Estudos Planejados</h2>
 
         {eventos.length === 0 ? (
-          <div className="text-center py-12">
-            <div className="text-8xl mb-6">📅</div>
-            <h3 className="text-white text-xl font-bold mb-3">Nenhum estudo planejado</h3>
-            <p className="text-white/70 mb-6">Comece organizando sua rotina de estudos!</p>
-            <button onClick={() => setShowModal(true)} className="btn-ia">
+          <div style={{
+            textAlign: 'center',
+            padding: '3rem 1rem',
+            marginTop: '1.5rem'
+          }}>
+            <div style={{ fontSize: '5rem', marginBottom: '1.5rem' }}>📅</div>
+            <h3 style={{
+              color: 'var(--chalk-white)',
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              marginBottom: '1rem'
+            }}>
+              Nenhum estudo planejado
+            </h3>
+            <p style={{
+              color: 'var(--chalk-dim)',
+              marginBottom: '1.5rem'
+            }}>
+              Comece organizando sua rotina de estudos!
+            </p>
+            <button onClick={() => setShowModal(true)} className="btn btn-yellow">
               ➕ Adicionar Primeiro Estudo
             </button>
           </div>
         ) : (
-          <div className="space-y-3">
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1rem',
+            marginTop: '1.5rem'
+          }}>
             {eventos.sort((a, b) => new Date(a.data).getTime() - new Date(b.data).getTime()).map((evento) => {
               const disciplinaInfo = disciplinas.find(d => d.value === evento.disciplina);
               return (
                 <div
                   key={evento.id}
-                  className={`card-ia-sm flex justify-between items-center transition ${
-                    evento.concluido ? 'opacity-60' : ''
-                  }`}
+                  className="chalkboard-card"
+                  style={{
+                    opacity: evento.concluido ? 0.6 : 1,
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    gap: '1rem'
+                  }}
                 >
-                  <div className="flex items-center gap-4">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                     <button
                       onClick={() => toggleConcluido(evento.id)}
-                      className={`w-8 h-8 rounded-full border-2 flex items-center justify-center transition ${
-                        evento.concluido
-                          ? 'bg-green-500 border-green-500 text-white'
-                          : 'border-white/30 hover:border-yellow-300'
-                      }`}
+                      style={{
+                        width: '2rem',
+                        height: '2rem',
+                        borderRadius: '50%',
+                        border: evento.concluido
+                          ? '2px solid var(--accent-green)'
+                          : '2px solid rgba(255, 255, 255, 0.3)',
+                        background: evento.concluido ? 'var(--accent-green)' : 'transparent',
+                        color: evento.concluido ? 'white' : 'transparent',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease',
+                        fontSize: '1rem',
+                        fontWeight: 'bold'
+                      }}
                     >
                       {evento.concluido && '✓'}
                     </button>
 
                     <div>
-                      <p className={`text-white font-bold ${evento.concluido ? 'line-through' : ''}`}>
+                      <p style={{
+                        color: 'var(--chalk-white)',
+                        fontWeight: 'bold',
+                        textDecoration: evento.concluido ? 'line-through' : 'none',
+                        marginBottom: '0.25rem'
+                      }}>
                         {evento.titulo}
                       </p>
-                      <p className="text-white/60 text-sm flex items-center gap-2">
+                      <p style={{
+                        color: 'var(--chalk-dim)',
+                        fontSize: '0.875rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem'
+                      }}>
                         <span>{disciplinaInfo?.emoji}</span>
                         <span>{evento.disciplina}</span>
                         <span>•</span>
@@ -318,17 +396,41 @@ export default function CronogramaPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-4">
-                    <div className="text-right">
-                      <p className="text-yellow-300 font-bold">{evento.horario}</p>
-                      <p className="text-white/60 text-xs">
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '1rem',
+                    flexShrink: 0
+                  }}>
+                    <div style={{ textAlign: 'right' }}>
+                      <p style={{
+                        color: 'var(--accent-yellow)',
+                        fontWeight: 'bold',
+                        marginBottom: '0.25rem'
+                      }}>
+                        {evento.horario}
+                      </p>
+                      <p style={{
+                        color: 'var(--chalk-dim)',
+                        fontSize: '0.75rem'
+                      }}>
                         {new Date(evento.data + 'T00:00:00').toLocaleDateString('pt-BR')}
                       </p>
                     </div>
 
                     <button
                       onClick={() => removerEvento(evento.id)}
-                      className="text-red-400 hover:text-red-300 transition p-2"
+                      style={{
+                        color: '#ff6b6b',
+                        background: 'none',
+                        border: 'none',
+                        cursor: 'pointer',
+                        padding: '0.5rem',
+                        fontSize: '1.25rem',
+                        transition: 'transform 0.2s ease'
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+                      onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                     >
                       🗑️
                     </button>
@@ -342,94 +444,214 @@ export default function CronogramaPage() {
 
       {/* Modal Adicionar Evento */}
       {showModal && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
-          <div className="card-ia max-w-md w-full">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="title-ia-sm">➕ Novo Estudo</h2>
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          background: 'rgba(0, 0, 0, 0.8)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 50,
+          padding: '1rem'
+        }}>
+          <div className="card" style={{ maxWidth: '28rem', width: '100%' }}>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginBottom: '1.5rem'
+            }}>
+              <h2 className="card-title">➕ Novo Estudo</h2>
               <button
                 onClick={() => setShowModal(false)}
-                className="text-white/60 hover:text-white text-2xl"
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--chalk-dim)',
+                  fontSize: '1.5rem',
+                  cursor: 'pointer',
+                  transition: 'color 0.2s ease'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--chalk-white)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--chalk-dim)'}
               >
                 ✕
               </button>
             </div>
 
-            <div className="space-y-4">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div>
-                <label className="block text-white/80 text-sm mb-2">Titulo</label>
+                <label style={{
+                  display: 'block',
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  marginBottom: '0.5rem'
+                }}>
+                  Título
+                </label>
                 <input
                   type="text"
                   value={novoEvento.titulo}
                   onChange={(e) => setNovoEvento({ ...novoEvento, titulo: e.target.value })}
-                  className="input-ia w-full"
-                  placeholder="Ex: Revisao de Funcoes"
+                  placeholder="Ex: Revisão de Funções"
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '2px solid rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1rem',
+                    outline: 'none',
+                    transition: 'border-color 0.2s ease'
+                  }}
+                  onFocus={(e) => e.currentTarget.style.borderColor = 'var(--accent-yellow)'}
+                  onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)'}
                 />
               </div>
 
               <div>
-                <label className="block text-white/80 text-sm mb-2">Disciplina</label>
+                <label style={{
+                  display: 'block',
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  marginBottom: '0.5rem'
+                }}>
+                  Disciplina
+                </label>
                 <select
                   value={novoEvento.disciplina}
                   onChange={(e) => setNovoEvento({ ...novoEvento, disciplina: e.target.value })}
-                  className="input-ia w-full"
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '2px solid rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1rem',
+                    outline: 'none',
+                    cursor: 'pointer'
+                  }}
                 >
                   {disciplinas.map((d) => (
-                    <option key={d.value} value={d.value}>
+                    <option key={d.value} value={d.value} style={{ background: '#1a1a1a' }}>
                       {d.emoji} {d.label}
                     </option>
                   ))}
                 </select>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div>
-                  <label className="block text-white/80 text-sm mb-2">Data</label>
+                  <label style={{
+                    display: 'block',
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.875rem',
+                    marginBottom: '0.5rem'
+                  }}>
+                    Data
+                  </label>
                   <input
                     type="date"
                     value={novoEvento.data}
                     onChange={(e) => setNovoEvento({ ...novoEvento, data: e.target.value })}
-                    className="input-ia w-full"
+                    style={{
+                      width: '100%',
+                      padding: '0.75rem',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '2px solid rgba(255, 255, 255, 0.1)',
+                      borderRadius: '8px',
+                      color: 'var(--chalk-white)',
+                      fontSize: '1rem',
+                      outline: 'none',
+                      colorScheme: 'dark'
+                    }}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-white/80 text-sm mb-2">Horario</label>
+                  <label style={{
+                    display: 'block',
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.875rem',
+                    marginBottom: '0.5rem'
+                  }}>
+                    Horário
+                  </label>
                   <input
                     type="time"
                     value={novoEvento.horario}
                     onChange={(e) => setNovoEvento({ ...novoEvento, horario: e.target.value })}
-                    className="input-ia w-full"
+                    style={{
+                      width: '100%',
+                      padding: '0.75rem',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '2px solid rgba(255, 255, 255, 0.1)',
+                      borderRadius: '8px',
+                      color: 'var(--chalk-white)',
+                      fontSize: '1rem',
+                      outline: 'none',
+                      colorScheme: 'dark'
+                    }}
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-white/80 text-sm mb-2">Duracao (minutos)</label>
+                <label style={{
+                  display: 'block',
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.875rem',
+                  marginBottom: '0.5rem'
+                }}>
+                  Duração (minutos)
+                </label>
                 <select
                   value={novoEvento.duracao}
                   onChange={(e) => setNovoEvento({ ...novoEvento, duracao: Number(e.target.value) })}
-                  className="input-ia w-full"
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '2px solid rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    color: 'var(--chalk-white)',
+                    fontSize: '1rem',
+                    outline: 'none',
+                    cursor: 'pointer'
+                  }}
                 >
-                  <option value={30}>30 minutos</option>
-                  <option value={45}>45 minutos</option>
-                  <option value={60}>1 hora</option>
-                  <option value={90}>1h30</option>
-                  <option value={120}>2 horas</option>
-                  <option value={180}>3 horas</option>
+                  <option value={30} style={{ background: '#1a1a1a' }}>30 minutos</option>
+                  <option value={45} style={{ background: '#1a1a1a' }}>45 minutos</option>
+                  <option value={60} style={{ background: '#1a1a1a' }}>1 hora</option>
+                  <option value={90} style={{ background: '#1a1a1a' }}>1h30</option>
+                  <option value={120} style={{ background: '#1a1a1a' }}>2 horas</option>
+                  <option value={180} style={{ background: '#1a1a1a' }}>3 horas</option>
                 </select>
               </div>
 
-              <div className="flex gap-3 pt-4">
+              <div style={{
+                display: 'flex',
+                gap: '0.75rem',
+                paddingTop: '1rem'
+              }}>
                 <button
                   onClick={() => setShowModal(false)}
-                  className="btn-ia-secondary flex-1"
+                  className="btn"
+                  style={{ flex: 1 }}
                 >
                   Cancelar
                 </button>
                 <button
                   onClick={adicionarEvento}
                   disabled={!novoEvento.titulo || !novoEvento.data}
-                  className="btn-ia flex-1 disabled:opacity-50"
+                  className="btn btn-yellow"
+                  style={{
+                    flex: 1,
+                    opacity: (!novoEvento.titulo || !novoEvento.data) ? 0.5 : 1,
+                    cursor: (!novoEvento.titulo || !novoEvento.data) ? 'not-allowed' : 'pointer'
+                  }}
                 >
                   ✅ Salvar
                 </button>
@@ -439,7 +661,12 @@ export default function CronogramaPage() {
         </div>
       )}
 
-      <ChalkBackToTop />
+      {/* Footer */}
+      <footer className="footer">
+        <p>
+          <Link href="/enem">← Voltar ao Painel</Link>
+        </p>
+      </footer>
     </div>
   );
 }

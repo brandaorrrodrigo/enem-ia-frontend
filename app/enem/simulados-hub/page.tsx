@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
-import ChalkBackToTop from '@/components/ChalkBackToTop';
 
 interface Simulado {
   id: string;
@@ -292,54 +291,154 @@ export default function SimuladosHubPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0D1F22] text-white pt-16 pb-24">
+    <main
+      className="min-h-screen pt-16 pb-24"
+      style={{
+        background: 'var(--bg-chalkboard)',
+        color: 'var(--chalk-white)'
+      }}
+    >
       <FloatingNav />
-      <ChalkBackToTop />
 
-      <div className="container-ia py-8">
-        <div className="text-center mb-8">
-          <h1 className="title-ia text-3xl md:text-4xl mb-4">
+      <div className="container max-w-7xl mx-auto px-4 py-8">
+        {/* Header */}
+        <div className="header text-center mb-8">
+          <h1
+            className="text-3xl md:text-4xl mb-4 font-bold"
+            style={{
+              color: 'var(--accent-yellow)',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+            }}
+          >
             📝 Central de Simulados ENEM-IA
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p
+            className="max-w-2xl mx-auto text-lg"
+            style={{ color: 'var(--chalk-dim)' }}
+          >
             Pratique com simulados completos, por área ou rápidos.
             Acompanhe seu progresso e prepare-se para o ENEM!
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-emerald-400">{estatisticas.total}</div>
-            <div className="text-gray-400 text-sm">Simulados Feitos</div>
+        {/* Stats Bar */}
+        <div className="stats-bar grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div
+            className="stat-item text-center p-4 rounded-lg"
+            style={{
+              background: 'rgba(255,255,255,0.05)',
+              border: '2px solid rgba(255,255,255,0.1)'
+            }}
+          >
+            <div
+              className="stat-number text-3xl font-bold mb-1"
+              style={{ color: 'var(--accent-yellow)' }}
+            >
+              {estatisticas.total}
+            </div>
+            <div
+              className="stat-label text-sm"
+              style={{ color: 'var(--chalk-dim)' }}
+            >
+              Simulados Feitos
+            </div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-blue-400">{estatisticas.mediaAcertos}%</div>
-            <div className="text-gray-400 text-sm">Média de Acertos</div>
+          <div
+            className="stat-item text-center p-4 rounded-lg"
+            style={{
+              background: 'rgba(255,255,255,0.05)',
+              border: '2px solid rgba(255,255,255,0.1)'
+            }}
+          >
+            <div
+              className="stat-number text-3xl font-bold mb-1"
+              style={{ color: 'var(--accent-yellow)' }}
+            >
+              {estatisticas.mediaAcertos}%
+            </div>
+            <div
+              className="stat-label text-sm"
+              style={{ color: 'var(--chalk-dim)' }}
+            >
+              Média de Acertos
+            </div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-purple-400">{formatarTempo(estatisticas.tempoTotal)}</div>
-            <div className="text-gray-400 text-sm">Tempo Total</div>
+          <div
+            className="stat-item text-center p-4 rounded-lg"
+            style={{
+              background: 'rgba(255,255,255,0.05)',
+              border: '2px solid rgba(255,255,255,0.1)'
+            }}
+          >
+            <div
+              className="stat-number text-3xl font-bold mb-1"
+              style={{ color: 'var(--accent-yellow)' }}
+            >
+              {formatarTempo(estatisticas.tempoTotal)}
+            </div>
+            <div
+              className="stat-label text-sm"
+              style={{ color: 'var(--chalk-dim)' }}
+            >
+              Tempo Total
+            </div>
           </div>
-          <div className="stat-ia text-center">
-            <div className="text-3xl font-bold text-yellow-400">{estatisticas.melhorNota}</div>
-            <div className="text-gray-400 text-sm">Melhor Nota</div>
+          <div
+            className="stat-item text-center p-4 rounded-lg"
+            style={{
+              background: 'rgba(255,255,255,0.05)',
+              border: '2px solid rgba(255,255,255,0.1)'
+            }}
+          >
+            <div
+              className="stat-number text-3xl font-bold mb-1"
+              style={{ color: 'var(--accent-yellow)' }}
+            >
+              {estatisticas.melhorNota}
+            </div>
+            <div
+              className="stat-label text-sm"
+              style={{ color: 'var(--chalk-dim)' }}
+            >
+              Melhor Nota
+            </div>
           </div>
         </div>
 
+        {/* Toggle Button */}
         <div className="flex justify-center mb-6">
           <button
             onClick={() => setMostrarHistorico(!mostrarHistorico)}
-            className="btn-ia flex items-center gap-2"
+            className="btn btn-yellow flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all hover:scale-105"
+            style={{
+              background: 'var(--accent-yellow)',
+              color: 'var(--bg-chalkboard)',
+              boxShadow: '0 4px 6px rgba(0,0,0,0.3)'
+            }}
           >
             📊 {mostrarHistorico ? 'Ver Simulados' : 'Ver Histórico'}
           </button>
         </div>
 
         {mostrarHistorico ? (
-          <div className="card-ia p-6">
-            <h2 className="text-xl font-bold mb-4">📜 Histórico de Simulados</h2>
+          <div
+            className="card p-6 rounded-lg"
+            style={{
+              background: 'var(--card-bg)',
+              border: '3px solid var(--wood-dark)'
+            }}
+          >
+            <h2
+              className="card-title text-xl font-bold mb-4"
+              style={{ color: 'var(--chalk-white)' }}
+            >
+              📜 Histórico de Simulados
+            </h2>
             {historico.length === 0 ? (
-              <p className="text-gray-400 text-center py-8">
+              <p
+                className="text-center py-8"
+                style={{ color: 'var(--chalk-dim)' }}
+              >
                 Você ainda não realizou nenhum simulado. Comece agora!
               </p>
             ) : (
@@ -347,16 +446,41 @@ export default function SimuladosHubPage() {
                 {historico.slice().reverse().map((h, idx) => {
                   const simulado = simuladosDisponiveis.find(s => s.id === h.simuladoId);
                   return (
-                    <div key={idx} className="bg-white/5 rounded-lg p-4 flex items-center justify-between">
+                    <div
+                      key={idx}
+                      className="rounded-lg p-4 flex items-center justify-between"
+                      style={{
+                        background: 'rgba(255,255,255,0.05)',
+                        border: '1px solid rgba(255,255,255,0.1)'
+                      }}
+                    >
                       <div>
-                        <h3 className="font-medium">{simulado?.titulo || 'Simulado'}</h3>
-                        <p className="text-sm text-gray-400">
+                        <h3
+                          className="font-medium"
+                          style={{ color: 'var(--chalk-white)' }}
+                        >
+                          {simulado?.titulo || 'Simulado'}
+                        </h3>
+                        <p
+                          className="text-sm"
+                          style={{ color: 'var(--chalk-dim)' }}
+                        >
                           {new Date(h.data).toLocaleDateString('pt-BR')} • {h.acertos}/{h.total} acertos
                         </p>
                       </div>
                       <div className="text-right">
-                        <div className="text-2xl font-bold text-emerald-400">{h.nota}</div>
-                        <div className="text-xs text-gray-400">{Math.round(h.acertos/h.total*100)}%</div>
+                        <div
+                          className="text-2xl font-bold"
+                          style={{ color: 'var(--accent-yellow)' }}
+                        >
+                          {h.nota}
+                        </div>
+                        <div
+                          className="text-xs"
+                          style={{ color: 'var(--chalk-dim)' }}
+                        >
+                          {Math.round(h.acertos/h.total*100)}%
+                        </div>
                       </div>
                     </div>
                   );
@@ -366,39 +490,52 @@ export default function SimuladosHubPage() {
           </div>
         ) : (
           <>
+            {/* Filtros de Tipo */}
             <div className="flex flex-wrap justify-center gap-2 mb-4">
               {tipos.map(tipo => (
                 <button
                   key={tipo.id}
                   onClick={() => setFiltroTipo(tipo.id)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                    filtroTipo === tipo.id
-                      ? 'bg-emerald-600 text-white'
-                      : 'bg-white/10 text-gray-300 hover:bg-white/20'
-                  }`}
+                  className="px-4 py-2 rounded-full text-sm font-medium transition-all hover:scale-105"
+                  style={{
+                    background: filtroTipo === tipo.id
+                      ? 'var(--accent-yellow)'
+                      : 'rgba(255,255,255,0.1)',
+                    color: filtroTipo === tipo.id
+                      ? 'var(--bg-chalkboard)'
+                      : 'var(--chalk-dim)',
+                    border: filtroTipo === tipo.id
+                      ? '2px solid var(--accent-yellow)'
+                      : '2px solid rgba(255,255,255,0.2)'
+                  }}
                 >
                   {tipo.icone} {tipo.label}
                 </button>
               ))}
             </div>
 
+            {/* Filtros de Área */}
             <div className="flex flex-wrap justify-center gap-2 mb-8">
               {areas.map(area => (
                 <button
                   key={area.id}
                   onClick={() => setFiltroArea(area.id)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
-                    filtroArea === area.id
-                      ? `${area.cor} text-white`
-                      : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                  className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all hover:scale-105 ${
+                    filtroArea === area.id ? area.cor : ''
                   }`}
+                  style={{
+                    background: filtroArea !== area.id ? 'rgba(255,255,255,0.1)' : undefined,
+                    color: filtroArea === area.id ? 'white' : 'var(--chalk-dim)',
+                    border: '1px solid rgba(255,255,255,0.2)'
+                  }}
                 >
                   {area.label}
                 </button>
               ))}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* Grid de Simulados */}
+            <div className="cards-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {simuladosFiltrados.map(simulado => {
                 const dif = getDificuldadeLabel(simulado.dificuldade);
                 const historicoSimulado = historico.filter(h => h.simuladoId === simulado.id);
@@ -409,13 +546,20 @@ export default function SimuladosHubPage() {
                 return (
                   <div
                     key={simulado.id}
-                    className="card-ia overflow-hidden hover:scale-[1.02] transition-transform cursor-pointer"
+                    className="chalkboard-card overflow-hidden rounded-lg hover:scale-[1.02] transition-transform cursor-pointer"
                     onClick={() => setSimuladoSelecionado(simulado)}
+                    style={{
+                      background: 'var(--card-bg)',
+                      border: '3px solid var(--wood-dark)',
+                      boxShadow: '0 4px 6px rgba(0,0,0,0.3)'
+                    }}
                   >
                     <div className={`bg-gradient-to-r ${simulado.cor} p-4`}>
                       <div className="flex items-center justify-between">
                         <span className="text-4xl">{simulado.icone}</span>
-                        <span className={`${dif.cor} px-2 py-1 rounded text-xs font-bold`}>
+                        <span
+                          className={`badge ${dif.cor} px-2 py-1 rounded text-xs font-bold`}
+                        >
                           {dif.label}
                         </span>
                       </div>
@@ -423,23 +567,55 @@ export default function SimuladosHubPage() {
                     </div>
 
                     <div className="p-4">
-                      <p className="text-gray-400 text-sm mb-3">{simulado.descricao}</p>
+                      <p
+                        className="text-sm mb-3"
+                        style={{ color: 'var(--chalk-dim)' }}
+                      >
+                        {simulado.descricao}
+                      </p>
 
                       <div className="flex flex-wrap gap-2 mb-3">
-                        <span className="bg-white/10 px-2 py-1 rounded text-xs">
+                        <span
+                          className="badge px-2 py-1 rounded text-xs"
+                          style={{
+                            background: 'rgba(255,255,255,0.1)',
+                            color: 'var(--chalk-white)'
+                          }}
+                        >
                           📝 {simulado.questoes} questões
                         </span>
-                        <span className="bg-white/10 px-2 py-1 rounded text-xs">
+                        <span
+                          className="badge px-2 py-1 rounded text-xs"
+                          style={{
+                            background: 'rgba(255,255,255,0.1)',
+                            color: 'var(--chalk-white)'
+                          }}
+                        >
                           ⏱️ {formatarTempo(simulado.tempo)}
                         </span>
-                        <span className="bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded text-xs">
+                        <span
+                          className="badge px-2 py-1 rounded text-xs"
+                          style={{
+                            background: 'rgba(255,193,7,0.2)',
+                            color: 'var(--accent-yellow)'
+                          }}
+                        >
                           🎯 +{simulado.fpRecompensa} FP
                         </span>
                       </div>
 
                       {melhorResultado && (
-                        <div className="bg-yellow-500/20 rounded p-2 mb-3 text-center">
-                          <span className="text-yellow-400 text-sm">
+                        <div
+                          className="rounded p-2 mb-3 text-center"
+                          style={{
+                            background: 'rgba(255,193,7,0.2)',
+                            border: '1px solid var(--accent-yellow)'
+                          }}
+                        >
+                          <span
+                            className="text-sm"
+                            style={{ color: 'var(--accent-yellow)' }}
+                          >
                             🏆 Melhor nota: {melhorResultado}
                           </span>
                         </div>
@@ -450,7 +626,12 @@ export default function SimuladosHubPage() {
                           e.stopPropagation();
                           iniciarSimulado(simulado);
                         }}
-                        className="w-full btn-ia py-2"
+                        className="w-full btn btn-yellow py-2 rounded-lg font-bold transition-all hover:scale-105"
+                        style={{
+                          background: 'var(--accent-yellow)',
+                          color: 'var(--bg-chalkboard)',
+                          boxShadow: '0 2px 4px rgba(0,0,0,0.3)'
+                        }}
                       >
                         {historicoSimulado.length > 0 ? 'Refazer Simulado' : 'Iniciar Simulado'}
                       </button>
@@ -462,14 +643,23 @@ export default function SimuladosHubPage() {
           </>
         )}
 
+        {/* Modal de Detalhes */}
         {simuladoSelecionado && (
           <div
-            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
             onClick={() => setSimuladoSelecionado(null)}
+            style={{
+              background: 'rgba(0,0,0,0.8)',
+              backdropFilter: 'blur(4px)'
+            }}
           >
             <div
-              className="bg-[#1a2f33] rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto"
+              className="rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto"
               onClick={e => e.stopPropagation()}
+              style={{
+                background: 'var(--card-bg)',
+                border: '4px solid var(--wood-dark)'
+              }}
             >
               <div className={`bg-gradient-to-r ${simuladoSelecionado.cor} p-6 rounded-t-2xl`}>
                 <div className="text-5xl mb-3">{simuladoSelecionado.icone}</div>
@@ -479,29 +669,105 @@ export default function SimuladosHubPage() {
 
               <div className="p-6">
                 <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-white/5 rounded-lg p-3 text-center">
-                    <div className="text-2xl font-bold">{simuladoSelecionado.questoes}</div>
-                    <div className="text-gray-400 text-sm">Questões</div>
+                  <div
+                    className="rounded-lg p-3 text-center"
+                    style={{
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '2px solid rgba(255,255,255,0.1)'
+                    }}
+                  >
+                    <div
+                      className="text-2xl font-bold"
+                      style={{ color: 'var(--chalk-white)' }}
+                    >
+                      {simuladoSelecionado.questoes}
+                    </div>
+                    <div
+                      className="text-sm"
+                      style={{ color: 'var(--chalk-dim)' }}
+                    >
+                      Questões
+                    </div>
                   </div>
-                  <div className="bg-white/5 rounded-lg p-3 text-center">
-                    <div className="text-2xl font-bold">{formatarTempo(simuladoSelecionado.tempo)}</div>
-                    <div className="text-gray-400 text-sm">Duração</div>
+                  <div
+                    className="rounded-lg p-3 text-center"
+                    style={{
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '2px solid rgba(255,255,255,0.1)'
+                    }}
+                  >
+                    <div
+                      className="text-2xl font-bold"
+                      style={{ color: 'var(--chalk-white)' }}
+                    >
+                      {formatarTempo(simuladoSelecionado.tempo)}
+                    </div>
+                    <div
+                      className="text-sm"
+                      style={{ color: 'var(--chalk-dim)' }}
+                    >
+                      Duração
+                    </div>
                   </div>
-                  <div className="bg-white/5 rounded-lg p-3 text-center">
-                    <div className="text-2xl font-bold text-emerald-400">+{simuladoSelecionado.fpRecompensa}</div>
-                    <div className="text-gray-400 text-sm">FP Recompensa</div>
+                  <div
+                    className="rounded-lg p-3 text-center"
+                    style={{
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '2px solid rgba(255,255,255,0.1)'
+                    }}
+                  >
+                    <div
+                      className="text-2xl font-bold"
+                      style={{ color: 'var(--accent-yellow)' }}
+                    >
+                      +{simuladoSelecionado.fpRecompensa}
+                    </div>
+                    <div
+                      className="text-sm"
+                      style={{ color: 'var(--chalk-dim)' }}
+                    >
+                      FP Recompensa
+                    </div>
                   </div>
-                  <div className="bg-white/5 rounded-lg p-3 text-center">
-                    <div className="text-2xl font-bold">
+                  <div
+                    className="rounded-lg p-3 text-center"
+                    style={{
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '2px solid rgba(255,255,255,0.1)'
+                    }}
+                  >
+                    <div
+                      className="text-2xl font-bold"
+                      style={{ color: 'var(--chalk-white)' }}
+                    >
                       {getDificuldadeLabel(simuladoSelecionado.dificuldade).label}
                     </div>
-                    <div className="text-gray-400 text-sm">Dificuldade</div>
+                    <div
+                      className="text-sm"
+                      style={{ color: 'var(--chalk-dim)' }}
+                    >
+                      Dificuldade
+                    </div>
                   </div>
                 </div>
 
-                <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4 mb-6">
-                  <h4 className="font-bold text-yellow-400 mb-2">⚠️ Instruções</h4>
-                  <ul className="text-sm text-gray-300 space-y-1">
+                <div
+                  className="rounded-lg p-4 mb-6"
+                  style={{
+                    background: 'rgba(255,193,7,0.1)',
+                    border: '2px solid rgba(255,193,7,0.3)'
+                  }}
+                >
+                  <h4
+                    className="font-bold mb-2"
+                    style={{ color: 'var(--accent-yellow)' }}
+                  >
+                    ⚠️ Instruções
+                  </h4>
+                  <ul
+                    className="text-sm space-y-1"
+                    style={{ color: 'var(--chalk-dim)' }}
+                  >
                     <li>• O tempo começará a contar assim que iniciar</li>
                     <li>• Você pode pausar e retomar depois</li>
                     <li>• Suas respostas são salvas automaticamente</li>
@@ -512,13 +778,23 @@ export default function SimuladosHubPage() {
                 <div className="flex gap-3">
                   <button
                     onClick={() => setSimuladoSelecionado(null)}
-                    className="flex-1 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                    className="flex-1 py-3 rounded-lg transition-colors font-bold"
+                    style={{
+                      background: 'rgba(255,255,255,0.1)',
+                      color: 'var(--chalk-white)',
+                      border: '2px solid rgba(255,255,255,0.2)'
+                    }}
                   >
                     Cancelar
                   </button>
                   <button
                     onClick={() => iniciarSimulado(simuladoSelecionado)}
-                    className="flex-1 btn-ia py-3"
+                    className="flex-1 btn btn-yellow py-3 rounded-lg font-bold transition-all hover:scale-105"
+                    style={{
+                      background: 'var(--accent-yellow)',
+                      color: 'var(--bg-chalkboard)',
+                      boxShadow: '0 4px 6px rgba(0,0,0,0.3)'
+                    }}
                   >
                     🚀 Iniciar Agora
                   </button>
@@ -528,34 +804,118 @@ export default function SimuladosHubPage() {
           </div>
         )}
 
-        <div className="mt-12 card-ia p-6">
-          <h2 className="text-xl font-bold mb-4">💡 Dicas para Simulados</h2>
+        {/* Dicas */}
+        <div
+          className="category mt-12 p-6 rounded-lg"
+          style={{
+            background: 'var(--card-bg)',
+            border: '3px solid var(--wood-dark)'
+          }}
+        >
+          <h2
+            className="category-title text-xl font-bold mb-4"
+            style={{ color: 'var(--chalk-white)' }}
+          >
+            💡 Dicas para Simulados
+          </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="font-bold text-emerald-400 mb-2">🎯 Simulado Completo</h3>
-              <p className="text-sm text-gray-400">
+            <div
+              className="rounded-lg p-4"
+              style={{
+                background: 'rgba(255,255,255,0.05)',
+                border: '1px solid rgba(255,255,255,0.1)'
+              }}
+            >
+              <h3
+                className="font-bold mb-2"
+                style={{ color: 'var(--accent-yellow)' }}
+              >
+                🎯 Simulado Completo
+              </h3>
+              <p
+                className="text-sm"
+                style={{ color: 'var(--chalk-dim)' }}
+              >
                 Faça em ambiente silencioso, sem interrupções. Simule as condições reais do ENEM.
               </p>
             </div>
-            <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="font-bold text-blue-400 mb-2">📊 Por Área</h3>
-              <p className="text-sm text-gray-400">
+            <div
+              className="rounded-lg p-4"
+              style={{
+                background: 'rgba(255,255,255,0.05)',
+                border: '1px solid rgba(255,255,255,0.1)'
+              }}
+            >
+              <h3
+                className="font-bold mb-2"
+                style={{ color: 'var(--accent-yellow)' }}
+              >
+                📊 Por Área
+              </h3>
+              <p
+                className="text-sm"
+                style={{ color: 'var(--chalk-dim)' }}
+              >
                 Ideal para identificar pontos fracos e focar o estudo em áreas específicas.
               </p>
             </div>
-            <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="font-bold text-purple-400 mb-2">⚡ Rápidos</h3>
-              <p className="text-sm text-gray-400">
+            <div
+              className="rounded-lg p-4"
+              style={{
+                background: 'rgba(255,255,255,0.05)',
+                border: '1px solid rgba(255,255,255,0.1)'
+              }}
+            >
+              <h3
+                className="font-bold mb-2"
+                style={{ color: 'var(--accent-yellow)' }}
+              >
+                ⚡ Rápidos
+              </h3>
+              <p
+                className="text-sm"
+                style={{ color: 'var(--chalk-dim)' }}
+              >
                 Perfeitos para revisão diária e manter o ritmo de estudos.
               </p>
             </div>
-            <div className="bg-white/5 rounded-lg p-4">
-              <h3 className="font-bold text-yellow-400 mb-2">📈 Evolução</h3>
-              <p className="text-sm text-gray-400">
+            <div
+              className="rounded-lg p-4"
+              style={{
+                background: 'rgba(255,255,255,0.05)',
+                border: '1px solid rgba(255,255,255,0.1)'
+              }}
+            >
+              <h3
+                className="font-bold mb-2"
+                style={{ color: 'var(--accent-yellow)' }}
+              >
+                📈 Evolução
+              </h3>
+              <p
+                className="text-sm"
+                style={{ color: 'var(--chalk-dim)' }}
+              >
                 Refaça simulados para ver sua evolução. A prática leva à perfeição!
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Footer */}
+        <div className="footer text-center mt-8">
+          <a
+            href="/enem"
+            className="inline-block px-6 py-2 rounded-lg font-bold transition-all hover:scale-105"
+            style={{
+              background: 'rgba(255,255,255,0.1)',
+              color: 'var(--chalk-white)',
+              border: '2px solid rgba(255,255,255,0.2)',
+              textDecoration: 'none'
+            }}
+          >
+            ← Voltar para o ENEM
+          </a>
         </div>
       </div>
     </main>

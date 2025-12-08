@@ -1,4 +1,6 @@
-'use client';
+const fs = require('fs');
+
+const content = `'use client';
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
@@ -302,3 +304,8 @@ export default function PlanosPage() {
     </div>
   );
 }
+`;
+
+fs.mkdirSync('D:/enem-ia/enem-pro/app/planos', { recursive: true });
+fs.writeFileSync('D:/enem-ia/enem-pro/app/planos/page.tsx', content);
+console.log('Created planos page');

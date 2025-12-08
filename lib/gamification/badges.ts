@@ -14,7 +14,7 @@ export interface BadgeDefinition {
   nome: string;
   descricao: string;
   icone: string;
-  categoria: 'simulados' | 'acertos' | 'streaks' | 'areas' | 'especial';
+  categoria: 'simulados' | 'acertos' | 'streaks' | 'areas' | 'especial' | 'social';
   pontos: number;
   ordem: number;
   criterio: (stats: UserStats) => boolean;
@@ -71,7 +71,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Complete 10 simulados',
     icone: '🛡️',
     categoria: 'simulados',
-    pontos: 200,
+    pontos: 75, // Economia v2.0
     ordem: 3,
     criterio: (s) => s.simuladosTotal >= 10,
   },
@@ -81,7 +81,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Complete 25 simulados',
     icone: '👑',
     categoria: 'simulados',
-    pontos: 500,
+    pontos: 150, // Economia v2.0
     ordem: 4,
     criterio: (s) => s.simuladosTotal >= 25,
   },
@@ -91,7 +91,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Complete 50 simulados',
     icone: '🏆',
     categoria: 'simulados',
-    pontos: 1000,
+    pontos: 300, // Economia v2.0
     ordem: 5,
     criterio: (s) => s.simuladosTotal >= 50,
   },
@@ -101,7 +101,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Complete 100 simulados',
     icone: '💎',
     categoria: 'simulados',
-    pontos: 2000,
+    pontos: 500, // Economia v2.0
     ordem: 6,
     criterio: (s) => s.simuladosTotal >= 100,
   },
@@ -143,7 +143,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Acerte 1000 questões no total',
     icone: '🌟',
     categoria: 'acertos',
-    pontos: 500,
+    pontos: 150, // Economia v2.0
     ordem: 13,
     criterio: (s) => s.acertosTotal >= 1000,
   },
@@ -153,7 +153,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Tire 90% ou mais em um simulado',
     icone: '📈',
     categoria: 'acertos',
-    pontos: 200,
+    pontos: 75, // Economia v2.0
     ordem: 14,
     criterio: (s) => s.melhorNota >= 90,
   },
@@ -163,7 +163,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Tire 100% em um simulado',
     icone: '💯',
     categoria: 'acertos',
-    pontos: 500,
+    pontos: 150, // Economia v2.0
     ordem: 15,
     criterio: (s) => s.notaMaxima100,
   },
@@ -205,7 +205,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Estude 30 dias seguidos',
     icone: '💪',
     categoria: 'streaks',
-    pontos: 750,
+    pontos: 200, // Economia v2.0
     ordem: 23,
     criterio: (s) => s.streakMaximo >= 30,
   },
@@ -215,7 +215,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Estude 60 dias seguidos',
     icone: '🤖',
     categoria: 'streaks',
-    pontos: 1500,
+    pontos: 400, // Economia v2.0
     ordem: 24,
     criterio: (s) => s.streakMaximo >= 60,
   },
@@ -227,7 +227,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Acerte 80%+ em 20 questões de Matemática',
     icone: '📐',
     categoria: 'areas',
-    pontos: 200,
+    pontos: 75, // Economia v2.0
     ordem: 30,
     criterio: (s) => s.totalMatematica >= 20 && (s.acertosMatematica / s.totalMatematica) >= 0.8,
   },
@@ -237,7 +237,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Acerte 80%+ em 20 questões de Linguagens',
     icone: '📚',
     categoria: 'areas',
-    pontos: 200,
+    pontos: 75, // Economia v2.0
     ordem: 31,
     criterio: (s) => s.totalLinguagens >= 20 && (s.acertosLinguagens / s.totalLinguagens) >= 0.8,
   },
@@ -247,7 +247,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Acerte 80%+ em 20 questões de Humanas',
     icone: '🌍',
     categoria: 'areas',
-    pontos: 200,
+    pontos: 75, // Economia v2.0
     ordem: 32,
     criterio: (s) => s.totalHumanas >= 20 && (s.acertosHumanas / s.totalHumanas) >= 0.8,
   },
@@ -257,7 +257,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Acerte 80%+ em 20 questões de Natureza',
     icone: '🔬',
     categoria: 'areas',
-    pontos: 200,
+    pontos: 75, // Economia v2.0
     ordem: 33,
     criterio: (s) => s.totalNatureza >= 20 && (s.acertosNatureza / s.totalNatureza) >= 0.8,
   },
@@ -267,7 +267,7 @@ export const BADGES: BadgeDefinition[] = [
     descricao: 'Seja expert em todas as 4 áreas',
     icone: '🎓',
     categoria: 'areas',
-    pontos: 1000,
+    pontos: 300, // Economia v2.0
     ordem: 34,
     criterio: (s) => {
       const matOk = s.totalMatematica >= 20 && (s.acertosMatematica / s.totalMatematica) >= 0.8;
@@ -308,6 +308,98 @@ export const BADGES: BadgeDefinition[] = [
     pontos: 50,
     ordem: 42,
     criterio: () => false, // Verificado por horário
+  },
+
+  // === SOCIAL / COMPARTILHAMENTO ===
+  {
+    codigo: 'primeiro_share',
+    nome: 'Social Starter',
+    descricao: 'Compartilhe sua primeira conquista',
+    icone: '📢',
+    categoria: 'social',
+    pontos: 25,
+    ordem: 50,
+    criterio: () => false, // Verificado na API de share
+  },
+  {
+    codigo: 'social_starter',
+    nome: 'Streamer ENEM PRO',
+    descricao: 'Compartilhe 10 conquistas nas redes',
+    icone: '📲',
+    categoria: 'social',
+    pontos: 100,
+    ordem: 51,
+    criterio: () => false, // Verificado na API de share
+  },
+  {
+    codigo: 'influencer_enem',
+    nome: 'Influencer do ENEM',
+    descricao: 'Compartilhe 50 conquistas nas redes',
+    icone: '🌟',
+    categoria: 'social',
+    pontos: 300,
+    ordem: 52,
+    criterio: () => false, // Verificado na API de share
+  },
+  {
+    codigo: 'viral_master',
+    nome: 'Viral Master',
+    descricao: 'Compartilhe 100 conquistas nas redes',
+    icone: '🔥',
+    categoria: 'social',
+    pontos: 150, // Economia v2.0
+    ordem: 53,
+    criterio: () => false, // Verificado na API de share
+  },
+  {
+    codigo: 'recrutador_bronze',
+    nome: 'Recrutador Bronze',
+    descricao: 'Convide 5 amigos para o ENEM PRO',
+    icone: '👥',
+    categoria: 'social',
+    pontos: 150,
+    ordem: 54,
+    criterio: () => false, // Verificado na API de convites
+  },
+  {
+    codigo: 'recrutador_prata',
+    nome: 'Recrutador Prata',
+    descricao: 'Convide 15 amigos para o ENEM PRO',
+    icone: '👥',
+    categoria: 'social',
+    pontos: 400,
+    ordem: 55,
+    criterio: () => false, // Verificado na API de convites
+  },
+  {
+    codigo: 'recrutador_ouro',
+    nome: 'Recrutador Ouro',
+    descricao: 'Convide 30 amigos para o ENEM PRO',
+    icone: '👥',
+    categoria: 'social',
+    pontos: 300, // Economia v2.0
+    ordem: 56,
+    criterio: () => false, // Verificado na API de convites
+  },
+  {
+    codigo: 'campeao_live',
+    nome: 'Campeão da Live',
+    descricao: 'Fique no Top 10 de uma transmissão ao vivo',
+    icone: '🏆',
+    categoria: 'social',
+    pontos: 250,
+    ordem: 57,
+    criterio: () => false, // Verificado no sistema de lives
+  },
+  {
+    codigo: 'batalha_master',
+    nome: 'Matador de Prova',
+    descricao: 'Vença 5 batalhas 1v1 consecutivas',
+    icone: '⚔️',
+    categoria: 'social',
+    pontos: 350,
+    ordem: 58,
+    criterio: () => false, // Verificado no sistema de batalhas
   },
 ];
 

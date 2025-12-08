@@ -433,15 +433,12 @@ export default function CadastroPage() {
                 {/* Ja fez ENEM */}
                 <div style={{ marginBottom: '1.25rem' }}>
                   <label style={labelStyle}>Ja fez o ENEM? *</label>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'stretch' }}>
                     {OPCOES_ENEM.map(opcao => (
                       <label
                         key={opcao.value}
                         style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '0.75rem',
-                          padding: '0.75rem',
+                          display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '0.75rem', padding: '0.75rem', width: '100%',
                           backgroundColor: formData.jaFezEnem === opcao.value ? 'rgba(251, 191, 36, 0.2)' : 'rgba(255, 255, 255, 0.05)',
                           borderRadius: '8px',
                           cursor: 'pointer',

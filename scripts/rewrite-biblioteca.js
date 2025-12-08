@@ -1,4 +1,6 @@
-'use client';
+const fs = require('fs');
+
+const content = `'use client';
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
@@ -678,8 +680,8 @@ export default function BibliotecaPage() {
               style={{
                 padding: '0.75rem 1.25rem',
                 borderRadius: '0.75rem',
-                border: categoriaAtiva === cat.id ? `2px solid ${cat.cor}` : '2px solid rgba(255,255,255,0.1)',
-                background: categoriaAtiva === cat.id ? `${cat.cor}20` : 'rgba(0,0,0,0.3)',
+                border: categoriaAtiva === cat.id ? \`2px solid \${cat.cor}\` : '2px solid rgba(255,255,255,0.1)',
+                background: categoriaAtiva === cat.id ? \`\${cat.cor}20\` : 'rgba(0,0,0,0.3)',
                 color: '#f5f5dc',
                 cursor: 'pointer',
                 display: 'flex',
@@ -708,7 +710,7 @@ export default function BibliotecaPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * (index % 6) }}
               whileHover={{ scale: 1.02, y: -5 }}
-              onClick={() => router.push(`/enem/biblioteca/${caderno.id}`)}
+              onClick={() => router.push(\`/enem/biblioteca/\${caderno.id}\`)}
               style={{
                 background: 'rgba(0,0,0,0.4)',
                 borderRadius: '1rem',
@@ -729,7 +731,7 @@ export default function BibliotecaPage() {
                   width: '3rem',
                   height: '3rem',
                   borderRadius: '0.75rem',
-                  background: `${caderno.cor}20`,
+                  background: \`\${caderno.cor}20\`,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -740,7 +742,7 @@ export default function BibliotecaPage() {
                 <span style={{
                   padding: '0.25rem 0.75rem',
                   borderRadius: '999px',
-                  background: `${getNivelCor(caderno.nivel)}20`,
+                  background: \`\${getNivelCor(caderno.nivel)}20\`,
                   color: getNivelCor(caderno.nivel),
                   fontSize: '0.75rem',
                   fontWeight: '500',
@@ -823,7 +825,7 @@ export default function BibliotecaPage() {
                 overflow: 'hidden',
               }}>
                 <div style={{
-                  width: `${caderno.progresso}%`,
+                  width: \`\${caderno.progresso}%\`,
                   height: '100%',
                   background: caderno.cor,
                   borderRadius: '2px',
@@ -929,3 +931,7 @@ export default function BibliotecaPage() {
     </div>
   );
 }
+`;
+
+fs.writeFileSync('D:/enem-ia/enem-pro/app/enem/biblioteca/page.tsx', content);
+console.log('Biblioteca reescrita com sucesso!');

@@ -1,4 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server';
+const fs = require('fs');
+
+const code = `import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'crypto';
 
 // Hash simples para MVP (em producao usar bcrypt)
@@ -13,7 +15,7 @@ function generateToken(): string {
 
 // Gerar ID unico
 function generateId(): string {
-  return `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  return \`user_\${Date.now()}_\${Math.random().toString(36).substr(2, 9)}\`;
 }
 
 export async function POST(request: NextRequest) {
@@ -91,7 +93,7 @@ export async function POST(request: NextRequest) {
       });
 
       // Criar codigo de convite
-      const codigoConvite = `ENEM${usuario.id.slice(-6).toUpperCase()}`;
+      const codigoConvite = \`ENEM\${usuario.id.slice(-6).toUpperCase()}\`;
       await prisma.inviteCode.create({
         data: {
           usuarioId: usuario.id,
@@ -167,3 +169,7 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+`;
+
+fs.writeFileSync('app/api/auth/register/route.ts', code);
+console.log('Arquivo criado com sucesso');

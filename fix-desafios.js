@@ -109,7 +109,7 @@ export default function DesafiosPage() {
           <p className="text-white/70 mb-4">Complete desafios e ganhe FP extras!</p>
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-xl px-4 py-2">
             <span className="text-2xl">✨</span>
-            <div><p className="text-xs text-yellow-300/70">Seus Focus Points</p><p className="text-xl font-bold text-yellow-300">{fpTotal} FP</p></div>
+            <div><p className="text-xs text-yellow-300/70">Seus FP</p><p className="text-xl font-bold text-yellow-300">{fpTotal} FP</p></div>
           </div>
         </div>
 

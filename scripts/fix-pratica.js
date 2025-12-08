@@ -1,4 +1,6 @@
-'use client';
+const fs = require('fs');
+
+const content = `'use client';
 
 import FloatingBackButton from '@/components/FloatingBackButton';
 import {useState, useEffect } from 'react';
@@ -72,9 +74,9 @@ export default function PraticaPage() {
       let url = '/api/questions?op=random&count=20';
 
       if (selectedDisciplina) {
-        url = `/api/questions?op=byDisciplina&disciplina=${encodeURIComponent(selectedDisciplina)}`;
+        url = \`/api/questions?op=byDisciplina&disciplina=\${encodeURIComponent(selectedDisciplina)}\`;
       } else if (selectedArea) {
-        url = `/api/questions?op=byArea&area=${encodeURIComponent(selectedArea)}`;
+        url = \`/api/questions?op=byArea&area=\${encodeURIComponent(selectedArea)}\`;
       }
 
       const res = await fetch(url);
@@ -243,8 +245,8 @@ export default function PraticaPage() {
                   style={{
                     padding: '1rem',
                     borderRadius: '0.75rem',
-                    border: selectedArea === area.id ? `2px solid ${area.color}` : '2px solid rgba(255,255,255,0.1)',
-                    background: selectedArea === area.id ? `${area.color}20` : 'rgba(0,0,0,0.3)',
+                    border: selectedArea === area.id ? \`2px solid \${area.color}\` : '2px solid rgba(255,255,255,0.1)',
+                    background: selectedArea === area.id ? \`\${area.color}20\` : 'rgba(0,0,0,0.3)',
                     color: '#f5f5dc',
                     cursor: 'pointer',
                     display: 'flex',
@@ -799,3 +801,7 @@ export default function PraticaPage() {
     </div>
   );
 }
+`;
+
+fs.writeFileSync('D:/enem-ia/enem-pro/app/enem/pratica/page.tsx', content);
+console.log('Fixed pratica page with FP display');

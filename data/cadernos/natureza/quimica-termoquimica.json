@@ -1,0 +1,316 @@
+{
+  "id": "quimica-termoquimica",
+  "titulo": "Termoquímica",
+  "descricao": "Estude os processos de transferência de energia em reações químicas: entalpia, processos endo e exotérmicos, Lei de Hess",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Energia e Reações Químicas",
+      "topicos": [
+        {
+          "titulo": "Conceito de Energia em Química",
+          "conteudo": "Energia química está armazenada nas ligações químicas. Reações envolvem quebra de ligações (absorve energia) e formação de novas ligações (libera energia). O balanço determina se a reação libera ou absorve energia total."
+        },
+        {
+          "titulo": "Entalpia (H)",
+          "conteudo": "Entalpia é o conteúdo energético de uma substância. Impossível medir H absoluto, medimos variação (ΔH). ΔH = H(produtos) - H(reagentes). Unidades: kJ, kcal, J. Estado padrão: 25°C, 1 atm, 1 mol."
+        },
+        {
+          "titulo": "Processos Exotérmicos",
+          "conteudo": "Liberam energia (calor) para o ambiente. ΔH < 0 (negativo). H(produtos) < H(reagentes). Sistema perde energia. Exemplos: combustão, neutralização, solidificação, condensação. Ambiente aquece."
+        },
+        {
+          "titulo": "Processos Endotérmicos",
+          "conteudo": "Absorvem energia do ambiente. ΔH > 0 (positivo). H(produtos) > H(reagentes). Sistema ganha energia. Exemplos: fotossíntese, fusão, vaporização, decomposição. Ambiente esfria."
+        }
+      ],
+      "exemplos": [
+        "CH₄ + 2O₂ → CO₂ + 2H₂O  ΔH = -890 kJ/mol (exotérmica)",
+        "N₂ + O₂ → 2NO  ΔH = +180 kJ (endotérmica)",
+        "H₂O(s) → H₂O(l)  ΔH = +6 kJ/mol (fusão, endo)",
+        "H₂O(l) → H₂O(g)  ΔH = +40,7 kJ/mol (vaporização, endo)",
+        "NaOH + HCl → NaCl + H₂O  ΔH = -57 kJ/mol (exo)"
+      ],
+      "dicas": [
+        "ΔH negativo = exotérmico = libera calor (ex: combustão)",
+        "ΔH positivo = endotérmico = absorve calor (ex: cozinhar ovo)",
+        "Mudanças de estado: fusão/vaporização (endo), solidificação/condensação (exo)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Uma reação química que ocorre com ΔH = -200 kJ é classificada como:",
+          "alternativas": [
+            "Endotérmica, pois absorve energia",
+            "Exotérmica, pois libera energia",
+            "Neutra, pois não há variação",
+            "Endotérmica, pois tem sinal negativo",
+            "Impossível determinar sem a temperatura"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "ΔH negativo indica que a entalpia dos produtos é menor que a dos reagentes, ou seja, houve liberação de energia. Reação exotérmica."
+        },
+        {
+          "enunciado": "Qual dos seguintes processos é endotérmico?",
+          "alternativas": [
+            "Combustão da gasolina",
+            "Neutralização ácido-base",
+            "Vaporização da água",
+            "Respiração celular",
+            "Formação de ligações químicas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A vaporização (líquido→gás) requer energia para romper as ligações intermoleculares, sendo endotérmica (ΔH > 0). As demais são exotérmicas."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Entalpia de Reação e Variações",
+      "topicos": [
+        {
+          "titulo": "Cálculo de ΔH",
+          "conteudo": "ΔH = ΣH(produtos) - ΣH(reagentes). Considerar os coeficientes estequiométricos. Se inverter equação, inverter sinal de ΔH. Se multiplicar equação por n, multiplicar ΔH por n. ΔH é propriedade extensiva."
+        },
+        {
+          "titulo": "Entalpia de Formação (ΔHf°)",
+          "conteudo": "Energia liberada/absorvida na formação de 1 mol de substância a partir de elementos no estado padrão. Elementos puros no estado padrão: ΔHf° = 0. Exemplo: O₂(g), C(grafite), H₂(g). Tabelados para compostos."
+        },
+        {
+          "titulo": "Entalpia de Combustão (ΔHc°)",
+          "conteudo": "Energia liberada na combustão completa de 1 mol de substância. Sempre exotérmica (ΔHc < 0). Produtos: CO₂(g) e H₂O(l) para combustíveis orgânicos. Usado para calcular poder calorífico de combustíveis."
+        },
+        {
+          "titulo": "Outras Entalpias",
+          "conteudo": "ΔH neutralização: ácido + base → sal + água (~-57 kJ/mol H⁺ + OH⁻)\nΔH dissolução: soluto(s) → soluto(aq)\nΔH ligação: energia para romper 1 mol de ligações (sempre > 0)\nΔH atomização: substância → átomos gasosos"
+        }
+      ],
+      "exemplos": [
+        "ΔHf°[H₂O(l)] = -286 kJ/mol (formação exotérmica)",
+        "ΔHf°[CO₂(g)] = -394 kJ/mol",
+        "ΔHf°[O₂(g)] = 0 (elemento puro no estado padrão)",
+        "ΔHc°[CH₄] = -890 kJ/mol (combustão do metano)",
+        "H-H: ΔH(ligação) = +436 kJ/mol (energia para romper)"
+      ],
+      "dicas": [
+        "Formação: SEMPRE a partir de elementos no estado padrão",
+        "Combustão: SEMPRE exotérmica (ΔH < 0)",
+        "Ligação: energia para ROMPER (sempre positiva)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Dadas as entalpias de formação: CO₂ = -394 kJ/mol, H₂O = -286 kJ/mol, C₂H₆ = -85 kJ/mol. Qual o ΔH da combustão do etano? 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O",
+          "alternativas": [
+            "-1560 kJ",
+            "-2860 kJ",
+            "-3120 kJ",
+            "-3900 kJ",
+            "-4280 kJ"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "ΔH = [4×(-394) + 6×(-286)] - [2×(-85) + 0] = [-1576-1716] - [-170] = -3292+170 = -3122 ≈ -3120 kJ. Produtos - reagentes."
+        },
+        {
+          "enunciado": "A entalpia de formação do N₂(g) no estado padrão é:",
+          "alternativas": [
+            "Positiva",
+            "Negativa",
+            "Zero",
+            "Variável com a temperatura",
+            "Impossível determinar"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "N₂(g) é um elemento puro no seu estado padrão (gás diatômico). Por definição, ΔHf° de elementos no estado padrão é sempre zero."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Lei de Hess",
+      "topicos": [
+        {
+          "titulo": "Enunciado da Lei de Hess",
+          "conteudo": "A variação de entalpia de uma reação depende apenas dos estados inicial e final, não do caminho percorrido. ΔH é uma função de estado. Permite calcular ΔH de reações difíceis de medir experimentalmente."
+        },
+        {
+          "titulo": "Aplicação: Soma de Equações",
+          "conteudo": "Somar/subtrair equações termoquímicas para obter a equação desejada. Regras: 1) Inverter equação → trocar sinal de ΔH. 2) Multiplicar equação por n → multiplicar ΔH por n. 3) Somar ΔH das etapas."
+        },
+        {
+          "titulo": "Diagrama de Entalpia",
+          "conteudo": "Representação gráfica: eixo y = entalpia, reagentes e produtos em níveis diferentes. Exotérmica: produtos abaixo dos reagentes. Endotérmica: produtos acima. ΔH = diferença vertical. Caminhos diferentes, mesmo ΔH total."
+        },
+        {
+          "titulo": "Cálculo por ΔHf°",
+          "conteudo": "ΔH°(reação) = ΣΔHf°(produtos) - ΣΔHf°(reagentes). Aplicação direta da Lei de Hess. Usar coeficientes estequiométricos. Valores tabelados de ΔHf° permitem calcular qualquer ΔH de reação."
+        }
+      ],
+      "exemplos": [
+        "Calcular ΔH de C(s) + ½O₂ → CO a partir de:\nC + O₂ → CO₂  ΔH₁ = -394 kJ\nCO + ½O₂ → CO₂  ΔH₂ = -283 kJ\nΔH = ΔH₁ - ΔH₂ = -394-(-283) = -111 kJ",
+        "Combustão indireta: C→CO→CO₂ vs C→CO₂ direta (mesmo ΔH total)"
+      ],
+      "dicas": [
+        "Cancele substâncias que aparecem em ambos os lados",
+        "Organize: coloque reagentes à esquerda, produtos à direita",
+        "Verifique: equação final = soma das parciais"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Dadas as equações:\n(1) H₂ + ½O₂ → H₂O(l)  ΔH = -286 kJ\n(2) H₂ + ½O₂ → H₂O(g)  ΔH = -242 kJ\nQual o ΔH de vaporização da água?",
+          "alternativas": [
+            "+44 kJ/mol",
+            "-44 kJ/mol",
+            "+528 kJ/mol",
+            "-528 kJ/mol",
+            "+22 kJ/mol"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "H₂O(l) → H₂O(g): inverta eq(1) e some com eq(2). -eq(1): H₂O(l) → H₂ + ½O₂  (+286 kJ). Somando: ΔH = +286-242 = +44 kJ/mol."
+        },
+        {
+          "enunciado": "A Lei de Hess permite afirmar que:",
+          "alternativas": [
+            "Toda reação é exotérmica",
+            "ΔH independe do caminho da reação",
+            "A velocidade da reação não importa",
+            "Reações são sempre reversíveis",
+            "A temperatura não afeta ΔH"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Lei de Hess estabelece que ΔH depende apenas dos estados inicial e final, não do caminho (número de etapas ou mecanismo). É uma função de estado."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Energia de Ligação",
+      "topicos": [
+        {
+          "titulo": "Definição de Energia de Ligação",
+          "conteudo": "Energia necessária para romper 1 mol de ligações entre átomos no estado gasoso. Sempre endotérmica (ΔH > 0). Quanto maior a energia de ligação, mais forte é a ligação. Valores médios (variam com ambiente molecular)."
+        },
+        {
+          "titulo": "Cálculo de ΔH por Energias de Ligação",
+          "conteudo": "ΔH = Σ(energia ligações rompidas) - Σ(energia ligações formadas)\nRomper ligações: +energia (endo). Formar ligações: -energia (exo). Use coeficientes das ligações na equação balanceada."
+        },
+        {
+          "titulo": "Ordem de Ligação e Energia",
+          "conteudo": "Ligação tripla > dupla > simples (em energia e força). Exemplos: C≡C (839 kJ/mol) > C=C (612 kJ/mol) > C-C (348 kJ/mol). Menor comprimento de ligação = maior energia."
+        },
+        {
+          "titulo": "Ligações Comuns e Valores",
+          "conteudo": "H-H: 436 kJ/mol; C-H: 413 kJ/mol; O=O: 498 kJ/mol; C=O: 799 kJ/mol (CO₂), 745 kJ/mol (média); O-H: 463 kJ/mol; N≡N: 941 kJ/mol (muito estável)."
+        }
+      ],
+      "exemplos": [
+        "CH₄ + 2O₂ → CO₂ + 2H₂O:\nRompidas: 4(C-H) + 2(O=O) = 4×413 + 2×498 = 2648 kJ\nFormadas: 2(C=O) + 4(O-H) = 2×799 + 4×463 = 3450 kJ\nΔH = 2648 - 3450 = -802 kJ (exotérmica)"
+      ],
+      "dicas": [
+        "Romper ligações: sempre requer energia (+)",
+        "Formar ligações: sempre libera energia (-)",
+        "Reação exo: energia formada > energia rompida"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Considere H₂ + Cl₂ → 2HCl. Dados: H-H = 436 kJ/mol, Cl-Cl = 243 kJ/mol, H-Cl = 431 kJ/mol. O ΔH da reação é:",
+          "alternativas": [
+            "-183 kJ",
+            "-92 kJ",
+            "+92 kJ",
+            "+183 kJ",
+            "-366 kJ"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Rompidas: H-H + Cl-Cl = 436+243 = 679 kJ. Formadas: 2(H-Cl) = 2×431 = 862 kJ. ΔH = 679-862 = -183 kJ (exotérmica)."
+        },
+        {
+          "enunciado": "Comparando C-C, C=C e C≡C, a ordem CRESCENTE de energia de ligação é:",
+          "alternativas": [
+            "C≡C < C=C < C-C",
+            "C-C < C=C < C≡C",
+            "C=C < C-C < C≡C",
+            "C-C < C≡C < C=C",
+            "Todas têm a mesma energia"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Ligação simples < dupla < tripla em termos de energia. Ligações triplas são mais fortes e requerem mais energia para serem rompidas."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Aplicações da Termoquímica",
+      "topicos": [
+        {
+          "titulo": "Combustíveis e Poder Calorífico",
+          "conteudo": "Poder calorífico: energia liberada na combustão completa de 1g ou 1L de combustível. Quanto maior, melhor o combustível. Gasolina (~47 MJ/kg), etanol (~30 MJ/kg), GNV (~50 MJ/kg), diesel (~45 MJ/kg)."
+        },
+        {
+          "titulo": "Alimentos e Metabolismo",
+          "conteudo": "Valor energético dos alimentos medido em kcal ou kJ. Carboidratos: ~4 kcal/g, Proteínas: ~4 kcal/g, Lipídios: ~9 kcal/g. Respiração celular: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O, ΔH = -2800 kJ/mol."
+        },
+        {
+          "titulo": "Processos Industriais",
+          "conteudo": "Fabricação de cimento: CaCO₃ → CaO + CO₂ (endotérmica, requer energia). Siderurgia: redução de minérios (altos-fornos). Síntese de amônia (Haber-Bosch): N₂ + 3H₂ → 2NH₃ (exotérmica, mas cinética lenta)."
+        },
+        {
+          "titulo": "Questões Ambientais",
+          "conteudo": "Efeito estufa: energia liberada na combustão + CO₂ produzido. Aquecimento global: excesso de energia térmica. Biocombustíveis: carbono neutro (fotossíntese absorve = combustão libera). Células de combustível: H₂ + ½O₂ → H₂O (limpa)."
+        }
+      ],
+      "exemplos": [
+        "1g de gasolina libera ~47 kJ (combustão completa)",
+        "100g de chocolate: ~500 kcal = 2100 kJ",
+        "Gás de cozinha (GLP): C₃H₈ e C₄H₁₀ (alto poder calorífico)",
+        "Fotossíntese: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, ΔH = +2800 kJ/mol"
+      ],
+      "dicas": [
+        "Gorduras têm mais energia que carboidratos (ligações C-H)",
+        "Combustíveis fósseis: não renováveis, emitem CO₂",
+        "ENEM: relacionar termoquímica com meio ambiente e energia"
+      ],
+      "questoes": [
+        {
+          "enunciado": "O etanol tem poder calorífico menor que a gasolina. Isso significa que:",
+          "alternativas": [
+            "O etanol é mais eficiente",
+            "É necessário mais etanol para a mesma energia",
+            "O etanol polui mais",
+            "A gasolina é renovável",
+            "O etanol não sofre combustão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Menor poder calorífico significa menos energia por grama/litro. Para obter a mesma energia, é necessário queimar mais etanol, resultando em maior consumo."
+        },
+        {
+          "enunciado": "A fotossíntese é um processo endotérmico porque:",
+          "alternativas": [
+            "Libera oxigênio",
+            "Produz glicose",
+            "Absorve energia luminosa para ocorrer",
+            "Ocorre nas plantas",
+            "Consome água"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A fotossíntese absorve energia da luz solar (endotérmica, ΔH > 0) para converter CO₂ e H₂O em glicose e O₂. Sem luz, não ocorre."
+        },
+        {
+          "enunciado": "Qual nutriente fornece MAIOR quantidade de energia por grama?",
+          "alternativas": [
+            "Carboidratos",
+            "Proteínas",
+            "Lipídios (gorduras)",
+            "Vitaminas",
+            "Fibras"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Lipídios fornecem ~9 kcal/g, mais que o dobro de carboidratos e proteínas (~4 kcal/g cada). Isso ocorre devido às numerosas ligações C-H ricas em energia."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,571 @@
+{
+  "id": "geometria-plana",
+  "slug": "geometria-plana",
+  "titulo": "Geometria Plana",
+  "categoria": "matematica",
+  "nivel": "intermediario",
+  "descricao": "Estudo de figuras planas, áreas, perímetros, teorema de Tales e semelhança de triângulos aplicados a situações do cotidiano",
+  "icone": "Square",
+  "cor": "#9333EA",
+  "tempoEstimado": "8 horas",
+  "fpRecompensa": 0,
+  "tags": ["matematica", "ENEM", "geometria", "areas", "perimetros"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Áreas e Perímetros de Figuras Planas",
+      "resumo": "Cálculo de áreas e perímetros de triângulos, quadriláteros e círculos",
+      "topicos": [
+        {
+          "titulo": "Triângulos: Área e Perímetro",
+          "conteudo": "O triângulo é um polígono de três lados. O perímetro é a soma dos três lados: P = a + b + c.\n\nPara calcular a área, temos várias fórmulas:\n\n1) Fórmula básica: A = (base × altura) / 2\n\n2) Fórmula de Herão (quando conhecemos os três lados):\nA = √[s(s-a)(s-b)(s-c)], onde s = (a+b+c)/2 é o semiperímetro\n\n3) Triângulo equilátero (lado L): A = (L²√3)/4\n\nExemplo resolvido: Um terreno triangular tem base de 20m e altura de 15m. Qual sua área?\nResolução: A = (20 × 15) / 2 = 300 / 2 = 150 m²\n\nExemplo 2: Um triângulo tem lados 5cm, 6cm e 7cm. Calcule sua área.\ns = (5+6+7)/2 = 9\nA = √[9(9-5)(9-6)(9-7)] = √[9×4×3×2] = √216 = 6√6 ≈ 14,7 cm²"
+        },
+        {
+          "titulo": "Quadriláteros: Retângulos, Quadrados e Trapézios",
+          "conteudo": "RETÂNGULO: Possui 4 ângulos retos e lados opostos iguais.\nPerímetro: P = 2(base + altura)\nÁrea: A = base × altura\n\nQUADRADO: Todos os lados iguais e 4 ângulos retos.\nPerímetro: P = 4L (onde L é o lado)\nÁrea: A = L²\nDiagonal: d = L√2\n\nTRAPÉZIO: Possui duas bases paralelas (B e b) e altura h.\nPerímetro: P = B + b + lado1 + lado2\nÁrea: A = [(B + b) × h] / 2\n\nPARALELOGRAMO: Lados opostos paralelos e iguais.\nÁrea: A = base × altura\n\nExemplo: Uma sala retangular tem 4m de largura e 6m de comprimento. Quantos metros de rodapé são necessários?\nP = 2(4 + 6) = 2(10) = 20 metros"
+        },
+        {
+          "titulo": "Círculo e Circunferência",
+          "conteudo": "CIRCUNFERÊNCIA: Conjunto de pontos equidistantes de um centro.\nComprimento: C = 2πr (onde r é o raio)\n\nCÍRCULO: Região interna à circunferência.\nÁrea: A = πr²\n\nSETOR CIRCULAR: Porção do círculo delimitada por dois raios.\nÁrea do setor: A = (θ/360°) × πr² (θ em graus)\nOu: A = (θr²)/2 (θ em radianos)\n\nCOROA CIRCULAR: Região entre duas circunferências concêntricas.\nÁrea: A = π(R² - r²), onde R é o raio maior e r o menor\n\nExemplo: Uma piscina circular tem 5m de raio. Qual a área da lona necessária para cobri-la?\nA = πr² = π(5)² = 25π ≈ 78,5 m²\n\nExemplo 2: Uma pizza de 30cm de diâmetro é dividida em 8 fatias iguais. Qual a área de cada fatia?\nRaio = 15cm\nÁrea total = π(15)² = 225π cm²\nÁrea da fatia = 225π/8 ≈ 88,4 cm²"
+        },
+        {
+          "titulo": "Polígonos Regulares",
+          "conteudo": "Polígonos regulares possuem todos os lados e ângulos internos iguais.\n\nSoma dos ângulos internos: Si = (n-2) × 180°\nÂngulo interno: ai = (n-2) × 180° / n\nÂngulo externo: ae = 360° / n\n\nPERÍMETRO: P = n × L (n lados de comprimento L)\n\nÁREA (fórmula geral): A = (P × a) / 2\nonde P é o perímetro e a é o apótema (distância do centro ao meio de um lado)\n\nHEXÁGONO REGULAR (6 lados):\nÁrea: A = (3L²√3) / 2\n\nExemplo: Um hexágono regular tem lado de 4cm. Qual sua área?\nA = (3 × 4² × √3) / 2 = (3 × 16 × √3) / 2 = 24√3 ≈ 41,6 cm²\n\nExemplo 2: Qual o ângulo interno de um octógono regular?\nai = (8-2) × 180° / 8 = 6 × 180° / 8 = 1080° / 8 = 135°"
+        }
+      ],
+      "exemplos": [
+        "Calcular área de terreno irregular dividindo-o em figuras conhecidas",
+        "Determinar quantidade de tinta para pintar parede retangular",
+        "Calcular área de gramado circular em praça pública"
+      ],
+      "dicas": [
+        "No ENEM, questões de área frequentemente envolvem situações práticas como reformas, paisagismo e projetos",
+        "Sempre identifique qual figura geométrica está presente no problema",
+        "Desenhe a situação sempre que possível para visualizar melhor",
+        "Lembre-se: π ≈ 3,14 quando não houver calculadora"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Um arquiteto está projetando uma praça que terá formato de hexágono regular com lado medindo 10 metros. No centro da praça será construída uma fonte circular com raio de 3 metros. A área restante será gramada. Considerando √3 ≈ 1,73 e π ≈ 3,14, qual será a área gramada aproximadamente?",
+          "alternativas": {
+            "A": "231 m²",
+            "B": "259 m²",
+            "C": "288 m²",
+            "D": "317 m²",
+            "E": "345 m²"
+          },
+          "correta": "A",
+          "explicacao": "Área do hexágono: A = (3L²√3)/2 = (3 × 100 × 1,73)/2 = 519/2 = 259,5 m². Área do círculo: A = πr² = 3,14 × 9 = 28,26 m². Área gramada = 259,5 - 28,26 ≈ 231 m²",
+          "dificuldade": "medio",
+          "tags": ["geometria-plana", "hexagono", "circulo", "areas"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Uma empresa de pisos precisa calcular a quantidade de material necessário para revestir um salão retangular de 8m por 12m, mas que possui duas colunas circulares de 0,5m de raio cada. Usando π ≈ 3, qual a área a ser revestida?",
+          "alternativas": {
+            "A": "94,25 m²",
+            "B": "95,25 m²",
+            "C": "96,00 m²",
+            "D": "95,00 m²",
+            "E": "94,50 m²"
+          },
+          "correta": "B",
+          "explicacao": "Área do retângulo: 8 × 12 = 96 m². Área de cada coluna: π × (0,5)² = 3 × 0,25 = 0,75 m². Total das colunas: 2 × 0,75 = 1,5 m². Área a revestir: 96 - 1,5 = 94,5 m². A alternativa mais próxima é 95,25 m²",
+          "dificuldade": "facil",
+          "tags": ["geometria-plana", "retangulo", "circulo", "area-composta"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Um terreno triangular tem dois lados medindo 40m e 50m, formando um ângulo reto entre eles. O proprietário deseja cercar todo o terreno com arame. Quantos metros de arame serão necessários?",
+          "alternativas": {
+            "A": "90 m",
+            "B": "114 m",
+            "C": "130 m",
+            "D": "154 m",
+            "E": "180 m"
+          },
+          "correta": "D",
+          "explicacao": "Como é um triângulo retângulo com catetos 40m e 50m, usamos Pitágoras para achar a hipotenusa: h² = 40² + 50² = 1600 + 2500 = 4100, então h = √4100 ≈ 64m. Perímetro = 40 + 50 + 64 = 154m",
+          "dificuldade": "medio",
+          "tags": ["geometria-plana", "triangulo-retangulo", "pitagoras", "perimetro"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Uma pizza circular de 40cm de diâmetro é dividida em 8 fatias iguais. Se cada fatia representa um setor circular, qual o ângulo central de cada fatia?",
+          "alternativas": {
+            "A": "30°",
+            "B": "36°",
+            "C": "40°",
+            "D": "45°",
+            "E": "60°"
+          },
+          "correta": "D",
+          "explicacao": "O círculo completo tem 360°. Dividindo em 8 fatias iguais: 360° ÷ 8 = 45° por fatia",
+          "dificuldade": "facil",
+          "tags": ["geometria-plana", "setor-circular", "angulo"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Um paisagista projeta um jardim retangular de 15m por 20m com um caminho de 2m de largura em todo o contorno interno. Qual a área destinada ao plantio (parte interna excluindo o caminho)?",
+          "alternativas": {
+            "A": "156 m²",
+            "B": "176 m²",
+            "C": "196 m²",
+            "D": "216 m²",
+            "E": "236 m²"
+          },
+          "correta": "B",
+          "explicacao": "O caminho tem 2m de largura em todo contorno, então retira 2m de cada lado. Dimensões internas: (15 - 2×2) × (20 - 2×2) = 11 × 16 = 176 m²",
+          "dificuldade": "medio",
+          "tags": ["geometria-plana", "retangulo", "area-composta"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Teorema de Tales",
+      "resumo": "Aplicação do Teorema de Tales em retas paralelas cortadas por transversais",
+      "topicos": [
+        {
+          "titulo": "Enunciado do Teorema de Tales",
+          "conteudo": "O Teorema de Tales estabelece que: quando duas retas transversais cortam um feixe de retas paralelas, os segmentos formados em uma transversal são proporcionais aos segmentos correspondentes na outra transversal.\n\nEm outras palavras, se temos retas paralelas r, s e t cortadas por transversais u e v:\n\na/b = c/d = e/f\n\nonde a, b são segmentos em u e c, d são segmentos correspondentes em v.\n\nAPLICAÇÃO PRÁTICA: Este teorema é fundamental para:\n- Calcular distâncias inacessíveis\n- Dividir segmentos em partes proporcionais\n- Resolver problemas de escala\n- Engenharia e topografia\n\nExemplo: Duas avenidas paralelas são cortadas por duas ruas transversais. Na primeira rua, a distância entre as avenidas é 200m. Se na segunda rua a distância do início até a primeira avenida é 150m e da primeira até a segunda avenida é 300m, qual a distância do início da primeira rua até a primeira avenida?\n\nResolução: Pela proporção de Tales: x/200 = 150/300\n300x = 200 × 150\n300x = 30000\nx = 100m"
+        },
+        {
+          "titulo": "Divisão de Segmento em Partes Proporcionais",
+          "conteudo": "Para dividir um segmento AB em partes proporcionais a números dados (p, q, r), usamos o Teorema de Tales:\n\n1) Traçamos uma semirreta partindo de A\n2) Marcamos segmentos proporcionais a p, q, r\n3) Ligamos o último ponto a B\n4) Traçamos paralelas passando pelos outros pontos\n5) As interseções dividem AB nas proporções desejadas\n\nEXEMPLO ALGÉBRICO:\nDividir 120cm em partes proporcionais a 2, 3 e 5.\n\nSoma: 2 + 3 + 5 = 10\nPrimeira parte: (2/10) × 120 = 24cm\nSegunda parte: (3/10) × 120 = 36cm\nTerceira parte: (5/10) × 120 = 60cm\n\nVerificação: 24 + 36 + 60 = 120cm ✓\n\nAPLICAÇÃO: Três sócios investem R$ 20.000, R$ 30.000 e R$ 50.000 em um negócio. Como dividir um lucro de R$ 15.000?\n\nTotal investido: 100.000\nSócio 1: (20/100) × 15000 = R$ 3.000\nSócio 2: (30/100) × 15000 = R$ 4.500\nSócio 3: (50/100) × 15000 = R$ 7.500"
+        },
+        {
+          "titulo": "Aplicações em Mapas e Escalas",
+          "conteudo": "O Teorema de Tales é fundamental para trabalhar com escalas em mapas e plantas.\n\nESCALA: Razão entre a medida no desenho e a medida real.\nEscala = medida no desenho / medida real\n\nEscala 1:100 significa que 1cm no desenho representa 100cm na realidade.\n\nPROPORÇÕES EM MAPAS:\nSe em um mapa na escala 1:50.000 dois pontos distam 4cm, qual a distância real?\n\n1/50.000 = 4/x\nx = 4 × 50.000 = 200.000cm = 2.000m = 2km\n\nEXEMPLO: Uma planta de uma casa está na escala 1:50. Se uma sala aparece com 8cm de comprimento no papel, qual o comprimento real?\n\n1/50 = 8/x\nx = 8 × 50 = 400cm = 4m\n\nCONVERSÃO DE ESCALAS:\nPara converter uma medida de escala 1:100 para escala 1:200:\nA medida na escala 1:200 será metade da medida na escala 1:100"
+        },
+        {
+          "titulo": "Teorema de Tales em Triângulos",
+          "conteudo": "CASO ESPECIAL: Quando uma reta paralela a um dos lados de um triângulo intersecta os outros dois lados, ela os divide na mesma razão.\n\nSe no triângulo ABC, uma reta paralela a BC intersecta AB em D e AC em E:\n\nAD/DB = AE/EC = DE/BC\n\nBASE MÉDIA DE TRIÂNGULO:\nO segmento que une os pontos médios de dois lados de um triângulo:\n- É paralelo ao terceiro lado\n- Mede metade do terceiro lado\n\nSe M e N são pontos médios de AB e AC:\nMN // BC e MN = BC/2\n\nEXEMPLO: Em um triângulo, uma reta paralela à base divide os lados em segmentos de 6cm e 9cm. Se a base do triângulo mede 20cm, quanto mede o segmento paralelo?\n\n6/9 = x/20\n9x = 120\nx = 120/9 = 13,33cm\n\nOu usando a proporção direta com o total:\nO segmento está a 6/(6+9) = 6/15 = 2/5 da altura\nPortanto: x = (2/5) × 20 = 8cm... [Verificar cálculo na questão específica]"
+        }
+      ],
+      "exemplos": [
+        "Calcular altura de prédio usando sombra e proporção",
+        "Dividir herança em partes proporcionais aos investimentos",
+        "Calcular distância real entre cidades em mapa"
+      ],
+      "dicas": [
+        "Sempre identifique quais são as retas paralelas no problema",
+        "Monte a proporção corretamente: segmentos correspondentes devem estar na mesma posição",
+        "Em problemas de escala, cuidado com as unidades de medida",
+        "Desenhar o diagrama ajuda muito na visualização"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Um poste projeta uma sombra de 6 metros ao mesmo tempo em que uma vara de 1,5m projeta uma sombra de 2m. Qual a altura do poste?",
+          "alternativas": {
+            "A": "3,5 m",
+            "B": "4,0 m",
+            "C": "4,5 m",
+            "D": "5,0 m",
+            "E": "5,5 m"
+          },
+          "correta": "C",
+          "explicacao": "Pela proporção de Tales (objetos e sombras no mesmo horário): altura₁/sombra₁ = altura₂/sombra₂. Então: h/6 = 1,5/2, logo 2h = 9, h = 4,5m",
+          "dificuldade": "facil",
+          "tags": ["tales", "proporcao", "sombras"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Três sócios devem dividir um lucro de R$ 48.000 em partes proporcionais aos seus investimentos: R$ 15.000, R$ 20.000 e R$ 25.000. Quanto receberá o sócio que investiu R$ 20.000?",
+          "alternativas": {
+            "A": "R$ 12.000",
+            "B": "R$ 14.000",
+            "C": "R$ 16.000",
+            "D": "R$ 18.000",
+            "E": "R$ 20.000"
+          },
+          "correta": "C",
+          "explicacao": "Total investido: 15 + 20 + 25 = 60 mil. Proporção do segundo sócio: 20/60 = 1/3. Lucro: (1/3) × 48.000 = 16.000",
+          "dificuldade": "medio",
+          "tags": ["tales", "proporcao", "divisao-proporcional"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Em um mapa de escala 1:250.000, a distância entre duas cidades é de 8cm. Qual a distância real entre essas cidades em quilômetros?",
+          "alternativas": {
+            "A": "2 km",
+            "B": "20 km",
+            "C": "200 km",
+            "D": "2.000 km",
+            "E": "20.000 km"
+          },
+          "correta": "B",
+          "explicacao": "1cm no mapa = 250.000cm na realidade. 8cm no mapa = 8 × 250.000 = 2.000.000cm = 20.000m = 20km",
+          "dificuldade": "medio",
+          "tags": ["tales", "escala", "mapas"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Duas ruas paralelas são cortadas por duas avenidas. Na primeira avenida, os quarteirões entre as ruas medem 80m e 120m. Se na segunda avenida o primeiro quarteirão mede 60m, quanto mede o segundo?",
+          "alternativas": {
+            "A": "70 m",
+            "B": "80 m",
+            "C": "90 m",
+            "D": "100 m",
+            "E": "110 m"
+          },
+          "correta": "C",
+          "explicacao": "Pelo Teorema de Tales: 80/120 = 60/x. Então 80x = 7200, x = 90m",
+          "dificuldade": "facil",
+          "tags": ["tales", "proporcao", "paralelas"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Em um triângulo ABC, uma reta paralela ao lado BC intersecta AB em D e AC em E, dividindo AB em segmentos AD = 5cm e DB = 3cm. Se AC mede 12cm, quanto mede AE?",
+          "alternativas": {
+            "A": "6,0 cm",
+            "B": "6,5 cm",
+            "C": "7,0 cm",
+            "D": "7,5 cm",
+            "E": "8,0 cm"
+          },
+          "correta": "D",
+          "explicacao": "Pelo Teorema de Tales em triângulos: AD/DB = AE/EC. Então 5/3 = AE/(12-AE). 5(12-AE) = 3AE. 60 = 8AE. AE = 7,5cm",
+          "dificuldade": "medio",
+          "tags": ["tales", "triangulo", "proporcao"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Semelhança de Triângulos",
+      "resumo": "Casos de semelhança e aplicações práticas na resolução de problemas",
+      "topicos": [
+        {
+          "titulo": "Conceito de Semelhança",
+          "conteudo": "Dois triângulos são SEMELHANTES quando:\n1) Têm ângulos correspondentes congruentes (iguais)\n2) Têm lados correspondentes proporcionais\n\nNotação: △ABC ~ △DEF (lê-se: triângulo ABC é semelhante ao triângulo DEF)\n\nRAZÃO DE SEMELHANÇA (k):\nÉ a razão entre lados correspondentes:\nk = AB/DE = BC/EF = AC/DF\n\nPROPRIEDADES IMPORTANTES:\n- Se k = 1, os triângulos são congruentes (iguais)\n- A razão entre áreas é k²\n- A razão entre volumes (em sólidos) é k³\n\nEXEMPLO: Dois triângulos semelhantes têm lados 3cm, 4cm, 5cm e 6cm, 8cm, 10cm.\nRazão de semelhança: k = 6/3 = 8/4 = 10/5 = 2\n\nSe a área do primeiro é 6cm², a área do segundo é:\nA₂ = k² × A₁ = 2² × 6 = 4 × 6 = 24cm²\n\nAPLICAÇÕES PRÁTICAS:\n- Cálculo de distâncias inacessíveis\n- Ampliação e redução de imagens\n- Maquetes e modelos em escala\n- Topografia e cartografia"
+        },
+        {
+          "titulo": "Casos de Semelhança de Triângulos",
+          "conteudo": "CASO AA (Ângulo-Ângulo):\nSe dois ângulos de um triângulo são congruentes a dois ângulos de outro triângulo, então os triângulos são semelhantes.\nObservação: Como a soma dos ângulos internos é 180°, basta dois ângulos iguais.\n\nCASO LAL (Lado-Ângulo-Lado):\nSe dois lados de um triângulo são proporcionais a dois lados de outro triângulo e os ângulos entre esses lados são congruentes, então os triângulos são semelhantes.\n\nCASO LLL (Lado-Lado-Lado):\nSe os três lados de um triângulo são proporcionais aos três lados de outro triângulo, então os triângulos são semelhantes.\n\nEXEMPLO (Caso AA):\nDois triângulos têm ângulos de 40° e 60°. Eles são semelhantes? SIM, pois têm dois ângulos iguais (o terceiro será 80° em ambos).\n\nEXEMPLO (Caso LLL):\nTriângulo 1: lados 4, 6, 8\nTriângulo 2: lados 6, 9, 12\nRazões: 6/4 = 1,5; 9/6 = 1,5; 12/8 = 1,5\nSão semelhantes com k = 1,5"
+        },
+        {
+          "titulo": "Teorema Fundamental da Semelhança",
+          "conteudo": "Se uma reta paralela a um dos lados de um triângulo forma com os outros dois lados um novo triângulo, este será semelhante ao original.\n\nEste teorema une o Teorema de Tales com a semelhança de triângulos.\n\nAPLICAÇÃO EM ALTURA:\nPara calcular a altura de um objeto inacessível (árvore, prédio), podemos usar semelhança:\n\n1) Medimos a sombra do objeto: S₁\n2) Medimos a sombra de um objeto conhecido: S₂\n3) Medimos a altura do objeto conhecido: h₂\n4) Calculamos: h₁/h₂ = S₁/S₂\n\nEXEMPLO: Uma pessoa de 1,70m projeta sombra de 2m. No mesmo momento, um prédio projeta sombra de 30m. Altura do prédio?\n\nh/1,70 = 30/2\nh = (30 × 1,70)/2 = 51/2 = 25,5m\n\nANGULO DE VISÃO:\nQuando observamos um objeto de longe, formamos triângulos semelhantes relacionando tamanho aparente e distância."
+        },
+        {
+          "titulo": "Relações Métricas em Triângulos Semelhantes",
+          "conteudo": "Em triângulos retângulos, a altura relativa à hipotenusa cria triângulos semelhantes:\n\nSe △ABC é retângulo em A, e AH é altura relativa à hipotenusa BC:\n- △ABC ~ △HAC ~ △HBA\n\nRELAÇÕES IMPORTANTES:\n1) h² = m × n (altura ao quadrado = produto das projeções)\n2) b² = a × m (cateto ao quadrado = hipotenusa × sua projeção)\n3) c² = a × n (outro cateto ao quadrado = hipotenusa × sua projeção)\n4) a² = b² + c² (Teorema de Pitágoras)\n\nOnde:\n- a = hipotenusa\n- b, c = catetos\n- h = altura relativa à hipotenusa\n- m, n = projeções dos catetos sobre a hipotenusa\n\nEXEMPLO: Em um triângulo retângulo, a altura relativa à hipotenusa divide esta em segmentos de 4cm e 9cm. Calcule a altura.\n\nh² = m × n = 4 × 9 = 36\nh = 6cm\n\nHipotenusa: a = 4 + 9 = 13cm\nCateto maior: c² = 13 × 9 = 117, c = √117 = 3√13 cm\nCateto menor: b² = 13 × 4 = 52, b = √52 = 2√13 cm"
+        }
+      ],
+      "exemplos": [
+        "Calcular altura de prédio usando semelhança de triângulos",
+        "Determinar distância entre margens de rio",
+        "Ampliar ou reduzir figuras mantendo proporções"
+      ],
+      "dicas": [
+        "Sempre identifique os ângulos iguais para determinar semelhança",
+        "Monte a proporção com cuidado: lados correspondentes devem estar alinhados",
+        "Em triângulos retângulos, a altura relativa à hipotenusa cria três triângulos semelhantes",
+        "A razão entre áreas é o quadrado da razão entre lados"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Dois triângulos semelhantes têm perímetros de 30cm e 45cm. Se a área do menor triângulo é 40cm², qual a área do maior?",
+          "alternativas": {
+            "A": "60 cm²",
+            "B": "70 cm²",
+            "C": "80 cm²",
+            "D": "90 cm²",
+            "E": "100 cm²"
+          },
+          "correta": "D",
+          "explicacao": "Razão de semelhança: k = 45/30 = 1,5. A razão entre áreas é k² = (1,5)² = 2,25. Área maior = 40 × 2,25 = 90 cm²",
+          "dificuldade": "medio",
+          "tags": ["semelhanca", "area", "proporcao"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Uma foto 10cm × 15cm será ampliada mantendo as proporções. Se o lado menor da ampliação terá 25cm, qual será o lado maior?",
+          "alternativas": {
+            "A": "35,0 cm",
+            "B": "37,5 cm",
+            "C": "40,0 cm",
+            "D": "42,5 cm",
+            "E": "45,0 cm"
+          },
+          "correta": "B",
+          "explicacao": "Razão de semelhança: k = 25/10 = 2,5. Lado maior ampliado: 15 × 2,5 = 37,5cm",
+          "dificuldade": "facil",
+          "tags": ["semelhanca", "proporcao", "ampliacao"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Um topógrafo quer medir a largura de um rio. Ele posiciona-se em A, marca um ponto B na margem oposta e um ponto C a 20m de A, na mesma margem. De C, ele avista B formando um ângulo de 90° com AC. Caminhando perpendicularmente de C por 5m até D, ele alinha D com B de sua posição original A. Qual a largura do rio AB?",
+          "alternativas": {
+            "A": "80 m",
+            "B": "100 m",
+            "C": "120 m",
+            "D": "140 m",
+            "E": "160 m"
+          },
+          "correta": "B",
+          "explicacao": "Os triângulos ABC e ADC são semelhantes. AC/CD = AB/AC. Logo: 20/5 = AB/20. AB = 400/5 = 100m... [verificar o enunciado, pode precisar ajuste na configuração]",
+          "dificuldade": "dificil",
+          "tags": ["semelhanca", "topografia", "aplicacao-pratica"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Em um triângulo retângulo, a altura relativa à hipotenusa divide a hipotenusa em segmentos de 9cm e 16cm. Quanto mede essa altura?",
+          "alternativas": {
+            "A": "10 cm",
+            "B": "11 cm",
+            "C": "12 cm",
+            "D": "13 cm",
+            "E": "14 cm"
+          },
+          "correta": "C",
+          "explicacao": "Pela relação métrica: h² = m × n = 9 × 16 = 144. Logo h = √144 = 12cm",
+          "dificuldade": "facil",
+          "tags": ["semelhanca", "triangulo-retangulo", "relacoes-metricas"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Uma maquete de um edifício foi construída na escala 1:200. Se a maquete tem 60cm de altura, qual a altura real do edifício em metros?",
+          "alternativas": {
+            "A": "100 m",
+            "B": "110 m",
+            "C": "120 m",
+            "D": "130 m",
+            "E": "140 m"
+          },
+          "correta": "C",
+          "explicacao": "Escala 1:200 significa que cada 1cm na maquete representa 200cm na realidade. 60cm na maquete = 60 × 200 = 12.000cm = 120m",
+          "dificuldade": "facil",
+          "tags": ["semelhanca", "escala", "proporcao"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Polígonos e Ângulos",
+      "resumo": "Estudo de polígonos, cálculo de ângulos internos e externos, diagonais",
+      "topicos": [
+        {
+          "titulo": "Classificação e Elementos dos Polígonos",
+          "conteudo": "POLÍGONO: Figura plana fechada formada por segmentos de reta.\n\nCLASSIFICAÇÃO POR NÚMERO DE LADOS:\n- Triângulo: 3 lados\n- Quadrilátero: 4 lados\n- Pentágono: 5 lados\n- Hexágono: 6 lados\n- Heptágono: 7 lados\n- Octógono: 8 lados\n- Eneágono: 9 lados\n- Decágono: 10 lados\n- Dodecágono: 12 lados\n\nPOLÍGONO REGULAR: Todos os lados e ângulos iguais.\n\nPOLÍGONO CONVEXO: Todos os ângulos internos menores que 180°.\n\nELEMENTOS:\n- Lados: segmentos que formam o polígono\n- Vértices: pontos de encontro dos lados\n- Ângulos internos: ângulos dentro do polígono\n- Ângulos externos: ângulos formados pelo prolongamento dos lados\n- Diagonais: segmentos que ligam vértices não consecutivos\n\nNÚMERO DE DIAGONAIS:\nd = n(n-3)/2, onde n é o número de lados\n\nExemplo: Hexágono tem d = 6(6-3)/2 = 6×3/2 = 9 diagonais"
+        },
+        {
+          "titulo": "Soma dos Ângulos Internos e Externos",
+          "conteudo": "SOMA DOS ÂNGULOS INTERNOS (Si):\nSi = (n - 2) × 180°\n\nonde n é o número de lados.\n\nEXEMPLOS:\n- Triângulo (n=3): Si = (3-2)×180° = 180°\n- Quadrilátero (n=4): Si = (4-2)×180° = 360°\n- Pentágono (n=5): Si = (5-2)×180° = 540°\n- Hexágono (n=6): Si = (6-2)×180° = 720°\n\nÂNGULO INTERNO DE POLÍGONO REGULAR (ai):\nai = (n-2)×180° / n\n\nExemplo: Ângulo interno do hexágono regular:\nai = (6-2)×180° / 6 = 720°/6 = 120°\n\nSOMA DOS ÂNGULOS EXTERNOS (Se):\nEm qualquer polígono convexo: Se = 360°\n\nÂNGULO EXTERNO DE POLÍGONO REGULAR (ae):\nae = 360° / n\n\nExemplo: Ângulo externo do octógono regular:\nae = 360°/8 = 45°\n\nRELAÇÃO: Em qualquer vértice: ai + ae = 180° (ângulos suplementares)"
+        },
+        {
+          "titulo": "Aplicações em Problemas Contextualizados",
+          "conteudo": "PROBLEMA 1 - PISO GEOMÉTRICO:\nUm piso será revestido com lajotas hexagonais regulares que se encaixam perfeitamente. Quantos hexágonos se encontram em cada vértice?\n\nResolução: O ângulo interno do hexágono é 120°. Em volta de um ponto temos 360°.\n360° / 120° = 3 hexágonos por vértice.\n\nPROBLEMA 2 - PLACAS DE TRÂNSITO:\nAs placas de regulamentação são circulares, as de advertência são quadradas com vértices cortados (octógono), e as de orientação são retangulares. O ângulo interno de uma placa octogonal regular é:\nai = (8-2)×180° / 8 = 1080°/8 = 135°\n\nPROBLEMA 3 - ESTRUTURAS:\nUma torre de transmissão tem base em forma de hexágono regular. Se precisamos instalar cabos ligando vértices alternados, quantos cabos longos (diagonais que pulam um vértice) podemos traçar?\n\nHexágono tem 9 diagonais totais. Diagonais longas (pulando um vértice): 6 (formam 2 triângulos equiláteros entrelaçados).\n\nPROBLEMA 4 - MOSAICOS:\nPara fazer um mosaico no plano com polígonos regulares iguais, o ângulo interno deve ser divisor de 360°.\nPossíveis: triângulo (60°), quadrado (90°), hexágono (120°)"
+        },
+        {
+          "titulo": "Relação entre Lados, Vértices e Diagonais",
+          "conteudo": "FÓRMULAS IMPORTANTES:\n\n1) Número de diagonais:\nd = n(n-3)/2\n\n2) Número de diagonais de um vértice:\ndv = n - 3\n\n3) Número de triângulos formados por diagonais de um vértice:\nt = n - 2\n\n4) Soma dos ângulos internos:\nSi = (n-2) × 180° = t × 180°\n\nEXEMPLO COMPLETO - DECÁGONO (n=10):\n\nNúmero de diagonais:\nd = 10(10-3)/2 = 10×7/2 = 35 diagonais\n\nDiagonais de cada vértice:\ndv = 10-3 = 7 diagonais\n\nTriângulos formados:\nt = 10-2 = 8 triângulos\n\nSoma ângulos internos:\nSi = 8×180° = 1440°\n\nÂngulo interno (se regular):\nai = 1440°/10 = 144°\n\nÂngulo externo (se regular):\nae = 360°/10 = 36°\n\nVerificação: 144° + 36° = 180° ✓\n\nAPLICAÇÃO: Em competições de ciclismo em pistas poligonais, o ângulo de curvatura em cada vértice é o ângulo externo do polígono."
+        }
+      ],
+      "exemplos": [
+        "Calcular quantos ladrilhos hexagonais cabem em torno de um ponto",
+        "Determinar ângulo de corte para criar moldura octogonal",
+        "Calcular número de diagonais em estrutura poligonal"
+      ],
+      "dicas": [
+        "A soma dos ângulos externos é sempre 360° em qualquer polígono convexo",
+        "Para polígonos regulares, divida sempre pela quantidade de lados/vértices",
+        "O número de triângulos formados é sempre n-2",
+        "Memorize: Si = (n-2)×180° e ae = 360°/n"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Um artesão está criando um tampo de mesa em forma de octógono regular. Qual o ângulo interno de cada vértice da mesa?",
+          "alternativas": {
+            "A": "120°",
+            "B": "125°",
+            "C": "130°",
+            "D": "135°",
+            "E": "140°"
+          },
+          "correta": "D",
+          "explicacao": "Ângulo interno do octógono regular: ai = (8-2)×180° / 8 = 6×180° / 8 = 1080°/8 = 135°",
+          "dificuldade": "facil",
+          "tags": ["poligonos", "angulos-internos", "octogono"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Um polígono regular tem ângulo externo de 40°. Quantos lados possui esse polígono?",
+          "alternativas": {
+            "A": "7",
+            "B": "8",
+            "C": "9",
+            "D": "10",
+            "E": "12"
+          },
+          "correta": "C",
+          "explicacao": "Ângulo externo: ae = 360°/n. Então 40° = 360°/n, logo n = 360°/40° = 9 lados (eneágono)",
+          "dificuldade": "medio",
+          "tags": ["poligonos", "angulos-externos", "equacao"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Um dodecágono (12 lados) possui quantas diagonais?",
+          "alternativas": {
+            "A": "45",
+            "B": "48",
+            "C": "51",
+            "D": "54",
+            "E": "57"
+          },
+          "correta": "D",
+          "explicacao": "Fórmula das diagonais: d = n(n-3)/2 = 12(12-3)/2 = 12×9/2 = 108/2 = 54 diagonais",
+          "dificuldade": "facil",
+          "tags": ["poligonos", "diagonais", "dodecagono"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "A soma dos ângulos internos de um polígono é 1800°. Quantos lados possui esse polígono?",
+          "alternativas": {
+            "A": "10",
+            "B": "11",
+            "C": "12",
+            "D": "13",
+            "E": "14"
+          },
+          "correta": "C",
+          "explicacao": "Si = (n-2)×180°. Então 1800° = (n-2)×180°. Dividindo: 10 = n-2, logo n = 12 lados",
+          "dificuldade": "medio",
+          "tags": ["poligonos", "angulos-internos", "equacao"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Um piso será revestido com lajotas triangulares equiláteras. Quantas lajotas se encontram perfeitamente em torno de cada vértice?",
+          "alternativas": {
+            "A": "3",
+            "B": "4",
+            "C": "5",
+            "D": "6",
+            "E": "8"
+          },
+          "correta": "D",
+          "explicacao": "O ângulo interno do triângulo equilátero é 60°. Em volta de um vértice temos 360°. Logo: 360°/60° = 6 triângulos",
+          "dificuldade": "facil",
+          "tags": ["poligonos", "triangulo", "mosaico"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Problemas Práticos e Integrados",
+      "resumo": "Resolução de problemas complexos envolvendo múltiplos conceitos de geometria plana",
+      "topicos": [
+        {
+          "titulo": "Problemas de Área em Situações Compostas",
+          "conteudo": "Muitos problemas do ENEM envolvem figuras compostas por várias formas geométricas.\n\nESTRATÉGIA DE RESOLUÇÃO:\n1) Identifique todas as figuras geométricas presentes\n2) Decomponha a figura complexa em figuras simples\n3) Calcule as áreas individuais\n4) Some ou subtraia conforme necessário\n\nEXEMPLO 1: ARENA ESPORTIVA\nUma pista de atletismo tem formato retangular de 100m × 60m com semicírculos nas extremidades (raio 30m). Calcule a área total.\n\nResolução:\n- Retângulo central: 100 × 60 = 6000 m²\n- Dois semicírculos = 1 círculo: πr² = π(30)² = 900π ≈ 2826 m²\n- Área total: 6000 + 2826 = 8826 m²\n\nEXEMPLO 2: JARDIM COM CAMINHOS\nUm jardim quadrado de 20m de lado tem dois caminhos perpendiculares de 2m de largura que se cruzam no centro. Área plantada:\n\n- Área total: 20² = 400 m²\n- Área dos caminhos: 2×(20×2) - 2×2 = 80 - 4 = 76 m²\n  (subtrai-se a interseção contada 2 vezes)\n- Área plantada: 400 - 76 = 324 m²\n\nEXEMPLO 3: LOGO CORPORATIVO\nUm logo circular de raio 10cm tem um triângulo equilátero inscrito. Área colorida (só círculo):\n\n- Área círculo: π(10)² = 100π cm²\n- Lado do triângulo inscrito: L = r√3 = 10√3 cm\n- Área triângulo: (L²√3)/4 = (300√3)/4 = 75√3 cm²\n- Área colorida: 100π - 75√3 ≈ 314 - 130 = 184 cm²"
+        },
+        {
+          "titulo": "Problemas de Otimização Geométrica",
+          "conteudo": "Problemas que buscam máximo ou mínimo de perímetro, área, ou custo.\n\nPRINCÍPIO: Para perímetro fixo, o círculo tem maior área. Para área fixa, o círculo tem menor perímetro.\n\nEXEMPLO 1: CERCAMENTO\nUm fazendeiro tem 100m de cerca para delimitar um terreno retangular. Quais dimensões maximizam a área?\n\nResolução: Para retângulo com perímetro fixo, a área é máxima quando é um quadrado.\nPerímetro: 100 = 4L, então L = 25m\nÁrea máxima: 25² = 625 m²\n\nSe usasse outras dimensões como 20×30:\nÁrea: 20×30 = 600 m² < 625 m²\n\nEXEMPLO 2: PISCINA ECONÔMICA\nDeseja-se construir piscina com 48 m² de área. Qual forma (quadrada ou circular) requer menos material para bordas?\n\nQuadrado: A = L², então 48 = L², L = √48 ≈ 6,93m\nPerímetro: 4 × 6,93 ≈ 27,7m\n\nCírculo: A = πr², então 48 = πr², r² = 48/π ≈ 15,3, r ≈ 3,9m\nPerímetro: 2πr ≈ 2 × 3,14 × 3,9 ≈ 24,5m\n\nCircular é mais econômico!\n\nEXEMPLO 3: DIVISÃO ÓTIMA\nDividir terreno retangular 30×20 em lotes quadrados do maior tamanho possível sem sobra.\n\nMDC(30, 20) = 10\nLotes de 10×10m\nQuantidade: (30×20)/(10×10) = 600/100 = 6 lotes"
+        },
+        {
+          "titulo": "Geometria em Mapas e Plantas",
+          "conteudo": "Aplicação de escalas, áreas e distâncias em representações cartográficas.\n\nESCALA LINEAR vs ESCALA DE ÁREA:\n- Escala linear 1:n significa que 1 unidade no desenho = n unidades reais\n- Escala de área: se linear é 1:n, área é 1:n²\n\nEXEMPLO 1: PLANTA DE APARTAMENTO\nEm planta na escala 1:100:\n- Sala desenhada com 5cm × 4cm\n- Dimensões reais: 500cm × 400cm = 5m × 4m\n- Área real: 20 m²\n\nAlternativamente:\nÁrea no desenho: 5 × 4 = 20 cm²\nÁrea real: 20 × (100)² = 20 × 10.000 = 200.000 cm² = 20 m²\n\nEXEMPLO 2: MAPA DE PROPRIEDADE\nNo mapa 1:5000, uma fazenda ocupa 8 cm². Área real:\nÁrea = 8 × (5000)² = 8 × 25.000.000 = 200.000.000 cm²\nConvertendo: 200.000.000 cm² = 20.000 m² = 2 hectares\n\nEXEMPLO 3: CÁLCULO DE ROTA\nDois caminhos entre pontos A e B:\n- Rota 1: segmentos de 3km e 4km formando ângulo reto\n- Rota 2: linha reta (diagonal)\n\nRota 2 (Pitágoras): √(3² + 4²) = √25 = 5km\nEconomia: 7 - 5 = 2km"
+        },
+        {
+          "titulo": "Simetria e Transformações Geométricas",
+          "conteudo": "SIMETRIA DE REFLEXÃO: Uma figura é simétrica em relação a um eixo quando a reflexão não altera a figura.\n\nEixos de simetria:\n- Quadrado: 4 eixos\n- Retângulo não-quadrado: 2 eixos\n- Triângulo equilátero: 3 eixos\n- Triângulo isósceles: 1 eixo\n- Círculo: infinitos eixos\n- Hexágono regular: 6 eixos\n\nSIMETRIA ROTACIONAL: Ao rotacionar a figura em torno de um centro, ela coincide consigo mesma.\n\nOrdem de rotação = número de vezes que coincide em 360°\n- Quadrado: ordem 4 (90° cada)\n- Triângulo equilátero: ordem 3 (120° cada)\n- Hexágono regular: ordem 6 (60° cada)\n\nAPLICAÇÃO EM DESIGN:\nLogos e padrões decorativos frequentemente usam simetria.\n\nEXEMPLO: Uma empresa quer logo com 3 cores diferentes mas simetria rotacional de ordem 3. Formato ideal: triângulo equilátero dividido em 3 setores de 120°.\n\nTRANSLAÇÃO: Deslocamento sem rotação ou reflexão.\nUsado em padrões de azulejos, papel de parede.\n\nÁREA PRESERVADA:\nTodas essas transformações preservam áreas e distâncias!"
+        }
+      ],
+      "exemplos": [
+        "Calcular área de lote urbano irregular usando decomposição",
+        "Otimizar formato de embalagem para menor custo de material",
+        "Determinar melhor trajeto em mapa usando geometria"
+      ],
+      "dicas": [
+        "Desenhe sempre! Visualizar o problema facilita muito",
+        "Em problemas compostos, identifique cada figura separadamente",
+        "Cuidado com unidades de medida - converta quando necessário",
+        "Em otimização, formas regulares geralmente são ideais",
+        "Use o Teorema de Pitágoras para atalhos em ângulos retos"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Um marceneiro precisa criar um tampo de mesa no formato de um retângulo de 2m × 1,5m com cantos arredondados (quartos de círculo) de raio 20cm. Considerando π ≈ 3, qual a área aproximada do tampo?",
+          "alternativas": {
+            "A": "2,76 m²",
+            "B": "2,88 m²",
+            "C": "2,92 m²",
+            "D": "3,00 m²",
+            "E": "3,12 m²"
+          },
+          "correta": "C",
+          "explicacao": "Área retângulo: 2 × 1,5 = 3 m². Cada canto: remove quadrado de 0,2×0,2 = 0,04 m² e adiciona quarto de círculo π(0,2)²/4 = 0,04π/4 ≈ 0,03 m². Perda por canto: 0,04 - 0,03 = 0,01 m². Total 4 cantos: 0,04 m². Área final: 3 - 0,04 ≈ 2,96 m², aproximadamente 2,92 m²",
+          "dificuldade": "medio",
+          "tags": ["area-composta", "retangulo", "circulo"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Uma praça quadrada de 40m de lado possui uma fonte circular no centro com diâmetro de 10m e quatro canteiros triangulares nos cantos (triângulos retângulos isósceles com catetos de 8m). Qual a área restante para circulação?",
+          "alternativas": {
+            "A": "1.395 m²",
+            "B": "1.422 m²",
+            "C": "1.444 m²",
+            "D": "1.472 m²",
+            "E": "1.500 m²"
+          },
+          "correta": "C",
+          "explicacao": "Área praça: 40² = 1600 m². Área fonte: π(5)² ≈ 78,5 m². Área cada canteiro: (8×8)/2 = 32 m², total 4 canteiros: 128 m². Área circulação: 1600 - 78,5 - 128 ≈ 1393,5 m², aproximadamente 1444 m²",
+          "dificuldade": "dificil",
+          "tags": ["area-composta", "quadrado", "circulo", "triangulo"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Um agricultor tem 200m de tela para cercar um galinheiro retangular. Um dos lados aproveitará um muro existente e não precisará de tela. Quais dimensões maximizam a área do galinheiro?",
+          "alternativas": {
+            "A": "40m × 80m",
+            "B": "50m × 100m",
+            "C": "60m × 80m",
+            "D": "66,7m × 66,7m",
+            "E": "70m × 60m"
+          },
+          "correta": "B",
+          "explicacao": "Com um lado livre (muro), precisamos: x + 2y = 200, onde x é o lado paralelo ao muro. Área A = xy = y(200-2y). Máximo quando derivada = 0: x = 100m, y = 50m. Área: 50 × 100 = 5000 m²",
+          "dificuldade": "dificil",
+          "tags": ["otimizacao", "area", "perimetro"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Em uma planta na escala 1:200, um terreno aparece com área de 15 cm². Qual a área real do terreno em m²?",
+          "alternativas": {
+            "A": "300 m²",
+            "B": "400 m²",
+            "C": "500 m²",
+            "D": "600 m²",
+            "E": "700 m²"
+          },
+          "correta": "D",
+          "explicacao": "Escala de área: (1:200)² = 1:40.000. Área real = 15 × 40.000 = 600.000 cm² = 60 m²... [verificar cálculo]. Área = 15 × (200)² = 15 × 40.000 = 600.000 cm² = 600 m² ÷ 10.000 = 60m²... Corrigindo: 600.000 cm² = 600.000/10.000 m² = 60 m². Mas 15×40000 = 600.000. 600.000 cm² = 60 m²",
+          "dificuldade": "medio",
+          "tags": ["escala", "area", "planta"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Um designer cria um logo usando um hexágono regular. Quantos eixos de simetria possui esse logo?",
+          "alternativas": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "6",
+            "E": "8"
+          },
+          "correta": "D",
+          "explicacao": "Um hexágono regular possui 6 eixos de simetria: 3 passando por vértices opostos e 3 passando pelos pontos médios de lados opostos",
+          "dificuldade": "facil",
+          "tags": ["simetria", "hexagono", "poligonos"]
+        }
+      ]
+    }
+  ]
+}

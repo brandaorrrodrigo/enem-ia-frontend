@@ -1,0 +1,402 @@
+{
+  "id": "historia-imperialismo",
+  "titulo": "Imperialismo e Neocolonialismo",
+  "descricao": "Partilha da África e Ásia, imperialismo europeu e resistências coloniais (século XIX)",
+  "icone": "🌍",
+  "cor": "from-emerald-600 to-teal-700",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-conceito-causas",
+      "titulo": "Imperialismo: Conceito e Causas",
+      "topicos": [
+        "Diferença entre colonialismo e imperialismo",
+        "Segunda Revolução Industrial",
+        "Busca por matérias-primas e mercados",
+        "Nacionalismo e darwinismo social",
+        "Missão civilizatória"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O imperialismo do século XIX (neocolonialismo) diferenciava-se do colonialismo dos séculos XV-XVIII. Sobre essas diferenças, é correto afirmar que:",
+          "alternativas": [
+            "Eram processos idênticos sem distinções",
+            "Neocolonialismo focou África/Ásia; motivado por indústria e nacionalismo",
+            "Colonialismo foi mais intenso que imperialismo",
+            "Neocolonialismo não tinha motivações econômicas",
+            "Ambos ocorreram no mesmo período histórico"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Colonialismo (XV-XVIII): América, busca de metais preciosos, especiarias, mercantilismo. Neocolonialismo/Imperialismo (XIX): África e Ásia, busca de matérias-primas para indústrias, mercados consumidores, investimentos de capital, acompanhado de ideologias racistas (darwinismo social) e nacionalismo exacerbado."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Segunda Revolução Industrial foi fator crucial para o imperialismo. Sobre essa relação, é correto afirmar que:",
+          "alternativas": [
+            "Industrialização não tinha relação com expansão colonial",
+            "Indústrias demandavam matérias-primas, mercados e áreas para investir capital excedente",
+            "Europa tornou-se autossuficiente sem necessidade de colônias",
+            "Imperialismo precedeu a industrialização europeia",
+            "Não havia interesse econômico na colonização"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Segunda Revolução Industrial (1870-1914) intensificou necessidades: matérias-primas (borracha, petróleo, minerais, algodão), mercados para escoar superprodução industrial, áreas para investir capital excedente (ferrovias, portos, plantações). Competição entre potências industriais (Inglaterra, França, Alemanha, EUA) impulsionou corrida colonial."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O nacionalismo exacerbado do século XIX influenciou o imperialismo. Sobre essa relação, é correto afirmar que:",
+          "alternativas": [
+            "Nacionalismo opunha-se totalmente ao imperialismo",
+            "Possuir colônias era símbolo de grandeza nacional; competição entre potências",
+            "Nações europeias não competiam por territórios coloniais",
+            "Nacionalismo era inexistente no século XIX",
+            "Colônias não tinham valor simbólico para as nações"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Nacionalismo exacerbado: possuir colônias era prestígio, poder, grandeza nacional. Potências competiam (\"corrida colonial\"), temendo ficar para trás. Imprensa nacionalista exaltava conquistas, exploradores viravam heróis. Colônias davam status geopolítico. Essa competição gerou tensões que contribuíram para Primeira Guerra Mundial."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Ideologias racistas justificavam o imperialismo. O darwinismo social defendia que:",
+          "alternativas": [
+            "Todas as raças eram biologicamente iguais",
+            "Raças superiores (brancas) deveriam dominar inferiores; aplicava evolução darwinista à sociedade",
+            "Colonização era moralmente injustificável",
+            "Povos colonizados eram culturalmente superiores aos europeus",
+            "Não havia hierarquia racial entre os povos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Darwinismo social distorcia teoria de Darwin, aplicando-a a sociedades: afirmava raças brancas como \"superiores\", naturalmente destinadas a dominar \"inferiores\". Pseudo-ciência (craniometria, frenologia) tentava \"provar\" hierarquia racial. Ideologia legitimava exploração colonial como \"natural\" e \"inevitável\"."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A ideologia da \"missão civilizatória\" justificava moralmente o imperialismo. Sobre esse conceito, é correto afirmar que:",
+          "alternativas": [
+            "Reconhecia superioridade das culturas africanas e asiáticas",
+            "Alegava dever de levar civilização, cristianismo e progresso aos povos \"atrasados\"",
+            "Respeitava totalmente as culturas e religiões nativas",
+            "Opunha-se à colonização por razões morais",
+            "Não tinha nenhuma dimensão ideológica ou cultural"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "\"Fardo do homem branco\" (Kipling): europeus tinham \"missão\" de civilizar povos \"selvagens\", levar cristianismo, educação, tecnologia, progresso. Negava valor das culturas nativas. Era discurso hipócrita: mascarava exploração econômica brutal com retórica humanitária. Missionários frequentemente acompanhavam colonizadores."
+        }
+      ]
+    },
+    {
+      "id": "mod2-partilha-africa",
+      "titulo": "Partilha da África",
+      "topicos": [
+        "Exploração inicial (exploradores)",
+        "Conferência de Berlim (1884-1885)",
+        "Divisão artificial do continente",
+        "Principais potências coloniais",
+        "Formas de dominação"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A exploração europeia da África intensificou-se no século XIX. Exploradores como Livingstone e Stanley desbravaram o interior. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "Exploradores não tinham nenhuma relação com colonização posterior",
+            "Mapeamento geográfico facilitou conquista colonial; buscavam recursos e rotas",
+            "África era totalmente conhecida pelos europeus antes do século XIX",
+            "Exploração tinha objetivos exclusivamente científicos",
+            "Nenhum explorador europeu adentrou o continente africano"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Exploradores (Livingstone, Stanley, Brazza): mapearam rios (Nilo, Congo), lagos, recursos minerais. Relatos despertaram interesse econômico e colonial. Sociedades geográficas europeias financiavam expedições. \"Descobertas\" (do ponto de vista europeu) pavimentaram caminho para conquista militar e ocupação territorial."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Conferência de Berlim (1884-1885) foi decisiva para partilha africana. Sobre esse evento, é correto afirmar que:",
+          "alternativas": [
+            "Africanos participaram igualmente das negociações",
+            "Potências europeias dividiram África sem considerar povos, culturas e fronteiras nativas",
+            "Conferência garantiu independência dos Estados africanos",
+            "Não teve nenhuma consequência para o continente",
+            "África foi preservada da colonização europeia"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Conferência de Berlim (Bismarck): potências europeias (excluindo africanos) dividiram continente, estabelecendo regras: ocupação efetiva (não só reivindicação), livre navegação em rios, livre comércio. Fronteiras artificiais ignoraram etnias, línguas, culturas, separando povos ou unindo inimigos. Base dos conflitos étnicos contemporâneos."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A partilha da África foi rápida: em 1880, Europa controlava 10% do território; em 1914, 90%. Sobre as principais potências coloniais, é correto afirmar que:",
+          "alternativas": [
+            "Apenas Portugal colonizou o continente africano",
+            "Inglaterra e França dominavam maiores áreas; Bélgica, Alemanha, Itália, Portugal também participaram",
+            "Nenhuma nação europeia tinha colônias na África",
+            "África foi totalmente independente durante século XIX",
+            "Estados Unidos dominaram a maior parte do continente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Principais potências: Inglaterra (Egito ao Cabo, \"Cairo-Cidade do Cabo\"), França (Norte e Oeste: Argélia, AOF, AEF), Bélgica (Congo, propriedade pessoal de Leopoldo II), Alemanha (Namíbia, Tanganica, Camarões), Portugal (Angola, Moçambique), Itália (Líbia, Somália, tentou Etiópia). Apenas Etiópia e Libéria permaneceram independentes."
+        },
+        {
+          "id": "q4",
+          "enunciado": "As formas de dominação colonial variavam. Sobre os tipos de colonização na África, é correto afirmar que:",
+          "alternativas": [
+            "Todas as colônias tinham administração idêntica",
+            "Administração direta (assimilação) vs. indireta (autoridades nativas); exploração econômica sempre presente",
+            "Não havia exploração econômica nas colônias",
+            "Colônias tinham total autonomia política",
+            "Europeus não interferiam nas sociedades africanas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Administração direta (França): imposição de língua, cultura, leis francesas (assimilação). Administração indireta (Inglaterra): mantinha chefes nativos subordinados (indirect rule). Ambas exploravam economicamente: monoculturas (cacau, café, borracha), mineração (ouro, diamantes), trabalho forçado, impostos, infraestrutura voltada para extração/exportação."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A exploração colonial na África foi brutal. O caso do Congo Belga é emblemático. Sobre essa colônia, é correto afirmar que:",
+          "alternativas": [
+            "Foi modelo de colonização humanitária",
+            "Propriedade pessoal de Leopoldo II; exploração brutal da borracha; milhões de mortos",
+            "Não houve violência contra população nativa",
+            "Congo desenvolveu-se economicamente sob domínio belga",
+            "Trabalhadores recebiam salários justos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Congo: propriedade pessoal de Leopoldo II da Bélgica (Estado Livre do Congo, 1885-1908). Exploração brutal da borracha: trabalho forçado, mutilações (mãos cortadas de quem não atingia cotas), assassinatos em massa. Estima-se 10-15 milhões de mortos. Escândalo internacional forçou transferência para Estado belga (1908). Joseph Conrad denunciou em \"Coração das Trevas\"."
+        }
+      ]
+    },
+    {
+      "id": "mod3-asia-oceania",
+      "titulo": "Imperialismo na Ásia e Oceania",
+      "topicos": [
+        "Índia: joia da Coroa Britânica",
+        "China: Guerra do Ópio e esferas de influência",
+        "Sudeste Asiático (Indochina)",
+        "Japão: exceção (Restauração Meiji)",
+        "Austrália e Nova Zelândia"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Índia foi a principal colônia britânica, chamada de \"joia da Coroa\". Sobre a colonização indiana, é correto afirmar que:",
+          "alternativas": [
+            "Índia beneficiou-se economicamente com colonização",
+            "Inglaterra desindustrializou Índia, impôs monoculturas, explorou riquezas",
+            "Não houve resistência indiana ao domínio britânico",
+            "Colonização respeitou totalmente cultura e religião hindus",
+            "Índia permaneceu totalmente independente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Companhia das Índias Orientais (depois Coroa, após Revolta dos Cipaios, 1857) dominou Índia. Desindustrializou país (destruindo manufaturas têxteis), impôs monoculturas (chá, algodão, índigo), extraiu recursos. Infraestrutura (ferrovias) servia exportação. Impostos extorsivos, fomes artificiais (Bengala). Gandhi lideraria resistência não-violenta no século XX."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A China resistiu formalmente à colonização total, mas sofreu imperialismo. As Guerras do Ópio (1839-1842, 1856-1860) resultaram de:",
+          "alternativas": [
+            "Tentativa chinesa de conquistar territórios britânicos",
+            "Inglaterra impor comércio de ópio; China perdeu, cedeu Hong Kong, abriu portos",
+            "China derrotar totalmente as potências europeias",
+            "Acordo pacífico entre China e Inglaterra",
+            "Não teve nenhuma consequência para a China"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Inglaterra exportava ópio (da Índia) para China, viciando população, equilibrando balança comercial. China proibiu, destruindo carregamentos. Inglaterra declarou guerra, venceu com superioridade militar. Tratados Desiguais: China cedeu Hong Kong, abriu portos (Tratado de Nanquim, 1842), pagou indenizações. Início da humilhação chinesa."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Após as Guerras do Ópio, a China foi dividida em esferas de influência. Sobre esse sistema, é correto afirmar que:",
+          "alternativas": [
+            "China manteve total soberania sobre seu território",
+            "Potências (Inglaterra, França, Alemanha, Rússia, Japão) controlavam regiões econômicas",
+            "Apenas uma potência dominou toda a China",
+            "Não houve nenhuma interferência estrangeira na China",
+            "China expandiu seu território através de conquistas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Esferas de influência: potências controlavam regiões (portos, ferrovias, comércio, investimentos) sem colonização formal. Inglaterra (Yangtzé), França (Sul), Alemanha (Shandong), Rússia (Manchúria), Japão (Formosa, Coreia). Dinastia Qing enfraqueceu. Rebelião Boxer (1900) tentou expulsar estrangeiros, foi reprimida. República proclamada (1911)."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O Japão foi exceção: não foi colonizado, tornando-se potência imperialista. A Restauração Meiji (1868) promoveu:",
+          "alternativas": [
+            "Isolamento total do Japão em relação ao Ocidente",
+            "Modernização acelerada: industrialização, exército moderno, expansão imperialista",
+            "Manutenção absoluta das estruturas feudais",
+            "Rejeição completa de tecnologia ocidental",
+            "Submissão voluntária a potências europeias"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Após \"abertura\" forçada (Comodoro Perry, EUA, 1853), Meiji modernizou Japão: aboliu feudalismo, criou exército/marinha modernos, industrializou, adotou constituição, educação universal. Japão tornou-se potência, derrotou China (1894-95) e Rússia (1904-05), colonizou Coreia (1910), Taiwan. Único país asiático imperialista."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O Sudeste Asiático foi dominado por potências europeias. Sobre a colonização dessa região, é correto afirmar que:",
+          "alternativas": [
+            "Toda região permaneceu independente",
+            "França (Indochina: Vietnã, Laos, Camboja); Inglaterra (Birmânia, Malásia); Holanda (Indonésia)",
+            "Apenas uma potência colonizou toda a região",
+            "Não houve resistência à colonização europeia",
+            "Colonização não visava exploração econômica"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Partilha do Sudeste Asiático: França (Indochina Francesa: Vietnã, Laos, Camboja), Inglaterra (Birmânia, Malásia), Holanda (Indonésia/Índias Orientais Holandesas), Espanha depois EUA (Filipinas). Apenas Tailândia (Sião) permaneceu independente (zona-tampão entre impérios francês e britânico). Exploração de borracha, estanho, especiarias, arroz."
+        }
+      ]
+    },
+    {
+      "id": "mod4-resistencias",
+      "titulo": "Resistências Coloniais",
+      "topicos": [
+        "Revolta dos Cipaios (Índia, 1857)",
+        "Rebelião Boxer (China, 1900)",
+        "Guerra Zulu (África do Sul)",
+        "Resistência etíope (Menelik II)",
+        "Movimentos anti-coloniais"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Revolta dos Cipaios (1857-1858) foi grande levante contra domínio britânico na Índia. Sobre essa revolta, é correto afirmar que:",
+          "alternativas": [
+            "Foi movimento de total apoio ao domínio britânico",
+            "Soldados indianos (cipaios) rebelaram-se; revolta reprimida; Coroa assumiu controle",
+            "Inglaterra concedeu imediatamente independência à Índia",
+            "Não houve violência durante a revolta",
+            "Revolta fortaleceu Companhia das Índias Orientais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Cipaios (soldados indianos do exército britânico) rebelaram-se: estopim foi boato de cartuchos engraxados com gordura de vaca (sagrada para hindus) e porco (impuro para muçulmanos). Revolta expressava insatisfações acumuladas. Foi brutalmente reprimida. Consequência: Coroa britânica assumiu administração direta (fim da Companhia das Índias Orientais, 1858)."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Rebelião Boxer (1900) na China foi movimento contra presença estrangeira. Sobre esse episódio, é correto afirmar que:",
+          "alternativas": [
+            "Apoiava a presença estrangeira na China",
+            "Movimento xenófobo atacou estrangeiros e cristãos; reprimido por coalizão internacional",
+            "Conseguiu expulsar definitivamente estrangeiros da China",
+            "Não sofreu nenhuma repressão externa",
+            "Fortaleceu a soberania chinesa"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Boxers (\"Punhos Justos e Harmoniosos\"): sociedade secreta xenófoba, atacou cristãos chineses, missionários, estrangeiros, cercou embaixadas em Pequim. Dinastia Qing inicialmente apoiou. Coalizão de 8 potências (Inglaterra, França, Alemanha, Rússia, Japão, EUA, Itália, Áustria-Hungria) reprimiu violentamente. China pagou pesadas indenizações, enfraquecendo ainda mais dinastia."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A resistência africana à colonização foi intensa, embora militarmente inferior. A Guerra Zulu (1879) opôs:",
+          "alternativas": [
+            "Zulus apoiaram totalmente britânicos",
+            "Reino Zulu (rei Cetshwayo) resistiu a britânicos; derrotados apesar de vitórias iniciais",
+            "Britânicos não conquistaram território zulu",
+            "Não houve resistência africana na região",
+            "Zulus venceram definitivamente os britânicos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Reino Zulu (África do Sul) resistiu. Vitória zulu em Isandlwana (1879) chocou britânicos. Porém, superioridade tecnológica britânica (rifles, metralhadoras Gatling) prevaleceu. Zulus derrotados, reino anexado. Resistência demonstrou coragem e organização militar africana (impis zulus), mas tecnologia europeia era decisiva."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Etiópia foi único país africano que manteve independência, derrotando tentativa de colonização italiana. Sobre esse episódio, é correto afirmar que:",
+          "alternativas": [
+            "Etiópia foi facilmente conquistada pela Itália",
+            "Imperador Menelik II derrotou italianos em Adowa (1896); Etiópia permaneceu independente",
+            "Itália não tentou colonizar a Etiópia",
+            "Etiópia não tinha exército organizado",
+            "Todas as nações africanas derrotaram colonizadores europeus"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Batalha de Adowa (1896): Menelik II, com exército modernizado, derrotou italianos. Etiópia permaneceu independente (até invasão de Mussolini, 1935, revertida pós-Segunda Guerra). Vitória simbolizou resistência africana, inspirou movimentos pan-africanistas. Demonstrou que europeus não eram invencíveis."
+        },
+        {
+          "id": "q5",
+          "enunciado": "As resistências coloniais, apesar de derrotas militares, tiveram importância histórica. Sobre seu significado, é correto afirmar que:",
+          "alternativas": [
+            "Não tiveram nenhuma importância ou legado",
+            "Preservaram memória de resistência; inspiraram nacionalismos e independências do século XX",
+            "Fortaleceram permanentemente o domínio colonial",
+            "Desencorajaram totalmente futuros movimentos anti-coloniais",
+            "Foram totalmente esquecidas pelas gerações posteriores"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Resistências coloniais, embora derrotadas militarmente, preservaram memória de luta, dignidade, recusa da submissão. Líderes (Menelik II, samori Touré, Cetshwayo) tornaram-se símbolos. Experiências inspiraram nacionalismos africanos e asiáticos do século XX, movimentos de independência (pós-Segunda Guerra). Descolonização tem raízes nessas resistências."
+        }
+      ]
+    },
+    {
+      "id": "mod5-legado-imperialismo",
+      "titulo": "Legado do Imperialismo",
+      "topicos": [
+        "Consequências econômicas (subdesenvolvimento)",
+        "Fronteiras artificiais e conflitos étnicos",
+        "Racismo e discriminação",
+        "Movimentos de independência (século XX)",
+        "Debate contemporâneo sobre colonialismo"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O imperialismo estruturou desigualdade econômica global. Sobre suas consequências econômicas, é correto afirmar que:",
+          "alternativas": [
+            "Colônias desenvolveram-se economicamente com colonização",
+            "Exploração colonial criou subdesenvolvimento estrutural; economias dependentes e exportadoras",
+            "Todos os países alcançaram desenvolvimento igualitário",
+            "Colonização não teve impactos econômicos duradouros",
+            "Ex-colônias tornaram-se automaticamente desenvolvidas após independência"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Imperialismo estruturou subdesenvolvimento: economias coloniais voltadas para exportação de matérias-primas, monoculturas, infraestrutura extrativa, desindustrialização, expropriação de riquezas. Independências não reverteram estruturas. Teoria da dependência (Prebisch, Frank) analisa como centro desenvolvido mantém periferia subdesenvolvida. Desigualdade global atual tem raízes no imperialismo."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Fronteiras coloniais artificiais ignoraram etnias e culturas nativas. Sobre suas consequências, é correto afirmar que:",
+          "alternativas": [
+            "Fronteiras respeitaram totalmente divisões étnicas tradicionais",
+            "Divisões artificiais geraram conflitos étnicos, guerras civis e instabilidade política",
+            "Não causaram nenhum problema pós-independência",
+            "Todas as etnias conviveram pacificamente após colonização",
+            "Fronteiras foram totalmente redesenhadas após independências"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Fronteiras da Conferência de Berlim ignoraram etnias, línguas, reinos pré-coloniais. Uniram grupos rivais ou separaram povos unidos. Pós-independência: conflitos étnicos (Ruanda: hutus/tutsis; Nigéria: Biafra; Sudão), guerras civis, instabilidade. Elites coloniais favorecidas mantiveram poder, gerando ressentimentos. Legado trágico de divisões arbitrárias persiste."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O imperialismo deixou legado ideológico de racismo. Sobre essa herança, é correto afirmar que:",
+          "alternativas": [
+            "Colonialismo eliminou completamente o racismo",
+            "Ideologias racistas do colonialismo persistem: discriminação, estereótipos, eurocentrismo",
+            "Não há nenhuma relação entre colonialismo e racismo atual",
+            "Descolonização acabou automaticamente com discriminação racial",
+            "Colonialismo promoveu igualdade racial total"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Colonialismo propagou racismo \"científico\", inferiorização de culturas não-europeias, estereótipos (africanos como \"selvagens\", asiáticos como \"despóticos\"). Legado persiste: discriminação racial, desvalorização de culturas não-ocidentais, eurocentrismo em currículos, subrepresentação, desigualdades raciais estruturais. Movimentos anti-racistas contemporâneos enfrentam herança colonial."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Movimentos de independência proliferaram no século XX, especialmente após Segunda Guerra Mundial. Entre os fatores dessa descolonização, destaca-se:",
+          "alternativas": [
+            "Fortalecimento absoluto das potências coloniais",
+            "Enfraquecimento europeu pós-guerras; nacionalismos; pressão de EUA/URSS; luta anticolonial",
+            "Ausência de movimentos nacionalistas nas colônias",
+            "Concessão voluntária de independência sem luta",
+            "Colônias não desejavam independência"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Descolonização (1945-1970s): Europa enfraquecida pelas guerras mundiais, nacionalismos anticoloniais fortalecidos (Gandhi na Índia, Nkrumah em Gana, Ho Chi Minh no Vietnã), pressão de superpotências (EUA e URSS, anticoloniais por motivos distintos), Carta da ONU (autodeterminação). Algumas independências pacíficas (Índia, Gana), outras violentas (Argélia, Angola)."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O debate contemporâneo sobre colonialismo envolve questões de memória e reparação. Sobre essas discussões, é correto afirmar que:",
+          "alternativas": [
+            "Não há nenhum debate sobre legado colonial atualmente",
+            "Discussões sobre reparações, devolução de artefatos, reconhecimento de crimes, descolonização de currículos",
+            "Todas as ex-metrópoles reconheceram e repararam crimes coloniais",
+            "Colonialismo é visto universalmente como benéfico",
+            "Não há demandas por reconhecimento ou reparação"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Debates atuais: demandas por reparações financeiras, devolução de artefatos roubados (Museu Britânico, Louvre), reconhecimento oficial de genocídios/massacres, pedidos de desculpas, descolonização de currículos e museus, derrubada de estátuas de colonizadores. Países ex-colonizados e movimentos sociais pressionam por justiça histórica. Ex-metrópoles resistem, mas discussão avança."
+        }
+      ]
+    }
+  ]
+}

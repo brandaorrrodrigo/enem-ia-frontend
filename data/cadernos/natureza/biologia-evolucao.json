@@ -1,0 +1,282 @@
+{
+  "id": "biologia-evolucao",
+  "titulo": "Evolucao",
+  "descricao": "Teorias evolutivas e mecanismos de especiacao",
+  "icone": "🦖",
+  "cor": "from-amber-500 to-orange-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Teorias Evolutivas",
+      "resumo": "Diferentes teorias tentaram explicar a evolucao das especies. Lamarck propunha a lei do uso e desuso e a heranca de caracteres adquiridos. Darwin propunha a selecao natural. O neodarwinismo une Darwin e genetica.",
+      "topicos": [
+        "Lamarckismo: uso e desuso, heranca de caracteres adquiridos",
+        "Darwinismo: selecao natural, sobrevivencia do mais apto",
+        "Neodarwinismo: mutacao, recombinacao, selecao natural",
+        "Fixismo x Evolucionismo",
+        "Evidencias da evolucao"
+      ],
+      "exemplos": [
+        "Lamarck (incorreto): pescoco da girafa alongou por uso continuo",
+        "Darwin (correto): girafas de pescoco longo sobreviveram mais",
+        "Selecao natural: bicos de tentilhoes nas Galapagos",
+        "Mutacao: resistencia bacteriana a antibioticos",
+        "Recombinacao genica: variabilidade na reproducao sexuada"
+      ],
+      "dicas": [
+        "Lamarck: teoria incorreta (caracteres adquiridos nao sao herdados)",
+        "Darwin: selecao natural age sobre variabilidade pre-existente",
+        "Neodarwinismo: teoria sintetica (Darwin + Mendel + mutacoes)",
+        "Adaptacao: caracteristica favoravel selecionada",
+        "Evolucao: mudanca nas frequencias alelicas ao longo do tempo"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Segundo a teoria de Lamarck, como surgiram as girafas de pescoco longo?",
+          "alternativas": [
+            "Por selecao natural de girafas com pescoco longo",
+            "Por mutacoes aleatorias seguidas de selecao",
+            "Por uso continuo do pescoco, que alongou e foi herdado",
+            "Por recombinacao genetica entre girafas",
+            "Por deriva genetica em populacoes pequenas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Lamarck propunha que o uso continuo de orgaos os desenvolvia (lei do uso) e que essas caracteristicas adquiridas eram herdadas. Essa teoria esta INCORRETA - caracteres adquiridos nao sao herdados."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Qual a principal contribuicao da genetica para o neodarwinismo?",
+          "alternativas": [
+            "Explicar a origem da variabilidade genetica (mutacoes)",
+            "Refutar a teoria de Darwin",
+            "Provar o lamarckismo",
+            "Demonstrar que evolucao nao ocorre",
+            "Criar especies transgenicas"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "O neodarwinismo (teoria sintetica da evolucao) integrou genetica ao darwinismo, explicando que mutacoes e recombinacao genetica geram a variabilidade sobre a qual atua a selecao natural."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Selecao Natural",
+      "resumo": "A selecao natural e o mecanismo principal da evolucao. Individuos com caracteristicas vantajosas tem maior chance de sobreviver e reproduzir, transmitindo seus genes. Pode ser direcional, estabilizadora ou disruptiva.",
+      "topicos": [
+        "Principios: variabilidade, competicao, selecao, reproducao diferencial",
+        "Selecao direcional: favorece um extremo",
+        "Selecao estabilizadora: favorece a media",
+        "Selecao disruptiva: favorece os extremos",
+        "Adaptacao ao ambiente"
+      ],
+      "exemplos": [
+        "Melanismo industrial: mariposas escuras em areas poluidas",
+        "Resistencia a antibioticos: bacterias resistentes sobrevivem",
+        "Bicos de tentilhoes: adaptados a diferentes alimentos",
+        "Selecao estabilizadora: peso de bebes humanos (nem muito leve, nem muito pesado)",
+        "Mimetismo: borboletas imitam especies venenosas"
+      ],
+      "dicas": [
+        "Variabilidade genetica e essencial para selecao natural",
+        "Selecao age sobre fenotipos, mas afeta frequencias alelicas",
+        "Adaptacao: resultado da selecao ao longo de geracoes",
+        "Selecao direcional: shift para um lado (ex: pescoco girafa)",
+        "Fitness: sucesso reprodutivo de um individuo"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "O melanismo industrial em mariposas na Inglaterra e um exemplo classico de selecao natural. Por que mariposas escuras se tornaram mais comuns em areas industrializadas?",
+          "alternativas": [
+            "Poluicao causou mutacao que escureceu as mariposas",
+            "Mariposas escuras eram menos visiveis em troncos escurecidos pela fuligem",
+            "Mariposas claras migraram para areas limpas",
+            "Mariposas escuras comiam mais e cresciam mais",
+            "Poluicao matou todas as mariposas claras"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Com a poluicao, troncos de arvores escureceram. Mariposas escuras ficaram camufladas, sendo menos predadas que as claras. Assim, deixaram mais descendentes (selecao natural)."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Qual tipo de selecao natural favorece individuos com caracteristicas intermediarias?",
+          "alternativas": [
+            "Selecao direcional",
+            "Selecao disruptiva",
+            "Selecao estabilizadora",
+            "Selecao sexual",
+            "Deriva genetica"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Selecao estabilizadora favorece a media, eliminando os extremos. Exemplo: bebes humanos de peso intermediario tem maior sobrevivencia que muito leves ou muito pesados."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Especiacao",
+      "resumo": "Especiacao e o processo de formacao de novas especies. Ocorre quando populacoes ficam isoladas (geografica ou reprodutivamente) e acumulam diferencas geneticas ate nao mais se cruzarem.",
+      "topicos": [
+        "Especiacao alopatrica: isolamento geografico",
+        "Especiacao simpatrica: isolamento reprodutivo na mesma area",
+        "Barreiras pre-zigoticas: impedem fecundacao",
+        "Barreiras pos-zigoticas: hibridos inferteis ou inviavies",
+        "Irradiacao adaptativa"
+      ],
+      "exemplos": [
+        "Alopatrica: tentilhoes de Darwin nas Galapagos (ilhas diferentes)",
+        "Simpatrica: poliploidia em plantas",
+        "Barreira temporal: especies que reproduzem em epocas diferentes",
+        "Barreira mecanica: incompatibilidade de genitalia",
+        "Hibrido esteril: mula (cavalo x jumenta) e esteril"
+      ],
+      "dicas": [
+        "Especiacao alopatrica: isolamento geografico (rios, montanhas)",
+        "Especiacao simpatrica: mais comum em plantas (poliploidia)",
+        "Barreiras pre-zigoticas: antes da fecundacao (comportamental, temporal)",
+        "Barreiras pos-zigoticas: apos fecundacao (hibrido esteril)",
+        "Irradiacao adaptativa: de uma especie surgem varias (ex: tentilhoes)"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Duas populacoes de uma mesma especie de roedores foram separadas pela formacao de um rio. Apos milhares de anos, nao conseguem mais cruzar e gerar descendentes ferteis. Esse processo e chamado:",
+          "alternativas": [
+            "Especiacao simpatrica",
+            "Especiacao alopatrica",
+            "Convergencia evolutiva",
+            "Coevolucao",
+            "Hibridacao"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Especiacao alopatrica ocorre quando uma barreira geografica (rio, montanha) separa populacoes, que evoluem independentemente ate se tornarem especies distintas."
+        },
+        {
+          "id": "q6",
+          "enunciado": "A mula, hibrido entre cavalo e jumenta, e esteril. Isso exemplifica qual tipo de barreira reprodutiva?",
+          "alternativas": [
+            "Barreira pre-zigotica temporal",
+            "Barreira pre-zigotica comportamental",
+            "Barreira pos-zigotica: hibrido esteril",
+            "Barreira mecanica",
+            "Nao ha barreira, pois houve cruzamento"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Barreira pos-zigotica ocorre APOS a fecundacao. A mula nasce, mas e esteril (hibrido esteril), impedindo fluxo genico entre cavalos e jumentos."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Evidencias da Evolucao",
+      "resumo": "Diversas evidencias cientificas comprovam a evolucao: fosseis, anatomia comparada, embriologia, biologia molecular e biogeografia. Todas apontam para ancestralidade comum.",
+      "topicos": [
+        "Fosseis: registro da vida antiga",
+        "Orgaos homologos: mesma origem, funcoes diferentes",
+        "Orgaos analogos: origens diferentes, mesma funcao",
+        "Orgaos vestigiais: sem funcao aparente",
+        "DNA e similaridade genetica"
+      ],
+      "exemplos": [
+        "Fossil: Archaeopteryx (transicao reptil-ave)",
+        "Homologia: membro anterior de mamiferos (braco, asa, nadadeira)",
+        "Analogia: asa de inseto e asa de ave (convergencia)",
+        "Vestigio: apendice humano, ossos pelvicos em baleias",
+        "DNA: humanos e chimpanzes compartilham 98% do DNA"
+      ],
+      "dicas": [
+        "Fosseis: mostram especies extintas e transicoes",
+        "Homologia: indica ancestral comum (divergencia evolutiva)",
+        "Analogia: convergencia evolutiva (ambientes similares)",
+        "Vestigios: orgaos que perderam funcao original",
+        "Embriologia: embrioes de vertebrados muito similares"
+      ],
+      "questoes": [
+        {
+          "id": "q7",
+          "enunciado": "O braco humano, a asa de morcego e a nadadeira de baleia tem estrutura ossea similar, mas funcoes diferentes. Sao exemplos de:",
+          "alternativas": [
+            "Orgaos analogos",
+            "Orgaos homologos",
+            "Orgaos vestigiais",
+            "Convergencia evolutiva",
+            "Especiacao"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Orgaos homologos tem mesma origem embrionaria (ancestral comum) mas funcoes diferentes. Indicam divergencia evolutiva a partir de um ancestral comum."
+        },
+        {
+          "id": "q8",
+          "enunciado": "O apendice humano e um exemplo de:",
+          "alternativas": [
+            "Orgao homologo",
+            "Orgao analogo",
+            "Orgao vestigial",
+            "Adaptacao recente",
+            "Especializacao"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Orgaos vestigiais sao estruturas que perderam a funcao original ao longo da evolucao. O apendice humano era funcional em ancestrais herbivoros (digestao de celulose)."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Evolucao Humana",
+      "resumo": "A evolucao humana envolve a linhagem dos hominideos, que divergiu dos grandes primatas ha cerca de 6-7 milhoes de anos. Caracteristicas como bipedismo, aumento do cerebro e fabricacao de ferramentas marcam essa evolucao.",
+      "topicos": [
+        "Primatas: caracteristicas gerais",
+        "Hominideos: Australopithecus, Homo habilis, H. erectus",
+        "Homo sapiens: origem africana",
+        "Bipedismo: locomocao em dois pes",
+        "Encefalicacao: aumento do cerebro"
+      ],
+      "exemplos": [
+        "Australopithecus: bipedismo, cerebro pequeno (3-4 mi anos)",
+        "Homo habilis: primeiras ferramentas (2,5 mi anos)",
+        "Homo erectus: controle do fogo (1,8 mi anos)",
+        "Homo neanderthalensis: conviveu com sapiens na Europa",
+        "Homo sapiens: surgiu na Africa ha 300 mil anos"
+      ],
+      "dicas": [
+        "Bipedismo: uma das primeiras caracteristicas (Australopithecus)",
+        "Cerebro: aumentou gradualmente (450 cm3 -> 1400 cm3)",
+        "Ferramentas: Homo habilis foi o primeiro",
+        "Fogo: Homo erectus controlou o fogo",
+        "Humanos modernos: Homo sapiens, origem africana"
+      ],
+      "questoes": [
+        {
+          "id": "q9",
+          "enunciado": "Qual caracteristica surgiu PRIMEIRO na evolucao dos hominideos?",
+          "alternativas": [
+            "Aumento significativo do cerebro",
+            "Fabricacao de ferramentas",
+            "Bipedismo",
+            "Controle do fogo",
+            "Linguagem complexa"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O bipedismo (locomocao em dois pes) surgiu primeiro, ha cerca de 4 milhoes de anos nos Australopithecus. O aumento cerebral e ferramentas vieram depois."
+        },
+        {
+          "id": "q10",
+          "enunciado": "De acordo com evidencias cientificas, onde surgiu o Homo sapiens?",
+          "alternativas": [
+            "Asia",
+            "Europa",
+            "Africa",
+            "America",
+            "Oceania"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Evidencias fosseis, geneticas e arqueologicas indicam que o Homo sapiens surgiu na Africa ha cerca de 300 mil anos e posteriormente migrou para outros continentes."
+        }
+      ]
+    }
+  ]
+}

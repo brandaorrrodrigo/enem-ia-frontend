@@ -1,0 +1,348 @@
+{
+  "id": "quimica-eletroquimica",
+  "titulo": "Eletroquímica",
+  "descricao": "Aprenda sobre pilhas, eletrólise, potencial de eletrodo, oxidação e redução, e aplicações eletroquímicas",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Reações de Oxidorredução",
+      "topicos": [
+        {
+          "titulo": "Conceitos de Oxidação e Redução",
+          "conteudo": "Oxidação: perda de elétrons, aumento de Nox. Redução: ganho de elétrons, diminuição de Nox. OIL RIG: Oxidation Is Loss, Reduction Is Gain. Sempre ocorrem juntas (redox). Não existe oxidação sem redução."
+        },
+        {
+          "titulo": "Número de Oxidação (Nox)",
+          "conteudo": "Regras: 1) Elemento livre: Nox = 0. 2) Íon monoatômico: Nox = carga. 3) H: +1 (exceto hidretos: -1). 4) O: -2 (exceto peróxidos: -1, OF₂: +2). 5) Metais: Grupo 1 = +1, Grupo 2 = +2. 6) Soma dos Nox = carga total."
+        },
+        {
+          "titulo": "Agente Oxidante e Redutor",
+          "conteudo": "Agente oxidante: provoca oxidação, ele próprio reduz (ganha elétrons). Agente redutor: provoca redução, ele próprio oxida (perde elétrons). Oxidante forte: grande tendência a ganhar e⁻ (F₂, O₂, permanganato). Redutor forte: grande tendência a perder e⁻ (metais alcalinos)."
+        },
+        {
+          "titulo": "Balanceamento Redox",
+          "conteudo": "Método das semi-reações: 1) Identificar Nox. 2) Separar oxidação e redução. 3) Balancear átomos (exceto H, O). 4) Balancear O com H₂O. 5) Balancear H com H⁺. 6) Balancear cargas com e⁻. 7) Igualar elétrons. 8) Somar."
+        }
+      ],
+      "exemplos": [
+        "Zn + Cu²⁺ → Zn²⁺ + Cu: Zn oxida (0→+2), Cu²⁺ reduz (+2→0)",
+        "MnO₄⁻: Nox(Mn) = +7 (forte oxidante)",
+        "Na: Nox = 0; Na⁺: Nox = +1 (oxidou)",
+        "H₂SO₄: H(+1), S(+6), O(-2) → soma = 0",
+        "Oxidante: MnO₄⁻ (reduz Mn⁺⁷→Mn²⁺). Redutor: Fe²⁺ (oxida Fe²⁺→Fe³⁺)"
+      ],
+      "dicas": [
+        "Oxidação: perda e⁻, ↑Nox. Redução: ganho e⁻, ↓Nox",
+        "O que oxida é o redutor; o que reduz é o oxidante",
+        "Soma de Nox: molécula neutra = 0, íon = carga do íon"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Na reação Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂, qual é o agente oxidante?",
+          "alternativas": [
+            "Cl₂",
+            "Br⁻",
+            "Cl⁻",
+            "Br₂",
+            "Não há agente oxidante"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Cl₂ (Nox=0) reduz para Cl⁻ (Nox=-1), ganhando elétrons. Quem reduz é o agente oxidante. Br⁻ oxida para Br₂, sendo o agente redutor."
+        },
+        {
+          "enunciado": "O número de oxidação do enxofre em H₂SO₄ é:",
+          "alternativas": [
+            "+2",
+            "+4",
+            "+6",
+            "+8",
+            "-2"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "H₂SO₄: 2(+1) + Nox(S) + 4(-2) = 0 → 2 + Nox(S) - 8 = 0 → Nox(S) = +6. O enxofre está altamente oxidado no ácido sulfúrico."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Pilhas e Células Galvânicas",
+      "topicos": [
+        {
+          "titulo": "Princípio de Funcionamento",
+          "conteudo": "Pilha: converte energia química em elétrica espontaneamente. Dois eletrodos em soluções separadas, conectados por ponte salina. Oxidação no ânodo (polo -), redução no cátodo (polo +). Elétrons fluem do ânodo para o cátodo pelo circuito externo."
+        },
+        {
+          "titulo": "Componentes da Pilha",
+          "conteudo": "Ânodo: eletrodo onde ocorre oxidação (polo negativo, fornece elétrons). Cátodo: eletrodo onde ocorre redução (polo positivo, recebe elétrons). Ponte salina: permite fluxo iônico, mantém neutralidade elétrica. Circuito externo: caminho dos elétrons."
+        },
+        {
+          "titulo": "Notação de Pilha",
+          "conteudo": "Ânodo | solução anódica || solução catódica | Cátodo. Exemplo: Zn(s) | Zn²⁺(aq) || Cu²⁺(aq) | Cu(s). Barra simples (|): mudança de fase. Barra dupla (||): ponte salina. Esquerda: oxidação. Direita: redução."
+        },
+        {
+          "titulo": "Pilhas Comuns",
+          "conteudo": "Pilha de Daniell: Zn/Cu²⁺, clássica. Pilha seca (Leclanché): Zn/MnO₂/C, 1,5V. Pilha alcalina: Zn/MnO₂ em meio básico, maior durabilidade. Bateria de chumbo: Pb/PbO₂/H₂SO₄, 12V (6 células de 2V), recarregável."
+        }
+      ],
+      "exemplos": [
+        "Pilha de Daniell: Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s), E° = 1,10V",
+        "Ânodo (Zn): Zn → Zn²⁺ + 2e⁻ (oxidação)",
+        "Cátodo (Cu): Cu²⁺ + 2e⁻ → Cu (redução)",
+        "Ponte salina: KCl, K⁺ migra para cátodo, Cl⁻ para ânodo",
+        "Pilha alcalina AA: 1,5V, comum em controles remotos"
+      ],
+      "dicas": [
+        "ÂNODO: oxidação, polo negativo, libera elétrons",
+        "CÁTODO: redução, polo positivo, recebe elétrons",
+        "Elétrons: ânodo → circuito → cátodo (sempre)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Em uma pilha, o polo negativo é:",
+          "alternativas": [
+            "O cátodo, onde ocorre redução",
+            "O ânodo, onde ocorre oxidação",
+            "O cátodo, onde ocorre oxidação",
+            "O ânodo, onde ocorre redução",
+            "A ponte salina"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O ânodo é o polo negativo da pilha, onde ocorre a oxidação (perda de elétrons). O cátodo é o polo positivo, onde ocorre redução."
+        },
+        {
+          "enunciado": "Na pilha Zn | Zn²⁺ || Cu²⁺ | Cu, o que ocorre no eletrodo de zinco?",
+          "alternativas": [
+            "Redução, é o cátodo",
+            "Oxidação, é o ânodo",
+            "Não ocorre reação",
+            "Deposição de cobre",
+            "Neutralização"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O zinco está à esquerda na notação, sendo o ânodo. Nele ocorre oxidação: Zn(s) → Zn²⁺(aq) + 2e⁻. O zinco metálico se dissolve."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Potencial de Eletrodo",
+      "topicos": [
+        {
+          "titulo": "Potencial Padrão de Redução (E°)",
+          "conteudo": "Medida da tendência de um eletrodo sofrer redução. Referência: eletrodo padrão de hidrogênio (EPH), E° = 0,00V. E° positivo: maior tendência a reduzir que H⁺. E° negativo: menor tendência. Quanto maior E°, melhor oxidante."
+        },
+        {
+          "titulo": "Cálculo de Potencial da Pilha",
+          "conteudo": "E°(pilha) = E°(cátodo) - E°(ânodo) = E°(redução) - E°(oxidação). Alternativamente: E°(pilha) = E°(maior) - E°(menor). Pilha espontânea: E°(pilha) > 0. Não espontânea: E°(pilha) < 0. Quanto maior E°, maior voltagem."
+        },
+        {
+          "titulo": "Série Eletroquímica",
+          "conteudo": "Ordem decrescente de E°(redução). Topo: melhores oxidantes (F₂, +2,87V). Base: melhores redutores (Li, -3,04V). Metal com menor E° desloca metal com maior E° de solução. Li, K, Na: redutores fortes. F₂, Cl₂, O₂: oxidantes fortes."
+        },
+        {
+          "titulo": "Espontaneidade de Reações",
+          "conteudo": "Reação espontânea se E° > 0. Relação com energia livre: ΔG° = -nFE° (F = 96500 C/mol, constante de Faraday). E° > 0 → ΔG° < 0 (espontâneo). Permite prever se reação redox ocorre sem energia externa."
+        }
+      ],
+      "exemplos": [
+        "Cu²⁺ + 2e⁻ → Cu, E° = +0,34V (oxida facilmente)",
+        "Zn²⁺ + 2e⁻ → Zn, E° = -0,76V (reduz dificilmente)",
+        "Pilha Zn/Cu: E° = 0,34 - (-0,76) = 1,10V (espontânea)",
+        "F₂ + 2e⁻ → 2F⁻, E° = +2,87V (oxidante fortíssimo)",
+        "Li⁺ + e⁻ → Li, E° = -3,04V (redutor fortíssimo)"
+      ],
+      "dicas": [
+        "E° positivo: boa tendência a reduzir (bom oxidante)",
+        "E° negativo: má tendência a reduzir (bom redutor na forma reduzida)",
+        "E°(pilha) = cátodo - ânodo, deve ser > 0 para espontaneidade"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Dados E°: Ag⁺/Ag = +0,80V; Cu²⁺/Cu = +0,34V. O potencial da pilha Cu | Cu²⁺ || Ag⁺ | Ag é:",
+          "alternativas": [
+            "+0,46V",
+            "+1,14V",
+            "-0,46V",
+            "+0,34V",
+            "+0,80V"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Ag tem maior E° → cátodo (reduz). Cu → ânodo (oxida). E° = 0,80 - 0,34 = +0,46V. Positivo, portanto espontânea."
+        },
+        {
+          "enunciado": "Uma espécie com E° muito positivo tende a ser um bom:",
+          "alternativas": [
+            "Agente redutor",
+            "Agente oxidante",
+            "Catalisador",
+            "Inibidor",
+            "Solvente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "E° muito positivo indica alta tendência a ganhar elétrons (reduzir). Logo, é um bom agente oxidante (oxida outras espécies enquanto se reduz)."
+        },
+        {
+          "enunciado": "Para uma reação redox ser espontânea, o potencial E° deve ser:",
+          "alternativas": [
+            "Igual a zero",
+            "Negativo",
+            "Positivo",
+            "Independe do valor",
+            "Menor que -1V"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "E° > 0 indica que a reação é espontânea (ΔG° < 0). Quanto maior E°, mais favorável termodinamicamente é a reação."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Eletrólise",
+      "topicos": [
+        {
+          "titulo": "Conceito de Eletrólise",
+          "conteudo": "Processo não-espontâneo: energia elétrica → reação química. Oposto da pilha. Requer fonte externa (bateria, fonte DC). Eletrólise ígnea: substância fundida. Eletrólise aquosa: em solução. Oxidação no ânodo (+), redução no cátodo (-)."
+        },
+        {
+          "titulo": "Eletrólise Ígnea",
+          "conteudo": "Sal fundido, sem água. Cátodo: cátion reduz (metal). Ânodo: ânion oxida (ametal). Exemplo: 2NaCl(l) → 2Na(l) + Cl₂(g). Cátodo: Na⁺ + e⁻ → Na. Ânodo: 2Cl⁻ → Cl₂ + 2e⁻. Produção de metais muito reativos (Na, Al)."
+        },
+        {
+          "titulo": "Eletrólise Aquosa",
+          "conteudo": "Competição entre íons e água. Cátodo: reduz facilidade → menos reativo (maior E°). Ânodo: oxida facilidade → ânions oxigenados < OH⁻ < haletos. Regra: cátions menos reativos reduzem primeiro. Ânions não-oxigenados oxidam antes da água."
+        },
+        {
+          "titulo": "Leis de Faraday",
+          "conteudo": "1ª Lei: massa depositada ∝ carga (Q). m = (M×Q)/(n×F). 2ª Lei: mesma carga, massa ∝ equivalente (M/n). Q = i×t (C = A×s). F = 96500 C/mol. Permite calcular quantidade de substância formada."
+        }
+      ],
+      "exemplos": [
+        "Eletrólise NaCl(l): produz Na(l) + Cl₂(g)",
+        "Eletrólise NaCl(aq): produz H₂(g) + Cl₂(g) + NaOH(aq)",
+        "Cátodo (aq): H₂O reduz em vez de Na⁺ (Na muito reativo)",
+        "Ânodo (aq): Cl⁻ oxida (haleto) em vez de H₂O",
+        "Cromação: depositar Cr sobre peça (cátodo)"
+      ],
+      "dicas": [
+        "Eletrólise: ânodo POSITIVO (+), cátodo NEGATIVO (-) [oposto da pilha!]",
+        "Ígnea: simples, apenas cátion e ânion. Aquosa: considerar água",
+        "Cálculo: Q = i×t, depois m = (M×Q)/(n×F)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Na eletrólise aquosa de NaCl, os produtos formados são:",
+          "alternativas": [
+            "Na e Cl₂",
+            "H₂ e O₂",
+            "H₂ e Cl₂",
+            "Na e O₂",
+            "NaOH e HCl"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Cátodo: H₂O reduz a H₂ (Na⁺ não reduz em meio aquoso, muito reativo). Ânodo: Cl⁻ oxida a Cl₂ (haleto oxida antes da água). Também forma NaOH em solução."
+        },
+        {
+          "enunciado": "Em uma eletrólise, qual pólo é o ânodo?",
+          "alternativas": [
+            "Polo negativo, onde ocorre redução",
+            "Polo positivo, onde ocorre oxidação",
+            "Polo negativo, onde ocorre oxidação",
+            "Polo positivo, onde ocorre redução",
+            "A ponte salina"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Na eletrólise, o ânodo é o polo positivo (ligado ao + da fonte) onde ocorre oxidação. O cátodo é o polo negativo onde ocorre redução."
+        },
+        {
+          "enunciado": "Qual o volume de H₂ (CNTP) produzido na eletrólise de água por uma corrente de 2A durante 96500s? (F = 96500 C/mol)",
+          "alternativas": [
+            "11,2 L",
+            "22,4 L",
+            "33,6 L",
+            "44,8 L",
+            "67,2 L"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Q = i×t = 2×96500 = 193000 C = 2F. Reação: 2H₂O → 2H₂ + O₂. 2F produzem 2 mol H₂ (cada H₂ precisa 2e⁻ = 1F). V = 2×22,4 = 22,4L... Erro: 2F→1mol H₂. V=22,4L."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Aplicações da Eletroquímica",
+      "topicos": [
+        {
+          "titulo": "Pilhas e Baterias Modernas",
+          "conteudo": "Pilha alcalina: maior durabilidade, Zn/MnO₂. Bateria de Ni-Cd: recarregável, 1,2V. Bateria de Li-íon: leve, alta densidade energética, celulares/notebooks. Bateria de carro (chumbo-ácido): Pb/PbO₂/H₂SO₄, 12V. Células de combustível: H₂ + O₂ → H₂O + energia, limpa."
+        },
+        {
+          "titulo": "Galvanização e Proteção",
+          "conteudo": "Galvanização: revestir ferro com zinco (eletrodeposição). Zn oxida antes do Fe (proteção catódica). Cromação: depositar Cr para beleza e proteção. Niquelação: camada de Ni. Douração/prateação: joias. Anodização: oxidar Al formando Al₂O₃ protetor."
+        },
+        {
+          "titulo": "Produção Industrial",
+          "conteudo": "Alumínio: eletrólise ígnea de Al₂O₃ (bauxita). Cloro e NaOH: eletrólise aquosa de NaCl (cloro-soda). Purificação de cobre: eletrólise com ânodo impuro. Hidrogênio: eletrólise da água. Eletrodeposição em circuitos eletrônicos."
+        },
+        {
+          "titulo": "Corrosão",
+          "conteudo": "Corrosão: oxidação indesejada de metais. Ferrugem: Fe → Fe²⁺ + 2e⁻ (ânodo), O₂ + H₂O + e⁻ → OH⁻ (cátodo). Fatores: umidade, O₂, eletrólitos (sal). Prevenção: pintura, galvanização, inibidores, proteção catódica (metal mais reativo)."
+        }
+      ],
+      "exemplos": [
+        "Bateria Li-ion: ânodo grafite, cátodo LiCoO₂, 3,7V por célula",
+        "Célula H₂/O₂: 2H₂ + O₂ → 2H₂O, E° = 1,23V, veículos elétricos",
+        "Galvanização: Zn protege Fe (Zn oxida primeiro, E° menor)",
+        "Produção Al: 2Al₂O₃ → 4Al + 3O₂ (altíssimo consumo elétrico)",
+        "Ferrugem: 4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃ → 2Fe₂O₃·3H₂O"
+      ],
+      "dicas": [
+        "Li-ion: alta energia, leve, recarregável (eletrônicos)",
+        "Galvanização: Zn sobre Fe (Zn é sacrificado)",
+        "Corrosão: processo eletroquímico espontâneo (pilha natural)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A galvanização do ferro com zinco protege contra corrosão porque:",
+          "alternativas": [
+            "O zinco é mais resistente que o ferro",
+            "O zinco impede contato com o ar",
+            "O zinco oxida mais facilmente que o ferro",
+            "O ferro oxida mais facilmente que o zinco",
+            "O zinco não conduz eletricidade"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Zn tem E° menor que Fe, portanto oxida mais facilmente. Ele atua como ânodo de sacrifício, oxidando antes do ferro e protegendo-o (proteção catódica)."
+        },
+        {
+          "enunciado": "As células de combustível de H₂/O₂ são consideradas limpas porque:",
+          "alternativas": [
+            "Não produzem nenhum resíduo",
+            "Produzem apenas água como subproduto",
+            "Não usam combustível",
+            "Funcionam a baixa temperatura",
+            "São muito pequenas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A reação 2H₂ + O₂ → 2H₂O produz apenas água, sem emissão de CO₂ ou poluentes. É uma fonte de energia limpa e eficiente."
+        },
+        {
+          "enunciado": "Qual processo industrial utiliza eletrólise ígnea?",
+          "alternativas": [
+            "Produção de cloro",
+            "Produção de hidróxido de sódio",
+            "Produção de alumínio",
+            "Purificação de cobre",
+            "Galvanização"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A produção de alumínio usa eletrólise ígnea de Al₂O₃ (bauxita) fundida com criolita. Os demais processos usam eletrólise aquosa ou eletrodeposição."
+        }
+      ]
+    }
+  ]
+}

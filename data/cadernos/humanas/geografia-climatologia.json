@@ -1,0 +1,282 @@
+{
+  "id": "geografia-climatologia",
+  "titulo": "Climatologia",
+  "descricao": "Climas, massas de ar e fenomenos climaticos",
+  "icone": "🌦️",
+  "cor": "from-amber-500 to-yellow-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Elementos e Fatores Climaticos",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Elementos do Clima",
+          "conteudo": "Os elementos climaticos sao componentes mensuráveis que caracterizam o clima: temperatura, umidade, pressao atmosferica e precipitacao. A temperatura varia conforme latitude, altitude e continentalidade. A umidade depende da evaporacao e proximidade com corpos d'agua. A pressao atmosferica diminui com altitude e varia com temperatura. As precipitacoes ocorrem por condensacao do vapor d'agua.",
+          "exemplo": "Em Manaus (AM), a alta temperatura media anual (27°C) e umidade elevada (80%) resultam em precipitacoes abundantes (2.500mm/ano), caracterizando clima equatorial. Ja em Petrolina (PE), baixa umidade e altas temperaturas geram clima semiarido com apenas 400mm/ano de chuvas.",
+          "dica": "ENEM cobra relacao entre elementos: alta temperatura + alta umidade = mais chuvas. Baixa pressao = ar sobe = chuva. Alta pressao = ar desce = tempo seco."
+        },
+        {
+          "id": 2,
+          "titulo": "Fatores Climaticos",
+          "conteudo": "Fatores climaticos modificam os elementos: latitude (maior distancia da linha do Equador = menor temperatura), altitude (cada 180m = -1°C), maritimidade/continentalidade (oceanos regulam temperatura), massas de ar (deslocamentos trazem mudancas), correntes maritimas (quentes aquecem, frias esfriam), vegetacao (evapotranspiracao) e relevo (barlavento chuvoso, sotavento seco).",
+          "exemplo": "Campos do Jordao (SP) a 1.600m altitude tem temperatura media 13°C, enquanto Santos (litoral) tem 24°C. A Serra do Mar bloqueia umidade do oceano: vertente litoral recebe 4.000mm/ano, vale do Paraiba apenas 1.200mm/ano (efeito orografico).",
+          "dica": "Latitude e altitude SEMPRE diminuem temperatura. Maritimidade = amplitude termica menor. Continentalidade = amplitude maior. Barlavento = lado que recebe vento umido."
+        },
+        {
+          "id": 3,
+          "titulo": "Massas de Ar no Brasil",
+          "conteudo": "Cinco massas de ar atuam no Brasil: mEc (Equatorial continental - quente e umida, Amazonia), mEa (Equatorial atlantica - quente e umida, litoral norte), mTa (Tropical atlantica - quente e umida, litoral leste), mTc (Tropical continental - quente e seca, Centro-Oeste), mPa (Polar atlantica - fria e umida, sul). No verao mEc domina, no inverno mPa avanca.",
+          "exemplo": "Friagem na Amazonia: mPa avanca em junho-julho, derruba temperatura de 30°C para 15°C em dias. Veranico em maio: mTc (seca) interrompe chuvas no Sul. Zona de Convergencia do Atlantico Sul (ZCAS): mEc + mTa = chuvas intensas em SP, RJ, MG no verao.",
+          "dica": "Continental = seca. Atlantica/Oceanica = umida. Equatorial/Tropical = quente. Polar = fria. mPa causa geadas no Sul e friagem no Norte."
+        },
+        {
+          "id": 4,
+          "titulo": "Classificacao Climatica",
+          "conteudo": "Brasil possui climas: Equatorial (Amazonia, quente-umido, chuvas o ano todo, 25-27°C), Tropical (Centro-Oeste/Sudeste, verao chuvoso/inverno seco, 20-28°C), Tropical de altitude (planaltos SE, temperaturas amenas 18-22°C), Tropical atlantico/litoraneo (litoral, chuvas bem distribuidas), Semiarido (Nordeste, <800mm chuva/ano, irregular), Subtropical (Sul, 4 estacoes definidas, geadas).",
+          "exemplo": "Sao Paulo capital: tropical de altitude (inverno seco, verao chuvoso, 19°C media). Cuiaba: tropical tipico (verao 27°C com chuvas, inverno seco 24°C). Porto Alegre: subtropical (4 estacoes, verao 24°C, inverno 14°C com geadas). Cabaceiras-PB: semiarido (280mm/ano, mais seco do Brasil).",
+          "dica": "Equatorial = sempre quente e umido. Tropical = verao chuvoso, inverno seco. Semiarido = chuvas escassas e irregulares. Subtropical = unica regiao com 4 estacoes bem definidas."
+        },
+        {
+          "id": 5,
+          "titulo": "Mudancas Climaticas",
+          "conteudo": "Aquecimento global causado por gases estufa (CO2, CH4, N2O) de queima combustiveis fosseis, desmatamento, agropecuaria. Consequencias: derretimento geleiras, elevacao nivel mar, eventos extremos (secas, enchentes, furaces intensos), desertificacao, migracao especies. Acordos: Protocolo Kyoto (1997), Acordo Paris (2015) - limitar aquecimento 1,5°C.",
+          "exemplo": "Degelo Artico aumentou 0,13% ao ano desde 1979. Nivel dos oceanos subiu 20cm no seculo XX. Furacao Katrina (2005) custou US$ 125 bilhoes. Seca 2012-2017 no Nordeste brasileiro afetou 36 milhoes. Brasil: 3° maior emissor historico, 44% por desmatamento Amazonia.",
+          "dica": "ENEM relaciona mudancas climaticas com: desmatamento, matriz energetica, agricultura, desigualdade (paises pobres sofrem mais). Efeito estufa e natural, aquecimento global e antropico."
+        }
+      ],
+      "questao": {
+        "enunciado": "As massas de ar que atuam no Brasil possuem caracteristicas distintas conforme sua regiao de origem. No inverno, e comum a ocorrencia de um fenomeno na regiao amazonica conhecido como 'friagem', quando as temperaturas podem cair abruptamente de 30°C para aproximadamente 15°C em poucos dias.\n\nEsse fenomeno e explicado pela atuacao da massa de ar:",
+        "alternativas": [
+          "Equatorial continental, que perde umidade ao atravessar a Cordilheira dos Andes.",
+          "Tropical atlantica, que se desloca do oceano para o continente trazendo ventos frios.",
+          "Polar atlantica, que avanca do sul em direcao ao norte durante o inverno austral.",
+          "Tropical continental, que se origina no Chaco e provoca quedas bruscas de temperatura.",
+          "Equatorial atlantica, que carrega umidade do oceano resfriando a regiao amazonica."
+        ],
+        "respostaCorreta": 2,
+        "explicacao": "A friagem na Amazonia e causada pela massa Polar atlantica (mPa), que se origina na Antartida. Durante o inverno austral (junho-agosto), essa massa fria e umida avanca do sul do Brasil em direcao ao norte, podendo chegar ate a Amazonia. Ao deslocar as massas quentes que normalmente dominam a regiao, provoca quedas bruscas de temperatura. As alternativas incorretas apresentam massas que nao causam resfriamento intenso: mEc e mTc sao quentes, mTa atua no litoral leste sem causar friagem, e mEa e quente.",
+        "tags": ["climatologia", "massas-ar", "fenomenos-climaticos"]
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Fenomenos Climaticos: El Nino e La Nina",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "El Nino: Caracteristicas",
+          "conteudo": "El Nino e o aquecimento anormal das aguas superficiais do Pacifico Equatorial (costa Peru/Equador). Ocorre quando ventos alisios enfraquecem, impedindo ressurgencia de aguas frias profundas. Acontece a cada 2-7 anos, dura 9-12 meses. Altera padroes de circulacao atmosferica global (Oscilacao Sul). Intensidade varia: fraco (0,5-1°C acima), moderado (1-1,5°C), forte (1,5-2°C), muito forte (>2°C).",
+          "exemplo": "El Nino 1997-1998 (muito forte): aguas 5°C acima do normal. Australia teve pior seca em 200 anos, Indonesia sofreu incendios florestais massivos. Peru e Equador: enchentes destruiram infraestrutura. Economicamente, prejuizos superaram US$ 35 bilhoes globalmente. Brasil: seca severa no Norte/Nordeste, chuvas excessivas no Sul.",
+          "dica": "El Nino = aquecimento Pacifico. Enfraquecimento dos ventos alisios. No Brasil: seca N/NE, chuvas Sul. Prejudica pesca Peru (aguas quentes afugentam anchovas)."
+        },
+        {
+          "id": 2,
+          "titulo": "La Nina: Caracteristicas",
+          "conteudo": "La Nina e o resfriamento anormal das aguas do Pacifico Equatorial (ate -3°C abaixo da media). Ocorre quando ventos alisios intensificam, aumentando ressurgencia de aguas frias. Mais frequente que El Nino, dura ate 2 anos. Efeitos opostos ao El Nino: intensifica padroes climaticos normais. Causa invernos mais rigidos hemisferio norte, furaces Atlantico mais intensos.",
+          "exemplo": "La Nina 2010-2011: Australia teve enchentes catastroficas (Brisbane submersa), Tailandia perdeu 13,6 milhoes de hectares agricolas inundados. Colombia sofreu maior desastre natural (3 milhoes afetados). Brasil: chuvas intensas Amazonia (Rio Negro atingiu nivel recorde 29,97m Manaus), seca no Sul (perda safras RS/SC). Furacao temporada 2020 bateu recordes.",
+          "dica": "La Nina = resfriamento Pacifico. Ventos alisios fortes. Brasil: chuvas N/NE, seca Sul (oposto El Nino). Aumenta furaces Atlantico. Intensifica padroes normais."
+        },
+        {
+          "id": 3,
+          "titulo": "Impactos no Brasil",
+          "conteudo": "El Nino no Brasil: Regiao Norte (Amazonia) - secas intensas, incendios florestais, rios baixos dificultam navegacao. Nordeste - secas prolongadas, perda safras, migracoes. Centro-Oeste - chuvas irregulares. Sudeste - temperatura acima media. Sul - chuvas excessivas, enchentes, deslizamentos. La Nina inverte: Norte/Nordeste chuvoso, Sul seco. Afeta agricultura, energia hidrica, saude (dengue).",
+          "exemplo": "El Nino 2015-2016: Amazonia teve pior seca em 40 anos, Rio Negro 13,63m (recorde negativo). Nordeste: 1.200 municipios em emergencia, 38 milhoes afetados. Sul: RS teve 113% da chuva esperada, enchentes desalojaram 30 mil. La Nina 2020-2021: seca Sul reduziu safra 10%, reservatorios hidreletricos 20% capacidade, bandeira vermelha energia.",
+          "dica": "El Nino Brasil: N/NE seco, Sul chuvoso. La Nina: N/NE chuvoso, Sul seco. Afeta: agricultura (safras), energia (hidreletricas), transporte fluvial (Amazonia), saude (proliferacao mosquitos)."
+        },
+        {
+          "id": 4,
+          "titulo": "Outros Fenomenos Climaticos",
+          "conteudo": "Zona de Convergencia Intertropical (ZCIT): faixa baixa pressao proxima Equador, migra sazonalmente, causa chuvas Amazonia/Nordeste. Zona de Convergencia Atlantico Sul (ZCAS): banda nuvens orientacao NW-SE, conecta Amazonia-Sudeste, chuvas intensas verao. Bloqueios atmosfericos: alta pressao estacionaria, interrompe chuvas (veranicos) ou causa ondas calor/frio. Jatos subtropicais: correntes ar alta altitude influenciam sistemas frontais.",
+          "exemplo": "ZCIT em marco-abril: chuvas maximas litoral norte NE (Fortaleza 400mm/mes). ZCAS janeiro 2020: SP teve 344mm (recorde), deslizamentos mataram 30. Bloqueio atmosferico junho 2021: onda frio historica no Sul (-7°C POA). Dipolo Atlantico positivo 2012: ZCIT deslocada ao norte, seca recorde Nordeste (pior em 30 anos).",
+          "dica": "ZCIT = chuvas Amazonia/NE (migra sazonalmente). ZCAS = chuvas verao SP/RJ/MG. Bloqueios = estiagens prolongadas ou ondas calor/frio. Eventos extremos frequentemente combinam fenomenos."
+        },
+        {
+          "id": 5,
+          "titulo": "Previsao e Monitoramento",
+          "conteudo": "Monitoramento climatico usa satelites (GOES, NOAA), boias oceanicas (TAO/TRITON no Pacifico), estacoes meteorologicas, radares. Indices: ONI (Oceanic Nino Index) mede El Nino/La Nina, IOS (Indice Oscilacao Sul) mede pressao atmosferica. Modelos computacionais preveem com 6-9 meses antecedencia. Brasil: INPE, CPTEC, INMET. Global: NOAA, WMO. Previsoes permitem preparacao agricultura, recursos hidricos.",
+          "exemplo": "NOAA detectou formacao El Nino marco 2023, previsto durar ate 2024 (moderado a forte). Permitiu planejamento: agricultores Sul prepararam drenagem, Nordeste estocou agua, setor eletrico acionou termicas preventivamente. CPTEC emite boletins mensais sobre ZCAS, salvando vidas em areas risco deslizamento. Satelite GOES-16 monitora furaces Atlantico em tempo real.",
+          "dica": "ONI >0,5°C por 3 meses = El Nino. ONI <-0,5°C = La Nina. Previsoes sao probabilisticas, nao certezas. ENEM cobra uso previsoes para gestao riscos e planejamento."
+        }
+      ],
+      "questao": {
+        "enunciado": "Durante eventos de El Nino, observa-se o aquecimento anormal das aguas superficiais do oceano Pacifico Equatorial, o que altera significativamente os padroes climaticos em diversas regioes do planeta. No Brasil, esse fenomeno provoca impactos diferenciados conforme a regiao.\n\nNo territorio brasileiro, anos de El Nino intenso caracterizam-se por:",
+        "alternativas": [
+          "Aumento das chuvas na regiao amazonica e seca prolongada na regiao Sul.",
+          "Reducao das precipitacoes no Norte e Nordeste e chuvas acima da media no Sul.",
+          "Chuvas intensas em todas as regioes devido ao aquecimento das aguas oceanicas.",
+          "Seca generalizada em todo territorio nacional pela elevacao da temperatura global.",
+          "Inversao termica no Sudeste e furaces no litoral nordestino."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "Durante o El Nino, o aquecimento do Pacifico Equatorial altera a circulacao atmosferica global. No Brasil, isso provoca: 1) Reducao de chuvas no Norte (Amazonia) e Nordeste, causando secas intensas, rios baixos e incendios florestais; 2) Aumento de precipitacoes na regiao Sul, resultando em enchentes e deslizamentos. A alternativa A descreve incorretamente (invertido), C e D generalizam erroneamente, e E apresenta fenomenos que nao ocorrem com El Nino. Esse padrao se inverte durante La Nina.",
+        "tags": ["el-nino", "fenomenos-climaticos", "impactos-brasil"]
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Climatologia e Atividades Humanas",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Clima e Agricultura",
+          "conteudo": "Clima determina tipos cultivos: temperatura (cada planta tem minima/maxima/otima), agua (necessidade hidrica varia), fotoperíodo (duracao dia). Zoneamento agroclimático identifica areas aptas. Riscos: geadas (cafe, cana), granizo (fruticultura), seca (todos), chuva excessiva (colheita). Mudancas climaticas ameacam producao: deslocamento areas aptas, pragas novas, eventos extremos mais frequentes.",
+          "exemplo": "Cafe arabica exige temperatura 18-23°C, altitude >800m, chuvas 1.200-1.800mm: ideal Sul MG, SP. Soja precisa fotoperíodo curto: plantio outubro-novembro garante floracao. Geada julho 1975 destruiu 1 bilhao pes cafe Parana (fim hegemonia). Aquecimento pode deslocar cafe para sul, reduzir area apta 25% ate 2050. Seca 2021 reduziu safra cafe 25%.",
+          "dica": "ENEM relaciona clima-agricultura: zoneamento, riscos climaticos, adaptacao mudancas. Geada afeta cafe/cana. Seca prejudica graos. Chuva excessiva atrasa colheita, causa fungos."
+        },
+        {
+          "id": 2,
+          "titulo": "Ilhas de Calor Urbanas",
+          "conteudo": "Ilhas de calor: areas urbanas 3-10°C mais quentes que entorno rural. Causas: asfalto/concreto absorvem calor (albedo baixo), reduzida vegetacao (menos evapotranspiracao), verticalizacao (dificulta ventilacao), calor antropico (veiculos, industrias, ar-condicionado), poluicao (particulados retêm calor). Consequencias: maior consumo energia, desconforto termico, chuvas intensas localizadas, poluicao concentrada.",
+          "exemplo": "SP capital: centro 5-7°C mais quente que periferia arborizada. Avenida Paulista registra 35°C enquanto Parque Ibirapuera 28°C. Tempestades urbanas: ar quente sobe, condensa, chuva intensa localizada (100mm/h causa enchentes). Curitiba reduziu ilha calor com 52m²/habitante area verde. Telhados verdes NY reduziram temperatura 2-3°C.",
+          "dica": "Ilha calor = temperatura urbana > rural. Causas: impermeabilizacao solo, menos vegetacao, poluicao. Solucoes: arborizacao, telhados verdes/brancos, parques, corredores ventilacao."
+        },
+        {
+          "id": 3,
+          "titulo": "Inversao Termica",
+          "conteudo": "Inversao termica: camada ar quente sobre ar frio, impedindo dispersao vertical poluentes. Normalmente temperatura diminui com altitude, mas em inversao a camada quente 'tampa' ar frio superficial. Mais comum inverno (noites frias, dias curtos), manha cedo, situacoes anticiclonicas (alta pressao, tempo seco). Concentra poluentes, agrava doencas respiratorias. Pior em vales cercados montanhas.",
+          "exemplo": "SP inverno: ar frio acumula fundo vale, ar quente acima bloqueia. Poluentes (CO, MP10, ozonio) atingem niveis criticos, alerta saude. Cubatao 1980s: inversoes frequentes + industrias = desastre ambiental ('vale morte'). Santiago Chile: cercada Andes, inversoes graves. Londres 1952: 'great smog' matou 12 mil por inversao termica prolongada.",
+          "dica": "Inversao termica = ar quente sobre frio, BLOQUEIA dispersao poluentes. Comum inverno, manha, alta pressao. Pior areas industriais/urbanas, vales. Nao e poluicao, mas agrava concentracao."
+        },
+        {
+          "id": 4,
+          "titulo": "Desertificacao",
+          "conteudo": "Desertificacao: degradacao terras aridas/semiaridas/subumidas secas por atividades humanas e variacoes climaticas. Causas: desmatamento, sobrepastoreio, agricultura inadequada, irrigacao excessiva (salinizacao), mudancas climaticas. Solo perde fertilidade, vegetacao nativa desaparece. Brasil: 1.340 municipios susceptiveis (Nordeste, norte MG), 18 milhoes hectares nucleos desertificacao (Gilbues-PI, Iraua-CE, Serido-RN, Cabrobó-PE).",
+          "exemplo": "Gilbues-PI: 'deserto brasileiro', 5.600km² degradados, erosao expoe solo arenoso, ravinas ate 70m profundidade. Causas: desmatamento cerrado, sobrepastoreio, queimadas. Iraua-CE: 4.000km², plantacao algodao decadas 1950-60 exauriu solo. Salinizacao Nordeste: irrigacao sem drenagem acumula sais. Convencao ONU Combate Desertificacao: Brasil signatario 1997.",
+          "dica": "Desertificacao ≠ deserto natural. E processo humano em areas secas. Brasil: nucleos NE. Causas: desmatamento, sobrepastoreio, irrigacao errada. Combate: manejo sustentavel, reflorestamento, tecnicas conservacao solo."
+        },
+        {
+          "id": 5,
+          "titulo": "Refugiados Climaticos",
+          "conteudo": "Refugiados/migrantes climaticos: pessoas deslocadas por mudancas ambientais (secas, inundacoes, elevacao mar, desertificacao, furaces). ONU estima 200 milhoes ate 2050. Nao reconhecidos legalmente (Convencao 1951 nao inclui). Regioes criticas: ilhas Pacifico (Tuvalu, Kiribati submergindo), Bangladesh (inundacoes), Sahel africano (seca), America Central (furaces, seca). Desigualdade: paises pobres sofrem mais, emitem menos.",
+          "exemplo": "Tuvalu: nivel mar subiu 5mm/ano, governo negocia relocacao populacao (11 mil) Australia/NZ. Seca Siria 2006-2010: 1,5 milhao migraram areas rurais-urbanas, tensoes contribuiram guerra civil. Katrina 2005: 1 milhao deslocados permanentemente. Bangladesh: 20 milhoes podem migrar ate 2050 (inundacoes). Seca Nordeste: retirantes migraram Sudeste decadas 1950-80.",
+          "dica": "Refugiados climaticos = deslocados mudancas ambientais. Nao tem status legal. Paises pobres/ilhas mais afetados. ENEM relaciona com desigualdade, responsabilidade historica emissoes, justica climatica."
+        }
+      ],
+      "questao": {
+        "enunciado": "Nos grandes centros urbanos, especialmente durante o inverno, e comum a ocorrencia de um fenomeno atmosferico que agrava a concentracao de poluentes junto a superficie, causando serios problemas respiratorios na populacao. Esse fenomeno ocorre quando uma camada de ar mais quente se posiciona sobre uma camada de ar mais frio, impedindo a dispersao vertical dos poluentes.\n\nO fenomeno descrito e denominado:",
+        "alternativas": [
+          "Ilha de calor urbana, resultante da impermeabilizacao do solo e reducao de areas verdes.",
+          "Inversao termica, que bloqueia a circulacao vertical do ar e concentra poluentes.",
+          "Chuva acida, provocada pela emissao de gases poluentes das industrias e veiculos.",
+          "Efeito estufa urbano, causado pelo acumulo de dioxido de carbono na atmosfera.",
+          "Smog fotoquimico, gerado pela reacao de poluentes com a radiacao solar."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "O fenomeno descrito e a inversao termica, que ocorre quando uma camada de ar quente se posiciona sobre uma camada de ar frio junto a superficie. Normalmente a temperatura diminui com a altitude, permitindo que o ar aquecido na superficie suba levando os poluentes. Na inversao termica, essa circulacao vertical e bloqueada, concentrando poluentes. E mais comum no inverno. Ilha de calor refere-se a diferenca temperatura urbano-rural. Chuva acida e smog sao consequencias da poluicao, nao o fenomeno de bloqueio. Efeito estufa e processo global.",
+        "tags": ["inversao-termica", "poluicao-urbana", "clima-urbano"]
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Biomas e Clima",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Relacao Clima-Vegetacao",
+          "conteudo": "Vegetacao reflete clima: temperatura, umidade, sazonalidade. Formacoes: florestas (>1.500mm chuva, quente-umido), savanas (800-1.500mm, estacao seca marcada), estepes (300-800mm, semiarido), desertos (<250mm), tundra (frio extremo), taiga (frio, chuvas moderadas). Brasil: Amazonia (equatorial), Cerrado (tropical com seca), Caatinga (semiarido), Mata Atlantica (tropical umido), Pampa (subtropical), Pantanal (tropical com inundacao).",
+          "exemplo": "Amazonia: clima equatorial (2.500mm/ano, 25-27°C) = floresta densa, biodiversa, perene. Cerrado: tropical (1.500mm/ano, verao chuvoso) = arvores baixas tortuosas, cascas grossas resistem fogo/seca, raizes profundas. Caatinga: semiarido (400-800mm irregulares) = vegetacao xerofila (cactaceas, caducifolia), adaptada seca. Mudancas clima ameacam biomas: Amazonia pode virar savana.",
+          "dica": "Mais chuva + calor = florestas densas. Chuvas sazonais = savanas. Pouca chuva = vegetacao xerofila. ENEM cobra adaptacoes morfologicas plantas ao clima (xerofitas, caducifolia, raizes)."
+        },
+        {
+          "id": 2,
+          "titulo": "Desmatamento e Clima Regional",
+          "conteudo": "Desmatamento altera clima regional/global: reduz evapotranspiracao (menos chuvas), diminui absorcao CO2 (aquecimento), altera albedo (solo exposto reflete diferente), fragmenta habitats. Amazonia: floresta gera 50% propria chuva (rios voadores), desmatamento pode causar savanizacao. Estudos indicam ponto sem retorno: >20-25% desmatada. Atualmente ~17% desmatada. Efeitos: secas Sudeste, agricultura afetada.",
+          "exemplo": "Desmatamento Amazonia: 800 mil km² perdidos (area >TX). Reduziu chuvas ate 25% areas degradadas. Seca 2014-2015 Sudeste (crise hidrica SP) relacionada desmatamento. Rios voadores: umidade Amazonia vai Sudeste/Sul/Centro-Oeste, sustenta agricultura. Modelagem: desmatamento >40% = colapso sistema, savana dominaria. Atlantic Forest: 93% perdida, alterou regime chuvas litoral.",
+          "dica": "Desmatamento Amazonia = menos chuvas (regiao e distantes). Rios voadores levam umidade Centro-Sul. Ponto sem retorno ~20-25% desmatada. ENEM relaciona com agricultura, abastecimento agua."
+        },
+        {
+          "id": 3,
+          "titulo": "Queimadas e Clima",
+          "conteudo": "Queimadas emitem CO2, metano, N2O (gases estufa), material particulado (MP2.5, afeta saude), monoxido carbono. Causam: aquecimento global, poluicao ar, alteracao regime chuvas (fumaca interfere formacao nuvens), destruicao vegetacao (menos absorcao CO2). Brasil: queimadas Amazonia, Cerrado, Pantanal aumentam 300-400% anos secos. Maioria criminosas (limpeza terreno). Nuvem fumaca cobre area continental.",
+          "exemplo": "Agosto 2019: queimadas Amazonia geraram 'dia escuro' SP (fumaca bloqueou sol 15h). Pantanal 2020: 26% area queimada, 17 milhoes animais mortos. Australia 2019-2020: incendios emitiram 715 milhoes ton CO2 (mais que emissoes anuais pais). Indonesia 1997: queimadas El Nino geraram poluicao massiva, 19 bilhoes prejuizo. INPE detecta focos satelite tempo real.",
+          "dica": "Queimadas = emissoes gases estufa + poluicao + menos vegetacao. Maioria humanas, nao naturais. Aumentam anos El Nino (seca). Fumaca afeta formacao chuvas, saude humana."
+        },
+        {
+          "id": 4,
+          "titulo": "Mudancas Climaticas e Biodiversidade",
+          "conteudo": "Aquecimento global ameaca biodiversidade: deslocamento zonas climaticas mais rapido que especies migram, extinções (10-30% especies risco com +2°C), alteracao fenologia (floração, migracao dessincronizadas), branqueamento corais (aguas quentes matam algas simbioticas), acidificacao oceanos (prejudica organismos carbonato calcio). Especies montanhas, polares, ilhas mais vulneraveis. Brasil: Cerrado, Caatinga, Amazonia em risco.",
+          "exemplo": "Grande Barreira Corais Australia: branqueamento massivo 2016-2017-2020 matou 50% corais. Urso polar: gelo Artico reduzido 13% por decada, dificulta caca focas. Pika americana (roedor montanha): populacoes altas altitudes extintas localmente (calor). Amazonia: aumento temperatura 4°C pode eliminar 85% floresta ate 2100. Sapo dourado Costa Rica: extinto 1989 (mudanca clima + fungo).",
+          "dica": "Aquecimento = mudanca habitats mais rapida que especies se adaptam/migram. Extinções em massa previstas. Corais, especies polares, montanhas mais vulneraveis. Brasil: risco Amazonia, Cerrado, Caatinga."
+        },
+        {
+          "id": 5,
+          "titulo": "Servicos Ecossistemicos Climaticos",
+          "conteudo": "Ecossistemas regulam clima: florestas sequestram carbono (mitigacao), evapotranspiracao gera chuvas, vegetacao modera temperaturas, mangues/corais protegem costa (adaptacao eventos extremos), solos armazenam carbono. Valoracao economica: creditos carbono, REDD+ (reducao emissoes desmatamento), pagamento servicos ambientais (PSA). Preservacao e mais barata que mitigacao pos-dano.",
+          "exemplo": "Amazonia armazena 150-200 bilhoes ton carbono (equivalente 20 anos emissoes globais). Mangues protegem costa furaces (valorados US$ 80 bilhoes/ano globalmente). Fundo Amazonia: 1,3 bilhoes arrecadados REDD+, financia conservacao. PSA Extrema-MG: paga produtores rurais preservarem mata ciliar, garantiu agua (economia R$ 370 milhoes tratamento). Reflorestamento captura ~200 ton CO2/ha.",
+          "dica": "Ecossistemas prestam servicos climaticos: sequestro carbono, regulacao chuvas, moderacao temperatura. REDD+ e PSA pagam conservacao. Preservar e mais barato que recuperar/mitigar."
+        }
+      ],
+      "questao": {
+        "enunciado": "A floresta amazonica desempenha papel fundamental na regulacao climatica nao apenas regional, mas de outras areas do continente sul-americano. Estudos indicam que a umidade gerada pela evapotranspiracao da floresta e transportada por massas de ar, contribuindo significativamente para as precipitacoes em regioes distantes.\n\nEsse fenomeno e conhecido como:",
+        "alternativas": [
+          "Efeito estufa regional, que aquece a atmosfera e intensifica as chuvas convectivas.",
+          "Inversao termica tropical, que desloca o vapor d'agua para areas de menor pressao.",
+          "Rios voadores, que transportam umidade da Amazonia para Centro-Oeste, Sudeste e Sul.",
+          "Zona de Convergencia Intertropical, responsavel pelas chuvas no norte da America do Sul.",
+          "Correntes de jato subtropical, que carregam nuvens formadas na floresta para outras regioes."
+        ],
+        "respostaCorreta": 2,
+        "explicacao": "Os 'rios voadores' sao cursos de ar na atmosfera que transportam grandes quantidades de vapor d'agua gerado pela evapotranspiracao da floresta amazonica. Essa umidade e carregada em direcao ao Centro-Oeste, Sudeste e Sul do Brasil, contribuindo para as chuvas nessas regioes e sustentando a agricultura. O desmatamento da Amazonia pode comprometer esse sistema, reduzindo precipitacoes em areas distantes. As outras alternativas mencionam fenomenos reais, mas que nao descrevem especificamente o transporte de umidade da Amazonia para outras regioes.",
+        "tags": ["amazonia", "rios-voadores", "evapotranspiracao", "desmatamento"]
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Politicas Climaticas Globais",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Convencoes e Protocolos",
+          "conteudo": "UNFCCC (Convencao-Quadro ONU Mudanca Clima, 1992 Rio): estabeleceu principio responsabilidades comuns mas diferenciadas. Protocolo Kyoto (1997): paises Anexo I (desenvolvidos) deviam reduzir emissoes 5,2% abaixo 1990 ate 2012. Mecanismos: MDL (Mecanismo Desenvolvimento Limpo), comercio emissoes, implementacao conjunta. EUA nao ratificou, Canada retirou-se. Acordo Paris (2015): todos contribuem, meta limitar aquecimento <2°C, idealmente 1,5°C. NDCs (contribuicoes nacionais).",
+          "exemplo": "Kyoto: UE reduziu 23% emissoes 1990-2020. MDL: Brasil teve 340 projetos (hidreletricas, reflorestamento), geraram creditos carbono. Paris: 195 paises assinaram, EUA saiu (Trump) e retornou (Biden). Brasil NDC: reduzir 37% emissoes ate 2025, 43% ate 2030 (base 2005). COP26 Glasgow 2021: acordo reduzir carvao, financiamento clima US$ 100 bilhoes/ano paises pobres.",
+          "dica": "Kyoto = so desenvolvidos reduzem. Paris = todos contribuem. NDC = meta voluntaria cada pais. Responsabilidade comum mas diferenciada = desenvolvidos mais responsaveis historicamente. COPs = conferencias anuais."
+        },
+        {
+          "id": 2,
+          "titulo": "Matriz Energetica e Clima",
+          "conteudo": "Matriz energetica e conjunto fontes energia pais. Fosseis (petroleo, carvao, gas) emitem CO2, mudanca clima. Renovaveis (solar, eolica, hidrica, biomassa) baixa emissao. Transicao energetica: substituir fosseis por renovaveis. Brasil: ~85% eletricidade renovavel (hidricas 60%, eolica 11%, biomassa 9%), mas >50% energia total fosseis (transporte). Mundial: ~80% fosseis. China: 60% carvao. Europa: aumentando solar/eolica.",
+          "exemplo": "Alemanha Energiewende: renováveis 46% eletricidade 2020, meta 80% 2030, fechando nucleares/carvao. Custo €500 bilhoes ate 2025. China: maior emissor (28% global), mas lidera solar (253 GW instalados), eolica (281 GW). Brasil: pre-sal aumentou petroleo, mas eolica cresceu 600% 2015-2020. Dinamarca: 80% eletricidade eolica. Islândia: 100% renovavel (geotermica + hidrica).",
+          "dica": "Matriz renovavel ≠ sustentavel se inclui grandes hidreletricas (desmatamento). Brasil: eletricidade limpa, energia total fosseis (transporte). Transicao exige trocar combustivel veiculos, industria."
+        },
+        {
+          "id": 3,
+          "titulo": "Mercado de Carbono",
+          "conteudo": "Mercado carbono: sistema cap-and-trade, governos/empresas compram/vendem permissoes emissao. Teto emissoes (cap) reduz anualmente, quem supera compra creditos, quem reduz vende. Tipos: compliance (obrigatorio, Kyoto, UE ETS) e voluntario. Credito = 1 ton CO2 evitada/removida. Projetos geram creditos: energia renovavel, reflorestamento, eficiencia. Criticas: offset nao reduz emissao, so transfere; greenwashing; preco baixo incentiva pouco.",
+          "exemplo": "UE ETS (2005): maior mercado, cobre 40% emissoes UE, preco €80/ton CO2 (2021). Reduziu emissoes 35% setores cobertos. Compliance obriga 11 mil industrias. California: cap-and-trade reduziu 13% emissoes. Brasil: mercado voluntario, empresas compram creditos REDD+ Amazonia. Critica: offset petrolíferas planta arvores mas continua extraindo. Preco carbono deveria ser US$ 100/ton, atual ~US$ 30.",
+          "dica": "Cap-and-trade = teto emissoes, compra/vende permissoes. Credito = 1 ton CO2. UE ETS maior mercado. Criticas: nao reduz total global (offset), preco baixo, greenwashing."
+        },
+        {
+          "id": 4,
+          "titulo": "Financiamento Climatico",
+          "conteudo": "Financiamento climatico: transferencia recursos paises ricos-pobres para mitigacao/adaptacao. Fundo Verde Clima (GCF): meta US$ 100 bilhoes/ano ate 2020 (nao cumprida, atingiu ~US$ 80 bi). Recursos para: energias renovaveis, conservacao florestas, infraestrutura resiliente, agricultura adaptada. Brasil recebeu: Fundo Amazonia (Noruega/Alemanha, US$ 1,3 bi), GEF (projetos biodiversidade). COP27: criou fundo 'perdas e danos' para paises vulneraveis.",
+          "exemplo": "Fundo Amazonia: 103 projetos financiados, monitora desmatamento satelite, condiciona recursos resultados. Alemanha suspendeu 2019 (desmatamento aumentou). Bangladesh: US$ 400 milhoes GCF para protecao costeira clima. Maldivas: US$ 28 mi construir diques nivel mar. COP27 Egito 2022: paises desenvolvidos aceitem fundo perdas/danos (furaces, secas) paises pobres, ainda sem recursos definidos.",
+          "dica": "Meta US$ 100 bi/ano nao cumprida. GCF = principal fundo. Fundo Amazonia condicionado reduzir desmatamento. COP27 criou fundo perdas/danos, mas sem recursos garantidos. Paises pobres cobram responsabilidade historica ricos."
+        },
+        {
+          "id": 5,
+          "titulo": "Justica Climatica",
+          "conteudo": "Justica climatica: principio que aqueles que menos contribuiram mudancas clima (paises pobres, comunidades vulneraveis) sofrem maiores impactos, enquanto ricos historicamente emitiram mais mas tem recursos adaptar-se. Desigualdade: paises desenvolvidos (15% populacao global) respondem 40% emissoes historicas. Pequenas ilhas, Africa, Asia Sul mais vulneraveis. Exige: financiamento, transferencia tecnologia, reparacoes, protecao refugiados climaticos.",
+          "exemplo": "EUA + UE: 50% emissoes historicas acumuladas 1850-2020. Tuvalu (0,00001% emissoes) pode submergir completamente. Bangladesh (0,3% emissoes) sofre inundacoes recorrentes, 20 milhoes em risco. Seca Sahel africano causou 10 milhoes refugiados. Povos indigenas: 5% populacao, protegem 80% biodiversidade, sofrem invasoes/queimadas. Nordeste Brasil: seca afeta pobres, ricos tem agua/ar-condicionado.",
+          "dica": "Justica climatica = quem emitiu menos sofre mais. Paises desenvolvidos responsaveis historicos, devem financiar adaptacao pobres. Desigualdade interna: pobres sofrem mais (enchentes periferia, falta agua)."
+        }
+      ],
+      "questao": {
+        "enunciado": "Em 2015, durante a COP21 em Paris, foi estabelecido um novo acordo global sobre mudancas climaticas, substituindo parcialmente o Protocolo de Kyoto. Diferentemente do acordo anterior, que estabelecia metas obrigatorias apenas para paises desenvolvidos, o novo acordo trouxe uma abordagem mais inclusiva.\n\nUma caracteristica fundamental do Acordo de Paris e:",
+        "alternativas": [
+          "A obrigatoriedade de todos os paises reduzirem suas emissoes em percentuais identicos.",
+          "A criacao de tribunais internacionais para punir paises que nao cumprirem as metas.",
+          "O estabelecimento de NDCs, contribuicoes determinadas nacionalmente por cada pais.",
+          "A proibicao completa do uso de combustiveis fosseis a partir de 2030.",
+          "A transferencia automatica de 50% do PIB dos paises desenvolvidos para os em desenvolvimento."
+        ],
+        "respostaCorreta": 2,
+        "explicacao": "O Acordo de Paris inovou ao estabelecer as NDCs (Nationally Determined Contributions - Contribuicoes Nacionalmente Determinadas), onde cada pais define voluntariamente suas proprias metas de reducao de emissoes conforme suas capacidades e contexto nacional. Diferente de Kyoto que tinha metas impostas apenas aos desenvolvidos, Paris inclui todos os paises mas respeita o principio de responsabilidades comuns porem diferenciadas. Nao ha percentuais identicos (A), punições automaticas (B), proibicao total fosseis (D) ou transferencias automaticas de PIB (E).",
+        "tags": ["acordo-paris", "politicas-climaticas", "ndc"]
+      }
+    }
+  ]
+}

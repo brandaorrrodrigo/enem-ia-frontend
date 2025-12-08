@@ -8,7 +8,7 @@
   "icone": "Map",
   "cor": "from-blue-600 to-cyan-600",
   "tempoEstimado": "12 horas",
-  "fpRecompensa": 600,
+  "fpRecompensa": 0,
   "tags": ["geografia", "brasil", "biomas", "urbanização", "ENEM"],
   "modulos": [
     {

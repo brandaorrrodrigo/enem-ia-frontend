@@ -1,0 +1,282 @@
+{
+  "id": "biologia-botanica",
+  "titulo": "Botanica",
+  "descricao": "Fotossintese, fisiologia e reproducao vegetal",
+  "icone": "🌱",
+  "cor": "from-lime-500 to-green-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Fotossintese",
+      "resumo": "A fotossintese e o processo pelo qual plantas convertem energia luminosa em energia quimica (glicose), liberando oxigenio. Ocorre em duas etapas: fase clara (luminosa) e fase escura (Calvin).",
+      "topicos": [
+        "Equacao geral: 6 CO2 + 6 H2O -> C6H12O6 + 6 O2",
+        "Fase clara: tilacoides, fotossistemas I e II",
+        "Fotolise da agua: liberacao de O2",
+        "Fase escura: estroma, Ciclo de Calvin",
+        "Produtos: glicose (energia), O2 (subproduto)"
+      ],
+      "exemplos": [
+        "Clorofila: pigmento verde que absorve luz",
+        "Fotossistema II: quebra de H2O, libera O2",
+        "ATP e NADPH: produzidos na fase clara",
+        "Ciclo de Calvin: fixa CO2, produz glicose",
+        "Estomatos: entrada de CO2, saida de O2"
+      ],
+      "dicas": [
+        "Fase clara: nos tilacoides, depende de luz",
+        "Fase escura: no estroma, nao depende de luz (usa ATP/NADPH)",
+        "O2 liberado vem da agua, nao do CO2",
+        "Fase clara: fotofosforilacao (ATP)",
+        "Fase escura: reducao do CO2 em glicose"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "De onde vem o oxigenio (O2) liberado durante a fotossintese?",
+          "alternativas": [
+            "Do dioxido de carbono (CO2)",
+            "Da glicose",
+            "Da agua (H2O)",
+            "Do ATP",
+            "Do NADPH"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O O2 liberado na fotossintese vem da fotolise (quebra) da agua durante a fase clara, e nao do CO2. Isso foi comprovado usando agua marcada com isotopos."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Qual a funcao do Ciclo de Calvin na fotossintese?",
+          "alternativas": [
+            "Produzir ATP",
+            "Quebrar a molecula de agua",
+            "Fixar CO2 e produzir glicose",
+            "Absorver luz solar",
+            "Liberar oxigenio"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O Ciclo de Calvin (fase escura) usa ATP e NADPH da fase clara para fixar CO2 atmosferico e produzir glicose (carboidrato)."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Estrutura e Funcao das Plantas",
+      "resumo": "Plantas vasculares possuem raiz (absorcao), caule (sustentacao e transporte) e folhas (fotossintese). Xilema transporta agua e sais, floema transporta seiva organica.",
+      "topicos": [
+        "Raiz: absorcao de agua e minerais, pelos absorventes",
+        "Caule: sustentacao, transporte (xilema e floema)",
+        "Folhas: fotossintese, estomatos (trocas gasosas)",
+        "Xilema: agua e sais minerais (seiva bruta)",
+        "Floema: seiva organica (glicose)"
+      ],
+      "exemplos": [
+        "Pelos radiculares: aumentam superficie de absorcao",
+        "Xilema: transporte unidirecional (raiz -> folha)",
+        "Floema: transporte bidirecional (folha -> orgaos)",
+        "Estomatos: abrem de dia (fotossintese), fecham a noite",
+        "Transpiracao: perda de agua pelas folhas"
+      ],
+      "dicas": [
+        "Raiz: zona pilosa (pelos absorventes)",
+        "Xilema: seiva BRUTA (agua + sais)",
+        "Floema: seiva ELABORADA (organica, glicose)",
+        "Estomatos: controlam entrada de CO2 e perda de H2O",
+        "Transpiracao: 'puxa' agua do xilema"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Qual tecido vegetal transporta a seiva elaborada (organica) das folhas para outras partes da planta?",
+          "alternativas": [
+            "Xilema",
+            "Floema",
+            "Meristema",
+            "Parenquima",
+            "Esclerenquima"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O floema transporta seiva elaborada (glicose e outros organicos) produzida na fotossintese das folhas para raizes, frutos e outras partes da planta."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Qual a principal funcao dos estomatos nas folhas?",
+          "alternativas": [
+            "Absorcao de agua do solo",
+            "Transporte de seiva",
+            "Trocas gasosas (CO2 e O2)",
+            "Producao de clorofila",
+            "Sustentacao da folha"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Estomatos sao poros nas folhas que controlam as trocas gasosas, permitindo entrada de CO2 (fotossintese) e saida de O2 e vapor d'agua (transpiracao)."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Hormonios Vegetais",
+      "resumo": "Hormonios vegetais (fitoormonios) regulam crescimento, desenvolvimento e respostas a estimulos. Principais: auxinas, giberelinas, citocininas, acido abscisico e etileno.",
+      "topicos": [
+        "Auxinas: crescimento, fototropismo, gravitropismo",
+        "Giberelinas: alongamento do caule, germinacao",
+        "Citocininas: divisao celular, retarda envelhecimento",
+        "Acido abscisico: dormencia, fechamento de estomatos",
+        "Etileno: amadurecimento de frutos, abscisao foliar"
+      ],
+      "exemplos": [
+        "Fototropismo: planta cresce em direcao a luz (auxina)",
+        "Gravitropismo: raiz cresce para baixo, caule para cima",
+        "Giberelina: plantas anas ficam altas",
+        "Etileno: amadurece banana (gas)",
+        "ABA: fecha estomatos em seca (economia de agua)"
+      ],
+      "dicas": [
+        "Auxina: concentrada no lado sombreado (curvatura)",
+        "Giberelina: quebra dormencia de sementes",
+        "Citocinina: divisao celular (meristemas)",
+        "ABA: stress hidrico (seca)",
+        "Etileno: unico hormonio gasoso"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Qual hormonio vegetal e responsavel pelo amadurecimento de frutos?",
+          "alternativas": [
+            "Auxina",
+            "Giberelina",
+            "Citocinina",
+            "Etileno",
+            "Acido abscisico"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "O etileno e um gas que acelera o amadurecimento de frutos. Por isso, colocar frutos verdes perto de maduros acelera o processo (etileno liberado)."
+        },
+        {
+          "id": "q6",
+          "enunciado": "O fototropismo positivo (crescimento em direcao a luz) e causado por qual hormonio?",
+          "alternativas": [
+            "Giberelina",
+            "Auxina",
+            "Etileno",
+            "Citocinina",
+            "ABA"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A auxina se concentra no lado sombreado da planta, causando maior crescimento nesse lado e curvatura em direcao a luz (fototropismo positivo)."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Reproducao Vegetal",
+      "resumo": "Plantas apresentam reproducao assexuada (vegetativa) e sexuada (flores, sementes). A reproducao sexuada envolve polinizacao, fecundacao e formacao de sementes e frutos.",
+      "topicos": [
+        "Reproducao assexuada: estacas, rizomas, tuberculos",
+        "Flor: orgao reprodutor (estames, carpelos)",
+        "Polinizacao: transferencia de polen",
+        "Fecundacao: formacao de zigoto",
+        "Semente e fruto: protecao e dispersao"
+      ],
+      "exemplos": [
+        "Estaquia: cortar galho e plantar (clonagem)",
+        "Batata: reproducao por tuberculos",
+        "Abelhas: polinizadores importantes",
+        "Semente: embriao + reservas + tegumento",
+        "Fruto: ovar io desenvolvido (protege semente)"
+      ],
+      "dicas": [
+        "Assexuada: rapida, clones (geneticamente identicos)",
+        "Sexuada: variabilidade genetica",
+        "Estame: orgao masculino (polen)",
+        "Carpelo: orgao feminino (ovulo)",
+        "Fruto: exclusivo de angiospermas"
+      ],
+      "questoes": [
+        {
+          "id": "q7",
+          "enunciado": "Qual a principal vantagem da reproducao sexuada em plantas?",
+          "alternativas": [
+            "Maior rapidez",
+            "Variabilidade genetica",
+            "Nao depende de polinizadores",
+            "Produz clones",
+            "Menor gasto energetico"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A reproducao sexuada gera variabilidade genetica (combinacao de genes), aumentando a capacidade de adaptacao a mudancas ambientais e resistencia a doencas."
+        },
+        {
+          "id": "q8",
+          "enunciado": "Qual estrutura da flor contem os ovulos (gametas femininos)?",
+          "alternativas": [
+            "Estame",
+            "Antera",
+            "Carpelo (pistilo)",
+            "Petala",
+            "Sepala"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O carpelo (ou pistilo) e o orgao reprodutor feminino da flor, contendo o ovario onde estao os ovulos. Apos fecundacao, forma sementes e frutos."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Grupos Vegetais",
+      "resumo": "As plantas evoluiram em diferentes grupos: briofitas (musgos), pteridofitas (samambaias), gimnospermas (pinheiros) e angiospermas (plantas com flores e frutos).",
+      "topicos": [
+        "Briofitas: sem vasos condutores, dependem de agua",
+        "Pteridofitas: primeiras com vasos (xilema, floema)",
+        "Gimnospermas: sementes nuas (pinheiros)",
+        "Angiospermas: flores e frutos, mais evoluidas",
+        "Ciclo de vida: alternancia de geracoes"
+      ],
+      "exemplos": [
+        "Briofitas: musgos (pequenos, ambientes umidos)",
+        "Pteridofitas: samambaias, avencas",
+        "Gimnospermas: pinheiro, araucaria (coniferas)",
+        "Angiospermas: maioria das plantas (flores, frutos)",
+        "Monocotiledoneas: gramineas; Dicotiledoneas: feijao"
+      ],
+      "dicas": [
+        "Briofitas: sem raiz/caule/folha verdadeiros",
+        "Pteridofitas: primeiros vasos, sem semente",
+        "Gimnospermas: sementes em estrobilo (pinha)",
+        "Angiospermas: dominam ambiente terrestre",
+        "Evolucao: briofitas -> pteridofitas -> gimnospermas -> angiospermas"
+      ],
+      "questoes": [
+        {
+          "id": "q9",
+          "enunciado": "Qual grupo de plantas foi o primeiro a apresentar vasos condutores (xilema e floema)?",
+          "alternativas": [
+            "Briofitas",
+            "Pteridofitas",
+            "Gimnospermas",
+            "Angiospermas",
+            "Algas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Pteridofitas (samambaias) foram as primeiras plantas vasculares, com xilema e floema, permitindo maior porte e colonizacao de ambientes mais secos."
+        },
+        {
+          "id": "q10",
+          "enunciado": "Qual a principal caracteristica que diferencia angiospermas de gimnospermas?",
+          "alternativas": [
+            "Presenca de vasos condutores",
+            "Presenca de sementes",
+            "Presenca de flores e frutos",
+            "Presenca de raizes",
+            "Reproducao sexuada"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Angiospermas possuem flores verdadeiras e frutos que protegem as sementes. Gimnospermas tem sementes 'nuas' em estróbilos (como pinhas), sem frutos."
+        }
+      ]
+    }
+  ]
+}

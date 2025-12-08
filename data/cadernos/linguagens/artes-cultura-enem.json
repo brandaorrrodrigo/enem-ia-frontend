@@ -8,7 +8,7 @@
   "icone": "Palette",
   "cor": "from-pink-600 to-rose-600",
   "tempoEstimado": "12 horas",
-  "fpRecompensa": 600,
+  "fpRecompensa": 0,
   "tags": ["artes", "cultura", "música", "pintura", "ENEM"],
   "modulos": [
     {

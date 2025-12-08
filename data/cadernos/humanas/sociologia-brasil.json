@@ -1,0 +1,210 @@
+{
+  "id": "sociologia-brasil",
+  "titulo": "Formacao da Sociedade Brasileira",
+  "descricao": "Processos historicos, culturais e sociais da formacao do Brasil",
+  "icone": "🇧🇷",
+  "cor": "from-green-500 to-yellow-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Colonizacao e Escravidao",
+      "resumo": "O processo de colonizacao portuguesa e o sistema escravista como bases da sociedade brasileira.",
+      "topicos": [
+        "Colonizacao portuguesa",
+        "Escravidao indigena e africana",
+        "Economia colonial: cana, mineracao, cafe",
+        "Casa-grande e senzala (Gilberto Freyre)",
+        "Resistencia escrava: quilombos"
+      ],
+      "exemplos": [
+        "Escravidao: 300 anos, milhoes de africanos",
+        "Quilombo dos Palmares: resistencia negra",
+        "Freyre: mito da democracia racial"
+      ],
+      "dicas": [
+        "Escravidao estruturou a sociedade brasileira",
+        "Heranca escravista persiste em desigualdades",
+        "ENEM critica o mito da democracia racial"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A escravidao no Brasil colonial foi fundamental porque:",
+          "alternativas": [
+            "Nao teve nenhum impacto na sociedade",
+            "Estruturou a economia, as relacoes sociais e deixou herancas ate hoje",
+            "Durou apenas alguns anos",
+            "Nao houve resistencia dos escravizados",
+            "Foi um sistema igualitario"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A escravidao estruturou a economia colonial (cana, mineracao, cafe), definiu relacoes sociais hierarquicas e racializadas, e deixou herancas profundas como racismo estrutural e desigualdade racial que persistem ate hoje.",
+          "dificuldade": "facil",
+          "tags": ["escravidao", "colonizacao", "brasil"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Modernizacao e Urbanizacao",
+      "resumo": "Transformacoes sociais com a industrializacao, urbanizacao e migracao no seculo XX.",
+      "topicos": [
+        "Industrializacao (Era Vargas)",
+        "Migracao rural-urbana",
+        "Crescimento das cidades",
+        "Favelas e periferias",
+        "Modernizacao conservadora"
+      ],
+      "exemplos": [
+        "Anos 1930-50: industrializacao e urbanizacao",
+        "Exodo rural: campo -> cidade",
+        "Favelas: urbanizacao sem planejamento",
+        "Florestan Fernandes: modernizacao conservadora"
+      ],
+      "dicas": [
+        "Urbanizacao rapida e desigual",
+        "Industrializacao nao eliminou desigualdades",
+        "ENEM relaciona com problemas urbanos"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "O processo de urbanizacao brasileiro no seculo XX caracterizou-se por:",
+          "alternativas": [
+            "Planejamento perfeito e distribuicao igualitaria",
+            "Crescimento rapido e desigual, com formacao de favelas e periferias",
+            "Crescimento lento e ordenado",
+            "Ausencia de migracao interna",
+            "Industrializacao sem consequencias sociais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A urbanizacao brasileira foi rapida e concentrada (exodo rural), mas desigual e sem planejamento adequado, resultando em formacao de favelas, periferias precarias, segregacao espacial e problemas urbanos.",
+          "dificuldade": "facil",
+          "tags": ["urbanizacao", "migracao", "favelas"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Desigualdade e Estratificacao no Brasil",
+      "resumo": "Caracteristicas da desigualdade social brasileira: renda, raca, genero e regiao.",
+      "topicos": [
+        "Brasil: pais muito desigual",
+        "Desigualdade racial",
+        "Desigualdade de genero",
+        "Desigualdade regional",
+        "Concentracao de renda"
+      ],
+      "exemplos": [
+        "Brasil: um dos paises mais desiguais do mundo",
+        "Populacao negra: menor renda, mais desemprego",
+        "Mulheres: salarios menores que homens",
+        "Norte/Nordeste: regioes mais pobres"
+      ],
+      "dicas": [
+        "Desigualdade e multidimensional no Brasil",
+        "Entrecruzamento classe-raca-genero",
+        "ENEM cobra dados sobre desigualdade"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "A desigualdade social no Brasil caracteriza-se por:",
+          "alternativas": [
+            "Ser uma das menores do mundo",
+            "Afetar apenas aspectos economicos",
+            "Ser multidimensional, envolvendo renda, raca, genero e regiao",
+            "Nao existir mais atualmente",
+            "Ser identica em todo o territorio nacional"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A desigualdade brasileira e multidimensional: economica (renda), racial (populacao negra mais pobre), de genero (mulheres ganham menos), regional (Norte/Nordeste x Sul/Sudeste), se entrecruzando e se reforçando.",
+          "dificuldade": "facil",
+          "tags": ["desigualdade", "brasil", "raca-genero"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Pensamento Social Brasileiro",
+      "resumo": "Principais interpretes da sociedade brasileira: Gilberto Freyre, Sergio Buarque, Florestan Fernandes, Darcy Ribeiro.",
+      "topicos": [
+        "Gilberto Freyre: Casa-grande & Senzala",
+        "Sergio Buarque: Raizes do Brasil",
+        "Florestan Fernandes: integracao do negro",
+        "Darcy Ribeiro: povo brasileiro",
+        "Caio Prado Jr.: formacao economica"
+      ],
+      "exemplos": [
+        "Freyre: mito da democracia racial",
+        "Sergio Buarque: 'homem cordial', patrimonialismo",
+        "Florestan: racismo estrutural, nao democratico"
+      ],
+      "dicas": [
+        "Cada autor tem interpretacao sobre o Brasil",
+        "Freyre: controverso, critica atual",
+        "ENEM cobra conhecimento desses autores"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Florestan Fernandes critica o mito da democracia racial ao mostrar que:",
+          "alternativas": [
+            "Nao houve escravidao no Brasil",
+            "O racismo persiste estruturalmente na sociedade brasileira pos-abolicao",
+            "Ha perfeita igualdade racial no Brasil",
+            "A miscigenacao eliminou o racismo",
+            "A abolicao resolveu todos os problemas raciais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Florestan Fernandes demonstra que a abolicao nao integrou os negros plenamente na sociedade, mantendo-se o racismo estrutural. Critica o mito da democracia racial que esconde discriminacao e desigualdade persistentes.",
+          "dificuldade": "media",
+          "tags": ["florestan-fernandes", "democracia-racial", "racismo"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Brasil Contemporaneo",
+      "resumo": "Desafios atuais: democratizacao, violencia, inclusao social e diversidade.",
+      "topicos": [
+        "Redemocratizacao (pos-1985)",
+        "Constituicao de 1988",
+        "Violencia urbana e seguranca",
+        "Politicas sociais: Bolsa Familia, cotas",
+        "Diversidade e direitos humanos"
+      ],
+      "exemplos": [
+        "Constituicao Cidada (1988): direitos sociais",
+        "Bolsa Familia: reducao da pobreza",
+        "Cotas raciais: reparacao historica",
+        "Violencia: desafio urbano"
+      ],
+      "dicas": [
+        "Democracia ainda em consolidacao",
+        "Avancos sociais mas desafios persistem",
+        "ENEM valoriza cidadania e direitos"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "A Constituicao de 1988 representa um marco na historia brasileira por:",
+          "alternativas": [
+            "Restringir direitos sociais e politicos",
+            "Ampliar direitos sociais, politicos e civis, sendo chamada de Constituicao Cidada",
+            "Manter a ditadura militar",
+            "Eliminar completamente a desigualdade",
+            "Nao ter nenhum impacto social"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Constituicao de 1988, chamada Cidada, marca a redemocratizacao e amplia direitos fundamentais: voto universal, liberdades civis, direitos sociais (saude, educacao, assistencia), representando avanço democratico significativo.",
+          "dificuldade": "facil",
+          "tags": ["constituicao-1988", "redemocratizacao", "direitos"]
+        }
+      ]
+    }
+  ]
+}

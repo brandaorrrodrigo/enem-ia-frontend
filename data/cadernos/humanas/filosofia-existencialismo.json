@@ -1,0 +1,207 @@
+{
+  "id": "filosofia-existencialismo",
+  "titulo": "Existencialismo",
+  "descricao": "A existencia precede a essencia: liberdade, angustia e responsabilidade humana",
+  "icone": "🎭",
+  "cor": "from-slate-500 to-gray-600",
+  "nivel": "Avancado",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "O Que e Existencialismo?",
+      "resumo": "Caracteristicas fundamentais do pensamento existencialista: prioridade da existencia, liberdade radical e responsabilidade individual.",
+      "topicos": [
+        "Existencia precede essencia",
+        "Liberdade e responsabilidade",
+        "Angustia e desamparo",
+        "Autenticidade x inautenticidade",
+        "Situacao e projeto existencial"
+      ],
+      "exemplos": [
+        "Nao ha natureza humana fixa, nos fazemos a nos mesmos",
+        "Estamos 'condenados a ser livres'",
+        "Angustia: consciencia da liberdade radical"
+      ],
+      "dicas": [
+        "Existencialismo foca na experiencia concreta do individuo",
+        "Rejeita essencias fixas e determinismos",
+        "ENEM relaciona com questoes de identidade e escolha"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A afirmacao existencialista de que 'a existencia precede a essencia' significa que:",
+          "alternativas": [
+            "O ser humano tem uma natureza fixa predeterminada",
+            "Primeiro existimos, depois criamos nossa essencia atraves de nossas escolhas",
+            "A essencia humana e dada por Deus",
+            "Nao podemos fazer escolhas reais",
+            "A existencia e uma ilusao"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Para o existencialismo, nao ha uma essencia humana predefinida. Primeiro existimos (somos lancados no mundo), depois definimos quem somos atraves de nossas escolhas e acoes livres.",
+          "dificuldade": "media",
+          "tags": ["existencialismo", "existencia-essencia", "liberdade"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Kierkegaard: O Pai do Existencialismo",
+      "resumo": "Kierkegaard enfatiza a subjetividade, a angustia existencial e os estagios da vida: estetico, etico e religioso.",
+      "topicos": [
+        "Subjetividade e verdade",
+        "Angustia e desespero",
+        "Os tres estagios da existencia",
+        "O salto da fe",
+        "O individuo singular"
+      ],
+      "exemplos": [
+        "'A verdade e subjetiva'",
+        "Estagio estetico: vida pelo prazer imediato",
+        "Estagio religioso: relacionamento pessoal com Deus"
+      ],
+      "dicas": [
+        "Kierkegaard critica o sistema filosofico de Hegel",
+        "Enfatiza a experiencia individual concreta",
+        "O salto da fe e nao-racional mas necessario"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Para Kierkegaard, a angustia existencial surge porque:",
+          "alternativas": [
+            "Temos doencas fisicas",
+            "Somos confrontados com a liberdade e a necessidade de escolher",
+            "A sociedade nos oprime",
+            "Nao temos liberdade alguma",
+            "Deus nos abandona completamente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A angustia (Angst) em Kierkegaard surge da confrontacao com a liberdade radical e a responsabilidade de fazer escolhas sem garantias, especialmente diante de possibilidades infinitas.",
+          "dificuldade": "media",
+          "tags": ["kierkegaard", "angustia", "liberdade"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Heidegger e o Ser-no-Mundo",
+      "resumo": "Heidegger investiga o sentido do ser, a existencia autentica e a relacao fundamental do Dasein com o mundo.",
+      "topicos": [
+        "Dasein (ser-ai, existencia humana)",
+        "Ser-no-mundo",
+        "Ser-para-a-morte",
+        "Existencia autentica x inautentica",
+        "A questao do sentido do ser"
+      ],
+      "exemplos": [
+        "Dasein: o ente que questiona o ser",
+        "Ser-para-a-morte: consciencia da finitude",
+        "Inautenticidade: viver como 'a gente' (das Man)"
+      ],
+      "dicas": [
+        "Heidegger nao gosta do termo 'existencialismo'",
+        "Foco na questao ontologica fundamental: o que e o ser?",
+        "Autenticidade: assumir a propria finitude"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "O conceito heideggeriano de 'ser-para-a-morte' refere-se a:",
+          "alternativas": [
+            "Uma obsessao morbida com a morte",
+            "O desejo de morrer o mais rapido possivel",
+            "A consciencia da finitude como constitutiva da existencia autentica",
+            "A negacao da mortalidade humana",
+            "A crenca na imortalidade da alma"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Ser-para-a-morte significa que a possibilidade da morte e constitutiva da existencia humana. Assumir essa finitude nos permite viver de forma autentica, sem ilusoes.",
+          "dificuldade": "media",
+          "tags": ["heidegger", "ser-para-morte", "autenticidade"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Sartre: Liberdade e Ma-Fe",
+      "resumo": "Sartre desenvolve um existencialismo ateu, enfatizando a liberdade radical, a responsabilidade total e o conceito de ma-fe.",
+      "topicos": [
+        "Existencia precede essencia",
+        "Em-si e para-si",
+        "Liberdade radical e responsabilidade",
+        "Ma-fe (auto-engano)",
+        "O inferno sao os outros"
+      ],
+      "exemplos": [
+        "'Estamos condenados a ser livres'",
+        "Ma-fe: o garcom que se identifica totalmente com seu papel",
+        "'Nao existem desculpas para nossas escolhas'"
+      ],
+      "dicas": [
+        "Sartre: sem Deus, sem natureza humana fixa",
+        "Somos totalmente responsaveis por nossas escolhas",
+        "Ma-fe: fugir da liberdade e responsabilidade"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "O conceito sartriano de 'ma-fe' refere-se a:",
+          "alternativas": [
+            "Mentir intencionalmente para outras pessoas",
+            "Auto-engano: negar a propria liberdade e refugiar-se em papeis fixos",
+            "Ter crencas religiosas",
+            "Ser honesto consigo mesmo",
+            "Assumir plenamente a responsabilidade"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Ma-fe e o auto-engano pelo qual negamos nossa liberdade, fingindo que somos determinados por papeis sociais, natureza fixa ou circunstancias, para escapar da angustia da responsabilidade total.",
+          "dificuldade": "media",
+          "tags": ["sartre", "ma-fe", "liberdade"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Camus e o Absurdo",
+      "resumo": "Albert Camus desenvolve a filosofia do absurdo: a confrontacao entre o desejo humano de sentido e um mundo sem sentido intrinseco.",
+      "topicos": [
+        "O sentimento do absurdo",
+        "O mito de Sisifo",
+        "Viver sem ilusoes metafisicas",
+        "Revolta e liberdade",
+        "Criacao de sentido"
+      ],
+      "exemplos": [
+        "'O unico problema filosofico serio e o suicidio'",
+        "Sisifo: feliz apesar da tarefa eterna e sem sentido",
+        "'E preciso imaginar Sisifo feliz'"
+      ],
+      "dicas": [
+        "Absurdo: conflito entre desejo de sentido e ausencia de sentido no mundo",
+        "Camus rejeita o suicidio e a esperanca metafisica",
+        "Solucao: revolta lucida e criacao de sentido"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Para Camus, o sentimento do absurdo surge da:",
+          "alternativas": [
+            "Doenca mental",
+            "Confrontacao entre o desejo humano de sentido e o silencio do mundo",
+            "Existencia de um sentido cosmico evidente",
+            "Impossibilidade de fazer escolhas",
+            "Certeza de que tudo tem significado"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O absurdo para Camus e o confronto entre nossa busca por sentido, unidade e clareza, e o silencio irracional e indiferente do mundo. Nao ha sentido intrinseco, mas podemos criar nosso proprio sentido.",
+          "dificuldade": "facil",
+          "tags": ["camus", "absurdo", "sisifa"]
+        }
+      ]
+    }
+  ]
+}

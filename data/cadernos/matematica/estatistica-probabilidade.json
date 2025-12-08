@@ -1,0 +1,576 @@
+{
+  "id": "estatistica-probabilidade",
+  "slug": "estatistica-probabilidade",
+  "titulo": "Estatística e Probabilidade",
+  "categoria": "matematica",
+  "nivel": "intermediario",
+  "descricao": "Análise de dados, medidas de tendência central e dispersão, probabilidade e aplicações em situações do cotidiano",
+  "icone": "BarChart3",
+  "cor": "#10B981",
+  "tempoEstimado": "10 horas",
+  "fpRecompensa": 0,
+  "tags": ["matematica", "ENEM", "estatistica", "probabilidade", "dados"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Medidas de Tendência Central",
+      "resumo": "Média aritmética, mediana, moda e suas aplicações na análise de dados",
+      "topicos": [
+        {
+          "titulo": "Média Aritmética",
+          "conteudo": "MÉDIA ARITMÉTICA SIMPLES: Soma de todos os valores dividida pela quantidade.\n\nFórmula: x̄ = (x₁ + x₂ + ... + xₙ) / n\n\nEXEMPLO 1: Notas de um aluno: 7, 8, 6, 9, 7\nMédia = (7 + 8 + 6 + 9 + 7) / 5 = 37/5 = 7,4\n\nMÉDIA ARITMÉTICA PONDERADA: Cada valor tem um peso diferente.\n\nFórmula: x̄ = (x₁p₁ + x₂p₂ + ... + xₙpₙ) / (p₁ + p₂ + ... + pₙ)\n\nEXEMPLO 2: Notas com pesos diferentes\nProva 1: 7,0 (peso 2)\nProva 2: 8,0 (peso 3)\nTrabalho: 9,0 (peso 1)\n\nMédia = (7×2 + 8×3 + 9×1) / (2+3+1) = (14 + 24 + 9) / 6 = 47/6 ≈ 7,83\n\nPROPRIEDADES DA MÉDIA:\n1) É afetada por valores extremos (outliers)\n2) Pode não pertencer ao conjunto de dados\n3) É única para cada conjunto\n4) Soma das diferenças para a média = 0\n\nEXEMPLO 3: SALÁRIOS\nSalários em uma empresa: R$ 2.000, R$ 2.500, R$ 2.200, R$ 3.000, R$ 15.000\nMédia = R$ 4.940 (inflada pelo salário de R$ 15.000)\n\nAPLICAÇÕES:\n- Notas escolares\n- Índices econômicos\n- Consumo médio\n- Temperaturas médias"
+        },
+        {
+          "titulo": "Mediana",
+          "conteudo": "MEDIANA: Valor central quando os dados estão ordenados. Divide o conjunto em duas partes iguais.\n\nCÁLCULO:\n1) Ordene os dados em ordem crescente\n2) Se n é ímpar: mediana = elemento central\n3) Se n é par: mediana = média dos dois elementos centrais\n\nEXEMPLO 1: Dados ordenados: 3, 5, 7, 9, 11\nn = 5 (ímpar), posição central = 3\nMediana = 7\n\nEXEMPLO 2: Dados ordenados: 2, 4, 6, 8, 10, 12\nn = 6 (par), posições centrais = 3 e 4\nMediana = (6 + 8) / 2 = 7\n\nEXEMPLO 3: SALÁRIOS (do exemplo anterior)\nOrdenados: 2.000, 2.200, 2.500, 3.000, 15.000\nMediana = R$ 2.500 (mais representativa que a média)\n\nVANTAGENS DA MEDIANA:\n- Não é afetada por valores extremos\n- Melhor para distribuições assimétricas\n- Sempre é um valor central real\n\nCOMPARAÇÃO MÉDIA vs MEDIANA:\n- Distribuição simétrica: média ≈ mediana\n- Distribuição assimétrica à direita: média > mediana\n- Distribuição assimétrica à esquerda: média < mediana\n\nAPLICAÇÕES:\n- Renda per capita\n- Preços de imóveis\n- Idade populacional\n- Tempo de espera"
+        },
+        {
+          "titulo": "Moda",
+          "conteudo": "MODA: Valor que aparece com maior frequência no conjunto de dados.\n\nCLASSIFICAÇÃO:\n- AMODAL: Nenhum valor se repete\n- UNIMODAL: Um único valor mais frequente\n- BIMODAL: Dois valores com mesma frequência máxima\n- MULTIMODAL: Mais de dois valores com mesma frequência máxima\n\nEXEMPLO 1: Dados: 2, 3, 3, 4, 5, 5, 5, 6, 7\nModa = 5 (aparece 3 vezes) - UNIMODAL\n\nEXEMPLO 2: Dados: 10, 15, 15, 20, 20, 25\nModas = 15 e 20 (ambos aparecem 2 vezes) - BIMODAL\n\nEXEMPLO 3: Dados: 1, 2, 3, 4, 5\nNão há moda - AMODAL\n\nEXEMPLO 4: TAMANHOS DE CALÇADO\nEm uma loja, vendas do dia:\nTamanho 38: 3 pares\nTamanho 39: 7 pares\nTamanho 40: 5 pares\nTamanho 41: 2 pares\n\nModa = 39 (o mais vendido)\n\nVANTAGENS DA MODA:\n- Pode ser usada para dados qualitativos\n- Indica o valor mais comum\n- Útil para decisões comerciais\n\nAPLICAÇÕES:\n- Preferências do consumidor\n- Tamanhos mais comuns\n- Horários de pico\n- Produtos mais vendidos\n\nRELAÇÃO ENTRE AS TRÊS MEDIDAS:\nEm distribuições simétricas: Média = Mediana = Moda\nEm distribuições assimétricas: valores diferentes"
+        },
+        {
+          "titulo": "Problemas Contextualizados",
+          "conteudo": "PROBLEMA 1: DESEMPENHO ESCOLAR\nUma turma fez uma prova. Notas: 5, 6, 6, 7, 7, 7, 8, 8, 9, 10\n\nMédia: (5+6+6+7+7+7+8+8+9+10)/10 = 73/10 = 7,3\nMediana: (7+7)/2 = 7\nModa: 7 (aparece 3 vezes)\n\nInterpretação: Desempenho razoável, concentrado em torno de 7.\n\nPROBLEMA 2: ANÁLISE SALARIAL\nSalários: R$ 1.800, R$ 2.000, R$ 2.000, R$ 2.200, R$ 2.500, R$ 8.000\n\nMédia: R$ 3.083 (distorcida pelo salário alto)\nMediana: (R$ 2.000 + R$ 2.200)/2 = R$ 2.100 (mais representativa)\nModa: R$ 2.000\n\nPROBLEMA 3: CONTROLE DE QUALIDADE\nTempo de duração de lâmpadas (em horas):\n980, 1000, 1000, 1020, 1020, 1020, 1040, 1060\n\nMédia: 1.017,5 horas\nMediana: (1020 + 1020)/2 = 1.020 horas\nModa: 1.020 horas\n\nConclusão: Produto consistente, maioria dura cerca de 1.020h.\n\nPROBLEMA 4: TRANSPORTE PÚBLICO\nNúmero de passageiros por horário:\n8h: 150, 9h: 200, 10h: 80, 11h: 70, 12h: 180, 13h: 90\n\nMédia: 128,3 passageiros\nMediana: (80 + 150)/2 = 115\nModa: Não há (amodal)\n\nPicos: 9h e 12h (horários de rush)"
+        }
+      ],
+      "exemplos": [
+        "Calcular média de consumo mensal de energia",
+        "Determinar mediana de preços de produtos",
+        "Identificar moda em pesquisa de preferências"
+      ],
+      "dicas": [
+        "Sempre ordene os dados antes de calcular a mediana",
+        "Use mediana quando houver valores extremos (outliers)",
+        "Moda é útil para dados qualitativos e categóricos",
+        "Em questões do ENEM, interprete o contexto para escolher a medida adequada",
+        "Média ponderada: multiplique cada valor pelo seu peso"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Em uma empresa, os salários dos funcionários são: R$ 2.500, R$ 2.800, R$ 3.000, R$ 3.000, R$ 3.200 e R$ 12.000. O gerente afirma que o salário médio é R$ 4.417. Um funcionário discorda e diz que o valor mais representativo é R$ 3.000. Qual medida estatística cada um utilizou?",
+          "alternativas": {
+            "A": "Gerente: média; Funcionário: moda",
+            "B": "Gerente: mediana; Funcionário: média",
+            "C": "Gerente: média; Funcionário: mediana",
+            "D": "Gerente: moda; Funcionário: média",
+            "E": "Gerente: moda; Funcionário: mediana"
+          },
+          "correta": "C",
+          "explicacao": "Média = 26.500/6 = 4.417 (gerente). Mediana = (3.000+3.000)/2 = 3.000 (funcionário). A mediana é mais representativa devido ao outlier de R$ 12.000",
+          "dificuldade": "medio",
+          "tags": ["media", "mediana", "interpretacao"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Um aluno obteve as seguintes notas: 6,0 (peso 1), 7,0 (peso 2), 8,0 (peso 2) e 5,0 (peso 1). Qual sua média final?",
+          "alternativas": {
+            "A": "6,3",
+            "B": "6,5",
+            "C": "6,8",
+            "D": "7,0",
+            "E": "7,2"
+          },
+          "correta": "C",
+          "explicacao": "Média ponderada = (6×1 + 7×2 + 8×2 + 5×1)/(1+2+2+1) = (6+14+16+5)/6 = 41/6 ≈ 6,83",
+          "dificuldade": "facil",
+          "tags": ["media-ponderada", "notas"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Os preços de um produto em 7 lojas são: R$ 45, R$ 48, R$ 50, R$ 50, R$ 52, R$ 55, R$ 60. Qual a mediana desses preços?",
+          "alternativas": {
+            "A": "R$ 48,00",
+            "B": "R$ 50,00",
+            "C": "R$ 51,00",
+            "D": "R$ 52,00",
+            "E": "R$ 51,43"
+          },
+          "correta": "B",
+          "explicacao": "Dados já ordenados. n = 7 (ímpar). Posição central = 4. Mediana = R$ 50,00",
+          "dificuldade": "facil",
+          "tags": ["mediana", "dados-ordenados"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Uma pesquisa sobre número de filhos em 10 famílias resultou em: 0, 1, 1, 2, 2, 2, 2, 3, 3, 4. Qual é a moda?",
+          "alternativas": {
+            "A": "0",
+            "B": "1",
+            "C": "2",
+            "D": "3",
+            "E": "4"
+          },
+          "correta": "C",
+          "explicacao": "O valor 2 aparece 4 vezes, mais que qualquer outro. Moda = 2",
+          "dificuldade": "facil",
+          "tags": ["moda", "frequencia"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Em um conjunto de dados, a média é 60, a mediana é 50 e a moda é 45. O que se pode concluir sobre a distribuição?",
+          "alternativas": {
+            "A": "É simétrica",
+            "B": "É assimétrica à direita (positiva)",
+            "C": "É assimétrica à esquerda (negativa)",
+            "D": "É bimodal",
+            "E": "Não há informação suficiente"
+          },
+          "correta": "B",
+          "explicacao": "Quando média > mediana > moda, a distribuição é assimétrica à direita, indicando valores extremos altos que puxam a média para cima",
+          "dificuldade": "medio",
+          "tags": ["interpretacao", "assimetria", "distribuicao"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Medidas de Dispersão",
+      "resumo": "Amplitude, variância, desvio padrão e coeficiente de variação",
+      "topicos": [
+        {
+          "titulo": "Amplitude e Quartis",
+          "conteudo": "AMPLITUDE TOTAL: Diferença entre o maior e o menor valor.\n\nAmplitude = Máximo - Mínimo\n\nEXEMPLO 1: Temperaturas: 18°C, 22°C, 25°C, 28°C, 32°C\nAmplitude = 32 - 18 = 14°C\n\nQUARTIS: Valores que dividem dados ordenados em 4 partes iguais.\n\n- Q1 (1° quartil): 25% dos dados abaixo\n- Q2 (2° quartil): Mediana, 50% dos dados abaixo\n- Q3 (3° quartil): 75% dos dados abaixo\n\nAMPLITUDE INTERQUARTIL: AIQ = Q3 - Q1\nMede a dispersão central, eliminando extremos.\n\nEXEMPLO 2: Dados ordenados: 10, 12, 15, 18, 20, 22, 25, 28, 30\nn = 9\n\nQ1: posição (9+1)/4 = 2,5 → média entre 2° e 3° = (12+15)/2 = 13,5\nQ2: posição central = 5° valor = 20\nQ3: posição 3(9+1)/4 = 7,5 → média entre 7° e 8° = (25+28)/2 = 26,5\n\nAIQ = 26,5 - 13,5 = 13\n\nOUTLIERS (valores atípicos):\nValor é outlier se:\n- Menor que Q1 - 1,5×AIQ\n- Maior que Q3 + 1,5×AIQ\n\nBOX PLOT: Representação gráfica mostrando:\n- Mínimo, Q1, Q2 (mediana), Q3, Máximo\n- Outliers como pontos separados\n\nAPLICAÇÕES:\n- Análise de variabilidade\n- Detecção de anomalias\n- Comparação de conjuntos"
+        },
+        {
+          "titulo": "Variância e Desvio Padrão",
+          "conteudo": "VARIÂNCIA: Média dos quadrados dos desvios em relação à média.\n\nVARIÂNCIA POPULACIONAL (σ²):\nσ² = Σ(xi - x̄)² / n\n\nVARIÂNCIA AMOSTRAL (s²):\ns² = Σ(xi - x̄)² / (n-1)\n\nDESVIO PADRÃO: Raiz quadrada da variância.\nσ = √σ² ou s = √s²\n\nINTERPRETAÇÃO:\n- Desvio padrão pequeno: dados concentrados próximos à média\n- Desvio padrão grande: dados dispersos\n\nEXEMPLO 1: Conjunto A: 8, 9, 10, 11, 12\nMédia = 10\nDesvios: -2, -1, 0, 1, 2\nQuadrados: 4, 1, 0, 1, 4\nVariância = 10/5 = 2\nDesvio padrão = √2 ≈ 1,41\n\nEXEMPLO 2: Conjunto B: 2, 6, 10, 14, 18\nMédia = 10\nDesvios: -8, -4, 0, 4, 8\nQuadrados: 64, 16, 0, 16, 64\nVariância = 160/5 = 32\nDesvio padrão = √32 ≈ 5,66\n\nConclusão: Conjunto B tem maior dispersão que A.\n\nPROPRIEDADES:\n1) Desvio padrão na mesma unidade dos dados\n2) Sempre não-negativo\n3) Zero apenas se todos valores são iguais\n4) Sensível a outliers\n\nREGRA EMPÍRICA (distribuição normal):\n- 68% dos dados entre (média - 1σ) e (média + 1σ)\n- 95% entre (média - 2σ) e (média + 2σ)\n- 99,7% entre (média - 3σ) e (média + 3σ)"
+        },
+        {
+          "titulo": "Coeficiente de Variação",
+          "conteudo": "COEFICIENTE DE VARIAÇÃO (CV): Medida relativa de dispersão.\n\nCV = (Desvio Padrão / Média) × 100%\n\nVANTAGENS:\n- Adimensional (sem unidade)\n- Permite comparar dispersões de conjuntos com unidades diferentes\n- Permite comparar conjuntos com médias muito diferentes\n\nINTERPRETAÇÃO:\n- CV < 15%: Baixa dispersão (homogêneo)\n- 15% ≤ CV < 30%: Média dispersão\n- CV ≥ 30%: Alta dispersão (heterogêneo)\n\nEXEMPLO 1: Alturas de adultos\nMédia = 170 cm\nDesvio padrão = 10 cm\nCV = (10/170) × 100% ≈ 5,88% → Baixa dispersão\n\nEXEMPLO 2: Salários\nMédia = R$ 3.000\nDesvio padrão = R$ 1.200\nCV = (1200/3000) × 100% = 40% → Alta dispersão\n\nEXEMPLO 3: COMPARAÇÃO\nGrupo A (alturas): média 165cm, DP 8cm, CV = 4,85%\nGrupo B (pesos): média 70kg, DP 12kg, CV = 17,14%\n\nConclusão: Alturas mais homogêneas que pesos.\n\nAPLICAÇÕES:\n- Controle de qualidade\n- Comparação de investimentos (risco)\n- Análise de uniformidade\n- Estudos populacionais\n\nLIMITAÇÃO:\nNão deve ser usado quando média está próxima de zero."
+        },
+        {
+          "titulo": "Aplicações Práticas e Interpretação",
+          "conteudo": "PROBLEMA 1: CONTROLE DE QUALIDADE\nFábrica de parafusos. Especificação: 10mm ± 0,2mm\nAmostra: 9,9 | 10,0 | 10,1 | 10,0 | 10,2 | 9,8\n\nMédia = 10,0 mm ✓\nDesvio padrão ≈ 0,14 mm\nAmplitude = 0,4 mm\n\nTodos dentro da tolerância, baixa variabilidade → Processo controlado\n\nPROBLEMA 2: COMPARAÇÃO DE TURMAS\nTurma A: média 7,5 | DP 1,2 | CV = 16%\nTurma B: média 7,5 | DP 2,3 | CV = 30,7%\n\nMesma média, mas B é mais heterogênea.\nTurma A: desempenho mais uniforme\nTurma B: maior variação (alguns muito bem, outros mal)\n\nPROBLEMA 3: INVESTIMENTOS\nInvestimento X: retorno médio 8% a.a. | DP 2% | CV = 25%\nInvestimento Y: retorno médio 12% a.a. | DP 5% | CV = 41,7%\n\nY tem maior retorno, mas também maior risco (volatilidade).\nEscolha depende do perfil do investidor.\n\nPROBLEMA 4: CLIMA\nCidade A: Temp. média 25°C | DP 3°C → Clima estável\nCidade B: Temp. média 25°C | DP 10°C → Clima variável\n\nMesma temperatura média, experiências climáticas diferentes.\n\nPROBLEMA 5: PRODUÇÃO\nMáquina 1: produz 100 peças/h | DP 15 | CV = 15%\nMáquina 2: produz 100 peças/h | DP 5 | CV = 5%\n\nMáquina 2 é mais consistente → preferível para produção."
+        }
+      ],
+      "exemplos": [
+        "Comparar consistência de máquinas de produção",
+        "Analisar risco de investimentos financeiros",
+        "Avaliar uniformidade de turmas escolares"
+      ],
+      "dicas": [
+        "Desvio padrão mede o quanto os dados se afastam da média",
+        "Coeficiente de variação permite comparar conjuntos diferentes",
+        "Amplitude interquartil é robusta contra outliers",
+        "CV alto indica heterogeneidade, CV baixo indica homogeneidade",
+        "Use variância para cálculos, desvio padrão para interpretação"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Duas máquinas produzem peças com as seguintes características: Máquina A (média: 50mm, DP: 2mm) e Máquina B (média: 50mm, DP: 0,5mm). Qual máquina é mais precisa?",
+          "alternativas": {
+            "A": "Máquina A, pois tem maior desvio padrão",
+            "B": "Máquina B, pois tem menor desvio padrão",
+            "C": "São igualmente precisas, pois têm mesma média",
+            "D": "Não é possível determinar sem o coeficiente de variação",
+            "E": "Máquina A, pois tem maior variabilidade"
+          },
+          "correta": "B",
+          "explicacao": "Menor desvio padrão indica menor dispersão, ou seja, maior precisão e consistência. Máquina B produz peças mais uniformes",
+          "dificuldade": "facil",
+          "tags": ["desvio-padrao", "precisao", "interpretacao"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Um conjunto de dados tem os seguintes valores ordenados: 10, 15, 20, 25, 30, 35, 40. Qual a amplitude interquartil (AIQ)?",
+          "alternativas": {
+            "A": "10",
+            "B": "15",
+            "C": "20",
+            "D": "25",
+            "E": "30"
+          },
+          "correta": "C",
+          "explicacao": "Q1 = 15 (posição 2), Q3 = 35 (posição 6). AIQ = Q3 - Q1 = 35 - 15 = 20",
+          "dificuldade": "medio",
+          "tags": ["quartis", "amplitude-interquartil"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "O coeficiente de variação das alturas de uma turma é 6% e dos pesos é 18%. O que isso indica?",
+          "alternativas": {
+            "A": "As alturas têm maior dispersão que os pesos",
+            "B": "Os pesos têm maior dispersão que as alturas",
+            "C": "Alturas e pesos têm mesma dispersão",
+            "D": "As alturas são maiores que os pesos",
+            "E": "Os pesos são maiores que as alturas"
+          },
+          "correta": "B",
+          "explicacao": "CV maior indica maior dispersão relativa. CV de 18% (pesos) > 6% (alturas), logo os pesos são mais heterogêneos",
+          "dificuldade": "facil",
+          "tags": ["coeficiente-variacao", "comparacao", "dispersao"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Os valores 5, 5, 5, 5, 5 têm desvio padrão igual a:",
+          "alternativas": {
+            "A": "0",
+            "B": "1",
+            "C": "5",
+            "D": "25",
+            "E": "Não é possível calcular"
+          },
+          "correta": "A",
+          "explicacao": "Quando todos os valores são iguais, não há dispersão. Todos os desvios em relação à média são zero, logo o desvio padrão é 0",
+          "dificuldade": "facil",
+          "tags": ["desvio-padrao", "conceito"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Duas ações têm retornos médios anuais e desvios padrão: Ação X (10% ± 3%) e Ação Y (15% ± 6%). Comparando o risco relativo (CV), qual conclusão?",
+          "alternativas": {
+            "A": "X tem maior risco relativo",
+            "B": "Y tem maior risco relativo",
+            "C": "Ambas têm mesmo risco relativo",
+            "D": "X tem o dobro do risco de Y",
+            "E": "Não é possível comparar"
+          },
+          "correta": "C",
+          "explicacao": "CV(X) = 3/10 = 0,30 = 30%. CV(Y) = 6/15 = 0,40 = 40%. Y tem maior risco relativo",
+          "dificuldade": "medio",
+          "tags": ["coeficiente-variacao", "risco", "financas"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Probabilidade Básica",
+      "resumo": "Conceitos fundamentais de probabilidade, eventos e cálculos básicos",
+      "topicos": [
+        {
+          "titulo": "Conceitos Fundamentais de Probabilidade",
+          "conteudo": "EXPERIMENTO ALEATÓRIO: Processo cujo resultado não pode ser previsto com certeza.\n\nESPAÇO AMOSTRAL (Ω ou S): Conjunto de todos os resultados possíveis.\n\nEVENTO: Subconjunto do espaço amostral.\n\nEXEMPLOS:\n\n1) Lançamento de moeda:\nΩ = {Cara, Coroa}\nn(Ω) = 2\n\n2) Lançamento de dado:\nΩ = {1, 2, 3, 4, 5, 6}\nn(Ω) = 6\n\n3) Dois dados:\nΩ = {(1,1), (1,2), ..., (6,6)}\nn(Ω) = 36\n\nPROBABILIDADE DE UM EVENTO:\n\nP(A) = n(A) / n(Ω)\n\nonde:\n- n(A) = número de resultados favoráveis ao evento A\n- n(Ω) = número total de resultados possíveis\n\nPROPRIEDADES:\n1) 0 ≤ P(A) ≤ 1\n2) P(Ω) = 1 (evento certo)\n3) P(∅) = 0 (evento impossível)\n4) P(A') = 1 - P(A) (evento complementar)\n\nEXEMPLO: Probabilidade de sair número par em um dado:\nA = {2, 4, 6}\nn(A) = 3\nP(A) = 3/6 = 1/2 = 50%"
+        },
+        {
+          "titulo": "Eventos e Operações",
+          "conteudo": "TIPOS DE EVENTOS:\n\n1) EVENTO COMPLEMENTAR (A'):\nTodos os resultados que NÃO pertencem a A.\nP(A') = 1 - P(A)\n\nExemplo: Dado, não sair 6\nP(não 6) = 1 - P(6) = 1 - 1/6 = 5/6\n\n2) UNIÃO DE EVENTOS (A ∪ B):\nOcorre A OU B (ou ambos).\nP(A ∪ B) = P(A) + P(B) - P(A ∩ B)\n\n3) INTERSEÇÃO DE EVENTOS (A ∩ B):\nOcorre A E B simultaneamente.\n\n4) EVENTOS MUTUAMENTE EXCLUSIVOS:\nNão podem ocorrer juntos: A ∩ B = ∅\nP(A ∪ B) = P(A) + P(B)\n\nEXEMPLO 1: Retirar carta de baralho (52 cartas)\nA = carta vermelha: P(A) = 26/52 = 1/2\nB = carta de copas: P(B) = 13/52 = 1/4\nA ∩ B = copas (vermelha): P(A ∩ B) = 13/52 = 1/4\nP(A ∪ B) = 1/2 + 1/4 - 1/4 = 1/2\n\nEXEMPLO 2: Lançar dado\nA = número par: {2, 4, 6}, P(A) = 3/6\nB = múltiplo de 3: {3, 6}, P(B) = 2/6\nA ∩ B = {6}, P(A ∩ B) = 1/6\nP(A ∪ B) = 3/6 + 2/6 - 1/6 = 4/6 = 2/3\n\nEVENTOS INDEPENDENTES:\nA ocorrência de um não afeta o outro.\nP(A ∩ B) = P(A) × P(B)\n\nEVENTOS DEPENDENTES:\nA ocorrência de um afeta o outro.\nUsa probabilidade condicional."
+        },
+        {
+          "titulo": "Probabilidade Condicional",
+          "conteudo": "PROBABILIDADE CONDICIONAL: Probabilidade de A ocorrer, DADO que B já ocorreu.\n\nNotação: P(A|B) (lê-se: probabilidade de A dado B)\n\nFórmula: P(A|B) = P(A ∩ B) / P(B), com P(B) > 0\n\nINTERPRETAÇÃO:\nReduzimos o espaço amostral aos casos em que B ocorre.\n\nEXEMPLO 1: Dois dados\nA = soma igual a 8\nB = primeiro dado é 3\n\nΩ = 36 resultados\nCom primeiro dado = 3: {(3,1), (3,2), (3,3), (3,4), (3,5), (3,6)} → 6 casos\nDestes, soma 8: apenas (3,5) → 1 caso\n\nP(A|B) = 1/6\n\nEXEMPLO 2: Urna com bolas\n5 bolas vermelhas, 3 azuis\nRetirar 2 sem reposição.\n\nP(1ª vermelha) = 5/8\nP(2ª vermelha | 1ª vermelha) = 4/7 (agora são 4 vermelhas de 7 total)\nP(ambas vermelhas) = 5/8 × 4/7 = 20/56 = 5/14\n\nREGRA DO PRODUTO:\nP(A ∩ B) = P(A) × P(B|A) = P(B) × P(A|B)\n\nPara eventos independentes:\nP(A|B) = P(A) e P(B|A) = P(B)\nEntão: P(A ∩ B) = P(A) × P(B)\n\nTEOREMA DE BAYES:\nP(A|B) = [P(B|A) × P(A)] / P(B)"
+        },
+        {
+          "titulo": "Problemas Contextualizados",
+          "conteudo": "PROBLEMA 1: FAMÍLIA COM 3 FILHOS\nQual a probabilidade de ter exatamente 2 meninas?\n\nΩ = {MMM, MMF, MFM, MFF, FMM, FMF, FFM, FFF}\nn(Ω) = 8\n\n2 meninas: {MMF, MFM, FMM} → 3 casos\nP = 3/8 = 37,5%\n\nPROBLEMA 2: EXTRAÇÃO DE CARTAS\nBaralho completo (52 cartas). Retirar 2 cartas sem reposição.\nProbabilidade de ambas serem Ases?\n\n1ª carta: P(Ás) = 4/52\n2ª carta (dado que 1ª foi Ás): P(Ás) = 3/51\nP(ambos Ases) = (4/52) × (3/51) = 12/2652 = 1/221 ≈ 0,45%\n\nPROBLEMA 3: TESTE MÉDICO\nDoença afeta 1% da população.\nTeste detecta 95% dos doentes (sensibilidade).\nTeste dá falso positivo em 5% dos saudáveis.\n\nPessoa testa positivo. Qual probabilidade de estar doente?\n\nP(doente) = 0,01\nP(positivo|doente) = 0,95\nP(positivo|saudável) = 0,05\n\nP(positivo) = 0,01×0,95 + 0,99×0,05 = 0,0095 + 0,0495 = 0,059\n\nP(doente|positivo) = (0,01×0,95)/0,059 ≈ 16,1%\n\nSurpreendente: mesmo testando positivo, apenas 16% de chance de estar doente!\n\nPROBLEMA 4: PORTA DOS FUNDOS\nTrês portas: uma com prêmio, duas vazias.\nVocê escolhe porta 1.\nApresentador abre porta 3 (vazia).\nCompensa trocar para porta 2?\n\nSIM! Trocar dobra suas chances de 1/3 para 2/3."
+        }
+      ],
+      "exemplos": [
+        "Calcular chance de ganhar na loteria",
+        "Determinar probabilidade de defeito em produção",
+        "Analisar risco de eventos climáticos"
+      ],
+      "dicas": [
+        "Identifique sempre o espaço amostral primeiro",
+        "P(A) + P(A') = 1 (use para facilitar cálculos)",
+        "Eventos independentes: P(A∩B) = P(A)×P(B)",
+        "Sem reposição → probabilidades mudam (eventos dependentes)",
+        "Desenhe diagrama de árvore para problemas complexos"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Ao lançar dois dados, qual a probabilidade de a soma ser maior que 10?",
+          "alternativas": {
+            "A": "1/12",
+            "B": "1/9",
+            "C": "1/6",
+            "D": "1/4",
+            "E": "1/3"
+          },
+          "correta": "A",
+          "explicacao": "Soma > 10: (5,6), (6,5), (6,6) = 3 casos de 36 possíveis. P = 3/36 = 1/12",
+          "dificuldade": "medio",
+          "tags": ["probabilidade", "dados", "soma"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Uma urna contém 4 bolas vermelhas e 6 azuis. Retirando uma bola ao acaso, qual a probabilidade de ser vermelha?",
+          "alternativas": {
+            "A": "0,2",
+            "B": "0,3",
+            "C": "0,4",
+            "D": "0,5",
+            "E": "0,6"
+          },
+          "correta": "C",
+          "explicacao": "P(vermelha) = 4/(4+6) = 4/10 = 0,4 = 40%",
+          "dificuldade": "facil",
+          "tags": ["probabilidade", "urna", "basico"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "A probabilidade de chover amanhã é 30%. Qual a probabilidade de NÃO chover?",
+          "alternativas": {
+            "A": "30%",
+            "B": "50%",
+            "C": "60%",
+            "D": "70%",
+            "E": "80%"
+          },
+          "correta": "D",
+          "explicacao": "P(não chover) = 1 - P(chover) = 1 - 0,30 = 0,70 = 70%",
+          "dificuldade": "facil",
+          "tags": ["probabilidade", "complementar"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "De um baralho de 52 cartas, retira-se uma carta ao acaso. Qual a probabilidade de ser um Rei OU uma carta de Copas?",
+          "alternativas": {
+            "A": "4/13",
+            "B": "15/52",
+            "C": "16/52",
+            "D": "17/52",
+            "E": "1/4"
+          },
+          "correta": "C",
+          "explicacao": "P(Rei) = 4/52. P(Copas) = 13/52. P(Rei de Copas) = 1/52. P(Rei ∪ Copas) = 4/52 + 13/52 - 1/52 = 16/52 = 4/13",
+          "dificuldade": "medio",
+          "tags": ["probabilidade", "uniao", "baralho"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Uma urna tem 3 bolas brancas e 2 pretas. Retirando duas bolas sem reposição, qual a probabilidade de ambas serem brancas?",
+          "alternativas": {
+            "A": "1/10",
+            "B": "3/10",
+            "C": "2/5",
+            "D": "1/2",
+            "E": "3/5"
+          },
+          "correta": "B",
+          "explicacao": "P(1ª branca) = 3/5. P(2ª branca | 1ª branca) = 2/4 = 1/2. P(ambas) = 3/5 × 1/2 = 3/10",
+          "dificuldade": "medio",
+          "tags": ["probabilidade", "condicional", "sem-reposicao"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Gráficos e Interpretação de Dados",
+      "resumo": "Leitura e interpretação de diferentes tipos de gráficos estatísticos",
+      "topicos": [
+        {
+          "titulo": "Tipos de Gráficos e Suas Aplicações",
+          "conteudo": "PRINCIPAIS TIPOS DE GRÁFICOS:\n\n1) GRÁFICO DE BARRAS:\n- Barras verticais ou horizontais\n- Compara categorias distintas\n- Altura/comprimento representa quantidade\n- Uso: vendas por produto, população por cidade\n\n2) GRÁFICO DE LINHAS:\n- Conecta pontos em sequência\n- Mostra evolução temporal\n- Uso: temperatura ao longo do dia, preço de ações\n\n3) GRÁFICO DE SETORES (PIZZA):\n- Círculo dividido em fatias\n- Mostra partes de um todo (proporções)\n- Ângulo = (valor/total) × 360°\n- Uso: distribuição de gastos, market share\n\n4) HISTOGRAMA:\n- Similar a barras, mas para dados contínuos\n- Barras adjacentes (sem espaço)\n- Classes de valores no eixo x\n- Uso: distribuição de idades, notas\n\n5) GRÁFICO DE DISPERSÃO:\n- Pontos no plano cartesiano\n- Mostra relação entre duas variáveis\n- Uso: altura vs peso, horas estudo vs nota\n\nESCOLHA DO GRÁFICO:\n- Comparação: barras\n- Evolução temporal: linhas\n- Proporções: setores\n- Distribuição: histograma\n- Correlação: dispersão"
+        },
+        {
+          "titulo": "Interpretação de Gráficos de Barras e Linhas",
+          "conteudo": "GRÁFICO DE BARRAS - ELEMENTOS:\n- Eixo horizontal: categorias\n- Eixo vertical: valores/quantidades\n- Escala: fundamental para leitura correta\n\nEXEMPLO: Vendas mensais (em milhares)\nJan: 50 | Fev: 45 | Mar: 60 | Abr: 55 | Mai: 70\n\nAnálise:\n- Mês de maior venda: Maio (70)\n- Mês de menor venda: Fevereiro (45)\n- Crescimento Mar-Mai: 10 mil unidades\n- Média: (50+45+60+55+70)/5 = 56 mil\n\nGRÁFICO DE LINHAS - INTERPRETAÇÃO:\n- Crescimento: linha ascendente\n- Decrescimento: linha descendente\n- Estabilidade: linha horizontal\n- Taxa de variação: inclinação da reta\n\nEXEMPLO: Temperatura (°C) ao longo do dia\n6h: 18° | 9h: 22° | 12h: 28° | 15h: 30° | 18h: 26° | 21h: 20°\n\nAnálise:\n- Temperatura máxima: 15h (30°C)\n- Temperatura mínima: 6h (18°C)\n- Amplitude térmica: 12°C\n- Maior aquecimento: 9h-12h (6°C em 3h)\n\nCUIDADOS:\n1) Verifique a escala (pode distorcer percepção)\n2) Observe o zero: escala começa em zero?\n3) Compare proporções, não apenas alturas\n4) Atente para unidades de medida"
+        },
+        {
+          "titulo": "Gráficos de Setores e Histogramas",
+          "conteudo": "GRÁFICO DE SETORES (PIZZA):\n\nCÁLCULO DO ÂNGULO:\nÂngulo = (Parte / Total) × 360°\n\nEXEMPLO: Orçamento familiar mensal (R$ 4.000)\n- Moradia: R$ 1.200 → (1200/4000)×360° = 108°\n- Alimentação: R$ 1.000 → (1000/4000)×360° = 90°\n- Transporte: R$ 800 → (800/4000)×360° = 72°\n- Lazer: R$ 400 → (400/4000)×360° = 36°\n- Outros: R$ 600 → (600/4000)×360° = 54°\n\nPorcentagens:\n- Moradia: 30%\n- Alimentação: 25%\n- Transporte: 20%\n- Lazer: 10%\n- Outros: 15%\n\nVANTAGEM: Visualização imediata de proporções\nLIMITAÇÃO: Não mostra valores absolutos claramente\n\nHISTOGRAMA:\n\nDIFERENÇA PARA GRÁFICO DE BARRAS:\n- Dados contínuos (não categorias discretas)\n- Barras coladas (sem espaço)\n- Eixo x tem classes de valores\n\nEXEMPLO: Distribuição de alturas (cm)\n150-160: 5 pessoas\n160-170: 15 pessoas\n170-180: 25 pessoas\n180-190: 10 pessoas\n190-200: 5 pessoas\n\nAnálise:\n- Classe modal: 170-180 (maior frequência)\n- Distribuição aproximadamente simétrica\n- Média estimada: próxima de 175 cm"
+        },
+        {
+          "titulo": "Análise Crítica de Gráficos",
+          "conteudo": "MANIPULAÇÃO DE GRÁFICOS:\n\n1) ESCALA DISTORCIDA:\nEixo não começa em zero → exagera diferenças\n\nExemplo:\nVendas A: 990 | Vendas B: 1000\nSe escala vai de 980 a 1000, B parece muito maior.\nMas diferença real é apenas 1%.\n\n2) PROPORÇÕES ENGANOSAS:\nGráficos 3D distorcem percepção visual\nÁrea deve ser proporcional aos valores\n\n3) INTERVALOS IRREGULARES:\nEixo temporal com saltos irregulares\nDá impressão errada de tendência\n\n4) OMISSÃO DE DADOS:\nMostrar apenas período conveniente\nEsconder informação desfavorável\n\nCOMO ANALISAR CRITICAMENTE:\n\n✓ Verifique a fonte dos dados\n✓ Observe a escala dos eixos\n✓ Confira se escala começa no zero\n✓ Procure por intervalos irregulares\n✓ Compare proporções numéricas, não só visuais\n✓ Questione dados faltantes\n✓ Considere contexto temporal\n\nEXEMPLO - NOTÍCIA ENGANOSA:\n\"Vendas dobram!\"\nGráfico mostra crescimento de 100 para 102 unidades\nEscala: 95 a 105 (exagera crescimento de apenas 2%)\n\nREALIDADE: Crescimento de 2%, não dobro.\n\nLEITURA CORRETA DO ENEM:\n- Leia título e legendas\n- Identifique unidades de medida\n- Observe escalas\n- Calcule se necessário\n- Interprete no contexto"
+        }
+      ],
+      "exemplos": [
+        "Interpretar gráfico de evolução de vendas",
+        "Analisar distribuição de notas em histograma",
+        "Identificar manipulação em gráfico de propaganda"
+      ],
+      "dicas": [
+        "Sempre verifique a escala antes de interpretar",
+        "Em gráfico de pizza, soma das partes = 100%",
+        "Gráfico de linhas: inclinação indica taxa de variação",
+        "Desconfie de gráficos que não começam no zero",
+        "Leia todos os rótulos e legendas cuidadosamente"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Um gráfico de setores mostra a distribuição de gastos: Aluguel 40%, Alimentação 25%, Transporte 20%, Lazer 10%, Outros 5%. Se o gasto total é R$ 3.000, quanto foi gasto com transporte?",
+          "alternativas": {
+            "A": "R$ 500",
+            "B": "R$ 600",
+            "C": "R$ 700",
+            "D": "R$ 750",
+            "E": "R$ 800"
+          },
+          "correta": "B",
+          "explicacao": "Transporte = 20% de R$ 3.000 = 0,20 × 3.000 = R$ 600",
+          "dificuldade": "facil",
+          "tags": ["grafico-setores", "porcentagem", "interpretacao"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Um gráfico de linhas mostra temperaturas: 10h (25°C), 12h (28°C), 14h (30°C), 16h (29°C). Entre quais horários houve maior aquecimento?",
+          "alternativas": {
+            "A": "10h-12h",
+            "B": "12h-14h",
+            "C": "14h-16h",
+            "D": "Aquecimento foi constante",
+            "E": "Não houve aquecimento"
+          },
+          "correta": "A",
+          "explicacao": "10h-12h: +3°C. 12h-14h: +2°C. 14h-16h: -1°C (resfriamento). Maior aquecimento foi de 10h a 12h",
+          "dificuldade": "facil",
+          "tags": ["grafico-linhas", "variacao", "interpretacao"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Em um histograma de notas, a classe 7-8 tem frequência 20, a classe 8-9 tem frequência 15. O que isso significa?",
+          "alternativas": {
+            "A": "20 alunos tiraram nota 7 e 15 tiraram nota 8",
+            "B": "20 alunos tiraram entre 7 e 8, e 15 entre 8 e 9",
+            "C": "A média é 7,5",
+            "D": "A mediana está entre 8 e 9",
+            "E": "35 alunos tiraram nota 8"
+          },
+          "correta": "B",
+          "explicacao": "Em histograma, cada barra representa uma classe (intervalo). Frequência indica quantos valores caem naquele intervalo",
+          "dificuldade": "medio",
+          "tags": ["histograma", "frequencia", "interpretacao"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Dois gráficos de barras mostram vendas de produtos. Gráfico A tem escala de 0 a 100, Gráfico B de 90 a 100. Ambos mostram produto X com 95 vendas. Qual afirmação é correta?",
+          "alternativas": {
+            "A": "Gráfico B distorce a percepção, exagerando o valor",
+            "B": "Gráfico A é menos preciso",
+            "C": "Ambos representam igualmente bem os dados",
+            "D": "Gráfico B é mais apropriado para valores altos",
+            "E": "A escala não afeta a interpretação"
+          },
+          "correta": "A",
+          "explicacao": "Gráfico B, ao não começar do zero, distorce visualmente as proporções e exagera diferenças, podendo enganar o leitor",
+          "dificuldade": "medio",
+          "tags": ["analise-critica", "escala", "manipulacao"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Um gráfico de pizza mostra que Produto A ocupa 90° do círculo. Qual a porcentagem que ele representa?",
+          "alternativas": {
+            "A": "15%",
+            "B": "20%",
+            "C": "25%",
+            "D": "30%",
+            "E": "35%"
+          },
+          "correta": "C",
+          "explicacao": "Círculo completo = 360°. Porcentagem = (90/360) × 100% = 25%",
+          "dificuldade": "facil",
+          "tags": ["grafico-setores", "angulo", "porcentagem"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Problemas Integrados e Análise de Dados",
+      "resumo": "Problemas complexos envolvendo estatística e probabilidade em contextos reais",
+      "topicos": [
+        {
+          "titulo": "Análise Estatística Completa",
+          "conteudo": "METODOLOGIA DE ANÁLISE COMPLETA:\n\n1) COLETA DE DADOS\n2) ORGANIZAÇÃO (tabelas, ordenação)\n3) MEDIDAS DE TENDÊNCIA CENTRAL\n4) MEDIDAS DE DISPERSÃO\n5) REPRESENTAÇÃO GRÁFICA\n6) INTERPRETAÇÃO E CONCLUSÕES\n\nEXEMPLO COMPLETO: Notas de uma turma\n5, 5, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 9, 9, 10\n\nORGANIZAÇÃO:\nNota | Frequência\n5    | 2\n6    | 3\n7    | 4\n8    | 3\n9    | 2\n10   | 1\nTotal: 15 alunos\n\nTENDÊNCIA CENTRAL:\nMédia = 105/15 = 7,0\nMediana = 7 (8° valor)\nModa = 7 (maior frequência)\n\nDISPERSÃO:\nAmplitude = 10 - 5 = 5\nDesvio padrão ≈ 1,4\nCV ≈ 20% (dispersão moderada)\n\nQUARTIS:\nQ1 = 6, Q2 = 7, Q3 = 8\nAIQ = 2\n\nINTERPRETAÇÃO:\n- Desempenho médio-bom (média 7,0)\n- Distribuição razoavelmente simétrica\n- Dispersão moderada\n- Não há outliers\n- 50% dos alunos entre 6 e 8\n\nRECOMENDAÇÕES:\n- Reforço para notas abaixo de 6\n- Turma relativamente homogênea"
+        },
+        {
+          "titulo": "Probabilidade em Situações Compostas",
+          "conteudo": "PROBLEMAS COM MÚLTIPLOS ESTÁGIOS:\n\nESTRATÉGIA:\n1) Identificar eventos\n2) Determinar dependência/independência\n3) Usar diagrama de árvore se necessário\n4) Aplicar regras de multiplicação e adição\n\nPROBLEMA 1: TESTE DE MÚLTIPLAS ETAPAS\nUm concurso tem 3 fases. Probabilidades de passar:\nFase 1: 60%\nFase 2: 50% (dos que passaram fase 1)\nFase 3: 40% (dos que passaram fase 2)\n\nP(passar nas 3) = 0,60 × 0,50 × 0,40 = 0,12 = 12%\n\nP(passar só fase 1) = 0,60 × (1-0,50) = 0,30 = 30%\n\nPROBLEMA 2: CONTROLE DE QUALIDADE\nProdução de lotes:\n- 70% dos lotes são perfeitos\n- 20% têm 1 defeito\n- 10% têm 2+ defeitos\n\nInspeção detecta:\n- 100% dos lotes com 2+ defeitos\n- 80% dos lotes com 1 defeito\n- 5% falso alarme em lotes perfeitos\n\nP(alarme) = 0,70×0,05 + 0,20×0,80 + 0,10×1,00\n= 0,035 + 0,160 + 0,100 = 0,295 = 29,5%\n\nP(lote perfeito | alarme) = (0,70×0,05) / 0,295 ≈ 11,9%\n\nPROBLEMA 3: EVENTOS SUCESSIVOS\n3 jogadores, cada um atira em alvo:\nP(A acerta) = 0,7\nP(B acerta) = 0,6\nP(C acerta) = 0,5\n\nP(pelo menos um acerta) = 1 - P(todos erram)\n= 1 - (0,3 × 0,4 × 0,5)\n= 1 - 0,06 = 0,94 = 94%"
+        },
+        {
+          "titulo": "Estatística Aplicada a Pesquisas",
+          "conteudo": "TIPOS DE PESQUISA:\n\n1) CENSO: Toda a população\n2) AMOSTRA: Parte representativa\n\nAMOSTRAGEM:\n- Aleatória simples\n- Estratificada (por grupos)\n- Sistemática (padrão fixo)\n\nMARGEM DE ERRO:\nIndicada como ± x%\nIntervalo de confiança\n\nEXEMPLO: PESQUISA ELEITORAL\nAmostra: 2.000 eleitores\nResultado: Candidato A: 45%\nMargem de erro: ±3%\nNível de confiança: 95%\n\nINTERPRETAÇÃO:\nEm 95% das vezes, o verdadeiro valor está entre 42% e 48%.\n\nTAMANHO DA AMOSTRA:\nMaior amostra → menor margem de erro\nMas custo aumenta\n\nVIÉS EM PESQUISAS:\n- Amostra não representativa\n- Pergunta tendenciosa\n- Horário inadequado\n- Plataforma inadequada\n\nEXEMPLO DE VIÉS:\nPesquisa online sobre uso de internet → viés (exclui quem não usa)\n\nPESQUISA BEM CONDUZIDA:\n✓ Amostra representativa\n✓ Seleção aleatória\n✓ Tamanho adequado\n✓ Perguntas neutras\n✓ Momento apropriado\n\nINTERPRETAÇÃO CRÍTICA:\n- Quem financiou?\n- Metodologia transparente?\n- Amostra representativa?\n- Margem de erro declarada?\n- Contexto temporal relevante?"
+        },
+        {
+          "titulo": "Problemas Interdisciplinares ENEM",
+          "conteudo": "CARACTERÍSTICA DO ENEM:\nIntegra matemática com outras áreas e contextos reais.\n\nPROBLEMA 1: EPIDEMIOLOGIA\nEm uma cidade, 2% da população tem certa doença.\nTeste:\n- Sensibilidade: 90% (detecta 90% dos doentes)\n- Especificidade: 95% (negativo em 95% dos saudáveis)\n\nPessoa testa positivo. Probabilidade de estar doente?\n\nP(doente) = 0,02\nP(positivo|doente) = 0,90\nP(positivo|saudável) = 0,05\n\nP(positivo) = 0,02×0,90 + 0,98×0,05 = 0,018 + 0,049 = 0,067\n\nP(doente|positivo) = 0,018/0,067 ≈ 26,9%\n\nPROBLEMA 2: SUSTENTABILIDADE\nConsumo mensal de água (m³) em 10 residências:\n12, 15, 15, 18, 20, 22, 25, 28, 30, 45\n\nMédia = 23 m³ (inflada pelo valor 45)\nMediana = 21 m³ (mais representativa)\nModa = 15 m³\n\nIdentifica-se 45 m³ como outlier (possível vazamento)\n\nRecomendação: investigar residência com 45 m³\n\nPROBLEMA 3: MOBILIDADE URBANA\nPesquisa: meio de transporte para trabalho\n- Carro: 40% (ângulo 144°)\n- Ônibus: 35% (ângulo 126°)\n- Metrô: 15% (ângulo 54°)\n- Bicicleta: 10% (ângulo 36°)\n\nAnálise: Predominância de transporte individual\nProblema: congestionamento, poluição\nSolução: investir em transporte coletivo\n\nPROBLEMA 4: ECONOMIA\nInflação mensal (%):\nJan: 0,5 | Fev: 0,6 | Mar: 0,8 | Abr: 0,7 | Mai: 0,9 | Jun: 1,0\n\nTendência: crescente (preocupante)\nMédia: 0,75% ao mês\nProjeção anual: não é soma simples! (juros compostos)\n\nDemonstra necessidade de matemática financeira."
+        }
+      ],
+      "exemplos": [
+        "Analisar completamente dados de pesquisa de satisfação",
+        "Calcular probabilidade de sucesso em processo com etapas",
+        "Interpretar pesquisa eleitoral com margem de erro"
+      ],
+      "dicas": [
+        "Em problemas compostos, faça um passo de cada vez",
+        "Diagrama de árvore ajuda em probabilidades com etapas",
+        "Sempre questione a representatividade de amostras",
+        "Interprete resultados no contexto do problema",
+        "Combine estatística descritiva com probabilidade",
+        "No ENEM, resposta envolve interpretação, não só cálculo"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Uma empresa tem 60% de funcionários satisfeitos. Entrevistando 2 funcionários aleatoriamente, qual a probabilidade de ambos estarem satisfeitos?",
+          "alternativas": {
+            "A": "0,24",
+            "B": "0,36",
+            "C": "0,48",
+            "D": "0,60",
+            "E": "0,84"
+          },
+          "correta": "B",
+          "explicacao": "Assumindo independência: P(ambos satisfeitos) = 0,60 × 0,60 = 0,36 = 36%",
+          "dificuldade": "facil",
+          "tags": ["probabilidade", "eventos-independentes", "multiplicacao"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Em uma pesquisa com 500 pessoas, 45% preferem produto A com margem de erro de ±4%. Entre quais valores está a verdadeira proporção com 95% de confiança?",
+          "alternativas": {
+            "A": "40% a 50%",
+            "B": "41% a 49%",
+            "C": "43% a 47%",
+            "D": "44% a 46%",
+            "E": "45% exatamente"
+          },
+          "correta": "B",
+          "explicacao": "Intervalo de confiança: 45% ± 4% = [41%, 49%]",
+          "dificuldade": "facil",
+          "tags": ["pesquisa", "margem-erro", "intervalo-confianca"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Dados de velocidade (km/h) em rodovia: 80, 85, 90, 95, 100, 105, 110, 150. Qual medida é mais afetada pelo valor 150?",
+          "alternativas": {
+            "A": "Mediana",
+            "B": "Moda",
+            "C": "Média",
+            "D": "Amplitude interquartil",
+            "E": "Q1"
+          },
+          "correta": "C",
+          "explicacao": "A média é sensível a valores extremos (outliers). O valor 150 puxa a média para cima, enquanto mediana, moda e quartis são robustos a outliers",
+          "dificuldade": "medio",
+          "tags": ["outlier", "medidas-tendencia", "robustez"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Uma máquina produz peças com 5% de defeitos. Em um lote de 3 peças, qual a probabilidade de haver exatamente 1 defeituosa?",
+          "alternativas": {
+            "A": "0,135",
+            "B": "0,142",
+            "C": "0,150",
+            "D": "0,857",
+            "E": "0,950"
+          },
+          "correta": "A",
+          "explicacao": "P(exatamente 1 defeituosa) = C(3,1) × (0,05)¹ × (0,95)² = 3 × 0,05 × 0,9025 = 0,135375 ≈ 0,135",
+          "dificuldade": "dificil",
+          "tags": ["probabilidade", "binomial", "combinacao"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Em um gráfico, vendas aumentaram de 100 para 110 unidades. O gráfico com escala de 95 a 115 faz parecer um aumento maior do que realmente é. Qual o aumento percentual real?",
+          "alternativas": {
+            "A": "5%",
+            "B": "10%",
+            "C": "15%",
+            "D": "20%",
+            "E": "25%"
+          },
+          "correta": "B",
+          "explicacao": "Aumento = (110-100)/100 × 100% = 10/100 × 100% = 10%. A escala manipulada distorce percepção, mas o valor real é 10%",
+          "dificuldade": "facil",
+          "tags": ["porcentagem", "analise-critica", "variacao"]
+        }
+      ]
+    }
+  ]
+}

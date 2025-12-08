@@ -1,0 +1,571 @@
+{
+  "id": "literatura-portuguesa",
+  "slug": "literatura-portuguesa",
+  "titulo": "Literatura Portuguesa",
+  "categoria": "linguagens",
+  "nivel": "intermediario",
+  "descricao": "Panorama completo da literatura portuguesa desde o Trovadorismo medieval até o Modernismo do século XX. Compreenda os principais movimentos literários, autores e obras que influenciaram a cultura lusófona e brasileira.",
+  "icone": "BookMarked",
+  "cor": "#8b5cf6",
+  "tempoEstimado": "7 horas",
+  "fpRecompensa": 0,
+  "tags": ["linguagens", "ENEM", "literatura-portuguesa", "historia-literatura"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Trovadorismo e Humanismo",
+      "resumo": "Literatura medieval portuguesa: cantigas trovadorescas, prosa medieval e a transição para o Renascimento.",
+      "topicos": [
+        {
+          "titulo": "Trovadorismo: Poesia Lírica Medieval",
+          "conteudo": "O Trovadorismo é o primeiro movimento literário em língua portuguesa, desenvolvido entre os séculos XII e XIV. Surgiu no contexto da Idade Média, período marcado por forte influência da Igreja Católica, organização social feudal e valores cavaleirescos. A poesia trovadoresca era cantada, acompanhada de instrumentos musicais, e circulava oralmente em cortes e castelos.\n\nAs cantigas são classificadas em dois grandes grupos: líricas e satíricas. As cantigas líricas dividem-se em cantigas de amor e cantigas de amigo. Nas cantigas de amor, o eu lírico é masculino e expressa amor idealizado por uma dama inatingível, seguindo o código do amor cortês: o cavaleiro-poeta se coloca em posição de vassalagem amorosa, sofrendo pela dama que o despreza. É comum o uso de expressões como 'mia senhor' (minha senhora) e a temática da 'coita' (sofrimento amoroso).\n\nJá nas cantigas de amigo, o eu lírico é feminino (embora os autores fossem homens), e a mulher expressa seus sentimentos amorosos de forma mais espontânea e popular. Há referências à natureza, ao ambiente rural e à espera do amado que foi para a guerra ou para o mar. A estrutura é marcada pelo paralelismo (repetição de versos com pequenas variações) e pelo refrão. Exemplos incluem: 'Ai flores, ai flores do verde pino / se sabedes novas do meu amigo?'\n\nAs cantigas satíricas dividem-se em cantigas de escárnio (crítica indireta, irônica, com uso de ambiguidade) e cantigas de maldizer (crítica direta, agressiva, nomeando pessoas e defeitos). Esses textos ridicularizavam nobres, clérigos, mulheres e até outros trovadores, revelando aspectos do cotidiano medieval português. O marco inicial do Trovadorismo é a 'Cantiga da Ribeirinha' (ou 'Cantiga da Garvaia'), de Paio Soares de Taveirós, datada de 1189 ou 1198."
+        },
+        {
+          "titulo": "Humanismo: Prosa de Transição",
+          "conteudo": "O Humanismo é o período de transição entre a Idade Média e o Renascimento em Portugal, situado entre 1434 (nomeação de Fernão Lopes como cronista-mor) e 1527 (retorno de Sá de Miranda da Itália, trazendo ideias renascentistas). É época de transformações: fortalecimento da burguesia, declínio do feudalismo, início dos descobrimentos marítimos e valorização do ser humano.\n\nA principal produção literária do Humanismo é a prosa historiográfica, destacando-se as crônicas de Fernão Lopes. Cronista oficial do reino, Fernão Lopes escreveu sobre reis portugueses com rigor histórico inédito, consultando documentos e cruzando fontes. Suas obras principais são 'Crônica de D. Pedro I', 'Crônica de D. Fernando' e 'Crônica de D. João I', esta última considerada obra-prima pela análise da Revolução de Avis.\n\nFernão Lopes inovou ao dar voz ao povo em suas crônicas, registrando falas populares e perspectivas de diferentes classes sociais, não apenas da nobreza. Seu estilo é vivo, dramático, utilizando diálogos e descrições detalhadas que aproximam suas crônicas da narrativa literária. Além disso, demonstra posicionamento crítico, analisando causas e consequências dos acontecimentos históricos.\n\nNo teatro, destaca-se Gil Vicente, dramaturgo que criticou vícios sociais através de peças populares, misturando elementos religiosos e profanos. Obras como 'Auto da Barca do Inferno' (1517), 'Auto da Índia' e 'Farsa de Inês Pereira' satirizam a nobreza decadente, o clero corrupto e a burguesia emergente. Gil Vicente é considerado o fundador do teatro português, utilizando linguagem acessível e humor para criticar a sociedade de seu tempo. Embora tenha vivido no início do século XVI, Gil Vicente ainda apresenta características medievais, sendo frequentemente associado ao Humanismo pela temática crítica e posição de transição histórica."
+        },
+        {
+          "titulo": "Características da Literatura Medieval",
+          "conteudo": "A literatura medieval portuguesa reflete os valores e a organização social do período. O teocentrismo (Deus como centro do universo) permeia as obras, mesmo em textos profanos. A visão de mundo é hierárquica: Deus, rei, nobreza, clero, povo. A mulher aparece idealizada nas cantigas de amor ou submissa nas representações religiosas, raramente como ser autônomo.\n\nA transmissão oral é fundamental: os textos eram cantados, declamados ou representados, não destinados à leitura silenciosa individual. Por isso, recursos como refrão, paralelismo e aliteração facilitavam memorização e performance. Os manuscritos medievais que chegaram até nós são compilações posteriores, como os Cancioneiros (Cancioneiro da Ajuda, Cancioneiro da Biblioteca Nacional, Cancioneiro da Vaticana).\n\nA arte medieval é coletiva e anônima em grande medida. Embora conheçamos nomes de trovadores (D. Dinis, João Garcia de Guilhade, Martim Codax), muitos textos circulavam sem autoria definida. A noção de originalidade era diferente: adaptar, recriar e trabalhar sobre formas consagradas era mais valorizado que a inovação radical.\n\nNo ENEM, a literatura medieval portuguesa aparece em questões de interpretação de cantigas (identificação do tipo, análise de recursos estilísticos, compreensão do contexto histórico), trechos de Gil Vicente (crítica social, humor, linguagem popular) e raramente fragmentos de crônicas. É fundamental reconhecer características formais (paralelismo, refrão), temáticas recorrentes (amor cortês, crítica social) e o contexto histórico-cultural medieval."
+        }
+      ],
+      "exemplos": [
+        "Cantiga de amor: Paio Soares de Taveirós expressando vassalagem amorosa",
+        "Cantiga de amigo: 'Ai flores, ai flores do verde pino' - mulher aguardando o amado",
+        "Cantiga de escárnio: crítica velada a comportamentos através de ironia",
+        "Gil Vicente: 'Auto da Barca do Inferno' - alegoria sobre vícios sociais"
+      ],
+      "dicas": [
+        "Cantiga de amor = eu lírico masculino, amor cortês, idealização feminina",
+        "Cantiga de amigo = eu lírico feminino, natureza, paralelismo, refrão",
+        "Escárnio = crítica indireta e irônica; Maldizer = crítica direta e agressiva",
+        "Gil Vicente = teatro crítico satirizando nobreza, clero e burguesia"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Leia a cantiga:\n\n'Ai flores, ai flores do verde pino,\nse sabedes novas do meu amigo?\nAi, Deus, e u é?\n\nAi flores, ai flores do verde ramo,\nse sabedes novas do meu amado?\nAi, Deus, e u é?'\n\n(D. Dinis)\n\nA cantiga caracteriza-se como cantiga de amigo porque:",
+          "alternativas": {
+            "A": "O eu lírico masculino expressa amor idealizado por dama inatingível",
+            "B": "Apresenta crítica social direta a comportamentos da nobreza medieval",
+            "C": "O eu lírico feminino expressa saudade do amado com paralelismo",
+            "D": "Utiliza linguagem rebuscada e erudita típica da poesia palaciana",
+            "E": "Satiriza costumes sociais através de ironia e duplo sentido"
+          },
+          "correta": "C",
+          "explicacao": "A cantiga é de amigo porque: 1) O eu lírico é feminino (mulher que pergunta sobre o amado); 2) Expressa sentimento de saudade e espera; 3) Há referência à natureza ('flores do verde pino/ramo'); 4) Utiliza paralelismo (estrutura repetitiva com variação mínima: 'pino'/'ramo', 'amigo'/'amado'); 5) Presença de refrão ('Ai, Deus, e u é?' = onde está?). A linguagem é simples e popular, não rebuscada. Não é cantiga de amor porque o eu lírico não é masculino nem segue o código cortês; não é cantiga satírica porque não há crítica social.",
+          "dificuldade": "facil",
+          "tags": ["trovadorismo", "cantiga-de-amigo"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Leia o texto:\n\n'Senhora minha, desde que vos vi,\nlutei para ocultar esta paixão\nque me tomou inteiro o coração;\nmas não o posso mais e decidi\nque saibam todos o meu grande amor,\na tristeza que tenho, a imensa dor\nque sofro desde o dia em que vos vi.'\n\n(Adaptado de cantiga trovadoresca)\n\nO fragmento exemplifica cantiga de amor porque:",
+          "alternativas": {
+            "A": "O eu lírico feminino lamenta ausência do amado em ambiente natural",
+            "B": "O eu lírico masculino confessa sofrimento amoroso por dama idealizada",
+            "C": "Apresenta crítica irônica aos costumes amorosos da aristocracia",
+            "D": "Satiriza comportamento de mulheres através de linguagem ambígua",
+            "E": "Descreve objetivamente relações igualitárias entre homem e mulher"
+          },
+          "correta": "B",
+          "explicacao": "É cantiga de amor porque: 1) Eu lírico masculino ('lutei', 'decidi') dirigindo-se à dama ('Senhora minha'); 2) Expressão de sofrimento amoroso ('tristeza', 'imensa dor'); 3) Idealização da mulher tratada respeitosamente ('vos'); 4) Vassalagem amorosa implícita (sofrimento passivo pela dama); 5) Tom confessional sobre paixão não correspondida. Segue o código do amor cortês medieval: o poeta se submete à dama superior, sofre em silêncio e eventualmente declara seu amor. Não há crítica social nem ironia; não é cantiga de amigo porque o eu lírico é masculino.",
+          "dificuldade": "facil",
+          "tags": ["trovadorismo", "cantiga-de-amor"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Leia o trecho:\n\n'DIABO: Que leixas na outra vida?\nFIDALGO: Deixo casas e vinhas, / deixo ouro e pedraria, / deixo terras e rainhas.\nDIABO: Pois que deixaste a verdade, / não entrarás nesta barca.\n[...]\nFIDALGO: E não sei por que me dais\ntão pobre habitação!\nDIABO: Porque a tua condição,\nnão é mais que presumir.'\n\n(Gil Vicente, 'Auto da Barca do Inferno', adaptado)\n\nO fragmento evidencia:",
+          "alternativas": {
+            "A": "Idealização da nobreza como classe moralmente superior no contexto medieval",
+            "B": "Crítica social à vaidade e hipocrisia da aristocracia através de alegoria religiosa",
+            "C": "Defesa da acumulação de riquezas como sinal de graça divina",
+            "D": "Celebração dos valores cavaleirescos de honra e lealdade feudal",
+            "E": "Linguagem erudita e rebuscada destinada exclusivamente à elite letrada"
+          },
+          "correta": "B",
+          "explicacao": "O texto de Gil Vicente critica a nobreza através de alegoria: o Fidalgo chega à barca do Inferno após a morte e é condenado por sua vaidade e apego a bens materiais ('ouro e pedraria', 'terras e rainhas'). O Diabo o repreende porque sua 'condição' era apenas 'presumir' (ser presunçoso, vaidoso). A crítica social é marca do teatro vicentino: ele satiriza vícios da aristocracia (vaidade, hipocrisia, exploração) usando formato alegórico religioso (julgamento após a morte, barcas do Inferno/Paraíso). A linguagem é acessível, popular, destinada ao público amplo. Não há idealização da nobreza nem defesa da acumulação; ao contrário, Gil Vicente condena esses valores.",
+          "dificuldade": "medio",
+          "tags": ["humanismo", "gil-vicente", "critica-social"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Compare as cantigas:\n\nCantiga I:\n'Se me mandais, mia senhor,\nque viva em gran pesar,\nviverei, mais non poderei\neste meu mal encobrir.'\n\nCantiga II:\n'Pela ribeira do rio\ncantando ia a dona virgo,\nd'amor:\n\"Ai, meu amigo, por que tardas tanto?\"'\n\nA diferença fundamental entre as cantigas está em:",
+          "alternativas": {
+            "A": "A temática, pois abordam assuntos completamente distintos",
+            "B": "A linguagem, sendo I erudita e II popular",
+            "C": "O eu lírico: I é masculino (amor cortês); II é feminino (amigo)",
+            "D": "A forma, pois I é narrativa e II é lírica",
+            "E": "O período histórico, pertencendo a movimentos literários diferentes"
+          },
+          "correta": "C",
+          "explicacao": "A diferença fundamental está no eu lírico e no tipo de cantiga. A Cantiga I é de amor: eu lírico masculino dirigindo-se à 'senhor' (dama) com tratamento respeitoso, expressando submissão ('Se me mandais') e sofrimento amoroso conforme código cortês. A Cantiga II é de amigo: eu lírico feminino ('dona virgo') em ambiente natural ('ribeira do rio'), expressando saudade do 'amigo' (amado) de forma espontânea. Ambas abordam tema amoroso (não são distintos); ambas pertencem ao Trovadorismo; ambas são líricas (não narrativas); a diferença de linguagem existe mas não é o aspecto fundamental - o central é a perspectiva do eu lírico e o tipo de relação amorosa representada.",
+          "dificuldade": "medio",
+          "tags": ["trovadorismo", "cantigas-liricas"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Leia o trecho:\n\n'E dali em diante começou a batalha a ser mui forte e perigosa, e muitas gentes do povo miúdo, com grandes clamores, dizendo: \"Real! Real! Pelo Mestre! Pelo Mestre!\", feriam sem nenhuma piedade. E o dizer \"Pelo Mestre\" não era por outrem senão por El-Rei D. João, que assim era chamado antes que fosse rei.'\n\n(Fernão Lopes, 'Crônica de D. João I', adaptado)\n\nA inovação de Fernão Lopes nas crônicas históricas consiste em:",
+          "alternativas": {
+            "A": "Eliminar completamente elementos literários priorizando objetividade científica",
+            "B": "Dar voz ao povo e registrar perspectivas de diferentes classes sociais",
+            "C": "Defender exclusivamente os interesses da aristocracia portuguesa",
+            "D": "Utilizar linguagem erudita latina inacessível às classes populares",
+            "E": "Inventar acontecimentos ficcionais para tornar a narrativa mais dramática"
+          },
+          "correta": "B",
+          "explicacao": "A grande inovação de Fernão Lopes foi dar voz ao 'povo miúdo' (classes populares) em suas crônicas, registrando suas falas, perspectivas e participação nos acontecimentos históricos. No trecho, ele cita os gritos populares ('Real! Real! Pelo Mestre!') e destaca a ação do povo na batalha. Anteriormente, crônicas focavam exclusivamente em reis e nobres. Fernão Lopes consultou documentos, cruzou fontes e incluiu análise crítica, mas manteve estilo literário vivo com diálogos e dramaticidade (não eliminou elementos literários). Não defendeu apenas a aristocracia; não usou linguagem erudita inacessível (registrou falas populares); e não inventou fatos, mas interpretou-os historicamente.",
+          "dificuldade": "dificil",
+          "tags": ["humanismo", "fernao-lopes", "prosa-historica"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Classicismo e Renascimento",
+      "resumo": "Camões e o apogeu da literatura portuguesa: Os Lusíadas, lírica camoniana e valores renascentistas.",
+      "topicos": [
+        {
+          "titulo": "Luís de Camões: O Poeta Nacional",
+          "conteudo": "Luís Vaz de Camões (1524-1580) é o maior poeta da língua portuguesa e figura central do Classicismo português. Viveu no auge da expansão marítima portuguesa, participou de expedições ao Oriente, foi soldado, naufragou, passou privações, mas produziu obra monumental que eternizou a língua e a cultura lusitanas.\n\nA obra de Camões divide-se em três vertentes: a épica ('Os Lusíadas'), a lírica (sonetos, éclogas, elegias, canções) e o teatro (comédias e autos). Embora seja mais conhecido pela epopeia, sua lírica é igualmente notável, apresentando tanto poemas em medida velha (redondilhas, tradição medieval) quanto em medida nova (decassílabos, sonetos ao estilo italiano renascentista).\n\nCamões expressa dualidades típicas do homem renascentista: razão x emoção, idealização platônica x sensualidade, valores cristãos x humanismo pagão. Seus sonetos exploram a complexidade do amor ('Amor é fogo que arde sem se ver'), a transitoriedade da vida, a reflexão filosófica e o desconcerto do mundo. Sua lírica antecipa aspectos do Barroco pela tensão entre contrários.\n\nNo contexto do Classicismo, Camões segue os princípios renascentistas: valorização da Antiguidade clássica (mitologia greco-romana), antropocentrismo (homem no centro), racionalismo, equilíbrio formal, universalismo e busca da perfeição estética. Utiliza figuras mitológicas, referências históricas e filosóficas, demonstrando erudição típica do período. Sua importância transcende a literatura: Camões é símbolo da identidade cultural portuguesa e da língua que une Portugal e Brasil."
+        },
+        {
+          "titulo": "Os Lusíadas: Epopeia Nacional",
+          "conteudo": "'Os Lusíadas' (1572) é uma epopeia que narra a viagem de Vasco da Gama à Índia (1497-1498), mas transcende o evento histórico para celebrar toda a história e glória do povo português. Com 10 cantos, 1.102 estrofes em oitava-rima (ABABABCC) e versos decassílabos heroicos, é considerada a maior obra literária em língua portuguesa.\n\nA estrutura segue o modelo clássico da epopeia: proposição (apresentação do tema), invocação (pedido de inspiração às Tágides, ninfas do rio Tejo), dedicatória (ao Rei D. Sebastião), narração (desenvolvimento da história) e epílogo (reflexões finais). A narrativa não é linear: inicia in medias res (no meio da ação) com a frota no Oceano Índico, e através de flashbacks conta episódios anteriores.\n\nPlanos narrativos se entrelaçam: o plano da viagem (Vasco da Gama navegando), o plano da História de Portugal (episódios como Inês de Castro, Batalha de Aljubarrota narrados durante a viagem), o plano mitológico (deuses interferindo - Vênus protegendo, Baco atrapalhando os portugueses) e o plano das reflexões do poeta (Camões comentando acontecimentos e criticando a decadência de Portugal).\n\nEpisódios famosos incluem: Inês de Castro (amor trágico, 'amor depois da morte'), Velho do Restelo (crítica à expansão marítima e suas consequências), Gigante Adamastor (representação dos perigos do mar e do Cabo das Tormentas), Ilha dos Amores (recompensa alegórica aos navegantes). O final é pessimista: Camões lamenta que Portugal não valoriza seus heróis e critica a decadência moral da nação.\n\nNo ENEM, 'Os Lusíadas' aparece em questões sobre interpretação de trechos, identificação de características do Classicismo, análise de figuras mitológicas, compreensão do contexto histórico das navegações e interpretação das críticas sociais implícitas, especialmente no Velho do Restelo."
+        },
+        {
+          "titulo": "Características do Classicismo",
+          "conteudo": "O Classicismo é a expressão literária do Renascimento, movimento cultural que floresceu na Europa entre os séculos XV e XVI. Representa ruptura com a visão teocêntrica medieval e afirmação do antropocentrismo humanista: o homem como medida de todas as coisas, capaz de compreender e transformar o mundo através da razão.\n\nAs características fundamentais do Classicismo incluem: racionalismo (valorização da razão sobre a fé), equilíbrio formal (busca da harmonia e da proporção), universalismo (temas e valores que transcendem o particular), imitação dos clássicos greco-romanos (Homero, Virgílio como modelos), uso de mitologia pagã, e busca da perfeição estética através de formas fixas rigorosas.\n\nNa poesia, predominam o soneto (14 versos, esquema fixo de rimas), a écloga (poesia pastoril), a elegia (tom melancólico), a ode (celebração) e a epopeia (narrativa heroica em versos). Os temas recorrentes são: amor idealizado (herança do Petrarquismo italiano), reflexão sobre a vida e a morte, descrição da natureza, celebração de feitos heroicos e crítica moral.\n\nO conceito de beleza clássica busca a harmonia entre forma e conteúdo, clareza expressiva, ordem lógica e equilíbrio entre razão e emoção. Diferente do Barroco que virá depois, o Classicismo evita excessos, contrastes violentos e ornamentação exagerada. A linguagem é elevada, culta, mas clara; a estrutura é equilibrada, seguindo modelos consagrados pela tradição. No contexto português, o Classicismo coincide com o auge do Império Marítimo, refletindo orgulho nacional e confiança humanista, mas também prenúncios de decadência que Camões captou nas reflexões finais de 'Os Lusíadas'."
+        },
+        {
+          "titulo": "Lírica Camoniana",
+          "conteudo": "A lírica de Camões é extensa e diversificada, abrangendo cerca de 200 sonetos, além de redondilhas, éclogas, elegias e canções. Divide-se em medida velha (versos de cinco ou sete sílabas, tradição medieval portuguesa) e medida nova (versos decassílabos, sonetos ao estilo petrarquista italiano trazido ao Portugal por Sá de Miranda).\n\nOs sonetos camonianos exploram sobretudo o tema amoroso, mas de forma complexa e filosófica. O amor em Camões é paradoxal: 'fogo que arde sem se ver', 'ferida que dói e não se sente', 'contentamento descontente', 'dor que desatina sem doer'. Essa construção através de antíteses e paradoxos revela a impossibilidade de definir racionalmente o sentimento amoroso, antecipando a tensão barroca.\n\nAlém do amor, Camões trata da transitoriedade da vida e da beleza ('Mudam-se os tempos, mudam-se as vontades'), do desconcerto do mundo (desajuste entre valores pessoais e realidade social), da nostalgia do passado glorioso de Portugal, e de reflexões existenciais sobre o destino humano. Sua lírica combina platonismo (amor espiritual, idealização) com sensualidade terrena, revelando tensões do homem renascentista.\n\nA técnica poética camoniana é refinada: domínio absoluto das formas fixas, riqueza de recursos retóricos (metáfora, hipérbole, antítese, paradoxo), musicalidade, e capacidade de expressar abstração filosófica com clareza. No ENEM, sonetos de Camões aparecem em questões sobre interpretação de linguagem figurada, identificação de características clássicas, análise da construção paradoxal do amor e compreensão do contexto renascentista."
+        }
+      ],
+      "exemplos": [
+        "Soneto: 'Amor é fogo que arde sem se ver' - paradoxos sobre o amor",
+        "Os Lusíadas: Episódio de Inês de Castro - amor trágico e crítica ao poder",
+        "Os Lusíadas: Velho do Restelo - crítica à ambição expansionista",
+        "Lírica camoniana: 'Mudam-se os tempos, mudam-se as vontades' - transitoriedade"
+      ],
+      "dicas": [
+        "Classicismo = racionalismo, equilíbrio, mitologia greco-romana, formas fixas",
+        "Os Lusíadas = viagem de Vasco da Gama + história de Portugal + mitologia",
+        "Inês de Castro = amor trágico; Velho do Restelo = crítica à expansão",
+        "Lírica camoniana = paradoxos, antíteses, amor idealizado x sensualidade"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Leia o soneto:\n\n'Amor é fogo que arde sem se ver,\nÉ ferida que dói, e não se sente;\nÉ um contentamento descontente,\nÉ dor que desatina sem doer.\n\nÉ um não querer mais que bem querer;\nÉ um andar solitário entre a gente;\nÉ nunca contentar-se de contente;\nÉ um cuidar que ganha em se perder.'\n\n(Luís de Camões)\n\nA construção do conceito de amor no poema se dá principalmente por:",
+          "alternativas": {
+            "A": "Descrição objetiva e científica dos aspectos fisiológicos da paixão",
+            "B": "Narrativa cronológica das etapas do relacionamento amoroso",
+            "C": "Paradoxos e antíteses que revelam a natureza contraditória do sentimento",
+            "D": "Comparações com elementos da natureza e fenômenos climáticos",
+            "E": "Referências diretas a episódios mitológicos greco-romanos"
+          },
+          "correta": "C",
+          "explicacao": "O soneto constrói o conceito de amor através de paradoxos (afirmações aparentemente contraditórias mas que revelam verdade profunda) e antíteses (oposição de termos): 'fogo que arde sem se ver' (impossibilidade sensorial), 'ferida que dói e não se sente' (contradição física), 'contentamento descontente' (junção de opostos), 'dor que desatina sem doer' (paradoxo do sofrimento). Essa construção paradoxal expressa a impossibilidade de definir racionalmente o amor, que escapa à lógica. Não há descrição científica, narrativa cronológica, comparações naturais sistemáticas ou mitologia. A técnica revela tensão entre razão (tentativa de definir) e emoção (que resiste à definição), típica do Renascimento e antecipando o Barroco.",
+          "dificuldade": "medio",
+          "tags": ["classicismo", "camoes", "lirica", "paradoxo"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Leia o trecho de 'Os Lusíadas':\n\n'Ó glória de mandar, ó vã cobiça\nDesta vaidade a quem chamamos Fama!\nÓ fraudulento gosto, que se atiça\nC'uma aura popular, que honra se chama!\nQue castigo, que pena, que justiça\nFazes ao pobre povo que te ama!\nQue mortes, que perigos, que tormentas,\nQue crueldades neles experimentas!'\n\n(Episódio do Velho do Restelo)\n\nO fragmento expressa:",
+          "alternativas": {
+            "A": "Celebração entusiasta das conquistas marítimas portuguesas",
+            "B": "Crítica à ambição expansionista e às consequências da busca por glória",
+            "C": "Descrição objetiva dos preparativos da viagem de Vasco da Gama",
+            "D": "Exaltação dos valores cavaleirescos e do heroísmo dos navegadores",
+            "E": "Defesa da aliança entre Portugal e o Oriente para comércio de especiarias"
+          },
+          "correta": "B",
+          "explicacao": "O episódio do Velho do Restelo é um dos momentos mais críticos de 'Os Lusíadas': um velho que assiste à partida da frota de Vasco da Gama faz discurso condenando a 'glória de mandar' e a 'vã cobiça' que motivam as navegações. Critica a busca por fama ('vaidade') e denuncia as consequências trágicas para o povo: mortes, perigos, tormentas, crueldades. É contraponto à celebração heroica: enquanto o poema exalta os feitos portugueses, o Velho questiona o custo humano e moral dessa glória. Camões coloca no poema tanto o orgulho nacional quanto a crítica lúcida, revelando complexidade renascentista. Não é celebração nem exaltação; não é descrição objetiva; não defende comércio. É crítica contundente ao imperialismo.",
+          "dificuldade": "medio",
+          "tags": ["classicismo", "camoes", "lusiadas", "critica-social"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Leia o trecho:\n\n'As armas e os barões assinalados\nQue, da Ocidental praia Lusitana,\nPor mares nunca dantes navegados,\nPassaram ainda além da Taprobana,\nEm perigos e guerras esforçados,\nMais do que prometia a força humana,\nE entre gente remota edificaram\nNovo Reino, que tanto sublimaram.'\n\n(Camões, 'Os Lusíadas' - Canto I, Proposição)\n\nO fragmento apresenta características do Classicismo:",
+          "alternativas": {
+            "A": "Valorização da subjetividade individual e do sentimento romântico",
+            "B": "Uso de linguagem coloquial popular para democratização da literatura",
+            "C": "Celebração de feitos heroicos com linguagem elevada e métrica rigorosa",
+            "D": "Crítica à razão iluminista através de imagens sombrias e pessimistas",
+            "E": "Fragmentação da sintaxe e experimentação formal modernista"
+          },
+          "correta": "C",
+          "explicacao": "O trecho apresenta características clássicas: 1) Celebração de feitos heroicos (navegações portuguesas); 2) Linguagem elevada, culta ('barões assinalados', 'esforçados'); 3) Métrica rigorosa (versos decassílabos em oitava-rima); 4) Universalismo (feitos que superam 'a força humana'); 5) Tom épico grandioso. A proposição de 'Os Lusíadas' anuncia o tema: os 'barões' (nobres navegadores) portugueses que navegaram 'mares nunca dantes navegados' e fundaram império no Oriente. Não há subjetividade romântica; não usa linguagem coloquial; não critica a razão (valoriza); e não há experimentação modernista. É plenamente clássico: forma fixa, celebração heroica, erudição.",
+          "dificuldade": "facil",
+          "tags": ["classicismo", "camoes", "lusiadas"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Leia o soneto:\n\n'Mudam-se os tempos, mudam-se as vontades,\nMuda-se o ser, muda-se a confiança;\nTodo o mundo é composto de mudança,\nTomando sempre novas qualidades.\n\nContinuamente vemos novidades,\nDiferentes em tudo da esperança;\nDo mal ficam as mágoas na lembrança,\nE do bem, se algum houve, as saudades.'\n\n(Luís de Camões)\n\nO tema central desenvolvido no poema é:",
+          "alternativas": {
+            "A": "A permanência dos valores morais ao longo da história humana",
+            "B": "A celebração otimista das transformações sociais e tecnológicas",
+            "C": "A transitoriedade da vida e a inevitabilidade da mudança",
+            "D": "A superioridade da razão sobre as emoções humanas passageiras",
+            "E": "A crítica à instabilidade política do reinado de D. Sebastião"
+          },
+          "correta": "C",
+          "explicacao": "O tema central é a transitoriedade, a impermanência de tudo: tempos, vontades, ser, confiança. A repetição do verbo 'mudar' enfatiza que nada permanece: 'Todo o mundo é composto de mudança'. A reflexão é melancólica: do mal ficam mágoas, do bem (se algum houve) restam apenas saudades. Expressa consciência aguda da fugacidade da vida e da impossibilidade de reter momentos ou sentimentos. É tema filosófico recorrente em Camões, relacionado ao 'desconcerto do mundo' e à tensão entre desejos humanos (permanência, estabilidade) e realidade (tudo muda). Não celebra mudanças; não afirma permanência de valores; não privilegia razão sobre emoção; não é crítica política específica, mas reflexão existencial universal.",
+          "dificuldade": "medio",
+          "tags": ["classicismo", "camoes", "lirica", "transitoriedade"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Compare os trechos:\n\nTexto I (Camões): 'E entre gente remota edificaram / Novo Reino, que tanto sublimaram' ('Os Lusíadas')\n\nTexto II (Camões): 'Ó glória de mandar, ó vã cobiça / Desta vaidade a quem chamamos Fama!' (Velho do Restelo)\n\nA relação entre os textos revela:",
+          "alternativas": {
+            "A": "Contradição absoluta que compromete a coerência interna da obra",
+            "B": "Mudança radical de opinião do autor entre os diferentes cantos do poema",
+            "C": "Complexidade renascentista: celebração heroica e crítica moral convivem",
+            "D": "Ironia dissimulada: Camões na verdade condena os navegadores no Texto I",
+            "E": "Defesa incondicional do imperialismo português em ambos os fragmentos"
+          },
+          "correta": "C",
+          "explicacao": "'Os Lusíadas' apresenta dualidade característica do Renascimento: Camões simultaneamente celebra os feitos heroicos dos portugueses (Texto I: 'edificaram Novo Reino, que tanto sublimaram') e critica a ambição que os motiva (Texto II: 'vã cobiça', 'vaidade'). Não é contradição que compromete a obra, mas complexidade que a enriquece: o poeta reconhece a grandeza das conquistas enquanto questiona o custo humano e moral. Não é mudança de opinião (ambas as perspectivas coexistem), nem ironia dissimulada. É visão madura, capaz de ver múltiplas facetas da realidade. O homem renascentista - e Camões exemplarmente - vive tensões: razão x emoção, glória x decadência, idealismo x realismo. Essa tensão prenunciará o Barroco.",
+          "dificuldade": "dificil",
+          "tags": ["classicismo", "camoes", "lusiadas", "complexidade"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Barroco e Arcadismo",
+      "resumo": "Literatura portuguesa dos séculos XVII e XVIII: tensão barroca e simplicidade árcade.",
+      "topicos": [
+        {
+          "titulo": "Barroco Português: Padre Antônio Vieira",
+          "conteudo": "O Barroco português (século XVII) se desenvolveu em contexto de Contrarreforma católica, crise do império marítimo, domínio espanhol sobre Portugal (1580-1640) e pessimismo cultural. Diferente do Brasil, onde o Barroco teve forte expressão poética (Gregório de Matos), em Portugal destacou-se a prosa, especialmente os sermões do Padre Antônio Vieira.\n\nPadre Antônio Vieira (1608-1697) é considerado o maior orador sacro da língua portuguesa. Nascido em Lisboa mas criado na Bahia, transitou entre Portugal e Brasil, atuando como pregador, diplomata e defensor dos índios e cristãos-novos. Seus sermões combinam erudição teológica, retórica elaborada, argumentação engenhosa e compromisso social.\n\nAs características barrocas em Vieira incluem: conceptismo (jogo de ideias, argumentação engenhosa, sutileza intelectual), uso de antíteses e paradoxos, linguagem rebuscada mas poderosa, estrutura argumentativa complexa, e fusão entre sagrado e profano. O 'Sermão da Sexagésima' discute a arte de pregar; o 'Sermão de Santo Antônio aos Peixes' critica colonos que escravizam índios usando alegoria dos peixes.\n\nA técnica vieiriana consiste em partir de pequeno trecho bíblico e desenvolvê-lo com engenhosidade, estabelecendo relações inesperadas, utilizando metáforas elaboradas e construindo argumentação que convence pela beleza formal tanto quanto pela lógica. O conceptismo português privilegia ideias e raciocínio, diferente do cultismo ou gongorismo espanhol (jogo de palavras, ornamentação linguística). No ENEM, trechos de Vieira podem aparecer em questões sobre recursos argumentativos, interpretação de alegoria e contexto histórico colonial."
+        },
+        {
+          "titulo": "Características do Barroco",
+          "conteudo": "O Barroco (século XVII) é arte da tensão, do conflito entre contrários: espiritual x carnal, céu x terra, vida x morte, razão x fé, efêmero x eterno. Surge no contexto da Contrarreforma católica, quando a Igreja, reagindo ao protestantismo, utiliza arte como instrumento de persuasão e doutrinação. É período de crises: econômicas, políticas, religiosas e existenciais.\n\nAs características fundamentais do Barroco incluem: dualismo/contradição (conflito entre valores opostos sem síntese), pessimismo (visão negativa da vida terrena, consciência da morte), rebuscamento formal (linguagem ornamentada, sintaxe complexa), uso intenso de figuras de linguagem (metáfora, hipérbole, antítese, paradoxo), e fusionismo (mistura de elementos opostos: sagrado/profano, sublime/grotesco).\n\nO conceptismo (ou cultismo de ideias) privilegia jogos intelectuais, sutileza argumentativa e engenhosidade de raciocínio, sendo típico de Portugal e de autores como Vieira e Quevedo. O cultismo (ou gongorismo) enfatiza ornamentação linguística, jogo de palavras, aliterações, hipérbatos e preciosismo vocabular, mais comum na Espanha (Góngora) e tendo em Gregório de Matos representante brasileiro.\n\nNo Barroco, o homem vive dilacerado entre a salvação eterna (valores religiosos) e os prazeres mundanos (valores terrenos). Essa tensão, chamada de 'conflito antropocêntrico x teocêntrico', gera angústia existencial expressa nas obras. A arte barroca busca impressionar, emocionar, persuadir através do impacto sensorial e intelectual, diferente do equilíbrio clássico."
+        },
+        {
+          "titulo": "Arcadismo: Bocage e a Poesia Setecentista",
+          "conteudo": "O Arcadismo (ou Neoclassicismo) desenvolveu-se em Portugal no século XVIII, em contexto iluminista de valorização da razão, crítica ao absolutismo e busca de simplicidade em reação aos excessos barrocos. O movimento propunha retorno aos modelos clássicos greco-romanos e idealizava a vida pastoril como refúgio da corrupção urbana.\n\nManuel Maria Barbosa du Bocage (1765-1805) é o principal poeta árcade português, embora sua obra apresente transição para o Romantismo. Utilizando pseudônimo pastoril Elmano Sadino (convenção árcade), Bocage produziu poesia lírica, satírica e erótica. Sua vida boêmia, prisões por ideias liberais e conflitos com a censura alimentaram mitos sobre o poeta maldito.\n\nA poesia árcade de Bocage apresenta características neoclássicas: referências mitológicas, cenários pastoris idealizados, simplicidade formal, equilíbrio, valorização da natureza como refúgio, e filosofia do 'carpe diem' (aproveitar o presente). Pseudônimos pastoris, imitação de modelos clássicos (especialmente Horácio) e uso do soneto são marcas do período.\n\nNo entanto, Bocage antecipa o Romantismo em poemas que expressam sofrimento pessoal intenso, pessimismo existencial, revolta contra convenções sociais e linguagem mais passional. Sonetos como 'Olha, Marília, as flautas dos pastores' seguem convenções árcades, mas outros como 'Magro, de olhos azuis, carão moreno' apresentam subjetividade romântica. Sua versatilidade inclui poesia satírica irreverente e erótica ousada, que lhe causou problemas com autoridades religiosas e políticas. No ENEM, Bocage pode aparecer tanto como árcade (características neoclássicas) quanto como pré-romântico (subjetividade, pessimismo)."
+        },
+        {
+          "titulo": "Contraste: Barroco e Arcadismo",
+          "conteudo": "O Arcadismo surge como reação ao Barroco, propondo simplicidade em oposição ao rebuscamento, razão contra emoção excessiva, equilíbrio em lugar de tensão. Enquanto o Barroco é arte do conflito e da contradição, o Arcadismo busca harmonia e serenidade, retomando valores clássicos que o Barroco havia subvertido.\n\nNo Barroco, a linguagem é complexa, rebuscada, ornamentada, com hipérbatos (inversões sintáticas), hipérboles, metáforas obscuras. A intenção é impressionar, emocionar, deixar o leitor/ouvinte perplexo. No Arcadismo, a linguagem busca clareza, simplicidade, transparência. A natureza no Barroco serve como alegoria moral ou religiosa; no Arcadismo, é cenário idealizado de paz e felicidade.\n\nO Barroco expressa pessimismo existencial, consciência aguda da morte ('memento mori'), fugacidade da vida ('tempus fugit'), vanidade das glórias terrenas. O Arcadismo, embora reconheça a transitoriedade, propõe aproveitar o presente ('carpe diem') de forma serena, gozando prazeres simples da vida pastoril idealizada. A morte barroca é dramática; a árcade é filosófica.\n\nEnquanto o Barroco é teocêntrico em aparência mas antropocêntrico em tensão (homem dilacerado entre Deus e mundo), o Arcadismo é racionalista e humanista, confiando na razão como guia. O poeta barroco sofre o conflito; o poeta árcade busca refúgio da civilização corrupta no locus amoenus (lugar ameno) pastoril. Historicamente, o Arcadismo representa Iluminismo e preparação para transformações políticas (Revolução Francesa); o Barroco reflete Contrarreforma e absolutismo."
+        }
+      ],
+      "exemplos": [
+        "Vieira: 'Sermão de Santo Antônio aos Peixes' - alegoria criticando colonos",
+        "Barroco: antíteses como 'gozar da vida' x 'consciência da morte'",
+        "Bocage árcade: 'Olha, Marília, as flautas dos pastores' - cenário pastoril",
+        "Bocage pré-romântico: expressão de sofrimento pessoal e pessimismo"
+      ],
+      "dicas": [
+        "Barroco = tensão, contradição, rebuscamento; Arcadismo = simplicidade, razão, equilíbrio",
+        "Vieira = conceptismo, argumentação engenhosa, defesa de índios e cristãos-novos",
+        "Bocage = árcade nas convenções, mas antecipa Romantismo na subjetividade",
+        "No ENEM: identifique antíteses barrocas e idealizações pastoris árcades"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Leia o trecho do sermão:\n\n'Vós, diz Cristo, Senhor nosso, falando com os pregadores, sois o sal da terra: e chama-lhes sal da terra, porque quer que façam na terra o que faz o sal. O efeito do sal é impedir a corrupção; mas quando a terra se vê tão corrupta como está a nossa, havendo tantos pregadores, que sal será, ou que pregadores são estes? Ou o sal não salga, ou a terra não se deixa salgar.'\n\n(Padre Antônio Vieira, 'Sermão da Sexagésima', adaptado)\n\nA técnica argumentativa utilizada por Vieira caracteriza-se por:",
+          "alternativas": {
+            "A": "Descrição objetiva de fatos históricos sem interpretação pessoal",
+            "B": "Desenvolvimento engenhoso de metáfora bíblica aplicada à realidade social",
+            "C": "Narrativa cronológica de acontecimentos da vida de Cristo",
+            "D": "Uso exclusivo de linguagem coloquial popular para facilitar compreensão",
+            "E": "Rejeição completa de elementos religiosos priorizando racionalismo iluminista"
+          },
+          "correta": "B",
+          "explicacao": "Vieira utiliza técnica conceptista barroca: parte de trecho bíblico ('sois o sal da terra') e desenvolve metáfora engenhosamente, aplicando-a à crítica social. Se pregadores são 'sal' (que impede corrupção) e a sociedade está corrupta, ou o sal não está cumprindo função, ou a terra resiste. A argumentação é sutil, intelectual, estabelecendo relação lógica entre imagem religiosa e realidade social. Não é descrição objetiva (há interpretação e crítica); não é narrativa cronológica; não usa linguagem coloquial (é erudita); e não rejeita elementos religiosos - pelo contrário, parte deles para construir argumento. É exemplo de conceptismo: jogo de ideias, sutileza argumentativa, engenhosidade intelectual.",
+          "dificuldade": "medio",
+          "tags": ["barroco", "vieira", "conceptismo"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Leia o soneto:\n\n'Olha, Marília, as flautas dos pastores\nQue bem que soam, como estão cadentes!\nOlha o Tejo a sorrir-se! Olha, não sentes\nOs Zéfiros brincar por entre as flores?\n\nVê como ali, beijando-se, os Amores\nBrincam entre pombinhas inocentes;\nVê a Primavera, de entre as gentes,\nSaltar, vestida toda de mil cores!'\n\n(Bocage, adaptado)\n\nO fragmento apresenta características árcades:",
+          "alternativas": {
+            "A": "Tensão dramática entre valores espirituais e prazeres carnais pecaminosos",
+            "B": "Idealização da vida pastoril com referências mitológicas e cenário natural",
+            "C": "Linguagem rebuscada com hipérbatos complexos e vocabulário obscuro",
+            "D": "Expressão de sofrimento pessoal intenso e revolta contra sociedade",
+            "E": "Crítica social direta à opressão do regime absolutista português"
+          },
+          "correta": "B",
+          "explicacao": "O soneto apresenta características árcades: 1) Cenário pastoril idealizado (pastores com flautas, rio Tejo); 2) Referências mitológicas (Zéfiros = ventos suaves da mitologia, Amores = cupidos); 3) Natureza como espaço de harmonia e beleza (flores, primavera, pombinhas); 4) Linguagem relativamente simples e clara, sem rebuscamento barroco; 5) Tom sereno, contemplativo, sem tensão dramática. É convite à apreciação da beleza natural e dos prazeres simples, típico do 'carpe diem' árcade. Não há tensão barroca entre espiritual e carnal; não há linguagem rebuscada; não expressa sofrimento pessoal (é contemplação serena); e não há crítica política direta.",
+          "dificuldade": "facil",
+          "tags": ["arcadismo", "bocage", "idealizacao-pastoril"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Leia o fragmento:\n\n'Maldito seja quem assim me perde!\nE maldito quem eu perdi por ele!\nEste me mata, e o mato, porque o amo,\nE aquele amo, e mata, porque o amo;\nO amor me é laço, o desamor, cadeia;\nEu vivo atormentado, não sei de quê;\nOnde há bem não o vejo, ontem o via;\nAgora tudo é mal, tudo é tormento.'\n\n(Fragmento adaptado, estilo barroco)\n\nAs características barrocas evidentes no texto são:",
+          "alternativas": {
+            "A": "Clareza argumentativa e equilíbrio emocional típicos do racionalismo",
+            "B": "Paradoxos, repetições e expressão de tormento existencial contraditório",
+            "C": "Idealização serena da natureza como refúgio dos conflitos urbanos",
+            "D": "Linguagem coloquial simples adequada ao público popular iletrado",
+            "E": "Crítica política objetiva ao absolutismo monárquico português"
+          },
+          "correta": "B",
+          "explicacao": "O texto apresenta marcas barrocas: 1) Paradoxos ('o que me mata, eu mato', 'aquele que amo me mata'); 2) Contradições insolúveis (ama quem o mata, mata quem ama); 3) Repetições enfáticas ('maldito', 'mata/mato', 'amo'); 4) Expressão de tormento existencial ('vivo atormentado', 'tudo é mal'); 5) Ausência de resolução ou harmonia (pura tensão). O eu lírico está dilacerado por sentimentos contraditórios, típico do dualismo barroco. Não há clareza nem equilíbrio (há confusão e desequilíbrio); não idealiza natureza; não usa linguagem simples (é rebuscada emocionalmente); e não é crítica política objetiva, mas expressão de conflito interior.",
+          "dificuldade": "medio",
+          "tags": ["barroco", "paradoxo", "tensao"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Compare os textos:\n\nTexto I (Barroco): 'Goza, goza da flor da mocidade, / Que o tempo trota a toda ligeireza, / E imprime em toda a flor sua pisada. / Não guardes para a velhice enrugada / As belezas da idade peregrina, / Porque nos cursos do cometa humano / Gelo já foi o que antes era fogo.'\n\nTexto II (Arcadismo): 'Aproveita a ocasião, colhe a rosa, / Que depressa se passa a primavera. / Vem, descansa nos braços de Marília, / E goza os prazeres que a vida nos oferece, / Enquanto o tempo permite e a sorte é doce.'\n\nA diferença fundamental na abordagem do tema 'tempus fugit' (tempo fugaz) está em:",
+          "alternativas": {
+            "A": "O Texto I ignora passagem do tempo; Texto II a enfatiza dramaticamente",
+            "B": "O Texto I é otimista e sereno; Texto II é pessimista e angustiado",
+            "C": "O Texto I enfatiza dramaticamente decadência; Texto II propõe gozo sereno",
+            "D": "O Texto I usa linguagem simples; Texto II usa linguagem rebuscada",
+            "E": "O Texto I é árcade; Texto II é barroco"
+          },
+          "correta": "C",
+          "explicacao": "Ambos os textos tratam do 'carpe diem' (aproveitar o dia) diante da fugacidade do tempo, mas com abordagens diferentes. O Texto I (barroco) enfatiza dramaticamente a decadência: 'tempo trota a toda ligeireza', 'imprime pisada', 'velhice enrugada', 'Gelo já foi o que antes era fogo' - imagens fortes de destruição e transformação negativa. O tom é de urgência angustiada. O Texto II (árcade) propõe aproveitamento sereno dos prazeres simples: 'colhe a rosa', 'descansa nos braços', 'goza os prazeres' - tom tranquilo, contemplativo. Ambos reconhecem transitoriedade, mas o barroco dramatiza o horror da decadência, enquanto o árcade sugere aproveitamento filosófico e sereno. Não é que um ignore e outro enfatize o tempo (ambos o reconhecem); as caracterizações de otimismo/pessimismo estão invertidas na alternativa.",
+          "dificuldade": "dificil",
+          "tags": ["barroco", "arcadismo", "tempus-fugit", "comparacao"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Leia o trecho do 'Sermão de Santo Antônio aos Peixes':\n\n'Vós, diz Cristo, Senhor nosso, falando com os pregadores, sois o sal da terra: e chama-lhes sal da terra, porque quer que façam na terra o que faz o sal. O efeito do sal é impedir a corrupção; mas quando a terra se vê tão corrupta como está a nossa, havendo tantos pregadores, que sal será, ou que pregadores são estes?'\n\n(Padre Antônio Vieira, adaptado)\n\nA estratégia retórica de Vieira consiste em:",
+          "alternativas": {
+            "A": "Narrar parábolas bíblicas sem aplicação ao contexto histórico português",
+            "B": "Usar alegoria dos peixes para criticar colonos que escravizam índios",
+            "C": "Desenvolver metáfora bíblica (sal/pregadores) para criticar ineficácia clerical",
+            "D": "Defender incondicionalmente as ações da Igreja sem questionamentos",
+            "E": "Rejeitar completamente autoridade religiosa em favor do racionalismo"
+          },
+          "correta": "C",
+          "explicacao": "Neste trecho específico, Vieira desenvolve a metáfora bíblica do 'sal da terra' (pregadores) para questionar criticamente: se pregadores são 'sal' que deve impedir 'corrupção' da sociedade, por que a sociedade está tão corrupta? A conclusão implícita é que ou os pregadores não estão cumprindo sua função adequadamente, ou a sociedade resiste à pregação. É crítica interna à Igreja, questionando eficácia dos pregadores. A alternativa B refere-se a outro momento do sermão (alegoria dos peixes), não a este trecho específico. Vieira não narra sem aplicação contextual (sempre aplica); não defende incondicionalmente (critica); e não rejeita autoridade religiosa (é padre jesuíta que usa religião como base argumentativa).",
+          "dificuldade": "medio",
+          "tags": ["barroco", "vieira", "retorica", "critica"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Romantismo Português",
+      "resumo": "Gerações românticas em Portugal: medievalismo, ultrarromantismo e poesia social.",
+      "topicos": [
+        {
+          "titulo": "Primeira Geração: Almeida Garrett",
+          "conteudo": "O Romantismo português inicia-se em 1825 com a publicação do poema 'Camões' de Almeida Garrett, escrito no exílio em Paris. João Batista da Silva Leitão de Almeida Garrett (1799-1854) foi poeta, dramaturgo, romancista e político liberal que participou ativamente das lutas contra o absolutismo em Portugal.\n\nA primeira geração romântica portuguesa, também chamada nacionalista ou medievalista, caracteriza-se pela valorização do passado histórico nacional, idealização da Idade Média, exaltação de heróis e tradições portuguesas, e engajamento político liberal. Garrett buscou criar identidade cultural portuguesa autônoma, livre da influência neoclássica francesa.\n\nNa poesia, destaca-se 'Camões' (1825), poema narrativo que romantiza a vida do poeta quinhentista, transformando-o em herói romântico incompreendido. No teatro, Garrett renovou a cena portuguesa com 'Frei Luís de Sousa' (1843), drama que retoma tema medieval (sebastianismo, retorno do morto, conflito entre amor e dever) com sensibilidade romântica.\n\nNo romance, 'Viagens na Minha Terra' (1846) é obra híbrida que mescla narrativa de viagem, digressões políticas e culturais, e história de amor (Joaninha e Carlos). Com ironia e tom conversacional, Garrett critica sociedade portuguesa pós-liberal, questiona idealizações românticas e experimenta forma narrativa livre. É considerado marco da prosa romântica portuguesa, antecipando características realistas pela crítica social e distanciamento irônico. A frase 'Quem não viu Lisboa não viu coisa boa' expressa nacionalismo romântico."
+        },
+        {
+          "titulo": "Segunda Geração: Ultrarromantismo",
+          "conteudo": "A segunda geração romântica portuguesa (1840-1860), conhecida como ultrarromântica ou byroniana, radicaliza características românticas: pessimismo extremo, individualismo exacerbado, evasão da realidade, morbidez, satanismo, e expressão intensa de sofrimento pessoal. Influenciada por Lord Byron, essa geração cultiva imagem do poeta maldito, incompreendido, à margem da sociedade.\n\nCamilo Castelo Branco (1825-1890) é o principal romancista ultrarromântico português. Vida atormentada (prisões, escândalos amorosos, suicídio) alimentou mitos sobre o autor romântico sofredor. Sua vasta obra inclui romances passionais, novelas, contos e obras satíricas que criticam a própria estética romântica.\n\n'Amor de Perdição' (1862) é a obra-prima de Camilo: narra amor impossível entre Simão Botelho e Teresa de Albuquerque, impedido pela rivalidade entre famílias. Simão mata o pretendente de Teresa, é condenado ao degredo para a Índia, Teresa entra para convento, e ambos morrem no final. A narrativa segue estrutura folhetinesca, com peripécias dramáticas, amores impossíveis, destino trágico e tons melodramáticos típicos do ultrarromantismo.\n\nAlém dos romances passionais, Camilo escreveu obras satíricas como 'Coração, Cabeça e Estômago' e 'Eusébio Macário', que ironizam excessos românticos, revelando distanciamento crítico. Essa dualidade - produzir romances ultrarromânticos enquanto os satiriza - mostra consciência artística complexa. No ENEM, trechos de 'Amor de Perdição' podem aparecer para análise de características românticas exacerbadas e crítica aos excessos sentimentais."
+        },
+        {
+          "titulo": "Terceira Geração: Poesia Social",
+          "conteudo": "A terceira geração romântica portuguesa (1860-1870), também chamada condoreira (dos condores, aves que voam alto), caracteriza-se por engajamento social e político, defesa da abolição da escravatura, ideais republicanos e socialistas, e preocupação com questões sociais. Diferente do individualismo ultrarromântico, volta-se para coletividade.\n\nNo Brasil, Castro Alves representa essa geração com poesia abolicionista. Em Portugal, o Romantismo de terceira geração é menos expressivo, pois logo será sucedido pelo Realismo. No entanto, há poetas que transitam entre Romantismo tardio e Realismo nascente, abordando temas sociais com linguagem ainda romântica.\n\nAs características incluem: preocupação com injustiças sociais, defesa de ideais libertários, uso da poesia como instrumento de transformação social, linguagem mais objetiva (transição para Realismo), e abandono gradual de temas individualistas em favor de causas coletivas. O amor deixa de ser tema central; surgem poemas sobre escravidão, miséria, exploração.\n\nEm Portugal, o Realismo chegará vigorosamente na década de 1870 com a Questão Coimbrã e a Geração de 70, fazendo crítica contundente aos excessos românticos. Eça de Queirós, embora realista, iniciou produzindo textos ainda marcados por influência romântica. A transição entre Romantismo e Realismo não é abrupta, mas processual, com autores apresentando características de ambos os movimentos."
+        },
+        {
+          "titulo": "Características do Romantismo",
+          "conteudo": "O Romantismo é movimento cultural que dominou a Europa e Américas entre finais do século XVIII e meados do século XIX, representando oposição ao Neoclassicismo/Arcadismo. Surge em contexto de transformações: Revolução Francesa (1789), ascensão da burguesia, nacionalismos, industrialização e consolidação do capitalismo.\n\nAs características fundamentais incluem: subjetivismo (valorização das emoções individuais, expressão do 'eu'), idealização (amor, mulher, pátria, natureza vistos de forma idealizada), escapismo (fuga da realidade através do passado histórico, exotismo, fantasia), nacionalismo (valorização da identidade nacional, língua, folclore, história), e sentimentalismo (expressão intensa de emoções, valorização do sofrimento).\n\nO herói romântico é solitário, incompreendido, marginalizado, sofredor, frequentemente em conflito com sociedade e normas. Pode ser medievalizado (cavaleiro), indianista (no Brasil), byroniano (rebelde satânico) ou social (defensor de causas coletivas), dependendo da geração. A natureza romântica reflete estados emocionais do poeta: tempestades expressam angústia, primavera simboliza esperança.\n\nO Romantismo valoriza originalidade, genialidade individual, liberdade formal (rompendo com formas fixas neoclássicas), e autenticidade emocional. A linguagem pode ser excessiva, hiperbólica, melodramática. Temas recorrentes: amor impossível, morte, solidão, nostalgia, nacionalismo, natureza, medievalismo. No Romantismo português, é forte a influência do sebastianismo (crença no retorno de D. Sebastião que salvaria Portugal), refletindo saudosismo e nacionalismo típicos do movimento."
+        }
+      ],
+      "exemplos": [
+        "Garrett: 'Viagens na Minha Terra' - narrativa híbrida com ironia e crítica social",
+        "Camilo: 'Amor de Perdição' - amor impossível, destino trágico, melodrama",
+        "Romantismo: idealização do amor, natureza como reflexo de emoções",
+        "Ultrarromantismo: pessimismo extremo, satanismo, morte, sofrimento"
+      ],
+      "dicas": [
+        "1ª geração = medievalismo, nacionalismo (Garrett); 2ª = ultrarromantismo (Camilo)",
+        "'Amor de Perdição' = amor impossível + rivalidade familiar + morte trágica",
+        "Romantismo = subjetivismo, idealização, nacionalismo, sentimentalismo",
+        "No ENEM: identifique idealizações, expressão emocional intensa, nacionalismo"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Leia o trecho:\n\n'Amava aquela mulher com o fanatismo da primeira paixão; é dizer, amava-a com toda a cegueira do coração, nenhuma do espírito. Tinha vinte e cinco anos, e não amara até àquele tempo. A sua condição era uma situação perigosa de rebentar em loucura, se lha contrariassem violentamente.'\n\n(Camilo Castelo Branco, 'Amor de Perdição', adaptado)\n\nO fragmento apresenta características ultrarromânticas:",
+          "alternativas": {
+            "A": "Racionalidade extrema e controle emocional na descrição do sentimento amoroso",
+            "B": "Paixão intensa, 'fanatismo', 'cegueira', risco de 'loucura' - amor hiperbólico",
+            "C": "Crítica social objetiva às instituições familiares burguesas portuguesas",
+            "D": "Idealização serena da natureza como refúgio dos conflitos amorosos",
+            "E": "Linguagem coloquial simples adequada ao realismo literário nascente"
+          },
+          "correta": "B",
+          "explicacao": "O trecho apresenta características ultrarromânticas: 1) Paixão descrita como 'fanatismo' (termo religioso aplicado ao amor, hiperbólico); 2) 'Cegueira do coração', nenhuma do espírito' (domínio total da emoção sobre razão); 3) Primeira paixão aos 25 anos (intensificação dramática); 4) Risco de 'rebentar em loucura' se contrariado (amor como força destrutiva, patológica); 5) 'Situação perigosa' (dramatização). O ultrarromantismo exacerba características românticas: amor não é apenas ideal, mas obsessão; não é apenas sentimento, mas possível insanidade. Não há racionalidade nem controle emocional; não é crítica social objetiva (é expressão de paixão); não idealiza natureza; e a linguagem é romântica, não realista.",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "ultrarromantismo", "camilo"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Leia o fragmento:\n\n'Quem não viu Lisboa, não viu coisa boa. Esta sentença é de um grande filósofo, que era meu cunhado; e, posto que às vezes filosofasse a seu modo, nesta ocasião disse uma grande verdade: quem não viu Lisboa não viu coisa boa. Há em Lisboa duas cidades diferentes e inimigas: uma é a cidade velha, a verdadeira, a que tem fisionomia portuguesa; outra é a nova, a que quer ser francesa, a que morre de inveja à outra.'\n\n(Garrett, 'Viagens na Minha Terra', adaptado)\n\nA abordagem de Garrett revela:",
+          "alternativas": {
+            "A": "Objetividade científica realista na descrição urbana de Lisboa",
+            "B": "Nacionalismo romântico e crítica à imitação de modelos estrangeiros",
+            "C": "Pessimismo ultrarromântico sobre impossibilidade de felicidade nacional",
+            "D": "Racionalismo árcade celebrando progresso e modernização urbana",
+            "E": "Desinteresse completo por questões nacionais e culturais portuguesas"
+          },
+          "correta": "B",
+          "explicacao": "O trecho expressa nacionalismo romântico típico de Garrett: 1) Exaltação de Lisboa (capital como símbolo da nação); 2) Valorização da 'cidade velha', 'verdadeira', com 'fisionomia portuguesa' (autenticidade nacional); 3) Crítica à 'cidade nova' que 'quer ser francesa' (imitação de modelos estrangeiros, perda de identidade); 4) Oposição entre autêntico/nacional e imitado/estrangeiro. O Romantismo português buscava afirmar identidade cultural própria contra influências neoclássicas francesas. O tom não é científico/realista (é opinativo, subjetivo); não é pessimismo ultrarromântico (é crítica construtiva nacionalista); não celebra modernização quando esta implica perda de identidade; e demonstra profundo interesse por questões nacionais.",
+          "dificuldade": "medio",
+          "tags": ["romantismo", "garrett", "nacionalismo"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Leia o texto:\n\n'Teresa respondeu com altivez:\n- Meu pai manda-me dizer que recuse as suas cartas, e eu as recuso. Não lho leve a mal; não posso desobedecer a meu pai.\n\nSimão, ferido no melhor do seu orgulho, respondeu:\n- Não esperava isto de V. Exa. Julgava que o coração de uma senhora podia mais que a tirania de um pai injusto.'\n\n(Camilo Castelo Branco, 'Amor de Perdição', adaptado)\n\nO conflito apresentado é característico do Romantismo porque:",
+          "alternativas": {
+            "A": "Expressa racionalidade iluminista na resolução de conflitos familiares",
+            "B": "Apresenta oposição entre sentimento individual e autoridade patriarcal",
+            "C": "Demonstra aceitação serena das convenções sociais estabelecidas",
+            "D": "Propõe solução conciliatória equilibrada entre amor e dever filial",
+            "E": "Satiriza costumes amorosos sem envolvimento emocional do narrador"
+          },
+          "correta": "B",
+          "explicacao": "O conflito é tipicamente romântico: oposição entre sentimento individual (amor de Teresa e Simão) e autoridade patriarcal/convenções sociais (obediência ao pai que proíbe o relacionamento). Simão acusa o pai de 'tirania' e 'injustiça', contrapondo 'coração' à obediência forçada. Teresa está dividida entre amor e dever filial. O Romantismo valoriza sentimento individual contra normas sociais restritivas, frequentemente culminando em tragédia quando indivíduo não consegue realizar-se. Não há racionalidade iluminista (há paixão); não há aceitação serena (há revolta); não há solução conciliatória (o romance termina tragicamente); e não há sátira distanciada (há envolvimento emocional intenso).",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "camilo", "conflito-individual-social"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Compare os trechos:\n\nTexto I (Arcadismo - Bocage): 'Olha, Marília, as flautas dos pastores / Que bem que soam, como estão cadentes! / Olha o Tejo a sorrir-se!'\n\nTexto II (Romantismo - Garrett): 'Onde estás tu, meu bem, minha esperança? / Por que te afastaste de mim? / Oh! crueldade do destino que nos separa! / Minh'alma chora tua ausência!'\n\nA diferença fundamental na abordagem dos sentimentos está em:",
+          "alternativas": {
+            "A": "O Texto I expressa sofrimento intenso; Texto II, serenidade contemplativa",
+            "B": "O Texto I é objetivo e científico; Texto II é filosófico e racional",
+            "C": "O Texto I apresenta contemplação serena; Texto II, expressão passional intensa",
+            "D": "Ambos apresentam idêntica abordagem emocional sem diferenças significativas",
+            "E": "O Texto I é romântico; Texto II é árcade"
+          },
+          "correta": "C",
+          "explicacao": "O Texto I (árcade) apresenta contemplação serena da natureza e prazeres simples, com tom tranquilo, equilibrado, convidativo ('Olha'). O Texto II (romântico) expressa paixão intensa, sofrimento pela ausência do ser amado, com exclamações dramáticas, linguagem emotiva ('Oh! crueldade!', 'Minh'alma chora'), subjetivismo exacerbado. A diferença está na intensidade emocional: Arcadismo valoriza equilíbrio, serenidade, razão, simplicidade; Romantismo valoriza expressão intensa de emoções, subjetivismo, sofrimento, dramaticidade. As alternativas A e E invertem as características; B está incorreta porque nenhum dos textos é objetivo/científico; D nega as diferenças evidentes.",
+          "dificuldade": "medio",
+          "tags": ["arcadismo", "romantismo", "comparacao"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Leia o trecho:\n\n'E o amante, ferido de morte pela mão do rival, caiu dizendo: \"Teresa, morro por ti!\"\nE ela, ao saber da morte do amado, retirou-se para o convento, onde definhou até morrer, consumida pela dor.\nE Mariana, a criada fiel que amava secretamente Simão, morreu também, jogando-se ao mar quando soube da morte dele no navio que o levava degredado.'\n\n(Resumo de 'Amor de Perdição', adaptado)\n\nA estrutura narrativa apresenta características ultrarromânticas:",
+          "alternativas": {
+            "A": "Final feliz com casamento dos protagonistas e integração social",
+            "B": "Morte trágica múltipla: amor impossível, destino cruel, melodrama",
+            "C": "Resolução racional dos conflitos através de diálogo e compreensão mútua",
+            "D": "Crítica social realista objetiva às instituições portuguesas do século XIX",
+            "E": "Celebração otimista do triunfo do amor sobre obstáculos sociais"
+          },
+          "correta": "B",
+          "explicacao": "O desfecho exemplifica o ultrarromantismo: 1) Morte trágica múltipla (Simão, Teresa, Mariana - todos morrem); 2) Amor impossível que não se realiza; 3) Destino cruel e inexorável; 4) Melodrama (excessos sentimentais, frases dramáticas como 'morro por ti'); 5) Morte por amor em suas diversas manifestações (assassinato, definhamento, suicídio). O ultrarromantismo exacerba características românticas, frequentemente culminando em tragédias múltiplas. Não há final feliz nem integração social; não há resolução racional (há paixão e morte); não é crítica realista objetiva (é narrativa sentimental); e não celebra triunfo do amor (o amor é destruído pelo destino e convenções sociais).",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "ultrarromantismo", "camilo", "tragedia"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Realismo, Naturalismo e Simbolismo",
+      "resumo": "Eça de Queirós e o Realismo português; transição para o Simbolismo no final do século XIX.",
+      "topicos": [
+        {
+          "titulo": "Eça de Queirós e o Realismo Português",
+          "conteudo": "José Maria Eça de Queirós (1845-1900) é o maior romancista português e principal representante do Realismo lusitano. Membro da Geração de 70 (grupo de intelectuais que promoveu transformações culturais em Portugal), Eça combateu o Romantismo nas famosas Conferências do Casino (1871) e defendeu literatura engajada, crítica e comprometida com análise social.\n\nO Realismo de Eça caracteriza-se por observação detalhada da sociedade portuguesa, crítica feroz à burguesia, ao clero, à monarquia e às instituições, linguagem objetiva mas artisticamente elaborada, análise psicológica profunda dos personagens, e ironia refinada que permeia as narrativas. Diferente do Romantismo idealizador, o Realismo busca retratar a realidade como ela é, sem embelezamentos.\n\n'O Crime do Padre Amaro' (1875) inaugura o Realismo português: narra história de padre que mantém relação amorosa com Amélia, engravidando-a, e provocando morte da moça após aborto mal-sucedido. Critica hipocrisia do clero, corrupção religiosa e sociedade provinciana de Leiria. 'O Primo Basílio' (1878) analisa adultério burguês: Luísa, entediada pelo casamento, envolve-se com primo, é chantageada pela criada Juliana, e morre ao final. Critica educação romântica superficial da mulher burguesa.\n\n'Os Maias' (1888) é obra-prima de Eça: saga familiar que acompanha três gerações, centrando-se em Carlos da Maia e seu amor incestuoso involuntário pela irmã Maria Eduarda. Através da família Maia, Eça analisa decadência da aristocracia portuguesa, contrasta geração romântica (Pedro da Maia) com geração realista (Carlos), critica educação, política, cultura e sociedade lusitanas. É romance de espaço (Lisboa) tanto quanto de personagens. A estrutura é complexa, entrelaçando narrativa principal com episódios satíricos (sarau literário, jantar no Hotel Central) que criticam aspectos da sociedade."
+        },
+        {
+          "titulo": "Características do Realismo e Naturalismo",
+          "conteudo": "O Realismo surge na Europa em meados do século XIX como reação ao Romantismo, propondo análise objetiva da sociedade, crítica às instituições, compromisso com transformação social e rejeição da idealização. Influenciado pelo Positivismo (Comte), Determinismo (Taine) e Evolucionismo (Darwin), o Realismo busca explicar comportamento humano através de fatores sociais, históricos e científicos.\n\nAs características do Realismo incluem: objetividade (descrição precisa da realidade), verossimilhança (credibilidade na representação), análise psicológica profunda, crítica social (denúncia de vícios e injustiças), linguagem culta mas acessível, observação detalhista, e temas contemporâneos (burguesia, adultério, hipocrisia, corrupção). O narrador realista é onisciente, observador distanciado que analisa personagens como um cientista.\n\nO Naturalismo radicaliza premissas realistas, influenciado mais diretamente por teorias científicas. Características: determinismo (ser humano determinado por herança genética, meio e momento histórico), zoomorfização (redução do homem a instintos animais), patologia social (sociedade como organismo doente), temas sórdidos (miséria, alcoolismo, prostituição, taras sexuais), e linguagem mais crua. Émile Zola na França e Aluísio Azevedo no Brasil são naturalistas; Eça é realista com momentos naturalistas.\n\nNo ENEM, trechos de Eça aparecem em questões sobre análise de crítica social implícita, identificação de ironia, compreensão do contexto histórico-social português do século XIX, e comparação entre Romantismo (idealização) e Realismo (análise crítica objetiva). É fundamental perceber como Eça utiliza narrativa ficcional para criticar instituições e comportamentos reais."
+        },
+        {
+          "titulo": "Ironia e Crítica Social em Eça",
+          "conteudo": "A ironia é recurso fundamental na obra de Eça de Queirós. Diferente da crítica direta e panfletária, a ironia é sutil, elegante, frequentemente bem-humorada, permitindo que o leitor perceba a crítica através do contraste entre o que é dito e o que é implicitamente sugerido. Eça domina a arte de criticar sem brutalidade, usando refinamento linguístico para denunciar mediocridade.\n\nEm 'Os Maias', o sarau no teatro é exemplo magistral: Eça descreve poema ultrarromântico recitado com entusiasmo pela poetisa Tomásia, poema terrível ('A Tomada da Bastilha' ou 'Os pombinhos'), que o público educado romanticamente considera sublime. A descrição irônica revela ridículo da cena sem afirmá-lo diretamente. Carlos e Ega riem discretamente, representando visão realista que percebe o absurdo.\n\nA crítica social atinge todas as classes: burguesia (superficial, materialista, hipócrita), aristocracia (decadente, ociosa, sem propósito), clero (corrupto, imoral, explorador), instituições políticas (ineficientes, corruptas), educação (superficial, livresca, desconectada da realidade), e cultura portuguesa (imitadora, sem originalidade, provinciana). Eça é implacável, mas seu objetivo é reformista: criticar para transformar.\n\nOs personagens queirosianos são tipos sociais representativos: Padre Amaro representa clero corrupto; Luísa representa mulher burguesa mal-educada pelo Romantismo; Juliana representa revolta dos oprimidos que se torna vingativa; Carlos da Maia representa geração talentosa mas ociosa que desperdiça potencial. Através dos indivíduos, Eça analisa estruturas sociais, revelando como sociedade molda comportamentos."
+        },
+        {
+          "titulo": "Simbolismo: Antítese do Realismo",
+          "conteudo": "O Simbolismo surge no final do século XIX (1880-1890) como reação ao Realismo-Naturalismo materialista e científico. Enquanto realistas buscam objetividade e análise racional, simbolistas valorizam subjetividade, intuição, sugestão, mistério e transcendência. É movimento que retoma características românticas mas com linguagem e sensibilidade novas.\n\nEm Portugal, o Simbolismo não teve expressão tão forte quanto na França (Baudelaire, Verlaine, Rimbaud, Mallarmé) ou no Brasil (Cruz e Sousa, Alphonsus de Guimaraens). Eugénio de Castro foi principal poeta simbolista português, introduzindo o movimento com 'Oaristos' (1890). António Nobre, com 'Só' (1892), apresenta poesia melancólica e saudosista que dialoga com Simbolismo.\n\nAs características simbolistas incluem: musicalidade (aliterações, assonâncias, ritmo), sinestesia (fusão de sensações: 'perfume azul', 'som aveludado'), sugestão (não descrever diretamente mas sugerir, evocar), misticismo e espiritualidade, uso de símbolos e metáforas complexas, linguagem hermética, e temas como angústia existencial, busca do absoluto, morte. A pontuação é diferenciada, versos livres ou brancos aparecem.\n\nO Simbolismo é menos relevante no ENEM comparado a Realismo ou Modernismo, mas pode aparecer em questões sobre características contrastantes (Realismo objetivo x Simbolismo subjetivo), análise de recursos sonoros (aliterações, assonâncias) e interpretação de linguagem sugestiva e simbólica. É importante reconhecer que Simbolismo representa ruptura com materialismo científico do Realismo, retomando valores espirituais e subjetivos."
+        }
+      ],
+      "exemplos": [
+        "Eça: 'O Crime do Padre Amaro' - hipocrisia clerical, relação proibida",
+        "Eça: 'Os Maias' - decadência aristocrática, crítica à sociedade lisboeta",
+        "Ironia: Descrição de sarau literário ridículo sem crítica direta",
+        "Simbolismo: musicalidade, sinestesia, sugestão, misticismo"
+      ],
+      "dicas": [
+        "Realismo = objetividade, crítica social, análise psicológica, verossimilhança",
+        "Eça critica burguesia, clero, aristocracia e instituições através de ironia",
+        "Naturalismo radicaliza Realismo: determinismo, zoomorfização, temas sórdidos",
+        "Simbolismo = reação ao Realismo, subjetividade, musicalidade, sugestão"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Leia o trecho:\n\n'Luísa crescera num meio de raparigas exaltadas e romanescas. Alimentava-se de romances, suspirava por amores impossíveis. Casara-se com Jorge, homem honesto mas medíocre, e levava vida monótona. Quando apareceu Basílio, primo elegante recém-chegado do Brasil, Luísa viu nele realização dos sonhos românticos que os folhetins haviam posto em sua imaginação.'\n\n(Adaptado de 'O Primo Basílio')\n\nA crítica social implícita no fragmento dirige-se a:",
+          "alternativas": {
+            "A": "Celebração da educação romântica sentimental das mulheres burguesas",
+            "B": "Educação superficial feminina baseada em romances folhetinescos",
+            "C": "Defesa da liberdade amorosa feminina contra casamentos arranjados",
+            "D": "Exaltação dos valores românticos de amor idealizado e paixão",
+            "E": "Valorização da fidelidade conjugal sem questionar suas causas"
+          },
+          "correta": "B",
+          "explicacao": "Eça critica a educação superficial da mulher burguesa do século XIX, baseada em romances folhetinescos que criavam expectativas irrealistas ('amores impossíveis', 'sonhos românticos'). Luísa é produto dessa educação: despreparada para realidade matrimonial, busca nos romances escapismo que a leva ao adultério quando aparece figura que corresponde aos ideais folhetinescos (Basílio 'elegante'). A crítica não celebra nem defende essa educação; não exalta valores românticos (ironiza-os); e não se limita a valorizar fidelidade sem analisar causas da infidelidade (analisa justamente as causas sociais). É crítica realista típica de Eça: analisar como estruturas sociais (educação inadequada) produzem comportamentos (adultério).",
+          "dificuldade": "medio",
+          "tags": ["realismo", "eca", "critica-social"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Leia o fragmento:\n\n'O Padre Amaro era um homem vigoroso e sensual. Reprimira durante anos seus instintos sob sotaina, mas quando conheceu Amélia, moça inocente e devota, cedeu à tentação. Mantiveram relação secreta, escondida sob aparência de direção espiritual. Quando Amélia engravidou, Amaro arranjou aborto clandestino que causou morte da moça. Ao final, Amaro seguiu carreira clerical normalmente, imperturbado pelo crime.'\n\n(Resumo de 'O Crime do Padre Amaro', adaptado)\n\nO romance critica:",
+          "alternativas": {
+            "A": "Apenas comportamento individual de um padre específico sem generalização",
+            "B": "Hipocrisia institucional da Igreja que encobre crimes e protege clérigos",
+            "C": "Doutrina católica em seus fundamentos teológicos essenciais",
+            "D": "Exclusivamente a fraqueza moral feminina representada por Amélia",
+            "E": "A sociedade por punir excessivamente padres que cometem erros"
+          },
+          "correta": "B",
+          "explicacao": "O romance critica não apenas Padre Amaro individual, mas a hipocrisia institucional da Igreja: Amaro usa posição religiosa para seduzir (sob pretexto de 'direção espiritual'), comete crimes (sedução, relação proibida, aborto, morte indireta), e não sofre consequências porque a instituição protege seus membros ('seguiu carreira normalmente'). É crítica estrutural, não individual. Eça não ataca doutrina teológica católica, mas corrupção institucional e moral do clero português do século XIX. Não culpabiliza exclusivamente Amélia (vítima de Amaro); não sugere que sociedade pune excessivamente (ao contrário, denuncia impunidade). É crítica anticlerical típica do Realismo.",
+          "dificuldade": "medio",
+          "tags": ["realismo", "eca", "critica-clerical"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Compare os trechos:\n\nTexto I (Romântico): 'Simão amava Teresa com paixão delirante, que o consumia dia e noite. Era amor impossível, contrariado pelas famílias, mas sublime em sua intensidade e pureza.'\n\nTexto II (Realista - Eça): 'Luísa imaginava amar Basílio; na verdade, amava a novidade, o romance, a aventura que os folhetins haviam ensinado. Não era amor, era tédio burguês buscando entretenimento.'\n\nA diferença fundamental na abordagem do amor está em:",
+          "alternativas": {
+            "A": "O Texto I analisa criticamente; Texto II idealiza romanticamente",
+            "B": "O Texto I idealiza o amor; Texto II analisa objetivamente suas motivações sociais",
+            "C": "Ambos idealizam igualmente o sentimento amoroso",
+            "D": "O Texto I é realista; Texto II é romântico",
+            "E": "Não há diferença significativa entre as abordagens"
+          },
+          "correta": "B",
+          "explicacao": "O Texto I (romântico) idealiza o amor: 'paixão delirante', 'amor impossível', 'sublime'. Apresenta amor como sentimento puro, intenso, transcendente, sem análise crítica das motivações. O Texto II (realista) desmistifica: o que Luísa 'imaginava' ser amor era na verdade produto de 'tédio burguês' e educação folhetinesca inadequada. Eça não aceita sentimento pelo valor de face, mas analisa causas sociais e psicológicas. Romantismo idealiza; Realismo analisa criticamente. As alternativas A e D invertem as caracterizações; C e E negam as diferenças evidentes. É contraste fundamental entre movimentos literários.",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "realismo", "comparacao"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Leia o trecho:\n\n'No sarau, Tomásia recitou seu poema com voz trêmula de emoção: \"Ó tu, pomba cândida e pura, / Que voas sobre o vale ameno, / Leva minh'alma à formosura / Do céu sereno, sempre sereno!\" O público aplaudiu entusiasticamente. Apenas Carlos e Ega trocaram olhar discreto, sorrindo imperceptivelmente.'\n\n(Adaptado de 'Os Maias')\n\nA ironia de Eça constrói-se através de:",
+          "alternativas": {
+            "A": "Crítica direta explícita à má qualidade do poema romântico",
+            "B": "Contraste entre entusiasmo do público e reação discreta de Carlos/Ega",
+            "C": "Elogio sincero à beleza da poesia romântica sentimental",
+            "D": "Ausência de posicionamento narrativo sobre a cena descrita",
+            "E": "Celebração dos valores estéticos do Romantismo tardio português"
+          },
+          "correta": "B",
+          "explicacao": "A ironia queirosiana é sutil: Eça não afirma diretamente que o poema é ruim, mas constrói contraste entre público entusiasta (educado romanticamente, sem senso crítico) e Carlos/Ega (representando visão realista) que 'trocaram olhar discreto, sorrindo imperceptivelmente'. O sorriso discreto revela ridicularização, mas sem brutalidade. O leitor percebe que o poema ('pomba cândida', 'vale ameno', clichês românticos) é ruim exatamente porque o público acha maravilhoso. Não há crítica explícita direta (seria panfleto, não ironia); não há elogio sincero; não há ausência de posicionamento (há, mas implícito); e não celebra Romantismo (ridiculariza seus excessos).",
+          "dificuldade": "dificil",
+          "tags": ["realismo", "eca", "ironia"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Leia o texto:\n\n'Ó formas alvas, brancas, Formas claras\nDe luares, de neves, de neblinas!\nÓ formas vagas, fluidas, cristalinas...\nIncensos dos turíbulos das aras...'\n\n(Cruz e Sousa - poeta simbolista brasileiro)\n\nAs características simbolistas evidentes são:",
+          "alternativas": {
+            "A": "Objetividade realista e descrição precisa de elementos concretos",
+            "B": "Musicalidade, aliterações, sinestesias e linguagem sugestiva vaga",
+            "C": "Crítica social direta às instituições políticas brasileiras",
+            "D": "Narrativa cronológica de acontecimentos históricos relevantes",
+            "E": "Linguagem coloquial simples adequada ao público popular"
+          },
+          "correta": "B",
+          "explicacao": "O texto apresenta características simbolistas: 1) Musicalidade intensa (aliteração em 'f': 'formas', 'fluidas'; assonância em 'a': 'alvas', 'claras'); 2) Sinestesias implícitas (sensações visuais misturadas com olfativas: 'Incensos'); 3) Linguagem sugestiva, vaga, não descritiva concreta ('vagas, fluidas, cristalinas'); 4) Imagens etéreas, espirituais (luares, neves, neblinas, incensos); 5) Adjetivação abundante criando atmosfera, não objetividade. Não há objetividade realista (há sugestão); não há crítica social; não há narrativa cronológica; e a linguagem é hermética, elaborada, não coloquial. É antítese do Realismo objetivo.",
+          "dificuldade": "facil",
+          "tags": ["simbolismo", "musicalidade", "sugestao"]
+        }
+      ]
+    }
+  ]
+}

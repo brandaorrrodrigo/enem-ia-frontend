@@ -1,0 +1,207 @@
+{
+  "id": "filosofia-contemporanea",
+  "titulo": "Filosofia Contemporanea",
+  "descricao": "Criticas a modernidade, desconstrucao e novos paradigmas filosoficos",
+  "icone": "🌐",
+  "cor": "from-pink-500 to-purple-500",
+  "nivel": "Avancado",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Nietzsche e a Critica aos Valores",
+      "resumo": "Nietzsche questiona os fundamentos da moral ocidental, anuncia a morte de Deus e propoe a transvaloração dos valores.",
+      "topicos": [
+        "A morte de Deus",
+        "Critica a moral crista",
+        "Vontade de potencia",
+        "O super-homem (Ubermensch)",
+        "Eterno retorno"
+      ],
+      "exemplos": [
+        "'Deus esta morto e nos o matamos'",
+        "Moral de senhores x moral de escravos",
+        "O super-homem cria seus proprios valores"
+      ],
+      "dicas": [
+        "Nietzsche critica o platonismo e cristianismo",
+        "Nao confundir super-homem com ideologia nazista",
+        "A morte de Deus significa o fim dos valores absolutos"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A expressao 'Deus esta morto' em Nietzsche significa:",
+          "alternativas": [
+            "A comprovacao cientifica da inexistencia de divindades",
+            "O fim da crenca em valores absolutos e transcendentes na modernidade",
+            "Um ataque pessoal aos crentes religiosos",
+            "A vitoria definitiva da ciencia sobre a religiao",
+            "A defesa do ateismo militante"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Para Nietzsche, 'Deus esta morto' nao e uma afirmacao sobre a existencia divina, mas sobre o fim da autoridade dos valores transcendentes e absolutos na cultura ocidental moderna.",
+          "dificuldade": "media",
+          "tags": ["nietzsche", "morte-deus", "transvaloração"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Foucault e as Relacoes de Poder",
+      "resumo": "Foucault analisa como o poder opera atraves de instituicoes, discursos e praticas disciplinares na sociedade moderna.",
+      "topicos": [
+        "Poder disciplinar e biopoder",
+        "Vigiar e punir: a sociedade disciplinar",
+        "Arqueologia e genealogia do saber",
+        "Relacao saber-poder",
+        "Normalizacao e controle dos corpos"
+      ],
+      "exemplos": [
+        "O Panaptico de Bentham como modelo de vigilancia",
+        "Instituicoes: prisionais, hospitalares, escolares",
+        "O discurso produz verdades e subjetividades"
+      ],
+      "dicas": [
+        "Poder nao e apenas repressivo, mas produtivo",
+        "Foucault influenciou os estudos culturais",
+        "ENEM pode relacionar com instituicoes sociais"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Para Michel Foucault, o poder na sociedade moderna caracteriza-se por:",
+          "alternativas": [
+            "Ser exercido apenas pelo Estado atraves da violencia",
+            "Estar concentrado nas maos de uma unica classe social",
+            "Operar de forma difusa atraves de praticas disciplinares e normalizacao",
+            "Inexistir nas sociedades democraticas",
+            "Ser sempre visivel e facilmente identificavel"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Foucault mostra que o poder moderno nao e apenas repressivo e centralizado, mas opera de forma capilar atraves de instituicoes, disciplinas e discursos que normalizam e controlam os individuos.",
+          "dificuldade": "media",
+          "tags": ["foucault", "poder", "disciplina"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Escola de Frankfurt e Teoria Critica",
+      "resumo": "A Escola de Frankfurt desenvolve uma critica radical da sociedade capitalista, da industria cultural e da razao instrumental.",
+      "topicos": [
+        "Razao instrumental x razao emancipatoria",
+        "Industria cultural (Adorno e Horkheimer)",
+        "Dialetica do Esclarecimento",
+        "Teoria Critica da sociedade",
+        "Habermas e a acao comunicativa"
+      ],
+      "exemplos": [
+        "A cultura vira mercadoria padronizada",
+        "O Iluminismo gerou novas formas de dominacao",
+        "Midia e entretenimento manipulam as massas"
+      ],
+      "dicas": [
+        "Critica ao capitalismo e ao totalitarismo",
+        "Industria cultural aliena e homogeniza",
+        "ENEM cobra relacao entre cultura e consumo"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "O conceito de 'industria cultural' de Adorno e Horkheimer refere-se a:",
+          "alternativas": [
+            "O incentivo a producao artistica independente e criativa",
+            "A democratizacao do acesso a cultura erudita",
+            "A transformacao da cultura em mercadoria padronizada e manipuladora",
+            "O apoio estatal as manifestacoes culturais populares",
+            "A valorizacao da diversidade cultural"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A industria cultural transforma arte e cultura em mercadorias padronizadas, produzidas em massa para consumo, gerando alienacao e manipulacao das consciencias ao inves de emancipacao.",
+          "dificuldade": "media",
+          "tags": ["escola-frankfurt", "industria-cultural", "adorno"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Arendt e a Filosofia Politica",
+      "resumo": "Hannah Arendt analisa o totalitarismo, a condicao humana e resgata o conceito de acao politica como espaco da liberdade.",
+      "topicos": [
+        "Origens do totalitarismo",
+        "A banalidade do mal",
+        "Vita activa: labor, trabalho, acao",
+        "Espaco publico e politica",
+        "Condicao humana"
+      ],
+      "exemplos": [
+        "O julgamento de Eichmann e o mal banal",
+        "Totalitarismo destroi a pluralidade humana",
+        "Acao politica = espaco da liberdade e novidade"
+      ],
+      "dicas": [
+        "Arendt viveu os horrores do nazismo",
+        "Banalidade do mal: mal cometido sem reflexao",
+        "Politica e acao entre iguais no espaco publico"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "O conceito de 'banalidade do mal' de Hannah Arendt sugere que:",
+          "alternativas": [
+            "O mal e sempre extraordinario e demoniaco",
+            "Grandes atrocidades podem ser cometidas por pessoas comuns sem reflexao critica",
+            "O mal nao existe realmente, e apenas uma ilusao",
+            "Apenas pessoas geneticamente mas podem cometer crimes",
+            "O mal e justificavel em certas circunstancias"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Arendt percebeu, ao analisar Eichmann, que grandes males podem ser cometidos por pessoas comuns que apenas 'cumprem ordens' sem reflexao, tornando o mal banal e ordinario.",
+          "dificuldade": "facil",
+          "tags": ["arendt", "banalidade-mal", "totalitarismo"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Pensamento Pos-Moderno",
+      "resumo": "O pos-modernismo questiona as metanarrativas, a verdade absoluta e propoe multiplas perspectivas e desconstrucao.",
+      "topicos": [
+        "Lyotard e o fim das metanarrativas",
+        "Derrida e a desconstrucao",
+        "Baudrillard e o simulacro",
+        "Critica a razao moderna",
+        "Fragmentacao e pluralidade"
+      ],
+      "exemplos": [
+        "Fim das grandes narrativas de emancipacao",
+        "Desconstrucao: revelar contradicoes nos textos",
+        "Hiper-realidade: copia sem original"
+      ],
+      "dicas": [
+        "Pos-modernismo questiona certezas modernas",
+        "Valoriza diferenca, pluralidade, relativismo",
+        "ENEM pode explorar critica a verdades unicas"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "A condicao pos-moderna, segundo Lyotard, caracteriza-se por:",
+          "alternativas": [
+            "A crenca absoluta no progresso cientifico",
+            "O retorno as tradicoes pre-modernas",
+            "A incredulidade em relacao as metanarrativas totalizantes",
+            "A defesa de uma unica verdade universal",
+            "A rejeicao completa da ciencia e tecnologia"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Lyotard define a pos-modernidade como incredulidade em relacao as metanarrativas (grandes relatos de emancipacao da humanidade), valorizando narrativas locais e pluralidade.",
+          "dificuldade": "media",
+          "tags": ["lyotard", "pos-modernidade", "metanarrativas"]
+        }
+      ]
+    }
+  ]
+}

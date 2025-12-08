@@ -1,0 +1,575 @@
+{
+  "id": "geografia-geral",
+  "slug": "geografia-geral",
+  "titulo": "Geografia Geral",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "Geopolítica mundial, globalização, questões ambientais e dinâmicas territoriais globais",
+  "icone": "Globe",
+  "cor": "#10B981",
+  "tempoEstimado": "8 horas",
+  "fpRecompensa": 0,
+  "tags": ["Geografia", "Geopolítica", "Globalização", "Meio Ambiente", "ENEM"],
+  "modulos": [
+    {
+      "id": "modulo01",
+      "titulo": "Globalização e Ordem Mundial",
+      "resumo": "Compreensão dos processos de globalização e a nova ordem geopolítica mundial",
+      "topicos": [
+        {
+          "titulo": "Conceito e Fases da Globalização",
+          "conteudo": "A globalização é o processo de integração econômica, social, cultural e política em escala mundial, intensificado a partir da segunda metade do século XX. Esse fenômeno está diretamente relacionado ao desenvolvimento tecnológico, especialmente nas áreas de comunicação e transporte, que permitiram maior fluidez nas relações entre diferentes países e regiões do planeta.\n\nPodemos identificar diferentes fases da globalização ao longo da história. A primeira fase ocorreu durante as Grandes Navegações (séculos XV-XVI), quando europeus estabeleceram rotas comerciais intercontinentais. A segunda fase relaciona-se à Revolução Industrial (século XIX), com a expansão do capitalismo industrial. A terceira e atual fase iniciou-se após a Segunda Guerra Mundial, intensificando-se nas décadas de 1980-1990 com a revolução tecnológica e informacional, a queda do Muro de Berlim e o fim da Guerra Fria.\n\nNo contexto contemporâneo, a globalização caracteriza-se pela formação de blocos econômicos, empresas transnacionais com atuação global, rápida circulação de capitais financeiros, difusão cultural através da internet e mídias digitais, e interdependência econômica entre países. Para o ENEM, é fundamental compreender tanto os aspectos positivos (acesso à informação, integração cultural, desenvolvimento tecnológico) quanto os negativos (desigualdades, dependência econômica, homogeneização cultural) desse processo."
+        },
+        {
+          "titulo": "Nova Ordem Mundial Pós-Guerra Fria",
+          "conteudo": "A queda do Muro de Berlim em 1989 e o colapso da União Soviética em 1991 marcaram o fim da ordem bipolar (EUA x URSS) que caracterizou a Guerra Fria. Esse evento histórico deu origem a uma nova configuração geopolítica mundial, inicialmente caracterizada pela unipolaridade, com os Estados Unidos como única superpotência global.\n\nNo entanto, nas primeiras décadas do século XXI, observamos a emergência de uma ordem multipolar, com novos centros de poder disputando influência global. A China consolidou-se como potência econômica e tecnológica, a União Europeia formou um bloco político-econômico significativo, e países emergentes como Índia, Brasil e Rússia ganharam relevância no cenário internacional. Essa multipolaridade também se manifesta através de organizações como os BRICS e do fortalecimento de instituições regionais.\n\nA nova ordem mundial caracteriza-se por conflitos de diferentes naturezas: disputas territoriais (Crimeia, Taiwan), guerras por recursos naturais, terrorismo internacional, questões migratórias e tensões comerciais. O poder militar, embora ainda relevante, divide espaço com o poder econômico, tecnológico e cultural como elementos definidores da influência geopolítica. Para o ENEM, é importante relacionar esses processos com conceitos como hegemonia, soberania nacional e interdependência global."
+        },
+        {
+          "titulo": "Blocos Econômicos e Integração Regional",
+          "conteudo": "Os blocos econômicos são associações de países que estabelecem acordos para facilitar o comércio e a integração econômica regional. Esses agrupamentos representam uma característica marcante da globalização contemporânea e surgem como estratégia para fortalecer as economias nacionais frente à competição global. Existem diferentes níveis de integração: zona de livre comércio, união aduaneira, mercado comum e união econômica e monetária.\n\nEntre os principais blocos econômicos, destacam-se: a União Europeia (UE), exemplo mais avançado de integração com moeda única (euro) e livre circulação de pessoas; o NAFTA/USMCA (Estados Unidos, México e Canadá), focado em livre comércio; o Mercosul (América do Sul), em processo de consolidação; a ASEAN (Sudeste Asiático), representando economias emergentes dinâmicas; e acordos bilaterais ou regionais em constante formação.\n\nOs blocos econômicos geram vantagens como aumento do fluxo comercial entre membros, atração de investimentos, fortalecimento da economia regional e maior poder de negociação no cenário internacional. Por outro lado, podem criar dependência econômica, assimetrias entre membros mais e menos desenvolvidos, e barreiras protecionistas contra países externos. O ENEM frequentemente aborda questões sobre integração regional na América Latina, especialmente o Mercosul, e os desafios da globalização para economias em desenvolvimento."
+        },
+        {
+          "titulo": "Organismos Internacionais",
+          "conteudo": "Os organismos internacionais são instituições criadas por acordos entre países com objetivos específicos relacionados à cooperação política, econômica, social ou ambiental. Essas organizações desempenham papel fundamental na governança global, estabelecendo normas, mediando conflitos e promovendo o desenvolvimento. Surgiram principalmente após a Segunda Guerra Mundial, com a criação da ONU em 1945.\n\nA Organização das Nações Unidas (ONU) é o principal organismo internacional, com objetivos de manter a paz mundial, promover direitos humanos e fomentar o desenvolvimento. Possui diversos órgãos especializados: Conselho de Segurança (decisões sobre conflitos), Assembleia Geral (todos os membros), UNESCO (educação e cultura), UNICEF (crianças), OMS (saúde), entre outros. Além da ONU, existem instituições financeiras como FMI (Fundo Monetário Internacional) e Banco Mundial, e organizações comerciais como a OMC (Organização Mundial do Comércio).\n\nEstes organismos enfrentam desafios contemporâneos como a necessidade de reforma do Conselho de Segurança da ONU (que reflete a correlação de forças de 1945), questionamentos sobre a efetividade de suas ações em conflitos atuais, tensões entre soberania nacional e intervenções humanitárias, e críticas sobre a influência de países desenvolvidos em suas decisões. Para o ENEM, é essencial compreender tanto o papel histórico quanto as limitações dessas instituições na resolução de problemas globais."
+        }
+      ],
+      "exemplos": [
+        "A atuação de empresas transnacionais como Apple e Samsung exemplifica a globalização econômica",
+        "A expansão da China na África através de investimentos em infraestrutura demonstra a multipolaridade",
+        "O Brexit (saída do Reino Unido da União Europeia) ilustra tensões na integração regional",
+        "A pandemia de COVID-19 evidenciou tanto a interdependência global quanto as limitações dos organismos internacionais"
+      ],
+      "dicas": [
+        "Relacione sempre globalização com avanços tecnológicos e suas consequências sociais",
+        "Entenda as diferenças entre os níveis de integração dos blocos econômicos",
+        "Memorize os principais organismos da ONU e suas funções específicas",
+        "Conecte eventos históricos (Guerra Fria, 11 de setembro) com mudanças na ordem mundial"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "A globalização é um processo multifacetado que transformou profundamente as relações internacionais nas últimas décadas. Sobre as características da globalização contemporânea, considere as seguintes afirmações:\n\nI. A revolução tecnológica nas comunicações permitiu a instantaneidade das transações financeiras globais.\nII. A globalização cultural levou à completa homogeneização das práticas sociais em todos os países.\nIII. As empresas transnacionais desempenham papel central na integração econômica mundial.\nIV. A interdependência econômica entre países reduziu completamente os conflitos geopolíticos.\n\nEstão corretas apenas as afirmações:",
+          "alternativas": {
+            "A": "I e II",
+            "B": "I e III",
+            "C": "II e IV",
+            "D": "I, II e III",
+            "E": "II, III e IV"
+          },
+          "correta": "B",
+          "explicacao": "A afirmação I está correta porque a revolução tecnológica, especialmente na internet e comunicações, permitiu que transações financeiras ocorram em tempo real globalmente. A afirmação III também está correta, pois empresas transnacionais são agentes centrais da globalização econômica. A afirmação II está incorreta porque a globalização não levou à completa homogeneização cultural - na verdade, observamos também movimentos de resistência e valorização de culturas locais. A afirmação IV está incorreta pois a interdependência econômica não eliminou conflitos geopolíticos, como demonstram tensões comerciais entre EUA e China, conflitos territoriais e guerras contemporâneas.",
+          "dificuldade": "medio",
+          "tags": ["globalização", "economia", "cultura"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Após o fim da Guerra Fria, analistas internacionais debateram sobre a nova configuração do poder mundial. Francis Fukuyama proclamou 'o fim da história', sugerindo a vitória definitiva da democracia liberal. Samuel Huntington previu um 'choque de civilizações' baseado em diferenças culturais e religiosas. Considerando os eventos das últimas três décadas, qual análise melhor caracteriza a ordem mundial contemporânea?",
+          "alternativas": {
+            "A": "Unipolaridade absoluta dos EUA, com ausência de contestação ao seu poder militar e econômico",
+            "B": "Retorno à bipolaridade da Guerra Fria, com nova divisão entre blocos capitalista e socialista",
+            "C": "Multipolaridade emergente, com diversos centros de poder disputando influência regional e global",
+            "D": "Anarquia internacional, sem nenhuma forma de organização ou hierarquia entre os Estados",
+            "E": "Unificação política global sob comando de organismos internacionais supranacionais"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C é correta porque a ordem mundial contemporânea caracteriza-se pela multipolaridade emergente. Embora os EUA mantenham-se como potência relevante, a ascensão da China como potência econômica, o fortalecimento da União Europeia, e a relevância regional de países como Rússia, Índia e Brasil configuram múltiplos centros de poder. A alternativa A está incorreta pois o poder dos EUA é contestado em várias esferas. A alternativa B está errada pois não há retorno à bipolaridade com blocos ideológicos definidos. A alternativa D exagera ao caracterizar como anarquia - existem estruturas de governança. A alternativa E não corresponde à realidade, pois a soberania nacional permanece princípio fundamental.",
+          "dificuldade": "medio",
+          "tags": ["geopolítica", "ordem mundial", "multipolaridade"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "O Mercosul (Mercado Comum do Sul) foi criado em 1991 pelo Tratado de Assunção, visando à integração econômica entre países da América do Sul. Apesar dos objetivos ambiciosos, o bloco enfrenta diversos desafios. Qual das alternativas apresenta corretamente um desafio estrutural do Mercosul?",
+          "alternativas": {
+            "A": "A inexistência de comércio entre os países membros devido às barreiras tarifárias intransponíveis",
+            "B": "As assimetrias econômicas entre os membros, com diferentes níveis de desenvolvimento industrial",
+            "C": "A adoção de moeda única que gerou crise econômica similar à zona do euro",
+            "D": "O isolamento completo do bloco em relação ao comércio com países externos",
+            "E": "A impossibilidade jurídica de livre circulação de mercadorias entre os países membros"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque um dos principais desafios do Mercosul são as assimetrias econômicas entre seus membros. Brasil e Argentina possuem economias industrializadas mais diversificadas, enquanto Paraguai e Uruguai têm economias menores e mais dependentes do setor primário, o que gera desequilíbrios nas relações comerciais e diferentes interesses nas negociações. A alternativa A está incorreta pois existe comércio entre membros, justamente objetivo do bloco. A alternativa C é falsa porque o Mercosul não adotou moeda única. A alternativa D está errada pois os países mantêm comércio externo ao bloco. A alternativa E é incorreta porque a livre circulação de mercadorias é prevista, embora enfrente obstáculos práticos.",
+          "dificuldade": "facil",
+          "tags": ["Mercosul", "blocos econômicos", "América do Sul"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "'A reforma do Conselho de Segurança da ONU é debatida há décadas. O órgão, responsável por decisões sobre paz e segurança internacionais, mantém estrutura definida em 1945, com cinco membros permanentes (EUA, Rússia, China, França e Reino Unido) que possuem poder de veto.'\n\nQual argumento fundamenta a necessidade de reforma dessa estrutura?",
+          "alternativas": {
+            "A": "A configuração atual não representa adequadamente a distribuição de poder e a diversidade geopolítica do século XXI",
+            "B": "Os cinco membros permanentes são países subdesenvolvidos sem relevância no cenário internacional",
+            "C": "A estrutura atual impede completamente qualquer tipo de decisão ou resolução de conflitos",
+            "D": "Todos os países do mundo devem ter direito ao poder de veto nas decisões do Conselho",
+            "E": "O Conselho de Segurança nunca foi efetivo em nenhum momento de sua história"
+          },
+          "correta": "A",
+          "explicacao": "A alternativa A está correta porque o principal argumento para reforma do Conselho de Segurança é que sua composição reflete a correlação de forças de 1945, não representando a realidade geopolítica atual. Países emergentes como Brasil, Índia, África do Sul e Alemanha reivindicam assentos permanentes, argumentando que a diversidade geográfica e econômica contemporânea não está representada. A alternativa B é falsa pois os membros permanentes são potências desenvolvidas. A alternativa C exagera - o Conselho toma decisões, embora limitadas pelo poder de veto. A alternativa D é impraticável e não é proposta por nenhum país. A alternativa E ignora ações bem-sucedidas do Conselho ao longo da história.",
+          "dificuldade": "medio",
+          "tags": ["ONU", "organismos internacionais", "geopolítica"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "A União Europeia representa o exemplo mais avançado de integração regional, tendo evoluído de uma comunidade econômica para uma união política e monetária. No entanto, o bloco enfrenta desafios contemporâneos significativos. Analise as situações a seguir:\n\nI. A crise migratória de 2015, com entrada massiva de refugiados, gerou tensões sobre políticas comuns de imigração.\nII. O Brexit demonstrou tensões entre soberania nacional e integração supranacional.\nIII. As crises econômicas na Grécia evidenciaram problemas da zona do euro para países menos competitivos.\n\nEstas situações ilustram, respectivamente:",
+          "alternativas": {
+            "A": "Problemas inexistentes, pois a UE resolveu perfeitamente todas essas questões",
+            "B": "Desafios humanitários, políticos e econômicos da integração europeia",
+            "C": "Questões exclusivamente econômicas sem dimensão política ou social",
+            "D": "Conflitos militares que ameaçam dissolver completamente a União Europeia",
+            "E": "Consequências diretas da globalização que não afetam especificamente a UE"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque as três situações apresentam diferentes dimensões dos desafios enfrentados pela UE. A crise migratória representa um desafio humanitário e de segurança, com divergências entre países sobre cotas de refugiados. O Brexit ilustra tensões políticas entre a cessão de soberania exigida pela integração e o desejo de autonomia nacional. A crise grega evidencia problemas econômicos da moeda única para países com diferentes níveis de competitividade e desenvolvimento. A alternativa A está incorreta pois esses problemas não foram plenamente resolvidos. A alternativa C reduz indevidamente as questões apenas à economia. A alternativa D exagera - não há conflitos militares. A alternativa E ignora as especificidades da integração europeia.",
+          "dificuldade": "dificil",
+          "tags": ["União Europeia", "integração regional", "desafios contemporâneos"]
+        }
+      ]
+    },
+    {
+      "id": "modulo02",
+      "titulo": "Conflitos e Tensões Internacionais",
+      "resumo": "Principais conflitos contemporâneos, terrorismo internacional e questões geopolíticas estratégicas",
+      "topicos": [
+        {
+          "titulo": "Oriente Médio: Conflitos Históricos e Contemporâneos",
+          "conteudo": "O Oriente Médio é uma das regiões de maior instabilidade geopolítica no mundo contemporâneo, concentrando diversos conflitos de dimensões étnicas, religiosas, territoriais e estratégicas. A importância geopolítica da região está relacionada principalmente às suas reservas de petróleo, sua localização geográfica estratégica (ligação entre três continentes) e seus significados religiosos para judaísmo, cristianismo e islamismo.\n\nO conflito israelo-palestino é um dos mais duradouros e complexos da região. Tem origem na criação do Estado de Israel em 1948, em território historicamente habitado por palestinos. A partilha da Palestina proposta pela ONU gerou guerras entre Israel e países árabes vizinhos, a ocupação de territórios palestinos (Cisjordânia e Gaza) e o deslocamento de milhões de refugiados. As tentativas de solução através de acordos de paz (como Oslo em 1993) não alcançaram resultado definitivo, e a questão permanece como um dos principais impasses da política internacional.\n\nOutros conflitos relevantes incluem: a Guerra do Golfo (1991) e a invasão do Iraque (2003) pelos EUA, com justificativas questionáveis sobre armas de destruição em massa; a Guerra Civil Síria (iniciada em 2011), com intervenção de múltiplas potências; as tensões entre Irã e Arábia Saudita, representando a rivalidade entre xiitas e sunitas; e a ascensão e queda do Estado Islâmico (ISIS). Para o ENEM, é fundamental compreender as raízes históricas desses conflitos e suas dimensões contemporâneas, evitando simplificações."
+        },
+        {
+          "titulo": "Terrorismo Internacional",
+          "conteudo": "O terrorismo internacional tornou-se uma das principais preocupações de segurança global no século XXI, especialmente após os atentados de 11 de setembro de 2001 nos Estados Unidos. Define-se terrorismo como o uso sistemático de violência contra civis para fins políticos, religiosos ou ideológicos, visando gerar terror e pressionar governos ou sociedades. É importante distinguir terrorismo de outras formas de conflito armado e evitar generalizações que associem determinadas religiões ou etnias ao fenômeno.\n\nA Al-Qaeda, grupo responsável pelos atentados de 11 de setembro, surgiu no contexto das guerras no Afeganistão e foi liderada por Osama bin Laden. Posteriormente, o Estado Islâmico (ISIS) emergiu em meio ao caos na Síria e no Iraque, chegando a controlar territórios significativos entre 2014 e 2017. Esses grupos fundamentalistas islâmicos não representam o Islã como religião, mas interpretações extremistas minoritárias. O terrorismo também manifesta-se em outras formas, como extremismo de direita em países ocidentais e grupos separatistas em diversas regiões.\n\nAs respostas ao terrorismo incluem ações militares (como a Guerra ao Terror declarada pelos EUA), cooperação internacional em inteligência, medidas de segurança em fronteiras e transportes, e debates sobre equilíbrio entre segurança e liberdades civis. Questões do ENEM frequentemente abordam as causas do terrorismo (desigualdades, intervenções militares, exclusão social) e as consequências das políticas antiterrorismo, evitando abordagens maniqueístas e incentivando análise crítica das complexidades envolvidas."
+        },
+        {
+          "titulo": "Questão Nuclear e Corrida Armamentista",
+          "conteudo": "A questão nuclear permanece como tema central na geopolítica mundial, relacionando-se a aspectos de segurança internacional, equilíbrio de poder e proliferação de armas de destruição em massa. Desde os bombardeios de Hiroshima e Nagasaki em 1945, a humanidade convive com o poder destrutivo da tecnologia nuclear e seus dilemas éticos e estratégicos. Durante a Guerra Fria, a corrida armamentista nuclear entre EUA e URSS gerou a doutrina da Destruição Mútua Assegurada (MAD), onde ambos os lados possuíam capacidade de aniquilação recíproca.\n\nO Tratado de Não Proliferação Nuclear (TNP), de 1968, estabeleceu que apenas cinco países (EUA, Rússia, Reino Unido, França e China) teriam direito a possuir armas nucleares, enquanto os demais se comprometeriam a não desenvolvê-las. No entanto, alguns países desenvolveram programas nucleares fora do tratado (Índia, Paquistão, Israel, Coreia do Norte), e outros mantêm programas nucleares civis com potencial militar (Irã). Essa assimetria gera debates sobre justiça internacional e direito ao desenvolvimento tecnológico.\n\nAs tensões nucleares contemporâneas incluem: o programa nuclear norte-coreano e testes de mísseis balísticos; as negociações sobre o programa nuclear iraniano; a modernização dos arsenais das potências nucleares; e preocupações sobre materiais nucleares caindo em mãos de grupos terroristas. Para o ENEM, é importante compreender tanto os aspectos técnicos (diferença entre energia nuclear civil e militar) quanto as dimensões políticas e éticas dessa questão, incluindo movimentos pacifistas e propostas de desarmamento nuclear global."
+        },
+        {
+          "titulo": "Refugiados e Crises Migratórias",
+          "conteudo": "As migrações internacionais intensificaram-se significativamente no século XXI, gerando desafios humanitários, políticos e sociais de grande magnitude. É fundamental distinguir entre migrantes econômicos (que buscam melhores condições de vida) e refugiados (que fogem de perseguições, guerras ou desastres). A Convenção de Genebra de 1951 estabelece que refugiados têm direito à proteção internacional e não podem ser devolvidos forçadamente a países onde enfrentam perigo.\n\nA crise migratória na Europa, intensificada a partir de 2015, resultou da chegada de mais de um milhão de pessoas fugindo de conflitos na Síria, Iraque, Afeganistão e de países africanos. A situação expôs tensões na União Europeia sobre políticas de imigração, levou ao fortalecimento de partidos xenófobos e de extrema-direita, e gerou debates sobre identidade cultural europeia. Tragédias humanitárias no Mar Mediterrâneo, com milhares de mortes, evidenciaram a necessidade de soluções coordenadas.\n\nOutras crises migratórias importantes incluem: o êxodo venezuelano para países da América do Sul (especialmente Colômbia, Brasil e Peru) devido à crise econômica e política; a migração centro-americana em direção aos EUA, relacionada à violência e pobreza; e deslocamentos internos em países africanos devido a conflitos e mudanças climáticas. O ENEM frequentemente aborda essas questões sob perspectiva dos direitos humanos, xenofobia versus solidariedade internacional, e os fatores estruturais (econômicos, políticos, ambientais) que geram os deslocamentos populacionais."
+        }
+      ],
+      "exemplos": [
+        "A Primavera Árabe (2011) desencadeou transformações e conflitos em todo o Oriente Médio",
+        "O atentado ao Bataclan em Paris (2015) exemplifica o terrorismo internacional na Europa",
+        "A crise nuclear com Coreia do Norte demonstra tensões sobre proliferação de armas nucleares",
+        "A crise venezuelana gerou o maior fluxo migratório da história recente da América do Sul"
+      ],
+      "dicas": [
+        "Compreenda as diferenças entre xiitas e sunitas para entender conflitos no Oriente Médio",
+        "Evite simplificações ao analisar terrorismo - busque compreender causas estruturais",
+        "Memorize os cinco países com direito a armas nucleares pelo TNP",
+        "Diferencie migrantes econômicos de refugiados segundo o direito internacional"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "O conflito israelo-palestino é um dos mais duradouros do mundo contemporâneo, tendo se intensificado após a criação do Estado de Israel em 1948. Sobre esse conflito, considere as seguintes afirmativas:\n\nI. A criação de Israel foi recomendada pela ONU após o Holocausto, mas gerou deslocamento de população palestina.\nII. Jerusalém é reivindicada como capital tanto por Israel quanto pela Palestina devido ao seu significado religioso.\nIII. Os acordos de paz alcançaram solução definitiva com a criação de dois Estados independentes e reconhecidos.\nIV. A questão dos refugiados palestinos permanece como um dos principais obstáculos à paz.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I, II e III apenas",
+            "B": "I, II e IV apenas",
+            "C": "II, III e IV apenas",
+            "D": "I, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta. A afirmação I é verdadeira porque a ONU aprovou a partilha da Palestina em 1947, criando Israel em 1948, o que levou ao deslocamento de centenas de milhares de palestinos (Nakba). A afirmação II é verdadeira pois Jerusalém tem significado religioso para judeus (Muro das Lamentações), cristãos (locais da crucificação de Jesus) e muçulmanos (Mesquita de Al-Aqsa), sendo reivindicada como capital por ambos os lados. A afirmação IV é verdadeira porque os refugiados palestinos e seus descendentes somam milhões de pessoas, e a questão do direito de retorno é um impasse central nas negociações. A afirmação III está incorreta porque não houve solução definitiva - a Palestina não é plenamente reconhecida como Estado, e o conflito persiste.",
+          "dificuldade": "medio",
+          "tags": ["Oriente Médio", "conflito israelo-palestino", "geopolítica"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "'Os atentados de 11 de setembro de 2001 marcaram um ponto de inflexão na política internacional, levando os Estados Unidos a declararem uma 'Guerra ao Terror' que resultou em invasões militares no Afeganistão (2001) e no Iraque (2003).'\n\nQual consequência geopolítica de longo prazo dessas intervenções militares pode ser identificada?",
+          "alternativas": {
+            "A": "A eliminação completa do terrorismo internacional em escala global",
+            "B": "O fortalecimento da estabilidade política e da democracia no Oriente Médio",
+            "C": "A criação de vácuos de poder que facilitaram o surgimento de novos grupos extremistas",
+            "D": "A pacificação definitiva das relações entre países ocidentais e do Oriente Médio",
+            "E": "O fim dos conflitos étnicos e religiosos na região do Oriente Médio"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque as intervenções militares no Afeganistão e especialmente no Iraque criaram instabilidade política e vácuos de poder que facilitaram o surgimento de novos grupos extremistas, incluindo o Estado Islâmico (ISIS). A destruição das estruturas estatais do Iraque, somada às tensões sectárias entre xiitas e sunitas, criou condições para o extremismo. A alternativa A está incorreta pois o terrorismo não foi eliminado - pelo contrário, diversificou-se. A alternativa B é falsa porque a região tornou-se mais instável. A alternativa D não se concretizou - as relações permaneceram tensas. A alternativa E está incorreta pois conflitos étnicos e religiosos intensificaram-se.",
+          "dificuldade": "medio",
+          "tags": ["terrorismo", "Guerra ao Terror", "Oriente Médio"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "O Tratado de Não Proliferação Nuclear (TNP) estabeleceu uma divisão entre países com direito a possuir armas nucleares e aqueles que deveriam renunciar a elas. Essa estrutura gera debates sobre justiça internacional. Qual argumento é utilizado por países que criticam essa assimetria?",
+          "alternativas": {
+            "A": "O tratado é justo porque os cinco países nucleares usaram suas armas responsavelmente",
+            "B": "A assimetria reflete desigualdade de poder e nega a países em desenvolvimento o mesmo direito que potências possuem",
+            "C": "Todos os países do mundo já possuem armas nucleares, tornando o tratado obsoleto",
+            "D": "O tratado é irrelevante porque armas nucleares não representam ameaça real",
+            "E": "A energia nuclear civil é idêntica à militar, justificando a proibição total de programas nucleares"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque o principal argumento crítico ao TNP é que ele estabelece uma assimetria de poder, permitindo que cinco países mantenham arsenais nucleares enquanto outros são proibidos de desenvolvê-los. Países como Índia argumentam que isso representa uma forma de imperialismo nuclear e nega a países em desenvolvimento as mesmas opções estratégicas que potências possuem. A alternativa A está incorreta pois ignora os problemas dessa estrutura assimétrica. A alternativa C é falsa - apenas nove países possuem armas nucleares. A alternativa D subestima incorretamente a ameaça nuclear. A alternativa E confunde energia civil com militar - são aplicações diferentes da tecnologia nuclear.",
+          "dificuldade": "dificil",
+          "tags": ["armas nucleares", "TNP", "geopolítica"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "A crise migratória europeia de 2015 gerou intensos debates sobre políticas de imigração, identidade cultural e responsabilidade humanitária. Alguns países como Alemanha adotaram políticas de acolhimento, enquanto outros como Hungria fecharam fronteiras. Qual conceito geográfico melhor explica a tensão entre livre circulação dentro da UE e controle de fronteiras externas?",
+          "alternativas": {
+            "A": "Globalização absoluta, com eliminação de todas as fronteiras nacionais",
+            "B": "Fronteiras seletivas, permeáveis para alguns fluxos e impermeáveis para outros",
+            "C": "Isolamento total, com fechamento completo de todos os países europeus",
+            "D": "Xenofobia universal, presente em todos os cidadãos de países desenvolvidos",
+            "E": "Territorialidade fixa, com fronteiras imutáveis desde o século XIX"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque o conceito de fronteiras seletivas explica adequadamente a realidade contemporânea: as fronteiras da UE são relativamente permeáveis para fluxos desejados (mercadorias, capitais, turistas) mas tornam-se impermeáveis para fluxos indesejados (migrantes pobres, refugiados). Isso reflete a contradição entre o discurso de livre circulação e a prática de controle seletivo. A alternativa A está incorreta porque fronteiras nacionais não foram eliminadas. A alternativa C exagera - não há isolamento total. A alternativa D faz generalização incorreta sobre xenofobia. A alternativa E ignora que fronteiras são construções sociais dinâmicas, não fixas.",
+          "dificuldade": "medio",
+          "tags": ["migração", "fronteiras", "Europa"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "A Guerra Civil Síria, iniciada em 2011 no contexto da Primavera Árabe, transformou-se em conflito internacional complexo com participação de múltiplas potências. Rússia e Irã apoiam o governo de Bashar al-Assad, enquanto países ocidentais e Turquia apoiaram grupos opositores. Essa situação exemplifica qual característica da geopolítica contemporânea?",
+          "alternativas": {
+            "A": "A irrelevância de conflitos regionais para potências globais",
+            "B": "A ausência de interesses estratégicos de grandes potências no Oriente Médio",
+            "C": "A transformação de conflitos internos em guerras por procuração (proxy wars) entre potências",
+            "D": "O sucesso absoluto da ONU em resolver conflitos através de negociações",
+            "E": "A unificação de todas as potências globais em torno de uma única solução para conflitos"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque a Guerra Civil Síria exemplifica o conceito de guerra por procuração (proxy war), onde potências globais e regionais disputam influência apoiando diferentes facções em um conflito local. A Rússia busca manter sua influência no Oriente Médio e sua base naval em Tartus; o Irã procura fortalecer o 'eixo xiita'; países ocidentais inicialmente apoiaram grupos opositores por razões humanitárias e estratégicas; a Turquia preocupa-se com a questão curda. A alternativa A está incorreta pois o conflito tem enorme relevância geopolítica. A alternativa B é falsa - os interesses são intensos. A alternativa D não corresponde à realidade - a ONU teve eficácia limitada. A alternativa E está incorreta porque potências têm posições divergentes.",
+          "dificuldade": "dificil",
+          "tags": ["Síria", "proxy wars", "geopolítica contemporânea"]
+        }
+      ]
+    },
+    {
+      "id": "modulo03",
+      "titulo": "Questões Ambientais Globais",
+      "resumo": "Problemas ambientais de escala planetária e suas dimensões geopolíticas",
+      "topicos": [
+        {
+          "titulo": "Mudanças Climáticas e Aquecimento Global",
+          "conteudo": "As mudanças climáticas representam um dos maiores desafios da humanidade no século XXI, com consequências potencialmente catastróficas para ecossistemas, economias e sociedades. O aquecimento global refere-se ao aumento da temperatura média da Terra, causado principalmente pela emissão de gases de efeito estufa (GEE) resultantes de atividades humanas, especialmente a queima de combustíveis fósseis, desmatamento e processos industriais.\n\nO Painel Intergovernamental sobre Mudanças Climáticas (IPCC), órgão científico da ONU, tem produzido relatórios alarmantes sobre a aceleração do aquecimento. As evidências incluem: aumento da temperatura média global (já superando 1°C em relação à era pré-industrial), derretimento de geleiras e calotas polares, elevação do nível dos mares, intensificação de eventos extremos (furacões, secas, ondas de calor), alterações em padrões de precipitação e impactos sobre a biodiversidade.\n\nAs consequências das mudanças climáticas são distribuídas desigualmente, afetando mais intensamente países pobres e comunidades vulneráveis, o que gera debates sobre justiça climática. Pequenos países insulares enfrentam risco de submersão; regiões áridas sofrem com secas intensificadas; populações costeiras enfrentam inundações. A questão climática tornou-se também geopolítica, envolvendo disputas sobre responsabilidades históricas (países desenvolvidos emitiram mais no passado), capacidades de mitigação e adaptação, e financiamento climático. O ENEM frequentemente aborda a relação entre desenvolvimento econômico e sustentabilidade ambiental, exigindo compreensão das dimensões científicas, políticas e sociais do problema."
+        },
+        {
+          "titulo": "Conferências Ambientais e Acordos Internacionais",
+          "conteudo": "A governança ambiental global desenvolveu-se através de uma série de conferências e acordos internacionais que buscam coordenar ações para enfrentar problemas ambientais transnacionais. A Conferência de Estocolmo (1972) foi pioneira ao colocar o meio ambiente na agenda internacional. A Conferência Rio-92 (Eco-92) foi um marco, estabelecendo conceitos como desenvolvimento sustentável e responsabilidades comuns mas diferenciadas, além de produzir documentos importantes como a Agenda 21.\n\nO Protocolo de Kyoto (1997) foi o primeiro acordo com metas obrigatórias de redução de emissões de GEE para países desenvolvidos. Entrou em vigor em 2005, mas enfrentou limitações: os EUA não ratificaram, países emergentes não tinham metas obrigatórias, e as reduções foram insuficientes. A Rio+20 (2012) discutiu economia verde e governança ambiental, mas foi criticada por resultados modestos.\n\nO Acordo de Paris (2015) representa o principal instrumento atual de combate às mudanças climáticas. Estabeleceu o objetivo de limitar o aquecimento global a bem menos de 2°C, preferencialmente 1,5°C, em relação aos níveis pré-industriais. Diferentemente de Kyoto, Paris inclui todos os países com Contribuições Nacionalmente Determinadas (NDCs), revisadas periodicamente. Apesar de avanços, persistem desafios: a saída temporária dos EUA no governo Trump (retomada por Biden), dificuldades de implementação das metas, necessidade de financiamento climático aos países em desenvolvimento, e pressões de setores econômicos dependentes de combustíveis fósseis. Para o ENEM, é fundamental conhecer os principais acordos, seus objetivos e limitações."
+        },
+        {
+          "titulo": "Desmatamento e Perda de Biodiversidade",
+          "conteudo": "O desmatamento de florestas tropicais constitui um dos problemas ambientais mais graves contemporâneos, com implicações locais e globais. As florestas desempenham funções ecossistêmicas essenciais: regulação do clima, ciclo hidrológico, conservação da biodiversidade, estoque de carbono e manutenção de serviços ambientais. A Amazônia, maior floresta tropical do mundo, é particularmente importante, sendo chamada de 'pulmão do mundo' (metáfora imprecisa cientificamente, mas que expressa sua importância climática).\n\nAs causas do desmatamento são múltiplas e inter-relacionadas: expansão da agropecuária (principal causa na Amazônia brasileira), extração madeireira legal e ilegal, mineração, construção de infraestrutura (estradas, hidrelétricas), grilagem de terras públicas e pressões demográficas. O problema é agravado por questões de governança, fiscalização insuficiente, conflitos fundiários e a lógica econômica de curto prazo que não valoriza adequadamente os serviços ambientais das florestas.\n\nA perda de biodiversidade associada ao desmatamento representa uma crise paralela às mudanças climáticas. Cientistas alertam para uma sexta extinção em massa, desta vez causada por atividades humanas. A biodiversidade tem valor intrínseco, mas também instrumental: recursos genéticos para agricultura e medicina, equilíbrio ecossistêmico, polinização de cultivos, controle natural de pragas. O Brasil, país de megadiversidade, tem responsabilidade e oportunidade especiais na conservação. O ENEM frequentemente contextualiza o desmatamento nas tensões entre desenvolvimento econômico e conservação ambiental, soberania nacional e preocupação internacional, e direitos de comunidades tradicionais."
+        },
+        {
+          "titulo": "Recursos Hídricos e Crises de Água",
+          "conteudo": "A água potável é um recurso fundamental para a vida humana e para o desenvolvimento econômico, mas sua distribuição é profundamente desigual no planeta. Embora 70% da superfície terrestre seja coberta por água, apenas 2,5% é água doce, e desta, a maior parte está em geleiras e aquíferos profundos. Menos de 1% está disponível em rios, lagos e aquíferos rasos acessíveis. A crescente escassez hídrica em diversas regiões do mundo configura-se como um dos principais desafios do século XXI.\n\nAs causas da crise hídrica são múltiplas: crescimento populacional, urbanização acelerada, expansão da agricultura irrigada (que consome 70% da água doce utilizada globalmente), poluição de mananciais, mudanças climáticas alterando padrões de precipitação, e gestão inadequada dos recursos. Regiões áridas e semiáridas, como Oriente Médio, Norte da África, Ásia Central e o Semiárido brasileiro, são particularmente vulneráveis.\n\nA questão da água tem dimensões geopolíticas importantes, gerando conflitos entre países que compartilham bacias hidrográficas. Exemplos incluem disputas sobre o Rio Jordão (Israel, Palestina, Jordânia), o Nilo (Egito, Sudão, Etiópia), os rios Tigre e Eufrates (Turquia, Síria, Iraque), e discussões sobre aquíferos transfronteiriços. O acesso à água potável é reconhecido como direito humano pela ONU, mas sua mercantilização e privatização geram debates éticos e políticos. Para o ENEM, é importante compreender tanto aspectos naturais (ciclo hidrológico, distribuição desigual) quanto sociais (gestão, conflitos, direito à água) da questão hídrica."
+        }
+      ],
+      "exemplos": [
+        "O furacão Katrina (2005) e eventos extremos recentes demonstram consequências das mudanças climáticas",
+        "O Acordo de Paris busca limitar aquecimento global através de metas nacionais voluntárias",
+        "O desmatamento na Amazônia brasileira aumentou significativamente nos últimos anos",
+        "A disputa sobre a represa Grand Renaissance no Rio Nilo gera tensões entre Egito e Etiópia"
+      ],
+      "dicas": [
+        "Diferencie aquecimento global (fato científico) de negacionismo climático (posição política)",
+        "Memorize as principais conferências ambientais e seus resultados",
+        "Compreenda as múltiplas causas do desmatamento além de simplificações",
+        "Relacione crises hídricas com desigualdades sociais e geopolíticas"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "O aquecimento global é causado principalmente pela intensificação do efeito estufa devido a atividades humanas. Sobre esse fenômeno, analise as afirmações:\n\nI. O efeito estufa é um processo natural essencial para a vida na Terra, mas foi intensificado por atividades humanas.\nII. O dióxido de carbono (CO2) proveniente da queima de combustíveis fósseis é o principal gás de efeito estufa antropogênico.\nIII. As mudanças climáticas afetam igualmente todos os países e populações do mundo.\nIV. O derretimento de geleiras e calotas polares contribui para a elevação do nível dos oceanos.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I, II e III apenas",
+            "B": "I, II e IV apenas",
+            "C": "I, III e IV apenas",
+            "D": "II, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta. A afirmação I é verdadeira porque o efeito estufa é natural e mantém a Terra aquecida em temperatura adequada para a vida, mas foi intensificado pela emissão de GEE antropogênicos. A afirmação II é verdadeira pois o CO2 da queima de combustíveis fósseis (petróleo, carvão, gás natural) é o principal gás de efeito estufa emitido por atividades humanas. A afirmação IV é verdadeira porque o derretimento de gelo continental (geleiras e calotas da Groenlândia e Antártida) adiciona água aos oceanos, elevando seu nível. A afirmação III está incorreta porque as mudanças climáticas afetam desigualmente: pequenos países insulares enfrentam risco existencial, regiões costeiras sofrem com inundações, enquanto países desenvolvidos têm mais recursos para adaptação.",
+          "dificuldade": "medio",
+          "tags": ["mudanças climáticas", "aquecimento global", "meio ambiente"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "'O Acordo de Paris, adotado em 2015 durante a COP21, representou um avanço nas negociações climáticas ao estabelecer compromissos para todos os países, diferentemente do Protocolo de Kyoto que estabelecia metas obrigatórias apenas para países desenvolvidos.'\n\nQual princípio fundamenta a diferença de responsabilidades entre países desenvolvidos e em desenvolvimento nas negociações climáticas?",
+          "alternativas": {
+            "A": "O princípio da indiferença climática, que considera todos os países igualmente responsáveis pelo aquecimento global",
+            "B": "O princípio das responsabilidades comuns mas diferenciadas, que reconhece contribuições históricas distintas",
+            "C": "O princípio do desenvolvimento irrestrito, que permite países pobres poluírem sem limites",
+            "D": "O princípio da irrelevância histórica, que ignora as emissões passadas de países industrializados",
+            "E": "O princípio da culpabilização exclusiva, que responsabiliza apenas países em desenvolvimento"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque o princípio das responsabilidades comuns mas diferenciadas (estabelecido na Rio-92 e mantido em acordos posteriores) reconhece que todos os países têm responsabilidade sobre o clima, mas em níveis diferentes. Países desenvolvidos industrializaram-se emitindo grandes quantidades de GEE desde o século XIX, contribuindo mais para o problema histórico, e possuem mais recursos financeiros e tecnológicos para implementar soluções. Países em desenvolvimento têm direito ao desenvolvimento, mas devem fazê-lo de forma sustentável. A alternativa A está incorreta pois ignora diferenças históricas. A alternativa C distorce o princípio - não há permissão para poluição ilimitada. A alternativa D está errada porque emissões históricas são relevantes. A alternativa E inverte a realidade.",
+          "dificuldade": "medio",
+          "tags": ["Acordo de Paris", "negociações climáticas", "justiça climática"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "O desmatamento na Amazônia brasileira é um problema ambiental de dimensão global. Considere as seguintes afirmações sobre suas causas e consequências:\n\nI. A expansão da agropecuária é a principal causa do desmatamento amazônico.\nII. O desmatamento afeta apenas a biodiversidade local, sem impactos sobre o clima global.\nIII. A floresta amazônica desempenha papel importante no ciclo hidrológico regional e na regulação climática.\nIV. Conflitos sobre terras envolvem populações tradicionais, grileiros e grandes proprietários.\n\nQuais estão corretas?",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "I e III apenas",
+            "C": "I, III e IV apenas",
+            "D": "II, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta. A afirmação I é verdadeira porque a expansão da pecuária e da agricultura (especialmente soja) é a principal causa do desmatamento amazônico, responsável por cerca de 70-80% da destruição. A afirmação III é verdadeira pois a Amazônia desempenha papel crucial no ciclo hidrológico através da evapotranspiração que gera 'rios voadores', e no clima global como estoque de carbono. A afirmação IV é verdadeira porque existem intensos conflitos fundiários envolvendo povos indígenas, comunidades tradicionais (ribeirinhos, quilombolas), grileiros que se apropriam ilegalmente de terras públicas, e grandes fazendeiros. A afirmação II está incorreta porque o desmatamento tem impactos globais: libera grandes quantidades de CO2, contribuindo para mudanças climáticas planetárias.",
+          "dificuldade": "facil",
+          "tags": ["Amazônia", "desmatamento", "meio ambiente"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "A crise hídrica não se limita à escassez física de água, mas envolve também questões de gestão, distribuição e acesso. Qual situação exemplifica a dimensão geopolítica dos recursos hídricos?",
+          "alternativas": {
+            "A": "A construção de poços artesianos em propriedades rurais para uso agrícola",
+            "B": "A disputa entre países sobre o uso de rios transfronteiriços como o Nilo e o Jordão",
+            "C": "A existência de períodos de seca natural em regiões de clima semiárido",
+            "D": "O uso doméstico de água potável para higiene pessoal e preparo de alimentos",
+            "E": "A presença de aquíferos subterrâneos localizados inteiramente dentro de um único país"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque disputas sobre rios transfronteiriços exemplificam claramente a dimensão geopolítica dos recursos hídricos. Quando rios atravessam múltiplos países, surgem tensões sobre direitos de uso, construção de barragens, poluição e distribuição da água. O Egito depende criticamente do Rio Nilo e opõe-se à represa etíope Grand Renaissance que pode reduzir seu fluxo. No Rio Jordão, Israel, Palestina e Jordânia disputam recursos limitados. Essas situações podem gerar conflitos diplomáticos ou mesmo militares. A alternativa A refere-se a uso local sem dimensão geopolítica. A alternativa C descreve fenômeno natural, não geopolítico. A alternativa D trata de uso doméstico sem implicações internacionais. A alternativa E não envolve questões transfronteiriças.",
+          "dificuldade": "facil",
+          "tags": ["recursos hídricos", "geopolítica", "água"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Analise o gráfico (hipotético) mostrando as emissões históricas acumuladas de CO2 por região:\n\nAmérica do Norte: 30%\nEuropa: 25%\nÁsia: 20%\nAmérica Latina: 5%\nÁfrica: 2%\nOutros: 18%\n\nCom base nesses dados, qual argumento é utilizado por países em desenvolvimento nas negociações climáticas?",
+          "alternativas": {
+            "A": "Países desenvolvidos devem assumir maior responsabilidade de redução de emissões devido à sua contribuição histórica",
+            "B": "América Latina e África devem reduzir emissões na mesma proporção que países desenvolvidos",
+            "C": "As emissões históricas são irrelevantes para definir responsabilidades atuais",
+            "D": "Apenas a Ásia deve reduzir emissões por ser região com maior população",
+            "E": "Todos os países devem cessar completamente suas emissões de forma imediata e uniforme"
+          },
+          "correta": "A",
+          "explicacao": "A alternativa A está correta porque países em desenvolvimento utilizam dados de emissões históricas acumuladas para argumentar que países desenvolvidos (América do Norte e Europa, que juntos somam 55% no exemplo) industrializaram-se ao longo de séculos emitindo grandes quantidades de GEE, portanto têm maior responsabilidade histórica pelo aquecimento global atual. Assim, devem assumir metas mais ambiciosas de redução e fornecer financiamento e tecnologia para países em desenvolvimento. Este argumento embasa o princípio das responsabilidades comuns mas diferenciadas. A alternativa B ignora as diferenças históricas e de desenvolvimento. A alternativa C contradiz o princípio das responsabilidades diferenciadas. A alternativa D faz simplificação incorreta focando apenas população. A alternativa E é impraticável e não reconhece diferentes capacidades e responsabilidades.",
+          "dificuldade": "dificil",
+          "tags": ["emissões históricas", "negociações climáticas", "justiça climática"]
+        }
+      ]
+    },
+    {
+      "id": "modulo04",
+      "titulo": "Economia Global e Desenvolvimento",
+      "resumo": "Dinâmicas da economia globalizada, desigualdades e modelos de desenvolvimento",
+      "topicos": [
+        {
+          "titulo": "Divisão Internacional do Trabalho",
+          "conteudo": "A Divisão Internacional do Trabalho (DIT) refere-se à forma como a produção econômica é distribuída entre os países no sistema capitalista global. Esse conceito é fundamental para compreender as desigualdades econômicas mundiais e as relações de interdependência e dominação entre nações. A DIT passou por diferentes configurações ao longo da história, refletindo transformações no sistema produtivo e nas relações de poder internacionais.\n\nA DIT clássica, consolidada no século XIX com a Revolução Industrial, caracterizou-se pela especialização de países europeus na produção industrial, enquanto colônias e países periféricos forneciam matérias-primas e produtos agrícolas. Essa divisão perpetuou desigualdades através da deterioração dos termos de troca: produtos industrializados têm valor agregado maior que commodities, gerando transferência de riqueza dos países periféricos para os centrais.\n\nA Nova DIT, emergente a partir dos anos 1970, caracteriza-se pela descentralização produtiva e formação de cadeias globais de valor. Empresas transnacionais fragmentam a produção, localizando diferentes etapas em diversos países segundo vantagens competitivas: pesquisa e desenvolvimento e decisões estratégicas nos países centrais; produção industrial em países de industrialização recente com mão de obra mais barata; extração de recursos em países periféricos. A terceira DIT (ou DIT técnico-científica) acentua-se no século XXI com a economia digital, inteligência artificial e concentração da inovação tecnológica em poucos países e empresas. Para o ENEM, é crucial compreender como a DIT explica desigualdades estruturais e a posição dos países no sistema econômico mundial."
+        },
+        {
+          "titulo": "Países Desenvolvidos, Emergentes e Subdesenvolvidos",
+          "conteudo": "A classificação dos países segundo seu nível de desenvolvimento econômico e social é uma forma de compreender desigualdades globais, embora essas categorizações sejam simplificações de realidades complexas. Os critérios incluem PIB per capita, IDH (Índice de Desenvolvimento Humano), infraestrutura, diversificação econômica, acesso a serviços básicos, e posição na economia global.\n\nPaíses desenvolvidos (ou centrais) caracterizam-se por: economias industrializadas e diversificadas, alto PIB per capita, IDH elevado, infraestrutura avançada, população majoritariamente urbana, acesso universal a educação e saúde, domínio tecnológico e concentração de sedes de empresas transnacionais. Exemplos incluem EUA, países da Europa Ocidental, Japão, Canadá e Austrália. No entanto, mesmo nesses países existem desigualdades internas e bolsões de pobreza.\n\nPaíses emergentes (ou em desenvolvimento) estão em processo de industrialização e modernização econômica, apresentando crescimento econômico significativo mas ainda com desigualdades sociais acentuadas. Os BRICS (Brasil, Rússia, Índia, China e África do Sul) são exemplos emblemáticos. Países subdesenvolvidos (ou periféricos) caracterizam-se por: dependência de exportações primárias, baixa industrialização, infraestrutura deficiente, indicadores sociais precários, alta informalidade econômica e vulnerabilidade externa. Muitos países africanos, asiáticos e alguns latino-americanos enquadram-se nessa categoria. É importante evitar determinismo: países podem mudar de posição, e a categoria 'subdesenvolvimento' não reflete incapacidade, mas posição histórica e estrutural no sistema econômico global, frequentemente relacionada ao passado colonial."
+        },
+        {
+          "titulo": "Desenvolvimento Sustentável",
+          "conteudo": "O conceito de desenvolvimento sustentável emergiu como resposta crítica ao modelo de desenvolvimento tradicional focado exclusivamente no crescimento econômico, ignorando custos ambientais e sociais. Foi popularizado pelo Relatório Brundtland (1987), que o definiu como 'desenvolvimento que satisfaz as necessidades do presente sem comprometer a capacidade das gerações futuras de satisfazerem suas próprias necessidades'.\n\nO desenvolvimento sustentável fundamenta-se em três pilares interdependentes: econômico (crescimento com eficiência e equidade), social (redução de desigualdades, acesso a serviços básicos, qualidade de vida) e ambiental (conservação dos recursos naturais, proteção da biodiversidade, controle da poluição). A integração desses três pilares representa o desafio central: como promover desenvolvimento econômico e social sem esgotar recursos naturais e degradar o meio ambiente?\n\nOs Objetivos de Desenvolvimento Sustentável (ODS), adotados pela ONU em 2015 como parte da Agenda 2030, estabelecem 17 objetivos integrados abrangendo: erradicação da pobreza e fome, saúde e educação de qualidade, igualdade de gênero, água e saneamento, energia limpa, trabalho decente, redução de desigualdades, cidades sustentáveis, consumo responsável, ação climática, proteção dos oceanos e ecossistemas terrestres, paz e justiça. O ENEM frequentemente aborda tensões entre crescimento econômico e sustentabilidade, exigindo reflexão crítica sobre modelos de desenvolvimento. Questões podem relacionar sustentabilidade com justiça social, direitos de comunidades tradicionais, economia circular versus linear, e limites planetários."
+        },
+        {
+          "titulo": "Desigualdades Globais e Concentração de Riqueza",
+          "conteudo": "As desigualdades econômicas em escala global atingiram níveis extremos no século XXI, caracterizando-se pela concentração de riqueza em parcela cada vez menor da população mundial. Dados indicam que poucas dezenas de bilionários detêm riqueza equivalente à metade mais pobre da humanidade, evidenciando uma estrutura econômica profundamente assimétrica que desafia ideais de justiça social e democracia.\n\nAs desigualdades manifestam-se em múltiplas dimensões: entre países (Norte-Sul global), dentro dos países (classes sociais, regiões), por gênero e raça, e em acesso a oportunidades (educação, saúde, tecnologia). As causas são estruturais e inter-relacionadas: herança histórica do colonialismo e escravidão, divisão internacional do trabalho desfavorável aos países periféricos, concentração de capital e meios de produção, precarização do trabalho, financeirização da economia, políticas fiscais regressivas, captura de Estados por elites econômicas, e revolução tecnológica que substitui trabalho humano.\n\nAs consequências das desigualdades são graves: perpetuação da pobreza, limitação de mobilidade social, instabilidade política, violência, problemas de saúde pública, e obstáculos ao próprio desenvolvimento econômico (pela restrição do mercado consumidor e do potencial humano). Organismos como ONU e FMI reconhecem que desigualdades excessivas prejudicam o crescimento econômico e a coesão social. Para o ENEM, é importante compreender as desigualdades não como resultado de características culturais ou individuais, mas como produto de estruturas históricas e escolhas políticas que podem ser transformadas. Questões frequentemente relacionam desigualdades com colonialismo, sistema tributário, direitos sociais e modelos econômicos."
+        }
+      ],
+      "exemplos": [
+        "A produção de smartphones ilustra a Nova DIT: design nos EUA, componentes da Coreia e Japão, montagem na China",
+        "O crescimento econômico chinês exemplifica a ascensão de país emergente à condição de potência global",
+        "A economia circular, que busca eliminar desperdício e reutilizar materiais, exemplifica princípios de sustentabilidade",
+        "O Índice de Gini mede concentração de renda, sendo mais alto na América Latina comparado à Europa"
+      ],
+      "dicas": [
+        "Compreenda as diferenças entre DIT clássica, Nova DIT e DIT técnico-científica",
+        "Evite visões deterministas sobre desenvolvimento - países podem mudar de posição",
+        "Decore os três pilares do desenvolvimento sustentável e relacione-os",
+        "Conecte desigualdades globais com processos históricos como colonialismo"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "A Divisão Internacional do Trabalho (DIT) explica como a produção econômica é distribuída entre os países no sistema capitalista global. Sobre a Nova DIT, consolidada nas últimas décadas, é correto afirmar que:",
+          "alternativas": {
+            "A": "Reproduz exatamente o modelo do século XIX, com países centrais exportando manufaturas e periféricos exportando matérias-primas",
+            "B": "Caracteriza-se pela fragmentação produtiva em cadeias globais de valor, com diferentes etapas da produção em diversos países",
+            "C": "Eliminou completamente as desigualdades econômicas entre países desenvolvidos e em desenvolvimento",
+            "D": "Concentrou toda a produção industrial exclusivamente nos países desenvolvidos da Europa e América do Norte",
+            "E": "Impede que países em desenvolvimento realizem qualquer tipo de industrialização ou avanço tecnológico"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a Nova DIT caracteriza-se justamente pela fragmentação da produção em cadeias globais de valor. Empresas transnacionais distribuem diferentes etapas produtivas em diversos países: pesquisa e desenvolvimento em países centrais, produção de componentes em países com tecnologia intermediária, montagem em países com mão de obra mais barata. Isso foi possibilitado por avanços em transporte, comunicação e logística. A alternativa A está incorreta pois a Nova DIT difere do modelo clássico. A alternativa C é falsa - desigualdades persistem, mudando de forma. A alternativa D está errada porque a produção industrial descentralizou-se para países emergentes. A alternativa E exagera - a Nova DIT permitiu industrialização de países como China e Coreia do Sul.",
+          "dificuldade": "medio",
+          "tags": ["DIT", "globalização", "economia global"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "O Índice de Desenvolvimento Humano (IDH) é um indicador criado pela ONU que vai além do PIB per capita para avaliar o desenvolvimento dos países. O IDH considera três dimensões: renda, educação e saúde. Qual é a principal vantagem do IDH em relação ao PIB per capita como indicador de desenvolvimento?",
+          "alternativas": {
+            "A": "O IDH é mais fácil de calcular e requer menos dados estatísticos que o PIB per capita",
+            "B": "O IDH incorpora dimensões sociais do desenvolvimento, não se limitando ao aspecto econômico",
+            "C": "O IDH permite classificar países exclusivamente pelo seu poder militar e influência geopolítica",
+            "D": "O IDH elimina completamente qualquer crítica sobre como medir desenvolvimento",
+            "E": "O IDH considera apenas a renda, sendo idêntico ao PIB per capita com outro nome"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a principal vantagem do IDH é justamente incorporar dimensões sociais (educação e saúde) além da dimensão econômica (renda). Um país pode ter PIB per capita alto mas IDH médio se a população tem baixa escolaridade ou expectativa de vida reduzida, evidenciando que riqueza não se traduz automaticamente em desenvolvimento humano. Isso reflete crítica ao desenvolvimentismo puramente econômico. A alternativa A está incorreta pois o IDH requer mais dados, não menos. A alternativa C é falsa - o IDH não considera poder militar. A alternativa D exagera - o IDH ainda enfrenta críticas (não considera desigualdades internas, por exemplo). A alternativa E está completamente incorreta sobre o que o IDH mede.",
+          "dificuldade": "facil",
+          "tags": ["IDH", "desenvolvimento", "indicadores sociais"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "'O desenvolvimento sustentável busca conciliar crescimento econômico, justiça social e conservação ambiental. No entanto, críticos apontam que o modelo econômico dominante, baseado em crescimento contínuo e consumismo, é fundamentalmente incompatível com limites planetários.'\n\nQual desafio central está implícito nessa tensão?",
+          "alternativas": {
+            "A": "A impossibilidade total de qualquer forma de desenvolvimento econômico sem destruição ambiental",
+            "B": "A necessidade de repensar o conceito de desenvolvimento para além do crescimento econômico ilimitado",
+            "C": "A certeza de que questões ambientais resolverão-se automaticamente com mais crescimento econômico",
+            "D": "A irrelevância de considerações ambientais frente à prioridade absoluta do crescimento econômico",
+            "E": "A incompatibilidade total entre qualquer atividade humana e a preservação ambiental"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque identifica o desafio central do desenvolvimento sustentável: repensar o próprio conceito de desenvolvimento para além do paradigma de crescimento econômico ilimitado. Críticos questionam se é possível crescimento infinito em um planeta com recursos finitos, propondo alternativas como economia do bem-estar, decrescimento em países ricos, economia circular, e medidas de progresso além do PIB. O desafio envolve mudanças estruturais nos padrões de produção e consumo. A alternativa A é pessimista demais, negando possibilidades de desenvolvimento sustentável. A alternativa C reflete visão otimista ingênua que a realidade não confirma. A alternativa D inverte prioridades ignorando crises ambientais. A alternativa E exagera, generalizando indevidamente.",
+          "dificuldade": "dificil",
+          "tags": ["desenvolvimento sustentável", "economia", "meio ambiente"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Os BRICS (Brasil, Rússia, Índia, China e África do Sul) são países emergentes que ganharam relevância na economia global nas últimas décadas. Sobre as características e o papel dos BRICS, considere:\n\nI. Representam economias em processo de industrialização e crescimento, com mercados consumidores significativos.\nII. Formam um bloco econômico totalmente integrado com livre circulação de mercadorias e moeda única.\nIII. Criaram instituições próprias como o Novo Banco de Desenvolvimento para financiar projetos de infraestrutura.\nIV. Apresentam desigualdades sociais internas significativas apesar do crescimento econômico.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "I e III apenas",
+            "C": "I, III e IV apenas",
+            "D": "II, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta. A afirmação I é verdadeira porque os BRICS são economias emergentes em processo de industrialização, com grandes populações e mercados consumidores em expansão. A afirmação III é verdadeira - criaram o Novo Banco de Desenvolvimento (New Development Bank) em 2014, sediado em Xangai, para financiar infraestrutura e desenvolvimento sustentável, como alternativa a instituições dominadas por países desenvolvidos (FMI, Banco Mundial). A afirmação IV é verdadeira porque todos os BRICS apresentam desigualdades sociais internas marcantes - o crescimento econômico não se distribuiu igualmente. A afirmação II está incorreta porque os BRICS não são um bloco econômico integrado como a UE ou Mercosul; são uma associação política e econômica com reuniões de cúpula, mas sem livre comércio ou moeda única.",
+          "dificuldade": "medio",
+          "tags": ["BRICS", "economias emergentes", "geopolítica"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Dados da Oxfam indicam que a riqueza dos bilionários cresceu mais durante a pandemia de COVID-19 do que nos últimos dez anos, enquanto milhões de pessoas caíram na pobreza. Esse fenômeno exemplifica:",
+          "alternativas": {
+            "A": "A redução gradual das desigualdades econômicas globais através da meritocracia",
+            "B": "O sucesso das políticas de redistribuição de renda implementadas globalmente",
+            "C": "A concentração de riqueza e o aprofundamento das desigualdades no capitalismo contemporâneo",
+            "D": "A irrelevância das desigualdades econômicas para o desenvolvimento social",
+            "E": "A igualdade perfeita de oportunidades no sistema econômico global atual"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque o fenômeno descrito exemplifica claramente a concentração de riqueza e o aprofundamento de desigualdades características do capitalismo contemporâneo. Durante crises, os mais vulneráveis são desproporcionalmente afetados enquanto detentores de capital frequentemente aumentam sua riqueza (valorização de ativos, oportunidades em mercados voláteis). Isso evidencia estruturas econômicas que perpetuam e ampliam desigualdades. A alternativa A contradiz completamente os dados apresentados. A alternativa B está incorreta - se políticas redistributivas fossem bem-sucedidas, não veríamos esse padrão. A alternativa D subestima incorretamente impactos das desigualdades. A alternativa E contradiz frontalmente a realidade descrita, ignorando desigualdades estruturais de oportunidades.",
+          "dificuldade": "facil",
+          "tags": ["desigualdades", "concentração de riqueza", "capitalismo"]
+        }
+      ]
+    },
+    {
+      "id": "modulo05",
+      "titulo": "Temas Geopolíticos Contemporâneos",
+      "resumo": "Questões emergentes na geopolítica do século XXI: tecnologia, pandemias e novos desafios",
+      "topicos": [
+        {
+          "titulo": "Geopolítica da Tecnologia e Guerra Cibernética",
+          "conteudo": "A tecnologia tornou-se elemento central na geopolítica contemporânea, configurando novos campos de disputa entre potências. A corrida tecnológica do século XXI envolve domínios como inteligência artificial, computação quântica, 5G, semicondutores, big data e biotecnologia. O controle dessas tecnologias estratégicas confere poder econômico, militar e político, redefinindo hierarquias globais e criando novas dependências.\n\nA tensão tecnológica entre Estados Unidos e China exemplifica essas disputas. Os EUA tentam manter liderança tecnológica impedindo acesso chinês a semicondutores avançados e tecnologias críticas. A China investe massivamente em inovação através de programas como 'Made in China 2025', buscando autossuficiência tecnológica. A questão do 5G tornou-se emblemática, com os EUA pressionando aliados a excluírem a Huawei por supostas preocupações de segurança, evidenciando como infraestrutura de telecomunicações é terreno de disputa geopolítica.\n\nA guerra cibernética representa nova dimensão dos conflitos internacionais. Ataques cibernéticos podem desativar infraestruturas críticas (energia, transportes, comunicações), roubar informações estratégicas, interferir em processos eleitorais e disseminar desinformação. Diferentemente de guerras convencionais, ataques cibernéticos são difíceis de atribuir e não requerem confronto direto. A espionagem digital é praticada por diversos países, como revelado por Edward Snowden sobre vigilância da NSA americana. Para o ENEM, é importante compreender como a tecnologia redefine relações de poder, soberania (dados nacionais em servidores estrangeiros), privacidade versus segurança, e os desafios de regulamentação em um ambiente digital globalizado."
+        },
+        {
+          "titulo": "Fake News, Desinformação e Democracia",
+          "conteudo": "A proliferação de notícias falsas (fake news) e desinformação através de mídias sociais tornou-se uma das principais ameaças à democracia no século XXI. Fake news são informações deliberadamente falsas apresentadas como notícias verdadeiras, criadas para manipular opiniões, desestabilizar instituições, influenciar eleições ou gerar engajamento e lucro. É importante distinguir de erros jornalísticos honestos, satira claramente identificada e teorias de conspiração.\n\nO fenômeno intensificou-se com as redes sociais (Facebook, Twitter, WhatsApp, YouTube) que permitem disseminação viral de conteúdo sem verificação. Algoritmos amplificam conteúdos que geram engajamento emocional, frequentemente desinformação e polarização. Bots (robôs automatizados) e fazendas de trolls (pessoas pagas para disseminar propaganda) podem ampliar artificialmente mensagens, criando impressão de apoio massivo. Casos notórios incluem interferência russa em eleições americanas (2016), disseminação de desinformação sobre vacinas, e manipulação de processos eleitorais em diversos países.\n\nAs consequências para a democracia são graves: erosão da confiança em instituições e mídia tradicional, polarização extrema da sociedade, dificuldade de formar consensos baseados em fatos, manipulação de processos eleitorais, incitação à violência e enfraquecimento do debate público racional. As respostas incluem: alfabetização midiática e pensamento crítico na educação, fact-checking (checagem de fatos) por organizações especializadas, pressão sobre plataformas digitais para remover desinformação, legislação sobre crimes de desinformação (equilibrando com liberdade de expressão), e transparência de algoritmos. O ENEM pode abordar tensões entre liberdade de expressão e combate à desinformação, papel das plataformas digitais, importância de fontes confiáveis e verificação de informações."
+        },
+        {
+          "titulo": "Pandemias e Saúde Global",
+          "conteudo": "A pandemia de COVID-19, iniciada em 2019-2020, evidenciou a interdependência global e os desafios de coordenação internacional diante de crises sanitárias. Pandemias são epidemias que se espalham por múltiplos continentes simultaneamente. A globalização, com fluxos intensos de pessoas e mercadorias, facilita a rápida disseminação de doenças infecciosas, enquanto a degradação ambiental e a invasão de habitats naturais aumentam o risco de transmissão de patógenos de animais para humanos (zoonoses).\n\nA resposta global à COVID-19 revelou tanto cooperação quanto conflitos. Positivamente, houve colaboração científica internacional sem precedentes no desenvolvimento de vacinas em tempo recorde (menos de um ano). Negativamente, observou-se: nacionalismo vacinal (países ricos acumulando doses), desigualdade no acesso a vacinas entre países ricos e pobres (apesar da iniciativa COVAX), desinformação sobre a doença e vacinas, tensões geopolíticas (disputas sobre origem do vírus, diplomacia de vacinas), e limitações da OMS em coordenar respostas devido a interesses nacionais conflitantes.\n\nA pandemia teve impactos multidimensionais: sanitários (milhões de mortes, colapso de sistemas de saúde), econômicos (recessões, desemprego, interrupção de cadeias de suprimentos), sociais (ampliação de desigualdades, impactos psicológicos, violência doméstica), educacionais (fechamento de escolas afetando aprendizagem) e políticos (tensões entre autoridades sanitárias e econômicas, questionamento de liberdades individuais versus saúde coletiva). Para o ENEM, temas relacionados incluem: importância de sistemas públicos de saúde, papel da ciência e negacionismo, desigualdades no acesso a tratamentos, cooperação internacional versus nacionalismo, relação entre saúde e ambiente, e impactos socioeconômicos de crises sanitárias."
+        },
+        {
+          "titulo": "Nacionalismos, Populismos e Crise Democrática",
+          "conteudo": "Nas últimas décadas, observa-se em diversos países o fortalecimento de movimentos nacionalistas e populistas, frequentemente associados ao questionamento de instituições democráticas, valores liberais e cooperação internacional. Esse fenômeno manifesta-se tanto em democracias consolidadas (EUA, países europeus) quanto em democracias mais recentes (Brasil, Filipinas, Hungria), levando analistas a falarem em 'crise democrática global' ou 'recessão democrática'.\n\nO populismo caracteriza-se por discurso que opõe 'o povo puro' contra 'elites corruptas', prometendo representação direta da vontade popular e frequentemente desqualificando instituições intermediárias (parlamentos, judiciário, imprensa) como obstáculos. Pode manifestar-se em espectros ideológicos diversos (esquerda ou direita). O nacionalismo contemporâneo frequentemente associa-se a: anti-imigração e xenofobia, rejeição de acordos internacionais, protecionismo econômico, valorização de identidades nacionais homogêneas, e questionamento da globalização.\n\nDiversas causas explicam essa onda: impactos sociais da globalização (desemprego em setores tradicionais, precarização), crises econômicas (2008, austeridade), aumento de desigualdades, crises migratórias gerando tensões culturais, descontentamento com elites políticas tradicionais vistas como distantes, e o papel das redes sociais permitindo comunicação direta entre líderes e apoiadores, contornando mediações institucionais. As consequências para a democracia incluem: erosão de checks and balances (divisão de poderes), ataques à imprensa livre, questionamento de eleições e instituições, polarização extrema que dificulta diálogo, relativização de direitos humanos e minorias, e enfraquecimento de cooperação internacional. O ENEM pode abordar esses temas relacionando-os com conceitos de democracia, estado de direito, pluralismo, direitos fundamentais e instituições democráticas."
+        }
+      ],
+      "exemplos": [
+        "A guerra comercial EUA-China envolve não apenas tarifas, mas controle de tecnologias estratégicas como semicondutores",
+        "A disseminação de fake news sobre urnas eletrônicas no Brasil exemplifica desafios da desinformação à democracia",
+        "A desigual distribuição de vacinas contra COVID-19 evidenciou 'apartheid vacinal' entre Norte e Sul global",
+        "O Brexit no Reino Unido e a eleição de Trump nos EUA exemplificam ascensão de nacionalismos"
+      ],
+      "dicas": [
+        "Compreenda a diferença entre erro jornalístico e fake news deliberada",
+        "Relacione a pandemia de COVID-19 com desigualdades globais e cooperação internacional",
+        "Entenda populismo como fenômeno político que pode ocorrer em diferentes contextos",
+        "Conecte guerra cibernética com novas dimensões de soberania e segurança nacional"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "A disputa tecnológica entre Estados Unidos e China tornou-se um dos principais eixos da geopolítica contemporânea, envolvendo inteligência artificial, 5G, semicondutores e computação quântica. Qual é a principal implicação geopolítica dessa disputa tecnológica?",
+          "alternativas": {
+            "A": "A tecnologia é irrelevante para relações de poder, que dependem apenas de força militar convencional",
+            "B": "O domínio de tecnologias estratégicas confere poder econômico, militar e político no século XXI",
+            "C": "Apenas países europeus competem em desenvolvimento tecnológico, excluindo EUA e China",
+            "D": "A cooperação tecnológica internacional é perfeita, sem nenhum conflito ou disputa",
+            "E": "A tecnologia distribui-se igualmente entre todos os países, eliminando hierarquias de poder"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque o domínio de tecnologias estratégicas tornou-se elemento central de poder no século XXI. Inteligência artificial permite vantagens militares e econômicas; 5G define infraestrutura de comunicações; semicondutores são essenciais para toda economia digital; computação quântica pode revolucionar criptografia e processamento de dados. O país que liderar essas tecnologias terá vantagens competitivas determinantes. Por isso EUA tentam restringir acesso chinês a tecnologias críticas, e a China investe massivamente em autossuficiência tecnológica. A alternativa A subestima incorretamente a relevância da tecnologia. A alternativa C está factualmente errada sobre quem compete. A alternativa D contradiz a realidade de intensa disputa. A alternativa E ignora desigualdades tecnológicas entre países.",
+          "dificuldade": "medio",
+          "tags": ["geopolítica", "tecnologia", "EUA-China"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "'As fake news (notícias falsas) disseminadas através de redes sociais tornaram-se ameaça à democracia, pois manipulam opiniões públicas, desestabilizam instituições e interferem em processos eleitorais.'\n\nQual medida equilibra adequadamente o combate à desinformação com a preservação da liberdade de expressão?",
+          "alternativas": {
+            "A": "Censura prévia total de toda informação publicada na internet por órgãos governamentais",
+            "B": "Alfabetização midiática, fact-checking independente e transparência de algoritmos das plataformas",
+            "C": "Proibição completa de todas as redes sociais e plataformas digitais",
+            "D": "Permissão irrestrita de publicação de qualquer conteúdo sem nenhuma responsabilização",
+            "E": "Controle absoluto do governo sobre todas as informações veiculadas na sociedade"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque apresenta medidas que combatem desinformação sem recorrer à censura ou controle estatal autoritário. Alfabetização midiática capacita cidadãos a avaliar criticamente informações; fact-checking por organizações independentes (não governamentais) verifica veracidade de conteúdos; transparência de algoritmos permite compreender como informações são amplificadas; e plataformas podem ser responsabilizadas por disseminação de conteúdo claramente ilegal, mantendo liberdade de expressão legítima. A alternativa A estabelece censura prévia incompatível com democracia. A alternativa C é extrema e impraticável, eliminando benefícios das redes sociais. A alternativa D ignora necessidade de responsabilização por desinformação deliberada. A alternativa E descreve autoritarismo, não democracia.",
+          "dificuldade": "medio",
+          "tags": ["fake news", "democracia", "liberdade de expressão"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "A pandemia de COVID-19 evidenciou desigualdades globais no acesso a vacinas. Enquanto países ricos conseguiram vacinar rapidamente suas populações, muitos países pobres tiveram acesso tardio. Esse fenômeno, chamado de 'apartheid vacinal', exemplifica:",
+          "alternativas": {
+            "A": "A perfeita cooperação internacional e distribuição equitativa de recursos de saúde",
+            "B": "A irrelevância das desigualdades econômicas para questões de saúde pública",
+            "C": "As assimetrias de poder e recursos na governança global da saúde",
+            "D": "O sucesso absoluto dos organismos internacionais em garantir acesso universal",
+            "E": "A igualdade de capacidades de todos os países em enfrentar crises sanitárias"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque o 'apartheid vacinal' evidencia claramente as assimetrias de poder e recursos na governança global da saúde. Países ricos compraram doses muito além de suas necessidades populacionais, empresas farmacêuticas priorizaram contratos lucrativos com esses países, patentes impediram produção genérica em países pobres, e a iniciativa COVAX teve sucesso limitado. Isso demonstra que, apesar do discurso de saúde como direito universal, na prática recursos médicos distribuem-se segundo capacidade econômica e poder de negociação. A alternativa A contradiz completamente a realidade descrita. A alternativa B ignora como desigualdades econômicas afetam saúde. A alternativa D não corresponde aos fatos - organismos tiveram eficácia limitada. A alternativa E nega desigualdades evidentes de capacidades.",
+          "dificuldade": "facil",
+          "tags": ["COVID-19", "desigualdades", "saúde global"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Ataques cibernéticos representam nova dimensão dos conflitos internacionais, podendo desativar infraestruturas críticas, roubar informações estratégicas e interferir em processos democráticos. Diferentemente de guerras convencionais, a guerra cibernética caracteriza-se por:",
+          "alternativas": {
+            "A": "Ser facilmente atribuível, permitindo identificação imediata do país responsável",
+            "B": "Exigir confronto militar direto entre forças armadas em territórios físicos",
+            "C": "Dificuldade de atribuição e possibilidade de ataque sem confronto direto",
+            "D": "Afetar apenas questões econômicas, sem implicações para segurança nacional",
+            "E": "Ser irrelevante para países, afetando apenas empresas privadas"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque duas características fundamentais distinguem a guerra cibernética de conflitos convencionais. Primeiro, a dificuldade de atribuição: atacantes podem mascarar sua origem, usar intermediários, ou criar 'bandeiras falsas' para culpar terceiros, dificultando resposta proporcional. Segundo, não requer confronto direto: ataques podem ser lançados remotamente de qualquer lugar do mundo, sem presença física de tropas em território inimigo. Isso redefine conceitos de soberania, agressão e defesa. A alternativa A está incorreta - atribuição é justamente difícil, não fácil. A alternativa B contradiz a natureza da guerra cibernética, que dispensa confronto físico. A alternativa D subestima implicações de segurança nacional. A alternativa E ignora que Estados são principais atores em guerra cibernética.",
+          "dificuldade": "medio",
+          "tags": ["guerra cibernética", "segurança", "tecnologia"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "O fortalecimento de movimentos nacionalistas e populistas em diversos países nas últimas décadas é explicado por múltiplos fatores. Analise as explicações:\n\nI. Impactos sociais da globalização, com desemprego em setores tradicionais e precarização do trabalho.\nII. Crises econômicas que geraram descontentamento com elites políticas tradicionais.\nIII. A perfeita satisfação de todas as populações com a situação econômica e política.\nIV. O papel das redes sociais permitindo comunicação direta entre líderes e apoiadores.\n\nContribuem para explicar o fenômeno:",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "I, II e IV apenas",
+            "C": "II, III e IV apenas",
+            "D": "I, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta. A afirmação I é verdadeira porque a globalização gerou perdedores relativos: trabalhadores de indústrias tradicionais em países desenvolvidos enfrentaram desemprego devido à deslocalização produtiva e precarização, criando ressentimento. A afirmação II é verdadeira porque crises como a de 2008 e políticas de austeridade geraram descontentamento com elites políticas vistas como responsáveis ou incapazes de resolver problemas. A afirmação IV é verdadeira porque redes sociais permitiram que líderes populistas comunicassem-se diretamente com apoiadores, contornando mediações institucionais e midiáticas tradicionais, amplificando mensagens polarizadoras. A afirmação III está completamente incorreta - justamente a insatisfação e descontentamento explicam o fenômeno, não satisfação. Se houvesse satisfação generalizada, não veríamos ascensão de movimentos contestatórios.",
+          "dificuldade": "dificil",
+          "tags": ["populismo", "nacionalismo", "democracia"]
+        }
+      ]
+    }
+  ]
+}

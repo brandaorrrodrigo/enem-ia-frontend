@@ -1,0 +1,570 @@
+{
+  "id": "genetica-evolucao",
+  "slug": "genetica-evolucao",
+  "titulo": "Genética e Evolução",
+  "categoria": "natureza",
+  "nivel": "intermediario",
+  "descricao": "Estudo dos princípios da hereditariedade, genética molecular, DNA, mutações e teoria evolutiva para o ENEM",
+  "icone": "Dna",
+  "cor": "#8b5cf6",
+  "tempoEstimado": "8 horas",
+  "fpRecompensa": 0,
+  "tags": ["genética", "evolução", "DNA", "hereditariedade", "ENEM"],
+  "modulos": [
+    {
+      "id": "modulo01",
+      "titulo": "Primeira Lei de Mendel e Monoibridismo",
+      "resumo": "Fundamentos da genética mendeliana, conceitos de genes, alelos, dominância e segregação",
+      "topicos": [
+        {
+          "titulo": "Conceitos Fundamentais de Genética",
+          "conteudo": "A genética é a ciência que estuda a hereditariedade, ou seja, a transmissão de características de pais para filhos através de gerações. O gene é a unidade fundamental da hereditariedade, representando um segmento de DNA que contém informação para produção de uma característica. Cada gene ocupa uma posição específica no cromossomo chamada locus (plural: loci). Alelos são versões alternativas de um mesmo gene, podendo produzir variações de uma característica - por exemplo, gene para cor de flor pode ter alelo para cor roxa ou alelo para cor branca.\n\nOs organismos diploides possuem dois conjuntos de cromossomos, um herdado de cada genitor, portanto possuem dois alelos para cada gene. O genótipo é a constituição genética do indivíduo, ou seja, quais alelos ele possui. O fenótipo é a expressão observável do genótipo, a característica manifestada, resultante da interação entre genótipo e ambiente. Um indivíduo homozigoto possui dois alelos iguais para determinado gene (AA ou aa), enquanto heterozigoto possui alelos diferentes (Aa).\n\nA dominância ocorre quando um alelo (dominante) mascara a expressão de outro alelo (recessivo) no heterozigoto. Por convenção, alelos dominantes são representados por letras maiúsculas e recessivos por minúsculas. Por exemplo, se A é dominante para flor roxa e a é recessivo para flor branca, os genótipos AA e Aa produzem fenótipo roxo, apenas aa produz fenótipo branco. A dominância completa ocorre quando o fenótipo do heterozigoto é indistinguível do homozigoto dominante. Existem também outros padrões de herança como dominância incompleta e codominância.\n\nGregor Mendel, monge austríaco do século XIX, é considerado o pai da genética por seus experimentos com ervilhas (Pisum sativum). Escolheu características de fácil identificação (cor da flor, forma da semente, cor da vagem) que apresentavam apenas duas variações contrastantes. Realizou cruzamentos controlados entre linhagens puras (homozigóticas), obteve gerações híbridas e contabilizou proporções matemáticas nos descendentes. Seu trabalho estabeleceu bases científicas para hereditariedade, embora tenha sido ignorado por décadas e redescoberto apenas em 1900."
+        },
+        {
+          "titulo": "Primeira Lei de Mendel: Lei da Segregação",
+          "conteudo": "A Primeira Lei de Mendel, também chamada Lei da Segregação ou Lei da Pureza dos Gametas, estabelece que cada característica é determinada por um par de fatores (alelos) que se separam durante a formação dos gametas, indo apenas um fator para cada gameta. Assim, gametas são sempre puros (haploides), contendo apenas um alelo de cada gene. Na fecundação, a união de gametas masculino e feminino restaura a condição diploide, com par de alelos.\n\nMendel cruzou ervilhas de linhagem pura com flores roxas (PP) com ervilhas de linhagem pura com flores brancas (pp). A geração F1 (primeira geração filial) foi 100% roxa (Pp), demonstrando dominância do alelo para cor roxa. Quando plantas F1 foram autofecundadas, a geração F2 (segunda geração filial) apresentou proporção 3 roxas : 1 branca (3:1). Analisando geneticamente, a proporção genotípica em F2 é 1 PP : 2 Pp : 1 pp, mas fenotipicamente 3 roxas (PP + Pp) : 1 branca (pp).\n\nO quadro de Punnett é ferramenta gráfica para prever resultados de cruzamentos genéticos. Nas margens superior e lateral, colocam-se os gametas produzidos por cada genitor. Nas células internas, combinam-se os gametas para determinar genótipos dos descendentes. Por exemplo, cruzamento Aa x Aa: cada genitor produz gametas A e a (proporção 1:1); combinações possíveis são AA, Aa, aA, aa, resultando em proporção 1:4 AA, 2:4 Aa, 1:4 aa, ou simplificando, 1 AA : 2 Aa : 1 aa.\n\nO cruzamento-teste (ou retrocruzamento) é usado para determinar o genótipo de indivíduo com fenótipo dominante (que pode ser AA ou Aa). Cruza-se o indivíduo em questão com homozigoto recessivo (aa). Se o indivíduo for AA, todos os descendentes terão fenótipo dominante (100% Aa). Se for Aa, metade dos descendentes terá fenótipo dominante (Aa) e metade fenótipo recessivo (aa), proporção 1:1. Aparecimento de qualquer descendente recessivo comprova que o indivíduo testado era heterozigoto."
+        },
+        {
+          "titulo": "Variações da Herança Mendeliana",
+          "conteudo": "Na dominância incompleta (ou herança intermediária), o heterozigoto apresenta fenótipo intermediário entre os dois homozigotos, não havendo dominância completa. Exemplo clássico são flores maravilha (Mirabilis jalapa): plantas homozigotas para alelo vermelho (VV) têm flores vermelhas, homozigotas para alelo branco (BB) têm flores brancas, e heterozigotas (VB) têm flores rosas (intermediário). Cruzamento de heterozigotos VB x VB resulta em F2 com proporção fenotípica 1 vermelho : 2 rosa : 1 branco, igual à proporção genotípica.\n\nNa codominância, ambos os alelos se expressam simultaneamente no heterozigoto, sem mistura. O sistema ABO de grupos sanguíneos exemplifica: alelos IA e IB são codominantes entre si. Indivíduos IAIB expressam simultaneamente antígenos A e B na superfície das hemácias, caracterizando sangue tipo AB. Ambos diferem de alelo i (recessivo) que não produz antígenos. Genótipos possíveis: IAIA ou IAi (sangue A), IBIB ou IBi (sangue B), IAIB (sangue AB), ii (sangue O).\n\nAlelos letais causam morte do portador, geralmente em homozigose. Em camundongos, alelo Y (amarelo) é letal em homozigose (YY morre) mas em heterozigose (Yy) produz pelagem amarela, dominando sobre alelo y (cinza). Cruzamento de dois camundongos amarelos (Yy x Yy) produz descendentes na proporção 2 amarelos : 1 cinza (e não 3:1), pois 1/4 dos embriões (YY) morre. A proporção genotípica entre nascidos é 2 Yy : 1 yy, modificando a proporção mendeliana clássica.\n\nA pleiotropia ocorre quando um único gene influencia múltiplas características fenotípicas aparentemente não relacionadas. Exemplo importante é a anemia falciforme: mutação no gene da hemoglobina causa não apenas deformação das hemácias (formato de foice), mas também anemia, dores articulares, problemas circulatórios, suscetibilidade a infecções, danos em órgãos. Um único gene defeituoso produz múltiplos efeitos em cascata, demonstrando interconexão de processos biológicos."
+        },
+        {
+          "titulo": "Genealogias e Heredogramas",
+          "conteudo": "Heredogramas (ou árvores genealógicas) são diagramas que representam relações de parentesco em famílias e transmissão de características através de gerações. Símbolos padronizados incluem: quadrados representam indivíduos do sexo masculino, círculos representam feminino; símbolos preenchidos indicam indivíduos afetados por determinada característica, vazios indicam não afetados; linha horizontal conectando quadrado e círculo representa casal; linha vertical descendo do casal conecta aos filhos; gerações são numeradas com algarismos romanos (I, II, III) e indivíduos com algarismos arábicos.\n\nPara determinar se uma característica é dominante ou recessiva analisando heredograma, observa-se: se pais não afetados têm filho afetado, a característica é recessiva (pais heterozigotos Aa x Aa podem ter filho aa); se pelo menos um dos pais é afetado e todos os filhos são afetados, pode ser dominante; se característica 'pula gerações' (presente em avós e netos mas não em pais), é recessiva. Características recessivas geralmente aparecem esporadicamente em heredogramas, enquanto dominantes aparecem em todas as gerações quando presentes.\n\nA consanguinidade (casamento entre parentes) aumenta probabilidade de doenças genéticas recessivas na descendência. Parentes compartilham maior proporção de alelos que indivíduos não relacionados. Se ambos os pais carregam alelo recessivo deletério (mesmo que heterozigotos e não afetados), há 25% de chance de cada filho ser homozigoto recessivo afetado. Quanto mais próximo o parentesco, maior a probabilidade de compartilharem alelos recessivos raros, explicando por que muitas culturas e legislações desencorajam ou proíbem casamentos consanguíneos.\n\nDoenças autossômicas recessivas em humanos incluem: fibrose cística (acúmulo de muco espesso em pulmões e pâncreas), fenilcetonúria (incapacidade de metabolizar aminoácido fenilalanina), anemia falciforme (hemácias deformadas). Indivíduos afetados são homozigotos recessivos (aa), pais são geralmente heterozigotos não afetados (Aa). Doenças autossômicas dominantes incluem: acondroplasia (nanismo), doença de Huntington (neurodegenerativa), polidactilia (dedos extras). Basta um alelo dominante para manifestação, indivíduos afetados são AA ou Aa."
+        }
+      ],
+      "exemplos": [
+        "Cruzamento de ervilhas roxas (Pp) resultando em descendentes 3 roxos : 1 branco, demonstrando segregação",
+        "Sistema sanguíneo ABO mostrando codominância entre IA e IB, e recessividade de i",
+        "Heredograma de família com albinismo (recessivo) onde pais não afetados têm filho albino"
+      ],
+      "dicas": [
+        "Em questões ENEM, identifique primeiro se característica é dominante ou recessiva observando os cruzamentos",
+        "Lembre: gametas são sempre puros (haploides), contendo apenas um alelo de cada gene",
+        "Proporção 3:1 em F2 indica dominância completa; 1:2:1 indica dominância incompleta ou codominância",
+        "Em heredogramas, característica que 'pula geração' é sempre recessiva"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Em ervilhas, a cor roxa da flor é dominante sobre a cor branca. Um pesquisador cruzou uma planta de flor roxa com uma planta de flor branca e obteve 50% de descendentes com flores roxas e 50% com flores brancas. Qual é o genótipo da planta de flor roxa utilizada no cruzamento?",
+          "alternativas": {
+            "A": "Homozigoto dominante (PP), pois produziu descendentes roxos",
+            "B": "Heterozigoto (Pp), pois produziu descendentes de ambos os fenótipos",
+            "C": "Homozigoto recessivo (pp), pois produziu descendentes brancos",
+            "D": "Não é possível determinar apenas com essas informações",
+            "E": "Heterozigoto duplo, carregando dois pares de alelos"
+          },
+          "correta": "B",
+          "explicacao": "A planta de flor branca só pode ser homozigota recessiva (pp), pois é o único genótipo que expressa o fenótipo recessivo. Se a planta roxa fosse homozigota dominante (PP), todos os descendentes seriam heterozigotos (Pp) e teriam flores roxas (100%). O fato de metade dos descendentes serem brancos (pp) indica que a planta roxa é heterozigota (Pp). O cruzamento Pp x pp produz: 50% Pp (roxo) e 50% pp (branco), proporção 1:1. Este é exemplo de cruzamento-teste que revela o genótipo de indivíduo com fenótipo dominante.",
+          "dificuldade": "medio",
+          "tags": ["primeira lei de Mendel", "monoibridismo", "cruzamento-teste"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Na planta maravilha (Mirabilis jalapa), a cor das flores apresenta herança com dominância incompleta. Plantas com genótipo VV têm flores vermelhas, BB têm flores brancas, e VB têm flores rosas. Qual será a proporção fenotípica esperada no cruzamento entre duas plantas de flores rosas?",
+          "alternativas": {
+            "A": "100% rosas",
+            "B": "3 vermelhas : 1 branca",
+            "C": "1 vermelha : 2 rosas : 1 branca",
+            "D": "3 rosas : 1 branca",
+            "E": "1 vermelha : 3 rosas"
+          },
+          "correta": "C",
+          "explicacao": "Plantas com flores rosas são heterozigotas (VB). No cruzamento VB x VB, os gametas possíveis são V e B de cada genitor. As combinações resultantes são: 1/4 VV (vermelha), 2/4 VB (rosa), 1/4 BB (branca), proporção 1:2:1. Na dominância incompleta, o heterozigoto tem fenótipo intermediário, portanto a proporção fenotípica coincide com a genotípica. Isso difere da dominância completa onde a proporção fenotípica seria 3:1 (dominante:recessivo). A dominância incompleta permite distinguir visualmente os três genótipos possíveis.",
+          "dificuldade": "medio",
+          "tags": ["dominância incompleta", "proporções genéticas", "herança"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "O sistema ABO de grupos sanguíneos é determinado por três alelos: IA, IB (codominantes entre si) e i (recessivo). Um casal em que o homem tem sangue tipo A e a mulher tem sangue tipo B teve um filho com sangue tipo O. Quais são os genótipos dos pais?",
+          "alternativas": {
+            "A": "Homem IAIA e mulher IBIB",
+            "B": "Homem IAi e mulher IBi",
+            "C": "Homem IAIB e mulher ii",
+            "D": "Homem IAi e mulher IBIB",
+            "E": "Homem IAIA e mulher IBi"
+          },
+          "correta": "B",
+          "explicacao": "O filho tem sangue tipo O, genótipo ii (homozigoto recessivo). Isso significa que herdou alelo i de cada genitor. O homem com sangue tipo A poderia ser IAIA ou IAi, mas como passou alelo i para o filho, só pode ser IAi. A mulher com sangue tipo B poderia ser IBIB ou IBi, mas como também passou alelo i para o filho, só pode ser IBi. O cruzamento IAi x IBi pode produzir filhos com todos os tipos sanguíneos: IAIB (AB), IAi (A), IBi (B), ii (O), cada um com 25% de probabilidade. Este é exemplo clássico de codominância e como filhos podem ter fenótipos diferentes dos pais.",
+          "dificuldade": "medio",
+          "tags": ["codominância", "sistema ABO", "herança"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Analisando o heredograma de uma família, observa-se que dois indivíduos não afetados por determinada característica tiveram uma criança afetada. Em gerações anteriores, essa característica não aparecia. Com base nessas informações, é correto concluir que a característica é:",
+          "alternativas": {
+            "A": "Autossômica dominante, pois apareceu em filho de pais normais",
+            "B": "Autossômica recessiva, pois pais heterozigotos tiveram filho homozigoto recessivo",
+            "C": "Ligada ao sexo dominante, expressa apenas em homens",
+            "D": "Ligada ao sexo recessiva, expressa apenas em mulheres",
+            "E": "Codominante, pois os pais têm genótipos diferentes"
+          },
+          "correta": "B",
+          "explicacao": "Quando pais não afetados têm filho afetado, a característica é necessariamente recessiva. Os pais são heterozigotos (Aa), fenotipicamente normais, mas portadores do alelo recessivo. O cruzamento Aa x Aa produz 25% de chance de filho homozigoto recessivo (aa) afetado. Se a característica fosse dominante, pelo menos um dos pais precisaria ser afetado para transmitir o alelo dominante. O fato de a característica não aparecer em gerações anteriores também é típico de características recessivas raras, que só se manifestam quando dois portadores se encontram. Não há informações suficientes para determinar se é ligada ao sexo.",
+          "dificuldade": "medio",
+          "tags": ["heredograma", "herança recessiva", "genealogia"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "A anemia falciforme é causada por mutação no gene da hemoglobina. Indivíduos homozigotos (HbSHbS) têm anemia grave, heterozigotos (HbAHbS) têm sintomas leves, e homozigotos normais (HbAHbA) são saudáveis. Além da anemia, indivíduos com alelo HbS podem ter dores articulares, problemas circulatórios e suscetibilidade a infecções. Esse fenômeno genético onde um gene afeta múltiplas características é chamado:",
+          "alternativas": {
+            "A": "Codominância, pois ambos os alelos se expressam",
+            "B": "Dominância incompleta, pois heterozigoto é intermediário",
+            "C": "Pleiotropia, pois um gene influencia várias características",
+            "D": "Epistasia, pois um gene mascara efeito de outro",
+            "E": "Herança poligênica, pois vários genes estão envolvidos"
+          },
+          "correta": "C",
+          "explicacao": "Pleiotropia ocorre quando um único gene afeta múltiplas características fenotípicas. No caso da anemia falciforme, uma única mutação no gene da hemoglobina causa não apenas deformação das hemácias, mas também anemia, dores, problemas circulatórios, suscetibilidade a infecções - múltiplos efeitos em cascata de uma única alteração genética. Embora o caso também apresente dominância incompleta (heterozigoto tem fenótipo intermediário), a questão enfoca especificamente o fato de um gene afetar várias características. Codominância seria se ambos os fenótipos parentais aparecessem simultaneamente sem mistura.",
+          "dificuldade": "medio",
+          "tags": ["pleiotropia", "anemia falciforme", "efeitos gênicos"]
+        }
+      ]
+    },
+    {
+      "id": "modulo02",
+      "titulo": "Segunda Lei de Mendel e Polibridismo",
+      "resumo": "Herança de duas ou mais características simultaneamente, segregação independente e probabilidades",
+      "topicos": [
+        {
+          "titulo": "Segunda Lei de Mendel: Lei da Segregação Independente",
+          "conteudo": "A Segunda Lei de Mendel, ou Lei da Segregação Independente, estabelece que genes para características diferentes segregam-se independentemente durante a formação dos gametas, desde que estejam localizados em cromossomos diferentes (não ligados). Isso significa que a herança de uma característica não interfere na herança de outra. Por exemplo, alelos para cor da semente segregam independentemente dos alelos para forma da semente, produzindo todas as combinações possíveis de gametas com probabilidades iguais.\n\nMendel estudou cruzamentos envolvendo duas características simultaneamente (diibridismo). Cruzou ervilhas de linhagem pura com sementes amarelas e lisas (VVRR) com ervilhas de sementes verdes e rugosas (vvrr). A geração F1 foi 100% amarela e lisa (VvRr), confirmando dominância de amarelo sobre verde e liso sobre rugoso. Quando plantas F1 foram autofecundadas, a geração F2 apresentou proporção fenotípica 9:3:3:1 (9 amarelas lisas : 3 amarelas rugosas : 3 verdes lisas : 1 verde rugosa).\n\nA proporção 9:3:3:1 é característica de diibridismo com dominância completa e segregação independente. Resulta da multiplicação das proporções 3:1 de cada característica individualmente: (3 amarelas : 1 verde) x (3 lisas : 1 rugosa) = 9 amarelas lisas : 3 amarelas rugosas : 3 verdes lisas : 1 verde rugosa. Esta proporção só ocorre quando os genes estão em cromossomos diferentes, permitindo segregação independente. Genes no mesmo cromossomo (ligados) não seguem essa proporção.\n\nNo diibridismo VvRr x VvRr, cada genitor produz quatro tipos de gametas em proporções iguais: VR, Vr, vR, vr (25% cada). O quadro de Punnett 4x4 mostra as 16 combinações possíveis de gametas. A proporção genotípica é: 1 VVRR : 2 VVRr : 2 VvRR : 4 VvRr : 1 VVrr : 2 Vvrr : 1 vvRR : 2 vvRr : 1 vvrr. Agrupando por fenótipo: 9 amarelas lisas (V_R_) : 3 amarelas rugosas (V_rr) : 3 verdes lisas (vvR_) : 1 verde rugosa (vvrr)."
+        },
+        {
+          "titulo": "Cálculos de Probabilidade em Genética",
+          "conteudo": "A regra do 'E' (multiplicação) é usada quando queremos probabilidade de dois ou mais eventos independentes ocorrerem simultaneamente. Multiplicam-se as probabilidades individuais. Exemplo: qual a probabilidade de nascer uma criança do sexo masculino (1/2) E com sangue tipo O (1/4) de um casal específico? Resposta: 1/2 x 1/4 = 1/8 ou 12,5%. A palavra 'e' na questão indica que devemos multiplicar.\n\nA regra do 'OU' (adição) é usada quando queremos probabilidade de um evento OU outro evento mutuamente exclusivo ocorrer. Somam-se as probabilidades. Exemplo: qual a probabilidade de nascer uma criança com sangue tipo A (1/4) OU tipo B (1/4)? Resposta: 1/4 + 1/4 = 1/2 ou 50%. A palavra 'ou' indica que devemos somar. Eventos mutuamente exclusivos não podem ocorrer simultaneamente.\n\nPara calcular probabilidades em cruzamentos genéticos, primeiro determina-se a probabilidade de cada genótipo ou fenótipo individualmente para cada gene, depois aplica-se regra do 'E' para características simultâneas. Exemplo: no cruzamento AaBb x AaBb, qual probabilidade de descendente aaBb? Para aa: 1/4 (de Aa x Aa); para Bb: 1/2 (de Bb x Bb). Probabilidade de aa E Bb = 1/4 x 1/2 = 1/8.\n\nO número de tipos de gametas produzidos por um indivíduo heterozigoto para n genes independentes é 2^n. Um heterozigoto para um gene (Aa) produz 2¹ = 2 tipos de gametas (A, a). Um diibridismo heterozigoto (AaBb) produz 2² = 4 tipos (AB, Ab, aB, ab). Um triibridismo (AaBbCc) produz 2³ = 8 tipos. Isso vale apenas para genes em cromossomos diferentes (não ligados). O número de genótipos possíveis em F2 é 3^n, e o número de fenótipos é 2^n (com dominância completa)."
+        },
+        {
+          "titulo": "Poliibridismo e Herança de Múltiplos Genes",
+          "conteudo": "Poliibridismo envolve estudo simultâneo de três ou mais pares de genes. O triibridismo (três pares de genes) segue os mesmos princípios da Segunda Lei de Mendel. Um indivíduo triibridismo heterozigoto (AaBbCc) produz 8 tipos diferentes de gametas: ABC, ABc, AbC, Abc, aBC, aBc, abC, abc. O cruzamento AaBbCc x AaBbCc em F2 produz 64 combinações possíveis de gametas (8 x 8), resultando em proporção fenotípica 27:9:9:9:3:3:3:1 quando há dominância completa.\n\nA análise de características envolvendo múltiplos genes pode ser simplificada separando cada gene individualmente. Por exemplo, no cruzamento AaBbCc x AaBbCc, para saber a probabilidade de descendente A_B_cc, analisa-se: probabilidade de A_ (3/4 de Aa x Aa), probabilidade de B_ (3/4 de Bb x Bb), probabilidade de cc (1/4 de Cc x Cc). Multiplicando: 3/4 x 3/4 x 1/4 = 9/64.\n\nA herança quantitativa (ou poligênica) ocorre quando múltiplos genes contribuem aditivamente para uma característica, resultando em variação contínua ao invés de categorias discretas. Exemplos em humanos incluem altura, cor da pele, peso, inteligência. Cada gene contribui com pequeno efeito aditivo. Por exemplo, se três genes (A, B, C) determinam altura, cada alelo maiúsculo adiciona 10 cm à altura base. Genótipo aabbcc (altura mínima) pode ter 150 cm, enquanto AABBCC (altura máxima) pode ter 210 cm, com genótipos intermediários produzindo alturas intermediárias.\n\nNa herança poligênica, a distribuição fenotípica segue curva normal (em forma de sino): a maioria dos indivíduos tem fenótipo intermediário, e poucos têm fenótipos extremos. Quanto maior o número de genes envolvidos, mais suave e contínua é a curva. Fatores ambientais também influenciam características poligênicas - por exemplo, altura depende não apenas de genes, mas também de nutrição. A herdabilidade mede proporção da variação fenotípica atribuível a diferenças genéticas versus ambientais."
+        },
+        {
+          "titulo": "Interação Gênica e Epistasia",
+          "conteudo": "Interação gênica ocorre quando dois ou mais genes não alelos (genes diferentes) interagem para determinar uma única característica fenotípica, modificando as proporções mendelianas clássicas. Difere da herança de características independentes onde cada gene determina uma característica distinta. Na interação gênica, múltiplos genes colaboram para produzir um único fenótipo, com um gene podendo influenciar ou modificar a expressão de outro.\n\nEpistasia é tipo de interação gênica onde alelos de um gene (epistático) mascaram ou suprimem a expressão de alelos de outro gene (hipostático). Exemplo clássico é cor de pelagem em camundongos: gene C permite produção de pigmento (C dominante, c impede), gene A determina distribuição do pigmento (A produz aguti, a produz preto). Camundongo deve ter pelo menos um alelo C para ter pigmento; cc é sempre albino, independentemente do genótipo para gene A.\n\nNo cruzamento CcAa x CcAa para pelagem de camundongos, a proporção fenotípica modificada é 9:3:4 (9 aguti : 3 preto : 4 albino), diferente do 9:3:3:1 clássico. Os 3 que seriam C_aa (preto) aparecem, mas os 3 que seriam ccA_ e o 1 que seria ccaa são todos albinos (cc), somando 4. O gene c é epistático sobre A, pois cc impede expressão da cor independentemente do alelo A presente.\n\nA epistasia dominante ocorre quando alelo dominante de um gene mascara expressão de outro gene. A epistasia recessiva ocorre quando alelo recessivo em homozigose mascara outro gene. A epistasia pode resultar em diversas proporções fenotípicas modificadas: 9:3:4, 9:7, 12:3:1, 13:3, dependendo do tipo de interação. Essas proporções modificadas em F2 são pistas importantes para identificar epistasia em problemas genéticos do ENEM, distinguindo-a da herança mendeliana clássica."
+        }
+      ],
+      "exemplos": [
+        "Cruzamento diibridismo de ervilhas VvRr x VvRr resultando em proporção 9:3:3:1 em F2",
+        "Cor de pelagem em cães Labrador determinada por interação entre genes para deposição e produção de pigmento",
+        "Cor da pele humana como exemplo de herança poligênica com distribuição contínua"
+      ],
+      "dicas": [
+        "Proporção 9:3:3:1 em F2 indica diibridismo com segregação independente e dominância completa",
+        "Use regra do 'E' (multiplicação) para eventos simultâneos, regra do 'OU' (adição) para eventos alternativos",
+        "Proporções modificadas em F2 (9:3:4, 9:7, etc.) sugerem interação gênica ou epistasia",
+        "Número de gametas diferentes = 2^n, onde n é o número de genes heterozigotos independentes"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Em ervilhas, sementes amarelas (V) são dominantes sobre verdes (v), e sementes lisas (R) são dominantes sobre rugosas (r). No cruzamento entre duas plantas diibridismo heterozigotas (VvRr x VvRr), qual é a probabilidade de obter uma planta com sementes verdes e lisas?",
+          "alternativas": {
+            "A": "1/16",
+            "B": "3/16",
+            "C": "1/4",
+            "D": "3/4",
+            "E": "9/16"
+          },
+          "correta": "B",
+          "explicacao": "Plantas com sementes verdes e lisas têm fenótipo vv R_ (onde _ pode ser R ou r). Analisando cada gene separadamente: Para ser verde (vv): no cruzamento Vv x Vv, probabilidade de vv é 1/4. Para ser lisa (R_): no cruzamento Rr x Rr, probabilidade de R_ (RR ou Rr) é 3/4. Usando regra do 'E' (multiplicação) para eventos simultâneos: 1/4 x 3/4 = 3/16. Na proporção 9:3:3:1 do diibridismo, as 3 plantas verdes e lisas representam exatamente 3/16 do total de 16 descendentes possíveis.",
+          "dificuldade": "medio",
+          "tags": ["segunda lei de Mendel", "diibridismo", "probabilidade"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Um casal, ambos com tipo sanguíneo A e heterozigotos (IAi), deseja ter três filhos. Qual é a probabilidade de os três filhos terem tipo sanguíneo O?",
+          "alternativas": {
+            "A": "1/4",
+            "B": "1/16",
+            "C": "1/64",
+            "D": "3/4",
+            "E": "1/12"
+          },
+          "correta": "C",
+          "explicacao": "No cruzamento IAi x IAi, a probabilidade de cada filho ter tipo O (ii) é 1/4. A questão pede probabilidade de três filhos independentes terem tipo O simultaneamente. Usando regra do 'E', multiplicamos as probabilidades: primeiro filho tipo O (1/4) E segundo filho tipo O (1/4) E terceiro filho tipo O (1/4) = 1/4 x 1/4 x 1/4 = 1/64. Cada nascimento é evento independente - o tipo sanguíneo de um filho não afeta o do próximo. Esta é aplicação importante da regra de multiplicação para eventos independentes simultâneos.",
+          "dificuldade": "medio",
+          "tags": ["probabilidade", "regra da multiplicação", "sistema ABO"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Em camundongos, o gene C permite produção de pigmento (C_) enquanto cc resulta em albinismo. O gene A determina a distribuição: A_ produz pelagem aguti (selvagem) e aa produz pelagem preta. No cruzamento CcAa x CcAa, qual será a proporção fenotípica esperada na descendência?",
+          "alternativas": {
+            "A": "9 aguti : 3 preto : 3 albino : 1 branco",
+            "B": "9 aguti : 3 preto : 4 albino",
+            "C": "3 aguti : 1 albino",
+            "D": "12 aguti : 3 preto : 1 albino",
+            "E": "9 aguti : 7 albino"
+          },
+          "correta": "B",
+          "explicacao": "Este é exemplo clássico de epistasia recessiva. O genótipo cc (albino) é epistático sobre o gene A, impedindo expressão de qualquer cor. Análise: 9/16 têm C_A_ (aguti com pigmento), 3/16 têm C_aa (preto com pigmento), 3/16 têm ccA_ (albino sem pigmento), 1/16 tem ccaa (albino sem pigmento). Os albinos ccA_ e ccaa somam 4/16. Proporção final: 9:3:4. Esta proporção modificada (diferente do 9:3:3:1 clássico) é característica de epistasia, onde um gene interfere na expressão de outro. A presença de cc impede qualquer pigmentação, independentemente do genótipo para gene A.",
+          "dificuldade": "dificil",
+          "tags": ["epistasia", "interação gênica", "proporções modificadas"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Um indivíduo com genótipo AaBbCcDd para quatro genes localizados em cromossomos diferentes produzirá quantos tipos diferentes de gametas?",
+          "alternativas": {
+            "A": "4 tipos",
+            "B": "8 tipos",
+            "C": "16 tipos",
+            "D": "32 tipos",
+            "E": "64 tipos"
+          },
+          "correta": "C",
+          "explicacao": "O número de tipos diferentes de gametas produzidos por um indivíduo heterozigoto para n genes independentes (em cromossomos diferentes) é calculado por 2^n. Neste caso, o indivíduo é heterozigoto para 4 genes (A, B, C, D), portanto n=4. Cálculo: 2^4 = 16 tipos diferentes de gametas. Cada gene heterozigoto pode contribuir com 2 alelos diferentes para os gametas, e a combinação independente de 4 genes resulta em 2×2×2×2 = 16 possibilidades. Alguns exemplos: ABCD, ABCd, ABcD, ABcd, AbCD, e assim por diante, totalizando 16 combinações únicas.",
+          "dificuldade": "medio",
+          "tags": ["poliibridismo", "gametas", "segregação independente"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "A cor da pele humana é determinada por herança poligênica, com pelo menos três genes (A, B, C) contribuindo aditivamente. Considerando que cada alelo maiúsculo adiciona pigmentação, qual será o fenótipo mais frequente no cruzamento entre dois indivíduos de pigmentação intermediária (AaBbCc x AaBbCc)?",
+          "alternativas": {
+            "A": "Pigmentação mais clara (aabbcc)",
+            "B": "Pigmentação mais escura (AABBCC)",
+            "C": "Pigmentação intermediária (três alelos maiúsculos)",
+            "D": "Todos os fenótipos aparecerão em igual proporção",
+            "E": "Apenas pigmentação clara e escura, sem intermediários"
+          },
+          "correta": "C",
+          "explicacao": "Na herança poligênica, a distribuição fenotípica segue curva normal. No cruzamento AaBbCc x AaBbCc, os descendentes terão de 0 a 6 alelos maiúsculos. O número mais provável é 3 alelos maiúsculos (pigmentação intermediária), pois há mais combinações genotípicas que resultam nesse fenótipo. Genótipos extremos (aabbcc com 0 alelos maiúsculos ou AABBCC com 6) são raros, cada um aparecendo em apenas 1/64 dos descendentes. A maioria dos descendentes terá fenótipo intermediário aos pais, característico de herança poligênica, onde fenótipos intermediários são mais frequentes que extremos.",
+          "dificuldade": "medio",
+          "tags": ["herança poligênica", "distribuição fenotípica", "genética quantitativa"]
+        }
+      ]
+    },
+    {
+      "id": "modulo03",
+      "titulo": "Genética Molecular: DNA e Síntese Proteica",
+      "resumo": "Estrutura e função do DNA, RNA, replicação, transcrição, tradução e código genético",
+      "topicos": [
+        {
+          "titulo": "Estrutura e Composição do DNA",
+          "conteudo": "O ácido desoxirribonucleico (DNA) é a molécula que armazena informação genética em todos os seres vivos (exceto alguns vírus que usam RNA). É um polímero formado por unidades chamadas nucleotídeos. Cada nucleotídeo é composto por três partes: um açúcar (desoxirribose), um grupo fosfato e uma base nitrogenada. As bases nitrogenadas são de dois tipos: purinas (adenina-A e guanina-G, com estrutura de dois anéis) e pirimidinas (citosina-C e timina-T, com estrutura de um anel).\n\nA estrutura do DNA foi elucidada por James Watson e Francis Crick em 1953, baseando-se em dados de difração de raios-X de Rosalind Franklin. O DNA tem estrutura de dupla hélice: duas cadeias polinucleotídicas antiparalelas (uma corre em direção 5'→3' e outra 3'→5') enroladas uma na outra. As cadeias são mantidas juntas por pontes de hidrogênio entre bases nitrogenadas complementares: adenina pareia com timina (A-T) através de duas pontes de hidrogênio, citosina pareia com guanina (C-G) através de três pontes de hidrogênio.\n\nO pareamento complementar de bases (regra de Chargaff) determina que em qualquer molécula de DNA, a quantidade de adenina é igual à de timina, e a quantidade de citosina é igual à de guanina. Isso ocorre porque cada A em uma fita pareia com T na fita complementar, e cada C pareia com G. Essa complementaridade é fundamental para replicação do DNA - cada fita serve como molde para síntese de nova fita complementar. O diâmetro da dupla hélice é constante porque purina (2 anéis) sempre pareia com pirimidina (1 anel).\n\nEm células eucarióticas, o DNA está organizado em cromossomos dentro do núcleo. O DNA se associa a proteínas histonas formando nucleossomos (DNA enrolado em histonas como linha em carretel), que se compactam em níveis progressivos formando cromatina. Durante divisão celular, cromatina condensa-se formando cromossomos visíveis ao microscópio. Em procariontes, DNA é circular e localiza-se em região chamada nucleoide, não envolvido por membrana. Mitocôndrias e cloroplastos também contêm DNA circular próprio, evidência de origem endossimbiótica."
+        },
+        {
+          "titulo": "Replicação do DNA",
+          "conteudo": "A replicação do DNA é o processo de duplicação da molécula, essencial para que informação genética seja transmitida de célula-mãe para células-filhas durante divisão celular. É semiconservativa: cada molécula-filha de DNA contém uma fita original (molde) e uma fita recém-sintetizada. Isso foi demonstrado por Meselson e Stahl em 1958 através de experimento com isótopos de nitrogênio, confirmando modelo proposto por Watson e Crick.\n\nO processo inicia em regiões específicas chamadas origens de replicação. A enzima helicase rompe pontes de hidrogênio entre bases complementares, separando as duas fitas de DNA (desnaturação). Proteínas de ligação a fita simples estabilizam as fitas separadas. A topoisomerase alivia tensão causada pelo desenrolamento da dupla hélice. A enzima primase sintetiza primers (pequenos segmentos iniciadores de RNA) necessários para início da síntese de DNA.\n\nA DNA polimerase é a enzima principal que sintetiza novas fitas de DNA, adicionando nucleotídeos complementares às fitas-molde seguindo direção 5'→3'. Uma fita (líder ou contínua) é sintetizada continuamente na mesma direção do desenrolamento. A outra fita (retardada ou descontínua) é sintetizada em fragmentos curtos chamados fragmentos de Okazaki, pois deve crescer na direção oposta ao desenrolamento. A DNA ligase une os fragmentos de Okazaki, formando fita contínua.\n\nErros de replicação ocorrem raramente (cerca de 1 erro a cada 10 bilhões de nucleotídeos) devido a mecanismos de revisão. A DNA polimerase tem atividade exonuclease 3'→5', permitindo correção de erros: se nucleotídeo incorreto é incorporado, a enzima remove e substitui pelo correto. Sistemas de reparo pós-replicação identificam e corrigem bases mal pareadas. Mutações persistentes (não reparadas) podem ser transmitidas para células-filhas, sendo fonte de variabilidade genética mas também potencialmente causando doenças."
+        },
+        {
+          "titulo": "Transcrição: Síntese de RNA",
+          "conteudo": "A transcrição é o processo de síntese de RNA a partir de um molde de DNA. Transfere informação do DNA (permanente) para RNA (temporário) que pode sair do núcleo e direcionar síntese proteica. O RNA (ácido ribonucleico) difere do DNA em três aspectos: contém açúcar ribose (não desoxirribose), é geralmente fita simples (não dupla), contém base uracila (U) em vez de timina (T) que pareia com adenina.\n\nExistem três tipos principais de RNA. O RNA mensageiro (RNAm) carrega informação genética do DNA para ribossomos, especificando sequência de aminoácidos de proteínas. O RNA ribossômico (RNAr) é componente estrutural dos ribossomos, organelas onde ocorre tradução. O RNA transportador (RNAt) transporta aminoácidos específicos até ribossomos durante síntese proteica, reconhecendo códons no RNAm.\n\nA transcrição em eucariontes ocorre no núcleo e envolve três etapas. Na iniciação, enzima RNA polimerase liga-se a sequências promotoras no DNA (região TATA box), separando as fitas de DNA. Na elongação, RNA polimerase percorre DNA na direção 3'→5' da fita-molde, sintetizando RNA na direção 5'→3', adicionando ribonucleotídeos complementares (A pareia com U, C com G, G com C, T com A). Na terminação, RNA polimerase encontra sequência terminadora, liberando RNAm recém-sintetizado.\n\nEm eucariontes, o transcrito primário (pré-RNAm) sofre processamento pós-transcricional antes de sair do núcleo. Adição de cap 5' (metilguanosina) na extremidade 5' protege RNA de degradação. Adição de cauda poli-A (sequência de adeninas) na extremidade 3' também confere estabilidade. Splicing remove íntrons (sequências não codificantes) e une éxons (sequências codificantes). Splicing alternativo permite que um gene produza múltiplas proteínas diferentes, aumentando diversidade proteica sem aumentar número de genes."
+        },
+        {
+          "titulo": "Tradução e Código Genético",
+          "conteudo": "A tradução é o processo de síntese de proteínas usando informação contida no RNAm. Ocorre nos ribossomos, no citoplasma. O código genético é o conjunto de regras que relaciona sequência de nucleotídeos no RNAm com sequência de aminoácidos na proteína. É baseado em trincas de nucleotídeos chamadas códons - cada códon (três bases consecutivas) especifica um aminoácido ou sinal de parada.\n\nO código genético é universal (usado por quase todos os organismos), degenerado (vários códons podem especificar o mesmo aminoácido), não ambíguo (cada códon especifica apenas um aminoácido), e sem pontuação (lido continuamente sem espaços). Existem 64 códons possíveis (4³ = 64 combinações de três bases) para especificar 20 aminoácidos. Três códons são de terminação (UAA, UAG, UGA) que sinalizam fim da tradução. O códon AUG codifica metionina e também funciona como códon iniciador.\n\nOs RNAt são adaptadores moleculares que conectam códons do RNAm a aminoácidos específicos. Cada RNAt tem estrutura em forma de trevo, com anticodon (sequência de três bases complementar a um códon no RNAm) em uma extremidade e sítio de ligação para aminoácido específico na outra extremidade. Enzimas aminoacil-tRNA sintetases ligam cada aminoácido ao RNAt correto, garantindo tradução precisa do código genético.\n\nA tradução ocorre em três etapas. Na iniciação, RNAm liga-se à subunidade menor do ribossomo, RNAt iniciador (portando metionina) reconhece códon AUG, subunidade maior se liga formando ribossomo completo. Na elongação, aminoácidos são adicionados sequencialmente: RNAt com anticodon complementar entra no sítio A do ribossomo, ligação peptídica forma-se entre aminoácidos, ribossomo desloca-se um códon, processo repete. Na terminação, códon de parada (UAA, UAG ou UGA) é reconhecido por fatores de liberação, cadeia polipeptídica é liberada, ribossomo se dissocia. Proteína pode sofrer modificações pós-traducionais (dobramento, adição de grupos químicos) antes de se tornar funcional."
+        }
+      ],
+      "exemplos": [
+        "Replicação semiconservativa do DNA demonstrada por experimento de Meselson-Stahl com isótopos",
+        "Splicing alternativo do gene da tropomiosina gerando diferentes proteínas em diferentes tecidos",
+        "Mutação pontual no gene da hemoglobina causando anemia falciforme (GAA→GUA, ácido glutâmico→valina)"
+      ],
+      "dicas": [
+        "DNA tem timina (T), RNA tem uracila (U) - diferença fundamental frequentemente cobrada",
+        "Replicação é semiconservativa: cada molécula-filha tem uma fita antiga e uma nova",
+        "Fluxo da informação genética: DNA → RNA (transcrição) → Proteína (tradução)",
+        "Códon AUG é iniciador (metionina) e UAA, UAG, UGA são terminadores - memorize"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Uma molécula de DNA apresenta 30% de bases timina. De acordo com as regras de pareamento de bases de Chargaff, qual é o percentual de bases guanina nessa molécula?",
+          "alternativas": {
+            "A": "20%",
+            "B": "30%",
+            "C": "35%",
+            "D": "40%",
+            "E": "70%"
+          },
+          "correta": "A",
+          "explicacao": "Pela regra de Chargaff, adenina pareia com timina (A=T) e citosina pareia com guanina (C=G). Se timina representa 30%, adenina também representa 30%, totalizando 60%. Os 40% restantes são divididos igualmente entre citosina e guanina: 20% de guanina e 20% de citosina. A soma sempre deve ser 100%. Esta relação decorre do pareamento complementar de bases na estrutura de dupla hélice do DNA, onde cada purina (A ou G) pareia especificamente com uma pirimidina (T ou C).",
+          "dificuldade": "medio",
+          "tags": ["estrutura do DNA", "pareamento de bases", "Chargaff"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "No experimento clássico de Meselson e Stahl (1958), bactérias foram cultivadas em meio com nitrogênio pesado (¹⁵N) por várias gerações, depois transferidas para meio com nitrogênio normal (¹⁴N). Após uma replicação em ¹⁴N, as moléculas de DNA apresentaram densidade intermediária. Esse resultado confirmou qual modelo de replicação?",
+          "alternativas": {
+            "A": "Conservativo, onde molécula original permanece intacta",
+            "B": "Semiconservativo, onde cada molécula-filha tem uma fita original e uma nova",
+            "C": "Dispersivo, onde fragmentos de DNA original e novo se misturam",
+            "D": "Randômico, onde fitas se distribuem aleatoriamente",
+            "E": "Completamente novo, onde todo DNA é sintetizado de novo"
+          },
+          "correta": "B",
+          "explicacao": "O resultado de densidade intermediária após uma replicação confirma o modelo semiconservativo. Se fosse conservativo, haveria duas bandas distintas (uma pesada com molécula original intacta, outra leve com molécula totalmente nova). No modelo semiconservativo, cada molécula de DNA após replicação contém uma fita original (com ¹⁵N, pesada) e uma fita nova (com ¹⁴N, leve), resultando em densidade intermediária. Após segunda replicação, apareceriam duas populações: metade com densidade intermediária e metade com densidade leve, confirmando que fitas originais são conservadas e servem de molde.",
+          "dificuldade": "medio",
+          "tags": ["replicação do DNA", "semiconservativa", "Meselson-Stahl"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Durante a síntese de proteínas, a sequência de nucleotídeos do DNA é transcrita para RNA mensageiro e posteriormente traduzida em uma sequência de aminoácidos. Se um segmento de DNA molde apresenta a sequência 3' TAC-GCA-ATT 5', qual será a sequência correspondente de aminoácidos na proteína? (Use: TAC→Metionina, GCA→Arginina, ATT→Leucina)",
+          "alternativas": {
+            "A": "Metionina - Arginina - Leucina",
+            "B": "Leucina - Arginina - Metionina",
+            "C": "Metionina - Cisteína - Isoleucina",
+            "D": "Leucina - Cisteína - Metionina",
+            "E": "Isoleucina - Arginina - Leucina"
+          },
+          "correta": "A",
+          "explicacao": "Primeiro, devemos transcrever DNA em RNAm. A fita de DNA molde 3' TAC-GCA-ATT 5' produz RNAm complementar e antiparalelo: 5' AUG-CGU-UAA 3'. Lembre que RNA tem uracila (U) no lugar de timina (T). Os códons do RNAm são AUG (Metionina), CGU (Arginina), e UAA (códon de parada). Portanto, a sequência de aminoácidos é Metionina-Arginina, mas a questão fornece tabela simplificada onde devemos usar os códons do DNA. Seguindo a informação dada (TAC→Met, GCA→Arg, ATT→Leu), a resposta é Met-Arg-Leu. Importante: sempre atentar se questão pede códons de DNA ou RNA.",
+          "dificuldade": "dificil",
+          "tags": ["transcrição", "tradução", "código genético"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Em células eucarióticas, após a transcrição, o RNA mensageiro sofre modificações antes de sair do núcleo. Uma dessas modificações é o splicing, que remove íntrons e une éxons. Qual é a principal vantagem evolutiva do splicing alternativo?",
+          "alternativas": {
+            "A": "Aumenta velocidade de tradução nos ribossomos",
+            "B": "Protege o RNAm contra degradação por nucleases",
+            "C": "Permite que um único gene produza múltiplas proteínas diferentes",
+            "D": "Facilita transporte do RNAm do núcleo para o citoplasma",
+            "E": "Corrige erros de transcrição cometidos pela RNA polimerase"
+          },
+          "correta": "C",
+          "explicacao": "O splicing alternativo permite que diferentes combinações de éxons sejam unidas, produzindo RNAms distintos a partir de um mesmo gene. Assim, um único gene pode codificar várias proteínas com funções potencialmente diferentes, aumentando drasticamente a diversidade proteica sem aumentar o número de genes. Estima-se que humanos tenham cerca de 20.000 genes mas produzam mais de 100.000 proteínas diferentes, graças principalmente ao splicing alternativo. Isso permite maior complexidade biológica com genoma relativamente compacto. As outras opções descrevem funções de outras modificações (cap 5' e cauda poli-A protegem e facilitam transporte), mas não do splicing alternativo.",
+          "dificuldade": "medio",
+          "tags": ["splicing alternativo", "processamento de RNA", "diversidade proteica"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Uma mutação pontual no DNA substituiu a base citosina por timina em um gene que codifica uma proteína. Essa alteração mudou o códon original GAA (que especifica ácido glutâmico) para GUA (que especifica valina). Essa é a mutação responsável pela anemia falciforme. Por que essa única substituição de aminoácido causa efeitos tão graves?",
+          "alternativas": {
+            "A": "Valina é tóxica para hemácias, causando sua destruição",
+            "B": "Alteração modifica formato e função da hemoglobina, causando efeitos em cascata",
+            "C": "Mutação ativa oncogenes que causam proliferação descontrolada de hemácias",
+            "D": "Substituição impede completamente a síntese de hemoglobina",
+            "E": "Valina não pode transportar oxigênio como ácido glutâmico fazia"
+          },
+          "correta": "B",
+          "explicacao": "A substituição de ácido glutâmico (hidrofílico, polar) por valina (hidrofóbico, apolar) na posição 6 da cadeia beta da hemoglobina altera suas propriedades físico-químicas. A valina hidrofóbica causa agregação das moléculas de hemoglobina em condições de baixo oxigênio, formando fibras rígidas que deformam a hemácia em formato de foice. Isso demonstra pleiotropia: uma única mutação causa múltiplos efeitos - deformação celular, anemia (destruição de hemácias), obstrução de vasos, dores, danos a órgãos. Exemplifica como estrutura primária (sequência de aminoácidos) determina estrutura tridimensional e função da proteína.",
+          "dificuldade": "medio",
+          "tags": ["mutação", "anemia falciforme", "relação estrutura-função"]
+        }
+      ]
+    },
+    {
+      "id": "modulo04",
+      "titulo": "Mutações e Biotecnologia",
+      "resumo": "Tipos de mutações, alterações cromossômicas, engenharia genética e aplicações biotecnológicas",
+      "topicos": [
+        {
+          "titulo": "Mutações Gênicas e Cromossômicas",
+          "conteudo": "Mutações são alterações permanentes na sequência de DNA que podem ser transmitidas para células-filhas ou descendentes. Mutações gênicas (ou pontuais) afetam pequenas sequências de DNA, geralmente um único nucleotídeo. Substituição (ou mutação de ponto) ocorre quando um nucleotídeo é trocado por outro. Pode ser transição (purina por purina ou pirimidina por pirimidina) ou transversão (purina por pirimidina ou vice-versa). Efeito depende da posição e tipo de substituição.\n\nMutações de substituição podem ser classificadas por efeito no código genético. Mutação silenciosa não altera aminoácido (devido à degeneração do código genético - vários códons codificam mesmo aminoácido). Mutação missense altera um aminoácido, podendo ter efeito neutro, leve ou grave dependendo da mudança (anemia falciforme é exemplo de missense). Mutação nonsense cria códon de parada prematuro, resultando em proteína truncada geralmente não funcional.\n\nMutações de frameshift (mudança no quadro de leitura) ocorrem por inserção ou deleção de nucleotídeos em número não múltiplo de três. Como código genético é lido em trincas sequenciais, inserção ou deleção desloca o quadro de leitura, alterando todos os códons subsequentes. Geralmente causa produção de proteína completamente diferente e não funcional, pois todos os aminoácidos após a mutação são alterados. São geralmente mais graves que substituições porque afetam toda a proteína downstream.\n\nMutações cromossômicas (ou aberrações) envolvem grandes segmentos de DNA ou cromossomos inteiros. Deleção remove segmento cromossômico. Duplicação repete segmento. Inversão inverte orientação de segmento dentro do cromossomo. Translocação transfere segmento de um cromossomo para outro não homólogo. Mutações numéricas alteram número de cromossomos: aneuploidias adicionam ou removem cromossomos individuais (monossomia: 2n-1, trissomia: 2n+1), euploidias alteram conjuntos completos (triploidia: 3n, tetraploidia: 4n)."
+        },
+        {
+          "titulo": "Agentes Mutagênicos e Síndromes Genéticas",
+          "conteudo": "Mutações podem ser espontâneas (erros naturais de replicação, danos espontâneos ao DNA) ou induzidas por agentes mutagênicos. Mutágenos físicos incluem radiações ionizantes (raios X, raios gama, partículas alfa e beta) que quebram ligações químicas no DNA, e radiação ultravioleta que causa formação de dímeros de timina (duas timinas adjacentes se ligam covalentemente). Esses danos, se não reparados, causam mutações ou morte celular.\n\nMutágenos químicos incluem: análogos de bases (moléculas similares a bases nitrogenadas que são incorporadas ao DNA mas pareiam incorretamente), agentes alquilantes (adicionam grupos metil ou etil às bases, alterando pareamento), agentes intercalantes (inserem-se entre bases da dupla hélice, causando inserções ou deleções), agentes desaminantes (removem grupo amino de bases, convertendo citosina em uracila). Muitos carcinógenos são mutágenos.\n\nMutações em células somáticas afetam apenas o indivíduo, não sendo transmitidas aos descendentes. Podem causar câncer se afetarem genes reguladores do ciclo celular (oncogenes, genes supressores tumorais). Mutações em células germinativas (gametas) são transmitidas aos descendentes, podendo causar doenças genéticas hereditárias. Apenas mutações germinativas contribuem para evolução das espécies, pois são as únicas transmitidas entre gerações.\n\nSíndromes genéticas humanas resultantes de alterações cromossômicas incluem: Síndrome de Down (trissomia do 21, cariótipo 47,XX+21 ou 47,XY+21) causa deficiência intelectual, características faciais típicas, maior risco de problemas cardíacos; Síndrome de Edwards (trissomia do 18) é grave, maioria não sobrevive além do primeiro ano; Síndrome de Patau (trissomia do 13) também é letal precocemente. Síndrome de Turner (45,X, monossomia do X) afeta mulheres, causa baixa estatura e infertilidade. Síndrome de Klinefelter (47,XXY) afeta homens, causa esterilidade e características femininas sutis."
+        },
+        {
+          "titulo": "Tecnologia do DNA Recombinante",
+          "conteudo": "A tecnologia do DNA recombinante permite isolar, manipular e transferir genes entre organismos, revolucionando biologia, medicina e agricultura. Enzimas de restrição são 'tesouras moleculares' que cortam DNA em sequências específicas (sítios de restrição). Produzidas por bactérias como defesa contra vírus, reconhecem sequências palindrômicas (leem igual nas duas direções das fitas). Corte pode ser reto ou em diagonal, gerando extremidades coesivas (pegajosas) complementares que facilitam ligação de fragmentos.\n\nVetores são moléculas de DNA usadas para transportar gene de interesse para célula hospedeira. Plasmídeos (pequenos DNAs circulares bacterianos) são vetores comuns: podem ser cortados com enzimas de restrição, gene de interesse é inserido, DNA ligase sela junções, plasmídeo recombinante é introduzido em bactéria por transformação. Bactérias transformadas replicam plasmídeo junto com DNA próprio, produzindo muitas cópias do gene (clonagem molecular). Se gene codifica proteína, bactéria pode produzi-la em grandes quantidades.\n\nA insulina humana foi uma das primeiras proteínas terapêuticas produzidas por engenharia genética (1978). Gene humano da insulina foi inserido em bactérias Escherichia coli que passaram a produzir insulina humana idêntica à natural. Anteriormente, diabéticos usavam insulina extraída de pâncreas de porcos e bois, que causava reações alérgicas em alguns pacientes. Hoje, a maioria das insulinas são recombinantes. Outras proteínas recombinantes incluem hormônio de crescimento humano, eritropoietina, fatores de coagulação.\n\nOrganismos geneticamente modificados (OGMs ou transgênicos) contêm genes de outras espécies. Plantas transgênicas incluem: milho e algodão Bt (com gene de bactéria Bacillus thuringiensis que produz toxina inseticida), soja e milho resistentes a herbicidas (permitem aplicação de herbicida que mata plantas daninhas mas não a cultura). Arroz dourado contém genes que produzem beta-caroteno (precursor de vitamina A), desenvolvido para combater deficiência de vitamina A em países em desenvolvimento. Debate sobre OGMs envolve questões de segurança alimentar, impactos ambientais, resistência de pragas e aspectos éticos."
+        },
+        {
+          "titulo": "Outras Técnicas de Biotecnologia",
+          "conteudo": "A Reação em Cadeia da Polimerase (PCR) é técnica que amplifica (faz milhões de cópias de) segmento específico de DNA in vitro. Processo envolve ciclos repetidos de: desnaturação (aquecimento a ~95°C separa fitas de DNA), anelamento (resfriamento a ~55°C permite primers se ligarem às extremidades da região alvo), extensão (aquecimento a ~72°C, enzima Taq polimerase sintetiza novas fitas). Após 30 ciclos, produzem-se cerca de 1 bilhão de cópias. PCR revolucionou biologia molecular, sendo usado em diagnóstico de doenças, testes de paternidade, medicina forense, pesquisa.\n\nSequenciamento de DNA determina ordem exata de nucleotídeos em molécula de DNA. Método de Sanger (desenvolvido nos anos 1970) foi usado no Projeto Genoma Humano. Técnicas modernas de sequenciamento de nova geração (NGS) são muito mais rápidas e baratas, permitindo sequenciar genoma humano completo em dias por custos cada vez menores. Sequenciamento genômico tem aplicações em medicina personalizada, identificando predisposições genéticas a doenças e orientando tratamentos específicos para perfil genético do paciente.\n\nA edição gênica CRISPR-Cas9 é tecnologia revolucionária que permite modificar genes com precisão sem precedentes. Sistema CRISPR-Cas9 (adaptado de sistema imune bacteriano) usa RNA guia para direcionar enzima Cas9 a sequência específica de DNA onde faz corte duplo. A célula repara o corte, e nesse processo o gene pode ser desativado, corrigido ou substituído. Possíveis aplicações incluem: correção de mutações causadoras de doenças genéticas, desenvolvimento de terapias contra câncer, criação de culturas agrícolas melhoradas. Levanta questões éticas especialmente sobre edição de embriões humanos.\n\nClonagem produz cópias geneticamente idênticas de organismos. Clonagem molecular (já discutida) copia genes. Clonagem reprodutiva produz indivíduo geneticamente idêntico. Ovelha Dolly (1996) foi primeiro mamífero clonado de célula adulta: núcleo de célula da glândula mamária foi transferido para óvulo enucleado, embrião foi implantado em mãe de aluguel. Isso demonstrou que células diferenciadas mantêm genoma completo, mas levantou debates éticos sobre clonagem humana. Células-tronco podem se diferenciar em vários tipos celulares, tendo potencial terapêutico para regeneração de tecidos e tratamento de doenças degenerativas."
+        }
+      ],
+      "exemplos": [
+        "Mutação pontual no gene da hemoglobina (GAA→GUA) causando anemia falciforme",
+        "Síndrome de Down resultante de trissomia do cromossomo 21 por não disjunção",
+        "Produção de insulina humana recombinante por bactérias E. coli transformadas com gene humano"
+      ],
+      "dicas": [
+        "Mutação frameshift (inserção/deleção não múltipla de 3) é geralmente mais grave que substituição",
+        "Trissomias (2n+1) são mais viáveis que monossomias (2n-1) em humanos",
+        "PCR amplifica DNA, não sequencia - são técnicas diferentes frequentemente confundidas",
+        "CRISPR-Cas9 permite edição precisa de genes - tecnologia recente muito cobrada em vestibulares atuais"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Uma mutação por inserção de um único nucleotídeo ocorreu em um gene que codifica uma proteína importante. Essa mutação alterou drasticamente toda a sequência de aminoácidos após o ponto de inserção, resultando em proteína não funcional. Qual tipo de mutação melhor explica esse fenômeno?",
+          "alternativas": {
+            "A": "Mutação silenciosa, que não altera aminoácidos",
+            "B": "Mutação missense, que substitui um aminoácido",
+            "C": "Mutação nonsense, que cria códon de parada",
+            "D": "Mutação frameshift, que desloca o quadro de leitura",
+            "E": "Mutação de transição, que troca purinas por pirimidinas"
+          },
+          "correta": "D",
+          "explicacao": "A inserção de um único nucleotídeo causa mutação frameshift (mudança no quadro de leitura). Como o código genético é lido em trincas sequenciais (códons de três bases), inserção de uma base desloca toda a leitura subsequente. Por exemplo, se a sequência original era AUG-CAU-GCA-UAA, inserindo U após o G fica AUG-UCA-UGC-AUA-A, mudando todos os códons após o ponto de inserção. Isso altera completamente a sequência de aminoácidos downstream, geralmente produzindo proteína não funcional. Mutação silenciosa não mudaria aminoácidos, missense mudaria apenas um, nonsense criaria parada prematura (mas não mudaria toda sequência seguinte).",
+          "dificuldade": "medio",
+          "tags": ["mutação frameshift", "código genético", "inserção"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "A Síndrome de Down é causada por trissomia do cromossomo 21 (cariótipo 47,XX+21 ou 47,XY+21). A incidência dessa síndrome aumenta com a idade materna avançada. Qual mecanismo celular, quando falha, causa mais frequentemente essa alteração cromossômica?",
+          "alternativas": {
+            "A": "Erro na replicação do DNA durante fase S",
+            "B": "Falha na condensação cromossômica durante prófase",
+            "C": "Não disjunção cromossômica durante meiose",
+            "D": "Crossing-over excessivo durante paquíteno",
+            "E": "Erro na citocinese produzindo células poliploides"
+          },
+          "correta": "C",
+          "explicacao": "A trissomia do 21 resulta mais comumente de não disjunção durante meiose (geralmente meiose I da mulher). Não disjunção ocorre quando cromossomos homólogos (meiose I) ou cromátides-irmãs (meiose II) não se separam corretamente. Isso produz gameta com dois cromossomos 21 em vez de um. Na fecundação com gameta normal (com um cromossomo 21), resulta em zigoto trissômico (três cromossomos 21). A frequência de não disjunção aumenta com idade materna porque óvulos permanecem em meiose I desde antes do nascimento, e mecanismos de controle da segregação cromossômica deterioram-se com o tempo.",
+          "dificuldade": "medio",
+          "tags": ["Síndrome de Down", "não disjunção", "meiose"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Para produzir insulina humana recombinante, cientistas inseriram o gene humano da insulina em plasmídeos bacterianos. Qual sequência de etapas descreve corretamente esse processo?",
+          "alternativas": {
+            "A": "PCR amplifica gene → Enzima de restrição corta plasmídeo → Gene e plasmídeo são ligados → Bactéria absorve plasmídeo",
+            "B": "Enzima de restrição isola gene → PCR amplifica plasmídeo → Ligase une fragmentos → Bactéria é transformada",
+            "C": "Gene é sintetizado quimicamente → Plasmídeo é amplificado → CRISPR insere gene → Bactéria produz insulina",
+            "D": "Enzima de restrição corta gene do DNA humano → Mesma enzima corta plasmídeo → DNA ligase une fragmentos → Transformação bacteriana",
+            "E": "Bactéria absorve DNA humano diretamente → Crossing-over incorpora gene → Plasmídeo é formado → Insulina é expressa"
+          },
+          "correta": "D",
+          "explicacao": "A sequência correta é: 1) Enzima de restrição corta DNA humano nas extremidades do gene da insulina; 2) Mesma enzima corta plasmídeo, criando extremidades complementares (coesivas); 3) Gene da insulina e plasmídeo aberto são misturados, extremidades coesivas se pareiam; 4) DNA ligase sela as ligações fosfodiéster, formando plasmídeo recombinante; 5) Plasmídeo é introduzido em bactéria por transformação; 6) Bactéria replica plasmídeo e expressa gene, produzindo insulina. PCR não é necessário neste processo clássico, embora possa ser usado para amplificar gene antes. CRISPR é tecnologia mais recente, não usada no desenvolvimento inicial da insulina recombinante.",
+          "dificuldade": "medio",
+          "tags": ["DNA recombinante", "plasmídeos", "insulina transgênica"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "A técnica de PCR (Reação em Cadeia da Polimerase) é amplamente utilizada em laboratórios de biologia molecular e medicina forense. Qual enzima é fundamental para o sucesso da PCR e por que foi especificamente escolhida?",
+          "alternativas": {
+            "A": "DNA ligase, porque une fragmentos de DNA rapidamente",
+            "B": "Enzima de restrição, porque corta DNA em locais específicos",
+            "C": "Taq polimerase, porque resiste a altas temperaturas do processo",
+            "D": "RNA polimerase, porque sintetiza RNA a partir de DNA",
+            "E": "Helicase, porque separa as fitas de DNA"
+          },
+          "correta": "C",
+          "explicacao": "A Taq polimerase (isolada da bactéria Thermus aquaticus que vive em fontes termais) é fundamental para PCR porque resiste às altas temperaturas (95°C) usadas na desnaturação do DNA. DNA polimerases humanas desnaturariam nessas temperaturas, exigindo adição de nova enzima a cada ciclo. Taq polimerase permanece ativa após aquecimento, permitindo ciclos automáticos repetidos sem adição de reagentes. PCR envolve ciclos de aquecimento (desnaturação), resfriamento (anelamento de primers) e aquecimento moderado (extensão), e a enzima deve permanecer funcional ao longo de 30-40 ciclos. Outras enzimas mencionadas têm funções diferentes e não substituiriam Taq polimerase em PCR.",
+          "dificuldade": "medio",
+          "tags": ["PCR", "Taq polimerase", "biotecnologia"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "O sistema CRISPR-Cas9 permite edição precisa do genoma e tem revolucionado a biotecnologia. Pesquisadores usaram CRISPR para corrigir mutação causadora de distrofia muscular em células musculares humanas. Qual é o principal componente que confere especificidade ao sistema, direcionando a enzima Cas9 ao local correto do genoma?",
+          "alternativas": {
+            "A": "DNA ligase que reconhece sequências mutadas",
+            "B": "RNA guia complementar à sequência alvo",
+            "C": "Enzima de restrição com sítio específico",
+            "D": "Plasmídeo contendo gene corrigido",
+            "E": "Anticorpo que se liga à proteína mutante"
+          },
+          "correta": "B",
+          "explicacao": "O RNA guia (gRNA) é o componente que confere especificidade ao CRISPR-Cas9. É uma molécula de RNA de aproximadamente 20 nucleotídeos, projetada para ser complementar à sequência de DNA que se deseja editar. O RNA guia forma complexo com enzima Cas9 e direciona o conjunto ao local exato do genoma por pareamento de bases complementares. Uma vez no local correto, Cas9 corta ambas as fitas de DNA. A célula então repara o corte, e durante o reparo, cientistas podem introduzir sequência corrigida. A especificidade vem do pareamento Watson-Crick entre RNA guia e DNA alvo, permitindo direcionar Cas9 a virtualmente qualquer sequência do genoma.",
+          "dificuldade": "medio",
+          "tags": ["CRISPR-Cas9", "edição gênica", "RNA guia"]
+        }
+      ]
+    },
+    {
+      "id": "modulo05",
+      "titulo": "Evolução Biológica",
+      "resumo": "Teorias evolutivas, seleção natural, evidências da evolução, especiação e evolução humana",
+      "topicos": [
+        {
+          "titulo": "Teorias Evolutivas e Evidências da Evolução",
+          "conteudo": "A evolução biológica é o processo de mudança nas características hereditárias das populações ao longo das gerações, resultando em diversificação das espécies a partir de ancestrais comuns. Jean-Baptiste Lamarck (1809) propôs primeira teoria evolutiva coerente: lei do uso e desuso (órgãos muito usados se desenvolvem, pouco usados atrofiam) e herança de caracteres adquiridos (modificações adquiridas durante vida são transmitidas aos descendentes). Embora incorreta sobre mecanismos, reconheceu que espécies mudam ao longo do tempo.\n\nCharles Darwin e Alfred Wallace propuseram teoria da evolução por seleção natural (1858). Princípios fundamentais: 1) Variabilidade - indivíduos de uma população apresentam variações nas características; 2) Hereditariedade - características são transmitidas de pais para filhos; 3) Superprodução - populações produzem mais descendentes que o ambiente pode sustentar; 4) Seleção natural - indivíduos com características vantajosas têm maior probabilidade de sobreviver e reproduzir, transmitindo essas características. Ao longo de gerações, características vantajosas tornam-se mais frequentes na população.\n\nEvidências da evolução vêm de múltiplas fontes. Fósseis são restos ou vestígios de organismos que viveram no passado, preservados em rochas. Estratos rochosos mais profundos (antigos) contêm fósseis mais primitivos, estratos superiores (recentes) contêm fósseis mais modernos, documentando mudanças ao longo do tempo. Fósseis transicionais mostram características intermediárias entre grupos (Archaeopteryx tem características de répteis e aves). Datação radiométrica determina idade dos fósseis.\n\nAnatomia comparada revela estruturas homólogas (mesma origem embrionária mas funções diferentes, evidenciando ancestral comum): membro anterior de humanos, baleias, morcegos, cavalos têm mesmo padrão ósseo básico adaptado a diferentes funções. Estruturas análogas têm mesma função mas origem diferente (asas de insetos e aves), resultado de evolução convergente. Órgãos vestigiais são estruturas reduzidas, sem função aparente, herdadas de ancestrais onde eram funcionais (apêndice humano, ossos pélvicos em baleias). Embriologia comparada mostra que embriões de vertebrados são semelhantes nos estágios iniciais, sugerindo ancestralidade comum. Biologia molecular revela similaridade em DNA, proteínas e código genético entre organismos, quanto mais próximo evolutivamente, maior a semelhança molecular."
+        },
+        {
+          "titulo": "Mecanismos Evolutivos e Genética de Populações",
+          "conteudo": "A genética de populações estuda mudanças nas frequências de alelos em populações ao longo do tempo, integrando genética mendeliana com teoria evolutiva. População é grupo de indivíduos da mesma espécie que vivem na mesma área e cruzam entre si. Pool gênico é conjunto de todos os alelos presentes na população. Frequência alélica é proporção de determinado alelo em relação ao total de alelos daquele gene na população.\n\nO Princípio de Hardy-Weinberg estabelece que, em condições ideais, frequências alélicas e genotípicas permanecem constantes de geração em geração (equilíbrio). Condições necessárias: população grande, cruzamentos aleatórios, ausência de mutação, ausência de migração, ausência de seleção natural. Equações: p + q = 1 (onde p é frequência de alelo dominante A e q de recessivo a); p² + 2pq + q² = 1 (frequências genotípicas: AA, Aa, aa). Na prática, essas condições nunca são totalmente atendidas, mas o princípio serve como modelo nulo para identificar quando evolução está ocorrendo.\n\nMutações são fonte primária de variabilidade genética, criando novos alelos. Maioria das mutações é neutra ou deletéria, mas ocasionalmente surgem mutações benéficas que podem ser favorecidas por seleção natural. Recombinação genética durante meiose (crossing-over e segregação independente) embaralha alelos existentes, criando novas combinações, aumentando variabilidade sem criar novos alelos. Variabilidade genética é matéria-prima da evolução - sem ela, não haveria evolução por seleção natural.\n\nSeleção natural atua sobre fenótipos, favorecendo indivíduos com maior aptidão (fitness - capacidade de sobreviver e reproduzir em determinado ambiente). Tipos de seleção: Seleção direcional favorece um dos extremos fenotípicos (por exemplo, girafas de pescoço mais longo); Seleção estabilizadora favorece fenótipo intermediário, eliminando extremos (peso de bebês humanos - muito leves ou muito pesados têm menor sobrevivência); Seleção disruptiva favorece ambos os extremos, eliminando intermediários, podendo levar à especiação. Deriva genética é mudança aleatória nas frequências alélicas, especialmente importante em populações pequenas. Efeito fundador ocorre quando população pequena coloniza nova área. Efeito gargalo ocorre quando população sofre redução drástica, perdendo variabilidade. Fluxo gênico (migração) introduz novos alelos vindos de outras populações."
+        },
+        {
+          "titulo": "Especiação e Coevolução",
+          "conteudo": "Especiação é o processo de formação de novas espécies. Espécie biológica é definida como grupo de populações cujos indivíduos podem cruzar entre si na natureza e produzir descendentes férteis, mas estão reprodutivamente isolados de outros grupos. Isolamento reprodutivo é fundamental para especiação - barreiras impedem fluxo gênico entre populações, permitindo que evoluam independentemente acumulando diferenças até não mais conseguirem intercruzar.\n\nMecanismos de isolamento reprodutivo pré-zigóticos impedem formação do zigoto: isolamento temporal (espécies reproduzem em épocas diferentes), isolamento ecológico (habitam locais diferentes), isolamento comportamental (rituais de acasalamento incompatíveis), isolamento mecânico (incompatibilidade anatômica de órgãos reprodutivos), isolamento gamético (espermatozoides e óvulos são incompatíveis). Mecanismos pós-zigóticos reduzem viabilidade ou fertilidade de híbridos: inviabilidade do híbrido (zigoto não se desenvolve), esterilidade do híbrido (se desenvolve mas é estéril, como mula), deterioração da prole híbrida (híbridos de primeira geração são viáveis mas descendentes não).\n\nEspeciação alopátrica ocorre quando populações são geograficamente separadas por barreira física (montanhas, rios, oceanos). Isoladas, populações acumulam diferenças genéticas por mutação, deriva e seleção. Quando diferenças são suficientes, mesmo se barreia desaparecer, populações não mais intercruzam - tornaram-se espécies distintas. É modo mais comum de especiação. Especiação simpátrica ocorre sem separação geográfica, na mesma área. Menos comum, pode resultar de poliploidia (duplicação de cromossomos, frequente em plantas), isolamento comportamental ou exploração de nichos diferentes na mesma área.\n\nCoevolução ocorre quando duas espécies exercem pressão seletiva recíproca, evoluindo em resposta uma à outra. Predador-presa: presas evoluem defesas, predadores evoluem contradefesas. Parasita-hospedeiro: parasitas evoluem mecanismos de infecção, hospedeiros evoluem resistência. Planta-polinizador: plantas evoluem flores atrativas e recompensas (néctar), polinizadores evoluem adaptações para acessar flores. Mimetismo é resultado de coevolução: mimetismo batesiano (espécie inofensiva imita espécie perigosa, enganando predadores), mimetismo mülleriano (espécies perigosas se assemelham, reforçando aprendizado de predadores)."
+        },
+        {
+          "titulo": "Evolução Humana",
+          "conteudo": "A evolução humana é processo de mudanças que levaram ao surgimento do Homo sapiens a partir de ancestrais primatas. Humanos pertencem à ordem Primata, família Hominidae (grandes primatas), gênero Homo. Análises moleculares indicam que linhagem humana separou-se de chimpanzés há cerca de 6-7 milhões de anos. É equívoco comum pensar que 'humanos evoluíram de chimpanzés' - na verdade, compartilhamos ancestral comum, e ambas as linhagens evoluíram independentemente.\n\nCaracterísticas que definem hominídeos (humanos e ancestrais desde separação de chimpanzés): bipedismo (locomoção sobre duas pernas), modificações no esqueleto (posição do forâmen magno na base do crânio, pélvis larga e curta, fêmur angulado), mãos com polegar opositor que permite manipulação precisa, cérebro relativamente grande, face achatada. Bipedismo foi uma das primeiras características a evoluir, liberando mãos para uso de ferramentas.\n\nPrincipais estágios da evolução humana: Australopithecus (4-2 milhões de anos atrás) - primeiros hominídeos bípedes, cérebro pequeno (~450 cm³), viviam na África. Homo habilis (2,4-1,4 Ma) - primeiros do gênero Homo, usavam ferramentas de pedra simples, cérebro ~600 cm³. Homo erectus (1,9 Ma - 140 mil anos) - migrou da África para Ásia e Europa, usava fogo, ferramentas mais elaboradas, cérebro ~900 cm³. Homo neanderthalensis (400-40 mil anos) - viveu na Europa e Ásia, adaptado ao frio, enterrava mortos, cérebro similar ao nosso. Homo sapiens surgiu na África há cerca de 300 mil anos, migrou para todos os continentes, cérebro ~1350 cm³.\n\nA teoria Out of Africa (fora da África) é mais aceita: Homo sapiens surgiu na África e migrou para outros continentes entre 70-100 mil anos atrás, eventualmente substituindo outras espécies de Homo. Evidências moleculares (maior diversidade genética em populações africanas) e fósseis apóiam essa teoria. Estudos de DNA mostram que humanos modernos cruzaram com neandertais e denisovanos, contribuindo pequena porcentagem (~2%) de DNA não africano moderno. Evolução cultural (linguagem, arte, tecnologia, agricultura) acelerou drasticamente nos últimos 50 mil anos, permitindo que humanos modificassem ambientes e dominassem o planeta, transformando pressões seletivas sobre nossa espécie."
+        }
+      ],
+      "exemplos": [
+        "Resistência de bactérias a antibióticos como exemplo observável de seleção natural",
+        "Tentilhões de Galápagos com diferentes formatos de bico adaptados a diferentes alimentos",
+        "Especiação alopátrica de esquilos no Grand Canyon, separados pelo rio Colorado"
+      ],
+      "dicas": [
+        "Lamarck: uso e desuso + herança de adquiridos (INCORRETO). Darwin: seleção natural age sobre variações hereditárias (CORRETO)",
+        "Hardy-Weinberg: p²+2pq+q²=1. Se q²=0,01 (fenótipo recessivo), então q=0,1 e heterozigotos=2pq=0,18",
+        "Estruturas homólogas indicam ancestral comum; análogas indicam evolução convergente (ambientes similares)",
+        "Humanos NÃO evoluíram de chimpanzés - compartilhamos ancestral comum há 6-7 milhões de anos"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "O uso prolongado de antibióticos levou ao surgimento de bactérias resistentes. Algumas pessoas interpretam isso como evidência de que 'bactérias se adaptam ao antibiótico'. Qual explicação está correta segundo a teoria da evolução por seleção natural?",
+          "alternativas": {
+            "A": "O antibiótico induz mutações que conferem resistência às bactérias expostas",
+            "B": "Bactérias se esforçam para desenvolver resistência quando expostas ao antibiótico",
+            "C": "Mutações aleatórias pré-existentes conferem resistência; antibiótico seleciona bactérias resistentes",
+            "D": "Todas as bactérias herdam características adquiridas de exposição anterior ao antibiótico",
+            "E": "O antibiótico ensina as bactérias a produzirem enzimas de resistência"
+          },
+          "correta": "C",
+          "explicacao": "A resistência a antibióticos exemplifica seleção natural darwiniana. Mutações ocorrem aleatoriamente (não direcionadas pelo antibiótico) na população bacteriana. Algumas mutações, por acaso, conferem resistência (exemplo: produção de enzima que degrada antibiótico). Quando antibiótico é aplicado, bactérias sensíveis morrem, mas resistentes sobrevivem e reproduzem, transmitindo gene de resistência. Ao longo de gerações, frequência de alelos de resistência aumenta na população. O antibiótico não causa mutação nem ensina bactérias - apenas seleciona as que já tinham variante resistente. Isso refuta Lamarckismo (alternativas B e D) e demonstra que evolução ocorre em populações, não indivíduos.",
+          "dificuldade": "medio",
+          "tags": ["seleção natural", "resistência a antibióticos", "evolução"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Em uma população em equilíbrio de Hardy-Weinberg, a frequência de indivíduos com fenótipo recessivo (albinismo) é de 1%. Qual é a frequência de indivíduos heterozigotos (portadores) nessa população?",
+          "alternativas": {
+            "A": "1%",
+            "B": "9%",
+            "C": "10%",
+            "D": "18%",
+            "E": "81%"
+          },
+          "correta": "D",
+          "explicacao": "Usando equações de Hardy-Weinberg: p² + 2pq + q² = 1, onde q² representa homozigotos recessivos (albinos). Se fenótipo recessivo é 1%, então q² = 0,01, logo q = √0,01 = 0,1 (10%). Como p + q = 1, então p = 1 - 0,1 = 0,9 (90%). A frequência de heterozigotos é 2pq = 2 × 0,9 × 0,1 = 0,18 ou 18%. Isso significa que aproximadamente 1 em cada 5-6 pessoas na população é portadora do alelo recessivo, mesmo que apenas 1% manifeste o fenótipo. Este é princípio importante em genética de populações e aconselhamento genético.",
+          "dificuldade": "medio",
+          "tags": ["Hardy-Weinberg", "genética de populações", "frequências alélicas"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Membro anterior de humanos (preensão), baleias (natação), morcegos (voo) e cavalos (corrida) apresentam mesma estrutura óssea básica, mas funções muito diferentes. Essa observação fornece evidência de evolução porque:",
+          "alternativas": {
+            "A": "Estruturas análogas indicam que evoluíram independentemente para mesma função",
+            "B": "Estruturas homólogas indicam ancestral comum que foi modificado em linhagens diferentes",
+            "C": "Evolução convergente produziu mesma estrutura em animais não relacionados",
+            "D": "Órgãos vestigiais mostram que mamíferos estão perdendo funções ao longo da evolução",
+            "E": "Seleção artificial humana modificou estruturas para usos diferentes"
+          },
+          "correta": "B",
+          "explicacao": "Estas são estruturas homólogas - têm mesma origem evolutiva (mesmo padrão ósseo: úmero, rádio, ulna, carpos, metacarpos, falanges) mas foram modificadas para diferentes funções em linhagens evolutivas distintas. Homologia indica ancestral comum - todos os mamíferos descendem de ancestral que tinha esse padrão de membros, que foi modificado por seleção natural em diferentes ambientes. Estruturas análogas teriam mesma função mas origem diferente (exemplo: asas de insetos e aves). Evolução convergente produz analogia, não homologia. Órgãos vestigiais são estruturas reduzidas sem função atual. Esta é evidência anatômica clássica de evolução estudada por Darwin.",
+          "dificuldade": "medio",
+          "tags": ["estruturas homólogas", "anatomia comparada", "evidências da evolução"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Duas espécies de grilos vivem na mesma área e são morfologicamente indistinguíveis, mas têm cantos de acasalamento completamente diferentes. Fêmeas de cada espécie só respondem ao canto de machos da própria espécie. Que tipo de isolamento reprodutivo está operando e qual processo evolutivo ele representa?",
+          "alternativas": {
+            "A": "Isolamento temporal pré-zigótico, indicando especiação alopátrica",
+            "B": "Isolamento comportamental pré-zigótico, permitindo especiação simpátrica",
+            "C": "Isolamento gamético pós-zigótico, resultado de hibridização",
+            "D": "Isolamento mecânico pré-zigótico, causado por barreira geográfica",
+            "E": "Inviabilidade de híbridos pós-zigótico, impedindo fluxo gênico"
+          },
+          "correta": "B",
+          "explicacao": "Este é exemplo de isolamento comportamental (ou etológico) pré-zigótico - comportamentos de acasalamento incompatíveis impedem cruzamento mesmo quando espécies coexistem. Cantos diferentes funcionam como 'senhas' específicas, garantindo que acasalamento ocorra apenas entre membros da mesma espécie. Por ocorrer na mesma área geográfica (simpátrica), representa especiação simpátrica, onde isolamento reprodutivo evolui sem separação geográfica. Isolamento temporal seria reprodução em épocas diferentes. Isolamento mecânico seria incompatibilidade anatômica. Isolamentos pós-zigóticos (gamético, inviabilidade, esterilidade) ocorrem após formação do zigoto. Este caso mostra como comportamento pode criar barreira reprodutiva efetiva.",
+          "dificuldade": "medio",
+          "tags": ["isolamento reprodutivo", "especiação simpátrica", "comportamento"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Análises de DNA mitocondrial humano mostram que populações africanas apresentam maior diversidade genética que populações de outros continentes. Além disso, a diversidade genética diminui progressivamente com a distância da África. Qual teoria da evolução humana essas evidências apóiam?",
+          "alternativas": {
+            "A": "Teoria multiregional: Homo sapiens evoluiu independentemente em várias regiões",
+            "B": "Teoria Out of Africa: Homo sapiens surgiu na África e migrou para outros continentes",
+            "C": "Teoria da evolução convergente: humanos evoluíram de diferentes primatas",
+            "D": "Teoria lamarckista: humanos adquiriram características por adaptação ao ambiente",
+            "E": "Teoria do equilíbrio pontuado: especiação humana foi abrupta e localizada"
+          },
+          "correta": "B",
+          "explicacao": "Maior diversidade genética africana indica que população humana é mais antiga lá, tendo acumulado mais mutações ao longo do tempo. Populações não africanas derivam de pequenos grupos que migraram da África (efeito fundador), carregando apenas subconjunto da variabilidade africana. Diversidade diminui com distância da África porque migrações sucessivas envolveram grupos progressivamente menores, perdendo variabilidade (deriva genética). Isso apóia teoria Out of Africa: Homo sapiens surgiu na África (~300 mil anos) e migrou para outros continentes (~70-100 mil anos). Teoria multiregional propunha evolução paralela em várias regiões, mas não explica padrão de diversidade genética observado. Evidências moleculares foram cruciais para resolver esse debate antropológico.",
+          "dificuldade": "dificil",
+          "tags": ["evolução humana", "Out of Africa", "diversidade genética"]
+        }
+      ]
+    }
+  ]
+}

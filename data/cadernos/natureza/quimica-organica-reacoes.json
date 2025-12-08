@@ -1,0 +1,336 @@
+{
+  "id": "quimica-organica-reacoes",
+  "titulo": "Reações Orgânicas",
+  "descricao": "Aprenda os principais tipos de reações orgânicas: adição, substituição, eliminação, oxidação e polimerização",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Reações de Adição",
+      "topicos": [
+        {
+          "titulo": "Conceito de Adição",
+          "conteudo": "Adição: quebra de ligação múltipla (π) e formação de duas ligações simples (σ). Ocorre em alcenos, alcinos, compostos carbonílicos. Ligação π é mais fraca que σ, portanto mais reativa. Reagente se adiciona aos dois carbonos da dupla/tripla."
+        },
+        {
+          "titulo": "Adição em Alcenos",
+          "conteudo": "Hidrogenação: alceno + H₂ → alcano (catalisador Pt, Pd, Ni). Halogenação: alceno + X₂ → di-haleto vicinal. Hidro-halogenação: alceno + HX → haleto (Regra de Markovnikov). Hidratação: alceno + H₂O → álcool (H⁺, Markovnikov)."
+        },
+        {
+          "titulo": "Regra de Markovnikov",
+          "conteudo": "Em adições assimétricas (HX, H₂O), H vai para o carbono mais hidrogenado da dupla. X (ou OH) vai para carbono menos hidrogenado (mais substituído). Gera produto mais estável (carbocátion intermediário mais estável)."
+        },
+        {
+          "titulo": "Adição em Carbonila",
+          "conteudo": "Aldeídos/cetonas + H₂ → álcoois (redução catalítica). Aldeídos + [O] → ácidos (oxidação). Adição nucleofílica: Nu⁻ ataca C=O (C eletrofílico). Teste de Benedict/Fehling para aldeídos (redução de Cu²⁺)."
+        }
+      ],
+      "exemplos": [
+        "C₂H₄ + H₂ → C₂H₆ (eteno → etano, hidrogenação)",
+        "C₂H₄ + Br₂ → CH₂Br-CH₂Br (1,2-dibromoetano)",
+        "CH₃-CH=CH₂ + HCl → CH₃-CHCl-CH₃ (Markovnikov)",
+        "CH₃-CH=CH₂ + H₂O → CH₃-CHOH-CH₃ (2-propanol)",
+        "CH₃CHO + H₂ → CH₃CH₂OH (acetaldeído → etanol)"
+      ],
+      "dicas": [
+        "Adição: ligação π quebra, dupla → simples",
+        "Markovnikov: H para C mais hidrogenado da dupla",
+        "Hidrogenação produz alcano (saturação completa)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Na reação entre propeno e HBr, segundo a regra de Markovnikov, o produto principal é:",
+          "alternativas": [
+            "1-bromopropano",
+            "2-bromopropano",
+            "1,2-dibromopropano",
+            "Propano",
+            "Não ocorre reação"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "CH₃-CH=CH₂ + HBr → CH₃-CHBr-CH₃. H vai para CH₂ (mais hidrogenado), Br vai para CH central (menos hidrogenado), formando 2-bromopropano."
+        },
+        {
+          "enunciado": "A hidrogenação catalítica de alcenos produz:",
+          "alternativas": [
+            "Alcinos",
+            "Alcanos",
+            "Álcoois",
+            "Ácidos",
+            "Ésteres"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Alceno + H₂ (Pt/Pd/Ni) → alcano. A dupla ligação é saturada, formando apenas ligações simples C-C e C-H."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Reações de Substituição",
+      "topicos": [
+        {
+          "titulo": "Conceito de Substituição",
+          "conteudo": "Substituição: um átomo/grupo é trocado por outro. Ligações σ não mudam de número. Tipos: radicalar (alcanos), eletrofílica (aromáticos), nucleofílica (haletos). Não altera grau de insaturação."
+        },
+        {
+          "titulo": "Substituição em Alcanos (Radicalar)",
+          "conteudo": "Halogenação: alcano + X₂ → haleto + HX (luz UV ou calor). Mecanismo radicalar: iniciação, propagação, terminação. Pouco seletiva, mistura de produtos. Ordem de reatividade: 3° > 2° > 1° (estabilidade do radical)."
+        },
+        {
+          "titulo": "Substituição Aromática Eletrofílica",
+          "conteudo": "Benzeno: substituição, não adição (mantém aromaticidade). Halogenação: C₆H₆ + X₂ → C₆H₅X + HX (catalisador FeX₃). Nitração: + HNO₃/H₂SO₄ → C₆H₅NO₂. Sulfonação: + H₂SO₄ → C₆H₅SO₃H. Alquilação/Acilação de Friedel-Crafts."
+        },
+        {
+          "titulo": "Substituição Nucleofílica",
+          "conteudo": "Haletos de alquila + Nu⁻ → produto + X⁻. SN1: duas etapas, carbocátion intermediário (3° > 2° > 1°). SN2: uma etapa, inversão de configuração (1° > 2° > 3°). Hidrólise: R-X + OH⁻ → R-OH + X⁻."
+        }
+      ],
+      "exemplos": [
+        "CH₄ + Cl₂ → CH₃Cl + HCl (luz, substituição radicalar)",
+        "C₆H₆ + Br₂ → C₆H₅Br + HBr (FeBr₃, aromática)",
+        "C₆H₆ + HNO₃ → C₆H₅NO₂ + H₂O (nitração, explosivos)",
+        "CH₃Br + OH⁻ → CH₃OH + Br⁻ (SN2)",
+        "(CH₃)₃C-Br + H₂O → (CH₃)₃C-OH + HBr (SN1)"
+      ],
+      "dicas": [
+        "Alcanos: substituição radicalar (pouco seletiva)",
+        "Aromáticos: substituição eletrofílica (mantém anel)",
+        "Haletos: SN2 (primários), SN1 (terciários)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A reação do benzeno com Br₂ na presença de FeBr₃ produz:",
+          "alternativas": [
+            "Ciclo-hexano",
+            "1,2-dibromobenzeno",
+            "Bromobenzeno",
+            "Hexabromobenzeno",
+            "Não reage"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Substituição aromática eletrofílica: C₆H₆ + Br₂ (FeBr₃) → C₆H₅Br + HBr. Um H é substituído por Br, mantendo a aromaticidade."
+        },
+        {
+          "enunciado": "Haletos de alquila primários reagem preferencialmente por mecanismo:",
+          "alternativas": [
+            "SN1",
+            "SN2",
+            "Eliminação",
+            "Radicalar",
+            "Não reagem"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Primários são menos impedidos estericamente, favorecendo SN2 (ataque direto do nucleófilo, uma etapa). Terciários favorecem SN1 (carbocátion)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Reações de Eliminação",
+      "topicos": [
+        {
+          "titulo": "Conceito de Eliminação",
+          "conteudo": "Eliminação: remoção de átomos/grupos de carbonos adjacentes, formando ligação múltipla. Oposto da adição. Desidratação de álcoois e desidroalogenação de haletos são exemplos. Aumenta grau de insaturação."
+        },
+        {
+          "titulo": "Desidratação de Álcoois",
+          "conteudo": "Álcool + H₂SO₄ concentrado ou H₃PO₄ (aquecimento) → alceno + H₂O. Mecanismo E1: forma carbocátion. Ordem de facilidade: 3° > 2° > 1°. Regra de Saytzeff: forma alceno mais substituído (mais estável)."
+        },
+        {
+          "titulo": "Desidroalogenação",
+          "conteudo": "Haleto de alquila + base forte (KOH alcoólico) → alceno + HX. Remove H e X de carbonos vizinhos. Regra de Saytzeff: H sai do carbono menos hidrogenado. Competição com substituição (SN vs E)."
+        },
+        {
+          "titulo": "Regra de Saytzeff",
+          "conteudo": "Em eliminações, forma-se preferencialmente o alceno mais substituído (mais estável). H é removido do carbono adjacente que tem MENOS hidrogênios. Estabilidade alcenos: tetra > tri > di > mono > não-substituído."
+        }
+      ],
+      "exemplos": [
+        "CH₃-CH₂OH → CH₂=CH₂ + H₂O (desidratação etanol, 170°C/H₂SO₄)",
+        "CH₃-CHOH-CH₃ → CH₃-CH=CH₂ + H₂O (propeno)",
+        "CH₃-CHBr-CH₃ + KOH(alc) → CH₃-CH=CH₂ + KBr + H₂O",
+        "Álcool terciário: desidrata facilmente (baixa T)",
+        "Álcool primário: desidrata com dificuldade (alta T)"
+      ],
+      "dicas": [
+        "Eliminação: remove HX, forma dupla (oposto da adição)",
+        "Saytzeff: forma alceno MAIS substituído (mais estável)",
+        "Ordem facilidade: 3° > 2° > 1° (estabilidade carbocátion)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A desidratação do 2-butanol com H₂SO₄ produz principalmente:",
+          "alternativas": [
+            "1-buteno",
+            "2-buteno",
+            "Butano",
+            "Butanal",
+            "Ácido butírico"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "CH₃-CHOH-CH₂-CH₃ → CH₃-CH=CH-CH₃ (2-buteno, Saytzeff). Forma alceno mais substituído, mais estável que 1-buteno."
+        },
+        {
+          "enunciado": "Qual álcool desidrata mais facilmente?",
+          "alternativas": [
+            "Metanol",
+            "Etanol",
+            "1-propanol",
+            "2-propanol",
+            "2-metil-2-propanol"
+          ],
+          "respostaCorreta": 4,
+          "explicacao": "2-metil-2-propanol é terciário. Álcoois terciários formam carbocátions mais estáveis, desidratando com maior facilidade (menor temperatura necessária)."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Reações de Oxidação e Redução",
+      "topicos": [
+        {
+          "titulo": "Oxidação de Álcoois",
+          "conteudo": "Álcool 1° + [O] → aldeído → ácido carboxílico. Álcool 2° + [O] → cetona (para aqui). Álcool 3° não oxida (não tem H no C-OH). Oxidantes: K₂Cr₂O₇/H⁺ (dicromato, alaranjado→verde), KMnO₄ (permanganato, roxo→marrom)."
+        },
+        {
+          "titulo": "Oxidação de Aldeídos",
+          "conteudo": "Aldeído + [O] → ácido carboxílico. Fácil oxidação (diferencia de cetona). Testes: Fehling (precipitado vermelho Cu₂O), Benedict (semelhante), Tollens (espelho de prata). Aldeídos são redutores suaves."
+        },
+        {
+          "titulo": "Redução de Compostos Carbonílicos",
+          "conteudo": "Aldeído + H₂ (ou LiAlH₄) → álcool 1°. Cetona + H₂ (ou LiAlH₄) → álcool 2°. Ácido + LiAlH₄ → álcool 1°. Éster + LiAlH₄ → 2 álcoois. Redução: adiciona H₂ ou remove O."
+        },
+        {
+          "titulo": "Combustão",
+          "conteudo": "Combustão completa: orgânico + O₂ → CO₂ + H₂O (exotérmico). Combustão incompleta: → CO ou C (fuligem) + H₂O (falta O₂). Álcool, alcano, qualquer orgânico queima. Base dos combustíveis. Teste final de compostos orgânicos."
+        }
+      ],
+      "exemplos": [
+        "CH₃CH₂OH + [O] → CH₃CHO + [O] → CH₃COOH (etanol→ácido acético)",
+        "CH₃-CHOH-CH₃ + [O] → CH₃-CO-CH₃ (2-propanol→acetona)",
+        "CH₃CHO + 2Cu²⁺ → CH₃COOH + Cu₂O↓ (Fehling, vermelho)",
+        "CH₃CHO + H₂ → CH₃CH₂OH (redução catalítica)",
+        "C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O (combustão completa)"
+      ],
+      "dicas": [
+        "Oxidação álcool: 1°→aldeído→ácido; 2°→cetona; 3°→não oxida",
+        "Aldeído oxida fácil, cetona não (diferenciação)",
+        "Testes oxidativos: Fehling, Benedict, Tollens (aldeídos)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A oxidação branda do etanol produz:",
+          "alternativas": [
+            "Ácido acético",
+            "Acetaldeído",
+            "Acetona",
+            "Éter etílico",
+            "Etano"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Etanol (álcool 1°) + oxidante brando → acetaldeído (aldeído). Com oxidação forte ou prolongada → ácido acético."
+        },
+        {
+          "enunciado": "Qual composto NÃO dá teste positivo com reagente de Tollens?",
+          "alternativas": [
+            "Formaldeído",
+            "Acetaldeído",
+            "Acetona",
+            "Benzaldeído",
+            "Glicose"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Acetona é uma cetona. Cetonas não são oxidadas pelo reagente de Tollens. Apenas aldeídos (e açúcares redutores) dão teste positivo (espelho de prata)."
+        },
+        {
+          "enunciado": "Um álcool terciário, quando tratado com oxidante forte:",
+          "alternativas": [
+            "Forma aldeído",
+            "Forma cetona",
+            "Forma ácido",
+            "Não reage",
+            "Forma éster"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Álcoois terciários não têm hidrogênio no carbono que porta a hidroxila, portanto não podem ser oxidados nas condições usuais. Resistem à oxidação."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Polimerização",
+      "topicos": [
+        {
+          "titulo": "Conceito de Polímero",
+          "conteudo": "Polímero: macromolécula formada por repetição de unidades menores (monômeros). Naturais: proteínas, DNA, celulose, borracha. Sintéticos: plásticos (polietileno, PVC, PET), fibras (náilon). Grau de polimerização (n): número de monômeros."
+        },
+        {
+          "titulo": "Polimerização por Adição",
+          "conteudo": "Monômeros com dupla ligação se unem (quebra π, forma σ). Mecanismo radicalar ou iônico. Exemplos: polietileno (eteno), PVC (cloreto de vinila), poliestireno (estireno), teflon (tetrafluoreteno). Produz apenas o polímero."
+        },
+        {
+          "titulo": "Polimerização por Condensação",
+          "conteudo": "Monômeros com grupos funcionais reagem perdendo molécula pequena (H₂O, HCl). Exemplos: náilon (diamina + diácido), PET (tereftalato + etilenoglicol), proteínas (aminoácidos), poliéster. Produz polímero + subproduto."
+        },
+        {
+          "titulo": "Polímeros Importantes",
+          "conteudo": "PE: sacolas, embalagens. PVC: tubos, isolamento. PS: isopor, copos. PET: garrafas, fibras. PP: tampas, peças. Teflon: antiaderente. Náilon: tecidos, cordas. Borracha: natural (isopreno) ou sintética. Reciclagem: importante ambientalmente."
+        }
+      ],
+      "exemplos": [
+        "n CH₂=CH₂ → (-CH₂-CH₂-)ₙ (polietileno, adição)",
+        "n CH₂=CHCl → (-CH₂-CHCl-)ₙ (PVC, adição)",
+        "n H₂N-R-NH₂ + n HOOC-R'-COOH → náilon + n H₂O (condensação)",
+        "Proteína: n aminoácidos → polipeptídeo + n H₂O",
+        "Borracha natural: polimerização do isopreno (2-metil-1,3-butadieno)"
+      ],
+      "dicas": [
+        "Adição: dupla ligação, sem subproduto (PE, PVC, PS)",
+        "Condensação: perde molécula pequena (náilon, PET, proteína)",
+        "ENEM: foco em tipos, reciclagem, impacto ambiental"
+      ],
+      "questoes": [
+        {
+          "enunciado": "O polietileno é formado por polimerização:",
+          "alternativas": [
+            "Por condensação do etanol",
+            "Por adição do eteno",
+            "Por substituição do etano",
+            "Por eliminação do etino",
+            "Por oxidação do etanal"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "n CH₂=CH₂ → (-CH₂-CH₂-)ₙ. Polimerização por adição: monômero eteno (dupla ligação) forma polietileno sem liberar subprodutos."
+        },
+        {
+          "enunciado": "Qual polímero é formado por polimerização de condensação?",
+          "alternativas": [
+            "Polietileno",
+            "PVC",
+            "Poliestireno",
+            "Náilon",
+            "Teflon"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Náilon é formado pela reação entre diamina e diácido, liberando água (condensação). Os demais (PE, PVC, PS, teflon) são por adição de alcenos."
+        },
+        {
+          "enunciado": "A sigla PET refere-se ao polímero:",
+          "alternativas": [
+            "Polietileno",
+            "Policloreto de vinila",
+            "Politereftalato de etileno",
+            "Poliestireno",
+            "Politetrafluoretileno"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "PET = Politereftalato de etileno. Poliéster usado em garrafas e fibras têxteis. Formado por condensação entre ácido tereftálico e etilenoglicol."
+        }
+      ]
+    }
+  ]
+}

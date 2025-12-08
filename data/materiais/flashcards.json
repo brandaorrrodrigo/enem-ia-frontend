@@ -1,0 +1,1534 @@
+{
+  "flashcards": [
+    {
+      "id": "flashcards-historia",
+      "disciplina": "Historia",
+      "area": "Humanas",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Historia para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Historia do Brasil e Geral",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "O que foi o Quilombo dos Palmares?",
+          "resposta": "Foi o maior quilombo do Brasil colonial, localizado em Alagoas, liderado por Zumbi. Resistiu por quase um seculo contra expedicoes portuguesas e holandesas. Simboliza a resistencia negra contra a escravidao e a luta pela liberdade.",
+          "tema": "Brasil Colonial",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "O que foram as Capitanias Hereditarias?",
+          "resposta": "Sistema de administracao colonial criado em 1534 por D. Joao III. Dividiu o Brasil em 15 faixas de terra doadas a nobres portugueses. A maioria fracassou devido a falta de recursos, ataques indigenas e distancia da metropole.",
+          "tema": "Brasil Colonial",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 3,
+          "pergunta": "O que foi a Guerra do Paraguai?",
+          "resposta": "Conflito de 1864 a 1870 entre Paraguai e a Triplice Alianca (Brasil, Argentina e Uruguai). Foi a guerra mais sangrenta da America do Sul. Destruiu a economia paraguaia e fortaleceu o exercito brasileiro, contribuindo para o fim da monarquia.",
+          "tema": "Brasil Imperio",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 4,
+          "pergunta": "Por que ocorreu a Proclamacao da Republica em 1889?",
+          "resposta": "A monarquia perdeu apoio dos militares, que se sentiam desprestigiados, dos fazendeiros insatisfeitos com a abolicao, e da Igreja apos a Questao Religiosa. O Marechal Deodoro da Fonseca liderou o golpe militar que derrubou D. Pedro II.",
+          "tema": "Brasil Imperio",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 5,
+          "pergunta": "O que foi a Politica do Cafe com Leite?",
+          "resposta": "Acordo politico da Republica Velha (1894-1930) entre oligarquias de Sao Paulo (cafe) e Minas Gerais (leite). Alternavam-se na presidencia da Republica. Representava o dominio das elites agrarias e foi rompida com a Revolucao de 1930.",
+          "tema": "Republica Velha",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 6,
+          "pergunta": "O que foi a Semana de Arte Moderna de 1922?",
+          "resposta": "Evento cultural realizado em Sao Paulo que marcou o inicio do Modernismo no Brasil. Artistas como Mario de Andrade, Oswald de Andrade e Tarsila do Amaral buscavam romper com padroes europeus e valorizar a identidade nacional brasileira.",
+          "tema": "Republica Velha",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 7,
+          "pergunta": "Como Getulio Vargas chegou ao poder em 1930?",
+          "resposta": "A Revolucao de 1930 foi um movimento armado que derrubou o presidente Washington Luis. Getulio Vargas, derrotado nas eleicoes, liderou a alianca entre oligarquias dissidentes, tenentistas e classes medias urbanas, encerrando a Republica Velha.",
+          "tema": "Era Vargas",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 8,
+          "pergunta": "Quais as principais caracteristicas do Estado Novo (1937-1945)?",
+          "resposta": "Regime ditatorial de Vargas marcado pela centralizacao do poder, censura, propaganda governamental (DIP), nacionalismo economico e trabalhismo. Criou a CLT e investiu na industrializacao, mas reprimiu opositores e proibiu partidos politicos.",
+          "tema": "Era Vargas",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 9,
+          "pergunta": "O que foi o Golpe Militar de 1964?",
+          "resposta": "Golpe que derrubou o presidente Joao Goulart sob alegacao de combater o comunismo. Iniciou uma ditadura militar que durou 21 anos. Foi apoiado por setores conservadores, empresarios e pelos Estados Unidos durante a Guerra Fria.",
+          "tema": "Ditadura Militar",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 10,
+          "pergunta": "O que foi o AI-5?",
+          "resposta": "Ato Institucional numero 5, decretado em 1968, foi o mais duro instrumento da ditadura. Fechou o Congresso, permitiu intervencao federal, cassou mandatos, suspendeu habeas corpus para crimes politicos e intensificou a censura e repressao.",
+          "tema": "Ditadura Militar",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 11,
+          "pergunta": "O que foi a Lei Aurea?",
+          "resposta": "Lei assinada pela Princesa Isabel em 13 de maio de 1888 que aboliu a escravidao no Brasil. Tornou o Brasil o ultimo pais das Americas a abolir a escravidao. Nao houve politicas de integracao dos ex-escravos na sociedade.",
+          "tema": "Brasil Imperio",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 12,
+          "pergunta": "O que foi a Revolucao Francesa?",
+          "resposta": "Movimento revolucionario iniciado em 1789 que derrubou a monarquia absolutista francesa. Baseou-se nos ideais iluministas de liberdade, igualdade e fraternidade. Influenciou movimentos de independencia em todo o mundo, incluindo a America Latina.",
+          "tema": "Historia Geral",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 13,
+          "pergunta": "Quais foram as principais causas da Primeira Guerra Mundial?",
+          "resposta": "Disputas imperialistas por colonias, rivalidades nacionalistas, corrida armamentista e sistema de aliancas (Triplice Entente vs Triplice Alianca). O estopim foi o assassinato do arquiduque Francisco Ferdinando em Sarajevo em 1914.",
+          "tema": "Guerras Mundiais",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 14,
+          "pergunta": "O que foi o Holocausto?",
+          "resposta": "Genocidio sistematico promovido pelo regime nazista que assassinou cerca de 6 milhoes de judeus durante a Segunda Guerra Mundial. Tambem vitimou ciganos, homossexuais, deficientes e opositores politicos em campos de concentracao e exterminio.",
+          "tema": "Guerras Mundiais",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 15,
+          "pergunta": "O que caracterizou a Guerra Fria?",
+          "resposta": "Periodo de tensao politica e militar (1947-1991) entre EUA (capitalista) e URSS (socialista) sem confronto direto. Marcado pela corrida armamentista nuclear, espacial, disputas ideologicas e conflitos indiretos como Coreia e Vietna.",
+          "tema": "Historia Geral",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 16,
+          "pergunta": "O que foi a Inconfidencia Mineira?",
+          "resposta": "Movimento separatista ocorrido em Minas Gerais (1789) contra a dominacao portuguesa e a cobranca de impostos (derrama). Liderado por Tiradentes, Claudio Manuel da Costa e Tomas Antonio Gonzaga. Foi reprimido e Tiradentes foi executado como exemplo.",
+          "tema": "Brasil Colonial",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 17,
+          "pergunta": "Qual a diferenca entre Parlamentarismo e Presidencialismo no Segundo Reinado?",
+          "resposta": "No parlamentarismo brasileiro (1847-1889), o Imperador nomeava o presidente do Conselho de Ministros, que chefiava o governo. O poder Moderador permitia a D. Pedro II dissolver o gabinete. Era um sistema adaptado que mantinha o poder imperial centralizado.",
+          "tema": "Brasil Imperio",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 18,
+          "pergunta": "O que foi a Intentona Comunista de 1935?",
+          "resposta": "Tentativa de golpe armado liderada pela Alianca Nacional Libertadora e pelo PCB, com Luis Carlos Prestes. Fracassou rapidamente e foi usada por Vargas como justificativa para instaurar o Estado Novo em 1937, sob pretexto de combater o comunismo.",
+          "tema": "Era Vargas",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 19,
+          "pergunta": "O que foram as Diretas Ja?",
+          "resposta": "Movimento popular de 1983-1984 que exigia eleicoes diretas para presidente. Mobilizou milhoes de brasileiros em comicios. Apesar da forca popular, a Emenda Dante de Oliveira foi rejeitada. A redemocratizacao continuou com eleicao indireta em 1985.",
+          "tema": "Ditadura Militar",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 20,
+          "pergunta": "O que foi o Plano Marshall?",
+          "resposta": "Programa de recuperacao economica dos EUA para reconstruir a Europa pos-Segunda Guerra (1948-1952). Investiu bilhoes de dolares para evitar a expansao do comunismo sovietico. Consolidou a influencia norte-americana na Europa Ocidental durante a Guerra Fria.",
+          "tema": "Historia Geral",
+          "dificuldade": "dificil"
+        }
+      ],
+      "tags": ["historia", "flashcards", "ENEM", "brasil", "mundo"]
+    },
+    {
+      "id": "flashcards-geografia",
+      "disciplina": "Geografia",
+      "area": "Humanas",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Geografia para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Geografia Fisica e Humana",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "O que e urbanizacao?",
+          "resposta": "Processo de crescimento das cidades e aumento da populacao urbana em relacao a rural. Envolve transformacoes economicas, sociais e espaciais. No Brasil, acelerou-se a partir de 1950 com a industrializacao e exodo rural.",
+          "tema": "Urbanizacao",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "O que sao megalopoles?",
+          "resposta": "Grandes concentracoes urbanas formadas pela uniao de varias metropoles e regioes metropolitanas. Exemplo: megalopole Rio-Sao Paulo, que concentra grande parte da populacao e economia brasileira. Apresentam problemas como poluicao e desigualdade.",
+          "tema": "Urbanizacao",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 3,
+          "pergunta": "O que e exodo rural?",
+          "resposta": "Migracao de pessoas do campo para a cidade. Intensificou-se no Brasil com a industrializacao e mecanizacao agricola. Causou crescimento desordenado das cidades, gerando favelas e problemas de infraestrutura urbana.",
+          "tema": "Migracao",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 4,
+          "pergunta": "O que sao refugiados?",
+          "resposta": "Pessoas forcadas a deixar seu pais devido a perseguicao, guerra, violencia ou violacao de direitos humanos. Protegidos por leis internacionais. Diferem de imigrantes economicos que buscam melhores condicoes de vida voluntariamente.",
+          "tema": "Migracao",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 5,
+          "pergunta": "O que e desenvolvimento sustentavel?",
+          "resposta": "Modelo de desenvolvimento que atende as necessidades do presente sem comprometer as geracoes futuras. Integra crescimento economico, justica social e preservacao ambiental. Proposto pela ONU e defendido em conferencias como a Rio-92.",
+          "tema": "Meio Ambiente",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 6,
+          "pergunta": "O que e efeito estufa?",
+          "resposta": "Fenomeno natural em que gases (CO2, metano) reteem calor na atmosfera, mantendo a Terra aquecida. A acao humana intensificou esse efeito, causando aquecimento global. Principais causas: queima de combustiveis fosseis e desmatamento.",
+          "tema": "Meio Ambiente",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 7,
+          "pergunta": "O que e a Amazonia Legal?",
+          "resposta": "Area que engloba nove estados brasileiros (AM, PA, AC, RR, RO, AP, MT, TO e parte do MA) com objetivo de planejamento regional. Criada em 1953, abrange cerca de 60% do territorio nacional e contem a maior parte da Floresta Amazonica.",
+          "tema": "Brasil",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 8,
+          "pergunta": "O que sao Biomas?",
+          "resposta": "Grandes ecossistemas caracterizados por vegetacao, clima e fauna especificos. Brasil possui seis biomas: Amazonia, Cerrado, Caatinga, Mata Atlantica, Pampa e Pantanal. Cada um tem biodiversidade unica e sofre pressoes ambientais diferentes.",
+          "tema": "Meio Ambiente",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 9,
+          "pergunta": "O que e BRICS?",
+          "resposta": "Grupo de paises emergentes formado por Brasil, Russia, India, China e Africa do Sul. Representa economias em desenvolvimento com grande populacao e territorio. Buscam maior influencia na ordem economica mundial e alternativas ao dominio ocidental.",
+          "tema": "Geopolitica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 10,
+          "pergunta": "O que e globalizacao?",
+          "resposta": "Processo de integracao economica, cultural e politica mundial. Intensificado pela revolucao tecnologica e comunicacional. Gera interdependencia entre paises mas tambem aumenta desigualdades. Multinacionais e blocos economicos sao caracteristicas marcantes.",
+          "tema": "Geopolitica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 11,
+          "pergunta": "O que e clima equatorial?",
+          "resposta": "Clima quente e umido durante todo o ano, com chuvas abundantes e regulares. Temperaturas medias elevadas (25-27°C) e baixa amplitude termica. Predomina na regiao amazonica. Favorece floresta densa e biodiversa.",
+          "tema": "Brasil",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 12,
+          "pergunta": "Qual a diferenca entre clima e tempo?",
+          "resposta": "Tempo e o estado momentaneo da atmosfera em um lugar (temperatura, umidade, pressao do dia). Clima e a media das condicoes atmosfericas de uma regiao ao longo de decadas. O clima e permanente, o tempo e variavel.",
+          "tema": "Clima",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 13,
+          "pergunta": "O que sao placas tectonicas?",
+          "resposta": "Grandes blocos rochosos que formam a crosta terrestre e se movimentam sobre o manto. Seus encontros causam terremotos, vulcoes e formacao de montanhas. Brasil esta no centro da Placa Sul-Americana, por isso tem baixa atividade sismica.",
+          "tema": "Geologia",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 14,
+          "pergunta": "O que e inversao termica?",
+          "resposta": "Fenomeno em que uma camada de ar quente impede a dispersao do ar frio e poluentes proximos ao solo. Comum no inverno em grandes cidades como Sao Paulo. Agrava a poluicao atmosferica e problemas respiratorios.",
+          "tema": "Meio Ambiente",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 15,
+          "pergunta": "O que e agronegocio?",
+          "resposta": "Conjunto de atividades economicas ligadas a producao, processamento e comercializacao de produtos agricolas. Representa grande parte do PIB brasileiro. Caracteriza-se pelo uso de tecnologia, monocultura e exportacao, mas gera impactos ambientais.",
+          "tema": "Brasil",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 16,
+          "pergunta": "O que e a Teoria Malthusiana?",
+          "resposta": "Thomas Malthus previu que a populacao cresceria em progressao geometrica enquanto alimentos em aritmetica, gerando fome. A teoria nao se confirmou devido a revolucao agricola e tecnologica. Ainda influencia debates sobre recursos e populacao.",
+          "tema": "Demografia",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 17,
+          "pergunta": "O que e gentrificacao?",
+          "resposta": "Processo de renovacao urbana em areas degradadas que atrai classes medias e altas, expulsando a populacao pobre original pelo aumento de precos. Transforma espacos culturais e historicos em areas elitizadas. Comum em centros urbanos revitalizados.",
+          "tema": "Urbanizacao",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 18,
+          "pergunta": "Explique a diferenca entre transicao demografica dos paises desenvolvidos e subdesenvolvidos.",
+          "resposta": "Paises desenvolvidos tiveram transicao lenta e gradual, com reducao natural de natalidade e mortalidade ao longo de seculos. Subdesenvolvidos passaram por transicao rapida: mortalidade caiu rapidamente com medicina, mas natalidade demorou a cair, gerando explosao demografica.",
+          "tema": "Demografia",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 19,
+          "pergunta": "O que sao commodities e qual sua importancia para o Brasil?",
+          "resposta": "Produtos primarios padronizados comercializados mundialmente (soja, minerio, cafe, petroleo). Brasil e grande exportador de commodities agricolas e minerais. Vulnerabilidade: economia dependente de precos internacionais volateis, gerando instabilidade economica.",
+          "tema": "Economia",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 20,
+          "pergunta": "Como a Revolucao Verde impactou a agricultura mundial?",
+          "resposta": "Modernizacao agricola (1960-70) com sementes modificadas, fertilizantes, agrotoxicos e mecanizacao. Aumentou produtividade e evitou fome prevista por Malthus. Porem, gerou dependencia de insumos quimicos, concentracao de terras, impactos ambientais e exclusao de pequenos produtores.",
+          "tema": "Agricultura",
+          "dificuldade": "dificil"
+        }
+      ],
+      "tags": ["geografia", "flashcards", "ENEM", "urbano", "ambiente"]
+    },
+    {
+      "id": "flashcards-filosofia",
+      "disciplina": "Filosofia",
+      "area": "Humanas",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Filosofia para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Filosofia e Filosofos",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "Qual o metodo filosofico de Socrates?",
+          "resposta": "A maieutica (arte de partejar ideias) atraves de dialogos e perguntas. Socrates levava o interlocutor a questionar suas proprias certezas ate chegar ao conhecimento verdadeiro. Frase celebre: 'So sei que nada sei'.",
+          "tema": "Filosofia Antiga",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "O que e o Mito da Caverna de Platao?",
+          "resposta": "Alegoria que descreve prisioneiros acorrentados vendo apenas sombras na parede, pensando ser a realidade. Representa a condicao humana de ignorancia. O filosofo e quem se liberta e conhece o mundo verdadeiro das ideias.",
+          "tema": "Filosofia Antiga",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 3,
+          "pergunta": "O que defendia Aristoteles sobre o conhecimento?",
+          "resposta": "Diferente de Platao, acreditava que o conhecimento vem da experiencia sensivel (empirismo). Desenvolveu a logica formal e o metodo cientifico de observacao. Para ele, a realidade esta nas coisas concretas, nao em um mundo ideal separado.",
+          "tema": "Filosofia Antiga",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 4,
+          "pergunta": "O que foi o Iluminismo?",
+          "resposta": "Movimento intelectual do seculo XVIII que defendia a razao, a ciencia e o progresso contra dogmas religiosos e absolutismo. Filosofos como Voltaire, Rousseau e Montesquieu influenciaram revolucoes e formacao de democracias modernas.",
+          "tema": "Iluminismo",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 5,
+          "pergunta": "O que Rousseau defendia sobre o homem e a sociedade?",
+          "resposta": "Acreditava que o homem nasce bom mas a sociedade o corrompe. Defendeu o contrato social onde cidadaos cedem parte da liberdade em troca de protecao do Estado. A soberania popular e a vontade geral devem guiar o governo.",
+          "tema": "Iluminismo",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 6,
+          "pergunta": "Qual a proposta de Montesquieu sobre o poder?",
+          "resposta": "Desenvolveu a teoria da separacao dos tres poderes (Executivo, Legislativo e Judiciario) para evitar tirania. Cada poder deve ser independente e fiscalizar os outros. Sistema adotado por democracias modernas, incluindo o Brasil.",
+          "tema": "Iluminismo",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 7,
+          "pergunta": "O que e o existencialismo?",
+          "resposta": "Corrente filosofica que afirma que a existencia precede a essencia: o ser humano nasce sem proposito definido e cria seu sentido atraves de escolhas. Principais filosofos: Sartre, Camus e Kierkegaard. Enfatiza liberdade, angustia e responsabilidade individual.",
+          "tema": "Existencialismo",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 8,
+          "pergunta": "Qual a famosa frase de Sartre sobre liberdade?",
+          "resposta": "'O homem esta condenado a ser livre'. Significa que nao escolhemos existir, mas uma vez existindo, somos totalmente responsaveis por nossas escolhas. Nao podemos culpar Deus, natureza ou sociedade - somos livres e essa liberdade e um fardo.",
+          "tema": "Existencialismo",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 9,
+          "pergunta": "O que Descartes quis dizer com 'Penso, logo existo'?",
+          "resposta": "Buscando uma verdade indubitavel, Descartes duvidou de tudo. A unica certeza absoluta era que, ao duvidar, ele pensava. Se pensa, existe. Esta frase fundou o racionalismo moderno e colocou a razao como base do conhecimento.",
+          "tema": "Filosofia Moderna",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 10,
+          "pergunta": "O que e o imperativo categorico de Kant?",
+          "resposta": "Principio moral universal: 'Age de tal modo que tua acao possa se tornar lei universal'. Significa agir baseado em principios que todos deveriam seguir. A moral nao depende de consequencias, mas da intencao e do dever racional.",
+          "tema": "Filosofia Moderna",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 11,
+          "pergunta": "O que Nietzsche quis dizer com 'Deus esta morto'?",
+          "resposta": "Nao e uma afirmacao sobre a existencia de Deus, mas sobre a perda de valores absolutos e religiosos na modernidade. A sociedade europeia abandonou a fe, ficando sem fundamento moral. Cabe ao homem criar novos valores alem do bem e mal.",
+          "tema": "Filosofia Contemporanea",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 12,
+          "pergunta": "O que e a alegoria do anel de Giges em Platao?",
+          "resposta": "Historia de um pastor que encontra um anel que o torna invisivel. Com ele, comete injusticas sem ser punido. Platao questiona: seriamos justos sem medo de punicao? Para ele, sim - a justica e um bem em si, nao apenas para evitar castigo.",
+          "tema": "Etica",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 13,
+          "pergunta": "O que e o contratualismo?",
+          "resposta": "Teoria politica que explica a origem da sociedade por um acordo entre individuos. Hobbes, Locke e Rousseau tem versoes diferentes. Em troca de protecao e ordem, cedemos parte da liberdade natural ao Estado atraves de um 'contrato social'.",
+          "tema": "Filosofia Politica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 14,
+          "pergunta": "Segundo Hobbes, como e o homem no estado de natureza?",
+          "resposta": "'O homem e o lobo do homem'. No estado de natureza, sem Estado, ha guerra de todos contra todos. A vida e solitaria, pobre, sordida, embrutecida e curta. Para sobreviver, precisamos do Estado absoluto que impoe ordem.",
+          "tema": "Filosofia Politica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 15,
+          "pergunta": "O que e a dialetica em Hegel?",
+          "resposta": "Metodo de desenvolvimento do pensamento em tres etapas: tese (afirmacao), antitese (negacao) e sintese (superacao da contradicao). A historia e a razao progridem por esse movimento. Marx adaptou essa dialetica para analise materialista da sociedade.",
+          "tema": "Filosofia Moderna",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 16,
+          "pergunta": "O que e o utilitarismo?",
+          "resposta": "Teoria etica de Bentham e Mill que julga acoes pelas consequencias: e bom o que gera maior felicidade para o maior numero de pessoas. O prazer e a felicidade sao os unicos bens intrinsecos. Influenciou politicas publicas e economia.",
+          "tema": "Etica",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 17,
+          "pergunta": "O que Foucault entendia por poder?",
+          "resposta": "O poder nao esta apenas no Estado, mas permeia todas as relacoes sociais (escolas, hospitais, prisoes). E exercido por mecanismos de disciplina, vigilancia e normalizacao dos corpos. O saber e instrumento de poder que define o normal e o anormal.",
+          "tema": "Filosofia Contemporanea",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 18,
+          "pergunta": "O que e a banalidade do mal segundo Hannah Arendt?",
+          "resposta": "Analise do nazista Eichmann: executou atrocidades sem ser monstruoso, apenas obedecendo ordens burocraticamente. O mal radical pode vir da ausencia de pensamento critico, nao de maldade inerente. Pessoas comuns cometem males por conformismo.",
+          "tema": "Etica",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 19,
+          "pergunta": "Como os Sofistas viam a verdade?",
+          "resposta": "Relativistas, acreditavam que a verdade depende do ponto de vista individual ou cultural. Nao ha verdade absoluta, apenas opiniao (doxa). Focavam na retorica e persuasao. Protagoras: 'O homem e a medida de todas as coisas'.",
+          "tema": "Filosofia Antiga",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 20,
+          "pergunta": "O que e a fenomenologia de Husserl?",
+          "resposta": "Metodo filosofico que estuda como as coisas aparecem a consciencia ('fenomenos'). Suspende julgamentos previos para descrever a experiencia pura. 'Voltar as coisas mesmas' sem preconceitos teoricos. Influenciou existencialismo e outras correntes contemporaneas.",
+          "tema": "Filosofia Contemporanea",
+          "dificuldade": "dificil"
+        }
+      ],
+      "tags": ["filosofia", "flashcards", "ENEM", "pensadores"]
+    },
+    {
+      "id": "flashcards-sociologia",
+      "disciplina": "Sociologia",
+      "area": "Humanas",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Sociologia para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Sociologia e teoria social",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "O que e fato social segundo Durkheim?",
+          "resposta": "Maneiras de agir, pensar e sentir exteriores ao individuo, que exercem coercao sobre ele. Exemplos: lingua, leis, costumes. Caracteristicas: exterioridade, coercao e generalidade. O fato social deve ser estudado como coisa, objetivamente.",
+          "tema": "Durkheim",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "O que e anomia em Durkheim?",
+          "resposta": "Estado de ausencia ou enfraquecimento das normas sociais que regulam o comportamento. Ocorre em periodos de rapida mudanca social. Gera desorientacao, conflitos e ate aumento de suicidios. A sociedade perde coesao e solidariedade.",
+          "tema": "Durkheim",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 3,
+          "pergunta": "Qual a diferenca entre solidariedade mecanica e organica?",
+          "resposta": "Mecanica: sociedades tradicionais, pequenas, com pouca divisao do trabalho e forte consciencia coletiva. Organica: sociedades modernas, complexas, com divisao especializada do trabalho e interdependencia funcional. Durkheim via a organica como evolucao social.",
+          "tema": "Durkheim",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 4,
+          "pergunta": "O que e acao social para Weber?",
+          "resposta": "Qualquer acao humana que leva em conta o comportamento de outros e e orientada por ele. Nem todo comportamento e acao social - deve ter sentido subjetivo. Weber classificou em: racional com relacao a fins, a valores, afetiva e tradicional.",
+          "tema": "Weber",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 5,
+          "pergunta": "O que Weber entendia por etica protestante?",
+          "resposta": "Weber relacionou valores do protestantismo calvinista com o surgimento do capitalismo. A predestinacao levou fieis a buscarem sinais de salvacao no sucesso material. Trabalho, poupanca e acumulo viraram virtudes, criando mentalidade capitalista racionalista.",
+          "tema": "Weber",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 6,
+          "pergunta": "O que e dominacao carismatica?",
+          "resposta": "Um dos tres tipos de dominacao de Weber. Baseada em caracteristicas excepcionais do lider (carisma), que inspira devoao pessoal. Instavel e dificil de institucionalizar. Exemplos: lideres religiosos, revolucionarios, demagogos.",
+          "tema": "Weber",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 7,
+          "pergunta": "O que e materialismo historico em Marx?",
+          "resposta": "Teoria que explica a historia pelas condicoes materiais de producao, nao por ideias. A base economica (infraestrutura) determina a superestrutura (politica, direito, ideologia). As mudancas sociais vem de contradicoes entre forcas produtivas e relacoes de producao.",
+          "tema": "Marx",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 8,
+          "pergunta": "O que e mais-valia segundo Marx?",
+          "resposta": "Diferenca entre o valor produzido pelo trabalhador e o salario que recebe. O capitalista se apropria desse excedente como lucro. E a base da exploracao capitalista. Pode ser absoluta (aumento de horas) ou relativa (aumento de produtividade).",
+          "tema": "Marx",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 9,
+          "pergunta": "O que e alienacao em Marx?",
+          "resposta": "Processo pelo qual o trabalhador se torna estranho ao produto do seu trabalho no capitalismo. Nao controla o processo produtivo nem usufrui do resultado. Torna-se mera mercadoria, perdendo sua essencia humana criativa e reduzindo-se a forca de trabalho.",
+          "tema": "Marx",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 10,
+          "pergunta": "O que e cultura segundo a Sociologia?",
+          "resposta": "Conjunto de simbolos, valores, normas, crencas, costumes e praticas compartilhados por um grupo social. E aprendida, transmitida entre geracoes e varia entre sociedades. Nao e biologica, mas socialmente construida. Nao ha culturas superiores ou inferiores.",
+          "tema": "Cultura",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 11,
+          "pergunta": "O que e etnocentrismo?",
+          "resposta": "Atitude de julgar outras culturas usando a propria como referencia superior. Ve o diferente como inferior, errado ou exotico. Gera preconceito e discriminacao. Opoe-se ao relativismo cultural, que respeita a diversidade sem hierarquias.",
+          "tema": "Cultura",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 12,
+          "pergunta": "O que e estratificacao social?",
+          "resposta": "Divisao da sociedade em camadas hierarquicas com acesso desigual a recursos, poder e prestigio. Pode ser por castas (India), estamentos (feudalismo) ou classes (capitalismo). Classes sociais tem mobilidade, diferente de castas que sao rigidas e hereditarias.",
+          "tema": "Desigualdade",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 13,
+          "pergunta": "O que sao instituicoes sociais?",
+          "resposta": "Estruturas estabeis que organizam a vida social em torno de necessidades basicas. Exemplos: familia (reproducao), escola (educacao), Estado (ordem), religiao (sentido), economia (subsistencia). Possuem normas, valores e papeis definidos que orientam comportamentos.",
+          "tema": "Estrutura Social",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 14,
+          "pergunta": "O que e mobilidade social?",
+          "resposta": "Movimento de individuos ou grupos entre posicoes sociais diferentes. Pode ser vertical (mudanca de classe) ou horizontal (mudanca de funcao na mesma classe). Intergeracional (entre geracoes) ou intrageracional (na mesma geracao). Mede a flexibilidade da estratificacao.",
+          "tema": "Desigualdade",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 15,
+          "pergunta": "O que e socializacao?",
+          "resposta": "Processo de aprendizagem e internalizacao de normas, valores e padroes culturais. A primaria ocorre na infancia (familia). A secundaria em outras instituicoes (escola, trabalho). Forma a identidade social e integra o individuo a sociedade.",
+          "tema": "Cultura",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 16,
+          "pergunta": "O que e ideologia segundo Marx?",
+          "resposta": "Sistema de ideias que mascara e legitima a dominacao de classe. A classe dominante impoe sua visao de mundo como universal e natural, ocultando contradicoes e exploracao. Exemplo: meritocracia esconde desigualdades estruturais. A ideologia naturaliza o que e social.",
+          "tema": "Marx",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 17,
+          "pergunta": "O que e o conceito de habitus em Bourdieu?",
+          "resposta": "Sistema de disposicoes duraveis adquiridas pela socializacao que orienta praticas e percepcoes. E a classe social incorporada no corpo, gestos, gostos. Reproduz desigualdades: cada classe tem seu habitus. Mediaao entre estrutura social e acao individual.",
+          "tema": "Bourdieu",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 18,
+          "pergunta": "O que sao movimentos sociais?",
+          "resposta": "Acoes coletivas organizadas que buscam mudanca ou resistencia social. Podem ser revolucionarios, reformistas ou reativos. Exemplos: movimento negro, feminista, LGBTQIA+, sem-terra. Desafiam estruturas de poder, ampliam direitos e transformam valores sociais.",
+          "tema": "Movimentos Sociais",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 19,
+          "pergunta": "Como a industria cultural manipula a sociedade segundo a Escola de Frankfurt?",
+          "resposta": "Adorno e Horkheimer argumentam que a cultura vira mercadoria padronizada para consumo de massa. Programas, musicas e filmes sao fabricados para alienar, nao emancipar. Reproduzem ideologia dominante, destroem pensamento critico e transformam cidadaos em consumidores passivos.",
+          "tema": "Teoria Critica",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 20,
+          "pergunta": "O que Goffman entendia por representacao do eu na vida cotidiana?",
+          "resposta": "A vida social e como teatro: representamos papeis em 'palcos' (espacos publicos) e temos 'bastidores' (espacos privados). Controlamos impressoes que causamos nos outros. Usamos mascaras sociais conforme contexto. A identidade e performativa, nao essencia fixa.",
+          "tema": "Interacionismo",
+          "dificuldade": "dificil"
+        }
+      ],
+      "tags": ["sociologia", "flashcards", "ENEM", "teoria", "sociedade"]
+    },
+    {
+      "id": "flashcards-biologia",
+      "disciplina": "Biologia",
+      "area": "Natureza",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Biologia para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Biologia",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "O que e fotossintese?",
+          "resposta": "Processo realizado por plantas, algas e algumas bacterias que converte energia luminosa em energia quimica. Utiliza CO2 e H2O para produzir glicose e liberar O2. Ocorre nos cloroplastos. Equacao: 6CO2 + 6H2O + luz → C6H12O6 + 6O2.",
+          "tema": "Fisiologia Vegetal",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "Qual a diferenca entre celula procarionte e eucarionte?",
+          "resposta": "Procariotica nao tem nucleo definido nem organelas membranosas (bacterias). Eucariotica tem nucleo delimitado por membrana e organelas como mitocondrias e reticulo (animais, plantas, fungos, protozoarios). Eucarioticas sao maiores e mais complexas.",
+          "tema": "Citologia",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 3,
+          "pergunta": "O que sao cadeiras alimentares e teias alimentares?",
+          "resposta": "Cadeia alimentar e sequencia linear de transferencia de energia: produtor → consumidor primario → secundario → terciario. Teia alimentar e conjunto de cadeias interligadas, representando melhor a complexidade dos ecossistemas. Energia flui, materia cicliza.",
+          "tema": "Ecologia",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 4,
+          "pergunta": "O que e sucessao ecologica?",
+          "resposta": "Processo gradual de mudanca na composicao de especies de um ecossistema ao longo do tempo. Primaria: inicia em area virgem (rocha nua). Secundaria: apos perturbacao (incendio, desmatamento). Culmina em climax: comunidade estavel e complexa.",
+          "tema": "Ecologia",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 5,
+          "pergunta": "O que e a primeira Lei de Mendel?",
+          "resposta": "Lei da Segregacao dos Fatores: cada caracteristica e determinada por dois fatores (alelos) que se separam na formacao dos gametas. Cada gameta recebe apenas um alelo de cada par. Na fecundacao, a condicao diploides e restaurada.",
+          "tema": "Genetica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 6,
+          "pergunta": "O que e segunda Lei de Mendel?",
+          "resposta": "Lei da Segregacao Independente: genes para caracteristicas diferentes segregam-se independentemente durante a formacao dos gametas, gerando diferentes combinacoes. Valida quando os genes estao em cromossomos diferentes ou muito distantes no mesmo cromossomo.",
+          "tema": "Genetica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 7,
+          "pergunta": "O que e selecao natural?",
+          "resposta": "Mecanismo evolutivo proposto por Darwin em que individuos com caracteristicas vantajosas tem maior chance de sobreviver e reproduzir. Seus genes sao transmitidos as proximas geracoes. Com o tempo, a populacao se adapta ao ambiente. E a base da evolucao biologica.",
+          "tema": "Evolucao",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 8,
+          "pergunta": "O que e especiacao?",
+          "resposta": "Processo evolutivo de formacao de novas especies a partir de uma ancestral comum. Ocorre quando populacoes ficam isoladas (geografica ou reprodutivamente) e acumulam diferencas geneticas. Com o tempo, nao conseguem mais cruzar, tornando-se especies distintas.",
+          "tema": "Evolucao",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 9,
+          "pergunta": "O que sao mitocondrias?",
+          "resposta": "Organelas celulares responsaveis pela respiracao celular, processo que gera ATP (energia). Possuem DNA proprio e dupla membrana, evidencias da teoria endossimbiotica. Sao herdadas maternalmente. Abundantes em celulas que demandam muita energia (musculos).",
+          "tema": "Citologia",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 10,
+          "pergunta": "Qual a funcao do reticulo endoplasmatico?",
+          "resposta": "RE rugoso (com ribossomos): sintese e transporte de proteinas. RE liso (sem ribossomos): sintese de lipidios, metabolismo de carboidratos e desintoxicacao. Formam um sistema de canais que conecta o nucleo a membrana plasmatica.",
+          "tema": "Citologia",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 11,
+          "pergunta": "O que e meiose?",
+          "resposta": "Divisao celular reducional que forma gametas (espermatozoides e ovulos). Uma celula diploide (2n) origina quatro celulas haploides (n). Ocorre em duas etapas (I e II) com crossing-over e segregacao independente, gerando variabilidade genetica.",
+          "tema": "Genetica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 12,
+          "pergunta": "O que sao hormônios vegetais?",
+          "resposta": "Substancias que regulam crescimento e desenvolvimento das plantas. Auxina: alongamento celular, fototropismo. Giberelina: germinacao, crescimento. Citocinina: divisao celular. Acido abscisico: dormencia, queda de folhas. Etileno: amadurecimento de frutos.",
+          "tema": "Fisiologia Vegetal",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 13,
+          "pergunta": "Como funciona o sistema ABO de grupos sanguineos?",
+          "resposta": "Determinado por tres alelos: IA (antigeno A), IB (antigeno B) e i (sem antigeno). IA e IB sao codominantes, ambos dominantes sobre i. Fenotipos: A (IAIA ou IAi), B (IBIB ou IBi), AB (IAIB), O (ii). Importante para transfusoes.",
+          "tema": "Genetica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 14,
+          "pergunta": "O que e eutrofizacao?",
+          "resposta": "Enriquecimento excessivo de nutrientes (nitrogênio, fosforo) em corpos d'agua por esgoto e fertilizantes. Causa proliferacao de algas (floracao). Algas morrem, bacterias decompositoras consomem oxigenio, matando peixes. Desequilibrio ecologico grave.",
+          "tema": "Ecologia",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 15,
+          "pergunta": "Qual a diferenca entre respiracao aerobica e anaerobica?",
+          "resposta": "Aerobica: usa oxigenio, ocorre na mitocondria, gera muito ATP (38 moleculas). Completa: glicose → CO2 + H2O + ATP. Anaerobica (fermentacao): sem oxigenio, no citoplasma, gera pouco ATP (2 moleculas). Produz acido latico ou alcool.",
+          "tema": "Fisiologia",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 16,
+          "pergunta": "O que e a teoria endossimbiotica?",
+          "resposta": "Propoe que mitocondrias e cloroplastos se originaram de bacterias primitivas englobadas por celulas eucarioticas ancestrais. Evidencias: possuem DNA proprio, ribossomos semelhantes a bacterias, dupla membrana e reproducao independente. Explicacao da origem das organelas.",
+          "tema": "Evolucao",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 17,
+          "pergunta": "Como funciona a regulacao da glicemia no corpo humano?",
+          "resposta": "Pancreas produz insulina (diminui glicose no sangue estimulando captacao celular) e glucagon (aumenta glicose estimulando quebra de glicogenio no figado). Diabetes ocorre quando ha deficiencia de insulina (tipo 1) ou resistencia a ela (tipo 2), elevando glicemia.",
+          "tema": "Fisiologia Humana",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 18,
+          "pergunta": "O que sao mutacoes e qual sua importancia evolutiva?",
+          "resposta": "Alteracoes permanentes no DNA que podem ser genicas (pontuais) ou cromossomicas (estruturais/numericas). Maioria e neutra ou prejudicial, mas algumas sao vantajosas. Sao fonte primaria de variabilidade genetica, materia-prima para evolucao por selecao natural.",
+          "tema": "Genetica e Evolucao",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 19,
+          "pergunta": "Explique o ciclo do nitrogenio.",
+          "resposta": "N2 atmosferico e fixado por bacterias (Rhizobium) em amonia. Nitrificacao: bacterias convertem NH3 → NO2- → NO3- (absorvido por plantas). Plantas fazem proteinas, animais comem. Decomposicao devolve NH3 ao solo. Desnitrificacao retorna N2 a atmosfera. Ciclo fecha.",
+          "tema": "Ecologia",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 20,
+          "pergunta": "Como ocorre a sintese proteica (traducao)?",
+          "resposta": "RNAm sai do nucleo levando informacao genetica ate o ribossomo. RNAt traz aminoacidos especificos conforme codons do RNAm. Ribossomo le codons (3 bases), liga aminoacidos sequencialmente formando polipeptideo. Inicia no AUG, termina em UAA/UAG/UGA. Proteina formada sera modificada.",
+          "tema": "Genetica Molecular",
+          "dificuldade": "dificil"
+        }
+      ],
+      "tags": ["biologia", "flashcards", "ENEM", "ciencias", "vida"]
+    },
+    {
+      "id": "flashcards-fisica",
+      "disciplina": "Fisica",
+      "area": "Natureza",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Fisica para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Fisica",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "O que diz a Primeira Lei de Newton?",
+          "resposta": "Lei da Inercia: um corpo em repouso permanece em repouso e um corpo em movimento retilineo uniforme continua em MRU, a menos que uma forca resultante atue sobre ele. Quanto maior a massa, maior a inercia (resistencia a mudanca de estado).",
+          "tema": "Mecanica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "O que diz a Segunda Lei de Newton?",
+          "resposta": "A forca resultante sobre um corpo e igual ao produto de sua massa pela aceleracao: F = m × a. A aceleracao e diretamente proporcional a forca e inversamente proporcional a massa. Unidade de forca: Newton (N).",
+          "tema": "Mecanica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 3,
+          "pergunta": "O que diz a Terceira Lei de Newton?",
+          "resposta": "Lei da Acao e Reacao: para toda acao existe uma reacao de mesma intensidade, mesma direcao e sentido oposto. As forcas atuam em corpos diferentes. Exemplo: ao empurrar uma parede, ela empurra voce de volta com mesma forca.",
+          "tema": "Mecanica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 4,
+          "pergunta": "O que e energia cinetica?",
+          "resposta": "Energia associada ao movimento de um corpo. Quanto maior a massa e velocidade, maior a energia cinetica. Formula: Ec = (m × v²)/2. Medida em Joules (J). Um carro em movimento possui energia cinetica que pode causar danos em colisao.",
+          "tema": "Energia",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 5,
+          "pergunta": "O que e energia potencial gravitacional?",
+          "resposta": "Energia armazenada devido a posicao de um corpo em relacao a um referencial no campo gravitacional. Formula: Ep = m × g × h, onde m e massa, g e gravidade (10 m/s²) e h e altura. Quanto maior a altura, maior a energia potencial.",
+          "tema": "Energia",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 6,
+          "pergunta": "O que e o principio de conservacao de energia?",
+          "resposta": "Energia nao pode ser criada nem destruida, apenas transformada de uma forma em outra. A energia total de um sistema isolado permanece constante. Exemplo: em uma montanha-russa, energia potencial converte-se em cinetica e vice-versa.",
+          "tema": "Energia",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 7,
+          "pergunta": "O que e trabalho em Fisica?",
+          "resposta": "Trabalho e a transferencia de energia por meio de uma forca que desloca um corpo. Formula: W = F × d × cos(θ), onde F e forca, d e deslocamento e θ e angulo entre eles. Medido em Joules. Trabalho e nulo se nao ha deslocamento.",
+          "tema": "Mecanica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 8,
+          "pergunta": "O que e potencia?",
+          "resposta": "Taxa de realizacao de trabalho ou transferencia de energia por unidade de tempo. Formula: P = W/t ou P = F × v. Unidade: Watt (W) = Joule/segundo. Quanto maior a potencia, mais rapido o trabalho e realizado.",
+          "tema": "Energia",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 9,
+          "pergunta": "O que diz a Lei de Coulomb?",
+          "resposta": "A forca eletrica entre duas cargas puntiformes e diretamente proporcional ao produto das cargas e inversamente proporcional ao quadrado da distancia: F = k × (q1 × q2)/d². Cargas de sinais iguais se repelem, opostos se atraem.",
+          "tema": "Eletricidade",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 10,
+          "pergunta": "O que e corrente eletrica?",
+          "resposta": "Fluxo ordenado de cargas eletricas (eletrons) atraves de um condutor. Medida em Ampere (A). Formula: i = Q/t, onde Q e carga e t e tempo. Precisa de diferenca de potencial (voltagem) para existir.",
+          "tema": "Eletricidade",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 11,
+          "pergunta": "O que e a Lei de Ohm?",
+          "resposta": "A corrente eletrica em um condutor e diretamente proporcional a tensao aplicada e inversamente proporcional a resistencia: V = R × i. V em Volts, R em Ohms (Ω), i em Amperes. Valida apenas para resistores ohmicos (resistencia constante).",
+          "tema": "Eletricidade",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 12,
+          "pergunta": "Qual a diferenca entre associacao em serie e paralelo?",
+          "resposta": "Serie: resistores em sequencia, mesma corrente, tensoes somam, Req = R1 + R2 + ... Paralelo: resistores em ramos, mesma tensao, correntes somam, 1/Req = 1/R1 + 1/R2 + ... Em paralelo, resistencia total diminui.",
+          "tema": "Eletricidade",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 13,
+          "pergunta": "O que e temperatura?",
+          "resposta": "Medida do grau de agitacao das moleculas de um corpo. Quanto maior a agitacao, maior a temperatura. Escalas: Celsius (°C), Fahrenheit (°F) e Kelvin (K). Kelvin e escala absoluta, onde 0 K (zero absoluto) e a menor temperatura possivel.",
+          "tema": "Termodinamica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 14,
+          "pergunta": "O que e calor?",
+          "resposta": "Energia termica em transito entre corpos com temperaturas diferentes. Flui espontaneamente do mais quente para o mais frio ate equilibrio termico. Nao e temperatura! Medido em Joules ou calorias. Mecanismos: conducao, conveccao, irradiacao.",
+          "tema": "Termodinamica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 15,
+          "pergunta": "O que diz a Primeira Lei da Termodinamica?",
+          "resposta": "Conservacao de energia aplicada a termodinamica: ΔU = Q - W. A variacao de energia interna (ΔU) e igual ao calor recebido (Q) menos o trabalho realizado (W). Energia total do sistema permanece constante.",
+          "tema": "Termodinamica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 16,
+          "pergunta": "O que diz a Segunda Lei da Termodinamica?",
+          "resposta": "Calor nao flui espontaneamente de um corpo frio para um quente. Processos naturais tendem a aumentar a entropia (desordem) do universo. Impossivel construir maquina termica com 100% de eficiencia. Estabelece a 'seta do tempo'.",
+          "tema": "Termodinamica",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 17,
+          "pergunta": "Como funciona o efeito fotoeletrico?",
+          "resposta": "Luz (fotons) de frequencia suficiente arranca eletrons de uma superficie metalica. Einstein explicou usando quantizacao da luz: E = h × f. Comprova natureza corpuscular da luz. Base da fisica quantica. Rendeu Nobel a Einstein em 1921.",
+          "tema": "Fisica Moderna",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 18,
+          "pergunta": "O que e ondas eletromagneticas?",
+          "resposta": "Ondas formadas por campos eletricos e magneticos oscilantes perpendiculares entre si. Nao precisam de meio material, propagam-se no vacuo a velocidade da luz (3×10⁸ m/s). Espectro: radio, micro-ondas, infravermelho, luz visivel, UV, raios-X, gama.",
+          "tema": "Ondulatoria",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 19,
+          "pergunta": "Explique o principio de funcionamento dos transformadores.",
+          "resposta": "Baseado em inducao eletromagnetica: corrente alternada na bobina primaria cria campo magnetico variavel que induz tensao na secundaria. Relacao: Vs/Vp = Ns/Np. Transformador elevador: Ns > Np (aumenta tensao). Abaixador: Ns < Np. Essencial em transmissao de energia.",
+          "tema": "Eletromagnetismo",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 20,
+          "pergunta": "O que e a teoria da relatividade restrita de Einstein?",
+          "resposta": "Postulados: (1) leis da fisica sao identicas em todos referenciais inerciais; (2) velocidade da luz no vacuo e constante (c). Consequencias: dilatacao do tempo, contracao do comprimento, massa aumenta com velocidade, E=mc². Revolucionou conceitos de espaco e tempo.",
+          "tema": "Fisica Moderna",
+          "dificuldade": "dificil"
+        }
+      ],
+      "tags": ["fisica", "flashcards", "ENEM", "mecanica", "energia"]
+    },
+    {
+      "id": "flashcards-quimica",
+      "disciplina": "Quimica",
+      "area": "Natureza",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Quimica para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Quimica",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "O que e numero atomico?",
+          "resposta": "Numero de protons no nucleo de um atomo, representado por Z. Define o elemento quimico. Em atomo neutro, numero de protons = eletrons. Exemplo: oxigenio tem Z=8, ou seja, 8 protons. Organiza a tabela periodica.",
+          "tema": "Estrutura Atomica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "O que sao isotopos?",
+          "resposta": "Atomos do mesmo elemento (mesmo Z) com numero diferente de neutrons, portanto massas diferentes. Exemplo: Carbono-12 (6p, 6n) e Carbono-14 (6p, 8n). Mesmo comportamento quimico. Carbono-14 e radioativo, usado em datacao.",
+          "tema": "Estrutura Atomica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 3,
+          "pergunta": "O que e eletronegatividade?",
+          "resposta": "Tendencia de um atomo atrair eletrons em uma ligacao quimica. Aumenta da esquerda para direita e de baixo para cima na tabela periodica. Fluor e o mais eletronegativo. Diferenca de eletronegatividade determina tipo de ligacao (ionica ou covalente).",
+          "tema": "Ligacoes Quimicas",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 4,
+          "pergunta": "Qual a diferenca entre ligacao ionica e covalente?",
+          "resposta": "Ionica: transferencia de eletrons entre metal e ametal, formando ions (NaCl). Forma solidos cristalinos, conduz eletricidade fundido. Covalente: compartilhamento de eletrons entre ametais (H2O, CO2). Forma moleculas, geralmente nao conduz eletricidade.",
+          "tema": "Ligacoes Quimicas",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 5,
+          "pergunta": "O que e mol?",
+          "resposta": "Unidade que representa 6,02×10²³ entidades (atomos, moleculas, ions) - numero de Avogadro. 1 mol de carbono = 12g. 1 mol de agua = 18g. Relaciona massa microscopica com macroscopica. Essencial para calculos estequiometricos.",
+          "tema": "Estequiometria",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 6,
+          "pergunta": "O que e balanceamento de equacoes?",
+          "resposta": "Ajustar coeficientes para igualar numero de atomos de cada elemento nos reagentes e produtos. Lei de Lavoisier: massa se conserva. Exemplo: H2 + O2 → H2O fica 2H2 + O2 → 2H2O. Fundamental para calculos estequiometricos.",
+          "tema": "Estequiometria",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 7,
+          "pergunta": "O que e pH?",
+          "resposta": "Medida da acidez/basicidade de uma solucao. Escala de 0 a 14. pH < 7: acido, pH = 7: neutro, pH > 7: basico. pH = -log[H+]. Quanto menor o pH, maior a concentracao de H+. Sangue humano tem pH ~7,4.",
+          "tema": "Acido-Base",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 8,
+          "pergunta": "O que caracteriza um acido segundo Arrhenius?",
+          "resposta": "Substancia que em agua libera ions H+ (ou H3O+). Exemplos: HCl, H2SO4, HNO3. Tem sabor azedo, conduz eletricidade em solucao, reage com bases formando sal e agua (neutralizacao). Corroi metais liberando H2.",
+          "tema": "Acido-Base",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 9,
+          "pergunta": "O que caracteriza uma base segundo Arrhenius?",
+          "resposta": "Substancia que em agua libera ions OH-. Exemplos: NaOH, Ca(OH)2, NH4OH. Tem sabor amargo, tato ensaboado, conduz eletricidade em solucao. Neutraliza acidos formando sal e agua. Muda cor de indicadores.",
+          "tema": "Acido-Base",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 10,
+          "pergunta": "O que e oxidacao e reducao?",
+          "resposta": "Oxidacao: perda de eletrons, aumento do NOX. Reducao: ganho de eletrons, diminuicao do NOX. Ocorrem sempre juntas (reacao redox). Exemplo: Fe → Fe²+ + 2e- (oxidacao); Cu²+ + 2e- → Cu (reducao). Oxidante oxida outro e se reduz.",
+          "tema": "Eletroquimica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 11,
+          "pergunta": "Como funciona uma pilha eletroquimica?",
+          "resposta": "Converte energia quimica em eletrica por reacao redox espontanea. Anodo (polo negativo): oxidacao. Catodo (polo positivo): reducao. Eletrons fluem do anodo para catodo. Ponte salina mantem neutralidade. Exemplo: pilha de Daniell (Zn/Cu).",
+          "tema": "Eletroquimica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 12,
+          "pergunta": "Qual a diferenca entre pilha e eletrolise?",
+          "resposta": "Pilha: reacao espontanea gera corrente eletrica (energia quimica → eletrica). Eletrolise: corrente eletrica provoca reacao nao espontanea (energia eletrica → quimica). Eletrolise usada para purificar metais, obter gases (H2, O2), galvanoplastia.",
+          "tema": "Eletroquimica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 13,
+          "pergunta": "O que sao hidrocarbonetos?",
+          "resposta": "Compostos organicos formados apenas por carbono e hidrogenio. Principais classes: alcanos (ligacoes simples), alcenos (dupla), alcinos (tripla), aromaticos (anel benzenico). Fonte: petroleo. Usados como combustiveis, solventes, materia-prima.",
+          "tema": "Quimica Organica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 14,
+          "pergunta": "O que sao isomeros?",
+          "resposta": "Compostos com mesma formula molecular mas estruturas diferentes. Planos: cadeia, posicao, funcao, metameria. Espaciais: geometricos (cis-trans), opticos (quiralidade). Propriedades fisicas e/ou quimicas distintas. Importante em farmacologia.",
+          "tema": "Quimica Organica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 15,
+          "pergunta": "O que e um polimero?",
+          "resposta": "Macromolecula formada pela repeticao de unidades menores (monomeros). Naturais: amido, celulose, proteinas, DNA. Sinteticos: polietileno, PVC, nylon, teflon. Polimerizacao por adicao (sem perda) ou condensacao (com perda de molecula pequena). Versateis e essenciais.",
+          "tema": "Quimica Organica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 16,
+          "pergunta": "O que e entalpia de reacao?",
+          "resposta": "Quantidade de calor absorvida ou liberada em reacao a pressao constante (ΔH). Exotermica: libera calor, ΔH < 0 (combustao). Endotermica: absorve calor, ΔH > 0 (fotossintese). Depende de estado fisico e temperatura. Lei de Hess: ΔH independe do caminho.",
+          "tema": "Termoquimica",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 17,
+          "pergunta": "Como a concentracao afeta a velocidade de reacao?",
+          "resposta": "Quanto maior a concentracao de reagentes, maior a frequencia de colisoes efetivas, maior a velocidade. Lei da acao das massas: v = k[A]^m[B]^n. Ordem de reacao (m, n) determina como concentracao influencia. Duplicar concentracao pode dobrar, quadruplicar ou nao alterar velocidade.",
+          "tema": "Cinetica Quimica",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 18,
+          "pergunta": "O que e equilibrio quimico?",
+          "resposta": "Estado em que velocidade da reacao direta = inversa. Concentracoes permanecem constantes (nao necessariamente iguais). E dinamico, nao estatico. Constante de equilibrio Kc = [produtos]/[reagentes]. Kc > 1: favorece produtos. Kc < 1: favorece reagentes.",
+          "tema": "Equilibrio Quimico",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 19,
+          "pergunta": "O que e o Principio de Le Chatelier?",
+          "resposta": "Quando um equilibrio sofre perturbacao (concentracao, pressao, temperatura), o sistema reage minimizando essa perturbacao. Adicionar reagente: desloca para produtos. Aumentar pressao: desloca para menor volume. Aumentar temperatura em exotermica: desloca para reagentes.",
+          "tema": "Equilibrio Quimico",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 20,
+          "pergunta": "Como funciona a radioatividade?",
+          "resposta": "Nucleos instaveis emitem radiacao para estabilizar. Alfa: 2p+2n, baixo poder de penetracao. Beta: eletron ou positron, penetracao media. Gama: onda eletromagnetica, alta penetracao. Meia-vida: tempo para metade dos nucleos desintegrarem. Usos: medicina, energia, datacao.",
+          "tema": "Radioatividade",
+          "dificuldade": "dificil"
+        }
+      ],
+      "tags": ["quimica", "flashcards", "ENEM", "atomica", "organica"]
+    },
+    {
+      "id": "flashcards-matematica",
+      "disciplina": "Matematica",
+      "area": "Matematica",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Matematica para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Matematica",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "O que e funcao?",
+          "resposta": "Relacao entre dois conjuntos onde cada elemento do dominio se associa a um unico elemento do contradominio. Notacao: f(x) = y. Pode ser representada por formula, grafico, tabela ou diagrama. Essencial para modelar fenomenos reais.",
+          "tema": "Funcoes",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "O que e funcao afim?",
+          "resposta": "Funcao do tipo f(x) = ax + b, onde a ≠ 0. Grafico e uma reta. 'a' e coeficiente angular (taxa de variacao), 'b' e coeficiente linear (onde corta eixo y). Se a > 0, funcao cresce. Se a < 0, decresce.",
+          "tema": "Funcoes",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 3,
+          "pergunta": "O que e funcao quadratica?",
+          "resposta": "Funcao do tipo f(x) = ax² + bx + c, onde a ≠ 0. Grafico e uma parabola. Se a > 0, concavidade para cima (minimo). Se a < 0, para baixo (maximo). Vertice em x = -b/2a. Delta determina numero de raizes.",
+          "tema": "Funcoes",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 4,
+          "pergunta": "Como calcular raizes de funcao quadratica?",
+          "resposta": "Formula de Bhaskara: x = (-b ± √Δ)/2a, onde Δ = b² - 4ac. Se Δ > 0: duas raizes reais distintas. Se Δ = 0: uma raiz (duas iguais). Se Δ < 0: nao ha raizes reais. Raizes sao pontos onde parabola corta eixo x.",
+          "tema": "Funcoes",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 5,
+          "pergunta": "O que e progressao aritmetica (PA)?",
+          "resposta": "Sequencia numerica onde cada termo e igual ao anterior somado a uma constante (razao r). Termo geral: an = a1 + (n-1)r. Soma: Sn = n(a1 + an)/2. Exemplo: 2, 5, 8, 11... (r=3).",
+          "tema": "Sequencias",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 6,
+          "pergunta": "O que e progressao geometrica (PG)?",
+          "resposta": "Sequencia onde cada termo e igual ao anterior multiplicado por constante (razao q). Termo geral: an = a1 × q^(n-1). Soma finita: Sn = a1(q^n - 1)/(q - 1). Soma infinita (|q| < 1): S = a1/(1 - q). Exemplo: 2, 6, 18, 54... (q=3).",
+          "tema": "Sequencias",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 7,
+          "pergunta": "O que e porcentagem?",
+          "resposta": "Razao com denominador 100. Representa partes de um todo. x% = x/100. Para calcular x% de N: (x/100) × N. Aumento de x%: N × (1 + x/100). Desconto: N × (1 - x/100). Fundamental em financas e estatistica.",
+          "tema": "Matematica Financeira",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 8,
+          "pergunta": "Qual a diferenca entre juros simples e compostos?",
+          "resposta": "Simples: J = C × i × t. Juros calculados sobre capital inicial. Montante: M = C(1 + it). Compostos: M = C(1 + i)^t. Juros calculados sobre montante acumulado (juros sobre juros). Compostos crescem exponencialmente, mais usados na pratica.",
+          "tema": "Matematica Financeira",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 9,
+          "pergunta": "Como calcular area de triangulo?",
+          "resposta": "Area = (base × altura)/2. Se conhecer tres lados, usar formula de Herao: A = √[s(s-a)(s-b)(s-c)], onde s = (a+b+c)/2. Se dois lados e angulo entre eles: A = (a×b×sen(θ))/2.",
+          "tema": "Geometria Plana",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 10,
+          "pergunta": "Qual a formula da area do circulo?",
+          "resposta": "Area = π × r², onde r e raio. Perimetro (circunferencia): C = 2πr ou C = πd (d = diametro). Setor circular: A = (θ/360°) × πr². Importante lembrar: π ≈ 3,14.",
+          "tema": "Geometria Plana",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 11,
+          "pergunta": "Como calcular volume de cilindro?",
+          "resposta": "V = πr²h, onde r e raio da base e h e altura. Area lateral: Al = 2πrh. Area total: At = 2πr² + 2πrh. Cilindro e prisma de base circular.",
+          "tema": "Geometria Espacial",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 12,
+          "pergunta": "Como calcular volume de esfera?",
+          "resposta": "V = (4/3)πr³, onde r e raio. Area da superficie: A = 4πr². Hemisferio tem metade do volume e area da superficie. Fundamental em problemas de capacidade e embalagens.",
+          "tema": "Geometria Espacial",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 13,
+          "pergunta": "O que e Teorema de Pitagoras?",
+          "resposta": "Em triangulo retangulo: hipotenusa² = cateto² + cateto². a² = b² + c². Permite calcular lado desconhecido conhecendo dois. Base para distancia entre pontos, trigonometria e geometria espacial.",
+          "tema": "Geometria Plana",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 14,
+          "pergunta": "Quais as razoes trigonometricas basicas?",
+          "resposta": "Em triangulo retangulo: sen(θ) = cateto oposto/hipotenusa. cos(θ) = cateto adjacente/hipotenusa. tan(θ) = cateto oposto/adjacente = sen/cos. Relacao fundamental: sen²θ + cos²θ = 1.",
+          "tema": "Trigonometria",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 15,
+          "pergunta": "O que e media aritmetica?",
+          "resposta": "Soma de todos valores dividida pela quantidade. MA = (x1 + x2 + ... + xn)/n. Representa valor central. Sensivel a valores extremos (outliers). Usada para resumir dados e fazer comparacoes.",
+          "tema": "Estatistica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 16,
+          "pergunta": "Qual a diferenca entre permutacao, arranjo e combinacao?",
+          "resposta": "Permutacao: ordem importa, usa todos (Pn = n!). Arranjo: ordem importa, nao usa todos (A(n,p) = n!/(n-p)!). Combinacao: ordem nao importa (C(n,p) = n!/[p!(n-p)!]). Fundamental em probabilidade.",
+          "tema": "Analise Combinatoria",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 17,
+          "pergunta": "Como calcular probabilidade?",
+          "resposta": "P(evento) = casos favoraveis/casos possiveis. 0 ≤ P ≤ 1. Eventos independentes: P(A e B) = P(A) × P(B). Mutuamente exclusivos: P(A ou B) = P(A) + P(B). Complementar: P(nao A) = 1 - P(A).",
+          "tema": "Probabilidade",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 18,
+          "pergunta": "O que e matriz e quais as operacoes basicas?",
+          "resposta": "Tabela retangular de numeros. Ordem m×n (linhas × colunas). Operacoes: adicao (mesma ordem, soma termo a termo), multiplicacao por escalar, multiplicacao de matrizes (colunas da 1ª = linhas da 2ª). Usado em sistemas lineares e transformacoes.",
+          "tema": "Algebra Linear",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 19,
+          "pergunta": "Como resolver sistema linear 2×2?",
+          "resposta": "Metodo da substituicao: isola variavel em uma equacao e substitui na outra. Metodo da adicao: multiplica equacoes para eliminar variavel por soma. Grafico: solucao e intersecao das retas. Sem solucao: retas paralelas. Infinitas: retas coincidentes.",
+          "tema": "Sistemas Lineares",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 20,
+          "pergunta": "O que e logaritmo?",
+          "resposta": "Operacao inversa da exponenciacao. log_a(b) = x significa a^x = b. Propriedades: log(m×n) = log(m) + log(n); log(m/n) = log(m) - log(n); log(m^p) = p×log(m). Base 10 (comum) e base e (natural). Usado em escala Richter, pH, decibeis.",
+          "tema": "Logaritmos",
+          "dificuldade": "dificil"
+        }
+      ],
+      "tags": ["matematica", "flashcards", "ENEM", "algebra", "geometria"]
+    },
+    {
+      "id": "flashcards-portugues",
+      "disciplina": "Portugues",
+      "area": "Linguagens",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Portugues para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Lingua Portuguesa",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "O que e metafora?",
+          "resposta": "Figura de linguagem que estabelece comparacao implicita entre dois elementos sem conectivo. Transfere caracteristicas de um para outro. Exemplo: 'Meu coracao e um balde despejado' (Fernando Pessoa). Cria sentidos figurados, poeticos e expressivos.",
+          "tema": "Figuras de Linguagem",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "O que e metonimia?",
+          "resposta": "Substituicao de palavra por outra com relacao logica: parte pelo todo, autor pela obra, continente pelo conteudo, marca pelo produto. Exemplos: 'Ler Machado' (obra), 'Tomar um Danone' (marca), 'Brasil venceu o jogo' (selecao).",
+          "tema": "Figuras de Linguagem",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 3,
+          "pergunta": "O que e antitese?",
+          "resposta": "Aproximacao de palavras ou ideias de sentidos opostos para criar contraste. Exemplo: 'Amor e odio', 'Ja estou cheio de me sentir vazio' (Renato Russo). Diferente de paradoxo, que une opostos numa mesma afirmacao aparentemente contraditoria.",
+          "tema": "Figuras de Linguagem",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 4,
+          "pergunta": "O que e hiperbole?",
+          "resposta": "Exagero intencional para enfatizar ideia. Exemplo: 'Ja te disse isso mil vezes', 'Estou morrendo de fome'. Comum na linguagem cotidiana e literaria. Cria efeito dramatico ou comico, intensifica sentimentos.",
+          "tema": "Figuras de Linguagem",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 5,
+          "pergunta": "O que e ironia?",
+          "resposta": "Dizer o contrario do que se pensa com intencao critica ou humoristica. Exemplo: falar 'Que dia lindo!' em temporal. Dependente de contexto. Recurso comum em critica social, satira e humor. Requer interpretacao alem do sentido literal.",
+          "tema": "Figuras de Linguagem",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 6,
+          "pergunta": "O que e variedade linguistica?",
+          "resposta": "Diferentes formas de uso da lingua conforme regiao (dialeto), classe social (socioleto), profissao (jargao), idade (gíria). Nao ha variedade superior. Norma culta e uma das variedades, adequada a contextos formais. Preconceito linguistico e discriminacao.",
+          "tema": "Sociolinguistica",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 7,
+          "pergunta": "Qual a diferenca entre denotacao e conotacao?",
+          "resposta": "Denotacao: sentido literal, dicionarizado, objetivo. Exemplo: 'cobra' (reptil). Conotacao: sentido figurado, subjetivo, dependente de contexto. Exemplo: 'cobra' (pessoa ma). Literatura explora conotacao para criar multiplos sentidos.",
+          "tema": "Semantica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 8,
+          "pergunta": "O que e ambiguidade?",
+          "resposta": "Duplicidade de sentido causada por ma construcao frasal. Exemplo: 'O policial deteve o ladrao em sua casa' (de quem?). Geralmente e defeito em textos objetivos, mas pode ser recurso literario intencional. Prejudica clareza.",
+          "tema": "Sintaxe",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 9,
+          "pergunta": "O que sao generos textuais?",
+          "resposta": "Tipos de texto com estrutura, funcao e estilo definidos socialmente. Exemplos: noticia, artigo, carta, bula, receita, cronica. Cada genero tem caracteristicas proprias: linguagem, organizacao, objetivo. Dominios discursivos: jornalistico, literario, juridico, etc.",
+          "tema": "Generos Textuais",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 10,
+          "pergunta": "Qual a diferenca entre dissertacao, narracao e descricao?",
+          "resposta": "Dissertacao: defende ideia com argumentos, logica (artigo de opiniao). Narracao: conta historia com personagens, tempo, espaco, enredo (conto). Descricao: retrata seres, objetos, lugares com detalhes sensoriais. Textos podem misturar tipos.",
+          "tema": "Tipos Textuais",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 11,
+          "pergunta": "O que e coesao textual?",
+          "resposta": "Conexao entre partes do texto usando conectivos, pronomes, sinonimos, elipses. Garante fluidez e logica. Coesao referencial (retoma elementos), sequencial (conecta ideias). Exemplos: 'porem', 'alem disso', 'ele', 'este'. Essencial para texto bem articulado.",
+          "tema": "Coesao e Coerencia",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 12,
+          "pergunta": "O que e coerencia textual?",
+          "resposta": "Logica interna, unidade de sentido do texto. Ideias nao se contradizem e se relacionam. Nao depende apenas de conectivos, mas de conhecimento de mundo. Texto pode ter coesao sem coerencia. Fundamental para compreensao.",
+          "tema": "Coesao e Coerencia",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 13,
+          "pergunta": "O que e sujeito oculto/eliptico?",
+          "resposta": "Sujeito nao expresso mas identificavel pela desinencia verbal ou contexto. Exemplo: 'Chegamos cedo' (nos). Diferente de indeterminado (nao se sabe quem) e inexistente (verbos impessoais: 'Choveu muito'). Comum no portugues.",
+          "tema": "Sintaxe",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 14,
+          "pergunta": "Quais os tipos de predicado?",
+          "resposta": "Verbal: verbo significativo (O menino correu). Nominal: verbo de ligacao + predicativo (Ela esta feliz). Verbo-nominal: verbo significativo + predicativo (Ele chegou cansado). Predicativo qualifica sujeito ou objeto.",
+          "tema": "Sintaxe",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 15,
+          "pergunta": "O que e crase?",
+          "resposta": "Fusao da preposicao 'a' com artigo 'a(s)' ou pronome demonstrativo 'aquele(s)/aquela(s)/aquilo', marcada com acento grave (à). Ocorre antes de palavras femininas que pedem preposicao e artigo. Testes: substituir por masculino (ao), por 'para'. Nao ha crase antes de masculino, verbo, pronome pessoal.",
+          "tema": "Gramatica",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 16,
+          "pergunta": "Qual a diferenca entre 'mal' e 'mau'?",
+          "resposta": "'Mau' e adjetivo, oposto de 'bom' (homem mau). 'Mal' e adverbio, oposto de 'bem' (ela fala mal), ou substantivo (o mal da humanidade). Teste: substitua por 'bom/bem'. Se couber 'bom', use 'mau'. Se couber 'bem', use 'mal'.",
+          "tema": "Gramatica",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 17,
+          "pergunta": "O que e intertextualidade?",
+          "resposta": "Dialogo entre textos: um texto retoma, parodia, cita ou faz referencia a outro. Tipos: parodia (critica humoristica), pastiche (imitacao de estilo), citacao, alusao. Enriquece sentidos. Leitor precisa conhecer texto-fonte para compreender plenamente.",
+          "tema": "Analise Literaria",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 18,
+          "pergunta": "O que caracteriza o Modernismo brasileiro?",
+          "resposta": "Movimento iniciado em 1922 (Semana de Arte Moderna). Rompeu com academicismo, valorizou o nacional, experimentou formas (verso livre), abordou temas sociais. Autores: Mario e Oswald de Andrade, Manuel Bandeira, Carlos Drummond, Guimaraes Rosa, Clarice Lispector.",
+          "tema": "Literatura",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 19,
+          "pergunta": "Como identificar foco narrativo?",
+          "resposta": "1ª pessoa (personagem): narrador participa, visao limitada, subjetivo ('eu'). 3ª pessoa onisciente: narrador sabe tudo, pensamentos, 'Deus', objetivo. 3ª pessoa observador: sabe so o que ve, nao penetra mente. Foco determina perspectiva e confiabilidade da narracao.",
+          "tema": "Analise Literaria",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 20,
+          "pergunta": "O que e linguagem formal e informal?",
+          "resposta": "Formal: segue norma culta, vocabulario tecnico, estruturas complexas. Contextos: academicos, profissionais, oficiais. Informal: coloquial, girias, contracao, simplicidade. Contextos: cotidiano, familiar. Adequacao ao contexto e fundamental - nao ha certo/errado absoluto, mas adequado/inadequado.",
+          "tema": "Variacao Linguistica",
+          "dificuldade": "medio"
+        }
+      ],
+      "tags": ["portugues", "flashcards", "ENEM", "gramatica", "literatura"]
+    },
+    {
+      "id": "flashcards-redacao",
+      "disciplina": "Redacao",
+      "area": "Linguagens",
+      "tipo": "flashcards",
+      "titulo": "Flashcards de Redacao para o ENEM",
+      "descricao": "Perguntas e respostas rapidas sobre Redacao do ENEM",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "cards": [
+        {
+          "id": 1,
+          "pergunta": "Quais as 5 competencias da redacao do ENEM?",
+          "resposta": "C1: Norma culta (200 pts). C2: Compreender e desenvolver tema (200 pts). C3: Selecionar e organizar argumentos (200 pts). C4: Coesao (200 pts). C5: Proposta de intervencao (200 pts). Total: 1000 pontos. Cada competencia avaliada em 6 niveis (0, 40, 80, 120, 160, 200).",
+          "tema": "Competencias",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 2,
+          "pergunta": "O que e avaliado na Competencia 1?",
+          "resposta": "Dominio da norma culta: ortografia, acentuacao, pontuacao, concordancia, regencia, crase. Ate 5 desvios: 200 pts. 6-10 desvios: 160 pts. Muitos erros graves: nota baixa. Evitar gerundismo, coloquialismos. Revisar e fundamental.",
+          "tema": "Competencia 1",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 3,
+          "pergunta": "O que e tangenciamento de tema?",
+          "resposta": "Texto que aborda o tema superficialmente ou foge do recorte especifico proposto. Reduz nota na C2. Exemplo: tema 'violencia contra mulher no Brasil', escrever sobre violencia geral. E preciso focar no tema exato e usar repertorio relacionado.",
+          "tema": "Competencia 2",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 4,
+          "pergunta": "O que e repertorio socio-cultural legitimado?",
+          "resposta": "Referencia a conhecimentos de areas diversas (filosofia, sociologia, historia, literatura, cinema, dados) que dialoga com o tema. Deve ser produtivo (relacionado ao argumento), nao decorado. Legitimo: fonte confiavel, nao senso comum. Valoriza C2 e C3.",
+          "tema": "Competencia 2",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 5,
+          "pergunta": "Qual a estrutura ideal da redacao dissertativa-argumentativa?",
+          "resposta": "Introducao: contextualizacao, apresentacao do tema, tese (4-5 linhas). Desenvolvimento: 2 paragrafos com argumentos distintos, repertorio, analise critica (7-8 linhas cada). Conclusao: retomada da tese, proposta de intervencao completa (7-8 linhas). Total: ~30 linhas.",
+          "tema": "Estrutura",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 6,
+          "pergunta": "O que deve conter uma boa introducao?",
+          "resposta": "Contextualizacao (alusao historica, citacao, dado), apresentacao clara do tema e tese (posicionamento). Evitar generalizacoes vagas. Anunciar argumentos nao e obrigatorio mas ajuda. Primeira impressao do corretor - clareza e fundamental.",
+          "tema": "Estrutura",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 7,
+          "pergunta": "Como estruturar um paragrafo argumentativo?",
+          "resposta": "Topico frasal (argumento principal). Desenvolvimento com repertorio (dado, citacao, exemplo). Analise critica relacionando ao tema. Fechamento conectando ao proximo paragrafo. Coerencia interna. Evitar paragrafos muito curtos (menos de 5 linhas) ou longos demais.",
+          "tema": "Desenvolvimento",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 8,
+          "pergunta": "Quais os principais conectivos de adicao?",
+          "resposta": "'Alem disso', 'Outrossim', 'Ademais', 'Somado a isso', 'Nao so... mas tambem'. Usados para acrescentar argumentos. Variar conectivos demonstra repertorio linguistico. Evitar repetir 'tambem', 'e' excessivamente. Conectivos sao essenciais para C4.",
+          "tema": "Coesao",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 9,
+          "pergunta": "Quais conectivos indicam oposicao/contraste?",
+          "resposta": "'Entretanto', 'Todavia', 'Porem', 'Contudo', 'No entanto', 'Nao obstante', 'Em contrapartida'. Introduzem ideias contrarias ou ressalvas. Fundamentais para mostrar complexidade argumentativa. 'Mas' e 'porem' nao iniciam frase em norma culta.",
+          "tema": "Coesao",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 10,
+          "pergunta": "O que e a proposta de intervencao completa?",
+          "resposta": "Deve ter 5 elementos: Acao (o que fazer), Agente (quem fara), Modo/Meio (como fazer), Efeito/Finalidade (para que), Detalhamento. Precisa ser concreta, especifica, relacionada aos argumentos. Generica ou incompleta reduz drasticamente C5.",
+          "tema": "Competencia 5",
+          "dificuldade": "facil"
+        },
+        {
+          "id": 11,
+          "pergunta": "Quais os principais agentes para proposta de intervencao?",
+          "resposta": "Governo (ministerios especificos), Midia (campanhas), Escola (educacao), Familia (conscientizacao), ONGs (projetos sociais), Empresas (responsabilidade social). Especificar o agente (ex: Ministerio da Educacao, nao so 'governo'). Multiplos agentes e ideal.",
+          "tema": "Competencia 5",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 12,
+          "pergunta": "Quais temas sao proibidos na redacao do ENEM?",
+          "resposta": "Nao pode ferir direitos humanos: defender tortura, pena de morte, censura, preconceito, trabalho infantil, retirar direitos de grupos. Respeitar dignidade humana, cidadania, diversidade. Violacao zera a redacao. Cuidado com radicalismos e propostas autoritarias.",
+          "tema": "Direitos Humanos",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 13,
+          "pergunta": "Quais erros zeram a redacao?",
+          "resposta": "Fuga total ao tema, nao atender tipo textual (nao ser dissertativo-argumentativo), folha em branco, texto com ate 7 linhas, copia dos textos motivadores, improprios/desenhos, desrespeito aos direitos humanos, identificacao do candidato.",
+          "tema": "Erros Graves",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 14,
+          "pergunta": "Como evitar copia dos textos motivadores?",
+          "resposta": "Usar ideias, nao copiar trechos literalmente. Parafrasear: reescrever com palavras proprias. Expandir: adicionar analise critica. Relacionar com repertorio proprio. Ate 8 linhas copiadas: desconto. Acima: anulacao. Textos motivadores sao apoio, nao fonte de copia.",
+          "tema": "Erros Comuns",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 15,
+          "pergunta": "O que sao argumentos de autoridade?",
+          "resposta": "Citacao de especialistas, estudos, dados oficiais para validar argumento. Exemplos: 'Segundo o IBGE...', 'O sociologo Bauman afirma...'. Devem ser verdadeiros ou verosimeis. Nao inventar dados. Fortalecem C2 e C3 quando bem contextualizados.",
+          "tema": "Argumentacao",
+          "dificuldade": "medio"
+        },
+        {
+          "id": 16,
+          "pergunta": "Como fazer uma boa retomada coesiva?",
+          "resposta": "Usar sinonimos, hiponimos/hiperonimos, pronomes, nominalizacao. Evitar repeticoes. Exemplo: 'violencia' → 'problema', 'tal mazela', 'esse fenomeno', 'essa problematica'. Demonstra dominio lexical. Coesao referencial e sequencial fortalecem C4.",
+          "tema": "Coesao",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 17,
+          "pergunta": "Como construir autoria na redacao?",
+          "resposta": "Nao usar frases prontas ou 'receitas'. Ter posicionamento critico, nao obvio. Analisar causas profundas, nao superficiais. Conectar argumentos de forma pessoal. Repertorio diversificado. Proposta inovadora e detalhada. Autoria diferencia nota 160 de 200 em C2 e C3.",
+          "tema": "Autoria",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 18,
+          "pergunta": "Quais os principais erros de concordancia na redacao?",
+          "resposta": "Verbo concordar com objeto ('Existe problemas' → Existem). Sujeito composto ('O governo e a sociedade precisa' → precisam). Pronome relativo ('Os jovens que busca' → buscam). Expressoes partitivas ('A maioria dos alunos estuda/estudam' - ambas aceitas). Revisar sempre.",
+          "tema": "Competencia 1",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 19,
+          "pergunta": "Como usar virgula corretamente?",
+          "resposta": "Separar elementos de lista, isolar apostos/vocativos, marcar inversoes ('Na sociedade moderna, observa-se'), antes de conectivos adversativos ('porem', 'entretanto'). NUNCA entre sujeito e verbo ou verbo e complemento. Erro comum reduz C1.",
+          "tema": "Competencia 1",
+          "dificuldade": "dificil"
+        },
+        {
+          "id": 20,
+          "pergunta": "Como melhorar o detalhamento da proposta?",
+          "resposta": "Ser especifico em todos elementos. Ruim: 'governo deve fazer campanhas'. Bom: 'Ministerio da Educacao deve implementar, nas escolas publicas, por meio de palestras trimestrais com psicologos, projeto de conscientizacao sobre saude mental, a fim de reduzir preconceito'. Quanto mais concreto, melhor C5.",
+          "tema": "Competencia 5",
+          "dificuldade": "dificil"
+        }
+      ],
+      "tags": ["redacao", "flashcards", "ENEM", "dissertacao", "competencias"]
+    }
+  ]
+}

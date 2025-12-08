@@ -1,0 +1,219 @@
+{
+  "id": "portugues-semantica",
+  "titulo": "Semântica",
+  "descricao": "Estudo dos significados das palavras e suas relações",
+  "icone": "🔤",
+  "cor": "from-indigo-500 to-purple-500",
+  "nivel": "Básico",
+  "tempoEstimado": "3h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Sinonímia e Antonímia",
+      "resumo": "Relações de semelhança (sinônimos) e oposição (antônimos) entre palavras.",
+      "topicos": [
+        "Sinônimos: palavras de significado semelhante",
+        "Sinônimos perfeitos são raros",
+        "Antônimos: palavras de significado oposto",
+        "Contexto determina sinonímia adequada",
+        "Uso estilístico de sinônimos e antônimos"
+      ],
+      "exemplos": [
+        "Sinônimos: casa/residência/moradia/lar/habitação",
+        "Diferenças sutis: 'casa' (neutro) / 'lar' (afetivo) / 'residência' (formal)",
+        "Antônimos: bonito/feio, alto/baixo, amor/ódio",
+        "Contexto: 'manga' (fruta) NÃO é sinônimo de 'manga' (roupa)",
+        "Sinônimos estilísticos: gordo/obeso (técnico)/corpulento (eufemismo)"
+      ],
+      "dicas": [
+        "Sinônimos perfeitos são raríssimos",
+        "Considere conotação e registro ao escolher sinônimo",
+        "Antônimos podem ser gradativos: quente/morno/frio",
+        "Use sinônimos para evitar repetição",
+        "Cuidado: 'pequeno' e 'diminuto' são sinônimos, mas 'diminuto' é mais formal"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Qual par apresenta relação de antonímia?",
+          "alternativas": [
+            "Falar / discursar",
+            "Subir / ascender",
+            "Expandir / contrair",
+            "Terminar / concluir",
+            "Bonito / belo"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Expandir' e 'contrair' são antônimos: significam ações opostas (aumentar vs diminuir). As demais alternativas apresentam sinônimos."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Homonímia e Paronímia",
+      "resumo": "Homônimos têm mesma forma, significados diferentes; parônimos têm formas parecidas.",
+      "topicos": [
+        "Homônimos homógrafos: mesma escrita, pronúncia e sentidos diferentes",
+        "Homônimos homófonos: mesma pronúncia, escrita e sentidos diferentes",
+        "Homônimos perfeitos: escrita e som iguais, sentidos diferentes",
+        "Parônimos: formas semelhantes, significados diferentes",
+        "Importância do contexto para disambiguação"
+      ],
+      "exemplos": [
+        "Homônimo perfeito: 'Banco' (assento) / 'Banco' (instituição financeira)",
+        "Homônimo perfeito: 'Manga' (fruta) / 'Manga' (parte da roupa)",
+        "Homófono: 'Concerto' (musical) / 'Conserto' (reparo)",
+        "Homófono: 'Cela' (prisão) / 'Sela' (de cavalo)",
+        "Parônimo: 'Descrição' (descrever) / 'Discrição' (ser discreto)",
+        "Parônimo: 'Tráfego' (trânsito) / 'Tráfico' (comércio ilegal)"
+      ],
+      "dicas": [
+        "Contexto resolve ambiguidade de homônimos",
+        "Parônimos causam erros de escrita: estude-os",
+        "Homófonos têm som igual mas escrita diferente",
+        "Liste parônimos comuns: eminente/iminente, infligir/infringir",
+        "ENEM adora cobrar distinção entre parônimos"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Complete: 'A ___ da lei acarretou ___ da penalidade.'\n\nQual par completa corretamente?",
+          "alternativas": [
+            "infração / inflição",
+            "infração / infração",
+            "inflação / infração",
+            "infringência / inflição",
+            "inflição / infração"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "'Infração' (violação da lei) e 'inflição' (aplicação de pena) são parônimos com significados distintos adequados ao contexto jurídico."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Polissemia e Ambiguidade",
+      "resumo": "Polissemia: uma palavra com múltiplos significados relacionados; ambiguidade: duplo sentido.",
+      "topicos": [
+        "Polissemia: múltiplos sentidos de uma palavra",
+        "Sentidos relacionados entre si",
+        "Ambiguidade: dupla interpretação possível",
+        "Ambiguidade lexical e estrutural",
+        "Contexto elimina ambiguidade"
+      ],
+      "exemplos": [
+        "Polissemia 'linha': fio / produto de beleza / transporte / orientação ('linha de pensamento')",
+        "Polissemia 'cabeça': parte do corpo / líder / inteligência",
+        "Ambiguidade: 'Vi o acidente do ônibus.' (ônibus se acidentou OU vi do interior do ônibus?)",
+        "Ambiguidade: 'Pessoas idosas precisam de cuidados especiais.' (todas OU apenas algumas?)",
+        "Ambiguidade: 'O policial deteve o suspeito em sua casa.' (casa do policial ou do suspeito?)"
+      ],
+      "dicas": [
+        "Polissemia: sentidos conectados de alguma forma",
+        "Homonímia: sentidos totalmente diferentes",
+        "Ambiguidade prejudica clareza textual",
+        "Use contexto para determinar sentido pretendido",
+        "Na escrita, evite ambiguidade; na interpretação, considere contexto"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Em 'O governo cortou gastos, mas cortou também direitos sociais', a palavra 'cortou' exemplifica:",
+          "alternativas": [
+            "Homonímia perfeita",
+            "Antonímia contextual",
+            "Polissemia com sentidos relacionados",
+            "Paronímia semântica",
+            "Ambiguidade estrutural"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Cortou' apresenta polissemia: dois sentidos relacionados (reduzir/eliminar gastos e reduzir/eliminar direitos), derivados do sentido básico de 'cortar'."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Denotação e Conotação",
+      "resumo": "Sentido literal (denotação) versus sentido figurado, subjetivo e emotivo (conotação).",
+      "topicos": [
+        "Denotação: sentido literal, objetivo, dicionarizado",
+        "Conotação: sentido figurado, subjetivo, emotivo",
+        "Denotação em textos técnicos e científicos",
+        "Conotação em textos literários e publicitários",
+        "Figuras de linguagem envolvem conotação"
+      ],
+      "exemplos": [
+        "Denotação: 'Aquele homem é um leão.' (é um animal felino) - interpretação literal",
+        "Conotação: 'Aquele homem é um leão.' (é corajoso, forte) - sentido figurado",
+        "Denotação: 'A cobra está no jardim.' (animal réptil)",
+        "Conotação: 'Aquela mulher é uma cobra.' (pessoa traiçoeira)",
+        "Denotação: texto científico sobre leões e suas características",
+        "Conotação: poema usando leão como símbolo de força e realeza"
+      ],
+      "dicas": [
+        "Textos literários exploram conotação",
+        "Textos técnicos preferem denotação (clareza)",
+        "Contexto indica se sentido é literal ou figurado",
+        "Conotação envolve carga emotiva e cultural",
+        "Mesma palavra pode ter sentidos conotativos variados"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Em qual frase a palavra 'luz' é usada em sentido conotativo?",
+          "alternativas": [
+            "'A luz do sol invadiu o quarto pela janela.'",
+            "'Acenda a luz, está escuro aqui.'",
+            "'Você é a luz da minha vida.'",
+            "'A velocidade da luz é 300.000 km/s.'",
+            "'A conta de luz aumentou este mês.'"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Na frase 'Você é a luz da minha vida', 'luz' tem sentido conotativo/figurado (alegria, importância), não literal como nas demais alternativas."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Hiperonímia e Hiponímia",
+      "resumo": "Relação hierárquica: hiperônimo (termo geral) e hipônimo (termo específico).",
+      "topicos": [
+        "Hiperônimo: palavra de sentido mais amplo, genérico",
+        "Hipônimo: palavra de sentido mais restrito, específico",
+        "Relação de inclusão: hipônimo está contido no hiperônimo",
+        "Uso na coesão textual (substituição)",
+        "Graus de especificidade"
+      ],
+      "exemplos": [
+        "Hiperônimo: 'flor' / Hipônimos: rosa, margarida, cravo, lírio",
+        "Hiperônimo: 'veículo' / Hipônimos: carro, moto, caminhão, ônibus",
+        "Hiperônimo: 'animal' / Hipônimos: cachorro, gato, leão, pássaro",
+        "Níveis: ser vivo > animal > mamífero > felino > gato (do mais geral ao mais específico)",
+        "Coesão: 'Comprei uma rosa. A flor era vermelha.' (flor retoma rosa como hiperônimo)"
+      ],
+      "dicas": [
+        "Hiperônimo inclui vários hipônimos",
+        "Útil para evitar repetição: use hiperônimo para retomar hipônimo",
+        "Toda palavra pode ser hiperônimo ou hipônimo dependendo da comparação",
+        "Importante para coesão e clareza textual",
+        "Hierarquia pode ter vários níveis"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Na relação 'poodle' e 'cão', é correto afirmar:",
+          "alternativas": [
+            "'Poodle' e 'cão' são sinônimos perfeitos",
+            "'Poodle' é hiperônimo de 'cão'",
+            "'Cão' é hiperônimo de 'poodle'",
+            "'Poodle' e 'cão' são antônimos",
+            "'Poodle' e 'cão' são parônimos"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Cão' é hiperônimo (termo geral) e 'poodle' é hipônimo (termo específico). Poodle é um tipo de cão, logo o termo geral (cão) engloba o específico (poodle)."
+        }
+      ]
+    }
+  ]
+}

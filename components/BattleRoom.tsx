@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import FPCoin from './FPCoin';
 import { BattleState, BattleQuestion, BattleAnswer } from '@/lib/battles/types';
+import AvatarUsuario from './AvatarUsuario';
 
 interface BattleRoomProps {
   roomCode: string;

@@ -1,0 +1,333 @@
+{
+  "id": "redacao-competencia3",
+  "titulo": "Competência 3: Selecionar e Organizar Argumentos",
+  "descricao": "Selecionar, relacionar, organizar e interpretar informações, fatos, opiniões e argumentos em defesa de um ponto de vista",
+  "icone": "💡",
+  "cor": "from-blue-500 to-cyan-500",
+  "nivel": "Avançado",
+  "tempoEstimado": "3h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Tese e Estrutura Argumentativa",
+      "resumo": "A tese é o posicionamento crítico do autor sobre o tema. Saber construir uma tese clara e desenvolver argumentos consistentes em sua defesa é o fundamento da Competência 3.",
+      "topicos": [
+        "O que é tese",
+        "Como formular uma tese clara",
+        "Diferença entre tese e tema",
+        "Estrutura: tese + argumentos",
+        "Posicionamento crítico"
+      ],
+      "exemplos": [
+        "❌ NÃO É TESE (apenas reproduz o tema):\n'A violência contra a mulher é um problema no Brasil.'\n(Apenas constata, não argumenta)",
+        "✅ TESE BEM FORMULADA:\n'A persistência da violência contra a mulher no Brasil decorre da cultura patriarcal enraizada e da ineficiência das políticas públicas de proteção.'\n(Apresenta causas específicas = ponto de vista argumentável)",
+        "✅ TESE + ARGUMENTOS (estrutura ideal):\nINTRODUÇÃO: [Tese] A invisibilidade do trabalho doméstico feminino decorre de fatores históricos e culturais.\nD1: [Argumento 1] Historicamente, a divisão sexual do trabalho relegou à mulher o espaço privado...\nD2: [Argumento 2] Culturalmente, a sociedade patriarcal naturaliza e desvaloriza o trabalho de cuidado...",
+        "✅ EXEMPLO NOTA 1000:\n'A persistência do estigma contra doenças mentais na sociedade brasileira resulta tanto da herança cultural que associa transtornos psíquicos à fraqueza de caráter quanto da precariedade no acesso à informação qualificada sobre saúde mental.'",
+        "🎯 DICA: A tese deve responder 'POR QUE o problema existe?' ou 'COMO podemos analisá-lo?'"
+      ],
+      "dicas": [
+        "A tese deve aparecer preferencialmente na introdução",
+        "Evite teses óbvias ou que apenas reproduzem o tema",
+        "Apresente 2-3 causas/aspectos do problema na tese",
+        "Cada parágrafo de desenvolvimento deve retomar um aspecto da tese",
+        "Use conectivos causais: 'decorre de', 'resulta de', 'é consequência de'"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c3-m1",
+          "enunciado": "Qual enunciado representa uma TESE adequada?",
+          "alternativas": [
+            "A educação é importante para o Brasil.",
+            "A educação no Brasil enfrenta problemas.",
+            "Os desafios educacionais brasileiros decorrem do subfinanciamento crônico e da desvalorização docente.",
+            "Vamos falar sobre educação no Brasil."
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A tese deve apresentar um ponto de vista argumentável com causas/aspectos específicos, não apenas constatar o óbvio."
+        },
+        {
+          "id": "q2-c3-m1",
+          "enunciado": "A diferença entre tema e tese é:",
+          "alternativas": [
+            "Não há diferença, são sinônimos",
+            "Tema é o assunto geral; tese é o posicionamento específico sobre ele",
+            "Tema é mais importante que tese",
+            "Tese aparece apenas na conclusão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O tema é o assunto proposto; a tese é o posicionamento crítico/analítico do autor sobre esse tema, geralmente apresentando causas ou aspectos."
+        },
+        {
+          "id": "q3-c3-m1",
+          "enunciado": "Uma boa tese deve:",
+          "alternativas": [
+            "Apenas reproduzir as palavras do tema",
+            "Ser uma constatação óbvia aceita por todos",
+            "Apresentar um ponto de vista argumentável com causas/aspectos específicos",
+            "Estar presente apenas na conclusão do texto"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A tese deve ir além do óbvio, apresentando uma análise específica com causas, aspectos ou perspectivas argumentáveis."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Tipos de Argumentação",
+      "resumo": "Existem diversos tipos de argumentos que podem fortalecer sua redação: por autoridade, por exemplificação, por causa-consequência, por comparação, entre outros. Conhecê-los amplia seu repertório argumentativo.",
+      "topicos": [
+        "Argumento de autoridade",
+        "Argumento por exemplificação",
+        "Argumento por causa e consequência",
+        "Argumento por comparação/analogia",
+        "Argumento por dados estatísticos"
+      ],
+      "exemplos": [
+        "📚 ARGUMENTO DE AUTORIDADE:\n'Segundo o sociólogo Zygmunt Bauman, a sociedade líquida caracteriza-se pela fluidez das relações. Esse conceito aplica-se à volatilidade dos vínculos trabalhistas contemporâneos no Brasil.'\n(Usa pensador renomado)",
+        "📊 ARGUMENTO POR DADOS:\n'De acordo com o IBGE, 41% das mulheres brasileiras dedicam-se a afazeres domésticos, enquanto apenas 22% dos homens o fazem. Essa disparidade evidencia a desigualdade na divisão do trabalho de cuidado.'\n(Usa estatísticas oficiais)",
+        "🔄 ARGUMENTO POR CAUSA-CONSEQUÊNCIA:\n'A falta de investimento em saúde mental (CAUSA) resulta em aumento de casos de depressão e ansiedade não tratados (CONSEQUÊNCIA), agravando o sofrimento individual e os custos sociais.'",
+        "📖 ARGUMENTO POR EXEMPLIFICAÇÃO:\n'A invisibilidade de comunidades quilombolas exemplifica-se no Quilombo do Cafundó, em São Paulo, que até 2015 não possuía reconhecimento oficial, privando seus habitantes de direitos básicos.'",
+        "🔁 ARGUMENTO POR COMPARAÇÃO:\n'Enquanto países europeus investem cerca de 5% do PIB em educação com resultados expressivos, o Brasil, com investimento similar, não alcança os mesmos índices de qualidade devido à má gestão.'"
+      ],
+      "dicas": [
+        "Varie os tipos de argumento ao longo do texto (não repita sempre o mesmo tipo)",
+        "Argumento de autoridade exige citação correta e contextualizada",
+        "Dados estatísticos devem ser de fontes confiáveis (IBGE, ONU, universidades)",
+        "Exemplos históricos ou contemporâneos devem ser relevantes e bem explicados",
+        "Conecte cada argumento claramente à sua tese"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c3-m2",
+          "enunciado": "Identifique o tipo de argumento: 'Segundo Hannah Arendt, a banalidade do mal explica como atos violentos tornam-se rotineiros. No Brasil, essa perspectiva elucida a naturalização da violência doméstica.'",
+          "alternativas": [
+            "Argumento por exemplificação",
+            "Argumento de autoridade",
+            "Argumento por dados estatísticos",
+            "Argumento por comparação"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Utiliza um pensador/autoridade (Hannah Arendt) para embasar o raciocínio, caracterizando argumento de autoridade."
+        },
+        {
+          "id": "q2-c3-m2",
+          "enunciado": "Qual argumento é MAIS forte em uma dissertação-argumentativa?",
+          "alternativas": [
+            "Minha avó sempre dizia que educação é fundamental",
+            "Segundo pesquisa da UNESCO, países que investem em educação têm IDH mais elevado",
+            "Eu acho que educação é importante",
+            "Todo mundo sabe que educação muda vidas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Argumentos embasados em dados de instituições reconhecidas (UNESCO) têm maior legitimidade que opiniões pessoais ou senso comum."
+        },
+        {
+          "id": "q3-c3-m2",
+          "enunciado": "O que caracteriza um argumento por CAUSA-CONSEQUÊNCIA?",
+          "alternativas": [
+            "Citar um autor famoso",
+            "Estabelecer relação de causalidade entre fenômenos",
+            "Comparar duas situações diferentes",
+            "Usar dados estatísticos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Argumento por causa-consequência estabelece relação de causalidade: X (causa) gera/resulta em Y (consequência)."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Repertório Sociocultural Produtivo",
+      "resumo": "A Competência 3 valoriza fortemente o uso de repertório sociocultural legitimado de forma produtiva, ou seja, que não seja apenas inserido, mas que contribua efetivamente para a argumentação.",
+      "topicos": [
+        "O que é repertório legitimado",
+        "Repertório produtivo vs decorativo",
+        "Áreas de conhecimento úteis",
+        "Como relacionar repertório ao argumento",
+        "Erros comuns no uso de repertório"
+      ],
+      "exemplos": [
+        "✅ REPERTÓRIO PRODUTIVO (contribui para o argumento):\n'O filósofo John Locke defendia que a propriedade é resultado do trabalho investido. Contudo, no Brasil, o trabalho doméstico feminino não remunerado não é reconhecido como produtor de valor econômico, contradizendo esse princípio e perpetuando invisibilidade.'\n(Filosofia aplicada produtivamente ao tema)",
+        "❌ REPERTÓRIO DECORATIVO (não contribui):\n'Platão foi um grande filósofo. A educação é importante. Aristóteles também pensava sobre educação.'\n(Cita pensadores sem relacionar ao argumento)",
+        "✅ REPERTÓRIO HISTÓRICO PRODUTIVO:\n'A Constituição de 1988 estabeleceu a saúde como direito universal. Entretanto, o estigma contra doenças mentais impede o pleno acesso a esse direito, configurando retrocesso em relação aos princípios constitucionais.'",
+        "✅ REPERTÓRIO CINEMATOGRÁFICO PRODUTIVO:\n'O filme \"Que Horas Ela Volta?\" (Anna Muylaert, 2015) retrata a invisibilidade do trabalho doméstico no Brasil, evidenciando como relações trabalhistas reproduzem hierarquias sociais historicamente construídas.'",
+        "✅ REPERTÓRIO LITERÁRIO PRODUTIVO:\n'Machado de Assis, em \"Memórias Póstumas de Brás Cubas\", critica a elite brasileira ociosa. Similarmente, na contemporaneidade, a concentração de renda perpetua desigualdades estruturais.'"
+      ],
+      "dicas": [
+        "Repertório produtivo = legitimado + pertinente + articulado ao argumento",
+        "Áreas úteis: filosofia, sociologia, história, literatura, cinema, artes",
+        "Explique sempre COMO o repertório se relaciona ao tema",
+        "Evite repertório vago ('um filósofo disse', 'na história')",
+        "Não force repertórios sem relação clara com o tema"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c3-m3",
+          "enunciado": "Qual uso de repertório é considerado PRODUTIVO?",
+          "alternativas": [
+            "Citar um filósofo sem explicar a relação com o tema",
+            "Relacionar conceito filosófico ao argumento de forma clara e pertinente",
+            "Listar vários autores sem desenvolvê-los",
+            "Mencionar um livro famoso sem conectar ao tema"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Repertório produtivo é aquele que contribui efetivamente para a argumentação, com relação clara e explícita ao tema."
+        },
+        {
+          "id": "q2-c3-m3",
+          "enunciado": "Qual afirmação está INCORRETA sobre repertório sociocultural?",
+          "alternativas": [
+            "Deve ser de áreas como filosofia, sociologia, história, artes",
+            "Quanto mais repertórios inseridos, melhor, mesmo sem relação clara",
+            "Precisa ser legitimado (não senso comum ou experiência pessoal)",
+            "Deve ser pertinente e contribuir para o argumento"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Quantidade não é qualidade. Repertório decorativo (sem relação clara) não pontua. É melhor um repertório bem articulado que vários mal utilizados."
+        },
+        {
+          "id": "q3-c3-m3",
+          "enunciado": "Identifique o repertório LEGITIMADO:",
+          "alternativas": [
+            "Meu professor disse que o problema é sério",
+            "Ouvi falar que na Europa isso não acontece",
+            "Segundo Émile Durkheim, a coesão social depende de instituições fortes",
+            "Todo mundo sabe que isso é importante"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Repertório legitimado inclui referências acadêmicas, culturais, históricas - não senso comum ou opiniões pessoais."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Argumentação Crítica e Autoral",
+      "resumo": "A Competência 3 valoriza autoria e criticidade. Não basta reproduzir ideias prontas; é preciso analisar, interpretar e construir raciocínios próprios sobre o tema.",
+      "topicos": [
+        "Autoria vs cópia de ideias",
+        "Desenvolvimento crítico",
+        "Interpretação de informações",
+        "Progressão argumentativa",
+        "Evitando superficialidade"
+      ],
+      "exemplos": [
+        "❌ ARGUMENTAÇÃO SUPERFICIAL:\n'A educação é importante porque prepara para o mercado de trabalho. Todos precisam estudar. O governo deve investir.'\n(Ideias óbvias, sem desenvolvimento crítico)",
+        "✅ ARGUMENTAÇÃO CRÍTICA:\n'Embora o discurso oficial valorize a educação, a prática revela contradições: o subfinanciamento do setor contrasta com os investimentos prioritários em outras áreas, evidenciando que a educação não é, de fato, prioridade governamental, apesar da retórica.'",
+        "✅ ANÁLISE CRÍTICA NOTA 1000:\n'Paradoxalmente, embora o Brasil seja signatário de tratados internacionais de direitos humanos, a persistência da invisibilidade de povos tradicionais demonstra a dissonância entre compromissos formais e práticas efetivas, revelando hipocrisia institucional.'",
+        "✅ INTERPRETAÇÃO APROFUNDADA:\n'A naturalização da violência simbólica, conceito de Bourdieu, manifesta-se na reprodução de estereótipos sobre doenças mentais nos meios de comunicação, perpetuando ciclos de estigmatização que se autoalimentam.'",
+        "✅ PROGRESSÃO ARGUMENTATIVA:\nParágrafo 1: [Apresenta problema] → Parágrafo 2: [Aprofunda causas] → Parágrafo 3: [Amplia análise com outro ângulo] → Cada parágrafo adiciona camada de complexidade"
+      ],
+      "dicas": [
+        "Vá além do óbvio: questione, analise, interprete",
+        "Use expressões que demonstram criticidade: 'paradoxalmente', 'embora', 'contudo', 'não obstante'",
+        "Desenvolva cada argumento: não apenas afirme, mas explique o raciocínio",
+        "Conecte diferentes argumentos criando progressão lógica",
+        "Evite frases feitas e clichês ('desde os primórdios', 'nos dias de hoje')"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c3-m4",
+          "enunciado": "Qual trecho demonstra AUTORIA e CRITICIDADE?",
+          "alternativas": [
+            "A educação é importante. O Brasil precisa melhorar. O governo deve agir.",
+            "Embora o discurso oficial valorize a educação, a prática revela contradições sistemáticas que evidenciam dissonância entre retórica e ações concretas.",
+            "Desde os primórdios, a educação é valorizada. Nos dias de hoje, isso continua.",
+            "Todo mundo sabe que educação é fundamental para o desenvolvimento."
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A alternativa demonstra análise crítica, uso de conectivos concessivos e interpretação aprofundada, evitando obviedades."
+        },
+        {
+          "id": "q2-c3-m4",
+          "enunciado": "O que caracteriza argumentação SUPERFICIAL?",
+          "alternativas": [
+            "Uso de repertório sociocultural legitimado",
+            "Análise crítica e aprofundada do tema",
+            "Ideias óbvias sem desenvolvimento, senso comum, frases feitas",
+            "Progressão lógica entre argumentos"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Argumentação superficial caracteriza-se por ideias óbvias, falta de desenvolvimento crítico, uso de senso comum e clichês."
+        },
+        {
+          "id": "q3-c3-m4",
+          "enunciado": "Qual conectivo demonstra CRITICIDADE e CONTRASTE?",
+          "alternativas": [
+            "Portanto, assim, logo",
+            "Embora, paradoxalmente, não obstante",
+            "Também, além disso, igualmente",
+            "Primeiramente, em seguida, finalmente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Conectivos concessivos/contrastivos (embora, paradoxalmente, não obstante) introduzem análises críticas e contradições, demonstrando complexidade argumentativa."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Evitando Senso Comum e Lugar-Comum",
+      "resumo": "Um dos principais problemas na Competência 3 é a argumentação baseada em senso comum, clichês e generalizações vazias. Aprender a evitar esses vícios eleva a qualidade argumentativa.",
+      "topicos": [
+        "O que é senso comum",
+        "Clichês e frases feitas",
+        "Generalizações problemáticas",
+        "Como substituir por argumentos sólidos",
+        "Análise de redações nota 1000"
+      ],
+      "exemplos": [
+        "❌ SENSO COMUM:\n'A educação transforma vidas. É preciso conscientização. Unidos somos mais fortes.'\n(Frases óbvias aceitas por todos, sem argumentação real)",
+        "✅ SUBSTITUTO CRÍTICO:\n'Embora o discurso da educação transformadora seja recorrente, dados do IBGE demonstram que a mobilidade social via educação reduziu 20% na última década, questionando a efetividade das políticas educacionais atuais.'",
+        "❌ CLICHÊS E FRASES FEITAS:\n'Desde os primórdios da humanidade...', 'Nos dias atuais...', 'Na sociedade em que vivemos...', 'É de suma importância...', 'Fica evidente que...'",
+        "✅ SUBSTITUTOS:\n'Historicamente...', 'No contexto contemporâneo brasileiro...', 'Configura-se como fundamental...', 'Observa-se que...'",
+        "❌ GENERALIZAÇÃO VAZIA:\n'Todo mundo sofre com isso', 'Ninguém se importa', 'Todos sabem que', 'É óbvio que'\n✅ ESPECIFICAÇÃO:\n'Segundo pesquisa X, Y% da população é afetada', 'Estudos indicam negligência institucional', 'Dados evidenciam que'",
+        "✅ EXEMPLO NOTA 1000:\n'Contrariando a noção de progresso linear, a persistência de desigualdades estruturais na sociedade brasileira do século XXI demonstra que avanços legislativos não se traduzem automaticamente em transformações sociais efetivas.'\n(Evita clichês, apresenta análise crítica)"
+      ],
+      "dicas": [
+        "Substitua 'desde os primórdios' por contextualizações históricas específicas",
+        "Troque 'nos dias de hoje' por 'no contexto contemporâneo/atual'",
+        "Evite afirmações categóricas sem embasamento ('todo', 'ninguém', 'sempre')",
+        "Substitua 'é importante' por análises do POR QUE é relevante",
+        "Leia redações nota 1000 para identificar padrões de linguagem formal e crítica"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c3-m5",
+          "enunciado": "Identifique o trecho que NÃO apresenta senso comum ou clichê:",
+          "alternativas": [
+            "Desde os primórdios da humanidade, a educação é importante. Nos dias de hoje, isso continua verdade.",
+            "Todo mundo sabe que a desigualdade é um problema grave que afeta todas as pessoas.",
+            "A análise da desigualdade brasileira sob a perspectiva de Jessé Souza revela raízes estruturais que transcendem explicações simplistas baseadas em mérito individual.",
+            "É de suma importância que todos se conscientizem sobre esse problema tão evidente."
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A alternativa apresenta análise crítica com referência a autor, evitando clichês, frases feitas e generalizações vazias."
+        },
+        {
+          "id": "q2-c3-m5",
+          "enunciado": "Qual expressão deve ser EVITADA em uma redação crítica?",
+          "alternativas": [
+            "Segundo dados do IBGE",
+            "Na perspectiva do sociólogo Bourdieu",
+            "Desde os primórdios da humanidade",
+            "No contexto contemporâneo brasileiro"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Desde os primórdios da humanidade' é clichê vago que não agrega valor argumentativo. Prefira contextualizações históricas específicas."
+        },
+        {
+          "id": "q3-c3-m5",
+          "enunciado": "Como transformar 'A educação é importante' em argumento crítico?",
+          "alternativas": [
+            "A educação é muito importante para todos.",
+            "Todo mundo sabe que a educação é importante.",
+            "Embora a educação seja discursivamente valorizada, a prática revela subfinanciamento sistemático que contradiz essa retórica.",
+            "Desde sempre, a educação foi importante."
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A alternativa transforma afirmação óbvia em análise crítica, apontando contradições e especificando o argumento."
+        }
+      ]
+    }
+  ]
+}

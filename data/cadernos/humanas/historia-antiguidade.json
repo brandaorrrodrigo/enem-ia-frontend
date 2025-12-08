@@ -1,0 +1,402 @@
+{
+  "id": "historia-antiguidade",
+  "titulo": "Antiguidade Clássica",
+  "descricao": "Grécia e Roma: democracia, filosofia, república e império",
+  "icone": "🏛️",
+  "cor": "from-blue-400 to-indigo-600",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-grecia-antiga",
+      "titulo": "Grécia Antiga: Polis e Sociedade",
+      "topicos": [
+        "Período Homérico e formação das polis",
+        "Esparta: militarismo e oligarquia",
+        "Atenas: democracia e cultura",
+        "Guerras Médicas",
+        "Guerra do Peloponeso"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A polis (cidade-estado) foi a forma básica de organização política na Grécia Antiga. Sobre suas características, é correto afirmar que:",
+          "alternativas": [
+            "Era um império centralizado que controlava todo território grego",
+            "Cidade-estado independente com governo, leis e identidade próprios",
+            "Não possuía nenhuma forma de organização política",
+            "Era totalmente subordinada a um poder central unificado",
+            "Impedia qualquer forma de participação política dos cidadãos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A polis era uma cidade-estado independente, com território, governo, leis e exército próprios. Cada polis tinha identidade particular. A geografia montanhosa da Grécia dificultou unificação política, favorecendo fragmentação em diversas polis (Atenas, Esparta, Tebas, Corinto)."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Esparta desenvolveu um sistema político e social único na Grécia. Sobre a sociedade espartana, é correto afirmar que:",
+          "alternativas": [
+            "Era uma democracia plena com participação de todos",
+            "Sociedade militarista oligárquica, com rígida hierarquia social",
+            "Valorizava principalmente as artes e a filosofia",
+            "Concedia cidadania plena a todos os habitantes",
+            "Rejeitava completamente o treinamento militar"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Esparta era oligarquia militar. Sociedade dividida em: esparciatas (cidadãos-guerreiros), periecos (livres não-cidadãos, comércio/artesanato) e hilotas (servos estatais, maioria). Educação (agogé) visava formar guerreiros. Militarismo extremo, pouca produção cultural."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Atenas desenvolveu a primeira experiência democrática da história. Sobre a democracia ateniense, é correto afirmar que:",
+          "alternativas": [
+            "Incluía todos os habitantes: homens, mulheres, escravos e estrangeiros",
+            "Era direta, mas restrita a cidadãos (homens livres nascidos em Atenas)",
+            "Era representativa, com parlamento eleito",
+            "Não permitia nenhuma forma de participação popular",
+            "Era idêntica às democracias contemporâneas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A democracia ateniense (século V a.C.) era direta: cidadãos participavam da Assembleia (Eclésia), votavam leis, elegiam magistrados por sorteio. Mas era restrita: apenas homens livres nascidos em Atenas eram cidadãos (10-15% da população). Mulheres, escravos e metecos (estrangeiros) eram excluídos."
+        },
+        {
+          "id": "q4",
+          "enunciado": "As Guerras Médicas (490-479 a.C.) opuseram gregos e persas. Sobre esse conflito, é correto afirmar que:",
+          "alternativas": [
+            "Os persas derrotaram completamente os gregos",
+            "Vitória grega fortaleceu Atenas e consolidou identidade helênica",
+            "Não teve nenhuma consequência política para a Grécia",
+            "Resultou na conquista persa de toda a Grécia",
+            "Atenas não participou dessas guerras"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Gregos derrotaram persas em Maratona (490 a.C.), Salamina e Plateia (479 a.C.). Vitória fortaleceu Atenas (líder naval), consolidou identidade grega e inaugurou período de esplendor cultural (Século de Péricles). Atenas formou Liga de Delos, tornando-se potência imperialista."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Guerra do Peloponeso (431-404 a.C.) opôs Atenas e Esparta. Sobre esse conflito, é correto afirmar que:",
+          "alternativas": [
+            "Fortaleceu permanentemente todas as polis gregas",
+            "Vitória espartana enfraqueceu toda Grécia, facilitando conquista macedônica",
+            "Não causou nenhum dano às cidades gregas",
+            "Resultou na unificação pacífica da Grécia",
+            "Atenas saiu fortalecida e expandiu seu império"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Guerra entre Liga de Delos (Atenas) e Liga do Peloponeso (Esparta) durou 27 anos. Esparta venceu, mas todas as polis saíram enfraquecidas (mortes, destruição, crise). Isso facilitou conquista da Grécia por Filipe II da Macedônia (338 a.C.)."
+        }
+      ]
+    },
+    {
+      "id": "mod2-cultura-grecia",
+      "titulo": "Cultura e Filosofia Grega",
+      "topicos": [
+        "Teatro grego (tragédia e comédia)",
+        "Filosofia: Sócrates, Platão, Aristóteles",
+        "Mitologia e religião",
+        "Jogos Olímpicos",
+        "Legado cultural grego"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O teatro grego foi importante manifestação cultural. Sobre o teatro na Grécia Antiga, é correto afirmar que:",
+          "alternativas": [
+            "Era proibido e reprimido pelo Estado",
+            "Tragédias abordavam destino, ética e condição humana; comédias criticavam política",
+            "Não tinha nenhuma relação com questões sociais",
+            "Era entretenimento exclusivo da elite",
+            "Não influenciou a cultura ocidental posterior"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Teatro grego (Dioniso) incluía tragédias (Ésquilo, Sófocles, Eurípides: destino, ética, sofrimento humano) e comédias (Aristófanes: sátira política, crítica social). Tinha função educativa e política. Realizava-se em grandes festivais públicos. Influenciou profundamente cultura ocidental."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Sócrates (469-399 a.C.) foi fundamental para filosofia ocidental. Sobre seu método e pensamento, é correto afirmar que:",
+          "alternativas": [
+            "Defendia o conhecimento dogmático e inquestionável",
+            "Método da maiêutica (perguntas) para buscar verdade e conhecimento de si",
+            "Rejeitava totalmente o questionamento e o diálogo",
+            "Não teve nenhuma influência sobre filósofos posteriores",
+            "Escreveu extensas obras filosóficas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Sócrates usava maiêutica (\"parto de ideias\"): através de perguntas, levava interlocutor a questionar certezas e buscar verdade. \"Só sei que nada sei\" expressava humildade intelectual. Valorizava autoconhecimento: \"Conhece-te a ti mesmo\". Não escreveu obras; conhecemos via Platão. Foi condenado à morte por \"corromper jovens\"."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Platão (428-348 a.C.), discípulo de Sócrates, desenvolveu importante sistema filosófico. Sobre seu pensamento, é correto afirmar que:",
+          "alternativas": [
+            "Defendia que a realidade material é a única verdadeira",
+            "Teoria das Ideias: mundo sensível é cópia imperfeita do mundo das ideias perfeitas",
+            "Rejeitava completamente a filosofia de Sócrates",
+            "Não abordou questões políticas em suas obras",
+            "Defendia a democracia absoluta sem restrições"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Platão propôs Teoria das Ideias: realidade sensível (material) é cópia imperfeita do mundo das Ideias (essências perfeitas, eternas). Conhecimento verdadeiro é das Ideias, não dos sentidos. Em \"A República\", propôs Estado ideal governado por filósofos-reis. Fundou a Academia em Atenas."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Aristóteles (384-322 a.C.) foi discípulo de Platão, mas desenvolveu pensamento próprio. Sobre sua filosofia, é correto afirmar que:",
+          "alternativas": [
+            "Concordava totalmente com a Teoria das Ideias de Platão",
+            "Valorizou observação empírica, classificou seres vivos, estudou lógica e ética",
+            "Rejeitava completamente o uso da razão",
+            "Não contribuiu para o desenvolvimento das ciências",
+            "Defendia apenas o conhecimento místico e religioso"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Aristóteles divergiu de Platão, valorizando observação empírica. Classificou seres vivos, estudou lógica (silogismo), ética (virtude como meio-termo), política (\"homem é animal político\"). Sistematizou conhecimentos em diversas áreas. Fundou o Liceu. Foi tutor de Alexandre, o Grande."
+        },
+        {
+          "id": "q5",
+          "enunciado": "Os Jogos Olímpicos da Antiguidade tinham significado além do esportivo. Sobre esses jogos, é correto afirmar que:",
+          "alternativas": [
+            "Eram exclusivamente competição esportiva sem significado cultural",
+            "Celebração religiosa (Zeus) que unia gregos e suspendia guerras (trégua sagrada)",
+            "Não tinham nenhuma relação com religião ou identidade grega",
+            "Eram competições abertas a todos os povos do mundo",
+            "Foram criados apenas para entretenimento das massas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Jogos Olímpicos (desde 776 a.C., Olímpia) eram celebração religiosa a Zeus, reforçando identidade helênica. Durante jogos, declarava-se trégua sagrada (ekecheiria), suspendendo guerras. Apenas gregos livres participavam. Incluíam provas atléticas, honrando vencedores como heróis. Foram abolidos em 393 d.C. pelo imperador romano Teodósio."
+        }
+      ]
+    },
+    {
+      "id": "mod3-roma-republica",
+      "titulo": "Roma: República e Expansão",
+      "topicos": [
+        "Monarquia e fundação de Roma",
+        "República Romana: instituições",
+        "Conflitos patrício-plebeus",
+        "Expansão territorial e guerras",
+        "Crise da República"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A República Romana (509-27 a.C.) desenvolveu complexo sistema político. Sobre as instituições republicanas, é correto afirmar que:",
+          "alternativas": [
+            "O poder era concentrado em um único monarca vitalício",
+            "Senado (patrícios), magistrados (cônsules) e assembleias populares compartilhavam poder",
+            "Não havia nenhuma forma de divisão ou separação de poderes",
+            "Era uma democracia direta idêntica à ateniense",
+            "Patrícios não tinham nenhum privilégio político"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "República romana: Senado (aristocracia patrícia, vitalício, controlava política externa e finanças), magistrados (cônsules, pretores, eleitos anualmente) e assembleias populares (votavam leis, elegiam). Sistema de \"freios e contrapesos\": 2 cônsules (para evitar tirania), veto mútuo, magistraturas anuais."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Os conflitos entre patrícios e plebeus marcaram a República. Sobre essas lutas sociais, é correto afirmar que:",
+          "alternativas": [
+            "Patrícios e plebeus sempre tiveram direitos idênticos",
+            "Plebeus conquistaram gradualmente direitos políticos através de lutas (secessões)",
+            "Não houve nenhum conflito social na República Romana",
+            "Plebeus sempre dominaram totalmente a política romana",
+            "As conquistas plebeias não tiveram nenhuma importância"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Plebeus (maioria) lutaram por direitos contra patrícios (aristocracia). Conquistas: Tribunos da Plebe (veto), Lei das XII Tábuas (leis escritas, 450 a.C.), Lei Licínia (367 a.C., plebeu pode ser cônsul), Lei Canuléia (casamento inter-classes). Secessões (greves) forçaram concessões."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A expansão territorial romana foi marcada por diversas guerras. As Guerras Púnicas (264-146 a.C.) opuseram Roma e Cartago. Sobre esse conflito, é correto afirmar que:",
+          "alternativas": [
+            "Cartago derrotou Roma e dominou o Mediterrâneo",
+            "Roma venceu, destruiu Cartago e tornou-se potência mediterrânea",
+            "Não teve nenhuma consequência territorial para Roma",
+            "Roma perdeu todos os seus territórios conquistados",
+            "As guerras fortaleceram a República sem gerar crises"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Três Guerras Púnicas: Roma derrotou Cartago (Aníbal cruzou Alpes na 2ª guerra, mas foi derrotado). Vitória deu a Roma domínio do Mediterrâneo (\"Mare Nostrum\"), Sicília, Espanha, Norte da África. Cartago foi totalmente destruída (146 a.C.). Expansão trouxe riquezas, mas também crise social e política."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A expansão territorial romana teve profundas consequências sociais e econômicas. Entre essas transformações, destaca-se:",
+          "alternativas": [
+            "Fortalecimento dos pequenos proprietários rurais",
+            "Latifúndios escravistas, empobrecimento de plebeus, crise da agricultura familiar",
+            "Distribuição igualitária das terras conquistadas",
+            "Fim completo da escravidão em Roma",
+            "Prosperidade generalizada para todos os cidadãos romanos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Conquistas trouxeram escravos em massa (prisioneiros de guerra), formando latifúndios escravistas. Pequenos proprietários (base do exército) arruinaram-se (longas guerras, concorrência), migrando para Roma (proletariado urbano). Concentração fundiária e desigualdade geraram crise social."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A crise da República manifestou-se em conflitos políticos e guerras civis. Sobre esse período, é correto afirmar que:",
+          "alternativas": [
+            "A República manteve-se absolutamente estável",
+            "Reformadores (irmãos Graco), guerra civil e ascensão de generais poderosos",
+            "Não houve nenhuma tentativa de reforma social",
+            "O Senado distribuiu voluntariamente terras aos pobres",
+            "A transição para o Império foi totalmente pacífica"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Crise manifestou-se: irmãos Graco (133-121 a.C.) tentaram reforma agrária, foram assassinados pelo Senado; guerras civis entre generais (Mário vs. Sila, Pompeu vs. César); Primeiro Triunvirato (César, Pompeu, Crasso); ditadura de César (assassinado, 44 a.C.). República desintegrou-se, levando ao Império."
+        }
+      ]
+    },
+    {
+      "id": "mod4-imperio-romano",
+      "titulo": "Império Romano e Cristianismo",
+      "topicos": [
+        "Augusto e Principado",
+        "Pax Romana e apogeu",
+        "Cristianismo: surgimento e expansão",
+        "Crise do século III",
+        "Queda do Império Romano do Ocidente"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Otávio (Augusto) estabeleceu o Império Romano (27 a.C.), mantendo aparência republicana. Sobre o Principado, é correto afirmar que:",
+          "alternativas": [
+            "Restaurou completamente as instituições republicanas",
+            "Concentrou poder nas mãos do imperador, mantendo fachada republicana",
+            "Eliminou totalmente a figura do imperador",
+            "Concedeu poder absoluto ao Senado",
+            "Instaurou democracia direta em Roma"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Augusto concentrou poder (Imperador, Princeps, Augusto, tribuno vitalício, comandante militar), mas manteve aparência republicana (Senado, magistraturas). Criou burocracia eficiente, exército profissional, promoveu cultura. Iniciou Pax Romana (paz relativa, 200 anos de estabilidade)."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Pax Romana (27 a.C. - 180 d.C.) foi período de relativa paz e prosperidade. Sobre esse período, é correto afirmar que:",
+          "alternativas": [
+            "Não houve absolutamente nenhuma guerra ou conflito",
+            "Estabilidade interna, integração econômica, urbanização e florescimento cultural",
+            "Foi período de crise econômica e desintegração",
+            "Roma perdeu todos os seus territórios conquistados",
+            "A economia romana entrou em colapso total"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Pax Romana: estabilidade política, integração econômica (moeda única, estradas), urbanização, comércio intenso (até Índia e China via Rota da Seda), romanização (língua, direito, cultura), florescimento cultural. Apogeu no século II (\"Cinco Bons Imperadores\"). Fronteiras fortificadas (limes)."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O Cristianismo surgiu na Palestina romana no século I d.C. Sobre sua relação inicial com o Império, é correto afirmar que:",
+          "alternativas": [
+            "Foi imediatamente adotado como religião oficial do Império",
+            "Sofreu perseguições por recusar culto imperial, mas expandiu-se",
+            "Não teve nenhuma expansão no Império Romano",
+            "Foi totalmente ignorado pelas autoridades romanas",
+            "Nunca sofreu nenhuma forma de perseguição"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Cristianismo (Jesus Cristo, crucificado ~30 d.C.) era inicialmente seita judaica. Paulo difundiu-o no mundo romano. Cristãos eram perseguidos (Nero, Diocleciano) por recusar culto imperial (\"crime de lesa-majestade\"), monoteísmo exclusivista. Apesar disso, expandiu-se entre pobres urbanos e escravos."
+        },
+        {
+          "id": "q4",
+          "enunciado": "No século IV, a relação entre Cristianismo e Império transformou-se radicalmente. Sobre essa mudança, é correto afirmar que:",
+          "alternativas": [
+            "O Cristianismo foi definitivamente proibido",
+            "Édito de Milão (313) legalizou; Teodósio (380) tornou-o religião oficial",
+            "Nenhuma mudança ocorreu na política religiosa imperial",
+            "O paganismo foi mantido como única religião permitida",
+            "Os cristãos continuaram sendo perseguidos até o fim do Império"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Constantino (Édito de Milão, 313) legalizou Cristianismo, favoreceu-o (Concílio de Niceia, 325). Teodósio (Édito de Tessalônica, 380) tornou-o religião oficial, proibindo paganismo. Igreja tornou-se aliada do Estado, influenciando política. Cristianismo transformou-se de religião perseguida em oficial."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O Império Romano do Ocidente caiu em 476 d.C. Entre os fatores dessa queda, destaca-se:",
+          "alternativas": [
+            "O fortalecimento absoluto das instituições imperiais",
+            "Crise econômica, invasões bárbaras, crise política, dependência de mercenários",
+            "A prosperidade ilimitada da economia romana",
+            "A ausência de qualquer pressão externa sobre as fronteiras",
+            "O crescimento populacional ilimitado do Império"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Múltiplos fatores: crise econômica (inflação, impostos, declínio comércio), invasões bárbaras (hunos pressionaram germânicos), crise política (imperadores fracos, guerras civis), cristianização (enfraqueceu valores cívicos romanos?), dependência de mercenários bárbaros. Em 476, Odoacro depôs último imperador (Rômulo Augústulo)."
+        }
+      ]
+    },
+    {
+      "id": "mod5-legado-classico",
+      "titulo": "Legado da Antiguidade Clássica",
+      "topicos": [
+        "Direito Romano",
+        "Filosofia e ciência gregas",
+        "Arquitetura e engenharia",
+        "Línguas: latim e grego",
+        "Influência no pensamento ocidental"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O Direito Romano é um dos legados mais importantes da Antiguidade. Sobre sua influência, é correto afirmar que:",
+          "alternativas": [
+            "Não teve nenhuma influência sobre sistemas jurídicos posteriores",
+            "Base de sistemas jurídicos ocidentais modernos (direito civil)",
+            "Foi totalmente abandonado após queda de Roma",
+            "Não estabeleceu nenhum princípio jurídico importante",
+            "Influenciou apenas o direito criminal moderno"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Direito Romano (Código de Justiniano, 529-534 d.C., compilou leis) é base do direito civil moderno em países de tradição romano-germânica (Brasil incluído). Princípios: presunção de inocência, direito à defesa, distinção direito público/privado, propriedade. Influenciou Código Napoleônico e legislações posteriores."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A filosofia grega influenciou profundamente o pensamento ocidental. Sobre esse legado, é correto afirmar que:",
+          "alternativas": [
+            "Foi totalmente esquecida após a Antiguidade",
+            "Questões sobre ética, política, conhecimento e realidade continuam relevantes",
+            "Não teve nenhuma influência sobre pensadores posteriores",
+            "Foi rejeitada completamente pelo Cristianismo",
+            "Não estabeleceu nenhum método de pensamento duradouro"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Filosofia grega (Sócrates, Platão, Aristóteles) estabeleceu bases do pensamento ocidental: uso da razão, método dialético, lógica, ética, política. Questões levantadas (natureza da realidade, conhecimento, justiça, virtude) permanecem relevantes. Aristotelismo influenciou escolástica medieval; platonismo, Renascimento."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A arquitetura e engenharia romanas deixaram marcas duradouras. Entre as contribuições técnicas, destaca-se:",
+          "alternativas": [
+            "A total ausência de inovações arquitetônicas",
+            "Arco, abóbada, cúpula, concreto, aquedutos e estradas duráveis",
+            "A rejeição de qualquer técnica construtiva avançada",
+            "Construções frágeis que não resistiram ao tempo",
+            "A ausência de qualquer planejamento urbano"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Romanos aperfeiçoaram: arco, abóbada, cúpula (Panteão), concreto romano (opus caementicium), aquedutos (engenharia hidráulica), estradas pavimentadas, pontes, anfiteatros (Coliseu), fóruns. Muitas estruturas resistem há 2 mil anos. Influenciaram arquitetura posterior (Renascimento, Neoclassicismo)."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O latim e o grego antigo tiveram profunda influência linguística. Sobre esse legado, é correto afirmar que:",
+          "alternativas": [
+            "Desapareceram completamente sem deixar traços",
+            "Latim originou línguas românicas (português, espanhol); ambas influenciam terminologia científica",
+            "Não influenciaram nenhuma língua moderna",
+            "São línguas totalmente sem relação com idiomas atuais",
+            "Nunca foram utilizadas em contextos acadêmicos ou científicos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Latim originou línguas românicas (português, espanhol, francês, italiano, romeno). Latim e grego formam base de terminologia científica, médica, jurídica e filosófica. Radicais, prefixos e sufixos dessas línguas são usados para criar novos termos. Permaneceram línguas de erudição até século XIX."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O conceito de democracia, desenvolvido em Atenas, influenciou movimentos políticos modernos. Sobre essa influência, é correto afirmar que:",
+          "alternativas": [
+            "A democracia ateniense era idêntica às democracias modernas",
+            "Inspirou revoluções e sistemas democráticos, mas com diferenças significativas",
+            "Não teve nenhuma influência sobre sistemas políticos posteriores",
+            "Foi totalmente rejeitada pelos pensadores iluministas",
+            "Nunca serviu de referência para nenhum movimento político"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Democracia ateniense inspirou iluministas (Rousseau, Montesquieu) e revoluções (francesa, americana). Porém, diferenças: ateniense era direta e restrita; modernas são representativas e (teoricamente) universais. Ideal de participação cidadã, debate público e igualdade perante a lei permanece influente."
+        }
+      ]
+    }
+  ]
+}

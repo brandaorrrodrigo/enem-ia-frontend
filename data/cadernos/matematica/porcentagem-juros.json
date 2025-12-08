@@ -1,0 +1,579 @@
+{
+  "id": "porcentagem-juros",
+  "slug": "porcentagem-juros",
+  "titulo": "Porcentagem e Juros",
+  "categoria": "matematica",
+  "nivel": "intermediario",
+  "descricao": "Cálculos com porcentagem, juros simples e compostos, aplicações financeiras e descontos",
+  "icone": "TrendingUp",
+  "cor": "#F59E0B",
+  "tempoEstimado": "8 horas",
+  "fpRecompensa": 0,
+  "tags": ["matematica", "ENEM", "porcentagem", "juros", "financas"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Porcentagem: Conceitos e Operações",
+      "resumo": "Cálculos básicos e avançados com porcentagem em situações práticas",
+      "topicos": [
+        {
+          "titulo": "Conceito e Cálculo Básico de Porcentagem",
+          "conteudo": "PORCENTAGEM: Razão com denominador 100. Indica partes de cada 100.\n\nNotação: x% = x/100\n\nCONVERSÕES:\n- Decimal para %: multiplica por 100\n  0,25 = 25%\n- % para decimal: divide por 100\n  40% = 0,40\n- Fração para %: divide e multiplica por 100\n  3/4 = 0,75 = 75%\n\nCÁLCULO BÁSICO: x% de A\nFórmula: (x/100) × A ou x% × A\n\nEXEMPLO 1: 30% de R$ 500\n= (30/100) × 500\n= 0,30 × 500\n= R$ 150\n\nEXEMPLO 2: 15% de 80 kg\n= 0,15 × 80\n= 12 kg\n\nCALCULAR A PORCENTAGEM:\nA é x% de B → A/B × 100%\n\nEXEMPLO 3: 40 é que porcentagem de 200?\n= 40/200 × 100%\n= 0,20 × 100%\n= 20%\n\nCALCULAR O TODO:\nA representa x% de quanto?\nTodo = A / (x/100)\n\nEXEMPLO 4: R$ 80 representa 40% de quanto?\n= 80 / 0,40\n= R$ 200"
+        },
+        {
+          "titulo": "Aumento e Desconto Percentual",
+          "conteudo": "AUMENTO PERCENTUAL:\n\nValor final = Valor inicial × (1 + taxa/100)\nValor final = Valor inicial × (1 + i)\n\nEXEMPLO 1: Produto de R$ 200 com aumento de 15%\nValor final = 200 × (1 + 0,15)\n= 200 × 1,15\n= R$ 230\n\nOu: Aumento = 200 × 0,15 = R$ 30\nValor final = 200 + 30 = R$ 230\n\nDESCONTO PERCENTUAL:\n\nValor final = Valor inicial × (1 - taxa/100)\nValor final = Valor inicial × (1 - d)\n\nEXEMPLO 2: Produto de R$ 500 com desconto de 20%\nValor final = 500 × (1 - 0,20)\n= 500 × 0,80\n= R$ 400\n\nOu: Desconto = 500 × 0,20 = R$ 100\nValor final = 500 - 100 = R$ 400\n\nAUMENTOS/DESCONTOS SUCESSIVOS:\nNÃO soma/subtrair as taxas!\nMultiplica os fatores.\n\nEXEMPLO 3: Preço sofre aumento de 10%, depois desconto de 10%\nValor = V × 1,10 × 0,90\n= V × 0,99\n= 99% do valor original\n\nResultado: PERDA de 1% (não volta ao valor inicial!)\n\nEXEMPLO 4: Dois aumentos sucessivos de 10%\nValor = V × 1,10 × 1,10\n= V × 1,21\n= 121% do original\n\nAumento total: 21% (não 20%!)"
+        },
+        {
+          "titulo": "Problemas Comerciais com Porcentagem",
+          "conteudo": "LUCRO E PREJUÍZO:\n\nLucro = Preço de venda - Preço de custo\nLucro% = (Lucro / Custo) × 100%\n\nEXEMPLO 1: Compra por R$ 80, vende por R$ 100\nLucro = 100 - 80 = R$ 20\nLucro% = (20/80) × 100% = 25%\n\nMARKUP: Percentual adicionado ao custo\nVenda = Custo × (1 + markup)\n\nMARGEM: Percentual sobre o preço de venda\nMargem% = (Lucro / Venda) × 100%\n\nCUIDADO: Markup ≠ Margem\n\nEXEMPLO 2:\nCusto: R$ 100\nVenda: R$ 150\nLucro: R$ 50\n\nMarkup = 50/100 = 50% (sobre custo)\nMargem = 50/150 = 33,3% (sobre venda)\n\nDESCONTO SUCESSIVOS:\n\nEXEMPLO 3: Produto de R$ 500 com descontos de 20% + 10%\n\nErrado: 20% + 10% = 30% → R$ 350\n\nCerto:\nApós 1º desconto: 500 × 0,80 = R$ 400\nApós 2º desconto: 400 × 0,90 = R$ 360\n\nDesconto total: (500-360)/500 = 28%\n\nFÓRMULA RÁPIDA:\nFator = (1-d₁) × (1-d₂) × ... × (1-dₙ)\n= 0,80 × 0,90 = 0,72\nValor final = 500 × 0,72 = R$ 360"
+        },
+        {
+          "titulo": "Porcentagem em Contextos do Cotidiano",
+          "conteudo": "PROBLEMA 1: ELEIÇÕES\nEm uma cidade de 50.000 eleitores:\n- 80% compareceram\n- 5% votaram nulo/branco\n- Candidato A: 60% dos válidos\n\nComparecimento: 50.000 × 0,80 = 40.000\nNulo/branco: 40.000 × 0,05 = 2.000\nVálidos: 40.000 - 2.000 = 38.000\nVotos em A: 38.000 × 0,60 = 22.800\n\nA representa: 22.800/50.000 = 45,6% do eleitorado\n\nPROBLEMA 2: IMPOSTOS\nSalário bruto: R$ 3.000\nDescontos:\n- INSS: 11% → R$ 330\n- IR: 7,5% sobre (3000-330) → R$ 200,25\n\nSalário líquido: 3000 - 330 - 200,25 = R$ 2.469,75\n\nDesconto total: (530,25/3000) × 100% = 17,675%\n\nPROBLEMA 3: NUTRIÇÃO\nAlimento tem 250 calorias por porção\nProteínas: 40% das calorias\n\nCalorias de proteínas: 250 × 0,40 = 100 calorias\nGramas de proteína: 100/4 = 25g (1g proteína = 4 cal)\n\nPROBLEMA 4: CRESCIMENTO POPULACIONAL\nCidade tinha 80.000 habitantes em 2020\nEm 2023: 92.000 habitantes\n\nCrescimento absoluto: 12.000\nCrescimento percentual: (12.000/80.000) × 100% = 15%\nCrescimento médio anual: 15%/3 anos = 5% a.a. (aproximado)\n\nPROBLEMA 5: DESCONTOS PROGRESSIVOS\nBlack Friday: 50% de desconto + 20% adicional no cartão\n\nProduto R$ 400:\nApós 1º: 400 × 0,50 = R$ 200\nApós 2º: 200 × 0,80 = R$ 160\n\nDesconto total: 160/400 = 0,40 = 60% (não 70%!)"
+        }
+      ],
+      "exemplos": [
+        "Calcular desconto em compras",
+        "Determinar lucro percentual em venda",
+        "Calcular reajuste salarial acumulado"
+      ],
+      "dicas": [
+        "Descontos sucessivos: multiplica os fatores (1-d₁)×(1-d₂)",
+        "Aumento de x% seguido de desconto de x% resulta em PREJUÍZO",
+        "Para voltar ao valor original após desconto de x%, aumento deve ser maior que x%",
+        "Sempre identifique se a porcentagem é sobre custo, venda ou outro valor",
+        "10% de A ≠ A aumentado em 10%"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Um produto que custava R$ 250 sofreu um aumento de 20% e, posteriormente, um desconto de 20%. Qual o preço final?",
+          "alternativas": {
+            "A": "R$ 230",
+            "B": "R$ 240",
+            "C": "R$ 250",
+            "D": "R$ 260",
+            "E": "R$ 270"
+          },
+          "correta": "B",
+          "explicacao": "Após aumento: 250 × 1,20 = R$ 300. Após desconto: 300 × 0,80 = R$ 240. Ou direto: 250 × 1,20 × 0,80 = 250 × 0,96 = R$ 240",
+          "dificuldade": "medio",
+          "tags": ["porcentagem", "aumento-desconto", "sucessivo"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Em uma turma de 40 alunos, 60% são meninas. Quantos são os meninos?",
+          "alternativas": {
+            "A": "12",
+            "B": "14",
+            "C": "16",
+            "D": "18",
+            "E": "20"
+          },
+          "correta": "C",
+          "explicacao": "Se 60% são meninas, 40% são meninos. Meninos = 40 × 0,40 = 16",
+          "dificuldade": "facil",
+          "tags": ["porcentagem", "basico", "complementar"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Um comerciante compra um produto por R$ 150 e quer ter um lucro de 40% sobre o preço de custo. Por quanto deve vender?",
+          "alternativas": {
+            "A": "R$ 180",
+            "B": "R$ 190",
+            "C": "R$ 200",
+            "D": "R$ 210",
+            "E": "R$ 220"
+          },
+          "correta": "D",
+          "explicacao": "Preço de venda = Custo × (1 + lucro%) = 150 × 1,40 = R$ 210",
+          "dificuldade": "facil",
+          "tags": ["porcentagem", "lucro", "comercio"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Uma loja oferece 30% de desconto e mais 20% de desconto adicional para pagamento à vista. Qual o desconto total sobre o preço original?",
+          "alternativas": {
+            "A": "44%",
+            "B": "46%",
+            "C": "48%",
+            "D": "50%",
+            "E": "52%"
+          },
+          "correta": "A",
+          "explicacao": "Fator final: 0,70 × 0,80 = 0,56. Paga 56% do original, então desconto = 44%",
+          "dificuldade": "medio",
+          "tags": ["porcentagem", "desconto-sucessivo"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Um produto sofreu aumento de 25%. Para voltar ao preço original, qual desconto deve ser aplicado?",
+          "alternativas": {
+            "A": "20%",
+            "B": "22%",
+            "C": "25%",
+            "D": "28%",
+            "E": "30%"
+          },
+          "correta": "A",
+          "explicacao": "Após aumento: V × 1,25. Para voltar: 1,25V × (1-d) = V. Então 1-d = 1/1,25 = 0,80, logo d = 0,20 = 20%",
+          "dificuldade": "medio",
+          "tags": ["porcentagem", "operacao-inversa"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Juros Simples",
+      "resumo": "Cálculo de juros simples, montante e aplicações financeiras básicas",
+      "topicos": [
+        {
+          "titulo": "Conceito e Fórmula de Juros Simples",
+          "conteudo": "JUROS SIMPLES: Calculados sempre sobre o capital inicial.\n\nELEMENTOS:\n- C (Capital): valor inicial investido ou emprestado\n- i (taxa): porcentagem por período\n- t (tempo): número de períodos\n- J (Juros): valor gerado\n- M (Montante): valor final = Capital + Juros\n\nFÓRMULAS FUNDAMENTAIS:\n\nJ = C × i × t\n\nM = C + J = C + C×i×t = C(1 + i×t)\n\nOBSERVAÇÕES IMPORTANTES:\n1) Taxa e tempo devem estar na mesma unidade\n2) Taxa deve ser em decimal (6% = 0,06) ou ajustar fórmula\n3) Juros crescem linearmente\n\nEXEMPLO 1: R$ 1.000 a 5% ao mês por 8 meses\nC = 1.000\ni = 0,05 ao mês\nt = 8 meses\n\nJ = 1.000 × 0,05 × 8 = R$ 400\nM = 1.000 + 400 = R$ 1.400\n\nOu direto: M = 1.000(1 + 0,05×8) = 1.000 × 1,40 = R$ 1.400\n\nEXEMPLO 2: R$ 5.000 a 12% ao ano por 2 anos\nJ = 5.000 × 0,12 × 2 = R$ 1.200\nM = 5.000 + 1.200 = R$ 6.200"
+        },
+        {
+          "titulo": "Variações de Cálculo em Juros Simples",
+          "conteudo": "CALCULAR O CAPITAL:\nC = J / (i × t)\nOu: C = M / (1 + i×t)\n\nEXEMPLO 1: Quanto investir a 4% ao mês por 10 meses para obter R$ 2.000 de juros?\nC = 2.000 / (0,04 × 10)\nC = 2.000 / 0,40\nC = R$ 5.000\n\nCALCULAR A TAXA:\ni = J / (C × t)\n\nEXEMPLO 2: R$ 3.000 gera R$ 900 de juros em 6 meses. Qual a taxa mensal?\ni = 900 / (3.000 × 6)\ni = 900 / 18.000\ni = 0,05 = 5% ao mês\n\nCALCULAR O TEMPO:\nt = J / (C × i)\n\nEXEMPLO 3: Quanto tempo para R$ 2.000 a 3% ao mês gerar R$ 480 de juros?\nt = 480 / (2.000 × 0,03)\nt = 480 / 60\nt = 8 meses\n\nCALCULAR O MONTANTE CONHECENDO JUROS:\nM = C + J\n\nCALCULAR JUROS CONHECENDO MONTANTE:\nJ = M - C\n\nCONVERSÃO DE TAXAS (JUROS SIMPLES):\nProporção direta!\n\n6% ao mês = 72% ao ano (6 × 12)\n12% ao semestre = 2% ao mês (12 / 6)\n\nOBS: Em juros compostos é diferente!"
+        },
+        {
+          "titulo": "Problemas Práticos com Juros Simples",
+          "conteudo": "PROBLEMA 1: EMPRÉSTIMO\nJoão pegou emprestado R$ 5.000 a juros simples de 3% ao mês. Após 4 meses, quanto deve pagar?\n\nJ = 5.000 × 0,03 × 4 = R$ 600\nM = 5.000 + 600 = R$ 5.600\n\nPROBLEMA 2: APLICAÇÃO FINANCEIRA\nMaria quer resgatar R$ 6.000 daqui a 1 ano. Se aplicar hoje a 8% ao ano (juros simples), quanto deve investir?\n\nM = C(1 + i×t)\n6.000 = C(1 + 0,08×1)\n6.000 = C × 1,08\nC = 6.000/1,08\nC = R$ 5.555,56\n\nPROBLEMA 3: COMPARAÇÃO\nOpção A: Investir R$ 10.000 a 6% ao mês por 8 meses\nOpção B: Investir R$ 10.000 a 18% ao trimestre por 2 trimestres\n\nA: M = 10.000(1 + 0,06×8) = 10.000 × 1,48 = R$ 14.800\nB: M = 10.000(1 + 0,18×2) = 10.000 × 1,36 = R$ 13.600\n\nMelhor: Opção A\n\nPROBLEMA 4: DESCONTO BANCÁRIO\nUma duplicata de R$ 8.000 com vencimento em 3 meses é descontada a 5% ao mês. Quanto o banco libera?\n\nDesconto = 8.000 × 0,05 × 3 = R$ 1.200\nValor liberado = 8.000 - 1.200 = R$ 6.800\n\nPROBLEMA 5: PRAZO INDETERMINADO\nR$ 4.000 a 2,5% ao mês deve gerar R$ 1.500 de juros. Quanto tempo leva?\n\nt = 1.500 / (4.000 × 0,025)\nt = 1.500 / 100\nt = 15 meses"
+        },
+        {
+          "titulo": "Juros Simples vs Realidade do Mercado",
+          "conteudo": "QUANDO SE USA JUROS SIMPLES:\n- Operações de curto prazo\n- Empréstimos entre pessoas\n- Descontos comerciais\n- Algumas aplicações específicas\n- Cálculos aproximados\n\nLIMITAÇÕES DO JUROS SIMPLES:\n\n1) NÃO CONSIDERA CAPITALIZAÇÃO\nJuros não rendem juros.\nNa prática, juros entram no capital.\n\n2) CRESCIMENTO LINEAR\nNo mundo real, juros são exponenciais.\n\n3) CONVERSÃO SIMPLES DE TAXAS\n6% ao mês ≠ 72% ao ano na prática\n(Em juros compostos seria ≈ 101%)\n\nCOMPARAÇÃO:\n\nR$ 1.000 a 10% ao mês:\n\nJUROS SIMPLES:\nMês 1: M = 1.000 × 1,10 = 1.100\nMês 2: M = 1.000 × 1,20 = 1.200\nMês 3: M = 1.000 × 1,30 = 1.300\n\nJUROS COMPOSTOS:\nMês 1: M = 1.000 × 1,10 = 1.100\nMês 2: M = 1.100 × 1,10 = 1.210\nMês 3: M = 1.210 × 1,10 = 1.331\n\nDiferença aumenta com o tempo!\n\nEXERCÍCIO COMPARATIVO:\nR$ 10.000 a 5% ao mês por 12 meses:\n\nSimples: M = 10.000(1 + 0,05×12) = R$ 16.000\nComposto: M = 10.000(1,05)¹² ≈ R$ 17.959\n\nDiferença: R$ 1.959 a favor dos juros compostos\n\nCONCLUSÃO:\nJuros simples subestima ganhos (investimento) ou dívidas (empréstimo) de longo prazo."
+        }
+      ],
+      "exemplos": [
+        "Calcular juros de empréstimo pessoal",
+        "Determinar tempo necessário para atingir meta de investimento",
+        "Comparar duas opções de aplicação"
+      ],
+      "dicas": [
+        "Fórmula básica: J = C×i×t (Capital, taxa, tempo)",
+        "Taxa e tempo SEMPRE na mesma unidade",
+        "Montante = Capital + Juros",
+        "Juros simples: crescimento LINEAR",
+        "Para cálculos reais de médio/longo prazo, use juros compostos",
+        "Em provas, leia com atenção se é juros simples ou compostos"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Um capital de R$ 8.000 é aplicado a juros simples de 4% ao mês durante 5 meses. Qual o montante final?",
+          "alternativas": {
+            "A": "R$ 9.200",
+            "B": "R$ 9.400",
+            "C": "R$ 9.600",
+            "D": "R$ 9.800",
+            "E": "R$ 10.000"
+          },
+          "correta": "C",
+          "explicacao": "M = C(1 + i×t) = 8.000(1 + 0,04×5) = 8.000 × 1,20 = R$ 9.600",
+          "dificuldade": "facil",
+          "tags": ["juros-simples", "montante", "calculo-direto"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Quanto tempo é necessário para um capital de R$ 5.000, aplicado a juros simples de 6% ao mês, gerar R$ 1.800 de juros?",
+          "alternativas": {
+            "A": "4 meses",
+            "B": "5 meses",
+            "C": "6 meses",
+            "D": "7 meses",
+            "E": "8 meses"
+          },
+          "correta": "C",
+          "explicacao": "t = J/(C×i) = 1.800/(5.000×0,06) = 1.800/300 = 6 meses",
+          "dificuldade": "facil",
+          "tags": ["juros-simples", "tempo", "formula-inversa"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Um empréstimo de R$ 12.000 foi quitado por R$ 15.000 após 10 meses. Qual a taxa mensal de juros simples cobrada?",
+          "alternativas": {
+            "A": "2,0%",
+            "B": "2,5%",
+            "C": "3,0%",
+            "D": "3,5%",
+            "E": "4,0%"
+          },
+          "correta": "B",
+          "explicacao": "J = 15.000 - 12.000 = 3.000. i = J/(C×t) = 3.000/(12.000×10) = 3.000/120.000 = 0,025 = 2,5%",
+          "dificuldade": "medio",
+          "tags": ["juros-simples", "taxa", "emprestimo"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Qual capital deve ser aplicado a 5% ao mês, em regime de juros simples, para produzir um montante de R$ 7.200 ao final de 8 meses?",
+          "alternativas": {
+            "A": "R$ 4.800",
+            "B": "R$ 5.000",
+            "C": "R$ 5.142,86",
+            "D": "R$ 5.400",
+            "E": "R$ 6.000"
+          },
+          "correta": "C",
+          "explicacao": "M = C(1 + i×t), então C = M/(1+i×t) = 7.200/(1+0,05×8) = 7.200/1,40 = R$ 5.142,86",
+          "dificuldade": "medio",
+          "tags": ["juros-simples", "capital", "montante"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Dois capitais iguais são aplicados: um a juros simples de 6% ao mês por 10 meses e outro a 60% ao ano por 1 ano (juros simples). Qual afirmação está correta?",
+          "alternativas": {
+            "A": "O primeiro rende mais",
+            "B": "O segundo rende mais",
+            "C": "Ambos rendem igual",
+            "D": "Impossível comparar sem o valor do capital",
+            "E": "Depende do capital inicial"
+          },
+          "correta": "C",
+          "explicacao": "1º: M = C(1+0,06×10) = 1,60C. 2º: M = C(1+0,60×1) = 1,60C. Mesma taxa equivalente, mesmo rendimento",
+          "dificuldade": "medio",
+          "tags": ["juros-simples", "comparacao", "equivalencia"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Juros Compostos",
+      "resumo": "Capitalização composta, fórmulas e aplicações em investimentos",
+      "topicos": [
+        {
+          "titulo": "Conceito e Fórmula de Juros Compostos",
+          "conteudo": "JUROS COMPOSTOS: \"Juros sobre juros\" - calculados sobre montante do período anterior.\n\nDIFERENÇA FUNDAMENTAL:\n- Juros Simples: crescimento ARITMÉTICO (linear)\n- Juros Compostos: crescimento GEOMÉTRICO (exponencial)\n\nFÓRMULA DO MONTANTE:\n\nM = C × (1 + i)^t\n\nonde:\n- M = montante final\n- C = capital inicial\n- i = taxa por período (decimal)\n- t = número de períodos\n\nJUROS:\nJ = M - C = C × [(1+i)^t - 1]\n\nEXEMPLO 1: R$ 1.000 a 10% ao mês por 3 meses\n\nM = 1.000 × (1,10)³\nM = 1.000 × 1,331\nM = R$ 1.331\n\nJ = 1.331 - 1.000 = R$ 331\n\nDetalhamento:\nMês 1: 1.000 × 1,10 = 1.100\nMês 2: 1.100 × 1,10 = 1.210\nMês 3: 1.210 × 1,10 = 1.331\n\nEXEMPLO 2: R$ 5.000 a 8% ao ano por 5 anos\n\nM = 5.000 × (1,08)⁵\nM = 5.000 × 1,469328\nM ≈ R$ 7.346,64\n\nCOMPARAÇÃO COM JUROS SIMPLES:\nSimples: M = 5.000 × 1,40 = R$ 7.000\nComposto: M ≈ R$ 7.346,64\nDiferença: R$ 346,64 a mais!"
+        },
+        {
+          "titulo": "Cálculos Avançados em Juros Compostos",
+          "conteudo": "CALCULAR O CAPITAL INICIAL:\nC = M / (1+i)^t\n\nEXEMPLO 1: Quanto investir hoje a 5% ao mês para ter R$ 10.000 em 6 meses?\nC = 10.000 / (1,05)⁶\nC = 10.000 / 1,340096\nC ≈ R$ 7.462,15\n\nCALCULAR O TEMPO:\nt = log(M/C) / log(1+i)\n\nEXEMPLO 2: Quanto tempo para R$ 2.000 a 10% ao mês virar R$ 4.000?\nt = log(4000/2000) / log(1,10)\nt = log(2) / log(1,10)\nt = 0,301 / 0,041\nt ≈ 7,3 meses\n\nCALCULAR A TAXA:\ni = (M/C)^(1/t) - 1\n\nEXEMPLO 3: R$ 3.000 se torna R$ 4.860 em 4 meses. Qual a taxa?\ni = (4860/3000)^(1/4) - 1\ni = (1,62)^0,25 - 1\ni = 1,127 - 1\ni = 0,127 = 12,7% ao mês aproximadamente\n\nTAXA EQUIVALENTE:\nTaxas que produzem mesmo efeito em períodos diferentes.\n\nFórmula: (1+iₐ)^tₐ = (1+iᵦ)^tᵦ\n\nEXEMPLO 4: Taxa mensal equivalente a 12% ao ano?\n(1+i_mensal)¹² = (1+0,12)¹\n(1+i_mensal) = (1,12)^(1/12)\n(1+i_mensal) = 1,00949\ni_mensal = 0,00949 = 0,949% ao mês\n\nNOTE: Não é 1% ao mês (12%/12)!"
+        },
+        {
+          "titulo": "Aplicações Práticas de Juros Compostos",
+          "conteudo": "PROBLEMA 1: INVESTIMENTO DE LONGO PRAZO\nR$ 10.000 investidos a 12% ao ano. Qual montante após 10 anos?\n\nM = 10.000 × (1,12)¹⁰\nM = 10.000 × 3,1058\nM ≈ R$ 31.058\n\nJuros: R$ 21.058 (mais que duplicou!)\n\nSe fosse juros simples:\nM = 10.000 × (1 + 0,12×10) = R$ 22.000\nDiferença: R$ 9.058!\n\nPROBLEMA 2: DÍVIDA NO CARTÃO\nDívida de R$ 1.000 com juros de 10% ao mês.\nQuanto deve após 6 meses sem pagar?\n\nM = 1.000 × (1,10)⁶\nM = 1.000 × 1,7716\nM ≈ R$ 1.771,60\n\nJuros: R$ 771,60 (77% em 6 meses!)\n\nPROBLEMA 3: DUPLICAR O CAPITAL\nQuantos anos para duplicar a 6% ao ano?\n\n2C = C × (1,06)^t\n2 = (1,06)^t\nlog(2) = t × log(1,06)\nt = log(2) / log(1,06)\nt ≈ 11,9 anos\n\nREGRA PRÁTICA (Regra do 72):\nt ≈ 72 / taxa(%)\nt ≈ 72/6 = 12 anos (aproximado)\n\nPROBLEMA 4: INFLAÇÃO\nSe inflação é 5% ao ano, quanto valerá R$ 100 daqui a 10 anos (poder de compra)?\n\nPoder de compra = 100 / (1,05)¹⁰\n= 100 / 1,629\n≈ R$ 61,39\n\nPerda de poder aquisitivo: 38,61%"
+        },
+        {
+          "titulo": "Sistemas de Capitalização e Financiamentos",
+          "conteudo": "SISTEMA DE AMORTIZAÇÃO:\n\nSISTEMA PRICE (Tabela Price):\n- Parcelas CONSTANTES\n- Juros decrescem, amortização cresce\n- Muito usado em financiamentos\n\nPMT = C × [i(1+i)^n] / [(1+i)^n - 1]\n\nEXEMPLO: Financiar R$ 50.000 a 2% ao mês em 24 parcelas\n\nPMT = 50.000 × [0,02(1,02)²⁴] / [(1,02)²⁴ - 1]\nPMT = 50.000 × [0,02 × 1,608] / [0,608]\nPMT = 50.000 × 0,053\nPMT ≈ R$ 2.650\n\nTotal pago: 24 × 2.650 = R$ 63.600\nJuros totais: R$ 13.600\n\nSISTEMA SAC (Sistema de Amortização Constante):\n- Amortização CONSTANTE\n- Parcelas decrescem\n- Juros sobre saldo devedor\n\nAmortização = Capital / n\n\nEXEMPLO: Mesmo caso (R$ 50.000 em 24 meses a 2%)\n\nAmortização = 50.000/24 ≈ R$ 2.083,33 (constante)\n\n1ª parcela:\nJuros = 50.000 × 0,02 = R$ 1.000\nParcela = 2.083,33 + 1.000 = R$ 3.083,33\n\n2ª parcela:\nSaldo = 50.000 - 2.083,33 = 47.916,67\nJuros = 47.916,67 × 0,02 = R$ 958,33\nParcela = 2.083,33 + 958,33 = R$ 3.041,66\n\nÚltima parcela:\nSaldo = 2.083,33\nJuros = 2.083,33 × 0,02 = R$ 41,67\nParcela = 2.083,33 + 41,67 = R$ 2.125\n\nVANTAGENS SAC:\n- Juros totais menores\n- Saldo devedor cai mais rápido\n\nVANTAGENS PRICE:\n- Parcelas constantes (planejamento)"
+        }
+      ],
+      "exemplos": [
+        "Calcular rendimento de poupança",
+        "Determinar crescimento de dívida de cartão",
+        "Comparar sistemas de financiamento"
+      ],
+      "dicas": [
+        "Fórmula: M = C×(1+i)^t",
+        "Juros compostos: efeito bola de neve",
+        "Regra do 72: tempo para duplicar ≈ 72/taxa(%)",
+        "Taxa equivalente ≠ taxa proporcional",
+        "Em questões, use calculadora ou aproxime (1,1)² = 1,21, etc.",
+        "Juros compostos favorecem investimento e penalizam dívidas"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Um capital de R$ 20.000 é aplicado a juros compostos de 5% ao mês por 3 meses. Qual o montante final aproximado?",
+          "alternativas": {
+            "A": "R$ 23.000",
+            "B": "R$ 23.153",
+            "C": "R$ 23.500",
+            "D": "R$ 23.750",
+            "E": "R$ 24.000"
+          },
+          "correta": "B",
+          "explicacao": "M = 20.000 × (1,05)³ = 20.000 × 1,157625 ≈ R$ 23.153",
+          "dificuldade": "medio",
+          "tags": ["juros-compostos", "montante", "potencia"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Quanto tempo levará para um capital duplicar a juros compostos de 10% ao ano? (Use log 2 ≈ 0,30 e log 1,1 ≈ 0,04)",
+          "alternativas": {
+            "A": "6 anos",
+            "B": "6,5 anos",
+            "C": "7 anos",
+            "D": "7,5 anos",
+            "E": "8 anos"
+          },
+          "correta": "D",
+          "explicacao": "t = log(2)/log(1,1) ≈ 0,30/0,04 = 7,5 anos. Ou pela Regra do 72: 72/10 ≈ 7,2 anos",
+          "dificuldade": "medio",
+          "tags": ["juros-compostos", "tempo", "logaritmo"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Qual a taxa mensal equivalente (juros compostos) a 100% ao ano?",
+          "alternativas": {
+            "A": "8,33%",
+            "B": "8,50%",
+            "C": "5,95%",
+            "D": "10%",
+            "E": "7,18%"
+          },
+          "correta": "C",
+          "explicacao": "(1+i)¹² = 2, então i = 2^(1/12) - 1 ≈ 1,0595 - 1 = 0,0595 = 5,95% ao mês",
+          "dificuldade": "dificil",
+          "tags": ["juros-compostos", "taxa-equivalente", "raiz"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Dois capitais iguais são aplicados por 12 meses a 10% ao mês: um a juros simples e outro a compostos. Aproximadamente, quanto o regime composto rende a mais?",
+          "alternativas": {
+            "A": "10%",
+            "B": "20%",
+            "C": "50%",
+            "D": "100%",
+            "E": "150%"
+          },
+          "correta": "D",
+          "explicacao": "Simples: M = C(1+0,10×12) = 2,20C. Composto: M = C(1,1)¹² ≈ 3,14C. Diferença: 3,14-2,20 = 0,94C, cerca de 94% ≈ 100% a mais",
+          "dificuldade": "dificil",
+          "tags": ["juros-compostos", "comparacao", "juros-simples"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Um investimento de R$ 10.000 rendeu R$ 4.641 de juros em 4 anos. Qual a taxa anual de juros compostos?",
+          "alternativas": {
+            "A": "8%",
+            "B": "10%",
+            "C": "12%",
+            "D": "15%",
+            "E": "20%"
+          },
+          "correta": "C",
+          "explicacao": "M = 14.641. 14.641 = 10.000(1+i)⁴, então (1+i)⁴ = 1,4641. Logo 1+i = 1,12, i = 12% ao ano",
+          "dificuldade": "dificil",
+          "tags": ["juros-compostos", "taxa", "raiz-quarta"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Descontos e Acréscimos Comerciais",
+      "resumo": "Descontos simples e compostos, acréscimos e problemas comerciais",
+      "topicos": [
+        {
+          "titulo": "Desconto Comercial Simples",
+          "conteudo": "DESCONTO BANCÁRIO (ou COMERCIAL SIMPLES):\nCalculado sobre o valor NOMINAL (valor futuro).\n\nFÓRMULAS:\nD = N × d × t\n\nV = N - D = N(1 - d×t)\n\nonde:\n- D = desconto\n- N = valor nominal (valor futuro/de face)\n- V = valor atual/líquido (recebido hoje)\n- d = taxa de desconto\n- t = tempo\n\nEXEMPLO 1: Duplicata de R$ 5.000 vencimento em 3 meses, descontada a 4% ao mês.\n\nD = 5.000 × 0,04 × 3 = R$ 600\nV = 5.000 - 600 = R$ 4.400\n\nOu direto: V = 5.000(1 - 0,04×3) = 5.000 × 0,88 = R$ 4.400\n\nTAXA EFETIVA:\nTaxa real paga sobre valor recebido.\n\ni_efetiva = D/V\n\nNo exemplo: i = 600/4.400 = 13,64% em 3 meses\nOu: 4,55% ao mês efetivo (não 4%!)\n\nEXEMPLO 2: Cheque de R$ 2.000 para 60 dias, taxa 5% ao mês.\n\nD = 2.000 × 0,05 × 2 = R$ 200\nV = 2.000 - 200 = R$ 1.800\n\nTaxa efetiva: 200/1800 = 11,11% em 2 meses"
+        },
+        {
+          "titulo": "Desconto Racional e Comparações",
+          "conteudo": "DESCONTO RACIONAL (ou POR DENTRO):\nCalculado sobre o valor ATUAL.\nEquivalente a juros simples invertidos.\n\nFÓRMULAS:\nV = N / (1 + i×t)\n\nD = N - V = N - N/(1+i×t)\n\nEXEMPLO 1: Título de R$ 5.000 para 3 meses, taxa 4% ao mês.\n\nV = 5.000 / (1 + 0,04×3)\nV = 5.000 / 1,12\nV ≈ R$ 4.464,29\n\nD = 5.000 - 4.464,29 = R$ 535,71\n\nCOMPARAÇÃO DOS TIPOS:\n\nMesmo título (R$ 5.000, 3 meses, 4% ao mês):\n\nDesconto Comercial:\nV = 5.000 × 0,88 = R$ 4.400\nD = R$ 600\n\nDesconto Racional:\nV ≈ R$ 4.464,29\nD ≈ R$ 535,71\n\nO desconto comercial SEMPRE resulta em:\n- Maior desconto (D)\n- Menor valor líquido (V)\n- Pior para quem desconta o título\n- Melhor para instituição financeira\n\nRELAÇÃO:\nDesconto Comercial > Desconto Racional\nValor Comercial < Valor Racional\n\nNA PRÁTICA:\nBancos usam desconto comercial (mais lucrativo para eles).\nDesconto racional é mais justo matematicamente."
+        },
+        {
+          "titulo": "Descontos e Acréscimos Sucessivos",
+          "conteudo": "REGRA FUNDAMENTAL:\nNÃO soma/subtrai percentuais!\nMultiplica fatores.\n\nDESCONTOS SUCESSIVOS:\n\nEXEMPLO 1: Produto R$ 1.000 com descontos de 20%, 15% e 10%.\n\nErrado: 20 + 15 + 10 = 45% → R$ 550\n\nCerto:\nFator = 0,80 × 0,85 × 0,90 = 0,612\nPreço final = 1.000 × 0,612 = R$ 612\n\nDesconto total = 1 - 0,612 = 38,8%\n\nEXEMPLO 2: Desconto de 30% + 20% é equivalente a quanto?\nFator = 0,70 × 0,80 = 0,56\nDesconto único = 44% (não 50%!)\n\nACRÉSCIMOS SUCESSIVOS:\n\nEXEMPLO 3: Salário com aumentos de 10%, 8% e 5%.\nFator = 1,10 × 1,08 × 1,05 = 1,2474\nAumento total = 24,74%\n\nMISTOS (acréscimo E desconto):\n\nEXEMPLO 4: Preço aumenta 25%, depois desconto de 20%.\nFator = 1,25 × 0,80 = 1,00\n\nSurpresa: volta ao preço original!\n(25% de aumento anulado por 20% de desconto)\n\nEXEMPLO 5: Inflação de 5% por 3 meses seguidos.\nFator = (1,05)³ = 1,157625\nInflação acumulada = 15,76% (não 15%!)\n\nAPLICAÇÃO: CARTÃO DE CRÉDITO\nCompra R$ 500:\n- Desconto à vista: 10%\n- Ou parcelado: acréscimo de 15%\n\nÀ vista: 500 × 0,90 = R$ 450\nParcelado: 500 × 1,15 = R$ 575\nDiferença: R$ 125 (27,8% mais caro)"
+        },
+        {
+          "titulo": "Problemas Integrados de Matemática Financeira",
+          "conteudo": "PROBLEMA 1: PROMOÇÃO COMPLEXA\nLoja anuncia: \"Leve 3, pague 2\"\nIsso equivale a que desconto?\n\nPaga 2 de 3 = 2/3 do valor = 66,67%\nDesconto = 33,33%\n\nPROBLEMA 2: ANTECIPAÇÃO vs PARCELAMENTO\nProduto R$ 2.400:\n- À vista: 15% desconto\n- 3× sem juros\n- 12× com juros de 3% ao mês (compostos)\n\nÀ vista: 2.400 × 0,85 = R$ 2.040\n3×: 2.400/3 = R$ 800 por mês\n12×: parcela calculada por Price ≈ R$ 284,93\n  Total = 284,93 × 12 ≈ R$ 3.419\n\nMelhor: à vista (economia de R$ 1.379 vs 12×)\n\nPROBLEMA 3: INVESTIMENTO vs DÍVIDA\nPessoa tem R$ 10.000 e dívida de R$ 10.000 a 5% ao mês.\nOpções:\n1) Pagar dívida\n2) Investir a 3% ao mês e pagar aos poucos\n\nEm 6 meses:\nOpção 1: Sem dívida, sem investimento\n\nOpção 2:\nDívida cresce: 10.000 × (1,05)⁶ ≈ R$ 13.401\nInvestimento: 10.000 × (1,03)⁶ ≈ R$ 11.941\nSaldo: deve 13.401 - 11.941 = R$ 1.460\n\nMelhor: Opção 1 (pagar dívida imediatamente)\n\nPROBLEMA 4: INFLAÇÃO vs RENDIMENTO\nInvestimento rende 10% ao ano.\nInflação: 6% ao ano.\n\nRendimento REAL:\n(1 + i_real) = (1 + i_nominal) / (1 + inflação)\n(1 + i_real) = 1,10 / 1,06 ≈ 1,0377\ni_real ≈ 3,77% ao ano\n\nPROBLEMA 5: DECISÃO DE COMPRA\nCarro R$ 50.000:\n- Entrada 20% + 24× de R$ 1.800\n- Ou à vista com 8% desconto\n\nOpção 1:\nEntrada: 10.000\nParcelas: 24 × 1.800 = 43.200\nTotal: R$ 53.200\n\nOpção 2:\nÀ vista: 50.000 × 0,92 = R$ 46.000\n\nEconomia: R$ 7.200 pagando à vista"
+        }
+      ],
+      "exemplos": [
+        "Calcular desconto em antecipação de recebível",
+        "Comparar promoções com descontos sucessivos",
+        "Analisar melhor opção de pagamento"
+      ],
+      "dicas": [
+        "Desconto comercial: sobre valor nominal (futuro)",
+        "Desconto racional: sobre valor atual (mais justo)",
+        "Descontos sucessivos: multiplica (1-d₁)×(1-d₂)",
+        "\"Leve 3 pague 2\" = 33,3% de desconto",
+        "Sempre calcule custo efetivo ao comparar opções",
+        "Taxa efetiva > taxa nominal no desconto comercial"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Uma duplicata de R$ 8.000 com vencimento em 2 meses é descontada a 5% ao mês (desconto comercial simples). Quanto o banco libera?",
+          "alternativas": {
+            "A": "R$ 7.000",
+            "B": "R$ 7.100",
+            "C": "R$ 7.200",
+            "D": "R$ 7.300",
+            "E": "R$ 7.400"
+          },
+          "correta": "C",
+          "explicacao": "V = N(1 - d×t) = 8.000(1 - 0,05×2) = 8.000 × 0,90 = R$ 7.200",
+          "dificuldade": "facil",
+          "tags": ["desconto-comercial", "duplicata"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Uma loja oferece descontos sucessivos de 20% e 30%. Qual o desconto único equivalente?",
+          "alternativas": {
+            "A": "44%",
+            "B": "46%",
+            "C": "48%",
+            "D": "50%",
+            "E": "52%"
+          },
+          "correta": "A",
+          "explicacao": "Fator = 0,80 × 0,70 = 0,56. Paga 56%, desconto = 44%",
+          "dificuldade": "facil",
+          "tags": ["desconto-sucessivo", "percentual"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Um produto com preço de R$ 300 terá dois aumentos sucessivos de 10%. Qual o preço final?",
+          "alternativas": {
+            "A": "R$ 330",
+            "B": "R$ 360",
+            "C": "R$ 363",
+            "D": "R$ 366",
+            "E": "R$ 390"
+          },
+          "correta": "C",
+          "explicacao": "Preço final = 300 × 1,10 × 1,10 = 300 × 1,21 = R$ 363",
+          "dificuldade": "facil",
+          "tags": ["aumento-sucessivo", "porcentagem"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Um título de R$ 10.000 para 4 meses é descontado comercialmente a 3% ao mês. Qual a taxa efetiva mensal aproximada?",
+          "alternativas": {
+            "A": "3,0%",
+            "B": "3,2%",
+            "C": "3,4%",
+            "D": "3,6%",
+            "E": "3,8%"
+          },
+          "correta": "C",
+          "explicacao": "D = 10.000×0,03×4 = 1.200. V = 8.800. Taxa efetiva total = 1.200/8.800 = 13,64% em 4 meses ≈ 3,4% ao mês",
+          "dificuldade": "medio",
+          "tags": ["desconto-comercial", "taxa-efetiva"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Uma promoção \"Leve 4, pague 3\" é equivalente a qual desconto percentual?",
+          "alternativas": {
+            "A": "20%",
+            "B": "25%",
+            "C": "30%",
+            "D": "33%",
+            "E": "40%"
+          },
+          "correta": "B",
+          "explicacao": "Paga 3 de 4 = 3/4 = 75% do valor. Desconto = 25%",
+          "dificuldade": "facil",
+          "tags": ["desconto", "promocao", "proporcao"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Educação Financeira e Tomada de Decisões",
+      "resumo": "Aplicação prática de conceitos financeiros para decisões conscientes",
+      "topicos": [
+        {
+          "titulo": "Análise de Propostas de Crédito",
+          "conteudo": "CET (Custo Efetivo Total):\nIncluí TODOS os custos: juros, taxas, seguros, IOF.\nObrigatório em propostas de crédito.\n\nEXEMPLO 1: EMPRÉSTIMO PESSOAL\nProposta A:\n- Valor: R$ 5.000\n- 12× R$ 500 = R$ 6.000\n- Juros nominal: 20% total\n- Tarifa abertura: R$ 200\n- Total efetivo: R$ 6.200\n- CET: 24% total ou 1,8% ao mês\n\nProposta B:\n- Valor: R$ 5.000\n- 12× R$ 480 = R$ 5.760\n- Juros nominal: 15,2% total\n- Sem tarifas\n- CET: 15,2% total ou 1,2% ao mês\n\nMelhor: Proposta B (menor CET)\n\nCARTÃO DE CRÉDITO:\nRotativo: uma das taxas MAIS ALTAS do mercado.\n\nEXEMPLO 2: Fatura R$ 1.000, paga mínimo R$ 150\nSaldo: R$ 850\nTaxa rotativo: 15% ao mês\n\nApós 1 mês: 850 × 1,15 = R$ 977,50\nMais nova fatura...\n\nRECOMENDAÇÃO:\n- NUNCA use rotativo\n- Parcele a fatura (juros menores)\n- Ou busque empréstimo pessoal\n\nCHEQUE ESPECIAL:\nTaxa alta, uso emergencial.\n\nEXEMPLO 3: Taxa 8% ao mês\nR$ 1.000 por 10 dias:\nJuros = 1.000 × 0,08 × (10/30) ≈ R$ 26,67\n\nParece pouco, mas 8% ao mês = 151% ao ano (compostos)!"
+        },
+        {
+          "titulo": "Planejamento e Metas Financeiras",
+          "conteudo": "REGRA 50-30-20:\n50% - Essenciais (moradia, alimentação, transporte)\n30% - Desejos (lazer, streaming, restaurantes)\n20% - Poupança e investimentos\n\nEXEMPLO: Salário R$ 4.000\nEssenciais: R$ 2.000\nDesejos: R$ 1.200\nPoupança: R$ 800\n\nMETAS FINANCEIRAS:\n\n1) CURTO PRAZO (até 1 ano):\nViagem, eletrônico, curso.\nInvestimentos: renda fixa, liquidez diária.\n\nEXEMPLO: Juntar R$ 3.000 em 10 meses\nPoupança mensal: R$ 300\nSe investir a 0,5% ao mês:\nM = 300 × [(1,005)¹⁰ - 1] / 0,005\nM ≈ R$ 3.076\n\n2) MÉDIO PRAZO (1-5 anos):\nCarro, casa (entrada), casamento.\nInvestimentos: renda fixa, CDBs.\n\nEXEMPLO: Entrada de R$ 30.000 em 3 anos\nInvestir R$ 700/mês a 0,8% ao mês:\nM = 700 × [(1,008)³⁶ - 1] / 0,008\nM ≈ R$ 29.847 (próximo da meta)\n\n3) LONGO PRAZO (5+ anos):\nAposentadoria, independência financeira.\nInvestimentos: diversificados, ações, fundos.\n\nAPOSENTADORIA:\nRegra dos 4%: Pode gastar 4% ao ano do patrimônio.\n\nPara viver com R$ 5.000/mês (R$ 60.000/ano):\nPatrimônio necessário: 60.000 / 0,04 = R$ 1.500.000\n\nComo chegar lá? Investindo R$ 1.000/mês a 10% a.a. por 30 anos:\nM = 1.000 × [(1,10)³⁰ - 1] / 0,10 × 12\nM ≈ R$ 2.300.000 (considerando aportes mensais)"
+        },
+        {
+          "titulo": "Armadilhas do Consumo e Como Evitar",
+          "conteudo": "TRUQUES DO MARKETING:\n\n1) \"APENAS R$ X POR DIA\"\nR$ 5/dia parece pouco.\nMas: R$ 5 × 365 = R$ 1.825/ano!\n\n2) \"12× SEM JUROS\"\nLoja já embutiu juros no preço.\nÀ vista costuma ter desconto.\n\nEXEMPLO:\nProduto R$ 1.200 em 12× de R$ 100\nOu R$ 1.000 à vista\nÀ vista sai 16,7% mais barato!\n\n3) \"OFERTA LIMITADA\"\nPressão por compra impulsiva.\nReflita: realmente preciso?\n\n4) CUPONS DE DESCONTO\nFazem gastar mais para \"aproveitar\".\nCompensa só se já ia comprar.\n\nCOMPRA IMPULSIVA:\n\nREGRA DAS 24 HORAS:\nPara compras acima de R$ 100, espere 24h.\nEvita 80% dos arrependimentos.\n\nCUSTO DE OPORTUNIDADE:\nGastar R$ 500 hoje OU investir?\n\nInvestindo a 10% ao ano:\n- Em 10 anos: R$ 1.297\n- Em 20 anos: R$ 3.364\n- Em 30 anos: R$ 8.725\n\nVale a pena? Às vezes sim, às vezes não.\n\nREFINANCIAMENTO:\n\nDívida R$ 10.000 a 10% ao mês (cartão).\nOpção: empréstimo consignado a 2% ao mês.\n\nEconomia mensal:\nCartão: R$ 1.000 de juros\nConsignado: R$ 200 de juros\nEconomia: R$ 800/mês!\n\nRECOMENDAÇÃO:\nSempre busque renegociar dívidas caras."
+        },
+        {
+          "titulo": "Educação Financeira na Prática",
+          "conteudo": "CASO COMPLETO: LUCAS, 25 ANOS\n\nSituação:\n- Salário: R$ 3.500/mês\n- Gastos: R$ 3.200/mês\n- Sobra: R$ 300/mês\n- Dívida cartão: R$ 5.000 (10% ao mês)\n- Nenhuma reserva\n\nPROBLEMA:\nDívida crescendo 10% ao mês!\nEm 6 meses: 5.000 × (1,10)⁶ = R$ 8.858\n\nPLANO DE AÇÃO:\n\n1) EMERGÊNCIA (Mês 1):\n- Corta gastos supérfluos: -R$ 500\n- Trabalho extra: +R$ 400\n- Disponível: R$ 1.200\n- Parcela fatura cartão em 12× (juros 3% ao mês)\n\n2) RECONSTRUÇÃO (Meses 2-6):\n- Mantém economia: R$ 800/mês\n- Monta reserva emergência\n- Meta: 3 meses de despesas = R$ 9.600\n\n3) CRESCIMENTO (Meses 7+):\n- Reserva completa\n- Investe R$ 500/mês\n- Objetivos de médio prazo\n\nRESULTADO APÓS 2 ANOS:\n- Dívida zero\n- Reserva: R$ 9.600\n- Investimentos: R$ 10.000\n- Patrimônio líquido: R$ 19.600\n\nVs. SEM PLANO:\n- Dívida: R$ 40.000+\n- Reserva: zero\n- Investimentos: zero\n- Patrimônio: -R$ 40.000\n\nDIFERENÇA: R$ 59.600!\n\nLIÇÕES:\n1) Dívidas caras destroem patrimônio\n2) Pequenas mudanças fazem GRANDE diferença\n3) Planejamento > Improviso\n4) Começar cedo multiplica resultados"
+        }
+      ],
+      "exemplos": [
+        "Comparar propostas de financiamento",
+        "Calcular tempo para atingir meta de poupança",
+        "Analisar impacto de dívida de cartão no tempo"
+      ],
+      "dicas": [
+        "Sempre compare CET, não apenas juros",
+        "Juros de cartão podem passar de 300% ao ano",
+        "Regra 50-30-20 para orçamento equilibrado",
+        "Custo de oportunidade: gastar hoje = não investir",
+        "Pequenas economias diárias = grandes valores anuais",
+        "Educação financeira é investimento com maior retorno"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Uma pessoa tem dívida de R$ 2.000 no cartão com juros de 10% ao mês. Se não pagar nada, quanto deverá em 4 meses?",
+          "alternativas": {
+            "A": "R$ 2.800",
+            "B": "R$ 2.900",
+            "C": "R$ 2.928",
+            "D": "R$ 3.000",
+            "E": "R$ 3.200"
+          },
+          "correta": "C",
+          "explicacao": "M = 2.000 × (1,10)⁴ = 2.000 × 1,4641 = R$ 2.928,20",
+          "dificuldade": "medio",
+          "tags": ["juros-compostos", "divida", "cartao"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Para juntar R$ 12.000 em 2 anos investindo mensalmente a 1% ao mês, aproximadamente quanto deve aplicar por mês? (Use aproximação: soma dos fatores ≈ 27)",
+          "alternativas": {
+            "A": "R$ 400",
+            "B": "R$ 444",
+            "C": "R$ 500",
+            "D": "R$ 555",
+            "E": "R$ 600"
+          },
+          "correta": "B",
+          "explicacao": "Aproximando: 12.000 / 27 ≈ R$ 444 mensais",
+          "dificuldade": "medio",
+          "tags": ["investimento", "meta", "planejamento"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Produto custa R$ 1.000 à vista ou 10× de R$ 110 sem juros. Se você pode investir a 1,5% ao mês, qual a melhor opção?",
+          "alternativas": {
+            "A": "À vista, economiza mais",
+            "B": "Parcelado, pode investir o dinheiro",
+            "C": "Indiferente",
+            "D": "Depende do produto",
+            "E": "Faltam informações"
+          },
+          "correta": "A",
+          "explicacao": "Parcelado = R$ 1.100 total. Mesmo investindo, não compensa pagar R$ 100 a mais. À vista é melhor",
+          "dificuldade": "medio",
+          "tags": ["decisao-financeira", "custo-oportunidade"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Seguindo a regra 50-30-20 com salário de R$ 5.000, quanto deve ser destinado a investimentos mensalmente?",
+          "alternativas": {
+            "A": "R$ 500",
+            "B": "R$ 750",
+            "C": "R$ 1.000",
+            "D": "R$ 1.250",
+            "E": "R$ 1.500"
+          },
+          "correta": "C",
+          "explicacao": "20% de R$ 5.000 = R$ 1.000 para poupança e investimentos",
+          "dificuldade": "facil",
+          "tags": ["planejamento", "orcamento", "regra-50-30-20"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Um café diário de R$ 7 representa quanto de gasto anual?",
+          "alternativas": {
+            "A": "R$ 2.100",
+            "B": "R$ 2.380",
+            "C": "R$ 2.555",
+            "D": "R$ 2.730",
+            "E": "R$ 2.920"
+          },
+          "correta": "C",
+          "explicacao": "R$ 7 × 365 dias = R$ 2.555 por ano",
+          "dificuldade": "facil",
+          "tags": ["consumo", "gastos-diarios", "consciencia"]
+        }
+      ]
+    }
+  ]
+}

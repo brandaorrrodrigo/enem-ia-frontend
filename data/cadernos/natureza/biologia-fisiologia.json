@@ -1,0 +1,282 @@
+{
+  "id": "biologia-fisiologia",
+  "titulo": "Fisiologia Humana",
+  "descricao": "Sistemas digestorio, respiratorio, circulatorio, nervoso e endocrino",
+  "icone": "🫀",
+  "cor": "from-red-500 to-pink-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Sistema Digestorio",
+      "resumo": "O sistema digestorio e responsavel pela ingestao, digestao e absorcao de nutrientes. Envolve boca, esofago, estomago, intestinos e glandulas anexas (figado, pancreas, salivares).",
+      "topicos": [
+        "Digestao mecanica e quimica",
+        "Boca: saliva, amilase salivar (carboidratos)",
+        "Estomago: suco gastrico, pepsina (proteinas), HCl",
+        "Intestino delgado: absorcao de nutrientes",
+        "Glandulas anexas: figado (bile), pancreas (enzimas)"
+      ],
+      "exemplos": [
+        "Amilase salivar: inicia digestao de amido na boca",
+        "Pepsina: digere proteinas no estomago (pH acido)",
+        "Bile: emulsifica gorduras (nao e enzima)",
+        "Lipase pancreatica: digere lipidios no intestino",
+        "Vilosidades intestinais: aumentam area de absorcao"
+      ],
+      "dicas": [
+        "Carboidratos: digestao inicia na boca (amilase)",
+        "Proteinas: digestao inicia no estomago (pepsina)",
+        "Lipidios: digestao no intestino (lipase + bile)",
+        "Intestino delgado: principal local de absorcao",
+        "Intestino grosso: absorcao de agua, formacao de fezes"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A digestao de carboidratos inicia-se na boca pela acao de qual enzima?",
+          "alternativas": [
+            "Pepsina",
+            "Tripsina",
+            "Amilase salivar",
+            "Lipase",
+            "Maltase"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A amilase salivar (ptialina) e secretada pelas glandulas salivares e inicia a digestao de carboidratos (amido) na boca, quebrando-os em maltose."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Qual a funcao da bile produzida pelo figado?",
+          "alternativas": [
+            "Digerir proteinas",
+            "Emulsificar gorduras",
+            "Neutralizar acidez do estomago",
+            "Digerir carboidratos",
+            "Absorver vitaminas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A bile emulsifica gorduras (quebra em gotículas menores), facilitando a acao da lipase. A bile NAO e uma enzima, e sim um emulsificante."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Sistema Respiratorio",
+      "resumo": "O sistema respiratorio e responsavel pelas trocas gasosas entre o organismo e o ambiente. Inclui vias aereas (nariz, faringe, laringe, traqueia, bronquios) e pulmoes (alveolos).",
+      "topicos": [
+        "Vias aereas: conducao e filtracao do ar",
+        "Pulmoes e alveolos: trocas gasosas",
+        "Hematose: troca de O2 e CO2",
+        "Controle da respiracao: bulbo e pH sanguineo",
+        "Transporte de gases: hemoglobina"
+      ],
+      "exemplos": [
+        "Alveolos: superficie de ~100 m2 para trocas gasosas",
+        "Hematose: O2 entra no sangue, CO2 sai",
+        "Hemoglobina: transporta O2 (oxiemoglobina)",
+        "CO2: maior parte transportado como bicarbonato (HCO3-)",
+        "Bulbo: detecta aumento de CO2 e estimula respiracao"
+      ],
+      "dicas": [
+        "Alveolos: paredes finas, muito vascularizados",
+        "Hematose: difusao de gases (O2 e CO2)",
+        "Inspiracao: diafragma contrai (abaixa), ar entra",
+        "Expiracao: diafragma relaxa (sobe), ar sai",
+        "CO2 elevado: principal estimulo para respirar"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Onde ocorre a hematose (troca de gases) no sistema respiratorio?",
+          "alternativas": [
+            "Traqueia",
+            "Bronquios",
+            "Bronquiolos",
+            "Alveolos pulmonares",
+            "Faringe"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "A hematose ocorre nos alveolos pulmonares, onde o O2 passa para o sangue e o CO2 passa do sangue para os alveolos, por difusao."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Qual o principal estimulo para o aumento da frequencia respiratoria?",
+          "alternativas": [
+            "Diminuicao de O2 no sangue",
+            "Aumento de CO2 no sangue",
+            "Aumento de O2 no sangue",
+            "Diminuicao de CO2 no sangue",
+            "Aumento da temperatura corporal"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O aumento de CO2 no sangue (e consequente reducao do pH) e detectado pelo bulbo, que estimula o aumento da frequencia respiratoria para eliminar o excesso de CO2."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Sistema Circulatorio",
+      "resumo": "O sistema circulatorio transporta nutrientes, gases, hormonios e residuos pelo corpo. E composto por coracao (bomba), vasos sanguineos (arterias, veias, capilares) e sangue.",
+      "topicos": [
+        "Coracao: 4 camaras (2 atrios, 2 ventriculos)",
+        "Circulacao dupla: pequena (pulmonar) e grande (sistemica)",
+        "Sangue: plasma, hemacias, leucocitos, plaquetas",
+        "Arterias: sangue do coracao, parede espessa",
+        "Veias: sangue ao coracao, valvulas"
+      ],
+      "exemplos": [
+        "Pequena circulacao: VD -> pulmoes -> AE (oxigenacao)",
+        "Grande circulacao: VE -> corpo -> AD (nutricao)",
+        "Hemacias: transporte de O2 (hemoglobina)",
+        "Leucocitos: defesa imunologica",
+        "Plaquetas: coagulacao sanguinea"
+      ],
+      "dicas": [
+        "Atrios: recebem sangue (camaras superiores)",
+        "Ventriculos: bombeiam sangue (camaras inferiores)",
+        "Arterias: sangue sai do coracao (pressao alta)",
+        "Veias: sangue volta ao coracao (valvulas)",
+        "Capilares: trocas entre sangue e tecidos"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Na circulacao pulmonar (pequena circulacao), o sangue sai de qual camara do coracao?",
+          "alternativas": [
+            "Atrio direito",
+            "Atrio esquerdo",
+            "Ventriculo direito",
+            "Ventriculo esquerdo",
+            "Veia cava"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Na pequena circulacao, o sangue venoso sai do ventriculo direito pela arteria pulmonar, vai aos pulmoes para oxigenacao, e retorna ao atrio esquerdo."
+        },
+        {
+          "id": "q6",
+          "enunciado": "Qual componente do sangue e responsavel pela coagulacao?",
+          "alternativas": [
+            "Hemacias",
+            "Leucocitos",
+            "Plaquetas",
+            "Plasma",
+            "Anticorpos"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "As plaquetas (trombocitos) sao fragmentos celulares responsaveis pela coagulacao sanguinea, formando tampoes em lesoes vasculares."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Sistema Nervoso",
+      "resumo": "O sistema nervoso coordena funcoes corporais atraves de sinais eletricos (impulsos nervosos). Divide-se em SNC (encefalo e medula) e SNP (nervos). Os neuronios sao as celulas funcionais.",
+      "topicos": [
+        "Neuronio: dendritos, corpo celular, axonio",
+        "Impulso nervoso: potencial de acao",
+        "Sinapse: transmissao entre neuronios",
+        "SNC: encefalo (cerebro, cerebelo, bulbo) e medula",
+        "SNP: somatico (voluntario) e autonomo (simpatico, parasimpatico)"
+      ],
+      "exemplos": [
+        "Cerebro: funcoes superiores (raciocinio, memoria)",
+        "Cerebelo: equilibrio e coordenacao motora",
+        "Bulbo: controle de respiracao e batimentos",
+        "Medula: reflexos e conducao de impulsos",
+        "Simpatico: luta ou fuga (acelera coracao)"
+      ],
+      "dicas": [
+        "Neuronio: dendrito (recebe) -> corpo -> axonio (transmite)",
+        "Sinapse: neurotransmissores (acetilcolina, dopamina)",
+        "Ato reflexo: nao passa pelo cerebro (mais rapido)",
+        "Simpatico: acelera funcoes (emergencia)",
+        "Parasimpatico: desacelera funcoes (repouso)"
+      ],
+      "questoes": [
+        {
+          "id": "q7",
+          "enunciado": "Qual a funcao dos dendritos em um neuronio?",
+          "alternativas": [
+            "Transmitir impulso nervoso para outros neuronios",
+            "Receber estimulos de outros neuronios",
+            "Produzir neurotransmissores",
+            "Isolar eletricamente o axonio",
+            "Armazenar informacoes"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Os dendritos sao prolongamentos que RECEBEM estimulos de outros neuronios ou receptores sensoriais, conduzindo o impulso para o corpo celular."
+        },
+        {
+          "id": "q8",
+          "enunciado": "No arco reflexo, qual a vantagem de a resposta nao passar pelo cerebro?",
+          "alternativas": [
+            "Economiza energia",
+            "Resposta mais rapida a estimulos perigosos",
+            "Maior precisao do movimento",
+            "Menor gasto de neurotransmissores",
+            "Nao ha vantagem"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "No reflexo, o impulso vai da medula diretamente ao musculo, sem passar pelo cerebro. Isso torna a resposta muito mais rapida, protegendo o corpo de lesoes."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Sistema Endocrino",
+      "resumo": "O sistema endocrino regula funcoes corporais atraves de hormonios (mensageiros quimicos) liberados por glandulas endocrinas na corrente sanguinea. Controla crescimento, metabolismo, reproducao.",
+      "topicos": [
+        "Hipofise: glandula mestra (controla outras glandulas)",
+        "Tireoide: T3 e T4 (metabolismo)",
+        "Pancreas: insulina e glucagon (glicemia)",
+        "Adrenais: adrenalina (stress), cortisol",
+        "Gonadas: testosterona e estrogeno (reproducao)"
+      ],
+      "exemplos": [
+        "GH (hipofise): hormonio do crescimento",
+        "Tiroxina: regula metabolismo basal",
+        "Insulina: diminui glicemia (entrada de glicose nas celulas)",
+        "Glucagon: aumenta glicemia (quebra de glicogenio)",
+        "Adrenalina: prepara corpo para luta ou fuga"
+      ],
+      "dicas": [
+        "Hipofise: localizada na base do cerebro",
+        "Insulina: baixa glicose (hipo = baixo)",
+        "Glucagon: eleva glicose (antagonista da insulina)",
+        "Diabetes: deficiencia de insulina ou resistencia",
+        "Feedback negativo: regula niveis hormonais"
+      ],
+      "questoes": [
+        {
+          "id": "q9",
+          "enunciado": "Qual hormonio e responsavel por DIMINUIR a taxa de glicose no sangue?",
+          "alternativas": [
+            "Glucagon",
+            "Adrenalina",
+            "Cortisol",
+            "Insulina",
+            "GH"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "A insulina, produzida pelas celulas beta do pancreas, facilita a entrada de glicose nas celulas, diminuindo a glicemia. Sua deficiencia causa diabetes."
+        },
+        {
+          "id": "q10",
+          "enunciado": "A hipofise e chamada de 'glandula mestra' porque:",
+          "alternativas": [
+            "E a maior glandula do corpo",
+            "Produz todos os hormonios do corpo",
+            "Controla a atividade de outras glandulas endocrinas",
+            "Esta localizada no cerebro",
+            "Produz a insulina"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A hipofise produz hormonios tropicos (TSH, ACTH, FSH, LH) que estimulam outras glandulas endocrinas (tireoide, adrenais, gonadas), controlando o sistema."
+        }
+      ]
+    }
+  ]
+}

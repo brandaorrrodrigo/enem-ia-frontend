@@ -1,0 +1,207 @@
+{
+  "id": "filosofia-moderna",
+  "titulo": "Filosofia Moderna",
+  "descricao": "Racionalismo, empirismo e a revolucao do pensamento nos seculos XVII e XVIII",
+  "icone": "🔬",
+  "cor": "from-blue-500 to-cyan-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Descartes e o Racionalismo",
+      "resumo": "Descartes inaugura a filosofia moderna com a duvida metodica e o cogito, estabelecendo a razao como fundamento do conhecimento.",
+      "topicos": [
+        "A duvida metodica",
+        "Cogito ergo sum (Penso, logo existo)",
+        "Dualismo mente-corpo",
+        "Ideias inatas",
+        "Metodo cartesiano"
+      ],
+      "exemplos": [
+        "'Penso, logo existo' - primeira certeza indubitavel",
+        "Duvida de tudo: sentidos, realidade, matematica",
+        "Mente (res cogitans) x Corpo (res extensa)"
+      ],
+      "dicas": [
+        "Descartes marca o inicio da filosofia moderna",
+        "A duvida e metodica, nao cetica",
+        "O cogito e o fundamento de todo conhecimento"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O 'cogito' cartesiano (Penso, logo existo) representa:",
+          "alternativas": [
+            "A impossibilidade de se ter certeza de qualquer coisa",
+            "A primeira certeza indubitavel apos a duvida metodica",
+            "A prova da existencia de Deus",
+            "A superioridade dos sentidos sobre a razao",
+            "A identidade entre pensar e existir fisicamente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Apos duvidar de tudo, Descartes conclui que, se duvida, pensa; e se pensa, existe. O cogito e a primeira certeza indubitavel que fundamenta todo o conhecimento.",
+          "dificuldade": "media",
+          "tags": ["descartes", "cogito", "racionalismo"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Empirismo Britanico",
+      "resumo": "O empirismo afirma que todo conhecimento deriva da experiencia sensorial, opondo-se ao racionalismo e suas ideias inatas.",
+      "topicos": [
+        "John Locke e a mente como tabula rasa",
+        "David Hume e o ceticismo empirista",
+        "Critica as ideias inatas",
+        "Origem das ideias na experiencia",
+        "Problema da inducao"
+      ],
+      "exemplos": [
+        "Locke: nada ha no intelecto que nao tenha passado pelos sentidos",
+        "Hume: a causalidade e um habito mental, nao uma certeza",
+        "Nao nascemos com ideias, as adquirimos"
+      ],
+      "dicas": [
+        "Empirismo x Racionalismo e um debate central",
+        "Empiristas valorizam a experiencia concreta",
+        "Hume questiona a certeza do conhecimento"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Para o empirismo de John Locke, a mente humana ao nascer e como:",
+          "alternativas": [
+            "Repleta de ideias inatas sobre matematica e logica",
+            "Uma tabula rasa, sem nenhum conteudo inato",
+            "Incapaz de adquirir qualquer conhecimento",
+            "Determinada geneticamente em todas as suas capacidades",
+            "Identica a mente divina"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Locke defende que nascemos sem ideias inatas - a mente e uma 'tabula rasa' (folha em branco) que sera preenchida pela experiencia sensorial.",
+          "dificuldade": "facil",
+          "tags": ["locke", "empirismo", "tabula-rasa"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Kant e a Sintese Critica",
+      "resumo": "Kant realiza uma sintese entre racionalismo e empirismo, propondo uma revolucao copernicana na filosofia.",
+      "topicos": [
+        "Revolucao copernicana na filosofia",
+        "Conhecimento: sensibilidade, entendimento, razao",
+        "Fenomeno e noumeno (coisa-em-si)",
+        "Juizos sinteticos a priori",
+        "O imperativo categorico"
+      ],
+      "exemplos": [
+        "'Pensamens sem conteudo sao vazios; intuicoes sem conceitos sao cegas'",
+        "Nao conhecemos as coisas em si, mas os fenomenos",
+        "'Age de modo que tua maxima possa ser lei universal'"
+      ],
+      "dicas": [
+        "Kant supera a oposicao racionalismo x empirismo",
+        "Fenomeno = o que aparece; Noumeno = coisa-em-si",
+        "O imperativo categorico e fundamental na etica kantiana"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "A 'revolucao copernicana' proposta por Kant na filosofia consiste em:",
+          "alternativas": [
+            "Afirmar que o conhecimento deve se adequar aos objetos",
+            "Propor que os objetos devem se adequar as nossas estruturas cognitivas",
+            "Negar a possibilidade de qualquer conhecimento",
+            "Defender que apenas a experiencia gera conhecimento",
+            "Retornar ao racionalismo cartesiano"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Assim como Copernico inverteu a relacao Sol-Terra, Kant inverte a relacao sujeito-objeto: nao e o sujeito que se adequa passivamente ao objeto, mas o objeto que se adequa as formas a priori do sujeito.",
+          "dificuldade": "media",
+          "tags": ["kant", "revolucao-copernicana", "criticismo"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Rousseau e o Contrato Social",
+      "resumo": "Rousseau desenvolve teorias sobre o estado de natureza, a origem da desigualdade e o contrato social como fundamento da sociedade legitima.",
+      "topicos": [
+        "Estado de natureza e o bom selvagem",
+        "Origem da desigualdade",
+        "O contrato social",
+        "Vontade geral",
+        "Soberania popular"
+      ],
+      "exemplos": [
+        "'O homem nasce livre, mas por toda parte encontra-se acorrentado'",
+        "A propriedade privada gerou a desigualdade",
+        "A vontade geral nao e a soma das vontades individuais"
+      ],
+      "dicas": [
+        "Rousseau influenciou a Revolucao Francesa",
+        "Critica a sociedade e suas instituicoes",
+        "Valoriza a soberania popular e a democracia"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Segundo Rousseau, a origem da desigualdade entre os homens esta relacionada com:",
+          "alternativas": [
+            "Diferencas naturais e biologicas insuperaveis",
+            "O surgimento da propriedade privada e da sociedade civil",
+            "A vontade divina que estabelece hierarquias",
+            "A natureza intrinsecamente ma do ser humano",
+            "A ausencia de leis no estado de natureza"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Para Rousseau, a desigualdade moral/politica surge com a propriedade privada. No estado natural, havia apenas desigualdades naturais minimas. A sociedade civil corrompeu o homem.",
+          "dificuldade": "media",
+          "tags": ["rousseau", "desigualdade", "contrato-social"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Iluminismo e Esclarecimento",
+      "resumo": "O Iluminismo propoe o uso da razao critica para libertar a humanidade da ignorancia, superstição e tirania.",
+      "topicos": [
+        "O que e Esclarecimento (Aufklarung)",
+        "Critica a autoridade e tradicao",
+        "Razao, progresso e ciencia",
+        "Tolerancia religiosa",
+        "Revolucoes liberais"
+      ],
+      "exemplos": [
+        "Kant: 'Esclarecimento e a saida do homem de sua menoridade'",
+        "Voltaire: 'Posso nao concordar com o que dizes, mas defenderei teu direito de dize-lo'",
+        "Enciclopedia: democratizacao do conhecimento"
+      ],
+      "dicas": [
+        "Iluminismo questiona dogmas e tradicoes",
+        "Lema: 'Sapere aude' (Ouse saber)",
+        "Influenciou revolucoes politicas modernas"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "O projeto iluminista do seculo XVIII caracteriza-se fundamentalmente por:",
+          "alternativas": [
+            "Defender o retorno as tradicoes medievais",
+            "Usar a razao critica para libertar a humanidade da ignorancia e superstição",
+            "Rejeitar completamente a ciencia e o conhecimento",
+            "Fortalecer o poder absoluto dos monarcas",
+            "Impor uma unica visao religiosa a todos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Iluminismo defende o uso autonomo da razao para questionar autoridades, tradicoes e supersticoes, promovendo progresso, tolerancia e liberdade atraves do conhecimento.",
+          "dificuldade": "facil",
+          "tags": ["iluminismo", "esclarecimento", "razao"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "id": "portugues-figuras",
+  "titulo": "Figuras de Linguagem",
+  "descricao": "Domine as principais figuras de linguagem cobradas no ENEM",
+  "icone": "🎭",
+  "cor": "from-pink-500 to-rose-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Metáfora e Comparação",
+      "resumo": "Entenda a relação de semelhança entre termos: comparação explícita e metáfora implícita.",
+      "topicos": [
+        "Comparação: usa conectivo comparativo (como, tal qual, assim como)",
+        "Metáfora: comparação implícita sem conectivo",
+        "Transferência de significado por similaridade",
+        "Uso de linguagem figurada",
+        "Diferença entre metáfora e comparação"
+      ],
+      "exemplos": [
+        "Comparação: 'Meus olhos são como o mar.' (conectivo 'como')",
+        "Metáfora: 'Meus olhos são oceanos.' (sem conectivo)",
+        "Metáfora: 'Você é meu sol.' (não há conectivo comparativo)",
+        "Comparação: 'Ele é forte como um touro.'",
+        "Metáfora: 'Aquele homem é um touro.'"
+      ],
+      "dicas": [
+        "Procure conectivos 'como', 'qual', 'tal' para identificar comparação",
+        "Metáfora dispensa conectivo comparativo",
+        "Ambas relacionam elementos por semelhança",
+        "Metáfora é mais direta e impactante"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Em 'Amor é fogo que arde sem se ver', de Camões, qual figura predomina?",
+          "alternativas": [
+            "Comparação, pois compara amor e fogo",
+            "Metáfora, identificando amor com fogo",
+            "Metonímia, substituindo amor por fogo",
+            "Hipérbole, exagerando o amor",
+            "Ironia, contradizendo o conceito de amor"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Trata-se de metáfora, pois identifica amor com fogo sem usar conectivo comparativo, estabelecendo relação direta entre os termos."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Metonímia e Antonomásia",
+      "resumo": "Figuras de substituição por proximidade: parte pelo todo, autor pela obra, marca pelo produto.",
+      "topicos": [
+        "Substituição de um termo por outro relacionado",
+        "Tipos: parte pelo todo, autor pela obra, continente pelo conteúdo",
+        "Marca pelo produto, símbolo pela coisa simbolizada",
+        "Antonomásia: substituição de nome por qualidade/característica",
+        "Relação de contiguidade (proximidade)"
+      ],
+      "exemplos": [
+        "Autor pela obra: 'Li Machado de Assis.' (li a obra dele)",
+        "Parte pelo todo: 'Falta um braço na equipe.' (falta uma pessoa)",
+        "Marca pelo produto: 'Vou tomar uma Coca.' (refrigerante)",
+        "Continente pelo conteúdo: 'Tomei três copos.' (o líquido)",
+        "Antonomásia: 'O Rei do Futebol' (Pelé)"
+      ],
+      "dicas": [
+        "Metonímia envolve relação de proximidade, não semelhança",
+        "Pergunte: 'um termo substituiu outro relacionado?'",
+        "Comum no dia a dia: 'ler Machado', 'comprar um Ford'",
+        "Diferente de metáfora que é por semelhança"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Em 'O brasileiro é apaixonado por futebol', qual figura ocorre ao usar 'brasileiro' para se referir ao povo?",
+          "alternativas": [
+            "Metáfora",
+            "Metonímia (singular pelo plural)",
+            "Hipérbole",
+            "Eufemismo",
+            "Comparação"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Metonímia do tipo singular pelo plural: 'brasileiro' (singular) representa 'os brasileiros' (plural), substituição por proximidade."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Antítese e Paradoxo",
+      "resumo": "Oposição de ideias: antítese opõe termos; paradoxo une ideias contraditórias numa mesma proposição.",
+      "topicos": [
+        "Antítese: oposição de palavras ou ideias",
+        "Paradoxo: união de ideias contraditórias",
+        "Oxímoro: paradoxo em expressão curta",
+        "Recurso para criar tensão e impacto",
+        "Diferença entre antítese e paradoxo"
+      ],
+      "exemplos": [
+        "Antítese: 'Onde queres prazer, sou o que dói.' (prazer × dor)",
+        "Antítese: 'Uns têm muito, outros têm nada.' (muito × nada)",
+        "Paradoxo: 'Amor é ferida que dói e não se sente.' (dói mas não se sente)",
+        "Paradoxo: 'O silêncio gritava dentro de mim.'",
+        "Oxímoro: 'Ilustre desconhecido', 'Música silenciosa'"
+      ],
+      "dicas": [
+        "Antítese: termos opostos em partes diferentes",
+        "Paradoxo: contradição lógica aparente na mesma ideia",
+        "Busque palavras antônimas próximas",
+        "Paradoxo cria efeito de estranhamento"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Em 'Era o porvir - em frente do passado', de Castro Alves, identifica-se:",
+          "alternativas": [
+            "Metáfora entre porvir e passado",
+            "Metonímia temporal",
+            "Antítese entre futuro (porvir) e passado",
+            "Paradoxo sobre o tempo",
+            "Eufemismo para o presente"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Antítese clara entre 'porvir' (futuro) e 'passado', termos temporais opostos colocados em contraste no verso."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Ironia e Sarcasmo",
+      "resumo": "Dizer o contrário do que se pensa: ironia é sutil; sarcasmo é ironia agressiva e mordaz.",
+      "topicos": [
+        "Dizer o oposto do que realmente se quer expressar",
+        "Crítica implícita ou zombaria",
+        "Contexto é fundamental para identificar ironia",
+        "Sarcasmo: ironia agressiva e ofensiva",
+        "Tom de voz e situação revelam a ironia"
+      ],
+      "exemplos": [
+        "Ironia: 'Que pontualidade exemplar!' (para quem chegou atrasado)",
+        "Ironia: 'Linda essa chuva, justo no dia do passeio!' (reclamação)",
+        "Sarcasmo: 'Parabéns, você conseguiu estragar tudo, como sempre!'",
+        "Ironia: 'Que talento para errar!' (criticando os erros)",
+        "Sarcasmo: 'Brilhante ideia, gênio!' (criticando uma decisão ruim)"
+      ],
+      "dicas": [
+        "Contexto é essencial: considere a situação",
+        "Ironia inverte o sentido aparente",
+        "Sarcasmo tem tom mais agressivo",
+        "No ENEM, observe contradição entre texto e contexto"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Uma charge mostra político com cofre cheio dizendo: 'Precisamos apertar os cintos!'. Qual figura predomina?",
+          "alternativas": [
+            "Metáfora sobre economia",
+            "Metonímia do cinto pela economia",
+            "Ironia criticando a hipocrisia",
+            "Hipérbole sobre a crise",
+            "Eufemismo para disfarçar corrupção"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Ironia evidente: o político diz uma coisa ('apertar cintos' - economizar) mas faz o oposto (enriquece), revelando hipocrisia através do contraste."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Hipérbole, Eufemismo e Disfemismo",
+      "resumo": "Exagero intencional (hipérbole), suavização (eufemismo) e intensificação negativa (disfemismo).",
+      "topicos": [
+        "Hipérbole: exagero proposital para ênfase",
+        "Eufemismo: suavizar expressão desagradável",
+        "Disfemismo: intensificar negativamente",
+        "Lítotes: afirmar pela negação do contrário",
+        "Uso expressivo de intensificação ou atenuação"
+      ],
+      "exemplos": [
+        "Hipérbole: 'Já te falei um milhão de vezes!'",
+        "Hipérbole: 'Chorei rios de lágrimas.'",
+        "Eufemismo: 'Ele faltou com a verdade.' (mentiu)",
+        "Eufemismo: 'Ela é desprovida de beleza.' (feia)",
+        "Disfemismo: 'Aquele sujeito é um covarde!'",
+        "Lítotes: 'Ele não é bobo.' (é inteligente)"
+      ],
+      "dicas": [
+        "Hipérbole exagera para criar impacto emocional",
+        "Eufemismo é usado por educação ou tabu social",
+        "Identifique numerais exagerados (milhão, mil)",
+        "Eufemismo ameniza; disfemismo agrava"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Em 'Ele entregou a alma a Deus', para se referir à morte, qual figura é usada?",
+          "alternativas": [
+            "Hipérbole sobre o falecimento",
+            "Metáfora comparando morte e entrega",
+            "Eufemismo suavizando a morte",
+            "Ironia sobre a religiosidade",
+            "Metonímia da alma pela pessoa"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Eufemismo: usa expressão suave 'entregar a alma a Deus' para amenizar a ideia direta e impactante de 'morreu'."
+        }
+      ]
+    }
+  ]
+}

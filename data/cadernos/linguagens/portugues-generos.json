@@ -1,0 +1,212 @@
+{
+  "id": "portugues-generos",
+  "titulo": "Gêneros Textuais",
+  "descricao": "Reconheça e analise os principais gêneros textuais do ENEM",
+  "icone": "📰",
+  "cor": "from-cyan-500 to-blue-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Charge e Cartum",
+      "resumo": "Gêneros visuais que usam humor e crítica para comentar situações atuais (charge) ou universais (cartum).",
+      "topicos": [
+        "Charge: crítica a fatos atuais e políticos",
+        "Cartum: humor universal, atemporal",
+        "Uso de linguagem verbal e não-verbal",
+        "Ironia, sátira e caricatura",
+        "Compreensão de contexto histórico-social"
+      ],
+      "exemplos": [
+        "Charge: desenho satirizando aumento de impostos pelo governo atual",
+        "Cartum: desenho sobre dificuldades do casamento (tema universal)",
+        "Charge política: caricatura de político em situação ridicularizante",
+        "Cartum: humor sobre tecnologia e relações humanas sem referência temporal específica"
+      ],
+      "dicas": [
+        "Charge: sempre relacionada a fato recente específico",
+        "Cartum: humor atemporal, sem vinculação a evento específico",
+        "Observe linguagem não-verbal: expressões, símbolos",
+        "Relacione imagem com conhecimento sobre atualidades",
+        "Identifique a crítica ou mensagem implícita"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma charge mostra um político com nariz crescendo (como Pinóquio) ao discursar. Qual a crítica principal?",
+          "alternativas": [
+            "A aparência física do político",
+            "A mentira e desonestidade no discurso",
+            "O tamanho exagerado dos discursos",
+            "A forma como o político se veste",
+            "O local onde o discurso acontece"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A referência ao Pinóquio (nariz cresce ao mentir) é símbolo universal de mentira, criticando a desonestidade do político ao discursar."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Crônica",
+      "resumo": "Texto curto que retrata fatos cotidianos com leveza, lirismo e reflexão, entre jornalismo e literatura.",
+      "topicos": [
+        "Narrativa curta sobre o cotidiano",
+        "Linguagem coloquial e subjetiva",
+        "Reflexão sobre situações simples",
+        "Crônica narrativa, descritiva, reflexiva, humorística",
+        "Publicação em jornais e revistas"
+      ],
+      "exemplos": [
+        "Crônica de Rubem Braga sobre conversa com engraxate",
+        "Crônica de Luis Fernando Veríssimo criticando costumes sociais com humor",
+        "Texto sobre experiência no ônibus revelando reflexão humana",
+        "Observação lírica sobre mudanças da cidade"
+      ],
+      "dicas": [
+        "Crônica transforma cotidiano em literatura",
+        "Identifique tom pessoal e reflexivo",
+        "Linguagem acessível, próxima do leitor",
+        "Geralmente em 1ª pessoa, mas não obrigatoriamente",
+        "Mistura informação e opinião com leveza"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Qual característica NÃO é típica da crônica?",
+          "alternativas": [
+            "Linguagem coloquial e acessível",
+            "Retrato de situações cotidianas",
+            "Objetividade e imparcialidade total",
+            "Publicação em jornais e revistas",
+            "Mistura de jornalismo e literatura"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A crônica é subjetiva e pessoal, com opinião e reflexão do autor, diferente da objetividade de textos jornalísticos informativos."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Notícia e Reportagem",
+      "resumo": "Gêneros jornalísticos: notícia informa objetivamente; reportagem aprofunda com investigação.",
+      "topicos": [
+        "Notícia: informação objetiva, factual, atual",
+        "Estrutura: lead (quem, o quê, quando, onde, como, por quê)",
+        "Reportagem: aprofundamento, investigação, análise",
+        "Linguagem formal, impessoal, clara",
+        "Função referencial predominante"
+      ],
+      "exemplos": [
+        "Notícia: 'Governo anuncia reajuste de 10% no salário mínimo a partir de janeiro.'",
+        "Reportagem: texto extenso investigando causas e consequências do desemprego no país",
+        "Lead: 'Um acidente na BR-101 deixou três feridos na manhã de hoje (o quê, onde, quando).'",
+        "Reportagem especial: série sobre educação pública com entrevistas e dados"
+      ],
+      "dicas": [
+        "Notícia: curta, objetiva, sem opinião do jornalista",
+        "Reportagem: longa, aprofundada, com contexto",
+        "Lead concentra informações essenciais no início",
+        "Pirâmide invertida: mais importante primeiro",
+        "Verbos dicendi: disse, afirmou, declarou"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Qual característica diferencia reportagem de notícia?",
+          "alternativas": [
+            "A reportagem é mais curta e objetiva",
+            "A notícia apresenta aprofundamento e análise",
+            "A reportagem investiga e contextualiza o fato",
+            "A notícia usa linguagem coloquial",
+            "A reportagem é sempre publicada em revistas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A reportagem se diferencia por aprofundar o tema, investigar causas, apresentar contexto e análise, enquanto a notícia apenas informa o fato."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Editorial e Artigo de Opinião",
+      "resumo": "Textos argumentativos: editorial expressa posição do veículo; artigo de opinião traz visão assinada de autor.",
+      "topicos": [
+        "Editorial: opinião institucional do jornal/revista",
+        "Artigo de opinião: texto assinado, visão pessoal",
+        "Estrutura argumentativa: tese, argumentos, conclusão",
+        "Linguagem formal, persuasiva",
+        "Uso de dados, citações, exemplos como argumentos"
+      ],
+      "exemplos": [
+        "Editorial: 'O jornal defende que a reforma educacional é urgente...'",
+        "Artigo: 'Por João Silva - Acredito que a solução para a violência passa por...'",
+        "Editorial não é assinado individualmente",
+        "Artigo traz nome e credenciais do autor"
+      ],
+      "dicas": [
+        "Editorial: sem assinatura pessoal, voz institucional",
+        "Artigo: assinado por especialista, colunista ou autoridade",
+        "Ambos defendem tese com argumentos",
+        "Identifique a posição defendida",
+        "Observe estratégias argumentativas usadas"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Um texto defende mudanças na legislação ambiental, apresenta assinatura de 'Dr. Pedro Souza, biólogo'. Trata-se de:",
+          "alternativas": [
+            "Editorial institucional",
+            "Notícia sobre meio ambiente",
+            "Artigo de opinião assinado",
+            "Reportagem investigativa",
+            "Crônica sobre natureza"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Artigo de opinião: texto argumentativo assinado por autor identificado (Dr. Pedro Souza), defendendo posição pessoal sobre tema específico."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Resenha Crítica",
+      "resumo": "Análise crítica de obra (livro, filme, peça) com resumo, avaliação e recomendação.",
+      "topicos": [
+        "Resumo da obra (sem spoilers importantes)",
+        "Análise de aspectos técnicos e artísticos",
+        "Avaliação crítica fundamentada",
+        "Opinião do resenhista",
+        "Indicação: vale a pena ou não?"
+      ],
+      "exemplos": [
+        "Resenha de filme: resumo da trama + análise de fotografia, atuações, roteiro + nota",
+        "Resenha literária: apresentação do livro + análise do estilo do autor + recomendação",
+        "'O filme X apresenta fotografia impecável, mas roteiro previsível...'",
+        "'A obra de Y inova ao abordar tema Z de forma original...'"
+      ],
+      "dicas": [
+        "Resenha informa E avalia",
+        "Não confunda resumo puro com resenha crítica",
+        "Identifique opinião fundamentada do autor",
+        "Observe se há recomendação ao final",
+        "Linguagem pode ser menos formal que artigo acadêmico"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Qual elemento é ESSENCIAL em uma resenha crítica?",
+          "alternativas": [
+            "Apenas resumir o enredo completo da obra",
+            "Copiar trechos longos da obra analisada",
+            "Apresentar avaliação crítica fundamentada",
+            "Usar linguagem totalmente informal",
+            "Revelar todos os spoilers importantes"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O elemento essencial da resenha crítica é a avaliação fundamentada, com análise e opinião do resenhista sobre a obra, não apenas resumo."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "id": "quimica-ligacoes",
+  "titulo": "Ligações Químicas e Geometria Molecular",
+  "descricao": "Estude os diferentes tipos de ligações químicas, eletronegatividade e geometria molecular segundo a teoria VSEPR",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Ligação Iônica",
+      "topicos": [
+        {
+          "titulo": "Conceito de Ligação Iônica",
+          "conteudo": "A ligação iônica ocorre pela transferência de elétrons de um átomo para outro, formando íons. Metais (baixa eletronegatividade) doam elétrons formando cátions, enquanto ametais (alta eletronegatividade) recebem elétrons formando ânions."
+        },
+        {
+          "titulo": "Energia de Rede e Estabilidade",
+          "conteudo": "A energia de rede é liberada quando íons se atraem formando o retículo cristalino. Quanto maior a carga dos íons e menor o raio iônico, maior a energia de rede e mais estável o composto."
+        },
+        {
+          "titulo": "Propriedades dos Compostos Iônicos",
+          "conteudo": "Compostos iônicos apresentam: altos pontos de fusão e ebulição, condutividade elétrica quando fundidos ou dissolvidos, estrutura cristalina rígida, são geralmente solúveis em água e quebradiços."
+        },
+        {
+          "titulo": "Exemplos e Fórmulas",
+          "conteudo": "NaCl (sal de cozinha): Na⁺ + Cl⁻\nCaCl₂: Ca²⁺ + 2Cl⁻\nAl₂O₃: 2Al³⁺ + 3O²⁻\nA fórmula iônica deve ser eletricamente neutra."
+        }
+      ],
+      "exemplos": [
+        "Na (1s² 2s² 2p⁶ 3s¹) → Na⁺ (1s² 2s² 2p⁶) + e⁻",
+        "Cl (1s² 2s² 2p⁶ 3s² 3p⁵) + e⁻ → Cl⁻ (1s² 2s² 2p⁶ 3s² 3p⁶)",
+        "Formação do MgO: Mg²⁺ + O²⁻ → MgO (óxido de magnésio)"
+      ],
+      "dicas": [
+        "No ENEM: atenção para identificar metais (grupos 1, 2) e ametais (grupos 16, 17)",
+        "Lembre-se: ligação iônica = transferência completa de elétrons",
+        "Compostos iônicos conduzem eletricidade apenas quando dissolvidos ou fundidos"
+      ],
+      "questoes": [
+        {
+          "enunciado": "O cloreto de sódio (NaCl) é um composto iônico amplamente utilizado. Sobre suas propriedades, é INCORRETO afirmar que:",
+          "alternativas": [
+            "Possui alto ponto de fusão devido às fortes interações eletrostáticas",
+            "Conduz corrente elétrica quando em solução aquosa",
+            "Conduz corrente elétrica no estado sólido",
+            "É solúvel em água devido à polaridade do solvente",
+            "Forma um retículo cristalino no estado sólido"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "No estado sólido, os íons do NaCl estão fixos no retículo cristalino e não podem se movimentar, impedindo a condução elétrica. A condução só ocorre quando fundido ou dissolvido."
+        },
+        {
+          "enunciado": "A energia de rede do MgO é maior que a do NaCl. Isso ocorre porque:",
+          "alternativas": [
+            "O magnésio é mais eletronegativo que o sódio",
+            "Os íons Mg²⁺ e O²⁻ têm maior carga que Na⁺ e Cl⁻",
+            "O NaCl é mais solúvel em água",
+            "O oxigênio tem menor raio atômico que o cloro",
+            "A ligação no NaCl é mais covalente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A energia de rede aumenta com a carga dos íons. Mg²⁺ e O²⁻ possuem cargas maiores que Na⁺ e Cl⁻, resultando em maior atração eletrostática e maior energia de rede."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Ligação Covalente",
+      "topicos": [
+        {
+          "titulo": "Compartilhamento de Elétrons",
+          "conteudo": "Na ligação covalente, átomos compartilham pares de elétrons para atingir estabilidade. Ocorre principalmente entre ametais com eletronegatividades semelhantes. Pode ser simples (1 par), dupla (2 pares) ou tripla (3 pares)."
+        },
+        {
+          "titulo": "Ligações Sigma (σ) e Pi (π)",
+          "conteudo": "Ligação sigma: sobreposição frontal dos orbitais, mais forte, permite rotação livre. Ligação pi: sobreposição lateral dos orbitais p, mais fraca, impede rotação. Ligação simples = 1σ; dupla = 1σ + 1π; tripla = 1σ + 2π."
+        },
+        {
+          "titulo": "Polaridade das Ligações",
+          "conteudo": "A diferença de eletronegatividade (ΔEN) determina a polaridade: ΔEN = 0 (apolar), 0 < ΔEN < 1,7 (polar), ΔEN ≥ 1,7 (iônica). Ligações polares criam dipolos elétricos permanentes."
+        },
+        {
+          "titulo": "Ressonância e Estruturas de Lewis",
+          "conteudo": "Algumas moléculas apresentam múltiplas estruturas de Lewis válidas (ressonância). A estrutura real é um híbrido de ressonância. Importante para moléculas como O₃, NO₃⁻, benzeno."
+        }
+      ],
+      "exemplos": [
+        "H₂: H-H (ligação simples, 1σ, apolar)",
+        "O₂: O=O (ligação dupla, 1σ + 1π, apolar)",
+        "N₂: N≡N (ligação tripla, 1σ + 2π, apolar)",
+        "H₂O: H-O-H (ligações polares, molécula polar)",
+        "CO₂: O=C=O (ligações polares, molécula apolar por simetria)"
+      ],
+      "dicas": [
+        "Regra do octeto: átomos tendem a completar 8 elétrons na camada de valência",
+        "Exceções: H (2e⁻), Be (4e⁻), B (6e⁻), elementos do 3º período podem expandir",
+        "No ENEM: polaridade da ligação ≠ polaridade da molécula (geometria importa!)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Considerando as moléculas N₂, O₂ e F₂, é correto afirmar que:",
+          "alternativas": [
+            "Todas apresentam apenas ligações sigma",
+            "N₂ possui a ligação mais forte das três",
+            "O₂ é a única que apresenta ligação dupla",
+            "F₂ possui ligação tripla",
+            "Todas são moléculas polares"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "N₂ possui ligação tripla (1σ + 2π), que é a mais forte devido ao maior número de elétrons compartilhados. O₂ tem ligação dupla e F₂ tem ligação simples. Todas são apolares."
+        },
+        {
+          "enunciado": "A molécula de CO₂ é apolar, enquanto a de H₂O é polar. Isso se deve:",
+          "alternativas": [
+            "À diferença de eletronegatividade entre C-O e H-O",
+            "Ao fato de CO₂ ter apenas ligações sigma",
+            "À geometria linear do CO₂ e angular da H₂O",
+            "Ao maior número de elétrons do carbono",
+            "À presença de ligações iônicas no CO₂"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Ambas têm ligações polares, mas a geometria linear do CO₂ faz os dipolos se cancelarem (apolar), enquanto a geometria angular da H₂O resulta em momento dipolar resultante não-nulo (polar)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Ligação Metálica",
+      "topicos": [
+        {
+          "titulo": "Modelo do Mar de Elétrons",
+          "conteudo": "Na ligação metálica, átomos metálicos liberam elétrons da camada de valência formando cátions. Esses elétrons deslocalizados formam uma 'nuvem eletrônica' que mantém os cátions unidos, permitindo mobilidade eletrônica."
+        },
+        {
+          "titulo": "Propriedades dos Metais",
+          "conteudo": "Condutividade elétrica e térmica: elétrons livres transportam carga e calor. Maleabilidade e ductilidade: camadas de átomos deslizam sem romper ligações. Brilho metálico: elétrons absorvem e re-emitem luz."
+        },
+        {
+          "titulo": "Liga Metálicas",
+          "conteudo": "Combinação de dois ou mais metais (ou metal + ametal). Tipos: substitucionais (átomos de tamanhos semelhantes) e intersticiais (átomos pequenos ocupam espaços). Exemplos: aço (Fe+C), bronze (Cu+Sn), latão (Cu+Zn)."
+        }
+      ],
+      "exemplos": [
+        "Cobre: excelente condutor devido aos elétrons deslocalizados",
+        "Ouro: maleável, pode formar folhas muito finas",
+        "Aço inoxidável: Fe + Cr + Ni (resistente à corrosão)",
+        "Amálgama dentário: Hg + Ag + Sn + Cu"
+      ],
+      "dicas": [
+        "Quanto mais elétrons deslocalizados, maior a condutividade",
+        "Metais de transição têm elétrons d que aumentam a força da ligação",
+        "No ENEM: relacione propriedades macroscópicas com o modelo de ligação"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A alta condutividade elétrica dos metais é explicada pelo modelo de ligação metálica porque:",
+          "alternativas": [
+            "Os átomos metálicos são grandes e se repelem",
+            "Existem elétrons livres que podem se mover pelo sólido",
+            "A ligação metálica é fraca e se rompe facilmente",
+            "Os cátions metálicos têm carga positiva elevada",
+            "Há transferência completa de elétrons entre átomos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A 'nuvem' de elétrons deslocalizados permite que cargas elétricas sejam transportadas facilmente através do metal quando submetido a uma diferença de potencial."
+        },
+        {
+          "enunciado": "As ligas metálicas são amplamente utilizadas porque:",
+          "alternativas": [
+            "São sempre mais leves que os metais puros",
+            "Não conduzem eletricidade",
+            "Podem ter propriedades superiores aos metais puros",
+            "São mais baratas que qualquer metal puro",
+            "Não sofrem corrosão"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Ligas metálicas são produzidas para combinar ou melhorar propriedades dos metais puros, como resistência mecânica, dureza, resistência à corrosão, mantendo condutividade."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Eletronegatividade e Polaridade",
+      "topicos": [
+        {
+          "titulo": "Escala de Eletronegatividade",
+          "conteudo": "Eletronegatividade é a tendência de um átomo atrair elétrons em uma ligação. Escala de Pauling: F (4,0) > O (3,5) > N, Cl (3,0) > C (2,5) > H (2,1). Aumenta na tabela: direita e para cima."
+        },
+        {
+          "titulo": "Momento Dipolar",
+          "conteudo": "Momento dipolar (μ) mede a polaridade da ligação: μ = q × d (carga × distância). Ligações polares têm μ ≠ 0. Vetores de momento dipolar seguem do δ+ para δ-. Unidade: Debye (D)."
+        },
+        {
+          "titulo": "Polaridade Molecular",
+          "conteudo": "A polaridade da molécula depende da polaridade das ligações E da geometria. Moléculas simétricas com ligações polares podem ser apolares se os dipolos se cancelarem. Momento dipolar resultante determina polaridade."
+        },
+        {
+          "titulo": "Classificação das Ligações",
+          "conteudo": "ΔEN = 0: ligação covalente apolar (H₂, Cl₂)\n0 < ΔEN < 0,4: covalente pouco polar\n0,4 < ΔEN < 1,7: covalente polar (H₂O, HCl)\nΔEN > 1,7: ligação iônica (NaCl)"
+        }
+      ],
+      "exemplos": [
+        "HCl: ΔEN = 3,0 - 2,1 = 0,9 (polar) → H^δ+-Cl^δ-",
+        "CCl₄: ligações C-Cl polares, mas molécula apolar (tetraédrica)",
+        "NH₃: ligações N-H polares e molécula polar (piramidal)",
+        "BF₃: ligações B-F polares, mas molécula apolar (trigonal plana)"
+      ],
+      "dicas": [
+        "Ordem de eletronegatividade: F > O > N > Cl > Br > C > H",
+        "Molécula simétrica com átomo central sem pares isolados = apolar",
+        "Presença de pares isolados geralmente causa assimetria = polar"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Qual das seguintes moléculas é apolar apesar de possuir ligações polares?",
+          "alternativas": [
+            "H₂O",
+            "NH₃",
+            "CO₂",
+            "HCl",
+            "CH₃Cl"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "CO₂ tem geometria linear (O=C=O) e os momentos dipolares das duas ligações C=O se cancelam vetorialmente, resultando em momento dipolar total nulo (molécula apolar)."
+        },
+        {
+          "enunciado": "A diferença de eletronegatividade entre dois átomos em uma ligação química permite prever:",
+          "alternativas": [
+            "O tamanho da molécula formada",
+            "A massa molar do composto",
+            "O caráter iônico ou covalente da ligação",
+            "O número de ligações que o átomo pode fazer",
+            "A temperatura de ebulição do composto"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Quanto maior a diferença de eletronegatividade (ΔEN), maior o caráter iônico da ligação. ΔEN pequeno indica ligação covalente, ΔEN grande indica ligação iônica."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Geometria Molecular - Teoria VSEPR",
+      "topicos": [
+        {
+          "titulo": "Princípios da Teoria VSEPR",
+          "conteudo": "VSEPR (Valence Shell Electron Pair Repulsion): pares de elétrons na camada de valência se repelem e se orientam o mais distante possível. Inclui pares ligantes E pares isolados. Pares isolados causam maior repulsão."
+        },
+        {
+          "titulo": "Geometrias Principais",
+          "conteudo": "Linear (2 ligações, 0 pares isolados): 180° - CO₂, BeH₂\nTrigonal plana (3 lig, 0 PI): 120° - BF₃\nTetraédrica (4 lig, 0 PI): 109,5° - CH₄\nTrigonal bipiramidal (5 lig): 90°/120°\nOctaédrica (6 lig): 90°"
+        },
+        {
+          "titulo": "Influência dos Pares Isolados",
+          "conteudo": "Tetraédrica → Piramidal (3 lig, 1 PI): NH₃ (~107°)\nTetraédrica → Angular (2 lig, 2 PI): H₂O (~104,5°)\nTrigonal plana → Angular (2 lig, 1 PI): SO₂\nPares isolados diminuem ângulos de ligação."
+        },
+        {
+          "titulo": "Hibridização e Geometria",
+          "conteudo": "sp: linear (2 orbitais)\nsp²: trigonal plana (3 orbitais)\nsp³: tetraédrica (4 orbitais)\nsp³d: trigonal bipiramidal (5 orbitais)\nsp³d²: octaédrica (6 orbitais)"
+        }
+      ],
+      "exemplos": [
+        "CH₄: 4 ligações, 0 PI → tetraédrica, sp³, 109,5°",
+        "NH₃: 3 ligações, 1 PI → piramidal, sp³, 107°",
+        "H₂O: 2 ligações, 2 PI → angular, sp³, 104,5°",
+        "CO₂: 2 ligações, 0 PI → linear, sp, 180°",
+        "SF₆: 6 ligações, 0 PI → octaédrica, sp³d², 90°"
+      ],
+      "dicas": [
+        "Conte TODOS os pares de elétrons (ligantes + isolados) no átomo central",
+        "Repulsão: PI-PI > PI-ligante > ligante-ligante",
+        "No ENEM: geometria determina polaridade e propriedades físicas"
+      ],
+      "questoes": [
+        {
+          "enunciado": "As moléculas de NH₃ e CH₄ apresentam, respectivamente, geometrias:",
+          "alternativas": [
+            "Piramidal e tetraédrica",
+            "Tetraédrica e piramidal",
+            "Angular e linear",
+            "Linear e angular",
+            "Trigonal plana e tetraédrica"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "NH₃ tem 3 ligações e 1 par isolado (geometria piramidal). CH₄ tem 4 ligações e 0 pares isolados (geometria tetraédrica). Ambos têm hibridização sp³."
+        },
+        {
+          "enunciado": "O ângulo de ligação na molécula de H₂O (104,5°) é menor que o ângulo tetraédrico ideal (109,5°) porque:",
+          "alternativas": [
+            "O oxigênio é muito eletronegativo",
+            "A molécula é polar",
+            "Há dois pares de elétrons isolados no oxigênio",
+            "As ligações O-H são muito curtas",
+            "O hidrogênio tem apenas um elétron"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Os dois pares isolados no oxigênio exercem maior repulsão que os pares ligantes, comprimindo o ângulo H-O-H para 104,5°, menor que o tetraédrico ideal."
+        },
+        {
+          "enunciado": "Uma molécula com fórmula AB₂ pode ter geometria linear OU angular. A geometria será angular se:",
+          "alternativas": [
+            "A e B tiverem a mesma eletronegatividade",
+            "O átomo A tiver pares de elétrons isolados",
+            "A ligação A-B for covalente apolar",
+            "B for um halogênio",
+            "A molécula for apolar"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Pela teoria VSEPR, pares isolados no átomo central (A) causam repulsão adicional, resultando em geometria angular. Se não houver pares isolados, a geometria será linear."
+        }
+      ]
+    }
+  ]
+}

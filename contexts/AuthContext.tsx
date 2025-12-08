@@ -7,6 +7,7 @@ interface User {
   id: string;
   nome: string;
   email: string;
+  avatarUrl?: string | null;
   pontosFP: number;
   nivel: string;
   streak: number;
@@ -45,6 +46,7 @@ interface AuthContextType {
 interface RegisterData {
   nome: string;
   email: string;
+  avatarUrl?: string | null;
   senha: string;
   estado?: string;
   jaFezEnem?: string;

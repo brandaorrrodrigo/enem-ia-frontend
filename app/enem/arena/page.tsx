@@ -470,6 +470,7 @@ export default function ArenaPage() {
   if (tela === 'criar') {
     return (
       <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
+        <FloatingBackButton />
         <FloatingNav />
 
         <div style={{ maxWidth: '600px', margin: '0 auto', paddingTop: '4rem' }}>
@@ -635,6 +636,7 @@ export default function ArenaPage() {
   if (tela === 'entrar') {
     return (
       <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
+        <FloatingBackButton />
         <FloatingNav />
 
         <div style={{ maxWidth: '500px', margin: '0 auto', paddingTop: '4rem' }}>
@@ -740,6 +742,7 @@ export default function ArenaPage() {
   if (tela === 'sala' && sala) {
     return (
       <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
+        <FloatingBackButton />
         <FloatingNav />
 
         <div style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '4rem' }}>
@@ -902,7 +905,36 @@ export default function ArenaPage() {
   if (tela === 'jogo' && questaoAtual && sala) {
     return (
       <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <FloatingBackButton />
+        <FloatingNav />
+
+        {/* Botao de Sair do Jogo */}
+        <button
+          onClick={() => {
+            if (confirm('Tem certeza que deseja sair? Seu progresso sera perdido!')) {
+              setTela('sala');
+              setSala(prev => prev ? { ...prev, status: 'finalizado' } : null);
+            }
+          }}
+          style={{
+            position: 'fixed',
+            top: '1rem',
+            left: '1rem',
+            zIndex: 100,
+            padding: '0.5rem 1rem',
+            borderRadius: '0.5rem',
+            background: 'rgba(244, 67, 54, 0.2)',
+            border: '2px solid rgba(244, 67, 54, 0.5)',
+            color: '#F44336',
+            cursor: 'pointer',
+            fontSize: '0.875rem',
+            fontWeight: 'bold'
+          }}
+        >
+          ✕ Sair do Jogo
+        </button>
+
+        <div style={{ maxWidth: '900px', margin: '0 auto', paddingTop: '2rem' }}>
           {/* Header do Jogo */}
           <div className="stats-bar" style={{ marginBottom: '1.5rem' }}>
             <div className="stat-item">

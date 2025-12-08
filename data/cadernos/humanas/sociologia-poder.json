@@ -1,0 +1,207 @@
+{
+  "id": "sociologia-poder",
+  "titulo": "Poder e Estado",
+  "descricao": "Relacoes de poder, Estado moderno, democracia e cidadania",
+  "icone": "⚖️",
+  "cor": "from-indigo-500 to-blue-600",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Poder e Dominacao",
+      "resumo": "Conceitos sociologicos de poder, autoridade e as formas de exercicio da dominacao na sociedade.",
+      "topicos": [
+        "Conceito de poder",
+        "Poder x forca x autoridade",
+        "Tipos de dominacao (Weber)",
+        "Poder simbolico (Bourdieu)",
+        "Micro-poderes e resistencia"
+      ],
+      "exemplos": [
+        "Poder: capacidade de impor a propria vontade",
+        "Dominacao tradicional: monarquias baseadas em costume",
+        "Dominacao carismatica: lideres religiosos, revolucionarios"
+      ],
+      "dicas": [
+        "Weber: tres tipos de dominacao legitima",
+        "Poder nao e apenas repressao, tambem e producao",
+        "ENEM relaciona poder com instituicoes sociais"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Segundo Max Weber, a dominacao tradicional fundamenta-se em:",
+          "alternativas": [
+            "Leis e regulamentos impessoais",
+            "Qualidades excepcionais do lider",
+            "Costumes, tradicoes e habitos arraigados",
+            "Pura violencia fisica",
+            "Eleicoes democraticas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A dominacao tradicional baseia-se na crenca na santidade das tradicoes antigas e na legitimidade daqueles que exercem autoridade em virtude dessas tradicoes (ex: monarquias hereditarias).",
+          "dificuldade": "facil",
+          "tags": ["weber", "dominacao-tradicional", "poder"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Estado Moderno",
+      "resumo": "Caracteristicas, funcoes e evolucao do Estado moderno como instituicao central da organizacao politica.",
+      "topicos": [
+        "Definicao de Estado",
+        "Monopolio da violencia legitima",
+        "Soberania e territorio",
+        "Estado absolutista x liberal x social",
+        "Instituicoes estatais"
+      ],
+      "exemplos": [
+        "Weber: Estado detem monopolio da forca",
+        "Absolutismo: Luis XIV - 'O Estado sou eu'",
+        "Estado liberal: minimo; Estado social: bem-estar"
+      ],
+      "dicas": [
+        "Estado: territorio, povo, governo, soberania",
+        "Estado moderno surge com centralizacao do poder",
+        "ENEM compara diferentes formas de Estado"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Uma caracteristica fundamental do Estado moderno e:",
+          "alternativas": [
+            "A descentralizacao total do poder",
+            "O monopolio do uso legitimo da forca em determinado territorio",
+            "A ausencia de leis e instituicoes",
+            "A inexistencia de fronteiras",
+            "O poder absoluto da Igreja"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Para Weber, o Estado moderno caracteriza-se por deter o monopolio do uso legitimo da violencia fisica em um territorio determinado, sendo a unica instituicao autorizada a usar coercao legalmente.",
+          "dificuldade": "facil",
+          "tags": ["estado-moderno", "weber", "monopolio-violencia"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Democracia e Cidadania",
+      "resumo": "Conceitos e praticas democraticas, participacao politica e exercicio da cidadania.",
+      "topicos": [
+        "Democracia direta x representativa",
+        "Principios democraticos",
+        "Cidadania: direitos civis, politicos, sociais",
+        "Participacao politica",
+        "Limites e desafios da democracia"
+      ],
+      "exemplos": [
+        "Atenas: democracia direta (mas excludente)",
+        "Brasil: democracia representativa",
+        "Marshall: cidadania tem tres dimensoes"
+      ],
+      "dicas": [
+        "Democracia: governo do povo, para o povo",
+        "Cidadania plena: direitos civis + politicos + sociais",
+        "ENEM valoriza participacao democratica"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Segundo T.H. Marshall, a cidadania plena envolve tres tipos de direitos:",
+          "alternativas": [
+            "Apenas direitos economicos",
+            "Direitos civis, politicos e sociais",
+            "Somente direitos politicos",
+            "Apenas deveres, sem direitos",
+            "Direitos exclusivos da elite"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Marshall identifica tres dimensoes da cidadania: direitos civis (liberdades individuais), direitos politicos (participacao politica) e direitos sociais (bem-estar economico e seguranca social).",
+          "dificuldade": "media",
+          "tags": ["marshall", "cidadania", "direitos"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Partidos e Sistemas Politicos",
+      "resumo": "Organizacao partidaria, sistemas eleitorais e formas de representacao politica.",
+      "topicos": [
+        "Funcao dos partidos politicos",
+        "Sistemas eleitorais: majoritario e proporcional",
+        "Direita, centro, esquerda",
+        "Populismo e autoritarismo",
+        "Representacao e representatividade"
+      ],
+      "exemplos": [
+        "Partidos: mediam entre sociedade e Estado",
+        "Brasil: sistema proporcional + presidencialismo",
+        "Esquerda: igualdade; Direita: liberdade individual"
+      ],
+      "dicas": [
+        "Partidos organizam e representam interesses",
+        "Sistema proporcional: mais partidos; majoritario: bipolarizacao",
+        "ENEM pergunta sobre sistemas politicos"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "No sistema eleitoral proporcional:",
+          "alternativas": [
+            "Apenas o candidato mais votado e eleito",
+            "As cadeiras sao distribuidas proporcionalmente aos votos de cada partido",
+            "Nao ha eleicoes",
+            "Apenas um partido pode existir",
+            "O voto e proibido"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "No sistema proporcional, as cadeiras legislativas sao distribuidas aos partidos de acordo com a proporcao de votos obtidos, diferente do majoritario onde apenas o mais votado vence.",
+          "dificuldade": "facil",
+          "tags": ["sistema-eleitoral", "proporcional", "partidos"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Estado e Politicas Publicas",
+      "resumo": "O papel do Estado na implementacao de politicas publicas para atender demandas sociais.",
+      "topicos": [
+        "Conceito de politicas publicas",
+        "Politicas sociais: saude, educacao, assistencia",
+        "Estado de bem-estar social",
+        "Neoliberalismo e reducao do Estado",
+        "Participacao social nas politicas"
+      ],
+      "exemplos": [
+        "SUS: politica publica de saude universal",
+        "Bolsa Familia: transferencia de renda",
+        "Welfare State: paises nordicos"
+      ],
+      "dicas": [
+        "Politicas publicas: acoes do Estado para resolver problemas",
+        "Estado social x Estado minimo (neoliberal)",
+        "ENEM relaciona com direitos sociais"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Politicas publicas podem ser definidas como:",
+          "alternativas": [
+            "Acoes exclusivas de empresas privadas",
+            "Acoes e programas desenvolvidos pelo Estado para atender demandas sociais",
+            "Decisoes tomadas apenas por individuos",
+            "Leis que beneficiam apenas a elite",
+            "Ausencia de intervencao estatal"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Politicas publicas sao conjuntos de acoes, programas e decisoes tomadas pelo Estado, com participacao eventual da sociedade, para atender demandas sociais em areas como saude, educacao, seguranca.",
+          "dificuldade": "facil",
+          "tags": ["politicas-publicas", "estado", "direitos-sociais"]
+        }
+      ]
+    }
+  ]
+}

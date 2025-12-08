@@ -1,0 +1,208 @@
+{
+  "id": "sociologia-movimentos",
+  "titulo": "Movimentos Sociais",
+  "descricao": "Acao coletiva, mobilizacao social e transformacao da sociedade",
+  "icone": "✊",
+  "cor": "from-rose-500 to-pink-600",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "O Que Sao Movimentos Sociais",
+      "resumo": "Definicao, caracteristicas e funcoes dos movimentos sociais como formas de acao coletiva organizada.",
+      "topicos": [
+        "Conceito de movimento social",
+        "Acao coletiva e mobilizacao",
+        "Movimentos classicos x novos movimentos",
+        "Reivindicacoes e objetivos",
+        "Repertorios de acao (manifestacoes, greves, ocupacoes)"
+      ],
+      "exemplos": [
+        "Movimento operario: luta por direitos trabalhistas",
+        "Movimentos ambientalistas: Greenpeace",
+        "Passeatas, greves, abaixo-assinados"
+      ],
+      "dicas": [
+        "Movimentos sociais buscam mudanca ou resistencia",
+        "Organizacao coletiva com objetivos compartilhados",
+        "ENEM relaciona com participacao democratica"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Movimentos sociais podem ser definidos como:",
+          "alternativas": [
+            "Acoes individuais isoladas sem conexao",
+            "Acoes coletivas organizadas que buscam mudanca ou resistencia social",
+            "Apenas manifestacoes violentas",
+            "Grupos sem objetivos definidos",
+            "Organizacoes governamentais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Movimentos sociais sao formas de acao coletiva organizada, com objetivos compartilhados, que buscam transformacao social, defesa de direitos ou resistencia a mudancas indesejadas.",
+          "dificuldade": "facil",
+          "tags": ["movimentos-sociais", "acao-coletiva", "mobilizacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Movimento Operario e Sindical",
+      "resumo": "A organizacao dos trabalhadores em sindicatos e movimentos pela conquista de direitos trabalhistas.",
+      "topicos": [
+        "Surgimento do movimento operario",
+        "Sindicatos e greves",
+        "Conquistas: jornada de 8h, ferias, salario minimo",
+        "Ludismo e cartismo",
+        "Movimento sindical no Brasil"
+      ],
+      "exemplos": [
+        "Ludismo: destruicao de maquinas (Inglaterra)",
+        "1o de Maio: Dia do Trabalhador",
+        "Greves do ABC paulista (anos 1970-80)"
+      ],
+      "dicas": [
+        "Movimento operario: resposta a exploracao capitalista",
+        "Greves: principal instrumento de luta",
+        "ENEM relaciona com direitos trabalhistas"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "O movimento operario do seculo XIX e XX foi fundamental para:",
+          "alternativas": [
+            "Manter as condicoes de trabalho inalteradas",
+            "Conquistar direitos trabalhistas como jornada de 8 horas e ferias",
+            "Eliminar todos os sindicatos",
+            "Impedir qualquer forma de organizacao dos trabalhadores",
+            "Fortalecer apenas os interesses dos empresarios"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O movimento operario foi essencial na conquista de direitos trabalhistas fundamentais como jornada de 8 horas, descanso semanal, ferias, salario minimo, atraves de greves e organizacao sindical.",
+          "dificuldade": "facil",
+          "tags": ["movimento-operario", "sindicatos", "direitos-trabalhistas"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Movimentos Sociais Contemporaneos",
+      "resumo": "Novos movimentos sociais: feminismo, ambientalismo, LGBTQIA+, indigenas, negros e outras lutas identitarias.",
+      "topicos": [
+        "Novos movimentos sociais (pos-1960)",
+        "Movimento feminista",
+        "Movimento LGBTQIA+",
+        "Movimento negro",
+        "Movimento ambientalista e indigena"
+      ],
+      "exemplos": [
+        "Feminismo: luta por igualdade de genero",
+        "Stonewall (1969): marco do movimento LGBTQIA+",
+        "Movimento negro: combate ao racismo"
+      ],
+      "dicas": [
+        "Novos movimentos: foco em identidade, cultura, meio ambiente",
+        "Nao apenas questoes economicas",
+        "ENEM valoriza diversidade e direitos humanos"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Os novos movimentos sociais surgidos apos os anos 1960 diferenciam-se dos classicos porque:",
+          "alternativas": [
+            "Focam apenas em questoes economicas e trabalhistas",
+            "Incluem pautas identitarias, culturais, ambientais e de direitos humanos",
+            "Sao menos organizados que os antigos",
+            "Nao buscam mudancas sociais",
+            "Sao exclusivamente violentos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Novos movimentos sociais ampliam as pautas para alem da questao economica, incluindo identidade, genero, raca, orientacao sexual, meio ambiente, cultura, direitos humanos e qualidade de vida.",
+          "dificuldade": "media",
+          "tags": ["novos-movimentos", "identidade", "direitos"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Movimentos Sociais no Brasil",
+      "resumo": "A historia dos movimentos sociais brasileiros: MST, movimento negro, indigena, estudantil e outros.",
+      "topicos": [
+        "MST (Movimento dos Trabalhadores Rurais Sem Terra)",
+        "Movimento negro brasileiro",
+        "Movimento indigena",
+        "Movimento estudantil (UNE)",
+        "Diretas Ja e impeachment"
+      ],
+      "exemplos": [
+        "MST: reforma agraria e ocupacoes",
+        "Zumbi dos Palmares: simbolo da luta negra",
+        "Demarcacao de terras indigenas",
+        "UNE: resistencia a ditadura"
+      ],
+      "dicas": [
+        "MST: maior movimento social rural da America Latina",
+        "Movimentos foram fundamentais na redemocratizacao",
+        "ENEM relaciona com cidadania e democracia"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "O MST (Movimento dos Trabalhadores Rurais Sem Terra) tem como principal objetivo:",
+          "alternativas": [
+            "Defender os interesses dos grandes latifundiarios",
+            "Lutar pela reforma agraria e acesso a terra para trabalhadores rurais",
+            "Impedir qualquer tipo de agricultura",
+            "Promover a urbanizacao do campo",
+            "Eliminar a producao agricola"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O MST luta pela reforma agraria, reivindicando a redistribuicao de terras improdutivas para trabalhadores rurais sem terra, atraves de ocupacoes, acampamentos e assentamentos.",
+          "dificuldade": "facil",
+          "tags": ["mst", "reforma-agraria", "brasil"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Midia, Redes Sociais e Mobilizacao",
+      "resumo": "O papel das novas tecnologias e redes sociais na organizacao e mobilizacao dos movimentos sociais contemporaneos.",
+      "topicos": [
+        "Ciberativismo e ativismo digital",
+        "Primavera Arabe e redes sociais",
+        "Manifestacoes de Junho de 2013 (Brasil)",
+        "Hashtags e campanhas online",
+        "Desafios: fake news e polarizacao"
+      ],
+      "exemplos": [
+        "Primavera Arabe: Facebook e Twitter na mobilizacao",
+        "#MeToo: combate ao assedio",
+        "Junho de 2013: convocacoes via redes sociais"
+      ],
+      "dicas": [
+        "Redes sociais facilitam mobilizacao rapida",
+        "Mas tambem podem espalhar desinformacao",
+        "ENEM aborda midia e participacao politica"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "As redes sociais impactaram os movimentos sociais contemporaneos ao:",
+          "alternativas": [
+            "Eliminar completamente a necessidade de mobilizacao presencial",
+            "Facilitar a organizacao, comunicacao e mobilizacao rapida de participantes",
+            "Tornar impossivel qualquer forma de protesto",
+            "Impedir que as pessoas se organizem politicamente",
+            "Substituir completamente a acao coletiva"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Redes sociais potencializam movimentos ao permitir comunicacao rapida, ampla divulgacao, convocacao de manifestacoes e articulacao entre participantes, embora nao substituam a mobilizacao presencial.",
+          "dificuldade": "facil",
+          "tags": ["redes-sociais", "ciberativismo", "mobilizacao"]
+        }
+      ]
+    }
+  ]
+}

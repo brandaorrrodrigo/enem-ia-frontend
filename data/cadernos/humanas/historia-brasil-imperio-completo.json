@@ -1,0 +1,402 @@
+{
+  "id": "historia-brasil-imperio-completo",
+  "titulo": "Brasil Império",
+  "descricao": "Do processo de independência à proclamação da República (1822-1889)",
+  "icone": "👑",
+  "cor": "from-purple-500 to-pink-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-independencia",
+      "titulo": "Processo de Independência",
+      "topicos": [
+        "Vinda da Família Real (1808)",
+        "Reino Unido Portugal-Brasil-Algarves",
+        "Revolução do Porto (1820)",
+        "Dia do Fico e Independência",
+        "Guerras de independência"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A transferência da Corte portuguesa para o Brasil em 1808, fugindo das tropas napoleônicas, trouxe importantes mudanças para a colônia. Entre essas transformações, destaca-se:",
+          "alternativas": [
+            "A manutenção do exclusivo comercial português",
+            "A abertura dos portos às nações amigas",
+            "O fechamento total do Brasil ao comércio exterior",
+            "A proibição de manufaturas no território brasileiro",
+            "O retorno imediato da família real para Portugal"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A abertura dos portos (1808) rompeu o monopólio comercial português, permitindo o comércio direto com outras nações, especialmente a Inglaterra. Isso marcou o início da emancipação econômica do Brasil."
+        },
+        {
+          "id": "q2",
+          "enunciado": "O Reino Unido de Portugal, Brasil e Algarves, criado em 1815, elevou o Brasil à condição de reino. Essa medida teve como consequência:",
+          "alternativas": [
+            "A restauração do estatuto colonial do Brasil",
+            "O fim de todas as relações políticas com Portugal",
+            "A legitimação da permanência da Corte no Brasil",
+            "A independência imediata do território brasileiro",
+            "O retorno ao sistema de capitanias hereditárias"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A criação do Reino Unido legitimou a permanência da Corte no Brasil, equiparando-o juridicamente a Portugal. Isso gerou insatisfação em Portugal, mas foi fundamental para o processo de emancipação brasileira."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Revolução Liberal do Porto (1820) exigiu o retorno de D. João VI a Portugal e a recolonização do Brasil. O \"Dia do Fico\" (9 de janeiro de 1822) representou:",
+          "alternativas": [
+            "A aceitação das exigências portuguesas por D. Pedro",
+            "A decisão de D. Pedro de permanecer no Brasil, contrariando as Cortes",
+            "O retorno imediato de toda a família real para Lisboa",
+            "A submissão total do Brasil às determinações portuguesas",
+            "A restauração do pacto colonial sem resistências"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "No \"Dia do Fico\", D. Pedro decidiu permanecer no Brasil, contrariando as Cortes portuguesas que exigiam seu retorno. Essa decisão, apoiada pela elite brasileira, foi decisiva para o processo de independência."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Independência do Brasil, proclamada em 7 de setembro de 1822, é caracterizada pelos historiadores como um processo \"por cima\". Isso significa que:",
+          "alternativas": [
+            "Houve ampla participação popular em todo o processo",
+            "A independência foi conduzida pela elite, mantendo estruturas coloniais",
+            "Ocorreu transformação radical na estrutura social brasileira",
+            "A escravidão foi abolida imediatamente após a independência",
+            "Houve redistribuição de terras entre a população pobre"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A independência brasileira foi conservadora, conduzida pela elite que manteve a monarquia, a escravidão e a estrutura latifundiária. Diferentemente de outras independências americanas, não houve ruptura radical nem participação popular significativa."
+        },
+        {
+          "id": "q5",
+          "enunciado": "Apesar da proclamação em setembro de 1822, a independência não foi pacífica em todas as regiões. As principais resistências ocorreram em:",
+          "alternativas": [
+            "São Paulo e Rio de Janeiro, regiões favoráveis a Portugal",
+            "Bahia, Maranhão e Pará, onde havia forte presença de tropas portuguesas",
+            "Minas Gerais e Goiás, pela distância da capital",
+            "Santa Catarina e Rio Grande do Sul, pela influência espanhola",
+            "Todo o território brasileiro rejeitou pacificamente a independência"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "As principais resistências à independência ocorreram na Bahia, Maranhão e Pará, onde havia forte presença militar portuguesa e ligações comerciais com Lisboa. Essas regiões só foram incorporadas após conflitos armados (1823-1824)."
+        }
+      ]
+    },
+    {
+      "id": "mod2-primeiro-reinado",
+      "titulo": "Primeiro Reinado (1822-1831)",
+      "topicos": [
+        "Constituição de 1824",
+        "Confederação do Equador",
+        "Guerra da Cisplatina",
+        "Crise política e econômica",
+        "Abdicação de D. Pedro I"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Constituição de 1824, primeira constituição brasileira, foi outorgada por D. Pedro I após dissolver a Assembleia Constituinte. Entre suas características, destaca-se:",
+          "alternativas": [
+            "A instituição do voto universal sem restrições",
+            "A criação do Poder Moderador, exclusivo do imperador",
+            "A extinção da escravidão em todo território nacional",
+            "A separação total entre Igreja e Estado",
+            "A descentralização total do poder político"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Constituição de 1824 instituiu o Poder Moderador, exclusivo do imperador, que estava acima dos demais poderes. D. Pedro I podia dissolver a Câmara, nomear senadores vitalícios e controlar o Executivo, concentrando enorme poder."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Confederação do Equador (1824) foi uma rebelião que eclodiu em Pernambuco contra o governo de D. Pedro I. Entre suas causas e características, destaca-se:",
+          "alternativas": [
+            "O apoio incondicional à centralização imperial",
+            "A reação à dissolução da Constituinte e ao autoritarismo imperial",
+            "O desejo de restaurar o domínio português no Nordeste",
+            "A defesa da manutenção da monarquia absolutista",
+            "A ausência de influências republicanas no movimento"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Confederação do Equador reagiu à dissolução da Constituinte, à imposição da Constituição de 1824 e ao autoritarismo de D. Pedro I. Tinha caráter republicano e separatista, sendo duramente reprimida pelo governo imperial."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Guerra da Cisplatina (1825-1828) envolveu o Brasil em conflito com as Províncias Unidas do Rio da Prata pela posse da Província Cisplatina. O resultado desse conflito foi:",
+          "alternativas": [
+            "A vitória brasileira e incorporação definitiva do Uruguai",
+            "A independência do Uruguai como nação separada",
+            "A anexação de toda região ao território argentino",
+            "A divisão da Cisplatina entre Brasil e Argentina",
+            "A manutenção do domínio brasileiro sobre o território"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Guerra da Cisplatina foi desgastante e onerosa para o Brasil. Mediada pela Inglaterra, resultou na independência do Uruguai (1828), separado tanto do Brasil quanto da Argentina. A derrota contribuiu para a crise do Primeiro Reinado."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O Primeiro Reinado enfrentou grave crise política e econômica. Entre os fatores que levaram à abdicação de D. Pedro I em 1831, destaca-se:",
+          "alternativas": [
+            "O total apoio popular e da elite ao governo imperial",
+            "A ausência de conflitos políticos durante o período",
+            "O autoritarismo de D. Pedro I e a questão sucessória portuguesa",
+            "A prosperidade econômica e estabilidade política",
+            "O desinteresse do imperador pela política brasileira"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "D. Pedro I enfrentou oposição crescente devido ao seu autoritarismo, à derrota na Cisplatina, aos gastos excessivos e ao envolvimento na sucessão portuguesa. Pressionado, abdicou em favor de seu filho Pedro de Alcântara (7 de abril de 1831)."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Noite das Garrafadas (março de 1831) foi um confronto violento entre brasileiros e portugueses no Rio de Janeiro. Esse episódio:",
+          "alternativas": [
+            "Fortaleceu o governo de D. Pedro I",
+            "Não teve relação com a crise política do período",
+            "Evidenciou a tensão entre brasileiros e portugueses, precipitando a abdicação",
+            "Resultou em apoio popular massivo ao imperador",
+            "Foi um evento isolado sem consequências políticas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A Noite das Garrafadas expôs o antilusitanismo crescente e a impopularidade de D. Pedro I, associado aos interesses portugueses. O episódio evidenciou a profunda crise política, contribuindo para a abdicação poucos dias depois."
+        }
+      ]
+    },
+    {
+      "id": "mod3-regencias",
+      "titulo": "Período Regencial (1831-1840)",
+      "topicos": [
+        "Regências Trinas e Una",
+        "Revoltas regenciais",
+        "Cabanagem, Sabinada, Balaiada",
+        "Revolução Farroupilha",
+        "Golpe da Maioridade"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O Período Regencial (1831-1840) foi marcado por instabilidade política e diversas revoltas provinciais. Sobre esse período, é correto afirmar que:",
+          "alternativas": [
+            "Foi um período de total estabilidade e paz social",
+            "As regências governaram até D. Pedro II atingir a maioridade legal",
+            "Não houve nenhuma reforma política durante as regências",
+            "A centralização política foi intensificada no período",
+            "As províncias conquistaram total autonomia política"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Como D. Pedro II tinha apenas 5 anos quando da abdicação, foram instituídas regências para governar até ele completar 18 anos. O período foi marcado por conflitos entre centralistas e descentralistas e por diversas revoltas provinciais."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Cabanagem (1835-1840), revolta popular ocorrida no Pará, foi uma das mais radicais do período regencial. Entre suas características, destaca-se:",
+          "alternativas": [
+            "A liderança exclusiva da elite agrária paraense",
+            "A ausência de participação popular no movimento",
+            "A intensa participação de população pobre, indígena e mestiça",
+            "O caráter conservador e pró-monarquia do movimento",
+            "A vitória definitiva dos rebeldes e independência do Pará"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A Cabanagem teve forte participação popular (cabanos: população pobre, indígenas, mestiços). Os revoltosos chegaram a tomar o poder em Belém, mas foram duramente reprimidos. Estima-se que morreram cerca de 30 mil pessoas, 20% da população do Pará."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Revolução Farroupilha (1835-1845), a mais longa revolta regencial, ocorreu no Rio Grande do Sul. Entre suas causas, destaca-se:",
+          "alternativas": [
+            "O excesso de apoio do governo central aos estancieiros gaúchos",
+            "A insatisfação com a política tributária e a concorrência do charque platino",
+            "O desejo de restaurar D. Pedro I no trono brasileiro",
+            "A oposição à abolição da escravidão no Rio Grande do Sul",
+            "A ausência total de sentimento republicano no movimento"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Farroupilha foi motivada pelos altos impostos sobre o charque gaúcho e pela concorrência do charque platino (uruguaio e argentino), que entrava com taxas menores. Os revoltosos proclamaram a República Rio-Grandense (1836) e, depois, a República Juliana em SC."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Sabinada (1837-1838), revolta ocorrida na Bahia, proclamou uma república provisória até a maioridade de D. Pedro II. Sobre esse movimento, é correto afirmar que:",
+          "alternativas": [
+            "Teve longa duração, estendendo-se por mais de 10 anos",
+            "Propunha a separação definitiva da Bahia do Brasil",
+            "Foi liderado por camadas médias urbanas de Salvador",
+            "Não sofreu repressão por parte do governo regencial",
+            "Resultou na independência permanente da Bahia"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A Sabinada foi liderada por camadas médias urbanas (profissionais liberais, militares), liderados pelo médico Sabino Vieira. Propunha uma república provisória até a maioridade de D. Pedro II. Foi violentamente reprimida em 1838."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O Golpe da Maioridade (1840) antecipou a coroação de D. Pedro II, então com 14 anos. Essa manobra política tinha como objetivo:",
+          "alternativas": [
+            "Prolongar indefinidamente o período regencial",
+            "Restaurar o poder de D. Pedro I no Brasil",
+            "Estabilizar o país e conter as revoltas provinciais",
+            "Proclamar a república no Brasil",
+            "Aumentar a autonomia das províncias"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O Golpe da Maioridade foi articulado pelo Partido Liberal para encerrar o conturbado período regencial. Acreditava-se que a figura do imperador traria estabilidade e legitimidade para conter as revoltas provinciais e unificar o país."
+        }
+      ]
+    },
+    {
+      "id": "mod4-segundo-reinado",
+      "titulo": "Segundo Reinado (1840-1889)",
+      "topicos": [
+        "Consolidação monárquica",
+        "Parlamentarismo às avessas",
+        "Economia cafeeira",
+        "Guerra do Paraguai",
+        "Modernização e imigração"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O Segundo Reinado caracterizou-se pela estabilidade política e pelo sistema do \"Parlamentarismo às avessas\". Sobre esse sistema, é correto afirmar que:",
+          "alternativas": [
+            "O Parlamento escolhia livremente o imperador",
+            "O imperador, através do Poder Moderador, escolhia o gabinete ministerial",
+            "Havia total separação entre os poderes sem interferências",
+            "O povo elegia diretamente o Primeiro-Ministro",
+            "O sistema era idêntico ao parlamentarismo europeu"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "No \"Parlamentarismo às avessas\", o imperador, usando o Poder Moderador, nomeava o presidente do Conselho de Ministros, que organizava o gabinete. O imperador também podia dissolver a Câmara, invertendo a lógica do parlamentarismo clássico."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A economia cafeeira expandiu-se durante o Segundo Reinado, tornando-se a base econômica do Império. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "O café substituiu completamente o açúcar desde o início do século XIX",
+            "A produção cafeeira concentrou-se no Vale do Paraíba e depois no Oeste Paulista",
+            "A economia cafeeira não utilizou mão de obra escravizada",
+            "O café não tinha importância no mercado internacional",
+            "A produção cafeeira era destinada exclusivamente ao mercado interno"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O café inicialmente expandiu-se no Vale do Paraíba (RJ e SP) com trabalho escravo. Depois avançou para o Oeste Paulista com terras mais férteis, onde predominou o trabalho de imigrantes. O café tornou-se o principal produto de exportação brasileiro."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Guerra do Paraguai (1864-1870) foi o maior conflito armado da América do Sul. Entre suas consequências para o Brasil, destaca-se:",
+          "alternativas": [
+            "O fortalecimento absoluto da monarquia brasileira",
+            "A abolição imediata da escravidão no Brasil",
+            "O fortalecimento do Exército e aumento do debate abolicionista",
+            "A independência das províncias do Sul",
+            "O enfraquecimento total das Forças Armadas brasileiras"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A Guerra do Paraguai fortaleceu o Exército brasileiro, que passou a ter maior protagonismo político. Soldados negros que lutaram voltaram questionando a escravidão. O conflito também expôs fragilidades do Império e acelerou o movimento abolicionista."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A imigração europeia intensificou-se durante o Segundo Reinado. Entre os fatores que estimularam esse processo, destaca-se:",
+          "alternativas": [
+            "A abolição precoce da escravidão no Brasil",
+            "A necessidade de mão de obra, especialmente nas fazendas de café",
+            "A proibição legal de utilizar trabalhadores brasileiros",
+            "A ausência total de trabalhadores no território brasileiro",
+            "O desejo de diminuir a população brasileira"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A imigração foi estimulada pela necessidade de substituir a mão de obra escravizada, especialmente após o fim do tráfico (1850). Italianos, alemães, portugueses e espanhóis vieram principalmente para as fazendas de café e para projetos de colonização no Sul."
+        },
+        {
+          "id": "q5",
+          "enunciado": "Durante o Segundo Reinado, o Brasil passou por processo de modernização. Entre as mudanças ocorridas, destaca-se:",
+          "alternativas": [
+            "A construção de ferrovias, telégrafo e iluminação a gás",
+            "A manutenção total do sistema colonial sem alterações",
+            "A proibição de qualquer tipo de industrialização",
+            "O isolamento completo do Brasil em relação ao exterior",
+            "A rejeição de todas as inovações tecnológicas europeias"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "O Segundo Reinado foi marcado por modernizações: construção de ferrovias (Barão de Mauá), telégrafo, iluminação a gás, bancos, início da industrialização. Essas mudanças, porém, conviviam com estruturas arcaicas como escravidão e latifúndio."
+        }
+      ]
+    },
+    {
+      "id": "mod5-abolicionismo-republica",
+      "titulo": "Abolicionismo e Proclamação da República",
+      "topicos": [
+        "Movimento abolicionista",
+        "Leis emancipacionistas",
+        "Lei Áurea (1888)",
+        "Questão Militar e Religiosa",
+        "Proclamação da República (1889)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O movimento abolicionista ganhou força na segunda metade do século XIX. Entre as leis emancipacionistas anteriores à abolição total, destaca-se:",
+          "alternativas": [
+            "Lei Áurea (1888), que libertou todos os escravizados imediatamente",
+            "Lei do Ventre Livre (1871), que libertava filhos de escravizadas",
+            "Lei que proibia a entrada de portugueses no Brasil",
+            "Lei que abolia a monarquia e instaurava a república",
+            "Lei que concedia terras aos ex-escravizados"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Lei do Ventre Livre (1871) declarava livres os filhos de mulheres escravizadas nascidos após a lei. A Lei dos Sexagenários (1885) libertava escravizados com mais de 60 anos. Eram leis graduais que retardavam a abolição completa."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Lei Áurea, assinada pela Princesa Isabel em 13 de maio de 1888, aboliu a escravidão no Brasil. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "A abolição foi acompanhada de políticas de integração dos ex-escravizados",
+            "Houve distribuição de terras para todos os libertos",
+            "A abolição foi concedida sem indenização aos proprietários e sem assistência aos libertos",
+            "Os ex-escravizados receberam pensão vitalícia do governo",
+            "A abolição resultou imediatamente na igualdade racial plena"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A abolição foi feita sem indenização aos proprietários e, principalmente, sem nenhuma política de integração dos ex-escravizados (terras, educação, trabalho). Isso perpetuou a desigualdade e marginalização da população negra na sociedade brasileira."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Questão Militar contribuiu para a crise do Império. Esse conflito envolvia:",
+          "alternativas": [
+            "O total apoio dos militares à monarquia imperial",
+            "A proibição de militares manifestarem-se publicamente, gerando insatisfação",
+            "A concessão de privilégios excessivos aos oficiais militares",
+            "A ausência de militares em postos de comando no Império",
+            "O desejo dos militares de restaurar D. Pedro I no trono"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Questão Militar surgiu quando oficiais militares, punidos por manifestarem-se publicamente sobre questões políticas, sentiram-se desrespeitados pelo governo imperial. Fortalecidos após a Guerra do Paraguai, tornaram-se críticos da monarquia e abraçaram ideias republicanas."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Questão Religiosa também contribuiu para o desgaste do Império. Esse conflito envolveu:",
+          "alternativas": [
+            "A total separação entre Igreja e Estado no Império",
+            "O conflito entre bispos católicos e o governo sobre maçons",
+            "A proibição total do catolicismo no território brasileiro",
+            "O apoio irrestrito da Igreja à escravidão",
+            "A imposição do protestantismo como religião oficial"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Questão Religiosa (1872-1875) opôs bispos católicos ao governo imperial. Os bispos, seguindo ordens papais, puniram irmandades que aceitavam maçons. O governo, usando o padroado (controle sobre a Igreja), prendeu os bispos, gerando conflito e afastando a Igreja da monarquia."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Proclamação da República em 15 de novembro de 1889 foi liderada pelo Marechal Deodoro da Fonseca. Sobre esse evento, é correto afirmar que:",
+          "alternativas": [
+            "Foi resultado de amplo movimento popular de massas",
+            "Contou com intensa participação da população na decisão",
+            "Foi um movimento militar com participação limitada da população",
+            "D. Pedro II resistiu militarmente e houve guerra civil",
+            "A República foi proclamada por plebiscito popular"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A Proclamação da República foi um movimento militar, apoiado por setores republicanos da elite (fazendeiros de café, profissionais urbanos). A população não participou ativamente - como disse Aristides Lobo, \"o povo assistiu bestializado\" ao evento."
+        }
+      ]
+    }
+  ]
+}

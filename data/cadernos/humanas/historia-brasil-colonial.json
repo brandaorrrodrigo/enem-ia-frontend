@@ -8,7 +8,7 @@
   "icone": "Landmark",
   "cor": "from-amber-600 to-orange-600",
   "tempoEstimado": "10 horas",
-  "fpRecompensa": 500,
+  "fpRecompensa": 0,
   "tags": ["história", "brasil colonial", "colonização", "ENEM"],
   "modulos": [
     {

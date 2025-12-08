@@ -1,0 +1,282 @@
+{
+  "id": "biologia-microbiologia",
+  "titulo": "Microbiologia",
+  "descricao": "Bacterias, virus, fungos e imunologia",
+  "icone": "🦠",
+  "cor": "from-purple-500 to-indigo-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Bacterias",
+      "resumo": "Bacterias sao organismos procariontes unicelulares. Podem ser beneficas (flora intestinal, producao de antibioticos) ou patogenicas (causam doencas). Reproduzem-se por fissao binaria.",
+      "topicos": [
+        "Estrutura: parede celular, membrana, citoplasma, nucleoide",
+        "Formas: cocos, bacilos, espirilos, vibrioes",
+        "Reproducao: fissao binaria (assexuada)",
+        "Metabolismo: aerobias e anaerobias",
+        "Resistencia: formacao de esporos"
+      ],
+      "exemplos": [
+        "Escherichia coli: bacilo da flora intestinal",
+        "Streptococcus: cocos em cadeia (faringite)",
+        "Lactobacillus: producao de iogurte",
+        "Clostridium tetani: esporoformador (tetano)",
+        "Mycobacterium tuberculosis: causador da tuberculose"
+      ],
+      "dicas": [
+        "Procariontes: sem nucleo organizado, DNA circular",
+        "Fissao binaria: reproducao asexuada rapida",
+        "Antibioticos: matam ou inibem bacterias (nao virus)",
+        "Resistencia bacteriana: mutacoes e selecao natural",
+        "Esporos: formas de resistencia a condicoes adversas"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Por que antibioticos sao eficazes contra bacterias mas nao contra virus?",
+          "alternativas": [
+            "Virus sao maiores que bacterias",
+            "Bacterias tem parede celular e virus nao",
+            "Virus sao resistentes a todos os medicamentos",
+            "Antibioticos matam qualquer microrganismo",
+            "Virus nao causam doencas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Antibioticos atuam em estruturas bacterianas (parede celular, ribossomos). Virus nao tem essas estruturas - sao acelulares e usam a maquinaria da celula hospedeira."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Qual a principal forma de reproducao das bacterias?",
+          "alternativas": [
+            "Mitose",
+            "Meiose",
+            "Fissao binaria",
+            "Gemulacao",
+            "Reproducao sexuada"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Bacterias reproduzem-se principalmente por fissao binaria, uma reproducao assexuada onde a celula duplica seu DNA e se divide em duas celulas identicas."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Virus",
+      "resumo": "Virus sao parasitas intracelulares obrigatorios, acelulares, formados por material genetico (DNA ou RNA) envolto por capside proteico. So se reproduzem dentro de celulas hospedeiras.",
+      "topicos": [
+        "Estrutura: capside, material genetico (DNA ou RNA)",
+        "Ciclo litico: destruicao da celula hospedeira",
+        "Ciclo lisogenico: integracao ao DNA hospedeiro",
+        "Retrovirus: RNA -> DNA (transcriptase reversa)",
+        "Doencas virais: gripe, COVID-19, AIDS, dengue"
+      ],
+      "exemplos": [
+        "Influenza: virus da gripe (RNA)",
+        "SARS-CoV-2: COVID-19 (RNA)",
+        "HIV: retrovirus causador da AIDS",
+        "Bacteriofago: virus que infecta bacterias",
+        "HPV: virus do papiloma humano (cancer)"
+      ],
+      "dicas": [
+        "Virus: acelulares, parasitas obrigatorios",
+        "So se reproduzem dentro de celulas vivas",
+        "Antivirais: inibem replicacao (nao 'matam' virus)",
+        "Vacinas: previnem infeccoes virais",
+        "Retrovirus: transcriptase reversa (RNA -> DNA)"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "O que diferencia um retrovirus (como o HIV) de outros virus?",
+          "alternativas": [
+            "Possui DNA dupla fita",
+            "Nao possui capside",
+            "Possui RNA e transcriptase reversa",
+            "So infecta bacterias",
+            "Nao causa doencas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Retrovirus possuem RNA como material genetico e a enzima transcriptase reversa, que converte RNA em DNA, permitindo integracao ao genoma do hospedeiro."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Por que virus sao considerados parasitas intracelulares obrigatorios?",
+          "alternativas": [
+            "Podem viver fora das celulas",
+            "So se reproduzem dentro de celulas hospedeiras",
+            "Sempre matam a celula hospedeira",
+            "Sao maiores que celulas",
+            "Nao possuem material genetico"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Virus nao possuem maquinaria celular propria (ribossomos, organelas). Dependem completamente da celula hospedeira para se reproduzir, sendo parasitas obrigatorios."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Fungos",
+      "resumo": "Fungos sao organismos eucariontes, uni ou pluricelulares, heterotrofs. Podem ser decompositores, parasitas ou mutualistas. Reproducao por esporos. Inclui leveduras, bolores e cogumelos.",
+      "topicos": [
+        "Estrutura: parede de quitina, hifas, micelo",
+        "Reproducao: esporos (assexuada) ou sexuada",
+        "Nutricao: heterotrofos por absorcao",
+        "Tipos: leveduras, bolores, cogumelos",
+        "Importancia: decomposicao, fermentacao, antibioticos"
+      ],
+      "exemplos": [
+        "Saccharomyces: levedura (fermentacao de pao e cerveja)",
+        "Penicillium: producao de penicilina (antibiotico)",
+        "Agaricus: cogumelo comestivel (champignon)",
+        "Candida: causa candidíase (fungo oportunista)",
+        "Liquens: simbiose de fungo + alga"
+      ],
+      "dicas": [
+        "Fungos: eucariontes, parede de quitina",
+        "Heterotrofos: decompositores ou parasitas",
+        "Hifas: filamentos que formam o corpo do fungo",
+        "Esporos: reproducao e dispersao",
+        "Micorrizas: simbiose fungo-raiz (benefica para plantas)"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Qual a importancia ecologica dos fungos decompositores?",
+          "alternativas": [
+            "Produzem oxigenio pela fotossintese",
+            "Reciclam nutrientes degradando materia organica",
+            "Fixam nitrogenio atmosferico",
+            "Produzem glicose para outros organismos",
+            "Controlam pragas agricolas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Fungos decompositores degradam materia organica morta, reciclando nutrientes (C, N, P) de volta ao solo, essenciais para o ciclo da materia nos ecossistemas."
+        },
+        {
+          "id": "q6",
+          "enunciado": "O antibiotico penicilina e produzido por qual organismo?",
+          "alternativas": [
+            "Bacteria",
+            "Virus",
+            "Fungo",
+            "Planta",
+            "Alga"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A penicilina e produzida pelo fungo Penicillium notatum, descoberta por Alexander Fleming em 1928. Foi o primeiro antibiotico amplamente usado."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Sistema Imunologico",
+      "resumo": "O sistema imunologico defende o organismo contra patogenos. Inclui imunidade inata (inespecifica, rapida) e imunidade adaptativa (especifica, memoria imunologica).",
+      "topicos": [
+        "Imunidade inata: pele, mucosas, fagocitos, inflamacao",
+        "Imunidade adaptativa: linfocitos B e T",
+        "Anticorpos: produzidos por linfocitos B",
+        "Memoria imunologica: resposta mais rapida",
+        "Vacinas: imunizacao ativa"
+      ],
+      "exemplos": [
+        "Pele: barreira fisica contra invasores",
+        "Fagocitos: neutrofilos e macrofagos englobam patogenos",
+        "Linfocito B: produz anticorpos especificos",
+        "Linfocito T: ataca celulas infectadas (imunidade celular)",
+        "Vacina: contem antigeno atenuado/inativado"
+      ],
+      "dicas": [
+        "Imunidade inata: 1a linha (pele, fagocitos)",
+        "Imunidade adaptativa: 2a linha (linfocitos, anticorpos)",
+        "Anticorpos: proteinas em formato Y, ligam a antigenos",
+        "Memoria: celulas de memoria permitem resposta rapida",
+        "Vacina: prevencao; Soro: tratamento (anticorpos prontos)"
+      ],
+      "questoes": [
+        {
+          "id": "q7",
+          "enunciado": "Qual a principal diferenca entre vacina e soro?",
+          "alternativas": [
+            "Vacina trata, soro previne",
+            "Vacina previne (imunizacao ativa), soro trata (imunizacao passiva)",
+            "Ambos contem anticorpos prontos",
+            "Ambos estimulam producao de anticorpos",
+            "Nao ha diferenca"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Vacina contem antigenos que estimulam o corpo a produzir anticorpos (prevencao ativa). Soro contem anticorpos prontos para tratamento imediato (imunizacao passiva)."
+        },
+        {
+          "id": "q8",
+          "enunciado": "Qual celula do sistema imune e responsavel por PRODUZIR anticorpos?",
+          "alternativas": [
+            "Linfocito T",
+            "Linfocito B",
+            "Neutrofilo",
+            "Hemacia",
+            "Plaqueta"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Linfocitos B, quando ativados, se diferenciam em plasmocitos que produzem anticorpos especificos contra antigenos. Sao fundamentais para a imunidade humoral."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Vacinas e Saude Publica",
+      "resumo": "Vacinas sao a principal ferramenta de prevencao de doencas infecciosas. Estimulam o sistema imune a desenvolver memoria imunologica, protegendo contra futuras infeccoes. Sao essenciais para saude publica.",
+      "topicos": [
+        "Tipos de vacinas: atenuadas, inativadas, subunidades",
+        "Memoria imunologica: resposta mais rapida e forte",
+        "Imunidade de rebanho: protecao coletiva",
+        "Calendario vacinal: doses e refors",
+        "Erradicacao de doencas: variola"
+      ],
+      "exemplos": [
+        "Vacina BCG: tuberculose (bacterias atenuadas)",
+        "Vacina triplice viral: sarampo, caxumba, rubeola",
+        "Vacina COVID-19: mRNA, vetor viral, inativada",
+        "Variola: unica doenca humana erradicada por vacinacao",
+        "Imunidade de rebanho: protege nao vacinados"
+      ],
+      "dicas": [
+        "Vacina atenuada: patogeno vivo enfraquecido",
+        "Vacina inativada: patogeno morto",
+        "Memoria: segunda exposicao gera resposta rapida",
+        "Imunidade de rebanho: requer alta cobertura vacinal",
+        "Eventos adversos: raros, beneficios superam riscos"
+      ],
+      "questoes": [
+        {
+          "id": "q9",
+          "enunciado": "O que e imunidade de rebanho (ou coletiva)?",
+          "alternativas": [
+            "Imunidade que dura para sempre",
+            "Protecao de individuos nao vacinados quando maioria esta imunizada",
+            "Imunidade natural sem vacinas",
+            "Imunidade contra todos os patogenos",
+            "Tratamento com antibioticos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Quando grande parte da populacao esta imunizada, a transmissao do patogeno e dificultada, protegendo indiretamente individuos nao vacinados (bebes, imunocomprometidos)."
+        },
+        {
+          "id": "q10",
+          "enunciado": "Qual foi a primeira doenca humana erradicada globalmente gracas a vacinacao?",
+          "alternativas": [
+            "Poliomielite",
+            "Sarampo",
+            "Variola",
+            "Rubeola",
+            "Tuberculose"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A variola foi declarada erradicada pela OMS em 1980, apos campanha global de vacinacao. E a unica doenca humana completamente erradicada ate hoje."
+        }
+      ]
+    }
+  ]
+}

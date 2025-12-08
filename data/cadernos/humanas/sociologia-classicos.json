@@ -1,0 +1,207 @@
+{
+  "id": "sociologia-classicos",
+  "titulo": "Classicos da Sociologia",
+  "descricao": "Os pensadores fundadores: Durkheim, Weber e Marx",
+  "icone": "📚",
+  "cor": "from-violet-500 to-purple-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Surgimento da Sociologia",
+      "resumo": "A sociologia surge no contexto das revolucoes industriais e politicas, buscando compreender cientificamente as transformacoes sociais.",
+      "topicos": [
+        "Contexto historico: Revolucao Industrial e Francesa",
+        "Auguste Comte e o positivismo",
+        "A sociologia como ciencia da sociedade",
+        "Ordem e progresso",
+        "Transformacoes sociais modernas"
+      ],
+      "exemplos": [
+        "Revolucao Industrial: urbanizacao, proletariado, novas relacoes de trabalho",
+        "Comte: 'Ordem e Progresso' (lema da bandeira brasileira)",
+        "Sociologia para entender e controlar as mudancas sociais"
+      ],
+      "dicas": [
+        "Sociologia nasce no seculo XIX para entender a modernidade",
+        "Comte: fundador do positivismo sociologico",
+        "ENEM relaciona surgimento da sociologia com contexto historico"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O surgimento da sociologia como ciencia esta diretamente relacionado com:",
+          "alternativas": [
+            "As transformacoes sociais provocadas pela Revolucao Industrial e Francesa",
+            "A necessidade de justificar o poder dos reis absolutos",
+            "O retorno as formas de organizacao social medieval",
+            "A ausencia de mudancas sociais significativas",
+            "A predominancia da agricultura sobre a industria"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "A sociologia surge no seculo XIX como resposta intelectual as profundas transformacoes trazidas pela Revolucao Industrial (urbanizacao, proletariado) e Francesa (democracia, direitos), buscando compreender cientificamente a sociedade.",
+          "dificuldade": "facil",
+          "tags": ["surgimento-sociologia", "comte", "contexto-historico"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Emile Durkheim: Solidariedade e Fato Social",
+      "resumo": "Durkheim estabelece a sociologia como ciencia autonoma, focando nos fatos sociais, solidariedade e coesao social.",
+      "topicos": [
+        "Fato social: coercao, exterioridade, generalidade",
+        "Solidariedade mecanica x organica",
+        "Consciencia coletiva",
+        "Anomia e divisao do trabalho",
+        "O suicidio como fenomeno social"
+      ],
+      "exemplos": [
+        "Fato social: lingua, leis, costumes - externos e coercitivos",
+        "Sociedades tradicionais: solidariedade mecanica (semelhanca)",
+        "Sociedades modernas: solidariedade organica (interdependencia)"
+      ],
+      "dicas": [
+        "Durkheim: trata fatos sociais como coisas",
+        "Anomia: ausencia de normas claras",
+        "Ate o suicidio tem causas sociais, nao apenas individuais"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Segundo Durkheim, um fato social caracteriza-se por:",
+          "alternativas": [
+            "Ser exclusivamente individual e psicologico",
+            "Ter exterioridade, coercao e generalidade em relacao aos individuos",
+            "Nao exercer nenhuma pressao sobre os individuos",
+            "Ser determinado biologicamente",
+            "Existir apenas na consciencia individual"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Para Durkheim, fatos sociais sao maneiras de agir, pensar e sentir exteriores ao individuo, dotadas de poder coercitivo e com existencia propria independente das manifestacoes individuais.",
+          "dificuldade": "facil",
+          "tags": ["durkheim", "fato-social", "coercao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Max Weber: Acao Social e Racionalidade",
+      "resumo": "Weber analisa a acao social, tipos de dominacao e o processo de racionalizacao da sociedade moderna.",
+      "topicos": [
+        "Acao social e seus tipos",
+        "Tipos de dominacao: tradicional, carismatica, legal-racional",
+        "Etica protestante e capitalismo",
+        "Racionalizacao e desencantamento do mundo",
+        "Compreensao (Verstehen) sociologica"
+      ],
+      "exemplos": [
+        "Acao afetiva: movida por emocoes (paixao)",
+        "Dominacao carismatica: lider religioso ou revolucionario",
+        "Calvinos: trabalho como vocacao divina favoreceu capitalismo"
+      ],
+      "dicas": [
+        "Weber: compreender o sentido da acao social",
+        "Tipos ideais: modelos analiticos, nao descricoes exatas",
+        "ENEM explora relacao protestantismo-capitalismo"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Para Max Weber, a dominacao legal-racional caracteristica da modernidade baseia-se em:",
+          "alternativas": [
+            "Tradicoes e costumes ancestrais",
+            "Caracteristicas pessoais excepcionais do lider",
+            "Regras, leis e procedimentos impessoais",
+            "Poder militar e violencia fisica",
+            "Revelacoes divinas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A dominacao legal-racional, tipica da modernidade, fundamenta-se em regras e leis impessoais, aplicadas por uma burocracia profissional, diferindo da dominacao tradicional (costume) e carismatica (qualidades pessoais).",
+          "dificuldade": "media",
+          "tags": ["weber", "dominacao", "racionalizacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Karl Marx: Luta de Classes e Capitalismo",
+      "resumo": "Marx analisa a sociedade capitalista atraves das relacoes de producao, classes sociais e contradicoes economicas.",
+      "topicos": [
+        "Materialismo historico",
+        "Infraestrutura e superestrutura",
+        "Luta de classes",
+        "Mais-valia e exploracao",
+        "Alienacao do trabalho"
+      ],
+      "exemplos": [
+        "Infraestrutura economica determina superestrutura (ideias, politica)",
+        "Burguesia x proletariado: conflito central do capitalismo",
+        "Mais-valia: diferenca entre valor produzido e salario recebido"
+      ],
+      "dicas": [
+        "Marx: historia como luta entre classes",
+        "Alienacao: trabalhador nao se reconhece no produto",
+        "ENEM relaciona Marx com desigualdade e trabalho"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "O conceito marxista de mais-valia refere-se a:",
+          "alternativas": [
+            "O salario justo recebido pelo trabalhador",
+            "A diferenca entre o valor produzido pelo trabalho e o salario pago ao trabalhador",
+            "O lucro etico das empresas",
+            "A igualdade entre capital e trabalho",
+            "O valor de uso das mercadorias"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A mais-valia e o valor excedente apropriado pelo capitalista, correspondendo a diferenca entre o valor total produzido pelo trabalho do operario e o salario que ele recebe, sendo a fonte do lucro capitalista.",
+          "dificuldade": "facil",
+          "tags": ["marx", "mais-valia", "exploracao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Comparacao entre os Classicos",
+      "resumo": "Contrastes e complementaridades entre as perspectivas de Durkheim, Weber e Marx sobre a sociedade moderna.",
+      "topicos": [
+        "Durkheim: coesao e consenso",
+        "Weber: acao e sentido",
+        "Marx: conflito e classes",
+        "Diferentes metodos sociologicos",
+        "Visoes sobre modernidade"
+      ],
+      "exemplos": [
+        "Durkheim: harmonia social e integracao",
+        "Weber: compreensao interpretativa",
+        "Marx: transformacao revolucionaria"
+      ],
+      "dicas": [
+        "Durkheim enfatiza ordem, Weber racionalidade, Marx conflito",
+        "Cada um tem metodo e foco diferentes",
+        "ENEM pede identificacao das teorias em situacoes"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Enquanto Durkheim enfatiza a coesao e solidariedade social, Marx enfatiza:",
+          "alternativas": [
+            "A harmonia perfeita entre as classes",
+            "O conflito e a luta de classes como motor da historia",
+            "A ausencia de contradicoes sociais",
+            "A importancia dos valores compartilhados",
+            "A cooperacao natural entre capital e trabalho"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Enquanto Durkheim foca na coesao e integracao social, Marx ve a sociedade marcada fundamentalmente pelo conflito entre classes antagônicas (burguesia e proletariado), sendo a luta de classes o motor da historia.",
+          "dificuldade": "facil",
+          "tags": ["comparacao-classicos", "durkheim-marx", "conflito"]
+        }
+      ]
+    }
+  ]
+}

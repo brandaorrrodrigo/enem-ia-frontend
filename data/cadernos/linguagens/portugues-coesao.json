@@ -1,0 +1,223 @@
+{
+  "id": "portugues-coesao",
+  "titulo": "Coesão e Coerência",
+  "descricao": "Domine os mecanismos que garantem unidade e conexão textual",
+  "icone": "🔗",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Conectivos e Relações Lógicas",
+      "resumo": "Conjunções e preposições que estabelecem relações entre ideias no texto.",
+      "topicos": [
+        "Conectivos de adição: e, também, além disso, ademais",
+        "Conectivos de oposição: mas, porém, contudo, todavia, entretanto",
+        "Conectivos de causa: porque, pois, visto que, uma vez que",
+        "Conectivos de consequência: portanto, logo, assim, por isso",
+        "Conectivos de condição: se, caso, desde que, a menos que",
+        "Conectivos de tempo: quando, enquanto, logo que, assim que",
+        "Conectivos de comparação: como, assim como, tal qual",
+        "Conectivos de conclusão: portanto, logo, enfim, em suma"
+      ],
+      "exemplos": [
+        "Adição: 'Estudou muito. Além disso, fez todos os exercícios.'",
+        "Oposição: 'Choveu muito, porém o evento não foi cancelado.'",
+        "Causa: 'Passou no concurso porque se dedicou.'",
+        "Consequência: 'Estudou muito, portanto passou na prova.'",
+        "Condição: 'Se estudar, será aprovado.'",
+        "Conclusão: 'O candidato é qualificado. Logo, merece a vaga.'"
+      ],
+      "dicas": [
+        "Identifique a relação lógica entre as orações",
+        "Cuidado: 'mas' e 'porém' não começam período",
+        "'Pois' causal vem após o verbo; conclusivo, antes",
+        "Uso inadequado de conectivo quebra a coesão",
+        "Conectivo errado muda completamente o sentido"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Complete: 'Choveu o dia todo, _____ o jogo foi mantido.'\n\nQual conectivo estabelece relação de oposição adequada?",
+          "alternativas": [
+            "portanto",
+            "porque",
+            "quando",
+            "entretanto",
+            "logo"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "'Entretanto' estabelece oposição entre chuva (que normalmente cancelaria) e manutenção do jogo, relação adversativa adequada ao contexto."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Referenciação Anafórica e Catafórica",
+      "resumo": "Mecanismos que retomam (anáfora) ou antecipam (catáfora) elementos no texto.",
+      "topicos": [
+        "Anáfora: retoma elemento já mencionado",
+        "Catáfora: antecipa elemento que será mencionado",
+        "Pronomes como recursos de referenciação",
+        "Sinônimos e hiperônimos como anáforas",
+        "Expressões nominais referenciais",
+        "Elipse (omissão de termo recuperável)"
+      ],
+      "exemplos": [
+        "Anáfora pronominal: 'João chegou. Ele estava cansado.' (ele = João)",
+        "Anáfora lexical: 'Comprei um carro. O veículo é econômico.' (veículo = carro)",
+        "Catáfora: 'Era isto que eu queria: paz e sossego.' (isto antecipa paz e sossego)",
+        "Elipse: 'Maria estuda muito. Ø Será aprovada.' (sujeito oculto = Maria)",
+        "Hiperônimo: 'Vi um poodle. O cachorro era branco.' (cachorro retoma poodle)"
+      ],
+      "dicas": [
+        "Anáfora evita repetição desnecessária",
+        "Identifique o referente de cada pronome",
+        "Catáfora é menos comum que anáfora",
+        "Sinônimos e hiperônimos enriquecem o texto",
+        "Ambiguidade pronominal quebra a coesão"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "'O professor e o aluno discutiram. Ele estava nervoso.'\n\nO que compromete a coesão desse texto?",
+          "alternativas": [
+            "Falta de conectivo entre as frases",
+            "Ambiguidade do pronome 'Ele'",
+            "Uso inadequado do verbo 'discutiram'",
+            "Ausência de pontuação adequada",
+            "Falta de coerência temporal"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O pronome 'Ele' é ambíguo: pode referir-se tanto ao professor quanto ao aluno, comprometendo a clareza e coesão referencial."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Substituição e Paráfrase",
+      "resumo": "Substituição de termos por sinônimos, pronomes ou expressões equivalentes para evitar repetição.",
+      "topicos": [
+        "Substituição lexical (sinônimos)",
+        "Substituição gramatical (pronomes, numerais)",
+        "Hiperônimos (termo geral) e hipônimos (termo específico)",
+        "Paráfrase: reformulação com outras palavras",
+        "Nominalização: transformar verbo em substantivo"
+      ],
+      "exemplos": [
+        "Original: 'O livro é interessante. O livro foi bem escrito.' → 'O livro é interessante. Ele foi bem escrito.'",
+        "Sinonímia: 'carro' → 'veículo' → 'automóvel'",
+        "Hiperônimo: 'rosa' → 'flor' (flor é termo mais geral)",
+        "Nominalização: 'destruir' → 'destruição' / 'crescer' → 'crescimento'",
+        "Paráfrase: 'Ele é inteligente' → 'Ele possui grande capacidade intelectual'"
+      ],
+      "dicas": [
+        "Varie o vocabulário para evitar repetição",
+        "Use pronomes para retomar substantivos",
+        "Atenção: sinônimo deve caber no contexto",
+        "Não substitua termos técnicos específicos",
+        "Paráfrase mantém sentido, muda forma"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Qual alternativa apresenta substituição adequada para 'cachorro' em contexto zoológico formal?",
+          "alternativas": [
+            "Bichinho",
+            "Canino",
+            "Totó",
+            "Animal de estimação",
+            "Doguinho"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "'Canino' é termo técnico adequado ao registro formal, mantendo precisão semântica em contexto zoológico/científico."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Elipse e Zeugma",
+      "resumo": "Omissão de termos recuperáveis pelo contexto: elipse (qualquer termo) e zeugma (termo já mencionado).",
+      "topicos": [
+        "Elipse: omissão de termo subentendido",
+        "Zeugma: omissão de termo já expresso",
+        "Economia linguística e dinamismo",
+        "Recuperação contextual do termo omitido",
+        "Diferença entre elipse e zeugma"
+      ],
+      "exemplos": [
+        "Elipse de sujeito: 'Chegamos cedo.' (nós - sujeito oculto)",
+        "Elipse de verbo: 'Ele gosta de café; eu, de chá.' (eu gosto de chá)",
+        "Zeugma: 'Pedro comprou livros; Maria, revistas.' (Maria comprou revistas)",
+        "Zeugma: 'Na sala, quadros; no quarto, espelhos.' (havia/há)",
+        "Elipse do 'que': 'É melhor fazer do que falar.' (do que = que)"
+      ],
+      "dicas": [
+        "Elipse: termo nunca foi mencionado, mas está implícito",
+        "Zeugma: termo já apareceu e é omitido na repetição",
+        "Recursos que evitam repetição desnecessária",
+        "O termo omitido deve ser facilmente recuperável",
+        "Ambos tornam o texto mais dinâmico e conciso"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Em 'João comprou rosas; Maria, cravos.', qual figura de linguagem ocorre?",
+          "alternativas": [
+            "Elipse de sujeito",
+            "Zeugma do verbo 'comprou'",
+            "Anáfora do substantivo 'flores'",
+            "Catáfora de 'Maria'",
+            "Pleonasmo de objeto direto"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Zeugma: o verbo 'comprou' foi mencionado na primeira oração e omitido na segunda (Maria comprou cravos), evitando repetição."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Coerência Textual",
+      "resumo": "Harmonia lógica e semântica entre as ideias do texto, garantindo sentido global.",
+      "topicos": [
+        "Coerência semântica: relação lógica entre ideias",
+        "Coerência sintática: estrutura gramatical adequada",
+        "Coerência estilística: uniformidade de registro",
+        "Coerência pragmática: adequação ao contexto",
+        "Não contradição e progressão temática",
+        "Diferença entre coesão (forma) e coerência (sentido)"
+      ],
+      "exemplos": [
+        "Incoerência: 'Está fazendo sol. Leve o guarda-chuva porque não vai chover.' (contraditório)",
+        "Incoerência temporal: 'Ontem, eu vou ao cinema.' (pretérito + futuro)",
+        "Coerência: 'Está chovendo. Por isso, leve o guarda-chuva.'",
+        "Incoerência pragmática: texto formal com gírias inadequadas",
+        "Falta de progressão: repetir mesma ideia sem avanço"
+      ],
+      "dicas": [
+        "Coesão é sobre conectores; coerência, sobre sentido",
+        "Texto pode ter coesão sem coerência",
+        "Evite contradições entre ideias",
+        "Mantenha uniformidade de registro (formal/informal)",
+        "Progressão: cada parágrafo deve agregar informação nova"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Analise: 'O brasileiro é corrupto. O Brasil é um país maravilhoso habitado por pessoas honestas.'\n\nQual problema de coerência ocorre?",
+          "alternativas": [
+            "Falta de conectivos entre as frases",
+            "Contradição entre as afirmações",
+            "Uso inadequado de pronomes",
+            "Problema de concordância verbal",
+            "Ausência de progressão temática"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Há incoerência semântica: contradição entre afirmar que brasileiro é corrupto e, em seguida, dizer que é habitado por pessoas honestas."
+        }
+      ]
+    }
+  ]
+}

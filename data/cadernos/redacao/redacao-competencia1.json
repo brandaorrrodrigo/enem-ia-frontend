@@ -1,0 +1,332 @@
+{
+  "id": "redacao-competencia1",
+  "titulo": "Competência 1: Domínio da Norma Padrão",
+  "descricao": "Demonstrar domínio da modalidade escrita formal da língua portuguesa",
+  "icone": "✍️",
+  "cor": "from-pink-500 to-rose-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "3h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Erros Gramaticais Mais Comuns",
+      "resumo": "Concordância verbal e nominal, regência verbal e nominal são os pilares da gramática normativa. Dominar esses conceitos é fundamental para evitar os erros mais frequentes nas redações do ENEM.",
+      "topicos": [
+        "Concordância verbal",
+        "Concordância nominal",
+        "Regência verbal",
+        "Regência nominal",
+        "Colocação pronominal"
+      ],
+      "exemplos": [
+        "❌ Incorreto: Houveram muitos protestos na cidade.\n✅ Correto: Houve muitos protestos na cidade.\n(O verbo 'haver' no sentido de 'existir' é impessoal)",
+        "❌ Incorreto: Fazem dois anos que ele partiu.\n✅ Correto: Faz dois anos que ele partiu.\n(O verbo 'fazer' indicando tempo é impessoal)",
+        "❌ Incorreto: Os alunos assistiram o filme.\n✅ Correto: Os alunos assistiram ao filme.\n(Assistir no sentido de 'ver' exige preposição 'a')",
+        "❌ Incorreto: A maioria dos brasileiros votaram.\n✅ Correto: A maioria dos brasileiros votou.\n(Concordância com o núcleo 'maioria')",
+        "❌ Incorreto: Me disseram que haveria prova.\n✅ Correto: Disseram-me que haveria prova.\n(Próclise inadequada no início da frase)"
+      ],
+      "dicas": [
+        "Revise sempre a concordância verbal, especialmente com verbos impessoais",
+        "Atenção aos verbos transitivos indiretos e suas preposições",
+        "Evite começar frases com pronomes oblíquos átonos",
+        "Leia atentamente a proposta para identificar o sujeito das orações",
+        "Pratique com frases do cotidiano transformando-as em norma culta"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c1",
+          "enunciado": "Identifique a frase que está de acordo com a norma padrão:",
+          "alternativas": [
+            "Haviam muitas pessoas na manifestação popular.",
+            "Havia muitas pessoas na manifestação popular.",
+            "Houveram muitas pessoas na manifestação popular.",
+            "Haviam muita pessoa na manifestação popular."
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O verbo 'haver' no sentido de 'existir' é impessoal e fica sempre no singular: 'Havia muitas pessoas'."
+        },
+        {
+          "id": "q2-c1",
+          "enunciado": "Qual alternativa apresenta regência verbal correta?",
+          "alternativas": [
+            "Os cidadãos assistiram o debate presidencial.",
+            "Os cidadãos assistiram ao debate presidencial.",
+            "Os cidadãos assistiram no debate presidencial.",
+            "Os cidadãos assistiram pelo debate presidencial."
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O verbo 'assistir' no sentido de 'ver/presenciar' é transitivo indireto e exige a preposição 'a': assistir ao debate."
+        },
+        {
+          "id": "q3-c1",
+          "enunciado": "Assinale a opção com concordância nominal adequada:",
+          "alternativas": [
+            "É necessário a intervenção estatal.",
+            "É necessário intervenção estatal.",
+            "É necessária a intervenção estatal.",
+            "São necessário as intervenções estatais."
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Quando o sujeito vem determinado por artigo, o adjetivo deve concordar: 'É necessária a intervenção'."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Pontuação e Acentuação",
+      "resumo": "A pontuação adequada garante clareza e coesão ao texto. A acentuação correta demonstra domínio ortográfico. Ambos são critérios essenciais da Competência 1.",
+      "topicos": [
+        "Vírgula: usos obrigatórios e proibidos",
+        "Ponto e vírgula",
+        "Dois pontos",
+        "Acentuação gráfica",
+        "Regras do novo acordo ortográfico"
+      ],
+      "exemplos": [
+        "❌ Incorreto: O governo, deve investir em educação.\n✅ Correto: O governo deve investir em educação.\n(Não se separa sujeito do verbo com vírgula)",
+        "❌ Incorreto: A educação pública precisa de: investimentos, valorização e fiscalização.\n✅ Correto: A educação pública precisa de investimentos, valorização e fiscalização.\n(Não se usa dois pontos após preposição)",
+        "✅ Correto: Na sociedade contemporânea, a tecnologia é essencial.\n(Vírgula após adjunto adverbial deslocado)",
+        "✅ Correto: A desigualdade social, que afeta milhões, precisa ser combatida.\n(Vírgulas isolando oração explicativa)",
+        "❌ Incorreto: Ele tem (ou teve) razão.\n✅ Correto: Ele tem (ou teve) razão.\n(Acordo ortográfico: hífen não é mais obrigatório)"
+      ],
+      "dicas": [
+        "Nunca separe sujeito do verbo com vírgula",
+        "Use vírgula para isolar adjuntos adverbiais deslocados",
+        "Orações explicativas ficam entre vírgulas; restritivas, não",
+        "Revise as regras de acentuação do novo acordo ortográfico",
+        "Releia o texto em voz alta para identificar pausas naturais"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c2",
+          "enunciado": "Qual frase está pontuada corretamente?",
+          "alternativas": [
+            "O Estado brasileiro, deve garantir direitos fundamentais.",
+            "O Estado brasileiro deve, garantir direitos fundamentais.",
+            "O Estado brasileiro deve garantir, direitos fundamentais.",
+            "O Estado brasileiro deve garantir direitos fundamentais."
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Não se deve separar sujeito do verbo, verbo do complemento ou elementos essenciais da oração com vírgula."
+        },
+        {
+          "id": "q2-c2",
+          "enunciado": "Identifique a alternativa com pontuação adequada:",
+          "alternativas": [
+            "No Brasil a desigualdade social é alarmante.",
+            "No Brasil, a desigualdade social, é alarmante.",
+            "No Brasil, a desigualdade social é alarmante.",
+            "No Brasil a desigualdade, social é alarmante."
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Adjunto adverbial de lugar deslocado para o início da frase deve ser seguido de vírgula: 'No Brasil, a desigualdade...'."
+        },
+        {
+          "id": "q3-c2",
+          "enunciado": "Qual palavra está corretamente acentuada segundo o novo acordo ortográfico?",
+          "alternativas": [
+            "idéia",
+            "vôo",
+            "herói",
+            "assembléia"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Segundo o novo acordo, 'herói' mantém o acento. As demais perderam: ideia, voo, assembleia."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Ortografia e Crase",
+      "resumo": "Erros ortográficos e o uso inadequado da crase são os desvios mais penalizados na Competência 1. É fundamental dominar as regras para evitar perda de pontos.",
+      "topicos": [
+        "Ortografia: grafias problemáticas",
+        "Homônimos e parônimos",
+        "Regras de uso da crase",
+        "Casos proibidos de crase",
+        "Crase facultativa"
+      ],
+      "exemplos": [
+        "❌ Incorreto: A sociedade precisa ter concientização.\n✅ Correto: A sociedade precisa ter conscientização.\n(Grafia correta: consciência, conscientização)",
+        "❌ Incorreto: O governo deve intervir afim de resolver o problema.\n✅ Correto: O governo deve intervir a fim de resolver o problema.\n('A fim de' = para; 'afim' = semelhante)",
+        "✅ Correto: O direito à educação deve ser garantido.\n(Crase obrigatória: preposição 'a' + artigo 'a')",
+        "❌ Incorreto: Chegamos à São Paulo ontem.\n✅ Correto: Chegamos a São Paulo ontem.\n(Não há crase antes de topônimos sem artigo)",
+        "✅ Correto: Refiro-me à desigualdade social brasileira.\n(Crase: 'referir-se a' + 'a desigualdade')"
+      ],
+      "dicas": [
+        "Substitua a palavra feminina por masculina para verificar crase",
+        "Não existe crase antes de verbos, pronomes e palavras masculinas",
+        "'A fim de' (finalidade) ≠ 'afim' (semelhante)",
+        "Consulte o dicionário em caso de dúvida ortográfica",
+        "Memorize os principais homônimos: mas/mais, mau/mal, há/a"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c3",
+          "enunciado": "Em qual alternativa o uso da crase está correto?",
+          "alternativas": [
+            "O governo deve garantir à população acesso à saúde.",
+            "O governo deve garantir a população acesso à saúde.",
+            "O governo deve garantir à população acesso a saúde.",
+            "O governo deve garantir a população acesso a saúde."
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Há crase em 'à população' (garantir a + a população) e em 'à saúde' (acesso a + a saúde)."
+        },
+        {
+          "id": "q2-c3",
+          "enunciado": "Assinale a alternativa com grafia correta:",
+          "alternativas": [
+            "É necessário ter concientização sobre o problema.",
+            "É necessário ter conscientização sobre o problema.",
+            "É necessário ter conciêntização sobre o problema.",
+            "É necessário ter consientização sobre o problema."
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A grafia correta é 'conscientização', derivada de 'consciência', com 'sc'."
+        },
+        {
+          "id": "q3-c3",
+          "enunciado": "Identifique o uso correto dos homônimos:",
+          "alternativas": [
+            "A situação não é má, mas poderia ser melhor.",
+            "A situação não é mau, mas poderia ser melhor.",
+            "A situação não é má, mal poderia ser melhor.",
+            "A situação não é mau, mal poderia ser melhor."
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "'Má' (feminino de 'mau') se opõe a 'boa'. 'Mas' é conjunção adversativa (porém)."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Registro Formal vs Informal",
+      "resumo": "A redação do ENEM exige linguagem formal, sem marcas de oralidade, gírias ou expressões coloquiais. Compreender as diferenças entre os registros é essencial.",
+      "topicos": [
+        "Características da linguagem formal",
+        "Marcas de oralidade a evitar",
+        "Gírias e expressões coloquiais",
+        "Vocabulário adequado",
+        "Impessoalidade do texto"
+      ],
+      "exemplos": [
+        "❌ Informal: A gente precisa fazer algo sobre isso.\n✅ Formal: É necessário tomar medidas sobre essa questão.\n(Evite 'a gente'; use formas impessoais ou 'nós')",
+        "❌ Informal: O governo não tá nem aí pra educação.\n✅ Formal: O governo demonstra descaso com a educação.\n(Evite contrações e expressões coloquiais)",
+        "❌ Informal: Tipo assim, a sociedade precisa se ligar nisso.\n✅ Formal: A sociedade precisa conscientizar-se sobre essa problemática.\n(Elimine marcadores conversacionais)",
+        "❌ Informal: Muita gente sofre com esse problema.\n✅ Formal: Muitos indivíduos são afetados por essa questão.\n(Vocabulário mais formal e preciso)",
+        "✅ Formal: Observa-se que a desigualdade persiste no Brasil.\n(Uso de voz passiva sintética para impessoalizar)"
+      ],
+      "dicas": [
+        "Evite pronomes de 1ª pessoa (eu, nós) em excesso",
+        "Não use contrações como 'tá', 'né', 'pra'",
+        "Substitua 'a gente' por 'nós' ou estruturas impessoais",
+        "Elimine gírias, expressões coloquiais e marcadores conversacionais",
+        "Prefira vocabulário técnico e preciso"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c4",
+          "enunciado": "Qual alternativa apresenta registro formal adequado?",
+          "alternativas": [
+            "A gente vê que o problema é sério e precisa de solução.",
+            "É possível observar que o problema é grave e demanda soluções.",
+            "Tipo assim, dá pra ver que o problema é grande demais.",
+            "Todo mundo sabe que esse problema tá ficando pior."
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A alternativa usa linguagem formal, vocabulário adequado e estrutura impessoal."
+        },
+        {
+          "id": "q2-c4",
+          "enunciado": "Identifique a frase que mantém o registro formal:",
+          "alternativas": [
+            "O governo não tá nem aí pra educação brasileira.",
+            "O governo demonstra descaso em relação à educação brasileira.",
+            "O governo tipo ignora a educação no Brasil.",
+            "A gente vê que o governo não liga pra educação."
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A frase usa vocabulário formal, sem contrações ou expressões coloquiais."
+        },
+        {
+          "id": "q3-c4",
+          "enunciado": "Qual reescrita mantém a formalidade exigida?",
+          "alternativas": [
+            "Muita gente sofre com a desigualdade social no Brasil.",
+            "É notório que inúmeros indivíduos são afetados pela desigualdade social no Brasil.",
+            "Um monte de gente passa por problemas de desigualdade.",
+            "A gente sabe que tem muita desigualdade por aí."
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A alternativa utiliza vocabulário formal e estrutura adequada ao registro culto."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Prática e Revisão",
+      "resumo": "A prática constante e a revisão criteriosa são fundamentais para identificar e corrigir desvios da norma padrão. Veja exemplos de redações nota 1000 e analise seus aspectos gramaticais.",
+      "topicos": [
+        "Técnicas de revisão textual",
+        "Checklist de verificação",
+        "Análise de erros comuns",
+        "Exemplos nota 1000",
+        "Exercícios práticos"
+      ],
+      "exemplos": [
+        "✅ Trecho nota 1000: 'Observa-se que a persistência da violência contra a mulher na sociedade brasileira constitui uma grave violação dos direitos humanos.'\n(Formal, impessoal, sem desvios gramaticais)",
+        "✅ Trecho nota 1000: 'Nesse contexto, faz-se necessária a implementação de políticas públicas eficazes que visem à erradicação dessa problemática.'\n(Uso correto de crase, concordância e regência)",
+        "✅ Trecho nota 1000: 'Segundo dados do IPEA, houve aumento significativo nos casos de feminicídio, o que evidencia a urgência de medidas interventivas.'\n(Uso correto do verbo impessoal 'haver')",
+        "✅ Trecho nota 1000: 'É imprescindível, portanto, que o Estado brasileiro, em parceria com a sociedade civil, promova ações educativas.'\n(Pontuação adequada, vocabulário formal)",
+        "✅ Trecho nota 1000: 'Assim, mediante a efetivação das propostas supracitadas, será possível mitigar os impactos da desigualdade social.'\n(Coesão, formalidade e correção gramatical)"
+      ],
+      "dicas": [
+        "Releia seu texto pelo menos duas vezes focando em aspectos diferentes",
+        "1ª leitura: concordância, regência e colocação pronominal",
+        "2ª leitura: pontuação, acentuação e ortografia",
+        "Utilize o checklist: elimine 'a gente', contrações e gírias",
+        "Pratique reescrevendo textos informais em registro formal"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c5",
+          "enunciado": "Analise o trecho: 'Fazem vários anos que a desigualdade social persiste no Brasil, mas o governo não tá fazendo nada pra resolver.' Quantos desvios há?",
+          "alternativas": [
+            "1 desvio (concordância verbal)",
+            "2 desvios (concordância e informalidade)",
+            "3 desvios (concordância, 'tá' e 'pra')",
+            "4 desvios (concordância, 'mas', 'tá' e 'pra')"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Há 3 desvios: 'Fazem' (correto: Faz), 'tá' (correto: está), 'pra' (correto: para)."
+        },
+        {
+          "id": "q2-c5",
+          "enunciado": "Qual correção torna o trecho adequado à norma padrão? 'A população assistiram o descaso do governo.'",
+          "alternativas": [
+            "A população assistiu o descaso do governo.",
+            "A população assistiu ao descaso do governo.",
+            "As populações assistiram o descaso do governo.",
+            "A população assistiram ao descaso do governo."
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Correções necessárias: 'assistiu' (concordância) e 'ao descaso' (regência do verbo assistir)."
+        },
+        {
+          "id": "q3-c5",
+          "enunciado": "Identifique o trecho que poderia estar em uma redação nota 1000:",
+          "alternativas": [
+            "A gente vê que o problema da educação no Brasil é bem sério.",
+            "Tipo assim, todo mundo sabe que a educação brasileira tá mal.",
+            "Observa-se que a educação brasileira enfrenta desafios estruturais significativos.",
+            "É muita falta de investimento na educação, isso é óbvio."
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A alternativa usa linguagem formal, impessoal, vocabulário adequado e estrutura gramatical correta."
+        }
+      ]
+    }
+  ]
+}

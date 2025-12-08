@@ -1,0 +1,327 @@
+{
+  "id": "fisica-eletromagnetismo",
+  "titulo": "Eletromagnetismo",
+  "descricao": "Campo magnetico, inducao eletromagnetica e transformadores",
+  "icone": "🧲",
+  "cor": "from-purple-500 to-pink-500",
+  "nivel": "Avancado",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Campo Magnetico",
+      "resumo": "Campo magnetico e a regiao do espaco onde forcas magneticas atuam sobre materiais ferromagneticos e cargas em movimento. E produzido por imas permanentes ou correntes eletricas. Suas linhas de campo saem do polo norte e entram no polo sul. A intensidade do campo e medida em tesla (T).",
+      "topicos": [
+        "Linhas de campo: saem do polo norte (N) e entram no polo sul (S)",
+        "Campo uniforme: linhas paralelas e igualmente espacadas",
+        "Campo de fio retilineo: circulos concentricos ao redor do fio",
+        "Regra da mao direita: polegar na corrente, dedos no campo"
+      ],
+      "exemplos": [
+        "Bussola alinhando-se com campo magnetico terrestre",
+        "Limalha de ferro revelando linhas de campo ao redor de ima",
+        "Eletroima de guincho funcionando ao passar corrente em bobina"
+      ],
+      "formula": "B (tesla ou weber/m²)",
+      "dicas": [
+        "Polos magneticos sempre existem aos pares (nao ha monopolo)",
+        "Terra funciona como grande ima com polo sul magnetico no norte geografico",
+        "Materiais ferromagneticos (ferro, niquel, cobalto) sao atraidos por imas"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma bussola e colocada proxima a um fio condutor retilineo percorrido por corrente eletrica. O que acontece com a agulha da bussola?",
+          "alternativas": {
+            "A": "Permanece apontando para o norte geografico",
+            "B": "E repelida pelo fio condutor",
+            "C": "Orienta-se de acordo com o campo magnetico criado pela corrente",
+            "D": "Gira continuamente sem parar",
+            "E": "Desmagnetiza-se permanentemente"
+          },
+          "correta": "C",
+          "explicacao": "A corrente eletrica cria um campo magnetico circular ao redor do fio. A bussola, sendo um ima, sofre torque e se alinha com este campo magnetico criado pela corrente."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que nao e possivel separar os polos norte e sul de um ima partindo-o ao meio?",
+          "alternativas": {
+            "A": "Porque o ima perde suas propriedades magneticas ao ser quebrado",
+            "B": "Porque cada pedaco forma um novo ima completo com dois polos",
+            "C": "Porque os polos se invertem ao partir o ima",
+            "D": "Porque e necessario equipamento especial para separar polos",
+            "E": "Porque o magnetismo e uma propriedade superficial apenas"
+          },
+          "correta": "B",
+          "explicacao": "Nao existem monopolos magneticos isolados. Ao partir um ima, cada fragmento forma um novo ima completo com polo norte e polo sul, nao importa quantas vezes seja dividido."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Qual e a relacao entre eletricidade e magnetismo descoberta por Oersted?",
+          "alternativas": {
+            "A": "Campos magneticos geram cargas eletricas",
+            "B": "Corrente eletrica produz campo magnetico ao seu redor",
+            "C": "Imas permanentes geram corrente eletrica",
+            "D": "Magnetismo e eletricidade sao fenomenos independentes",
+            "E": "Campo magnetico so existe em materiais ferromagneticos"
+          },
+          "correta": "B",
+          "explicacao": "Oersted descobriu em 1820 que uma corrente eletrica passando por um condutor cria um campo magnetico ao seu redor, estabelecendo a conexao fundamental entre eletricidade e magnetismo."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Forca Magnetica sobre Corrente",
+      "resumo": "Quando um condutor percorrido por corrente eletrica e colocado em um campo magnetico, surge uma forca magnetica sobre ele. Esta forca e perpendicular tanto ao campo quanto a corrente, sendo a base do funcionamento de motores eletricos. A intensidade da forca depende da corrente, comprimento do condutor e intensidade do campo.",
+      "topicos": [
+        "Forca sobre condutor: F = B × i × L × sen(θ)",
+        "Forca maxima quando condutor perpendicular ao campo (θ = 90°)",
+        "Forca nula quando condutor paralelo ao campo (θ = 0°)",
+        "Regra da mao esquerda: determina direcao da forca"
+      ],
+      "exemplos": [
+        "Motor eletrico convertendo energia eletrica em mecanica",
+        "Alto-falante: corrente na bobina move cone pela forca magnetica",
+        "Balanca de corrente para medir intensidade da corrente eletrica"
+      ],
+      "formula": "F = B × i × L × sen(θ)",
+      "dicas": [
+        "Forca e sempre perpendicular ao plano formado por B e i",
+        "Regra da mao esquerda: polegar = forca, indicador = campo, medio = corrente",
+        "Unidades: B em tesla (T), i em ampere (A), L em metro (m), F em newton (N)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um fio condutor de 50 cm de comprimento, percorrido por corrente de 4 A, esta perpendicular a um campo magnetico de 0,2 T. Qual a intensidade da forca magnetica sobre o fio?",
+          "alternativas": {
+            "A": "0,04 N",
+            "B": "0,1 N",
+            "C": "0,2 N",
+            "D": "0,4 N",
+            "E": "4,0 N"
+          },
+          "correta": "D",
+          "explicacao": "F = B × i × L × sen(90°) = 0,2 × 4 × 0,5 × 1 = 0,4 N. Lembrar de converter 50 cm = 0,5 m."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Como funciona o principio basico de um motor eletrico?",
+          "alternativas": {
+            "A": "Campo magnetico induz corrente que gira o rotor",
+            "B": "Forca magnetica sobre corrente em campo gira a bobina",
+            "C": "Atrito entre imas e bobina produz rotacao",
+            "D": "Aquecimento por efeito Joule expande o rotor",
+            "E": "Repulsao eletrostatica entre cargas gira o eixo"
+          },
+          "correta": "B",
+          "explicacao": "Motor eletrico funciona pela forca magnetica que atua sobre uma bobina percorrida por corrente dentro de um campo magnetico, fazendo-a girar e converter energia eletrica em mecanica."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Um condutor retilineo e colocado paralelo as linhas de campo magnetico. Qual a forca magnetica sobre ele quando percorrido por corrente?",
+          "alternativas": {
+            "A": "Maxima, pois esta alinhado com o campo",
+            "B": "Nula, pois sen(0°) = 0",
+            "C": "Metade da forca maxima",
+            "D": "Depende apenas da intensidade da corrente",
+            "E": "Infinita devido ao alinhamento"
+          },
+          "correta": "B",
+          "explicacao": "Quando o condutor e paralelo ao campo, θ = 0° e F = B × i × L × sen(0°) = 0. A forca magnetica e nula nesta configuracao."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Lei de Faraday",
+      "resumo": "A Lei de Faraday estabelece que uma forca eletromotriz (tensao) e induzida em um circuito quando ha variacao do fluxo magnetico atraves dele. O fluxo magnetico depende da intensidade do campo, da area e do angulo entre eles. Esta lei e fundamental para geradores e transformadores.",
+      "topicos": [
+        "Fluxo magnetico: Φ = B × A × cos(θ)",
+        "Forca eletromotriz induzida: ε = -ΔΦ/Δt",
+        "Sinal negativo: Lei de Lenz (oposicao a variacao)",
+        "Formas de variar fluxo: mudar B, A ou θ"
+      ],
+      "exemplos": [
+        "Gerador de usina hidroeletrica: turbina gira bobina em campo magnetico",
+        "Dinamo de bicicleta gerando luz ao pedalar",
+        "Detector de metais: objetos metalicos alteram fluxo magnetico"
+      ],
+      "formula": "ε = -ΔΦ/Δt e Φ = B × A × cos(θ)",
+      "dicas": [
+        "Fluxo maximo quando campo perpendicular a area (θ = 0°)",
+        "Fluxo nulo quando campo paralelo a area (θ = 90°)",
+        "Quanto mais rapida a variacao de fluxo, maior a fem induzida"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma espira de area 0,5 m² esta em um campo magnetico de 0,4 T perpendicular a ela. Se o campo cair a zero em 0,2 s, qual a fem media induzida?",
+          "alternativas": {
+            "A": "0,1 V",
+            "B": "0,4 V",
+            "C": "1,0 V",
+            "D": "2,0 V",
+            "E": "4,0 V"
+          },
+          "correta": "C",
+          "explicacao": "Φ_inicial = 0,4 × 0,5 = 0,2 Wb. Φ_final = 0. ΔΦ = 0,2 Wb. ε = ΔΦ/Δt = 0,2/0,2 = 1,0 V (em modulo)."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Como um gerador de usina hidroeletrica produz energia eletrica?",
+          "alternativas": {
+            "A": "Aquecendo agua para produzir vapor eletrificado",
+            "B": "Girando bobinas em campo magnetico, variando o fluxo e induzindo fem",
+            "C": "Comprimindo agua para gerar cargas eletricas",
+            "D": "Usando atrito da agua com turbinas para eletrificar",
+            "E": "Separando cargas positivas e negativas da agua"
+          },
+          "correta": "B",
+          "explicacao": "A agua move turbinas que giram bobinas dentro de um campo magnetico. Esta rotacao varia continuamente o fluxo magnetico, induzindo fem alternada pela Lei de Faraday."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Uma espira circular gira em campo magnetico uniforme. Em que posicao a fem induzida e maxima?",
+          "alternativas": {
+            "A": "Quando o plano da espira e perpendicular ao campo",
+            "B": "Quando o plano da espira e paralelo ao campo",
+            "C": "Quando o plano da espira faz 45° com o campo",
+            "D": "A fem e sempre constante durante a rotacao",
+            "E": "Quando a espira para de girar"
+          },
+          "correta": "B",
+          "explicacao": "A fem e maxima quando a taxa de variacao do fluxo e maxima. Isso ocorre quando o plano passa pela posicao paralela ao campo (θ = 90°), onde a variacao de cos(θ) e mais rapida."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Inducao Eletromagnetica",
+      "resumo": "Inducao eletromagnetica e o fenomeno de geracao de corrente eletrica em um condutor pela variacao do fluxo magnetico. A Lei de Lenz determina que a corrente induzida cria um campo magnetico que se opoe a variacao que a originou, conservando energia. E a base de geradores, transformadores e freios magneticos.",
+      "topicos": [
+        "Lei de Lenz: corrente induzida opoe-se a variacao de fluxo",
+        "Corrente induzida so existe enquanto fluxo varia",
+        "Aproximar ima de bobina induz corrente em um sentido",
+        "Afastar ima induz corrente no sentido oposto"
+      ],
+      "exemplos": [
+        "Freio magnetico de caminhoes: correntes parasitas dissipam energia",
+        "Fogao de inducao: campo variavel induz correntes na panela, aquecendo-a",
+        "Carregador wireless: bobina primaria induz corrente na secundaria"
+      ],
+      "formula": "Lei de Lenz: sentido da corrente induzida opoe a variacao",
+      "dicas": [
+        "Aproximar polo norte induz corrente que cria polo norte (repulsao)",
+        "Movimento relativo entre ima e bobina e essencial",
+        "Correntes parasitas (Foucault) causam aquecimento indesejado em nucleos"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um ima e aproximado rapidamente de uma bobina conectada a um galvanometro. O que se observa?",
+          "alternativas": {
+            "A": "Nenhuma corrente, pois nao ha bateria",
+            "B": "Corrente constante enquanto o ima se aproxima",
+            "C": "Corrente que aumenta e depois diminui durante aproximacao",
+            "D": "Corrente so aparece quando o ima para dentro da bobina",
+            "E": "Corrente que destroi o galvanometro"
+          },
+          "correta": "C",
+          "explicacao": "Durante a aproximacao ha variacao de fluxo, induzindo corrente. A corrente e proporcional a velocidade de variacao do fluxo: maior no meio do movimento, menor no inicio e fim."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Como funciona um freio magnetico utilizado em caminhoes?",
+          "alternativas": {
+            "A": "Imas permanentes prendem as rodas mecanicamente",
+            "B": "Correntes induzidas em disco metalico dissipam energia como calor",
+            "C": "Campo magnetico aumenta o atrito dos pneus",
+            "D": "Magnetismo desliga o motor do veiculo",
+            "E": "Imas atraem a estrada fazendo o caminhao parar"
+          },
+          "correta": "B",
+          "explicacao": "Campo magnetico variavel induz correntes parasitas (Foucault) no disco metalico girante. Estas correntes dissipam energia como calor (efeito Joule), freando o veiculo sem contato mecanico."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Segundo a Lei de Lenz, por que a corrente induzida sempre se opoe a variacao que a originou?",
+          "alternativas": {
+            "A": "Para maximizar a energia produzida",
+            "B": "Para conservar energia, impedindo criacao espontanea",
+            "C": "Para proteger o circuito de sobrecargas",
+            "D": "Porque correntes eletricas sempre se repelem",
+            "E": "Devido a resistencia do condutor"
+          },
+          "correta": "B",
+          "explicacao": "Se a corrente induzida favorecesse a variacao, haveria amplificacao continua e criacao espontanea de energia, violando a conservacao. A oposicao garante que energia seja necessaria para manter a variacao."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Transformadores",
+      "resumo": "Transformadores sao dispositivos que alteram a tensao de corrente alternada usando inducao eletromagnetica. Consistem em duas bobinas (primaria e secundaria) enroladas em um nucleo de ferro. A relacao entre tensoes e proporcional ao numero de espiras. Sao essenciais na transmissao de energia eletrica.",
+      "topicos": [
+        "Relacao de espiras: Vs/Vp = Ns/Np",
+        "Transformador ideal: potencia entrada = potencia saida (Pp = Ps)",
+        "Elevador: Ns > Np (aumenta tensao, diminui corrente)",
+        "Abaixador: Ns < Np (diminui tensao, aumenta corrente)"
+      ],
+      "exemplos": [
+        "Transformador de poste reduzindo 13.800 V para 220 V residencial",
+        "Carregador de celular abaixando 220 V para 5 V",
+        "Usinas elevam tensao para 500.000 V na transmissao (reduz perdas)"
+      ],
+      "formula": "Vs/Vp = Ns/Np e Vp×ip = Vs×is (ideal)",
+      "dicas": [
+        "Transformador so funciona com corrente alternada (fluxo variavel)",
+        "Alta tensao na transmissao reduz corrente e perdas por efeito Joule",
+        "Nucleo de ferro canaliza fluxo magnetico entre bobinas"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um transformador tem 100 espiras no primario e 500 espiras no secundario. Aplicando 110 V no primario, qual a tensao no secundario?",
+          "alternativas": {
+            "A": "22 V",
+            "B": "110 V",
+            "C": "220 V",
+            "D": "550 V",
+            "E": "1100 V"
+          },
+          "correta": "D",
+          "explicacao": "Vs/Vp = Ns/Np. Logo Vs = Vp × (Ns/Np) = 110 × (500/100) = 110 × 5 = 550 V. Transformador elevador."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que a energia eletrica e transmitida em alta tensao (centenas de milhares de volts) das usinas ate as cidades?",
+          "alternativas": {
+            "A": "Porque alta tensao e mais segura que baixa tensao",
+            "B": "Para facilitar a instalacao dos cabos",
+            "C": "Porque reduz a corrente, diminuindo perdas por aquecimento nos fios",
+            "D": "Para aumentar a velocidade de transmissao da energia",
+            "E": "Porque os geradores so produzem alta tensao"
+          },
+          "correta": "C",
+          "explicacao": "Para mesma potencia (P = V×i), alta tensao significa baixa corrente. Como perda por aquecimento e P = R×i², reduzir corrente diminui drasticamente perdas nos fios de transmissao."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Um transformador ideal tem potencia de 1000 W no primario (200 V, 5 A). Se o secundario tem 50 V, qual a corrente no secundario?",
+          "alternativas": {
+            "A": "1,25 A",
+            "B": "5 A",
+            "C": "10 A",
+            "D": "20 A",
+            "E": "40 A"
+          },
+          "correta": "D",
+          "explicacao": "Transformador ideal: Pp = Ps. Logo 200 × 5 = 50 × is. Portanto is = 1000/50 = 20 A. Tensao diminui, corrente aumenta na mesma proporcao."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "id": "biologia-zoologia",
+  "titulo": "Zoologia",
+  "descricao": "Classificacao animal, invertebrados e vertebrados",
+  "icone": "🦁",
+  "cor": "from-yellow-500 to-amber-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Classificacao e Caracteristicas Gerais",
+      "resumo": "Os animais sao organismos eucariontes, multicelulares, heterotrofs. Classificam-se em invertebrados (sem coluna vertebral) e vertebrados (com coluna vertebral). Sistema de classificacao: Reino, Filo, Classe, Ordem, Familia, Genero, Especie.",
+      "topicos": [
+        "Caracteristicas dos animais: eucariotos, multicelulares, heterotrofs",
+        "Classificacao taxonomica: Lineu",
+        "Invertebrados x Vertebrados",
+        "Simetria: radial, bilateral, assimetricos",
+        "Numero de folhetos embrionarios: diploblasticos, triploblasticos"
+      ],
+      "exemplos": [
+        "Poriferos: assimetricos (esponjas)",
+        "Cnidarios: simetria radial (aguas-vivas)",
+        "Maioria dos animais: simetria bilateral",
+        "Diploblasticos: 2 folhetos (ectoderma, endoderma)",
+        "Triploblasticos: 3 folhetos (+mesoderma)"
+      ],
+      "dicas": [
+        "Heterotrofs: nao fazem fotossintese",
+        "Invertebrados: 95% das especies animais",
+        "Simetria bilateral: permite cefalizacao",
+        "Folhetos embrionarios: originam tecidos e orgaos",
+        "Nomenclatura: Genero especie (ex: Homo sapiens)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Qual tipo de simetria e encontrado na maioria dos animais, incluindo humanos?",
+          "alternativas": [
+            "Assimetria",
+            "Simetria radial",
+            "Simetria bilateral",
+            "Simetria esferica",
+            "Simetria pentarradial"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A maioria dos animais apresenta simetria bilateral (um plano divide o corpo em metades especulares), o que permite cefalizacao e movimento direcional."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Animais triploblasticos possuem quantos folhetos embrionarios?",
+          "alternativas": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Animais triploblasticos possuem 3 folhetos embrionarios: ectoderma (externo), mesoderma (intermediario) e endoderma (interno). A maioria dos animais e triploblastica."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Invertebrados I: Poriferos e Cnidarios",
+      "resumo": "Poriferos (esponjas) sao os animais mais simples, sem tecidos verdadeiros. Cnidarios (aguas-vivas, corais) tem celulas urticantes (cnidoblastos) e simetria radial.",
+      "topicos": [
+        "Poriferos: sem tecidos, poros, coanocitos",
+        "Filtradores: agua entra por poros, sai por osculo",
+        "Cnidarios: cnidoblastos (celulas urticantes)",
+        "Formas: polipo (fixo) e medusa (livre)",
+        "Digestao extracelular (cavidade gastrovascular)"
+      ],
+      "exemplos": [
+        "Esponjas marinhas: poriferos",
+        "Agua-viva: medusa (cnidario)",
+        "Coral: polipo colonial (cnidario)",
+        "Hidra: polipo de agua doce",
+        "Anemonas: polipos solitarios"
+      ],
+      "dicas": [
+        "Poriferos: unicos sem tecidos verdadeiros",
+        "Coanocitos: celulas flageladas (filtracao)",
+        "Cnidarios: cnidocitos/nematocistos (defesa, captura)",
+        "Polipo: fixo; Medusa: nada livremente",
+        "Cnidarios: diploblasticos (2 folhetos)"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Qual a principal caracteristica dos poriferos (esponjas)?",
+          "alternativas": [
+            "Presenca de exoesqueleto",
+            "Corpo com poros e canais",
+            "Presenca de sistema nervoso",
+            "Simetria bilateral",
+            "Celulas urticantes"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Poriferos tem corpo poroso com sistema de canais. A agua entra pelos poros, e filtrada (coanocitos capturam alimento) e sai pelo osculo."
+        },
+        {
+          "id": "q4",
+          "enunciado": "As celulas urticantes (cnidoblastos) sao caracteristicas de qual grupo animal?",
+          "alternativas": [
+            "Poriferos",
+            "Cnidarios",
+            "Platelmintos",
+            "Anelídeos",
+            "Moluscos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Cnidarios (aguas-vivas, corais, hidras) possuem cnidoblastos (celulas com nematocistos) que liberam substancias urticantes para defesa e captura de presas."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Invertebrados II: Platelmintos, Nematodeos, Anelídeos",
+      "resumo": "Platelmintos sao vermes achatados. Nematodeos sao vermes cilindricos. Anelideos sao vermes segmentados (aneis). Muitos sao parasitas humanos.",
+      "topicos": [
+        "Platelmintos: achatados, sem celoma, tubo digestorio incompleto",
+        "Parasitas: Taenia, Schistosoma",
+        "Nematodeos: cilindricos, tubo digestorio completo",
+        "Parasitas: Ascaris, ancilostomo",
+        "Anelideos: segmentados, celomados (minhoca, sanguessuga)"
+      ],
+      "ejemplos": [
+        "Planaria: platelminto de vida livre",
+        "Taenia solium: solitaria (platelminto parasita)",
+        "Schistosoma: esquistossomose (barriga d'agua)",
+        "Ascaris lumbricoides: lombriga (nematodeo)",
+        "Minhoca: anelideo (importante para solo)"
+      ],
+      "dicas": [
+        "Platelmintos: achatados dorsoventralmente",
+        "Tubo incompleto: so boca (sem anus)",
+        "Nematodeos: pseudoceloma, tubo completo",
+        "Anelideos: celoma verdadeiro, segmentacao",
+        "Minhoca: hermafrodita, fecundacao cruzada"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "A Taenia solium (solitaria) e um platelminto parasita. Qual a principal forma de transmissao ao ser humano?",
+          "alternativas": [
+            "Picada de mosquito",
+            "Ingestao de carne mal cozida contaminada",
+            "Contato com agua contaminada",
+            "Penetracao ativa pela pele",
+            "Inalacao de esporos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A teníase e adquirida pela ingestao de carne suína ou bovina mal cozida contendo cisticercos (larvas da Taenia). Saneamento e coccao adequada previnem."
+        },
+        {
+          "id": "q6",
+          "enunciado": "Qual caracteristica diferencia nematodeos de platelmintos?",
+          "alternativas": [
+            "Presenca de tubo digestorio completo",
+            "Simetria bilateral",
+            "Corpo segmentado",
+            "Hermafroditismo",
+            "Vida livre"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Nematodeos tem tubo digestorio COMPLETO (boca e anus), enquanto platelmintos tem tubo INCOMPLETO (so boca). Nematodeos tambem tem pseudoceloma."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Invertebrados III: Moluscos, Artropodes, Equinodermos",
+      "resumo": "Moluscos tem corpo mole, muitos com concha. Artropodes tem exoesqueleto de quitina e apendices articulados (maior grupo animal). Equinodermos tem simetria radial secundaria.",
+      "topicos": [
+        "Moluscos: corpo mole, pe muscular, concha (maioria)",
+        "Classes: gastrópodes (caracol), bivalves (ostra), cefalopodes (polvo)",
+        "Artropodes: exoesqueleto, apendices articulados, muda",
+        "Classes: insetos, aracnideos, crustaceos, quilopodes",
+        "Equinodermos: simetria radial, endoesqueleto calcario, sistema ambulacral"
+      ],
+      "exemplos": [
+        "Caracol: gastropode (concha unica)",
+        "Ostra: bivalve (2 valvas)",
+        "Polvo: cefalopode (tentaculos, inteligente)",
+        "Insetos: moscas, abelhas, borboletas (6 patas)",
+        "Estrela-do-mar: equinodermo"
+      ],
+      "dicas": [
+        "Moluscos: 2o maior filo animal",
+        "Cefalopodes: mais inteligentes dos invertebrados",
+        "Artropodes: 75% das especies animais",
+        "Insetos: 3 pares de patas, 3 regioes corporais",
+        "Equinodermos: sistema ambulacral (locomocao)"
+      ],
+      "questoes": [
+        {
+          "id": "q7",
+          "enunciado": "Qual o maior grupo de animais em numero de especies?",
+          "alternativas": [
+            "Moluscos",
+            "Artropodes",
+            "Cordados",
+            "Equinodermos",
+            "Anelídeos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Artropodes representam cerca de 75% de todas as especies animais conhecidas. Insetos sao a classe dominante dentro dos artropodes."
+        },
+        {
+          "id": "q8",
+          "enunciado": "Qual caracteristica define os artropodes?",
+          "alternativas": [
+            "Corpo mole e viscoso",
+            "Presenca de concha calcaria",
+            "Exoesqueleto de quitina e apendices articulados",
+            "Simetria radial",
+            "Sistema ambulacral"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Artropodes tem exoesqueleto de quitina (protecao) e apendices articulados (patas, antenas). Fazem muda (ecdise) para crescer."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Vertebrados: Cordados",
+      "resumo": "Cordados sao caracterizados por notocorda, tubo nervoso dorsal e fendas branquiais. Vertebrados tem coluna vertebral. Classes: peixes, anfibios, repteis, aves e mamíferos.",
+      "topicos": [
+        "Caracteristicas dos cordados: notocorda, tubo neural dorsal",
+        "Peixes: aquaticos, respiracao branquial, pecilotermicos",
+        "Anfibios: metamorfose, pele umida, ectotermicos",
+        "Repteis: pele seca com escamas, ovo amniota",
+        "Aves: homeotermicas, penas, voo",
+        "Mamíferos: pelos, glandulas mamarias, homeotermicos"
+      ],
+      "exemplos": [
+        "Peixes osseos: tilapia, sardinha",
+        "Peixes cartilaginosos: tubaroes, raias",
+        "Anfibios: sapos, salamandras (vida dupla)",
+        "Repteis: serpentes, lagartos, crocodilos",
+        "Aves: pomba, aguia, avestruz",
+        "Mamíferos: cao, gato, baleia, humano"
+      ],
+      "dicas": [
+        "Peixes: respiracao branquial, escamas, nadadeiras",
+        "Anfibios: metamorfose (girino -> adulto)",
+        "Repteis: primeiro ovo amniota (conquista do ambiente terrestre)",
+        "Aves: ossos pneumaticos, sacos aereos",
+        "Mamíferos: placenta (maioria), cuidado parental"
+      ],
+      "questoes": [
+        {
+          "id": "q9",
+          "enunciado": "Qual caracteristica permitiu aos repteis conquistarem definitivamente o ambiente terrestre?",
+          "alternativas": [
+            "Respiracao pulmonar",
+            "Pele impermeavel",
+            "Ovo amniota (casca)",
+            "Patas adaptadas",
+            "Todas as anteriores"
+          ],
+          "respostaCorreta": 4,
+          "explicacao": "Repteis tem multiplas adaptacoes: respiracao pulmonar eficiente, pele seca e impermeavel (evita dessecacao) e ovo amniota com casca (protege embriao), permitindo reproducao fora da agua."
+        },
+        {
+          "id": "q10",
+          "enunciado": "Qual a principal caracteristica que define a classe Mammalia?",
+          "alternativas": [
+            "Presenca de pelos e glandulas mamarias",
+            "Respiracao pulmonar",
+            "Reproducao sexuada",
+            "Simetria bilateral",
+            "Presenca de coluna vertebral"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Mamíferos sao definidos pela presenca de pelos (isolamento termico) e glandulas mamarias que produzem leite para alimentar os filhotes. Tambem sao homeotermicos."
+        }
+      ]
+    }
+  ]
+}

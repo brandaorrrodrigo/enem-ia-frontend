@@ -46,6 +46,7 @@ export async function GET(request: NextRequest) {
         id: usuario.id,
         nome: usuario.nome,
         email: usuario.email,
+        avatarUrl: usuario.avatarUrl,
         pontosFP: usuario.pontosFP,
         nivel: usuario.nivel,
         streak: usuario.streakAtual,

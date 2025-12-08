@@ -1,0 +1,282 @@
+{
+  "id": "biologia-biotecnologia",
+  "titulo": "Biotecnologia",
+  "descricao": "Transgenicos, PCR, clonagem e celulas-tronco",
+  "icone": "🧪",
+  "cor": "from-cyan-500 to-blue-500",
+  "nivel": "Avancado",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Organismos Transgenicos (OGMs)",
+      "resumo": "Organismos transgenicos ou OGMs sao organismos que receberam genes de outras especies atraves de engenharia genetica. Tem aplicacoes na agricultura, medicina e industria.",
+      "topicos": [
+        "Definicao: gene de uma especie inserido em outra",
+        "Tecnicas: enzimas de restricao, vetores (plasmídeos)",
+        "Aplicacoes agricolas: soja Bt, milho resistente",
+        "Aplicacoes medicas: insulina, hormonio do crescimento",
+        "Controversias: seguranca, impactos ambientais"
+      ],
+      "exemplos": [
+        "Soja transgenica RR: resistente a herbicida glifosato",
+        "Milho Bt: produz toxina contra insetos (Bacillus thuringiensis)",
+        "Insulina humana: produzida por bacterias E. coli",
+        "Golden rice: arroz com betacaroteno (vitamina A)",
+        "Mosquitos transgenicos: controle da dengue"
+      ],
+      "dicas": [
+        "Transgenico: gene de especie diferente",
+        "Enzimas de restricao: tesouras moleculares (cortam DNA)",
+        "Plasmideo: veiculo para inserir gene em bacteria",
+        "Vantagens: aumento de produtividade, reducao de agrotoxicos",
+        "Desvantagens: resistencia de pragas, perda de biodiversidade"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O que caracteriza um organismo transgenico?",
+          "alternativas": [
+            "Sofreu mutacao natural",
+            "Recebeu gene de outra especie",
+            "Foi clonado",
+            "Foi selecionado artificialmente",
+            "Possui celulas-tronco"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Organismo transgenico e aquele que recebeu gene(s) de outra especie por engenharia genetica. Exemplo: bacteria com gene humano da insulina."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Qual a funcao das enzimas de restricao na producao de transgenicos?",
+          "alternativas": [
+            "Amplificar DNA",
+            "Cortar DNA em locais especificos",
+            "Unir fragmentos de DNA",
+            "Sequenciar o genoma",
+            "Destruir DNA estranho"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Enzimas de restricao (endonucleases) cortam DNA em sequencias especificas, permitindo isolar genes de interesse e inseri-los em vetores (plasmideos)."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "PCR: Reacao em Cadeia da Polimerase",
+      "resumo": "PCR e uma tecnica que amplifica (copia) fragmentos especificos de DNA in vitro. E fundamental em diagnosticos medicos, testes de paternidade, forense e pesquisa.",
+      "topicos": [
+        "Principio: amplificacao exponencial de DNA",
+        "Componentes: DNA molde, primers, Taq polimerase, nucleotideos",
+        "Etapas: desnaturacao (95C), anelamento (55C), extensao (72C)",
+        "Aplicacoes: diagnostico (COVID-19), paternidade, forense",
+        "Vantagens: rapido, sensivel, especifico"
+      ],
+      "exemplos": [
+        "Teste COVID-19: RT-PCR detecta RNA viral",
+        "Teste de paternidade: compara DNA pais-filho",
+        "Forense: identifica suspeitos por DNA",
+        "Pesquisa: clonagem de genes, sequenciamento",
+        "Arqueologia: DNA de fosseis (DNA antigo)"
+      ],
+      "dicas": [
+        "PCR: copia milhoes de vezes um fragmento de DNA",
+        "Taq polimerase: enzima termoestavel (suporta 95C)",
+        "Primers: pequenas sequencias que delimitam a regiao a copiar",
+        "Ciclos: 30-40 ciclos = 2^30 a 2^40 copias",
+        "RT-PCR: primeiro converte RNA em DNA (retrotranscricao)"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Qual a funcao da enzima Taq polimerase na PCR?",
+          "alternativas": [
+            "Cortar o DNA em fragmentos",
+            "Desnaturar o DNA",
+            "Sintetizar novas fitas de DNA",
+            "Unir fragmentos de DNA",
+            "Degradar DNA contaminante"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A Taq polimerase sintetiza novas fitas de DNA a partir dos primers. E termoestavel (resiste a 95C), permitindo ciclos repetidos de desnaturacao e sintese."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Por que a PCR e importante no diagnostico da COVID-19?",
+          "alternativas": [
+            "Clona o virus para estudo",
+            "Amplifica o RNA viral para deteccao",
+            "Produz vacinas",
+            "Mata o virus",
+            "Sequencia o genoma humano"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O RT-PCR converte RNA viral em DNA e depois amplifica milhoes de vezes, permitindo detectar quantidades minimas de virus em amostras de pacientes."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Clonagem",
+      "resumo": "Clonagem e a producao de copias geneticamente identicas de um organismo ou celula. Pode ser reprodutiva (organismo completo) ou terapeutica (celulas/tecidos).",
+      "topicos": [
+        "Clonagem reprodutiva: organismo completo (Dolly)",
+        "Clonagem terapeutica: celulas/tecidos para tratamento",
+        "Tecnica: transferencia nuclear (nucleo em ovulo anucleado)",
+        "Aplicacoes: preservacao de especies, pesquisa, medicina",
+        "Questoes eticas: clonagem humana reprodutiva"
+      ],
+      "exemplos": [
+        "Ovelha Dolly (1996): primeiro mamífero clonado",
+        "Clonagem de animais de estimacao",
+        "Preservacao de especies ameacadas",
+        "Clonagem terapeutica: producao de celulas para transplante",
+        "Reproducao assexuada em plantas: clonagem natural"
+      ],
+      "dicas": [
+        "Clone: geneticamente identico ao doador",
+        "Dolly: nucleo de celula adulta -> ovulo -> embriao",
+        "Clonagem reprodutiva: controversa em humanos",
+        "Clonagem terapeutica: nao gera organismo completo",
+        "Gemeos identicos: clones naturais"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Como foi produzida a ovelha Dolly, primeiro mamífero clonado?",
+          "alternativas": [
+            "Fecundacao in vitro",
+            "Transferencia de nucleo de celula adulta para ovulo",
+            "Fusao de dois embrioes",
+            "Mutacao genetica induzida",
+            "Inseminacao artificial"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O nucleo de uma celula da glandula mamaria adulta foi transferido para um ovulo anucleado. Este ovulo desenvolveu-se em Dolly, geneticamente identica a doadora."
+        },
+        {
+          "id": "q6",
+          "enunciado": "Qual a diferenca entre clonagem reprodutiva e clonagem terapeutica?",
+          "alternativas": [
+            "Reprodutiva gera organismo completo, terapeutica gera celulas/tecidos",
+            "Terapeutica gera organismos, reprodutiva gera celulas",
+            "Nao ha diferenca",
+            "Reprodutiva e ilegal, terapeutica nao",
+            "Terapeutica usa virus, reprodutiva usa bacterias"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Clonagem reprodutiva produz organismo completo (ex: Dolly). Clonagem terapeutica produz apenas celulas/tecidos para tratamento, sem gerar organismo."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Celulas-Tronco",
+      "resumo": "Celulas-tronco sao celulas indiferenciadas capazes de se diferenciar em varios tipos celulares. Tem potencial terapeutico para regeneracao de tecidos e tratamento de doencas.",
+      "topicos": [
+        "Definicao: celulas nao especializadas com capacidade de diferenciacao",
+        "Tipos: embrionarias (totipotentes/pluripotentes) e adultas (multipotentes)",
+        "Aplicacoes: regeneracao de tecidos, tratamento de doencas",
+        "Terapias: Parkinson, lesoes medulares, diabetes",
+        "Questoes eticas: uso de embrioes"
+      ],
+      "exemplos": [
+        "Celulas-tronco embrionarias: qualquer tipo de celula",
+        "Celulas-tronco hematopoeticas: medula ossea (celulas sanguineas)",
+        "Tratamento de leucemia: transplante de medula",
+        "Pesquisas: regeneracao de neuronios, coração",
+        "iPSCs: celulas adultas reprogramadas (pluripotentes induzidas)"
+      ],
+      "dicas": [
+        "Totipotentes: podem formar organismo completo",
+        "Pluripotentes: formam qualquer tecido (nao organismo)",
+        "Multipotentes: formam celulas de um tecido especifico",
+        "Embrionarias: maior potencial, questoes eticas",
+        "Adultas: menor potencial, menos controversas"
+      ],
+      "questoes": [
+        {
+          "id": "q7",
+          "enunciado": "Qual tipo de celula-tronco tem maior potencial de diferenciacao?",
+          "alternativas": [
+            "Celulas-tronco adultas",
+            "Celulas-tronco multipotentes",
+            "Celulas-tronco embrionarias",
+            "Celulas-tronco hematopoeticas",
+            "Todas tem o mesmo potencial"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Celulas-tronco embrionarias sao pluripotentes (podem formar qualquer tipo celular do corpo), tendo maior potencial que as adultas (multipotentes)."
+        },
+        {
+          "id": "q8",
+          "enunciado": "O que sao celulas-tronco pluripotentes induzidas (iPSCs)?",
+          "alternativas": [
+            "Celulas embrionarias naturais",
+            "Celulas adultas reprogramadas para estado pluripotente",
+            "Celulas cancerosas",
+            "Celulas bacterianas modificadas",
+            "Celulas que nao se dividem"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "iPSCs sao celulas adultas (ex: pele) reprogramadas geneticamente para estado pluripotente, podendo se diferenciar em diversos tipos celulares. Evitam questoes eticas dos embrioes."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Outras Tecnicas de Biotecnologia",
+      "resumo": "Alem de transgenicos, PCR e clonagem, existem diversas outras tecnicas biotecnologicas: sequenciamento de DNA, edicao genica (CRISPR), terapia genica, bioinformatica.",
+      "topicos": [
+        "CRISPR-Cas9: edicao precisa de genes",
+        "Sequenciamento de DNA: determinar ordem de bases",
+        "Terapia genica: corrigir genes defeituosos",
+        "Bioinformatica: analise de dados genomicos",
+        "Projeto Genoma Humano: mapeamento completo"
+      ],
+      "exemplos": [
+        "CRISPR: corrige gene da anemia falciforme",
+        "Sequenciamento: identifica mutacoes geneticas",
+        "Terapia genica: trata imunodeficiencias",
+        "Projeto Genoma: mapeou ~25 mil genes humanos",
+        "Farmacogenomica: medicamentos personalizados"
+      ],
+      "dicas": [
+        "CRISPR: tesoura molecular (corta e edita DNA)",
+        "Cas9: enzima que corta DNA guiada por RNA",
+        "Sequenciamento: base para medicina personalizada",
+        "Terapia genica: substitui gene defeituoso por funcional",
+        "Bioetica: importante discutir limites da biotecnologia"
+      ],
+      "questoes": [
+        {
+          "id": "q9",
+          "enunciado": "O que e a tecnologia CRISPR-Cas9?",
+          "alternativas": [
+            "Tecnica de clonagem",
+            "Ferramenta de edicao precisa do genoma",
+            "Metodo de amplificacao de DNA",
+            "Tipo de celula-tronco",
+            "Vacina de DNA"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "CRISPR-Cas9 e uma ferramenta de edicao genomica que permite cortar, remover ou substituir sequencias especificas de DNA com alta precisao, revolucionando a biotecnologia."
+        },
+        {
+          "id": "q10",
+          "enunciado": "Qual foi o principal objetivo do Projeto Genoma Humano?",
+          "alternativas": [
+            "Clonar seres humanos",
+            "Sequenciar e mapear todos os genes humanos",
+            "Criar organismos transgenicos",
+            "Desenvolver vacinas",
+            "Curar todas as doencas geneticas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Projeto Genoma Humano (concluido em 2003) sequenciou todo o DNA humano, identificando cerca de 25 mil genes. Isso abriu caminho para medicina personalizada e compreensao de doencas geneticas."
+        }
+      ]
+    }
+  ]
+}

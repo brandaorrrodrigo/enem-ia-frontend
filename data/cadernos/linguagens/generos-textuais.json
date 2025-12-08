@@ -1,0 +1,575 @@
+{
+  "id": "generos-textuais",
+  "slug": "generos-textuais",
+  "titulo": "Gêneros Textuais",
+  "categoria": "linguagens",
+  "nivel": "intermediario",
+  "descricao": "Estudo dos principais gêneros textuais cobrados no ENEM: estrutura, características, finalidades e contextos de uso. Aprenda a identificar e analisar crônicas, artigos de opinião, reportagens, editoriais, contos e outros gêneros essenciais.",
+  "icone": "BookOpen",
+  "cor": "#10b981",
+  "tempoEstimado": "6 horas",
+  "fpRecompensa": 0,
+  "tags": ["linguagens", "ENEM", "generos-textuais", "interpretacao"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Gêneros Jornalísticos",
+      "resumo": "Notícia, reportagem, editorial, artigo de opinião e suas características estruturais e linguísticas.",
+      "topicos": [
+        {
+          "titulo": "Notícia e Reportagem",
+          "conteudo": "A notícia é um gênero textual jornalístico que tem como objetivo informar o leitor sobre acontecimentos recentes de forma objetiva e imparcial. Sua estrutura segue a lógica da pirâmide invertida: as informações mais importantes aparecem no início (lead), respondendo às perguntas fundamentais: O quê? Quem? Quando? Onde? Como? Por quê? A linguagem é clara, direta e utiliza a variedade padrão da língua.\n\nA reportagem, por sua vez, é uma ampliação da notícia. Enquanto a notícia apresenta os fatos de forma sucinta, a reportagem aprofunda o tema, trazendo diferentes ângulos, entrevistas, dados estatísticos e análises contextualizadas. O repórter investiga as causas e consequências dos acontecimentos, oferecendo ao leitor uma compreensão mais completa do assunto.\n\nAmbos os gêneros utilizam título chamativo, linha fina (subtítulo) e organização em parágrafos curtos para facilitar a leitura. No ENEM, é comum encontrar trechos de reportagens que abordam temas sociais, científicos ou culturais, exigindo que o candidato identifique o tema central, os argumentos apresentados e a função social do texto. A principal diferença entre notícia e reportagem está na profundidade e no tratamento dado ao tema: enquanto a notícia informa, a reportagem investiga e contextualiza."
+        },
+        {
+          "titulo": "Editorial e Artigo de Opinião",
+          "conteudo": "O editorial é um gênero textual opinativo que expressa o posicionamento oficial de um veículo de comunicação sobre determinado assunto. Geralmente não é assinado por um autor específico, pois representa a voz institucional do jornal ou revista. Utiliza linguagem formal, argumentação consistente e busca influenciar a opinião pública sobre temas relevantes da atualidade.\n\nA estrutura do editorial inclui: apresentação do tema, contextualização do problema, desenvolvimento argumentativo com dados e exemplos, e conclusão que reforça o posicionamento defendido. É comum o uso de recursos argumentativos como dados estatísticos, citações de especialistas e exemplos históricos para sustentar a tese.\n\nO artigo de opinião, diferentemente do editorial, é assinado por um autor específico que expressa seu ponto de vista pessoal sobre determinado tema. Embora também seja opinativo, o artigo permite maior liberdade estilística ao autor, que pode utilizar desde linguagem coloquial até ironia e figuras de linguagem para defender suas ideias. A responsabilidade pelas opiniões expressas é individual, não representando necessariamente a posição do veículo.\n\nNo ENEM, questões envolvendo esses gêneros exploram a capacidade do candidato de identificar teses, argumentos, contra-argumentos e recursos persuasivos. É essencial diferenciar fatos de opiniões e reconhecer as estratégias argumentativas utilizadas pelos autores para convencer o leitor."
+        },
+        {
+          "titulo": "Crônica Jornalística",
+          "conteudo": "A crônica é um gênero textual híbrido que transita entre o jornalismo e a literatura. Nascida nas páginas dos jornais, a crônica comenta fatos do cotidiano de forma leve, pessoal e muitas vezes bem-humorada. O cronista observa situações corriqueiras e as transforma em texto reflexivo, usando recursos literários como figuras de linguagem, ironia e subjetividade.\n\nDiferente da notícia, que busca objetividade, a crônica valoriza a subjetividade do autor. O cronista não apenas informa, mas interpreta, critica e poetiza o cotidiano. Luis Fernando Verissimo, Carlos Drummond de Andrade e Rubem Braga são exemplos clássicos de cronistas brasileiros que transformaram fatos simples em literatura.\n\nA crônica pode ter diversos tons: humorística, reflexiva, lírica ou crítica. Sua estrutura é flexível, geralmente narrativa, mas pode incluir diálogos, descrições e divagações. A linguagem é acessível, próxima da oralidade, estabelecendo cumplicidade com o leitor. É comum o uso de primeira pessoa, marcando a presença do autor.\n\nNo ENEM, a crônica aparece frequentemente em questões de interpretação que exploram a crítica social implícita, o humor, a intertextualidade e os recursos estilísticos. O candidato deve identificar a opinião do autor, o tema abordado e as estratégias linguísticas utilizadas para criar efeitos de sentido, como ironia e ambiguidade."
+        },
+        {
+          "titulo": "Resenha Crítica",
+          "conteudo": "A resenha crítica é um gênero textual que apresenta e avalia uma obra (livro, filme, peça teatral, exposição, etc.). Mais do que simplesmente resumir o conteúdo, o resenhista analisa criticamente a produção, destacando pontos fortes e fracos, contextualizando a obra e oferecendo sua opinião fundamentada.\n\nA estrutura típica da resenha inclui: identificação da obra (título, autor, editora, ano), resumo do conteúdo sem revelar o desfecho, análise crítica fundamentada em critérios estéticos e técnicos, e conclusão com recomendação ou não da obra. O resenhista deve equilibrar descrição objetiva com avaliação subjetiva, sempre justificando seus juízos de valor.\n\nDiferente do resumo simples, a resenha exige posicionamento crítico. O autor deve dominar o assunto para tecer comentários pertinentes, estabelecendo relações com outras obras do mesmo gênero ou período. É fundamental que a resenha seja útil ao leitor, ajudando-o a decidir se vale a pena conhecer a obra analisada."
+        }
+      ],
+      "exemplos": [
+        "Notícia: 'Desmatamento na Amazônia bate recorde em 2024' - lead respondendo às 6 perguntas básicas",
+        "Editorial: Jornal defendendo políticas ambientais mais rígidas",
+        "Crônica: Luis Fernando Verissimo comentando hábitos urbanos com humor",
+        "Artigo de opinião: Especialista defendendo reforma educacional"
+      ],
+      "dicas": [
+        "Identifique sempre o objetivo comunicativo do texto: informar, opinar, criticar ou entreter",
+        "Notícias são objetivas; crônicas e artigos são subjetivos",
+        "Editoriais não têm assinatura; artigos de opinião têm autor identificado",
+        "No ENEM, preste atenção aos marcadores linguísticos de opinião: 'acredito', 'é necessário', 'devemos'"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Leia o texto a seguir:\n\n'O Brasil registrou em outubro de 2024 o maior índice de desmatamento da Amazônia para o mês desde o início da série histórica, em 2015, segundo dados do sistema Deter, do Instituto Nacional de Pesquisas Espaciais (Inpe). Foram devastados 1.340 km² de floresta, área equivalente a 188 mil campos de futebol. Especialistas apontam que a redução da fiscalização e o avanço da agropecuária ilegal são as principais causas do problema. O Ministério do Meio Ambiente afirmou que intensificará as operações de combate aos crimes ambientais nos próximos meses.'\n\nConsiderando as características dos gêneros jornalísticos, o texto apresentado classifica-se como:",
+          "alternativas": {
+            "A": "Editorial, pois expressa posicionamento crítico sobre políticas ambientais",
+            "B": "Notícia, pois informa objetivamente um acontecimento recente com dados factuais",
+            "C": "Reportagem, pois apresenta análise aprofundada com múltiplas fontes",
+            "D": "Artigo de opinião, pois um autor específico defende mudanças na legislação",
+            "E": "Crônica, pois aborda tema cotidiano com linguagem literária e subjetiva"
+          },
+          "correta": "B",
+          "explicacao": "O texto é uma notícia porque apresenta informação objetiva sobre um acontecimento recente (desmatamento em outubro de 2024), responde às perguntas básicas do jornalismo (o quê, quando, por quê), utiliza linguagem clara e imparcial, e traz dados factuais (1.340 km²) sem aprofundamento analítico ou posicionamento editorial. Não é reportagem porque não há aprofundamento; não é editorial ou artigo porque não há opinião explícita; e não é crônica porque não tem subjetividade ou literariedade.",
+          "dificuldade": "facil",
+          "tags": ["generos-jornalisticos", "noticia"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Leia o trecho:\n\n'É inadmissível que, em pleno século XXI, o Brasil continue assistindo passivamente à destruição de seu maior patrimônio natural. O desmatamento da Amazônia não é apenas uma questão ambiental, mas uma ameaça à sobrevivência das futuras gerações. Enquanto o governo federal apresenta números e promessas, a realidade mostra recordes consecutivos de devastação. É urgente que o país adote medidas efetivas de fiscalização e punição rigorosa aos criminosos ambientais. A sociedade brasileira precisa cobrar ações concretas, não apenas discursos vazios.'\n\nAs características linguísticas e estruturais do texto indicam tratar-se de:",
+          "alternativas": {
+            "A": "Notícia, pela apresentação objetiva de dados sobre desmatamento",
+            "B": "Reportagem, pela investigação aprofundada das causas do problema",
+            "C": "Editorial, pela defesa de posicionamento institucional sem assinatura individual",
+            "D": "Crônica, pelo tom reflexivo e literário sobre tema cotidiano",
+            "E": "Resenha crítica, pela avaliação de políticas governamentais"
+          },
+          "correta": "C",
+          "explicacao": "O texto é um editorial porque: 1) expressa opinião institucional (não há assinatura individual); 2) utiliza linguagem persuasiva e argumentativa ('É inadmissível', 'É urgente'); 3) apresenta posicionamento crítico sobre tema relevante; 4) busca influenciar a opinião pública; 5) usa recursos retóricos como a contraposição entre promessas e realidade. Não é notícia porque é opinativo; não é reportagem porque não investiga com profundidade; não é crônica porque não tem tom literário ou pessoal; e não é resenha porque não avalia uma obra específica.",
+          "dificuldade": "medio",
+          "tags": ["generos-jornalisticos", "editorial"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Leia o texto:\n\n'Outro dia fui ao supermercado e me deparei com uma cena curiosa: um senhor de uns setenta anos tentava decifrar o código QR do carrinho de compras com seu celular. Virava o aparelho para um lado, para outro, aproximava, afastava, até que desistiu e chamou um funcionário. \"Moço, esse negócio tá quebrado\", disse, apontando para o código. O rapaz, com paciência de mestre zen, pegou o celular, apontou para o código e pronto: destrancou. O senhor ficou olhando como se tivesse presenciado um milagre. Saí de lá pensando em como a tecnologia que nos promete facilidade às vezes constrói abismos geracionais no corredor dos enlatados.'\n\nO texto caracteriza-se como crônica porque:",
+          "alternativas": {
+            "A": "Apresenta dados objetivos sobre o impacto da tecnologia nos idosos",
+            "B": "Defende tese sobre inclusão digital com argumentação estruturada",
+            "C": "Transforma situação cotidiana em reflexão literária e bem-humorada",
+            "D": "Informa sobre novos sistemas de segurança em supermercados",
+            "E": "Analisa criticamente políticas públicas de acessibilidade digital"
+          },
+          "correta": "C",
+          "explicacao": "O texto é uma crônica porque: 1) parte de fato cotidiano trivial (dificuldade com QR code); 2) utiliza narrativa leve e humor ('milagre', 'mestre zen'); 3) apresenta reflexão pessoal sobre tema social (abismo geracional); 4) usa recursos literários (ironia, comparações); 5) tem tom subjetivo e próximo do leitor. Não é texto informativo ou argumentativo formal, mas sim um relato pessoal que transforma o ordinário em literário, característica essencial da crônica.",
+          "dificuldade": "medio",
+          "tags": ["generos-jornalisticos", "cronica"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Compare os dois trechos:\n\nTexto I: 'A reforma tributária foi aprovada na Câmara dos Deputados nesta terça-feira por 382 votos favoráveis e 118 contrários. O texto segue agora para análise do Senado Federal.'\n\nTexto II: 'A reforma tributária aprovada ontem representa um avanço histórico para o país. Durante décadas, especialistas alertaram sobre a complexidade do sistema brasileiro, considerado um dos mais confusos do mundo. A reportagem ouviu economistas, empresários e parlamentares para entender os impactos das mudanças. Segundo o professor João Silva, da USP, \"esta reforma pode aumentar o PIB brasileiro em até 2% nos próximos cinco anos\". Já empresários do setor de serviços demonstram preocupação com possível aumento da carga tributária.'\n\nA principal diferença entre os textos está:",
+          "alternativas": {
+            "A": "No tema abordado, pois tratam de assuntos completamente diferentes",
+            "B": "Na linguagem, pois o Texto I usa norma culta e o Texto II, coloquial",
+            "C": "No grau de objetividade, sendo o Texto I neutro e o Texto II valorativo",
+            "D": "No propósito comunicativo, pois o Texto I é ficional e o Texto II, jornalístico",
+            "E": "Na profundidade, sendo o Texto I uma reportagem e o Texto II uma notícia"
+          },
+          "correta": "E",
+          "explicacao": "O Texto I é uma notícia: apresenta informação básica e objetiva sobre o fato (aprovação da reforma), com dados essenciais (número de votos) e linguagem neutra. O Texto II é uma reportagem: aprofunda o tema, contextualiza historicamente ('Durante décadas'), traz múltiplas fontes (professor, empresários), apresenta análises e diferentes perspectivas sobre o impacto da reforma. A diferença fundamental está na profundidade do tratamento jornalístico: notícia informa o fato; reportagem investiga e contextualiza.",
+          "dificuldade": "medio",
+          "tags": ["generos-jornalisticos", "noticia", "reportagem"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Leia o fragmento:\n\n'\"Matrix Resurrections\" chega aos cinemas vinte anos após a trilogia original e encontra dificuldade em justificar sua existência. Lana Wachowski retorna sozinha à direção e propõe uma metalinguagem que, embora inteligente, não compensa a falta de novidade narrativa. O filme funciona melhor como comentário nostálgico sobre a franquia do que como obra autônoma. Keanu Reeves e Carrie-Anne Moss reprisam seus papéis com competência, mas o roteiro insiste em revisitar cenas icônicas sem acrescentar camadas significativas. Para os fãs incondicionais, vale como reencontro afetivo; para o público em geral, é um espetáculo visualmente correto, mas emocionalmente distante. Nota: 6,5/10.'\n\nO texto apresenta características predominantes de:",
+          "alternativas": {
+            "A": "Notícia, pela informação objetiva sobre lançamento cinematográfico",
+            "B": "Reportagem, pela investigação do processo criativo do filme",
+            "C": "Resenha crítica, pela análise avaliativa da obra com opinião fundamentada",
+            "D": "Editorial, pela defesa de posicionamento sobre a indústria cinematográfica",
+            "E": "Artigo de opinião, pela crítica social ao sistema de produção de sequências"
+          },
+          "correta": "C",
+          "explicacao": "O texto é uma resenha crítica porque: 1) identifica a obra analisada ('Matrix Resurrections'); 2) apresenta avaliação fundamentada com critérios estéticos (narrativa, direção, roteiro, atuações); 3) compara com obras anteriores (trilogia original); 4) oferece opinião pessoal justificada; 5) conclui com recomendação diferenciada para públicos distintos e atribuição de nota. Não é notícia porque não apenas informa o lançamento; não é reportagem porque não investiga o processo; não é editorial ou artigo porque foca na análise da obra específica, não em questões mais amplas.",
+          "dificuldade": "facil",
+          "tags": ["generos-jornalisticos", "resenha"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Gêneros Literários Narrativos",
+      "resumo": "Conto, romance, novela, fábula e suas características estruturais e estilísticas.",
+      "topicos": [
+        {
+          "titulo": "Conto: Narrativa Breve",
+          "conteudo": "O conto é uma narrativa curta que se caracteriza pela concisão e intensidade. Diferente do romance, que se desenvolve amplamente no tempo e no espaço, o conto concentra-se em um único conflito, poucos personagens e tempo reduzido. Cada elemento do conto contribui para um efeito único e impactante sobre o leitor, sem desvios ou digressões.\n\nSegundo o escritor Edgar Allan Poe, o conto deve ser lido de uma só vez, produzindo um efeito singular na mente do leitor. Por isso, não há espaço para descrições longas ou desenvolvimento psicológico profundo dos personagens. Tudo converge para o clímax e o desfecho, que frequentemente surpreende o leitor com uma revelação inesperada.\n\nA estrutura do conto segue o esquema clássico: apresentação (situação inicial e personagens), desenvolvimento (conflito), clímax (momento de maior tensão) e desfecho (resolução). Machado de Assis, Clarice Lispector e Lygia Fagundes Telles são mestres do conto brasileiro, cada um com estilo próprio: Machado com ironia e análise psicológica, Clarice com introspecção e epifania, Lygia com suspense e crítica social.\n\nNo ENEM, os contos aparecem para análise de elementos narrativos (foco narrativo, tempo, espaço, personagens), recursos estilísticos e efeitos de sentido. É fundamental identificar o conflito central, o tipo de narrador e a relação entre forma e conteúdo na construção do significado global do texto."
+        },
+        {
+          "titulo": "Romance e Novela",
+          "conteudo": "O romance é uma narrativa longa e complexa que se desenvolve no tempo e no espaço, permitindo aprofundamento psicológico dos personagens, múltiplos conflitos e tramas paralelas. Surgido na modernidade, o romance tornou-se a forma narrativa por excelência, capaz de retratar a complexidade da vida humana e social.\n\nEnquanto o conto busca a economia narrativa, o romance explora amplamente suas possibilidades. Personagens são desenvolvidos com profundidade, revelando transformações ao longo da narrativa. O tempo pode ser cronológico ou psicológico, linear ou fragmentado. O espaço social, geográfico e psicológico ganha importância na construção do sentido. São exemplos: 'Dom Casmurro' (Machado de Assis), 'Grande Sertão: Veredas' (Guimarães Rosa) e 'Vidas Secas' (Graciliano Ramos).\n\nA novela ocupa posição intermediária entre conto e romance. É mais extensa que o conto, mas mais concisa que o romance. Geralmente, a novela concentra-se em um conflito principal com poucos desvios, mantendo unidade de ação. 'A Metamorfose' de Kafka e 'O Alienista' de Machado de Assis são exemplos clássicos de novelas.\n\nNo contexto do ENEM, trechos de romances brasileiros são frequentemente utilizados para análise estilística, identificação de escolas literárias, compreensão do contexto histórico-social e interpretação de recursos narrativos como foco narrativo não confiável, ironia e intertextualidade."
+        },
+        {
+          "titulo": "Fábula e Apólogo",
+          "conteudo": "A fábula é uma narrativa curta, geralmente protagonizada por animais personificados, que transmite uma lição moral explícita ao final. Originária da tradição oral, a fábula tem função didática e utiliza personagens-tipo (a raposa astuta, a formiga trabalhadora, a cigarra despreocupada) para ilustrar comportamentos humanos e valores sociais.\n\nEsopo, fabulista grego da Antiguidade, criou narrativas como 'A Cigarra e a Formiga' e 'A Raposa e as Uvas', que atravessaram séculos e continuam sendo referências. No Brasil, Monteiro Lobato recriou fábulas tradicionais e criou novas, inserindo elementos da cultura brasileira. A moral da história - ensinamento explícito ao final - é característica definidora do gênero.\n\nO apólogo é semelhante à fábula, mas utiliza objetos inanimados, plantas ou seres abstratos como personagens. O famoso 'Apólogo' de Machado de Assis, que narra o diálogo entre a agulha e a linha, exemplifica o gênero. Ambos, fábula e apólogo, utilizam a alegoria: os personagens e situações representam conceitos abstratos ou tipos humanos.\n\nNo ENEM, esses gêneros aparecem em questões sobre linguagem figurada, alegoria, função social da literatura e análise crítica da moral proposta. É importante perceber que, embora pareçam textos simples, fábulas e apólogos frequentemente carregam críticas sociais veladas e podem ser interpretados de múltiplas perspectivas, nem sempre concordando com a moral explícita."
+        },
+        {
+          "titulo": "Elementos da Narrativa",
+          "conteudo": "Toda narrativa, independente do gênero específico, estrutura-se sobre elementos fundamentais: enredo, personagens, tempo, espaço e narrador. O enredo é a sequência de acontecimentos que compõem a história, geralmente organizado em situação inicial, conflito, clímax e desfecho. No entanto, narrativas modernas frequentemente rompem com essa linearidade, apresentando flashbacks, analepses ou estrutura fragmentada.\n\nOs personagens podem ser classificados quanto à relevância (protagonista, antagonista, secundários) e quanto à complexidade (planos ou tipos versus redondos ou esféricos). Personagens planos mantêm as mesmas características ao longo da narrativa; personagens redondos apresentam transformações e contradições, aproximando-se da complexidade humana real.\n\nO tempo na narrativa pode ser cronológico (sequência linear dos acontecimentos) ou psicológico (fluxo de consciência, memória, associações mentais). Autores modernistas como Virginia Woolf e James Joyce exploraram intensamente o tempo psicológico. O espaço não é apenas cenário, mas elemento significativo que influencia personagens e ações, podendo ser físico, social ou psicológico.\n\nO narrador é a voz que conta a história e pode ser classificado quanto à pessoa (1ª ou 3ª) e quanto ao conhecimento (onisciente, observador, protagonista, testemunha). O foco narrativo determina o que o leitor conhece e como interpreta os eventos. Machado de Assis, por exemplo, utiliza narradores não confiáveis que manipulam informações e criam ambiguidades interpretativas. No ENEM, identificar corretamente o tipo de narrador é essencial para compreender o ponto de vista do texto e possíveis ironias ou críticas implícitas."
+        }
+      ],
+      "exemplos": [
+        "Conto: 'A Cartomante' de Machado de Assis - narrativa breve com desfecho surpresa",
+        "Romance: Trecho de 'Memórias Póstumas de Brás Cubas' - narrador defunto, ironia",
+        "Fábula: 'A Cigarra e a Formiga' - animais personificados, moral explícita",
+        "Novela: 'O Alienista' de Machado de Assis - extensão intermediária, foco único"
+      ],
+      "dicas": [
+        "Conto = brevidade e intensidade; Romance = extensão e complexidade",
+        "Identifique o foco narrativo: 1ª pessoa (personagem) ou 3ª pessoa (observador/onisciente)",
+        "Fábulas sempre trazem ensinamento moral explícito",
+        "No ENEM, preste atenção em narradores não confiáveis (como em Machado de Assis)"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Leia o texto:\n\n'Numa cidade do interior, um barbeiro tinha como único cliente um senhor que vinha mensalmente cortar o cabelo. Um dia, o cliente faltou ao compromisso. Preocupado, o barbeiro fechou a loja e foi até a casa dele. Encontrou o homem na varanda, tomando chimarrão.\n\n— Por que o senhor não veio cortar o cabelo?\n\n— Ah, é que não cresceu.\n\nO barbeiro ficou olhando para ele, depois para o gramado alto que cercava a casa, e respondeu:\n\n— Pois é. Mas o mato do seu quintal cresceu.'\n\nO texto caracteriza-se como:",
+          "alternativas": {
+            "A": "Romance, pela complexidade psicológica dos personagens",
+            "B": "Novela, pela extensão intermediária e múltiplos conflitos",
+            "C": "Conto, pela narrativa breve centrada em situação única",
+            "D": "Fábula, pela presença de animais personificados e moral explícita",
+            "E": "Crônica, pelo registro jornalístico de acontecimentos reais"
+          },
+          "correta": "C",
+          "explicacao": "O texto é um conto porque apresenta as características fundamentais do gênero: narrativa breve, poucos personagens (barbeiro e cliente), tempo e espaço reduzidos, um único conflito (a ausência do cliente) e desfecho com efeito surpresa (a resposta irônica do barbeiro comparando cabelo e gramado). A concisão e a construção para um efeito final específico são marcas do conto. Não é romance pela brevidade; não é novela pela extensão mínima; não é fábula por não ter animais personificados nem moral explícita; e não é crônica por não ter caráter jornalístico ou reflexivo sobre o cotidiano.",
+          "dificuldade": "facil",
+          "tags": ["narrativa", "conto"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Leia o trecho:\n\n'Algum tempo hesitei se devia abrir estas memórias pelo princípio ou pelo fim, isto é, se poria em primeiro lugar o meu nascimento ou a minha morte. Suposto o uso vulgar seja começar pelo nascimento, duas considerações me levaram a adotar diferente método: a primeira é que eu não sou propriamente um autor defunto, mas um defunto autor, para quem a campa foi outro berço; a segunda é que o escrito ficaria assim mais galante e mais novo.'\n\n(Machado de Assis, 'Memórias Póstumas de Brás Cubas')\n\nO fragmento evidencia um narrador:",
+          "alternativas": {
+            "A": "Em terceira pessoa, onisciente e neutro quanto aos acontecimentos narrados",
+            "B": "Em primeira pessoa, protagonista e autodiegético, já falecido",
+            "C": "Observador externo que relata objetivamente os fatos sem participação",
+            "D": "Testemunha que presenciou os acontecimentos mas não é personagem central",
+            "E": "Coletivo que representa a voz de múltiplos personagens simultaneamente"
+          },
+          "correta": "B",
+          "explicacao": "O narrador é em primeira pessoa ('eu não sou', 'meu nascimento', 'minha morte'), protagonista da própria história (narra suas memórias) e autodiegético (conta sua própria experiência). A particularidade está em ser um 'defunto autor' - narrador que conta sua história após a morte, recurso inovador de Machado de Assis que permite distanciamento irônico e liberdade narrativa. O tom reflexivo e metalinguístico ('hesitei se devia abrir estas memórias') reforça a presença marcante do narrador-personagem que controla a narrativa e dialoga com o leitor.",
+          "dificuldade": "medio",
+          "tags": ["narrativa", "foco-narrativo", "machado"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Compare os textos:\n\nTexto I: 'Era uma vez uma cigarra que vivia cantando, sem se preocupar com o inverno. Enquanto isso, sua vizinha formiga trabalhava arduamente, guardando comida. Quando o frio chegou, a cigarra bateu à porta da formiga pedindo ajuda. A formiga respondeu: \"Cantou no verão? Agora dance no inverno!\"'\n\nTexto II: 'A agulha e a linha viviam brigando. A agulha dizia: \"Eu faço todo o trabalho, atravessando o tecido mil vezes, enquanto você apenas me segue\". A linha respondeu: \"Mas sou eu quem fica, fazendo a costura permanecer. Você apenas fura e passa.\"'\n\nA diferença fundamental entre os textos está em:",
+          "alternativas": {
+            "A": "O Texto I é uma fábula com animais personificados; o Texto II é um apólogo com objetos",
+            "B": "O Texto I é narrativo; o Texto II é argumentativo",
+            "C": "O Texto I tem moral explícita; o Texto II não apresenta ensinamento",
+            "D": "O Texto I é literatura oral; o Texto II é literatura erudita",
+            "E": "O Texto I é conto realista; o Texto II é conto fantástico"
+          },
+          "correta": "A",
+          "explicacao": "A diferença fundamental está nos personagens alegóricos: o Texto I é uma fábula porque utiliza animais personificados (cigarra e formiga) para transmitir ensinamento moral sobre previdência e responsabilidade. O Texto II é um apólogo porque personifica objetos inanimados (agulha e linha) para discutir valores como mérito e importância do trabalho coletivo. Ambos são narrativas alegóricas com função didática, mas diferem na natureza dos personagens. A moral pode estar explícita (fábula) ou implícita (apólogo), mas isso não é a diferença definidora entre os gêneros.",
+          "dificuldade": "medio",
+          "tags": ["narrativa", "fabula", "apologo"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Leia o fragmento:\n\n'Fabiano, você é um homem, exclamou em voz alta. Conteve-se, notou que os meninos estavam perto, com certeza iam admirar-se ouvindo-o falar só. E, pensando bem, ele não era homem: era apenas um cabra ocupado em guardar coisas dos outros. Vermelho, queimado, tinha os olhos azuis, a barba e os cabelos ruivos; mas como vivia em terra alheia, cuidava de animais alheios, descobria-se, encolhia-se na presença dos brancos e julgava-se cabra.'\n\n(Graciliano Ramos, 'Vidas Secas')\n\nO trecho evidencia a técnica narrativa de:",
+          "alternativas": {
+            "A": "Discurso direto, com fala literal do personagem em primeira pessoa",
+            "B": "Fluxo de consciência, revelando pensamentos internos sem organização lógica",
+            "C": "Discurso indireto livre, mesclando voz do narrador com pensamentos do personagem",
+            "D": "Narrador onisciente neutro que descreve objetivamente sem acesso à psicologia",
+            "E": "Monólogo interior em primeira pessoa do próprio Fabiano narrando sua história"
+          },
+          "correta": "C",
+          "explicacao": "O fragmento utiliza discurso indireto livre, técnica que mescla a voz do narrador em terceira pessoa com os pensamentos e a linguagem do personagem. Observe: 'Fabiano, você é um homem' (pensamento de Fabiano), seguido de 'exclamou em voz alta' (narrador), depois 'ele não era homem: era apenas um cabra' (pensamento de Fabiano em linguagem simples, refletindo sua consciência limitada). Não há marcas gráficas (travessão, aspas) separando claramente narrador e personagem. Essa técnica permite acesso à interioridade de Fabiano mantendo distância narrativa, característica do estilo econômico de Graciliano Ramos.",
+          "dificuldade": "dificil",
+          "tags": ["narrativa", "discurso-indireto-livre", "modernismo"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Leia o texto:\n\n'O alienista fixou os olhos no chão, por alguns instantes; levantou-os depois, mas não os levantou altivos e seguros, senão cismáticos e incertos. As mãos, que eram sempre a primeira pessoa do plural quando alguma coisa afirmavam, pareciam agora duas interrogações. — Se a loucura é tão frequente, meu amigo, parece que o normal é ser louco. — Parece. — Em tal caso, o critério da alienação mental está mudado; não é louco aquele que faz ou diz coisas extraordinárias, mas sim aquele que faz ou diz coisas ordinárias. — É possível.'\n\n(Machado de Assis, 'O Alienista')\n\nO fragmento pertence ao gênero novela porque:",
+          "alternativas": {
+            "A": "Apresenta brevidade extrema característica do conto contemporâneo",
+            "B": "Desenvolve múltiplas tramas paralelas típicas do romance extenso",
+            "C": "Faz parte de narrativa de extensão média focada em conflito único e filosófico",
+            "D": "Constitui fábula alegórica com personagens representando conceitos abstratos",
+            "E": "Caracteriza-se como crônica reflexiva sobre temas científicos do século XIX"
+          },
+          "correta": "C",
+          "explicacao": "'O Alienista' é uma novela porque tem extensão intermediária entre conto e romance, concentra-se em um conflito central (a definição de loucura e sanidade, a relação entre ciência e poder), mantém unidade de ação sem múltiplas tramas paralelas, e desenvolve questão filosófica profunda através de narrativa satírica. Não é conto porque tem maior extensão e desenvolvimento; não é romance porque não apresenta a complexidade de tramas e personagens típica do gênero; não é fábula porque não usa animais nem tem moral explícita; e não é crônica porque é texto ficcional narrativo, não jornalístico ou reflexivo sobre fatos reais.",
+          "dificuldade": "medio",
+          "tags": ["narrativa", "novela", "machado"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Gêneros Argumentativos",
+      "resumo": "Dissertação, ensaio, manifesto, carta argumentativa e estrutura da argumentação.",
+      "topicos": [
+        {
+          "titulo": "Dissertação Argumentativa",
+          "conteudo": "A dissertação argumentativa é o gênero textual cobrado na prova de redação do ENEM. Sua estrutura clássica divide-se em introdução (apresentação do tema e tese), desenvolvimento (argumentos e contra-argumentos com fundamentação) e conclusão (retomada da tese e proposta de intervenção). O objetivo é defender um ponto de vista sobre tema de relevância social de forma lógica e convincente.\n\nA introdução deve contextualizar o tema, apresentar a tese (posicionamento claro do autor) e antecipar os argumentos que serão desenvolvidos. É fundamental que a tese seja objetiva e específica, evitando generalidades. Por exemplo, em vez de 'A educação no Brasil tem problemas', uma tese mais eficaz seria 'A desvalorização dos professores compromete a qualidade da educação básica brasileira'.\n\nNo desenvolvimento, cada parágrafo deve apresentar um argumento diferente, sustentado por dados estatísticos, exemplos históricos, citações de especialistas ou raciocínio lógico. É importante utilizar conectivos argumentativos que estabeleçam relações de causa-consequência, comparação, contraste ou adição entre ideias. Argumentos de autoridade (citações), exemplificação, causa e consequência, e comparação são os mais utilizados.\n\nA conclusão deve retomar a tese de forma sintética, não repetitiva, e apresentar proposta de intervenção detalhada que contemple os cinco elementos exigidos pelo ENEM: ação, agente, meio/modo, efeito/finalidade e detalhamento. É essencial que a proposta seja viável, específica e respeite os direitos humanos, sob pena de ter a redação zerada."
+        },
+        {
+          "titulo": "Ensaio: Reflexão Crítica",
+          "conteudo": "O ensaio é um gênero textual que se caracteriza pela reflexão pessoal e aprofundada sobre determinado tema. Diferente da dissertação escolar, que segue estrutura rígida, o ensaio permite maior liberdade formal e estilística. O ensaísta analisa questões filosóficas, artísticas, sociais ou científicas a partir de perspectiva original, sem necessariamente esgotar o assunto.\n\nOriginou-se com Michel de Montaigne no século XVI, que criou o termo 'ensaio' para designar suas reflexões pessoais sobre temas variados. No Brasil, escritores como Machado de Assis, Mário de Andrade e Antonio Candido produziram ensaios sobre literatura, arte e sociedade. O ensaio transita entre o acadêmico e o literário, combinando rigor intelectual com liberdade expressiva.\n\nA estrutura do ensaio é flexível, não seguindo necessariamente o modelo introdução-desenvolvimento-conclusão. O autor pode partir de exemplo específico, anedota ou citação para desenvolver sua reflexão. É comum o uso de perguntas retóricas, digressões e retomadas temáticas. O tom pode variar do sério ao irônico, do formal ao coloquial.\n\nO ensaio não busca provar verdades absolutas, mas explorar nuances, contradições e complexidades do tema. Por isso, é frequente o uso de expressões como 'talvez', 'possivelmente', 'parece que', indicando reflexão em processo, não conclusões definitivas. No ENEM, trechos de ensaios podem aparecer para análise da estrutura argumentativa mais livre e da presença autoral marcante."
+        },
+        {
+          "titulo": "Manifesto: Texto Reivindicatório",
+          "conteudo": "O manifesto é um gênero textual de natureza política e ideológica que expressa posicionamento coletivo sobre questões sociais, artísticas ou políticas. Caracteriza-se pela linguagem imperativa e emotiva, uso de primeira pessoa do plural ('nós'), e objetivo de mobilizar o leitor para determinada causa ou movimento.\n\nNo contexto brasileiro, manifestos marcaram momentos históricos importantes: o 'Manifesto Antropofágico' (1928) de Oswald de Andrade propôs renovação radical da cultura brasileira; o 'Manifesto do CPC' defendeu arte engajada nos anos 1960; manifestos estudantis e feministas marcaram lutas sociais. Esses textos não apenas defendem ideias, mas convocam à ação.\n\nA estrutura do manifesto geralmente inclui: diagnóstico crítico da situação atual, proposição de mudanças, convocação à adesão e à ação. A linguagem é assertiva, muitas vezes panfletária, utilizando recursos retóricos como repetição, enumeração, antítese e apelo emocional. Frases curtas e impactantes reforçam o tom de urgência e determinação.\n\nNo ENEM, manifestos aparecem em questões sobre movimentos culturais (como o Modernismo), contexto histórico-social e análise de recursos linguísticos persuasivos. É importante identificar o contexto de produção, o grupo emissor, os destinatários e os valores defendidos. O manifesto, diferente da dissertação acadêmica, não busca neutralidade, mas explicita seu partidarismo ideológico."
+        },
+        {
+          "titulo": "Carta Argumentativa e Aberta",
+          "conteudo": "A carta argumentativa é um gênero textual que combina elementos epistolares (cabeçalho, saudação, despedida) com estrutura argumentativa. Pode ser pessoal, quando dirigida a interlocutor específico, ou aberta/pública, quando direcionada a autoridades ou à sociedade em geral com intenção de circulação ampla.\n\nA carta aberta é frequentemente utilizada por movimentos sociais, ONGs ou grupos organizados para denunciar problemas, reivindicar direitos ou propor mudanças. Diferente da carta pessoal, tem caráter público e persuasivo. Exemplos históricos incluem a 'Carta ao Povo Brasileiro' (Lula, 2002) e cartas de movimentos indígenas, quilombolas e ambientalistas.\n\nA estrutura da carta argumentativa inclui: vocativo (identificação do destinatário), contextualização do tema, apresentação do problema ou solicitação, argumentação fundamentada, reforço do apelo e despedida. O tom pode variar de cordial a veemente, dependendo do contexto e do interlocutor. É fundamental adequar a linguagem ao destinatário: formal com autoridades, mais próxima com pares.\n\nNo ENEM, a carta argumentativa já foi proposta como gênero para a redação e aparece em questões de interpretação. É importante identificar: quem escreve, para quem, com que propósito, em que contexto. A presença de vocativo, datação e assinatura são marcas formais do gênero, enquanto a argumentação estruturada e a solicitação explícita caracterizam sua função persuasiva. O respeito ao interlocutor e a clareza na exposição do problema são essenciais."
+        }
+      ],
+      "exemplos": [
+        "Dissertação ENEM: Tema 'Desafios para a formação educacional de surdos no Brasil'",
+        "Ensaio: 'Instinto de Nacionalidade' de Machado de Assis sobre literatura brasileira",
+        "Manifesto: 'Manifesto Antropofágico' de Oswald de Andrade",
+        "Carta aberta: Carta de comunidades indígenas ao governo sobre demarcação de terras"
+      ],
+      "dicas": [
+        "Na dissertação ENEM: tese clara + 2 argumentos desenvolvidos + proposta de intervenção completa",
+        "Ensaio tem liberdade estrutural; dissertação escolar tem estrutura rígida",
+        "Manifesto usa 'nós' e linguagem imperativa; é sempre coletivo e engajado",
+        "Carta argumentativa mantém elementos epistolares (vocativo, despedida) + argumentação"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Leia o texto:\n\n'A violência contra a mulher no Brasil alcançou níveis alarmantes. Segundo o Fórum Brasileiro de Segurança Pública, uma mulher é agredida a cada dois minutos no país. Esse cenário de horror se agrava pela cultura machista ainda enraizada na sociedade brasileira, que naturaliza agressões e culpabiliza vítimas. Além disso, a insuficiência de políticas públicas efetivas deixa mulheres desprotegidas. É urgente que o Estado implemente campanhas educativas nas escolas, por meio do Ministério da Educação, abordando respeito e igualdade de gênero, a fim de desconstruir preconceitos desde a infância e formar cidadãos conscientes.'\n\nO texto caracteriza-se como dissertação argumentativa porque:",
+          "alternativas": {
+            "A": "Narra acontecimentos em sequência cronológica com personagens definidos",
+            "B": "Apresenta tese sobre problema social, argumentos fundamentados e proposta de solução",
+            "C": "Descreve objetivamente dados estatísticos sem emitir opinião pessoal",
+            "D": "Utiliza linguagem poética e figuras de linguagem para sensibilizar o leitor",
+            "E": "Convoca coletivamente à ação por meio de linguagem imperativa e panfletária"
+          },
+          "correta": "B",
+          "explicacao": "O texto é uma dissertação argumentativa porque: 1) apresenta tese clara (violência contra mulher é problema grave no Brasil); 2) desenvolve argumentos fundamentados com dados estatísticos ('uma mulher é agredida a cada dois minutos') e análise de causas (cultura machista, insuficiência de políticas públicas); 3) propõe solução detalhada (campanhas educativas nas escolas pelo MEC para desconstruir preconceitos). A estrutura segue o modelo dissertativo: contextualização + problematização + argumentação + proposta de intervenção. Não é narrativa porque não conta história; não é descritiva porque analisa e opina; não é poética; e não é manifesto porque não usa tom convocatório coletivo.",
+          "dificuldade": "facil",
+          "tags": ["argumentacao", "dissertacao"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Leia o fragmento:\n\n'Só a Antropofagia nos une. Socialmente. Economicamente. Filosoficamente. Única lei do mundo. Expressão mascarada de todos os individualismos, de todos os coletivismos. De todas as religiões. De todos os tratados políticos. Burgueses, bolchevistas, surrealistas.\nTupy, or not tupy that is the question.\nContra todas as catequeses. E contra a mãe dos Gracos.\nSó me interessa o que não é meu. Lei do homem. Lei do antropófago.'\n\n(Oswald de Andrade, 'Manifesto Antropofágico', 1928)\n\nO texto caracteriza-se como manifesto porque:",
+          "alternativas": {
+            "A": "Desenvolve argumentação estruturada com tese, argumentos e conclusão lógica",
+            "B": "Narra episódios históricos do movimento modernista de forma cronológica",
+            "C": "Propõe ruptura ideológica com linguagem provocativa e tom convocatório",
+            "D": "Descreve objetivamente características da cultura brasileira sem posicionamento",
+            "E": "Apresenta reflexão pessoal e intimista sobre identidade nacional"
+          },
+          "correta": "C",
+          "explicacao": "O texto é um manifesto porque: 1) propõe ruptura radical com valores estabelecidos ('Contra todas as catequeses'); 2) utiliza linguagem provocativa e fragmentada, típica dos manifestos modernistas; 3) apresenta tom assertivo e convocatório ('Só a Antropofagia nos une'); 4) defende ideologia específica (antropofagia cultural como identidade brasileira); 5) usa recursos retóricos como repetição ('Contra'), enumeração ('Burgueses, bolchevistas, surrealistas') e intertextualidade provocativa ('Tupy, or not tupy'). O manifesto não segue estrutura dissertativa tradicional, mas apresenta teses de forma fragmentada e poética, característica dos manifestos de vanguarda.",
+          "dificuldade": "medio",
+          "tags": ["argumentacao", "manifesto", "modernismo"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Compare os textos:\n\nTexto I: 'O racismo estrutural no Brasil se manifesta de diversas formas. Dados do IBGE mostram que a população negra tem menor acesso à educação de qualidade e menores salários. Isso ocorre porque as desigualdades históricas não foram reparadas. Portanto, é necessário implementar políticas de ações afirmativas.'\n\nTexto II: 'Será que o racismo no Brasil é realmente diferente do racismo em outros países? Talvez devêssemos considerar que a miscigenação, frequentemente celebrada como característica nacional, pode mascarar preconceitos profundos. O mito da democracia racial, que Gilberto Freyre ajudou a construir, merece reflexão mais nuançada. Entre o discurso da igualdade e a prática discriminatória, existe um abismo que a sociedade brasileira insiste em não enxergar.'\n\nA diferença fundamental entre os textos está em:",
+          "alternativas": {
+            "A": "O tema abordado, pois tratam de assuntos completamente distintos",
+            "B": "O Texto I é dissertação estruturada; o Texto II é ensaio reflexivo e questionador",
+            "C": "O Texto I é narrativo; o Texto II é descritivo",
+            "D": "O Texto I usa linguagem coloquial; o Texto II usa linguagem formal",
+            "E": "O Texto I é literário; o Texto II é científico"
+          },
+          "correta": "B",
+          "explicacao": "O Texto I é uma dissertação estruturada: apresenta tese clara (racismo estrutural existe no Brasil), argumenta com dados objetivos (IBGE), estabelece relação de causa-consequência e propõe solução definitiva (ações afirmativas). Segue estrutura lógica e assertiva. O Texto II é um ensaio: utiliza perguntas retóricas ('Será que...?'), marcadores de incerteza ('Talvez', 'pode'), explora complexidades sem conclusões definitivas, apresenta reflexão autoral marcante e tom questionador. O ensaio não propõe soluções fechadas, mas problematiza e convida à reflexão. Ambos tratam do mesmo tema (racismo no Brasil), mas com abordagens diferentes: a dissertação afirma e propõe; o ensaio questiona e reflete.",
+          "dificuldade": "dificil",
+          "tags": ["argumentacao", "dissertacao", "ensaio"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Leia o texto:\n\n'Excelentíssima Senhora Prefeita,\n\nNós, moradores do Bairro Jardim Esperança, vimos por meio desta carta manifestar nossa profunda preocupação com a ausência de iluminação pública adequada em nossa comunidade. Há mais de dois anos, solicitamos à prefeitura a instalação de postes e lâmpadas, mas até o momento não obtivemos resposta.\n\nEssa situação tem gerado graves consequências: aumento da criminalidade no período noturno, dificuldade de locomoção de idosos e crianças, e sensação constante de insegurança. Segundo dados da Associação de Moradores, os assaltos aumentaram 40% no último ano.\n\nSolicitamos, com urgência, que Vossa Excelência determine à Secretaria de Infraestrutura a instalação imediata de iluminação adequada, garantindo segurança e dignidade aos cidadãos que aqui residem.\n\nRespeitosamente,\nAssociação de Moradores do Jardim Esperança'\n\nO texto caracteriza-se como:",
+          "alternativas": {
+            "A": "Dissertação escolar com estrutura clássica de introdução, desenvolvimento e conclusão",
+            "B": "Manifesto político convocando mobilização popular para reivindicação coletiva",
+            "C": "Carta argumentativa dirigida a autoridade com solicitação fundamentada",
+            "D": "Notícia jornalística sobre problema de infraestrutura urbana",
+            "E": "Ensaio reflexivo sobre questões de segurança pública"
+          },
+          "correta": "C",
+          "explicacao": "O texto é uma carta argumentativa porque: 1) apresenta elementos epistolares (vocativo formal 'Excelentíssima Senhora Prefeita', identificação do remetente coletivo, despedida respeitosa); 2) tem destinatário específico (a prefeita); 3) apresenta solicitação clara (instalação de iluminação); 4) fundamenta o pedido com argumentos (aumento da criminalidade, dados da Associação de Moradores); 5) mantém tom formal e respeitoso adequado ao contexto. Não é dissertação escolar porque tem formato epistolar; não é manifesto porque não convoca mobilização ampla, mas solicita diretamente à autoridade; não é notícia porque não informa fato recente objetivamente; e não é ensaio porque não é reflexão autoral livre, mas petição estruturada.",
+          "dificuldade": "facil",
+          "tags": ["argumentacao", "carta-argumentativa"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Leia o trecho de uma redação do ENEM:\n\n'A democratização do acesso à internet no Brasil enfrenta desafios significativos. É necessário que o governo invista em infraestrutura digital.'\n\nA proposta de intervenção apresentada está inadequada segundo os critérios do ENEM porque:",
+          "alternativas": {
+            "A": "Não respeita os direitos humanos ao propor exclusão digital",
+            "B": "É genérica e incompleta, faltando detalhamento dos elementos obrigatórios",
+            "C": "Apresenta solução inviável economicamente para o contexto brasileiro",
+            "D": "Foca apenas em aspectos tecnológicos, ignorando dimensões sociais",
+            "E": "Propõe intervenção de agente inadequado para o problema apresentado"
+          },
+          "correta": "B",
+          "explicacao": "A proposta está inadequada porque é genérica e incompleta. Segundo os critérios do ENEM, a proposta de intervenção deve conter cinco elementos: 1) AÇÃO (o que fazer - 'investir em infraestrutura' é vago); 2) AGENTE (quem fará - 'governo' é genérico, deveria especificar ministério ou órgão); 3) MODO/MEIO (como será feito - não menciona); 4) EFEITO/FINALIDADE (para quê - não explicita); 5) DETALHAMENTO (não há especificações). Uma proposta adequada seria: 'É fundamental que o Ministério das Comunicações (AGENTE) implemente programa de instalação de fibra óptica (AÇÃO) em regiões periféricas e rurais (MEIO/MODO), por meio de parcerias público-privadas (DETALHAMENTO), a fim de garantir acesso igualitário à informação e reduzir desigualdades digitais (FINALIDADE).'",
+          "dificuldade": "medio",
+          "tags": ["argumentacao", "dissertacao", "redacao-enem"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Gêneros Instrucionais e Injuntivos",
+      "resumo": "Receita, manual, tutorial, regulamento e características da linguagem prescritiva.",
+      "topicos": [
+        {
+          "titulo": "Receita e Bula",
+          "conteudo": "A receita é um gênero textual instrucional que apresenta sequência de ações necessárias para produzir determinado resultado, geralmente culinário. Sua estrutura é padronizada: título (nome do prato), lista de ingredientes com quantidades específicas, e modo de preparo com verbos no imperativo ou infinitivo organizados em ordem cronológica.\n\nA linguagem da receita é objetiva, clara e precisa. Os verbos aparecem predominantemente no imperativo ('misture', 'acrescente', 'deixe descansar') ou infinitivo ('misturar', 'acrescentar'), indicando instruções diretas. O uso de numeração ou marcadores facilita a visualização das etapas. Termos técnicos específicos ('pré-aquecer', 'bater em neve', 'deixar em ponto de bala') são comuns e exigem conhecimento prévio.\n\nA bula de medicamento segue estrutura semelhante, mas com finalidade terapêutica e linguagem técnico-científica mais complexa. Inclui: composição química, indicações terapêuticas, contraindicações, modo de usar, advertências e reações adversas. A bula é texto regulamentado pela ANVISA, com formato obrigatório que equilibra informação técnica (para profissionais) e acessível (para pacientes).\n\nNo ENEM, esses gêneros aparecem em questões sobre adequação da linguagem ao público-alvo, sequenciação lógica de instruções, uso de verbos no imperativo e função social do texto. É importante identificar que, embora a receita seja prescritiva, pode haver variações e adaptações, enquanto a bula é normatizadora e deve ser seguida rigorosamente por questões de saúde."
+        },
+        {
+          "titulo": "Manual e Tutorial",
+          "conteudo": "O manual de instruções é um gênero textual que orienta o usuário sobre como utilizar, montar ou consertar determinado produto ou equipamento. Caracteriza-se por linguagem técnica, ilustrações explicativas, organização em tópicos numerados e uso de verbos no imperativo. O objetivo é garantir uso correto e seguro do produto.\n\nA estrutura típica do manual inclui: apresentação do produto, especificações técnicas, instruções de montagem/instalação, modo de usar, manutenção e limpeza, solução de problemas comuns e informações sobre garantia. O uso de recursos visuais (diagramas, fotos, ícones) complementa as instruções verbais, facilitando a compreensão.\n\nO tutorial é variante moderna do manual, comum em ambiente digital. Apresenta passo a passo de como realizar determinada tarefa, geralmente em contexto tecnológico ou educacional. Diferente do manual tradicional, o tutorial costuma ser mais informal, dialogar diretamente com o leitor ('você deve clicar...') e incluir dicas adicionais ('Atenção!', 'Dica importante').\n\nAmbos os gêneros priorizam clareza e objetividade. A progressão deve ser lógica: do simples ao complexo, seguindo ordem cronológica das ações. No ENEM, questões exploram a identificação de instruções implícitas ou explícitas, adequação da linguagem ao público (técnico versus leigo) e interpretação de elementos não verbais (ícones, esquemas) articulados ao texto verbal."
+        },
+        {
+          "titulo": "Regulamento e Edital",
+          "conteudo": "O regulamento é um gênero textual normativo que estabelece regras de conduta ou procedimentos em determinado contexto institucional (escolar, esportivo, profissional). Caracteriza-se por linguagem formal e impessoal, estrutura organizada em artigos ou tópicos numerados, e uso de modalização deôntica (expressões de obrigação: 'deve', 'é proibido', 'é obrigatório').\n\nA estrutura do regulamento geralmente inclui: preâmbulo (contextualização e objetivo), definições de termos-chave, direitos e deveres dos envolvidos, procedimentos e normas específicas, penalidades em caso de descumprimento, e disposições finais. A linguagem jurídica pode tornar o texto hermético, exigindo atenção na interpretação.\n\nO edital é gênero normativo que divulga informações oficiais sobre processos seletivos (concursos, vestibulares, licitações). Combina características informativas (dados sobre o processo) e prescritivas (normas a serem seguidas). Utiliza linguagem formal, técnica e precisa, organização em itens e subitens, e termos jurídico-administrativos.\n\nNo ENEM, regulamentos e editais aparecem em questões de interpretação que exigem identificação de informações específicas, compreensão de termos técnicos em contexto, e análise da função social do texto. É fundamental atentar para detalhes como prazos, requisitos e condições, pois a precisão é característica definidora desses gêneros. A modalização deôntica (verbos e expressões que indicam obrigação, proibição ou permissão) é aspecto linguístico frequentemente explorado."
+        },
+        {
+          "titulo": "Características da Linguagem Injuntiva",
+          "conteudo": "A linguagem injuntiva, também chamada instrucional ou prescritiva, tem como função orientar o comportamento do interlocutor, prescrevendo ações a serem realizadas. Diferente da linguagem descritiva (que caracteriza) ou narrativa (que conta), a injuntiva ordena, instrui, aconselha ou proíbe.\n\nAs principais marcas linguísticas da injunção são: verbos no imperativo ('faça', 'não toque'), infinitivo ('fazer', 'não tocar') ou futuro do presente com valor imperativo ('você fará'); presença de numeração ou marcadores sequenciais ('primeiro', 'em seguida', 'por fim'); uso de advérbios de modo ('cuidadosamente', 'lentamente'); modalização deôntica ('deve', 'é necessário', 'é proibido'); e linguagem clara, direta e objetiva.\n\nA estrutura dos textos injuntivos geralmente segue ordem cronológica ou lógica das ações. Quando há pré-requisitos, são mencionados antes das instruções principais. Recursos gráficos como negrito, sublinhado, cores e ícones auxiliam na hierarquização das informações e destacam advertências importantes.\n\nNo ENEM, a identificação da função injuntiva é essencial para compreender a finalidade comunicativa do texto. Questões exploram a diferença entre orientação (opcional) e prescrição (obrigatória), a adequação da linguagem ao contexto (formal/informal, técnica/acessível) e a articulação entre elementos verbais e não verbais na construção das instruções. É importante perceber que alguns textos combinam funções: uma receita pode incluir trechos descritivos (características dos ingredientes) dentro da estrutura predominantemente injuntiva."
+        }
+      ],
+      "exemplos": [
+        "Receita: 'Bolo de Cenoura' - ingredientes + modo de preparo com verbos no imperativo",
+        "Bula: Informações sobre posologia, contraindicações e efeitos colaterais",
+        "Manual: Instruções de montagem de móvel com diagrama ilustrativo",
+        "Regulamento: Normas de convivência escolar com direitos e deveres"
+      ],
+      "dicas": [
+        "Verbos no imperativo ou infinitivo são marcas típicas dos gêneros instrucionais",
+        "Receita é flexível (permite adaptações); bula é rígida (deve ser seguida exatamente)",
+        "Identifique modalização deôntica: 'deve', 'é proibido', 'é obrigatório'",
+        "No ENEM, preste atenção na articulação entre texto e imagem (diagramas, ícones)"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Leia o texto:\n\n'BOLO DE CENOURA\n\nIngredientes:\n- 3 cenouras médias\n- 4 ovos\n- 2 xícaras de açúcar\n- 1 xícara de óleo\n- 2 xícaras de farinha de trigo\n- 1 colher de sopa de fermento\n\nModo de preparo:\n1. Bata no liquidificador as cenouras, os ovos, o açúcar e o óleo.\n2. Despeje em uma tigela e adicione a farinha e o fermento.\n3. Misture delicadamente.\n4. Asse em forno pré-aquecido a 180°C por 40 minutos.'\n\nAs características linguísticas do texto indicam tratar-se de gênero:",
+          "alternativas": {
+            "A": "Narrativo, pela sequência cronológica de acontecimentos",
+            "B": "Descritivo, pela caracterização detalhada dos ingredientes",
+            "C": "Injuntivo, pela presença de instruções com verbos no imperativo",
+            "D": "Argumentativo, pela defesa implícita da qualidade da receita",
+            "E": "Expositivo, pela explicação de processo químico de fermentação"
+          },
+          "correta": "C",
+          "explicacao": "O texto é injuntivo (instrucional) porque sua função é orientar o leitor sobre como realizar uma ação (fazer bolo). As marcas linguísticas confirmam: verbos no imperativo ('Bata', 'Despeje', 'Misture', 'Asse'), organização sequencial numerada das etapas, estrutura padronizada (ingredientes + modo de preparo), e linguagem objetiva e precisa. Não é narrativo porque não conta história com personagens; não é descritivo porque não caracteriza, mas instrui; não é argumentativo porque não defende tese; e não é expositivo porque não explica conceitos, mas orienta ação prática.",
+          "dificuldade": "facil",
+          "tags": ["generos-instrucionais", "receita"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Compare os textos:\n\nTexto I (Receita): 'Adicione sal a gosto. Se preferir, acrescente ervas aromáticas como alecrim ou tomilho para realçar o sabor.'\n\nTexto II (Bula): 'Tomar 1 comprimido a cada 8 horas. Não exceder 3 comprimidos em 24 horas. Contraindicado para menores de 12 anos.'\n\nA diferença fundamental entre os textos está em:",
+          "alternativas": {
+            "A": "O tema abordado, pois tratam de áreas completamente distintas",
+            "B": "A linguagem, pois o Texto I usa norma culta e o Texto II, coloquial",
+            "C": "O grau de obrigatoriedade: Texto I admite variação; Texto II é prescritivo rígido",
+            "D": "O público-alvo, pois o Texto I é para especialistas e o Texto II para leigos",
+            "E": "A estrutura, pois o Texto I é fragmentado e o Texto II é contínuo"
+          },
+          "correta": "C",
+          "explicacao": "A diferença fundamental está no grau de obrigatoriedade das instruções. A receita (Texto I) admite variações e personalizações ('a gosto', 'Se preferir'), oferecendo sugestões opcionais ao leitor. A bula (Texto II) é prescritiva e rígida: as instruções devem ser seguidas exatamente porque envolvem questões de saúde ('Não exceder', 'Contraindicado'). Ambos são gêneros instrucionais, mas a receita permite criatividade culinária, enquanto a bula exige cumprimento rigoroso por razões terapêuticas e de segurança. A modalização é diferente: receita usa 'pode', 'se preferir'; bula usa 'deve', 'não exceder'.",
+          "dificuldade": "medio",
+          "tags": ["generos-instrucionais", "receita", "bula"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Leia o texto:\n\n'ATENÇÃO: Antes de utilizar o aparelho, leia atentamente todas as instruções.\n\n1. Certifique-se de que a voltagem indicada no produto corresponde à da tomada.\n2. Nunca mergulhe o aparelho em água ou outros líquidos.\n3. Mantenha o cabo de alimentação longe de superfícies quentes.\n4. Não utilize o produto se o cabo estiver danificado.\n5. Crianças não devem operar este equipamento sem supervisão.\n\nGARANTIA: Este produto possui garantia de 12 meses contra defeitos de fabricação.'\n\nO texto caracteriza-se como:",
+          "alternativas": {
+            "A": "Propaganda, pela valorização das qualidades do produto",
+            "B": "Manual de instruções, pelas orientações de uso e segurança",
+            "C": "Regulamento, pelas normas de convivência institucional",
+            "D": "Notícia, pela informação objetiva sobre lançamento de produto",
+            "E": "Artigo científico, pela explicação técnica do funcionamento"
+          },
+          "correta": "B",
+          "explicacao": "O texto é um manual de instruções porque: 1) orienta sobre uso correto e seguro de produto; 2) utiliza linguagem prescritiva com verbos no imperativo ('Certifique-se', 'Mantenha') e modalização deôntica ('Nunca', 'não devem'); 3) organiza informações em tópicos numerados para facilitar consulta; 4) inclui advertências de segurança destacadas; 5) fornece informações complementares sobre garantia. Não é propaganda porque não persuade à compra; não é regulamento porque não estabelece normas institucionais amplas; não é notícia porque não informa fato recente; e não é artigo científico porque não explica funcionamento técnico, mas orienta uso prático.",
+          "dificuldade": "facil",
+          "tags": ["generos-instrucionais", "manual"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Leia o fragmento de regulamento:\n\n'Art. 15º - É expressamente proibido aos alunos:\nI - Utilizar aparelhos eletrônicos durante as aulas sem autorização prévia do professor;\nII - Ausentar-se das dependências da escola sem autorização da direção;\nIII - Praticar atos de violência física ou verbal contra colegas, professores ou funcionários.\n\nParágrafo único: O descumprimento destas normas acarretará advertência escrita e, em casos reincidentes, suspensão de até 5 dias letivos.'\n\nAs marcas linguísticas predominantes no texto são:",
+          "alternativas": {
+            "A": "Verbos no pretérito perfeito indicando ações já realizadas",
+            "B": "Adjetivos qualificadores valorizando comportamentos adequados",
+            "C": "Modalização deôntica expressa por verbos e expressões de proibição",
+            "D": "Figuras de linguagem como metáfora e metonímia para persuasão",
+            "E": "Linguagem coloquial e informal para aproximação com o público jovem"
+          },
+          "correta": "C",
+          "explicacao": "O texto apresenta modalização deôntica, característica dos gêneros normativos: expressões que indicam proibição ('É expressamente proibido'), obrigatoriedade implícita de seguir as normas, e consequências pelo descumprimento ('acarretará'). A linguagem é formal, impessoal e prescritiva, típica de regulamentos. Não usa verbos no pretérito porque estabelece normas vigentes; não usa adjetivos qualificadores porque prescreve comportamentos proibidos, não ideais; não utiliza figuras de linguagem porque prioriza clareza e precisão; e não usa linguagem coloquial porque o contexto institucional exige formalidade e autoridade.",
+          "dificuldade": "medio",
+          "tags": ["generos-instrucionais", "regulamento", "modalizacao"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Leia o texto:\n\n'Como configurar o Wi-Fi do seu smartphone:\n\nPasso 1: Acesse o menu \"Configurações\" no seu aparelho.\nPasso 2: Toque na opção \"Wi-Fi\" e ative-a deslizando o botão para a direita.\nPasso 3: Aguarde a lista de redes disponíveis aparecer.\nPasso 4: Selecione a rede desejada.\nPasso 5: Digite a senha quando solicitado.\n\nDica importante: Se a rede não aparecer, verifique se o roteador está ligado e próximo ao aparelho.\n\nProblemas? Tente reiniciar o smartphone e repetir o processo.'\n\nO texto exemplifica gênero:",
+          "alternativas": {
+            "A": "Receita culinária adaptada para contexto tecnológico",
+            "B": "Tutorial com instruções passo a passo e linguagem acessível",
+            "C": "Regulamento estabelecendo normas de uso de internet",
+            "D": "Artigo de opinião defendendo facilidade de acesso à tecnologia",
+            "E": "Relatório técnico sobre funcionamento de redes sem fio"
+          },
+          "correta": "B",
+          "explicacao": "O texto é um tutorial porque: 1) apresenta instruções passo a passo numeradas para realizar tarefa específica; 2) utiliza linguagem acessível, dialogando diretamente com o leitor ('seu smartphone', 'Toque'); 3) inclui dicas adicionais destacadas para facilitar o processo; 4) oferece solução para problemas comuns; 5) foca em orientação prática, não teórica. Diferente de manual tradicional, o tutorial é mais informal e didático. Não é receita porque não envolve ingredientes ou preparo culinário; não é regulamento porque não estabelece normas obrigatórias; não é artigo de opinião porque não defende tese; e não é relatório porque não analisa ou descreve funcionamento técnico, mas orienta uso prático.",
+          "dificuldade": "facil",
+          "tags": ["generos-instrucionais", "tutorial"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Gêneros Publicitários e Multimodais",
+      "resumo": "Propaganda, anúncio, meme, infográfico e análise de textos sincréticos.",
+      "topicos": [
+        {
+          "titulo": "Propaganda e Publicidade",
+          "conteudo": "A propaganda é um gênero textual persuasivo que visa promover produtos, serviços, ideias ou comportamentos. Diferencia-se da publicidade em sentido estrito: propaganda está mais ligada à disseminação ideológica (propaganda política, campanhas sociais), enquanto publicidade foca na promoção comercial. No entanto, os termos são frequentemente usados como sinônimos.\n\nA estrutura da propaganda combina elementos verbais e não verbais: imagens impactantes, slogan memorável, logotipo da marca, e texto argumentativo breve. O slogan é frase curta que sintetiza a mensagem principal, sendo facilmente memorizada ('A Brahma refresca até pensamento'). A linguagem é persuasiva, utilizando verbos no imperativo ('Compre', 'Experimente'), apelo emocional e, frequentemente, humor ou recursos estéticos.\n\nAs estratégias persuasivas incluem: argumento de autoridade (celebridades endossando produtos), apelo à tradição ('há 50 anos no mercado'), promessa de status social ('para quem tem bom gosto'), uso de dados numéricos ('97% de aprovação'), e recursos linguísticos como rimas, aliterações e trocadilhos que facilitam memorização.\n\nNo ENEM, propagandas aparecem em questões que exploram análise crítica da mensagem publicitária, identificação de público-alvo, articulação entre linguagem verbal e não verbal, intertextualidade, e reconhecimento de estratégias de manipulação. É fundamental perceber valores sociais implícitos (consumismo, padrões de beleza, estereótipos) e questionar criticamente as promessas apresentadas. A multimodalidade é característica essencial: imagem, cor, tipografia, layout contribuem tanto quanto o texto verbal para construção do sentido."
+        },
+        {
+          "titulo": "Anúncio Classificado e Display",
+          "conteudo": "O anúncio classificado é um gênero textual informativo-persuasivo breve, tradicionalmente publicado em jornais e atualmente comum em plataformas digitais. Sua função é oferecer ou solicitar produtos, serviços ou oportunidades (emprego, imóveis, veículos). Caracteriza-se por linguagem econômica, uso de abreviações e organização em categorias.\n\nA estrutura do classificado inclui: título descritivo ('Vende-se apartamento'), características principais com dados objetivos (localização, preço, condições), e informações de contato. A linguagem é direta, com predomínio de substantivos e adjetivos, poucos verbos. Abreviações são comuns para economia de espaço: 'apt' (apartamento), 'dorm' (dormitório), 'p/' (para).\n\nO anúncio display, por sua vez, é mais elaborado visualmente, ocupando espaços maiores em jornais, revistas ou sites. Combina texto e imagem de forma planejada, utiliza cores, tipografias variadas e layout atrativo. Diferente do classificado puramente informativo, o display é mais persuasivo, utilizando recursos publicitários como slogans e apelo emocional.\n\nNo contexto do ENEM, anúncios são explorados em questões sobre adequação da linguagem ao público e ao suporte, economia linguística, uso de abreviações em contexto, e diferenças entre função informativa e persuasiva. É importante reconhecer que, embora pareçam apenas informativos, anúncios sempre têm dimensão persuasiva, selecionando informações que valorizam o que está sendo oferecido e omitindo aspectos negativos."
+        },
+        {
+          "titulo": "Infográfico: Texto Sincrético",
+          "conteudo": "O infográfico é um gênero textual multimodal que apresenta informações de forma visual e esquemática, integrando texto verbal, imagens, gráficos, ícones e outros recursos. Surgiu no jornalismo para explicar processos complexos de forma acessível, mas hoje é amplamente utilizado em contextos educacionais, corporativos e científicos.\n\nA característica fundamental do infográfico é a sincretismo de linguagens: a informação não está apenas no texto ou apenas na imagem, mas na articulação entre ambos. Números, dados estatísticos, linhas do tempo, mapas, diagramas e ilustrações compõem unidade de sentido. A leitura não é linear (da esquerda para direita, de cima para baixo), mas depende do projeto gráfico.\n\nOs infográficos podem ser explicativos (como funciona determinado processo), estatísticos (apresentação de dados numéricos), cronológicos (linha do tempo), geográficos (mapas temáticos) ou comparativos (estabelecendo relações entre informações). O design é elemento essencial: cores codificam informações, tamanhos indicam proporções, setas mostram sequências.\n\nNo ENEM, infográficos são frequentemente utilizados em questões que exigem interpretação de múltiplas linguagens, localização de informações específicas em texto não linear, compreensão de relações lógicas (causa-consequência, comparação, temporalidade) expressas visualmente, e análise crítica da forma de apresentação dos dados. É fundamental desenvolver multiletramento: capacidade de ler não apenas palavras, mas imagens, cores, disposição espacial e outros recursos semióticos."
+        },
+        {
+          "titulo": "Meme: Gênero Digital Contemporâneo",
+          "conteudo": "O meme é um gênero textual digital que se caracteriza pela viralização, humor e capacidade de remixagem. Surgido na cultura digital, o meme combina imagem (foto, desenho, frame de vídeo) com texto verbal curto, geralmente em fonte simples sobre a imagem. Sua força está na identificação coletiva e no compartilhamento rápido em redes sociais.\n\nOs memes funcionam por intertextualidade e paródia: fazem referência a outros textos, acontecimentos, expressões ou situações amplamente conhecidas, subvertendo ou ressignificando o sentido original. A compreensão do meme depende do conhecimento compartilhado entre produtor e leitor sobre o contexto cultural e o 'molde' (template) utilizado.\n\nA estrutura do meme é relativamente fixa: uma imagem-base (template) é reutilizada com diferentes textos, adaptando-se a contextos variados. Por exemplo, o meme 'Distracted Boyfriend' (homem olhando outra mulher enquanto a namorada o observa indignada) serve como metáfora para situações de escolha ou traição em contextos diversos: políticos, culturais, pessoais.\n\nNo ENEM, memes podem aparecer em questões sobre gêneros digitais, linguagem da internet, intertextualidade, crítica social implícita no humor, e multimodalidade. É importante reconhecer que, apesar do humor aparente, memes frequentemente veiculam críticas políticas, denúncias sociais ou comentários culturais relevantes. A linguagem é coloquial, podendo incluir desvios da norma padrão, gírias e construções típicas da oralidade, refletindo a informalidade do ambiente digital. A efemeridade é característica: memes surgem, viralizam e desaparecem rapidamente, refletindo a velocidade da comunicação digital contemporânea."
+        }
+      ],
+      "exemplos": [
+        "Propaganda: Campanha 'Não é não' contra assédio - texto + imagem + slogan",
+        "Classificado: 'Vende-se apt 2 dorm, Copacabana, 500m² - R$ 800 mil' - linguagem econômica",
+        "Infográfico: Dados sobre desmatamento com gráficos, mapas e ilustrações integrados",
+        "Meme: Template 'Drake rejeitando/aprovando' usado para comentar situações cotidianas"
+      ],
+      "dicas": [
+        "Em propagandas, identifique o público-alvo e as estratégias de persuasão usadas",
+        "Infográficos exigem leitura não linear - observe cores, tamanhos e posicionamento",
+        "Memes dependem de conhecimento cultural compartilhado - contexto é essencial",
+        "No ENEM, sempre analise a articulação entre texto verbal e não verbal"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Observe a propaganda:\n\n[Imagem: Mulher sorridente segurando produto de limpeza em cozinha impecável]\n\nTexto: 'Com Brilholim, sua casa brilha sem esforço! Compre já e ganhe 20% de desconto.'\n\nSlogan: 'Brilholim - O poder que limpa de verdade'\n\nAs estratégias persuasivas utilizadas na propaganda incluem:",
+          "alternativas": {
+            "A": "Argumentação científica com dados estatísticos sobre eficácia do produto",
+            "B": "Promessa de facilidade, imperativo de compra e associação do produto à felicidade",
+            "C": "Linguagem técnica especializada direcionada a profissionais de limpeza",
+            "D": "Crítica social ao consumismo e incentivo ao consumo consciente",
+            "E": "Apresentação objetiva e neutra das características químicas do produto"
+          },
+          "correta": "B",
+          "explicacao": "A propaganda utiliza várias estratégias persuasivas típicas: 1) Promessa de benefício com facilidade ('brilha sem esforço'); 2) Verbo no imperativo convocando à ação ('Compre já'); 3) Incentivo promocional ('20% de desconto'); 4) Associação do produto à felicidade (mulher sorridente, ambiente agradável); 5) Slogan afirmativo e enfático ('O poder que limpa de verdade'). A articulação entre imagem (cenário idealizado) e texto reforça a promessa publicitária. Não há argumentação científica nem dados estatísticos; não usa linguagem técnica; não critica consumismo (pelo contrário, incentiva); e não é apresentação objetiva, mas persuasiva.",
+          "dificuldade": "facil",
+          "tags": ["publicidade", "propaganda", "persuasao"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Leia o anúncio:\n\n'VENDE-SE\nApt 3 dorm (1 suíte), 2 vgs garagem, Ipanema, 120m², andar alto, vista mar, reform., ótima localiz., próx. metrô e comércio. R$ 1.2 mi. Tratar: (21) 9xxxx-xxxx'\n\nAs características linguísticas do texto evidenciam:",
+          "alternativas": {
+            "A": "Linguagem literária com uso expressivo de figuras e adjetivação subjetiva",
+            "B": "Discurso formal acadêmico com terminologia técnica arquitetônica",
+            "C": "Economia linguística com abreviações e seleção de informações valorizadoras",
+            "D": "Argumentação estruturada defendendo tese sobre mercado imobiliário",
+            "E": "Descrição objetiva e completa incluindo aspectos negativos do imóvel"
+          },
+          "correta": "C",
+          "explicacao": "O anúncio classificado caracteriza-se por: 1) Economia linguística com abreviações ('apt', 'dorm', 'vgs', 'reform.', 'localiz.', 'próx.'); 2) Seleção estratégica de informações que valorizam o imóvel (vista mar, andar alto, próximo ao metrô); 3) Omissão de aspectos negativos ou problemas; 4) Uso de adjetivos positivos ('ótima'); 5) Objetividade informativa (metragem, número de quartos, preço). Não é linguagem literária porque não há elaboração estética; não é discurso acadêmico; não é argumentação estruturada; e não é descrição completa e neutra porque seleciona apenas aspectos positivos, característica persuasiva do gênero.",
+          "dificuldade": "medio",
+          "tags": ["publicidade", "anuncio", "economia-linguistica"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Observe o infográfico:\n\n[Descrição: Título 'Consumo de água per capita no Brasil'. Mapa do Brasil com estados coloridos em gradação de azul (mais escuro = maior consumo). Gráfico de barras ao lado comparando regiões. Ícone de torneira com número '154 litros/dia' em destaque. Ilustração de dicas de economia no rodapé.]\n\nA compreensão completa do infográfico exige:",
+          "alternativas": {
+            "A": "Leitura linear da esquerda para direita, ignorando elementos visuais",
+            "B": "Foco exclusivo no texto verbal, desconsiderando cores e ilustrações",
+            "C": "Interpretação da articulação entre texto, gráficos, cores e ícones",
+            "D": "Análise apenas dos dados numéricos apresentados isoladamente",
+            "E": "Conhecimento especializado em hidrologia e estatística avançada"
+          },
+          "correta": "C",
+          "explicacao": "O infográfico é texto multimodal: a compreensão depende da articulação entre múltiplas linguagens. É necessário: 1) Interpretar o código de cores no mapa (gradação indica intensidade de consumo); 2) Relacionar informações do mapa com o gráfico de barras; 3) Compreender o significado visual do ícone da torneira; 4) Ler o texto verbal (título, legendas, dicas); 5) Integrar todas essas informações para construir sentido global. A leitura não é linear, mas guiada pelo projeto gráfico. Não se pode ignorar elementos visuais ou focar apenas em texto/números isoladamente. Não exige conhecimento especializado, pois o propósito do infográfico é justamente tornar informação complexa acessível através da visualização.",
+          "dificuldade": "medio",
+          "tags": ["multimodalidade", "infografico", "multiletramento"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Analise o meme:\n\n[Imagem: Template 'Namorado distraído' - homem olha para outra mulher enquanto a namorada o observa com indignação]\n\nTexto sobreposto:\nNamorada: 'Estudar com antecedência'\nHomem: 'Eu'\nOutra mulher: 'Estudar na véspera da prova'\n\nO humor do meme se constrói por:",
+          "alternativas": {
+            "A": "Apresentação de dados estatísticos sobre hábitos de estudo de estudantes",
+            "B": "Crítica social direta e explícita ao sistema educacional brasileiro",
+            "C": "Uso de linguagem formal acadêmica para discussão de procrastinação",
+            "D": "Metáfora visual que compara escolha acadêmica a traição amorosa",
+            "E": "Descrição objetiva de técnicas eficazes de preparação para exames"
+          },
+          "correta": "D",
+          "explicacao": "O humor do meme se constrói pela metáfora visual: a situação de traição amorosa (imagem) representa escolha entre método adequado ('estudar com antecedência') e inadequado ('estudar na véspera'). A 'traição' ao bom método gera identificação em estudantes que reconhecem o hábito da procrastinação. O template conhecido é ressignificado, aplicado a contexto diferente do original. A compreensão depende de: 1) Conhecimento do template; 2) Associação metafórica entre as situações; 3) Identificação com a experiência narrada. Não apresenta dados estatísticos, crítica explícita ao sistema educacional, linguagem formal ou descrição objetiva - o humor está na subversão irônica da situação, reconhecendo comportamento inadequado comum.",
+          "dificuldade": "dificil",
+          "tags": ["multimodalidade", "meme", "intertextualidade"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Compare os textos:\n\nTexto I (Propaganda institucional): [Imagem de mãe e bebê] 'Amamentar é um ato de amor que protege seu filho. Amamente até os 6 meses exclusivamente. Ministério da Saúde.'\n\nTexto II (Propaganda comercial): [Imagem de carro esportivo] 'Novo Turbo X. Para quem não aceita limites. Financiamento em 60x. Visite nossa concessionária.'\n\nA diferença fundamental entre as propagandas está em:",
+          "alternativas": {
+            "A": "O uso de imagens, presente apenas no Texto I",
+            "B": "A função: Texto I é educativa/social; Texto II é comercial/persuasiva",
+            "C": "A linguagem verbal, formal no Texto I e coloquial no Texto II",
+            "D": "O público-alvo, específico no Texto I e genérico no Texto II",
+            "E": "A presença de elementos não verbais, exclusiva do Texto II"
+          },
+          "correta": "B",
+          "explicacao": "A diferença fundamental está na função comunicativa: o Texto I é propaganda institucional/educativa (do Ministério da Saúde), com objetivo de promover comportamento saudável de interesse público, sem fins comerciais. O Texto II é propaganda comercial, visando vender produto específico para gerar lucro. Ambos usam imagens e elementos não verbais; ambos têm linguagem adequada ao público (não há diferença significativa de formalidade); ambos têm público-alvo definido (mães/gestantes versus potenciais compradores de carro). A distinção está no propósito: educação/saúde pública versus consumo/lucro. É importante reconhecer essa diferença, pois propaganda institucional apela para bem-estar coletivo, enquanto comercial apela para desejo individual.",
+          "dificuldade": "medio",
+          "tags": ["publicidade", "propaganda", "funcao-social"]
+        }
+      ]
+    }
+  ]
+}

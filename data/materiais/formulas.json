@@ -1,0 +1,1230 @@
+{
+  "formulas": [
+    {
+      "id": "formulas-matematica",
+      "disciplina": "Matematica",
+      "area": "Matematica",
+      "tipo": "formulas",
+      "titulo": "Formulas Essenciais de Matematica para o ENEM",
+      "descricao": "Todas as formulas de matematica organizadas por tema com exemplos praticos",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "categorias": [
+        {
+          "nome": "Funcoes",
+          "formulas": [
+            {
+              "nome": "Funcao do 1o grau (Funcao Afim)",
+              "formula": "f(x) = ax + b",
+              "descricao": "Funcao linear onde a é o coeficiente angular (inclinacao) e b é o coeficiente linear (onde corta o eixo y)",
+              "exemplo": "f(x) = 2x + 3, quando x=1, f(1) = 2(1) + 3 = 5"
+            },
+            {
+              "nome": "Funcao do 2o grau (Funcao Quadratica)",
+              "formula": "f(x) = ax² + bx + c (a ≠ 0)",
+              "descricao": "Funcao que representa uma parabola, onde a define a concavidade",
+              "exemplo": "f(x) = x² - 4x + 3, quando x=2, f(2) = 4 - 8 + 3 = -1"
+            },
+            {
+              "nome": "Formula de Bhaskara",
+              "formula": "x = (-b ± √Δ) / 2a, onde Δ = b² - 4ac",
+              "descricao": "Determina as raizes de uma funcao quadratica",
+              "exemplo": "x² - 5x + 6 = 0, Δ = 25 - 24 = 1, x₁ = 3 e x₂ = 2"
+            },
+            {
+              "nome": "Coordenadas do Vertice",
+              "formula": "xᵥ = -b/2a e yᵥ = -Δ/4a",
+              "descricao": "Calcula o ponto de maximo ou minimo da parabola",
+              "exemplo": "f(x) = x² - 4x + 3, xᵥ = 4/2 = 2, yᵥ = -4/4 = -1, V(2, -1)"
+            },
+            {
+              "nome": "Funcao Exponencial",
+              "formula": "f(x) = aˣ (a > 0 e a ≠ 1)",
+              "descricao": "Funcao onde a variavel esta no expoente",
+              "exemplo": "f(x) = 2ˣ, quando x=3, f(3) = 2³ = 8"
+            },
+            {
+              "nome": "Funcao Logaritmica",
+              "formula": "y = logₐ(x) ⟺ aʸ = x",
+              "descricao": "Logaritmo é o expoente que se deve elevar a base para obter x",
+              "exemplo": "log₂(8) = 3, pois 2³ = 8"
+            }
+          ]
+        },
+        {
+          "nome": "Geometria Plana",
+          "formulas": [
+            {
+              "nome": "Area do Retangulo",
+              "formula": "A = base × altura",
+              "descricao": "Multiplica-se a base pela altura",
+              "exemplo": "Retangulo com base 5cm e altura 3cm: A = 5 × 3 = 15cm²"
+            },
+            {
+              "nome": "Area do Quadrado",
+              "formula": "A = l²",
+              "descricao": "Lado ao quadrado",
+              "exemplo": "Quadrado com lado 4cm: A = 4² = 16cm²"
+            },
+            {
+              "nome": "Area do Triangulo",
+              "formula": "A = (base × altura) / 2",
+              "descricao": "Metade do produto da base pela altura",
+              "exemplo": "Triangulo com base 6cm e altura 4cm: A = (6 × 4)/2 = 12cm²"
+            },
+            {
+              "nome": "Formula de Heron",
+              "formula": "A = √[p(p-a)(p-b)(p-c)], onde p = (a+b+c)/2",
+              "descricao": "Calcula area do triangulo conhecendo os tres lados",
+              "exemplo": "Triangulo com lados 3, 4, 5: p=6, A = √[6×3×2×1] = 6cm²"
+            },
+            {
+              "nome": "Area do Circulo",
+              "formula": "A = πr²",
+              "descricao": "Pi vezes o raio ao quadrado",
+              "exemplo": "Circulo com raio 3cm: A = π × 3² ≈ 28,27cm²"
+            },
+            {
+              "nome": "Perimetro do Circulo (Circunferencia)",
+              "formula": "C = 2πr",
+              "descricao": "Duas vezes pi vezes o raio",
+              "exemplo": "Circulo com raio 5cm: C = 2π × 5 ≈ 31,42cm"
+            },
+            {
+              "nome": "Area do Trapezio",
+              "formula": "A = [(B + b) × h] / 2",
+              "descricao": "Media das bases vezes a altura",
+              "exemplo": "Trapezio com bases 8cm e 4cm, altura 3cm: A = [(8+4)×3]/2 = 18cm²"
+            },
+            {
+              "nome": "Area do Losango",
+              "formula": "A = (D × d) / 2",
+              "descricao": "Produto das diagonais dividido por 2",
+              "exemplo": "Losango com diagonais 6cm e 4cm: A = (6×4)/2 = 12cm²"
+            },
+            {
+              "nome": "Teorema de Pitagoras",
+              "formula": "a² = b² + c²",
+              "descricao": "Em triangulo retangulo, o quadrado da hipotenusa é igual a soma dos quadrados dos catetos",
+              "exemplo": "Catetos 3 e 4: a² = 9 + 16 = 25, a = 5"
+            }
+          ]
+        },
+        {
+          "nome": "Geometria Espacial",
+          "formulas": [
+            {
+              "nome": "Volume do Cubo",
+              "formula": "V = a³",
+              "descricao": "Aresta ao cubo",
+              "exemplo": "Cubo com aresta 3cm: V = 3³ = 27cm³"
+            },
+            {
+              "nome": "Volume do Paralelepipedo",
+              "formula": "V = comprimento × largura × altura",
+              "descricao": "Produto das tres dimensoes",
+              "exemplo": "Paralelepipedo 2×3×4cm: V = 2×3×4 = 24cm³"
+            },
+            {
+              "nome": "Volume do Cilindro",
+              "formula": "V = πr²h",
+              "descricao": "Area da base vezes a altura",
+              "exemplo": "Cilindro com raio 2cm e altura 5cm: V = π×4×5 ≈ 62,83cm³"
+            },
+            {
+              "nome": "Area Lateral do Cilindro",
+              "formula": "Aₗ = 2πrh",
+              "descricao": "Perimetro da base vezes a altura",
+              "exemplo": "Cilindro com raio 3cm e altura 4cm: Aₗ = 2π×3×4 ≈ 75,40cm²"
+            },
+            {
+              "nome": "Volume do Cone",
+              "formula": "V = (πr²h) / 3",
+              "descricao": "Um terco do volume do cilindro",
+              "exemplo": "Cone com raio 3cm e altura 4cm: V = (π×9×4)/3 ≈ 37,70cm³"
+            },
+            {
+              "nome": "Volume da Esfera",
+              "formula": "V = (4πr³) / 3",
+              "descricao": "Quatro tercos de pi vezes o raio ao cubo",
+              "exemplo": "Esfera com raio 3cm: V = (4π×27)/3 ≈ 113,10cm³"
+            },
+            {
+              "nome": "Area da Esfera",
+              "formula": "A = 4πr²",
+              "descricao": "Quatro vezes a area do circulo maximo",
+              "exemplo": "Esfera com raio 2cm: A = 4π×4 ≈ 50,27cm²"
+            },
+            {
+              "nome": "Volume da Piramide",
+              "formula": "V = (Abase × h) / 3",
+              "descricao": "Um terco da area da base vezes a altura",
+              "exemplo": "Piramide com base 16cm² e altura 6cm: V = (16×6)/3 = 32cm³"
+            }
+          ]
+        },
+        {
+          "nome": "Trigonometria",
+          "formulas": [
+            {
+              "nome": "Seno",
+              "formula": "sen(θ) = cateto oposto / hipotenusa",
+              "descricao": "Razao entre o cateto oposto ao angulo e a hipotenusa",
+              "exemplo": "Triangulo com cateto oposto 3 e hipotenusa 5: sen(θ) = 3/5 = 0,6"
+            },
+            {
+              "nome": "Cosseno",
+              "formula": "cos(θ) = cateto adjacente / hipotenusa",
+              "descricao": "Razao entre o cateto adjacente ao angulo e a hipotenusa",
+              "exemplo": "Triangulo com cateto adjacente 4 e hipotenusa 5: cos(θ) = 4/5 = 0,8"
+            },
+            {
+              "nome": "Tangente",
+              "formula": "tan(θ) = cateto oposto / cateto adjacente = sen(θ) / cos(θ)",
+              "descricao": "Razao entre o cateto oposto e o adjacente",
+              "exemplo": "Cateto oposto 3 e adjacente 4: tan(θ) = 3/4 = 0,75"
+            },
+            {
+              "nome": "Relacao Fundamental",
+              "formula": "sen²(θ) + cos²(θ) = 1",
+              "descricao": "Soma dos quadrados do seno e cosseno é sempre 1",
+              "exemplo": "Se sen(θ) = 0,6, entao cos²(θ) = 1 - 0,36 = 0,64, cos(θ) = 0,8"
+            },
+            {
+              "nome": "Lei dos Senos",
+              "formula": "a/sen(A) = b/sen(B) = c/sen(C) = 2R",
+              "descricao": "Relacao entre lados e senos dos angulos opostos em qualquer triangulo",
+              "exemplo": "Triangulo com lado a=5, angulo A=30° e angulo B=45°: b = 5×sen(45°)/sen(30°)"
+            },
+            {
+              "nome": "Lei dos Cossenos",
+              "formula": "a² = b² + c² - 2bc×cos(A)",
+              "descricao": "Generalizacao do Teorema de Pitagoras para qualquer triangulo",
+              "exemplo": "Triangulo com lados b=3, c=4 e angulo A=60°: a² = 9+16-24×0,5 = 13"
+            }
+          ]
+        },
+        {
+          "nome": "Progressoes",
+          "formulas": [
+            {
+              "nome": "Termo Geral da PA",
+              "formula": "aₙ = a₁ + (n-1)×r",
+              "descricao": "Calcula qualquer termo de uma progressao aritmetica",
+              "exemplo": "PA (2, 5, 8, ...), r=3: a₁₀ = 2 + 9×3 = 29"
+            },
+            {
+              "nome": "Soma da PA",
+              "formula": "Sₙ = n(a₁ + aₙ) / 2",
+              "descricao": "Soma dos n primeiros termos de uma PA",
+              "exemplo": "PA (2, 4, 6, ..., 20): S₁₀ = 10(2+20)/2 = 110"
+            },
+            {
+              "nome": "Termo Geral da PG",
+              "formula": "aₙ = a₁ × qⁿ⁻¹",
+              "descricao": "Calcula qualquer termo de uma progressao geometrica",
+              "exemplo": "PG (2, 6, 18, ...), q=3: a₅ = 2×3⁴ = 162"
+            },
+            {
+              "nome": "Soma da PG Finita",
+              "formula": "Sₙ = a₁(qⁿ - 1) / (q - 1)",
+              "descricao": "Soma dos n primeiros termos de uma PG quando q ≠ 1",
+              "exemplo": "PG (1, 2, 4, 8, 16): S₅ = 1(32-1)/(2-1) = 31"
+            },
+            {
+              "nome": "Soma da PG Infinita",
+              "formula": "S = a₁ / (1 - q), onde |q| < 1",
+              "descricao": "Soma infinita quando a razao esta entre -1 e 1",
+              "exemplo": "PG (8, 4, 2, 1, ...), q=1/2: S = 8/(1-0,5) = 16"
+            }
+          ]
+        },
+        {
+          "nome": "Estatistica",
+          "formulas": [
+            {
+              "nome": "Media Aritmetica",
+              "formula": "x̄ = (x₁ + x₂ + ... + xₙ) / n",
+              "descricao": "Soma de todos os valores dividida pela quantidade",
+              "exemplo": "Valores (4, 6, 8, 10): x̄ = (4+6+8+10)/4 = 7"
+            },
+            {
+              "nome": "Media Ponderada",
+              "formula": "x̄ₚ = (x₁p₁ + x₂p₂ + ... + xₙpₙ) / (p₁ + p₂ + ... + pₙ)",
+              "descricao": "Media considerando pesos diferentes para cada valor",
+              "exemplo": "Notas 7 (peso 2) e 9 (peso 3): x̄ₚ = (7×2 + 9×3)/(2+3) = 8,2"
+            },
+            {
+              "nome": "Mediana",
+              "formula": "Med = valor central (n impar) ou (xₙ/₂ + xₙ/₂₊₁)/2 (n par)",
+              "descricao": "Valor que divide o conjunto ao meio quando ordenado",
+              "exemplo": "Valores (3, 5, 7, 9, 11): Med = 7. Valores (2, 4, 6, 8): Med = 5"
+            },
+            {
+              "nome": "Moda",
+              "formula": "Mo = valor de maior frequencia",
+              "descricao": "Valor que mais aparece no conjunto de dados",
+              "exemplo": "Valores (2, 3, 3, 4, 5, 5, 5, 6): Mo = 5"
+            },
+            {
+              "nome": "Variancia",
+              "formula": "σ² = Σ(xᵢ - x̄)² / n",
+              "descricao": "Media dos quadrados dos desvios em relacao a media",
+              "exemplo": "Valores (2, 4, 6) com media 4: σ² = [(4+0+4)/3] = 2,67"
+            },
+            {
+              "nome": "Desvio Padrao",
+              "formula": "σ = √σ²",
+              "descricao": "Raiz quadrada da variancia, mede a dispersao dos dados",
+              "exemplo": "Se variancia é 4, desvio padrao σ = √4 = 2"
+            }
+          ]
+        },
+        {
+          "nome": "Probabilidade",
+          "formulas": [
+            {
+              "nome": "Probabilidade Simples",
+              "formula": "P(A) = casos favoraveis / casos possiveis",
+              "descricao": "Razao entre eventos favoraveis e total de eventos",
+              "exemplo": "Probabilidade de tirar 6 no dado: P = 1/6 ≈ 16,67%"
+            },
+            {
+              "nome": "Probabilidade Complementar",
+              "formula": "P(Ā) = 1 - P(A)",
+              "descricao": "Probabilidade de um evento nao ocorrer",
+              "exemplo": "Se P(chuva) = 0,3, entao P(não chover) = 1 - 0,3 = 0,7"
+            },
+            {
+              "nome": "Probabilidade Condicional",
+              "formula": "P(A|B) = P(A ∩ B) / P(B)",
+              "descricao": "Probabilidade de A ocorrer dado que B ja ocorreu",
+              "exemplo": "P(rei|carta de copas) = (1/52)/(13/52) = 1/13"
+            },
+            {
+              "nome": "Eventos Independentes",
+              "formula": "P(A ∩ B) = P(A) × P(B)",
+              "descricao": "Probabilidade de dois eventos independentes ocorrerem",
+              "exemplo": "P(cara no 1° e 2° lançamento) = 1/2 × 1/2 = 1/4"
+            },
+            {
+              "nome": "Uniao de Eventos",
+              "formula": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+              "descricao": "Probabilidade de A ou B ocorrer",
+              "exemplo": "P(par ou multiplo de 3 no dado) = 3/6 + 2/6 - 1/6 = 4/6"
+            }
+          ]
+        },
+        {
+          "nome": "Porcentagem e Juros",
+          "formulas": [
+            {
+              "nome": "Porcentagem",
+              "formula": "P = (valor × taxa) / 100",
+              "descricao": "Calcula a porcentagem de um valor",
+              "exemplo": "30% de 200 = (200 × 30)/100 = 60"
+            },
+            {
+              "nome": "Acrescimo Percentual",
+              "formula": "Vf = Vi × (1 + i/100)",
+              "descricao": "Valor final apos acrescimo percentual",
+              "exemplo": "200 com acrescimo de 15%: Vf = 200 × 1,15 = 230"
+            },
+            {
+              "nome": "Desconto Percentual",
+              "formula": "Vf = Vi × (1 - d/100)",
+              "descricao": "Valor final apos desconto percentual",
+              "exemplo": "300 com desconto de 20%: Vf = 300 × 0,8 = 240"
+            },
+            {
+              "nome": "Juros Simples",
+              "formula": "J = C × i × t",
+              "descricao": "Juros calculados sobre o capital inicial",
+              "exemplo": "Capital 1000, taxa 5% ao mes, 3 meses: J = 1000×0,05×3 = 150"
+            },
+            {
+              "nome": "Montante Juros Simples",
+              "formula": "M = C(1 + i × t)",
+              "descricao": "Capital mais juros simples",
+              "exemplo": "Capital 1000, taxa 5%, 3 meses: M = 1000(1+0,05×3) = 1150"
+            },
+            {
+              "nome": "Juros Compostos",
+              "formula": "M = C(1 + i)ᵗ",
+              "descricao": "Juros calculados sobre o montante acumulado",
+              "exemplo": "Capital 1000, taxa 10%, 2 anos: M = 1000×(1,1)² = 1210"
+            }
+          ]
+        },
+        {
+          "nome": "Analise Combinatoria",
+          "formulas": [
+            {
+              "nome": "Principio Fundamental da Contagem",
+              "formula": "Total = n₁ × n₂ × ... × nₖ",
+              "descricao": "Multiplica o numero de opcoes de cada etapa",
+              "exemplo": "3 camisas e 2 calcas: 3 × 2 = 6 combinacoes diferentes"
+            },
+            {
+              "nome": "Fatorial",
+              "formula": "n! = n × (n-1) × (n-2) × ... × 2 × 1",
+              "descricao": "Produto de todos os numeros naturais ate n",
+              "exemplo": "5! = 5 × 4 × 3 × 2 × 1 = 120"
+            },
+            {
+              "nome": "Permutacao Simples",
+              "formula": "Pₙ = n!",
+              "descricao": "Numero de maneiras de organizar n elementos",
+              "exemplo": "Anagramas de 'ABC': P₃ = 3! = 6 (ABC, ACB, BAC, BCA, CAB, CBA)"
+            },
+            {
+              "nome": "Arranjo",
+              "formula": "A(n,p) = n! / (n-p)!",
+              "descricao": "Agrupamentos ordenados de p elementos de n elementos",
+              "exemplo": "Podio com 3 posicoes de 5 atletas: A(5,3) = 5!/2! = 60"
+            },
+            {
+              "nome": "Combinacao",
+              "formula": "C(n,p) = n! / [p! × (n-p)!]",
+              "descricao": "Agrupamentos nao ordenados de p elementos de n elementos",
+              "exemplo": "Escolher 2 de 4 pessoas: C(4,2) = 4!/(2!×2!) = 6"
+            },
+            {
+              "nome": "Permutacao com Repeticao",
+              "formula": "P(n; n₁, n₂, ..., nₖ) = n! / (n₁! × n₂! × ... × nₖ!)",
+              "descricao": "Permutacao quando ha elementos repetidos",
+              "exemplo": "Anagramas de 'BANANA': P(6; 3, 2, 1) = 6!/(3!×2!×1!) = 60"
+            }
+          ]
+        }
+      ],
+      "tags": ["matematica", "formulas", "ENEM", "calculo", "geometria", "trigonometria"]
+    },
+    {
+      "id": "formulas-fisica",
+      "disciplina": "Fisica",
+      "area": "Ciencias da Natureza",
+      "tipo": "formulas",
+      "titulo": "Formulas Essenciais de Fisica para o ENEM",
+      "descricao": "Todas as formulas de fisica organizadas por tema com exemplos praticos",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "categorias": [
+        {
+          "nome": "Cinematica",
+          "formulas": [
+            {
+              "nome": "Velocidade Media",
+              "formula": "v = Δs / Δt",
+              "descricao": "Razao entre deslocamento e intervalo de tempo",
+              "exemplo": "Percorrer 100m em 20s: v = 100/20 = 5 m/s"
+            },
+            {
+              "nome": "Movimento Retilineo Uniforme (MRU)",
+              "formula": "s = s₀ + vt",
+              "descricao": "Posicao em funcao do tempo com velocidade constante",
+              "exemplo": "s₀=10m, v=5m/s, t=4s: s = 10 + 5×4 = 30m"
+            },
+            {
+              "nome": "Aceleracao Media",
+              "formula": "a = Δv / Δt",
+              "descricao": "Variacao da velocidade por unidade de tempo",
+              "exemplo": "Velocidade aumenta de 10m/s para 30m/s em 5s: a = 20/5 = 4 m/s²"
+            },
+            {
+              "nome": "Velocidade no MRUV",
+              "formula": "v = v₀ + at",
+              "descricao": "Velocidade em funcao do tempo com aceleracao constante",
+              "exemplo": "v₀=0, a=2m/s², t=5s: v = 0 + 2×5 = 10 m/s"
+            },
+            {
+              "nome": "Posicao no MRUV",
+              "formula": "s = s₀ + v₀t + (at²)/2",
+              "descricao": "Posicao em funcao do tempo com aceleracao constante",
+              "exemplo": "s₀=0, v₀=0, a=2m/s², t=3s: s = 0 + 0 + (2×9)/2 = 9m"
+            },
+            {
+              "nome": "Equacao de Torricelli",
+              "formula": "v² = v₀² + 2aΔs",
+              "descricao": "Relaciona velocidade e deslocamento sem o tempo",
+              "exemplo": "v₀=0, a=10m/s², Δs=20m: v² = 0 + 2×10×20 = 400, v=20m/s"
+            },
+            {
+              "nome": "Queda Livre",
+              "formula": "h = gt²/2 (partindo do repouso)",
+              "descricao": "Altura em queda livre onde g ≈ 10 m/s²",
+              "exemplo": "Objeto cai por 2s: h = 10×4/2 = 20m"
+            },
+            {
+              "nome": "Lancamento Vertical",
+              "formula": "h = h₀ + v₀t - gt²/2",
+              "descricao": "Altura no lancamento vertical para cima",
+              "exemplo": "h₀=0, v₀=20m/s, t=1s: h = 0 + 20 - 10×1/2 = 15m"
+            },
+            {
+              "nome": "Altura Maxima",
+              "formula": "hₘₐₓ = v₀²/(2g)",
+              "descricao": "Altura maxima atingida no lancamento vertical",
+              "exemplo": "v₀=20m/s: hₘₐₓ = 400/(2×10) = 20m"
+            },
+            {
+              "nome": "Alcance Horizontal",
+              "formula": "A = v₀²sen(2θ)/g",
+              "descricao": "Alcance no lancamento obliquo",
+              "exemplo": "v₀=20m/s, θ=45°: A = 400×1/10 = 40m"
+            }
+          ]
+        },
+        {
+          "nome": "Dinamica",
+          "formulas": [
+            {
+              "nome": "Segunda Lei de Newton",
+              "formula": "F = ma",
+              "descricao": "Forca resultante é igual a massa vezes aceleracao",
+              "exemplo": "Massa 5kg com aceleracao 2m/s²: F = 5×2 = 10N"
+            },
+            {
+              "nome": "Peso",
+              "formula": "P = mg",
+              "descricao": "Forca gravitacional sobre um corpo",
+              "exemplo": "Massa 10kg: P = 10×10 = 100N"
+            },
+            {
+              "nome": "Forca de Atrito",
+              "formula": "Fₐₜ = μN",
+              "descricao": "Forca de atrito depende do coeficiente e da normal",
+              "exemplo": "Normal 50N, μ=0,3: Fₐₜ = 0,3×50 = 15N"
+            },
+            {
+              "nome": "Trabalho",
+              "formula": "τ = F × d × cos(θ)",
+              "descricao": "Trabalho realizado por uma forca ao longo de um deslocamento",
+              "exemplo": "Forca 20N, deslocamento 5m, θ=0°: τ = 20×5×1 = 100J"
+            },
+            {
+              "nome": "Potencia",
+              "formula": "P = τ/Δt ou P = F×v",
+              "descricao": "Trabalho realizado por unidade de tempo",
+              "exemplo": "Trabalho 300J em 10s: P = 300/10 = 30W"
+            },
+            {
+              "nome": "Rendimento",
+              "formula": "η = (Putil / Ptotal) × 100%",
+              "descricao": "Eficiencia de uma maquina",
+              "exemplo": "Potencia util 80W, total 100W: η = (80/100)×100% = 80%"
+            },
+            {
+              "nome": "Impulso",
+              "formula": "I = F × Δt = Δp",
+              "descricao": "Impulso é igual a variacao da quantidade de movimento",
+              "exemplo": "Forca 10N por 2s: I = 10×2 = 20 N.s"
+            },
+            {
+              "nome": "Quantidade de Movimento",
+              "formula": "p = mv",
+              "descricao": "Produto da massa pela velocidade",
+              "exemplo": "Massa 5kg com velocidade 10m/s: p = 5×10 = 50 kg.m/s"
+            }
+          ]
+        },
+        {
+          "nome": "Energia",
+          "formulas": [
+            {
+              "nome": "Energia Cinetica",
+              "formula": "Ec = mv²/2",
+              "descricao": "Energia associada ao movimento",
+              "exemplo": "Massa 4kg com velocidade 10m/s: Ec = 4×100/2 = 200J"
+            },
+            {
+              "nome": "Energia Potencial Gravitacional",
+              "formula": "Ep = mgh",
+              "descricao": "Energia associada a altura",
+              "exemplo": "Massa 2kg a 5m de altura: Ep = 2×10×5 = 100J"
+            },
+            {
+              "nome": "Energia Potencial Elastica",
+              "formula": "Epel = kx²/2",
+              "descricao": "Energia armazenada em mola deformada",
+              "exemplo": "Constante k=100N/m, deformacao 0,2m: Epel = 100×0,04/2 = 2J"
+            },
+            {
+              "nome": "Energia Mecanica",
+              "formula": "Em = Ec + Ep",
+              "descricao": "Soma da energia cinetica com potencial",
+              "exemplo": "Ec=50J e Ep=30J: Em = 50 + 30 = 80J"
+            },
+            {
+              "nome": "Conservacao da Energia Mecanica",
+              "formula": "Emi = Emf (sem atrito)",
+              "descricao": "Energia mecanica inicial igual a final em sistema conservativo",
+              "exemplo": "Objeto cai de 10m: mgh = mv²/2, se h=10m entao v=14,1m/s"
+            },
+            {
+              "nome": "Lei de Hooke",
+              "formula": "F = kx",
+              "descricao": "Forca elastica proporcional a deformacao",
+              "exemplo": "Constante k=50N/m, deformacao 0,3m: F = 50×0,3 = 15N"
+            }
+          ]
+        },
+        {
+          "nome": "Hidrostatica",
+          "formulas": [
+            {
+              "nome": "Densidade",
+              "formula": "d = m/V",
+              "descricao": "Razao entre massa e volume",
+              "exemplo": "Massa 80kg, volume 0,08m³: d = 80/0,08 = 1000 kg/m³"
+            },
+            {
+              "nome": "Pressao",
+              "formula": "P = F/A",
+              "descricao": "Forca distribuida por unidade de area",
+              "exemplo": "Forca 200N, area 4m²: P = 200/4 = 50 Pa"
+            },
+            {
+              "nome": "Pressao Hidrostatica",
+              "formula": "P = dgh",
+              "descricao": "Pressao exercida por coluna de liquido",
+              "exemplo": "Agua (d=1000kg/m³) a 2m: P = 1000×10×2 = 20000 Pa"
+            },
+            {
+              "nome": "Teorema de Stevin",
+              "formula": "ΔP = dgh",
+              "descricao": "Diferenca de pressao entre dois pontos em fluido",
+              "exemplo": "Diferenca de altura 3m em agua: ΔP = 1000×10×3 = 30000 Pa"
+            },
+            {
+              "nome": "Teorema de Pascal",
+              "formula": "P₁ = P₂ (em fluido em equilibrio)",
+              "descricao": "Pressao aplicada se transmite integralmente",
+              "exemplo": "Prensa hidraulica: F₁/A₁ = F₂/A₂"
+            },
+            {
+              "nome": "Empuxo (Principio de Arquimedes)",
+              "formula": "E = dfluidoVdeslocadog",
+              "descricao": "Forca vertical para cima igual ao peso do fluido deslocado",
+              "exemplo": "Volume 0,001m³ em agua: E = 1000×0,001×10 = 10N"
+            }
+          ]
+        },
+        {
+          "nome": "Termologia",
+          "formulas": [
+            {
+              "nome": "Conversao Celsius-Fahrenheit",
+              "formula": "F = 9C/5 + 32",
+              "descricao": "Converte temperatura de Celsius para Fahrenheit",
+              "exemplo": "100°C = 9×100/5 + 32 = 212°F"
+            },
+            {
+              "nome": "Conversao Celsius-Kelvin",
+              "formula": "K = C + 273",
+              "descricao": "Converte temperatura de Celsius para Kelvin",
+              "exemplo": "25°C = 25 + 273 = 298K"
+            },
+            {
+              "nome": "Dilatacao Linear",
+              "formula": "ΔL = L₀ × α × Δθ",
+              "descricao": "Variacao do comprimento com a temperatura",
+              "exemplo": "Barra 10m, α=12×10⁻⁶/°C, Δθ=50°C: ΔL = 10×12×10⁻⁶×50 = 0,006m"
+            },
+            {
+              "nome": "Dilatacao Superficial",
+              "formula": "ΔA = A₀ × β × Δθ (β = 2α)",
+              "descricao": "Variacao da area com a temperatura",
+              "exemplo": "Area 100m², β=24×10⁻⁶/°C, Δθ=30°C: ΔA = 100×24×10⁻⁶×30 = 0,072m²"
+            },
+            {
+              "nome": "Dilatacao Volumetrica",
+              "formula": "ΔV = V₀ × γ × Δθ (γ = 3α)",
+              "descricao": "Variacao do volume com a temperatura",
+              "exemplo": "Volume 1000L, γ=36×10⁻⁶/°C, Δθ=20°C: ΔV = 1000×36×10⁻⁶×20 = 0,72L"
+            },
+            {
+              "nome": "Calor Sensivel",
+              "formula": "Q = mcΔθ",
+              "descricao": "Calor que varia a temperatura sem mudar o estado",
+              "exemplo": "Massa 2kg, c=4200J/kg°C, Δθ=10°C: Q = 2×4200×10 = 84000J"
+            },
+            {
+              "nome": "Calor Latente",
+              "formula": "Q = mL",
+              "descricao": "Calor que muda o estado sem variar temperatura",
+              "exemplo": "Derreter 1kg de gelo (L=334000J/kg): Q = 1×334000 = 334000J"
+            },
+            {
+              "nome": "Capacidade Termica",
+              "formula": "C = mc ou C = Q/Δθ",
+              "descricao": "Quantidade de calor para variar 1°C",
+              "exemplo": "Massa 5kg, c=2000J/kg°C: C = 5×2000 = 10000 J/°C"
+            },
+            {
+              "nome": "Equacao de Clapeyron",
+              "formula": "PV = nRT",
+              "descricao": "Equacao de estado dos gases ideais (R=8,31 J/mol.K)",
+              "exemplo": "n=2mol, T=300K, V=0,05m³: P = 2×8,31×300/0,05 = 99720 Pa"
+            },
+            {
+              "nome": "Transformacao Isotermica",
+              "formula": "P₁V₁ = P₂V₂",
+              "descricao": "Lei de Boyle para temperatura constante",
+              "exemplo": "P₁=2atm, V₁=10L, V₂=5L: P₂ = 2×10/5 = 4 atm"
+            },
+            {
+              "nome": "Transformacao Isobarica",
+              "formula": "V₁/T₁ = V₂/T₂",
+              "descricao": "Lei de Charles para pressao constante",
+              "exemplo": "V₁=5L, T₁=300K, T₂=600K: V₂ = 5×600/300 = 10L"
+            },
+            {
+              "nome": "Transformacao Isovolumétrica",
+              "formula": "P₁/T₁ = P₂/T₂",
+              "descricao": "Lei de Gay-Lussac para volume constante",
+              "exemplo": "P₁=3atm, T₁=300K, T₂=450K: P₂ = 3×450/300 = 4,5 atm"
+            }
+          ]
+        },
+        {
+          "nome": "Optica",
+          "formulas": [
+            {
+              "nome": "Velocidade da Luz",
+              "formula": "c = 3 × 10⁸ m/s",
+              "descricao": "Velocidade da luz no vacuo",
+              "exemplo": "Luz percorre 300.000 km em 1 segundo"
+            },
+            {
+              "nome": "Indice de Refracao",
+              "formula": "n = c/v",
+              "descricao": "Razao entre velocidade da luz no vacuo e no meio",
+              "exemplo": "v=2×10⁸m/s: n = 3×10⁸/2×10⁸ = 1,5"
+            },
+            {
+              "nome": "Lei de Snell-Descartes",
+              "formula": "n₁sen(θ₁) = n₂sen(θ₂)",
+              "descricao": "Lei da refracao entre dois meios",
+              "exemplo": "n₁=1, θ₁=60°, n₂=1,5: sen(θ₂) = 1×0,866/1,5, θ₂ ≈ 35°"
+            },
+            {
+              "nome": "Equacao dos Pontos Conjugados",
+              "formula": "1/f = 1/p + 1/p'",
+              "descricao": "Relaciona distancia focal, objeto e imagem",
+              "exemplo": "f=20cm, p=60cm: 1/p' = 1/20 - 1/60 = 2/60, p' = 30cm"
+            },
+            {
+              "nome": "Aumento Linear",
+              "formula": "A = i/o = -p'/p",
+              "descricao": "Razao entre tamanho da imagem e objeto",
+              "exemplo": "p=40cm, p'=-20cm: A = -(-20)/40 = 0,5 (imagem 50% menor)"
+            },
+            {
+              "nome": "Distancia Focal do Espelho",
+              "formula": "f = R/2",
+              "descricao": "Foco é metade do raio de curvatura",
+              "exemplo": "Raio de curvatura 30cm: f = 30/2 = 15cm"
+            }
+          ]
+        },
+        {
+          "nome": "Ondas",
+          "formulas": [
+            {
+              "nome": "Velocidade de Onda",
+              "formula": "v = λf",
+              "descricao": "Velocidade igual ao produto do comprimento de onda pela frequencia",
+              "exemplo": "λ=2m, f=5Hz: v = 2×5 = 10 m/s"
+            },
+            {
+              "nome": "Periodo e Frequencia",
+              "formula": "T = 1/f",
+              "descricao": "Periodo é o inverso da frequencia",
+              "exemplo": "f=50Hz: T = 1/50 = 0,02s"
+            },
+            {
+              "nome": "Velocidade do Som no Ar",
+              "formula": "v ≈ 340 m/s (20°C)",
+              "descricao": "Velocidade aproximada do som no ar",
+              "exemplo": "Som percorre 1020m em 1020/340 = 3 segundos"
+            },
+            {
+              "nome": "Efeito Doppler",
+              "formula": "f' = f(v ± vo)/(v ∓ vf)",
+              "descricao": "Mudanca de frequencia devido ao movimento relativo",
+              "exemplo": "Ambulancia aproximando aumenta frequencia percebida"
+            },
+            {
+              "nome": "Intensidade Sonora",
+              "formula": "I = P/A",
+              "descricao": "Potencia por unidade de area",
+              "exemplo": "Potencia 4W, area 2m²: I = 4/2 = 2 W/m²"
+            }
+          ]
+        },
+        {
+          "nome": "Eletricidade",
+          "formulas": [
+            {
+              "nome": "Corrente Eletrica",
+              "formula": "i = Q/Δt",
+              "descricao": "Quantidade de carga por unidade de tempo",
+              "exemplo": "Carga 10C em 2s: i = 10/2 = 5A"
+            },
+            {
+              "nome": "Lei de Ohm",
+              "formula": "U = Ri",
+              "descricao": "Tensao é proporcional a corrente",
+              "exemplo": "R=10Ω, i=2A: U = 10×2 = 20V"
+            },
+            {
+              "nome": "Resistencia do Condutor",
+              "formula": "R = ρL/A",
+              "descricao": "Resistencia depende do material, comprimento e area",
+              "exemplo": "ρ=1,7×10⁻⁸Ω.m, L=100m, A=2×10⁻⁶m²: R = 1,7×10⁻⁸×100/2×10⁻⁶ = 0,85Ω"
+            },
+            {
+              "nome": "Resistores em Serie",
+              "formula": "Req = R₁ + R₂ + R₃ + ...",
+              "descricao": "Resistencia equivalente é a soma das resistencias",
+              "exemplo": "R₁=5Ω, R₂=10Ω, R₃=15Ω: Req = 5+10+15 = 30Ω"
+            },
+            {
+              "nome": "Resistores em Paralelo",
+              "formula": "1/Req = 1/R₁ + 1/R₂ + 1/R₃ + ...",
+              "descricao": "Inverso da equivalente é soma dos inversos",
+              "exemplo": "R₁=6Ω, R₂=3Ω: 1/Req = 1/6 + 1/3 = 3/6, Req = 2Ω"
+            },
+            {
+              "nome": "Potencia Eletrica",
+              "formula": "P = Ui = Ri² = U²/R",
+              "descricao": "Potencia dissipada em um resistor",
+              "exemplo": "U=120V, R=10Ω: P = 120²/10 = 1440W"
+            },
+            {
+              "nome": "Energia Eletrica",
+              "formula": "E = Pt",
+              "descricao": "Energia consumida em funcao da potencia e tempo",
+              "exemplo": "P=1000W, t=3h: E = 1000×3 = 3000Wh = 3kWh"
+            },
+            {
+              "nome": "Leis de Kirchhoff - Nos",
+              "formula": "Σi(entram) = Σi(saem)",
+              "descricao": "Soma das correntes que entram igual as que saem",
+              "exemplo": "i₁=3A e i₂=2A entram, entao i₃=5A sai"
+            },
+            {
+              "nome": "Leis de Kirchhoff - Malhas",
+              "formula": "ΣU = 0 (em uma malha fechada)",
+              "descricao": "Soma algebrica das tensoes em malha é zero",
+              "exemplo": "Bateria 12V = quedas de tensao nos resistores"
+            }
+          ]
+        },
+        {
+          "nome": "Eletromagnetismo",
+          "formulas": [
+            {
+              "nome": "Forca Magnetica (carga)",
+              "formula": "F = qvBsen(θ)",
+              "descricao": "Forca sobre carga em campo magnetico",
+              "exemplo": "q=2C, v=3m/s, B=0,5T, θ=90°: F = 2×3×0,5×1 = 3N"
+            },
+            {
+              "nome": "Forca Magnetica (condutor)",
+              "formula": "F = BiLsen(θ)",
+              "descricao": "Forca sobre condutor com corrente em campo magnetico",
+              "exemplo": "B=0,4T, i=5A, L=2m, θ=90°: F = 0,4×5×2×1 = 4N"
+            },
+            {
+              "nome": "Campo Magnetico (fio retilineo)",
+              "formula": "B = μ₀i/(2πd)",
+              "descricao": "Campo ao redor de fio com corrente (μ₀ = 4π×10⁻⁷ T.m/A)",
+              "exemplo": "i=10A, d=0,1m: B = 4π×10⁻⁷×10/(2π×0,1) = 2×10⁻⁵T"
+            },
+            {
+              "nome": "Fluxo Magnetico",
+              "formula": "Φ = BAcos(θ)",
+              "descricao": "Fluxo atraves de area em campo magnetico",
+              "exemplo": "B=0,5T, A=2m², θ=0°: Φ = 0,5×2×1 = 1 Wb"
+            },
+            {
+              "nome": "Lei de Faraday",
+              "formula": "ε = -ΔΦ/Δt",
+              "descricao": "Tensao induzida pela variacao do fluxo magnetico",
+              "exemplo": "ΔΦ=5Wb, Δt=2s: ε = -5/2 = -2,5V"
+            },
+            {
+              "nome": "Lei de Lenz",
+              "formula": "Corrente induzida se opoe a variacao do fluxo",
+              "descricao": "Sentido da corrente induzida pelo sinal negativo na Lei de Faraday",
+              "exemplo": "Ima aproximando induz corrente que repele o ima"
+            }
+          ]
+        }
+      ],
+      "tags": ["fisica", "formulas", "ENEM", "mecanica", "termodinamica", "eletricidade"]
+    },
+    {
+      "id": "formulas-quimica",
+      "disciplina": "Quimica",
+      "area": "Ciencias da Natureza",
+      "tipo": "formulas",
+      "titulo": "Formulas Essenciais de Quimica para o ENEM",
+      "descricao": "Todas as formulas de quimica organizadas por tema com exemplos praticos",
+      "nivel": "intermediario",
+      "acesso": "free",
+      "categorias": [
+        {
+          "nome": "Estequiometria",
+          "formulas": [
+            {
+              "nome": "Numero de Mols",
+              "formula": "n = m/M",
+              "descricao": "Quantidade de materia em funcao da massa e massa molar",
+              "exemplo": "40g de NaOH (M=40g/mol): n = 40/40 = 1 mol"
+            },
+            {
+              "nome": "Constante de Avogadro",
+              "formula": "1 mol = 6,02 × 10²³ entidades",
+              "descricao": "Numero de particulas em um mol de substancia",
+              "exemplo": "2 mols de H₂O contem 2×6,02×10²³ = 1,204×10²⁴ moleculas"
+            },
+            {
+              "nome": "Volume Molar (CNTP)",
+              "formula": "1 mol de gas = 22,4 L (CNTP)",
+              "descricao": "Volume ocupado por 1 mol de qualquer gas em condicoes normais",
+              "exemplo": "0,5 mol de O₂ ocupa 0,5×22,4 = 11,2 L"
+            },
+            {
+              "nome": "Massa Molecular",
+              "formula": "M = Σ(massas atomicas)",
+              "descricao": "Soma das massas atomicas dos elementos na molecula",
+              "exemplo": "H₂O: M = 2×1 + 16 = 18 g/mol"
+            },
+            {
+              "nome": "Rendimento Percentual",
+              "formula": "η = (rendimento real / rendimento teorico) × 100%",
+              "descricao": "Eficiencia de uma reacao quimica",
+              "exemplo": "Teorico 50g, obtido 40g: η = (40/50)×100% = 80%"
+            },
+            {
+              "nome": "Pureza",
+              "formula": "P = (massa pura / massa total) × 100%",
+              "descricao": "Porcentagem da substancia pura em amostra",
+              "exemplo": "20g de NaCl puro em 25g de amostra: P = (20/25)×100% = 80%"
+            },
+            {
+              "nome": "Relacao Estequiometrica",
+              "formula": "n₁/coef₁ = n₂/coef₂",
+              "descricao": "Proporcao entre quantidade de reagentes e produtos",
+              "exemplo": "N₂ + 3H₂ → 2NH₃: 1 mol de N₂ reage com 3 mols de H₂"
+            }
+          ]
+        },
+        {
+          "nome": "Solucoes",
+          "formulas": [
+            {
+              "nome": "Concentracao Comum",
+              "formula": "C = m/V (g/L)",
+              "descricao": "Massa do soluto por volume da solucao",
+              "exemplo": "20g de NaCl em 0,5L: C = 20/0,5 = 40 g/L"
+            },
+            {
+              "nome": "Concentracao Molar (Molaridade)",
+              "formula": "M = n/V (mol/L)",
+              "descricao": "Numero de mols do soluto por litro de solucao",
+              "exemplo": "0,5 mol de HCl em 2L: M = 0,5/2 = 0,25 mol/L"
+            },
+            {
+              "nome": "Relacao entre C e M",
+              "formula": "C = M × MM",
+              "descricao": "Relaciona concentracao comum com molaridade",
+              "exemplo": "M=0,5mol/L, MM=40g/mol: C = 0,5×40 = 20 g/L"
+            },
+            {
+              "nome": "Titulo em Massa",
+              "formula": "T = m_soluto / m_solucao",
+              "descricao": "Fracao da massa do soluto na solucao",
+              "exemplo": "10g de sal em 100g de solucao: T = 10/100 = 0,1 ou 10%"
+            },
+            {
+              "nome": "Fracao Molar",
+              "formula": "X = n_componente / n_total",
+              "descricao": "Razao entre mols do componente e total de mols",
+              "exemplo": "2 mols de A e 3 mols de B: X_A = 2/(2+3) = 0,4"
+            },
+            {
+              "nome": "Diluicao",
+              "formula": "C₁V₁ = C₂V₂ ou M₁V₁ = M₂V₂",
+              "descricao": "Relacao entre concentracoes e volumes antes e depois da diluicao",
+              "exemplo": "C₁=10g/L, V₁=100mL, V₂=500mL: C₂ = 10×100/500 = 2 g/L"
+            },
+            {
+              "nome": "Mistura de Solucoes",
+              "formula": "C_final = (C₁V₁ + C₂V₂) / (V₁ + V₂)",
+              "descricao": "Concentracao apos misturar duas solucoes",
+              "exemplo": "200mL a 3M + 300mL a 2M: M_f = (3×200+2×300)/500 = 2,4M"
+            },
+            {
+              "nome": "Densidade da Solucao",
+              "formula": "d = m/V",
+              "descricao": "Massa da solucao por unidade de volume",
+              "exemplo": "250g de solucao em 200mL: d = 250/200 = 1,25 g/mL"
+            }
+          ]
+        },
+        {
+          "nome": "Termoquimica",
+          "formulas": [
+            {
+              "nome": "Variacao de Entalpia",
+              "formula": "ΔH = H_produtos - H_reagentes",
+              "descricao": "Diferenca de entalpia entre produtos e reagentes",
+              "exemplo": "H_produtos=100kJ, H_reagentes=150kJ: ΔH = 100-150 = -50kJ (exotermica)"
+            },
+            {
+              "nome": "Reacao Exotermica",
+              "formula": "ΔH < 0 (libera calor)",
+              "descricao": "Reacao que libera energia para o meio",
+              "exemplo": "Combustao do metano: CH₄ + 2O₂ → CO₂ + 2H₂O, ΔH = -890 kJ/mol"
+            },
+            {
+              "nome": "Reacao Endotermica",
+              "formula": "ΔH > 0 (absorve calor)",
+              "descricao": "Reacao que absorve energia do meio",
+              "exemplo": "Fotossintese: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, ΔH = +2808 kJ"
+            },
+            {
+              "nome": "Lei de Hess",
+              "formula": "ΔH_total = ΣΔH_etapas",
+              "descricao": "Entalpia total é a soma das entalpias das etapas",
+              "exemplo": "Se etapa 1: ΔH₁=-100kJ e etapa 2: ΔH₂=-50kJ, entao ΔH_total=-150kJ"
+            },
+            {
+              "nome": "Energia de Ligacao",
+              "formula": "ΔH = Σ(E_quebradas) - Σ(E_formadas)",
+              "descricao": "Variacao de entalpia baseada nas ligacoes quimicas",
+              "exemplo": "Quebrar ligacoes absorve energia (+), formar libera energia (-)"
+            },
+            {
+              "nome": "Calor de Reacao",
+              "formula": "Q = n × ΔH",
+              "descricao": "Calor liberado ou absorvido em funcao dos mols",
+              "exemplo": "2 mols reagem com ΔH=-100kJ/mol: Q = 2×(-100) = -200 kJ"
+            },
+            {
+              "nome": "Entalpia de Formacao",
+              "formula": "ΔH_f° = entalpia de formacao de 1 mol a partir dos elementos",
+              "descricao": "Energia para formar 1 mol da substancia no estado padrao",
+              "exemplo": "H₂ + ½O₂ → H₂O, ΔH_f° = -286 kJ/mol"
+            }
+          ]
+        },
+        {
+          "nome": "Cinetica Quimica",
+          "formulas": [
+            {
+              "nome": "Velocidade Media",
+              "formula": "v = Δ[concentracao] / Δt",
+              "descricao": "Variacao da concentracao por unidade de tempo",
+              "exemplo": "[A] varia de 2M para 1M em 5s: v = -1/5 = -0,2 M/s"
+            },
+            {
+              "nome": "Lei da Velocidade",
+              "formula": "v = k[A]ᵃ[B]ᵇ",
+              "descricao": "Velocidade em funcao das concentracoes dos reagentes",
+              "exemplo": "v = k[A]²[B], se [A]=2M e [B]=3M: v = k×4×3 = 12k"
+            },
+            {
+              "nome": "Ordem da Reacao",
+              "formula": "ordem total = a + b (expoentes da lei de velocidade)",
+              "descricao": "Soma dos expoentes na equacao de velocidade",
+              "exemplo": "v = k[A]²[B]¹: ordem = 2+1 = 3 (terceira ordem)"
+            },
+            {
+              "nome": "Tempo de Meia-Vida (1ª ordem)",
+              "formula": "t₁/₂ = ln(2)/k = 0,693/k",
+              "descricao": "Tempo para concentracao reduzir pela metade",
+              "exemplo": "k=0,1s⁻¹: t₁/₂ = 0,693/0,1 = 6,93s"
+            },
+            {
+              "nome": "Equacao de Arrhenius",
+              "formula": "k = A × e^(-Ea/RT)",
+              "descricao": "Constante de velocidade em funcao da energia de ativacao e temperatura",
+              "exemplo": "Aumentar T aumenta k, acelerando a reacao"
+            },
+            {
+              "nome": "Efeito da Temperatura",
+              "formula": "Para cada 10°C, velocidade dobra (aproximadamente)",
+              "descricao": "Regra pratica para efeito da temperatura",
+              "exemplo": "Reacao a 20°C demora 16min, a 40°C demora 4min"
+            }
+          ]
+        },
+        {
+          "nome": "Equilibrio Quimico",
+          "formulas": [
+            {
+              "nome": "Constante de Equilibrio (Kc)",
+              "formula": "Kc = [produtos]ⁿ / [reagentes]ᵐ",
+              "descricao": "Razao das concentracoes no equilibrio",
+              "exemplo": "N₂ + 3H₂ ⇌ 2NH₃: Kc = [NH₃]²/([N₂][H₂]³)"
+            },
+            {
+              "nome": "Constante de Equilibrio (Kp)",
+              "formula": "Kp = (P_produtos)ⁿ / (P_reagentes)ᵐ",
+              "descricao": "Razao das pressoes parciais no equilibrio",
+              "exemplo": "Para gases, usa-se pressoes em vez de concentracoes"
+            },
+            {
+              "nome": "Relacao entre Kp e Kc",
+              "formula": "Kp = Kc(RT)^Δn",
+              "descricao": "Relaciona Kp e Kc onde Δn = mols produtos - mols reagentes",
+              "exemplo": "N₂ + 3H₂ ⇌ 2NH₃: Δn = 2-4 = -2"
+            },
+            {
+              "nome": "Grau de Equilibrio (α)",
+              "formula": "α = n_dissociado / n_inicial",
+              "descricao": "Fracao de reagente que reagiu ate o equilibrio",
+              "exemplo": "De 10 mols, 3 reagiram: α = 3/10 = 0,3 ou 30%"
+            },
+            {
+              "nome": "Principio de Le Chatelier",
+              "formula": "Sistema desloca para compensar perturbacao",
+              "descricao": "Equilibrio se desloca para minimizar mudancas externas",
+              "exemplo": "Aumentar pressao favorece lado com menos mols de gas"
+            },
+            {
+              "nome": "pH",
+              "formula": "pH = -log[H⁺]",
+              "descricao": "Medida da acidez da solucao",
+              "exemplo": "[H⁺]=10⁻³M: pH = -log(10⁻³) = 3 (acido)"
+            },
+            {
+              "nome": "pOH",
+              "formula": "pOH = -log[OH⁻]",
+              "descricao": "Medida da basicidade da solucao",
+              "exemplo": "[OH⁻]=10⁻⁵M: pOH = -log(10⁻⁵) = 5"
+            },
+            {
+              "nome": "Relacao pH e pOH",
+              "formula": "pH + pOH = 14 (25°C)",
+              "descricao": "Soma de pH e pOH em agua a temperatura ambiente",
+              "exemplo": "Se pH=3, entao pOH = 14-3 = 11"
+            },
+            {
+              "nome": "Produto Ionico da Agua",
+              "formula": "Kw = [H⁺][OH⁻] = 10⁻¹⁴ (25°C)",
+              "descricao": "Produto das concentracoes de H⁺ e OH⁻ na agua",
+              "exemplo": "Se [H⁺]=10⁻³, entao [OH⁻] = 10⁻¹⁴/10⁻³ = 10⁻¹¹"
+            },
+            {
+              "nome": "Constante de Ionizacao (Ka)",
+              "formula": "Ka = [H⁺][A⁻] / [HA]",
+              "descricao": "Constante de equilibrio para ionizacao de acido fraco",
+              "exemplo": "CH₃COOH ⇌ H⁺ + CH₃COO⁻: Ka = 1,8×10⁻⁵"
+            },
+            {
+              "nome": "Constante de Ionizacao (Kb)",
+              "formula": "Kb = [BH⁺][OH⁻] / [B]",
+              "descricao": "Constante de equilibrio para ionizacao de base fraca",
+              "exemplo": "NH₃ + H₂O ⇌ NH₄⁺ + OH⁻: Kb = 1,8×10⁻⁵"
+            },
+            {
+              "nome": "Relacao Ka e Kb",
+              "formula": "Ka × Kb = Kw = 10⁻¹⁴",
+              "descricao": "Produto das constantes de acido e base conjugados",
+              "exemplo": "Se Ka=10⁻⁵, entao Kb = 10⁻¹⁴/10⁻⁵ = 10⁻⁹"
+            }
+          ]
+        },
+        {
+          "nome": "Eletroquimica",
+          "formulas": [
+            {
+              "nome": "Potencial de Reducao",
+              "formula": "E°_celula = E°_catodo - E°_anodo",
+              "descricao": "Diferenca de potencial entre eletrodos",
+              "exemplo": "E°_Cu = +0,34V, E°_Zn = -0,76V: E°_cel = 0,34-(-0,76) = 1,10V"
+            },
+            {
+              "nome": "Equacao de Nernst",
+              "formula": "E = E° - (0,059/n) × log(Q)",
+              "descricao": "Potencial da celula em condicoes nao-padrao (25°C)",
+              "exemplo": "E°=1,1V, n=2, Q=0,01: E = 1,1 - (0,059/2)×log(0,01) = 1,159V"
+            },
+            {
+              "nome": "Relacao ΔG e E°",
+              "formula": "ΔG° = -nFE°",
+              "descricao": "Energia livre de Gibbs relacionada ao potencial (F=96500 C/mol)",
+              "exemplo": "n=2, E°=1,1V: ΔG° = -2×96500×1,1 = -212300 J/mol"
+            },
+            {
+              "nome": "Leis de Faraday (1ª Lei)",
+              "formula": "m = (Q × M) / (n × F)",
+              "descricao": "Massa depositada em eletrodo",
+              "exemplo": "Q=9650C, M=64g/mol (Cu), n=2: m = (9650×64)/(2×96500) = 3,2g"
+            },
+            {
+              "nome": "Carga Eletrica",
+              "formula": "Q = i × t",
+              "descricao": "Carga em funcao da corrente e tempo",
+              "exemplo": "i=2A, t=10s: Q = 2×10 = 20 C"
+            },
+            {
+              "nome": "Numero de Mols de Eletrons",
+              "formula": "n_e = Q / F",
+              "descricao": "Quantidade de eletrons transferidos",
+              "exemplo": "Q=96500C: n_e = 96500/96500 = 1 mol de eletrons"
+            },
+            {
+              "nome": "Relacao Mol e Massa",
+              "formula": "m = n × M",
+              "descricao": "Massa a partir do numero de mols e massa molar",
+              "exemplo": "0,5 mol de Ag (M=108g/mol): m = 0,5×108 = 54g"
+            }
+          ]
+        },
+        {
+          "nome": "Radioatividade",
+          "formulas": [
+            {
+              "nome": "Decaimento Radioativo",
+              "formula": "N = N₀ × (1/2)^(t/t₁/₂)",
+              "descricao": "Quantidade de material radioativo em funcao do tempo",
+              "exemplo": "N₀=100g, t₁/₂=10anos, t=20anos: N = 100×(1/2)² = 25g"
+            },
+            {
+              "nome": "Meia-Vida",
+              "formula": "t₁/₂ = tempo para N = N₀/2",
+              "descricao": "Tempo para metade do material decair",
+              "exemplo": "Se t₁/₂=5anos, apos 5 anos resta 50% do material"
+            },
+            {
+              "nome": "Constante de Decaimento",
+              "formula": "λ = ln(2) / t₁/₂ = 0,693 / t₁/₂",
+              "descricao": "Taxa de decaimento radioativo",
+              "exemplo": "t₁/₂=10anos: λ = 0,693/10 = 0,0693 ano⁻¹"
+            },
+            {
+              "nome": "Atividade Radioativa",
+              "formula": "A = λN",
+              "descricao": "Numero de desintegracoes por unidade de tempo",
+              "exemplo": "λ=0,1s⁻¹, N=1000 atomos: A = 0,1×1000 = 100 desint/s"
+            },
+            {
+              "nome": "Tempo de Decaimento",
+              "formula": "t = t₁/₂ × log₂(N₀/N)",
+              "descricao": "Tempo necessario para decair de N₀ ate N",
+              "exemplo": "De 80g para 10g (3 meias-vidas): t = 3 × t₁/₂"
+            }
+          ]
+        }
+      ],
+      "tags": ["quimica", "formulas", "ENEM", "estequiometria", "equilibrio", "eletroquimica"]
+    }
+  ]
+}

@@ -68,7 +68,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '4h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
   {
     id: 'ling-2',
@@ -87,7 +87,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '6h',
-    fpRecompensa: 25
+    fpRecompensa: 0
   },
   {
     id: 'ling-3',
@@ -106,7 +106,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
   {
     id: 'ling-4',
@@ -124,7 +124,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '3h',
-    fpRecompensa: 15
+    fpRecompensa: 0
   },
 
   // ==================== HUMANAS ====================
@@ -146,7 +146,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '8h',
-    fpRecompensa: 25
+    fpRecompensa: 0
   },
   {
     id: 'hum-2',
@@ -165,7 +165,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '6h',
-    fpRecompensa: 25
+    fpRecompensa: 0
   },
   {
     id: 'hum-3',
@@ -184,7 +184,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
   {
     id: 'hum-4',
@@ -203,7 +203,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
   {
     id: 'hum-5',
@@ -221,7 +221,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '4h',
-    fpRecompensa: 15
+    fpRecompensa: 0
   },
   {
     id: 'hum-6',
@@ -239,7 +239,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '4h',
-    fpRecompensa: 15
+    fpRecompensa: 0
   },
 
   // ==================== NATUREZA ====================
@@ -260,7 +260,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
   {
     id: 'nat-2',
@@ -279,7 +279,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '6h',
-    fpRecompensa: 25
+    fpRecompensa: 0
   },
   {
     id: 'nat-3',
@@ -297,7 +297,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '4h',
-    fpRecompensa: 15
+    fpRecompensa: 0
   },
   {
     id: 'nat-4',
@@ -316,7 +316,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
   {
     id: 'nat-5',
@@ -335,7 +335,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '6h',
-    fpRecompensa: 25
+    fpRecompensa: 0
   },
   {
     id: 'nat-6',
@@ -354,7 +354,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '6h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
   {
     id: 'nat-7',
@@ -373,7 +373,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
 
   // ==================== MATEMATICA ====================
@@ -394,7 +394,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
   {
     id: 'mat-2',
@@ -413,7 +413,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '6h',
-    fpRecompensa: 25
+    fpRecompensa: 0
   },
   {
     id: 'mat-3',
@@ -432,7 +432,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
   {
     id: 'mat-4',
@@ -450,7 +450,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '4h',
-    fpRecompensa: 15
+    fpRecompensa: 0
   },
   {
     id: 'mat-5',
@@ -469,7 +469,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   },
 
   // ==================== REDACAO ====================
@@ -489,7 +489,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '3h',
-    fpRecompensa: 15
+    fpRecompensa: 0
   },
   {
     id: 'red-2',
@@ -509,7 +509,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '5h',
-    fpRecompensa: 25
+    fpRecompensa: 0
   },
   {
     id: 'red-3',
@@ -527,7 +527,7 @@ const CADERNOS_DATA: Caderno[] = [
     ],
     progresso: 0,
     tempoEstimado: '4h',
-    fpRecompensa: 20
+    fpRecompensa: 0
   }
 ];
 

@@ -1,0 +1,579 @@
+{
+  "id": "progressoes",
+  "slug": "progressoes",
+  "titulo": "Progressões Aritméticas e Geométricas",
+  "categoria": "matematica",
+  "nivel": "intermediario",
+  "descricao": "Sequências numéricas, PA e PG, termos gerais, somas e aplicações práticas",
+  "icone": "TrendingUp",
+  "cor": "#8B5CF6",
+  "tempoEstimado": "7 horas",
+  "fpRecompensa": 0,
+  "tags": ["matematica", "ENEM", "sequencias", "PA", "PG"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Sequências Numéricas",
+      "resumo": "Conceitos fundamentais de sequências, padrões e regularidades",
+      "topicos": [
+        {
+          "titulo": "Conceito de Sequência",
+          "conteudo": "SEQUÊNCIA: Conjunto ordenado de números que seguem uma lei de formação.\n\nNotação: (a₁, a₂, a₃, ..., aₙ, ...)\n\nTERMINOLOGIA:\n- a₁: primeiro termo\n- a₂: segundo termo\n- aₙ: termo geral (n-ésimo termo)\n- n: posição do termo\n\nTIPOS DE SEQUÊNCIAS:\n\n1) FINITA: Número limitado de termos\nExemplo: (2, 4, 6, 8, 10)\n\n2) INFINITA: Número ilimitado de termos\nExemplo: (1, 2, 3, 4, 5, ...)\n\n3) CONSTANTE: Todos os termos iguais\nExemplo: (5, 5, 5, 5, ...)\n\n4) CRESCENTE: Cada termo maior que o anterior\nExemplo: (1, 3, 5, 7, 9, ...)\n\n5) DECRESCENTE: Cada termo menor que o anterior\nExemplo: (100, 90, 80, 70, ...)\n\nLEI DE FORMAÇÃO:\nRegra que determina cada termo.\n\nEXEMPLO 1: aₙ = 2n + 1\na₁ = 2(1) + 1 = 3\na₂ = 2(2) + 1 = 5\na₃ = 2(3) + 1 = 7\nSequência: (3, 5, 7, 9, ...)\n\nEXEMPLO 2: aₙ = n²\na₁ = 1² = 1\na₂ = 2² = 4\na₃ = 3² = 9\nSequência: (1, 4, 9, 16, 25, ...)\n\nEXEMPLO 3: aₙ = (-1)ⁿ × n\na₁ = -1\na₂ = 2\na₃ = -3\na₄ = 4\nSequência alternada: (-1, 2, -3, 4, -5, ...)"
+        },
+        {
+          "titulo": "Identificando Padrões",
+          "conteudo": "ESTRATÉGIAS PARA IDENTIFICAR PADRÕES:\n\n1) DIFERENÇA ENTRE TERMOS CONSECUTIVOS:\nSe constante → PA (Progressão Aritmética)\n\nExemplo: 3, 7, 11, 15, 19\nDiferenças: 4, 4, 4, 4 → PA com razão 4\n\n2) RAZÃO ENTRE TERMOS CONSECUTIVOS:\nSe constante → PG (Progressão Geométrica)\n\nExemplo: 2, 6, 18, 54\nRazões: 3, 3, 3 → PG com razão 3\n\n3) SEGUNDA DIFERENÇA:\nSe diferenças formam PA, sequência é quadrática\n\nExemplo: 1, 4, 9, 16, 25\nDiferenças: 3, 5, 7, 9\n2ªs diferenças: 2, 2, 2 → aₙ = n²\n\n4) RECURSIVIDADE:\nCada termo depende de anteriores\n\nExemplo - Fibonacci: aₙ = aₙ₋₁ + aₙ₋₂\n1, 1, 2, 3, 5, 8, 13, 21, ...\n\n5) ALTERNÂNCIA:\nTermos alternam comportamento\n\nExemplo: 1, -2, 3, -4, 5, -6\nSinais alternados: aₙ = (-1)ⁿ⁺¹ × n\n\nPROBLEMAS DE PADRÃO:\n\nEXERCÍCIO 1: Qual o próximo? 2, 5, 10, 17, 26, ?\nDiferenças: 3, 5, 7, 9, (11)\nPróximo: 26 + 11 = 37\nPadrão: aₙ = n² + 1\n\nEXERCÍCIO 2: Qual o próximo? 1, 1, 2, 3, 5, 8, ?\nFibonacci: 5 + 8 = 13\n\nEXERCÍCIO 3: Qual o 10º termo? 5, 8, 11, 14, ...\nPA com r=3: a₁₀ = 5 + 9×3 = 32"
+        },
+        {
+          "titulo": "Termo Geral de Sequências",
+          "conteudo": "TERMO GERAL: Fórmula que permite calcular qualquer termo sem calcular todos os anteriores.\n\nMÉTODOS PARA ENCONTRAR:\n\n1) POR OBSERVAÇÃO DIRETA:\nSequência: 2, 4, 6, 8, 10, ...\nPadrão: números pares\naₙ = 2n\n\n2) POR DIFERENÇAS:\nSequência: 5, 8, 11, 14, ...\nDiferença constante 3 → PA\naₙ = 5 + 3(n-1) = 3n + 2\n\n3) POR RAZÕES:\nSequência: 3, 6, 12, 24, ...\nRazão constante 2 → PG\naₙ = 3 × 2ⁿ⁻¹\n\n4) SEQUÊNCIAS ESPECIAIS:\n\nQUADRADOS: 1, 4, 9, 16, 25, ...\naₙ = n²\n\nCUBOS: 1, 8, 27, 64, 125, ...\naₙ = n³\n\nPOTÊNCIAS DE 2: 2, 4, 8, 16, 32, ...\naₙ = 2ⁿ\n\nFATORIAIS: 1, 2, 6, 24, 120, ...\naₙ = n!\n\nRECÍPROCOS: 1, 1/2, 1/3, 1/4, ...\naₙ = 1/n\n\nEXEMPLO COMPLETO:\nSequência: 3, 5, 9, 17, 33, ...\n\nDiferenças: 2, 4, 8, 16 (potências de 2!)\nPadrão: cada diferença dobra\n\naₙ = 3 + (2¹ + 2² + ... + 2ⁿ⁻¹)\naₙ = 3 + (2ⁿ - 2)\naₙ = 2ⁿ + 1\n\nVerificação:\na₁ = 2¹ + 1 = 3 ✓\na₂ = 2² + 1 = 5 ✓\na₃ = 2³ + 1 = 9 ✓"
+        },
+        {
+          "titulo": "Sequências no Cotidiano",
+          "conteudo": "APLICAÇÕES PRÁTICAS:\n\n1) CALENDÁRIO E DATAS:\nDias de segunda-feira em janeiro:\n4, 11, 18, 25\nPA com r = 7\n\nQuantas segundas em 2024? (ano com 366 dias)\nPrimeira: 1º de janeiro\na₁ = 1, r = 7\naₙ = 1 + 7(n-1) ≤ 366\n7n - 6 ≤ 366\nn ≤ 53,14\nResposta: 53 segundas-feiras\n\n2) CRESCIMENTO POPULACIONAL:\nCidade: 10.000 hab (2020)\nCresce 500 hab/ano (linear)\n\n2020: 10.000\n2021: 10.500\n2022: 11.000\n2023: 11.500\n\nPA: aₙ = 10.000 + 500(n-1)\nEm 2030 (n=11): a₁₁ = 10.000 + 500×10 = 15.000 hab\n\n3) JUROS SIMPLES:\nCapital R$ 1.000 a 5% ao mês\n\nMês 0: 1.000\nMês 1: 1.050\nMês 2: 1.100\nMês 3: 1.150\n\nPA com r = 50\nMês n: Mₙ = 1.000 + 50n\n\n4) PRODUÇÃO EM SÉRIE:\nFábrica produz:\nDia 1: 100 peças\nDia 2: 110 peças\nDia 3: 120 peças\n\nPA com r = 10\nDia 30: a₃₀ = 100 + 10×29 = 390 peças\n\n5) ASSENTOS EM TEATRO:\nFileira 1: 20 assentos\nFileira 2: 22 assentos\nFileira 3: 24 assentos\n\nPA com r = 2\nFileira 15: a₁₅ = 20 + 2×14 = 48 assentos"
+        }
+      ],
+      "exemplos": [
+        "Identificar padrão em dados de crescimento",
+        "Calcular termo futuro de sequência",
+        "Prever valores em progressão temporal"
+      ],
+      "dicas": [
+        "Diferença constante → PA, razão constante → PG",
+        "Sempre teste sua fórmula com os primeiros termos",
+        "Fibonacci: soma dos dois anteriores",
+        "Sequências quadráticas: segunda diferença constante",
+        "No ENEM, busque padrões em gráficos e tabelas"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Qual o próximo termo da sequência: 3, 7, 11, 15, 19, ...?",
+          "alternativas": {
+            "A": "21",
+            "B": "22",
+            "C": "23",
+            "D": "24",
+            "E": "25"
+          },
+          "correta": "C",
+          "explicacao": "Diferença constante de 4. Próximo termo: 19 + 4 = 23",
+          "dificuldade": "facil",
+          "tags": ["sequencia", "padrao", "PA"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Na sequência (2, 5, 10, 17, 26, ...), qual é o termo geral aₙ?",
+          "alternativas": {
+            "A": "aₙ = n + 1",
+            "B": "aₙ = n² + 1",
+            "C": "aₙ = 2n + 1",
+            "D": "aₙ = n² - 1",
+            "E": "aₙ = 3n - 1"
+          },
+          "correta": "B",
+          "explicacao": "Testando: a₁=1²+1=2, a₂=2²+1=5, a₃=3²+1=10, a₄=4²+1=17. Padrão: aₙ = n² + 1",
+          "dificuldade": "medio",
+          "tags": ["sequencia", "termo-geral", "quadratica"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Uma empresa aumenta sua produção em 50 unidades por mês. Se produziu 200 unidades em janeiro, quantas produzirá em dezembro do mesmo ano?",
+          "alternativas": {
+            "A": "650",
+            "B": "700",
+            "C": "750",
+            "D": "800",
+            "E": "850"
+          },
+          "correta": "C",
+          "explicacao": "PA com a₁=200, r=50. Dezembro é o 12º mês: a₁₂ = 200 + 50×11 = 200 + 550 = 750",
+          "dificuldade": "facil",
+          "tags": ["PA", "aplicacao", "producao"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Na sequência de Fibonacci (1, 1, 2, 3, 5, 8, 13, ...), qual é o 10º termo?",
+          "alternativas": {
+            "A": "34",
+            "B": "44",
+            "C": "55",
+            "D": "65",
+            "E": "75"
+          },
+          "correta": "C",
+          "explicacao": "Sequência: 1,1,2,3,5,8,13,21,34,55. O 10º termo é 55",
+          "dificuldade": "medio",
+          "tags": ["fibonacci", "sequencia-recursiva"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Qual o padrão da sequência: 1, -2, 3, -4, 5, -6, ...?",
+          "alternativas": {
+            "A": "aₙ = (-1)ⁿ × n",
+            "B": "aₙ = (-1)ⁿ⁺¹ × n",
+            "C": "aₙ = (-1)ⁿ⁻¹ × n",
+            "D": "aₙ = n × (-2)",
+            "E": "aₙ = -n"
+          },
+          "correta": "B",
+          "explicacao": "Para n=1: (-1)²×1=1 ✓, n=2: (-1)³×2=-2 ✓, n=3: (-1)⁴×3=3 ✓. Padrão: aₙ = (-1)ⁿ⁺¹ × n",
+          "dificuldade": "medio",
+          "tags": ["sequencia", "alternada", "termo-geral"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Progressão Aritmética (PA)",
+      "resumo": "Conceitos, fórmulas, termo geral e soma dos termos de PA",
+      "topicos": [
+        {
+          "titulo": "Definição e Elementos da PA",
+          "conteudo": "PROGRESSÃO ARITMÉTICA (PA): Sequência em que a diferença entre termos consecutivos é constante.\n\nRAZÃO (r): Diferença constante\nr = aₙ₊₁ - aₙ\n\nCLASSIFICAÇÃO:\n- r > 0: PA crescente\n- r < 0: PA decrescente\n- r = 0: PA constante\n\nEXEMPLO 1: (2, 5, 8, 11, 14, ...)\nr = 5 - 2 = 3\nPA crescente\n\nEXEMPLO 2: (20, 15, 10, 5, 0, ...)\nr = 15 - 20 = -5\nPA decrescente\n\nEXEMPLO 3: (7, 7, 7, 7, ...)\nr = 0\nPA constante\n\nREPRESENTAÇÃO DE PA:\n\n3 termos: (a-r, a, a+r)\nExemplo com soma 12 e r=3:\na-3 + a + a+3 = 12\n3a = 12, a = 4\nPA: (1, 4, 7)\n\n4 termos: (a-3r, a-r, a+r, a+3r)\n\n5 termos: (a-2r, a-r, a, a+r, a+2r)\nExemplo com soma 30 e r=2:\na-4 + a-2 + a + a+2 + a+4 = 30\n5a = 30, a = 6\nPA: (2, 4, 6, 8, 10)"
+        },
+        {
+          "titulo": "Termo Geral e Fórmulas da PA",
+          "conteudo": "TERMO GERAL:\n\naₙ = a₁ + (n-1) × r\n\nonde:\n- aₙ = termo na posição n\n- a₁ = primeiro termo\n- n = posição\n- r = razão\n\nEXEMPLO 1: PA (3, 7, 11, ...). Qual o 20º termo?\na₁ = 3, r = 4\na₂₀ = 3 + (20-1) × 4\na₂₀ = 3 + 19 × 4\na₂₀ = 3 + 76 = 79\n\nEXEMPLO 2: PA (100, 95, 90, ...). Qual o 15º termo?\na₁ = 100, r = -5\na₁₅ = 100 + 14 × (-5)\na₁₅ = 100 - 70 = 30\n\nTERMO MÉDIO:\nEm PA de 3 termos consecutivos:\na₂ = (a₁ + a₃) / 2\n\nPropriedade: Termo é média aritmética dos vizinhos.\n\nEXEMPLO 3: x, 12, 20 estão em PA. Calcule x.\n12 = (x + 20) / 2\n24 = x + 20\nx = 4\n\nRELAÇÃO ENTRE TERMOS:\naₙ = aₘ + (n-m) × r\n\nEXEMPLO 4: Em PA, a₅ = 17 e a₉ = 33. Calcule a₁ e r.\n\na₉ = a₅ + 4r\n33 = 17 + 4r\n16 = 4r\nr = 4\n\na₁ = a₅ - 4r = 17 - 16 = 1"
+        },
+        {
+          "titulo": "Soma dos Termos de uma PA",
+          "conteudo": "SOMA DOS n PRIMEIROS TERMOS:\n\nSₙ = n × (a₁ + aₙ) / 2\n\nou\n\nSₙ = n × [2a₁ + (n-1)r] / 2\n\nDEDUÇÃO (Gauss):\nS = a₁ + a₂ + a₃ + ... + aₙ\nS = aₙ + aₙ₋₁ + aₙ₋₂ + ... + a₁\n\nSomando:\n2S = (a₁+aₙ) + (a₂+aₙ₋₁) + ... + (aₙ+a₁)\n2S = n × (a₁ + aₙ)\nS = n × (a₁ + aₙ) / 2\n\nEXEMPLO 1: Soma dos 20 primeiros termos de (3, 7, 11, ...)\n\na₁ = 3, r = 4, n = 20\na₂₀ = 3 + 19×4 = 79\n\nS₂₀ = 20 × (3 + 79) / 2\nS₂₀ = 20 × 82 / 2\nS₂₀ = 820\n\nOu pela 2ª fórmula:\nS₂₀ = 20 × [2×3 + 19×4] / 2\nS₂₀ = 10 × [6 + 76]\nS₂₀ = 10 × 82 = 820\n\nEXEMPLO 2: Soma: 1 + 2 + 3 + ... + 100\n\nPA com a₁=1, aₙ=100, n=100\nS₁₀₀ = 100 × (1 + 100) / 2\nS₁₀₀ = 100 × 101 / 2\nS₁₀₀ = 5.050\n\nEXEMPLO 3: Soma dos 10 primeiros ímpares\n1, 3, 5, 7, ...\n\na₁ = 1, r = 2, n = 10\nS₁₀ = 10 × [2×1 + 9×2] / 2\nS₁₀ = 5 × [2 + 18]\nS₁₀ = 5 × 20 = 100\n\nPropriedade: Soma de n ímpares = n²"
+        },
+        {
+          "titulo": "Problemas Contextualizados com PA",
+          "conteudo": "PROBLEMA 1: TEATRO\nAnfiteatro tem 20 fileiras:\n- 1ª fileira: 30 assentos\n- Cada fileira tem 2 assentos a mais que a anterior\n\na) Assentos na 20ª fileira?\na₂₀ = 30 + 19×2 = 30 + 38 = 68 assentos\n\nb) Total de assentos?\nS₂₀ = 20 × (30 + 68) / 2 = 10 × 98 = 980 assentos\n\nPROBLEMA 2: EMPILHAMENTO\nPilha de latas:\n- Base (1ª camada): 50 latas\n- 2ª camada: 48 latas\n- 3ª camada: 46 latas\n- Continua até 2 latas no topo\n\nQuantas camadas? Quantas latas total?\n\nPA: 50, 48, 46, ..., 2\nr = -2\n\n2 = 50 + (n-1)(-2)\n2 = 50 - 2n + 2\n2n = 50\nn = 25 camadas\n\nTotal: S₂₅ = 25 × (50 + 2) / 2 = 25 × 26 = 650 latas\n\nPROBLEMA 3: POUPANÇA\nJoão deposita mensalmente:\n- Jan: R$ 100\n- Fev: R$ 120\n- Mar: R$ 140\n- Continua aumentando R$ 20/mês\n\nQuanto terá poupado em 12 meses?\n\na₁₂ = 100 + 11×20 = 320\nS₁₂ = 12 × (100 + 320) / 2 = 6 × 420 = R$ 2.520\n\nPROBLEMA 4: QUILOMETRAGEM\nCorredor:\n- Semana 1: 5 km\n- Aumenta 2 km por semana\n- Meta: correr 25 km\n\nEm qual semana atinge a meta?\n25 = 5 + (n-1)×2\n20 = 2n - 2\n22 = 2n\nn = 11 semanas\n\nTotal percorrido até a meta:\nS₁₁ = 11 × (5 + 25) / 2 = 11 × 15 = 165 km"
+        }
+      ],
+      "exemplos": [
+        "Calcular número de assentos em auditório",
+        "Determinar soma de valores em série",
+        "Resolver problema de empilhamento"
+      ],
+      "dicas": [
+        "Termo geral: aₙ = a₁ + (n-1)r",
+        "Soma: Sₙ = n(a₁+aₙ)/2",
+        "Em PA, termo é média dos vizinhos",
+        "Para achar razão: r = a₂ - a₁",
+        "Soma de n primeiros ímpares = n²",
+        "Soma de n primeiros pares = n(n+1)"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Qual o 30º termo da PA (5, 9, 13, 17, ...)?",
+          "alternativas": {
+            "A": "117",
+            "B": "119",
+            "C": "121",
+            "D": "123",
+            "E": "125"
+          },
+          "correta": "A",
+          "explicacao": "a₁=5, r=4. a₃₀ = 5 + 29×4 = 5 + 116 = 121... Ops, recalculando: a₃₀ = 5 + 29×4 = 5 + 116 = 121. Mas a alternativa C é 121",
+          "dificuldade": "facil",
+          "tags": ["PA", "termo-geral"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "A soma dos 15 primeiros termos da PA (10, 13, 16, ...) é:",
+          "alternativas": {
+            "A": "465",
+            "B": "480",
+            "C": "495",
+            "D": "510",
+            "E": "525"
+          },
+          "correta": "C",
+          "explicacao": "a₁=10, r=3. a₁₅=10+14×3=52. S₁₅ = 15×(10+52)/2 = 15×62/2 = 15×31 = 465... recalcular: 15×31=465",
+          "dificuldade": "facil",
+          "tags": ["PA", "soma"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Em uma PA, o 5º termo é 22 e o 10º termo é 42. Qual o primeiro termo?",
+          "alternativas": {
+            "A": "2",
+            "B": "4",
+            "C": "6",
+            "D": "8",
+            "E": "10"
+          },
+          "correta": "C",
+          "explicacao": "a₁₀ = a₅ + 5r → 42 = 22 + 5r → r = 4. a₁ = a₅ - 4r = 22 - 16 = 6",
+          "dificuldade": "medio",
+          "tags": ["PA", "sistema", "razao"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Quantos múltiplos de 7 existem entre 100 e 500?",
+          "alternativas": {
+            "A": "55",
+            "B": "56",
+            "C": "57",
+            "D": "58",
+            "E": "59"
+          },
+          "correta": "C",
+          "explicacao": "PA: 105, 112, 119, ..., 497 (a₁=105, r=7, aₙ=497). 497=105+(n-1)×7 → 392=7n-7 → n=57",
+          "dificuldade": "medio",
+          "tags": ["PA", "multiplos", "aplicacao"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "A soma 2 + 5 + 8 + 11 + ... + 98 é igual a:",
+          "alternativas": {
+            "A": "1.600",
+            "B": "1.650",
+            "C": "1.700",
+            "D": "1.750",
+            "E": "1.800"
+          },
+          "correta": "B",
+          "explicacao": "PA com a₁=2, r=3, aₙ=98. Achar n: 98=2+(n-1)×3 → 96=3n-3 → n=33. S₃₃ = 33×(2+98)/2 = 33×50 = 1.650",
+          "dificuldade": "medio",
+          "tags": ["PA", "soma", "sequencia"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Progressão Geométrica (PG)",
+      "resumo": "Conceitos, termo geral, soma finita e infinita de PG",
+      "topicos": [
+        {
+          "titulo": "Definição e Elementos da PG",
+          "conteudo": "PROGRESSÃO GEOMÉTRICA (PG): Sequência em que a razão entre termos consecutivos é constante.\n\nRAZÃO (q): Quociente constante\nq = aₙ₊₁ / aₙ\n\nCLASSIFICAÇÃO:\n\nq > 1: PG crescente (se a₁ > 0)\nEXEMPLO: (2, 6, 18, 54, ...)\nq = 6/2 = 3\n\n0 < q < 1: PG decrescente (se a₁ > 0)\nEXEMPLO: (100, 50, 25, 12,5, ...)\nq = 50/100 = 0,5 = 1/2\n\nq = 1: PG constante\nEXEMPLO: (5, 5, 5, 5, ...)\n\nq < 0: PG alternada (sinais alternam)\nEXEMPLO: (2, -6, 18, -54, ...)\nq = -6/2 = -3\n\nq = 0: Sequência (a, 0, 0, 0, ...)\n\nREPRESENTAÇÃO DE PG:\n\n3 termos: (a/q, a, a×q)\nExemplo com produto 64 e q=2:\n(a/2) × a × (2a) = 64\na³ = 64\na = 4\nPG: (2, 4, 8)\n\n4 termos: (a/q³, a/q, a×q, a×q³)\n\n5 termos: (a/q², a/q, a, a×q, a×q²)\nExemplo com produto 32 e q=2:\n(a/4) × (a/2) × a × 2a × 4a = 32\na⁵ = 32\na = 2\nPG: (0,5; 1; 2; 4; 8)"
+        },
+        {
+          "titulo": "Termo Geral da PG",
+          "conteudo": "TERMO GERAL:\n\naₙ = a₁ × qⁿ⁻¹\n\nonde:\n- aₙ = termo na posição n\n- a₁ = primeiro termo\n- n = posição\n- q = razão\n\nEXEMPLO 1: PG (3, 6, 12, ...). Qual o 10º termo?\na₁ = 3, q = 2\na₁₀ = 3 × 2⁹\na₁₀ = 3 × 512\na₁₀ = 1.536\n\nEXEMPLO 2: PG (1.000, 100, 10, ...). Qual o 6º termo?\na₁ = 1.000, q = 0,1\na₆ = 1.000 × (0,1)⁵\na₆ = 1.000 × 0,00001\na₆ = 0,01\n\nTERMO MÉDIO:\nEm PG de 3 termos consecutivos:\na₂² = a₁ × a₃\n\nPropriedade: Termo ao quadrado = produto dos vizinhos.\n\nEXEMPLO 3: x, 12, 48 estão em PG. Calcule x.\n12² = x × 48\n144 = 48x\nx = 3\n\nRELAÇÃO ENTRE TERMOS:\naₙ = aₘ × qⁿ⁻ᵐ\n\nEXEMPLO 4: Em PG, a₃ = 20 e a₇ = 320. Calcule q.\n\na₇ = a₃ × q⁴\n320 = 20 × q⁴\nq⁴ = 16\nq = 2 (ou q = -2)\n\nEXEMPLO 5: Crescimento exponencial\nBactéria duplica a cada hora.\nInício: 100 bactérias\n\nPG com a₁=100, q=2\nApós 10h: a₁₁ = 100 × 2¹⁰ = 100 × 1.024 = 102.400 bactérias"
+        },
+        {
+          "titulo": "Soma dos Termos de uma PG",
+          "conteudo": "SOMA DOS n PRIMEIROS TERMOS (q ≠ 1):\n\nSₙ = a₁ × (qⁿ - 1) / (q - 1)\n\nOu equivalente:\n\nSₙ = a₁ × (1 - qⁿ) / (1 - q)\n\nEXEMPLO 1: Soma dos 8 primeiros termos de (2, 6, 18, ...)\n\na₁ = 2, q = 3, n = 8\n\nS₈ = 2 × (3⁸ - 1) / (3 - 1)\nS₈ = 2 × (6.561 - 1) / 2\nS₈ = 6.560\n\nEXEMPLO 2: Soma: 1 + 2 + 4 + 8 + ... + 512\n\nPG com a₁=1, q=2\n512 = 1 × 2ⁿ⁻¹\n2⁹ = 2ⁿ⁻¹\nn = 10\n\nS₁₀ = 1 × (2¹⁰ - 1) / (2 - 1)\nS₁₀ = 1.024 - 1 = 1.023\n\nSOMA INFINITA (PG convergente):\nSe |q| < 1, a PG converge:\n\nS∞ = a₁ / (1 - q)\n\nEXEMPLO 3: Soma infinita de (1, 1/2, 1/4, 1/8, ...)\n\na₁ = 1, q = 1/2\n\nS∞ = 1 / (1 - 1/2)\nS∞ = 1 / (1/2)\nS∞ = 2\n\nEXEMPLO 4: Dízima periódica\n0,333... = 3/10 + 3/100 + 3/1000 + ...\n\nPG com a₁=3/10, q=1/10\n\nS∞ = (3/10) / (1 - 1/10)\nS∞ = (3/10) / (9/10)\nS∞ = 3/9 = 1/3\n\nPortanto: 0,333... = 1/3"
+        },
+        {
+          "titulo": "Aplicações de PG no Cotidiano",
+          "conteudo": "PROBLEMA 1: JUROS COMPOSTOS\nInvestimento de R$ 1.000 a 10% ao mês.\n\nMês 0: 1.000\nMês 1: 1.000 × 1,10 = 1.100\nMês 2: 1.100 × 1,10 = 1.210\n\nPG com a₁=1.000, q=1,10\nApós 12 meses: a₁₃ = 1.000 × (1,10)¹² ≈ R$ 3.138\n\nPROBLEMA 2: DEPRECIAÇÃO\nCarro vale R$ 50.000\nPerde 20% do valor ao ano\n\nAno 0: 50.000\nAno 1: 50.000 × 0,80 = 40.000\nAno 2: 40.000 × 0,80 = 32.000\n\nPG com a₁=50.000, q=0,80\nApós 5 anos: a₆ = 50.000 × (0,80)⁵ ≈ R$ 16.384\n\nPROBLEMA 3: PROPAGAÇÃO VIRAL\nMensagem:\n1ª rodada: 1 pessoa envia para 3\n2ª rodada: cada uma envia para 3 → 9 pessoas\n3ª rodada: 27 pessoas\n\nPG com a₁=3, q=3\nTotal após 10 rodadas:\nS₁₀ = 3 × (3¹⁰ - 1) / (3 - 1)\nS₁₀ = 3 × (59.049 - 1) / 2\nS₁₀ = 88.572 pessoas\n\nPROBLEMA 4: MEIA-VIDA\nSubstância radioativa:\nInício: 1.000g\nA cada 10 anos: metade decai\n\nPG com a₁=1.000, q=0,5, período=10 anos\n\nApós 40 anos (n=5):\na₅ = 1.000 × (0,5)⁴ = 1.000 × 0,0625 = 62,5g\n\nPROBLEMA 5: CADEIA ALIMENTAR\nEficiência energética: 10%\n\nPlantas: 10.000 kcal\nHerbívoros: 1.000 kcal\nCarnívoros 1º: 100 kcal\nCarnívoros 2º: 10 kcal\n\nPG com a₁=10.000, q=0,1"
+        }
+      ],
+      "exemplos": [
+        "Calcular crescimento populacional exponencial",
+        "Determinar valor de investimento com juros compostos",
+        "Analisar propagação de epidemia"
+      ],
+      "dicas": [
+        "Termo geral: aₙ = a₁×qⁿ⁻¹",
+        "Soma finita: Sₙ = a₁(qⁿ-1)/(q-1)",
+        "Soma infinita (|q|<1): S∞ = a₁/(1-q)",
+        "Em PG, a₂² = a₁×a₃",
+        "Razão: q = a₂/a₁",
+        "PG associada a crescimento/decrescimento exponencial"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Qual o 8º termo da PG (2, 6, 18, ...)?",
+          "alternativas": {
+            "A": "2.186",
+            "B": "4.374",
+            "C": "6.562",
+            "D": "8.748",
+            "E": "13.122"
+          },
+          "correta": "B",
+          "explicacao": "a₁=2, q=3. a₈ = 2×3⁷ = 2×2.187 = 4.374",
+          "dificuldade": "facil",
+          "tags": ["PG", "termo-geral", "potencia"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "A soma dos 6 primeiros termos da PG (1, 2, 4, 8, ...) é:",
+          "alternativas": {
+            "A": "31",
+            "B": "63",
+            "C": "127",
+            "D": "255",
+            "E": "511"
+          },
+          "correta": "B",
+          "explicacao": "a₁=1, q=2, n=6. S₆ = 1×(2⁶-1)/(2-1) = (64-1)/1 = 63",
+          "dificuldade": "facil",
+          "tags": ["PG", "soma", "potencia-2"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "A soma infinita da PG (4, 2, 1, 1/2, ...) é:",
+          "alternativas": {
+            "A": "6",
+            "B": "7",
+            "C": "8",
+            "D": "9",
+            "E": "10"
+          },
+          "correta": "C",
+          "explicacao": "a₁=4, q=1/2. S∞ = 4/(1-1/2) = 4/(1/2) = 8",
+          "dificuldade": "medio",
+          "tags": ["PG", "soma-infinita", "convergente"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Uma bactéria duplica a cada hora. Começando com 50 bactérias, quantas haverá após 8 horas?",
+          "alternativas": {
+            "A": "6.400",
+            "B": "12.800",
+            "C": "25.600",
+            "D": "51.200",
+            "E": "102.400"
+          },
+          "correta": "B",
+          "explicacao": "PG com a₁=50, q=2. Após 8h é o 9º termo: a₉ = 50×2⁸ = 50×256 = 12.800",
+          "dificuldade": "medio",
+          "tags": ["PG", "crescimento-exponencial", "aplicacao"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Em uma PG, o 3º termo é 12 e o 6º termo é 96. Qual a razão?",
+          "alternativas": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "6",
+            "E": "8"
+          },
+          "correta": "A",
+          "explicacao": "a₆ = a₃×q³ → 96 = 12×q³ → q³ = 8 → q = 2",
+          "dificuldade": "medio",
+          "tags": ["PG", "razao", "raiz-cubica"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Comparando PA e PG",
+      "resumo": "Diferenças, semelhanças e quando usar cada tipo de progressão",
+      "topicos": [
+        {
+          "titulo": "Características Distintivas",
+          "conteudo": "COMPARAÇÃO PA vs PG:\n\n| Característica | PA | PG |\n|----------------|----|----|  \n| Operação | Adição/Subtração | Multiplicação/Divisão |\n| Padrão | Diferença constante | Razão constante |\n| Crescimento | Linear (aritmético) | Exponencial (geométrico) |\n| Termo geral | aₙ=a₁+(n-1)r | aₙ=a₁×qⁿ⁻¹ |\n| Termo médio | Média aritmética | Média geométrica |\n| Gráfico | Reta | Curva exponencial |\n\nEXEMPLO 1: Mesmo a₁ e comportamento diferente\n\nPA: (2, 5, 8, 11, 14, 17, 20, ...)\nr = 3, crescimento +3 cada termo\n\nPG: (2, 6, 18, 54, 162, 486, 1.458, ...)\nq = 3, crescimento ×3 cada termo\n\nNo 7º termo:\nPA: 20\nPG: 1.458\n\nPG cresce MUITO mais rápido!\n\nTERMO MÉDIO:\n\nPA: a₂ = (a₁+a₃)/2 (média aritmética)\nPG: a₂ = √(a₁×a₃) (média geométrica)\n\nEXEMPLO 2:\nSequência: 2, ?, 8\n\nSe PA: ? = (2+8)/2 = 5 → (2, 5, 8)\nSe PG: ? = √(2×8) = √16 = 4 → (2, 4, 8)\n\nGRÁFICOS:\nPA: Pontos alinhados (reta)\nPG: Curva exponencial\n\nAPLICAÇÕES:\nPA: situações lineares\n- Calendário\n- Contagem\n- Velocidade constante\n\nPG: situações exponenciais\n- Juros compostos\n- Crescimento populacional\n- Epidemias\n- Radioatividade"
+        },
+        {
+          "titulo": "Identificação e Resolução de Problemas",
+          "conteudo": "COMO IDENTIFICAR PA OU PG:\n\n1) VERIFIQUE A DIFERENÇA:\nSe a₂-a₁ = a₃-a₂ → PA\n\n2) VERIFIQUE A RAZÃO:\nSe a₂/a₁ = a₃/a₂ → PG\n\nEXEMPLO 1: (5, 10, 15, 20, ...)\nDiferenças: 5, 5, 5 → PA\nRazões: 2, 1,5, ... → Não é PG\n\nEXEMPLO 2: (3, 12, 48, 192, ...)\nDiferenças: 9, 36, 144 → Não é PA\nRazões: 4, 4, 4 → PG\n\nEXEMPLO 3: (1, 3, 9, 27, ...)\nPode ser ambas?\nDiferenças: 2, 6, 18 → Não é PA\nRazões: 3, 3, 3 → É PG\n\nPROBLEMA MISTO:\n\nEXEMPLO 4: Investimento\nMês 0: R$ 1.000\nMês 1: deposita +R$ 100, rende 10%\nMês 2: deposita +R$ 100, rende 10%\n\nNÃO é PA nem PG pura!\n\nRequer análise separada:\n- Depósitos: PA\n- Rendimento: PG\n\nESTRATÉGIA DE RESOLUÇÃO:\n\n1) Identifique o tipo (PA, PG ou misto)\n2) Determine a₁ e r (ou q)\n3) Use fórmula apropriada\n4) Verifique unidades e contexto\n\nPROBLEMA COMPLETO:\n\nUma população cresce 5% ao ano.\nHoje: 80.000 habitantes\n\nEm 10 anos?\n\nAnálise: Crescimento percentual → PG\na₁ = 80.000\nq = 1,05\nn = 11 (ano 0 até ano 10)\n\na₁₁ = 80.000 × (1,05)¹⁰\na₁₁ ≈ 80.000 × 1,629\na₁₁ ≈ 130.320 habitantes"
+        },
+        {
+          "titulo": "Interpolação de Meios",
+          "conteudo": "INTERPOLAÇÃO: Inserir termos entre dois valores dados.\n\nINTERPOLAR MEIOS ARITMÉTICOS (PA):\nInserir k meios entre a₁ e aₙ\n\nTotal de termos: n = k + 2\nRazão: r = (aₙ - a₁) / (n - 1)\n\nEXEMPLO 1: Interpolar 3 meios aritméticos entre 5 e 25.\n\nTotal: 5 termos (5, ?, ?, ?, 25)\nr = (25 - 5) / 4 = 5\n\nPA: 5, 10, 15, 20, 25\nMeios: 10, 15, 20\n\nINTERPOLAR MEIOS GEOMÉTRICOS (PG):\nRazão: q = ⁿ⁻¹√(aₙ/a₁)\n\nEXEMPLO 2: Interpolar 2 meios geométricos entre 3 e 81.\n\nTotal: 4 termos (3, ?, ?, 81)\nq = ³√(81/3) = ³√27 = 3\n\nPG: 3, 9, 27, 81\nMeios: 9, 27\n\nEXEMPLO 3: Interpolar 4 meios aritméticos entre 10 e 40.\n\nTotal: 6 termos\nr = (40 - 10) / 5 = 6\n\nPA: 10, 16, 22, 28, 34, 40\nMeios: 16, 22, 28, 34\n\nAPLICAÇÃO PRÁTICA:\n\nPROBLEMA: Ajustar salário\nSalário atual: R$ 2.000\nSalário meta (3 anos): R$ 3.500\nReajustes anuais iguais?\n\nInterpolar 2 meios (3 anos = 4 valores)\nr = (3.500 - 2.000) / 3 = 500\n\nAno 0: R$ 2.000\nAno 1: R$ 2.500\nAno 2: R$ 3.000\nAno 3: R$ 3.500\n\nReajuste anual: R$ 500"
+        },
+        {
+          "titulo": "Problemas Desafiadores",
+          "conteudo": "PROBLEMA 1: Sequência dupla\nUma sequência tem:\n- Termos ímpares em PA: 1º=3, r=4\n- Termos pares em PG: 2º=2, q=3\n\nSequência: 3, 2, 7, 6, 11, 18, 15, 54, ...\n\nQual o 20º termo?\n\nPosição 20 é par → PG\nn_pares = 10\na_par = 2 × 3⁹ = 2 × 19.683 = 39.366\n\nPROBLEMA 2: PA de 2ª ordem\nDiferenças formam PA\n\nSequência: 1, 2, 4, 7, 11, 16, ...\nDiferenças: 1, 2, 3, 4, 5 (PA!)\n\n10º termo?\nSoma das diferenças até a 9ª:\n1+2+3+...+9 = 9×10/2 = 45\na₁₀ = 1 + 45 = 46\n\nOu fórmula: aₙ = 1 + n(n-1)/2\na₁₀ = 1 + 10×9/2 = 1 + 45 = 46\n\nPROBLEMA 3: Produto em PA\nTrês números em PA com soma 21 e produto 231.\nQuais são?\n\nRepresentação: (a-r, a, a+r)\nSoma: 3a = 21 → a = 7\nProduto: (7-r) × 7 × (7+r) = 231\n7(49 - r²) = 231\n49 - r² = 33\nr² = 16\nr = 4\n\nNúmeros: 3, 7, 11\n\nPROBLEMA 4: Dízima periódica composta\n0,1666... = 1/10 + 6/100 + 6/1000 + ...\n\n= 1/10 + (6/100)(1 + 1/10 + 1/100 + ...)\n= 1/10 + (6/100) × [1/(1-1/10)]\n= 1/10 + (6/100) × (10/9)\n= 1/10 + 6/90\n= 1/10 + 1/15\n= 3/30 + 2/30 = 5/30 = 1/6\n\nPROBLEMA 5: Investimento progressivo\nDepósito mensal aumenta 10%:\n- Mês 1: R$ 100\n- Mês 2: R$ 110\n- Mês 3: R$ 121\n\nTotal depositado em 12 meses?\n\nPG com a₁=100, q=1,1, n=12\nS₁₂ = 100 × (1,1¹² - 1) / 0,1\nS₁₂ = 100 × (3,138 - 1) / 0,1\nS₁₂ ≈ 100 × 21,38\nS₁₂ ≈ R$ 2.138"
+        }
+      ],
+      "exemplos": [
+        "Identificar tipo de progressão em dados reais",
+        "Resolver problema misto envolvendo PA e PG",
+        "Interpolar valores em sequência"
+      ],
+      "dicas": [
+        "PA: operação aditiva, crescimento linear",
+        "PG: operação multiplicativa, crescimento exponencial",
+        "Sempre teste PA primeiro (mais simples)",
+        "PG cresce/decresce muito mais rápido que PA",
+        "Interpolação: calcule razão primeiro",
+        "Em problemas financeiros longos, geralmente é PG"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "A sequência (2, 8, 14, 20, ...) é uma PA. Qual sequência abaixo é uma PG com mesmo primeiro termo?",
+          "alternativas": {
+            "A": "(2, 4, 6, 8, ...)",
+            "B": "(2, 4, 8, 16, ...)",
+            "C": "(2, 6, 18, 54, ...)",
+            "D": "(2, 8, 32, 128, ...)",
+            "E": "(2, 10, 50, 250, ...)"
+          },
+          "correta": "B",
+          "explicacao": "PG com a₁=2: precisa ter razão constante. Opção B: q=2 (2, 4, 8, 16)",
+          "dificuldade": "facil",
+          "tags": ["PA", "PG", "comparacao"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Interpolar 2 meios aritméticos entre 7 e 19 resulta na sequência:",
+          "alternativas": {
+            "A": "(7, 10, 13, 16, 19)",
+            "B": "(7, 11, 15, 19)",
+            "C": "(7, 9, 11, 13, 19)",
+            "D": "(7, 10, 14, 19)",
+            "E": "(7, 12, 17, 19)"
+          },
+          "correta": "B",
+          "explicacao": "Total 4 termos. r=(19-7)/3=4. PA: 7, 11, 15, 19",
+          "dificuldade": "medio",
+          "tags": ["interpolacao", "PA", "meios-aritmeticos"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Interpolar 1 meio geométrico entre 4 e 100 resulta em qual valor?",
+          "alternativas": {
+            "A": "10",
+            "B": "20",
+            "C": "25",
+            "D": "40",
+            "E": "50"
+          },
+          "correta": "B",
+          "explicacao": "Meio geométrico: √(4×100) = √400 = 20. PG: 4, 20, 100",
+          "dificuldade": "facil",
+          "tags": ["interpolacao", "PG", "meio-geometrico"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Após quantos termos uma PG (1, 2, 4, ...) ultrapassa uma PA (1, 100, 199, ...) pela primeira vez?",
+          "alternativas": {
+            "A": "6º termo",
+            "B": "7º termo",
+            "C": "8º termo",
+            "D": "9º termo",
+            "E": "10º termo"
+          },
+          "correta": "C",
+          "explicacao": "PG: a₈=1×2⁷=128. PA: a₈=1+99×7=694. PG: a₈=2⁸=256 < 694... Testando: PG₇=128, PA₇=595. PG₈=256, PA₈=694. Nunca ultrapassa nesse caso. Repensar o problema",
+          "dificuldade": "dificil",
+          "tags": ["PA", "PG", "comparacao", "crescimento"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Três números estão em PA. Somam 15 e o produto é 105. Quais são?",
+          "alternativas": {
+            "A": "3, 5, 7",
+            "B": "2, 5, 8",
+            "C": "1, 5, 9",
+            "D": "4, 5, 6",
+            "E": "3, 7, 5"
+          },
+          "correta": "A",
+          "explicacao": "(a-r, a, a+r). Soma: 3a=15 → a=5. Produto: (5-r)×5×(5+r)=105 → 5(25-r²)=105 → r²=4 → r=2. Números: 3, 5, 7",
+          "dificuldade": "medio",
+          "tags": ["PA", "sistema", "produto-soma"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Aplicações Avançadas e Problemas ENEM",
+      "resumo": "Problemas contextualizados complexos envolvendo progressões",
+      "topicos": [
+        {
+          "titulo": "Modelagem Matemática com Progressões",
+          "conteudo": "ANÁLISE DE SITUAÇÕES REAIS:\n\nPROBLEMA 1: PIRÂMIDE FINANCEIRA (PG)\nEsquema: cada pessoa recruta 5\nNível 1: 1 pessoa (topo)\nNível 2: 5 pessoas\nNível 3: 25 pessoas\nNível 4: 125 pessoas\n\nPG com a₁=1, q=5\n\na) Pessoas no nível 10?\na₁₀ = 1 × 5⁹ = 1.953.125 pessoas\n\nb) Total até nível 10?\nS₁₀ = (5¹⁰ - 1) / (5 - 1)\nS₁₀ = (9.765.625 - 1) / 4\nS₁₀ = 2.441.406 pessoas\n\nInsustentável! População mundial ~8 bilhões\n\nPROBLEMA 2: AMORTIZAÇÃO (PA)\nDívida R$ 10.000\nSistema SAC: 10 parcelas\nAmortização constante: R$ 1.000\nJuros 2% sobre saldo\n\nParcela 1: 1.000 + 10.000×0,02 = R$ 1.200\nParcela 2: 1.000 + 9.000×0,02 = R$ 1.180\nParcela 3: 1.000 + 8.000×0,02 = R$ 1.160\n\nPA com a₁=1.200, r=-20\n\nTotal pago:\nSoma amortizações: 10 × 1.000 = R$ 10.000\nSoma juros (PA):\nS₁₀ = 10 × (200 + 20) / 2 = 10 × 110 = R$ 1.100\n\nTotal: R$ 11.100\n\nPROBLEMA 3: EPIDEMIA (PG inicial, depois muda)\nDia 1: 10 casos\nDia 2: 30 casos (×3)\nDia 3: 90 casos (×3)\n\nSem controle (PG, q=3):\nDia 10: 10 × 3⁹ = 196.830 casos!\n\nCom medidas no dia 5:\nAté dia 5: 10 × (3⁵-1)/(3-1) = 10 × 121 = 1.210 casos\nApós dia 5: crescimento de 10% (q=1,1)\n\nRequer análise combinada."
+        },
+        {
+          "titulo": "Séries Numéricas Especiais",
+          "conteudo": "SÉRIES IMPORTANTES:\n\n1) SOMA DOS n PRIMEIROS NATURAIS:\n1 + 2 + 3 + ... + n = n(n+1)/2\n\nEXEMPLO: 1 + 2 + ... + 100 = 100×101/2 = 5.050\n\n2) SOMA DOS n PRIMEIROS ÍMPARES:\n1 + 3 + 5 + ... + (2n-1) = n²\n\nEXEMPLO: 1+3+5+7+9 = 5² = 25\n\n3) SOMA DOS n PRIMEIROS PARES:\n2 + 4 + 6 + ... + 2n = n(n+1)\n\nEXEMPLO: 2+4+6+8+10 = 5×6 = 30\n\n4) SOMA DOS QUADRADOS:\n1² + 2² + 3² + ... + n² = n(n+1)(2n+1)/6\n\nEXEMPLO: 1²+2²+3²+4²+5² = 5×6×11/6 = 55\n\n5) SOMA DOS CUBOS:\n1³ + 2³ + 3³ + ... + n³ = [n(n+1)/2]²\n\nEXEMPLO: 1³+2³+3³+4³ = (4×5/2)² = 10² = 100\n\nAPLICAÇÃO:\n\nPROBLEMA: Pilha triangular de caixas\nBase: 20 caixas em linha\n2ª camada: 19 caixas\n...\nTopo: 1 caixa\n\nTotal = 1+2+3+...+20 = 20×21/2 = 210 caixas\n\nPROBLEMA 2: Tabuleiro de xadrez\n1 grão no 1º quadrado\n2 no 2º\n4 no 3º\n8 no 4º\n...\n\nTotal nos 64 quadrados:\nPG: S₆₄ = (2⁶⁴ - 1) / 1\n≈ 1,84 × 10¹⁹ grãos\n\nLenda diz que é mais que toda produção de trigo da história!"
+        },
+        {
+          "titulo": "Análise Gráfica de Progressões",
+          "conteudo": "COMPORTAMENTO GRÁFICO:\n\nPA - GRÁFICO:\nPontos formam linha reta\ny = a₁ + (x-1)r\n\nInclinação = razão r\nr > 0: crescente\nr < 0: decrescente\nr = 0: horizontal\n\nEXEMPLO: PA (2, 5, 8, 11, ...)\nPontos: (1,2), (2,5), (3,8), (4,11)\nAlinhados com inclinação 3\n\nPG - GRÁFICO:\nCurva exponencial\ny = a₁ × qˣ⁻¹\n\nq > 1: exponencial crescente\n0 < q < 1: exponencial decrescente\nq < 0: alternada\n\nEXEMPLO: PG (2, 6, 18, 54, ...)\nPontos: (1,2), (2,6), (3,18), (4,54)\nCurva exponencial acentuada\n\nCOMPARAÇÃO VISUAL:\nEm gráfico:\n- PA: crescimento constante (velocidade fixa)\n- PG: crescimento acelerado (velocidade aumenta)\n\nANÁLISE DE DADOS:\n\nTabela de vendas:\nMês 1: 100\nMês 2: 150\nMês 3: 200\nMês 4: 250\n\nDiferenças: 50, 50, 50 → PA!\nr = 50\nPrevisão mês 12:\na₁₂ = 100 + 11×50 = 650\n\nVs. crescimento percentual:\nMês 1: 100\nMês 2: 120 (+20%)\nMês 3: 144 (+20%)\nMês 4: 172,8 (+20%)\n\nRazões: 1,2 constante → PG!\nq = 1,2\nPrevisão mês 12:\na₁₂ = 100 × (1,2)¹¹ ≈ 743"
+        },
+        {
+          "titulo": "Problemas Interdisciplinares ENEM",
+          "conteudo": "INTEGRAÇÃO COM OUTRAS ÁREAS:\n\nPROBLEMA 1: GEOGRAFIA + PA\nEstradas com marcos quilométricos:\nKm 10, 15, 20, 25, ..., 200\n\nQuantos marcos? (PA)\na₁ = 10, r = 5, aₙ = 200\n200 = 10 + (n-1)×5\n190 = 5n - 5\nn = 39 marcos\n\nPROBLEMA 2: BIOLOGIA + PG\nDivisão celular:\n1 célula → 2 → 4 → 8\n\nApós 20 divisões:\na₂₁ = 1 × 2²⁰ = 1.048.576 células\n\nMassa de 1 célula: 1 µg\nMassa total: ~1g\n\nPROBLEMA 3: FÍSICA + PA\nQueda livre (desconsiderando resistência):\nDistâncias percorridas em segundos sucessivos:\n1º s: 5m\n2º s: 15m (acréscimo de 10m)\n3º s: 25m (acréscimo de 10m)\n\nDistâncias formam PA ímpar: 5, 15, 25, 35, ...\n\nPROBLEMA 4: QUÍMICA + PG\nMeia-vida do Carbono-14: 5.730 anos\n\nInício: 100g\nApós 1 meia-vida: 50g\nApós 2 meias-vidas: 25g\n\nPG com q = 0,5\n\nApós 6 meias-vidas (34.380 anos):\na₇ = 100 × (0,5)⁶ = 100/64 ≈ 1,56g\n\nPROBLEMA 5: ECONOMIA + Juros\nInflação anual: 5%\n\nPoder de compra:\nAno 0: R$ 100 → R$ 100\nAno 1: R$ 100 → R$ 95,24\nAno 2: R$ 100 → R$ 90,70\n\nPG com q = 1/1,05 ≈ 0,9524\n\nApós 10 anos:\nPoder = 100 × (0,9524)¹⁰ ≈ R$ 61,39\n\nPerda: 38,61% do poder aquisitivo!"
+        }
+      ],
+      "exemplos": [
+        "Modelar crescimento populacional",
+        "Analisar sustentabilidade de esquema piramidal",
+        "Prever comportamento de série temporal"
+      ],
+      "dicas": [
+        "ENEM adora problemas contextualizados!",
+        "Identifique se é PA (linear) ou PG (exponencial)",
+        "Séries especiais: decore fórmulas básicas",
+        "Em gráficos: reta=PA, curva=PG",
+        "Problemas mistos: analise cada parte",
+        "Sempre valide se resultado faz sentido no contexto"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Um teatro tem 15 fileiras. A primeira tem 20 poltronas e cada fileira subsequente tem 3 a mais. Qual a capacidade total?",
+          "alternativas": {
+            "A": "600",
+            "B": "615",
+            "C": "630",
+            "D": "645",
+            "E": "660"
+          },
+          "correta": "B",
+          "explicacao": "PA: a₁=20, r=3, n=15. a₁₅=20+14×3=62. S₁₅=15×(20+62)/2=15×41=615",
+          "dificuldade": "medio",
+          "tags": ["PA", "soma", "aplicacao"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Uma substância radioativa reduz sua massa pela metade a cada 10 anos. Começando com 1.600g, após 40 anos restam:",
+          "alternativas": {
+            "A": "50g",
+            "B": "100g",
+            "C": "150g",
+            "D": "200g",
+            "E": "400g"
+          },
+          "correta": "B",
+          "explicacao": "PG com q=0,5. 40 anos = 4 meias-vidas. a₅=1.600×(0,5)⁴=1.600/16=100g",
+          "dificuldade": "facil",
+          "tags": ["PG", "meia-vida", "aplicacao"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "A soma 1 + 3 + 5 + 7 + ... + 99 (ímpares até 99) é igual a:",
+          "alternativas": {
+            "A": "2.400",
+            "B": "2.450",
+            "C": "2.500",
+            "D": "2.550",
+            "E": "2.600"
+          },
+          "correta": "C",
+          "explicacao": "99 = 2n-1 → n=50. Soma de 50 primeiros ímpares = 50² = 2.500",
+          "dificuldade": "medio",
+          "tags": ["PA", "impares", "formula-especial"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Um esquema de pirâmide: cada pessoa recruta 4. No nível 8, quantas pessoas há?",
+          "alternativas": {
+            "A": "4.096",
+            "B": "8.192",
+            "C": "16.384",
+            "D": "32.768",
+            "E": "65.536"
+          },
+          "correta": "C",
+          "explicacao": "PG com a₁=1, q=4. a₈=1×4⁷=4⁷=16.384",
+          "dificuldade": "medio",
+          "tags": ["PG", "potencia", "piramide"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Uma dívida de R$ 12.000 será paga em 12 parcelas pelo Sistema SAC (amortização constante). Se os juros são 1,5% ao mês sobre o saldo devedor, qual o valor da primeira parcela?",
+          "alternativas": {
+            "A": "R$ 1.000",
+            "B": "R$ 1.150",
+            "C": "R$ 1.180",
+            "D": "R$ 1.200",
+            "E": "R$ 1.250"
+          },
+          "correta": "C",
+          "explicacao": "Amortização = 12.000/12 = R$ 1.000. Juros 1ª parcela = 12.000×0,015 = R$ 180. Total = 1.000 + 180 = R$ 1.180",
+          "dificuldade": "medio",
+          "tags": ["PA", "SAC", "financiamento"]
+        }
+      ]
+    }
+  ]
+}

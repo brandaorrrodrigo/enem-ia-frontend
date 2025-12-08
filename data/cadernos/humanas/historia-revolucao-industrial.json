@@ -1,0 +1,402 @@
+{
+  "id": "historia-revolucao-industrial",
+  "titulo": "Revolução Industrial",
+  "descricao": "As transformações industriais e suas consequências sociais e econômicas",
+  "icone": "🏭",
+  "cor": "from-slate-500 to-zinc-600",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-primeira-revolucao",
+      "titulo": "Primeira Revolução Industrial",
+      "topicos": [
+        "Pioneirismo inglês",
+        "Cercamentos e acumulação primitiva",
+        "Inovações técnicas (máquina a vapor)",
+        "Fábrica e trabalho industrial",
+        "Impactos sociais"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Revolução Industrial iniciou-se na Inglaterra na segunda metade do século XVIII. Entre os fatores que explicam o pioneirismo inglês, destaca-se:",
+          "alternativas": [
+            "A ausência total de capital acumulado na Inglaterra",
+            "Acumulação de capital, recursos naturais, mão de obra disponível e mercado consumidor",
+            "A proibição de inovações tecnológicas no país",
+            "O isolamento total da Inglaterra no comércio mundial",
+            "A ausência de carvão e ferro no território inglês"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Inglaterra reunia condições: capital acumulado (comércio colonial, tráfico), carvão e ferro (recursos), mão de obra (cercamentos expulsaram camponeses), estabilidade política, mercado consumidor (colônias) e espírito empreendedor burguês."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Os cercamentos (enclosures) foram fundamentais para a Revolução Industrial. Esse processo consistia em:",
+          "alternativas": [
+            "Distribuição de terras para camponeses pobres",
+            "Privatização de terras comunais, expulsando camponeses que viraram operários",
+            "Proteção dos direitos tradicionais dos camponeses",
+            "Fortalecimento da agricultura de subsistência",
+            "Eliminação completa da propriedade privada"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Os cercamentos privatizaram terras comunais, expulsando camponeses que perderam meios de subsistência. Esses camponeses migraram para cidades, tornando-se mão de obra barata para fábricas. Marx chamou isso de \"acumulação primitiva de capital\"."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A máquina a vapor, aperfeiçoada por James Watt, foi crucial para a Primeira Revolução Industrial. Sua importância relaciona-se a:",
+          "alternativas": [
+            "Ser movida exclusivamente por energia humana",
+            "Fornecer força motriz independente (carvão), revolucionando produção e transportes",
+            "Não ter nenhum impacto na produção industrial",
+            "Ser utilizada apenas na agricultura",
+            "Depender totalmente de energia eólica"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A máquina a vapor fornecia força motriz constante e independente (queimava carvão), permitindo produção em larga escala. Revolucionou indústria têxtil, mineração e transportes (locomotivas, navios a vapor), acelerando produção e circulação de mercadorias."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O sistema fabril transformou radicalmente as relações de trabalho. Sobre as condições nas primeiras fábricas, é correto afirmar que:",
+          "alternativas": [
+            "Ofereciam condições ideais e salários generosos",
+            "Jornadas extenuantes (14-16h), trabalho infantil, salários baixos e ambientes insalubres",
+            "Garantiam todos os direitos trabalhistas modernos",
+            "Não empregavam mulheres e crianças",
+            "Forneciam total segurança e proteção aos trabalhadores"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "As condições eram brutais: jornadas de 14-16 horas, trabalho infantil (crianças de 5-6 anos), salários miseráveis, ambientes insalubres, sem segurança. Acidentes eram frequentes. Não havia direitos trabalhistas - a exploração era extrema."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Revolução Industrial provocou profundas transformações sociais. Entre essas mudanças, destaca-se:",
+          "alternativas": [
+            "A eliminação completa das diferenças de classe",
+            "Formação da classe operária industrial e da burguesia industrial",
+            "O fortalecimento absoluto da aristocracia rural",
+            "A extinção total do trabalho assalariado",
+            "O fim da estratificação social"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A industrialização criou novas classes sociais: burguesia industrial (donos de fábricas, capital) e proletariado industrial (trabalhadores assalariados, força de trabalho). Isso transformou a estrutura social, deslocando poder da aristocracia rural para burguesia urbana."
+        }
+      ]
+    },
+    {
+      "id": "mod2-movimento-operario-socialismo",
+      "titulo": "Movimento Operário e Socialismo",
+      "topicos": [
+        "Ludismo e movimento Cartista",
+        "Socialismo utópico",
+        "Socialismo científico (Marx e Engels)",
+        "Anarquismo",
+        "Sindicatos e greves"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O Ludismo foi uma das primeiras formas de resistência operária na Inglaterra. Esse movimento caracterizava-se por:",
+          "alternativas": [
+            "Apoio total à mecanização industrial",
+            "Destruição de máquinas, vistas como causadoras do desemprego",
+            "Propostas organizadas de reforma política",
+            "Defesa da ampliação da industrialização",
+            "Total passividade diante da exploração"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Os luditas (seguidores de Ned Ludd, figura mítica) destruíam máquinas, vistas como responsáveis pelo desemprego e exploração. Era reação espontânea, sem organização ou proposta política clara, expressando revolta contra as transformações industriais."
+        },
+        {
+          "id": "q2",
+          "enunciado": "O movimento Cartista (1838-1848) representou avanço na organização operária inglesa. Sua principal reivindicação era:",
+          "alternativas": [
+            "A destruição de todas as fábricas",
+            "Reformas políticas: sufrágio universal masculino, voto secreto, salário para parlamentares",
+            "A restauração da monarquia absolutista",
+            "O fim de toda forma de organização política",
+            "A proibição de sindicatos operários"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Carta do Povo reivindicava: sufrágio universal masculino, voto secreto, fim do censo (requisito de propriedade), salário para parlamentares (permitindo operários no Parlamento), eleições anuais. Era tentativa de conquistar direitos políticos para os trabalhadores."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O socialismo utópico, de Saint-Simon, Fourier e Owen, propunha transformações sociais. Sobre esse pensamento, é correto afirmar que:",
+          "alternativas": [
+            "Propunha revolução violenta para derrubar capitalismo",
+            "Defendia comunidades ideais, cooperativas e reformas graduais",
+            "Era idêntico ao socialismo científico de Marx",
+            "Defendia o capitalismo liberal sem restrições",
+            "Propunha o fortalecimento da exploração operária"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Os socialistas utópicos propunham comunidades ideais, cooperativas de produção e distribuição equitativa. Acreditavam em transformação pacífica pela razão e exemplo. Marx os chamou de \"utópicos\" por não analisarem cientificamente o capitalismo nem proporem luta de classes."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O socialismo científico de Karl Marx e Friedrich Engels analisava o capitalismo e propunha sua superação. No \"Manifesto Comunista\" (1848), os autores defendem:",
+          "alternativas": [
+            "A harmonia natural entre burguesia e proletariado",
+            "A luta de classes como motor da história e revolução proletária",
+            "A manutenção perpétua do sistema capitalista",
+            "A aliança permanente entre todas as classes sociais",
+            "O fortalecimento da propriedade privada dos meios de produção"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Marx e Engels analisam o capitalismo \"cientificamente\", identificando contradições (exploração, mais-valia, alienação). Propõem: luta de classes é motor da história, proletariado deve fazer revolução, abolir propriedade privada dos meios de produção e instaurar sociedade comunista."
+        },
+        {
+          "id": "q5",
+          "enunciado": "Os sindicatos (trade unions) surgiram como forma de organização operária. Sobre sua atuação inicial, é correto afirmar que:",
+          "alternativas": [
+            "Foram imediatamente legalizados e apoiados pelos empresários",
+            "Enfrentaram proibição legal, mas lutaram por direitos através de greves",
+            "Não tiveram nenhuma importância para conquistas trabalhistas",
+            "Defendiam exclusivamente os interesses dos empresários",
+            "Foram criados pelos próprios donos de fábricas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Inicialmente proibidos (Combination Acts na Inglaterra, 1799-1824), os sindicatos organizavam operários para reivindicar melhorias (salários, jornada, condições). Através de greves e pressão, conquistaram gradualmente direitos, sendo legalizados progressivamente."
+        }
+      ]
+    },
+    {
+      "id": "mod3-segunda-revolucao",
+      "titulo": "Segunda Revolução Industrial",
+      "topicos": [
+        "Novas fontes de energia (eletricidade, petróleo)",
+        "Novas indústrias (química, elétrica, automobilística)",
+        "Expansão geográfica (EUA, Alemanha, Japão)",
+        "Taylorismo e Fordismo",
+        "Imperialismo e busca por mercados"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Segunda Revolução Industrial (1870-1914) diferenciou-se da primeira por diversas características. Entre essas diferenças, destaca-se:",
+          "alternativas": [
+            "O retorno ao uso exclusivo do carvão como energia",
+            "Novas energias (eletricidade, petróleo), aço, química e expansão geográfica",
+            "A regressão tecnológica em relação ao período anterior",
+            "A concentração exclusiva na Inglaterra",
+            "O abandono completo da industrialização"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Segunda Revolução caracterizou-se por: novas energias (eletricidade, petróleo), aço (substituindo ferro), indústrias química e elétrica, motor a explosão, expansão para EUA, Alemanha, Japão, concentração empresarial (trustes, cartéis) e taylorismo/fordismo."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A eletricidade revolucionou a produção industrial e a vida urbana. Sobre seu impacto, é correto afirmar que:",
+          "alternativas": [
+            "Não teve nenhuma aplicação prática na indústria",
+            "Permitiu iluminação, bondes elétricos, novos equipamentos e prolongamento da jornada",
+            "Foi totalmente rejeitada pela indústria da época",
+            "Sua utilização restringiu-se exclusivamente à área rural",
+            "Não alterou em nada a vida nas cidades"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A eletricidade revolucionou: iluminação pública e doméstica, bondes elétricos, telégrafo, telefone, novos equipamentos industriais. Permitiu prolongar jornada de trabalho (iluminação artificial) e transformou a vida urbana, acelerando ritmo de produção e consumo."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O Taylorismo, sistema desenvolvido por Frederick Taylor, propunha racionalização do trabalho. Sobre esse método, é correto afirmar que:",
+          "alternativas": [
+            "Concedia total autonomia aos trabalhadores na produção",
+            "Dividia tarefas em movimentos simples e cronometrados para aumentar produtividade",
+            "Eliminava completamente o controle sobre os operários",
+            "Aumentava os salários proporcionalmente à produtividade",
+            "Reduzia significativamente a exploração do trabalho"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Taylorismo (\"administração científica\") fragmentava tarefas em movimentos simples, cronometrados, eliminando \"tempos mortos\". Separava concepção (gerência) de execução (operário). Intensificava exploração, reduzindo trabalhador a autômato, mas aumentando produtividade."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O Fordismo, desenvolvido por Henry Ford, revolucionou a produção industrial. Entre suas características, destaca-se:",
+          "alternativas": [
+            "A produção artesanal personalizada de cada peça",
+            "Linha de montagem, produção em massa, padronização e salários mais altos",
+            "A rejeição total da mecanização industrial",
+            "A produção exclusiva de bens de luxo",
+            "O abandono completo da racionalização do trabalho"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Fordismo adotou linha de montagem (esteira rolante), produção em massa de produtos padronizados (Ford T), verticalização (controle de toda cadeia produtiva) e salários mais altos (\"five dollars day\") para operários consumirem. Revolucionou produção e consumo."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Segunda Revolução Industrial relaciona-se intimamente com o imperialismo. Essa relação deve-se a:",
+          "alternativas": [
+            "A ausência de necessidade de matérias-primas pelas indústrias",
+            "Busca por matérias-primas, mercados consumidores e áreas de investimento",
+            "O desinteresse total das potências por expansão territorial",
+            "A autossuficiência completa das economias industriais",
+            "A rejeição do colonialismo pelas nações industrializadas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A industrialização intensificada exigia: matérias-primas (borracha, petróleo, minerais), mercados consumidores para escoar superprodução e áreas para investir capital excedente. Isso impulsionou o neocolonialismo/imperialismo, com partilha da África e Ásia pelas potências industriais."
+        }
+      ]
+    },
+    {
+      "id": "mod4-consequencias-sociais",
+      "titulo": "Consequências Sociais da Industrialização",
+      "topicos": [
+        "Urbanização acelerada",
+        "Questão social e pobreza urbana",
+        "Trabalho infantil e feminino",
+        "Legislação trabalhista inicial",
+        "Transformações culturais"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A industrialização provocou intensa urbanização. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "As cidades cresceram ordenadamente com planejamento",
+            "Crescimento urbano caótico, com favelas, superpopulação e condições insalubres",
+            "Não houve nenhum crescimento populacional nas cidades",
+            "As condições de vida urbana eram excelentes para todos",
+            "A urbanização beneficiou igualmente todas as classes sociais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A urbanização foi caótica: crescimento populacional explosivo, moradias precárias (cortiços), falta de saneamento, epidemias (cólera, tuberculose), poluição. Trabalhadores viviam em condições miseráveis, contrastando com bairros burgueses."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A \"questão social\" emergiu como problema central da sociedade industrial. Esse termo refere-se a:",
+          "alternativas": [
+            "A prosperidade generalizada da população operária",
+            "Os problemas sociais decorrentes da exploração operária (pobreza, desigualdade, conflitos)",
+            "A ausência total de conflitos entre classes",
+            "A distribuição equitativa da riqueza industrial",
+            "A harmonia perfeita nas relações sociais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A \"questão social\" designava os problemas: exploração operária, pobreza urbana, desigualdade extrema, tensões de classe, greves. Liberais viam como \"caso de polícia\", socialistas como contradição do capitalismo. Levou a pressões por legislação trabalhista."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O trabalho infantil era comum nas primeiras fábricas. Sobre essa prática, é correto afirmar que:",
+          "alternativas": [
+            "Era totalmente proibida desde o início da industrialização",
+            "Crianças trabalhavam longas jornadas em condições perigosas por salários miseráveis",
+            "Crianças recebiam proteção legal adequada",
+            "Não havia trabalho infantil na indústria",
+            "As condições para crianças eram melhores que para adultos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Crianças (5-6 anos) trabalhavam 12-14 horas em condições perigosas (máquinas, minas), por salários ínfimos. Empresários preferiam-nas por serem \"dóceis\" e baratas. Denúncias e pressão social levaram gradualmente a legislação protetiva (proibição ou limitação)."
+        },
+        {
+          "id": "q4",
+          "enunciado": "As primeiras legislações trabalhistas surgiram no século XIX. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "Foram imediatamente adotadas sem resistência empresarial",
+            "Resultaram de pressão operária, greves e denúncias de intelectuais",
+            "Não tiveram nenhuma relação com mobilização dos trabalhadores",
+            "Foram espontaneamente concedidas pelos empresários",
+            "Não produziram nenhuma melhoria nas condições de trabalho"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Legislações trabalhistas (limitação de jornada, idade mínima, segurança) resultaram de: pressão sindical, greves, denúncias (relatórios parlamentares, romances como os de Dickens) e medo burguês de revolução. Foram conquistas operárias, não concessões espontâneas."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A industrialização transformou também a cultura e o modo de vida. Entre essas transformações, destaca-se:",
+          "alternativas": [
+            "A preservação total dos costumes tradicionais rurais",
+            "Valorização da pontualidade, disciplina fabril, consumo e cultura urbana",
+            "O desaparecimento completo de qualquer forma de lazer",
+            "A ausência de mudanças nos valores sociais",
+            "A rejeição total de valores como produtividade"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A industrialização impôs: disciplina fabril (pontualidade, obediência, ritmo mecânico), valorização do tempo como dinheiro, cultura do consumo (publicidade), entretenimento urbano (teatro, cinema), transformando valores, comportamentos e relações sociais."
+        }
+      ]
+    },
+    {
+      "id": "mod5-expansao-global",
+      "titulo": "Expansão Global da Industrialização",
+      "topicos": [
+        "Industrialização nos EUA",
+        "Industrialização na Alemanha",
+        "Industrialização no Japão (Restauração Meiji)",
+        "Divisão internacional do trabalho",
+        "Centro e periferia do capitalismo"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A industrialização dos Estados Unidos no século XIX teve características próprias. Entre esses aspectos, destaca-se:",
+          "alternativas": [
+            "A ausência total de recursos naturais no território",
+            "Abundância de recursos, imigração massiva, protecionismo e inovação tecnológica",
+            "A rejeição completa de investimentos em ferrovias",
+            "O isolamento total do comércio internacional",
+            "A dependência exclusiva da agricultura"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A industrialização americana baseou-se em: vastos recursos naturais (carvão, ferro, petróleo), imigração massiva (mão de obra), expansão territorial (Oeste), ferrovias transcontinentais, protecionismo tarifário, inovação (Edison, Ford) e espírito empreendedor."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Alemanha industrializou-se tardiamente (após unificação, 1871), mas rapidamente. Entre os fatores desse sucesso, destaca-se:",
+          "alternativas": [
+            "A ausência de qualquer planejamento estatal",
+            "Intervenção estatal, educação técnica, concentração empresarial e inovação química",
+            "A rejeição de investimentos em educação",
+            "O isolamento completo do comércio europeu",
+            "A proibição de formação de grandes empresas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A industrialização alemã caracterizou-se por: forte intervenção estatal (infraestrutura, tarifas), ênfase em educação técnica, concentração empresarial (kartells), liderança em química (corantes, medicamentos) e elétrica (Siemens, AEG), ultrapassando Inglaterra no início do século XX."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Restauração Meiji (1868) no Japão promoveu rápida modernização e industrialização. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "Rejeitou completamente qualquer influência ocidental",
+            "Adotou seletivamente tecnologia e instituições ocidentais, mantendo valores tradicionais",
+            "Resultou na colonização do Japão pelas potências ocidentais",
+            "Não produziu nenhuma transformação econômica",
+            "Manteve totalmente a estrutura feudal japonesa"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Restauração Meiji promoveu \"ocidentalização\" seletiva: adotou tecnologia, indústria, exército moderno, educação ocidental, mas preservou valores tradicionais (lealdade, disciplina). Estado liderou industrialização. Japão tornou-se potência imperialista, derrotando Rússia em 1905."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A industrialização criou uma divisão internacional do trabalho. Sobre essa divisão, é correto afirmar que:",
+          "alternativas": [
+            "Todos os países industrializaram-se igualmente",
+            "Países centrais (industrializados) dominavam, periféricos (agrários) forneciam matérias-primas",
+            "Não havia nenhuma hierarquia entre as nações",
+            "Países periféricos eram mais desenvolvidos que centrais",
+            "A divisão beneficiava igualmente todas as nações"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A divisão internacional estabeleceu hierarquia: centro (Europa, EUA) industrializado, produzia manufaturas; periferia (África, Ásia, América Latina) agrária, fornecia matérias-primas baratas. Troca desigual perpetuava dependência e subdesenvolvimento da periferia."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A industrialização e o capitalismo industrial geraram profundas desigualdades globais. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "A riqueza foi distribuída igualmente entre todas as nações",
+            "Concentrou riqueza nos países industrializados, aprofundando desigualdade global",
+            "Eliminou completamente a pobreza no mundo",
+            "Beneficiou principalmente os países colonizados",
+            "Não teve nenhum impacto nas relações internacionais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A industrialização concentrou riqueza e poder nos países centrais (Europa, EUA), aprofundando desigualdades globais. Imperialismo explorava colônias, sistema capitalista gerava desenvolvimento desigual e combinado. Essa estrutura de centro-periferia persiste com novas configurações."
+        }
+      ]
+    }
+  ]
+}

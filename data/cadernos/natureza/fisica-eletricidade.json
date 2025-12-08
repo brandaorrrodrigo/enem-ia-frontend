@@ -1,0 +1,327 @@
+{
+  "id": "fisica-eletricidade",
+  "titulo": "Eletricidade: Corrente, Resistencia, Lei de Ohm",
+  "descricao": "Conceitos fundamentais de eletricidade e circuitos eletricos",
+  "icone": "⚡",
+  "cor": "from-yellow-500 to-orange-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Corrente Eletrica",
+      "resumo": "Corrente eletrica e o fluxo ordenado de cargas eletricas atraves de um condutor. E medida em amperes (A) e representa a quantidade de carga que atravessa uma secao transversal do condutor por unidade de tempo. A corrente pode ser continua (DC) ou alternada (AC).",
+      "topicos": [
+        "Definicao: movimento ordenado de cargas eletricas",
+        "Formula: i = ΔQ/Δt (carga por tempo)",
+        "Unidade: ampere (A) = coulomb/segundo (C/s)",
+        "Sentido convencional: do polo positivo para o negativo"
+      ],
+      "exemplos": [
+        "Uma bateria de carro fornece corrente de 60 A durante a partida",
+        "Lampada LED residencial consome cerca de 0,01 A (10 mA)",
+        "Raio: descarga eletrica com corrente de ate 200.000 A"
+      ],
+      "formula": "i = ΔQ/Δt",
+      "dicas": [
+        "1 ampere = 1 coulomb por segundo",
+        "Eletrons movem-se no sentido contrario ao convencional da corrente",
+        "Corrente continua (DC) tem sentido constante; alternada (AC) inverte periodicamente"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma carga de 120 C atravessa a secao transversal de um condutor em 1 minuto. Qual e a intensidade da corrente eletrica?",
+          "alternativas": {
+            "A": "0,5 A",
+            "B": "2,0 A",
+            "C": "60 A",
+            "D": "120 A",
+            "E": "7200 A"
+          },
+          "correta": "B",
+          "explicacao": "Usando i = ΔQ/Δt: i = 120 C / 60 s = 2,0 A. Importante converter o tempo para segundos."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Em um dispositivo eletronico, passam 3,2 × 10¹⁹ eletrons em 4 segundos. Qual a corrente eletrica? (Carga do eletron: 1,6 × 10⁻¹⁹ C)",
+          "alternativas": {
+            "A": "0,4 A",
+            "B": "0,8 A",
+            "C": "1,28 A",
+            "D": "2,0 A",
+            "E": "5,12 A"
+          },
+          "correta": "C",
+          "explicacao": "Primeiro calcular a carga total: Q = n × e = 3,2 × 10¹⁹ × 1,6 × 10⁻¹⁹ = 5,12 C. Depois i = Q/t = 5,12/4 = 1,28 A."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Qual e a principal diferenca entre corrente continua (DC) e corrente alternada (AC)?",
+          "alternativas": {
+            "A": "DC e mais perigosa que AC",
+            "B": "AC muda de sentido periodicamente, DC mantem sentido constante",
+            "C": "DC so existe em circuitos de alta tensao",
+            "D": "AC nao pode ser armazenada em baterias",
+            "E": "DC tem intensidade sempre maior que AC"
+          },
+          "correta": "B",
+          "explicacao": "A corrente alternada (AC) inverte seu sentido periodicamente (geralmente 60 Hz no Brasil), enquanto a corrente continua (DC) mantem sentido e intensidade constantes."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Resistencia e Lei de Ohm",
+      "resumo": "A resistencia eletrica e a oposicao que um material oferece a passagem de corrente eletrica. A Lei de Ohm estabelece que a tensao (voltagem) e diretamente proporcional a corrente para resistores ohmicos. Essa relacao fundamental e amplamente usada em analise de circuitos.",
+      "topicos": [
+        "Resistencia: oposicao ao fluxo de corrente",
+        "Lei de Ohm: U = R × i (tensao = resistencia × corrente)",
+        "Unidades: volt (V), ohm (Ω), ampere (A)",
+        "Resistores ohmicos: resistencia constante independente da tensao"
+      ],
+      "exemplos": [
+        "Chuveiro eletrico de 5500 W a 220 V tem resistencia de cerca de 8,8 Ω",
+        "Resistor de 100 Ω com 10 V aplicados tem corrente de 0,1 A",
+        "Filamento de lampada incandescente tem resistencia que aumenta com temperatura"
+      ],
+      "formula": "U = R × i",
+      "dicas": [
+        "Tensao (U ou V) e a diferenca de potencial em volts",
+        "Para calcular R: R = U/i; para calcular i: i = U/R",
+        "Potencia dissipada: P = U × i = R × i² = U²/R"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um resistor de 50 Ω e percorrido por uma corrente de 2 A. Qual a tensao nos terminais do resistor?",
+          "alternativas": {
+            "A": "25 V",
+            "B": "52 V",
+            "C": "100 V",
+            "D": "200 V",
+            "E": "250 V"
+          },
+          "correta": "C",
+          "explicacao": "Aplicando a Lei de Ohm: U = R × i = 50 Ω × 2 A = 100 V."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Um chuveiro eletrico de 5500 W funciona a 220 V. Qual a intensidade da corrente eletrica que o atravessa?",
+          "alternativas": {
+            "A": "4 A",
+            "B": "12,1 A",
+            "C": "25 A",
+            "D": "40 A",
+            "E": "110 A"
+          },
+          "correta": "C",
+          "explicacao": "Usando P = U × i: 5500 = 220 × i, logo i = 5500/220 = 25 A. Correntes elevadas exigem fios mais grossos para seguranca."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Uma lampada tem resistencia de 484 Ω quando ligada em 110 V. Qual a potencia dissipada por essa lampada?",
+          "alternativas": {
+            "A": "15 W",
+            "B": "25 W",
+            "C": "40 W",
+            "D": "60 W",
+            "E": "100 W"
+          },
+          "correta": "B",
+          "explicacao": "Usando P = U²/R: P = (110)²/484 = 12100/484 = 25 W."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Resistividade",
+      "resumo": "A resistividade e uma propriedade intrinseca do material que determina quanto ele se opoe a passagem de corrente. A resistencia de um condutor depende da resistividade do material, do comprimento e da area da secao transversal. Materiais com baixa resistividade sao bons condutores.",
+      "topicos": [
+        "Resistividade (ρ): propriedade do material, unidade Ω·m",
+        "Formula: R = ρ × L/A (L = comprimento, A = area)",
+        "Condutores: baixa resistividade (cobre ρ ≈ 1,7 × 10⁻⁸ Ω·m)",
+        "Isolantes: alta resistividade (borracha ρ ≈ 10¹³ Ω·m)"
+      ],
+      "exemplos": [
+        "Fio de cobre fino e longo tem maior resistencia que fio grosso e curto",
+        "Prata tem menor resistividade, sendo o melhor condutor metalico",
+        "Temperatura alta aumenta resistividade de metais"
+      ],
+      "formula": "R = ρ × L/A",
+      "dicas": [
+        "Duplicar comprimento duplica resistencia",
+        "Duplicar area da secao reduz resistencia a metade",
+        "Resistividade varia com temperatura (aumenta em metais)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um fio de cobre tem resistencia de 2 Ω. Se for substituido por outro de mesmo material, com o dobro do comprimento e metade da area da secao, qual sera a nova resistencia?",
+          "alternativas": {
+            "A": "0,5 Ω",
+            "B": "1 Ω",
+            "C": "2 Ω",
+            "D": "4 Ω",
+            "E": "8 Ω"
+          },
+          "correta": "E",
+          "explicacao": "R = ρL/A. Dobrando L e reduzindo A a metade: R_novo = ρ(2L)/(A/2) = 4ρL/A = 4R. Logo 4 × 2 = 8 Ω."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que fios de transmissao de energia eletrica em longas distancias sao grossos?",
+          "alternativas": {
+            "A": "Para serem mais visiveis e evitar acidentes",
+            "B": "Para suportar o peso das torres",
+            "C": "Para reduzir a resistencia e minimizar perdas de energia",
+            "D": "Para aumentar a tensao da corrente",
+            "E": "Para facilitar a instalacao"
+          },
+          "correta": "C",
+          "explicacao": "Fios mais grossos tem maior area de secao transversal (A), o que reduz a resistencia R = ρL/A, diminuindo perdas por aquecimento (efeito Joule) em longas distancias."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Um fio de comprimento L e area A tem resistencia R. Se for esticado ate que seu comprimento dobre, mantendo o volume constante, qual sera sua nova resistencia?",
+          "alternativas": {
+            "A": "R/4",
+            "B": "R/2",
+            "C": "R",
+            "D": "2R",
+            "E": "4R"
+          },
+          "correta": "E",
+          "explicacao": "Volume constante: L×A = 2L×A_nova, logo A_nova = A/2. Usando R = ρL/A: R_nova = ρ(2L)/(A/2) = 4ρL/A = 4R."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Associacao em Serie",
+      "resumo": "Na associacao em serie, os resistores sao conectados um apos o outro, formando um unico caminho para a corrente. A corrente e a mesma em todos os resistores, mas a tensao total se divide entre eles. A resistencia equivalente e a soma das resistencias individuais.",
+      "topicos": [
+        "Corrente igual em todos os resistores: i₁ = i₂ = i₃ = i_total",
+        "Tensao total e soma das tensoes parciais: U_total = U₁ + U₂ + U₃",
+        "Resistencia equivalente: R_eq = R₁ + R₂ + R₃ + ...",
+        "Se um resistor queima, o circuito e interrompido"
+      ],
+      "exemplos": [
+        "Lampadas de arvore de Natal antigas (se uma queima, todas apagam)",
+        "Pilhas em serie somam suas voltagens (3 pilhas de 1,5V = 4,5V)",
+        "Divisor de tensao para reduzir voltagem em parte do circuito"
+      ],
+      "formula": "R_eq = R₁ + R₂ + R₃ + ...",
+      "dicas": [
+        "Resistencia equivalente e sempre maior que a maior resistencia individual",
+        "Tensao se divide proporcionalmente as resistencias",
+        "Util para aumentar resistencia total do circuito"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Tres resistores de 10 Ω, 20 Ω e 30 Ω sao associados em serie e ligados a uma bateria de 120 V. Qual a corrente no circuito?",
+          "alternativas": {
+            "A": "0,5 A",
+            "B": "1,0 A",
+            "C": "2,0 A",
+            "D": "4,0 A",
+            "E": "6,0 A"
+          },
+          "correta": "C",
+          "explicacao": "R_eq = 10 + 20 + 30 = 60 Ω. Usando Lei de Ohm: i = U/R = 120/60 = 2,0 A. Esta corrente e a mesma em todos os resistores."
+        },
+        {
+          "id": "q2",
+          "enunciado": "No circuito anterior (questao 1), qual e a tensao no resistor de 30 Ω?",
+          "alternativas": {
+            "A": "20 V",
+            "B": "40 V",
+            "C": "60 V",
+            "D": "80 V",
+            "E": "120 V"
+          },
+          "correta": "C",
+          "explicacao": "A corrente e 2,0 A. Usando U = R × i para o resistor de 30 Ω: U = 30 × 2 = 60 V."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Qual e a principal desvantagem da associacao de lampadas em serie?",
+          "alternativas": {
+            "A": "Consomem mais energia eletrica",
+            "B": "Se uma queima, todas apagam",
+            "C": "A resistencia total diminui",
+            "D": "Todas brilham com intensidade maxima",
+            "E": "Nao podem ser ligadas em corrente alternada"
+          },
+          "correta": "B",
+          "explicacao": "Em serie, ha apenas um caminho para a corrente. Se uma lampada queima, o circuito e interrompido e todas apagam. Por isso, instalacoes residenciais usam ligacao em paralelo."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Associacao em Paralelo",
+      "resumo": "Na associacao em paralelo, os resistores sao conectados aos mesmos pontos, formando multiplos caminhos para a corrente. A tensao e a mesma em todos os resistores, mas a corrente total se divide. A resistencia equivalente e sempre menor que a menor resistencia individual.",
+      "topicos": [
+        "Tensao igual em todos os resistores: U₁ = U₂ = U₃ = U_total",
+        "Corrente total e soma das correntes parciais: i_total = i₁ + i₂ + i₃",
+        "Resistencia equivalente: 1/R_eq = 1/R₁ + 1/R₂ + 1/R₃ + ...",
+        "Se um resistor queima, os outros continuam funcionando"
+      ],
+      "exemplos": [
+        "Lampadas residenciais em paralelo (cada uma pode ser ligada/desligada independentemente)",
+        "Tomadas de uma casa recebem todas 110V ou 220V em paralelo",
+        "Baterias em paralelo aumentam capacidade mantendo mesma voltagem"
+      ],
+      "formula": "1/R_eq = 1/R₁ + 1/R₂ + 1/R₃ + ...",
+      "dicas": [
+        "Resistencia equivalente e sempre menor que a menor resistencia",
+        "Para dois resistores iguais (R): R_eq = R/2",
+        "Corrente se divide inversamente as resistencias (maior corrente em menor R)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Dois resistores de 6 Ω e 3 Ω sao associados em paralelo. Qual a resistencia equivalente?",
+          "alternativas": {
+            "A": "1 Ω",
+            "B": "2 Ω",
+            "C": "3 Ω",
+            "D": "4,5 Ω",
+            "E": "9 Ω"
+          },
+          "correta": "B",
+          "explicacao": "Usando 1/R_eq = 1/R₁ + 1/R₂: 1/R_eq = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2. Logo R_eq = 2 Ω."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Tres resistores identicos de 60 Ω sao associados em paralelo e conectados a 120 V. Qual a corrente total fornecida pela fonte?",
+          "alternativas": {
+            "A": "2 A",
+            "B": "4 A",
+            "C": "6 A",
+            "D": "8 A",
+            "E": "12 A"
+          },
+          "correta": "C",
+          "explicacao": "Para 3 resistores iguais: R_eq = R/3 = 60/3 = 20 Ω. Corrente: i = U/R = 120/20 = 6 A."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Por que as instalacoes eletricas residenciais usam associacao em paralelo?",
+          "alternativas": {
+            "A": "Para economizar energia eletrica",
+            "B": "Para cada aparelho funcionar independentemente na mesma tensao",
+            "C": "Para aumentar a resistencia total do circuito",
+            "D": "Para reduzir a corrente em cada aparelho",
+            "E": "Para facilitar a manutencao dos fios"
+          },
+          "correta": "B",
+          "explicacao": "Em paralelo, todos os aparelhos recebem a mesma tensao (110V ou 220V) e funcionam independentemente. Se um aparelho desliga ou queima, os outros continuam funcionando normalmente."
+        }
+      ]
+    }
+  ]
+}

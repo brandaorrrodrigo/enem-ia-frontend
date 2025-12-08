@@ -1,0 +1,217 @@
+{
+  "id": "portugues-variacao",
+  "titulo": "Variação Linguística",
+  "descricao": "Compreenda as diferentes formas de uso da língua em diversos contextos",
+  "icone": "🗣️",
+  "cor": "from-orange-500 to-red-500",
+  "nivel": "Básico",
+  "tempoEstimado": "3h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Variação Regional (Diatópica)",
+      "resumo": "Diferenças linguísticas relacionadas à localização geográfica dos falantes.",
+      "topicos": [
+        "Sotaques e pronúncias regionais",
+        "Vocabulário específico de cada região",
+        "Expressões idiomáticas regionais",
+        "Diferenças fonéticas (r caipira, s chiado carioca)",
+        "Respeito à diversidade regional"
+      ],
+      "exemplos": [
+        "Vocabulário: 'aipim' (Norte/Nordeste) = 'macaxeira' (Nordeste) = 'mandioca' (Sul/Sudeste)",
+        "Pronúncia: 'porta' - 'r' retroflexo (SP interior) vs 'r' gutural (RJ)",
+        "Expressões: 'tá ligado?' (SP) / 'sacou?' (RJ) / 'entendeu?'",
+        "'Bergamota' (RS) = 'mexerica' (SP) = 'tangerina' (MG)",
+        "'Tu vai' (RS/Norte) vs 'Você vai' (maioria das regiões)"
+      ],
+      "dicas": [
+        "Nenhuma variedade regional é superior a outra",
+        "Regionalismo não é erro, é riqueza cultural",
+        "ENEM valoriza respeito às variações",
+        "Reconheça marcas regionais em textos",
+        "Evite preconceito linguístico"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um texto apresenta 'Bah, tchê! Isso é massa!'. Qual variação linguística predomina?",
+          "alternativas": [
+            "Variação social de classe alta",
+            "Variação regional gaúcha",
+            "Variação histórica arcaica",
+            "Variação situacional formal",
+            "Norma culta padrão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "As expressões 'Bah' e 'tchê' são marcas típicas da variação regional do Rio Grande do Sul (gaúcha), identificando origem geográfica do falante."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Variação Social (Diastrática)",
+      "resumo": "Diferenças linguísticas relacionadas a grupos sociais, escolaridade e classe econômica.",
+      "topicos": [
+        "Influência da escolaridade na linguagem",
+        "Gírias e linguagem de grupos específicos",
+        "Jargões profissionais",
+        "Variação por faixa etária",
+        "Linguagem de grupos marginalizados"
+      ],
+      "exemplos": [
+        "Gíria jovem: 'mano', 'tipo assim', 'vei', 'brô'",
+        "Jargão médico: 'dispneia' (falta de ar), 'cefaleia' (dor de cabeça)",
+        "Jargão jurídico: 'petição inicial', 'jurisprudência'",
+        "Variação etária: avós podem usar 'você' onde jovens usam 'cê'",
+        "Linguagem periférica: gírias específicas de comunidades"
+      ],
+      "dicas": [
+        "Gíria não é erro em contexto informal adequado",
+        "Jargão técnico é apropriado entre especialistas",
+        "Adequação ao interlocutor é fundamental",
+        "Não confunda variação social com 'erro de português'",
+        "ENEM cobra respeito à diversidade social"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Um médico diz a outro: 'Paciente apresenta hipertensão e diabetes.' Ao paciente: 'O senhor tem pressão alta e açúcar no sangue.' Isso exemplifica:",
+          "alternativas": [
+            "Erro de comunicação médica",
+            "Variação regional da medicina",
+            "Adequação do registro ao interlocutor",
+            "Preconceito linguístico",
+            "Variação histórica da terminologia"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O médico adequa o registro linguístico: usa jargão técnico com colega (hipertensão) e linguagem acessível com paciente (pressão alta), demonstrando competência comunicativa."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Variação Histórica (Diacrônica)",
+      "resumo": "Mudanças na língua ao longo do tempo, comparando diferentes épocas.",
+      "topicos": [
+        "Arcaísmos: palavras antigas em desuso",
+        "Neologismos: palavras novas",
+        "Mudanças fonéticas e ortográficas",
+        "Evolução semântica de palavras",
+        "Comparação entre português antigo e contemporâneo"
+      ],
+      "exemplos": [
+        "Arcaísmo: 'vosmecê' → 'você' (atual)",
+        "Arcaísmo: 'cousa' → 'coisa' (ortografia antiga)",
+        "Neologismo: 'internetês', 'deletar', 'printar', 'googlar'",
+        "Semântica: 'legal' (relativo a lei) → 'legal' (bacana, bom)",
+        "Textos medievais: 'No meio do caminho havia uma pedra' vs 'Avia hũa pedra'"
+      ],
+      "dicas": [
+        "Língua é viva e está em constante mudança",
+        "Mudanças linguísticas são naturais, não degradação",
+        "Reconheça marcas temporais em textos",
+        "Ortografia mudou várias vezes (1943, 2009)",
+        "Português arcaico é diferente, não errado"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Leia o verso de Camões: 'Alma minha gentil, que te partiste...'\n\nO uso de 'partiste' em vez de 'partiu' representa:",
+          "alternativas": [
+            "Erro gramatical do autor",
+            "Variação regional portuguesa",
+            "Variação histórica do português clássico",
+            "Licença poética sem base gramatical",
+            "Variação social da nobreza"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O uso de 'te partiste' (2ª pessoa) era padrão no português clássico de Camões. Hoje predomina 3ª pessoa 'você se foi', demonstrando variação histórica."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Variação Situacional (Diafásica)",
+      "resumo": "Adequação da linguagem ao contexto comunicativo: formal, informal, íntimo.",
+      "topicos": [
+        "Registro formal: contextos oficiais, acadêmicos",
+        "Registro informal: conversas cotidianas",
+        "Registro íntimo: família, amigos próximos",
+        "Grau de formalidade e situação",
+        "Adequação: usar registro apropriado ao contexto"
+      ],
+      "exemplos": [
+        "Formal: 'Solicito a Vossa Senhoria informações sobre o processo.'",
+        "Informal: 'Você pode me dar informações sobre isso?'",
+        "Íntimo: 'Me passa a info aí?'",
+        "Entrevista de emprego: linguagem formal",
+        "WhatsApp com amigos: linguagem informal/íntima"
+      ],
+      "dicas": [
+        "Contexto determina o registro adequado",
+        "Usar gíria em documento formal é inadequado",
+        "Ser excessivamente formal com amigos soa estranho",
+        "Competência linguística inclui saber variar",
+        "ENEM valoriza adequação situacional"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Um aluno escreve em redação do ENEM: 'Tipo assim, o governo tem que fazer alguma coisa, né?'\n\nQual problema ocorre?",
+          "alternativas": [
+            "Uso de variação regional inadequada",
+            "Falta de adequação ao registro formal exigido",
+            "Erro de concordância verbal",
+            "Uso de arcaísmo desnecessário",
+            "Preconceito linguístico"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O problema é inadequação do registro: expressões informais ('tipo assim', 'né?') são inapropriadas para contexto formal da redação do ENEM."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Norma Culta e Preconceito Linguístico",
+      "resumo": "Compreenda a norma culta como variedade de prestígio e combata o preconceito linguístico.",
+      "topicos": [
+        "Norma culta: variedade de prestígio social",
+        "Diferença entre norma culta e outras variedades",
+        "Preconceito linguístico: discriminação por modo de falar",
+        "Todas as variedades são válidas linguisticamente",
+        "Adequação é preferível a 'certo e errado' absoluto"
+      ],
+      "exemplos": [
+        "Norma culta exigida: concursos, documentos, contexto formal",
+        "Preconceito: considerar 'nós vai' como 'erro' de pessoa ignorante",
+        "Realidade: 'nós vai' segue lógica interna de certas variedades",
+        "Adequação: usar norma culta em contexto formal é estratégico",
+        "Respeito: não julgar pessoas por sua variedade linguística"
+      ],
+      "dicas": [
+        "Domine norma culta para contextos que a exigem",
+        "Não use norma culta como ferramenta de exclusão",
+        "Variedades populares têm gramática interna coerente",
+        "ENEM cobra respeito à diversidade linguística",
+        "Combata preconceito linguístico"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Uma pessoa diz: 'Nós vai na festa.' Essa construção:",
+          "alternativas": [
+            "É erro grave que revela ignorância total",
+            "Deve ser corrigida agressivamente em qualquer contexto",
+            "Representa variação linguística com lógica interna",
+            "Não existe no português brasileiro",
+            "É aceita na norma culta padrão"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Embora não seja norma culta, 'nós vai' é variação linguística legítima com lógica interna (simplificação de concordância), não ignorância. O respeito à diversidade é fundamental."
+        }
+      ]
+    }
+  ]
+}

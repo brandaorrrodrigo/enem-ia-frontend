@@ -1,0 +1,327 @@
+{
+  "id": "fisica-ondas",
+  "titulo": "Ondulatoria: Frequencia, Periodo, Som, Luz",
+  "descricao": "Estudo das ondas mecanicas e eletromagneticas",
+  "icone": "🌊",
+  "cor": "from-blue-500 to-cyan-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Grandezas das Ondas",
+      "resumo": "Ondas sao perturbacoes que se propagam transportando energia sem transporte de materia. As principais grandezas que caracterizam uma onda sao: frequencia (oscilacoes por segundo), periodo (tempo de uma oscilacao), comprimento de onda (distancia entre cristas) e amplitude (altura da onda).",
+      "topicos": [
+        "Frequencia (f): numero de oscilacoes por segundo, unidade hertz (Hz)",
+        "Periodo (T): tempo de uma oscilacao completa, unidade segundo (s)",
+        "Comprimento de onda (λ): distancia entre pontos equivalentes consecutivos",
+        "Relacao: f = 1/T ou T = 1/f"
+      ],
+      "exemplos": [
+        "Onda de radio FM 100 MHz oscila 100 milhoes de vezes por segundo",
+        "Corda de violao vibrando a 440 Hz produz a nota La",
+        "Ondas do mar com 10 segundos entre cristas tem f = 0,1 Hz"
+      ],
+      "formula": "f = 1/T e T = 1/f",
+      "dicas": [
+        "Frequencia e periodo sao inversamente proporcionais",
+        "Amplitude relaciona-se com energia/intensidade da onda",
+        "Comprimento de onda e a \"distancia espacial\" de uma oscilacao completa"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma onda tem periodo de 0,02 s. Qual e sua frequencia?",
+          "alternativas": {
+            "A": "0,02 Hz",
+            "B": "2 Hz",
+            "C": "20 Hz",
+            "D": "50 Hz",
+            "E": "500 Hz"
+          },
+          "correta": "D",
+          "explicacao": "Usando f = 1/T: f = 1/0,02 = 50 Hz. A onda completa 50 oscilacoes por segundo."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Duas ondas na mesma corda tem a mesma frequencia, mas uma tem o dobro da amplitude da outra. O que se pode afirmar?",
+          "alternativas": {
+            "A": "A de maior amplitude se propaga duas vezes mais rapido",
+            "B": "A de maior amplitude transporta mais energia",
+            "C": "A de maior amplitude tem menor comprimento de onda",
+            "D": "A de maior amplitude tem maior periodo",
+            "E": "Ambas transportam a mesma energia"
+          },
+          "correta": "B",
+          "explicacao": "A energia de uma onda e proporcional ao quadrado da amplitude. Maior amplitude significa maior energia transportada, mantendo mesma frequencia e velocidade no mesmo meio."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Em uma onda, a distancia entre duas cristas consecutivas e de 2 m. Como se chama esta grandeza?",
+          "alternativas": {
+            "A": "Amplitude",
+            "B": "Periodo",
+            "C": "Frequencia",
+            "D": "Comprimento de onda",
+            "E": "Velocidade de propagacao"
+          },
+          "correta": "D",
+          "explicacao": "A distancia entre dois pontos equivalentes consecutivos (cristas, vales, ou qualquer ponto na mesma fase) define o comprimento de onda (λ)."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Equacao Fundamental da Ondulatoria",
+      "resumo": "A equacao fundamental relaciona velocidade de propagacao, frequencia e comprimento de onda. A velocidade depende do meio de propagacao, enquanto a frequencia e determinada pela fonte. Ao mudar de meio, a frequencia permanece constante, mas velocidade e comprimento de onda mudam.",
+      "topicos": [
+        "Equacao fundamental: v = λ × f",
+        "Velocidade depende do meio de propagacao",
+        "Frequencia e propriedade da fonte (nao muda ao mudar meio)",
+        "Mudanca de meio: v e λ mudam, f permanece constante"
+      ],
+      "exemplos": [
+        "Som no ar (v ≈ 340 m/s): nota de 440 Hz tem λ ≈ 0,77 m",
+        "Luz no vacuo (v = 3×10⁸ m/s): vermelha 4×10¹⁴ Hz tem λ = 750 nm",
+        "Onda na agua: ao ir para regiao rasa, v diminui e λ diminui (f constante)"
+      ],
+      "formula": "v = λ × f",
+      "dicas": [
+        "Para calcular λ: λ = v/f; para calcular f: f = v/λ",
+        "Ondas mais rapidas ou de maior frequencia podem ter mesmo λ",
+        "Em provas, atentar para unidades: m/s, Hz, m ou cm"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma onda sonora de 500 Hz propaga-se no ar a 340 m/s. Qual o comprimento de onda?",
+          "alternativas": {
+            "A": "0,34 m",
+            "B": "0,68 m",
+            "C": "1,47 m",
+            "D": "170 m",
+            "E": "170.000 m"
+          },
+          "correta": "B",
+          "explicacao": "Usando v = λ × f: λ = v/f = 340/500 = 0,68 m ou 68 cm."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Uma onda passa do meio A (v = 20 m/s) para o meio B (v = 30 m/s). Se no meio A a frequencia e 10 Hz, o que acontece no meio B?",
+          "alternativas": {
+            "A": "Frequencia aumenta para 15 Hz",
+            "B": "Frequencia permanece 10 Hz e λ aumenta",
+            "C": "Frequencia diminui para 5 Hz",
+            "D": "Comprimento de onda permanece constante",
+            "E": "Velocidade volta para 20 m/s"
+          },
+          "correta": "B",
+          "explicacao": "A frequencia e propriedade da fonte e nao muda. Com f = 10 Hz constante e v aumentando de 20 para 30 m/s, o comprimento de onda aumenta de λ = 2 m para λ = 3 m."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A luz vermelha tem comprimento de onda de 700 nm no vacuo (v = 3×10⁸ m/s). Qual e aproximadamente sua frequencia?",
+          "alternativas": {
+            "A": "4,3 × 10¹⁴ Hz",
+            "B": "4,3 × 10¹⁵ Hz",
+            "C": "2,1 × 10⁶ Hz",
+            "D": "2,1 × 10¹⁴ Hz",
+            "E": "7,0 × 10¹⁴ Hz"
+          },
+          "correta": "A",
+          "explicacao": "Converter: 700 nm = 700×10⁻⁹ m = 7×10⁻⁷ m. f = v/λ = (3×10⁸)/(7×10⁻⁷) ≈ 4,3×10¹⁴ Hz."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Interferencia e Difracao",
+      "resumo": "Interferencia ocorre quando duas ou mais ondas se sobrepoem, podendo se reforcar (interferencia construtiva) ou se cancelar (destrutiva). Difracao e o espalhamento de ondas ao passar por obstaculos ou fendas. Ambos fenomenos comprovam a natureza ondulatoria da luz.",
+      "topicos": [
+        "Interferencia construtiva: ondas em fase se somam (amplitude aumenta)",
+        "Interferencia destrutiva: ondas em oposicao se cancelam",
+        "Difracao: onda contorna obstaculos e se espalha por fendas",
+        "Maior difracao quando λ proxima ao tamanho do obstaculo"
+      ],
+      "exemplos": [
+        "Cores em bolhas de sabao e manchas de oleo (interferencia de luz)",
+        "Som contornando esquina de edificio (difracao)",
+        "Fones com cancelamento de ruido (interferencia destrutiva)"
+      ],
+      "formula": "Construtiva: cristas com cristas; Destrutiva: crista com vale",
+      "dicas": [
+        "Interferencia preserva energia total (so redistribui)",
+        "Difracao e mais evidente quando λ ≥ tamanho do obstaculo",
+        "Ondas de radio (λ grande) difratam mais que luz (λ pequeno)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Duas ondas identicas, em fase, se encontram. O que ocorre no ponto de encontro?",
+          "alternativas": {
+            "A": "As ondas se destroem mutuamente",
+            "B": "Interferencia construtiva, amplitude duplica",
+            "C": "As ondas se refletem e voltam",
+            "D": "Interferencia destrutiva, amplitude zero",
+            "E": "Uma onda absorve a outra"
+          },
+          "correta": "B",
+          "explicacao": "Ondas em fase (cristas alinhadas) sofrem interferencia construtiva, somando suas amplitudes. Resultado e uma onda com amplitude maior."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que conseguimos ouvir alguem falando do outro lado de um muro, mas nao conseguimos ve-la?",
+          "alternativas": {
+            "A": "Som e mais intenso que luz",
+            "B": "Som tem comprimento de onda maior, difratando mais que luz",
+            "C": "Luz e absorvida pelo muro, som nao",
+            "D": "Ouvido e mais sensivel que visao",
+            "E": "Som atravessa materiais solidos, luz nao"
+          },
+          "correta": "B",
+          "explicacao": "Som tem comprimento de onda na ordem de centimetros a metros, comparavel ao tamanho de obstaculos, sofrendo grande difracao. Luz tem λ nanometrico, difratando muito pouco, nao contornando o muro."
+        },
+        {
+          "id": "q3",
+          "enunciado": "As cores observadas em uma fina camada de oleo sobre agua sao causadas por qual fenomeno?",
+          "alternativas": {
+            "A": "Absorcao seletiva de cores pelo oleo",
+            "B": "Refracao da luz no oleo",
+            "C": "Interferencia entre luz refletida nas duas superficies do oleo",
+            "D": "Difracao da luz pelas moleculas do oleo",
+            "E": "Polarizacao da luz pela agua"
+          },
+          "correta": "C",
+          "explicacao": "Luz reflete tanto na superficie ar-oleo quanto na superficie oleo-agua. Estas duas reflexoes interferem: algumas cores sofrem interferencia construtiva (visiveis) e outras destrutiva (suprimidas)."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Som e Acustica",
+      "resumo": "Som e uma onda mecanica longitudinal que se propaga em meios materiais. Necessita de um meio (solido, liquido ou gas) para se propagar. A velocidade do som depende do meio: e maior em solidos que em liquidos e gases. A frequencia determina a altura (grave/agudo) e a amplitude determina a intensidade (volume).",
+      "topicos": [
+        "Onda mecanica longitudinal (vibracao paralela a propagacao)",
+        "Nao se propaga no vacuo (precisa de meio material)",
+        "Velocidade: v_solido > v_liquido > v_gas (ar ≈ 340 m/s)",
+        "Altura: frequencia (grave < 20 Hz, agudo > 20.000 Hz); Volume: amplitude"
+      ],
+      "exemplos": [
+        "Trovao ouvido segundos apos o raio (luz instantanea, som 340 m/s)",
+        "Ultra-som medico usa frequencias acima de 20 kHz",
+        "Eco: reflexao do som em obstaculos distantes"
+      ],
+      "formula": "v_som_ar ≈ 340 m/s (a 20°C)",
+      "dicas": [
+        "Humanos ouvem de 20 Hz (grave) a 20.000 Hz (agudo)",
+        "Infrassom (< 20 Hz): elefantes, terremotos; Ultrassom (> 20 kHz): morcegos",
+        "Efeito Doppler: frequencia aumenta (aproximacao) ou diminui (afastamento)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma pessoa ve um raio e ouve o trovao 6 segundos depois. A que distancia aproximada ocorreu o raio? (v_som = 340 m/s)",
+          "alternativas": {
+            "A": "57 m",
+            "B": "340 m",
+            "C": "1020 m",
+            "D": "2040 m",
+            "E": "6000 m"
+          },
+          "correta": "D",
+          "explicacao": "A luz e praticamente instantanea. O som levou 6 s. Distancia = v × t = 340 × 6 = 2040 m ou cerca de 2 km."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que o som nao se propaga no vacuo do espaco?",
+          "alternativas": {
+            "A": "Porque a temperatura e muito baixa",
+            "B": "Porque som e onda mecanica e precisa de meio material",
+            "C": "Porque nao ha fonte sonora no espaco",
+            "D": "Porque a pressao e muito alta",
+            "E": "Porque ondas sonoras sao absorvidas pela escuridao"
+          },
+          "correta": "B",
+          "explicacao": "Som e onda mecanica que necessita de um meio material (moleculas) para se propagar atraves de compressoes e rarefacoes. No vacuo nao ha moleculas, logo nao ha propagacao sonora."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Qual caracteristica da onda sonora determina se um som e grave ou agudo?",
+          "alternativas": {
+            "A": "Amplitude da onda",
+            "B": "Velocidade de propagacao",
+            "C": "Frequencia da onda",
+            "D": "Comprimento de onda apenas",
+            "E": "Intensidade do som"
+          },
+          "correta": "C",
+          "explicacao": "A frequencia determina a altura do som: baixas frequencias sao sons graves (ex: contrabaixo) e altas frequencias sao sons agudos (ex: apito). Amplitude determina o volume (intensidade)."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Ondas Eletromagneticas e Luz",
+      "resumo": "Ondas eletromagneticas sao oscilacoes de campos eletricos e magneticos que se propagam no vacuo a 3×10⁸ m/s (velocidade da luz). Nao necessitam meio material. O espectro eletromagnetico inclui ondas de radio, micro-ondas, infravermelho, luz visivel, ultravioleta, raios-X e raios gama.",
+      "topicos": [
+        "Nao precisam de meio material (propagam-se no vacuo)",
+        "Velocidade no vacuo: c = 3 × 10⁸ m/s (constante)",
+        "Espectro: radio, micro-ondas, IV, visivel, UV, raios-X, gama",
+        "Luz visivel: 400 nm (violeta) a 700 nm (vermelho)"
+      ],
+      "exemplos": [
+        "Luz do Sol chegando a Terra atraves do vacuo do espaco",
+        "Forno de micro-ondas usando ondas eletromagneticas de ~12 cm",
+        "Raios-X atravessando tecidos moles para radiografias"
+      ],
+      "formula": "c = 3 × 10⁸ m/s (vacuo)",
+      "dicas": [
+        "Maior frequencia = maior energia (raios gama mais energeticos)",
+        "Luz visivel e pequena parte do espectro eletromagnetico",
+        "Velocidade diminui em meios materiais (ex: vidro n = 1,5, v = 2×10⁸ m/s)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Qual e a principal diferenca entre ondas sonoras e ondas de luz?",
+          "alternativas": {
+            "A": "Som e mais rapido que luz",
+            "B": "Luz precisa de meio material, som nao",
+            "C": "Som e onda mecanica, luz e onda eletromagnetica",
+            "D": "Som tem maior frequencia que luz",
+            "E": "Luz e longitudinal, som e transversal"
+          },
+          "correta": "C",
+          "explicacao": "Som e onda mecanica longitudinal que precisa de meio material. Luz e onda eletromagnetica transversal que se propaga no vacuo. Luz e muito mais rapida (3×10⁸ m/s vs 340 m/s)."
+        },
+        {
+          "id": "q2",
+          "enunciado": "O Sol esta a 150 milhoes de km da Terra. Quanto tempo a luz solar leva para chegar ate nos? (c = 3×10⁸ m/s)",
+          "alternativas": {
+            "A": "5 segundos",
+            "B": "50 segundos",
+            "C": "8 minutos",
+            "D": "80 minutos",
+            "E": "8 horas"
+          },
+          "correta": "C",
+          "explicacao": "Distancia = 150×10⁶ km = 1,5×10¹¹ m. Tempo = d/v = (1,5×10¹¹)/(3×10⁸) = 500 s ≈ 8 minutos e 20 segundos."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Qual regiao do espectro eletromagnetico tem a maior energia por foton?",
+          "alternativas": {
+            "A": "Ondas de radio",
+            "B": "Luz visivel",
+            "C": "Infravermelho",
+            "D": "Ultravioleta",
+            "E": "Raios gama"
+          },
+          "correta": "E",
+          "explicacao": "Energia e proporcional a frequencia (E = h×f). Raios gama tem as maiores frequencias do espectro, portanto maior energia por foton, sendo altamente penetrantes e perigosos."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "id": "portugues-sintaxe",
+  "titulo": "Sintaxe Essencial",
+  "descricao": "Compreenda a estrutura das orações: termos essenciais, complementos e concordância",
+  "icone": "⚙️",
+  "cor": "from-red-500 to-pink-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Sujeito e Tipos de Sujeito",
+      "resumo": "Identifique o sujeito da oração e seus diferentes tipos: simples, composto, oculto e inexistente.",
+      "topicos": [
+        "Sujeito: termo sobre o qual se declara algo",
+        "Sujeito simples: um núcleo",
+        "Sujeito composto: mais de um núcleo",
+        "Sujeito oculto/desinencial: identificado pela desinência verbal",
+        "Sujeito indeterminado: existe mas não se sabe quem é",
+        "Oração sem sujeito: verbos impessoais"
+      ],
+      "exemplos": [
+        "Simples: 'O menino chegou.' (núcleo: menino)",
+        "Composto: 'João e Maria chegaram.' (núcleos: João, Maria)",
+        "Oculto: 'Chegamos cedo.' (nós - sujeito oculto)",
+        "Indeterminado: 'Falaram mal dele.' (VTI 3ª pl.) / 'Precisa-se de ajuda.' (VTI + SE)",
+        "Sem sujeito: 'Choveu ontem.' / 'Há problemas.' / 'É tarde.' / 'Faz frio.'"
+      ],
+      "dicas": [
+        "Pergunte ao verbo: 'Quem?' ou 'O que?' para achar o sujeito",
+        "Sujeito oculto: verbo conjugado, sujeito recuperável",
+        "Indeterminado: verbo 3ª pl. sem referente OU VTI/VI + SE",
+        "Sem sujeito: haver (existir), fazer (tempo), fenômenos natureza",
+        "Sujeito NUNCA vem preposicionado (exceção: entre nós)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Em 'Precisa-se de funcionários.', qual o tipo de sujeito?",
+          "alternativas": [
+            "Sujeito simples: funcionários",
+            "Sujeito oculto: nós",
+            "Sujeito indeterminado",
+            "Oração sem sujeito",
+            "Sujeito composto"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "VTI (precisar DE) + SE = sujeito indeterminado. 'Funcionários' é objeto indireto (preposicionado), não pode ser sujeito."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Predicado: Verbal, Nominal e Verbo-Nominal",
+      "resumo": "Compreenda os três tipos de predicado e suas diferenças: verbal, nominal e verbo-nominal.",
+      "topicos": [
+        "Predicado verbal: verbo nocional (ação) é o núcleo",
+        "Predicado nominal: nome (predicativo) é o núcleo, verbo de ligação",
+        "Predicado verbo-nominal: dois núcleos (verbo + predicativo)",
+        "Verbos de ligação: ser, estar, parecer, ficar, permanecer",
+        "Predicativo do sujeito e do objeto"
+      ],
+      "exemplos": [
+        "Verbal: 'O menino correu.' (núcleo: correu - ação)",
+        "Nominal: 'O menino está feliz.' (núcleo: feliz - estado, 'está' é ligação)",
+        "Verbo-nominal: 'O menino chegou cansado.' (dois núcleos: chegou + cansado)",
+        "Predicativo do sujeito: 'Ela é bonita.' / 'Ela chegou cansada.'",
+        "Predicativo do objeto: 'Considero-a inteligente.' (inteligente = predicativo de 'a')"
+      ],
+      "dicas": [
+        "Verbo de ligação não indica ação, indica estado",
+        "Predicado nominal sempre tem predicativo do sujeito",
+        "Verbo-nominal: verbo significativo + predicativo",
+        "Teste: substitua verbo por 'estar'. Se couber, é ligação",
+        "'Ela ficou em casa' = verbal (ficar = permanecer, ação)"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Em 'Os alunos saíram da sala contentes.', o predicado é:",
+          "alternativas": [
+            "Verbal (núcleo: saíram)",
+            "Nominal (núcleo: contentes)",
+            "Verbo-nominal (núcleos: saíram e contentes)",
+            "Não possui predicado",
+            "Verbal com objeto direto"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Predicado verbo-nominal: 'saíram' (verbo de ação) + 'contentes' (predicativo do sujeito), dois núcleos no predicado."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Complementos Verbais: Objeto Direto e Indireto",
+      "resumo": "Identifique os complementos que completam o sentido de verbos transitivos.",
+      "topicos": [
+        "Verbo transitivo direto (VTD): exige objeto direto (sem preposição)",
+        "Verbo transitivo indireto (VTI): exige objeto indireto (com preposição)",
+        "Verbo transitivo direto e indireto (VTDI): exige ambos",
+        "Verbo intransitivo (VI): não exige complemento",
+        "Diferença entre complemento e adjunto adverbial"
+      ],
+      "exemplos": [
+        "VTD + OD: 'Comprei um livro.' (comprei O QUÊ? um livro - sem prep.)",
+        "VTI + OI: 'Gosto de chocolate.' (gosto DE QUÊ? de chocolate - com prep.)",
+        "VTDI: 'Dei um presente a Maria.' (dei O QUÊ? presente / A QUEM? a Maria)",
+        "VI: 'O bebê nasceu.' (verbo intransitivo, não exige complemento)",
+        "Adjunto: 'Viajei para Paris.' ('para Paris' = lugar, não complemento obrigatório)"
+      ],
+      "dicas": [
+        "Pergunte ao verbo: O QUÊ? ou QUEM? (OD) / A QUÊ? DE QUÊ? (OI)",
+        "OD sem preposição obrigatória; OI com preposição obrigatória",
+        "Pronomes oblíquos: o/a/os/as = OD / lhe/lhes = OI",
+        "Complemento é obrigatório; adjunto é acessório",
+        "Regência verbal determina se é VTD, VTI ou VTDI"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "'O professor explicou a matéria aos alunos.' Os complementos são:",
+          "alternativas": [
+            "Apenas objeto direto: aos alunos",
+            "Apenas objeto indireto: a matéria",
+            "OD: a matéria / OI: aos alunos",
+            "OD: aos alunos / OI: a matéria",
+            "Dois objetos diretos"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "VTDI 'explicar': OD 'a matéria' (explicou O QUÊ? sem prep. obrigatória) e OI 'aos alunos' (explicou A QUEM? com prep. obrigatória)."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Concordância Verbal",
+      "resumo": "Regras essenciais de concordância entre verbo e sujeito em casos simples e especiais.",
+      "topicos": [
+        "Regra geral: verbo concorda com o sujeito em número e pessoa",
+        "Sujeito composto: verbo no plural",
+        "Sujeito composto posposto: singular ou plural",
+        "Expressões partitivas: maioria de, parte de",
+        "Casos especiais: haver, fazer, verbos com SE",
+        "Concordância com percentual, coletivo"
+      ],
+      "exemplos": [
+        "Regra geral: 'O aluno estuda.' / 'Os alunos estudam.'",
+        "Sujeito composto anteposto: 'João e Maria chegaram.' (plural obrigatório)",
+        "Sujeito composto posposto: 'Chegou João e Maria.' OU 'Chegaram João e Maria.'",
+        "Partitivo: 'A maioria dos alunos estuda/estudam.'",
+        "Haver (existir): 'Há problemas.' (invariável, sem sujeito)",
+        "Fazer (tempo): 'Faz três anos.' (invariável)"
+      ],
+      "dicas": [
+        "Identifique o sujeito primeiro, depois faça concordância",
+        "Haver (existir) e fazer (tempo) são invariáveis",
+        "'Haviam alunos' está ERRADO → 'Havia alunos' (correto)",
+        "Com porcentagem + especificador: '70% dos alunos chegou/chegaram'",
+        "Expressão partitiva: verbo concorda com 'maioria' OU com especificador"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Qual frase apresenta concordância CORRETA?",
+          "alternativas": [
+            "Haviam muitos problemas na reunião.",
+            "Fazem três anos que não nos vemos.",
+            "Houve muitos problemas na reunião.",
+            "Aluga-se casas na praia.",
+            "Precisam-se de funcionários."
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Houve' está correto (haver = existir é invariável, sem sujeito). 'Haviam', 'Fazem' estão errados (invariáveis). 'Alugam-se casas' / 'Precisa-se' seriam corretas."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Regência Verbal Essencial",
+      "resumo": "Conheça a regência dos verbos mais cobrados: assistir, aspirar, visar, preferir, implicar.",
+      "topicos": [
+        "Assistir: VTD (ajudar) / VTI (ver, presenciar)",
+        "Aspirar: VTD (inalar) / VTI (desejar)",
+        "Visar: VTD (mirar, por visto) / VTI (objetivar)",
+        "Preferir: VTDI (preferir X a Y) - sem 'mais' ou 'do que'",
+        "Implicar: VTD (acarretar) / VTI (antipatizar COM)",
+        "Diferença de sentido pela regência"
+      ],
+      "exemplos": [
+        "Assistir VTD: 'Assisti o paciente.' (ajudei) / VTI: 'Assisti ao jogo.' (vi)",
+        "Aspirar VTD: 'Aspirei o pó.' (inalar) / VTI: 'Aspiro a uma vaga.' (desejo)",
+        "Visar VTD: 'Visei o alvo.' (mirar) / VTI: 'Viso ao sucesso.' (objetivar)",
+        "Preferir: 'Prefiro café a chá.' (NÃO 'prefiro mais café do que chá')",
+        "Implicar VTD: 'Isso implica mudanças.' / VTI: 'Implico com ele.' (antipatizo)"
+      ],
+      "dicas": [
+        "Regência muda significado do verbo",
+        "Com VTI, use 'lhe' somente para pessoa (não coisa)",
+        "'Assisti ao filme' → 'Assisti a ele' (não 'lhe')",
+        "'Prefiro X do que Y' está ERRADO → 'Prefiro X a Y'",
+        "Memorize os principais verbos de regência especial"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Qual alternativa está CORRETA quanto à regência?",
+          "alternativas": [
+            "Prefiro mais o cinema do que o teatro.",
+            "Aspiro o cargo de diretor.",
+            "Assisti o filme ontem à noite.",
+            "Viso a aprovação no concurso.",
+            "Esqueci do seu nome."
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "'Viso a' (VTI no sentido de objetivar) está correto. Erros: 'Prefiro' (sem 'mais/do que'), 'Aspiro a/ao cargo', 'Assisti ao filme', 'Esqueci o/seu nome'."
+        }
+      ]
+    }
+  ]
+}

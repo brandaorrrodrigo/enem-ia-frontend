@@ -1,0 +1,332 @@
+{
+  "id": "redacao-competencia2",
+  "titulo": "Competência 2: Compreender o Tema e o Gênero Textual",
+  "descricao": "Compreender a proposta de redação e aplicar conceitos das várias áreas de conhecimento para desenvolver o tema, dentro dos limites estruturais do texto dissertativo-argumentativo em prosa",
+  "icone": "📝",
+  "cor": "from-purple-500 to-indigo-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "3h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Entendendo o Tema",
+      "resumo": "A compreensão correta do tema é o primeiro passo para uma boa redação. É fundamental identificar as palavras-chave, delimitações e exigências da proposta para evitar tangenciamento ou fuga ao tema.",
+      "topicos": [
+        "Leitura atenta da proposta",
+        "Identificação de palavras-chave",
+        "Delimitações temáticas",
+        "Análise dos textos motivadores",
+        "Brainstorming inicial"
+      ],
+      "exemplos": [
+        "📌 Tema ENEM 2022: 'Desafios para a valorização de comunidades e povos tradicionais no Brasil'\nPalavras-chave: desafios, valorização, comunidades tradicionais, povos tradicionais, Brasil\nDelimitação: especificamente sobre VALORIZAÇÃO (não basta falar de existência)",
+        "📌 Tema ENEM 2021: 'Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil'\nPalavras-chave: invisibilidade, registro civil, garantia, acesso, cidadania, Brasil\nDelimitação: relação entre falta de registro e acesso à cidadania",
+        "📌 Tema ENEM 2020: 'O estigma associado às doenças mentais na sociedade brasileira'\nPalavras-chave: estigma, doenças mentais, sociedade brasileira\nDelimitação: foco no ESTIGMA (preconceito), não apenas nas doenças",
+        "❌ Erro comum: Tema sobre 'desafios da educação à distância' - candidato escreve sobre educação em geral\n✅ Correto: Focar especificamente nos DESAFIOS do ensino À DISTÂNCIA",
+        "✅ Estratégia: Sublinhe as palavras-chave e anote ao lado da proposta o que NÃO deve ser o foco principal"
+      ],
+      "dicas": [
+        "Leia a proposta pelo menos três vezes antes de começar",
+        "Circule/sublinhe todas as palavras-chave do tema",
+        "Identifique se há recorte temporal, geográfico ou social",
+        "Utilize os textos motivadores para entender diferentes ângulos",
+        "Faça um mapa mental rápido com ideias relacionadas ao tema"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c2-m1",
+          "enunciado": "Dado o tema 'Desafios para o enfrentamento da invisibilidade do trabalho de cuidado realizado pela mulher no Brasil', qual é o FOCO principal?",
+          "alternativas": [
+            "O trabalho feminino em geral no Brasil",
+            "Os desafios específicos do trabalho de cuidado invisível das mulheres",
+            "A história do trabalho feminino no Brasil",
+            "As conquistas das mulheres no mercado de trabalho"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O tema delimita claramente: DESAFIOS + INVISIBILIDADE + TRABALHO DE CUIDADO + MULHER + BRASIL. Todos esses elementos devem estar presentes."
+        },
+        {
+          "id": "q2-c2-m1",
+          "enunciado": "Qual atitude demonstra melhor compreensão da proposta temática?",
+          "alternativas": [
+            "Começar a escrever imediatamente após ler o tema uma vez",
+            "Ignorar os textos motivadores para ter ideias originais",
+            "Sublinhar palavras-chave e anotar delimitações antes de escrever",
+            "Escrever sobre o que sabe, adaptando o tema ao seu conhecimento"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A leitura criteriosa, identificação de palavras-chave e compreensão das delimitações são essenciais para atender ao tema."
+        },
+        {
+          "id": "q3-c2-m1",
+          "enunciado": "Os textos motivadores devem ser utilizados para:",
+          "alternativas": [
+            "Serem copiados integralmente na redação",
+            "Serem ignorados completamente",
+            "Auxiliar na compreensão do tema e fornecer repertório",
+            "Confundir o candidato com informações desnecessárias"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Os textos motivadores ajudam a compreender diferentes aspectos do tema e podem fornecer dados/informações úteis (sem cópia)."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Dissertação-Argumentativa em Prosa",
+      "resumo": "O ENEM exige um gênero textual específico: dissertação-argumentativa em prosa. Conhecer suas características estruturais e funcionais é obrigatório para não zerar a redação.",
+      "topicos": [
+        "Estrutura da dissertação-argumentativa",
+        "Diferença entre dissertação e narração",
+        "Diferença entre dissertação e descrição",
+        "Características da argumentação",
+        "Formato em prosa (não verso)"
+      ],
+      "exemplos": [
+        "✅ DISSERTAÇÃO-ARGUMENTATIVA:\n'A violência urbana no Brasil é resultado de múltiplos fatores sociais. A desigualdade econômica, aliada à falta de oportunidades, cria um ambiente propício à criminalidade. Portanto, é necessário investir em educação e políticas sociais.'\n(Apresenta tese + argumentos + conclusão)",
+        "❌ NARRAÇÃO (inadequado):\n'João acordou cedo e foi para a escola. No caminho, presenciou um assalto. Ficou com medo e pensou sobre a violência na cidade.'\n(Conta uma história com personagens e ações)",
+        "❌ DESCRIÇÃO (inadequado):\n'A cidade é grande e cinzenta. As ruas são sujas e perigosas. As pessoas andam apressadas e assustadas.'\n(Apenas descreve, sem argumentar ou defender ponto de vista)",
+        "✅ Estrutura básica:\n[INTRODUÇÃO] Contextualização + Tese\n[DESENVOLVIMENTO] Argumento 1 + Argumento 2\n[CONCLUSÃO] Retomada + Proposta de intervenção",
+        "✅ EM PROSA significa: texto corrido em parágrafos, NÃO em versos, tópicos ou bullet points"
+      ],
+      "dicas": [
+        "Nunca conte uma história fictícia ou use personagens inventados",
+        "Não faça apenas descrição; sempre argumente e defenda uma tese",
+        "Estruture em 4 ou 5 parágrafos bem delimitados",
+        "Cada parágrafo deve ter função clara: introduzir, argumentar ou concluir",
+        "Evite formato de tópicos, listas ou qualquer estrutura não textual"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c2-m2",
+          "enunciado": "Qual trecho caracteriza uma dissertação-argumentativa?",
+          "alternativas": [
+            "Maria acordou cedo para ir à escola e encontrou o professor João no caminho.",
+            "A escola era grande, com paredes brancas e janelas azuis.",
+            "A educação é fundamental para o desenvolvimento social, pois promove igualdade de oportunidades.",
+            "Querido leitor, você já parou para pensar sobre a educação?"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Apresenta tese ('educação é fundamental') e argumento ('promove igualdade'), características da dissertação-argumentativa."
+        },
+        {
+          "id": "q2-c2-m2",
+          "enunciado": "Uma redação é anulada (nota zero) quando:",
+          "alternativas": [
+            "Apresenta argumentos fracos",
+            "Tem erros gramaticais",
+            "É escrita em forma de poema ou não segue o gênero dissertativo-argumentativo",
+            "Tem menos de 30 linhas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Fugir completamente do gênero textual exigido (dissertação-argumentativa em prosa) resulta em anulação da redação."
+        },
+        {
+          "id": "q3-c2-m2",
+          "enunciado": "A estrutura básica da dissertação-argumentativa no ENEM é:",
+          "alternativas": [
+            "Apresentação → Clímax → Desfecho",
+            "Introdução → Desenvolvimento → Conclusão",
+            "Causa → Consequência → Solução",
+            "Tópico 1 → Tópico 2 → Tópico 3"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A estrutura clássica é: Introdução (contextualização + tese), Desenvolvimento (argumentos), Conclusão (retomada + proposta)."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Fuga ao Tema: Total vs Parcial",
+      "resumo": "A fuga ao tema pode ser total (nota zero) ou parcial (perda de pontos). Compreender a diferença e saber como evitar ambas é crucial para não perder pontos na Competência 2.",
+      "topicos": [
+        "Fuga total ao tema",
+        "Tangenciamento (fuga parcial)",
+        "Cópia dos textos motivadores",
+        "Ampliação indevida do tema",
+        "Como manter o foco"
+      ],
+      "exemplos": [
+        "❌ FUGA TOTAL (nota 0 na C2):\nTema: 'Desafios da mobilidade urbana no Brasil'\nRedação: Escreve sobre poluição ambiental em geral\n(Não trata do tema proposto)",
+        "⚠️ TANGENCIAMENTO (até 80 pontos na C2):\nTema: 'Desafios da mobilidade urbana no Brasil'\nRedação: Fala sobre mobilidade urbana, mas foca principalmente em acidentes de trânsito\n(Trata do tema de forma superficial/tangencial)",
+        "✅ ADEQUAÇÃO TOTAL (200 pontos na C2):\nTema: 'Desafios da mobilidade urbana no Brasil'\nRedação: Discute especificamente os DESAFIOS (transporte público precário, congestionamentos, falta de planejamento)\n(Atende plenamente ao tema)",
+        "❌ CÓPIA DOS TEXTOS MOTIVADORES:\nReproduzir frases ou parágrafos dos textos de apoio sem reformulação própria\n(Desconsiderado na contagem de linhas)",
+        "❌ AMPLIAÇÃO INDEVIDA:\nTema sobre 'invisibilidade digital no Brasil' → candidato fala sobre tecnologia no mundo todo\n(Deve manter o recorte: Brasil)"
+      ],
+      "dicas": [
+        "Retome as palavras-chave do tema em cada parágrafo",
+        "Pergunte-se constantemente: 'Estou respondendo ao tema?'",
+        "Não amplie demais o tema (respeite recortes geográficos/temporais)",
+        "Não use informações dos textos motivadores sem reformular",
+        "Desenvolva pelo menos 2 aspectos específicos do tema"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c2-m3",
+          "enunciado": "Tema: 'Desafios para a preservação da cultura indígena no Brasil'. Qual redação configura TANGENCIAMENTO?",
+          "alternativas": [
+            "Fala apenas sobre a história dos povos indígenas, sem mencionar desafios atuais",
+            "Discute os desafios específicos de preservação cultural indígena no contexto brasileiro",
+            "Escreve sobre preservação ambiental da Amazônia",
+            "Narra a história fictícia de um indígena"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Tangenciar é abordar o tema superficialmente ou focar em aspectos periféricos, sem tratar do núcleo (desafios de preservação cultural)."
+        },
+        {
+          "id": "q2-c2-m3",
+          "enunciado": "O que caracteriza FUGA TOTAL ao tema?",
+          "alternativas": [
+            "Desenvolvimento superficial do tema",
+            "Ausência completa de relação com o tema proposto",
+            "Poucos argumentos sobre o tema",
+            "Uso inadequado de conectivos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Fuga total ocorre quando o texto não trata do tema proposto, resultando em nota zero na Competência 2."
+        },
+        {
+          "id": "q3-c2-m3",
+          "enunciado": "Sobre o uso dos textos motivadores, é CORRETO afirmar:",
+          "alternativas": [
+            "Devem ser copiados integralmente para demonstrar conhecimento",
+            "Devem ser completamente ignorados na redação",
+            "Podem fornecer dados, mas não devem ser copiados literalmente",
+            "São obrigatórios na argumentação"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Os textos motivadores auxiliam a compreensão, mas trechos copiados são desconsiderados. Use as ideias reformulando com suas palavras."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Delimitação e Recorte do Tema",
+      "resumo": "Temas do ENEM sempre vêm com delimitações específicas (temporal, geográfica, social). Identificar e respeitar essas delimitações é fundamental para atingir pontuação máxima na Competência 2.",
+      "topicos": [
+        "Recorte geográfico (Brasil, região, cidade)",
+        "Recorte temporal (contemporâneo, histórico)",
+        "Recorte social (grupos específicos)",
+        "Palavras que delimitam o tema",
+        "Como não generalizar indevidamente"
+      ],
+      "exemplos": [
+        "📍 RECORTE GEOGRÁFICO:\nTema: '...na sociedade BRASILEIRA'\n✅ Correto: Dados, exemplos e propostas focados no Brasil\n❌ Erro: Falar sobre o problema no mundo todo",
+        "⏰ RECORTE TEMPORAL:\nTema: 'Desafios CONTEMPORÂNEOS da educação'\n✅ Correto: Focar em questões atuais (pandemia, tecnologia, EaD)\n❌ Erro: Falar apenas de história da educação",
+        "👥 RECORTE SOCIAL:\nTema: 'Invisibilidade do trabalho de cuidado realizado pela MULHER'\n✅ Correto: Focar especificamente nas mulheres\n❌ Erro: Generalizar para 'trabalho de cuidado' sem gênero",
+        "🎯 PALAVRAS-CHAVE DELIMITADORAS:\n'Desafios' ≠ 'História' ≠ 'Conceito' ≠ 'Importância'\nCada palavra exige abordagem diferente",
+        "✅ EXEMPLO DE BOA DELIMITAÇÃO:\n'No contexto brasileiro contemporâneo, os desafios para a valorização dos povos indígenas são múltiplos...'\n(Mantém todos os recortes do tema)"
+      ],
+      "dicas": [
+        "Identifique TODAS as delimitações presentes no tema",
+        "Mantenha o recorte geográfico em todos os parágrafos",
+        "Se o tema pede 'desafios', não fale apenas de 'conceitos'",
+        "Use expressões como 'no Brasil', 'na sociedade brasileira', 'no contexto nacional'",
+        "Verifique se cada argumento está dentro do recorte proposto"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c2-m4",
+          "enunciado": "Tema: 'Desafios para a inclusão de pessoas com deficiência no mercado de trabalho brasileiro'. Quais são os recortes?",
+          "alternativas": [
+            "Apenas geográfico (Brasil)",
+            "Geográfico (Brasil) e temático (inclusão no trabalho)",
+            "Geográfico (Brasil), social (pessoas com deficiência), temático (mercado de trabalho) e enfoque (desafios)",
+            "Apenas social (pessoas com deficiência)"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O tema apresenta múltiplos recortes que devem ser respeitados: onde (Brasil), quem (PCDs), o quê (mercado de trabalho), qual aspecto (desafios)."
+        },
+        {
+          "id": "q2-c2-m4",
+          "enunciado": "Qual erro de delimitação é mais comum?",
+          "alternativas": [
+            "Manter o foco no Brasil quando o tema especifica",
+            "Generalizar o tema para contextos mundiais quando há recorte geográfico",
+            "Usar dados brasileiros na argumentação",
+            "Mencionar o recorte na introdução"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Um erro frequente é ampliar o tema além do recorte proposto, como falar do mundo todo quando o tema especifica 'no Brasil'."
+        },
+        {
+          "id": "q3-c2-m4",
+          "enunciado": "Como manter o recorte temático ao longo da redação?",
+          "alternativas": [
+            "Mencionar o recorte apenas na introdução",
+            "Ignorar o recorte nos parágrafos de desenvolvimento",
+            "Retomar as palavras-chave do tema em cada parágrafo",
+            "Copiar o tema várias vezes ao longo do texto"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Retomar as palavras-chave e manter o foco no recorte em todos os parágrafos demonstra compreensão plena do tema."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Projeto de Texto e Repertório",
+      "resumo": "Um bom projeto de texto demonstra domínio do tema através de repertório sociocultural legitimado e pertinente. Analisamos redações nota 1000 para compreender como articular conhecimentos diversos.",
+      "topicos": [
+        "Planejamento antes de escrever",
+        "Repertório sociocultural legitimado",
+        "Articulação de conhecimentos",
+        "Uso de dados, citações e referências",
+        "Análise de redações nota 1000"
+      ],
+      "exemplos": [
+        "✅ REPERTÓRIO LEGITIMADO (Redação 1000):\n'Segundo a filósofa Hannah Arendt, a banalização da violência é reflexo da perda de valores humanitários. No Brasil contemporâneo, essa perspectiva se aplica ao estigma contra doenças mentais...'\n(Filosofia aplicada ao tema)",
+        "✅ REPERTÓRIO COM DADOS (Redação 1000):\n'De acordo com dados da OMS, o Brasil possui uma das maiores taxas de ansiedade do mundo, afetando aproximadamente 18 milhões de pessoas. Contudo, o estigma social...'",
+        "✅ REPERTÓRIO HISTÓRICO (Redação 1000):\n'Desde a Declaração Universal dos Direitos Humanos de 1948, o acesso à saúde é reconhecido como direito fundamental. No entanto, na sociedade brasileira...'",
+        "✅ REPERTÓRIO LITERÁRIO (Redação 1000):\n'Na obra \"O Cortiço\", Aluísio Azevedo retrata a marginalização social. Similarmente, no Brasil atual, comunidades tradicionais enfrentam invisibilidade...'",
+        "❌ REPERTÓRIO NÃO LEGITIMADO:\n'Minha tia sempre diz que...', 'Todo mundo sabe que...', 'Ouvi falar que...'\n(Senso comum, sem embasamento)"
+      ],
+      "dicas": [
+        "Reserve 5 minutos para planejar a redação antes de escrever",
+        "Liste possíveis repertórios: filósofos, dados, história, literatura",
+        "Conecte o repertório ao tema de forma clara e produtiva",
+        "Diversifique as áreas de conhecimento (história, sociologia, filosofia)",
+        "Estude redações nota 1000 para identificar padrões de excelência"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c2-m5",
+          "enunciado": "Qual repertório é considerado LEGITIMADO?",
+          "alternativas": [
+            "Meu professor sempre fala que a educação é importante",
+            "Segundo Paulo Freire, a educação é um ato político",
+            "Todo mundo sabe que educação é essencial",
+            "Ouvi no jornal que a educação está em crise"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Repertório legitimado inclui referências a pensadores, obras, dados oficiais, documentos históricos - não senso comum ou experiências pessoais."
+        },
+        {
+          "id": "q2-c2-m5",
+          "enunciado": "Como articular repertório sociocultural ao tema?",
+          "alternativas": [
+            "Inserir citações aleatórias sem conexão com o tema",
+            "Relacionar o repertório ao argumento e ao tema de forma produtiva",
+            "Copiar definições de dicionário",
+            "Usar apenas experiências pessoais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O repertório deve ser pertinente (relacionado ao tema) e produtivo (contribuir para a argumentação), não apenas decorativo."
+        },
+        {
+          "id": "q3-c2-m5",
+          "enunciado": "Qual estratégia NÃO é recomendada para o projeto de texto?",
+          "alternativas": [
+            "Fazer um rascunho com ideias principais antes de escrever",
+            "Listar possíveis argumentos e repertórios",
+            "Começar a escrever imediatamente sem planejamento",
+            "Organizar a estrutura em introdução, desenvolvimento e conclusão"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Começar sem planejamento pode resultar em texto desorganizado, tangenciamento ou falta de coesão. Reserve tempo para planejar."
+        }
+      ]
+    }
+  ]
+}

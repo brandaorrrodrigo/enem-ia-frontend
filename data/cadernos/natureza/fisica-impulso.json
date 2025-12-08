@@ -1,0 +1,332 @@
+{
+  "id": "fisica-impulso",
+  "titulo": "Impulso, Quantidade de Movimento e Colisoes",
+  "descricao": "Estudo do impulso, quantidade de movimento e conservacao em colisoes. Fundamental para analisar impactos, explosoes e sistemas de particulas em interacao.",
+  "icone": "💥",
+  "cor": "from-red-500 to-pink-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Impulso de uma Forca",
+      "resumo": "Impulso e o produto da forca pelo intervalo de tempo de aplicacao. Mede o efeito de uma forca ao longo do tempo, causando variacao na quantidade de movimento.",
+      "topicos": [
+        "Impulso: I = F⋅Δt (grandeza vetorial com direcao e sentido da forca)",
+        "Unidade: N⋅s (Newton vezes segundo) = kg⋅m/s",
+        "Forca constante: impulso e a area sob o grafico F×t",
+        "Forca variavel: impulso e a area sob a curva no grafico F×t",
+        "Impulso sempre tem mesma direcao e sentido da forca resultante"
+      ],
+      "exemplos": [
+        "Forca de 100 N aplicada durante 0,5 s: I = 100 × 0,5 = 50 N⋅s",
+        "Airbag: aumenta Δt da colisao, reduzindo F (mesmo impulso com menor forca)",
+        "Grafico F×t mostra retangulo de base 4s e altura 20N: I = area = 80 N⋅s"
+      ],
+      "formula": "I = F⋅Δt",
+      "dicas": [
+        "Impulso e area sob grafico F×t (retangulo, triangulo ou trapezio)",
+        "Maior tempo de impacto → menor forca (importante em seguranca)",
+        "No ENEM, impulso aparece em contextos de colisoes e seguranca"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Uma forca constante de 200 N atua sobre um objeto durante 0,4 s. Qual o impulso dessa forca?",
+          "alternativas": {
+            "A": "50 N⋅s",
+            "B": "80 N⋅s",
+            "C": "160 N⋅s",
+            "D": "200 N⋅s",
+            "E": "500 N⋅s"
+          },
+          "correta": "B",
+          "explicacao": "Impulso = F⋅Δt = 200 × 0,4 = 80 N⋅s"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Em uma colisao, um airbag aumenta o tempo de impacto de 0,01 s para 0,1 s. Como isso afeta a forca sobre o passageiro (mesmo impulso)?",
+          "alternativas": {
+            "A": "Forca aumenta 10 vezes",
+            "B": "Forca aumenta 2 vezes",
+            "C": "Forca permanece igual",
+            "D": "Forca reduz pela metade",
+            "E": "Forca reduz 10 vezes"
+          },
+          "correta": "E",
+          "explicacao": "I = F⋅Δt constante. Se Δt aumenta 10x, F deve reduzir 10x para manter mesmo impulso"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) O grafico forca × tempo mostra um triangulo com base 6 s e altura 30 N. Qual o impulso?",
+          "alternativas": {
+            "A": "36 N⋅s",
+            "B": "60 N⋅s",
+            "C": "90 N⋅s",
+            "D": "120 N⋅s",
+            "E": "180 N⋅s"
+          },
+          "correta": "C",
+          "explicacao": "Impulso = area do triangulo = (base × altura)/2 = (6 × 30)/2 = 90 N⋅s"
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Quantidade de Movimento",
+      "resumo": "Quantidade de movimento (momento linear) e o produto da massa pela velocidade. Grandeza vetorial fundamental para analisar sistemas de particulas e colisoes.",
+      "topicos": [
+        "Quantidade de movimento: Q = m⋅v (ou p = m⋅v)",
+        "Unidade: kg⋅m/s (mesma do impulso)",
+        "Grandeza vetorial: mesma direcao e sentido da velocidade",
+        "Depende linearmente da massa e da velocidade",
+        "Sistema isolado: soma das quantidades de movimento e constante"
+      ],
+      "exemplos": [
+        "Carro de 1000 kg a 20 m/s: Q = 1000 × 20 = 20.000 kg⋅m/s",
+        "Bala de 0,01 kg a 500 m/s: Q = 0,01 × 500 = 5 kg⋅m/s",
+        "Dois objetos: Q_total = m₁v₁ + m₂v₂ (soma vetorial)"
+      ],
+      "formula": "Q = m⋅v",
+      "dicas": [
+        "Quantidade de movimento e vetorial: considere sinais em movimento retilineo",
+        "Objetos em sentidos opostos: use sinais + e - para as velocidades",
+        "Sistema isolado (sem forcas externas): Q_total se conserva"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Qual a quantidade de movimento de um veiculo de 1200 kg que se move a 25 m/s?",
+          "alternativas": {
+            "A": "48 kg⋅m/s",
+            "B": "300 kg⋅m/s",
+            "C": "1225 kg⋅m/s",
+            "D": "30.000 kg⋅m/s",
+            "E": "750.000 kg⋅m/s"
+          },
+          "correta": "D",
+          "explicacao": "Q = m⋅v = 1200 × 25 = 30.000 kg⋅m/s"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Dois objetos de massas 2 kg e 3 kg movem-se em sentidos opostos com velocidades 4 m/s e 2 m/s, respectivamente. Qual a quantidade de movimento total?",
+          "alternativas": {
+            "A": "-2 kg⋅m/s",
+            "B": "2 kg⋅m/s",
+            "C": "6 kg⋅m/s",
+            "D": "8 kg⋅m/s",
+            "E": "14 kg⋅m/s"
+          },
+          "correta": "B",
+          "explicacao": "Assumindo sentido positivo para o primeiro: Q_total = 2×4 + 3×(-2) = 8 - 6 = 2 kg⋅m/s"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Um objeto de 5 kg tem quantidade de movimento de 40 kg⋅m/s. Qual sua velocidade?",
+          "alternativas": {
+            "A": "0,125 m/s",
+            "B": "8 m/s",
+            "C": "35 m/s",
+            "D": "45 m/s",
+            "E": "200 m/s"
+          },
+          "correta": "B",
+          "explicacao": "Q = m⋅v → 40 = 5⋅v → v = 8 m/s"
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Teorema do Impulso",
+      "resumo": "O Teorema do Impulso relaciona impulso com variacao da quantidade de movimento. O impulso da forca resultante e igual a variacao da quantidade de movimento.",
+      "topicos": [
+        "Teorema do Impulso: I = ΔQ = Q_final - Q_inicial = m(v_f - v_i)",
+        "Impulso da forca resultante causa variacao na quantidade de movimento",
+        "Consequencia da 2ª Lei de Newton: F = ma → F⋅Δt = m⋅Δv",
+        "Aplicacao: calcular velocidade final conhecendo impulso",
+        "Forcas internas (colisoes) nao alteram Q_total do sistema"
+      ],
+      "exemplos": [
+        "Bola de 0,5 kg muda velocidade de 10 m/s para 15 m/s: I = 0,5(15-10) = 2,5 N⋅s",
+        "Impulso de 100 N⋅s em objeto de 20 kg em repouso: v_f = I/m = 100/20 = 5 m/s",
+        "Carro freia (v=20m/s para v=0): I = m(0-20) = -20m N⋅s (impulso negativo)"
+      ],
+      "formula": "I = ΔQ = m⋅Δv",
+      "dicas": [
+        "Use quando souber forca e tempo (para calcular Δv) ou vice-versa",
+        "Impulso e ΔQ tem mesma unidade (kg⋅m/s = N⋅s)",
+        "Sinal do impulso indica se aumenta (+) ou diminui (-) a velocidade"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Uma bola de 0,2 kg em repouso recebe impulso de 4 N⋅s. Qual sua velocidade final?",
+          "alternativas": {
+            "A": "0,8 m/s",
+            "B": "5 m/s",
+            "C": "20 m/s",
+            "D": "40 m/s",
+            "E": "80 m/s"
+          },
+          "correta": "C",
+          "explicacao": "I = m⋅Δv → 4 = 0,2⋅(v_f - 0) → v_f = 20 m/s"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Um objeto de 10 kg tem velocidade reduzida de 15 m/s para 5 m/s. Qual o impulso recebido?",
+          "alternativas": {
+            "A": "-200 N⋅s",
+            "B": "-100 N⋅s",
+            "C": "0 N⋅s",
+            "D": "100 N⋅s",
+            "E": "200 N⋅s"
+          },
+          "correta": "B",
+          "explicacao": "I = m⋅Δv = 10 × (5 - 15) = 10 × (-10) = -100 N⋅s"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Uma forca constante de 50 N atua durante 2 s sobre um objeto de 5 kg inicialmente em repouso. Qual a velocidade final?",
+          "alternativas": {
+            "A": "10 m/s",
+            "B": "20 m/s",
+            "C": "25 m/s",
+            "D": "50 m/s",
+            "E": "100 m/s"
+          },
+          "correta": "B",
+          "explicacao": "I = F⋅Δt = 50 × 2 = 100 N⋅s. Teorema: I = m⋅v_f → 100 = 5⋅v_f → v_f = 20 m/s"
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Colisoes Elasticas",
+      "resumo": "Colisoes onde ha conservacao da quantidade de movimento e da energia cinetica. Objetos nao se deformam permanentemente. Exemplo: bolas de bilhar.",
+      "topicos": [
+        "Colisao elastica: conserva Q e E_c (sem perda de energia mecanica)",
+        "Conservacao de Q: m₁v₁ + m₂v₂ = m₁v₁' + m₂v₂' (antes = depois)",
+        "Conservacao de E_c: (m₁v₁²)/2 + (m₂v₂²)/2 = (m₁v₁'²)/2 + (m₂v₂'²)/2",
+        "Coeficiente de restituicao e = 1 (elastica), 0 < e < 1 (parcialmente elastica), e = 0 (inelastica)",
+        "Caso especial: massas iguais trocam velocidades"
+      ],
+      "exemplos": [
+        "Bola de 2 kg a 5 m/s colide com bola de 2 kg parada: trocam velocidades (primeira para, segunda vai a 5 m/s)",
+        "Dois carrinhos identicos: v₁=4 m/s, v₂=0. Apos colisao: v₁'=0, v₂'=4 m/s",
+        "Moleculas de gas: colisoes aproximadamente elasticas"
+      ],
+      "formula": "Q_antes = Q_depois; E_c_antes = E_c_depois; e = 1",
+      "dicas": [
+        "Em colisao elastica, use duas equacoes: conservacao de Q e conservacao de E_c",
+        "Massas iguais em colisao frontal elastica: trocam velocidades",
+        "Colisao elastica e idealizacao (raramente ocorre perfeitamente na pratica)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Dois blocos identicos de 3 kg colidem elasticamente. O primeiro move-se a 8 m/s e o segundo esta em repouso. Apos a colisao, qual a velocidade do segundo bloco?",
+          "alternativas": {
+            "A": "0 m/s",
+            "B": "4 m/s",
+            "C": "6 m/s",
+            "D": "8 m/s",
+            "E": "16 m/s"
+          },
+          "correta": "D",
+          "explicacao": "Massas iguais em colisao elastica: trocam velocidades. Primeiro para (0 m/s), segundo adquire 8 m/s"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Em uma colisao elastica entre dois objetos, qual grandeza NAO se conserva?",
+          "alternativas": {
+            "A": "Quantidade de movimento total",
+            "B": "Energia cinetica total",
+            "C": "Energia mecanica total",
+            "D": "Velocidade de cada objeto",
+            "E": "Momento angular (se sem torques externos)"
+          },
+          "correta": "D",
+          "explicacao": "Velocidades individuais mudam na colisao. Conservam-se Q_total, E_c_total e E_mecanica_total"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Objeto A (4 kg, 6 m/s) colide elasticamente com B (4 kg, 2 m/s) no mesmo sentido. Quantidade de movimento total apos colisao e:",
+          "alternativas": {
+            "A": "8 kg⋅m/s",
+            "B": "16 kg⋅m/s",
+            "C": "24 kg⋅m/s",
+            "D": "32 kg⋅m/s",
+            "E": "48 kg⋅m/s"
+          },
+          "correta": "D",
+          "explicacao": "Conservacao de Q: Q_antes = 4×6 + 4×2 = 24 + 8 = 32 kg⋅m/s = Q_depois"
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Colisoes Inelasticas",
+      "resumo": "Colisoes onde ha conservacao da quantidade de movimento, mas nao da energia cinetica. Parte da energia e dissipada como calor, som, deformacao. Colisao perfeitamente inelastica: objetos ficam unidos.",
+      "topicos": [
+        "Colisao inelastica: conserva Q, mas nao conserva E_c (ha dissipacao)",
+        "Perfeitamente inelastica: objetos grudados apos colisao (mesma velocidade final)",
+        "Formula: m₁v₁ + m₂v₂ = (m₁ + m₂)v_f (corpos unidos)",
+        "Coeficiente de restituicao: 0 ≤ e < 1 (e = 0 se perfeitamente inelastica)",
+        "Energia perdida: ΔE = E_c_antes - E_c_depois (transformada em calor/deformacao)"
+      ],
+      "exemplos": [
+        "Carro (1000 kg, 15 m/s) colide e gruda em outro (1000 kg, 5 m/s, mesmo sentido): v_f = (15000+5000)/2000 = 10 m/s",
+        "Bala (0,01 kg, 400 m/s) penetra em bloco (2 kg, parado): (0,01×400) = 2,01×v_f → v_f ≈ 2 m/s",
+        "Acidente de transito: veiculos amassam e parte da energia vira deformacao"
+      ],
+      "formula": "Q_antes = Q_depois; (m₁+m₂)v_f = m₁v₁ + m₂v₂ (se grudados)",
+      "dicas": [
+        "Colisao perfeitamente inelastica: objetos unidos → mesma velocidade final",
+        "Use apenas conservacao de Q (E_c nao se conserva)",
+        "Calcule energia perdida: diferenca entre E_c inicial e final"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Um veiculo de 1200 kg a 20 m/s colide e gruda em outro de 800 kg em repouso. Qual a velocidade do conjunto apos a colisao?",
+          "alternativas": {
+            "A": "6 m/s",
+            "B": "8 m/s",
+            "C": "10 m/s",
+            "D": "12 m/s",
+            "E": "15 m/s"
+          },
+          "correta": "D",
+          "explicacao": "Conservacao Q: 1200×20 + 800×0 = (1200+800)×v_f → 24000 = 2000×v_f → v_f = 12 m/s"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Uma bala de 20 g a 500 m/s atinge e fica presa em bloco de 1980 g em repouso. Qual a velocidade final do conjunto?",
+          "alternativas": {
+            "A": "0,5 m/s",
+            "B": "5 m/s",
+            "C": "10 m/s",
+            "D": "25 m/s",
+            "E": "50 m/s"
+          },
+          "correta": "B",
+          "explicacao": "0,02 kg × 500 m/s = (0,02 + 1,98) × v_f → 10 = 2 × v_f → v_f = 5 m/s"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Em uma colisao perfeitamente inelastica, qual afirmacao e verdadeira?",
+          "alternativas": {
+            "A": "Energia cinetica total se conserva",
+            "B": "Objetos ricocheteiam com velocidades diferentes",
+            "C": "Quantidade de movimento total se conserva",
+            "D": "Nao ha dissipacao de energia",
+            "E": "Coeficiente de restituicao e = 1"
+          },
+          "correta": "C",
+          "explicacao": "Em qualquer colisao (elastica ou inelastica), Q_total se conserva se sistema for isolado. Na perfeitamente inelastica, E_c nao se conserva (e = 0)"
+        }
+      ]
+    }
+  ]
+}

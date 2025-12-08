@@ -1,0 +1,322 @@
+{
+  "id": "quimica-cinetica",
+  "titulo": "Cinética Química",
+  "descricao": "Estude os fatores que afetam a velocidade das reações químicas: concentração, temperatura, catalisadores e energia de ativação",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Velocidade das Reações",
+      "topicos": [
+        {
+          "titulo": "Conceito de Velocidade",
+          "conteudo": "Velocidade de reação é a rapidez com que reagentes são consumidos ou produtos são formados. v = Δ[concentração]/Δtempo. Unidades: mol/(L·s), mol/(L·min). Velocidade diminui com o tempo (consumo de reagentes)."
+        },
+        {
+          "titulo": "Velocidade Média e Instantânea",
+          "conteudo": "Velocidade média: calculada em um intervalo de tempo. v(média) = Δ[X]/Δt. Velocidade instantânea: em um momento específico, tangente à curva no gráfico. v(inst) = d[X]/dt (derivada)."
+        },
+        {
+          "titulo": "Relação Estequiométrica",
+          "conteudo": "Para aA + bB → cC + dD:\nv = -1/a × Δ[A]/Δt = -1/b × Δ[B]/Δt = +1/c × Δ[C]/Δt = +1/d × Δ[D]/Δt\nSinal negativo para reagentes (consumo), positivo para produtos (formação)."
+        },
+        {
+          "titulo": "Medição Experimental",
+          "conteudo": "Métodos: 1) Variação de concentração (titulação, espectrofotometria). 2) Variação de pressão (gases). 3) Variação de cor. 4) Variação de pH. 5) Volume de gás liberado. Acompanhar propriedade que muda durante a reação."
+        }
+      ],
+      "exemplos": [
+        "N₂O₅ → 2NO₂ + ½O₂: v = -Δ[N₂O₅]/Δt = +½Δ[NO₂]/Δt",
+        "Se [A] varia de 1,0 M para 0,6 M em 10s: v = (1,0-0,6)/10 = 0,04 M/s",
+        "2H₂O₂ → 2H₂O + O₂: medir volume de O₂ liberado",
+        "Zn + 2HCl → ZnCl₂ + H₂: medir H₂ em bureta invertida"
+      ],
+      "dicas": [
+        "Velocidade sempre positiva (usar módulo se necessário)",
+        "Coeficientes estequiométricos afetam a relação de velocidades",
+        "Gráfico [concentração] vs tempo: inclinação = velocidade"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Na reação 2NO + O₂ → 2NO₂, se a velocidade de formação de NO₂ é 0,4 mol/(L·s), a velocidade de consumo de O₂ é:",
+          "alternativas": [
+            "0,1 mol/(L·s)",
+            "0,2 mol/(L·s)",
+            "0,4 mol/(L·s)",
+            "0,8 mol/(L·s)",
+            "1,6 mol/(L·s)"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Pela estequiometria: v(NO₂)/2 = v(O₂)/1. Logo: 0,4/2 = v(O₂)/1 → v(O₂) = 0,2 mol/(L·s). O₂ é consumido metade da velocidade de formação de NO₂."
+        },
+        {
+          "enunciado": "Em uma reação, [A] = 2,0 M em t=0s e [A] = 0,8 M em t=20s. A velocidade média de consumo de A é:",
+          "alternativas": [
+            "0,04 M/s",
+            "0,06 M/s",
+            "0,10 M/s",
+            "0,14 M/s",
+            "1,2 M/s"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "v = Δ[A]/Δt = (2,0-0,8)/20 = 1,2/20 = 0,06 M/s. A concentração de A diminui 1,2 M em 20 segundos."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Lei de Velocidade",
+      "topicos": [
+        {
+          "titulo": "Equação da Velocidade",
+          "conteudo": "v = k[A]ᵐ[B]ⁿ onde k = constante de velocidade (específica para cada reação e temperatura), m e n = ordem da reação em relação a A e B. Ordem total = m + n. Determinada EXPERIMENTALMENTE, não pela estequiometria."
+        },
+        {
+          "titulo": "Ordem de Reação",
+          "conteudo": "Ordem zero (n=0): velocidade independe da concentração. Ordem um (n=1): v ∝ [A]. Ordem dois (n=2): v ∝ [A]². Ordem total: soma dos expoentes. Frações são possíveis. Cada reagente tem sua ordem individual."
+        },
+        {
+          "titulo": "Determinação Experimental",
+          "conteudo": "Método das velocidades iniciais: variar [A] mantendo [B] constante, ver como v muda. Se dobrar [A] e v dobra → ordem 1. Se v quadruplica → ordem 2. Se v não muda → ordem 0. Repetir para cada reagente."
+        },
+        {
+          "titulo": "Constante de Velocidade (k)",
+          "conteudo": "k é específica para cada reação. Depende apenas da temperatura (aumenta com T). Unidades variam com ordem: ordem 0: M/s, ordem 1: s⁻¹, ordem 2: M⁻¹s⁻¹. Relacionada à energia de ativação (equação de Arrhenius)."
+        }
+      ],
+      "exemplos": [
+        "v = k[NO]²[O₂] → ordem 2 em NO, ordem 1 em O₂, ordem total = 3",
+        "v = k[H₂][I₂] → ordem 1 em cada, ordem total = 2",
+        "v = k → ordem zero (velocidade constante até reagente acabar)",
+        "2N₂O₅ → 4NO₂ + O₂: v = k[N₂O₅] (ordem 1, não 2!)"
+      ],
+      "dicas": [
+        "Ordem NÃO é o coeficiente estequiométrico (exceto coincidência)",
+        "Para determinar ordem: experimentos, não cálculo",
+        "Ordem pode ser zero, inteira, fracionária ou até negativa"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Para a reação A + B → C, foram feitos experimentos:\nExp 1: [A]=0,1M [B]=0,1M v=0,002 M/s\nExp 2: [A]=0,2M [B]=0,1M v=0,008 M/s\nExp 3: [A]=0,1M [B]=0,2M v=0,002 M/s\nA lei de velocidade é:",
+          "alternativas": [
+            "v = k[A][B]",
+            "v = k[A]²",
+            "v = k[B]²",
+            "v = k[A]²[B]",
+            "v = k[A][B]²"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Comparando Exp 1 e 2: dobrou [A], v quadruplicou (4x) → ordem 2 em A. Comparando Exp 1 e 3: dobrou [B], v não mudou → ordem 0 em B. v = k[A]²."
+        },
+        {
+          "enunciado": "Uma reação tem lei v = k[X]². Se triplicarmos [X], a velocidade:",
+          "alternativas": [
+            "Não muda",
+            "Triplica",
+            "Sextuplica",
+            "Aumenta 9 vezes",
+            "Aumenta 27 vezes"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "v₂/v₁ = k[3X]² / k[X]² = 9X²/X² = 9. Como a ordem é 2, triplicar a concentração aumenta a velocidade em 3² = 9 vezes."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Fatores que Afetam a Velocidade",
+      "topicos": [
+        {
+          "titulo": "Concentração dos Reagentes",
+          "conteudo": "Maior concentração → mais colisões → maior velocidade (para reações com ordem > 0). Princípio: quanto mais partículas, maior probabilidade de encontros efetivos. Efeito quantificado pela lei de velocidade."
+        },
+        {
+          "titulo": "Temperatura",
+          "conteudo": "Aumento de temperatura → aumento de velocidade. Regra prática: +10°C → velocidade dobra/triplica. Explicação: maior energia cinética → mais colisões efetivas (com energia ≥ Ea). Equação de Arrhenius: k = A·e^(-Ea/RT)."
+        },
+        {
+          "titulo": "Superfície de Contato",
+          "conteudo": "Maior área de contato → maior velocidade (para heterogêneos). Sólido pulverizado reage mais rápido que em bloco. Exemplos: açúcar refinado vs cristal, ferro em pó vs prego. Não afeta reações em solução (homogêneas)."
+        },
+        {
+          "titulo": "Pressão (Gases)",
+          "conteudo": "Aumentar pressão → aumentar concentração de gases → maior velocidade. Efeito similar ao aumento de concentração. Importante em reações industriais com gases (síntese de NH₃, por exemplo)."
+        }
+      ],
+      "exemplos": [
+        "Zn em pó + HCl: mais rápido que Zn em lâmina (maior superfície)",
+        "Alimentos no freezer: baixa T, reações lentas, conservação",
+        "Panela de pressão: alta T, cozimento mais rápido",
+        "Palha de aço queima rápido (grande superfície), prego não",
+        "Gás comprimido: maior pressão/concentração, reação mais rápida"
+      ],
+      "dicas": [
+        "Temperatura: fator que SEMPRE afeta (aumenta k)",
+        "Superfície: só afeta reações heterogêneas (sólido + líquido/gás)",
+        "ENEM: relacionar com cotidiano (geladeira, panela de pressão)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A conservação de alimentos na geladeira se baseia principalmente no fator:",
+          "alternativas": [
+            "Aumento da concentração",
+            "Diminuição da temperatura",
+            "Aumento da pressão",
+            "Uso de catalisadores",
+            "Aumento da superfície de contato"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Baixas temperaturas diminuem a velocidade das reações de decomposição (química e biológica), preservando os alimentos por mais tempo."
+        },
+        {
+          "enunciado": "A palha de aço queima facilmente ao ar, enquanto um prego praticamente não queima. Isso se deve principalmente:",
+          "alternativas": [
+            "À composição química diferente",
+            "À maior superfície de contato da palha de aço",
+            "À temperatura mais alta da palha",
+            "À presença de catalisadores na palha",
+            "À maior concentração de oxigênio"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A palha de aço tem área de superfície muito maior em contato com o oxigênio, aumentando drasticamente a velocidade da reação de combustão."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Energia de Ativação e Teoria das Colisões",
+      "topicos": [
+        {
+          "titulo": "Teoria das Colisões",
+          "conteudo": "Para reagir, moléculas devem: 1) Colidir entre si. 2) Ter energia mínima (≥ Ea). 3) Orientação adequada (fator estérico). Nem toda colisão é efetiva. Velocidade ∝ número de colisões efetivas por segundo."
+        },
+        {
+          "titulo": "Energia de Ativação (Ea)",
+          "conteudo": "Energia mínima necessária para que uma colisão resulte em reação. Barreira energética entre reagentes e produtos. Quanto maior Ea, mais lenta a reação. Ea sempre positiva. Independente de ΔH (pode ser exo ou endo)."
+        },
+        {
+          "titulo": "Complexo Ativado",
+          "conteudo": "Estado de transição no topo da barreira energética. Estrutura instável e temporária. Ligações dos reagentes se rompendo e novas ligações se formando simultaneamente. Energia máxima do sistema durante a reação."
+        },
+        {
+          "titulo": "Diagrama de Energia",
+          "conteudo": "Coordenada de reação vs energia. Reagentes → Complexo ativado → Produtos. Ea(direta) = energia de ativação no sentido direto. Ea(inversa) para reação reversa. ΔH = diferença entre produtos e reagentes. Exo: produtos abaixo. Endo: produtos acima."
+        }
+      ],
+      "exemplos": [
+        "Combustão de papel: alta Ea, precisa de fósforo (energia inicial)",
+        "H₂ + O₂ → H₂O: Ea alta (explosão só com faísca)",
+        "Complexo ativado: [H---H---O---O] (transição)",
+        "Ea baixa: reações rápidas (neutralização ácido-base)",
+        "Ea alta: reações lentas (ferrugem, diamante→grafite)"
+      ],
+      "dicas": [
+        "Ea é sempre barreira a superar, mesmo em reações exotérmicas",
+        "Temperatura aumenta energia cinética, mais moléculas superam Ea",
+        "Reação exo: Ea(direta) < Ea(inversa); Endo: oposto"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Uma reação exotérmica possui Ea = 50 kJ/mol e ΔH = -30 kJ/mol. A energia de ativação da reação inversa é:",
+          "alternativas": [
+            "20 kJ/mol",
+            "30 kJ/mol",
+            "50 kJ/mol",
+            "80 kJ/mol",
+            "100 kJ/mol"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Ea(inversa) = Ea(direta) - ΔH = 50 - (-30) = 50 + 30 = 80 kJ/mol. A reação inversa (endotérmica) tem maior barreira energética."
+        },
+        {
+          "enunciado": "Segundo a teoria das colisões, a velocidade de uma reação aumenta com a temperatura porque:",
+          "alternativas": [
+            "As moléculas ficam maiores",
+            "A energia de ativação diminui",
+            "Mais moléculas têm energia ≥ Ea",
+            "O número de moléculas aumenta",
+            "A pressão sempre aumenta"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Com o aumento da temperatura, mais moléculas adquirem energia cinética suficiente para superar a barreira de energia de ativação (Ea), aumentando as colisões efetivas."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Catalisadores",
+      "topicos": [
+        {
+          "titulo": "Definição e Características",
+          "conteudo": "Catalisador: substância que aumenta a velocidade da reação sem ser consumida. Recuperado intacto ao final. Diminui energia de ativação (Ea), facilitando o caminho. Não altera ΔH nem equilíbrio, apenas velocidade."
+        },
+        {
+          "titulo": "Mecanismo de Ação",
+          "conteudo": "Fornece caminho alternativo com Ea menor. Forma complexo intermediário com reagentes. Estabiliza o estado de transição. Aumenta colisões efetivas sem necessitar de mais energia/temperatura."
+        },
+        {
+          "titulo": "Tipos de Catalisadores",
+          "conteudo": "Homogêneos: mesma fase que reagentes (ex: H⁺ em solução). Heterogêneos: fase diferente (ex: Pt sólida, reagentes gasosos). Enzimas: catalisadores biológicos, altamente específicos. Autocatálise: produto catalisa própria formação."
+        },
+        {
+          "titulo": "Inibidores",
+          "conteudo": "Inibidores: substâncias que diminuem velocidade. Aumentam Ea ou bloqueiam sítios ativos. Venenos de catalisador: desativam catalisadores. Aplicações: conservantes (inibem decomposição), antioxidantes."
+        }
+      ],
+      "exemplos": [
+        "2H₂O₂ → 2H₂O + O₂: MnO₂ catalisa (Ea: 75→58 kJ/mol)",
+        "Conversor catalítico: Pt, Pd, Rh (gases de escape)",
+        "Haber-Bosch: Fe como catalisador (N₂ + 3H₂ → 2NH₃)",
+        "Enzimas: lactase (quebra lactose), amilase (quebra amido)",
+        "BHT/BHA: antioxidantes em alimentos (inibem rancificação)"
+      ],
+      "dicas": [
+        "Catalisador: ↓Ea, ↑velocidade, não muda ΔH nem posição equilíbrio",
+        "Enzimas são proteínas, desnaturadas por calor/pH extremo",
+        "ENEM: catalisadores industriais, enzimas em digestão"
+      ],
+      "questoes": [
+        {
+          "enunciado": "O uso de catalisadores em reações químicas tem como principal efeito:",
+          "alternativas": [
+            "Aumentar o rendimento da reação",
+            "Tornar a reação mais exotérmica",
+            "Diminuir a energia de ativação",
+            "Deslocar o equilíbrio químico",
+            "Aumentar a concentração dos produtos"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Catalisadores diminuem a energia de ativação, aumentando a velocidade. NÃO alteram o rendimento, ΔH ou posição de equilíbrio - apenas aceleram o alcance do equilíbrio."
+        },
+        {
+          "enunciado": "Enzimas digestivas perdem sua função quando expostas a altas temperaturas porque:",
+          "alternativas": [
+            "São consumidas mais rapidamente",
+            "Sofrem desnaturação proteica",
+            "A energia de ativação aumenta muito",
+            "Os reagentes evaporam",
+            "O pH se torna muito ácido"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Enzimas são proteínas. Altas temperaturas rompem ligações que mantêm sua estrutura tridimensional (desnaturação), destruindo o sítio ativo e eliminando a atividade catalítica."
+        },
+        {
+          "enunciado": "Em um diagrama de energia, a presença de catalisador:",
+          "alternativas": [
+            "Eleva o nível dos produtos",
+            "Abaixa o pico do complexo ativado",
+            "Aumenta o ΔH da reação",
+            "Elimina o complexo ativado",
+            "Eleva o nível dos reagentes"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O catalisador cria um caminho alternativo com menor energia de ativação, ou seja, abaixa o pico (complexo ativado). Os níveis de reagentes e produtos permanecem inalterados."
+        }
+      ]
+    }
+  ]
+}

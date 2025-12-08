@@ -1,0 +1,324 @@
+{
+  "id": "quimica-solucoes",
+  "titulo": "Soluções",
+  "descricao": "Domine os conceitos de concentração, molaridade, molalidade, ppm, diluições e misturas de soluções",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Conceitos Fundamentais",
+      "topicos": [
+        {
+          "titulo": "Definição de Solução",
+          "conteudo": "Solução é uma mistura homogênea de duas ou mais substâncias. Soluto: substância dissolvida (menor quantidade). Solvente: substância que dissolve (maior quantidade). Tipos: sólido em líquido, líquido em líquido, gás em líquido."
+        },
+        {
+          "titulo": "Classificação quanto à Saturação",
+          "conteudo": "Insaturada: contém menos soluto que o máximo possível (abaixo da curva de solubilidade). Saturada: contém a quantidade máxima de soluto dissolvido (no equilíbrio). Supersaturada: contém mais soluto que o máximo (instável, acima da curva)."
+        },
+        {
+          "titulo": "Coeficiente de Solubilidade",
+          "conteudo": "Quantidade máxima de soluto que se dissolve em 100g de solvente em dada temperatura. Varia com temperatura: geralmente aumenta para sólidos, diminui para gases. Específico para cada substância."
+        },
+        {
+          "titulo": "Solvatação e Dissolução",
+          "conteudo": "Processo de dissolução: 1) Separação das partículas do soluto (endotérmico); 2) Separação das moléculas do solvente (endotérmico); 3) Interação soluto-solvente (exotérmico). Resultado: pode ser exo ou endotérmico."
+        }
+      ],
+      "exemplos": [
+        "Água + açúcar = solução insaturada (se dissolver totalmente)",
+        "Água saturada de NaCl a 25°C: 36g/100g água",
+        "Refrigerante: CO₂ (soluto gasoso) em água (solvente)",
+        "Álcool 70%: etanol (soluto) + água (solvente)",
+        "Soro fisiológico: NaCl em água (0,9% m/v)"
+      ],
+      "dicas": [
+        "Semelhante dissolve semelhante: polar em polar, apolar em apolar",
+        "Temperatura: ↑T → ↑solubilidade (sólidos); ↓solubilidade (gases)",
+        "Pressão afeta apenas gases (Lei de Henry)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Uma solução que contém 40g de NaCl em 100g de água a 20°C está saturada. Se adicionarmos mais 10g de NaCl sem mudar a temperatura, o que ocorre?",
+          "alternativas": [
+            "Todo o sal se dissolve",
+            "A solução torna-se supersaturada",
+            "10g de sal precipitam",
+            "A temperatura aumenta",
+            "O solvente evapora"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Como a solução já está saturada (máximo de soluto dissolvido), o excesso de NaCl adicionado (10g) não se dissolve e precipita no fundo do recipiente."
+        },
+        {
+          "enunciado": "A solubilidade de gases em líquidos diminui com o aumento da temperatura. Isso explica por que:",
+          "alternativas": [
+            "Água quente dissolve mais açúcar",
+            "Refrigerante gelado retém mais CO₂",
+            "Sal dissolve melhor em água fria",
+            "Oxigênio não se dissolve em água",
+            "Álcool evapora em altas temperaturas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O CO₂ é um gás dissolvido no refrigerante. Em baixas temperaturas, gases são mais solúveis, mantendo o refrigerante mais 'gaseificado'. Ao aquecer, o CO₂ escapa."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Concentração Comum e Título",
+      "topicos": [
+        {
+          "titulo": "Concentração Comum (C)",
+          "conteudo": "C = m₁/V (g/L) onde m₁ = massa do soluto (g) e V = volume da solução (L). Também expressa em g/mL, mg/L. Indica quantos gramas de soluto há em cada litro de solução. Não confundir volume de solução com volume de solvente."
+        },
+        {
+          "titulo": "Título ou Fração em Massa (τ)",
+          "conteudo": "τ = m₁/m (adimensional, 0 a 1) onde m₁ = massa soluto e m = massa solução. Porcentagem em massa: %m/m = τ × 100. Exemplo: solução 20% m/m significa 20g soluto em 100g solução."
+        },
+        {
+          "titulo": "Porcentagem Massa/Volume",
+          "conteudo": "%m/v = (massa soluto em g / volume solução em mL) × 100. Comum em medicamentos e soluções farmacêuticas. Exemplo: soro fisiológico 0,9% m/v = 0,9g NaCl em 100mL solução."
+        },
+        {
+          "titulo": "Relação entre Unidades",
+          "conteudo": "C = d × τ × 1000 (C em g/L, d em g/mL, τ adimensional)\nC = 10 × %m/v (se %m/v em g/100mL)\nConversões úteis: 1g/L = 1mg/mL; 1% m/v = 10g/L"
+        }
+      ],
+      "exemplos": [
+        "200g NaCl em 2L solução: C = 200/2 = 100 g/L",
+        "20g açúcar em 200g solução: τ = 20/200 = 0,1 = 10%",
+        "Álcool 96%: 96g etanol em 100g solução",
+        "Soro 0,9% m/v: 0,9g NaCl em 100mL = 9g/L",
+        "Vinagre 5% m/v: 5g ácido acético em 100mL"
+      ],
+      "dicas": [
+        "Massa da solução = massa do soluto + massa do solvente",
+        "Volume da solução ≠ volume do solvente (há contração/expansão)",
+        "Título: sempre ≤ 1; porcentagem: sempre ≤ 100%"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Dissolvem-se 40g de NaOH em água suficiente para 500mL de solução. A concentração comum é:",
+          "alternativas": [
+            "20 g/L",
+            "40 g/L",
+            "60 g/L",
+            "80 g/L",
+            "100 g/L"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "C = m₁/V = 40g / 0,5L = 80 g/L. A concentração indica que há 80g de NaOH em cada litro de solução."
+        },
+        {
+          "enunciado": "Uma solução aquosa de glicose tem título 0,15. Isso significa que:",
+          "alternativas": [
+            "Há 15g de glicose em 100g de solução",
+            "Há 15g de glicose em 100g de água",
+            "Há 0,15g de glicose em 1L de solução",
+            "A concentração é 15 g/L",
+            "A solução é 1,5% m/v"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Título 0,15 = 15%. Significa que 15% da massa total é glicose. Em 100g de solução há 15g de glicose e 85g de água."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Molaridade e Molalidade",
+      "topicos": [
+        {
+          "titulo": "Concentração Molar ou Molaridade (M)",
+          "conteudo": "M = n/V (mol/L) onde n = número de mols de soluto e V = volume de solução em litros. Também chamada concentração molar. Unidade: mol/L ou M. É a forma mais usada em química. M = m₁/(M×V)."
+        },
+        {
+          "titulo": "Concentração Molal ou Molalidade (W)",
+          "conteudo": "W = n/m₂ (mol/kg) onde n = mols de soluto e m₂ = massa do SOLVENTE em kg. Diferente da molaridade (usa volume de solução). Molalidade não varia com temperatura. Usada em propriedades coligativas."
+        },
+        {
+          "titulo": "Fração Molar (X)",
+          "conteudo": "X₁ = n₁/(n₁+n₂) onde n₁ = mols soluto, n₂ = mols solvente. X₁ + X₂ = 1 (soma das frações = 1). Adimensional. Útil para Lei de Raoult e misturas de gases."
+        },
+        {
+          "titulo": "Conversões entre Unidades",
+          "conteudo": "M → C: C = M × M (M molar, M massa molar)\nM → W: requer densidade (W considera massa solvente)\nC → M: M = C/M (M massa molar)\nConhecer densidade e massa molar é essencial."
+        }
+      ],
+      "exemplos": [
+        "0,5 mol NaCl em 2L: M = 0,5/2 = 0,25 M ou 0,25 mol/L",
+        "58,5g NaCl (1 mol) em 1L: M = 1 mol/L = 1M",
+        "1 mol glicose em 2kg água: W = 1/2 = 0,5 mol/kg",
+        "1 mol NaCl + 9 mol H₂O: X(NaCl) = 1/10 = 0,1",
+        "2M H₂SO₄ (M=98): C = 2×98 = 196 g/L"
+      ],
+      "dicas": [
+        "Molaridade: uso geral, varia com temperatura (volume muda)",
+        "Molalidade: propriedades coligativas, não varia com T",
+        "No ENEM: molaridade é muito mais comum que molalidade"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Qual a molaridade de uma solução preparada dissolvendo 20g de NaOH (M=40g/mol) em água suficiente para 250mL?",
+          "alternativas": [
+            "0,5 M",
+            "1,0 M",
+            "2,0 M",
+            "4,0 M",
+            "8,0 M"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "n = 20/40 = 0,5 mol. V = 0,25 L. M = 0,5/0,25 = 2,0 mol/L = 2,0 M."
+        },
+        {
+          "enunciado": "Dissolvem-se 0,2 mol de sacarose em 500g de água. A molalidade da solução é:",
+          "alternativas": [
+            "0,2 mol/kg",
+            "0,4 mol/kg",
+            "0,5 mol/kg",
+            "2,0 mol/kg",
+            "4,0 mol/kg"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "W = n/m₂ = 0,2 mol / 0,5 kg = 0,4 mol/kg. Molalidade usa massa do SOLVENTE (água), não da solução."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Diluição de Soluções",
+      "topicos": [
+        {
+          "titulo": "Conceito de Diluição",
+          "conteudo": "Diluição: adição de solvente puro a uma solução, diminuindo sua concentração. O número de mols de soluto permanece constante. Volume aumenta, concentração diminui. Solução mais concentrada → solução mais diluída."
+        },
+        {
+          "titulo": "Equação da Diluição",
+          "conteudo": "C₁V₁ = C₂V₂ ou M₁V₁ = M₂V₂\nOnde: 1 = inicial (antes), 2 = final (depois)\nC = concentração, V = volume, M = molaridade\nQuantidade de soluto: n₁ = n₂ (permanece constante)"
+        },
+        {
+          "titulo": "Cálculo do Volume Adicionado",
+          "conteudo": "V(solvente adicionado) = V₂ - V₁\nV₁ = volume inicial da solução concentrada\nV₂ = volume final da solução diluída\nEx: 100mL → 500mL, adicionou 400mL de água"
+        },
+        {
+          "titulo": "Aplicações Práticas",
+          "conteudo": "Laboratório: preparar soluções de trabalho a partir de estoques concentrados. Medicina: diluir medicamentos. Indústria: ajustar concentração de produtos. Economia: soluções concentradas ocupam menos espaço."
+        }
+      ],
+      "exemplos": [
+        "100mL de HCl 2M → 500mL: M₂ = (2×100)/500 = 0,4M",
+        "Diluir 50mL NaOH 4M para 1M: V₂ = (4×50)/1 = 200mL",
+        "Adicionar água: V(H₂O) = 200-50 = 150mL",
+        "Diluição 1:10 significa V₂ = 10×V₁",
+        "Concentração cai 5x se volume aumenta 5x"
+      ],
+      "dicas": [
+        "Sempre adicionar ácido à água, nunca o contrário (segurança)",
+        "C₁V₁ = C₂V₂ funciona para qualquer unidade de concentração",
+        "Diluição: C₂ < C₁ sempre; V₂ > V₁ sempre"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Diluem-se 200mL de solução 0,5M até o volume final de 1L. A molaridade final é:",
+          "alternativas": [
+            "0,05 M",
+            "0,1 M",
+            "0,2 M",
+            "0,5 M",
+            "1,0 M"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "M₁V₁ = M₂V₂ → 0,5×200 = M₂×1000 → M₂ = 100/1000 = 0,1 M. A concentração diminui 5 vezes pois o volume aumentou 5 vezes."
+        },
+        {
+          "enunciado": "Que volume de água deve ser adicionado a 50mL de HCl 6M para obter solução 2M?",
+          "alternativas": [
+            "50 mL",
+            "75 mL",
+            "100 mL",
+            "150 mL",
+            "200 mL"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "M₁V₁ = M₂V₂ → 6×50 = 2×V₂ → V₂ = 150mL (volume final). Volume de água adicionado = 150-50 = 100mL."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Mistura de Soluções e PPM",
+      "topicos": [
+        {
+          "titulo": "Mistura de Soluções do Mesmo Soluto",
+          "conteudo": "Quando misturamos soluções do mesmo soluto: quantidade total de soluto = soma das quantidades. C₁V₁ + C₂V₂ = C(final) × V(final). Volumes são aditivos (aproximação para soluções diluídas)."
+        },
+        {
+          "titulo": "Mistura de Soluções de Solutos Diferentes",
+          "conteudo": "Com reação química: calcular reagente limitante, produtos formados. Sem reação: cada soluto mantém sua quantidade, concentrações são calculadas no volume final. Considerar possível precipitação."
+        },
+        {
+          "titulo": "Partes por Milhão (ppm)",
+          "conteudo": "ppm = (massa soluto / massa solução) × 10⁶. Usado para concentrações muito baixas. 1 ppm = 1 mg/L (em soluções aquosas diluídas, d≈1g/mL). Comum em análise ambiental, água potável, contaminantes."
+        },
+        {
+          "titulo": "Partes por Bilhão (ppb) e ppt",
+          "conteudo": "ppb = (massa soluto / massa solução) × 10⁹ = 1 μg/L\nppt = (massa soluto / massa solução) × 10¹² = 1 ng/L\nUsados para concentrações extremamente baixas (poluentes traço, metais pesados)."
+        }
+      ],
+      "exemplos": [
+        "100mL 2M + 200mL 4M (mesmo soluto): C = (2×100+4×200)/300 = 10/3 = 3,33M",
+        "HCl + NaOH: reação de neutralização H⁺ + OH⁻ → H₂O",
+        "Água potável: máximo 10 ppm de nitrato",
+        "Cloro em piscina: 1-3 ppm",
+        "Mercúrio em peixes: limite 0,5 ppm (500 ppb)"
+      ],
+      "dicas": [
+        "Mistura sem reação: conservação de massa do soluto",
+        "Mistura com reação: fazer estequiometria completa",
+        "1 ppm ≈ 1 mg/L (apenas se densidade ≈ 1 g/mL)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Misturam-se 300mL de HCl 1M com 200mL de HCl 2M. A molaridade da solução final é:",
+          "alternativas": [
+            "1,0 M",
+            "1,2 M",
+            "1,4 M",
+            "1,5 M",
+            "2,0 M"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "M₁V₁ + M₂V₂ = M(f)×V(f) → 1×300 + 2×200 = M(f)×500 → 700 = M(f)×500 → M(f) = 1,4 M."
+        },
+        {
+          "enunciado": "Uma amostra de água contém 5mg de chumbo por litro. A concentração em ppm é aproximadamente:",
+          "alternativas": [
+            "0,5 ppm",
+            "5 ppm",
+            "50 ppm",
+            "500 ppm",
+            "5000 ppm"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Para soluções aquosas diluídas: 1 ppm = 1 mg/L. Logo, 5 mg/L = 5 ppm. Isso indica uma concentração de 5 partes de chumbo por milhão de partes de água."
+        },
+        {
+          "enunciado": "Misturam-se 100mL de HCl 0,1M com 100mL de NaOH 0,1M. O pH da solução final será:",
+          "alternativas": [
+            "Menor que 7 (ácido)",
+            "Igual a 7 (neutro)",
+            "Maior que 7 (básico)",
+            "Impossível determinar",
+            "Depende da temperatura"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Quantidades iguais de ácido e base de mesma molaridade: neutralização completa. HCl + NaOH → NaCl + H₂O. Produto é sal neutro, pH = 7."
+        }
+      ]
+    }
+  ]
+}

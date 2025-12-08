@@ -1,0 +1,332 @@
+{
+  "id": "fisica-energia",
+  "titulo": "Energia: Trabalho, Energia Cinetica e Potencial",
+  "descricao": "Estudo de trabalho, energia cinetica, potencial gravitacional e elastica. Principio da conservacao de energia e suas aplicacoes em sistemas mecanicos.",
+  "icone": "⚙️",
+  "cor": "from-yellow-500 to-orange-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Trabalho de uma Forca",
+      "resumo": "Trabalho e a medida da energia transferida por uma forca ao deslocar um objeto. Depende da intensidade da forca, do deslocamento e do angulo entre eles.",
+      "topicos": [
+        "Trabalho: τ = F⋅d⋅cos(θ), onde θ e angulo entre forca e deslocamento",
+        "Unidade: Joule (J) = N⋅m. 1 J e o trabalho de 1 N ao longo de 1 m",
+        "Trabalho motor: τ > 0 (forca favorece movimento, θ < 90°)",
+        "Trabalho resistente: τ < 0 (forca se opoe ao movimento, θ > 90°)",
+        "Trabalho nulo: τ = 0 quando F⊥d (θ = 90°) ou quando d = 0"
+      ],
+      "exemplos": [
+        "Empurrar caixa com F = 100 N por d = 5 m na mesma direcao: τ = 100⋅5⋅cos(0°) = 500 J",
+        "Elevar objeto de 10 kg a 3 m (contra peso): τ = -P⋅d = -100⋅3 = -300 J (forca externa faz +300 J)",
+        "Forca centrípeta em movimento circular: τ = 0 (sempre perpendicular ao deslocamento)"
+      ],
+      "formula": "τ = F⋅d⋅cos(θ)",
+      "dicas": [
+        "Se forca e deslocamento tem mesma direcao, τ = F⋅d (cos 0° = 1)",
+        "Peso sempre faz trabalho negativo quando objeto sobe e positivo quando desce",
+        "No ENEM, identifique o angulo entre forca e deslocamento"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Uma pessoa empurra uma caixa com forca constante de 80 N ao longo de 4 m na horizontal. Qual o trabalho realizado?",
+          "alternativas": {
+            "A": "20 J",
+            "B": "84 J",
+            "C": "160 J",
+            "D": "320 J",
+            "E": "640 J"
+          },
+          "correta": "D",
+          "explicacao": "Trabalho = F⋅d⋅cos(0°) = 80 × 4 × 1 = 320 J"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Uma forca de 50 N e aplicada formando 60° com a direcao do deslocamento de 6 m. Qual o trabalho realizado? (cos 60° = 0,5)",
+          "alternativas": {
+            "A": "75 J",
+            "B": "150 J",
+            "C": "200 J",
+            "D": "260 J",
+            "E": "300 J"
+          },
+          "correta": "B",
+          "explicacao": "Trabalho = F⋅d⋅cos(θ) = 50 × 6 × 0,5 = 150 J"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Um satelite em orbita circular e mantido em movimento pela forca gravitacional. O trabalho realizado por essa forca e:",
+          "alternativas": {
+            "A": "Positivo, pois mantem o movimento",
+            "B": "Negativo, pois puxa o satelite",
+            "C": "Nulo, pois e perpendicular ao deslocamento",
+            "D": "Variavel com a velocidade",
+            "E": "Igual a energia cinetica do satelite"
+          },
+          "correta": "C",
+          "explicacao": "Forca centripeta (gravitacional) e sempre perpendicular ao deslocamento tangencial. Logo, τ = F⋅d⋅cos(90°) = 0"
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Energia Cinetica",
+      "resumo": "Energia associada ao movimento. Quanto maior a massa e velocidade de um corpo, maior sua energia cinetica. Relaciona-se com trabalho pelo Teorema da Energia Cinetica.",
+      "topicos": [
+        "Energia cinetica: E_c = (m⋅v²)/2, depende da massa e do quadrado da velocidade",
+        "Unidade: Joule (J). Grandeza escalar (sempre positiva)",
+        "Teorema da Energia Cinetica: τ_resultante = ΔE_c = E_c_final - E_c_inicial",
+        "Trabalho realizado pela forca resultante provoca variacao de energia cinetica",
+        "Velocidade duplica → energia cinetica quadruplica"
+      ],
+      "exemplos": [
+        "Carro de 1000 kg a 20 m/s: E_c = 1000⋅400/2 = 200.000 J = 200 kJ",
+        "Bola de 0,5 kg lancada a 10 m/s: E_c = 0,5⋅100/2 = 25 J",
+        "Objeto freia de 30 m/s ate parar: τ = ΔE_c = 0 - E_c_inicial (trabalho negativo)"
+      ],
+      "formula": "E_c = mv²/2; τ_res = ΔE_c",
+      "dicas": [
+        "Energia cinetica e sempre positiva (depende de v²)",
+        "Dobrando a velocidade, energia cinetica fica 4 vezes maior",
+        "Use Teorema da E_c quando souber trabalho ou forcas resultantes"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Qual a energia cinetica de um veiculo de 800 kg que trafega a 72 km/h?",
+          "alternativas": {
+            "A": "28.800 J",
+            "B": "144.000 J",
+            "C": "160.000 J",
+            "D": "288.000 J",
+            "E": "2.073.600 J"
+          },
+          "correta": "C",
+          "explicacao": "Converter: 72 km/h = 20 m/s. E_c = mv²/2 = 800 × 400/2 = 160.000 J"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Um objeto de 4 kg tem sua velocidade aumentada de 5 m/s para 15 m/s. Qual a variacao de energia cinetica?",
+          "alternativas": {
+            "A": "50 J",
+            "B": "200 J",
+            "C": "400 J",
+            "D": "500 J",
+            "E": "600 J"
+          },
+          "correta": "C",
+          "explicacao": "E_c_inicial = 4 × 25/2 = 50 J. E_c_final = 4 × 225/2 = 450 J. ΔE_c = 450 - 50 = 400 J"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Um veiculo freia ate parar. A forca de atrito realiza trabalho de -90.000 J. Qual era a energia cinetica inicial do veiculo?",
+          "alternativas": {
+            "A": "0 J",
+            "B": "45.000 J",
+            "C": "90.000 J",
+            "D": "180.000 J",
+            "E": "Impossivel determinar"
+          },
+          "correta": "C",
+          "explicacao": "Pelo Teorema da E_c: τ = ΔE_c → -90.000 = 0 - E_c_inicial → E_c_inicial = 90.000 J"
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Energia Potencial Gravitacional",
+      "resumo": "Energia armazenada devido a posicao de um corpo em relacao a um referencial. Depende da altura, massa e gravidade. Pode ser convertida em energia cinetica.",
+      "topicos": [
+        "Energia potencial gravitacional: E_pg = m⋅g⋅h, onde h e altura em relacao a referencial",
+        "Unidade: Joule (J). Grandeza escalar",
+        "Referencial: nivel zero de energia potencial e arbitrario (geralmente o solo)",
+        "Trabalho do peso: τ_peso = -ΔE_pg (negativo na subida, positivo na descida)",
+        "Quanto maior a altura, maior a energia potencial armazenada"
+      ],
+      "exemplos": [
+        "Objeto de 10 kg a 5 m de altura: E_pg = 10⋅10⋅5 = 500 J (em relacao ao solo)",
+        "Agua em represa de 100 m: grande E_pg que pode ser convertida em energia eletrica",
+        "Pedra cai de h = 20 m: perde E_pg = mgh = m⋅10⋅20 = 200m J"
+      ],
+      "formula": "E_pg = m⋅g⋅h; τ_peso = -ΔE_pg",
+      "dicas": [
+        "Energia potencial e relativa ao nivel de referencia escolhido",
+        "Peso realiza trabalho motor (positivo) quando corpo desce",
+        "No ENEM, identifique claramente o nivel de referencia (h = 0)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Qual a energia potencial gravitacional de um objeto de 5 kg a 12 m de altura? (g = 10 m/s²)",
+          "alternativas": {
+            "A": "60 J",
+            "B": "120 J",
+            "C": "240 J",
+            "D": "600 J",
+            "E": "1200 J"
+          },
+          "correta": "D",
+          "explicacao": "E_pg = mgh = 5 × 10 × 12 = 600 J"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Um elevador de massa 500 kg sobe 20 m. Qual a variacao de energia potencial gravitacional? (g = 10 m/s²)",
+          "alternativas": {
+            "A": "1.000 J",
+            "B": "10.000 J",
+            "C": "50.000 J",
+            "D": "100.000 J",
+            "E": "200.000 J"
+          },
+          "correta": "D",
+          "explicacao": "ΔE_pg = mgΔh = 500 × 10 × 20 = 100.000 J"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Uma pedra de 2 kg cai de uma altura de 45 m. Desprezando resistencia do ar, qual o trabalho realizado pelo peso? (g = 10 m/s²)",
+          "alternativas": {
+            "A": "-900 J",
+            "B": "-450 J",
+            "C": "0 J",
+            "D": "450 J",
+            "E": "900 J"
+          },
+          "correta": "E",
+          "explicacao": "Trabalho do peso na descida e positivo: τ = mgh = 2 × 10 × 45 = 900 J. Ou τ = -ΔE_pg = -(0 - 900) = 900 J"
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Energia Potencial Elastica",
+      "resumo": "Energia armazenada em sistemas elasticos (molas, elasticos) quando deformados. Depende da constante elastica e da deformacao. Lei de Hooke relaciona forca e deformacao.",
+      "topicos": [
+        "Lei de Hooke: F_el = k⋅x, onde k e constante elastica (N/m) e x e deformacao",
+        "Energia potencial elastica: E_pe = (k⋅x²)/2",
+        "Unidade: k em N/m, x em m, E_pe em J",
+        "Mola comprimida ou esticada armazena energia",
+        "Trabalho da forca elastica: τ = -ΔE_pe (contrario a variacao de E_pe)"
+      ],
+      "exemplos": [
+        "Mola com k = 200 N/m comprimida 0,1 m: E_pe = 200⋅0,01/2 = 1 J",
+        "Estilingue: energia elastica armazenada e convertida em energia cinetica do projetil",
+        "Deformar mola de x = 0,2 m para x = 0,4 m: ΔE_pe = k(0,16 - 0,04)/2 = 0,06k J"
+      ],
+      "formula": "F = k⋅x; E_pe = kx²/2",
+      "dicas": [
+        "Energia elastica depende do quadrado da deformacao: dobrando x, E_pe quadruplica",
+        "Forca elastica sempre aponta para posicao de equilibrio (x = 0)",
+        "No ENEM, molas aparecem em contextos de armazenamento de energia"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Uma mola de constante elastica 400 N/m e comprimida 0,2 m. Qual a energia potencial elastica armazenada?",
+          "alternativas": {
+            "A": "4 J",
+            "B": "8 J",
+            "C": "16 J",
+            "D": "40 J",
+            "E": "80 J"
+          },
+          "correta": "B",
+          "explicacao": "E_pe = kx²/2 = 400 × 0,04/2 = 8 J"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Uma mola de k = 100 N/m e esticada 0,3 m. Qual a forca elastica?",
+          "alternativas": {
+            "A": "3 N",
+            "B": "10 N",
+            "C": "30 N",
+            "D": "45 N",
+            "E": "100 N"
+          },
+          "correta": "C",
+          "explicacao": "Lei de Hooke: F = kx = 100 × 0,3 = 30 N"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Dobrando a deformacao de uma mola, sua energia potencial elastica:",
+          "alternativas": {
+            "A": "Permanece a mesma",
+            "B": "Dobra",
+            "C": "Triplica",
+            "D": "Quadruplica",
+            "E": "Reduz pela metade"
+          },
+          "correta": "D",
+          "explicacao": "E_pe = kx²/2. Se x → 2x, entao E_pe → k(2x)²/2 = 4kx²/2 = 4E_pe (quadruplica)"
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Conservacao de Energia Mecanica",
+      "resumo": "Na ausencia de forcas dissipativas (atrito, resistencia do ar), a energia mecanica total (E_c + E_pg + E_pe) permanece constante. Fundamental para resolver problemas complexos.",
+      "topicos": [
+        "Energia mecanica: E_m = E_c + E_pg + E_pe",
+        "Principio da Conservacao: se nao ha forcas dissipativas, E_m_inicial = E_m_final",
+        "Transformacoes: energia potencial ↔ energia cinetica",
+        "Forcas conservativas: peso, elastica (nao dissipam energia)",
+        "Forcas dissipativas: atrito, resistencia do ar (transformam energia mecanica em calor)"
+      ],
+      "exemplos": [
+        "Pendulo: no ponto mais alto E_m = E_pg (v=0), no mais baixo E_m = E_c (h=0)",
+        "Objeto cai de h = 10 m (v₀=0): inicial E_pg = 100m J, final E_c = 100m J (se m em kg)",
+        "Montanha-russa: altura maxima determina velocidade maxima nos pontos baixos"
+      ],
+      "formula": "E_m = E_c + E_pg + E_pe = constante (sem atrito)",
+      "dicas": [
+        "Identifique os pontos inicial e final, calcule E_m em cada um",
+        "Se ha atrito: E_m_inicial = E_m_final + |trabalho do atrito|",
+        "Energia nao se perde, apenas se transforma (Principio da Conservacao)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Uma pedra de 2 kg e abandonada de altura h = 5 m. Desprezando resistencia do ar, qual sua velocidade ao atingir o solo? (g = 10 m/s²)",
+          "alternativas": {
+            "A": "5 m/s",
+            "B": "10 m/s",
+            "C": "15 m/s",
+            "D": "20 m/s",
+            "E": "25 m/s"
+          },
+          "correta": "B",
+          "explicacao": "Conservacao: mgh = mv²/2 → gh = v²/2 → 10⋅5 = v²/2 → v² = 100 → v = 10 m/s"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Um pendulo e solto de altura h. Ao passar pela posicao mais baixa (h=0), sua velocidade e v. Se for solto de altura 4h, qual a velocidade na posicao mais baixa?",
+          "alternativas": {
+            "A": "v",
+            "B": "2v",
+            "C": "3v",
+            "D": "4v",
+            "E": "16v"
+          },
+          "correta": "B",
+          "explicacao": "mgh = mv²/2 → v² ∝ h. Se h → 4h, entao v² → 4v² → v → 2v"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Um bloco desliza por uma rampa sem atrito, partindo do repouso a 10 m de altura. Ao atingir a base, toda energia potencial foi convertida em:",
+          "alternativas": {
+            "A": "Energia termica",
+            "B": "Energia cinetica",
+            "C": "Energia elastica",
+            "D": "Trabalho do atrito",
+            "E": "Energia foi perdida"
+          },
+          "correta": "B",
+          "explicacao": "Sem atrito, conservacao de energia: E_pg inicial se converte totalmente em E_c final"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "id": "biologia-ecologia-completa",
+  "titulo": "Ecologia Completa",
+  "descricao": "Relacoes ecologicas, ciclos biogeoquimicos e biomas",
+  "icone": "🌿",
+  "cor": "from-emerald-500 to-teal-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Cadeias e Teias Alimentares",
+      "resumo": "As cadeias alimentares representam a transferencia de energia entre os seres vivos. Produtores (autotrofs) captam energia solar, consumidores (heterotrofs) alimentam-se de outros organismos, e decompositores reciclam materia organica.",
+      "topicos": [
+        "Niveis troficos: produtores, consumidores, decompositores",
+        "Cadeias alimentares: fluxo unidirecional de energia",
+        "Teias alimentares: multiplas cadeias interligadas",
+        "Piramides ecologicas: numeros, biomassa, energia",
+        "Transferencia de energia: regra dos 10%"
+      ],
+      "exemplos": [
+        "Cadeia terrestre: capim -> gafanhoto -> sapo -> cobra -> gaviao",
+        "Cadeia aquatica: fitoplancton -> zooplancton -> peixe pequeno -> peixe grande",
+        "Produtores: plantas, algas, cianobacterias",
+        "Consumidores primarios: herbivoros (gafanhoto, boi)",
+        "Decompositores: fungos e bacterias"
+      ],
+      "dicas": [
+        "Produtores: sempre na base (fazem fotossintese)",
+        "Energia diminui a cada nivel trofico (~10% passa)",
+        "Piramide de energia: nunca e invertida",
+        "Piramide de numeros: pode ser invertida (ex: arvore -> insetos)",
+        "Teias: mais realistas que cadeias simples"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Em uma cadeia alimentar, a energia disponivel para o consumidor secundario e aproximadamente que porcentagem da energia dos produtores?",
+          "alternativas": [
+            "100%",
+            "10%",
+            "1%",
+            "0,1%",
+            "50%"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Pela regra dos 10%, apenas 10% da energia passa de um nivel para outro. Produtores (100%) -> Primarios (10%) -> Secundarios (1%)."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Qual tipo de piramide ecologica NUNCA pode ser invertida?",
+          "alternativas": [
+            "Piramide de numeros",
+            "Piramide de biomassa",
+            "Piramide de energia",
+            "Piramide troficas",
+            "Todas podem ser invertidas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A piramide de energia nunca se inverte pois sempre ha perda de energia entre niveis troficos (calor, metabolismo). Piramides de numeros e biomassa podem se invertir."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Ciclos Biogeoquimicos",
+      "resumo": "Os ciclos biogeoquimicos descrevem o movimento de elementos quimicos entre os seres vivos e o ambiente. Os principais sao: carbono, nitrogenio, oxigenio e agua.",
+      "topicos": [
+        "Ciclo do carbono: fotossintese, respiracao, combustao",
+        "Ciclo do nitrogenio: fixacao, nitrificacao, desnitrificacao",
+        "Ciclo da agua: evaporacao, condensacao, precipitacao",
+        "Ciclo do oxigenio: ligado a fotossintese e respiracao",
+        "Impactos humanos: efeito estufa, chuva acida"
+      ],
+      "exemplos": [
+        "Carbono: CO2 atmosferico -> fotossintese -> materia organica -> respiracao -> CO2",
+        "Nitrogenio: N2 -> bacterias fixadoras -> amonia -> nitratos -> plantas",
+        "Agua: oceanos -> evaporacao -> nuvens -> chuva -> rios -> oceanos",
+        "Desmatamento: aumenta CO2 atmosferico",
+        "Queima de combustiveis: libera CO2 e contribui para aquecimento global"
+      ],
+      "dicas": [
+        "Carbono: fotossintese retira CO2, respiracao libera CO2",
+        "Nitrogenio: bacterias fixadoras (Rhizobium) em raizes de leguminosas",
+        "Nitrificacao: amonia -> nitrito -> nitrato (bacterias)",
+        "Desnitrificacao: nitrato -> N2 (devolve N2 a atmosfera)",
+        "Efeito estufa: excesso de CO2, CH4, N2O"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "No ciclo do nitrogenio, qual o papel das bacterias do genero Rhizobium?",
+          "alternativas": [
+            "Nitrificacao: transformam amonia em nitrato",
+            "Desnitrificacao: transformam nitrato em N2",
+            "Fixacao: transformam N2 em amonia",
+            "Amonificacao: transformam proteinas em amonia",
+            "Producao de oxigenio"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Bacterias Rhizobium vivem em nodulos de raizes de leguminosas e fixam N2 atmosferico, transformando-o em amonia (NH3) que as plantas podem absorver."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O aumento do efeito estufa esta relacionado principalmente ao aumento de qual gas na atmosfera?",
+          "alternativas": [
+            "Oxigenio (O2)",
+            "Nitrogenio (N2)",
+            "Dioxido de carbono (CO2)",
+            "Hidrogenio (H2)",
+            "Helio (He)"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O CO2 e o principal gas do efeito estufa antropogenico. Queima de combustiveis fosseis e desmatamento aumentam CO2 atmosferico, intensificando o aquecimento global."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Relacoes Ecologicas",
+      "resumo": "As relacoes ecologicas sao interacoes entre os seres vivos. Podem ser intraespecificas (mesma especie) ou interespecificas (especies diferentes), harmonicas (beneficas) ou desharmonicas (prejudiciais).",
+      "topicos": [
+        "Relacoes harmonicas: mutualismo, protocooperacao, comensalismo",
+        "Relacoes desharmonicas: predatismo, parasitismo, competicao",
+        "Intraespecificas: sociedade, colonia, competicao",
+        "Interespecificas: entre especies diferentes",
+        "Simbiose: associacao intima e duradoura"
+      ],
+      "exemplos": [
+        "Mutualismo: liquens (fungo + alga), cupins + protozoarios",
+        "Protocooperacao: anemonas + peixe-palhaco (facultativa)",
+        "Comensalismo: remora e tubarao (remora se beneficia)",
+        "Predatismo: leao e zebra",
+        "Parasitismo: carrapato e cachorro, lombriga e humano"
+      ],
+      "dicas": [
+        "Mutualismo: obrigatoria, ambos se beneficiam (+/+)",
+        "Protocooperacao: facultativa, ambos se beneficiam (+/+)",
+        "Comensalismo: um se beneficia, outro nao afetado (+/0)",
+        "Predatismo: predador mata presa (+/-)",
+        "Parasitismo: parasita prejudica hospedeiro sem matar (+/-)"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "A relacao entre o peixe-palhaco e a anemona-do-mar, onde ambos se beneficiam mas a relacao nao e obrigatoria, e um exemplo de:",
+          "alternativas": [
+            "Mutualismo",
+            "Protocooperacao",
+            "Comensalismo",
+            "Parasitismo",
+            "Competicao"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Protocooperacao e uma relacao harmonica interespecifica onde ambos se beneficiam (+/+), mas a relacao nao e obrigatoria. Podem viver separados."
+        },
+        {
+          "id": "q6",
+          "enunciado": "Os liquens sao associacoes entre fungos e algas. Essa relacao e classificada como:",
+          "alternativas": [
+            "Protocooperacao",
+            "Comensalismo",
+            "Mutualismo",
+            "Parasitismo",
+            "Competicao"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Liquens exemplificam mutualismo (simbiose obrigatoria). A alga faz fotossintese (nutre o fungo) e o fungo fornece protecao e absorve agua/sais minerais."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Sucessao Ecologica e Biomas",
+      "resumo": "Sucessao ecologica e o processo de mudancas graduais nas comunidades biologicas ate atingir um estado de equilibrio (climax). Os biomas sao grandes ecossistemas caracterizados por clima, vegetacao e fauna especificos.",
+      "topicos": [
+        "Sucessao primaria: em ambiente nunca colonizado",
+        "Sucessao secundaria: apos perturbacao",
+        "Comunidade pioneira e comunidade climax",
+        "Biomas brasileiros: Amazonia, Cerrado, Caatinga, Mata Atlantica",
+        "Biomas mundiais: tundra, taiga, savana, deserto"
+      ],
+      "exemplos": [
+        "Sucessao primaria: liquens em rocha nua -> musgos -> gramineas -> arbustos -> arvores",
+        "Sucessao secundaria: area de cultivo abandonada",
+        "Especies pioneiras: liquens, musgos (resistentes)",
+        "Amazonia: alta biodiversidade, clima quente e umido",
+        "Cerrado: vegetacao com arvores retorcidas, fogo natural"
+      ],
+      "dicas": [
+        "Sucessao primaria: solo ausente no inicio",
+        "Sucessao secundaria: solo ja presente",
+        "Climax: comunidade estavel e madura",
+        "Biodiversidade aumenta durante a sucessao",
+        "Biomas: determinados por clima (temperatura e precipitacao)"
+      ],
+      "questoes": [
+        {
+          "id": "q7",
+          "enunciado": "Qual a principal diferenca entre sucessao primaria e sucessao secundaria?",
+          "alternativas": [
+            "Primaria e mais rapida que secundaria",
+            "Primaria ocorre em solo ja formado",
+            "Secundaria ocorre em ambiente nunca colonizado",
+            "Primaria inicia em rocha nua sem solo",
+            "Nao ha diferenca entre elas"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Sucessao primaria ocorre em areas sem solo (rocha nua, lava), sendo mais lenta. Sucessao secundaria ocorre em areas com solo, apos perturbacoes (incendio, desmatamento)."
+        },
+        {
+          "id": "q8",
+          "enunciado": "Qual bioma brasileiro e caracterizado por vegetacao com arvores retorcidas, cascas grossas e ocorrencia natural de queimadas?",
+          "alternativas": [
+            "Amazonia",
+            "Mata Atlantica",
+            "Cerrado",
+            "Caatinga",
+            "Pampa"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O Cerrado apresenta arvores retorcidas com cascas grossas (adaptacao ao fogo), estacao seca prolongada e queimadas naturais que renovam o solo."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Impactos Ambientais e Conservacao",
+      "resumo": "Atividades humanas causam diversos impactos ambientais como poluicao, desmatamento, perda de biodiversidade e mudancas climaticas. A conservacao busca preservar ecossistemas e especies.",
+      "topicos": [
+        "Desmatamento: perda de habitat e biodiversidade",
+        "Poluicao: agua, ar, solo",
+        "Aquecimento global e mudancas climaticas",
+        "Eutrofizacao: excesso de nutrientes em corpos d'agua",
+        "Conservacao: unidades de conservacao, desenvolvimento sustentavel"
+      ],
+      "exemplos": [
+        "Desmatamento da Amazonia: perda de especies e servicos ecossistemicos",
+        "Poluicao de rios: esgoto domestico, metais pesados",
+        "Efeito estufa intensificado: derretimento de geleiras",
+        "Eutrofizacao: proliferacao de algas, morte de peixes",
+        "Parques Nacionais: protecao de areas naturais"
+      ],
+      "dicas": [
+        "Desmatamento: diminui absorcao de CO2, aumenta efeito estufa",
+        "Eutrofizacao: excesso de fosforo e nitrogenio (fertilizantes, esgoto)",
+        "Bioacumulacao: concentracao de poluentes ao longo da cadeia",
+        "Especies invasoras: competem com especies nativas",
+        "Desenvolvimento sustentavel: uso consciente dos recursos"
+      ],
+      "questoes": [
+        {
+          "id": "q9",
+          "enunciado": "A eutrofizacao de lagos e causada principalmente por:",
+          "alternativas": [
+            "Diminuicao de oxigenio dissolvido",
+            "Excesso de nutrientes (fosforo e nitrogenio)",
+            "Aumento da temperatura da agua",
+            "Reducao da luz solar",
+            "Acidificacao da agua"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Eutrofizacao e o enriquecimento excessivo de nutrientes (P e N de fertilizantes e esgoto), causando proliferacao de algas, consumo de O2 e morte de organismos aquaticos."
+        },
+        {
+          "id": "q10",
+          "enunciado": "O fenomeno de bioacumulacao ocorre quando:",
+          "alternativas": [
+            "Especies invasoras se multiplicam rapidamente",
+            "Poluentes se concentram ao longo da cadeia alimentar",
+            "Nutrientes se acumulam no solo",
+            "Bacterias acumulam nitrogenio",
+            "Plantas acumulam agua no vacuolo"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Bioacumulacao e a concentracao progressiva de substancias toxicas (ex: mercurio) nos tecidos dos organismos ao longo da cadeia alimentar, sendo maior nos predadores de topo."
+        }
+      ]
+    }
+  ]
+}

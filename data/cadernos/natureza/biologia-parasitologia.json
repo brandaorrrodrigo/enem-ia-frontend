@@ -1,0 +1,282 @@
+{
+  "id": "biologia-parasitologia",
+  "titulo": "Parasitologia e Saude",
+  "descricao": "Doencas parasitarias: dengue, malaria, verminoses e prevencao",
+  "icone": "💉",
+  "cor": "from-rose-500 to-red-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Dengue, Zika e Chikungunya",
+      "resumo": "Sao doencas virais transmitidas pelo mosquito Aedes aegypti. Dengue pode causar febre hemorragica. Zika foi associada a microcefalia em bebes. Chikungunya causa dores articulares intensas.",
+      "topicos": [
+        "Vetor: Aedes aegypti (mosquito urbano)",
+        "Dengue: 4 sorotipos, febre alta, dores, hemorragias",
+        "Zika: febre leve, microcefalia em fetos",
+        "Chikungunya: dores articulares cronicas",
+        "Prevencao: eliminar agua parada, repelentes, telas"
+      ],
+      "exemplos": [
+        "Criadouros: pneus, vasos, caixas d'agua destampadas",
+        "Dengue hemorragica: segunda infeccao (outro sorotipo)",
+        "Microcefalia: consequencia da Zika em gestantes",
+        "Sintomas da dengue: febre, dor retro-orbital, manchas",
+        "Controle: fumace (adulticida), larvicida, eliminacao de focos"
+      ],
+      "dicas": [
+        "Aedes: mosquito diurno (pica de dia)",
+        "Dengue: nao tem vacina universal eficaz",
+        "Zika: risco para gestantes (microcefalia)",
+        "Prevencao: eliminar agua parada (principal)",
+        "Nao tem tratamento especifico (suporte, hidratacao)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Qual a principal medida de prevencao contra dengue, zika e chikungunya?",
+          "alternativas": [
+            "Vacinacao em massa",
+            "Uso de antibioticos",
+            "Eliminacao de agua parada",
+            "Isolamento de doentes",
+            "Uso de mascaras"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A principal prevencao e eliminar criadouros do Aedes aegypti, ou seja, recipientes com agua parada onde o mosquito deposita ovos. Prevencao = controle do vetor."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que a infeccao por Zika virus e especialmente perigosa para gestantes?",
+          "alternativas": [
+            "Pode causar aborto espontaneo",
+            "E sempre fatal para mae",
+            "Pode causar microcefalia no feto",
+            "Impede a gravidez",
+            "Causa infertilidade"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A infeccao por Zika durante a gestacao foi associada a microcefalia (desenvolvimento incompleto do cerebro) e outras malformacoes neurologicas em bebes."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Malaria",
+      "resumo": "A malaria e causada pelo protozoario Plasmodium, transmitido pela femea do mosquito Anopheles. Caracteriza-se por febres periodicas. E endemica na regiao amazonica.",
+      "topicos": [
+        "Agente: Plasmodium (P. vivax, P. falciparum)",
+        "Vetor: mosquito Anopheles (femea)",
+        "Ciclo: esporogonia (mosquito) e esquizogonia (humano)",
+        "Sintomas: febre periodica, calafrios, anemia",
+        "Prevencao: mosquiteiros, repelentes, drenagem, antimaláricos"
+      ],
+      "exemplos": [
+        "P. vivax: forma mais comum no Brasil (febre terca)",
+        "P. falciparum: forma mais grave (cerebral)",
+        "Febres: a cada 48h (terca) ou 72h (quarta)",
+        "Diagnostico: gota espessa (microscopio)",
+        "Tratamento: cloroquina, artemisina"
+      ],
+      "dicas": [
+        "Anopheles: mosquito crepuscular (entardecer/amanhecer)",
+        "Ciclo hepatico: primeiro no figado, depois hemacias",
+        "Febre: coincide com ruptura de hemacias",
+        "Anemia: destruicao de hemacias pelo parasita",
+        "Endemica: regiao amazonica brasileira"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Qual o vetor (transmissor) da malaria?",
+          "alternativas": [
+            "Aedes aegypti",
+            "Culex",
+            "Anopheles",
+            "Lutzomyia",
+            "Triatoma"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A malaria e transmitida pela FEMEA do mosquito Anopheles. Ao picar pessoa infectada, ingere Plasmodium, que se desenvolve no mosquito e e transmitido na proxima picada."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Por que a malaria causa febre periodica (a cada 48 ou 72 horas)?",
+          "alternativas": [
+            "O mosquito pica periodicamente",
+            "O parasita se multiplica periodicamente",
+            "Coincide com ruptura de hemacias e liberacao de toxinas",
+            "O sistema imune ataca periodicamente",
+            "E um sintoma aleatorio"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "As febres periodicas coincidem com a ruptura sincronizada de hemacias infectadas, liberando merozoitos e toxinas. P. vivax: 48h (terca), P. malariae: 72h (quarta)."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Verminoses I: Ascaridiase e Ancilostomose",
+      "resumo": "Ascaridiase (lombriga) e ancilostomose (amarelao) sao causadas por nematodeos. Transmissao fecal-oral ou penetracao pela pele. Relacionadas a falta de saneamento basico.",
+      "topicos": [
+        "Ascaridiase: Ascaris lumbricoides (lombriga)",
+        "Transmissao: ingestao de ovos (agua/alimentos contaminados)",
+        "Sintomas: dor abdominal, obstrucao intestinal",
+        "Ancilostomose: Ancylostoma/Necator (amarelao)",
+        "Transmissao: penetracao de larvas pela pele (andar descalco)"
+      ],
+      "exemplos": [
+        "Ascaris: verme grande (ate 30 cm)",
+        "Ciclo pulmonar: larva migra figado -> pulmoes -> intestino",
+        "Obstrucao: acumulo de vermes no intestino",
+        "Amarelao: anemia por perda de sangue",
+        "Prevencao: saneamento, calcar sapatos, lavar alimentos"
+      ],
+      "dicas": [
+        "Ascaridiase: transmissao oral (higiene)",
+        "Ancilostomose: penetracao cutanea (pes descalcos)",
+        "Ambos: nematodeos (vermes cilindricos)",
+        "Amarelao: anemia (vermes sugam sangue)",
+        "Tratamento: antihelminticos (albendazol, mebendazol)"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Como ocorre a transmissao da ascaridiase?",
+          "alternativas": [
+            "Picada de mosquito",
+            "Ingestao de ovos em agua/alimentos contaminados",
+            "Penetracao de larvas pela pele",
+            "Contato com sangue infectado",
+            "Via aerea (tosse)"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Ascaridiase e transmitida pela ingestao de ovos de Ascaris presentes em agua ou alimentos contaminados por fezes. Saneamento basico e higiene previnem."
+        },
+        {
+          "id": "q6",
+          "enunciado": "Por que a ancilostomose e conhecida como 'amarelao'?",
+          "alternativas": [
+            "O verme e amarelo",
+            "Causa ictericia (pele amarelada)",
+            "Causa anemia intensa (palidez amarelada)",
+            "Afeta o figado",
+            "As fezes ficam amarelas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Ancilostomideos fixam-se na parede intestinal e sugam sangue, causando anemia cronica. A palidez amarelada caracteristica deu origem ao nome 'amarelao'."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Verminoses II: Esquistossomose e Teníase",
+      "resumo": "Esquistossomose (barriga d'agua) e causada por Schistosoma, transmitido por caramujos. Teníase e causada por Taenia (solitaria), adquirida por carne contaminada.",
+      "topicos": [
+        "Esquistossomose: Schistosoma mansoni (platelminto)",
+        "Hospedeiro intermediario: caramujo Biomphalaria",
+        "Sintomas: hepatomegalia, esplenomegalia, ascite (barriga d'agua)",
+        "Teníase: Taenia solium (porco) ou T. saginata (boi)",
+        "Cisticercose: larvas de Taenia em humanos (cerebro)"
+      ],
+      "exemplos": [
+        "Ciclo: ovos -> caramujo -> cercaria -> penetra pele humana",
+        "Barriga d'agua: acumulo de liquido no abdomen (ascite)",
+        "Solitaria: verme longo (metros) no intestino",
+        "Cisticercose: ingestao de ovos (auto-infeccao ou alimentos)",
+        "Prevencao esquisto: evitar aguas com caramujos, saneamento"
+      ],
+      "dicas": [
+        "Esquisto: penetracao ativa pela pele (agua doce)",
+        "Cercaria: forma infectante que penetra pele",
+        "Barriga d'agua: fase cronica (fibrose hepatica)",
+        "Teníase: carne mal cozida (cisticercos)",
+        "Cisticercose: pode causar convulsoes (cerebral)"
+      ],
+      "questoes": [
+        {
+          "id": "q7",
+          "enunciado": "Como ocorre a transmissao da esquistossomose?",
+          "alternativas": [
+            "Ingestao de agua contaminada",
+            "Picada de mosquito",
+            "Penetracao de cercarias pela pele em agua doce",
+            "Ingestao de carne contaminada",
+            "Contato com fezes"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Larvas (cercarias) liberadas por caramujos infectados penetram ativamente pela pele de pessoas em contato com agua doce contaminada (rios, lagos)."
+        },
+        {
+          "id": "q8",
+          "enunciado": "Qual a diferenca entre teníase e cisticercose?",
+          "alternativas": [
+            "Sao a mesma doenca",
+            "Teníase: verme adulto no intestino; Cisticercose: larvas nos tecidos",
+            "Teníase e viral, cisticercose e bacteriana",
+            "Teníase e grave, cisticercose e leve",
+            "Nao ha relacao entre elas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Teníase: infeccao por verme adulto no intestino (carne contaminada). Cisticercose: infeccao por LARVAS (cisticercos) em tecidos/cerebro (ingestao de ovos)."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Doenca de Chagas e Leishmaniose",
+      "resumo": "Doenca de Chagas e causada pelo Trypanosoma cruzi, transmitido pelo barbeiro. Leishmaniose e causada por Leishmania, transmitida pelo mosquito-palha.",
+      "topicos": [
+        "Chagas: Trypanosoma cruzi (protozoario)",
+        "Vetor: barbeiro/chupao (Triatoma)",
+        "Transmissao: fezes do barbeiro em ferida da picada",
+        "Sintomas: fase aguda (chagoma) e cronica (cardiaca, digestiva)",
+        "Leishmaniose: tegumentar (pele) e visceral (orgaos)"
+      ],
+      "exemplos": [
+        "Barbeiro: vive em frestas de casas de pau-a-pique",
+        "Sinal de Romana: edema palpebral (porta de entrada)",
+        "Fase cronica: cardiomegalia, megacolon, megaesofago",
+        "Leishmaniose tegumentar: ulceras na pele",
+        "Leishmaniose visceral (calazar): febre, hepatoesplenomegalia"
+      ],
+      "dicas": [
+        "Chagas: vetor e barbeiro (nao o mosquito)",
+        "Transmissao: fezes infectadas entram pela pele",
+        "Fase cronica: pode surgir decadas depois",
+        "Leishmaniose: vetor e mosquito-palha (Lutzomyia)",
+        "Prevencao Chagas: melhorar habitacoes, telar casas"
+      ],
+      "questoes": [
+        {
+          "id": "q9",
+          "enunciado": "Como o barbeiro transmite a Doenca de Chagas?",
+          "alternativas": [
+            "Pela picada diretamente",
+            "Pelas fezes depositadas proximo a picada",
+            "Pela saliva durante a picada",
+            "Por depositar ovos na pele",
+            "Por contato direto"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O barbeiro defeca durante/apos a picada. Trypanosoma esta nas fezes. Ao cocar, a pessoa introduz as fezes (com parasita) na ferida ou mucosas."
+        },
+        {
+          "id": "q10",
+          "enunciado": "Qual a forma grave da leishmaniose que afeta orgaos internos?",
+          "alternativas": [
+            "Leishmaniose tegumentar",
+            "Leishmaniose cutanea",
+            "Leishmaniose mucosa",
+            "Leishmaniose visceral (calazar)",
+            "Leishmaniose cerebral"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Leishmaniose visceral (calazar) e a forma grave que afeta figado, baco e medula ossea. Causa febre prolongada, emagrecimento e hepatoesplenomegalia. Pode ser fatal sem tratamento."
+        }
+      ]
+    }
+  ]
+}

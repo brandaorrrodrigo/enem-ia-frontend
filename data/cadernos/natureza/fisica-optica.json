@@ -1,0 +1,327 @@
+{
+  "id": "fisica-optica",
+  "titulo": "Optica Geometrica",
+  "descricao": "Reflexao, refracao, espelhos e lentes",
+  "icone": "🔦",
+  "cor": "from-green-500 to-emerald-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Reflexao da Luz",
+      "resumo": "A reflexao da luz ocorre quando um raio de luz incide sobre uma superficie e retorna ao meio de origem. A lei da reflexao estabelece que o angulo de incidencia e igual ao angulo de reflexao, ambos medidos em relacao a normal (reta perpendicular) a superficie.",
+      "topicos": [
+        "Lei da reflexao: angulo de incidencia = angulo de reflexao",
+        "Reflexao regular (especular) em superficies lisas",
+        "Reflexao difusa em superficies irregulares",
+        "Raios incidente, refletido e normal estao no mesmo plano"
+      ],
+      "exemplos": [
+        "Espelho plano refletindo sua imagem com nitidez (reflexao especular)",
+        "Papel branco espalhando luz em todas as direcoes (reflexao difusa)",
+        "Laser incidindo a 30° em espelho plano e refletindo a 30° do outro lado da normal"
+      ],
+      "formula": "θi = θr (angulo de incidencia = angulo de reflexao)",
+      "dicas": [
+        "Sempre meca os angulos em relacao a normal, nao a superficie",
+        "Reflexao especular forma imagens nitidas; difusa nao forma imagens",
+        "A luz refletida mantem a mesma frequencia e velocidade no mesmo meio"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um raio de luz incide sobre um espelho plano formando um angulo de 35° com a superficie refletora. Qual e o angulo entre o raio incidente e o raio refletido?",
+          "alternativas": {
+            "A": "35°",
+            "B": "55°",
+            "C": "70°",
+            "D": "110°",
+            "E": "145°"
+          },
+          "correta": "D",
+          "explicacao": "O angulo com a superficie e 35°, logo o angulo com a normal e 90° - 35° = 55°. Como θi = θr = 55°, o angulo entre os raios e 55° + 55° = 110°."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Para que serve a pintura branca fosca nas paredes de uma sala de aula?",
+          "alternativas": {
+            "A": "Absorver toda a luz incidente",
+            "B": "Refletir a luz de forma especular como um espelho",
+            "C": "Provocar reflexao difusa, espalhando a luz uniformemente",
+            "D": "Refratar a luz aumentando sua velocidade",
+            "E": "Polarizar a luz incidente"
+          },
+          "correta": "C",
+          "explicacao": "A superficie fosca provoca reflexao difusa, espalhando a luz em todas as direcoes e iluminando a sala uniformemente, sem ofuscamento."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Um raio de luz incide verticalmente sobre um espelho plano horizontal. O que acontece com o raio refletido?",
+          "alternativas": {
+            "A": "Desvia-se 45° em relacao a normal",
+            "B": "Retorna na mesma direcao do raio incidente",
+            "C": "Desvia-se 90° em relacao ao raio incidente",
+            "D": "E totalmente absorvido pelo espelho",
+            "E": "Divide-se em dois raios de 45°"
+          },
+          "correta": "B",
+          "explicacao": "Incidencia vertical significa θi = 0° (perpendicular). Pela lei da reflexao, θr = 0°, logo o raio retorna na mesma direcao, voltando sobre si mesmo."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Refracao e Lei de Snell",
+      "resumo": "A refracao ocorre quando a luz muda de meio, alterando sua velocidade e direcao de propagacao. A Lei de Snell relaciona os angulos de incidencia e refracao com os indices de refracao dos meios. Quando a luz passa para um meio mais refringente (maior indice), ela se aproxima da normal.",
+      "topicos": [
+        "Mudanca de velocidade da luz ao mudar de meio",
+        "Indice de refracao: n = c/v (c = velocidade da luz no vacuo)",
+        "Lei de Snell: n₁·sen(θ₁) = n₂·sen(θ₂)",
+        "Aproximacao ou afastamento da normal dependendo dos indices"
+      ],
+      "exemplos": [
+        "Canudo parecendo quebrado dentro de um copo com agua",
+        "Luz do Sol passando do ar (n≈1,0) para agua (n≈1,33) desvia-se em direcao a normal",
+        "Miragem no asfalto quente por refracao em camadas de ar com diferentes temperaturas"
+      ],
+      "formula": "n₁·sen(θ₁) = n₂·sen(θ₂)",
+      "dicas": [
+        "Meio mais refringente tem maior indice de refracao (luz mais lenta)",
+        "Luz indo para meio mais refringente aproxima-se da normal (angulo diminui)",
+        "No vacuo n = 1,00; no ar n ≈ 1,00; na agua n ≈ 1,33; no vidro n ≈ 1,50"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um raio de luz passa do ar (n = 1,0) para a agua (n = 1,33) com angulo de incidencia de 60°. Qual e aproximadamente o angulo de refracao? (Dados: sen 60° ≈ 0,87; sen 40° ≈ 0,64; sen 41° ≈ 0,66)",
+          "alternativas": {
+            "A": "30°",
+            "B": "40°",
+            "C": "45°",
+            "D": "60°",
+            "E": "80°"
+          },
+          "correta": "B",
+          "explicacao": "Aplicando Lei de Snell: 1,0 × 0,87 = 1,33 × sen(θ₂). Logo sen(θ₂) = 0,87/1,33 ≈ 0,65. Portanto θ₂ ≈ 40°. A luz aproximou-se da normal ao entrar em meio mais refringente."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que e dificil acertar um peixe com um arpao quando visto de fora da agua?",
+          "alternativas": {
+            "A": "O peixe nada muito rapido",
+            "B": "A refracao faz o peixe parecer mais raso do que realmente esta",
+            "C": "A agua absorve a luz refletida pelo peixe",
+            "D": "A reflexao total impede ver o peixe corretamente",
+            "E": "O indice de refracao da agua varia muito"
+          },
+          "correta": "B",
+          "explicacao": "Devido a refracao na interface agua-ar, os raios de luz vindos do peixe afastam-se da normal ao sair da agua, fazendo o peixe parecer mais proximo da superficie (mais raso) do que realmente esta."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A velocidade da luz em determinado vidro e 2,0 × 10⁸ m/s. Sendo a velocidade da luz no vacuo 3,0 × 10⁸ m/s, qual e o indice de refracao desse vidro?",
+          "alternativas": {
+            "A": "0,67",
+            "B": "1,00",
+            "C": "1,50",
+            "D": "2,00",
+            "E": "3,00"
+          },
+          "correta": "C",
+          "explicacao": "O indice de refracao e n = c/v = (3,0 × 10⁸)/(2,0 × 10⁸) = 1,50. Quanto maior o indice, menor a velocidade da luz no meio."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Espelhos Planos",
+      "resumo": "Espelhos planos produzem imagens virtuais, direitas, do mesmo tamanho do objeto e com inversao lateral. A imagem se forma simetricamente atras do espelho, a mesma distancia que o objeto esta na frente. Sao amplamente usados no cotidiano.",
+      "topicos": [
+        "Imagem virtual (formada pelo prolongamento dos raios)",
+        "Imagem direita e do mesmo tamanho do objeto",
+        "Distancia do objeto ao espelho = distancia da imagem ao espelho",
+        "Campo visual: regiao que pode ser vista refletida no espelho"
+      ],
+      "exemplos": [
+        "Espelho do banheiro mostrando sua imagem com inversao esquerda-direita",
+        "Retrovisor plano do carro mostrando veiculos atras sem distorcao de tamanho",
+        "Dois espelhos paralelos criando infinitas imagens sucessivas"
+      ],
+      "formula": "d_objeto = d_imagem (distancias ao espelho)",
+      "dicas": [
+        "Imagem virtual nao pode ser projetada em anteparo (tela)",
+        "Ampliacao linear A = 1 (mesmo tamanho)",
+        "Para ver-se inteiro em espelho plano, ele deve ter no minimo metade da sua altura"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma pessoa de 1,80 m de altura quer se ver inteiramente em um espelho plano vertical. Qual deve ser a altura minima do espelho?",
+          "alternativas": {
+            "A": "0,45 m",
+            "B": "0,90 m",
+            "C": "1,35 m",
+            "D": "1,80 m",
+            "E": "3,60 m"
+          },
+          "correta": "B",
+          "explicacao": "Para ver-se inteiro, o espelho deve ter no minimo metade da altura da pessoa: 1,80/2 = 0,90 m. Isso e valido independentemente da distancia da pessoa ao espelho."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Um objeto esta a 2 m de um espelho plano. A que distancia do objeto se forma a imagem?",
+          "alternativas": {
+            "A": "1 m",
+            "B": "2 m",
+            "C": "3 m",
+            "D": "4 m",
+            "E": "6 m"
+          },
+          "correta": "D",
+          "explicacao": "A imagem se forma a 2 m atras do espelho (simetrica). Logo a distancia do objeto ate a imagem e 2 m (frente) + 2 m (atras) = 4 m."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Qual caracteristica diferencia uma imagem real de uma imagem virtual?",
+          "alternativas": {
+            "A": "Imagem real e sempre maior que o objeto",
+            "B": "Imagem virtual e sempre invertida",
+            "C": "Imagem real pode ser projetada em um anteparo",
+            "D": "Imagem virtual e sempre menor que o objeto",
+            "E": "Imagem real esta sempre atras do espelho"
+          },
+          "correta": "C",
+          "explicacao": "Imagem real e formada pela convergencia efetiva dos raios de luz, podendo ser projetada em tela. Imagem virtual e formada pelo prolongamento dos raios e nao pode ser projetada."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Espelhos Esfericos",
+      "resumo": "Espelhos esfericos podem ser concavos (convergentes) ou convexos (divergentes). Produzem diferentes tipos de imagens dependendo da posicao do objeto. A equacao de Gauss relaciona distancias do objeto e da imagem com o foco do espelho.",
+      "topicos": [
+        "Espelho concavo: face refletora interna (convergente)",
+        "Espelho convexo: face refletora externa (divergente)",
+        "Foco: f = R/2 (R = raio de curvatura)",
+        "Equacao de Gauss: 1/f = 1/p + 1/p' (p = objeto, p' = imagem)"
+      ],
+      "exemplos": [
+        "Espelho de maquiagem concavo ampliando o rosto quando proximo",
+        "Espelho retrovisor convexo de carro ampliando campo visual",
+        "Telescopios refletores usando espelho concavo para coletar luz"
+      ],
+      "formula": "1/f = 1/p + 1/p' e f = R/2",
+      "dicas": [
+        "Concavo: pode formar imagem real (invertida) ou virtual (direita)",
+        "Convexo: sempre forma imagem virtual, direita e menor",
+        "Objeto no foco de espelho concavo: raios refletidos ficam paralelos"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um espelho esferico concavo tem raio de curvatura de 40 cm. Um objeto e colocado a 60 cm do espelho. A que distancia se forma a imagem?",
+          "alternativas": {
+            "A": "15 cm",
+            "B": "20 cm",
+            "C": "30 cm",
+            "D": "40 cm",
+            "E": "60 cm"
+          },
+          "correta": "C",
+          "explicacao": "f = R/2 = 20 cm. Usando 1/f = 1/p + 1/p': 1/20 = 1/60 + 1/p'. Logo 1/p' = 1/20 - 1/60 = 2/60 = 1/30. Portanto p' = 30 cm."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que espelhos retrovisores convexos sao usados em carros apesar de reduzirem o tamanho das imagens?",
+          "alternativas": {
+            "A": "Porque sao mais baratos de fabricar",
+            "B": "Porque ampliam o campo visual do motorista",
+            "C": "Porque formam imagens reais mais nitidas",
+            "D": "Porque invertem a imagem facilitando a visualizacao",
+            "E": "Porque nao deformam as imagens"
+          },
+          "correta": "B",
+          "explicacao": "Espelhos convexos, apesar de formarem imagens menores, ampliam significativamente o campo visual, permitindo ao motorista ver uma area maior atras do veiculo, aumentando a seguranca."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Um objeto esta posicionado exatamente no foco de um espelho concavo. Como sera a imagem formada?",
+          "alternativas": {
+            "A": "Real, invertida e do mesmo tamanho",
+            "B": "Virtual, direita e ampliada",
+            "C": "Nao havera formacao de imagem nitida",
+            "D": "Real, direita e reduzida",
+            "E": "Virtual, invertida e reduzida"
+          },
+          "correta": "C",
+          "explicacao": "Quando o objeto esta no foco, os raios refletidos saem paralelos entre si, nao convergindo nem divergindo para formar uma imagem. Dizemos que a imagem se forma no infinito."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Lentes Convergentes e Divergentes",
+      "resumo": "Lentes sao dispositivos opticos transparentes que refratam a luz. Lentes convergentes (mais espessas no centro) convergem raios paralelos para um foco. Lentes divergentes (mais finas no centro) divergem raios paralelos. Usam a mesma equacao de Gauss dos espelhos.",
+      "topicos": [
+        "Lente convergente: bordas finas, foco real, convergencia positiva",
+        "Lente divergente: bordas espessas, foco virtual, convergencia negativa",
+        "Equacao das lentes: 1/f = 1/p + 1/p'",
+        "Vergencia (grau): C = 1/f (f em metros), unidade dioptria (di)"
+      ],
+      "exemplos": [
+        "Oculos para miopia usam lentes divergentes",
+        "Oculos para hipermetropia e presbiopia usam lentes convergentes",
+        "Lupa (lente convergente) ampliando objetos proximos"
+      ],
+      "formula": "1/f = 1/p + 1/p' e C = 1/f (em metros)",
+      "dicas": [
+        "Convergente: forma imagem real quando objeto alem do foco",
+        "Divergente: sempre forma imagem virtual, direita e menor",
+        "Vergencia positiva = convergente; negativa = divergente"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma lente tem distancia focal de 25 cm. Qual e sua vergencia em dioptrias?",
+          "alternativas": {
+            "A": "+0,25 di",
+            "B": "+2,5 di",
+            "C": "+4,0 di",
+            "D": "+25 di",
+            "E": "+250 di"
+          },
+          "correta": "C",
+          "explicacao": "Primeiro converter para metros: f = 0,25 m. Vergencia C = 1/f = 1/0,25 = 4,0 di. O sinal positivo indica lente convergente."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Um miopico tem dificuldade de enxergar objetos distantes porque a imagem se forma antes da retina. Que tipo de lente corrige esse problema?",
+          "alternativas": {
+            "A": "Lente convergente, que aproxima a imagem",
+            "B": "Lente divergente, que afasta a imagem para a retina",
+            "C": "Lente plana, que nao altera a trajetoria da luz",
+            "D": "Lente cilindrica, que corrige astigmatismo",
+            "E": "Lente biconvexa de alta convergencia"
+          },
+          "correta": "B",
+          "explicacao": "A lente divergente faz os raios de luz divergirem antes de entrar no olho, fazendo com que a imagem se forme mais atras, alcancando a retina corretamente."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Um objeto e colocado a 30 cm de uma lente convergente de distancia focal 10 cm. Qual a caracteristica da imagem formada?",
+          "alternativas": {
+            "A": "Virtual, direita e menor",
+            "B": "Real, invertida e ampliada",
+            "C": "Real, invertida e menor",
+            "D": "Virtual, direita e ampliada",
+            "E": "Real, direita e do mesmo tamanho"
+          },
+          "correta": "C",
+          "explicacao": "Usando 1/f = 1/p + 1/p': 1/10 = 1/30 + 1/p', logo p' = 15 cm (real, pois positivo). Como p' < p, a imagem e menor. Imagem real e sempre invertida em lentes convergentes."
+        }
+      ]
+    }
+  ]
+}

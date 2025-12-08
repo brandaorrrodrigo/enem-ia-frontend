@@ -1,0 +1,208 @@
+{
+  "id": "portugues-funcoes-linguagem",
+  "titulo": "Funções da Linguagem",
+  "descricao": "Compreenda as seis funções da linguagem e suas aplicações",
+  "icone": "💬",
+  "cor": "from-purple-500 to-pink-500",
+  "nivel": "Básico",
+  "tempoEstimado": "3h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Função Referencial ou Denotativa",
+      "resumo": "A função focada na informação objetiva, clara e imparcial sobre a realidade.",
+      "topicos": [
+        "Foco no referente (contexto, assunto)",
+        "Linguagem objetiva e denotativa",
+        "Uso da 3ª pessoa",
+        "Predomínio em textos jornalísticos, científicos e didáticos",
+        "Verbos no indicativo, ausência de subjetividade"
+      ],
+      "exemplos": [
+        "Notícia: 'O Brasil tem 203 milhões de habitantes segundo o IBGE.'",
+        "Texto científico: 'A água ferve a 100°C ao nível do mar.'",
+        "Reportagem: 'O governo anunciou hoje novas medidas econômicas.'",
+        "Manual: 'O produto contém 250ml e deve ser armazenado em local seco.'"
+      ],
+      "dicas": [
+        "Identifique linguagem impessoal e objetiva",
+        "Observe ausência de opinião do emissor",
+        "Comum em provas objetivas e textos informativos",
+        "Vocabulário técnico e preciso é marca dessa função"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Qual texto exemplifica predominantemente a função referencial?",
+          "alternativas": [
+            "'Ah, como eu amo essa cidade!'",
+            "'Compre já! Não perca essa oferta!'",
+            "'A temperatura média no verão é de 28°C.'",
+            "'Oi, tudo bem? Consegue me ouvir?'",
+            "'Metáfora é uma figura de linguagem.'"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A alternativa apresenta informação objetiva e imparcial sobre temperatura, característica da função referencial focada no contexto/referente."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Função Emotiva ou Expressiva",
+      "resumo": "Centrada no emissor, expressa sentimentos, emoções e opiniões pessoais.",
+      "topicos": [
+        "Foco no emissor (quem fala/escreve)",
+        "Expressão de sentimentos e emoções",
+        "Uso da 1ª pessoa",
+        "Interjeições, exclamações e reticências",
+        "Comum em cartas pessoais, diários, poesias líricas"
+      ],
+      "exemplos": [
+        "Poesia: 'Eu sinto uma saudade imensa daqueles tempos...'",
+        "Carta: 'Querida amiga, estou tão feliz com seu sucesso!'",
+        "Diário: 'Hoje foi um dia terrível, não aguento mais!'",
+        "Depoimento: 'Para mim, essa conquista significa tudo!'"
+      ],
+      "dicas": [
+        "Busque marcas de 1ª pessoa (eu, nós, meu, nosso)",
+        "Identifique interjeições: ah!, oh!, ufa!",
+        "Observe pontuação expressiva (!, ..., ?!)",
+        "Adjetivos e advérbios intensificadores são comuns"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Em qual alternativa predomina a função emotiva?",
+          "alternativas": [
+            "'O evento ocorrerá no próximo sábado às 10h.'",
+            "'Adjetivo é a classe que caracteriza o substantivo.'",
+            "'Nossa! Que saudade eu estava de você!'",
+            "'Clique aqui e cadastre-se agora.'",
+            "'Alô, você está me ouvindo?'"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A frase apresenta interjeição 'Nossa!', exclamação e expressão de sentimento pessoal (saudade), marcas típicas da função emotiva centrada no emissor."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Função Conativa ou Apelativa",
+      "resumo": "Focada no receptor, busca convencer, persuadir ou influenciar o destinatário.",
+      "topicos": [
+        "Foco no receptor (ouvinte/leitor)",
+        "Linguagem persuasiva e imperativa",
+        "Uso de verbos no imperativo",
+        "Vocativos e 2ª ou 3ª pessoa",
+        "Predomina em propagandas, discursos políticos, sermões"
+      ],
+      "exemplos": [
+        "Propaganda: 'Compre agora e ganhe 50% de desconto!'",
+        "Campanha: 'Vote consciente. Seu voto transforma o país.'",
+        "Anúncio: 'Não perca tempo! Cadastre-se já!'",
+        "Discurso: 'Cidadãos, precisamos lutar por nossos direitos!'"
+      ],
+      "dicas": [
+        "Identifique verbos no imperativo (compre, faça, vote)",
+        "Observe vocativos (cidadão, amigo, você)",
+        "Comum em textos publicitários e políticos",
+        "Uso de argumentos para convencer o receptor"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Identifique a função conativa:",
+          "alternativas": [
+            "'A reunião foi adiada para terça-feira.'",
+            "'Estou tão cansado dessa rotina!'",
+            "'Participe você também dessa campanha!'",
+            "'Concordância é a relação entre termos.'",
+            "'Que dia lindo hoje, não acha?'"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O uso do verbo no imperativo 'Participe' e o apelo direto ao receptor 'você' caracterizam a função conativa, que busca influenciar o destinatário."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Função Fática e Metalinguística",
+      "resumo": "Função fática testa o canal de comunicação; metalinguística explica o próprio código.",
+      "topicos": [
+        "Fática: foco no canal de comunicação",
+        "Fática: testar, prolongar ou encerrar a comunicação",
+        "Metalinguística: código explicando o código",
+        "Metalinguística: dicionários, gramáticas, poesia sobre poesia",
+        "Expressões como 'alô', 'entende?', 'tá me ouvindo?'"
+      ],
+      "exemplos": [
+        "Fática: 'Alô? Está me ouvindo?'",
+        "Fática: 'Bem... é... tipo assim, sabe?'",
+        "Metalinguística: 'A palavra 'casa' é um substantivo.'",
+        "Metalinguística: 'Cinema é a sétima arte que conta histórias através de imagens.'",
+        "Metalinguística: Poema que fala sobre poesia"
+      ],
+      "dicas": [
+        "Fática: procure testes de contato (alô, oi, hein?)",
+        "Metalinguística: código explicando a si mesmo",
+        "Dicionários são exemplos clássicos de metalinguagem",
+        "Aulas de gramática usam metalinguagem"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Qual alternativa apresenta função metalinguística?",
+          "alternativas": [
+            "'Alô, você está aí?'",
+            "'Compre agora com desconto!'",
+            "'Metáfora é uma figura de linguagem.'",
+            "'Que felicidade imensa sinto hoje!'",
+            "'O evento inicia às 14h.'"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A frase usa a linguagem para explicar a própria linguagem (define o que é metáfora), característica da função metalinguística."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Função Poética",
+      "resumo": "Foco na elaboração estética da mensagem, no 'como se diz', valorizando a forma.",
+      "topicos": [
+        "Foco na própria mensagem",
+        "Valorização da forma estética",
+        "Figuras de linguagem, ritmo, sonoridade",
+        "Conotação e plurissignificação",
+        "Predomina em textos literários e publicitários criativos"
+      ],
+      "exemplos": [
+        "Poesia: 'No meio do caminho tinha uma pedra' (repetição)",
+        "Slogan: 'Omo lava mais branco' (aliteração em 'o')",
+        "Literatura: 'A vida é uma viagem sem volta.'",
+        "Propaganda: 'Coca-Cola. Isso é que é.' (paralelismo)"
+      ],
+      "dicas": [
+        "Identifique figuras de linguagem (metáfora, aliteração)",
+        "Observe recursos sonoros (rima, ritmo, aliteração)",
+        "Comum em poesias, mas também em publicidade",
+        "Forma é tão importante quanto conteúdo"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Em 'Minha terra tem palmeiras onde canta o sabiá', qual função predomina?",
+          "alternativas": [
+            "Referencial, pois informa sobre o Brasil",
+            "Emotiva, pois expressa amor à pátria",
+            "Conativa, pois convence sobre o Brasil",
+            "Poética, pela construção estética do verso",
+            "Fática, pois estabelece comunicação"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Embora haja emotividade, predomina a função poética pela elaboração estética: ritmo, métrica, escolha sonora das palavras e construção imagética."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "id": "portugues-formacao",
+  "titulo": "Estrutura e Formação de Palavras",
+  "descricao": "Compreenda como as palavras são formadas e estruturadas",
+  "icone": "🔨",
+  "cor": "from-yellow-500 to-orange-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Estrutura das Palavras: Radical, Afixos e Desinências",
+      "resumo": "Identifique os elementos mórficos que compõem as palavras da língua portuguesa.",
+      "topicos": [
+        "Radical: parte invariável que contém o significado básico",
+        "Afixos: prefixos (antes do radical) e sufixos (depois do radical)",
+        "Desinências: nominais (gênero e número) e verbais (modo, tempo, pessoa)",
+        "Vogal temática: liga radical aos afixos",
+        "Vogal e consoante de ligação"
+      ],
+      "exemplos": [
+        "Radical: 'liv-' em livro, livraria, livreiro, livrete",
+        "Prefixo: 'des-' em desfazer, desligar, desmontar",
+        "Sufixo: '-eiro' em padeiro, pedreiro, carteiro",
+        "Desinência nominal: gat-o (masculino) / gat-a (feminino)",
+        "Desinência verbal: cant-a-va-mos (va = tempo, mos = pessoa)",
+        "Vogal temática: am-a-r, vend-e-r, part-i-r (a, e, i)"
+      ],
+      "dicas": [
+        "Radical permanece em palavras da mesma família",
+        "Prefixos geralmente não mudam classe gramatical",
+        "Sufixos frequentemente mudam classe gramatical",
+        "Compare palavras para identificar o radical comum",
+        "Vogal temática aparece em verbos e alguns nomes"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Em 'infelizmente', quais são respectivamente o prefixo, radical e sufixo?",
+          "alternativas": [
+            "in- / feli- / -mente",
+            "i- / nfeli- / -zmente",
+            "in- / feliz / -mente",
+            "infe- / liz / -mente",
+            "infeliz / - / -mente"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Prefixo 'in-' (negação), radical 'feli-' (feliz), sufixo '-mente' (advérbio). A estrutura completa é: in-feliz-mente."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Derivação: Prefixal, Sufixal e Parassintética",
+      "resumo": "Processo de formação de novas palavras através do acréscimo de afixos ao radical.",
+      "topicos": [
+        "Derivação prefixal: acréscimo de prefixo",
+        "Derivação sufixal: acréscimo de sufixo",
+        "Derivação prefixal e sufixal: ambos, mas independentes",
+        "Derivação parassintética: prefixo e sufixo simultâneos",
+        "Teste da parassíntese: retirar prefixo OU sufixo torna palavra inexistente"
+      ],
+      "exemplos": [
+        "Prefixal: infeliz (in + feliz), reler (re + ler)",
+        "Sufixal: felizmente (feliz + mente), livraria (livr + aria)",
+        "Prefixal e sufixal: infelizmente (in + feliz + mente) - existem 'infeliz' e 'felizmente'",
+        "Parassintética: anoitecer (a + noite + cer) - NÃO existem 'anoite' nem 'noitecer'",
+        "Parassintética: entristecer, amanhecer, desalmado"
+      ],
+      "dicas": [
+        "Parassíntese: prefixo E sufixo juntos, simultaneamente",
+        "Teste: retire um afixo. Se a palavra não existe, é parassíntese",
+        "'Infelizmente' NÃO é parassíntese (existem 'infeliz' e 'felizmente')",
+        "'Anoitecer' É parassíntese (não existem 'anoite' nem 'noitecer')",
+        "Parassíntese comum em verbos derivados de adjetivos/substantivos"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Qual palavra foi formada por derivação parassintética?",
+          "alternativas": [
+            "Infelizmente (in + feliz + mente)",
+            "Deslealdade (des + leal + dade)",
+            "Anoitecer (a + noite + cer)",
+            "Releitura (re + leitura)",
+            "Felizmente (feliz + mente)"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Anoitecer' é parassintético: não existem 'anoite' nem 'noitecer', apenas com prefixo E sufixo simultaneamente. As demais possuem formas intermediárias."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Derivação: Regressiva, Imprópria e Composição",
+      "resumo": "Outros processos de formação: regressiva (redução), imprópria (mudança de classe) e composição.",
+      "topicos": [
+        "Derivação regressiva: substantivo formado de verbo (redução)",
+        "Derivação imprópria: mudança de classe sem alterar forma",
+        "Composição por justaposição: palavras unidas sem alteração",
+        "Composição por aglutinação: palavras unidas com alteração",
+        "Identificação do processo de formação"
+      ],
+      "exemplos": [
+        "Regressiva: 'ajuda' (de ajudar), 'busca' (de buscar), 'saque' (de sacar)",
+        "Regressiva: verbo termina em -ar/-er/-ir → substantivo sem essa terminação",
+        "Imprópria: 'o jantar' (verbo → substantivo), 'o porquê' (conjunção → substantivo)",
+        "Justaposição: passatempo, guarda-chuva, couve-flor (palavras reconhecíveis)",
+        "Aglutinação: planalto (plano + alto), fidalgo (filho + de + algo)"
+      ],
+      "dicas": [
+        "Regressiva: geralmente verbo → substantivo (ação)",
+        "Se o substantivo nomeia a ação do verbo, provavelmente é regressivo",
+        "Imprópria: forma igual, função diferente",
+        "Justaposição: mantém palavras originais reconhecíveis (hífen comum)",
+        "Aglutinação: palavras se fundem, perdem identidade (sem hífen geralmente)"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "'O choro do bebê era constante.' A palavra 'choro' foi formada por:",
+          "alternativas": [
+            "Derivação sufixal",
+            "Derivação prefixal",
+            "Derivação regressiva",
+            "Composição por justaposição",
+            "Derivação imprópria"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Choro' é substantivo formado por derivação regressiva do verbo 'chorar', nomeando a ação de chorar."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Principais Prefixos e seus Significados",
+      "resumo": "Conheça os prefixos mais comuns e seus significados para ampliar vocabulário e compreensão.",
+      "topicos": [
+        "Prefixos de negação: in-, des-, a-, dis-",
+        "Prefixos de repetição: re-",
+        "Prefixos de anterioridade: ante-, pre-",
+        "Prefixos de posterioridade: pos-",
+        "Prefixos de intensidade: super-, hiper-, ultra-",
+        "Prefixos de posição: inter-, intra-, extra-, sub-, sobre-",
+        "Prefixos gregos e latinos comuns"
+      ],
+      "exemplos": [
+        "Negação: infeliz, desligar, amoral, discordar",
+        "Repetição: refazer, reler, rever",
+        "Anterioridade: antever, prever, antepor",
+        "Posterioridade: pospor, pós-graduação",
+        "Intensidade: supermercado, hiperativo, ultrassom",
+        "Posição: internacional, intravenoso, extraordinário, subterrâneo, sobrepor"
+      ],
+      "dicas": [
+        "Prefixos ajudam a deduzir significado de palavras desconhecidas",
+        "Atenção: 'in-' pode ser negação (infeliz) ou 'para dentro' (ingerir)",
+        "Prefixos gregos: anti-, hiper-, hipo-, meta-",
+        "Prefixos latinos: pre-, pos-, sub-, super-",
+        "Memorize os mais frequentes para interpretação e vocabulário"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "O prefixo 'sub-' em 'subterrâneo' indica:",
+          "alternativas": [
+            "Negação",
+            "Repetição",
+            "Posição inferior/embaixo",
+            "Anterioridade",
+            "Intensidade"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Sub-' indica posição inferior, abaixo. 'Subterrâneo' significa embaixo da terra (sub + terrâneo)."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Principais Sufixos e Mudança de Classe",
+      "resumo": "Sufixos que formam substantivos, adjetivos, verbos e advérbios, alterando classe gramatical.",
+      "topicos": [
+        "Sufixos formadores de substantivos: -ção, -dade, -eza, -ismo, -ista",
+        "Sufixos formadores de adjetivos: -oso, -al, -ivo, -vel",
+        "Sufixos formadores de verbos: -ear, -izar, -ecer, -ificar",
+        "Sufixo formador de advérbios: -mente",
+        "Sufixos aumentativos e diminutivos"
+      ],
+      "exemplos": [
+        "Substantivos: realização, felicidade, beleza, capitalismo, dentista",
+        "Adjetivos: gostoso, cultural, produtivo, amável",
+        "Verbos: clarear, modernizar, florescer, purificar",
+        "Advérbios: felizmente, rapidamente, suavemente",
+        "Aumentativo: casarão, cartaço, bocarra",
+        "Diminutivo: casinha, carrinho, menininho"
+      ],
+      "dicas": [
+        "Sufixos mudam classe gramatical na maioria dos casos",
+        "'Pedra' (subst.) + '-eiro' = pedreiro (subst. que designa profissão)",
+        "'Beleza' vem de 'belo' (adj.) + '-eza' (forma substantivo)",
+        "'-mente' sempre forma advérbio de modo",
+        "Reconhecer sufixos ajuda em interpretação e vocabulário"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Em 'purificar' (tornar puro), o sufixo '-ficar' forma:",
+          "alternativas": [
+            "Substantivo a partir de adjetivo",
+            "Adjetivo a partir de substantivo",
+            "Verbo a partir de adjetivo",
+            "Advérbio a partir de adjetivo",
+            "Substantivo a partir de verbo"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O sufixo '-ficar' forma verbo (purificar) a partir do adjetivo 'puro', indicando ação de tornar algo puro."
+        }
+      ]
+    }
+  ]
+}

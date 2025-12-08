@@ -1,0 +1,330 @@
+{
+  "id": "fisica-dinamica",
+  "titulo": "Dinamica: Leis de Newton e Forcas",
+  "descricao": "Estudo das causas do movimento. Analisa as Leis de Newton, tipos de forcas (peso, normal, atrito, tracao) e suas aplicacoes em situacoes do cotidiano e problemas do ENEM.",
+  "icone": "⚡",
+  "cor": "from-blue-500 to-cyan-500",
+  "nivel": "Basico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Inercia e Primeira Lei de Newton",
+      "resumo": "Lei da Inercia: um corpo em repouso tende a permanecer em repouso, e um corpo em movimento tende a permanecer em movimento retilineo uniforme, a menos que uma forca resultante atue sobre ele.",
+      "topicos": [
+        "Inercia: tendencia dos corpos de manter seu estado de movimento ou repouso",
+        "Primeira Lei (Lei da Inercia): força resultante nula implica velocidade constante (repouso ou MRU)",
+        "Referenciais inerciais: sistemas onde a 1ª Lei e valida (nao acelerados)",
+        "Massa como medida de inercia: quanto maior a massa, maior a resistencia a mudanca de movimento"
+      ],
+      "exemplos": [
+        "Passageiro em onibus e lancado para frente quando o veiculo freia bruscamente (corpo tende a manter movimento)",
+        "Toalha puxada rapidamente sob objetos: objetos permanecem no lugar devido a inercia",
+        "Cinto de seguranca: impede que passageiro continue em movimento quando carro freia"
+      ],
+      "formula": "ΣF = 0 → v = constante (repouso ou MRU)",
+      "dicas": [
+        "Forca resultante nula nao significa ausencia de forcas, mas sim equilibrio entre elas",
+        "Corpo em repouso ou MRU → aplicar 1ª Lei (forca resultante zero)",
+        "No ENEM, questoes sobre seguranca no transito frequentemente envolvem inercia"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Um passageiro em pe dentro de um onibus em movimento e lancado para frente quando o motorista freia bruscamente. Esse fenomeno e explicado pela:",
+          "alternativas": {
+            "A": "Forca de atrito entre os pes e o chao",
+            "B": "Lei da Inercia",
+            "C": "Lei da Acao e Reacao",
+            "D": "Forca centrifuga",
+            "E": "Forca peso do passageiro"
+          },
+          "correta": "B",
+          "explicacao": "Pela Lei da Inercia, o passageiro tende a manter seu estado de movimento. Quando o onibus freia, o passageiro continua com a velocidade anterior, sendo 'lancado' para frente."
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Um livro esta em repouso sobre uma mesa. Sobre ele atuam a forca peso e a forca normal. O livro permanece em repouso porque:",
+          "alternativas": {
+            "A": "Nao ha forcas atuando sobre ele",
+            "B": "A forca peso e maior que a normal",
+            "C": "A forca resultante e nula",
+            "D": "A massa do livro e muito pequena",
+            "E": "A forca normal e a reacao ao peso"
+          },
+          "correta": "C",
+          "explicacao": "O livro esta em equilibrio (repouso), logo a forca resultante e nula. Peso e normal tem mesma intensidade e sentidos opostos, anulando-se."
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Um bloco desliza sobre uma superficie horizontal sem atrito com velocidade constante de 5 m/s. A forca resultante sobre o bloco e:",
+          "alternativas": {
+            "A": "Proporcional a sua massa",
+            "B": "Proporcional a sua velocidade",
+            "C": "Constante e diferente de zero",
+            "D": "Nula",
+            "E": "Variavel com o tempo"
+          },
+          "correta": "D",
+          "explicacao": "Velocidade constante (MRU) implica aceleracao nula e, pela 1ª Lei, forca resultante nula."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Forca Resultante e Segunda Lei de Newton",
+      "resumo": "A Segunda Lei de Newton estabelece a relacao entre forca resultante, massa e aceleracao. Fundamental para calcular forcas em movimentos acelerados.",
+      "topicos": [
+        "Segunda Lei: F_resultante = m × a (forca proporcional a aceleracao)",
+        "Forca resultante: soma vetorial de todas as forcas que atuam no corpo",
+        "Unidade: Newton (N) = kg⋅m/s². 1 N e a forca que acelera 1 kg a 1 m/s²",
+        "Relacao: maior forca ou menor massa → maior aceleracao",
+        "Peso: P = m⋅g (forca gravitacional, sempre vertical para baixo)"
+      ],
+      "exemplos": [
+        "Bloco de 10 kg com forca de 50 N: a = F/m = 50/10 = 5 m/s²",
+        "Elevador de 500 kg acelerando para cima a 2 m/s²: F = ma = 500(2) = 1000 N acima do peso",
+        "Carro de 1000 kg freando de 20 m/s para 0 em 4 s: a = -5 m/s², F = 1000(-5) = -5000 N"
+      ],
+      "formula": "F = m⋅a; P = m⋅g (onde g ≈ 10 m/s²)",
+      "dicas": [
+        "Forca e aceleracao tem mesma direcao e sentido (sao grandezas vetoriais)",
+        "Peso e massa sao diferentes: peso e forca (N), massa e quantidade de materia (kg)",
+        "No ENEM, desenhe diagrama de forcas para visualizar a situacao"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Um corpo de massa 20 kg e submetido a uma forca resultante de 80 N. Qual a aceleracao adquirida pelo corpo?",
+          "alternativas": {
+            "A": "0,25 m/s²",
+            "B": "2 m/s²",
+            "C": "4 m/s²",
+            "D": "16 m/s²",
+            "E": "1600 m/s²"
+          },
+          "correta": "C",
+          "explicacao": "Pela 2ª Lei: F = ma → 80 = 20a → a = 4 m/s²"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Qual o peso de um corpo de massa 50 kg na superficie da Terra? (g = 10 m/s²)",
+          "alternativas": {
+            "A": "5 N",
+            "B": "50 N",
+            "C": "500 N",
+            "D": "5000 N",
+            "E": "50000 N"
+          },
+          "correta": "C",
+          "explicacao": "Peso = massa × gravidade → P = 50 × 10 = 500 N"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Duas forcas horizontais de 30 N e 20 N atuam em sentidos opostos sobre um bloco de 5 kg. Qual a aceleracao do bloco?",
+          "alternativas": {
+            "A": "1 m/s²",
+            "B": "2 m/s²",
+            "C": "4 m/s²",
+            "D": "6 m/s²",
+            "E": "10 m/s²"
+          },
+          "correta": "B",
+          "explicacao": "Forca resultante = 30 - 20 = 10 N. Aceleracao: a = F/m = 10/5 = 2 m/s²"
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Acao e Reacao - Terceira Lei de Newton",
+      "resumo": "Toda acao tem uma reacao de mesma intensidade, mesma direcao e sentido oposto. As forcas de acao e reacao atuam em corpos diferentes, nunca no mesmo corpo.",
+      "topicos": [
+        "Terceira Lei: se A exerce forca em B, entao B exerce forca de mesma intensidade em A, mas em sentido oposto",
+        "Caracteristicas: mesma intensidade, mesma direcao, sentidos opostos, corpos diferentes",
+        "Par acao-reacao: forcas simultaneas (nao se anulam pois atuam em corpos diferentes)",
+        "Exemplos classicos: peso e normal NAO sao par acao-reacao (atuam no mesmo corpo)"
+      ],
+      "exemplos": [
+        "Pessoa empurra parede com 100 N: parede empurra pessoa com 100 N (sentido oposto)",
+        "Remador empurra agua para tras: agua empurra remo para frente, movendo o barco",
+        "Foguete expele gases para baixo: gases empurram foguete para cima (propulsao)"
+      ],
+      "formula": "F_A→B = -F_B→A (mesmo modulo, sentidos opostos)",
+      "dicas": [
+        "Acao e reacao atuam em corpos diferentes, portanto NUNCA se anulam",
+        "Peso e normal nao sao acao-reacao (ambos atuam no mesmo corpo)",
+        "Par acao-reacao: Terra atrai objeto (peso) ↔ objeto atrai Terra"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Um homem empurra um carrinho de supermercado. Qual e a reacao a forca que o homem exerce no carrinho?",
+          "alternativas": {
+            "A": "A forca que o chao exerce no homem",
+            "B": "A forca que o carrinho exerce no homem",
+            "C": "O peso do carrinho",
+            "D": "A forca de atrito no carrinho",
+            "E": "A forca normal no carrinho"
+          },
+          "correta": "B",
+          "explicacao": "Pela 3ª Lei, se o homem empurra o carrinho, o carrinho empurra o homem com mesma intensidade e sentido oposto."
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Sobre um livro em repouso sobre uma mesa, atuam a forca peso (para baixo) e a forca normal (para cima). Essas forcas:",
+          "alternativas": {
+            "A": "Sao um par acao-reacao",
+            "B": "Tem intensidades diferentes",
+            "C": "Se equilibram, mas nao sao acao-reacao",
+            "D": "Atuam em corpos diferentes",
+            "E": "Nao obedecem a 3ª Lei de Newton"
+          },
+          "correta": "C",
+          "explicacao": "Peso e normal atuam no mesmo corpo (livro) e se equilibram. Par acao-reacao deve atuar em corpos diferentes. A reacao ao peso e a forca que o livro exerce na Terra."
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Um foguete se desloca no espaco expelindo gases. O principio fisico envolvido e:",
+          "alternativas": {
+            "A": "Primeira Lei de Newton",
+            "B": "Segunda Lei de Newton apenas",
+            "C": "Terceira Lei de Newton",
+            "D": "Lei da Gravitacao Universal",
+            "E": "Principio de Arquimedes"
+          },
+          "correta": "C",
+          "explicacao": "Foguete expele gases para tras (acao), gases empurram foguete para frente (reacao). Exemplo classico da 3ª Lei."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Atrito Estatico e Cinetico",
+      "resumo": "Forca de atrito se opoe ao movimento ou tendencia de movimento. Atrito estatico impede inicio do movimento; atrito cinetico atua durante o movimento. Depende da natureza das superficies.",
+      "topicos": [
+        "Atrito estatico (f_e): impede inicio do deslizamento. f_e ≤ μ_e⋅N (maximo quando iminente)",
+        "Atrito cinetico (f_c): atua durante o movimento. f_c = μ_c⋅N (sempre constante)",
+        "Coeficiente de atrito (μ): depende das superficies em contato. Adimensional (sem unidade)",
+        "Relacao: μ_e > μ_c (atrito estatico maior que cinetico)",
+        "Forca normal (N): perpendicular a superficie de contato"
+      ],
+      "exemplos": [
+        "Bloco de 10 kg em superficie horizontal (μ_e=0,4): f_max = 0,4(100) = 40 N. Forca < 40 N nao move o bloco",
+        "Mesmo bloco em movimento (μ_c=0,3): f_c = 0,3(100) = 30 N sempre",
+        "Carro freando: atrito entre pneu e asfalto. Superficie molhada diminui μ, aumentando distancia de freagem"
+      ],
+      "formula": "f_e ≤ μ_e⋅N (estatico); f_c = μ_c⋅N (cinetico); N = P (horizontal)",
+      "dicas": [
+        "Atrito estatico varia de 0 ate f_max; atrito cinetico e constante",
+        "Em plano horizontal: Normal = Peso. Em plano inclinado: Normal = P⋅cos(θ)",
+        "Maior μ → maior atrito (mais dificil deslizar)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Um bloco de 20 kg esta em repouso sobre superficie horizontal. O coeficiente de atrito estatico e 0,5. Qual a forca horizontal minima para iniciar o movimento? (g = 10 m/s²)",
+          "alternativas": {
+            "A": "10 N",
+            "B": "50 N",
+            "C": "100 N",
+            "D": "200 N",
+            "E": "400 N"
+          },
+          "correta": "C",
+          "explicacao": "Normal = Peso = 20 × 10 = 200 N. Atrito maximo = μ_e × N = 0,5 × 200 = 100 N. Forca minima para vencer atrito = 100 N"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Um bloco desliza sobre superficie horizontal com coeficiente de atrito cinetico 0,2. Se a massa do bloco e 15 kg, qual a forca de atrito durante o movimento? (g = 10 m/s²)",
+          "alternativas": {
+            "A": "3 N",
+            "B": "15 N",
+            "C": "30 N",
+            "D": "75 N",
+            "E": "150 N"
+          },
+          "correta": "C",
+          "explicacao": "Normal = Peso = 15 × 10 = 150 N. Atrito cinetico = μ_c × N = 0,2 × 150 = 30 N"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Qual afirmacao e correta sobre atrito?",
+          "alternativas": {
+            "A": "Atrito cinetico e sempre maior que estatico",
+            "B": "Atrito independe da forca normal",
+            "C": "Atrito estatico pode variar de zero ate um valor maximo",
+            "D": "Atrito sempre facilita o movimento",
+            "E": "Coeficiente de atrito tem unidade Newton"
+          },
+          "correta": "C",
+          "explicacao": "Atrito estatico varia desde zero (quando nao ha tentativa de movimento) ate f_max = μ_e⋅N (quando movimento e iminente)."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Planos Inclinados e Sistemas com Polias",
+      "resumo": "Aplicacoes das Leis de Newton em planos inclinados e sistemas com polias. Decomposicao de forcas, tracao em cordas e analise de sistemas compostos.",
+      "topicos": [
+        "Plano inclinado: decompor peso em P_paralelo = P⋅sen(θ) e P_perpendicular = P⋅cos(θ)",
+        "Normal em plano inclinado: N = P⋅cos(θ)",
+        "Tracao em cordas: forca transmitida por cordas ideais (inextensivel e massa desprezivel)",
+        "Polias ideais: mudam direcao da forca, nao alteram intensidade (polia fixa) ou multiplicam forca (polia movel)",
+        "Sistemas conectados: mesma aceleracao, aplicar 2ª Lei para cada corpo"
+      ],
+      "exemplos": [
+        "Bloco 10 kg em plano 30°: P_par = 100⋅sen(30°) = 50 N (desce), P_perp = 100⋅cos(30°) = 86,6 N",
+        "Sistema: bloco A (5 kg) conectado por corda a bloco B (3 kg) suspenso. P_B puxa: a = (30-0)/(5+3) = 3,75 m/s²",
+        "Polia fixa: forca aplicada = peso. Polia movel: forca aplicada = peso/2"
+      ],
+      "formula": "P_∥ = P⋅sen(θ); P_⊥ = P⋅cos(θ); N = P⋅cos(θ); F = (m_total)⋅a",
+      "dicas": [
+        "Sempre decomponha peso em componentes paralela e perpendicular ao plano",
+        "Em sistemas conectados, aceleracao e a mesma para todos os corpos",
+        "Tracao e igual em todos os pontos de uma corda ideal"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Um bloco de 20 kg repousa em plano inclinado de 30° sem atrito. Qual a componente do peso paralela ao plano? (g = 10 m/s², sen30° = 0,5)",
+          "alternativas": {
+            "A": "50 N",
+            "B": "100 N",
+            "C": "150 N",
+            "D": "173 N",
+            "E": "200 N"
+          },
+          "correta": "B",
+          "explicacao": "Peso = 20 × 10 = 200 N. Componente paralela = P⋅sen(30°) = 200 × 0,5 = 100 N"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Dois blocos A (4 kg) e B (6 kg) estao conectados por corda ideal sobre superficie horizontal sem atrito. Uma forca horizontal de 50 N e aplicada em A. Qual a aceleracao do sistema?",
+          "alternativas": {
+            "A": "2,5 m/s²",
+            "B": "5 m/s²",
+            "C": "7,5 m/s²",
+            "D": "10 m/s²",
+            "E": "12,5 m/s²"
+          },
+          "correta": "B",
+          "explicacao": "Massa total = 4 + 6 = 10 kg. Aceleracao = F/m_total = 50/10 = 5 m/s²"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Um bloco de massa m desce livremente (sem atrito) um plano inclinado de angulo θ. Qual sua aceleracao?",
+          "alternativas": {
+            "A": "g",
+            "B": "g⋅sen(θ)",
+            "C": "g⋅cos(θ)",
+            "D": "g⋅tg(θ)",
+            "E": "zero"
+          },
+          "correta": "B",
+          "explicacao": "Forca resultante = componente paralela do peso = mg⋅sen(θ). Aceleracao = F/m = g⋅sen(θ)"
+        }
+      ]
+    }
+  ]
+}

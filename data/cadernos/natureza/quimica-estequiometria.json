@@ -1,0 +1,318 @@
+{
+  "id": "quimica-estequiometria",
+  "titulo": "Estequiometria",
+  "descricao": "Aprenda a realizar cálculos químicos envolvendo mol, massa molar, rendimento de reações e reagente limitante",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Conceito de Mol",
+      "topicos": [
+        {
+          "titulo": "Definição de Mol",
+          "conteudo": "Mol é a quantidade de matéria que contém 6,02 × 10²³ entidades elementares (átomos, moléculas, íons). É a constante de Avogadro (Nₐ). 1 mol de qualquer substância contém sempre o mesmo número de partículas."
+        },
+        {
+          "titulo": "Massa Molar",
+          "conteudo": "Massa molar (M): massa de 1 mol de substância, expressa em g/mol. Numericamente igual à massa atômica/molecular em u. Exemplo: C = 12 u → M(C) = 12 g/mol; H₂O = 18 u → M(H₂O) = 18 g/mol."
+        },
+        {
+          "titulo": "Relações Fundamentais",
+          "conteudo": "n = m/M (número de mols = massa/massa molar)\nn = N/Nₐ (número de mols = número de partículas/Avogadro)\nV = n × 22,4 L (volume molar de gás na CNTP)\n1 mol de gás ocupa 22,4 L a 0°C e 1 atm"
+        },
+        {
+          "titulo": "Composição Centesimal",
+          "conteudo": "Percentual em massa de cada elemento no composto:\n% elemento = (massa do elemento / massa total) × 100\nSoma das porcentagens = 100%. Usado para determinar fórmulas empíricas e moleculares."
+        }
+      ],
+      "exemplos": [
+        "1 mol de H₂O = 18g = 6,02×10²³ moléculas = 22,4L (vapor, CNTP)",
+        "0,5 mol de NaCl = 29,25g = 3,01×10²³ unidades fórmula",
+        "32g de O₂ = 1 mol = 6,02×10²³ moléculas = 22,4L (CNTP)",
+        "Composição H₂O: %H = 2/18 × 100 = 11,1%; %O = 88,9%"
+      ],
+      "dicas": [
+        "Decore: Nₐ = 6,02 × 10²³ e volume molar = 22,4 L (CNTP)",
+        "Massa molar = soma das massas atômicas dos elementos",
+        "CNTP: 0°C (273K) e 1 atm - condições padrão para gases"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Quantas moléculas estão presentes em 90g de água (H₂O)? (Massas atômicas: H=1, O=16)",
+          "alternativas": [
+            "3,01 × 10²³",
+            "6,02 × 10²³",
+            "1,20 × 10²⁴",
+            "3,01 × 10²⁴",
+            "9,03 × 10²³"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "M(H₂O) = 18 g/mol. n = 90/18 = 5 mol. Número de moléculas = 5 × 6,02×10²³ = 3,01×10²⁴ moléculas."
+        },
+        {
+          "enunciado": "Qual o volume ocupado por 128g de O₂ nas CNTP? (O=16)",
+          "alternativas": [
+            "22,4 L",
+            "44,8 L",
+            "67,2 L",
+            "89,6 L",
+            "112 L"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "M(O₂) = 32 g/mol. n = 128/32 = 4 mol. V = 4 × 22,4 = 89,6 L (cada mol de gás ocupa 22,4L na CNTP)."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Balanceamento de Equações",
+      "topicos": [
+        {
+          "titulo": "Lei da Conservação da Massa",
+          "conteudo": "Lei de Lavoisier: 'Na natureza nada se cria, nada se perde, tudo se transforma'. Em uma reação química, a massa total dos reagentes = massa total dos produtos. O número de átomos de cada elemento é conservado."
+        },
+        {
+          "titulo": "Método das Tentativas",
+          "conteudo": "1) Balancear elementos que aparecem em menos substâncias; 2) Balancear metais, depois ametais, por último H e O; 3) Se necessário, usar frações e multiplicar tudo por denominador comum; 4) Verificar se todos os elementos estão balanceados."
+        },
+        {
+          "titulo": "Coeficientes Estequiométricos",
+          "conteudo": "Números que precedem as fórmulas químicas e indicam a proporção em mols. Representam a proporção molecular da reação. Exemplo: 2H₂ + O₂ → 2H₂O significa 2 mol H₂ reage com 1 mol O₂ produzindo 2 mol H₂O."
+        },
+        {
+          "titulo": "Casos Especiais",
+          "conteudo": "Reações de combustão: começar pelo combustível. Reações com O₂: balancear O₂ por último. Reações iônicas: balancear carga além da massa. Reações redox: balancear elétrons transferidos."
+        }
+      ],
+      "exemplos": [
+        "CH₄ + 2O₂ → CO₂ + 2H₂O (combustão do metano)",
+        "N₂ + 3H₂ → 2NH₃ (síntese da amônia)",
+        "2Al + 3CuSO₄ → Al₂(SO₄)₃ + 3Cu (deslocamento)",
+        "CaCO₃ → CaO + CO₂ (decomposição térmica)"
+      ],
+      "dicas": [
+        "Sempre verificar C, H e O por último",
+        "Coeficientes inteiros e menores possíveis",
+        "No ENEM: balanceamento geralmente é dado, foque nos cálculos"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Qual a soma dos coeficientes da equação balanceada? C₃H₈ + O₂ → CO₂ + H₂O",
+          "alternativas": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O. Coeficientes: 1+5+3+4 = 13. Balanceamento: 3C, 8H (4 H₂O), 10O (5 O₂ = 3×2 + 4×1)."
+        },
+        {
+          "enunciado": "Na reação N₂ + H₂ → NH₃, após balanceamento, a proporção molar de N₂:H₂:NH₃ é:",
+          "alternativas": [
+            "1:1:1",
+            "1:2:2",
+            "1:3:2",
+            "2:3:2",
+            "1:3:1"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "N₂ + 3H₂ → 2NH₃. A proporção em mols é 1:3:2 (1 mol de N₂ reage com 3 mols de H₂ produzindo 2 mols de NH₃)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Cálculos Estequiométricos",
+      "topicos": [
+        {
+          "titulo": "Proporção entre Reagentes e Produtos",
+          "conteudo": "Os coeficientes estequiométricos indicam a proporção em mols, massa, volume (gases) e moléculas. Use regra de três para calcular quantidades. Sempre baseie-se na equação balanceada."
+        },
+        {
+          "titulo": "Passo a Passo dos Cálculos",
+          "conteudo": "1) Balancear a equação; 2) Identificar dados e o que se pede; 3) Converter grandezas em mols; 4) Usar proporção estequiométrica (regra de três); 5) Converter a resposta para a unidade pedida."
+        },
+        {
+          "titulo": "Relações Massa-Massa",
+          "conteudo": "Calcular massa de produto a partir de massa de reagente ou vice-versa. Sempre passar por número de mols: massa → mols → proporção → mols → massa."
+        },
+        {
+          "titulo": "Relações Massa-Volume",
+          "conteudo": "Envolvem gases na CNTP. Usar volume molar (22,4 L/mol). Massa → mols → proporção → mols → volume (×22,4). Cuidado com condições diferentes de CNTP."
+        }
+      ],
+      "exemplos": [
+        "2H₂ + O₂ → 2H₂O: 4g H₂ + 32g O₂ → 36g H₂O",
+        "N₂ + 3H₂ → 2NH₃: 28g N₂ + 6g H₂ → 34g NH₃",
+        "CaCO₃ → CaO + CO₂: 100g CaCO₃ → 56g CaO + 44g CO₂",
+        "CH₄ + 2O₂ → CO₂ + 2H₂O: 16g CH₄ produz 22,4L CO₂ (CNTP)"
+      ],
+      "dicas": [
+        "Organize os dados em uma tabela: dado → mol → proporção → mol → resposta",
+        "Sempre use massas molares corretas",
+        "Confira se as unidades estão consistentes"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Na reação 2Al + 3CuSO₄ → Al₂(SO₄)₃ + 3Cu, quantos gramas de Cu são produzidos a partir de 54g de Al? (Al=27, Cu=64)",
+          "alternativas": [
+            "64g",
+            "128g",
+            "192g",
+            "256g",
+            "320g"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "n(Al) = 54/27 = 2 mol. Proporção: 2 Al : 3 Cu. Se 2 mol Al → 3 mol Cu, então 2 mol Al → 3 mol Cu = 3×64 = 192g de Cu."
+        },
+        {
+          "enunciado": "Qual o volume de CO₂ (CNTP) produzido na combustão completa de 30g de C₃H₈? (C=12, H=1)\nC₃H₈ + 5O₂ → 3CO₂ + 4H₂O",
+          "alternativas": [
+            "22,4 L",
+            "44,8 L",
+            "45,6 L",
+            "67,2 L",
+            "89,6 L"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "M(C₃H₈) = 44 g/mol. n = 30/44 = 0,682 mol. Proporção: 1 C₃H₈ : 3 CO₂. n(CO₂) = 0,682×3 = 2,046 mol. V = 2,046×22,4 ≈ 45,6 L."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Reagente Limitante e Excesso",
+      "topicos": [
+        {
+          "titulo": "Conceito de Reagente Limitante",
+          "conteudo": "Reagente limitante é aquele que é consumido completamente na reação, limitando a quantidade de produto formado. O reagente em excesso sobra após o término da reação. A quantidade de produto depende APENAS do limitante."
+        },
+        {
+          "titulo": "Identificando o Limitante",
+          "conteudo": "Método 1: Dividir a quantidade (em mol) de cada reagente pelo seu coeficiente estequiométrico. O menor valor indica o limitante. Método 2: Calcular quanto cada reagente produziria sozinho; o que produz menos é o limitante."
+        },
+        {
+          "titulo": "Cálculo do Excesso",
+          "conteudo": "1) Identificar o limitante; 2) Calcular quanto do reagente em excesso é consumido; 3) Subtrair a quantidade consumida da quantidade inicial. O resultado é o excesso que sobra."
+        },
+        {
+          "titulo": "Importância Prática",
+          "conteudo": "Na indústria, usa-se excesso de reagente barato para garantir consumo completo do reagente caro. Minimiza desperdício de matéria-prima valiosa. Importante para otimização de processos e custos."
+        }
+      ],
+      "exemplos": [
+        "2H₂ + O₂ → 2H₂O com 6g H₂ e 24g O₂:\nn(H₂)=3mol, n(O₂)=0,75mol\n3/2=1,5 vs 0,75/1=0,75 → O₂ é limitante",
+        "N₂ + 3H₂ → 2NH₃ com 1mol N₂ e 2mol H₂:\n1/1=1 vs 2/3=0,67 → H₂ é limitante",
+        "Se 4mol H₂ reage com 1mol O₂, e temos 6mol H₂ e 2mol O₂:\nH₂ limitante (precisaria de 6/2=3mol O₂, mas só tem 2mol)"
+      ],
+      "dicas": [
+        "Sempre identifique o limitante ANTES de calcular produtos",
+        "Excesso não participa dos cálculos de produto",
+        "No ENEM: questões costumam dar quantidades não proporcionais"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Fazem-se reagir 4 mol de N₂ com 9 mol de H₂ segundo N₂ + 3H₂ → 2NH₃. Quantos mols de NH₃ são formados?",
+          "alternativas": [
+            "4 mol",
+            "6 mol",
+            "8 mol",
+            "9 mol",
+            "12 mol"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Verificando: 4/1=4 vs 9/3=3. H₂ é limitante (menor razão). 9 mol H₂ × (2 NH₃/3 H₂) = 6 mol NH₃."
+        },
+        {
+          "enunciado": "Na reação 2Al + 3Cl₂ → 2AlCl₃, misturam-se 2mol de Al com 4mol de Cl₂. Qual reagente está em excesso e quanto sobra?",
+          "alternativas": [
+            "Al, 1 mol",
+            "Cl₂, 1 mol",
+            "Al, 0,5 mol",
+            "Cl₂, 0,5 mol",
+            "Não há excesso"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Razões: 2/2=1 vs 4/3=1,33. Al é limitante. 2 mol Al consome 3 mol Cl₂. Excesso de Cl₂ = 4-3 = 1 mol."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Rendimento e Pureza",
+      "topicos": [
+        {
+          "titulo": "Rendimento Teórico vs Real",
+          "conteudo": "Rendimento teórico: quantidade máxima de produto que pode ser formada (calculada pela estequiometria). Rendimento real: quantidade efetivamente obtida no laboratório/indústria. Sempre: rendimento real ≤ rendimento teórico."
+        },
+        {
+          "titulo": "Cálculo de Rendimento Percentual",
+          "conteudo": "Rendimento (η) = (quantidade real / quantidade teórica) × 100%\nReações raramente têm 100% de rendimento devido a: reações reversíveis, reações paralelas, perdas no processo, impurezas."
+        },
+        {
+          "titulo": "Pureza dos Reagentes",
+          "conteudo": "Pureza = (massa da substância pura / massa total da amostra) × 100%\nMassa pura = massa total × (pureza/100)\nAo calcular, usar apenas a massa da substância pura nos cálculos estequiométricos."
+        },
+        {
+          "titulo": "Aplicações Práticas",
+          "conteudo": "Indústria busca maximizar rendimento (economia). Fatores: temperatura, pressão, catalisadores, tempo de reação. Pureza afeta custo: reagentes muito puros são mais caros. Balanço entre pureza necessária e viabilidade econômica."
+        }
+      ],
+      "exemplos": [
+        "Reação com rendimento 80%: se teórico = 50g, real = 40g",
+        "Calcário com 80% de CaCO₃: 100g de amostra = 80g de CaCO₃ puro",
+        "Síntese de NH₃: rendimento industrial ~15-20% (reação reversível)",
+        "Se esperava 100g mas obteve 85g: rendimento = 85%"
+      ],
+      "dicas": [
+        "Rendimento sempre ≤ 100% (se > 100%, erro experimental)",
+        "Sempre calcule com massa pura, depois aplique rendimento",
+        "ENEM adora questões misturando pureza E rendimento"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Uma amostra de 200g de calcário com 90% de pureza em CaCO₃ foi decomposta: CaCO₃ → CaO + CO₂. Se o rendimento foi 80%, qual a massa de CaO obtida? (Ca=40, C=12, O=16)",
+          "alternativas": [
+            "80,64g",
+            "90,72g",
+            "100,8g",
+            "112,0g",
+            "126,0g"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Massa pura CaCO₃ = 200×0,9 = 180g = 1,8mol. Teórico: 1,8 mol CaO = 1,8×56 = 100,8g. Real: 100,8×0,8 = 80,64g."
+        },
+        {
+          "enunciado": "Uma reação produziu 45g de produto quando o cálculo teórico previa 60g. Qual o rendimento percentual?",
+          "alternativas": [
+            "60%",
+            "65%",
+            "70%",
+            "75%",
+            "80%"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Rendimento = (45/60) × 100% = 0,75 × 100% = 75%. O rendimento real foi 75% do teórico esperado."
+        },
+        {
+          "enunciado": "Se 50g de zinco impuro (80% de pureza) reagem completamente com HCl, a massa de zinco puro que reagiu foi:",
+          "alternativas": [
+            "10g",
+            "20g",
+            "30g",
+            "40g",
+            "50g"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Massa pura = massa total × pureza = 50g × 0,80 = 40g de Zn puro. Apenas a fração pura reage quimicamente."
+        }
+      ]
+    }
+  ]
+}

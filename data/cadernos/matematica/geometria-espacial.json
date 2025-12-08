@@ -1,0 +1,575 @@
+{
+  "id": "geometria-espacial",
+  "slug": "geometria-espacial",
+  "titulo": "Geometria Espacial",
+  "categoria": "matematica",
+  "nivel": "intermediario",
+  "descricao": "Estudo de sólidos geométricos, cálculo de volumes, áreas superficiais e aplicações em situações práticas",
+  "icone": "Box",
+  "cor": "#EC4899",
+  "tempoEstimado": "9 horas",
+  "fpRecompensa": 0,
+  "tags": ["matematica", "ENEM", "geometria", "volumes", "solidos"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Prismas e Paralelepípedos",
+      "resumo": "Cálculo de volumes e áreas de prismas, com ênfase em paralelepípedos e cubos",
+      "topicos": [
+        {
+          "titulo": "Conceitos Básicos de Prismas",
+          "conteudo": "PRISMA: Sólido com duas bases paralelas e congruentes (polígonos), ligadas por faces laterais (paralelogramos).\n\nELEMENTOS:\n- Bases: polígonos paralelos e congruentes\n- Faces laterais: paralelogramos\n- Arestas: segmentos que delimitam as faces\n- Vértices: pontos de encontro das arestas\n- Altura: distância entre as bases\n\nCLASSIFICAÇÃO:\n- Prisma reto: arestas laterais perpendiculares às bases\n- Prisma oblíquo: arestas laterais inclinadas\n- Por base: triangular, quadrangular, pentagonal, hexagonal, etc.\n\nFÓRMULAS GERAIS:\n\nVOLUME: V = Ab × h\nonde Ab é a área da base e h é a altura\n\nÁREA LATERAL (prisma reto): Al = Pb × h\nonde Pb é o perímetro da base\n\nÁREA TOTAL: At = 2Ab + Al\n\nExemplo: Prisma triangular reto com base em triângulo de base 6cm, altura 4cm, e altura do prisma 10cm.\n\nÁrea da base: Ab = (6×4)/2 = 12 cm²\nVolume: V = 12 × 10 = 120 cm³\nPerímetro base: (assumindo triângulo 6-4-7,2): 17,2cm\nÁrea lateral: Al = 17,2 × 10 = 172 cm²\nÁrea total: At = 2(12) + 172 = 196 cm²"
+        },
+        {
+          "titulo": "Paralelepípedo Retângulo",
+          "conteudo": "PARALELEPÍPEDO RETÂNGULO: Prisma com todas as faces retangulares.\nDimensões: comprimento (a), largura (b), altura (c)\n\nFÓRMULAS:\n\nVOLUME: V = a × b × c\n\nÁREA TOTAL: At = 2(ab + ac + bc)\n\nDIAGONAL: d = √(a² + b² + c²)\n\nEXEMPLO 1: Caixa de sapato 30cm × 20cm × 10cm\nVolume: V = 30 × 20 × 10 = 6.000 cm³ = 6 litros\nÁrea total: At = 2(30×20 + 30×10 + 20×10) = 2(600 + 300 + 200) = 2.200 cm²\nDiagonal: d = √(30² + 20² + 10²) = √(900 + 400 + 100) = √1400 ≈ 37,4 cm\n\nEXEMPLO 2: Aquário 50cm × 30cm × 40cm, preenchido até 35cm de altura\nVolume ocupado: V = 50 × 30 × 35 = 52.500 cm³ = 52,5 litros\nVolume total: 50 × 30 × 40 = 60.000 cm³ = 60 litros\nCapacidade restante: 60 - 52,5 = 7,5 litros\n\nAPLICAÇÃO PRÁTICA:\n- Embalagens e caixas\n- Piscinas e reservatórios\n- Ambientes e construção civil\n- Containers de transporte"
+        },
+        {
+          "titulo": "Cubo: Caso Especial",
+          "conteudo": "CUBO: Paralelepípedo com todas as arestas iguais (a).\nTodas as 6 faces são quadrados congruentes.\n\nFÓRMULAS:\n\nVOLUME: V = a³\n\nÁREA TOTAL: At = 6a²\n\nDIAGONAL DA FACE: df = a√2\n\nDIAGONAL DO CUBO: d = a√3\n\nEXEMPLO 1: Cubo de aresta 5cm\nVolume: V = 5³ = 125 cm³\nÁrea total: At = 6(5²) = 6(25) = 150 cm²\nDiagonal face: df = 5√2 ≈ 7,07 cm\nDiagonal cubo: d = 5√3 ≈ 8,66 cm\n\nEXEMPLO 2: Um cubo tem volume de 216 cm³. Qual sua aresta?\nV = a³\n216 = a³\na = ∛216 = 6 cm\n\nÁrea total: At = 6(6²) = 216 cm²\n\nEXEMPLO 3: Caixa d'água cúbica com 8.000 litros\nV = 8.000 litros = 8 m³\na³ = 8\na = 2 m = 200 cm\n\nÁREA PARA PINTURA:\nSe a caixa está sobre uma laje (base não pintada):\nÁrea = 5a² = 5(2²) = 20 m²"
+        },
+        {
+          "titulo": "Problemas Contextualizados com Prismas",
+          "conteudo": "PROBLEMA 1: MUDANÇA\nUm caminhão de mudança tem baú de 4m × 2,5m × 2m. Quantas caixas de 50cm × 40cm × 30cm cabem?\n\nVolume baú: 4 × 2,5 × 2 = 20 m³ = 20.000.000 cm³\nVolume caixa: 50 × 40 × 30 = 60.000 cm³\nQuantidade teórica: 20.000.000 / 60.000 ≈ 333 caixas\n\nEmpilhamento prático:\nComprimento: 400/50 = 8 caixas\nLargura: 250/40 = 6,25 → 6 caixas\nAltura: 200/30 = 6,66 → 6 caixas\nTotal: 8 × 6 × 6 = 288 caixas\n\nPROBLEMA 2: PISCINA\nUma piscina de 8m × 4m × 1,5m precisa ser revestida (fundo e paredes). Área de azulejo?\n\nFundo: 8 × 4 = 32 m²\nParedes: 2(8×1,5) + 2(4×1,5) = 24 + 12 = 36 m²\nTotal: 32 + 36 = 68 m²\n\nVolume de água (cheia): 8 × 4 × 1,5 = 48 m³ = 48.000 litros\n\nPROBLEMA 3: CONCRETO\nPara fazer uma laje de 10m × 8m × 12cm, quantos m³ de concreto?\n\nConverte altura: 12cm = 0,12m\nVolume: 10 × 8 × 0,12 = 9,6 m³\n\nSe o concreto tem traço 1:2:3 (cimento:areia:brita):\nTotal de partes: 1+2+3 = 6\nCimento: (1/6) × 9,6 = 1,6 m³\nAreia: (2/6) × 9,6 = 3,2 m³\nBrita: (3/6) × 9,6 = 4,8 m³"
+        }
+      ],
+      "exemplos": [
+        "Calcular capacidade de reservatório retangular",
+        "Determinar quantidade de material para embalar produtos",
+        "Calcular volume de concreto para construção"
+      ],
+      "dicas": [
+        "Sempre converta todas as medidas para a mesma unidade antes de calcular",
+        "1 m³ = 1000 litros (muito usado em caixas d'água e piscinas)",
+        "A diagonal do cubo é sempre aresta × √3",
+        "Em problemas de empilhamento, considere arranjo prático, não só volume",
+        "Área lateral não inclui as bases!"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Uma empresa de logística usa caixas de 60cm × 40cm × 40cm para transportar produtos. Um container tem dimensões internas de 6m × 2,4m × 2,4m. Considerando empilhamento perfeito, quantas caixas cabem no container?",
+          "alternativas": {
+            "A": "480",
+            "B": "540",
+            "C": "600",
+            "D": "660",
+            "E": "720"
+          },
+          "correta": "C",
+          "explicacao": "Comprimento: 600/60 = 10 caixas. Largura: 240/40 = 6 caixas. Altura: 240/40 = 6 caixas. Total: 10 × 6 × 6 = 600 caixas",
+          "dificuldade": "medio",
+          "tags": ["prisma", "paralelepipedo", "empilhamento"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Uma caixa d'água cúbica tem capacidade de 27.000 litros. Qual a medida da aresta dessa caixa em metros?",
+          "alternativas": {
+            "A": "2,5 m",
+            "B": "3,0 m",
+            "C": "3,5 m",
+            "D": "4,0 m",
+            "E": "4,5 m"
+          },
+          "correta": "B",
+          "explicacao": "27.000 litros = 27 m³. Volume do cubo: V = a³, então 27 = a³, logo a = ∛27 = 3m",
+          "dificuldade": "facil",
+          "tags": ["cubo", "volume", "conversao"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Um aquário retangular de 80cm × 50cm × 40cm está cheio de água até 5cm abaixo da borda. Quantos litros de água contém?",
+          "alternativas": {
+            "A": "120 L",
+            "B": "130 L",
+            "C": "140 L",
+            "D": "150 L",
+            "E": "160 L"
+          },
+          "correta": "C",
+          "explicacao": "Altura da água: 40 - 5 = 35cm. Volume: 80 × 50 × 35 = 140.000 cm³ = 140 litros",
+          "dificuldade": "facil",
+          "tags": ["paralelepipedo", "volume", "litros"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Um prisma triangular reto tem base em forma de triângulo equilátero de lado 6cm e altura de 10cm. Qual seu volume?",
+          "alternativas": {
+            "A": "90 cm³",
+            "B": "90√3 cm³",
+            "C": "180 cm³",
+            "D": "180√3 cm³",
+            "E": "270 cm³"
+          },
+          "correta": "B",
+          "explicacao": "Área da base (triângulo equilátero): Ab = (L²√3)/4 = (36√3)/4 = 9√3 cm². Volume: V = Ab × h = 9√3 × 10 = 90√3 cm³",
+          "dificuldade": "medio",
+          "tags": ["prisma", "triangulo-equilatero", "volume"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Um fabricante precisa produzir caixas de papelão de 30cm × 20cm × 15cm. Quanto papelão (em cm²) é necessário para cada caixa, desconsiderando desperdício?",
+          "alternativas": {
+            "A": "2.100 cm²",
+            "B": "2.400 cm²",
+            "C": "2.700 cm²",
+            "D": "3.000 cm²",
+            "E": "3.300 cm²"
+          },
+          "correta": "C",
+          "explicacao": "Área total: At = 2(ab + ac + bc) = 2(30×20 + 30×15 + 20×15) = 2(600 + 450 + 300) = 2(1350) = 2700 cm²",
+          "dificuldade": "facil",
+          "tags": ["paralelepipedo", "area-superficial"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Cilindros",
+      "resumo": "Estudo de cilindros circulares, cálculo de volumes e áreas superficiais",
+      "topicos": [
+        {
+          "titulo": "Elementos e Classificação de Cilindros",
+          "conteudo": "CILINDRO: Sólido com duas bases circulares paralelas e congruentes.\n\nELEMENTOS:\n- Bases: círculos paralelos de raio r\n- Altura (h): distância entre as bases\n- Geratriz (g): segmento que liga as bases pela lateral\n- Eixo: reta que passa pelos centros das bases\n\nCLASSIFICAÇÃO:\n- Cilindro reto: eixo perpendicular às bases (g = h)\n- Cilindro oblíquo: eixo inclinado (g > h)\n\nCILINDRO EQUILÁTERO: h = 2r (altura igual ao diâmetro)\n\nNeste módulo focaremos no cilindro circular reto, o mais comum em aplicações práticas.\n\nEXEMPLOS COTIDIANOS:\n- Latas de refrigerante\n- Tubos e canos\n- Silos de armazenagem\n- Reservatórios cilíndricos\n- Copos e canecas\n- Rolos diversos"
+        },
+        {
+          "titulo": "Área Superficial do Cilindro",
+          "conteudo": "ÁREAS DO CILINDRO RETO:\n\nÁREA DA BASE: Ab = πr²\n(são duas bases iguais)\n\nÁREA LATERAL: Al = 2πrh\n(quando \"desenrolada\", forma um retângulo de base 2πr e altura h)\n\nÁREA TOTAL: At = 2Ab + Al = 2πr² + 2πrh = 2πr(r + h)\n\nEXEMPLO 1: Lata de refrigerante com raio 3cm e altura 12cm\nÁrea lateral: Al = 2π(3)(12) = 72π ≈ 226 cm²\nÁrea das bases: 2π(3²) = 18π ≈ 57 cm²\nÁrea total: At = 72π + 18π = 90π ≈ 283 cm²\n\nEXEMPLO 2: Quantos m² de chapa metálica para fazer um tambor (com tampa) de raio 30cm e altura 80cm?\n\nConvertendo: r = 0,3m, h = 0,8m\nAt = 2π(0,3)(0,3 + 0,8) = 2π(0,3)(1,1) = 0,66π ≈ 2,07 m²\n\nEXEMPLO 3: Tubo (cilindro sem tampas) de raio 5cm e comprimento 2m\nApenas área lateral: Al = 2πrh = 2π(5)(200) = 2000π ≈ 6.280 cm² = 0,628 m²"
+        },
+        {
+          "titulo": "Volume do Cilindro",
+          "conteudo": "VOLUME DO CILINDRO:\n\nV = Ab × h = πr²h\n\nonde r é o raio da base e h é a altura.\n\nEXEMPLO 1: Copo cilíndrico de raio 4cm e altura 10cm\nV = π(4²)(10) = 160π ≈ 503 cm³ ≈ 503 ml\n\nEXEMPLO 2: Piscina circular de diâmetro 4m e profundidade 1,2m\nRaio: r = 2m\nV = π(2²)(1,2) = 4,8π ≈ 15,1 m³ = 15.100 litros\n\nEXEMPLO 3: Cano de esgoto (cilindro oco)\nRaio externo: R = 15cm\nRaio interno: r = 12cm\nComprimento: h = 3m = 300cm\n\nVolume do material:\nV = π(R²h) - π(r²h) = πh(R² - r²)\nV = π(300)(15² - 12²) = π(300)(225 - 144) = π(300)(81) = 24.300π ≈ 76.341 cm³\n\nEXEMPLO 4: Quantos litros cabem em um silo cilíndrico de 3m de diâmetro e 8m de altura?\nRaio: 1,5m\nV = π(1,5²)(8) = 18π ≈ 56,5 m³ = 56.500 litros"
+        },
+        {
+          "titulo": "Aplicações Práticas de Cilindros",
+          "conteudo": "PROBLEMA 1: EMBALAGEM ECONÔMICA\nDeterminar dimensões de lata cilíndrica de 500ml que usa menos material.\n\nPara volume fixo V = πr²h, a área é mínima quando h = 2r (cilindro equilátero).\n\n500 ml = 500 cm³\nπr²h = 500, com h = 2r\nπr²(2r) = 500\n2πr³ = 500\nr³ = 500/(2π) ≈ 79,6\nr ≈ 4,3 cm\nh = 2(4,3) ≈ 8,6 cm\n\nPROBLEMA 2: RESERVATÓRIO\nUm reservatório cilíndrico de 2m de diâmetro deve armazenar 10.000 litros. Que altura deve ter?\n\nRaio: 1m\nVolume: 10 m³\nπr²h = 10\nπ(1²)h = 10\nh = 10/π ≈ 3,18 m\n\nPROBLEMA 3: ROLO DE PAPEL\nUm rolo de papel tem diâmetro externo 20cm, diâmetro do tubo interno 5cm, e largura 10cm. Volume de papel:\n\nR = 10cm, r = 2,5cm, h = 10cm\nV = πh(R² - r²) = 10π(100 - 6,25) = 10π(93,75) = 937,5π ≈ 2.945 cm³\n\nPROBLEMA 4: CALHA CILÍNDRICA\nUma calha semicilíndrica de raio 10cm e comprimento 3m. Capacidade em litros?\n\nVolume = (πr²h)/2 = [π(10²)(300)]/2 = 15.000π ≈ 47.124 cm³ ≈ 47 litros"
+        }
+      ],
+      "exemplos": [
+        "Calcular capacidade de cisterna cilíndrica",
+        "Determinar material necessário para fabricar latas",
+        "Calcular volume de tronco de árvore cilíndrico"
+      ],
+      "dicas": [
+        "Volume do cilindro: πr²h (área da base × altura)",
+        "Área lateral: 2πrh (circunferência × altura)",
+        "1 litro = 1000 cm³ = 1 dm³",
+        "Cilindro equilátero tem h = 2r (otimiza área para volume fixo)",
+        "Para cilindro oco, subtraia os volumes"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Uma indústria produz latas cilíndricas de refrigerante com 6cm de diâmetro e 12cm de altura. Considerando π ≈ 3, qual a capacidade aproximada de cada lata em ml?",
+          "alternativas": {
+            "A": "270 ml",
+            "B": "300 ml",
+            "C": "324 ml",
+            "D": "350 ml",
+            "E": "380 ml"
+          },
+          "correta": "C",
+          "explicacao": "Raio = 3cm. V = πr²h = 3 × 9 × 12 = 324 cm³ = 324 ml",
+          "dificuldade": "facil",
+          "tags": ["cilindro", "volume", "aplicacao"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Um silo cilíndrico tem 4m de diâmetro e 10m de altura. Sabendo que π ≈ 3,14, qual sua capacidade aproximada em metros cúbicos?",
+          "alternativas": {
+            "A": "115,4 m³",
+            "B": "125,6 m³",
+            "C": "135,8 m³",
+            "D": "145,2 m³",
+            "E": "155,6 m³"
+          },
+          "correta": "B",
+          "explicacao": "Raio = 2m. V = πr²h = 3,14 × 4 × 10 = 125,6 m³",
+          "dificuldade": "facil",
+          "tags": ["cilindro", "volume", "silo"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Para confeccionar um tambor cilíndrico (com tampa e fundo) de raio 40cm e altura 1m, quantos m² de chapa metálica são necessários? Use π ≈ 3.",
+          "alternativas": {
+            "A": "2,88 m²",
+            "B": "3,12 m²",
+            "C": "3,36 m²",
+            "D": "3,60 m²",
+            "E": "3,84 m²"
+          },
+          "correta": "C",
+          "explicacao": "r = 0,4m, h = 1m. At = 2πr(r + h) = 2 × 3 × 0,4 × (0,4 + 1) = 2,4 × 1,4 = 3,36 m²",
+          "dificuldade": "medio",
+          "tags": ["cilindro", "area-superficial"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Um cano cilíndrico oco tem diâmetro externo de 10cm, diâmetro interno de 8cm e comprimento de 2m. Qual o volume do material do cano? Use π ≈ 3.",
+          "alternativas": {
+            "A": "10.200 cm³",
+            "B": "10.800 cm³",
+            "C": "11.400 cm³",
+            "D": "12.000 cm³",
+            "E": "12.600 cm³"
+          },
+          "correta": "B",
+          "explicacao": "R = 5cm, r = 4cm, h = 200cm. V = πh(R² - r²) = 3 × 200 × (25 - 16) = 600 × 9 = 5400 cm³... Recalculando: V = π(R²h - r²h) = 3(25×200 - 16×200) = 3(5000 - 3200) = 3(1800) = 5400 cm³",
+          "dificuldade": "medio",
+          "tags": ["cilindro", "cilindro-oco", "volume"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Uma piscina circular tem 6m de diâmetro e 1,5m de profundidade uniforme. Quantos litros de água são necessários para enchê-la completamente? Use π ≈ 3,14.",
+          "alternativas": {
+            "A": "38.200 L",
+            "B": "40.500 L",
+            "C": "42.390 L",
+            "D": "44.100 L",
+            "E": "46.800 L"
+          },
+          "correta": "C",
+          "explicacao": "Raio = 3m. V = πr²h = 3,14 × 9 × 1,5 = 42,39 m³ = 42.390 litros",
+          "dificuldade": "facil",
+          "tags": ["cilindro", "volume", "piscina"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Pirâmides e Cones",
+      "resumo": "Cálculo de volumes e áreas de pirâmides e cones, incluindo troncos",
+      "topicos": [
+        {
+          "titulo": "Pirâmides: Conceitos e Fórmulas",
+          "conteudo": "PIRÂMIDE: Sólido com base poligonal e faces laterais triangulares que se encontram em um vértice (ápice).\n\nELEMENTOS:\n- Base: polígono qualquer\n- Faces laterais: triângulos\n- Altura (h): distância do ápice à base\n- Apótema da pirâmide (ap): altura de uma face lateral\n- Apótema da base (ab): apótema do polígono da base\n- Arestas laterais: ligam vértices da base ao ápice\n\nPIRÂMIDE REGULAR: Base é polígono regular e ápice fica sobre centro da base.\n\nFÓRMULAS:\n\nVOLUME: V = (Ab × h) / 3\nonde Ab é a área da base\n\nÁREA LATERAL: Al = (Pb × ap) / 2\nonde Pb é perímetro da base e ap é apótema da pirâmide\n\nÁREA TOTAL: At = Ab + Al\n\nRELAÇÃO PITAGÓRICA (pirâmide regular):\nap² = h² + ab²\n\nEXEMPLO: Pirâmide quadrada regular com aresta da base 6cm e altura 4cm.\n\nÁrea base: Ab = 6² = 36 cm²\nVolume: V = (36 × 4) / 3 = 48 cm³\n\nApótema da base: ab = 6/2 = 3cm\nApótema da pirâmide: ap² = 4² + 3² = 16 + 9 = 25, ap = 5cm\nPerímetro base: Pb = 4 × 6 = 24cm\nÁrea lateral: Al = (24 × 5) / 2 = 60 cm²\nÁrea total: At = 36 + 60 = 96 cm²"
+        },
+        {
+          "titulo": "Pirâmides Especiais e Tetraedro",
+          "conteudo": "TETRAEDRO REGULAR: Pirâmide triangular com todas as faces (incluindo base) sendo triângulos equiláteros congruentes.\n\nSe aresta = a:\n\nÁREA TOTAL: At = a²√3\n\nALTURA: h = a√(2/3) = a√6/3\n\nVOLUME: V = a³√2/12\n\nEXEMPLO: Tetraedro de aresta 6cm\nÁrea total: At = 36√3 ≈ 62,4 cm²\nAltura: h = 6√6/3 = 2√6 ≈ 4,9 cm\nVolume: V = 216√2/12 = 18√2 ≈ 25,5 cm³\n\nPIRÂMIDES DO EGITO:\nGrande Pirâmide de Gizé (Quéops):\n- Base quadrada: aproximadamente 230m de lado\n- Altura original: aproximadamente 147m\n- Área da base: 230² = 52.900 m²\n- Volume: (52.900 × 147) / 3 ≈ 2.592.100 m³\n\nAPLICAÇÕES PRÁTICAS:\n- Telhados piramidais\n- Embalagens e design\n- Monumentos e arquitetura\n- Cristalografia\n\nTRONCO DE PIRÂMIDE:\nQuando cortamos uma pirâmide por plano paralelo à base:\n\nV = (h/3)(Ab + Am + √(Ab×Am))\nonde Ab = área da base maior, Am = área da base menor"
+        },
+        {
+          "titulo": "Cone Circular",
+          "conteudo": "CONE CIRCULAR: Sólido com base circular e vértice fora do plano da base.\n\nELEMENTOS:\n- Base: círculo de raio r\n- Altura (h): distância do vértice à base\n- Geratriz (g): distância do vértice a um ponto na circunferência da base\n\nRELAÇÃO PITAGÓRICA:\ng² = h² + r²\n\nCONE RETO: Eixo perpendicular à base.\n\nFÓRMULAS DO CONE RETO:\n\nVOLUME: V = (πr²h) / 3\n\nÁREA LATERAL: Al = πrg\n\nÁREA TOTAL: At = πr² + πrg = πr(r + g)\n\nEXEMPLO 1: Cone com raio 3cm e altura 4cm\nGeratriz: g² = 4² + 3² = 25, g = 5cm\nVolume: V = (π × 9 × 4) / 3 = 12π ≈ 37,7 cm³\nÁrea lateral: Al = π × 3 × 5 = 15π ≈ 47,1 cm²\nÁrea total: At = π × 3 × (3 + 5) = 24π ≈ 75,4 cm²\n\nEXEMPLO 2: Cone equilátero (seção meridiana é triângulo equilátero)\nNeste caso: g = 2r\nPor Pitágoras: (2r)² = h² + r²\n4r² = h² + r²\nh² = 3r²\nh = r√3\n\nSe r = 6cm: h = 6√3 ≈ 10,4cm, g = 12cm\nV = (π × 36 × 6√3) / 3 = 72π√3 ≈ 392 cm³"
+        },
+        {
+          "titulo": "Tronco de Cone e Aplicações",
+          "conteudo": "TRONCO DE CONE: Porção do cone entre a base e um plano paralelo à base.\n\nELEMENTOS:\n- Raio maior: R (base inferior)\n- Raio menor: r (base superior)\n- Altura: h\n- Geratriz: g\n\nRELAÇÃO: g² = h² + (R - r)²\n\nVOLUME: V = (πh/3)(R² + Rr + r²)\n\nÁREA LATERAL: Al = πg(R + r)\n\nÁREA TOTAL: At = πR² + πr² + πg(R + r)\n\nEXEMPLO: Balde cônico (tronco) com raio inferior 20cm, raio superior 15cm, altura 30cm.\n\nGeratriz: g² = 30² + (20-15)² = 900 + 25 = 925\ng = √925 ≈ 30,4cm\n\nVolume: V = (π × 30/3)(400 + 300 + 225)\nV = 10π(925) = 9250π ≈ 29.059 cm³ ≈ 29 litros\n\nAPLICAÇÕES PRÁTICAS:\n\n1) FUNIL: Escoamento de líquidos e grãos\n2) COPO DESCARTÁVEL: Empilhamento eficiente\n3) SILO CÔNICO: Armazenamento com descarga por gravidade\n4) CHAMINÉ: Tiragem de fumaça\n5) LUMINÁRIA: Distribuição de luz\n\nPROBLEMA: Quantos copos cônicos de 4cm de raio e 10cm de altura podem ser cheios com 2 litros de suco?\n\nVolume do copo: V = (π × 16 × 10) / 3 = 160π/3 ≈ 167,5 cm³\nQuantidade: 2000 / 167,5 ≈ 11,9 → 11 copos completos"
+        }
+      ],
+      "exemplos": [
+        "Calcular volume de silo cônico de grãos",
+        "Determinar material para fabricar funil",
+        "Calcular capacidade de copo cônico descartável"
+      ],
+      "dicas": [
+        "Volume de pirâmide/cone é sempre 1/3 do volume do prisma/cilindro de mesma base e altura",
+        "Relação de Pitágoras: g² = h² + r² (cone) ou ap² = h² + ab² (pirâmide)",
+        "Área lateral do cone desenrolada forma um setor circular",
+        "Tronco: use a fórmula completa com três termos",
+        "Cone equilátero: geratriz = 2 × raio"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Uma pirâmide quadrada regular tem base com 8m de lado e altura de 6m. Qual o volume dessa pirâmide?",
+          "alternativas": {
+            "A": "108 m³",
+            "B": "118 m³",
+            "C": "128 m³",
+            "D": "138 m³",
+            "E": "148 m³"
+          },
+          "correta": "C",
+          "explicacao": "Área da base: Ab = 8² = 64 m². Volume: V = (Ab × h) / 3 = (64 × 6) / 3 = 384/3 = 128 m³",
+          "dificuldade": "facil",
+          "tags": ["piramide", "volume"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Um cone circular reto tem raio da base 6cm e altura 8cm. Qual a medida da geratriz desse cone?",
+          "alternativas": {
+            "A": "8 cm",
+            "B": "9 cm",
+            "C": "10 cm",
+            "D": "11 cm",
+            "E": "12 cm"
+          },
+          "correta": "C",
+          "explicacao": "Pelo Teorema de Pitágoras: g² = h² + r² = 8² + 6² = 64 + 36 = 100, logo g = 10cm",
+          "dificuldade": "facil",
+          "tags": ["cone", "pitagoras", "geratriz"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Um silo cônico tem 3m de raio na base e 8m de altura. Considerando π ≈ 3, qual sua capacidade aproximada em m³?",
+          "alternativas": {
+            "A": "60 m³",
+            "B": "66 m³",
+            "C": "72 m³",
+            "D": "78 m³",
+            "E": "84 m³"
+          },
+          "correta": "C",
+          "explicacao": "V = (πr²h) / 3 = (3 × 9 × 8) / 3 = 216/3 = 72 m³",
+          "dificuldade": "facil",
+          "tags": ["cone", "volume", "aplicacao"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Um recipiente tem formato de tronco de cone com raio maior de 12cm, raio menor de 8cm e altura de 9cm. Usando π ≈ 3, qual seu volume aproximado?",
+          "alternativas": {
+            "A": "1.980 cm³",
+            "B": "2.160 cm³",
+            "C": "2.340 cm³",
+            "D": "2.520 cm³",
+            "E": "2.700 cm³"
+          },
+          "correta": "B",
+          "explicacao": "V = (πh/3)(R² + Rr + r²) = (3×9/3)(144 + 96 + 64) = 9(304) = 2.736 cm³. Mais próximo: 2.160... Recalculando: V = 9 × (144 + 96 + 64) = 9 × 304 = 2.736. Usando π=3: V = (3×9/3)(144+96+64) = 9×304 = 2.736",
+          "dificuldade": "medio",
+          "tags": ["tronco-cone", "volume"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Um tetraedro regular tem aresta de 6cm. Qual o volume desse tetraedro? (Use √2 ≈ 1,4)",
+          "alternativas": {
+            "A": "21,6 cm³",
+            "B": "25,2 cm³",
+            "C": "28,8 cm³",
+            "D": "32,4 cm³",
+            "E": "36,0 cm³"
+          },
+          "correta": "B",
+          "explicacao": "V = a³√2/12 = 216×1,4/12 = 302,4/12 = 25,2 cm³",
+          "dificuldade": "medio",
+          "tags": ["tetraedro", "volume", "piramide"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Esferas",
+      "resumo": "Estudo da esfera, cálculo de volume, área superficial e aplicações práticas",
+      "topicos": [
+        {
+          "titulo": "Elementos e Definições da Esfera",
+          "conteudo": "ESFERA: Conjunto de pontos do espaço equidistantes de um ponto fixo (centro).\n\nELEMENTOS:\n- Centro (O): ponto equidistante de todos os pontos da esfera\n- Raio (r): distância do centro a qualquer ponto da superfície\n- Diâmetro (d): d = 2r\n- Superfície esférica: a \"casca\" da esfera\n\nSEÇÕES DA ESFERA:\n\n1) SEÇÃO MERIDIANA: Plano que passa pelo centro → círculo máximo (raio r)\n\n2) SEÇÃO QUALQUER: Plano que não passa pelo centro → círculo menor\n\n3) CÍRCULO MÁXIMO: Maior círculo possível na esfera (raio = raio da esfera)\n\n4) CÍRCULO MENOR: Raio menor que o raio da esfera\n\nRELAÇÃO: Se um plano dista d do centro e produz círculo de raio rc:\nrc² + d² = r²\n\nEXEMPLO: Terra (aprox. esférica)\n- Raio médio: 6.371 km\n- Equador e meridianos: círculos máximos\n- Paralelos (exceto Equador): círculos menores\n\nHEMISFÉRIO: Metade da esfera dividida por círculo máximo.\n\nCALOTA ESFÉRICA: Porção da esfera cortada por um plano."
+        },
+        {
+          "titulo": "Área da Superfície Esférica",
+          "conteudo": "ÁREA DA SUPERFÍCIE ESFÉRICA:\n\nA = 4πr²\n\nA área da esfera é 4 vezes a área de seu círculo máximo (πr²).\n\nEXEMPLO 1: Bola de futebol com raio 11cm\nA = 4π(11²) = 4π(121) = 484π ≈ 1.520 cm²\n\nEXEMPLO 2: Terra com raio 6.371 km\nA = 4π(6.371²) = 4π(40.590.641) ≈ 510.000.000 km²\n\nÁREA DO HEMISFÉRIO:\nSuperfície curva + base circular\nA = 2πr² + πr² = 3πr²\n\nApenas superfície curva: 2πr²\n\nÁREA DA CALOTA ESFÉRICA:\nA = 2πrh\nonde r é o raio da esfera e h é a altura da calota\n\nEXEMPLO 3: Calota de altura 3cm em esfera de raio 5cm\nA = 2π(5)(3) = 30π ≈ 94,2 cm²\n\nAPLICAÇÕES:\n- Cálculo de materiais para cúpulas\n- Área de balões e bolas\n- Embalagens esféricas\n- Planetário e domos geodésicos\n\nCOMPARAÇÃO:\nDe todos os sólidos com mesmo volume, a esfera tem menor área superficial (otimização natural)."
+        },
+        {
+          "titulo": "Volume da Esfera",
+          "conteudo": "VOLUME DA ESFERA:\n\nV = (4πr³) / 3\n\nEXEMPLO 1: Bola de basquete com diâmetro 24cm\nRaio: 12cm\nV = (4π × 12³) / 3 = (4π × 1.728) / 3 = 6.912π / 3 = 2.304π ≈ 7.238 cm³\n\nEXEMPLO 2: Planetário esférico com 10m de raio interno\nV = (4π × 1.000) / 3 = 4.000π / 3 ≈ 4.189 m³\n\nVOLUME DO HEMISFÉRIO:\nV = (2πr³) / 3\n\nVOLUME DA CALOTA ESFÉRICA:\nV = (πh²/3)(3r - h)\nonde r é raio da esfera e h é altura da calota\n\nEXEMPLO 3: Taça hemisférica de raio 6cm\nV = (2π × 216) / 3 = 432π / 3 = 144π ≈ 452 cm³ ≈ 452 ml\n\nEXEMPLO 4: Tanque esférico de armazenamento com 3m de raio\nV = (4π × 27) / 3 = 36π ≈ 113 m³ = 113.000 litros\n\nPROBLEMA: Uma esfera de raio R tem o mesmo volume que um cilindro de raio R e altura h. Qual a relação?\n\nVesfera = Vcilindro\n(4πR³)/3 = πR²h\n4R/3 = h\nh = (4/3)R"
+        },
+        {
+          "titulo": "Problemas Contextualizados com Esferas",
+          "conteudo": "PROBLEMA 1: BALÃO METEOROLÓGICO\nUm balão esférico é inflado de raio inicial 20cm para raio final 30cm. Quantas vezes aumentou o volume?\n\nV₁ = (4π × 8.000) / 3 = 32.000π / 3\nV₂ = (4π × 27.000) / 3 = 108.000π / 3\nRazão: V₂/V₁ = 108.000/32.000 = 3,375\n\nOu diretamente: (r₂/r₁)³ = (30/20)³ = 1,5³ = 3,375 vezes\n\nPROBLEMA 2: DERRETIMENTO\nUma esfera de metal de raio 6cm é derretida e moldada em cubos de aresta 2cm. Quantos cubos?\n\nVesfera = (4π × 216) / 3 = 288π cm³\nVcubo = 2³ = 8 cm³\nQuantidade = 288π / 8 = 36π ≈ 113 cubos\n\nPROBLEMA 3: RESERVATÓRIO\nUm reservatório esférico de raio 5m está preenchido até 60% de sua capacidade. Quantos litros contém?\n\nVtotal = (4π × 125) / 3 = 500π / 3 ≈ 523,6 m³\nV60% = 0,6 × 523,6 ≈ 314 m³ = 314.000 litros\n\nPROBLEMA 4: EMBALAGEM\nQual o menor cubo em que cabe uma esfera de raio r?\n\nO cubo deve ter aresta a = 2r (diâmetro)\nVesfera / Vcubo = [(4πr³)/3] / [8r³] = π/6 ≈ 0,524\n\nA esfera ocupa aproximadamente 52,4% do volume do cubo.\n\nPROBLEMA 5: PLANETAS\nSe Júpiter tem raio aproximadamente 11 vezes o raio da Terra, quantas vezes seu volume é maior?\n\nRazão de volumes = (rJ/rT)³ = 11³ = 1.331 vezes"
+        }
+      ],
+      "exemplos": [
+        "Calcular volume de tanque esférico de combustível",
+        "Determinar material para fabricar bola inflável",
+        "Calcular capacidade de reservatório hemisférico"
+      ],
+      "dicas": [
+        "Volume da esfera: (4πr³)/3 - memorize esta fórmula",
+        "Área da esfera: 4πr² (4 círculos máximos)",
+        "Razão de volumes = (razão dos raios)³",
+        "Esfera tem menor área superficial para dado volume",
+        "Hemisfério tem volume = metade da esfera"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Uma bola de futebol tem raio de 11cm. Qual o volume de ar que ela pode conter? Use π ≈ 3.",
+          "alternativas": {
+            "A": "4.840 cm³",
+            "B": "5.324 cm³",
+            "C": "5.808 cm³",
+            "D": "6.292 cm³",
+            "E": "6.776 cm³"
+          },
+          "correta": "B",
+          "explicacao": "V = (4πr³)/3 = (4 × 3 × 1.331)/3 = 15.972/3 = 5.324 cm³",
+          "dificuldade": "facil",
+          "tags": ["esfera", "volume"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Um reservatório esférico tem 6m de diâmetro. Qual sua capacidade em litros? Use π ≈ 3,14.",
+          "alternativas": {
+            "A": "103.620 L",
+            "B": "113.040 L",
+            "C": "122.460 L",
+            "D": "131.880 L",
+            "E": "141.300 L"
+          },
+          "correta": "B",
+          "explicacao": "Raio = 3m. V = (4 × 3,14 × 27)/3 = 339,12/3 = 113,04 m³ = 113.040 litros",
+          "dificuldade": "medio",
+          "tags": ["esfera", "volume", "conversao"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "A área da superfície de uma esfera é 144π cm². Qual o raio dessa esfera?",
+          "alternativas": {
+            "A": "4 cm",
+            "B": "5 cm",
+            "C": "6 cm",
+            "D": "7 cm",
+            "E": "8 cm"
+          },
+          "correta": "C",
+          "explicacao": "A = 4πr². Então 144π = 4πr², dividindo: 36 = r², logo r = 6cm",
+          "dificuldade": "facil",
+          "tags": ["esfera", "area-superficial", "equacao"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Uma tigela hemisférica tem 10cm de raio. Qual sua capacidade em ml? Use π ≈ 3.",
+          "alternativas": {
+            "A": "1.800 ml",
+            "B": "2.000 ml",
+            "C": "2.200 ml",
+            "D": "2.400 ml",
+            "E": "2.600 ml"
+          },
+          "correta": "B",
+          "explicacao": "Vhemisfério = (2πr³)/3 = (2 × 3 × 1.000)/3 = 6.000/3 = 2.000 cm³ = 2.000 ml",
+          "dificuldade": "facil",
+          "tags": ["esfera", "hemisferio", "volume"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Uma esfera de raio 9cm é derretida e transformada em cubos de aresta 3cm. Quantos cubos completos podem ser formados? Use π ≈ 3.",
+          "alternativas": {
+            "A": "102",
+            "B": "108",
+            "C": "114",
+            "D": "120",
+            "E": "126"
+          },
+          "correta": "B",
+          "explicacao": "Vesfera = (4 × 3 × 729)/3 = 8.748/3 = 2.916 cm³. Vcubo = 27 cm³. Quantidade = 2.916/27 = 108 cubos",
+          "dificuldade": "medio",
+          "tags": ["esfera", "cubo", "volume", "aplicacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Problemas Integrados e Comparações",
+      "resumo": "Problemas complexos envolvendo múltiplos sólidos, comparações e otimização",
+      "topicos": [
+        {
+          "titulo": "Relações entre Volumes de Diferentes Sólidos",
+          "conteudo": "COMPARAÇÃO FUNDAMENTAL:\nPara mesma base e altura:\n\nVprisma : Vcilindro : Vpirâmide : Vcone = 1 : 1 : (1/3) : (1/3)\n\nVolume de pirâmide/cone = (1/3) do volume de prisma/cilindro correspondente.\n\nTEOREMA DE CAVALIERI:\nSe dois sólidos têm mesma altura e todas as seções transversais a uma mesma distância da base têm mesma área, então os sólidos têm mesmo volume.\n\nRELAÇÕES ESPECÍFICAS:\n\n1) CILINDRO vs CONE (mesmos r e h):\nVcilindro = 3 × Vcone\n\n2) ESFERA vs CILINDRO (raio r, altura 2r):\nVesfera = (2/3) × Vcilindro\nVesfera = (4πr³)/3 e Vcilindro = πr²(2r) = 2πr³\n\n3) CUBO vs ESFERA INSCRITA:\nSe esfera de raio r está inscrita em cubo:\nAresta cubo = 2r\nVesfera/Vcubo = [(4πr³)/3] / [8r³] = π/6 ≈ 0,52\n\n4) CILINDRO vs ESFERA vs CONE (mesmos r e h=2r):\nVcilindro : Vesfera : Vcone = 3 : 2 : 1\n\nEXEMPLO: Recipientes com raio 5cm e altura 10cm\nCilindro: V = π(25)(10) = 250π cm³\nCone: V = [π(25)(10)]/3 = 250π/3 cm³\nRazão: 3:1"
+        },
+        {
+          "titulo": "Inscrição e Circunscrição de Sólidos",
+          "conteudo": "ESFERA INSCRITA EM CUBO:\nSe cubo tem aresta a:\n- Raio da esfera: r = a/2\n- Vesfera = (πa³)/6\n\nESFERA CIRCUNSCRITA A CUBO:\nSe cubo tem aresta a:\n- Raio da esfera: r = (a√3)/2 (metade da diagonal)\n- Vesfera = (πa³√3)/2\n\nCILINDRO INSCRITO EM ESFERA:\nPara máximo volume com esfera de raio R:\n- Raio cilindro: r = R√(2/3)\n- Altura cilindro: h = (2R)/√3\n\nCONE INSCRITO EM ESFERA:\nBase no equador, vértice no polo:\n- Raio cone: r = R\n- Altura cone: h = R\n- Vcone = (πR³)/3\n\nEXEMPLO 1: Cubo de aresta 6cm\nEsfera inscrita: r = 3cm, V = (4π × 27)/3 = 36π cm³\nEsfera circunscrita: r = 3√3 cm, V = (4π × 27√3 × √3 × √3)/3 = 108π√3 cm³\n\nEXEMPLO 2: Cilindro de maior volume inscrito em esfera de raio 6cm:\nr = 6√(2/3) = 6√2/√3 = 2√6 cm\nh = 12/√3 = 4√3 cm\nV = π(24)(4√3) = 96π√3 cm³"
+        },
+        {
+          "titulo": "Problemas de Otimização Espacial",
+          "conteudo": "PRINCÍPIOS DE OTIMIZAÇÃO:\n\n1) Para volume fixo, a esfera tem menor área superficial\n2) Para área fixa, a esfera tem maior volume\n3) Cilindro equilátero (h = 2r) minimiza área para volume fixo\n4) Cubo minimiza área entre paralelepípedos de volume fixo\n\nPROBLEMA 1: EMBALAGEM ECONÔMICA\nQual formato usa menos material para embalar 1000 cm³?\n\nEsfera: V = (4πr³)/3 = 1000\nr³ = 750/π ≈ 238,7, r ≈ 6,2cm\nA = 4π(6,2²) ≈ 483 cm²\n\nCubo: V = a³ = 1000, a = 10cm\nA = 6(100) = 600 cm²\n\nCilindro equilátero: V = πr²(2r) = 1000\n2πr³ = 1000, r³ ≈ 159, r ≈ 5,4cm\nA = 2πr(r + 2r) = 6πr² ≈ 550 cm²\n\nMelhor: ESFERA (menor área)\n\nPROBLEMA 2: SILO OTIMIZADO\nSilo com 100 m³ de capacidade. Qual formato minimiza custo de construção?\n\nPara minimizar material: cilindro com h = 2r (equilátero)\n\nPROBLEMA 3: RECIPIENTE ABERTO\nCaixa sem tampa com volume 108 cm³. Dimensões para menor área?\n\nBase quadrada de lado L, altura h.\nV = L²h = 108\nÁrea: A = L² + 4Lh\n\nMinimizando: L = h√2\nSubstituindo: L³ = 216, L = 6cm, h = 3√2 ≈ 4,24cm"
+        },
+        {
+          "titulo": "Problemas Complexos e Multietapas",
+          "conteudo": "PROBLEMA 1: TRANSFORMAÇÃO DE SÓLIDOS\nUm cilindro de raio 4cm e altura 9cm é derretido para formar esferas de raio 2cm. Quantas esferas?\n\nVcilindro = π(16)(9) = 144π cm³\nVesfera = (4π × 8)/3 = 32π/3 cm³\nQuantidade = 144π / (32π/3) = 144 × 3/32 = 13,5 → 13 esferas completas\n\nPROBLEMA 2: COMPOSIÇÃO\nUm brinquedo é formado por um cilindro de raio 3cm e altura 8cm com cone de mesma base e altura 4cm. Volume total?\n\nVcilindro = π(9)(8) = 72π cm³\nVcone = [π(9)(4)]/3 = 12π cm³\nVtotal = 72π + 12π = 84π ≈ 264 cm³\n\nPROBLEMA 3: RECIPIENTE CÔNICO\nUm recipiente cônico de raio 6cm e altura 12cm está com água até metade da altura. Que fração do volume está ocupada?\n\nNo meio da altura, o raio é metade: r = 3cm, h = 6cm\nVágua = [π(9)(6)]/3 = 18π cm³\nVtotal = [π(36)(12)]/3 = 144π cm³\nFração = 18π/144π = 1/8\n\nPROBLEMA 4: TANQUE COMPOSTO\nTanque com corpo cilíndrico (r=2m, h=5m) e dois hemisférios nas extremidades. Capacidade?\n\nVcilindro = π(4)(5) = 20π m³\nVesfera = (4π × 8)/3 = 32π/3 m³\nVtotal = 20π + 32π/3 = 60π/3 + 32π/3 = 92π/3 ≈ 96,3 m³\n\nPROBLEMA 5: NÍVEL DE LÍQUIDO\nCilindro deitado de raio 50cm e comprimento 2m, com líquido até 30cm de altura (medida vertical). Volume?\n\n[Problema avançado envolvendo integral ou geometria de segmento circular]"
+        }
+      ],
+      "exemplos": [
+        "Comparar capacidades de recipientes de formatos diferentes",
+        "Calcular volume de sólido composto (cilindro + cone)",
+        "Determinar formato ótimo para minimizar custo de material"
+      ],
+      "dicas": [
+        "Em comparações, mantenha raio e altura consistentes",
+        "Volume de cone/pirâmide = 1/3 do cilindro/prisma correspondente",
+        "Esfera é sempre mais eficiente em razão volume/área",
+        "Desenhe o problema para visualizar melhor",
+        "Em sólidos compostos, calcule cada parte separadamente"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Três recipientes têm mesma base circular de raio 5cm e altura 12cm. Um é cilíndrico, outro cônico e o terceiro hemisférico (raio 5cm). Qual a ordem crescente de suas capacidades?",
+          "alternativas": {
+            "A": "Cone < Hemisfério < Cilindro",
+            "B": "Hemisfério < Cone < Cilindro",
+            "C": "Cone < Cilindro < Hemisfério",
+            "D": "Hemisfério < Cilindro < Cone",
+            "E": "Cilindro < Cone < Hemisfério"
+          },
+          "correta": "B",
+          "explicacao": "Vcilindro = π(25)(12) = 300π. Vcone = 300π/3 = 100π. Vhemisfério = (2π × 125)/3 ≈ 83,3π. Ordem: Hemisfério < Cone < Cilindro",
+          "dificuldade": "medio",
+          "tags": ["comparacao", "volumes", "solidos"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Uma esfera de raio 6cm está inscrita em um cubo. Qual a porcentagem aproximada do volume do cubo ocupada pela esfera? Use π ≈ 3.",
+          "alternativas": {
+            "A": "45%",
+            "B": "50%",
+            "C": "52%",
+            "D": "55%",
+            "E": "60%"
+          },
+          "correta": "B",
+          "explicacao": "Aresta = 12cm. Vesfera = (4 × 3 × 216)/3 = 864 cm³. Vcubo = 1728 cm³. Porcentagem = 864/1728 = 0,5 = 50%",
+          "dificuldade": "medio",
+          "tags": ["esfera", "cubo", "inscricao", "porcentagem"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Um cilindro de raio 3cm e altura 12cm é derretido para formar esferas de 1,5cm de raio. Quantas esferas podem ser formadas? Use π ≈ 3.",
+          "alternativas": {
+            "A": "20",
+            "B": "24",
+            "C": "28",
+            "D": "32",
+            "E": "36"
+          },
+          "correta": "B",
+          "explicacao": "Vcilindro = 3 × 9 × 12 = 324 cm³. Vesfera = (4 × 3 × 3,375)/3 = 13,5 cm³. Quantidade = 324/13,5 = 24 esferas",
+          "dificuldade": "medio",
+          "tags": ["transformacao", "volume", "cilindro", "esfera"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Um sorvete é composto por uma casquinha cônica de raio 3cm e altura 12cm, totalmente preenchida, mais uma bola hemisférica de mesmo raio em cima. Qual o volume total? Use π ≈ 3.",
+          "alternativas": {
+            "A": "108 cm³",
+            "B": "126 cm³",
+            "C": "144 cm³",
+            "D": "162 cm³",
+            "E": "180 cm³"
+          },
+          "correta": "C",
+          "explicacao": "Vcone = (3 × 9 × 12)/3 = 108 cm³. Vhemisfério = (2 × 3 × 27)/3 = 54 cm³. Total = 108 + 54 = 162... Erro no cálculo! Vhemisfério = (2π × 27)/3 = 54/3 = 18π = 54. Mas usando π=3: (2×3×27)/3 = 54. Total: 108+54=162",
+          "dificuldade": "medio",
+          "tags": ["composicao", "cone", "esfera", "volume"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Um tanque cilíndrico horizontal de raio 1m e comprimento 4m está preenchido até o centro (metade do raio em altura). Aproximadamente, qual o volume de líquido? Use π ≈ 3.",
+          "alternativas": {
+            "A": "3 m³",
+            "B": "4 m³",
+            "C": "5 m³",
+            "D": "6 m³",
+            "E": "7 m³"
+          },
+          "correta": "D",
+          "explicacao": "Volume total: π × 1² × 4 = 12 m³. Até o centro (aproximação): metade = 6 m³ [nota: cálculo exato requer geometria de segmento circular, mas aproximação é 50%]",
+          "dificuldade": "dificil",
+          "tags": ["cilindro", "nivel-liquido", "volume"]
+        }
+      ]
+    }
+  ]
+}

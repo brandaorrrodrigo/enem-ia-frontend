@@ -8,7 +8,7 @@
   "icone": "📝",
   "cor": "from-blue-500 to-cyan-500",
   "tempoEstimado": "2h",
-  "fpRecompensa": 150,
+  "fpRecompensa": 0,
   "tags": ["interpretacao", "texto", "leitura", "enem"],
   "modulos": [
     {

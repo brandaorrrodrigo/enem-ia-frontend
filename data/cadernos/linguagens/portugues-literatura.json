@@ -1,0 +1,221 @@
+{
+  "id": "portugues-literatura",
+  "titulo": "Literatura Brasileira",
+  "descricao": "Panorama da literatura brasileira com foco no Modernismo",
+  "icone": "📚",
+  "cor": "from-violet-500 to-purple-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Romantismo Brasileiro",
+      "resumo": "Primeira grande expressão da literatura nacional, marcada por nacionalismo, idealização e sentimentalismo.",
+      "topicos": [
+        "Contexto: Independência do Brasil (1822), busca de identidade nacional",
+        "Características: sentimentalismo, idealização, nacionalismo, subjetivismo",
+        "Gerações: indianista, ultrarromântica (mal do século), condoreira",
+        "Autores principais: Gonçalves Dias, Álvares de Azevedo, Castro Alves",
+        "Prosa: José de Alencar e seus romances (indianista, urbano, regional, histórico)"
+      ],
+      "exemplos": [
+        "Indianismo - Gonçalves Dias: 'Minha terra tem palmeiras / Onde canta o Sabiá' (Canção do Exílio)",
+        "Idealização do índio como herói nacional: 'I-Juca Pirama', 'O Guarani' (Alencar)",
+        "Ultrarromantismo - Álvares de Azevedo: 'Pálida à luz da lâmpada sombria' (poesia byroniana, morte, melancolia)",
+        "Condoreirismo - Castro Alves: 'Auriverde pendão da minha terra' (poesia social, abolicionismo)",
+        "José de Alencar: 'Iracema' (indianista), 'Senhora' (urbano), 'O Sertanejo' (regional)"
+      ],
+      "dicas": [
+        "Indianismo: índio idealizado como herói nacional, símbolo da pátria",
+        "2ª geração: byroniana, 'mal do século', tédio existencial, morte",
+        "3ª geração: Castro Alves, poesia social, abolicionismo",
+        "Alencar: principal prosador, diversos tipos de romance",
+        "ENEM cobra análise de poemas românticos e suas características"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Leia o trecho:\n\n'Minha terra tem palmeiras,\nOnde canta o Sabiá;\nAs aves, que aqui gorjeiam,\nNão gorjeiam como lá.'\n(Gonçalves Dias)\n\nQual característica romântica predomina?",
+          "alternativas": [
+            "Ironia e crítica social",
+            "Objetividade e racionalismo",
+            "Nacionalismo e saudosismo",
+            "Pessimismo e morte",
+            "Universalismo temático"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O poema exalta a pátria (nacionalismo) e expressa saudade do Brasil (saudosismo), características da 1ª geração romântica indianista."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Realismo e Naturalismo",
+      "resumo": "Ruptura com idealização romântica: objetividade, crítica social e análise psicológica.",
+      "topicos": [
+        "Contexto: fim do Romantismo, influência científica (Darwin, determinismo)",
+        "Realismo: análise psicológica, crítica social, objetividade",
+        "Machado de Assis: maior nome, ironia, pessimismo, análise humana",
+        "Naturalismo: determinismo biológico, patológico, visão científica",
+        "Aluísio Azevedo: 'O Cortiço' (romance naturalista clássico)"
+      ],
+      "exemplos": [
+        "Realismo - Machado: 'Memórias Póstumas de Brás Cubas' (narrador defunto, ironia, análise crítica)",
+        "Machado: 'Dom Casmurro' (dúvida sobre traição de Capitu, ambiguidade narrativa)",
+        "Machado: 'Quincas Borba' (filosofia do Humanitismo, crítica social)",
+        "Naturalismo - Aluísio: 'O Cortiço' (determinismo social, coletividade como personagem)",
+        "Naturalismo: personagens movidos por instinto, meio, hereditariedade"
+      ],
+      "dicas": [
+        "Realismo: foco no psicológico, indivíduo, burguesia",
+        "Naturalismo: foco no biológico, coletivo, classes baixas",
+        "Machado: ironia, pessimismo, narrador não confiável",
+        "'O Cortiço': cortiço como personagem coletivo",
+        "ENEM adora Machado: ironia, ambiguidade, crítica social"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Um romance apresenta narrador que ironiza a própria morte, critica a sociedade burguesa e analisa contradições humanas. Trata-se de características do:",
+          "alternativas": [
+            "Romantismo idealista",
+            "Realismo machadiano",
+            "Naturalismo determinista",
+            "Modernismo nacionalista",
+            "Parnasianismo formal"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Ironia, crítica social e análise psicológica são marcas do Realismo, especialmente de Machado de Assis ('Memórias Póstumas')."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Modernismo - 1ª Fase (1922-1930)",
+      "resumo": "Semana de Arte Moderna de 1922: ruptura radical, nacionalismo crítico, experimentação.",
+      "topicos": [
+        "Semana de Arte Moderna (1922): marco inicial, ruptura com tradição",
+        "Características: liberdade formal, verso livre, linguagem coloquial",
+        "Nacionalismo crítico (diferente do romântico idealizado)",
+        "Oswald de Andrade: Manifesto Pau-Brasil, Antropofágico, poesia-piada",
+        "Mário de Andrade: 'Macunaíma', nacionalismo, pesquisa folclórica",
+        "Manuel Bandeira: cotidiano, simplicidade, lirismo"
+      ],
+      "exemplos": [
+        "Oswald - Pau-Brasil: 'Escapulário / No pescoço / O Santeiro / O Taberneiro' (síntese, fragmentação)",
+        "Oswald - poesia-piada: 'pronominais' - crítica ao purismo linguístico",
+        "Mário: 'Macunaíma, o herói sem nenhum caráter' (anti-herói nacional, rapsódia)",
+        "Bandeira: 'Vou-me embora pra Pasárgada' (escapismo, cotidiano)",
+        "Antropofagia: devorar cultura estrangeira e recriar como brasileira"
+      ],
+      "dicas": [
+        "1ª fase: destruição, ruptura radical, experimentação",
+        "Oswald: síntese, humor, crítica, Antropofagia cultural",
+        "Mário: nacionalismo crítico, pesquisa do Brasil profundo",
+        "Bandeira: simplicidade, cotidiano, ternura",
+        "Verso livre, sem métrica e rima obrigatórias"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Leia:\n\n'Não quero mais saber do lirismo que não é libertação.'\n(Manuel Bandeira)\n\nEsse verso expressa o desejo modernista de:",
+          "alternativas": [
+            "Retornar às formas clássicas rigorosas",
+            "Romper com a liberdade formal conquistada",
+            "Libertar a poesia de regras tradicionais",
+            "Valorizar o lirismo romântico idealizado",
+            "Criar poesia apenas para elite letrada"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O verso expressa o desejo de liberdade formal e temática, característica central do Modernismo que rompe com tradições parnasianas e simbolistas."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Modernismo - 2ª Fase (1930-1945)",
+      "resumo": "Amadurecimento: preocupação social, regionalismo crítico, poesia mais densa.",
+      "topicos": [
+        "Prosa: Romance de 30, regionalismo social, denúncia",
+        "Graciliano Ramos: 'Vidas Secas', secura estilística, Nordeste árido",
+        "Jorge Amado: Bahia, luta de classes, personagens populares",
+        "Poesia: Carlos Drummond de Andrade (participação social, existencialismo)",
+        "Cecília Meireles: universalismo, intimismo, musicalidade",
+        "Vinícius de Moraes: lirismo amoroso"
+      ],
+      "exemplos": [
+        "Graciliano: 'Vidas Secas' (seca, miséria, linguagem econômica, Fabiano e família)",
+        "Drummond: 'E agora, José?' (angústia existencial, questionamento)",
+        "Drummond: 'No meio do caminho' (repetição, modernidade, cotidiano)",
+        "Drummond: 'Sentimento do Mundo' (poesia participante, guerra)",
+        "Cecília: 'Motivo' (lirismo, efemeridade, musicalidade)",
+        "Jorge Amado: 'Capitães da Areia' (meninos de rua, crítica social)"
+      ],
+      "dicas": [
+        "2ª fase: maturidade, preocupação social, menos experimentação",
+        "Romance de 30: seca, miséria, Nordeste, crítica social",
+        "Graciliano: linguagem seca como o sertão, economia verbal",
+        "Drummond: 'poeta social' e existencial, questionamento",
+        "ENEM adora Drummond: 'Meio do caminho', 'José', temas sociais"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Leia:\n\n'No meio do caminho tinha uma pedra\ntinha uma pedra no meio do caminho\ntinha uma pedra\nno meio do caminho tinha uma pedra.'\n(Drummond)\n\nQual recurso modernista predomina?",
+          "alternativas": [
+            "Métrica rigorosa parnasiana",
+            "Idealização romântica",
+            "Repetição e simplicidade radical",
+            "Determinismo naturalista",
+            "Simbolismo hermético"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A repetição obsessiva e a simplicidade radical são recursos modernistas que rompem com tradição, valorizando a linguagem cotidiana e direta."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Modernismo - 3ª Fase e Pós-Modernismo",
+      "resumo": "De 1945 em diante: prosa intimista, experimentação formal, João Cabral, Clarice Lispector.",
+      "topicos": [
+        "Guimarães Rosa: 'Grande Sertão: Veredas', sertão universal, linguagem inventiva",
+        "Clarice Lispector: prosa intimista, fluxo de consciência, epifanias",
+        "João Cabral de Melo Neto: 'Morte e Vida Severina', poesia social, concretismo",
+        "Concretismo: poesia visual, palavra como objeto",
+        "Tendências contemporâneas: diversidade, metalinguagem"
+      ],
+      "exemplos": [
+        "Guimarães Rosa: neologismos, inversões, sertão metafísico - 'O sertão é do tamanho do mundo'",
+        "Clarice: 'A Hora da Estrela' (Macabéa, introspecção, condição humana)",
+        "Clarice: 'A Paixão segundo G.H.' (fluxo consciência, existencialismo)",
+        "João Cabral: 'Morte e Vida Severina' (retirante nordestino, crítica social, estrutura teatral)",
+        "João Cabral: 'poesia seca', antilírica, construtivista",
+        "Concretismo: poema como objeto visual, não apenas verbal"
+      ],
+      "dicas": [
+        "Rosa: linguagem revolucionária, sertão universal e filosófico",
+        "Clarice: introspecção, consciência, epifanias cotidianas",
+        "João Cabral: anti-lírico, cerebral, construtivista",
+        "'Morte e Vida Severina': clássico cobrado no ENEM",
+        "3ª fase: maturidade máxima, experimentação refinada"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "'E se somos Severinos / iguais em tudo na vida, / morremos de morte igual, / mesma morte severina' (João Cabral)\n\nO texto denuncia:",
+          "alternativas": [
+            "A valorização da individualidade sertaneja",
+            "A condição de miséria e despersonalização",
+            "O orgulho do nome Severino",
+            "A diversidade cultural nordestina",
+            "A idealização romântica do sertão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "João Cabral denuncia a miséria que torna os retirantes iguais na pobreza e na morte, perdendo individualidade ('morte severina'), crítica social profunda."
+        }
+      ]
+    }
+  ]
+}

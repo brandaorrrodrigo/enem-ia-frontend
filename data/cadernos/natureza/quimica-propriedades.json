@@ -1,0 +1,324 @@
+{
+  "id": "quimica-propriedades",
+  "titulo": "Propriedades das Substâncias",
+  "descricao": "Compreenda como polaridade, forças intermoleculares e estrutura molecular determinam as propriedades físicas das substâncias",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Polaridade de Moléculas",
+      "topicos": [
+        {
+          "titulo": "Moléculas Polares e Apolares",
+          "conteudo": "Molécula polar: possui momento dipolar resultante não-nulo devido à distribuição assimétrica de cargas. Molécula apolar: momento dipolar resultante nulo, distribuição simétrica de cargas ou ligações apolares."
+        },
+        {
+          "titulo": "Fatores que Determinam Polaridade",
+          "conteudo": "1) Diferença de eletronegatividade nas ligações; 2) Geometria molecular; 3) Presença de pares isolados. Moléculas simétricas com ligações polares podem ser apolares se os vetores se cancelarem."
+        },
+        {
+          "titulo": "Importância da Polaridade",
+          "conteudo": "A polaridade determina: solubilidade (polar dissolve polar, apolar dissolve apolar), ponto de ebulição, condutividade, forças intermoleculares e reatividade química."
+        },
+        {
+          "titulo": "Regra Semelhante Dissolve Semelhante",
+          "conteudo": "Substâncias polares dissolvem solutos polares (água + sal). Substâncias apolares dissolvem solutos apolares (gasolina + óleo). Isso ocorre porque forças intermoleculares semelhantes favorecem a mistura."
+        }
+      ],
+      "exemplos": [
+        "H₂O: polar (angular, ligações O-H polares, 2 pares isolados)",
+        "CO₂: apolar (linear, vetores se cancelam)",
+        "CCl₄: apolar (tetraédrica, simétrica)",
+        "NH₃: polar (piramidal, ligações N-H polares, 1 par isolado)",
+        "Benzeno (C₆H₆): apolar (estrutura simétrica)"
+      ],
+      "dicas": [
+        "Se a molécula é simétrica, provavelmente é apolar",
+        "Presença de OH, NH, ou halógenos geralmente indica polaridade",
+        "No ENEM: relacione polaridade com solubilidade e separação de misturas"
+      ],
+      "questoes": [
+        {
+          "enunciado": "O óleo vegetal não se mistura com água porque:",
+          "alternativas": [
+            "O óleo é mais denso que a água",
+            "A água é polar e o óleo é apolar",
+            "O óleo contém oxigênio",
+            "A água tem pontes de hidrogênio",
+            "O óleo é uma substância pura"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A água é polar devido à geometria angular e alta eletronegatividade do oxigênio. O óleo vegetal é composto por cadeias carbônicas apolares. Como 'semelhante dissolve semelhante', eles não se misturam."
+        },
+        {
+          "enunciado": "Qual das seguintes substâncias é mais solúvel em água?",
+          "alternativas": [
+            "CH₄ (metano)",
+            "CCl₄ (tetracloreto de carbono)",
+            "C₆H₆ (benzeno)",
+            "CH₃OH (metanol)",
+            "C₈H₁₈ (octano)"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "CH₃OH (metanol) é polar devido ao grupo -OH e pode fazer ligações de hidrogênio com a água. As demais substâncias são apolares ou pouco polares, portanto menos solúveis em água."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Forças Intermoleculares",
+      "topicos": [
+        {
+          "titulo": "Forças de London (Dispersão)",
+          "conteudo": "Ocorrem em TODAS as moléculas. Causadas por dipolos instantâneos e induzidos devido ao movimento eletrônico. São as mais fracas. Intensidade aumenta com: massa molar, área de contato, forma molecular (linear > ramificada)."
+        },
+        {
+          "titulo": "Forças Dipolo-Dipolo",
+          "conteudo": "Ocorrem entre moléculas polares. Atração entre o polo positivo de uma molécula e o polo negativo de outra. Mais fortes que London. Exemplo: HCl, CH₃Cl, acetona. Intensidade depende do momento dipolar."
+        },
+        {
+          "titulo": "Ligações de Hidrogênio",
+          "conteudo": "Caso especial de dipolo-dipolo. Ocorre quando H está ligado a F, O ou N. É a mais forte das forças intermoleculares. Responsável por propriedades únicas da água: alto PE/PF, densidade do gelo < água líquida."
+        },
+        {
+          "titulo": "Comparação de Intensidade",
+          "conteudo": "Ligação de hidrogênio > Dipolo-dipolo > London\nTemperatura de ebulição segue essa ordem. Moléculas com H-bond têm PE muito elevados. Forças fracas = voláteis, fortes = viscosos/alto PE."
+        }
+      ],
+      "exemplos": [
+        "H₂O: ligações de hidrogênio (PE = 100°C)",
+        "HF: ligações de hidrogênio muito fortes (PE = 20°C)",
+        "HCl: dipolo-dipolo (PE = -85°C)",
+        "CH₄: apenas London (PE = -161°C)",
+        "Álcoois vs éteres: álcoois têm maior PE devido a H-bond"
+      ],
+      "dicas": [
+        "F, O, N: únicos que fazem ligação de hidrogênio como aceptores",
+        "Moléculas maiores têm mais forças de London = maior PE",
+        "Comparar PE: primeiro veja o tipo de força, depois a massa molar"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A água possui ponto de ebulição (100°C) muito superior ao do H₂S (-60°C), apesar de H₂S ter maior massa molar. Isso se deve:",
+          "alternativas": [
+            "À maior massa molar da água",
+            "À presença de ligações de hidrogênio na água",
+            "Ao fato de H₂S ser apolar",
+            "À geometria linear do H₂S",
+            "À menor eletronegatividade do oxigênio"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A água forma extensas ligações de hidrogênio (O-H...O), que são muito mais fortes que as forças dipolo-dipolo no H₂S, exigindo maior energia para romper e vaporizar."
+        },
+        {
+          "enunciado": "Ordene os compostos em ordem CRESCENTE de ponto de ebulição: I) CH₄  II) CH₃OH  III) CH₃Cl",
+          "alternativas": [
+            "I < II < III",
+            "I < III < II",
+            "II < I < III",
+            "III < II < I",
+            "II < III < I"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "CH₄ (apolar, só London) < CH₃Cl (polar, dipolo-dipolo) < CH₃OH (ligação de hidrogênio). A intensidade das forças intermoleculares determina o ponto de ebulição."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Ponto de Fusão e Ebulição",
+      "topicos": [
+        {
+          "titulo": "Definições e Conceitos",
+          "conteudo": "Ponto de Fusão (PF): temperatura em que sólido → líquido. Ponto de Ebulição (PE): temperatura em que líquido → gás. Ambos dependem da intensidade das forças intermoleculares e da pressão atmosférica."
+        },
+        {
+          "titulo": "Fatores que Afetam PF e PE",
+          "conteudo": "1) Tipo de força intermolecular; 2) Massa molar (mais massa = maior PE); 3) Superfície de contato; 4) Simetria molecular; 5) Pressão externa (↑P → ↑PE). Compostos iônicos têm PF/PE muito altos."
+        },
+        {
+          "titulo": "Efeito da Estrutura Molecular",
+          "conteudo": "Moléculas lineares: maior área de contato = maior PE. Moléculas ramificadas: menor área de contato = menor PE. Exemplo: n-pentano (PE = 36°C) vs neopentano (PE = 9,5°C)."
+        },
+        {
+          "titulo": "Propriedades Coligativas",
+          "conteudo": "Adição de soluto não-volátil: ↑PE (ebulioscopia) e ↓PF (crioscopia). ΔPE = Ke × molalidade; ΔPF = Kf × molalidade. Aplicações: radiador de carro, salgar gelo, panela de pressão."
+        }
+      ],
+      "exemplos": [
+        "NaCl: PF = 801°C (ligação iônica)",
+        "H₂O: PE = 100°C (ligação H), PF = 0°C",
+        "Etanol: PE = 78°C (ligação H)",
+        "Éter etílico: PE = 35°C (dipolo-dipolo)",
+        "Diamante: PF > 3500°C (rede covalente)"
+      ],
+      "dicas": [
+        "Iônicos > rede covalente > ligação H > dipolo-dipolo > London",
+        "Na mesma família: ↑massa molar → ↑PE (exceto H₂O, HF por H-bond)",
+        "ENEM: relacione PE/PF com separação de misturas (destilação)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "O etanol (C₂H₅OH) tem ponto de ebulição maior que o éter dimetílico (CH₃OCH₃), apesar de terem a mesma fórmula molecular. Isso ocorre porque:",
+          "alternativas": [
+            "O etanol é mais denso",
+            "O etanol pode fazer ligações de hidrogênio",
+            "O éter é apolar",
+            "O etanol tem maior massa molar",
+            "O éter é um gás"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Ambos são isômeros (C₂H₆O), mas o etanol tem grupo -OH que permite ligações de hidrogênio intermoleculares, enquanto o éter só apresenta forças dipolo-dipolo mais fracas."
+        },
+        {
+          "enunciado": "Adicionar sal (NaCl) à água provoca:",
+          "alternativas": [
+            "Diminuição do ponto de ebulição",
+            "Aumento do ponto de fusão",
+            "Aumento do ponto de ebulição e diminuição do ponto de fusão",
+            "Não altera as propriedades da água",
+            "Diminuição da densidade da água"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Propriedades coligativas: solutos aumentam o PE (ebulioscopia) e diminuem o PF (crioscopia) do solvente. Isso ocorre porque as partículas de soluto dificultam a vaporização e o congelamento."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Solubilidade e Miscibilidade",
+      "topicos": [
+        {
+          "titulo": "Conceito de Solubilidade",
+          "conteudo": "Solubilidade: quantidade máxima de soluto que se dissolve em certa quantidade de solvente em dada temperatura. Expressa em g/100g de solvente ou mol/L. Depende da temperatura e da natureza das substâncias."
+        },
+        {
+          "titulo": "Fatores que Afetam a Solubilidade",
+          "conteudo": "1) Temperatura: geralmente ↑T → ↑solubilidade (sólidos); ↑T → ↓solubilidade (gases). 2) Pressão: afeta gases (Lei de Henry). 3) Natureza química: semelhante dissolve semelhante. 4) pH: afeta solubilidade de ácidos/bases."
+        },
+        {
+          "titulo": "Curvas de Solubilidade",
+          "conteudo": "Gráfico solubilidade vs temperatura. Acima da curva: supersaturada (instável). Na curva: saturada (equilíbrio). Abaixo: insaturada. Coeficiente de solubilidade varia com cada substância."
+        },
+        {
+          "titulo": "Produto de Solubilidade (Kps)",
+          "conteudo": "Para sais pouco solúveis: Kps = [cátion]ᵃ × [ânion]ᵇ. Exemplo: AgCl ⇌ Ag⁺ + Cl⁻, Kps = [Ag⁺][Cl⁻]. Se Q > Kps: precipita. Se Q < Kps: dissolve. Se Q = Kps: equilíbrio."
+        }
+      ],
+      "exemplos": [
+        "NaCl em água: ~36g/100g H₂O (25°C) - iônico em polar",
+        "Açúcar em água: ~200g/100g H₂O (20°C) - polar em polar",
+        "O₂ em água: ~0,004g/100g H₂O (25°C) - gás apolar em polar",
+        "Iodo em CCl₄: alta solubilidade - apolar em apolar",
+        "AgCl: Kps = 1,8 × 10⁻¹⁰ (muito pouco solúvel)"
+      ],
+      "dicas": [
+        "Sólidos: maioria aumenta solubilidade com temperatura",
+        "Gases: sempre diminuem solubilidade com temperatura",
+        "Refrigerante gelado retém mais CO₂ (Lei de Henry)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Ao abrir uma garrafa de refrigerante em temperatura ambiente, observa-se maior liberação de gás do que quando gelado. Isso ocorre porque:",
+          "alternativas": [
+            "A pressão interna é maior em temperatura ambiente",
+            "A solubilidade de gases diminui com o aumento da temperatura",
+            "O CO₂ reage com a água em altas temperaturas",
+            "A densidade do refrigerante aumenta",
+            "A pressão atmosférica é menor em altas temperaturas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A solubilidade de gases em líquidos diminui com o aumento da temperatura. Em temperatura ambiente, o CO₂ dissolvido tende a escapar mais rapidamente da solução."
+        },
+        {
+          "enunciado": "Uma solução aquosa saturada de KNO₃ a 60°C é resfriada para 20°C. O que deve ocorrer?",
+          "alternativas": [
+            "O KNO₃ se dissolverá mais facilmente",
+            "A solução se tornará insaturada",
+            "Ocorrerá precipitação de KNO₃",
+            "A concentração permanecerá constante",
+            "O solvente evaporará"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A solubilidade do KNO₃ diminui com a temperatura. Uma solução saturada a 60°C ficará supersaturada a 20°C, causando precipitação do excesso de soluto."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Propriedades Físicas e Aplicações",
+      "topicos": [
+        {
+          "titulo": "Densidade e Estados Físicos",
+          "conteudo": "Densidade = massa/volume. Geralmente: sólido > líquido > gás. EXCEÇÃO: água (gelo menos denso que água líquida) devido às ligações H que formam estrutura aberta. Densidade varia com temperatura e pressão."
+        },
+        {
+          "titulo": "Viscosidade e Tensão Superficial",
+          "conteudo": "Viscosidade: resistência ao escoamento. ↑forças intermoleculares → ↑viscosidade. Tensão superficial: 'película' na superfície devido a forças não balanceadas. Água tem alta tensão superficial (ligações H)."
+        },
+        {
+          "titulo": "Condutividade Elétrica",
+          "conteudo": "Compostos iônicos: conduzem fundidos ou em solução (íons livres). Compostos moleculares: geralmente não conduzem (exceção: HCl em água). Metais: conduzem no sólido (elétrons deslocalizados). Grafite conduz (elétrons π deslocalizados)."
+        },
+        {
+          "titulo": "Aplicações Tecnológicas",
+          "conteudo": "Surfactantes: reduzem tensão superficial (sabão, detergente). Anticongelantes: etilenoglicol baixa PF da água. Solventes: escolhidos por polaridade. Cristais líquidos: displays LCD. Polímeros: propriedades depende de forças intermoleculares."
+        }
+      ],
+      "exemplos": [
+        "Gelo flutuando: densidade menor que água líquida",
+        "Gotas de água esféricas: alta tensão superficial",
+        "Glicerina: viscosa (muitos OH, ligações H)",
+        "Acetona: solvente polar, remove esmalte",
+        "NaCl(aq): conduz eletricidade (íons Na⁺ e Cl⁻)"
+      ],
+      "dicas": [
+        "Água é exceção em muitas propriedades (ligações H)",
+        "Moléculas maiores e mais polares = mais viscosas",
+        "Condutividade sempre requer partículas carregadas móveis"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A alta tensão superficial da água permite que alguns insetos caminhem sobre ela. Essa propriedade é consequência de:",
+          "alternativas": [
+            "Forças de London entre moléculas de água",
+            "Ligações de hidrogênio entre moléculas de água",
+            "Ligações covalentes intramoleculares",
+            "Alta densidade da água",
+            "Baixa viscosidade da água"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "As ligações de hidrogênio entre moléculas de água na superfície criam uma forte atração lateral, formando uma 'película' resistente - a tensão superficial."
+        },
+        {
+          "enunciado": "Qual das seguintes substâncias conduz corrente elétrica no estado líquido?",
+          "alternativas": [
+            "Sacarose fundida (C₁₂H₂₂O₁₁)",
+            "Etanol (C₂H₅OH)",
+            "Cloreto de sódio fundido (NaCl)",
+            "Hexano (C₆H₁₄)",
+            "Glicose em solução (C₆H₁₂O₆)"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "NaCl fundido libera íons Na⁺ e Cl⁻ móveis que transportam corrente elétrica. As demais são substâncias moleculares que não formam íons quando fundidas ou dissolvidas."
+        },
+        {
+          "enunciado": "O gelo possui densidade menor que a água líquida. Isso tem importância ecológica porque:",
+          "alternativas": [
+            "Permite que o gelo afunde, protegendo o fundo dos lagos",
+            "Faz com que icebergs flutuem, sendo visíveis aos navios",
+            "Permite que lagos congelem de cima para baixo, protegendo a vida aquática",
+            "Aumenta a temperatura dos oceanos polares",
+            "Diminui a salinidade da água do mar"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Como o gelo é menos denso, ele flutua formando uma camada isolante na superfície. Isso permite que a água embaixo permaneça líquida, preservando a vida aquática no inverno."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "id": "sociologia-cultura",
+  "titulo": "Cultura e Identidade",
+  "descricao": "Diversidade cultural, identidade social e processos de socializacao",
+  "icone": "🎨",
+  "cor": "from-orange-500 to-red-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "O Conceito de Cultura",
+      "resumo": "Cultura como conjunto de simbolos, valores, normas e praticas compartilhadas por um grupo social.",
+      "topicos": [
+        "Definicoes de cultura",
+        "Cultura material x imaterial",
+        "Universalidade e diversidade cultural",
+        "Etnocentrismo x relativismo cultural",
+        "Patrimonio cultural"
+      ],
+      "exemplos": [
+        "Cultura material: objetos, artefatos, tecnologia",
+        "Cultura imaterial: crencas, valores, linguas, tradicoes",
+        "Etnocentrismo: julgar outras culturas pela propria"
+      ],
+      "dicas": [
+        "Cultura e aprendida, nao biologica",
+        "Todas as culturas sao igualmente validas (relativismo)",
+        "ENEM valoriza respeito a diversidade cultural"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O etnocentrismo pode ser definido como:",
+          "alternativas": [
+            "O respeito e valorizacao de todas as culturas",
+            "A tendencia de julgar outras culturas a partir dos valores da propria cultura",
+            "A ausencia de qualquer identidade cultural",
+            "A compreensao profunda de culturas diferentes",
+            "A rejeicao completa da propria cultura"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Etnocentrismo e a visao que toma a propria cultura como centro, superior e padrao para julgar as demais, geralmente levando a preconceito e incompreensao das diferencas culturais.",
+          "dificuldade": "facil",
+          "tags": ["cultura", "etnocentrismo", "diversidade"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Socializacao e Identidade",
+      "resumo": "Processos pelos quais individuos aprendem e internalizam normas, valores e papeis sociais de sua cultura.",
+      "topicos": [
+        "Socializacao primaria e secundaria",
+        "Agentes de socializacao: familia, escola, midia",
+        "Papeis sociais e status",
+        "Identidade individual e coletiva",
+        "Gerações e socializacao"
+      ],
+      "exemplos": [
+        "Familia: primeira agente de socializacao",
+        "Escola: socializa valores e normas formais",
+        "Midia: transmite padroes culturais contemporaneos"
+      ],
+      "dicas": [
+        "Socializacao primaria: familia (infancia)",
+        "Socializacao secundaria: escola, trabalho, grupos",
+        "Identidade e construida socialmente"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "A socializacao primaria refere-se principalmente ao processo que ocorre:",
+          "alternativas": [
+            "Na vida adulta profissional",
+            "Na primeira infancia, sobretudo no ambiente familiar",
+            "Apenas atraves da educacao formal escolar",
+            "Exclusivamente pela influencia da midia",
+            "Apenas entre grupos de amigos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A socializacao primaria ocorre na primeira infancia, principalmente no ambiente familiar, onde a crianca aprende os primeiros valores, normas e formas basicas de comportamento social.",
+          "dificuldade": "facil",
+          "tags": ["socializacao", "familia", "identidade"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Multiculturalismo e Diversidade",
+      "resumo": "A coexistencia de multiplas culturas em uma sociedade e os desafios do dialogo intercultural.",
+      "topicos": [
+        "Sociedades multiculturais",
+        "Minorias culturais e etnicas",
+        "Interculturalidade e dialogo",
+        "Preconceito e discriminacao",
+        "Politicas de reconhecimento"
+      ],
+      "exemplos": [
+        "Brasil: indigenas, quilombolas, imigrantes",
+        "Xenofobia: medo/rejeicao ao estrangeiro",
+        "Cotas: politica de reconhecimento e reparacao"
+      ],
+      "dicas": [
+        "Multiculturalismo: convivencia de diversas culturas",
+        "Interculturalidade: dialogo e trocas entre culturas",
+        "ENEM aborda respeito as diferencas"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "O multiculturalismo propoe que em uma sociedade:",
+          "alternativas": [
+            "Todas as culturas devem ser eliminadas exceto uma",
+            "Diferentes grupos culturais possam coexistir mantendo suas identidades",
+            "Apenas a cultura dominante tenha direitos",
+            "Nao deve haver nenhuma diversidade cultural",
+            "Todas as pessoas devem ter a mesma cultura"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O multiculturalismo defende a coexistencia de multiplas culturas em uma sociedade, com reconhecimento e respeito as identidades culturais diversas, rejeitando a assimilacao forcada.",
+          "dificuldade": "facil",
+          "tags": ["multiculturalismo", "diversidade", "pluralidade"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Cultura de Massa e Industria Cultural",
+      "resumo": "A producao cultural em larga escala para consumo massivo e seus efeitos na sociedade contemporanea.",
+      "topicos": [
+        "Conceito de cultura de massa",
+        "Industria cultural (Adorno e Horkheimer)",
+        "Midia e homogeneizacao cultural",
+        "Cultura popular x cultura erudita x cultura de massa",
+        "Globalizacao cultural"
+      ],
+      "exemplos": [
+        "TV, cinema, musica pop: produtos culturais massificados",
+        "McDonald's: simbolo da globalizacao cultural",
+        "K-pop, Hollywood: exportacao cultural"
+      ],
+      "dicas": [
+        "Cultura de massa: produzida industrialmente para consumo",
+        "Critica: padronizacao e manipulacao",
+        "ENEM questiona efeitos da midia na sociedade"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "O conceito de industria cultural de Adorno e Horkheimer critica:",
+          "alternativas": [
+            "A democratizacao do acesso a cultura",
+            "A transformacao da cultura em mercadoria padronizada que aliena e manipula",
+            "Toda e qualquer forma de producao cultural",
+            "Apenas a cultura erudita",
+            "A diversidade de expressoes culturais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A industria cultural transforma arte e cultura em mercadorias padronizadas produzidas em serie, gerando alienacao, conformismo e manipulacao ao inves de consciencia critica e emancipacao.",
+          "dificuldade": "media",
+          "tags": ["industria-cultural", "adorno", "cultura-massa"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Identidades Contemporaneas",
+      "resumo": "Identidades de genero, etnicas, sexuais e outras formas de identificacao na sociedade contemporanea.",
+      "topicos": [
+        "Genero e identidade sexual",
+        "Identidades etnico-raciais",
+        "Identidades hibridas e fluidas",
+        "Movimentos identitarios",
+        "Reconhecimento e direitos"
+      ],
+      "exemplos": [
+        "Movimento LGBTQIA+: luta por reconhecimento",
+        "Movimento negro: afirmacao da identidade afro",
+        "Feminismo: questionar papeis de genero tradicionais"
+      ],
+      "dicas": [
+        "Identidades sao socialmente construidas, nao fixas",
+        "Lutas por reconhecimento e direitos",
+        "ENEM valoriza respeito a diversidade identitaria"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "As identidades contemporaneas caracterizam-se por serem:",
+          "alternativas": [
+            "Fixas e imutaveis ao longo da vida",
+            "Determinadas exclusivamente pela biologia",
+            "Socialmente construidas, multiplas e fluidas",
+            "Irrelevantes na sociedade atual",
+            "Identicas para todos os individuos"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Na perspectiva sociologica contemporanea, identidades sao construcoes sociais, multiplas (uma pessoa tem varias identidades simultaneas) e fluidas (podem mudar ao longo do tempo e contextos).",
+          "dificuldade": "media",
+          "tags": ["identidade", "contemporaneidade", "genero"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "id": "sociologia-estratificacao",
+  "titulo": "Estratificacao e Desigualdade",
+  "descricao": "Classes sociais, mobilidade, pobreza e desigualdades na sociedade",
+  "icone": "📊",
+  "cor": "from-emerald-500 to-green-600",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Conceitos de Estratificacao Social",
+      "resumo": "Sistemas de hierarquizacao social: castas, estamentos e classes sociais.",
+      "topicos": [
+        "O que e estratificacao social",
+        "Sistema de castas (India)",
+        "Sistema estamental (feudalismo)",
+        "Classes sociais (capitalismo)",
+        "Mobilidade social"
+      ],
+      "exemplos": [
+        "Castas: nascimento determina posicao, sem mobilidade",
+        "Estamentos: nobreza, clero, povo",
+        "Classes: burguesia, proletariado (Marx)"
+      ],
+      "dicas": [
+        "Estratificacao: hierarquizacao da sociedade",
+        "Castas: fechadas; Classes: abertas (mobilidade)",
+        "ENEM compara sistemas de estratificacao"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A principal diferenca entre o sistema de castas e o sistema de classes e que:",
+          "alternativas": [
+            "Ambos tem mobilidade social identica",
+            "Nas castas a posicao e hereditaria e rigida, nas classes ha possibilidade de mobilidade",
+            "Nas classes nao ha desigualdade",
+            "Nas castas ha perfeita igualdade",
+            "Nao ha diferencas entre os sistemas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "No sistema de castas a posicao social e determinada pelo nascimento e e praticamente imutavel. No sistema de classes, embora haja desigualdade, existe a possibilidade teorica de mobilidade social ascendente ou descendente.",
+          "dificuldade": "facil",
+          "tags": ["estratificacao", "castas", "classes"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Teorias sobre Classes Sociais",
+      "resumo": "As perspectivas de Marx e Weber sobre classes sociais e desigualdade.",
+      "topicos": [
+        "Classes em Marx: burguesia e proletariado",
+        "Luta de classes e conflito",
+        "Classes em Weber: classe, status, partido",
+        "Estratificacao multidimensional",
+        "Comparacao Marx x Weber"
+      ],
+      "exemplos": [
+        "Marx: classe definida pela relacao com meios de producao",
+        "Weber: classe economica, status social, poder politico",
+        "Luta de classes: motor da historia (Marx)"
+      ],
+      "dicas": [
+        "Marx: enfase economica e conflito",
+        "Weber: estratificacao e multidimensional",
+        "ENEM pede para identificar as teorias"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Para Karl Marx, as classes sociais se definem fundamentalmente pela:",
+          "alternativas": [
+            "Renda individual de cada pessoa",
+            "Relacao com os meios de producao (proprietarios x nao-proprietarios)",
+            "Educacao formal recebida",
+            "Preferencias culturais",
+            "Escolha individual de cada um"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Para Marx, a classe social e determinada pela posicao na estrutura produtiva: proprietarios dos meios de producao (burguesia) x nao-proprietarios que vendem forca de trabalho (proletariado).",
+          "dificuldade": "facil",
+          "tags": ["marx", "classes-sociais", "meios-producao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Desigualdade e Pobreza",
+      "resumo": "Conceitos, medicoes e causas da desigualdade social e da pobreza.",
+      "topicos": [
+        "Conceitos de pobreza: absoluta e relativa",
+        "Desigualdade de renda e riqueza",
+        "Indices: Gini, IDH",
+        "Causas estruturais da desigualdade",
+        "Reproducao da pobreza"
+      ],
+      "exemplos": [
+        "Pobreza absoluta: nao ter o minimo para sobreviver",
+        "Pobreza relativa: desigualdade em relacao a media",
+        "Brasil: pais muito desigual (alto Gini)"
+      ],
+      "dicas": [
+        "Desigualdade nao e o mesmo que pobreza",
+        "Indice de Gini: 0 (igualdade) a 1 (desigualdade maxima)",
+        "ENEM relaciona com politicas sociais"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "O conceito de pobreza relativa refere-se a:",
+          "alternativas": [
+            "Ausencia absoluta de recursos para sobrevivencia",
+            "Situacao de privacao em relacao ao padrao de vida medio da sociedade",
+            "Riqueza excessiva de alguns grupos",
+            "Igualdade perfeita de condicoes",
+            "Inexistencia de necessidades basicas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Pobreza relativa define-se pela desigualdade em relacao ao padrao medio de vida da sociedade, diferente da pobreza absoluta que e a carencia de recursos minimos para sobrevivencia fisica.",
+          "dificuldade": "media",
+          "tags": ["pobreza", "desigualdade", "pobreza-relativa"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Mobilidade Social",
+      "resumo": "Movimentacao de individuos e grupos entre posicoes sociais: ascensao, descenso, mobilidade intergeracional.",
+      "topicos": [
+        "Mobilidade vertical (ascendente/descendente)",
+        "Mobilidade horizontal",
+        "Mobilidade intergeracional",
+        "Fatores de mobilidade: educacao, economia",
+        "Meritocracia e desigualdade de oportunidades"
+      ],
+      "exemplos": [
+        "Filho de operario que se torna medico: mobilidade ascendente",
+        "Mudanca de emprego no mesmo nivel: mobilidade horizontal",
+        "Educacao como fator de mobilidade"
+      ],
+      "dicas": [
+        "Mobilidade vertical: mudanca de classe",
+        "Meritocracia: ideal nem sempre realizado",
+        "ENEM questiona barreiras a mobilidade"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "A mobilidade social vertical ascendente ocorre quando:",
+          "alternativas": [
+            "Uma pessoa muda de emprego no mesmo nivel social",
+            "Uma pessoa melhora sua posicao na hierarquia social",
+            "Nao ha nenhuma mudanca de posicao",
+            "Uma pessoa piora sua posicao social",
+            "A sociedade permanece estatica"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Mobilidade social vertical ascendente e a movimentacao de individuos para posicoes superiores na hierarquia social, geralmente atraves de educacao, carreira profissional ou mudancas economicas.",
+          "dificuldade": "facil",
+          "tags": ["mobilidade-social", "ascensao", "estratificacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Desigualdades Contemporaneas",
+      "resumo": "Desigualdades de genero, raca, regional e outras formas de estratificacao na sociedade atual.",
+      "topicos": [
+        "Desigualdade de genero",
+        "Desigualdade racial",
+        "Desigualdade regional (Norte/Sul)",
+        "Interseccionalidade",
+        "Politicas de reducao da desigualdade"
+      ],
+      "exemplos": [
+        "Mulheres ganham menos que homens (mesmo trabalho)",
+        "Populacao negra tem menor renda media",
+        "Nordeste mais pobre que Sul/Sudeste",
+        "Cotas: politica afirmativa"
+      ],
+      "dicas": [
+        "Desigualdades se entrecruzam (interseccionalidade)",
+        "Genero, raca, classe se combinam",
+        "ENEM valoriza equidade e inclusao"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "O conceito de interseccionalidade refere-se a:",
+          "alternativas": [
+            "A separacao total entre diferentes formas de desigualdade",
+            "O cruzamento e sobreposicao de diferentes formas de discriminacao e desigualdade",
+            "A inexistencia de desigualdades na sociedade",
+            "Apenas a desigualdade economica",
+            "A igualdade perfeita entre todos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Interseccionalidade e o conceito que reconhece que diferentes formas de desigualdade e discriminacao (classe, genero, raca, etc.) se cruzam e se reforçam mutuamente, criando experiencias unicas de opressao.",
+          "dificuldade": "media",
+          "tags": ["interseccionalidade", "desigualdade", "genero-raca"]
+        }
+      ]
+    }
+  ]
+}

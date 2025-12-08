@@ -1,0 +1,360 @@
+{
+  "id": "quimica-equilibrio",
+  "titulo": "Equilíbrio Químico",
+  "descricao": "Compreenda equilíbrio químico, constantes Kc e Kp, Princípio de Le Chatelier e equilíbrios ácido-base (pH)",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Conceito de Equilíbrio Químico",
+      "topicos": [
+        {
+          "titulo": "Reações Reversíveis",
+          "conteudo": "Reações reversíveis: podem ocorrer nos dois sentidos. Representadas por ⇌. Sentido direto (→): reagentes → produtos. Sentido inverso (←): produtos → reagentes. A maioria das reações é reversível, mas muitas têm equilíbrio muito deslocado."
+        },
+        {
+          "titulo": "Estado de Equilíbrio",
+          "conteudo": "Equilíbrio dinâmico: velocidades direta e inversa iguais. Concentrações permanecem constantes (mas reações continuam). v(direta) = v(inversa). Não significa concentrações iguais! Macroscopicamente estático, microscopicamente dinâmico."
+        },
+        {
+          "titulo": "Características do Equilíbrio",
+          "conteudo": "1) Sistema fechado. 2) Dinâmico (reações continuam). 3) Propriedades macroscópicas constantes. 4) Pode ser alcançado de ambos os lados. 5) Sensível a mudanças externas. 6) Constante de equilíbrio K característica."
+        },
+        {
+          "titulo": "Equilíbrio vs Reação Completa",
+          "conteudo": "Equilíbrio: quantidades significativas de reagentes e produtos. Reação completa: reagentes quase totalmente convertidos (K muito grande) ou quase não reagem (K muito pequeno). K >> 1: favorece produtos. K << 1: favorece reagentes."
+        }
+      ],
+      "exemplos": [
+        "N₂O₄(g) ⇌ 2NO₂(g) (equilíbrio visível: incolor ⇌ marrom)",
+        "H₂(g) + I₂(g) ⇌ 2HI(g) (equilíbrio clássico)",
+        "Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺ (incolor ⇌ vermelho)",
+        "NaCl(s) ⇌ Na⁺(aq) + Cl⁻(aq) (dissolução)",
+        "CH₃COOH ⇌ CH₃COO⁻ + H⁺ (ácido fraco)"
+      ],
+      "dicas": [
+        "Equilíbrio ≠ estático, reações continuam ocorrendo",
+        "Concentrações constantes ≠ concentrações iguais",
+        "Apenas sistemas fechados atingem equilíbrio verdadeiro"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Em um sistema em equilíbrio químico, é correto afirmar que:",
+          "alternativas": [
+            "As reações direta e inversa param completamente",
+            "As concentrações de reagentes e produtos são iguais",
+            "As velocidades direta e inversa são iguais",
+            "Não há mais reagentes no sistema",
+            "A temperatura deve ser sempre 25°C"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "No equilíbrio, v(direta) = v(inversa), por isso as concentrações permanecem constantes. As reações continuam ocorrendo, mas em velocidades iguais."
+        },
+        {
+          "enunciado": "Uma constante de equilíbrio K = 10⁻⁵ indica que:",
+          "alternativas": [
+            "A reação é muito rápida",
+            "O equilíbrio favorece os produtos",
+            "O equilíbrio favorece os reagentes",
+            "Não há equilíbrio",
+            "A reação é endotérmica"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "K muito pequeno (K << 1) indica que no equilíbrio há muito mais reagentes que produtos. A reação direta é pouco extensiva."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Constantes de Equilíbrio Kc e Kp",
+      "topicos": [
+        {
+          "titulo": "Constante Kc (Concentração)",
+          "conteudo": "Para aA + bB ⇌ cC + dD:\nKc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ\nOnde [ ] = concentração molar (mol/L). Produtos no numerador, reagentes no denominador. Expoentes = coeficientes estequiométricos. Kc depende apenas da temperatura."
+        },
+        {
+          "titulo": "Constante Kp (Pressão Parcial)",
+          "conteudo": "Para gases: Kp = (Pc)ᶜ(Pd)ᵈ / (Pa)ᵃ(Pb)ᵇ\nOnde P = pressão parcial. Relação: Kp = Kc(RT)^Δn, onde Δn = (c+d) - (a+b). Se Δn = 0, Kp = Kc. R = 0,082 atm·L/(mol·K)."
+        },
+        {
+          "titulo": "Regras Importantes",
+          "conteudo": "1) Sólidos e líquidos puros: não entram na expressão (atividade = 1). 2) Só substâncias gasosas ou em solução. 3) Inverter equação: K' = 1/K. 4) Multiplicar equação por n: K' = Kⁿ. 5) Somar equações: K(total) = K₁ × K₂."
+        },
+        {
+          "titulo": "Quociente Reacional (Q)",
+          "conteudo": "Q tem mesma forma que K, mas com concentrações/pressões não-equilibradas. Q < K: reação direta favorecida (→). Q = K: em equilíbrio. Q > K: reação inversa favorecida (←). Q permite prever direção da reação."
+        }
+      ],
+      "exemplos": [
+        "N₂ + 3H₂ ⇌ 2NH₃: Kc = [NH₃]² / ([N₂][H₂]³)",
+        "CaCO₃(s) ⇌ CaO(s) + CO₂(g): Kp = P(CO₂) (sólidos não entram)",
+        "H₂O(l) ⇌ H⁺(aq) + OH⁻(aq): Kw = [H⁺][OH⁻] (água pura não entra)",
+        "Se Kc = 4 e inverter: K'c = 1/4 = 0,25",
+        "N₂O₄ ⇌ 2NO₂: Δn = 2-1 = 1, Kp = Kc(RT)"
+      ],
+      "dicas": [
+        "Produtos sempre no numerador, reagentes no denominador",
+        "K grande (>1): muito produto; K pequeno (<1): muito reagente",
+        "K depende SÓ da temperatura, não de concentração/pressão"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Para a reação 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), a expressão de Kc é:",
+          "alternativas": [
+            "Kc = [SO₃] / ([SO₂][O₂])",
+            "Kc = [SO₃]² / ([SO₂]²[O₂])",
+            "Kc = [SO₂]²[O₂] / [SO₃]²",
+            "Kc = [SO₃] / [SO₂][O₂]²",
+            "Kc = [SO₂][O₂] / [SO₃]"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Kc = [produtos] / [reagentes] com expoentes dos coeficientes. Kc = [SO₃]² / ([SO₂]²[O₂]). Produtos (SO₃) no numerador."
+        },
+        {
+          "enunciado": "Para a reação CaCO₃(s) ⇌ CaO(s) + CO₂(g), a constante Kp é:",
+          "alternativas": [
+            "Kp = P(CO₂) × P(CaO) / P(CaCO₃)",
+            "Kp = P(CO₂)",
+            "Kp = 1 / P(CO₂)",
+            "Kp = P(CaO) / P(CaCO₃)",
+            "Impossível calcular"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Sólidos puros (CaCO₃ e CaO) não entram na expressão de equilíbrio. Apenas o gás CO₂ aparece: Kp = P(CO₂)."
+        },
+        {
+          "enunciado": "Se Q < K para uma reação, o sistema irá:",
+          "alternativas": [
+            "Permanecer em equilíbrio",
+            "Deslocar para a esquerda (formar reagentes)",
+            "Deslocar para a direita (formar produtos)",
+            "Parar de reagir",
+            "Aumentar a temperatura"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Q < K significa que há menos produtos do que no equilíbrio. A reação desloca para a direita (sentido direto) para formar mais produtos até Q = K."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Princípio de Le Chatelier",
+      "topicos": [
+        {
+          "titulo": "Enunciado do Princípio",
+          "conteudo": "Se um sistema em equilíbrio sofre uma perturbação, ele se desloca no sentido que minimiza essa perturbação, atingindo novo equilíbrio. Sistema 'responde' à mudança tentando anulá-la. Aplica-se a concentração, pressão, temperatura."
+        },
+        {
+          "titulo": "Efeito da Concentração",
+          "conteudo": "Adicionar reagente/produto: equilíbrio desloca para consumi-lo. Remover reagente/produto: equilíbrio desloca para repô-lo. Adicionar A: desloca →. Remover A: desloca ←. Adicionar C: desloca ←. Não altera K."
+        },
+        {
+          "titulo": "Efeito da Pressão",
+          "conteudo": "Só afeta equilíbrios gasosos. Aumentar pressão: desloca para lado com menos mols de gás. Diminuir pressão: desloca para lado com mais mols. Se Δn = 0 (mesma quantidade de mols), pressão não afeta posição. Não altera K."
+        },
+        {
+          "titulo": "Efeito da Temperatura",
+          "conteudo": "ÚNICO fator que altera K! Aumentar T: favorece reação endotérmica (absorve calor). Diminuir T: favorece reação exotérmica (libera calor). Tratar calor como produto (exo) ou reagente (endo). Exo + calor: desloca ←. Endo + calor: desloca →."
+        }
+      ],
+      "exemplos": [
+        "N₂ + 3H₂ ⇌ 2NH₃ + calor: ↑T desloca ← (endo), ↑P desloca → (4→2 mols)",
+        "2NO₂(marrom) ⇌ N₂O₄(incolor) + calor: ↓T → incolor",
+        "Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺: adicionar Fe³⁺ → mais vermelho",
+        "CaCO₃(s) ⇌ CaO(s) + CO₂(g): remover CO₂ → mais decomposição",
+        "H₂(g) + I₂(g) ⇌ 2HI(g): Δn=0, pressão não afeta"
+      ],
+      "dicas": [
+        "Concentração/pressão: deslocam equilíbrio, mas K constante",
+        "Temperatura: desloca E altera o valor de K",
+        "Catalisador: acelera alcance do equilíbrio, não desloca"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Para N₂(g) + 3H₂(g) ⇌ 2NH₃(g) ΔH < 0, para aumentar o rendimento de NH₃ deve-se:",
+          "alternativas": [
+            "Aumentar temperatura e diminuir pressão",
+            "Diminuir temperatura e aumentar pressão",
+            "Aumentar temperatura e pressão",
+            "Diminuir temperatura e pressão",
+            "Manter temperatura e pressão constantes"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Reação exotérmica (ΔH<0): ↓T favorece produtos. 4 mols gas → 2 mols: ↑P favorece produtos (menor volume). Logo: baixa T, alta P."
+        },
+        {
+          "enunciado": "Em um equilíbrio, adicionar um catalisador irá:",
+          "alternativas": [
+            "Deslocar o equilíbrio para os produtos",
+            "Deslocar o equilíbrio para os reagentes",
+            "Aumentar a constante de equilíbrio",
+            "Não alterar a posição de equilíbrio",
+            "Diminuir a temperatura do sistema"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Catalisadores aceleram AMBAS as reações (direta e inversa) igualmente, não alterando a posição de equilíbrio nem K. Apenas fazem o equilíbrio ser alcançado mais rápido."
+        },
+        {
+          "enunciado": "Para 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), aumentar a pressão desloca o equilíbrio para:",
+          "alternativas": [
+            "A esquerda, pois há mais mols de SO₂",
+            "A direita, pois diminui o número de mols",
+            "A esquerda, aumentando O₂",
+            "Não desloca, Δn = 0",
+            "Depende da temperatura"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Δn = 2 - (2+1) = -1. Aumentar pressão favorece o lado com menos mols de gás (produtos: 2 mols vs reagentes: 3 mols). Desloca para a direita."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Equilíbrio Iônico e pH",
+      "topicos": [
+        {
+          "titulo": "Equilíbrio da Água",
+          "conteudo": "H₂O(l) ⇌ H⁺(aq) + OH⁻(aq). Constante: Kw = [H⁺][OH⁻] = 1,0 × 10⁻¹⁴ (25°C). Água pura: [H⁺] = [OH⁻] = 1,0 × 10⁻⁷ M. Produto iônico da água é constante em dada temperatura."
+        },
+        {
+          "titulo": "Conceito de pH e pOH",
+          "conteudo": "pH = -log[H⁺]. pOH = -log[OH⁻]. pH + pOH = 14 (25°C). Ácido: pH < 7. Neutro: pH = 7. Básico: pH > 7. Escala logarítmica: cada unidade = 10x em [H⁺]."
+        },
+        {
+          "titulo": "Ácidos e Bases Fracos",
+          "conteudo": "Ácido fraco: HA ⇌ H⁺ + A⁻, Ka = [H⁺][A⁻]/[HA]. Base fraca: B + H₂O ⇌ BH⁺ + OH⁻, Kb = [BH⁺][OH⁻]/[B]. Quanto maior Ka/Kb, mais forte o ácido/base. Ka × Kb = Kw (par conjugado)."
+        },
+        {
+          "titulo": "Soluções Tampão",
+          "conteudo": "Mistura de ácido fraco + sal da base conjugada (ou base fraca + sal do ácido conjugado). Resiste a mudanças de pH ao adicionar ácido/base. Exemplo: CH₃COOH + CH₃COONa. Importante: sangue (pH 7,4), processos biológicos."
+        }
+      ],
+      "exemplos": [
+        "[H⁺] = 1×10⁻³ M → pH = 3 (ácido)",
+        "[OH⁻] = 1×10⁻⁴ M → pOH = 4 → pH = 10 (básico)",
+        "HCl: ácido forte, ionização 100%, pH = -log[HCl]",
+        "CH₃COOH: ácido fraco, Ka = 1,8×10⁻⁵, ionização parcial",
+        "Tampão: CH₃COOH/CH₃COO⁻ mantém pH ~4,7"
+      ],
+      "dicas": [
+        "pH < 7: ácido; pH = 7: neutro; pH > 7: básico",
+        "Ácido forte: Ka grande, ionização total. Fraco: Ka pequeno, parcial",
+        "Tampão: ácido fraco + base conjugada (ou vice-versa)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Uma solução tem [H⁺] = 1,0 × 10⁻⁵ M. O pH e o caráter da solução são:",
+          "alternativas": [
+            "pH = 5, ácido",
+            "pH = 5, básico",
+            "pH = 9, básico",
+            "pH = 9, ácido",
+            "pH = 7, neutro"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "pH = -log(1×10⁻⁵) = 5. Como pH < 7, a solução é ácida. [H⁺] > [OH⁻]."
+        },
+        {
+          "enunciado": "Se o pH de uma solução é 3, e dilui-se 10 vezes com água, o novo pH será aproximadamente:",
+          "alternativas": [
+            "1",
+            "2",
+            "4",
+            "6",
+            "7"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "pH = 3 → [H⁺] = 10⁻³. Diluir 10x: [H⁺] = 10⁻⁴ → pH = 4. Cada diluição de 10x aumenta pH em ~1 unidade (ácidos/bases fortes)."
+        },
+        {
+          "enunciado": "Uma solução tampão é caracterizada por:",
+          "alternativas": [
+            "Ter sempre pH = 7",
+            "Ser formada por ácido forte e base forte",
+            "Resistir a mudanças de pH",
+            "Ter pH muito ácido (< 3)",
+            "Não conter água"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Soluções tampão resistem a mudanças significativas de pH quando pequenas quantidades de ácido ou base são adicionadas, devido ao equilíbrio ácido fraco/base conjugada."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Produto de Solubilidade (Kps)",
+      "topicos": [
+        {
+          "titulo": "Definição de Kps",
+          "conteudo": "Para sais pouco solúveis: AₓBᵧ(s) ⇌ xA^(y+)(aq) + yB^(x-)(aq). Kps = [A⁺]ˣ[B⁻]ʸ. Quanto menor Kps, menos solúvel o sal. Sólido não entra na expressão. Kps depende apenas da temperatura."
+        },
+        {
+          "titulo": "Relação Q vs Kps",
+          "conteudo": "Q = [A⁺]ˣ[B⁻]ʸ (produto iônico). Q < Kps: solução insaturada, dissolve mais. Q = Kps: saturada, em equilíbrio. Q > Kps: supersaturada, precipita. Permite prever formação de precipitado."
+        },
+        {
+          "titulo": "Efeito do Íon Comum",
+          "conteudo": "Adicionar íon comum (já presente no equilíbrio) diminui solubilidade. Le Chatelier: desloca equilíbrio para sólido. Exemplo: AgCl em solução de NaCl (Cl⁻ comum) precipita mais AgCl."
+        },
+        {
+          "titulo": "Solubilidade Molar",
+          "conteudo": "Solubilidade (s): concentração molar do sal dissolvido no equilíbrio. Relação com Kps depende da estequiometria. AB: Kps = s². AB₂: Kps = 4s³. A₂B₃: Kps = 108s⁵. Calcular um a partir do outro."
+        }
+      ],
+      "exemplos": [
+        "AgCl ⇌ Ag⁺ + Cl⁻: Kps = [Ag⁺][Cl⁻] = 1,8×10⁻¹⁰",
+        "CaF₂ ⇌ Ca²⁺ + 2F⁻: Kps = [Ca²⁺][F⁻]² = 3,9×10⁻¹¹",
+        "Se [Ag⁺] = 1×10⁻⁵ e [Cl⁻] = 1×10⁻⁵: Q = 10⁻¹⁰ < Kps, não precipita",
+        "AgCl: s = √Kps = √(1,8×10⁻¹⁰) ≈ 1,3×10⁻⁵ M",
+        "Adicionar NaCl a AgCl: ↑[Cl⁻] → precipita mais AgCl"
+      ],
+      "dicas": [
+        "Kps pequeno = sal pouco solúvel (precipita facilmente)",
+        "Íon comum: sempre diminui solubilidade",
+        "Formação de precipitado: Q > Kps"
+      ],
+      "questoes": [
+        {
+          "enunciado": "Para o AgBr, Kps = 5×10⁻¹³. Ao misturar soluções com [Ag⁺] = 1×10⁻⁶ M e [Br⁻] = 1×10⁻⁶ M, o que ocorre?",
+          "alternativas": [
+            "Não forma precipitado (Q < Kps)",
+            "Forma precipitado (Q > Kps)",
+            "Sistema está em equilíbrio (Q = Kps)",
+            "Impossível determinar",
+            "AgBr se dissolve completamente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Q = [Ag⁺][Br⁻] = 1×10⁻⁶ × 1×10⁻⁶ = 1×10⁻¹². Q (10⁻¹²) > Kps (5×10⁻¹³), logo forma precipitado de AgBr."
+        },
+        {
+          "enunciado": "A solubilidade do AgCl diminui ao adicionar NaCl porque:",
+          "alternativas": [
+            "O NaCl reage com AgCl",
+            "A temperatura aumenta",
+            "Ocorre o efeito do íon comum (Cl⁻)",
+            "O pH da solução muda",
+            "Kps aumenta"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "NaCl fornece Cl⁻ (íon comum). Pelo Princípio de Le Chatelier, o excesso de Cl⁻ desloca o equilíbrio AgCl(s) ⇌ Ag⁺ + Cl⁻ para a esquerda, precipitando AgCl."
+        },
+        {
+          "enunciado": "Para um sal AB₂ com solubilidade s, a expressão de Kps em função de s é:",
+          "alternativas": [
+            "Kps = s²",
+            "Kps = 2s²",
+            "Kps = 4s³",
+            "Kps = s³",
+            "Kps = 8s³"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "AB₂ → A²⁺ + 2B⁻. [A²⁺] = s, [B⁻] = 2s. Kps = [A²⁺][B⁻]² = s(2s)² = s×4s² = 4s³."
+        }
+      ]
+    }
+  ]
+}

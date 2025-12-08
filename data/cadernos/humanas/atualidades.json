@@ -1,0 +1,575 @@
+{
+  "id": "atualidades",
+  "slug": "atualidades",
+  "titulo": "Atualidades para o ENEM",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "Temas contemporâneos mais cobrados no ENEM: política, economia, sociedade e cultura",
+  "icone": "Newspaper",
+  "cor": "#F59E0B",
+  "tempoEstimado": "7 horas",
+  "fpRecompensa": 0,
+  "tags": ["Atualidades", "Contemporâneo", "Brasil", "Mundo", "ENEM"],
+  "modulos": [
+    {
+      "id": "modulo01",
+      "titulo": "Desigualdades Sociais no Brasil Contemporâneo",
+      "resumo": "Compreensão das desigualdades econômicas, raciais, de gênero e regionais no Brasil atual",
+      "topicos": [
+        {
+          "titulo": "Desigualdade de Renda e Concentração de Riqueza",
+          "conteudo": "O Brasil é um dos países mais desiguais do mundo em termos de distribuição de renda, situação que se mantém historicamente e foi agravada em períodos recentes. O Índice de Gini brasileiro (que mede desigualdade de renda em escala de 0 a 1, onde 1 representa máxima desigualdade) historicamente situa-se acima de 0,5, colocando o país entre os mais desiguais globalmente. Essa concentração tem raízes estruturais profundas relacionadas à formação histórica do país.\n\nAs causas da desigualdade brasileira são múltiplas e inter-relacionadas: herança escravocrata que criou abismos sociais e raciais; concentração fundiária desde o período colonial; industrialização que não gerou inclusão universal; sistema tributário regressivo que tributa mais o consumo (afetando desproporcionalmente os pobres) do que renda e patrimônio; acesso desigual à educação de qualidade; mercado de trabalho com alta informalidade e precarização; e captura do Estado por elites econômicas que influenciam políticas públicas em seu favor.\n\nAs consequências são graves para o desenvolvimento nacional: limitação do mercado consumidor interno, perpetuação da pobreza através de gerações (baixa mobilidade social), violência e criminalidade associadas à exclusão social, custos elevados para sistemas de saúde e segurança pública, fragmentação do tecido social, e obstáculos à coesão nacional. Dados recentes mostram que os 10% mais ricos concentram cerca de 50% da renda nacional, enquanto os 50% mais pobres ficam com apenas 10%. Para o ENEM, é fundamental compreender que desigualdades não são naturais ou inevitáveis, mas produtos de escolhas históricas e estruturas sociais que podem ser transformadas através de políticas públicas adequadas, como programas de transferência de renda, reforma tributária progressiva, universalização de serviços públicos de qualidade e combate a privilégios."
+        },
+        {
+          "titulo": "Racismo Estrutural e Desigualdades Raciais",
+          "conteudo": "O racismo estrutural refere-se a como o racismo está enraizado nas instituições, práticas e estruturas sociais brasileiras, não se limitando a atos individuais de discriminação, mas permeando relações de poder, acesso a oportunidades e distribuição de recursos. Esse conceito, desenvolvido por intelectuais como Silvio Almeida, é fundamental para compreender as desigualdades raciais persistentes no Brasil, país que viveu quase quatro séculos de escravidão e aboliu-a tardiamente (1888) sem políticas de reparação ou integração da população negra.\n\nAs desigualdades raciais manifestam-se em todas as dimensões sociais: renda (negros ganham em média cerca de 50% do que ganham brancos), mercado de trabalho (maiores taxas de desemprego e informalidade entre negros), educação (menores taxas de acesso ao ensino superior), saúde (mortalidade materna maior entre mulheres negras, menor expectativa de vida), violência (jovens negros são as principais vítimas de homicídios), representação política (sub-representação nos espaços de poder), e justiça criminal (negros são maioria da população carcerária).\n\nO mito da democracia racial, ideologia que afirma que o Brasil seria uma sociedade sem racismo devido à miscigenação, foi historicamente utilizado para negar o racismo e obstruir políticas de combate às desigualdades raciais. No entanto, dados estatísticos evidenciam inequivocamente essas desigualdades. Políticas de ação afirmativa, como cotas raciais em universidades públicas (instituídas pela Lei 12.711/2012), buscam corrigir desigualdades históricas promovendo inclusão. O debate sobre essas políticas envolve questões de justiça reparativa, meritocracia, e efetividade na redução de desigualdades. Para o ENEM, é importante compreender o racismo estrutural como sistema que ultrapassa preconceitos individuais, reconhecer suas manifestações concretas, e analisar criticamente políticas de enfrentamento."
+        },
+        {
+          "titulo": "Desigualdades de Gênero e Violência contra a Mulher",
+          "conteudo": "As desigualdades de gênero no Brasil contemporâneo manifestam-se em múltiplas dimensões, apesar de avanços legais e sociais nas últimas décadas. A sociedade brasileira mantém estruturas patriarcais que subordinam mulheres em espaços públicos e privados, limitando suas oportunidades e sujeitando-as a violências diversas. A Constituição de 1988 estabeleceu igualdade formal entre homens e mulheres, mas a igualdade substantiva permanece distante da realidade cotidiana.\n\nNo mercado de trabalho, mulheres enfrentam discriminações: recebem em média 20-30% menos que homens em funções equivalentes, têm maior dificuldade de ascensão a cargos de liderança ('teto de vidro'), são maioria em trabalhos precários e informais, e sofrem maior desemprego. A dupla jornada (trabalho remunerado e trabalho doméstico não remunerado) sobrecarrega as mulheres, que dedicam quase o dobro de horas semanais a afazeres domésticos comparadas aos homens. Na política, a sub-representação feminina é notória: mulheres são maioria da população mas minoria em parlamentos e cargos executivos.\n\nA violência de gênero constitui grave violação de direitos humanos. O feminicídio (assassinato de mulheres por razões de gênero) vitima milhares anualmente, muitas vezes cometido por parceiros ou ex-parceiros. A violência doméstica afeta milhões, abrangendo violência física, psicológica, sexual, patrimonial e moral. A Lei Maria da Penha (11.340/2006) representou avanço importante ao criar mecanismos de proteção e punição, mas a efetividade de sua aplicação enfrenta obstáculos. Movimentos feministas contemporâneos, incluindo o movimento #MeToo que denunciou assédio sexual em diversas esferas, têm pressionado por mudanças culturais e institucionais. Para o ENEM, é fundamental compreender as desigualdades de gênero como socialmente construídas (não naturais ou biológicas), reconhecer suas manifestações concretas, e analisar políticas e movimentos de enfrentamento."
+        },
+        {
+          "titulo": "Desigualdades Regionais no Brasil",
+          "conteudo": "As desigualdades regionais brasileiras são marcantes, refletindo processos históricos de ocupação territorial, desenvolvimento econômico concentrado, e políticas públicas que privilegiaram certas regiões. A dicotomia Sul-Sudeste (mais desenvolvidos) versus Norte-Nordeste (menos desenvolvidos) simplifica, mas captura assimetrias reais em infraestrutura, renda, educação, saúde e oportunidades econômicas. Essas desigualdades têm raízes na economia colonial (concentração no litoral), ciclos econômicos (café no Sudeste), industrialização concentrada (São Paulo), e investimentos públicos historicamente desiguais.\n\nAs regiões Sul e Sudeste concentram: maior parque industrial, infraestrutura de transportes e comunicações mais desenvolvida, universidades e centros de pesquisa de excelência, maiores índices de desenvolvimento humano, e maior disponibilidade de serviços públicos. As regiões Norte e Nordeste enfrentam: infraestrutura deficiente, menor diversificação econômica (dependência de setores primários), piores indicadores educacionais e de saúde, maiores taxas de pobreza e informalidade, e menor densidade de serviços públicos.\n\nProgramas de desenvolvimento regional foram implementados historicamente com resultados variados: SUDENE (Superintendência do Desenvolvimento do Nordeste), incentivos fiscais para Zona Franca de Manaus, programas de transferência de renda com impacto maior em regiões mais pobres. Desigualdades regionais também manifestam-se dentro das próprias regiões: capitais versus interior, áreas urbanas versus rurais. A pandemia de COVID-19 evidenciou como desigualdades regionais afetam capacidade de resposta a crises (disponibilidade de leitos de UTI, oxigênio, vacinas). Para o ENEM, é importante compreender as raízes históricas dessas desigualdades, suas manifestações contemporâneas, e avaliar criticamente políticas de desenvolvimento regional considerando tensões entre centralização e descentralização, eficiência e equidade."
+        }
+      ],
+      "exemplos": [
+        "O Bolsa Família/Auxílio Brasil são programas de transferência de renda que impactaram desigualdades",
+        "Cotas raciais em universidades públicas aumentaram acesso de negros ao ensino superior",
+        "A Lei Maria da Penha criou mecanismos de proteção para mulheres em situação de violência doméstica",
+        "A transposição do Rio São Francisco busca amenizar desigualdades regionais no acesso à água"
+      ],
+      "dicas": [
+        "Relacione desigualdades atuais com processos históricos como escravidão e colonização",
+        "Compreenda racismo estrutural como sistema que vai além de preconceitos individuais",
+        "Diferencie igualdade formal (na lei) de igualdade substantiva (na prática)",
+        "Conecte desigualdades regionais com concentração histórica de investimentos"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "O Brasil possui um dos maiores índices de desigualdade de renda do mundo, medido pelo coeficiente de Gini. Sobre as causas estruturais dessa desigualdade, é correto afirmar que:",
+          "alternativas": {
+            "A": "A desigualdade brasileira resulta exclusivamente de diferenças de esforço individual e mérito",
+            "B": "O sistema tributário progressivo, que tributa mais os ricos, agrava as desigualdades",
+            "C": "A herança histórica da escravidão e concentração fundiária contribuem para desigualdades atuais",
+            "D": "A informalidade no mercado de trabalho não tem relação com desigualdades de renda",
+            "E": "Desigualdades de renda são naturais e inevitáveis em qualquer sociedade"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque a herança histórica de quase quatro séculos de escravidão criou abismos sociais e raciais profundos, e a concentração fundiária desde o período colonial (sesmarias, Lei de Terras de 1850) perpetuou desigualdades no acesso à riqueza e oportunidades. Essas estruturas históricas continuam influenciando desigualdades contemporâneas. A alternativa A é incorreta porque ignora estruturas sociais e históricas que determinam oportunidades desigualmente distribuídas. A alternativa B está errada - na verdade, o sistema tributário brasileiro é regressivo (tributa mais o consumo que renda/patrimônio), o que agrava desigualdades. A alternativa D está incorreta porque a alta informalidade (cerca de 40% da força de trabalho) está diretamente relacionada a baixos rendimentos e precariedade. A alternativa E naturaliza incorretamente as desigualdades, ignorando que são produtos de escolhas e estruturas sociais.",
+          "dificuldade": "medio",
+          "tags": ["desigualdade", "Brasil", "estrutura social"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "'O racismo estrutural refere-se a como o racismo está enraizado nas instituições e práticas sociais, não se limitando a atos individuais de discriminação.' Qual situação exemplifica o conceito de racismo estrutural?",
+          "alternativas": {
+            "A": "Um indivíduo que profere insultos racistas em uma discussão pessoal",
+            "B": "A maior taxa de desemprego entre pessoas negras comparadas a brancas com mesma escolaridade",
+            "C": "A existência de leis que criminalizam explicitamente a discriminação racial",
+            "D": "Manifestações culturais que celebram a diversidade racial no Brasil",
+            "E": "Relacionamentos inter-raciais que promovem integração social"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque exemplifica racismo estrutural: mesmo com escolaridade equivalente, pessoas negras enfrentam maior desemprego, evidenciando que o racismo opera através de estruturas e instituições (mercado de trabalho, processos seletivos, redes de contato), não apenas através de preconceitos individuais explícitos. Essa desigualdade sistemática indica discriminação institucionalizada. A alternativa A descreve racismo individual/interpessoal, não estrutural. A alternativa C refere-se a avanços legais contra discriminação, o oposto de racismo estrutural. A alternativa D menciona manifestações culturais positivas que não exemplificam racismo. A alternativa E trata de relações pessoais que não ilustram o conceito de racismo estrutural.",
+          "dificuldade": "medio",
+          "tags": ["racismo estrutural", "desigualdades raciais", "Brasil"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "A Lei Maria da Penha (11.340/2006) foi marco importante no enfrentamento à violência doméstica contra mulheres no Brasil. Sobre essa legislação e o contexto de violência de gênero, considere:\n\nI. A lei criou mecanismos de proteção para mulheres em situação de violência doméstica.\nII. A violência doméstica abrange apenas violência física, excluindo violência psicológica.\nIII. O feminicídio refere-se ao assassinato de mulheres por razões de gênero.\nIV. A violência contra mulheres afeta apenas classes sociais menos favorecidas.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "I e III apenas",
+            "C": "II e IV apenas",
+            "D": "I, II e III apenas",
+            "E": "I, III e IV apenas"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta. A afirmação I é verdadeira porque a Lei Maria da Penha estabeleceu medidas protetivas de urgência, criou juizados especializados, e endureceu penas para agressores, representando avanço significativo. A afirmação III é verdadeira porque feminicídio (tipificado em 2015) refere-se especificamente ao homicídio de mulheres por razões de gênero (ódio, menosprezo ou discriminação), com penas agravadas. A afirmação II está incorreta porque a lei reconhece cinco formas de violência doméstica: física, psicológica, sexual, patrimonial e moral. A afirmação IV está incorreta porque a violência contra mulheres atravessa todas as classes sociais, embora manifestações e recursos para enfrentamento possam diferir.",
+          "dificuldade": "facil",
+          "tags": ["violência de gênero", "Lei Maria da Penha", "direitos das mulheres"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "As cotas raciais em universidades públicas, instituídas pela Lei 12.711/2012 (Lei de Cotas), geram debates sobre ação afirmativa e justiça social. Qual argumento justifica essas políticas?",
+          "alternativas": {
+            "A": "As cotas raciais são desnecessárias porque o Brasil é uma democracia racial sem discriminação",
+            "B": "As cotas buscam corrigir desigualdades históricas e estruturais no acesso ao ensino superior",
+            "C": "As cotas raciais violam completamente o princípio constitucional da igualdade",
+            "D": "O mérito individual é irrelevante e não deve ser considerado em processos seletivos",
+            "E": "As cotas beneficiam exclusivamente pessoas brancas de classes sociais altas"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque as cotas raciais fundamentam-se no princípio da justiça reparativa e na necessidade de corrigir desigualdades históricas e estruturais. Séculos de escravidão e décadas de discriminação pós-abolição criaram barreiras ao acesso de negros ao ensino superior. As cotas buscam promover igualdade substantiva (de fato) reconhecendo que igualdade formal (perante a lei) é insuficiente quando grupos partem de posições desiguais. A alternativa A está incorreta porque o mito da democracia racial foi desconstruído por dados que evidenciam discriminação e desigualdades. A alternativa C está errada - as cotas são compatíveis com a igualdade material garantida constitucionalmente. A alternativa D distorce a política - cotas não eliminam mérito, mas consideram contextos desiguais. A alternativa E inverte completamente os beneficiários da política.",
+          "dificuldade": "medio",
+          "tags": ["cotas raciais", "ação afirmativa", "educação"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "As desigualdades regionais no Brasil manifestam-se em indicadores socioeconômicos diversos. Sobre esse tema, analise as afirmativas:\n\nI. As regiões Sul e Sudeste concentram maior infraestrutura e parque industrial devido a processos históricos.\nII. O Nordeste apresenta os piores indicadores sociais exclusivamente por características climáticas.\nIII. Programas como Bolsa Família tiveram maior impacto em regiões mais pobres.\nIV. Desigualdades regionais inexistem dentro das próprias regiões.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "I e III apenas",
+            "C": "II e IV apenas",
+            "D": "I, II e III apenas",
+            "E": "I, III e IV apenas"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta. A afirmação I é verdadeira porque a concentração de infraestrutura e industrialização no Sul-Sudeste resulta de processos históricos: ciclos econômicos (café em São Paulo), políticas de industrialização concentradas (Vargas, JK), e investimentos públicos desiguais ao longo de décadas. A afirmação III é verdadeira porque programas de transferência de renda como Bolsa Família tiveram impacto proporcionalmente maior em regiões mais pobres (Norte e Nordeste), contribuindo para redução de pobreza e desigualdades regionais. A afirmação II está incorreta porque reduz causas complexas (históricas, políticas, econômicas) exclusivamente ao clima, determinismo geográfico superado. A afirmação IV está incorreta porque desigualdades existem também dentro das regiões: entre capitais e interior, áreas urbanas e rurais, etc.",
+          "dificuldade": "dificil",
+          "tags": ["desigualdades regionais", "Brasil", "desenvolvimento"]
+        }
+      ]
+    },
+    {
+      "id": "modulo02",
+      "titulo": "Democracia e Participação Política no Brasil",
+      "resumo": "Sistema político brasileiro, desafios democráticos e formas de participação cidadã",
+      "topicos": [
+        {
+          "titulo": "Sistema Político Brasileiro e Poderes da República",
+          "conteudo": "O sistema político brasileiro é uma república federativa presidencialista, estabelecida pela Constituição de 1988. Esse modelo combina elementos da tradição republicana (governo de representantes eleitos, divisão de poderes, mandatos temporários) com o federalismo (autonomia de estados e municípios) e o presidencialismo (presidente acumula funções de chefe de Estado e de governo). Compreender essa estrutura é fundamental para analisar o funcionamento da democracia brasileira e seus desafios.\n\nO princípio da separação dos poderes, inspirado em Montesquieu, estabelece três poderes independentes e harmônicos: Executivo (presidente, governadores, prefeitos - responsáveis por administrar e executar leis), Legislativo (Congresso Nacional, assembleias estaduais, câmaras municipais - responsáveis por elaborar leis e fiscalizar o Executivo), e Judiciário (tribunais em diversas instâncias - responsáveis por interpretar e aplicar leis). O sistema de freios e contrapesos (checks and balances) permite que cada poder limite e fiscalize os outros, evitando concentração de poder e abusos.\n\nO presidencialismo de coalizão caracteriza a prática política brasileira: devido ao multipartidarismo e à fragmentação partidária, presidentes precisam formar coalizões de apoio no Congresso para governar e aprovar projetos. Isso gera dinâmicas complexas envolvendo negociações, distribuição de ministérios e cargos, e compromissos entre diferentes forças políticas. Críticos apontam que isso pode levar à instabilidade, dificuldades de governabilidade e fisiologismo (troca de apoio por cargos e recursos). Defensores argumentam que reflete pluralismo democrático e necessidade de negociação em sociedades complexas. Para o ENEM, é importante compreender não apenas a estrutura formal dos poderes, mas também sua dinâmica real, incluindo desafios como concentração de poder no Executivo, fragilidade do controle parlamentar, questões de representatividade, e tensões entre poderes."
+        },
+        {
+          "titulo": "Democracia Representativa e Participativa",
+          "conteudo": "A democracia pode assumir diferentes formas, sendo as principais a democracia representativa (indireta) e a democracia participativa (direta). O Brasil adota predominantemente o modelo representativo, no qual cidadãos elegem representantes (deputados, senadores, vereadores, executivos) que tomarão decisões em seu nome. Esse modelo é justificado pela inviabilidade de participação direta de milhões de pessoas em todas as decisões em sociedades complexas e populosas.\n\nNo entanto, a Constituição de 1988 também incorporou instrumentos de democracia participativa que permitem envolvimento direto dos cidadãos: plebiscito (consulta prévia sobre questão política ou institucional), referendo (ratificação ou rejeição de lei ou ato normativo já editado), e iniciativa popular (cidadãos podem propor projetos de lei com determinado número de assinaturas). Na prática, esses instrumentos foram pouco utilizados no Brasil, destacando-se o referendo sobre comercialização de armas (2005) e o plebiscito sobre sistema de governo (1993).\n\nA crise de representatividade é tema recorrente nas democracias contemporâneas, incluindo o Brasil. Manifesta-se através de: baixa identificação entre eleitores e eleitos, sensação de que políticos não representam interesses da população, escândalos de corrupção que corroem confiança nas instituições, sub-representação de grupos sociais (mulheres, negros, pobres) nos espaços de poder, e influência desproporcional de lobbies e financiamento empresarial. As manifestações de junho de 2013 no Brasil expressaram, entre outras demandas, insatisfação com a política representativa tradicional. Propostas para fortalecer a democracia incluem: reforma política, financiamento público de campanhas, ampliação de mecanismos participativos, conselhos populares, orçamento participativo, e uso de tecnologias digitais para participação. O ENEM pode abordar tensões entre representação e participação, desafios de legitimidade democrática, e diferentes concepções de democracia."
+        },
+        {
+          "titulo": "Corrupção e Accountability",
+          "conteudo": "A corrupção no Brasil é problema estrutural que afeta o funcionamento das instituições democráticas, desvia recursos públicos, corroe a confiança dos cidadãos na política e perpetua desigualdades. Define-se corrupção como o uso do poder público para benefício privado, abrangendo práticas como desvio de recursos, propinas, nepotismo, tráfico de influência, e captura de políticas públicas por interesses privados. No Brasil, casos de corrupção envolvem diversos níveis governamentais, partidos políticos, empresas e órgãos públicos.\n\nA Operação Lava Jato, iniciada em 2014, foi a maior investigação de corrupção da história brasileira, revelando esquemas de desvios bilionários envolvendo a Petrobrás, construtoras e políticos de diversos partidos. Resultou em condenações, devoluções de recursos e mudanças legislativas, mas também gerou controvérsias sobre métodos investigativos, seletividade de persecução, lawfare (uso político do direito), e impactos sobre o sistema político. O caso ilustra complexidades do combate à corrupção em democracias, tensões entre eficácia investigativa e garantias processuais, e riscos de instrumentalização política.\n\nAccountability refere-se aos mecanismos de prestação de contas e responsabilização de agentes públicos, essenciais para democracias funcionais. Inclui: accountability horizontal (controle entre poderes - Ministério Público, tribunais de contas, Judiciário fiscalizando Executivo e Legislativo), accountability vertical (controle da sociedade através de eleições, imprensa livre, organizações da sociedade civil), e accountability social (participação direta de cidadãos em conselhos e audiências públicas). Avanços no Brasil incluem: Lei de Acesso à Informação (12.527/2011), portais de transparência, fortalecimento de órgãos de controle. Desafios persistem: impunidade, lentidão da justiça, cultura política patrimonialista, e captura regulatória. Para o ENEM, é importante compreender causas estruturais da corrupção, mecanismos de controle e transparência, e complexidades do tema evitando simplificações."
+        },
+        {
+          "titulo": "Movimentos Sociais e Cidadania Ativa",
+          "conteudo": "Movimentos sociais são ações coletivas de grupos organizados que buscam transformações sociais, políticas ou culturais, atuando fora dos canais institucionais tradicionais da política. Desempenham papel fundamental na democracia ao representar interesses de grupos marginalizados, pressionar por mudanças, ampliar debates públicos e fiscalizar o poder. No Brasil, movimentos sociais têm história rica, desde lutas abolicionistas e republicanas, passando por sindicatos operários, até movimentos contemporâneos diversos.\n\nMovimentos sociais clássicos no Brasil incluem: Movimento dos Trabalhadores Rurais Sem Terra (MST), que luta por reforma agrária e justiça no campo; movimento sindical, organizado em centrais como CUT e CTB; movimento negro, representado por organizações como MNU e coletivos diversos que combatem racismo; movimento feminista, que luta por igualdade de gênero e combate à violência; movimento LGBTQIA+, que defende direitos e combate LGBTfobia; movimento ambientalista, que pressiona por políticas de conservação e sustentabilidade.\n\nNovos movimentos sociais emergiram no século XXI com características distintas: organização horizontal e descentralizada (sem lideranças hierárquicas rígidas), uso intensivo de redes sociais e internet para mobilização, pautas identitárias e culturais além de econômicas, e formas criativas de protesto. Exemplos incluem coletivos feministas, movimento negro universitário, ocupações estudantis (secundaristas ocupando escolas em 2015-2016), e ativismo digital. As manifestações de junho de 2013 exemplificaram mobilizações massivas organizadas através de redes sociais com pautas difusas. A cidadania ativa vai além do voto, incluindo participação em movimentos, conselhos, audiências públicas, e fiscalização de políticas. Para o ENEM, é fundamental reconhecer movimentos sociais como atores legítimos da democracia, compreender suas pautas e métodos, e refletir sobre relações entre participação institucional e não-institucional."
+        }
+      ],
+      "exemplos": [
+        "O impeachment de Dilma Rousseff (2016) ilustrou tensões entre Executivo e Legislativo no presidencialismo de coalizão",
+        "O referendo sobre desarmamento (2005) foi raro exemplo de democracia direta no Brasil",
+        "A Operação Lava Jato revelou esquemas de corrupção envolvendo Petrobrás e construtoras",
+        "As manifestações de junho de 2013 mobilizaram milhões através de redes sociais com pautas diversas"
+      ],
+      "dicas": [
+        "Compreenda o sistema de freios e contrapesos entre os três poderes",
+        "Diferencie democracia representativa (indireta) de participativa (direta)",
+        "Relacione corrupção com estruturas políticas e econômicas, não apenas moral individual",
+        "Reconheça movimentos sociais como atores legítimos da democracia"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "O sistema de freios e contrapesos (checks and balances) é princípio fundamental da organização dos poderes no Estado brasileiro. Qual situação exemplifica esse princípio?",
+          "alternativas": {
+            "A": "O presidente nomeia livremente todos os ministros do Supremo Tribunal Federal sem qualquer controle",
+            "B": "O Senado Federal aprova ou rejeita indicações presidenciais para o Supremo Tribunal Federal",
+            "C": "O Congresso Nacional não possui nenhum poder para fiscalizar atos do presidente",
+            "D": "O Judiciário elabora todas as leis que serão aplicadas no país",
+            "E": "O presidente pode dissolver o Congresso Nacional a qualquer momento"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque exemplifica perfeitamente o sistema de freios e contrapesos: embora o presidente nomeie ministros do STF (atribuição do Executivo), essa nomeação precisa ser aprovada pelo Senado Federal (atribuição do Legislativo), ilustrando como um poder controla e limita o outro, evitando concentração excessiva de poder. Esse mecanismo garante que decisões importantes envolvam múltiplos poderes. A alternativa A está incorreta porque ignora a necessidade de aprovação do Senado. A alternativa C está errada - o Congresso tem amplos poderes de fiscalização. A alternativa D inverte atribuições - o Legislativo elabora leis, o Judiciário as interpreta e aplica. A alternativa E descreve poder inexistente no presidencialismo brasileiro.",
+          "dificuldade": "facil",
+          "tags": ["separação de poderes", "sistema político", "democracia"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "A Constituição Federal de 1988 estabeleceu instrumentos de democracia participativa que permitem participação direta dos cidadãos nas decisões políticas. São exemplos desses instrumentos:",
+          "alternativas": {
+            "A": "Eleições gerais, voto obrigatório e sistema eleitoral proporcional",
+            "B": "Plebiscito, referendo e iniciativa popular de lei",
+            "C": "Nomeação de ministros, formação de governo e distribuição de cargos",
+            "D": "Impeachment, veto presidencial e medidas provisórias",
+            "E": "Partidos políticos, coligações eleitorais e cotas de gênero"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque plebiscito (consulta prévia sobre questão política), referendo (ratificação ou rejeição de lei já editada) e iniciativa popular (cidadãos propondo projetos de lei com determinado número de assinaturas) são instrumentos de democracia direta/participativa previstos constitucionalmente, permitindo que cidadãos decidam diretamente sobre questões específicas, não apenas elegendo representantes. A alternativa A refere-se a elementos da democracia representativa, não participativa. A alternativa C descreve atos do Executivo sem participação popular direta. A alternativa D menciona mecanismos institucionais que não são instrumentos de participação popular direta. A alternativa E trata de estruturas da democracia representativa.",
+          "dificuldade": "medio",
+          "tags": ["democracia participativa", "participação política", "Constituição"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "'A Operação Lava Jato revelou esquemas de corrupção envolvendo empresas estatais, construtoras e políticos, resultando em condenações, mas também gerou debates sobre métodos investigativos e instrumentalização política da justiça.'\n\nQual tensão esse caso evidencia sobre o combate à corrupção em democracias?",
+          "alternativas": {
+            "A": "A inexistência de qualquer corrupção no sistema político brasileiro",
+            "B": "A tensão entre eficácia no combate à corrupção e garantias processuais democráticas",
+            "C": "A impossibilidade total de investigar e punir casos de corrupção",
+            "D": "A ausência de qualquer mecanismo legal para combater corrupção no Brasil",
+            "E": "A irrelevância da corrupção para o funcionamento das instituições democráticas"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a Lava Jato evidenciou uma tensão central: como combater eficazmente a corrupção mantendo garantias processuais e estado de direito? Métodos como delação premiada, condução coercitiva, prisões preventivas prolongadas e vazamentos seletivos foram criticados por potencialmente violarem direitos constitucionais, gerando debate sobre limites legítimos da persecução criminal em democracias. A questão envolve equilíbrio entre punir culpados e proteger inocentes. A alternativa A contradiz completamente o caso descrito. A alternativa C exagera inversamente - investigações ocorreram. A alternativa D ignora existência de marco legal anticorrupção. A alternativa E subestima gravemente impactos da corrupção.",
+          "dificuldade": "dificil",
+          "tags": ["corrupção", "democracia", "estado de direito"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "A Lei de Acesso à Informação (12.527/2011) representa avanço importante para a democracia brasileira ao:",
+          "alternativas": {
+            "A": "Proibir completamente que cidadãos acessem qualquer informação governamental",
+            "B": "Garantir sigilo absoluto de todos os atos da administração pública",
+            "C": "Estabelecer transparência como regra e sigilo como exceção, permitindo acesso a dados públicos",
+            "D": "Limitar o acesso à informação exclusivamente a jornalistas profissionais",
+            "E": "Permitir que apenas políticos e empresários acessem informações governamentais"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque a Lei de Acesso à Informação estabeleceu a transparência como princípio fundamental da administração pública, invertendo a lógica anterior (sigilo como regra). Qualquer cidadão pode solicitar informações a órgãos públicos, que têm prazo para responder. Sigilo é exceção que precisa ser justificada (segurança nacional, intimidade). Isso fortalece accountability e permite controle social sobre o poder público. A alternativa A inverte completamente o objetivo da lei. A alternativa B contradiz o princípio da transparência estabelecido. A alternativa C restringe indevidamente o acesso, que é universal. A alternativa E cria privilégio inexistente na lei - todos os cidadãos têm direito.",
+          "dificuldade": "facil",
+          "tags": ["transparência", "acesso à informação", "democracia"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Movimentos sociais desempenham papel importante na democracia brasileira. Sobre esses movimentos, considere:\n\nI. Representam apenas interesses de grupos privilegiados da sociedade.\nII. Atuam fora dos canais institucionais tradicionais, pressionando por mudanças sociais.\nIII. Movimentos como MST, feminista e negro lutam por direitos de grupos específicos.\nIV. Novos movimentos sociais caracterizam-se por organização horizontal e uso de redes sociais.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "II e III apenas",
+            "C": "II, III e IV apenas",
+            "D": "I, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta. A afirmação II é verdadeira porque movimentos sociais caracterizam-se justamente por atuar fora (embora não necessariamente contra) canais institucionais formais, usando protestos, manifestações, pressão pública para influenciar políticas. A afirmação III é verdadeira porque movimentos como MST (reforma agrária), feminista (igualdade de gênero), e negro (combate ao racismo) organizam-se em torno de pautas específicas de grupos historicamente marginalizados. A afirmação IV é verdadeira porque novos movimentos sociais do século XXI frequentemente adotam estruturas horizontais sem lideranças hierárquicas rígidas e usam intensivamente redes sociais. A afirmação I está incorreta porque movimentos sociais tipicamente representam grupos marginalizados e vulneráveis, não privilegiados.",
+          "dificuldade": "medio",
+          "tags": ["movimentos sociais", "participação política", "democracia"]
+        }
+      ]
+    },
+    {
+      "id": "modulo03",
+      "titulo": "Economia Brasileira Contemporânea",
+      "resumo": "Principais questões econômicas do Brasil atual: emprego, inflação, políticas públicas e desafios",
+      "topicos": [
+        {
+          "titulo": "Mercado de Trabalho e Desemprego",
+          "conteudo": "O mercado de trabalho brasileiro enfrenta desafios estruturais que se agravaram nas últimas décadas, caracterizando-se por alta informalidade, precarização e desemprego crônico. A taxa de desemprego, medida pelo IBGE através da Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua), flutua historicamente entre 8-14%, aumentando significativamente em períodos de crise econômica e impactando especialmente jovens, mulheres e população negra.\n\nA informalidade é característica estrutural do mercado de trabalho brasileiro: cerca de 40% dos trabalhadores atuam na informalidade, sem carteira assinada, direitos trabalhistas, proteção social ou contribuição previdenciária. Causas incluem: insuficiência de empregos formais, custos elevados de formalização para pequenos empregadores, complexidade burocrática, baixa escolaridade de parte da força de trabalho, e estratégias empresariais de redução de custos. A informalidade perpetua vulnerabilidades e desigualdades, privando trabalhadores de direitos como férias, 13º salário, FGTS, seguro-desemprego e aposentadoria.\n\nA reforma trabalhista de 2017 (Lei 13.467) alterou profundamente a Consolidação das Leis do Trabalho (CLT), com objetivo declarado de modernizar relações de trabalho, facilitar contratações e reduzir desemprego. Principais mudanças incluíram: prevalência do negociado sobre o legislado em diversos pontos, regulamentação do trabalho intermitente, facilitação de terceirização, mudanças em regras de férias e jornada. Defensores argumentaram que flexibilização geraria empregos; críticos apontaram precarização e redução de direitos sem garantia de criação de postos. Dados posteriores mostram que a reforma não resolveu o problema do desemprego e pode ter contribuído para precarização. Outros desafios incluem: automação e transformação digital eliminando postos tradicionais, uberização e gig economy criando trabalhos precários disfarçados de empreendedorismo, e desalinhamento entre formação educacional e demandas do mercado. Para o ENEM, é importante compreender diferentes formas de trabalho (formal, informal, desemprego aberto, desalento), impactos sociais do desemprego, debates sobre direitos trabalhistas versus flexibilização, e transformações tecnológicas no mundo do trabalho."
+        },
+        {
+          "titulo": "Inflação e Política Monetária",
+          "conteudo": "A inflação refere-se ao aumento generalizado e contínuo dos preços de bens e serviços, reduzindo o poder de compra da moeda. O Brasil tem histórico traumático com inflação, especialmente nas décadas de 1980-1990, quando hiperinflação chegou a superar 2000% ao ano, corroendo salários e poupanças. O Plano Real (1994) estabilizou a economia através de diversas medidas, incluindo âncora cambial, ajuste fiscal e criação de nova moeda. Desde então, o Brasil adota sistema de metas de inflação.\n\nNo sistema de metas de inflação, o governo estabelece meta anual para o Índice Nacional de Preços ao Consumidor Amplo (IPCA), atualmente em torno de 3% com intervalos de tolerância. O Banco Central (BC) usa a taxa básica de juros (Selic) como principal instrumento: quando a inflação está acima da meta, o BC aumenta juros para desestimular consumo e investimento, reduzindo demanda e pressão sobre preços; quando está abaixo, reduz juros para estimular atividade econômica. Essa política gera debates: juros altos controlam inflação mas encarecem crédito e desestimulam crescimento; juros baixos estimulam economia mas podem gerar inflação.\n\nCausas da inflação são diversas: inflação de demanda (quando demanda agregada supera oferta), inflação de custos (aumento de custos de produção como salários, matérias-primas, energia), e inflação inercial (expectativas de inflação futura que se auto-realizam). No Brasil contemporâneo, fatores inflacionários incluem: variações do dólar (que encarecem importações), preços de commodities internacionais, crises climáticas afetando alimentos, políticas fiscais expansionistas, e choques de oferta (como pandemia de COVID-19). A inflação afeta desigualmente: famílias pobres gastam maior proporção da renda em alimentos e transporte (itens com alta variação), sendo mais afetadas. Para o ENEM, é essencial compreender conceitos básicos de inflação, o funcionamento da política monetária, a relação entre inflação e juros, e impactos sociais da inflação sobre diferentes grupos."
+        },
+        {
+          "titulo": "Políticas Sociais e Transferência de Renda",
+          "conteudo": "Políticas sociais são ações governamentais destinadas a promover bem-estar social, reduzir desigualdades e garantir direitos sociais como educação, saúde, assistência social e previdência. No Brasil, a Constituição de 1988 estabeleceu amplo sistema de proteção social, consolidado posteriormente através do Sistema Único de Saúde (SUS), Sistema Único de Assistência Social (SUAS), e diversos programas de transferência de renda que se tornaram centrais no combate à pobreza.\n\nO Bolsa Família, criado em 2003 consolidando programas anteriores, tornou-se o maior programa de transferência de renda condicionada do mundo, beneficiando milhões de famílias em situação de pobreza e extrema pobreza. O programa condiciona transferências ao cumprimento de contrapartidas: frequência escolar das crianças, acompanhamento de saúde e vacinação. Estudos demonstram que o Bolsa Família contribuiu significativamente para: redução da pobreza e da desigualdade, melhoria de indicadores educacionais e de saúde, dinamização de economias locais (especialmente no interior), e empoderamento de mulheres (titulares preferenciais). Críticos questionam custos, supostos desincentivos ao trabalho (não confirmados por estudos), e dependência assistencial.\n\nO Auxílio Emergencial durante a pandemia de COVID-19 representou programa massivo de transferência, beneficiando mais de 60 milhões de pessoas com valores significativos. Teve impacto imenso na redução da pobreza em momento de crise, mas gerou debates sobre sustentabilidade fiscal. Posteriormente foi substituído pelo Auxílio Brasil (2021), com mudanças em valores e condicionalidades, refletindo diferentes orientações políticas. Desafios das políticas sociais incluem: sustentabilidade fiscal em contexto de restrições orçamentárias, efetividade de condicionalidades, articulação entre transferência de renda e políticas de inserção produtiva, e riscos de descontinuidade por mudanças políticas. Para o ENEM, é importante compreender objetivos e funcionamento de programas de transferência, avaliar criticamente seus impactos (positivos e limitações), e refletir sobre relações entre políticas sociais, redução de desigualdades e desenvolvimento."
+        },
+        {
+          "titulo": "Dívida Pública e Teto de Gastos",
+          "conteudo": "A dívida pública refere-se ao montante total que o governo deve a credores (bancos, investidores, organismos internacionais), acumulada através de déficits orçamentários (quando gastos superam receitas). No Brasil, a dívida pública bruta representa cerca de 75-85% do PIB, patamar considerado elevado mas não crítico comparativamente. A gestão da dívida envolve emissão de títulos públicos, pagamento de juros (que consome parcela significativa do orçamento), e busca por superávits primários (receitas menos despesas excluindo juros).\n\nO debate sobre dívida pública envolve diferentes perspectivas. Visões ortodoxas enfatizam necessidade de austeridade fiscal (redução de gastos, controle da dívida) como condição para confiança de investidores, juros menores e crescimento sustentável. Visões heterodoxas argumentam que austeridade em períodos de baixo crescimento agrava recessão, e que países com moeda própria podem gerir dívidas em sua moeda sem riscos de default, priorizando investimentos públicos que estimulem crescimento. A crise fiscal brasileira relaciona-se com: rigidez orçamentária (grande parte do orçamento é vinculada), gastos crescentes com previdência (envelhecimento populacional), desonerações tributárias, e juros elevados.\n\nO Teto de Gastos (Emenda Constitucional 95/2016) limitou o crescimento das despesas primárias federais à inflação do ano anterior por 20 anos, com objetivo de controlar a dívida pública e recuperar credibilidade fiscal. Defensores argumentam que impõe disciplina necessária; críticos apontam que: engessa investimentos públicos essenciais (educação, saúde, infraestrutura), não aborda o problema dos gastos com juros (maiores que países comparáveis), e pode comprometer direitos sociais constitucionais. Durante a pandemia, o teto foi suspenso emergencialmente. Debates posteriores envolvem sua manutenção, flexibilização ou substituição por outras regras fiscais. Para o ENEM, é importante compreender conceitos básicos de finanças públicas, diferentes perspectivas sobre política fiscal, tensões entre austeridade e investimento público, e impactos sociais das escolhas fiscais."
+        }
+      ],
+      "exemplos": [
+        "A reforma trabalhista de 2017 flexibilizou relações de trabalho gerando debates sobre direitos e precarização",
+        "O Plano Real (1994) estabilizou a economia brasileira após décadas de inflação alta",
+        "O Bolsa Família reduziu pobreza e desigualdades através de transferências condicionadas",
+        "O Teto de Gastos limitou crescimento de despesas públicas gerando debates sobre sustentabilidade fiscal e social"
+      ],
+      "dicas": [
+        "Compreenda a diferença entre trabalho formal (com carteira) e informal (sem direitos)",
+        "Entenda a relação inversa entre taxa de juros e inflação na política monetária",
+        "Analise criticamente tanto benefícios quanto limitações de programas de transferência de renda",
+        "Reflita sobre tensões entre controle fiscal e investimentos sociais"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "A informalidade no mercado de trabalho brasileiro afeta cerca de 40% dos trabalhadores. Sobre esse fenômeno, é correto afirmar que:",
+          "alternativas": {
+            "A": "Trabalhadores informais possuem todos os direitos trabalhistas garantidos por lei",
+            "B": "A informalidade resulta apenas de escolha individual dos trabalhadores que preferem não contribuir",
+            "C": "Trabalhadores informais não possuem carteira assinada e carecem de proteção social e direitos trabalhistas",
+            "D": "A informalidade não tem relação com desigualdades e vulnerabilidades sociais",
+            "E": "Todos os trabalhadores informais são empresários bem-sucedidos que optaram pela informalidade"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque define adequadamente a informalidade: trabalhadores sem carteira assinada, portanto sem acesso a direitos trabalhistas (férias, 13º salário, FGTS, seguro-desemprego) e proteção social (previdência), ficando vulneráveis. A informalidade perpetua desigualdades e inseguranças. A alternativa A está completamente incorreta - a ausência de direitos é justamente característica da informalidade. A alternativa B simplifica indevidamente, ignorando fatores estruturais como insuficiência de empregos formais, baixa escolaridade e estratégias empresariais. A alternativa D está errada porque informalidade está diretamente relacionada a vulnerabilidades e desigualdades. A alternativa E faz generalização absurda - a maioria dos informais são trabalhadores pobres, não empresários bem-sucedidos.",
+          "dificuldade": "facil",
+          "tags": ["mercado de trabalho", "informalidade", "direitos trabalhistas"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "No sistema de metas de inflação adotado pelo Brasil, o Banco Central utiliza a taxa Selic (taxa básica de juros) como principal instrumento de política monetária. Quando a inflação está acima da meta, o Banco Central tende a:",
+          "alternativas": {
+            "A": "Reduzir a taxa Selic para estimular o consumo e investimentos",
+            "B": "Aumentar a taxa Selic para desestimular consumo e investimento, reduzindo pressão sobre preços",
+            "C": "Manter a taxa Selic inalterada independentemente da inflação",
+            "D": "Eliminar completamente a taxa Selic do sistema econômico",
+            "E": "Transferir o controle da taxa Selic para o Poder Legislativo"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque descreve adequadamente o mecanismo de política monetária: quando a inflação está alta, o Banco Central aumenta a Selic, tornando crédito mais caro e poupança mais atraente. Isso desestimula consumo e investimento, reduzindo demanda agregada e consequentemente a pressão sobre preços, controlando a inflação. É política contracionista. A alternativa A inverte a lógica - reduzir juros com inflação alta agravaria o problema. A alternativa C ignora que ajustes da Selic são justamente o instrumento de controle inflacionário. A alternativa D propõe algo impraticável que eliminaria principal ferramenta de política monetária. A alternativa E está incorreta - a autonomia do BC visa proteger política monetária de pressões políticas.",
+          "dificuldade": "medio",
+          "tags": ["inflação", "política monetária", "taxa Selic"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "O Programa Bolsa Família, criado em 2003, tornou-se o maior programa de transferência de renda condicionada do mundo. Sobre esse programa, considere:\n\nI. Beneficia famílias em situação de pobreza e extrema pobreza.\nII. Condiciona transferências ao cumprimento de contrapartidas em educação e saúde.\nIII. Estudos mostram contribuição para redução de pobreza e desigualdades.\nIV. Eliminou completamente a pobreza no Brasil.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "I, II e III apenas",
+            "C": "II, III e IV apenas",
+            "D": "I, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta. A afirmação I é verdadeira porque o Bolsa Família destina-se especificamente a famílias em situação de pobreza (renda per capita até determinado valor) e extrema pobreza, constituindo rede de proteção social. A afirmação II é verdadeira porque o programa é de transferência condicionada: exige contrapartidas como frequência escolar mínima das crianças, acompanhamento de saúde e vacinação. A afirmação III é verdadeira - diversos estudos acadêmicos e de organismos internacionais demonstram que o programa contribuiu significativamente para redução da pobreza, da desigualdade e melhoria de indicadores sociais. A afirmação IV está incorreta porque, embora tenha tido impacto importante, o programa não eliminou completamente a pobreza - esta persiste, exigindo políticas complementares.",
+          "dificuldade": "facil",
+          "tags": ["Bolsa Família", "políticas sociais", "transferência de renda"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "A reforma trabalhista de 2017 alterou profundamente a CLT (Consolidação das Leis do Trabalho), gerando intensos debates. Qual argumento foi utilizado pelos defensores da reforma?",
+          "alternativas": {
+            "A": "A reforma eliminaria completamente todos os direitos trabalhistas e precarizaria todas as relações de trabalho",
+            "B": "A flexibilização das leis trabalhistas modernizaria relações de trabalho e facilitaria criação de empregos",
+            "C": "A CLT era perfeita e não necessitava de nenhuma modificação ou atualização",
+            "D": "A reforma garantiria emprego vitalício para todos os trabalhadores brasileiros",
+            "E": "A reforma trabalhista foi unanimemente aprovada sem nenhum debate ou discordância"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque o principal argumento dos defensores da reforma trabalhista era que a flexibilização (prevalência do negociado sobre legislado, facilitação de terceirização, trabalho intermitente) modernizaria relações de trabalho consideradas engessadas, reduziria custos para empresários e consequentemente facilitaria contratações, gerando empregos. Esse argumento é debatível - dados posteriores não confirmaram criação significativa de empregos formais. A alternativa A exagera e distorce - embora críticos apontem precarização, direitos básicos não foram totalmente eliminados. A alternativa C é falsa - havia amplo debate sobre necessidade de atualização da CLT. A alternativa D promete resultado irreal que nenhum defensor alegou. A alternativa E está incorreta - a reforma foi altamente controversa com intensa oposição.",
+          "dificuldade": "medio",
+          "tags": ["reforma trabalhista", "CLT", "mercado de trabalho"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "O Teto de Gastos (Emenda Constitucional 95/2016) limitou o crescimento das despesas primárias federais à inflação por 20 anos. Qual crítica foi formulada a essa medida?",
+          "alternativas": {
+            "A": "O teto é excessivamente flexível, permitindo gastos ilimitados do governo",
+            "B": "O teto engessa investimentos públicos essenciais em educação, saúde e infraestrutura",
+            "C": "O teto reduz o pagamento de juros da dívida pública, prejudicando credores",
+            "D": "O teto foi implementado por apenas um ano, sendo insuficientemente duradouro",
+            "E": "O teto não afeta de forma alguma as políticas públicas e direitos sociais"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque uma das principais críticas ao Teto de Gastos é que, ao limitar o crescimento das despesas apenas à inflação (crescimento real zero) por duas décadas, engessa investimentos públicos essenciais em áreas como educação, saúde, infraestrutura, ciência e tecnologia, que deveriam acompanhar crescimento populacional, envelhecimento demográfico e demandas sociais. Críticos argumentam que isso pode comprometer direitos constitucionais e capacidade de desenvolvimento. A alternativa A inverte a crítica - justamente a rigidez é criticada. A alternativa C está incorreta - o teto não afeta gastos com juros (despesas financeiras), apenas despesas primárias. A alternativa D está errada sobre o prazo - foram 20 anos, considerado longo demais. A alternativa E nega impactos evidentes do teto sobre políticas e direitos.",
+          "dificuldade": "dificil",
+          "tags": ["teto de gastos", "política fiscal", "direitos sociais"]
+        }
+      ]
+    },
+    {
+      "id": "modulo04",
+      "titulo": "Tecnologia, Comunicação e Sociedade",
+      "resumo": "Impactos das tecnologias digitais, redes sociais e transformações na comunicação contemporânea",
+      "topicos": [
+        {
+          "titulo": "Redes Sociais e Transformações na Comunicação",
+          "conteudo": "As redes sociais digitais transformaram radicalmente as formas de comunicação, informação e sociabilidade no século XXI. Plataformas como Facebook, Instagram, Twitter, YouTube, TikTok e WhatsApp conectam bilhões de pessoas globalmente, permitindo comunicação instantânea, compartilhamento de conteúdos, formação de comunidades e novas formas de expressão. Essas transformações têm dimensões positivas (democratização da comunicação, acesso à informação, mobilização social) e negativas (desinformação, bolhas de filtro, vigilância digital, dependência).\n\nAs redes sociais democratizaram parcialmente a produção e disseminação de informação, quebrando monopólios de veículos tradicionais. Qualquer usuário pode publicar conteúdos, potencialmente alcançando milhões. Isso empoderou vozes antes marginalizadas, facilitou mobilizações sociais (Primavera Árabe, manifestações de 2013 no Brasil), e criou novas formas de cultura participativa. No entanto, essa democratização é limitada: algoritmos das plataformas determinam o que ganha visibilidade, concentração de poder nas Big Techs, e desigualdades de acesso digital (exclusão de populações pobres e idosas).\n\nProblemas graves emergiram: proliferação de desinformação e fake news (facilitada pela viralização e falta de verificação), formação de bolhas de filtro e câmaras de eco (algoritmos mostram conteúdos que confirmam visões preexistentes, polarizando sociedade), cyberbullying e discursos de ódio (anonimidade e distância facilitam agressões), vício e impactos na saúde mental (especialmente jovens, associados a ansiedade, depressão, baixa autoestima), invasão de privacidade e vigilância (coleta massiva de dados pessoais para fins comerciais e políticos, como revelou escândalo Cambridge Analytica). A moderação de conteúdo gera dilemas: como equilibrar liberdade de expressão com combate a discursos nocivos? Quem deve decidir limites? Para o ENEM, é fundamental analisar criticamente tanto potenciais libertadores quanto riscos das redes sociais, compreender seu funcionamento (algoritmos, modelos de negócio baseados em atenção), e refletir sobre regulamentação, educação midiática e uso responsável."
+        },
+        {
+          "titulo": "Privacidade, Proteção de Dados e Vigilância Digital",
+          "conteudo": "A era digital caracteriza-se pela coleta massiva de dados pessoais por empresas e governos, gerando questões complexas sobre privacidade, autonomia individual e vigilância. Cada interação online gera rastros digitais (navegação, compras, localização, interações sociais, pesquisas) que são capturados, armazenados, analisados e monetizados. Esse 'capitalismo de vigilância', conceito da socióloga Shoshana Zuboff, refere-se à exploração de dados pessoais como matéria-prima para produtos preditivos vendidos a anunciantes.\n\nEmpresas de tecnologia coletam dados através de múltiplos meios: termos de serviço que usuários aceitam sem ler, cookies que rastreiam navegação, aplicativos que solicitam permissões excessivas, assistentes virtuais que gravam conversas, e compra de dados de terceiros. Esses dados são processados por algoritmos de inteligência artificial para criar perfis detalhados, prever comportamentos, personalizar publicidade, e influenciar decisões. O escândalo Cambridge Analytica (2018) revelou como dados de milhões de usuários do Facebook foram usados para campanhas políticas sem consentimento, evidenciando riscos democráticos.\n\nA privacidade é direito fundamental reconhecido constitucionalmente e em tratados internacionais. No entanto, é constantemente tensionada por interesses comerciais e argumentos de segurança. A Lei Geral de Proteção de Dados (LGPD), em vigor no Brasil desde 2020, estabelece regras sobre coleta, armazenamento e compartilhamento de dados pessoais, inspirada na legislação europeia (GDPR). Princípios incluem: necessidade de consentimento explícito, finalidade específica, minimização de dados, transparência, e direitos dos titulares (acesso, correção, exclusão). Desafios incluem efetividade da fiscalização, assimetria de poder entre usuários e grandes corporações, e vigilância governamental (como revelado por Edward Snowden). Para o ENEM, é importante compreender tensões entre privacidade e segurança, entre inovação tecnológica e direitos fundamentais, o funcionamento da economia de dados, e mecanismos legais de proteção."
+        },
+        {
+          "titulo": "Inteligência Artificial e Automatização",
+          "conteudo": "A Inteligência Artificial (IA) refere-se a sistemas computacionais capazes de executar tarefas que normalmente requerem inteligência humana: reconhecimento de padrões, aprendizado, tomada de decisões, processamento de linguagem natural. Avanços recentes em machine learning (aprendizado de máquina) e deep learning (aprendizado profundo) expandiram dramaticamente capacidades da IA, com aplicações em: assistentes virtuais, carros autônomos, diagnósticos médicos, reconhecimento facial, tradução automática, recomendação de conteúdos, e recentemente sistemas generativos como ChatGPT.\n\nA automatização impulsionada por IA gera transformações profundas no mercado de trabalho. Empregos que envolvem tarefas rotineiras e previsíveis (operadores de telemarketing, caixas, operários em linhas de montagem, alguns serviços administrativos) estão em risco de substituição. Estudos estimam que 30-50% dos empregos atuais podem ser automatizados nas próximas décadas, embora também surjam novos tipos de trabalho. A questão não é apenas quantitativa (quantos empregos) mas qualitativa: quais empregos, afetando quais trabalhadores, exigindo quais requalificações? Trabalhadores menos escolarizados em funções rotineiras são mais vulneráveis.\n\nQuestões éticas e sociais da IA incluem: viés algorítmico (sistemas reproduzindo e amplificando preconceitos presentes nos dados de treinamento, gerando discriminações raciais, de gênero), opacidade das decisões (algoritmos como 'caixas-pretas' cujos processos decisórios são incompreensíveis), responsabilização (quem é responsável por erros de sistemas autônomos?), concentração de poder (domínio tecnológico de poucas empresas e países), impactos no emprego (necessidade de políticas de transição e proteção social), e riscos existenciais (cenários futuros de IA superinteligente descontrolada, ainda especulativos). Debates sobre regulamentação da IA intensificam-se: como garantir desenvolvimento ético, transparência, accountability, e alinhamento com valores humanos? Para o ENEM, é fundamental compreender tanto potenciais benéficos quanto riscos da IA, refletir sobre impactos no trabalho e sociedade, e considerar dilemas éticos."
+        },
+        {
+          "titulo": "Inclusão e Exclusão Digital",
+          "conteudo": "A inclusão digital refere-se ao acesso universal às tecnologias de informação e comunicação (TICs), habilidades para utilizá-las efetivamente, e capacidade de produzir conteúdos e participar ativamente da sociedade digital. A exclusão digital, contrariamente, caracteriza-se pela privação desses acessos e capacidades, gerando novas formas de desigualdade e marginalização. No Brasil e globalmente, exclusão digital reproduz e agrava desigualdades socioeconômicas preexistentes.\n\nDimensões da exclusão digital incluem: exclusão de acesso (falta de infraestrutura, especialmente em áreas rurais e periferias urbanas; custos elevados de equipamentos e conexão); exclusão de habilidades (letramento digital insuficiente, analfabetismo funcional digital, dificuldades especialmente entre idosos e populações menos escolarizadas); e exclusão de participação (capacidade limitada de usar tecnologias para fins produtivos, educacionais, políticos, não apenas consumo). Desigualdades raciais, de gênero, geracionais e regionais manifestam-se também digitalmente.\n\nA pandemia de COVID-19 evidenciou dramaticamente a exclusão digital quando educação, trabalho e serviços migraram para ambiente online. Milhões de estudantes ficaram sem aulas por falta de internet ou dispositivos; trabalhadores sem possibilidade de home office foram mais expostos ao vírus; populações vulneráveis enfrentaram dificuldades para acessar auxílios emergenciais online. Políticas de inclusão digital incluem: expansão de infraestrutura (banda larga universal), redução de custos, programas de alfabetização digital, disponibilização de equipamentos em escolas e bibliotecas, e produção de conteúdos acessíveis. No entanto, inclusão não é apenas técnica mas social: envolve garantir que todos possam usar tecnologias para melhorar suas vidas, não apenas consumi-las passivamente. Para o ENEM, é importante reconhecer a inclusão digital como direito contemporâneo essencial, compreender múltiplas dimensões da exclusão, relacioná-la com desigualdades sociais mais amplas, e avaliar políticas de enfrentamento."
+        }
+      ],
+      "exemplos": [
+        "O WhatsApp é principal fonte de informação para muitos brasileiros, facilitando comunicação mas também desinformação",
+        "O escândalo Cambridge Analytica revelou uso de dados do Facebook para manipulação política",
+        "Sistemas de reconhecimento facial mostraram viés racial, identificando incorretamente pessoas negras",
+        "Durante a pandemia, estudantes sem internet ficaram excluídos do ensino remoto"
+      ],
+      "dicas": [
+        "Analise criticamente tanto benefícios quanto riscos das redes sociais",
+        "Compreenda a LGPD como marco legal de proteção de dados pessoais",
+        "Relacione automatização com transformações no mercado de trabalho e desigualdades",
+        "Reconheça exclusão digital como nova dimensão de desigualdades sociais"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "As redes sociais digitais transformaram formas de comunicação e informação. Sobre seus impactos, considere:\n\nI. Democratizaram parcialmente a produção de informação, dando voz a grupos antes marginalizados.\nII. Facilitaram mobilizações sociais e protestos através de comunicação instantânea.\nIII. Eliminaram completamente problemas de desinformação e fake news.\nIV. Algoritmos criam bolhas de filtro que podem polarizar sociedades.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "I, II e III apenas",
+            "C": "I, II e IV apenas",
+            "D": "II, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta. A afirmação I é verdadeira porque redes sociais permitiram que pessoas e grupos sem acesso a mídias tradicionais publicassem conteúdos e alcançassem audiências, democratizando parcialmente a comunicação. A afirmação II é verdadeira pois redes sociais facilitaram organização de mobilizações como Primavera Árabe e manifestações de 2013 no Brasil através de comunicação rápida e horizontal. A afirmação IV é verdadeira porque algoritmos que personalizam conteúdos podem criar bolhas de filtro onde usuários veem principalmente informações que confirmam suas visões, contribuindo para polarização. A afirmação III está incorreta porque as redes sociais, ao contrário, facilitaram enormemente a disseminação de desinformação e fake news através de viralização sem verificação.",
+          "dificuldade": "medio",
+          "tags": ["redes sociais", "comunicação", "tecnologia"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "A Lei Geral de Proteção de Dados (LGPD), em vigor no Brasil desde 2020, estabelece regras sobre coleta e uso de dados pessoais. Qual princípio está previsto nessa legislação?",
+          "alternativas": {
+            "A": "Empresas podem coletar e usar dados pessoais ilimitadamente sem necessidade de consentimento",
+            "B": "Usuários têm direito de acessar, corrigir e solicitar exclusão de seus dados pessoais",
+            "C": "A privacidade é irrelevante na era digital e não deve ser protegida legalmente",
+            "D": "Apenas empresas estrangeiras devem respeitar regras de proteção de dados",
+            "E": "Dados pessoais podem ser compartilhados livremente sem informar os titulares"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a LGPD garante aos titulares de dados diversos direitos, incluindo acesso (saber quais dados são coletados), correção (corrigir dados incorretos), e exclusão (solicitar que dados sejam apagados). Esses direitos visam empoderar usuários frente a empresas que coletam seus dados, materializando o princípio da autodeterminação informacional. A alternativa A contradiz completamente a LGPD, que exige consentimento explícito em muitos casos. A alternativa C nega a importância da privacidade, contrariando o espírito da lei. A alternativa D está incorreta - a LGPD aplica-se a empresas nacionais e estrangeiras que tratem dados de pessoas no Brasil. A alternativa E viola o princípio da transparência estabelecido pela LGPD.",
+          "dificuldade": "facil",
+          "tags": ["LGPD", "privacidade", "proteção de dados"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "'A automatização impulsionada por Inteligência Artificial está transformando o mercado de trabalho, com riscos de substituição de empregos que envolvem tarefas rotineiras e previsíveis.'\n\nQual grupo de trabalhadores é mais vulnerável a essa transformação?",
+          "alternativas": {
+            "A": "Trabalhadores altamente especializados em funções criativas e estratégicas",
+            "B": "Trabalhadores menos escolarizados em funções rotineiras e operacionais",
+            "C": "Apenas trabalhadores de países desenvolvidos, não de países emergentes",
+            "D": "Nenhum trabalhador está vulnerável porque IA não substitui funções humanas",
+            "E": "Exclusivamente trabalhadores de setores de tecnologia e inovação"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque trabalhadores menos escolarizados que exercem funções rotineiras, repetitivas e previsíveis (operadores de telemarketing, caixas, operários em linhas de montagem, alguns serviços administrativos) são mais vulneráveis à substituição por automação e IA. Essas tarefas são mais facilmente replicáveis por algoritmos. Trabalhadores nesses empregos geralmente têm menor capacidade de requalificação, agravando vulnerabilidades. A alternativa A está incorreta porque funções criativas, estratégicas e que envolvem empatia e interação humana complexa são menos substituíveis. A alternativa C está errada - a automação afeta países em todos os níveis de desenvolvimento. A alternativa D nega evidências de que IA já substitui diversas funções. A alternativa E inverte - trabalhadores de tecnologia têm geralmente mais segurança no emprego.",
+          "dificuldade": "medio",
+          "tags": ["inteligência artificial", "trabalho", "automação"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "O viés algorítmico em sistemas de Inteligência Artificial pode reproduzir e amplificar discriminações. Isso ocorre porque:",
+          "alternativas": {
+            "A": "Algoritmos são completamente neutros e imparciais por serem sistemas tecnológicos",
+            "B": "Algoritmos aprendem de dados históricos que podem conter preconceitos e desigualdades da sociedade",
+            "C": "Apenas seres humanos podem ter preconceitos, nunca sistemas computacionais",
+            "D": "O viés algorítmico é problema inexistente sem nenhuma evidência empírica",
+            "E": "Algoritmos sempre produzem resultados perfeitamente justos e equânimes"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque o viés algorítmico surge quando sistemas de IA são treinados com dados históricos que refletem preconceitos e desigualdades da sociedade (racismo, sexismo, etc.). O algoritmo aprende e reproduz esses padrões, podendo até amplificá-los. Exemplos incluem sistemas de reconhecimento facial com menor precisão para pessoas negras, algoritmos de recrutamento que discriminam mulheres, e sistemas de justiça criminal que penalizam mais negros. A alternativa A está incorreta porque algoritmos não são neutros - refletem escolhas de desenvolvimento e dados de treinamento. A alternativa C está errada porque sistemas podem manifestar vieses mesmo sendo computacionais. A alternativa D nega evidências amplamente documentadas de vieses. A alternativa E contradiz a realidade de múltiplos casos de injustiças algorítmicas.",
+          "dificuldade": "medio",
+          "tags": ["viés algorítmico", "IA", "discriminação"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "A pandemia de COVID-19 evidenciou a exclusão digital no Brasil quando educação e serviços migraram para ambiente online. Sobre exclusão digital, é correto afirmar que:",
+          "alternativas": {
+            "A": "Afeta igualmente todas as classes sociais, regiões e grupos demográficos",
+            "B": "Refere-se exclusivamente à falta de acesso à internet e equipamentos",
+            "C": "Reproduz e agrava desigualdades socioeconômicas, raciais, regionais e geracionais preexistentes",
+            "D": "É problema irrelevante porque todos os brasileiros têm acesso universal à internet",
+            "E": "Será automaticamente resolvida sem necessidade de políticas públicas específicas"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque a exclusão digital não é distribuída aleatoriamente, mas acompanha e agrava desigualdades preexistentes: populações pobres, negras, rurais, periféricas e idosas têm menor acesso e habilidades digitais. Durante a pandemia, estudantes pobres sem internet ficaram sem aulas, evidenciando como exclusão digital perpetua desigualdades educacionais. A exclusão digital é nova dimensão de desigualdades sociais estruturais. A alternativa A está incorreta porque exclusão digital afeta desigualmente diferentes grupos. A alternativa B é reducionista - exclusão digital envolve também habilidades e participação qualificada, não apenas acesso técnico. A alternativa D contradiz a realidade - milhões de brasileiros não têm acesso adequado à internet. A alternativa E é ingênua - inclusão digital requer políticas deliberadas de expansão de infraestrutura, alfabetização digital e redução de custos.",
+          "dificuldade": "facil",
+          "tags": ["exclusão digital", "desigualdades", "tecnologia"]
+        }
+      ]
+    },
+    {
+      "id": "modulo05",
+      "titulo": "Cultura, Identidades e Diversidade",
+      "resumo": "Questões contemporâneas sobre cultura, identidades, representatividade e respeito à diversidade",
+      "topicos": [
+        {
+          "titulo": "Diversidade Cultural e Multiculturalismo",
+          "conteudo": "A diversidade cultural refere-se à coexistência de múltiplas culturas (etnias, religiões, línguas, costumes, tradições) em uma sociedade ou no mundo. O Brasil é país de extrema diversidade cultural, resultado de processos históricos complexos envolvendo populações indígenas originárias, colonização portuguesa, escravidão africana, e imigração de europeus, asiáticos e árabes. Essa diversidade manifesta-se em manifestações culturais (música, dança, culinária, festas), religiões (catolicismo, protestantismo, religiões afro-brasileiras, espiritismo, religiões indígenas, islamismo), e identidades regionais.\n\nO multiculturalismo é conceito e projeto político que defende o reconhecimento, respeito e valorização da diversidade cultural, em oposição à assimilação forçada ou dominação cultural. Fundamenta-se em princípios de igualdade de direitos, dignidade de todas as culturas, e rejeição de hierarquias culturais (onde uma cultura seria superior). No entanto, multiculturalismo enfrenta desafios: como equilibrar respeito à diversidade com direitos humanos universais quando práticas culturais violam esses direitos? Como construir coesão social respeitando diferenças? Como lidar com conflitos entre grupos culturais?\n\nNo Brasil, a diversidade cultural é protegida constitucionalmente, mas enfrenta ameaças: homogeneização cultural promovida pela indústria cultural de massa e globalização, intolerância religiosa (especialmente contra religiões afro-brasileiras), racismo que desvaloriza culturas negras e indígenas, e políticas de integração que não respeitam especificidades culturais. Movimentos de valorização cultural incluem: reconhecimento de quilombos e terras indígenas, políticas de patrimônio imaterial (registrando manifestações culturais como o samba e capoeira), educação intercultural, e cotas que promovem representatividade. Para o ENEM, é fundamental compreender diversidade cultural como riqueza, reconhecer processos de formação da diversidade brasileira, analisar criticamente tanto dominação cultural quanto fundamentalismos identitários, e refletir sobre equilíbrio entre universalismo (direitos humanos) e particularismo (respeito às diferenças)."
+        },
+        {
+          "titulo": "Identidades de Gênero e Orientação Sexual",
+          "conteudo": "Identidade de gênero refere-se à forma como indivíduos se identificam em relação ao gênero (masculino, feminino, não-binário, fluido), independentemente do sexo biológico atribuído ao nascer. Orientação sexual refere-se à atração afetiva e sexual (heterossexual, homossexual, bissexual, assexual, pansexual). É fundamental distinguir sexo biológico, identidade de gênero e orientação sexual, conceitos independentes embora frequentemente confundidos. Identidade de gênero e orientação sexual são aspectos fundamentais da identidade pessoal, protegidos por direitos humanos e dignidade.\n\nPessoas LGBTQIA+ (lésbicas, gays, bissexuais, transgênero, queer, intersexo, assexuais, e outras identidades) historicamente enfrentaram e continuam enfrentando discriminação, violência, exclusão e negação de direitos. A LGBTfobia manifesta-se em múltiplas formas: violência física (Brasil é país que mais mata pessoas trans no mundo), discriminação no trabalho e educação, exclusão familiar e social, patologização (até recentemente homossexualidade era considerada doença), criminalização (em alguns países, relações homossexuais são ilegais e puníveis com morte), e negação de direitos civis (casamento, adoção).\n\nAvanços legais e sociais ocorreram nas últimas décadas: descriminalização da homossexualidade, retirada da lista de doenças pela OMS (1990), reconhecimento do casamento igualitário em diversos países incluindo Brasil (2011, decisão do STF), possibilidade de mudança de nome e gênero em documentos, criminalização da LGBTfobia (equiparada ao racismo no Brasil desde 2019), e maior visibilidade e representação midiática. No entanto, persistem desafios: resistências religiosas e conservadoras, violência cotidiana, vulnerabilidades específicas (especialmente mulheres trans negras), pânico moral sobre 'ideologia de gênero', e falta de políticas públicas específicas. Movimentos LGBTQIA+ lutam por direitos, respeito e reconhecimento. Para o ENEM, é importante compreender conceitos básicos (distinguir identidade de gênero e orientação sexual), reconhecer direitos de pessoas LGBTQIA+, analisar discriminações, e refletir sobre respeito à diversidade sexual e de gênero como valores democráticos e humanistas."
+        },
+        {
+          "titulo": "Intolerância Religiosa e Laicidade do Estado",
+          "conteudo": "A intolerância religiosa refere-se a atitudes, discursos e ações de desrespeito, discriminação ou violência contra indivíduos ou grupos em razão de suas crenças religiosas. Manifesta-se em múltiplas formas: preconceito e estigmatização, ataques verbais e físicos, destruição de templos e símbolos religiosos, discriminação em espaços públicos e privados, e negação de direitos. No Brasil, embora a Constituição garanta liberdade religiosa, religiões de matrizes africanas (Candomblé, Umbanda) são alvos principais de intolerância.\n\nA laicidade do Estado é princípio constitucional que estabelece separação entre Estado e religiões, garantindo que o poder público não privilegie, discrimine ou interfira em questões religiosas, e que religiões não controlem políticas estatais. Laicidade não significa ateísmo estatal ou proibição de religião no espaço público, mas neutralidade do Estado que deve tratar igualmente todas as religiões e não-religiosos, e não deve fundamentar políticas em doutrinas religiosas específicas. Esse princípio protege tanto liberdade religiosa (direito de professar qualquer religião) quanto liberdade de consciência (direito de não professar nenhuma).\n\nTensões contemporâneas envolvem: crescimento de bancadas religiosas no Congresso que promovem agendas baseadas em valores religiosos específicos, resistências religiosas a direitos (casamento igualitário, direitos reprodutivos, educação sexual), ensino religioso em escolas públicas (como implementar respeitando laicidade?), símbolos religiosos em espaços públicos (crucifixos em tribunais), e discursos que confundem laicidade com perseguição religiosa. A defesa da laicidade não é ataque à religião, mas garantia de que o Estado não será instrumentalizado por grupos religiosos específicos, protegendo pluralismo e evitando teocracia. Para o ENEM, é fundamental compreender liberdade religiosa como direito humano, reconhecer especificidades da intolerância contra religiões afro-brasileiras, entender laicidade como princípio democrático, e analisar tensões entre valores religiosos e direitos fundamentais em sociedades plurais."
+        },
+        {
+          "titulo": "Representatividade e Lugar de Fala",
+          "conteudo": "Representatividade refere-se à presença e visibilidade de diferentes grupos sociais (definidos por raça, gênero, classe, orientação sexual, etc.) em espaços de poder, decisão, mídia e cultura. A falta de representatividade significa que decisões sobre políticas, narrativas culturais, e normas sociais são tomadas sem participação de grupos afetados, perpetuando desigualdades e invisibilizando experiências. A representatividade importa porque: garante que perspectivas diversas sejam consideradas, permite que grupos se vejam refletidos positivamente (impactando autoestima e aspirações, especialmente de crianças), e corrige distorções e estereótipos.\n\nNo Brasil, diversos grupos são sub-representados: mulheres ocupam minoria dos cargos políticos e executivos apesar de serem maioria da população; negros são sub-representados em posições de prestígio (universidades, mídia, política) apesar de serem maioria da população; pessoas LGBTQIA+, com deficiência, de religiões minoritárias e de classes populares também enfrentam sub-representação. Essa ausência não é acidental mas resultado de estruturas de poder e discriminação. Políticas de ação afirmativa (cotas) buscam corrigir essas desigualdades.\n\nO conceito de 'lugar de fala', desenvolvido por pensadoras como Djamila Ribeiro, refere-se a como identidades sociais e experiências vividas moldam perspectivas e autoridade epistêmica sobre determinadas questões. Não significa que apenas membros de grupos marginalizados podem falar sobre suas experiências (o que seria impossível para aliados e acadêmicos), mas reconhece que essas experiências conferem conhecimento situado importante, frequentemente silenciado. Críticas equivocadas acusam o conceito de promover censura; defensores argumentam que busca democratizar discursos, valorizando vozes historicamente excluídas. Para o ENEM, é importante compreender por que representatividade importa, reconhecer padrões de sub-representação, analisar políticas de promoção de diversidade, e refletir sobre como experiências vividas moldam perspectivas, sem cair em essencialismos (onde identidades determinariam absolutamente visões)."
+        }
+      ],
+      "exemplos": [
+        "A capoeira, o samba e o frevo foram reconhecidos como patrimônio cultural imaterial da humanidade",
+        "O casamento igualitário foi reconhecido no Brasil pelo STF em 2011, garantindo direitos a casais homoafetivos",
+        "Terreiros de religiões afro-brasileiras sofrem ataques e intolerância religiosa frequentemente",
+        "Cotas raciais em universidades aumentaram representatividade de estudantes negros"
+      ],
+      "dicas": [
+        "Reconheça diversidade cultural como riqueza, não problema",
+        "Diferencie identidade de gênero (como se identifica) de orientação sexual (por quem se atrai)",
+        "Compreenda laicidade como neutralidade do Estado, não como ateísmo estatal",
+        "Entenda representatividade como questão de justiça e democracia, não apenas simbólica"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "O multiculturalismo defende o reconhecimento e valorização da diversidade cultural. Sobre esse conceito, é correto afirmar que:",
+          "alternativas": {
+            "A": "Defende a assimilação forçada de culturas minoritárias à cultura dominante",
+            "B": "Estabelece hierarquia de culturas, considerando algumas superiores a outras",
+            "C": "Promove respeito e igualdade de direitos entre diferentes culturas",
+            "D": "Proíbe completamente qualquer forma de interação entre culturas diferentes",
+            "E": "É sinônimo de homogeneização cultural e eliminação de diferenças"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque o multiculturalismo fundamenta-se justamente no reconhecimento da diversidade cultural como legítima e valiosa, promovendo respeito mútuo e igualdade de direitos entre diferentes culturas, etnias, religiões e tradições. Opõe-se à ideia de assimilação forçada e rejeita hierarquias culturais. No entanto, multiculturalismo não significa relativismo absoluto - direitos humanos universais permanecem como limites. A alternativa A contradiz completamente o multiculturalismo, descrevendo assimilacionismo. A alternativa B inverte o princípio fundamental de igualdade entre culturas. A alternativa D exagera - multiculturalismo não impede interações culturais, mas rejeita dominação. A alternativa E descreve o oposto - multiculturalismo valoriza diferenças, não as elimina.",
+          "dificuldade": "facil",
+          "tags": ["multiculturalismo", "diversidade cultural", "direitos"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Sobre identidade de gênero e orientação sexual, conceitos fundamentais para compreender diversidade, considere:\n\nI. Identidade de gênero refere-se a como indivíduos se identificam em relação ao gênero.\nII. Orientação sexual refere-se à atração afetiva e sexual por outras pessoas.\nIII. Identidade de gênero e orientação sexual são idênticas e sempre coincidem.\nIV. Pessoas LGBTQIA+ têm direitos humanos garantidos constitucionalmente.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "I, II e III apenas",
+            "C": "I, II e IV apenas",
+            "D": "II, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta. A afirmação I é verdadeira porque identidade de gênero refere-se à identificação pessoal com gênero (masculino, feminino, não-binário), independente do sexo biológico atribuído ao nascer. A afirmação II é verdadeira porque orientação sexual diz respeito à atração (heterossexual, homossexual, bissexual, assexual, etc.). A afirmação IV é verdadeira porque pessoas LGBTQIA+ são titulares de direitos humanos e constitucionais (dignidade, igualdade, liberdade), reconhecidos pela Constituição e decisões do STF (casamento igualitário, criminalização da LGBTfobia). A afirmação III está incorreta porque identidade de gênero e orientação sexual são conceitos distintos e independentes: uma pessoa pode ser trans e heterossexual, cis e homossexual, etc. - são dimensões diferentes da identidade.",
+          "dificuldade": "medio",
+          "tags": ["identidade de gênero", "orientação sexual", "LGBTQIA+"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "A laicidade do Estado é princípio constitucional brasileiro que estabelece:",
+          "alternativas": {
+            "A": "O ateísmo como religião oficial do Estado e proibição de todas as religiões",
+            "B": "A separação entre Estado e religiões, com neutralidade estatal e liberdade religiosa",
+            "C": "O privilégio de uma religião específica sobre as demais pelo Estado",
+            "D": "A proibição de qualquer manifestação religiosa em espaços públicos",
+            "E": "O controle de políticas públicas por lideranças religiosas"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque laicidade significa separação entre Estado e religiões, estabelecendo que o poder público não deve privilegiar, discriminar ou ser controlado por nenhuma religião específica, mantendo neutralidade e garantindo liberdade religiosa universal. O Estado laico protege tanto o direito de professar qualquer religião quanto de não professar nenhuma. Políticas públicas não devem fundamentar-se em doutrinas religiosas. A alternativa A confunde laicidade com ateísmo estatal - laicidade respeita todas as religiões. A alternativa C descreve Estado confessional, oposto à laicidade. A alternativa D exagera - laicidade não proíbe manifestações religiosas individuais em público, apenas impede privilégios estatais. A alternativa E descreve teocracia, incompatível com laicidade.",
+          "dificuldade": "medio",
+          "tags": ["laicidade", "Estado", "liberdade religiosa"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "A intolerância religiosa no Brasil afeta particularmente religiões de matrizes africanas como Candomblé e Umbanda. Isso relaciona-se com:",
+          "alternativas": {
+            "A": "A completa igualdade de tratamento de todas as religiões no Brasil",
+            "B": "O racismo estrutural que desvaloriza e ataca manifestações culturais negras",
+            "C": "A inexistência de qualquer forma de discriminação religiosa no país",
+            "D": "O tratamento privilegiado que religiões afro-brasileiras recebem do Estado",
+            "E": "A incompatibilidade entre laicidade e práticas de religiões africanas"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a intolerância religiosa contra religiões de matrizes africanas relaciona-se diretamente com racismo estrutural brasileiro. Essas religiões foram historicamente perseguidas, criminalizadas e estigmatizadas como 'macumba' ou 'feitiçaria', enquanto religiões cristãs eram valorizadas. A discriminação atual (ataques a terreiros, agressões a praticantes, demonização) perpetua esse racismo, desvalorizando manifestações culturais e espirituais negras. A alternativa A nega a realidade de discriminação desigual. A alternativa C contradiz dados sobre casos de intolerância religiosa. A alternativa D inverte completamente a realidade - religiões afro-brasileiras enfrentam marginalização, não privilégios. A alternativa E cria incompatibilidade inexistente - laicidade deve proteger igualmente todas as religiões.",
+          "dificuldade": "facil",
+          "tags": ["intolerância religiosa", "racismo", "religiões afro-brasileiras"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "O conceito de 'lugar de fala' tem sido debatido em discussões sobre representatividade e diversidade. Esse conceito refere-se a:",
+          "alternativas": {
+            "A": "A proibição total de pessoas falarem sobre experiências de grupos aos quais não pertencem",
+            "B": "O reconhecimento de que experiências vividas de grupos marginalizados conferem perspectivas importantes frequentemente silenciadas",
+            "C": "A irrelevância completa de identidades sociais para compreensão de questões sociais",
+            "D": "A censura de qualquer debate sobre desigualdades e discriminações",
+            "E": "O determinismo absoluto onde identidades definem totalmente as perspectivas individuais"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque o conceito de lugar de fala reconhece que experiências vividas de discriminação, opressão ou marginalização (por ser negro, mulher, LGBTQIA+, etc.) conferem conhecimento situado e perspectivas valiosas que historicamente foram silenciadas ou deslegitimadas. Não significa que apenas membros de grupos podem falar sobre suas questões, mas que essas vozes devem ser valorizadas e ouvidas. Busca democratizar discursos, não censurar. A alternativa A distorce o conceito estabelecendo proibição inexistente - aliados podem e devem falar, mas ouvindo prioritariamente quem vive experiências. A alternativa C nega completamente a relevância de experiências e identidades. A alternativa D acusa erroneamente o conceito de promover censura. A alternativa E essencializa exageradamente - lugar de fala não determina absolutamente visões, apenas influencia perspectivas.",
+          "dificuldade": "dificil",
+          "tags": ["lugar de fala", "representatividade", "identidades"]
+        }
+      ]
+    }
+  ]
+}

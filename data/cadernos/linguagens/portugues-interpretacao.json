@@ -1,0 +1,204 @@
+{
+  "id": "portugues-interpretacao",
+  "titulo": "Interpretação de Texto",
+  "descricao": "Estratégias de leitura e interpretação textual",
+  "icone": "📖",
+  "cor": "from-blue-500 to-indigo-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Estratégias de Leitura",
+      "resumo": "Aprenda técnicas eficientes para compreender e interpretar textos de diferentes gêneros e complexidades.",
+      "topicos": [
+        "Skimming (leitura panorâmica) e Scanning (leitura seletiva)",
+        "Identificação de palavras-chave e ideias principais",
+        "Contextualização do texto (autor, época, público-alvo)",
+        "Ativação de conhecimentos prévios",
+        "Relação entre título, subtítulo e corpo do texto"
+      ],
+      "exemplos": [
+        "Ao ler uma notícia, observe primeiro o lead (parágrafo inicial) que responde às perguntas: quem, o quê, quando, onde, como e por quê",
+        "Em textos argumentativos, identifique a tese logo na introdução",
+        "Sublinhe conectivos e palavras de transição que indicam a progressão das ideias"
+      ],
+      "dicas": [
+        "Leia o enunciado da questão antes do texto para saber o que procurar",
+        "Não confunda 'o que está escrito' com 'o que você acha'",
+        "Circule informações importantes durante a primeira leitura",
+        "Relacione imagens, gráficos e infográficos ao texto verbal"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Leia o texto:\n\n'A pandemia acelerou processos que já estavam em curso, como a digitalização do trabalho e do ensino. O que era tendência virou necessidade da noite para o dia. Empresas e escolas tiveram que se adaptar rapidamente a um cenário sem precedentes.'\n\nQual a ideia principal do texto?",
+          "alternativas": [
+            "A pandemia criou novos processos tecnológicos",
+            "A digitalização acelerou processos pandêmicos",
+            "A pandemia acelerou transformações já existentes",
+            "Empresas não estavam preparadas para mudanças",
+            "O ensino digital é melhor que o presencial"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A ideia central está na primeira frase: a pandemia acelerou processos que já estavam em curso, ou seja, transformações que já existiam foram intensificadas."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Inferência e Implícitos",
+      "resumo": "Desenvolva a capacidade de ler nas entrelinhas e compreender informações não explícitas no texto.",
+      "topicos": [
+        "Diferença entre informação explícita e implícita",
+        "Pressupostos e subentendidos",
+        "Ironia e duplo sentido",
+        "Contexto cultural e inferências",
+        "Marcas linguísticas de implícitos"
+      ],
+      "exemplos": [
+        "Texto: 'Maria deixou de fumar.' Pressuposto: Maria fumava antes",
+        "Texto: 'Até o João passou no vestibular!' Implícito: João não era esperado passar",
+        "Texto: 'Que pontualidade admirável!' (em tom irônico) - Implica que a pessoa está atrasada"
+      ],
+      "dicas": [
+        "Preste atenção em advérbios como 'até', 'ainda', 'já' que carregam pressupostos",
+        "Considere o contexto para interpretar ironias",
+        "Cuidado com generalizações não autorizadas pelo texto",
+        "O implícito está no texto, não na sua imaginação"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Analise o enunciado:\n\n'Finalmente, o governo decidiu investir em educação.'\n\nO que está implícito nessa frase?",
+          "alternativas": [
+            "O governo sempre investiu em educação",
+            "O governo não investia em educação antes",
+            "A educação não precisa de investimentos",
+            "O investimento em educação é recente e único",
+            "Finalmente é sinônimo de felizmente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O advérbio 'finalmente' pressupõe que algo esperado demorou a acontecer, implicando que antes não havia investimento adequado em educação."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Argumentação vs Opinião",
+      "resumo": "Identifique a diferença entre argumentos fundamentados e opiniões pessoais, essencial para análise crítica.",
+      "topicos": [
+        "Conceito de argumento e opinião",
+        "Tipos de argumentos: autoridade, exemplificação, causa e consequência",
+        "Falácias argumentativas comuns",
+        "Sustentação de tese com evidências",
+        "Diferença entre senso comum e conhecimento científico"
+      ],
+      "exemplos": [
+        "Opinião: 'Acho que o aquecimento global não existe.' / Argumento: 'Segundo dados da NASA, a temperatura média global aumentou 1,2°C desde 1880.'",
+        "Falácia: 'Todo mundo faz, então está certo.' (apelo à popularidade)",
+        "Argumento de autoridade: 'Conforme o especialista em climatologia Dr. Silva...'"
+      ],
+      "dicas": [
+        "Argumento tem base em dados, estudos ou lógica; opinião é pessoal",
+        "Identifique as evidências apresentadas pelo autor",
+        "Questione: 'Como o autor sabe disso?'",
+        "Cuidado com generalizações sem comprovação"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Leia os trechos:\n\nI. 'Eu acho que ler é importante.'\nII. 'Segundo pesquisa da Unesco, países com maior índice de leitura apresentam melhor desenvolvimento humano.'\n\nSobre os trechos, é correto afirmar:",
+          "alternativas": [
+            "Ambos são argumentos baseados em dados",
+            "I é opinião e II é argumento fundamentado",
+            "II é opinião disfarçada de argumento",
+            "I é mais convincente que II",
+            "Ambos têm o mesmo valor argumentativo"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O trecho I expressa opinião pessoal ('eu acho'), enquanto II apresenta argumento baseado em dados de pesquisa da Unesco, com fundamentação."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Tipos Textuais",
+      "resumo": "Reconheça as características dos cinco tipos textuais: narrativo, descritivo, expositivo, argumentativo e injuntivo.",
+      "topicos": [
+        "Texto narrativo: enredo, personagens, tempo, espaço",
+        "Texto descritivo: características, detalhamento",
+        "Texto expositivo: informar, explicar conceitos",
+        "Texto argumentativo: tese, argumentos, conclusão",
+        "Texto injuntivo: instruções, comandos"
+      ],
+      "exemplos": [
+        "Narrativo: 'Era uma vez um rei que vivia em um castelo...'",
+        "Descritivo: 'A casa era grande, de paredes brancas e janelas azuis...'",
+        "Expositivo: 'A fotossíntese é o processo pelo qual...'",
+        "Argumentativo: 'A redução da maioridade penal não resolve a questão da violência porque...'",
+        "Injuntivo: 'Misture os ingredientes. Leve ao forno por 30 minutos.'"
+      ],
+      "dicas": [
+        "Um texto pode misturar vários tipos textuais",
+        "Identifique a finalidade principal do texto",
+        "Observe os tempos verbais: narrativo usa pretérito; injuntivo usa imperativo",
+        "Textos expositivos são informativos; argumentativos, persuasivos"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Qual trecho apresenta predominantemente características de texto argumentativo?",
+          "alternativas": [
+            "'Desligue o aparelho da tomada antes de limpar.'",
+            "'A moça tinha cabelos longos e olhos verdes brilhantes.'",
+            "'A energia solar é renovável e não emite poluentes. Portanto, devemos investir nessa fonte.'",
+            "'Ontem, João foi ao mercado e comprou frutas.'",
+            "'O ciclo da água envolve evaporação, condensação e precipitação.'"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O trecho apresenta uma tese (investir em energia solar) seguida de argumentos (renovável, não poluente) e conclusão marcada pelo conectivo 'portanto', características do texto argumentativo."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Intertextualidade e Relações Textuais",
+      "resumo": "Compreenda como textos dialogam entre si através de citações, paródias, referências e alusões.",
+      "topicos": [
+        "Conceito de intertextualidade",
+        "Paráfrase e paródia",
+        "Citação e alusão",
+        "Referências culturais e literárias",
+        "Interdiscursividade"
+      ],
+      "exemplos": [
+        "Paródia: 'Minha terra tem palmeiras onde canta o sabiá' → 'Minha terra tem Palmares onde canta a liberdade'",
+        "Alusão: Texto menciona 'traição de Judas' referindo-se à traição bíblica",
+        "Citação: 'Como disse Drummond: No meio do caminho tinha uma pedra...'"
+      ],
+      "dicas": [
+        "Reconheça referências a obras clássicas, mitos e eventos históricos",
+        "A paródia geralmente tem intenção crítica ou humorística",
+        "A paráfrase mantém a ideia; a paródia subverte",
+        "Conhecimento cultural amplo ajuda a identificar intertextos"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Um texto publicitário usa a frase 'Ser ou não ser sustentável, eis a questão' para promover produtos ecológicos. Qual recurso intertextual foi utilizado?",
+          "alternativas": [
+            "Citação literal de Shakespeare",
+            "Paródia da frase de Hamlet",
+            "Paráfrase de texto científico",
+            "Alusão à mitologia grega",
+            "Referência à literatura brasileira"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Trata-se de uma paródia da célebre frase 'Ser ou não ser, eis a questão' de Hamlet (Shakespeare), adaptada para o contexto da sustentabilidade com intenção publicitária."
+        }
+      ]
+    }
+  ]
+}

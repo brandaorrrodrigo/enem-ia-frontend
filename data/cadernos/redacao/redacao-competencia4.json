@@ -1,0 +1,332 @@
+{
+  "id": "redacao-competencia4",
+  "titulo": "Competência 4: Demonstrar Conhecimento dos Mecanismos Linguísticos",
+  "descricao": "Demonstrar conhecimento dos mecanismos linguísticos necessários para a construção da argumentação",
+  "icone": "🔗",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Avançado",
+  "tempoEstimado": "3h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Conectivos e Operadores Argumentativos",
+      "resumo": "Conectivos são elementos essenciais para construir coesão textual e estabelecer relações lógicas entre ideias. Dominar seu uso adequado é fundamental para alcançar pontuação máxima na Competência 4.",
+      "topicos": [
+        "Conectivos de adição",
+        "Conectivos de oposição/contraste",
+        "Conectivos de causa e consequência",
+        "Conectivos de conclusão",
+        "Uso inadequado de conectivos"
+      ],
+      "exemplos": [
+        "➕ ADIÇÃO/CONTINUIDADE:\n'Além disso', 'ademais', 'outrossim', 'igualmente', 'da mesma forma', 'analogamente'\nExemplo: 'O subfinanciamento educacional é grave. Além disso, a má gestão dos recursos agrava o problema.'",
+        "⚡ OPOSIÇÃO/CONTRASTE:\n'Contudo', 'todavia', 'entretanto', 'não obstante', 'porém', 'no entanto', 'em contrapartida'\nExemplo: 'O Brasil possui legislação avançada. Contudo, a aplicação prática é deficiente.'",
+        "🔄 CAUSA-CONSEQUÊNCIA:\n'Portanto', 'logo', 'assim', 'por conseguinte', 'consequentemente', 'dessa forma', 'em razão disso'\nExemplo: 'A desigualdade persiste há décadas. Portanto, são necessárias medidas estruturais.'",
+        "🎯 FINALIDADE:\n'A fim de', 'com o intuito de', 'para que', 'com o objetivo de'\nExemplo: 'O Estado deve investir em educação a fim de promover mobilidade social.'",
+        "❌ USO INADEQUADO:\n'O governo não age. Porém precisa agir.' (contradição lógica)\n✅ Correto: 'O governo não age. Entretanto, deveria agir.' OU 'O governo não age, mas precisa agir.'"
+      ],
+      "dicas": [
+        "Varie os conectivos; evite repetir sempre o mesmo",
+        "Cada conectivo estabelece relação lógica específica - use adequadamente",
+        "Não comece muitos parágrafos com o mesmo conectivo",
+        "Verifique se a relação lógica faz sentido (causa-consequência, adição, oposição)",
+        "Conectivos de conclusão são ideais para o último parágrafo"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c4-m1",
+          "enunciado": "Qual conectivo estabelece relação de OPOSIÇÃO/CONTRASTE?",
+          "alternativas": [
+            "Além disso",
+            "Portanto",
+            "Contudo",
+            "Assim"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Contudo' é conectivo adversativo, indicando oposição ou contraste entre ideias."
+        },
+        {
+          "id": "q2-c4-m1",
+          "enunciado": "Complete: 'A desigualdade persiste. _____, medidas urgentes são necessárias.'",
+          "alternativas": [
+            "Além disso",
+            "Contudo",
+            "Portanto",
+            "Também"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Portanto' estabelece relação de conclusão/consequência adequada ao contexto: da persistência do problema, conclui-se a necessidade de medidas."
+        },
+        {
+          "id": "q3-c4-m1",
+          "enunciado": "Identifique o uso INADEQUADO de conectivo:",
+          "alternativas": [
+            "O problema é grave. Além disso, afeta milhões de pessoas.",
+            "A lei existe. Contudo, não é aplicada.",
+            "O governo não investe. Portanto não investe em educação.",
+            "A situação é preocupante. Assim, medidas são urgentes."
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Há redundância e erro lógico: 'não investe, portanto não investe'. O conectivo conclusivo está sendo usado inadequadamente."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Referenciação e Coesão Lexical",
+      "resumo": "Mecanismos de referenciação (anáforas, catáforas, sinônimos) evitam repetições desnecessárias e constroem coesão lexical. São fundamentais para a fluidez e qualidade do texto.",
+      "topicos": [
+        "Pronomes anafóricos",
+        "Sinônimos e hiperônimos",
+        "Repetição vs variação lexical",
+        "Elipse e coesão",
+        "Expressões referenciais"
+      ],
+      "exemplos": [
+        "✅ REFERENCIAÇÃO POR PRONOME:\n'A violência contra a mulher persiste no Brasil. Esse problema decorre de fatores históricos e culturais.'\n('Esse problema' = anáfora retomando 'violência contra a mulher')",
+        "✅ REFERENCIAÇÃO POR SINÔNIMO:\n'A educação pública enfrenta desafios. O ensino oficial carece de investimentos adequados.'\n('ensino oficial' = sinônimo de 'educação pública')",
+        "✅ REFERENCIAÇÃO POR HIPERÔNIMO:\n'O Brasil enfrenta problemas sociais graves. O país necessita de políticas públicas eficazes.'\n('O país' = hiperônimo de 'Brasil')",
+        "✅ REFERENCIAÇÃO POR EXPRESSÃO NOMINAL:\n'O estigma contra doenças mentais persiste. Tal preconceito impede o acesso ao tratamento.'\n('Tal preconceito' = retoma 'estigma contra doenças mentais')",
+        "❌ REPETIÇÃO EXCESSIVA:\n'A educação é importante. A educação transforma. A educação deve ser priorizada.'\n✅ COM COESÃO:\n'A educação é importante. Essa área essencial transforma vidas e deve ser priorizada.'"
+      ],
+      "dicas": [
+        "Use pronomes demonstrativos para retomar ideias: 'esse problema', 'tal situação'",
+        "Varie vocabulário com sinônimos adequados ao contexto formal",
+        "Hiperônimos evitam repetição: 'Brasil' → 'o país', 'governo' → 'o poder público'",
+        "Evite repetir a mesma palavra muitas vezes no mesmo parágrafo",
+        "A elipse (omissão) também cria coesão quando o referente está claro"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c4-m2",
+          "enunciado": "'A desigualdade social é alarmante. _____ afeta milhões de brasileiros.' Qual elemento coesivo é mais adequado?",
+          "alternativas": [
+            "Ela",
+            "Esse problema",
+            "A desigualdade social",
+            "Isto"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "'Esse problema' funciona como anáfora encapsuladora, retomando 'desigualdade social' de forma coesa e variada."
+        },
+        {
+          "id": "q2-c4-m2",
+          "enunciado": "Qual estratégia NÃO contribui para a coesão lexical?",
+          "alternativas": [
+            "Uso de sinônimos contextuais",
+            "Repetição excessiva da mesma palavra",
+            "Uso de pronomes anafóricos",
+            "Uso de hiperônimos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A repetição excessiva prejudica a coesão e empobrece o texto. É necessário variar o vocabulário com sinônimos, pronomes e hiperônimos."
+        },
+        {
+          "id": "q3-c4-m2",
+          "enunciado": "'O Brasil enfrenta desafios educacionais. _____ precisa investir em políticas públicas.' Qual opção cria melhor coesão?",
+          "alternativas": [
+            "O Brasil",
+            "Ele",
+            "O país",
+            "Isto"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'O país' é hiperônimo adequado que retoma 'Brasil' sem repetição, criando coesão lexical formal."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Coesão Entre Parágrafos",
+      "resumo": "A coesão entre parágrafos garante que o texto flua como um todo articulado, não como blocos isolados. Conectivos interparágrafos e retomadas são essenciais para essa articulação.",
+      "topicos": [
+        "Conectivos interparágrafos",
+        "Tópico frasal e retomada",
+        "Progressão temática",
+        "Articulação introdução-desenvolvimento-conclusão",
+        "Evitando parágrafos soltos"
+      ],
+      "exemplos": [
+        "✅ BOA ARTICULAÇÃO ENTRE PARÁGRAFOS:\n[P1 - Introdução] '...A invisibilidade do trabalho doméstico feminino decorre de fatores históricos e culturais.'\n[P2 - D1 inicia] 'Sob perspectiva histórica, a divisão sexual do trabalho relegou...'\n[P3 - D2 inicia] 'Além do fator histórico, aspectos culturais contemporâneos...'",
+        "✅ USO DE CONECTIVOS INTERPARÁGRAFOS:\n'Ademais', 'Por outro lado', 'Nesse contexto', 'Dessa forma', 'Outrossim', 'Sob outra perspectiva'",
+        "✅ RETOMADA DA TESE:\n[Introdução] 'O problema decorre de X e Y'\n[D1] 'Primeiramente, quanto ao fator X...' [D2] 'Além disso, relativamente ao fator Y...'",
+        "✅ PROGRESSÃO LÓGICA:\n[Introdução] Apresenta problema\n[D1] Analisa causa 1\n[D2] Analisa causa 2\n[Conclusão] Retoma causas e propõe soluções\n(Cada parte conecta-se logicamente à anterior)",
+        "❌ PARÁGRAFO SOLTO (sem conexão):\n[P2] '...medidas educativas são necessárias.'\n[P3] 'A saúde mental é importante.' (quebra de fluxo argumentativo)"
+      ],
+      "dicas": [
+        "Inicie novos parágrafos com conectivos que estabeleçam relação com o anterior",
+        "Retome elementos da tese em cada parágrafo de desenvolvimento",
+        "Mantenha progressão lógica: cada parágrafo desenvolve um aspecto",
+        "Na conclusão, retome elementos da introdução para 'fechar o círculo'",
+        "Evite mudanças bruscas de assunto sem transição"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c4-m3",
+          "enunciado": "Qual conectivo é mais adequado para INICIAR um segundo parágrafo de desenvolvimento?",
+          "alternativas": [
+            "Portanto",
+            "Em conclusão",
+            "Ademais",
+            "Logo"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Ademais' (além disso) é adequado para adicionar novo argumento/aspecto, articulando com o parágrafo anterior."
+        },
+        {
+          "id": "q2-c4-m3",
+          "enunciado": "O que caracteriza BOA articulação entre parágrafos?",
+          "alternativas": [
+            "Cada parágrafo trata de assunto completamente diferente",
+            "Ausência de conectivos entre parágrafos",
+            "Progressão lógica com retomadas e conectivos articuladores",
+            "Repetição das mesmas ideias em cada parágrafo"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Boa articulação envolve progressão lógica (cada parágrafo avança na argumentação) com uso de conectivos e retomadas que criam coesão."
+        },
+        {
+          "id": "q3-c4-m3",
+          "enunciado": "[P1] 'O problema tem causas históricas e econômicas.' [P2] 'Historicamente, a desigualdade...' [P3] '_____, fatores econômicos...' Complete:",
+          "alternativas": [
+            "Portanto",
+            "Além da dimensão histórica",
+            "Em conclusão",
+            "Primeiramente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "'Além da dimensão histórica' retoma o parágrafo anterior e introduz o novo aspecto (econômico), criando articulação coesa."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Progressão Temática e Continuidade",
+      "resumo": "Progressão temática é a forma como as informações avançam no texto, construindo continuidade e evitando redundância. É critério central da Competência 4.",
+      "topicos": [
+        "Informação dada vs informação nova",
+        "Evitando redundância",
+        "Progressão com contínua",
+        "Progressão com ruptura temática",
+        "Equilíbrio entre retomada e avanço"
+      ],
+      "exemplos": [
+        "✅ PROGRESSÃO ADEQUADA (tema → rema):\n[Frase 1] 'A educação pública enfrenta desafios.' [TEMA = educação pública | REMA = enfrenta desafios]\n[Frase 2] 'Esses desafios decorrem do subfinanciamento.' [TEMA = desafios (retoma rema) | REMA = decorrem do subfinanciamento (novo)]",
+        "❌ REDUNDÂNCIA (não há progressão):\n'A violência é grave. A violência é séria. A violência é preocupante.'\n(Repete a mesma informação sem avançar)",
+        "✅ PROGRESSÃO EM PARÁGRAFO:\n[1] Apresenta problema → [2] Explica causa → [3] Desenvolve consequência → [4] Conecta ao argumento geral\n(Cada frase adiciona informação nova)",
+        "✅ EXEMPLO NOTA 1000:\n'O estigma contra doenças mentais persiste. Tal preconceito decorre de desinformação. Essa lacuna informacional é agravada pela precariedade das campanhas educativas. A deficiência dessas iniciativas evidencia negligência estatal.'\n(Cada frase retoma elemento anterior e adiciona informação nova)",
+        "⚠️ RUPTURA TEMÁTICA (quebra de fluxo):\n'A educação é fundamental. O futebol brasileiro tem história rica.'\n(Mudança abrupta sem conexão lógica)"
+      ],
+      "dicas": [
+        "Cada frase deve retomar algo anterior E adicionar informação nova",
+        "Evite repetir a mesma ideia com palavras diferentes sem avançar",
+        "Use o 'rema' (informação nova) de uma frase como 'tema' (ponto de partida) da próxima",
+        "Mantenha coerência temática: não mude abruptamente de assunto",
+        "Equilibre retomadas (coesão) com avanços (progressão)"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c4-m4",
+          "enunciado": "Qual sequência apresenta BOA progressão temática?",
+          "alternativas": [
+            "A violência é grave. A violência é séria. A violência preocupa.",
+            "A violência persiste. Esse problema decorre de desigualdade. Tal desigualdade é histórica.",
+            "A violência existe. O Brasil tem problemas. A educação é importante.",
+            "A violência ocorre. A violência acontece. A violência se manifesta."
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Há progressão: violência → problema (retoma) + causa (novo) → desigualdade (retoma) + característica (novo). Cada frase avança."
+        },
+        {
+          "id": "q2-c4-m4",
+          "enunciado": "O que caracteriza REDUNDÂNCIA textual?",
+          "alternativas": [
+            "Uso de sinônimos para criar coesão",
+            "Repetição da mesma informação sem progressão",
+            "Uso de conectivos variados",
+            "Progressão lógica entre ideias"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Redundância é repetir a mesma informação com palavras diferentes sem adicionar conteúdo novo, prejudicando a progressão."
+        },
+        {
+          "id": "q3-c4-m4",
+          "enunciado": "'A desigualdade persiste. _____ decorre de fatores históricos.' Qual elemento cria melhor progressão?",
+          "alternativas": [
+            "A desigualdade",
+            "Esse problema",
+            "A sociedade",
+            "O Brasil"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "'Esse problema' retoma 'desigualdade' (tema dado) e permite introduzir 'fatores históricos' (rema/informação nova), criando progressão."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Repertório de Conectivos e Análise de Redações Nota 1000",
+      "resumo": "Ampliar o repertório de conectivos e operadores argumentativos é essencial para alcançar nota máxima. Analisamos redações nota 1000 para identificar estratégias coesivas exemplares.",
+      "topicos": [
+        "Repertório ampliado de conectivos",
+        "Conectivos sofisticados",
+        "Análise de coesão em redações 1000",
+        "Variação e precisão",
+        "Prática de identificação"
+      ],
+      "exemplos": [
+        "📚 CONECTIVOS SOFISTICADOS:\nAdição: 'outrossim', 'ademais', 'cumpre ressaltar'\nOposição: 'não obstante', 'conquanto', 'em contrapartida'\nConclusão: 'dessarte', 'destarte', 'ante o exposto'\nCausa: 'haja vista', 'posto que', 'porquanto'",
+        "✅ TRECHO NOTA 1000 - ANÁLISE DE COESÃO:\n'A invisibilidade de povos tradicionais decorre de fatores históricos. [1-referenciação] Nesse contexto [2-conectivo locativo], a ausência de políticas públicas agrava [3-progressão] tal problemática [4-anáfora]. Outrossim [5-adição sofisticada], o preconceito social perpetua [6-variação lexical] essa marginalização [7-sinônimo].'\n(7 mecanismos coesivos em 3 frases)",
+        "✅ ARTICULAÇÃO INTRODUÇÃO-CONCLUSÃO (nota 1000):\n[Introdução] '...decorre de negligência estatal e preconceito social.'\n[Conclusão] 'Portanto, mediante ações estatais educativas e legislação contra discriminação, será possível mitigar os impactos supracitados.'\n(Retoma tese + conecta à proposta)",
+        "✅ VARIEDADE DE CONECTIVOS (nota 1000):\nP1: 'Nesse contexto' | P2: 'Sob perspectiva histórica' | P3: 'Ademais' | P4: 'Portanto'\n(Nunca repete o mesmo conectivo inicial)",
+        "✅ COESÃO NOMINAL SOFISTICADA:\n'violência' → 'esse fenômeno' → 'tal mazela' → 'a problemática em questão'\n(Variação lexical demonstra domínio vocabular)"
+      ],
+      "dicas": [
+        "Memorize pelo menos 3 conectivos de cada tipo (adição, oposição, conclusão)",
+        "Varie conectivos iniciais de parágrafo - nunca repita",
+        "Conectivos sofisticados demonstram repertório, mas use com parcimônia",
+        "Analise redações nota 1000 marcando todos os elementos coesivos",
+        "Pratique reescrevendo textos substituindo conectivos básicos por sofisticados"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c4-m5",
+          "enunciado": "Qual conectivo é considerado MAIS SOFISTICADO para adicionar argumento?",
+          "alternativas": [
+            "Também",
+            "E",
+            "Outrossim",
+            "Mais"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "'Outrossim' é conectivo formal sofisticado equivalente a 'além disso', demonstrando repertório linguístico ampliado."
+        },
+        {
+          "id": "q2-c4-m5",
+          "enunciado": "Em redações nota 1000, observa-se:",
+          "alternativas": [
+            "Uso repetitivo dos mesmos conectivos",
+            "Ausência de conectivos para não errar",
+            "Variedade de mecanismos coesivos e conectivos sofisticados",
+            "Uso exclusivo de conectivos básicos"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Redações nota 1000 demonstram domínio através da variedade e precisão no uso de mecanismos coesivos, incluindo conectivos sofisticados."
+        },
+        {
+          "id": "q3-c4-m5",
+          "enunciado": "Qual sequência demonstra VARIAÇÃO adequada de expressões referenciais?",
+          "alternativas": [
+            "desigualdade → desigualdade → desigualdade",
+            "desigualdade → esse problema → tal mazela → a problemática",
+            "desigualdade → ela → ela → ela",
+            "desigualdade → isso → aquilo → isto"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A variação usando sinônimos e anáforas encapsuladoras ('esse problema', 'tal mazela', 'a problemática') demonstra coesão sofisticada."
+        }
+      ]
+    }
+  ]
+}

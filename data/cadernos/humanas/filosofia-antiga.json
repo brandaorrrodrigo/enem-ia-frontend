@@ -1,0 +1,205 @@
+{
+  "id": "filosofia-antiga",
+  "titulo": "Filosofia Antiga",
+  "descricao": "Os grandes pensadores gregos que fundaram a filosofia ocidental",
+  "icone": "🏛️",
+  "cor": "from-amber-500 to-orange-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Pre-Socraticos",
+      "resumo": "Os primeiros filosofos gregos que buscaram explicar a origem e natureza do cosmos atraves da razao, afastando-se das explicacoes mitologicas.",
+      "topicos": [
+        "Tales de Mileto e a busca pela arche (principio fundamental)",
+        "Heraclito e o fluxo constante (panta rhei)",
+        "Parmenides e a imutabilidade do ser",
+        "Democrito e o atomismo"
+      ],
+      "exemplos": [
+        "Tales propunha que a agua era o principio de todas as coisas",
+        "Heraclito: 'Nao se pode entrar duas vezes no mesmo rio'",
+        "Parmenides: 'O ser e, o nao-ser nao e'"
+      ],
+      "dicas": [
+        "Os pre-socraticos marcam a transicao do mito ao logos",
+        "Cada filosofo buscava um principio fundamental diferente",
+        "O ENEM cobra a diferenca entre explicacao mitica e racional"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Para Tales de Mileto, a agua e o principio de todas as coisas. Essa afirmacao representa uma mudanca fundamental no pensamento grego porque:",
+          "alternativas": [
+            "Retoma as explicacoes mitologicas tradicionais",
+            "Busca uma explicacao racional e natural para a origem do mundo",
+            "Nega a existencia de qualquer principio fundamental",
+            "Afirma que os deuses sao feitos de agua",
+            "Propoe que a agua e um elemento mistico"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Tales marca a transicao do pensamento mitologico para o racional ao buscar na natureza, nao nos deuses, a explicacao para a origem das coisas.",
+          "dificuldade": "media",
+          "tags": ["pre-socraticos", "tales", "filosofia-antiga"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Socrates e o Metodo Maieutico",
+      "resumo": "Socrates revolucionou a filosofia ao focar nas questoes eticas e no autoconhecimento, desenvolvendo o metodo dialetico de perguntas e respostas.",
+      "topicos": [
+        "O metodo socratico (maieutica)",
+        "Conhece-te a ti mesmo",
+        "A ironia socratica",
+        "Virtude e conhecimento",
+        "O julgamento e morte de Socrates"
+      ],
+      "exemplos": [
+        "'So sei que nada sei' - a sabedoria de reconhecer a propria ignorancia",
+        "'Uma vida sem reflexao nao vale a pena ser vivida'",
+        "Socrates prefere morrer a renunciar seus principios"
+      ],
+      "dicas": [
+        "Socrates nao deixou nada escrito - conhecemos seu pensamento por Platao",
+        "O metodo maieutico e comparado ao parto de ideias",
+        "ENEM valoriza o aspecto etico e o questionamento critico"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "O metodo socratico, tambem chamado de maieutica, caracteriza-se por:",
+          "alternativas": [
+            "Transmitir conhecimentos prontos aos discipulos",
+            "Fazer perguntas que levam o interlocutor a descobrir a verdade por si mesmo",
+            "Impor sua opiniao atraves de argumentos autoritarios",
+            "Recitar textos filosoficos antigos",
+            "Evitar o dialogo e privilegiar o monologo"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A maieutica socratica consiste em fazer perguntas que levam o interlocutor a questionar suas proprias crencas e descobrir o conhecimento atraves da reflexao.",
+          "dificuldade": "facil",
+          "tags": ["socrates", "maieutica", "metodo-socratico"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Platao e o Mundo das Ideias",
+      "resumo": "Platao desenvolveu a teoria das Ideias ou Formas, distinguindo entre o mundo sensivel (aparencias) e o mundo inteligivel (essencias perfeitas).",
+      "topicos": [
+        "A Teoria das Ideias",
+        "O Mito da Caverna",
+        "A Republica e o Estado ideal",
+        "A alma tripartida",
+        "Conhecimento como reminiscencia"
+      ],
+      "exemplos": [
+        "O Mito da Caverna ilustra a condicao humana entre ignorancia e conhecimento",
+        "As coisas sensiveis sao copias imperfeitas das Ideias perfeitas",
+        "O filosofo-rei como governante ideal"
+      ],
+      "dicas": [
+        "O Mito da Caverna e um dos textos mais cobrados no ENEM",
+        "Platao propoe um dualismo: mundo sensivel x mundo inteligivel",
+        "A teoria das Ideias influenciou todo o pensamento ocidental"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "No Mito da Caverna, Platao utiliza a alegoria dos prisioneiros para representar:",
+          "alternativas": [
+            "A superioridade dos sentidos sobre a razao",
+            "A impossibilidade de se conhecer a verdade",
+            "O processo de libertacao da ignorancia atraves do conhecimento filosofico",
+            "A igualdade entre todas as formas de conhecimento",
+            "A irrelevancia da educacao para a sociedade"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O Mito da Caverna ilustra o processo de ascensao do conhecimento sensivel para o conhecimento inteligivel, representando a jornada filosofica da ignorancia a sabedoria.",
+          "dificuldade": "media",
+          "tags": ["platao", "mito-caverna", "teoria-ideias"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Aristoteles e a Filosofia Sistematica",
+      "resumo": "Aristoteles organizou o conhecimento em diversas areas, desenvolveu a logica formal e propôs que a essencia das coisas esta nelas mesmas, nao em um mundo separado.",
+      "topicos": [
+        "Critica a Teoria das Ideias de Platao",
+        "Ato e potencia",
+        "As quatro causas",
+        "Etica: a busca da felicidade (eudaimonia)",
+        "O justo meio (mediania)"
+      ],
+      "exemplos": [
+        "A forma esta na materia, nao em um mundo separado",
+        "A semente e uma arvore em potencia",
+        "A virtude esta no meio-termo entre extremos"
+      ],
+      "dicas": [
+        "Aristoteles e mais empirista que Platao",
+        "O conceito de ato e potencia explica a mudanca",
+        "A etica aristotelica foca na pratica de virtudes"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Para Aristoteles, a virtude etica consiste em:",
+          "alternativas": [
+            "Seguir rigidamente as leis divinas",
+            "Buscar o prazer imediato",
+            "Encontrar o meio-termo entre dois extremos viciosos",
+            "Negar todas as emocoes humanas",
+            "Imitar as Ideias perfeitas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Aristoteles propoe a doutrina do justo meio, segundo a qual a virtude esta no equilibrio entre dois extremos viciosos (por exemplo, a coragem esta entre a covardia e a temeridade).",
+          "dificuldade": "media",
+          "tags": ["aristoteles", "etica", "virtude"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Escolas Helenisticas",
+      "resumo": "Apos Aristoteles, surgiram escolas filosoficas focadas na busca da felicidade e tranquilidade individual: estoicismo, epicurismo e ceticismo.",
+      "topicos": [
+        "Estoicismo: viver segundo a natureza e a razao",
+        "Epicurismo: prazer como ausencia de dor",
+        "Ceticismo: suspensao do juizo",
+        "Cinismo: retorno a natureza simples"
+      ],
+      "exemplos": [
+        "Estoicos: aceitar o destino com serenidade (ataraxia)",
+        "Epicuro: 'O prazer e o principio e o fim da vida feliz'",
+        "Ceticos: questionar toda afirmacao dogmatica"
+      ],
+      "dicas": [
+        "Essas escolas surgem em um periodo de crise politica",
+        "Todas buscam a tranquilidade da alma",
+        "ENEM pode contrastar essas diferentes visoes de felicidade"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "O estoicismo defende que a felicidade e alcancada quando:",
+          "alternativas": [
+            "Buscamos todos os prazeres possiveis",
+            "Duvidamos de todas as verdades",
+            "Vivemos de acordo com a razao e aceitamos o que nao podemos controlar",
+            "Acumulamos riquezas materiais",
+            "Evitamos qualquer forma de sofrimento"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Para os estoicos, a felicidade vem de viver racionalmente, distinguindo o que esta sob nosso controle do que nao esta, e aceitando serenamente o destino.",
+          "dificuldade": "media",
+          "tags": ["estoicismo", "helenismo", "etica"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "id": "redacao-competencia5",
+  "titulo": "Competência 5: Elaborar Proposta de Intervenção",
+  "descricao": "Elaborar proposta de intervenção para o problema abordado, respeitando os direitos humanos",
+  "icone": "🎯",
+  "cor": "from-orange-500 to-red-500",
+  "nivel": "Avançado",
+  "tempoEstimado": "3h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Estrutura da Proposta de Intervenção",
+      "resumo": "A proposta de intervenção deve apresentar solução para o problema discutido, com ação, agente, modo/meio, finalidade e detalhamento. Compreender essa estrutura é fundamental para não perder pontos.",
+      "topicos": [
+        "O que é proposta de intervenção",
+        "Onde inserir a proposta",
+        "Elementos obrigatórios",
+        "Diferença entre proposta completa e incompleta",
+        "Relação com a argumentação"
+      ],
+      "exemplos": [
+        "✅ ESTRUTURA BÁSICA DA PROPOSTA:\n[AGENTE] Quem vai fazer?\n[AÇÃO] O que será feito?\n[MODO/MEIO] Como será feito?\n[FINALIDADE] Para quê? Com qual objetivo?\n[DETALHAMENTO] Especificações adicionais",
+        "✅ EXEMPLO COMPLETO (200 pontos):\n'O Ministério da Educação [AGENTE] deve implementar campanhas educativas [AÇÃO] por meio de palestras em escolas e universidades [MODO/MEIO] a fim de conscientizar sobre saúde mental [FINALIDADE], com distribuição de materiais informativos elaborados por psicólogos [DETALHAMENTO].'",
+        "⚠️ PROPOSTA INCOMPLETA (faltam elementos):\n'O governo deve investir em educação.'\n(Faltam: modo/meio, finalidade, detalhamento)",
+        "✅ PROPOSTA COM 5 ELEMENTOS (nota 1000):\n'O Ministério da Saúde [1-AGENTE], em parceria com ONGs [1a-AGENTE], deve criar centros de acolhimento [2-AÇÃO] mediante destinação de recursos do orçamento da saúde e capacitação de profissionais [3-MODO/MEIO] com o objetivo de oferecer suporte psicológico acessível [4-FINALIDADE], priorizando comunidades periféricas e grupos vulneráveis [5-DETALHAMENTO].'",
+        "❌ PROPOSTA GENÉRICA (baixa pontuação):\n'É necessário conscientização e investimento.'\n(Vaga, sem agentes ou ações específicas)"
+      ],
+      "dicas": [
+        "A proposta geralmente aparece na conclusão, mas pode estar ao longo do texto",
+        "É possível fazer 2 propostas (uma por parágrafo de desenvolvimento + síntese na conclusão)",
+        "Cada proposta deve ter no mínimo 3 elementos dos 5 obrigatórios",
+        "Quanto mais detalhada e viável, maior a pontuação",
+        "Conecte a proposta aos problemas/causas discutidos na argumentação"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c5-m1",
+          "enunciado": "Quais são os 5 elementos de uma proposta de intervenção completa?",
+          "alternativas": [
+            "Introdução, desenvolvimento, conclusão, coesão, coerência",
+            "Agente, ação, modo/meio, finalidade, detalhamento",
+            "Tese, argumento, repertório, coesão, proposta",
+            "Tema, delimitação, argumentação, conectivos, conclusão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Os 5 elementos essenciais da proposta são: agente (quem), ação (o quê), modo/meio (como), finalidade (para quê) e detalhamento."
+        },
+        {
+          "id": "q2-c5-m1",
+          "enunciado": "Identifique o AGENTE na proposta: 'O Ministério da Educação deve criar programas de capacitação docente.'",
+          "alternativas": [
+            "deve criar",
+            "O Ministério da Educação",
+            "programas de capacitação",
+            "docente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O AGENTE é quem executará a ação, neste caso, 'O Ministério da Educação'."
+        },
+        {
+          "id": "q3-c5-m1",
+          "enunciado": "Qual proposta está MAIS COMPLETA?",
+          "alternativas": [
+            "O governo deve agir para resolver o problema.",
+            "É necessário investimento em educação.",
+            "O MEC deve criar programas educativos mediante parcerias com universidades, visando capacitar professores.",
+            "Precisamos de conscientização sobre o tema."
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A alternativa apresenta agente (MEC), ação (criar programas), modo/meio (parcerias com universidades) e finalidade (capacitar professores)."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Os 5 Elementos Obrigatórios Detalhados",
+      "resumo": "Cada elemento da proposta tem função específica e critérios de qualidade. Compreender profundamente cada um é essencial para elaborar propostas nota 1000.",
+      "topicos": [
+        "Elemento 1: Agente (quem?)",
+        "Elemento 2: Ação (o quê?)",
+        "Elemento 3: Modo/Meio (como?)",
+        "Elemento 4: Finalidade (para quê?)",
+        "Elemento 5: Detalhamento (especificações)"
+      ],
+      "exemplos": [
+        "1️⃣ AGENTE (quem vai executar?):\n✅ Específico: 'O Ministério da Educação', 'As prefeituras municipais', 'ONGs de direitos humanos'\n❌ Genérico: 'O governo', 'A sociedade', 'As autoridades'\n💡 Pode haver mais de um agente: 'O MEC, em parceria com universidades,...'",
+        "2️⃣ AÇÃO (o que será feito?):\n✅ Específica: 'implementar campanhas educativas', 'criar centros de acolhimento', 'reformular currículo escolar'\n❌ Genérica: 'agir', 'fazer algo', 'resolver'\n💡 Use verbos de ação concretos e específicos",
+        "3️⃣ MODO/MEIO (como será executado?):\n✅ Específico: 'mediante destinação de 2% do orçamento da saúde', 'por meio de palestras quinzenais em escolas', 'através de aplicativo gratuito desenvolvido em parceria com startups'\n❌ Genérico: 'de alguma forma', 'com recursos'\n💡 Especifique recursos, métodos, ferramentas",
+        "4️⃣ FINALIDADE (com qual objetivo?):\n✅ Clara: 'a fim de reduzir índices de evasão escolar', 'com o objetivo de promover inclusão digital', 'para conscientizar sobre direitos humanos'\n❌ Vaga: 'para melhorar', 'para ajudar'\n💡 Use conectivos de finalidade: 'a fim de', 'com o objetivo de', 'para que'",
+        "5️⃣ DETALHAMENTO (especificações adicionais):\n✅ Detalhado: 'priorizando comunidades periféricas e grupos vulneráveis', 'com monitoramento trimestral por comissão independente', 'incluindo capacitação prévia de profissionais por psicólogos especializados'\n💡 Adiciona viabilidade, público-alvo, prazos, formas de monitoramento"
+      ],
+      "dicas": [
+        "AGENTE: Prefira órgãos/instituições específicos a 'governo' genérico",
+        "AÇÃO: Use verbos concretos (implementar, criar, reformular, fiscalizar)",
+        "MODO/MEIO: Especifique recursos financeiros, metodologias, parcerias",
+        "FINALIDADE: Deixe claro o objetivo final da ação",
+        "DETALHAMENTO: Adicione público-alvo, prazos, meios de fiscalização"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c5-m2",
+          "enunciado": "'Mediante destinação de recursos do Fundo Nacional de Educação' é exemplo de qual elemento?",
+          "alternativas": [
+            "Agente",
+            "Ação",
+            "Modo/Meio",
+            "Finalidade"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Especifica COMO a ação será executada (fonte de recursos), caracterizando o elemento MODO/MEIO."
+        },
+        {
+          "id": "q2-c5-m2",
+          "enunciado": "'A fim de reduzir índices de violência doméstica' representa qual elemento?",
+          "alternativas": [
+            "Agente",
+            "Ação",
+            "Modo/Meio",
+            "Finalidade"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "Expressa o OBJETIVO/FINALIDADE da ação proposta (reduzir índices de violência)."
+        },
+        {
+          "id": "q3-c5-m2",
+          "enunciado": "Qual AGENTE é mais específico e adequado?",
+          "alternativas": [
+            "O governo",
+            "As autoridades",
+            "A sociedade",
+            "O Ministério da Saúde"
+          ],
+          "respostaCorreta": 3,
+          "explicacao": "'O Ministério da Saúde' é agente específico, enquanto 'governo', 'autoridades' e 'sociedade' são genéricos demais."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Agentes de Intervenção e Ações Específicas",
+      "resumo": "Conhecer os principais agentes sociais (ministérios, instituições, sociedade civil) e ações viáveis é fundamental para elaborar propostas realistas e bem pontuadas.",
+      "topicos": [
+        "Ministérios e órgãos federais",
+        "Poder Legislativo e Judiciário",
+        "Governos estaduais e municipais",
+        "Sociedade civil e terceiro setor",
+        "Mídia e instituições educacionais"
+      ],
+      "exemplos": [
+        "🏛️ PRINCIPAIS AGENTES GOVERNAMENTAIS:\n• Ministério da Educação (MEC) → políticas educacionais\n• Ministério da Saúde → políticas de saúde pública\n• Ministério da Cidadania → assistência social\n• Ministério da Justiça → legislação, segurança\n• Governos estaduais/municipais → políticas locais",
+        "⚖️ PODER LEGISLATIVO:\n'O Congresso Nacional deve aprovar legislação específica...'\n'Câmaras municipais devem criar leis de incentivo...'",
+        "👥 SOCIEDADE CIVIL:\n'ONGs de direitos humanos, em parceria com o poder público...'\n'Organizações do terceiro setor devem promover...'\n'A sociedade civil organizada pode fiscalizar...'",
+        "📺 MÍDIA:\n'Veículos de comunicação devem promover campanhas educativas...'\n'Emissoras de TV, por meio de programas educativos...'",
+        "🎓 INSTITUIÇÕES EDUCACIONAIS:\n'Escolas devem incluir no currículo disciplinas sobre...'\n'Universidades públicas podem oferecer extensão comunitária...'"
+      ],
+      "dicas": [
+        "Escolha o agente adequado ao tipo de problema (educação→MEC, saúde→MS)",
+        "É válido propor parcerias entre múltiplos agentes",
+        "Sociedade civil pode ser agente de fiscalização e pressão",
+        "Mídia é excelente agente para campanhas de conscientização",
+        "Poder Legislativo para criação/mudança de leis"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c5-m3",
+          "enunciado": "Para problema relacionado à EDUCAÇÃO, qual agente é mais adequado?",
+          "alternativas": [
+            "Ministério da Saúde",
+            "Ministério da Educação",
+            "Ministério da Defesa",
+            "Ministério da Agricultura"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Ministério da Educação (MEC) é o órgão responsável por políticas educacionais no Brasil."
+        },
+        {
+          "id": "q2-c5-m3",
+          "enunciado": "Qual agente é adequado para CAMPANHAS DE CONSCIENTIZAÇÃO?",
+          "alternativas": [
+            "Poder Judiciário",
+            "Ministério da Defesa",
+            "Veículos de comunicação e mídia",
+            "Polícia Federal"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A mídia e veículos de comunicação são agentes ideais para campanhas de conscientização de massa."
+        },
+        {
+          "id": "q3-c5-m3",
+          "enunciado": "Para criação de NOVA LEGISLAÇÃO, qual agente deve ser mencionado?",
+          "alternativas": [
+            "Ministérios",
+            "Poder Legislativo (Congresso, Câmaras)",
+            "ONGs",
+            "Escolas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Poder Legislativo (Congresso Nacional, Câmaras) é responsável por criar e aprovar leis."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Detalhamento e Viabilidade da Proposta",
+      "resumo": "Propostas detalhadas e viáveis pontuam mais. O detalhamento inclui especificações sobre público-alvo, prazos, recursos, monitoramento e aspectos práticos de execução.",
+      "topicos": [
+        "Especificação de público-alvo",
+        "Recursos e financiamento",
+        "Prazos e cronogramas",
+        "Mecanismos de fiscalização",
+        "Viabilidade prática"
+      ],
+      "exemplos": [
+        "🎯 ESPECIFICAÇÃO DE PÚBLICO-ALVO:\n'...priorizando comunidades periféricas e grupos em situação de vulnerabilidade social'\n'...direcionado a jovens entre 15 e 24 anos em situação de risco'\n'...com foco em mulheres vítimas de violência doméstica'",
+        "💰 RECURSOS E FINANCIAMENTO:\n'...mediante destinação de 2% do orçamento do Ministério da Saúde'\n'...com recursos provenientes do Fundo Nacional de Educação'\n'...financiado por parcerias público-privadas e incentivos fiscais'",
+        "📅 PRAZOS E CRONOGRAMAS:\n'...a ser implementado em fase piloto nos próximos 6 meses'\n'...com expansão gradual ao longo de 2 anos'\n'...iniciando com projeto-piloto em 5 estados até 2026'",
+        "👁️ MECANISMOS DE FISCALIZAÇÃO:\n'...com monitoramento trimestral por comissão independente'\n'...fiscalizado por conselhos municipais e ouvidorias'\n'...com prestação de contas pública semestral e indicadores de desempenho'",
+        "✅ PROPOSTA ALTAMENTE DETALHADA (nota 1000):\n'O Ministério da Educação, em parceria com secretarias estaduais [AGENTE], deve implementar programa de formação continuada de professores [AÇÃO] mediante alocação de 1% do orçamento federal da educação e cursos online gratuitos desenvolvidos por universidades públicas [MODO/MEIO] a fim de capacitar docentes para identificar sinais de transtornos mentais em alunos [FINALIDADE], priorizando escolas de regiões vulneráveis, com avaliação semestral de resultados e certificação reconhecida pelo MEC [DETALHAMENTO].'"
+      ],
+      "dicas": [
+        "Sempre que possível, especifique de onde virão os recursos",
+        "Mencione público-alvo prioritário quando relevante",
+        "Adicione formas de fiscalização/monitoramento para viabilidade",
+        "Prazos realistas demonstram que a proposta é executável",
+        "Quanto mais detalhes viáveis, maior a pontuação"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c5-m4",
+          "enunciado": "Qual detalhamento adiciona MAIS viabilidade à proposta?",
+          "alternativas": [
+            "O governo deve fazer algo",
+            "É necessário investimento",
+            "Mediante destinação de 2% do orçamento da saúde, com monitoramento trimestral por comissão independente",
+            "Com alguns recursos disponíveis"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Especifica fonte de recursos (2% do orçamento) e mecanismo de fiscalização (monitoramento trimestral), tornando a proposta viável."
+        },
+        {
+          "id": "q2-c5-m4",
+          "enunciado": "Por que especificar público-alvo é importante?",
+          "alternativas": [
+            "Não é importante, qualquer público serve",
+            "Demonstra que a proposta é direcionada e aumenta viabilidade",
+            "Serve apenas para ocupar linhas",
+            "É obrigatório mencionar todos os públicos possíveis"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Especificar público-alvo (ex: comunidades vulneráveis) torna a proposta mais direcionada, eficaz e viável."
+        },
+        {
+          "id": "q3-c5-m4",
+          "enunciado": "Qual elemento adiciona mecanismo de FISCALIZAÇÃO?",
+          "alternativas": [
+            "O MEC deve criar programas educativos",
+            "Mediante recursos do orçamento federal",
+            "Com monitoramento semestral por conselhos municipais e prestação de contas pública",
+            "A fim de melhorar a educação"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Especifica COMO a proposta será fiscalizada (monitoramento semestral, conselhos, prestação de contas), garantindo viabilidade."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Respeito aos Direitos Humanos e Exemplos Nota 1000",
+      "resumo": "A proposta NÃO pode ferir direitos humanos, sob pena de nota zero. Além disso, analisamos propostas de redações nota 1000 para identificar padrões de excelência.",
+      "topicos": [
+        "O que são direitos humanos",
+        "Propostas que ferem DH (nota zero)",
+        "Como garantir respeito aos DH",
+        "Análise de propostas nota 1000",
+        "Checklist final da proposta"
+      ],
+      "exemplos": [
+        "❌ PROPOSTAS QUE FEREM DIREITOS HUMANOS (NOTA ZERO):\n• 'Pena de morte para criminosos reincidentes'\n• 'Prisão perpétua sem possibilidade de revisão'\n• 'Internação compulsória generalizada de dependentes químicos'\n• 'Censura prévia de conteúdos na internet'\n• 'Castigos físicos em escolas'",
+        "✅ DIREITOS HUMANOS FUNDAMENTAIS:\n• Direito à vida, liberdade e segurança\n• Proibição de tortura e tratamento degradante\n• Igualdade perante a lei\n• Liberdade de expressão e pensamento\n• Direito à educação, saúde e trabalho",
+        "✅ PROPOSTA NOTA 1000 - EXEMPLO 1 (Invisibilidade de Registro Civil):\n'O Ministério da Cidadania, em parceria com prefeituras, deve criar mutirões itinerantes de registro civil mediante alocação de recursos do orçamento federal e uso de unidades móveis equipadas, com objetivo de garantir documentação a populações ribeirinhas e quilombolas, priorizando regiões Norte e Nordeste, com meta de zerar subdocumentação até 2027.'",
+        "✅ PROPOSTA NOTA 1000 - EXEMPLO 2 (Estigma - Doenças Mentais):\n'O Ministério da Saúde deve implementar campanhas educativas sobre saúde mental por meio de inserções em horário nobre na TV e redes sociais, produzidas por psicólogos e aprovadas pelo CFP, visando desconstruir estereótipos e incentivar busca por tratamento, com foco em jovens e idosos, monitoradas trimestralmente quanto ao alcance e impacto.'",
+        "✅ PROPOSTA NOTA 1000 - EXEMPLO 3 (Trabalho de Cuidado Feminino):\n'O Congresso Nacional deve aprovar legislação reconhecendo o trabalho doméstico não remunerado no cálculo de benefícios previdenciários, regulamentado em 180 dias pelo INSS, mediante consulta pública e audiências com movimentos feministas, objetivando valorizar economicamente o trabalho de cuidado realizado majoritariamente por mulheres.'",
+        "📋 CHECKLIST FINAL:\n✅ Tem agente específico?\n✅ Tem ação concreta?\n✅ Tem modo/meio detalhado?\n✅ Tem finalidade clara?\n✅ Tem detalhamento (público/prazo/fiscalização)?\n✅ Respeita direitos humanos?\n✅ É viável e realista?\n✅ Conecta-se aos problemas discutidos?"
+      ],
+      "dicas": [
+        "NUNCA proponha pena de morte, tortura, censura ou violação de liberdades",
+        "Internações compulsórias devem ser criteriosamente justificadas (casos extremos)",
+        "Propostas punitivas excessivas podem ferir dignidade humana",
+        "Garanta que a proposta promova inclusão, não exclusão",
+        "Use o checklist antes de finalizar o texto"
+      ],
+      "questoes": [
+        {
+          "id": "q1-c5-m5",
+          "enunciado": "Qual proposta FERE direitos humanos?",
+          "alternativas": [
+            "Criar programas de ressocialização para apenados",
+            "Implementar pena de morte para crimes hediondos",
+            "Oferecer tratamento psicológico gratuito",
+            "Promover campanhas educativas sobre direitos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Pena de morte fere o direito fundamental à vida e resulta em nota zero na redação."
+        },
+        {
+          "id": "q2-c5-m5",
+          "enunciado": "Uma proposta de intervenção deve:",
+          "alternativas": [
+            "Ser genérica para abranger mais situações",
+            "Ferir direitos humanos se necessário para resolver o problema",
+            "Ser detalhada, viável e respeitar direitos humanos",
+            "Apenas sugerir conscientização sem especificações"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A proposta ideal é detalhada (5 elementos), viável e SEMPRE respeita direitos humanos."
+        },
+        {
+          "id": "q3-c5-m5",
+          "enunciado": "Em redações nota 1000, as propostas geralmente apresentam:",
+          "alternativas": [
+            "Apenas 1 ou 2 elementos dos 5 obrigatórios",
+            "Os 5 elementos bem detalhados e articulados",
+            "Soluções vagas e genéricas",
+            "Ausência de especificação de agentes"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Redações nota 1000 apresentam propostas completas com os 5 elementos bem desenvolvidos, detalhados e articulados à argumentação."
+        }
+      ]
+    }
+  ]
+}

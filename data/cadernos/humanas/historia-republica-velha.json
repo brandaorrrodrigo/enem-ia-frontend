@@ -1,0 +1,402 @@
+{
+  "id": "historia-republica-velha",
+  "titulo": "República Velha",
+  "descricao": "Primeira República: oligarquias, coronelismo e movimentos sociais (1889-1930)",
+  "icone": "🎩",
+  "cor": "from-brown-500 to-yellow-600",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-republica-espada",
+      "titulo": "República da Espada",
+      "topicos": [
+        "Governo Deodoro da Fonseca",
+        "Constituição de 1891",
+        "Governo Floriano Peixoto",
+        "Revoltas federalistas",
+        "Consolidação republicana"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O governo do Marechal Deodoro da Fonseca (1889-1891), primeiro presidente do Brasil, foi marcado por instabilidade política. Entre os fatores dessa crise, destaca-se:",
+          "alternativas": [
+            "O total apoio do Congresso Nacional às medidas presidenciais",
+            "O autoritarismo de Deodoro e conflitos com o Legislativo",
+            "A ausência de oposição política ao governo militar",
+            "A estabilidade econômica absoluta durante seu mandato",
+            "O apoio unânime da população ao governo provisório"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Deodoro governou autoritariamente, entrando em conflito com o Congresso. Em 1891, decretou estado de sítio e fechou o Congresso, gerando crise institucional. Pressionado por militares e pela Primeira Revolta da Armada, renunciou em novembro de 1891."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Constituição de 1891, primeira constituição republicana, estabelecia importantes mudanças no sistema político brasileiro. Entre suas características, destaca-se:",
+          "alternativas": [
+            "A manutenção da monarquia parlamentarista",
+            "Federalismo, presidencialismo, voto aberto e separação Igreja-Estado",
+            "A permanência do Poder Moderador imperial",
+            "O voto universal incluindo analfabetos e mulheres",
+            "A união total entre Igreja Católica e Estado"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Constituição de 1891 estabeleceu: República Federativa Presidencialista, separação entre Igreja e Estado, voto aberto (não secreto), exclusão de analfabetos, mulheres, mendigos e soldados do voto. Deu grande autonomia aos estados (federalismo)."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O Encilhamento, crise financeira do início da República, foi resultado da política econômica de Rui Barbosa. Sobre essa crise, é correto afirmar que:",
+          "alternativas": [
+            "Resultou em estabilidade econômica absoluta",
+            "Emissão desenfreada de moeda gerou inflação e especulação",
+            "Eliminou completamente a inflação no período",
+            "Fortaleceu a economia brasileira permanentemente",
+            "Não teve nenhum impacto na economia nacional"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Encilhamento (1890-1891) foi uma crise causada pela emissão descontrolada de papel-moeda para estimular a industrialização. Gerou inflação galopante, especulação na Bolsa de Valores e falência de empresas, desestabilizando a economia."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Floriano Peixoto (1891-1894), vice que assumiu após renúncia de Deodoro, ficou conhecido como \"Marechal de Ferro\". Seu governo caracterizou-se por:",
+          "alternativas": [
+            "Extrema tolerância e flexibilidade política",
+            "Autoritarismo, repressão a revoltas e consolidação da República",
+            "Concessão de total liberdade aos movimentos separatistas",
+            "Apoio irrestrito às oligarquias monarquistas",
+            "Ausência de conflitos durante todo o mandato"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Floriano governou com mão de ferro, reprimindo duramente a Segunda Revolta da Armada (1893-1894) e a Revolução Federalista (1893-1895). Sua atuação autoritária consolidou a República, impedindo tentativas de restauração monárquica."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Revolução Federalista (1893-1895) no Rio Grande do Sul opôs federalistas (maragatos) e republicanos (pica-paus). Sobre esse conflito, é correto afirmar que:",
+          "alternativas": [
+            "Foi um conflito pacífico sem violência",
+            "Marcou-se pela extrema violência, com degolas e massacres",
+            "Não teve nenhuma relação com disputas políticas regionais",
+            "Contou com total apoio do governo federal aos federalistas",
+            "Resultou na separação do Rio Grande do Sul do Brasil"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Revolução Federalista foi extremamente violenta, marcada por degolas (execução por corte de garganta) de ambos os lados. Federalistas (parlamentaristas) lutaram contra republicanos (presidencialistas). Floriano apoiou os republicanos, derrotando os federalistas."
+        }
+      ]
+    },
+    {
+      "id": "mod2-cafe-com-leite",
+      "titulo": "Política do Café com Leite",
+      "topicos": [
+        "Oligarquias estaduais e coronelismo",
+        "Política dos Governadores",
+        "Alternância SP-MG no poder",
+        "Economia cafeeira",
+        "Valorização do café"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A \"Política do Café com Leite\" caracterizou a República Velha. Esse sistema baseava-se em:",
+          "alternativas": [
+            "Alternância no poder entre oligarquias de São Paulo (café) e Minas Gerais (leite)",
+            "Políticas de combate à produção de café e leite",
+            "Distribuição igualitária de poder entre todos os estados",
+            "Governo centralizado sem participação das oligarquias estaduais",
+            "Democracia plena com eleições livres e transparentes"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "A \"Política do Café com Leite\" era um acordo entre as oligarquias paulista (cafeeira) e mineira (pecuária leiteira) para alternarem-se na presidência. Esse sistema garantia a hegemonia desses estados mais poderosos economicamente."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Política dos Governadores, estabelecida por Campos Sales, fundamentava o sistema oligárquico. Esse acordo consistia em:",
+          "alternativas": [
+            "Oposição constante entre governo federal e estados",
+            "Apoio mútuo: governadores apoiavam presidente, que não intervinha nos estados",
+            "Intervenção federal constante em todos os estados",
+            "Eleições livres e democráticas em todos os níveis",
+            "Fortalecimento da oposição política em todos os estados"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Política dos Governadores era um acordo de não agressão: o presidente apoiava os governadores estaduais (não intervindo), e eles garantiam maioria governista no Congresso. Isso sustentava o sistema oligárquico, impedindo alternância real de poder."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O coronelismo era a estrutura de poder local na República Velha. Sobre esse sistema, é correto afirmar que:",
+          "alternativas": [
+            "Garantia plena democracia e liberdade de voto",
+            "Coronéis (grandes proprietários) controlavam política local através do voto de cabresto",
+            "Eliminava completamente a influência dos proprietários rurais",
+            "Promovia eleições totalmente livres e transparentes",
+            "Não tinha nenhuma relação com propriedade de terras"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O coronelismo era o poder dos grandes proprietários rurais (coronéis) que controlavam a população local através de favores, clientelismo e coerção (voto de cabresto). Com voto aberto, controlavam eleições, sustentando o sistema oligárquico."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O voto de cabresto era fundamental para a manutenção das oligarquias. Esse sistema caracterizava-se por:",
+          "alternativas": [
+            "Total liberdade e sigilo na escolha eleitoral",
+            "Controle do voto pelo coronel através de pressão, favores e fiscalização",
+            "Voto secreto e independente dos eleitores",
+            "Ausência de qualquer forma de coerção eleitoral",
+            "Democracia plena nas eleições municipais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "No voto de cabresto, o coronel controlava o voto dos dependentes (agregados, meeiros) através de favores (empregos, proteção) e coerção. Como o voto era aberto (não secreto), fiscalizava se votavam conforme sua orientação."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A economia cafeeira dominava a República Velha. O governo adotou políticas de \"valorização do café\", que consistiam em:",
+          "alternativas": [
+            "Deixar o mercado regular livremente os preços",
+            "Comprar estoques excedentes para sustentar preços artificialmente",
+            "Proibir completamente a produção cafeeira",
+            "Eliminar subsídios e apoio aos cafeicultores",
+            "Importar café de outros países para baixar preços"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A política de valorização (Convênio de Taubaté, 1906) consistia em: governo comprava estoques excedentes de café, estocava para reduzir oferta e sustentar preços. Era financiada por empréstimos externos, beneficiando cafeicultores às custas do Estado."
+        }
+      ]
+    },
+    {
+      "id": "mod3-movimentos-sociais",
+      "titulo": "Movimentos Sociais e Revoltas Populares",
+      "topicos": [
+        "Revolta da Vacina (1904)",
+        "Revolta da Chibata (1910)",
+        "Guerra de Canudos (1896-1897)",
+        "Guerra do Contestado (1912-1916)",
+        "Cangaço"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Revolta da Vacina (1904) no Rio de Janeiro foi uma reação popular contra a campanha de vacinação obrigatória. Sobre esse movimento, é correto afirmar que:",
+          "alternativas": [
+            "Expressava apenas oposição irracional à ciência",
+            "Refletia descontentamento popular com autoritarismo, reformas urbanas e vacinação forçada",
+            "Foi totalmente apoiada pela população carioca",
+            "Não teve nenhuma repressão policial",
+            "Resultou na suspensão permanente de todas as vacinas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Revolta da Vacina expressava múltiplas insatisfações: vacinação forçada (sem esclarecimento), reformas urbanas de Pereira Passos (que expulsavam pobres), autoritarismo. Foi violentamente reprimida. A lei de vacinação obrigatória foi suspensa temporariamente."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Revolta da Chibata (1910), liderada pelo marinheiro João Cândido, teve como principal reivindicação:",
+          "alternativas": [
+            "O aumento salarial dos oficiais da Marinha",
+            "O fim dos castigos físicos (chibatadas) contra marinheiros",
+            "A separação da Marinha das Forças Armadas",
+            "A restauração da monarquia no Brasil",
+            "A proibição de negros na Marinha brasileira"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Revolta da Chibata reivindicava fim dos castigos físicos (chibatadas) contra marinheiros, maioria negros, prática que remetia à escravidão. João Cândido (\"Almirante Negro\") liderou o levante. O governo prometeu atender reivindicações, mas depois puniu duramente os revoltosos."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Guerra de Canudos (1896-1897), no interior da Bahia, envolveu o conflito entre o arraial de Antônio Conselheiro e o governo republicano. Sobre esse conflito, é correto afirmar que:",
+          "alternativas": [
+            "Foi uma tentativa monarquista de derrubar a República",
+            "Refletia miséria, messianismo e resistência sertaneja à modernização excludente",
+            "Contou com total apoio do governo federal aos sertanejos",
+            "Foi um movimento urbano de classe média",
+            "Terminou pacificamente com acordo entre as partes"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Canudos foi um movimento messiânico de sertanejos miseráveis liderados por Antônio Conselheiro. Não era monarquista, mas resistência à República excludente. Após quatro expedições militares, foi destruído com massacre de milhares. Euclides da Cunha narrou em \"Os Sertões\"."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Guerra do Contestado (1912-1916) ocorreu na região disputada entre Paraná e Santa Catarina. Entre as causas desse conflito, destaca-se:",
+          "alternativas": [
+            "A distribuição igualitária de terras aos camponeses",
+            "Expropriação de terras pela ferrovia, messianismo e miséria",
+            "O excesso de apoio governamental aos camponeses",
+            "A ausência de conflitos pela posse de terras",
+            "O total respeito aos direitos dos posseiros"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Contestado resultou de: concessão de terras à empresa da ferrovia (expropriando posseiros), messianismo do monge José Maria, miséria, coronelismo e disputa territorial entre PR e SC. Foi duramente reprimido pelo Exército, com milhares de mortos."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O Cangaço foi um fenômeno social do Nordeste durante a República Velha. Sobre esse movimento, é correto afirmar que:",
+          "alternativas": [
+            "Era exclusivamente banditismo sem motivação social",
+            "Expressava revolta social, coronelismo e sobrevivência no sertão árido",
+            "Não tinha nenhuma relação com as condições sociais nordestinas",
+            "Foi totalmente apoiado pelas autoridades locais",
+            "Não sofreu nenhuma repressão policial"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Cangaço (Lampião, Corisco) expressava revolta social contra miséria, seca, coronelismo e exclusão. Embora praticasse banditismo, tinha dimensão de resistência. Alguns cangaceiros eram contratados por coronéis. Foram duramente perseguidos pelas \"volantes\" policiais."
+        }
+      ]
+    },
+    {
+      "id": "mod4-movimento-operario",
+      "titulo": "Movimento Operário e Tenentismo",
+      "topicos": [
+        "Industrialização e classe operária",
+        "Greves operárias (1917)",
+        "Anarquismo e sindicalismo",
+        "Tenentismo: revoltas de 1922 e 1924",
+        "Coluna Prestes"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A industrialização brasileira no início do século XX criou uma classe operária urbana. Sobre as condições de trabalho desse período, é correto afirmar que:",
+          "alternativas": [
+            "Havia ampla legislação trabalhista protegendo operários",
+            "Jornadas excessivas, salários baixos, trabalho infantil e ausência de direitos",
+            "Os trabalhadores gozavam de plenos direitos sociais",
+            "Não havia nenhuma forma de exploração laboral",
+            "A legislação trabalhista era exemplar para a época"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "As condições eram péssimas: jornadas de 12-16 horas, salários baixíssimos, trabalho infantil e feminino explorado, ausência de férias, seguridade ou direitos. Acidentes eram frequentes. Não havia legislação trabalhista - a \"questão social\" era vista como \"caso de polícia\"."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Greve Geral de 1917 em São Paulo foi um marco do movimento operário brasileiro. Entre suas reivindicações, destacava-se:",
+          "alternativas": [
+            "A privatização total das indústrias estatais",
+            "Redução de jornada, aumento salarial e melhores condições de trabalho",
+            "O fim da industrialização no Brasil",
+            "A proibição de sindicatos e organizações operárias",
+            "A restauração da monarquia no país"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Greve de 1917 reivindicava: jornada de 8 horas, aumentos salariais (carestia na Primeira Guerra), fim do trabalho infantil, melhores condições. Paralisou São Paulo, sendo duramente reprimida. Conseguiu algumas concessões, mas teve lideranças deportadas."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O movimento operário da República Velha era fortemente influenciado pelo anarquismo. Sobre essa influência, é correto afirmar que:",
+          "alternativas": [
+            "Os anarquistas defendiam a participação em eleições burguesas",
+            "Propunham ação direta, sindicalismo revolucionário e rejeição ao Estado",
+            "Apoiavam totalmente o governo oligárquico",
+            "Defendiam o fortalecimento do Estado capitalista",
+            "Eram contrários a greves e manifestações operárias"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Os anarquistas, maioria imigrantes italianos e espanhóis, dominavam o movimento operário. Defendiam ação direta (greves, sabotagem), sindicalismo revolucionário, autogestão e abolição do Estado. Rejeitavam participação eleitoral e partidos políticos."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O Tenentismo foi um movimento de jovens oficiais militares de classe média. A Revolta do Forte de Copacabana (1922), episódio inicial, caracterizou-se por:",
+          "alternativas": [
+            "Vitória militar completa dos revoltosos",
+            "Rebelião contra fraudes eleitorais e oligarquias, terminando com \"Os 18 do Forte\"",
+            "Total apoio das Forças Armadas aos rebeldes",
+            "Ausência de repressão governamental",
+            "Conquista imediata do poder pelos tenentes"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Os tenentes de Copacabana rebelaram-se contra a eleição fraudulenta de Artur Bernardes. Massacrados, 18 sobreviventes marcharam pela praia contra tropas legalistas (\"Os 18 do Forte\"). Apenas dois sobreviveram. Tornou-se símbolo de resistência às oligarquias."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Coluna Prestes (1924-1927) percorreu o Brasil combatendo as oligarquias. Sobre essa marcha, é correto afirmar que:",
+          "alternativas": [
+            "Conquistou definitivamente o poder político nacional",
+            "Percorreu 25 mil km denunciando oligarquismo, mas sem vitória militar",
+            "Foi totalmente derrotada no primeiro combate",
+            "Não teve nenhum impacto no questionamento da República Velha",
+            "Restabeleceu o sistema oligárquico tradicional"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Coluna Prestes, liderada por Luís Carlos Prestes e Miguel Costa, percorreu cerca de 25 mil km por 13 estados, combatendo tropas governistas e denunciando o oligarquismo. Não foi militarmente derrotada, mas também não conquistou poder. Exilou-se na Bolívia em 1927."
+        }
+      ]
+    },
+    {
+      "id": "mod5-crise-semana22",
+      "titulo": "Crise da República Velha e Semana de 22",
+      "topicos": [
+        "Semana de Arte Moderna (1922)",
+        "Modernismo brasileiro",
+        "Crise econômica dos anos 1920",
+        "Crise sucessória de 1929-1930",
+        "Fatores da Revolução de 1930"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Semana de Arte Moderna (fevereiro de 1922) no Teatro Municipal de São Paulo foi um marco cultural. Sobre esse evento, é correto afirmar que:",
+          "alternativas": [
+            "Defendia a manutenção total das tradições artísticas acadêmicas",
+            "Propunha ruptura com academicismo e busca de identidade nacional moderna",
+            "Foi unanimemente aceita e aplaudida pelo público conservador",
+            "Não teve nenhuma importância para a cultura brasileira",
+            "Rejeitava completamente qualquer influência europeia"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Semana de 22 (Oswald e Mário de Andrade, Anita Malfatti, Villa-Lobos, Di Cavalcanti) rompeu com o academicismo, propondo arte moderna, experimental, que valorizasse a identidade brasileira. Foi vaiada pelo público conservador, mas transformou a cultura brasileira."
+        },
+        {
+          "id": "q2",
+          "enunciado": "O Modernismo brasileiro, iniciado com a Semana de 22, buscava uma identidade cultural nacional. O \"Manifesto Antropófago\" (1928) de Oswald de Andrade propunha:",
+          "alternativas": [
+            "A cópia exata dos modelos culturais europeus",
+            "\"Devorar\" influências estrangeiras para criar cultura brasileira original",
+            "O isolamento total da cultura brasileira",
+            "A rejeição de qualquer criação artística nacional",
+            "A restauração do academicismo tradicional"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Manifesto Antropófago propunha \"devorar\" (antropofagia cultural) influências estrangeiras, processá-las e transformá-las em algo original brasileiro. \"Tupi or not tupi, that is the question\" - síntese da proposta de criar identidade cultural própria, não submissa."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A crise econômica mundial de 1929 afetou profundamente o Brasil. Sobre seus impactos, é correto afirmar que:",
+          "alternativas": [
+            "Fortaleceu absolutamente a economia cafeeira",
+            "Desvalorizou o café, gerando crise nas oligarquias e desemprego",
+            "Não teve nenhum impacto na economia brasileira",
+            "Resultou em crescimento ilimitado das exportações",
+            "Beneficiou exclusivamente os cafeicultores paulistas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Crise de 1929 derrubou o preço do café (principal produto de exportação). Isso gerou: crise nas oligarquias cafeeiras, desemprego urbano e rural, descontentamento social e enfraquecimento do sistema oligárquico, contribuindo para a Revolução de 1930."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A crise sucessória de 1929-1930 rompeu a \"política do café com leite\". Isso ocorreu porque:",
+          "alternativas": [
+            "São Paulo apoiou o candidato mineiro normalmente",
+            "São Paulo rompeu o acordo, lançando Júlio Prestes contra Getúlio Vargas",
+            "Não houve eleições presidenciais no período",
+            "A sucessão foi totalmente pacífica e consensual",
+            "Minas Gerais desistiu de indicar qualquer candidato"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "São Paulo (Washington Luís) rompeu a alternância, lançando outro paulista (Júlio Prestes). Minas Gerais aliou-se ao Rio Grande do Sul e Paraíba (Aliança Liberal), lançando Getúlio Vargas. A vitória fraudulenta de Prestes e o assassinato de João Pessoa precipitaram a Revolução de 1930."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Revolução de 1930 encerrou a República Velha. Entre os fatores que levaram ao fim do sistema oligárquico, destaca-se:",
+          "alternativas": [
+            "O fortalecimento absoluto das oligarquias tradicionais",
+            "Crise de 1929, insatisfação de classes médias urbanas, tenentismo e dissidências oligárquicas",
+            "A ausência de qualquer oposição ao sistema vigente",
+            "O total sucesso da política do café com leite",
+            "A prosperidade econômica ilimitada do café"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Múltiplos fatores levaram ao fim da República Velha: crise econômica de 1929, crescimento urbano e de classes médias insatisfeitas, tenentismo, dissidências oligárquicas (MG, RS, PB), fraude eleitoral. A Revolução de 1930 inaugurou nova era na política brasileira."
+        }
+      ]
+    }
+  ]
+}

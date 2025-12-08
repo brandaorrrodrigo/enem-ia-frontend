@@ -1,0 +1,324 @@
+{
+  "id": "quimica-organica-funcoes",
+  "titulo": "Funções Orgânicas",
+  "descricao": "Conheça as principais funções orgânicas: álcoois, aldeídos, cetonas, ácidos carboxílicos, ésteres, aminas e suas propriedades",
+  "icone": "⚗️",
+  "cor": "from-green-500 to-teal-500",
+  "nivel": "Básico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Hidrocarbonetos",
+      "topicos": [
+        {
+          "titulo": "Classificação dos Hidrocarbonetos",
+          "conteudo": "Hidrocarbonetos: compostos formados apenas por C e H. Alcanos: ligações simples (CₙH₂ₙ₊₂). Alcenos: uma dupla (CₙH₂ₙ). Alcinos: uma tripla (CₙH₂ₙ₋₂). Aromáticos: anel benzênico. Saturados (só simples) vs insaturados (dupla/tripla)."
+        },
+        {
+          "titulo": "Alcanos (Parafinas)",
+          "conteudo": "Fórmula geral: CₙH₂ₙ₊₂. Ligações simples C-C e C-H. Geometria tetraédrica no carbono (sp³). Pouco reativos (daí parafinas = pouca afinidade). Nomenclatura: met(1), et(2), prop(3), but(4) + ano. Exemplos: metano (CH₄), etano (C₂H₆), propano (C₃H₈)."
+        },
+        {
+          "titulo": "Alcenos (Olefinas) e Alcinos",
+          "conteudo": "Alcenos: C=C, sp², planar. Nomenclatura: sufixo -eno. Mais reativos que alcanos (dupla). Alcinos: C≡C, sp, linear. Sufixo -ino. Muito reativos. Eteno (C₂H₄): maturação de frutas. Etino/acetileno (C₂H₂): maçarico."
+        },
+        {
+          "titulo": "Aromáticos",
+          "conteudo": "Benzeno (C₆H₆): anel com ressonância, 6 elétrons π deslocalizados. Estável, reações de substituição. Derivados: tolueno (metilbenzeno), fenol (hidroxibenzeno), anilina (aminobenzeno). Importante: solventes, plásticos, explosivos."
+        }
+      ],
+      "exemplos": [
+        "Metano (CH₄): gás natural, biogás",
+        "Propano (C₃H₈): GLP, gás de cozinha",
+        "Eteno (C₂H₄): produção de polietileno",
+        "Acetileno (C₂H₂): solda, síntese orgânica",
+        "Benzeno (C₆H₆): solvente, matéria-prima petroquímica"
+      ],
+      "dicas": [
+        "Alcanos: -ano. Alcenos: -eno. Alcinos: -ino",
+        "Saturado = só ligações simples. Insaturado = dupla ou tripla",
+        "Benzeno: estrutura ressonante, não é um alceno comum"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A fórmula molecular C₄H₁₀ corresponde a um:",
+          "alternativas": [
+            "Alceno",
+            "Alcino",
+            "Alcano",
+            "Aromático",
+            "Álcool"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "CₙH₂ₙ₊₂: C₄H₂×₄₊₂ = C₄H₁₀. Segue a fórmula geral dos alcanos (hidrocarbonetos saturados). É o butano."
+        },
+        {
+          "enunciado": "O etino (acetileno) possui:",
+          "alternativas": [
+            "Apenas ligações simples",
+            "Uma ligação dupla",
+            "Uma ligação tripla",
+            "Anel aromático",
+            "Grupo funcional álcool"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Etino (C₂H₂) possui uma ligação tripla entre os carbonos: HC≡CH. É um alcino."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Álcoois, Fenóis e Éteres",
+      "topicos": [
+        {
+          "titulo": "Álcoois (R-OH)",
+          "conteudo": "Grupo funcional: hidroxila (-OH) ligada a carbono saturado. Nomenclatura: prefixo + -ol. Classificação: primário (C-OH ligado a 1C), secundário (2C), terciário (3C). Propriedades: polares, fazem ligação H, solúveis em água (cadeias pequenas)."
+        },
+        {
+          "titulo": "Fenóis (Ar-OH)",
+          "conteudo": "OH ligado diretamente ao anel aromático. Mais ácidos que álcoois (ressonância estabiliza fenóxido). Nomenclatura: -fenol ou hidroxi-benzeno. Propriedades antissépticas. Exemplos: fenol (C₆H₅OH), cresóis (metilfenóis)."
+        },
+        {
+          "titulo": "Éteres (R-O-R')",
+          "conteudo": "Oxigênio entre dois carbonos. Nomenclatura: alcoxi-alcano ou nome vulgar. Menos reativos que álcoois. Pouco polares, não fazem ligação H entre si. Solventes. Exemplo: éter etílico (dietil-éter), anestésico."
+        },
+        {
+          "titulo": "Propriedades e Aplicações",
+          "conteudo": "Álcoois: combustível (etanol), solvente, bebidas, antisséptico. Fenóis: desinfetantes, resinas fenólicas, antioxidantes (BHT). Éteres: solventes, anestésicos (antiguamente). PE: álcool > éter (ligação H)."
+        }
+      ],
+      "exemplos": [
+        "Metanol (CH₃OH): álcool primário, tóxico",
+        "Etanol (C₂H₅OH): álcool primário, combustível, bebidas",
+        "2-propanol (isopropanol): álcool secundário, álcool 70%",
+        "Fenol (C₆H₅OH): antisséptico, ácido fraco",
+        "Éter etílico (C₂H₅-O-C₂H₅): solvente, anestésico"
+      ],
+      "dicas": [
+        "Álcool: -OH em C saturado. Fenol: -OH em anel aromático",
+        "Classificação álcool: conta quantos C estão ligados ao C-OH",
+        "Éteres têm PE menor que álcoois (sem ligação H intermolecular)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "O composto CH₃-CH(OH)-CH₃ é um álcool:",
+          "alternativas": [
+            "Primário",
+            "Secundário",
+            "Terciário",
+            "Fenólico",
+            "Aromático"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O carbono que possui a hidroxila está ligado a dois outros carbonos. Logo, é um álcool secundário. Nome: 2-propanol ou isopropanol."
+        },
+        {
+          "enunciado": "Qual propriedade diferencia principalmente fenóis de álcoois?",
+          "alternativas": [
+            "Presença de oxigênio",
+            "Solubilidade em água",
+            "Caráter ácido mais acentuado",
+            "Capacidade de formar ligações H",
+            "Estado físico à temperatura ambiente"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Fenóis são mais ácidos que álcoois devido à estabilização do íon fenóxido por ressonância com o anel aromático. Álcoois são praticamente neutros."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Aldeídos e Cetonas",
+      "topicos": [
+        {
+          "titulo": "Grupo Carbonila (C=O)",
+          "conteudo": "Carbonila: C=O, ligação dupla entre carbono e oxigênio. Carbono sp², trigonal plano. Polar (O mais eletronegativo). Base das funções aldeído e cetona. Muito reativo (C eletrofílico, O nucleofílico)."
+        },
+        {
+          "titulo": "Aldeídos (R-CHO)",
+          "conteudo": "Carbonila na extremidade da cadeia. H ligado à carbonila. Nomenclatura: prefixo + -al. Facilmente oxidados a ácidos. Teste de Fehling/Benedict (positivo: precipitado vermelho). Exemplos: formaldeído, acetaldeído."
+        },
+        {
+          "titulo": "Cetonas (R-CO-R')",
+          "conteudo": "Carbonila no meio da cadeia. Dois carbonos ligados à carbonila. Nomenclatura: prefixo + -ona. Não oxidam facilmente. Teste de Fehling/Benedict negativo. Exemplos: acetona (propanona), MEK (butanona)."
+        },
+        {
+          "titulo": "Propriedades e Diferenciação",
+          "conteudo": "Ambos polares, não fazem ligação H entre si. Solúveis em água (pequenos). PE < álcoois, > hidrocarbonetos. Aldeídos: odores fortes (baunilha, amêndoa). Cetonas: solventes (acetona). Diferenciação: reagente de Tollens (aldeído → espelho de prata)."
+        }
+      ],
+      "exemplos": [
+        "Formaldeído (HCHO): metanal, conservante, resinas",
+        "Acetaldeído (CH₃CHO): etanal, metabolismo do etanol",
+        "Benzaldeído (C₆H₅CHO): aroma de amêndoa",
+        "Acetona (CH₃COCH₃): propanona, solvente, removedor",
+        "Cânfora: cetona cíclica, bálsamos, naftalina"
+      ],
+      "dicas": [
+        "Aldeído: -al, CHO na ponta. Cetona: -ona, CO no meio",
+        "Oxidação: aldeído → ácido. Cetona: não oxida facilmente",
+        "Teste: Fehling/Benedict/Tollens positivo → aldeído"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A principal diferença estrutural entre aldeídos e cetonas é:",
+          "alternativas": [
+            "Presença de oxigênio",
+            "Tipo de ligação C=O",
+            "Posição da carbonila na cadeia",
+            "Número de carbonos",
+            "Solubilidade em água"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Aldeídos têm carbonila na extremidade (ligada a H). Cetonas têm carbonila no interior da cadeia (ligada a dois carbonos). Ambos têm C=O."
+        },
+        {
+          "enunciado": "Uma substância que reage com reagente de Tollens formando espelho de prata é:",
+          "alternativas": [
+            "Cetona",
+            "Álcool",
+            "Aldeído",
+            "Éter",
+            "Alcano"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O teste de Tollens é específico para aldeídos, que são oxidados a ácidos carboxílicos, reduzindo Ag⁺ a Ag metálica (espelho de prata). Cetonas não reagem."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Ácidos Carboxílicos e Ésteres",
+      "topicos": [
+        {
+          "titulo": "Ácidos Carboxílicos (R-COOH)",
+          "conteudo": "Grupo carboxila: -COOH (carbonila + hidroxila). Nomenclatura: ácido + prefixo + -óico. Caráter ácido (libera H⁺). Fazem ligações H (dímeros), altos PE. Solúveis em água (pequenos). Importantes: acético, cítrico, fórmico."
+        },
+        {
+          "titulo": "Ésteres (R-COO-R')",
+          "conteudo": "Derivados de ácidos (ácido + álcool). Nomenclatura: -ato de -ila. Aromas e fragrâncias. Não ácidos, não fazem ligação H entre si. PE baixo. Importantes: óleos vegetais (triglicerídeos), ceras, polímeros (PET)."
+        },
+        {
+          "titulo": "Reações de Formação",
+          "conteudo": "Esterificação: ácido + álcool → éster + água (catálise ácida). Equilíbrio reversível. Hidrólise de éster: éster + água → ácido + álcool. Saponificação: éster + base → sal + álcool (sabão)."
+        },
+        {
+          "titulo": "Propriedades e Aplicações",
+          "conteudo": "Ácidos: conservantes (benzoico), vinagre (acético), AAS (acetilsalicílico). Ésteres: aromas (acetato de butila = banana), gorduras (triglicerídeos), PET (politereftalato de etileno), biodiesel."
+        }
+      ],
+      "exemplos": [
+        "Ácido acético (CH₃COOH): vinagre (5%), conservante",
+        "Ácido cítrico: limão, laranja, refrigerantes",
+        "Ácido fórmico (HCOOH): veneno de formiga, conservante",
+        "Acetato de etila: aroma de frutas, solvente",
+        "Ácido acetilsalicílico (AAS): aspirina, analgésico"
+      ],
+      "dicas": [
+        "Ácido: -COOH, ácido (doa H⁺). Éster: -COO-, neutro, aroma",
+        "Esterificação: ácido + álcool → éster (perde água)",
+        "Saponificação: gordura + NaOH → sabão (sal de ácido graxo)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A reação entre ácido acético e etanol, em meio ácido, produz:",
+          "alternativas": [
+            "Éter etílico",
+            "Acetato de etila",
+            "Etanal",
+            "Ácido butírico",
+            "Acetona"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Esterificação: CH₃COOH + C₂H₅OH → CH₃COOC₂H₅ + H₂O. Forma o éster acetato de etila (aroma de frutas)."
+        },
+        {
+          "enunciado": "Ésteres são conhecidos por:",
+          "alternativas": [
+            "Serem altamente ácidos",
+            "Terem odores agradáveis (aromas)",
+            "Não serem solúveis em solventes orgânicos",
+            "Serem gases a temperatura ambiente",
+            "Terem pontos de ebulição muito altos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Ésteres são responsáveis pelos aromas de frutas, flores e fragrâncias. São neutros, têm PE moderado e são usados em perfumaria e alimentos."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Aminas e Amidas",
+      "topicos": [
+        {
+          "titulo": "Aminas (R-NH₂, R₂NH, R₃N)",
+          "conteudo": "Derivadas da amônia (NH₃) por substituição de H por R. Classificação: primária (RNH₂), secundária (R₂NH), terciária (R₃N). Nomenclatura: nome + amina. Caráter básico (aceita H⁺). Cheiro de peixe podre (voláteis)."
+        },
+        {
+          "titulo": "Propriedades das Aminas",
+          "conteudo": "Básicas: NH₃ < amina 1ª ≈ 2ª > 3ª (em água, efeito complexo). Polares (N-H), fazem ligação H. Solúveis em água (pequenas). Bases mais fortes que amônia. Formam sais com ácidos (amônio substituído)."
+        },
+        {
+          "titulo": "Amidas (R-CO-NH₂)",
+          "conteudo": "Carbonila ligada a nitrogênio. Derivadas de ácidos. Nomenclatura: prefixo + -amida. Não são básicas (ressonância desativa N). Polares, fazem ligação H, altos PE. Ligação peptídica (proteínas) é uma amida."
+        },
+        {
+          "titulo": "Compostos Nitrogenados Importantes",
+          "conteudo": "Anilina (C₆H₅NH₂): corantes, borracha. Aminas biogênicas: histamina, dopamina, adrenalina. Aminoácidos: NH₂-R-COOH. Proteínas: polímeros de aminoácidos (ligação peptídica = amida). Uréia: CO(NH₂)₂, fertilizante."
+        }
+      ],
+      "exemplos": [
+        "Metilamina (CH₃NH₂): primária, cheiro peixe, base fraca",
+        "Dimetilamina ((CH₃)₂NH): secundária",
+        "Trimetilamina ((CH₃)₃N): terciária",
+        "Anilina (C₆H₅NH₂): aromática, corantes",
+        "Uréia (NH₂-CO-NH₂): diamida, fertilizante, ciclo da uréia"
+      ],
+      "dicas": [
+        "Amina: básica, cheiro ruim, -NH₂. Amida: neutra, carbonila, -CONH₂",
+        "Classificação amina: conta quantos R substituem H da NH₃",
+        "Proteínas = polímeros de aminoácidos via ligação amida (peptídica)"
+      ],
+      "questoes": [
+        {
+          "enunciado": "A metilamina (CH₃NH₂) é classificada como amina:",
+          "alternativas": [
+            "Primária",
+            "Secundária",
+            "Terciária",
+            "Aromática",
+            "Quaternária"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Um grupo R (metil) substituiu um H da amônia. Logo, é amina primária. Fórmula geral: RNH₂."
+        },
+        {
+          "enunciado": "Amidas diferem de aminas principalmente por:",
+          "alternativas": [
+            "Presença de nitrogênio",
+            "Caráter básico acentuado",
+            "Presença de carbonila ligada ao nitrogênio",
+            "Solubilidade em água",
+            "Número de hidrogênios"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Amidas têm grupo -CO-NH₂ (carbonila + nitrogênio). São neutras/fracamente básicas. Aminas são R-NH₂ (sem carbonila) e são básicas."
+        },
+        {
+          "enunciado": "A ligação peptídica presente em proteínas é um exemplo de:",
+          "alternativas": [
+            "Ligação éster",
+            "Ligação amina",
+            "Ligação amida",
+            "Ligação éter",
+            "Ligação glicosídica"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A ligação peptídica é formada entre o grupo -COOH de um aminoácido e o grupo -NH₂ de outro, resultando em uma ligação amida (-CO-NH-)."
+        }
+      ]
+    }
+  ]
+}

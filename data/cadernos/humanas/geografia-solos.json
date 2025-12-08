@@ -1,0 +1,282 @@
+{
+  "id": "geografia-solos",
+  "titulo": "Solos e Geologia",
+  "descricao": "Formacao, tipos de solos, erosao e tectonismo",
+  "icone": "⛰️",
+  "cor": "from-stone-500 to-amber-600",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Formacao e Tipos de Solo",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Pedogenese",
+          "conteudo": "Pedogenese e formacao solo atraves intemperismo (decomposicao rochas). Tipos: intemperismo fisico/mecanico (variacao temperatura, congelamento agua, raizes quebram rochas), quimico (oxidacao, hidratacao, dissolucao por agua/acidos), biologico (acao organismos, raizes, acidos organicos). Fatores: rocha-mae (material origem), clima (temperatura, umidade aceleram), relevo (plano acumula, inclinado erode), organismos (vegetacao, fauna), tempo (milhares anos). Horizontes: O (organico), A (humus), B (acumulo argila), C (rocha alterada), R (rocha-mae).",
+          "exemplo": "Clima tropical umido Brasil acelera intemperismo: altas temperaturas + chuvas = decomposicao rapida, solos profundos (ate 30m). Clima arido: intemperismo lento, solos rasos. Basalto (rocha-mae) no Parana gera terra roxa (fertil, rico ferro). Granito gera solos arenosos pobres. Perfil completo leva 10-20 mil anos formar. Cerrado: Latossolos com horizonte B espesso (3-10m).",
+          "dica": "Intemperismo fisico = quebra mecanica. Quimico = alteracao composicao. Biologico = organismos. Clima quente-umido = pedogenese rapida, solos profundos. Horizonte A = mais fertil (humus)."
+        },
+        {
+          "id": 2,
+          "titulo": "Classificacao de Solos",
+          "conteudo": "Principais solos Brasil: Latossolos (45% territorio, profundos, acidos, pobres, Cerrado/Amazonia, precisa correcao), Argissolos (24%, horizonte B argila, ferteis, Sudeste), Neossolos (15%, rasos, jovens, montanhas/litoral), Nitossolos (terra roxa, 2%, muito ferteis, basalto, cafe/soja), Chernossolos (ferteis, calcio, Pampa), Planossolos (encharcam, Pantanal). Textura: arenosa (drena rapido, seca), argilosa (retém agua/nutrientes), media (equilibrada).",
+          "exemplo": "Terra roxa Parana/SP: Nitossolo, basalto, roxo-avermelhado, rico ferro, alta fertilidade natural, ideal cafe/soja. Nao precisa adubacao intensa. Latossolo Amarelo Amazonia: profundo (20m), acido (pH 4-5), pobre nutrientes (lixiviacao), agricultura exige calagem + NPK. Massape Nordeste: argiloso, escuro, fertil, cana-acucar. Salmorao RS: arenoso, pobre, exige correcao. Chernossolos Pampa: ferteis naturalmente, trigo.",
+          "dica": "Latossolo = mais comum Brasil, profundo, acido, pobre (precisa correcao). Nitossolo (terra roxa) = mais fertil. Textura argilosa > arenosa (retém agua/nutrientes). Cor roxa/vermelha = oxido ferro."
+        },
+        {
+          "id": 3,
+          "titulo": "Fertilidade e Manejo",
+          "conteudo": "Fertilidade depende: nutrientes (N, P, K, micronutrientes), pH (ideal 6-7, acidez bloqueia nutrientes), materia organica (3-5% ideal, retém agua/nutrientes), textura (argila melhor que areia), CTC (capacidade troca cationica, retém ions). Manejo: calagem (eleva pH, adiciona Ca/Mg), adubacao (NPK quimico ou organico), rotacao culturas (leguminosas fixam N), plantio direto (mantem palha, MO), terraceamento (controla erosao).",
+          "exemplo": "Cerrado: Latossolos pH 4,5, aluminio toxico. Revolucao agricultura 1970s: calagem massiva (6 ton/ha calcario) + adubacao corrigiram, viraram celeiro Brasil. Sistema Plantio Direto (SPD): 34 milhoes ha Brasil, nao ara, mantem palha, aumenta MO 0,5%/ano, reduz erosao 90%. Agricultura organica: composto, esterco, rotacao substituem quimicos. Adubacao verde: crotalaria fixa 150 kg N/ha.",
+          "dica": "Solo fertil = nutrientes + pH adequado + materia organica. Latossolos precisam calagem (corrige acidez) + NPK. Plantio direto preserva solo. Rotacao com leguminosas fixa nitrogenio naturalmente."
+        },
+        {
+          "id": 4,
+          "titulo": "Solos Tropicais",
+          "conteudo": "Solos tropicais: intemperismo intenso, lixiviacao (chuvas lavam nutrientes), profundos, acidos, ricos aluminio/ferro (toxicos), pobres calcio/magnesio. Paradoxo: florestas exuberantes em solos pobres (ciclagem nutrientes rapida, biomassa). Laterizacao: ferro/aluminio concentram formando crosta dura (laterita) quando exposto. Queimadas liberam nutrientes temporariamente, depois exaustao. Agricultura itinerante indigena adaptada (roca, pousio longo).",
+          "exemplo": "Amazonia: solo pobre mas floresta exuberante (99% nutrientes na biomassa, ciclagem rapida). Desmatamento = laterizacao, solo vira 'concreto' improdutivo. Terra Preta Indigena: solos antropicos, carbono pirolisado + ceramica + ossos, ferteis seculo depois, mostram manejo sustentavel pre-colombiano. Agricultura Amazonia moderna: calagem + NPK cara, sustentabilidade questionavel. Mata Atlantica: Argissolos mais ferteis que Amazonia.",
+          "dica": "Paradoxo tropical: floresta rica, solo pobre (nutrientes na biomassa). Lixiviacao = chuvas lavam. Laterizacao = crosta ferro quando desmata. Terra Preta = exemplo manejo sustentavel indigena."
+        },
+        {
+          "id": 5,
+          "titulo": "Poluicao e Contaminacao",
+          "conteudo": "Contaminacao solo por: agrotoxicos (acumulam, contaminam lencol freatico), metais pesados (industria, mineracao, chumbo/mercurio/cadmio), lixo/aterros (chorume), derramamento petroleo/quimicos, esgoto sem tratamento. Consequencias: perda fertilidade, toxicidade plantas/animais/humanos, contaminacao agua subterranea (irreversivel), bioacumulacao cadeia alimentar. Remediacao: fitorremediacao (plantas absorvem), lavagem solo, isolamento, biorremediacao (bacterias degradam).",
+          "exemplo": "Cubatao-SP 1980s: metais pesados industrias contaminaram solo, casos cancer/malformacoes. Vila Socó: 500 mil m³ solo contaminado, remediacao R$ 50 milhoes. Agrotoxicos: glifosato detectado 92% amostras solo agricola Brasil. Mariana-MG: lama mineracao cobriu 1.500 ha, mercurio/arsênio, solo improdutivo decadas. Chernobyl: cesio radioativo contaminou solo 30 km raio, interditado ate hoje. Fitorremediacao: girassol remove metais pesados.",
+          "dica": "Agrotoxicos + metais pesados = principais contaminantes. Afeta solo, agua, saude. Biorremediacao/fitorremediacao = solucoes. Contaminacao agua subterranea e irreversivel (difusao contaminante)."
+        }
+      ],
+      "questao": {
+        "enunciado": "A regiao do Cerrado brasileiro, que se tornou uma das principais areas agricolas do pais a partir da decada de 1970, apresenta predominancia de solos profundos, porém naturalmente acidos e com baixa disponibilidade de nutrientes. A transformacao dessa regiao em importante produtora de graos so foi possivel devido a aplicacao de tecnicas especificas de manejo.\n\nA principal tecnica que viabilizou a agricultura moderna no Cerrado foi:",
+        "alternativas": [
+          "A irrigacao intensiva para compensar o deficit hidrico e aumentar a produtividade.",
+          "O terraceamento das areas de plantio para reduzir a erosao em relevos acidentados.",
+          "A calagem massiva do solo para corrigir a acidez e neutralizar o aluminio toxico.",
+          "O sistema de rotacao de culturas com leguminosas para fixacao biologica de nitrogenio.",
+          "O plantio direto com manutencao de palhada para conservar a umidade do solo."
+        ],
+        "respostaCorreta": 2,
+        "explicacao": "A transformacao do Cerrado em area agricola produtiva so foi possivel gracas a calagem massiva, tecnica que adiciona calcario ao solo para elevar o pH e neutralizar o aluminio toxico, caracteristico dos Latossolos. Alem da calagem, foi necessaria adubacao com NPK. Embora irrigacao (A), terraceamento (B), rotacao (D) e plantio direto (E) sejam importantes tecnicas agricolas, a correcao da acidez atraves da calagem foi o fator fundamental e pioneiro que viabilizou a ocupacao agricola moderna do Cerrado a partir dos anos 1970.",
+        "tags": ["solos", "cerrado", "calagem", "latossolo"]
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Erosao e Conservacao",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Tipos de Erosao",
+          "conteudo": "Erosao = desgaste, transporte, deposicao solo/rochas. Tipos: hidrica (agua chuva/rios, mais importante Brasil), eolica (vento, regioes secas/praias), glacial (geleiras), marinha (ondas/mares). Erosao hidrica: laminar (retira camada uniforme), sulcos (canais rasos), ravinas (canais profundos 0,5-1,5m), vocoroca/boçoroca (>2m, expoe lencol freatico, irreversivel). Fatores: chuva (intensidade/volume), declividade, cobertura vegetal (protege), tipo solo (arenoso > argiloso), uso terra.",
+          "exemplo": "Brasil perde 500 milhoes ton solo/ano erosao. Parana: vocoroca Casa Branca tem 4 km extensao, 80m profundidade, 'canyon' agricola. SP: erosao remove 20 ton solo/ha/ano areas cana. Assoreia rios (represa Billings perdeu 30% volume). Arenizacao Pampa RS: sobrepastoreio + solo arenoso = 'desertos' (5.000 km² degradados). Dust Bowl EUA 1930s: erosao eolica agricola gerou tempestades areia, exodo rural.",
+          "dica": "Erosao hidrica = principal Brasil. Laminar > sulcos > ravinas > vocoroca (gravidade crescente). Cobertura vegetal protege. Solo exposto + chuva forte + declividade = erosao intensa. Vocoroca e irreversivel."
+        },
+        {
+          "id": 2,
+          "titulo": "Fatores Acelera Erosao",
+          "conteudo": "Erosao natural e lenta (geologica). Acelerada e antropica: desmatamento (retira protecao), agricultura inadequada (solo exposto, monocultura, mecanizacao morro abaixo), sobrepastoreio (compacta solo, remove vegetacao), urbanizacao (impermeabilizacao concentra escoamento), queimadas (destroem materia organica, solo fica pulverizado), mineracao. Chuvas concentradas + declive alto + solo exposto = erosao massiva. Prejuizos: perda fertilidade, assoreamento rios, deslizamentos, custos recuperacao.",
+          "exemplo": "Haiti: 98% Mata Atlantica desmatada, erosao catastrofica, furacoes matam milhares (deslizamentos). Producao agricola colapsou. Madagascar: erosao eolica/hidrica transformou rios vermelhos (sedimentos), recifes corais morrem sufocados. Brasil: plantacao cafe SP seculo XIX morro acima/abaixo erosou massivamente, valorizou terra roxa Parana. Tragedia Petropolis 2022: desmatamento morros + chuva = 230 mortos deslizamentos.",
+          "dica": "Desmatamento = principal causa erosao acelerada. Solo exposto + chuva + declividade = trio fatal. Agricultura morro acima/abaixo agrava. Urbanizacao desordenada morros = deslizamentos tragicos."
+        },
+        {
+          "id": 3,
+          "titulo": "Tecnicas Conservacao Solo",
+          "conteudo": "Conservacao visa reduzir erosao: curvas nivel (plantio perpendicular declive, reduz velocidade agua), terraceamento (patamares quebram declive, infiltram agua), plantio direto (palha protege, aumenta infiltracao), rotacao culturas (raizes diferentes estruturam solo), reflorestamento (ciliar, encostas), cordoes vegetacao (barreiras), bacias contencao (captam agua/sedimentos), pousio (descanso solo). Legislacao: Codigo Florestal exige APP (mata ciliar 30-500m), Reserva Legal (20-80%).",
+          "exemplo": "Plantio Direto Brasil: 34 milhoes ha, reduz erosao ate 90%, economiza diesel (nao ara). Terraceamento Parana cafe: reduziu erosao 70%, aumentou producao (retém agua). Reflorestamento ciliar Extrema-MG: recuperou 5.500 ha matas, PSA paga R$ 200/ha/ano produtores, vazao rio aumentou 54%, qualidade agua melhorou. APP: protege margem rios, nascentes, topos morro, declividade >45°. Desrespeito = erosao/assoreamento.",
+          "dica": "Curvas nivel + terraceamento = fundamentais areas declivosas. Plantio direto = conserva solo + economiza. Mata ciliar (APP) protege rios erosao. Codigo Florestal define areas protecao obrigatorias."
+        },
+        {
+          "id": 4,
+          "titulo": "Desertificacao Brasil",
+          "conteudo": "Desertificacao = degradacao terras secas (aridas, semiaridas, subumidas), perda biologica/economica. Nao e avanco deserto, mas criacao area degradada. Causas: clima (secas), humanas (desmatamento, sobrepastoreio, irrigacao inadequada, queimadas). Brasil: 1.340 municipios susceptiveis (Nordeste, norte MG), nucleos: Gilbues-PI, Iraua-CE, Serido-RN/PB, Cabrobó-PE. Total 230 mil km² alto risco. Consequencias: exodo rural, pobreza, refugiados climaticos, producao agricola colapsa.",
+          "exemplo": "Gilbues-PI: 'deserto brasileiro', 5.600 km² solo arenoso exposto, ravinas 70m profundidade. Causa: desmatamento cerrado (lenha, pecuaria), sobrepastoreio caprinos, chuvas concentradas erodem. Iraua-CE: algodao decadas 1950-60 exauriu solo, monocultura, mecanizacao inadequada. Serido NE: criacao caprinos acima capacidade suporte, caatinga virou solo nu. Combate: reflorestamento especies nativas (algaroba), pousio, manejo pastagens, barragens sucessivas.",
+          "dica": "Desertificacao ≠ deserto (processo degradacao). Nucleos no semiarido NE. Causas: desmatamento + sobrepastoreio + manejo inadequado + secas. Combate: reflorestamento, manejo sustentavel, obras hidricas."
+        },
+        {
+          "id": 5,
+          "titulo": "Movimentos de Massa",
+          "conteudo": "Movimentos massa: deslocamento solo/rocha vertente abaixo gravidade. Tipos: rastejo/creep (lento, continuo), escorregamento/deslizamento (rapido, plano inclinado), desabamento/queda blocos (vertical, gravidade), corrida detritos (rapida, fluida, alta agua). Fatores: declividade, tipo solo/rocha, agua (satura, pesa, lubrifica), vegetacao (raizes seguram), acao humana (cortes, sobrecarga, impermeabilizacao). Areas risco: morros desmatados, ocupacao irregular encostas.",
+          "exemplo": "Regiao Serrana RJ 2011: 918 mortos, pior desastre natural Brasil. Chuva 280mm/24h + desmatamento + ocupacao encostas = deslizamentos massivos (Teresopolis, Petropolis, Nova Friburgo). Petropolis 2022: 230 mortos, repeticao tragedia (construcoes morros, canalizacao errada). Maceio-AL: mineracao sal-gema gerou subsidencia (afundamento), 60 mil desalojados. Santos-SP: monitoramento encostas + remocao familias areas risco reduziu vitimas.",
+          "dica": "Chuva intensa + encosta ingreme + desmatamento + ocupacao irregular = deslizamentos tragicos. Rastejo e lento, deslizamento rapido. Prevencao: mapeamento risco, remocao familias, obras estabilizacao, drenagem adequada."
+        }
+      ],
+      "questao": {
+        "enunciado": "As tragédias causadas por movimentos de massa em areas urbanas brasileiras, especialmente em regioes serranas, tem se tornado cada vez mais frequentes e letais. Esses eventos resultam da combinacao de fatores naturais com a acao humana inadequada.\n\nSao fatores que contribuem para o agravamento dos movimentos de massa em areas urbanas:\n\nI. Ocupacao irregular de encostas com alta declividade.\nII. Desmatamento da vegetacao original que estabiliza o solo.\nIII. Impermeabilizacao do solo que aumenta o escoamento superficial.\nIV. Construcao de sistemas de drenagem adequados nas vertentes.\n\nEstao corretas:",
+        "alternativas": [
+          "Apenas I e II.",
+          "Apenas I, II e III.",
+          "Apenas II, III e IV.",
+          "Apenas I, III e IV.",
+          "I, II, III e IV."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "As afirmativas I, II e III estao corretas e descrevem fatores que agravam movimentos de massa: a ocupacao irregular de encostas ingremes (I) adiciona peso e retira vegetacao; o desmatamento (II) remove as raizes que estabilizam o solo; a impermeabilizacao (III) impede infiltracao e concentra o escoamento superficial, saturando o solo rapidamente. A afirmativa IV esta incorreta porque sistemas de drenagem ADEQUADOS sao medidas de prevencao que reduzem os riscos, nao agravam. Apenas drenagem inadequada ou inexistente contribui para tragédias.",
+        "tags": ["movimentos-massa", "deslizamentos", "erosao", "ocupacao-urbana"]
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Geologia e Tectonica de Placas",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Estrutura Interna Terra",
+          "conteudo": "Terra possui camadas: crosta (5-70km, solida, rochas sedimentares/metamorficas/igneas), manto (2.900km, solido-plastico, silicatos ferro/magnesio, conveccao termica move placas), nucleo externo (2.200km, liquido, ferro/niquel, gera campo magnetico), nucleo interno (1.200km, solido, ferro/niquel, 5.000°C pressao). Descontinuidades: Mohorovicic (crosta-manto), Gutenberg (manto-nucleo). Litosfera = crosta + manto superior rigido (100km), fragmentada em placas tectonicas.",
+          "exemplo": "Sismos revelaram estrutura: ondas P atravessam tudo (incluindo liquidos), S so solidos (param nucleo externo = prova liquido). Campo magnetico protege vida radiacao solar. Conveccao manto: material quente sobe dorsal oceanica, esfria, desce zonas subducção (motor deriva continental). Nucleo solido mesmo 5.000°C devido pressao imensa (3,6 milhoes atm). Crosta oceanica 5-10km (basalto), continental 30-70km (granito, menos densa).",
+          "dica": "Crosta (fina) + manto (grosso) + nucleo (centro). Conveccao manto move placas. Nucleo externo liquido gera magnetismo. Ondas sismicas provaram camadas. Litosfera = placas tectonicas."
+        },
+        {
+          "id": 2,
+          "titulo": "Tectonica de Placas",
+          "conteudo": "Tectonica placas: litosfera fragmentada em placas (12 principais) que se movem sobre astenosfera (manto plastico). Tipos limites: divergentes/construtivos (placas se afastam, cria crosta, dorsais oceanicas), convergentes/destrutivos (placas se chocam, subducção, montanhas, terremotos, vulcoes), transformantes/conservativos (placas deslizam lateralmente, terremotos, Falha San Andreas). Motor: conveccao termica manto. Velocidade: 2-10 cm/ano. Teoria unificou deriva continental (Wegener), expansao fundos oceanicos (Hess).",
+          "exemplo": "Dorsal Mesoatlantica: divergente, separa placas americana-africana-eurasiatica, 2cm/ano, criando oceano Atlantico. Islândia e parte dorsal emersa (vulcanismo). Anel Fogo Pacifico: convergente, 90% terremotos, 75% vulcoes, subducção placa Pacifico sob continentais. Himalaia: convergência India-Eurasia, montanhas 8.800m, cresce 5mm/ano. Falha San Andreas: transformante, Los Angeles move para SF 5cm/ano, terremotos frequentes.",
+          "dica": "Divergente = placas afastam, cria crosta (dorsais). Convergente = chocam, montanhas/vulcoes/terremotos. Transformante = deslizam, terremotos. Anel Fogo Pacifico = area mais sismica/vulcanica."
+        },
+        {
+          "id": 3,
+          "titulo": "Vulcanismo",
+          "conteudo": "Vulcanismo = extravasamento magma (rocha fundida). Tipos vulcoes: escudo (lava fluida basaltica, erupcoes calmas, Havai), estratovulcao/composto (lava viscosa, erupcoes explosivas, Anel Fogo), caldeira (colapso camara magmatica, Yellowstone). Locais: zonas subducção (magma da placa subduzida), dorsais oceanicas (magma manto), pontos quentes/hotspots (plumas manto, Havai, Fernando Noronha). Beneficios: solo fertil (basalto), turismo, geotermica. Riscos: lava, cinzas, gases toxicos, lahars.",
+          "exemplo": "Vesuvio Italia 79 d.C.: soterrou Pompeia, 20 mil mortos. Krakatoa 1883: explosao matou 36 mil, tsunami, cinzas circularam globo 2 anos. Pinatubo Filipinas 1991: 800 mortos, cinzas resfriaram planeta 0,5°C. Eyjafjallajokull Islandia 2010: cinzas fecharam espaco aereo Europa, prejuizo US$ 5 bi. Brasil: vulcanismo ausente hoje (meio placa), passado formou basalto Parana (130 Ma), Fernando Noronha hotspot. Terra roxa e solo basaltico vulcanico (fertil).",
+          "dica": "Vulcoes em zonas subducção (Anel Fogo) ou pontos quentes. Basalto (fluido) = erupcoes calmas. Lava viscosa = explosoes violentas. Cinzas podem resfriar clima globalmente. Brasil sem vulcoes ativos (meio placa)."
+        },
+        {
+          "id": 4,
+          "titulo": "Terremotos",
+          "conteudo": "Terremotos/sismos: liberacao energia acumulada movimento placas. Hipocentro/foco: ponto origem (profundidade varia). Epicentro: ponto superficie acima foco. Medidas: Richter (magnitude energia, logaritmica, 0-10), Mercalli (intensidade danos, I-XII). Ondas: P (primarias, rapidas, todos meios), S (secundarias, lentas, so solidos), L/superficiais (destrutivas). Maioria em limites placas (95%), podem gerar tsunamis. Previsao impossivel, mas areas risco conhecidas.",
+          "exemplo": "Maior registrado: Chile 1960, 9,5 Richter, tsunami matou 1.600. Sumatra 2004: 9,1, tsunami matou 230 mil (14 paises). Japao 2011: 9,1, tsunami + Fukushima, 18 mil mortos. Haiti 2010: 7,0, 316 mil mortos (construcoes frageis). Brasil: raros, baixa magnitude (placa estavel), maiores Mato Grosso (~6,2 Richter). Cada grau Richter = 32x mais energia. Magnitude 5 = tremor, 7+ = destruicao massiva.",
+          "dica": "Terremotos em limites placas. Richter mede energia (logaritmico), Mercalli danos. Magnitude >7 = destrutivo. Podem gerar tsunamis (Pacifico). Brasil estavel (meio placa), sismos fracos raros."
+        },
+        {
+          "id": 5,
+          "titulo": "Relevo e Tectonica",
+          "conteudo": "Relevo formado por: agentes internos/endogenos (tectonismo, vulcanismo, terremotos, constroem) e externos/exogenos (intemperismo, erosao, destroem). Tectonismo: orogenese (dobras/falhas formam montanhas, convergencia placas, Andes, Alpes, Himalaia), epirogenese (movimentos verticais lentos, soergue/rebaixa cratons). Dobramentos: modernos (Terciario, altos, Andes, Alpes, Rochosas, Himalaia) e antigos (Paleozoico, erodidos, Apalaches, Urais). Brasil: sem dobramentos modernos (meio placa), relevo antigo erodido.",
+          "exemplo": "Andes: orogenese (Nazca subduz America Sul), vulcoes ativos, 7.000m altitude, formacao Terciaria continua (crescem). Himalaia: colisao India-Eurasia, dobramentos intensos, Everest 8.848m. Apalaches EUA: dobramento Paleozoico (300 Ma), erosao reduziu <2.000m. Brasil: escudos cristalinos Precambrianos (3 bilhoes anos), planaltos erodidos, planices sedimentares. Sem montanhas altas (ponto mais alto 2.994m Neblina). Estabilidade tectonica.",
+          "dica": "Agentes internos constroem relevo (tectonica, vulcoes), externos destroem (erosao). Dobramentos modernos = altos, ativos (Andes, Himalaia). Antigos = baixos, erodidos (Apalaches). Brasil = relevo antigo, baixo, estavel (sem orogênese)."
+        }
+      ],
+      "questao": {
+        "enunciado": "O Brasil apresenta baixa ocorrencia de terremotos de grande magnitude e ausencia de vulcoes ativos, diferentemente de paises como Chile, Japao e Indonesia, que sofrem frequentemente com esses fenomenos. Essa diferenca esta relacionada a posicao geotectonica do territorio brasileiro.\n\nA relativa estabilidade geologica do Brasil explica-se por:",
+        "alternativas": [
+          "Estar localizado em area de encontro entre placas tectonicas convergentes.",
+          "Possuir seu territorio situado no centro da Placa Sul-Americana, distante dos limites tectonicos.",
+          "Apresentar intensa atividade vulcanica submarina ao longo da costa atlantica.",
+          "Ter sido formado por dobramentos modernos do periodo Terciario.",
+          "Localizar-se próximo a Dorsal Mesoatlantica, area de alta atividade sismica."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "O Brasil apresenta estabilidade geologica porque esta localizado no centro da Placa Sul-Americana, distante dos limites tectonicos onde ocorrem a maioria dos terremotos e vulcoes. Os grandes sismos e vulcanismo concentram-se em zonas de convergencia (como Anel de Fogo do Pacifico), divergencia ou transformacao de placas. Como o territorio brasileiro nao esta em nenhum desses limites, apresenta atividade sismica muito baixa e ausencia de vulcanismo ativo. As alternativas A, C e E descrevem areas de instabilidade, e D esta incorreta pois o Brasil possui relevo antigo Precambriano, nao dobramentos modernos.",
+        "tags": ["tectonica-placas", "estabilidade-geologica", "brasil"]
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Recursos Minerais",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Classificacao Recursos Minerais",
+          "conteudo": "Recursos minerais: materiais crosta terrestre economicamente extraiveis. Classificacao: metalicos (ferro, aluminio, cobre, ouro, niquel), nao-metalicos (areia, argila, calcario, fosfato, sal), energeticos (petroleo, carvao, uranio, gas natural). Formacao: processos geologicos milhoes anos (magmatismo, sedimentacao, metamorfismo, intemperismo). Distribuicao irregular: relacionada historia geologica. Mineracao: lavra ceu aberto (mais barata, impacto ambiental maior) ou subterranea (mais cara, menor impacto superficie).",
+          "exemplo": "Brasil: 2° maior exportador ferro (Vale, Carajas-PA, Quadrilatero Ferrifero-MG), maior produtor niobio (95% mundial, Araxa-MG/Catalao-GO), 2° bauxita (aluminio, Oriximina-PA), ouro (Serra Pelada era maior ceu aberto). Chile: maior produtor cobre (34% mundial). China: maior terras raras (85%). RD Congo: 70% cobalto. Australia: maior ferro/bauxita. Formacao: ferro sedimentacao oceanica 2 bi anos (oxidacao).",
+          "dica": "Metalicos = metais (ferro, cobre). Nao-metalicos = construcao (areia, calcario). Energeticos = combustiveis (petroleo, carvao). Brasil destaque ferro, niobio, bauxita. Distribuicao irregular (geologia)."
+        },
+        {
+          "id": 2,
+          "titulo": "Mineracao no Brasil",
+          "conteudo": "Brasil: grande potencial mineral, escudos cristalinos Precambrianos. Principais: ferro (MG, PA), bauxita (PA), manganes, niobio (MG, GO), ouro (MG, PA, MT), cobre, niquel, estanho, fosfato, calcario. Codigo Mineracao (1967): subsolo Uniao, concessoes empresas. Royalties (CFEM): 0,2-4% faturamento. Problemas: impactos ambientais (desmatamento, poluicao rios, rejeitos), conflitos indigenas/quilombolas, baixa fiscalizacao, rejeitos instabilidade (Mariana, Brumadinho).",
+          "exemplo": "Quadrilatero Ferrifero MG: 40 bilhoes ton reservas ferro, 300 anos exploracao, cratera >300m profundidade. Carajas PA: maior provincia mineral mundo, ferro/manganes/cobre/niquel, 20% PIB Para. Mariana 2015: barragem Samarco rompeu, 19 mortos, 600 km rio contaminado, maior desastre ambiental Brasil. Brumadinho 2019: 270 mortos, rejeitos soteraram comunidade. Royalties baixos (1,5-3,5%), arrecadacao R$ 3 bi/ano (poderia ser 10x mais).",
+          "dica": "Brasil rico minerios (escudos antigos). Ferro/bauxita/niobio destaque. Codigo: subsolo Uniao, concessoes privadas. Problemas: ambientais (rejeitos, barragens) e sociais (conflitos, royalties baixos)."
+        },
+        {
+          "id": 3,
+          "titulo": "Impactos Ambientais Mineracao",
+          "conteudo": "Impactos: desmatamento (lavra ceu aberto remove vegetacao), erosao/assoreamento (sedimentos rios), poluicao agua (metais pesados, acidos, mercurio garimpo), rejeitos (barragens risco colapso, area esteril), subsidencia (afundamento solo minas subterraneas), poluicao ar (particulados), paisagem degradada (crateras, montanhas rejeito). Recuperacao areas degradadas (PRAD): obrigatoria, replantio, reconformacao topografica. Poucos cumprem adequadamente.",
+          "exemplo": "Mariana: 43 milhoes m³ lama, mercurio/arsênio contaminaram Rio Doce ate mar, 19 mortos, Bento Rodrigues destruida, 680 km atingidos, multa R$ 20 bilhoes. Brumadinho: 270 mortos, minerio+lama soterrou, maior tragedia corporativa Brasil. Rio Madeira-AM: garimpo ouro despeja 100 ton mercurio/ano, contamina peixes, povos indigenas. Itabira-MG: maior cratera Brasil (440m profundidade), cidade afunda mina subterranea. RAD bem feito: Inco-GO recuperou area mineracao niquel, hoje reserva.",
+          "dica": "Principais impactos: desmatamento, poluicao agua (metais pesados), rejeitos (barragens perigosas). Tragédias Mariana/Brumadinho = fiscalizacao falha + lucro > seguranca. PRAD obrigatorio mas mal cumprido."
+        },
+        {
+          "id": 4,
+          "titulo": "Conflitos Mineracao",
+          "conteudo": "Conflitos mineracao: terras indigenas (Raposa Serra Sol, Carajas, Yanomami), quilombolas, comunidades tradicionais. Codigo Mineracao permite concessoes antes demarcacao. Garimpo ilegal: desmatamento, mercurio, violencia. Mineradoras vs populacoes: poluicao, rompimento barragens, deslocamento forcado. Disputas agua: mineracao consome muito, conflita agricultura/abastecimento. Lobby minerador forte Congresso, flexibilizacao ambiental. Consulta previa (Convencao 169 OIT): nem sempre respeitada.",
+          "exemplo": "Raposa Serra Sol RR: demarcacao 2005 enfrentou arrozeiros/mineradores, STF validou 2009. Terra Indigena Xikrin (Carajas-PA): operacao Vale causa poluicao rios, conflitos. Yanomami RR/AM: 20 mil garimpeiros ilegais, mercurio contaminou 92% criancas, malaria, violencia. PL 191/2020: propoe liberar mineracao terras indigenas (controverso). Alcoa Juruti-PA: conflito quilombolas, TAC estabeleceu regras. Belo Monte: nao mineracao mas hidreletrica, mesmo padrao conflito.",
+          "dica": "Mineracao vs direitos indigenas/quilombolas = conflito recorrente. Garimpo ilegal = desmatamento + mercurio + violencia. Lobby minerador forte, pressiona flexibilizacao. Consulta previa raramente efetiva."
+        },
+        {
+          "id": 5,
+          "titulo": "Economia Mineradora",
+          "conteudo": "Mineracao contribui PIB (~2-4% Brasil), exportacoes (14% pauta exportacao), empregos (180 mil diretos, 2 milhoes indiretos). Modelo extrativista: exporta minerio bruto baixo valor agregado, importa manufaturados caros ('maldicao recursos naturais'). Dependencia precos internacionais (commodities volateis). Vale: maior mineradora Americas, 90% lucro exportacao ferro China. Criticas: royalties baixos, incentivos fiscais, danos socioambientais privatizam lucros, socializam custos.",
+          "exemplo": "Vale: R$ 230 bilhoes faturamento (2021), lucro R$ 105 bi, mas royalties R$ 9 bi (4%). Comparacao: petroleo Noruega cobra 78% royalties, reinveste fundo soberano. Brasil: mineracao gera empregos temporarios, degrada permanente. Carajas: PIB Para cresceu mas IDH baixo (renda concentrada). Boom commodities 2000s: mineracao cresceu 300%, mas desindustrializacao (doenca holandesa, real valorizado prejudica industria). Australia/Canada: agregam valor (siderurgia), Brasil exporta bruto.",
+          "dica": "Mineracao = importante exportacoes mas baixo valor agregado (bruto). Maldicao recursos: exporta barato, importa caro, nao industrializa. Royalties baixos, lucro privado, dano socializado. Comparar Noruega (petroleo) modelo vs Brasil."
+        }
+      ],
+      "questao": {
+        "enunciado": "O Brasil e um dos maiores produtores mundiais de minerio de ferro, com grandes reservas localizadas principalmente em Minas Gerais e Para. Apesar da importancia economica da atividade mineradora, o pais exporta predominantemente o minerio bruto, com baixo valor agregado, importando posteriormente produtos industrializados que utilizam o ferro como materia-prima.\n\nEsse modelo de exploracao mineral caracteriza:",
+        "alternativas": [
+          "A integracao vertical da cadeia produtiva, gerando maior valor agregado domestico.",
+          "O modelo extrativista que perpetua a dependencia e a baixa industrializacao.",
+          "A estrategia de preservacao ambiental pela reducao de atividades industriais poluentes.",
+          "O desenvolvimento tecnologico do setor siderurgico brasileiro de ponta.",
+          "A autonomia economica resultante da abundancia de recursos minerais."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "O modelo brasileiro de mineracao caracteriza o extrativismo classico: exporta-se o minerio bruto (commodities de baixo valor agregado) e importa-se produtos industrializados (alto valor). Isso perpetua a dependencia economica, concentra renda nas mineradoras transnacionais, gera poucos empregos qualificados e impede o desenvolvimento industrial. E o oposto da integracao vertical (A). Nao e estrategia ambiental (C), nao representa desenvolvimento tecnologico significativo (D) nem autonomia economica (E) - pelo contrario, mantem vulnerabilidade as oscilacoes de precos internacionais das commodities.",
+        "tags": ["mineracao", "extrativismo", "commodities", "valor-agregado"]
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Recursos Hidricos e Aquiferos",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Distribuicao Agua Brasil",
+          "conteudo": "Brasil: 12% agua doce superficial mundo, 53% America Sul. Distribuicao desigual: Amazonia 70% agua/5% populacao, Sudeste 6% agua/43% populacao. Principais bacias: Amazonica (maior vazao mundo, 132 mil m³/s), Tocantins-Araguaia, Sao Francisco, Parana, Paraguai. Usos: abastecimento (10%), agricultura/irrigacao (50%), industria (15%), animais (10%), outros. Problemas: poluicao, desperdicio (40% agua tratada vazamentos), conflitos usuarios, escassez localizada (NE semiarido, areas urbanas).",
+          "exemplo": "Bacia Amazonica: 6,1 milhoes km², 7 mil afluentes, vazao 20% rios mundo. Sao Francisco: 'Rio Unidade Nacional', 2.700 km nasce MG, atravessa seca NE, foz AL/SE, hidroeletricas (Sobradinho, Paulo Afonso, Xingo), transposicao controversa. Crise hidrica SP 2014-2015: reservatorios 5% capacidade, racionamento, causa desmatamento Amazonia (menos rios voadores). Aquifero Guarani: maior reserva subterranea Americas, 1,2 milhao km², 4 paises, 40 trilhoes litros.",
+          "dica": "Brasil rico agua mas distribuicao desigual: Amazonia muito, Sudeste/NE pouco. Agricultura maior consumidor (50%). Crise SP relacionada desmatamento Amazonia. Aquifero Guarani = estrategico."
+        },
+        {
+          "id": 2,
+          "titulo": "Aquiferos",
+          "conteudo": "Aquifero: formacao geologica permeavel armazena agua subterranea. Tipos: livre/freatico (superficie, recarrega chuvas, vulneravel poluicao), confinado/artesiano (entre camadas impermeaveis, pressao, protegido). Importancia: abastecimento (30% populacao mundial), reserva estrategica, qualidade superior agua superficial. Brasil: Guarani (1,2 milhao km², SP/PR/SC/MS + Uruguai/Argentina/Paraguai), Alter Chao (Amazonia, 86 mil km³, maior volume mundo), Urucuia (MG/BA/GO), Bauru.",
+          "exemplo": "Guarani: 840 km² Brasil (8 estados), 1.500 m profundidade, recarga 160 km³/ano, agua potavel direto (pocos artesianos), temperatura 50-85°C (geotermica). Abastece 15 milhoes pessoas. Ameacas: superexploracao (Ribeirao Preto SP 1.800 pocos, nivel baixa), poluicao (agrotoxicos, industrias, fossa), privatizacao. Alter Chao Amazonia: descoberto 2010, volume 3x Guarani, potencial abastecimento. Sao Paulo: 70% abastecimento subterraneo (Guarani, Bauru, Tubarao).",
+          "dica": "Aquifero = agua subterranea em rocha porosa. Guarani = maior AREA, Alter Chao maior VOLUME. Livre = superficie vulneravel, confinado = profundo protegido. Ameacas: superexploracao, poluicao, privatizacao."
+        },
+        {
+          "id": 3,
+          "titulo": "Poluicao Hidrica",
+          "conteudo": "Fontes poluicao: esgoto domestico (60% sem tratamento Brasil), industrias (metais pesados, quimicos), agricultura (agrotoxicos, fertilizantes, nitrato/fosfato causam eutrofizacao), mineracao (rejeitos, metais), lixo solido (plasticos, microplasticos), petroleo (derramamentos). Consequencias: doenças (colera, leptospirose, hepatite), morte fauna/flora, eutrofizacao (algas bloqueiam luz/oxigenio), contaminacao lencois freaticos (irreversivel), custos tratamento agua. Despoluicao: ETE (estacoes tratamento esgoto), ETA (tratamento agua), legislacao (classes agua, limites poluentes).",
+          "exemplo": "Rio Tiete SP: trecho Salto-Itu classe 4 (pior), espuma toxica, coliformes 1 milhao vezes limite. Custo despoluicao R$ 3 bilhoes, parcial sucesso. Baia Guanabara RJ: esgoto + lixo + petroleo, promessa Olimpiada 2016 nao cumprida. Eutrofizacao Lagoa Rodrigo Freitas: algas verdes, peixes morrem asfixia. Microplastico: detectado 100% amostras rios brasileiros, cadeia alimentar. Paraiba Sul: abastece 15 milhoes (RJ/SP), poluido industrias/esgoto, tratamento caro.",
+          "dica": "Esgoto = maior poluente Brasil (60% nao tratado). Agrotoxicos + fertilizantes = eutrofizacao (algas matam peixes). Poluicao agua subterranea irreversivel (difusao). ETE trata esgoto antes lancar rios."
+        },
+        {
+          "id": 4,
+          "titulo": "Transposicao Sao Francisco",
+          "conteudo": "Transposicao Rio Sao Francisco: obras derivar agua (26 m³/s, 1,4% vazao) para abastecimento/irrigacao semiarido NE (rios temporarios bacias Nordeste Setentrional/Leste). Eixo Norte (400 km, Ceara/Paraiba/RN) e Leste (220 km, Pernambuco/Paraiba). Objetivo oficial: beneficiar 12 milhoes pessoas. Inicio 2007, inauguracao parcial 2017-2020. Custo: R$ 12 bilhoes (previsto R$ 4,5 bi). Controversias: beneficia agronegocio > populacao, impactos ambientais rio, desvia foco solucoes locais (cisternas, adutoras, dessalinizacao).",
+          "exemplo": "Defensores: abastecimento cidades (Campina Grande PB, regiao metropolitana Fortaleza), seguranca hidrica, desenvolvimento regiao. Criticos: 70% agua irrigacao agronegocio (camarao, fruticultura exportacao), populacao rural precisa cisternas (mais barato, 1 milhao construidas ASA), vazao Sao Francisco ja reduzida (hidroeletricas, irrigacao), impactos comunidades ribeirinhas, custo alto. Alternativas: reuso agua, dessalinizacao, gestao demanda, adutoras locais custam menos.",
+          "dica": "Transposicao = transferir agua Sao Francisco para rios temporarios NE. Controversa: custo alto, beneficia agronegocio > populacao, impactos ambientais. Alternativas: cisternas, reuso, adutoras locais."
+        },
+        {
+          "id": 5,
+          "titulo": "Gestao Recursos Hidricos",
+          "conteudo": "Gestao agua Brasil: Lei 9.433/1997 Politica Nacional Recursos Hidricos. Principios: dominio publico, recurso limitado (valor economico), prioridade abastecimento humano/animal, usos multiplos, bacia hidrografica unidade gestao, gestao descentralizada/participativa. Instrumentos: Planos Bacia, enquadramento rios (classes qualidade), outorga uso (autorizacao captar), cobranca uso (quem usa paga), Sistema Informacoes. Orgaos: ANA (federal), comites bacia (participativos), conselhos estaduais.",
+          "exemplo": "Cobranca uso agua: bacias PCJ (Piracicaba/Capivari/Jundiai), Paraiba Sul, Sao Francisco, arrecadacao financia despoluicao/reflorestamento. Comites Bacia: representantes governo/usuarios/sociedade decidem prioridades, mediam conflitos. Outorga: irrigante precisa autorizacao captar rio, limites vazao. Enquadramento: classe 1 (mais limpa, contato primario), classe 4 (pior, so navegacao). Conflito bacia PCJ: disputa agua SP/MG/RJ, industria vs abastecimento, comite negocia.",
+          "dica": "Lei 9.433/97: agua publica, limitada, valor economico. Bacia hidrografica = unidade gestao. Instrumentos: outorga (autorizacao), cobranca (paga uso), comites (participacao). Cobranca financia recuperacao."
+        }
+      ],
+      "questao": {
+        "enunciado": "A Lei 9.433/1997 instituiu a Politica Nacional de Recursos Hidricos no Brasil, estabelecendo principios e instrumentos para a gestao das aguas. Entre as inovacoes trazidas pela lei, destaca-se a adocao da bacia hidrografica como unidade de planejamento e gestao.\n\nA adocao da bacia hidrografica como unidade de gestao e vantajosa porque:",
+        "alternativas": [
+          "Coincide com os limites politico-administrativos dos estados, facilitando a fiscalizacao.",
+          "Permite o gerenciamento integrado considerando todos os usos da agua num mesmo sistema hidrico.",
+          "Concentra o poder decisorio nas esferas federais, evitando conflitos entre municipios.",
+          "Prioriza o abastecimento industrial em detrimento dos demais usos da agua.",
+          "Elimina a necessidade de participacao da sociedade civil nas decisoes sobre agua."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "A bacia hidrografica e a unidade territorial ideal para gestao de recursos hidricos porque representa um sistema natural integrado, onde todos os usos da agua (abastecimento, agricultura, industria, energia) estao interconectados. Gerenciar por bacia permite visao sistemica: o que se faz a montante afeta a jusante, possibilitando planejamento integrado, mediacao de conflitos entre usuarios e solucoes coordenadas. As alternativas A esta incorreta (bacias nao coincidem com estados, frequentemente sao interestaduais), C e E contradizem o principio de gestao descentralizada e participativa, e D nao representa prioridade da lei (abastecimento humano e prioridade).",
+        "tags": ["recursos-hidricos", "gestao-agua", "bacia-hidrografica", "lei-9433"]
+      }
+    }
+  ]
+}

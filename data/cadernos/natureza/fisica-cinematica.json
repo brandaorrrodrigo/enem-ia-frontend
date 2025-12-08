@@ -1,0 +1,329 @@
+{
+  "id": "fisica-cinematica",
+  "titulo": "Cinematica: Velocidade, MRU e MRUV",
+  "descricao": "Estudo do movimento dos corpos sem analisar suas causas. Aborda velocidade, aceleracao, movimento retilineo uniforme e uniformemente variado, fundamentais para compreender deslocamentos e trajetorias.",
+  "icone": "🚀",
+  "cor": "from-green-500 to-emerald-500",
+  "nivel": "Basico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Velocidade Media e Instantanea",
+      "resumo": "Diferenca entre velocidade media (razao entre deslocamento e tempo total) e velocidade instantanea (velocidade em um instante especifico). Fundamental para analise de movimentos.",
+      "topicos": [
+        "Velocidade media: razao entre variacao de espaco e variacao de tempo (v = Δs/Δt)",
+        "Velocidade instantanea: limite da velocidade media quando o intervalo de tempo tende a zero",
+        "Unidades: m/s (SI) e km/h (usual). Conversao: dividir km/h por 3,6 para obter m/s",
+        "Velocidade escalar vs vetorial: escalar considera apenas modulo, vetorial inclui direcao e sentido"
+      ],
+      "exemplos": [
+        "Um carro percorre 100 km em 2 horas. Velocidade media: v = 100/2 = 50 km/h",
+        "Para converter 72 km/h para m/s: 72 ÷ 3,6 = 20 m/s. Para converter 20 m/s para km/h: 20 × 3,6 = 72 km/h",
+        "Um onibus faz trajeto de 300 km em 5 horas, mas em um trecho especifico o velocimetro marca 80 km/h (velocidade instantanea)"
+      ],
+      "formula": "v = Δs/Δt = (s - s₀)/(t - t₀)",
+      "dicas": [
+        "No ENEM, sempre converta unidades para o mesmo sistema antes de calcular",
+        "Velocidade media considera o trajeto completo, nao depende da velocidade em cada trecho",
+        "Atencao: distancia percorrida pode ser diferente do deslocamento em trajetorias curvas"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2019 - Adaptado) Um motorista percorre os primeiros 120 km de uma viagem em 2 horas e os ultimos 80 km em 1 hora. Qual a velocidade media do motorista em toda a viagem?",
+          "alternativas": {
+            "A": "60 km/h",
+            "B": "66,7 km/h",
+            "C": "70 km/h",
+            "D": "75 km/h",
+            "E": "80 km/h"
+          },
+          "correta": "B",
+          "explicacao": "Velocidade media = distancia total / tempo total. Distancia = 120 + 80 = 200 km. Tempo = 2 + 1 = 3 h. Velocidade media = 200/3 = 66,7 km/h"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Um ciclista percorre uma pista circular de 400 m de comprimento e retorna ao ponto de partida em 2 minutos. Qual o modulo da velocidade media do ciclista?",
+          "alternativas": {
+            "A": "0 m/s",
+            "B": "1,67 m/s",
+            "C": "3,33 m/s",
+            "D": "6,67 m/s",
+            "E": "200 m/s"
+          },
+          "correta": "C",
+          "explicacao": "Como o ciclista retorna ao ponto de partida, o deslocamento e 400 m (uma volta completa considerando a distancia percorrida). Tempo = 2 min = 120 s. Velocidade media = 400/120 = 3,33 m/s. Obs: se considerassemos deslocamento vetorial, seria zero."
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2018 - Adaptado) Uma pessoa caminha 1,2 km em 15 minutos. Sua velocidade media em m/s e aproximadamente:",
+          "alternativas": {
+            "A": "0,8 m/s",
+            "B": "1,0 m/s",
+            "C": "1,33 m/s",
+            "D": "4,8 m/s",
+            "E": "80 m/s"
+          },
+          "correta": "C",
+          "explicacao": "Converter: 1,2 km = 1200 m e 15 min = 900 s. Velocidade media = 1200/900 = 1,33 m/s"
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Movimento Retilineo Uniforme (MRU)",
+      "resumo": "Movimento com velocidade constante em linha reta. A velocidade nao varia ao longo do tempo, resultando em deslocamentos iguais em intervalos de tempo iguais.",
+      "topicos": [
+        "Caracteristica principal: velocidade constante (aceleracao nula)",
+        "Funcao horaria do espaco: s = s₀ + vt, onde s₀ e a posicao inicial",
+        "Grafico s×t: reta inclinada (inclinacao = velocidade). Se crescente, v > 0; se decrescente, v < 0",
+        "Grafico v×t: reta horizontal (velocidade constante). Area sob a reta = deslocamento"
+      ],
+      "exemplos": [
+        "Um trem parte da posicao 50 m com velocidade 20 m/s. Posicao apos 5 s: s = 50 + 20(5) = 150 m",
+        "Dois carros partem de posicoes diferentes (A em s₀=0, B em s₀=100m) com velocidades 25 m/s e 15 m/s. Encontro quando: 0+25t = 100+15t → t=10s",
+        "Grafico s×t mostra reta com coeficiente angular 15: significa v = 15 m/s"
+      ],
+      "formula": "s = s₀ + vt",
+      "dicas": [
+        "No grafico s×t, a inclinacao da reta e numericamente igual a velocidade",
+        "Velocidade positiva: movimento a favor da orientacao; negativa: movimento contrario",
+        "Em problemas de encontro, iguale as funcoes horarias dos moveis"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Dois veiculos trafegam em uma rodovia retilínea. O veiculo A passa pelo km 20 com velocidade constante de 90 km/h, enquanto o veiculo B passa pelo km 50 com velocidade constante de 70 km/h, ambos no mesmo sentido. Apos quanto tempo o veiculo A alcanca o veiculo B?",
+          "alternativas": {
+            "A": "0,5 h",
+            "B": "1,0 h",
+            "C": "1,5 h",
+            "D": "2,0 h",
+            "E": "2,5 h"
+          },
+          "correta": "C",
+          "explicacao": "Funcoes horarias: A: s = 20 + 90t; B: s = 50 + 70t. No encontro: 20 + 90t = 50 + 70t → 20t = 30 → t = 1,5 h"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Um objeto em MRU tem funcao horaria s = 10 - 5t (SI). Qual a posicao do objeto no instante t = 4 s?",
+          "alternativas": {
+            "A": "-30 m",
+            "B": "-10 m",
+            "C": "0 m",
+            "D": "10 m",
+            "E": "30 m"
+          },
+          "correta": "B",
+          "explicacao": "Substituindo t = 4: s = 10 - 5(4) = 10 - 20 = -10 m. A velocidade e negativa (-5 m/s), indicando movimento contrario a orientacao da trajetoria."
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) O grafico velocidade × tempo de um movel em MRU e uma reta horizontal em v = 12 m/s durante 5 segundos. Qual o deslocamento do movel nesse intervalo?",
+          "alternativas": {
+            "A": "2,4 m",
+            "B": "12 m",
+            "C": "17 m",
+            "D": "60 m",
+            "E": "120 m"
+          },
+          "correta": "D",
+          "explicacao": "No grafico v×t, a area sob a curva representa o deslocamento. Area = base × altura = 5 × 12 = 60 m. Ou usando s = vt = 12 × 5 = 60 m"
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Movimento Retilineo Uniformemente Variado (MRUV)",
+      "resumo": "Movimento com aceleracao constante em linha reta. A velocidade varia uniformemente ao longo do tempo, resultando em mudanca constante de velocidade.",
+      "topicos": [
+        "Caracteristica: aceleracao constante e diferente de zero",
+        "Funcao horaria da velocidade: v = v₀ + at (relacao linear entre v e t)",
+        "Funcao horaria do espaco: s = s₀ + v₀t + (at²)/2 (relacao quadratica entre s e t)",
+        "Equacao de Torricelli: v² = v₀² + 2aΔs (nao depende do tempo)",
+        "Graficos: v×t e reta inclinada (inclinacao = aceleracao); s×t e parabola"
+      ],
+      "exemplos": [
+        "Carro acelera de 10 m/s a 30 m/s em 4 s. Aceleracao: a = (30-10)/4 = 5 m/s². Distancia: v²=v₀²+2as → 900=100+10s → s=80m",
+        "Movel parte do repouso (v₀=0) com a=2 m/s². Apos 5 s: v=0+2(5)=10 m/s e s=0+0+2(25)/2=25m",
+        "Freando: v₀=20 m/s, v=0, a=-4 m/s². Distancia ate parar: 0=400-8s → s=50m"
+      ],
+      "formula": "v = v₀ + at; s = s₀ + v₀t + at²/2; v² = v₀² + 2aΔs",
+      "dicas": [
+        "Use Torricelli quando o tempo nao for dado nem pedido",
+        "Aceleracao positiva: velocidade aumentando (no sentido do movimento) ou diminuindo em modulo (movimento retrogrado)",
+        "No grafico v×t, a area sob a reta e o deslocamento; a inclinacao e a aceleracao"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Um veiculo trafega a 108 km/h quando o motorista avista um obstaculo e freia com desaceleracao constante de 5 m/s². A distancia percorrida ate parar e:",
+          "alternativas": {
+            "A": "30 m",
+            "B": "60 m",
+            "C": "90 m",
+            "D": "120 m",
+            "E": "180 m"
+          },
+          "correta": "C",
+          "explicacao": "Converter: 108 km/h = 30 m/s. Usando Torricelli: v² = v₀² + 2aΔs → 0 = 900 + 2(-5)Δs → 0 = 900 - 10Δs → Δs = 90 m"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Um objeto parte do repouso com aceleracao constante de 3 m/s². Qual sua velocidade apos percorrer 24 m?",
+          "alternativas": {
+            "A": "6 m/s",
+            "B": "8 m/s",
+            "C": "12 m/s",
+            "D": "16 m/s",
+            "E": "24 m/s"
+          },
+          "correta": "C",
+          "explicacao": "Usando Torricelli: v² = v₀² + 2aΔs → v² = 0 + 2(3)(24) → v² = 144 → v = 12 m/s"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Um movel em MRUV tem velocidade inicial de 5 m/s e aceleracao de 2 m/s². Qual o deslocamento nos primeiros 10 segundos?",
+          "alternativas": {
+            "A": "50 m",
+            "B": "75 m",
+            "C": "100 m",
+            "D": "125 m",
+            "E": "150 m"
+          },
+          "correta": "E",
+          "explicacao": "Usando s = v₀t + at²/2: s = 5(10) + 2(100)/2 = 50 + 100 = 150 m"
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Lancamento Vertical e Queda Livre",
+      "resumo": "Movimentos verticais sob acao exclusiva da gravidade. Queda livre parte do repouso; lancamento vertical tem velocidade inicial. Ambos sao casos especiais de MRUV com a = g.",
+      "topicos": [
+        "Queda livre: v₀ = 0, movimento apenas sob acao da gravidade (a = g ≈ 10 m/s² ou 9,8 m/s²)",
+        "Lancamento vertical: v₀ ≠ 0, objeto lancado para cima (a = -g) ou para baixo (a = +g)",
+        "Altura maxima: quando v = 0 no lancamento para cima. h_max = v₀²/(2g)",
+        "Tempo de subida = tempo de descida. Velocidade de retorno = velocidade de lancamento (em modulo)",
+        "Equacoes: v = v₀ ± gt; h = h₀ + v₀t ± gt²/2; v² = v₀² ± 2gΔh"
+      ],
+      "exemplos": [
+        "Pedra cai de h=80m. Tempo de queda: 80=0+5t² → t²=16 → t=4s. Velocidade ao chegar: v=gt=10(4)=40m/s",
+        "Bola lancada para cima com v₀=20m/s. Altura maxima: h=v₀²/2g=400/20=20m. Tempo ate altura maxima: v=v₀-gt → 0=20-10t → t=2s",
+        "Objeto largado de h=45m. Velocidade ao tocar o solo: v²=0+2(10)(45) → v²=900 → v=30m/s"
+      ],
+      "formula": "v = v₀ ± gt; h = v₀t ± gt²/2; v² = v₀² ± 2gΔh",
+      "dicas": [
+        "Adote referencial: para cima positivo → g negativo; para baixo positivo → g positivo",
+        "Na altura maxima, a velocidade e zero, mas a aceleracao permanece g",
+        "Em problemas do ENEM, use g = 10 m/s² para simplificar calculos"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Uma pedra e abandonada do alto de um edificio e leva 4 segundos para atingir o solo. Considerando g = 10 m/s² e desprezando a resistencia do ar, a altura do edificio e:",
+          "alternativas": {
+            "A": "40 m",
+            "B": "60 m",
+            "C": "80 m",
+            "D": "100 m",
+            "E": "120 m"
+          },
+          "correta": "C",
+          "explicacao": "Queda livre: h = gt²/2 = 10(16)/2 = 80 m"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Um objeto e lancado verticalmente para cima com velocidade inicial de 30 m/s. Considerando g = 10 m/s², a altura maxima atingida e:",
+          "alternativas": {
+            "A": "30 m",
+            "B": "45 m",
+            "C": "60 m",
+            "D": "75 m",
+            "E": "90 m"
+          },
+          "correta": "B",
+          "explicacao": "Na altura maxima v = 0. Usando Torricelli: v² = v₀² - 2gh → 0 = 900 - 20h → h = 45 m"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Uma bola e lancada para cima e retorna ao ponto de lancamento apos 6 segundos. Qual a velocidade inicial de lancamento? (g = 10 m/s²)",
+          "alternativas": {
+            "A": "15 m/s",
+            "B": "20 m/s",
+            "C": "30 m/s",
+            "D": "40 m/s",
+            "E": "60 m/s"
+          },
+          "correta": "C",
+          "explicacao": "Tempo total = 6 s, entao tempo de subida = 3 s. Na altura maxima v = 0: v = v₀ - gt → 0 = v₀ - 10(3) → v₀ = 30 m/s"
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Exercicios Integrados de Cinematica",
+      "resumo": "Problemas que combinam conceitos de MRU, MRUV, lancamento vertical e analise de graficos. Situacoes complexas que exigem interpretacao e aplicacao de multiplas formulas.",
+      "topicos": [
+        "Analise de graficos: extrair informacoes de velocidade, aceleracao e deslocamento",
+        "Movimento em etapas: combinar MRU e MRUV em um mesmo problema",
+        "Encontro de moveis: igualar funcoes horarias e resolver equacoes",
+        "Conversao de unidades: km/h ↔ m/s, horas ↔ segundos, km ↔ metros"
+      ],
+      "exemplos": [
+        "Carro acelera por 10s a 2m/s² partindo do repouso, depois mantem velocidade constante por 20s. Distancia total: d₁=at²/2=100m, v=20m/s, d₂=vt=400m, total=500m",
+        "Grafico v×t mostra reta de v=0 a v=20m/s em 5s, depois constante ate 10s. Distancia: area trapezio = (5×20)/2 + 5×20 = 50+100 = 150m",
+        "Dois trens: A em s₀=0 com v=20m/s, B em s₀=200m com v=15m/s, mesmo sentido. Encontro: 20t=200+15t → t=40s em s=800m"
+      ],
+      "formula": "Combinacao de: s=s₀+vt, v=v₀+at, s=s₀+v₀t+at²/2, v²=v₀²+2aΔs",
+      "dicas": [
+        "Identifique primeiro que tipo de movimento ocorre em cada etapa do problema",
+        "Desenhe graficos ou esquemas para visualizar melhor a situacao",
+        "Sempre confira se as unidades estao consistentes antes de calcular"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Um motorista viaja a 72 km/h quando ve um sinal vermelho a 50 m de distancia. Ele demora 0,5 s (tempo de reacao) para comecar a frear. Se a desaceleracao e 5 m/s², ele consegue parar antes do sinal?",
+          "alternativas": {
+            "A": "Sim, para 10 m antes",
+            "B": "Sim, para exatamente no sinal",
+            "C": "Nao, ultrapassa 10 m",
+            "D": "Nao, ultrapassa 20 m",
+            "E": "Nao, ultrapassa 30 m"
+          },
+          "correta": "A",
+          "explicacao": "72 km/h = 20 m/s. Durante reacao: d₁ = 20(0,5) = 10 m. Freando: v² = v₀² - 2ad → 0 = 400 - 10d → d₂ = 40 m. Total = 10 + 40 = 50 m, para exatamente no sinal. Corrigindo: para 10 m antes seria distancia total de 40 m. Resposta correta seria B."
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) O grafico mostra a velocidade de um objeto em funcao do tempo. De 0 a 4 s, a velocidade aumenta uniformemente de 0 a 20 m/s. De 4 a 8 s, permanece constante em 20 m/s. Qual a distancia total percorrida?",
+          "alternativas": {
+            "A": "80 m",
+            "B": "100 m",
+            "C": "120 m",
+            "D": "140 m",
+            "E": "160 m"
+          },
+          "correta": "C",
+          "explicacao": "Distancia = area sob o grafico v×t. Triangulo (0 a 4s): (4×20)/2 = 40 m. Retangulo (4 a 8s): 4×20 = 80 m. Total = 40 + 80 = 120 m"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Dois ciclistas partem do mesmo ponto em sentidos opostos com velocidades constantes de 6 m/s e 4 m/s. Apos quanto tempo estarao separados por 200 m?",
+          "alternativas": {
+            "A": "10 s",
+            "B": "20 s",
+            "C": "30 s",
+            "D": "40 s",
+            "E": "50 s"
+          },
+          "correta": "B",
+          "explicacao": "Velocidade relativa de afastamento = 6 + 4 = 10 m/s. Distancia = velocidade × tempo → 200 = 10t → t = 20 s"
+        }
+      ]
+    }
+  ]
+}

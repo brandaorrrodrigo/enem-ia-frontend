@@ -1,0 +1,282 @@
+{
+  "id": "geografia-globalizacao",
+  "titulo": "Globalizacao",
+  "descricao": "Fases, caracteristicas e desigualdades globais",
+  "icone": "🌐",
+  "cor": "from-purple-500 to-pink-600",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Fases da Globalizacao",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Grandes Navegacoes: Primeira Globalizacao",
+          "conteudo": "Primeira globalizacao (seculos XV-XVIII): Grandes Navegacoes europeias conectaram continentes. Causas: busca especiarias Asia (contornar monopolio arabe-veneziano), ouro/prata, expansao fe crista, aventura. Tecnologias: bussola, astrolabio, caravela, portulanos. Consequencias: colonizacao Americas/Africa/Asia, Comercio Triangular (escravos Africa-Americas, acucar/ouro-Europa, manufaturas-Africa), troca colombiana (especies, doencas dizimaram indigenas), acumulacao primitiva capital Europa, genocidio indigena (90% mortos doencas/violencia).",
+          "exemplo": "Vasco Gama (1498): rota maritima India contornou Africa, especiarias direto. Cabral (1500): Brasil, pau-brasil, depois acucar (plantation escravista). Comercio Triangular: 12 milhoes africanos escravizados Americas (400 anos), enriqueceu Liverpool, Bristol, Bordeaux. Prata Potosi (Bolivia): financiou Espanha, inflacao Europa, comercio China (prata por seda/porcelana). Troca colombiana: batata/milho/tomate para Europa, trigo/cafe/cana para Americas, varíola dizimou 90% indigenas (imunidade zero).",
+          "dica": "Primeira globalizacao = Navegacoes, conectou continentes. Motivacao: especiarias, ouro, fe. Consequencia: colonizacao, escravidao, genocidio indigena, acumulacao capital Europa. ENEM cobra escravidao/colonizacao."
+        },
+        {
+          "id": 2,
+          "titulo": "Revolucao Industrial: Segunda Globalizacao",
+          "conteudo": "Segunda globalizacao (seculo XIX-inicio XX): Revolucao Industrial (maquina vapor 1760s UK, depois teares mecanicos, siderurgia, ferrovias, telegrafo). Capitalismo industrial, producao massa, busca materias-primas + mercados consumidores = Imperialismo (partilha Africa/Asia). Inovacoes transporte/comunicacao: navio vapor (atravessa oceanos rapido), ferrovias (integra territorios), telegrafo (informacao instantanea), Suez/Panama (encurtam rotas). Neocolonialismo: UK, Franca, Alemanha, Italia, Belgica, Japao dominam Africa/Asia (Conferencia Berlim 1884-85 dividiu Africa).",
+          "exemplo": "Maquina vapor Watt (1769): industria textil UK, producao 50x manual. Ferrovias: UK 1825, 1860 ja 15 mil km, integrou mercado nacional, barateou transporte. Telegrafo: 1840s, cabos submarinos Atlantic 1866, informacao Londres-NY instantanea (antes 10 dias navio). Imperialismo: UK controlava 25% territorio mundial (India 'joia coroa', Africa do Cabo ao Cairo), Franca 10 milhoes km² Africa, Belgica explorou Congo (10 milhoes mortos), Japao anexou Coreia/Taiwan. Partilha Africa: 90% controlado europeus 1914.",
+          "dica": "Segunda globalizacao = Revolucao Industrial + Imperialismo. Tecnologias transporte/comunicacao aceleraram trocas. Neocolonialismo partilhou Africa/Asia (Berlim 1884). Extracao materias-primas colonias, manufaturas metropoles."
+        },
+        {
+          "id": 3,
+          "titulo": "Pos-Guerra: Globalizacao Financeira",
+          "conteudo": "Terceira globalizacao (pos-1945, acelerada 1980s-): pos-II Guerra instituiu ordem liberal (Bretton Woods 1944 criou FMI, Banco Mundial, depois GATT/OMC). Guerra Fria freou (bipolaridade), fim URSS 1991 acelerou. Neoliberalismo (Reagan/Thatcher 1980s): desregulamentacao financeira, privatizacoes, livre comercio, reducao Estado. Globalizacao financeira: capitais circulam mundo instantaneamente (tecnologia informatica), investimentos diretos estrangeiros, especulacao. Revolucao tecnocientifica: informatica, internet (1990s), containerizacao (transporte barato).",
+          "exemplo": "Bretton Woods: dolar moeda reserva (lastro ouro ate 1971 Nixon), FMI empresta paises deficit, Banco Mundial financia desenvolvimento. Consenso Washington (1989): FMI/BM impuseram paises endividados (America Latina, Africa, Leste Europeu): privatizar estatais, abrir mercado, desregulamentar, cortar gastos sociais, resultados desastrosos (pobreza aumentou). Globalizacao financeira: US$ 6 trilhoes circulam diariamente (2020), 95% especulacao (nao comercio real). Containerizacao (1960s): custo transporte caiu 90%, viabilizou cadeias globais.",
+          "dica": "Terceira globalizacao = financeira/tecnologica, acelerada pos-1991. Neoliberalismo (Reagan/Thatcher): mercados livres, privatizacoes. FMI/BM impuseram ajustes (Consenso Washington). Tecnologia (informatica, internet, container) chave."
+        },
+        {
+          "id": 4,
+          "titulo": "Revolucao Informacional",
+          "conteudo": "Revolucao tecnocientifica (1970s-): microeletronica (transistor, chip, computador pessoal), telecomunicacoes (fibra otica, satelite, celular), internet (ARPANET 1969 militar, WWW 1991 comercial), biotecnologia (genetica, transgenicos). Impactos: compressao espaco-tempo (instantaneidade), desmaterializacao economia (servicos, informacao), trabalho flexivel/precario (uberizacao, home office), vigilancia digital, desinformacao, monopolios Big Tech (Google, Apple, Amazon, Facebook, Microsoft). Divisao digital: acesso desigual tecnologia Norte-Sul, ricos-pobres.",
+          "exemplo": "Internet: 5 bilhoes usuarios (63% mundial), concentrada paises ricos (90% Europa conectada, 20% Africa). Big Tech: 5 valem US$ 9 trilhoes (2021), monopolios (Google 92% buscas, Facebook 3 bilhoes usuarios). Plataformas: Uber, Airbnb, iFood precarizam trabalho (sem direitos, algoritmos controlam). Desinformacao: fake news elegem presidentes (Trump, Bolsonaro), genocidio Rohingyas (Facebook espalhou odio Mianmar). Vigilancia: Snowden revelou NSA espiona tudo (2013), China credito social (distopia digital). Divisao digital: 50% mundial ainda offline.",
+          "dica": "Revolucao informacional = microeletronica, internet, biotecnologia. Compressao espaco-tempo, economia desmaterializada. Big Tech monopolios. Trabalho uberizado precario. Divisao digital Norte-Sul. ENEM cobra desigualdade acesso."
+        },
+        {
+          "id": 5,
+          "titulo": "Globalizacao Cultural",
+          "conteudo": "Globalizacao cultural: difusao valores, ideias, estilos vida, produtos culturais escala global. Agentes: midia (TV, cinema, internet), corporacoes (marcas globais), migracao. Americanizacao/ocidentalizacao: Hollywood, fast-food (McDonald's, Coca-Cola), ingles lingua franca, musica pop, moda. Hibridizacao cultural: misturas (sushi California, Bollywood, Kpop). Resistencias: fundamentalismos religiosos, nacionalismos, politicas protecao idioma/cultura (Franca cotas cinema, Brasil cotas musica radio). Criticas: homogeneizacao destrói diversidade, imperialismo cultural.",
+          "exemplo": "Hollywood: 80% filmes exibidos mundo, valores americanos (individualismo, consumismo, heroismo belico). McDonald's: 40 mil restaurantes 100 paises, simbolo globalizacao (McWorld vs Jihad Barber). Ingles: 1,5 bilhao falam, lingua ciencia/negocios/internet, ameaca idiomas minoritarios (estima 50% 7 mil idiomas morrem seculo XXI). Kpop: BTS, Blackpink vendem milhoes globalmente, soft power Coreia Sul. Fundamentalismo: Taliba proibiu musica/TV, ISIS destruiu patrimonios, reacao globalizacao percebida ocidentalizacao.",
+          "dica": "Globalizacao cultural = difusao valores/produtos ocidentais (americanizacao). Hollywood, fast-food, ingles dominam. Hibridizacao (misturas) vs homogeneizacao (padronizacao). Resistencias: fundamentalismos, protecao cultural."
+        }
+      ],
+      "questao": {
+        "enunciado": "A globalizacao contemporanea, intensificada a partir da decada de 1990, caracteriza-se nao apenas pela integracao economica entre os paises, mas tambem pela revolucao nas tecnologias de comunicacao e informacao. Essas transformacoes tecnologicas tiveram impactos profundos na organizacao do trabalho, nas relacoes sociais e na circulacao de capitais.\n\nSao caracteristicas da globalizacao contemporanea:\n\nI. A compressao do espaco-tempo proporcionada pela internet e telecomunicacoes.\nII. A consolidacao de monopolios tecnologicos por grandes corporacoes digitais.\nIII. A democratizacao total do acesso a tecnologia, eliminando desigualdades.\nIV. A precarizacao do trabalho atraves de plataformas digitais e uberizacao.\n\nEstao corretas:",
+        "alternativas": [
+          "Apenas I e II.",
+          "Apenas I, II e IV.",
+          "Apenas II, III e IV.",
+          "Apenas I e III.",
+          "I, II, III e IV."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "As afirmativas I, II e IV estao corretas: a internet e telecomunicacoes permitiram comunicacao/transacoes instantaneas globalmente (I); grandes corporacoes como Google, Amazon, Facebook, Apple e Microsoft formaram oligopolios tecnologicos (II); plataformas digitais como Uber, iFood e Airbnb precarizam trabalho sem garantias trabalhistas (IV). A afirmativa III esta INCORRETA porque persiste grande desigualdade digital - cerca de 3 bilhoes de pessoas ainda nao tem acesso a internet, concentradas em paises pobres e areas rurais, caracterizando a 'divisao digital' global.",
+        "tags": ["globalizacao", "tecnologia", "divisao-digital", "uberizacao"]
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Empresas Transnacionais",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Corporacoes Multinacionais",
+          "conteudo": "Empresas transnacionais/multinacionais: atuam multiplos paises, matriz pais origem, filiais/subsidiarias mundo. Caracteristicas: producao global (fabricam diferentes paises), terceirizacao (subcontrata), fusoes/aquisicoes (concentracao), lobby politico, evasao fiscal (paraisos fiscais). Tipos: extrativas (petroleo, mineracao), industriais (automotivas, eletronicos), servicos (financeiras, varejo, tecnologia). Poder: 100 maiores faturam mais que 180 paises, influenciam politicas nacionais. Estrategias: busca mao-obra barata, mercados consumidores, recursos naturais, incentivos fiscais.",
+          "exemplo": "Walmart: maior receita US$ 611 bilhoes (2023), 2,1 milhoes empregados, 10.500 lojas 19 paises. Apple: capitalizacao US$ 3 trilhoes, produz China (Foxconn paga baixo, suicidios), lucros EUA (evasao fiscal Irlanda). Shell, Exxon, Chevron: petroleo, receitas >PIB maioria paises. Nestle: 2 mil marcas, agua engarrafada controversa (privatiza fontes). Amazon: Jeff Bezos mais rico mundo, trabalhadores precarizados (metas impossíveis, sem pausas). Big Tech: Google, Amazon, Facebook, Apple, Microsoft somam US$ 9 trilhoes.",
+          "dica": "Transnacionais = atuam globalmente, producao fragmentada. Poder economico > muitos paises. Buscam: mao-obra barata, incentivos fiscais, mercados. Evasao fiscal paraisos (Bahamas, Cayman). ENEM cobra exploracao trabalho."
+        },
+        {
+          "id": 2,
+          "titulo": "Divisao Internacional Trabalho",
+          "conteudo": "Divisao Internacional Trabalho (DIT): especializacao paises producao global. DIT Classica (ate 1970s): paises centrais (desenvolvidos) produzem manufaturas alto valor, perifericos (subdesenvolvidos) exportam materias-primas/commodities (deterioracao termos troca: commodities barateiam, manufaturas encarecem). Nova DIT (1970s-): paises perifericos industrializam (maquiladoras, zonas francas), mas producao baixo valor (montagem), tecnologia/decisoes/lucros ficam centrais. DIT Atual: economias conhecimento (inovacao, patentes centrais) vs producao material (perifericos).",
+          "exemplo": "DIT Classica: Brasil cafe/borracha, importava tecidos UK. Deterioracao termos troca: 1950 1 ton cafe comprava 10 ton fertilizante, 2000 compra 2 ton (Prebisch-Singer). Nova DIT: Mexico maquiladoras fronteira EUA (montam eletronicos GM, Ford), salarios 1/10 EUA, lucros corporacoes americanas. China 'fabrica mundo': monta iPhone (recebe US$ 10 de US$ 800 preco final, Apple fica US$ 400). Bangladesh texteis: salarios US$ 100/mes, acidentes (Rana Plaza 2013, 1.100 mortos). Patentes: 80% registradas EUA/Europa/Japao/Coreia.",
+          "dica": "DIT = especializacao produtiva desigual. Classica: centro manufatura, periferia commodities. Nova: periferia produz mas baixo valor, centro lucros/tecnologia. Deterioracao termos troca explora periferia."
+        },
+        {
+          "id": 3,
+          "titulo": "Cadeias Globais de Valor",
+          "conteudo": "Cadeia Global Valor: producao fragmentada multiplos paises, cada um etapa (design, componentes, montagem, marketing, vendas). Coordenacao transnacional (ex: iPhone projetado California, chips Taiwan/Coreia, montagem China, vendas global). Vantagens corporacoes: custos minimos (produz onde mais barato), flexibilidade (muda fornecedor), escala global. Desvantagens trabalhadores: precarizacao (corrida fundo), paises: baixa agregacao valor (montagem gera pouco), ambiente: poluicao deslocada Sul. Reshoring/nearshoring: pos-pandemia/guerra, relocalizacao producao (seguranca cadeias).",
+          "exemplo": "iPhone: Apple projeta California (design, software), TSMC Taiwan fabrica chip A17 (alta tecnologia), Samsung Coreia tela OLED, Foxconn China monta (baixo valor agregado, trabalhadores dormem fabrica), vende global, lucro 40% fica Apple. Nike: design Oregon EUA, fabrica Vietna/Indonesia/Bangladesh (salarios US$ 150/mes), revende US$ 150-300 (lucro 50%). Pandemia COVID: cadeias quebraram (China lockdown parou producao mundial), estimulou reshoring (EUA produzir chips domesticamente, CHIPS Act US$ 52 bilhoes subsidios). Guerra Ucrania: dependencia gas russo levou Europa diversificar.",
+          "dica": "Cadeias globais = producao fragmentada mundial. Cada pais etapa conforme vantagem (custo, tecnologia). Corporacoes maximizam lucro, trabalhadores precarizados. Pandemia/guerras mostraram vulnerabilidade, reshoring cresce."
+        },
+        {
+          "id": 4,
+          "titulo": "Paraisos Fiscais",
+          "conteudo": "Paraisos fiscais: territorios impostos baixos/zero, sigilo bancario, regulacao frouxa, atraem capitais esconder riqueza/evasao fiscal/lavagem dinheiro. Principais: Ilhas Cayman, Bahamas, Bermudas, Suica, Luxemburgo, Irlanda, Delaware EUA, Jersey, Singapura. Estimativa US$ 10-32 trilhoes escondidos (15% riqueza mundial), US$ 500 bilhoes/ano evasao fiscal. Corporacoes: registram lucros paraisos (imposto zero) mesmo produzindo alhures. Consequencias: paises perdem arrecadacao (financiar saude/educacao), desigualdade aumenta (ricos evadem, pobres pagam).",
+          "exemplo": "Apple: subsidiaria Irlanda (imposto 2% vs 35% EUA), acumulou US$ 250 bilhoes offshore. Google 'Double Irish Dutch Sandwich': lucros Europa passam Irlanda-Holanda-Bermudas, paga 2% imposto. Panama Papers (2016): 11 milhoes documentos vazaram, revelaram politicos/celebridades/corporacoes escondendo US$ 200 bilhoes (Messi, Putin, Cameron). Paradise Papers (2017): Apple, Nike, Facebook evasao massiva. Lavagem dinheiro: narcotrafico, corrupcao usam paraisos (Odebrecht, 1MDB Malasia). Brasil perde R$ 300 bilhoes/ano evasao.",
+          "dica": "Paraisos fiscais = impostos zero, sigilo, atraem evasao/lavagem. Cayman, Suica, Irlanda, Delaware. US$ 10-32 trilhoes escondidos. Corporacoes (Apple, Google) registram lucros la, pagam quase zero imposto. Panama Papers revelaram escala."
+        },
+        {
+          "id": 5,
+          "titulo": "Regulacao Internacional",
+          "conteudo": "Regulacao comercio/investimento: OMC (Organizacao Mundial Comercio, 1995, substituiu GATT) regula comercio, reduz tarifas, resolve disputas (controversa: favorece ricos, imposicoes soberania). Acordos regionais: UE, Nafta/USMCA, Mercosul, RCEP (crescem vs multilateralismo). Investimentos: tratados bilaterais protegem investidores estrangeiros (criticados permitir corporacoes processar Estados). Trabalho: OIT (Organizacao Internacional Trabalho) estabelece padroes (pouco cumprido). Ambiente: Acordo Paris clima (voluntario, pouco ambicioso). Tributacao: OCDE propoe imposto minimo global 15% (resistencias paraisos).",
+          "exemplo": "OMC: 164 membros, liberalizou comercio (tarifas caíram media 35% para 5%), mas Rodada Doha (2001-) travada (paises pobres vs ricos subsidios agricolas). Disputas: Brasil venceu EUA subsidio algodao (2005), China terras raras (2014). Tratados investimento: Philip Morris processou Uruguai (embalagens cigarro saude publica), perdeu, mas custou US$ 7 milhoes defesa. ISDS (arbitragem investidor-Estado): corporacoes ganharam US$ 88 bilhoes Estados (2000-2020). OIT: convencoes trabalho infantil/forcado/liberdade sindical, mas Bangladesh, Mianmar, China violam. OCDE imposto minimo: G20 aprovou 2021, implementacao lenta.",
+          "dica": "OMC regula comercio (favorece ricos, subsidios agricolas). Tratados investimento permitem corporacoes processar Estados (ISDS). OIT padroes trabalho pouco cumpridos. Acordo Paris clima voluntario. OCDE imposto minimo 15% (ainda nao efetivo)."
+        }
+      ],
+      "questao": {
+        "enunciado": "A producao do iPhone, produto simbolo da globalizacao contemporanea, envolve diversas etapas realizadas em diferentes paises: o design e desenvolvimento ocorrem nos Estados Unidos, os componentes de alta tecnologia sao produzidos no Japao e Coreia do Sul, a montagem final e feita na China, e as vendas sao globais. Apesar de montado na China, o maior valor agregado permanece com a empresa norte-americana Apple.\n\nEssa organizacao da producao caracteriza:",
+        "alternativas": [
+          "A Divisao Internacional do Trabalho classica, com paises perifericos exportando materias-primas.",
+          "As cadeias globais de valor, onde a producao e fragmentada mas os maiores lucros concentram-se nas etapas de maior tecnologia.",
+          "O processo de industrializacao autonoma dos paises asiaticos atraves de transferencia tecnologica.",
+          "A superacao das desigualdades economicas pela distribuicao equitativa dos lucros entre todos os paises envolvidos.",
+          "O modelo de substituicao de importacoes adotado pelos paises em desenvolvimento."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "A producao do iPhone exemplifica perfeitamente as cadeias globais de valor, onde a fabricacao e dividida entre multiplos paises conforme vantagens competitivas de cada um (design/tecnologia em paises desenvolvidos, montagem em paises de mao de obra barata), mas os maiores lucros permanecem com quem controla as etapas de alto valor agregado (design, software, marca, marketing). A China recebe apenas cerca de US$ 10 dos US$ 800 do preco final, enquanto a Apple fica com aproximadamente US$ 400. Nao e DIT classica (A), nao houve transferencia real de tecnologia (C), nao distribui lucros equitativamente (D), nem e substituicao importacoes (E).",
+        "tags": ["cadeias-globais", "divisao-internacional-trabalho", "valor-agregado", "transnacionais"]
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Desigualdades Globais",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Norte vs Sul Global",
+          "conteudo": "Divisao Norte-Sul (simbolica, nao geografica): Norte global (paises desenvolvidos industrializados - Europa Ocidental, America Norte, Japao, Australia/NZ, 15% populacao, 70% PIB, 85% renda) vs Sul global (paises subdesenvolvidos/emergentes - America Latina, Africa, Asia exceto Japao/tigres, 85% populacao, 30% PIB). Indicadores: IDH (Indice Desenvolvimento Humano: saude, educacao, renda - Norte 0,9+, Sul 0,4-0,7), PIB per capita (Norte US$ 40-80 mil, Sul US$ 2-10 mil), mortalidade infantil (Norte <5/1000, Sul >50/1000), expectativa vida (Norte 80+, Sul 50-70).",
+          "exemplo": "Noruega: IDH 0,961 (1°), PIB per capita US$ 89 mil, expectativa vida 83 anos, analfabetismo 0%. Chade: IDH 0,394 (190°), PIB per capita US$ 700, expectativa vida 54 anos, analfabetismo 22%. Abismo: 1% mais ricos (50 milhoes pessoas) detem mesma riqueza que 50% mais pobres (3,8 bilhoes). 700 milhoes vivem <US$ 2/dia (pobreza extrema). Pandemia COVID: paises ricos vacinaram 80% populacao 2021, Africa <10% (desigualdade vacinas). Historico: colonialismo, escravidao, imperialismo enriqueceram Norte, espoliaram Sul.",
+          "dica": "Norte = desenvolvido, rico, IDH alto (Europa, EUA, Japao). Sul = subdesenvolvido, pobre, IDH medio/baixo (America Latina, Africa, Asia). Desigualdade historica (colonialismo). 1% mais ricos = 50% mais pobres (riqueza)."
+        },
+        {
+          "id": 2,
+          "titulo": "Subdesenvolvimento",
+          "conteudo": "Subdesenvolvimento ≠ ausencia desenvolvimento, mas TIPO desenvolvimento subordinado, dependente. Caracteristicas: economia primario-exportadora ou industrial baixo valor (dependencia externa tecnologia/capital), concentracao renda (Gini alto), informalidade laboral (50-70%), baixo investimento educacao/saude/infraestrutura, instabilidade politica/corrupcao, divida externa (juros drenam recursos). Causas estruturais: colonizacao/imperialismo (espoliacao), divisao internacional trabalho (deterioracao termos troca), imperialismo contemporaneo (multinacionais, divida). Teorias: Cepalina (Prebisch: industrializacao substituicao importacoes), Dependencia (Cardoso/Faletto: desenvolvimento associado subordinado).",
+          "exemplo": "Brasil: 9ª economia mas IDH 0,754 (87°), Gini 0,52 (alta desigualdade), 40% informalidade, exporta soja/minerio (baixo valor), importa chips/maquinas (alto valor). Divida externa: paises pobres pagam US$ 200 bilhoes/ano juros (mais que recebem ajuda US$ 150 bi). Africa: transfere liquido US$ 50 bilhoes/ano para fora (evasao fiscal, lucros multinacionais, divida) vs recebe US$ 30 bi ajuda. Teoria Dependencia: desenvolvimento possivel mas subordinado (decisoes tomadas fora, lucros vao fora). ISI (Industrializacao Substituicao Importacoes): Brasil, Argentina 1950s-70s protegeram industria, funcionou ate crise 1980s.",
+          "dica": "Subdesenvolvimento = desenvolvimento subordinado/dependente (nao ausencia). Causas: colonialismo, DIT desigual, divida externa. Caracteristicas: baixo valor agregado, concentracao renda, informalidade. Teorias: Cepal (ISI), Dependencia (subordinacao)."
+        },
+        {
+          "id": 3,
+          "titulo": "Fome e Pobreza Global",
+          "conteudo": "Pobreza extrema: <US$ 2,15/dia (Banco Mundial), 700 milhoes pessoas (9% mundial, caiu de 2 bilhoes 1990, 36%). Fome: 828 milhoes subnutridos (2023, aumentou pos-pandemia), 2,3 bilhoes inseguranca alimentar moderada/severa (30% mundial). Paradoxo: mundo produz comida 10 bilhoes pessoas, mas 1/10 passa fome (distribuicao desigual, desperdicio 1/3 producao, especulacao commodities, guerras/clima). Concentracao: 60% famintos 10 paises (RD Congo, Afeganistao, Iemen, Etiopia, Nigeria, Paquistao, Sudao, Siria, Haiti, Venezuela). Consequencias: desnutricao infantil (stunting irreversível), doencas, mortalidade, conflitos.",
+          "exemplo": "Iemen: 60% populacao (18 milhoes) inseguranca alimentar, guerra civil destruiu agricultura, bloqueio impede ajuda, 85 mil criancas morreram fome 2015-2018. Sahel Africa: seca climatica + conflitos jihadistas = 30 milhoes fome (Mali, Niger, Burkina Faso, Chade). Haiti: 50% fome, terremoto + furaces + instabilidade politica. Venezuela: crise Maduro, hiperinflacao, 30% populacao fugiu, fome aumentou. Desperdicio: 1,3 bilhao ton comida jogada fora/ano (1/3 producao), suficiente alimentar famintos 4 vezes. Especulacao: fundos investem commodities agricolas, precos sobem, pobres nao compram.",
+          "dica": "Fome paradoxo: producao suficiente mas 828 milhoes passam fome (distribuicao, desperdicio, guerras). Pobreza extrema caiu (700 milhoes, 9%) mas pandemia aumentou. Concentracao Africa/Asia conflitos. Desperdicio 1/3 producao."
+        },
+        {
+          "id": 4,
+          "titulo": "Desigualdade de Genero e Raca",
+          "conteudo": "Desigualdade genero: mulheres ganham 77% salario homens (mesma funcao), maior informalidade, dupla jornada (trabalho + domestico nao remunerado), sub-representacao politica (25% parlamentares mundo), violencia (1/3 sofreu violencia fisica/sexual), países islamicos/conservadores restricoes (Afeganistao Taliba proibiu educacao meninas). IDG (Indice Desigualdade Genero): 0,44 mundial (0=igualdade, 1=total desigualdade). Raca: racismo estrutural, negros/indigenas/latinos maior pobreza, desemprego, violencia policial, encarceramento, menor acesso educacao/saude. EUA: negros 13% populacao mas 40% prisoes, renda 60% brancos. Brasil: negros 56% populacao, 75% mais pobres.",
+          "exemplo": "Salario genero: economista mulher ganha 77% homem (mesma qualificacao), CEO mulher 5% Fortune 500. Politica: Ruanda 61% parlamentares mulheres (melhor mundo, pos-genocidio), Arabia Saudita mulheres votaram 2015 (atraso), Afeganistao Taliba proibiu educacao meninas acima 6ª serie (2022). Violencia: 50 mil mulheres assassinadas/ano (feminicidio), Brasil 4ª maior taxa. Trabalho domestico: mulheres 3x mais tempo que homens (cuidar casa/filhos), nao remunerado (nao conta PIB). Racismo: George Floyd (2020) assassinado policia EUA, protestos Black Lives Matter, negros mortos policia 3x mais que brancos.",
+          "dica": "Desigualdade genero: salario (mulheres 77%), politica (25% parlamentares), violencia (1/3). Afeganistao Taliba proibiu educacao meninas. Racismo estrutural: negros maior pobreza, violencia, prisao. Brasil/EUA exemplos."
+        },
+        {
+          "id": 5,
+          "titulo": "Exclusao Digital",
+          "conteudo": "Exclusao/divisao digital: desigualdade acesso tecnologias informacao-comunicacao (internet, computador, celular). Mundial: 37% (3 bilhoes) offline, concentrados paises pobres (85% Europa online, 28% Africa). Interna paises: urbano>rural, ricos>pobres, jovens>idosos, homens>mulheres. Consequencias: exclusao educacao (aulas online pandemia), mercado trabalho (vagas exigem TI), servicos (bancarios, governo digital), informacao. Qualidade acesso: banda larga >2G, computador>celular, letramento digital. Causas: pobreza (nao compra aparelho/internet), infraestrutura (rural sem fibra), educacao (analfabetismo digital).",
+          "exemplo": "Africa: 28% conectados (Europa 85%), maioria acessa via celular (caro, dados limitados), velocidade baixa (2G/3G). Brasil: 85% urbano conectado, 60% rural, 30% classe DE nao tem internet, 40% acessa so celular (limitacoes trabalho/estudo). Pandemia: 30% estudantes Brasil sem acesso aulas online, desigualdade aprofundou. Genero: paises pobres homens 25% mais conectados que mulheres (custo, restricoes culturais). Idosos: 20% >65 anos usam internet (80% jovens). Solucoes: internet gratuita (India tem 600 milhoes usuarios, maioria wifi publico), inclusao digital (lan houses, bibliotecas).",
+          "dica": "Divisao digital = desigualdade acesso internet. 3 bilhoes offline (37%), maioria Africa/Asia. Interna: urbano>rural, ricos>pobres. Pandemia exposou: sem internet = sem educacao/trabalho. Qualidade acesso importa (banda larga vs 2G)."
+        }
+      ],
+      "questao": {
+        "enunciado": "Apesar da producao mundial de alimentos ser suficiente para alimentar toda a populacao global, cerca de 828 milhoes de pessoas ainda sofrem com a fome cronicaAlexandrino. Esse paradoxo da fome em meio a abundancia revela que o problema nao e de producao, mas de distribuicao e acesso aos alimentos.\n\nSao fatores que explicam a permanencia da fome no mundo contemporaneo:\n\nI. A concentracao de renda que impede populacoes pobres de comprarem alimentos.\nII. O desperdicio de aproximadamente um terço de toda a producao mundial de alimentos.\nIII. A especulacao financeira com commodities agricolas que eleva os precos.\nIV. A insuficiencia tecnica da agricultura moderna para produzir em grande escala.\n\nEstao corretas:",
+        "alternativas": [
+          "Apenas I e II.",
+          "Apenas I, II e III.",
+          "Apenas II e III.",
+          "Apenas I, III e IV.",
+          "I, II, III e IV."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "As afirmativas I, II e III estao corretas: a concentracao de renda impede que populacoes pobres acessem alimentos mesmo disponiveis no mercado (I); aproximadamente 1,3 bilhao de toneladas de alimentos (1/3 da producao) sao desperdicadas anualmente (II); a especulacao financeira com commodities agricolas eleva artificialmente os precos, dificultando o acesso dos mais pobres (III). A afirmativa IV esta INCORRETA pois a agricultura moderna e capaz de produzir alimentos suficientes para mais de 10 bilhoes de pessoas - o problema nao e producao, mas distribuicao, acesso e desperdicio.",
+        "tags": ["fome", "desigualdade", "distribuicao-renda", "desperdicio-alimentos"]
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Blocos e Organismos Economicos",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "FMI e Banco Mundial",
+          "conteudo": "FMI (Fundo Monetario Internacional) e Banco Mundial criados Bretton Woods 1944. FMI: estabilidade financeira, empresta paises deficit balanca pagamentos, condicionalidades (ajustes estruturais neoliberais: cortar gastos, privatizar, desregulamentar, abrir mercado). Banco Mundial (BIRD): financia projetos desenvolvimento (infraestrutura, educacao, saude), tambem condicionalidades. Criticas: imposicoes soberania, ajustes aumentam pobreza, governanca desigual (EUA 16,5% votos veto, Europa 30%, Africa/Asia sub-representadas), perpetuam dependencia. Sede Washington, dominados EUA/Europa.",
+          "exemplo": "Crise divida 1980s: America Latina/Africa endividadas choque petroleo + juros altos, FMI/BM emprestaram mas exigiram Consenso Washington: Argentina privatizou 90% estatais (desemprego, colapso 2001), Brasil privatizou telecomunicacoes/mineracao/energia, Africa cortou gastos saude/educacao (mortalidade aumentou). Grecia 2010: FMI/UE/BCE emprestaram €280 bilhoes, exigiram austeridade (salarios -20%, aposentadoria cortada, PIB caiu 25%, desemprego 28%). Alternativas: BRICS criou Novo Banco Desenvolvimento (US$ 100 bilhoes, decisoes paritarias), China AIIB, FMI reformas 2010 aumentou levemente Asia.",
+          "dica": "FMI = empresta paises crise, exige ajustes neoliberais (cortes, privatizacoes). BM = financia desenvolvimento, mesmas condicionalidades. Criticas: imposicoes, aumentam pobreza, dominados EUA/Europa. BRICS criou alternativas."
+        },
+        {
+          "id": 2,
+          "titulo": "OMC e Comercio Global",
+          "conteudo": "OMC (Organizacao Mundial Comercio, 1995, substituiu GATT 1947): regula comercio internacional, 164 membros. Objetivos: liberalizacao comercio (reduzir tarifas/barreiras), previsibilidade (regras claras), resolver disputas (tribunal). Principios: nacao mais favorecida (tratar todos igual), tratamento nacional (produtos estrangeiros = nacionais), transparencia. Rodadas negociacao: Uruguai (criou OMC), Doha (2001-, travada subsidios agricolas). Disputas: Brasil venceu EUA algodao, UE banana, China terras raras. Criticas: favorece ricos (subsidios agricolas Europa/EUA), soberania (decisoes vinculantes), ambiental/social ignorado.",
+          "exemplo": "GATT (1947-1994): 8 rodadas reduziram tarifas media 40% para 5%. OMC ampliou servicos, propriedade intelectual (TRIPS - farmaceuticas cobram caro genericos, AIDS Africa). Algodao Brasil-EUA: EUA subsidiava US$ 4 bilhoes/ano produtores (concorrencia desleal), Brasil venceu 2005, EUA pagou compensacao. Subsidios agricolas: Europa PAC €50 bilhoes/ano, EUA Farm Bill US$ 25 bi/ano, dumping prejudica agricultores pobres (Africa nao compete). Rodada Doha: travada 20 anos, paises pobres exigem fim subsidios ricos, ricos exigem abertura industria/servicos pobres. Disputa vacinas COVID: Africa pediu suspender patentes (salvar vidas), EUA/UE/Suica bloquearam (proteger lucros Pfizer/Moderna).",
+          "dica": "OMC = regula comercio global, reduz tarifas, resolve disputas. Criticas: favorece ricos (subsidios agricolas Europa/EUA), decisoes vinculantes (soberania). Rodada Doha travada subsidios. Brasil ganhou disputa algodao EUA."
+        },
+        {
+          "id": 3,
+          "titulo": "G7, G20 e Foros Economicos",
+          "conteudo": "G7 (Grupo 7): EUA, Canada, UK, Franca, Alemanha, Italia, Japao (+ UE). Paises mais ricos/industrializados (44% PIB mundial 2023, caiu de 70% 1990s), reunioes anuais cúpula, coordenam politicas economicas, sem decisoes vinculantes. G20: G7 + emergentes (Brasil, Russia, India, China, Africa Sul, Mexico, Argentina, Indonesia, Turquia, Arabia Saudita, Coreia Sul, Australia) + UE. Representa 85% PIB mundial, 75% comercio, criado crise 1997 Asia. Davos (Forum Economico Mundial): elite corporativa/politica, Suica janeiro, lobby empresarial, criticas elitismo. BRICS: Brasil, Russia, India, China, Africa Sul (+ Ira, EAU, Egito, Etiopia 2024), alternativa G7, 42% populacao, 32% PIB PPP.",
+          "exemplo": "G7 historico: criado 1975 crise petroleo, coordenou resposta. Perdeu relevancia ascensao emergentes (1990 G7=70% PIB, 2023=44%). Cúpula anual: 2021 Cornwall (UK) aprovou imposto minimo global 15% corporacoes, doacao 1 bilhao vacinas (nao cumpriu). G20: criado 1999 crise asiatica, elevado cúpula presidentes 2008 crise subprime. Cúpula 2023 India: financiamento clima, reforma FMI/BM, regulacao cripto. BRICS: Novo Banco Desenvolvimento (US$ 100 bi capital), alternativa dolar (comercio moedas locais), expansao 2024 (11 membros) desafia G7. Davos: CEOs, bilionarios, politicos, criticas 'Occupy Davos', desigualdade.",
+          "dica": "G7 = paises ricos (44% PIB, caiu de 70%), perde relevancia. G20 = G7 + emergentes (85% PIB), mais representativo. BRICS = alternativa Sul Global, Novo Banco. Davos = elite corporativa, elitismo."
+        },
+        {
+          "id": 4,
+          "titulo": "Acordos Comerciais Regionais",
+          "conteudo": "Acordos comercio regionais crescem (OMC travada): bilaterais, blocos, mega-acordos. USMCA (2020, substituiu Nafta): EUA-Mexico-Canada, US$ 1,3 trilhao comercio/ano, livre comercio com clausulas trabalho/ambiente. RCEP (2022): 15 paises Asia-Pacifico liderados China (ASEAN + China + Japao + Coreia + Australia/NZ), 30% PIB/comercio mundial, maior acordo livre comercio, exclui EUA. CPTPP (2018): 11 paises Pacifico (Japao, Canada, Australia, Mexico, Chile, Peru, Vietna...), TPP sem EUA (Trump saiu 2017). Acordo UE-Mercosul: negociacao 20 anos, travado agricultura/Amazonia.",
+          "exemplo": "USMCA vs Nafta: adiciona clausulas trabalho (salarios minimos Mexico), ambiente (poluicao), digital (dados), sunset clause (renova 16 anos). Criticas Mexico: salarios subiram pouco, EUA pode bloquear. RCEP: China liderou excluir EUA (resposta TPP americano), comercio preferencial 90% produtos. EUA isolados Asia (Biden tenta retomar TPP). UE-Mercosul: 25 anos negociacao, acordo princípio 2019, travado Franca (teme concorrencia carne Brasil, desmatamento Amazonia), Ireland (carne), Austria (ambiente). Se aprovar: US$ 100 bilhoes comercio/ano, maior acordo UE. CPTPP: UK pediu adesao (pos-Brexit), China tambem (controverso).",
+          "dica": "Acordos regionais proliferam (OMC travada): USMCA (America Norte), RCEP (Asia-Pacifico liderado China, maior), CPTPP (Pacifico sem EUA/China), UE-Mercosul (travado Franca). Competicao blocos."
+        },
+        {
+          "id": 5,
+          "titulo": "Criptomoedas e Economia Digital",
+          "conteudo": "Criptomoedas: moedas digitais descentralizadas blockchain (Bitcoin 2009 Satoshi Nakamoto, Ethereum). Capitalizacao US$ 1-3 trilhoes (volatilidade extrema). Vantagens: descentralizacao (sem bancos centrais), transparencia (blockchain publico), rapidez transacoes internacionais. Desvantagens: volatilidade (Bitcoin US$ 70 mil para US$ 15 mil), uso criminoso (lavagem dinheiro, ransomware, darkweb), ambiental (mineracao consome energia Holanda inteira), golpes (pirâmides), especulacao. Regulacao: China proibiu, EUA regulando, El Salvador tornou legal tender. CBDCs (moedas digitais bancos centrais): China yuan digital, Europa euro digital, Brasil Drex.",
+          "exemplo": "Bitcoin: 21 milhoes limite, mineracao (computadores resolvem problemas matematicos), volatilidade (2021 US$ 68 mil, 2022 US$ 15 mil, 2024 US$ 45 mil). Ethereum: contratos inteligentes, NFTs (arte digital). Usos criminosos: Silk Road (drogas), ransomware WannaCry (hospitais UK), lavagem US$ 8 bilhões FTX (fraude Sam Bankman-Fried 25 anos prisao). El Salvador: adotou Bitcoin legal tender 2021, populacao resistiu (volatilidade), FMI criticou, perdas massivas. China: proibiu cripto 2021, lancou yuan digital (controle estatal). Mineracao: consome 150 TWh/ano (Argentina inteira), emite 65 milhoes ton CO2/ano.",
+          "dica": "Criptomoedas = digitais, descentralizadas, blockchain. Bitcoin mais famoso. Vantagens: sem bancos, rapido. Desvantagens: volatilidade extrema, crimes, energia massiva. China proibiu, EUA regulando. CBDCs = versao estatal (controle)."
+        }
+      ],
+      "questao": {
+        "enunciado": "O FMI (Fundo Monetario Internacional) e o Banco Mundial, criados em 1944 na Conferencia de Bretton Woods, desempenham papel importante na economia global, emprestando recursos para paises em dificuldades financeiras. Porem, esses emprestimos costumam vir acompanhados de condicionalidades que impõem mudancas nas politicas economicas dos paises receptores.\n\nAs criticas frequentemente dirigidas as condicionalidades impostas pelo FMI e Banco Mundial referem-se ao fato de que elas:",
+        "alternativas": [
+          "Promovem politicas desenvolvimentistas com forte intervencao estatal na economia.",
+          "Exigem aumentos significativos nos gastos publicos com saude e educacao.",
+          "Impõem ajustes neoliberais como privatizacoes e corte de gastos sociais, agravando a pobreza.",
+          "Proibem a participacao de empresas estrangeiras nas economias nacionais.",
+          "Estabelecem barreiras protecionistas para defender a industria nacional."
+        ],
+        "respostaCorreta": 2,
+        "explicacao": "As condicionalidades do FMI e Banco Mundial sao criticadas por imporem ajustes estruturais neoliberais (inspirados no Consenso de Washington): privatizacao de empresas estatais, corte de gastos publicos (incluindo saude e educacao), desregulamentacao, abertura comercial e reducao do papel do Estado. Essas medidas frequentemente aumentam o desemprego e a pobreza no curto prazo, embora sejam justificadas como necessarias para estabilidade fiscal e atracao de investimentos. As alternativas A, D e E descrevem o oposto (intervencao estatal, protecionismo), e B esta incorreta pois as condicionalidades geralmente exigem cortes, nao aumentos nos gastos sociais.",
+        "tags": ["fmi", "banco-mundial", "condicionalidades", "ajuste-estrutural", "neoliberalismo"]
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Desglobalizacao e Futuro",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Contestacao a Globalizacao",
+          "conteudo": "Movimentos anti-globalizacao (1990s-2000s): protestos Seattle 1999 (OMC), Genova 2001 (G8), Porto Alegre Forum Social Mundial ('outro mundo possível'). Criticas: desigualdade (1% vs 99%), perda empregos (desindustrializacao), dumping social/ambiental, poder corporacoes, erosao democracia, homogeneizacao cultural. Atores: sindicatos, ONGs, movimentos sociais (Via Campesina, Attac), intelectuais (Stiglitz, Chomsky, Piketty). Propostas: comercio justo, Tobin tax (taxar transacoes financeiras), cancelamento divida, soberania alimentar, direitos trabalhistas globais.",
+          "exemplo": "Seattle 1999: 50 mil protestaram Rodada Milenio OMC, repressao policial, reuniao cancelada, visibilidade movimento. Genova 2001: G8, 300 mil manifestantes, policia matou Carlo Giuliani, repressao extrema. Forum Social Mundial: Porto Alegre 2001-2003/2005, 100 mil participantes, alternativas globalizacao neoliberal, 'taxar transacoes financeiras', 'vida antes lucro'. Tobin tax: proposta taxar 0,1-0,5% transacoes moeda internacional, arrecadar US$ 200-300 bilhoes/ano (combater pobreza), resistencia financistas. Via Campesina: 200 milhoes camponeses 81 paises, luta contra agronegocio/transgenicos, soberania alimentar.",
+          "dica": "Movimento anti-globalizacao: protesta desigualdade, corporacoes, desemprego. Seattle 1999, Genova 2001, Forum Social Mundial. Propostas: comercio justo, taxar financas, cancelar divida. Visibilidade decaiu 2008 crise/redes sociais."
+        },
+        {
+          "id": 2,
+          "titulo": "Protecionismo e Guerra Comercial",
+          "conteudo": "Ressurgencia protecionismo pos-2008 (crise economica) e 2016 (Trump, Brexit): tarifas, barreiras nao-tarifarias, nacionalismo economico. Trump (2017-21): 'America First', tarifas aco/aluminio (25%), guerra comercial China (tarifas US$ 360 bilhoes produtos), renegociou Nafta (USMCA), retirou TPP. China retaliou (soja, carne, tarifas US$ 110 bi). Biden mantem maioria tarifas China. Brexit (2020): Reino Unido saiu UE, comercio caiu 15%, custos alfandegarios, desabastecimento. Consequencias: comercio global estagnou, cadeias desarticulam, consumidor paga mais, retaliacoes.",
+          "exemplo": "Guerra comercial EUA-China: Trump tarifou US$ 360 bi produtos chineses (25%), alegando roubo propriedade intelectual. China retaliou US$ 110 bi (soja, carne, avioes Boeing). Agricultura EUA sofreu (soja caiu 25%, governo subsidio US$ 28 bilhoes compensar). Consumidor americano pagou tarifa (estudo FED: familias perderam US$ 1.277/ano). Huawei banida (seguranca nacional alegada), Google/chips cortados. Biden manteve tarifas, adicionou chips (CHIPS Act US$ 52 bi subsidios produzir domesticamente). Brexit: comercio UK-UE caiu 15%, filas caminhoes fronteira, desabastecimento supermercados, City Londres perdeu sede bancos. Escócia/Irlanda Norte tensoes separatistas.",
+          "dica": "Protecionismo retorna: Trump tarifas (China, aco), Brexit (UK saiu UE). Guerra comercial EUA-China (US$ 360 bi tarifas). Consequencias: comercio cai, consumidor paga mais, retaliacoes. Biden mantem tarifas."
+        },
+        {
+          "id": 3,
+          "titulo": "Pandemia e Cadeias Globais",
+          "conteudo": "COVID-19 (2020-22) exposou vulnerabilidade cadeias globais: lockdowns China pararam producao mundial (chips, eletronicos, medicamentos, EPIs), transporte (containers escassos, portos congestionados), dependencia extrema China ('fabrica mundo'). Nacionalismo vacinas: paises ricos acumularam doses (EUA 1,2 bilhao), pobres sem (Africa <10% vacinada 2021), Covax fracassou. Consequencias: inflacao global (escassez + estimulos), reshoring/nearshoring (relocar producao perto/domestico seguranca), subsidios industrias estrategicas (chips EUA/Europa), questionamento hiperglobalizacao.",
+          "exemplo": "Chips: escassez parou fabricas automotivas (Ford, GM, VW), Sony PS5, Apple iPhone atrasaram. Taiwan TSMC produz 60% chips mundiais (vulnerabilidade). EUA CHIPS Act (US$ 52 bi), UE Chips Act (€43 bi) subsidiar fabricas domesticas. Medicamentos: 80% principios ativos fabricados India/China, EUA/Europa desabasteceram COVID. EPIs (mascaras, luvas): China monopolio 70%, paises ricos competiram, pobres sem acesso. Vacinas: EUA, UK, Israel vacinaram 80% rapido acumulando doses, bloquearam exportacoes, Africa 10% vacinada dez/2021. Covax: prometeu 2 bilhoes doses pobres 2021, entregou 300 milhoes. Inflacao: EUA 7% (maior 40 anos), escassez + estimulos US$ 5 trilhoes.",
+          "dica": "Pandemia exposou: dependencia extrema China (chips, medicamentos, EPIs), cadeias frageis (lockdown China parou mundo), nacionalismo vacinas (ricos acumularam, pobres sem). Reshoring cresce (chips EUA/Europa). Inflacao global."
+        },
+        {
+          "id": 4,
+          "titulo": "Guerra Ucrania e Desglobalizacao",
+          "conteudo": "Invasao Russia-Ucrania (fev/2022) acelerou desglobalizacao: sancoes Ocidente massivas (SWIFT bancos russos, congelamento US$ 300 bilhoes reservas, embargo petroleo/gas), Russia retaliou (cortou gas Europa). Consequencias: crise energetica Europa (gas russo 40% importacoes), inflacao alimentos (Ucrania/Russia 30% trigo mundial, precos +50%), fragmentacao economica (Ocidente vs Russia-China), relocalizacao cadeias (diversificar energia, alimentos). Fim globalizacao liberal? Blocos: Ocidente (EUA/UE/Japao/Australia) vs autoritarios (Russia-China-Ira), comercio/tecnologia/financas fragmentados.",
+          "exemple": "Sancoes: 10 mil empresas ocidentais sairam Russia (McDonald's, IKEA, Apple, Shell, BP), Russia perdeu US$ 300 bilhoes reservas congeladas, SWIFT cortou bancos (pagamentos internacionais), embargo petroleo/gas. Russia retaliou: cortou gas Europa (Nord Stream 1 fechou), preco gas €300/MWh (era €20), inflacao Europa 10% (energia). Alimentos: trigo +60%, oleo girassol +80% (Ucrania grande exportador), fome Africa/Oriente Medio agravou. Relocalizacao: Alemanha reabre carvao (substituir gas russo), Europa busca GNL EUA/Qatar, diversifica fornecedores. Fragmentacao: China apoiou Russia, comercio yuan-rublo (desvio dolar), tecnologia Ocidente vs China (5G Huawei banida), 'Nova Guerra Fria'.",
+          "dica": "Guerra Ucrania acelerou desglobalizacao: sancoes massivas Russia, crise energia Europa (gas russo cortado), inflacao alimentos (trigo/oleo +50%), fragmentacao blocos (Ocidente vs Russia-China). Fim globalizacao liberal?"
+        },
+        {
+          "id": 5,
+          "titulo": "Futuros Possiveis",
+          "conteudo": "Debate futuro globalizacao: 1) Reglobalizacao (retoma apos pandemia/guerras, interdependencia inevitavel), 2) Desglobalizacao (nacionalismos, blocos regionais, reshoring, autossuficiencia), 3) Globalizacao seletiva (fragmentada: Ocidente integrado, blocos separados China-Russia, tecnologia/financas cisao, comercio continua). Fatores: mudancas climaticas (migracao, conflitos recursos), tecnologia (IA, automacao reduz vantagem mao-obra barata), multipolaridade (fim hegemonia EUA), desigualdade (reacoes populistas). Incerteza: COVID, Ucrania, Taiwan, recessao, democracia vs autoritarismo moldam proximo periodo.",
+          "exemplo": "Reglobalizacao: comercio voltou niveis pre-pandemia 2022, tecnologia (IA, metaverso) conecta mais. Argumentos: eficiencia cadeias, mudanca climatica exige cooperacao global, interdependencia (China maior parceiro comercial 120 paises). Desglobalizacao: nacionalismos (Le Pen, Meloni, Orban), reshoring chips/medicamentos, autossuficiencia alimentar/energetica (seguranca). BRICS+ expandiu (desafio Ocidente). Globalizacao seletiva: Ocidente comercia entre si + aliados (friend-shoring), China Rota Seda Sul Global, tecnologia cindida (5G, chips, IA militarizada). Clima: nivel mar sobe, 200 milhoes refugiados, guerras agua (Nilo, Mekong), cooperacao ou conflito? IA: automacao reduz offshoring (robo EUA = operario China), desemprego massa?",
+          "dica": "Futuro incerto: reglobalizacao (retoma), desglobalizacao (nacionalismos, blocos), ou seletiva (fragmentada blocos). Fatores: clima (refugiados), tecnologia (IA), multipolaridade (China), desigualdade (populismos). COVID, Ucrania, Taiwan decisivos."
+        }
+      ],
+      "questao": {
+        "enunciado": "A pandemia de COVID-19 revelou a fragilidade das cadeias produtivas globais quando lockdowns na China paralisaram fabricas e a producao de bens essenciais como chips semicondutores, medicamentos e equipamentos de protecao individual. Isso levou varios paises a repensarem sua dependencia extrema de fornecedores distantes.\n\nComo consequencia dessa experiencia, observa-se a tendencia de:",
+        "alternativas": [
+          "Aprofundamento da terceirizacao da producao para paises com mao de obra ainda mais barata.",
+          "Relocalizacao de industrias estrategicas para o territorio nacional ou paises proximos (reshoring/nearshoring).",
+          "Eliminacao completa do comercio internacional e retorno a autarquia economica.",
+          "Transferencia massiva de tecnologia dos paises desenvolvidos para os paises pobres.",
+          "Fortalecimento irrestrito da integracao comercial com a China."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "A pandemia de COVID-19 evidenciou os riscos da dependencia extrema de cadeias produtivas globalizadas e concentradas geograficamente (especialmente na China). Como resposta, observa-se movimento de reshoring (relocalizacao da producao para o pais de origem) e nearshoring (para paises proximos) em setores estrategicos como semicondutores, medicamentos e equipamentos medicos. Exemplos incluem o CHIPS Act nos EUA e Europa, subsidiando fabricacao domestica de chips. As alternativas A (mais terceirizacao), C (autarquia total), D (transferencia tecnologica) e E (mais integracao China) nao correspondem as tendencias observadas pos-pandemia.",
+        "tags": ["pandemia-covid", "cadeias-globais", "reshoring", "desglobalizacao"]
+      }
+    }
+  ]
+}

@@ -8,7 +8,7 @@
   "icone": "Dna",
   "cor": "#27AE60",
   "tempoEstimado": "20 horas",
-  "fpRecompensa": 500,
+  "fpRecompensa": 0,
   "tags": ["biologia", "citologia", "genética", "ecologia", "evolução", "fisiologia", "enem"],
   "modulos": [
     {

@@ -1,0 +1,575 @@
+{
+  "id": "variacao-linguistica",
+  "slug": "variacao-linguistica",
+  "titulo": "Variação Linguística",
+  "categoria": "linguagens",
+  "nivel": "intermediario",
+  "descricao": "Compreenda as variações linguísticas do português brasileiro: norma culta, coloquial, regional, social, histórica e situacional. Aprenda a reconhecer preconceito linguístico e adequação da linguagem ao contexto comunicativo.",
+  "icone": "MessageSquare",
+  "cor": "#ec4899",
+  "tempoEstimado": "6 horas",
+  "fpRecompensa": 0,
+  "tags": ["linguagens", "ENEM", "variacao-linguistica", "sociolinguistica"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Conceitos Fundamentais",
+      "resumo": "Língua, linguagem, norma-padrão, variação e diversidade linguística no português brasileiro.",
+      "topicos": [
+        {
+          "titulo": "Língua e Variação Linguística",
+          "conteudo": "A língua não é homogênea nem estática: varia no tempo (diacronia), no espaço geográfico (diatopia), entre grupos sociais (diastrasia) e conforme situação comunicativa (diafasia). O português falado em Portugal difere do brasileiro; o falado no Nordeste difere do Sul; o falado por pessoas escolarizadas difere do falado por pessoas com pouca escolaridade; e todos ajustam linguagem conforme contexto: formal com chefe, informal com amigos.\n\nA variação linguística é fenômeno natural, universal, inevitável. Não existe língua que não apresente variações. O erro é considerar apenas uma variedade como 'correta' e as demais como 'erradas'. Sociolinguística, área da Linguística que estuda variação, demonstra que todas as variedades têm estrutura, lógica e eficiência comunicativa - apenas diferem em prestígio social.\n\nA norma-padrão (ou norma culta) é variedade de prestígio, codificada em gramáticas e dicionários, ensinada na escola, utilizada em contextos formais (documentos oficiais, textos acadêmicos, literatura canônica). Não é 'melhor' linguisticamente, mas tem maior prestígio social. Outras variedades (coloquial, regional, popular) são igualmente válidas linguisticamente, embora tenham menor prestígio em determinados contextos.\n\nNo ENEM, a perspectiva sociolinguística é predominante: questões exploram respeito à diversidade, combate ao preconceito linguístico, reconhecimento de adequação contextual (não existe 'erro', mas 'inadequação ao contexto'), e valorização de variedades populares como sistemas linguísticos legítimos. É fundamental compreender que variação não é degeneração, mas riqueza cultural e identitária."
+        },
+        {
+          "titulo": "Tipos de Variação Linguística",
+          "conteudo": "A variação diatópica (ou geográfica/regional) ocorre em diferentes regiões. No Brasil: sotaque carioca, paulista, gaúcho, nordestino; vocabulário regional ('aipim'/'macaxeira'/'mandioca'; 'mexerica'/'tangerina'/'bergamota'); construções sintáticas ('tu vai' no Sul e Norte vs. 'você vai' no Sudeste). Dialetos regionais não são desvios, mas variedades legítimas que expressam identidade local.\n\nA variação diastrática (ou social) relaciona-se a classe social, escolaridade, profissão, idade, gênero. Pessoas com alta escolaridade tendem a usar variedade mais próxima da norma-padrão; pessoas com baixa escolaridade usam variedade popular. Profissões criam jargões técnicos (médico fala diferente de engenheiro). Jovens usam gírias que idosos não usam. Não é questão de capacidade, mas de acesso a educação formal e contextos de uso.\n\nA variação diafásica (ou situacional/estilística) ocorre conforme contexto comunicativo. Mesma pessoa ajusta linguagem: formal em entrevista de emprego, informal com amigos, técnica em apresentação acadêmica. A adequação ao contexto é competência comunicativa essencial: saber quando usar 'você' ou 'senhor', quando empregar gíria ou termo técnico.\n\nA variação diacrônica (ou histórica) é mudança da língua ao longo do tempo. Português do século XVI (Camões) difere do atual. Palavras mudam significado ('você' vem de 'vossa mercê'), novas palavras surgem ('internet', 'selfie'), construções antigas desaparecem ('vós'). Mudança linguística é inevitável e natural, não decadência. No ENEM, textos de épocas diferentes evidenciam evolução da língua e mostram que 'erro' de hoje pode ser norma de amanhã."
+        },
+        {
+          "titulo": "Norma-Padrão e Outras Variedades",
+          "conteudo": "A norma-padrão (ou norma culta) é variedade de prestígio, codificada e ensinada na escola. Caracteriza-se por: respeito à concordância nominal e verbal ('os meninos estudam', não 'os menino estuda'), regência conforme gramática normativa ('assisto ao filme', não 'assisto o filme'), colocação pronominal prescrita ('dei-lhe', não 'lhe dei' em início de frase), vocabulário formal, ausência de gírias e marcadores de oralidade.\n\nA norma-padrão é importante em contextos formais: redações escolares, concursos, documentos oficiais, comunicação profissional. Dominar norma-padrão é ferramenta de ascensão social e ampliação de possibilidades comunicativas. Não dominá-la pode limitar acesso a espaços sociais valorizados. Porém, norma-padrão não é 'a língua correta', mas UMA variedade adequada a DETERMINADOS contextos.\n\nVariedades coloquiais e populares são usadas cotidianamente pela maioria dos falantes. Caracterizam-se por: maior liberdade com concordância ('nós vai', 'a gente vamos'), simplificação de estruturas complexas, uso de gírias e expressões informais, marcadores de oralidade ('né', 'tipo assim'), construções não previstas pela gramática normativa mas amplamente aceitas ('pra mim fazer' em vez de 'para eu fazer').\n\nNo ENEM, é crucial reconhecer que variedades populares NÃO são 'erros', mas sistemas linguísticos coerentes com regras próprias. O conceito de 'erro' deve ser substituído por 'adequação ao contexto': usar variedade popular em contexto que exige norma-padrão é inadequação, não erro linguístico em si. A postura do ENEM combate preconceito linguístico e valoriza pluralidade, mas exige domínio da norma-padrão na redação."
+        },
+        {
+          "titulo": "Preconceito Linguístico",
+          "conteudo": "Preconceito linguístico é discriminação de pessoa ou grupo com base em sua variedade linguística. Exemplos: ridicularizar sotaque nordestino, considerar fala popular como 'burrice', julgar pessoa incapaz intelectualmente por não dominar norma-padrão. Preconceito linguístico é, na verdade, preconceito social disfarçado: discrimina-se não a língua, mas origem social, regional ou nível educacional.\n\nMarcos Bagno, linguista brasileiro, combate mitos do preconceito linguístico: 'Brasileiro não sabe português' (falso - todo falante nativo domina perfeitamente sua variedade); 'É preciso saber gramática para falar bem' (falso - gramática normativa é conhecimento consciente sobre língua, não requisito para falar); 'Português é muito difícil' (falso - dificuldade está em decorar norma artificial, não em dominar língua materna).\n\nO preconceito linguístico manifesta-se em: julgar pessoa pela fala ('Ela fala errado, deve ser ignorante'); ridicularizar sotaque ou vocabulário regional; impor norma-padrão como única válida; não reconhecer legitimidade de variedades populares. Consequências: exclusão social, baixa autoestima linguística, reprodução de desigualdades. Combater preconceito linguístico é combater injustiça social.\n\nNo ENEM, questões exploram identificação de preconceito linguístico em textos, análise crítica de discursos normativos excludentes, valorização da diversidade como riqueza cultural. É consenso na Linguística moderna: variedades linguísticas não são hierarquizáveis em 'certas' ou 'erradas', mas em 'adequadas' ou 'inadequadas' a contextos específicos. Respeitar variedade alheia é respeitar identidade, cultura e dignidade."
+        }
+      ],
+      "exemplos": [
+        "Variação regional: 'aipim' (SP), 'macaxeira' (NE), 'mandioca' (Sul) = mesma raiz",
+        "Variação social: 'Nós vai' (popular) vs. 'Nós vamos' (culta)",
+        "Variação situacional: 'E aí?' (informal) vs. 'Como vai?' (formal)",
+        "Preconceito linguístico: julgar pessoa 'ignorante' por sotaque ou gíria"
+      ],
+      "dicas": [
+        "Diatópica = geográfica; Diastrática = social; Diafásica = situacional; Diacrônica = temporal",
+        "Norma-padrão NÃO é 'certa', mas PRESTIGIADA socialmente",
+        "Variedades populares têm lógica e estrutura - não são 'erradas'",
+        "No ENEM: combate ao preconceito linguístico e valorização da diversidade"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Leia o diálogo:\n\nFalante A: 'Nós vai na festa hoje à noite.'\nFalante B: 'Que absurdo! O correto é \"Nós vamos\". Você não sabe português!'\n\nA postura do Falante B revela:",
+          "alternativas": {
+            "A": "Conhecimento linguístico científico sobre variação e adequação contextual",
+            "B": "Preconceito linguístico ao julgar variedade popular como ignorância",
+            "C": "Defesa legítima da norma-padrão em contexto que a exige",
+            "D": "Análise objetiva da inadequação sintática em qualquer contexto",
+            "E": "Valorização da diversidade linguística e respeito às diferenças"
+          },
+          "correta": "B",
+          "explicacao": "O Falante B demonstra preconceito linguístico: julga pessoa incapaz ('não sabe português') com base em uso de variedade popular ('Nós vai'). Sociolinguisticamente, 'Nós vai' é estrutura comum em variedades populares do português brasileiro, com lógica própria (simplificação da concordância). Não é 'erro', mas variedade diferente da norma-padrão. O preconceito está em: 1) Negar validade da variedade; 2) Julgar pessoa pela fala; 3) Impor norma-padrão como única válida. Em contexto informal, 'Nós vai' é perfeitamente adequado. Não há conhecimento científico na postura B (ciência reconhece validade de variedades); não há defesa legítima (contexto não exige formalidade); não é análise objetiva (é julgamento preconceituoso); e não valoriza diversidade (desrespeita).",
+          "dificuldade": "facil",
+          "tags": ["variacao", "preconceito-linguistico"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Analise os termos regionais:\n\nSudeste: mexerica, aipim, pipa\nNordeste: tangerina, macaxeira, arraia\nSul: bergamota, mandioca, pandorga\n\nOs termos exemplificam:",
+          "alternativas": {
+            "A": "Variação diacrônica, mostrando evolução histórica da língua",
+            "B": "Variação diastrática, relacionada à escolaridade dos falantes",
+            "C": "Variação diatópica, vocabulário diferenciado por região geográfica",
+            "D": "Variação diafásica, adequação vocabular ao contexto comunicativo",
+            "E": "Erro linguístico regional que deve ser corrigido pela norma-padrão"
+          },
+          "correta": "C",
+          "explicacao": "Os termos exemplificam variação diatópica (geográfica/regional): diferentes regiões do Brasil usam palavras distintas para designar os mesmos objetos. 'Mexerica'/'tangerina'/'bergamota' referem-se à mesma fruta cítrica; 'aipim'/'macaxeira'/'mandioca' à mesma raiz; 'pipa'/'arraia'/'pandorga' ao mesmo brinquedo. Não é variação diacrônica (temporal - todos os termos coexistem atualmente). Não é diastrática (social - não se relaciona a escolaridade, mas a região). Não é diafásica (situacional - não depende de formalidade). NÃO são erros: são variedades regionais legítimas que expressam identidade cultural local. O ENEM valoriza diversidade regional como riqueza linguística e cultural.",
+          "dificuldade": "facil",
+          "tags": ["variacao", "diatopica", "regional"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Observe a adequação linguística:\n\nContexto A (WhatsApp entre amigos): 'E aí, cara, bora no cinema hj?'\nContexto B (E-mail profissional): 'Prezado Senhor, gostaria de convidá-lo para reunião hoje.'\n\nO fenômeno linguístico observado é:",
+          "alternativas": {
+            "A": "Erro de português no Contexto A que deve ser evitado",
+            "B": "Variação diafásica: adequação da linguagem ao contexto comunicativo",
+            "C": "Variação diatópica: diferença regional entre falantes",
+            "D": "Variação diacrônica: mudança da língua ao longo do tempo",
+            "E": "Preconceito linguístico contra linguagem informal"
+          },
+          "correta": "B",
+          "explicacao": "O exemplo mostra variação diafásica (situacional/estilística): mesma pessoa ajusta linguagem conforme contexto. No WhatsApp informal, usa gíria ('cara'), abreviação ('hj'), construção coloquial ('bora'). No e-mail profissional, usa tratamento formal ('Prezado Senhor'), vocabulário técnico, estrutura completa. Não é erro: é competência comunicativa - saber adequar registro ao contexto. Não é variação geográfica (mesma pessoa, lugares diferentes não estão em questão). Não é temporal (ambos são contemporâneos). Não é preconceito contra informal: ambos os registros são válidos em seus contextos. A inadequação seria usar linguagem de A no contexto B, ou vice-versa. O ENEM valoriza competência de adequação contextual.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "diafasica", "adequacao"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Leia o trecho de Camões (século XVI):\n\n'Vós, ó cobiça, que fazeis que um santo\nVire demônio e anjo em Lúcifer'\n\nCompare com português atual:\n\n'Vocês, ó cobiça, que fazem que um santo\nVire demônio e anjo em Lúcifer'\n\nA mudança evidencia:",
+          "alternativas": {
+            "A": "Erro de concordância na versão moderna",
+            "B": "Variação diacrônica: 'vós' caiu em desuso, substituído por 'vocês'",
+            "C": "Variação diatópica regional entre Portugal e Brasil",
+            "D": "Empobrecimento da língua portuguesa contemporânea",
+            "E": "Preconceito linguístico contra pronome 'vós'"
+          },
+          "correta": "B",
+          "explicacao": "A mudança exemplifica variação diacrônica (histórica): o pronome 'vós' (2ª pessoa do plural) caiu em desuso no português brasileiro, substituído por 'vocês' (3ª pessoa). Com isso, verbo muda: 'fazeis' (2ª pessoa) vira 'fazem' (3ª pessoa). Não é erro na versão moderna: é evolução natural da língua - 'vocês' tornou-se norma-padrão brasileira. Não é apenas variação regional (em Portugal 'vós' também está em desuso, embora em menor grau). Não é 'empobrecimento': mudança linguística não é degeneração, mas transformação natural. Toda língua muda: latim virou português; português de Camões virou português atual. Não há preconceito: simplesmente 'vós' saiu de uso. O ENEM aborda mudança linguística sem julgamento de valor (melhor/pior).",
+          "dificuldade": "medio",
+          "tags": ["variacao", "diacronica", "mudanca-linguistica"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Analise a afirmação:\n\n'A variedade linguística popular, usada por pessoas com baixa escolaridade, é estruturalmente inferior e ilógica, comprovando falta de capacidade intelectual.'\n\nDo ponto de vista sociolinguístico, a afirmação é:",
+          "alternativas": {
+            "A": "Verdadeira: variedades populares carecem de estrutura lógica",
+            "B": "Verdadeira: norma-padrão é linguisticamente superior às demais",
+            "C": "Falsa: todas as variedades têm estrutura e lógica, diferindo apenas em prestígio social",
+            "D": "Verdadeira: escolaridade comprova capacidade intelectual através da língua",
+            "E": "Parcialmente verdadeira: variedades populares são menos desenvolvidas"
+          },
+          "correta": "C",
+          "explicacao": "A afirmação é FALSA sob perspectiva sociolinguística: todas as variedades linguísticas (cultas ou populares) possuem estrutura gramatical consistente, lógica interna e eficiência comunicativa. Variedades populares seguem regras - apenas diferem das regras da norma-padrão. Exemplo: 'Os menino foi' (popular) tem lógica de marcação de plural apenas no determinante, economizando flexões - não é ausência de lógica, mas lógica diferente. Língua não é indicador de capacidade intelectual: pessoa pode ser brilhante falando variedade popular e medíocre dominando norma-padrão. Diferença está em acesso à educação formal, não em inteligência. Julgar variedade como 'inferior' é preconceito social disfarçado de 'correção linguística'. O ENEM adota perspectiva científica da Sociolinguística: variedades diferem em prestígio social, não em qualidade linguística.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "preconceito-linguistico", "sociolinguistica"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Variação Regional no Brasil",
+      "resumo": "Dialetos regionais brasileiros: características fonéticas, lexicais e sintáticas das diferentes regiões.",
+      "topicos": [
+        {
+          "titulo": "Variação Fonética Regional",
+          "conteudo": "A variação fonética (pronúncia) é aspecto mais perceptível das diferenças regionais, constituindo os 'sotaques'. No Rio de Janeiro, há chiado do 's' em final de sílaba ('escola' soa como 'eXcola'); 'r' em final de sílaba soa como 'r' gutural ('porta' soa 'poHta'). Em São Paulo, 'r' em final de sílaba é retroflexo ('caipira'). No Nordeste, vogais são mais abertas, 'l' em final pode virar 'u' ('Brasil' soa 'Brasiu').\n\nNo Sul, influência do espanhol e italiano produz pronúncia característica: 'r' alveolar múltiplo (vibrante), vogais mais fechadas, entonação particular. No Norte, influência indígena aparece em pronúncia de palavras e entonação. Em Brasília (região Centro-Oeste), por ser cidade planejada com migrantes de todo Brasil, o sotaque é mais neutro, misturando características.\n\nA variação fonética não interfere na compreensão mútua (brasileiros de diferentes regiões se entendem), mas marca identidade regional forte. Sotaque revela origem, pertencimento, história pessoal. Infelizmente, sotaques nordestinos e rurais frequentemente sofrem preconceito no Sudeste urbano, associados equivocadamente a 'falta de cultura'.\n\nNo ENEM, questões sobre variação fonética exploram reconhecimento de sotaques em textos (poesias que reproduzem fala regional, transcrições de depoimentos orais), compreensão de que pronúncia diferente não é 'erro', e combate ao preconceito contra sotaques. É importante perceber que variação fonética é riqueza cultural, não defeito a ser corrigido. O ideal de 'pronúncia correta única' não existe cientificamente."
+        },
+        {
+          "titulo": "Variação Lexical Regional",
+          "conteudo": "A variação lexical (vocabulário) é evidente nas diferenças regionais de denominação para objetos, alimentos, ações. Exemplos: 'aipim' (SP), 'macaxeira' (NE), 'mandioca' (Sul) designam mesma raiz; 'mexerica' (SP), 'tangerina' (NE), 'bergamota' (Sul) referem-se à mesma fruta; 'pipa' (Sudeste), 'arraia' (NE), 'pandorga' (Sul) ao mesmo brinquedo voador.\n\nExpressões idiomáticas também variam: 'estar na pior' (geral), 'estar de mal' (RJ), 'estar jururu' (NE). Cumprimentos: 'E aí?' (SP/RJ), 'Ô xente!' (NE), 'Bah, tchê!' (RS). Comidas: 'pão francês' (SP), 'cacetinho' (RS), 'pão careca' (MG), 'pão de sal' (SC) - mesmo alimento, nomes diferentes.\n\nA variação lexical resulta de: história local (imigração: Sul tem germanismos e italianismos; SP tem japonesismos), povos originários (Norte/NE: tupismos como 'tatu', 'capim'), clima e geografia (regiões litorâneas têm vocabulário marítimo rico; interior tem termos rurais). Vocabulário reflete cultura, economia, relações sociais de cada região.\n\nNo ENEM, questões de variação lexical exploram reconhecimento de regionalismo em textos literários (Guimarães Rosa usa vocabulário sertanejo; João Cabral vocabulário nordestino), charges sobre mal-entendidos linguísticos regionais, e valorização da diversidade lexical como patrimônio cultural. Importante: regionalismo NÃO é erro - é variedade legítima. Substituir regionalismo por termo 'padrão' pode empobrecer expressividade e apagar identidade cultural."
+        },
+        {
+          "titulo": "Variação Sintática Regional",
+          "conteudo": "A variação sintática (construção de frases) é menos perceptível que fonética ou lexical, mas existe. No Sul e Norte, uso de 'tu' com verbo na 3ª pessoa: 'Tu vai' (em vez de 'Tu vais' da norma-padrão). No Sudeste urbano, predomina 'você' em vez de 'tu'. Ambas são construções aceitas no português brasileiro atual, com distribuição regional.\n\nFormas de posse também variam: 'O livro da Maria' (mais geral) vs. 'O livro de Maria' (certas regiões). Ordem dos pronomes: 'Me dá' (oral, geral) vs. 'Dá-me' (norma-padrão escrita). Concordância verbal com sujeito composto: 'Eu e ele vamos' (padrão) pode virar 'Eu e ele vai' em variedades populares. Uso de 'a gente' em vez de 'nós': 'A gente fomos' (concordância ideológica) vs. 'A gente foi' (concordância gramatical).\n\nAs variações sintáticas regionais não comprometem comunicação, mas podem chocar falantes de outras regiões ou serem estigmatizadas em contextos formais. Por exemplo, 'Tu vai' é perfeitamente natural e aceito no Sul, mas pode ser visto como 'erro' em prova de concurso que exija norma-padrão estrita (que prescreveria 'Tu vais' ou 'Você vai').\n\nNo ENEM, variação sintática aparece em análise de textos orais transcritos, literatura regionalista, e reflexões sobre adequação contextual. É importante reconhecer que construções sintáticas divergentes da norma-padrão não são 'erros gramaticais', mas variedades socioletais e dialetais legítimas. O preconceito contra construções populares (como 'nós vai', 'os menino') deve ser combatido como preconceito social."
+        },
+        {
+          "titulo": "Literatura Regionalista",
+          "conteudo": "A literatura regionalista brasileira valoriza variedades linguísticas regionais, incorporando-as artisticamente. Guimarães Rosa, em 'Grande Sertão: Veredas', recria fala sertaneja mineira: neologismos, sintaxe peculiar, vocabulário regional ('travessia', 'nonada', 'jagunço'). João Cabral de Melo Neto reproduz linguagem nordestina em 'Morte e Vida Severina', usando vocabulário, ritmo e imagens da cultura popular.\n\nGraciliano Ramos, em 'Vidas Secas', representa pensamento fragmentado do sertanejo Fabiano através de sintaxe truncada e vocabulário limitado - não para ridicularizar, mas para expressar alienação e opressão. Jorge Amado recria fala baiana com expressões, ritmo e vocabulário da Bahia. José Lins do Rego documenta vocabulário açucareiro nordestino. Mário de Andrade, modernista, incorpora linguagem oral paulista em 'Macunaíma'.\n\nA valorização literária de variedades regionais é dupla: preservação de patrimônio cultural linguístico e afirmação identitária contra hegemonia das variedades urbanas do Sudeste. Literatura mostra que regionalismo não é 'falar errado', mas falar diferente, expressando visão de mundo, valores e história particulares. A beleza estética dessas obras prova valor artístico das variedades não-padrão.\n\nNo ENEM, trechos de literatura regionalista aparecem em questões sobre variação linguística, análise de efeitos estilísticos do uso de variedades regionais, e interpretação do contexto sociocultural. É essencial perceber que escritor não reproduz variedade por ignorância da norma-padrão (Rosa, por exemplo, conhecia profundamente língua), mas por escolha estética consciente: variedade regional é recurso expressivo, não limitação."
+        }
+      ],
+      "exemplos": [
+        "Fonética: Rio 'eXcola' (chiado), São Paulo 'poRta' (retroflexo), Nordeste 'Brasiu'",
+        "Lexical: 'pão francês' (SP), 'cacetinho' (RS), 'pão de sal' (SC) = mesmo pão",
+        "Sintática: 'Tu vai' (Sul/Norte) vs. 'Você vai' (Sudeste)",
+        "Literatura: Guimarães Rosa recriando fala sertaneja em 'Grande Sertão: Veredas'"
+      ],
+      "dicas": [
+        "Sotaque (fonética) é marca mais visível de identidade regional",
+        "Vocabulário regional (lexical) reflete cultura, história, geografia locais",
+        "Sintaxe regional pode chocar mas é variedade legítima, não erro",
+        "Literatura regionalista valoriza variedades linguísticas artisticamente"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Leia o trecho:\n\n'Nonada. Tiros que o senhor ouviu foram de briga de homem não, Deus esteja. Alvejei mira em árvores no quintal, no baixo do córrego. Por meu acerto.'\n\n(Guimarães Rosa, 'Grande Sertão: Veredas')\n\nO uso de 'Nonada', 'Alvejei mira', 'Por meu acerto' caracteriza:",
+          "alternativas": {
+            "A": "Erro gramatical por desconhecimento da norma-padrão pelo autor",
+            "B": "Reprodução artística de variedade regional sertaneja",
+            "C": "Tentativa falha de imitar linguagem culta formal",
+            "D": "Preconceito linguístico contra falantes do interior",
+            "E": "Escrita aleatória sem estrutura ou lógica gramatical"
+          },
+          "correta": "B",
+          "explicacao": "Guimarães Rosa recria artisticamente variedade linguística do sertão mineiro: 'Nonada' (nada, não foi nada), 'Alvejei mira' (mirei, atirei), 'Por meu acerto' (para treinar pontaria) são expressões regionais, neologismos e sintaxe peculiar do sertanejo. Não é erro: Rosa dominava perfundamente português erudito, foi diplomata, falava várias línguas. A escolha de variedade regional é estética e ideológica: valorizar linguagem sertaneja como matéria literária nobre. Não é tentativa falha de linguagem culta (é escolha deliberada de variedade regional). Não é preconceito (é valorização). Não é escrita aleatória (tem estrutura, lógica e consistência próprias). O ENEM valoriza compreensão de que variedades regionais na literatura são recursos expressivos conscientes.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "regional", "literatura"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Observe o diálogo:\n\nPaulista: 'Vamos empinar pipa no parque?'\nGaúcho: 'Como assim pipa? Aquilo é pandorga!'\nNordestino: 'Vocês estão falando de arraia, né?'\n\nO fenômeno linguístico ilustrado é:",
+          "alternativas": {
+            "A": "Erro de vocabulário cometido por dois dos três falantes",
+            "B": "Variação lexical diatópica: diferentes regiões nomeiam diferentemente mesmo objeto",
+            "C": "Preconceito linguístico do gaúcho e nordestino contra paulista",
+            "D": "Mudança diacrônica: palavra antiga sendo substituída por moderna",
+            "E": "Falta de educação formal dos falantes que não conhecem termo correto"
+          },
+          "correta": "B",
+          "explicacao": "O diálogo ilustra variação lexical diatópica (geográfica): 'pipa' (Sudeste), 'pandorga' (Sul), 'arraia' (Nordeste) são denominações regionais para o mesmo brinquedo voador de papel. NENHUMA está 'errada': todas são legítimas em suas regiões. Não é erro de vocabulário (todos estão corretos regionalmente). Não é preconceito (é simples diferença regional sem julgamento). Não é mudança temporal (termos coexistem atualmente). Não é falta de educação (regionalismo independe de escolaridade). A diversidade lexical reflete história, cultura e identidade regionais. O ENEM frequentemente usa situações assim para mostrar que 'correto' é relativo ao contexto geográfico e social - não existe 'palavra única correta' para objetos cotidianos.",
+          "dificuldade": "facil",
+          "tags": ["variacao", "lexical", "regional"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Analise as construções:\n\nRegião A: 'Tu vai ao cinema hoje?'\nRegião B: 'Você vai ao cinema hoje?'\nNorma-padrão: 'Tu vais ao cinema hoje?'\n\nAs construções A e B representam:",
+          "alternativas": {
+            "A": "Erros gramaticais graves que devem ser evitados",
+            "B": "Variações regionais legítimas, embora divergentes da norma-padrão",
+            "C": "Tentativa fracassada de reproduzir linguagem culta",
+            "D": "Degradação da língua portuguesa contemporânea",
+            "E": "Uso exclusivo de pessoas sem escolaridade"
+          },
+          "correta": "B",
+          "explicacao": "'Tu vai' (Região A - Sul/Norte do Brasil) e 'Você vai' (Região B - Sudeste urbano) são variações regionais legítimas do português brasileiro. 'Tu vai' combina pronome 'tu' com verbo na 3ª pessoa (padrão: 'tu' + 2ª pessoa = 'vais'), mas essa combinação é norma em certas regiões, usada por pessoas de todos os níveis de escolaridade. 'Você' substituiu 'tu' em grande parte do Brasil. Ambas divergem da prescrição gramatical tradicional ('tu vais'), mas são aceitas e naturais no uso real. Não são erros graves (são variações socioletais). Não são degradação (são evolução natural). Não são exclusivas de pessoas sem escolaridade (professores, médicos, advogados no Sul dizem 'tu vai' naturalmente). O ENEM reconhece legitimidade de variedades regionais, embora exija norma-padrão na redação.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "sintatica", "regional"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Leia o trecho de charge:\n\n[Personagem nordestino em entrevista de emprego em São Paulo]\nEntrevistador: 'Qual sua experiência com computadores?'\nCandidato: 'Ah, moço, eu mexo bem com o trem, viu?'\nEntrevistador (pensando): 'Trem? Ele é ferroviário?'\n\nO humor da charge baseia-se em:",
+          "alternativas": {
+            "A": "Preconceito legitimo contra falantes nordestinos sem qualificação",
+            "B": "Mal-entendido causado por variação lexical regional: 'trem' = coisa (MG/NE)",
+            "C": "Erro vocabular do candidato que não sabe português correto",
+            "D": "Crítica à incompetência de nordestinos para empregos técnicos",
+            "E": "Demonstração de inferioridade cultural das regiões rurais"
+          },
+          "correta": "B",
+          "explicacao": "O humor baseia-se em mal-entendido linguístico: 'trem' em variedades mineiras/nordestinas é regionalismo para 'coisa' genérica ('mexo bem com o trem' = 'mexo bem com computadores'). Entrevistador paulista interpreta literalmente ('trem' = veículo ferroviário), gerando confusão. Não é erro do candidato: 'trem' = coisa é uso legítimo regional. A charge pode ter dois tons: 1) Humor inocente sobre diferenças regionais; 2) Crítica ao preconceito linguístico quando empregador julga candidato 'incompetente' por falar diferente. NÃO é preconceito legítimo (preconceito linguístico nunca é legítimo). Não é erro vocabular (é regionalismo). Não critica competência nordestina (critica mal-entendido ou preconceito do entrevistador). Não demonstra inferioridade (demonstra diversidade). O ENEM usa situações assim para conscientizar sobre preconceito linguístico velado.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "regional", "preconceito"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Compare:\n\nTexto I: 'No Rio de Janeiro, pronuncia-se \"eXcola\" (com chiado do s).'\nTexto II: 'No interior de São Paulo, pronuncia-se \"poRta\" (com r retroflexo).'\nTexto III: 'A pronúncia correta é sem chiado nem retroflexo, conforme dicionário.'\n\nA afirmação do Texto III é:",
+          "alternativas": {
+            "A": "Verdadeira: dicionários definem pronúncia correta única",
+            "B": "Falsa: não existe pronúncia 'correta' única, mas variações regionais legítimas",
+            "C": "Verdadeira: sotaques regionais são desvios da norma culta",
+            "D": "Falsa: apenas cariocas falam corretamente português brasileiro",
+            "E": "Verdadeira: educação formal elimina sotaques regionais"
+          },
+          "correta": "B",
+          "explicacao": "O Texto III está FALSO sob perspectiva linguística: não existe 'pronúncia correta única'. Variações fonéticas regionais (sotaques) são legítimas e naturais, não desvios ou erros. Dicionários podem indicar pronúncia de referência (geralmente baseada em variedades urbanas prestigiadas), mas isso não invalida sotaques regionais. Chiado carioca, retroflexo paulista, abertura nordestina são características fonéticas de variedades do português brasileiro - nenhuma é 'errada'. Não é verdade que só cariocas falam corretamente (absurdo). Educação formal não elimina nem deve eliminar sotaque - sotaque é marca identitária, não defeito. Tentar impor pronúncia 'única' é preconceito linguístico disfarçado de 'correção'. O ENEM defende: sotaques são patrimônio cultural, diversidade linguística é riqueza, não há hierarquia de 'melhor' pronúncia.",
+          "dificuldade": "facil",
+          "tags": ["variacao", "fonetica", "preconceito"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Variação Social e Adequação",
+      "resumo": "Variação diastrática, registros formal e informal, gírias, jargões e adequação ao contexto.",
+      "topicos": [
+        {
+          "titulo": "Variação Diastrática: Classes Sociais",
+          "conteudo": "A variação diastrática relaciona-se a fatores sociais: classe socioeconômica, escolaridade, profissão, idade, gênero. Pessoas com alta escolaridade tendem a usar variedade próxima à norma-padrão porque tiveram acesso prolongado a educação formal que ensina essa variedade. Pessoas com baixa escolaridade usam variedades populares não por incapacidade, mas por falta de acesso a contextos que exijam/ensinem norma-padrão.\n\nA escolaridade é fator mais determinante que classe econômica: pessoa rica mas pouco escolarizada pode usar variedade popular; pessoa pobre mas escolarizada pode dominar norma-padrão. Porém, escolaridade geralmente correlaciona-se com classe social: pobres têm menos acesso a educação de qualidade. Assim, variedades populares ficam estigmatizadas, associadas a pobreza, ignorância, marginalidade - preconceito social disfarçado de linguístico.\n\nJovens usam gírias, expressões e construções que idosos não usam (variação etária). Mulheres e homens historicamente falavam diferente (variação de gênero): mulheres eram socializadas para linguagem 'polida', homens para linguagem 'direta' - padrões que estão mudando. Profissionais desenvolvem jargões técnicos: médicos falam diferente de advogados, programadores de jornalistas.\n\nNo ENEM, variação diastrática aparece em análise de textos orais de falantes de diferentes perfis sociais, reflexões sobre desigualdade social manifesta na língua, e combate ao preconceito que julga pessoa pela variedade linguística. É essencial compreender: variedade linguística não revela capacidade intelectual ou caráter moral, apenas história educacional e contextos de socialização. Dominar múltiplas variedades (competência pluridialetalista) amplia possibilidades comunicativas."
+        },
+        {
+          "titulo": "Registros: Formal e Informal",
+          "conteudo": "Registro é variedade linguística escolhida conforme contexto comunicativo. Registro formal: usado em situações oficiais, acadêmicas, profissionais, com interlocutores hierarquicamente superiores ou desconhecidos. Características: respeito à norma-padrão, vocabulário técnico ou rebuscado, ausência de gírias, construções sintáticas complexas, tratamento por 'Senhor/Senhora', distanciamento.\n\nRegistro informal (ou coloquial): usado entre amigos, familiares, em contextos descontraídos. Características: maior liberdade com norma-padrão, gírias e expressões populares, vocabulário simples, construções sintáticas simplificadas, tratamento por 'você' ou primeiro nome, proximidade. Exemplo: 'Prezado Senhor, venho por meio desta solicitar' (formal) vs. 'Oi, queria pedir' (informal).\n\nA escolha de registro adequado é competência comunicativa essencial. Usar registro informal em contexto formal gera inadequação: entrevista de emprego com 'E aí, chefe, bora fechar esse trampo?' seria inadequado. Inversamente, usar registro formal entre amigos soa pedante, distanciado: 'Prezado amigo, solicito-lhe que nos encontremos no estabelecimento comercial' em vez de 'Cara, bora no bar?'\n\nNo ENEM, adequação de registro é frequentemente cobrada: identificar qual texto usa registro adequado ao contexto proposto, analisar efeitos de inadequação, compreender que inadequação contextual não é 'erro linguístico absoluto', mas desajuste entre forma e situação. Na redação do ENEM, exige-se registro formal: candidato deve dominar norma-padrão, evitar gírias, usar vocabulário apropriado. Demonstrar competência de transitar entre registros mostra domínio amplo da língua."
+        },
+        {
+          "titulo": "Gírias e Jargões",
+          "conteudo": "Gíria é vocabulário informal, geralmente efêmero, usado por grupos específicos (jovens, profissionais, grupos marginalizados). Características: criatividade lexical, neologismos, ressignificação de palavras existentes, caráter identitário (pertencimento ao grupo), efemeridade (gírias mudam rapidamente). Exemplos: 'mano', 'cara', 'tipo assim', 'massa', 'legal', 'da hora', 'lacrou', 'mitou'.\n\nGírias originam-se de: juventude urbana (maior produtora), grupos marginalizados (presidiários, usuários de drogas - linguagem críptica para não serem entendidos), influência estrangeira (anglicismos: 'deletar', 'printar'), internetês (abreviações, neologismos: 'shippar', 'stalkear'). Gírias populares podem ser incorporadas à língua geral: 'legal', 'bacana' eram gírias, hoje são vocabulário comum.\n\nJargão é vocabulário técnico de profissões ou áreas do conhecimento. Medicina: 'hemiplegia', 'taquicardia', 'prognóstico'. Direito: 'petição inicial', 'habeas corpus', 'liminar'. Informática: 'bug', 'firewall', 'interface'. Jargões são necessários para comunicação eficiente entre especialistas, mas podem excluir leigos (hermetismo técnico). Usar jargão inadequadamente com público leigo é erro comunicativo.\n\nNo ENEM, gírias e jargões aparecem em análise de adequação contextual: quando usar, quando evitar. Gírias são inadequadas em contextos formais (redação ENEM não deve ter gírias). Jargões devem ser evitados ou explicados quando público é leigo. Textos de divulgação científica equilibram precisão técnica com acessibilidade, explicando termos. Dominar gírias e jargões do próprio campo amplia competência comunicativa, mas saber quando NÃO usá-los é igualmente importante."
+        },
+        {
+          "titulo": "Competência Comunicativa e Multilinguismo",
+          "conteudo": "Competência comunicativa não é apenas dominar norma-padrão, mas transitar entre variedades conforme contexto: falar formal em entrevista, informal com amigos, técnico com colegas de profissão, regional com familiares da mesma origem. Quanto mais variedades domina, maior autonomia comunicativa. Monolinguismo (dominar apenas uma variedade) limita; pluridialetismo amplia.\n\nO ideal não é substituir variedade popular por culta (apagando identidade), mas ADICIONAR competência em norma-padrão ao repertório. Pessoa pode manter variedade regional/popular em contextos apropriados E dominar norma-padrão para contextos que a exigem. Educação linguística eficaz não combate variedades populares, mas ensina norma-padrão como ferramenta adicional, não como substituição.\n\nErros pedagógicos comuns: 1) Dizer que variedade do aluno está 'errada' (gera insegurança, baixa autoestima); 2) Impor norma-padrão em todos os contextos (apaga identidade); 3) Não ensinar norma-padrão adequadamente (priva aluno de ferramenta de ascensão). Abordagem correta: valorizar variedade de origem, explicar contextos onde norma-padrão é necessária, ensinar norma-padrão sem deslegitimar outras variedades.\n\nNo ENEM, competência comunicativa é valorizada: questões exploram reconhecimento de adequação contextual, análise de situações onde falante ajusta linguagem, e reflexão sobre importância de dominar múltiplas variedades. Na redação, exige-se norma-padrão porque redação formal exige registro formal - mas isso não invalida outras variedades em outros contextos. Cidadão linguisticamente competente transita fluidamente entre registros, variedades e contextos, sabendo quando usar cada um."
+        }
+      ],
+      "exemplos": [
+        "Diastrática: Pessoa escolarizada tende a usar norma-padrão; pessoa sem escolaridade, popular",
+        "Formal: 'Prezado Senhor, venho solicitar'; Informal: 'Oi, queria pedir'",
+        "Gíria: 'Cara', 'mano', 'massa', 'lacrou' (jovens, efêmero)",
+        "Jargão médico: 'taquicardia', 'prognóstico' (técnico, especializado)"
+      ],
+      "dicas": [
+        "Variação social (diastrática) relaciona-se a escolaridade, profissão, idade",
+        "Formal = contextos oficiais; Informal = contextos descontraídos",
+        "Gíria = grupo específico, efêmera; Jargão = profissão, técnico",
+        "Competência = dominar múltiplas variedades e saber quando usar cada uma"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Analise os textos:\n\nA: 'Fala, mano! Bora dar um role no shopping, tipo, pegar um cineminha. Daora?'\nB: 'Prezado amigo, sugiro que nos encontremos no centro comercial para apreciarmos projeção cinematográfica. Concorda?'\n\nA inadequação de ambos os textos está em:",
+          "alternativas": {
+            "A": "A está errado gramaticalmente; B está correto",
+            "B": "A é informal extremo (gírias); B é formal extremo (rebuscado demais)",
+            "C": "A é adequado; B está incorreto",
+            "D": "Ambos estão gramaticalmente errados e devem ser evitados",
+            "E": "A demonstra ignorância; B demonstra cultura"
+          },
+          "correta": "B",
+          "explicacao": "Ambos os textos são inadequados por extremismo. A usa registro informal extremo: acúmulo de gírias ('fala', 'mano', 'bora', 'role', 'cineminha', 'daora', 'tipo') que seria excessivo mesmo entre amigos próximos. B usa registro formal extremo: rebuscamento exagerado ('apreciarmos projeção cinematográfica') que soa pedante e artificial para convite a amigo. O adequado seria meio-termo: 'Oi, vamos ao shopping ver um filme?' Não é que A esteja 'errado' e B 'correto' - ambos são inadequados ao contexto de convite amigável. Não há questão de ignorância/cultura, mas de adequação. Competência comunicativa é equilibrar informalidade e clareza. O ENEM valoriza reconhecimento de adequação contextual: nem informal demais, nem formal demais.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "adequacao", "registros"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Leia o trecho de entrevista de emprego:\n\nCandidato: 'Ô, patrão, cê pode explicar direitinho esse trem do horário? Eu tô ligado que é das 8 às 6, mas tipo, tem que bater ponto certinho ou é de boa chegar uns minutinhos atrasado?'\n\nA inadequação do candidato está em:",
+          "alternativas": {
+            "A": "Usar variedade regional legítima de seu estado",
+            "B": "Usar registro informal em contexto que exige formalidade",
+            "C": "Cometer erros gramaticais imperdoáveis",
+            "D": "Demonstrar conhecimento insuficiente de português",
+            "E": "Falar com sotaque que revela origem humilde"
+          },
+          "correta": "B",
+          "explicacao": "A inadequação é de registro: candidato usa linguagem informal ('ô, patrão', 'cê', 'esse trem', 'tô ligado', 'tipo', 'é de boa', 'minutinhos') em contexto formal (entrevista de emprego). O adequado seria: 'Senhor, poderia explicar a política de horário? Entendi que é das 8h às 18h, mas qual a tolerância para eventuais atrasos?' Não é questão de variedade regional (regionalismo é legítimo). Não há 'erros gramaticais imperdoáveis' (há uso de variedade coloquial). Não é falta de conhecimento de português (candidato se comunica perfeitamente). Não é questão de sotaque (texto não menciona). É inadequação de registro: formal exigido, informal usado. Consequência: má impressão profissional. Competência comunicativa inclui saber ajustar registro ao contexto. O ENEM enfatiza importância de dominar registro formal para contextos que o exigem.",
+          "dificuldade": "facil",
+          "tags": ["variacao", "adequacao", "registro-formal"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Analise a afirmação:\n\n'Crianças de classe popular falam errado porque suas famílias não sabem português. A escola deve corrigir essa deficiência linguística para que aprendam a língua correta.'\n\nDo ponto de vista sociolinguístico, a afirmação:",
+          "alternativas": {
+            "A": "Está correta: escola deve corrigir erros linguísticos populares",
+            "B": "Está incorreta: famílias populares falam variedade legítima, não errada",
+            "C": "Está parcialmente correta: há erros que escola deve corrigir",
+            "D": "Está correta: classe popular desconhece gramática portuguesa",
+            "E": "Está correta: deficiência linguística indica deficiência intelectual"
+          },
+          "correta": "B",
+          "explicacao": "A afirmação é INCORRETA e preconceituosa sob perspectiva sociolinguística. Famílias populares não 'falam errado': falam variedade popular do português, com estrutura e lógica próprias, plenamente funcional comunicativamente. Não é 'deficiência linguística' (termo pejorativo e equivocado), mas variedade socioletal legítima. A escola NÃO deve 'corrigir' como se fosse erro, mas ENSINAR norma-padrão como ferramenta adicional, sem deslegitimar variedade de origem. Dizer que 'não sabem português' é absurdo: são falantes nativos de português, apenas de variedade diferente da prestigiada. Não há 'língua correta' única. Língua não indica capacidade intelectual. A postura da afirmação é preconceituosa, classista, linguisticamente desinformada. O ENEM combate esse tipo de visão, promovendo perspectiva sociolinguística: respeito à diversidade, combate ao preconceito, valorização de todas as variedades.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "preconceito-linguistico", "diastratica"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Leia o trecho de texto de divulgação científica:\n\n'O paciente apresentava taquicardia ventricular não sustentada com extrass ístoles polimórficas e disfunção diastólica do ventrículo esquerdo.'\n\nPara público leigo, o texto seria inadequado porque:",
+          "alternativas": {
+            "A": "Está gramaticalmente incorreto e deve ser reescrito",
+            "B": "Usa jargão médico técnico sem explicação acessível",
+            "C": "Demonstra conhecimento insuficiente de medicina",
+            "D": "Mistura variedades regionais incompreensíveis",
+            "E": "Utiliza gírias médicas que devem ser evitadas"
+          },
+          "correta": "B",
+          "explicacao": "O texto usa jargão médico técnico ('taquicardia ventricular', 'extrassístoles polimórficas', 'disfunção diastólica do ventrículo esquerdo') sem explicação, adequado para comunicação entre médicos, mas inadequado para leigos que não entendem terminologia. Divulgação científica eficaz equilibra precisão com acessibilidade: explica termos técnicos ou os substitui por linguagem compreensível ('coração batendo irregularmente e rápido'). Não está gramaticalmente incorreto (está perfeitamente correto). Não demonstra ignorância (demonstra conhecimento técnico). Não são variedades regionais (é jargão profissional universal em medicina). Não são gírias (são termos técnicos científicos). A inadequação é usar linguagem hermética com público que não a domina. O ENEM valoriza adequação de registro e vocabulário ao público-alvo.",
+          "dificuldade": "facil",
+          "tags": ["variacao", "jargao", "adequacao"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Compare as situações:\n\nI - Professor universitário usando variedade popular com amigos no bar\nII - Mesmo professor usando norma-padrão em aula acadêmica\nIII - Mesmo professor usando jargão técnico em congresso científico\n\nAs situações demonstram:",
+          "alternativas": {
+            "A": "Incoerência: professor deveria usar sempre norma-padrão",
+            "B": "Competência comunicativa: ajusta linguagem ao contexto",
+            "C": "Erro: professor não domina adequadamente a língua",
+            "D": "Hipocrisia: professor finge ser popular com amigos",
+            "E": "Inadequação: mistura variedades sem critério"
+          },
+          "correta": "B",
+          "explicacao": "As situações demonstram competência comunicativa pluridialetalista: professor domina múltiplas variedades e sabe quando usar cada uma. Com amigos (contexto informal), usa variedade coloquial/popular adequadamente. Em aula (contexto formal acadêmico), usa norma-padrão. Em congresso (contexto técnico especializado), usa jargão científico. Não é incoerência: é flexibilidade e adequação. Não é erro: é domínio amplo da língua. Não é hipocrisia: é naturalidade comunicativa - pessoas reais ajustam linguagem conforme contexto. Não é inadequação: cada variedade está sendo usada adequadamente. Este é o ideal educacional: não substituir variedades, mas adicionar competências, formando falantes que transitam entre registros com autonomia. O ENEM valoriza essa competência: na redação, espera norma-padrão; em análise de textos orais, reconhece legitimidade de variedades populares.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "competencia-comunicativa", "adequacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Oralidade e Escrita",
+      "resumo": "Diferenças entre modalidades oral e escrita, marcas de oralidade e formalização.",
+      "topicos": [
+        {
+          "titulo": "Características da Modalidade Oral",
+          "conteudo": "A modalidade oral caracteriza-se por: interação face a face (permite negociação imediata de sentidos), planejamento simultâneo à produção (fala-se e planeja-se ao mesmo tempo), uso de recursos extralinguísticos (gestos, expressões faciais, entonação, pausas), reformulações frequentes (correções, hesitações, repetições), menor monitoramento gramatical, estruturas sintáticas mais simples e fragmentadas.\n\nMarcas típicas de oralidade: repetições ('Eu, eu acho que...'), hesitações ('é... tipo assim... sabe?'), marcadores conversacionais ('né', 'entendeu', 'tipo'), correções e reformulações ('Ele foi... quer dizer, ele tinha ido'), frases incompletas, maior uso de pronomes e menor de sinônimos, concordâncias simplificadas. Essas marcas não são 'erros', mas características naturais do processamento linguístico em tempo real.\n\nA oralidade não é apenas 'escrita mal feita' ou 'escrita falada'. São modalidades diferentes com lógicas próprias. Oralidade é historicamente anterior (humanidade fala há milhões de anos, escreve há poucos milhares), ontogeneticamente primária (crianças falam antes de escrever), e socialmente universal (todas as culturas têm língua oral, nem todas têm escrita). A escrita é tecnologia posterior que serve a funções diferentes da oralidade.\n\nNo ENEM, questões exploram reconhecimento de marcas de oralidade em textos transcritos, compreensão de que oralidade não é 'inferior' à escrita mas diferente, e análise de situações onde oralidade é adequada (conversa informal, entrevistas, depoimentos) versus onde escrita formal é necessária (documentos oficiais, textos acadêmicos). Respeitar oralidade é respeitar língua viva, dinâmica, real."
+        },
+        {
+          "titulo": "Características da Modalidade Escrita",
+          "conteudo": "A modalidade escrita caracteriza-se por: ausência de interlocutor imediato (não há feedback instantâneo), planejamento prévio possível (pode-se revisar antes de publicar), necessidade de explicitude (não há gestos nem entonação para complementar), estruturas sintáticas mais complexas e elaboradas, maior monitoramento gramatical, coesão e coerência explícitas (conectivos, referências claras).\n\nA escrita formal (norma-padrão) exige: respeito a concordâncias nominal e verbal, regências normativas, pontuação adequada, ortografia oficial, paragrafação lógica, coesão referencial (retomadas anafóricas, catafóricas), vocabulário preciso e variado, ausência de marcas de oralidade (repetições, hesitações). Diferente da fala espontânea, texto escrito pode ser planejado, revisado, reescrito até atingir forma final.\n\nExistem graus de formalidade na escrita: bilhetes e mensagens de WhatsApp aproximam-se da oralidade (emoticons, abreviações, informalidade); redações escolares e textos acadêmicos exigem norma-padrão rigorosa; literatura pode incorporar marcas de oralidade artisticamente. Não há 'escrita única', mas variedades escritas conforme gênero textual e contexto.\n\nNo ENEM, a redação exige modalidade escrita formal: candidato deve evitar marcas de oralidade ('daí', 'tipo assim', 'né'), usar concordâncias corretas, empregar conectivos adequados, paragrafar logicamente. Questões de interpretação podem apresentar textos com diferentes graus de formalidade escrita para análise de adequação. Dominar escrita formal é essencial para sucesso acadêmico e profissional, mas não invalida oralidade em seus contextos apropriados."
+        },
+        {
+          "titulo": "Continuum Oralidade-Escrita",
+          "conteudo": "Oralidade e escrita não são extremos opostos, mas pontos num continuum. Há textos orais formais (conferências acadêmicas, discursos políticos, telejornais) que se aproximam da escrita por planejamento prévio, monitoramento gramatical e formalidade. Há textos escritos informais (bilhetes, mensagens, chats) que se aproximam da oralidade por espontaneidade, informalidade e marcas conversacionais.\n\nMarcotextos híbridos: entrevistas transcritas (oral produzido, escrito fixado); roteiros de vídeos (escrito planejado, oral produzido); legendas de filmes (oral original, escrito para leitura); chats online (escrito mas com dinâmica conversacional oral). Internetês é fenômeno híbrido: usa código escrito mas incorpora marcas de oralidade (abreviações, emoticons, onomatopeias: 'kkkk', 'rs').\n\nA competência comunicativa inclui dominar não apenas oralidade e escrita, mas transitar entre diferentes pontos do continuum: fala informal (conversa com amigos), fala formal (apresentação acadêmica), escrita informal (mensagem WhatsApp), escrita formal (artigo científico). Quanto mais pontos do continuum domina, maior flexibilidade comunicativa.\n\nNo ENEM, questões exploram reconhecimento desse continuum: identificar textos que misturam marcas de oralidade e escrita, analisar adequação de hibridismo a contextos específicos, compreender que fronteira entre modalidades não é rígida. Na redação ENEM, exige-se ponto formal do continuum (escrita monitorada, planejada, sem marcas de oralidade), mas isso não invalida outros pontos em outros gêneros e contextos."
+        },
+        {
+          "titulo": "Preconceito contra Oralidade",
+          "conteudo": "Existe preconceito que julga oralidade 'inferior' à escrita, considerando fala espontânea 'desleixada', 'errada', 'descuidada'. Esse preconceito ignora que: 1) Oralidade é modalidade primária, natural, universal; 2) Complexidade cognitiva da fala espontânea é enorme (processar linguagem, conteúdo, interlocutor simultaneamente); 3) Marcas de oralidade não são erros, mas estratégias de processamento em tempo real.\n\nO mito do 'falar bem' geralmente significa 'falar como se estivesse escrevendo', ignorando legitimidade da oralidade espontânea. Discursos políticos, aulas expositivas, telejornais usam 'oralidade monitorada' próxima da escrita, mas conversa cotidiana usa oralidade espontânea legítima. Julgar pessoa 'ignorante' por usar marcas de oralidade natural é preconceito.\n\nA relação histórica entre oralidade e escrita foi conflituosa: escrita, por ser tecnologia de elite (nem todos tinham acesso), tornou-se símbolo de poder e cultura. Oralidade, universal e democrática, foi desprestigiada. Alfabetização ampliou acesso à escrita, mas não deve desvalorizar oralidade. Culturas de tradição oral (indígenas, quilombolas, comunidades rurais) preservam saberes complexos sem escrita - prova de que oralidade não é 'primitiva'.\n\nNo ENEM, combate ao preconceito contra oralidade aparece em questões que valorizam cultura oral, literatura de cordel, narrativas tradicionais, depoimentos de comunidades populares. A perspectiva é: oralidade e escrita são modalidades complementares, não hierarquizáveis. Dominar ambas é ideal, mas dominar apenas oralidade (pessoa não alfabetizada) não indica inferioridade intelectual. Respeitar oralidade é respeitar diversidade cultural e linguística."
+        }
+      ],
+      "exemplos": [
+        "Marca de oralidade: 'Eu, eu acho que... tipo assim... a gente devia, né, fazer isso'",
+        "Escrita formal: 'Acredito que deveríamos realizar tal ação' (planejada, sem hesitações)",
+        "Híbrido: Chat online - escrito mas com 'kkk', emoticons, abreviações",
+        "Continuum: Conferência acadêmica (oral formal) vs. Conversa informal (oral espontânea)"
+      ],
+      "dicas": [
+        "Oralidade = espontânea, interativa, com hesitações e repetições naturais",
+        "Escrita formal = planejada, monitorada, sem marcas de oralidade",
+        "Continuum: textos podem misturar características de oral e escrito",
+        "Oralidade NÃO é inferior - é modalidade primária, natural e legítima"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Leia a transcrição de fala espontânea:\n\n'Eu... eu acho que... tipo assim... a gente devia... sabe... fazer alguma coisa sobre isso aí... né... porque tá complicado... entendeu?'\n\nAs características do texto indicam:",
+          "alternativas": {
+            "A": "Erro gramatical grave que revela ignorância do falante",
+            "B": "Marcas naturais de oralidade espontânea (hesitações, marcadores)",
+            "C": "Tentativa fracassada de usar linguagem formal culta",
+            "D": "Texto mal escrito que deve ser completamente reescrito",
+            "E": "Incapacidade de expressão linguística adequada"
+          },
+          "correta": "B",
+          "explicacao": "O texto apresenta marcas típicas e NATURAIS de oralidade espontânea: hesitações ('eu... eu acho'), marcadores conversacionais ('tipo assim', 'sabe', 'né', 'entendeu'), dêixis ('isso aí'), simplicidade sintática. Essas características não são 'erros': são estratégias de processamento linguístico em tempo real. Falante planeja e fala simultaneamente, por isso hesita, reformula, usa marcadores para manter canal aberto. Não revela ignorância (pessoa pode ser altamente instruída e falar assim em situação informal). Não é tentativa frustrada de formalidade (é informalidade adequada ao contexto oral). Não é 'mal escrito' porque NÃO é escrita - é transcrição de fala, modalidade diferente. Não indica incapacidade (indica naturalidade da oralidade espontânea). O ENEM reconhece legitimidade de marcas de oralidade em contextos orais.",
+          "dificuldade": "facil",
+          "tags": ["oralidade", "marcas-oralidade"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Compare os textos:\n\nA (mensagem WhatsApp): 'oi vc viu a msg q te mandei ontem? pq n respondeu? kkkk :)'\nB (e-mail profissional): 'Prezado Senhor, gostaria de confirmar recebimento de minha mensagem anterior. Aguardo retorno.'\n\nA diferença fundamental está em:",
+          "alternativas": {
+            "A": "A está errado; B está correto",
+            "B": "A é escrita informal (abreviações, emoticons); B é escrita formal",
+            "C": "A é oralidade; B é escrita",
+            "D": "A demonstra ignorância; B demonstra cultura",
+            "E": "Não há diferença - ambos comunicam igual"
+          },
+          "correta": "B",
+          "explicacao": "Ambos são ESCRITOS (código), mas em pontos diferentes do continuum formal-informal. A é escrita informal: abreviações ('vc', 'q', 'msg', 'pq', 'n'), ausência de pontuação/maiúsculas, emoticon (':)'), onomatopeia ('kkkk'), proximidade de oralidade conversacional. B é escrita formal: tratamento respeitoso, vocabulário padrão, pontuação correta, ausência de abreviações. Não é que A esteja 'errado': é adequado ao contexto (WhatsApp entre pessoas próximas). Seria inadequado usar A em contexto de B, ou vice-versa. Não é oralidade x escrita (ambos são escritos). Não é ignorância x cultura (ambos demonstram competência de adequação contextual). Há diferença funcional: A é adequado a contexto informal; B a contexto profissional. O ENEM valoriza competência de usar registro apropriado ao contexto.",
+          "dificuldade": "medio",
+          "tags": ["oralidade", "escrita", "adequacao"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Leia a afirmação:\n\n'Pessoas que usam \"né\", \"tipo assim\", repetições e hesitações ao falar demonstram falta de educação e deveriam melhorar seu português para falar corretamente.'\n\nA afirmação é:",
+          "alternativas": {
+            "A": "Verdadeira: marcadores de oralidade são erros que devem ser corrigidos",
+            "B": "Falsa: marcadores são naturais em fala espontânea, não erros",
+            "C": "Verdadeira: educação formal elimina marcadores de oralidade",
+            "D": "Verdadeira: 'falar corretamente' é falar sem marcadores",
+            "E": "Parcialmente verdadeira: alguns marcadores são aceitáveis"
+          },
+          "correta": "B",
+          "explicacao": "A afirmação é FALSA: marcadores conversacionais ('né', 'tipo assim'), repetições e hesitações são características NATURAIS de fala espontânea, não 'erros' nem 'falta de educação'. Até pessoas altamente escolarizadas (professores universitários, juízes, médicos) usam marcadores em conversas informais. São estratégias de processamento linguístico em tempo real: mantém canal aberto, dá tempo para planejar próxima fala, verifica compreensão do interlocutor. Educação formal não elimina marcadores (nem deveria): ensina adequação - quando monitorar mais (apresentação formal) ou menos (conversa informal). 'Falar corretamente' não é falar como escrita, mas adequar-se ao contexto. A afirmação reflete preconceito contra oralidade espontânea. O ENEM combate esse preconceito, defendendo legitimidade de marcas orais em contextos apropriados.",
+          "dificuldade": "medio",
+          "tags": ["oralidade", "preconceito-linguistico"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Analise as situações:\n\nI - Telejornal: apresentador lê notícias com linguagem formal, monitorada\nII - Entrevista espontânea: pessoa responde perguntas com hesitações, marcadores\nIII - Conferência acadêmica: professor apresenta pesquisa com linguagem técnica planejada\n\nAs situações demonstram:",
+          "alternativas": {
+            "A": "Apenas I e III são oralidade adequada; II é erro",
+            "B": "Continuum de oralidade: I e III são formais; II é espontânea",
+            "C": "II é oralidade; I e III são escrita falada",
+            "D": "I e III demonstram competência; II demonstra incompetência",
+            "E": "Todas são igualmente formais e corretas"
+          },
+          "correta": "B",
+          "explicacao": "As situações demonstram continuum de oralidade: I (telejornal) e III (conferência) são ORALIDADE FORMAL - texto falado mas previamente planejado, monitorado, próximo da escrita formal. II (entrevista espontânea) é ORALIDADE ESPONTÂNEA - fala não planejada, com marcas naturais de processamento em tempo real. TODAS são oralidade (modalidade oral), mas em pontos diferentes do continuum formal-espontâneo. Não é que II seja 'erro': é adequada ao contexto (entrevista espontânea permite hesitações naturais). Não são 'escrita falada' (são oralidade, embora I e III sejam monitoradas). II não é incompetência: é naturalidade comunicativa. Não são igualmente formais: têm diferentes graus de planejamento e monitoramento. O ENEM valoriza compreensão desse continuum: reconhecer que oralidade varia conforme contexto.",
+          "dificuldade": "dificil",
+          "tags": ["oralidade", "continuum", "adequacao"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Leia o trecho de redação ENEM:\n\n'Eu acho que tipo assim a gente devia né fazer alguma coisa sobre esse problema aí porque tá complicado entendeu?'\n\nA inadequação do texto para redação ENEM está em:",
+          "alternativas": {
+            "A": "Apresentar opinião pessoal (redação não pode ter 'eu acho')",
+            "B": "Usar marcas de oralidade em contexto que exige escrita formal",
+            "C": "Discordar de visão socialmente aceita sobre o tema",
+            "D": "Ser muito curto para desenvolver argumentação adequada",
+            "E": "Não há inadequação - o texto está perfeitamente correto"
+          },
+          "correta": "B",
+          "explicacao": "A inadequação está em usar marcas de ORALIDADE ('eu acho', 'tipo assim', 'a gente', 'né', 'esse problema aí', 'tá', 'entendeu') em contexto que exige ESCRITA FORMAL (redação ENEM). A redação deve usar: 'Acredita-se que seja necessário implementar ações sobre essa questão, pois a situação é complexa.' Não é que opinião pessoal seja proibida (redação exige posicionamento), mas deve ser expressa formalmente. Não é sobre concordar/discordar de visões (é sobre forma, não conteúdo). Tamanho não é o problema principal (é inadequação de registro). Definitivamente NÃO está correto para contexto formal. A redação ENEM é texto escrito dissertativo-argumentativo formal - exige norma-padrão, ausência de marcas de oralidade, vocabulário preciso, coesão explícita. Dominar escrita formal é essencial para sucesso no exame.",
+          "dificuldade": "facil",
+          "tags": ["oralidade", "escrita", "redacao-enem", "adequacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Variação e Identidade",
+      "resumo": "Língua como marcador de identidade, comunidades de fala e políticas linguísticas.",
+      "topicos": [
+        {
+          "titulo": "Língua e Identidade Social",
+          "conteudo": "A língua não é apenas instrumento de comunicação, mas marcador de identidade: revela origem geográfica (sotaque regional), pertencimento social (classe, escolaridade), faixa etária (gírias geracionais), profissão (jargões), e afiliações culturais (grupos étnicos, tribos urbanas). Forma como falamos diz quem somos, de onde viemos, com quem convivemos.\n\nA variedade linguística é dimensão da identidade pessoal e coletiva. Migrante nordestino que mantém sotaque no Sudeste afirma pertencimento à terra natal, mesmo distante. Jovem que usa gírias marca pertencimento geracional. Falante de variedade popular que resiste à norma-padrão pode estar afirmando identidade de classe, rejeitando assimilação. Mudar de variedade pode ser vivido como traição à origem, perda de identidade.\n\nComunidades de fala são grupos que compartilham normas linguísticas e valores sobre língua. Comunidade quilombola, favela carioca, colônia de imigrantes japoneses, comunidade acadêmica: cada uma tem variedade particular e atitudes compartilhadas sobre 'falar bem'. Identidade comunitária constrói-se também pela língua: usar variedade do grupo marca pertencimento; não usar marca afastamento.\n\nNo ENEM, questões exploram reconhecimento da língua como marca identitária, análise de como variedades expressam pertencimento e resistência, e valorização da diversidade linguística como patrimônio cultural. É importante compreender que impor norma-padrão sem respeitar variedade de origem pode ser violência simbólica: nega identidade, cultura, história. Educação linguística respeitosa valoriza variedade de origem E ensina norma-padrão como ferramenta adicional, não substitutiva."
+        },
+        {
+          "titulo": "Línguas Indígenas e Afro-Brasileiras",
+          "conteudo": "O Brasil é multilíngue: além do português, há cerca de 180 línguas indígenas vivas e comunidades que mantêm línguas de origem africana (especialmente em contextos religiosos). Línguas indígenas pertencem a troncos linguísticos diversos: Tupi, Macro-Jê, Aruak, Karib. Cada língua expressa visão de mundo, conhecimentos tradicionais, organização social específicos.\n\nAs línguas indígenas sofreram violento processo de apagamento: colonização, catequese, políticas de integração forçada proibiram uso de línguas nativas, impondo português. Muitas línguas foram extintas; outras estão ameaçadas (faladas apenas por idosos). A Constituição de 1988 reconheceu direito indígena a línguas maternas, mas na prática educação bilíngue é deficiente. Preservar línguas indígenas é preservar patrimônio cultural e científico (conhecimentos sobre biodiversidade, agricultura, medicina).\n\nO português brasileiro incorporou palavras de origem indígena (especialmente Tupi): abacaxi, mandioca, tatu, capivara, pipoca, jacaré, sucuri. E africana (especialmente línguas bantas e iorubá): samba, caçula, moleque, quitanda, dendê, acarajé. Além de vocabulário, influências fonéticas e sintáticas. A diversidade linguística brasileira é herança multicultural: indígena, africana, europeia (portuguesa, italiana, alemã, polonesa), asiática (japonesa, árabe).\n\nNo ENEM, valorização de línguas indígenas e afro-brasileiras aparece em questões sobre diversidade cultural, direitos linguísticos, influências na formação do português brasileiro. Perspectiva é anticolonial: reconhecer violência histórica do apagamento linguístico, valorizar multilinguismo como riqueza, defender políticas de preservação de línguas ameaçadas. Língua é patrimônio; extingui-la é perder conhecimentos irrecuperáveis."
+        },
+        {
+          "titulo": "Políticas Linguísticas e Direitos",
+          "conteudo": "Políticas linguísticas são decisões governamentais sobre status e uso de línguas: qual(is) língua(s) oficial(is), que línguas são ensinadas nas escolas, direitos linguísticos de minorias. No Brasil: português é língua oficial (Constituição não explicita, mas legislação infraconstitucional estabelece); línguas indígenas são reconhecidas oficialmente em territórios indígenas; imigração italiana/alemã no Sul gerou comunidades bilíngues.\n\nHistoricamente, políticas linguísticas brasileiras foram assimilacionistas: impor português, apagar línguas minoritárias. Era Vargas (anos 1930-40) proibiu uso público de alemão e italiano, perseguindo comunidades imigrantes. Ditadura militar reprimiu manifestações linguísticas regionais e indígenas. Democratização trouxe reconhecimento de direitos: Constituição 1988 garante educação bilíngue indígena, uso de línguas maternas.\n\nDireitos linguísticos incluem: direito a educação na língua materna, direito a usar língua materna em contextos oficiais (tribunais, hospitais), direito a preservação e revitalização de línguas ameaçadas, direito a não sofrer discriminação por variedade linguística. ONU reconhece língua como direito humano fundamental. Negar direitos linguísticos é negar cidadania plena.\n\nNo ENEM, políticas linguísticas aparecem em questões sobre educação bilíngue, direitos de povos indígenas e comunidades tradicionais, combate à discriminação linguística, e análise crítica de discursos que defendem monolinguismo. A perspectiva é pluralista: defender coexistência de múltiplas línguas e variedades, reconhecer direitos linguísticos como direitos humanos, combater políticas assimilacionistas que apagam diversidade. Multilinguismo é patrimônio a ser preservado, não problema a ser resolvido."
+        },
+        {
+          "titulo": "Variação Linguística e Inclusão Social",
+          "conteudo": "O domínio da norma-padrão é ferramenta de inclusão social: amplia possibilidades de acesso a educação superior, mercado de trabalho, instâncias de poder. Pessoa que não domina norma-padrão enfrenta barreiras: discriminação em entrevistas de emprego, dificuldade em concursos, exclusão de espaços sociais prestigiados. Educação linguística eficaz é direito e instrumento de justiça social.\n\nPorém, ensinar norma-padrão não deve implicar desvalorizar variedades de origem. Pedagogia linguística inclusiva: 1) Reconhece legitimidade de todas as variedades; 2) Explica contextos onde norma-padrão é socialmente exigida; 3) Ensina norma-padrão como ampliação de repertório, não substituição; 4) Combate preconceito linguístico; 5) Valoriza identidade linguística dos alunos. Objetivo: formar falantes pluridialetais, capazes de transitar entre variedades.\n\nA exclusão linguística é forma de exclusão social: quando instituições (escola, tribunais, serviços públicos) usam apenas norma-padrão sem considerar variedades populares, excluem população de baixa escolaridade. Democratização linguística exige adequação bidirecional: ensinar norma-padrão a quem não domina E simplificar linguagem institucional para acessibilidade. Leis, formulários, sentenças judiciais herméticas excluem cidadãos.\n\nNo ENEM, inclusão linguística aparece em questões sobre democratização do acesso à norma-padrão, crítica a instituições que usam linguagem excludente, e reflexões sobre direito à educação linguística de qualidade. A postura é dupla: defender ensino de norma-padrão (ferramenta de inclusão) E combater preconceito contra variedades populares (respeito à diversidade). Competência linguística ampla é direito de todos, instrumento de cidadania plena e ascensão social."
+        }
+      ],
+      "exemplos": [
+        "Identidade: Sotaque nordestino mantido no Sudeste afirma pertencimento regional",
+        "Línguas indígenas: Tupi contribuiu com 'mandioca', 'tatu', 'capivara' ao português",
+        "Políticas: Constituição 1988 reconhece direito indígena à educação bilíngue",
+        "Inclusão: Ensinar norma-padrão amplia acesso a mercado de trabalho e educação"
+      ],
+      "dicas": [
+        "Língua é marca de identidade: revela origem, classe, geração, pertencimento",
+        "Brasil tem 180+ línguas indígenas vivas + português + variedades africanas",
+        "Direitos linguísticos = direitos humanos (educação na língua materna, não discriminação)",
+        "Inclusão social exige ensinar norma-padrão SEM desvalorizar variedades populares"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Leia o relato:\n\n'Mudei do Nordeste para São Paulo aos 20 anos. No trabalho, colegas imitavam meu sotaque e riam. Chefe disse que eu devia \"melhorar meu português\" para crescer na empresa. Comecei a forçar sotaque paulista, mas me sentia traindo minhas raízes. Hoje, anos depois, recuperei meu sotaque original: é parte de quem eu sou.'\n\nO relato evidencia:",
+          "alternativas": {
+            "A": "Necessidade legítima de correção linguística para ascensão profissional",
+            "B": "Preconceito linguístico e tensão entre adequação social e identidade",
+            "C": "Erro do relator em manter sotaque inadequado ao contexto urbano",
+            "D": "Exemplo de educação linguística bem-sucedida pela empresa",
+            "E": "Prova de que sotaques regionais impedem sucesso profissional"
+          },
+          "correta": "B",
+          "explicacao": "O relato evidencia PRECONCEITO LINGUÍSTICO (colegas ridicularizando sotaque) e TENSÃO entre adequação social (pressão para mudar fala) e identidade (sotaque como parte de si). O chefe cometeu preconceito ao sugerir que sotaque nordestino fosse 'português ruim' que precisasse 'melhorar'. Sotaque não é erro linguístico: é marca regional legítima. A pessoa viveu conflito identitário: adequar-se custava traição às raízes. Recuperar sotaque foi afirmação de identidade. Não é 'necessidade legítima' (é preconceito disfarçado). Não é 'erro' manter sotaque (sotaque não é erro). Não é 'educação bem-sucedida' (é discriminação). Não é prova de que sotaque impede sucesso (é prova de preconceito que deveria ser combatido). O ENEM critica esse tipo de discriminação: sotaque é patrimônio, não defeito.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "identidade", "preconceito"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Analise a afirmação:\n\n'O Brasil deveria ter apenas o português como língua oficial e proibir uso de línguas indígenas, pois elas atrapalham integração nacional e não servem para mundo moderno.'\n\nDo ponto de vista dos direitos linguísticos, a afirmação é:",
+          "alternativas": {
+            "A": "Correta: unidade linguística fortalece nação",
+            "B": "Incorreta: viola direitos humanos e apaga patrimônio cultural",
+            "C": "Correta: línguas indígenas são obsoletas para tecnologia moderna",
+            "D": "Correta: integração nacional exige abandono de línguas minoritárias",
+            "E": "Parcialmente correta: indígenas deveriam escolher português ou língua nativa"
+          },
+          "correta": "B",
+          "explicacao": "A afirmação é INCORRETA e viola direitos linguísticos reconhecidos internacionalmente. Línguas indígenas são: 1) Direito humano fundamental (Constituição brasileira garante); 2) Patrimônio cultural irrecuperável se perdido; 3) Repositório de conhecimentos científicos sobre biodiversidade, medicina, agricultura; 4) Parte da identidade de povos indígenas. Proibir línguas nativas é violência cultural, etnocídio. Não é verdade que 'atrapalham integração': multilinguismo é riqueza, não problema (Europa tem dezenas de línguas convivendo). Não são 'obsoletas': línguas evoluem, incorporam neologismos conforme necessidades. A postura da afirmação é colonialista, assimilacionista, violadora de direitos. O ENEM defende: multilinguismo é patrimônio a preservar; direito à língua materna é direito humano; perder língua é perder cultura e conhecimento irrecuperáveis.",
+          "dificuldade": "facil",
+          "tags": ["variacao", "linguas-indigenas", "direitos"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Leia o texto sobre educação:\n\n'Escola em comunidade quilombola deve: 1) Valorizar variedade linguística quilombola (com influências africanas); 2) Ensinar norma-padrão como ampliação de repertório; 3) Formar alunos que transitem entre variedades conforme contexto; 4) Combater preconceito linguístico.'\n\nA proposta pedagógica demonstra:",
+          "alternativas": {
+            "A": "Erro: escola deve ensinar apenas norma-padrão, eliminando variedades",
+            "B": "Pedagogia linguística inclusiva: valoriza identidade E ensina norma-padrão",
+            "C": "Permissividade que prejudica alunos ao não corrigir erros",
+            "D": "Segregação: mantém alunos quilombolas na variedade popular",
+            "E": "Impossibilidade prática: não se ensina duas variedades simultaneamente"
+          },
+          "correta": "B",
+          "explicacao": "A proposta exemplifica PEDAGOGIA LINGUÍSTICA INCLUSIVA, sociolinguisticamente fundamentada: 1) Valoriza variedade de origem (respeita identidade, cultura, autoestima); 2) Ensina norma-padrão (ferramenta de inclusão social, acesso a educação superior e trabalho); 3) Forma competência pluridialetalista (transitar entre variedades); 4) Combate preconceito (cidadania linguística). Não é erro: é abordagem cientificamente correta. Não é permissividade: ensinar norma-padrão como ampliação (não substituição) é rigoroso e respeitoso. Não segrega: ao contrário, INCLUI dando ferramenta (norma-padrão) sem arrancar identidade (variedade quilombola). É perfeitamente praticável: muitas comunidades são bilíngues ou pluridialetais naturalmente. O ENEM defende essa abordagem: educação linguística que respeita diversidade E garante domínio de norma-padrão é direito e instrumento de justiça social.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "educacao", "inclusao"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Analise as palavras de origem indígena no português:\n\nabacaxi, mandioca, tatu, capivara, jacaré, pipoca, mingau, caipira\n\nA presença dessas palavras demonstra:",
+          "alternativas": {
+            "A": "Erro linguístico: português correto não deveria ter palavras indígenas",
+            "B": "Contribuição cultural indígena na formação do português brasileiro",
+            "C": "Degradação do português pela mistura com línguas primitivas",
+            "D": "Problema que deveria ser corrigido substituindo por termos portugueses",
+            "E": "Prova de inferioridade linguística do português brasileiro"
+          },
+          "correta": "B",
+          "explicacao": "A presença de palavras de origem indígena (especialmente Tupi) demonstra CONTRIBUIÇÃO CULTURAL INDÍGENA na formação do português brasileiro. Não é 'erro': incorporação lexical é processo natural de evolução linguística. Não é 'degradação': língua que incorpora vocabulário de outras culturas enriquece, não empobrece. Todas as línguas são 'mistas': português tem palavras latinas, árabes, germânicas, e incorporou indígenas e africanas no Brasil. Não é 'problema a corrigir': são termos consolidados, muitos sem equivalente português (qual palavra portuguesa substituiria 'tatu'?). Não prova 'inferioridade': léxico diversificado é riqueza. As alternativas A, C, D, E refletem preconceito colonialista que considera línguas indígenas 'primitivas' - falso. Línguas indígenas são complexas, estruturadas, eficientes. O ENEM valoriza contribuição indígena e africana como patrimônio do português brasileiro.",
+          "dificuldade": "facil",
+          "tags": ["variacao", "linguas-indigenas", "lexicon"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Leia a situação:\n\n'Lei municipal foi escrita em linguagem jurídica hermética, inacessível à população. Movimento popular exigiu reescrita em linguagem simples. Prefeitura argumentou que \"juridiquês\" era tecnicamente necessário. Defensoria Pública defendeu: \"Cidadãos têm direito a compreender leis que os regem. Linguagem hermética exclui e viola cidadania.\"'\n\nO conflito evidencia tensão entre:",
+          "alternativas": {
+            "A": "Precisão técnica necessária versus acessibilidade democrática",
+            "B": "Linguagem correta versus linguagem popular incorreta",
+            "C": "Educação superior versus ignorância popular",
+            "D": "Tradição jurídica versus modernidade simplista",
+            "E": "Linguagem formal versus linguagem informal inadequada"
+          },
+          "correta": "A",
+          "explicacao": "O conflito evidencia tensão entre PRECISÃO TÉCNICA (jargão jurídico que elimina ambiguidades) e ACESSIBILIDADE DEMOCRÁTICA (cidadãos compreenderem leis). A Defensoria tem razão sob perspectiva de direitos: lei que cidadão não compreende não pode cumprir; linguagem hermética exclui população de baixa escolaridade da cidadania. Porém, há desafio: simplificar sem perder precisão. Solução: versões duplas (técnica para profissionais, simplificada para cidadãos) ou explicação de termos técnicos. Não é 'correto vs. incorreto' (ambos são corretos, um é inacessível). Não é 'educação vs. ignorância' (é técnico vs. acessível). Não é 'tradição vs. modernidade' (é especialização vs. inclusão). Não é 'formal vs. informal' (ambos podem ser formais, um é hermético). O ENEM valoriza democratização linguística: instituições devem tornar linguagem acessível sem perder conteúdo. Cidadania plena exige acesso linguístico a direitos e deveres.",
+          "dificuldade": "dificil",
+          "tags": ["variacao", "jargao", "inclusao", "cidadania"]
+        }
+      ]
+    }
+  ]
+}

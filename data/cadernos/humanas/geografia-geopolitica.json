@@ -1,0 +1,282 @@
+{
+  "id": "geografia-geopolitica",
+  "titulo": "Geopolitica",
+  "descricao": "Ordem mundial, blocos economicos e conflitos",
+  "icone": "🌍",
+  "cor": "from-blue-500 to-indigo-600",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Ordem Mundial e Multipolaridade",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Guerra Fria: Mundo Bipolar",
+          "conteudo": "Guerra Fria (1947-1991): confronto ideologico-politico-economico EUA (capitalismo) vs URSS (socialismo), sem confronto direto. Bipolaridade: dois polos poder. Otan (1949, bloco ocidental) vs Pacto Varsovia (1955, bloco oriental). Corrida armamentista nuclear (equilibrio terror), espacial (Sputnik 1957, Lua 1969), tecnologica. Cortina Ferro dividiu Europa (Muro Berlin 1961-1989). Guerras proxy: Coreia (1950-53), Vietna (1955-75), Afeganistao (1979-89). Fim: queda Muro Berlin (1989), dissolucao URSS (1991).",
+          "exemplo": "Doutrina Truman (1947): conter expansao comunista, Plano Marshall (US$ 13 bi reconstruir Europa Ocidental). Crise Misseis Cuba (1962): mundo a beira guerra nuclear, Kennedy vs Khruschev. Corrida espacial: URSS lanca primeiro satelite/homem espaco, EUA vencem chegando Lua. Glasnost/Perestroika Gorbachev (1985): abertura reformas levam fim URSS. Alemanha reunificada 1990. Iugoslavia/Tchecoslovaquia fragmentam decada 1990.",
+          "dica": "Bipolaridade = EUA vs URSS, capitalismo vs socialismo. Otan vs Pacto Varsovia. Guerras proxy = confronto indireto. Fim: 1989 Muro, 1991 URSS. ENEM cobra hegemonia EUA pos-Guerra Fria."
+        },
+        {
+          "id": 2,
+          "titulo": "Nova Ordem Mundial: Unipolaridade e Multipolaridade",
+          "conteudo": "Pos-Guerra Fria (1991-2001): unipolaridade, hegemonia EUA unica superpotencia (militar, economica, cultural). Globalizacao neoliberal (Consenso Washington: privatizacoes, desregulamentacao, livre mercado). Seculo XXI: multipolaridade emergente, novos polos poder - BRICS (Brasil, Russia, India, China, Africa Sul, +Ira/EAU/Egito/Etiopia 2024), Uniao Europeia, China ascensao economica/tecnologica. EUA perdem hegemoniacultural/economica, mantem militar. Ordem contestada: tensoes China-EUA, Russia-Ocidente.",
+          "exemplo": "Hegemonia EUA 1990s: intervencoes militares (Iraque 1991, Iugoslavia 1999), expansao Otan Leste Europa, FMI/Banco Mundial impõem ajustes estruturais. China: 2° economia (PIB PPP ultrapassou EUA 2014), lidera comercio, tecnologia 5G, Iniciativa Cinturao Rota (Nova Rota Seda, US$ 1 trilhao infraestrutura). BRICS: 42% populacao, 23% PIB mundial, Novo Banco Desenvolvimento (alternativa FMI/Banco Mundial). UE: bloco economico rival EUA, euro 2° moeda reserva.",
+          "dica": "1991-2001: unipolaridade EUA. 2001+: multipolaridade (China, UE, BRICS). China ascende economicamente, contesta hegemonia EUA. BRICS = Sul Global alternativo G7."
+        },
+        {
+          "id": 3,
+          "titulo": "Conflitos Contemporaneos",
+          "conteudo": "Conflitos atuais: terrorismo (Al-Qaeda, ISIS, 11/setembro 2001), guerras civis (Siria, Iemen, Sudao), disputas territoriais (Caxemira India-Paquistao, Mar China Meridional), separatismos (Catalunha, Escocia, Curdistao), narcotrafico (Mexico, Colombia), xenofobia/nacionalismo extrema-direita Europa/EUA. Causas: disputas etnico-religiosas, recursos naturais (petroleo, agua), heranca colonialismo, desigualdade. Refugiados: 100 milhoes deslocados forcados (ONU 2022), maior crise desde II Guerra.",
+          "exemplo": "11/setembro 2001: Al-Qaeda ataca EUA, 3 mil mortos, EUA invadem Afeganistao (2001-2021, fracasso) e Iraque (2003, mentira armas destruicao massiva). ISIS (Estado Islamico): controlou territorio Iraque/Siria 2014-2017, combatido coalicao. Siria: guerra civil 2011-hoje, 500 mil mortos, Assad (ditador) vs rebeldes vs ISIS vs curdos, Russia/Ira apoiam Assad, EUA apoiam curdos. Refugiados sirios: 6,6 milhoes, crise Europa. Myanmar: genocidio Rohingyas 2017, 1 milhao refugiados Bangladesh.",
+          "dica": "Conflitos atuais: terrorismo (11/set), guerras proxy Oriente Medio, separatismos, refugiados. Causas: religiao, etnia, petroleo, agua, heranca colonial. ENEM cobra refugiados, intervencoes humanitarias."
+        },
+        {
+          "id": 4,
+          "titulo": "Questao Palestina",
+          "conteudo": "Conflito Israel-Palestina: disputa territorial/religiosa Terra Santa. Historia: dominio otomano (1517-1917), mandato britanico (1920-1948), migracao judaica (sionismo, perseguicoes Europa), Plano Particao ONU 1947 (2 estados), criacao Israel 1948, guerras arabe-israelenses (1948, 1967 Guerra 6 Dias Israel ocupa Cisjordania/Gaza/Gola/Sinai, 1973 Yom Kippur). Situacao atual: colonias ilegais Cisjordania, bloqueio Gaza (Hamas), Jerusalém disputada (capital 2 povos), solucao 2 estados estagnada.",
+          "exemplo": "Nakba ('catastrofe') 1948: 750 mil palestinos expulsos/fugiram, refugiados Libano/Jordania/Siria. Intifadas (levantes): 1987-93 e 2000-05, milhares mortos. Acordos Oslo 1993: reconhecimento mutuo Israel-OLP, autonomia palestina, nao resolveu. Colonias israelenses: 700 mil judeus Cisjordania/Jerusalem Leste (ilegal ONU). Gaza: 2 milhoes palestinos, bloqueio Israel/Egito, Hamas governa 2007, guerras periodicas (2008-09, 2014, 2021, 2023). EUA apoiam Israel (US$ 3,8 bi militares/ano).",
+          "dica": "Judeus vs palestinos disputa terra/religiosa. Israel criado 1948, ocupa Cisjordania/Gaza 1967. Colonias ilegais, bloqueio Gaza, Jerusalém disputada. Solucao 2 estados fracassa. ENEM cobra causas historicas."
+        },
+        {
+          "id": 5,
+          "titulo": "Organizacoes Internacionais",
+          "conteudo": "ONU (1945): 193 membros, objetivos paz/seguranca, direitos humanos, desenvolvimento. Orgaos: Assembleia Geral (todos membros, 1 voto), Conselho Seguranca (15 membros, 5 permanentes veto - EUA, Russia, China, Reino Unido, Franca), Secretario-Geral, Corte Internacional Justica, agencias (OMS, UNESCO, ACNUR, FAO). Limitacoes: veto paralisa decisoes, financiamento insuficiente, intervencoes seletivas. Outras: G7 (paises ricos), G20 (economias maiores + UE), FMI/Banco Mundial (Bretton Woods), OMC (comercio).",
+          "exemplo": "Veto Conselho Seguranca: Russia/China vetam intervencoes Siria (14 vetos), EUA veta condenacoes Israel (53 vetos historicos). Manutencao Paz (Capacetes Azuis): 12 operacoes ativas, 90 mil militares/policiais, Brasil participa Haiti (2004-2017). Tribunal Penal Internacional (2002): julga crimes guerra/genocidio, EUA/Russia/China/Israel nao reconhecem. G7: EUA, Alemanha, Franca, UK, Italia, Canada, Japao (74% PIB global 1990, hoje 44%, perde relevancia). G20: 85% PIB mundial, 75% comercio.",
+          "dica": "ONU: Assembleia (todos) + Conselho Seguranca (5 veto). Veto paralisa (Siria, Palestina). G7 = ricos, G20 = maiores economias. FMI/BM = Bretton Woods, financiamento/desenvolvimento."
+        }
+      ],
+      "questao": {
+        "enunciado": "Apos o fim da Guerra Fria em 1991, esperava-se uma 'Nova Ordem Mundial' baseada na paz e cooperacao internacional sob hegemonia norte-americana. Entretanto, nas ultimas decadas, observa-se o fortalecimento de novos polos de poder economico e politico que desafiam a supremacia dos Estados Unidos.\n\nO grupo de paises que representa essa nova configuracao multipolar da ordem internacional e:",
+        "alternativas": [
+          "G7, composto pelas maiores economias desenvolvidas do mundo ocidental.",
+          "OTAN, organizacao militar que reune os aliados historicos dos Estados Unidos.",
+          "BRICS, formado por economias emergentes que buscam maior protagonismo global.",
+          "OPEP, cartel de paises exportadores de petroleo do Oriente Medio.",
+          "Uniao Europeia, bloco economico dos paises do continente europeu."
+        ],
+        "respostaCorreta": 2,
+        "explicacao": "O BRICS (Brasil, Russia, India, China, Africa do Sul, expandido em 2024) representa a multipolaridade emergente no sistema internacional. Esse grupo de economias emergentes busca aumentar sua influencia global, criar alternativas institucionais ao sistema dominado por EUA/Europa (como o Novo Banco de Desenvolvimento), e representar os interesses do chamado 'Sul Global'. O G7 (A) representa as potencias tradicionais, OTAN (B) e alianca militar ocidental, OPEP (D) e cartel petrolifero, e UE (E), embora seja polo economico importante, e composta majoritariamente por paises desenvolvidos ocidentais.",
+        "tags": ["multipolaridade", "brics", "ordem-mundial", "geopolitica"]
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Blocos Economicos Regionais",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Integracao Regional: Tipos",
+          "conteudo": "Integracao economica tem niveis: 1) Zona Livre Comercio (elimina tarifas comercio interno, mantem tarifas externas proprias - Nafta), 2) Uniao Aduaneira (tarifa externa comum - Mercosul), 3) Mercado Comum (livre circulacao bens, servicos, capitais, pessoas - UE inicial), 4) Uniao Economica Monetaria (moeda unica, politica monetaria comum - Zona Euro), 5) Uniao Politica (governo supranacional - projeto UE). Objetivo: aumentar comercio, competitividade, poder negociacao global, desenvolvimento regional.",
+          "exemplo": "NAFTA (1994-2020, substituido USMCA): EUA-Canada-Mexico, zona livre comercio, eliminou 99% tarifas. Criticas: desemprego EUA (fabricas Mexico salarios baixos), Mexico nao desenvolveu esperado. Mercosul (1991): Brasil, Argentina, Uruguai, Paraguai, Venezuela (suspensa), Bolívia (adesao), TEC (Tarifa Externa Comum) imperfeita, comércio intrabloco 15% total. UE: maior integracao, 27 membros, livre circulacao (Schengen), euro 19 paises, Parlamento Europeu (supranacional).",
+          "dica": "Niveis integracao: livre comercio < uniao aduaneira < mercado comum < uniao monetaria. Nafta = nivel 1, Mercosul = nivel 2, UE = nivel 4. Quanto mais integracao, mais soberania compartilhada."
+        },
+        {
+          "id": 2,
+          "titulo": "Uniao Europeia",
+          "conteudo": "UE: maior bloco economico integrado. Origem: CECA (1951, carvao/aco), CEE (1957, Tratado Roma, 6 paises), expansoes (hoje 27, Brexit UK 2020). Instituicoes: Parlamento Europeu (eleito), Comissao (executivo), Conselho (chefes Estado), Tribunal Justica. Zona Euro (1999): 19 paises, BCE (Banco Central Europeu), politica monetaria unica. Espaco Schengen: livre circulacao 26 paises. PIB €15 trilhoes (17% mundial). Desafios: crise euro 2010s (Grecia, dividas), Brexit, imigracao, nacionalismos.",
+          "exemplo": "Critérios Maastricht (1992) euro: deficit <3% PIB, divida <60% PIB, inflacao baixa. Grecia falsificou dados, entrou 2001, crise 2010 (divida 180% PIB), resgate €280 bilhoes FMI/BCE/UE, austeridade massiva. Brexit (2016): Reino Unido vota sair UE (52%), oficializado 2020, causas imigracao/soberania. Crise refugiados 2015: 1 milhao chegaram, Alemanha recebeu 800 mil, tensoes Leste Europeu (Polonia/Hungria recusaram cotas). PAC (Politica Agricola Comum): 33% orcamento UE, subsidios agricultores.",
+          "dica": "UE = maior integracao mundial (moeda, livre circulacao, instituicoes supranacionais). Euro 19 países. Desafios: dividas (Grecia), Brexit, refugiados, nacionalismos. PAC subsidia agricultura."
+        },
+        {
+          "id": 3,
+          "titulo": "Mercosul",
+          "conteudo": "Mercosul (1991, Tratado Assuncao): Brasil, Argentina, Uruguai, Paraguai. Bolivia adesao 2024. Venezuela suspensa 2016 (violacao clausula democratica). Objetivos: livre comercio, TEC, livre circulacao. Realidade: integracao incompleta, TEC furada (excecoes), entraves nao-tarifarios, assimetrias (Brasil 70% PIB bloco), ideologias divergentes governos. Comercio intrabloco caiu 20% para 12% (2000-2020). Acordos: livre comercio Israel, SACU, em negociacao UE (travado agronegocio/Amazonia). Parlasul (2006): sem poder real.",
+          "exemplo": "Comercio Brasil-Argentina: 30% exportacoes brasileiras Mercosul vao Argentina (automotivo), mas crises Argentina afetam. Tratativas acordo UE: 20 anos negociacao, travado subsidios agricolas europeus, desmatamento Amazonia (Franca lidera oposicao). Argentina Milei (2023): defende sair Mercosul, aproximacao EUA. Assimetrias: PIB per capita Brasil US$ 9 mil, Argentina US$ 11 mil, Paraguai US$ 6 mil, politicas dificultam convergencia. Livre circulacao parcial (Acordo Residencia permite morar/trabalhar).",
+          "dica": "Mercosul = uniao aduaneira imperfeita (TEC incompleta). Brasil domina (70% PIB). Comercio intrabloco caiu. Acordo UE travado. Divergencias ideologicas/economicas atrasam integracao."
+        },
+        {
+          "id": 4,
+          "titulo": "Blocos Asiaticos e Americanos",
+          "conteudo": "ASEAN (1967): 10 paises Sudeste Asiatico (Indonesia, Tailandia, Singapura, Malasia, Filipinas, Vietna, Birmania, Laos, Camboja, Brunei), 680 milhoes pessoas, PIB US$ 3,6 trilhoes, zona livre comercio 2002, foco cooperacao economica/politica, contrapeso China. APEC (1989): 21 economias Asia-Pacifico (inclui EUA, China, Japao, Russia, Chile, Peru), 60% PIB mundial, forum cooperacao nao bloco formal. RCEP (2022): maior acordo livre comercio (15 paises, China-Japao-Coreia+ASEAN+Australia/NZ), 30% PIB/comercio mundial, exclui EUA.",
+          "exemplo": "ASEAN: crescimento 5-6%/ano, manufaturas (Vietna eletronicos), servicos (Singapura financas), commodities (Indonesia oleo palma, Malasia borracha). Singapura: PIB per capita US$ 72 mil (maior ASEAN). Desafios: ditaduras (Birmania golpe 2021), disputas Mar China Sul. APEC: inclui rivais (China-EUA-Japao), forum dialogos nao decisoes vinculantes. RCEP: criado China para excluir EUA (resposta TPP americano), comercio preferencial 90% produtos. Acordo Pacifico (TPP): 2016, 12 paises, EUA saiu 2017 (Trump), virou CPTPP (11 paises, sem EUA).",
+          "dica": "ASEAN = Sudeste Asiatico, 10 paises, contrapeso China. APEC = forum 21 economias, nao bloco formal. RCEP = maior livre comercio, liderado China, exclui EUA.Asia = dinamismo economico."
+        },
+        {
+          "id": 5,
+          "titulo": "Blocos Africanos e Outros",
+          "conteudo": "Uniao Africana (2002, substituiu OUA): 55 paises, objetivos integracao/desenvolvimento/paz, inspirada UE mas integracao incipiente, desafios conflitos/pobreza/corrupcao. Principais blocos sub-regionais: CEDEAO (15 Africa Ocidental), SADC (16 Africa Austral), COMESA (21 Leste/Sul). AfCFTA (2021): Zona Livre Comercio Continental Africana, 1,3 bilhao pessoas, potencial elevar comercio intra-Africa 15% para 50%, fase implementacao. Liga Arabe (1945): 22 paises, cooperacao politica/economica/cultural, dividida (Golfo vs Norte Africa, sunitas vs xiitas).",
+          "exemplo": "Uniao Africana: sede Etiopia, criou Forca Paz (intervencoes Somalia, Darfur), pouco efetiva (depende financiamento ONU/externo). CEDEAO: intervencoes militares (Liberia, Mali, Gambia), moeda unica ECO planejada. SADC: inclui Africa Sul (70% PIB bloco), livre comercio 85% tarifas eliminadas. AfCFTA: eliminar 90% tarifas, aumentar PIB US$ 3,4 trilhoes, desafios infraestrutura/barreiras nao-tarifarias. Liga Arabe: dividida Guerra Golfo (1990), Primavera Arabe (2011), Qatar x Arabia Saudita, suspendeu Siria.",
+          "dica": "Uniao Africana = 55 paises, integracao incipiente. AfCFTA = potencial imenso mas desafios infraestrutura. Liga Arabe = dividida conflitos internos (sunita-xiita, monarquias-republicas)."
+        }
+      ],
+      "questao": {
+        "enunciado": "O Mercosul, criado em 1991, tinha como objetivo promover a integracao economica entre os paises sul-americanos, visando o fortalecimento da regiao no cenario internacional. Porem, decadas depois, o bloco enfrenta diversos desafios que limitam sua consolidacao.\n\nSao obstaculos ao aprofundamento da integracao no Mercosul:\n\nI. As grandes assimetrias economicas entre os paises-membros, especialmente o peso da economia brasileira.\nII. As divergencias ideologicas entre os governos, que dificultam consensos politicos.\nIII. A reducao do comercio intrabloco e a reorientacao para outros parceiros comerciais.\nIV. A adocao de uma moeda unica que gerou instabilidade monetaria na regiao.\n\nEstao corretas:",
+        "alternativas": [
+          "Apenas I e II.",
+          "Apenas I, II e III.",
+          "Apenas II e III.",
+          "Apenas I, III e IV.",
+          "I, II, III e IV."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "As afirmativas I, II e III estao corretas: as assimetrias economicas (Brasil representa cerca de 70% do PIB do bloco) criam desequilibrios; divergencias ideologicas entre governos liberais e progressistas dificultam acordos; o comercio intrabloco caiu de 20% para cerca de 12% do total. A afirmativa IV esta INCORRETA porque o Mercosul nunca adotou moeda unica - cada pais mantem sua propria moeda (real, peso argentino, peso uruguaio, guarani). A moeda unica existe na Uniao Europeia (euro), nao no Mercosul.",
+        "tags": ["mercosul", "integracao-regional", "blocos-economicos", "america-sul"]
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Potencias Globais",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Estados Unidos: Hegemonia em Declinio",
+          "conteudo": "EUA: maior economia (PIB US$ 25 trilhoes, 25% mundial), maior poder militar (US$ 800 bilhoes gastos, 38% mundial, bases 750 em 80 paises), moeda reserva global (dolar 60% reservas), poder cultural (Hollywood, redes sociais, universidades). Hegemonia pos-1991, mas declinio relativo: ascensao China, guerras fracassadas (Iraque, Afeganistao), crise 2008, polarizacao interna, contestacao multilateralismo (Trump). Mantem supremacia militar/tecnologica mas perde economica/diplomatica.",
+          "exemplo": "Dolar hegemonia: 88% transacoes internacionais, permite sancoes (Ira, Russia), deficit comercial financiado emitindo moeda. Complexo militar-industrial: Lockheed, Boeing, defesa alimenta economia. Guerras pos-11/set: US$ 8 trilhoes gastos, 900 mil mortos, Afeganistao colapso 2021 (Taliba retornou), Iraque instavel. Silicon Valley: Google, Apple, Microsoft, Amazon, Facebook dominam tecnologia. Polarizacao: Trump vs Biden, assalto Capitolio 2021, divisao interna enfraquece projecao externa.",
+          "dica": "EUA = maior economia + militar + moeda reserva (dolar). Hegemonia declina: China ascende, guerras fracassam, polarizacao interna. Mantem militar/tecnologia mas perde economia/diplomacia."
+        },
+        {
+          "id": 2,
+          "titulo": "China: Ascensao ao Poder Global",
+          "conteudo": "China: 2ª economia (PIB US$ 18 tri, PPP US$ 30 tri supera EUA), maior exportador, maior produtor manufaturas (28% mundial), maior credor (reservas US$ 3 trilhoes). Modelo: 'socialismo mercado', Partido Comunista controle autoritario + capitalismo Estado. Reformas Deng Xiaoping (1978): Zonas Economicas Especiais abriram economia, crescimento 10%/ano 1980-2010. Iniciativas globais: Cinturao Rota (US$ 1 trilhao infraestrutura 70 paises), BRICS, AIIB (banco alternativo). Desafios: envelhecimento, poluicao, renda media, Taiwan, direitos humanos.",
+          "exemplo": "Reformas Deng: 'nao importa cor gato, importa pegar ratos', abriu Shenzhen/Shanghai, atraiu investimentos, 800 milhoes saíram pobreza. Cinturao Rota (BRI): ferrovias/portos Africa/Asia/Europa, criticas neocolonialismo (dividas impagaveis, Sri Lanka cedeu porto China). Tecnologia: Huawei 5G lidera, Tiktok, DJI drones, veículos eletricos BYD. Taiwan: China reivindica, EUA apoiam, tensao crescente (invasao possível?). Uigures Xinjiang: 1 milhao detidos campos reeducacao, ONU denuncia crimes humanidade.",
+          "dica": "China: 2ª economia, 1ª exportador/manufatura. 'Socialismo mercado' = ditadura partido + capitalismo. Cinturao Rota = influencia global. Desafios: envelhecimento, Taiwan, direitos humanos."
+        },
+        {
+          "id": 3,
+          "titulo": "Russia: Potencia Regional Revisionista",
+          "conteudo": "Russia: herdeira URSS, decadencia anos 1990, recuperacao 2000s Putin (petr oleo/gas). Economia pequena (PIB US$ 1,8 tri, 11ª mundial) mas poder militar (2ª arsenal nuclear, 5.900 ogivas, modernizado), energetico (maior gas, 2° petroleo, Europa dependente), veto ONU. Politica externa: revisionista, contesta expansao Otan, anexou Crimeia (2014), guerra Ucrania (2022), intervem Siria/Cazaquistao/Belarus. Autoritarismo Putin, repressao oposicao (Navalni envenenado/preso). Sancoes Ocidente pos-Ucrania isolam economia.",
+          "exemplo": "Desintegracao URSS 1991: caos economico, PIB caiu 50% decada 1990, oligarcas saquearam, Yeltsin alcoolatra. Putin (2000): centralizou poder, nacionalizou petroleo (Gazprom estatal), crescimento apoiado commodities. Crimeia 2014: anexou peninsula pos-Euromaidan Ucrania, sancoes Ocidente. Guerra Ucrania 2022: invasao fracassou tomar Kiev, guerra atrito, 200 mil mortos, PIB Russia -2,1% 2022. Nord Stream: gasoduto Russia-Alemanha, sabotado 2022. Oposicao: Navalni envenenado 2020, preso, morto prisao 2024.",
+          "dica": "Russia = economia pequena mas arsenal nuclear + energia (gas Europa). Putin autoritario, revisionista, anexou Crimeia, invadiu Ucrania. Sancoes isolam. Poder regional, nao global."
+        },
+        {
+          "id": 4,
+          "titulo": "Potencias Regionais Emergentes",
+          "conteudo": "Potencias regionais: India (2ª populacao 1,4 bi, 5ª economia, tecnologia, rivalidade China), Brasil (maior economia America Latina, lideranca regional limitada), Mexico (2ª America Latina, integracao EUA), Indonesia (4ª populacao 280 mi, maior economia Sudeste Asiatico), Turquia (ponte Europa-Asia, ambicoes otomanas), Arabia Saudita (petroleo, lideranca mundo arabe), Africa Sul (maior economia Africa Subsaariana, influencia limitada). Nenhuma e superpotencia global mas influenciam regioes.",
+          "exemplo": "India: crescimento 7%/ano, tecnologia (Bangalore), farmaceutica (genericos), espacial (Chandrayaan Lua, Mangalyaan Marte), mas pobreza (15% abaixo linha), poluicao, conflitos religiosos (hindu vs muculmanos Modi). Brasil: lideranca regional limitada (nao intervem conflitos), soft power (musica, futebol, diplomacia ambiental), mas instabilidade politica/economica. Turquia Erdogan: neootomanismo, intervem Siria/Libia/Caucaso, compra S-400 Russia (tensao Otan). Arabia Saudita: petroleo 12% mundial, Vision 2030 diversificar, mas autoritarismo (Khashoggi assassinado 2018).",
+          "dica": "Potencias regionais = influencia limitada geograficamente. India rival China. Brasil lideranca Sul tímida. Turquia/Arabia Saudita ambicoes regionais. Nenhuma disputa hegemonia global (ainda)."
+        },
+        {
+          "id": 5,
+          "titulo": "Competicao Geopolitica Contemporanea",
+          "conteudo": "Competicao atual: EUA vs China (hegemonia economica/tecnologica, Taiwan, Mar China Sul), EUA/Otan vs Russia (Ucrania, Europa Leste), disputas regionais (India-Paquistao Caxemira, Arabia Saudita-Ira Oriente Medio, Israel-Palestina). Arenas: tecnologia (5G, IA, semicondutores), espaco (satelites, militarizacao), cibernetica (hackers, desinformacao), moedas (desdolarizacao, yuan digital), recursos (terras raras, litio baterias). Nova Guerra Fria EUA-China? Semelhanças (ideologias, blocos), diferencas (interdependencia economica, nuclear MAD).",
+          "exemplo": "Guerra comercial EUA-China (2018-): tarifas bilaterais, bloqueio Huawei, controle exportacao chips, TikTok ameacado banir EUA. Taiwan: China considera provincia rebelde, EUA apoiam militarmente, invasao possivel 2027? Chips Taiwan (TSMC) fabricam 60% semicondutores mundiais, cruciais. Ucrania: proxy EUA-Russia, Otan armou Kiev US$ 100 bilhoes, Russia alianca China/Ira. AUKUS (2021): pacto EUA-UK-Australia conter China Pacifico, submarinos nucleares Australia. Terras raras: China 80% producao, cruciais tecnologia, EUA dependente.",
+          "dica": "Principal competicao: EUA vs China (economia, tecnologia, Taiwan). Secundaria: EUA/Otan vs Russia (Ucrania). Arenas: tecnologia, espaco, ciber, moedas, recursos criticos. Interdependencia economica evita guerra total (por enquanto)."
+        }
+      ],
+      "questao": {
+        "enunciado": "A ascensao da China como potencia global nas ultimas decadas tem alterado significativamente o equilibrio de poder internacional, desafiando a hegemonia norte-americana estabelecida apos o fim da Guerra Fria. Um dos principais instrumentos da estrategia chinesa para ampliar sua influencia global e a Iniciativa Cinturao e Rota.\n\nEssa iniciativa chinesa caracteriza-se por:",
+        "alternativas": [
+          "Investimentos massivos em infraestrutura de transportes e energia em dezenas de paises da Asia, Africa e Europa.",
+          "Criacao de uma alianca militar para fazer frente a expansao da Otan em direcao ao Pacifico.",
+          "Estabelecimento de um bloco economico regional restrito aos paises do Sudeste Asiatico.",
+          "Programa de ajuda humanitaria para paises africanos atingidos por conflitos armados.",
+          "Acordo de livre comercio bilateral exclusivamente com os Estados Unidos."
+        ],
+        "respostaCorreta": 0,
+        "explicacao": "A Iniciativa Cinturao e Rota (Belt and Road Initiative - BRI), lancada pela China em 2013, e um ambicioso projeto de investimento em infraestrutura (portos, ferrovias, rodovias, energia) que abrange cerca de 70 paises na Asia, Africa, Europa e America Latina, com investimentos estimados em US$ 1 trilhao. Objetivo e ampliar influencia economica e geopolitica chinesa, criar rotas comerciais para escoar producao, e garantir acesso a recursos naturais. As alternativas B (militar), C (restrito), D (humanitaria) e E (EUA) nao descrevem corretamente o projeto.",
+        "tags": ["china", "cinturao-rota", "geopolitica", "infraestrutura"]
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Conflitos e Tensoes Regionais",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Oriente Medio: Mosaico de Conflitos",
+          "conteudo": "Oriente Medio: regiao maior concentracao conflitos. Fatores: petroleo (60% reservas mundiais), disputas etnico-religiosas (arabes, persas, turcos, curdos; sunitas vs xiitas), heranca colonial (fronteiras artificiais Sykes-Picot 1916), Israel-Palestina, intervencoes externas (EUA, Russia). Principais conflitos: Siria (guerra civil 2011-, 500 mil mortos), Iemen (guerra proxy Arabia Saudita-Ira, 380 mil mortos), Iraque (invasao EUA 2003, instabilidade), Afeganistao (guerra 2001-2021, Taliba retornou), Libia (caos pos-Gadafi 2011).",
+          "exemplo": "Primavera Arabe (2011): protestos democraticos Tunisia/Egito/Libia/Siria/Bahrein/Iemen, ditadores caem (Ben Ali, Mubarak, Gadafi), mas maioria virou guerra civil ou repressao. Siria Assad: reprimiu protestos, guerra civil, ISIS aproveitou caos, Russia/Ira salvaram ditador. Iemen: Houthis (xiitas apoiados Ira) vs governo (apoiado Arabia Saudita), pior crise humanitaria (24 milhoes precisam ajuda). Afeganistao: EUA invadiram 2001, 20 anos guerra, saíram 2021, Taliba retomou em dias. Curdos: 30 milhoes sem Estado, divididos Turquia/Iraque/Siria/Ira, reprimidos.",
+          "dica": "Oriente Medio = petroleo + etnias/religioes + heranca colonial + Israel-Palestina + intervencoes. Primavera Arabe fracassou (guerras civis). Proxy wars: Arabia Saudita (sunita) vs Ira (xiita)."
+        },
+        {
+          "id": 2,
+          "titulo": "Africa: Conflitos e Interesses Externos",
+          "conteudo": "Africa: 54 paises, conflitos frequentes causas coloniais (fronteiras artificiais, dividem etnias), disputas etnicas/religiosas, recursos naturais (diamantes, coltan, petroleo), governos frageis/ditaduras, pobreza. Principais conflitos: RD Congo (guerra 1996-2003, 5 milhoes mortos, milícias disputam minerios), Sudao/Sudao Sul (petroleo, etnias, 2 milhoes mortos), Somalia (guerra civil 1991-, Al-Shabaab terrorismo), Mali/Niger/Burkina Faso (jihadismo Sahel), Tigray Etiopia (guerra 2020-22, 600 mil mortos). Interesses: China (minerios, infraestrutura), EUA/Franca (antiterrorismo, bases), Russia (mercenarios Wagner).",
+          "exemplo": "RD Congo: Coltan (minerio celulares) financia milícias, criancas trabalho escravo minas. Ruanda invadiu 1996, guerra envolveu 9 paises africanos ('Guerra Mundial Africana'). Sudao Darfur: genocidio 2003-10, 300 mil mortos, Bashir acusado Tribunal Haia. Sudao Sul: independencia 2011 (petroleo), guerra civil 2013 (etnias Dinka vs Nuer), 400 mil mortos. Somalia: sem governo central desde 1991, piratas, Al-Shabaab, intervencao Uniao Africana/EUA. China Africa: US$ 300 bilhoes investidos, constroi ferrovias/portos, criticas neocolonialismo.",
+          "dica": "Africa = fronteiras coloniais + etnias + recursos = conflitos. RD Congo (coltan), Sudoes (petroleo), Sahel (jihadismo). Interesses externos: China (minerios), EUA/Franca (terrorismo), Russia (Wagner)."
+        },
+        {
+          "id": 3,
+          "titulo": "Mar do Sul da China: Disputa Maritima",
+          "conteudo": "Mar Sul China: area 3,5 milhoes km², US$ 3 trilhoes comercio/ano (30% mundial), petroleo/gas, pesca. Disputa: China reivindica 90% (linha 9 tracejadas, historica), contestado Vietna, Filipinas, Malasia, Brunei, Taiwan. China construiu ilhas artificiais (7, militarizadas, pistas avioes, misseis), ignora decisao Tribunal Haia 2016 (favor Filipinas, rejeitou reivindicacoes chinesas). EUA patrulhas 'liberdade navegacao', tensao crescente. Importancia estrategica: rota comercial crucial, acesso recursos, projecao poder China.",
+          "exemplo": "Ilhas Spratly: disputadas 6 paises, China construiu 3.200 acres aterros, bases militares. Scarborough Shoal: China tomou Filipinas 2012, Duterte nao confrontou. Paracel: China tomou Vietna 1974. Tribunal Haia 2016: decisao favor Filipinas, China rejeitou ('papel sem valor'). EUA patrulhas: navios guerra passam 12 milhas ilhas (aguas internacionais), China protesta. ASEAN dividida: Filipinas/Vietna confrontam China, Camboja/Laos aliados China bloqueiam condenacao. Taiwan estreito: China exercicios militares intimida Taiwan, EUA apoiam.",
+          "dica": "Mar Sul China = disputa territorial maritima, riquezas (petroleo, pesca, comercio). China construiu ilhas militarizadas, ignora Tribunal Haia. EUA patrulhas 'liberdade navegacao'. ASEAN dividida."
+        },
+        {
+          "id": 4,
+          "titulo": "Caxemira: India vs Paquistao",
+          "conteudo": "Caxemira: regiao Himalaia disputada India-Paquistao desde Particao 1947 (India independencia, dividiu muculmanos Paquistao). 3 guerras (1947, 1965, 1999), conflito baixa intensidade permanente. Situacao: India controla 45% (Jammu-Caxemira), Paquistao 35% (Azad Caxemira), China 20% (Aksai Chin). India aboliu autonomia 2019 (artigo 370), repressao, toque recolher, internet cortada. Ambos nucleares (India 160 ogivas, Paquistao 170), risco escalada. Terrorismo: grupos Paquistao (Lashkar-e-Taiba) atacam India (Mumbai 2008, Parlamento 2001).",
+          "exemplo": "Particao 1947: 1 milhao mortos violencia comunitaria, 15 milhoes deslocados, marajá hindu Caxemira (populacao muculmana) escolheu India, Paquistao invadiu, guerra. Siachen: geleira 6.000m altitude, mais alto campo batalha mundo, militares morrem congelados. Mumbai 2008: terroristas paquistaneses mataram 166, tensao nuclear. Pulwama 2019: ataque matou 40 policiais indianos, India bombardeou Paquistao, caças abatidos, quase guerra. Modi 2019: revogou autonomia Caxemira, prendeu lideres, repressao muculmanos, nacionalismo hindu. ONU: 18 resolucoes pedindo plebiscito (nunca ocorreu).",
+          "dica": "Caxemira = disputa India-Paquistao desde 1947 (Particao). 3 guerras, conflito permanente. Ambos nucleares (risco). India aboliu autonomia 2019 (repressao). Terrorismo atraves fronteira."
+        },
+        {
+          "id": 5,
+          "titulo": "Coreia: Peninsula Dividida",
+          "conteudo": "Coreia dividida (1945): Norte ocupacao URSS (comunista), Sul ocupacao EUA (capitalista). Guerra Coreia (1950-53): Norte invadiu Sul, EUA/ONU intervieram, China apoiou Norte, 3 milhoes mortos, armisticio (nao paz). Situacao: Coreia Norte (ditadura Kim, 26 milhoes, PIB US$ 30 bi, nuclear, faminta), Coreia Sul (democracia, 52 milhoes, PIB US$ 1,8 tri, 10ª economia, tecnologia Samsung/LG/Hyundai). Norte testa misseis nucleares/balisticos (programa nuclear 2006, 6 testes), sancoes ONU, tensao periodica. Unificacao improvavel.",
+          "exemplo": "Kim dinastia: Kim Il-sung (1948-94, 'presidente eterno'), Kim Jong-il (1994-2011), Kim Jong-un (2011-). Juche: ideologia autossuficiencia, culto personalidade. Fome 1990s: 3 milhoes mortos colapso URSS. Nuclear: 30-40 ogivas estimadas, misseis alcance EUA (Hwasong-15), programa apesar sancoes. Incidentes: navio Cheonan afundado 2010 (46 mortos), ilha Yeonpyeong bombardeada 2010. Trump-Kim: reunioes 2018-19 sem resultados. Coreia Sul: 7ª exportador, chips, automoveis, Kpop/dramas (soft power). Zona Desmilitarizada: 4 km largura, mais militarizada mundo.",
+          "dica": "Coreia dividida Guerra Fria (1953 armisticio). Norte: ditadura Kim, nuclear, faminta. Sul: democracia rica, tecnologia. Tensao periodica (testes misseis Norte). Unificacao distante."
+        }
+      ],
+      "questao": {
+        "enunciado": "A disputa territorial no Mar do Sul da China envolve varios paises da regiao e tem gerado tensoes crescentes nas ultimas decadas. A China reivindica soberania sobre a maior parte dessa area maritima estrategica, apoiando-se em criterios historicos, enquanto outros paises contestam essas reivindicacoes baseando-se no direito internacional maritimo.\n\nA importancia geopolitica do Mar do Sul da China decorre principalmente:",
+        "alternativas": [
+          "Da presenca de bases militares norte-americanas em ilhas artificiais construidas pela Otan.",
+          "Do fato de ser a principal rota de comercio maritimo mundial e conter significativas reservas de petroleo e gas.",
+          "De ser a unica via de acesso da China ao oceano Pacifico para seu comercio internacional.",
+          "Da existencia de tratados historicos que garantem a soberania chinesa sobre toda a regiao.",
+          "Do controle exclusivo da pesca de atum pela frota pesqueira japonesa na area."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "O Mar do Sul da China e estrategico principalmente porque: 1) e rota de US$ 3 trilhoes em comercio maritimo anual (30% do comercio mundial); 2) contem reservas significativas de petroleo e gas natural; 3) possui grandes recursos pesqueiros. A alternativa A e falsa (bases sao chinesas, nao da Otan), C e incorreta (China tem outros acessos), D e falsa (disputas legais em andamento, Tribunal Haia rejeitou reivindicacoes chinesas em 2016), E e falsa (pesca nao e exclusivamente japonesa).",
+        "tags": ["mar-sul-china", "disputa-territorial", "geopolitica", "asia"]
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Terrorismo e Refugiados",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Terrorismo Contemporaneo",
+          "conteudo": "Terrorismo: violencia contra civis para fins politicos/ideologicos. Tipos: religioso (jihadismo Al-Qaeda, ISIS), separatista (ETA, IRA, PKK curdos), extrema-direita (Christchurch NZ, Noruega Breivik), extrema-esquerda (historico, decliniu). Jihadismo atual: Al-Qaeda (Bin Laden, 11/setembro 2001, descentralizada), ISIS/Daesh (Califado Iraque/Siria 2014-17, territorial, derrotado mas celulas ativas), Boko Haram (Nigeria), Al-Shabaab (Somalia). Causas: exclusao socioeconomica, identidade, geopolitica (intervencoes Ocidente), radicalizacao online.",
+          "exemplo": "11/setembro 2001: Al-Qaeda sequestrou avioes, atacou Torres Gemeas NY + Pentagono, 3 mil mortos, deflagrou 'Guerra Terror' EUA (invasoes Afeganistao, Iraque). ISIS: proclamou Califado 2014, controlou territorio tamanho UK, 8 milhoes pessoas, atraiu 40 mil combatentes estrangeiros, barbarie (decapitacoes, escravidao sexual), derrotado 2019 mas celulas ativas. Atentados Europa: Paris 2015 (130 mortos Bataclan), Nice 2016 (caminhao, 86 mortos), Bruxelas 2016 (32 mortos), Manchester 2017 (22 mortos). Extrema-direita: Christchurch 2019 (51 muculmanos mortos mesquitas).",
+          "dica": "Terrorismo atual = jihadismo principal ameaca (Al-Qaeda, ISIS). 11/setembro = marco, 'Guerra Terror'. ISIS territorial derrotado mas ideologia persiste. Extrema-direita crescente Ocidente."
+        },
+        {
+          "id": 2,
+          "titulo": "Crise dos Refugiados",
+          "conteudo": "Refugiados: pessoas fogem perseguicao, guerra, violencia (Convencao 1951). Numeros: 100 milhoes deslocados forcados (2022), 32 milhoes refugiados, 53 milhoes deslocados internos, 4,9 milhoes solicitantes asilo. Principais origens: Siria (6,8 mi), Ucrania (5,7 mi pos-2022), Afeganistao (2,7 mi), Sudan Sul (2,4 mi), Mianmar (1,2 mi). Destinos: Turquia (3,7 mi refugiados, maioria sirios), Colombia (2,5 mi venezuelanos), Uganda, Paquistao, Alemanha (1,2 mi). Causas: guerras, mudancas climaticas, pobreza, perseguicao. Desafios: integracao, xenofobia, fardo paises pobres (85% refugiados).",
+          "exemplo": "Crise Siria: 6,8 milhoes refugiados, maior crise desde II Guerra, Turquia recebeu 3,7 mi (acordo UE paga €6 bilhoes Turquia segurar), Libano 1,5 mi (25% populacao), Jordania 1,3 mi. Rota Mediterraneo: 2015 pico (1 milhao chegaram Europa), travessia mata milhares afogados, tragedia Lampedusa. Rohingyas Mianmar: genocidio 2017, 1 milhao refugiados Bangladesh, campos superlotados. Venezuelanos: 7 milhoes fugiram crise Maduro, Colombia recebeu maioria. Acordo UE-Turquia: controverso, criticas retorno forcado Siria.",
+          "dica": "100 milhoes deslocados forcados (recorde). Siria + Ucrania + Afeganistao = principais origens. Turquia + Colombia = principais receptores. 85% refugiados paises pobres (injustica). Mediterraneo rota mortal."
+        },
+        {
+          "id": 3,
+          "titulo": "Xenofobia e Nacionalismo",
+          "conteudo": "Xenofobia: medo/odio estrangeiros. Nacionalismo: priorizacao extrema nacao. Ascensao global pos-2008 (crise economica), pos-2015 (refugiados). Extrema-direita: Trump EUA (muro Mexico, 'Muslim ban'), Bolsonaro Brasil, Orban Hungria, Le Pen Franca, AfD Alemanha, Salvini Italia, Brexit UK (anti-imigracao). Discurso: culpar imigrantes desemprego/criminalidade/perda identidade, nacionalismo economico (protecio nismo), anti-globalizacao, autoritarismo. Consequencias: violencia (ataques mesquitas, sinagogas), politicas anti-imigracao, erosao democracia, polarizacao.",
+          "exemplo": "Trump: muro Mexico, separou familias imigrantes (criancas enjauladas), vetou muculmanos. Brexit: Leave venceu 52% com campanha anti-imigracao ('Take back control'), consequencias economicas negativas. Orban Hungria: muro fronteira, recusou cotas refugiados UE, 'democracia iliberal', anti-Soros. Atentados: Christchurch NZ (51 mortos mesquitas), Pittsburgh sinagoga (11 mortos), El Paso Texas (23 latinos mortos). Italia Salvini: politica portos fechados, barcos resgate deixaram afogar refugiados. Redes sociais: algoritmos amplificam odio, radicalizacao online.",
+          "dica": "Xenofobia/nacionalismo crescem pos-2008/2015. Extrema-direita culpa imigrantes, autoritarismo, polariza. Trump/Bolsonaro/Orban exemplos. Atentados aumentam. Redes sociais amplificam."
+        },
+        {
+          "id": 4,
+          "titulo": "Migracoes Economicas",
+          "conteud": "Migracoes economicas: busca melhores condicoes vida (nao refugio). Fluxos: Sul-Norte (Africa/Asia/America Latina para Europa/EUA/Canada/Australia), Sul-Sul (crescente, Venezuela-Colombia, Haiti-Brasil/Chile). Remessas: US$ 630 bilhoes/ano (2022), cruciais economias origem (Tajiquistao 27% PIB, Haiti 21%, Honduras 27%). Migrantes: 281 milhoes (3,6% populacao mundial), concentrados paises ricos. Beneficios destino: rejuvenescem populacao, preenchem empregos, empreendedorismo. Custos: integracao, tensoes sociais, pressao servicos.",
+          "exemplo": "Haitianos Brasil: pos-terremoto 2010, 100 mil entraram, trabalham construcao/servicos. Venezuelanos Brasil/Colombia: 7 milhoes fugiram crise, maioria Colombia (2,5 mi), Brasil 400 mil (Roraima sobrecarregada). Mexicanos EUA: 11 milhoes, historico braceros, remessas US$ 60 bilhoes/ano (2% PIB Mexico). Filipinos: 10 milhoes trabalham exterior (domesticos Golfo, marinheiros), remessas 10% PIB. India: maior diaspora 18 milhoes, tecnologia Silicon Valley, medicos UK, remessas US$ 87 bi/ano. Caravanas Centro-America: Honduras/Guatemala fogem violencia gangues, EUA dificultam asilo.",
+          "dica": "Migracoes economicas > refugio (numeros). Sul-Norte + Sul-Sul crescente. Remessas US$ 630 bi/ano cruciais origem. Migrantes rejuvenescem destino, preenchem empregos. Tensoes xenofobas crescentes."
+        },
+        {
+          "id": 5,
+          "titulo": "Direito Internacional e Refugio",
+          "conteudo": "Convencao Refugiados 1951 (Protocolo 1967): define refugiado ('fundado temor perseguicao'), direitos (nao devolucao, assistencia), deveres paises. ACNUR (Alto Comissariado ONU Refugiados): protecao, assistencia, solucoes duraveis (repatriacao voluntaria, integracao local, reassentamento). Solicitantes asilo: aguardam decisao status refugiado. Deslocados internos (IDP): nao cruzaram fronteira, nao protecao Convencao. Problemas: paises nao cumprem obrigacoes, devolvem fronteiras, campos precarios, protecoes temporarias. Refugiados climaticos nao reconhecidos legalmente.",
+          "exemplo": "Convencao 1951: criada pos-II Guerra (judeus), inicialmente Europa, 1967 ampliou global. Protecao: nao devolucao (non-refoulement) mesmo entrada irregular. ACNUR: Nobel Paz 1954 e 1981, atende 100 milhoes, orcamento US$ 10 bilhoes. Campos: Dadaab Quenia (200 mil somalios 30 anos), Cox's Bazar Bangladesh (1 milhao rohingyas), condicoes precarias. Australia: politica offshore processing (Nauru, Papua), violacoes direitos. EUA Trump: reducoes drasticas cotas, 'Remain Mexico' violou non-refoulement. Refugiados climaticos: Tuvalu submerso, legalmente nao refugiados.",
+          "dica": "Convencao 1951 = base legal refugio. ACNUR = agencia ONU. Non-refoulement = nao devolver. Deslocados internos > refugiados (numeros) mas menos protecao. Refugiados climaticos nao reconhecidos."
+        }
+      ],
+      "questao": {
+        "enunciado": "A partir de 2015, a Europa vivenciou a maior crise de refugiados desde a Segunda Guerra Mundial, com a chegada de mais de um milhao de pessoas fugindo principalmente da guerra na Siria. Esse fluxo massivo gerou intensos debates sobre as obrigacoes dos paises europeus em relacao a protecao de refugiados.\n\nSegundo a Convencao das Nacoes Unidas de 1951 sobre o Estatuto dos Refugiados, os paises signatarios tem a obrigacao de:",
+        "alternativas": [
+          "Fornecer cidadania automatica a todos os solicitantes de asilo que chegarem a seu territorio.",
+          "Distribuir equitativamente os refugiados entre todos os paises membros da ONU.",
+          "Nao devolver refugiados para territorios onde suas vidas ou liberdade estejam ameacadas.",
+          "Manter os refugiados em campos de detencao enquanto aguardam deportacao.",
+          "Conceder aos refugiados os mesmos direitos politicos dos cidadaos nacionais."
+        ],
+        "respostaCorreta": 2,
+        "explicacao": "O principio fundamental da Convencao de 1951 e o 'non-refoulement' (nao devolucao), que proibe os paises de devolverem refugiados para territorios onde suas vidas ou liberdade estejam em perigo por questoes de raca, religiao, nacionalidade, grupo social ou opiniao politica. A alternativa A e incorreta (cidadania nao e automatica), B e falsa (nao ha obrigacao de distribuicao equitativa), D contradiz a Convencao (detencao nao e permitida exceto circunstancias excepcionais), e E e incorreta (direitos civis/sociais sim, politicos normalmente nao).",
+        "tags": ["refugiados", "convencao-1951", "direito-internacional", "non-refoulement"]
+      }
+    }
+  ]
+}

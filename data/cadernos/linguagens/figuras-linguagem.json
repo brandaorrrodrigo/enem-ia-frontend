@@ -1,0 +1,575 @@
+{
+  "id": "figuras-linguagem",
+  "slug": "figuras-linguagem",
+  "titulo": "Figuras de Linguagem",
+  "categoria": "linguagens",
+  "nivel": "intermediario",
+  "descricao": "Compreenda as principais figuras de linguagem cobradas no ENEM: metáfora, metonímia, ironia, hipérbole, antítese, paradoxo e muito mais. Aprenda a identificar e interpretar recursos estilísticos em textos literários e não literários.",
+  "icone": "Sparkles",
+  "cor": "#f59e0b",
+  "tempoEstimado": "5 horas",
+  "fpRecompensa": 0,
+  "tags": ["linguagens", "ENEM", "figuras-linguagem", "interpretacao"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Figuras de Palavras",
+      "resumo": "Metáfora, metonímia, catacrese, sinestesia e perífrase: substituição e transferência de sentidos.",
+      "topicos": [
+        {
+          "titulo": "Metáfora: Comparação Implícita",
+          "conteudo": "A metáfora é figura de linguagem que estabelece relação de semelhança entre termos, sem uso de conectivo comparativo explícito ('como', 'tal qual'). É transferência de significado baseada em analogia: um termo substitui outro por compartilharem características. Por exemplo, 'Meu pensamento é um rio subterrâneo' (Fernando Pessoa) - pensamento não é literalmente rio, mas ambos fluem, são profundos, contínuos.\n\nDiferente da comparação explícita ('Meu amor é como uma rosa'), a metáfora afirma a identidade: 'Meu amor é uma rosa'. Essa condensação torna a linguagem mais expressiva, sugestiva e poética. A metáfora exige participação ativa do leitor para compreender a relação analógica estabelecida. Manuel Bandeira escreveu 'A vida é a luta rude / De inimigos reais contra inimigos vãos' - vida não é literalmente luta, mas o poeta estabelece identidade metafórica.\n\nAs metáforas podem ser convencionais (cristalizadas pelo uso: 'pé da mesa', 'cabeça do alfinete') ou criativas (inéditas, surpreendentes). Na literatura, metáforas originais revelam visão particular do autor sobre realidade. No Simbolismo e Modernismo, metáforas complexas e insólitas são frequentes. Drummond escreveu 'No meio do caminho tinha uma pedra' - metáfora do obstáculo existencial.\n\nNo ENEM, identificar metáforas é essencial para interpretação de textos literários e publicitários. A metáfora não serve apenas para embelezar, mas para expressar ideias abstratas através de imagens concretas, criar efeitos emocionais e revelar visões de mundo. Atenção: nem toda substituição é metáfora - é necessário que haja relação de semelhança, não de contiguidade (que seria metonímia)."
+        },
+        {
+          "titulo": "Metonímia: Relação de Contiguidade",
+          "conteudo": "A metonímia é figura de linguagem baseada em relação de contiguidade, proximidade, interdependência entre termos. Diferente da metáfora (semelhança), a metonímia substitui um termo por outro com o qual mantém relação lógica, não analógica. Tipos: parte pelo todo ('Faltam braços na lavoura' = trabalhadores), autor pela obra ('Li Machado' = obras de Machado), continente pelo conteúdo ('Bebi um copo d'água' = água que estava no copo).\n\nOutras relações metonímicas: matéria pelo objeto ('Joga bem com a madeira' = taco de madeira), marca pelo produto ('Xerox' por fotocópia), lugar pelo produto ('Porto' por vinho do Porto), efeito pela causa ('Viver do suor' = trabalho), símbolo pela coisa simbolizada ('A cruz venceu' = cristianismo). A metonímia é econômica: permite expressão concisa usando termo relacionado.\n\nA sinédoque é tipo específico de metonímia baseado em relação quantitativa: parte pelo todo ('Muitas cabeças pensam melhor' = pessoas), todo pela parte ('O Brasil venceu' = seleção brasileira), gênero pela espécie ('Os mortais sofrem' = humanos), singular pelo plural ('O brasileiro é hospitaleiro' = os brasileiros). Alguns gramáticos consideram sinédoque figura autônoma; outros a classificam como metonímia.\n\nNo ENEM, distinguir metáfora de metonímia é importante. Metáfora: 'Aquele homem é um leão' (semelhança: coragem). Metonímia: 'A Casa Branca anunciou' (contiguidade: prédio representa governo americano). Manchetes jornalísticas, charges políticas e textos publicitários utilizam frequentemente metonímia. Reconhecer a figura permite compreensão adequada do sentido pretendido."
+        },
+        {
+          "titulo": "Catacrese: Metáfora Desgastada",
+          "conteudo": "A catacrese é metáfora que perdeu força expressiva pelo uso excessivo, tornando-se cristalizada na língua. Originalmente metafóricas, expressões como 'pé da mesa', 'asa da xícara', 'cabeça do alfinete', 'dente de alho', 'braço da cadeira' deixaram de ser percebidas como figuradas, sendo aceitas como designações literais na falta de termo próprio.\n\nA catacrese resolve lacuna vocabular: não existe palavra específica para extremidade inferior da mesa, então usa-se 'pé' por analogia com pé humano. Com o tempo, essa transferência metafórica tornou-se automática, transparente. Outros exemplos: 'embarcar no avião' (originalmente aplicável apenas a barcos), 'céu da boca' (palato), 'folhas de papel' (por analogia com folhas vegetais).\n\nA diferença entre catacrese e metáfora viva está no grau de criatividade e consciência: metáfora literária é criação intencional que chama atenção para si ('Meu coração é um balde despejado' - Pessoa); catacrese é automática, não chama atenção. No uso cotidiano, ninguém percebe que está usando figura ao dizer 'boca do fogão' ou 'língua de terra'.\n\nNo ENEM, questões sobre catacrese geralmente exploram compreensão do fenômeno linguístico: como palavras ampliam sentidos por necessidade expressiva. É importante reconhecer que catacrese não é 'erro', mas recurso natural de evolução da língua. Textos que brincam com sentido literal de catacreses (humor, trocadilhos) podem aparecer para análise de efeitos de sentido."
+        },
+        {
+          "titulo": "Sinestesia: Fusão de Sensações",
+          "conteudo": "A sinestesia é figura que mistura impressões sensoriais diferentes: visão, audição, olfato, paladar, tato. Expressões como 'voz aveludada' (audição + tato), 'grito azul' (audição + visão), 'doce melodia' (paladar + audição), 'perfume verde' (olfato + visão) fundem sensações de órgãos distintos, criando imagens ricas e sugestivas.\n\nA sinestesia é recurso típico da poesia simbolista e modernista, que buscam expressar realidades complexas através de aproximações inusitadas. Cruz e Sousa, poeta simbolista, escreveu sobre 'brancuras musicais', 'místicas brancuras', fundindo impressões sensoriais abstratas. Baudelaire, em 'Correspondências', fala de 'perfumes frescos como carnes de crianças, doces como oboés, verdes como pradarias'.\n\nNa publicidade, sinestesia é frequente para criar sensações agradáveis associadas ao produto: 'sabor suave' (paladar + tato), 'cor quente' (visão + temperatura), 'textura macia' (tato + suavidade). O objetivo é estimular múltiplos sentidos simultaneamente, intensificando experiência sensorial e emocional.\n\nNo ENEM, sinestesia aparece em questões de interpretação poética e análise de recursos estilísticos. É importante identificar quais sentidos estão sendo fundidos e qual efeito essa fusão produz. Sinestesia não é apenas ornamento: revela visão sincrética da realidade, recusa da fragmentação sensorial, busca de expressão total da experiência. Reconhecer sinestesia permite compreensão mais profunda de textos literários modernos."
+        }
+      ],
+      "exemplos": [
+        "Metáfora: 'Meu pensamento é um rio subterrâneo' (Pessoa) - pensamento = rio",
+        "Metonímia: 'Li Machado ontem' = li obras de Machado de Assis",
+        "Catacrese: 'Sentou no braço da cadeira' - metáfora cristalizada",
+        "Sinestesia: 'Voz aveludada' - audição (voz) + tato (aveludada)"
+      ],
+      "dicas": [
+        "Metáfora = semelhança/analogia; Metonímia = contiguidade/proximidade",
+        "Catacrese = metáfora desgastada pelo uso ('pé da mesa', 'asa da xícara')",
+        "Sinestesia sempre envolve DOIS sentidos diferentes fusionados",
+        "No ENEM, identifique qual relação (semelhança ou contiguidade) está na substituição"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Leia o verso:\n\n'Meu coração é um balde despejado.'\n\n(Fernando Pessoa)\n\nA figura de linguagem presente no verso é:",
+          "alternativas": {
+            "A": "Metonímia, pois estabelece relação de contiguidade entre coração e balde",
+            "B": "Metáfora, pois estabelece comparação implícita entre coração vazio e balde",
+            "C": "Catacrese, pois 'balde despejado' é expressão cristalizada pelo uso",
+            "D": "Sinestesia, pois funde sensações visuais e táteis do coração",
+            "E": "Hipérbole, pois exagera o tamanho do coração comparando-o a balde"
+          },
+          "correta": "B",
+          "explicacao": "O verso apresenta metáfora: Pessoa estabelece identidade entre 'coração' e 'balde despejado' baseada em semelhança (ambos vazios, esvaziados de conteúdo - sentimentos/água). Não há conectivo comparativo ('como'), mas afirmação direta 'é'. A relação não é de contiguidade (metonímia), mas de analogia: coração emocionalmente vazio assemelha-se a balde que foi esvaziado. Não é catacrese porque não é expressão cristalizada - é criação poética original que chama atenção. Não é sinestesia porque não funde sentidos diferentes. Não é hipérbole porque não exagera tamanho, mas estabelece identidade metafórica para expressar vazio emocional.",
+          "dificuldade": "facil",
+          "tags": ["figuras-palavras", "metafora"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Leia a manchete:\n\n'Brasília aprova reforma tributária após décadas de debate.'\n\nA figura de linguagem presente é:",
+          "alternativas": {
+            "A": "Metáfora, comparando cidade a agente político",
+            "B": "Hipérbole, exagerando tempo de debate sobre reforma",
+            "C": "Metonímia, usando lugar (Brasília) pelo governo/Congresso",
+            "D": "Ironia, sugerindo sentido oposto ao declarado",
+            "E": "Antítese, contrapondo termos de significados opostos"
+          },
+          "correta": "C",
+          "explicacao": "A manchete utiliza metonímia: 'Brasília' (cidade, lugar físico) substitui 'Congresso Nacional' ou 'governo federal' que está sediado em Brasília. É relação de contiguidade espacial: o lugar representa a instituição que nele funciona. Não é metáfora porque não há semelhança (cidade não é semelhante a governo), mas contiguidade (cidade abriga governo). Não é hipérbole porque 'décadas' pode ser literal. Não há ironia (sentido é direto). Não há antítese (oposição entre termos). Metonímia lugar/instituição é comum em jornalismo: 'A Casa Branca anunciou', 'O Planalto decidiu', 'Wall Street reagiu'.",
+          "dificuldade": "medio",
+          "tags": ["figuras-palavras", "metonimia"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Analise a frase:\n\n'Sentou-se no braço da poltrona enquanto bebia um copo d'água.'\n\nAs figuras de linguagem presentes são:",
+          "alternativas": {
+            "A": "Duas metáforas: 'braço da poltrona' e 'copo d'água'",
+            "B": "Catacrese ('braço da poltrona') e metonímia ('copo d'água')",
+            "C": "Duas metonímias de parte pelo todo",
+            "D": "Hipérbole na primeira parte e litote na segunda",
+            "E": "Não há figuras de linguagem, apenas sentido literal"
+          },
+          "correta": "B",
+          "explicacao": "'Braço da poltrona' é catacrese: metáfora cristalizada pelo uso para designar parte lateral da poltrona (não existe termo próprio, usou-se 'braço' por analogia). 'Copo d'água' é metonímia: continente (copo) pelo conteúdo (água). Ninguém bebe o copo, mas a água que nele está. Não são metáforas vivas porque não chamam atenção para si - são usos automatizados. Catacrese resolve lacuna vocabular; metonímia é econômica. Não há hipérbole (exagero) nem litote (atenuação). Embora naturalizadas, são figuras de linguagem que demonstram criatividade histórica da língua ao resolver necessidades expressivas.",
+          "dificuldade": "dificil",
+          "tags": ["figuras-palavras", "catacrese", "metonimia"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Leia o verso:\n\n'Ó formas vagas, fluidas, cristalinas...\nIncensos dos turíbulos das aras...'\n\n(Cruz e Sousa)\n\nA expressão 'incensos dos turíbulos das aras' sugere:",
+          "alternativas": {
+            "A": "Metonímia, pois substitui religião por seu instrumento ritual",
+            "B": "Sinestesia, fundindo olfato (incensos) com aspectos espirituais/visuais",
+            "C": "Catacrese, expressão cristalizada sobre práticas religiosas",
+            "D": "Hipérbole, exagerando importância dos rituais católicos",
+            "E": "Eufemismo, suavizando crítica às instituições religiosas"
+          },
+          "correta": "B",
+          "explicacao": "A expressão apresenta sinestesia típica do Simbolismo: 'incensos' (olfato - perfume) associado a 'formas vagas, fluidas, cristalinas' (visão) e sugestão espiritual/mística. Cruz e Sousa funde sensações físicas (cheiro de incenso) com impressões visuais (formas vagas) e espirituais (sacralidade), criando atmosfera sinestésica complexa. Não é apenas metonímia porque não substitui simplesmente uma coisa por outra - funde experiências sensoriais diferentes. Não é catacrese (não é cristalizada). Não é hipérbole (não exagera). Não é eufemismo (não suaviza crítica). É criação sinestésica para expressar experiência mística total.",
+          "dificuldade": "dificil",
+          "tags": ["figuras-palavras", "sinestesia", "simbolismo"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Compare:\n\nTexto I: 'Aquele jogador é um leão em campo.'\nTexto II: 'Precisamos de mais cabeças pensantes no projeto.'\n\nAs figuras presentes são, respectivamente:",
+          "alternativas": {
+            "A": "Metáfora e metáfora",
+            "B": "Metonímia e metonímia",
+            "C": "Metáfora e metonímia",
+            "D": "Metonímia e metáfora",
+            "E": "Hipérbole e catacrese"
+          },
+          "correta": "C",
+          "explicacao": "Texto I apresenta metáfora: jogador = leão por semelhança (coragem, força, agressividade). É comparação implícita baseada em analogia. Texto II apresenta metonímia (sinédoque): 'cabeças' (parte) representa 'pessoas' (todo). É relação de contiguidade quantitativa, não de semelhança. Não são ambas metáforas porque em II não há analogia, mas parte pelo todo. Não são ambas metonímias porque em I há semelhança, não contiguidade. A distinção metáfora/metonímia é fundamental: metáfora = semelhança; metonímia = contiguidade/proximidade.",
+          "dificuldade": "medio",
+          "tags": ["figuras-palavras", "metafora", "metonimia", "comparacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Figuras de Construção",
+      "resumo": "Elipse, zeugma, pleonasmo, polissíndeto, assíndeto, anacoluto, hipérbato e silepse.",
+      "topicos": [
+        {
+          "titulo": "Elipse e Zeugma",
+          "conteudo": "A elipse é omissão de termo facilmente subentendido pelo contexto. Exemplo: 'Na sala, apenas silêncio' (verbo 'havia' está omitido mas subentendido). A língua portuguesa permite múltiplas elipses: sujeito ('Cheguei cedo' - eu), verbo ('Ele prefere café; eu, chá' - prefiro), complemento ('Comprei livros e revistas' - comprei está subentendido na segunda parte).\n\nA elipse torna o discurso mais econômico e dinâmico, evitando repetições desnecessárias. Em propagandas, títulos e manchetes, elipse é frequente pela necessidade de concisão: 'Proibido fumar' (é proibido fumar). Em poesia, elipse cria ritmo e sugere sentidos implícitos. Drummond escreveu: 'No meio do caminho tinha uma pedra' - o sujeito está implícito.\n\nO zeugma é tipo específico de elipse: omissão de termo já expresso anteriormente. Exemplo: 'Ela gosta de teatro; eu, de cinema' (verbo 'gosto' está omitido na segunda oração mas foi expresso na primeira). Diferença: elipse omite termo não mencionado mas subentendido; zeugma omite termo já mencionado no contexto imediato.\n\nNo ENEM, questões exploram compreensão de termos elípticos para interpretação adequada. Em textos ambíguos, identificar corretamente o termo omitido é essencial. Exemplo: 'João viu Maria e cumprimentou' - quem cumprimentou quem? O sujeito elíptico de 'cumprimentou' é João (mesmo sujeito da oração anterior). Reconhecer elipses evita interpretações equivocadas e revela coesão textual."
+        },
+        {
+          "titulo": "Pleonasmo: Redundância Expressiva",
+          "conteudo": "O pleonasmo é repetição de ideia já expressa, seja para ênfase (pleonasmo literário/estilístico) ou por vício de linguagem (pleonasmo vicioso). Exemplo literário: 'Vi com meus próprios olhos' - 'próprios' reforça 'vi' enfaticamente. 'E rir meu riso e derramar meu pranto' (Vinícius) - 'meu' enfatiza posse do riso e pranto.\n\nO pleonasmo vicioso é redundância desnecessária que não acrescenta ênfase: 'subir para cima', 'descer para baixo', 'entrar para dentro', 'sair para fora', 'elo de ligação', 'ganhar grátis'. São condenados pela norma culta por não agregarem valor expressivo, apenas prolixidade. Outros: 'hemorragia de sangue', 'monopólio exclusivo', 'certeza absoluta'.\n\nNa literatura, pleonasmo estilístico é recurso expressivo consciente. Manuel Bandeira: 'Vou-me embora pra Pasárgada / Lá sou amigo do rei' - 'me embora' é pleonástico mas reforça ideia de partida definitiva. Cazuza: 'Eu vejo o futuro repetir o passado / Eu vejo um museu de grandes novidades' - 'museu de novidades' é oximoro pleonástico proposital.\n\nNo ENEM, questões exploram distinção entre pleonasmo estilístico (intencional, expressivo) e vicioso (erro). Identificar função da repetição é essencial: serve para ênfase ou é mera redundância? Em textos publicitários, pleonasmo pode ser estratégico: 'completamente grátis' reforça benefício. Em redações, deve-se evitar pleonasmo vicioso que prejudica concisão."
+        },
+        {
+          "titulo": "Polissíndeto e Assíndeto",
+          "conteudo": "O polissíndeto é repetição intencional de conjunções coordenativas, geralmente 'e', criando ritmo cadenciado e enfático. Luís de Camões: 'Amor é fogo que arde sem se ver, / É ferida que dói, e não se sente, / É um contentamento descontente, / É dor que desatina sem doer'. A repetição de 'É' (verbo de ligação com função conjuntiva) cria ritmo enumerativo e enfático.\n\nO polissíndeto retarda ritmo, dá peso a cada elemento enumerado, cria solenidade ou intensidade dramática. Na Bíblia: 'E houve tarde e manhã' (repetição enfática de 'e'). Em discursos retóricos, polissíndeto confere gravidade. Vinícius de Moraes: 'E que seja infinito enquanto dure' - o 'e' inicial cria continuidade e ênfase.\n\nO assíndeto é ausência de conjunções onde seriam esperadas, criando ritmo acelerado e dinâmico. 'Vim, vi, venci' (César) - sem conjunções entre verbos, rapidez na ação. Oswald de Andrade: 'No Pão de Açúcar / De Cada Dia / Dai-nos Senhor / A poesia / De cada dia' - versos sem conjunção, justaposição direta, fragmentação modernista.\n\nNo ENEM, identificar polissíndeto e assíndeto permite compreender ritmo e ênfase textual. Polissíndeto = repetição conjuntiva, ritmo lento, ênfase em cada elemento. Assíndeto = ausência de conjunção, ritmo rápido, dinamismo. Ambos são escolhas estilísticas conscientes que produzem efeitos de sentido específicos. Textos publicitários usam assíndeto para velocidade; textos solenes usam polissíndeto para gravidade."
+        },
+        {
+          "titulo": "Hipérbato e Anacoluto",
+          "conteudo": "O hipérbato é inversão da ordem direta dos termos da oração (sujeito + verbo + complementos). Exemplo clássico de Camões: 'Do mar o sal' (ordem direta: 'O sal do mar'). Gonçalves Dias: 'Minha terra tem palmeiras / Onde canta o Sabiá' (ordem direta: 'O Sabiá canta onde tem palmeiras minha terra'). O hipérbato cria efeito de estranhamento, destaca termos, ajusta métrica poética.\n\nNa linguagem formal e literária, hipérbato confere solenidade e elegância. No Parnasianismo, inversões sintáticas eram frequentes para adequar verso ao metro. Porém, hipérbato excessivo prejudica clareza. No ENEM, textos clássicos (Camões, Gonçalves Dias) apresentam hipérbatos que exigem reordenação mental para compreensão adequada.\n\nO anacoluto (ou frase quebrada) é ruptura na estrutura sintática: inicia-se construção que não é concluída logicamente, abandonando-se termo inicial. 'Eu, parece que vou desmaiar' - 'Eu' está desconectado sintaticamente do resto. 'Aqueles livros, já li todos' - 'aqueles livros' não tem função sintática na oração.\n\nO anacoluto ocorre naturalmente na oralidade (falha de planejamento) mas pode ser recurso literário intencional para reproduzir linguagem coloquial ou fluxo de consciência. Graciliano Ramos, em 'Vidas Secas', usa construções sintáticas truncadas refletindo pensamento fragmentado de Fabiano. No ENEM, anacoluto aparece em análise de variação linguística (oral versus escrita) e em literatura que reproduz oralidade ou interioridade desarticulada."
+        }
+      ],
+      "exemplos": [
+        "Elipse: 'Na sala, apenas silêncio' (verbo 'haver' omitido)",
+        "Zeugma: 'Ela gosta de teatro; eu, de cinema' (verbo omitido foi expresso antes)",
+        "Pleonasmo literário: 'Vi com meus próprios olhos' (ênfase)",
+        "Polissíndeto: 'Amor é fogo... É ferida... É contentamento... É dor...' (Camões)"
+      ],
+      "dicas": [
+        "Elipse = omissão subentendida; Zeugma = omissão de termo já expresso",
+        "Pleonasmo literário = ênfase expressiva; Pleonasmo vicioso = erro",
+        "Polissíndeto = repetição de conjunção; Assíndeto = ausência de conjunção",
+        "Hipérbato = inversão sintática; Anacoluto = ruptura sintática"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Leia os versos:\n\n'Na sala, apenas silêncio.\nNa rua, apenas vazio.\nNas pessoas, apenas indiferença.'\n\nA figura de construção presente é:",
+          "alternativas": {
+            "A": "Zeugma, pois repete estrutura omitindo verbo expresso anteriormente",
+            "B": "Elipse, pois omite verbo 'havia' subentendido em todas as frases",
+            "C": "Pleonasmo, pois repete ideia de ausência nas três frases",
+            "D": "Polissíndeto, pois repete palavra 'apenas' criando ritmo",
+            "E": "Hipérbato, pois inverte ordem natural sujeito-verbo-complemento"
+          },
+          "correta": "B",
+          "explicacao": "Há elipse do verbo 'havia' (ou 'existia') em todas as três frases: '(Havia) Na sala, apenas silêncio'. O verbo não foi expresso em nenhum momento anterior, mas está subentendido pelo contexto. Se o verbo tivesse sido expresso na primeira frase e omitido nas seguintes, seria zeugma. Como nunca foi expresso, apenas subentendido, é elipse. Não é pleonasmo porque não há redundância na mesma frase. Não é polissíndeto (repetição de conjunção). Não é hipérbato porque, mesmo com elipse, a ordem básica está mantida (adjunto + sujeito).",
+          "dificuldade": "medio",
+          "tags": ["figuras-construcao", "elipse"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Analise o verso:\n\n'E rir meu riso e derramar meu pranto'\n\n(Vinícius de Moraes)\n\nO pleonasmo presente tem função de:",
+          "alternativas": {
+            "A": "Erro gramatical que deveria ser evitado na linguagem culta",
+            "B": "Ênfase poética reforçando posse e autenticidade do riso e pranto",
+            "C": "Economia linguística eliminando palavras desnecessárias",
+            "D": "Obscurecer significado criando ambiguidade interpretativa",
+            "E": "Preencher métrica do verso sem função semântica específica"
+          },
+          "correta": "B",
+          "explicacao": "'Rir meu riso' e 'derramar meu pranto' são pleonasmos literários/estilísticos: 'riso' já pertence logicamente a quem ri; 'pranto' a quem chora. Porém, a repetição possessiva 'meu' não é erro - é ênfase expressiva intencional. Vinícius reforça autenticidade, apropriação pessoal, intensidade emocional do riso e do pranto. Não é erro gramatical mas recurso estilístico. Não promove economia (seria mais econômico sem 'meu'). Não obscurece (clarifica e enfatiza). Embora ajude métrica, função principal é semântica: enfatizar posse/autenticidade. Pleonasmo literário é figura de estilo valorizada; vicioso é erro condenado.",
+          "dificuldade": "facil",
+          "tags": ["figuras-construcao", "pleonasmo"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Compare os textos:\n\nTexto I: 'Amor é fogo, é ferida, é contentamento, é dor.' (Camões)\n\nTexto II: 'Vim, vi, venci.' (César)\n\nAs figuras presentes são, respectivamente:",
+          "alternativas": {
+            "A": "Polissíndeto e polissíndeto",
+            "B": "Assíndeto e assíndeto",
+            "C": "Polissíndeto e assíndeto",
+            "D": "Assíndeto e polissíndeto",
+            "E": "Elipse e zeugma"
+          },
+          "correta": "C",
+          "explicacao": "Texto I apresenta polissíndeto: repetição do verbo 'é' (funciona como conjunção ligando predicativos) criando ritmo enfático e solene. Cada definição de amor é destacada pela repetição. Texto II apresenta assíndeto: ausência de conjunção entre os verbos ('vim, vi, venci' sem 'e'). O assíndeto cria ritmo rápido, dinâmico, transmitindo velocidade e objetividade da ação. Polissíndeto = repetição de elementos conectivos; assíndeto = ausência de conexão. Não são elipse/zeugma porque não há omissão de termos, mas presença/ausência de conjunções.",
+          "dificuldade": "medio",
+          "tags": ["figuras-construcao", "polissindeto", "assindeto"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Leia o verso:\n\n'Minha terra tem palmeiras\nOnde canta o Sabiá'\n\n(Gonçalves Dias)\n\nReescrito em ordem direta seria:",
+          "alternativas": {
+            "A": "'O Sabiá canta nas palmeiras da minha terra'",
+            "B": "'Minha terra onde canta tem palmeiras o Sabiá'",
+            "C": "'Palmeiras tem minha terra onde o Sabiá canta'",
+            "D": "'Canta o Sabiá nas palmeiras que tem minha terra'",
+            "E": "Não há inversão - o texto já está em ordem direta"
+          },
+          "correta": "A",
+          "explicacao": "A ordem direta seria: 'O Sabiá canta nas palmeiras da minha terra' ou variação próxima. No verso original há hipérbato: 'Minha terra tem palmeiras' (ordem mais natural: 'Na minha terra tem palmeiras') e especialmente 'Onde canta o Sabiá' (ordem direta: 'Onde o Sabiá canta'). A inversão 'canta o Sabiá' (verbo + sujeito) destaca o verbo e ajusta métrica. As demais alternativas mantêm ou criam outras inversões. O hipérbato não prejudica compreensão mas dá musicalidade e destaque poético ao verso.",
+          "dificuldade": "dificil",
+          "tags": ["figuras-construcao", "hiperbato"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Analise a frase:\n\n'Ela gosta de cinema; eu, de teatro; ele, de música.'\n\nA figura presente é:",
+          "alternativas": {
+            "A": "Elipse, pois omite sujeitos nas segundas orações",
+            "B": "Zeugma, pois omite verbo 'gosta' já expresso anteriormente",
+            "C": "Pleonasmo, pois repete estrutura sobre preferências",
+            "D": "Polissíndeto, pois repete ponto e vírgula conectando orações",
+            "E": "Anacoluto, pois rompe estrutura sintática esperada"
+          },
+          "correta": "B",
+          "explicacao": "A figura é zeugma: o verbo 'gosta' foi expresso na primeira oração ('Ela gosta de cinema') e está omitido nas seguintes ('eu [gosto] de teatro; ele [gosta] de música'). Zeugma é tipo específico de elipse: omissão de termo já mencionado anteriormente. Se o verbo nunca tivesse sido expresso, seria elipse simples. Como foi expresso e depois omitido nas repetições, é zeugma. Não é pleonasmo (não há redundância). Não é polissíndeto (ponto e vírgula não é conjunção). Não é anacoluto (não há ruptura, a estrutura paralela está mantida).",
+          "dificuldade": "facil",
+          "tags": ["figuras-construcao", "zeugma"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Figuras de Pensamento I",
+      "resumo": "Antítese, paradoxo, ironia e eufemismo: contrastes e sentidos implícitos.",
+      "topicos": [
+        {
+          "titulo": "Antítese: Oposição de Ideias",
+          "conteudo": "A antítese é aproximação de palavras ou ideias de sentidos opostos, criando contraste. Exemplo: 'Eu preparo uma canção / Em que minha mãe se reconheça / Todas as mães se reconheçam / E que fale como dois olhos' (Drummond) - individual (minha mãe) x universal (todas as mães). Camões: 'Amor é fogo que arde sem se ver, / É ferida que dói, e não se sente' - arde x sem ver, dói x não se sente.\n\nA antítese estrutura-se na oposição semântica clara: alegria/tristeza, luz/trevas, vida/morte, guerra/paz, céu/inferno, amor/ódio. No Barroco, antítese é recurso fundamental refletindo dualismo da época: espiritual/carnal, salvação/perdição. Gregório de Matos: 'Gozar da vida quem a morte espera' - gozo x morte, vida x expectativa da morte.\n\nNa argumentação, antítese reforça contraste para evidenciar posicionamento: 'Não basta combater o mal; é preciso promover o bem' - combater x promover, mal x bem. Em publicidade, antítese chama atenção: 'Grandes ideias, pequenos preços' - grande x pequeno aplicado a substantivos contrastantes (ideias x preços).\n\nNo ENEM, identificar antítese permite compreender tensões textuais, dualidades temáticas e recursos estilísticos. Diferente do paradoxo (contradição aparentemente impossível), antítese é oposição lógica possível. 'Alegre hoje, triste amanhã' é antítese (oposição natural); 'Alegria triste' seria paradoxo (oposição contraditória num mesmo termo). Questões exploram identificação de oposições e análise de efeitos de sentido produzidos pelo contraste."
+        },
+        {
+          "titulo": "Paradoxo: Contradição Aparente",
+          "conteudo": "O paradoxo (ou oximoro) é figura que reúne ideias contraditórias numa mesma unidade de sentido, criando aparente impossibilidade lógica que revela verdade profunda. Camões: 'Amor é um contentamento descontente' - contentamento e descontente são opostos que não poderiam coexistir logicamente, mas o paradoxo expressa natureza contraditória do amor.\n\nO paradoxo difere da antítese: antítese opõe termos diferentes ('dia' e 'noite'); paradoxo une contrários no mesmo termo ou predicação ('trevas iluminadas', 'silêncio eloquente', 'claramente confuso'). O paradoxo não pode ser resolvido logicamente - sua força está justamente na tensão irredutível que expressa complexidade do real.\n\nNo Barroco, paradoxo é central: reflete conflito homem dilacerado entre salvação e perdição. Vieira: 'Nascer para morrer, morrer para nascer' - vida = preparação para morte; morte = nascimento para vida eterna. Paradoxo religioso resolve-se apenas na fé. Drummond modernamente: 'No meio do caminho tinha uma pedra / tinha uma pedra no meio do caminho' - repetição paradoxal do obstáculo que nunca se supera.\n\nNo ENEM, paradoxo aparece em textos barrocos (Vieira, Gregório de Matos) e em poesia moderna que explora contradições existenciais. Identificar paradoxo permite compreensão de visões de mundo complexas que recusam simplificações binárias. Questões exploram interpretação de contradições aparentes e análise de como paradoxo expressa verdades que linguagem lógica não alcança. Ferreira Gullar: 'Obscura é a transparência / das coisas'."
+        },
+        {
+          "titulo": "Ironia: Sentido Oposto ao Literal",
+          "conteudo": "A ironia é figura que expressa sentido contrário ao literal, frequentemente com intenção crítica, humorística ou sarcástica. Exemplo: Diante de pessoa extremamente baixa, dizer 'Nossa, que altura!' - o sentido real é oposto ao declarado. Machado de Assis, mestre da ironia, descrevia personagens mediocres com elogios que, pelo contexto, revelavam defeitos.\n\nA ironia exige competência interpretativa: reconhecer marcas que sinalizam não literalidade (tom de voz, contexto situacional, conhecimento prévio). Em texto escrito, ironia manifesta-se por contraste entre situação e comentário, uso de aspas ou expressões como 'digamos assim', 'por assim dizer'. Eça de Queirós ironiza sociedade portuguesa descrevendo situações ridículas com seriedade excessiva.\n\nA ironia pode ser: 1) Verbal (dizer algo significando o oposto); 2) Situacional (contraste entre expectativa e realidade); 3) Dramática (leitor/espectador sabe algo que personagem ignora). No conto 'A Cartomante' de Machado, leitor sabe que Rita e Camilo serão descobertos, mas personagens confiam na cartomante - ironia dramática.\n\nNo ENEM, ironia é frequentemente cobrada em textos machadianos, charges políticas, crônicas humorísticas. Identificar ironia evita interpretação literal equivocada. Questões exploram reconhecimento de pistas contextuais que indicam não literalidade, compreensão da crítica implícita e análise de efeitos humorísticos ou satíricos. A ironia é recurso sofisticado de crítica social que evita confronto direto, preferindo sugestão sutil."
+        },
+        {
+          "titulo": "Eufemismo e Disfemismo",
+          "conteudo": "O eufemismo é suavização de ideia desagradável, chocante ou tabu, substituindo expressão direta por atenuada. Exemplo: 'Ele nos deixou' em vez de 'Ele morreu'; 'Pessoa de baixa renda' em vez de 'pobre'; 'Conflito armado' em vez de 'guerra'. O eufemismo é recurso de polidez, diplomacia ou ideologia (manipulação linguística para mascarar realidades duras).\n\nO eufemismo pode ter função social positiva (evitar brutalidade desnecessária) ou negativa (mascarar realidade para manipular opinião). Exemplos políticos: 'neutralizar o inimigo' (matar), 'solução final' (genocídio nazista), 'intervenção humanitária' (invasão militar). Orwell, em '1984', critica novilíngua que usa eufemismos para controlar pensamento: 'Ministério da Paz' cuida da guerra.\n\nO disfemismo (ou cacofemismo) é oposto: substituição de palavra neutra ou positiva por grosseira, depreciativa. Exemplo: 'bater as botas' em vez de 'falecer'; 'estar duro' em vez de 'sem dinheiro'. Disfemismo pode expressar intimidade, humor, crítica ou desprezo. Gregório de Matos usava disfemismos satíricos para criticar autoridades coloniais.\n\nNo ENEM, eufemismo aparece em análise de discursos políticos (manipulação ideológica), publicidade (mascarar defeitos de produtos), questões éticas da linguagem. Questões exploram identificação de eufemismos, análise de funções (polidez ou manipulação) e reflexão crítica sobre uso político da linguagem. Reconhecer eufemismos permite leitura mais consciente de textos persuasivos e ideológicos."
+        }
+      ],
+      "exemplos": [
+        "Antítese: 'Grandes ideias, pequenos preços' - oposição grande/pequeno",
+        "Paradoxo: 'Amor é contentamento descontente' (Camões) - contradição",
+        "Ironia: Elogiar pessoa preguiçosa dizendo 'Que trabalhador!'",
+        "Eufemismo: 'Ele nos deixou' = morreu (suavização)"
+      ],
+      "dicas": [
+        "Antítese = oposição lógica possível; Paradoxo = contradição impossível que revela verdade",
+        "Ironia = dizer o contrário do que se pensa, geralmente com crítica ou humor",
+        "Eufemismo = suavizar; Disfemismo = tornar mais grosseiro",
+        "No ENEM: ironia em Machado; paradoxo no Barroco; eufemismo em discursos políticos"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Leia o verso:\n\n'Amor é fogo que arde sem se ver,\nÉ ferida que dói, e não se sente.'\n\n(Camões)\n\nA figura presente é:",
+          "alternativas": {
+            "A": "Ironia, pois sugere sentido oposto ao amor verdadeiro",
+            "B": "Eufemismo, pois suaviza aspectos negativos do amor",
+            "C": "Paradoxo, pois reúne contradições na definição de amor",
+            "D": "Antítese, pois opõe amor a outros sentimentos",
+            "E": "Hipérbole, pois exagera intensidade dos sentimentos amorosos"
+          },
+          "correta": "C",
+          "explicacao": "Os versos apresentam paradoxos: 'fogo que arde sem se ver' (fogo sempre se vê, mas amor não); 'ferida que dói e não se sente' (como pode doer sem ser sentida?). São contradições aparentemente impossíveis que expressam natureza paradoxal do amor: é intenso mas invisível, machuca mas não é percebido racionalmente. Não é ironia (não há sentido oposto pretendido). Não é eufemismo (não suaviza, intensifica contradições). Não é antítese porque não opõe amor a outro sentimento - reúne contradições dentro do próprio amor. Não é hipérbole (não exagera, paradoxaliza). Paradoxo é figura típica de Camões que revela tensão entre razão e sentimento.",
+          "dificuldade": "medio",
+          "tags": ["figuras-pensamento", "paradoxo"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Leia o trecho:\n\n'Marcela amou-me durante quinze meses e onze contos de réis; nada menos.'\n\n(Machado de Assis, 'Memórias Póstumas de Brás Cubas')\n\nA figura predominante é:",
+          "alternativas": {
+            "A": "Eufemismo, suavizando interesse financeiro de Marcela",
+            "B": "Ironia, revelando que amor de Marcela era motivado por dinheiro",
+            "C": "Paradoxo, unindo amor verdadeiro com interesse material",
+            "D": "Hipérbole, exagerando quantidade de dinheiro gasto",
+            "E": "Antítese, opondo amor a outras formas de relacionamento"
+          },
+          "correta": "B",
+          "explicacao": "A frase é exemplar da ironia machadiana: aparentemente afirma que Marcela 'amou', mas ao especificar duração em meses E valor em réis ('quinze meses e onze contos'), revela ironicamente que não era amor, mas interesse financeiro. O 'nada menos' reforça ironia: como se fosse muito, quando na verdade é muito pouco (em amor verdadeiro, valor financeiro seria irrelevante). Machado não afirma diretamente 'ela não o amava', mas deixa ironia revelar. Não é eufemismo (não suaviza, denuncia). Não é paradoxo (não une contradições, ironiza). Não é hipérbole (valor pode ser literal). Não é antítese (não opõe termos). É ironia sutil típica de Machado.",
+          "dificuldade": "medio",
+          "tags": ["figuras-pensamento", "ironia", "machado"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Analise o slogan publicitário:\n\n'Grandes resultados, pequeno investimento.'\n\nA figura utilizada é:",
+          "alternativas": {
+            "A": "Paradoxo, pois grandes resultados não podem vir de pequeno investimento",
+            "B": "Antítese, opondo 'grandes' e 'pequeno' para realçar vantagem",
+            "C": "Ironia, sugerindo que resultados são na verdade pequenos",
+            "D": "Eufemismo, suavizando alto custo do produto",
+            "E": "Metonímia, substituindo investimento por resultado"
+          },
+          "correta": "B",
+          "explicacao": "O slogan utiliza antítese: oposição entre 'grandes' e 'pequeno' aplicada a 'resultados' e 'investimento'. É contraste lógico possível (não paradoxal): bons resultados com baixo custo. A oposição grande/pequeno reforça vantagem do produto - obtenha muito pagando pouco. Não é paradoxo porque não há contradição impossível (é promessa comercial, pode ou não ser verdade, mas não é logicamente impossível). Não é ironia (sentido é literal, não oposto). Não é eufemismo (não suaviza, promete). Não é metonímia (não substitui um termo por outro relacionado). É antítese estratégica para destacar benefício através do contraste.",
+          "dificuldade": "facil",
+          "tags": ["figuras-pensamento", "antitese", "publicidade"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Leia a frase:\n\n'O conflito armado na região resultou em baixas civis significativas.'\n\nA substituição de termos por eufemismos visa:",
+          "alternativas": {
+            "A": "Tornar linguagem mais poética e literária",
+            "B": "Suavizar realidade brutal (guerra, mortes) com linguagem técnica",
+            "C": "Criar humor através de contraste entre forma e conteúdo",
+            "D": "Estabelecer ironia sobre discursos militares oficiais",
+            "E": "Intensificar dramaticidade dos acontecimentos descritos"
+          },
+          "correta": "B",
+          "explicacao": "'Conflito armado' é eufemismo para 'guerra'; 'baixas civis' é eufemismo para 'mortes de civis/civis mortos'. Linguagem técnica, asséptica, diplomática suaviza realidade brutal. Função pode ser: evitar choque desnecessário (polidez) ou manipular percepção (fazer guerra parecer menos terrível do que é). Não visa poetizar (linguagem é técnica, não poética). Não cria humor (é séria). Não é irônica em si (embora uso de eufemismos possa ser criticado como irônico ou hipócrita). Não intensifica (suaviza). Eufemismos políticos/militares frequentemente mascaram violência - reconhecê-los permite leitura crítica de discursos oficiais.",
+          "dificuldade": "medio",
+          "tags": ["figuras-pensamento", "eufemismo", "discurso-politico"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Compare:\n\nTexto I: 'A alegria e a tristeza caminham juntas na vida.'\nTexto II: 'Sinto uma alegria triste ao recordar o passado.'\n\nAs figuras presentes são, respectivamente:",
+          "alternativas": {
+            "A": "Antítese e antítese",
+            "B": "Paradoxo e paradoxo",
+            "C": "Antítese e paradoxo",
+            "D": "Paradoxo e antítese",
+            "E": "Ironia e eufemismo"
+          },
+          "correta": "C",
+          "explicacao": "Texto I apresenta antítese: 'alegria' e 'tristeza' são opostos que coexistem ('caminham juntas'), mas cada um mantém identidade - é oposição lógica possível. Texto II apresenta paradoxo: 'alegria triste' une contrários no mesmo termo - alegria não pode ser triste por definição, é contradição. Mas o paradoxo expressa verdade emocional complexa: sentimento ambivalente que não pode ser descrito logicamente. Antítese = oposição de termos diferentes; paradoxo = união de contrários no mesmo termo. Não são ironias nem eufemismos. A distinção antítese/paradoxo é sutil mas importante: antítese opõe, paradoxo funde contradições.",
+          "dificuldade": "dificil",
+          "tags": ["figuras-pensamento", "antitese", "paradoxo", "comparacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Figuras de Pensamento II",
+      "resumo": "Hipérbole, prosopopeia, apóstrofe e gradação: intensificação e personificação.",
+      "topicos": [
+        {
+          "titulo": "Hipérbole: Exagero Expressivo",
+          "conteudo": "A hipérbole é exagero intencional para intensificar ideia, criar ênfase ou humor. Exemplo: 'Já te disse isso mil vezes' (não foram mil, mas muitas); 'Estou morrendo de fome' (não está literalmente morrendo). A hipérbole é comum na linguagem cotidiana ('chorei rios de lágrimas', 'esperei uma eternidade') e na literatura para efeitos dramáticos.\n\nNa poesia, hipérbole intensifica sentimentos: 'Rios te correrão dos olhos, se chorares' (Vinícius de Moraes) - não correrão literalmente rios, mas lágrimas abundantes. Vieira: 'Até que enfim, cristãos, até que enfim, portugueses, até que enfim, devotos do Rosário, abris os olhos!' - repetição hiperbólica enfática. Drummond: 'Tinha uma pedra no meio do caminho / no meio do caminho tinha uma pedra' - repetição hiperbólica do obstáculo.\n\nNa publicidade, hipérbole promete benefícios extraordinários: 'O melhor produto do mundo', 'Preço imbatível', 'Revolucionário'. No humor, hipérbole cria efeito cômico pelo exagero absurdo. Luis Fernando Verissimo e outros cronistas usam hipérboles para ridicularizar situações cotidianas.\n\nNo ENEM, identificar hipérbole permite compreensão de intenções expressivas: não interpretar literalmente o que é figurado. Em textos argumentativos, hipérbole pode enfraquecer credibilidade ('Absolutamente todos concordam' - improvável ser verdade). Em poesia e crônicas, cria expressividade. Questões exploram reconhecimento de exagero e análise de efeitos (ênfase, humor, dramaticidade). Diferente da mentira, hipérbole é exagero consciente e reconhecível como tal."
+        },
+        {
+          "titulo": "Prosopopeia: Personificação",
+          "conteudo": "A prosopopeia (ou personificação) atribui características humanas (sentimentos, ações, falas) a seres inanimados, animais ou abstrações. Exemplo: 'O vento sussurrava segredos' - vento não sussurra literalmente. Gonçalves Dias: 'Minha terra tem palmeiras / Onde canta o Sabiá' - sabiá canta (ação natural), mas 'palmeiras onde canta' personifica relação entre elementos naturais.\n\nA prosopopeia é recurso essencial em fábulas (animais falam e agem como humanos) e apólogos (objetos ganham consciência). 'A Cigarra e a Formiga' personifica insetos com valores humanos (preguiça, previdência). Machado de Assis, em 'Apólogo', faz agulha e linha dialogarem sobre mérito e trabalho.\n\nNa poesia, prosopopeia cria efeitos expressivos e simbólicos. Casimiro de Abreu: 'A brisa do Brasil beija e balança / As folhas dos palmares' - brisa beija (ação humana). Manuel Bandeira: 'A vida inteira que podia ter sido e que não foi' - 'vida' ganha capacidade de escolha, consciência. Drummond: 'A pedra me ensinaria' - pedra ensina.\n\nNo ENEM, prosopopeia aparece em textos literários (especialmente românticos e modernistas), fábulas, charges (onde animais/objetos representam pessoas/ideias). Reconhecer prosopopeia permite compreensão de simbolismos e críticas implícitas. Em charges políticas, animais personificados representam partidos ou políticos. Questões exploram identificação da figura e interpretação do significado simbólico da personificação."
+        },
+        {
+          "titulo": "Apóstrofe: Invocação Direta",
+          "conteudo": "A apóstrofe é invocação, chamamento direto a ser presente ou ausente, real ou imaginário. Geralmente marcada por vocativo, interjeição ou ponto de exclamação. Exemplo: 'Ó mar, por que não apagas / Coa esponja de tuas vagas / Do meu peito esta mágoa?' (Casimiro de Abreu) - poeta interpela o mar diretamente.\n\nA apóstrofe cria dramaticidade e interlocução: o eu lírico não apenas descreve, mas dialoga. Castro Alves: 'Senhor Deus dos desgraçados! / Dizei-me vós, Senhor Deus!' - invoca Deus. Gonçalves Dias: 'Minha terra tem palmeiras / Onde canta o Sabiá' - embora não haja vocativo explícito, o tom evocativo dirigindo-se à terra é apostrófico.\n\nNa oratória, apóstrofe engaja plateia: 'Brasileiros! Chegou a hora de decidirmos nosso futuro!' - orador interpela diretamente ouvintes. Em discursos políticos, religiosos e jurídicos, apóstrofe cria proximidade e intensidade emocional. Padre Vieira: 'Cristãos! Até quando sereis surdos à voz divina?'\n\nNo ENEM, apóstrofe aparece em poesia romântica (invocação à natureza, à pátria, ao amor), em discursos (engajamento da plateia) e em textos religiosos (invocação divina). Identificar apóstrofe permite reconhecer tom dramático, emotivo, interpelativo. Questões exploram compreensão da função retórica: criar proximidade, intensificar emoção, dramatizar situação. Apóstrofe frequentemente combina-se com prosopopeia quando invoca seres inanimados ('Ó mar', 'Ó noite')."
+        },
+        {
+          "titulo": "Gradação: Progressão de Ideias",
+          "conteudo": "A gradação (ou clímax) é sequência de palavras ou ideias em ordem crescente (ascendente/clímax) ou decrescente (descendente/anticlímax) de intensidade. Exemplo crescente: 'Um suspiro, um grito, um berro de desespero' - progressão de intensidade sonora e emocional. Decrescente: 'Era um império, virou reino, depois província, hoje é apenas ruína' - progressão de decadência.\n\nA gradação cria ritmo, dramaticidade e ênfase na progressão. Vinícius de Moraes: 'Era uma casa muito engraçada / Não tinha teto, não tinha nada' - 'não tinha nada' é ápice da privação. Rui Barbosa: 'Ontem, voluntários; hoje, prisioneiros; amanhã, cadáveres; depois, fumaça' - gradação trágica de degradação.\n\nNa argumentação, gradação constrói raciocínio progressivo, conduzindo leitor do menos ao mais importante. 'A educação melhora indivíduos, transforma comunidades, desenvolve nações' - progressão de impacto (indivíduo < comunidade < nação). Em propaganda, gradação intensifica benefícios: 'Economize tempo, dinheiro e aborrecimento'.\n\nNo ENEM, gradação aparece em textos literários (especialmente românticos e parnasianos que valorizam construção formal), discursos retóricos e argumentações estruturadas. Identificar gradação permite perceber construção lógica e emocional do texto. Questões exploram reconhecimento da progressão, análise de efeitos (dramaticidade, ênfase, lógica argumentativa) e interpretação do ápice (ponto máximo/mínimo). Gradação organiza experiência em hierarquia expressiva."
+        }
+      ],
+      "exemplos": [
+        "Hipérbole: 'Estou morrendo de fome' (exagero - não está morrendo)",
+        "Prosopopeia: 'O vento sussurrava' (vento com ação humana)",
+        "Apóstrofe: 'Ó mar, por que não apagas do meu peito esta mágoa?' (invocação)",
+        "Gradação: 'Um suspiro, um grito, um berro' (progressão de intensidade)"
+      ],
+      "dicas": [
+        "Hipérbole = exagero consciente para ênfase, não deve ser interpretada literalmente",
+        "Prosopopeia atribui características humanas a não humanos (animais, objetos, abstrações)",
+        "Apóstrofe sempre tem vocativo/invocação direta (geralmente com 'Ó' ou '!')",
+        "Gradação = sequência crescente ou decrescente de intensidade"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Leia o verso:\n\n'Rios te correrão dos olhos, se chorares.'\n\n(Vinícius de Moraes)\n\nA figura de linguagem presente é:",
+          "alternativas": {
+            "A": "Metáfora, comparando lágrimas a rios por semelhança",
+            "B": "Hipérbole, exagerando quantidade de lágrimas",
+            "C": "Metonímia, substituindo lágrimas por rios",
+            "D": "Eufemismo, suavizando sofrimento emocional",
+            "E": "Ironia, sugerindo que pessoa não chorou realmente"
+          },
+          "correta": "B",
+          "explicacao": "O verso apresenta hipérbole: exagero expressivo da quantidade de lágrimas. Não 'correrão rios' literalmente, mas muitas lágrimas. O exagero intensifica dramaticidade do sofrimento. Embora haja metáfora implícita (lágrimas = rios), a figura principal é hipérbole porque o foco está no exagero quantitativo ('rios'), não na transferência qualitativa de significado. Não é metonímia porque não há substituição por contiguidade (seria metonímia se dissesse 'bebi um copo' = água). Não é eufemismo (não suaviza, intensifica). Não é ironia (sentido não é oposto). Hipérbole é recurso expressivo comum em poesia amorosa para intensificar sentimentos.",
+          "dificuldade": "facil",
+          "tags": ["figuras-pensamento", "hiperbole"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Analise o trecho:\n\n'A tarde lentamente agonizava, e o sol, ferido de morte, sangrava no horizonte.'\n\nAs figuras presentes são:",
+          "alternativas": {
+            "A": "Duas metáforas sem personificação",
+            "B": "Prosopopeia (tarde agoniza, sol sangra) e hipérbole",
+            "C": "Eufemismo para anoitecer e ironia sobre o dia",
+            "D": "Antítese entre tarde e noite, sem outras figuras",
+            "E": "Metonímia substituindo dia por tarde e sol por luz"
+          },
+          "correta": "B",
+          "explicacao": "O trecho apresenta prosopopeia (personificação): 'tarde agonizava' (tarde não pode agonizar - ação humana/animal), 'sol ferido de morte' (sol não pode ser ferido), 'sangrava' (sol não sangra). Atribui-se vida, sofrimento e morte ao dia que termina. Há também hipérbole na dramatização extrema do pôr do sol como agonia e morte violenta. Não é apenas metáfora (metáfora compara, prosopopeia humaniza). Não é eufemismo (não suaviza, dramatiza). Não é ironia (não há sentido oposto). Não é metonímia simples nem antítese. Prosopopeia + hipérbole criam atmosfera dramática e mórbida, típica de certa literatura romântica e simbolista.",
+          "dificuldade": "medio",
+          "tags": ["figuras-pensamento", "prosopopeia", "hiperbole"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Leia o verso:\n\n'Ó mar, por que não apagas\nCoa esponja de tuas vagas\nDo meu peito esta mágoa?'\n\n(Casimiro de Abreu)\n\nA figura presente é:",
+          "alternativas": {
+            "A": "Apóstrofe, pois invoca diretamente o mar",
+            "B": "Ironia, pois mar obviamente não pode apagar mágoa",
+            "C": "Eufemismo, pois suaviza sofrimento usando imagem marinha",
+            "D": "Antítese, pois opõe mar a sentimento humano",
+            "E": "Metonímia, pois substitui lágrimas por ondas do mar"
+          },
+          "correta": "A",
+          "explicacao": "O verso apresenta apóstrofe: invocação direta ao mar ('Ó mar'), interpelação dramática como se o mar pudesse responder. O 'Ó' é marcador típico de apóstrofe. Há também prosopopeia implícita (mar capaz de apagar mágoas), mas a figura principal é apóstrofe pelo chamamento direto. Não é ironia porque poeta não sugere sentido oposto - é desejo romântico, não sarcasmo. Não é eufemismo (não suaviza, expressa). Não é antítese porque não há oposição enfatizada entre termos. Não é metonímia (não substitui lágrimas por ondas - pede que ondas apaguem mágoa). Apóstrofe é típica de poesia romântica que dialoga com natureza.",
+          "dificuldade": "facil",
+          "tags": ["figuras-pensamento", "apostrofe"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Analise a sequência:\n\n'Ontem, cidadãos livres; hoje, prisioneiros injustos; amanhã, cadáveres esquecidos.'\n\nA figura utilizada é:",
+          "alternativas": {
+            "A": "Antítese, opondo liberdade a prisão",
+            "B": "Gradação descendente (anticlímax), progressão de degradação",
+            "C": "Ironia, sugerindo situação oposta à descrita",
+            "D": "Eufemismo, suavizando brutalidade da opressão",
+            "E": "Hipérbole, exagerando sofrimento dos oprimidos"
+          },
+          "correta": "B",
+          "explicacao": "A sequência apresenta gradação descendente (anticlímax): progressão de degradação temporal e existencial - livres > prisioneiros > cadáveres > esquecidos. Cada estágio é pior que anterior, criando dramaticidade através da progressão. Há marcos temporais (ontem/hoje/amanhã) organizando declínio. Embora haja elementos de antítese (livre x prisioneiro), a figura predominante é gradação porque foca na progressão sequencial, não na oposição binária. Não é ironia (sentido é direto, dramático). Não é eufemismo (não suaviza, intensifica tragédia). Não é hipérbole porque descreve possibilidade real de degradação política, não exagero impossível. Gradação constrói clímax trágico.",
+          "dificuldade": "medio",
+          "tags": ["figuras-pensamento", "gradacao"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Compare:\n\nTexto I: 'Chorei um rio de lágrimas quando soube da notícia.'\nTexto II: 'A notícia me entristeceu profundamente.'\n\nA diferença está em:",
+          "alternativas": {
+            "A": "Texto I usa eufemismo; Texto II é literal",
+            "B": "Texto I usa hipérbole; Texto II é direto sem exagero",
+            "C": "Texto I é irônico; Texto II é sincero",
+            "D": "Texto I usa metonímia; Texto II usa metáfora",
+            "E": "Não há diferença significativa entre os textos"
+          },
+          "correta": "B",
+          "explicacao": "Texto I utiliza hipérbole: 'rio de lágrimas' é exagero expressivo - ninguém chora literalmente um rio. O exagero intensifica dramaticamente emoção. Texto II é direto, literal, sem figura de linguagem: 'entristeceu profundamente' descreve sentimento sem exagero. A diferença está na intensificação expressiva: hipérbole dramatiza; linguagem literal descreve objetivamente. Não são eufemismos (não suavizam). Não há ironia em I (exagero é sincero, não sarcástico). Não há metonímia nem metáfora clara (hipérbole pode conter metáfora implícita, mas figura principal é exagero quantitativo). A hipérbole é comum na linguagem cotidiana emocional.",
+          "dificuldade": "facil",
+          "tags": ["figuras-pensamento", "hiperbole", "comparacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Figuras de Som e Intertextualidade",
+      "resumo": "Aliteração, assonância, onomatopeia, paródia, paráfrase e alusão.",
+      "topicos": [
+        {
+          "titulo": "Aliteração e Assonância",
+          "conteudo": "A aliteração é repetição de sons consonantais em sequência, criando efeito sonoro expressivo. Exemplo: 'Três pratos de trigo para três tigres tristes' - repetição de /t/ e /r/. Na poesia, aliteração não é apenas ornamental, mas expressiva: Cruz e Sousa: 'Vozes veladas, veludosas vozes' - repetição de /v/ cria suavidade, evocando sussurro.\n\nA aliteração pode ter função mimética (imitar sons): Manuel Bandeira: 'O sino da igrejinha / Tilinta, tilinita, tilinita' - sons de /t/ e /l/ imitam repique do sino. Cecília Meireles: 'A onda anda / Aonde anda / A onda?' - repetição de /a/ e /n/ sugere movimento ondulante. Não é coincidência: é escolha estilística consciente.\n\nA assonância é repetição de sons vocálicos. Bilac: 'Sou um mulato nato / No sentido lato' - repetição de /a/ e /o/. Gonçalves Dias: 'Minha terra tem palmeiras / Onde canta o Sabiá' - assonância em /a/ cria melodia. Simbolismo e Parnasianismo valorizam especialmente musicalidade através de aliteração e assonância.\n\nNo ENEM, aliteração e assonância aparecem em poesia (especialmente parnasiana e simbolista) e em análise de efeitos sonoros. Questões exploram identificação dos sons repetidos e interpretação de efeitos: suavidade, aspereza, rapidez, lentidão, mimese. Reconhecer figuras de som permite compreensão mais profunda da musicalidade poética e da relação entre forma sonora e significado. Não basta identificar repetição: é preciso interpretar função expressiva."
+        },
+        {
+          "titulo": "Onomatopeia: Imitação de Sons",
+          "conteudo": "A onomatopeia é criação de palavra que imita som natural: 'tic-tac' (relógio), 'miau' (gato), 'trim-trim' (telefone), 'cabrum' (trovão), 'pum' (tiro), 'zumbido' (inseto). É palavra motivada: relação direta entre significante (forma sonora) e significado (conceito), diferente de palavras arbitrárias ('casa', 'amor').\n\nNa literatura, onomatopeia cria vivacidade e expressividade. Olavo Bilac: 'Canta no barco o marinheiro: \"Nau, barquinha, barca, navegar, navegar\"' - repetição sugere ritmo do remo. Manuel Bandeira: 'O sino da igrejinha / Tilinta, tilinita, tilinita' - 'tilinta' é onomatopaica. Cassiano Ricardo: 'Blem-blem-blem, sino em Belém' - imita badalar.\n\nNas histórias em quadrinhos, onomatopeias são abundantes: 'POW', 'CRASH', 'BOOM', 'SPLASH'. Cada idioma cria onomatopeias próprias baseadas em percepção cultural dos sons: galo em português faz 'cocoricó'; em inglês 'cock-a-doodle-doo'. Não há imitação perfeita, mas convenção linguística aproximada.\n\nNo ENEM, onomatopeia aparece em poesia (efeito mimético), charges, tirinhas e análise de textos multimodais. Questões exploram reconhecimento de onomatopeias e interpretação de função: criar realismo sonoro, sugerir ambientes, intensificar ação. Diferente de outras figuras abstratas, onomatopeia tem materialidade sonora concreta. É ponte entre linguagem e mundo não verbal."
+        },
+        {
+          "titulo": "Paródia e Paráfrase",
+          "conteudo": "A paródia é recriação de texto anterior com intenção crítica, humorística ou contestadora. Mantém estrutura reconhecível do original mas inverte sentido, ridiculariza ou questiona. Oswald de Andrade parodiou Gonçalves Dias: Original - 'Minha terra tem palmeiras / Onde canta o Sabiá'; Paródia - 'Minha terra tem palmares / Onde gorjeia o mar'. Substitui elementos romantizados (palmeiras/sabiá) por referências históricas (Palmares/mar/liberdade).\n\nA paródia exige que leitor conheça texto original para compreender crítica ou subversão. Mário de Andrade parodiou carta de Pero Vaz de Caminha em 'Macunaíma', invertendo idealização do descobrimento. Paródia pode ser reverente (homenagem lúdica) ou irreverente (dessacralização crítica). Modernismo brasileiro usou paródia para questionar valores clássicos.\n\nA paráfrase é recriação que mantém sentido do original, reformulando forma. Tradução é paráfrase entre línguas. Resumo é paráfrase condensada. Drummond parafraseou Camões: 'No meio do caminho tinha uma pedra' dialoga com 'No caminho...' camoniano mas não é paródia (não inverte sentido), é variação sobre tema obstáculo.\n\nNo ENEM, paródia aparece em textos modernistas, charges sobre obras clássicas, propagandas que recriam ditados populares. Diferença essencial: paródia = recriação com mudança de sentido (geralmente crítica); paráfrase = recriação mantendo sentido original. Questões exploram reconhecimento da relação intertextual e interpretação da intenção (homenagem, crítica, humor). Identificar paródia exige cultura literária: conhecer originais parodiados."
+        },
+        {
+          "titulo": "Alusão e Intertextualidade",
+          "conteudo": "A alusão é referência implícita a texto, fato histórico, personagem, obra artística, sem citação explícita. Exige conhecimento compartilhado entre autor e leitor. Exemplo: 'Ele é um Judas' - alude a Judas bíblico (traidor) sem explicar. 'Aquilo foi seu calcanhar de Aquiles' - alude a mito grego sobre ponto vulnerável.\n\nDrummond: 'No meio do caminho tinha uma pedra' - alude a obstáculos literários e existenciais da tradição poética. Machado de Assis frequentemente alude a Shakespeare, Sterne, Xavier de Maistre sem citá-los diretamente. Leitor culto reconhece alusões; leitor comum pode compreender sentido básico mas perde camada interpretativa adicional.\n\nA intertextualidade é conceito mais amplo (Kristeva/Bakhtin): todo texto dialoga com textos anteriores. Não há texto isolado: sempre há relação (explícita ou implícita) com tradição cultural. Citação, epígrafe, paródia, paráfrase, alusão, pastiche são formas de intertextualidade. Literatura pós-moderna intensifica jogo intertextual consciente.\n\nNo ENEM, alusões aparecem em textos literários, publicitários (que recriam clássicos), charges políticas (aludindo a fatos históricos). Identificar alusão permite compreensão mais rica: o que texto diz diretamente + o que evoca indiretamente. Questões exploram reconhecimento de referências (bíblicas, mitológicas, históricas, literárias) e interpretação de diálogos intertextuais. Cultura geral é essencial para detectar alusões. Textos 'conversam' entre si através do tempo."
+        }
+      ],
+      "exemplos": [
+        "Aliteração: 'Vozes veladas, veludosas vozes' (Cruz e Sousa) - repetição /v/",
+        "Assonância: 'Sou um mulato nato no sentido lato' (Bilac) - repetição /a/, /o/",
+        "Onomatopeia: 'Tic-tac' (relógio), 'miau' (gato), 'cabrum' (trovão)",
+        "Paródia: Oswald parodiando Gonçalves Dias - 'palmares' em vez de 'palmeiras'"
+      ],
+      "dicas": [
+        "Aliteração = repetição de CONsoantes; Assonância = repetição de Vogais",
+        "Onomatopeia = palavra que imita som ('tic-tac', 'miau', 'zum-zum')",
+        "Paródia = recria MUDANDO sentido (crítica); Paráfrase = recria MANTENDO sentido",
+        "Alusão = referência implícita que exige conhecimento cultural compartilhado"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Leia o verso:\n\n'Vozes veladas, veludosas vozes,\nVolúpias dos violões, vozes veladas'\n\n(Cruz e Sousa)\n\nA figura de som presente é:",
+          "alternativas": {
+            "A": "Onomatopeia, imitando som de instrumentos musicais",
+            "B": "Assonância, repetindo vogal /o/ para criar musicalidade",
+            "C": "Aliteração, repetindo consoante /v/ para sugerir suavidade",
+            "D": "Eufemismo, suavizando percepção sonora através de metáforas",
+            "E": "Ironia, sugerindo que vozes na verdade são estridentes"
+          },
+          "correta": "C",
+          "explicacao": "O verso apresenta aliteração: repetição intencional da consoante /v/ ('Vozes veladas, veludosas vozes, Volúpias, violões, vozes'). A repetição não é casual: cria efeito sonoro suave, sussurrante, coerente com 'veladas' (ocultas, suaves) e 'veludosas' (macias). Cruz e Sousa, simbolista, valoriza musicalidade e sinestesia. Há também assonância em /o/, mas figura principal é aliteração em /v/. Não é onomatopeia porque não imita som diretamente (não é 'plim-plim' do violão). Não é eufemismo nem ironia. É recurso sonoro simbolista criando atmosfera através de repetição consonantal expressiva.",
+          "dificuldade": "medio",
+          "tags": ["figuras-som", "aliteracao", "simbolismo"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Analise:\n\nOriginal (Gonçalves Dias): 'Minha terra tem palmeiras / Onde canta o Sabiá'\n\nRecriação (Oswald de Andrade): 'Minha terra tem palmares / Onde gorjeia o mar'\n\nA relação entre os textos é:",
+          "alternativas": {
+            "A": "Paráfrase, mantendo sentido romântico do original",
+            "B": "Paródia, subvertendo idealização romântica com referência histórica (Palmares)",
+            "C": "Plágio, copiando estrutura sem autorização",
+            "D": "Coincidência, sem relação intencional entre textos",
+            "E": "Ironia, sugerindo que Brasil não tem belezas naturais"
+          },
+          "correta": "B",
+          "explicacao": "Oswald criou paródia do poema romântico: mantém estrutura reconhecível mas substitui elementos. 'Palmeiras' (natureza idealizada) vira 'Palmares' (quilombo, resistência escrava histórica); 'sabiá' (ave brasileira simbolizando nacionalismo romântico) vira 'mar' (liberdade, imensidão). Paródia modernista critica idealização romântica da pátria, trazendo história concreta (escravidão, resistência). Não é paráfrase porque muda sentido radicalmente. Não é plágio (recriação crítica reconhecida). Não é coincidência (intertextualidade intencional). Não é ironia simples sobre ausência de beleza, mas crítica à visão edulcorada do Brasil romântico. Paródia exige reconhecimento do original para compreensão da subversão.",
+          "dificuldade": "medio",
+          "tags": ["intertextualidade", "parodia", "modernismo"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Leia:\n\n'O sino da igrejinha\nTilinta, tilinita, tilinita'\n\n(Manuel Bandeira)\n\nA figura presente é:",
+          "alternativas": {
+            "A": "Aliteração criando ritmo através de repetição de /t/",
+            "B": "Onomatopeia imitando som do sino através de 'tilinta'",
+            "C": "Metáfora comparando sino a instrumento musical",
+            "D": "Prosopopeia atribuindo ação humana ao sino",
+            "E": "Eufemismo suavizando som estridente do sino"
+          },
+          "correta": "B",
+          "explicacao": "Embora haja aliteração em /t/ e /l/, a figura principal é onomatopeia: 'tilinta, tilinita' imita som do sino. São palavras criadas especificamente para reproduzir foneticamente o repique. Bandeira não descreve som abstratamente, mas o recria linguisticamente através de onomatopeia. Há também aliteração (repetição de /t/, /l/) que reforça efeito onomatopaico, mas onomatopeia é figura dominante porque palavra nasce da imitação sonora. Não é metáfora (sino não é comparado a outra coisa, seu som é imitado). Não é prosopopeia (sino naturalmente toca, não é ação humana atribuída). Não é eufemismo. Onomatopeia cria vivacidade sensorial na poesia.",
+          "dificuldade": "facil",
+          "tags": ["figuras-som", "onomatopeia"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Leia a frase:\n\n'Ele agiu como um Judas, traindo a confiança de todos.'\n\nA figura presente é:",
+          "alternativas": {
+            "A": "Metáfora comparando pessoa a personagem bíblico",
+            "B": "Alusão à traição de Judas a Jesus, sem explicação direta",
+            "C": "Ironia sugerindo que pessoa na verdade foi leal",
+            "D": "Hipérbole exagerando gravidade da traição",
+            "E": "Eufemismo suavizando comportamento traidor"
+          },
+          "correta": "B",
+          "explicacao": "A frase apresenta alusão: referência implícita a Judas Iscariotes, apóstolo que traiu Jesus na narrativa bíblica. O texto não explica quem foi Judas - pressupõe conhecimento cultural compartilhado. 'Judas' tornou-se sinônimo de traidor por alusão histórico-religiosa. Há também comparação ('como um Judas'), mas figura principal é alusão porque força está na referência cultural não explicitada. Não é ironia (não sugere oposto). Não é hipérbole necessariamente (dependendo do contexto, traição pode ser grave). Não é eufemismo (não suaviza, condena). Alusão enriquece texto conectando-o a tradição cultural, mas exige repertório do leitor.",
+          "dificuldade": "medio",
+          "tags": ["intertextualidade", "alusao"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Compare:\n\nTexto I: 'Minha terra tem palmeiras onde canta o Sabiá' (Gonçalves Dias)\n\nTexto II: 'Minha terra tem macieiras da Califórnia / onde cantam gaturamos' (Murilo Mendes)\n\nA relação é:",
+          "alternativas": {
+            "A": "Paráfrase, reformulando sem mudar sentido nacionalista",
+            "B": "Paródia, ironizando nacionalismo através de elementos estrangeiros (macieiras da Califórnia)",
+            "C": "Plágio, copiando estrutura indevidamente",
+            "D": "Coincidência estrutural sem relação intertextual",
+            "E": "Metáfora sobre globalização cultural"
+          },
+          "correta": "B",
+          "explicacao": "Murilo Mendes parodia Gonçalves Dias: mantém estrutura mas substitui elementos nacionais (palmeiras brasileiras, sabiá) por estrangeiros/híbridos ('macieiras da Califórnia', 'gaturamos' - pássaro brasileiro, mas em contexto irônico). A paródia modernista critica nacionalismo ufanista romântico, revelando que Brasil 'moderno' importa cultura estrangeira. 'Macieiras da Califórnia' na 'minha terra' é contradição irônica - já não é 'nossa' terra, mas americana. Não é paráfrase (muda sentido radicalmente). Não é plágio (recriação crítica reconhecida). Não é coincidência (intertextualidade evidente). É paródia que usa ironia para criticar perda de identidade nacional. Modernismo questiona romantismo através de paródia.",
+          "dificuldade": "dificil",
+          "tags": ["intertextualidade", "parodia", "modernismo", "critica-social"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "id": "historia-guerras-mundiais",
+  "titulo": "Guerras Mundiais e Guerra Fria",
+  "descricao": "Primeira Guerra, Segunda Guerra, Guerra Fria e descolonização (século XX)",
+  "icone": "💣",
+  "cor": "from-red-600 to-gray-800",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-primeira-guerra",
+      "titulo": "Primeira Guerra Mundial (1914-1918)",
+      "topicos": [
+        "Causas: imperialismo, nacionalismo, corrida armamentista",
+        "Sistemas de alianças",
+        "Estopim: assassinato em Sarajevo",
+        "Guerra de trincheiras",
+        "Tratado de Versalhes e consequências"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Primeira Guerra Mundial teve causas estruturais profundas. Entre os fatores que levaram ao conflito, destaca-se:",
+          "alternativas": [
+            "A harmonia perfeita entre as potências europeias",
+            "Imperialismo, nacionalismo exacerbado, corrida armamentista e sistemas de alianças",
+            "A ausência de rivalidades entre nações europeias",
+            "O desinteresse total por expansão territorial",
+            "A inexistência de competição econômica e militar"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Causas estruturais: imperialismo (disputas coloniais, especialmente África), nacionalismo exacerbado (revanchismo francês, pangermanismo, pan-eslavismo), corrida armamentista (competição naval anglo-alemã), alianças militares (Tríplice Aliança vs. Tríplice Entente). \"Paz Armada\" (1871-1914) era tensão crescente esperando centelha."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Os sistemas de alianças transformaram conflito regional em guerra mundial. Sobre essas alianças, é correto afirmar que:",
+          "alternativas": [
+            "Não havia nenhum acordo militar entre as nações",
+            "Tríplice Aliança (Alemanha, Áustria-Hungria, Itália) vs. Tríplice Entente (França, Rússia, Inglaterra)",
+            "Todas as nações europeias eram aliadas",
+            "Alianças não tiveram papel no conflito",
+            "Apenas duas nações participaram da guerra"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Tríplice Aliança (1882): Alemanha, Áustria-Hungria, Itália (que mudou de lado). Tríplice Entente (1907): França, Rússia, Inglaterra. Sistema de alianças criou \"efeito dominó\": agressão a um membro obrigava aliados a entrarem no conflito. Assassinato de Francisco Ferdinando acionou esse mecanismo, generalizando guerra."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O assassinato do arquiduque Francisco Ferdinando em Sarajevo (28/06/1914) foi o estopim da guerra. Sobre esse evento, é correto afirmar que:",
+          "alternativas": [
+            "Foi causa profunda e única da Primeira Guerra",
+            "Foi pretexto: tensões preexistentes transformaram incidente regional em guerra mundial",
+            "Não teve nenhuma relação com o início do conflito",
+            "Causou paz imediata entre as nações europeias",
+            "Impediu totalmente a eclosão de qualquer guerra"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Gavrilo Princip (nacionalista sérvio bósnio) assassinou herdeiro austro-húngaro em Sarajevo. Áustria-Hungria culpou Sérvia, declarou guerra. Alianças acionadas: Rússia (apoio à Sérvia), Alemanha (apoio à Áustria), França (aliada da Rússia), Inglaterra (invasão alemã da Bélgica). Incidente foi estopim, não causa profunda - guerra era inevitável dadas as tensões."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Primeira Guerra caracterizou-se pela guerra de trincheiras. Sobre esse tipo de combate, é correto afirmar que:",
+          "alternativas": [
+            "Foi guerra de movimento rápido com vitórias decisivas",
+            "Trincheiras, guerra de desgaste, pouco avanço territorial, mortes em massa",
+            "Não causou baixas significativas",
+            "Tecnologia não teve papel no conflito",
+            "Foi conflito de curta duração"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Guerra de trincheiras (especialmente Frente Ocidental): soldados entrincheirados, terra de ninguém entre linhas, ataques suicidas com pouco ganho territorial. Tecnologia mortífera: metralhadoras, artilharia pesada, gases venenosos, tanques, aviões. Guerra de desgaste causou milhões de mortos. Horrores das trincheiras (lama, ratos, doenças, traumas)."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O Tratado de Versalhes (1919) impôs duras condições à Alemanha. Sobre esse tratado, é correto afirmar que:",
+          "alternativas": [
+            "Foi extremamente generoso com a Alemanha derrotada",
+            "Impôs reparações pesadas, perda territorial, culpa pela guerra; gerou ressentimento alemão",
+            "Não teve nenhuma consequência para a Alemanha",
+            "Promoveu paz duradoura e estabilidade na Europa",
+            "Foi unanimemente aceito e considerado justo"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Tratado de Versalhes: impôs à Alemanha cláusula de culpa pela guerra (artigo 231), reparações astronômicas, perda de colônias e territórios (Alsácia-Lorena à França, corredor polonês), limitações militares drásticas. Humilhação alimentou ressentimento, nacionalismo revanchista, crise econômica. Economista Keynes previu que tratado punitivo levaria a nova guerra - foi profético."
+        }
+      ]
+    },
+    {
+      "id": "mod2-entreguerras-fascismo",
+      "titulo": "Período Entreguerras e Ascensão do Fascismo",
+      "topicos": [
+        "Crise de 1929",
+        "Ascensão do nazismo na Alemanha",
+        "Fascismo italiano",
+        "Guerra Civil Espanhola",
+        "Fracasso da Liga das Nações"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Crise de 1929 teve profundo impacto global. Sobre suas causas e consequências, é correto afirmar que:",
+          "alternativas": [
+            "Foi crise limitada aos Estados Unidos sem repercussões",
+            "Superprodução, especulação, quebra da Bolsa; desemprego em massa, ascensão de extremismos",
+            "Gerou prosperidade imediata para todos os países",
+            "Não teve nenhum impacto político",
+            "Foi rapidamente superada sem maiores consequências"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Crise de 1929 (Grande Depressão): superprodução americana, especulação na Bolsa, quebra (Quinta-Feira Negra, 24/10/1929), contração do crédito, falências, desemprego (25% nos EUA). Globalizou-se: EUA cortaram investimentos na Europa, comércio mundial despencou. Crise econômica alimentou extremismos: nazismo (Alemanha), fascismos. New Deal (Roosevelt) tentou recuperação via intervencionismo."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Adolf Hitler e o Partido Nazista ascenderam ao poder na Alemanha (1933). Entre os fatores dessa ascensão, destaca-se:",
+          "alternativas": [
+            "Prosperidade econômica absoluta da República de Weimar",
+            "Crise econômica (1929), humilhação de Versalhes, propaganda eficaz, apoio de elites conservadoras",
+            "Ausência de desemprego e miséria na Alemanha",
+            "Total rejeição popular ao nazismo",
+            "Democracia sólida e estável na Alemanha"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Nazismo ascendeu via: crise econômica (desemprego, inflação), ressentimento pós-Versalhes, propaganda eficaz (Goebbels), culpabilização de bodes expiatórios (judeus, comunistas), uso de SA (camisas pardas), apoio de industriais e conservadores (que subestimaram Hitler), fracasso da República de Weimar. Hitler nomeado chanceler (1933), logo estabeleceu ditadura totalitária."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O nazismo caracterizava-se por ideologia totalitária e racista. Sobre suas características, é correto afirmar que:",
+          "alternativas": [
+            "Defendia democracia, pluralismo e igualdade racial",
+            "Totalitarismo, antissemitismo, supremacia ariana, lebensraum (espaço vital), culto ao Führer",
+            "Promovia tolerância religiosa e étnica",
+            "Respeitava direitos individuais e liberdades",
+            "Não tinha nenhuma ideologia racista"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Nazismo: totalitarismo (controle total, partido único, repressão - Gestapo), antissemitismo genocida (Leis de Nuremberg, Holocausto), supremacia racial ariana (pseudociência racial), lebensraum (expansão territorial a leste), culto ao Führer (Hitler), militarismo, anticomunismo, antiparlamentarismo. Ideologia levou a genocídios e Segunda Guerra."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Guerra Civil Espanhola (1936-1939) foi prelúdio da Segunda Guerra Mundial. Sobre esse conflito, é correto afirmar que:",
+          "alternativas": [
+            "Foi conflito isolado sem repercussões internacionais",
+            "Republicanos vs. nacionalistas (Franco); Alemanha e Itália apoiaram fascistas; ensaio para Segunda Guerra",
+            "Não houve intervenção de potências estrangeiras",
+            "Republicanos receberam amplo apoio internacional",
+            "Não teve relação com contexto europeu da época"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Guerra Civil Espanhola: Frente Popular (republicanos, socialistas, comunistas, anarquistas) vs. nacionalistas (Franco, falangistas, monarquistas, Igreja). Alemanha e Itália apoiaram Franco (Legião Condor, bombardeio de Guernica). URSS e Brigadas Internacionais apoiaram republicanos, mas insuficientemente. Franco venceu, estabeleceu ditadura (1939-1975). Conflito testou armas e táticas para Segunda Guerra."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Liga das Nações, criada pós-Primeira Guerra para manter paz, fracassou. Sobre esse fracasso, é correto afirmar que:",
+          "alternativas": [
+            "Liga impediu eficazmente todas as agressões",
+            "Não tinha mecanismos coercitivos eficazes; não impediu invasões japonesas, italianas, alemãs",
+            "Todos os países respeitaram plenamente suas decisões",
+            "Estados Unidos liderou ativamente a organização",
+            "Liga foi totalmente bem-sucedida em garantir paz"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Liga das Nações fracassou: EUA não participou (isolacionismo), não tinha exército próprio, decisões por unanimidade (ineficaz), impotente diante de agressões: Japão na Manchúria (1931), Itália na Etiópia (1935), Alemanha (remilitarização, anexações). Política de apaziguamento (appeasement) de Inglaterra e França encorajou agressores. Liga foi dissolvida (1946), substituída pela ONU."
+        }
+      ]
+    },
+    {
+      "id": "mod3-segunda-guerra",
+      "titulo": "Segunda Guerra Mundial (1939-1945)",
+      "topicos": [
+        "Início: invasão da Polônia",
+        "Principais frentes e batalhas",
+        "Holocausto",
+        "Entrada dos EUA (Pearl Harbor)",
+        "Bombas atômicas e fim da guerra"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Segunda Guerra Mundial iniciou-se com a invasão alemã da Polônia (01/09/1939). Sobre o início do conflito, é correto afirmar que:",
+          "alternativas": [
+            "França e Inglaterra imediatamente apoiaram a agressão alemã",
+            "Invasão acionou alianças; França e Inglaterra declararam guerra à Alemanha",
+            "Não houve reação internacional à invasão",
+            "Alemanha recuou após condenação internacional",
+            "Polônia derrotou facilmente a invasão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Hitler invadiu Polônia (blitzkrieg - guerra-relâmpago) após Pacto Molotov-Ribbentrop (não agressão nazi-soviética, divisão da Polônia). França e Inglaterra, garantidoras da Polônia, declararam guerra (3/09/1939), iniciando Segunda Guerra. URSS invadiu Polônia pelo leste. Polônia resistiu, mas foi esmagada. Período de drôle de guerre (guerra de mentira) precedeu ofensiva alemã no Ocidente (1940)."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Segunda Guerra teve várias frentes de combate. Sobre os principais teatros de guerra, é correto afirmar que:",
+          "alternativas": [
+            "Guerra limitou-se exclusivamente à Europa",
+            "Frente Ocidental (França, Normandia), Frente Oriental (Alemanha vs. URSS), Pacífico (Japão vs. Aliados), Norte da África",
+            "Não houve combates fora da Europa",
+            "Apenas duas nações participaram do conflito",
+            "Guerra durou apenas alguns meses"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Principais frentes: Ocidental (França conquistada, 1940; Normandia, 1944), Oriental (Operação Barbarossa contra URSS, 1941; Stalingrado, maior batalha), Pacífico (expansão japonesa; Pearl Harbor; Midway; Hiroshima/Nagasaki), Norte da África (Rommel vs. Montgomery), Itália (invasão aliada, 1943). Guerra foi global, envolvendo todos os continentes."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O Holocausto foi genocídio sistemático de judeus e outros grupos pelos nazistas. Sobre essa tragédia, é correto afirmar que:",
+          "alternativas": [
+            "Não houve perseguição sistemática a judeus",
+            "Solução Final: campos de extermínio, 6 milhões de judeus assassinados, além de outros grupos",
+            "Nazistas não tinham política antissemita",
+            "Não existem evidências históricas do Holocausto",
+            "Vítimas eram apenas prisioneiros de guerra"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Holocausto (Shoah): genocídio industrial de 6 milhões de judeus em campos de extermínio (Auschwitz, Treblinka, Sobibor). Também assassinaram ciganos, eslavos, homossexuais, deficientes, opositores políticos. Solução Final (Wannsee, 1942): extermínio sistemático via câmaras de gás. Maior crime contra humanidade da história. Julgamentos de Nuremberg (1945-46) condenaram responsáveis."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A entrada dos Estados Unidos na guerra (1941) foi decisiva. Sobre esse evento, é correto afirmar que:",
+          "alternativas": [
+            "EUA entraram na guerra em 1939, desde o início",
+            "Ataque japonês a Pearl Harbor (07/12/1941) levou EUA a declarar guerra",
+            "EUA mantiveram neutralidade durante todo conflito",
+            "Japão não atacou território americano",
+            "Entrada dos EUA não teve impacto no resultado da guerra"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "EUA mantinha neutralidade (isolacionismo), mas apoiava Aliados (Lei de Empréstimos e Arrendamentos). Japão atacou Pearl Harbor (Havaí, 07/12/1941), destruindo frota americana. Roosevelt declarou guerra ao Japão. Alemanha e Itália declararam guerra aos EUA (aliança do Eixo). Entrada americana foi decisiva: capacidade industrial, recursos, tropas frescas inclinaram balança para Aliados."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A guerra terminou em 1945 com rendições da Alemanha e Japão. Sobre o fim do conflito, é correto afirmar que:",
+          "alternativas": [
+            "Alemanha venceu a guerra contra os Aliados",
+            "Alemanha rendeu-se (maio); bombas atômicas em Hiroshima/Nagasaki; Japão rendeu-se (agosto)",
+            "Não foram utilizadas armas atômicas",
+            "Japão venceu os Aliados no Pacífico",
+            "Guerra terminou sem nenhuma rendição formal"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Alemanha rendeu-se (8/05/1945, Dia da Vitória na Europa) após suicídio de Hitler, cerco de Berlim. Japão resistia. EUA lançou bombas atômicas em Hiroshima (06/08) e Nagasaki (09/08), matando 200 mil pessoas. Japão rendeu-se (15/08, Dia VJ). Bombas inauguraram era nuclear, geraram debate ético sobre necessidade e moralidade de seu uso."
+        }
+      ]
+    },
+    {
+      "id": "mod4-guerra-fria",
+      "titulo": "Guerra Fria (1947-1991)",
+      "topicos": [
+        "Bipolarização: EUA vs. URSS",
+        "Cortina de Ferro e Plano Marshall",
+        "Crises: Berlim, Cuba, Coreia, Vietnã",
+        "Corrida armamentista e espacial",
+        "Coexistência pacífica e détente"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Guerra Fria foi confronto ideológico entre EUA e URSS sem enfrentamento militar direto. Sobre suas características, é correto afirmar que:",
+          "alternativas": [
+            "Foi guerra militar convencional entre superpotências",
+            "Confronto ideológico (capitalismo vs. socialismo), corrida armamentista, guerras por procuração",
+            "EUA e URSS foram aliados permanentes",
+            "Não houve competição entre as superpotências",
+            "Guerra Fria durou apenas alguns anos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Guerra Fria (1947-1991): confronto indireto EUA (capitalismo, liberal-democracia) vs. URSS (socialismo, regime de partido único). Características: bipolarização do mundo, corrida armamentista nuclear, corrida espacial, guerra ideológica (propaganda), guerras por procuração (Coreia, Vietnã, Afeganistão), espionagem, divisão da Europa (Cortina de Ferro). Evitaram confronto direto por medo de aniquilação nuclear mútua."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Europa dividiu-se em blocos após a Segunda Guerra. Sobre essa divisão, é correto afirmar que:",
+          "alternativas": [
+            "Europa permaneceu totalmente unificada",
+            "Cortina de Ferro dividiu Europa: Ocidental (capitalista, Plano Marshall) vs. Oriental (socialista, Comecon)",
+            "Não houve nenhuma divisão ideológica na Europa",
+            "URSS controlou toda a Europa Ocidental",
+            "EUA não teve influência sobre Europa pós-guerra"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Europa dividida pela \"Cortina de Ferro\" (expressão de Churchill, 1946): Ocidental (capitalista, democracias liberais, OTAN, Plano Marshall) vs. Oriental (socialista, governos comunistas sob influência soviética, Pacto de Varsóvia, Comecon). Alemanha simbolicamente dividida: República Federal (Ocidental) vs. República Democrática (Oriental), Berlim dividido por Muro (1961-1989)."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Crise dos Mísseis de Cuba (1962) foi o momento de maior tensão da Guerra Fria. Sobre esse episódio, é correto afirmar que:",
+          "alternativas": [
+            "Não houve nenhuma crise entre EUA e URSS",
+            "URSS instalou mísseis em Cuba; bloqueio naval americano; risco de guerra nuclear; recuo soviético",
+            "EUA aceitou pacificamente mísseis soviéticos em Cuba",
+            "Crise não teve risco de escalada nuclear",
+            "URSS venceu diplomaticamente mantendo mísseis"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Crise de outubro de 1962: URSS (Khrushchev) instalou mísseis nucleares em Cuba (Fidel Castro, regime socialista desde 1959). EUA (Kennedy) impôs bloqueio naval, exigiu retirada. Mundo à beira de guerra nuclear (13 dias). Acordo: URSS retirou mísseis, EUA prometeu não invadir Cuba e secretamente retirou mísseis da Turquia. Maior tensão da Guerra Fria."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Guerras periféricas foram travadas por procuração durante Guerra Fria. Sobre esses conflitos, é correto afirmar que:",
+          "alternativas": [
+            "Não houve nenhum conflito armado durante Guerra Fria",
+            "Coreia, Vietnã, Afeganistão - superpotências apoiaram lados opostos sem enfrentamento direto",
+            "EUA e URSS lutaram diretamente em todos os conflitos",
+            "Guerras foram totalmente independentes da Guerra Fria",
+            "Não houve intervenção das superpotências em conflitos regionais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Guerras por procuração: Coreia (1950-53: Norte comunista vs. Sul capitalista, EUA apoiou Sul, China/URSS o Norte), Vietnã (1955-75: EUA apoiou Sul, derrotado por Norte comunista), Afeganistão (1979-89: URSS invadiu, EUA apoiou mujahideen). Superpotências evitavam confronto direto, mas financiavam, armavam e aconselhavam lados opostos em conflitos periféricos."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Guerra Fria encerrou-se com dissolução da URSS (1991). Entre os fatores desse fim, destaca-se:",
+          "alternativas": [
+            "Vitória militar dos EUA sobre a URSS",
+            "Crise econômica soviética, corrida armamentista insustentável, Glasnost/Perestroika, queda do Muro de Berlim",
+            "Fortalecimento absoluto da economia soviética",
+            "Expansão territorial soviética na década de 1980",
+            "União Soviética permanece existindo até hoje"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Fim da Guerra Fria: crise econômica soviética (modelo planificado ineficiente), corrida armamentista (gastos insustentáveis), guerra no Afeganistão (desgaste), reformas de Gorbachev (Glasnost-transparência, Perestroika-reestruturação), queda do Muro de Berlim (1989), dissolução dos regimes comunistas no Leste Europeu, dissolução da URSS (1991). EUA tornou-se única superpotência."
+        }
+      ]
+    },
+    {
+      "id": "mod5-descolonizacao",
+      "titulo": "Descolonização Afro-Asiática",
+      "topicos": [
+        "Fatores da descolonização pós-Segunda Guerra",
+        "Independência da Índia e partição",
+        "Descolonização africana",
+        "Conferência de Bandung e Não-Alinhados",
+        "Neocolonialismo e dependência"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A descolonização acelerou-se após Segunda Guerra Mundial. Entre os fatores desse processo, destaca-se:",
+          "alternativas": [
+            "Fortalecimento absoluto das potências coloniais",
+            "Enfraquecimento europeu pós-guerra, nacionalismos anticoloniais, pressão de EUA/URSS, Carta da ONU",
+            "Concessão espontânea de independência sem luta",
+            "Ausência de movimentos nacionalistas nas colônias",
+            "Desinteresse total dos colonizados pela independência"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Fatores da descolonização: Europa enfraquecida pelas guerras, nacionalismos anticoloniais fortalecidos, pressão de superpotências (EUA e URSS anticoloniais - por motivos diferentes), Carta da ONU (autodeterminação), custos de manter colônias à força, vergonha moral pós-Holocausto (como justificar domínio racial?). Processo intenso 1945-1975."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Índia foi o primeiro grande território a conquistar independência (1947). Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "Independência foi conquistada exclusivamente por guerra",
+            "Gandhi liderou resistência não-violenta; independência acompanhada de partição sangrenta (Índia/Paquistão)",
+            "Não houve violência durante ou após independência",
+            "Inglaterra concedeu independência espontaneamente sem pressão",
+            "Índia permaneceu unificada sem divisões"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Gandhi (Mahatma - grande alma) liderou movimento de não-violência (ahimsa): desobediência civil, boicotes, Marcha do Sal, não-cooperação. Nehru e Congresso Nacional Indiano também atuaram. Inglaterra concedeu independência (1947), mas com partição: Índia (hindu-maioria) e Paquistão (muçulmano). Partição causou migrações massivas, violência comunal, milhões de mortos. Gandhi assassinado (1948)."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A descolonização africana concentrou-se nas décadas de 1950-60. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "Todas as independências foram pacíficas",
+            "Algumas pacíficas (Gana, Senegal), outras violentas (Argélia, Angola, Moçambique); muitas em 1960",
+            "África permaneceu totalmente colonizada",
+            "Não houve resistência europeia às independências",
+            "Processo foi uniforme em todo continente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Descolonização variou: pacífica (Gana, 1957, Nkrumah; Senegal; Tanzânia) ou violenta (Argélia, guerra 1954-62 contra França; Angola/Moçambique, guerra contra Portugal até 1975; Quênia, Mau Mau; Congo, caos pós-independência). 1960 foi \"Ano da África\" (17 independências). Apartheid na África do Sul resistiu até 1994 (Mandela)."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Conferência de Bandung (1955) reuniu países afro-asiáticos recém-independentes. Sobre esse evento, é correto afirmar que:",
+          "alternativas": [
+            "Defendeu alinhamento total com EUA ou URSS",
+            "Criou Movimento Não-Alinhado: terceira via, anti-imperialismo, neutralidade na Guerra Fria",
+            "Apoiou incondicionalmente colonialismo europeu",
+            "Não teve nenhuma importância política",
+            "Apenas países alinhados aos EUA participaram"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Conferência de Bandung (Indonésia, 1955): 29 países afro-asiáticos (Nehru-Índia, Nasser-Egito, Sukarno-Indonésia, Chou En-Lai-China). Princípios: anti-imperialismo, anticolonialismo, não-alinhamento na Guerra Fria, coexistência pacífica, cooperação Sul-Sul. Criou Movimento dos Países Não-Alinhados. Afirmou protagonismo do Terceiro Mundo."
+        },
+        {
+          "id": "q5",
+          "enunciado": "Apesar das independências políticas, muitos países permaneceram dependentes economicamente (neocolonialismo). Sobre essa situação, é correto afirmar que:",
+          "alternativas": [
+            "Independência garantiu automaticamente desenvolvimento econômico",
+            "Estruturas coloniais (monoculturas, dependência) persistiram; multinacionais e dívida externa mantiveram dependência",
+            "Todos os países tornaram-se desenvolvidos após independência",
+            "Não há relação entre passado colonial e subdesenvolvimento atual",
+            "Neocolonialismo é mito sem base na realidade"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Neocolonialismo: independência política não significou autonomia econômica. Permaneceram: estruturas coloniais (monoculturas exportadoras, dependência de matérias-primas), tecnologia defasada, elites corruptas treinadas pelos colonizadores, fronteiras artificiais, instabilidade. Multinacionais, FMI/Banco Mundial, dívida externa mantiveram dependência. Teoria da Dependência (Prebisch, Frank) analisa essa continuidade."
+        }
+      ]
+    }
+  ]
+}

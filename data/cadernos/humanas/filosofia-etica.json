@@ -1,0 +1,208 @@
+{
+  "id": "filosofia-etica",
+  "titulo": "Etica e Moral",
+  "descricao": "Teorias eticas, dilemas morais e a reflexao sobre o bem, o mal e a vida boa",
+  "icone": "⚖️",
+  "cor": "from-green-500 to-emerald-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Etica e Moral: Conceitos Fundamentais",
+      "resumo": "Distincao entre etica e moral, reflexao sobre valores, principios e a fundamentacao das acoes humanas.",
+      "topicos": [
+        "Diferenca entre etica e moral",
+        "Valores, normas e principios",
+        "Autonomia e heteronomia moral",
+        "Relativismo x universalismo etico",
+        "Liberdade e responsabilidade"
+      ],
+      "exemplos": [
+        "Moral = costumes de um grupo; Etica = reflexao sobre a moral",
+        "Autonomia: dar-se a propria lei (Kant)",
+        "Dilema: valores universais ou relativos a cultura?"
+      ],
+      "dicas": [
+        "Etica pensa sobre a moral",
+        "ENEM pergunta sobre autonomia moral",
+        "Distinguir relativismo cultural de relativismo moral"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A distincao entre etica e moral pode ser entendida como:",
+          "alternativas": [
+            "Etica e moral sao termos identicos e intercambiaveis",
+            "Moral refere-se aos costumes, etica e a reflexao filosofica sobre a moral",
+            "Etica e pratica, moral e apenas teorica",
+            "Moral e universal, etica e relativa",
+            "Etica se aplica apenas a religiao"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Embora os termos sejam usados como sinonimos, filosoficamente moral refere-se aos costumes e normas de conduta, enquanto etica e a reflexao critica sobre esses costumes.",
+          "dificuldade": "facil",
+          "tags": ["etica", "moral", "conceitos-fundamentais"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Etica das Virtudes",
+      "resumo": "A etica aristotelica foca no carater virtuoso e na busca da felicidade (eudaimonia) atraves da pratica de virtudes.",
+      "topicos": [
+        "Eudaimonia como fim ultimo",
+        "Virtudes eticas e dianoéticas",
+        "A doutrina do meio-termo",
+        "Habito e formacao do carater",
+        "Vida contemplativa"
+      ],
+      "exemplos": [
+        "Coragem: meio entre covardia e temeridade",
+        "Virtude se adquire pela pratica repetida",
+        "Felicidade e realizacao das potencialidades humanas"
+      ],
+      "dicas": [
+        "Aristoteles foca no 'ser' virtuoso, nao apenas no 'agir' correto",
+        "Virtudes sao habitos adquiridos",
+        "Eudaimonia nao e prazer, mas realizacao plena"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "Na etica aristotelica, a virtude moral e:",
+          "alternativas": [
+            "Inata, nascemos com ela",
+            "Alcancada pela razao pura sem experiencia",
+            "Um habito adquirido pela pratica do meio-termo",
+            "Impossivel de ser desenvolvida",
+            "Identica ao prazer imediato"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Para Aristoteles, as virtudes morais sao habitos (hexis) adquiridos pela pratica repetida de acoes virtuosas, encontrando o equilibrio entre extremos viciosos.",
+          "dificuldade": "media",
+          "tags": ["aristoteles", "virtude", "etica-virtudes"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Etica Deontologica de Kant",
+      "resumo": "Kant propoe uma etica baseada no dever e na razao, formulando o imperativo categorico como principio universal da moralidade.",
+      "topicos": [
+        "Boa vontade e dever",
+        "Imperativo categorico",
+        "Autonomia da vontade",
+        "Dignidade humana",
+        "Reino dos fins"
+      ],
+      "exemplos": [
+        "'Age de modo que possas querer que tua maxima se torne lei universal'",
+        "'Trata a humanidade sempre como fim, nunca como meio'",
+        "Agir por dever, nao por inclinacao"
+      ],
+      "dicas": [
+        "Deontologia foca no dever, nao nas consequencias",
+        "Imperativo categorico e formal e universal",
+        "Dignidade humana e central na etica kantiana"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "O imperativo categorico de Kant exige que:",
+          "alternativas": [
+            "Ajamos sempre buscando nosso proprio prazer",
+            "Calculemos as consequencias de cada acao",
+            "Ajamos segundo maximas que possamos querer como lei universal",
+            "Sigamos cegamente as ordens da autoridade",
+            "Ignoremos a razao e sigamos as emocoes"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O imperativo categorico exige que ajamos apenas segundo maximas que possamos querer que se tornem leis universais, ou seja, principios validos para todos os seres racionais.",
+          "dificuldade": "media",
+          "tags": ["kant", "imperativo-categorico", "deontologia"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Utilitarismo e Consequencialismo",
+      "resumo": "O utilitarismo avalia a moralidade das acoes pelas suas consequencias, buscando maximizar a felicidade geral.",
+      "topicos": [
+        "Principio da utilidade",
+        "Prazer e felicidade em Bentham",
+        "Utilitarismo qualitativo de Mill",
+        "Calculo de consequencias",
+        "Criticas ao utilitarismo"
+      ],
+      "exemplos": [
+        "'A maior felicidade para o maior numero'",
+        "Mill: prazeres superiores (intelectuais) x inferiores (corporais)",
+        "Dilemas: sacrificar um para salvar muitos?"
+      ],
+      "dicas": [
+        "Consequencialismo: avaliar acao pelas consequencias",
+        "Bentham: quantitativo; Mill: qualitativo",
+        "Critica: pode justificar injusticas individuais"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "O utilitarismo de Bentham propoe que a acao moralmente correta e aquela que:",
+          "alternativas": [
+            "Cumpre o dever independente das consequencias",
+            "Segue as virtudes tradicionais",
+            "Produz a maior felicidade para o maior numero de pessoas",
+            "Beneficia apenas o agente da acao",
+            "E imposta pela autoridade religiosa"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O principio de utilidade de Bentham estabelece que a acao correta e aquela que maximiza a felicidade geral, produzindo o maior bem para o maior numero.",
+          "dificuldade": "facil",
+          "tags": ["utilitarismo", "bentham", "consequencialismo"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Etica Aplicada e Dilemas Contemporaneos",
+      "resumo": "Aplicacao das teorias eticas a questoes atuais: bioetica, etica ambiental, direitos humanos e tecnologia.",
+      "topicos": [
+        "Bioetica: inicio e fim da vida",
+        "Etica ambiental e direitos dos animais",
+        "Etica nas novas tecnologias",
+        "Direitos humanos e dignidade",
+        "Dilemas morais contemporaneos"
+      ],
+      "exemplos": [
+        "Eutanasia, aborto, clonagem",
+        "Responsabilidade com geracoes futuras",
+        "Privacidade e vigilancia digital",
+        "Peter Singer: especismo e direitos animais"
+      ],
+      "dicas": [
+        "ENEM cobra aplicacao da etica em casos concretos",
+        "Relacionar teorias classicas com problemas atuais",
+        "Considerar multiplas perspectivas eticas"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "A bioetica contemporanea se preocupa fundamentalmente com:",
+          "alternativas": [
+            "Apenas questoes economicas da medicina",
+            "Dilemas morais envolvendo vida, saude e pesquisa cientifica",
+            "A imposicao de valores religiosos na medicina",
+            "A proibicao de qualquer avanso tecnologico",
+            "Questoes exclusivas da veterinaria"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A bioetica e o campo da etica aplicada que reflete sobre dilemas morais relacionados a vida, saude, pesquisa biomedica, considerando autonomia, beneficencia e justica.",
+          "dificuldade": "facil",
+          "tags": ["bioetica", "etica-aplicada", "dilemas-contemporaneos"]
+        }
+      ]
+    }
+  ]
+}

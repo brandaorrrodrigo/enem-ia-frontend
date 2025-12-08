@@ -1,0 +1,402 @@
+{
+  "id": "historia-ditadura",
+  "titulo": "Ditadura Militar",
+  "descricao": "O regime militar brasileiro: repressão, milagre econômico e abertura política (1964-1985)",
+  "icone": "⚔️",
+  "cor": "from-gray-600 to-gray-800",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-golpe-1964",
+      "titulo": "Golpe de 1964 e Governo Castelo Branco",
+      "topicos": [
+        "Contexto: governo Jango e reformas de base",
+        "Guerra Fria e Doutrina de Segurança Nacional",
+        "Golpe civil-militar de 1964",
+        "Atos Institucionais (AI-1 e AI-2)",
+        "Governo Castelo Branco"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O golpe civil-militar de 1964 que depôs o presidente João Goulart foi justificado pelos golpistas como necessário para conter a \"ameaça comunista\". Sobre o contexto que levou ao golpe, é correto afirmar que:",
+          "alternativas": [
+            "O governo Jango propunha reformas conservadoras aceitas por todos",
+            "As Reformas de Base (agrária, urbana, educacional) assustaram setores conservadores",
+            "Não havia influência da Guerra Fria no contexto brasileiro",
+            "Os EUA opunham-se totalmente ao golpe militar no Brasil",
+            "A sociedade brasileira era unanimemente favorável a Jango"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "As Reformas de Base propostas por Jango (reforma agrária, nacionalização de refinarias, controle de remessa de lucros) assustaram elites conservadoras, militares e empresários. No contexto da Guerra Fria, foram vistas como \"ameaça comunista\", justificando o golpe."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Doutrina de Segurança Nacional, desenvolvida na Escola Superior de Guerra (ESG), fundamentou ideologicamente a ditadura militar. Essa doutrina pregava:",
+          "alternativas": [
+            "A democracia plena e respeito total aos direitos humanos",
+            "O combate ao \"inimigo interno\" (comunismo) para garantir segurança nacional",
+            "A neutralidade total do Brasil na Guerra Fria",
+            "A separação absoluta entre política e forças armadas",
+            "O desarmamento completo das Forças Armadas brasileiras"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Doutrina de Segurança Nacional via o comunismo como \"inimigo interno\" a ser combatido. Justificava a repressão, tortura e censura como necessárias para proteger a nação. Alinhava o Brasil aos EUA na Guerra Fria."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O Ato Institucional nº 1 (AI-1), editado logo após o golpe, estabelecia:",
+          "alternativas": [
+            "O fortalecimento pleno da democracia brasileira",
+            "Poderes excepcionais ao Executivo, cassações e suspensão de garantias",
+            "A convocação imediata de eleições diretas para presidente",
+            "A extinção total das Forças Armadas",
+            "A total liberdade de imprensa e manifestação"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O AI-1 (9/04/1964) concedia poderes excepcionais ao presidente, permitia cassação de mandatos, suspensão de direitos políticos por 10 anos e eleições indiretas para presidente. Marcou o início da institucionalização do autoritarismo."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O governo Castelo Branco (1964-1967) é considerado da \"linha dura\" moderada. Entre suas ações, destaca-se:",
+          "alternativas": [
+            "A restauração imediata da democracia plena",
+            "A implementação de reformas econômicas ortodoxas (PAEG) e institucionalização do regime",
+            "A concessão de total liberdade aos partidos políticos",
+            "A extinção de todos os atos institucionais",
+            "O fim completo da repressão política"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Castelo Branco implementou o PAEG (Plano de Ação Econômica do Governo), política econômica ortodoxa de combate à inflação. Também institucionalizou o regime através de Atos Institucionais, bipartidarismo (ARENA e MDB) e nova Constituição (1967)."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O Ato Institucional nº 2 (AI-2), de outubro de 1965, representou um endurecimento do regime. Entre suas medidas, destacava-se:",
+          "alternativas": [
+            "A restauração das eleições diretas para presidente",
+            "A extinção dos partidos políticos e estabelecimento do bipartidarismo",
+            "A ampliação das liberdades democráticas",
+            "O fim da censura aos meios de comunicação",
+            "A convocação de eleições gerais imediatas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O AI-2 extinguiu todos os partidos políticos existentes e estabeleceu o bipartidarismo: ARENA (Aliança Renovadora Nacional, governo) e MDB (Movimento Democrático Brasileiro, oposição consentida). Também estabeleceu eleições indiretas para governadores."
+        }
+      ]
+    },
+    {
+      "id": "mod2-anos-chumbo",
+      "titulo": "Anos de Chumbo e AI-5",
+      "topicos": [
+        "Governo Costa e Silva",
+        "Movimentos de resistência (1968)",
+        "Ato Institucional nº 5 (AI-5)",
+        "Governo Médici e repressão",
+        "Luta armada e guerrilha"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O ano de 1968 foi marcado por intensa mobilização popular contra a ditadura. Entre os movimentos de resistência desse período, destaca-se:",
+          "alternativas": [
+            "A ausência total de protestos contra o regime militar",
+            "Passeata dos Cem Mil, greves operárias e movimento estudantil",
+            "O apoio unânime da população à ditadura",
+            "A proibição completa de qualquer forma de manifestação",
+            "A total desmobilização dos setores de oposição"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "1968 foi ano de grande mobilização: Passeata dos Cem Mil no Rio de Janeiro, greves operárias em Osasco e Contagem, ocupações de universidades. O movimento estudantil liderou protestos contra a ditadura, repressão e morte do estudante Edson Luís."
+        },
+        {
+          "id": "q2",
+          "enunciado": "O Ato Institucional nº 5 (AI-5), decretado em 13 de dezembro de 1968, marcou o auge do autoritarismo da ditadura. Entre suas medidas, destacava-se:",
+          "alternativas": [
+            "A ampliação das liberdades civis e democráticas",
+            "Fechamento do Congresso, censura prévia e suspensão do habeas corpus",
+            "A convocação de eleições diretas para todos os cargos",
+            "O fim de toda forma de repressão política",
+            "A garantia total dos direitos humanos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O AI-5 foi o mais violento dos atos. Permitia ao presidente fechar o Congresso, cassar mandatos, suspender direitos políticos, demitir funcionários, estabelecer censura prévia e suspender habeas corpus para crimes políticos. Iniciou os \"anos de chumbo\"."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Durante o governo Médici (1969-1974), considerado o mais repressivo da ditadura, a tortura tornou-se sistemática. Sobre esse período, é correto afirmar que:",
+          "alternativas": [
+            "A tortura era proibida e punida pelo governo militar",
+            "Organizações como DOI-CODI praticavam prisão, tortura e assassinato de opositores",
+            "Não houve violação de direitos humanos durante o período",
+            "Os presos políticos recebiam total proteção legal",
+            "A repressão era inexistente no governo Médici"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Órgãos como DOI-CODI (Destacamento de Operações de Informações - Centro de Operações de Defesa Interna) e OBAN (Operação Bandeirante) praticavam prisão, tortura, assassinato e desaparecimento forçado de opositores. A repressão foi sistemática e institucionalizada."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Diante do fechamento de canais legais de oposição, alguns grupos optaram pela luta armada. Sobre a guerrilha urbana e rural, é correto afirmar que:",
+          "alternativas": [
+            "A luta armada foi vitoriosa e derrubou a ditadura",
+            "Grupos como ALN, VPR e Guerrilha do Araguaia enfrentaram o regime militarmente",
+            "Não houve nenhuma tentativa de resistência armada no Brasil",
+            "A luta armada contou com apoio popular massivo",
+            "Os guerrilheiros não sofreram nenhuma repressão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Organizações como ALN (Aliança Libertadora Nacional), VPR (Vanguarda Popular Revolucionária) e a Guerrilha do Araguaia optaram pela luta armada. Realizaram sequestros de embaixadores, assaltos a bancos e enfrentamentos, mas foram duramente reprimidas."
+        },
+        {
+          "id": "q5",
+          "enunciado": "Paradoxalmente, o governo Médici (1969-1974) foi o mais popular da ditadura. Isso se devia principalmente a:",
+          "alternativas": [
+            "O fim completo da censura e repressão",
+            "O \"milagre econômico\", propaganda governamental e censura",
+            "A restauração plena da democracia no período",
+            "A ausência de violações aos direitos humanos",
+            "A total liberdade de imprensa e expressão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O período Médici foi marcado pelo \"milagre econômico\" (alto crescimento), uso de propaganda nacionalista (\"Brasil grande\"), censura à imprensa e vitória na Copa de 1970. A popularidade convivia com intensa repressão - \"Brasil, ame-o ou deixe-o\"."
+        }
+      ]
+    },
+    {
+      "id": "mod3-milagre-economico",
+      "titulo": "Milagre Econômico e Modelo Desenvolvimentista",
+      "topicos": [
+        "Crescimento econômico (1968-1973)",
+        "Política de arrocho salarial",
+        "Grandes obras e projetos",
+        "Endividamento externo",
+        "Concentração de renda"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O \"milagre econômico\" (1968-1973) caracterizou-se por altas taxas de crescimento do PIB. Entre os fatores que explicam esse crescimento, destaca-se:",
+          "alternativas": [
+            "A distribuição igualitária de renda na população",
+            "Investimentos estatais, endividamento externo e arrocho salarial",
+            "A ausência total de investimentos estrangeiros",
+            "A recusa em realizar grandes obras de infraestrutura",
+            "A priorização absoluta do mercado interno popular"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O \"milagre\" baseou-se em: investimentos estatais em infraestrutura, endividamento externo, atração de capital estrangeiro, arrocho salarial (que reduzia custos) e expansão do crédito. O crescimento médio foi de 10% ao ano, mas com concentração de renda."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Durante o \"milagre econômico\", o governo militar realizou grandes obras de infraestrutura. Entre esses projetos, destaca-se:",
+          "alternativas": [
+            "A construção da Transamazônica e da Ponte Rio-Niterói",
+            "A paralisação total de obras públicas no período",
+            "O abandono completo da infraestrutura nacional",
+            "A proibição de construção de rodovias",
+            "O desmantelamento de toda estrutura de transportes"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Grandes obras foram realizadas: Rodovia Transamazônica, Ponte Rio-Niterói, Usina de Itaipu, expansão de telecomunicações e siderurgia. Essas obras geravam propaganda, mas muitas tiveram problemas de planejamento e impactos ambientais e sociais negativos."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A política de arrocho salarial durante o \"milagre econômico\" tinha como objetivo:",
+          "alternativas": [
+            "Aumentar o poder de compra da classe trabalhadora",
+            "Controlar inflação e reduzir custos de produção, favorecendo lucros",
+            "Distribuir riqueza igualitariamente na população",
+            "Fortalecer os sindicatos e movimentos trabalhistas",
+            "Conceder total liberdade de negociação salarial"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O arrocho salarial mantinha os reajustes abaixo da inflação real, reduzindo custos para empresas e controlando inflação. Isso favorecia lucros empresariais e investimentos, mas concentrava renda, ampliava desigualdade e reprimia sindicatos."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O economista Delfim Netto, que comandou a economia durante parte da ditadura, afirmou que era preciso \"fazer o bolo crescer para depois distribuir\". Essa frase sintetiza:",
+          "alternativas": [
+            "A política de distribuição imediata de renda",
+            "O modelo de crescimento primeiro, distribuição depois (que nunca veio)",
+            "A prioridade total dada às políticas sociais",
+            "O combate efetivo à desigualdade social",
+            "A democratização do acesso à riqueza nacional"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A frase expressa o modelo desenvolvimentista: crescimento econômico primeiro, distribuição depois. Na prática, o \"bolo cresceu\" mas a distribuição não veio - houve enorme concentração de renda. A desigualdade social aumentou significativamente no período."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O \"milagre econômico\" teve curta duração, encerrando-se com a Crise do Petróleo de 1973. Entre as consequências dessa crise para o Brasil, destaca-se:",
+          "alternativas": [
+            "A continuidade indefinida do crescimento acelerado",
+            "Aumento da dívida externa, inflação e fim do \"milagre\"",
+            "A total independência energética do Brasil",
+            "O fortalecimento absoluto da economia brasileira",
+            "A eliminação completa da dependência externa"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Crise do Petróleo (1973) elevou drasticamente o preço do petróleo, recurso do qual o Brasil era dependente. Isso aumentou a dívida externa (para pagar importações), disparou a inflação e encerrou o \"milagre\", iniciando período de crise econômica."
+        }
+      ]
+    },
+    {
+      "id": "mod4-abertura-politica",
+      "titulo": "Distensão e Abertura Política",
+      "topicos": [
+        "Governo Geisel e abertura \"lenta, gradual e segura\"",
+        "Fim do AI-5 e Lei da Anistia",
+        "Governo Figueiredo",
+        "Atentados da direita militar",
+        "Movimento pelas Diretas Já"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O governo Geisel (1974-1979) iniciou o processo de abertura política, descrito como \"lenta, gradual e segura\". Sobre essa abertura, é correto afirmar que:",
+          "alternativas": [
+            "Foi um processo democrático e popular desde o início",
+            "Era controlada pelos militares para evitar rupturas bruscas",
+            "Resultou na redemocratização imediata do Brasil",
+            "Não enfrentou resistência de setores da linha dura",
+            "Eliminou instantaneamente toda forma de repressão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A abertura de Geisel era \"controlada\" pelos militares para evitar revanchismo e preservar interesses das Forças Armadas. Foi gradual e enfrentou resistência da linha dura (que promoveu atentados). A repressão diminuiu, mas não cessou completamente."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Durante o governo Geisel, casos de tortura e morte de opositores ainda ocorriam. O caso mais emblemático foi:",
+          "alternativas": [
+            "A morte do jornalista Vladimir Herzog, apresentada falsamente como suicídio",
+            "O fortalecimento absoluto dos direitos humanos no Brasil",
+            "A eliminação completa da tortura nos porões da ditadura",
+            "A punição imediata de todos os torturadores",
+            "O reconhecimento oficial das violações cometidas"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "A morte do jornalista Vladimir Herzog (1975), apresentada como suicídio mas claramente resultado de tortura, expôs a continuidade da repressão. O caso gerou comoção, ato ecumênico histórico na Catedral da Sé e pressão pela abertura."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Lei da Anistia, aprovada em 1979, permitiu o retorno de exilados políticos. Porém, a lei foi criticada por:",
+          "alternativas": [
+            "Punir severamente todos os torturadores da ditadura",
+            "Ser \"ampla, geral e irrestrita\", anistiando também torturadores",
+            "Excluir completamente os militares da anistia",
+            "Permitir a punição dos crimes da ditadura",
+            "Estabelecer justiça de transição efetiva"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Lei da Anistia foi \"recíproca\", beneficiando tanto opositores quanto agentes da repressão. Isso impediu a punição de torturadores e assassinos, deixando impunidade que perdura. O debate sobre revisão da lei continua até hoje."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O atentado do Riocentro (1981), durante show em comemoração ao Dia do Trabalho, foi atribuído a:",
+          "alternativas": [
+            "Militantes de esquerda tentando desestabilizar a abertura",
+            "Setores da linha dura militar contrários à abertura política",
+            "Grupos democráticos favoráveis à redemocratização",
+            "Organizações internacionais de direitos humanos",
+            "O próprio governo Figueiredo para justificar repressão"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O atentado do Riocentro foi promovido pela própria linha dura militar, contrária à abertura. Uma bomba explodiu no colo do sargento Guilherme Rosário. Apesar das evidências, o caso foi abafado, mostrando limites da abertura \"controlada\"."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O movimento pelas \"Diretas Já\" (1983-1984) foi a maior mobilização popular pela redemocratização. Sobre esse movimento, é correto afirmar que:",
+          "alternativas": [
+            "Foi bem-sucedido e resultou em eleições diretas imediatas",
+            "Mobilizou milhões, mas a Emenda Dante de Oliveira foi derrotada no Congresso",
+            "Não teve nenhum apoio popular significativo",
+            "Foi totalmente reprimido pelos militares",
+            "Não teve impacto no processo de redemocratização"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "As \"Diretas Já\" mobilizaram milhões em comícios (1 milhão no Vale do Anhangabaú). Porém, a Emenda Dante de Oliveira (eleições diretas) foi derrotada no Congresso por falta de quórum. A transição prosseguiu via Colégio Eleitoral, elegendo Tancredo Neves indiretamente."
+        }
+      ]
+    },
+    {
+      "id": "mod5-fim-ditadura",
+      "titulo": "Fim da Ditadura e Redemocratização",
+      "topicos": [
+        "Eleição de Tancredo Neves (indireta)",
+        "Governo Sarney e Constituinte",
+        "Constituição de 1988",
+        "Legado da ditadura",
+        "Justiça de transição no Brasil"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Tancredo Neves foi eleito presidente pelo Colégio Eleitoral em 1985, derrotando Paulo Maluf. Porém:",
+          "alternativas": [
+            "Tancredo governou normalmente seu mandato completo",
+            "Tancredo faleceu antes da posse, assumindo José Sarney",
+            "Renunciou imediatamente após a eleição",
+            "Foi deposto por novo golpe militar",
+            "Transferiu o poder diretamente para Fernando Collor"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Tancredo Neves foi eleito indiretamente, mas adoeceu gravemente antes da posse e faleceu em 21/04/1985. Assumiu seu vice, José Sarney, ex-presidente do PDS (partido da ditadura), que se juntara à Aliança Democrática."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Assembleia Nacional Constituinte, instalada em 1987, foi marcada por intensos debates. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "Foi totalmente controlada pelos militares",
+            "Teve participação popular através de emendas populares",
+            "Proibiu completamente a participação da sociedade civil",
+            "Resultou em Constituição autoritária e antidemocrática",
+            "Não permitiu nenhum tipo de debate ou manifestação"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Constituinte permitiu participação popular através de emendas populares (com 30 mil assinaturas). Houve intensa mobilização social. Setores progressistas, conservadores e corporativos disputaram o texto da nova Carta."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Constituição de 1988, chamada de \"Constituição Cidadã\" por Ulysses Guimarães, caracteriza-se por:",
+          "alternativas": [
+            "Restrição de direitos sociais e individuais",
+            "Ampliação de direitos sociais, políticos e garantias individuais",
+            "Manutenção de estruturas autoritárias da ditadura",
+            "Eliminação de todos os direitos trabalhistas",
+            "Concentração total de poder no Executivo"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Constituição de 1988 ampliou direitos: sociais (saúde, educação, previdência), políticos (voto para analfabetos, 16 anos), individuais, ambientais e trabalhistas. Estabeleceu bases democráticas, embora com contradições e necessidade de reformas."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O legado da ditadura militar brasileira inclui graves violações de direitos humanos. Sobre o tratamento desse passado, é correto afirmar que:",
+          "alternativas": [
+            "Todos os crimes da ditadura foram plenamente investigados e punidos",
+            "A Lei da Anistia impediu punição de torturadores, gerando impunidade",
+            "Não houve nenhuma violação de direitos humanos durante a ditadura",
+            "A justiça de transição brasileira foi exemplar",
+            "Todos os desaparecidos foram localizados e identificados"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Lei da Anistia de 1979 impede punição de agentes da repressão. Diferente de países como Argentina, o Brasil não julgou torturadores. A Comissão Nacional da Verdade (2012-2014) investigou crimes, mas sem poder punitivo. Famílias de desaparecidos seguem sem respostas."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A memória e o debate sobre a ditadura militar permanecem controversos na sociedade brasileira. Isso se manifesta em:",
+          "alternativas": [
+            "Consenso total sobre os crimes cometidos durante o período",
+            "Negacionismo, revisionismo e disputas sobre memória e verdade histórica",
+            "Aceitação unânime da gravidade das violações de direitos humanos",
+            "Ausência de qualquer debate sobre o período ditatorial",
+            "Reconhecimento oficial e punição de todos os responsáveis"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O debate permanece polarizado. Há negacionismo (negação da tortura), revisionismo (minimização dos crimes), disputas sobre memória (\"anos de chumbo\" vs. \"anos gloriosos\") e resistência à justiça de transição. A compreensão histórica adequada do período segue sendo desafio."
+        }
+      ]
+    }
+  ]
+}

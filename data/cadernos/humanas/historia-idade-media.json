@@ -1,0 +1,402 @@
+{
+  "id": "historia-idade-media",
+  "titulo": "Idade Média",
+  "descricao": "Feudalismo, Igreja Católica, cruzadas e transição para o mundo moderno",
+  "icone": "🏰",
+  "cor": "from-stone-600 to-amber-700",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-alta-idade-media",
+      "titulo": "Alta Idade Média e Formação do Feudalismo",
+      "topicos": [
+        "Queda de Roma e invasões bárbaras",
+        "Reino dos Francos e Carlos Magno",
+        "Formação do feudalismo",
+        "Sociedade estamental",
+        "Economia feudal"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Alta Idade Média (séculos V-X) iniciou-se com a queda do Império Romano do Ocidente. Sobre esse período de transição, é correto afirmar que:",
+          "alternativas": [
+            "Houve ruptura total e imediata com a cultura romana",
+            "Fusão entre elementos romanos, germânicos e cristãos formou nova civilização",
+            "A cultura romana foi totalmente preservada sem alterações",
+            "Não houve nenhuma continuidade cultural com a Antiguidade",
+            "Os reinos bárbaros rejeitaram completamente o Cristianismo"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A transição foi gradual: reinos germânicos (visigodos, francos, ostrogodos) mesclaram costumes germânicos (tradição oral, direito consuetudinário, guerreiros) com herança romana (direito escrito, latim, administração) e Cristianismo (Igreja como instituição organizadora). Essa síntese formou a civilização medieval."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Carlos Magno, rei dos francos (768-814), foi coroado imperador pelo papa Leão III em 800. Sobre seu império, é correto afirmar que:",
+          "alternativas": [
+            "Unificou permanentemente toda a Europa ocidental",
+            "Tentou reconstruir Império Romano; promoveu cultura (Renascimento Carolíngio)",
+            "Rejeitou totalmente a herança romana e cristã",
+            "Não teve nenhuma importância para a história europeia",
+            "Perseguiu violentamente a Igreja Católica"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Carlos Magno (Carolíngio) expandiu reino franco, foi coroado imperador (aliança com Igreja). Promoveu Renascimento Carolíngio: preservação de textos clássicos, escolas, padronização da escrita (minúscula carolíngia). Após sua morte, Tratado de Verdun (843) dividiu império entre seus netos."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O feudalismo foi o sistema político-econômico que caracterizou a Idade Média. Sobre sua estrutura, é correto afirmar que:",
+          "alternativas": [
+            "Era sistema centralizado com forte poder real",
+            "Baseava-se em descentralização política, economia agrária e relações de vassalagem",
+            "Caracterizava-se por intenso comércio e urbanização",
+            "Não estabelecia nenhuma hierarquia social",
+            "Era sistema capitalista com trabalho assalariado"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Feudalismo: descentralização política (poder fragmentado entre senhores feudais), economia agrária autossuficiente (feudo), relações de vassalagem (suserano-vassalo: proteção por fidelidade), servidão (camponeses presos à terra). Pirâmide: rei (topo), nobres, cavaleiros, servos (base)."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A sociedade feudal era estamental, dividida em três ordens. Sobre essa divisão, é correto afirmar que:",
+          "alternativas": [
+            "Havia grande mobilidade social entre as ordens",
+            "Clero (orava), Nobreza (guerreava), Servos (trabalhavam) - divisão rígida",
+            "Todos tinham direitos e deveres idênticos",
+            "A sociedade era totalmente igualitária",
+            "Não havia nenhuma hierarquia social definida"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Sociedade de ordens: Clero (oratores - rezava), Nobreza (bellatores - guerreava), Camponeses/Servos (laboratores - trabalhava). Divisão vista como natural e divina. Pouca mobilidade social (nascimento determinava posição). Cada ordem tinha direitos e deveres específicos."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A economia feudal baseava-se na agricultura de subsistência. Sobre esse sistema econômico, é correto afirmar que:",
+          "alternativas": [
+            "Era voltada exclusivamente para exportação e comércio",
+            "Feudo autossuficiente; produção para consumo próprio; comércio reduzido",
+            "Caracterizava-se por intenso capitalismo mercantil",
+            "Utilizava exclusivamente trabalho assalariado",
+            "Baseava-se em indústrias e manufaturas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Economia feudal: agricultura de subsistência (produção para consumo do feudo), autossuficiência, técnicas rudimentares (arado de madeira), rotação trienal de culturas, trabalho servil (corveia, talha, banalidades). Comércio e moeda reduzidos. Economia natural (escambo prevalecia)."
+        }
+      ]
+    },
+    {
+      "id": "mod2-igreja-medieval",
+      "titulo": "Igreja Católica e Poder Religioso",
+      "topicos": [
+        "Papel político e social da Igreja",
+        "Clero secular e regular",
+        "Mosteiros e preservação cultural",
+        "Inquisição",
+        "Cisma do Oriente (1054)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Igreja Católica foi instituição central na Idade Média. Sobre seu poder, é correto afirmar que:",
+          "alternativas": [
+            "Tinha influência apenas espiritual, sem poder político",
+            "Maior proprietária de terras; influência política, social, cultural e econômica",
+            "Não possuía nenhuma terra ou propriedade",
+            "Era totalmente subordinada aos reis medievais",
+            "Não teve nenhuma importância na sociedade medieval"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Igreja era: maior proprietária de terras, coletora de dízimo, controlava educação, preservava cultura (mosteiros), legitimava poder político, influenciava vida cotidiana (sacramentos, moral). Papa rivalizava com reis (Questão das Investiduras). Condenava heresias (Inquisição). Era instituição mais poderosa da Idade Média."
+        },
+        {
+          "id": "q2",
+          "enunciado": "O clero medieval dividia-se em secular e regular. Sobre essa divisão, é correto afirmar que:",
+          "alternativas": [
+            "Clero secular vivia isolado em mosteiros",
+            "Secular (contato com fiéis: padres, bispos); Regular (ordens monásticas: beneditinos)",
+            "Não havia nenhuma diferença entre os tipos de clero",
+            "Clero regular não seguia nenhuma regra religiosa",
+            "Ambos viviam exclusivamente em mosteiros"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Clero secular (saeculum = mundo): padres, bispos, arcebispos, papa - contato com fiéis, administração de paróquias. Clero regular (regula = regra): monges em mosteiros seguindo regras (beneditinos: ora et labora; franciscanos: pobreza; dominicanos: pregação). Ordens monásticas preservaram cultura clássica."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Os mosteiros medievais tiveram importante papel cultural. Sobre suas contribuições, é correto afirmar que:",
+          "alternativas": [
+            "Rejeitavam completamente o conhecimento e a cultura",
+            "Preservaram textos clássicos através de cópias manuscritas; centros de saber",
+            "Não produziam nenhum tipo de conhecimento ou cultura",
+            "Proibiam totalmente a leitura e a escrita",
+            "Destruíam sistematicamente obras da Antiguidade"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Mosteiros (especialmente beneditinos) preservaram cultura: scriptoria (salas de cópia de manuscritos), bibliotecas, escolas monásticas. Monges copiavam textos clássicos (greco-romanos), religiosos e produziram iluminuras. Desenvolveram agricultura (técnicas, vinicultura). Foram centros de saber numa época de analfabetismo generalizado."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Inquisição foi tribunal eclesiástico criado para combater heresias. Sobre sua atuação, é correto afirmar que:",
+          "alternativas": [
+            "Garantia total liberdade de pensamento e crença",
+            "Perseguia heresias (cátaros, valdenses); usava tortura e pena de morte",
+            "Nunca utilizou violência ou coerção",
+            "Protegia todos os acusados de heresia",
+            "Não teve nenhum impacto sobre a população medieval"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Inquisição (século XIII): tribunal contra heresias (doutrinas contrárias à Igreja). Perseguiu cátaros/albigenses (dualistas), valdenses, mais tarde \"bruxas\" e judeus. Utilizava denúncias anônimas, tortura para obter confissões, penas de prisão, confisco de bens e morte na fogueira (relaxamento ao braço secular). Instaurou clima de medo."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O Cisma do Oriente (1054) dividiu o Cristianismo. Sobre essa ruptura, é correto afirmar que:",
+          "alternativas": [
+            "Uniu definitivamente católicos e ortodoxos",
+            "Separação entre Igreja Católica (Roma) e Ortodoxa (Constantinopla) por questões teológicas e políticas",
+            "Não teve nenhuma consequência para o Cristianismo",
+            "Resultou na extinção da Igreja Ortodoxa",
+            "Foi um evento sem importância histórica"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Cisma de 1054 separou Cristianismo: Igreja Católica Apostólica Romana (papa em Roma, latim, celibato clerical) e Igreja Ortodoxa (patriarca em Constantinopla, grego, casamento de padres). Causas: disputas teológicas (Filioque), litúrgicas, políticas (primazia papal) e culturais (latina vs. grega). Divisão permanece."
+        }
+      ]
+    },
+    {
+      "id": "mod3-cruzadas",
+      "titulo": "Cruzadas e Expansão Medieval",
+      "topicos": [
+        "Contexto das Cruzadas",
+        "Principais expedições (1ª a 8ª)",
+        "Consequências econômicas e culturais",
+        "Reconquista Ibérica",
+        "Contato com mundo islâmico"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "As Cruzadas foram expedições militares cristãs à Terra Santa (1095-1291). Entre suas motivações, destaca-se:",
+          "alternativas": [
+            "Apenas fervor religioso, sem interesses materiais",
+            "Motivos religiosos (recuperar Jerusalém), econômicos (comércio) e políticos (poder papal)",
+            "Completo desinteresse por questões religiosas",
+            "Objetivo exclusivo de estabelecer paz com muçulmanos",
+            "Ausência de qualquer motivação econômica ou territorial"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Motivações múltiplas: religiosas (libertar Jerusalém dos muçulmanos, ganhar perdão dos pecados), econômicas (nobres segundogênitos buscavam terras; cidades italianas queriam comércio), políticas (papa Urbano II quis afirmar autoridade). \"Deus vult!\" (Deus quer!) foi o grito de guerra."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Primeira Cruzada (1096-1099) foi a única que alcançou seu objetivo militar. Sobre esse evento, é correto afirmar que:",
+          "alternativas": [
+            "Fracassou completamente em conquistar Jerusalém",
+            "Conquistou Jerusalém (1099); criou Estados Cruzados (Reino de Jerusalém)",
+            "Não resultou em nenhuma conquista territorial",
+            "Foi totalmente pacífica sem violência",
+            "Os muçulmanos não ofereceram resistência"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Primeira Cruzada conquistou Jerusalém (1099) após cerco sangrento. Cruzados massacraram população (muçulmanos e judeus). Criaram Estados Cruzados: Reino de Jerusalém, Condado de Edessa, Principado de Antioquia, Condado de Trípoli. Saladino reconquistaria Jerusalém (1187), motivando outras cruzadas."
+        },
+        {
+          "id": "q3",
+          "enunciado": "As Cruzadas tiveram importantes consequências econômicas e culturais. Entre essas transformações, destaca-se:",
+          "alternativas": [
+            "Isolamento total da Europa em relação ao Oriente",
+            "Reabertura do Mediterrâneo ao comércio; contato cultural com mundo islâmico",
+            "Declínio absoluto do comércio europeu",
+            "Ausência de qualquer intercâmbio cultural",
+            "Fechamento completo das rotas comerciais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Consequências: reabertura do Mediterrâneo ao comércio (especiarias, seda); enriquecimento de cidades italianas (Veneza, Gênova); contato com cultura árabe avançada (ciência, filosofia, tecnologia); introdução de produtos orientais na Europa; enfraquecimento do feudalismo (muitos nobres morreram ou endividaram-se)."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Reconquista Ibérica foi processo paralelo às Cruzadas. Sobre esse movimento, é correto afirmar que:",
+          "alternativas": [
+            "Foi a conquista muçulmana da Península Ibérica",
+            "Expulsão gradual dos mouros pelos reinos cristãos (718-1492)",
+            "Não teve nenhuma relação com conflitos religiosos",
+            "Ocorreu de forma pacífica sem guerras",
+            "Muçulmanos nunca dominaram a Península Ibérica"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Reconquista: processo de expulsão dos mouros (muçulmanos) da Península Ibérica por reinos cristãos (Leão, Castela, Aragão, Portugal). Iniciou após Batalha de Covadonga (718), intensificou-se nos séculos XI-XIII. Concluiu-se com queda de Granada (1492). Formou mentalidade de cruzada na Espanha e Portugal."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O contato com o mundo islâmico durante as Cruzadas permitiu transferência de conhecimento. Sobre essa troca cultural, é correto afirmar que:",
+          "alternativas": [
+            "Europa não recebeu nenhum conhecimento do mundo islâmico",
+            "Europeus acessaram filosofia grega, matemática árabe, avanços científicos",
+            "Muçulmanos não possuíam conhecimento avançado",
+            "Não houve nenhuma forma de intercâmbio intelectual",
+            "Europa já conhecia tudo que os árabes sabiam"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Mundo islâmico preservara e desenvolvera conhecimento: filosofia grega (Aristóteles via Averróis), matemática (algarismos arábicos, álgebra de al-Khwarizmi), medicina (Avicena), astronomia, óptica. Cruzadas e Reconquista facilitaram transferência desse saber para Europa, contribuindo para Renascimento Cultural (século XII)."
+        }
+      ]
+    },
+    {
+      "id": "mod4-baixa-idade-media",
+      "titulo": "Baixa Idade Média: Renascimento Comercial e Urbano",
+      "topicos": [
+        "Crise do feudalismo",
+        "Renascimento comercial (séculos XI-XIII)",
+        "Crescimento urbano e burguesia",
+        "Corporações de ofício e guildas",
+        "Formação das monarquias nacionais"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Baixa Idade Média (séculos XI-XV) foi marcada pelo renascimento comercial e urbano. Entre os fatores desse processo, destaca-se:",
+          "alternativas": [
+            "Fechamento total das rotas comerciais",
+            "Cruzadas, excedente agrícola, inovações técnicas e crescimento populacional",
+            "Declínio absoluto da agricultura europeia",
+            "Ausência de qualquer inovação tecnológica",
+            "Despovoamento completo das cidades"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Renascimento comercial: Cruzadas reabriram Mediterrâneo; excedente agrícola (inovações: arado de ferro, moinho d'água, rotação trienal); crescimento populacional; feiras (Champagne); rotas terrestres e marítimas; cidades italianas (Veneza, Gênova) dominavam comércio oriental. Moeda voltou a circular."
+        },
+        {
+          "id": "q2",
+          "enunciado": "O crescimento urbano acompanhou a expansão comercial. Sobre esse processo de urbanização, é correto afirmar que:",
+          "alternativas": [
+            "Cidades permaneceram totalmente subordinadas aos senhores feudais",
+            "Burgos conquistaram autonomia (cartas de franquia); surgiram comunas",
+            "Não houve nenhum crescimento de cidades na Baixa Idade Média",
+            "Comércio continuou proibido nas áreas urbanas",
+            "Servos foram impedidos de migrar para cidades"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Burgos (cidades) cresceram em torno de feiras, portos, mosteiros. Burgueses (habitantes dos burgos, comerciantes) compraram ou conquistaram autonomia através de cartas de franquia. Comunas (cidades autônomas) elegiam representantes. Ditado: \"Os ares da cidade libertam\" - servo que vivesse um ano na cidade tornava-se livre."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A burguesia emergiu como nova classe social nas cidades medievais. Sobre esse grupo, é correto afirmar que:",
+          "alternativas": [
+            "Não tinha nenhuma importância econômica",
+            "Comerciantes e artesãos enriquecidos; desafiavam ordem feudal",
+            "Permaneceu eternamente subordinada à nobreza feudal",
+            "Não acumulou nenhum tipo de riqueza ou poder",
+            "Era idêntica à nobreza tradicional em valores"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Burguesia (do francês bourg = cidade): comerciantes, banqueiros, artesãos enriquecidos. Acumulava capital através de comércio, empréstimos (bancos italianos). Não se encaixava na ordem feudal tripartite. Buscava autonomia política, desafiava poder feudal. Aliou-se a reis contra nobres. Seria classe revolucionária na Modernidade."
+        },
+        {
+          "id": "q4",
+          "enunciado": "As corporações de ofício regulavam a produção artesanal nas cidades. Sobre essas organizações, é correto afirmar que:",
+          "alternativas": [
+            "Permitiam total liberdade de produção e concorrência",
+            "Controlavam qualidade, preços, formação (mestre-oficial-aprendiz) e entrada no ofício",
+            "Não estabeleciam nenhuma regra para produção",
+            "Eram contrárias à organização dos trabalhadores",
+            "Não tinham nenhuma influência sobre o trabalho urbano"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Corporações de ofício (guildas): associações de artesãos do mesmo ofício (ferreiros, sapateiros, tecelões). Controlavam: qualidade dos produtos, preços, técnicas, entrada na profissão (aprendiz → oficial → mestre - via obra-prima). Limitavam concorrência, protegiam membros. Eram oligárquicas e conservadoras."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Baixa Idade Média viu o fortalecimento das monarquias nacionais. Sobre esse processo, é correto afirmar que:",
+          "alternativas": [
+            "Reis perderam todo o poder para a nobreza feudal",
+            "Reis centralizaram poder aliando-se à burguesia contra nobres feudais",
+            "Feudalismo fortaleceu-se absolutamente no período",
+            "Não houve nenhuma mudança nas estruturas políticas",
+            "Monarquias enfraqueceram totalmente na Baixa Idade Média"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Reis fortaleceram-se: aliaram-se à burguesia (que financiava exércitos reais via impostos), criaram burocracia, centralizaram justiça, submeteram nobres feudais, unificaram moeda e leis. Formaram-se monarquias nacionais (França, Inglaterra, Espanha, Portugal). Processo levaria ao absolutismo na Idade Moderna."
+        }
+      ]
+    },
+    {
+      "id": "mod5-crise-baixa-idade-media",
+      "titulo": "Crise da Baixa Idade Média e Transição",
+      "topicos": [
+        "Peste Negra (1347-1353)",
+        "Guerra dos Cem Anos",
+        "Revoltas camponesas e urbanas",
+        "Crise do feudalismo",
+        "Transição para Idade Moderna"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Peste Negra (1347-1353) foi a maior pandemia da Idade Média. Sobre suas consequências, é correto afirmar que:",
+          "alternativas": [
+            "Não teve nenhum impacto sobre a população europeia",
+            "Matou cerca de 1/3 da população europeia; crise demográfica, econômica e social",
+            "Fortaleceu absolutamente o sistema feudal",
+            "Beneficiou economicamente toda a população",
+            "Não provocou nenhuma mudança nas estruturas sociais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Peste Negra (bubônica, vinda da Ásia por rotas comerciais) matou 25-30 milhões (1/3 da Europa). Consequências: crise demográfica, falta de mão de obra, aumento de salários camponeses, enfraquecimento de senhores feudais, revoltas, trauma coletivo, perseguição a judeus (bodes expiatórios). Acelerou crise do feudalismo."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Guerra dos Cem Anos (1337-1453) opôs França e Inglaterra. Sobre esse conflito, é correto afirmar que:",
+          "alternativas": [
+            "Durou exatamente cem anos de batalhas ininterruptas",
+            "Conflito dinástico e territorial; vitória francesa; fortaleceu monarquias nacionais",
+            "Não teve nenhuma consequência política para os reinos",
+            "Inglaterra conquistou permanentemente território francês",
+            "Enfraqueceu totalmente as monarquias envolvidas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Guerra (1337-1453, com interrupções) teve causas: disputa sucessória ao trono francês, territórios ingleses na França (Aquitânia), controle de Flandres. Joana d'Arc liderou resistência francesa. França venceu, expulsando ingleses. Consequências: fortalecimento de sentimentos nacionais e monarquias centralizadas; inovações militares (arco longo inglês, artilharia)."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O século XIV foi marcado por diversas revoltas populares. Sobre esses movimentos, é correto afirmar que:",
+          "alternativas": [
+            "Não houve nenhuma revolta popular no período",
+            "Jacquerie (França), revolta de Wat Tyler (Inglaterra) - camponeses contra opressão",
+            "Todas as revoltas foram vitoriosas permanentemente",
+            "Senhores feudais apoiaram os movimentos camponeses",
+            "Revoltas fortaleceram o sistema feudal tradicional"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Revoltas expressavam crise feudal: Jacquerie (França, 1358), Revolta de Wat Tyler (Inglaterra, 1381), Ciompi (Florença, 1378). Causas: fome, peste, impostos, opressão senhorial. Foram violentamente reprimidas, mas evidenciaram desgaste do feudalismo e demandas por mudanças sociais."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A crise do século XIV acelerou a desintegração do feudalismo. Entre os fatores dessa crise, destaca-se:",
+          "alternativas": [
+            "O fortalecimento absoluto da servidão",
+            "Peste, guerras, revoltas, economia monetária, centralização monárquica",
+            "A ausência de qualquer mudança nas estruturas feudais",
+            "O crescimento ilimitado da população rural",
+            "A prosperidade absoluta da agricultura feudal"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Crise do feudalismo: Peste Negra (despovoamento), guerras (destruição), revoltas (contestação), desenvolvimento de economia monetária (substituindo trocas feudais), crescimento urbano-comercial, centralização monárquica (enfraquecendo nobres), comutação de obrigações (dinheiro substituindo trabalho servil). Sistema feudal tornava-se obsoleto."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A transição da Idade Média para a Modernidade foi processo complexo. Sobre essa passagem, é correto afirmar que:",
+          "alternativas": [
+            "Ocorreu ruptura total e súbita entre períodos",
+            "Transição gradual: permanências e mudanças; Renascimento, Reformas, Expansão Marítima",
+            "Não houve nenhuma mudança entre Idade Média e Modernidade",
+            "Idade Média terminou abruptamente em data precisa",
+            "Modernidade rejeitou completamente toda herança medieval"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Transição (séculos XV-XVI) foi gradual, com continuidades e rupturas: permaneceram monarquias, Igreja, desigualdades; mudanças: Renascimento Cultural, Reformas Religiosas, Grandes Navegações, imprensa, centralização estatal, capitalismo mercantil. Não há data precisa de ruptura - historiadores marcam simbolicamente em 1453 (queda de Constantinopla) ou 1492 (chegada de Colombo à América)."
+        }
+      ]
+    }
+  ]
+}

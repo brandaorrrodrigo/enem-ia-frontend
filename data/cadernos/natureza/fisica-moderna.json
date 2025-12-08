@@ -1,0 +1,327 @@
+{
+  "id": "fisica-moderna",
+  "titulo": "Fisica Moderna",
+  "descricao": "Efeito fotoeletrico, modelo atomico, energia nuclear e relatividade",
+  "icone": "⚛️",
+  "cor": "from-indigo-500 to-purple-500",
+  "nivel": "Avancado",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Efeito Fotoeletrico",
+      "resumo": "O efeito fotoeletrico e a emissao de eletrons de uma superficie metalica quando iluminada por luz de frequencia adequada. Einstein explicou que a luz se comporta como particulas (fotons) com energia proporcional a frequencia. Este fenomeno comprovou a natureza quantica da luz e rendeu o Nobel a Einstein em 1921.",
+      "topicos": [
+        "Luz arranca eletrons do metal se f > f_minima (frequencia de corte)",
+        "Energia do foton: E = h × f (h = constante de Planck)",
+        "Abaixo da frequencia de corte, nenhum eletron e ejetado (mesmo luz intensa)",
+        "Energia cinetica do eletron: E_cin = h×f - W (W = funcao trabalho)"
+      ],
+      "exemplos": [
+        "Celulas fotovoltaicas convertendo luz solar em eletricidade",
+        "Sensores de porta automatica detectando interrupcao de luz",
+        "Iluminacao UV ejeta eletrons, luz vermelha nao (mesmo intensa)"
+      ],
+      "formula": "E = h × f e E_cin = h×f - W",
+      "dicas": [
+        "Frequencia determina SE havera emissao; intensidade determina QUANTOS eletrons",
+        "h = 6,63 × 10⁻³⁴ J·s (constante de Planck)",
+        "Maior frequencia (UV) ejeta eletrons com mais energia que menor (visivel)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Luz vermelha muito intensa incide sobre um metal, mas nenhum eletron e ejetado. Luz azul fraca ejeta eletrons. Como explicar?",
+          "alternativas": {
+            "A": "Luz vermelha e absorvida pelo metal",
+            "B": "Frequencia da luz azul e maior que a de corte, vermelha e menor",
+            "C": "Intensidade da luz azul e maior",
+            "D": "Luz azul tem maior velocidade",
+            "E": "Metal so reflete luz vermelha"
+          },
+          "correta": "B",
+          "explicacao": "No efeito fotoeletrico, a frequencia (nao intensidade) determina se eletrons sao ejetados. Azul tem maior frequencia que vermelho. Se azul ejeta e vermelho nao, a frequencia de corte esta entre elas."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Um foton de luz tem frequencia de 6 × 10¹⁴ Hz. Qual sua energia? (h = 6 × 10⁻³⁴ J·s)",
+          "alternativas": {
+            "A": "3,6 × 10⁻¹⁹ J",
+            "B": "1,0 × 10⁻¹⁹ J",
+            "C": "1,0 × 10⁻²⁰ J",
+            "D": "3,6 × 10⁻⁴⁸ J",
+            "E": "1,0 × 10⁴⁸ J"
+          },
+          "correta": "A",
+          "explicacao": "E = h × f = (6 × 10⁻³⁴) × (6 × 10¹⁴) = 36 × 10⁻²⁰ = 3,6 × 10⁻¹⁹ J."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Qual foi a importancia da explicacao de Einstein para o efeito fotoeletrico?",
+          "alternativas": {
+            "A": "Provou que luz e apenas onda",
+            "B": "Demonstrou a natureza quantica (corpuscular) da luz",
+            "C": "Mostrou que eletrons sao ondas",
+            "D": "Comprovou a teoria da relatividade",
+            "E": "Explicou a estrutura do atomo"
+          },
+          "correta": "B",
+          "explicacao": "Einstein propus que luz e composta de particulas (fotons) com energia quantizada E = h×f, explicando por que frequencia (nao intensidade) determina emissao. Isso comprovou a dualidade onda-particula da luz."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Modelo Atomico de Bohr",
+      "resumo": "Niels Bohr propus em 1913 um modelo atomico onde eletrons orbitam o nucleo em niveis de energia quantizados. Eletrons podem saltar entre niveis absorvendo ou emitindo fotons com energia exata igual a diferenca entre niveis. Este modelo explicou o espectro de emissao do hidrogenio.",
+      "topicos": [
+        "Eletrons em orbitas circulares com energias definidas (quantizadas)",
+        "Eletron nao irradia energia enquanto permanece na mesma orbita",
+        "Transicoes entre niveis: absorve foton (sobe) ou emite foton (desce)",
+        "Energia do foton: E = E_final - E_inicial = h × f"
+      ],
+      "exemplos": [
+        "Luz neon vermelha: eletrons retornando a niveis inferiores emitem fotons vermelhos",
+        "Lampadas fluorescentes: eletrons excitados emitem UV que vira luz visivel",
+        "Espectro de hidrogenio: linhas coloridas especificas (serie de Balmer)"
+      ],
+      "formula": "ΔE = h × f (energia da transicao)",
+      "dicas": [
+        "Nivel mais baixo (n=1) e estado fundamental; superiores sao excitados",
+        "Cada elemento tem espectro unico (impressao digital)",
+        "Transicao maior (ex: n=4 para n=1) emite foton mais energetico (UV)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Um eletron salta do nivel n=3 para n=1 em um atomo. O que acontece?",
+          "alternativas": {
+            "A": "Eletron absorve energia do meio",
+            "B": "Eletron emite um foton de energia E₃ - E₁",
+            "C": "Eletron e ejetado do atomo",
+            "D": "Atomo se ioniza",
+            "E": "Nada acontece pois transicao e proibida"
+          },
+          "correta": "B",
+          "explicacao": "Eletron descendo de nivel mais alto para mais baixo perde energia, emitindo um foton com energia exatamente igual a diferenca E₃ - E₁."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que cada elemento quimico produz um espectro de linhas unico?",
+          "alternativas": {
+            "A": "Porque cada elemento tem cor diferente",
+            "B": "Porque niveis de energia sao especificos de cada elemento",
+            "C": "Porque numero de eletrons determina a cor",
+            "D": "Porque atomos maiores brilham mais",
+            "E": "Porque temperatura altera o espectro"
+          },
+          "correta": "B",
+          "explicacao": "Cada elemento tem configuracao eletronica e niveis de energia unicos. As transicoes entre estes niveis produzem fotons de energias especificas, criando um espectro caracteristico como uma impressao digital."
+        },
+        {
+          "id": "q3",
+          "enunciado": "No modelo de Bohr, o que significa um eletron estar no estado fundamental?",
+          "alternativas": {
+            "A": "Eletron esta em velocidade maxima",
+            "B": "Eletron esta no nivel de menor energia (n=1)",
+            "C": "Eletron esta prestes a ser ejetado",
+            "D": "Eletron esta parado no nucleo",
+            "E": "Eletron esta no nivel mais externo"
+          },
+          "correta": "B",
+          "explicacao": "Estado fundamental e o nivel de menor energia (n=1), onde o eletron tende a permanecer naturalmente. Niveis superiores sao estados excitados, atingidos quando o atomo absorve energia."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Fissao Nuclear",
+      "resumo": "Fissao nuclear e a divisao de um nucleo atomico pesado (como uranio-235) em nucleos menores, liberando energia e neutrons. Os neutrons podem causar novas fissoes, criando reacao em cadeia. E o principio das usinas nucleares e bombas atomicas. A energia liberada vem da conversao de massa em energia (E=mc²).",
+      "topicos": [
+        "Nucleo pesado (U-235, Pu-239) absorve neutron e se divide",
+        "Libera 2-3 neutrons, energia e radiacao",
+        "Reacao em cadeia: neutrons causam novas fissoes",
+        "Massa dos produtos < massa inicial (diferenca vira energia)"
+      ],
+      "exemplos": [
+        "Usina nuclear de Angra dos Reis gerando eletricidade",
+        "Bomba atomica de Hiroshima (reacao em cadeia descontrolada)",
+        "Reatores nucleares com barras de controle moderando reacao"
+      ],
+      "formula": "E = Δm × c² (massa perdida vira energia)",
+      "dicas": [
+        "Fissao divide nucleo pesado em nucleos medios + energia",
+        "Controle da reacao: barras de cadmio absorvem neutrons excedentes",
+        "1 kg de U-235 libera energia equivalente a milhoes de kg de carvao"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Como as barras de controle regulam a potencia de um reator nuclear?",
+          "alternativas": {
+            "A": "Aquecendo o uranio para aumentar fissoes",
+            "B": "Absorvendo neutrons para controlar velocidade da reacao em cadeia",
+            "C": "Adicionando mais uranio ao reator",
+            "D": "Esfriando o nucleo do reator",
+            "E": "Gerando campo magnetico que bloqueia neutrons"
+          },
+          "correta": "B",
+          "explicacao": "Barras de controle (geralmente de cadmio ou boro) absorvem neutrons. Inserindo-as mais no reator, menos neutrons disponiveis para causar fissoes, diminuindo a reacao. Retirando-as, reacao acelera."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que a fissao nuclear libera tanta energia?",
+          "alternativas": {
+            "A": "Porque uranio e muito quente",
+            "B": "Porque massa e convertida em energia segundo E=mc²",
+            "C": "Porque quebrar atomos gera calor por atrito",
+            "D": "Porque eletrons sao acelerados a alta velocidade",
+            "E": "Porque reacao e exotermica como queima de gasolina"
+          },
+          "correta": "B",
+          "explicacao": "A massa total dos produtos da fissao e ligeiramente menor que a massa inicial. Esta diferenca de massa (Δm) e convertida em energia segundo E=mc². Como c² e enorme, pequena massa vira muita energia."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Qual e a diferenca entre reacao em cadeia controlada e descontrolada?",
+          "alternativas": {
+            "A": "Controlada usa uranio, descontrolada usa plutonio",
+            "B": "Controlada ocorre em usinas (energia gradual), descontrolada em bombas (explosao)",
+            "C": "Controlada e mais quente que descontrolada",
+            "D": "Descontrolada produz menos energia",
+            "E": "Nao ha diferenca, ambas sao identicas"
+          },
+          "correta": "B",
+          "explicacao": "Em usinas, a reacao e controlada por barras que absorvem neutrons, liberando energia gradualmente para gerar eletricidade. Em bombas, a reacao e descontrolada, multiplicando-se explosivamente em fracoes de segundo."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Fusao Nuclear",
+      "resumo": "Fusao nuclear e a uniao de nucleos atomicos leves (como hidrogenio) formando nucleos mais pesados (como helio), liberando energia. Requer temperaturas extremas (milhoes de graus) para vencer repulsao eletrica. E a fonte de energia do Sol e estrelas. Mais energetica e limpa que fissao, mas dificil de controlar na Terra.",
+      "topicos": [
+        "Uniao de nucleos leves (H, He) forma nucleos mais pesados",
+        "Requer altissima temperatura (plasma) para vencer repulsao eletrica",
+        "Libera mais energia que fissao por massa de combustivel",
+        "Fonte de energia de estrelas incluindo o Sol"
+      ],
+      "exemplos": [
+        "Sol: fusao de hidrogenio em helio a 15 milhoes de graus Celsius",
+        "Bomba de hidrogenio (bomba H) usa fusao descontrolada",
+        "Projeto ITER tentando fusao controlada para energia limpa"
+      ],
+      "formula": "4 ¹H → ⁴He + energia (simplificado)",
+      "dicas": [
+        "Fusao une nucleos leves; fissao divide nucleos pesados",
+        "Fusao e mais limpa (menos residuos radioativos que fissao)",
+        "Confinamento magnetico (tokamak) tenta controlar plasma quente"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Por que a fusao nuclear e tao dificil de realizar de forma controlada na Terra?",
+          "alternativas": {
+            "A": "Porque nao existe hidrogenio suficiente",
+            "B": "Porque requer temperaturas extremas (milhoes de graus) para vencer repulsao entre nucleos",
+            "C": "Porque e menos energetica que outras fontes",
+            "D": "Porque produz muita radiacao perigosa",
+            "E": "Porque viola leis da fisica"
+          },
+          "correta": "B",
+          "explicacao": "Nucleos atomicos tem carga positiva e se repelem eletricamente. Para fundi-los, e necessario vence-los com altissimas temperaturas (plasma a milhoes de graus), dificeis de criar e confinar na Terra."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Qual e a principal fonte de energia do Sol?",
+          "alternativas": {
+            "A": "Combustao de hidrogenio com oxigenio",
+            "B": "Fissao de uranio no nucleo solar",
+            "C": "Fusao nuclear de hidrogenio em helio",
+            "D": "Energia gravitacional da contracao",
+            "E": "Aquecimento por atrito entre camadas"
+          },
+          "correta": "C",
+          "explicacao": "O Sol gera energia pela fusao nuclear, convertendo hidrogenio em helio em seu nucleo a ~15 milhoes °C. Este processo converte massa em energia (E=mc²), mantendo o Sol brilhando ha bilhoes de anos."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Qual vantagem a fusao nuclear teria sobre a fissao para geracao de energia?",
+          "alternativas": {
+            "A": "Fusao e mais facil de controlar",
+            "B": "Fusao usa combustivel abundante (hidrogenio) e gera menos residuos radioativos",
+            "C": "Fusao funciona a temperatura ambiente",
+            "D": "Fusao nao libera radiacao",
+            "E": "Fusao ja e amplamente usada em usinas"
+          },
+          "correta": "B",
+          "explicacao": "Fusao usaria deuterio (abundante na agua do mar) como combustivel e produziria muito menos residuos radioativos de longa duracao que fissao. Porem, ainda nao foi dominada tecnologicamente para uso comercial."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Relatividade Basica (E=mc²)",
+      "resumo": "Einstein demonstrou que massa e energia sao equivalentes e intercambiaveis, relacionadas pela equacao E=mc². Pequenas quantidades de massa podem se converter em enormes quantidades de energia. Esta relacao explica a energia nuclear e mostra que massa aumenta com velocidade, tendo limite c (velocidade da luz).",
+      "topicos": [
+        "Equivalencia massa-energia: E = m × c²",
+        "Pequena massa vira muita energia (c² e gigantesco)",
+        "Massa aumenta com velocidade (significativo perto de c)",
+        "Nenhum objeto com massa pode atingir velocidade da luz"
+      ],
+      "exemplos": [
+        "Bomba atomica: ~1 kg uranio libera energia de 20.000 toneladas TNT",
+        "Aniquilacao materia-antimateria converte 100% massa em energia",
+        "Aceleradores de particulas: protons ficam \"mais pesados\" ao acelerar"
+      ],
+      "formula": "E = m × c² (c = 3 × 10⁸ m/s)",
+      "dicas": [
+        "c² = 9 × 10¹⁶ m²/s² (numero enorme)",
+        "1 kg de massa equivale a ~90.000.000.000.000.000 J",
+        "Reacoes nucleares convertem ~0,1% da massa; aniquilacao converte 100%"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Se 0,001 kg de massa fosse completamente convertida em energia, quanta energia seria liberada? (c = 3 × 10⁸ m/s)",
+          "alternativas": {
+            "A": "3 × 10⁵ J",
+            "B": "9 × 10⁸ J",
+            "C": "3 × 10¹¹ J",
+            "D": "9 × 10¹³ J",
+            "E": "9 × 10¹⁶ J"
+          },
+          "correta": "D",
+          "explicacao": "E = m × c² = 0,001 × (3 × 10⁸)² = 0,001 × 9 × 10¹⁶ = 9 × 10¹³ J. Energia suficiente para abastecer uma cidade por horas."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Por que nenhum objeto com massa pode atingir a velocidade da luz?",
+          "alternativas": {
+            "A": "Porque nao existe motor potente o suficiente",
+            "B": "Porque massa aumenta com velocidade, tendendo ao infinito em c",
+            "C": "Porque o atrito do espaco impede",
+            "D": "Porque violaria a conservacao de energia",
+            "E": "Porque tempo congela na velocidade da luz"
+          },
+          "correta": "B",
+          "explicacao": "Segundo relatividade, massa aumenta com velocidade. Ao aproximar-se de c, massa tende ao infinito, exigindo energia infinita para acelerar mais. Apenas particulas sem massa (fotons) viajam a c."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O que a equacao E=mc² revela sobre a relacao entre massa e energia?",
+          "alternativas": {
+            "A": "Massa e energia sao grandezas totalmente independentes",
+            "B": "Massa pode ser convertida em energia e vice-versa (equivalentes)",
+            "C": "Energia sempre tem mais massa que materia",
+            "D": "Somente energia pode ser medida, massa e ilusoria",
+            "E": "Massa e energia se cancelam mutuamente"
+          },
+          "correta": "B",
+          "explicacao": "E=mc² mostra que massa e energia sao duas formas da mesma coisa. Massa pode ser convertida em energia (fissao, fusao) e energia pode criar massa (criacao de pares particula-antiparticula)."
+        }
+      ]
+    }
+  ]
+}

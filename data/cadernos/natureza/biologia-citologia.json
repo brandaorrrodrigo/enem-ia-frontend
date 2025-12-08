@@ -1,0 +1,282 @@
+{
+  "id": "biologia-citologia",
+  "titulo": "Citologia",
+  "descricao": "Estrutura e funcionamento celular",
+  "icone": "🔬",
+  "cor": "from-green-500 to-lime-500",
+  "nivel": "Basico",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Membrana Plasmatica",
+      "resumo": "A membrana plasmatica e uma estrutura lipoproteica que delimita a celula, controlando a entrada e saida de substancias. Formada por fosfolipidios e proteinas, segue o modelo do mosaico fluido.",
+      "topicos": [
+        "Modelo mosaico fluido",
+        "Transporte passivo: difusao e osmose",
+        "Transporte ativo: bomba de sodio e potassio",
+        "Endocitose e exocitose",
+        "Especializacoes de membrana"
+      ],
+      "exemplos": [
+        "Difusao: passagem de O2 dos pulmoes para o sangue",
+        "Osmose: absorcao de agua pelas raizes das plantas",
+        "Transporte ativo: reabsorcao de glicose nos rins",
+        "Fagocitose: leucocitos englobando bacterias",
+        "Microvilosidades: celulas intestinais aumentando absorcao"
+      ],
+      "dicas": [
+        "Difusao: do mais concentrado para o menos concentrado (a favor do gradiente)",
+        "Osmose: movimento de agua, sempre do meio hipotonico para o hipertonico",
+        "Transporte ativo gasta ATP e vai contra o gradiente de concentracao",
+        "Endocitose: entrada de material (fagocitose e pinocitose)",
+        "Exocitose: saida de material por vesiculas"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O modelo mosaico fluido, proposto por Singer e Nicolson, descreve a membrana plasmatica como uma estrutura dinamica. Qual componente da membrana e responsavel pelo reconhecimento celular?",
+          "alternativas": [
+            "Fosfolipidios",
+            "Colesterol",
+            "Glicoproteinas",
+            "Proteinas transportadoras",
+            "Acidos graxos"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "As glicoproteinas (proteinas + carboidratos) atuam no reconhecimento celular, sendo fundamentais para o sistema imunologico identificar celulas proprias e estranhas."
+        },
+        {
+          "id": "q2",
+          "enunciado": "Uma celula vegetal foi colocada em solucao hipertonica. O que deve ocorrer?",
+          "alternativas": [
+            "Turgescencia celular",
+            "Plasmolise",
+            "Lise celular",
+            "Deplasmolise",
+            "Nenhuma alteracao"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Em solucao hipertonica, a celula vegetal perde agua por osmose, ocorrendo plasmolise (retracao do citoplasma). A parede celular impede a lise."
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Citoplasma e Organelas",
+      "resumo": "O citoplasma contem diversas organelas membranosas com funcoes especificas. Reticulo endoplasmatico, complexo golgiense, mitocondrias e cloroplastos sao essenciais para o metabolismo celular.",
+      "topicos": [
+        "Reticulo endoplasmatico rugoso e liso",
+        "Complexo de Golgi: secrecao",
+        "Mitocondrias: respiracao celular",
+        "Cloroplastos: fotossintese",
+        "Lisossomos e peroxissomos"
+      ],
+      "exemplos": [
+        "RE rugoso: sintese de insulina no pancreas",
+        "RE liso: detoxificacao hepatica de alcool",
+        "Golgi: formacao do acrossomo no espermatozoide",
+        "Mitocondrias: producao de ATP nos musculos",
+        "Lisossomos: digestao intracelular por fagocitos"
+      ],
+      "dicas": [
+        "RE rugoso tem ribossomos (sintese proteica)",
+        "RE liso: lipidios e detoxificacao",
+        "Golgi: modificacao e empacotamento de proteinas",
+        "Mitocondrias e cloroplastos tem DNA proprio (origem endossimbiotica)",
+        "Lisossomos contem enzimas digestivas (pH acido)"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Uma celula com intensa atividade de sintese proteica para exportacao deve apresentar grande quantidade de qual organela?",
+          "alternativas": [
+            "Mitocondrias",
+            "Reticulo endoplasmatico liso",
+            "Reticulo endoplasmatico rugoso",
+            "Peroxissomos",
+            "Centrossomos"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O reticulo endoplasmatico rugoso (RER) possui ribossomos aderidos e e responsavel pela sintese de proteinas destinadas a exportacao."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A teoria endossimbiotica explica a origem de mitocondrias e cloroplastos. Qual evidencia sustenta essa teoria?",
+          "alternativas": [
+            "Ausencia de membrana nestas organelas",
+            "Presenca de DNA circular proprio",
+            "Dependencia total do nucleo celular",
+            "Ausencia de ribossomos",
+            "Reproducao por gemulacao"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Mitocondrias e cloroplastos possuem DNA circular proprio (similar ao bacteriano), membrana dupla e ribossomos, evidenciando origem endossimbiotica."
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Nucleo e Material Genetico",
+      "resumo": "O nucleo e a estrutura que abriga o material genetico (DNA). Contem cromossomos, nucleolo e e envolvido por carioteca. Controla as atividades celulares atraves da expressao genica.",
+      "topicos": [
+        "Carioteca e poros nucleares",
+        "Cromatina e cromossomos",
+        "Nucleolo: sintese de ribossomos",
+        "DNA e RNA nuclear",
+        "Divisao celular: mitose e meiose"
+      ],
+      "exemplos": [
+        "Carioteca: permite passagem seletiva de RNA mensageiro",
+        "Cromatina condensada: cromossomos na divisao celular",
+        "Nucleolo: producao de RNA ribossomico",
+        "Mitose: renovacao de celulas da pele",
+        "Meiose: formacao de gametas"
+      ],
+      "dicas": [
+        "Carioteca: dupla membrana com poros",
+        "Cromatina descondensada: celula em interfase (ativa)",
+        "Nucleolo: maior em celulas com intensa sintese proteica",
+        "Mitose: 2 celulas identicas (2n)",
+        "Meiose: 4 celulas diferentes (n)"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Durante a interfase do ciclo celular, o DNA esta na forma de cromatina descondensada. Qual a vantagem dessa configuracao?",
+          "alternativas": [
+            "Facilita a divisao celular",
+            "Permite a transcricao genica",
+            "Impede mutacoes",
+            "Aumenta a rigidez nuclear",
+            "Reduz o tamanho do nucleo"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A cromatina descondensada permite que enzimas acessem o DNA para realizar transcricao (sintese de RNA), essencial para expressao genica."
+        },
+        {
+          "id": "q6",
+          "enunciado": "Qual a principal diferenca entre mitose e meiose em relacao ao numero de divisoes e celulas resultantes?",
+          "alternativas": [
+            "Mitose: 2 divisoes, 4 celulas; Meiose: 1 divisao, 2 celulas",
+            "Mitose: 1 divisao, 2 celulas; Meiose: 2 divisoes, 4 celulas",
+            "Mitose: 1 divisao, 4 celulas; Meiose: 2 divisoes, 2 celulas",
+            "Ambas: 1 divisao, 2 celulas",
+            "Ambas: 2 divisoes, 4 celulas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Mitose tem 1 divisao gerando 2 celulas identicas (2n). Meiose tem 2 divisoes gerando 4 celulas diferentes com metade dos cromossomos (n)."
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Divisao Celular: Mitose",
+      "resumo": "A mitose e um processo de divisao celular que gera duas celulas-filhas identicas a celula-mae. E fundamental para crescimento, regeneracao e reproducao assexuada. Possui fases: profase, metafase, anafase e telofase.",
+      "topicos": [
+        "Interfase: G1, S, G2",
+        "Profase: condensacao cromossomica",
+        "Metafase: cromossomos no equador",
+        "Anafase: separacao das cromatides",
+        "Telofase e citocinese"
+      ],
+      "exemplos": [
+        "Interfase: celula duplica DNA (fase S)",
+        "Profase: cromossomos ficam visiveis ao microscopio",
+        "Metafase: cromossomos alinhados (melhor momento para cariotipar)",
+        "Anafase: cromatides-irmas migram para polos opostos",
+        "Citocinese: divisao do citoplasma (centrípeta em animais)"
+      ],
+      "dicas": [
+        "Interfase: fase mais longa do ciclo celular",
+        "Fase S: duplicacao do DNA (2n -> 2n com 4c)",
+        "Profase: fragmented da carioteca, formacao do fuso",
+        "Metafase: cromossomos na placa equatorial (checagem)",
+        "Anafase: separacao, 'A' de Afastar"
+      ],
+      "questoes": [
+        {
+          "id": "q7",
+          "enunciado": "Em qual fase da mitose os cromossomos estao alinhados na regiao equatorial da celula, ligados as fibras do fuso mitotico?",
+          "alternativas": [
+            "Profase",
+            "Metafase",
+            "Anafase",
+            "Telofase",
+            "Interfase"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Na metafase, os cromossomos atingem maxima condensacao e se alinham na placa equatorial, presos ao fuso pelos cinetocoros. E o melhor momento para visualizar cromossomos."
+        },
+        {
+          "id": "q8",
+          "enunciado": "A colchicina e uma substancia que impede a formacao do fuso mitotico. Qual fase da mitose seria diretamente afetada?",
+          "alternativas": [
+            "Interfase",
+            "Profase inicial",
+            "Metafase e anafase",
+            "Telofase",
+            "Citocinese"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Sem fuso mitotico, os cromossomos nao conseguem se alinhar (metafase) nem se separar (anafase). A colchicina e usada para parar celulas em metafase para estudos."
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Metabolismo Energetico",
+      "resumo": "O metabolismo celular envolve respiracao celular (producao de ATP) e fotossintese (em plantas). A respiracao ocorre em mitocondrias, enquanto a fotossintese ocorre em cloroplastos.",
+      "topicos": [
+        "Respiracao aerobica: glicolise, ciclo de Krebs, cadeia respiratoria",
+        "Fermentacao: latica e alcoolica",
+        "Fotossintese: fase clara e escura",
+        "Quimiossintese em bacterias",
+        "Balanco energetico: ATP"
+      ],
+      "exemplos": [
+        "Respiracao aerobica: 38 ATP por glicose (completa)",
+        "Fermentacao latica: musculos em exercicio intenso",
+        "Fermentacao alcoolica: producao de pao e cerveja",
+        "Fotossintese: plantas convertem luz em glicose",
+        "Quimiossintese: bacterias nitrosomonas no solo"
+      ],
+      "dicas": [
+        "Respiracao aerobica: C6H12O6 + O2 -> CO2 + H2O + 38 ATP",
+        "Glicolise: no citoplasma, saldo 2 ATP",
+        "Krebs e cadeia: na mitocondria, 36 ATP",
+        "Fermentacao: ausencia de O2, apenas 2 ATP",
+        "Fotossintese: fase clara (ATP) e escura (glicose)"
+      ],
+      "questoes": [
+        {
+          "id": "q9",
+          "enunciado": "Durante exercicio fisico intenso, os musculos podem realizar fermentacao latica. Qual a consequencia desse processo?",
+          "alternativas": [
+            "Producao de 38 ATP por glicose",
+            "Acumulo de acido latico e fadiga muscular",
+            "Consumo de oxigenio elevado",
+            "Aumento da producao de CO2",
+            "Sintese de etanol"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Na fermentacao latica, a producao de ATP e baixa (2 ATP) e ha acumulo de acido latico, causando fadiga muscular. Ocorre quando o O2 e insuficiente."
+        },
+        {
+          "id": "q10",
+          "enunciado": "Qual a principal diferenca entre a fase clara e a fase escura da fotossintese?",
+          "alternativas": [
+            "Fase clara ocorre a noite, fase escura de dia",
+            "Fase clara produz ATP e NADPH, fase escura produz glicose",
+            "Fase clara consome CO2, fase escura consome H2O",
+            "Fase clara ocorre no estroma, fase escura no tilacoide",
+            "Ambas produzem O2"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A fase clara (fotoquimica) ocorre nos tilacoides e produz ATP e NADPH usando luz. A fase escura (quimica - Ciclo de Calvin) ocorre no estroma e usa ATP/NADPH para produzir glicose a partir de CO2."
+        }
+      ]
+    }
+  ]
+}

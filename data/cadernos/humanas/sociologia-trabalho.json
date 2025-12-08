@@ -1,0 +1,207 @@
+{
+  "id": "sociologia-trabalho",
+  "titulo": "Trabalho e Sociedade",
+  "descricao": "Transformacoes no mundo do trabalho, da producao artesanal ao trabalho digital",
+  "icone": "⚙️",
+  "cor": "from-yellow-500 to-orange-500",
+  "nivel": "Intermediario",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "O Trabalho na Historia",
+      "resumo": "Evolucao historica das formas de trabalho: da escravidao ao trabalho assalariado moderno.",
+      "topicos": [
+        "Trabalho na antiguidade: escravidao",
+        "Trabalho servil na Idade Media",
+        "Trabalho artesanal nas corporacoes",
+        "Trabalho assalariado no capitalismo",
+        "Concepcoes de trabalho"
+      ],
+      "exemplos": [
+        "Antiguidade: trabalho manual era desprezado",
+        "Feudalismo: servo preso a terra",
+        "Guildas: mestres, oficiais, aprendizes"
+      ],
+      "dicas": [
+        "Trabalho nem sempre foi assalariado",
+        "Cada epoca tem organizacao especifica",
+        "ENEM compara formas historicas de trabalho"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A principal diferenca entre o trabalho servil feudal e o trabalho assalariado capitalista e que:",
+          "alternativas": [
+            "No feudalismo o servo era livre para mudar de senhor",
+            "No capitalismo o trabalhador vende sua forca de trabalho por salario",
+            "No feudalismo havia plena liberdade de trabalho",
+            "No capitalismo o trabalhador e proprietario dos meios de producao",
+            "Nao ha diferencas entre as duas formas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Enquanto o servo feudal estava preso a terra e devia obrigacoes ao senhor, o trabalhador capitalista e juridicamente livre mas precisa vender sua forca de trabalho por salario, pois nao possui meios de producao.",
+          "dificuldade": "media",
+          "tags": ["trabalho", "feudalismo", "capitalismo"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Revolucao Industrial e Transformacoes",
+      "resumo": "A Revolucao Industrial transforma radicalmente as relacoes de trabalho, criando a classe operaria e novos modos de producao.",
+      "topicos": [
+        "Mecanizacao e fabrica",
+        "Divisao do trabalho",
+        "Proletariado e burguesia",
+        "Condicoes de trabalho no seculo XIX",
+        "Movimentos operarios"
+      ],
+      "exemplos": [
+        "Maquina a vapor substitui trabalho manual",
+        "Jornadas de 14-16 horas, sem direitos",
+        "Trabalho infantil nas fabricas"
+      ],
+      "dicas": [
+        "Revolucao Industrial cria o proletariado",
+        "Condicoes extremamente precarias inicialmente",
+        "Resistencia operaria conquistou direitos"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "A Revolucao Industrial provocou profundas transformacoes no trabalho, destacando-se:",
+          "alternativas": [
+            "O retorno ao trabalho artesanal",
+            "A mecanizacao, concentracao de trabalhadores em fabricas e divisao do trabalho",
+            "A eliminacao completa do trabalho humano",
+            "A melhoria imediata das condicoes de trabalho",
+            "O fim do capitalismo"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Revolucao Industrial introduziu a mecanizacao, concentrou trabalhadores em fabricas, intensificou a divisao do trabalho e criou novas relacoes de producao capitalistas, inicialmente com condicoes muito precarias.",
+          "dificuldade": "facil",
+          "tags": ["revolucao-industrial", "fabrica", "proletariado"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Taylorismo, Fordismo e Toyotismo",
+      "resumo": "Modelos de organizacao do trabalho industrial: do trabalho fragmentado ao trabalho flexivel.",
+      "topicos": [
+        "Taylorismo: administracao cientifica",
+        "Fordismo: linha de montagem e producao em massa",
+        "Toyotismo: flexibilizacao e qualidade total",
+        "Comparacao entre os modelos",
+        "Impactos sobre os trabalhadores"
+      ],
+      "exemplos": [
+        "Taylor: cronometrar e racionalizar movimentos",
+        "Ford: esteira rolante, carro popular (Model T)",
+        "Toyota: just-in-time, reducao de estoques"
+      ],
+      "dicas": [
+        "Taylor: eficiencia maxima; Ford: padronizacao; Toyota: flexibilidade",
+        "Cada modelo responde a contexto historico especifico",
+        "ENEM compara os tres sistemas"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "O fordismo caracteriza-se por:",
+          "alternativas": [
+            "Producao artesanal e personalizada",
+            "Producao em massa atraves de linha de montagem e padronizacao",
+            "Producao flexivel com alta customizacao",
+            "Ausencia de divisao do trabalho",
+            "Trabalho totalmente automatizado sem humanos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O fordismo baseia-se na producao em massa de produtos padronizados atraves da linha de montagem, com extrema divisao e especializacao do trabalho, visando reducao de custos e aumento de produtividade.",
+          "dificuldade": "facil",
+          "tags": ["fordismo", "linha-montagem", "producao-massa"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Trabalho Contemporaneo",
+      "resumo": "Transformacoes recentes: precarizacao, informalidade, uberizacao e trabalho digital.",
+      "topicos": [
+        "Flexibilizacao e precarizacao",
+        "Terceirizacao e informalidade",
+        "Uberizacao do trabalho",
+        "Trabalho digital e home office",
+        "Desemprego estrutural"
+      ],
+      "exemplos": [
+        "Uber, iFood: trabalhadores sem vinculos",
+        "Freelancers, PJs: flexibilidade mas inseguranca",
+        "Gig economy: trabalhos temporarios"
+      ],
+      "dicas": [
+        "Flexibilizacao traz inseguranca",
+        "Tecnologia muda natureza do trabalho",
+        "ENEM questiona novas formas de trabalho"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "A 'uberizacao' do trabalho refere-se a:",
+          "alternativas": [
+            "Melhoria generalizada das condicoes de trabalho",
+            "Modelo de trabalho mediado por plataformas digitais, geralmente sem vinculos trabalhistas",
+            "Retorno ao trabalho artesanal",
+            "Garantia total de direitos trabalhistas",
+            "Eliminacao do trabalho humano"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Uberizacao designa relacoes de trabalho mediadas por plataformas digitais (apps), caracterizadas pela flexibilidade mas tambem pela precarizacao, ausencia de vinculos e direitos trabalhistas tradicionais.",
+          "dificuldade": "facil",
+          "tags": ["uberizacao", "plataformas", "precarizacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Trabalho, Alienacao e Identidade",
+      "resumo": "A dimensao subjetiva do trabalho: alienacao, identidade profissional e sentido do trabalho.",
+      "topicos": [
+        "Alienacao do trabalho (Marx)",
+        "Trabalho e identidade social",
+        "Sentido e significado do trabalho",
+        "Sofrimento e prazer no trabalho",
+        "Trabalho e realizacao pessoal"
+      ],
+      "exemplos": [
+        "Trabalhador nao se reconhece no produto",
+        "Profissao como parte da identidade (sou medico, professor)",
+        "Burnout: esgotamento pelo trabalho"
+      ],
+      "dicas": [
+        "Alienacao: trabalhador distanciado do produto e processo",
+        "Trabalho estrutura identidades sociais",
+        "ENEM aborda dimensao subjetiva do trabalho"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "Para Marx, a alienacao do trabalho ocorre quando:",
+          "alternativas": [
+            "O trabalhador controla todo o processo produtivo",
+            "O trabalhador nao se reconhece no produto do seu trabalho nem controla o processo",
+            "O trabalho e fonte de realizacao pessoal",
+            "Ha perfeita harmonia entre trabalhador e empregador",
+            "O trabalhador e proprietario dos meios de producao"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A alienacao ocorre quando o trabalhador nao se reconhece no produto do seu trabalho, nao controla o processo produtivo, e o trabalho torna-se externo a ele, mero meio de sobrevivencia.",
+          "dificuldade": "media",
+          "tags": ["marx", "alienacao", "trabalho"]
+        }
+      ]
+    }
+  ]
+}

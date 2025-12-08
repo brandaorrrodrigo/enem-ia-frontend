@@ -1,0 +1,332 @@
+{
+  "id": "fisica-termologia",
+  "titulo": "Termologia e Calorimetria",
+  "descricao": "Estudo do calor, temperatura, escalas termometricas, dilatacao termica e calorimetria. Fundamental para compreender processos de transferencia de energia termica e mudancas de estado.",
+  "icone": "🌡️",
+  "cor": "from-orange-500 to-red-500",
+  "nivel": "Basico",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "Temperatura e Escalas Termometricas",
+      "resumo": "Temperatura mede o grau de agitacao das moleculas. Escalas principais: Celsius, Fahrenheit e Kelvin. Conversoes entre escalas sao frequentes no ENEM.",
+      "topicos": [
+        "Temperatura: medida da energia cinetica media das moleculas",
+        "Escala Celsius (°C): 0°C (fusao agua), 100°C (ebulicao agua) ao nivel do mar",
+        "Escala Fahrenheit (°F): 32°F (fusao agua), 212°F (ebulicao agua)",
+        "Escala Kelvin (K): escala absoluta, 0 K = zero absoluto (-273°C). Nao usa grau (°)",
+        "Conversoes: T_F = (9/5)T_C + 32; T_K = T_C + 273"
+      ],
+      "exemplos": [
+        "Converter 25°C para Fahrenheit: T_F = (9/5)×25 + 32 = 45 + 32 = 77°F",
+        "Converter 100°C para Kelvin: T_K = 100 + 273 = 373 K",
+        "Converter 68°F para Celsius: 68 = (9/5)T_C + 32 → T_C = 20°C"
+      ],
+      "formula": "T_F = 1,8⋅T_C + 32; T_K = T_C + 273",
+      "dicas": [
+        "Variacao: ΔT_K = ΔT_C (mesma variacao), mas ΔT_F = 1,8⋅ΔT_C",
+        "Zero absoluto (0 K = -273°C): menor temperatura possivel",
+        "No ENEM, atencao a contextos internacionais (°F comum em EUA)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Uma temperatura de 86°F corresponde a quantos graus Celsius?",
+          "alternativas": {
+            "A": "15°C",
+            "B": "20°C",
+            "C": "25°C",
+            "D": "30°C",
+            "E": "35°C"
+          },
+          "correta": "D",
+          "explicacao": "T_F = 1,8⋅T_C + 32 → 86 = 1,8⋅T_C + 32 → 54 = 1,8⋅T_C → T_C = 30°C"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Qual a temperatura de ebulicao da agua em Kelvin ao nivel do mar?",
+          "alternativas": {
+            "A": "0 K",
+            "B": "100 K",
+            "C": "273 K",
+            "D": "373 K",
+            "E": "473 K"
+          },
+          "correta": "D",
+          "explicacao": "Ebulicao da agua: 100°C. Conversao: T_K = 100 + 273 = 373 K"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Uma variacao de temperatura de 50°C corresponde a uma variacao de quantos Kelvin?",
+          "alternativas": {
+            "A": "0 K",
+            "B": "50 K",
+            "C": "223 K",
+            "D": "323 K",
+            "E": "373 K"
+          },
+          "correta": "B",
+          "explicacao": "Variacao de temperatura: ΔT_K = ΔT_C. Logo, ΔT = 50 K"
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Dilatacao Termica",
+      "resumo": "Materiais expandem quando aquecidos e contraem quando resfriados. Dilatacao pode ser linear, superficial ou volumetrica, dependendo das dimensoes consideradas.",
+      "topicos": [
+        "Dilatacao linear: ΔL = L₀⋅α⋅ΔT (apenas comprimento varia)",
+        "Dilatacao superficial: ΔA = A₀⋅β⋅ΔT (area varia, β ≈ 2α)",
+        "Dilatacao volumetrica: ΔV = V₀⋅γ⋅ΔT (volume varia, γ ≈ 3α)",
+        "Coeficiente de dilatacao (α, β, γ): depende do material (unidade: °C⁻¹)",
+        "Aplicacoes: juntas de dilatacao, trilhos, termometros"
+      ],
+      "exemplos": [
+        "Barra de ferro (L₀=10m, α=12×10⁻⁶/°C) aquecida 50°C: ΔL = 10×12×10⁻⁶×50 = 0,006m = 6mm",
+        "Chapa metalica (A₀=2m², β=20×10⁻⁶/°C) aquecida 40°C: ΔA = 2×20×10⁻⁶×40 = 0,0016m²",
+        "Liquido em recipiente: dilatacao aparente = dilatacao real do liquido - dilatacao do recipiente"
+      ],
+      "formula": "ΔL = L₀⋅α⋅ΔT; ΔA = A₀⋅β⋅ΔT; ΔV = V₀⋅γ⋅ΔT",
+      "dicas": [
+        "Relacao: β ≈ 2α e γ ≈ 3α (para materiais isotropicos)",
+        "Juntas de dilatacao em pontes evitam deformacoes por variacao termica",
+        "No ENEM, comum perguntar sobre aplicacoes praticas da dilatacao"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Um trilho de aco de 30 m sofre variacao de temperatura de 40°C. Sendo α = 11×10⁻⁶ °C⁻¹, qual a dilatacao?",
+          "alternativas": {
+            "A": "0,0132 m",
+            "B": "0,132 m",
+            "C": "1,32 m",
+            "D": "13,2 m",
+            "E": "132 m"
+          },
+          "correta": "A",
+          "explicacao": "ΔL = L₀⋅α⋅ΔT = 30 × 11×10⁻⁶ × 40 = 30 × 440×10⁻⁶ = 0,0132 m = 13,2 mm"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Se o coeficiente de dilatacao linear de um material e α, qual o coeficiente de dilatacao volumetrica?",
+          "alternativas": {
+            "A": "α/3",
+            "B": "α",
+            "C": "2α",
+            "D": "3α",
+            "E": "α²"
+          },
+          "correta": "D",
+          "explicacao": "Para materiais isotropicos: γ = 3α (relacao entre dilatacao volumetrica e linear)"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Juntas de dilatacao em pontes sao necessarias porque:",
+          "alternativas": {
+            "A": "Impedem vibracao da estrutura",
+            "B": "Permitem dilatacao termica sem deformacao",
+            "C": "Reduzem o peso da ponte",
+            "D": "Melhoram a estetica da construcao",
+            "E": "Facilitam a manutencao"
+          },
+          "correta": "B",
+          "explicacao": "Juntas permitem que a estrutura dilate e contraia com variacao de temperatura sem sofrer deformacoes ou rachaduras"
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Calor Sensivel",
+      "resumo": "Calor sensivel e a quantidade de energia termica que varia a temperatura de um corpo sem mudar seu estado fisico. Depende da massa, calor especifico e variacao de temperatura.",
+      "topicos": [
+        "Calor sensivel: Q = m⋅c⋅ΔT (varia temperatura sem mudanca de estado)",
+        "Calor especifico (c): quantidade de calor para elevar 1 g (ou 1 kg) em 1°C. Unidade: cal/g°C ou J/kg°C",
+        "Capacidade termica: C = m⋅c (calor necessario para variar 1°C do corpo todo)",
+        "Agua: c = 1 cal/g°C (alto calor especifico, bom regulador termico)",
+        "Calor absorvido: Q > 0 (temperatura aumenta). Calor cedido: Q < 0 (temperatura diminui)"
+      ],
+      "exemplos": [
+        "Aquecer 200 g de agua de 20°C a 80°C: Q = 200×1×60 = 12.000 cal = 12 kcal",
+        "Ferro (c=0,11 cal/g°C) de 500 g resfria de 100°C a 30°C: Q = 500×0,11×(-70) = -3.850 cal",
+        "Capacidade termica de 1 kg de agua: C = 1000×1 = 1000 cal/°C"
+      ],
+      "formula": "Q = m⋅c⋅ΔT; C = m⋅c",
+      "dicas": [
+        "Calor especifico da agua (c=1 cal/g°C) e referencia para outros materiais",
+        "Q positivo: corpo absorve calor. Q negativo: corpo cede calor",
+        "No ENEM, comum calcular energia para aquecer agua"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Qual a quantidade de calor necessaria para aquecer 500 g de agua de 15°C a 65°C? (c_agua = 1 cal/g°C)",
+          "alternativas": {
+            "A": "5.000 cal",
+            "B": "12.500 cal",
+            "C": "25.000 cal",
+            "D": "32.500 cal",
+            "E": "50.000 cal"
+          },
+          "correta": "C",
+          "explicacao": "Q = m⋅c⋅ΔT = 500 × 1 × (65-15) = 500 × 50 = 25.000 cal = 25 kcal"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Um bloco metalico de 200 g e calor especifico 0,2 cal/g°C e aquecido recebendo 800 cal. Qual a variacao de temperatura?",
+          "alternativas": {
+            "A": "10°C",
+            "B": "20°C",
+            "C": "30°C",
+            "D": "40°C",
+            "E": "80°C"
+          },
+          "correta": "B",
+          "explicacao": "Q = m⋅c⋅ΔT → 800 = 200 × 0,2 × ΔT → 800 = 40 × ΔT → ΔT = 20°C"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Por que regioes litoraneas tem clima mais ameno (menor variacao termica)?",
+          "alternativas": {
+            "A": "Agua tem baixo calor especifico",
+            "B": "Agua tem alto calor especifico, absorvendo muito calor com pequena variacao de temperatura",
+            "C": "Agua evapora facilmente",
+            "D": "Areia tem alto calor especifico",
+            "E": "Agua reflete toda radiacao solar"
+          },
+          "correta": "B",
+          "explicacao": "Alto calor especifico da agua (c=1 cal/g°C) faz com que ela absorva/libere muita energia com pequena variacao de temperatura, moderando o clima"
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Calor Latente e Mudancas de Estado",
+      "resumo": "Calor latente e a energia termica necessaria para mudar o estado fisico de uma substancia sem variar sua temperatura. Fusao, vaporizacao, solidificacao e condensacao.",
+      "topicos": [
+        "Calor latente: Q = m⋅L (muda estado sem variar temperatura)",
+        "Calor latente de fusao (L_f): energia para fundir 1 g de solido",
+        "Calor latente de vaporizacao (L_v): energia para vaporizar 1 g de liquido",
+        "Agua: L_f = 80 cal/g (fusao/solidificacao), L_v = 540 cal/g (vaporizacao/condensacao)",
+        "Curva de aquecimento: trechos horizontais = mudanca de estado (temperatura constante)"
+      ],
+      "exemplos": [
+        "Derreter 100 g de gelo a 0°C: Q = 100×80 = 8.000 cal",
+        "Vaporizar 50 g de agua a 100°C: Q = 50×540 = 27.000 cal",
+        "Condensar vapor a 100°C: libera 540 cal/g (processo inverso da vaporizacao)"
+      ],
+      "formula": "Q = m⋅L",
+      "dicas": [
+        "Durante mudanca de estado, temperatura permanece constante",
+        "L_vaporizacao > L_fusao (mais energia para vaporizar que para derreter)",
+        "Grafico T×Q: trechos inclinados (calor sensivel), trechos horizontais (calor latente)"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2021 - Adaptado) Qual a energia necessaria para derreter 200 g de gelo a 0°C? (L_f = 80 cal/g)",
+          "alternativas": {
+            "A": "1.600 cal",
+            "B": "8.000 cal",
+            "C": "16.000 cal",
+            "D": "80.000 cal",
+            "E": "108.000 cal"
+          },
+          "correta": "C",
+          "explicacao": "Q = m⋅L_f = 200 × 80 = 16.000 cal"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2019 - Adaptado) Por que queimadura com vapor d'agua a 100°C e mais grave que com agua liquida a 100°C?",
+          "alternativas": {
+            "A": "Vapor tem temperatura maior",
+            "B": "Vapor libera calor latente ao condensar na pele",
+            "C": "Agua liquida evapora rapidamente",
+            "D": "Vapor tem menor densidade",
+            "E": "Agua liquida nao transfere calor"
+          },
+          "correta": "B",
+          "explicacao": "Vapor a 100°C, ao condensar na pele, libera calor latente (540 cal/g) alem do calor sensivel, causando queimadura mais grave"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2020 - Adaptado) Em um grafico temperatura × tempo para aquecimento de gelo a vapor, os trechos horizontais representam:",
+          "alternativas": {
+            "A": "Aquecimento do gelo",
+            "B": "Aquecimento da agua",
+            "C": "Mudancas de estado fisico",
+            "D": "Aquecimento do vapor",
+            "E": "Resfriamento da substancia"
+          },
+          "correta": "C",
+          "explicacao": "Trechos horizontais indicam temperatura constante durante mudanca de estado (fusao a 0°C e vaporizacao a 100°C)"
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Trocas de Calor e Calorimetria",
+      "resumo": "Em sistema isolado, o calor cedido pelos corpos quentes e igual ao calor absorvido pelos corpos frios. Principio fundamental para calcular temperatura de equilibrio e calor trocado.",
+      "topicos": [
+        "Principio das trocas de calor: ΣQ = 0 (sistema isolado)",
+        "Q_cedido + Q_absorvido = 0 (calor cedido e negativo)",
+        "Temperatura de equilibrio: temperatura final comum a todos os corpos",
+        "Calorimetro: recipiente isolado termicamente para medir calor",
+        "Aplicacoes: misturas, determinacao de calor especifico"
+      ],
+      "exemplos": [
+        "100 g agua a 80°C + 200 g agua a 20°C: 100×1×(T-80) + 200×1×(T-20) = 0 → T = 40°C",
+        "Metal quente (200 g, 100°C, c=0,2) em agua (500 g, 20°C): temperatura de equilibrio ≈ 27°C",
+        "Gelo (50 g, 0°C) em agua (200 g, 40°C): primeiro derrete gelo, depois equilibrio termico"
+      ],
+      "formula": "ΣQ = 0; Q_cedido + Q_absorvido = 0",
+      "dicas": [
+        "Identifique corpos que cedem (T diminui, Q<0) e absorvem calor (T aumenta, Q>0)",
+        "Use Q=mcΔT para calor sensivel e Q=mL para mudanca de estado",
+        "No ENEM, problemas de calorimetria envolvem misturas e equilibrio"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "(ENEM 2018 - Adaptado) Mistura-se 100 g de agua a 60°C com 200 g de agua a 30°C. Qual a temperatura de equilibrio? (c_agua = 1 cal/g°C)",
+          "alternativas": {
+            "A": "35°C",
+            "B": "40°C",
+            "C": "45°C",
+            "D": "50°C",
+            "E": "55°C"
+          },
+          "correta": "B",
+          "explicacao": "100×1×(T-60) + 200×1×(T-30) = 0 → 100T - 6000 + 200T - 6000 = 0 → 300T = 12000 → T = 40°C"
+        },
+        {
+          "id": "q2",
+          "enunciado": "(ENEM 2020 - Adaptado) Um bloco metalico de 50 g a 120°C e mergulhado em 200 g de agua a 20°C. O equilibrio ocorre a 25°C. Qual o calor especifico do metal? (c_agua = 1 cal/g°C)",
+          "alternativas": {
+            "A": "0,1 cal/g°C",
+            "B": "0,2 cal/g°C",
+            "C": "0,21 cal/g°C",
+            "D": "0,5 cal/g°C",
+            "E": "1,0 cal/g°C"
+          },
+          "correta": "C",
+          "explicacao": "Q_metal + Q_agua = 0 → 50×c×(25-120) + 200×1×(25-20) = 0 → -4750c + 1000 = 0 → c ≈ 0,21 cal/g°C"
+        },
+        {
+          "id": "q3",
+          "enunciado": "(ENEM 2019 - Adaptado) Em um calorimetro ideal (isolado), mistura-se agua quente e fria. O que acontece?",
+          "alternativas": {
+            "A": "Agua quente aquece mais",
+            "B": "Agua fria resfria mais",
+            "C": "Ambas atingem temperatura intermediaria",
+            "D": "Temperatura nao muda",
+            "E": "Sistema perde calor para o ambiente"
+          },
+          "correta": "C",
+          "explicacao": "Em calorimetro ideal (isolado), calor cedido = calor absorvido, resultando em temperatura de equilibrio intermediaria"
+        }
+      ]
+    }
+  ]
+}

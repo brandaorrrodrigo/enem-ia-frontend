@@ -1,0 +1,402 @@
+{
+  "id": "historia-era-vargas",
+  "titulo": "Era Vargas",
+  "descricao": "Getúlio Vargas e as transformações políticas, econômicas e sociais (1930-1945)",
+  "icone": "⚡",
+  "cor": "from-red-500 to-yellow-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-revolucao-1930",
+      "titulo": "Revolução de 1930",
+      "topicos": [
+        "Crise da República Velha",
+        "Crise de 1929 e impactos no Brasil",
+        "Aliança Liberal e campanha eleitoral",
+        "Revolução de 1930",
+        "Governo Provisório"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Revolução de 1930 marcou o fim da República Velha e ascensão de Getúlio Vargas ao poder. Entre os fatores que contribuíram para esse movimento, destaca-se:",
+          "alternativas": [
+            "A total satisfação das elites regionais com a política do café com leite",
+            "A crise econômica de 1929 e o questionamento da hegemonia cafeeira",
+            "O fortalecimento absoluto da oligarquia paulista",
+            "A ausência de conflitos políticos durante a República Velha",
+            "O desinteresse completo dos tenentes pela política nacional"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A crise de 1929 afetou gravemente a economia cafeeira, expondo as fragilidades do modelo oligárquico. Somaram-se o descontentamento de oligarquias dissidentes (RS, MG, PB), tenentes e setores urbanos, culminando na Revolução de 1930."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Aliança Liberal, formada em 1929, lançou Getúlio Vargas como candidato à presidência. Seu programa incluía:",
+          "alternativas": [
+            "A manutenção integral da política oligárquica tradicional",
+            "A defesa exclusiva dos interesses dos cafeicultores paulistas",
+            "Propostas de reforma política, anistia aos tenentes e leis trabalhistas",
+            "A restauração da monarquia no Brasil",
+            "O isolamento total do Brasil no cenário internacional"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A Aliança Liberal propunha voto secreto, anistia aos revolucionários tenentistas, incentivo à indústria e legislação trabalhista. Representava uma alternativa modernizadora ao modelo oligárquico, atraindo setores médios urbanos e oligarquias dissidentes."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Revolução de 1930 iniciou-se após a vitória de Júlio Prestes nas eleições e o assassinato de João Pessoa. Sobre o movimento revolucionário, é correto afirmar que:",
+          "alternativas": [
+            "Foi um movimento popular de massas que tomou o poder",
+            "Partiu do Sul, com apoio de oligarquias dissidentes e tenentes",
+            "Contou com total apoio da oligarquia paulista",
+            "Não teve participação militar no movimento",
+            "Resultou na restauração imediata da democracia plena"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A revolução iniciou-se no Rio Grande do Sul, liderada por oligarquias dissidentes (gaúcha, mineira, paraibana) e tenentes. As forças revolucionárias marcharam para o Rio de Janeiro, onde a Junta Militar depôs Washington Luís e entregou o poder a Vargas."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O Governo Provisório (1930-1934) caracterizou-se pela centralização política. Entre as medidas tomadas nesse período, destaca-se:",
+          "alternativas": [
+            "A nomeação de interventores nos estados, substituindo oligarquias locais",
+            "O fortalecimento total das oligarquias estaduais tradicionais",
+            "A concessão de autonomia absoluta aos estados",
+            "A restauração do sistema político da República Velha",
+            "A ausência de conflitos com as oligarquias regionais"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Vargas nomeou interventores (muitos tenentes) nos estados, destituindo as oligarquias tradicionais. Essa centralização gerou conflitos, especialmente com São Paulo, que perdeu sua hegemonia política e via seus interesses prejudicados."
+        },
+        {
+          "id": "q5",
+          "enunciado": "Durante o Governo Provisório, Vargas criou o Ministério do Trabalho, Indústria e Comércio. Essa medida visava:",
+          "alternativas": [
+            "Reprimir totalmente os movimentos operários",
+            "Regular as relações trabalhistas e estabelecer controle sobre os sindicatos",
+            "Conceder total liberdade sindical aos trabalhadores",
+            "Extinguir todas as leis trabalhistas existentes",
+            "Proibir a formação de qualquer organização de trabalhadores"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Ministério do Trabalho iniciou a estruturação da legislação trabalhista e estabeleceu controle estatal sobre os sindicatos (sindicalismo corporativista). Vargas buscava antecipar demandas trabalhistas, controlando o movimento operário e construindo sua base política."
+        }
+      ]
+    },
+    {
+      "id": "mod2-constitucionalismo-1934",
+      "titulo": "Período Constitucional (1934-1937)",
+      "topicos": [
+        "Revolução Constitucionalista de 1932",
+        "Constituição de 1934",
+        "Polarização política: AIB e ANL",
+        "Intentona Comunista (1935)",
+        "Caminho para o Estado Novo"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Revolução Constitucionalista de 1932, movimento armado paulista contra o Governo Provisório, tinha como principal reivindicação:",
+          "alternativas": [
+            "A separação de São Paulo do restante do Brasil",
+            "A elaboração de uma nova Constituição e fim da intervenção federal",
+            "A restauração da República Velha e do café com leite",
+            "O apoio incondicional ao governo de Getúlio Vargas",
+            "A implantação de uma ditadura militar permanente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Revolução de 1932 reivindicava uma nova Constituição e o fim da nomeação de interventores. Apesar da derrota militar paulista, Vargas convocou eleições para a Assembleia Constituinte (1933), que promulgou a Constituição de 1934."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Constituição de 1934 introduziu importantes inovações na legislação brasileira. Entre essas novidades, destaca-se:",
+          "alternativas": [
+            "A proibição total do voto feminino",
+            "O voto feminino, o voto secreto e a Justiça Eleitoral",
+            "A extinção de todas as leis trabalhistas",
+            "A restauração do Poder Moderador imperial",
+            "A proibição da organização de partidos políticos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Constituição de 1934 estabeleceu voto secreto, voto feminino, Justiça Eleitoral, consolidou direitos trabalhistas e criou a Justiça do Trabalho. Foi uma Constituição progressista, embora tenha tido curta duração (1934-1937)."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O período constitucional foi marcado pela polarização ideológica. A Ação Integralista Brasileira (AIB), liderada por Plínio Salgado, defendia:",
+          "alternativas": [
+            "Ideais fascistas, nacionalismo autoritário e anticomunismo",
+            "A implantação do socialismo e da luta de classes",
+            "O retorno da monarquia parlamentarista",
+            "A total liberdade democrática e pluralismo político",
+            "A separação do Brasil em repúblicas independentes"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "A AIB (integralistas ou \"galinhas verdes\") era inspirada no fascismo europeu, defendia Estado forte, nacionalismo, corporativismo, família tradicional e era fortemente anticomunista. Seu lema era \"Deus, Pátria e Família\"."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Aliança Nacional Libertadora (ANL), liderada por Luís Carlos Prestes, representava a esquerda radical. Sobre esse movimento, é correto afirmar que:",
+          "alternativas": [
+            "Defendia o integralismo e o anticomunismo",
+            "Propunha reforma agrária, nacionalização de empresas e luta anti-imperialista",
+            "Era totalmente favorável ao governo de Vargas",
+            "Não sofreu nenhuma repressão governamental",
+            "Tinha como objetivo restaurar a República Velha"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A ANL, apoiada pelo PCB e pela Internacional Comunista, defendia reforma agrária, nacionalizações, não pagamento da dívida externa e luta anti-imperialista. Foi fechada por Vargas em 1935, acusada de ameaça à ordem."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Intentona Comunista (novembro de 1935) foi uma tentativa de insurreição armada liderada pelo PCB. Sobre esse episódio, é correto afirmar que:",
+          "alternativas": [
+            "Foi bem-sucedida e implantou um governo comunista no Brasil",
+            "Fracassou rapidamente e foi duramente reprimida por Vargas",
+            "Contou com apoio popular massivo em todo o país",
+            "Não teve nenhuma consequência política posterior",
+            "Fortaleceu as organizações de esquerda no Brasil"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Intentona fracassou rapidamente, com levantes militares isolados em Natal, Recife e Rio. Vargas usou o episódio para justificar repressão aos comunistas, criar o clima de \"ameaça vermelha\" e preparar o golpe do Estado Novo (1937)."
+        }
+      ]
+    },
+    {
+      "id": "mod3-estado-novo",
+      "titulo": "Estado Novo (1937-1945)",
+      "topicos": [
+        "Golpe de 1937 e Constituição",
+        "Centralização e autoritarismo",
+        "Departamento de Imprensa e Propaganda (DIP)",
+        "Política trabalhista e sindical",
+        "Segunda Guerra Mundial e posicionamento"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Em 10 de novembro de 1937, Vargas deu um golpe de Estado, iniciando o período ditatorial do Estado Novo. O pretexto usado para justificar o golpe foi:",
+          "alternativas": [
+            "A vitória eleitoral da oposição nas eleições presidenciais",
+            "A divulgação do Plano Cohen, suposto plano comunista de tomada do poder",
+            "A invasão do território brasileiro por tropas estrangeiras",
+            "O pedido explícito da população por uma ditadura",
+            "A ameaça de restauração da monarquia no Brasil"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Plano Cohen, divulgado em 1937, era um documento falso (forjado por integralistas) que descrevia suposto plano comunista. Vargas usou esse pretexto para criar clima de instabilidade, cancelar eleições e instaurar a ditadura do Estado Novo."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A Constituição de 1937, apelidada de \"Polaca\" por sua inspiração fascista, caracterizava-se por:",
+          "alternativas": [
+            "Ampliação das liberdades democráticas e civis",
+            "Fortalecimento do Legislativo sobre o Executivo",
+            "Concentração de poderes no Executivo e supressão de direitos políticos",
+            "Descentralização total do poder político",
+            "Garantia plena da liberdade de imprensa"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A Constituição de 1937 concentrava poderes no Executivo, permitia ao presidente legislar por decretos-lei, suspendia eleições, extinguia partidos políticos e limitava liberdades civis. Muitos de seus artigos nunca foram implementados."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O Departamento de Imprensa e Propaganda (DIP), criado em 1939, tinha como função:",
+          "alternativas": [
+            "Garantir total liberdade de imprensa no Brasil",
+            "Controlar meios de comunicação e promover propaganda do regime",
+            "Combater exclusivamente a propaganda nazista no Brasil",
+            "Promover a democracia e o pluralismo de ideias",
+            "Extinguir completamente o rádio e o cinema no país"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O DIP censurava produções culturais, controlava meios de comunicação e promovia propaganda do regime, construindo o culto à personalidade de Vargas (\"pai dos pobres\"). Utilizava cinema, rádio e imprensa para divulgar o ideário do Estado Novo."
+        },
+        {
+          "id": "q4",
+          "enunciado": "Durante o Estado Novo, Vargas consolidou a legislação trabalhista. A Consolidação das Leis do Trabalho (CLT), criada em 1943, estabelecia:",
+          "alternativas": [
+            "A proibição total de organização sindical",
+            "Direitos como salário mínimo, jornada de 8 horas e férias remuneradas",
+            "A extinção de todas as leis trabalhistas anteriores",
+            "A volta ao trabalho escravo nas indústrias",
+            "A total liberdade para demissões sem justificativa"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A CLT consolidou direitos trabalhistas: salário mínimo, jornada de 8 horas, férias remuneradas, descanso semanal. Porém, mantinha os sindicatos sob controle estatal (peleguismo), limitando a autonomia operária."
+        },
+        {
+          "id": "q5",
+          "enunciado": "Durante a Segunda Guerra Mundial, o Brasil inicialmente manteve neutralidade, mas em 1942 entrou no conflito ao lado dos Aliados. Essa decisão relacionava-se a:",
+          "alternativas": [
+            "O alinhamento ideológico total do Estado Novo com a democracia",
+            "Pressão dos EUA, interesses econômicos e torpedeamento de navios brasileiros",
+            "O desejo de Vargas de conquistar territórios na Europa",
+            "A ausência de influências fascistas no governo brasileiro",
+            "O isolamento total do Brasil em relação ao conflito"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Apesar de simpatias fascistas no governo, o Brasil alinhou-se aos Aliados por pressão dos EUA, interesses econômicos (financiamento da siderúrgica de Volta Redonda) e após torpedeamento de navios brasileiros por submarinos alemães. A FEB lutou na Itália."
+        }
+      ]
+    },
+    {
+      "id": "mod4-trabalhismo-nacionalismo",
+      "titulo": "Trabalhismo e Nacionalismo Varguista",
+      "topicos": [
+        "Legislação social e trabalhista",
+        "Sindicalismo corporativista",
+        "Industrialização e intervencionismo",
+        "Criação de estatais",
+        "Ideologia do trabalhismo"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O trabalhismo varguista representou uma nova forma de relação entre Estado e trabalhadores. Sobre esse modelo, é correto afirmar que:",
+          "alternativas": [
+            "Garantia total autonomia aos sindicatos operários",
+            "O Estado concedia direitos, mas controlava a organização dos trabalhadores",
+            "Proibia completamente a existência de leis trabalhistas",
+            "Baseava-se exclusivamente na luta de classes",
+            "Não estabelecia nenhum tipo de controle sobre sindicatos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O trabalhismo varguista caracterizava-se pela concessão de direitos trabalhistas pelo Estado paternalista, mas com controle estatal sobre sindicatos (sindicalismo corporativista). O líder sindical pelego era atrelado ao governo, evitando greves e conflitos."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A política de industrialização durante a Era Vargas caracterizou-se pelo intervencionismo estatal. Entre as medidas adotadas, destaca-se:",
+          "alternativas": [
+            "A total ausência de participação estatal na economia",
+            "A criação de empresas estatais como Vale do Rio Doce e CSN",
+            "A proibição completa da industrialização no Brasil",
+            "A entrega de todas as indústrias para empresas estrangeiras",
+            "O abandono completo do desenvolvimento industrial"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Vargas adotou modelo desenvolvimentista com forte presença estatal. Criou empresas estratégicas: Companhia Vale do Rio Doce (1942), Companhia Siderúrgica Nacional (1941), promoveu substituição de importações e nacionalismo econômico."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Consolidação das Leis do Trabalho (CLT) foi um marco da Era Vargas. Sobre sua implementação, é correto afirmar que:",
+          "alternativas": [
+            "Foi rejeitada completamente pelos trabalhadores brasileiros",
+            "Contribuiu para construir a imagem de Vargas como \"pai dos pobres\"",
+            "Eliminou totalmente a exploração nas relações de trabalho",
+            "Não teve nenhum impacto na relação entre Vargas e trabalhadores",
+            "Foi aplicada exclusivamente aos trabalhadores rurais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A CLT foi fundamental para construir a imagem de Vargas como protetor dos trabalhadores (\"pai dos pobres\"). Embora garantisse direitos, excluía trabalhadores rurais e mantinha controle estatal sobre sindicatos, limitando autonomia operária."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O nacionalismo econômico da Era Vargas manifestava-se em políticas de defesa dos recursos naturais. Sobre esse aspecto, é correto afirmar que:",
+          "alternativas": [
+            "Vargas defendia a privatização total das riquezas minerais",
+            "Promoveu a nacionalização de recursos e proteção de setores estratégicos",
+            "Não havia preocupação com o controle de recursos naturais",
+            "Todos os recursos foram entregues a empresas estrangeiras",
+            "O nacionalismo era inexistente na política econômica varguista"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O nacionalismo varguista defendia o controle estatal de recursos estratégicos (minério, petróleo, energia). A Constituição de 1934 já previa restrições à exploração de recursos por estrangeiros, política aprofundada no Estado Novo e no segundo governo Vargas."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A política trabalhista de Vargas, apesar de avanços sociais, era criticada por setores da esquerda. A principal crítica referia-se a:",
+          "alternativas": [
+            "A concessão de direitos excessivos aos trabalhadores",
+            "O controle estatal sobre sindicatos, limitando autonomia operária",
+            "A total liberdade de organização dos movimentos operários",
+            "A ausência completa de legislação trabalhista",
+            "O apoio irrestrito às greves e manifestações operárias"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A esquerda criticava o \"peleguismo\" - o controle estatal sobre sindicatos através do Ministério do Trabalho. Os sindicatos tornavam-se atrelados ao Estado, perdendo autonomia. Greves eram proibidas e lideranças independentes, reprimidas."
+        }
+      ]
+    },
+    {
+      "id": "mod5-queda-legado",
+      "titulo": "Queda do Estado Novo e Legado",
+      "topicos": [
+        "Contradições: ditadura interna e luta pela democracia externa",
+        "Movimento queremista",
+        "Deposição de Vargas (1945)",
+        "Redemocratização e Constituição de 1946",
+        "Legado da Era Vargas"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A participação brasileira na Segunda Guerra ao lado das democracias criou contradições políticas internas. Sobre esse contexto, é correto afirmar que:",
+          "alternativas": [
+            "A ditadura varguista fortaleceu-se absolutamente com a guerra",
+            "A luta contra o fascismo externo contrastava com a ditadura interna",
+            "Não houve nenhuma pressão por democratização após a guerra",
+            "O Estado Novo manteve-se estável até a década de 1950",
+            "A população apoiava unanimemente a continuidade da ditadura"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A contradição era evidente: o Brasil lutava contra ditaduras fascistas na Europa, mas mantinha uma ditadura internamente. Isso fortaleceu os movimentos por democratização, pressionando Vargas a convocar eleições e liberalizar o regime."
+        },
+        {
+          "id": "q2",
+          "enunciado": "O movimento \"Queremismo\" (\"Queremos Getúlio\"), surgido em 1945, defendia:",
+          "alternativas": [
+            "A deposição imediata de Vargas da presidência",
+            "A convocação de Assembleia Constituinte com Vargas no poder",
+            "A restauração da República Velha e das oligarquias",
+            "A implantação de uma ditadura militar permanente",
+            "O fim de todas as leis trabalhistas varguistas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O queremismo, apoiado por sindicatos e PCB, defendia que Vargas permanecesse no poder durante a Assembleia Constituinte. Lideranças conservadoras e militares viram isso como manobra continuísta, levando à deposição de Vargas pelos militares em 29/10/1945."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Getúlio Vargas foi deposto em outubro de 1945 por um golpe militar. Entre os fatores que levaram a sua queda, destaca-se:",
+          "alternativas": [
+            "O apoio absoluto das Forças Armadas a sua permanência",
+            "O medo de manobra continuísta e pressão por democratização",
+            "A ausência de oposição ao Estado Novo",
+            "A vitória militar do Eixo na Segunda Guerra Mundial",
+            "O desejo popular de manter a ditadura varguista"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Militares e oposição temiam que Vargas manobrase para permanecer no poder (\"continuísmo\"). A nomeação de seu irmão como chefe de polícia e o apoio ao queremismo foram o estopim. Os militares depuseram Vargas, transferindo poder ao presidente do STF, José Linhares."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Constituição de 1946, promulgada após a queda de Vargas, caracterizou-se por:",
+          "alternativas": [
+            "Manter integralmente as características autoritárias do Estado Novo",
+            "Restaurar direitos democráticos e garantias individuais",
+            "Proibir completamente a existência de partidos políticos",
+            "Eliminar todos os direitos trabalhistas conquistados",
+            "Estabelecer uma ditadura militar permanente"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Constituição de 1946 foi democrática: restabeleceu liberdades individuais, separação de poderes, eleições diretas, voto secreto e manteve direitos trabalhistas da CLT. Iniciou-se um período democrático (1946-1964), embora com limitações."
+        },
+        {
+          "id": "q5",
+          "enunciado": "O legado da Era Vargas para a história brasileira é controverso. Entre seus aspectos mais significativos, destaca-se:",
+          "alternativas": [
+            "A ausência de impactos na estrutura política e social brasileira",
+            "A criação de bases da legislação trabalhista e industrialização",
+            "A completa eliminação da desigualdade social no Brasil",
+            "A restauração do modelo oligárquico da República Velha",
+            "O fim definitivo do autoritarismo na política brasileira"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O legado varguista inclui: consolidação da legislação trabalhista (CLT), industrialização, criação de estatais, fortalecimento do Estado nacional, sindicalismo corporativista. Porém, também deixou tradições autoritárias, centralização e práticas populistas na política brasileira."
+        }
+      ]
+    }
+  ]
+}

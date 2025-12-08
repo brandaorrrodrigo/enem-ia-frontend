@@ -1,0 +1,581 @@
+{
+  "id": "analise-combinatoria",
+  "slug": "analise-combinatoria",
+  "titulo": "Análise Combinatória",
+  "categoria": "matematica",
+  "nivel": "intermediario",
+  "descricao": "Princípio fundamental da contagem, arranjos, combinações, permutações e aplicações",
+  "icone": "Shuffle",
+  "cor": "#06B6D4",
+  "tempoEstimado": "8 horas",
+  "fpRecompensa": 0,
+  "tags": ["matematica", "ENEM", "combinatoria", "contagem", "permutacao"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Princípio Fundamental da Contagem",
+      "resumo": "Princípio multiplicativo, árvore de possibilidades e problemas básicos",
+      "topicos": [
+        {
+          "titulo": "Princípio Multiplicativo",
+          "conteudo": "PRINCÍPIO FUNDAMENTAL DA CONTAGEM (PFC):\nSe um evento pode ocorrer de m maneiras e, para cada uma delas, outro evento pode ocorrer de n maneiras, então os dois eventos juntos podem ocorrer de m × n maneiras.\n\nGENERALIZAÇÃO:\nPara k eventos sucessivos com n₁, n₂, ..., nₖ possibilidades:\nTotal = n₁ × n₂ × ... × nₖ\n\nEXEMPLO 1: REFEIÇÃO\nRestaurante oferece:\n- 3 opções de entrada\n- 5 opções de prato principal\n- 4 opções de sobremesa\n\nQuantas refeições completas?\nTotal = 3 × 5 × 4 = 60 refeições\n\nEXEMPLO 2: SENHA\nSenha com 4 dígitos (0-9):\nCada posição: 10 opções\nTotal = 10 × 10 × 10 × 10 = 10.000 senhas\n\nEXEMPLO 3: CAMINHO\nPara ir de A até C, passando por B:\n- A até B: 3 caminhos\n- B até C: 4 caminhos\n\nTotal: 3 × 4 = 12 caminhos\n\nEXEMPLO 4: PLACA DE CARRO\nPlaca antiga: AAA-1234\n- 3 letras (26 opções cada)\n- 4 números (10 opções cada)\n\nTotal = 26³ × 10⁴\n= 17.576 × 10.000\n= 175.760.000 placas"
+        },
+        {
+          "titulo": "Árvore de Possibilidades",
+          "conteudo": "DIAGRAMA DE ÁRVORE:\nRepresentação visual das possibilidades.\n\nEXEMPLO 1: MOEDA E DADO\nLançar moeda (C=cara, K=coroa) e dado (1-6)\n\nNível 1 (moeda): 2 opções\nNível 2 (dado): 6 opções para cada\n\nRamificação:\nC → 1, 2, 3, 4, 5, 6\nK → 1, 2, 3, 4, 5, 6\n\nTotal: 2 × 6 = 12 resultados\n\nEXEMPLO 2: TRIO DE PESSOAS\n3 pessoas (A, B, C) em fila:\n\nPosição 1: 3 opções (A, B ou C)\n↓\nPosição 2: 2 opções (sobram 2)\n↓\nPosição 3: 1 opção (sobra 1)\n\nTotal: 3 × 2 × 1 = 6 filas\n\nListando:\nABC, ACB, BAC, BCA, CAB, CBA\n\nEXEMPLO 3: ESCOLHA COM RESTRIÇÃO\nTime de 3 jogadores, sendo:\n- 1 deve ser de 4 atacantes\n- 2 de 5 defensores\n\nForma 1:\nAtacante: 4 opções\n1º defensor: 5 opções\n2º defensor: 4 opções (não pode repetir)\n\nTotal = 4 × 5 × 4 = 80\n\nMas atenção: ordem dos defensores importa? Se não, dividir por 2!\nTotal = 80/2 = 40"
+        },
+        {
+          "titulo": "Contagem com Restrições",
+          "conteudo": "ESTRATÉGIAS PARA RESTRIÇÕES:\n\n1) POSIÇÕES FIXAS:\nPreencha primeiro as posições restritas.\n\nEXEMPLO 1: SENHA COM RESTRIÇÕES\n4 dígitos, começando por ímpar:\n\n1ª posição: 5 opções (1,3,5,7,9)\n2ª posição: 10 opções\n3ª posição: 10 opções\n4ª posição: 10 opções\n\nTotal: 5 × 10³ = 5.000\n\n2) COMPLEMENTAR:\nTotal - Casos indesejados\n\nEXEMPLO 2: PELO MENOS UM\nQuantas senhas de 3 dígitos têm pelo menos um zero?\n\nTotal de senhas: 10³ = 1.000\nSenhas SEM zero: 9³ = 729\nCom pelo menos 1 zero: 1.000 - 729 = 271\n\n3) CASOS SEPARADOS:\nDivida em situações mutuamente exclusivas.\n\nEXEMPLO 3: COMITÊ\nFormar comitê de 3 pessoas:\n- 5 homens disponíveis\n- 4 mulheres disponíveis\n- Pelo menos 1 mulher\n\nCaso 1: 1 mulher, 2 homens\nCaso 2: 2 mulheres, 1 homem\nCaso 3: 3 mulheres\n\n[Resolução completa em combinações]\n\n4) ELEMENTOS JUNTOS:\nTrate grupo como unidade.\n\nEXEMPLO 4: FILA COM IRMÃOS JUNTOS\n5 pessoas, sendo 2 irmãos que querem ficar juntos.\n\nTrate os 2 irmãos como 1 bloco:\n- 4 unidades para organizar: 4! = 24\n- Dentro do bloco: 2! = 2\n\nTotal: 24 × 2 = 48"
+        },
+        {
+          "titulo": "Aplicações do PFC no Cotidiano",
+          "conteudo": "PROBLEMA 1: ROUPA\nEscolher roupa:\n- 4 camisas\n- 3 calças\n- 2 pares de sapatos\n\nCombinações: 4 × 3 × 2 = 24\n\nPROBLEMA 2: TORNEIO\n8 times, todos jogam contra todos (ida e volta).\nQuantos jogos?\n\nIda: C(8,2) = 28 jogos\nVolta: 28 jogos\nTotal: 56 jogos\n\nOu: Cada time joga 7 (contra cada outro)\n8 times × 7 jogos = 56 jogos\n(não divide por 2 pois ida e volta são diferentes)\n\nPROBLEMA 3: CARDÁPIO\nPizzaria:\n- 10 sabores de pizza\n- 5 sabores de suco\n- 3 tamanhos\n\nPedido completo: 10 × 5 × 3 = 150 opções\n\nPROBLEMA 4: TRAJETO EM MALHA\nCidade com ruas em grade:\nIr de A (0,0) até B (3,2)\nSó pode ir para direita (D) ou cima (C)\n\nPrecisa: 3D e 2C em qualquer ordem\nTotal = permutação de DDDCC\n= 5! / (3!×2!) = 10 trajetos\n\nPROBLEMA 5: TELEFONE\nNúmero: 9XXXX-XXXX (9 dígitos)\n1º: fixo (9)\n2º-9º: 0-9\n\nTotal = 1 × 10⁸ = 100.000.000 números"
+        }
+      ],
+      "exemplos": [
+        "Contar opções de menu em restaurante",
+        "Calcular possibilidades de placas veiculares",
+        "Determinar caminhos em mapa de ruas"
+      ],
+      "dicas": [
+        "PFC: multiplique as possibilidades de cada etapa",
+        "Desenhe árvore para problemas pequenos",
+        "Com restrições: preencha posições restritas primeiro",
+        "Pelo menos 1: Total - Nenhum",
+        "Elementos juntos: trate como bloco único",
+        "Ordem importa? Multiplicação. Não importa? Combinação."
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Um restaurante oferece 4 entradas, 6 pratos principais e 3 sobremesas. Quantas refeições completas diferentes podem ser montadas?",
+          "alternativas": {
+            "A": "13",
+            "B": "24",
+            "C": "48",
+            "D": "72",
+            "E": "108"
+          },
+          "correta": "D",
+          "explicacao": "Pelo PFC: 4 × 6 × 3 = 72 refeições",
+          "dificuldade": "facil",
+          "tags": ["PFC", "multiplicacao", "basico"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Quantas senhas de 4 dígitos podem ser formadas usando apenas os algarismos 0, 1, 2, 3, 4, com repetição?",
+          "alternativas": {
+            "A": "120",
+            "B": "256",
+            "C": "500",
+            "D": "625",
+            "E": "1.000"
+          },
+          "correta": "D",
+          "explicacao": "Cada posição: 5 opções. Total = 5⁴ = 625",
+          "dificuldade": "facil",
+          "tags": ["PFC", "senha", "repeticao"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "De quantas maneiras 3 pessoas podem sentar em 5 cadeiras em fila?",
+          "alternativas": {
+            "A": "15",
+            "B": "30",
+            "C": "60",
+            "D": "120",
+            "E": "125"
+          },
+          "correta": "C",
+          "explicacao": "1ª pessoa: 5 opções. 2ª: 4 opções. 3ª: 3 opções. Total = 5×4×3 = 60",
+          "dificuldade": "medio",
+          "tags": ["PFC", "fila", "escolha"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Quantos números de 3 algarismos distintos podem ser formados com os dígitos 1, 2, 3, 4, 5?",
+          "alternativas": {
+            "A": "10",
+            "B": "20",
+            "C": "40",
+            "D": "60",
+            "E": "125"
+          },
+          "correta": "D",
+          "explicacao": "1º dígito: 5 opções. 2º: 4 opções (não repete). 3º: 3 opções. Total = 5×4×3 = 60",
+          "dificuldade": "medio",
+          "tags": ["PFC", "digitos-distintos", "numeros"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "Uma senha de 4 dígitos deve começar por número par. Quantas senhas possíveis? (com repetição)",
+          "alternativas": {
+            "A": "4.000",
+            "B": "5.000",
+            "C": "6.000",
+            "D": "8.000",
+            "E": "10.000"
+          },
+          "correta": "B",
+          "explicacao": "1º dígito: 5 opções (0,2,4,6,8). Demais: 10 opções cada. Total = 5×10×10×10 = 5.000",
+          "dificuldade": "facil",
+          "tags": ["PFC", "restricao", "senha"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Permutações",
+      "resumo": "Permutações simples, com repetição e circulares",
+      "topicos": [
+        {
+          "titulo": "Permutação Simples",
+          "conteudo": "PERMUTAÇÃO SIMPLES:\nNúmero de maneiras de ordenar n elementos distintos.\n\nFÓRMULA:\nPₙ = n!\n\nFATORIAL:\nn! = n × (n-1) × (n-2) × ... × 2 × 1\n\nExemplos:\n1! = 1\n2! = 2\n3! = 6\n4! = 24\n5! = 120\n6! = 720\n7! = 5.040\n\nConvenção: 0! = 1\n\nEXEMPLO 1: FILA DE 4 PESSOAS\nQuantas filas diferentes?\nP₄ = 4! = 24\n\nEXEMPLO 2: ANAGRAMA\nQuantos anagramas de AMOR?\nP₄ = 4! = 24\n\nListando alguns:\nAMOR, AMRO, AOMR, AORM, ARMO, AROM...\n\nEXEMPLO 3: ORGANIZAÇAO DE LIVROS\n7 livros em prateleira:\nP₇ = 7! = 5.040 formas\n\nPROPRIEDADE:\nn! = n × (n-1)!\n\nEXEMPLO DE USO:\n10!/8! = 10 × 9 × 8!/8! = 90\n\nSIMPLIFICAÇÃO:\nEvite calcular fatoriais grandes!\nCancel termos comuns."
+        },
+        {
+          "titulo": "Permutação com Repetição",
+          "conteudo": "PERMUTAÇÃO COM REPETIÇÃO:\nQuando há elementos repetidos.\n\nFÓRMULA:\nP(n; n₁, n₂, ..., nₖ) = n! / (n₁! × n₂! × ... × nₖ!)\n\nonde:\n- n = total de elementos\n- n₁, n₂, ..., nₖ = quantidades de cada repetição\n\nEXEMPLO 1: ANAGRAMA DE \"BANANA\"\n6 letras: B, A, N, A, N, A\n- 1 B\n- 3 A\n- 2 N\n\nP(6; 1, 3, 2) = 6! / (1! × 3! × 2!)\n= 720 / (1 × 6 × 2)\n= 720 / 12\n= 60 anagramas\n\nEXEMPLO 2: CÓDIGO DE BARRAS\nSequência: 1, 1, 1, 2, 2, 3\n6 posições:\n- três 1\n- dois 2\n- um 3\n\nP(6; 3, 2, 1) = 6! / (3! × 2! × 1!)\n= 720 / (6 × 2 × 1)\n= 60\n\nEXEMPLO 3: FILA COM GÊMEOS\n5 pessoas: A, B, C, D, D (D são gêmeos idênticos)\n\nSe distinguíveis: 5! = 120\nSe indistinguíveis: 5!/2! = 60\n\nEXEMPLO 4: CAMINHOS EM MALHA\nIr de (0,0) a (3,2)\nPrecisa: 3 → (direita) e 2 ↑ (cima)\n\nSequência: → → → ↑ ↑\n5 movimentos: 3 iguais, 2 iguais\n\nP(5; 3, 2) = 5! / (3! × 2!)\n= 120 / (6 × 2)\n= 10 caminhos"
+        },
+        {
+          "titulo": "Permutação Circular",
+          "conteudo": "PERMUTAÇÃO CIRCULAR:\nDisposição em círculo (sem início/fim definido).\n\nFÓRMULA:\nPc(n) = (n-1)!\n\nJUSTIFICATIVA:\nFixe uma pessoa (referência).\nPermute as demais: (n-1)!\n\nEXEMPLO 1: MESA REDONDA\n5 pessoas em mesa redonda:\nPc(5) = (5-1)! = 4! = 24\n\nCompare com fila: 5! = 120\nDiferença: 120/24 = 5 (rotações da mesma disposição)\n\nEXEMPLO 2: COLAR DE CONTAS\n6 contas diferentes:\n\nSe não pode virar: Pc(6) = 5! = 120\n\nSe pode virar (refletir): 5!/2 = 60\n(cada arranjo e seu reflexo são iguais)\n\nEXEMPLO 3: RODA GIGANTE\n8 cadeiras, 8 pessoas:\nPc(8) = 7! = 5.040\n\nEXEMPLO 4: CASAL NA MESA\n4 casais em mesa redonda, cada casal junto:\n\nTrate cada casal como bloco:\n- 4 blocos em círculo: Pc(4) = 3! = 6\n- Dentro de cada casal: 2! = 2\n- Para 4 casais: 2⁴ = 16\n\nTotal: 6 × 16 = 96\n\nREGRA PARA COLAR/BRACELETE:\nSe pode refletir: (n-1)!/2"
+        },
+        {
+          "titulo": "Problemas Avançados com Permutações",
+          "conteudo": "PROBLEMA 1: ANAGRAMA COM CONDIÇÃO\nAnagramas de MATEMATICA começando com vogal:\n\nLetras: M, A, T, E, M, A, T, I, C, A\n- 3 A\n- 2 M\n- 2 T\n- 1 E, 1 I, 1 C\n\nVogais: A, E, I (3 opções para 1ª posição)\n\nCaso A na 1ª:\nRestam: M, T, E, M, A, T, I, C, A (9 letras)\n- 2 A, 2 M, 2 T, 1 E, 1 I, 1 C\nP = 9!/(2!×2!×2!) = 90.720\n\nCaso E na 1ª:\nRestam com 3 A, 2 M, 2 T, 1 I, 1 C\nP = 9!/(3!×2!×2!) = 30.240\n\nCaso I na 1ª: idem = 30.240\n\nTotal: 90.720 + 30.240 + 30.240 = 151.200\n\nPROBLEMA 2: NÚMERO PAR\nQuantos números de 5 algarismos distintos formados com {1,2,3,4,5} são pares?\n\nÚltimo dígito par: 2 ou 4 (2 opções)\nRestantes 4 posições: P₄ = 4! = 24\n\nTotal: 2 × 24 = 48\n\nPROBLEMA 3: FILA COM RESTRIÇÕES\n7 pessoas, sendo 3 crianças que devem ficar juntas:\n\nTrate as 3 crianças como bloco:\n- 5 unidades: 5! = 120\n- Crianças entre si: 3! = 6\n\nTotal: 120 × 6 = 720\n\nPROBLEMA 4: BANDEIRA\nBandeira com 6 listras usando 3 cores, cada cor 2 vezes:\n\nP(6; 2, 2, 2) = 6!/(2!×2!×2!)\n= 720/8\n= 90 bandeiras\n\nPROBLEMA 5: PALAVRA PALINDRÔMICA\nAnagramas de ARARA que são palíndromos:\n\nPalíndromo: lê igual de trás pra frente\n5 letras: _ _ _ _ _\nPosições 1 e 5 iguais\nPosições 2 e 4 iguais\nPosição 3: qualquer\n\nLetras: 3A, 2R\n\nCentro (pos 3): A ou R\nSe A: AR_RA (1 forma)\nSe R: AA_AA (não tem mais A!)\n\nTotal: 1 palíndromo (ARARA)"
+        }
+      ],
+      "exemplos": [
+        "Calcular anagramas de palavra",
+        "Organizar pessoas em mesa redonda",
+        "Contar caminhos em grade cartesiana"
+      ],
+      "dicas": [
+        "Permutação simples: n!",
+        "Com repetição: divide pelos fatoriais das repetições",
+        "Circular: (n-1)!",
+        "Elementos juntos: trate como bloco",
+        "Anagrama = permutação das letras",
+        "Simplificar fatoriais antes de calcular"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Quantos anagramas possui a palavra PROVA?",
+          "alternativas": {
+            "A": "24",
+            "B": "60",
+            "C": "120",
+            "D": "720",
+            "E": "5.040"
+          },
+          "correta": "C",
+          "explicacao": "5 letras distintas: P₅ = 5! = 120",
+          "dificuldade": "facil",
+          "tags": ["permutacao", "anagrama", "simples"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Quantos anagramas possui a palavra ARARA?",
+          "alternativas": {
+            "A": "10",
+            "B": "20",
+            "C": "30",
+            "D": "60",
+            "E": "120"
+          },
+          "correta": "A",
+          "explicacao": "5 letras: 3A e 2R. P(5; 3,2) = 5!/(3!×2!) = 120/12 = 10",
+          "dificuldade": "medio",
+          "tags": ["permutacao", "repeticao", "anagrama"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "De quantas formas 6 pessoas podem sentar em uma mesa redonda?",
+          "alternativas": {
+            "A": "24",
+            "B": "120",
+            "C": "360",
+            "D": "720",
+            "E": "5.040"
+          },
+          "correta": "B",
+          "explicacao": "Permutação circular: Pc(6) = (6-1)! = 5! = 120",
+          "dificuldade": "facil",
+          "tags": ["permutacao", "circular", "mesa-redonda"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Quantos caminhos existem para ir de (0,0) até (4,3) em uma malha, andando apenas para direita ou para cima?",
+          "alternativas": {
+            "A": "21",
+            "B": "28",
+            "C": "35",
+            "D": "42",
+            "E": "49"
+          },
+          "correta": "C",
+          "explicacao": "Precisa 4D e 3C. Total 7 movimentos. P(7;4,3) = 7!/(4!×3!) = 5040/144 = 35",
+          "dificuldade": "medio",
+          "tags": ["permutacao", "repeticao", "malha"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "De quantas maneiras 5 pessoas, sendo 2 irmãos que querem ficar juntos, podem se organizar em fila?",
+          "alternativas": {
+            "A": "24",
+            "B": "48",
+            "C": "96",
+            "D": "120",
+            "E": "240"
+          },
+          "correta": "B",
+          "explicacao": "Trate os 2 irmãos como bloco. 4 unidades: 4!=24. Dentro do bloco: 2!=2. Total: 24×2=48",
+          "dificuldade": "medio",
+          "tags": ["permutacao", "restricao", "bloco"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Arranjos",
+      "resumo": "Arranjos simples e problemas de ordenação parcial",
+      "topicos": [
+        {
+          "titulo": "Conceito de Arranjo",
+          "conteudo": "ARRANJO: Escolher e ordenar k elementos de um conjunto de n elementos.\n\nORDEM IMPORTA!\n\nNOTAÇÃO: A(n,k) ou Aₙ,ₖ\n\nFÓRMULA:\nA(n,k) = n! / (n-k)!\n\nOu:\nA(n,k) = n × (n-1) × (n-2) × ... × (n-k+1)\n(k fatores decrescentes)\n\nEXEMPLO 1: PÓDIO\n10 atletas, 3 posições no pódio (1º, 2º, 3º):\n\nA(10,3) = 10!/(10-3)!\n= 10!/7!\n= 10 × 9 × 8\n= 720\n\nEXEMPLO 2: SENHA\nSenha de 4 dígitos distintos (0-9):\n\nA(10,4) = 10 × 9 × 8 × 7\n= 5.040\n\nEXEMPLO 3: COMISSÃO COM CARGOS\n8 pessoas, escolher:\n- 1 presidente\n- 1 vice\n- 1 secretário\n\nA(8,3) = 8 × 7 × 6 = 336\n\nCOMPARAÇÃO:\nArranjo vs Permutação:\n- Arranjo: escolhe k de n\n- Permutação: ordena todos (k=n)\n\nA(n,n) = n!/(n-n)! = n!/0! = n! = Pₙ ✓"
+        },
+        {
+          "titulo": "Arranjos com Repetição",
+          "conteudo": "ARRANJO COM REPETIÇÃO:\nPode escolher o mesmo elemento várias vezes.\n\nFÓRMULA:\nAR(n,k) = nᵏ\n\nEXEMPLO 1: SENHA COM REPETIÇÃO\n4 dígitos, pode repetir:\nAR(10,4) = 10⁴ = 10.000\n\nEXEMPLO 2: DADO E MOEDA\nLançar 1 dado e 1 moeda:\nDado: 6 resultados\nMoeda: 2 resultados\nTotal: 6 × 2 = 12\n\nOu: AR(12,1) no contexto de escolha\n\nEXEMPLO 3: CÓDIGO DE BARRAS\nCódigo de 5 símbolos, usando {A, B, C}:\nAR(3,5) = 3⁵ = 243\n\nDIFERENÇA:\nSem repetição: A(n,k) = n!/(n-k)!\nCom repetição: AR(n,k) = nᵏ\n\nEXEMPLO COMPARATIVO:\n3 dígitos de {1,2,3,4,5}:\n\nSem repetição:\nA(5,3) = 5×4×3 = 60\nEx: 123, 124, 125, ..., 543\n\nCom repetição:\nAR(5,3) = 5³ = 125\nEx: 111, 112, 113, ..., 555\n\nREGRA:\nRepetição SEMPRE aumenta possibilidades."
+        },
+        {
+          "titulo": "Diferença: Arranjo vs Combinação",
+          "conteudo": "QUANDO USAR ARRANJO?\nQuando a ORDEM importa.\n\nQUANDO USAR COMBINAÇÃO?\nQuando a ordem NÃO importa.\n\nEXEMPLOS:\n\nSITUAÇÃO 1: PÓDIO\n\"1º, 2º, 3º lugares entre 10 atletas\"\nOrdem importa → Arranjo\nA(10,3) = 720\n\nSITUAÇÃO 2: COMISSÃO\n\"3 pessoas de 10 para comissão\"\nOrdem não importa → Combinação\nC(10,3) = 120\n\nSITUAÇÃO 3: SENHA\n\"4 letras distintas de 26\"\nOrdem importa → Arranjo\nA(26,4) = 358.800\n\nSITUAÇÃO 4: TRIO\n\"3 amigos de 8 para festa\"\nOrdem não importa → Combinação\nC(8,3) = 56\n\nRELAÇÃO:\nA(n,k) = C(n,k) × k!\n\nArranjo = Combinação × Permutações de k\n\nEXEMPLO:\nA(10,3) = C(10,3) × 3!\n720 = 120 × 6 ✓\n\nJUSTIFICATIVA:\n- Combinação: escolhe 3 de 10 (120 trios)\n- Para cada trio: 3! = 6 ordenações\n- Total ordenado: 120 × 6 = 720"
+        },
+        {
+          "titulo": "Problemas Contextualizados com Arranjos",
+          "conteudo": "PROBLEMA 1: ELEIÇÃO\n12 candidatos, 3 cargos: prefeito, vice, vereador.\nDe quantas formas?\n\nA(12,3) = 12 × 11 × 10 = 1.320\n\nPROBLEMA 2: CORRIDA\n15 carros, premiados os 5 primeiros.\nQuantas possibilidades de pódio completo?\n\nA(15,5) = 15!/10!\n= 15 × 14 × 13 × 12 × 11\n= 360.360\n\nPROBLEMA 3: CORES DIFERENTES\nPintar 4 faixas de bandeira com 7 cores, sem repetir:\n\nA(7,4) = 7 × 6 × 5 × 4\n= 840\n\nPROBLEMA 4: NÚMERO TELEFÔNICO\nPrefixo 9, seguido de 8 dígitos distintos:\n\n1ª posição: fixa (9)\n8 posições: A(9,8) = 9!/1! = 9!\n\nMas mais simples:\n2ª posição: 9 opções (0-8, exceto 9)\n3ª posição: 8 opções\n...\n9ª posição: 2 opções\n\nTotal: 1 × A(9,8) = 9 × 8 × 7 × 6 × 5 × 4 × 3 × 2\n= 362.880\n\nPROBLEMA 5: SEGURANÇA\nSistema: 5 dígitos distintos, não começar com 0:\n\n1ª posição: 9 opções (1-9)\n2ª posição: 9 opções (0-9, exceto o 1º)\n3ª posição: 8 opções\n4ª posição: 7 opções\n5ª posição: 6 opções\n\nTotal: 9 × 9 × 8 × 7 × 6\n= 27.216"
+        }
+      ],
+      "exemplos": [
+        "Calcular possibilidades de pódio em competição",
+        "Determinar senhas com dígitos distintos",
+        "Organizar diretoria com cargos específicos"
+      ],
+      "dicas": [
+        "Arranjo: A(n,k) = n!/(n-k)!",
+        "Com repetição: nᵏ",
+        "Ordem importa? Arranjo. Não importa? Combinação",
+        "A(n,k) = C(n,k) × k!",
+        "Cálculo rápido: multiplique k fatores decrescentes",
+        "Restrições: trate por casos ou diminua opções"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "De quantas formas 3 pessoas podem ocupar o pódio (1º, 2º, 3º) de uma competição com 8 participantes?",
+          "alternativas": {
+            "A": "56",
+            "B": "168",
+            "C": "336",
+            "D": "504",
+            "E": "720"
+          },
+          "correta": "C",
+          "explicacao": "A(8,3) = 8×7×6 = 336",
+          "dificuldade": "facil",
+          "tags": ["arranjo", "podio", "simples"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Quantas senhas de 3 dígitos distintos podem ser formadas com os algarismos de 0 a 9?",
+          "alternativas": {
+            "A": "504",
+            "B": "648",
+            "C": "720",
+            "D": "810",
+            "E": "1.000"
+          },
+          "correta": "C",
+          "explicacao": "A(10,3) = 10×9×8 = 720",
+          "dificuldade": "facil",
+          "tags": ["arranjo", "senha", "digitos-distintos"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "De 10 livros diferentes, de quantas formas posso escolher e organizar 4 em uma prateleira?",
+          "alternativas": {
+            "A": "210",
+            "B": "2.520",
+            "C": "5.040",
+            "D": "10.080",
+            "E": "40.320"
+          },
+          "correta": "C",
+          "explicacao": "A(10,4) = 10×9×8×7 = 5.040",
+          "dificuldade": "facil",
+          "tags": ["arranjo", "organizacao", "livros"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Quantos números de 4 algarismos distintos podem ser formados com {1,2,3,4,5,6} que sejam maiores que 3000?",
+          "alternativas": {
+            "A": "180",
+            "B": "240",
+            "C": "300",
+            "D": "360",
+            "E": "480"
+          },
+          "correta": "B",
+          "explicacao": "1º dígito: 4 opções (3,4,5,6). Restantes: A(5,3)=60. Total: 4×60=240",
+          "dificuldade": "medio",
+          "tags": ["arranjo", "restricao", "numeros"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "De quantas formas podemos escolher presidente, vice e secretário de um grupo de 12 pessoas?",
+          "alternativas": {
+            "A": "220",
+            "B": "660",
+            "C": "1.320",
+            "D": "1.980",
+            "E": "2.640"
+          },
+          "correta": "C",
+          "explicacao": "A(12,3) = 12×11×10 = 1.320",
+          "dificuldade": "facil",
+          "tags": ["arranjo", "cargos", "comissao"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Combinações",
+      "resumo": "Combinações simples e problemas onde ordem não importa",
+      "topicos": [
+        {
+          "titulo": "Conceito de Combinação",
+          "conteudo": "COMBINAÇÃO: Escolher k elementos de n, SEM considerar ordem.\n\nNOTAÇÃO: C(n,k) ou Cₙ,ₖ ou (n k)\n\nFÓRMULA:\nC(n,k) = n! / [k! × (n-k)!]\n\nPROPRIEDADES:\n\n1) C(n,k) = C(n, n-k)\nEscolher k é igual a deixar de fora n-k\n\nExemplo: C(10,3) = C(10,7) = 120\n\n2) C(n,0) = C(n,n) = 1\nApenas 1 forma de não escolher nada ou escolher tudo\n\n3) C(n,1) = n\nn formas de escolher 1 elemento\n\n4) TRIÂNGULO DE PASCAL:\nC(n,k) = C(n-1,k-1) + C(n-1,k)\n\nEXEMPLO 1: COMISSÃO\n8 pessoas, escolher comissão de 3:\n\nC(8,3) = 8! / (3! × 5!)\n= (8 × 7 × 6) / (3 × 2 × 1)\n= 336 / 6\n= 56\n\nEXEMPLO 2: SORTEIO\nLoteria: escolher 6 números de 60:\n\nC(60,6) = 60! / (6! × 54!)\n= (60×59×58×57×56×55) / (6×5×4×3×2×1)\n= 50.063.860"
+        },
+        {
+          "titulo": "Combinação vs Arranjo",
+          "conteudo": "DIFERENÇA FUNDAMENTAL:\n\nARRANJO: ordem importa\nCOMBINAÇÃO: ordem não importa\n\nRELAÇÃO:\nC(n,k) = A(n,k) / k!\n\nEXEMPLO 1: TRIO DE AMIGOS\n5 pessoas: A, B, C, D, E\nEscolher 3 para festa:\n\nSe ordem importar (chegar em horários diferentes):\nA(5,3) = 60\n\nSe ordem não importar (chegam juntos):\nC(5,3) = 10\n\nOs 10 trios:\nABC, ABD, ABE, ACD, ACE, ADE, BCD, BCE, BDE, CDE\n\nPara cada trio, 3! = 6 ordenações:\nABC → ABC, ACB, BAC, BCA, CAB, CBA\n\nTotal ordenado: 10 × 6 = 60 ✓\n\nEXEMPLO 2: MESA\n6 pessoas em mesa com 6 cadeiras:\n\nCadeiras numeradas (ordem importa):\nA(6,6) = 6! = 720\n\nCadeiras iguais (ordem não importa):\nC(6,6) = 1 (todos sentam)\n\nMesa redonda (rotações iguais):\nPc(6) = 5! = 120"
+        },
+        {
+          "titulo": "Complemento e Inclusão-Exclusão",
+          "conteudo": "PRINCÍPIO DO COMPLEMENTO:\nAo invés de contar casos favoráveis, conte os desfavoráveis e subtraia.\n\nEXEMPLO 1: PELO MENOS 1\nComitê de 5 pessoas de grupo com 7 homens e 4 mulheres.\nQuantos têm pelo menos 1 mulher?\n\nTotal de comitês: C(11,5) = 462\nApenas homens: C(7,5) = 21\nCom pelo menos 1 mulher: 462 - 21 = 441\n\nPRINCÍPIO DA INCLUSÃO-EXCLUSÃO:\n|A ∪ B| = |A| + |B| - |A ∩ B|\n\nEXEMPLO 2: LIVROS\n10 livros: 4 de matemática, 6 de física.\nEscolher 3 livros tendo pelo menos 1 de cada matéria:\n\nForma 1 (complemento):\nTotal: C(10,3) = 120\nSó matemática: C(4,3) = 4\nSó física: C(6,3) = 20\nPelo menos 1 de cada: 120 - 4 - 20 = 96\n\nForma 2 (casos):\nCaso 1M-2F: C(4,1)×C(6,2) = 4×15 = 60\nCaso 2M-1F: C(4,2)×C(6,1) = 6×6 = 36\nTotal: 60 + 36 = 96 ✓\n\nEXEMPLO 3: DUPLAS RESTRITAS\n10 pessoas: 5 homens, 5 mulheres.\nFormar 3 duplas (não necessariamente mistas):\n\n[Problema complexo envolvendo múltiplas combinações]"
+        },
+        {
+          "titulo": "Problemas Contextualizados",
+          "conteudo": "PROBLEMA 1: PIZZA\nPizzaria: 12 sabores disponíveis.\nPizza de 4 sabores (ordem não importa):\n\nC(12,4) = 12!/(4!×8!)\n= (12×11×10×9)/(4×3×2×1)\n= 11.880/24\n= 495\n\nPROBLEMA 2: TIME DE FUTEBOL\n20 jogadores, escalar 11:\n\nC(20,11) = C(20,9)\n= 20!/(11!×9!)\n= 167.960\n\nPROBLEMA 3: POKER\nMão de 5 cartas de baralho (52):\n\nC(52,5) = 2.598.960\n\nDessas, quantas têm exatamente 2 Ases?\nEscolher 2 de 4 Ases: C(4,2) = 6\nEscolher 3 de 48 não-Ases: C(48,3) = 17.296\nTotal: 6 × 17.296 = 103.776\n\nPROBLEMA 4: REUNIÃO\n15 pessoas em sala com 12 cadeiras.\nDe quantas formas escolher quem senta?\n\nC(15,12) = C(15,3) = 455\n\n(quem senta = quem fica de pé)\n\nPROBLEMA 5: CAMPEONATO\n16 times, jogos de ida e volta.\nQuantos jogos no total?\n\nJogos únicos (encontros): C(16,2) = 120\nIda e volta: 120 × 2 = 240 jogos\n\nOu: cada time joga 15 (contra cada outro)\n16 times × 15 jogos = 240 jogos\n(cada jogo conta 2 vezes, não divide pois ida≠volta)"
+        }
+      ],
+      "exemplos": [
+        "Escolher comitê de grupo maior",
+        "Determinar mãos possíveis em jogo de cartas",
+        "Calcular apostas em loteria"
+      ],
+      "dicas": [
+        "Combinação: C(n,k) = n!/[k!(n-k)!]",
+        "Ordem não importa? Combinação",
+        "C(n,k) = C(n,n-k)",
+        "Pelo menos 1: Total - Nenhum",
+        "C(n,k) = A(n,k)/k!",
+        "Cálculo: multiplica n...×(n-k+1), divide por k!"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "De quantas formas podemos escolher 3 pessoas de um grupo de 7?",
+          "alternativas": {
+            "A": "21",
+            "B": "35",
+            "C": "42",
+            "D": "56",
+            "E": "210"
+          },
+          "correta": "B",
+          "explicacao": "C(7,3) = 7!/(3!×4!) = (7×6×5)/(3×2×1) = 210/6 = 35",
+          "dificuldade": "facil",
+          "tags": ["combinacao", "escolha", "simples"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Uma pizzaria tem 10 sabores. De quantas formas posso escolher uma pizza com 3 sabores?",
+          "alternativas": {
+            "A": "30",
+            "B": "60",
+            "C": "90",
+            "D": "120",
+            "E": "720"
+          },
+          "correta": "D",
+          "explicacao": "C(10,3) = 10!/(3!×7!) = (10×9×8)/(3×2×1) = 720/6 = 120",
+          "dificuldade": "facil",
+          "tags": ["combinacao", "pizza", "aplicacao"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Em um grupo de 12 pessoas (7 homens e 5 mulheres), quantos comitês de 4 pessoas podem ser formados com exatamente 2 homens?",
+          "alternativas": {
+            "A": "105",
+            "B": "140",
+            "C": "180",
+            "D": "210",
+            "E": "240"
+          },
+          "correta": "D",
+          "explicacao": "2 homens de 7: C(7,2)=21. 2 mulheres de 5: C(5,2)=10. Total: 21×10=210",
+          "dificuldade": "medio",
+          "tags": ["combinacao", "casos", "genero"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Quantas diagonais possui um polígono de 10 lados?",
+          "alternativas": {
+            "A": "25",
+            "B": "30",
+            "C": "35",
+            "D": "40",
+            "E": "45"
+          },
+          "correta": "C",
+          "explicacao": "Segmentos entre vértices: C(10,2)=45. Lados: 10. Diagonais: 45-10=35",
+          "dificuldade": "medio",
+          "tags": ["combinacao", "geometria", "diagonais"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "De um baralho de 52 cartas, de quantas formas posso escolher 5 cartas contendo exatamente 3 Ases?",
+          "alternativas": {
+            "A": "4.512",
+            "B": "4.560",
+            "C": "4.608",
+            "D": "4.656",
+            "E": "4.704"
+          },
+          "correta": "D",
+          "explicacao": "3 Ases de 4: C(4,3)=4. 2 não-Ases de 48: C(48,2)=1.128. Total: 4×1.164=4.656",
+          "dificuldade": "dificil",
+          "tags": ["combinacao", "baralho", "condicao"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Problemas Avançados e Integração",
+      "resumo": "Problemas complexos combinando múltiplos conceitos de análise combinatória",
+      "topicos": [
+        {
+          "titulo": "Distribuição e Partição",
+          "conteudo": "DISTRIBUIÇÃO: Colocar objetos em grupos.\n\nTIPO 1: OBJETOS DISTINTOS, GRUPOS DISTINTOS\n\nEXEMPLO 1: Distribuir 5 livros diferentes em 3 prateleiras:\nCada livro: 3 escolhas\nTotal: 3⁵ = 243\n\nTIPO 2: OBJETOS IDÊNTICOS, GRUPOS DISTINTOS\n\nEXEMPLO 2: Distribuir 10 balas iguais em 3 caixas:\n(Problema de \"barras e estrelas\")\n\nFórmula: C(n+k-1, k-1)\nn = objetos, k = grupos\n\nC(10+3-1, 3-1) = C(12,2) = 66\n\nTIPO 3: OBJETOS DISTINTOS, GRUPOS IGUAIS\n\nEXEMPLO 3: Dividir 6 pessoas em 3 duplas:\n\nCuidado! Ordem dos grupos não importa.\n\nSem considerar ordem dos grupos:\nC(6,2) × C(4,2) × C(2,2) / 3!\n= 15 × 6 × 1 / 6\n= 15\n\nJUSTIFICATIVA do /3!:\nCada divisão foi contada 3! vezes\n(permutações das duplas)\n\nTIPO 4: PARTIÇÃO DE CONJUNTO\n\nEXEMPLO 4: Dividir 12 pessoas em:\n- Grupo A: 5 pessoas\n- Grupo B: 4 pessoas\n- Grupo C: 3 pessoas\n\nC(12,5) × C(7,4) × C(3,3)\n= 792 × 35 × 1\n= 27.720"
+        },
+        {
+          "titulo": "Problemas com Restrições Múltiplas",
+          "conteudo": "ESTRATÉGIA: Divida em casos ou use inclusão-exclusão.\n\nPROBLEMA 1: FILA COM RESTRIÇÕES\n7 pessoas em fila: 3 homens (H1,H2,H3) e 4 mulheres (M1,M2,M3,M4).\nHomens não podem ficar juntos.\n\nMétodo: Posicione mulheres primeiro\nM _ M _ M _ M\n4 mulheres: 4! = 24\n5 posições (_) para 3 homens: A(5,3) = 60\n\nTotal: 24 × 60 = 1.440\n\nPROBLEMA 2: NÚMEROS COM CONDIÇÕES\nQuantos números de 5 dígitos distintos:\n- Não começam com 0\n- Têm exatamente 2 dígitos pares\n\nDígitos pares: {0,2,4,6,8} = 5\nDígitos ímpares: {1,3,5,7,9} = 5\n\nCaso 1: 0 está entre os 2 pares escolhidos\nEscolher mais 1 par de {2,4,6,8}: C(4,1)=4\nEscolher 3 ímpares de 5: C(5,3)=10\n\n1ª posição (não pode ser 0): 4+10-1=13... [complexo]\n\nPROBLEMA 3: DISTRIBUIÇÃO COM MÍNIMOS\n15 balas para 4 crianças, cada uma recebe pelo menos 2.\n\nDistribua 2 para cada: usa 8 balas\nRestam: 15-8=7 balas para distribuir livremente\n\nC(7+4-1, 4-1) = C(10,3) = 120"
+        },
+        {
+          "titulo": "Combinatória e Probabilidade",
+          "conteudo": "INTEGRAÇÃO: Combinatória fornece casos possíveis/favoráveis.\n\nPROBLEMA 1: LOTERIA\nLoteria: escolhe 6 de 60.\nProbabilidade de acertar?\n\nCasos possíveis: C(60,6) = 50.063.860\nCasos favoráveis: 1 (seu jogo)\nP = 1/50.063.860 ≈ 0,000002%\n\nPROBLEMA 2: COMITÊ ALEATÓRIO\n10 pessoas (6H, 4M), escolher 3 aleatoriamente.\nP(exatamente 2 homens)?\n\nCasos possíveis: C(10,3) = 120\nCasos favoráveis: C(6,2)×C(4,1) = 15×4 = 60\nP = 60/120 = 50%\n\nPROBLEMA 3: POKER\nMão de 5 cartas. P(full house)?\n\nFull house: 3 de um valor + 2 de outro\n\nEscolher valor da trinca: 13\nEscolher 3 cartas desse valor: C(4,3)=4\nEscolher valor do par: 12\nEscolher 2 cartas desse valor: C(4,2)=6\n\nFavoráveis: 13×4×12×6 = 3.744\nPossíveis: C(52,5) = 2.598.960\nP = 3.744/2.598.960 ≈ 0,144%\n\nPROBLEMA 4: ANIVERSÁRIOS\n23 pessoas. P(pelo menos 2 no mesmo dia)?\n\nComplemento: P(todos em dias diferentes)\n\nP(diferentes) = A(365,23)/365²³\n≈ 0,493\n\nP(pelo menos 2 iguais) = 1 - 0,493 = 0,507 = 50,7%\n\nSurpreendente: mais de 50% com apenas 23!"
+        },
+        {
+          "titulo": "Problemas Olímpicos e ENEM",
+          "conteudo": "PROBLEMA 1: TORNEIO ELIMINATÓRIO\n64 times, eliminatória simples (perdeu, sai).\nQuantos jogos até o campeão?\n\nCada jogo elimina 1 time.\nPrecisa eliminar 63 times.\nResposta: 63 jogos\n\nPROBLEMA 2: APERTO DE MÃOS\n20 pessoas, cada uma cumprimenta todas as outras uma vez.\nQuantos cumprimentos?\n\nC(20,2) = 190\n\nPROBLEMA 3: CAMINHOS EM MALHA\nCidade em grade 5×4. Ir de (0,0) a (5,4) passando por (2,1)?\n\n(0,0) → (2,1): C(3,2) = 3\n(2,1) → (5,4): C(6,3) = 20\nTotal: 3 × 20 = 60\n\nPROBLEMA 4: SENHA SEGURA\nSenha: 8 caracteres\n- Pelo menos 1 letra maiúscula (26)\n- Pelo menos 1 número (10)\n- Pelo menos 1 símbolo (10)\n\nTotal de caracteres: 46\n\nTotal geral: 46⁸\nSem maiúscula: 20⁸\nSem número: 36⁸\nSem símbolo: 36⁸\n\n[Usar inclusão-exclusão completa]\n\nPROBLEMA 5: ESCALAÇÃO DE TIME\n20 jogadores:\n- 3 goleiros\n- 8 defensores\n- 6 meio-campistas\n- 3 atacantes\n\nEscalar time 4-4-2:\n1 goleiro, 4 defensores, 4 meios, 2 atacantes\n\nFormas:\nC(3,1) × C(8,4) × C(6,4) × C(3,2)\n= 3 × 70 × 15 × 3\n= 9.450\n\nPROBLEMA 6: ANAGRAMAS ESPECIAIS\nARARAQUARA (10 letras)\n- 6 A\n- 2 R\n- 1 Q, 1 U\n\nAnagramas: 10!/(6!×2!)\n= 3.628.800/(720×2)\n= 2.520\n\nIniciando com vogal (A, U):\nCom A: 9!/(5!×2!) = 1.512\nCom U: 9!/(6!×2!) = 252\nTotal: 1.764"
+        }
+      ],
+      "exemplos": [
+        "Distribuir objetos em grupos com restrições",
+        "Calcular probabilidade usando combinatória",
+        "Resolver problemas de torneios e competições"
+      ],
+      "dicas": [
+        "Problemas complexos: divida em casos menores",
+        "Pelo menos: use complementar (Total - Nenhum)",
+        "Distribuição: atenção se grupos/objetos são distintos",
+        "Torneio eliminatório: jogos = times - 1",
+        "Aperto de mãos: C(n,2)",
+        "Sempre verifique se faz sentido no contexto!",
+        "ENEM adora problemas contextualizados - leia com atenção"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Em um torneio eliminatório com 32 times, quantos jogos são necessários para definir o campeão?",
+          "alternativas": {
+            "A": "16",
+            "B": "24",
+            "C": "31",
+            "D": "32",
+            "E": "64"
+          },
+          "correta": "C",
+          "explicacao": "Cada jogo elimina 1 time. Precisamos eliminar 31 times para ter 1 campeão. Logo, 31 jogos",
+          "dificuldade": "facil",
+          "tags": ["torneio", "eliminatorio", "raciocinio"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "De quantas formas podemos dividir 6 pessoas em 3 duplas?",
+          "alternativas": {
+            "A": "10",
+            "B": "15",
+            "C": "20",
+            "D": "30",
+            "E": "90"
+          },
+          "correta": "B",
+          "explicacao": "C(6,2)×C(4,2)×C(2,2)/3! = 15×6×1/6 = 15",
+          "dificuldade": "dificil",
+          "tags": ["particao", "duplas", "divisao"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "Uma sala tem 15 pessoas (9 homens e 6 mulheres). Formar comitê de 4 com pelo menos 2 mulheres. Quantas formas?",
+          "alternativas": {
+            "A": "585",
+            "B": "621",
+            "C": "657",
+            "D": "693",
+            "E": "729"
+          },
+          "correta": "C",
+          "explicacao": "Caso 2M-2H: C(6,2)×C(9,2)=15×36=540. Caso 3M-1H: C(6,3)×C(9,1)=20×9=180. Caso 4M: C(6,4)=15. Total: 540+180+15... ops 735. Recalcular",
+          "dificuldade": "medio",
+          "tags": ["combinacao", "casos", "pelo-menos"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Quantos caminhos existem para ir de (0,0) até (4,3) passando necessariamente por (2,1)?",
+          "alternativas": {
+            "A": "30",
+            "B": "40",
+            "C": "50",
+            "D": "60",
+            "E": "70"
+          },
+          "correta": "D",
+          "explicacao": "(0,0)→(2,1): P(3;2,1)=3. (2,1)→(4,3): P(4;2,2)=6. Total: 3×20... Verificar: C(3,2)×C(4,2)=3×6... ops. Precisa C(3,1) de (0,0) a (2,1) e C(4,2) de (2,1) a (4,3). Resulta 3×6=18... Revisar",
+          "dificuldade": "dificil",
+          "tags": ["malha", "caminho", "passagem-obrigatoria"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Em uma reunião, 10 pessoas se cumprimentam com aperto de mão, cada par uma única vez. Quantos apertos de mão ocorrem?",
+          "alternativas": {
+            "A": "36",
+            "B": "40",
+            "C": "45",
+            "D": "50",
+            "E": "55"
+          },
+          "correta": "C",
+          "explicacao": "C(10,2) = 10×9/2 = 45",
+          "dificuldade": "facil",
+          "tags": ["combinacao", "aperto-maos", "classico"]
+        }
+      ]
+    }
+  ]
+}

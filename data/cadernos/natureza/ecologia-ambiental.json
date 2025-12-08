@@ -1,0 +1,570 @@
+{
+  "id": "ecologia-ambiental",
+  "slug": "ecologia-ambiental",
+  "titulo": "Ecologia e Meio Ambiente",
+  "categoria": "natureza",
+  "nivel": "intermediario",
+  "descricao": "Estudo dos ecossistemas, relações ecológicas, cadeias alimentares e impactos ambientais relevantes para o ENEM",
+  "icone": "Leaf",
+  "cor": "#22c55e",
+  "tempoEstimado": "6 horas",
+  "fpRecompensa": 0,
+  "tags": ["ecologia", "meio ambiente", "sustentabilidade", "ENEM"],
+  "modulos": [
+    {
+      "id": "modulo01",
+      "titulo": "Ecossistemas e Biomas Brasileiros",
+      "resumo": "Compreensão dos principais ecossistemas e biomas do Brasil, suas características e importância ecológica",
+      "topicos": [
+        {
+          "titulo": "Conceitos Fundamentais de Ecologia",
+          "conteudo": "A ecologia é a ciência que estuda as relações entre os seres vivos e o ambiente em que vivem. O ecossistema é a unidade básica de estudo da ecologia, composto por fatores bióticos (seres vivos) e abióticos (elementos não vivos como água, luz, temperatura). A biosfera representa o conjunto de todos os ecossistemas da Terra, abrangendo desde as profundezas oceânicas até as mais altas montanhas.\n\nA população ecológica é definida como o conjunto de indivíduos da mesma espécie que habitam determinada área em um mesmo período. Já a comunidade biológica (ou biocenose) engloba todas as populações que coexistem em um ecossistema. O habitat é o local físico onde uma espécie vive, enquanto o nicho ecológico representa o papel funcional que essa espécie desempenha no ecossistema, incluindo seus hábitos alimentares, período de atividade e interações com outras espécies.\n\nOs fatores abióticos exercem influência determinante sobre os organismos. A luz solar é fundamental para a fotossíntese e influencia o fotoperíodo, afetando comportamentos reprodutivos e migratórios. A temperatura regula processos metabólicos e determina a distribuição geográfica das espécies. A água é essencial para todos os processos vitais, e sua disponibilidade molda características adaptativas dos organismos. O solo fornece nutrientes e suporte físico para as plantas, variando em composição e fertilidade.\n\nA sucessão ecológica é o processo gradual de mudanças na composição de espécies de uma comunidade ao longo do tempo. A sucessão primária ocorre em áreas nunca antes colonizadas, como rochas nuas ou dunas de areia, iniciando-se com espécies pioneiras como líquens e musgos. A sucessão secundária acontece em áreas que já foram habitadas mas sofreram perturbações, como campos abandonados ou áreas queimadas, sendo mais rápida que a primária por haver solo formado e banco de sementes."
+        },
+        {
+          "titulo": "Biomas Brasileiros e suas Características",
+          "conteudo": "O Brasil possui seis grandes biomas terrestres, cada um com características climáticas, vegetação e fauna específicas. A Amazônia é o maior bioma brasileiro, caracterizado por floresta tropical úmida, alta biodiversidade, clima quente e úmido com chuvas abundantes durante o ano todo. Apresenta estratificação vertical da vegetação em diferentes andares, adaptações como folhas com ápice gotejante para escoamento de água, e é crucial para o ciclo hidrológico global através da evapotranspiração.\n\nA Mata Atlântica, originalmente estendendo-se por toda a costa brasileira, é hoje um dos biomas mais ameaçados do mundo, com menos de 12% de sua cobertura original preservada. Caracteriza-se por alta biodiversidade, presença de espécies endêmicas, clima tropical úmido com chuvas bem distribuídas, e vegetação adaptada às encostas montanhosas. É fundamental para a proteção de nascentes e mananciais que abastecem as grandes cidades brasileiras.\n\nO Cerrado, conhecido como a savana brasileira, ocupa o Planalto Central e apresenta vegetação com árvores baixas e retorcidas, cascas grossas como proteção contra queimadas, raízes profundas para buscar água no lençol freático durante a estação seca. O clima é tropical sazonal, com verão chuvoso e inverno seco. É considerado a savana com maior biodiversidade do mundo e importante reservatório de recursos hídricos, abrigando nascentes das principais bacias hidrográficas brasileiras.\n\nA Caatinga é o único bioma exclusivamente brasileiro, adaptado ao clima semiárido do Nordeste. Apresenta vegetação xerófita com adaptações à escassez de água: folhas pequenas ou transformadas em espinhos, caules suculentos para armazenar água, raízes superficiais para aproveitar chuvas rápidas. Os animais também apresentam adaptações comportamentais e fisiológicas à seca. O Pampa, no extremo sul, caracteriza-se por campos herbáceos e clima subtropical. O Pantanal é a maior planície alagável do mundo, com alternância entre períodos de cheia e seca que moldam toda a dinâmica ecológica."
+        },
+        {
+          "titulo": "Ciclos Biogeoquímicos",
+          "conteudo": "Os ciclos biogeoquímicos representam o movimento e a transformação de elementos químicos entre os componentes bióticos e abióticos dos ecossistemas. O ciclo da água (hidrológico) é fundamental para todos os outros ciclos, envolvendo evaporação das águas superficiais, transpiração das plantas, condensação formando nuvens, precipitação e infiltração no solo. As atividades humanas como desmatamento, impermeabilização do solo e poluição afetam significativamente este ciclo.\n\nO ciclo do carbono é essencial para a vida e está intimamente ligado ao efeito estufa e às mudanças climáticas. O carbono atmosférico (CO₂) é fixado pelas plantas durante a fotossíntese, convertido em compostos orgânicos que circulam pelas cadeias alimentares. Retorna à atmosfera através da respiração celular, decomposição da matéria orgânica e combustão. A queima de combustíveis fósseis e o desmatamento aumentam drasticamente o CO₂ atmosférico, intensificando o aquecimento global.\n\nO ciclo do nitrogênio é complexo e envolve várias transformações. O N₂ atmosférico é convertido em formas utilizáveis pelas plantas através da fixação biológica (bactérias fixadoras como Rhizobium em raízes de leguminosas), fixação industrial (produção de fertilizantes) e fixação atmosférica (raios). A amonificação transforma compostos orgânicos nitrogenados em amônia. A nitrificação converte amônia em nitritos e depois em nitratos. A desnitrificação retorna N₂ à atmosfera. O uso excessivo de fertilizantes nitrogenados causa eutrofização de corpos d'água.\n\nO ciclo do oxigênio está acoplado ao ciclo do carbono. A fotossíntese libera O₂ para a atmosfera, enquanto a respiração celular o consome. O oxigênio também participa da formação da camada de ozônio (O₃) na estratosfera, essencial para filtrar radiação ultravioleta. O ciclo do fósforo é sedimentar, sem fase gasosa significativa. O fósforo das rochas é liberado por intemperismo, absorvido pelas plantas, circula pelas cadeias alimentares e retorna ao solo pela decomposição, sendo gradualmente carregado para os oceanos onde sedimenta."
+        },
+        {
+          "titulo": "Fluxo de Energia nos Ecossistemas",
+          "conteudo": "O fluxo de energia nos ecossistemas é unidirecional, iniciando-se com a captação da energia solar pelos produtores e fluindo através dos níveis tróficos até se dissipar como calor. A energia não é reciclada como a matéria, mas constantemente renovada pela luz solar. Os produtores (seres autotróficos como plantas e algas) convertem energia luminosa em energia química através da fotossíntese, fixando cerca de 1-2% da energia solar incidente.\n\nOs consumidores primários (herbívoros) obtêm energia alimentando-se dos produtores, aproveitando apenas cerca de 10% da energia disponível no nível anterior - o restante é perdido em processos metabólicos, movimento e calor. Este princípio é conhecido como regra dos 10% ou eficiência ecológica. Os consumidores secundários (carnívoros) alimentam-se dos herbívoros, e assim sucessivamente, formando diferentes níveis tróficos. A cada transferência trófica, há perda de energia, limitando o número de níveis em uma cadeia alimentar.\n\nAs pirâmides ecológicas representam graficamente as relações quantitativas entre os níveis tróficos. A pirâmide de energia sempre apresenta formato piramidal verdadeiro, com a base larga (produtores) e o topo estreito (consumidores terciários), refletindo a perda de energia. A pirâmide de biomassa geralmente é piramidal, mas pode ser invertida em ecossistemas aquáticos onde produtores microscópicos têm alta taxa de reprodução. A pirâmide de números pode ter formatos variados dependendo do tamanho dos organismos em cada nível.\n\nA produtividade primária bruta (PPB) é a taxa total de fotossíntese do ecossistema. A produtividade primária líquida (PPL) é a energia que fica disponível para os níveis tróficos seguintes após descontada a respiração dos produtores: PPL = PPB - Respiração. Ecossistemas como florestas tropicais, estuários e recifes de coral apresentam alta produtividade primária. A produtividade secundária refere-se à taxa de acúmulo de energia nos níveis dos consumidores, sempre menor que a produtividade primária devido às perdas energéticas."
+        }
+      ],
+      "exemplos": [
+        "Floresta Amazônica como exemplo de ecossistema com alta biodiversidade e complexidade de nichos ecológicos",
+        "Sucessão ecológica em dunas de areia do litoral brasileiro, desde colonização por pioneiras até formação de mata",
+        "Relação entre bactérias fixadoras de nitrogênio e leguminosas como exemplo de mutualismo benéfico para agricultura"
+      ],
+      "dicas": [
+        "No ENEM, questões sobre biomas frequentemente relacionam características climáticas com adaptações da vegetação",
+        "Entenda a diferença entre habitat e nicho ecológico - conceitos muito cobrados em provas",
+        "Ciclos biogeoquímicos são tema recorrente, especialmente relacionados a impactos ambientais",
+        "A regra dos 10% explica por que cadeias alimentares raramente têm mais de 4-5 níveis tróficos"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "O Cerrado brasileiro é reconhecido como a savana de maior biodiversidade do planeta, apresentando vegetação com árvores de troncos retorcidos, cascas grossas e raízes profundas. Durante a estação seca, que se estende por cerca de seis meses, muitas plantas perdem suas folhas. Essas características adaptativas estão relacionadas principalmente a qual fator abiótico?",
+          "alternativas": {
+            "A": "Baixa disponibilidade de luz solar durante o inverno",
+            "B": "Temperaturas muito baixas no período de seca",
+            "C": "Escassez de nutrientes no solo superficial",
+            "D": "Irregularidade na distribuição de chuvas ao longo do ano",
+            "E": "Elevada concentração de metais pesados no solo"
+          },
+          "correta": "D",
+          "explicacao": "As adaptações morfológicas do Cerrado (cascas grossas, raízes profundas, folhas decíduas) são respostas à sazonalidade hídrica característica deste bioma. O clima tropical sazonal apresenta verão chuvoso e inverno seco bem definidos. As raízes profundas permitem acessar água do lençol freático durante a seca, as cascas grossas protegem contra queimadas naturais, e a queda de folhas reduz a perda de água por transpiração no período seco.",
+          "dificuldade": "medio",
+          "tags": ["biomas", "adaptações", "cerrado"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Em um ecossistema aquático, foi observado que a biomassa de fitoplâncton (produtores) era menor que a biomassa de zooplâncton (consumidores primários) em determinado momento. Apesar disso, o ecossistema mantinha-se equilibrado. Qual explicação melhor justifica essa observação aparentemente contraditória?",
+          "alternativas": {
+            "A": "O zooplâncton possui maior eficiência na conversão de energia que outros consumidores",
+            "B": "O fitoplâncton tem altíssima taxa de reprodução, renovando-se rapidamente",
+            "C": "Os consumidores secundários estavam ausentes do ecossistema naquele período",
+            "D": "O ecossistema estava em desequilíbrio e caminhando para colapso",
+            "E": "A energia solar estava menos disponível, reduzindo a fotossíntese"
+          },
+          "correta": "B",
+          "explicacao": "A pirâmide de biomassa pode ser invertida em ecossistemas aquáticos porque o fitoplâncton, embora tenha biomassa pequena em dado momento, possui taxa de reprodução extremamente rápida. Isso significa que a produtividade (quantidade de matéria orgânica produzida por unidade de tempo) é alta o suficiente para sustentar uma biomassa maior de herbívoros. A biomassa é uma medida estática (quantidade em um momento), enquanto a produtividade é dinâmica (taxa de produção ao longo do tempo).",
+          "dificuldade": "dificil",
+          "tags": ["pirâmides ecológicas", "produtividade", "ecossistemas aquáticos"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "A eutrofização de lagos e rios é um problema ambiental crescente no Brasil, causado principalmente pelo excesso de nutrientes, especialmente nitrogênio e fósforo. Qual das seguintes atividades humanas contribui MAIS significativamente para o aumento de compostos nitrogenados em corpos d'água?",
+          "alternativas": {
+            "A": "Queima de combustíveis fósseis em veículos automotores",
+            "B": "Uso intensivo de fertilizantes agrícolas e esgoto não tratado",
+            "C": "Desmatamento de matas ciliares ao redor de rios",
+            "D": "Construção de hidrelétricas e barragens",
+            "E": "Extração de areia do leito de rios"
+          },
+          "correta": "B",
+          "explicacao": "O uso excessivo de fertilizantes nitrogenados na agricultura e o despejo de esgoto doméstico não tratado são as principais fontes de compostos nitrogenados que causam eutrofização. Fertilizantes lixiviados pela chuva e efluentes com alto teor de nitrogênio (proveniente de proteínas e ureia) chegam aos corpos d'água, estimulando crescimento excessivo de algas. A decomposição dessas algas consome oxigênio dissolvido, causando mortandade de peixes e desequilíbrio ecológico.",
+          "dificuldade": "medio",
+          "tags": ["poluição", "ciclo do nitrogênio", "impactos ambientais"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Durante uma sucessão ecológica primária em uma área de rochas nuas resultante de erupção vulcânica, observa-se uma sequência previsível de colonização. Qual característica das espécies pioneiras é fundamental para o início desse processo?",
+          "alternativas": {
+            "A": "Grande porte e sistema radicular profundo para estabilizar o substrato",
+            "B": "Capacidade de viver em condições extremas e alterar o ambiente",
+            "C": "Dependência de polinizadores específicos para reprodução",
+            "D": "Necessidade de solo rico em matéria orgânica",
+            "E": "Crescimento lento e grande longevidade"
+          },
+          "correta": "B",
+          "explicacao": "As espécies pioneiras, como líquens e musgos, são fundamentais na sucessão primária porque toleram condições adversas (pouca água, ausência de solo, exposição direta ao sol) e modificam o ambiente, criando condições para outras espécies. Líquens secretam ácidos que degradam a rocha, musgos retêm umidade, e a decomposição desses organismos inicia a formação de solo. São geralmente de pequeno porte, crescimento rápido e alta capacidade de dispersão, características opostas às espécies de estágios avançados da sucessão.",
+          "dificuldade": "medio",
+          "tags": ["sucessão ecológica", "espécies pioneiras", "ecossistemas"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "O desmatamento da Amazônia tem impactos que vão além da perda de biodiversidade. Pesquisas indicam que a redução da cobertura florestal amazônica pode afetar o regime de chuvas em regiões distantes, incluindo o Centro-Sul do Brasil. Esse fenômeno está relacionado principalmente a qual processo ecológico?",
+          "alternativas": {
+            "A": "Redução da fotossíntese e consequente aumento de CO₂ atmosférico",
+            "B": "Diminuição da evapotranspiração e alteração da circulação de massas de ar",
+            "C": "Aumento da temperatura do solo exposto que modifica correntes marinhas",
+            "D": "Liberação de carbono armazenado nas árvores que intensifica o efeito estufa",
+            "E": "Compactação do solo que impede a infiltração da água das chuvas"
+          },
+          "correta": "B",
+          "explicacao": "A floresta Amazônica funciona como uma 'bomba biótica' que recicla água através da evapotranspiração. As árvores absorvem água do solo e a liberam na atmosfera através da transpiração, formando 'rios voadores' - massas de ar úmido que transportam umidade para outras regiões. Com o desmatamento, há redução drástica da evapotranspiração, diminuindo a formação de nuvens e alterando padrões de precipitação não apenas na Amazônia, mas também no Centro-Sul do Brasil, onde essas massas de ar normalmente provocam chuvas.",
+          "dificuldade": "dificil",
+          "tags": ["desmatamento", "ciclo da água", "amazônia", "impactos ambientais"]
+        }
+      ]
+    },
+    {
+      "id": "modulo02",
+      "titulo": "Relações Ecológicas e Cadeias Alimentares",
+      "resumo": "Estudo das interações entre organismos, fluxo de matéria e energia nas teias alimentares",
+      "topicos": [
+        {
+          "titulo": "Relações Ecológicas Intraespecíficas",
+          "conteudo": "As relações intraespecíficas ocorrem entre indivíduos da mesma espécie e podem ser harmônicas (benéficas para ambos ou pelo menos não prejudiciais) ou desarmônicas (prejudiciais para pelo menos um dos envolvidos). A sociedade é uma relação harmônica onde indivíduos cooperam com divisão de trabalho, mantendo individualidade anatômica. Exemplos clássicos incluem abelhas, formigas e cupins, com castas especializadas (rainha, operárias, soldados), e também sociedades humanas.\n\nA colônia é uma associação anatômica permanente entre indivíduos, formando uma unidade funcional. Pode ser homotípica (indivíduos semelhantes, como corais) ou heterotípica (indivíduos diferentes com funções especializadas, como caravelas-portuguesas). Na caravela, diferentes tipos de pólipos desempenham funções de flutuação, alimentação, defesa e reprodução, funcionando como um único organismo.\n\nA competição intraespecífica é uma relação desarmônica fundamental na regulação populacional. Ocorre quando indivíduos disputam recursos limitados como alimento, território, parceiros reprodutivos ou luz solar. Quanto maior a densidade populacional, mais intensa a competição, funcionando como mecanismo natural de controle populacional. Em plantas, competição por luz e nutrientes determina o espaçamento e tamanho dos indivíduos. Em animais, estabelecimento de territórios e hierarquias sociais são estratégias para reduzir confrontos diretos.\n\nO canibalismo, embora pareça prejudicial à espécie, pode ter valor adaptativo em situações de escassez extrema de recursos. Fêmeas de algumas espécies de aranhas e louva-deus consomem o macho após a cópula, obtendo nutrientes para produção de ovos. Em populações de ratos sob alta densidade e estresse, pode ocorrer canibalismo de filhotes como mecanismo de controle populacional."
+        },
+        {
+          "titulo": "Relações Ecológicas Interespecíficas",
+          "conteudo": "O mutualismo é uma relação harmônica obrigatória entre espécies diferentes, onde ambas se beneficiam e não sobrevivem isoladamente. Líquens representam mutualismo entre fungos e algas/cianobactérias: o fungo fornece proteção e umidade, enquanto o parceiro fotossintetizante produz alimento. Bactérias fixadoras de nitrogênio (Rhizobium) em nódulos radiculares de leguminosas exemplificam mutualismo crucial para agricultura: a bactéria fornece nitrogênio assimilável e recebe carboidratos da planta.\n\nO protocooperação é relação benéfica mas não obrigatória - as espécies podem viver separadamente. Exemplos incluem: pássaros que se alimentam de carrapatos em bovinos (ave obtém alimento, bovino livra-se de parasitas); peixes-palhaço e anêmonas (peixe ganha proteção, anêmona recebe restos alimentares); polinização por insetos (inseto obtém néctar, planta garante reprodução). Essa relação é extremamente importante para manutenção da biodiversidade e funcionamento dos ecossistemas.\n\nO comensalismo beneficia uma espécie sem prejudicar nem beneficiar a outra. A rêmora que se fixa em tubarões obtém transporte e restos alimentares, sem afetar o tubarão. Plantas epífitas (orquídeas, bromélias) que crescem sobre árvores obtêm melhor acesso à luz sem parasitar a árvore hospedeira. O inquilinismo é tipo especial de comensalismo onde uma espécie usa outra como moradia, como peixe-agulha que se abriga em pepinos-do-mar.\n\nO parasitismo prejudica o hospedeiro enquanto beneficia o parasita. Parasitas podem ser ectoparasitas (vivem externamente, como piolhos e carrapatos) ou endoparasitas (vivem internamente, como tênias e protozoários causadores de doenças). Um bom parasita não mata o hospedeiro rapidamente, pois depende dele para sobreviver - evolução tende a favorecer parasitas menos virulentos. A predação ocorre quando um organismo mata outro para alimentar-se. É fundamental para controle populacional e seleção natural. Relação predador-presa apresenta flutuações cíclicas: aumento de presas leva a aumento de predadores, que por sua vez reduz presas, levando à redução de predadores, permitindo nova expansão das presas."
+        },
+        {
+          "titulo": "Cadeias e Teias Alimentares",
+          "conteudo": "A cadeia alimentar representa o fluxo linear de matéria e energia entre organismos através de relações alimentares. Inicia-se sempre com produtores (autotróficos) que convertem energia solar em compostos orgânicos. Os consumidores primários (herbívoros) alimentam-se dos produtores. Consumidores secundários (carnívoros) predamdeiam herbívoros. Consumidores terciários alimentam-se de consumidores secundários. Os decompositores (bactérias e fungos) atuam em todos os níveis, reciclando nutrientes da matéria orgânica morta.\n\nNa natureza, cadeias alimentares isoladas são raras - organismos geralmente participam de múltiplas cadeias, formando teias alimentares complexas. Teias alimentares são mais estáveis que cadeias isoladas: se uma espécie desaparece, outras podem servir de alimento alternativo, evitando colapso do ecossistema. A complexidade da teia alimentar geralmente se relaciona com a estabilidade do ecossistema - quanto mais conexões, maior a resiliência a perturbações.\n\nA posição trófica indica o nível que um organismo ocupa na cadeia alimentar. Produtores ocupam o primeiro nível trófico. Herbívoros ocupam o segundo nível. Carnívoros que comem herbívoros ocupam o terceiro nível, e assim sucessivamente. Organismos onívoros (que se alimentam de vegetais e animais) podem ocupar diferentes níveis tróficos simultaneamente. Humanos, por exemplo, são consumidores primários ao comer vegetais e secundários ou terciários ao comer carne.\n\nA magnificação trófica (ou bioacumulação) é o fenômeno onde substâncias não biodegradáveis acumulam-se progressivamente ao longo da cadeia alimentar. Poluentes como mercúrio, DDT e PCBs apresentam concentrações crescentes nos níveis tróficos superiores. Produtores podem ter concentrações baixas, mas predadores de topo acumulam altas concentrações após consumir muitas presas contaminadas ao longo da vida. Este fenômeno causou declínio de populações de aves de rapina no século XX devido ao DDT, que causava afinamento de cascas de ovos. Em humanos, consumo de peixes predadores de grande porte pode levar a intoxicação por mercúrio."
+        },
+        {
+          "titulo": "Decompositores e Reciclagem de Nutrientes",
+          "conteudo": "Os decompositores são organismos heterotróficos, principalmente bactérias e fungos, que degradam matéria orgânica morta, reciclando nutrientes essenciais para o ecossistema. Sem decompositores, nutrientes ficariam presos em organismos mortos e fezes, tornando-se indisponíveis para produtores, causando colapso do ecossistema. Decompositores são fundamentalmente diferentes de detritívoros (organismos que se alimentam de detritos mas não realizam decomposição completa, como minhocas e besouros).\n\nO processo de decomposição envolve várias etapas. Primeiro, organismos detritívoros fragmentam o material morto, aumentando a superfície de contato. Em seguida, fungos e bactérias secretam enzimas digestivas que quebram macromoléculas (proteínas, carboidratos, lipídios) em moléculas menores. Essas moléculas são absorvidas pelos decompositores e mineralizadas, liberando nutrientes inorgânicos (nitrato, fosfato, sulfato) que retornam ao solo ou água, ficando disponíveis para absorção pelos produtores.\n\nA taxa de decomposição varia conforme fatores ambientais. Temperatura elevada acelera a atividade metabólica dos decompositores. Umidade adequada é essencial - ambientes muito secos ou encharcados retardam decomposição. pH próximo ao neutro favorece a maioria dos decompositores. A composição química do material também influencia: compostos com lignina (presente em madeira) decompõem-se lentamente, enquanto açúcares e proteínas degradam-se rapidamente. Por isso, florestas tropicais úmidas têm decomposição rápida e camada de serrapilheira fina, enquanto florestas boreais têm decomposição lenta e espessa camada de material acumulado.\n\nA compostagem é aplicação prática do conhecimento sobre decomposição. Ao controlar umidade, aeração, razão carbono/nitrogênio e temperatura, acelera-se a decomposição de resíduos orgânicos, produzindo adubo rico em nutrientes. Este processo reduz volume de lixo destinado a aterros e fecha ciclo de nutrientes em ambientes urbanos. A vermicompostagem utiliza minhocas associadas a microrganismos para acelerar ainda mais o processo, produzindo húmus de alta qualidade para agricultura."
+        }
+      ],
+      "exemplos": [
+        "Relação entre formigas cortadeiras e fungos cultivados como exemplo de mutualismo complexo",
+        "Controle biológico de pragas usando predadores naturais, como joaninhas contra pulgões",
+        "Bioacumulação de mercúrio em peixes carnívoros amazônicos, afetando populações ribeirinhas"
+      ],
+      "dicas": [
+        "Diferencie mutualismo (obrigatório) de protocooperação (facultativo) - questão frequente no ENEM",
+        "Lembre que energia flui unidirecionalmente mas nutrientes são reciclados - conceito fundamental",
+        "Questões sobre magnificação trófica geralmente envolvem poluentes e saúde humana",
+        "Decompositores atuam em TODOS os níveis tróficos, não apenas no final da cadeia"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Em um experimento, plantas leguminosas foram cultivadas em dois grupos: um grupo recebeu inoculação com bactérias do gênero Rhizobium, enquanto o outro grupo foi mantido sem a bactéria. Ambos os grupos foram cultivados em solo pobre em compostos nitrogenados. Após algumas semanas, as plantas com Rhizobium apresentaram crescimento significativamente maior. Qual processo explica esse resultado?",
+          "alternativas": {
+            "A": "As bactérias realizam fotossíntese, fornecendo energia adicional para as plantas",
+            "B": "As bactérias fixam nitrogênio atmosférico, convertendo-o em formas utilizáveis pela planta",
+            "C": "As bactérias produzem antibióticos que protegem as raízes de patógenos",
+            "D": "As bactérias aumentam a capacidade de absorção de água pelas raízes",
+            "E": "As bactérias decompõem matéria orgânica do solo, liberando nutrientes"
+          },
+          "correta": "B",
+          "explicacao": "Esta é uma relação de mutualismo. As bactérias Rhizobium vivem em nódulos nas raízes de leguminosas e possuem a enzima nitrogenase, capaz de converter nitrogênio gasoso (N₂) da atmosfera em amônia (NH₃) e posteriormente em nitratos, formas que as plantas podem absorver e usar para sintetizar proteínas e ácidos nucleicos. Em troca, a planta fornece carboidratos produzidos na fotossíntese para as bactérias. Em solos pobres em nitrogênio, essa associação confere vantagem competitiva significativa às leguminosas.",
+          "dificudade": "medio",
+          "tags": ["mutualismo", "ciclo do nitrogênio", "relações ecológicas"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Em uma fazenda de criação de salmão, foi detectado aumento progressivo da concentração de mercúrio nos peixes ao longo dos anos, apesar de a concentração desse metal na água permanecer constante e baixa. A ração fornecida continha pequenos peixes que se alimentavam de zooplâncton, que por sua vez consumia fitoplâncton. Qual fenômeno explica o aumento de mercúrio nos salmões?",
+          "alternativas": {
+            "A": "Bioacumulação trófica, com concentração crescente do metal em níveis tróficos superiores",
+            "B": "Mutação genética que aumentou a capacidade de absorção de metais pelos salmões",
+            "C": "Simbiose entre salmões e bactérias que concentram mercúrio",
+            "D": "Aumento da produtividade primária que elevou a concentração de todos os elementos",
+            "E": "Decomposição acelerada que liberou mercúrio de sedimentos antigos"
+          },
+          "correta": "A",
+          "explicacao": "A bioacumulação (ou magnificação) trófica ocorre porque o mercúrio é um metal pesado não biodegradável que se acumula nos tecidos dos organismos. Cada salmão consome muitos peixes pequenos durante sua vida, cada peixe pequeno consumiu muito zooplâncton, e cada zooplâncton consumiu muito fitoplâncton. Assim, mesmo que a concentração inicial no fitoplâncton seja baixa, há acúmulo progressivo em cada nível trófico. Como o mercúrio não é excretado eficientemente, predadores de topo apresentam concentrações milhares de vezes superiores às da água.",
+          "dificuldade": "medio",
+          "tags": ["magnificação trófica", "poluição", "cadeias alimentares"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Em uma floresta, a população de cervos aumentou drasticamente após a eliminação de seus predadores naturais (lobos). Inicialmente, os cervos se beneficiaram da ausência de predação, mas após alguns anos, observou-se declínio acentuado da população de cervos, acompanhado de degradação da vegetação. Qual explicação melhor descreve esse fenômeno?",
+          "alternativas": {
+            "A": "Os cervos desenvolveram doenças por falta de exercício, já que não precisavam fugir de predadores",
+            "B": "A competição intraespecífica intensificou-se devido ao crescimento populacional, levando à escassez de alimento",
+            "C": "A falta de predadores causou acúmulo de mutações deletérias na população de cervos",
+            "D": "As plantas desenvolveram defesas químicas mais eficientes contra herbivoria",
+            "E": "Os decompositores não conseguiram reciclar nutrientes na ausência de predadores"
+          },
+          "correta": "B",
+          "explicacao": "Este é um exemplo clássico de como predadores regulam populações de presas. Sem predadores, a população de cervos cresceu exponencialmente até exceder a capacidade de suporte do ambiente. O superpastoreio degradou a vegetação, reduzindo disponibilidade de alimento. A competição intraespecífica intensificou-se, levando à desnutrição, redução da taxa de natalidade, aumento da mortalidade infantil e suscetibilidade a doenças. Este caso ilustra a importância de predadores para o equilíbrio ecológico e é conhecido como 'cascata trófica'.",
+          "dificuldade": "medio",
+          "tags": ["relações ecológicas", "predação", "dinâmica populacional"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Bromélias são plantas que crescem sobre troncos e galhos de árvores em florestas tropicais, sem retirar nutrientes da árvore hospedeira. Suas folhas formam estruturas que acumulam água da chuva, criando microecossistemas onde se desenvolvem larvas de insetos, anfíbios e outros organismos. Essa relação entre bromélia e árvore é classificada como:",
+          "alternativas": {
+            "A": "Mutualismo, pois ambas as espécies se beneficiam da associação",
+            "B": "Parasitismo, pois a bromélia obtém nutrientes da árvore",
+            "C": "Comensalismo, pois a bromélia se beneficia sem prejudicar a árvore",
+            "D": "Competição, pois ambas disputam luz solar",
+            "E": "Protocooperação, pois a associação beneficia ambas mas não é obrigatória"
+          },
+          "correta": "C",
+          "explicacao": "A relação entre bromélias epífitas e árvores é um exemplo clássico de comensalismo. A bromélia se beneficia ao obter melhor acesso à luz solar e espaço para crescimento, além de usar a árvore apenas como suporte físico. A árvore não é prejudicada (não há extração de nutrientes) nem beneficiada diretamente. As bromélias são epífitas, não parasitas. Embora possam adicionar peso aos galhos, isso não caracteriza prejuízo significativo na relação ecológica. A água e nutrientes da bromélia vêm da chuva, poeira e decomposição de material acumulado em suas folhas.",
+          "dificuldade": "facil",
+          "tags": ["relações ecológicas", "comensalismo", "epífitas"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Em uma composteira doméstica, resíduos orgânicos são decompostos por ação de microrganismos, transformando cascas de frutas, restos vegetais e outros materiais em adubo. Para acelerar o processo, recomenda-se misturar materiais ricos em carbono (folhas secas) com materiais ricos em nitrogênio (restos de alimentos), manter umidade adequada e revirar periodicamente a pilha. Por que o revolvimento periódico acelera a compostagem?",
+          "alternativas": {
+            "A": "Aumenta a temperatura, eliminando microrganismos patogênicos que retardam a decomposição",
+            "B": "Distribui água uniformemente, mantendo todo o material igualmente úmido",
+            "C": "Fornece oxigênio para microrganismos aeróbicos que decompõem mais eficientemente",
+            "D": "Fragmenta mecanicamente o material, dispensando a ação de organismos detritívoros",
+            "E": "Expõe o material à luz solar, que acelera reações químicas de decomposição"
+          },
+          "correta": "C",
+          "explicacao": "O revolvimento periódico da composteira é fundamental para fornecer oxigênio (aeração) aos microrganismos aeróbicos, que realizam decomposição mais rápida e eficiente que os anaeróbicos. Bactérias e fungos aeróbicos convertem matéria orgânica em CO₂, água e húmus, gerando calor no processo. Sem aeração, predominam microrganismos anaeróbicos que produzem metano e compostos com odor desagradável, e a decomposição é muito mais lenta. A temperatura elevada é consequência (não causa) da atividade microbiana intensa e ajuda a eliminar sementes e patógenos, melhorando a qualidade do composto.",
+          "dificuldade": "medio",
+          "tags": ["decompositores", "reciclagem de nutrientes", "compostagem"]
+        }
+      ]
+    },
+    {
+      "id": "modulo03",
+      "titulo": "Problemas Ambientais Globais",
+      "resumo": "Análise dos principais problemas ambientais contemporâneos e suas causas, consequências e possíveis soluções",
+      "topicos": [
+        {
+          "titulo": "Aquecimento Global e Mudanças Climáticas",
+          "conteudo": "O efeito estufa é um fenômeno natural essencial para a vida na Terra. Gases como CO₂, metano (CH₄), vapor d'água e óxido nitroso (N₂O) na atmosfera absorvem radiação infravermelha emitida pela superfície terrestre, mantendo temperatura média do planeta em torno de 15°C - sem efeito estufa, seria aproximadamente -18°C. O problema atual é o efeito estufa intensificado por atividades humanas que aumentam drasticamente a concentração de gases estufa.\n\nA queima de combustíveis fósseis (petróleo, carvão, gás natural) é a principal fonte de emissão de CO₂ antropogênico. Desde a Revolução Industrial, a concentração atmosférica de CO₂ aumentou de cerca de 280 ppm para mais de 415 ppm atualmente, maior nível em 800.000 anos. O desmatamento contribui duplamente: reduz absorção de CO₂ pela fotossíntese e libera carbono armazenado na biomassa quando árvores são queimadas. A agropecuária, especialmente criação de gado, libera metano através da fermentação entérica, e o metano tem potencial de aquecimento 25 vezes maior que o CO₂.\n\nAs consequências do aquecimento global são múltiplas e interconectadas. O derretimento de calotas polares e geleiras eleva o nível do mar, ameaçando cidades costeiras e ilhas. A expansão térmica dos oceanos contribui adicionalmente para elevação do nível marinho. Mudanças nos padrões de precipitação intensificam secas em algumas regiões e enchentes em outras. Eventos climáticos extremos (furacões, ondas de calor) tornam-se mais frequentes e intensos. Ecossistemas sofrem alterações: corais sofrem branqueamento por estresse térmico, distribuição geográfica de espécies muda, sincronização entre polinizadores e floração é afetada.\n\nMitigação das mudanças climáticas requer ações em múltiplas frentes. Transição energética para fontes renováveis (solar, eólica, hidrelétrica) reduz dependência de combustíveis fósseis. Aumento da eficiência energética em transporte, indústria e construção civil diminui consumo. Reflorestamento e conservação de florestas mantêm estoques de carbono e aumentam sequestro. Mudanças em práticas agrícolas, como plantio direto e integração lavoura-pecuária-floresta, reduzem emissões. Desenvolvimento de tecnologias de captura e armazenamento de carbono pode complementar outras estratégias. Acordos internacionais como o Acordo de Paris estabelecem metas de redução de emissões."
+        },
+        {
+          "titulo": "Destruição da Camada de Ozônio",
+          "conteudo": "A camada de ozônio localiza-se na estratosfera, entre 20 e 35 km de altitude, e contém alta concentração de ozônio (O₃). Forma-se quando radiação ultravioleta de alta energia (UV-C) quebra moléculas de O₂, e os átomos livres de oxigênio combinam-se com outras moléculas de O₂ formando O₃. Essa camada é crucial porque absorve 97-99% da radiação ultravioleta do tipo B (UV-B) e toda UV-C, protegendo seres vivos de danos ao DNA, câncer de pele, cataratas e supressão do sistema imunológico.\n\nClorofluorcarbonos (CFCs) foram amplamente usados em refrigeração, ar condicionado, aerossóis e produção de espumas. Na estratosfera, radiação UV quebra moléculas de CFC, liberando átomos de cloro (Cl). Cada átomo de cloro catalisa a destruição de milhares de moléculas de ozônio através de um ciclo catalítico: Cl + O₃ → ClO + O₂, depois ClO + O → Cl + O₂, regenerando o cloro que destrói mais ozônio. Outros compostos como halons (usados em extintores) e brometo de metila (fumigante agrícola) também destroem ozônio, sendo o bromo ainda mais eficiente que o cloro.\n\nO buraco na camada de ozônio sobre a Antártida foi descoberto em 1985. Durante o inverno austral, forma-se vórtex polar estratosférico com temperaturas extremamente baixas. Nuvens estratosféricas polares formam-se, fornecendo superfícies onde ocorrem reações químicas que convertem formas inativas de cloro em formas ativas. Com o retorno da luz solar na primavera, essas formas ativas destroem rapidamente o ozônio. O buraco pode atingir área maior que a Antártida, com redução de mais de 50% da concentração de ozônio.\n\nO Protocolo de Montreal (1987) é considerado o acordo ambiental internacional mais bem-sucedido. Estabeleceu cronograma para eliminação progressiva da produção e uso de substâncias que destroem a camada de ozônio. CFCs foram substituídos por HCFCs (hidroclorofluorcarbonos) como solução intermediária, e posteriormente por HFCs (hidrofluorcarbonos) que não contêm cloro. Devido ao cumprimento do protocolo, projeções indicam recuperação da camada de ozônio aos níveis pré-1980 por volta de 2060-2070, embora CFCs permaneçam na atmosfera por décadas a séculos."
+        },
+        {
+          "titulo": "Poluição das Águas e Eutrofização",
+          "conteudo": "A poluição hídrica pode ser de origem pontual (fonte identificável como saída de esgoto ou efluente industrial) ou difusa (múltiplas fontes dispersas como escoamento agrícola). Poluentes químicos incluem metais pesados (mercúrio, chumbo, cádmio), pesticidas, fertilizantes, detergentes, óleos, solventes orgânicos. Poluentes biológicos incluem bactérias patogênicas, vírus e protozoários de esgoto não tratado. Poluição térmica ocorre quando indústrias ou usinas descarregam água aquecida, reduzindo oxigênio dissolvido e afetando metabolismo de organismos.\n\nA eutrofização é o enriquecimento excessivo de corpos d'água com nutrientes, especialmente nitrogênio e fósforo, causando proliferação excessiva de algas (bloom). Principais fontes são fertilizantes agrícolas lixiviados pela chuva, esgoto doméstico (rico em fosfato de detergentes e nitrogênio de dejetos), e efluentes industriais. O processo ocorre em etapas: aumento de nutrientes estimula crescimento de algas; algas na superfície bloqueiam luz para algas mais profundas; algas morrem em grande quantidade; decomposição consome oxigênio dissolvido; hipóxia ou anoxia causa mortandade de peixes e outros organismos aeróbicos.\n\nCianobactérias frequentemente dominam blooms em águas eutrofizadas. Algumas espécies produzem toxinas (cianotoxinas) prejudiciais a humanos e animais, contaminando fontes de água potável e tornando impróprio o consumo de peixes. A decomposição anaeróbica produz gases com odores desagradáveis (H₂S, metano). A diversidade biológica diminui drasticamente, com poucas espécies tolerantes dominando o ambiente empobrecido. Lagos podem transformar-se gradualmente em pântanos através de acúmulo de matéria orgânica.\n\nO controle da eutrofização requer ações preventivas e corretivas. Tratamento de esgoto remove nutrientes antes do descarte em corpos d'água - tratamento terciário remove especificamente fósforo e nitrogênio. Regulamentação do uso de fertilizantes agrícolas, implementação de técnicas de agricultura de precisão e manutenção de matas ciliares reduzem escoamento de nutrientes. Em lagos já eutrofizados, técnicas de remediação incluem aeração artificial, remoção de sedimentos ricos em nutrientes, tratamento químico para precipitar fósforo, e biomanipulação (alteração da cadeia alimentar para controlar algas)."
+        },
+        {
+          "titulo": "Perda de Biodiversidade e Extinção",
+          "conteudo": "A biodiversidade abrange diversidade genética (variação genética dentro de espécies), diversidade de espécies (variedade de espécies em uma área) e diversidade de ecossistemas (variedade de habitats, comunidades e processos ecológicos). A taxa atual de extinção é estimada em 100 a 1000 vezes maior que a taxa natural de extinção, caracterizando a sexta grande extinção em massa da história da Terra, mas desta vez causada predominantemente por atividades humanas.\n\nA destruição e fragmentação de habitat é a principal causa de perda de biodiversidade. O desmatamento elimina habitat de inúmeras espécies. A fragmentação divide populações contínuas em populações pequenas e isoladas, aumentando consanguinidade, reduzindo variabilidade genética e dificultando recolonização após perturbações. Efeito de borda aumenta em fragmentos pequenos, modificando condições microclimáticas e facilitando invasão de espécies generalistas.\n\nA introdução de espécies exóticas invasoras é a segunda maior causa de extinções. Espécies invasoras competem com nativas por recursos, predam espécies nativas sem defesas evolutivas, introduzem doenças, hibridizam com espécies nativas e alteram processos ecológicos. Exemplos incluem: javali europeu causando danos a vegetação nativa brasileira; coral-sol competindo com corais nativos; mexilhão-dourado entupindo sistemas de captação de água; pinus e acácia alterando composições florísticas de campos.\n\nA sobreexploração através de caça, pesca e coleta excessivas levou muitas espécies à extinção ou proximidade dela. Extinção da ararinha-azul na natureza, declínio de populações de peixes de grande porte por pesca predatória, caça de mamíferos amazônicos para subsistência e comércio ilegal de animais silvestres são exemplos brasileiros. Poluição afeta espécies sensíveis - anfíbios são particularmente vulneráveis devido à pele permeável. Mudanças climáticas alteram distribuição de espécies, sincronização de eventos reprodutivos e fenológicos, e podem eliminar habitats específicos.\n\nA conservação da biodiversidade utiliza estratégias in situ (em habitats naturais) e ex situ (fora de habitats naturais). Unidades de conservação (parques, reservas biológicas, estações ecológicas) protegem ecossistemas. Corredores ecológicos conectam fragmentos isolados, permitindo fluxo gênico. Recuperação de áreas degradadas restaura habitats. Conservação ex situ inclui jardins botânicos, zoológicos, bancos de germoplasma e criopreservação. Programas de reprodução em cativeiro podem salvar espécies criticamente ameaçadas, mas reintrodução na natureza requer habitat adequado disponível."
+        }
+      ],
+      "exemplos": [
+        "Branqueamento de corais na Grande Barreira da Austrália devido ao aquecimento oceânico",
+        "Controle de eutrofização na Lagoa Rodrigo de Freitas (RJ) através de aeração e tratamento de esgoto",
+        "Reintrodução da ararinha-azul na Caatinga após extinção na natureza"
+      ],
+      "dicas": [
+        "Diferencie efeito estufa natural (essencial à vida) de efeito estufa intensificado (problema ambiental)",
+        "CFCs destroem ozônio na estratosfera, não na troposfera - entenda a diferença de altitude",
+        "Eutrofização começa com excesso de nutrientes e termina com falta de oxigênio - entenda o processo completo",
+        "Questões sobre biodiversidade frequentemente relacionam causas de extinção com propostas de conservação"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "O Acordo de Paris, estabelecido em 2015, tem como objetivo limitar o aumento da temperatura média global a 2°C acima dos níveis pré-industriais, preferencialmente a 1,5°C. Para atingir essa meta, diversos países se comprometeram a reduzir emissões de gases de efeito estufa. Qual das seguintes ações contribui MAIS significativamente para a redução de emissões de CO₂?",
+          "alternativas": {
+            "A": "Substituição de sacolas plásticas por sacolas de papel em supermercados",
+            "B": "Transição da matriz energética de combustíveis fósseis para fontes renováveis",
+            "C": "Reciclagem de latas de alumínio e garrafas PET",
+            "D": "Redução do consumo de água em residências",
+            "E": "Uso de lâmpadas LED em vez de lâmpadas incandescentes"
+          },
+          "correta": "B",
+          "explicacao": "A queima de combustíveis fósseis para geração de energia (eletricidade, transporte, indústria) é responsável por cerca de 75% das emissões globais de CO₂. A transição para fontes renováveis (solar, eólica, hidrelétrica) elimina essas emissões na geração de energia. Embora todas as alternativas sejam ações positivas, sua contribuição para redução de emissões é muito menor. Papel também gera emissões na produção, reciclagem economiza energia mas não elimina emissões, e economia de água reduz indiretamente emissões do tratamento mas o impacto é pequeno comparado à mudança na matriz energética.",
+          "dificuldade": "medio",
+          "tags": ["mudanças climáticas", "gases estufa", "sustentabilidade"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Em 2020, observou-se redução significativa no tamanho do buraco na camada de ozônio sobre a Antártida em comparação com anos anteriores, atribuída ao sucesso do Protocolo de Montreal. Entretanto, cientistas alertam que a recuperação completa levará décadas. Por que a camada de ozônio não se recupera rapidamente mesmo após a redução drástica na produção de CFCs?",
+          "alternativas": {
+            "A": "Novos poluentes industriais continuam sendo liberados e destroem ozônio com a mesma eficiência",
+            "B": "O aquecimento global impede a formação natural de novas moléculas de ozônio",
+            "C": "CFCs já liberados permanecem na atmosfera por décadas a séculos continuando a destruir ozônio",
+            "D": "A redução de CFCs causou desequilíbrio químico que impede temporariamente a formação de ozônio",
+            "E": "A camada de ozônio sobre a Antártida não pode se recuperar naturalmente, apenas por intervenção humana"
+          },
+          "correta": "C",
+          "explicacao": "CFCs são moléculas extremamente estáveis que, uma vez liberadas, permanecem na atmosfera por 50 a mais de 100 anos. Durante todo esse tempo, continuam sendo transportados para a estratosfera onde destroem ozônio. Mesmo com a eliminação quase completa da produção de CFCs desde os anos 1990, as moléculas já emitidas continuarão destruindo ozônio por décadas. Cada átomo de cloro pode destruir milhares de moléculas de ozônio em reações catalíticas. A recuperação depende da remoção gradual desses CFCs da atmosfera e da produção natural de novo ozônio superar a destruição.",
+          "dificuldade": "medio",
+          "tags": ["camada de ozônio", "CFCs", "Protocolo de Montreal"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Uma lagoa urbana apresentava águas cristalinas e grande diversidade de peixes. Após a instalação de condomínios no entorno sem sistema adequado de tratamento de esgoto, a lagoa tornou-se verde, com odor desagradável e mortandade frequente de peixes, especialmente em dias quentes. Análises mostraram altas concentrações de nitrogênio e fósforo. Qual sequência de eventos explica corretamente essa transformação?",
+          "alternativas": {
+            "A": "Nutrientes → proliferação de algas → morte de algas → decomposição consome oxigênio → mortandade de peixes",
+            "B": "Nutrientes → morte direta de peixes → proliferação de bactérias → aumento de temperatura → crescimento de algas",
+            "C": "Nutrientes → acidificação da água → morte de algas → proliferação de bactérias → consumo de oxigênio",
+            "D": "Nutrientes → proliferação de peixes → competição excessiva → morte por inanição → decomposição e odor",
+            "E": "Nutrientes → aumento de predadores → redução de peixes pequenos → desequilíbrio ecológico → mortandade"
+          },
+          "correta": "A",
+          "explicacao": "Esta é a sequência clássica da eutrofização. O excesso de nutrientes (principalmente nitrogênio e fósforo do esgoto) estimula crescimento excessivo de algas (bloom), deixando a água verde. As algas na superfície bloqueiam luz para as mais profundas, que morrem. A decomposição dessa grande massa de algas mortas por bactérias consome oxigênio dissolvido na água (DBO - Demanda Bioquímica de Oxigênio alta). Em dias quentes, a solubilidade de oxigênio diminui ainda mais, agravando a hipóxia. Peixes, por serem aeróbicos, morrem por asfixia. O odor desagradável vem de compostos produzidos na decomposição anaeróbica (H₂S, metano).",
+          "dificuldade": "medio",
+          "tags": ["eutrofização", "poluição hídrica", "impactos ambientais"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "A introdução do coral-sol (Tubastraea spp.) no litoral brasileiro, provavelmente através de plataformas de petróleo, tem causado preocupação ambiental. Essa espécie cresce rapidamente, não depende de luz solar para nutrição e compete agressivamente por espaço com corais nativos. Por que espécies exóticas invasoras frequentemente causam mais impacto que espécies nativas?",
+          "alternativas": {
+            "A": "Espécies exóticas são sempre geneticamente superiores às nativas em todos os aspectos",
+            "B": "Espécies nativas não possuem predadores, competidores e patógenos naturais que as controlem no novo ambiente",
+            "C": "Espécies exóticas encontram no novo ambiente ausência de predadores, competidores e patógenos que as controlavam na origem",
+            "D": "O clima do novo ambiente é sempre mais favorável para espécies exóticas que para nativas",
+            "E": "Espécies exóticas possuem metabolismo mais eficiente que espécies nativas"
+          },
+          "correta": "C",
+          "explicacao": "O sucesso de espécies exóticas invasoras geralmente deve-se à 'liberação do inimigo natural'. No ambiente de origem, predadores, competidores, parasitas e patógenos controlam naturalmente a população da espécie através de milhões de anos de coevolução. Ao ser introduzida em novo ambiente, a espécie escapa desses controles naturais, podendo proliferar sem restrição. Isso lhe confere vantagem competitiva sobre espécies nativas que ainda enfrentam seus inimigos naturais locais. O coral-sol, especificamente, não requer zooxantelas (algas simbiontes) pois captura plâncton, permitindo crescimento em locais sombreados onde corais nativos não prosperam.",
+          "dificuldade": "medio",
+          "tags": ["espécies invasoras", "biodiversidade", "impactos ecológicos"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Uma pesquisa sobre mudanças climáticas mostrou que, em regiões montanhosas, plantas de altitude estão deslocando sua distribuição para maiores elevações ao longo das décadas. Simultaneamente, observa-se que algumas espécies de topo de montanha estão desaparecendo. Qual explicação relaciona corretamente esses fenômenos ao aquecimento global?",
+          "alternativas": {
+            "A": "O aumento de temperatura desloca espécies para altitudes maiores onde é mais frio, mas espécies já no topo não têm para onde ir",
+            "B": "A radiação UV aumentada pela destruição da camada de ozônio é mais intensa em grandes altitudes, eliminando espécies",
+            "C": "O aumento de CO₂ favorece plantas de baixa altitude que competem com espécies de montanha",
+            "D": "Chuvas ácidas são mais intensas em grandes altitudes, eliminando espécies sensíveis",
+            "E": "Ventos mais fortes causados pelas mudanças climáticas impedem crescimento de plantas em grandes altitudes"
+          },
+          "correta": "A",
+          "explicacao": "O aquecimento global causa deslocamento de espécies em direção aos polos (em latitude) e para maiores altitudes (em montanhas) em busca de condições climáticas semelhantes às quais estão adaptadas. Como temperatura diminui com altitude, espécies 'sobem a montanha' acompanhando suas faixas climáticas ideais. Entretanto, espécies que já habitam os picos mais altos não têm para onde migrar - não há mais montanha acima. Ficam 'encurraladas' no topo, com populações reduzidas e isoladas, eventualmente levando à extinção. Este é um exemplo claro de como mudanças climáticas ameaçam biodiversidade através da perda de habitat climático adequado.",
+          "dificuldade": "dificil",
+          "tags": ["mudanças climáticas", "distribuição de espécies", "extinção"]
+        }
+      ]
+    },
+    {
+      "id": "modulo04",
+      "titulo": "Recursos Naturais e Sustentabilidade",
+      "resumo": "Análise do uso de recursos naturais, impactos da exploração e práticas sustentáveis",
+      "topicos": [
+        {
+          "titulo": "Recursos Hídricos e Gestão da Água",
+          "conteudo": "A água doce disponível para consumo humano representa apenas 2,5% da água total do planeta, e desse total, cerca de 70% está congelada em geleiras e calotas polares. A água doce acessível em rios, lagos e aquíferos representa menos de 1% da água total da Terra. A distribuição de água doce é extremamente desigual geograficamente - Brasil possui cerca de 12% da água doce superficial do mundo, mas sua distribuição interna é desigual: Amazônia concentra 70% da água e apenas 7% da população.\n\nO uso da água divide-se em três setores principais. A agricultura é responsável por cerca de 70% do consumo global, principalmente irrigação. Indústria consome aproximadamente 20%, usada em processos produtivos, refrigeração e geração de energia. Consumo doméstico representa cerca de 10%, incluindo banho, cozinha, limpeza e descarga. O conceito de pegada hídrica considera não apenas o consumo direto, mas também a água virtual (água necessária para produzir bens e serviços): produção de 1 kg de carne bovina requer cerca de 15.000 litros de água, enquanto 1 kg de arroz requer cerca de 2.500 litros.\n\nA escassez hídrica pode ser física (falta real de água na região) ou econômica (água existe mas infraestrutura inadequada impede acesso). Causas incluem: crescimento populacional aumentando demanda; urbanização concentrando consumo; poluição tornando água imprópria para uso; desmatamento reduzindo recarga de aquíferos; mudanças climáticas alterando padrões de precipitação. Consequências incluem conflitos por água, limitação ao desenvolvimento econômico, comprometimento da produção agrícola e problemas de saúde pública.\n\nA gestão sustentável dos recursos hídricos requer abordagem integrada. Captação de água de chuva reduz pressão sobre fontes convencionais. Reúso de água (especialmente água cinza em irrigação e descargas) diminui consumo. Técnicas de irrigação eficientes como gotejamento reduzem desperdício. Tratamento de esgoto antes do descarte protege corpos d'água. Proteção de nascentes e matas ciliares mantém qualidade e quantidade de água. Educação sobre consumo consciente e cobrança pelo uso incentivam economia. Gestão de bacias hidrográficas integra usos múltiplos (abastecimento, irrigação, geração de energia, navegação, pesca, recreação) de forma equilibrada."
+        },
+        {
+          "titulo": "Energia e Matriz Energética",
+          "conteudo": "Fontes de energia classificam-se em renováveis (se regeneram naturalmente em escala de tempo humana) e não renováveis (se esgotam com uso). Combustíveis fósseis (petróleo, carvão, gás natural) são não renováveis, formados ao longo de milhões de anos a partir de matéria orgânica soterrada. Representam cerca de 80% da matriz energética global, mas emitem grandes quantidades de CO₂ quando queimados, principal causa do aquecimento global. Além disso, sua combustão gera poluentes atmosféricos como material particulado, óxidos de enxofre e nitrogênio.\n\nA energia hidrelétrica domina a matriz elétrica brasileira (cerca de 60%). Vantagens incluem: fonte renovável, baixo custo operacional após instalação, não emite gases estufa na operação, permite controle de vazão. Desvantagens: dependente de regime de chuvas, causa impactos ambientais (alagamento de áreas, deslocamento de populações, alteração de ecossistemas aquáticos, metanogênese em reservatórios), alto custo de instalação. Hidrelétricas a fio d'água reduzem impacto mas têm menor capacidade de armazenamento.\n\nA energia solar fotovoltaica converte luz solar diretamente em eletricidade através de células fotovoltaicas. Vantagens: fonte inesgotável em escala humana, sem emissões durante operação, manutenção baixa, modular (pode ser instalada em diferentes escalas). Desvantagens: intermitente (não gera à noite), dependente de condições climáticas, requer área significativa para grandes usinas, produção de painéis envolve materiais tóxicos. Energia solar térmica usa luz solar para aquecer água ou gerar vapor para turbinas.\n\nEnergia eólica converte energia cinética do vento em eletricidade através de turbinas. Vantagens: renovável, sem emissões na operação, pode coexistir com agricultura e pecuária. Desvantagens: intermitente, dependente de ventos adequados, pode causar ruído e impacto visual, mortalidade de aves e morcegos. Biomassa inclui lenha, bagaço de cana, biogás de aterros e biodigestores. Pode ser considerada carbono neutra se manejo for sustentável (replantio). Energia nuclear gera grande quantidade de energia de pequena massa de combustível, sem emissões de CO₂, mas produz resíduos radioativos de difícil descarte e apresenta riscos de acidentes. Transição energética global busca aumentar participação de renováveis, melhorar eficiência e desenvolver armazenamento de energia."
+        },
+        {
+          "titulo": "Resíduos Sólidos e Economia Circular",
+          "conteudo": "A geração de resíduos sólidos aumenta proporcionalmente ao desenvolvimento econômico e crescimento populacional. Brasil produz cerca de 80 milhões de toneladas de resíduos sólidos urbanos por ano, com destinação inadequada de aproximadamente 40% (lixões e aterros controlados). Composição típica: matéria orgânica (50-60%), plásticos (15-20%), papel e papelão (10-15%), vidros (2-3%), metais (2-3%), outros materiais.\n\nAterros sanitários são a forma mais adequada de disposição final quando outras alternativas não são viáveis. Diferem de lixões por possuir: impermeabilização do solo, sistema de drenagem de chorume para tratamento, drenagem de gases (metano principalmente) para queima ou aproveitamento energético, cobertura diária dos resíduos, controle de vetores. Mesmo assim, aterros ocupam grandes áreas, requerem monitoramento pós-fechamento por décadas e representam perda de materiais que poderiam ser reciclados.\n\nA hierarquia dos resíduos estabelece ordem de prioridade: 1) Não geração/redução na fonte (mais importante) - evitar produção de resíduos através de mudanças em processos e comportamentos; 2) Reutilização - usar produto várias vezes na mesma função; 3) Reciclagem - reprocessar material para produzir novo produto; 4) Recuperação energética - queima para gerar energia; 5) Disposição final adequada (última opção) - aterro sanitário. Coleta seletiva separa materiais recicláveis na origem, facilitando reciclagem e aumentando qualidade dos materiais recuperados.\n\nA economia circular contrasta com o modelo linear tradicional (extrair-produzir-descartar). Baseia-se em: 1) Eliminar resíduos e poluição desde o design - produtos projetados para durabilidade, reparo e desmontagem; 2) Manter produtos e materiais em uso pelo maior tempo possível - através de manutenção, reutilização, reforma e remanufatura; 3) Regenerar sistemas naturais - usar materiais renováveis, devolver nutrientes ao solo através de compostagem. Logística reversa obriga fabricantes a estruturarem coleta e destinação de produtos pós-consumo (embalagens, eletrônicos, pneus, pilhas). Simbiose industrial conecta empresas onde resíduo de uma serve como matéria-prima de outra. Upcycling transforma resíduos em produtos de maior valor."
+        },
+        {
+          "titulo": "Agricultura Sustentável e Segurança Alimentar",
+          "conteudo": "A agricultura convencional intensiva aumentou produtividade através de mecanização, uso de fertilizantes sintéticos, agrotóxicos e variedades de alto rendimento. Revolução Verde do século XX multiplicou a produção global de alimentos, evitando fomes previstas. Entretanto, trouxe problemas: degradação e erosão de solos, contaminação de água por agrotóxicos e fertilizantes, perda de biodiversidade, dependência de insumos externos, emissão de gases estufa, desmatamento para expansão agrícola.\n\nA agricultura sustentável busca equilibrar produtividade com conservação ambiental e viabilidade econômica. Práticas incluem: rotação de culturas (alternância de diferentes culturas na mesma área) melhora fertilidade do solo, quebra ciclos de pragas e doenças, e reduz necessidade de fertilizantes sintéticos; plantio direto (ausência de aração) mantém cobertura vegetal permanente, reduz erosão, conserva umidade e matéria orgânica do solo; cultivo mínimo reduz perturbação do solo; controle biológico usa inimigos naturais de pragas (predadores, parasitoides, patógenos) reduzindo necessidade de pesticidas químicos.\n\nA agricultura orgânica proíbe uso de agrotóxicos sintéticos e fertilizantes químicos solúveis, priorizando adubação orgânica (compostagem, adubação verde), controle biológico e cultural de pragas, conservação de solo e água, e bem-estar animal. Produz alimentos sem resíduos químicos, mas geralmente apresenta produtividade menor que agricultura convencional. Certificação garante cumprimento de normas. Agroecologia integra conhecimentos ecológicos, agronômicos e socioculturais, valorizando conhecimento tradicional e autonomia de agricultores.\n\nSistemas agroflorestais (SAFs) combinam espécies arbóreas com culturas agrícolas e/ou animais na mesma área, imitando estrutura de florestas naturais. Benefícios: diversificação de produção e renda, conservação de biodiversidade, ciclagem de nutrientes, proteção de solo contra erosão, sequestro de carbono, criação de microclima favorável. Integração lavoura-pecuária-floresta (ILPF) combina diferentes usos na mesma área em rotação ou consórcio, otimizando uso de recursos. Agricultura de precisão usa tecnologias (GPS, sensores, drones) para aplicação localizada de insumos conforme necessidade específica de cada ponto da área, reduzindo desperdício e impacto ambiental. Segurança alimentar requer não apenas produção suficiente, mas distribuição equitativa e acesso econômico aos alimentos."
+        }
+      ],
+      "exemplos": [
+        "Crise hídrica em São Paulo (2014-2015) exemplificando má gestão de recursos hídricos e mudanças climáticas",
+        "Sistema de compostagem e separação de resíduos em Curitiba como modelo de gestão municipal",
+        "Integração lavoura-pecuária-floresta no Cerrado reduzindo desmatamento e melhorando produtividade"
+      ],
+      "dicas": [
+        "Questões sobre água frequentemente abordam distribuição desigual e conceito de água virtual",
+        "Compare vantagens e desvantagens de diferentes fontes de energia - tema recorrente no ENEM",
+        "Entenda a hierarquia dos resíduos: redução > reutilização > reciclagem > disposição final",
+        "Agricultura sustentável não significa apenas orgânica - há diversas práticas e abordagens"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "O Brasil possui grande potencial hidrelétrico, especialmente na Amazônia, mas a construção de novas hidrelétricas na região tem gerado debates intensos. Ambientalistas argumentam contra, enquanto setores do governo defendem as obras para atender crescimento da demanda energética. Qual argumento representa corretamente uma desvantagem ambiental específica de hidrelétricas em regiões de floresta tropical?",
+          "alternativas": {
+            "A": "Emissão de grandes quantidades de CO₂ pela queima de combustível nas turbinas",
+            "B": "Alagamento de extensas áreas de floresta, causando perda de biodiversidade e emissão de metano",
+            "C": "Contaminação da água por resíduos radioativos gerados no processo de geração de energia",
+            "D": "Esgotamento rápido do recurso hídrico devido ao uso intensivo da água",
+            "E": "Aumento da temperatura dos rios devido ao processo de geração de energia"
+          },
+          "correta": "B",
+          "explicacao": "Hidrelétricas em regiões de floresta tropical apresentam problema específico: o alagamento de grandes áreas de floresta para formação do reservatório causa perda direta de biodiversidade, deslocamento de populações (inclusive indígenas) e emissão de metano. Vegetação submersa decompreende-se anaerobicamente no fundo do reservatório, produzindo metano (CH₄), gás com potencial de aquecimento 25 vezes maior que CO₂. Hidrelétricas não queimam combustível nem produzem resíduos radioativos, e a água não é consumida (é renovável), apenas temporariamente armazenada. Diferente de termelétricas, não há aquecimento significativo da água.",
+          "dificuldade": "medio",
+          "tags": ["energia hidrelétrica", "impactos ambientais", "amazônia"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Uma família decide reduzir seu impacto ambiental e adota várias medidas. Considerando o conceito de hierarquia dos resíduos sólidos, qual das seguintes ações representa a estratégia MAIS eficaz ambientalmente?",
+          "alternativas": {
+            "A": "Separar todo o lixo para coleta seletiva e encaminhar para reciclagem",
+            "B": "Comprar produtos com menos embalagens e utilizar sacolas reutilizáveis",
+            "C": "Destinar todo resíduo orgânico para compostagem doméstica",
+            "D": "Reutilizar embalagens de vidro para armazenar outros alimentos",
+            "E": "Levar resíduos recicláveis diretamente para cooperativas de catadores"
+          },
+          "correta": "B",
+          "explicacao": "Segundo a hierarquia dos resíduos, a não geração/redução na fonte é a estratégia mais eficaz, pois evita que o resíduo seja produzido. Comprar produtos com menos embalagens e usar sacolas reutilizáveis previne a geração de resíduos. Embora todas as outras alternativas sejam importantes e benéficas, elas lidam com resíduos já gerados. Reciclagem (alternativas A e E) está em terceiro lugar na hierarquia, reutilização (D) em segundo lugar, e compostagem é forma de valorização de orgânicos. A ordem de prioridade é: não gerar > reutilizar > reciclar > recuperar energia > dispor adequadamente.",
+          "dificuldade": "medio",
+          "tags": ["resíduos sólidos", "sustentabilidade", "hierarquia dos resíduos"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "A pegada hídrica é um indicador que mede o volume total de água doce utilizado para produzir bens e serviços consumidos. A produção de 1 kg de carne bovina tem pegada hídrica muito maior que 1 kg de grãos. Qual fator explica principalmente essa diferença?",
+          "alternativas": {
+            "A": "Bovinos precisam beber grandes quantidades de água diariamente ao longo de sua vida",
+            "B": "A maior parte da água é usada na irrigação dos grãos que alimentam o gado durante anos",
+            "C": "Processos industriais de abate e processamento de carne consomem muita água",
+            "D": "Pecuária bovina é praticada predominantemente em regiões de clima seco",
+            "E": "Água é utilizada na limpeza extensiva das instalações de criação de gado"
+          },
+          "correta": "B",
+          "explicacao": "A pegada hídrica da carne bovina é elevada (cerca de 15.000 L/kg) principalmente devido à água necessária para produzir os grãos (milho, soja) que alimentam o animal durante toda sua vida (geralmente 2-3 anos até o abate). Como bovinos são consumidores secundários na cadeia alimentar, há perda de energia e acúmulo de insumos ao longo da cadeia trófica - o boi consome muito mais quilos de grãos do que produz quilos de carne, e cada quilo de grão também requer água para produção. A água para dessedentação do animal e processos industriais contribui, mas representa parcela menor do total.",
+          "dificuldade": "medio",
+          "tags": ["pegada hídrica", "recursos hídricos", "cadeias alimentares"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Um agricultor decide implementar sistema de rotação de culturas, alternando soja com milho em uma safra e crotalária (leguminosa) na outra safra, em vez de cultivar soja continuamente. Após alguns anos, observa redução na necessidade de fertilizantes nitrogenados e menor incidência de pragas. Qual explicação relaciona corretamente esses benefícios com princípios ecológicos?",
+          "alternativas": {
+            "A": "Diferentes culturas competem entre si, eliminando plantas daninhas e pragas",
+            "B": "Crotalária fixa nitrogênio atmosférico via bactérias simbiontes, e alternância de culturas interrompe ciclos de pragas",
+            "C": "Rotação aumenta erosão do solo que elimina pragas e libera nutrientes das rochas",
+            "D": "Plantas diferentes produzem pesticidas naturais que acumulam no solo ao longo do tempo",
+            "E": "Alternância de culturas aumenta compactação do solo que favorece desenvolvimento de raízes"
+          },
+          "correta": "B",
+          "explicacao": "A crotalária, como leguminosa, estabelece simbiose mutualística com bactérias fixadoras de nitrogênio (Rhizobium) em seus nódulos radiculares, convertendo N₂ atmosférico em formas assimiláveis. Quando incorporada ao solo, fornece nitrogênio para culturas seguintes, reduzindo necessidade de fertilizantes sintéticos. A rotação de culturas interrompe ciclos de vida de pragas e patógenos específicos - insetos e fungos adaptados à soja não encontram hospedeiro adequado quando há milho ou crotalária, reduzindo suas populações. Além disso, diferentes sistemas radiculares exploram profundidades distintas do solo, melhorando estrutura e reduzindo erosão (não aumentando).",
+          "dificuldade": "medio",
+          "tags": ["agricultura sustentável", "fixação de nitrogênio", "rotação de culturas"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Uma cidade costeira enfrenta escassez de água potável apesar de estar próxima ao mar. Foi proposta instalação de usina de dessalinização que remove sais da água do mar, tornando-a potável. Entretanto, ambientalistas alertam para potenciais impactos ambientais dessa tecnologia. Qual é a principal preocupação ambiental associada à dessalinização em larga escala?",
+          "alternativas": {
+            "A": "Consumo elevado de energia e geração de salmoura concentrada que pode afetar ecossistemas marinhos",
+            "B": "Remoção de água do mar causa redução do nível oceânico global",
+            "C": "Água dessalinizada contém quantidade excessiva de minerais prejudiciais à saúde",
+            "D": "Processo de dessalinização libera grandes quantidades de metais pesados no oceano",
+            "E": "Captação de água do mar elimina completamente organismos planctônicos da região"
+          },
+          "correta": "A",
+          "explicacao": "As principais preocupações ambientais com dessalinização são: 1) Alto consumo energético - o processo requer muita energia, geralmente de fontes fósseis, contribuindo para emissões de gases estufa; 2) Descarte de salmoura - o processo gera rejeito com concentração de sal muito superior à água do mar, e seu descarte pode criar zonas de alta salinidade que afetam organismos marinhos, além de conter produtos químicos usados no tratamento. A quantidade de água retirada não afeta nível oceânico global (é ínfima comparada ao volume total), água dessalinizada é pobre em minerais (não excessiva), não libera metais pesados, e sistemas de captação modernos minimizam mortalidade de organismos.",
+          "dificuldade": "dificil",
+          "tags": ["recursos hídricos", "dessalinização", "impactos ambientais"]
+        }
+      ]
+    },
+    {
+      "id": "modulo05",
+      "titulo": "Desenvolvimento Sustentável e Políticas Ambientais",
+      "resumo": "Conceitos de sustentabilidade, legislação ambiental brasileira e acordos internacionais",
+      "topicos": [
+        {
+          "titulo": "Conceitos de Desenvolvimento Sustentável",
+          "conteudo": "O conceito de desenvolvimento sustentável foi definido no Relatório Brundtland (1987) como 'desenvolvimento que satisfaz as necessidades presentes sem comprometer a capacidade das gerações futuras de satisfazerem suas próprias necessidades'. Baseia-se em três pilares interdependentes: sustentabilidade ambiental (conservação de recursos naturais e ecossistemas), sustentabilidade econômica (viabilidade econômica de longo prazo) e sustentabilidade social (equidade, qualidade de vida, justiça social).\n\nA pegada ecológica é um indicador que mede a área de terra e água biologicamente produtiva necessária para produzir recursos consumidos e absorver resíduos gerados por uma população, considerando tecnologia disponível. Expressa em hectares globais (gha) per capita. Se a pegada ecológica excede a biocapacidade (capacidade regenerativa da Terra), há déficit ecológico - atualmente, humanidade consome cerca de 1,7 planetas por ano. Países desenvolvidos geralmente têm pegada muito maior que países em desenvolvimento.\n\nOs Objetivos de Desenvolvimento Sustentável (ODS) são 17 objetivos estabelecidos pela ONU em 2015 como agenda global até 2030. Incluem: erradicação da pobreza, fome zero, saúde e bem-estar, educação de qualidade, igualdade de gênero, água potável e saneamento, energia limpa e acessível, trabalho decente e crescimento econômico, indústria inovação e infraestrutura, redução das desigualdades, cidades e comunidades sustentáveis, consumo e produção responsáveis, ação contra mudança global do clima, vida na água, vida terrestre, paz justiça e instituições eficazes, parcerias e meios de implementação.\n\nO pagamento por serviços ambientais (PSA) é mecanismo econômico que reconhece e remunera quem conserva ou mantém serviços ecossistêmicos como: provisão de água limpa (florestas protegem nascentes), regulação climática (florestas sequestram carbono), polinização (mantida por habitats naturais), controle de erosão, beleza cênica para turismo. PSA alinha interesse econômico com conservação ambiental. Programa Bolsa Verde no Brasil paga famílias em unidades de conservação para conservarem floresta. REDD+ (Redução de Emissões por Desmatamento e Degradação) remunera países em desenvolvimento por redução de desmatamento."
+        },
+        {
+          "titulo": "Legislação Ambiental Brasileira",
+          "conteudo": "A Política Nacional de Meio Ambiente (Lei 6.938/1981) estabeleceu princípios fundamentais: meio ambiente como patrimônio público, prevenção e precaução, poluidor-pagador, usuário-pagador. Criou SISNAMA (Sistema Nacional de Meio Ambiente) com órgãos federais (IBAMA, ICMBio), estaduais e municipais. Estabeleceu instrumentos como licenciamento ambiental, Estudo de Impacto Ambiental (EIA) e Relatório de Impacto Ambiental (RIMA) para empreendimentos potencialmente poluidores.\n\nO Código Florestal (Lei 12.651/2012) define Áreas de Preservação Permanente (APPs) que devem ser mantidas com vegetação nativa: margens de rios (largura varia com tamanho do rio), nascentes e olhos d'água (raio mínimo de 50m), topos de morros, encostas íngremes, restingas, manguezais, veredas. APPs protegem recursos hídricos, previnem erosão, mantêm corredores ecológicos. Reserva Legal é área percentual da propriedade que deve ser mantida com vegetação nativa: 80% em propriedades na Amazônia, 35% no Cerrado amazônico, 20% nas demais regiões. Pode ser explorada sustentavelmente. Cadastro Ambiental Rural (CAR) registra propriedades rurais, identificando APPs e Reserva Legal.\n\nA Política Nacional de Resíduos Sólidos (Lei 12.305/2010) estabelece responsabilidade compartilhada pelo ciclo de vida dos produtos: fabricantes, importadores, distribuidores, comerciantes, consumidores e titulares de serviços públicos de limpeza urbana. Institui logística reversa obrigatória para agrotóxicos, pilhas e baterias, pneus, óleos lubrificantes, lâmpadas fluorescentes, eletroeletrônicos, embalagens. Define ordem de prioridade: não geração, redução, reutilização, reciclagem, tratamento e disposição final adequada. Proíbe lixões, exigindo aterros sanitários.\n\nO Sistema Nacional de Unidades de Conservação (SNUC - Lei 9.985/2000) organiza áreas protegidas em dois grupos. Unidades de Proteção Integral permitem apenas uso indireto dos recursos naturais: Estação Ecológica (pesquisa), Reserva Biológica (preservação integral), Parque Nacional (visitação, educação, pesquisa), Monumento Natural (preservação de sítios naturais raros), Refúgio de Vida Silvestre (proteção de espécies). Unidades de Uso Sustentável permitem exploração sustentável: Área de Proteção Ambiental (propriedades privadas com restrições), Área de Relevante Interesse Ecológico, Floresta Nacional (exploração sustentável de madeira), Reserva Extrativista (populações tradicionais), Reserva de Fauna, Reserva de Desenvolvimento Sustentável, Reserva Particular do Patrimônio Natural (voluntária)."
+        },
+        {
+          "titulo": "Conferências e Acordos Ambientais Internacionais",
+          "conteudo": "A Conferência de Estocolmo (1972) foi a primeira conferência da ONU sobre meio ambiente humano, marcando reconhecimento internacional da importância de questões ambientais. Declaração de Estocolmo estabeleceu 26 princípios sobre direitos e responsabilidades ambientais. Criou PNUMA (Programa das Nações Unidas para o Meio Ambiente). Confrontou visões de países desenvolvidos (ênfase em preservação) e em desenvolvimento (direito ao desenvolvimento econômico).\n\nA ECO-92 (Rio de Janeiro, 1992) foi marco histórico reunindo 178 países. Produziu documentos importantes: Declaração do Rio sobre Meio Ambiente e Desenvolvimento estabeleceu 27 princípios incluindo precaução, responsabilidades comuns mas diferenciadas, direito ao desenvolvimento; Agenda 21 é plano de ação global para desenvolvimento sustentável no século XXI; Convenção sobre Diversidade Biológica visa conservação da biodiversidade, uso sustentável de componentes e repartição justa de benefícios de recursos genéticos; Convenção-Quadro sobre Mudanças Climáticas estabeleceu base para negociações futuras sobre clima; Declaração de Princípios sobre Florestas (não vinculante).\n\nO Protocolo de Kyoto (1997) foi primeiro acordo com metas obrigatórias de redução de emissões de gases estufa. Países desenvolvidos (Anexo I) comprometeram-se a reduzir emissões em média 5,2% abaixo dos níveis de 1990 entre 2008-2012. Estabeleceu mecanismos de flexibilização: Comércio de Emissões (países com emissões abaixo da meta podem vender créditos), Implementação Conjunta (países desenvolvidos implementam projetos em outros países desenvolvidos), Mecanismo de Desenvolvimento Limpo - MDL (países desenvolvidos financiam projetos de redução em países em desenvolvimento, recebendo créditos). Estados Unidos não ratificaram. Eficácia limitada pois principais emissores (China, Índia) não tinham metas obrigatórias.\n\nO Acordo de Paris (2015) substituiu Kyoto com abordagem mais inclusiva. Todos os países (desenvolvidos e em desenvolvimento) apresentam Contribuições Nacionalmente Determinadas (NDCs) com metas voluntárias de redução de emissões. Objetivo: limitar aquecimento global a bem menos de 2°C, preferencialmente 1,5°C acima de níveis pré-industriais. Reconhece responsabilidades comuns mas diferenciadas. Estabelece mecanismo de revisão quinquenal de metas (ambição crescente). Inclui compromissos de financiamento climático de países desenvolvidos para países em desenvolvimento (US$ 100 bilhões anuais). Acordo de Paris entrou em vigor rapidamente (2016) com ratificação de países responsáveis por mais de 55% das emissões globais."
+        },
+        {
+          "titulo": "Consumo Consciente e Responsabilidade Socioambiental",
+          "conteudo": "O consumo consciente envolve escolhas de compra considerando impactos ambientais, sociais e econômicos. Princípios incluem: reavaliar necessidade real de produtos (diferenciar necessidade de desejo), reduzir consumo desnecessário, reutilizar produtos e embalagens, reciclar quando não for possível reutilizar, recusar produtos com impacto ambiental excessivo. Obsolescência programada (produtos intencionalmente projetados para durarem pouco) estimula consumo excessivo e geração de resíduos.\n\nCertificações e selos ambientais orientam consumidores: FSC (Forest Stewardship Council) certifica produtos de madeira de manejo florestal sustentável; Selo Orgânico certifica produtos orgânicos sem agrotóxicos sintéticos; Procel identifica eletrodomésticos eficientes energeticamente; Fair Trade garante comércio justo com condições adequadas para produtores; Selo Azul (Marine Stewardship Council) certifica pescados de fontes sustentáveis; LEED certifica construções sustentáveis. Greenwashing é prática enganosa de empresas que se promovem como ambientalmente responsáveis sem ações concretas.\n\nA responsabilidade socioambiental corporativa vai além do cumprimento de leis, envolvendo ações voluntárias para reduzir impactos negativos e gerar impactos positivos. Dimensões incluem: ambiental (redução de emissões, eficiência no uso de recursos, gestão de resíduos, produtos sustentáveis); social (condições de trabalho dignas, diversidade e inclusão, desenvolvimento de comunidades, respeito a direitos humanos); governança (transparência, ética, combate à corrupção). Triple Bottom Line avalia empresas não apenas por lucro financeiro, mas também por impactos sociais e ambientais.\n\nA Economia Verde busca conciliar crescimento econômico com sustentabilidade ambiental e inclusão social. Caracteriza-se por: baixa emissão de carbono, uso eficiente de recursos, socialmente inclusiva. Setores incluem: energias renováveis, eficiência energética, transporte sustentável, gestão de resíduos, construção verde, agricultura sustentável, ecoturismo, produtos e serviços ecológicos. Empregos verdes são aqueles que contribuem para preservar ou restaurar meio ambiente, em setores tradicionais (agricultura) ou novos (renováveis). Transição justa busca garantir que mudança para economia verde não prejudique trabalhadores de setores poluentes, oferecendo requalificação e novas oportunidades."
+        }
+      ],
+      "exemplos": [
+        "Programa Bolsa Verde remunerando famílias de reservas extrativistas para conservação florestal",
+        "Selo FSC em produtos de papel e madeira indicando manejo florestal sustentável",
+        "NDCs do Brasil no Acordo de Paris incluindo redução de desmatamento ilegal e reflorestamento"
+      ],
+      "dicas": [
+        "Diferencie os três pilares da sustentabilidade: ambiental, econômico e social - todos são essenciais",
+        "Código Florestal é tema frequente: entenda APPs (preservação permanente) vs Reserva Legal (uso sustentável)",
+        "Protocolo de Kyoto tinha metas obrigatórias só para desenvolvidos; Paris inclui todos os países",
+        "Questões sobre consumo consciente relacionam escolhas individuais com impactos coletivos"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "O conceito de desenvolvimento sustentável baseia-se em três pilares interdependentes. Uma empresa de mineração pretende explorar uma área rica em minérios, gerando empregos e receita, mas a região abriga comunidades tradicionais e ecossistemas frágeis. Para que o projeto seja considerado sustentável, deve:",
+          "alternativas": {
+            "A": "Priorizar o lucro econômico, pois benefícios financeiros compensarão impactos ambientais e sociais",
+            "B": "Focar apenas na preservação ambiental, impedindo qualquer atividade econômica na região",
+            "C": "Equilibrar viabilidade econômica com conservação ambiental e respeito aos direitos das comunidades",
+            "D": "Consultar apenas especialistas ambientais, desconsiderando opiniões de moradores locais",
+            "E": "Implementar tecnologias de extração mais baratas, mesmo que ambientalmente inadequadas"
+          },
+          "correta": "C",
+          "explicacao": "O desenvolvimento sustentável requer equilíbrio entre os três pilares: econômico (viabilidade financeira, geração de empregos), ambiental (minimização de impactos, conservação de ecossistemas) e social (respeito a direitos de comunidades, qualidade de vida). Não se trata de priorizar um pilar sobre outros, mas integrá-los. No caso de mineração em área sensível, sustentabilidade exigiria: avaliação rigorosa de impactos ambientais, consulta livre e informada às comunidades afetadas, tecnologias que minimizem degradação, compensações ambientais, distribuição justa de benefícios, restauração de áreas degradadas após exploração.",
+          "dificuldade": "medio",
+          "tags": ["desenvolvimento sustentável", "três pilares", "mineração"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "De acordo com o Código Florestal Brasileiro, propriedades rurais devem manter Áreas de Preservação Permanente (APPs) e Reserva Legal com vegetação nativa. Qual das seguintes afirmações diferencia corretamente esses dois tipos de áreas protegidas?",
+          "alternativas": {
+            "A": "APPs podem ser exploradas economicamente, enquanto Reserva Legal deve ser totalmente preservada",
+            "B": "APPs protegem áreas sensíveis como margens de rios independente do bioma, Reserva Legal tem percentual variável por região",
+            "C": "APPs são obrigatórias apenas em propriedades grandes, Reserva Legal é obrigatória em todas",
+            "D": "APPs são definidas por percentual da propriedade, Reserva Legal por características topográficas",
+            "E": "APPs podem ser compensadas em outras áreas, Reserva Legal deve ser mantida no local original"
+          },
+          "correta": "B",
+          "explicacao": "APPs (Áreas de Preservação Permanente) são definidas por características topográficas e ecológicas sensíveis - margens de rios, nascentes, topos de morros, encostas íngremes - independente do bioma, visando proteção de recursos hídricos e prevenção de erosão. Devem ser integralmente preservadas (não podem ser exploradas economicamente). Reserva Legal é percentual da propriedade que varia por região e bioma: 80% na Amazônia, 35% no Cerrado amazônico, 20% nas demais regiões. Pode ser explorada sustentavelmente (manejo florestal) e compensada em outras áreas. Ambas são obrigatórias em propriedades rurais de qualquer tamanho.",
+          "dificuldade": "medio",
+          "tags": ["Código Florestal", "APPs", "Reserva Legal"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "O Protocolo de Kyoto (1997) e o Acordo de Paris (2015) são instrumentos internacionais para combate às mudanças climáticas. Qual diferença fundamental entre esses acordos reflete evolução nas estratégias de governança climática global?",
+          "alternativas": {
+            "A": "Kyoto focava em adaptação às mudanças climáticas, Paris foca em mitigação de emissões",
+            "B": "Kyoto estabelecia metas obrigatórias apenas para países desenvolvidos, Paris inclui compromissos de todos os países",
+            "C": "Kyoto regulamentava apenas emissões de CO₂, Paris inclui todos os gases estufa",
+            "D": "Kyoto permitia comércio de créditos de carbono, Paris proíbe mecanismos de mercado",
+            "E": "Kyoto tinha meta global de redução, Paris permite que cada país aumente emissões"
+          },
+          "correta": "B",
+          "explicacao": "A principal diferença é na estrutura de compromissos. Kyoto adotou abordagem 'top-down' com metas obrigatórias de redução apenas para países desenvolvidos (Anexo I), enquanto países em desenvolvimento não tinham obrigações quantitativas. Isso limitou eficácia pois grandes emissores como China e Índia não tinham metas. Paris adotou abordagem 'bottom-up' onde todos os países (desenvolvidos e em desenvolvimento) apresentam NDCs (Contribuições Nacionalmente Determinadas) voluntárias, mas com mecanismos de revisão e aumento progressivo de ambição. Isso aumentou adesão e cobertura global, reconhecendo responsabilidades comuns mas diferenciadas.",
+          "dificuldade": "dificil",
+          "tags": ["Protocolo de Kyoto", "Acordo de Paris", "mudanças climáticas"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Um consumidor está escolhendo entre dois produtos similares em funcionalidade e preço. O produto A tem certificação FSC, enquanto o produto B não possui certificações ambientais mas é produzido localmente. Considerando princípios de consumo consciente, qual informação é mais relevante para uma escolha fundamentada?",
+          "alternativas": {
+            "A": "Certificação FSC garante que produto A é superior em todos os aspectos ambientais",
+            "B": "Produto local (B) sempre tem menor pegada de carbono que produto certificado (A)",
+            "C": "É necessário avaliar múltiplos fatores: origem da matéria-prima, transporte, condições de produção de ambos",
+            "D": "Certificações são apenas estratégias de marketing sem significado ambiental real",
+            "E": "Preço e funcionalidade são únicos critérios relevantes para consumo consciente"
+          },
+          "correta": "C",
+          "explicacao": "Consumo consciente requer análise multidimensional, não decisões baseadas em critério único. FSC certifica manejo florestal sustentável (importante para produtos de madeira/papel), mas não considera todos os aspectos. Produção local geralmente reduz emissões de transporte, mas depende de como foi produzido localmente. Escolha informada consideraria: tipo de matéria-prima (renovável?), práticas de produção (poluição, condições de trabalho), distância de transporte, durabilidade do produto, possibilidade de reciclagem, real necessidade da compra. Certificações são ferramentas úteis mas não garantem superioridade absoluta. Greenwashing existe, mas certificações sérias têm valor.",
+          "dificuldade": "medio",
+          "tags": ["consumo consciente", "certificações ambientais", "pegada ecológica"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "A Política Nacional de Resíduos Sólidos estabelece logística reversa obrigatória para determinados produtos. Uma empresa que fabrica eletroeletrônicos questiona a obrigatoriedade de estruturar sistema de coleta e destinação de produtos pós-consumo. Qual princípio fundamenta essa exigência legal?",
+          "alternativas": {
+            "A": "Princípio da precaução, que determina ação preventiva mesmo sem certeza científica completa",
+            "B": "Princípio da responsabilidade compartilhada, onde fabricantes respondem pelo ciclo de vida completo do produto",
+            "C": "Princípio do poluidor-pagador, que obriga poluidores a pagarem multas por danos ambientais",
+            "D": "Princípio da participação popular, garantindo que cidadãos decidam destino de resíduos",
+            "E": "Princípio do desenvolvimento sustentável, que prioriza crescimento econômico sobre questões ambientais"
+          },
+          "correta": "B",
+          "explicacao": "A logística reversa fundamenta-se no princípio da responsabilidade compartilhada pelo ciclo de vida dos produtos. Fabricantes, importadores, distribuidores e comerciantes são corresponsáveis não apenas pela produção e venda, mas também pela destinação adequada após o uso. No caso de eletroeletrônicos, isso é especialmente importante pois contêm materiais valiosos (que podem ser recuperados) e substâncias tóxicas (que não devem ir para lixões/aterros). A logística reversa internaliza custos ambientais no processo produtivo, incentivando design de produtos mais duráveis e recicláveis. Difere do princípio poluidor-pagador que é mais punitivo (multas por danos), sendo mais preventivo e sistêmico.",
+          "dificuldade": "medio",
+          "tags": ["PNRS", "logística reversa", "responsabilidade compartilhada"]
+        }
+      ]
+    }
+  ]
+}

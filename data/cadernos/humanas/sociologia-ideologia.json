@@ -1,0 +1,210 @@
+{
+  "id": "sociologia-ideologia",
+  "titulo": "Ideologia e Industria Cultural",
+  "descricao": "Ideologia, midia, manipulacao e reproducao de valores na sociedade",
+  "icone": "📺",
+  "cor": "from-fuchsia-500 to-purple-600",
+  "nivel": "Avancado",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "O Conceito de Ideologia",
+      "resumo": "Ideologia como sistema de ideias, valores e representacoes que legitimam ou contestam a ordem social.",
+      "topicos": [
+        "Definicoes de ideologia",
+        "Ideologia em Marx: falsa consciencia",
+        "Ideologia como visao de mundo",
+        "Funcoes da ideologia",
+        "Ideologia dominante"
+      ],
+      "exemplos": [
+        "Meritocracia: ideologia que naturaliza desigualdade",
+        "'Os pobres sao pobres porque nao se esforcam'",
+        "Ideologia liberal, socialista, conservadora"
+      ],
+      "dicas": [
+        "Ideologia pode ocultar contradicoes sociais",
+        "Nao e apenas 'mentira', mas perspectiva parcial",
+        "ENEM questiona naturalizacao de desigualdades"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Para Marx, a ideologia funciona como:",
+          "alternativas": [
+            "Revelacao completa e transparente da realidade",
+            "Sistema de ideias que mascara contradicoes e legitima a dominacao de classe",
+            "Conjunto de verdades absolutas e inquestionaveis",
+            "Reflexo perfeito das relacoes sociais",
+            "Ausencia de qualquer sistema de crencas"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Para Marx, ideologia e um sistema de ideias da classe dominante que apresenta seus interesses particulares como universais, mascarando contradicoes e legitimando a ordem social existente (falsa consciencia).",
+          "dificuldade": "media",
+          "tags": ["marx", "ideologia", "falsa-consciencia"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Industria Cultural",
+      "resumo": "A producao cultural massificada como mercadoria e instrumento de controle social (Escola de Frankfurt).",
+      "topicos": [
+        "Conceito de industria cultural",
+        "Adorno e Horkheimer",
+        "Cultura como mercadoria",
+        "Padronizacao e massificacao",
+        "Manipulacao das consciencias"
+      ],
+      "exemplos": [
+        "TV, cinema, musica pop produzidos em massa",
+        "Formulas repetidas: novelas, filmes de acao",
+        "Consumo cultural substituindo pensamento critico"
+      ],
+      "dicas": [
+        "Industria cultural produz conformismo",
+        "Cultura vira entretenimento alienante",
+        "ENEM critica consumo acritico de midia"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "A Escola de Frankfurt critica a industria cultural porque ela:",
+          "alternativas": [
+            "Democratiza o acesso a arte erudita",
+            "Transforma cultura em mercadoria padronizada que manipula e aliena",
+            "Promove a diversidade cultural",
+            "Estimula o pensamento critico",
+            "Nao tem nenhum impacto social"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Adorno e Horkheimer criticam a industria cultural por transformar arte e cultura em mercadorias padronizadas, produzidas em serie para lucro, gerando alienacao, conformismo e manipulacao ao inves de emancipacao.",
+          "dificuldade": "facil",
+          "tags": ["industria-cultural", "frankfurt", "adorno"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Midia e Comunicacao de Massa",
+      "resumo": "O papel dos meios de comunicacao na formacao da opiniao publica e reproducao ideologica.",
+      "topicos": [
+        "Meios de comunicacao de massa",
+        "Agenda setting e enquadramento",
+        "Concentracao midiatica",
+        "Midia e democracia",
+        "Fake news e desinformacao"
+      ],
+      "exemplos": [
+        "TV, radio, jornais, internet",
+        "Midia decide 'sobre o que pensar'",
+        "Monopolios de comunicacao no Brasil",
+        "Fake news nas eleicoes"
+      ],
+      "dicas": [
+        "Midia seleciona e enquadra informacoes",
+        "Concentracao midiatica limita pluralidade",
+        "ENEM aborda midia e manipulacao"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "A teoria do agenda setting sugere que a midia:",
+          "alternativas": [
+            "Nao tem nenhuma influencia sobre o publico",
+            "Define sobre quais temas o publico deve pensar e discutir",
+            "Sempre apresenta informacoes de forma neutra",
+            "E completamente controlada pelo publico",
+            "Apenas reproduz fielmente os fatos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A teoria do agenda setting propoe que a midia, ao selecionar e dar destaque a certos temas, define a agenda publica, influenciando sobre quais assuntos as pessoas pensam e discutem.",
+          "dificuldade": "media",
+          "tags": ["midia", "agenda-setting", "comunicacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Reproducao Ideologica",
+      "resumo": "Mecanismos pelos quais valores, normas e visoes de mundo sao transmitidos e reproduzidos socialmente.",
+      "topicos": [
+        "Aparelhos ideologicos de Estado (Althusser)",
+        "Escola como reproducao",
+        "Familia e reproducao de valores",
+        "Religiao e controle social",
+        "Hegemonia cultural (Gramsci)"
+      ],
+      "exemplos": [
+        "Escola: transmite valores dominantes",
+        "Igreja: legitima ordem social",
+        "Midia: naturaliza desigualdades",
+        "Hegemonia: consentimento, nao apenas coercao"
+      ],
+      "dicas": [
+        "Reproducao: manutencao da ordem social",
+        "Instituicoes reproduzem ideologia dominante",
+        "Gramsci: hegemonia = dominacao por consenso"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Para Althusser, os aparelhos ideologicos de Estado sao instituicoes que:",
+          "alternativas": [
+            "Usam apenas a violencia fisica",
+            "Reproduzem a ideologia dominante atraves de escola, midia, religiao, etc.",
+            "Sao completamente neutros e imparciais",
+            "Nao tem relacao com o poder estatal",
+            "Existem apenas em regimes totalitarios"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Aparelhos ideologicos de Estado (escola, igreja, midia, familia) reproduzem a ideologia dominante principalmente pela persuasao e socializacao, diferente dos aparelhos repressivos (policia, exercito) que usam coercao.",
+          "dificuldade": "media",
+          "tags": ["althusser", "aparelhos-ideologicos", "reproducao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Contra-Hegemonia e Resistencia",
+      "resumo": "Possibilidades de resistencia ideologica, producao cultural alternativa e contestacao da ordem estabelecida.",
+      "topicos": [
+        "Contra-hegemonia (Gramsci)",
+        "Movimentos sociais e ideologia",
+        "Midia alternativa e independente",
+        "Arte como resistencia",
+        "Educacao libertadora (Paulo Freire)"
+      ],
+      "exemplos": [
+        "Imprensa alternativa, blogs independentes",
+        "Arte engajada: rap, teatro de rua",
+        "Paulo Freire: educacao conscientizadora",
+        "Movimentos questionam ideologia dominante"
+      ],
+      "dicas": [
+        "Resistencia cultural e politica",
+        "Nem toda cultura e manipulacao",
+        "ENEM valoriza pensamento critico"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "O conceito de contra-hegemonia refere-se a:",
+          "alternativas": [
+            "A total ausencia de qualquer ideologia",
+            "Acoes e discursos que contestam e buscam substituir a ideologia dominante",
+            "O reforco da ideologia das classes dominantes",
+            "A impossibilidade de qualquer resistencia",
+            "A aceitacao passiva da ordem estabelecida"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Contra-hegemonia designa esforcos de grupos subalternos para construir ideologias, valores e visoes de mundo alternativas que contestam a hegemonia cultural das classes dominantes, buscando transformacao social.",
+          "dificuldade": "media",
+          "tags": ["gramsci", "contra-hegemonia", "resistencia"]
+        }
+      ]
+    }
+  ]
+}

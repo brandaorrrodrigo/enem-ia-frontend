@@ -1,0 +1,402 @@
+{
+  "id": "historia-brasil-colonia-completo",
+  "titulo": "Brasil Colônia",
+  "descricao": "Colonização portuguesa no Brasil: do descobrimento à crise do sistema colonial",
+  "icone": "🇧🇷",
+  "cor": "from-amber-500 to-orange-500",
+  "nivel": "Intermediário",
+  "tempoEstimado": "6h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod1-descobrimento-capitanias",
+      "titulo": "Descobrimento e Capitanias Hereditárias",
+      "topicos": [
+        "Contexto das Grandes Navegações",
+        "Tratado de Tordesilhas",
+        "Expedições exploradoras",
+        "Sistema de Capitanias Hereditárias",
+        "Fracasso do sistema"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "O sistema de capitanias hereditárias, implantado em 1534, foi a primeira tentativa de colonização do Brasil. Apesar de algumas capitanias terem prosperado, a maioria fracassou. Entre os fatores que explicam esse fracasso, destaca-se:",
+          "alternativas": [
+            "A falta de recursos dos donatários e as constantes guerras com indígenas",
+            "A ausência total de interesse português no território brasileiro",
+            "O excesso de investimentos da Coroa portuguesa nas capitanias",
+            "A recusa dos indígenas em trabalhar na produção açucareira",
+            "A proibição da escravidão africana no território colonial"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "O sistema de capitanias fracassou principalmente porque os donatários não tinham recursos suficientes para investir na colonização e enfrentavam constantes conflitos com indígenas. Apenas as capitanias de São Vicente e Pernambuco prosperaram."
+        },
+        {
+          "id": "q2",
+          "enunciado": "\"O Tratado de Tordesilhas, assinado em 1494, estabeleceu a divisão das terras descobertas e a descobrir entre Portugal e Espanha.\" Sobre as implicações desse tratado para a colonização do Brasil, é correto afirmar que:",
+          "alternativas": [
+            "Garantiu a Portugal apenas a região Norte do território brasileiro",
+            "Legitimou a posse portuguesa sobre as terras que viriam a ser o Brasil",
+            "Impediu a expansão territorial portuguesa além do Rio de Janeiro",
+            "Foi totalmente respeitado durante todo o período colonial",
+            "Dividiu o território brasileiro igualmente entre Portugal e Espanha"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Tratado de Tordesilhas legitimou a posse portuguesa sobre as terras brasileiras, dividindo o mundo entre Portugal e Espanha através de um meridiano. Porém, na prática, foi frequentemente desrespeitado, especialmente durante a expansão bandeirante."
+        },
+        {
+          "id": "q3",
+          "enunciado": "Durante o período pré-colonial (1500-1530), Portugal concentrou seus esforços no comércio com as Índias, dedicando pouca atenção ao Brasil. A principal atividade econômica nesse período foi:",
+          "alternativas": [
+            "A mineração de ouro nas regiões do interior",
+            "A produção de cana-de-açúcar no Nordeste",
+            "A extração do pau-brasil no litoral",
+            "A criação de gado no sertão nordestino",
+            "O cultivo de café no Vale do Paraíba"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Durante o período pré-colonial, a principal atividade foi a extração do pau-brasil, madeira de cor avermelhada usada para tingir tecidos na Europa. A exploração era feita através do escambo com os indígenas."
+        },
+        {
+          "id": "q4",
+          "enunciado": "As capitanias hereditárias eram divididas em sesmarias, grandes extensões de terra doadas a colonos. Esse sistema de distribuição de terras teve como consequência:",
+          "alternativas": [
+            "A democratização do acesso à propriedade rural no Brasil",
+            "O surgimento de pequenas propriedades familiares",
+            "A concentração fundiária e a formação de latifúndios",
+            "A distribuição igualitária de terras entre colonos e indígenas",
+            "O fim da escravidão nas áreas rurais"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "O sistema de sesmarias contribuiu para a concentração fundiária no Brasil, formando grandes latifúndios. Apenas colonos com recursos recebiam as terras, perpetuando a desigualdade na distribuição de propriedades."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A expedição de Martim Afonso de Sousa (1530-1533) marcou o início efetivo da colonização portuguesa no Brasil. Entre as ações realizadas por essa expedição, destaca-se:",
+          "alternativas": [
+            "A fundação da primeira vila, São Vicente, e a introdução da cana-de-açúcar",
+            "A descoberta das minas de ouro em Minas Gerais",
+            "A expulsão definitiva dos franceses do território brasileiro",
+            "A escravização em massa da população indígena",
+            "A construção da primeira universidade brasileira"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Martim Afonso de Sousa fundou a vila de São Vicente (1532), primeira vila brasileira, e trouxe mudas de cana-de-açúcar das ilhas atlânticas, iniciando a produção açucareira que se tornaria a base da economia colonial."
+        }
+      ]
+    },
+    {
+      "id": "mod2-governo-geral-economia",
+      "titulo": "Governo-Geral e Economia Açucareira",
+      "topicos": [
+        "Criação do Governo-Geral (1549)",
+        "Estrutura administrativa colonial",
+        "Produção açucareira no Nordeste",
+        "Engenhos e sociedade açucareira",
+        "Escravidão africana"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Em 1549, foi criado o Governo-Geral no Brasil, com Tomé de Sousa como primeiro governador-geral. Essa medida administrativa teve como principal objetivo:",
+          "alternativas": [
+            "Substituir completamente o sistema de capitanias hereditárias",
+            "Centralizar a administração e garantir a defesa do território colonial",
+            "Promover a independência política das capitanias",
+            "Acabar com a escravidão indígena em todo o território",
+            "Transferir a capital portuguesa para Salvador"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O Governo-Geral foi criado para centralizar a administração colonial e garantir melhor defesa do território, sem extinguir as capitanias. Salvador foi escolhida como sede por sua posição estratégica."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A sociedade açucareira colonial era caracterizada por uma estrutura rígida. Sobre essa organização social, é correto afirmar que:",
+          "alternativas": [
+            "Havia grande mobilidade social entre escravizados e senhores de engenho",
+            "Era uma sociedade igualitária baseada no trabalho livre",
+            "Caracterizava-se pela bipolaridade: senhores de engenho e escravizados",
+            "Os comerciantes portugueses ocupavam o topo da hierarquia social",
+            "Os indígenas eram integrados como cidadãos livres na sociedade"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A sociedade açucareira era marcadamente bipolar, dividida entre senhores de engenho (elite agrária) e escravizados (africanos principalmente). Havia pouca mobilidade social e rígida hierarquia."
+        },
+        {
+          "id": "q3",
+          "enunciado": "O engenho colonial era uma unidade produtiva complexa. Sobre sua estrutura e funcionamento, analise: O engenho incluía a casa-grande, senzala, capela, moendas e casa de purgar. Essa organização espacial refletia:",
+          "alternativas": [
+            "A separação entre espaço produtivo e espaço doméstico",
+            "As relações de poder e a hierarquia da sociedade colonial",
+            "A igualdade entre senhores e escravizados",
+            "A inexistência de diferenciação social no período colonial",
+            "O modelo democrático de organização do trabalho"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A organização espacial do engenho refletia claramente as relações de poder: casa-grande (senhores), senzala (escravizados), capela (controle religioso), expressando a hierarquia e o controle social."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A escravidão africana tornou-se predominante na economia açucareira colonial. Entre os fatores que explicam a preferência pelo trabalho escravizado africano em detrimento do indígena, destaca-se:",
+          "alternativas": [
+            "A proibição total do uso de mão de obra indígena pela Igreja Católica",
+            "A maior resistência física dos africanos ao trabalho nos engenhos",
+            "A lucratividade do tráfico negreiro para comerciantes portugueses",
+            "A ausência de população indígena no território brasileiro",
+            "O alto custo da mão de obra indígena em relação à africana"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Embora houvesse outros fatores, a lucratividade do tráfico negreiro foi decisiva. O comércio de escravizados africanos gerava enormes lucros para comerciantes portugueses, constituindo um negócio altamente rentável."
+        },
+        {
+          "id": "q5",
+          "enunciado": "Durante o século XVI e parte do XVII, o Brasil foi o maior produtor mundial de açúcar. Sobre esse período de prosperidade açucareira, é correto afirmar que:",
+          "alternativas": [
+            "Beneficiou igualmente todas as regiões do território colonial",
+            "Concentrou-se principalmente no Nordeste, especialmente Bahia e Pernambuco",
+            "Foi controlado exclusivamente por empresários brasileiros",
+            "Utilizou apenas mão de obra livre e assalariada",
+            "Independia completamente do capital holandês"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A produção açucareira concentrou-se no Nordeste, principalmente em Pernambuco e Bahia, devido às condições climáticas favoráveis e ao massapé (solo fértil). Os holandeses participavam do financiamento, refino e distribuição."
+        }
+      ]
+    },
+    {
+      "id": "mod3-invasoes-estrangeiras",
+      "titulo": "Invasões Estrangeiras e União Ibérica",
+      "topicos": [
+        "França Antártica (1555-1567)",
+        "França Equinocial (1612-1615)",
+        "União Ibérica (1580-1640)",
+        "Invasões holandesas no Nordeste",
+        "Governo de Maurício de Nassau"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A França Antártica foi uma tentativa francesa de estabelecer uma colônia no Brasil entre 1555 e 1567. Sobre esse episódio, é correto afirmar que:",
+          "alternativas": [
+            "Os franceses obtiveram sucesso permanente, fundando a cidade do Rio de Janeiro",
+            "Foi apoiada pela Coroa portuguesa como estratégia comercial",
+            "Os franceses foram expulsos por Mem de Sá e Estácio de Sá",
+            "Resultou na divisão do território brasileiro entre França e Portugal",
+            "Não houve resistência portuguesa à presença francesa"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Os franceses estabeleceram-se na Baía de Guanabara sob liderança de Villegagnon. Foram expulsos pelos portugueses comandados pelo governador-geral Mem de Sá e seu sobrinho Estácio de Sá, que fundou o Rio de Janeiro em 1565."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A União Ibérica (1580-1640) ocorreu quando Filipe II da Espanha assumiu o trono português. As consequências desse período para o Brasil incluem:",
+          "alternativas": [
+            "O fortalecimento das relações entre Portugal e Holanda",
+            "A exposição do Brasil aos inimigos da Espanha, como a Holanda",
+            "O fim definitivo das invasões estrangeiras no território colonial",
+            "A independência imediata das capitanias brasileiras",
+            "A proibição total do tráfico de escravizados africanos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Durante a União Ibérica, o Brasil tornou-se vulnerável aos inimigos da Espanha. A Holanda, em guerra de independência contra a Espanha, invadiu o Nordeste brasileiro (1624-1654) para controlar a produção açucareira."
+        },
+        {
+          "id": "q3",
+          "enunciado": "As invasões holandesas no Brasil (1624-1654) tiveram motivações principalmente econômicas. Sobre esse período, analise: Os holandeses invadiram o Nordeste brasileiro com o objetivo de:",
+          "alternativas": [
+            "Catequizar os indígenas e expandir o catolicismo",
+            "Controlar a produção e comercialização do açúcar",
+            "Estabelecer uma democracia representativa na colônia",
+            "Libertar os escravizados e abolir a escravidão",
+            "Fundar universidades e promover educação gratuita"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A invasão holandesa visava controlar a lucrativa produção açucareira. Os holandeses já participavam do refino e distribuição do açúcar na Europa e buscavam dominar também a produção."
+        },
+        {
+          "id": "q4",
+          "enunciado": "O governo de Maurício de Nassau (1637-1644) em Pernambuco é considerado o período mais próspero da dominação holandesa. Entre suas realizações, destaca-se:",
+          "alternativas": [
+            "A expulsão de todos os portugueses e brasileiros do Nordeste",
+            "A modernização urbana de Recife e a tolerância religiosa",
+            "O fim da escravidão e a libertação de todos os africanos",
+            "A proibição da produção de açúcar na região",
+            "A perseguição violenta aos judeus e protestantes"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Nassau modernizou Recife com pontes, palácios e jardins, trouxe artistas e cientistas, e praticou tolerância religiosa (permitindo catolicismo e judaísmo). Seu governo contrastava com a intolerância religiosa portuguesa."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A Insurreição Pernambucana (1645-1654) resultou na expulsão definitiva dos holandeses do Nordeste brasileiro. Entre os fatores que contribuíram para essa vitória, destaca-se:",
+          "alternativas": [
+            "O apoio militar direto da Espanha contra os holandeses",
+            "A união entre portugueses, brasileiros e índios contra o invasor",
+            "A rendição voluntária dos holandeses sem resistência",
+            "A intervenção militar francesa em favor de Portugal",
+            "A falta de interesse holandês na produção açucareira"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A expulsão holandesa resultou da união entre portugueses, brasileiros e indígenas. Após a saída de Nassau (1644), os holandeses endureceram a cobrança de dívidas, provocando a reação da população, liderada por figuras como João Fernandes Vieira."
+        }
+      ]
+    },
+    {
+      "id": "mod4-mineracao-ouro",
+      "titulo": "Ciclo do Ouro e Mineração",
+      "topicos": [
+        "Descoberta do ouro em Minas Gerais",
+        "Corrida do ouro e povoamento",
+        "Sistema de exploração e tributação",
+        "Guerra dos Emboabas",
+        "Sociedade mineradora"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A descoberta de ouro no final do século XVII, principalmente em Minas Gerais, transformou profundamente a colônia. Entre as consequências desse ciclo econômico, destaca-se:",
+          "alternativas": [
+            "O despovoamento completo do litoral nordestino",
+            "O deslocamento do eixo econômico do Nordeste para o Centro-Sul",
+            "A abolição imediata da escravidão nas áreas mineradoras",
+            "O fim da produção açucareira no território colonial",
+            "A independência política das Minas Gerais"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A mineração deslocou o eixo econômico para o Centro-Sul, promoveu a interiorização, o crescimento do mercado interno e a urbanização. A capital foi transferida de Salvador para o Rio de Janeiro em 1763."
+        },
+        {
+          "id": "q2",
+          "enunciado": "A sociedade mineradora diferenciava-se da sociedade açucareira em vários aspectos. Sobre essas diferenças, é correto afirmar que:",
+          "alternativas": [
+            "A sociedade mineradora era mais rígida e estratificada que a açucareira",
+            "Na região das minas havia maior mobilidade social e urbanização",
+            "A escravidão era proibida nas áreas de mineração",
+            "Não havia diferenciação social nas áreas mineradoras",
+            "A sociedade mineradora era exclusivamente rural"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A sociedade mineradora era mais diversificada, urbanizada e dinâmica que a açucareira. Havia maior mobilidade social (embora limitada), desenvolvimento de cidades, comércio intenso e atividades culturais mais ricas."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Coroa portuguesa estabeleceu rígido controle sobre a mineração através de diversos mecanismos de tributação. O principal imposto cobrado sobre o ouro era:",
+          "alternativas": [
+            "O dízimo, correspondente a 10% de toda a produção agrícola",
+            "O quinto, correspondente a 20% (1/5) de todo o ouro extraído",
+            "A derrama, cobrança fixa anual independente da produção",
+            "O estanco, monopólio real sobre a venda de ouro",
+            "A capitação, imposto sobre o número de escravos"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O quinto (20% do ouro extraído) era o principal tributo. Quando a arrecadação não atingia 100 arrobas anuais, a Coroa aplicava a derrama (cobrança forçada). A capitação (por escravo) foi outro método usado posteriormente."
+        },
+        {
+          "id": "q4",
+          "enunciado": "A Guerra dos Emboabas (1707-1709) foi um conflito que opôs paulistas e forasteiros (emboabas) pelo controle das áreas mineradoras. Sobre esse conflito, é correto afirmar que:",
+          "alternativas": [
+            "Os paulistas mantiveram o controle exclusivo sobre as minas",
+            "A Coroa portuguesa não interveio no conflito",
+            "Os forasteiros, apoiados pela Coroa, saíram vitoriosos",
+            "Resultou na expulsão definitiva dos paulistas do Brasil",
+            "Foi um conflito pacífico resolvido por negociação"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Os forasteiros (portugueses e brasileiros de outras regiões) venceram com apoio da Coroa, que temia o poder dos paulistas. A Coroa criou a Capitania de São Paulo e Minas do Ouro (1709) para aumentar o controle sobre a região."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A atividade mineradora estimulou o desenvolvimento de outras atividades econômicas na colônia. Entre essas atividades, destaca-se:",
+          "alternativas": [
+            "A produção de gado no Sul para abastecer a região das minas",
+            "O declínio total do comércio interno colonial",
+            "A proibição da agricultura nas áreas mineradoras",
+            "O fim das relações comerciais entre as capitanias",
+            "A extinção do artesanato e manufaturas"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "A mineração estimulou diversas atividades: pecuária (Sul e Nordeste), agricultura de subsistência, comércio, artesanato e transporte. Desenvolveu-se um mercado interno mais dinâmico, integrando diferentes regiões da colônia."
+        }
+      ]
+    },
+    {
+      "id": "mod5-crise-colonial",
+      "titulo": "Crise do Sistema Colonial",
+      "topicos": [
+        "Declínio da mineração",
+        "Revoltas coloniais (Inconfidência Mineira, Conjuração Baiana)",
+        "Influência do Iluminismo",
+        "Reformas Pombalinas",
+        "Contexto da independência"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "A Inconfidência Mineira (1789) foi uma conspiração que visava a independência do Brasil. Sobre suas características e motivações, é correto afirmar que:",
+          "alternativas": [
+            "Foi um movimento popular que envolveu escravizados e população pobre",
+            "Tinha caráter elitista, liderado por proprietários e intelectuais",
+            "Não sofreu influência das ideias iluministas",
+            "Obteve sucesso e resultou na independência de Minas Gerais",
+            "Foi apoiada pela Coroa portuguesa desde o início"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Inconfidência Mineira foi liderada pela elite colonial (proprietários, intelectuais, militares) influenciada pelo Iluminismo e pela independência dos EUA. Foi denunciada antes de eclodir, e Tiradentes foi executado como exemplo."
+        },
+        {
+          "id": "q2",
+          "enunciado": "\"Liberdade ainda que tarde\", lema atribuído à Inconfidência Mineira, refletia o desejo de autonomia política. Entre as causas desse movimento, destaca-se:",
+          "alternativas": [
+            "O apoio da Coroa portuguesa às ideias separatistas",
+            "A ausência de impostos e tributos na região mineradora",
+            "A cobrança da derrama e o esgotamento das minas de ouro",
+            "A prosperidade econômica e satisfação da elite mineira",
+            "A total liberdade comercial concedida pela metrópole"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A Inconfidência foi motivada pela crise da mineração, a pesada tributação (especialmente a derrama) e o descontentamento da elite com o pacto colonial. A influência das ideias iluministas também foi fundamental."
+        },
+        {
+          "id": "q3",
+          "enunciado": "A Conjuração Baiana (1798), também chamada de Revolta dos Alfaiates, diferenciava-se da Inconfidência Mineira por seu caráter mais popular. Sobre esse movimento, é correto afirmar que:",
+          "alternativas": [
+            "Foi liderado exclusivamente pela elite de proprietários rurais",
+            "Teve participação de negros, mulatos e camadas populares",
+            "Não propunha mudanças na estrutura social da colônia",
+            "Foi totalmente ignorado pelas autoridades coloniais",
+            "Defendia a manutenção da escravidão e dos privilégios"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A Conjuração Baiana teve forte participação popular (alfaiates, soldados, negros livres e escravizados). Além da independência, propunha fim da escravidão e maior igualdade social, sendo mais radical que a Inconfidência Mineira."
+        },
+        {
+          "id": "q4",
+          "enunciado": "As Reformas Pombalinas (1750-1777), implementadas pelo Marquês de Pombal, visavam modernizar Portugal e fortalecer o controle sobre as colônias. Entre as medidas aplicadas no Brasil, destaca-se:",
+          "alternativas": [
+            "A expulsão dos jesuítas e a criação de Companhias de Comércio",
+            "A concessão de independência política às capitanias",
+            "A abolição completa da escravidão em todo território colonial",
+            "O incentivo à total liberdade comercial sem restrições",
+            "A transferência do poder colonial para os indígenas"
+          ],
+          "respostaCorreta": 0,
+          "explicacao": "Pombal expulsou os jesuítas (1759), criou Companhias de Comércio monopolistas, transferiu a capital para o Rio de Janeiro (1763) e buscou racionalizar a administração colonial seguindo princípios iluministas despóticos."
+        },
+        {
+          "id": "q5",
+          "enunciado": "A crise do sistema colonial português no final do século XVIII relacionava-se a diversos fatores. Entre eles, destaca-se:",
+          "alternativas": [
+            "O fortalecimento do pacto colonial e aumento dos lucros",
+            "A expansão ilimitada da mineração no século XVIII",
+            "As ideias iluministas e as revoluções liberais (EUA e França)",
+            "A total satisfação das elites coloniais com a metrópole",
+            "A ausência de conflitos entre colônia e metrópole"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "A crise do sistema colonial foi influenciada pelo declínio da mineração, pelas ideias iluministas, pelas revoluções liberais (independência dos EUA e Revolução Francesa) e pelo descontentamento das elites coloniais com as restrições do pacto colonial."
+        }
+      ]
+    }
+  ]
+}

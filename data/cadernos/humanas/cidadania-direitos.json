@@ -1,0 +1,575 @@
+{
+  "id": "cidadania-direitos",
+  "slug": "cidadania-direitos",
+  "titulo": "Cidadania e Direitos Humanos",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "Cidadania, direitos humanos fundamentais, movimentos sociais e participação democrática",
+  "icone": "Users",
+  "cor": "#8B5CF6",
+  "tempoEstimado": "7 horas",
+  "fpRecompensa": 0,
+  "tags": ["Cidadania", "Direitos Humanos", "Democracia", "Movimentos Sociais", "ENEM"],
+  "modulos": [
+    {
+      "id": "modulo01",
+      "titulo": "Conceitos Fundamentais de Cidadania",
+      "resumo": "Compreensão histórica e conceitual de cidadania, direitos e deveres do cidadão",
+      "topicos": [
+        {
+          "titulo": "Evolução Histórica da Cidadania",
+          "conteudo": "A cidadania é conceito político e social que define os direitos e deveres dos indivíduos em uma comunidade política. Sua concepção evolui historicamente, refletindo transformações nas estruturas sociais, econômicas e políticas. Na Grécia Antiga, a cidadania era restrita a homens livres proprietários, excluindo mulheres, escravos e estrangeiros. Em Roma, expandiu-se gradualmente, mas manteve caráter excludente. Na Idade Média, vínculos feudais substituíram relações cidadãs diretas com o Estado.\n\nA concepção moderna de cidadania emerge com as revoluções burguesas dos séculos XVII-XVIII (Revolução Inglesa, Revolução Americana, Revolução Francesa), que estabeleceram princípios de igualdade jurídica, direitos naturais e participação política. A Declaração dos Direitos do Homem e do Cidadão (1789) proclamou direitos universais: liberdade, propriedade, segurança e resistência à opressão. No entanto, essa universalidade era limitada na prática: mulheres, negros e pobres permaneciam excluídos do exercício pleno da cidadania.\n\nO sociólogo britânico T.H. Marshall propôs teoria influente sobre a evolução da cidadania em três dimensões: direitos civis (século XVIII) - liberdades individuais, igualdade perante a lei, propriedade; direitos políticos (século XIX) - participação política, voto, organização partidária; e direitos sociais (século XX) - trabalho, educação, saúde, previdência, bem-estar. Essa tipologia, embora eurocêntrica, oferece framework útil. No Brasil, a trajetória foi peculiar: direitos sociais foram expandidos antes de direitos políticos plenos (durante o Estado Novo de Vargas), e a cidadania foi historicamente limitada por escravidão, autoritarismo e desigualdades. A Constituição de 1988 representa marco na ampliação da cidadania brasileira, estabelecendo Estado Democrático de Direito e extenso rol de direitos. Para o ENEM, é essencial compreender cidadania como construção histórica, reconhecer limitações das concepções liberais clássicas, e analisar especificidades brasileiras."
+        },
+        {
+          "titulo": "Direitos e Deveres do Cidadão",
+          "conteudo": "A cidadania envolve não apenas direitos (prerrogativas que o indivíduo possui frente ao Estado e à sociedade), mas também deveres (responsabilidades que o cidadão tem para com a coletividade). Essa relação recíproca fundamenta a vida em sociedade democrática. Os direitos do cidadão brasileiro estão consagrados na Constituição de 1988, incluindo: direitos civis (vida, liberdade, igualdade, segurança, propriedade), direitos políticos (votar, ser votado, participar de decisões), direitos sociais (educação, saúde, trabalho, moradia, lazer, segurança, previdência), e direitos difusos (meio ambiente, patrimônio cultural).\n\nOs deveres do cidadão incluem, entre outros: respeitar leis e normas, pagar impostos (que financiam serviços públicos), votar nas eleições (obrigatório no Brasil entre 18-70 anos, facultativo para jovens 16-17 e idosos acima de 70), cumprir o serviço militar (obrigatório para homens, facultativo para mulheres), proteger o meio ambiente, preservar o patrimônio público, e respeitar direitos alheios. É importante notar que deveres não devem servir para justificar negação de direitos: a lógica de que cidadãos devem 'merecer' direitos através de deveres contraria a universalidade dos direitos humanos.\n\nA cidadania ativa vai além do exercício formal de direitos e deveres, envolvendo participação consciente e crítica na vida pública: fiscalização de políticos e políticas, participação em movimentos sociais e organizações civis, debate público informado, denúncia de violações, e solidariedade com grupos vulneráveis. Contrasta com cidadania passiva, onde indivíduos limitam-se a cumprir obrigações mínimas sem engajamento. A educação para a cidadania é fundamental: desenvolver consciência de direitos, capacidade de participação, pensamento crítico sobre estruturas sociais, e compromisso com valores democráticos. Para o ENEM, é importante compreender direitos como conquistas históricas, reconhecer a interdependência de direitos e deveres, e refletir sobre participação cidadã ativa na democracia."
+        },
+        {
+          "titulo": "Cidadania no Brasil: Conquistas e Desafios",
+          "conteudo": "A construção da cidadania no Brasil foi marcada por contradições, avanços e retrocessos. Durante o período colonial e imperial, a cidadania era extremamente restrita: escravos (maioria da população até 1888) não eram considerados cidadãos; mulheres eram subordinadas legalmente; indígenas eram vistos como menores de idade; e o voto censitário (baseado em renda) excluía pobres. A abolição da escravidão em 1888 não foi acompanhada de políticas de integração, perpetuando exclusões.\n\nA República (1889) ampliou formalmente a cidadania, mas manteve exclusões: voto restrito a homens alfabetizados (excluindo maioria), fraudes eleitorais generalizadas, e coronelismo que controlava voto rural. A Era Vargas (1930-1945) trouxe paradoxo: direitos trabalhistas e sociais foram expandidos (CLT, salário mínimo, previdência), mas direitos políticos foram suprimidos durante o Estado Novo (1937-1945). A democracia de 1946-1964 ampliou participação, mas a ditadura militar (1964-1985) suspendeu direitos políticos, cerceou liberdades civis, e praticou violência estatal contra opositores.\n\nA redemocratização e a Constituição de 1988 representaram avanço significativo: amplo rol de direitos fundamentais, voto universal para alfabetizados e analfabetos, instrumentos de democracia participativa, direitos sociais como cláusulas pétreas, proteção de minorias. Desafios persistem: desigualdades sociais extremas limitam exercício efetivo de direitos (acesso desigual a educação, saúde, justiça); violência policial afeta especialmente jovens negros e pobres; corrupção e patrimonialismo corroem confiança nas instituições; e populismos autoritários ameaçam liberdades conquistadas. Avanços incluem: políticas de transferência de renda que reduziram pobreza, cotas raciais que ampliaram acesso à universidade, reconhecimento de direitos LGBTQIA+, e fortalecimento de participação através de conselhos e orçamento participativo. Para o ENEM, é fundamental compreender contradições históricas da cidadania brasileira, reconhecer avanços recentes e desafios contemporâneos, e analisar criticamente distâncias entre direitos formais e sua efetivação prática."
+        },
+        {
+          "titulo": "Cidadania Global e Direitos Humanos Universais",
+          "conteudo": "A noção de cidadania tradicionalmente vincula-se ao Estado-nação: indivíduos são cidadãos de países específicos, com direitos e deveres definidos por legislações nacionais. No entanto, a globalização e a interdependência mundial suscitam debates sobre cidadania global ou cosmopolita, que transcende fronteiras nacionais. Essa perspectiva fundamenta-se em direitos humanos universais que pertencem a todas as pessoas independentemente de nacionalidade, raça, gênero ou outras características.\n\nA Declaração Universal dos Direitos Humanos (1948), adotada pela ONU após os horrores da Segunda Guerra Mundial, proclamou direitos inerentes a todos os seres humanos: vida, liberdade, segurança, igualdade perante a lei, liberdade de expressão e pensamento, trabalho, educação, entre outros. Esses direitos são considerados universais (aplicam-se a todos), indivisíveis (civis, políticos, econômicos, sociais e culturais são interdependentes), e inalienáveis (não podem ser retirados). Pactos posteriores (Pacto Internacional dos Direitos Civis e Políticos, Pacto Internacional dos Direitos Econômicos, Sociais e Culturais) detalharam esses direitos.\n\nA cidadania global envolve consciência de pertencimento a uma comunidade mundial, responsabilidade com questões globais (mudanças climáticas, pobreza, conflitos, refugiados), e solidariedade transnacional. Debates incluem: tensões entre soberania nacional e intervenções humanitárias (quando Estados violam direitos, a comunidade internacional pode intervir?); universalidade versus particularismo cultural (direitos humanos são universais ou refletem valores ocidentais específicos?); e direitos de migrantes e refugiados (cidadania vinculada a Estados limita direitos de pessoas em trânsito). Críticos apontam que discursos de direitos humanos podem ser instrumentalizados para intervenções imperialistas; defensores argumentam que constituem avanço civilizatório essencial. Para o ENEM, é importante compreender direitos humanos como conquista histórica, reconhecer tensões entre universalismo e particularismo, e refletir sobre responsabilidades globais em um mundo interdependente."
+        }
+      ],
+      "exemplos": [
+        "O voto universal no Brasil foi conquistado gradualmente: 1932 (mulheres), 1985 (analfabetos), 1988 (16-17 anos)",
+        "A Constituição de 1988 estabeleceu direitos sociais como educação e saúde universais",
+        "A Declaração Universal dos Direitos Humanos (1948) proclamou direitos inerentes a todos os seres humanos",
+        "Programas de transferência de renda como Bolsa Família materializaram direitos sociais"
+      ],
+      "dicas": [
+        "Compreenda cidadania como construção histórica, não conceito estático ou natural",
+        "Relacione direitos civis, políticos e sociais com diferentes períodos históricos",
+        "Reconheça contradições entre direitos formais (na lei) e direitos efetivos (na prática)",
+        "Conecte cidadania nacional com responsabilidades globais em mundo interdependente"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "T.H. Marshall propôs teoria sobre evolução da cidadania em três dimensões históricas: direitos civis, políticos e sociais. Qual alternativa apresenta corretamente exemplos de cada dimensão?",
+          "alternativas": {
+            "A": "Civis: voto; Políticos: saúde; Sociais: liberdade de expressão",
+            "B": "Civis: liberdade individual; Políticos: participação eleitoral; Sociais: educação e trabalho",
+            "C": "Civis: educação; Políticos: propriedade; Sociais: segurança",
+            "D": "Civis: voto; Políticos: previdência; Sociais: liberdade de locomoção",
+            "E": "Civis: saúde; Políticos: liberdade; Sociais: voto"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque apresenta adequadamente exemplos de cada dimensão da cidadania segundo Marshall. Direitos civis incluem liberdades individuais (expressão, locomoção, propriedade, igualdade perante a lei), conquistados historicamente nos séculos XVII-XVIII. Direitos políticos referem-se à participação política (voto, ser votado, organizar partidos), expandidos no século XIX. Direitos sociais incluem bem-estar econômico e social (educação, saúde, trabalho, previdência, moradia), consolidados no século XX. A alternativa A confunde as categorias - voto é direito político, não civil; saúde é direito social, não político. A alternativa C também inverte categorias. A alternativa D mistura as dimensões incorretamente. A alternativa E confunde completamente as três dimensões.",
+          "dificuldade": "medio",
+          "tags": ["cidadania", "direitos", "Marshall"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "A construção da cidadania no Brasil foi marcada por contradições históricas. Qual situação exemplifica essas contradições?",
+          "alternativas": {
+            "A": "A Constituição de 1988 estabeleceu direitos universais sem nenhuma exclusão ou limitação",
+            "B": "Durante a Era Vargas, direitos sociais foram expandidos enquanto direitos políticos eram suprimidos",
+            "C": "A abolição da escravidão em 1888 foi imediatamente seguida por políticas efetivas de integração social",
+            "D": "O Brasil sempre garantiu plena cidadania a todos os habitantes desde a independência",
+            "E": "Mulheres, negros e pobres sempre tiveram direitos políticos plenos na história brasileira"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque exemplifica perfeitamente as contradições da cidadania brasileira: durante a Era Vargas (especialmente no Estado Novo, 1937-1945), houve expansão significativa de direitos sociais e trabalhistas (CLT, salário mínimo, previdência, regulamentação do trabalho) enquanto direitos políticos eram suprimidos (fechamento do Congresso, censura, proibição de partidos, ausência de eleições). Essa inversão da sequência marshalliana (direitos sociais antes de políticos plenos) é característica brasileira. A alternativa A está incorreta porque mesmo a Constituição de 1988, apesar de avanços, enfrenta desafios de efetivação. A alternativa C é falsa - a abolição não foi seguida de políticas de integração. A alternativa D ignora séculos de exclusões. A alternativa E contradiz a história de exclusões sistemáticas desses grupos.",
+          "dificuldade": "medio",
+          "tags": ["cidadania no Brasil", "Era Vargas", "contradições históricas"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Cidadania ativa refere-se à participação consciente e crítica na vida pública, indo além do exercício formal de direitos e deveres. Qual ação caracteriza cidadania ativa?",
+          "alternativas": {
+            "A": "Limitar-se a votar nas eleições sem questionar ou fiscalizar políticos eleitos",
+            "B": "Participar de movimentos sociais, fiscalizar políticas públicas e defender direitos coletivos",
+            "C": "Abster-se completamente de qualquer envolvimento com questões políticas e sociais",
+            "D": "Aceitar passivamente todas as decisões governamentais sem crítica ou reflexão",
+            "E": "Focar exclusivamente em interesses individuais sem preocupação com bem-estar coletivo"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque descreve adequadamente cidadania ativa: engajamento consciente através de participação em movimentos sociais, fiscalização de políticos e políticas públicas, defesa de direitos coletivos, debate público informado, e solidariedade com grupos vulneráveis. Cidadania ativa contrasta com cidadania passiva, que se limita ao cumprimento mínimo de obrigações formais. A alternativa A descreve participação mínima e passiva, não ativa. A alternativa C representa abstenção incompatível com cidadania ativa. A alternativa D caracteriza passividade acrítica oposta à cidadania ativa. A alternativa E representa individualismo incompatível com responsabilidade cidadã ativa pela coletividade.",
+          "dificuldade": "facil",
+          "tags": ["cidadania ativa", "participação política", "democracia"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "A Declaração Universal dos Direitos Humanos (1948) estabeleceu que direitos humanos são universais, indivisíveis e inalienáveis. O que significa dizer que esses direitos são indivisíveis?",
+          "alternativas": {
+            "A": "Que direitos civis, políticos, econômicos, sociais e culturais são interdependentes e igualmente importantes",
+            "B": "Que apenas direitos civis e políticos são verdadeiramente fundamentais",
+            "C": "Que direitos econômicos e sociais podem ser postergados indefinidamente",
+            "D": "Que cada país pode escolher quais direitos humanos respeitar",
+            "E": "Que direitos humanos não se aplicam a pessoas de determinadas nacionalidades ou culturas"
+          },
+          "correta": "A",
+          "explicacao": "A alternativa A está correta porque o princípio da indivisibilidade dos direitos humanos estabelece que todos os direitos (civis, políticos, econômicos, sociais, culturais) são interdependentes e igualmente importantes, não podendo ser hierarquizados. Não é possível ter pleno gozo de direitos políticos sem direitos sociais básicos (educação, saúde), nem direitos civis sem participação política. Essa concepção integral contrasta com visões que priorizam apenas direitos civis e políticos (tradição liberal clássica) ou apenas direitos econômicos e sociais (algumas tradições socialistas). A alternativa B viola o princípio ao hierarquizar direitos. A alternativa C contradiz a indivisibilidade ao permitir postergação. A alternativa D nega a universalidade. A alternativa E nega tanto universalidade quanto indivisibilidade.",
+          "dificuldade": "medio",
+          "tags": ["direitos humanos", "indivisibilidade", "universalidade"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "A noção de cidadania global ou cosmopolita sugere responsabilidades que transcendem fronteiras nacionais. Qual situação exemplifica esse conceito?",
+          "alternativas": {
+            "A": "Ignorar completamente questões que ocorrem fora do próprio país",
+            "B": "Preocupar-se exclusivamente com interesses nacionais sem consideração por outros países",
+            "C": "Engajar-se em causas globais como combate às mudanças climáticas e defesa de refugiados",
+            "D": "Defender fechamento total de fronteiras e isolamento internacional completo",
+            "E": "Negar a existência de problemas globais que requerem cooperação internacional"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque exemplifica cidadania global: consciência de que problemas contemporâneos (mudanças climáticas, pobreza global, conflitos, crises migratórias) transcendem fronteiras nacionais e exigem solidariedade transnacional e cooperação internacional. Engajar-se nessas causas, defender direitos de refugiados e migrantes, e pressionar governos por políticas responsáveis globalmente caracterizam cidadania cosmopolita. A alternativa A representa fechamento incompatível com cidadania global. A alternativa B descreve nacionalismo estreito oposto ao cosmopolitismo. A alternativa D propõe isolacionismo contrário à interdependência reconhecida pela cidadania global. A alternativa E nega realidades que fundamentam a necessidade de cidadania global.",
+          "dificuldade": "facil",
+          "tags": ["cidadania global", "cosmopolitismo", "direitos humanos"]
+        }
+      ]
+    },
+    {
+      "id": "modulo02",
+      "titulo": "Direitos Humanos Fundamentais",
+      "resumo": "Gerações de direitos humanos, declarações internacionais e sua aplicação prática",
+      "topicos": [
+        {
+          "titulo": "Gerações de Direitos Humanos",
+          "conteudo": "A teoria das gerações (ou dimensões) de direitos humanos, proposta por Karel Vasak, organiza direitos conforme sua emergência histórica e características. Embora criticada por sugerir hierarquia ou sucessão temporal rígida (quando na verdade direitos coexistem e são indivisíveis), oferece framework pedagógico útil. A primeira geração compreende direitos civis e políticos, de natureza negativa (exigem abstenção estatal de violar liberdades): vida, liberdade, propriedade, igualdade perante a lei, segurança, liberdade de expressão, religiosa, de locomoção, participação política, devido processo legal. Emergiram das revoluções liberais e refletem valores de autonomia individual contra abusos estatais.\n\nA segunda geração abrange direitos econômicos, sociais e culturais, de natureza positiva (exigem prestações estatais ativas): trabalho, remuneração justa, saúde, educação, moradia, alimentação, previdência social, lazer, proteção à maternidade e infância, participação na vida cultural. Emergiram com movimentos socialistas e sociais-democratas do século XX, reconhecendo que liberdades formais são insuficientes sem condições materiais mínimas. A efetivação desses direitos envolve políticas públicas, investimentos sociais e redistribuição de recursos.\n\nA terceira geração refere-se a direitos de solidariedade ou fraternidade, de titularidade coletiva: meio ambiente equilibrado, desenvolvimento, paz, autodeterminação dos povos, patrimônio comum da humanidade. Emergiram na segunda metade do século XX com consciência de interdependência global e desafios transnacionais. Alguns autores propõem uma quarta geração relacionada a biotecnologia, democracia digital e proteção contra manipulações genéticas. É fundamental compreender que, apesar da nomenclatura de 'gerações', todos esses direitos são contemporâneos, interdependentes e igualmente importantes. Para o ENEM, é essencial conhecer as três gerações clássicas, identificar exemplos de cada uma, compreender suas características (negativa/positiva, individual/coletiva), e reconhecer sua interdependência e indivisibilidade."
+        },
+        {
+          "titulo": "Declarações e Pactos Internacionais",
+          "conteudo": "O sistema internacional de proteção dos direitos humanos desenvolveu-se especialmente após a Segunda Guerra Mundial, em resposta aos horrores do nazismo e do fascismo. A Declaração Universal dos Direitos Humanos (DUDH), aprovada pela Assembleia Geral da ONU em 10 de dezembro de 1948, é o documento fundamental desse sistema. Composta por 30 artigos, proclama direitos civis, políticos, econômicos, sociais e culturais como inerentes a todos os seres humanos, independentemente de raça, cor, sexo, língua, religião, opinião política ou qualquer outra condição.\n\nEmbora a DUDH não seja tratado legalmente vinculante (é resolução da Assembleia Geral), adquiriu status de costume internacional e é amplamente reconhecida como referência moral e jurídica. Para tornar suas disposições juridicamente vinculantes, foram adotados posteriormente o Pacto Internacional dos Direitos Civis e Políticos (1966) e o Pacto Internacional dos Direitos Econômicos, Sociais e Culturais (1966), que entraram em vigor em 1976. Juntos, esses três documentos formam a 'Carta Internacional dos Direitos Humanos'.\n\nOutros tratados internacionais importantes incluem: Convenção sobre Eliminação de Todas as Formas de Discriminação Racial (1965), Convenção sobre Eliminação de Todas as Formas de Discriminação contra Mulheres (1979), Convenção contra Tortura (1984), Convenção sobre Direitos da Criança (1989), e Convenção sobre Direitos das Pessoas com Deficiência (2006). Sistemas regionais complementam o sistema universal: Convenção Europeia de Direitos Humanos, Convenção Americana de Direitos Humanos (Pacto de San José da Costa Rica, 1969), e Carta Africana de Direitos Humanos e dos Povos. O Brasil ratificou os principais tratados internacionais, comprometendo-se a respeitar e promover direitos humanos. Para o ENEM, é importante conhecer a DUDH como documento fundamental, compreender a estrutura do sistema internacional (universal e regional), e reconhecer compromissos brasileiros com tratados de direitos humanos."
+        },
+        {
+          "titulo": "Direitos das Crianças e Adolescentes",
+          "conteudo": "A proteção especial de crianças e adolescentes fundamenta-se no reconhecimento de que são pessoas em desenvolvimento, especialmente vulneráveis, que requerem cuidados e direitos específicos. A Convenção sobre os Direitos da Criança (1989), tratado de direitos humanos mais ratificado da história, estabeleceu padrões internacionais baseados em quatro princípios: não-discriminação, melhor interesse da criança, direito à vida e desenvolvimento, e respeito às opiniões da criança.\n\nNo Brasil, a Constituição de 1988 adotou doutrina da proteção integral, rompendo com a doutrina da situação irregular anterior que tratava crianças pobres como 'menores' objeto de controle estatal. O Estatuto da Criança e do Adolescente (ECA, Lei 8.069/1990) regulamentou os direitos constitucionais, estabelecendo que crianças (até 12 anos incompletos) e adolescentes (12-18 anos) são sujeitos de direitos em condição peculiar de desenvolvimento, com prioridade absoluta nas políticas públicas.\n\nDireitos fundamentais incluem: vida e saúde (acesso universal a serviços), educação (obrigatória e gratuita), convivência familiar e comunitária (prioridade à família biológica, possibilidade de adoção), proteção contra todas as formas de violência (física, psicológica, sexual, negligência), exploração do trabalho infantil (proibição de trabalho antes dos 16 anos, exceto aprendizagem a partir dos 14), cultura, lazer e esporte. O ECA estabeleceu sistema de garantias envolvendo família, Estado e sociedade, e criou Conselhos Tutelares para zelar pelos direitos. Desafios persistem: violência doméstica, exploração sexual, trabalho infantil (especialmente em áreas rurais e informais), evasão escolar, e medidas socioeducativas que não ressocializam. Para o ENEM, é essencial compreender a doutrina da proteção integral, conhecer direitos fundamentais de crianças e adolescentes, reconhecer avanços do ECA, e analisar criticamente violações persistentes."
+        },
+        {
+          "titulo": "Direitos dos Idosos e Pessoas com Deficiência",
+          "conteudo": "A proteção de direitos de idosos e pessoas com deficiência fundamenta-se no reconhecimento de vulnerabilidades específicas e necessidade de garantir dignidade, autonomia e inclusão social. O envelhecimento populacional (transição demográfica) torna questões relacionadas aos idosos cada vez mais relevantes. No Brasil, a Política Nacional do Idoso (Lei 8.842/1994) e especialmente o Estatuto do Idoso (Lei 10.741/2003) estabeleceram direitos e proteções específicas para pessoas com 60 anos ou mais.\n\nDireitos dos idosos incluem: prioridade na efetivação de direitos (saúde, transporte, justiça), atendimento preferencial em serviços públicos e privados, gratuidade ou desconto em transportes públicos, proteção contra discriminação etária (ageismo) no trabalho, proteção contra violência e negligência (inclusive familiar), participação em atividades culturais e esportivas, e direito ao convívio familiar e comunitário. Desafios incluem: violência e maus-tratos (especialmente negligência familiar), abandono, institucionalização inadequada, discriminação no mercado de trabalho, e insuficiência de políticas de envelhecimento ativo.\n\nPessoas com deficiência (física, mental, intelectual ou sensorial) enfrentam historicamente exclusão, discriminação e barreiras à participação social plena. A Convenção sobre Direitos das Pessoas com Deficiência (ONU, 2006), ratificada pelo Brasil com status constitucional (Emenda 45/2004), estabeleceu mudança de paradigma: da perspectiva médica (deficiência como problema individual) para o modelo social (deficiência resulta de barreiras sociais). A Lei Brasileira de Inclusão (Estatuto da Pessoa com Deficiência, Lei 13.146/2015) consolidou esse modelo, garantindo: igualdade e não-discriminação, acessibilidade (física, comunicacional, informacional), educação inclusiva, trabalho em igualdade de condições, habilitação e reabilitação, e participação na vida pública. Para o ENEM, é importante compreender direitos específicos desses grupos, reconhecer mudança do modelo médico para social na abordagem da deficiência, e analisar desafios de efetivação de direitos."
+        }
+      ],
+      "exemplos": [
+        "A Declaração Universal dos Direitos Humanos (1948) estabeleceu padrões internacionais após os horrores da Segunda Guerra",
+        "O ECA (1990) rompeu com doutrina da situação irregular e estabeleceu proteção integral",
+        "A Lei Brasileira de Inclusão (2015) consolidou modelo social da deficiência",
+        "O Estatuto do Idoso (2003) garantiu prioridade na efetivação de direitos para pessoas com 60+ anos"
+      ],
+      "dicas": [
+        "Compreenda as três gerações de direitos mas reconheça sua indivisibilidade",
+        "Memorize que a DUDH foi proclamada em 1948 após a Segunda Guerra Mundial",
+        "Diferencie doutrina da situação irregular (menores) de proteção integral (crianças como sujeitos de direitos)",
+        "Entenda mudança do modelo médico para modelo social na abordagem da deficiência"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "A teoria das gerações de direitos humanos organiza direitos conforme características e emergência histórica. Qual alternativa apresenta corretamente direitos de segunda geração?",
+          "alternativas": {
+            "A": "Liberdade de expressão, direito de propriedade e liberdade de locomoção",
+            "B": "Educação, saúde, trabalho e previdência social",
+            "C": "Meio ambiente equilibrado, paz e autodeterminação dos povos",
+            "D": "Direito de voto, liberdade religiosa e igualdade perante a lei",
+            "E": "Segurança pessoal, devido processo legal e habeas corpus"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque apresenta exemplos de direitos de segunda geração (direitos econômicos, sociais e culturais): educação, saúde, trabalho e previdência social são direitos positivos que exigem prestações estatais ativas para sua efetivação. A alternativa A apresenta direitos de primeira geração (civis e políticos) como liberdade de expressão, propriedade e locomoção. A alternativa C lista direitos de terceira geração (solidariedade ou fraternidade) como meio ambiente, paz e autodeterminação. A alternativa D menciona direitos de primeira geração (políticos e civis). A alternativa E refere-se a direitos de primeira geração relacionados à segurança e justiça. É importante lembrar que, apesar da nomenclatura de 'gerações', todos são contemporâneos e indivisíveis.",
+          "dificuldade": "medio",
+          "tags": ["gerações de direitos", "direitos sociais", "direitos humanos"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "A Declaração Universal dos Direitos Humanos (DUDH) foi proclamada pela ONU em 1948. Sobre esse documento, é correto afirmar que:",
+          "alternativas": {
+            "A": "Estabeleceu direitos exclusivamente para cidadãos de países desenvolvidos",
+            "B": "Proclamou direitos civis, políticos, econômicos, sociais e culturais como inerentes a todos os seres humanos",
+            "C": "Limitou direitos humanos apenas a direitos civis e políticos",
+            "D": "Foi adotada como resposta às revoluções socialistas do século XX",
+            "E": "Estabeleceu hierarquia entre direitos, priorizando direitos econômicos"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a DUDH proclamou uma concepção integral de direitos humanos, incluindo tanto direitos civis e políticos (artigos 3-21) quanto direitos econômicos, sociais e culturais (artigos 22-27), reconhecendo-os como inerentes a todos os seres humanos sem distinção. Essa abrangência reflete o princípio da indivisibilidade dos direitos. A alternativa A está incorreta porque a DUDH é universal, aplicando-se a todas as pessoas independentemente de nacionalidade ou desenvolvimento do país. A alternativa C reduz incorretamente o escopo da DUDH. A alternativa D está errada sobre o contexto - foi resposta aos horrores do nazismo e da Segunda Guerra. A alternativa E contradiz o princípio da indivisibilidade - a DUDH não hierarquiza direitos.",
+          "dificuldade": "facil",
+          "tags": ["DUDH", "direitos humanos", "universalidade"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "O Estatuto da Criança e do Adolescente (ECA) adotou a doutrina da proteção integral, rompendo com a doutrina anterior. Qual mudança fundamental essa nova doutrina representou?",
+          "alternativas": {
+            "A": "Crianças passaram a ser tratadas como objetos de intervenção estatal, não como sujeitos de direitos",
+            "B": "Apenas crianças ricas passaram a ter direitos garantidos pelo Estado",
+            "C": "Crianças e adolescentes foram reconhecidos como sujeitos de direitos em condição peculiar de desenvolvimento",
+            "D": "O Estado deixou de ter qualquer responsabilidade sobre crianças e adolescentes",
+            "E": "Crianças pobres foram definidas como 'menores' em situação irregular"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque a doutrina da proteção integral, adotada pelo ECA, reconheceu crianças e adolescentes como sujeitos de direitos (não objetos de controle) em condição peculiar de desenvolvimento, merecedores de prioridade absoluta e proteção especial. Isso rompeu com a doutrina da situação irregular anterior (Código de Menores) que tratava apenas crianças e adolescentes pobres como 'menores' objeto de intervenção estatal repressiva. A alternativa A inverte completamente - descreve a doutrina anterior, não a proteção integral. A alternativa B introduz discriminação inexistente na proteção integral universal. A alternativa D está incorreta - o Estado tem responsabilidades junto com família e sociedade. A alternativa E descreve a doutrina anterior rejeitada pelo ECA.",
+          "dificuldade": "medio",
+          "tags": ["ECA", "proteção integral", "direitos da criança"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "A Convenção sobre Direitos das Pessoas com Deficiência estabeleceu mudança de paradigma do modelo médico para o modelo social da deficiência. Essa mudança significa que:",
+          "alternativas": {
+            "A": "Deficiência é problema exclusivamente individual e médico, não relacionado a barreiras sociais",
+            "B": "Pessoas com deficiência não têm direito a nenhuma assistência ou suporte específico",
+            "C": "Deficiência resulta da interação entre impedimentos individuais e barreiras sociais que impedem participação plena",
+            "D": "Pessoas com deficiência devem ser isoladas da sociedade em instituições especializadas",
+            "E": "Apenas tratamentos médicos são necessários, não mudanças sociais ou arquitetônicas"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque o modelo social da deficiência reconhece que a deficiência não é apenas característica individual, mas resulta da interação entre impedimentos físicos, mentais, intelectuais ou sensoriais e barreiras sociais, arquitetônicas, comunicacionais e atitudinais que impedem participação plena e efetiva na sociedade. Isso desloca o foco: não é a pessoa que precisa 'se curar' para se incluir, mas a sociedade que deve remover barreiras. A alternativa A descreve o modelo médico ultrapassado. A alternativa B nega direitos legítimos a suportes e adaptações razoáveis. A alternativa D propõe segregação oposta à inclusão. A alternativa E mantém foco exclusivamente médico, ignorando dimensões sociais.",
+          "dificuldade": "medio",
+          "tags": ["deficiência", "modelo social", "inclusão"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Sobre direitos dos idosos no Brasil, estabelecidos no Estatuto do Idoso, considere:\n\nI. Idosos têm prioridade na efetivação de direitos como saúde e justiça.\nII. Idosos têm direito à gratuidade ou desconto em transportes públicos.\nIII. A violência contra idosos, inclusive negligência familiar, é crime.\nIV. Idosos não têm direito ao convívio familiar, devendo ser institucionalizados.\n\nEstão corretas:",
+          "alternativas": {
+            "A": "I e II apenas",
+            "B": "I, II e III apenas",
+            "C": "II, III e IV apenas",
+            "D": "I, III e IV apenas",
+            "E": "I, II, III e IV"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta. A afirmação I é verdadeira porque o Estatuto do Idoso estabelece prioridade absoluta na efetivação de direitos (atendimento em saúde, tramitação processual, etc.). A afirmação II é verdadeira - idosos têm direito à gratuidade em transporte público urbano e desconto em transporte interestadual. A afirmação III é verdadeira porque o Estatuto criminaliza violências contra idosos, incluindo maus-tratos, negligência (inclusive por familiares), discriminação e abandono. A afirmação IV está incorreta porque o Estatuto garante direito ao convívio familiar e comunitário, sendo a institucionalização medida excepcional quando convívio familiar não é possível, e sempre com respeito à dignidade e direitos do idoso. A institucionalização compulsória não é prevista.",
+          "dificuldade": "facil",
+          "tags": ["idosos", "Estatuto do Idoso", "direitos"]
+        }
+      ]
+    },
+    {
+      "id": "modulo03",
+      "titulo": "Movimentos Sociais no Brasil",
+      "resumo": "História e atuação de movimentos sociais brasileiros na luta por direitos e transformações sociais",
+      "topicos": [
+        {
+          "titulo": "Movimento dos Trabalhadores Rurais Sem Terra (MST)",
+          "conteudo": "O Movimento dos Trabalhadores Rurais Sem Terra (MST) é um dos principais movimentos sociais brasileiros, surgido em 1984 no contexto da redemocratização. Organiza trabalhadores rurais sem terra na luta pela reforma agrária, justiça social no campo e transformação da estrutura fundiária brasileira. O MST fundamenta-se na crítica à extrema concentração de terras no Brasil: cerca de 1% dos proprietários controlam quase metade das terras agricultáveis, enquanto milhões de famílias não têm acesso à terra para produzir.\n\nAs formas de luta do MST incluem: ocupações de terras improdutivas (latifúndios que não cumprem função social prevista constitucionalmente), acampamentos (estágio inicial da ocupação), assentamentos (após desapropriação e regularização), marchas (como a Marcha Nacional por Reforma Agrária, Emprego e Justiça de 1997), e pressão política sobre governos. O movimento também desenvolve atividades educacionais (escolas em assentamentos, alfabetização de adultos, parcerias com universidades), produtivas (cooperativas, agroecologia), e culturais.\n\nO MST enfrenta intensa criminalização: ocupações são frequentemente retratadas como invasões ilegais, lideranças sofrem ameaças e assassinatos, e o movimento é estigmatizado em parte da mídia e opinião pública. Defensores argumentam que ocupações de latifúndios improdutivos exercem pressão legítima para cumprimento da função social da propriedade garantida constitucionalmente, e que o MST democratizou acesso à terra para centenas de milhares de famílias. Críticos acusam métodos ilegais e questões de violência em ocupações. O debate sobre reforma agrária envolve questões de justiça social, produtividade agrícola (agronegócio versus agricultura familiar), modelo de desenvolvimento rural, e conflitos fundiários. Para o ENEM, é importante compreender raízes históricas da questão agrária, reconhecer o MST como ator político legítimo independentemente de concordância com métodos, e analisar complexidades e tensões do debate sobre propriedade da terra e função social."
+        },
+        {
+          "titulo": "Movimento Negro Brasileiro",
+          "conteudo": "O movimento negro brasileiro tem longa história de resistência ao racismo e luta por direitos, remontando a quilombos durante a escravidão, abolicionismo no século XIX, Frente Negra Brasileira (1931-1937), Teatro Experimental do Negro (1944), e Movimento Negro Unificado (MNU, 1978). Contemporaneamente, o movimento negro é plural, abrangendo organizações tradicionais, coletivos universitários, movimentos culturais (hip-hop, samba, religiões afro-brasileiras), e intelectuais negros que produzem teoria crítica sobre racismo.\n\nPautas centrais incluem: combate ao racismo estrutural e institucional, violência policial que vitima desproporcionalmente jovens negros (genocídio da juventude negra), desigualdades no mercado de trabalho, educação e saúde, representatividade em espaços de poder e mídia, reconhecimento e titulação de terras quilombolas, proteção de religiões afro-brasileiras contra intolerância, e políticas de ação afirmativa (cotas raciais). A aprovação de cotas raciais em universidades públicas (Lei 12.711/2012) representa vitória importante do movimento.\n\nO movimento negro enfrenta resistências: mito da democracia racial que nega existência do racismo, oposição a cotas baseada em suposta meritocracia, criminalização de manifestações (especialmente quando envolvem denúncias de violência policial), e sub-representação de lideranças negras em espaços institucionais. Pensadores como Abdias Nascimento, Lélia Gonzalez, Beatriz Nascimento, Milton Santos, Sueli Carneiro e Silvio Almeida produziram análises fundamentais sobre racismo brasileiro. Para o ENEM, é essencial reconhecer o movimento negro como agente histórico de transformação, compreender suas pautas (especialmente ação afirmativa e violência), relacionar suas lutas com estruturas históricas de opressão (escravidão, pós-abolição), e analisar debates contemporâneos sobre racismo estrutural e políticas antirracistas."
+        },
+        {
+          "titulo": "Movimento Feminista Brasileiro",
+          "conteudo": "O movimento feminista brasileiro organizou-se em diferentes ondas, lutando por direitos políticos, civis e sociais das mulheres. A primeira onda (final do século XIX e início do XX) focou no sufrágio feminino, conquistado em 1932. A segunda onda (décadas de 1960-1980) ampliou pautas: direitos reprodutivos, combate à violência doméstica, igualdade no mercado de trabalho, questionamento de papéis de gênero tradicionais. A terceira onda (anos 1990 em diante) incorporou diversidade de experiências (interseccionalidade de gênero, raça e classe), questões de representação e identidade.\n\nConquistas do movimento feminista incluem: direito ao voto (1932), Lei Maria da Penha (2006) que criou mecanismos de proteção contra violência doméstica, Lei do Feminicídio (2015) que tipificou assassinato de mulheres por razão de gênero, criminalização da importunação sexual (2018), ampliação de licença-maternidade e criação de licença-paternidade, cotas de gênero em candidaturas (ainda insuficientemente cumpridas). Avanços ocorreram também em autonomia econômica, acesso à educação, e direitos reprodutivos.\n\nDesafios persistem: diferença salarial (mulheres ganham 20-30% menos que homens), sub-representação política (mulheres são maioria da população mas minoria em parlamentos e executivos), violência de gênero (feminicídios, estupros, assédio), dupla jornada de trabalho (conciliação entre trabalho remunerado e trabalho doméstico não remunerado), e resistências conservadoras especialmente sobre direitos reprodutivos. O feminismo contemporâneo é plural, incluindo feminismo negro (que critica feminismo branco por ignorar especificidades de mulheres negras), feminismo interseccional, ecofeminismo, e debates sobre transgênero. Para o ENEM, é importante reconhecer conquistas históricas do feminismo, compreender desigualdades de gênero persistentes, analisar legislações de proteção (Lei Maria da Penha), e refletir sobre interseccionalidades (gênero, raça, classe)."
+        },
+        {
+          "titulo": "Movimento LGBTQIA+ Brasileiro",
+          "conteudo": "O movimento LGBTQIA+ brasileiro luta por direitos, respeito e reconhecimento de pessoas lésbicas, gays, bissexuais, transgênero, queer, intersexo, assexuais e outras identidades sexuais e de gênero. Emergiu publicamente nos anos 1970-1980, em contexto de ditadura militar que reprimia manifestações, epidemia de HIV/AIDS que vitimou comunidade gay e foi instrumentalizada para estigmatização, e violência sistemática. O movimento organizou-se em ONGs, coletivos, paradas do orgulho LGBTQIA+ (a de São Paulo é uma das maiores do mundo), e articulações políticas.\n\nConquistas incluem: descriminalização da homossexualidade e retirada da lista de doenças pela OMS (1990), reconhecimento do casamento igualitário pelo STF (2011), possibilidade de mudança de nome e gênero em documentos sem necessidade de cirurgia (2018), criminalização da LGBTfobia equiparada ao racismo pelo STF (2019), direito de homens gays doarem sangue (2020, após décadas de proibição discriminatória), e maior visibilidade e representação midiática.\n\nDesafios são enormes: o Brasil lidera rankings de violência contra pessoas LGBTQIA+, especialmente mulheres trans negras. Centenas são assassinadas anualmente em crimes de ódio. Além da violência física, há discriminação no mercado de trabalho (especialmente contra pessoas trans), exclusão familiar (expulsão de casa, rejeição), bullying escolar, negação de direitos em serviços de saúde, e resistências religiosas e conservadoras que negam legitimidade de identidades e relacionamentos. Debates contemporâneos envolvem: educação sobre diversidade sexual e de gênero nas escolas (polêmica sobre 'ideologia de gênero'), acesso de pessoas trans a espaços segregados por gênero (banheiros), e políticas de ação afirmativa. Para o ENEM, é fundamental reconhecer direitos LGBTQIA+ como direitos humanos, compreender conquistas recentes e violências persistentes, analisar decisões do STF sobre casamento e criminalização da LGBTfobia, e refletir sobre respeito à diversidade sexual e de gênero em democracias pluralistas."
+        }
+      ],
+      "exemplos": [
+        "O MST realizou ocupações e assentou centenas de milhares de famílias desde 1984",
+        "O movimento negro conquistou cotas raciais em universidades públicas (Lei 12.711/2012)",
+        "O movimento feminista conquistou a Lei Maria da Penha (2006) contra violência doméstica",
+        "O movimento LGBTQIA+ conquistou reconhecimento do casamento igualitário pelo STF (2011)"
+      ],
+      "dicas": [
+        "Reconheça movimentos sociais como atores legítimos da democracia, independentemente de concordância",
+        "Compreenda pautas dos movimentos relacionando-as com estruturas históricas de opressão",
+        "Memorize conquistas legislativas importantes (Lei Maria da Penha, cotas raciais, criminalização LGBTfobia)",
+        "Analise interseccionalidades: como gênero, raça e classe interagem em desigualdades"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "O Movimento dos Trabalhadores Rurais Sem Terra (MST) luta por reforma agrária através de ocupações de terras improdutivas. Qual argumento fundamenta a legitimidade dessas ações segundo o movimento?",
+          "alternativas": {
+            "A": "Qualquer propriedade privada pode ser ocupada independentemente de estar produzindo",
+            "B": "A Constituição estabelece que propriedade rural deve cumprir função social, e latifúndios improdutivos descumprem esse princípio",
+            "C": "O MST busca eliminar completamente a propriedade privada rural no Brasil",
+            "D": "Ocupações de terra são sempre ilegais e não têm nenhuma justificativa constitucional",
+            "E": "A concentração fundiária não é problema no Brasil, justificando repressão ao MST"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque o principal argumento do MST fundamenta-se no artigo 186 da Constituição, que estabelece que a propriedade rural deve cumprir função social (aproveitamento racional, preservação ambiental, relações de trabalho justas, bem-estar dos proprietários e trabalhadores). Latifúndios improdutivos descumprem esse princípio, podendo ser desapropriados para reforma agrária. O MST ocupa preferencialmente essas terras improdutivas para pressionar pela aplicação da lei constitucional. A alternativa A exagera - o MST não defende ocupação de qualquer propriedade. A alternativa C distorce - o MST luta por redistribuição, não eliminação da propriedade. A alternativa D ignora a função social constitucional. A alternativa E nega tanto a realidade da concentração (1% controla metade das terras) quanto a legitimidade do movimento.",
+          "dificuldade": "medio",
+          "tags": ["MST", "reforma agrária", "função social"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "A aprovação de cotas raciais em universidades públicas (Lei 12.711/2012) foi conquista importante do movimento negro brasileiro. Qual princípio fundamenta essas políticas?",
+          "alternativas": {
+            "A": "A meritocracia pura, sem consideração de desigualdades históricas e estruturais",
+            "B": "A justiça reparativa, que busca corrigir desigualdades históricas e estruturais no acesso à educação",
+            "C": "A inferioridade de pessoas negras, que precisariam de facilitações para competir",
+            "D": "A irrelevância do racismo na sociedade brasileira contemporânea",
+            "E": "A desnecessidade de qualquer política pública de combate a desigualdades raciais"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque cotas raciais fundamentam-se no princípio da justiça reparativa: séculos de escravidão e décadas de discriminação pós-abolição criaram desigualdades estruturais no acesso à educação de qualidade. Cotas buscam promover igualdade material (de fato), reconhecendo que igualdade formal (perante a lei) é insuficiente quando grupos partem de posições históricas desiguais. Não negam mérito, mas reconhecem contextos desiguais. A alternativa A ignora estruturas de desigualdade que moldam oportunidades. A alternativa C inverte completamente o fundamento - cotas não se baseiam em suposta inferioridade, mas em reconhecimento de barreiras estruturais. A alternativa D nega evidências massivas de racismo e desigualdades raciais. A alternativa E contradiz a necessidade reconhecida de políticas antirracistas.",
+          "dificuldade": "medio",
+          "tags": ["cotas raciais", "movimento negro", "justiça reparativa"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "A Lei Maria da Penha (2006), conquista do movimento feminista, criou mecanismos de proteção para mulheres em situação de violência doméstica. Sobre essa legislação, é correto afirmar que:",
+          "alternativas": {
+            "A": "Protege apenas mulheres ricas, excluindo mulheres pobres de sua proteção",
+            "B": "Reconhece violência doméstica apenas como violência física, ignorando outras formas",
+            "C": "Reconhece cinco formas de violência doméstica: física, psicológica, sexual, patrimonial e moral",
+            "D": "Criminaliza as próprias mulheres vítimas de violência doméstica",
+            "E": "Foi considerada inconstitucional pelo Supremo Tribunal Federal"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque a Lei Maria da Penha reconhece cinco formas de violência doméstica e familiar contra mulheres: física (agressão corporal), psicológica (ameaças, humilhações, controle), sexual (imposição de atos sexuais sem consentimento), patrimonial (destruição de bens, controle de recursos), e moral (calúnia, difamação, injúria). Esse reconhecimento amplo é avanço importante porque violência doméstica não se limita a agressão física. A alternativa A está incorreta - a lei protege todas as mulheres universalmente. A alternativa B reduz incorretamente o escopo da lei. A alternativa D inverte completamente - a lei protege vítimas e responsabiliza agressores. A alternativa E está errada - a lei foi validada pelo STF e é considerada modelo internacional.",
+          "dificuldade": "facil",
+          "tags": ["Lei Maria da Penha", "violência doméstica", "direitos das mulheres"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "O Supremo Tribunal Federal (STF) reconheceu o casamento igualitário em 2011 e criminalizou a LGBTfobia equiparando-a ao racismo em 2019. Essas decisões representam:",
+          "alternativas": {
+            "A": "Retrocessos nos direitos humanos e violação de liberdades",
+            "B": "Avanços na garantia de direitos fundamentais e proteção contra discriminação",
+            "C": "Privilégios especiais que colocam pessoas LGBTQIA+ acima das demais",
+            "D": "Imposição de uma suposta 'ideologia de gênero' pela Justiça",
+            "E": "Medidas desnecessárias porque LGBTfobia não existe no Brasil"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque as decisões do STF representam avanços fundamentais: o reconhecimento do casamento igualitário (2011) garantiu a casais homoafetivos os mesmos direitos de casais heterossexuais, efetivando princípios constitucionais de igualdade e dignidade. A criminalização da LGBTfobia (2019) reconheceu que discriminação por orientação sexual e identidade de gênero é violação grave equiparável ao racismo, merecendo proteção penal. Não cria privilégios, mas igualdade de direitos. A alternativa A inverte completamente - são avanços, não retrocessos. A alternativa C distorce - igualdade de direitos não é privilégio. A alternativa D usa termo pejorativo ('ideologia de gênero') para deslegitimar direitos. A alternativa E nega violência e discriminação amplamente documentadas.",
+          "dificuldade": "facil",
+          "tags": ["LGBTQIA+", "casamento igualitário", "criminalização LGBTfobia"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "O feminismo interseccional, conceito desenvolvido por pensadoras como Kimberlé Crenshaw e Lélia Gonzalez, critica o feminismo clássico por:",
+          "alternativas": {
+            "A": "Defender direitos das mulheres, o que seria desnecessário",
+            "B": "Ignorar como raça e classe intersectam com gênero, universalizando experiências de mulheres brancas de classe média",
+            "C": "Promover completa separação entre lutas de gênero, raça e classe",
+            "D": "Negar a existência de desigualdades de gênero na sociedade",
+            "E": "Criar hierarquias entre diferentes formas de opressão"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque o feminismo interseccional critica o feminismo branco clássico por universalizar experiências de mulheres brancas de classe média como se representassem todas as mulheres, ignorando como raça e classe intersectam com gênero criando experiências distintas. Mulheres negras enfrentam opressões específicas que resultam da combinação de racismo e sexismo (não são opressões separadas mas entrelaçadas). Mulheres pobres enfrentam vulnerabilidades diferentes de mulheres ricas. O feminismo interseccional busca reconhecer essas diferenças. A alternativa A distorce completamente - interseccionalidade fortalece, não nega, luta por direitos. A alternativa C inverte - interseccionalidade justamente articula lutas, não as separa. A alternativa D está incorreta - interseccionalidade reconhece desigualdades de gênero. A alternativa E inverte - busca evitar hierarquias reconhecendo simultaneidade de opressões.",
+          "dificuldade": "dificil",
+          "tags": ["feminismo interseccional", "raça e gênero", "interseccionalidade"]
+        }
+      ]
+    },
+    {
+      "id": "modulo04",
+      "titulo": "Violações de Direitos Humanos",
+      "resumo": "Principais violações de direitos humanos no Brasil e no mundo, e mecanismos de proteção",
+      "topicos": [
+        {
+          "titulo": "Ditadura Militar e Violações de Direitos Humanos no Brasil",
+          "conteudo": "A ditadura militar brasileira (1964-1985) foi período de graves violações de direitos humanos, incluindo tortura sistemática, assassinatos, desaparecimentos forçados, censura, perseguição política, e repressão a movimentos sociais. O golpe militar de 1964, justificado por discursos anticomunistas e de segurança nacional, suspendeu o Estado de Direito, fechou o Congresso Nacional, cassou mandatos, e instituiu Atos Institucionais que concentravam poder no Executivo militar.\n\nA repressão intensificou-se após o AI-5 (1968), que suspendeu habeas corpus para crimes políticos, autorizou prisões sem mandado judicial, e eliminou controles democráticos. Órgãos de repressão (DOI-CODI, DOPS) praticaram tortura sistematicamente em presos políticos: choques elétricos, pau de arara, afogamento, espancamentos, violência sexual, e torturas psicológicas. Centenas foram mortos ou desapareceram. Jornalista Vladimir Herzog e operário Manoel Fiel Filho foram assassinados sob tortura. A Guerrilha do Araguaia foi aniquilada com desaparecimento de dezenas de guerrilheiros.\n\nA Comissão Nacional da Verdade (2012-2014) investigou violações do período, identificando 434 mortos e desaparecidos políticos, milhares de torturados, e responsabilidades de agentes estatais. Recomendou continuidade de investigações, responsabilização de perpetradores, e reformas institucionais. No entanto, a Lei de Anistia (1979), interpretada pelo STF como recíproca (anistiando também crimes de agentes do Estado), impede punições. Esse debate sobre justiça de transição é controverso: defensores da responsabilização argumentam que crimes contra humanidade são imprescritíveis e não devem ser anistiados; defensores da anistia ampla argumentam que foi acordo político necessário para transição pacífica. A impunidade de perpetradores é criticada por organismos internacionais. Para o ENEM, é fundamental reconhecer violações da ditadura como crimes contra direitos humanos, compreender trabalho da Comissão da Verdade, e refletir sobre tensões entre anistia e justiça."
+        },
+        {
+          "titulo": "Trabalho Escravo Contemporâneo",
+          "conteudo": "O trabalho escravo contemporâneo (também chamado trabalho análogo à escravidão) refere-se a situações onde trabalhadores são submetidos a condições degradantes, jornadas exaustivas, trabalho forçado, ou servidão por dívida. Embora a escravidão formal tenha sido abolida em 1888, formas contemporâneas persistem, especialmente em áreas rurais remotas e setores com fiscalização precária. O Código Penal brasileiro (artigo 149) criminaliza a redução de pessoa a condição análoga à de escravo.\n\nCaracterísticas do trabalho escravo contemporâneo incluem: restrição de liberdade de locomoção (trabalhadores impedidos de deixar local de trabalho através de isolamento geográfico, confisco de documentos, dívidas fraudulentas, ou ameaças), condições degradantes (alojamentos insalubres, falta de água potável, alimentação inadequada, ausência de instalações sanitárias, exposição a riscos sem proteção), jornadas exaustivas (que comprometem saúde física e mental), e trabalho forçado (sob ameaça, coação física ou psicológica).\n\nSetores onde trabalho escravo é identificado incluem: agropecuária (desmatamento, carvoarias, cultivo de cana, soja, gado), construção civil, indústria têxtil (especialmente em confecções envolvendo imigrantes), e trabalho doméstico. Grupos vulneráveis são especialmente afetados: trabalhadores rurais pobres migrados de regiões miserável para áreas de expansão agrícola, indígenas, imigrantes latino-americanos (especialmente bolivianos e haitianos) em situação irregular. Os 'gatos' (intermediários) recrutam trabalhadores com promessas falsas, transportam para locais remotos e os endividam (ferramentas, transporte, alimentação), criando servidão por dívida. Ações de combate incluem: fiscalização pelo Ministério do Trabalho e Ministério Público do Trabalho (grupos móveis de fiscalização que libertam milhares anualmente), inclusão em 'lista suja' de empregadores flagrados, responsabilização criminal e trabalhista, e políticas de reinserção de trabalhadores resgatados. Para o ENEM, é importante compreender que trabalho escravo persiste contemporaneamente, reconhecer suas características e causas (pobreza, desigualdade, impunidade), e analisar políticas de combate."
+        },
+        {
+          "titulo": "Violência Policial e Sistema Prisional",
+          "conteudo": "A violência policial e as condições do sistema prisional brasileiro constituem graves violações de direitos humanos sistematicamente denunciadas por organizações nacionais e internacionais. O Brasil possui uma das polícias mais letais do mundo: milhares de pessoas são mortas anualmente por policiais, desproporcionalmente jovens negros e pobres de periferias. O discurso oficial frequentemente classifica essas mortes como 'autos de resistência' ou 'legítima defesa', mas evidências indicam execuções extrajudiciais.\n\nA violência policial relaciona-se com: militarização da segurança pública (polícias militares mantêm estrutura herdada da ditadura), lógica de guerra contra inimigos internos (pobres e negros criminalizados), impunidade (baixas taxas de investigação e punição), e discursos políticos que legitimam 'mão dura'. Operações em favelas frequentemente resultam em mortes de civis, inclusive crianças. O caso do desaparecimento de Amarildo (2013) e a morte de Marielle Franco (2018) são emblemáticos. A Arguição de Descumprimento de Preceito Fundamental 635 ('ADPF das Favelas') do STF determinou restrições a operações policiais em favelas durante a pandemia.\n\nO sistema prisional brasileiro é marcado por superlotação crônica, condições desumanas, e violações sistemáticas: celas superlotadas (capacidade ultrapassada em 60-70%), instalações insalubres e degradantes, falta de assistência médica, violência entre presos e por agentes, facções criminosas controlando presídios, pouquíssimas oportunidades de educação e trabalho (fundamentais para ressocialização), e mortes em massacres (casos de Carandiru 1992, presídios no Norte e Nordeste). O Brasil possui terceira maior população carcerária do mundo (cerca de 750 mil presos), com altíssima taxa de presos provisórios (sem condenação definitiva). Para o ENEM, é fundamental reconhecer violência policial e condições prisionais como violações de direitos humanos, compreender relação com racismo estrutural e desigualdades, e refletir criticamente sobre punitivismo versus ressocialização."
+        },
+        {
+          "titulo": "Violações de Direitos de Povos Indígenas",
+          "conteudo": "Povos indígenas no Brasil enfrentam historicamente violações sistemáticas de direitos, desde o genocídio colonial até ameaças contemporâneas sobre seus territórios, culturas e vidas. A Constituição de 1988 representou avanço ao reconhecer direitos originários sobre terras tradicionalmente ocupadas, organização social, costumes, línguas, crenças e tradições, e capacidade processual (superando tutela). No entanto, a efetivação desses direitos enfrenta enormes obstáculos.\n\nPrincipais violações incluem: invasões de terras indígenas por grileiros, garimpeiros, madeireiros e fazendeiros (especialmente na Amazônia); morosidade e paralisação de demarcações de terras (processo administrativo que reconhece e delimita terras indígenas); violência contra lideranças indígenas (assassinatos, ameaças); impactos de grandes projetos (hidrelétricas como Belo Monte, estradas, mineração) implementados sem consulta prévia livre e informada (direito garantido pela Convenção 169 da OIT); desmatamento e degradação ambiental que destroem modos de vida; e políticas de integração forçada que desrespeitam autodeterminação cultural.\n\nO marco temporal, tese jurídica que defende que indígenas só têm direito a terras que ocupavam em 5 de outubro de 1988 (data da Constituição), é combatida por movimentos indígenas e antropólogos porque ignora esbulhos e expulsões históricas. O STF julgou a tese em 2023, rejeitando-a em decisão importante. Povos em isolamento voluntário (não contatados) enfrentam risco de extermínio por invasões. Durante governos com políticas anti-indígenas, invasões e desmatamento intensificaram-se, e órgãos de proteção (FUNAI) foram enfraquecidos. Para o ENEM, é fundamental reconhecer direitos constitucionais dos povos indígenas, compreender violações contemporâneas (invasões, violência, marco temporal), relacionar questões indígenas com meio ambiente e diversidade cultural, e refletir sobre tensões entre desenvolvimento econômico e direitos territoriais indígenas."
+        }
+      ],
+      "exemplos": [
+        "A Comissão Nacional da Verdade (2012-2014) investigou violações da ditadura militar brasileira",
+        "Grupos móveis de fiscalização do trabalho libertam milhares de trabalhadores em condição análoga à escravidão anualmente",
+        "A ADPF 635 ('ADPF das Favelas') restringiu operações policiais em favelas durante a pandemia",
+        "O STF rejeitou o marco temporal para demarcação de terras indígenas em 2023"
+      ],
+      "dicas": [
+        "Compreenda violações da ditadura militar como crimes contra direitos humanos, não divergências políticas normais",
+        "Reconheça que trabalho escravo persiste contemporaneamente, não é apenas fenômeno histórico",
+        "Relacione violência policial com racismo estrutural e criminalização da pobreza",
+        "Conecte violações de direitos indígenas com questões ambientais e de diversidade cultural"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "A Comissão Nacional da Verdade investigou violações de direitos humanos durante a ditadura militar brasileira. Sobre esse período e suas consequências, é correto afirmar que:",
+          "alternativas": {
+            "A": "Não houve nenhuma violação de direitos humanos durante a ditadura militar",
+            "B": "Tortura, assassinatos e desaparecimentos forçados foram práticas sistemáticas do Estado",
+            "C": "Todos os responsáveis por violações foram adequadamente punidos pela justiça brasileira",
+            "D": "A Comissão Nacional da Verdade considerou as violações justificáveis pelo contexto",
+            "E": "O Brasil puniu mais perpetradores de crimes da ditadura que qualquer outro país latino-americano"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a Comissão Nacional da Verdade documentou extensamente que tortura, assassinatos, desaparecimentos forçados, prisões arbitrárias e outras graves violações de direitos humanos foram práticas sistemáticas do Estado brasileiro durante a ditadura militar (1964-1985), especialmente após o AI-5 (1968). Não foram atos isolados mas política deliberada de repressão. A alternativa A nega completamente a realidade documentada. A alternativa C está incorreta - devido à interpretação da Lei de Anistia, praticamente nenhum perpetrador foi punido criminalmente no Brasil. A alternativa D distorce - a Comissão não considerou violações justificáveis, mas crimes. A alternativa E inverte a realidade - o Brasil é criticado internacionalmente justamente por não ter punido perpetradores, diferentemente de Argentina e Chile.",
+          "dificuldade": "facil",
+          "tags": ["ditadura militar", "direitos humanos", "Comissão da Verdade"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "O trabalho escravo contemporâneo (trabalho análogo à escravidão) ainda existe no Brasil. Qual situação caracteriza essa violação de direitos?",
+          "alternativas": {
+            "A": "Qualquer trabalho remunerado, independentemente das condições",
+            "B": "Apenas trabalho sem remuneração, idêntico à escravidão do século XIX",
+            "C": "Trabalho com condições degradantes, jornadas exaustivas, restrição de liberdade ou servidão por dívida",
+            "D": "Trabalho escravo foi completamente eliminado após a abolição em 1888",
+            "E": "Apenas trabalho doméstico, nunca em setores rurais ou industriais"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque o trabalho escravo contemporâneo, conforme definido pelo artigo 149 do Código Penal brasileiro, caracteriza-se por: condições degradantes de trabalho (alojamentos insalubres, falta de água, alimentação inadequada), jornadas exaustivas (que comprometem saúde), trabalho forçado (sob ameaça ou coação), ou servidão por dívida (trabalhador impedido de sair por dívidas fraudulentas). Não é idêntico à escravidão histórica mas viola fundamentalmente dignidade e liberdade. A alternativa A generaliza absurdamente. A alternativa B restringe incorretamente - trabalho escravo contemporâneo pode envolver remuneração simbólica. A alternativa D nega realidade documentada por fiscalizações que libertam milhares anualmente. A alternativa E restringe incorretamente - trabalho escravo é identificado em diversos setores (agropecuária, construção civil, têxtil).",
+          "dificuldade": "medio",
+          "tags": ["trabalho escravo", "direitos humanos", "trabalho degradante"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "A violência policial no Brasil vitima desproporcionalmente jovens negros e pobres de periferias. Essa realidade relaciona-se com:",
+          "alternativas": {
+            "A": "A igualdade racial perfeita no Brasil, sem nenhuma discriminação",
+            "B": "O racismo estrutural que criminaliza e desumaniza populações negras e pobres",
+            "C": "A ausência de qualquer problema no sistema de segurança pública brasileiro",
+            "D": "A inexistência de mortes causadas por policiais no Brasil",
+            "E": "A punição rigorosa de todos os casos de violência policial"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a violência policial desproporcional contra jovens negros e pobres relaciona-se diretamente com racismo estrutural: estereótipos que associam negritude e pobreza à criminalidade, suspeição generalizada sobre corpos negros em periferias, lógica de guerra onde populações vulneráveis são tratadas como inimigas, e desumanização que torna essas vidas 'matáveis'. A geografia da letalidade policial coincide com a geografia da segregação racial e social. A alternativa A nega completamente a realidade de desigualdades raciais documentadas. A alternativa C ignora problemas graves do sistema de segurança. A alternativa D contradice dados de milhares de mortes anuais. A alternativa E está incorreta - a impunidade é característica, não punição rigorosa.",
+          "dificuldade": "medio",
+          "tags": ["violência policial", "racismo estrutural", "segurança pública"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "O sistema prisional brasileiro é marcado por superlotação e condições desumanas. Essas condições violam qual princípio fundamental?",
+          "alternativas": {
+            "A": "O princípio de que presos não têm nenhum direito durante cumprimento de pena",
+            "B": "O princípio da dignidade da pessoa humana, que se aplica inclusive a pessoas privadas de liberdade",
+            "C": "O princípio de que presos merecem sofrer o máximo possível como punição",
+            "D": "O princípio de que condições prisionais são irrelevantes para direitos humanos",
+            "E": "O princípio de que apenas presos inocentes têm direitos, não condenados"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque condições desumanas e degradantes no sistema prisional violam o princípio constitucional fundamental da dignidade da pessoa humana (artigo 1º, III), que se aplica a todos, incluindo pessoas privadas de liberdade. A Constituição garante a presos o respeito à integridade física e moral (artigo 5º, XLIX), proibindo penas cruéis (artigo 5º, XLVII). A pena é privação de liberdade, não de dignidade ou submissão a tortura e maus-tratos. A alternativa A está completamente errada - presos mantêm direitos fundamentais. A alternativa C reflete mentalidade punitivista e vingativa incompatível com Estado de Direito. A alternativa D nega relevância das condições prisionais para direitos humanos, contrariando tratados internacionais. A alternativa E cria distinção inexistente - todos os presos têm direitos fundamentais.",
+          "dificuldade": "facil",
+          "tags": ["sistema prisional", "dignidade humana", "direitos de presos"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "A tese do marco temporal para demarcação de terras indígenas defende que indígenas só teriam direito a terras que ocupavam em 1988. Por que movimentos indígenas e antropólogos criticam essa tese?",
+          "alternativas": {
+            "A": "Porque indígenas não têm direito a nenhuma terra segundo a Constituição",
+            "B": "Porque ignora expulsões e esbulhos históricos de territórios indígenas anteriores a 1988",
+            "C": "Porque o marco temporal é excessivamente favorável aos indígenas",
+            "D": "Porque demarcações de terras são desnecessárias para povos indígenas",
+            "E": "Porque a Constituição de 1988 revogou todos os direitos indígenas anteriores"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a principal crítica ao marco temporal é que ignora a história de esbulhos, expulsões violentas e perseguições que impediram povos indígenas de estarem em suas terras tradicionais em 1988. Muitos foram expulsos durante a ditadura militar, construção de estradas e hidrelétricas, ou invasões de fazendeiros. Exigir ocupação em 1988 premia invasores e penaliza vítimas de violências históricas. A Constituição reconhece 'direitos originários' sobre terras tradicionalmente ocupadas, não limitados à data específica. A alternativa A contradiz direitos constitucionais indígenas. A alternativa C inverte - o marco temporal prejudica indígenas. A alternativa D nega importância fundamental da terra para culturas e sobrevivência indígenas. A alternativa E está incorreta - a Constituição reconheceu e fortaleceu direitos indígenas.",
+          "dificuldade": "dificil",
+          "tags": ["povos indígenas", "marco temporal", "demarcação de terras"]
+        }
+      ]
+    },
+    {
+      "id": "modulo05",
+      "titulo": "Cidadania na Era Digital",
+      "resumo": "Desafios e oportunidades da cidadania no contexto das tecnologias digitais",
+      "topicos": [
+        {
+          "titulo": "Direitos Digitais e Proteção de Dados",
+          "conteudo": "A era digital transformou profundamente as relações sociais, econômicas e políticas, suscitando debates sobre direitos e deveres no ambiente virtual. Direitos digitais referem-se à extensão de direitos fundamentais (privacidade, liberdade de expressão, acesso à informação, igualdade) para o ambiente online. A internet não é 'terra sem lei', mas espaço onde direitos e responsabilidades devem ser garantidos e respeitados, equilibrando liberdades individuais com proteção contra abusos.\n\nO Marco Civil da Internet (Lei 12.965/2014) estabeleceu princípios, garantias, direitos e deveres para uso da internet no Brasil, sendo considerado legislação pioneira e equilibrada internacionalmente. Princípios incluem: neutralidade da rede (provedores devem tratar todos os dados igualmente, sem discriminar ou cobrar diferentemente por conteúdos), privacidade e proteção de dados pessoais, liberdade de expressão, e responsabilização de usuários e provedores. A lei estabeleceu que provedores não são responsáveis por conteúdos de terceiros automaticamente, mas devem retirá-los quando notificados judicialmente.\n\nA Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018) regulamentou tratamento de dados pessoais, estabelecendo que: dados pertencem aos titulares, não a empresas; coleta requer consentimento livre, informado e inequívoco; dados devem ser usados apenas para finalidades específicas e legítimas; titulares têm direitos de acesso, correção, exclusão e portabilidade; empresas devem implementar segurança adequada; e violações devem ser notificadas. A Autoridade Nacional de Proteção de Dados (ANPD) fiscaliza cumprimento. Desafios incluem: tensões entre privacidade e segurança (vigilância estatal), poder das Big Techs sobre dados, dificuldade de usuários compreenderem e exercerem direitos, e vazamentos de dados. Para o ENEM, é importante compreender o Marco Civil e a LGPD como marcos legais, reconhecer direitos digitais como extensões de direitos fundamentais, e refletir sobre equilíbrios necessários entre liberdade, privacidade e segurança online."
+        },
+        {
+          "titulo": "Democracia Digital e Participação Online",
+          "conteudo": "As tecnologias digitais oferecem novas possibilidades de participação política e engajamento cidadão, potencialmente aprofundando a democracia. Democracia digital ou e-democracia refere-se ao uso de tecnologias de informação e comunicação para ampliar e facilitar participação cidadã em processos políticos: votação eletrônica, consultas públicas online, plataformas de iniciativa popular, orçamento participativo digital, transparência de dados governamentais (governo aberto), e mobilização através de redes sociais.\n\nPotenciais democratizantes incluem: redução de custos de participação (cidadãos podem engajar-se de casa, sem deslocamentos), ampliação de acesso à informação política (dados governamentais, legislações, debates), facilitação de organização coletiva (movimentos sociais usando redes para mobilização), possibilidade de consultas diretas mais frequentes (referendos, plebiscitos digitais), e horizontalização da comunicação política (cidadãos produzindo e disseminando informação, não apenas consumindo de mídias tradicionais).\n\nNo entanto, riscos e limitações são significativos: exclusão digital reproduz desigualdades (população sem acesso fica marginalizada de participação online), algoritmos podem manipular e polarizar, desinformação distorce debates públicos, superficialidade de engajamento (clicktivismo que substitui participação substantiva), vigilância digital pode inibir liberdades, e fragmentação da esfera pública (bolhas de filtro impedem debate entre diferentes perspectivas). Casos de uso de dados para manipulação eleitoral (Cambridge Analytica) evidenciam riscos. Para democracia digital ser efetivamente democratizante, requer: inclusão digital universal, alfabetização midiática e digital, regulação de plataformas, proteção de dados, e cultura democrática participativa. Para o ENEM, é fundamental analisar criticamente tanto potenciais quanto riscos da democracia digital, reconhecer que tecnologia não é neutra mas pode servir a diferentes projetos políticos, e refletir sobre condições necessárias para que tecnologias fortaleçam democracia ao invés de enfraquecê-la."
+        },
+        {
+          "titulo": "Cyberbullying e Discursos de Ódio Online",
+          "conteudo": "O ambiente digital, apesar de potenciais democratizantes, também facilita formas de violência como cyberbullying e discursos de ódio. Cyberbullying refere-se a agressões, perseguições, humilhações, ameaças e intimidações realizadas através de meios digitais (redes sociais, aplicativos de mensagem, jogos online), caracterizando-se por intencionalidade, repetição e desequilíbrio de poder. Diferentemente do bullying tradicional, o cyberbullying alcança a vítima constantemente (24/7), tem potencial de viralização massiva, e a distância física e anonimato facilitam desinibição de agressores.\n\nConsequências do cyberbullying incluem: danos psicológicos graves (ansiedade, depressão, baixa autoestima, ideação suicida, especialmente entre adolescentes), isolamento social, prejuízos acadêmicos, e perpetuação no ambiente digital (conteúdos permanecem acessíveis mesmo após ataques cessarem). Grupos vulneráveis são alvos frequentes: mulheres (misoginia online), pessoas LGBTQIA+ (LGBTfobia), negros (racismo), pessoas com deficiência (capacitismo), e outras minorias.\n\nDiscursos de ódio são manifestações que incitam discriminação, hostilidade ou violência contra indivíduos ou grupos com base em raça, etnia, gênero, orientação sexual, religião, nacionalidade ou outras características. A internet amplificou alcance e agressividade desses discursos. Desafios de enfrentamento incluem: tensões entre liberdade de expressão e proteção contra discursos danosos (onde traçar limites?), dificuldades de identificar e responsabilizar agressores (perfis anônimos, jurisdições internacionais), lentidão de plataformas em remover conteúdos violentos, e polarização que normaliza agressividade. Respostas incluem: legislação que criminalize discursos de ódio preservando liberdades, moderação responsável por plataformas, educação sobre convivência digital respeitosa, e apoio psicológico a vítimas. Para o ENEM, é importante reconhecer cyberbullying e discursos de ódio como violações de dignidade e direitos, compreender suas especificidades digitais, analisar danos causados, e refletir sobre equilíbrios entre liberdade de expressão e proteção contra violências."
+        },
+        {
+          "titulo": "Ativismo Digital e Movimentos Sociais Online",
+          "conteudo": "As redes sociais e tecnologias digitais transformaram formas de organização, mobilização e ação de movimentos sociais, criando o fenômeno do ativismo digital ou ciberativismo. Movimentos contemporâneos usam intensivamente internet para: disseminar informações e denúncias (contornando filtros de mídias tradicionais), coordenar ações coletivas (protestos, manifestações), construir identidades coletivas e comunidades, arrecadar fundos (financiamento coletivo), pressionar autoridades (petições online, campanhas de hashtags), e amplificar vozes de grupos marginalizados.\n\nExemplos importantes incluem: Primavera Árabe (2010-2012), onde redes sociais facilitaram organização de protestos que derrubaram ditadores; manifestações de junho de 2013 no Brasil, organizadas horizontalmente via redes; movimento Black Lives Matter, que ganhou alcance global através de hashtags e vídeos de violência policial; movimento #MeToo, que denunciou assédio e violência sexual; movimentos feministas organizando marchas e debates online; e movimentos ambientalistas (Fridays for Future de Greta Thunberg) mobilizando globalmente.\n\nCaracterísticas distintivas do ativismo digital incluem: horizontalidade e ausência de lideranças hierárquicas rígidas (redes descentralizadas), velocidade de disseminação de informações e mobilização, alcance potencialmente global, custos reduzidos de participação, multimodalidade (textos, imagens, vídeos), e hibridismo (articulação entre online e offline). Críticas incluem: slacktivism ou clicktivism (ativismo superficial limitado a curtidas e compartilhamentos sem engajamento substantivo), volatilidade de mobilizações online (rapidamente surgem e dissipam), dificuldades de traduzir mobilizações em mudanças políticas duradouras, e riscos de vigilância e repressão digital. Para o ENEM, é fundamental reconhecer o ativismo digital como forma legítima e significativa de participação política contemporânea, compreender suas especificidades (horizontalidade, velocidade, alcance), analisar tanto potenciais quanto limitações, e refletir sobre relações entre mobilizações online e transformações sociais efetivas."
+        }
+      ],
+      "exemplos": [
+        "O Marco Civil da Internet (2014) estabeleceu neutralidade da rede e direitos digitais no Brasil",
+        "A LGPD (2018) garantiu direitos de acesso, correção e exclusão de dados pessoais",
+        "O movimento #MeToo usou redes sociais para denunciar assédio sexual globalmente",
+        "As manifestações de junho de 2013 foram organizadas horizontalmente através de redes sociais"
+      ],
+      "dicas": [
+        "Compreenda o Marco Civil e a LGPD como marcos legais de direitos digitais",
+        "Analise criticamente tanto potenciais quanto riscos da democracia digital",
+        "Reconheça cyberbullying e discursos de ódio como violações de direitos no ambiente digital",
+        "Entenda ativismo digital como forma legítima mas com especificidades e limitações"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "O Marco Civil da Internet estabeleceu a neutralidade da rede como princípio fundamental. Esse princípio significa que:",
+          "alternativas": {
+            "A": "Provedores de internet podem cobrar valores diferentes por acesso a diferentes sites e serviços",
+            "B": "Provedores devem tratar todos os dados e conteúdos igualmente, sem discriminação ou priorização",
+            "C": "O governo pode controlar e censurar qualquer conteúdo na internet",
+            "D": "Usuários não têm direito à privacidade em suas comunicações online",
+            "E": "Empresas podem vender dados pessoais de usuários livremente sem consentimento"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a neutralidade da rede estabelece que provedores de internet devem tratar todos os pacotes de dados igualmente, sem discriminar, degradar ou priorizar conteúdos com base em origem, destino, serviço ou aplicação. Não podem, por exemplo, tornar Netflix mais lento que serviço de streaming próprio, ou cobrar extra por acesso a determinados sites. Isso protege liberdade de acesso e inovação na internet. A alternativa A contradiz completamente a neutralidade - descreve justamente o que é proibido. A alternativa C confunde neutralidade com censura - são conceitos distintos. A alternativa D está incorreta - o Marco Civil garante privacidade. A alternativa E viola princípios de proteção de dados estabelecidos no Marco Civil e detalhados na LGPD.",
+          "dificuldade": "medio",
+          "tags": ["neutralidade da rede", "Marco Civil", "direitos digitais"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "A Lei Geral de Proteção de Dados (LGPD) estabeleceu direitos dos titulares de dados pessoais. Qual direito está previsto nessa legislação?",
+          "alternativas": {
+            "A": "Empresas podem coletar e usar dados pessoais sem necessidade de consentimento",
+            "B": "Usuários não têm direito de saber quais dados empresas coletam sobre eles",
+            "C": "Titulares têm direito de solicitar acesso, correção e exclusão de seus dados pessoais",
+            "D": "Dados pessoais podem ser vendidos livremente entre empresas sem informar titulares",
+            "E": "Vazamentos de dados não precisam ser notificados aos titulares afetados"
+          },
+          "correta": "C",
+          "explicacao": "A alternativa C está correta porque a LGPD estabeleceu diversos direitos para titulares de dados pessoais, incluindo: direito de acesso (saber quais dados são coletados e como são usados), correção (corrigir dados incorretos ou desatualizados), exclusão (solicitar apagamento de dados), portabilidade (transferir dados entre serviços), revogação de consentimento, e informação sobre compartilhamento. Esses direitos visam empoderar indivíduos frente a empresas que tratam seus dados. A alternativa A contradiz o princípio fundamental do consentimento. A alternativa B nega o direito de acesso estabelecido. A alternativa D viola regras sobre compartilhamento que requer base legal. A alternativa E contradiz obrigação de notificação de incidentes de segurança.",
+          "dificuldade": "facil",
+          "tags": ["LGPD", "proteção de dados", "direitos digitais"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "A democracia digital oferece potenciais democratizantes mas também enfrenta limitações. Qual situação exemplifica uma limitação da democracia digital?",
+          "alternativas": {
+            "A": "A facilidade de acesso a informações governamentais através de portais de transparência",
+            "B": "A exclusão digital que marginaliza populações sem acesso à internet de participações online",
+            "C": "A possibilidade de cidadãos organizarem petições e iniciativas populares digitalmente",
+            "D": "A ampliação de oportunidades de participação através de consultas públicas online",
+            "E": "A horizontalização da comunicação política através de redes sociais"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque exemplifica limitação importante da democracia digital: se participação política migra crescentemente para ambiente online, populações sem acesso à internet ou sem letramento digital ficam marginalizadas desses processos, reproduzindo e potencialmente agravando desigualdades sociais existentes. Inclusão digital é pré-requisito para que democracia digital seja efetivamente democrática. A alternativa A descreve potencial democratizante (transparência), não limitação. A alternativa C menciona potencial positivo (facilitação de participação). A alternativa D refere-se a ampliação de oportunidades, aspecto positivo. A alternativa E descreve horizontalização como potencial, embora também possa ter problemas (desinformação, polarização).",
+          "dificuldade": "medio",
+          "tags": ["democracia digital", "exclusão digital", "participação"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "O cyberbullying é forma de violência facilitada pelo ambiente digital. Qual característica distingue cyberbullying do bullying tradicional?",
+          "alternativas": {
+            "A": "O cyberbullying é menos grave que bullying tradicional e não causa danos psicológicos",
+            "B": "O cyberbullying alcança a vítima constantemente (24/7) e tem potencial de viralização massiva",
+            "C": "O cyberbullying afeta apenas adultos, nunca crianças e adolescentes",
+            "D": "O cyberbullying não é considerado problema relevante por especialistas",
+            "E": "O cyberbullying é facilmente identificado e responsabilizado legalmente"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque características distintivas do cyberbullying incluem: alcança a vítima constantemente através de dispositivos conectados (não apenas na escola ou trabalho), conteúdos podem viralizar alcançando audiências massivas amplificando humilhação, agressores podem agir com aparente anonimato facilitando desinibição, e conteúdos permanecem acessíveis online mesmo após cessarem ataques. Essas especificidades tornam cyberbullying particularmente danoso. A alternativa A subestima incorretamente - cyberbullying causa danos psicológicos graves incluindo suicídios. A alternativa C está errada - adolescentes são especialmente vulneráveis. A alternativa D nega relevância contrariando consenso de especialistas. A alternativa E está incorreta - identificação e responsabilização são justamente desafios (anonimidade, jurisdições).",
+          "dificuldade": "facil",
+          "tags": ["cyberbullying", "violência digital", "internet"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "Movimentos sociais contemporâneos usam intensivamente redes sociais para organização e mobilização. Qual crítica é formulada ao 'slacktivism' ou 'clicktivism'?",
+          "alternativas": {
+            "A": "Que redes sociais facilitam demais a participação política e deveriam ser limitadas",
+            "B": "Que ações online superficiais (curtidas, compartilhamentos) substituem engajamento substantivo sem gerar mudanças reais",
+            "C": "Que movimentos sociais não deveriam usar tecnologias digitais de forma alguma",
+            "D": "Que toda participação online é automaticamente transformadora e efetiva",
+            "E": "Que redes sociais eliminaram completamente a necessidade de mobilizações offline"
+          },
+          "correta": "B",
+          "explicacao": "A alternativa B está correta porque a crítica ao slacktivism/clicktivism aponta que ações online superficiais e de baixo custo (curtir posts, compartilhar hashtags, assinar petições online com um clique) podem criar ilusão de participação política e sensação de contribuição sem engajamento substantivo que gere mudanças sociais efetivas. Não nega valor de tecnologias, mas questiona suficiência de participação meramente digital sem articulação com ações offline e mobilizações duradouras. A alternativa A distorce a crítica propondo limitação de participação. A alternativa C rejeita exageradamente uso de tecnologias. A alternativa D é otimista ingenuamente - nem toda participação online é automaticamente transformadora. A alternativa E exagera - mobilizações offline permanecem importantes e articulam-se com online.",
+          "dificuldade": "dificil",
+          "tags": ["ativismo digital", "slacktivism", "movimentos sociais"]
+        }
+      ]
+    }
+  ]
+}

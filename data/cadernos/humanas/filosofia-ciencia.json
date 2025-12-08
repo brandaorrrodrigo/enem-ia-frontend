@@ -1,0 +1,207 @@
+{
+  "id": "filosofia-ciencia",
+  "titulo": "Filosofia da Ciencia",
+  "descricao": "Metodo cientifico, verdade, conhecimento e os fundamentos da ciencia",
+  "icone": "🔬",
+  "cor": "from-cyan-500 to-blue-500",
+  "nivel": "Avancado",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": "mod-1",
+      "titulo": "O Que e Ciencia?",
+      "resumo": "Caracteristicas do conhecimento cientifico, diferenca entre ciencia e outras formas de conhecimento, e os objetivos da ciencia.",
+      "topicos": [
+        "Conhecimento cientifico x senso comum",
+        "Objetividade e rigor metodologico",
+        "Observacao, hipotese, experimentacao",
+        "Leis cientificas e teorias",
+        "Ciencias naturais x ciencias humanas"
+      ],
+      "exemplos": [
+        "Senso comum: sol gira em torno da Terra; Ciencia: Terra gira em torno do Sol",
+        "Teoria da evolucao: explicacao sistematica e testavel",
+        "Reproducibilidade: experimentos devem ser repetidos"
+      ],
+      "dicas": [
+        "Ciencia busca explicacoes sistematicas e testaveis",
+        "Difere de opiniao, crenca religiosa, pseudo-ciencia",
+        "ENEM pergunta sobre criterios de cientificidade"
+      ],
+      "questoes": [
+        {
+          "id": "q1",
+          "enunciado": "Uma das principais caracteristicas que distingue o conhecimento cientifico do senso comum e:",
+          "alternativas": [
+            "O conhecimento cientifico e baseado apenas em crencas pessoais",
+            "O conhecimento cientifico e sistematico, metodico e verificavel",
+            "O senso comum e sempre superior a ciencia",
+            "A ciencia rejeita completamente a observacao empirica",
+            "O senso comum usa metodos mais rigorosos que a ciencia"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "O conhecimento cientifico distingue-se por ser sistematico (organizado), metodico (segue procedimentos) e verificavel (pode ser testado e confirmado/refutado).",
+          "dificuldade": "facil",
+          "tags": ["epistemologia", "ciencia", "metodo-cientifico"]
+        }
+      ]
+    },
+    {
+      "id": "mod-2",
+      "titulo": "Metodo Cientifico e Inducao",
+      "resumo": "O metodo indutivo parte de observacoes particulares para leis gerais. Francis Bacon e a ciencia experimental moderna.",
+      "topicos": [
+        "Inducao: do particular ao universal",
+        "Francis Bacon e o metodo experimental",
+        "Observacao e coleta de dados",
+        "Problema da inducao (Hume)",
+        "Generalizacao e leis cientificas"
+      ],
+      "exemplos": [
+        "Observo 1000 cisnes brancos, concluo: todos os cisnes sao brancos",
+        "Bacon: eliminar preconceitos (idolos) para observar corretamente",
+        "Hume: inducao nao garante certeza logica"
+      ],
+      "dicas": [
+        "Inducao: partir de casos para a regra geral",
+        "Problema: nunca observamos todos os casos",
+        "ENEM explora limitacoes do metodo indutivo"
+      ],
+      "questoes": [
+        {
+          "id": "q2",
+          "enunciado": "O problema da inducao, identificado por David Hume, consiste em:",
+          "alternativas": [
+            "A inducao sempre leva a conclusoes certas e inquestionaveis",
+            "Observacoes particulares nao garantem logicamente a verdade de conclusoes universais",
+            "A inducao e o unico metodo valido na ciencia",
+            "E impossivel fazer qualquer tipo de observacao empirica",
+            "Toda generalizacao e necessariamente falsa"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Hume mostrou que, por mais casos particulares que observemos, nao temos garantia logica de que a proxima observacao confirmara a regra. A inducao nao fornece certeza absoluta.",
+          "dificuldade": "media",
+          "tags": ["hume", "inducao", "problema-inducao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-3",
+      "titulo": "Popper e o Falseacionismo",
+      "resumo": "Karl Popper propoe que o criterio de cientificidade nao e a verificacao, mas a possibilidade de refutacao (falseabilidade).",
+      "topicos": [
+        "Critica ao metodo indutivo",
+        "Falseabilidade como criterio de cientificidade",
+        "Ciencia avanca por conjecturas e refutacoes",
+        "Distincao entre ciencia e pseudo-ciencia",
+        "Progresso cientifico"
+      ],
+      "exemplos": [
+        "'Todos os cisnes sao brancos' e falseavel (basta um cisne negro)",
+        "Astrologia nao e falseavel, logo nao e ciencia",
+        "Teorias cientificas sao sempre provisorias"
+      ],
+      "dicas": [
+        "Falseabilidade: teoria deve poder ser testada e refutada",
+        "Ciencia nao busca verdades absolutas, mas teorias ainda nao refutadas",
+        "ENEM pergunta sobre criterio de Popper"
+      ],
+      "questoes": [
+        {
+          "id": "q3",
+          "enunciado": "Segundo Karl Popper, uma teoria e cientifica quando:",
+          "alternativas": [
+            "Foi confirmada por milhares de observacoes",
+            "E impossivel de ser testada",
+            "Pode ser potencialmente refutada por observacoes empiricas",
+            "E aceita pela maioria dos cientistas",
+            "Se baseia apenas em crencas religiosas"
+          ],
+          "respostaCorreta": 2,
+          "explicacao": "Para Popper, o criterio de demarcacao entre ciencia e nao-ciencia e a falseabilidade: uma teoria e cientifica se puder ser potencialmente refutada por testes empiricos.",
+          "dificuldade": "media",
+          "tags": ["popper", "falseacionismo", "criterio-demarcacao"]
+        }
+      ]
+    },
+    {
+      "id": "mod-4",
+      "titulo": "Kuhn e as Revolucoes Cientificas",
+      "resumo": "Thomas Kuhn propoe que a ciencia nao progride linearmente, mas atraves de mudancas revolucionarias de paradigmas.",
+      "topicos": [
+        "Paradigmas cientificos",
+        "Ciencia normal x revolucao cientifica",
+        "Anomalias e crises",
+        "Incomensurabilidade entre paradigmas",
+        "Dimensao social da ciencia"
+      ],
+      "exemplos": [
+        "Revolucao copernicana: geocentrismo -> heliocentrismo",
+        "Einstein x Newton: mudanca de paradigma na fisica",
+        "Ciencia normal: resolver quebra-cabecas dentro do paradigma"
+      ],
+      "dicas": [
+        "Paradigma: conjunto de crencas, valores e tecnicas compartilhados",
+        "Revolucao: substituicao de paradigma apos acumulo de anomalias",
+        "ENEM explora rupturas na historia da ciencia"
+      ],
+      "questoes": [
+        {
+          "id": "q4",
+          "enunciado": "Para Thomas Kuhn, uma revolucao cientifica ocorre quando:",
+          "alternativas": [
+            "Um cientista faz uma pequena descoberta incremental",
+            "Acumulam-se anomalias que o paradigma vigente nao consegue explicar, levando a sua substituicao",
+            "A ciencia progride de forma linear e cumulativa",
+            "Um governo decide mudar as teorias cientificas",
+            "Nao ha mudancas significativas na ciencia"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "Kuhn argumenta que revolucoes cientificas acontecem quando anomalias se acumulam, gerando crise no paradigma vigente, que e entao substituido por um novo paradigma incomensuravel.",
+          "dificuldade": "media",
+          "tags": ["kuhn", "paradigma", "revolucao-cientifica"]
+        }
+      ]
+    },
+    {
+      "id": "mod-5",
+      "titulo": "Ciencia, Tecnologia e Sociedade",
+      "resumo": "Relacoes entre ciencia, tecnologia, etica e sociedade. Responsabilidade cientifica e impactos sociais da ciencia.",
+      "topicos": [
+        "Neutralidade da ciencia",
+        "Ciencia e valores",
+        "Responsabilidade social dos cientistas",
+        "Tecnologia e suas implicacoes eticas",
+        "Ciencia e poder"
+      ],
+      "exemplos": [
+        "Bomba atomica: ciencia a servico da guerra",
+        "Biotecnologia: beneficios e riscos",
+        "Industria farmaceutica: interesses economicos x bem publico"
+      ],
+      "dicas": [
+        "Ciencia nao e neutra: influenciada por contextos sociais",
+        "Tecnologia pode ter usos beneficos ou prejudiciais",
+        "ENEM questiona a suposta neutralidade cientifica"
+      ],
+      "questoes": [
+        {
+          "id": "q5",
+          "enunciado": "A questao da neutralidade da ciencia e problematizada porque:",
+          "alternativas": [
+            "A ciencia e sempre absolutamente neutra e imparcial",
+            "Escolhas de pesquisa, financiamento e aplicacoes sao influenciadas por valores e interesses sociais",
+            "Cientistas nunca tomam decisoes eticas",
+            "A tecnologia nao tem nenhuma relacao com a ciencia",
+            "Valores eticos nao se aplicam a atividade cientifica"
+          ],
+          "respostaCorreta": 1,
+          "explicacao": "A suposta neutralidade cientifica e questionada pois a ciencia e influenciada por escolhas valorativas (que pesquisar, como financiar, como aplicar), alem de ter impactos sociais significativos.",
+          "dificuldade": "media",
+          "tags": ["neutralidade", "ciencia-sociedade", "etica"]
+        }
+      ]
+    }
+  ]
+}

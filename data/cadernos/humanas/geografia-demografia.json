@@ -1,0 +1,295 @@
+{
+  "id": "geografia-demografia",
+  "titulo": "Demografia",
+  "descricao": "Transicao demografica, piramides etarias e migracoes",
+  "icone": "👥",
+  "cor": "from-cyan-500 to-blue-600",
+  "nivel": "Intermediario",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 0,
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Conceitos Demograficos Fundamentais",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Indicadores Demograficos Basicos",
+          "conteudo": "Demografia estuda populacao quantitativa/qualitativamente. Indicadores: populacao absoluta (total habitantes), densidade demografica (hab/km²), taxa natalidade (nascimentos/1000 hab/ano), taxa mortalidade (mortes/1000 hab/ano), crescimento vegetativo/natural (natalidade - mortalidade), taxa fecundidade (filhos/mulher vida fertil), expectativa vida (anos esperados viver), mortalidade infantil (mortes <1 ano/1000 nascidos vivos). Fontes: censos (10 anos Brasil IBGE), registros civis, pesquisas amostrais (PNAD).",
+          "exemplo": "Brasil 2023: 203 milhoes hab (7° mundial), densidade 24 hab/km² (baixa, desigual: Sudeste 97, Norte 5), natalidade 13/1000, mortalidade 7/1000, crescimento 0,6%/ano (desacelerando), fecundidade 1,6 filhos/mulher (abaixo reposicao 2,1), expectativa vida 76 anos, mortalidade infantil 12/1000 (caiu de 115/1000 em 1960). Mundial: 8,1 bilhoes, crescimento 1%/ano (pico foi 2,1% em 1968), fecundidade 2,3 (2,1 reposicao). Nigeria maior densidade populacao absoluta Africa (220 milhoes), Monaco maior densidade (26 mil/km²).",
+          "dica": "Crescimento vegetativo = natalidade - mortalidade. Taxa fecundidade >2,1 = cresce, <2,1 = envelhece. Mortalidade infantil indica desenvolvimento (saude, saneamento). ENEM relaciona indicadores desenvolvimento (IDH)."
+        },
+        {
+          "id": 2,
+          "titulo": "Distribuicao Espacial Populacao",
+          "conteudo": "Distribuicao populacional desigual: fatores fisicos (clima, relevo, agua, solo), historicos (colonizacao, industria), economicos (empregos, renda). Ecumeno (habitado, 50% superficie mas 95% populacao) vs anecumeno (desabitado/pouco: desertos, montanhas, polares, florestas densas). Concentracoes: litorais (40% 100km costa), vales fluviais, planicies, areas industrializadas/agricolas. Vazios: Sahara, Amazonia, Himalaia, Siberia, Australia centro. Brasil: 85% urbano, Sudeste 42% populacao (10% territorio), Norte 9% (45% territorio). Mundial: Asia 60% populacao (30% terras).",
+          "exemplo": "Litorais concentram: acesso maritimo (comercio historico), clima ameno, planícies (agricultura), cidades portuarias (NYC, Shanghai, Mumbai, Rio, Lagos). Bangladesh: 170 milhoes em 150 mil km² = 1.150 hab/km² (densisima, delta Ganges fertil mas enchentes). Vazios demograficos: Amazonia 5 hab/km² (floresta densa, umidade, solos pobres), Sahara <1 hab/km² (deserto), Mongolia 2 hab/km² (frio, estepes). Brasil: Sudeste industrializacao seculo XX atraiu migrantes, Norte colonizacao recente (Transamazonica 1970s fracassou), Nordeste sertao semiarido baixa densidade (caatinga).",
+          "dica": "Distribuicao desigual: fisicos (clima, relevo) + historicos (colonizacao) + economicos (empregos). Litorais/planicies/vales concentram. Desertos/montanhas/florestas vazios. Asia 60% populacao mundial."
+        },
+        {
+          "id": 3,
+          "titulo": "Estrutura Etaria Populacao",
+          "conteudo": "Estrutura etaria divide: jovens (0-14 anos), adultos/PEA (15-64 anos), idosos (65+). Razao dependencia: (jovens + idosos) / adultos x 100, indica 'peso' dependentes sobre produtivos. Piramide etaria grafico mostra distribuicao idade/sexo: base larga (muitos jovens, pais subdesenvolvido alta natalidade), base estreita (poucos jovens, pais desenvolvido baixa natalidade), topo largo (muitos idosos, pais envelhecido). Transicao estreita base (queda natalidade), engrossa meio (adultos), alarga topo (envelhece).",
+          "exemplo": "Niger: piramide base larga (49% <15 anos, fecundidade 6,8 filhos/mulher), 3% >65, formato triangular (pais jovem, subdesenvolvido, alta natalidade/mortalidade). Japao: piramide base estreita (12% <15, fecundidade 1,3), topo largo (29% >65, recorde mundial envelhecimento), formato invertido (pais desenvolvido, baixa natalidade, alta longevidade). Brasil: transicao, base estreitando (20% <15, fecundidade 1,6), meio largo (70% 15-64, bônus demografico), topo alargando (10% >65, envelhece rapido). Razao dependencia: Niger 105 (105 dependentes/100 produtivos), Japao 71, Brasil 43 (ideal bônus).",
+          "dica": "Piramide etaria: base larga = jovem (alta natalidade), base estreita = envelhecido (baixa natalidade), topo largo = idosos (longevidade). Razao dependencia mede 'peso' dependentes. Brasil transicao (base estreita, meio largo)."
+        },
+        {
+          "id": 4,
+          "titulo": "Bonus Demografico",
+          "conteudo": "Bonus demografico: fase transicao quando PEA (15-64) cresce proporcionalmente mais que dependentes (jovens + idosos), razao dependencia baixa, oportunidade desenvolvimento (mais trabalhadores, menos depedentes). Duracao limitada (40-50 anos): natalidade ja caiu (menos criancas) mas mortalidade ainda baixa (poucos idosos), depois envelhece (termina bonus). Aproveitar: investir educacao/saude/emprego PEA, estimular poupanca/investimento, reformas previdencia. Desperdicar: desemprego PEA (jovens sem qualificacao), informalidade, baixos salarios.",
+          "exemplo": "Tigres Asiaticos (Coreia Sul, Taiwan, Singapura): aproveitaram bonus 1970-2000, investiram educacao massiva (alfabetizacao 100%, universidades), exportacao manufaturas, poupanca alta (financiou investimento), PIB per capita explodiu (Coreia US$ 200 em 1960 → US$ 35 mil hoje). Brasil: bonus 1970-2030, parcialmente aproveitado (educacao expandiu mas qualidade baixa, informalidade 40%, reformas atrasadas), agora envelhece rapido (idosos 10% → 30% em 2060). Africa: bonus comecando (65% <24 anos), depende investir juventude (educacao, emprego), risco desperdicar (desemprego 60% jovens). India: bonus ate 2040 (maior PEA mundial 1 bilhao), potencial ou problema.",
+          "dica": "Bonus demografico = mais trabalhadores, menos dependentes, oportunidade desenvolvimento (temporario 40-50 anos). Aproveitar: educar, empregar, investir. Tigres Asiaticos modelo. Brasil desperdicando (envelhece rapido, reformas atrasadas)."
+        },
+        {
+          "id": 5,
+          "titulo": "Envelhecimento Populacional",
+          "conteudo": "Envelhecimento: aumento proporcao idosos (65+) populacao. Causas: queda natalidade (menos jovens) + aumento expectativa vida (mais idosos vivem mais). Consequencias: pressao previdencia/saude (custos disparam), escassez mao-obra (menos trabalhadores), crescimento economico desacelera, conflito geracoes (jovens pagam aposentados). Solucoes: aumentar idade aposentadoria, incentivar natalidade (licencas, creches), imigracao jovens, robotizacao (substituir trabalho). Paises: Japao 29% >65 (1° mundial), Italia 23%, Alemanha 21%. Brasil envelhece rapido (10% hoje → 30% em 2060).",
+          "exemplo": "Japao: aposentados >trabalhadores 2050, custo previdencia 30% PIB (hoje 10%), escolas fecham (falta criancas), vilas idosos (sem jovens), robo cuidadores. Solucoes: idade aposentadoria 70 anos, incentivos natalidade fracassaram (Tokyo paga ¥3 milhoes/filho, fecundidade continua 1,3), rejeita imigracao (xenofobia). Italia: similar, populacao encolhe (60 → 54 milhoes 2050), Sul esvaziando. Brasil: envelhece antes enriquecer (ainda PIB per capita US$ 9 mil, idosos pobres), previdencia deficitaria R$ 400 bilhoes/ano, Reforma 2019 idade minima 65H/62M. Franca: incentivos natalidade funcionaram (fecundidade 1,8, maior Europa), licenca 1 ano, creches subsidiadas.",
+          "dica": "Envelhecimento = queda natalidade + longevidade. Consequencias: previdencia/saude caras, falta trabalhadores. Japao/Italia extremos (29%/23% idosos). Brasil envelhece rapido antes enriquecer. Solucoes: adiar aposentadoria, incentivar filhos, imigracao."
+        }
+      ],
+      "questao": {
+        "enunciado": "O Brasil vive uma fase denominada 'bonus demografico', caracterizada por uma favoravel relacao entre a populacao economicamente ativa (PEA) e os grupos dependentes (criancas e idosos). Essa janela de oportunidade, porem, e temporaria e tende a se fechar nas proximas decadas.\n\nPara aproveitar adequadamente o bonus demografico, um pais deve:",
+        "alternativas": [
+          "Aumentar drasticamente a taxa de natalidade para manter a populacao jovem.",
+          "Investir em educacao e qualificacao profissional da populacao em idade ativa.",
+          "Reduzir a expectativa de vida para diminuir os custos com aposentadorias.",
+          "Impedir a entrada de imigrantes para preservar empregos aos nacionais.",
+          "Antecipar a idade de aposentadoria para liberar vagas no mercado de trabalho."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "O bonus demografico representa uma janela de oportunidade quando a proporcao de pessoas em idade produtiva e maior em relacao aos dependentes. Para aproveit a-lo, e fundamental investir em educacao e qualificacao da PEA, gerando trabalhadores produtivos, aumentando poupanca e investimentos, acelerando desenvolvimento economico. Os Tigres Asiaticos exemplificam o aproveitamento bem-sucedido. Aumentar natalidade (A) vai contra a fase (bonus ocorre justamente quando natalidade cai), reduzir expectativa vida (C) e antiético, impedir imigracao (D) desperdiça forca trabalho, antecipar aposentadoria (E) agrava custos previdenciarios.",
+        "tags": ["bonus-demografico", "transicao-demografica", "desenvolvimento", "pea"]
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Transicao Demografica",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Fases da Transicao Demografica",
+          "conteudo": "Transicao demografica: modelo explica mudancas populacao sociedades pre-industrial → pos-industrial. 5 fases: 1) Pre-transicao (alta natalidade + alta mortalidade = crescimento baixo, agricultura subsistencia, pais pobre), 2) Transicao inicial (mortalidade cai, natalidade alta = crescimento explosivo, melhorias higiene/medicina), 3) Transicao avancada (natalidade cai, mortalidade baixa = crescimento desacelera, urbanizacao, educacao mulher, anticonceptivos), 4) Pos-transicao (baixa natalidade + baixa mortalidade = crescimento zero/negativo, pais desenvolvido envelhecido), 5) Declinio (natalidade <mortalidade = populacao encolhe).",
+          "exemplo": "Fase 1 (pre): Africa Subsaariana (Niger fecundidade 6,8, mortalidade infantil 80/1000), agricultura, sem saude/saneamento. Fase 2 (explosao): India 1950-80 (mortalidade caiu medic ina, natalidade alta, 'bomba populacional'), Mexico, Brasil 1940-70. Fase 3 (desacelera): Brasil atual (fecundidade 1,6, mortalidade 7/1000), China. Fase 4 (estavel): EUA, Franca (fecundidade ~2). Fase 5 (declinio): Japao, Italia, Alemanha (fecundidade 1,3-1,4, mortes >nascimentos, populacao encolhe). Transicao europeia levou 200 anos (1750-1950), paises desenvolvimento 50 anos (1950-2000).",
+          "dica": "Transicao: alta/alta → alta/baixa (explosao) → baixa/baixa (estavel) → declinio. Mortalidade cai primeiro (medicina), depois natalidade (urbano, educacao). Brasil fase 3-4. Africa fase 1-2. Europa/Japao fase 4-5."
+        },
+        {
+          "id": 2,
+          "titulo": "Fatores Queda Natalidade",
+          "conteudo": "Queda natalidade causas: urbanizacao (filhos custam cidade, ajudam campo), educacao feminina (mulheres estudadas tem menos filhos), insercao mulher mercado trabalho (adia maternidade), anticonceptivos (controle reproducao), custo criar filhos (educacao, saude caros), Estado bem-estar (aposentadoria estatal substitui filhos cuidarem idosos), secularizacao (religiao menos influente). Transicao: fecundidade 6-8 filhos/mulher → 1,5-2. Consequencias: envelhecimento, escassez mao-obra. Alguns paises incentivam natalidade (licencas generosas, creches, dinheiro).",
+          "exemplo": "Educacao feminina: Etiópia mulheres sem educacao 5,5 filhos, com superior 2 filhos. Brasil: fecundidade caiu 6,2 (1960) → 1,6 (2023) por urbanizacao (1960 55% rural, hoje 85% urbano), anticonceptivos (pilula 1960s), mulheres trabalham (60% PEA feminina). Custo filhos: China cidade criar filho ate universidade custa US$ 100 mil (10x renda anual), inibe. Anticonceptivos: acesso amplo reduziu fecundidade global 5 → 2,3. Incentivos: Franca licenca maternidade 1 ano, subsidios creche, fecundidade subiu 1,7 → 1,8. Hungria paga €35 mil 4° filho, pouco efeito. Coreia Sul menor fecundidade (0,7), incentivos fracassam.",
+          "dica": "Queda natalidade: urbano (filhos custam) + educacao mulher + trabalho feminino + anticonceptivos + custo filhos. Brasil 6,2 → 1,6 (1960-2023). Incentivos natalidade (licencas, dinheiro) efeito limitado."
+        },
+        {
+          "id": 3,
+          "titulo": "Queda Mortalidade",
+          "conteudo": "Queda mortalidade causas: medicina (antibioticos, vacinas, cirurgias), saneamento (agua tratada, esgoto, coleta lixo), higiene (sabao, pasteurizacao), nutricao (variedade alimentos, refrigeracao), educacao (saude preventiva). Primeira cai mortalidade infantil (vacinas, soro oral, antibioticos), depois geral (expectativa vida aumenta). Paises desenvolvidos: mortalidade caiu 1800-1950 (revolucao sanitaria lenta). Paises desenvolvimento: caiu rapido 1950-2000 (tecnologia importada OMS). Consequencias: explosao populacional (natalidade ainda alta), depois envelhecimento.",
+          "exemplo": "Antibioticos (penicilina 1940s): revolucionaram tratamento infeccoes (pneumonia, tuberculose), mortalidade caiu 50%. Vacinas: sarampo, polio, difteria, coqueluche antes matavam milhoes criancas. Saneamento: cholera, tifo transmitidos agua contaminada, Londres 1850s construiu rede esgoto, mortalidade caiu drasticamente. Brasil: mortalidade infantil 115/1000 (1960) → 12/1000 (2023) por vacinas, SUS (1988), saneamento (70% acesso agua tratada, 55% esgoto). Expectativa vida mundial: 30 anos (1900) → 73 anos (2023). Antibioticos resistentes preocupam (superbactérias, mortalidade pode voltar subir).",
+          "dica": "Queda mortalidade: medicina (antibioticos, vacinas) + saneamento (agua, esgoto) + higiene + nutricao. Mortalidade infantil cai primeiro. Expectativa vida: 30 (1900) → 73 (2023). Brasil 115 → 12/1000 mortalidade infantil."
+        },
+        {
+          "id": 4,
+          "titulo": "Teorias Populacao: Malthus vs Neomalthusianos",
+          "conteudo": "Malthus (1798): populacao cresce progressao geometrica (2, 4, 8...), alimentos progressao aritmetica (2, 4, 6...), resultado catastrofe (fome, guerras, epidemias). Solucao: controle natalidade (abstinencia). Criticas: errou, Revolucao Agricola/Verde aumentou alimentos exponencialmente, problema e distribuicao/desperdicio, nao producao. Neomalthusianos (pos-II Guerra): paises pobres crescimento explosivo impede desenvolvimento (investimentos divididos muitos, nao acumulam). Solucao: controle natalidade (planejamento familiar, esterilizacao). Criticas: culpa pobres pela pobreza, ignora desigualdade/exploracao, India/China cresceram apesar explosao populacional.",
+          "exemplo": "Malthus: previu catastrofe UK fim 1800s, errou completamente (Revolucao Industrial, agricola mecanizada, producao disparou). Revolucao Verde (1960s): sementes hibridas, fertilizantes, irrigacao triplicaram producao graos, India evitou fome prevista Malthus. Neomalthusianos: politicas esterilizacao forcada India 1970s (6 milhoes, escandalo), China politica filho unico (1979-2015, abortos/esterilizacoes forcadas, desequilibrio sexos 120 homens/100 mulheres). Contraargumento: Kerala India alta densidade mas IDH alto (educacao, saude publicas), Cuba bloqueio mas saude/educacao excelentes. Problema nao e quantos, mas como distribuir recursos.",
+          "dica": "Malthus: populacao >alimentos = catastrofe (ERROU, producao aumentou mais). Neomalthusianos: crescimento impede desenvolvimento (culpa pobres). Criticas: problema distribuicao, nao quantidade. Politicas forcadas India/China violaram direitos."
+        },
+        {
+          "id": 5,
+          "titulo": "Teoria Reformista/Marxista",
+          "conteudo": "Teoria reformista/marxista: pobreza causa alto crescimento populacional, nao consequencia. Pobres tem muitos filhos porque: mao-obra (campo), seguranca velhice (sem previdencia), mortalidade infantil alta (compensam), falta educacao/anticonceptivos. Solucao: desenvolvimento socioeconomico (educacao, saude, emprego, distribuicao renda, direitos mulher) naturalmente reduz natalidade. Evidencias: paises desenvolveram (Tigres Asiaticos, Europa) natalidade caiu automaticamente com desenvolvimento. Criticas forcam natalidade (China, India): violam direitos, ineficaz longo prazo, geram desequilibrios (falta mulheres China, envelhecimento precipitado).",
+          "exemplo": "Kerala India: Estado pobre mas investiu educacao/saude universais publicas (alfabetizacao 95%, expectativa vida 75 anos), fecundidade caiu 6 → 1,6 sem coercao, PIB per capita baixo mas IDH alto (desenvolvimento humano). Cuba: bloqueio economico mas educacao/saude gratuitas excelentes, fecundidade 1,6, mortalidade infantil 4/1000 (melhor que EUA 5,4/1000). Costa Rica: investiu saude/educacao 1950s, fecundidade caiu 7 → 1,5, IDH 0,81. Contraexemplo: Arabia Saudita rica (PIB per capita US$ 30 mil) mas fecundidade 2,4 (mulheres sem direitos, educacao feminina limitada). Prova desenvolvimento +direitos mulher = controle natalidade natural.",
+          "dica": "Reformista: pobreza CAUSA alto crescimento (nao consequencia). Desenvolvimento (educacao, saude, direitos mulher) reduz natalidade naturalmente. Kerala, Cuba, Costa Rica exemplos. Forcado (China filho unico) ineficaz longo prazo, viola direitos."
+        }
+      ],
+      "questao": {
+        "enunciado": "Thomas Malthus, em sua obra 'Ensaio sobre o Principio da Populacao' (1798), afirmou que o crescimento populacional ocorria em progressao geometrica enquanto a producao de alimentos crescia em progressao aritmetica, prevendo catastrofes futuras causadas pela falta de alimentos.\n\nA teoria malthusiana nao se confirmou principalmente porque:",
+        "alternativas": [
+          "O crescimento populacional mundial permaneceu estavel desde o seculo XIX.",
+          "As guerras mundiais dizimaram grande parte da populacao, equilibrando a equacao.",
+          "A Revolucao Verde e os avancos tecnologicos agricolas aumentaram exponencialmente a producao de alimentos.",
+          "Os paises pobres adotaram politicas rigorosas de controle de natalidade impedindo a explosao demografica.",
+          "A expectativa de vida diminuiu drasticamente devido a novas doencas, reduzindo a populacao."
+        ],
+        "respostaCorreta": 2,
+        "explicacao": "A previsao catastrofica de Malthus nao se concretizou porque a producao de alimentos cresceu exponencialmente gracas aos avancos tecnologicos: mecanizacao agricola, fertilizantes quimicos, pesticidas, irrigacao, e especialmente a Revolucao Verde (decada de 1960) que introduziu sementes de alto rendimento, triplicando a producao de graos. Hoje o mundo produz alimentos suficientes para mais de 10 bilhoes de pessoas. O problema da fome e de distribuicao e desperdicio, nao de producao insuficiente. As alternativas A, B, D e E nao correspondem a realidade historica.",
+        "tags": ["malthus", "teorias-populacao", "revolucao-verde", "producao-alimentos"]
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Migracoes Humanas",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Tipos e Causas de Migracoes",
+          "conteudo": "Migracao: deslocamento populacional. Tipos: imigracao (entrada pais), emigracao (saida), interna (dentro pais - rural-urbano, inter-regional), externa/internacional (entre paises), temporaria (sazonal colheitas, estudos), permanente (estabelece definitivo), forcada (refugiados, escravos, deportacao), voluntaria (busca oportunidades). Causas: economicas (emprego, renda - maioria), politicas (guerras, perseguicao - refugiados), naturais (secas, enchentes, terremotos), familiares (reunificacao), educacionais. Push (expulsam origem: pobreza, violencia) vs Pull (atraem destino: empregos, seguranca).",
+          "exemplo": "Rural-urbano Brasil: 1960 55% rural → 1980 85% urbano (mecanizacao campo expulsou, industria cidades atraiu). Nordeste-Sudeste: secas NE + industria SP/RJ, 10 milhoes migraram 1950-80 (Gonzagao, Mendes). Internacionais: mexicanos EUA (11 milhoes, busca empregos), sirios Europa (guerra civil, 6 milhoes refugiados), venezu elanos Colombia (crise Maduro, 7 milhoes fugiram), haitianos Brasil (terremoto 2010, pobreza). Temporarios: bolivianos colheita Argentina, nordestinos cana SP. Forcados: escravidao africanos Americas (12 milhoes 1500-1850), sirios refugiados guerra.",
+          "dica": "Migracoes: economicas (emprego, maioria), politicas (refugiados, guerras), naturais (clima), familiares. Push (expulsa: pobreza, guerra) vs Pull (atrai: emprego, seguranca). Brasil: rural-urbano, NE-SE. Mundo: Mexico-EUA, Siria-Europa."
+        },
+        {
+          "id": 2,
+          "titulo": "Migracoes Internas Brasil",
+          "topicos": [
+            {
+              "id": 1,
+              "titulo": "Exodo Rural",
+              "conteudo": "Exodo rural: migracao campo → cidade. Brasil: 1940 70% rural → 2023 15% rural (85% urbano), maior exodo mundo 1950-1980. Causas: mecanizacao agricultura (tratores substituiram bracos, desemprego), concentracao fundiaria (grandes propriedades expulsam pequenos), atracoes urbanas (empregos industria/servicos, saude, educacao, infraestrutura). Consequencias: urbanizacao acelerada desordenada (favelas, infraestrutura insuficiente, desemprego urbano, violencia), esvaziamento rural (falta mao-obra, envelhecimento campo, producao cai), metropolizacao.",
+              "exemplo": "Brasil 1950-80: industria Sudeste (SP, RJ, MG) atraiu 30 milhoes nordestinos/mineiros. SP passou 2 milhoes (1950) → 12 milhoes (1980) → 22 milhoes (2023). Mecanizacao: Parana cafe mecanizado 1970s, 2 milhoes migraram cidades. Favelas: Rocinha RJ, Paraisopolis SP cresceram exodo (sem habitacao, ocuparam morros/periferias). Campo envelhecido: hoje agricultura 15% PEA mas maioria >40 anos, jovens vao cidade. Consequencia: desabastecimento (menos produzem, governo importa), mas agronegocio mecanizado compensa (producao aumentou menos gente).",
+              "dica": "Exodo rural Brasil 1950-80: maquinas campo + industria cidade = 70% rural → 85% urbano. Causas: mecanizacao, concentracao terra, atracao urbana. Consequencias: favelas, infraestrutura insuficiente, campo envelhecido."
+            },
+            {
+              "id": 2,
+              "titulo": "Migracao Regional",
+              "conteudo": "Fluxos migrator ios historicos Brasil: 1) Nordeste → Sudeste (1930-80, industria SP/RJ, seca NE, 'pau-de-arara'), maior fluxo. 2) Sul → Centro-Oeste/Norte (1970s-90s, fronteira agricola, Marcha Oeste Vargas, Transamazonica, soja). 3) Nordeste → Amazonia (1970s, Transamazonica fracassou, maioria voltou). Atual: fluxos invertidos, retorno Nordeste (desindustrializacao SE, investimentos NE), qualidade vida interior. Mobilidade pendular: moram cidade A, trabalham cidade B (integradas metropolitana).",
+              "exemplo": "NE-SE: 10 milhoes migraram 1950-80, 'pau-de-arara' (caminhoes precarios), Gonzagao 'Asa Branca' tematiza. Motivos: seca poligono (1877-79 matou 500 mil), industria SP crescia 10%/ano. Gauchos-MT: 1980s soja MT, sulistas levaram tecnica, hoje MT maior produtor. Transamazonica (1970): Medici 'terra sem homens para homens sem terra', assentou 100 mil NE Amazonia, maioria fracassou (solo pobre, malaria), voltaram ou favelas. Retorno NE: 2010s desindustrializacao SP (fabrics fecharam crise), NE investimentos (Fiat/Jeep PE, Porto Suape, hidreletricas), custo vida menor, qualidade. Pendular: ABC-SP, baixada-RJ.",
+              "dica": "Fluxos historicos: NE→SE (1930-80, industria), Sul→CO/Norte (fronteira agricola, soja). Atual: retorno NE (desindustrializacao SE, investimentos NE). Pendular: moram cidade A, trabalham B."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Migracoes Internacionais",
+          "conteudo": "Migracoes internacionais: 281 milhoes (3,6% mundial). Principais fluxos: Sul-Norte (Mexico-EUA 11 mi, Africa-Europa 3 mi, Asia-EUA/Europa), Sul-Sul crescente (Venezuela-Colombia 2,5 mi, Haiti-Brasil/Chile). Remessas: US$ 630 bilhoes/ano, cruciais economia origem (Haiti 21% PIB, Tajiquistao 27%). Barreiras: muros (EUA-Mexico, Hungria-Servia, Israel-Palestina), leis restritivas (cotas, vistos), travessias mortais (Mediterraneo 20 mil afogados 2014-2023, deserto Arizona). Xenofobia cresce Europa/EUA (extrema-direita). Refugiados: 32 milhoes (guerras), nao migrant es economicos.",
+          "exemplo": "Mexicanos EUA: 11 milhoes (+ 6 milhões indocumentados), atravessam deserto Arizona (5 mil morreram 20 anos), Trump construiu muro, separou familias. Remessas US$ 60 bilhões/ano Mexico (2% PIB). Sirios Europa: 2015-16 1 milhao atravessaram Mediterraneo (barcos precarios, 4 mil afogados), foto Alan Kurdi (crianca afogada) chocou, mas Europa fechou (acordo Turquia). Haitianos Brasil: terremoto 2010, 100 mil entraram Acre, trabalham construcao, xenofobia (Roraima 2018 ataques). Remessas Haiti: US$ 4 bilhões/ano, 21% PIB (familias dependem). Muros: 77 muros fronteiras mundo (Berlin caiu 1989, hoje proliferam).",
+          "dica": "Migracoes internacionais: 281 milhoes, Sul-Norte + Sul-Sul. Remessas US$ 630 bi/ano cruciais. Barreiras: muros (EUA-Mexico), leis, travessias mortais (Mediterraneo). Refugiados (32 mi guerras) ≠ migrantes economicos."
+        },
+        {
+          "id": 4,
+          "titulo": "Imigracao no Brasil",
+          "conteudo": "Brasil historico imigracao: 1) Europeus (1850-1930, 5 milhoes - italianos 1,5 mi, portugueses 1,5 mi, espanhois 700 mil, alemaes 250 mil, eslavos), substituir escravos, colonizar Sul, cafe SP. 2) Japoneses (250 mil 1908-60, cafe, horticultura, maior colonia fora Japao). 3) Arabes (sirios-libaneses 100 mil 1880-1930, comercio). Atual: latino-americanos (bolivianos 350 mil confeccoes, haitianos 100 mil construcao/servicos, venezuelanos 400 mil), africanos (angolanos, congoleses), refugiados (sirios 3 mil). Contribuicao cultural (culinaria, festas, sotaques), economica (empreendedorismo, tributos), demografica (rejuvenescem).",
+          "exemplo": "Italianos: chegaram 1880-1930 cafe SP, colonias agrícolas (Caxias Sul RS, vinho), Sao Paulo bairros (Mooca, Bras, Bexiga), influenciaram culinaria (pizza, macarrao), vocabulario ('tchau', 'nona'). Japoneses: Liberdade SP, Registro vale Ribeira (banana), introduziram hortifrutis (pepino japones, tangerina), dekasseguis (voltaram Japao 1980s-90s crise Brasil). Arabes: 25 de Marco SP comercio, culinaria (quibe, esfiha). Haitianos: 2010-16, 100 mil Acre, trabalham construcao (Copa/Olimpiadas), xenofobia Roraima. Venezuelanos: 2017-23, 400 mil Roraima (Boa Vista infraestrutura colapsou), Operacao Acolhida (ACNUR + governo) interiorizou 100 mil.",
+          "dica": "Brasil historico: europeus (1850-1930, cafe, colonizar Sul), japoneses (1908-60), arabes (comercio). Atual: latinos (bolivianos, haitianos, venezuelanos), africanos. Contribuicao: cultural (culinaria), economica (emprego), demografica (rejuvenescem)."
+        },
+        {
+          "id": 5,
+          "titulo": "Fuga de Cerebros",
+          "conteudo": "Fuga cerebros (brain drain): emigracao qualificados (medicos, engenheiros, cientistas, professores) paises pobres → ricos. Causas: salarios baixos origem (medico Cuba US$ 30/mes, EUA US$ 15 mil/mes), falta infraestrutura pesquisa, instabilidade politica, violencia. Consequencias origem: perde investimento educacao (Estado pagou formar, outro pais aproveita), falta profissionais (saude, educacao colapsam), desenvolvimento estagna. Destino: supre escassez, inova (Silicon Valley 50% fundadores imigrantes). Alguns paises: India 3 milhoes, Mexico 1 milhao, Filipinas 2 milhoes. Ganho cerebros (brain gain): retorno qualificados, transferencia conhecimento.",
+          "exemplo": "Medicos cubanos: Cuba treina gratuito mas paga US$ 30/mes, 50 mil trabalham exterior (Brasil Mais Medicos 2013-18, 8 mil), governo Cuba ficava 70% salario (US$ 3 mil, pagava US$ 1 mil medico). EUA, Espanha atraem milhares. Indios Silicon Valley: Sundar Pichai (Google CEO), Satya Nadella (Microsoft CEO), 1/3 empresas fundadas imigrantes (Uber, Tesla), India perde mas diaspora envia remessas US$ 87 bilhões/ano. Africa medicos: 23 mil medicos africanos trabalham paises ricos (OMS), Africa 2 medicos/10 mil hab (OMS recomenda 25), saude colapsa. Ganho: China incentivou retorno cientistas, Coreia Sul idem, transferiram conhecimento (universidades, empresas).",
+          "dica": "Fuga cerebros = qualificados migram paises pobres → ricos (salarios, infraestrutura). Origem perde investimento, falta profissionais. Destino ganha inovacao. India, Africa, Mexico exemplos. Ganho cerebros: retorno transfere conhecimento."
+        }
+      ],
+      "questao": {
+        "enunciado": "Entre as decadas de 1950 e 1980, o Brasil vivenciou intenso processo de exodo rural, com milhoes de pessoas deixando o campo em direcao as cidades, especialmente rumo aos grandes centros urbanos do Sudeste. Esse movimento populacional teve profundos impactos na configuracao demografica e espacial brasileira.\n\nSao fatores que explicam o intenso exodo rural brasileiro nesse periodo:\n\nI. A mecanizacao da agricultura que reduziu a necessidade de mao de obra no campo.\nII. A concentracao fundiaria que dificultava o acesso a terra para pequenos produtores.\nIII. A expansao industrial nas cidades que gerava oportunidades de emprego.\nIV. Politicas governamentais de incentivo ao retorno ao campo.\n\nEstao corretas:",
+        "alternativas": [
+          "Apenas I e II.",
+          "Apenas I, II e III.",
+          "Apenas II e III.",
+          "Apenas I, III e IV.",
+          "I, II, III e IV."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "As afirmativas I, II e III estao corretas: a mecanizacao agricola (tratores, colheitadeiras) reduziu drasticamente a necessidade de trabalhadores rurais (I); a estrutura fundiaria concentrada dificultava que pequenos agricultores tivessem terra propria (II); a industrializacao acelerada, especialmente em Sao Paulo e Rio de Janeiro, gerava empregos e atraia migrantes (III). A afirmativa IV esta INCORRETA pois nao houve politicas significativas de incentivo ao retorno ao campo nesse periodo - pelo contrario, a politica desenvolvimentista enfatizava a industrializacao urbana.",
+        "tags": ["exodo-rural", "urbanizacao", "migracoes-internas", "industrializacao"]
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Urbanizacao Mundial",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Processo de Urbanizacao",
+          "conteudo": "Urbanizacao: aumento proporcao populacao urbana. Taxa urbanizacao: % urbano. Mundial: 56% urbano (2023), sera 68% (2050). Paises desenvolvidos: urbanizaram seculo XIX-XX (Revolucao Industrial lenta 200 anos), hoje 80% urbanos. Subdesenvolvidos: urbanizaram pos-1950 rapido 50 anos (exodo rural acelerado), hoje 50% urbanos mas crescimento rapido. Causas: industrializacao (empregos), mecanizacao campo (expulsa), servicos (saude, educacao), infraestrutura. Consequencias: metropolizacao, conurbacao, problemas urbanos (moradia, transporte, violencia, poluicao).",
+          "exemplo": "Inglaterra: 1801 20% urbano → 1900 80% (Revolucao Industrial atraiu, 100 anos). Brasil: 1940 30% → 2023 85% (em 80 anos, rapidissimo). China: 1980 20% → 2023 65% (maior migracao historia, 500 milhoes campo-cidade). Africa: 43% urbano mas cresce rapido (sera 60% em 2050). Cidades-globo: Tokyo 37 milhoes, Delhi 32 mi, Shanghai 28 mi, Sao Paulo 22 mi, Mexico 22 mi. Megacidades (>10 mi): 33 mundial, maioria Asia/America Latina (urbanizacao recente desordenada).",
+          "dica": "Urbanizacao: % urbano aumenta. Mundial 56%, sera 68% (2050). Desenvolvidos urbanizaram lento seculo XIX-XX (80% urbanos). Subdesenvolvidos rapido pos-1950 (50% urbanos). Causas: industria, exodo rural. Megacidades >10 mi."
+        },
+        {
+          "id": 2,
+          "titulo": "Metropolizacao e Conurbacao",
+          "conteudo": "Metropole: cidade principal regiao, concentra comercio/servicos/industria, atrai fluxos. Regiao Metropolitana (RM): metropole + cidades vizinhas integradas (conurbacao fisica, economica, servicos). Conurbacao: cidades crescem, limites fisicos unem, formam mancha urbana continua. Megalopole: conurbacao varias metropoles (Bos-Wash EUA 500 km Boston-Washington). Brasil: 74 RMs, maiores SP (22 mi, 39 municipios), Rio (13 mi, 21 municipios), BH (6 mi, 34 municipios). Desafios: gestao integrada (transporte, saneamento, seguranca), desigualdades centro-periferia.",
+          "exemplo": "RM Sao Paulo: 22 milhoes, 39 municipios conurbados (SP-Guarulhos-SBC-Osasco-Diadema...), mancha urbana continua 3.600 km², limites invisiveis. Problemas: transporte (4 milhoes deslocamentos pendular/dia, 2h trânsito), saneamento (20% esgoto nao tratado), violencia (fronteiras municipios dificultam policia). Megalopole Rio-SP: 500 km Via Dutra, tendencia conurbar (Baixada, Vale Paraiba). Bos-Wash EUA: Boston-NY-Filadelfia-Baltimore-Washington, 500 km conurbados, 50 milhoes. Rur-urbana: Sao Paulo mancha cresce Vale Paraiba, Campinas, Sorocaba (macrometropole 30 milhões).",
+          "dica": "Metropole = cidade principal. RM = metropole + cidades integradas (conurbacao). Conurbacao = limites fisicos unem. Megalopole = varias metropoles (Bos-Wash). Brasil: 74 RMs, SP maior (22 mi, 39 municipios)."
+        },
+        {
+          "id": 3,
+          "titulo": "Hierarquia Urbana e Cidades Globais",
+          "conteudo": "Hierarquia urbana: rede cidades diferentes tamanhos/funcoes. Brasil (IBGE): Metropole (SP, Rio, Brasilia), Capital Regional (Curitiba, Porto Alegre, Recife, Fortaleza), Centro Sub-Regional, Centro Zona, Centro Local. Funcoes: comercio, servicos, industria, decisao politica. Cidades Globais (GaWC): comandam economia mundial, sedes transnacionais, bolsas valores, aeroportos hub, influencia planetaria. Alfa++: Londres, Nova York. Alfa+: Paris, Tokyo, Hong Kong, Singapura. Alfa: Sao Paulo (unica America Latina), Chicago, Dubai. Beta+: Rio, Brasilia.",
+          "exemplo": "Sao Paulo: Alfa (GaWC), concentra sedes transnacionais Brasil (60% Fortune 500), Bovespa (bolsa valores), Guarulhos maior aeroporto, servicos avancados (consultorias, jurídico, financeiro), influencia America Sul. Londres/NY: Alfa++, comandam financas globais (City Londres, Wall Street), sedes 100 maiores empresas, decisoes afetam mundo. Singapura: Alfa+, hub Asia, porto maior mundo, finanças (3° centro), aeroporto Changi melhor mundo. Hierarquia Brasil: SP (metropole nacional) > Rio/Brasilia (metropoles nacionais) > Curitiba/POA/Recife (capitais regionais A) > Campinas/Santos (regionais B) > Ribeirao Preto (sub-regional) > Franca (zona) > Barretos (local).",
+          "dica": "Hierarquia: metropole > regional > sub-regional > zona > local (IBGE). Cidades Globais: comandam economia mundial, transnacionais, bolsas. Alfa++: Londres, NY. Alfa: SP (unica America Latina). Hierarquia Brasil: SP > Rio/Brasilia > Curitiba/POA."
+        },
+        {
+          "id": 4,
+          "titulo": "Gentrificacao e Segregacao",
+          "conteudo": "Gentrificacao: processo renovacao urbana areas degradadas centro, atrai classes medias/altas, expulsa populacao pobre original (aluguel/imposto sobem). Causas: especulacao imobiliaria, politicas revitalizacao, servicos culturais (bares, galerias). Consequencias: perde diversidade, pobres periferizam, patrimonio destruido. Segregacao socioespacial: separacao residencial classes sociais, ricos areas valorizadas (infraestrutura, seguranca, verde), pobres periferias/favelas (precarias). Auto-segregacao ricos (condominios fechados, muros) vs segregacao imposta pobres (falta opcao). Mobilidade urbana desigual: ricos carro rapido, pobres transporte publico precario.",
+          "exemplo": "Gentrificacao NY: Brooklin areas degradadas viraram hipster (cafes, galerias), aluguel disparou (US$ 800 → US$ 3 mil), negros/latinos expulsos, patrimonio operario destruido. SP: Bairro Augusta, Pinheiros gentrificaram, artistas pioneiros expulsos. Rio: Porto Maravilha Olimpiada 2016, removeu 8 mil familias favelas (Vila Autodromo), construiu museus/condominios luxo. Segregacao SP: Morumbi/Jardins (IDH 0,95, renda R$ 15 mil) ao lado Paraisopolis favela (IDH 0,65, renda R$ 800), muro separa literalmente. Condominios fechados: Alphaville SP (muro, seguranca privada, 60 mil), afasta pobres. Mobilidade: Morumbi 10 min carro centro, periferia 3h onibus.",
+          "dica": "Gentrificacao = renovacao expulsa pobres (aluguel sobe). NY Brooklin, SP Augusta exemplos. Segregacao = ricos areas nobres, pobres periferias/favelas. Auto-segregacao ricos (condominios muros). Mobilidade desigual (carro vs onibus precario)."
+        },
+        {
+          "id": 5,
+          "titulo": "Cidades Inteligentes e Sustentaveis",
+          "conteudo": "Cidades inteligentes (smart cities): usam tecnologia (sensores, dados, IA) otimizar servicos, sustentabilidade, qualidade vida. Aplicacoes: transito inteligente (semaforos adaptativos, apps mobilidade), energia (redes inteligentes, solar predios), lixo (coleta otimizada sensores), seguranca (cameras IA), governo digital (servicos online). Sustentaveis: priorizam transporte publico/bicicleta, areas verdes, eficiencia energetica, reciclagem, construcoes sustentaveis. Exemplos: Copenhague (50% bicicleta, neutralidade carbono 2025), Singapura (verde vertical, reuso agua), Curitiba (BRT ônibus, parques).",
+          "exemplo": "Copenhague: 50% deslocamentos bicicleta (ciclofaixas 400 km, pontes exclusivas), metro automatico, eolica offshore 100% eletricidade, meta neutralidade carbono 2025. Singapura: jardins verticais (supertrees), reuso 40% agua (NEWater, esgoto tratado vira potavel), metro cobre 80%, carros carissimos (controle congestionamento). Curitiba: BRT 1974 (primeiro mundo, onibus expresso corredores, copiado globalmente), parques 50 m²/hab, reciclagem 70%, referencia planejamento. Barcelona: sensores estacionamento (app mostra vaga), iluminacao LED inteligente (economiza 30%), wifi publico. Problemas: vigilancia (cameras IA rastreiam, privacidade), exclusao digital (pobres sem smartphone), gentrificacao (tech workers encarecem).",
+          "dica": "Smart cities = tecnologia otimiza servicos (transito, energia, lixo, seguranca). Sustentaveis = transporte publico/bike, verde, eficiencia. Copenhague 50% bike, Singapura verde vertical, Curitiba BRT. Problemas: vigilancia, exclusao digital."
+        }
+      ],
+      "questao": {
+        "enunciado": "A gentrificacao e um processo urbano que tem se intensificado em diversas cidades brasileiras e mundiais, caracterizado pela renovacao de areas urbanas degradadas que acabam atraindo populacoes de maior poder aquisitivo.\n\nSao consequencias tipicas do processo de gentrificacao:\n\nI. A expulsao da populacao de baixa renda devido ao aumento dos custos de vida na area.\nII. A preservacao integral do patrimonio cultural e arquitetonico das areas renovadas.\nIII. A valorizacao imobiliaria e o aumento dos alugueis e impostos.\nIV. A homogeneizacao social e cultural das areas afetadas.\n\nEstao corretas:",
+        "alternativas": [
+          "Apenas I e II.",
+          "Apenas I, III e IV.",
+          "Apenas II e III.",
+          "Apenas I, II e III.",
+          "I, II, III e IV."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "As afirmativas I, III e IV estao corretas: a gentrificacao expulsa moradores originais de baixa renda pois alugueis e impostos sobem tornando a area inacessivel (I); ocorre forte valorizacao imobiliaria com aumento de precos (III); a area tende a se homogeneizar social e culturalmente com a chegada de classes medias/altas e saida da diversidade original (IV). A afirmativa II esta INCORRETA porque frequentemente o patrimonio cultural e arquitetonico popular e destruido ou descaracterizado no processo de renovacao, apesar de algumas edificacoes historicas poderem ser preservadas.",
+        "tags": ["gentrificacao", "urbanizacao", "segregacao", "especulacao-imobiliaria"]
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Problemas Urbanos",
+      "topicos": [
+        {
+          "id": 1,
+          "titulo": "Deficit Habitacional e Favelas",
+          "conteudo": "Deficit habitacional: familias sem moradia adequada (sem casa, coabitacao forcada, adensamento excessivo, precariedade). Brasil: 6 milhoes familias (FJP 2022), maior parte baixa renda, concentrado metropoles. Favelas/aglomerados subnormais: ocupacoes irregulares areas publicas/privadas, moradia precaria (barraco, madeira, risco), sem infraestrutura adequada (agua, esgoto, coleta lixo, energia irregular, ruas estreitas). Causas: custo moradia (aluguel 30-50% renda), salarios baixos, falta politica habitacional, especulacao imobiliaria. Consequencias: insalubridade, doencas, violencia, estigma.",
+          "exemplo": "Brasil favelas: 13 milhoes pessoas (6,5% populacao, IBGE 2020), maior Rocinha RJ (70 mil), Paraisopolis SP (43 mil), Sol Nascente Brasilia (80 mil). Caracteristicas: autoconstrucao (familia constroi), densidade alta (casas coladas), ruas vielas estreitas (carro nao passa), esgoto ceu aberto, energia 'gato' (furto), agua irregular, lixo acumulado. Rio favelas: 22% populacao (1,4 mi), morros (Rocinha, Complexo Alemao, Cidade Deus), milicia/trafico controlam. Programas: Minha Casa Minha Vida construiu 6 milhoes unidades mas qualidade/localizacao precarias. Remocoes Olimpiada RJ: 22 mil familias removidas forcadamente.",
+          "dica": "Deficit habitacional Brasil: 6 milhoes familias sem moradia adequada. Favelas: 13 milhoes (6,5%), ocupacao irregular, precaria, sem infraestrutura. Causas: aluguel caro, salario baixo, especulacao. Consequencias: insalubridade, violencia, estigma."
+        },
+        {
+          "id": 2,
+          "titulo": "Mobilidade e Transito",
+          "conteudo": "Mobilidade urbana: capacidade deslocamento pessoas/mercadorias. Problemas: congestionamentos (perda tempo/producao, poluicao, estresse), transporte publico precario (superlotacao, atrasos, tarifa cara), falta integracao modal (metro + onibus + trem), prioridade carro (via expressa, estacionamento), ciclovia insuficiente, calçadas precarias (acessibilidade). Brasil: tempo deslocamento casa-trabalho 1h30 media metropoles (SP 2h40 periferia). Causas: expansao horizontal urbana (periferias longe centro), falta investimento transporte publico (metro caro construir), lobby automotivo (incentivos carro). Solucoes: transporte massa (metro, BRT), integracao tarifaria, ciclovias, pedagio urbano.",
+          "exemplo": "SP congestionamento: 185 km filas pico (recorde 2014 344 km), brasileiro perde 45 dias/ano transito. Custo: R$ 200 bilhões/ano (combustivel, perda producao, poluicao). Metro SP: 100 km, insuficiente (precisa 400 km), Linha 4 custou R$ 8 bilhões. Onibus: superlotado, 1 milhao passageiros, tarifa R$ 5 (30% renda pobre). Curitiba BRT: referencia mundial, corredores exclusivos, onibus biartic ulado, integracao, tarifa social. Bogota Transmilenio: BRT 12 milhoes passageiros/dia. Copenhague: 50% bicicleta, ciclofaixas, pontes. Londres: pedagio urbano centro £15/dia (reduziu congestionamento 30%).",
+          "dica": "Mobilidade problemas: congestionamento (SP 185 km filas), transporte publico precario (superlotado, caro), prioridade carro. Tempo deslocamento SP 2h40 periferia. Solucoes: metro, BRT (Curitiba modelo), ciclovias, pedagio urbano."
+        },
+        {
+          "id": 3,
+          "titulo": "Violencia Urbana",
+          "conteudo": "Violencia urbana: homicidios, roubos, trafico drogas, milicia, criminalidade concentrada periferias/favelas (Estado ausente). Brasil: 45 mil homicidios/ano (22/100 mil hab), 5ª taxa mundial. Vitimas: jovens negros (77% homicidios), periferias. Causas: desigualdade, desemprego juventude, falta educacao/lazer, armas facil (200 mil apreensoes/ano), drogas (trafico domina favelas), policia violenta/corrupta (6 mil mortos policia/ano, maioria negros favelas). Consequencias: medo, segregacao (muros, condominios fechados), custos (seguranca privada R$ 100 bilhões/ano). Solucoes: educacao, emprego, policia comunitaria, desarmamento.",
+          "exemplo": "Brasil 45 mil homicidios: 22/100 mil (OMS epidemia >10). Jovens negros: 23 mil mortos/ano (77% total), periferia. Nordeste: AL maior taxa 55/100 mil, CE 46, RN 44 (faccoes disputam trafico). SP caiu: 42 (1990s) → 6 (2023) por PCC (crime organizado monopolio pacifica), investimento educacao. Rio violencia: 6 mil homicidios/ano (29/100 mil), trafico vs milicia vs policia. Chacina: Jacarezinho 2021 (28 mortos operacao policial, maior historia). Policia mata: 6 mil/ano, 99% casos arquivados, 78% vitimas negras. Armas: 200 mil apreendidas/ano, maioria EUA contraband o. Desarmamento (2003): homicidios cairam 8% mas Bolsonaro facilitou porte (2019).",
+          "dica": "Violencia Brasil: 45 mil homicidios/ano (22/100 mil, 5ª mundial). Vitimas: jovens negros periferias (77%). Causas: desigualdade, drogas, armas, policia violenta. Nordeste pior (AL 55/100 mil). Policia mata 6 mil/ano (78% negros)."
+        },
+        {
+          "id": 4,
+          "titulo": "Saneamento Basico",
+          "conteudo": "Saneamento basico: agua potavel, coleta/tratamento esgoto, coleta lixo, drenagem pluvial. Brasil: 84% acesso agua potavel, 56% esgoto coletado, 51% tratado (SNIS 2023). Desigualdade regional: Sudeste 90% esgoto tratado, Norte 15%. Consequencias falta: doencas (diarreia, colera, leptospirose, dengue), mortalidade infantil (saneamento reduz 50%), poluicao rios (70% esgoto lancado bruto), custos saude (R$ 3,6 bilhões/ano). Marco Saneamento (2020): meta universalizacao 2033 (99% agua, 90% esgoto), abre privatizacao (controversa). Custo universalizar: R$ 750 bilhões (20 anos).",
+          "exemplo": "Norte Brasil: Manaus 13% esgoto tratado, Belem 10%, Porto Velho 5% (rios poluidos, diarreias, mortalidade infantil 20/1000 vs SP 10/1000). Sudeste: SP 92% agua, 89% esgoto, mas rios Tiete/Pinheiros poluidos (espuma toxica). Rio Guanabara: 60% esgoto bruto, Olimpiada prometeu despoluir (fracassou), atletas adoeceram. Sabesp SP: privatizada 2024 (R$ 14,7 bi), controversia (tarifa sobe?). Doencas saneamento: 270 mil internacoes/ano diarreia/colera/leptospirose, R$ 100 milhões SUS. Cada R$ 1 saneamento economiza R$ 4 saude (OMS). Marco 2020: critica libera privatizacao sem garantia acesso pobres/rurais (lucro nao atende).",
+          "dica": "Saneamento Brasil: 84% agua, 56% esgoto coletado, 51% tratado. Norte/Nordeste pior (<20% tratado), Sudeste melhor (90%). Falta causa doencas, poluicao, mortalidade infantil. Marco 2020: privatiza, meta 2033 (controverso)."
+        },
+        {
+          "id": 5,
+          "titulo": "Enchentes e Deslizamentos",
+          "conteudo": "Enchentes urbanas: chuvas intensas + impermeabilizacao solo (asfalto, concreto impede infiltracao, escoamento superficial dispara) + drenagem insuficiente + ocupacao areas risco (varzeas rios, vales). Deslizamentos: chuvas saturam encostas + desmatamento (raizes seguravam) + ocupacao irregular morros. Consequencias: mortes, desabrigados, doencas (leptospirose agua contaminada), prejuizos economicos. Agravamento: mudancas climaticas (chuvas extremas frequentes), urbanizacao desordenada. Solucoes: drenagem, parques lineares (absorvem agua), desocupar areas risco, reflorestamento encostas, obras contencao.",
+          "exemplo": "SP enchentes: 2009-11 verao chuvas mataram 100, desabrigaram 300 mil. Causas: impermeabilizacao 70% solo, drenagem insuficiente (bueiros entupidos), canalizacao rios (Tiete/Pinheiros viraram canais concreto, fluxo rapido alaga jusante), ocupacao varzeas (favelas marginais). Rio deslizamentos: Regiao Serrana 2011 (918 mortos, maior desastre Brasil), Petropolis 2022 (230 mortos). Causas: chuva 280 mm/24h (recorde) + desmatamento morros + ocupacao encostas favelas. Obras: BH dragagem, SP piscinoes (reservatorios acumulam chuva), Curitiba parques lineares Iguacu (absorvem agua, lazer). Mudan cas clima: chuvas 100 mm/h antes raras, hoje frequentes (SP 10 vezes 2010-20 vs 1950-60).",
+          "dica": "Enchentes = chuvas + impermeabilizacao solo (asfalto) + drenagem insuficiente + ocupacao varzeas. Deslizamentos = chuvas + desmatamento + ocupacao morros. SP, Rio exemplos. Mudancas clima agravam (chuvas extremas). Solucoes: drenagem, parques, desocupar risco."
+        }
+      ],
+      "questao": {
+        "enunciado": "As grandes cidades brasileiras enfrentam serios problemas de enchentes urbanas, especialmente durante o periodo de chuvas intensas. Esse fenomeno, que causa perdas economicas e de vidas humanas, esta relacionado tanto a fatores naturais quanto a intervencoes humanas no espaco urbano.\n\nSao fatores que contribuem para o agravamento das enchentes nas cidades brasileiras:\n\nI. A impermeabilizacao do solo urbano pelo asfalto e concreto, que reduz a infiltracao da agua.\nII. A canalizacao e retificacao de rios, que acelera o escoamento em direcao as areas baixas.\nIII. A ocupacao irregular de varzeas e areas naturalmente inundaveis.\nIV. O reflorestamento massivo de areas urbanas que saturou o solo.\n\nEstao corretas:",
+        "alternativas": [
+          "Apenas I e II.",
+          "Apenas I, II e III.",
+          "Apenas II e III.",
+          "Apenas I, III e IV.",
+          "I, II, III e IV."
+        ],
+        "respostaCorreta": 1,
+        "explicacao": "As afirmativas I, II e III estao corretas: a impermeabilizacao do solo impede que a agua infiltre, concentrando o escoamento superficial (I); a canalizacao de rios em canais de concreto acelera o fluxo mas transfere o problema para areas a jusante (II); a ocupacao de varzeas e planícies de inundacao remove areas naturais de amortecimento das cheias (III). A afirmativa IV esta INCORRETA pois nao houve reflorestamento massivo em areas urbanas brasileiras - pelo contrario, a urbanizacao geralmente remove vegetacao, agravando o problema.",
+        "tags": ["enchentes", "problemas-urbanos", "impermeabilizacao", "ocupacao-irregular"]
+      }
+    }
+  ]
+}

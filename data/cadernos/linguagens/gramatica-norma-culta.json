@@ -8,7 +8,7 @@
   "icone": "📝",
   "cor": "from-blue-500 to-indigo-500",
   "tempoEstimado": "5h",
-  "fpRecompensa": 350,
+  "fpRecompensa": 0,
   "tags": ["gramatica", "norma-culta", "concordancia", "regencia", "enem"],
   "modulos": [
     {

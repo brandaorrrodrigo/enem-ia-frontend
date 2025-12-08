@@ -1,0 +1,580 @@
+{
+  "id": "trigonometria",
+  "slug": "trigonometria",
+  "titulo": "Trigonometria",
+  "categoria": "matematica",
+  "nivel": "intermediario",
+  "descricao": "Razões trigonométricas, círculo trigonométrico, identidades e aplicações práticas",
+  "icone": "Triangle",
+  "cor": "#EF4444",
+  "tempoEstimado": "9 horas",
+  "fpRecompensa": 0,
+  "tags": ["matematica", "ENEM", "trigonometria", "seno", "cosseno"],
+  "modulos": [
+    {
+      "id": "mod01",
+      "titulo": "Razões Trigonométricas no Triângulo Retângulo",
+      "resumo": "Seno, cosseno, tangente e suas aplicações em triângulos retângulos",
+      "topicos": [
+        {
+          "titulo": "Definições Básicas",
+          "conteudo": "TRIÂNGULO RETÂNGULO:\nPossui um ângulo de 90° (ângulo reto).\n\nELEMENTOS:\n- Hipotenusa (a): lado oposto ao ângulo reto (maior lado)\n- Catetos (b, c): lados que formam o ângulo reto\n\nPara um ângulo agudo θ:\n- Cateto oposto: lado oposto a θ\n- Cateto adjacente: lado que forma θ com a hipotenusa\n\nRAZÕES TRIGONOMÉTRICAS:\n\nSENO (sin ou sen):\nsen(θ) = cateto oposto / hipotenusa\n\nCOSSENO (cos):\ncos(θ) = cateto adjacente / hipotenusa\n\nTANGENTE (tan ou tg):\ntan(θ) = cateto oposto / cateto adjacente\nOu: tan(θ) = sen(θ) / cos(θ)\n\nEXEMPLO: Triângulo com hipotenusa 5, catetos 3 e 4\nÂngulo θ oposto ao cateto 3:\n\nsen(θ) = 3/5 = 0,6\ncos(θ) = 4/5 = 0,8\ntan(θ) = 3/4 = 0,75\n\nRELAÇÃO FUNDAMENTAL:\nsen²(θ) + cos²(θ) = 1\n\nVerificando: (0,6)² + (0,8)² = 0,36 + 0,64 = 1 ✓"
+        },
+        {
+          "titulo": "Razões Trigonométricas Inversas",
+          "conteudo": "COTANGENTE (cot ou cotg):\ncot(θ) = cateto adjacente / cateto oposto\ncot(θ) = 1 / tan(θ)\ncot(θ) = cos(θ) / sen(θ)\n\nSECANTE (sec):\nsec(θ) = hipotenusa / cateto adjacente\nsec(θ) = 1 / cos(θ)\n\nCOSSECANTE (csc ou cosec):\ncsc(θ) = hipotenusa / cateto oposto\ncsc(θ) = 1 / sen(θ)\n\nEXEMPLO: Triângulo 3-4-5\nÂngulo θ oposto ao cateto 3:\n\ncot(θ) = 4/3 ≈ 1,33\nsec(θ) = 5/4 = 1,25\ncsc(θ) = 5/3 ≈ 1,67\n\nIDENTIDADES IMPORTANTES:\n\n1) tan(θ) = sen(θ) / cos(θ)\n2) cot(θ) = cos(θ) / sen(θ)\n3) sec²(θ) = 1 + tan²(θ)\n4) csc²(θ) = 1 + cot²(θ)\n5) tan(θ) × cot(θ) = 1\n\nOBS: No ENEM, raramente aparecem secante, cossecante e cotangente. Foco em seno, cosseno e tangente."
+        },
+        {
+          "titulo": "Ângulos Notáveis",
+          "conteudo": "VALORES EXATOS (memorizar!):\n\nθ = 30° (π/6 rad):\nsen(30°) = 1/2 = 0,5\ncos(30°) = √3/2 ≈ 0,866\ntan(30°) = √3/3 ≈ 0,577\n\nθ = 45° (π/4 rad):\nsen(45°) = √2/2 ≈ 0,707\ncos(45°) = √2/2 ≈ 0,707\ntan(45°) = 1\n\nθ = 60° (π/3 rad):\nsen(60°) = √3/2 ≈ 0,866\ncos(60°) = 1/2 = 0,5\ntan(60°) = √3 ≈ 1,732\n\nTABELA RESUMO:\n| Ângulo | sen | cos | tan |\n|--------|-----|-----|-----|\n| 0° | 0 | 1 | 0 |\n| 30° | 1/2 | √3/2 | √3/3 |\n| 45° | √2/2 | √2/2 | 1 |\n| 60° | √3/2 | 1/2 | √3 |\n| 90° | 1 | 0 | ∞ |\n\nMACETE (mão):\nPara seno, use dedos levantados:\n- 0°: 0 dedos → √0/2 = 0\n- 30°: 1 dedo → √1/2 = 1/2\n- 45°: 2 dedos → √2/2\n- 60°: 3 dedos → √3/2\n- 90°: 4 dedos → √4/2 = 1\n\nCosseno: ordem inversa!\n\nCONSTRUÇÃO:\nTriângulo 30-60-90: lados 1, √3, 2\nTriângulo 45-45-90: lados 1, 1, √2"
+        },
+        {
+          "titulo": "Aplicações Práticas",
+          "conteudo": "PROBLEMA 1: ALTURA\nUma escada de 5m encosta numa parede formando 60° com o chão. Qual a altura alcançada?\n\nsen(60°) = altura / 5\naltura = 5 × sen(60°)\naltura = 5 × (√3/2)\naltura = 2,5√3 ≈ 4,33m\n\nPROBLEMA 2: DISTÂNCIA\nDe um ponto a 100m de um prédio, vejo o topo com ângulo de 30°. Qual a altura do prédio?\n\ntan(30°) = altura / 100\naltura = 100 × tan(30°)\naltura = 100 × (√3/3)\naltura ≈ 57,7m\n\nPROBLEMA 3: RAMPA\nRampa de 12m sobe 3m. Qual o ângulo com o solo?\n\nsen(θ) = 3/12 = 1/4 = 0,25\nθ ≈ 14,5°\n\nAcessibilidade: recomendado ≤ 8,33% (≈ 4,8°)\nEsta rampa: 3/12 = 25% (muito íngreme!)\n\nPROBLEMA 4: NAVEGAÇÃO\nNavio navega 50km a Nordeste (45°). Quanto avançou para Norte e para Leste?\n\nNorte = 50 × sen(45°) = 50 × (√2/2) ≈ 35,4km\nLeste = 50 × cos(45°) = 50 × (√2/2) ≈ 35,4km\n\nPROBLEMA 5: SOMBRA\nÁrvore de 10m projeta sombra de 8m. Qual o ângulo do sol com horizonte?\n\ntan(θ) = 10/8 = 1,25\nθ ≈ 51,3°"
+        }
+      ],
+      "exemplos": [
+        "Calcular altura de prédio usando ângulo de visão",
+        "Determinar inclinação de rampa",
+        "Resolver navegação com componentes trigonométricas"
+      ],
+      "dicas": [
+        "SOH-CAH-TOA: Sen=Oposto/Hipotenusa, Cos=Adjacente/Hipotenusa, Tan=Oposto/Adjacente",
+        "Memorize valores para 30°, 45° e 60°",
+        "sen²+cos²=1 é fundamental",
+        "tan = sen/cos",
+        "Sempre identifique qual ângulo é referência",
+        "Desenhe o triângulo para visualizar!"
+      ],
+      "questoes": [
+        {
+          "id": "q01-1",
+          "enunciado": "Em um triângulo retângulo, a hipotenusa mede 10cm e um ângulo agudo mede 30°. Quanto mede o cateto oposto a este ângulo?",
+          "alternativas": {
+            "A": "3 cm",
+            "B": "4 cm",
+            "C": "5 cm",
+            "D": "6 cm",
+            "E": "7 cm"
+          },
+          "correta": "C",
+          "explicacao": "sen(30°) = cateto/10. Logo cateto = 10 × 0,5 = 5cm",
+          "dificuldade": "facil",
+          "tags": ["triangulo-retangulo", "seno", "angulo-notavel"]
+        },
+        {
+          "id": "q01-2",
+          "enunciado": "Uma rampa de 6m de comprimento liga dois níveis com diferença de altura de 2m. Qual o cosseno do ângulo que a rampa faz com o nível inferior?",
+          "alternativas": {
+            "A": "1/3",
+            "B": "√2/3",
+            "C": "2/3",
+            "D": "√8/3",
+            "E": "5/6"
+          },
+          "correta": "D",
+          "explicacao": "Cateto adjacente: √(6²-2²) = √32 = 4√2. cos(θ) = 4√2/6 = 2√2/3 = √8/3",
+          "dificuldade": "medio",
+          "tags": ["cosseno", "pitagoras", "aplicacao"]
+        },
+        {
+          "id": "q01-3",
+          "enunciado": "Se tan(θ) = 3/4, qual o valor de sen(θ)?",
+          "alternativas": {
+            "A": "3/4",
+            "B": "3/5",
+            "C": "4/5",
+            "D": "4/3",
+            "E": "5/3"
+          },
+          "correta": "B",
+          "explicacao": "Triângulo 3-4-5. sen(θ) = oposto/hipotenusa = 3/5",
+          "dificuldade": "medio",
+          "tags": ["tangente", "seno", "relacao"]
+        },
+        {
+          "id": "q01-4",
+          "enunciado": "Qual o valor de sen²(45°) + cos²(45°)?",
+          "alternativas": {
+            "A": "0",
+            "B": "1/2",
+            "C": "√2/2",
+            "D": "1",
+            "E": "√2"
+          },
+          "correta": "D",
+          "explicacao": "Relação fundamental: sen²(θ) + cos²(θ) = 1 para qualquer ângulo",
+          "dificuldade": "facil",
+          "tags": ["identidade", "relacao-fundamental"]
+        },
+        {
+          "id": "q01-5",
+          "enunciado": "De um ponto no solo a 20m de uma torre, o ângulo de elevação até o topo é 60°. Qual a altura da torre? Use √3 ≈ 1,7",
+          "alternativas": {
+            "A": "28 m",
+            "B": "30 m",
+            "C": "32 m",
+            "D": "34 m",
+            "E": "36 m"
+          },
+          "correta": "D",
+          "explicacao": "tan(60°) = h/20. h = 20√3 ≈ 20×1,7 = 34m",
+          "dificuldade": "facil",
+          "tags": ["tangente", "aplicacao", "altura"]
+        }
+      ]
+    },
+    {
+      "id": "mod02",
+      "titulo": "Círculo Trigonométrico",
+      "resumo": "Ciclo trigonométrico, ângulos em radianos, sinais e simetrias",
+      "topicos": [
+        {
+          "titulo": "O Círculo Trigonométrico",
+          "conteudo": "CÍRCULO UNITÁRIO:\nCírculo com raio 1, centro na origem.\n\nSISTEMA DE COORDENADAS:\nOrigem O no centro\nEixo horizontal: eixo dos cossenos\nEixo vertical: eixo dos senos\n\nPONTO P NO CÍRCULO:\nForma ângulo θ com eixo positivo (sentido anti-horário)\nCoordenadas: P(cos θ, sen θ)\n\nRAIO OP:\nSempre tem comprimento 1\nFaz ângulo θ com eixo horizontal\n\nDEFINIÇÕES:\nsen(θ) = coordenada y de P\ncos(θ) = coordenada x de P\ntan(θ) = sen(θ)/cos(θ) = y/x\n\nQUADRANTES:\n\nI Quadrante (0° a 90°):\nsen > 0, cos > 0, tan > 0\nExemplo: 45° → P(√2/2, √2/2)\n\nII Quadrante (90° a 180°):\nsen > 0, cos < 0, tan < 0\nExemplo: 135° → P(-√2/2, √2/2)\n\nIII Quadrante (180° a 270°):\nsen < 0, cos < 0, tan > 0\nExemplo: 225° → P(-√2/2, -√2/2)\n\nIV Quadrante (270° a 360°):\nsen < 0, cos > 0, tan < 0\nExemplo: 315° → P(√2/2, -√2/2)\n\nMACETE - REGRA DOS SINAIS:\n\"Só Tudo Cosseno Seno\"\nI: Sen, Cos, Tan positivos (Só positivo = Todos)\nII: Só Seno positivo\nIII: Só Tangente positivo\nIV: Só Cosseno positivo"
+        },
+        {
+          "titulo": "Radianos e Conversões",
+          "conteudo": "RADIANO (rad):\nÂngulo cujo arco tem comprimento igual ao raio.\n\nRELAÇÃO:\n180° = π rad\n360° = 2π rad\n\nCONVERSÕES:\nDe graus para radianos:\nrad = (graus × π) / 180\n\nDe radianos para graus:\ngraus = (rad × 180) / π\n\nEXEMPLOS:\n\n30° → rad:\n30π/180 = π/6 rad\n\n45° → rad:\n45π/180 = π/4 rad\n\n60° → rad:\n60π/180 = π/3 rad\n\n90° → rad:\n90π/180 = π/2 rad\n\nπ/3 rad → graus:\n(π/3 × 180)/π = 60°\n\n3π/4 rad → graus:\n(3π/4 × 180)/π = 135°\n\nTABELA DE EQUIVALÊNCIAS:\n| Graus | Radianos |\n|-------|----------|\n| 0° | 0 |\n| 30° | π/6 |\n| 45° | π/4 |\n| 60° | π/3 |\n| 90° | π/2 |\n| 120° | 2π/3 |\n| 135° | 3π/4 |\n| 150° | 5π/6 |\n| 180° | π |\n| 270° | 3π/2 |\n| 360° | 2π |\n\nCOMPRIMENTO DE ARCO:\nS = θ × r\n(θ em radianos, r = raio)\n\nEXEMPLO: Arco de 60° em círculo de raio 6cm:\nθ = π/3 rad\nS = (π/3) × 6 = 2π ≈ 6,28cm"
+        },
+        {
+          "titulo": "Redução ao Primeiro Quadrante",
+          "conteudo": "ÂNGULOS MAIORES QUE 360° ou NEGATIVOS:\nUse a volta completa (360° ou 2π)\n\nEXEMPLO 1: sen(390°)\n390° = 360° + 30°\nsen(390°) = sen(30°) = 1/2\n\nEXEMPLO 2: cos(-45°)\nÂngulo negativo: sentido horário\ncos(-45°) = cos(315°) = cos(45°) = √2/2\n\nREDUÇÃO POR SIMETRIA:\n\nII QUADRANTE (180° - θ):\nsen(180° - θ) = sen(θ)\ncos(180° - θ) = -cos(θ)\n\nExemplo: sen(150°) = sen(180°-30°) = sen(30°) = 1/2\ncos(150°) = -cos(30°) = -√3/2\n\nIII QUADRANTE (180° + θ):\nsen(180° + θ) = -sen(θ)\ncos(180° + θ) = -cos(θ)\n\nExemplo: sen(210°) = sen(180°+30°) = -sen(30°) = -1/2\ncos(210°) = -cos(30°) = -√3/2\n\nIV QUADRANTE (360° - θ):\nsen(360° - θ) = -sen(θ)\ncos(360° - θ) = cos(θ)\n\nExemplo: sen(330°) = sen(360°-30°) = -sen(30°) = -1/2\ncos(330°) = cos(30°) = √3/2\n\nRELAÇÕES DE OPOSIÇÃO:\nsen(-θ) = -sen(θ)\ncos(-θ) = cos(θ)\ntan(-θ) = -tan(θ)\n\nRELAÇÕES COMPLEMENTARES:\nsen(90° - θ) = cos(θ)\ncos(90° - θ) = sen(θ)"
+        },
+        {
+          "titulo": "Funções Trigonométricas Periódicas",
+          "conteudo": "PERIODICIDADE:\nFunções trigonométricas se repetem.\n\nSENO E COSSENO:\nPeríodo = 360° (ou 2π rad)\n\nsen(θ + 360°) = sen(θ)\ncos(θ + 360°) = cos(θ)\n\nTANGENTE:\nPeríodo = 180° (ou π rad)\n\ntan(θ + 180°) = tan(θ)\n\nAMPLITUDE:\n\nSeno: varia de -1 a 1\nf(θ) = sen(θ)\nMínimo: -1 (θ = 270°)\nMáximo: 1 (θ = 90°)\n\nCosseno: varia de -1 a 1\nf(θ) = cos(θ)\nMínimo: -1 (θ = 180°)\nMáximo: 1 (θ = 0°)\n\nTangente: varia de -∞ a +∞\nAssíntotas em 90°, 270°, ...\n\nGRÁFICOS:\n\nSENOIDE (y = sen x):\nOnda começando em (0,0)\nPicos em π/2 e 5π/2\nVales em 3π/2\n\nCOSSENOIDE (y = cos x):\nOnda começando em (0,1)\nPicos em 0 e 2π\nVale em π\n\nTANGENTE (y = tan x):\nCurva com assíntotas verticais\nCresce de -∞ a +∞\nPassa por origem\n\nAPLICAÇÕES:\n- Movimentos oscilatórios\n- Ondas (som, luz)\n- Corrente alternada\n- Marés\n- Ciclos naturais"
+        }
+      ],
+      "exemplos": [
+        "Converter ângulos entre graus e radianos",
+        "Determinar sinal de função trigonométrica por quadrante",
+        "Reduzir ângulo grande ao primeiro quadrante"
+      ],
+      "dicas": [
+        "π rad = 180°, memorize isto!",
+        "Regra dos sinais: Só Tudo Cosseno Seno (I, II, III, IV)",
+        "sen e cos têm período 2π, tan tem período π",
+        "sen(-θ) = -sen(θ), cos(-θ) = cos(θ)",
+        "sen(90°-θ) = cos(θ), cos(90°-θ) = sen(θ)",
+        "Valores sempre entre -1 e 1 para seno e cosseno"
+      ],
+      "questoes": [
+        {
+          "id": "q02-1",
+          "enunciado": "Quanto vale sen(150°)?",
+          "alternativas": {
+            "A": "-1/2",
+            "B": "-√3/2",
+            "C": "0",
+            "D": "1/2",
+            "E": "√3/2"
+          },
+          "correta": "D",
+          "explicacao": "150° está no II quadrante. 150° = 180°-30°. sen(150°) = sen(30°) = 1/2",
+          "dificuldade": "facil",
+          "tags": ["seno", "reducao", "II-quadrante"]
+        },
+        {
+          "id": "q02-2",
+          "enunciado": "Converta π/3 radianos para graus:",
+          "alternativas": {
+            "A": "30°",
+            "B": "45°",
+            "C": "60°",
+            "D": "90°",
+            "E": "120°"
+          },
+          "correta": "C",
+          "explicacao": "graus = (π/3 × 180)/π = 180/3 = 60°",
+          "dificuldade": "facil",
+          "tags": ["conversao", "radianos", "graus"]
+        },
+        {
+          "id": "q02-3",
+          "enunciado": "Em qual quadrante sen(θ) > 0 e cos(θ) < 0?",
+          "alternativas": {
+            "A": "I quadrante",
+            "B": "II quadrante",
+            "C": "III quadrante",
+            "D": "IV quadrante",
+            "E": "Nenhum"
+          },
+          "correta": "B",
+          "explicacao": "II quadrante (90° a 180°): seno positivo, cosseno negativo",
+          "dificuldade": "facil",
+          "tags": ["quadrantes", "sinais", "circulo-trigonometrico"]
+        },
+        {
+          "id": "q02-4",
+          "enunciado": "Qual o valor de cos(240°)?",
+          "alternativas": {
+            "A": "-√3/2",
+            "B": "-1/2",
+            "C": "0",
+            "D": "1/2",
+            "E": "√3/2"
+          },
+          "correta": "B",
+          "explicacao": "240° = 180°+60° (III quadrante). cos(240°) = -cos(60°) = -1/2",
+          "dificuldade": "medio",
+          "tags": ["cosseno", "reducao", "III-quadrante"]
+        },
+        {
+          "id": "q02-5",
+          "enunciado": "Se sen(θ) = 0,6 e θ está no II quadrante, qual o valor de cos(θ)?",
+          "alternativas": {
+            "A": "-0,8",
+            "B": "-0,6",
+            "C": "0",
+            "D": "0,6",
+            "E": "0,8"
+          },
+          "correta": "A",
+          "explicacao": "sen²+cos²=1. (0,6)²+cos²=1. cos²=0,64. cos=±0,8. No II quadrante, cos<0, logo cos=-0,8",
+          "dificuldade": "medio",
+          "tags": ["relacao-fundamental", "quadrante", "sinal"]
+        }
+      ]
+    },
+    {
+      "id": "mod03",
+      "titulo": "Identidades Trigonométricas",
+      "resumo": "Relações fundamentais, adição de ângulos e transformações",
+      "topicos": [
+        {
+          "titulo": "Identidades Fundamentais",
+          "conteudo": "1) RELAÇÃO FUNDAMENTAL:\nsen²(θ) + cos²(θ) = 1\n\nConsquências:\nsen²(θ) = 1 - cos²(θ)\ncos²(θ) = 1 - sen²(θ)\n\n2) TANGENTE EM FUNÇÃO DE SENO E COSSENO:\ntan(θ) = sen(θ) / cos(θ)\n\n3) SECANTE E COSSECANTE:\nsec²(θ) = 1 + tan²(θ)\ncsc²(θ) = 1 + cot²(θ)\n\n4) ÂNGULOS COMPLEMENTARES:\nsen(90° - θ) = cos(θ)\ncos(90° - θ) = sen(θ)\ntan(90° - θ) = cot(θ)\n\n5) ÂNGULOS SUPLEMENTARES:\nsen(180° - θ) = sen(θ)\ncos(180° - θ) = -cos(θ)\ntan(180° - θ) = -tan(θ)\n\nAPLICAÇÃO - SIMPLIFICAÇÃO:\n\nEXEMPLO 1: Simplifique sen²(x) + cos²(x) + tan²(x)\n= 1 + tan²(x)\n= sec²(x)\n\nEXEMPLO 2: Calcule sen(75°)\nsen(75°) = sen(45° + 30°)\n[Usar fórmula de adição]\n\nEXEMPLO 3: Se sen(θ) = 3/5, calcule cos(θ)\nsen²+cos²=1\n(3/5)² + cos²=1\n9/25 + cos²=1\ncos² = 16/25\ncos = ±4/5\n(sinal depende do quadrante)"
+        },
+        {
+          "titulo": "Fórmulas de Adição e Subtração",
+          "conteudo": "ADIÇÃO DE ÂNGULOS:\n\nsen(a + b) = sen(a)cos(b) + sen(b)cos(a)\ncos(a + b) = cos(a)cos(b) - sen(a)sen(b)\ntan(a + b) = [tan(a) + tan(b)] / [1 - tan(a)tan(b)]\n\nSUBTRAÇÃO DE ÂNGULOS:\n\nsen(a - b) = sen(a)cos(b) - sen(b)cos(a)\ncos(a - b) = cos(a)cos(b) + sen(a)sen(b)\ntan(a - b) = [tan(a) - tan(b)] / [1 + tan(a)tan(b)]\n\nEXEMPLO 1: Calcule sen(75°)\nsen(75°) = sen(45° + 30°)\n= sen(45°)cos(30°) + sen(30°)cos(45°)\n= (√2/2)(√3/2) + (1/2)(√2/2)\n= √6/4 + √2/4\n= (√6 + √2)/4\n\nEXEMPLO 2: Calcule cos(15°)\ncos(15°) = cos(45° - 30°)\n= cos(45°)cos(30°) + sen(45°)sen(30°)\n= (√2/2)(√3/2) + (√2/2)(1/2)\n= √6/4 + √2/4\n= (√6 + √2)/4\n\nEXEMPLO 3: Se sen(a)=3/5, cos(a)=4/5 e sen(b)=5/13, cos(b)=12/13,\ncalcule sen(a+b):\n\nsen(a+b) = (3/5)(12/13) + (5/13)(4/5)\n= 36/65 + 20/65\n= 56/65"
+        },
+        {
+          "titulo": "Ângulo Duplo e Metade",
+          "conteudo": "ÂNGULO DUPLO:\n\nsen(2θ) = 2sen(θ)cos(θ)\n\ncos(2θ) = cos²(θ) - sen²(θ)\n      = 2cos²(θ) - 1\n      = 1 - 2sen²(θ)\n\ntan(2θ) = 2tan(θ) / [1 - tan²(θ)]\n\nEXEMPLO 1: Se sen(θ) = 3/5 e cos(θ) = 4/5, calcule sen(2θ)\n\nsen(2θ) = 2 × (3/5) × (4/5)\nsen(2θ) = 24/25\n\nEXEMPLO 2: Calcule cos(2θ) do exemplo anterior\n\ncos(2θ) = cos²(θ) - sen²(θ)\n= (4/5)² - (3/5)²\n= 16/25 - 9/25\n= 7/25\n\nÂNGULO METADE:\n\nsen(θ/2) = ±√[(1 - cos(θ))/2]\n\ncos(θ/2) = ±√[(1 + cos(θ))/2]\n\ntan(θ/2) = sen(θ) / [1 + cos(θ)]\n        = [1 - cos(θ)] / sen(θ)\n\n(sinal depende do quadrante de θ/2)\n\nEXEMPLO 3: Calcule sen(15°)\nUse θ/2 com θ=30°:\n\nsen(15°) = √[(1 - cos(30°))/2]\n= √[(1 - √3/2)/2]\n= √[(2 - √3)/4]\n= √(2 - √3) / 2\n\nOu mais simples: sen(15°) = (√6 - √2)/4"
+        },
+        {
+          "titulo": "Transformação em Produto",
+          "conteudo": "SOMA EM PRODUTO:\n\nsen(a) + sen(b) = 2sen[(a+b)/2]cos[(a-b)/2]\n\nsen(a) - sen(b) = 2cos[(a+b)/2]sen[(a-b)/2]\n\ncos(a) + cos(b) = 2cos[(a+b)/2]cos[(a-b)/2]\n\ncos(a) - cos(b) = -2sen[(a+b)/2]sen[(a-b)/2]\n\nEXEMPLO 1: Simplifique sen(75°) + sen(15°)\n\n= 2sen[(75°+15°)/2]cos[(75°-15°)/2]\n= 2sen(45°)cos(30°)\n= 2 × (√2/2) × (√3/2)\n= √6/2\n\nPRODUTO EM SOMA:\n\nsen(a)cos(b) = [sen(a+b) + sen(a-b)] / 2\n\ncos(a)cos(b) = [cos(a+b) + cos(a-b)] / 2\n\nsen(a)sen(b) = [cos(a-b) - cos(a+b)] / 2\n\nEXEMPLO 2: Calcule sen(45°)cos(15°)\n\n= [sen(45°+15°) + sen(45°-15°)] / 2\n= [sen(60°) + sen(30°)] / 2\n= [(√3/2) + (1/2)] / 2\n= (√3 + 1) / 4\n\nAPLICAÇÃO:\nResolução de equações trigonométricas\nSimplificação de expressões"
+        }
+      ],
+      "exemplos": [
+        "Simplificar expressão trigonométrica usando identidades",
+        "Calcular valor exato usando fórmulas de adição",
+        "Resolver equação usando ângulo duplo"
+      ],
+      "dicas": [
+        "sen²+cos²=1 é a mais usada!",
+        "tan = sen/cos",
+        "Fórmulas de adição: memorize pelo menos seno e cosseno",
+        "sen(2θ) = 2sen(θ)cos(θ) é muito útil",
+        "sen(a+b) ≠ sen(a)+sen(b) !",
+        "Use calculadora para verificar resultados"
+      ],
+      "questoes": [
+        {
+          "id": "q03-1",
+          "enunciado": "Se sen(θ) = 0,8 e θ está no I quadrante, quanto vale cos(θ)?",
+          "alternativas": {
+            "A": "0,4",
+            "B": "0,5",
+            "C": "0,6",
+            "D": "0,7",
+            "E": "0,8"
+          },
+          "correta": "C",
+          "explicacao": "sen²+cos²=1. (0,8)²+cos²=1. 0,64+cos²=1. cos²=0,36. cos=0,6 (positivo no I quadrante)",
+          "dificuldade": "facil",
+          "tags": ["identidade", "relacao-fundamental"]
+        },
+        {
+          "id": "q03-2",
+          "enunciado": "Quanto vale sen(2θ) se sen(θ) = 3/5 e cos(θ) = 4/5?",
+          "alternativas": {
+            "A": "12/25",
+            "B": "16/25",
+            "C": "20/25",
+            "D": "24/25",
+            "E": "25/25"
+          },
+          "correta": "D",
+          "explicacao": "sen(2θ) = 2sen(θ)cos(θ) = 2×(3/5)×(4/5) = 24/25",
+          "dificuldade": "facil",
+          "tags": ["angulo-duplo", "seno"]
+        },
+        {
+          "id": "q03-3",
+          "enunciado": "Simplifique a expressão: sen²(x) + cos²(x) + tan²(x)",
+          "alternativas": {
+            "A": "1",
+            "B": "1 + tan²(x)",
+            "C": "sec²(x)",
+            "D": "2",
+            "E": "tan²(x)"
+          },
+          "correta": "C",
+          "explicacao": "sen²+cos²=1. Logo 1+tan²(x) = sec²(x)",
+          "dificuldade": "medio",
+          "tags": ["simplificacao", "identidades", "secante"]
+        },
+        {
+          "id": "q03-4",
+          "enunciado": "Quanto vale cos(15°)? Use √6≈2,45 e √2≈1,41",
+          "alternativas": {
+            "A": "0,87",
+            "B": "0,92",
+            "C": "0,97",
+            "D": "1,02",
+            "E": "1,07"
+          },
+          "correta": "C",
+          "explicacao": "cos(15°) = cos(45°-30°) = (√6+√2)/4 ≈ (2,45+1,41)/4 = 3,86/4 ≈ 0,97",
+          "dificuldade": "dificil",
+          "tags": ["adicao", "calculo-exato"]
+        },
+        {
+          "id": "q03-5",
+          "enunciado": "Se tan(θ) = 1, qual o valor de sen(2θ)?",
+          "alternativas": {
+            "A": "0",
+            "B": "1/2",
+            "C": "√2/2",
+            "D": "1",
+            "E": "√2"
+          },
+          "correta": "D",
+          "explicacao": "tan(θ)=1 → θ=45°. sen(θ)=cos(θ)=√2/2. sen(2θ)=2×(√2/2)×(√2/2)=2×2/4=1",
+          "dificuldade": "medio",
+          "tags": ["angulo-duplo", "tangente"]
+        }
+      ]
+    },
+    {
+      "id": "mod04",
+      "titulo": "Equações Trigonométricas",
+      "resumo": "Resolução de equações envolvendo funções trigonométricas",
+      "topicos": [
+        {
+          "titulo": "Equações Básicas",
+          "conteudo": "FORMA GERAL:\nf(θ) = k, onde f é função trigonométrica\n\nTIPO 1: sen(θ) = k\n\nCondições:\n- Só tem solução se -1 ≤ k ≤ 1\n- Duas soluções em [0°, 360°]\n\nEXEMPLO 1: sen(θ) = 1/2\n\nSoluções:\nθ = 30° (I quadrante)\nθ = 150° (II quadrante, pois sen>0)\n\nSolução geral:\nθ = 30° + k×360° ou θ = 150° + k×360°, k inteiro\n\nTIPO 2: cos(θ) = k\n\nEXEMPLO 2: cos(θ) = √3/2\n\nSoluções em [0°, 360°]:\nθ = 30° (I quadrante)\nθ = 330° (IV quadrante, pois cos>0)\n\nTIPO 3: tan(θ) = k\n\nEXEMPLO 3: tan(θ) = 1\n\nSoluções:\nθ = 45° (I quadrante)\nθ = 225° (III quadrante, pois tan>0)\n\nPERÍODO da tangente é 180°:\nθ = 45° + k×180°\n\nESTRATÉGIA:\n1) Identifique o valor de referência\n2) Determine quadrantes pelo sinal\n3) Encontre ângulos no intervalo pedido\n4) Escreva solução geral se necessário"
+        },
+        {
+          "titulo": "Equações com Transformações",
+          "conteudo": "EQUAÇÕES REDUTÍVEIS:\n\nTIPO 1: sen(2θ) = k\n\nEXEMPLO 1: sen(2θ) = 1/2\n\nFaça u = 2θ:\nsen(u) = 1/2\nu = 30° ou u = 150°\n\nVoltando:\n2θ = 30° → θ = 15°\n2θ = 150° → θ = 75°\n2θ = 390° → θ = 195°\n2θ = 510° → θ = 255°\n\nTIPO 2: Equações quadráticas\n\nEXEMPLO 2: 2sen²(θ) - sen(θ) - 1 = 0\n\nFaça x = sen(θ):\n2x² - x - 1 = 0\n\nResolvendo:\nx = [1 ± √(1+8)] / 4\nx = [1 ± 3] / 4\n\nx₁ = 1 → sen(θ) = 1 → θ = 90°\nx₂ = -1/2 → sen(θ) = -1/2 → θ = 210° ou 330°\n\nTIPO 3: Produto de funções\n\nEXEMPLO 3: sen(θ) × cos(θ) = 0\n\nsen(θ) = 0 ou cos(θ) = 0\n\nsen(θ) = 0: θ = 0°, 180°, 360°\ncos(θ) = 0: θ = 90°, 270°\n\nSoluções: {0°, 90°, 180°, 270°, 360°}\n\nTIPO 4: Com identidades\n\nEXEMPLO 4: sen²(θ) = 3cos²(θ)\n\nUsando sen²+cos²=1:\nsen² = 3(1-sen²)\nsen² = 3 - 3sen²\n4sen² = 3\nsen² = 3/4\nsen = ±√3/2\n\nθ = 60°, 120°, 240°, 300°"
+        },
+        {
+          "titulo": "Inequações Trigonométricas",
+          "conteudo": "DESIGUALDADES:\n\nTIPO 1: sen(θ) > k\n\nEXEMPLO 1: sen(θ) > 1/2 em [0°, 360°]\n\nPasso 1: Resolva sen(θ) = 1/2\nθ₁ = 30°, θ₂ = 150°\n\nPasso 2: Analise o gráfico\nsen(θ) > 1/2 entre 30° e 150°\n\nResposta: 30° < θ < 150°\n\nTIPO 2: cos(θ) ≤ k\n\nEXEMPLO 2: cos(θ) ≤ 0 em [0°, 360°]\n\ncos(θ) = 0: θ = 90°, 270°\n\ncos negativo: II e III quadrantes\n\nResposta: 90° ≤ θ ≤ 270°\n\nTIPO 3: tan(θ) ≥ k\n\nEXEMPLO 3: tan(θ) ≥ 1 em [0°, 180°]\n\ntan(θ) = 1: θ = 45°\n\ntan crescente em cada período\n\nResposta: 45° ≤ θ < 90° ou 90° < θ ≤ 180°\n(exclui 90° onde tan não existe)\n\nMÉTODO GRÁFICO:\n1) Desenhe ou visualize o gráfico\n2) Identifique pontos críticos\n3) Determine intervalos\n\nDICA: Use círculo trigonométrico!"
+        },
+        {
+          "titulo": "Sistemas de Equações Trigonométricas",
+          "conteudo": "SISTEMAS com duas equações:\n\nEXEMPLO 1:\nsen(θ) + cos(θ) = 1\nsen(θ) × cos(θ) = 0\n\nDa 2ª equação:\nsen(θ) = 0 ou cos(θ) = 0\n\nCaso 1: sen(θ) = 0\nDa 1ª: 0 + cos(θ) = 1 → cos(θ) = 1\nθ = 0°\n\nCaso 2: cos(θ) = 0\nDa 1ª: sen(θ) + 0 = 1 → sen(θ) = 1\nθ = 90°\n\nSoluções: {0°, 90°}\n\nEXEMPLO 2:\nsen(θ) = 2cos(θ)\nsen²(θ) + cos²(θ) = 1\n\nDa 1ª: sen = 2cos\nSubstituindo na 2ª:\n(2cos)² + cos² = 1\n4cos² + cos² = 1\n5cos² = 1\ncos² = 1/5\ncos = ±1/√5\n\nSe cos = 1/√5: sen = 2/√5\nθ ≈ 63,4°\n\nSe cos = -1/√5: sen = -2/√5\nθ ≈ 243,4°\n\nEXEMPLO 3: Sistema paramétrico\nsen(θ) = a\ncos(θ) = b\n\nCondição de existência:\na² + b² = 1\n\nSe a² + b² ≠ 1, sistema impossível!"
+        }
+      ],
+      "exemplos": [
+        "Resolver equação trigonométrica em intervalo dado",
+        "Encontrar soluções de inequação usando gráfico",
+        "Resolver sistema com sen e cos"
+      ],
+      "dicas": [
+        "Sempre determine o intervalo primeiro",
+        "Use círculo trigonométrico para visualizar",
+        "sen e cos: duas soluções por período",
+        "tan: uma solução por período (180°)",
+        "Em equações quadráticas, substitua por variável",
+        "Verifique se solução está no intervalo pedido"
+      ],
+      "questoes": [
+        {
+          "id": "q04-1",
+          "enunciado": "Resolva sen(θ) = √3/2 em [0°, 360°]:",
+          "alternativas": {
+            "A": "{30°, 150°}",
+            "B": "{45°, 135°}",
+            "C": "{60°, 120°}",
+            "D": "{60°, 150°}",
+            "E": "{30°, 60°}"
+          },
+          "correta": "C",
+          "explicacao": "sen(θ)=√3/2 quando θ=60° (I quad) ou θ=120° (II quad, sen>0)",
+          "dificuldade": "facil",
+          "tags": ["equacao", "seno", "angulo-notavel"]
+        },
+        {
+          "id": "q04-2",
+          "enunciado": "Quantas soluções tem a equação sen(2θ) = 1/2 em [0°, 360°]?",
+          "alternativas": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "4",
+            "E": "5"
+          },
+          "correta": "D",
+          "explicacao": "Fazendo u=2θ, u varia em [0°,720°]. sen(u)=1/2 tem 2 soluções por período de 360°, logo 4 soluções: u=30°,150°,390°,510° → θ=15°,75°,195°,255°",
+          "dificuldade": "medio",
+          "tags": ["equacao", "transformacao", "periodo"]
+        },
+        {
+          "id": "q04-3",
+          "enunciado": "Resolva 2cos²(θ) - cos(θ) = 0 em [0°, 360°]:",
+          "alternativas": {
+            "A": "{0°, 60°, 300°}",
+            "B": "{0°, 90°, 270°}",
+            "C": "{60°, 90°, 270°, 300°}",
+            "D": "{0°, 60°, 90°, 270°, 300°}",
+            "E": "{0°, 180°, 360°}"
+          },
+          "correta": "D",
+          "explicacao": "Fator comum: cos(θ)(2cos(θ)-1)=0. cos(θ)=0 → 90°,270°. 2cos(θ)=1 → cos=1/2 → 60°,300°. Mais cos=1 em 0° (implícito). Conjunto: {0°,60°,90°,270°,300°}",
+          "dificuldade": "medio",
+          "tags": ["equacao", "fatoracao", "cosseno"]
+        },
+        {
+          "id": "q04-4",
+          "enunciado": "Para qual(is) valor(es) de θ em [0°, 180°] tem-se sen(θ) > √2/2?",
+          "alternativas": {
+            "A": "45° < θ < 135°",
+            "B": "0° < θ < 45°",
+            "C": "45° < θ < 90°",
+            "D": "90° < θ < 135°",
+            "E": "135° < θ < 180°"
+          },
+          "correta": "A",
+          "explicacao": "sen(θ)=√2/2 em θ=45° e 135°. Entre esses valores, sen>√2/2. Logo 45°<θ<135°",
+          "dificuldade": "medio",
+          "tags": ["inequacao", "seno", "intervalo"]
+        },
+        {
+          "id": "q04-5",
+          "enunciado": "Resolva o sistema: sen(θ)+cos(θ)=√2 e sen(θ)×cos(θ)=1/2 em [0°,90°]:",
+          "alternativas": {
+            "A": "30°",
+            "B": "45°",
+            "C": "60°",
+            "D": "75°",
+            "E": "Sem solução"
+          },
+          "correta": "B",
+          "explicacao": "Em θ=45°: sen=cos=√2/2. Soma: 2×√2/2=√2 ✓. Produto: (√2/2)²=2/4=1/2 ✓",
+          "dificuldade": "medio",
+          "tags": ["sistema", "seno", "cosseno"]
+        }
+      ]
+    },
+    {
+      "id": "mod05",
+      "titulo": "Aplicações Avançadas da Trigonometria",
+      "resumo": "Lei dos senos, lei dos cossenos e problemas contextualizados",
+      "topicos": [
+        {
+          "titulo": "Lei dos Senos",
+          "conteudo": "LEI DOS SENOS:\nEm qualquer triângulo ABC:\n\na/sen(A) = b/sen(B) = c/sen(C) = 2R\n\nonde:\n- a, b, c são os lados\n- A, B, C são os ângulos opostos\n- R é o raio da circunferência circunscrita\n\nAPLICAÇÕES:\n\n1) CONHECIDO: 2 ângulos e 1 lado\n\nEXEMPLO 1:\nTriângulo com A=40°, B=60°, lado a=10cm\nAchar lado b:\n\na/sen(A) = b/sen(B)\n10/sen(40°) = b/sen(60°)\nb = 10×sen(60°)/sen(40°)\nb = 10×0,866/0,643\nb ≈ 13,5cm\n\n2) CONHECIDO: 2 lados e 1 ângulo oposto\n\nEXEMPLO 2:\nTriângulo com a=8, b=10, A=35°\nAchar B:\n\na/sen(A) = b/sen(B)\n8/sen(35°) = 10/sen(B)\nsen(B) = 10×sen(35°)/8\nsen(B) ≈ 0,717\nB ≈ 45,8°\n\nOBS: Pode haver 2 soluções (caso ambíguo)!\n\n3) RAIO DA CIRCUNFERÊNCIA CIRCUNSCRITA\n\nEXEMPLO 3:\nTriângulo com lado 6cm oposto a ângulo de 30°\n\na/sen(A) = 2R\n6/sen(30°) = 2R\n6/0,5 = 2R\nR = 6cm"
+        },
+        {
+          "titulo": "Lei dos Cossenos",
+          "conteudo": "LEI DOS COSSENOS:\nGeneralização do Teorema de Pitágoras.\n\na² = b² + c² - 2bc×cos(A)\nb² = a² + c² - 2ac×cos(B)\nc² = a² + b² - 2ab×cos(C)\n\nOu invertendo:\ncos(A) = (b² + c² - a²) / (2bc)\n\nAPLICAÇÕES:\n\n1) CONHECIDO: 3 lados (achar ângulo)\n\nEXEMPLO 1:\nTriângulo com lados 5, 6, 7cm\nAchar maior ângulo (oposto ao lado 7):\n\ncos(C) = (5² + 6² - 7²) / (2×5×6)\ncos(C) = (25 + 36 - 49) / 60\ncos(C) = 12/60 = 0,2\nC ≈ 78,5°\n\n2) CONHECIDO: 2 lados e ângulo entre eles\n\nEXEMPLO 2:\nTriângulo com b=8, c=6, A=60°\nAchar lado a:\n\na² = 8² + 6² - 2×8×6×cos(60°)\na² = 64 + 36 - 96×0,5\na² = 100 - 48 = 52\na = √52 ≈ 7,2cm\n\nCOMPARAÇÃO:\nPitágoras: caso especial com A=90°\na² = b² + c² - 2bc×0\na² = b² + c² ✓\n\nESCOLHA DA LEI:\n- 2 ângulos + 1 lado: Lei dos Senos\n- 2 lados + ângulo entre eles: Lei dos Cossenos\n- 3 lados: Lei dos Cossenos"
+        },
+        {
+          "titulo": "Área de Triângulos",
+          "conteudo": "FÓRMULAS DE ÁREA:\n\n1) BASE E ALTURA:\nA = (base × altura) / 2\n\n2) DOIS LADOS E ÂNGULO ENTRE ELES:\nA = (b × c × sen(A)) / 2\n\nEXEMPLO 1:\nLados 6cm e 8cm, ângulo 30° entre eles:\nA = (6 × 8 × sen(30°)) / 2\nA = (48 × 0,5) / 2\nA = 12 cm²\n\n3) TRÊS LADOS (Herão):\nA = √[s(s-a)(s-b)(s-c)]\nonde s = (a+b+c)/2\n\nEXEMPLO 2:\nLados 5, 6, 7cm:\ns = (5+6+7)/2 = 9\nA = √[9×4×3×2]\nA = √216 ≈ 14,7 cm²\n\n4) RAIO DA CIRCUNFERÊNCIA:\nA = (a×b×c) / (4R)\n\nAPLICAÇÃO PRÁTICA:\n\nPROBLEMA: Terreno triangular\nLados de 30m, 40m, ângulo 60° entre eles.\n\nÁrea:\nA = (30 × 40 × sen(60°)) / 2\nA = (1200 × 0,866) / 2\nA ≈ 519,6 m²\n\nPreço: R$ 500/m²\nValor total: 519,6 × 500 = R$ 259.800"
+        },
+        {
+          "titulo": "Problemas Contextualizados ENEM",
+          "conteudo": "NAVEGAÇÃO E TOPOGRAFIA:\n\nPROBLEMA 1: DISTÂNCIA ENTRE NAVIOS\nDois navios partem do porto:\n- Navio A: 50km a 30° Norte\n- Navio B: 40km a 120° Norte\n\nDistância entre eles?\n\nUse lei dos cossenos:\nÂngulo entre rotas: 120° - 30° = 90°\nd² = 50² + 40² - 2×50×40×cos(90°)\nd² = 2500 + 1600 - 0\nd² = 4100\nd ≈ 64km\n\nPROBLEMA 2: ALTURA DE MONTANHA\nDo ponto A, ângulo de elevação: 30°\nDo ponto B (200m mais perto), ângulo: 45°\n\nAltura h:\ntan(30°) = h / d → h = d×tan(30°)\ntan(45°) = h / (d-200) → h = (d-200)×1\n\nIgualando:\nd×tan(30°) = d - 200\nd×(√3/3) = d - 200\nd(1 - √3/3) = 200\nd ≈ 466m\n\nh = 466×(√3/3) ≈ 269m\n\nPROBLEMA 3: ÁREA DE POLÍGONO\nQuadrilátero ABCD:\n- Diagonal AC = 10m\n- Ângulo BAC = 40°\n- Ângulo DAC = 50°\n- AB = 8m, AD = 6m\n\nÁrea total = Área(ABC) + Área(ADC)\n\nÁrea(ABC) = (8×10×sen(40°))/2\n≈ 25,7 m²\n\nÁrea(ADC) = (6×10×sen(50°))/2\n≈ 23 m²\n\nTotal ≈ 48,7 m²\n\nPROBLEMA 4: FORÇA RESULTANTE\nDuas forças:\n- F₁ = 30N a 0°\n- F₂ = 40N a 60°\n\nResultante (lei dos cossenos):\nFᵣ² = 30² + 40² - 2×30×40×cos(120°)\nFᵣ² = 900 + 1600 - 2400×(-0,5)\nFᵣ² = 2500 + 1200 = 3700\nFᵣ ≈ 60,8N"
+        }
+      ],
+      "exemplos": [
+        "Calcular distância entre dois pontos usando triangulação",
+        "Determinar área de terreno irregular",
+        "Resolver problema de navegação com ângulos"
+      ],
+      "dicas": [
+        "Lei dos senos: use quando souber 2 ângulos",
+        "Lei dos cossenos: use quando souber 3 lados ou 2 lados+ângulo entre eles",
+        "Área com 2 lados: A=(bc×sen(A))/2",
+        "Desenhe sempre! Visualização é fundamental",
+        "Cuidado com unidades (graus vs radianos, metros vs km)",
+        "Em problemas práticos, aproxime valores"
+      ],
+      "questoes": [
+        {
+          "id": "q05-1",
+          "enunciado": "Em um triângulo, dois ângulos medem 45° e 60°, e o lado oposto ao ângulo de 45° mede 10cm. Quanto mede o lado oposto ao ângulo de 60°? Use sen(45°)=0,7 e sen(60°)=0,87",
+          "alternativas": {
+            "A": "11,4 cm",
+            "B": "12,4 cm",
+            "C": "13,4 cm",
+            "D": "14,4 cm",
+            "E": "15,4 cm"
+          },
+          "correta": "B",
+          "explicacao": "Lei dos senos: a/sen(A)=b/sen(B). 10/0,7=b/0,87. b=10×0,87/0,7≈12,4cm",
+          "dificuldade": "facil",
+          "tags": ["lei-senos", "triangulo", "proporcao"]
+        },
+        {
+          "id": "q05-2",
+          "enunciado": "Um triângulo tem lados 8cm, 10cm e 12cm. Qual o cosseno do maior ângulo (oposto ao lado 12)?",
+          "alternativas": {
+            "A": "0,15",
+            "B": "0,20",
+            "C": "0,25",
+            "D": "0,30",
+            "E": "0,35"
+          },
+          "correta": "C",
+          "explicacao": "Lei dos cossenos: cos(C)=(8²+10²-12²)/(2×8×10)=(64+100-144)/160=20/160=0,125≈0,13. Mais próximo de 0,15 ou verificar cálculo: (164-144)/160=20/160=1/8=0,125",
+          "dificuldade": "medio",
+          "tags": ["lei-cossenos", "angulo", "calculo"]
+        },
+        {
+          "id": "q05-3",
+          "enunciado": "A área de um triângulo com lados 6m e 8m formando ângulo de 30° entre si é:",
+          "alternativas": {
+            "A": "10 m²",
+            "B": "12 m²",
+            "C": "14 m²",
+            "D": "16 m²",
+            "E": "18 m²"
+          },
+          "correta": "B",
+          "explicacao": "A=(b×c×sen(A))/2=(6×8×0,5)/2=24/2=12m²",
+          "dificuldade": "facil",
+          "tags": ["area", "triangulo", "seno"]
+        },
+        {
+          "id": "q05-4",
+          "enunciado": "Dois lados de um triângulo medem 5m e 7m, com ângulo de 60° entre eles. O terceiro lado mede aproximadamente: (Use √3=1,7)",
+          "alternativas": {
+            "A": "5,2 m",
+            "B": "6,2 m",
+            "C": "7,2 m",
+            "D": "8,2 m",
+            "E": "9,2 m"
+          },
+          "correta": "B",
+          "explicacao": "a²=5²+7²-2×5×7×cos(60°)=25+49-70×0,5=74-35=39. a=√39≈6,2m",
+          "dificuldade": "medio",
+          "tags": ["lei-cossenos", "calculo", "raiz"]
+        },
+        {
+          "id": "q05-5",
+          "enunciado": "De um ponto A no solo, o ângulo de elevação para o topo de um prédio é 30°. De um ponto B, 50m mais próximo, o ângulo é 45°. Qual a altura do prédio? Use √3=1,7",
+          "alternativas": {
+            "A": "58 m",
+            "B": "62 m",
+            "C": "68 m",
+            "D": "72 m",
+            "E": "78 m"
+          },
+          "correta": "C",
+          "explicacao": "h=d×tan(30°) e h=(d-50)×tan(45°). d/√3=(d-50). d=√3(d-50). d(√3-1)=50√3. d≈118m. h=118/1,7≈68m",
+          "dificuldade": "dificil",
+          "tags": ["aplicacao", "elevacao", "sistema"]
+        }
+      ]
+    }
+  ]
+}

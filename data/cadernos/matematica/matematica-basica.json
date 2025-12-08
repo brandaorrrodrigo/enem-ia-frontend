@@ -8,7 +8,7 @@
   "icone": "Calculator",
   "cor": "#E74C3C",
   "tempoEstimado": "18 horas",
-  "fpRecompensa": 450,
+  "fpRecompensa": 0,
   "tags": ["matemática", "porcentagem", "equações", "funções", "conjuntos", "enem"],
   "modulos": [
     {

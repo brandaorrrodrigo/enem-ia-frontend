@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '@/contexts/AuthContext';
 import CursoAlvoSelector from '@/components/CursoAlvoSelector';
 import FloatingNav from '@/components/FloatingNav';
 import FloatingBackButton from '@/components/FloatingBackButton';
+import AvatarUploader from '@/components/AvatarUploader';
+import { useAuth } from '@/contexts/AuthContext';
 
 interface Simulado {
   id: string;

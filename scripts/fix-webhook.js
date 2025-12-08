@@ -1,4 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server';
+const fs = require('fs');
+
+const webhookContent = `import { NextRequest, NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe/config';
 import prisma from '@/lib/prisma';
 import Stripe from 'stripe';
@@ -242,7 +244,7 @@ async function handleSubscriptionCanceled(subscription: any) {
   }
 }
 
-async function handleInvoicePaid(invoice: any) {
+async function handleInvoicePaid(invoice: Stripe.Invoice) {
   const stripeCustomerId = invoice.customer as string;
   console.log('[WEBHOOK] Invoice paga para customer:', stripeCustomerId);
 
@@ -281,7 +283,7 @@ async function handleInvoicePaid(invoice: any) {
   }
 }
 
-async function handlePaymentFailed(invoice: any) {
+async function handlePaymentFailed(invoice: Stripe.Invoice) {
   const stripeCustomerId = invoice.customer as string;
   console.log('[WEBHOOK] Pagamento falhou para customer:', stripeCustomerId);
 
@@ -319,3 +321,7 @@ async function handlePaymentFailed(invoice: any) {
     throw error;
   }
 }
+`;
+
+fs.writeFileSync('D:/enem-ia/enem-pro/app/api/stripe/webhook/route.ts', webhookContent);
+console.log('Webhook fixed!');

@@ -1,170 +1,155 @@
-// app/assinatura/pro/page.tsx
 'use client';
 
-import { useState, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useState, useEffect, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-const PRECO_MENSAL = 79.90;
-const PRECO_ANUAL = 799.00;
-
 function AssinaturaPremiumContent() {
+  const router = useRouter();
   const searchParams = useSearchParams();
-  const periodoInicial = searchParams.get('periodo') === 'anual';
+  const [loading, setLoading] = useState(false);
+  const [usuarioId, setUsuarioId] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
-  const [email, setEmail] = useState('');
-  const [nome, setNome] = useState('');
-  const [metodo, setMetodo] = useState<'pix'|'cartao'|null>(null);
-  const [anual, setAnual] = useState(periodoInicial);
+  useEffect(() => {
+    const userData = localStorage.getItem('usuario');
+    if (userData) {
+      const user = JSON.parse(userData);
+      setUsuarioId(user.id);
+    }
+  }, []);
 
-  const PIX_KEY = process.env.NEXT_PUBLIC_PIX_KEY || 'sua-chave-pix-aqui';
-  const WHATS = process.env.NEXT_PUBLIC_WHATSAPP || 'https://wa.me/5500000000000';
+  const handleAssinar = async () => {
+    if (!usuarioId) {
+      router.push('/login?redirect=/assinatura/premium');
+      return;
+    }
 
-  const precoAtual = anual ? PRECO_ANUAL : PRECO_MENSAL;
-  const periodoTexto = anual ? '/ano' : '/mes';
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/stripe/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ usuarioId, plano: 'premium' }),
+      });
+
+      const data = await response.json();
+
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        setError(data.error || 'Erro ao iniciar checkout');
+      }
+    } catch (err) {
+      console.error('Erro:', err);
+      setError('Erro ao processar. Tente novamente.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-purple-900 to-purple-950 px-4 py-8">
-      <div className="mx-auto max-w-2xl">
-        <Link href="/planos" className="text-purple-300 hover:text-white text-sm mb-4 inline-block">
+    <main style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+      padding: '40px 20px',
+    }}>
+      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+        <Link href="/planos" style={{ color: '#94a3b8', textDecoration: 'none', display: 'inline-block', marginBottom: '24px' }}>
           ← Voltar aos planos
         </Link>
 
-        <h1 className="text-3xl md:text-4xl font-extrabold text-white">Assinar ENEM PRO Premium</h1>
-        <p className="mt-2 text-purple-200">
-          O plano completo para maximo desempenho
-        </p>
-
-        {/* Toggle Mensal/Anual */}
-        <div className="mt-6 flex items-center gap-4">
-          <button
-            onClick={() => setAnual(false)}
-            className={`px-4 py-2 rounded-lg font-semibold transition ${
-              !anual
-                ? 'bg-yellow-500 text-purple-900'
-                : 'bg-purple-800 text-purple-300 hover:bg-purple-700'
-            }`}
-          >
-            Mensal R$ {PRECO_MENSAL.toFixed(2)}
-          </button>
-          <button
-            onClick={() => setAnual(true)}
-            className={`px-4 py-2 rounded-lg font-semibold transition ${
-              anual
-                ? 'bg-yellow-500 text-purple-900'
-                : 'bg-purple-800 text-purple-300 hover:bg-purple-700'
-            }`}
-          >
-            Anual R$ {PRECO_ANUAL.toFixed(2)}
-          </button>
-          {anual && (
-            <span className="text-green-400 text-sm font-semibold">
-              Economize 17%!
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(139, 92, 246, 0.1) 100%)',
+          borderRadius: '24px',
+          padding: '40px',
+          border: '2px solid #a855f7',
+        }}>
+          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+            <span style={{
+              background: 'linear-gradient(135deg, #a855f7 0%, #8b5cf6 100%)',
+              color: '#fff',
+              padding: '4px 16px',
+              borderRadius: '20px',
+              fontSize: '0.85rem',
+              fontWeight: '600',
+            }}>
+              COMPLETO
             </span>
-          )}
-        </div>
-
-        <div className="mt-6 rounded-2xl bg-purple-800/50 ring-1 ring-purple-600 p-5 shadow-lg">
-          <div className="text-center mb-6">
-            <div className="text-4xl font-bold text-yellow-400">
-              R$ {precoAtual.toFixed(2)}
-            </div>
-            <div className="text-purple-300 text-sm">{periodoTexto}</div>
           </div>
 
-          <div className="grid gap-3">
-            <input
-              className="rounded-lg border border-purple-600 bg-purple-900 px-3 py-2 text-sm text-white placeholder-purple-400"
-              placeholder="Seu nome completo"
-              value={nome}
-              onChange={(e) => setNome(e.target.value)}
-            />
-            <input
-              className="rounded-lg border border-purple-600 bg-purple-900 px-3 py-2 text-sm text-white placeholder-purple-400"
-              placeholder="Seu e-mail"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+          <h1 style={{ color: '#fff', fontSize: '2.5rem', marginBottom: '8px', textAlign: 'center' }}>
+            Plano Premium
+          </h1>
 
-            <div className="mt-2">
-              <p className="text-sm font-semibold text-white">Escolha o metodo de pagamento:</p>
-              <div className="mt-2 flex flex-col sm:flex-row gap-3">
-                <button
-                  onClick={() => setMetodo('pix')}
-                  className={`rounded-xl px-4 py-3 font-semibold ring-1 transition ${
-                    metodo === 'pix'
-                      ? 'bg-yellow-500 text-purple-900 ring-yellow-500'
-                      : 'bg-purple-900 text-white ring-purple-600 hover:bg-purple-800'
-                  }`}
-                >
-                  PIX (recomendado)
-                </button>
-                <button
-                  onClick={() => setMetodo('cartao')}
-                  className={`rounded-xl px-4 py-3 font-semibold ring-1 transition ${
-                    metodo === 'cartao'
-                      ? 'bg-yellow-500 text-purple-900 ring-yellow-500'
-                      : 'bg-purple-900 text-white ring-purple-600 hover:bg-purple-800'
-                  }`}
-                >
-                  Cartao de credito
-                </button>
-              </div>
-            </div>
-
-            {/* PIX */}
-            {metodo === 'pix' && (
-              <div className="mt-4 rounded-xl bg-purple-900 p-4 ring-1 ring-purple-600">
-                <p className="text-sm text-purple-200">
-                  Envie <b className="text-yellow-400">R$ {precoAtual.toFixed(2)}</b> para a chave PIX:
-                </p>
-                <p className="mt-2 select-all rounded-lg bg-purple-950 p-3 font-mono text-sm ring-1 ring-purple-600 text-white">
-                  {PIX_KEY}
-                </p>
-                <p className="mt-3 text-sm text-purple-300">
-                  Apos o pagamento, envie o comprovante pelo WhatsApp para ativacao imediata.
-                </p>
-                <a
-                  href={WHATS}
-                  target="_blank"
-                  className="mt-3 inline-flex rounded-xl bg-green-600 px-4 py-2 text-white font-semibold hover:bg-green-700"
-                >
-                  Enviar comprovante
-                </a>
-              </div>
-            )}
-
-            {/* Cartao */}
-            {metodo === 'cartao' && (
-              <div className="mt-4 rounded-xl bg-purple-900 p-4 ring-1 ring-purple-600">
-                <p className="text-sm text-purple-200">
-                  Integracao com cartao (Stripe/Mercado Pago) — em breve!
-                </p>
-                <Link
-                  href={process.env.NEXT_PUBLIC_CHECKOUT_PREMIUM || '#'}
-                  className="mt-3 inline-flex rounded-xl bg-indigo-600 px-4 py-2 text-white font-semibold hover:bg-indigo-700"
-                >
-                  Ir para checkout seguro
-                </Link>
-              </div>
-            )}
+          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+            <span style={{ color: '#fff', fontSize: '3rem', fontWeight: 'bold' }}>R$ 69,00</span>
+            <span style={{ color: '#94a3b8' }}>/mes</span>
           </div>
 
-          <ul className="mt-6 text-sm text-purple-200 list-disc pl-5 space-y-1">
-            <li>Simulados ilimitados</li>
-            <li>Explicacoes completas por IA</li>
-            <li>Dashboard completo de desempenho</li>
-            <li>Comparacao com notas de corte SISU</li>
-            <li>Plano de estudos personalizado</li>
-            <li>3 correcoes de redacao/mes</li>
-            <li>10 convites mensais para desafios</li>
-            <li>Suporte prioritario</li>
+          <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 32px' }}>
+            {[
+              'Tudo do PRO',
+              '30 convites por mes',
+              'Simulados personalizados por IA',
+              'Plano de estudos adaptativo',
+              'Correcao de redacao por IA',
+              'Mentoria em grupo',
+              'Badge exclusiva Premium',
+              '+1000 FP de bonus',
+            ].map((feature, i) => (
+              <li key={i} style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                marginBottom: '12px',
+                color: '#cbd5e1',
+              }}>
+                <span style={{ color: '#a855f7', fontSize: '1.2rem' }}>✓</span>
+                {feature}
+              </li>
+            ))}
           </ul>
-        </div>
 
-        <p className="mt-4 text-xs text-purple-400">
-          Duvidas? <Link href="/contato" className="underline hover:text-white">Fale conosco</Link>.
-        </p>
+          {error && (
+            <div style={{
+              background: 'rgba(239, 68, 68, 0.1)',
+              border: '1px solid rgba(239, 68, 68, 0.3)',
+              borderRadius: '8px',
+              padding: '12px',
+              marginBottom: '16px',
+              color: '#f87171',
+              textAlign: 'center',
+            }}>
+              {error}
+            </div>
+          )}
+
+          <button
+            onClick={handleAssinar}
+            disabled={loading}
+            style={{
+              width: '100%',
+              padding: '16px 24px',
+              borderRadius: '12px',
+              border: 'none',
+              background: 'linear-gradient(135deg, #a855f7 0%, #8b5cf6 100%)',
+              color: '#fff',
+              fontSize: '1.1rem',
+              fontWeight: '600',
+              cursor: loading ? 'wait' : 'pointer',
+              opacity: loading ? 0.7 : 1,
+            }}
+          >
+            {loading ? 'Redirecionando...' : 'Assinar Premium Agora'}
+          </button>
+
+          <p style={{ color: '#64748b', fontSize: '0.85rem', textAlign: 'center', marginTop: '16px' }}>
+            Pagamento seguro via Stripe. Cancele quando quiser.
+          </p>
+        </div>
       </div>
     </main>
   );
@@ -172,7 +157,7 @@ function AssinaturaPremiumContent() {
 
 export default function AssinaturaPremiumPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-purple-900 flex items-center justify-center"><div className="text-white">Carregando...</div></div>}>
+    <Suspense fallback={<div style={{ minHeight: '100vh', background: '#1a1a2e', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><div style={{ color: '#fff' }}>Carregando...</div></div>}>
       <AssinaturaPremiumContent />
     </Suspense>
   );

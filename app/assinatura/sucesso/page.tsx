@@ -1,22 +1,57 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useEffect, useState, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-export default function AssinaturaSucessoPage() {
-  const router = useRouter();
+interface SubscriptionData {
+  plano: string;
+  status: string;
+  features: string[];
+}
+
+function AssinaturaSucessoContent() {
   const searchParams = useSearchParams();
   const [loading, setLoading] = useState(true);
+  const [subscriptionData, setSubscriptionData] = useState<SubscriptionData | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const sessionId = searchParams.get('session_id');
 
   useEffect(() => {
-    // Simular verificacao do pagamento
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    const verificarAssinatura = async () => {
+      try {
+        // Pegar usuario do localStorage
+        const userData = localStorage.getItem('usuario');
+        if (!userData) {
+          setError('Usuario nao encontrado');
+          setLoading(false);
+          return;
+        }
 
-    return () => clearTimeout(timer);
+        const user = JSON.parse(userData);
+
+        // Aguardar um pouco para o webhook processar
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        // Verificar subscription atual
+        const response = await fetch(`/api/stripe/subscription?usuarioId=${user.id}`);
+        const data = await response.json();
+
+        if (data.plano && data.plano !== 'free') {
+          setSubscriptionData(data);
+
+          // Atualizar localStorage com novo plano
+          user.plano = data.plano;
+          localStorage.setItem('usuario', JSON.stringify(user));
+        }
+      } catch (err) {
+        console.error('Erro ao verificar assinatura:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    verificarAssinatura();
   }, [sessionId]);
 
   if (loading) {
@@ -44,6 +79,9 @@ export default function AssinaturaSucessoPage() {
       </div>
     );
   }
+
+  const planoNome = subscriptionData?.plano === 'premium' ? 'Premium' : 'PRO';
+  const fpBonus = subscriptionData?.plano === 'premium' ? 1000 : 500;
 
   return (
     <div style={{
@@ -73,6 +111,7 @@ export default function AssinaturaSucessoPage() {
           justifyContent: 'center',
           margin: '0 auto 24px',
           fontSize: '40px',
+          color: '#fff',
         }}>
           ✓
         </div>
@@ -83,7 +122,7 @@ export default function AssinaturaSucessoPage() {
           marginBottom: '16px',
           fontWeight: 'bold',
         }}>
-          Assinatura Ativada!
+          Assinatura {planoNome} Ativada!
         </h1>
 
         <p style={{
@@ -104,8 +143,11 @@ export default function AssinaturaSucessoPage() {
           padding: '16px',
           marginBottom: '32px',
         }}>
-          <p style={{ color: '#eab308', fontSize: '1rem', margin: 0 }}>
-            <strong>+500 a +1000 FP</strong> foram adicionados a sua conta como bonus de boas-vindas!
+          <p style={{ color: '#eab308', fontSize: '1.2rem', margin: 0, fontWeight: 'bold' }}>
+            +{fpBonus} FP
+          </p>
+          <p style={{ color: '#fbbf24', fontSize: '0.9rem', margin: '4px 0 0' }}>
+            Bonus de boas-vindas adicionado!
           </p>
         </div>
 
@@ -121,18 +163,16 @@ export default function AssinaturaSucessoPage() {
             Recursos desbloqueados:
           </h3>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-            <li style={{ color: '#cbd5e1', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ color: '#22c55e' }}>✓</span> Simulados ilimitados
-            </li>
-            <li style={{ color: '#cbd5e1', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ color: '#22c55e' }}>✓</span> Batalhas ilimitadas
-            </li>
-            <li style={{ color: '#cbd5e1', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ color: '#22c55e' }}>✓</span> Todas questoes comentadas
-            </li>
-            <li style={{ color: '#cbd5e1', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ color: '#22c55e' }}>✓</span> Relatorios de desempenho
-            </li>
+            {(subscriptionData?.features || [
+              'Simulados ilimitados',
+              'Batalhas ilimitadas',
+              'Todas questoes comentadas',
+              'Relatorios de desempenho'
+            ]).map((feature, i) => (
+              <li key={i} style={{ color: '#cbd5e1', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{ color: '#22c55e' }}>✓</span> {feature}
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -169,5 +209,23 @@ export default function AssinaturaSucessoPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function AssinaturaSucessoPage() {
+  return (
+    <Suspense fallback={
+      <div style={{
+        minHeight: '100vh',
+        background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+        <div style={{ color: '#fff' }}>Carregando...</div>
+      </div>
+    }>
+      <AssinaturaSucessoContent />
+    </Suspense>
   );
 }

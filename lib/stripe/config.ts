@@ -1,10 +1,43 @@
 import Stripe from 'stripe';
 
-// Inicializa cliente Stripe
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2024-11-20.acacia',
-  typescript: true,
-});
+// Cliente Stripe com lazy loading para evitar erro no build
+let stripeInstance: Stripe | null = null;
+
+export const getStripe = (): Stripe => {
+  if (!stripeInstance) {
+    const secretKey = process.env.STRIPE_SECRET_KEY;
+    if (!secretKey) {
+      throw new Error('STRIPE_SECRET_KEY not configured');
+    }
+    stripeInstance = new Stripe(secretKey, {
+      apiVersion: '2025-11-17.clover' as Stripe.LatestApiVersion,
+      typescript: true,
+    });
+  }
+  return stripeInstance;
+};
+
+// Proxy object para manter compatibilidade com import { stripe }
+export const stripe = {
+  get customers() {
+    return getStripe().customers;
+  },
+  get checkout() {
+    return getStripe().checkout;
+  },
+  get billingPortal() {
+    return getStripe().billingPortal;
+  },
+  get subscriptions() {
+    return getStripe().subscriptions;
+  },
+  get webhooks() {
+    return getStripe().webhooks;
+  },
+  get invoices() {
+    return getStripe().invoices;
+  },
+};
 
 // Configuracao dos planos
 export const PLANS = {

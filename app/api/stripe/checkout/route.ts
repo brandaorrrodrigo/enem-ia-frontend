@@ -7,7 +7,10 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { usuarioId, plano } = body;
 
+    console.log('[CHECKOUT] Iniciando checkout:', { usuarioId, plano });
+
     if (!usuarioId || !plano) {
+      console.error('[CHECKOUT] Erro: usuarioId e plano sao obrigatorios');
       return NextResponse.json(
         { error: 'usuarioId e plano sao obrigatorios' },
         { status: 400 }
@@ -15,19 +18,23 @@ export async function POST(request: NextRequest) {
     }
 
     if (plano !== 'pro' && plano !== 'premium') {
+      console.error('[CHECKOUT] Erro: Plano invalido:', plano);
       return NextResponse.json(
         { error: 'Plano invalido. Use: pro ou premium' },
         { status: 400 }
       );
     }
 
-    const planConfig = PLANS[plano];
+    const planConfig = PLANS[plano as "pro" | "premium"];
     if (!planConfig.priceId) {
+      console.error('[CHECKOUT] Erro: Preco nao configurado para plano:', plano);
       return NextResponse.json(
         { error: 'Preco nao configurado para este plano' },
         { status: 400 }
       );
     }
+
+    console.log('[CHECKOUT] Price ID:', planConfig.priceId);
 
     // Buscar usuario
     const usuario = await prisma.usuario.findUnique({
@@ -36,14 +43,18 @@ export async function POST(request: NextRequest) {
     });
 
     if (!usuario) {
+      console.error('[CHECKOUT] Erro: Usuario nao encontrado:', usuarioId);
       return NextResponse.json(
         { error: 'Usuario nao encontrado' },
         { status: 404 }
       );
     }
 
+    console.log('[CHECKOUT] Usuario encontrado:', usuario.email);
+
     // Verificar se ja tem assinatura ativa
     if (usuario.subscription?.status === 'active') {
+      console.error('[CHECKOUT] Erro: Usuario ja possui assinatura ativa');
       return NextResponse.json(
         { error: 'Voce ja possui uma assinatura ativa' },
         { status: 400 }
@@ -54,6 +65,7 @@ export async function POST(request: NextRequest) {
     let stripeCustomerId = usuario.subscription?.stripeCustomerId;
 
     if (!stripeCustomerId) {
+      console.log('[CHECKOUT] Criando customer no Stripe...');
       const customer = await stripe.customers.create({
         email: usuario.email,
         name: usuario.nome || undefined,
@@ -62,6 +74,7 @@ export async function POST(request: NextRequest) {
         },
       });
       stripeCustomerId = customer.id;
+      console.log('[CHECKOUT] Customer criado:', stripeCustomerId);
 
       // Criar registro de subscription (inativo por enquanto)
       await prisma.subscription.create({
@@ -72,7 +85,11 @@ export async function POST(request: NextRequest) {
           plano: 'free',
         },
       });
+      console.log('[CHECKOUT] Subscription record criado');
     }
+
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://enem-pro.com';
+    console.log('[CHECKOUT] App URL:', appUrl);
 
     // Criar checkout session
     const session = await stripe.checkout.sessions.create({
@@ -85,8 +102,8 @@ export async function POST(request: NextRequest) {
           quantity: 1,
         },
       ],
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/assinatura/sucesso?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/planos`,
+      success_url: `${appUrl}/assinatura/sucesso?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${appUrl}/assinatura/cancelada`,
       metadata: {
         usuarioId: usuario.id,
         plano: plano,
@@ -101,6 +118,9 @@ export async function POST(request: NextRequest) {
       billing_address_collection: 'required',
     });
 
+    console.log('[CHECKOUT] Session criada:', session.id);
+    console.log('[CHECKOUT] Redirect URL:', session.url);
+
     return NextResponse.json({
       success: true,
       sessionId: session.id,
@@ -108,7 +128,7 @@ export async function POST(request: NextRequest) {
     });
 
   } catch (error: any) {
-    console.error('Erro ao criar checkout:', error);
+    console.error('[CHECKOUT] Erro fatal:', error);
     return NextResponse.json(
       { error: 'Erro ao processar pagamento', details: error?.message },
       { status: 500 }

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import FloatingNav from '@/components/FloatingNav';
 import LeagueCard from '@/components/social/LeagueCard';
 import ShareButton from '@/components/social/ShareButton';
@@ -24,6 +25,14 @@ interface UserProfile {
   membroDesde: string;
   badges: { id: string; nome: string; emoji: string; data: string }[];
   estatisticasPorArea: { area: string; porcentagem: number }[];
+}
+
+interface SubscriptionInfo {
+  plano: string;
+  status: string;
+  features: string[];
+  currentPeriodEnd?: string;
+  cancelAtPeriodEnd?: boolean;
 }
 
 const mockProfile: UserProfile = {
@@ -59,23 +68,72 @@ const mockProfile: UserProfile = {
 export default function PerfilPage() {
   const router = useRouter();
   const [profile, setProfile] = useState<UserProfile>(mockProfile);
+  const [subscription, setSubscription] = useState<SubscriptionInfo | null>(null);
   const [activeTab, setActiveTab] = useState<'estatisticas' | 'conquistas' | 'atividades'>('estatisticas');
   const [loading, setLoading] = useState(true);
+  const [managingPortal, setManagingPortal] = useState(false);
 
   useEffect(() => {
-    // Carregar dados do usuario
-    const userLocal = localStorage.getItem('user');
-    if (userLocal) {
-      const user = JSON.parse(userLocal);
-      setProfile(prev => ({
-        ...prev,
-        nome: user.nome || prev.nome,
-        email: user.email || prev.email,
-        pontosFP: user.pontosFP || prev.pontosFP,
-      }));
-    }
-    setLoading(false);
+    const loadData = async () => {
+      // Carregar dados do usuario
+      const userLocal = localStorage.getItem('usuario');
+      if (userLocal) {
+        const user = JSON.parse(userLocal);
+        setProfile(prev => ({
+          ...prev,
+          id: user.id || prev.id,
+          nome: user.nome || prev.nome,
+          email: user.email || prev.email,
+          pontosFP: user.pontosFP || prev.pontosFP,
+        }));
+
+        // Carregar dados da subscription
+        try {
+          const response = await fetch(`/api/stripe/subscription?usuarioId=${user.id}`);
+          if (response.ok) {
+            const data = await response.json();
+            setSubscription(data);
+          }
+        } catch (error) {
+          console.error('Erro ao carregar subscription:', error);
+        }
+      }
+      setLoading(false);
+    };
+
+    loadData();
   }, []);
+
+  const handleManageSubscription = async () => {
+    setManagingPortal(true);
+    try {
+      const userLocal = localStorage.getItem('usuario');
+      if (!userLocal) {
+        router.push('/login');
+        return;
+      }
+      const user = JSON.parse(userLocal);
+
+      const response = await fetch('/api/stripe/portal', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ usuarioId: user.id }),
+      });
+
+      const data = await response.json();
+
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert(data.error || 'Erro ao acessar portal');
+      }
+    } catch (error) {
+      console.error('Erro:', error);
+      alert('Erro ao acessar portal de assinatura');
+    } finally {
+      setManagingPortal(false);
+    }
+  };
 
   if (loading) {
     return (
@@ -86,7 +144,7 @@ export default function PerfilPage() {
         justifyContent: 'center',
         background: 'var(--chalkboard-green)'
       }}>
-      <FloatingBackButton />
+        <FloatingBackButton />
         <div style={{ textAlign: 'center' }}>
           <div style={{
             width: '48px',
@@ -108,6 +166,11 @@ export default function PerfilPage() {
       </div>
     );
   }
+
+  const planoLabel = subscription?.plano === 'premium' ? 'Premium' :
+                     subscription?.plano === 'pro' ? 'PRO' : 'Gratuito';
+  const planoColor = subscription?.plano === 'premium' ? '#a855f7' :
+                     subscription?.plano === 'pro' ? '#3b82f6' : '#94a3b8';
 
   return (
     <div style={{
@@ -143,14 +206,32 @@ export default function PerfilPage() {
               fontWeight: 'bold',
               color: 'var(--chalkboard-green)',
               border: '4px solid var(--chalk-dim)',
-              flexShrink: 0
+              flexShrink: 0,
+              position: 'relative'
             }}>
               {profile.nome.charAt(0)}
+              {/* Badge do plano */}
+              {subscription?.plano && subscription.plano !== 'free' && (
+                <div style={{
+                  position: 'absolute',
+                  bottom: '-4px',
+                  right: '-4px',
+                  background: planoColor,
+                  color: '#fff',
+                  fontSize: '0.65rem',
+                  fontWeight: 'bold',
+                  padding: '2px 6px',
+                  borderRadius: '8px',
+                  border: '2px solid var(--chalkboard-green)'
+                }}>
+                  {planoLabel}
+                </div>
+              )}
             </div>
 
             {/* Info */}
             <div style={{ flex: 1 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
                 <h1 style={{
                   fontSize: '1.875rem',
                   fontWeight: 'bold',
@@ -161,6 +242,17 @@ export default function PerfilPage() {
                 </h1>
                 <span style={{ fontSize: '1.875rem' }}>
                   {profile.liga === 'Ouro' ? '🥇' : profile.liga === 'Platina' ? '💎' : '🥉'}
+                </span>
+                {/* Badge do plano inline */}
+                <span style={{
+                  background: planoColor,
+                  color: '#fff',
+                  fontSize: '0.75rem',
+                  fontWeight: '600',
+                  padding: '4px 12px',
+                  borderRadius: '12px'
+                }}>
+                  Plano {planoLabel}
                 </span>
               </div>
               <p style={{
@@ -183,8 +275,6 @@ export default function PerfilPage() {
                     color: 'var(--chalk-white)',
                     transition: 'color 0.3s'
                   }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-yellow)'}
-                  onMouseLeave={(e) => e.currentTarget.style.color = 'var(--chalk-white)'}
                 >
                   <span style={{
                     fontWeight: 'bold',
@@ -205,8 +295,6 @@ export default function PerfilPage() {
                     color: 'var(--chalk-white)',
                     transition: 'color 0.3s'
                   }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-yellow)'}
-                  onMouseLeave={(e) => e.currentTarget.style.color = 'var(--chalk-white)'}
                 >
                   <span style={{
                     fontWeight: 'bold',
@@ -248,6 +336,94 @@ export default function PerfilPage() {
           </div>
         </div>
 
+        {/* Card de Assinatura */}
+        <div className="chalkboard-card" style={{ marginBottom: '1.5rem' }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '1rem'
+          }}>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                <span style={{ fontSize: '1.5rem' }}>
+                  {subscription?.plano === 'premium' ? '💎' : subscription?.plano === 'pro' ? '⭐' : '📋'}
+                </span>
+                <h3 style={{
+                  color: 'var(--chalk-white)',
+                  fontSize: '1.25rem',
+                  fontWeight: 'bold',
+                  fontFamily: 'var(--font-handwriting)'
+                }}>
+                  Plano {planoLabel}
+                </h3>
+                <span style={{
+                  background: subscription?.status === 'active' ? 'rgba(34, 197, 94, 0.2)' : 'rgba(239, 68, 68, 0.2)',
+                  color: subscription?.status === 'active' ? '#22c55e' : '#ef4444',
+                  padding: '2px 8px',
+                  borderRadius: '4px',
+                  fontSize: '0.75rem',
+                  fontWeight: '600'
+                }}>
+                  {subscription?.status === 'active' ? 'Ativo' : 'Inativo'}
+                </span>
+              </div>
+
+              {subscription?.plano !== 'free' && subscription?.currentPeriodEnd && (
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                  {subscription.cancelAtPeriodEnd
+                    ? `Cancela em ${new Date(subscription.currentPeriodEnd).toLocaleDateString('pt-BR')}`
+                    : `Renova em ${new Date(subscription.currentPeriodEnd).toLocaleDateString('pt-BR')}`
+                  }
+                </p>
+              )}
+
+              {subscription?.plano === 'free' && (
+                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
+                  Acesso limitado. Faca upgrade para desbloquear recursos!
+                </p>
+              )}
+            </div>
+
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              {subscription?.plano === 'free' ? (
+                <Link
+                  href="/planos"
+                  style={{
+                    padding: '0.75rem 1.5rem',
+                    background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+                    color: '#fff',
+                    borderRadius: '8px',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    fontSize: '0.875rem'
+                  }}
+                >
+                  ⬆️ Fazer Upgrade
+                </Link>
+              ) : (
+                <button
+                  onClick={handleManageSubscription}
+                  disabled={managingPortal}
+                  style={{
+                    padding: '0.75rem 1.5rem',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    color: 'var(--chalk-white)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    borderRadius: '8px',
+                    cursor: managingPortal ? 'wait' : 'pointer',
+                    fontWeight: '600',
+                    fontSize: '0.875rem'
+                  }}
+                >
+                  {managingPortal ? 'Abrindo...' : '⚙️ Gerenciar Assinatura'}
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+
         {/* Stats Bar */}
         <div className="stats-bar" style={{ marginBottom: '1.5rem' }}>
           <div className="stat-item">
@@ -278,84 +454,27 @@ export default function PerfilPage() {
           <div className="lg:col-span-2">
             {/* Tabs */}
             <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
-              <button
-                onClick={() => setActiveTab('estatisticas')}
-                style={{
-                  padding: '0.5rem 1rem',
-                  borderRadius: '0.75rem',
-                  fontWeight: '600',
-                  transition: 'all 0.3s',
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontFamily: 'var(--font-handwriting)',
-                  background: activeTab === 'estatisticas' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
-                  color: activeTab === 'estatisticas' ? 'var(--chalkboard-green)' : 'var(--chalk-dim)'
-                }}
-                onMouseEnter={(e) => {
-                  if (activeTab !== 'estatisticas') {
-                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (activeTab !== 'estatisticas') {
-                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-                  }
-                }}
-              >
-                📊 Estatisticas
-              </button>
-              <button
-                onClick={() => setActiveTab('conquistas')}
-                style={{
-                  padding: '0.5rem 1rem',
-                  borderRadius: '0.75rem',
-                  fontWeight: '600',
-                  transition: 'all 0.3s',
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontFamily: 'var(--font-handwriting)',
-                  background: activeTab === 'conquistas' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
-                  color: activeTab === 'conquistas' ? 'var(--chalkboard-green)' : 'var(--chalk-dim)'
-                }}
-                onMouseEnter={(e) => {
-                  if (activeTab !== 'conquistas') {
-                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (activeTab !== 'conquistas') {
-                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-                  }
-                }}
-              >
-                🏆 Conquistas
-              </button>
-              <button
-                onClick={() => setActiveTab('atividades')}
-                style={{
-                  padding: '0.5rem 1rem',
-                  borderRadius: '0.75rem',
-                  fontWeight: '600',
-                  transition: 'all 0.3s',
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontFamily: 'var(--font-handwriting)',
-                  background: activeTab === 'atividades' ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
-                  color: activeTab === 'atividades' ? 'var(--chalkboard-green)' : 'var(--chalk-dim)'
-                }}
-                onMouseEnter={(e) => {
-                  if (activeTab !== 'atividades') {
-                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (activeTab !== 'atividades') {
-                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-                  }
-                }}
-              >
-                📜 Atividades
-              </button>
+              {['estatisticas', 'conquistas', 'atividades'].map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab as any)}
+                  style={{
+                    padding: '0.5rem 1rem',
+                    borderRadius: '0.75rem',
+                    fontWeight: '600',
+                    transition: 'all 0.3s',
+                    border: 'none',
+                    cursor: 'pointer',
+                    fontFamily: 'var(--font-handwriting)',
+                    background: activeTab === tab ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.1)',
+                    color: activeTab === tab ? 'var(--chalkboard-green)' : 'var(--chalk-dim)'
+                  }}
+                >
+                  {tab === 'estatisticas' && '📊 Estatisticas'}
+                  {tab === 'conquistas' && '🏆 Conquistas'}
+                  {tab === 'atividades' && '📜 Atividades'}
+                </button>
+              ))}
             </div>
 
             {/* Conteudo das tabs */}
@@ -496,12 +615,8 @@ export default function PerfilPage() {
                         padding: '1rem',
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '1rem',
-                        transition: 'background 0.3s',
-                        cursor: 'pointer'
+                        gap: '1rem'
                       }}
-                      onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'}
-                      onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
                     >
                       <span style={{ fontSize: '2.25rem' }}>{badge.emoji}</span>
                       <div>
@@ -515,53 +630,6 @@ export default function PerfilPage() {
                         <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>
                           Conquistado em {new Date(badge.data).toLocaleDateString('pt-BR')}
                         </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Conquistas bloqueadas */}
-                <div style={{
-                  height: '2px',
-                  background: 'var(--chalk-dim)',
-                  margin: '1.5rem 0',
-                  opacity: 0.3
-                }}></div>
-                <h3 style={{
-                  color: 'var(--chalk-dim)',
-                  fontWeight: 'bold',
-                  marginBottom: '1rem',
-                  fontFamily: 'var(--font-handwriting)'
-                }}>
-                  🔒 Proximas Conquistas
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4" style={{ opacity: 0.5 }}>
-                  {[
-                    { nome: 'Streak de 30 dias', emoji: '🔥', desc: 'Estude 30 dias seguidos' },
-                    { nome: 'Top 50 Global', emoji: '🌟', desc: 'Entre no top 50' },
-                    { nome: 'Liga Platina', emoji: '💎', desc: 'Alcance a Liga Platina' },
-                  ].map((badge, idx) => (
-                    <div
-                      key={idx}
-                      style={{
-                        background: 'rgba(255, 255, 255, 0.05)',
-                        borderRadius: '0.75rem',
-                        padding: '1rem',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '1rem'
-                      }}
-                    >
-                      <span style={{ fontSize: '2.25rem', filter: 'grayscale(100%)' }}>{badge.emoji}</span>
-                      <div>
-                        <p style={{
-                          color: 'var(--chalk-white)',
-                          fontWeight: 'bold',
-                          fontFamily: 'var(--font-handwriting)'
-                        }}>
-                          {badge.nome}
-                        </p>
-                        <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>{badge.desc}</p>
                       </div>
                     </div>
                   ))}

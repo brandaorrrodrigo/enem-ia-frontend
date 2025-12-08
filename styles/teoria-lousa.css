@@ -1,0 +1,674 @@
+/**
+ * ENEM PRO - Estilos da Lousa Verde
+ * Visual estilo sala de aula com quadro verde e moldura de madeira
+ */
+
+/* ============================================================
+   IMPORTAÇÃO DE FONTES
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ============================================================
+   VARIÁVEIS CSS
+   ============================================================ */
+:root {
+  /* Cores da Lousa */
+  --lousa-verde-escuro: #1a472a;
+  --lousa-verde-medio: #2d5a3d;
+  --lousa-verde-claro: #3d7a52;
+
+  /* Cores da Moldura */
+  --madeira-escura: #4a3728;
+  --madeira-media: #6b4423;
+  --madeira-clara: #8b5a2b;
+  --madeira-borda: #3d2817;
+
+  /* Cores do Giz */
+  --giz-branco: #f5f5dc;
+  --giz-amarelo: #ffd700;
+  --giz-azul: #87ceeb;
+  --giz-rosa: #ffb6c1;
+  --giz-verde: #98fb98;
+  --giz-laranja: #ffa07a;
+
+  /* Cores ENEM PRO */
+  --enem-amarelo: #f5a623;
+  --enem-azul: #2563eb;
+  --enem-verde: #16a34a;
+  --enem-vermelho: #dc2626;
+
+  /* Fontes */
+  --fonte-titulo: 'Patrick Hand', cursive;
+  --fonte-corpo: 'Poppins', sans-serif;
+
+  /* Sombras */
+  --sombra-moldura: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --sombra-caixa: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================
+   CONTAINER PRINCIPAL DA LOUSA
+   ============================================================ */
+.lousa-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 2rem;
+}
+
+.lousa-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   MOLDURA DE MADEIRA
+   ============================================================ */
+.moldura-madeira {
+  background: linear-gradient(
+    180deg,
+    var(--madeira-clara) 0%,
+    var(--madeira-media) 20%,
+    var(--madeira-escura) 80%,
+    var(--madeira-borda) 100%
+  );
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow:
+    var(--sombra-moldura),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.moldura-madeira::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 3px solid var(--madeira-borda);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+/* ============================================================
+   SUPERFÍCIE DA LOUSA
+   ============================================================ */
+.lousa-superficie {
+  background: linear-gradient(
+    145deg,
+    var(--lousa-verde-escuro) 0%,
+    var(--lousa-verde-medio) 50%,
+    var(--lousa-verde-escuro) 100%
+  );
+  border-radius: 4px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+/* Textura de lousa */
+.lousa-superficie::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(ellipse at 20% 30%, rgba(255,255,255,0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(255,255,255,0.02) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Manchas de apagador */
+.lousa-superficie::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 200px 100px at 30% 20%, rgba(255,255,255,0.015) 0%, transparent 70%),
+    radial-gradient(ellipse 150px 80px at 70% 60%, rgba(255,255,255,0.01) 0%, transparent 70%),
+    radial-gradient(ellipse 180px 90px at 50% 80%, rgba(255,255,255,0.012) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ============================================================
+   EFEITO DE GIZ NOS TEXTOS
+   ============================================================ */
+.texto-giz {
+  color: var(--giz-branco);
+  text-shadow:
+    0 0 1px rgba(255, 255, 255, 0.8),
+    0 0 2px rgba(255, 255, 255, 0.4),
+    1px 1px 0 rgba(0, 0, 0, 0.3);
+  font-family: var(--fonte-titulo);
+}
+
+.titulo-giz {
+  font-family: var(--fonte-titulo);
+  color: var(--giz-amarelo);
+  font-size: 2.5rem;
+  text-shadow:
+    0 0 2px rgba(255, 215, 0, 0.8),
+    0 0 4px rgba(255, 215, 0, 0.4),
+    2px 2px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.titulo-giz::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--giz-amarelo), transparent);
+  opacity: 0.6;
+}
+
+.subtitulo-giz {
+  font-family: var(--fonte-titulo);
+  color: var(--giz-azul);
+  font-size: 1.8rem;
+  text-shadow:
+    0 0 2px rgba(135, 206, 235, 0.8),
+    1px 1px 0 rgba(0, 0, 0, 0.3);
+  margin: 2rem 0 1rem;
+}
+
+/* ============================================================
+   CORPO DO TEXTO
+   ============================================================ */
+.texto-corpo {
+  font-family: var(--fonte-corpo);
+  color: var(--giz-branco);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.texto-corpo p {
+  margin-bottom: 1rem;
+}
+
+.texto-corpo strong {
+  color: var(--giz-amarelo);
+  font-weight: 600;
+}
+
+.texto-corpo em {
+  color: var(--giz-azul);
+  font-style: normal;
+}
+
+/* ============================================================
+   CAIXA DO PROFESSOR (QUADRO DIDÁTICO)
+   ============================================================ */
+.caixa-professor {
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 4px solid var(--giz-amarelo);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.caixa-professor::before {
+  content: '📝';
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  font-size: 1.5rem;
+  background: var(--lousa-verde-medio);
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.caixa-professor-titulo {
+  font-family: var(--fonte-titulo);
+  color: var(--giz-amarelo);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================
+   CAIXA DE EXEMPLO
+   ============================================================ */
+.caixa-exemplo {
+  background: rgba(37, 99, 235, 0.15);
+  border: 2px dashed var(--giz-azul);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.caixa-exemplo::before {
+  content: '💡 Exemplo';
+  position: absolute;
+  top: -14px;
+  left: 16px;
+  font-family: var(--fonte-titulo);
+  font-size: 1.1rem;
+  color: var(--giz-azul);
+  background: var(--lousa-verde-medio);
+  padding: 0 12px;
+  border-radius: 4px;
+}
+
+.caixa-exemplo-numero {
+  font-family: var(--fonte-titulo);
+  color: var(--giz-azul);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================================
+   CAIXA DE FÓRMULA
+   ============================================================ */
+.caixa-formula {
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid var(--giz-amarelo);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.formula {
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  color: var(--giz-amarelo);
+  text-shadow:
+    0 0 2px rgba(255, 215, 0, 0.6),
+    1px 1px 0 rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+}
+
+/* ============================================================
+   CAIXA DE RESUMO
+   ============================================================ */
+.caixa-resumo {
+  background: linear-gradient(135deg, rgba(22, 163, 74, 0.2) 0%, rgba(22, 163, 74, 0.1) 100%);
+  border: 2px solid var(--giz-verde);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.caixa-resumo::before {
+  content: '📌 Resumo ENEM PRO';
+  position: absolute;
+  top: -14px;
+  left: 16px;
+  font-family: var(--fonte-titulo);
+  font-size: 1.1rem;
+  color: var(--giz-verde);
+  background: var(--lousa-verde-medio);
+  padding: 0 12px;
+  border-radius: 4px;
+}
+
+.caixa-resumo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.caixa-resumo li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--giz-branco);
+  font-family: var(--fonte-corpo);
+}
+
+.caixa-resumo li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--giz-verde);
+  font-weight: bold;
+}
+
+/* ============================================================
+   LISTA DE TÓPICOS
+   ============================================================ */
+.lista-topicos {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.lista-topicos li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--giz-branco);
+  font-family: var(--fonte-corpo);
+}
+
+.lista-topicos li::before {
+  content: '•';
+  position: absolute;
+  left: 0.5rem;
+  color: var(--giz-amarelo);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* ============================================================
+   QUESTÃO INTERATIVA
+   ============================================================ */
+.questao-container {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--giz-laranja);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.questao-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.questao-badge {
+  background: var(--enem-amarelo);
+  color: #1a1a2e;
+  font-family: var(--fonte-titulo);
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.questao-titulo {
+  font-family: var(--fonte-titulo);
+  color: var(--giz-laranja);
+  font-size: 1.3rem;
+}
+
+.questao-enunciado {
+  font-family: var(--fonte-corpo);
+  color: var(--giz-branco);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.questao-btn-resolucao {
+  background: linear-gradient(135deg, var(--enem-azul) 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--fonte-corpo);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.questao-btn-resolucao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.questao-btn-resolucao.aberta {
+  background: linear-gradient(135deg, var(--enem-verde) 0%, #15803d 100%);
+}
+
+.questao-resolucao {
+  background: rgba(22, 163, 74, 0.15);
+  border-left: 4px solid var(--enem-verde);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.questao-resolucao-titulo {
+  font-family: var(--fonte-titulo);
+  color: var(--giz-verde);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.questao-passo {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  font-family: var(--fonte-corpo);
+  color: var(--giz-branco);
+}
+
+.questao-gabarito {
+  background: var(--enem-amarelo);
+  color: #1a1a2e;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-family: var(--fonte-titulo);
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* ============================================================
+   CABEÇALHO DA PÁGINA
+   ============================================================ */
+.teoria-header {
+  background: linear-gradient(135deg, var(--enem-amarelo) 0%, #d4940f 100%);
+  padding: 1rem 2rem;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.teoria-header-titulo {
+  font-family: var(--fonte-titulo);
+  color: #1a1a2e;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.teoria-header-badge {
+  background: #1a1a2e;
+  color: var(--enem-amarelo);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: var(--fonte-corpo);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ============================================================
+   NAVEGAÇÃO ENTRE TEMAS
+   ============================================================ */
+.tema-navegacao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px dashed rgba(255, 255, 255, 0.2);
+}
+
+.tema-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--giz-branco);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--fonte-corpo);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tema-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(4px);
+}
+
+.tema-nav-btn.anterior:hover {
+  transform: translateX(-4px);
+}
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+@media (max-width: 768px) {
+  .lousa-container {
+    padding: 1rem;
+  }
+
+  .moldura-madeira {
+    padding: 12px;
+  }
+
+  .lousa-superficie {
+    padding: 1.5rem;
+  }
+
+  .titulo-giz {
+    font-size: 1.8rem;
+  }
+
+  .subtitulo-giz {
+    font-size: 1.4rem;
+  }
+
+  .texto-corpo {
+    font-size: 1rem;
+  }
+
+  .formula {
+    font-size: 1.2rem;
+  }
+
+  .questao-container {
+    padding: 1.25rem;
+  }
+
+  .teoria-header {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .tema-navegacao {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tema-nav-btn {
+    justify-content: center;
+  }
+}
+
+/* ============================================================
+   ANIMAÇÕES
+   ============================================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gizEscrever {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.animate-giz {
+  animation: gizEscrever 1s ease-out forwards;
+}
+
+/* ============================================================
+   ÍNDICE NAVEGÁVEL
+   ============================================================ */
+.indice-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.indice-card {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.indice-card:hover {
+  border-color: var(--giz-amarelo);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.2);
+}
+
+.indice-card-numero {
+  font-family: var(--fonte-titulo);
+  font-size: 2.5rem;
+  color: var(--giz-amarelo);
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+.indice-card-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.3rem;
+  color: var(--giz-branco);
+  margin-bottom: 0.5rem;
+}
+
+.indice-card-descricao {
+  font-family: var(--fonte-corpo);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}

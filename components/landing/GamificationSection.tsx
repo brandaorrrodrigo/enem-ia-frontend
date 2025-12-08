@@ -7,7 +7,7 @@ export function GamificationSection() {
     {
       icon: '⭐',
       title: 'FP e niveis',
-      description: 'Ganhe FP (Focus Points) ao responder questoes, finalizar simulados e manter sua sequencia de estudos ativa. Suba de nivel e desbloqueie conquistas!',
+      description: 'Ganhe FP ao responder questoes, finalizar simulados e manter sua sequencia de estudos ativa. Suba de nivel e desbloqueie conquistas!',
     },
     {
       icon: '🏆',

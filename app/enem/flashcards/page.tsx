@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Flashcard {
   id: string;
@@ -232,6 +233,7 @@ export default function FlashcardsPage() {
 
     return (
       <main className="min-h-screen pt-16 pb-24" style={{ backgroundColor: 'var(--chalkboard-bg)' }}>
+      <FloatingBackButton />
         <FloatingNav />
 
         <div className="container max-w-2xl mx-auto px-4 py-8">
@@ -392,6 +394,7 @@ export default function FlashcardsPage() {
 
   return (
     <main className="min-h-screen pt-16 pb-24" style={{ backgroundColor: 'var(--chalkboard-bg)' }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       <div className="container mx-auto px-4 py-8">

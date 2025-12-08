@@ -1,0 +1,1075 @@
+{
+  "id": "matematica-basica-enem",
+  "slug": "matematica-basica-enem",
+  "titulo": "Matemática Básica para o ENEM",
+  "categoria": "matematica",
+  "nivel": "intermediario",
+  "descricao": "Fundamentos essenciais de matemática: conjuntos, porcentagem, razão, proporção, regra de três, equações e funções básicas.",
+  "icone": "Calculator",
+  "cor": "#E74C3C",
+  "tempoEstimado": "18 horas",
+  "fpRecompensa": 450,
+  "tags": ["matemática", "porcentagem", "equações", "funções", "conjuntos", "enem"],
+  "modulos": [
+    {
+      "id": "m141",
+      "titulo": "Conjuntos Numéricos e Operações",
+      "resumo": "Estude os conjuntos numéricos fundamentais e suas propriedades essenciais.",
+      "topicos": [
+        {
+          "titulo": "Conjuntos Numéricos",
+          "conteudo": "Os conjuntos numéricos formam uma hierarquia: Naturais (ℕ) = {0, 1, 2, 3, ...} - números de contagem. Inteiros (ℤ) = {..., -2, -1, 0, 1, 2, ...} - inclui negativos. Racionais (ℚ) = números que podem ser escritos como fração p/q, onde q≠0 - inclui decimais finitos e dízimas periódicas. Irracionais (𝕀) = decimais infinitos não periódicos, como √2, π, e. Reais (ℝ) = racionais ∪ irracionais. Relação: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Cada conjunto está contido no seguinte."
+        },
+        {
+          "titulo": "Operações com Conjuntos",
+          "conteudo": "União (A ∪ B): elementos que pertencem a A OU a B. Interseção (A ∩ B): elementos que pertencem a A E a B. Diferença (A - B): elementos de A que não estão em B. Complementar (A^c): elementos que não pertencem a A (em relação ao universo). Propriedades: A ∪ ∅ = A, A ∩ ∅ = ∅, A ∪ A = A, A ∩ A = A. Número de elementos: n(A ∪ B) = n(A) + n(B) - n(A ∩ B). Para três conjuntos: n(A ∪ B ∪ C) = n(A) + n(B) + n(C) - n(A∩B) - n(A∩C) - n(B∩C) + n(A∩B∩C)."
+        },
+        {
+          "titulo": "Intervalos Numéricos",
+          "conteudo": "Intervalos representam subconjuntos dos reais. Intervalo fechado [a, b]: inclui extremos, a ≤ x ≤ b. Intervalo aberto (a, b): exclui extremos, a < x < b. Semi-abertos: [a, b) inclui a, exclui b; (a, b] exclui a, inclui b. Infinitos: [a, +∞) significa x ≥ a; (-∞, b] significa x ≤ b; (-∞, +∞) = ℝ. Notação: colchete [ ] inclui o ponto, parêntese ( ) exclui. Usado em inequações e domínio de funções."
+        }
+      ],
+      "exemplos": [
+        "√4 = 2 é racional (inteiro); √2 ≈ 1,414... é irracional (decimal infinito não periódico).",
+        "Se A = {1,2,3} e B = {2,3,4}, então A ∪ B = {1,2,3,4} e A ∩ B = {2,3}.",
+        "O intervalo [-2, 5) representa todos os reais de -2 até 5, incluindo -2 mas não o 5."
+      ],
+      "dicas": [
+        "Todo inteiro é racional (ex: 5 = 5/1). Todo racional é real.",
+        "Dízima periódica é racional! Apenas decimais infinitos sem padrão são irracionais.",
+        "Na fórmula n(A∪B), subtrai a interseção para não contar duas vezes."
+      ],
+      "questoes": [
+        {
+          "id": "q141-1",
+          "enunciado": "O número √9 pertence ao conjunto dos números:",
+          "alternativas": {
+            "A": "Irracionais apenas",
+            "B": "Racionais não inteiros",
+            "C": "Naturais",
+            "D": "Inteiros negativos",
+            "E": "Irracionais e racionais"
+          },
+          "correta": "C",
+          "explicacao": "√9 = 3, que é um número natural. Portanto, pertence a ℕ, e consequentemente também a ℤ, ℚ e ℝ. Não é irracional pois tem resultado exato.",
+          "dificuldade": "facil",
+          "tags": ["conjuntos", "naturais", "raiz quadrada"]
+        },
+        {
+          "id": "q141-2",
+          "enunciado": "Em uma pesquisa, 80 pessoas gostam de futebol, 50 gostam de vôlei e 30 gostam de ambos. Quantas pessoas foram entrevistadas?",
+          "alternativas": {
+            "A": "130",
+            "B": "100",
+            "C": "110",
+            "D": "160",
+            "E": "80"
+          },
+          "correta": "B",
+          "explicacao": "Usando n(A∪B) = n(A) + n(B) - n(A∩B): n(F∪V) = 80 + 50 - 30 = 100 pessoas. Subtrai-se a interseção porque as 30 pessoas que gostam de ambos foram contadas duas vezes.",
+          "dificuldade": "medio",
+          "tags": ["conjuntos", "união", "interseção"]
+        },
+        {
+          "id": "q141-3",
+          "enunciado": "A dízima periódica 0,333... é um número:",
+          "alternativas": {
+            "A": "Irracional",
+            "B": "Inteiro",
+            "C": "Natural",
+            "D": "Racional",
+            "E": "Imaginário"
+          },
+          "correta": "D",
+          "explicacao": "Toda dízima periódica é um número racional, pois pode ser escrita como fração. No caso, 0,333... = 1/3. Números irracionais são decimais infinitos NÃO periódicos, como π e √2.",
+          "dificuldade": "facil",
+          "tags": ["conjuntos", "racionais", "dízima"]
+        },
+        {
+          "id": "q141-4",
+          "enunciado": "O intervalo que representa os números reais x tais que -3 < x ≤ 5 é:",
+          "alternativas": {
+            "A": "[-3, 5]",
+            "B": "(-3, 5)",
+            "C": "(-3, 5]",
+            "D": "[-3, 5)",
+            "E": "]-3, 5["
+          },
+          "correta": "C",
+          "explicacao": "Como -3 não está incluído (< estrito) usa-se parêntese: (-3. Como 5 está incluído (≤) usa-se colchete: 5]. Resultado: (-3, 5]. A opção E usa notação alternativa equivalente a (a, b).",
+          "dificuldade": "medio",
+          "tags": ["intervalos", "notação", "inequações"]
+        },
+        {
+          "id": "q141-5",
+          "enunciado": "Se A = {1, 2, 3, 4, 5} e B = {3, 4, 5, 6, 7}, então A - B é igual a:",
+          "alternativas": {
+            "A": "{1, 2}",
+            "B": "{6, 7}",
+            "C": "{3, 4, 5}",
+            "D": "{1, 2, 3, 4, 5, 6, 7}",
+            "E": "{1, 2, 6, 7}"
+          },
+          "correta": "A",
+          "explicacao": "A diferença A - B são os elementos de A que NÃO pertencem a B. De A = {1, 2, 3, 4, 5}, retiramos os que estão em B (3, 4, 5). Sobram: {1, 2}.",
+          "dificuldade": "facil",
+          "tags": ["conjuntos", "diferença", "operações"]
+        }
+      ]
+    },
+    {
+      "id": "m142",
+      "titulo": "Razão, Proporção e Regra de Três",
+      "resumo": "Domine conceitos fundamentais de razão, proporção e suas aplicações práticas.",
+      "topicos": [
+        {
+          "titulo": "Razão e Proporção",
+          "conteudo": "Razão é a divisão entre duas grandezas: a/b ou a:b. Proporção é a igualdade entre duas razões: a/b = c/d. Propriedade fundamental: a·d = b·c (produto dos meios = produto dos extremos). Grandezas diretamente proporcionais: quando uma aumenta, a outra aumenta na mesma proporção. Grandezas inversamente proporcionais: quando uma aumenta, a outra diminui proporcionalmente. Escala: razão entre medida no desenho e medida real. Escala 1:100 significa que 1 cm no desenho = 100 cm (1 m) na realidade."
+        },
+        {
+          "titulo": "Regra de Três Simples",
+          "conteudo": "Usada quando há duas grandezas proporcionais. Passos: 1) Identifique as grandezas, 2) Verifique se são diretamente ou inversamente proporcionais, 3) Monte a proporção, 4) Resolva. Diretamente proporcional: mantenha a proporção igual (seta para mesma direção). Inversamente proporcional: inverta uma das razões (setas em direções opostas). Exemplo direto: Se 3 pães custam R$ 6, quanto custam 5 pães? 3/5 = 6/x → x = 10. Exemplo inverso: Se 4 operários fazem em 6 dias, quanto tempo 8 operários levam? 4·6 = 8·x → x = 3 dias."
+        },
+        {
+          "titulo": "Regra de Três Composta",
+          "conteudo": "Usada quando há três ou mais grandezas. Passos: 1) Identifique a grandeza incógnita, 2) Analise cada grandeza separadamente em relação à incógnita (direta ou inversa), 3) Monte a proporção ajustando as inversas, 4) Resolva. Exemplo: 5 máquinas produzem 100 peças em 4 horas. Quantas peças 8 máquinas produzem em 6 horas? Máquinas (↑) → Peças (↑): direta. Horas (↑) → Peças (↑): direta. 100/x = 5/8 · 4/6 → x = 100 · 8/5 · 6/4 = 240 peças."
+        }
+      ],
+      "exemplos": [
+        "Em um mapa de escala 1:50.000, uma distância de 3 cm representa 3 × 50.000 = 150.000 cm = 1,5 km.",
+        "Velocidade e tempo são inversamente proporcionais: maior velocidade → menor tempo.",
+        "Se 2 pintores pintam uma casa em 6 dias, 3 pintores pintam em 4 dias (inversa)."
+      ],
+      "dicas": [
+        "Direta: mais de um → mais de outro. Inversa: mais de um → menos de outro.",
+        "Na regra de três composta, analise CADA grandeza separadamente com a incógnita.",
+        "Escala: medida real = medida no mapa × denominador da escala."
+      ],
+      "questoes": [
+        {
+          "id": "q142-1",
+          "enunciado": "Se 5 kg de arroz custam R$ 20,00, quanto custam 8 kg do mesmo arroz?",
+          "alternativas": {
+            "A": "R$ 28,00",
+            "B": "R$ 30,00",
+            "C": "R$ 32,00",
+            "D": "R$ 35,00",
+            "E": "R$ 40,00"
+          },
+          "correta": "C",
+          "explicacao": "Grandezas diretamente proporcionais (mais arroz → mais caro). 5/8 = 20/x → 5x = 160 → x = 32. Ou: 20/5 = 4 reais por kg, então 8 × 4 = R$ 32,00.",
+          "dificuldade": "facil",
+          "tags": ["regra de três", "proporção", "direta"]
+        },
+        {
+          "id": "q142-2",
+          "enunciado": "Se 6 operários constroem um muro em 10 dias, em quantos dias 15 operários construirão o mesmo muro?",
+          "alternativas": {
+            "A": "25 dias",
+            "B": "4 dias",
+            "C": "6 dias",
+            "D": "8 dias",
+            "E": "12 dias"
+          },
+          "correta": "B",
+          "explicacao": "Grandezas inversamente proporcionais (mais operários → menos dias). 6 × 10 = 15 × x → 60 = 15x → x = 4 dias.",
+          "dificuldade": "medio",
+          "tags": ["regra de três", "proporção", "inversa"]
+        },
+        {
+          "id": "q142-3",
+          "enunciado": "Em um mapa na escala 1:200.000, a distância entre duas cidades é de 4 cm. A distância real entre elas é de:",
+          "alternativas": {
+            "A": "8 km",
+            "B": "80 km",
+            "C": "800 km",
+            "D": "50 km",
+            "E": "0,8 km"
+          },
+          "correta": "A",
+          "explicacao": "Escala 1:200.000 significa 1 cm = 200.000 cm. Distância real = 4 × 200.000 = 800.000 cm = 8.000 m = 8 km.",
+          "dificuldade": "medio",
+          "tags": ["escala", "razão", "proporção"]
+        },
+        {
+          "id": "q142-4",
+          "enunciado": "Três torneiras enchem um tanque em 4 horas. Em quanto tempo 6 torneiras encheriam o mesmo tanque?",
+          "alternativas": {
+            "A": "8 horas",
+            "B": "2 horas",
+            "C": "6 horas",
+            "D": "12 horas",
+            "E": "1 hora"
+          },
+          "correta": "B",
+          "explicacao": "Inversamente proporcional: mais torneiras → menos tempo. 3 × 4 = 6 × x → 12 = 6x → x = 2 horas.",
+          "dificuldade": "facil",
+          "tags": ["regra de três", "inversa", "torneiras"]
+        },
+        {
+          "id": "q142-5",
+          "enunciado": "Em uma proporção a/b = c/d, se a = 6, b = 8 e c = 9, o valor de d é:",
+          "alternativas": {
+            "A": "10",
+            "B": "12",
+            "C": "15",
+            "D": "18",
+            "E": "6"
+          },
+          "correta": "B",
+          "explicacao": "Pela propriedade fundamental: a × d = b × c. Então 6 × d = 8 × 9 → 6d = 72 → d = 12.",
+          "dificuldade": "facil",
+          "tags": ["proporção", "propriedade fundamental"]
+        }
+      ]
+    },
+    {
+      "id": "m143",
+      "titulo": "Porcentagem e Juros",
+      "resumo": "Aprenda cálculos de porcentagem, aumentos, descontos e operações com juros.",
+      "topicos": [
+        {
+          "titulo": "Porcentagem",
+          "conteudo": "Porcentagem significa 'por cento' (dividido por 100). 25% = 25/100 = 0,25. Para calcular x% de um valor V: multiplique V por x/100 ou V × 0,0x. Aumento de p%: valor final = V × (1 + p/100). Desconto de p%: valor final = V × (1 - p/100). Aumentos sucessivos: multiplique os fatores. Ex: aumento de 10% seguido de 20% = 1,1 × 1,2 = 1,32 (aumento total de 32%, não 30%). Aumento seguido de desconto igual não retorna ao valor original."
+        },
+        {
+          "titulo": "Juros Simples",
+          "conteudo": "Nos juros simples, os juros são calculados sempre sobre o capital inicial. Fórmula: J = C × i × t, onde J = juros, C = capital inicial, i = taxa (em decimal), t = tempo. Montante: M = C + J = C × (1 + i × t). A taxa e o tempo devem estar na mesma unidade. Exemplo: R$ 1.000 a 2% a.m. por 5 meses: J = 1000 × 0,02 × 5 = R$ 100. M = 1000 + 100 = R$ 1.100."
+        },
+        {
+          "titulo": "Juros Compostos",
+          "conteudo": "Nos juros compostos, os juros são calculados sobre o montante do período anterior (juros sobre juros). Fórmula: M = C × (1 + i)^t. Os juros são: J = M - C. Exemplo: R$ 1.000 a 10% a.a. por 2 anos: M = 1000 × (1,1)² = 1000 × 1,21 = R$ 1.210. Nos juros simples seria: M = 1000 × (1 + 0,1 × 2) = R$ 1.200. A diferença aumenta com o tempo. Juros compostos são usados na maioria das operações financeiras reais."
+        }
+      ],
+      "exemplos": [
+        "Um produto de R$ 200 com 15% de desconto: 200 × 0,85 = R$ 170.",
+        "Aumento de 50% seguido de desconto de 50%: 1,5 × 0,5 = 0,75 (redução de 25% do original).",
+        "R$ 500 a juros compostos de 5% a.m. por 3 meses: 500 × (1,05)³ = R$ 578,81."
+      ],
+      "dicas": [
+        "Aumento de p%: multiplique por (1 + p/100). Desconto de p%: multiplique por (1 - p/100).",
+        "Juros simples: crescimento linear. Juros compostos: crescimento exponencial.",
+        "Para encontrar a taxa de desconto: (valor original - valor final) / valor original × 100."
+      ],
+      "questoes": [
+        {
+          "id": "q143-1",
+          "enunciado": "Um produto que custava R$ 80,00 teve um aumento de 25%. O novo preço é:",
+          "alternativas": {
+            "A": "R$ 90,00",
+            "B": "R$ 95,00",
+            "C": "R$ 100,00",
+            "D": "R$ 105,00",
+            "E": "R$ 85,00"
+          },
+          "correta": "C",
+          "explicacao": "Aumento de 25%: 80 × 1,25 = R$ 100,00. Ou: 25% de 80 = 20, então 80 + 20 = R$ 100,00.",
+          "dificuldade": "facil",
+          "tags": ["porcentagem", "aumento"]
+        },
+        {
+          "id": "q143-2",
+          "enunciado": "Um capital de R$ 2.000,00 aplicado a juros simples de 3% ao mês rende, após 8 meses:",
+          "alternativas": {
+            "A": "R$ 480,00",
+            "B": "R$ 240,00",
+            "C": "R$ 600,00",
+            "D": "R$ 160,00",
+            "E": "R$ 320,00"
+          },
+          "correta": "A",
+          "explicacao": "J = C × i × t = 2000 × 0,03 × 8 = R$ 480,00 de juros.",
+          "dificuldade": "medio",
+          "tags": ["juros simples", "rendimento"]
+        },
+        {
+          "id": "q143-3",
+          "enunciado": "Um produto teve seu preço aumentado em 20% e, em seguida, recebeu um desconto de 20%. Em relação ao preço original, o produto ficou:",
+          "alternativas": {
+            "A": "Com o mesmo preço",
+            "B": "4% mais caro",
+            "C": "4% mais barato",
+            "D": "10% mais barato",
+            "E": "40% mais barato"
+          },
+          "correta": "C",
+          "explicacao": "Fator de aumento: 1,20. Fator de desconto: 0,80. Total: 1,20 × 0,80 = 0,96 = 96% do original. Ou seja, ficou 4% mais barato.",
+          "dificuldade": "medio",
+          "tags": ["porcentagem", "aumentos sucessivos"]
+        },
+        {
+          "id": "q143-4",
+          "enunciado": "Qual o montante de uma aplicação de R$ 5.000,00 a juros compostos de 10% ao ano, durante 2 anos?",
+          "alternativas": {
+            "A": "R$ 5.500,00",
+            "B": "R$ 6.000,00",
+            "C": "R$ 6.050,00",
+            "D": "R$ 6.500,00",
+            "E": "R$ 5.100,00"
+          },
+          "correta": "C",
+          "explicacao": "M = C × (1 + i)^t = 5000 × (1,1)² = 5000 × 1,21 = R$ 6.050,00.",
+          "dificuldade": "medio",
+          "tags": ["juros compostos", "montante"]
+        },
+        {
+          "id": "q143-5",
+          "enunciado": "Em uma liquidação, um produto de R$ 150,00 está com 30% de desconto. O cliente ainda ganha mais 10% de desconto no pagamento à vista. O preço final é:",
+          "alternativas": {
+            "A": "R$ 90,00",
+            "B": "R$ 94,50",
+            "C": "R$ 105,00",
+            "D": "R$ 100,00",
+            "E": "R$ 60,00"
+          },
+          "correta": "B",
+          "explicacao": "Primeiro desconto: 150 × 0,70 = R$ 105. Segundo desconto: 105 × 0,90 = R$ 94,50. Ou: 150 × 0,70 × 0,90 = R$ 94,50.",
+          "dificuldade": "medio",
+          "tags": ["porcentagem", "descontos sucessivos"]
+        }
+      ]
+    },
+    {
+      "id": "m144",
+      "titulo": "Equações de 1º e 2º Grau",
+      "resumo": "Resolva equações do primeiro e segundo grau e aplique em problemas contextualizados.",
+      "topicos": [
+        {
+          "titulo": "Equações do 1º Grau",
+          "conteudo": "Equação do 1º grau: ax + b = 0, com a ≠ 0. Solução: x = -b/a. Para resolver, isole a incógnita. Passos: 1) Elimine parênteses (distributiva), 2) Agrupe termos com x de um lado e constantes do outro, 3) Simplifique, 4) Divida pelo coeficiente de x. Ao mudar de lado, inverta a operação. Equações com frações: multiplique todos os termos pelo MMC dos denominadores."
+        },
+        {
+          "titulo": "Equações do 2º Grau",
+          "conteudo": "Equação do 2º grau: ax² + bx + c = 0, com a ≠ 0. Fórmula de Bhaskara: x = (-b ± √Δ) / 2a, onde Δ = b² - 4ac. Se Δ > 0: duas raízes reais distintas. Se Δ = 0: duas raízes reais iguais (uma raiz dupla). Se Δ < 0: não há raízes reais. Relações de Girard: x₁ + x₂ = -b/a (soma) e x₁ · x₂ = c/a (produto). Equações incompletas: se b = 0: x² = -c/a → x = ±√(-c/a). Se c = 0: x(ax + b) = 0 → x = 0 ou x = -b/a."
+        },
+        {
+          "titulo": "Problemas com Equações",
+          "conteudo": "Passos para resolver problemas: 1) Leia e identifique o que se pede, 2) Defina a incógnita (x = ?), 3) Traduza o problema em equação, 4) Resolva a equação, 5) Verifique se a resposta faz sentido no contexto. Expressões comuns: 'o dobro' = 2x, 'a metade' = x/2, 'o triplo' = 3x, 'consecutivos' = x, x+1, x+2, 'mais velho' = x + anos, 'diferença' = subtração, 'soma' = adição, 'produto' = multiplicação."
+        }
+      ],
+      "exemplos": [
+        "Se 3x - 7 = 2x + 5, então 3x - 2x = 5 + 7, logo x = 12.",
+        "Para x² - 5x + 6 = 0: Δ = 25 - 24 = 1, x = (5 ± 1)/2, então x = 3 ou x = 2.",
+        "O triplo de um número menos 4 é 17: 3x - 4 = 17 → 3x = 21 → x = 7."
+      ],
+      "dicas": [
+        "Ao passar para o outro lado: + vira -, × vira ÷, e vice-versa.",
+        "Bhaskara: atenção aos sinais! b² sempre positivo, -b muda o sinal de b.",
+        "Se Δ é quadrado perfeito (1, 4, 9, 16...), as raízes serão racionais."
+      ],
+      "questoes": [
+        {
+          "id": "q144-1",
+          "enunciado": "A solução da equação 2x - 3 = x + 7 é:",
+          "alternativas": {
+            "A": "x = 4",
+            "B": "x = 10",
+            "C": "x = -4",
+            "D": "x = 5",
+            "E": "x = 2"
+          },
+          "correta": "B",
+          "explicacao": "2x - 3 = x + 7 → 2x - x = 7 + 3 → x = 10.",
+          "dificuldade": "facil",
+          "tags": ["equação 1º grau", "resolução"]
+        },
+        {
+          "id": "q144-2",
+          "enunciado": "As raízes da equação x² - 7x + 12 = 0 são:",
+          "alternativas": {
+            "A": "3 e 4",
+            "B": "2 e 6",
+            "C": "-3 e -4",
+            "D": "1 e 12",
+            "E": "-2 e -6"
+          },
+          "correta": "A",
+          "explicacao": "Δ = 49 - 48 = 1. x = (7 ± 1)/2. x₁ = 8/2 = 4, x₂ = 6/2 = 3. Verificação: 3 + 4 = 7 = -(-7)/1 ✓ e 3 × 4 = 12 = 12/1 ✓",
+          "dificuldade": "medio",
+          "tags": ["equação 2º grau", "Bhaskara"]
+        },
+        {
+          "id": "q144-3",
+          "enunciado": "O triplo de um número, diminuído de 5, é igual a 16. Esse número é:",
+          "alternativas": {
+            "A": "5",
+            "B": "6",
+            "C": "7",
+            "D": "8",
+            "E": "9"
+          },
+          "correta": "C",
+          "explicacao": "Seja x o número. 3x - 5 = 16 → 3x = 21 → x = 7.",
+          "dificuldade": "facil",
+          "tags": ["equação 1º grau", "problema"]
+        },
+        {
+          "id": "q144-4",
+          "enunciado": "Para a equação x² + 4x - 5 = 0, o produto das raízes é:",
+          "alternativas": {
+            "A": "5",
+            "B": "-5",
+            "C": "4",
+            "D": "-4",
+            "E": "1"
+          },
+          "correta": "B",
+          "explicacao": "Pelas relações de Girard, o produto das raízes é c/a = -5/1 = -5. (As raízes são 1 e -5, cujo produto é -5.)",
+          "dificuldade": "medio",
+          "tags": ["equação 2º grau", "Girard"]
+        },
+        {
+          "id": "q144-5",
+          "enunciado": "A equação x² - 6x + 9 = 0 possui:",
+          "alternativas": {
+            "A": "Duas raízes reais distintas",
+            "B": "Uma raiz real dupla",
+            "C": "Nenhuma raiz real",
+            "D": "Três raízes reais",
+            "E": "Infinitas soluções"
+          },
+          "correta": "B",
+          "explicacao": "Δ = 36 - 36 = 0. Quando Δ = 0, há uma raiz real dupla: x = 6/2 = 3. Note que x² - 6x + 9 = (x - 3)².",
+          "dificuldade": "medio",
+          "tags": ["equação 2º grau", "discriminante"]
+        }
+      ]
+    },
+    {
+      "id": "m145",
+      "titulo": "Sistemas de Equações",
+      "resumo": "Aprenda a resolver sistemas de equações lineares por diferentes métodos.",
+      "topicos": [
+        {
+          "titulo": "Sistemas Lineares 2x2",
+          "conteudo": "Sistema de equações: conjunto de equações com as mesmas incógnitas. Sistema 2x2: duas equações com duas incógnitas. Solução: valores que satisfazem todas as equações simultaneamente. Classificação: Sistema possível determinado (SPD) - uma única solução; Sistema possível indeterminado (SPI) - infinitas soluções (equações equivalentes); Sistema impossível (SI) - nenhuma solução (retas paralelas). Interpretação gráfica: cada equação é uma reta; a solução é o ponto de interseção."
+        },
+        {
+          "titulo": "Métodos de Resolução",
+          "conteudo": "Substituição: isole uma variável em uma equação e substitua na outra. Adição: multiplique as equações por constantes para que uma variável seja eliminada na soma. Comparação: isole a mesma variável nas duas equações e iguale. Exemplo por adição: {x + y = 7; x - y = 3}. Somando: 2x = 10 → x = 5. Substituindo: 5 + y = 7 → y = 2. Solução: (5, 2)."
+        },
+        {
+          "titulo": "Problemas com Sistemas",
+          "conteudo": "Muitos problemas envolvem duas incógnitas e duas condições. Passos: defina as variáveis, monte as equações com as informações do problema, resolva o sistema. Exemplo: A soma de dois números é 20 e a diferença é 4. Sejam x e y: {x + y = 20; x - y = 4}. Por adição: 2x = 24 → x = 12. Logo y = 8. Problemas comuns: idade, preços, misturas, movimentos."
+        }
+      ],
+      "exemplos": [
+        "Sistema {2x + y = 7; x - y = 2}: somando, 3x = 9, x = 3; substituindo, 3 - y = 2, y = 1.",
+        "Problema de idades: João tem o triplo da idade de Maria. Juntos somam 32 anos. J = 3M e J + M = 32 → 4M = 32 → M = 8, J = 24.",
+        "Sistema impossível: {x + y = 3; 2x + 2y = 8} - segunda é 2× a primeira, mas 2×3 ≠ 8."
+      ],
+      "dicas": [
+        "Método da adição é eficiente quando coeficientes são opostos ou fáceis de igualar.",
+        "Substituição é boa quando uma variável já está isolada ou tem coeficiente 1.",
+        "Verifique sempre a solução substituindo nas equações originais."
+      ],
+      "questoes": [
+        {
+          "id": "q145-1",
+          "enunciado": "A solução do sistema {x + y = 10; x - y = 4} é:",
+          "alternativas": {
+            "A": "(5, 5)",
+            "B": "(7, 3)",
+            "C": "(6, 4)",
+            "D": "(8, 2)",
+            "E": "(3, 7)"
+          },
+          "correta": "B",
+          "explicacao": "Somando as equações: 2x = 14 → x = 7. Substituindo em x + y = 10: 7 + y = 10 → y = 3. Solução: (7, 3).",
+          "dificuldade": "facil",
+          "tags": ["sistemas", "adição"]
+        },
+        {
+          "id": "q145-2",
+          "enunciado": "Em um estacionamento há carros e motos, totalizando 40 veículos e 130 rodas. Quantos carros há?",
+          "alternativas": {
+            "A": "15",
+            "B": "20",
+            "C": "25",
+            "D": "30",
+            "E": "35"
+          },
+          "correta": "C",
+          "explicacao": "Sejam c = carros (4 rodas) e m = motos (2 rodas). {c + m = 40; 4c + 2m = 130}. Da 1ª: m = 40 - c. Substituindo: 4c + 2(40 - c) = 130 → 4c + 80 - 2c = 130 → 2c = 50 → c = 25 carros.",
+          "dificuldade": "medio",
+          "tags": ["sistemas", "problema"]
+        },
+        {
+          "id": "q145-3",
+          "enunciado": "O sistema {2x + 3y = 12; 4x + 6y = 20} é:",
+          "alternativas": {
+            "A": "Possível e determinado",
+            "B": "Possível e indeterminado",
+            "C": "Impossível",
+            "D": "Tem solução única (2, 2)",
+            "E": "Tem infinitas soluções"
+          },
+          "correta": "C",
+          "explicacao": "A segunda equação é o dobro da primeira (2 × 12 = 24 ≠ 20). Como 4x + 6y deveria ser 24, mas é 20, o sistema é impossível (retas paralelas distintas).",
+          "dificuldade": "medio",
+          "tags": ["sistemas", "classificação"]
+        },
+        {
+          "id": "q145-4",
+          "enunciado": "A soma de dois números é 15 e o dobro do maior excede o menor em 18. O maior número é:",
+          "alternativas": {
+            "A": "9",
+            "B": "10",
+            "C": "11",
+            "D": "12",
+            "E": "8"
+          },
+          "correta": "C",
+          "explicacao": "Sejam x (maior) e y (menor). {x + y = 15; 2x = y + 18}. Da 2ª: y = 2x - 18. Substituindo: x + (2x - 18) = 15 → 3x = 33 → x = 11.",
+          "dificuldade": "medio",
+          "tags": ["sistemas", "problema"]
+        },
+        {
+          "id": "q145-5",
+          "enunciado": "Se {3x - y = 5; x + 2y = 4}, então x + y vale:",
+          "alternativas": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "4",
+            "E": "5"
+          },
+          "correta": "C",
+          "explicacao": "Da 2ª: x = 4 - 2y. Substituindo na 1ª: 3(4 - 2y) - y = 5 → 12 - 6y - y = 5 → -7y = -7 → y = 1. Então x = 4 - 2 = 2. Logo x + y = 2 + 1 = 3.",
+          "dificuldade": "medio",
+          "tags": ["sistemas", "substituição"]
+        }
+      ]
+    },
+    {
+      "id": "m146",
+      "titulo": "Funções: Conceito e Função Afim",
+      "resumo": "Compreenda o conceito de função e domine a função do primeiro grau.",
+      "topicos": [
+        {
+          "titulo": "Conceito de Função",
+          "conteudo": "Função é uma relação entre dois conjuntos (A e B) onde cada elemento de A está associado a exatamente um elemento de B. Notação: f: A → B, y = f(x). Domínio (D): conjunto de valores válidos para x. Contradomínio: conjunto B. Imagem (Im): valores efetivamente assumidos por f(x). Representações: fórmula, tabela, diagrama de flechas, gráfico. Exemplo: f(x) = x² tem domínio ℝ e imagem [0, +∞). Teste da reta vertical: se uma reta vertical corta o gráfico em mais de um ponto, não é função."
+        },
+        {
+          "titulo": "Função Afim (1º Grau)",
+          "conteudo": "Função afim: f(x) = ax + b, onde a e b são constantes e a ≠ 0. Gráfico: reta. Coeficiente angular (a): indica a inclinação. Se a > 0, função crescente (reta 'sobe'). Se a < 0, função decrescente (reta 'desce'). Coeficiente linear (b): é o valor de f(0), onde a reta corta o eixo y. Zero da função (raiz): valor de x onde f(x) = 0 → x = -b/a, onde a reta corta o eixo x. Taxa de variação: a função afim tem taxa de variação constante igual a 'a'."
+        },
+        {
+          "titulo": "Estudo do Sinal e Aplicações",
+          "conteudo": "Estudo do sinal de f(x) = ax + b: encontre a raiz (-b/a) e analise: Se a > 0: f(x) < 0 para x < -b/a e f(x) > 0 para x > -b/a. Se a < 0: f(x) > 0 para x < -b/a e f(x) < 0 para x > -b/a. Aplicações: custo/receita/lucro (L = R - C), movimento uniforme (s = s₀ + vt), temperatura (conversão), tarifa de táxi, consumo. A função afim modela situações de crescimento ou decrescimento constante."
+        }
+      ],
+      "exemplos": [
+        "Se f(x) = 3x - 6, então f(4) = 3(4) - 6 = 6 e a raiz é x = 2 (onde 3x - 6 = 0).",
+        "Táxi: bandeirada R$ 5 + R$ 2/km → f(x) = 2x + 5, onde x = quilômetros.",
+        "Função f(x) = -2x + 8: a = -2 (decrescente), b = 8 (corta eixo y em 8), raiz x = 4."
+      ],
+      "dicas": [
+        "a > 0: reta sobe (crescente). a < 0: reta desce (decrescente).",
+        "Para encontrar a raiz, faça f(x) = 0 e resolva para x.",
+        "b é o 'ponto de partida' no eixo y (quando x = 0)."
+      ],
+      "questoes": [
+        {
+          "id": "q146-1",
+          "enunciado": "Se f(x) = 2x - 4, o valor de f(3) é:",
+          "alternativas": {
+            "A": "0",
+            "B": "2",
+            "C": "4",
+            "D": "-2",
+            "E": "6"
+          },
+          "correta": "B",
+          "explicacao": "f(3) = 2(3) - 4 = 6 - 4 = 2.",
+          "dificuldade": "facil",
+          "tags": ["função afim", "cálculo"]
+        },
+        {
+          "id": "q146-2",
+          "enunciado": "O zero (raiz) da função f(x) = 3x + 9 é:",
+          "alternativas": {
+            "A": "x = 3",
+            "B": "x = -3",
+            "C": "x = 9",
+            "D": "x = -9",
+            "E": "x = 0"
+          },
+          "correta": "B",
+          "explicacao": "Raiz: f(x) = 0 → 3x + 9 = 0 → 3x = -9 → x = -3. Ou: x = -b/a = -9/3 = -3.",
+          "dificuldade": "facil",
+          "tags": ["função afim", "raiz"]
+        },
+        {
+          "id": "q146-3",
+          "enunciado": "Uma função f(x) = ax + b passa pelos pontos (0, 4) e (2, 10). Os valores de a e b são:",
+          "alternativas": {
+            "A": "a = 2, b = 4",
+            "B": "a = 3, b = 4",
+            "C": "a = 4, b = 2",
+            "D": "a = 3, b = 10",
+            "E": "a = 5, b = 0"
+          },
+          "correta": "B",
+          "explicacao": "Do ponto (0, 4): f(0) = b = 4. Do ponto (2, 10): f(2) = 2a + 4 = 10 → 2a = 6 → a = 3. Logo f(x) = 3x + 4.",
+          "dificuldade": "medio",
+          "tags": ["função afim", "coeficientes"]
+        },
+        {
+          "id": "q146-4",
+          "enunciado": "O gráfico de uma função afim que tem a > 0 e b < 0:",
+          "alternativas": {
+            "A": "É uma reta crescente que corta o eixo y abaixo da origem",
+            "B": "É uma reta decrescente que corta o eixo y acima da origem",
+            "C": "É uma reta crescente que corta o eixo y na origem",
+            "D": "É uma reta decrescente que corta o eixo y abaixo da origem",
+            "E": "É uma reta horizontal"
+          },
+          "correta": "A",
+          "explicacao": "a > 0 indica reta crescente (sobe da esquerda para direita). b < 0 indica que a reta corta o eixo y abaixo da origem (quando x = 0, y = b < 0).",
+          "dificuldade": "medio",
+          "tags": ["função afim", "gráfico"]
+        },
+        {
+          "id": "q146-5",
+          "enunciado": "Uma empresa de táxi cobra R$ 4,50 de bandeirada mais R$ 1,80 por km rodado. A função que representa o custo de uma corrida de x km é:",
+          "alternativas": {
+            "A": "f(x) = 4,50x + 1,80",
+            "B": "f(x) = 1,80x + 4,50",
+            "C": "f(x) = 6,30x",
+            "D": "f(x) = 4,50 - 1,80x",
+            "E": "f(x) = 1,80x - 4,50"
+          },
+          "correta": "B",
+          "explicacao": "Custo = valor fixo (bandeirada) + valor variável (por km). f(x) = 1,80x + 4,50, onde x é o número de km. O coeficiente angular é 1,80 (custo por km) e o linear é 4,50 (bandeirada).",
+          "dificuldade": "facil",
+          "tags": ["função afim", "aplicação"]
+        }
+      ]
+    },
+    {
+      "id": "m147",
+      "titulo": "Função Quadrática",
+      "resumo": "Domine a função do segundo grau, suas propriedades e aplicações.",
+      "topicos": [
+        {
+          "titulo": "Definição e Gráfico",
+          "conteudo": "Função quadrática: f(x) = ax² + bx + c, com a ≠ 0. Gráfico: parábola. Se a > 0, parábola com concavidade para cima (∪). Se a < 0, concavidade para baixo (∩). Vértice (xv, yv): ponto mais baixo (a > 0) ou mais alto (a < 0). Fórmulas: xv = -b/2a, yv = -Δ/4a (ou calcule f(xv)). Eixo de simetria: reta vertical x = xv. Raízes: valores onde f(x) = 0 (pontos onde a parábola cruza o eixo x), calculadas por Bhaskara."
+        },
+        {
+          "titulo": "Estudo do Sinal e Máximo/Mínimo",
+          "conteudo": "O sinal de f(x) depende do discriminante e de 'a': Δ > 0 e a > 0: f(x) < 0 entre as raízes, f(x) > 0 fora. Δ > 0 e a < 0: f(x) > 0 entre as raízes, f(x) < 0 fora. Δ = 0: toca o eixo x no vértice. Δ < 0 e a > 0: sempre positiva. Δ < 0 e a < 0: sempre negativa. Valor máximo ou mínimo: yv = -Δ/4a. Se a > 0, yv é o mínimo. Se a < 0, yv é o máximo."
+        },
+        {
+          "titulo": "Aplicações da Função Quadrática",
+          "conteudo": "Problemas de otimização (máximo/mínimo): lucro máximo, área máxima, altura máxima de projéteis. Lançamento oblíquo: h(t) = -at² + bt + c (parábola invertida). Área em função de dimensões variáveis. Receita/Lucro em função de preço ou quantidade. Para encontrar o valor máximo ou mínimo, use o vértice. O xv indica quando ocorre (tempo, quantidade) e yv indica o valor ótimo."
+        }
+      ],
+      "exemplos": [
+        "f(x) = x² - 4x + 3: a = 1 > 0 (∪), vértice em x = 2, y = -1, raízes x = 1 e x = 3.",
+        "Altura de uma bola: h(t) = -5t² + 20t. Altura máxima: t = 2s, h = 20m.",
+        "f(x) = -x² + 6x - 5: máximo em x = 3 com valor y = 4."
+      ],
+      "dicas": [
+        "a > 0: parábola sorriso (∪), ponto mínimo. a < 0: parábola triste (∩), ponto máximo.",
+        "xv = -b/2a serve tanto para encontrar o x do vértice quanto o eixo de simetria.",
+        "Em problemas de área máxima de retângulo com perímetro fixo, x = comprimento/2 (quadrado)."
+      ],
+      "questoes": [
+        {
+          "id": "q147-1",
+          "enunciado": "O vértice da parábola f(x) = x² - 6x + 5 é:",
+          "alternativas": {
+            "A": "(3, -4)",
+            "B": "(3, 4)",
+            "C": "(-3, -4)",
+            "D": "(6, 5)",
+            "E": "(2, -3)"
+          },
+          "correta": "A",
+          "explicacao": "xv = -b/2a = -(-6)/2(1) = 6/2 = 3. yv = f(3) = 9 - 18 + 5 = -4. Vértice: (3, -4).",
+          "dificuldade": "medio",
+          "tags": ["função quadrática", "vértice"]
+        },
+        {
+          "id": "q147-2",
+          "enunciado": "A parábola f(x) = -2x² + 8x - 6 tem concavidade:",
+          "alternativas": {
+            "A": "Para cima, pois a > 0",
+            "B": "Para baixo, pois a < 0",
+            "C": "Indefinida",
+            "D": "Para cima, pois b > 0",
+            "E": "Para baixo, pois c < 0"
+          },
+          "correta": "B",
+          "explicacao": "A concavidade depende apenas do coeficiente 'a'. Como a = -2 < 0, a parábola tem concavidade para baixo (∩).",
+          "dificuldade": "facil",
+          "tags": ["função quadrática", "concavidade"]
+        },
+        {
+          "id": "q147-3",
+          "enunciado": "Uma bola é lançada e sua altura em metros é dada por h(t) = -5t² + 30t, onde t é o tempo em segundos. A altura máxima atingida é:",
+          "alternativas": {
+            "A": "30 m",
+            "B": "45 m",
+            "C": "50 m",
+            "D": "25 m",
+            "E": "60 m"
+          },
+          "correta": "B",
+          "explicacao": "Tempo do máximo: tv = -30/(2×(-5)) = -30/(-10) = 3s. Altura máxima: h(3) = -5(9) + 30(3) = -45 + 90 = 45m.",
+          "dificuldade": "medio",
+          "tags": ["função quadrática", "máximo", "lançamento"]
+        },
+        {
+          "id": "q147-4",
+          "enunciado": "A função f(x) = x² - 4 é positiva para:",
+          "alternativas": {
+            "A": "x < -2 ou x > 2",
+            "B": "-2 < x < 2",
+            "C": "x > 0",
+            "D": "Todo x real",
+            "E": "Nenhum x real"
+          },
+          "correta": "A",
+          "explicacao": "Raízes: x² - 4 = 0 → x² = 4 → x = ±2. Como a > 0, a parábola é positiva fora das raízes: x < -2 ou x > 2.",
+          "dificuldade": "medio",
+          "tags": ["função quadrática", "sinal"]
+        },
+        {
+          "id": "q147-5",
+          "enunciado": "Se f(x) = ax² + bx + c tem duas raízes reais distintas, o discriminante Δ é:",
+          "alternativas": {
+            "A": "Δ = 0",
+            "B": "Δ < 0",
+            "C": "Δ > 0",
+            "D": "Δ = 1",
+            "E": "Δ indefinido"
+          },
+          "correta": "C",
+          "explicacao": "Se Δ > 0, há duas raízes reais distintas. Se Δ = 0, há uma raiz dupla. Se Δ < 0, não há raízes reais.",
+          "dificuldade": "facil",
+          "tags": ["função quadrática", "discriminante"]
+        }
+      ]
+    },
+    {
+      "id": "m148",
+      "titulo": "Função Exponencial e Logarítmica",
+      "resumo": "Entenda as funções exponencial e logarítmica e suas propriedades fundamentais.",
+      "topicos": [
+        {
+          "titulo": "Função Exponencial",
+          "conteudo": "Função exponencial: f(x) = aˣ, com a > 0 e a ≠ 1. Propriedades: f(0) = 1 para qualquer base (a⁰ = 1). Se a > 1: função crescente. Se 0 < a < 1: função decrescente. Gráfico passa por (0, 1), nunca toca o eixo x (assíntota horizontal). Domínio: ℝ. Imagem: (0, +∞). Propriedades dos expoentes: aᵐ · aⁿ = aᵐ⁺ⁿ, aᵐ/aⁿ = aᵐ⁻ⁿ, (aᵐ)ⁿ = aᵐⁿ, a⁻ⁿ = 1/aⁿ, a^(1/n) = ⁿ√a."
+        },
+        {
+          "titulo": "Função Logarítmica",
+          "conteudo": "Logaritmo: logₐb = x significa aˣ = b (a > 0, a ≠ 1, b > 0). Log é o expoente! logₐa = 1, logₐ1 = 0. Função logarítmica: f(x) = logₐx é inversa de g(x) = aˣ. Propriedades: log(m·n) = logm + logn, log(m/n) = logm - logn, log(mⁿ) = n·logm, logₐb = logb/loga (mudança de base). Domínio: (0, +∞). Imagem: ℝ. Gráfico passa por (1, 0)."
+        },
+        {
+          "titulo": "Aplicações",
+          "conteudo": "Exponencial: crescimento/decaimento exponencial, juros compostos M = C(1+i)ᵗ, crescimento populacional P = P₀·eᵏᵗ, radioatividade, propagação de doenças. Logarítmica: pH = -log[H⁺], escala Richter (terremotos), decibéis (som), tempo de investimento. Equações exponenciais: iguale as bases e compare expoentes. Ex: 2ˣ = 8 → 2ˣ = 2³ → x = 3. Equações logarítmicas: aplique a definição ou propriedades."
+        }
+      ],
+      "exemplos": [
+        "2⁵ = 32, então log₂32 = 5 (o expoente que eleva 2 a 32 é 5).",
+        "log100 = 2 (log base 10), pois 10² = 100.",
+        "Crescimento de bactérias: N(t) = N₀ · 2^(t/T), onde T é o tempo de duplicação."
+      ],
+      "dicas": [
+        "logₐb = x ↔ aˣ = b. O log 'pergunta': a qual expoente elevar a para obter b?",
+        "log(base 10) e ln(base e ≈ 2,718) são os mais comuns.",
+        "Para resolver aˣ = b: x = logₐb."
+      ],
+      "questoes": [
+        {
+          "id": "q148-1",
+          "enunciado": "O valor de log₂64 é:",
+          "alternativas": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "8",
+            "E": "32"
+          },
+          "correta": "C",
+          "explicacao": "log₂64 = x → 2ˣ = 64. Como 2⁶ = 64, então x = 6.",
+          "dificuldade": "facil",
+          "tags": ["logaritmo", "cálculo"]
+        },
+        {
+          "id": "q148-2",
+          "enunciado": "Se 3ˣ = 81, o valor de x é:",
+          "alternativas": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "5",
+            "E": "27"
+          },
+          "correta": "C",
+          "explicacao": "81 = 3⁴, então 3ˣ = 3⁴, logo x = 4.",
+          "dificuldade": "facil",
+          "tags": ["exponencial", "equação"]
+        },
+        {
+          "id": "q148-3",
+          "enunciado": "Simplificando log₅125 + log₅(1/25), obtemos:",
+          "alternativas": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "5",
+            "E": "0"
+          },
+          "correta": "A",
+          "explicacao": "log₅125 = 3 (5³ = 125). log₅(1/25) = log₅(5⁻²) = -2. Total: 3 + (-2) = 1.",
+          "dificuldade": "medio",
+          "tags": ["logaritmo", "propriedades"]
+        },
+        {
+          "id": "q148-4",
+          "enunciado": "A função f(x) = 2ˣ é:",
+          "alternativas": {
+            "A": "Decrescente, pois 2 > 1",
+            "B": "Crescente, pois a base é maior que 1",
+            "C": "Constante para todo x",
+            "D": "Definida apenas para x > 0",
+            "E": "Uma parábola"
+          },
+          "correta": "B",
+          "explicacao": "Para f(x) = aˣ, se a > 1, a função é crescente. Como 2 > 1, f(x) = 2ˣ é crescente.",
+          "dificuldade": "facil",
+          "tags": ["exponencial", "crescimento"]
+        },
+        {
+          "id": "q148-5",
+          "enunciado": "Uma população de bactérias dobra a cada 3 horas. Se inicialmente há 1.000 bactérias, após 9 horas haverá:",
+          "alternativas": {
+            "A": "3.000",
+            "B": "6.000",
+            "C": "8.000",
+            "D": "9.000",
+            "E": "27.000"
+          },
+          "correta": "C",
+          "explicacao": "Em 9 horas, há 9/3 = 3 duplicações. N = 1000 × 2³ = 1000 × 8 = 8.000 bactérias.",
+          "dificuldade": "medio",
+          "tags": ["exponencial", "aplicação", "crescimento"]
+        }
+      ]
+    },
+    {
+      "id": "m149",
+      "titulo": "Progressões Aritméticas (PA)",
+      "resumo": "Domine as progressões aritméticas: termo geral, soma e aplicações práticas.",
+      "topicos": [
+        {
+          "titulo": "Definição e Termo Geral",
+          "conteudo": "Progressão Aritmética (PA): sequência onde a diferença entre termos consecutivos é constante. Razão (r) = aₙ₊₁ - aₙ. Se r > 0: PA crescente. Se r < 0: PA decrescente. Se r = 0: PA constante. Termo geral: aₙ = a₁ + (n-1)·r, onde a₁ é o primeiro termo e n é a posição. Propriedade: em uma PA, cada termo (exceto extremos) é a média aritmética dos vizinhos: aₙ = (aₙ₋₁ + aₙ₊₁)/2."
+        },
+        {
+          "titulo": "Soma dos Termos",
+          "conteudo": "Soma dos n primeiros termos: Sₙ = (a₁ + aₙ)·n/2. Alternativa: Sₙ = n·[2a₁ + (n-1)r]/2. Para encontrar a soma, precisamos de a₁, aₙ (ou r) e n. História: Gauss somou 1+2+3+...+100 = (1+100)×100/2 = 5050. A soma de PA forma uma função quadrática em n: Sₙ = An² + Bn."
+        },
+        {
+          "titulo": "Aplicações",
+          "conteudo": "PAs aparecem em: parcelas fixas, economia de valor fixo mensal, progressão de exercícios (acrescentar repetições), calendários, numeração de assentos, escadas (degraus). Interpolação: inserir k meios aritméticos entre a e b significa criar uma PA com a₁ = a, aₖ₊₂ = b e k+2 termos. Razão: r = (b-a)/(k+1). Soma de inteiros consecutivos: 1 + 2 + ... + n = n(n+1)/2."
+        }
+      ],
+      "exemplos": [
+        "PA (2, 5, 8, 11, ...): r = 3, a₁ = 2. Décimo termo: a₁₀ = 2 + 9×3 = 29.",
+        "Soma de 1 a 50: S = (1+50)×50/2 = 51×25 = 1275.",
+        "Prestações: R$ 100, R$ 110, R$ 120... (PA com r = 10)."
+      ],
+      "dicas": [
+        "PA: diferença constante (somar/subtrair). PG: razão constante (multiplicar/dividir).",
+        "Para encontrar r: r = (aₙ - a₁)/(n - 1).",
+        "Soma de PA: 'sanduíche' (primeiro + último) × quantidade / 2."
+      ],
+      "questoes": [
+        {
+          "id": "q149-1",
+          "enunciado": "O décimo quinto termo da PA (3, 7, 11, 15, ...) é:",
+          "alternativas": {
+            "A": "55",
+            "B": "59",
+            "C": "63",
+            "D": "51",
+            "E": "67"
+          },
+          "correta": "B",
+          "explicacao": "a₁ = 3, r = 7 - 3 = 4. a₁₅ = 3 + (15-1)×4 = 3 + 56 = 59.",
+          "dificuldade": "facil",
+          "tags": ["PA", "termo geral"]
+        },
+        {
+          "id": "q149-2",
+          "enunciado": "A soma dos 20 primeiros termos da PA (2, 5, 8, 11, ...) é:",
+          "alternativas": {
+            "A": "570",
+            "B": "590",
+            "C": "610",
+            "D": "630",
+            "E": "650"
+          },
+          "correta": "C",
+          "explicacao": "a₁ = 2, r = 3. a₂₀ = 2 + 19×3 = 59. S₂₀ = (2 + 59)×20/2 = 61×10 = 610.",
+          "dificuldade": "medio",
+          "tags": ["PA", "soma"]
+        },
+        {
+          "id": "q149-3",
+          "enunciado": "Em uma PA, o primeiro termo é 5 e o quinto termo é 17. A razão dessa PA é:",
+          "alternativas": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "5",
+            "E": "6"
+          },
+          "correta": "B",
+          "explicacao": "a₅ = a₁ + 4r → 17 = 5 + 4r → 4r = 12 → r = 3.",
+          "dificuldade": "facil",
+          "tags": ["PA", "razão"]
+        },
+        {
+          "id": "q149-4",
+          "enunciado": "A soma dos números inteiros de 1 a 100 é:",
+          "alternativas": {
+            "A": "5000",
+            "B": "5050",
+            "C": "5100",
+            "D": "4950",
+            "E": "10100"
+          },
+          "correta": "B",
+          "explicacao": "S = (1 + 100)×100/2 = 101×50 = 5050. Esta é a famosa soma de Gauss.",
+          "dificuldade": "facil",
+          "tags": ["PA", "soma", "Gauss"]
+        },
+        {
+          "id": "q149-5",
+          "enunciado": "Uma pessoa economiza R$ 50 no primeiro mês, R$ 70 no segundo, R$ 90 no terceiro, e assim por diante. Após 12 meses, ela terá economizado:",
+          "alternativas": {
+            "A": "R$ 1.920,00",
+            "B": "R$ 1.800,00",
+            "C": "R$ 2.040,00",
+            "D": "R$ 1.680,00",
+            "E": "R$ 2.160,00"
+          },
+          "correta": "A",
+          "explicacao": "PA com a₁ = 50, r = 20. a₁₂ = 50 + 11×20 = 270. S₁₂ = (50 + 270)×12/2 = 320×6 = R$ 1.920,00.",
+          "dificuldade": "medio",
+          "tags": ["PA", "aplicação", "economia"]
+        }
+      ]
+    },
+    {
+      "id": "m150",
+      "titulo": "Progressões Geométricas (PG)",
+      "resumo": "Estude as progressões geométricas: termo geral, soma e aplicações no cotidiano.",
+      "topicos": [
+        {
+          "titulo": "Definição e Termo Geral",
+          "conteudo": "Progressão Geométrica (PG): sequência onde a razão entre termos consecutivos é constante. Razão (q) = aₙ₊₁/aₙ. Se q > 1: PG crescente (termos positivos). Se 0 < q < 1: PG decrescente. Se q < 0: PG alternante (troca de sinais). Termo geral: aₙ = a₁ · qⁿ⁻¹. Propriedade: cada termo (exceto extremos) é a média geométrica dos vizinhos: aₙ² = aₙ₋₁ · aₙ₊₁."
+        },
+        {
+          "titulo": "Soma dos Termos",
+          "conteudo": "Soma dos n primeiros termos (q ≠ 1): Sₙ = a₁(qⁿ - 1)/(q - 1) ou Sₙ = a₁(1 - qⁿ)/(1 - q). Soma de PG infinita (|q| < 1): S∞ = a₁/(1 - q). Quando |q| < 1, os termos tendem a zero e a soma converge. Exemplo: 1 + 1/2 + 1/4 + 1/8 + ... = 1/(1 - 1/2) = 2."
+        },
+        {
+          "titulo": "Aplicações",
+          "conteudo": "PGs aparecem em: juros compostos (montante cresce geometricamente), crescimento populacional, decaimento radioativo, depreciação de bens, divisão celular (2, 4, 8, 16...), escala musical, doses de medicamento. Juros compostos: M = C(1+i)ᵗ é uma PG com a₁ = C(1+i) e q = (1+i). Meia-vida: tempo para metade decair, q = 1/2 para cada período."
+        }
+      ],
+      "exemplos": [
+        "PG (2, 6, 18, 54, ...): q = 3, a₁ = 2. Sexto termo: a₆ = 2 × 3⁵ = 2 × 243 = 486.",
+        "Soma infinita: 3 + 1 + 1/3 + 1/9 + ... = 3/(1 - 1/3) = 3/(2/3) = 9/2 = 4,5.",
+        "Bactéria que dobra: 1, 2, 4, 8, 16... (PG com q = 2)."
+      ],
+      "dicas": [
+        "PA soma/subtrai (razão aditiva). PG multiplica/divide (razão multiplicativa).",
+        "Soma infinita só existe se |q| < 1 (termos vão diminuindo).",
+        "Para encontrar q: q = aₙ/aₙ₋₁ ou q = ⁿ⁻¹√(aₙ/a₁)."
+      ],
+      "questoes": [
+        {
+          "id": "q150-1",
+          "enunciado": "O sexto termo da PG (3, 6, 12, 24, ...) é:",
+          "alternativas": {
+            "A": "48",
+            "B": "96",
+            "C": "192",
+            "D": "72",
+            "E": "144"
+          },
+          "correta": "B",
+          "explicacao": "a₁ = 3, q = 2. a₆ = 3 × 2⁵ = 3 × 32 = 96.",
+          "dificuldade": "facil",
+          "tags": ["PG", "termo geral"]
+        },
+        {
+          "id": "q150-2",
+          "enunciado": "A soma dos 5 primeiros termos da PG (2, 6, 18, ...) é:",
+          "alternativas": {
+            "A": "242",
+            "B": "182",
+            "C": "162",
+            "D": "122",
+            "E": "200"
+          },
+          "correta": "A",
+          "explicacao": "a₁ = 2, q = 3, n = 5. S₅ = 2(3⁵ - 1)/(3 - 1) = 2(243 - 1)/2 = 242.",
+          "dificuldade": "medio",
+          "tags": ["PG", "soma"]
+        },
+        {
+          "id": "q150-3",
+          "enunciado": "A soma da PG infinita 8 + 4 + 2 + 1 + ... é:",
+          "alternativas": {
+            "A": "15",
+            "B": "16",
+            "C": "32",
+            "D": "12",
+            "E": "20"
+          },
+          "correta": "B",
+          "explicacao": "a₁ = 8, q = 1/2 (|q| < 1, converge). S∞ = 8/(1 - 1/2) = 8/(1/2) = 16.",
+          "dificuldade": "medio",
+          "tags": ["PG", "soma infinita"]
+        },
+        {
+          "id": "q150-4",
+          "enunciado": "Uma cultura de bactérias triplica a cada hora. Se inicialmente há 100 bactérias, após 4 horas haverá:",
+          "alternativas": {
+            "A": "400",
+            "B": "1.200",
+            "C": "2.700",
+            "D": "8.100",
+            "E": "12.000"
+          },
+          "correta": "D",
+          "explicacao": "PG com a₁ = 100, q = 3. Após 4 horas: a₅ = 100 × 3⁴ = 100 × 81 = 8.100. (Note: a₁ é o momento inicial, a₅ é após 4 horas.)",
+          "dificuldade": "medio",
+          "tags": ["PG", "aplicação", "crescimento"]
+        },
+        {
+          "id": "q150-5",
+          "enunciado": "Em uma PG de razão 2, o primeiro termo é 5. A soma do primeiro ao quarto termo é:",
+          "alternativas": {
+            "A": "60",
+            "B": "75",
+            "C": "80",
+            "D": "55",
+            "E": "65"
+          },
+          "correta": "B",
+          "explicacao": "a₁ = 5, q = 2. S₄ = 5(2⁴ - 1)/(2 - 1) = 5(16 - 1)/1 = 5 × 15 = 75.",
+          "dificuldade": "facil",
+          "tags": ["PG", "soma"]
+        }
+      ]
+    }
+  ]
+}

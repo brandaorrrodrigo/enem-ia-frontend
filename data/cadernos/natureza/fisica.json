@@ -1,0 +1,1075 @@
+{
+  "id": "fisica",
+  "slug": "fisica",
+  "titulo": "Física para o ENEM",
+  "categoria": "natureza",
+  "nivel": "intermediario",
+  "descricao": "Mecânica, termodinâmica, óptica, eletricidade e física moderna aplicadas ao cotidiano",
+  "icone": "Atom",
+  "cor": "#3498DB",
+  "tempoEstimado": "25 horas",
+  "fpRecompensa": 550,
+  "tags": ["física", "mecânica", "eletricidade", "ondas", "ENEM"],
+  "modulos": [
+    {
+      "id": "m111",
+      "titulo": "Cinemática: Movimento e Velocidade",
+      "resumo": "Conceitos fundamentais de movimento, velocidade, aceleração e gráficos",
+      "topicos": [
+        {
+          "titulo": "Conceitos Fundamentais",
+          "conteudo": "Cinemática estuda o movimento sem se preocupar com suas causas. Referencial é o ponto de vista a partir do qual observamos o movimento. Posição (s) é a localização em relação ao referencial. Deslocamento (Δs = s_final - s_inicial) é a variação de posição (vetorial). Distância percorrida é o caminho total. Velocidade média (v_m = Δs/Δt) relaciona deslocamento ao tempo. Velocidade instantânea é a velocidade em cada instante. Unidades SI: posição (m), tempo (s), velocidade (m/s). Conversão comum: 1 m/s = 3,6 km/h."
+        },
+        {
+          "titulo": "Movimento Uniforme (MU)",
+          "conteudo": "No MU, a velocidade é constante (aceleração = 0). A equação horária é: s = s₀ + v·t, onde s₀ é a posição inicial. O gráfico s×t é uma reta: inclinação = velocidade (positiva se sobe, negativa se desce). O gráfico v×t é uma reta horizontal (v constante); a área sob a curva = deslocamento. Exemplos práticos: carro em velocidade constante, esteira de aeroporto. No ENEM, questões de MU frequentemente envolvem encontros (igualar posições) ou ultrapassagens."
+        },
+        {
+          "titulo": "Movimento Uniformemente Variado (MUV)",
+          "conteudo": "No MUV, a aceleração é constante (velocidade varia uniformemente). Equações: v = v₀ + a·t; s = s₀ + v₀·t + ½·a·t²; v² = v₀² + 2·a·Δs. Aceleração positiva na direção do movimento = acelerado; negativa = retardado. Gráfico v×t é reta inclinada (inclinação = aceleração); área = deslocamento. Gráfico s×t é parábola. Exemplo clássico: queda livre (a = g ≈ 10 m/s², desprezando resistência do ar). No lançamento vertical: v = 0 no ponto mais alto."
+        }
+      ],
+      "exemplos": [
+        "Calcular tempo de viagem conhecendo distância e velocidade média",
+        "Interpretar gráficos de posição e velocidade em questões do ENEM",
+        "Resolver problemas de queda livre e lançamento vertical"
+      ],
+      "dicas": [
+        "ENEM prioriza interpretação de gráficos sobre cálculos complexos",
+        "Atenção às unidades: km/h para m/s divide por 3,6",
+        "Em queda livre, use g = 10 m/s² para facilitar"
+      ],
+      "questoes": [
+        {
+          "id": "q111-1",
+          "enunciado": "Um veículo percorre 180 km em 2 horas. A velocidade média do veículo, em m/s, é aproximadamente:",
+          "alternativas": {
+            "A": "10 m/s",
+            "B": "25 m/s",
+            "C": "50 m/s",
+            "D": "90 m/s",
+            "E": "180 m/s"
+          },
+          "correta": "B",
+          "explicacao": "Velocidade média = distância/tempo = 180 km / 2 h = 90 km/h. Para converter para m/s, divide-se por 3,6: 90 / 3,6 = 25 m/s. A conversão km/h → m/s é comum no ENEM.",
+          "dificuldade": "facil",
+          "tags": ["cinemática", "velocidade média", "conversão"]
+        },
+        {
+          "id": "q111-2",
+          "enunciado": "O gráfico a seguir representa a posição de um móvel em função do tempo. [Imagine um gráfico s×t com reta inclinada para cima, passando pela origem] Com base no gráfico, é correto afirmar que o móvel está em:",
+          "alternativas": {
+            "A": "Movimento uniformemente variado com aceleração positiva",
+            "B": "Movimento uniforme com velocidade constante positiva",
+            "C": "Repouso em relação ao referencial adotado",
+            "D": "Movimento uniforme com velocidade constante negativa",
+            "E": "Movimento uniformemente variado com aceleração negativa"
+          },
+          "correta": "B",
+          "explicacao": "Um gráfico s×t que é uma reta indica velocidade constante, ou seja, Movimento Uniforme. A inclinação da reta indica a velocidade: se a reta sobe (posição aumenta), a velocidade é positiva. Se a reta fosse uma parábola, seria MUV.",
+          "dificuldade": "medio",
+          "tags": ["cinemática", "gráfico", "MU"]
+        },
+        {
+          "id": "q111-3",
+          "enunciado": "Um objeto é abandonado do alto de um edifício de 45 m de altura. Considerando g = 10 m/s² e desprezando a resistência do ar, o tempo de queda é:",
+          "alternativas": {
+            "A": "1 s",
+            "B": "2 s",
+            "C": "3 s",
+            "D": "4 s",
+            "E": "5 s"
+          },
+          "correta": "C",
+          "explicacao": "Na queda livre, h = ½·g·t². Substituindo: 45 = ½·10·t² → 45 = 5·t² → t² = 9 → t = 3 s. O objeto parte do repouso (v₀ = 0) e acelera uniformemente com aceleração g.",
+          "dificuldade": "medio",
+          "tags": ["queda livre", "MUV", "cinemática"]
+        },
+        {
+          "id": "q111-4",
+          "enunciado": "Dois carros partem simultaneamente de cidades A e B, distantes 200 km, viajando um em direção ao outro. O carro que parte de A tem velocidade constante de 60 km/h, e o que parte de B tem velocidade constante de 40 km/h. O encontro ocorrerá após quanto tempo?",
+          "alternativas": {
+            "A": "1 h",
+            "B": "2 h",
+            "C": "3 h",
+            "D": "4 h",
+            "E": "5 h"
+          },
+          "correta": "B",
+          "explicacao": "Quando dois móveis vão ao encontro um do outro, a velocidade de aproximação é a soma das velocidades: v_aprox = 60 + 40 = 100 km/h. Tempo para percorrer a distância inicial: t = 200 km / 100 km/h = 2 h. Alternativamente, pode-se igualar as equações horárias.",
+          "dificuldade": "medio",
+          "tags": ["encontro", "MU", "cinemática"]
+        },
+        {
+          "id": "q111-5",
+          "enunciado": "Um trem de 100 m de comprimento atravessa uma ponte de 400 m de extensão com velocidade constante de 20 m/s. O tempo necessário para o trem atravessar completamente a ponte é:",
+          "alternativas": {
+            "A": "5 s",
+            "B": "20 s",
+            "C": "25 s",
+            "D": "50 s",
+            "E": "100 s"
+          },
+          "correta": "C",
+          "explicacao": "Para o trem atravessar completamente a ponte, a frente do trem deve percorrer o comprimento da ponte (400 m) mais o comprimento do próprio trem (100 m), totalizando 500 m. Tempo = distância/velocidade = 500 m / 20 m/s = 25 s.",
+          "dificuldade": "medio",
+          "tags": ["MU", "cinemática", "extensão"]
+        }
+      ]
+    },
+    {
+      "id": "m112",
+      "titulo": "Dinâmica: Leis de Newton",
+      "resumo": "As três leis de Newton, força, massa, aceleração e aplicações",
+      "topicos": [
+        {
+          "titulo": "Primeira Lei de Newton (Inércia)",
+          "conteudo": "Um corpo em repouso permanece em repouso, e um corpo em movimento uniforme permanece em MU, a menos que uma força resultante não nula atue sobre ele. Inércia é a tendência de manter o estado de movimento. Quanto maior a massa, maior a inércia. Exemplos: passageiros inclinam para frente quando o carro freia; pessoa desliza no banco quando o carro faz curva; poeira sai do tapete quando sacudido. Para haver equilíbrio (repouso ou MU), a força resultante deve ser zero (ΣF = 0)."
+        },
+        {
+          "titulo": "Segunda Lei de Newton",
+          "conteudo": "A força resultante sobre um corpo é igual ao produto de sua massa pela aceleração: F = m·a (ou ΣF = m·a). É uma relação vetorial. Unidades SI: força em Newton (N), massa em kg, aceleração em m/s². 1 N = 1 kg·m/s². Se F = 0, então a = 0 (1ª lei). Se F ≠ 0, o corpo acelera na direção da força resultante. Peso (P = m·g) é a força gravitacional: P ≈ 10m (usando g = 10 m/s²). A força resultante considera todas as forças atuantes no corpo."
+        },
+        {
+          "titulo": "Terceira Lei de Newton (Ação e Reação)",
+          "conteudo": "Para toda ação há uma reação de mesma intensidade, mesma direção e sentido oposto, aplicadas em corpos diferentes. Pares ação-reação: Terra puxa pessoa (peso), pessoa puxa Terra; pessoa empurra parede, parede empurra pessoa. Importante: ação e reação atuam em corpos diferentes, por isso não se cancelam. Quando você anda, seu pé empurra o chão para trás (ação), o chão empurra você para frente (reação). Quando nada, empurra água para trás, água empurra você para frente."
+        }
+      ],
+      "exemplos": [
+        "Calcular aceleração de um corpo conhecendo massa e força",
+        "Identificar pares de ação e reação em situações cotidianas",
+        "Entender por que usamos cinto de segurança (inércia)"
+      ],
+      "dicas": [
+        "ENEM foca em aplicações conceituais das leis de Newton",
+        "Lembre: ação e reação estão em corpos diferentes",
+        "Peso ≠ massa: peso é força (N), massa é quantidade de matéria (kg)"
+      ],
+      "questoes": [
+        {
+          "id": "q112-1",
+          "enunciado": "Em um acidente de trânsito, passageiros que não usam cinto de segurança são arremessados para frente quando o veículo para bruscamente. Esse fenômeno é explicado pela:",
+          "alternativas": {
+            "A": "Lei da Gravitação Universal de Newton",
+            "B": "Primeira Lei de Newton (Lei da Inércia)",
+            "C": "Segunda Lei de Newton (F = m·a)",
+            "D": "Terceira Lei de Newton (Ação e Reação)",
+            "E": "Lei da Conservação da Energia"
+          },
+          "correta": "B",
+          "explicacao": "Pela Lei da Inércia, um corpo em movimento tende a permanecer em movimento. Quando o carro freia bruscamente, os passageiros tendem a continuar com a velocidade que tinham. O cinto de segurança aplica força para desacelerar o passageiro junto com o carro, evitando que seja arremessado.",
+          "dificuldade": "facil",
+          "tags": ["leis de newton", "inércia", "segurança"]
+        },
+        {
+          "id": "q112-2",
+          "enunciado": "Uma força de 20 N atua sobre um corpo de massa 4 kg inicialmente em repouso sobre uma superfície sem atrito. Após 5 segundos, a velocidade do corpo será:",
+          "alternativas": {
+            "A": "5 m/s",
+            "B": "10 m/s",
+            "C": "20 m/s",
+            "D": "25 m/s",
+            "E": "100 m/s"
+          },
+          "correta": "D",
+          "explicacao": "Pela 2ª Lei de Newton: a = F/m = 20/4 = 5 m/s². Como parte do repouso, v = v₀ + a·t = 0 + 5·5 = 25 m/s. A força resultante produz aceleração proporcional.",
+          "dificuldade": "medio",
+          "tags": ["segunda lei", "aceleração", "dinâmica"]
+        },
+        {
+          "id": "q112-3",
+          "enunciado": "Uma pessoa de 70 kg está em um elevador que sobe com aceleração de 2 m/s². Considerando g = 10 m/s², a força que o piso do elevador exerce sobre a pessoa (força normal) é:",
+          "alternativas": {
+            "A": "560 N",
+            "B": "700 N",
+            "C": "840 N",
+            "D": "980 N",
+            "E": "1400 N"
+          },
+          "correta": "C",
+          "explicacao": "Forças na pessoa: Normal (N, para cima) e Peso (P = 70×10 = 700 N, para baixo). Como o elevador sobe acelerando, a resultante é para cima: N - P = m·a → N - 700 = 70×2 → N = 700 + 140 = 840 N. A pessoa se sente 'mais pesada'.",
+          "dificuldade": "medio",
+          "tags": ["elevador", "normal", "dinâmica"]
+        },
+        {
+          "id": "q112-4",
+          "enunciado": "Quando uma pessoa caminha, ela exerce uma força sobre o solo para trás. Pela Terceira Lei de Newton, o solo exerce uma força sobre a pessoa:",
+          "alternativas": {
+            "A": "Para trás, fazendo-a permanecer parada",
+            "B": "Para frente, possibilitando seu deslocamento",
+            "C": "Para cima, contrabalançando seu peso",
+            "D": "Para baixo, aumentando a pressão no solo",
+            "E": "Na mesma direção e sentido do peso"
+          },
+          "correta": "B",
+          "explicacao": "Pela 3ª Lei de Newton (ação e reação), se a pessoa empurra o solo para trás (ação), o solo empurra a pessoa para frente (reação). É essa força do solo que impulsiona a pessoa para frente. Ação e reação têm mesma intensidade, mesma direção, sentidos opostos e atuam em corpos diferentes.",
+          "dificuldade": "facil",
+          "tags": ["ação e reação", "terceira lei", "dinâmica"]
+        },
+        {
+          "id": "q112-5",
+          "enunciado": "Um bloco de 10 kg está sobre uma mesa horizontal. Uma força horizontal de 30 N é aplicada ao bloco, que permanece em repouso devido ao atrito. Considerando g = 10 m/s², a força de atrito estático que atua no bloco é:",
+          "alternativas": {
+            "A": "10 N",
+            "B": "30 N",
+            "C": "50 N",
+            "D": "100 N",
+            "E": "130 N"
+          },
+          "correta": "B",
+          "explicacao": "Como o bloco está em equilíbrio (repouso), a força resultante é zero. Na horizontal: a força aplicada (30 N) é equilibrada pela força de atrito estático, que também vale 30 N (em sentido oposto). O atrito estático se ajusta para manter o equilíbrio, até seu valor máximo.",
+          "dificuldade": "facil",
+          "tags": ["atrito", "equilíbrio", "dinâmica"]
+        }
+      ]
+    },
+    {
+      "id": "m113",
+      "titulo": "Energia e Trabalho",
+      "resumo": "Trabalho, energia cinética, potencial, conservação e potência",
+      "topicos": [
+        {
+          "titulo": "Trabalho de uma Força",
+          "conteudo": "Trabalho (τ) é a transferência de energia quando uma força desloca um corpo: τ = F·d·cos(θ), onde θ é o ângulo entre força e deslocamento. Unidade SI: Joule (J). Se F e d na mesma direção: τ = F·d (trabalho positivo, força motora). Se opostos: τ negativo (força resistente). Se perpendiculares (θ = 90°): τ = 0 (força não transfere energia). Exemplo: carregar mala horizontalmente não realiza trabalho sobre ela (força vertical, movimento horizontal). Trabalho do peso: τ_P = m·g·h (h = variação de altura)."
+        },
+        {
+          "titulo": "Energia Cinética e Potencial",
+          "conteudo": "Energia cinética (E_c) é a energia do movimento: E_c = ½·m·v². Teorema trabalho-energia: τ_resultante = ΔE_c (trabalho da resultante = variação da energia cinética). Energia potencial gravitacional: E_p = m·g·h (h = altura em relação a um referencial). Energia potencial elástica (mola): E_pe = ½·k·x² (k = constante elástica, x = deformação). A energia pode se transformar: cinética ↔ potencial gravitacional (queda livre, montanha-russa), potencial elástica ↔ cinética (mola)."
+        },
+        {
+          "titulo": "Conservação de Energia e Potência",
+          "conteudo": "Em sistemas conservativos (sem atrito/dissipação), a energia mecânica total (E_m = E_c + E_p) se conserva. Exemplo: bola em queda livre converte E_p em E_c, mas E_m é constante. Com dissipação (atrito), parte da energia vira calor: E_m_inicial = E_m_final + E_dissipada. Potência (P) é a taxa de transferência de energia: P = τ/t = E/t. Também: P = F·v. Unidade SI: Watt (W). Outras: cv (cavalo-vapor ≈ 736 W), kWh (energia: 1 kWh = 3,6×10⁶ J)."
+        }
+      ],
+      "exemplos": [
+        "Calcular trabalho de uma força aplicada em ângulo",
+        "Usar conservação de energia em problemas de queda livre",
+        "Calcular potência de motores e eletrodomésticos"
+      ],
+      "dicas": [
+        "ENEM adora questões de conservação de energia",
+        "Trabalho = 0 se força perpendicular ao deslocamento",
+        "kWh é unidade de energia, não de potência"
+      ],
+      "questoes": [
+        {
+          "id": "q113-1",
+          "enunciado": "Uma pessoa carrega uma mala de 10 kg horizontalmente por uma distância de 100 m. Considerando g = 10 m/s², o trabalho realizado pela força que a pessoa faz para sustentar a mala é:",
+          "alternativas": {
+            "A": "Zero",
+            "B": "100 J",
+            "C": "1000 J",
+            "D": "10000 J",
+            "E": "100000 J"
+          },
+          "correta": "A",
+          "explicacao": "A força que sustenta a mala é vertical (para cima), enquanto o deslocamento é horizontal. Como força e deslocamento são perpendiculares (θ = 90°), cos(90°) = 0, e o trabalho é zero: τ = F·d·cos(90°) = 0. A força sustenta, mas não transfere energia à mala.",
+          "dificuldade": "facil",
+          "tags": ["trabalho", "força perpendicular", "energia"]
+        },
+        {
+          "id": "q113-2",
+          "enunciado": "Uma bola de 2 kg é abandonada de uma altura de 5 m. Considerando g = 10 m/s² e desprezando o atrito com o ar, a velocidade da bola ao atingir o solo é:",
+          "alternativas": {
+            "A": "5 m/s",
+            "B": "10 m/s",
+            "C": "20 m/s",
+            "D": "50 m/s",
+            "E": "100 m/s"
+          },
+          "correta": "B",
+          "explicacao": "Usando conservação de energia: E_p_inicial = E_c_final → m·g·h = ½·m·v² → g·h = ½·v² → v² = 2·g·h = 2·10·5 = 100 → v = 10 m/s. A massa cancela na equação.",
+          "dificuldade": "medio",
+          "tags": ["conservação", "energia potencial", "cinética"]
+        },
+        {
+          "id": "q113-3",
+          "enunciado": "Um motor elétrico de 1000 W funciona durante 30 minutos. A energia consumida, em kWh, é:",
+          "alternativas": {
+            "A": "0,5 kWh",
+            "B": "1 kWh",
+            "C": "30 kWh",
+            "D": "500 kWh",
+            "E": "1000 kWh"
+          },
+          "correta": "A",
+          "explicacao": "Potência = 1000 W = 1 kW. Tempo = 30 min = 0,5 h. Energia = Potência × Tempo = 1 kW × 0,5 h = 0,5 kWh. O kWh é a unidade usada em contas de energia elétrica.",
+          "dificuldade": "facil",
+          "tags": ["potência", "energia", "kWh"]
+        },
+        {
+          "id": "q113-4",
+          "enunciado": "Um carro de 1000 kg acelera de 0 a 20 m/s. A energia cinética adquirida pelo carro é:",
+          "alternativas": {
+            "A": "10000 J",
+            "B": "20000 J",
+            "C": "100000 J",
+            "D": "200000 J",
+            "E": "400000 J"
+          },
+          "correta": "D",
+          "explicacao": "Energia cinética: E_c = ½·m·v² = ½·1000·(20)² = ½·1000·400 = 200000 J = 200 kJ. Note que a energia cinética depende do quadrado da velocidade.",
+          "dificuldade": "facil",
+          "tags": ["energia cinética", "velocidade", "trabalho"]
+        },
+        {
+          "id": "q113-5",
+          "enunciado": "Um bloco desliza por um plano inclinado sem atrito partindo do repouso. A altura inicial é h. A velocidade do bloco na base do plano é:",
+          "alternativas": {
+            "A": "v = √(gh)",
+            "B": "v = √(2gh)",
+            "C": "v = 2gh",
+            "D": "v = gh",
+            "E": "v = √(gh/2)"
+          },
+          "correta": "B",
+          "explicacao": "Por conservação de energia (sem atrito): m·g·h = ½·m·v² → v² = 2·g·h → v = √(2gh). Este resultado independe da inclinação do plano (depende apenas da altura) e da massa do bloco.",
+          "dificuldade": "medio",
+          "tags": ["conservação", "plano inclinado", "energia"]
+        }
+      ]
+    },
+    {
+      "id": "m114",
+      "titulo": "Termologia: Calor e Temperatura",
+      "resumo": "Temperatura, calor, dilatação, calorimetria e mudanças de fase",
+      "topicos": [
+        {
+          "titulo": "Temperatura e Escalas Termométricas",
+          "conteudo": "Temperatura é a medida da agitação térmica das partículas. Escalas: Celsius (°C) - água congela a 0°C e ferve a 100°C; Fahrenheit (°F); Kelvin (K) - escala absoluta, zero absoluto = 0 K = -273°C. Conversões: T_K = T_C + 273; T_F = 1,8·T_C + 32. Equilíbrio térmico: corpos em contato trocam calor até terem mesma temperatura. Termômetros medem temperatura através de propriedades que variam com ela (dilatação de líquido, resistência elétrica)."
+        },
+        {
+          "titulo": "Calor e Calorimetria",
+          "conteudo": "Calor (Q) é energia térmica em trânsito, transferida de corpo mais quente para mais frio. Unidades: Joule (J), caloria (cal). 1 cal ≈ 4,18 J. Calor sensível (muda temperatura): Q = m·c·ΔT, onde c = calor específico (da água, c = 1 cal/g·°C = 4180 J/kg·K). Calor latente (muda fase, temperatura constante): Q = m·L, onde L = calor latente de fusão ou vaporização. Capacidade térmica: C = m·c. Calorímetro: sistema isolado onde a soma dos calores trocados é zero (conservação de energia)."
+        },
+        {
+          "titulo": "Transmissão de Calor",
+          "conteudo": "Condução: transferência por contato, partículas passam energia às vizinhas (sólidos). Bons condutores: metais. Isolantes: madeira, ar, isopor. Convecção: transferência por movimento de fluido (líquidos e gases) - correntes de convecção. Ar quente sobe, frio desce. Irradiação: transferência por ondas eletromagnéticas, não precisa de meio material (calor do Sol). Todos os corpos emitem radiação; corpos escuros absorvem e emitem mais. Aplicações: garrafa térmica (evita os três tipos), aquecimento de casas, efeito estufa."
+        }
+      ],
+      "exemplos": [
+        "Converter temperaturas entre Celsius, Fahrenheit e Kelvin",
+        "Calcular calor necessário para aquecer água",
+        "Entender funcionamento de garrafa térmica"
+      ],
+      "dicas": [
+        "ENEM relaciona termologia a situações do cotidiano",
+        "Calor não é temperatura; calor é energia em trânsito",
+        "Na calorimetria, soma dos calores = 0 (sistema isolado)"
+      ],
+      "questoes": [
+        {
+          "id": "q114-1",
+          "enunciado": "A temperatura de 20°C, convertida para a escala Kelvin, corresponde a:",
+          "alternativas": {
+            "A": "253 K",
+            "B": "273 K",
+            "C": "293 K",
+            "D": "313 K",
+            "E": "373 K"
+          },
+          "correta": "C",
+          "explicacao": "Para converter Celsius para Kelvin: T_K = T_C + 273. Logo, T_K = 20 + 273 = 293 K. O zero Kelvin (0 K) corresponde a -273°C, o chamado zero absoluto, menor temperatura possível.",
+          "dificuldade": "facil",
+          "tags": ["temperatura", "escalas", "kelvin"]
+        },
+        {
+          "id": "q114-2",
+          "enunciado": "Para aquecer 500 g de água de 20°C a 80°C, a quantidade de calor necessária é: (calor específico da água = 1 cal/g·°C)",
+          "alternativas": {
+            "A": "3000 cal",
+            "B": "10000 cal",
+            "C": "30000 cal",
+            "D": "40000 cal",
+            "E": "50000 cal"
+          },
+          "correta": "C",
+          "explicacao": "Q = m·c·ΔT = 500 × 1 × (80 - 20) = 500 × 60 = 30000 cal. A água tem calor específico alto, o que significa que precisa de muita energia para mudar sua temperatura.",
+          "dificuldade": "facil",
+          "tags": ["calorimetria", "calor específico", "água"]
+        },
+        {
+          "id": "q114-3",
+          "enunciado": "Uma garrafa térmica consegue manter a temperatura de seu conteúdo porque minimiza a transferência de calor. Para isso, ela utiliza estratégias que reduzem:",
+          "alternativas": {
+            "A": "Apenas a condução",
+            "B": "Apenas a convecção",
+            "C": "Apenas a irradiação",
+            "D": "Condução, convecção e irradiação simultaneamente",
+            "E": "Nenhuma forma de transmissão de calor"
+          },
+          "correta": "D",
+          "explicacao": "A garrafa térmica reduz os três tipos de transmissão: condução (paredes duplas com vácuo entre elas, materiais isolantes), convecção (vácuo impede movimento de fluido) e irradiação (paredes internas espelhadas refletem radiação). Por isso, mantém líquidos quentes ou frios por mais tempo.",
+          "dificuldade": "medio",
+          "tags": ["transmissão de calor", "garrafa térmica", "aplicação"]
+        },
+        {
+          "id": "q114-4",
+          "enunciado": "Em dias quentes, usa-se gelo para resfriar bebidas. O gelo derrete absorvendo calor. Esse calor absorvido é chamado de:",
+          "alternativas": {
+            "A": "Calor sensível, pois muda a temperatura do gelo",
+            "B": "Calor latente de fusão, pois muda o estado físico",
+            "C": "Calor latente de vaporização, pois a água evapora",
+            "D": "Capacidade térmica da bebida",
+            "E": "Condutividade térmica do gelo"
+          },
+          "correta": "B",
+          "explicacao": "Quando o gelo derrete, ele passa de sólido para líquido (fusão). Durante a mudança de fase, a temperatura permanece constante (0°C) e o calor absorvido é chamado de calor latente de fusão (Q = m·L_fusão). Esse calor é retirado da bebida, que esfria.",
+          "dificuldade": "medio",
+          "tags": ["calor latente", "fusão", "mudança de fase"]
+        },
+        {
+          "id": "q114-5",
+          "enunciado": "As brisas marítimas ocorrem devido à diferença de aquecimento entre o mar e o continente. Durante o dia, a brisa sopra:",
+          "alternativas": {
+            "A": "Do mar para o continente, pois o continente aquece mais e o ar sobe",
+            "B": "Do continente para o mar, pois o mar aquece mais rapidamente",
+            "C": "Não há brisa durante o dia, apenas à noite",
+            "D": "Verticalmente, de baixo para cima, sobre o mar",
+            "E": "Do norte para o sul, independentemente da posição do mar"
+          },
+          "correta": "A",
+          "explicacao": "Durante o dia, o continente aquece mais rapidamente que o mar (água tem maior calor específico). O ar sobre o continente aquece, fica menos denso e sobe (convecção). O ar mais frio do mar se desloca para ocupar o lugar, gerando a brisa marítima (mar → continente). À noite, o processo se inverte (brisa terrestre).",
+          "dificuldade": "medio",
+          "tags": ["convecção", "brisa", "calor específico"]
+        }
+      ]
+    },
+    {
+      "id": "m115",
+      "titulo": "Óptica: Luz e Visão",
+      "resumo": "Natureza da luz, reflexão, refração, espelhos, lentes e instrumentos ópticos",
+      "topicos": [
+        {
+          "titulo": "Natureza da Luz e Princípios",
+          "conteudo": "A luz visível é onda eletromagnética (400-700 nm). Dualidade onda-partícula: comporta-se como onda (interferência, difração) e partícula (efeito fotoelétrico). Velocidade no vácuo: c ≈ 3×10⁸ m/s. Princípios da óptica geométrica: propagação retilínea (em meios homogêneos), independência dos raios, reversibilidade. Fontes de luz: primárias (emitem luz própria: Sol, lâmpada) e secundárias (refletem luz: Lua). Meios: transparentes, translúcidos, opacos."
+        },
+        {
+          "titulo": "Reflexão e Espelhos",
+          "conteudo": "Reflexão: raio volta ao meio original. Leis: raio incidente, refletido e normal são coplanares; ângulo de incidência = ângulo de reflexão. Espelho plano: imagem virtual, direita, do mesmo tamanho, simétrica (atrás do espelho). Espelhos esféricos: côncavo (converge luz, pode formar imagens reais ou virtuais) e convexo (diverge luz, imagens virtuais, menores, direitas). Equação de Gauss: 1/f = 1/p + 1/p', onde f = distância focal, p = distância do objeto, p' = distância da imagem."
+        },
+        {
+          "titulo": "Refração e Lentes",
+          "conteudo": "Refração: luz muda de meio e de velocidade, desviando. Lei de Snell: n₁·sen(θ₁) = n₂·sen(θ₂), onde n = índice de refração (n = c/v). Quando passa para meio mais refringente (maior n), luz aproxima-se da normal. Reflexão interna total: ocorre quando luz passa de meio mais para menos refringente, com ângulo maior que o crítico (fibra óptica). Lentes: convergentes (bordas finas, miopia usa divergente para corrigir) e divergentes (bordas grossas, hipermetropia usa convergente). Equação dos fabricantes relaciona vergência (dioptria) ao foco."
+        }
+      ],
+      "exemplos": [
+        "Explicar formação de imagens em espelhos e lentes",
+        "Entender funcionamento de correção visual (óculos)",
+        "Fenômenos do cotidiano: arco-íris, miragem, fibra óptica"
+      ],
+      "dicas": [
+        "ENEM relaciona óptica a fenômenos naturais e tecnologia",
+        "Espelho côncavo: objeto antes do foco → imagem real, invertida",
+        "Miopia: globo ocular alongado, corrige com lente divergente"
+      ],
+      "questoes": [
+        {
+          "id": "q115-1",
+          "enunciado": "Uma pessoa se posiciona a 2 m de um espelho plano vertical. A distância entre a pessoa e sua imagem é:",
+          "alternativas": {
+            "A": "1 m",
+            "B": "2 m",
+            "C": "3 m",
+            "D": "4 m",
+            "E": "8 m"
+          },
+          "correta": "D",
+          "explicacao": "Em espelhos planos, a imagem forma-se à mesma distância atrás do espelho que o objeto está à frente. Se a pessoa está a 2 m do espelho, a imagem está a 2 m atrás do espelho. A distância pessoa-imagem é 2 + 2 = 4 m.",
+          "dificuldade": "facil",
+          "tags": ["espelho plano", "imagem", "distância"]
+        },
+        {
+          "id": "q115-2",
+          "enunciado": "A fibra óptica é usada em telecomunicações para transmitir dados através de pulsos de luz. O princípio físico que permite a luz 'seguir' as curvas da fibra é:",
+          "alternativas": {
+            "A": "Difração da luz",
+            "B": "Interferência construtiva",
+            "C": "Reflexão interna total",
+            "D": "Polarização da luz",
+            "E": "Efeito fotoelétrico"
+          },
+          "correta": "C",
+          "explicacao": "A fibra óptica funciona por reflexão interna total: a luz viaja pelo núcleo da fibra (índice de refração maior) e, ao atingir a interface com a casca (índice menor), reflete totalmente se o ângulo for maior que o ângulo crítico. Assim, a luz permanece confinada no núcleo, mesmo em curvas.",
+          "dificuldade": "medio",
+          "tags": ["fibra óptica", "reflexão interna", "refração"]
+        },
+        {
+          "id": "q115-3",
+          "enunciado": "Para corrigir miopia, utiliza-se óculos com lentes:",
+          "alternativas": {
+            "A": "Convergentes, pois aumentam a convergência do sistema óptico",
+            "B": "Divergentes, pois afastam o foco para que coincida com a retina",
+            "C": "Planas, apenas para proteger os olhos",
+            "D": "Bifocais, com parte convergente e parte divergente",
+            "E": "Cilíndricas, para corrigir astigmatismo associado"
+          },
+          "correta": "B",
+          "explicacao": "Na miopia, o globo ocular é alongado ou o cristalino muito convergente, fazendo a imagem se formar antes da retina. Lentes divergentes 'afastam' a imagem, fazendo-a coincidir com a retina. Na hipermetropia (imagem atrás da retina), usa-se lentes convergentes.",
+          "dificuldade": "facil",
+          "tags": ["miopia", "lentes", "visão"]
+        },
+        {
+          "id": "q115-4",
+          "enunciado": "Quando um raio de luz passa do ar (n = 1) para a água (n = 1,33), o raio de luz:",
+          "alternativas": {
+            "A": "Não sofre desvio, pois a velocidade da luz é constante",
+            "B": "Aproxima-se da normal, pois a água é mais refringente",
+            "C": "Afasta-se da normal, pois a água é menos refringente",
+            "D": "Reflete totalmente de volta para o ar",
+            "E": "Muda de cor, mas não de direção"
+          },
+          "correta": "B",
+          "explicacao": "Quando a luz passa de um meio menos refringente (menor n) para mais refringente (maior n), ela diminui de velocidade e aproxima-se da normal. A água tem n = 1,33 (maior que ar, n = 1), então a luz se aproxima da normal ao entrar na água.",
+          "dificuldade": "medio",
+          "tags": ["refração", "lei de snell", "índice de refração"]
+        },
+        {
+          "id": "q115-5",
+          "enunciado": "Um espelho côncavo tem distância focal de 10 cm. Um objeto é colocado a 20 cm do espelho. A imagem formada é:",
+          "alternativas": {
+            "A": "Virtual, direita e maior",
+            "B": "Real, invertida e do mesmo tamanho",
+            "C": "Virtual, direita e do mesmo tamanho",
+            "D": "Real, invertida e menor",
+            "E": "Não se forma imagem nessa posição"
+          },
+          "correta": "B",
+          "explicacao": "Usando a equação de Gauss: 1/f = 1/p + 1/p' → 1/10 = 1/20 + 1/p' → 1/p' = 1/10 - 1/20 = 1/20 → p' = 20 cm. Como p = p' = 20 cm = 2f (objeto no centro de curvatura), a imagem é real, invertida e do mesmo tamanho.",
+          "dificuldade": "dificil",
+          "tags": ["espelho côncavo", "gauss", "imagem"]
+        }
+      ]
+    },
+    {
+      "id": "m116",
+      "titulo": "Ondas e Acústica",
+      "resumo": "Propriedades das ondas, som, fenômenos ondulatórios e aplicações",
+      "topicos": [
+        {
+          "titulo": "Conceitos Fundamentais de Ondas",
+          "conteudo": "Onda é perturbação que se propaga transportando energia, sem transportar matéria. Classificações: mecânicas (precisam de meio: som) vs. eletromagnéticas (não precisam: luz); transversais (oscilação perpendicular à propagação: luz, ondas do mar) vs. longitudinais (oscilação na direção da propagação: som). Grandezas: amplitude (A), frequência (f), período (T = 1/f), comprimento de onda (λ), velocidade (v = λ·f). A velocidade depende do meio, não da fonte."
+        },
+        {
+          "titulo": "Som e Acústica",
+          "conteudo": "Som é onda mecânica longitudinal, precisa de meio para se propagar (não se propaga no vácuo). Velocidade no ar ≈ 340 m/s (varia com temperatura), maior em líquidos e sólidos. Características do som: altura (grave/agudo, depende da frequência), intensidade (volume, depende da amplitude), timbre (qualidade, diferencia instrumentos). Audição humana: 20 Hz - 20000 Hz. Infrassom: < 20 Hz; ultrassom: > 20000 Hz. Aplicações do ultrassom: ecografia, sonar."
+        },
+        {
+          "titulo": "Fenômenos Ondulatórios",
+          "conteudo": "Reflexão: onda volta ao meio original (eco é reflexão do som). Refração: onda muda de meio e velocidade. Difração: onda contorna obstáculos (ouvir som virando a esquina). Interferência: ondas se superpõem - construtiva (cristas se somam) ou destrutiva (crista + vale se cancelam). Efeito Doppler: mudança na frequência percebida quando fonte e observador se movem relativamente (ambulância que se aproxima parece mais aguda). Ressonância: amplitude máxima quando frequência de excitação = frequência natural."
+        }
+      ],
+      "exemplos": [
+        "Por que o trovão demora mais que o relâmpago (som mais lento que luz)",
+        "Funcionamento do ultrassom médico",
+        "Efeito Doppler em ambulâncias e radares"
+      ],
+      "dicas": [
+        "ENEM relaciona ondas a fenômenos do cotidiano",
+        "Lembre: som não se propaga no vácuo",
+        "v = λ·f é equação fundamental das ondas"
+      ],
+      "questoes": [
+        {
+          "id": "q116-1",
+          "enunciado": "O som não se propaga no vácuo porque:",
+          "alternativas": {
+            "A": "A velocidade da luz no vácuo é muito alta",
+            "B": "O som é onda eletromagnética e precisa de luz",
+            "C": "O som é onda mecânica e precisa de um meio material para se propagar",
+            "D": "O vácuo absorve completamente a energia sonora",
+            "E": "A frequência do som é incompatível com o vácuo"
+          },
+          "correta": "C",
+          "explicacao": "O som é onda mecânica longitudinal: sua propagação depende da vibração de partículas do meio (ar, água, sólidos). No vácuo, não há partículas para vibrar, portanto o som não se propaga. Ondas eletromagnéticas (luz, rádio) não precisam de meio e se propagam no vácuo.",
+          "dificuldade": "facil",
+          "tags": ["som", "onda mecânica", "vácuo"]
+        },
+        {
+          "id": "q116-2",
+          "enunciado": "Uma onda sonora tem frequência de 680 Hz e se propaga no ar com velocidade de 340 m/s. O comprimento de onda é:",
+          "alternativas": {
+            "A": "0,25 m",
+            "B": "0,5 m",
+            "C": "1 m",
+            "D": "2 m",
+            "E": "340 m"
+          },
+          "correta": "B",
+          "explicacao": "Usando v = λ·f → λ = v/f = 340/680 = 0,5 m. A equação fundamental das ondas relaciona velocidade, comprimento de onda e frequência.",
+          "dificuldade": "facil",
+          "tags": ["ondas", "frequência", "comprimento de onda"]
+        },
+        {
+          "id": "q116-3",
+          "enunciado": "O efeito Doppler é observado quando:",
+          "alternativas": {
+            "A": "Duas ondas se superpõem criando interferência",
+            "B": "Uma onda contorna um obstáculo",
+            "C": "Há movimento relativo entre a fonte sonora e o observador",
+            "D": "O som é refletido por uma superfície",
+            "E": "A onda muda de um meio para outro"
+          },
+          "correta": "C",
+          "explicacao": "O efeito Doppler ocorre quando há movimento relativo entre fonte e observador. Se a fonte se aproxima, as ondas são 'comprimidas' e a frequência percebida aumenta (som mais agudo). Se se afasta, a frequência percebida diminui (som mais grave). Exemplo: sirene de ambulância.",
+          "dificuldade": "medio",
+          "tags": ["doppler", "frequência", "movimento"]
+        },
+        {
+          "id": "q116-4",
+          "enunciado": "O eco é um fenômeno que ocorre devido à:",
+          "alternativas": {
+            "A": "Refração do som em meios diferentes",
+            "B": "Reflexão do som em superfícies distantes",
+            "C": "Difração do som em obstáculos",
+            "D": "Interferência de ondas sonoras",
+            "E": "Absorção do som por superfícies macias"
+          },
+          "correta": "B",
+          "explicacao": "O eco é a reflexão do som: quando uma onda sonora atinge uma superfície (parede, montanha), ela volta. Para ouvir eco distinto, a superfície deve estar a mais de 17 m (tempo de ida e volta > 0,1 s, que é o mínimo para o ouvido distinguir dois sons).",
+          "dificuldade": "facil",
+          "tags": ["eco", "reflexão", "som"]
+        },
+        {
+          "id": "q116-5",
+          "enunciado": "Dois instrumentos musicais, um violino e uma flauta, tocam a mesma nota musical (mesma frequência). Ainda assim, conseguimos distingui-los. A qualidade do som que permite essa distinção é:",
+          "alternativas": {
+            "A": "Altura",
+            "B": "Intensidade",
+            "C": "Timbre",
+            "D": "Frequência",
+            "E": "Amplitude"
+          },
+          "correta": "C",
+          "explicacao": "O timbre é a qualidade que permite distinguir sons de mesma frequência (altura) e intensidade produzidos por fontes diferentes. Depende da forma da onda, ou seja, dos harmônicos presentes. Cada instrumento tem um timbre característico devido à sua estrutura física.",
+          "dificuldade": "facil",
+          "tags": ["timbre", "som", "instrumentos"]
+        }
+      ]
+    },
+    {
+      "id": "m117",
+      "titulo": "Eletrostática e Lei de Coulomb",
+      "resumo": "Carga elétrica, eletrização, força elétrica e campo elétrico",
+      "topicos": [
+        {
+          "titulo": "Carga Elétrica e Eletrização",
+          "conteudo": "A carga elétrica é propriedade das partículas: prótons (+) e elétrons (-). Unidade SI: Coulomb (C). Carga do elétron: e = 1,6×10⁻¹⁹ C. Cargas de mesmo sinal se repelem; sinais opostos se atraem. Corpo neutro tem cargas positivas = negativas. Eletrização por atrito: transferência de elétrons entre corpos em atrito. Por contato: transferência por toque com corpo carregado. Por indução: separação de cargas por aproximação de corpo carregado, sem contato."
+        },
+        {
+          "titulo": "Lei de Coulomb",
+          "conteudo": "A força elétrica entre duas cargas pontuais é dada pela Lei de Coulomb: F = k·|q₁|·|q₂|/d², onde k ≈ 9×10⁹ N·m²/C² (constante de Coulomb no vácuo), q são as cargas e d é a distância. A força é atrativa (cargas opostas) ou repulsiva (cargas iguais). É uma força de ação a distância. A força é proporcional ao produto das cargas e inversamente proporcional ao quadrado da distância (similar à gravitação)."
+        },
+        {
+          "titulo": "Campo Elétrico",
+          "conteudo": "Campo elétrico (E) é a região onde uma carga experimenta força elétrica. É definido como E = F/q (força por unidade de carga positiva de teste). Unidade: N/C ou V/m. Campo de carga pontual: E = k·|Q|/d². Linhas de campo: saem de cargas positivas, entram em negativas; nunca se cruzam; mais densas onde campo é mais intenso. Campo uniforme: entre placas paralelas carregadas, E = constante, linhas paralelas e equidistantes."
+        }
+      ],
+      "exemplos": [
+        "Eletrização por atrito ao pentear cabelos secos",
+        "Calcular força entre cargas usando Lei de Coulomb",
+        "Funcionamento de para-raios e aterramento"
+      ],
+      "dicas": [
+        "ENEM cobra aplicações de eletrostática no cotidiano",
+        "Lei de Coulomb: força inversamente proporcional a d²",
+        "Campo elétrico aponta na direção da força sobre carga positiva"
+      ],
+      "questoes": [
+        {
+          "id": "q117-1",
+          "enunciado": "Quando penteamos o cabelo seco com um pente de plástico, o cabelo fica eriçado e atrai pequenos pedaços de papel. Esse fenômeno ocorre devido à:",
+          "alternativas": {
+            "A": "Geração de corrente elétrica no pente",
+            "B": "Eletrização por atrito entre o pente e o cabelo",
+            "C": "Ação do campo magnético do pente",
+            "D": "Reflexão da luz no cabelo",
+            "E": "Condução de calor do cabelo para o pente"
+          },
+          "correta": "B",
+          "explicacao": "Ao atritarmos o pente no cabelo, elétrons são transferidos de um para o outro (eletrização por atrito). Um fica com excesso de elétrons (negativo) e outro com falta (positivo). O pente carregado atrai objetos leves como papel por indução (polariza as cargas no papel).",
+          "dificuldade": "facil",
+          "tags": ["eletrização", "atrito", "eletrostática"]
+        },
+        {
+          "id": "q117-2",
+          "enunciado": "Duas cargas elétricas puntiformes de 2 μC cada estão separadas por uma distância de 30 cm no vácuo. A força elétrica entre elas é: (k = 9×10⁹ N·m²/C²)",
+          "alternativas": {
+            "A": "0,4 N",
+            "B": "4 N",
+            "C": "40 N",
+            "D": "400 N",
+            "E": "4000 N"
+          },
+          "correta": "A",
+          "explicacao": "Lei de Coulomb: F = k·q₁·q₂/d². Convertendo: 2 μC = 2×10⁻⁶ C; 30 cm = 0,3 m. F = 9×10⁹ × (2×10⁻⁶)² / (0,3)² = 9×10⁹ × 4×10⁻¹² / 0,09 = 36×10⁻³ / 0,09 = 0,4 N.",
+          "dificuldade": "medio",
+          "tags": ["coulomb", "força elétrica", "cálculo"]
+        },
+        {
+          "id": "q117-3",
+          "enunciado": "Se a distância entre duas cargas elétricas for duplicada, mantendo as cargas constantes, a força elétrica entre elas:",
+          "alternativas": {
+            "A": "Quadruplica",
+            "B": "Duplica",
+            "C": "Permanece igual",
+            "D": "Reduz pela metade",
+            "E": "Reduz a um quarto"
+          },
+          "correta": "E",
+          "explicacao": "Pela Lei de Coulomb, F é inversamente proporcional a d². Se d dobra, d² quadruplica, e F reduz a 1/4 do valor original. F' = k·q₁·q₂/(2d)² = k·q₁·q₂/4d² = F/4.",
+          "dificuldade": "medio",
+          "tags": ["coulomb", "proporcionalidade", "distância"]
+        },
+        {
+          "id": "q117-4",
+          "enunciado": "Na eletrização por indução, um corpo inicialmente neutro pode ficar eletrizado sem tocar em outro corpo carregado porque:",
+          "alternativas": {
+            "A": "Elétrons são criados no processo",
+            "B": "O campo elétrico do corpo carregado separa as cargas do corpo neutro",
+            "C": "Há transferência de prótons entre os corpos",
+            "D": "O atrito entre o ar e os corpos gera cargas",
+            "E": "A temperatura aumenta e libera elétrons"
+          },
+          "correta": "B",
+          "explicacao": "Na indução, um corpo carregado é aproximado de um neutro. O campo elétrico do corpo carregado repele ou atrai os elétrons do corpo neutro, separando as cargas. Se o corpo neutro for aterrado (tocado), cargas de um sinal escapam. Ao afastar o indutor, o corpo fica carregado com sinal oposto ao do indutor.",
+          "dificuldade": "medio",
+          "tags": ["indução", "eletrização", "campo elétrico"]
+        },
+        {
+          "id": "q117-5",
+          "enunciado": "As linhas de campo elétrico de uma carga pontual positiva isolada:",
+          "alternativas": {
+            "A": "São circunferências centradas na carga",
+            "B": "Saem radialmente da carga para fora",
+            "C": "Entram radialmente na carga",
+            "D": "São paralelas entre si",
+            "E": "Não existem, pois a carga está isolada"
+          },
+          "correta": "B",
+          "explicacao": "Linhas de campo saem de cargas positivas e entram em cargas negativas. Para uma carga positiva isolada, as linhas são retas radiais que se afastam da carga. Quanto mais distante, mais espaçadas as linhas (campo mais fraco). Uma carga de teste positiva seria repelida, movendo-se na direção das linhas.",
+          "dificuldade": "facil",
+          "tags": ["campo elétrico", "linhas de campo", "carga positiva"]
+        }
+      ]
+    },
+    {
+      "id": "m118",
+      "titulo": "Corrente Elétrica e Circuitos",
+      "resumo": "Corrente, resistência, Lei de Ohm, potência e circuitos elétricos",
+      "topicos": [
+        {
+          "titulo": "Corrente Elétrica",
+          "conteudo": "Corrente elétrica (i) é o fluxo ordenado de cargas elétricas. Unidade SI: Ampère (A). i = ΔQ/Δt (carga por tempo). Sentido convencional: do positivo para o negativo (oposto ao fluxo real de elétrons). Corrente contínua (CC): sentido constante (pilhas, baterias). Corrente alternada (CA): sentido varia periodicamente (tomadas, rede elétrica). Para haver corrente contínua, é preciso: material condutor, cargas livres, e diferença de potencial (ddp ou tensão)."
+        },
+        {
+          "titulo": "Resistência e Lei de Ohm",
+          "conteudo": "Resistência elétrica (R) é a oposição ao fluxo de corrente. Unidade: Ohm (Ω). Primeira Lei de Ohm: U = R·i (tensão = resistência × corrente). Segunda Lei de Ohm: R = ρ·L/A (ρ = resistividade do material, L = comprimento, A = área da seção). Resistores ôhmicos: R constante, gráfico U×i é reta. Fatores que aumentam resistência: maior comprimento, menor área, material mais resistivo. Supercondutores: resistência zero em baixas temperaturas."
+        },
+        {
+          "titulo": "Potência e Energia Elétrica",
+          "conteudo": "Potência elétrica: P = U·i = R·i² = U²/R. Unidade: Watt (W). Efeito Joule: energia elétrica convertida em calor em resistores (chuveiro, aquecedor, lâmpada incandescente). Energia consumida: E = P·t. Em contas de luz, usa-se kWh. Custo = Energia × Tarifa. Eficiência: lâmpadas LED são mais eficientes que incandescentes (mais luz, menos calor). Curto-circuito: resistência muito baixa, corrente muito alta, aquecimento perigoso."
+        }
+      ],
+      "exemplos": [
+        "Calcular corrente conhecendo tensão e resistência",
+        "Entender a conta de energia elétrica (kWh)",
+        "Comparar eficiência de lâmpadas incandescentes e LED"
+      ],
+      "dicas": [
+        "ENEM cobra aplicações de eletricidade no cotidiano",
+        "U = R·i é a Lei de Ohm mais usada",
+        "kWh = potência (kW) × tempo (h) = energia consumida"
+      ],
+      "questoes": [
+        {
+          "id": "q118-1",
+          "enunciado": "Um resistor de 20 Ω está submetido a uma tensão de 100 V. A corrente elétrica que o atravessa é:",
+          "alternativas": {
+            "A": "0,2 A",
+            "B": "2 A",
+            "C": "5 A",
+            "D": "20 A",
+            "E": "2000 A"
+          },
+          "correta": "C",
+          "explicacao": "Pela Lei de Ohm: U = R·i → i = U/R = 100/20 = 5 A. A Lei de Ohm é fundamental para circuitos elétricos e é muito cobrada no ENEM.",
+          "dificuldade": "facil",
+          "tags": ["lei de ohm", "corrente", "resistência"]
+        },
+        {
+          "id": "q118-2",
+          "enunciado": "Um chuveiro elétrico de 5500 W funciona em média 20 minutos por dia. O consumo mensal de energia (30 dias), em kWh, é aproximadamente:",
+          "alternativas": {
+            "A": "5,5 kWh",
+            "B": "11 kWh",
+            "C": "27,5 kWh",
+            "D": "55 kWh",
+            "E": "110 kWh"
+          },
+          "correta": "D",
+          "explicacao": "Potência = 5500 W = 5,5 kW. Tempo por dia = 20 min = 1/3 h. Energia mensal = 5,5 kW × (1/3 h/dia) × 30 dias = 5,5 × 10 = 55 kWh. O chuveiro é um dos aparelhos que mais consome energia nas residências.",
+          "dificuldade": "medio",
+          "tags": ["potência", "energia", "kWh"]
+        },
+        {
+          "id": "q118-3",
+          "enunciado": "Duas lâmpadas, uma de 60 W e outra de 100 W, são ligadas em paralelo na mesma rede de 120 V. A lâmpada que brilha mais é:",
+          "alternativas": {
+            "A": "A de 60 W, pois tem maior resistência",
+            "B": "A de 100 W, pois dissipa mais potência",
+            "C": "Ambas brilham igualmente, pois estão na mesma tensão",
+            "D": "A de 60 W, pois a de 100 W esquenta mais e não ilumina",
+            "E": "Nenhuma acende, pois a tensão é muito alta"
+          },
+          "correta": "B",
+          "explicacao": "Em paralelo, ambas as lâmpadas recebem a mesma tensão (120 V). A potência indica o brilho: a de 100 W dissipa mais potência luminosa (e térmica) que a de 60 W, portanto brilha mais. A de 100 W tem menor resistência (P = U²/R).",
+          "dificuldade": "medio",
+          "tags": ["potência", "paralelo", "lâmpadas"]
+        },
+        {
+          "id": "q118-4",
+          "enunciado": "O efeito Joule é a conversão de energia elétrica em energia térmica em um condutor. Qual dos seguintes aparelhos NÃO utiliza principalmente o efeito Joule para funcionar?",
+          "alternativas": {
+            "A": "Chuveiro elétrico",
+            "B": "Ferro de passar",
+            "C": "Ventilador",
+            "D": "Torradeira",
+            "E": "Aquecedor elétrico"
+          },
+          "correta": "C",
+          "explicacao": "O ventilador usa a energia elétrica principalmente para girar um motor (energia mecânica), não para aquecer. Chuveiro, ferro, torradeira e aquecedor usam resistores que convertem energia elétrica em calor (efeito Joule) como função principal.",
+          "dificuldade": "facil",
+          "tags": ["efeito joule", "aplicações", "energia"]
+        },
+        {
+          "id": "q118-5",
+          "enunciado": "Segundo a segunda Lei de Ohm, a resistência de um fio condutor aumenta quando:",
+          "alternativas": {
+            "A": "Diminuímos seu comprimento",
+            "B": "Aumentamos a área de sua seção transversal",
+            "C": "Aumentamos seu comprimento e diminuímos sua seção transversal",
+            "D": "Trocamos o material por outro de menor resistividade",
+            "E": "Diminuímos a temperatura do condutor"
+          },
+          "correta": "C",
+          "explicacao": "R = ρ·L/A. A resistência é diretamente proporcional ao comprimento (L) e à resistividade (ρ), e inversamente proporcional à área da seção (A). Aumentar L e diminuir A aumenta R. É como um cano: mais longo e mais fino → mais difícil passar água (corrente).",
+          "dificuldade": "medio",
+          "tags": ["segunda lei de ohm", "resistência", "fatores"]
+        }
+      ]
+    },
+    {
+      "id": "m119",
+      "titulo": "Eletromagnetismo",
+      "resumo": "Campo magnético, força magnética, indução eletromagnética e aplicações",
+      "topicos": [
+        {
+          "titulo": "Campo Magnético",
+          "conteudo": "Campo magnético (B) é criado por ímãs ou correntes elétricas. Unidade SI: Tesla (T). Ímãs têm polos Norte e Sul; polos iguais se repelem, opostos se atraem. Linhas de campo magnético saem do polo Norte e entram no Sul (fora do ímã). Campo de corrente retilínea: circunferências concêntricas (regra da mão direita: polegar = corrente, dedos curvados = campo). Solenoide (bobina) cria campo semelhante a ímã de barra. Terra é um grande ímã (polo magnético sul fica próximo ao polo geográfico norte)."
+        },
+        {
+          "titulo": "Força Magnética",
+          "conteudo": "Carga em movimento em campo magnético sofre força: F = q·v·B·sen(θ). Direção: perpendicular a v e B (regra da mão direita ou esquerda). Se v // B: F = 0 (não há força). Condutor com corrente em campo magnético: F = B·i·L (força sobre o fio). Princípio do motor elétrico: corrente em bobina em campo magnético → força → rotação. Força entre fios paralelos: correntes no mesmo sentido se atraem, sentidos opostos se repelem."
+        },
+        {
+          "titulo": "Indução Eletromagnética",
+          "conteudo": "Lei de Faraday: variação de fluxo magnético gera força eletromotriz (fem) induzida: ε = -ΔΦ/Δt. Lei de Lenz: a corrente induzida cria campo que se opõe à variação que a gerou. Aplicações: geradores (transformam energia mecânica em elétrica), transformadores (mudam tensão), freio eletromagnético, fogão de indução, carregamento sem fio. No gerador, uma bobina gira em campo magnético, variando o fluxo e gerando corrente alternada."
+        }
+      ],
+      "exemplos": [
+        "Funcionamento de motor e gerador elétrico",
+        "Transformador: como aumentar ou diminuir tensão",
+        "Bússola e campo magnético terrestre"
+      ],
+      "dicas": [
+        "ENEM relaciona eletromagnetismo a tecnologia e energia",
+        "Indução: variação de fluxo magnético gera corrente",
+        "Motor transforma eletricidade em movimento; gerador faz o oposto"
+      ],
+      "questoes": [
+        {
+          "id": "q119-1",
+          "enunciado": "Uma bússola funciona porque sua agulha imantada se orienta com o campo magnético terrestre. O polo Norte da agulha aponta aproximadamente para o:",
+          "alternativas": {
+            "A": "Polo Norte geográfico, que coincide com o polo norte magnético",
+            "B": "Polo Norte geográfico, pois próximo a ele está o polo sul magnético terrestre",
+            "C": "Polo Sul geográfico, onde fica o polo norte magnético",
+            "D": "Equador terrestre, região de maior campo magnético",
+            "E": "Qualquer direção, pois a Terra não tem campo magnético"
+          },
+          "correta": "B",
+          "explicacao": "O polo Norte da agulha da bússola é atraído pelo polo sul magnético terrestre. Como polos opostos se atraem, e o polo Norte da bússola aponta para o Norte geográfico, significa que próximo ao polo Norte geográfico está o polo sul magnético da Terra.",
+          "dificuldade": "medio",
+          "tags": ["magnetismo", "bússola", "terra"]
+        },
+        {
+          "id": "q119-2",
+          "enunciado": "Em um motor elétrico, a corrente elétrica na bobina, sob ação de um campo magnético, produz um movimento de:",
+          "alternativas": {
+            "A": "Translação, deslocando o motor linearmente",
+            "B": "Rotação, girando a bobina",
+            "C": "Vibração, sem deslocamento líquido",
+            "D": "Aquecimento, apenas convertendo energia em calor",
+            "E": "Nenhum movimento, pois forças magnéticas não realizam trabalho"
+          },
+          "correta": "B",
+          "explicacao": "No motor elétrico, a corrente na bobina, em um campo magnético, experimenta forças que produzem torque, fazendo a bobina girar (rotação). A cada meia volta, um comutador inverte o sentido da corrente, mantendo a rotação. É a conversão de energia elétrica em mecânica (rotacional).",
+          "dificuldade": "facil",
+          "tags": ["motor elétrico", "força magnética", "rotação"]
+        },
+        {
+          "id": "q119-3",
+          "enunciado": "A indução eletromagnética, descoberta por Faraday, é o princípio de funcionamento de:",
+          "alternativas": {
+            "A": "Pilhas e baterias",
+            "B": "Resistores e capacitores",
+            "C": "Geradores de eletricidade e transformadores",
+            "D": "Diodos e transistores",
+            "E": "Ímãs permanentes"
+          },
+          "correta": "C",
+          "explicacao": "A indução eletromagnética (variação de fluxo magnético gera fem) é o princípio do gerador (movimento mecânico varia fluxo → eletricidade) e do transformador (corrente alternada varia fluxo no primário → induz tensão no secundário). Pilhas/baterias funcionam por reações químicas.",
+          "dificuldade": "facil",
+          "tags": ["indução", "gerador", "transformador"]
+        },
+        {
+          "id": "q119-4",
+          "enunciado": "Um transformador elétrico é usado para mudar a tensão da rede. Se o transformador tem 100 espiras no primário e 1000 espiras no secundário, e a tensão de entrada é 120 V, a tensão de saída é:",
+          "alternativas": {
+            "A": "12 V",
+            "B": "120 V",
+            "C": "1200 V",
+            "D": "12000 V",
+            "E": "0 V"
+          },
+          "correta": "C",
+          "explicacao": "Em transformadores ideais: U₁/U₂ = N₁/N₂. Logo, 120/U₂ = 100/1000 → U₂ = 120 × 10 = 1200 V. Este é um transformador elevador de tensão (mais espiras no secundário). Lembrando que transformadores funcionam apenas com corrente alternada.",
+          "dificuldade": "medio",
+          "tags": ["transformador", "tensão", "espiras"]
+        },
+        {
+          "id": "q119-5",
+          "enunciado": "Um elétron se move paralelamente às linhas de um campo magnético uniforme. A força magnética sobre o elétron é:",
+          "alternativas": {
+            "A": "Máxima, na direção do campo",
+            "B": "Máxima, perpendicular ao campo",
+            "C": "Nula, pois v é paralelo a B",
+            "D": "Igual ao peso do elétron",
+            "E": "Variável, dependendo da velocidade"
+          },
+          "correta": "C",
+          "explicacao": "A força magnética é F = q·v·B·sen(θ), onde θ é o ângulo entre v e B. Se v é paralelo a B, θ = 0° e sen(0°) = 0, então F = 0. A força magnética só existe quando há componente da velocidade perpendicular ao campo.",
+          "dificuldade": "medio",
+          "tags": ["força magnética", "paralelo", "elétron"]
+        }
+      ]
+    },
+    {
+      "id": "m120",
+      "titulo": "Física Moderna no ENEM",
+      "resumo": "Relatividade, efeito fotoelétrico, radioatividade e física nuclear",
+      "topicos": [
+        {
+          "titulo": "Relatividade Restrita",
+          "conteudo": "Einstein (1905) mostrou que a velocidade da luz (c ≈ 3×10⁸ m/s) é constante para todos os observadores, independente do movimento. Consequências: dilatação temporal (relógios em movimento 'atrasam') e contração espacial (objetos em movimento 'encurtam' na direção do movimento). A energia total de uma partícula inclui energia de repouso: E = mc². Isso significa que massa e energia são equivalentes. Uma pequena massa corresponde a grande energia (base da energia nuclear)."
+        },
+        {
+          "titulo": "Efeito Fotoelétrico e Dualidade",
+          "conteudo": "O efeito fotoelétrico é a emissão de elétrons por uma superfície metálica quando iluminada. Einstein explicou usando a ideia de que a luz é composta de 'pacotes' de energia chamados fótons: E = h·f (h = constante de Planck ≈ 6,63×10⁻³⁴ J·s). Cada fóton transfere sua energia a um elétron. Se E > função trabalho do metal, o elétron é ejetado. Aumentar intensidade (mais fótons) aumenta corrente, mas não energia dos elétrons. Aumentar frequência aumenta energia dos elétrons. Dualidade onda-partícula: luz tem propriedades de onda e partícula."
+        },
+        {
+          "titulo": "Radioatividade e Energia Nuclear",
+          "conteudo": "Radioatividade é a emissão espontânea de partículas ou radiação por núcleos instáveis. Tipos: alfa (α: 2 prótons + 2 nêutrons = núcleo de He), beta (β: elétron ou pósitron), gama (γ: radiação eletromagnética). Meia-vida (t½) é o tempo para metade dos núcleos decaírem. Fissão nuclear: núcleos pesados (urânio) se dividem, liberando energia (usina nuclear, bomba). Fusão nuclear: núcleos leves (hidrogênio) se fundem, liberando mais energia ainda (Sol, bomba de hidrogênio). Aplicações: medicina nuclear, datação por carbono-14, geração de energia."
+        }
+      ],
+      "exemplos": [
+        "E = mc² e a energia liberada na fissão nuclear",
+        "Funcionamento de células fotoelétricas",
+        "Datação de fósseis por carbono-14"
+      ],
+      "dicas": [
+        "ENEM cobra conceitos qualitativos de física moderna",
+        "Efeito fotoelétrico: frequência afeta energia, intensidade afeta corrente",
+        "Meia-vida: a cada t½, quantidade radioativa cai pela metade"
+      ],
+      "questoes": [
+        {
+          "id": "q120-1",
+          "enunciado": "A famosa equação de Einstein, E = mc², estabelece que:",
+          "alternativas": {
+            "A": "A energia cinética de um corpo é proporcional à sua velocidade",
+            "B": "Massa e energia são equivalentes; pequenas massas correspondem a grandes energias",
+            "C": "A energia potencial de um corpo depende de sua altura",
+            "D": "A velocidade da luz varia conforme o referencial",
+            "E": "A energia de um fóton independe de sua frequência"
+          },
+          "correta": "B",
+          "explicacao": "E = mc² (energia = massa × velocidade da luz ao quadrado) expressa a equivalência entre massa e energia. Como c² é um número muito grande (9×10¹⁶ m²/s²), uma pequena massa corresponde a uma enorme energia. Este é o princípio da energia nuclear (fissão e fusão).",
+          "dificuldade": "facil",
+          "tags": ["relatividade", "einstein", "energia massa"]
+        },
+        {
+          "id": "q120-2",
+          "enunciado": "No efeito fotoelétrico, aumentar a frequência da luz incidente em um metal (mantendo a intensidade constante) resulta em:",
+          "alternativas": {
+            "A": "Aumento do número de elétrons emitidos",
+            "B": "Diminuição da energia cinética dos elétrons emitidos",
+            "C": "Aumento da energia cinética máxima dos elétrons emitidos",
+            "D": "Nenhuma alteração, pois a intensidade é constante",
+            "E": "Emissão de fótons com maior comprimento de onda"
+          },
+          "correta": "C",
+          "explicacao": "No efeito fotoelétrico, a energia do fóton (E = h·f) determina a energia cinética do elétron ejetado: E_c = h·f - W (W = função trabalho). Maior frequência → fóton com mais energia → elétron com mais energia cinética. A intensidade (número de fótons) determina quantos elétrons são ejetados, não a energia de cada um.",
+          "dificuldade": "medio",
+          "tags": ["efeito fotoelétrico", "frequência", "energia"]
+        },
+        {
+          "id": "q120-3",
+          "enunciado": "Um elemento radioativo tem meia-vida de 8 dias. Se inicialmente há 80 g desse elemento, após 24 dias restará:",
+          "alternativas": {
+            "A": "40 g",
+            "B": "20 g",
+            "C": "10 g",
+            "D": "5 g",
+            "E": "0 g"
+          },
+          "correta": "C",
+          "explicacao": "Meia-vida é o tempo para a quantidade cair pela metade. Em 24 dias ocorrem 24/8 = 3 meias-vidas. Após 1ª meia-vida: 80/2 = 40 g. Após 2ª: 40/2 = 20 g. Após 3ª: 20/2 = 10 g. Fórmula: m = m₀·(1/2)^n, onde n = número de meias-vidas.",
+          "dificuldade": "medio",
+          "tags": ["meia-vida", "radioatividade", "decaimento"]
+        },
+        {
+          "id": "q120-4",
+          "enunciado": "A fusão nuclear, processo que ocorre no Sol, consiste em:",
+          "alternativas": {
+            "A": "Núcleos pesados se dividirem em núcleos mais leves",
+            "B": "Núcleos leves se fundirem formando núcleos mais pesados, liberando energia",
+            "C": "Elétrons serem capturados pelo núcleo atômico",
+            "D": "Fótons serem absorvidos pelo núcleo, aumentando sua energia",
+            "E": "Partículas alfa serem emitidas por núcleos radioativos"
+          },
+          "correta": "B",
+          "explicacao": "Na fusão nuclear, núcleos leves (como hidrogênio) se combinam para formar núcleos mais pesados (como hélio), liberando enorme quantidade de energia. É o processo que alimenta o Sol e as estrelas. A fissão nuclear é o oposto: núcleos pesados (urânio, plutônio) se dividem em mais leves, também liberando energia (usinas nucleares).",
+          "dificuldade": "facil",
+          "tags": ["fusão", "fissão", "energia nuclear"]
+        },
+        {
+          "id": "q120-5",
+          "enunciado": "A datação por carbono-14 é uma técnica usada para determinar a idade de materiais orgânicos. Ela se baseia no fato de que:",
+          "alternativas": {
+            "A": "O carbono-14 é criado em organismos vivos após a morte",
+            "B": "Enquanto vivo, o organismo absorve carbono-14 do ambiente; após a morte, ele decai com meia-vida conhecida",
+            "C": "O carbono-14 é estável e não decai com o tempo",
+            "D": "A quantidade de carbono-14 aumenta após a morte do organismo",
+            "E": "Apenas materiais sintéticos contêm carbono-14"
+          },
+          "correta": "B",
+          "explicacao": "Organismos vivos estão em equilíbrio com o carbono-14 atmosférico (absorvem pela alimentação/fotossíntese). Após a morte, não absorvem mais, e o C-14 decai (meia-vida ≈ 5730 anos). Medindo a proporção de C-14 restante em relação ao inicial, calcula-se há quanto tempo o organismo morreu. É eficaz para até ~50000 anos.",
+          "dificuldade": "medio",
+          "tags": ["carbono-14", "datação", "meia-vida"]
+        }
+      ]
+    }
+  ]
+}

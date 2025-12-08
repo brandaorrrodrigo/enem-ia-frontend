@@ -1,0 +1,1165 @@
+{
+  "id": "geografia-brasil",
+  "slug": "geografia-brasil",
+  "titulo": "Geografia do Brasil",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "Geografia física e humana do Brasil: relevo, clima, biomas, população, urbanização, economia e questões ambientais.",
+  "icone": "Map",
+  "cor": "from-blue-600 to-cyan-600",
+  "tempoEstimado": "12 horas",
+  "fpRecompensa": 600,
+  "tags": ["geografia", "brasil", "biomas", "urbanização", "ENEM"],
+  "modulos": [
+    {
+      "id": "m71",
+      "titulo": "Relevo e Geologia Brasileira",
+      "resumo": "As formas de relevo do Brasil, estrutura geológica, processos de formação e recursos minerais.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O relevo brasileiro é predominantemente formado por planaltos e depressões de formação antiga, com poucas áreas de planícies e ausência de grandes cadeias montanhosas recentes. Compreender a estrutura geológica é essencial para entender a distribuição de recursos minerais e as características do território. No ENEM, esse tema aparece relacionando relevo, ocupação humana e recursos."
+        },
+        {
+          "titulo": "Estrutura Geológica",
+          "conteudo": "O território brasileiro é formado por três tipos de estruturas: Escudos cristalinos (crátons): terrenos muito antigos (Pré-Cambriano), formados por rochas ígneas e metamórficas. Ricos em minerais metálicos (ferro, manganês, ouro). Exemplos: Escudo das Guianas, Escudo Brasileiro. Bacias sedimentares: áreas de deposição de sedimentos ao longo de milhões de anos. Rochas sedimentares. Podem conter combustíveis fósseis (petróleo, gás, carvão). Exemplos: Bacia do Paraná, Bacia Amazônica, Bacia do Parnaíba. Dobramentos antigos: cadeias montanhosas desgastadas pela erosão. Exemplos: Serra do Mar, Serra da Mantiqueira."
+        },
+        {
+          "titulo": "Formas de Relevo",
+          "conteudo": "Classificação de Jurandyr Ross (IBGE): Planaltos: terrenos elevados e relativamente planos no topo, com predomínio de erosão. Exemplos: Planalto Central, Planalto Meridional, Planaltos e Serras do Atlântico-Leste-Sudeste. Depressões: áreas rebaixadas entre planaltos, formadas por erosão. Exemplos: Depressão Periférica Paulista, Depressão Sertaneja. Planícies: áreas planas de baixa altitude, com predomínio de sedimentação. São relativamente raras no Brasil. Exemplos: Planície Amazônica, Planície do Pantanal, Planície Costeira."
+        },
+        {
+          "titulo": "Recursos Minerais",
+          "conteudo": "O Brasil é rico em recursos minerais devido à sua estrutura geológica diversificada. Ferro: Quadrilátero Ferrífero (MG), Serra dos Carajás (PA). Brasil é grande exportador. Manganês: Serra do Navio (AP), Carajás. Bauxita (alumínio): Trombetas (PA). Ouro: Carajás, Quadrilátero Ferrífero. Petróleo: Bacia de Campos (RJ), Pré-sal (Santos, Campos, Espírito Santo). A exploração mineral gera impactos ambientais significativos (desastres de Mariana e Brumadinho)."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Quadrilátero Ferrífero",
+          "descricao": "Região em Minas Gerais rica em minério de ferro, manganês e ouro. Abriga cidades como Itabira, Ouro Preto, Mariana. Principal área de mineração do país, mas também de impactos (tragédias de Mariana e Brumadinho)."
+        },
+        {
+          "titulo": "Pré-sal",
+          "descricao": "Reservas de petróleo localizadas abaixo de camada de sal, em águas profundas (5-7 km). Descobertas em 2006-2007, são das maiores do mundo. Campos de Tupi/Lula, Búzios. Transformaram o Brasil em grande produtor."
+        }
+      ],
+      "dicas": [
+        "Escudos cristalinos = antigos, minerais metálicos (ferro, manganês)",
+        "Bacias sedimentares = combustíveis fósseis (petróleo, carvão)",
+        "Relevo brasileiro = planaltos e depressões antigos, poucas planícies"
+      ],
+      "questoes": [
+        {
+          "id": "q71-1",
+          "enunciado": "Os escudos cristalinos (crátons) brasileiros são importantes economicamente porque:",
+          "alternativas": {
+            "A": "Contêm grandes reservas de petróleo e gás natural",
+            "B": "São ricos em minerais metálicos como ferro, manganês e ouro",
+            "C": "Possuem solos extremamente férteis para agricultura",
+            "D": "Concentram as maiores florestas tropicais do país",
+            "E": "São áreas planas ideais para urbanização"
+          },
+          "correta": "B",
+          "explicacao": "Os escudos cristalinos são terrenos muito antigos (Pré-Cambriano) formados por rochas ígneas e metamórficas. São ricos em minerais metálicos: ferro (Quadrilátero Ferrífero, Carajás), manganês, ouro, nióbio. O Brasil é um dos maiores produtores mundiais desses minerais graças aos escudos.",
+          "dificuldade": "medio",
+          "tags": ["escudos cristalinos", "minerais", "geologia"]
+        },
+        {
+          "id": "q71-2",
+          "enunciado": "As bacias sedimentares brasileiras são importantes porque podem conter:",
+          "alternativas": {
+            "A": "Apenas rochas metamórficas sem valor econômico",
+            "B": "Combustíveis fósseis como petróleo, gás natural e carvão",
+            "C": "Exclusivamente minério de ferro em grandes quantidades",
+            "D": "Diamantes e pedras preciosas",
+            "E": "Apenas água subterrânea, sem outros recursos"
+          },
+          "correta": "B",
+          "explicacao": "As bacias sedimentares são áreas de deposição de sedimentos ao longo de milhões de anos. Nelas podem se formar combustíveis fósseis: petróleo e gás natural (Bacia de Campos, Pré-sal) e carvão mineral (Bacia do Paraná, no Sul). São fundamentais para a matriz energética.",
+          "dificuldade": "facil",
+          "tags": ["bacias sedimentares", "petróleo", "carvão"]
+        },
+        {
+          "id": "q71-3",
+          "enunciado": "O relevo brasileiro é predominantemente formado por:",
+          "alternativas": {
+            "A": "Cadeias montanhosas jovens e elevadas como os Andes",
+            "B": "Planícies extensas que cobrem a maior parte do território",
+            "C": "Planaltos e depressões de formação antiga, com poucas planícies",
+            "D": "Vulcões ativos e áreas de intensa atividade sísmica",
+            "E": "Geleiras e montanhas cobertas de neve permanente"
+          },
+          "correta": "C",
+          "explicacao": "O relevo brasileiro é predominantemente formado por planaltos (terrenos elevados com erosão) e depressões (áreas rebaixadas). São formações antigas, muito desgastadas pela erosão. Planícies são relativamente raras (Amazônica, Pantanal, Costeira). Não há grandes cadeias montanhosas recentes nem vulcanismo ativo.",
+          "dificuldade": "facil",
+          "tags": ["relevo", "planaltos", "depressões"]
+        },
+        {
+          "id": "q71-4",
+          "enunciado": "O Pré-sal brasileiro refere-se a:",
+          "alternativas": {
+            "A": "Minas de sal localizadas no interior do Nordeste",
+            "B": "Reservas de petróleo localizadas abaixo de camada de sal em águas profundas do litoral",
+            "C": "Depósitos de minério de ferro na região Sul",
+            "D": "Áreas de produção de sal marinho no litoral",
+            "E": "Formações rochosas do período Pré-Cambriano"
+          },
+          "correta": "B",
+          "explicacao": "O Pré-sal são reservas de petróleo localizadas abaixo de espessa camada de sal, em águas profundas (5-7 km) do litoral brasileiro (bacias de Santos, Campos, Espírito Santo). Descobertas em 2006-2007, são das maiores reservas do mundo e transformaram a produção petrolífera brasileira.",
+          "dificuldade": "facil",
+          "tags": ["pré-sal", "petróleo", "energia"]
+        },
+        {
+          "id": "q71-5",
+          "enunciado": "As tragédias de Mariana (2015) e Brumadinho (2019) em Minas Gerais estão relacionadas a:",
+          "alternativas": {
+            "A": "Atividade vulcânica na região do Quadrilátero Ferrífero",
+            "B": "Rompimento de barragens de rejeitos de mineração de ferro",
+            "C": "Enchentes naturais causadas por excesso de chuvas",
+            "D": "Terremotos provocados por movimentação de placas tectônicas",
+            "E": "Desmatamento para expansão da agricultura"
+          },
+          "correta": "B",
+          "explicacao": "As tragédias de Mariana (2015) e Brumadinho (2019) foram causadas por rompimento de barragens de rejeitos da mineração de ferro. Liberaram lama tóxica que devastou comunidades, rios e ecossistemas. Evidenciaram os riscos ambientais e sociais da mineração e a negligência das empresas e fiscalização.",
+          "dificuldade": "facil",
+          "tags": ["mariana", "brumadinho", "mineração"]
+        }
+      ]
+    },
+    {
+      "id": "m72",
+      "titulo": "Clima e Vegetação do Brasil",
+      "resumo": "Os tipos climáticos brasileiros, fatores de influência, vegetação associada e fenômenos climáticos.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil, com sua grande extensão territorial (5ª maior área do mundo), apresenta diversidade climática significativa. Predominam climas tropicais, mas há variações importantes. A vegetação está intimamente relacionada ao clima. No ENEM, esse tema aparece em questões sobre relação clima-vegetação e impactos das mudanças climáticas."
+        },
+        {
+          "titulo": "Fatores Climáticos",
+          "conteudo": "Latitude: maior parte do território está na zona tropical (entre os trópicos). Apenas o Sul está na zona subtropical. Altitude: áreas elevadas são mais frias (Serra da Mantiqueira, planaltos do Sul). Massas de ar: principais são Equatorial Continental (quente e úmida, Amazônia), Tropical Atlântica (quente e úmida, litoral), Tropical Continental (quente e seca, interior), Polar Atlântica (fria, sul). Continentalidade e maritimidade: litoral tem menor amplitude térmica; interior tem maior. Correntes marítimas: corrente do Brasil (quente) influencia o litoral."
+        },
+        {
+          "titulo": "Tipos Climáticos",
+          "conteudo": "Equatorial: Amazônia. Quente (25-28°C), muito úmido, chuvas abundantes o ano todo. Tropical: Centro-Oeste, Sudeste, parte do Nordeste. Quente, duas estações (verão chuvoso, inverno seco). Tropical de altitude: áreas elevadas do Sudeste. Temperaturas mais amenas. Tropical semiárido: interior do Nordeste (sertão). Quente, chuvas escassas e irregulares. Subtropical: Sul. Chuvas bem distribuídas, inverno frio (geadas, neve em áreas altas)."
+        },
+        {
+          "titulo": "Fenômenos Climáticos",
+          "conteudo": "El Niño: aquecimento anormal do Pacífico. No Brasil, causa seca no Norte e Nordeste, excesso de chuvas no Sul. La Niña: esfriamento do Pacífico. Efeito oposto: mais chuvas no Norte/Nordeste, seca no Sul. Friagens: entrada de massas polares na Amazônia, causando queda brusca de temperatura. Veranicos: períodos secos durante a estação chuvosa. Mudanças climáticas: aquecimento global intensifica eventos extremos (secas mais severas, chuvas mais intensas)."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Semiárido Nordestino",
+          "descricao": "Região do interior do Nordeste (sertão) com clima tropical semiárido: temperaturas altas, chuvas escassas (menos de 800mm/ano) e irregulares. A vegetação característica é a caatinga. Sofre periodicamente com secas severas."
+        },
+        {
+          "titulo": "El Niño e seus Efeitos",
+          "descricao": "Fenômeno de aquecimento das águas do Pacífico que altera padrões climáticos globais. No Brasil: seca mais severa no Norte e Nordeste, chuvas mais intensas no Sul. Pode devastar agricultura, causar racionamento de energia (hidrelétricas) e incêndios florestais."
+        }
+      ],
+      "dicas": [
+        "Brasil = principalmente tropical, só Sul é subtropical",
+        "Semiárido = Nordeste interior, caatinga, secas",
+        "El Niño = seca no Norte/Nordeste, chuva no Sul; La Niña = oposto"
+      ],
+      "questoes": [
+        {
+          "id": "q72-1",
+          "enunciado": "O clima equatorial, predominante na região amazônica, caracteriza-se por:",
+          "alternativas": {
+            "A": "Temperaturas baixas e estações bem definidas",
+            "B": "Temperaturas elevadas e chuvas abundantes bem distribuídas ao longo do ano",
+            "C": "Chuvas concentradas no inverno e verão seco",
+            "D": "Presença regular de geadas e neve",
+            "E": "Clima seco com vegetação de caatinga"
+          },
+          "correta": "B",
+          "explicacao": "O clima equatorial da Amazônia caracteriza-se por temperaturas elevadas (25-28°C de média), baixa amplitude térmica e chuvas abundantes (2000-3000mm/ano) bem distribuídas ao longo de todo o ano. A umidade é alta e sustenta a floresta equatorial.",
+          "dificuldade": "facil",
+          "tags": ["clima equatorial", "amazônia", "chuvas"]
+        },
+        {
+          "id": "q72-2",
+          "enunciado": "O fenômeno El Niño causa no Brasil:",
+          "alternativas": {
+            "A": "Chuvas abundantes no Norte e Nordeste e seca no Sul",
+            "B": "Seca no Norte e Nordeste e chuvas excessivas no Sul",
+            "C": "Nenhum efeito significativo sobre o clima brasileiro",
+            "D": "Geadas intensas em toda a região Norte",
+            "E": "Aumento de furacões no litoral brasileiro"
+          },
+          "correta": "B",
+          "explicacao": "O El Niño (aquecimento do Pacífico) altera circulação atmosférica: reduz chuvas no Norte e Nordeste (agravando secas) e aumenta precipitação no Sul (causando enchentes). Afeta agricultura, geração de energia (hidrelétricas) e incêndios florestais.",
+          "dificuldade": "medio",
+          "tags": ["el niño", "seca", "chuvas"]
+        },
+        {
+          "id": "q72-3",
+          "enunciado": "O clima tropical semiárido do Nordeste brasileiro caracteriza-se por:",
+          "alternativas": {
+            "A": "Chuvas abundantes e temperaturas amenas",
+            "B": "Temperaturas elevadas, chuvas escassas e irregulares",
+            "C": "Invernos muito frios com neve frequente",
+            "D": "Clima úmido com floresta densa",
+            "E": "Estações do ano bem definidas como no clima temperado"
+          },
+          "correta": "B",
+          "explicacao": "O semiárido nordestino tem temperaturas elevadas (média acima de 26°C), chuvas escassas (menos de 800mm/ano) e irregulares (podem faltar por anos). A vegetação adaptada é a caatinga. A região sofre historicamente com secas severas que afetam a população.",
+          "dificuldade": "facil",
+          "tags": ["semiárido", "nordeste", "caatinga"]
+        },
+        {
+          "id": "q72-4",
+          "enunciado": "A região Sul do Brasil apresenta clima subtropical, que se diferencia do tropical por:",
+          "alternativas": {
+            "A": "Ter temperaturas sempre muito elevadas",
+            "B": "Apresentar invernos mais frios, com geadas e ocasionalmente neve nas áreas mais elevadas",
+            "C": "Ter chuvas concentradas apenas no verão",
+            "D": "Ser extremamente árido como o Nordeste",
+            "E": "Ter vegetação de caatinga"
+          },
+          "correta": "B",
+          "explicacao": "O clima subtropical do Sul brasileiro diferencia-se por ter invernos mais frios (influência de massas polares), com geadas frequentes e neve ocasional em áreas elevadas (Serra Catarinense, Serra Gaúcha). As chuvas são bem distribuídas ao longo do ano. A vegetação inclui araucárias e campos.",
+          "dificuldade": "facil",
+          "tags": ["subtropical", "sul", "geadas"]
+        },
+        {
+          "id": "q72-5",
+          "enunciado": "As 'friagens' que atingem a Amazônia são causadas por:",
+          "alternativas": {
+            "A": "Aquecimento do oceano Pacífico (El Niño)",
+            "B": "Entrada de massas de ar polar que avançam pelo interior do continente",
+            "C": "Desmatamento da floresta amazônica",
+            "D": "Erupções vulcânicas nos Andes",
+            "E": "Correntes marítimas frias que atingem o litoral norte"
+          },
+          "correta": "B",
+          "explicacao": "As friagens são quedas bruscas de temperatura na Amazônia causadas pela entrada de massas de ar polar que avançam pelo interior do continente (corredor formado pelas baixas altitudes entre os Andes e os planaltos brasileiros). Podem causar problemas para agricultura e população local.",
+          "dificuldade": "medio",
+          "tags": ["friagens", "massa polar", "amazônia"]
+        }
+      ]
+    },
+    {
+      "id": "m73",
+      "titulo": "Biomas Brasileiros",
+      "resumo": "Os seis biomas brasileiros: características, biodiversidade, distribuição geográfica e principais ameaças.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil possui seis biomas continentais: Amazônia, Cerrado, Mata Atlântica, Caatinga, Pampa e Pantanal. Cada um tem características próprias de clima, vegetação, fauna e solo. No ENEM, esse tema é recorrente, exigindo conhecimento das características de cada bioma e das ameaças que enfrentam."
+        },
+        {
+          "titulo": "Amazônia e Cerrado",
+          "conteudo": "Amazônia: maior bioma brasileiro (49% do território), maior floresta tropical do mundo. Floresta densa, alta biodiversidade, rios caudalosos. Ameaças: desmatamento (agropecuária, garimpo, madeira), queimadas, mudanças climáticas. Cerrado: segundo maior bioma (24%), 'savana brasileira'. Vegetação de árvores baixas e retorcidas, gramíneas. Duas estações (seca e chuvosa). Rica biodiversidade, muitas espécies endêmicas. Mais de 50% já foi desmatado para agropecuária (fronteira agrícola)."
+        },
+        {
+          "titulo": "Mata Atlântica e Caatinga",
+          "conteudo": "Mata Atlântica: originalmente cobria litoral do RS ao RN. Floresta tropical densa, altíssima biodiversidade, muitas espécies endêmicas. Restam apenas 12-15% da cobertura original (devastada desde colonização). É o bioma mais ameaçado, mas ainda muito rico. Caatinga: exclusiva do Brasil, no semiárido nordestino. Vegetação adaptada à seca: cactos, árvores que perdem folhas, arbustos espinhosos. Fauna adaptada. Sofre com desertificação, queimadas, uso insustentável."
+        },
+        {
+          "titulo": "Pampa e Pantanal",
+          "conteudo": "Pampa: extremo sul do Brasil (RS). Campos naturais, gramíneas, poucas árvores. Clima subtropical. Importante para pecuária. Sofre com conversão para agricultura (soja) e silvicultura (eucalipto). Pantanal: maior planície alagável do mundo (entre MT e MS). Inundações sazonais criam ambiente único. Mistura de vegetação (cerrado, floresta). Rica fauna (jacarés, onças, araras). Ameaçado por assoreamento, queimadas, agrotóxicos."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Desmatamento do Cerrado",
+          "descricao": "O Cerrado é a fronteira agrícola do Brasil: mais de 50% já foi convertido em lavouras (soja, milho) e pastagens. O desmatamento é mais rápido que na Amazônia, mas recebe menos atenção. Milhares de espécies estão ameaçadas."
+        },
+        {
+          "titulo": "Fragmentação da Mata Atlântica",
+          "descricao": "A Mata Atlântica foi devastada desde a colonização (pau-brasil, café, cidades). Restam 12-15% em fragmentos desconectados. Milhares de espécies são endêmicas (só existem ali). É hotspot de biodiversidade, mas extremamente ameaçada."
+        }
+      ],
+      "dicas": [
+        "Amazônia = maior, floresta tropical; Cerrado = segundo, savana, fronteira agrícola",
+        "Mata Atlântica = mais devastada (12-15%); Caatinga = exclusiva do Brasil, semiárido",
+        "Pantanal = maior planície alagável; Pampa = campos do Sul"
+      ],
+      "questoes": [
+        {
+          "id": "q73-1",
+          "enunciado": "O Cerrado brasileiro é considerado a principal fronteira agrícola do país. Uma consequência ambiental dessa expansão é:",
+          "alternativas": {
+            "A": "Aumento da biodiversidade nativa",
+            "B": "Perda de mais de 50% da vegetação original e ameaça a espécies endêmicas",
+            "C": "Recuperação natural da vegetação sem intervenção",
+            "D": "Diminuição da produção agrícola nacional",
+            "E": "Aumento das áreas de preservação permanente"
+          },
+          "correta": "B",
+          "explicacao": "O Cerrado perdeu mais de 50% de sua vegetação original para a agricultura (soja, milho, algodão) e pecuária. É a fronteira agrícola mais ativa do Brasil. Milhares de espécies endêmicas (que só existem no Cerrado) estão ameaçadas. O bioma recebe menos atenção que a Amazônia.",
+          "dificuldade": "medio",
+          "tags": ["cerrado", "desmatamento", "fronteira agrícola"]
+        },
+        {
+          "id": "q73-2",
+          "enunciado": "A Mata Atlântica é considerada um dos biomas mais ameaçados do Brasil porque:",
+          "alternativas": {
+            "A": "Nunca teve grande biodiversidade",
+            "B": "Restam apenas 12-15% da cobertura original, em fragmentos, apesar de sua altíssima biodiversidade",
+            "C": "Está localizada em região desabitada sem pressão humana",
+            "D": "Seu clima impede qualquer forma de ocupação",
+            "E": "Foi totalmente recuperada após a colonização"
+          },
+          "correta": "B",
+          "explicacao": "A Mata Atlântica foi devastada desde a colonização: pau-brasil, cana-de-açúcar, café, urbanização. Restam apenas 12-15% da cobertura original, em fragmentos desconectados. Apesar disso, mantém altíssima biodiversidade com milhares de espécies endêmicas. É hotspot mundial de biodiversidade.",
+          "dificuldade": "facil",
+          "tags": ["mata atlântica", "devastação", "biodiversidade"]
+        },
+        {
+          "id": "q73-3",
+          "enunciado": "A Caatinga é um bioma exclusivo do Brasil, localizado no:",
+          "alternativas": {
+            "A": "Extremo sul, com clima subtropical",
+            "B": "Interior do Nordeste, com clima semiárido",
+            "C": "Litoral do Sudeste, com clima tropical úmido",
+            "D": "Norte do país, com clima equatorial",
+            "E": "Centro-Oeste, com clima tropical de altitude"
+          },
+          "correta": "B",
+          "explicacao": "A Caatinga é bioma exclusivamente brasileiro, localizada no interior do Nordeste (sertão), onde predomina clima semiárido. A vegetação é adaptada à seca: cactos, árvores que perdem folhas na seca, arbustos espinhosos. Fauna e flora evoluíram para sobreviver com pouca água.",
+          "dificuldade": "facil",
+          "tags": ["caatinga", "semiárido", "nordeste"]
+        },
+        {
+          "id": "q73-4",
+          "enunciado": "O Pantanal é um bioma de características únicas porque:",
+          "alternativas": {
+            "A": "É a maior floresta tropical do mundo",
+            "B": "É a maior planície alagável do mundo, com inundações sazonais que moldam o ecossistema",
+            "C": "Possui clima extremamente frio com neve frequente",
+            "D": "Não possui nenhuma forma de vida animal",
+            "E": "É uma região completamente desértica"
+          },
+          "correta": "B",
+          "explicacao": "O Pantanal é a maior planície alagável do mundo (140.000 km²), entre MT e MS. As inundações sazonais (cheia e seca) moldam o ecossistema único. A vegetação mistura elementos de cerrado, floresta e campos. Rica fauna: jacarés, capivaras, onças-pintadas, araras, tuiuiús.",
+          "dificuldade": "facil",
+          "tags": ["pantanal", "planície alagável", "fauna"]
+        },
+        {
+          "id": "q73-5",
+          "enunciado": "O Pampa, bioma localizado no Rio Grande do Sul, está ameaçado principalmente por:",
+          "alternativas": {
+            "A": "Desertificação causada por clima excessivamente seco",
+            "B": "Conversão para agricultura (soja) e silvicultura (eucalipto, pinus)",
+            "C": "Inundações permanentes que impedem qualquer uso",
+            "D": "Congelamento do solo durante todo o ano",
+            "E": "Erupções vulcânicas frequentes"
+          },
+          "correta": "B",
+          "explicacao": "O Pampa (campos naturais do RS) está ameaçado pela conversão para agricultura (principalmente soja) e silvicultura (plantio de eucalipto e pinus para celulose). Os campos nativos estão sendo substituídos por monoculturas, perdendo-se biodiversidade e características do bioma.",
+          "dificuldade": "medio",
+          "tags": ["pampa", "conversão", "agricultura"]
+        }
+      ]
+    },
+    {
+      "id": "m74",
+      "titulo": "População Brasileira",
+      "resumo": "Dinâmica demográfica, distribuição da população, transição demográfica, migração e diversidade.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil é o 6º país mais populoso do mundo (cerca de 215 milhões de habitantes). A população cresceu rapidamente no século XX, mas a transição demográfica está avançada: fecundidade caiu, expectativa de vida aumentou, população está envelhecendo. No ENEM, esse tema relaciona-se com economia, políticas públicas e planejamento."
+        },
+        {
+          "titulo": "Distribuição e Densidade",
+          "conteudo": "A população brasileira está distribuída de forma muito desigual: concentração no litoral (herança colonial) e nas capitais. Sudeste: região mais populosa (cerca de 42% da população), com SP (46 milhões) e RJ (17 milhões). Nordeste: segunda mais populosa, mas com densidade menor que Sudeste. Norte e Centro-Oeste: menor densidade, grandes vazios demográficos (Amazônia, Pantanal). A urbanização atingiu 87% da população - Brasil é predominantemente urbano."
+        },
+        {
+          "titulo": "Transição Demográfica",
+          "conteudo": "Transição demográfica é a passagem de altas taxas de natalidade e mortalidade para baixas taxas. O Brasil está em fase avançada: Natalidade: caiu drasticamente (de 6 filhos por mulher em 1960 para 1,7 em 2020). Causas: urbanização, educação feminina, métodos contraceptivos. Mortalidade: caiu (saúde pública, saneamento, vacinas). Expectativa de vida aumentou para 77 anos. Envelhecimento: proporção de idosos cresce rapidamente. Desafios: previdência, saúde, cuidados. Pirâmide etária: de base larga (jovem) para formato de 'barril' (envelhecida)."
+        },
+        {
+          "titulo": "Migração e Diversidade",
+          "conteudo": "Migrações internas: historicamente, Nordeste para Sudeste (industrialização). Mais recentemente, fronteira agrícola (Centro-Oeste, Norte). Também há migração de retorno (nordestinos voltando). Diversidade étnica: formada por povos indígenas, africanos escravizados, europeus (portugueses, italianos, alemães), asiáticos (japoneses, sírios-libaneses). O IBGE classifica em pretos, pardos, brancos, amarelos e indígenas. Pardos + pretos = 56% da população (maioria)."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Transição Demográfica Brasileira",
+          "descricao": "O Brasil passou de 6 filhos por mulher (1960) para 1,7 (2020), abaixo da reposição. A expectativa de vida subiu de 52 para 77 anos. A proporção de idosos cresce rapidamente. O país precisará adaptar previdência, saúde e cuidados para população envelhecida."
+        },
+        {
+          "titulo": "Diversidade Étnica",
+          "descricao": "A população brasileira é resultado da mistura de povos indígenas originários, africanos trazidos escravizados e imigrantes de diversas origens (europeus, asiáticos). Pardos e pretos são maioria (56%). A diversidade é característica fundamental, mas convive com desigualdade racial."
+        }
+      ],
+      "dicas": [
+        "Brasil = 215 milhões, 6º mais populoso, concentração no litoral e Sudeste",
+        "Transição demográfica avançada = fecundidade baixa, população envelhecendo",
+        "Pardos + pretos = maioria da população (56%)"
+      ],
+      "questoes": [
+        {
+          "id": "q74-1",
+          "enunciado": "A transição demográfica no Brasil está em fase avançada. Uma característica dessa fase é:",
+          "alternativas": {
+            "A": "Altas taxas de natalidade e mortalidade",
+            "B": "Crescimento explosivo da população jovem",
+            "C": "Baixa fecundidade, aumento da expectativa de vida e envelhecimento da população",
+            "D": "Emigração em massa para outros países",
+            "E": "Estagnação total do crescimento populacional há décadas"
+          },
+          "correta": "C",
+          "explicacao": "A transição demográfica brasileira está avançada: a fecundidade caiu para 1,7 filhos por mulher (abaixo da reposição), a expectativa de vida aumentou para 77 anos, e a população está envelhecendo rapidamente. A pirâmide etária mudou de base larga para formato de 'barril'.",
+          "dificuldade": "medio",
+          "tags": ["transição demográfica", "envelhecimento", "fecundidade"]
+        },
+        {
+          "id": "q74-2",
+          "enunciado": "A distribuição da população brasileira é desigual, com concentração:",
+          "alternativas": {
+            "A": "No interior da Amazônia e nas regiões de fronteira",
+            "B": "No litoral e nas grandes capitais, especialmente na região Sudeste",
+            "C": "Apenas nas áreas rurais do interior",
+            "D": "Exclusivamente na região Norte do país",
+            "E": "De forma homogênea por todo o território"
+          },
+          "correta": "B",
+          "explicacao": "A população brasileira concentra-se no litoral (herança da colonização) e nas grandes capitais, especialmente no Sudeste (42% da população, com SP e RJ). O interior, especialmente a Amazônia e o Centro-Oeste, tem baixa densidade demográfica ('vazios demográficos').",
+          "dificuldade": "facil",
+          "tags": ["distribuição", "concentração", "sudeste"]
+        },
+        {
+          "id": "q74-3",
+          "enunciado": "A principal causa da queda na taxa de fecundidade no Brasil nas últimas décadas foi:",
+          "alternativas": {
+            "A": "Políticas governamentais obrigatórias de controle de natalidade",
+            "B": "Epidemias que reduziram drasticamente a população",
+            "C": "Urbanização, maior escolaridade feminina e acesso a métodos contraceptivos",
+            "D": "Emigração em massa de mulheres em idade fértil",
+            "E": "Aumento da mortalidade infantil"
+          },
+          "correta": "C",
+          "explicacao": "A fecundidade brasileira caiu de 6 filhos (1960) para 1,7 (2020) devido a: urbanização (menos filhos em cidades), maior escolaridade e participação feminina no mercado de trabalho, acesso a métodos contraceptivos, mudanças culturais. Não houve política obrigatória de controle como na China.",
+          "dificuldade": "medio",
+          "tags": ["fecundidade", "urbanização", "educação"]
+        },
+        {
+          "id": "q74-4",
+          "enunciado": "O envelhecimento da população brasileira traz desafios para políticas públicas, especialmente para:",
+          "alternativas": {
+            "A": "A construção de mais escolas de ensino fundamental",
+            "B": "O sistema previdenciário e de saúde, com mais aposentados e demanda por cuidados",
+            "C": "A política de incentivo à natalidade nas áreas rurais",
+            "D": "A redução de hospitais e postos de saúde",
+            "E": "A diminuição dos gastos públicos em todas as áreas"
+          },
+          "correta": "B",
+          "explicacao": "O envelhecimento populacional pressiona o sistema previdenciário (mais aposentados em relação a contribuintes) e o de saúde (idosos demandam mais atendimento). O país precisa adaptar políticas públicas: reformas na previdência, mais serviços geriátricos, cuidados de longa duração.",
+          "dificuldade": "medio",
+          "tags": ["envelhecimento", "previdência", "saúde"]
+        },
+        {
+          "id": "q74-5",
+          "enunciado": "Segundo o IBGE, pretos e pardos somados representam, na população brasileira:",
+          "alternativas": {
+            "A": "Menos de 20% da população",
+            "B": "Aproximadamente 56%, sendo a maioria da população",
+            "C": "Exatamente 100% da população",
+            "D": "Apenas 5% da população",
+            "E": "Apenas 1%, uma minoria insignificante"
+          },
+          "correta": "B",
+          "explicacao": "Segundo o IBGE, pretos e pardos somados representam cerca de 56% da população brasileira, constituindo a maioria. Essa classificação é por autodeclaração. A maioria da população brasileira é negra (pretos + pardos), embora essa maioria conviva com desigualdades raciais estruturais.",
+          "dificuldade": "facil",
+          "tags": ["diversidade", "raça", "população"]
+        }
+      ]
+    },
+    {
+      "id": "m75",
+      "titulo": "Urbanização Brasileira",
+      "resumo": "O processo de urbanização no Brasil, metropolização, problemas urbanos e planejamento.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil passou por urbanização acelerada no século XX: de 36% urbano (1950) para 87% (2022). Esse processo foi rápido e desigual, gerando cidades com graves problemas sociais e ambientais. No ENEM, esse tema é frequente, relacionando urbanização com industrialização, desigualdade e problemas urbanos."
+        },
+        {
+          "titulo": "Processo de Urbanização",
+          "conteudo": "Até 1950, Brasil era majoritariamente rural. A industrialização concentrada no Sudeste (SP, RJ) atraiu milhões de migrantes em busca de emprego. Êxodo rural: saída em massa do campo para as cidades. Causas: mecanização agrícola, concentração fundiária, busca por melhores condições. Consequências: crescimento desordenado das cidades, favelização, periferização. Macrocefalia urbana: crescimento excessivo das capitais em relação às demais cidades."
+        },
+        {
+          "titulo": "Metropolização e Rede Urbana",
+          "conteudo": "Metrópoles: grandes cidades que exercem influência regional ou nacional. Brasil tem metrópoles nacionais (SP, RJ), regionais (BH, Porto Alegre, Salvador, Recife, Fortaleza) e sub-regionais. Regiões Metropolitanas: conjunto de municípios conurbados em torno de metrópole. A RM de São Paulo tem 21 milhões de habitantes. Rede urbana: hierarquia de cidades interligadas por fluxos econômicos, de serviços e informação. São Paulo é o centro da rede; cidades menores dependem das maiores."
+        },
+        {
+          "titulo": "Problemas Urbanos",
+          "conteudo": "Habitação: déficit habitacional (6 milhões de moradias), favelas, cortiços, moradores de rua. Muitos vivem em áreas de risco (encostas, áreas alagáveis). Mobilidade: trânsito caótico, transporte público precário, tempo excessivo de deslocamento. Priorização de carros sobre transporte coletivo. Saneamento: milhões sem esgoto tratado, água potável ou coleta de lixo. Desigualdade socioambiental. Violência: alta criminalidade, especialmente em periferias. Segregação socioespacial: bairros ricos com serviços versus periferias carentes."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "São Paulo: Macrocefalia Urbana",
+          "descricao": "A região metropolitana de São Paulo tem 21 milhões de habitantes, sendo a maior da América do Sul. Concentra serviços, indústrias, empregos, mas também problemas: trânsito, poluição, favelas, desigualdade. É exemplo de macrocefalia urbana."
+        },
+        {
+          "titulo": "Favelas",
+          "descricao": "Ocupações irregulares em áreas urbanas, geralmente sem títulos de propriedade, com infraestrutura precária. Surgiram com a urbanização acelerada sem planejamento. Abrigam milhões de brasileiros em condições de vulnerabilidade, mas também são comunidades com cultura e economia próprias."
+        }
+      ],
+      "dicas": [
+        "Urbanização brasileira = acelerada, concentrada, desigual",
+        "Êxodo rural = industrialização + mecanização agrícola + concentração de terra",
+        "Problemas urbanos = habitação, mobilidade, saneamento, violência, desigualdade"
+      ],
+      "questoes": [
+        {
+          "id": "q75-1",
+          "enunciado": "A urbanização brasileira foi um processo caracterizado por:",
+          "alternativas": {
+            "A": "Lentidão e planejamento cuidadoso ao longo de séculos",
+            "B": "Rapidez, concentração nas grandes cidades e crescimento desordenado",
+            "C": "Distribuição equilibrada da população por todo o território",
+            "D": "Desenvolvimento do campo simultâneo ao das cidades",
+            "E": "Ausência de migração interna significativa"
+          },
+          "correta": "B",
+          "explicacao": "A urbanização brasileira foi rápida (de 36% em 1950 para 87% em 2022), concentrada nas grandes cidades (especialmente Sudeste) e desordenada (sem planejamento adequado). Isso gerou problemas como favelização, déficit habitacional, trânsito e periferização.",
+          "dificuldade": "facil",
+          "tags": ["urbanização", "rapidez", "desordenamento"]
+        },
+        {
+          "id": "q75-2",
+          "enunciado": "O êxodo rural no Brasil foi intensificado a partir de meados do século XX devido a:",
+          "alternativas": {
+            "A": "Políticas de distribuição de terras que incentivaram a permanência no campo",
+            "B": "Mecanização agrícola, concentração fundiária e atração exercida pelas cidades industriais",
+            "C": "Guerras civis que devastaram as áreas rurais",
+            "D": "Epidemias exclusivas do ambiente rural",
+            "E": "Melhoria das condições de vida no campo que paradoxalmente expulsou a população"
+          },
+          "correta": "B",
+          "explicacao": "O êxodo rural intensificou-se com: mecanização agrícola (menos trabalhadores necessários), concentração fundiária (pequenos perderam terras), e atração das cidades industriais (especialmente São Paulo) que ofereciam empregos. Milhões migraram do campo para as cidades em poucas décadas.",
+          "dificuldade": "medio",
+          "tags": ["êxodo rural", "industrialização", "migração"]
+        },
+        {
+          "id": "q75-3",
+          "enunciado": "A macrocefalia urbana, presente no Brasil, significa:",
+          "alternativas": {
+            "A": "Crescimento equilibrado de todas as cidades do país",
+            "B": "Crescimento excessivo de uma ou poucas grandes cidades em relação às demais",
+            "C": "Declínio de todas as cidades brasileiras",
+            "D": "Ausência de grandes cidades no território nacional",
+            "E": "Planejamento perfeito do sistema urbano"
+          },
+          "correta": "B",
+          "explicacao": "Macrocefalia urbana é o crescimento excessivo de uma ou poucas grandes cidades (São Paulo, Rio de Janeiro) em relação às demais. Concentram população, economia, serviços, criando desequilíbrio na rede urbana. Cidades menores têm menos dinamismo e dependem das metrópoles.",
+          "dificuldade": "medio",
+          "tags": ["macrocefalia", "metrópoles", "rede urbana"]
+        },
+        {
+          "id": "q75-4",
+          "enunciado": "A segregação socioespacial nas cidades brasileiras manifesta-se em:",
+          "alternativas": {
+            "A": "Distribuição igualitária de serviços e infraestrutura por toda a cidade",
+            "B": "Separação entre bairros ricos bem servidos e periferias carentes de infraestrutura e serviços",
+            "C": "Integração total entre diferentes classes sociais no espaço urbano",
+            "D": "Ausência de favelas e áreas de risco nas grandes cidades",
+            "E": "Homogeneidade socioeconômica em todos os bairros"
+          },
+          "correta": "B",
+          "explicacao": "Segregação socioespacial é a separação no espaço urbano entre classes sociais: bairros ricos concentram infraestrutura, serviços, segurança, áreas verdes; periferias e favelas carecem de saneamento, transporte, saúde, equipamentos públicos. A cidade reproduz e aprofunda desigualdades sociais.",
+          "dificuldade": "medio",
+          "tags": ["segregação", "desigualdade", "periferias"]
+        },
+        {
+          "id": "q75-5",
+          "enunciado": "Um problema crônico da mobilidade urbana nas grandes cidades brasileiras é:",
+          "alternativas": {
+            "A": "Excesso de investimento em transporte público de qualidade",
+            "B": "Priorização histórica do transporte individual (carros) sobre o coletivo, gerando congestionamentos",
+            "C": "Ausência de qualquer via de circulação nas cidades",
+            "D": "Uso excessivo de bicicletas que prejudica o tráfego",
+            "E": "Metrôs e ônibus com capacidade ociosa"
+          },
+          "correta": "B",
+          "explicacao": "A mobilidade urbana brasileira foi historicamente planejada para o automóvel individual: grandes avenidas, viadutos, pouco investimento em metrô e ônibus. O resultado são congestionamentos crônicos, poluição, tempo excessivo de deslocamento, especialmente para trabalhadores das periferias.",
+          "dificuldade": "facil",
+          "tags": ["mobilidade", "transporte", "congestionamento"]
+        }
+      ]
+    },
+    {
+      "id": "m76",
+      "titulo": "Economia Brasileira",
+      "resumo": "Setores econômicos, agronegócio, indústria, serviços, comércio exterior e desigualdade regional.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil é uma das maiores economias do mundo (entre 10ª e 12ª posição), com PIB de cerca de 2 trilhões de dólares. A economia é diversificada, mas desigual regionalmente e socialmente. No ENEM, esse tema aparece em questões sobre setores econômicos, comércio internacional e desigualdades."
+        },
+        {
+          "titulo": "Setores Econômicos",
+          "conteudo": "Primário (agropecuária): cerca de 7% do PIB, mas 20% se incluir agroindústria. Brasil é potência agrícola: maior exportador de soja, café, açúcar, suco de laranja, carne bovina e frango. Agricultura familiar x agronegócio. Secundário (indústria): cerca de 20% do PIB. Industrialização por substituição de importações (1930-1980). Hoje: automóveis, alimentos, metalurgia, petroquímica. Concentração em SP. Desindustrialização relativa recente. Terciário (serviços): cerca de 73% do PIB. Comércio, finanças, transportes, saúde, educação, tecnologia. Maior empregador."
+        },
+        {
+          "titulo": "Agronegócio",
+          "conteudo": "O agronegócio é o setor mais competitivo da economia brasileira. Commodities: soja, milho, carne, açúcar, café são principais exportações. China é maior comprador. Fronteira agrícola: expansão sobre Cerrado e Amazônia, com impactos ambientais. Tensões: latifúndio x agricultura familiar, agronegócio x povos tradicionais, produção x meio ambiente. Tecnologia: Brasil desenvolveu agricultura tropical (Embrapa), mas depende de insumos importados (fertilizantes)."
+        },
+        {
+          "titulo": "Desigualdade Regional",
+          "conteudo": "A economia brasileira é regionalmente desigual: Sudeste: concentra cerca de 50% do PIB, indústrias, serviços. São Paulo sozinho representa 1/3 do PIB. Sul: segundo mais rico, agricultura mecanizada, indústrias. Centro-Oeste: cresceu com agronegócio (soja, gado). Norte: riqueza concentrada na Zona Franca de Manaus e extrativismo. Nordeste: região mais pobre em renda per capita, apesar de avanços recentes. Políticas de desenvolvimento regional (SUDENE, incentivos) tiveram sucesso parcial."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Complexo Soja-Carne",
+          "descricao": "O Brasil é maior exportador mundial de soja e carne bovina/frango. Grande parte da soja vira ração animal. China é principal comprador. O setor gera divisas, mas também desmatamento (Cerrado, Amazônia) e concentração de terras."
+        },
+        {
+          "titulo": "Desigualdade Sudeste x Nordeste",
+          "descricao": "O Sudeste concentra cerca de 50% do PIB brasileiro, com São Paulo representando 1/3 sozinho. O Nordeste, com 27% da população, representa apenas 14% do PIB. A renda per capita nordestina é menos da metade da paulista."
+        }
+      ],
+      "dicas": [
+        "Terciário (serviços) = 73% do PIB, maior empregador",
+        "Agronegócio = competitivo, exportador (soja, carne), mas gera impactos",
+        "Desigualdade regional: Sudeste 50% do PIB, Nordeste mais pobre"
+      ],
+      "questoes": [
+        {
+          "id": "q76-1",
+          "enunciado": "O setor que representa a maior parcela do PIB brasileiro atualmente é:",
+          "alternativas": {
+            "A": "O primário (agricultura e pecuária)",
+            "B": "O secundário (indústria de transformação)",
+            "C": "O terciário (serviços, comércio, finanças)",
+            "D": "A mineração exclusivamente",
+            "E": "A pesca e aquicultura"
+          },
+          "correta": "C",
+          "explicacao": "O setor terciário (serviços, comércio, finanças, transportes, saúde, educação) representa cerca de 73% do PIB brasileiro e é o maior empregador. É característica de economias desenvolvidas e em desenvolvimento avançado a predominância do setor de serviços.",
+          "dificuldade": "facil",
+          "tags": ["terciário", "serviços", "PIB"]
+        },
+        {
+          "id": "q76-2",
+          "enunciado": "O Brasil é potência mundial na produção e exportação de:",
+          "alternativas": {
+            "A": "Automóveis de luxo e eletrônicos de ponta",
+            "B": "Commodities agrícolas como soja, carne, açúcar e café",
+            "C": "Petróleo refinado e produtos químicos",
+            "D": "Aviões comerciais de grande porte",
+            "E": "Máquinas industriais de alta tecnologia"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil é maior exportador mundial de soja, café, açúcar, suco de laranja, carne bovina e frango. As commodities agrícolas são o setor mais competitivo da economia brasileira no comércio internacional. A China é o principal comprador dessas commodities.",
+          "dificuldade": "facil",
+          "tags": ["agronegócio", "exportação", "commodities"]
+        },
+        {
+          "id": "q76-3",
+          "enunciado": "A desigualdade regional da economia brasileira manifesta-se em:",
+          "alternativas": {
+            "A": "Distribuição igualitária do PIB entre todas as regiões",
+            "B": "Concentração de cerca de 50% do PIB na região Sudeste, especialmente em São Paulo",
+            "C": "Predominância econômica da região Norte",
+            "D": "Igualdade de renda per capita entre Nordeste e Sul",
+            "E": "Ausência de atividade econômica no Centro-Oeste"
+          },
+          "correta": "B",
+          "explicacao": "A economia brasileira é muito concentrada regionalmente: o Sudeste responde por cerca de 50% do PIB, com São Paulo representando sozinho 1/3 do total. O Nordeste, com 27% da população, representa apenas 14% do PIB. Essas desigualdades têm raízes históricas na industrialização concentrada.",
+          "dificuldade": "medio",
+          "tags": ["desigualdade regional", "sudeste", "concentração"]
+        },
+        {
+          "id": "q76-4",
+          "enunciado": "O avanço da fronteira agrícola sobre o Cerrado e a Amazônia para expansão do agronegócio gera:",
+          "alternativas": {
+            "A": "Apenas benefícios sem qualquer impacto negativo",
+            "B": "Desmatamento, perda de biodiversidade e conflitos com povos tradicionais",
+            "C": "Redução da produção agrícola nacional",
+            "D": "Aumento da cobertura vegetal nativa",
+            "E": "Diminuição das exportações agrícolas"
+          },
+          "correta": "B",
+          "explicacao": "A expansão da fronteira agrícola sobre Cerrado e Amazônia gera: desmatamento (mais de 50% do Cerrado já foi convertido), perda de biodiversidade, emissões de carbono, conflitos com povos indígenas, quilombolas e comunidades tradicionais. O modelo é produtivo, mas ambientalmente e socialmente problemático.",
+          "dificuldade": "medio",
+          "tags": ["fronteira agrícola", "desmatamento", "conflitos"]
+        },
+        {
+          "id": "q76-5",
+          "enunciado": "A industrialização brasileira por substituição de importações (1930-1980) caracterizou-se por:",
+          "alternativas": {
+            "A": "Livre comércio e ausência de proteção à indústria nacional",
+            "B": "Produzir no Brasil o que antes era importado, com proteção estatal e investimento público",
+            "C": "Concentração exclusiva na exportação de manufaturados",
+            "D": "Rejeição de qualquer participação do Estado na economia",
+            "E": "Desenvolvimento industrial equilibrado em todas as regiões"
+          },
+          "correta": "B",
+          "explicacao": "A industrialização por substituição de importações buscou produzir no Brasil o que antes era importado: bens de consumo, depois bens intermediários e de capital. Envolveu proteção tarifária, investimento estatal (CSN, Petrobras, Vale), planejamento. Concentrou-se no Sudeste, especialmente São Paulo.",
+          "dificuldade": "medio",
+          "tags": ["industrialização", "substituição de importações", "estado"]
+        }
+      ]
+    },
+    {
+      "id": "m77",
+      "titulo": "Questões Ambientais",
+      "resumo": "Desmatamento, mudanças climáticas, recursos hídricos, poluição e políticas ambientais no Brasil.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil tem enorme patrimônio ambiental (maior biodiversidade do mundo, grandes biomas, recursos hídricos), mas enfrenta graves problemas: desmatamento, queimadas, poluição, degradação. As questões ambientais são cada vez mais importantes no ENEM, relacionando-se com clima, economia e políticas públicas."
+        },
+        {
+          "titulo": "Desmatamento e Queimadas",
+          "conteudo": "Amazônia: maior floresta tropical, perdeu cerca de 20% da cobertura original. Causas: agropecuária (gado, soja), garimpo, madeira ilegal, grilagem. Queimadas: usadas para limpar áreas desmatadas, saem de controle na seca. Consequências: perda de biodiversidade, emissão de carbono, alteração do ciclo hidrológico, conflitos. Cerrado: desmatamento ainda mais acelerado, mas com menos fiscalização. Já perdeu mais de 50% da vegetação original."
+        },
+        {
+          "titulo": "Mudanças Climáticas",
+          "conteudo": "O Brasil é grande emissor de gases de efeito estufa, principalmente por desmatamento (mudança de uso do solo). Compromissos: Acordo de Paris, metas de redução. Impactos no Brasil: eventos extremos (secas mais severas, chuvas mais intensas), aumento de temperatura, mudança nos regimes de chuvas, elevação do nível do mar. Regiões mais vulneráveis: Nordeste (seca), litoral (elevação do mar), Amazônia (savanização)."
+        },
+        {
+          "titulo": "Recursos Hídricos e Poluição",
+          "conteudo": "Brasil tem 12% da água doce mundial, mas distribuição é desigual: 70% na Amazônia (com 7% da população), crise hídrica no Sudeste e Nordeste. Poluição: despejo de esgoto (50% sem tratamento), resíduos industriais, agrotóxicos. Rios urbanos degradados (Tietê, Guandu). Aquífero Guarani: uma das maiores reservas subterrâneas do mundo, sob Brasil, Argentina, Paraguai e Uruguai. Gestão: Lei das Águas (1997) criou sistema de gestão por bacias hidrográficas."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Arco do Desmatamento",
+          "descricao": "Região na borda da Amazônia (do PA ao RO) onde avança a fronteira agrícola. Concentra maior parte do desmatamento: floresta é derrubada para pasto, depois pode virar soja. Inclui áreas de conflito fundiário e violência."
+        },
+        {
+          "titulo": "Crise Hídrica de 2014-2015",
+          "descricao": "O Sudeste, especialmente SP, enfrentou grave crise hídrica: reservatórios (Cantareira) chegaram a níveis críticos. Causas: seca extrema, desmatamento que afeta ciclo hidrológico, desperdício, falta de investimento. Mostrou vulnerabilidade mesmo de regiões 'ricas em água'."
+        }
+      ],
+      "dicas": [
+        "Amazônia = 20% desmatada; Cerrado = mais de 50% (fronteira agrícola)",
+        "Desmatamento = principal fonte de emissões brasileiras",
+        "Brasil tem 12% da água doce, mas distribuição é desigual"
+      ],
+      "questoes": [
+        {
+          "id": "q77-1",
+          "enunciado": "A principal causa de emissões de gases de efeito estufa no Brasil é:",
+          "alternativas": {
+            "A": "A queima de combustíveis fósseis no transporte",
+            "B": "O desmatamento e as mudanças de uso do solo",
+            "C": "A produção de energia elétrica em termelétricas",
+            "D": "A indústria pesada siderúrgica",
+            "E": "O consumo residencial de gás natural"
+          },
+          "correta": "B",
+          "explicacao": "Diferentemente de países industrializados (onde energia e transporte dominam), no Brasil a principal fonte de emissões é o desmatamento e mudanças de uso do solo (queima de floresta libera carbono). Por isso, combater o desmatamento é central para política climática brasileira.",
+          "dificuldade": "medio",
+          "tags": ["emissões", "desmatamento", "clima"]
+        },
+        {
+          "id": "q77-2",
+          "enunciado": "O 'arco do desmatamento' na Amazônia refere-se a:",
+          "alternativas": {
+            "A": "Região no centro da floresta protegida por unidades de conservação",
+            "B": "Região na borda da floresta onde avança a fronteira agropecuária e concentra-se o desmatamento",
+            "C": "Área de reflorestamento intensivo com espécies nativas",
+            "D": "Reserva indígena com vegetação totalmente preservada",
+            "E": "Região de clima muito úmido que impede qualquer ocupação"
+          },
+          "correta": "B",
+          "explicacao": "O arco do desmatamento é a região na borda da Amazônia (do Pará a Rondônia) onde avança a fronteira agropecuária. Concentra a maior parte do desmatamento: floresta derrubada para pasto, depois eventualmente convertida em soja. É área de intensos conflitos fundiários.",
+          "dificuldade": "medio",
+          "tags": ["arco do desmatamento", "fronteira", "amazônia"]
+        },
+        {
+          "id": "q77-3",
+          "enunciado": "Embora o Brasil tenha 12% da água doce mundial, enfrenta problemas de disponibilidade hídrica porque:",
+          "alternativas": {
+            "A": "A maior parte da água está na Amazônia, longe dos maiores centros consumidores",
+            "B": "O Brasil não possui qualquer reserva de água subterrânea",
+            "C": "A água doce brasileira é imprópria para consumo",
+            "D": "O país não tem rios de grande porte",
+            "E": "A chuva nunca atinge o território brasileiro"
+          },
+          "correta": "A",
+          "explicacao": "A distribuição da água é desigual: 70% está na região amazônica, onde vive apenas 7% da população. As regiões mais populosas (Sudeste) e mais secas (Nordeste) enfrentam escassez. A poluição de rios urbanos e o desperdício agravam o problema.",
+          "dificuldade": "facil",
+          "tags": ["água", "distribuição", "escassez"]
+        },
+        {
+          "id": "q77-4",
+          "enunciado": "O Cerrado brasileiro é considerado especialmente vulnerável porque:",
+          "alternativas": {
+            "A": "Não possui qualquer espécie de valor ecológico",
+            "B": "Já perdeu mais de 50% de sua vegetação original e o desmatamento continua acelerado",
+            "C": "É protegido por rigorosa legislação que impede qualquer uso",
+            "D": "Tem clima que impede a agricultura",
+            "E": "Está totalmente preservado sem qualquer ocupação humana"
+          },
+          "correta": "B",
+          "explicacao": "O Cerrado já perdeu mais de 50% de sua vegetação original, principalmente para agricultura (soja, milho) e pecuária. O desmatamento continua acelerado, mais rápido que na Amazônia, mas com menos atenção. Milhares de espécies endêmicas estão ameaçadas.",
+          "dificuldade": "medio",
+          "tags": ["cerrado", "desmatamento", "vulnerabilidade"]
+        },
+        {
+          "id": "q77-5",
+          "enunciado": "Entre os impactos esperados das mudanças climáticas no Brasil estão:",
+          "alternativas": {
+            "A": "Redução da temperatura média em todo o território",
+            "B": "Eventos extremos mais intensos, seca mais severa no Nordeste e possível savanização da Amazônia",
+            "C": "Eliminação de todos os biomas e desertificação completa",
+            "D": "Congelamento permanente do litoral brasileiro",
+            "E": "Nenhum impacto significativo sobre o território nacional"
+          },
+          "correta": "B",
+          "explicacao": "As mudanças climáticas devem intensificar eventos extremos no Brasil: secas mais severas (Nordeste, Centro-Oeste), chuvas mais intensas (Sul, Sudeste), elevação do nível do mar (litoral). Há risco de 'savanização' da Amazônia se desmatamento e aquecimento continuarem.",
+          "dificuldade": "medio",
+          "tags": ["mudanças climáticas", "impactos", "vulnerabilidade"]
+        }
+      ]
+    },
+    {
+      "id": "m78",
+      "titulo": "Energia no Brasil",
+      "resumo": "Matriz energética brasileira, fontes renováveis e não renováveis, desafios e transição energética.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil tem matriz energética relativamente limpa, com alta participação de renováveis (hidrelétricas, biomassa). Porém, enfrenta desafios de segurança energética e transição para economia de baixo carbono. No ENEM, esse tema aparece relacionando energia com meio ambiente, economia e desenvolvimento."
+        },
+        {
+          "titulo": "Matriz Elétrica",
+          "conteudo": "A matriz elétrica brasileira é predominantemente hidrelétrica (cerca de 60%). Principais usinas: Itaipu (Brasil-Paraguai, uma das maiores do mundo), Belo Monte (Pará), Tucuruí (Pará). Vantagens das hidrelétricas: renováveis, baixo custo operacional. Problemas: impactos ambientais e sociais (inundação, remoção de populações), dependência de chuvas (vulnerabilidade a secas). Outras fontes: eólica (cresceu muito, especialmente no Nordeste), solar (crescendo rapidamente), biomassa (bagaço de cana), térmica (gás, carvão - backup), nuclear (Angra 1, 2, 3 em construção)."
+        },
+        {
+          "titulo": "Matriz Energética Total",
+          "conteudo": "A matriz energética total (não apenas eletricidade) inclui: Petróleo e derivados: ainda dominam transportes. Brasil é autossuficiente desde pré-sal. Petrobras é maior empresa do país. Etanol: biocombustível de cana-de-açúcar. Brasil é pioneiro e segundo maior produtor mundial (atrás dos EUA com milho). Carros flex. Biomassa: bagaço de cana para energia, lenha, carvão vegetal. Gás natural: crescente, importado da Bolívia e produzido no pré-sal. A participação de renováveis na matriz total é de cerca de 45% - alta para padrões mundiais."
+        },
+        {
+          "titulo": "Desafios e Transição",
+          "conteudo": "Segurança energética: dependência de chuvas expõe a risco de racionamento (como em 2001). Diversificação (eólica, solar) ajuda. Transição energética: para cumprir metas climáticas, precisa reduzir fósseis em transportes. Eletrificação de veículos, biocombustíveis avançados. Questão energética x ambiental: grandes hidrelétricas na Amazônia (Belo Monte) geram energia limpa, mas causam impactos socioambientais significativos. Pequenas centrais e fontes distribuídas são alternativas."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Hidrelétrica de Itaipu",
+          "descricao": "Uma das maiores hidrelétricas do mundo, binacional (Brasil-Paraguai), no rio Paraná. Produz cerca de 15% da eletricidade consumida no Brasil e 90% no Paraguai. Construída nos anos 1970-1980, foi marco da engenharia."
+        },
+        {
+          "titulo": "Programa do Etanol",
+          "descricao": "O Brasil desenvolveu programa de etanol de cana-de-açúcar desde os anos 1970 (Proálcool). É combustível renovável que reduz emissões. Carros flex-fuel usam gasolina ou etanol. O país é segundo maior produtor mundial e referência em biocombustíveis."
+        }
+      ],
+      "dicas": [
+        "Matriz elétrica = 60% hidrelétricas; total = 45% renováveis",
+        "Etanol = biocombustível de cana, Brasil pioneiro, carros flex",
+        "Desafio = segurança (chuvas) + transição (menos fósseis)"
+      ],
+      "questoes": [
+        {
+          "id": "q78-1",
+          "enunciado": "A principal fonte de energia elétrica no Brasil é:",
+          "alternativas": {
+            "A": "Termelétricas a carvão mineral",
+            "B": "Energia nuclear",
+            "C": "Hidrelétricas, que respondem por cerca de 60% da geração",
+            "D": "Energia solar fotovoltaica",
+            "E": "Importação de países vizinhos"
+          },
+          "correta": "C",
+          "explicacao": "O Brasil tem matriz elétrica predominantemente hidrelétrica, com cerca de 60% da geração. Grandes usinas como Itaipu, Tucuruí e Belo Monte são fundamentais. É uma das matrizes mais renováveis do mundo, embora dependente de chuvas.",
+          "dificuldade": "facil",
+          "tags": ["hidrelétricas", "matriz elétrica", "energia"]
+        },
+        {
+          "id": "q78-2",
+          "enunciado": "O etanol produzido no Brasil a partir da cana-de-açúcar é importante porque:",
+          "alternativas": {
+            "A": "É o único combustível disponível no país",
+            "B": "É biocombustível renovável que reduz emissões comparado a combustíveis fósseis",
+            "C": "É mais poluente que a gasolina",
+            "D": "É inteiramente importado de outros países",
+            "E": "Não pode ser usado em veículos automotores"
+          },
+          "correta": "B",
+          "explicacao": "O etanol brasileiro de cana-de-açúcar é biocombustível renovável: a cana absorve CO2 ao crescer, compensando parcialmente as emissões da queima. Emite menos que gasolina. O Brasil é pioneiro e referência mundial em biocombustíveis, com carros flex que rodam com etanol ou gasolina.",
+          "dificuldade": "facil",
+          "tags": ["etanol", "biocombustível", "renovável"]
+        },
+        {
+          "id": "q78-3",
+          "enunciado": "Uma vulnerabilidade da matriz elétrica brasileira, baseada em hidrelétricas, é:",
+          "alternativas": {
+            "A": "Excesso de chuvas que prejudica a geração",
+            "B": "Dependência de regimes de chuva, com risco de crise em períodos de seca",
+            "C": "Impossibilidade de armazenar energia em reservatórios",
+            "D": "Emissão excessiva de gases de efeito estufa",
+            "E": "Custo operacional muito alto comparado a outras fontes"
+          },
+          "correta": "B",
+          "explicacao": "A dependência de hidrelétricas torna o sistema vulnerável a secas: com menos chuva, reservatórios baixam e geração cai. O Brasil enfrentou racionamento em 2001 por isso. A diversificação para eólica e solar reduz essa vulnerabilidade.",
+          "dificuldade": "medio",
+          "tags": ["vulnerabilidade", "seca", "hidrelétricas"]
+        },
+        {
+          "id": "q78-4",
+          "enunciado": "A energia eólica no Brasil cresceu significativamente nas últimas décadas, concentrando-se principalmente:",
+          "alternativas": {
+            "A": "Na região Sudeste, próximo às grandes indústrias",
+            "B": "Na região Nordeste, que tem ventos constantes e fortes",
+            "C": "Na Amazônia, aproveitando a floresta",
+            "D": "No Pantanal, aproveitando as cheias",
+            "E": "Na Antártida brasileira"
+          },
+          "correta": "B",
+          "explicacao": "A energia eólica brasileira concentra-se no Nordeste, especialmente no interior e litoral, onde ventos são constantes e fortes (Rio Grande do Norte, Bahia, Ceará, Piauí). A região tornou-se polo de energia eólica, gerando empregos e renda.",
+          "dificuldade": "medio",
+          "tags": ["eólica", "nordeste", "vento"]
+        },
+        {
+          "id": "q78-5",
+          "enunciado": "A construção de grandes hidrelétricas na Amazônia, como Belo Monte, gera controvérsia porque:",
+          "alternativas": {
+            "A": "Produz energia muito poluente",
+            "B": "Não gera qualquer quantidade significativa de energia",
+            "C": "Causa impactos ambientais e sociais significativos, apesar de gerar energia renovável",
+            "D": "É proibida pela Constituição brasileira",
+            "E": "Utiliza tecnologia ultrapassada do século XIX"
+          },
+          "correta": "C",
+          "explicacao": "Grandes hidrelétricas na Amazônia (como Belo Monte) geram energia renovável, mas causam impactos significativos: inundação de áreas florestais, remoção de populações ribeirinhas e indígenas, alteração de ecossistemas. O debate é sobre os trade-offs entre energia limpa e impactos socioambientais.",
+          "dificuldade": "medio",
+          "tags": ["belo monte", "impactos", "controvérsia"]
+        }
+      ]
+    },
+    {
+      "id": "m79",
+      "titulo": "Transportes e Logística",
+      "resumo": "Infraestrutura de transportes no Brasil, modais, gargalos logísticos e integração territorial.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A infraestrutura de transportes é fundamental para a economia e integração territorial. O Brasil tem matriz de transportes desequilibrada, com predominância do modal rodoviário e deficiências em ferrovias e hidrovias. Isso aumenta custos logísticos e limita competitividade. No ENEM, esse tema aparece relacionando transportes com economia e desenvolvimento."
+        },
+        {
+          "titulo": "Modal Rodoviário",
+          "conteudo": "O Brasil é dependente do transporte rodoviário: cerca de 60% das cargas e 95% dos passageiros usam rodovias. Histórico: a partir dos anos 1950 (Plano de Metas de JK), o país priorizou rodovias e indústria automobilística, em detrimento de ferrovias e hidrovias. Consequências: custo de frete alto, dependência de petróleo, congestionamentos, acidentes, emissões. Situação: muitas rodovias em mau estado; concessões privadas melhoraram alguns trechos (com pedágios). Principais eixos: BR-101 (litoral), BR-116 (São Paulo-Sul/Nordeste), BR-153 (Centro-Norte)."
+        },
+        {
+          "titulo": "Ferrovias e Hidrovias",
+          "conteudo": "Ferrovias: subutilizadas, transportam principalmente minério e grãos (cargas de baixo valor e grande volume). Malha foi desativada em grande parte no século XX. Ferrovias existentes: MRS, Rumo (antiga ALL), EFVM, EFC (minério de Carajás). Hidrovias: potencial imenso, mas pouco aproveitado. Principais: Tietê-Paraná (Centro-Sul), Amazonas-Solimões (Norte), Paraguai (Pantanal), São Francisco. Transporte fluvial é muito mais barato que rodoviário para granéis, mas falta investimento em infraestrutura (eclusas, dragagem, portos)."
+        },
+        {
+          "titulo": "Portos e Aeroportos",
+          "conteudo": "Portos: fundamentais para exportação (commodities). Principais: Santos (SP), Paranaguá (PR), Rio Grande (RS), Itaqui (MA). Problemas: filas de espera, infraestrutura deficiente, dragagem insuficiente. Algumas concessões modernizaram terminais. Aeroportos: importantes para passageiros e cargas de alto valor. Principais: Guarulhos (SP), Galeão (RJ), Brasília, Confins (BH). Concessões melhoraram alguns, mas gargalos persistem. Multimodalidade: a integração entre modais (ferrovia-porto, hidrovia-rodovia) é deficiente, aumentando custos. 'Custo Brasil' inclui essas ineficiências logísticas."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Custo Brasil na Logística",
+          "descricao": "O 'Custo Brasil' inclui a ineficiência logística: transportar soja do Centro-Oeste ao porto pode custar 30% do valor do produto (por rodovia precária). A dependência do modal rodoviário encarece toda a economia e reduz competitividade."
+        },
+        {
+          "titulo": "Ferrovia Norte-Sul",
+          "descricao": "Projeto para integrar o país de norte a sul por ferrovia, ligando Belém (PA) a Rio Grande (RS). Construção iniciada nos anos 1980, várias vezes paralisada. Trecho Tocantins-Goiás está em operação, transportando grãos para exportação."
+        }
+      ],
+      "dicas": [
+        "Brasil = 60% cargas por rodovia, matriz desequilibrada",
+        "Ferrovias e hidrovias subutilizadas apesar de potencial",
+        "'Custo Brasil' = ineficiência logística encarece economia"
+      ],
+      "questoes": [
+        {
+          "id": "q79-1",
+          "enunciado": "A matriz de transportes de cargas no Brasil é desequilibrada porque:",
+          "alternativas": {
+            "A": "Ferrovias e hidrovias são dominantes, com poucas rodovias",
+            "B": "O modal rodoviário é excessivamente dominante (60%), enquanto ferrovias e hidrovias são subutilizadas",
+            "C": "Todos os modais são igualmente desenvolvidos",
+            "D": "O transporte aéreo domina o movimento de cargas",
+            "E": "Não existe infraestrutura de transportes no país"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil é excessivamente dependente do modal rodoviário: cerca de 60% das cargas vão por caminhões. Ferrovias (eficientes para grandes volumes e longas distâncias) e hidrovias (baratas e abundantes no Brasil) são subutilizadas. Isso aumenta custos, consome mais combustível e prejudica competitividade.",
+          "dificuldade": "facil",
+          "tags": ["matriz de transportes", "rodovias", "desequilíbrio"]
+        },
+        {
+          "id": "q79-2",
+          "enunciado": "A opção pelo modal rodoviário no Brasil, a partir dos anos 1950, deve-se principalmente a:",
+          "alternativas": {
+            "A": "Ausência de rios navegáveis em todo o território",
+            "B": "Políticas que priorizaram rodovias e indústria automobilística, em detrimento de ferrovias",
+            "C": "Menores custos do transporte rodoviário comparado aos demais",
+            "D": "Pressão popular por mais rodovias em vez de ferrovias",
+            "E": "Impossibilidade geográfica de construir ferrovias"
+          },
+          "correta": "B",
+          "explicacao": "A partir do Plano de Metas de JK (1956-1961), o Brasil priorizou rodovias e a indústria automobilística (atração de montadoras). Ferrovias foram sucateadas e hidrovias negligenciadas. A escolha teve influência da indústria automotiva e de lobbies do setor rodoviário.",
+          "dificuldade": "medio",
+          "tags": ["política de transportes", "JK", "rodovias"]
+        },
+        {
+          "id": "q79-3",
+          "enunciado": "As ferrovias brasileiras são utilizadas principalmente para transportar:",
+          "alternativas": {
+            "A": "Passageiros em grandes distâncias",
+            "B": "Minério de ferro e grãos (commodities de grande volume e baixo valor)",
+            "C": "Produtos eletrônicos e manufaturados",
+            "D": "Apenas correspondência postal",
+            "E": "Nada, pois estão completamente desativadas"
+          },
+          "correta": "B",
+          "explicacao": "As ferrovias brasileiras existentes transportam principalmente minério de ferro (Carajás, Quadrilátero Ferrífero) e grãos (soja, milho do Centro-Oeste). São cargas de grande volume e baixo valor unitário, ideais para ferrovia. Transporte de passageiros praticamente não existe em longa distância.",
+          "dificuldade": "facil",
+          "tags": ["ferrovias", "minério", "grãos"]
+        },
+        {
+          "id": "q79-4",
+          "enunciado": "As hidrovias brasileiras são subutilizadas apesar de seu potencial porque:",
+          "alternativas": {
+            "A": "O Brasil não possui rios navegáveis",
+            "B": "Falta investimento em infraestrutura como eclusas, dragagem e portos fluviais",
+            "C": "O transporte hidroviário é mais caro que o rodoviário",
+            "D": "A legislação proíbe qualquer transporte por rios",
+            "E": "Os rios brasileiros estão todos poluídos e impróprios"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil tem imenso potencial hidroviário (Amazonas, Tietê-Paraná, São Francisco, Paraguai), mas falta infraestrutura: eclusas (para vencer desníveis), dragagem (para manter profundidade), portos fluviais e integração com outros modais. O transporte fluvial é muito mais barato que o rodoviário.",
+          "dificuldade": "medio",
+          "tags": ["hidrovias", "infraestrutura", "potencial"]
+        },
+        {
+          "id": "q79-5",
+          "enunciado": "O 'Custo Brasil' na logística refere-se a:",
+          "alternativas": {
+            "A": "Preços baixos de transporte que beneficiam a economia",
+            "B": "Ineficiências e custos elevados de transporte que reduzem a competitividade do país",
+            "C": "Incentivos fiscais que barateiam o frete",
+            "D": "Investimentos governamentais em infraestrutura",
+            "E": "Nome de programa de modernização portuária"
+          },
+          "correta": "B",
+          "explicacao": "'Custo Brasil' inclui as ineficiências logísticas que encarecem a economia: dependência de rodovias, infraestrutura precária, burocracia, falta de multimodalidade. Transportar produtos custa mais no Brasil do que em países concorrentes, prejudicando competitividade de exportações e encarecendo produtos internamente.",
+          "dificuldade": "medio",
+          "tags": ["custo brasil", "logística", "competitividade"]
+        }
+      ]
+    },
+    {
+      "id": "m80",
+      "titulo": "Geopolítica e Inserção Internacional",
+      "resumo": "O Brasil no contexto global, relações internacionais, blocos regionais e questões geopolíticas contemporâneas.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil é país de dimensões continentais (5º maior do mundo), com a maior economia e população da América Latina. Sua inserção internacional envolve relações com potências globais, participação em blocos regionais e busca por protagonismo. No ENEM, esse tema aparece em questões sobre relações internacionais e geopolítica."
+        },
+        {
+          "titulo": "América do Sul e Mercosul",
+          "conteudo": "O Brasil faz fronteira com 10 países sul-americanos (todos menos Chile e Equador). Mercosul: bloco econômico criado em 1991 (Brasil, Argentina, Uruguai, Paraguai; Venezuela suspensa). Objetivo: mercado comum, mas permanece união aduaneira imperfeita. Unasul: organização política sul-americana (enfraquecida desde 2019). Integração: ainda limitada - pouco comércio entre países sul-americanos, infraestrutura deficiente, assimetrias econômicas."
+        },
+        {
+          "titulo": "Relações com Grandes Potências",
+          "conteudo": "Estados Unidos: maior investidor estrangeiro, parceiro comercial importante. Relações alternaram aproximação e distância conforme governos. China: tornou-se maior parceiro comercial do Brasil (desde 2009). Compra commodities (soja, minério), vende manufaturados. Discussão sobre dependência. União Europeia: parceira comercial e em negociação de acordo com Mercosul (décadas de tratativas, ainda não concluído). Acordos de associação em discussão."
+        },
+        {
+          "titulo": "BRICS e Protagonismo Global",
+          "conteudo": "BRICS: grupo de países emergentes (Brasil, Rússia, Índia, China, África do Sul). Reúnem-se anualmente desde 2009. Criaram Novo Banco de Desenvolvimento. Representam alternativa à hegemonia ocidental em instituições internacionais. Protagonismo brasileiro: busca por assento permanente no Conselho de Segurança da ONU, mediação em conflitos (Oriente Médio, América do Sul), liderança em negociações climáticas. Questões de fronteira: Amazônia como área de preocupação internacional (clima, biodiversidade), Tríplice Fronteira (Brasil-Argentina-Paraguai), cooperação contra tráficos."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Brasil-China",
+          "descricao": "A China tornou-se maior parceiro comercial do Brasil em 2009. Compra soja, minério de ferro, petróleo; vende manufaturados. O comércio cresceu enormemente, mas há discussões sobre 'reprimarização' da economia brasileira (voltar a exportar apenas commodities)."
+        },
+        {
+          "titulo": "BRICS",
+          "descricao": "O grupo BRICS reúne grandes economias emergentes: Brasil, Rússia, Índia, China, África do Sul. Juntos representam mais de 40% da população mundial. Criaram o Novo Banco de Desenvolvimento como alternativa ao FMI/Banco Mundial. Expandiram-se em 2024 para incluir novos membros."
+        }
+      ],
+      "dicas": [
+        "Mercosul = união aduaneira imperfeita (Brasil, Argentina, Uruguai, Paraguai)",
+        "China = maior parceiro comercial desde 2009 (commodities x manufaturados)",
+        "BRICS = emergentes, alternativa a instituições ocidentais"
+      ],
+      "questoes": [
+        {
+          "id": "q80-1",
+          "enunciado": "O Mercosul, bloco regional do qual o Brasil faz parte, pode ser classificado como:",
+          "alternativas": {
+            "A": "Uma zona de livre comércio plenamente integrada",
+            "B": "Uma união aduaneira imperfeita, com tarifa externa comum mas exceções",
+            "C": "Uma união monetária com moeda única",
+            "D": "Uma federação política de países sul-americanos",
+            "E": "Uma aliança militar para defesa comum"
+          },
+          "correta": "B",
+          "explicacao": "O Mercosul é classificado como união aduaneira imperfeita: tem tarifa externa comum (TEC) para importações de fora do bloco, mas com diversas exceções e perfurações. Não é mercado comum (livre circulação de fatores) nem união monetária. A integração avançou pouco desde sua criação.",
+          "dificuldade": "medio",
+          "tags": ["mercosul", "união aduaneira", "integração"]
+        },
+        {
+          "id": "q80-2",
+          "enunciado": "A relação comercial Brasil-China caracteriza-se por:",
+          "alternativas": {
+            "A": "Exportação brasileira de manufaturados e importação de commodities",
+            "B": "Exportação brasileira de commodities (soja, minério) e importação de manufaturados chineses",
+            "C": "Ausência de qualquer comércio significativo entre os países",
+            "D": "Comércio equilibrado de produtos de alta tecnologia",
+            "E": "Exportação de petróleo refinado pelo Brasil"
+          },
+          "correta": "B",
+          "explicacao": "Na relação Brasil-China, o Brasil exporta principalmente commodities agrícolas (soja) e minerais (minério de ferro), enquanto importa manufaturados chineses (eletrônicos, máquinas, produtos industriais). Há debate sobre 'reprimarização' da pauta exportadora brasileira.",
+          "dificuldade": "facil",
+          "tags": ["china", "comércio", "commodities"]
+        },
+        {
+          "id": "q80-3",
+          "enunciado": "O grupo BRICS reúne países que têm em comum:",
+          "alternativas": {
+            "A": "Serem as maiores economias desenvolvidas do mundo",
+            "B": "Serem grandes economias emergentes que buscam maior peso nas instituições internacionais",
+            "C": "Serem países europeus membros da União Europeia",
+            "D": "Serem países com população menor que 10 milhões de habitantes",
+            "E": "Serem países sem acesso ao mar"
+          },
+          "correta": "B",
+          "explicacao": "Os BRICS (Brasil, Rússia, Índia, China, África do Sul) são grandes economias emergentes que juntas representam parte significativa da população e PIB mundiais. Buscam maior peso nas instituições internacionais, criaram o Novo Banco de Desenvolvimento como alternativa ao FMI/Banco Mundial.",
+          "dificuldade": "facil",
+          "tags": ["BRICS", "emergentes", "geopolítica"]
+        },
+        {
+          "id": "q80-4",
+          "enunciado": "Uma aspiração histórica do Brasil na política internacional é:",
+          "alternativas": {
+            "A": "Abandonar todas as organizações internacionais",
+            "B": "Obter um assento permanente no Conselho de Segurança da ONU",
+            "C": "Tornar-se membro da União Europeia",
+            "D": "Anexar territórios de países vizinhos",
+            "E": "Fechar todas as fronteiras para comércio exterior"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil aspira a um assento permanente no Conselho de Segurança da ONU, argumentando ser a maior economia e população da América Latina, contribuinte em operações de paz e representante de regiões sem voz no órgão. A reforma do Conselho é discutida há décadas sem conclusão.",
+          "dificuldade": "facil",
+          "tags": ["conselho de segurança", "ONU", "protagonismo"]
+        },
+        {
+          "id": "q80-5",
+          "enunciado": "A Amazônia é questão geopolítica importante porque:",
+          "alternativas": {
+            "A": "Não tem qualquer relevância ambiental ou estratégica",
+            "B": "Concentra biodiversidade, recursos e impacta o clima global, gerando interesse internacional",
+            "C": "É território compartilhado igualmente entre todos os países sul-americanos",
+            "D": "Não possui nenhum recurso natural de valor",
+            "E": "Está totalmente desmatada e abandonada"
+          },
+          "correta": "B",
+          "explicacao": "A Amazônia é questão geopolítica por concentrar imensa biodiversidade, recursos hídricos e minerais, e impactar o clima global (ciclo de carbono, chuvas). O desmatamento gera preocupação internacional. O Brasil, que detém 60% da floresta, enfrenta pressões e debates sobre soberania e responsabilidade ambiental.",
+          "dificuldade": "facil",
+          "tags": ["amazônia", "geopolítica", "clima"]
+        }
+      ]
+    }
+  ]
+}

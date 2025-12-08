@@ -1,0 +1,1075 @@
+{
+  "id": "historia-geral",
+  "slug": "historia-geral",
+  "titulo": "História Geral",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "Da Antiguidade à Contemporaneidade: civilizações, revoluções e transformações que moldaram o mundo moderno",
+  "icone": "Globe",
+  "cor": "#8B4513",
+  "tempoEstimado": "20 horas",
+  "fpRecompensa": 500,
+  "tags": ["história", "civilizações", "revoluções", "mundo contemporâneo", "ENEM"],
+  "modulos": [
+    {
+      "id": "m81",
+      "titulo": "Antiguidade Oriental e Clássica",
+      "resumo": "As primeiras civilizações e os fundamentos da cultura ocidental",
+      "topicos": [
+        {
+          "titulo": "Mesopotâmia e Egito",
+          "conteudo": "A Mesopotâmia, entre os rios Tigre e Eufrates, viu surgir as primeiras cidades-estado como Ur, Uruk e Babilônia. Os sumérios inventaram a escrita cuneiforme, os babilônios criaram o Código de Hamurábi (primeiro código de leis escrito), e os assírios desenvolveram técnicas militares avançadas. No Egito, a civilização se desenvolveu às margens do Nilo, cuja cheia anual fertilizava as terras. A sociedade egípcia era teocrática, com o faraó considerado um deus vivo. Construíram pirâmides, desenvolveram a escrita hieroglífica, praticavam a mumificação e criaram um calendário solar de 365 dias."
+        },
+        {
+          "titulo": "Grécia Antiga",
+          "conteudo": "A civilização grega lançou as bases da democracia, filosofia, teatro e ciência ocidentais. As polis (cidades-estado) tinham organizações distintas: Atenas desenvolveu a democracia direta (para cidadãos homens livres), enquanto Esparta era militarista e oligárquica. A cultura grega floresceu no período clássico (séculos V-IV a.C.) com filósofos como Sócrates, Platão e Aristóteles, dramaturgos como Sófocles e Eurípides, e historiadores como Heródoto e Tucídides. As Guerras Médicas contra os persas e a Guerra do Peloponeso entre gregos marcaram o período."
+        },
+        {
+          "titulo": "Roma: Da República ao Império",
+          "conteudo": "Roma evoluiu de uma monarquia (753-509 a.C.) para uma república (509-27 a.C.) e depois para um império (27 a.C.-476 d.C.). A República romana tinha instituições como o Senado, os cônsules e as assembleias, além de uma sociedade dividida entre patrícios e plebeus. As conquistas militares expandiram o território, mas geraram crises sociais (reforma dos Gracos) e guerras civis. O Império, iniciado com Augusto, trouxe a Pax Romana, período de relativa paz e prosperidade. O direito romano, a engenharia (aquedutos, estradas) e o latim são legados fundamentais. A crise do século III, invasões bárbaras e a divisão do império levaram à queda de Roma Ocidental em 476 d.C."
+        }
+      ],
+      "exemplos": [
+        "O Código de Hamurábi como precursor dos sistemas jurídicos modernos",
+        "A democracia ateniense como modelo (e suas limitações) para democracias contemporâneas",
+        "O direito romano como base do direito civil brasileiro"
+      ],
+      "dicas": [
+        "O ENEM valoriza conexões entre antiguidade e atualidade",
+        "Questões frequentes sobre democracia grega e seus limites",
+        "Compare diferentes formas de organização política das civilizações"
+      ],
+      "questoes": [
+        {
+          "id": "q81-1",
+          "enunciado": "O Código de Hamurábi, elaborado na Babilônia por volta de 1750 a.C., é considerado um marco na história do direito. Uma de suas características mais conhecidas é o princípio da Lei de Talião ('olho por olho, dente por dente'). No entanto, uma análise mais detalhada revela que:",
+          "alternativas": {
+            "A": "As penas eram aplicadas igualmente a todos os membros da sociedade, independentemente de sua posição social",
+            "B": "O código estabelecia punições diferenciadas conforme a classe social do agressor e da vítima",
+            "C": "A escravidão era proibida e todos eram considerados cidadãos livres perante a lei",
+            "D": "As mulheres tinham os mesmos direitos que os homens em questões de herança e propriedade",
+            "E": "O código tratava exclusivamente de questões criminais, ignorando aspectos comerciais e familiares"
+          },
+          "correta": "B",
+          "explicacao": "O Código de Hamurábi, apesar de estabelecer a Lei de Talião, aplicava punições diferenciadas conforme a classe social. A mesma ofensa recebia penas distintas dependendo se era cometida por ou contra um homem livre (awilum), um homem comum (mushkenum) ou um escravo (wardum). Isso reflete a sociedade hierarquizada da Babilônia.",
+          "dificuldade": "medio",
+          "tags": ["mesopotâmia", "direito", "hamurábi"]
+        },
+        {
+          "id": "q81-2",
+          "enunciado": "A democracia ateniense do século V a.C. é frequentemente citada como berço da democracia ocidental. No entanto, ela apresentava características que a diferenciavam significativamente das democracias contemporâneas. Entre essas características, destaca-se:",
+          "alternativas": {
+            "A": "A participação política universal de todos os habitantes da cidade",
+            "B": "A eleição de representantes para tomar decisões em nome dos cidadãos",
+            "C": "A exclusão de mulheres, escravos e estrangeiros da cidadania política",
+            "D": "A divisão de poderes entre Executivo, Legislativo e Judiciário",
+            "E": "A garantia constitucional de direitos individuais inalienáveis"
+          },
+          "correta": "C",
+          "explicacao": "A democracia ateniense era direta, mas extremamente restritiva. Apenas homens adultos, filhos de pai e mãe atenienses, eram considerados cidadãos com direito a voto. Mulheres, escravos (que podiam chegar a 1/3 da população) e metecos (estrangeiros residentes) eram excluídos da participação política, o que limitava os 'cidadãos' a cerca de 10-15% da população.",
+          "dificuldade": "facil",
+          "tags": ["grécia", "democracia", "atenas"]
+        },
+        {
+          "id": "q81-3",
+          "enunciado": "Durante a República Romana, as tensões entre patrícios e plebeus geraram conflitos que resultaram em conquistas políticas para a plebe. Uma dessas conquistas foi:",
+          "alternativas": {
+            "A": "A abolição completa da escravidão no território romano",
+            "B": "A criação do cargo de tribuno da plebe, com poder de veto",
+            "C": "A distribuição igualitária de terras entre todos os romanos",
+            "D": "A extinção do Senado e sua substituição por assembleias populares",
+            "E": "A proibição de guerras de conquista pelo exército romano"
+          },
+          "correta": "B",
+          "explicacao": "O tribunato da plebe foi criado em 494 a.C. após a primeira secessão da plebe. Os tribunos eram considerados invioláveis e tinham o poder de veto (intercessio) sobre decisões dos magistrados que prejudicassem a plebe. Outras conquistas incluíram a Lei das XII Tábuas, a permissão de casamentos mistos (Lei Canuleia) e o acesso a magistraturas.",
+          "dificuldade": "medio",
+          "tags": ["roma", "república", "conflitos sociais"]
+        },
+        {
+          "id": "q81-4",
+          "enunciado": "A construção das pirâmides do Egito Antigo revela aspectos importantes sobre aquela civilização. A análise histórica e arqueológica dessas construções permite afirmar que:",
+          "alternativas": {
+            "A": "Foram construídas exclusivamente por escravos hebreus, conforme relatos bíblicos",
+            "B": "Demonstram o domínio de conhecimentos matemáticos e técnicas de engenharia avançadas",
+            "C": "Tinham função exclusivamente religiosa, sem qualquer relação com o poder político",
+            "D": "Foram construídas rapidamente, em poucos meses, com tecnologia alienígena",
+            "E": "Serviam como residências para os faraós durante seu reinado"
+          },
+          "correta": "B",
+          "explicacao": "As pirâmides demonstram o avançado conhecimento egípcio em matemática (geometria, cálculos de volume), astronomia (alinhamento com estrelas) e engenharia (transporte e elevação de blocos). Evidências arqueológicas mostram que foram construídas principalmente por trabalhadores egípcios (não escravos hebreus), organizados em equipes, muitos durante o período de cheia do Nilo, quando não podiam trabalhar na agricultura.",
+          "dificuldade": "facil",
+          "tags": ["egito", "pirâmides", "engenharia"]
+        },
+        {
+          "id": "q81-5",
+          "enunciado": "A Pax Romana (27 a.C. - 180 d.C.) foi um período de relativa paz e estabilidade no Império Romano. Entre as características desse período, podemos destacar:",
+          "alternativas": {
+            "A": "A ausência total de guerras ou conflitos militares nas fronteiras do império",
+            "B": "A expansão do comércio, a urbanização e a difusão da cultura greco-romana",
+            "C": "A descentralização política e o fortalecimento das províncias autônomas",
+            "D": "A perseguição sistemática aos cristãos como política oficial do Estado",
+            "E": "A substituição do latim pelo grego como língua oficial do império"
+          },
+          "correta": "B",
+          "explicacao": "A Pax Romana caracterizou-se pela expansão comercial através das rotas terrestres e marítimas, pelo crescimento das cidades com infraestrutura (aquedutos, termas, anfiteatros), e pela difusão da cultura greco-romana (processo de romanização). Houve conflitos nas fronteiras e algumas perseguições aos cristãos, mas não eram sistemáticas até o século III. O período trouxe prosperidade econômica e integração cultural ao império.",
+          "dificuldade": "medio",
+          "tags": ["roma", "império", "pax romana"]
+        }
+      ]
+    },
+    {
+      "id": "m82",
+      "titulo": "Idade Média: Feudalismo e Igreja",
+      "resumo": "A organização social, econômica e política da Europa medieval",
+      "topicos": [
+        {
+          "titulo": "Formação do Feudalismo",
+          "conteudo": "O feudalismo surgiu da fusão de elementos romanos (colonato, vilas) e germânicos (comitatus, beneficium) após a queda de Roma. A descentralização política, as invasões (vikings, sarracenos, magiares) e a ruralização da economia criaram um sistema baseado em relações de vassalagem e servidão. O feudo era a unidade básica: terra concedida pelo senhor ao vassalo em troca de fidelidade e serviços militares. A economia era agrária e autossuficiente, com técnicas como a rotação trienal, o arado pesado e o moinho. Os servos, presos à terra, trabalhavam nas glebas senhoriais e pagavam tributos (corveia, talha, banalidades)."
+        },
+        {
+          "titulo": "A Igreja Medieval",
+          "conteudo": "A Igreja Católica era a instituição mais poderosa da Idade Média. O Papa exercia autoridade sobre reis e imperadores (teocracia), e a Igreja detinha cerca de 1/3 das terras europeias. O clero dividia-se em secular (bispos, padres) e regular (monges, freiras). Os mosteiros eram centros de preservação cultural, cópia de manuscritos e educação. A Igreja controlava a vida das pessoas do nascimento (batismo) à morte (extrema-unção), determinava o calendário, combatia heresias (Inquisição) e organizava as Cruzadas. O Tribunal do Santo Ofício e a Querela das Investiduras demonstram seu poder temporal."
+        },
+        {
+          "titulo": "Cultura e Sociedade Medieval",
+          "conteudo": "A sociedade medieval era estamental: clero (oratores), nobreza (bellatores) e servos (laboratores) - aqueles que rezam, que lutam e que trabalham. A mobilidade social era praticamente inexistente. A cultura era predominantemente religiosa: a arte românica e gótica expressavam a fé através de catedrais, iluminuras e vitrais. As universidades surgiram no século XII (Bologna, Paris, Oxford), inicialmente sob controle eclesiástico. A filosofia escolástica, com Tomás de Aquino, buscava conciliar fé e razão. A cavalaria desenvolveu códigos de honra e ideais corteses, expressos na literatura trovadoresca."
+        }
+      ],
+      "exemplos": [
+        "Comparação entre servidão medieval e outras formas de trabalho compulsório",
+        "O poder da Igreja medieval vs. laicidade do Estado moderno",
+        "Influência da arquitetura gótica nas construções religiosas brasileiras"
+      ],
+      "dicas": [
+        "ENEM cobra características do feudalismo e papel da Igreja",
+        "Entenda as relações de vassalagem e servidão",
+        "Compare a sociedade medieval com outras formas de organização social"
+      ],
+      "questoes": [
+        {
+          "id": "q82-1",
+          "enunciado": "O sistema feudal europeu caracterizou-se por relações sociais específicas que organizavam a produção e a distribuição de poder. A respeito das relações de vassalagem no feudalismo, é correto afirmar que:",
+          "alternativas": {
+            "A": "Estabeleciam-se entre senhores e servos, envolvendo trabalho forçado nas terras senhoriais",
+            "B": "Eram relações entre nobres, envolvendo concessão de terras em troca de fidelidade e serviços militares",
+            "C": "Baseavam-se em contratos escritos e formais, com cláusulas detalhadas de direitos e deveres",
+            "D": "Permitiam ampla mobilidade social, possibilitando que servos se tornassem senhores",
+            "E": "Eram reguladas pelo poder central do rei, que determinava todas as obrigações feudais"
+          },
+          "correta": "B",
+          "explicacao": "A vassalagem era uma relação entre nobres: o suserano concedia um feudo (terra) ao vassalo, que em troca jurava fidelidade e prestava serviços, principalmente militares (auxilium) e conselho (consilium). Era diferente da servidão, que vinculava camponeses à terra. A cerimônia de homenagem e investidura selava o pacto, que era verbal e baseado na honra.",
+          "dificuldade": "medio",
+          "tags": ["feudalismo", "vassalagem", "idade média"]
+        },
+        {
+          "id": "q82-2",
+          "enunciado": "A Igreja Católica exerceu papel central na Europa Medieval, influenciando diversos aspectos da vida social. O poder da Igreja nesse período manifestava-se através:",
+          "alternativas": {
+            "A": "Da defesa da separação entre Estado e religião, garantindo liberdade de culto",
+            "B": "Do controle sobre a educação, a produção cultural e a legitimação do poder político",
+            "C": "Da promoção do livre pensamento e do questionamento das tradições",
+            "D": "Da oposição sistemática aos reis e imperadores em todas as questões",
+            "E": "Da democratização do acesso aos textos sagrados para toda a população"
+          },
+          "correta": "B",
+          "explicacao": "A Igreja Medieval controlava as universidades e escolas (educação), os mosteiros preservavam e produziam cultura, e os reis dependiam da coroação papal para legitimar seu poder. A Igreja determinava o calendário, influenciava a legislação e detinha enorme poder econômico através de suas terras e do dízimo. Era a instituição unificadora da Europa fragmentada politicamente.",
+          "dificuldade": "facil",
+          "tags": ["igreja medieval", "poder", "idade média"]
+        },
+        {
+          "id": "q82-3",
+          "enunciado": "A sociedade medieval era frequentemente descrita como dividida em três ordens: os que rezam (oratores), os que lutam (bellatores) e os que trabalham (laboratores). Essa divisão tripartite:",
+          "alternativas": {
+            "A": "Garantia direitos iguais a todos os membros da sociedade",
+            "B": "Permitia mobilidade social através do mérito individual",
+            "C": "Era uma ideologia que justificava a hierarquia e a desigualdade social",
+            "D": "Foi criada pelos servos para reivindicar melhores condições de vida",
+            "E": "Representava fielmente a complexidade das relações sociais medievais"
+          },
+          "correta": "C",
+          "explicacao": "A teoria das três ordens era uma construção ideológica, elaborada principalmente pelo clero, que naturalizava e justificava a hierarquia social. Cada ordem teria uma função designada por Deus, e questionar essa ordem seria questionar a vontade divina. Na prática, a sociedade era mais complexa (havia mercadores, artesãos, etc.), mas a teoria legitimava o poder do clero e da nobreza sobre os trabalhadores.",
+          "dificuldade": "medio",
+          "tags": ["sociedade medieval", "estamentos", "ideologia"]
+        },
+        {
+          "id": "q82-4",
+          "enunciado": "Os servos medievais diferenciavam-se dos escravos da Antiguidade em vários aspectos. Uma característica específica da servidão medieval era:",
+          "alternativas": {
+            "A": "A possibilidade de ser vendido separadamente da terra",
+            "B": "A vinculação à terra, não podendo ser vendido sem ela",
+            "C": "A ausência de qualquer obrigação para com o senhor feudal",
+            "D": "A liberdade completa de movimento e escolha de trabalho",
+            "E": "A condição temporária, com prazo determinado de servidão"
+          },
+          "correta": "B",
+          "explicacao": "O servo estava preso à gleba (terra), mas não era propriedade pessoal do senhor como o escravo. Se a terra fosse vendida ou transferida, o servo ia junto. Ele tinha algumas proteções (não podia ser morto arbitrariamente, tinha direito a parte da produção) e obrigações específicas (corveia, talha, banalidades). A condição de servo era hereditária, passando de pais para filhos.",
+          "dificuldade": "facil",
+          "tags": ["servidão", "feudalismo", "trabalho"]
+        },
+        {
+          "id": "q82-5",
+          "enunciado": "As Cruzadas (séculos XI-XIII) foram expedições militares organizadas pela Igreja com o objetivo declarado de reconquistar a Terra Santa. Entre suas consequências, podemos destacar:",
+          "alternativas": {
+            "A": "O isolamento da Europa e a interrupção do comércio mediterrâneo",
+            "B": "O fortalecimento do feudalismo e a estagnação da economia monetária",
+            "C": "A intensificação do comércio entre Europa e Oriente e o fortalecimento das cidades",
+            "D": "A conversão em massa dos muçulmanos ao cristianismo",
+            "E": "O fim definitivo dos conflitos entre cristãos e muçulmanos"
+          },
+          "correta": "C",
+          "explicacao": "Embora tenham fracassado militarmente em manter o controle da Terra Santa, as Cruzadas intensificaram o contato comercial e cultural com o Oriente. O comércio de especiarias, tecidos e outros produtos enriqueceu cidades italianas como Veneza e Gênova. O renascimento comercial e urbano que se seguiu contribuiu para a crise do feudalismo. Houve também transferência de conhecimentos (matemática, medicina, filosofia árabe).",
+          "dificuldade": "medio",
+          "tags": ["cruzadas", "comércio", "idade média"]
+        }
+      ]
+    },
+    {
+      "id": "m83",
+      "titulo": "Renascimento e Reformas Religiosas",
+      "resumo": "A transição para a modernidade: humanismo, arte renascentista e rupturas na cristandade",
+      "topicos": [
+        {
+          "titulo": "O Renascimento Cultural",
+          "conteudo": "O Renascimento (séculos XIV-XVI) foi um movimento cultural que surgiu nas cidades italianas (Florença, Veneza, Roma) e se espalhou pela Europa. Caracterizou-se pelo humanismo (valorização do ser humano como centro), pelo resgate da cultura greco-romana, pelo racionalismo e pelo individualismo. Nas artes, destacaram-se Leonardo da Vinci (Mona Lisa, Última Ceia), Michelangelo (Davi, Capela Sistina), Rafael (Escola de Atenas) e Botticelli. A perspectiva, o realismo anatômico e a técnica do sfumato revolucionaram a pintura. Na literatura, Dante, Petrarca e Boccaccio inauguraram o uso das línguas vernáculas. Maquiavel, com 'O Príncipe', fundou a ciência política moderna."
+        },
+        {
+          "titulo": "A Reforma Protestante",
+          "conteudo": "A Reforma Protestante iniciou-se em 1517 quando Martinho Lutero afixou suas 95 teses contra a venda de indulgências em Wittenberg. Lutero defendia a salvação pela fé (sola fide), a autoridade única da Bíblia (sola scriptura) e o sacerdócio universal. João Calvino, em Genebra, desenvolveu a doutrina da predestinação e uma ética do trabalho que Max Weber associou ao 'espírito do capitalismo'. Henrique VIII criou a Igreja Anglicana por motivos políticos (anulação do casamento). A Reforma fragmentou a cristandade ocidental e teve consequências políticas (guerras religiosas), sociais (educação popular para leitura da Bíblia) e econômicas (legitimação do lucro)."
+        },
+        {
+          "titulo": "A Contrarreforma e o Concílio de Trento",
+          "conteudo": "A Igreja Católica respondeu à Reforma com a Contrarreforma (ou Reforma Católica). O Concílio de Trento (1545-1563) reafirmou dogmas católicos (transubstanciação, celibato clerical, culto aos santos), criou seminários para melhor formação do clero e estabeleceu o Index de livros proibidos. A Companhia de Jesus (jesuítas), fundada por Inácio de Loyola em 1540, foi fundamental na educação e na expansão missionária (Brasil, Ásia). A Inquisição foi fortalecida para combater heresias. A arte barroca, com sua dramaticidade e apelo emocional, tornou-se instrumento de propaganda da fé católica."
+        }
+      ],
+      "exemplos": [
+        "A perspectiva na pintura renascentista como expressão do racionalismo",
+        "A ética protestante e sua influência no desenvolvimento capitalista",
+        "A atuação dos jesuítas na colonização do Brasil"
+      ],
+      "dicas": [
+        "ENEM relaciona Renascimento a mudanças de mentalidade",
+        "Entenda as diferenças entre luteranismo, calvinismo e anglicanismo",
+        "A Contrarreforma teve impacto direto na colonização brasileira"
+      ],
+      "questoes": [
+        {
+          "id": "q83-1",
+          "enunciado": "O Renascimento cultural representou uma transformação significativa na visão de mundo europeia. Uma característica fundamental do pensamento renascentista foi:",
+          "alternativas": {
+            "A": "A rejeição completa da religião e a adoção do ateísmo",
+            "B": "O teocentrismo e a subordinação da razão à fé religiosa",
+            "C": "O antropocentrismo e a valorização das capacidades humanas",
+            "D": "O coletivismo e a negação do individualismo",
+            "E": "A recusa do conhecimento da Antiguidade Clássica"
+          },
+          "correta": "C",
+          "explicacao": "O Renascimento caracterizou-se pelo antropocentrismo, que colocava o ser humano no centro das preocupações filosóficas e artísticas (em contraste com o teocentrismo medieval). Os humanistas valorizavam a razão, a capacidade criativa e a dignidade humana. Isso não significava rejeição da religião, mas uma nova forma de conceber a relação entre o humano e o divino, valorizando as realizações terrenas.",
+          "dificuldade": "facil",
+          "tags": ["renascimento", "humanismo", "antropocentrismo"]
+        },
+        {
+          "id": "q83-2",
+          "enunciado": "Martinho Lutero, ao publicar suas 95 teses em 1517, criticava práticas da Igreja Católica e propunha reformas doutrinárias. Entre os princípios fundamentais do luteranismo, destaca-se:",
+          "alternativas": {
+            "A": "A salvação pelas obras e pela obediência à hierarquia eclesiástica",
+            "B": "A manutenção do celibato clerical e do culto aos santos",
+            "C": "A justificação pela fé e a autoridade suprema das Escrituras",
+            "D": "A doutrina da predestinação absoluta como Calvino defenderia",
+            "E": "A subordinação da Igreja ao Estado como na Igreja Anglicana"
+          },
+          "correta": "C",
+          "explicacao": "Lutero defendia a 'sola fide' (somente a fé) - a salvação vem pela fé em Cristo, não pelas obras ou indulgências - e a 'sola scriptura' (somente a Escritura) - a Bíblia é a única autoridade em questões de fé, não a tradição ou o Papa. Ele também defendeu o sacerdócio universal (todos os fiéis podem interpretar a Bíblia) e traduziu a Bíblia para o alemão.",
+          "dificuldade": "medio",
+          "tags": ["reforma", "lutero", "protestantismo"]
+        },
+        {
+          "id": "q83-3",
+          "enunciado": "O sociólogo Max Weber, em 'A Ética Protestante e o Espírito do Capitalismo', estabeleceu uma relação entre a doutrina calvinista e o desenvolvimento do capitalismo moderno. Segundo essa análise:",
+          "alternativas": {
+            "A": "O calvinismo condenava o lucro e o enriquecimento como pecado",
+            "B": "A predestinação gerava passividade e desinteresse pelo trabalho",
+            "C": "O sucesso econômico era visto como sinal de eleição divina, estimulando o trabalho",
+            "D": "O capitalismo surgiu apesar da ética protestante, que lhe era contrária",
+            "E": "Católicos e protestantes tinham a mesma visão sobre riqueza e trabalho"
+          },
+          "correta": "C",
+          "explicacao": "Weber argumentou que a doutrina calvinista da predestinação (Deus já determinou quem será salvo) gerava angústia nos fiéis, que buscavam sinais de sua eleição. O sucesso nos negócios passou a ser interpretado como evidência de estar entre os eleitos. Além disso, o calvinismo valorizava o trabalho como vocação divina e condenava o ócio e o consumo ostentatório, estimulando a acumulação de capital.",
+          "dificuldade": "dificil",
+          "tags": ["calvinismo", "capitalismo", "weber"]
+        },
+        {
+          "id": "q83-4",
+          "enunciado": "O Concílio de Trento (1545-1563) foi a principal resposta institucional da Igreja Católica à Reforma Protestante. Entre suas determinações, encontra-se:",
+          "alternativas": {
+            "A": "A aceitação da doutrina da justificação pela fé, aproximando-se do luteranismo",
+            "B": "A permissão para tradução da Bíblia em línguas vernáculas sem controle",
+            "C": "A abolição do celibato clerical para aumentar o número de padres",
+            "D": "A reafirmação de dogmas católicos e a criação de seminários para formação do clero",
+            "E": "A extinção da Inquisição e a defesa da liberdade religiosa"
+          },
+          "correta": "D",
+          "explicacao": "O Concílio de Trento reafirmou dogmas contestados pelos protestantes (transubstanciação, valor das obras para salvação, culto aos santos, autoridade da tradição junto com a Bíblia). Também reformou aspectos disciplinares: criou seminários para formar melhor o clero, proibiu acumulação de benefícios eclesiásticos e estabeleceu o catecismo romano. O Index de livros proibidos foi ampliado.",
+          "dificuldade": "medio",
+          "tags": ["contrarreforma", "trento", "igreja católica"]
+        },
+        {
+          "id": "q83-5",
+          "enunciado": "A arte renascentista desenvolveu técnicas e concepções estéticas que a diferenciavam da arte medieval. Uma inovação técnica característica da pintura renascentista foi:",
+          "alternativas": {
+            "A": "O uso exclusivo de temas religiosos e a ausência de figuras humanas",
+            "B": "A bidimensionalidade e o fundo dourado típico dos ícones",
+            "C": "A perspectiva linear, criando ilusão de profundidade e tridimensionalidade",
+            "D": "A abstração e o abandono da representação figurativa",
+            "E": "A ausência de proporção e o alongamento das figuras"
+          },
+          "correta": "C",
+          "explicacao": "A perspectiva linear (ou científica), desenvolvida por Brunelleschi e teorizada por Alberti, foi uma das maiores inovações do Renascimento. Usando um ponto de fuga, os artistas criavam ilusão de profundidade em superfícies planas. Isso expressava o racionalismo renascentista - a arte baseada em cálculos matemáticos e observação científica. O realismo anatômico (estudos de Leonardo) e o sfumato também foram inovações importantes.",
+          "dificuldade": "facil",
+          "tags": ["renascimento", "arte", "perspectiva"]
+        }
+      ]
+    },
+    {
+      "id": "m84",
+      "titulo": "Expansão Marítima e Colonização",
+      "resumo": "As grandes navegações e seus impactos na Europa, América, África e Ásia",
+      "topicos": [
+        {
+          "titulo": "As Grandes Navegações",
+          "conteudo": "A expansão marítima europeia (séculos XV-XVI) foi impulsionada por fatores econômicos (busca de especiarias e metais preciosos), políticos (fortalecimento das monarquias nacionais), religiosos (expansão do cristianismo) e tecnológicos (caravela, bússola, astrolábio). Portugal, com posição geográfica favorável e precoce centralização política, liderou o processo. A Escola de Sagres sistematizou conhecimentos náuticos. Os portugueses exploraram a costa africana, dobraram o Cabo da Boa Esperança (1488) e chegaram à Índia (1498) e ao Brasil (1500). A Espanha financiou Colombo, que chegou à América em 1492. O Tratado de Tordesilhas (1494) dividiu o mundo entre as duas potências."
+        },
+        {
+          "titulo": "Colonização da América Espanhola",
+          "conteudo": "A Espanha conquistou impérios americanos: os astecas no México (Cortés, 1519-1521) e os incas no Peru (Pizarro, 1532-1533). A colonização espanhola caracterizou-se pela encomienda (trabalho indígena compulsório), pela mineração de prata (Potosí) e ouro, e pela evangelização. A mita era o sistema de trabalho rotativo nas minas. A sociedade colonial era estratificada: chapetones (nascidos na Espanha), criollos (descendentes na América), mestiços, índios e negros. O vice-reinado era a unidade administrativa. A Igreja teve papel importante na catequese e na defesa dos índios (Bartolomeu de las Casas)."
+        },
+        {
+          "titulo": "Impactos Globais da Expansão",
+          "conteudo": "A expansão marítima inaugurou a globalização: o comércio triangular (Europa-África-América) movimentou produtos e escravizados; o intercâmbio colombiano transferiu plantas, animais e doenças entre continentes. A prata americana gerou inflação na Europa e financiou o comércio asiático. Para os povos americanos, a conquista significou catástrofe demográfica (doenças, guerra, trabalho forçado), desestruturação cultural e exploração. A África sofreu com o tráfico de escravizados, que despovoou regiões e gerou conflitos. Para a Ásia, o impacto inicial foi mais comercial, com estabelecimento de feitorias."
+        }
+      ],
+      "exemplos": [
+        "A diferença entre colonização de exploração e de povoamento",
+        "O impacto das doenças europeias nas populações americanas",
+        "A origem da globalização nas grandes navegações"
+      ],
+      "dicas": [
+        "ENEM frequentemente aborda a perspectiva dos colonizados",
+        "Entenda as diferenças entre colonização portuguesa e espanhola",
+        "O comércio triangular é tema recorrente"
+      ],
+      "questoes": [
+        {
+          "id": "q84-1",
+          "enunciado": "A expansão marítima portuguesa foi pioneira entre os países europeus. Entre os fatores que explicam essa primazia portuguesa, destaca-se:",
+          "alternativas": {
+            "A": "A posição geográfica desfavorável de Portugal para navegações atlânticas",
+            "B": "A fragmentação política e os conflitos internos que impulsionaram a busca de riquezas",
+            "C": "A centralização política precoce e a posição estratégica na costa atlântica",
+            "D": "A abundância de terras férteis que dispensava a busca de novos territórios",
+            "E": "A forte oposição da Igreja Católica aos empreendimentos marítimos"
+          },
+          "correta": "C",
+          "explicacao": "Portugal foi o primeiro Estado nacional europeu, com centralização concluída após a Revolução de Avis (1383-1385). Isso permitiu organizar recursos para a expansão. A posição geográfica, voltada para o Atlântico e próxima à África, era estratégica. A burguesia mercantil apoiou a dinastia de Avis, e a Igreja legitimou a expansão como cruzada contra os mouros. A Escola de Sagres sistematizou conhecimentos náuticos.",
+          "dificuldade": "facil",
+          "tags": ["expansão marítima", "portugal", "navegações"]
+        },
+        {
+          "id": "q84-2",
+          "enunciado": "O Tratado de Tordesilhas (1494) foi um acordo entre Portugal e Espanha que dividiu as terras a serem descobertas. Sobre esse tratado, é correto afirmar que:",
+          "alternativas": {
+            "A": "Foi estabelecido após a descoberta do Brasil por Cabral em 1500",
+            "B": "Respeitou os direitos dos povos indígenas sobre seus territórios",
+            "C": "Definiu uma linha imaginária que garantiu a Portugal terras na América",
+            "D": "Foi reconhecido por todas as potências europeias sem contestação",
+            "E": "Dividiu apenas as terras já conhecidas, não se aplicando a novas descobertas"
+          },
+          "correta": "C",
+          "explicacao": "O Tratado de Tordesilhas (1494) estabeleceu uma linha imaginária a 370 léguas a oeste de Cabo Verde. As terras a leste pertenceriam a Portugal, a oeste à Espanha. Foi firmado antes do descobrimento oficial do Brasil (1500), mas Portugal pode ter conhecimento de terras a oeste. Outras potências (França, Inglaterra, Holanda) não reconheceram o tratado. Os povos indígenas não foram consultados - a divisão ignorava completamente sua existência.",
+          "dificuldade": "medio",
+          "tags": ["tordesilhas", "expansão marítima", "colonização"]
+        },
+        {
+          "id": "q84-3",
+          "enunciado": "A colonização espanhola na América utilizou sistemas de trabalho compulsório para explorar a mão de obra indígena. O sistema de encomienda caracterizava-se por:",
+          "alternativas": {
+            "A": "Conceder terras e índios a colonos que deveriam catequizá-los em troca de trabalho",
+            "B": "Garantir aos indígenas salários justos e condições dignas de trabalho",
+            "C": "Proibir qualquer forma de trabalho indígena nas atividades coloniais",
+            "D": "Estabelecer a escravidão formal e permanente dos povos nativos",
+            "E": "Permitir que os indígenas escolhessem livremente seus empregadores"
+          },
+          "correta": "A",
+          "explicacao": "A encomienda era um sistema em que a Coroa espanhola concedia (encomendava) grupos de índios a colonos (encomenderos), que tinham o dever de protegê-los e catequizá-los em troca do direito de explorar seu trabalho. Na prática, transformou-se em brutal exploração, sendo criticado por religiosos como Bartolomeu de Las Casas. Diferenciava-se da escravidão formalmente, mas na prática era trabalho forçado.",
+          "dificuldade": "medio",
+          "tags": ["encomienda", "colonização espanhola", "trabalho indígena"]
+        },
+        {
+          "id": "q84-4",
+          "enunciado": "O chamado 'intercâmbio colombiano' refere-se às trocas biológicas e culturais entre o Velho e o Novo Mundo após 1492. Uma consequência desse intercâmbio foi:",
+          "alternativas": {
+            "A": "A imunidade dos povos americanos às doenças europeias",
+            "B": "A introdução de cultivos americanos (batata, milho) na Europa e África",
+            "C": "O isolamento total entre os continentes após os primeiros contatos",
+            "D": "A melhoria das condições de saúde das populações indígenas",
+            "E": "A extinção das espécies europeias ao contato com o ambiente americano"
+          },
+          "correta": "B",
+          "explicacao": "O intercâmbio colombiano transferiu plantas, animais e doenças entre continentes. Da América foram para Europa e África: milho, batata, tomate, cacau, tabaco - cultivos que transformaram a alimentação mundial. Para a América vieram: trigo, café, cana-de-açúcar, cavalos, bovinos. Doenças europeias (varíola, sarampo, gripe) dizimaram populações indígenas, que não tinham imunidade - estima-se mortalidade de 50-90% em algumas regiões.",
+          "dificuldade": "medio",
+          "tags": ["intercâmbio colombiano", "colonização", "globalização"]
+        },
+        {
+          "id": "q84-5",
+          "enunciado": "O comércio triangular atlântico, estabelecido entre os séculos XVI e XIX, conectava Europa, África e América. Esse sistema comercial caracterizava-se por:",
+          "alternativas": {
+            "A": "Trocas igualitárias que beneficiavam igualmente os três continentes",
+            "B": "Exportação de africanos escravizados para a América e de produtos coloniais para a Europa",
+            "C": "Exportação de manufaturados da América para a Europa e África",
+            "D": "Fluxo de metais preciosos da Europa para financiar a economia americana",
+            "E": "Proibição do comércio de escravizados e priorização do trabalho assalariado"
+          },
+          "correta": "B",
+          "explicacao": "O comércio triangular funcionava assim: da Europa partiam manufaturados (tecidos, armas, aguardente) para a África; da África, africanos escravizados eram transportados para a América (tráfico negreiro); da América, produtos coloniais (açúcar, algodão, tabaco, metais) iam para a Europa. Este sistema sustentou a economia atlântica por séculos e foi fundamental para a acumulação de capital na Europa.",
+          "dificuldade": "facil",
+          "tags": ["comércio triangular", "tráfico", "economia colonial"]
+        }
+      ]
+    },
+    {
+      "id": "m85",
+      "titulo": "Iluminismo e Revoluções Burguesas",
+      "resumo": "As ideias que transformaram o mundo: razão, liberdade e direitos",
+      "topicos": [
+        {
+          "titulo": "O Iluminismo",
+          "conteudo": "O Iluminismo (Século das Luzes, XVIII) foi um movimento intelectual que defendia a razão como guia para compreender e transformar o mundo. Criticava o Antigo Regime (absolutismo, privilégios, obscurantismo religioso). Principais pensadores: Voltaire (liberdade de expressão, crítica à Igreja), Montesquieu (separação dos poderes em Executivo, Legislativo e Judiciário), Rousseau (contrato social, soberania popular, desigualdade), Locke (direitos naturais: vida, liberdade, propriedade), e os economistas fisiocratas e Adam Smith (liberalismo econômico). A Enciclopédia de Diderot e D'Alembert sintetizou o conhecimento da época. O Iluminismo influenciou o despotismo esclarecido e as revoluções liberais."
+        },
+        {
+          "titulo": "A Revolução Americana (1776)",
+          "conteudo": "A Revolução Americana foi a primeira aplicação prática das ideias iluministas. As Treze Colônias britânicas na América do Norte revoltaram-se contra impostos sem representação (Stamp Act, Tea Act). A Declaração de Independência (1776), redigida por Thomas Jefferson, proclamava direitos inalienáveis (vida, liberdade, busca da felicidade) e o direito de revolução contra a tirania. A guerra (1775-1783) contou com apoio francês. A Constituição de 1787 estabeleceu república federativa com separação de poderes. A Bill of Rights (1791) garantiu direitos individuais. Limitações: manutenção da escravidão e exclusão de mulheres e indígenas."
+        },
+        {
+          "titulo": "A Revolução Francesa (1789-1799)",
+          "conteudo": "A Revolução Francesa foi o evento mais transformador da modernidade. Causas: crise financeira da monarquia, insatisfação do Terceiro Estado (burguesia, camponeses, trabalhadores), influência iluminista. Fases: Assembleia Nacional (1789-1792) - queda da Bastilha, Declaração dos Direitos do Homem e do Cidadão, Constituição de 1791; Convenção (1792-1795) - República, execução de Luís XVI, Terror jacobino (Robespierre); Diretório (1795-1799) - moderação e instabilidade. A Declaração de 1789 proclamou liberdade, igualdade perante a lei, propriedade e resistência à opressão. A Revolução aboliu privilégios feudais e o absolutismo, mas excluiu mulheres e escravos da cidadania plena."
+        }
+      ],
+      "exemplos": [
+        "A influência de Montesquieu na Constituição brasileira",
+        "Comparação entre as Declarações de Direitos de 1776, 1789 e 1948",
+        "O lema 'Liberdade, Igualdade, Fraternidade' e seus limites históricos"
+      ],
+      "dicas": [
+        "ENEM relaciona Iluminismo a direitos humanos contemporâneos",
+        "Conheça as ideias de cada pensador iluminista",
+        "Entenda as fases da Revolução Francesa e suas diferenças"
+      ],
+      "questoes": [
+        {
+          "id": "q85-1",
+          "enunciado": "O Iluminismo foi um movimento intelectual que influenciou profundamente o pensamento político moderno. A teoria da separação dos poderes, fundamental nas democracias contemporâneas, foi desenvolvida por:",
+          "alternativas": {
+            "A": "Jean-Jacques Rousseau, em 'O Contrato Social'",
+            "B": "Montesquieu, em 'O Espírito das Leis'",
+            "C": "John Locke, em 'Segundo Tratado sobre o Governo'",
+            "D": "Voltaire, em 'Cartas Filosóficas'",
+            "E": "Adam Smith, em 'A Riqueza das Nações'"
+          },
+          "correta": "B",
+          "explicacao": "Montesquieu, em 'O Espírito das Leis' (1748), desenvolveu a teoria da separação dos poderes em Executivo, Legislativo e Judiciário, cada um limitando os outros para evitar a tirania. Locke influenciou a ideia de direitos naturais, Rousseau teorizou sobre soberania popular e contrato social, Voltaire defendeu liberdade de expressão, e Smith é pai da economia liberal.",
+          "dificuldade": "facil",
+          "tags": ["iluminismo", "montesquieu", "separação de poderes"]
+        },
+        {
+          "id": "q85-2",
+          "enunciado": "A Declaração de Independência dos Estados Unidos (1776) afirmava: 'Todos os homens são criados iguais, dotados pelo Criador de certos direitos inalienáveis, entre os quais a vida, a liberdade e a busca da felicidade.' Essa declaração:",
+          "alternativas": {
+            "A": "Foi plenamente aplicada a todos os habitantes das colônias, incluindo escravizados",
+            "B": "Expressava ideais iluministas, mas convivia com a escravidão e a exclusão",
+            "C": "Rejeitava a influência do pensamento de John Locke sobre direitos naturais",
+            "D": "Defendia a monarquia constitucional como forma ideal de governo",
+            "E": "Foi a primeira declaração de direitos da história humana"
+          },
+          "correta": "B",
+          "explicacao": "A Declaração de Independência expressava ideais iluministas de direitos naturais (influência de Locke), mas havia contradição entre o discurso universalista e a prática: a escravidão foi mantida até 1865, mulheres não tinham direitos políticos, povos indígenas eram excluídos. Thomas Jefferson, autor da Declaração, era escravista. A tensão entre ideais e realidade marcou a história americana.",
+          "dificuldade": "medio",
+          "tags": ["independência EUA", "direitos", "escravidão"]
+        },
+        {
+          "id": "q85-3",
+          "enunciado": "A Revolução Francesa (1789) passou por diferentes fases, cada uma com características específicas. O período do Terror (1793-1794) caracterizou-se por:",
+          "alternativas": {
+            "A": "Monarquia constitucional e manutenção dos privilégios da nobreza",
+            "B": "Governo moderado da burguesia e abertura econômica liberal",
+            "C": "Radicalização republicana, execuções em massa e medidas sociais jacobinas",
+            "D": "Restauração do Antigo Regime e retorno de Luís XVI ao poder",
+            "E": "Golpe de Napoleão Bonaparte e início do Consulado"
+          },
+          "correta": "C",
+          "explicacao": "O Terror (1793-1794) foi o período mais radical da Revolução, sob liderança de Robespierre e os jacobinos. Caracterizou-se pela execução de milhares de 'inimigos da revolução' na guilhotina (incluindo o rei, a rainha e depois os próprios líderes revolucionários), pelo Comitê de Salvação Pública, por medidas como o Maximum (controle de preços) e pela tentativa de descristianização. Terminou com a queda de Robespierre (Thermidor).",
+          "dificuldade": "medio",
+          "tags": ["revolução francesa", "terror", "jacobinos"]
+        },
+        {
+          "id": "q85-4",
+          "enunciado": "A Declaração dos Direitos do Homem e do Cidadão, aprovada pela Assembleia Nacional francesa em 1789, proclamava princípios que se tornaram referência para os direitos humanos modernos. Entre esses princípios, estava:",
+          "alternativas": {
+            "A": "A defesa dos privilégios estamentais e da desigualdade natural entre os homens",
+            "B": "A soberania divina dos reis e o direito hereditário ao trono",
+            "C": "A liberdade, a igualdade perante a lei e o direito de propriedade",
+            "D": "O sufrágio universal masculino e feminino para todos os cidadãos",
+            "E": "A abolição imediata da escravidão em todas as colônias francesas"
+          },
+          "correta": "C",
+          "explicacao": "A Declaração de 1789 proclamava: 'Os homens nascem e permanecem livres e iguais em direitos' (Art. 1). Garantia liberdade (de opinião, expressão, religião), igualdade perante a lei (fim dos privilégios), propriedade (direito 'inviolável e sagrado'), segurança e resistência à opressão. No entanto, o sufrágio era censitário (baseado em renda), mulheres eram excluídas, e a escravidão colonial só foi abolida em 1794 (e restabelecida por Napoleão).",
+          "dificuldade": "facil",
+          "tags": ["declaração direitos", "revolução francesa", "direitos humanos"]
+        },
+        {
+          "id": "q85-5",
+          "enunciado": "Jean-Jacques Rousseau, em 'O Contrato Social' (1762), desenvolveu conceitos que influenciaram o pensamento democrático moderno. A ideia central dessa obra é:",
+          "alternativas": {
+            "A": "A defesa do absolutismo monárquico como garantia da ordem social",
+            "B": "A legitimidade do poder derivada do consentimento coletivo e da vontade geral",
+            "C": "A propriedade privada como direito natural anterior à sociedade",
+            "D": "A separação entre Igreja e Estado como princípio fundamental",
+            "E": "O liberalismo econômico e a não intervenção do Estado na economia"
+          },
+          "correta": "B",
+          "explicacao": "Rousseau argumentava que o poder legítimo deriva de um pacto social: os indivíduos abrem mão de liberdades naturais em troca da liberdade civil garantida pela 'vontade geral' (bem comum). A soberania pertence ao povo, não ao governante. Diferentemente de Locke, Rousseau era crítico da propriedade privada ('O primeiro que cercou um terreno...') e valorizava a igualdade. Suas ideias influenciaram os jacobinos e o pensamento democrático radical.",
+          "dificuldade": "medio",
+          "tags": ["rousseau", "contrato social", "iluminismo"]
+        }
+      ]
+    },
+    {
+      "id": "m86",
+      "titulo": "Era Napoleônica e Restauração",
+      "resumo": "O Império de Napoleão, o Congresso de Viena e as reações conservadoras",
+      "topicos": [
+        {
+          "titulo": "Napoleão e o Império Francês",
+          "conteudo": "Napoleão Bonaparte ascendeu ao poder com o golpe do 18 Brumário (1799), tornando-se Cônsul e depois Imperador (1804). Suas reformas internas incluíram o Código Civil (1804), que consolidou conquistas burguesas (igualdade jurídica, propriedade, secularização), o Banco da França, o sistema métrico e a reorganização educacional. As guerras napoleônicas expandiram o império por quase toda a Europa continental. O Bloqueio Continental (1806) tentou asfixiar economicamente a Inglaterra. As derrotas na Rússia (1812) e em Waterloo (1815) encerraram o império. Napoleão difundiu ideais revolucionários, mas também restaurou a escravidão nas colônias e estabeleceu um governo autoritário."
+        },
+        {
+          "titulo": "O Congresso de Viena (1814-1815)",
+          "conteudo": "Após a derrota de Napoleão, as potências vencedoras (Áustria, Rússia, Prússia, Inglaterra) reuniram-se em Viena sob liderança de Metternich. Os princípios eram: legitimidade (restaurar monarquias destronadas), equilíbrio europeu (evitar hegemonia de uma potência) e compensações territoriais. A Santa Aliança (Rússia, Áustria, Prússia) comprometia-se a intervir contra movimentos liberais. O sistema de Viena tentou restaurar o Antigo Regime, mas não conseguiu eliminar as ideias liberais e nacionalistas. Restaurações monárquicas ocorreram na França (Bourbon), Espanha e outros países."
+        },
+        {
+          "titulo": "Revoluções Liberais e Nacionalistas (1820-1848)",
+          "conteudo": "O sistema de Viena enfrentou ondas revolucionárias. Em 1820: revoluções na Espanha, Portugal, Nápoles e independências na América Latina. Em 1830: revolução na França (Luís Felipe), independência da Bélgica e Grécia, revoltas na Polônia e Itália. Em 1848 (Primavera dos Povos): revoluções em quase toda Europa - França (Segunda República), Itália, Alemanha, Império Austríaco, Hungria. Os movimentos combinavam liberalismo político (constituições, parlamentos) e nacionalismo (unificação italiana e alemã, independência de povos sob impérios). A maioria foi reprimida, mas abalou definitivamente o Antigo Regime."
+        }
+      ],
+      "exemplos": [
+        "Influência do Código Napoleônico no direito brasileiro",
+        "O Congresso de Viena como tentativa de restauração conservadora",
+        "Paralelos entre 1848 e movimentos sociais contemporâneos"
+      ],
+      "dicas": [
+        "ENEM pode relacionar Era Napoleônica com independências latino-americanas",
+        "Entenda a tensão entre liberalismo, nacionalismo e conservadorismo",
+        "O Código Civil napoleônico é tema frequente"
+      ],
+      "questoes": [
+        {
+          "id": "q86-1",
+          "enunciado": "O Código Civil Napoleônico (1804) foi uma das principais realizações do governo de Napoleão Bonaparte. Esse código caracterizava-se por:",
+          "alternativas": {
+            "A": "Restaurar os privilégios feudais e a legislação do Antigo Regime",
+            "B": "Garantir direitos iguais a homens e mulheres na família e propriedade",
+            "C": "Consolidar conquistas burguesas como igualdade jurídica e direito de propriedade",
+            "D": "Estabelecer o socialismo como sistema econômico na França",
+            "E": "Abolir a propriedade privada e coletivizar os meios de produção"
+          },
+          "correta": "C",
+          "explicacao": "O Código Civil Napoleônico consolidou conquistas da Revolução Francesa sob perspectiva burguesa: igualdade jurídica (fim dos privilégios de nascimento), direito de propriedade (sagrado e inviolável), liberdade contratual e secularização (casamento civil, divórcio). No entanto, mantinha a subordinação da mulher ao marido e dos filhos ao pai (pátrio poder). Influenciou códigos civis em todo o mundo, incluindo o brasileiro.",
+          "dificuldade": "facil",
+          "tags": ["napoleão", "código civil", "direito"]
+        },
+        {
+          "id": "q86-2",
+          "enunciado": "O Bloqueio Continental, decretado por Napoleão em 1806, tinha como objetivo:",
+          "alternativas": {
+            "A": "Proteger a agricultura francesa da concorrência de produtos ingleses",
+            "B": "Impedir o comércio europeu com a Inglaterra para enfraquecê-la economicamente",
+            "C": "Criar uma união aduaneira entre os países europeus continentais",
+            "D": "Estabelecer o livre comércio entre a França e as demais nações",
+            "E": "Bloquear a expansão territorial do Império Russo na Europa"
+          },
+          "correta": "B",
+          "explicacao": "O Bloqueio Continental proibia os países europeus de comerciar com a Inglaterra, buscando asfixiar economicamente a principal rival de Napoleão. A Inglaterra, potência industrial e marítima, dependia do comércio continental. O bloqueio falhou: o contrabando era intenso, prejudicou economias europeias, e a tentativa de forçar Portugal e Rússia a aderir levou à transferência da Corte portuguesa para o Brasil (1808) e à desastrosa invasão da Rússia (1812).",
+          "dificuldade": "medio",
+          "tags": ["bloqueio continental", "napoleão", "inglaterra"]
+        },
+        {
+          "id": "q86-3",
+          "enunciado": "O Congresso de Viena (1814-1815) reorganizou a Europa após as guerras napoleônicas. Um dos princípios que orientou as decisões do Congresso foi:",
+          "alternativas": {
+            "A": "A defesa das revoluções liberais e do direito dos povos à autodeterminação",
+            "B": "A legitimidade, que buscava restaurar as dinastias destronadas pelas revoluções",
+            "C": "O apoio às independências das colônias americanas contra as metrópoles",
+            "D": "A divisão da Europa em zonas de influência entre França e Rússia",
+            "E": "A promoção do nacionalismo e das unificações italiana e alemã"
+          },
+          "correta": "B",
+          "explicacao": "O princípio da legitimidade defendia que os monarcas legítimos, destronados pela Revolução Francesa e Napoleão, deveriam ser restaurados. A dinastia Bourbon voltou ao trono francês. Outros princípios eram o equilíbrio europeu (evitar hegemonia) e compensações territoriais. A Santa Aliança foi criada para reprimir movimentos liberais e nacionalistas. O Congresso representou a reação conservadora às transformações revolucionárias.",
+          "dificuldade": "medio",
+          "tags": ["congresso de viena", "restauração", "legitimidade"]
+        },
+        {
+          "id": "q86-4",
+          "enunciado": "As revoluções de 1848, conhecidas como 'Primavera dos Povos', eclodiram em diversos países europeus. Essas revoluções caracterizaram-se por:",
+          "alternativas": {
+            "A": "Serem exclusivamente movimentos de restauração do absolutismo monárquico",
+            "B": "Combinarem demandas liberais (constituições) e nacionalistas (independência, unificação)",
+            "C": "Terem pleno sucesso em estabelecer repúblicas duradouras em toda a Europa",
+            "D": "Serem movimentos exclusivamente burgueses, sem participação popular",
+            "E": "Ocorrerem apenas na França, sem repercussão nos demais países"
+          },
+          "correta": "B",
+          "explicacao": "As revoluções de 1848 combinaram liberalismo político (demandas por constituições, parlamentos, liberdades civis) e nacionalismo (unificação italiana e alemã, independência húngara, polonesa, tcheca). Participaram burgueses, trabalhadores, camponeses e intelectuais. Embora a maioria tenha sido reprimida (exceto a Segunda República na França, que durou até 1852), elas demonstraram a força dessas ideias e prepararam as unificações e reformas posteriores.",
+          "dificuldade": "medio",
+          "tags": ["1848", "primavera dos povos", "revoluções"]
+        },
+        {
+          "id": "q86-5",
+          "enunciado": "A Era Napoleônica teve impactos significativos na América Latina. Um desses impactos foi:",
+          "alternativas": {
+            "A": "O fortalecimento do domínio colonial espanhol e português no continente",
+            "B": "A invasão francesa direta das colônias americanas e sua incorporação ao Império",
+            "C": "A criação de condições favoráveis aos movimentos de independência",
+            "D": "A união das colônias americanas contra a Inglaterra aliada de Napoleão",
+            "E": "A instauração do sistema napoleônico de governo em toda a América"
+          },
+          "correta": "C",
+          "explicacao": "A Era Napoleônica favoreceu as independências latino-americanas: a invasão francesa da Espanha (1808) criou vácuo de poder aproveitado pelas elites coloniais; a vinda da Corte portuguesa ao Brasil (1808) transferiu o centro do poder para a colônia; o Bloqueio Continental e a abertura dos portos alteraram relações comerciais. As ideias liberais difundidas pelas guerras napoleônicas também influenciaram os movimentos independentistas.",
+          "dificuldade": "facil",
+          "tags": ["napoleão", "independências", "américa latina"]
+        }
+      ]
+    },
+    {
+      "id": "m87",
+      "titulo": "Revolução Industrial e Capitalismo",
+      "resumo": "As transformações econômicas, sociais e tecnológicas dos séculos XVIII-XIX",
+      "topicos": [
+        {
+          "titulo": "A Primeira Revolução Industrial",
+          "conteudo": "A Revolução Industrial iniciou-se na Inglaterra (c. 1760) e transformou radicalmente a produção e a sociedade. Fatores: acumulação de capital (comércio, colonialismo), matérias-primas (algodão das colônias, carvão, ferro), mão de obra disponível (cercamentos), mercado consumidor (interno e colonial), estabilidade política e ideias liberais. Inovações: máquina a vapor (Watt), tear mecânico, locomotiva. A produção passou do artesanato doméstico à fábrica. Consequências: urbanização acelerada, proletarização, condições desumanas de trabalho (jornadas de 16 horas, trabalho infantil), poluição. Surgiram movimentos operários (ludismo, cartismo) e ideias socialistas."
+        },
+        {
+          "titulo": "A Segunda Revolução Industrial",
+          "conteudo": "A Segunda Revolução Industrial (c. 1870-1914) introduziu novas fontes de energia (petróleo, eletricidade), novos materiais (aço, químicos) e novas indústrias (automobilística, elétrica, química, petrolífera). A administração científica (taylorismo) e a linha de montagem (fordismo) aumentaram a produtividade. Houve concentração industrial (trustes, cartéis, holdings) e expansão do capitalismo financeiro. Novos meios de transporte (automóvel, avião) e comunicação (telégrafo, telefone, rádio) transformaram o mundo. Essa fase associa-se ao imperialismo: a busca por mercados, matérias-primas e investimentos impulsionou a colonização da África e Ásia."
+        },
+        {
+          "titulo": "Questão Social e Ideologias",
+          "conteudo": "A industrialização gerou a 'questão social': pobreza, exploração, insalubridade, trabalho infantil. Diferentes ideologias propunham soluções: o liberalismo clássico defendia não intervenção estatal e livre mercado; o socialismo utópico (Owen, Fourier, Saint-Simon) imaginava comunidades ideais; o socialismo científico de Marx e Engels analisava a luta de classes e propunha revolução proletária; o anarquismo (Proudhon, Bakunin) rejeitava o Estado; a Doutrina Social da Igreja (Rerum Novarum, 1891) defendia justiça social sem revolução. Sindicatos, partidos operários e greves marcaram a luta dos trabalhadores por direitos."
+        }
+      ],
+      "exemplos": [
+        "A industrialização brasileira comparada à inglesa",
+        "Condições de trabalho no século XIX e hoje - permanências e mudanças",
+        "O debate entre liberalismo e socialismo no mundo contemporâneo"
+      ],
+      "dicas": [
+        "ENEM relaciona Revolução Industrial a transformações sociais e ambientais",
+        "Compare as diferentes revoluções industriais",
+        "Entenda as principais ideologias do século XIX"
+      ],
+      "questoes": [
+        {
+          "id": "q87-1",
+          "enunciado": "A Revolução Industrial iniciou-se na Inglaterra no século XVIII. Entre os fatores que explicam a primazia inglesa nesse processo, destaca-se:",
+          "alternativas": {
+            "A": "A manutenção do sistema feudal e a abundância de mão de obra servil",
+            "B": "O acúmulo de capitais provenientes do comércio e das atividades coloniais",
+            "C": "A forte intervenção do Estado na economia e a planificação industrial",
+            "D": "O isolamento em relação aos mercados internacionais e ao comércio marítimo",
+            "E": "A escassez de recursos naturais que estimulou inovações tecnológicas"
+          },
+          "correta": "B",
+          "explicacao": "A Inglaterra acumulou capitais através do comércio triangular, da exploração colonial, do tráfico de escravizados e das atividades financeiras. Esses capitais foram investidos em inovações tecnológicas e fábricas. Outros fatores: abundância de carvão e ferro, mão de obra liberada pelos cercamentos, mercado consumidor, estabilidade política após 1688, ideias liberais e sistema bancário desenvolvido.",
+          "dificuldade": "facil",
+          "tags": ["revolução industrial", "inglaterra", "capitalismo"]
+        },
+        {
+          "id": "q87-2",
+          "enunciado": "O movimento ludista, ocorrido na Inglaterra no início do século XIX, caracterizou-se pela:",
+          "alternativas": {
+            "A": "Defesa da industrialização acelerada e da mecanização do trabalho",
+            "B": "Destruição de máquinas como forma de protesto contra o desemprego e as condições de trabalho",
+            "C": "Organização de partidos políticos operários para disputar eleições",
+            "D": "Elaboração de teorias socialistas científicas para orientar a revolução",
+            "E": "Negociação pacífica com os industriais para melhoria salarial"
+          },
+          "correta": "B",
+          "explicacao": "O ludismo (inspirado no lendário Ned Ludd) foi um movimento de trabalhadores que destruíam máquinas, vistas como responsáveis pelo desemprego e pela degradação do trabalho artesanal. Representou uma forma de resistência à mecanização e às péssimas condições de trabalho nas fábricas. Foi duramente reprimido. Posteriormente, o movimento operário adotou outras estratégias, como o cartismo (demandas políticas) e a organização sindical.",
+          "dificuldade": "medio",
+          "tags": ["ludismo", "revolução industrial", "movimento operário"]
+        },
+        {
+          "id": "q87-3",
+          "enunciado": "Karl Marx desenvolveu uma teoria que analisava o capitalismo e propunha sua superação. Segundo o materialismo histórico marxista:",
+          "alternativas": {
+            "A": "A história é movida por ideias e valores morais que determinam as relações econômicas",
+            "B": "As relações de produção e a luta de classes são os motores da transformação histórica",
+            "C": "O capitalismo é o sistema mais justo e deve ser preservado eternamente",
+            "D": "A religião é a base de todas as transformações sociais e políticas",
+            "E": "O Estado deve regular completamente a economia para evitar conflitos"
+          },
+          "correta": "B",
+          "explicacao": "Para Marx, a base econômica (forças produtivas e relações de produção) determina a superestrutura (política, direito, ideologia). A história avança através da luta de classes: senhores x escravos, senhores feudais x servos, burguesia x proletariado. O capitalismo, baseado na exploração do trabalho (mais-valia), seria superado pela revolução proletária, que estabeleceria o socialismo e, depois, o comunismo (sociedade sem classes nem Estado).",
+          "dificuldade": "medio",
+          "tags": ["marxismo", "materialismo histórico", "socialismo"]
+        },
+        {
+          "id": "q87-4",
+          "enunciado": "A Segunda Revolução Industrial (c. 1870-1914) introduziu importantes mudanças em relação à primeira fase da industrialização. Uma característica específica dessa segunda fase foi:",
+          "alternativas": {
+            "A": "O uso predominante do carvão e do ferro como fontes de energia e matéria-prima",
+            "B": "A concentração da industrialização exclusivamente na Inglaterra",
+            "C": "A aplicação de novas fontes de energia (eletricidade, petróleo) e o desenvolvimento da indústria química e siderúrgica",
+            "D": "A manutenção do trabalho artesanal e doméstico como forma predominante de produção",
+            "E": "O fim da urbanização e o retorno da população às áreas rurais"
+          },
+          "correta": "C",
+          "explicacao": "A Segunda Revolução Industrial caracterizou-se por: novas fontes de energia (eletricidade, petróleo), novos materiais (aço, produtos químicos), novas indústrias (automobilística, elétrica, química), novos processos de trabalho (taylorismo, fordismo), concentração empresarial (trustes, cartéis) e expansão geográfica (Alemanha, EUA, Japão). Vinculou-se ao imperialismo e à corrida armamentista que levou à Primeira Guerra Mundial.",
+          "dificuldade": "facil",
+          "tags": ["segunda revolução industrial", "capitalismo", "tecnologia"]
+        },
+        {
+          "id": "q87-5",
+          "enunciado": "A Doutrina Social da Igreja, expressa na encíclica Rerum Novarum (1891) do Papa Leão XIII, representou a posição católica diante da questão social. Essa doutrina caracterizava-se por:",
+          "alternativas": {
+            "A": "Defender a revolução socialista como solução para a exploração dos trabalhadores",
+            "B": "Apoiar integralmente o liberalismo econômico e a não intervenção estatal",
+            "C": "Criticar tanto o liberalismo extremo quanto o socialismo, defendendo justiça social e direitos dos trabalhadores",
+            "D": "Propor a abolição da propriedade privada e a coletivização dos meios de produção",
+            "E": "Defender a volta ao sistema feudal como alternativa ao capitalismo industrial"
+          },
+          "correta": "C",
+          "explicacao": "A Rerum Novarum criticava o liberalismo por ignorar a miséria dos trabalhadores e o socialismo por propor abolição da propriedade privada e luta de classes. Defendia o direito à propriedade privada, mas com função social; salário justo; direito de organização dos trabalhadores; intervenção do Estado para proteger os mais fracos. Influenciou partidos democratas-cristãos e movimentos sociais católicos.",
+          "dificuldade": "medio",
+          "tags": ["doutrina social", "igreja", "questão social"]
+        }
+      ]
+    },
+    {
+      "id": "m88",
+      "titulo": "Imperialismo e Primeira Guerra Mundial",
+      "resumo": "A partilha do mundo e a Grande Guerra (1914-1918)",
+      "topicos": [
+        {
+          "titulo": "O Imperialismo (c. 1870-1914)",
+          "conteudo": "O imperialismo foi a expansão das potências industriais europeias, dos EUA e do Japão sobre a África, Ásia e Oceania no final do século XIX. Causas: busca de mercados consumidores, matérias-primas e investimentos para o capital excedente; rivalidades entre potências; ideologias racistas e missão civilizadora. A Conferência de Berlim (1884-1885) partilhou a África entre as potências europeias, ignorando fronteiras étnicas e culturais. Na Ásia, a China foi submetida aos 'tratados desiguais', e a Índia era colônia britânica. O imperialismo acirrou rivalidades entre as potências e gerou consequências duradouras para os povos colonizados: desestruturação social, exploração econômica, fronteiras artificiais."
+        },
+        {
+          "titulo": "Causas e Início da Primeira Guerra",
+          "conteudo": "A Primeira Guerra Mundial (1914-1918) resultou de tensões acumuladas: rivalidades imperialistas (disputas por colônias), nacionalismos (pangermanismo, pan-eslavismo, revanchismo francês), corrida armamentista, sistema de alianças (Tríplice Aliança x Tríplice Entente) e crises nos Bálcãs (guerras balcânicas, questão dos eslavos no Império Austro-Húngaro). O assassinato do arquiduque Franz Ferdinand em Sarajevo (28/06/1914) desencadeou a guerra. O sistema de alianças transformou um conflito local em guerra continental e depois mundial. A guerra de trincheiras na Frente Ocidental causou milhões de mortes."
+        },
+        {
+          "titulo": "Desenvolvimento e Consequências",
+          "conteudo": "A guerra foi de uma violência sem precedentes: novas armas (metralhadoras, tanques, gás venenoso, aviões), guerra de trincheiras, milhões de mortos. A entrada dos EUA (1917) e a saída da Rússia (revolução de 1917) alteraram o equilíbrio. O Tratado de Versalhes (1919) impôs pesadas reparações à Alemanha, redesenhou o mapa europeu (novos Estados), criou a Liga das Nações e plantou sementes de futuros conflitos. Consequências: declínio da Europa, ascensão dos EUA, revoluções (Rússia), crise econômica, questionamento de valores (arte moderna, 'geração perdida'), e condições para a Segunda Guerra Mundial."
+        }
+      ],
+      "exemplos": [
+        "Consequências do imperialismo para a África atual (fronteiras artificiais)",
+        "A Primeira Guerra como ruptura com o otimismo do século XIX",
+        "O Tratado de Versalhes e suas consequências para a Segunda Guerra"
+      ],
+      "dicas": [
+        "ENEM relaciona imperialismo a problemas contemporâneos na África e Ásia",
+        "Entenda o sistema de alianças e as causas da Primeira Guerra",
+        "Consequências do Tratado de Versalhes são tema frequente"
+      ],
+      "questoes": [
+        {
+          "id": "q88-1",
+          "enunciado": "A Conferência de Berlim (1884-1885) teve como principal resultado a partilha da África entre as potências europeias. Sobre esse processo, é correto afirmar que:",
+          "alternativas": {
+            "A": "Os povos africanos participaram das negociações e tiveram seus interesses respeitados",
+            "B": "As fronteiras foram traçadas considerando as divisões étnicas e culturais africanas",
+            "C": "As fronteiras artificiais impostas ignoraram realidades locais e geraram conflitos duradouros",
+            "D": "A partilha foi justa e equitativa entre todas as potências europeias",
+            "E": "Apenas Inglaterra e França participaram da divisão territorial africana"
+          },
+          "correta": "C",
+          "explicacao": "A Conferência de Berlim partilhou a África sem a presença de africanos, usando critérios geométricos que ignoravam realidades étnicas, linguísticas e culturais. Povos foram divididos por fronteiras, e grupos rivais foram colocados no mesmo território. Essas fronteiras artificiais persistem até hoje e são fonte de conflitos étnicos e políticos em vários países africanos.",
+          "dificuldade": "facil",
+          "tags": ["conferência de berlim", "imperialismo", "áfrica"]
+        },
+        {
+          "id": "q88-2",
+          "enunciado": "O imperialismo do final do século XIX e início do XX foi justificado por diversas ideologias. Uma dessas justificativas ideológicas era:",
+          "alternativas": {
+            "A": "O respeito às culturas locais e a preservação das sociedades tradicionais",
+            "B": "A 'missão civilizadora' de levar o progresso aos povos considerados 'atrasados'",
+            "C": "A defesa do direito à autodeterminação dos povos colonizados",
+            "D": "A promoção da igualdade racial entre europeus e colonizados",
+            "E": "A crítica ao capitalismo e a defesa do socialismo nos territórios coloniais"
+          },
+          "correta": "B",
+          "explicacao": "O imperialismo foi justificado por ideologias racistas e pela suposta 'missão civilizadora' do homem branco europeu de levar o 'progresso', o cristianismo e a 'civilização' aos povos considerados 'primitivos' ou 'atrasados'. O darwinismo social aplicava erroneamente conceitos evolutivos para justificar a dominação. Rudyard Kipling expressou isso no poema 'O Fardo do Homem Branco'.",
+          "dificuldade": "medio",
+          "tags": ["imperialismo", "ideologia", "missão civilizadora"]
+        },
+        {
+          "id": "q88-3",
+          "enunciado": "O sistema de alianças na Europa do início do século XX contribuiu para a eclosão da Primeira Guerra Mundial. As duas principais alianças eram:",
+          "alternativas": {
+            "A": "OTAN e Pacto de Varsóvia, lideradas por EUA e URSS",
+            "B": "Eixo e Aliados, liderados por Alemanha e Inglaterra",
+            "C": "Tríplice Aliança (Alemanha, Áustria-Hungria, Itália) e Tríplice Entente (França, Rússia, Inglaterra)",
+            "D": "Liga das Nações e ONU, criadas para manter a paz mundial",
+            "E": "Santa Aliança e Concerto Europeu, do período pós-napoleônico"
+          },
+          "correta": "C",
+          "explicacao": "Às vésperas da Primeira Guerra, a Europa dividia-se em duas alianças: a Tríplice Aliança (Alemanha, Áustria-Hungria e Itália) e a Tríplice Entente (França, Rússia e Inglaterra). A Itália mudou de lado durante a guerra (1915), juntando-se à Entente. O sistema de alianças fez com que um conflito local (Áustria x Sérvia) se transformasse em guerra continental: a Rússia apoiou a Sérvia, a Alemanha apoiou a Áustria, a França apoiou a Rússia, etc.",
+          "dificuldade": "facil",
+          "tags": ["alianças", "primeira guerra", "geopolítica"]
+        },
+        {
+          "id": "q88-4",
+          "enunciado": "O Tratado de Versalhes (1919), que encerrou oficialmente a Primeira Guerra Mundial, impôs condições à Alemanha derrotada. Entre as cláusulas do tratado estava:",
+          "alternativas": {
+            "A": "A manutenção do Império Alemão e de todas as suas colônias",
+            "B": "A integração da Alemanha em condições de igualdade na Liga das Nações",
+            "C": "O pagamento de pesadas reparações de guerra e a perda de territórios",
+            "D": "A divisão da Alemanha em zonas de ocupação por quatro potências",
+            "E": "A anulação da responsabilidade alemã pelo início do conflito"
+          },
+          "correta": "C",
+          "explicacao": "O Tratado de Versalhes impôs à Alemanha: responsabilidade exclusiva pela guerra (cláusula de culpa), pesadas reparações financeiras, perda de 13% do território (Alsácia-Lorena para a França, corredor polonês), perda de todas as colônias, limitação do exército (100 mil homens), proibição de aviação militar, ocupação da Renânia. A Alemanha não foi integrada à Liga das Nações. Essas condições geraram humilhação e ressentimento, explorados pelo nazismo.",
+          "dificuldade": "medio",
+          "tags": ["versalhes", "primeira guerra", "alemanha"]
+        },
+        {
+          "id": "q88-5",
+          "enunciado": "A Primeira Guerra Mundial (1914-1918) introduziu novos elementos na história dos conflitos armados. Uma característica marcante dessa guerra foi:",
+          "alternativas": {
+            "A": "A curta duração e o baixo número de vítimas graças às novas tecnologias",
+            "B": "O uso de trincheiras e de novas armas como metralhadoras, tanques e gás venenoso",
+            "C": "A ausência de civis entre as vítimas, limitando-se a combates entre exércitos",
+            "D": "A participação exclusiva de países europeus, sem envolvimento de outras regiões",
+            "E": "A resolução rápida do conflito através de negociações diplomáticas"
+          },
+          "correta": "B",
+          "explicacao": "A Primeira Guerra foi um conflito industrial e tecnológico: metralhadoras, artilharia pesada, tanques, aviões, submarinos e gás venenoso foram utilizados. A guerra de trincheiras na Frente Ocidental criou um impasse mortífero, com milhões de mortos em batalhas que avançavam poucos metros. Foi a primeira 'guerra total', envolvendo toda a sociedade (economia de guerra, propaganda, mobilização civil). Estima-se 17 milhões de mortos.",
+          "dificuldade": "facil",
+          "tags": ["primeira guerra", "trincheiras", "tecnologia militar"]
+        }
+      ]
+    },
+    {
+      "id": "m89",
+      "titulo": "Entreguerras: Crise, Totalitarismo e Segunda Guerra",
+      "resumo": "Crise de 1929, ascensão do fascismo e nazismo, Segunda Guerra Mundial",
+      "topicos": [
+        {
+          "titulo": "A Crise de 1929 e a Grande Depressão",
+          "conteudo": "A quebra da Bolsa de Nova York (outubro de 1929) iniciou a maior crise econômica do capitalismo. Causas: superprodução industrial e agrícola, especulação, fragilidade do sistema bancário, retração do comércio internacional. Consequências: falências em cadeia, desemprego em massa (25% nos EUA), miséria, radicalização política. O New Deal de Franklin Roosevelt (1933) introduziu intervenção estatal na economia (obras públicas, regulação bancária, seguridade social), inspirado nas ideias de Keynes. Na Europa, a crise favoreceu movimentos extremistas: fortaleceu o nazismo na Alemanha e governos autoritários em vários países."
+        },
+        {
+          "titulo": "Fascismo, Nazismo e Stalinismo",
+          "conteudo": "O período entreguerras viu a ascensão de regimes totalitários. O fascismo italiano (Mussolini, 1922) e o nazismo alemão (Hitler, 1933) compartilhavam características: nacionalismo extremo, anticomunismo, antiliberalismo, culto ao líder, partido único, controle da sociedade, propaganda massiva, uso da violência. O nazismo adicionava o racismo como doutrina central (antissemitismo, eugenia). Na URSS, o stalinismo estabeleceu coletivização forçada, industrialização acelerada, expurgos e gulags, consolidando regime totalitário de base comunista. Esses regimes representaram a crise das democracias liberais e dos valores iluministas."
+        },
+        {
+          "titulo": "A Segunda Guerra Mundial (1939-1945)",
+          "conteudo": "A Segunda Guerra foi o conflito mais destrutivo da história: 60-70 milhões de mortos, incluindo o Holocausto (6 milhões de judeus assassinados) e civis em bombardeios. Causas: revisionismo alemão do Tratado de Versalhes, expansionismo do Eixo (Alemanha, Itália, Japão), fracasso da política de apaziguamento, pacto nazi-soviético. Fases: conquistas do Eixo (1939-1942), virada (Stalingrado, El Alamein, Midway), contraofensiva aliada (1943-1945). O Brasil participou ao lado dos Aliados (FEB na Itália). A guerra terminou com bombas atômicas em Hiroshima e Nagasaki. Consequências: ONU, Guerra Fria, descolonização, tribunais de Nuremberg, Declaração Universal dos Direitos Humanos."
+        }
+      ],
+      "exemplos": [
+        "Paralelos entre crise de 1929 e crises econômicas contemporâneas",
+        "Características comuns e diferenças entre fascismo e nazismo",
+        "O Holocausto como advertência sobre os perigos do extremismo"
+      ],
+      "dicas": [
+        "ENEM relaciona totalitarismos a questões de direitos humanos",
+        "Entenda as causas da crise de 1929 e suas consequências políticas",
+        "O Holocausto e as lições da Segunda Guerra são temas importantes"
+      ],
+      "questoes": [
+        {
+          "id": "q89-1",
+          "enunciado": "A crise econômica de 1929 teve impactos profundos nas sociedades capitalistas. Uma consequência política dessa crise foi:",
+          "alternativas": {
+            "A": "O fortalecimento das democracias liberais em todos os países afetados",
+            "B": "A ascensão de movimentos extremistas e regimes autoritários em vários países",
+            "C": "A adoção universal do socialismo como alternativa ao capitalismo em crise",
+            "D": "O isolamento dos Estados Unidos e sua retirada do comércio internacional",
+            "E": "A estabilidade política e social decorrente da cooperação entre os países"
+          },
+          "correta": "B",
+          "explicacao": "A crise de 1929 gerou desemprego, miséria e descrédito nas democracias liberais, que pareciam incapazes de resolver os problemas. Isso favoreceu movimentos extremistas: na Alemanha, o nazismo chegou ao poder em 1933; em outros países europeus, surgiram regimes autoritários. O comunismo soviético também se apresentava como alternativa ao capitalismo em crise. A radicalização política foi uma das principais consequências da Grande Depressão.",
+          "dificuldade": "medio",
+          "tags": ["crise 1929", "totalitarismo", "política"]
+        },
+        {
+          "id": "q89-2",
+          "enunciado": "O nazismo, regime estabelecido na Alemanha a partir de 1933 sob Adolf Hitler, tinha como característica central:",
+          "alternativas": {
+            "A": "A defesa da democracia liberal e dos direitos individuais",
+            "B": "A promoção da igualdade racial e da convivência entre diferentes povos",
+            "C": "O racismo, especialmente o antissemitismo, como doutrina do Estado",
+            "D": "A internacionalização da economia e a integração com os mercados globais",
+            "E": "A valorização do pacifismo e da resolução diplomática de conflitos"
+          },
+          "correta": "C",
+          "explicacao": "O nazismo tinha o racismo como doutrina central: a crença na superioridade da 'raça ariana' e no perigo representado por 'raças inferiores', especialmente os judeus (antissemitismo). Essa ideologia levou à perseguição, às Leis de Nuremberg (1935), à Noite dos Cristais (1938) e ao Holocausto (genocídio de 6 milhões de judeus). O nazismo também perseguiu ciganos, homossexuais, deficientes e opositores políticos.",
+          "dificuldade": "facil",
+          "tags": ["nazismo", "racismo", "antissemitismo"]
+        },
+        {
+          "id": "q89-3",
+          "enunciado": "O New Deal, implementado nos Estados Unidos a partir de 1933 pelo presidente Franklin Roosevelt, caracterizou-se por:",
+          "alternativas": {
+            "A": "Manter a política de não intervenção estatal na economia",
+            "B": "Adotar medidas de intervenção estatal para combater a crise econômica",
+            "C": "Implantar o socialismo e abolir a propriedade privada",
+            "D": "Reduzir gastos públicos e aumentar impostos sobre os trabalhadores",
+            "E": "Isolar a economia americana do comércio internacional"
+          },
+          "correta": "B",
+          "explicacao": "O New Deal representou uma mudança na política econômica americana: em vez do liberalismo clássico (não intervenção), Roosevelt adotou intervenção estatal inspirada nas ideias de Keynes. Medidas incluíram: obras públicas para gerar empregos, regulação do sistema bancário, política agrícola para controlar preços, seguridade social, legislação trabalhista. O New Deal não eliminou a crise, mas aliviou seus efeitos e estabeleceu bases do Estado de bem-estar social.",
+          "dificuldade": "medio",
+          "tags": ["new deal", "crise 1929", "keynesianismo"]
+        },
+        {
+          "id": "q89-4",
+          "enunciado": "A Segunda Guerra Mundial (1939-1945) foi o conflito mais destrutivo da história humana. Entre os eventos que marcaram essa guerra está:",
+          "alternativas": {
+            "A": "A aliança entre Alemanha e URSS durante todo o conflito",
+            "B": "O Holocausto, genocídio que resultou na morte de 6 milhões de judeus",
+            "C": "A neutralidade dos Estados Unidos do início ao fim da guerra",
+            "D": "A vitória das potências do Eixo e a dominação mundial pela Alemanha",
+            "E": "O uso exclusivo de armas convencionais, sem inovações tecnológicas"
+          },
+          "correta": "B",
+          "explicacao": "O Holocausto foi o genocídio sistemático de 6 milhões de judeus pelos nazistas, além de milhões de outras vítimas (ciganos, homossexuais, deficientes, eslavos). Campos de extermínio como Auschwitz industrializaram a morte. O Holocausto representa o extremo da barbárie e levou, após a guerra, à criação de mecanismos internacionais de proteção dos direitos humanos e ao conceito jurídico de crimes contra a humanidade.",
+          "dificuldade": "facil",
+          "tags": ["segunda guerra", "holocausto", "nazismo"]
+        },
+        {
+          "id": "q89-5",
+          "enunciado": "Os regimes totalitários do período entreguerras (fascismo, nazismo, stalinismo) compartilhavam algumas características, apesar de suas diferenças ideológicas. Uma característica comum a esses regimes era:",
+          "alternativas": {
+            "A": "A defesa do pluralismo político e da alternância no poder",
+            "B": "O respeito às liberdades individuais e aos direitos humanos",
+            "C": "O partido único, o culto ao líder e o controle da sociedade pelo Estado",
+            "D": "A promoção da economia de livre mercado sem intervenção estatal",
+            "E": "A valorização da diversidade cultural e da tolerância religiosa"
+          },
+          "correta": "C",
+          "explicacao": "Os regimes totalitários compartilhavam: partido único que monopolizava o poder, culto ao líder (Duce, Führer, Vozhd), controle total da sociedade (educação, mídia, cultura), uso de propaganda e terror, supressão de oposição e liberdades, mobilização permanente das massas. Diferenciavam-se na ideologia: fascismo e nazismo eram de extrema-direita (nacionalismo, corporativismo), stalinismo era de extrema-esquerda (comunismo, coletivização).",
+          "dificuldade": "medio",
+          "tags": ["totalitarismo", "fascismo", "stalinismo"]
+        }
+      ]
+    },
+    {
+      "id": "m90",
+      "titulo": "Guerra Fria e Mundo Contemporâneo",
+      "resumo": "Bipolaridade, descolonização, fim da URSS e globalização",
+      "topicos": [
+        {
+          "titulo": "A Guerra Fria (1947-1991)",
+          "conteudo": "A Guerra Fria foi a rivalidade entre EUA (capitalismo) e URSS (comunismo) que dividiu o mundo em blocos. Não houve confronto direto entre as superpotências, mas guerras proxy (Coreia, Vietnã, Angola, Afeganistão), corrida armamentista (armas nucleares) e espacial (Sputnik, Apollo), competição ideológica e cultural. A OTAN (1949) e o Pacto de Varsóvia (1955) eram as alianças militares. A doutrina Truman e o Plano Marshall (lado americano) e o Kominform (lado soviético) marcaram a disputa. Crises como Berlim (1948-49, 1961) e Cuba (1962) levaram o mundo à beira da guerra nuclear. A détente (anos 1970) trouxe relativa distensão."
+        },
+        {
+          "titulo": "Descolonização e Terceiro Mundo",
+          "conteudo": "Após a Segunda Guerra, as colônias afro-asiáticas conquistaram independência. Fatores: enfraquecimento das metrópoles europeias, pressão dos movimentos nacionalistas, contexto da Guerra Fria (apoio das superpotências), atuação da ONU. A descolonização foi pacífica em alguns casos (Índia, 1947) e violenta em outros (Argélia, 1954-1962; Vietnã). Na África portuguesa, as guerras coloniais duraram até 1975. O Movimento dos Não Alinhados (Bandung, 1955) buscou uma terceira via entre os blocos. Os novos países enfrentaram neocolonialismo, instabilidade política e subdesenvolvimento."
+        },
+        {
+          "titulo": "Fim da Guerra Fria e Globalização",
+          "conteudo": "A crise do bloco soviético nos anos 1980 (estagnação econômica, gastos militares, reformas de Gorbachev - glasnost e perestroika) levou à queda do Muro de Berlim (1989) e ao fim da URSS (1991). Os EUA emergiram como única superpotência. A globalização acelerou-se: livre comércio, fluxos financeiros, internet, empresas transnacionais. Blocos econômicos (UE, NAFTA, Mercosul) e organizações internacionais (OMC) ganharam importância. Novos desafios: terrorismo (11 de setembro), ascensão da China, crises ambientais, desigualdade global, migrações, populismo e questionamento da democracia liberal."
+        }
+      ],
+      "exemplos": [
+        "A Guerra Fria e a ditadura militar brasileira",
+        "Consequências da descolonização para a África atual",
+        "Globalização: oportunidades e desafios para o Brasil"
+      ],
+      "dicas": [
+        "ENEM relaciona Guerra Fria a política brasileira e latino-americana",
+        "Entenda as características e impactos da globalização",
+        "Questões atuais (migrações, populismo) podem ser contextualizadas historicamente"
+      ],
+      "questoes": [
+        {
+          "id": "q90-1",
+          "enunciado": "A Guerra Fria (1947-1991) foi caracterizada pela bipolaridade mundial entre duas superpotências. Uma característica desse período foi:",
+          "alternativas": {
+            "A": "O confronto militar direto entre Estados Unidos e União Soviética",
+            "B": "A disputa indireta através de conflitos regionais, corrida armamentista e competição ideológica",
+            "C": "A cooperação entre capitalismo e comunismo para resolver problemas globais",
+            "D": "A neutralidade dos países da América Latina e da África",
+            "E": "A ausência de qualquer tensão nuclear entre as superpotências"
+          },
+          "correta": "B",
+          "explicacao": "A Guerra Fria caracterizou-se pela ausência de confronto militar direto entre EUA e URSS (daí ser 'fria'), mas por intensa rivalidade: guerras proxy em países terceiros (Coreia, Vietnã, Angola), corrida armamentista (armas nucleares), corrida espacial, disputa por áreas de influência, propaganda ideológica. A tensão nuclear foi constante, especialmente na crise dos mísseis de Cuba (1962).",
+          "dificuldade": "facil",
+          "tags": ["guerra fria", "bipolaridade", "superpotências"]
+        },
+        {
+          "id": "q90-2",
+          "enunciado": "O processo de descolonização afro-asiática acelerou-se após a Segunda Guerra Mundial. Um fator que contribuiu para esse processo foi:",
+          "alternativas": {
+            "A": "O fortalecimento das potências coloniais europeias após a guerra",
+            "B": "O desinteresse das superpotências pelos países colonizados",
+            "C": "O enfraquecimento das metrópoles e o crescimento dos movimentos nacionalistas",
+            "D": "A política de manutenção dos impérios coloniais pela ONU",
+            "E": "A ausência de resistência dos povos colonizados à dominação europeia"
+          },
+          "correta": "C",
+          "explicacao": "A descolonização foi favorecida por: enfraquecimento das potências europeias após a guerra (devastação, perda de prestígio), crescimento de movimentos nacionalistas e independentistas nas colônias (influenciados pelo próprio discurso de autodeterminação dos Aliados), contexto da Guerra Fria (EUA e URSS disputando influência nos novos países), pressão da ONU pela descolonização.",
+          "dificuldade": "medio",
+          "tags": ["descolonização", "terceiro mundo", "nacionalismo"]
+        },
+        {
+          "id": "q90-3",
+          "enunciado": "O fim da Guerra Fria, simbolizado pela queda do Muro de Berlim em 1989, foi precedido por reformas na União Soviética. As reformas promovidas por Mikhail Gorbachev eram conhecidas como:",
+          "alternativas": {
+            "A": "New Deal e Estado de bem-estar social",
+            "B": "Revolução Cultural e Grande Salto Adiante",
+            "C": "Glasnost (transparência) e Perestroika (reestruturação)",
+            "D": "Doutrina Truman e Plano Marshall",
+            "E": "Détente e coexistência pacífica"
+          },
+          "correta": "C",
+          "explicacao": "Gorbachev, líder soviético a partir de 1985, implementou reformas para modernizar a URSS: glasnost (transparência, abertura política, liberdade de expressão) e perestroika (reestruturação econômica, introdução de elementos de mercado). As reformas, ao flexibilizar o controle do partido, aceleraram a desintegração do bloco soviético e da própria URSS, que se dissolveu em 1991.",
+          "dificuldade": "facil",
+          "tags": ["fim guerra fria", "urss", "gorbachev"]
+        },
+        {
+          "id": "q90-4",
+          "enunciado": "A globalização, intensificada a partir do final do século XX, caracteriza-se por:",
+          "alternativas": {
+            "A": "Isolamento das economias nacionais e fortalecimento das barreiras comerciais",
+            "B": "Integração econômica, fluxos financeiros, avanços tecnológicos e interdependência global",
+            "C": "Redução das desigualdades entre países desenvolvidos e subdesenvolvidos",
+            "D": "Fortalecimento do Estado-nação e das políticas protecionistas",
+            "E": "Diminuição do poder das empresas transnacionais e das organizações internacionais"
+          },
+          "correta": "B",
+          "explicacao": "A globalização caracteriza-se pela integração econômica mundial: livre comércio, fluxos financeiros instantâneos, empresas transnacionais, cadeias produtivas globais. Avanços tecnológicos (internet, transportes) intensificaram a interdependência. Há debates sobre seus efeitos: enquanto proporciona crescimento e conexão, também pode aumentar desigualdades, precarizar trabalho e homogeneizar culturas. Reações incluem movimentos antiglobalização e nacionalismos.",
+          "dificuldade": "medio",
+          "tags": ["globalização", "economia", "mundo contemporâneo"]
+        },
+        {
+          "id": "q90-5",
+          "enunciado": "A Guerra Fria teve impactos significativos na América Latina, incluindo o Brasil. Uma manifestação desses impactos foi:",
+          "alternativas": {
+            "A": "A neutralidade absoluta dos países latino-americanos no conflito bipolar",
+            "B": "O apoio dos Estados Unidos a golpes militares contra governos considerados próximos ao comunismo",
+            "C": "A integração da América Latina ao bloco socialista sob liderança soviética",
+            "D": "A democratização de todos os países da região durante o período",
+            "E": "O isolamento econômico da região em relação às superpotências"
+          },
+          "correta": "B",
+          "explicacao": "No contexto da Guerra Fria, os EUA apoiaram golpes militares na América Latina para evitar a 'expansão comunista': Brasil (1964), Chile (1973), Argentina (1976) e outros. A Doutrina de Segurança Nacional, ensinada na Escola das Américas, orientava a repressão a movimentos de esquerda. A Revolução Cubana (1959) e a crise dos mísseis (1962) intensificaram a preocupação americana com a região. Esse contexto explica parte da história política brasileira no período.",
+          "dificuldade": "medio",
+          "tags": ["guerra fria", "américa latina", "ditaduras"]
+        }
+      ]
+    }
+  ]
+}

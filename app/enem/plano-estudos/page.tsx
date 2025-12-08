@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface MetaUsuario {
   notaDesejada: number;
@@ -290,7 +291,9 @@ export default function PlanoEstudosPage() {
         paddingTop: '4rem',
         paddingBottom: '6rem'
       }}>
-        <FloatingNav />
+      <FloatingBackButton />
+        <FloatingBackButton />
+      <FloatingNav />
 
         <div style={{
           maxWidth: '48rem',

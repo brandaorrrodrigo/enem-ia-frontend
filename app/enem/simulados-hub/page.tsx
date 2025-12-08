@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Simulado {
   id: string;
@@ -298,6 +299,8 @@ export default function SimuladosHubPage() {
         color: 'var(--chalk-white)'
       }}
     >
+      <FloatingBackButton />
+      <FloatingBackButton />
       <FloatingNav />
 
       <div className="container max-w-7xl mx-auto px-4 py-8">

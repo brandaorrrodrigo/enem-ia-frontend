@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Conquista {
   id: string;
@@ -30,45 +31,47 @@ interface Milestone {
   completo: boolean;
 }
 
+// Economia rebalanceada v2.0 - recompensas no intervalo 50-300 FP
 const conquistas: Conquista[] = [
   // Estudo
-  { id: '1', nome: 'Primeiro Passo', descricao: 'Complete seu primeiro simulado', emoji: '🎯', categoria: 'estudo', requisito: '1 simulado', fpReward: 50, progresso: 100, desbloqueada: true, dataDesbloqueio: '2024-11-01' },
-  { id: '2', nome: 'Estudante Dedicado', descricao: 'Complete 10 simulados', emoji: '📚', categoria: 'estudo', requisito: '10 simulados', fpReward: 100, progresso: 70, desbloqueada: false },
-  { id: '3', nome: 'Mestre dos Simulados', descricao: 'Complete 50 simulados', emoji: '🏆', categoria: 'estudo', requisito: '50 simulados', fpReward: 500, progresso: 14, desbloqueada: false, raras: true },
-  { id: '4', nome: 'Streak de 7 Dias', descricao: 'Estude 7 dias consecutivos', emoji: '🔥', categoria: 'estudo', requisito: '7 dias seguidos', fpReward: 100, progresso: 100, desbloqueada: true, dataDesbloqueio: '2024-11-08' },
-  { id: '5', nome: 'Streak de 30 Dias', descricao: 'Estude 30 dias consecutivos', emoji: '💪', categoria: 'estudo', requisito: '30 dias seguidos', fpReward: 300, progresso: 23, desbloqueada: false, raras: true },
-  { id: '6', nome: 'Streak de 100 Dias', descricao: 'Estude 100 dias consecutivos', emoji: '👑', categoria: 'estudo', requisito: '100 dias seguidos', fpReward: 1000, progresso: 7, desbloqueada: false, raras: true },
-  { id: '7', nome: 'Pomodoro Master', descricao: 'Complete 100 sessoes Pomodoro', emoji: '🍅', categoria: 'estudo', requisito: '100 pomodoros', fpReward: 200, progresso: 12, desbloqueada: false },
-  { id: '8', nome: 'Quiz Champion', descricao: 'Acerte 50 quizzes diarios seguidos', emoji: '🎯', categoria: 'estudo', requisito: '50 quizzes', fpReward: 250, progresso: 40, desbloqueada: false },
+  { id: '1', nome: 'Primeiro Passo', descricao: 'Complete seu primeiro simulado', emoji: '🎯', categoria: 'estudo', requisito: '1 simulado', fpReward: 25, progresso: 100, desbloqueada: true, dataDesbloqueio: '2024-11-01' },
+  { id: '2', nome: 'Estudante Dedicado', descricao: 'Complete 10 simulados', emoji: '📚', categoria: 'estudo', requisito: '10 simulados', fpReward: 50, progresso: 70, desbloqueada: false },
+  { id: '3', nome: 'Mestre dos Simulados', descricao: 'Complete 50 simulados', emoji: '🏆', categoria: 'estudo', requisito: '50 simulados', fpReward: 150, progresso: 14, desbloqueada: false, raras: true },
+  { id: '4', nome: 'Streak de 7 Dias', descricao: 'Estude 7 dias consecutivos', emoji: '🔥', categoria: 'estudo', requisito: '7 dias seguidos', fpReward: 50, progresso: 100, desbloqueada: true, dataDesbloqueio: '2024-11-08' },
+  { id: '5', nome: 'Streak de 30 Dias', descricao: 'Estude 30 dias consecutivos', emoji: '💪', categoria: 'estudo', requisito: '30 dias seguidos', fpReward: 100, progresso: 23, desbloqueada: false, raras: true },
+  { id: '6', nome: 'Streak de 100 Dias', descricao: 'Estude 100 dias consecutivos', emoji: '👑', categoria: 'estudo', requisito: '100 dias seguidos', fpReward: 300, progresso: 7, desbloqueada: false, raras: true },
+  { id: '7', nome: 'Pomodoro Master', descricao: 'Complete 100 sessoes Pomodoro', emoji: '🍅', categoria: 'estudo', requisito: '100 pomodoros', fpReward: 75, progresso: 12, desbloqueada: false },
+  { id: '8', nome: 'Quiz Champion', descricao: 'Acerte 50 quizzes diarios seguidos', emoji: '🎯', categoria: 'estudo', requisito: '50 quizzes', fpReward: 100, progresso: 40, desbloqueada: false },
 
   // Social
-  { id: '9', nome: 'Sociavel', descricao: 'Siga 10 estudantes', emoji: '👥', categoria: 'social', requisito: '10 seguindo', fpReward: 50, progresso: 60, desbloqueada: false },
-  { id: '10', nome: 'Influencer', descricao: 'Tenha 50 seguidores', emoji: '⭐', categoria: 'social', requisito: '50 seguidores', fpReward: 200, progresso: 28, desbloqueada: false, raras: true },
-  { id: '11', nome: 'Viral', descricao: 'Compartilhe 10 conquistas', emoji: '📱', categoria: 'social', requisito: '10 compartilhamentos', fpReward: 75, progresso: 30, desbloqueada: false },
-  { id: '12', nome: 'Recrutador', descricao: 'Convide 5 amigos que se cadastraram', emoji: '🤝', categoria: 'social', requisito: '5 convites', fpReward: 250, progresso: 20, desbloqueada: false },
+  { id: '9', nome: 'Sociavel', descricao: 'Siga 10 estudantes', emoji: '👥', categoria: 'social', requisito: '10 seguindo', fpReward: 25, progresso: 60, desbloqueada: false },
+  { id: '10', nome: 'Influencer', descricao: 'Tenha 50 seguidores', emoji: '⭐', categoria: 'social', requisito: '50 seguidores', fpReward: 75, progresso: 28, desbloqueada: false, raras: true },
+  { id: '11', nome: 'Viral', descricao: 'Compartilhe 10 conquistas', emoji: '📱', categoria: 'social', requisito: '10 compartilhamentos', fpReward: 35, progresso: 30, desbloqueada: false },
+  { id: '12', nome: 'Recrutador', descricao: 'Convide 5 amigos que se cadastraram', emoji: '🤝', categoria: 'social', requisito: '5 convites', fpReward: 100, progresso: 20, desbloqueada: false },
 
-  // Ranking
+  // Ranking - Ligas com recompensas ajustadas
   { id: '13', nome: 'Liga Prata', descricao: 'Alcance a Liga Prata', emoji: '🥈', categoria: 'ranking', requisito: '500 FP', fpReward: 50, progresso: 100, desbloqueada: true, dataDesbloqueio: '2024-11-05' },
-  { id: '14', nome: 'Liga Ouro', descricao: 'Alcance a Liga Ouro', emoji: '🥇', categoria: 'ranking', requisito: '1500 FP', fpReward: 100, progresso: 83, desbloqueada: false },
-  { id: '15', nome: 'Liga Platina', descricao: 'Alcance a Liga Platina', emoji: '💎', categoria: 'ranking', requisito: '3000 FP', fpReward: 200, progresso: 42, desbloqueada: false, raras: true },
-  { id: '16', nome: 'Liga Diamante', descricao: 'Alcance a Liga Diamante', emoji: '💠', categoria: 'ranking', requisito: '5000 FP', fpReward: 500, progresso: 25, desbloqueada: false, raras: true },
-  { id: '17', nome: 'Top 100', descricao: 'Entre no Top 100 do ranking geral', emoji: '🏅', categoria: 'ranking', requisito: 'Top 100', fpReward: 300, progresso: 0, desbloqueada: false, raras: true },
-  { id: '18', nome: 'Campeao Semanal', descricao: 'Fique em 1º lugar no ranking semanal', emoji: '🏆', categoria: 'ranking', requisito: '1º lugar', fpReward: 500, progresso: 0, desbloqueada: false, raras: true },
+  { id: '14', nome: 'Liga Ouro', descricao: 'Alcance a Liga Ouro', emoji: '🥇', categoria: 'ranking', requisito: '2000 FP', fpReward: 100, progresso: 83, desbloqueada: false },
+  { id: '15', nome: 'Liga Platina', descricao: 'Alcance a Liga Platina', emoji: '💎', categoria: 'ranking', requisito: '5000 FP', fpReward: 150, progresso: 42, desbloqueada: false, raras: true },
+  { id: '16', nome: 'Liga Diamante', descricao: 'Alcance a Liga Diamante', emoji: '💠', categoria: 'ranking', requisito: '10000 FP', fpReward: 300, progresso: 25, desbloqueada: false, raras: true },
+  { id: '17', nome: 'Top 100', descricao: 'Entre no Top 100 do ranking geral', emoji: '🏅', categoria: 'ranking', requisito: 'Top 100', fpReward: 100, progresso: 0, desbloqueada: false, raras: true },
+  { id: '18', nome: 'Campeao Semanal', descricao: 'Fique em 1º lugar no ranking semanal', emoji: '🏆', categoria: 'ranking', requisito: '1º lugar', fpReward: 150, progresso: 0, desbloqueada: false, raras: true },
 
   // Especial
-  { id: '19', nome: 'Nota 900+', descricao: 'Tire 900+ em um simulado', emoji: '🌟', categoria: 'especial', requisito: 'Nota >= 900', fpReward: 500, progresso: 0, desbloqueada: false, raras: true },
-  { id: '20', nome: 'Perfeito!', descricao: 'Acerte 100% de um simulado', emoji: '💯', categoria: 'especial', requisito: '100% acertos', fpReward: 300, progresso: 0, desbloqueada: false, raras: true },
-  { id: '21', nome: 'Early Bird', descricao: 'Seja um dos primeiros 1000 usuarios', emoji: '🐦', categoria: 'especial', requisito: 'Cadastro antigo', fpReward: 100, progresso: 100, desbloqueada: true, dataDesbloqueio: '2024-10-15', raras: true },
-  { id: '22', nome: 'Vencedor de Batalha', descricao: 'Venca sua primeira batalha 1v1', emoji: '⚔️', categoria: 'especial', requisito: '1 vitoria', fpReward: 75, progresso: 100, desbloqueada: true, dataDesbloqueio: '2024-11-10' },
-  { id: '23', nome: 'Guerreiro', descricao: 'Venca 50 batalhas 1v1', emoji: '🗡️', categoria: 'especial', requisito: '50 vitorias', fpReward: 400, progresso: 10, desbloqueada: false, raras: true },
+  { id: '19', nome: 'Nota 900+', descricao: 'Tire 900+ em um simulado', emoji: '🌟', categoria: 'especial', requisito: 'Nota >= 900', fpReward: 150, progresso: 0, desbloqueada: false, raras: true },
+  { id: '20', nome: 'Perfeito!', descricao: 'Acerte 100% de um simulado', emoji: '💯', categoria: 'especial', requisito: '100% acertos', fpReward: 100, progresso: 0, desbloqueada: false, raras: true },
+  { id: '21', nome: 'Early Bird', descricao: 'Seja um dos primeiros 1000 usuarios', emoji: '🐦', categoria: 'especial', requisito: 'Cadastro antigo', fpReward: 50, progresso: 100, desbloqueada: true, dataDesbloqueio: '2024-10-15', raras: true },
+  { id: '22', nome: 'Vencedor de Batalha', descricao: 'Venca sua primeira batalha 1v1', emoji: '⚔️', categoria: 'especial', requisito: '1 vitoria', fpReward: 35, progresso: 100, desbloqueada: true, dataDesbloqueio: '2024-11-10' },
+  { id: '23', nome: 'Guerreiro', descricao: 'Venca 50 batalhas 1v1', emoji: '🗡️', categoria: 'especial', requisito: '50 vitorias', fpReward: 150, progresso: 10, desbloqueada: false, raras: true },
 ];
 
+// Economia rebalanceada v2.0 - milestones ajustados
 const milestones: Milestone[] = [
-  { id: '1', titulo: 'Questoes Respondidas', descricao: 'Responda questoes em simulados', emoji: '📝', meta: 1000, atual: 347, unidade: 'questoes', fpBonus: 200, completo: false },
-  { id: '2', titulo: 'Horas de Estudo', descricao: 'Tempo total em Pomodoro', emoji: '⏱️', meta: 100, atual: 12, unidade: 'horas', fpBonus: 300, completo: false },
-  { id: '3', titulo: 'Acertos Consecutivos', descricao: 'Maior sequencia de acertos', emoji: '🎯', meta: 50, atual: 18, unidade: 'acertos', fpBonus: 150, completo: false },
-  { id: '4', titulo: 'Amigos Convidados', descricao: 'Amigos que se cadastraram', emoji: '👥', meta: 10, atual: 1, unidade: 'amigos', fpBonus: 500, completo: false },
-  { id: '5', titulo: 'Batalhas Vencidas', descricao: 'Vitorias no modo batalha', emoji: '⚔️', meta: 100, atual: 5, unidade: 'vitorias', fpBonus: 400, completo: false },
+  { id: '1', titulo: 'Questoes Respondidas', descricao: 'Responda questoes em simulados', emoji: '📝', meta: 1000, atual: 347, unidade: 'questoes', fpBonus: 75, completo: false },
+  { id: '2', titulo: 'Horas de Estudo', descricao: 'Tempo total em Pomodoro', emoji: '⏱️', meta: 100, atual: 12, unidade: 'horas', fpBonus: 100, completo: false },
+  { id: '3', titulo: 'Acertos Consecutivos', descricao: 'Maior sequencia de acertos', emoji: '🎯', meta: 50, atual: 18, unidade: 'acertos', fpBonus: 50, completo: false },
+  { id: '4', titulo: 'Amigos Convidados', descricao: 'Amigos que se cadastraram', emoji: '👥', meta: 10, atual: 1, unidade: 'amigos', fpBonus: 150, completo: false },
+  { id: '5', titulo: 'Batalhas Vencidas', descricao: 'Vitorias no modo batalha', emoji: '⚔️', meta: 100, atual: 5, unidade: 'vitorias', fpBonus: 125, completo: false },
 ];
 
 export default function ConquistasPage() {
@@ -107,6 +110,7 @@ export default function ConquistasPage() {
       backgroundColor: 'var(--chalkboard-bg)',
       padding: '2rem 1rem'
     }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       {/* Celebracao */}

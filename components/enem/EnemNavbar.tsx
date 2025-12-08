@@ -11,7 +11,7 @@ const links = [
   { href: "/enem/dashboard", label: "Dashboard" },
   { href: "/enem/loja", label: "Loja" },
   { href: "/enem/desafios", label: "Desafios" },
-  { href: "/enem/planos", label: "Planos" },
+  { href: "/planos", label: "Planos" },
 ];
 
 export function EnemNavbar() {

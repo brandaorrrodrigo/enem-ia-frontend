@@ -1,0 +1,159 @@
+{
+  "id": "red-1",
+  "slug": "estrutura-dissertativa",
+  "titulo": "Estrutura da Dissertacao-Argumentativa",
+  "categoria": "redacao",
+  "nivel": "Basico",
+  "descricao": "Aprenda a estruturar uma redacao dissertativa-argumentativa nota 1000 no ENEM.",
+  "icone": "✍️",
+  "cor": "from-pink-500 to-rose-500",
+  "tempoEstimado": "2h30",
+  "fpRecompensa": 250,
+  "tags": ["redacao", "dissertacao", "argumentacao", "enem", "nota-1000"],
+  "modulos": [
+    {
+      "id": "m1",
+      "titulo": "Visao Geral da Estrutura",
+      "resumo": "A redacao do ENEM segue o modelo dissertativo-argumentativo com estrutura bem definida: introducao, desenvolvimento e conclusao.",
+      "topicos": [
+        "INTRODUCAO (1 paragrafo): Apresenta o tema + tese (seu posicionamento)",
+        "DESENVOLVIMENTO (2 paragrafos): Argumentos que defendem sua tese",
+        "CONCLUSAO (1 paragrafo): Proposta de intervencao detalhada",
+        "EXTENSAO IDEAL: 25-30 linhas no total",
+        "ESTRUTURA: Intro (5-7 linhas) + D1 (7-8) + D2 (7-8) + Conclusao (7-8)"
+      ],
+      "exemplos": [
+        "Intro: Contexto historico/social + problematizacao + tese",
+        "D1: Argumento 1 + repertorio + analise + conectar com tese",
+        "D2: Argumento 2 + repertorio + analise + conectar com tese",
+        "Conclusao: Retomada + Proposta (agente, acao, meio, finalidade, detalhamento)"
+      ],
+      "dicas": [
+        "NUNCA use primeira pessoa do singular (eu acho, na minha opiniao)",
+        "Use terceira pessoa ou primeira do plural (observa-se, devemos)",
+        "Cada paragrafo deve ter UMA ideia central bem desenvolvida",
+        "Conectivos sao ESSENCIAIS para coesao entre paragrafos"
+      ]
+    },
+    {
+      "id": "m2",
+      "titulo": "Introducao Estrategica",
+      "resumo": "A introducao deve contextualizar o tema, apresentar a problematica e expor claramente sua tese.",
+      "topicos": [
+        "ESTRATEGIA 1 - ALUSAO HISTORICA: 'Desde a Revolucao Industrial...'",
+        "ESTRATEGIA 2 - CITACAO: 'Segundo o filosofo X...'",
+        "ESTRATEGIA 3 - DADOS ESTATISTICOS: 'De acordo com pesquisa do IBGE...'",
+        "ESTRATEGIA 4 - COMPARACAO: 'Diferentemente de paises como...'",
+        "TESE: Deve aparecer CLARAMENTE no final da introducao",
+        "ESTRUTURA: Repertorio + Contextualizacao + Tese"
+      ],
+      "exemplos": [
+        "ALUSAO: 'A Declaracao Universal dos Direitos Humanos, de 1948, assegura a todos os individuos o direito a saude. Contudo, no Brasil contemporaneo, esse direito e frequentemente negligenciado, evidenciando a necessidade de medidas efetivas para garantir acesso universal aos servicos de saude.'",
+        "CITACAO: 'O sociologo Zygmunt Bauman, em sua obra \"Modernidade Liquida\", analisa as relacoes superficiais da sociedade contemporanea. Nesse contexto, o aumento da depressao entre jovens brasileiros reflete essa fragilidade dos lacos sociais, demandando acoes urgentes.'",
+        "DADOS: 'Segundo dados do Ministerio da Saude, o numero de casos de ansiedade entre adolescentes cresceu 40% na ultima decada. Esse cenario alarmante evidencia a urgencia de politicas de saude mental nas escolas brasileiras.'"
+      ],
+      "dicas": [
+        "Escolha repertorios que voce DOMINE - nao invente dados",
+        "A tese deve ser CLARA e responder: qual sua posicao sobre o tema?",
+        "Evite introducoes genericas demais ('Desde os primordios...')",
+        "Repertorio PERTINENTE vale mais que repertorio rebuscado"
+      ],
+      "questoes": [
+        {
+          "id": "q1-intro",
+          "enunciado": "Qual elemento e OBRIGATORIO em uma introducao de redacao do ENEM?",
+          "alternativas": {
+            "A": "Citacao de filosofo",
+            "B": "Dados estatisticos",
+            "C": "Tese clara sobre o tema",
+            "D": "Referencia historica",
+            "E": "Pergunta retorica"
+          },
+          "correta": "C",
+          "explicacao": "A tese e o unico elemento OBRIGATORIO na introducao. Citacoes, dados e referencias sao estrategias opcionais para contextualizar. Sem tese clara, o corretor nao identifica seu posicionamento.",
+          "dificuldade": "facil",
+          "tags": ["introducao", "tese"]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "titulo": "Desenvolvimento Argumentativo",
+      "resumo": "Cada paragrafo de desenvolvimento deve conter: topico frasal, repertorio, argumentacao e conexao com a tese.",
+      "topicos": [
+        "TOPICO FRASAL: Primeira frase apresenta a ideia central do paragrafo",
+        "REPERTORIO: Citacao, dado, exemplo que sustenta o argumento",
+        "ARGUMENTACAO: Sua analise critica conectando repertorio ao tema",
+        "ARREMATACAO: Frase final que retoma a tese",
+        "CONECTIVOS: Iniciar com 'Primeiramente', 'Alem disso', 'Outrossim'"
+      ],
+      "exemplos": [
+        "ESTRUTURA D1: 'Primeiramente, e necessario analisar [ASPECTO 1]. Segundo [AUTOR/DADO], [REPERTORIO]. Nessa perspectiva, [ANALISE CRITICA]. Assim, [CONEXAO COM TESE].'",
+        "ESTRUTURA D2: 'Outrossim, [ASPECTO 2] contribui para a problematica. De acordo com [FONTE], [REPERTORIO]. Dessa forma, [ANALISE]. Portanto, [RETOMADA DA TESE].'"
+      ],
+      "dicas": [
+        "Cada desenvolvimento = 1 CAUSA ou 1 ASPECTO do problema",
+        "D1 pode focar em causa social, D2 em causa governamental",
+        "Repertorio sociocultural PRODUTIVO: conectar, nao so citar",
+        "Evite apenas descrever o problema - ANALISE criticamente"
+      ],
+      "questoes": [
+        {
+          "id": "q1-dev",
+          "enunciado": "O que torna um repertorio sociocultural PRODUTIVO na redacao do ENEM?",
+          "alternativas": {
+            "A": "Ser de autor famoso",
+            "B": "Estar conectado ao argumento e tese",
+            "C": "Ser uma citacao longa",
+            "D": "Ser um dado estatistico",
+            "E": "Mencionar filosofos gregos"
+          },
+          "correta": "B",
+          "explicacao": "Repertorio produtivo e aquele que se CONECTA ao argumento e a tese, contribuindo para a argumentacao. Nao basta citar - e preciso usar o repertorio para fundamentar sua analise.",
+          "dificuldade": "medio",
+          "tags": ["desenvolvimento", "repertorio"]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "titulo": "Proposta de Intervencao",
+      "resumo": "A proposta de intervencao deve conter 5 elementos: agente, acao, meio, finalidade e detalhamento.",
+      "topicos": [
+        "AGENTE: Quem vai executar a acao (Governo, escolas, midia, sociedade)",
+        "ACAO: O que sera feito (criar, implementar, promover, fiscalizar)",
+        "MEIO/MODO: Como sera feito (por meio de, atraves de, mediante)",
+        "FINALIDADE: Para que serve (a fim de, com o objetivo de, para que)",
+        "DETALHAMENTO: Especificacao de qualquer elemento anterior"
+      ],
+      "exemplos": [
+        "COMPLETA: 'Portanto, cabe ao Ministerio da Educacao (AGENTE) implementar disciplinas de educacao emocional (ACAO) nas escolas publicas, por meio de capacitacao de professores e criacao de material didatico especifico (MEIO/DETALHAMENTO), a fim de desenvolver habilidades socioemocionais nos estudantes e reduzir indices de ansiedade juvenil (FINALIDADE).'",
+        "ELEMENTOS: Agente (MEC) + Acao (implementar) + Meio (capacitacao) + Detalhamento (material didatico) + Finalidade (desenvolver habilidades)"
+      ],
+      "dicas": [
+        "DETALHAMENTO e o 5º elemento - diferencia nota 160 de nota 200",
+        "Proposta deve RESPEITAR DIREITOS HUMANOS",
+        "Evite propostas vagas: 'O governo deve fazer algo'",
+        "Proposta deve ser VIAVEL e conectada aos argumentos",
+        "Pode ter mais de uma proposta, mas uma COMPLETA e suficiente"
+      ],
+      "questoes": [
+        {
+          "id": "q1-prop",
+          "enunciado": "Qual elemento da proposta de intervencao diferencia uma nota 160 de uma nota 200 na Competencia 5?",
+          "alternativas": {
+            "A": "Agente",
+            "B": "Acao",
+            "C": "Meio",
+            "D": "Finalidade",
+            "E": "Detalhamento"
+          },
+          "correta": "E",
+          "explicacao": "O DETALHAMENTO e o 5º elemento que garante a nota maxima na Competencia 5. Uma proposta com agente, acao, meio e finalidade atinge 160 pontos. O detalhamento (especificacao de qualquer elemento) eleva para 200.",
+          "dificuldade": "medio",
+          "tags": ["proposta", "competencia-5"]
+        }
+      ]
+    }
+  ]
+}

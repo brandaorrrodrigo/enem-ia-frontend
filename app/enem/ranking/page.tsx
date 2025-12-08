@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
 import LeaderboardTable from '@/components/social/LeaderboardTable';
 import LeagueCard from '@/components/social/LeagueCard';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface UserData {
   nome: string;
@@ -51,6 +52,7 @@ export default function RankingPage() {
   if (loading) {
     return (
       <div className="container" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <FloatingBackButton />
         <div style={{ textAlign: 'center' }}>
           <div style={{
             width: '48px',
@@ -73,6 +75,7 @@ export default function RankingPage() {
 
   return (
     <div className="container" style={{ minHeight: '100vh', paddingTop: '2rem', paddingBottom: '2rem' }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       {/* Header */}

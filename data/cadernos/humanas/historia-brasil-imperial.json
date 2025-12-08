@@ -1,0 +1,1165 @@
+{
+  "id": "historia-brasil-imperial",
+  "slug": "historia-brasil-imperial",
+  "titulo": "História do Brasil Imperial",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "O período imperial brasileiro (1822-1889), incluindo Primeiro Reinado, Regências, Segundo Reinado, escravidão, abolição e proclamação da República.",
+  "icone": "Crown",
+  "cor": "from-yellow-600 to-amber-600",
+  "tempoEstimado": "10 horas",
+  "fpRecompensa": 500,
+  "tags": ["história", "brasil império", "d. pedro", "abolição", "ENEM"],
+  "modulos": [
+    {
+      "id": "m51",
+      "titulo": "Primeiro Reinado (1822-1831)",
+      "resumo": "O governo de D. Pedro I, a Constituição de 1824, conflitos políticos e a abdicação.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Primeiro Reinado foi o período inicial do Brasil independente, marcado por conflitos entre o imperador português D. Pedro I e as elites brasileiras. A Constituição outorgada, o autoritarismo imperial e a crise econômica levaram à abdicação em 1831. No ENEM, esse período é cobrado em relação à formação do Estado brasileiro e às tensões entre liberalismo e autoritarismo."
+        },
+        {
+          "titulo": "Consolidação da Independência",
+          "conteudo": "A independência (1822) não foi aceita imediatamente em todo o território. Guerras de independência: na Bahia (forte resistência portuguesa), Maranhão, Grão-Pará e Cisplatina. Mercenários contratados (como Lord Cochrane) ajudaram na campanha naval. Reconhecimento internacional: Inglaterra mediou o reconhecimento português (1825) em troca de indenização de 2 milhões de libras (empréstimo inglês) e tratados comerciais favoráveis à Inglaterra. EUA reconheceram em 1824 (Doutrina Monroe)."
+        },
+        {
+          "titulo": "Constituição de 1824",
+          "conteudo": "D. Pedro I convocou Assembleia Constituinte (1823), mas a dissolveu quando esta limitou seus poderes ('Noite da Agonia'). Outorgou Constituição em 1824 com: quatro poderes (além dos três tradicionais, o Poder Moderador, exclusivo do imperador); voto censitário (só homens livres com renda mínima votavam); padroado (Estado controlava a Igreja); centralização (províncias subordinadas ao Rio). A Constituição era liberal na forma, mas autoritária na prática, com o Poder Moderador permitindo ao imperador dissolver a Câmara, nomear senadores e ministros."
+        },
+        {
+          "titulo": "Crises e Abdicação",
+          "conteudo": "Confederação do Equador (1824): revolta republicana e federalista em Pernambuco e províncias vizinhas. Reprimida violentamente; Frei Caneca foi executado. Guerra da Cisplatina (1825-1828): conflito pela região que resultou na independência do Uruguai. Desgastou D. Pedro e drenou recursos. Crise econômica: dívida externa, inflação, déficit comercial. Crise sucessória portuguesa: D. Pedro envolveu-se na sucessão do trono português (para sua filha Maria), sendo acusado de priorizar interesses portugueses. Abdicação (7/abril/1831): pressionado por manifestações, D. Pedro I abdicou em favor de seu filho Pedro de Alcântara (5 anos) e partiu para Portugal."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Poder Moderador",
+          "descricao": "Quarto poder exclusivo do imperador, 'chave de toda organização política'. Permitia dissolver a Câmara, nomear senadores (vitalícios), conceder anistia, suspender magistrados. Dava ao imperador poder acima dos demais, gerando conflitos com o liberalismo."
+        },
+        {
+          "titulo": "Confederação do Equador (1824)",
+          "descricao": "Revolta em Pernambuco contra o autoritarismo de D. Pedro I e a Constituição outorgada. Proclamou república e federação. Líderes: Frei Caneca, Cipriano Barata, Manuel de Carvalho. Foi duramente reprimida, com execuções."
+        }
+      ],
+      "dicas": [
+        "Poder Moderador = 4º poder, exclusivo do imperador, acima dos demais",
+        "Constituição de 1824 foi OUTORGADA (imposta), não promulgada",
+        "D. Pedro I era português - tensão com brasileiros levou à abdicação"
+      ],
+      "questoes": [
+        {
+          "id": "q51-1",
+          "enunciado": "A Constituição de 1824, outorgada por D. Pedro I, estabelecia o Poder Moderador, que consistia em:",
+          "alternativas": {
+            "A": "Poder exercido pelo povo através de plebiscitos",
+            "B": "Poder exclusivo do imperador, que podia dissolver a Câmara, nomear senadores e intervir nos demais poderes",
+            "C": "Poder judicial independente de qualquer interferência",
+            "D": "Poder compartilhado igualmente entre imperador e parlamento",
+            "E": "Poder exercido exclusivamente pelo Senado"
+          },
+          "correta": "B",
+          "explicacao": "O Poder Moderador era o 'quarto poder', exclusivo do imperador, que o colocava acima dos demais poderes. Permitia dissolver a Câmara dos Deputados, nomear senadores vitalícios, conceder anistia e intervir nos outros poderes. Era a 'chave de toda organização política'.",
+          "dificuldade": "medio",
+          "tags": ["poder moderador", "constituição 1824", "d. pedro I"]
+        },
+        {
+          "id": "q51-2",
+          "enunciado": "A Confederação do Equador (1824) foi um movimento que:",
+          "alternativas": {
+            "A": "Apoiou incondicionalmente D. Pedro I e a Constituição outorgada",
+            "B": "Defendeu a república e o federalismo contra o autoritarismo imperial",
+            "C": "Propôs a reunificação do Brasil com Portugal",
+            "D": "Lutou pela manutenção da escravidão contra tendências abolicionistas",
+            "E": "Foi liderada pelos grandes proprietários de escravizados do Sul"
+          },
+          "correta": "B",
+          "explicacao": "A Confederação do Equador foi uma revolta em Pernambuco e províncias vizinhas contra o autoritarismo de D. Pedro I (dissolução da Constituinte, outorga da Constituição centralizadora). Proclamou república e federação, inspirada na Revolução Pernambucana de 1817. Foi reprimida com execuções.",
+          "dificuldade": "medio",
+          "tags": ["confederação do equador", "república", "pernambuco"]
+        },
+        {
+          "id": "q51-3",
+          "enunciado": "O reconhecimento da independência do Brasil por Portugal (1825) ocorreu mediante:",
+          "alternativas": {
+            "A": "Vitória militar brasileira sobre tropas portuguesas na Europa",
+            "B": "Pagamento de indenização a Portugal, financiada por empréstimo inglês, e tratados favoráveis à Inglaterra",
+            "C": "Intervenção militar francesa em favor do Brasil",
+            "D": "Renúncia de D. Pedro I ao trono brasileiro",
+            "E": "Anexação de territórios portugueses na África ao Brasil"
+          },
+          "correta": "B",
+          "explicacao": "O reconhecimento português foi mediado pela Inglaterra e custou caro: o Brasil pagou 2 milhões de libras de indenização a Portugal (com empréstimo inglês que iniciou a dívida externa) e assinou tratados comerciais favoráveis aos ingleses. Foi independência negociada, não conquistada plenamente.",
+          "dificuldade": "medio",
+          "tags": ["reconhecimento", "independência", "inglaterra"]
+        },
+        {
+          "id": "q51-4",
+          "enunciado": "A abdicação de D. Pedro I em 1831 deveu-se a:",
+          "alternativas": {
+            "A": "Sua morte natural após longa doença",
+            "B": "Pressões de manifestações populares e conflitos com elites brasileiras descontentes com seu autoritarismo e ligações com Portugal",
+            "C": "Exigência da Inglaterra para renovar tratados comerciais",
+            "D": "Vitória militar dos republicanos na Guerra da Cisplatina",
+            "E": "Decisão do Poder Moderador que o afastou do trono"
+          },
+          "correta": "B",
+          "explicacao": "D. Pedro I abdicou pressionado por manifestações populares e conflitos com elites brasileiras. O autoritarismo (Constituição outorgada, repressão), a crise econômica, a Guerra da Cisplatina e seu envolvimento com a sucessão portuguesa geraram oposição. Abdicou em favor do filho de 5 anos.",
+          "dificuldade": "facil",
+          "tags": ["abdicação", "d. pedro I", "1831"]
+        },
+        {
+          "id": "q51-5",
+          "enunciado": "A Guerra da Cisplatina (1825-1828) resultou:",
+          "alternativas": {
+            "A": "Na anexação definitiva da região ao Brasil",
+            "B": "Na independência do Uruguai como Estado soberano",
+            "C": "Na incorporação da região à Argentina",
+            "D": "Na criação de uma república federada com o Brasil",
+            "E": "Na devolução da região a Portugal"
+          },
+          "correta": "B",
+          "explicacao": "A Guerra da Cisplatina (Província Cisplatina, atual Uruguai) terminou com a mediação inglesa e a independência da região como República Oriental do Uruguai (1828). A guerra desgastou o governo de D. Pedro I, drenando recursos e gerando críticas.",
+          "dificuldade": "facil",
+          "tags": ["cisplatina", "uruguai", "guerra"]
+        }
+      ]
+    },
+    {
+      "id": "m52",
+      "titulo": "Período Regencial (1831-1840)",
+      "resumo": "As regências, reformas liberais, revoltas provinciais e a antecipação da maioridade de D. Pedro II.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Período Regencial (1831-1840) foi o mais turbulento do Império, com D. Pedro II ainda criança e regentes governando em seu nome. Reformas liberais, disputas entre liberais e conservadores, e múltiplas revoltas provinciais caracterizam o período. No ENEM, esse tema exige conhecer as revoltas e compreender as tensões entre centralização e federalismo."
+        },
+        {
+          "titulo": "Organização Política",
+          "conteudo": "Com a abdicação de D. Pedro I, seu filho Pedro de Alcântara tinha apenas 5 anos. A Constituição previa regência até sua maioridade (18 anos). Fases: Regência Trina Provisória (1831), Regência Trina Permanente (1831-1835), Regência Una (1835-1840). Grupos políticos: Restauradores (caramurus - queriam volta de D. Pedro I), Liberais Moderados (chimangos - dominou as regências), Liberais Exaltados (farroupilhas - queriam federalismo radical). O Ato Adicional de 1834 descentralizou o poder (assembleias provinciais) e extinguiu o Conselho de Estado. Foi parcialmente revertido pela Lei Interpretativa (1840)."
+        },
+        {
+          "titulo": "Revoltas Regenciais",
+          "conteudo": "O período foi marcado por revoltas provinciais com diferentes composições e projetos: Cabanagem (Pará, 1835-1840): revolta popular com participação de índios, negros e mestiços pobres (cabanos). A mais sangrenta - até 30 mil mortos. Chegaram a tomar Belém. Balaiada (Maranhão, 1838-1841): revolta popular de vaqueiros, escravizados fugidos e sertanejos contra a elite local. Sabinada (Bahia, 1837-1838): revolta urbana que proclamou república provisória até a maioridade de D. Pedro. Farroupilha (Rio Grande do Sul, 1835-1845): a mais longa, liderada por estancieiros gaúchos, proclamou a República Rio-Grandense. Anistia negociada em 1845."
+        },
+        {
+          "titulo": "Golpe da Maioridade",
+          "conteudo": "Diante das revoltas e instabilidade, liberais articularam a antecipação da maioridade de D. Pedro II. Em 1840, com apenas 14 anos, Pedro foi declarado maior e assumiu o trono ('Golpe da Maioridade' ou 'Maioridade'). Esperava-se que a presença do imperador estabilizasse o país. A estratégia funcionou: as revoltas foram sendo pacificadas e o Segundo Reinado trouxe relativa estabilidade."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Cabanagem",
+          "descricao": "Revolta popular no Pará (1835-1840) com participação de índios, negros, mestiços e brancos pobres (cabanos). Foi a única revolta em que os revoltosos efetivamente governaram uma província. Reprimida com extrema violência - até 30 mil mortos, 20% da população."
+        },
+        {
+          "titulo": "Farroupilha",
+          "descricao": "Revolta no Rio Grande do Sul (1835-1845), a mais longa do período. Estancieiros insatisfeitos com impostos proclamaram a República Rio-Grandense. Giuseppe Garibaldi participou. Terminou com anistia negociada, sem punições."
+        }
+      ],
+      "dicas": [
+        "Cabanagem = popular, Pará, a mais sangrenta (30 mil mortos)",
+        "Farroupilha = elite gaúcha, a mais longa (10 anos), terminou em anistia",
+        "Golpe da Maioridade (1840) = D. Pedro II com 14 anos para estabilizar o país"
+      ],
+      "questoes": [
+        {
+          "id": "q52-1",
+          "enunciado": "O Período Regencial (1831-1840) foi marcado por intensa instabilidade política. Uma característica desse período foi:",
+          "alternativas": {
+            "A": "A estabilidade política e ausência de conflitos armados",
+            "B": "Múltiplas revoltas provinciais com diferentes composições sociais e projetos políticos",
+            "C": "O governo absolutista de D. Pedro I",
+            "D": "A abolição da escravidão em todo o território",
+            "E": "A consolidação definitiva da república federativa"
+          },
+          "correta": "B",
+          "explicacao": "O Período Regencial foi extremamente turbulento, com diversas revoltas provinciais: Cabanagem (Pará), Balaiada (Maranhão), Sabinada (Bahia), Farroupilha (Rio Grande do Sul), entre outras. Cada uma tinha composição social e projetos diferentes, mas expressavam tensões acumuladas.",
+          "dificuldade": "facil",
+          "tags": ["regência", "revoltas", "instabilidade"]
+        },
+        {
+          "id": "q52-2",
+          "enunciado": "A Cabanagem (Pará, 1835-1840) diferenciava-se de outras revoltas regenciais por:",
+          "alternativas": {
+            "A": "Ser liderada exclusivamente pela elite local",
+            "B": "Ter ampla participação popular, incluindo índios, negros e mestiços pobres",
+            "C": "Defender a restauração de D. Pedro I ao trono",
+            "D": "Propor aliança com a Inglaterra contra o governo imperial",
+            "E": "Não envolver qualquer forma de violência"
+          },
+          "correta": "B",
+          "explicacao": "A Cabanagem teve ampla participação popular: índios, negros (escravizados e libertos), mestiços e brancos pobres (cabanos). Foi a única revolta em que os revoltosos governaram a província. Foi também a mais sangrenta, com até 30 mil mortos na repressão.",
+          "dificuldade": "medio",
+          "tags": ["cabanagem", "revolta popular", "pará"]
+        },
+        {
+          "id": "q52-3",
+          "enunciado": "A Revolução Farroupilha (1835-1845) foi a mais longa revolta do período regencial. Sobre ela, é correto afirmar que:",
+          "alternativas": {
+            "A": "Foi uma revolta popular de escravizados contra a elite",
+            "B": "Foi liderada pela elite gaúcha (estancieiros) e proclamou a República Rio-Grandense",
+            "C": "Defendia a restauração de D. Pedro I ao trono",
+            "D": "Terminou com a execução de todos os líderes rebeldes",
+            "E": "Ocorreu no Nordeste contra o domínio sulista"
+          },
+          "correta": "B",
+          "explicacao": "A Farroupilha foi liderada por estancieiros gaúchos insatisfeitos com impostos sobre o charque e a política imperial. Proclamaram a República Rio-Grandense e chegaram a criar a República Juliana (Santa Catarina). Terminou em 1845 com anistia negociada, sem punições aos líderes.",
+          "dificuldade": "medio",
+          "tags": ["farroupilha", "rio grande do sul", "república"]
+        },
+        {
+          "id": "q52-4",
+          "enunciado": "O 'Golpe da Maioridade' (1840) consistiu em:",
+          "alternativas": {
+            "A": "Golpe militar que derrubou D. Pedro II",
+            "B": "Antecipação da maioridade de D. Pedro II aos 14 anos para assumir o trono e estabilizar o país",
+            "C": "Restauração de D. Pedro I ao trono brasileiro",
+            "D": "Proclamação da república pelos liberais exaltados",
+            "E": "Dissolução do parlamento pelo regente Feijó"
+          },
+          "correta": "B",
+          "explicacao": "O 'Golpe da Maioridade' antecipou a maioridade de D. Pedro II (prevista para os 18 anos) para os 14 anos. Liberais articularam a medida para estabilizar o país, abalado pelas revoltas regenciais. A presença do imperador ajudou a pacificar as províncias rebeldes.",
+          "dificuldade": "facil",
+          "tags": ["maioridade", "d. pedro II", "1840"]
+        },
+        {
+          "id": "q52-5",
+          "enunciado": "O Ato Adicional de 1834 foi uma reforma da Constituição de 1824 que:",
+          "alternativas": {
+            "A": "Aumentou os poderes do imperador e centralizou a administração",
+            "B": "Criou assembleias provinciais e descentralizou o poder político",
+            "C": "Aboliu a escravidão em todo o território",
+            "D": "Estabeleceu o voto universal para todos os brasileiros",
+            "E": "Restaurou o absolutismo monárquico"
+          },
+          "correta": "B",
+          "explicacao": "O Ato Adicional de 1834 descentralizou o poder: criou assembleias legislativas provinciais (com maior autonomia), substituiu a regência trina pela una (eleita) e extinguiu o Conselho de Estado. Foi parcialmente revertido pela Lei Interpretativa de 1840, que recentralizou o poder.",
+          "dificuldade": "medio",
+          "tags": ["ato adicional", "descentralização", "1834"]
+        }
+      ]
+    },
+    {
+      "id": "m53",
+      "titulo": "Segundo Reinado: Política e Economia",
+      "resumo": "O governo de D. Pedro II, o parlamentarismo às avessas, a economia cafeeira e a modernização do Brasil.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Segundo Reinado (1840-1889) foi o período mais longo e estável do Império. Sob D. Pedro II, o Brasil consolidou-se como Estado nacional, desenvolveu a economia cafeeira e passou por modernização parcial. No ENEM, esse período é frequentemente cobrado em relação ao café, às transformações econômicas e às contradições de um império escravista que se modernizava."
+        },
+        {
+          "titulo": "Sistema Político Imperial",
+          "conteudo": "O sistema político do Segundo Reinado ficou conhecido como 'parlamentarismo às avessas': enquanto no parlamentarismo clássico o parlamento escolhe o primeiro-ministro, no Brasil o imperador (via Poder Moderador) escolhia o presidente do Conselho de Ministros e dissolvia a Câmara para eleger maioria favorável. Partidos: Conservadores ('saquaremas') e Liberais ('luzias'). Diferiam em nuances, não em essência - ambos representavam a elite escravocrata. Revezavam-se no poder conforme a vontade imperial. Eleições: voto censitário e fraudes generalizadas. O imperador era o 'fiel da balança' que garantia estabilidade alternando os partidos."
+        },
+        {
+          "titulo": "Economia Cafeeira",
+          "conteudo": "O café tornou-se o principal produto de exportação brasileiro, substituindo o açúcar em decadência. Vale do Paraíba (RJ, SP, MG): primeira região cafeeira, com produção baseada em trabalho escravo e latifúndios tradicionais. Entrou em decadência com esgotamento do solo e fim da escravidão. Oeste Paulista: nova região cafeeira, com terras férteis (terra roxa), produção mais moderna e transição para trabalho imigrante. Barões do café: elite cafeicultora que dominou a política imperial, especialmente os do Vale do Paraíba inicialmente, depois os do Oeste Paulista."
+        },
+        {
+          "titulo": "Modernização e Contradições",
+          "conteudo": "O Segundo Reinado conheceu modernização parcial: ferrovias (ligando fazendas aos portos), telégrafo, iluminação a gás, bancos. Visconde de Mauá foi símbolo do empresariado modernizador. Tarifa Alves Branco (1844): elevou impostos de importação para proteger indústria nascente (parcialmente revertida depois). Contradição fundamental: o Brasil modernizava-se materialmente mantendo a escravidão, instituição incompatível com o capitalismo industrial. A abolição gradual (Lei do Ventre Livre 1871, Lei dos Sexagenários 1885, Lei Áurea 1888) reflete essa contradição."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Parlamentarismo às Avessas",
+          "descricao": "No parlamentarismo brasileiro, o imperador (não o parlamento) escolhia o presidente do Conselho de Ministros e depois dissolvia a Câmara para eleger maioria favorável. O processo era inverso ao clássico, daí 'às avessas'."
+        },
+        {
+          "titulo": "Mauá e a Modernização",
+          "descricao": "Irineu Evangelista de Sousa, Visconde de Mauá, foi empresário que construiu ferrovias, bancos, companhias de navegação, iluminação a gás. Simbolizou o esforço modernizador, mas enfrentou obstáculos (economia escravista, concorrência inglesa) e faliu."
+        }
+      ],
+      "dicas": [
+        "Parlamentarismo às avessas = imperador escolhe ministro, depois elege parlamento favorável",
+        "Café = principal produto, primeiro Vale do Paraíba (escravista), depois Oeste Paulista (imigrantes)",
+        "Modernização + escravidão = contradição fundamental do Segundo Reinado"
+      ],
+      "questoes": [
+        {
+          "id": "q53-1",
+          "enunciado": "O sistema político do Segundo Reinado ficou conhecido como 'parlamentarismo às avessas' porque:",
+          "alternativas": {
+            "A": "O parlamento tinha poder absoluto sobre o imperador",
+            "B": "O imperador escolhia o presidente do Conselho de Ministros e depois elegia maioria parlamentar favorável",
+            "C": "Não havia parlamento no Segundo Reinado",
+            "D": "Os ministros eram eleitos diretamente pelo povo",
+            "E": "O sistema era idêntico ao parlamentarismo inglês clássico"
+          },
+          "correta": "B",
+          "explicacao": "No parlamentarismo clássico, o parlamento escolhe o primeiro-ministro. No Brasil, o processo era inverso: o imperador, usando o Poder Moderador, escolhia o presidente do Conselho de Ministros e depois dissolvia a Câmara para eleger maioria favorável ao gabinete. Daí 'às avessas'.",
+          "dificuldade": "medio",
+          "tags": ["parlamentarismo", "poder moderador", "segundo reinado"]
+        },
+        {
+          "id": "q53-2",
+          "enunciado": "A economia cafeeira no Segundo Reinado desenvolveu-se em duas regiões principais. A diferença entre o Vale do Paraíba e o Oeste Paulista era:",
+          "alternativas": {
+            "A": "Ambas utilizavam exclusivamente trabalho escravo sem diferenças",
+            "B": "O Vale do Paraíba era mais tradicional e escravista; o Oeste Paulista adotou trabalho imigrante e técnicas mais modernas",
+            "C": "O Oeste Paulista nunca produziu café, apenas açúcar",
+            "D": "O Vale do Paraíba utilizava trabalho imigrante desde o início",
+            "E": "Não havia diferença significativa entre as duas regiões"
+          },
+          "correta": "B",
+          "explicacao": "O Vale do Paraíba (RJ, SP, MG) foi a primeira região cafeeira, com produção baseada em latifúndio escravista tradicional. Com o esgotamento do solo e a crise da escravidão, decaiu. O Oeste Paulista, com terras novas e férteis, adotou trabalho imigrante e técnicas mais modernas, tornando-se dominante.",
+          "dificuldade": "medio",
+          "tags": ["café", "vale do paraíba", "oeste paulista"]
+        },
+        {
+          "id": "q53-3",
+          "enunciado": "Os partidos Conservador e Liberal no Segundo Reinado:",
+          "alternativas": {
+            "A": "Tinham profundas diferenças ideológicas e representavam classes sociais opostas",
+            "B": "Diferiam em nuances, mas ambos representavam a elite escravocrata e revezavam-se no poder conforme a vontade imperial",
+            "C": "O Partido Liberal defendia a abolição imediata da escravidão",
+            "D": "O Partido Conservador defendia a república federativa",
+            "E": "Nunca participaram do governo, sendo sempre oposição"
+          },
+          "correta": "B",
+          "explicacao": "Conservadores ('saquaremas') e Liberais ('luzias') tinham diferenças menores do que os nomes sugerem. Ambos representavam a elite escravocrata e proprietária. Revezavam-se no poder conforme a decisão do imperador, que usava o Poder Moderador para alterná-los e garantir estabilidade.",
+          "dificuldade": "medio",
+          "tags": ["partidos", "conservadores", "liberais"]
+        },
+        {
+          "id": "q53-4",
+          "enunciado": "O Visconde de Mauá simbolizou, no Segundo Reinado:",
+          "alternativas": {
+            "A": "A defesa intransigente da escravidão contra qualquer mudança",
+            "B": "O esforço de modernização e industrialização, com ferrovias, bancos e empresas",
+            "C": "A resistência às ferrovias em favor do transporte animal",
+            "D": "A luta pela proclamação da república",
+            "E": "A defesa do livre comércio sem qualquer proteção à indústria nacional"
+          },
+          "correta": "B",
+          "explicacao": "Irineu Evangelista de Sousa, Visconde de Mauá, foi empresário que investiu em ferrovias, bancos, companhias de navegação, estaleiros, iluminação a gás. Simbolizou o esforço modernizador do Segundo Reinado, mas enfrentou obstáculos (economia escravista, concorrência estrangeira) e acabou falindo.",
+          "dificuldade": "facil",
+          "tags": ["mauá", "modernização", "ferrovias"]
+        },
+        {
+          "id": "q53-5",
+          "enunciado": "A contradição fundamental do Segundo Reinado, que limitava sua modernização, era:",
+          "alternativas": {
+            "A": "A ausência de recursos naturais para industrialização",
+            "B": "A manutenção da escravidão, incompatível com o desenvolvimento capitalista pleno",
+            "C": "A dependência exclusiva da produção açucareira",
+            "D": "O isolamento internacional que impedia qualquer comércio",
+            "E": "A ausência de qualquer elite letrada ou empresarial"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil do Segundo Reinado modernizava-se parcialmente (ferrovias, telégrafo, bancos), mas mantinha a escravidão. A contradição era profunda: a escravidão limitava o mercado consumidor, impedia a formação de mão de obra livre qualificada e era crescentemente condenada internacionalmente. Essa contradição só se resolveu em 1888.",
+          "dificuldade": "medio",
+          "tags": ["escravidão", "modernização", "contradição"]
+        }
+      ]
+    },
+    {
+      "id": "m54",
+      "titulo": "Segundo Reinado: Política Externa e Guerras",
+      "resumo": "A política externa do Segundo Reinado, as intervenções no Prata e a Guerra do Paraguai.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A política externa do Segundo Reinado foi marcada pelas relações com a Inglaterra (principal parceira comercial e credora) e pelas intervenções na região do Prata. A Guerra do Paraguai (1864-1870) foi o maior conflito armado da América do Sul. No ENEM, esse tema aparece em questões sobre relações internacionais e as consequências da guerra."
+        },
+        {
+          "titulo": "Questão Platina",
+          "conteudo": "O Brasil tinha interesses estratégicos na região do Prata: garantir navegação nos rios para acesso a Mato Grosso, impedir a formação de potência rival, manter o equilíbrio regional. Intervenções: no Uruguai (apoiando facções em conflito), na Argentina (contra Rosas). O Uruguai era palco de disputa entre Brasil (apoiando Blancos ou Colorados conforme o momento) e Argentina. A instabilidade regional levou ao conflito maior."
+        },
+        {
+          "titulo": "Guerra do Paraguai (1864-1870)",
+          "conteudo": "Maior guerra da América do Sul, envolveu Brasil, Argentina e Uruguai (Tríplice Aliança) contra o Paraguai de Solano López. Causas: expansionismo paraguaio (López queria acesso ao mar via território argentino/uruguaio), intervenção brasileira no Uruguai (que López apoiava), interesses geopolíticos na região. O Paraguai, apesar de bem preparado militarmente, enfrentava três países com muito mais recursos. A guerra foi brutal, com batalhas sangrentas e epidemias. Consequências para o Paraguai: devastação demográfica (perdeu grande parte da população masculina adulta), territorial (perdeu territórios para Brasil e Argentina), econômica (destruição total). Consequências para o Brasil: dívida externa aumentada, fortalecimento do Exército (que depois participaria da proclamação da República), questionamento da escravidão (soldados negros)."
+        },
+        {
+          "titulo": "Questão Christie e Inglaterra",
+          "conteudo": "A Inglaterra era a principal parceira comercial e credora do Brasil. Questão Christie (1862-1865): crise diplomática entre Brasil e Inglaterra. O embaixador William Christie fez exigências humilhantes após incidentes (naufrágio do navio Prince of Wales, prisão de oficiais britânicos). Brasil rompeu relações, restabelecidas em 1865 com desculpas inglesas. O episódio mostrou tensões com a potência hegemônica."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Guerra do Paraguai",
+          "descricao": "O maior conflito armado da América do Sul durou 6 anos (1864-1870). O Paraguai de Solano López enfrentou a Tríplice Aliança (Brasil, Argentina, Uruguai). A guerra devastou o Paraguai, que perdeu grande parte de sua população e território."
+        },
+        {
+          "titulo": "Tríplice Aliança",
+          "descricao": "Aliança militar entre Brasil, Argentina e Uruguai contra o Paraguai. Os aliados tinham interesses diferentes: Brasil queria garantir navegação e influência; Argentina queria territórios; Uruguai estava sob influência brasileira após intervenção."
+        }
+      ],
+      "dicas": [
+        "Guerra do Paraguai = maior conflito sul-americano, Tríplice Aliança x Paraguai",
+        "Consequência para Paraguai: devastação (população, território, economia)",
+        "Consequência para Brasil: dívida, fortalecimento do Exército, questão da escravidão"
+      ],
+      "questoes": [
+        {
+          "id": "q54-1",
+          "enunciado": "A Guerra do Paraguai (1864-1870) foi o maior conflito armado da América do Sul. Os países envolvidos foram:",
+          "alternativas": {
+            "A": "Brasil e Argentina contra Uruguai e Paraguai",
+            "B": "Brasil, Argentina e Uruguai (Tríplice Aliança) contra o Paraguai",
+            "C": "Brasil e Paraguai contra Argentina e Uruguai",
+            "D": "Paraguai e Chile contra Brasil e Argentina",
+            "E": "Brasil sozinho contra os demais países platinos"
+          },
+          "correta": "B",
+          "explicacao": "A Guerra do Paraguai opôs a Tríplice Aliança (Brasil, Argentina e Uruguai) ao Paraguai de Solano López. Embora os aliados tivessem mais recursos, a guerra durou 6 anos devido à resistência paraguaia. Foi o maior e mais sangrento conflito da América do Sul.",
+          "dificuldade": "facil",
+          "tags": ["guerra do paraguai", "tríplice aliança", "solano lópez"]
+        },
+        {
+          "id": "q54-2",
+          "enunciado": "Uma das principais consequências da Guerra do Paraguai para o Brasil foi:",
+          "alternativas": {
+            "A": "A anexação de todo o território paraguaio",
+            "B": "O fortalecimento do Exército, que depois teria papel na proclamação da República",
+            "C": "A abolição imediata da escravidão durante a guerra",
+            "D": "A união definitiva com Argentina e Uruguai em confederação",
+            "E": "A transferência da capital para o Paraguai"
+          },
+          "correta": "B",
+          "explicacao": "A Guerra do Paraguai fortaleceu o Exército brasileiro, que se profissionalizou e ganhou consciência de seu peso político. Oficiais como Deodoro da Fonseca e Floriano Peixoto, veteranos da guerra, depois protagonizariam a proclamação da República (1889). A guerra também aumentou a dívida e questionou a escravidão.",
+          "dificuldade": "medio",
+          "tags": ["guerra do paraguai", "exército", "consequências"]
+        },
+        {
+          "id": "q54-3",
+          "enunciado": "O Paraguai sofreu consequências devastadoras com a Guerra (1864-1870), incluindo:",
+          "alternativas": {
+            "A": "Ganhos territoriais e fortalecimento econômico",
+            "B": "Perda de grande parte da população (especialmente masculina), territórios e destruição econômica",
+            "C": "Anexação pelo Brasil como província imperial",
+            "D": "Industrialização acelerada financiada pelos vencedores",
+            "E": "Nenhuma consequência significativa, recuperando-se rapidamente"
+          },
+          "correta": "B",
+          "explicacao": "O Paraguai foi devastado pela guerra: estima-se que perdeu 60-70% de sua população, a maioria masculina adulta. Perdeu territórios para Brasil e Argentina. A economia foi destruída. O país levou décadas para se recuperar. Foi uma das maiores catástrofes demográficas da história moderna.",
+          "dificuldade": "facil",
+          "tags": ["paraguai", "devastação", "guerra"]
+        },
+        {
+          "id": "q54-4",
+          "enunciado": "Os interesses brasileiros na região do Prata que motivaram intervenções e a Guerra do Paraguai incluíam:",
+          "alternativas": {
+            "A": "Explorar minas de ouro descobertas no Uruguai",
+            "B": "Garantir a navegação nos rios platinos (acesso a Mato Grosso) e manter o equilíbrio regional",
+            "C": "Conquistar Buenos Aires como nova capital do Império",
+            "D": "Expandir a produção açucareira para a região",
+            "E": "Libertar escravizados em território estrangeiro"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil tinha interesses estratégicos no Prata: garantir navegação nos rios (Paraná, Paraguai) para acessar a província de Mato Grosso, impedir a formação de potência rival e manter influência na região. Esses interesses motivaram intervenções no Uruguai e o conflito com o Paraguai.",
+          "dificuldade": "medio",
+          "tags": ["prata", "geopolítica", "navegação"]
+        },
+        {
+          "id": "q54-5",
+          "enunciado": "A Questão Christie (1862-1865) foi um episódio de:",
+          "alternativas": {
+            "A": "Aliança militar entre Brasil e Inglaterra contra o Paraguai",
+            "B": "Crise diplomática entre Brasil e Inglaterra após exigências humilhantes do embaixador britânico",
+            "C": "Tratado comercial extremamente favorável ao Brasil",
+            "D": "Guerra naval entre Brasil e Estados Unidos",
+            "E": "Acordo para abolição conjunta da escravidão"
+          },
+          "correta": "B",
+          "explicacao": "A Questão Christie foi crise diplomática entre Brasil e Inglaterra (1862-1865). O embaixador William Christie fez exigências humilhantes ao Brasil após incidentes (naufrágio, prisão de marinheiros). O Brasil rompeu relações diplomáticas, restabelecidas em 1865 com desculpas inglesas.",
+          "dificuldade": "dificil",
+          "tags": ["questão christie", "inglaterra", "diplomacia"]
+        }
+      ]
+    },
+    {
+      "id": "m55",
+      "titulo": "Abolição da Escravidão",
+      "resumo": "O processo de abolição da escravidão no Brasil, as leis gradualistas, o movimento abolicionista e a Lei Áurea.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil foi o último país das Américas a abolir a escravidão (1888). O processo foi lento e gradual, com leis que libertavam grupos específicos, enquanto o movimento abolicionista crescia. No ENEM, esse tema é central, exigindo compreensão das leis, dos movimentos sociais e das consequências da abolição."
+        },
+        {
+          "titulo": "Pressões pelo Fim da Escravidão",
+          "conteudo": "Pressão inglesa: desde 1807, a Inglaterra combatia o tráfico atlântico. A Lei Bill Aberdeen (1845) autorizou a marinha inglesa a apreender navios negreiros mesmo em águas brasileiras. Questões econômicas: o trabalho escravo era incompatível com o capitalismo industrial em expansão. Senhores do café do Oeste Paulista já preferiam imigrantes. Resistência dos escravizados: fugas, quilombos, revoltas. Movimento abolicionista: ganhou força nos anos 1870-80, com figuras como José do Patrocínio, Joaquim Nabuco, Luiz Gama, André Rebouças."
+        },
+        {
+          "titulo": "Leis Gradualistas",
+          "conteudo": "Lei Eusébio de Queirós (1850): proibiu o tráfico atlântico de escravizados para o Brasil. Foi cumprida, encerrando efetivamente o tráfico. Início do fim da escravidão. Lei do Ventre Livre (1871): filhos de escravizadas nascidos a partir da lei seriam livres (após 21 anos ou indenização). Na prática, pouco efetiva. Lei dos Sexagenários (1885): libertava escravizados com mais de 60 anos (poucos chegavam a essa idade, e ainda deviam trabalho compensatório). Essas leis eram gradualistas, tentando conciliar pressões abolicionistas com interesses escravistas."
+        },
+        {
+          "titulo": "Movimento Abolicionista e Lei Áurea",
+          "conteudo": "Nos anos 1880, o movimento abolicionista radicalizou-se: jornais, clubes, campanhas públicas, ajuda a fugas. Figuras: José do Patrocínio (jornalista), Joaquim Nabuco (político), Luiz Gama (advogado negro, ex-escravizado), André Rebouças (engenheiro negro). Províncias libertaram escravizados antes da lei nacional (Ceará, Amazonas, 1884). Fugas em massa esvaziavam as fazendas. Lei Áurea (13/maio/1888): assinada pela Princesa Isabel, aboliu a escravidão sem indenização aos senhores. Foi conquista do movimento social, não concessão benevolente. Consequências: liberdade formal, mas sem terra, educação ou políticas de integração. Os libertos foram marginalizados na sociedade de classes."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Movimento Abolicionista",
+          "descricao": "Nos anos 1880, intelectuais, jornalistas e ativistas intensificaram a campanha pela abolição. José do Patrocínio (jornalista), Joaquim Nabuco (político), Luiz Gama (advogado negro que libertou centenas em tribunais), André Rebouças (engenheiro) foram figuras centrais."
+        },
+        {
+          "titulo": "Lei Áurea sem Reparação",
+          "descricao": "A Lei Áurea libertou os escravizados, mas não garantiu terra, educação, emprego ou indenização. Sem políticas de integração, os libertos foram marginalizados, ocupando as piores posições na nova sociedade de classes. As consequências perduram."
+        }
+      ],
+      "dicas": [
+        "1850 = fim do tráfico (Eusébio de Queirós), 1871 = Ventre Livre, 1888 = abolição total",
+        "Brasil = último país das Américas a abolir",
+        "Lei Áurea = sem reparação, libertos marginalizados"
+      ],
+      "questoes": [
+        {
+          "id": "q55-1",
+          "enunciado": "A Lei Eusébio de Queirós (1850) foi fundamental no processo de abolição porque:",
+          "alternativas": {
+            "A": "Libertou todos os escravizados nascidos no Brasil",
+            "B": "Proibiu efetivamente o tráfico atlântico de escravizados para o Brasil",
+            "C": "Determinou a abolição imediata da escravidão",
+            "D": "Indenizou os senhores pela perda de escravizados",
+            "E": "Permitiu a expansão do tráfico para novas regiões"
+          },
+          "correta": "B",
+          "explicacao": "A Lei Eusébio de Queirós (1850) proibiu o tráfico atlântico de escravizados para o Brasil e, diferente de leis anteriores, foi efetivamente cumprida. Sem reposição de mão de obra da África, a escravidão estava condenada a prazo. Foi o início efetivo do processo de abolição.",
+          "dificuldade": "facil",
+          "tags": ["eusébio de queirós", "tráfico", "abolição"]
+        },
+        {
+          "id": "q55-2",
+          "enunciado": "A Lei do Ventre Livre (1871) determinava que:",
+          "alternativas": {
+            "A": "Todas as mulheres escravizadas seriam imediatamente libertadas",
+            "B": "Os filhos de escravizadas nascidos a partir da lei seriam livres, mas só após os 21 anos ou mediante indenização",
+            "C": "A escravidão seria abolida em todas as províncias do Norte",
+            "D": "Os senhores seriam obrigados a alforriar metade de seus escravizados",
+            "E": "O tráfico interprovincial de escravizados seria proibido"
+          },
+          "correta": "B",
+          "explicacao": "A Lei do Ventre Livre declarava livres os filhos de escravizadas nascidos a partir de 1871. Porém, ficariam sob tutela dos senhores até os 21 anos (ou 8 anos, com indenização). Na prática, foi pouco efetiva, pois os senhores mantinham o controle. Era lei gradualista.",
+          "dificuldade": "medio",
+          "tags": ["ventre livre", "gradualismo", "abolição"]
+        },
+        {
+          "id": "q55-3",
+          "enunciado": "O movimento abolicionista brasileiro nos anos 1880 caracterizou-se por:",
+          "alternativas": {
+            "A": "Defender a abolição lenta e gradual ao longo de décadas",
+            "B": "Ação intensa através de jornais, clubes, campanhas e auxílio a fugas, pressionando pela abolição imediata",
+            "C": "Apoiar a manutenção da escravidão por mais tempo",
+            "D": "Ser liderado exclusivamente por senhores de escravizados",
+            "E": "Concentrar-se apenas na capital, sem alcance nas províncias"
+          },
+          "correta": "B",
+          "explicacao": "Nos anos 1880, o movimento abolicionista radicalizou-se: jornais, clubes, conferências, campanhas públicas. Ativistas como Patrocínio, Nabuco, Luiz Gama e outros pressionaram pela abolição imediata. Organizaram também redes de auxílio a fugas que esvaziavam fazendas. Foi conquista social.",
+          "dificuldade": "facil",
+          "tags": ["abolicionismo", "movimento social", "1880"]
+        },
+        {
+          "id": "q55-4",
+          "enunciado": "A Lei Áurea (1888) aboliu a escravidão no Brasil. Uma crítica feita a essa lei é que ela:",
+          "alternativas": {
+            "A": "Manteve a escravidão em algumas províncias",
+            "B": "Libertou os escravizados sem garantir terra, educação ou políticas de integração social",
+            "C": "Indenizou generosamente os escravizados pela exploração sofrida",
+            "D": "Estabeleceu cotas para ex-escravizados em cargos públicos",
+            "E": "Foi promulgada contra a vontade dos abolicionistas"
+          },
+          "correta": "B",
+          "explicacao": "A Lei Áurea libertou formalmente os escravizados, mas não garantiu terra, educação, emprego ou qualquer política de integração social. Sem reparação histórica, os libertos foram marginalizados, ocupando as piores posições na sociedade de classes. As consequências dessa exclusão perduram até hoje.",
+          "dificuldade": "medio",
+          "tags": ["lei áurea", "reparação", "exclusão"]
+        },
+        {
+          "id": "q55-5",
+          "enunciado": "Luiz Gama foi importante figura do movimento abolicionista porque:",
+          "alternativas": {
+            "A": "Era senhor de escravizados que libertou voluntariamente todos os seus cativos",
+            "B": "Era advogado negro, ex-escravizado, que libertou centenas de pessoas através de ações judiciais",
+            "C": "Liderou a única revolta armada de escravizados que conseguiu derrubar um governo provincial",
+            "D": "Era político português que defendeu a abolição nas Cortes de Lisboa",
+            "E": "Inventou máquinas que substituiriam o trabalho escravo"
+          },
+          "correta": "B",
+          "explicacao": "Luiz Gama foi advogado negro, nascido livre mas vendido ilegalmente como escravizado pelo próprio pai. Libertou-se, estudou Direito e dedicou-se a libertar escravizados através de ações judiciais, conseguindo a liberdade de centenas de pessoas. É símbolo da luta dos próprios negros pela abolição.",
+          "dificuldade": "medio",
+          "tags": ["luiz gama", "abolicionismo", "negro"]
+        }
+      ]
+    },
+    {
+      "id": "m56",
+      "titulo": "Crise do Império e República",
+      "resumo": "Os fatores de crise do Segundo Reinado e o processo de proclamação da República.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Império brasileiro entrou em crise nos anos 1870-80, com questões militar, religiosa e abolicionista minando suas bases de sustentação. A República foi proclamada em 1889 por um golpe militar sem participação popular significativa. No ENEM, esse tema exige compreender as causas da crise e o caráter do movimento republicano."
+        },
+        {
+          "titulo": "Questões que Abalaram o Império",
+          "conteudo": "Questão Religiosa (1872-1875): bispos de Olinda e Pará puniram maçons nas irmandades católicas, seguindo ordens do Papa. D. Pedro II, usando o padroado, mandou prendê-los. Conflito entre Igreja e Estado afastou setores católicos do Império. Questão Militar (1883-1887): oficiais do Exército entraram em conflito com o governo por questões de honra e punições. O Exército, fortalecido após a Guerra do Paraguai e influenciado pelo positivismo, tornou-se fonte de oposição. Questão Abolicionista: a abolição (1888) sem indenização descontentou proprietários escravistas, que retiraram apoio ao Império."
+        },
+        {
+          "titulo": "Movimento Republicano",
+          "conteudo": "O Partido Republicano foi fundado em 1870 (Manifesto Republicano). Defendia: república, federalismo (autonomia provincial), fim do Poder Moderador. Havia duas correntes principais: Republicanos históricos: civis, liberais, queriam república através de reformas ou eleições. Republicanos positivistas: militares influenciados por Augusto Comte, defendiam república autoritária 'científica'. Os militares eram mais organizados e dispostos ao golpe. A oligarquia cafeeira do Oeste Paulista aderiu ao republicanismo, querendo autonomia federal."
+        },
+        {
+          "titulo": "Proclamação da República (15/nov/1889)",
+          "conteudo": "O golpe militar de 15 de novembro foi rápido e sem resistência. Marechal Deodoro da Fonseca, veterano da Guerra do Paraguai, liderou tropas que depuseram o gabinete. Inicialmente, queriam apenas trocar o ministério; a república foi proclamada depois, sob pressão de republicanos civis. D. Pedro II foi exilado para a Europa, onde morreu em 1891. O povo assistiu 'bestializado', sem participação. A República nasceu como golpe de elite militar aliada a oligarquias, não como revolução popular."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Questão Militar",
+          "descricao": "Conflitos entre oficiais do Exército e o governo civil nos anos 1880. O Exército, fortalecido após a Guerra do Paraguai e influenciado pelo positivismo (Benjamim Constant), tornou-se crítico do Império. Essa oposição militar foi decisiva para o golpe de 1889."
+        },
+        {
+          "titulo": "Golpe de 15 de Novembro",
+          "descricao": "O Marechal Deodoro da Fonseca liderou tropas que depuseram o gabinete. Inicialmente não queria a república, apenas trocar o ministério. A proclamação da república veio depois, sob influência de Benjamim Constant e republicanos civis. O povo assistiu sem participar."
+        }
+      ],
+      "dicas": [
+        "Três questões abalaram o Império: religiosa, militar, abolicionista",
+        "República = golpe militar, sem participação popular ('o povo assistiu bestializado')",
+        "Deodoro não queria república, foi convencido depois do golpe"
+      ],
+      "questoes": [
+        {
+          "id": "q56-1",
+          "enunciado": "A Questão Militar (anos 1880) foi um dos fatores de crise do Império porque:",
+          "alternativas": {
+            "A": "O Exército apoiava incondicionalmente D. Pedro II",
+            "B": "Oficiais do Exército, fortalecidos após a Guerra do Paraguai e influenciados pelo positivismo, entraram em conflito com o governo civil",
+            "C": "Os militares defendiam a restauração da monarquia absoluta",
+            "D": "O Exército foi dissolvido pelo governo imperial",
+            "E": "Os militares recusaram-se a participar da Guerra do Paraguai"
+          },
+          "correta": "B",
+          "explicacao": "O Exército, profissionalizado e fortalecido após a Guerra do Paraguai, entrou em conflitos com o governo civil por questões de punições e honra nos anos 1880. Influenciados pelo positivismo (Benjamim Constant), oficiais tornaram-se críticos do Império, preparando o terreno para o golpe republicano.",
+          "dificuldade": "medio",
+          "tags": ["questão militar", "exército", "crise"]
+        },
+        {
+          "id": "q56-2",
+          "enunciado": "A abolição da escravidão (1888) contribuiu para a crise do Império porque:",
+          "alternativas": {
+            "A": "Fortaleceu o apoio dos proprietários escravistas ao imperador",
+            "B": "Descontentou proprietários escravistas que, sem indenização, retiraram apoio ao Império",
+            "C": "Foi acompanhada de reforma agrária que beneficiou ex-escravizados",
+            "D": "Uniu todas as classes sociais em apoio à monarquia",
+            "E": "Levou à guerra civil entre Norte e Sul"
+          },
+          "correta": "B",
+          "explicacao": "A abolição sem indenização aos senhores de escravizados descontentou setores que eram base de apoio do Império, especialmente os proprietários do Vale do Paraíba. Muitos aderiram ao republicanismo ou simplesmente retiraram apoio à monarquia, enfraquecendo-a decisivamente.",
+          "dificuldade": "medio",
+          "tags": ["abolição", "crise", "império"]
+        },
+        {
+          "id": "q56-3",
+          "enunciado": "A proclamação da República (15/novembro/1889) caracterizou-se por:",
+          "alternativas": {
+            "A": "Ampla participação popular em manifestações de rua",
+            "B": "Golpe militar sem participação popular significativa, com o povo assistindo 'bestializado'",
+            "C": "Eleições democráticas que escolheram o primeiro presidente",
+            "D": "Guerra civil entre republicanos e monarquistas",
+            "E": "Abdicação voluntária de D. Pedro II"
+          },
+          "correta": "B",
+          "explicacao": "A República foi proclamada por golpe militar liderado pelo Marechal Deodoro da Fonseca. Não houve participação popular significativa. O jornalista Aristides Lobo descreveu que 'o povo assistiu àquilo bestializado'. Foi golpe de elite militar aliada a oligarquias, não revolução popular.",
+          "dificuldade": "facil",
+          "tags": ["proclamação", "golpe", "república"]
+        },
+        {
+          "id": "q56-4",
+          "enunciado": "O positivismo influenciou o movimento republicano brasileiro, especialmente entre os militares. Uma característica do republicanismo positivista era:",
+          "alternativas": {
+            "A": "Defesa da democracia direta com participação de todos os cidadãos",
+            "B": "Crença em república autoritária e 'científica' governada por elite técnica",
+            "C": "Apoio à restauração da monarquia absolutista",
+            "D": "Defesa da Igreja Católica como poder central",
+            "E": "Oposição a qualquer forma de governo centralizado"
+          },
+          "correta": "B",
+          "explicacao": "O positivismo de Augusto Comte influenciou militares como Benjamim Constant. Defendiam uma república autoritária e 'científica', governada por elite técnica esclarecida, não necessariamente democrática. O lema 'Ordem e Progresso' na bandeira brasileira reflete essa influência positivista.",
+          "dificuldade": "dificil",
+          "tags": ["positivismo", "militares", "república"]
+        },
+        {
+          "id": "q56-5",
+          "enunciado": "A Questão Religiosa (1872-1875) foi um conflito entre:",
+          "alternativas": {
+            "A": "Diferentes denominações protestantes pelo reconhecimento oficial",
+            "B": "Bispos católicos e o governo imperial sobre a punição de maçons nas irmandades religiosas",
+            "C": "Religiões afro-brasileiras e a Igreja Católica",
+            "D": "O Papa e os bispos brasileiros sobre doutrina",
+            "E": "Jesuítas e outras ordens religiosas pelo controle das missões"
+          },
+          "correta": "B",
+          "explicacao": "A Questão Religiosa envolveu bispos de Olinda e Pará que puniram maçons nas irmandades católicas, seguindo ordens do Papa. D. Pedro II, usando o direito de padroado, mandou prendê-los por desrespeito às leis do Império. O conflito afastou setores católicos da monarquia.",
+          "dificuldade": "medio",
+          "tags": ["questão religiosa", "padroado", "crise"]
+        }
+      ]
+    },
+    {
+      "id": "m57",
+      "titulo": "Imigração no Brasil Imperial",
+      "resumo": "A imigração europeia no século XIX, políticas de incentivo, colônias de povoamento e a transição do trabalho escravo para o livre.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A imigração europeia no Brasil do século XIX foi parte da transição do trabalho escravo para o livre. Milhões de europeus vieram ao Brasil, especialmente após 1850 (fim do tráfico atlântico) e 1888 (abolição). No ENEM, esse tema é cobrado em relação à substituição da mão de obra e às políticas de branqueamento."
+        },
+        {
+          "titulo": "Contexto e Políticas",
+          "conteudo": "Com o fim do tráfico atlântico (1850), faltava mão de obra para a expansão cafeeira. A solução foi a imigração europeia. Havia também ideologia de 'branqueamento' da população brasileira. Política de imigração: o governo imperial e as províncias (especialmente São Paulo) financiavam passagens, criavam hospedarias de imigrantes, cediam terras. Principais grupos: portugueses, italianos, alemães, espanhóis, japoneses (início séc. XX)."
+        },
+        {
+          "titulo": "Formas de Imigração",
+          "conteudo": "Colônias de povoamento: principalmente no Sul (Rio Grande do Sul, Santa Catarina, Paraná), imigrantes recebiam pequenos lotes de terra para agricultura familiar. Alemães (São Leopoldo, 1824), italianos (região serrana gaúcha) formaram comunidades que preservaram tradições. Imigração para as fazendas de café: no Oeste Paulista, imigrantes (principalmente italianos) trabalhavam nas fazendas sob regime de colonato ou parceria. O sistema de parceria inicial era quase servidão por dívidas; o colonato posterior dava mais autonomia."
+        },
+        {
+          "titulo": "Consequências e Contradições",
+          "conteudo": "A imigração transformou a sociedade brasileira: formou classe de pequenos proprietários no Sul, operariado urbano em São Paulo, renovou a agricultura. Contradições: a ideologia de branqueamento era racista, desvalorizando africanos e seus descendentes. Os imigrantes enfrentavam condições difíceis nas fazendas, às vezes comparáveis à escravidão. Revoltas como a de Ibicaba (1857) mostraram conflitos com fazendeiros. A preferência por imigrantes em vez de ex-escravizados após 1888 aprofundou a marginalização dos negros."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Sistema de Parceria e Colonato",
+          "descricao": "Na parceria (primeira fase), imigrantes deviam metade da colheita e ficavam endividados com os fazendeiros. No colonato (depois de 1870), recebiam salário fixo por pé de café tratado, mais pagamento pela colheita, e podiam cultivar alimentos. Era mais vantajoso."
+        },
+        {
+          "titulo": "Branqueamento",
+          "descricao": "Ideologia racista que defendia a imigração europeia para 'branquear' a população brasileira, considerada 'inferior' por ter maioria negra e mestiça. Influenciou políticas de imigração que preferiam europeus a asiáticos ou africanos."
+        }
+      ],
+      "dicas": [
+        "Imigração = substituição de mão de obra escrava + ideologia de branqueamento",
+        "Sul = colônias de pequenos proprietários; SP = trabalho nas fazendas de café",
+        "Preferência por imigrantes após 1888 marginalizou ex-escravizados"
+      ],
+      "questoes": [
+        {
+          "id": "q57-1",
+          "enunciado": "A imigração europeia para o Brasil no século XIX intensificou-se após 1850 principalmente porque:",
+          "alternativas": {
+            "A": "O tráfico atlântico de escravizados foi proibido, criando demanda por mão de obra alternativa",
+            "B": "Os europeus fugiam da prosperidade em seus países de origem",
+            "C": "O governo brasileiro proibia a entrada de estrangeiros até então",
+            "D": "A escravidão havia sido abolida em 1850",
+            "E": "Os imigrantes vinham exclusivamente para explorar ouro"
+          },
+          "correta": "A",
+          "explicacao": "A Lei Eusébio de Queirós (1850) proibiu o tráfico atlântico, cortando a fonte de reposição de mão de obra escrava. Para a expansão cafeeira, a solução foi atrair imigrantes europeus. O fim do tráfico foi o gatilho para a imigração em massa.",
+          "dificuldade": "facil",
+          "tags": ["imigração", "tráfico", "café"]
+        },
+        {
+          "id": "q57-2",
+          "enunciado": "A ideologia de 'branqueamento' que influenciou as políticas de imigração no Brasil defendia:",
+          "alternativas": {
+            "A": "A valorização da cultura africana e indígena",
+            "B": "A imigração europeia para 'embranquecer' a população brasileira, considerada 'inferior' por sua composição racial",
+            "C": "A igualdade racial entre todos os grupos populacionais",
+            "D": "O retorno de africanos e seus descendentes para a África",
+            "E": "A proibição de casamentos entre diferentes grupos étnicos"
+          },
+          "correta": "B",
+          "explicacao": "O branqueamento era ideologia racista que considerava a população brasileira 'inferior' por ter maioria negra e mestiça. Defendia a imigração europeia massiva para 'branquear' o país ao longo de gerações. Influenciou políticas que preferiam europeus a outros grupos.",
+          "dificuldade": "medio",
+          "tags": ["branqueamento", "racismo", "imigração"]
+        },
+        {
+          "id": "q57-3",
+          "enunciado": "As colônias de povoamento no Sul do Brasil diferenciavam-se da imigração para as fazendas de café em São Paulo porque:",
+          "alternativas": {
+            "A": "No Sul, imigrantes recebiam pequenos lotes de terra para agricultura familiar; em São Paulo, trabalhavam nas grandes fazendas de café",
+            "B": "Não havia diferença entre as duas formas de imigração",
+            "C": "Em São Paulo, imigrantes recebiam grandes latifúndios",
+            "D": "No Sul, imigrantes trabalhavam exclusivamente em mineração",
+            "E": "A imigração no Sul era de africanos, não de europeus"
+          },
+          "correta": "A",
+          "explicacao": "No Sul (RS, SC, PR), colonos europeus recebiam pequenos lotes para agricultura familiar, formando comunidades de pequenos proprietários. Em São Paulo, vinham para trabalhar nas grandes fazendas de café sob sistemas como parceria ou colonato, sem se tornarem proprietários inicialmente.",
+          "dificuldade": "medio",
+          "tags": ["colonização", "sul", "café"]
+        },
+        {
+          "id": "q57-4",
+          "enunciado": "O sistema de colonato, que se estabeleceu nas fazendas de café de São Paulo após 1870, caracterizava-se por:",
+          "alternativas": {
+            "A": "Trabalho escravo disfarçado com uso de correntes",
+            "B": "Pagamento ao colono por pé de café tratado, mais participação na colheita, e direito de cultivar alimentos em terras da fazenda",
+            "C": "Distribuição igualitária das terras entre todos os trabalhadores",
+            "D": "Trabalho exclusivo em atividades industriais urbanas",
+            "E": "Proibição de qualquer pagamento em dinheiro"
+          },
+          "correta": "B",
+          "explicacao": "No colonato (diferente da parceria inicial), o trabalhador recebia pagamento fixo por pé de café tratado, mais pagamento pela quantidade colhida. Podia também cultivar alimentos em terras da fazenda para consumo e venda. Era sistema mais vantajoso que a parceria, que endividava os colonos.",
+          "dificuldade": "medio",
+          "tags": ["colonato", "café", "trabalho"]
+        },
+        {
+          "id": "q57-5",
+          "enunciado": "Uma consequência da preferência por imigrantes europeus em vez de ex-escravizados após a abolição (1888) foi:",
+          "alternativas": {
+            "A": "A integração plena dos negros na sociedade brasileira",
+            "B": "A marginalização dos ex-escravizados, que foram preteridos no mercado de trabalho",
+            "C": "A igualdade de oportunidades entre negros e brancos",
+            "D": "O retorno de todos os imigrantes para a Europa",
+            "E": "A abolição da propriedade privada nas fazendas"
+          },
+          "correta": "B",
+          "explicacao": "Após a abolição, fazendeiros preferiram contratar imigrantes europeus em vez de ex-escravizados. Isso, somado à falta de políticas de integração (terra, educação), marginalizou os negros libertos, que ocuparam as piores posições na sociedade de classes. Essa exclusão tem consequências até hoje.",
+          "dificuldade": "medio",
+          "tags": ["abolição", "marginalização", "imigrantes"]
+        }
+      ]
+    },
+    {
+      "id": "m58",
+      "titulo": "Cultura e Sociedade no Império",
+      "resumo": "Vida cultural, educação, imprensa, literatura romântica e realista, transformações urbanas no Brasil imperial.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O período imperial foi de formação da cultura nacional brasileira. A literatura romântica buscou criar uma identidade nacional; o realismo/naturalismo criticou a sociedade. A educação era restrita, a imprensa cresceu, as cidades se transformaram. No ENEM, esse tema conecta-se com literatura e permite compreender a sociedade do período."
+        },
+        {
+          "titulo": "Educação e Imprensa",
+          "conteudo": "Educação: restrita às elites. Ensino primário precário; secundário em poucos colégios (Pedro II era referência); superior em faculdades de Direito (São Paulo, Recife), Medicina (Bahia, Rio) e Engenharia. A maioria da população era analfabeta. Mulheres e escravizados excluídos. Imprensa: cresceu após a independência. Jornais como o Correio Braziliense, Jornal do Commercio eram formadores de opinião. A imprensa abolicionista (A Gazeta da Tarde, de José do Patrocínio) teve papel crucial. Havia censura e conflitos com o governo."
+        },
+        {
+          "titulo": "Literatura Brasileira",
+          "conteudo": "Romantismo (1836-1881): primeira fase (indianista) - José de Alencar, Gonçalves Dias, buscavam raízes nacionais no índio idealizado; segunda fase (ultrarromântica) - Álvares de Azevedo, poesia do 'mal do século'; terceira fase (social) - Castro Alves, poesia abolicionista. Realismo/Naturalismo (1881-1922): Machado de Assis (maior escritor brasileiro, crítica sutil à sociedade imperial), Aluísio Azevedo ('O Cortiço', crítica social naturalista), Raul Pompeia. Criticavam a hipocrisia social, o patriarcalismo, a escravidão."
+        },
+        {
+          "titulo": "Transformações Urbanas",
+          "conteudo": "As cidades imperiais transformaram-se lentamente: Rio de Janeiro cresceu como capital; as reformas modernizadoras (iluminação, bondes, saneamento) concentravam-se na elite. A população pobre vivia em cortiços insalubres. A chegada da família real (1808) e depois as rendas do café permitiram alguma modernização. Teatros, cafés, clubes literários formavam vida cultural urbana. Festas populares (carnaval, festas religiosas) integravam diferentes grupos sociais, embora de forma hierarquizada."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Machado de Assis",
+          "descricao": "Maior escritor brasileiro, mulato que ascendeu socialmente. Obras como 'Memórias Póstumas de Brás Cubas', 'Dom Casmurro' e 'Quincas Borba' criticam sutilmente a sociedade imperial, suas hierarquias, hipocrisia e patriarcalismo. Fundou a Academia Brasileira de Letras."
+        },
+        {
+          "titulo": "Castro Alves",
+          "descricao": "Poeta da terceira geração romântica, conhecido como 'poeta dos escravos'. Poemas como 'O Navio Negreiro' denunciavam a escravidão com linguagem eloquente. A poesia social/abolicionista de Castro Alves influenciou o movimento pela abolição."
+        }
+      ],
+      "dicas": [
+        "Romantismo indianista = José de Alencar, índio idealizado, busca de identidade nacional",
+        "Machado de Assis = realismo, crítica sutil à sociedade imperial",
+        "Castro Alves = poesia abolicionista, 'poeta dos escravos'"
+      ],
+      "questoes": [
+        {
+          "id": "q58-1",
+          "enunciado": "O Romantismo brasileiro, em sua primeira fase (indianista), caracterizou-se por:",
+          "alternativas": {
+            "A": "Crítica social realista à escravidão e ao patriarcalismo",
+            "B": "Busca de identidade nacional através da idealização do índio como símbolo do Brasil",
+            "C": "Imitação fiel dos modelos literários portugueses sem adaptação",
+            "D": "Rejeição de qualquer tema relacionado à natureza brasileira",
+            "E": "Foco exclusivo nos problemas urbanos das grandes cidades"
+          },
+          "correta": "B",
+          "explicacao": "O Romantismo indianista (José de Alencar, Gonçalves Dias) buscava criar identidade nacional através da idealização do índio, visto como representante autêntico do Brasil. Obras como 'Iracema' e 'O Guarani' apresentavam índios nobres e heroicos, em narrativas que fundavam mitologia nacional.",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "indianismo", "identidade"]
+        },
+        {
+          "id": "q58-2",
+          "enunciado": "Machado de Assis é considerado o maior escritor brasileiro. Sua obra caracteriza-se por:",
+          "alternativas": {
+            "A": "Idealização romântica da natureza e dos índios brasileiros",
+            "B": "Crítica sutil à sociedade imperial, suas hierarquias, hipocrisia e patriarcalismo",
+            "C": "Poesia épica sobre heróis da independência",
+            "D": "Denúncia explícita e panfletária da escravidão",
+            "E": "Narrativas de aventura sem conteúdo social"
+          },
+          "correta": "B",
+          "explicacao": "Machado de Assis, principal nome do Realismo brasileiro, criticava sutilmente a sociedade imperial em obras como 'Memórias Póstumas de Brás Cubas' e 'Dom Casmurro'. Sua ironia fina desmontava as hierarquias, a hipocrisia, o patriarcalismo e o favor/paternalismo que estruturavam aquela sociedade.",
+          "dificuldade": "facil",
+          "tags": ["machado de assis", "realismo", "crítica"]
+        },
+        {
+          "id": "q58-3",
+          "enunciado": "Castro Alves ficou conhecido como 'poeta dos escravos' porque:",
+          "alternativas": {
+            "A": "Era escravizado e escrevia sobre sua própria condição",
+            "B": "Produziu poesia abolicionista que denunciava a escravidão, como 'O Navio Negreiro'",
+            "C": "Defendia a manutenção da escravidão em seus poemas",
+            "D": "Escrevia apenas para público escravizado",
+            "E": "Era senhor de escravizados que escrevia sobre suas propriedades"
+          },
+          "correta": "B",
+          "explicacao": "Castro Alves, poeta da terceira geração romântica (social), ficou conhecido como 'poeta dos escravos' por sua poesia abolicionista. 'O Navio Negreiro' e outros poemas denunciavam os horrores da escravidão com linguagem eloquente, contribuindo para o movimento abolicionista.",
+          "dificuldade": "facil",
+          "tags": ["castro alves", "abolicionismo", "poesia"]
+        },
+        {
+          "id": "q58-4",
+          "enunciado": "A educação no Brasil imperial caracterizava-se por:",
+          "alternativas": {
+            "A": "Acesso universal e gratuito a todos os brasileiros",
+            "B": "Restrição às elites, com a maioria da população analfabeta",
+            "C": "Igualdade de oportunidades entre homens e mulheres",
+            "D": "Inclusão obrigatória de escravizados no ensino público",
+            "E": "Ausência de qualquer instituição de ensino superior"
+          },
+          "correta": "B",
+          "explicacao": "A educação imperial era restrita às elites. O ensino primário era precário e não alcançava a maioria. O ensino superior (Direito, Medicina, Engenharia) era para poucos. A maioria da população era analfabeta. Mulheres tinham acesso limitado; escravizados eram excluídos por lei.",
+          "dificuldade": "facil",
+          "tags": ["educação", "elite", "analfabetismo"]
+        },
+        {
+          "id": "q58-5",
+          "enunciado": "O romance 'O Cortiço', de Aluísio Azevedo, é representativo do Naturalismo brasileiro porque:",
+          "alternativas": {
+            "A": "Idealiza a vida nos cortiços como harmoniosa e feliz",
+            "B": "Apresenta visão crítica e determinista da sociedade, retratando a vida miserável nos cortiços com influência do meio sobre os personagens",
+            "C": "Foca exclusivamente na vida da elite imperial",
+            "D": "É poesia lírica sobre o amor romântico",
+            "E": "Defende a escravidão como instituição benéfica"
+          },
+          "correta": "B",
+          "explicacao": "'O Cortiço' (1890) é romance naturalista que retrata a vida miserável em um cortiço carioca. Influenciado pelo determinismo (meio, raça, momento), mostra como o ambiente degrada os personagens. É crítica social à pobreza urbana, explorando temas como sexualidade, raça e violência.",
+          "dificuldade": "medio",
+          "tags": ["naturalismo", "aluísio azevedo", "cortiço"]
+        }
+      ]
+    },
+    {
+      "id": "m59",
+      "titulo": "Movimentos Sociais no Império",
+      "resumo": "Revoltas e movimentos sociais durante o Império, incluindo Balaiada, Cabanagem, Farroupilha, Revolta Praieira e Quebra-Quilos.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O período imperial foi marcado por diversos movimentos sociais que expressavam tensões de classe, região e raça. Além das revoltas regenciais já estudadas, houve movimentos no Segundo Reinado que desafiaram a ordem estabelecida. No ENEM, é importante distinguir a composição social e os projetos de cada movimento."
+        },
+        {
+          "titulo": "Revoltas Regenciais (Revisão)",
+          "conteudo": "Período Regencial (1831-1840) foi o mais turbulento: Cabanagem (Pará, 1835-1840): revolta popular, a mais sangrenta. Balaiada (Maranhão, 1838-1841): revolta popular de vaqueiros e escravizados. Sabinada (Bahia, 1837-1838): revolta urbana, república provisória. Farroupilha (RS, 1835-1845): revolta de elite, a mais longa. Essas revoltas expressavam tensões acumuladas: centralização excessiva, crise econômica, exclusão social."
+        },
+        {
+          "titulo": "Revolta Praieira (1848-1850)",
+          "conteudo": "Última revolta provincial do Império, em Pernambuco. Contexto: disputas entre liberais ('praieiros', que se reuniam na Rua da Praia) e conservadores pelo poder local. Influência: revoluções europeias de 1848, ideias socialistas e nacionalistas. Manifesto ao Mundo (1849): propunha voto universal, nacionalização do comércio (contra portugueses), federalismo, liberdade de imprensa. Participantes: classe média urbana, profissionais liberais, alguns trabalhadores. Não havia proposta clara de abolição. Reprimida em 1850."
+        },
+        {
+          "titulo": "Movimentos do Segundo Reinado",
+          "conteudo": "Revolta dos Quebra-Quilos (1874-1875): no Nordeste, contra a imposição do sistema métrico decimal (que substituía medidas tradicionais). Misturava resistência a impostos, obrigatoriedade de registro civil e recrutamento militar. Participação popular, liderança de pequenos comerciantes. Movimento Abolicionista: ganhou força nos anos 1870-80, como estudado. Movimento Republicano: a partir de 1870, com o Manifesto Republicano. Combinava republicanos históricos (civis) e positivistas (militares)."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Revolta Praieira",
+          "descricao": "Última revolta provincial do Império (Pernambuco, 1848-1850). Liberais ('praieiros') contra conservadores. Manifesto ao Mundo propunha reformas: voto universal, federalismo, nacionalização do comércio. Influência das revoluções europeias de 1848."
+        },
+        {
+          "titulo": "Quebra-Quilos",
+          "descricao": "Revolta no Nordeste (1874-1875) contra a imposição do sistema métrico decimal. Populares destruíam as novas medidas (quilos, metros). Combinava resistência a mudanças impostas pelo Estado (registros, impostos, recrutamento)."
+        }
+      ],
+      "dicas": [
+        "Revoltas regenciais = período mais turbulento, diferentes composições sociais",
+        "Praieira = última revolta provincial, influência de 1848, proposta reformista",
+        "Quebra-Quilos = resistência popular a imposições estatais (sistema métrico)"
+      ],
+      "questoes": [
+        {
+          "id": "q59-1",
+          "enunciado": "A Revolta Praieira (Pernambuco, 1848-1850) diferenciava-se das revoltas regenciais porque:",
+          "alternativas": {
+            "A": "Foi exclusivamente de escravizados contra a escravidão",
+            "B": "Tinha influência das revoluções europeias de 1848 e propunha reformas como voto universal e federalismo",
+            "C": "Defendia a restauração de D. Pedro I ao trono",
+            "D": "Ocorreu durante o Período Regencial",
+            "E": "Foi a mais longa revolta do Império, durando 20 anos"
+          },
+          "correta": "B",
+          "explicacao": "A Revolta Praieira (1848-1850) foi a última revolta provincial do Império. Diferenciava-se por sua influência das revoluções europeias de 1848, com ideias socialistas e nacionalistas. O Manifesto ao Mundo propunha voto universal, federalismo, nacionalização do comércio (contra portugueses). Era mais ideológica que as revoltas regenciais.",
+          "dificuldade": "medio",
+          "tags": ["praieira", "1848", "pernambuco"]
+        },
+        {
+          "id": "q59-2",
+          "enunciado": "A Revolta dos Quebra-Quilos (1874-1875) no Nordeste foi motivada principalmente por:",
+          "alternativas": {
+            "A": "Defesa da escravidão contra leis abolicionistas",
+            "B": "Resistência popular à imposição do sistema métrico decimal e outras medidas estatais",
+            "C": "Apoio ao governo imperial contra rebeldes separatistas",
+            "D": "Demanda por industrialização da região",
+            "E": "Conflito entre fazendeiros e comerciantes pelo controle do açúcar"
+          },
+          "correta": "B",
+          "explicacao": "A Revolta dos Quebra-Quilos expressava resistência popular à imposição do sistema métrico decimal pelo governo imperial. Os revoltosos destruíam as novas medidas (quilos, metros) nos mercados. A revolta misturava também resistência a registros civis obrigatórios, novos impostos e recrutamento militar.",
+          "dificuldade": "medio",
+          "tags": ["quebra-quilos", "sistema métrico", "resistência"]
+        },
+        {
+          "id": "q59-3",
+          "enunciado": "Comparando a Cabanagem (Pará) com a Farroupilha (RS), uma diferença fundamental era:",
+          "alternativas": {
+            "A": "Ambas tinham a mesma composição social e objetivos",
+            "B": "A Cabanagem tinha participação popular massiva (índios, negros, mestiços); a Farroupilha era liderada pela elite estancieira gaúcha",
+            "C": "A Farroupilha foi a mais sangrenta; a Cabanagem terminou sem violência",
+            "D": "A Cabanagem defendia a monarquia; a Farroupilha defendia o Império",
+            "E": "A Farroupilha durou apenas alguns meses; a Cabanagem durou décadas"
+          },
+          "correta": "B",
+          "explicacao": "A Cabanagem teve ampla participação popular (índios, negros, mestiços, brancos pobres - cabanos), sendo a mais sangrenta (30 mil mortos). A Farroupilha foi liderada pela elite gaúcha (estancieiros) insatisfeita com impostos, sem participação popular significativa. A composição social era muito diferente.",
+          "dificuldade": "medio",
+          "tags": ["cabanagem", "farroupilha", "comparação"]
+        },
+        {
+          "id": "q59-4",
+          "enunciado": "O Manifesto ao Mundo, documento da Revolta Praieira (1849), propunha:",
+          "alternativas": {
+            "A": "Restauração de D. Pedro I e fortalecimento do Poder Moderador",
+            "B": "Voto universal, federalismo, nacionalização do comércio e liberdade de imprensa",
+            "C": "Abolição imediata da escravidão e reforma agrária",
+            "D": "União do Brasil a Portugal sob a mesma coroa",
+            "E": "Monarquia absolutista sem parlamento"
+          },
+          "correta": "B",
+          "explicacao": "O Manifesto ao Mundo (1849) dos praieiros propunha reformas liberais e nacionalistas: voto universal (masculino), federalismo, nacionalização do comércio (contra portugueses que dominavam o setor), liberdade de imprensa. Refletia influência das revoluções europeias de 1848.",
+          "dificuldade": "medio",
+          "tags": ["manifesto", "praieira", "reformas"]
+        },
+        {
+          "id": "q59-5",
+          "enunciado": "As revoltas regenciais (1831-1840) tinham em comum:",
+          "alternativas": {
+            "A": "A mesma composição social em todas as províncias",
+            "B": "A defesa do fortalecimento do poder central imperial",
+            "C": "A expressão de tensões acumuladas contra a centralização e a exclusão social, embora com diferentes composições e projetos",
+            "D": "O apoio explícito do governo regencial",
+            "E": "A ausência de qualquer violência em suas ações"
+          },
+          "correta": "C",
+          "explicacao": "As revoltas regenciais expressavam tensões diversas: contra a centralização imperial, por autonomia provincial, contra a exclusão social. Porém, tinham diferentes composições (popular na Cabanagem, elitista na Farroupilha) e projetos (república, separatismo, reformas). O ponto comum era o questionamento da ordem estabelecida.",
+          "dificuldade": "medio",
+          "tags": ["revoltas regenciais", "tensões", "diversidade"]
+        }
+      ]
+    },
+    {
+      "id": "m60",
+      "titulo": "Transição Império-República",
+      "resumo": "As transformações econômicas, sociais e políticas que marcaram a transição do Império para a República.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A transição do Império para a República (1870-1889) foi marcada por transformações profundas: fim da escravidão, imigração em massa, expansão cafeeira, urbanização, surgimento de novas classes sociais. Essas mudanças criaram as condições para o fim da monarquia. No ENEM, esse tema conecta economia, sociedade e política."
+        },
+        {
+          "titulo": "Transformações Econômicas",
+          "conteudo": "Café: tornou-se amplamente dominante na economia, respondendo por 60-70% das exportações. O eixo deslocou-se do Vale do Paraíba (escravista, em declínio) para o Oeste Paulista (trabalho imigrante, dinâmico). Ferrovias: expandiram-se para escoar o café, integrando o território. Início da industrialização: fábricas têxteis, alimentícias, principalmente em São Paulo e Rio. Ainda incipiente, mas criava novo grupo social (burguesia industrial, operariado). Bancos e comércio: modernização financeira, crescimento urbano."
+        },
+        {
+          "titulo": "Transformações Sociais",
+          "conteudo": "Fim da escravidão (1888): transformação fundamental, criou mercado de trabalho livre (embora excludente). Ex-escravizados foram marginalizados. Imigração: milhões de europeus chegaram, especialmente italianos. Formaram colonato no café, operariado urbano, pequenos proprietários no Sul. Urbanização: cidades cresceram (Rio, São Paulo, Salvador). Surgiu classe média urbana (profissionais, funcionários, comerciantes). Novas ideias: positivismo, republicanismo, abolicionismo circulavam entre intelectuais e militares."
+        },
+        {
+          "titulo": "Crise do Sistema Imperial",
+          "conteudo": "O sistema imperial não acompanhou as transformações. As questões religiosa e militar abalaram suas bases. A abolição descontentou proprietários escravistas. O federalismo era demandado pelas províncias ricas (especialmente São Paulo), que queriam autonomia. O centralismo imperial e o Poder Moderador eram criticados como anacrônicos. A monarquia perdeu apoio de diferentes setores: Igreja (questão religiosa), Exército (questão militar), proprietários (abolição sem indenização), classes médias (republicanismo). O golpe de 1889 encontrou um Império isolado."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Oeste Paulista",
+          "descricao": "Nova fronteira cafeeira com terras férteis (terra roxa), trabalho imigrante (colonato), ferrovias modernas e mentalidade empresarial. Os cafeicultores paulistas tornaram-se a elite econômica dominante e aderiram ao republicanismo, querendo federalismo."
+        },
+        {
+          "titulo": "Encilhamento",
+          "descricao": "Não é do Império, mas logo após (1890-1891): política econômica de Rui Barbosa que facilitou emissão de moeda e abertura de empresas. Gerou especulação e crise. Mostra as tensões da transição para economia capitalista."
+        }
+      ],
+      "dicas": [
+        "Transição = café, imigração, urbanização, novas classes, novas ideias",
+        "O Império perdeu apoio de Igreja, Exército, proprietários e classe média",
+        "Federalismo = demanda de províncias ricas (SP) contra centralismo imperial"
+      ],
+      "questoes": [
+        {
+          "id": "q60-1",
+          "enunciado": "A transição do trabalho escravo para o trabalho livre no Brasil (1850-1888) caracterizou-se por:",
+          "alternativas": {
+            "A": "Processo rápido com plena integração dos ex-escravizados",
+            "B": "Processo gradual com leis parciais (Ventre Livre, Sexagenários) e imigração europeia como alternativa",
+            "C": "Abolição imediata em 1850, seguida de imigração africana",
+            "D": "Manutenção da escravidão até o século XX",
+            "E": "Substituição de escravizados por máquinas em todas as atividades"
+          },
+          "correta": "B",
+          "explicacao": "A transição foi gradual: após o fim do tráfico (1850), leis parciais (Ventre Livre 1871, Sexagenários 1885) libertavam grupos específicos enquanto a imigração europeia era incentivada como alternativa de mão de obra. A abolição total veio em 1888, mas sem integração dos libertos.",
+          "dificuldade": "facil",
+          "tags": ["transição", "trabalho livre", "imigração"]
+        },
+        {
+          "id": "q60-2",
+          "enunciado": "O Oeste Paulista tornou-se a região cafeeira mais dinâmica no final do Império porque:",
+          "alternativas": {
+            "A": "Mantinha a produção baseada exclusivamente em trabalho escravo",
+            "B": "Tinha terras férteis (terra roxa), trabalho imigrante e mentalidade empresarial moderna",
+            "C": "Estava mais próxima da capital e do mercado consumidor interno",
+            "D": "Recebia mais investimentos do governo imperial que outras regiões",
+            "E": "Produzia apenas para o mercado interno, sem exportação"
+          },
+          "correta": "B",
+          "explicacao": "O Oeste Paulista superou o Vale do Paraíba por ter terras virgens e férteis (terra roxa), por adotar trabalho imigrante (colonato) em vez de depender exclusivamente de escravizados em declínio, e por ter mentalidade empresarial mais moderna, com investimentos em ferrovias e técnicas.",
+          "dificuldade": "medio",
+          "tags": ["oeste paulista", "café", "modernização"]
+        },
+        {
+          "id": "q60-3",
+          "enunciado": "O republicanismo no Brasil ganhou força especialmente entre:",
+          "alternativas": {
+            "A": "Os escravizados que viam na república a garantia de liberdade",
+            "B": "A elite do Vale do Paraíba que queria restaurar a escravidão",
+            "C": "Militares positivistas, classes médias urbanas e cafeicultores paulistas que queriam federalismo",
+            "D": "Os monarquistas mais conservadores ligados ao Poder Moderador",
+            "E": "Os setores religiosos que apoiavam o padroado imperial"
+          },
+          "correta": "C",
+          "explicacao": "O republicanismo reunia grupos diversos: militares positivistas (queriam república 'científica'), classes médias urbanas (queriam reformas), cafeicultores do Oeste Paulista (queriam federalismo e autonomia provincial). O Partido Republicano Paulista foi especialmente forte.",
+          "dificuldade": "medio",
+          "tags": ["republicanismo", "federalismo", "positivismo"]
+        },
+        {
+          "id": "q60-4",
+          "enunciado": "Uma demanda central dos republicanos paulistas era o federalismo, que significava:",
+          "alternativas": {
+            "A": "Maior centralização do poder no Rio de Janeiro",
+            "B": "Autonomia para as províncias/estados administrarem seus recursos e políticas",
+            "C": "União do Brasil com outros países sul-americanos",
+            "D": "Fortalecimento do Poder Moderador",
+            "E": "Extinção de todas as divisões territoriais internas"
+          },
+          "correta": "B",
+          "explicacao": "O federalismo republicano significava autonomia para as províncias (futuros estados) administrarem seus recursos e políticas sem depender do poder central. São Paulo, principal produtor de café, queria controlar suas rendas em vez de transferi-las para o governo imperial centralizado.",
+          "dificuldade": "facil",
+          "tags": ["federalismo", "autonomia", "república"]
+        },
+        {
+          "id": "q60-5",
+          "enunciado": "As transformações sociais do final do Império incluíam:",
+          "alternativas": {
+            "A": "Estagnação demográfica e retorno à economia de subsistência",
+            "B": "Urbanização, surgimento de classes médias, imigração em massa e início de industrialização",
+            "C": "Ruralização completa com abandono das cidades",
+            "D": "Homogeneização social com fim de todas as hierarquias",
+            "E": "Isolamento internacional e fechamento das fronteiras"
+          },
+          "correta": "B",
+          "explicacao": "O final do Império conheceu transformações profundas: cidades cresceram (urbanização), surgiu classe média urbana (profissionais, funcionários), milhões de imigrantes chegaram (mudando a composição da população), e as primeiras indústrias apareceram. Essa nova sociedade não cabia mais nas estruturas imperiais.",
+          "dificuldade": "medio",
+          "tags": ["transformações", "urbanização", "industrialização"]
+        }
+      ]
+    }
+  ]
+}

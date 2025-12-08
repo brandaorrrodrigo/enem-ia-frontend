@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Sala {
   id: string;
@@ -355,6 +356,7 @@ export default function ArenaPage() {
   if (tela === 'menu') {
     return (
       <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
+      <FloatingBackButton />
         <FloatingNav />
 
         <div style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '4rem' }}>

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface StudyEvent {
   id: string;
@@ -169,6 +170,7 @@ export default function CronogramaPage() {
   if (loading) {
     return (
       <div className="container min-h-screen flex items-center justify-center">
+      <FloatingBackButton />
         <div className="text-center">
           <div
             className="w-16 h-16 border-4 border-t-transparent rounded-full animate-spin mx-auto mb-6"
@@ -348,6 +350,7 @@ export default function CronogramaPage() {
                     gap: '1rem'
                   }}
                 >
+      <FloatingBackButton />
                   <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                     <button
                       onClick={() => toggleConcluido(evento.id)}

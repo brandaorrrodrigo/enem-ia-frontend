@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface DadosEstudo {
   data: string;
@@ -213,6 +214,7 @@ export default function EstatisticasPage() {
       paddingTop: '4rem',
       paddingBottom: '6rem'
     }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       <div className="container" style={{
@@ -452,6 +454,7 @@ export default function EstatisticasPage() {
                   borderRadius: '8px',
                   padding: '1rem'
                 }}>
+      <FloatingBackButton />
                   <div style={{
                     display: 'flex',
                     alignItems: 'center',

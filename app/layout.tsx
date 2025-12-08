@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
+import { AuthProvider } from "@/contexts/AuthContext";
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -39,15 +40,17 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="antialiased">
-        {/* Vinheta escura nas bordas */}
-        <div className="vignette"></div>
+        <AuthProvider>
+          {/* Vinheta escura nas bordas */}
+          <div className="vignette"></div>
 
-        {/* Conteudo principal */}
-        <div className="min-h-screen relative">
-          <main className="relative z-10">
-            {children}
-          </main>
-        </div>
+          {/* Conteudo principal */}
+          <div className="min-h-screen relative">
+            <main className="relative z-10">
+              {children}
+            </main>
+          </div>
+        </AuthProvider>
       </body>
     </html>
   );

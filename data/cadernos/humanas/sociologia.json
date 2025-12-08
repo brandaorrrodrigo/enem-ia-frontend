@@ -1,0 +1,1075 @@
+{
+  "id": "sociologia",
+  "slug": "sociologia",
+  "titulo": "Sociologia",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "Clássicos e contemporâneos: compreendendo a sociedade, suas estruturas e transformações",
+  "icone": "Users",
+  "cor": "#E67E22",
+  "tempoEstimado": "18 horas",
+  "fpRecompensa": 450,
+  "tags": ["sociologia", "sociedade", "cultura", "desigualdade", "ENEM"],
+  "modulos": [
+    {
+      "id": "m101",
+      "titulo": "O Nascimento da Sociologia",
+      "resumo": "Contexto histórico, Comte, positivismo e a sociologia como ciência",
+      "topicos": [
+        {
+          "titulo": "Contexto de Surgimento da Sociologia",
+          "conteudo": "A sociologia surgiu no século XIX como resposta às transformações provocadas pela Revolução Industrial e pela Revolução Francesa. A industrialização gerou urbanização acelerada, novas classes sociais (burguesia industrial, proletariado), novas formas de trabalho e miséria urbana. A Revolução Francesa abalou a ordem tradicional, mostrando que a sociedade pode ser transformada. Pensadores buscaram entender essa 'nova sociedade' com métodos científicos, assim como as ciências naturais explicavam a natureza. A sociologia nasce como 'ciência da sociedade', buscando compreender as leis que regem a vida social."
+        },
+        {
+          "titulo": "Auguste Comte e o Positivismo",
+          "conteudo": "Auguste Comte (1798-1857) é considerado o fundador da sociologia, nomeando-a (inicialmente 'física social'). O positivismo de Comte propunha aplicar o método das ciências naturais aos fenômenos sociais. A 'Lei dos Três Estados' afirma que o conhecimento humano passa por três estágios: teológico (explicações sobrenaturais), metafísico (explicações abstratas) e positivo (explicações científicas, baseadas em observação e leis). A sociologia seria a última e mais complexa ciência a atingir o estágio positivo. Comte acreditava que o conhecimento científico da sociedade permitiria reorganizá-la racionalmente ('Ordem e Progresso')."
+        },
+        {
+          "titulo": "A Sociologia como Ciência",
+          "conteudo": "A sociologia consolidou-se como disciplina acadêmica no final do século XIX e início do XX, especialmente na França (Durkheim) e na Alemanha (Weber, Simmel). Diferencia-se do senso comum: busca conhecimento sistemático, rigoroso, baseado em métodos. O objeto da sociologia são os fatos sociais, as ações sociais, as relações sociais - o que acontece entre pessoas em sociedade. A sociologia estuda desde grandes estruturas (economia, Estado, classes) até interações cotidianas (família, escola, trabalho). Diferentes tradições desenvolveram métodos próprios: quantitativos (estatísticas) e qualitativos (etnografia, entrevistas)."
+        }
+      ],
+      "exemplos": [
+        "O lema 'Ordem e Progresso' na bandeira brasileira e o positivismo",
+        "A diferença entre explicação sociológica e senso comum",
+        "Transformações sociais contemporâneas comparadas às do século XIX"
+      ],
+      "dicas": [
+        "ENEM relaciona surgimento da sociologia ao contexto histórico",
+        "Entenda a Lei dos Três Estados de Comte",
+        "Diferencie conhecimento sociológico de senso comum"
+      ],
+      "questoes": [
+        {
+          "id": "q101-1",
+          "enunciado": "A sociologia surgiu no século XIX em um contexto de profundas transformações sociais. Entre os eventos históricos que contribuíram para seu surgimento, destacam-se:",
+          "alternativas": {
+            "A": "A Idade Média e o feudalismo, que geraram estabilidade social",
+            "B": "A Revolução Industrial e a Revolução Francesa, que transformaram a sociedade europeia",
+            "C": "As grandes navegações e a descoberta da América",
+            "D": "A Primeira Guerra Mundial e a crise de 1929",
+            "E": "A Guerra Fria e a globalização econômica"
+          },
+          "correta": "B",
+          "explicacao": "A sociologia surgiu como resposta às transformações do final do século XVIII e do século XIX. A Revolução Industrial gerou urbanização, novas classes sociais, novas formas de trabalho e problemas sociais (pobreza urbana, condições de trabalho). A Revolução Francesa mostrou que a ordem social não é natural ou divina, mas pode ser transformada. Pensadores buscaram entender cientificamente essa nova sociedade.",
+          "dificuldade": "facil",
+          "tags": ["sociologia", "contexto histórico", "revolução industrial"]
+        },
+        {
+          "id": "q101-2",
+          "enunciado": "Auguste Comte, considerado fundador da sociologia, propôs a 'Lei dos Três Estados'. Segundo essa teoria, o conhecimento humano passa pelos estágios teológico, metafísico e positivo. O estágio 'positivo' caracteriza-se por:",
+          "alternativas": {
+            "A": "Explicar os fenômenos através da vontade de deuses e entidades sobrenaturais",
+            "B": "Utilizar conceitos abstratos como essência, substância e causa primeira",
+            "C": "Buscar explicações científicas baseadas na observação e em leis verificáveis",
+            "D": "Rejeitar qualquer forma de conhecimento sobre a sociedade",
+            "E": "Retornar às tradições religiosas como fonte de verdade"
+          },
+          "correta": "C",
+          "explicacao": "No estágio positivo, o conhecimento abandona explicações sobrenaturais (estágio teológico) e abstrações metafísicas (estágio metafísico) para buscar leis científicas baseadas na observação empírica. O modelo são as ciências naturais. Para Comte, a sociologia seria a última ciência a atingir esse estágio, permitindo conhecer e reorganizar a sociedade racionalmente. O positivismo influenciou a República brasileira ('Ordem e Progresso').",
+          "dificuldade": "medio",
+          "tags": ["comte", "positivismo", "três estados"]
+        },
+        {
+          "id": "q101-3",
+          "enunciado": "O lema 'Ordem e Progresso' presente na bandeira brasileira reflete a influência de uma corrente de pensamento na proclamação da República. Essa corrente é:",
+          "alternativas": {
+            "A": "O marxismo, que defende a revolução proletária",
+            "B": "O liberalismo, que enfatiza a liberdade individual e o livre mercado",
+            "C": "O positivismo de Auguste Comte, que valoriza a ciência e a ordem social",
+            "D": "O anarquismo, que rejeita o Estado e toda autoridade",
+            "E": "O conservadorismo, que defende a manutenção das tradições monárquicas"
+          },
+          "correta": "C",
+          "explicacao": "O positivismo de Comte teve grande influência no Brasil, especialmente entre militares que proclamaram a República (1889). Benjamin Constant era positivista. O lema 'Ordem e Progresso' sintetiza o ideal comteano: a ordem social é condição para o progresso, e a ciência permite reorganizar a sociedade. A bandeira republicana incorporou o lema, evidenciando essa influência positivista.",
+          "dificuldade": "facil",
+          "tags": ["positivismo", "brasil", "república"]
+        },
+        {
+          "id": "q101-4",
+          "enunciado": "A sociologia se distingue do senso comum no estudo da sociedade. Uma característica que diferencia o conhecimento sociológico do senso comum é:",
+          "alternativas": {
+            "A": "O senso comum usa métodos rigorosos, enquanto a sociologia se baseia em opiniões",
+            "B": "A sociologia busca conhecimento sistemático e verificável, enquanto o senso comum é fragmentário e não questionado",
+            "C": "O senso comum é sempre verdadeiro, enquanto a sociologia é mera especulação",
+            "D": "A sociologia ignora a experiência cotidiana, baseando-se apenas em teorias abstratas",
+            "E": "Não há diferença significativa entre sociologia e senso comum"
+          },
+          "correta": "B",
+          "explicacao": "O senso comum é o conhecimento cotidiano, não sistemático, baseado em experiências particulares e tradições, geralmente não questionado. A sociologia busca conhecimento sistemático, rigoroso, baseado em métodos (observação, pesquisa, análise), que pode ser verificado e criticado. A sociologia questiona as 'verdades' do senso comum, mostrando que muitas são preconceitos ou generalizações indevidas. Ambos tratam da vida social, mas de formas diferentes.",
+          "dificuldade": "facil",
+          "tags": ["sociologia", "senso comum", "método"]
+        },
+        {
+          "id": "q101-5",
+          "enunciado": "O positivismo de Comte, ao propor uma 'física social', buscava estudar a sociedade aplicando:",
+          "alternativas": {
+            "A": "Os métodos da teologia e da revelação religiosa",
+            "B": "Os métodos das ciências naturais, buscando leis sociais objetivas",
+            "C": "A intuição e a subjetividade como únicas formas de conhecimento",
+            "D": "A dialética hegeliana e a crítica da economia política",
+            "E": "Os métodos da psicologia individual para explicar fenômenos coletivos"
+          },
+          "correta": "B",
+          "explicacao": "Comte propunha estudar a sociedade com os mesmos métodos que as ciências naturais usam para estudar a natureza: observação, comparação, experimentação (quando possível), busca de leis. Assim como a física descobre leis da natureza, a 'física social' (sociologia) descobriria leis que regem a sociedade. Esse conhecimento permitiria prever e controlar fenômenos sociais, reorganizando a sociedade racionalmente.",
+          "dificuldade": "medio",
+          "tags": ["positivismo", "método", "ciência"]
+        }
+      ]
+    },
+    {
+      "id": "m102",
+      "titulo": "Émile Durkheim e os Fatos Sociais",
+      "resumo": "A sociologia como ciência, fatos sociais, solidariedade, anomia e suicídio",
+      "topicos": [
+        {
+          "titulo": "Os Fatos Sociais",
+          "conteudo": "Émile Durkheim (1858-1917) fundou a sociologia como disciplina acadêmica na França. Definiu o objeto da sociologia: os fatos sociais. Fatos sociais são 'maneiras de agir, pensar e sentir exteriores ao indivíduo, dotadas de poder de coerção'. São exteriores (existem independentemente do indivíduo), coercitivos (exercem pressão, mesmo que não percebamos) e gerais (comuns aos membros da sociedade). Exemplos: linguagem, regras morais, instituições, moda. Devem ser tratados 'como coisas': estudados objetivamente, sem preconceitos. A sociologia explica fatos sociais por outros fatos sociais, não por fatores psicológicos individuais."
+        },
+        {
+          "titulo": "Solidariedade Mecânica e Orgânica",
+          "conteudo": "Em 'Da Divisão do Trabalho Social', Durkheim analisou os laços que unem os indivíduos. Nas sociedades tradicionais (pré-modernas), predomina a solidariedade mecânica: os indivíduos são semelhantes, compartilham as mesmas crenças e valores (consciência coletiva forte), e o que os une é essa semelhança. Nas sociedades modernas, com a divisão do trabalho, predomina a solidariedade orgânica: os indivíduos são diferentes, especializados, e o que os une é a interdependência funcional - cada um depende dos outros. A consciência coletiva enfraquece, abrindo espaço para a individualidade."
+        },
+        {
+          "titulo": "Anomia e o Estudo do Suicídio",
+          "conteudo": "Anomia é a situação em que as normas sociais estão enfraquecidas ou ausentes, gerando desregulação. Ocorre em momentos de mudança social rápida, crises econômicas ou prosperidade repentina. Em 'O Suicídio', Durkheim mostrou que mesmo um ato aparentemente individual tem causas sociais. Identificou tipos: suicídio egoísta (fraca integração social), altruísta (excesso de integração), anômico (desregulação normativa) e fatalista (regulação excessiva). Protestantes tinham taxas maiores que católicos, solteiros mais que casados - fatores sociais explicam variações estatísticas. A sociedade está presente até nos atos mais íntimos."
+        }
+      ],
+      "exemplos": [
+        "A moda como fato social: exterior, coercitivo e geral",
+        "Solidariedade mecânica em comunidades tradicionais vs. orgânica nas cidades",
+        "Anomia em contextos de mudança social rápida"
+      ],
+      "dicas": [
+        "ENEM cobra o conceito de fato social e suas características",
+        "Entenda a diferença entre solidariedade mecânica e orgânica",
+        "A anomia explica problemas sociais em momentos de crise ou mudança"
+      ],
+      "questoes": [
+        {
+          "id": "q102-1",
+          "enunciado": "Émile Durkheim definiu o objeto da sociologia como os 'fatos sociais'. Segundo Durkheim, uma característica fundamental dos fatos sociais é:",
+          "alternativas": {
+            "A": "Serem criações puramente individuais, sem influência da sociedade",
+            "B": "Exercerem coerção sobre os indivíduos, mesmo que estes não percebam",
+            "C": "Dependerem exclusivamente da vontade de cada pessoa",
+            "D": "Serem facilmente modificados por decisão individual",
+            "E": "Existirem apenas na mente de cada indivíduo isoladamente"
+          },
+          "correta": "B",
+          "explicacao": "Os fatos sociais, para Durkheim, têm três características: são exteriores ao indivíduo (existem antes de ele nascer e continuam após sua morte), são coercitivos (exercem pressão, impõem-se, mesmo que o indivíduo não perceba - língua, moral, leis) e são gerais (difundidos na sociedade). A coerção pode ser sentida quando tentamos transgredir: a língua que falamos, as regras de conduta, as modas nos constrangem.",
+          "dificuldade": "facil",
+          "tags": ["durkheim", "fato social", "coerção"]
+        },
+        {
+          "id": "q102-2",
+          "enunciado": "Durkheim distinguiu dois tipos de solidariedade social. A 'solidariedade mecânica', típica de sociedades tradicionais, caracteriza-se por:",
+          "alternativas": {
+            "A": "União baseada na divisão do trabalho e interdependência funcional",
+            "B": "União baseada na semelhança entre os indivíduos e na forte consciência coletiva",
+            "C": "Ausência de qualquer forma de coesão social",
+            "D": "Predomínio do individualismo e enfraquecimento dos laços sociais",
+            "E": "Conflito permanente entre classes sociais antagônicas"
+          },
+          "correta": "B",
+          "explicacao": "Na solidariedade mecânica, os indivíduos são semelhantes: compartilham as mesmas crenças, valores, práticas. A consciência coletiva é forte e abrangente, deixando pouco espaço para a individualidade. O que une é a semelhança. É típica de sociedades tradicionais, pequenas, com pouca divisão do trabalho. A solidariedade orgânica, nas sociedades modernas, baseia-se na diferença e interdependência funcional.",
+          "dificuldade": "medio",
+          "tags": ["durkheim", "solidariedade mecânica", "consciência coletiva"]
+        },
+        {
+          "id": "q102-3",
+          "enunciado": "O conceito de 'anomia' em Durkheim refere-se a uma situação social caracterizada por:",
+          "alternativas": {
+            "A": "Excesso de regulamentação e controle sobre os indivíduos",
+            "B": "Perfeito equilíbrio entre as normas sociais e os desejos individuais",
+            "C": "Enfraquecimento ou ausência de normas sociais, gerando desregulação",
+            "D": "Harmonia total entre os diferentes grupos da sociedade",
+            "E": "Forte integração dos indivíduos nos grupos sociais"
+          },
+          "correta": "C",
+          "explicacao": "Anomia (do grego 'a-nomos', sem lei/norma) é a situação em que as normas sociais que regulam a conduta estão enfraquecidas, confusas ou ausentes. Pode ocorrer em momentos de mudança social rápida (industrialização, crises), quando as antigas normas não funcionam mais e novas ainda não se estabeleceram. Gera desorientação e pode levar a comportamentos desviantes. Durkheim associou anomia a um tipo de suicídio.",
+          "dificuldade": "facil",
+          "tags": ["durkheim", "anomia", "normas"]
+        },
+        {
+          "id": "q102-4",
+          "enunciado": "Em 'O Suicídio', Durkheim demonstrou que mesmo um ato aparentemente individual como o suicídio pode ser explicado sociologicamente. Sua análise revelou que:",
+          "alternativas": {
+            "A": "O suicídio é determinado exclusivamente por fatores psicológicos individuais",
+            "B": "As taxas de suicídio variam conforme fatores sociais como religião, estado civil e integração social",
+            "C": "Não há qualquer padrão nas taxas de suicídio, sendo totalmente aleatórias",
+            "D": "O suicídio afeta igualmente todos os grupos sociais, sem distinção",
+            "E": "A sociedade não tem qualquer influência sobre decisões individuais"
+          },
+          "correta": "B",
+          "explicacao": "Durkheim mostrou que as taxas de suicídio variam sistematicamente entre grupos: protestantes mais que católicos, solteiros mais que casados, em crises econômicas mais que em estabilidade. Isso indica causas sociais, não apenas individuais. Identificou tipos de suicídio conforme a relação do indivíduo com a sociedade: egoísta (baixa integração), altruísta (alta integração), anômico (desregulação), fatalista (excesso de regulação).",
+          "dificuldade": "medio",
+          "tags": ["durkheim", "suicídio", "sociologia"]
+        },
+        {
+          "id": "q102-5",
+          "enunciado": "Durkheim afirmava que os fatos sociais devem ser tratados 'como coisas'. Essa recomendação metodológica significa que o sociólogo deve:",
+          "alternativas": {
+            "A": "Considerar que a sociedade é composta apenas de objetos materiais",
+            "B": "Estudar os fenômenos sociais objetivamente, afastando prenoções e preconceitos",
+            "C": "Reduzir todos os fatos sociais a fatos físicos ou biológicos",
+            "D": "Ignorar as interpretações que os próprios atores sociais fazem de suas ações",
+            "E": "Acreditar que a sociedade não pode ser estudada cientificamente"
+          },
+          "correta": "B",
+          "explicacao": "Tratar fatos sociais 'como coisas' não significa que sejam coisas materiais, mas que o sociólogo deve abordá-los com a mesma objetividade que o cientista natural aborda seus objetos. Deve afastar prenoções (ideias prévias não fundamentadas, preconceitos) e estudar os fatos como se fossem desconhecidos, deixando que a pesquisa revele suas características. É uma regra metodológica para garantir cientificidade.",
+          "dificuldade": "dificil",
+          "tags": ["durkheim", "método", "fatos sociais"]
+        }
+      ]
+    },
+    {
+      "id": "m103",
+      "titulo": "Max Weber: Ação Social e Racionalização",
+      "resumo": "Ação social, tipos de dominação, burocracia e a ética protestante",
+      "topicos": [
+        {
+          "titulo": "A Sociologia Compreensiva e a Ação Social",
+          "conteudo": "Max Weber (1864-1920) propôs uma sociologia 'compreensiva': além de explicar causalmente, deve compreender o sentido visado pelos agentes. O objeto é a ação social: ação orientada pelo comportamento de outros. Weber distingue quatro tipos ideais de ação: racional com relação a fins (calcula meios para fins desejados), racional com relação a valores (orientada por valores, independentemente das consequências), afetiva (determinada por emoções) e tradicional (determinada pelo costume). O sociólogo deve interpretar o sentido subjetivo que o agente atribui à sua ação. A sociologia weberiana é individualista metodologicamente: parte de ações individuais."
+        },
+        {
+          "titulo": "Tipos de Dominação",
+          "conteudo": "Weber analisou as formas de dominação legítima (por que as pessoas obedecem?). Três tipos ideais: dominação tradicional (obedece-se pela tradição, pelo 'sempre foi assim' - patriarcalismo, patrimonialismo), dominação carismática (obedece-se às qualidades extraordinárias do líder - profetas, heróis, demagogos), dominação racional-legal (obedece-se às leis impessoais, à posição, não à pessoa - Estado moderno, burocracia). A modernização é processo de racionalização: a dominação racional-legal substitui as outras. A burocracia é a forma mais eficiente de administração, mas também uma 'jaula de ferro'."
+        },
+        {
+          "titulo": "A Ética Protestante e o Espírito do Capitalismo",
+          "conteudo": "Em 'A Ética Protestante e o Espírito do Capitalismo', Weber investigou as afinidades entre o calvinismo e o capitalismo moderno. A doutrina da predestinação gerava angústia: como saber se sou eleito? O sucesso nos negócios foi interpretado como sinal de eleição. O trabalho tornou-se vocação (Beruf), o ócio pecado, o lucro legítimo se reinvestido (não gasto em luxo). Weber não afirma que o calvinismo 'causou' o capitalismo, mas que houve afinidade eletiva entre a ética protestante e o 'espírito' (mentalidade) capitalista. É exemplo da influência de ideias sobre a economia."
+        }
+      ],
+      "exemplos": [
+        "Tipos de ação social em situações cotidianas",
+        "Dominação carismática em líderes políticos contemporâneos",
+        "A burocracia moderna: eficiência e despersonalização"
+      ],
+      "dicas": [
+        "ENEM cobra os tipos de ação social e de dominação",
+        "Entenda a diferença entre Weber e Durkheim no método",
+        "A 'ética protestante' é tema clássico"
+      ],
+      "questoes": [
+        {
+          "id": "q103-1",
+          "enunciado": "Max Weber definiu a sociologia como ciência que busca compreender a 'ação social'. Para Weber, uma ação é 'social' quando:",
+          "alternativas": {
+            "A": "É realizada por um grande número de pessoas simultaneamente",
+            "B": "É orientada pelo comportamento de outros, levando-os em conta",
+            "C": "Ocorre em espaços públicos, como praças e ruas",
+            "D": "É determinada exclusivamente por instintos biológicos",
+            "E": "Não tem nenhuma relação com outras pessoas"
+          },
+          "correta": "B",
+          "explicacao": "Para Weber, a ação social é aquela cujo sentido visado pelo agente se refere ao comportamento de outros e por ele se orienta. Nem toda ação é social: um acidente não é; mas cumprimentar alguém é, pois leva em conta a presença e a expectativa do outro. A sociologia deve compreender o sentido que o agente atribui à sua ação e explicar causalmente o curso e os efeitos dessa ação.",
+          "dificuldade": "medio",
+          "tags": ["weber", "ação social", "compreensão"]
+        },
+        {
+          "id": "q103-2",
+          "enunciado": "Weber identificou três tipos 'puros' ou 'ideais' de dominação legítima. A dominação 'racional-legal', típica do Estado moderno, caracteriza-se por:",
+          "alternativas": {
+            "A": "Obediência à pessoa do governante em virtude de suas qualidades extraordinárias",
+            "B": "Obediência à tradição e aos costumes estabelecidos desde tempos imemoriais",
+            "C": "Obediência a leis impessoais e a cargos definidos por regras formais",
+            "D": "Obediência baseada em laços de sangue e parentesco",
+            "E": "Ausência de qualquer forma de obediência ou autoridade"
+          },
+          "correta": "C",
+          "explicacao": "Na dominação racional-legal, obedece-se não à pessoa, mas à lei, ao cargo, à posição. As regras são impessoais, aplicam-se a todos, estabelecem competências definidas. O funcionário obedece ao superior não por sua pessoa, mas por ocupar determinado cargo. É a forma de dominação típica do Estado moderno e da burocracia. As outras formas são: tradicional (obedece-se à tradição) e carismática (às qualidades pessoais do líder).",
+          "dificuldade": "medio",
+          "tags": ["weber", "dominação", "racional-legal"]
+        },
+        {
+          "id": "q103-3",
+          "enunciado": "A dominação carismática, segundo Weber, baseia-se na crença dos dominados nas qualidades extraordinárias do líder. Esse tipo de dominação é encontrado em:",
+          "alternativas": {
+            "A": "Burocracias estatais com funcionários concursados",
+            "B": "Monarquias hereditárias tradicionais",
+            "C": "Movimentos liderados por profetas, heróis ou demagogos",
+            "D": "Empresas administradas por princípios científicos",
+            "E": "Sociedades sem qualquer forma de liderança"
+          },
+          "correta": "C",
+          "explicacao": "O carisma (do grego 'graça', 'dom') refere-se a qualidades consideradas extraordinárias, sobrenaturais ou excepcionais. Profetas religiosos, heróis de guerra, líderes revolucionários e demagogos exercem dominação carismática: são obedecidos não pela tradição ou pela lei, mas por suas qualidades pessoais. É dominação instável: depende de provar constantemente o carisma e não se transfere facilmente (problema da 'rotinização do carisma').",
+          "dificuldade": "facil",
+          "tags": ["weber", "carisma", "dominação"]
+        },
+        {
+          "id": "q103-4",
+          "enunciado": "Em 'A Ética Protestante e o Espírito do Capitalismo', Weber analisou a relação entre religião e economia. Segundo sua análise:",
+          "alternativas": {
+            "A": "O catolicismo promoveu diretamente o desenvolvimento do capitalismo",
+            "B": "A religião não tem qualquer influência sobre a atividade econômica",
+            "C": "Houve afinidade entre a ética calvinista (valorização do trabalho, rejeição do ócio) e o 'espírito' capitalista",
+            "D": "O capitalismo surgiu apesar da religião, que sempre se opôs ao lucro",
+            "E": "O ateísmo foi condição necessária para o surgimento do capitalismo"
+          },
+          "correta": "C",
+          "explicacao": "Weber não afirmou que o calvinismo 'causou' o capitalismo, mas identificou uma 'afinidade eletiva' entre a ética protestante (especialmente calvinista) e o 'espírito' (mentalidade) do capitalismo moderno. A doutrina da predestinação levou os fiéis a buscar sinais de eleição no sucesso nos negócios; o trabalho era vocação divina, o ócio pecado, o lucro legítimo se reinvestido. Isso favoreceu a acumulação de capital e a racionalização econômica.",
+          "dificuldade": "medio",
+          "tags": ["weber", "ética protestante", "capitalismo"]
+        },
+        {
+          "id": "q103-5",
+          "enunciado": "Weber utilizou o conceito de 'tipo ideal' em sua sociologia. Um 'tipo ideal' é:",
+          "alternativas": {
+            "A": "Uma descrição perfeita e completa de um fenômeno social real",
+            "B": "Uma construção teórica que acentua características para facilitar a análise",
+            "C": "Um modelo normativo de como a sociedade deveria ser",
+            "D": "Uma média estatística das características de um grupo",
+            "E": "Uma descrição de uma sociedade utópica e perfeita"
+          },
+          "correta": "B",
+          "explicacao": "O tipo ideal é uma construção teórica, um instrumento analítico. O sociólogo acentua unilateralmente características típicas de um fenômeno para formar um conceito claro. Não é uma descrição da realidade (que é sempre mais complexa), nem um ideal normativo, nem uma média. Serve para comparar com casos concretos: a realidade aproxima-se ou afasta-se do tipo ideal. Os três tipos de dominação são tipos ideais.",
+          "dificuldade": "dificil",
+          "tags": ["weber", "tipo ideal", "metodologia"]
+        }
+      ]
+    },
+    {
+      "id": "m104",
+      "titulo": "Karl Marx: Classes Sociais e Capitalismo",
+      "resumo": "Materialismo histórico, luta de classes, mais-valia e ideologia",
+      "topicos": [
+        {
+          "titulo": "Materialismo Histórico",
+          "conteudo": "Karl Marx (1818-1883), embora não se considerasse sociólogo, influenciou profundamente a sociologia. O materialismo histórico vê a história como sucessão de modos de produção (comunismo primitivo, escravismo, feudalismo, capitalismo), movida pelas contradições entre forças produtivas e relações de produção. A infraestrutura econômica (forças produtivas e relações de produção) determina, em última instância, a superestrutura (Estado, direito, religião, ideologia, arte). A história é história da luta de classes: senhores e escravos, senhores feudais e servos, burguesia e proletariado."
+        },
+        {
+          "titulo": "Classes Sociais no Capitalismo",
+          "conteudo": "No capitalismo, as duas classes fundamentais são: burguesia (proprietária dos meios de produção - fábricas, terras, máquinas) e proletariado (trabalhadores que só possuem sua força de trabalho para vender). A relação é de exploração: o proletário trabalha parte do dia para reproduzir o valor de sua força de trabalho (salário) e parte para produzir mais-valia, apropriada pelo capitalista. A mais-valia é trabalho não pago, fonte do lucro. Classes têm interesses antagônicos: a burguesia quer aumentar a mais-valia, o proletariado quer melhores condições. A consciência de classe é necessária para a ação política."
+        },
+        {
+          "titulo": "Ideologia e Alienação",
+          "conteudo": "Ideologia, em Marx, são as ideias que justificam e naturalizam a dominação de classe. A classe dominante controla não só a produção material, mas também a produção de ideias: suas ideias tornam-se 'ideias dominantes'. A ideologia apresenta interesses particulares (da burguesia) como universais (de todos). A alienação no capitalismo tem quatro dimensões: do produto (não pertence ao trabalhador), do processo (não controla como trabalha), da essência humana (trabalho deveria realizar, mas embrutece), dos outros (competição). A superação virá com a revolução proletária, que abolirá a propriedade privada dos meios de produção."
+        }
+      ],
+      "exemplos": [
+        "A luta de classes em conflitos sociais contemporâneos",
+        "A ideologia nas representações midiáticas",
+        "Alienação em formas contemporâneas de trabalho"
+      ],
+      "dicas": [
+        "ENEM cobra conceitos de Marx: classe, ideologia, mais-valia",
+        "Entenda a diferença entre infraestrutura e superestrutura",
+        "A alienação no trabalho é tema frequente"
+      ],
+      "questoes": [
+        {
+          "id": "q104-1",
+          "enunciado": "No pensamento de Marx, a infraestrutura econômica de uma sociedade é composta pelas forças produtivas e pelas relações de produção. A 'superestrutura', que seria determinada pela infraestrutura, inclui:",
+          "alternativas": {
+            "A": "As fábricas, máquinas e matérias-primas",
+            "B": "As relações entre patrões e empregados no processo produtivo",
+            "C": "O Estado, o direito, a religião, a ideologia e as formas de consciência",
+            "D": "A tecnologia e os métodos de produção",
+            "E": "A força de trabalho dos operários"
+          },
+          "correta": "C",
+          "explicacao": "Para Marx, a infraestrutura (base econômica) é composta pelas forças produtivas (meios de produção, tecnologia, força de trabalho) e pelas relações de produção (relações entre classes na produção). A superestrutura inclui as instituições políticas (Estado, direito), as formas de consciência (religião, moral, ideologia, arte) e é determinada, em última instância, pela base econômica. Mudanças na base geram mudanças na superestrutura.",
+          "dificuldade": "medio",
+          "tags": ["marx", "infraestrutura", "superestrutura"]
+        },
+        {
+          "id": "q104-2",
+          "enunciado": "Marx afirmou que 'a história de toda sociedade até hoje existente é a história da luta de classes'. No capitalismo, as duas classes fundamentais em conflito são:",
+          "alternativas": {
+            "A": "Nobreza e clero",
+            "B": "Senhores e escravos",
+            "C": "Burguesia e proletariado",
+            "D": "Camponeses e artesãos",
+            "E": "Governantes e governados"
+          },
+          "correta": "C",
+          "explicacao": "Cada modo de produção tem suas classes antagônicas: no escravismo, senhores e escravos; no feudalismo, senhores feudais e servos; no capitalismo, burguesia (proprietária dos meios de produção) e proletariado (trabalhadores que vendem sua força de trabalho). O conflito entre essas classes move a história. A revolução proletária aboliria as classes e inauguraria uma sociedade sem exploração.",
+          "dificuldade": "facil",
+          "tags": ["marx", "classes", "capitalismo"]
+        },
+        {
+          "id": "q104-3",
+          "enunciado": "O conceito de 'ideologia' em Marx tem um sentido específico. Nesse contexto, ideologia refere-se a:",
+          "alternativas": {
+            "A": "Qualquer conjunto de ideias ou doutrinas políticas",
+            "B": "O conhecimento científico e verdadeiro sobre a sociedade",
+            "C": "Ideias que justificam e naturalizam a dominação de classe, apresentando interesses particulares como universais",
+            "D": "Apenas as ideias religiosas e teológicas",
+            "E": "A consciência revolucionária do proletariado"
+          },
+          "correta": "C",
+          "explicacao": "Ideologia, em Marx, não é qualquer conjunto de ideias, mas especificamente as ideias que expressam, justificam e naturalizam os interesses da classe dominante, apresentando-os como se fossem interesses de todos. Por exemplo, a ideia de que a propriedade privada é 'natural' ou que o sucesso depende apenas do mérito individual. A ideologia dominante é a ideologia da classe dominante.",
+          "dificuldade": "medio",
+          "tags": ["marx", "ideologia", "dominação"]
+        },
+        {
+          "id": "q104-4",
+          "enunciado": "A 'mais-valia', conceito central na teoria econômica de Marx, refere-se a:",
+          "alternativas": {
+            "A": "O salário pago ao trabalhador por sua jornada de trabalho",
+            "B": "O valor adicional criado pelo trabalhador além do necessário para sua subsistência, apropriado pelo capitalista",
+            "C": "O preço final das mercadorias vendidas no mercado",
+            "D": "Os impostos pagos pelo capitalista ao Estado",
+            "E": "O lucro reinvestido em novos meios de produção"
+          },
+          "correta": "B",
+          "explicacao": "A mais-valia é a diferença entre o valor que o trabalhador produz e o valor que ele recebe como salário. O trabalhador produz, em parte da jornada, o equivalente ao seu salário; no restante, produz mais-valia, que é apropriada gratuitamente pelo capitalista. É a fonte do lucro capitalista e a base da exploração. Marx mostrou que a exploração não é roubo ou engano, mas está na própria estrutura da relação salarial.",
+          "dificuldade": "medio",
+          "tags": ["marx", "mais-valia", "exploração"]
+        },
+        {
+          "id": "q104-5",
+          "enunciado": "A alienação do trabalho, conceito desenvolvido por Marx, manifesta-se em diferentes dimensões. A alienação do produto do trabalho significa que:",
+          "alternativas": {
+            "A": "O trabalhador escolhe livremente o que produzir",
+            "B": "O trabalhador se reconhece plenamente no produto de seu trabalho",
+            "C": "O produto do trabalho pertence ao trabalhador que o criou",
+            "D": "O produto do trabalho aparece ao trabalhador como algo estranho, que não lhe pertence",
+            "E": "O trabalhador tem orgulho do que produz"
+          },
+          "correta": "D",
+          "explicacao": "A alienação do produto significa que o trabalhador não se reconhece no que produz: o produto não lhe pertence, pertence ao capitalista. Quanto mais produz, mais enriquece outro e mais se empobrece. O produto aparece como algo estranho, alheio, até hostil. As outras dimensões são: alienação do processo (não controla como trabalha), da essência humana (trabalho deveria realizar, mas embrutece), dos outros (competição em vez de cooperação).",
+          "dificuldade": "medio",
+          "tags": ["marx", "alienação", "trabalho"]
+        }
+      ]
+    },
+    {
+      "id": "m105",
+      "titulo": "Cultura, Socialização e Identidade",
+      "resumo": "Conceitos de cultura, processos de socialização e formação de identidades",
+      "topicos": [
+        {
+          "titulo": "O Conceito de Cultura",
+          "conteudo": "Cultura, em sentido sociológico/antropológico, não é apenas 'alta cultura' (artes, ciências), mas o conjunto de conhecimentos, crenças, valores, normas, símbolos, práticas compartilhados por um grupo. É o que nos torna humanos e diferentes entre grupos. A cultura é aprendida (não inata), compartilhada (não individual), simbólica (usa linguagem) e dinâmica (muda no tempo). Inclui cultura material (objetos) e imaterial (ideias, valores). O etnocentrismo julga outras culturas pelos padrões da própria. O relativismo cultural propõe compreender cada cultura em seus próprios termos. Debates: existe cultura universal? Como conciliar relativismo e direitos humanos?"
+        },
+        {
+          "titulo": "Socialização",
+          "conteudo": "Socialização é o processo pelo qual indivíduos aprendem e internalizam normas, valores e modos de agir da sociedade, tornando-se membros. A socialização primária (infância, família) é fundamental: adquire-se linguagem, hábitos básicos, identidade inicial. A socialização secundária (escola, trabalho, religião) ocorre ao longo da vida. Agentes de socialização: família, escola, mídia, grupos de pares, religião, trabalho. A socialização não é passiva: o indivíduo interpreta, resiste, negocia. Diferentes sociedades socializam de formas diferentes. A socialização transmite cultura e integra o indivíduo à sociedade."
+        },
+        {
+          "titulo": "Identidade Social",
+          "conteudo": "Identidade é como nos definimos e somos definidos pelos outros. É construção social, não essência fixa. Identidades são múltiplas e situacionais: de gênero, étnico-racial, nacional, profissional, religiosa, de classe. Stuart Hall distingue concepções: o sujeito do Iluminismo (eu fixo, centrado), o sujeito sociológico (formado na interação com outros), o sujeito pós-moderno (fragmentado, múltiplo, em mudança). A identidade é relacional: define-se em relação ao outro, ao diferente. Movimentos identitários (feminismo, movimento negro, LGBTQIA+) politizam identidades antes invisibilizadas."
+        }
+      ],
+      "exemplos": [
+        "Etnocentrismo em julgamentos sobre outras culturas",
+        "Agentes de socialização: família, escola, mídia",
+        "Identidades múltiplas e interseccionalidade"
+      ],
+      "dicas": [
+        "ENEM cobra conceito antropológico de cultura",
+        "Entenda etnocentrismo vs. relativismo cultural",
+        "Socialização explica como nos tornamos membros da sociedade"
+      ],
+      "questoes": [
+        {
+          "id": "q105-1",
+          "enunciado": "Em sociologia e antropologia, o conceito de 'cultura' tem um sentido específico, diferente do uso cotidiano. Nesse sentido, cultura refere-se a:",
+          "alternativas": {
+            "A": "Apenas as manifestações artísticas e intelectuais de uma sociedade",
+            "B": "O nível de educação formal e sofisticação de uma pessoa",
+            "C": "O conjunto de conhecimentos, crenças, valores, normas e práticas compartilhados por um grupo",
+            "D": "Características biológicas herdadas geneticamente",
+            "E": "A superioridade de algumas civilizações sobre outras"
+          },
+          "correta": "C",
+          "explicacao": "Em sentido sociológico/antropológico, cultura não se limita a artes e letras, mas abrange tudo que é aprendido e compartilhado em uma sociedade: língua, religião, valores, normas, costumes, modos de vestir, comer, trabalhar, etc. É o que diferencia grupos humanos entre si e o que nos diferencia de outros animais. É transmitida por aprendizado (socialização), não por herança biológica.",
+          "dificuldade": "facil",
+          "tags": ["cultura", "conceito", "antropologia"]
+        },
+        {
+          "id": "q105-2",
+          "enunciado": "O etnocentrismo é uma atitude comum, mas problemática, nas relações entre diferentes culturas. O etnocentrismo consiste em:",
+          "alternativas": {
+            "A": "Reconhecer a validade de todas as culturas igualmente",
+            "B": "Julgar outras culturas a partir dos valores e padrões da própria cultura, considerando-a superior",
+            "C": "Estudar outras culturas com neutralidade e respeito",
+            "D": "Adotar práticas culturais de outros povos abandonando as próprias",
+            "E": "Reconhecer que todas as culturas têm aspectos positivos e negativos"
+          },
+          "correta": "B",
+          "explicacao": "O etnocentrismo é a tendência de avaliar outras culturas pelos critérios da própria, considerando-a o padrão de referência. Práticas diferentes são vistas como 'estranhas', 'primitivas', 'erradas' ou 'inferiores'. É uma atitude comum, mas que dificulta a compreensão de outras culturas. O relativismo cultural propõe compreender cada cultura em seus próprios termos, sem julgamentos de valor apriorísticos.",
+          "dificuldade": "facil",
+          "tags": ["etnocentrismo", "cultura", "relativismo"]
+        },
+        {
+          "id": "q105-3",
+          "enunciado": "A socialização é o processo pelo qual os indivíduos aprendem a ser membros de uma sociedade. A 'socialização primária' ocorre principalmente:",
+          "alternativas": {
+            "A": "No ambiente de trabalho, durante a carreira profissional",
+            "B": "Na infância, principalmente no contexto familiar",
+            "C": "Na universidade, através da formação acadêmica",
+            "D": "Na velhice, através da aposentadoria",
+            "E": "Apenas através dos meios de comunicação de massa"
+          },
+          "correta": "B",
+          "explicacao": "A socialização primária ocorre na infância, principalmente na família. É quando se adquirem as habilidades básicas (linguagem, hábitos), os primeiros valores e normas, a identidade inicial. É fundamental porque marca profundamente o indivíduo. A socialização secundária ocorre ao longo da vida, em outras instituições (escola, trabalho, religião, etc.), introduzindo o indivíduo em novos setores da sociedade.",
+          "dificuldade": "facil",
+          "tags": ["socialização", "família", "infância"]
+        },
+        {
+          "id": "q105-4",
+          "enunciado": "Stuart Hall, sociólogo jamaicano-britânico, analisou as transformações nas concepções de identidade. O 'sujeito pós-moderno', segundo Hall, caracteriza-se por:",
+          "alternativas": {
+            "A": "Ter uma identidade fixa, unificada e estável ao longo de toda a vida",
+            "B": "Definir sua identidade apenas pela racionalidade e individualismo",
+            "C": "Ter identidades múltiplas, fragmentadas e em constante transformação",
+            "D": "Não ter nenhuma forma de identidade ou pertencimento",
+            "E": "Rejeitar todas as formas de identificação coletiva"
+          },
+          "correta": "C",
+          "explicacao": "Stuart Hall distingue três concepções do sujeito: o sujeito do Iluminismo (centrado, racional, com identidade fixa), o sujeito sociológico (formado na interação, identidade entre o 'eu' e a sociedade) e o sujeito pós-moderno. Este último não tem identidade fixa: é fragmentado, composto de várias identidades, às vezes contraditórias, que mudam conforme os contextos. A globalização e as mudanças culturais desestabilizam identidades.",
+          "dificuldade": "medio",
+          "tags": ["stuart hall", "identidade", "pós-moderno"]
+        },
+        {
+          "id": "q105-5",
+          "enunciado": "O relativismo cultural é uma postura metodológica importante nas ciências sociais. Essa postura implica:",
+          "alternativas": {
+            "A": "Afirmar que qualquer prática cultural é moralmente aceitável",
+            "B": "Buscar compreender cada cultura em seus próprios termos, evitando julgamentos etnocêntricos",
+            "C": "Considerar que a cultura ocidental é o padrão para avaliar outras culturas",
+            "D": "Rejeitar a existência de diferenças culturais entre os povos",
+            "E": "Impor os valores de uma cultura sobre todas as outras"
+          },
+          "correta": "B",
+          "explicacao": "O relativismo cultural é primariamente uma postura metodológica: para compreender uma cultura, devemos evitar julgá-la pelos padrões da nossa, buscando entendê-la em seus próprios termos. Isso não implica necessariamente um relativismo moral absoluto (aceitar qualquer prática), mas uma cautela epistemológica para evitar etnocentrismo. Há debates sobre como conciliar relativismo cultural com valores universais como direitos humanos.",
+          "dificuldade": "medio",
+          "tags": ["relativismo cultural", "metodologia", "antropologia"]
+        }
+      ]
+    },
+    {
+      "id": "m106",
+      "titulo": "Desigualdade Social e Estratificação",
+      "resumo": "Formas de estratificação, classes, raça, gênero e mobilidade social",
+      "topicos": [
+        {
+          "titulo": "Estratificação Social",
+          "conteudo": "Estratificação social é a divisão da sociedade em camadas (estratos) hierarquizadas, com acesso desigual a recursos, prestígio e poder. Sistemas históricos: castas (estratos fechados, hereditários, endogâmicos - Índia tradicional), estamentos (nobreza, clero, servos - feudalismo europeu, alguma mobilidade), classes (baseadas na economia, mobilidade possível - sociedades capitalistas). Diferentes teorias explicam: para Marx, classes definem-se pela relação com os meios de produção; para Weber, há três dimensões de estratificação (classe/economia, status/prestígio, partido/poder); para funcionalistas, estratificação é funcional, recompensando diferentemente posições."
+        },
+        {
+          "titulo": "Desigualdade de Classe, Raça e Gênero",
+          "conteudo": "A desigualdade é multidimensional. Classe refere-se à posição econômica: renda, riqueza, ocupação. Raça/etnia: grupos definidos por características físicas ou culturais enfrentam discriminação (racismo). No Brasil, a desigualdade racial é evidente: negros têm menores rendimentos, escolaridade, maior desemprego e violência. Gênero: a divisão de papéis entre homens e mulheres gera desigualdade (diferenças salariais, violência, sub-representação política). Interseccionalidade (Kimberlé Crenshaw): as desigualdades se cruzam - uma mulher negra enfrenta opressões específicas, não apenas a soma de racismo + sexismo."
+        },
+        {
+          "titulo": "Mobilidade Social",
+          "conteudo": "Mobilidade social é a mudança de posição na estrutura de estratificação. Pode ser vertical (ascendente ou descendente) ou horizontal (mesma posição em outra ocupação). Intrageracional (na mesma geração) ou intergeracional (comparando gerações - filho em relação ao pai). Sociedades mais abertas (como EUA idealizado) prometem mobilidade por mérito; sociedades mais fechadas (castas) impedem mobilidade. Estudos mostram que a mobilidade é mais limitada do que se imagina: origem social influencia fortemente o destino. Políticas públicas (educação, transferência de renda) podem aumentar a mobilidade."
+        }
+      ],
+      "exemplos": [
+        "Desigualdade racial no Brasil em números",
+        "A diferença salarial entre homens e mulheres",
+        "Mobilidade social intergeracional e o 'mito da meritocracia'"
+      ],
+      "dicas": [
+        "ENEM cobra desigualdades de classe, raça e gênero",
+        "Entenda interseccionalidade",
+        "Compare diferentes formas de estratificação"
+      ],
+      "questoes": [
+        {
+          "id": "q106-1",
+          "enunciado": "A estratificação social refere-se à divisão da sociedade em camadas hierarquizadas. O sistema de 'castas', típico da Índia tradicional, caracteriza-se por:",
+          "alternativas": {
+            "A": "Ampla mobilidade social baseada no mérito individual",
+            "B": "Estratos fechados, hereditários, com casamentos dentro do mesmo grupo (endogamia)",
+            "C": "Divisão baseada exclusivamente na riqueza econômica",
+            "D": "Ausência de qualquer hierarquia entre os grupos sociais",
+            "E": "Definição dos estratos por eleição democrática"
+          },
+          "correta": "B",
+          "explicacao": "O sistema de castas é fechado: nasce-se em uma casta e permanece-se nela por toda a vida (hereditário). Casamentos ocorrem dentro da mesma casta (endogamia). Há hierarquia religiosa entre castas, com os 'intocáveis' no nível mais baixo. A mobilidade entre castas é praticamente impossível. Difere das classes capitalistas, onde, em teoria, a mobilidade é possível baseada em fatores econômicos.",
+          "dificuldade": "facil",
+          "tags": ["castas", "estratificação", "mobilidade"]
+        },
+        {
+          "id": "q106-2",
+          "enunciado": "Para Karl Marx, a definição de classe social no capitalismo baseia-se fundamentalmente:",
+          "alternativas": {
+            "A": "No nível de escolaridade e capital cultural dos indivíduos",
+            "B": "Na relação com os meios de produção: proprietários versus trabalhadores",
+            "C": "No prestígio e status social atribuídos pelas outras pessoas",
+            "D": "Na filiação a partidos políticos e organizações",
+            "E": "Na raça e etnia dos indivíduos"
+          },
+          "correta": "B",
+          "explicacao": "Para Marx, a posição de classe é determinada pela relação com os meios de produção. No capitalismo, a burguesia é proprietária dos meios de produção (fábricas, terras, máquinas); o proletariado só possui sua força de trabalho para vender. A relação entre elas é de exploração (mais-valia). Weber complementou com outras dimensões: status (prestígio) e partido (poder). Mas para Marx, a posição econômica é fundamental.",
+          "dificuldade": "medio",
+          "tags": ["marx", "classe", "meios de produção"]
+        },
+        {
+          "id": "q106-3",
+          "enunciado": "O conceito de 'interseccionalidade', desenvolvido por Kimberlé Crenshaw, destaca que:",
+          "alternativas": {
+            "A": "Todas as formas de opressão são idênticas e intercambiáveis",
+            "B": "Diferentes formas de opressão (raça, gênero, classe) se cruzam e produzem experiências específicas",
+            "C": "A discriminação afeta igualmente todos os membros de um grupo",
+            "D": "A raça é a única forma relevante de desigualdade social",
+            "E": "As desigualdades podem ser resolvidas separadamente, uma de cada vez"
+          },
+          "correta": "B",
+          "explicacao": "A interseccionalidade mostra que as diferentes formas de opressão (racismo, sexismo, classismo, etc.) não são separadas, mas se cruzam, produzindo experiências específicas. Uma mulher negra não sofre apenas racismo + sexismo, mas uma forma específica de opressão que não é redutível à soma das partes. Políticas que só consideram raça ou só gênero podem invisibilizar quem está na intersecção.",
+          "dificuldade": "medio",
+          "tags": ["interseccionalidade", "gênero", "raça"]
+        },
+        {
+          "id": "q106-4",
+          "enunciado": "A mobilidade social pode ser classificada de diferentes formas. A mobilidade 'intergeracional' refere-se a:",
+          "alternativas": {
+            "A": "A mudança de posição social de um indivíduo ao longo de sua própria vida",
+            "B": "A comparação da posição social entre diferentes gerações (pais e filhos)",
+            "C": "A mudança de ocupação sem alteração na posição hierárquica",
+            "D": "A migração de indivíduos entre diferentes regiões geográficas",
+            "E": "A ascensão política a cargos de liderança"
+          },
+          "correta": "B",
+          "explicacao": "Mobilidade intergeracional compara a posição social entre gerações: um filho em relação ao pai. Se o filho de um operário torna-se médico, houve mobilidade intergeracional ascendente. A mobilidade intrageracional ocorre na mesma geração, ao longo da vida do indivíduo. A mobilidade pode ser ascendente (subir na hierarquia), descendente (descer) ou horizontal (mudar de ocupação no mesmo nível).",
+          "dificuldade": "facil",
+          "tags": ["mobilidade social", "estratificação", "gerações"]
+        },
+        {
+          "id": "q106-5",
+          "enunciado": "Dados do IBGE mostram que, no Brasil, a população negra (pretos e pardos) tem, em média, rendimentos menores, menor escolaridade e maior taxa de desemprego que a população branca. Esses dados evidenciam:",
+          "alternativas": {
+            "A": "Que não existe racismo no Brasil, apenas diferenças individuais",
+            "B": "A desigualdade racial estrutural presente na sociedade brasileira",
+            "C": "Que a raça não tem relação com a posição socioeconômica",
+            "D": "Que as políticas de igualdade racial já alcançaram seus objetivos",
+            "E": "Que a meritocracia funciona plenamente no Brasil"
+          },
+          "correta": "B",
+          "explicacao": "Os dados mostram desigualdade racial sistemática: negros ganham em média menos, estudam menos tempo, têm maior desemprego, são mais vítimas de violência. Isso não se explica por diferenças individuais, mas por racismo estrutural: herança da escravidão, discriminação no mercado de trabalho, desigualdade no acesso a educação e oportunidades. Políticas de ação afirmativa buscam reduzir essas desigualdades.",
+          "dificuldade": "facil",
+          "tags": ["desigualdade racial", "brasil", "racismo"]
+        }
+      ]
+    },
+    {
+      "id": "m107",
+      "titulo": "Movimentos Sociais e Cidadania",
+      "resumo": "Ação coletiva, novos movimentos sociais, cidadania e direitos",
+      "topicos": [
+        {
+          "titulo": "O que são Movimentos Sociais",
+          "conteudo": "Movimentos sociais são formas de ação coletiva organizada que buscam mudanças sociais (ou resistem a elas). Diferem de ações individuais, de protestos pontuais e de grupos de interesse. Características: identidade coletiva, adversário definido, projeto de mudança (ou conservação), continuidade no tempo. Podem ser progressistas ou conservadores. Teorias explicativas: privação relativa (descontentamento gera mobilização), mobilização de recursos (recursos organizacionais são necessários), estrutura de oportunidades políticas (contexto influencia), enquadramento (como os problemas são interpretados)."
+        },
+        {
+          "titulo": "Novos Movimentos Sociais",
+          "conteudo": "A partir dos anos 1960, surgiram os 'novos movimentos sociais' (NMS), distintos do movimento operário clássico. Incluem: feminismo, movimento negro, movimento LGBTQIA+, ambientalismo, pacifismo, movimento estudantil. Características: baseiam-se em identidades (gênero, raça, orientação sexual), não apenas em classes; questionam a cultura e os valores, não só a economia; usam formas de ação variadas (performances, redes); valorizam autonomia e horizontalidade. No Brasil: movimento negro, feminismo, MST, movimento LGBTQIA+, movimentos urbanos, ambientalismo."
+        },
+        {
+          "titulo": "Cidadania e Direitos",
+          "conteudo": "Cidadania é o conjunto de direitos e deveres que vinculam o indivíduo ao Estado. T. H. Marshall distinguiu três dimensões: direitos civis (liberdades individuais - séc. XVIII), direitos políticos (participação - séc. XIX), direitos sociais (bem-estar - séc. XX). No Brasil, a trajetória foi diferente: direitos sociais (Era Vargas) antes de plenos direitos políticos e civis (ditadura). A Constituição de 1988 ('Constituição Cidadã') ampliou direitos. Cidadania é conquista, não concessão: movimentos sociais lutam por direitos. Novos debates: direitos de gerações futuras, direitos da natureza, cidadania global."
+        }
+      ],
+      "exemplos": [
+        "O movimento feminista e as conquistas de direitos",
+        "O MST como movimento social rural brasileiro",
+        "Movimentos contemporâneos e o uso de redes sociais"
+      ],
+      "dicas": [
+        "ENEM relaciona movimentos sociais a conquista de direitos",
+        "Entenda a diferença entre 'velhos' e 'novos' movimentos sociais",
+        "Cidadania envolve direitos civis, políticos e sociais"
+      ],
+      "questoes": [
+        {
+          "id": "q107-1",
+          "enunciado": "Movimentos sociais são formas de ação coletiva que buscam mudanças (ou resistem a elas). Uma característica que define um movimento social é:",
+          "alternativas": {
+            "A": "Ser sempre pacífico e legalista em suas ações",
+            "B": "Ter identidade coletiva, adversário definido e projeto de transformação social",
+            "C": "Ser organizado exclusivamente por partidos políticos",
+            "D": "Limitar-se a ações individuais isoladas",
+            "E": "Buscar apenas benefícios econômicos imediatos para seus membros"
+          },
+          "correta": "B",
+          "explicacao": "Movimentos sociais caracterizam-se por: identidade coletiva (um 'nós' que se mobiliza), um adversário ou oponente identificado (contra quem ou o que se luta), um projeto (mudança desejada ou manutenção do que está ameaçado), continuidade no tempo (não é apenas um protesto pontual). Podem usar diversas formas de ação (pacíficas ou não) e podem ou não ter relação com partidos.",
+          "dificuldade": "medio",
+          "tags": ["movimentos sociais", "ação coletiva", "política"]
+        },
+        {
+          "id": "q107-2",
+          "enunciado": "Os 'novos movimentos sociais' (NMS), que emergiram a partir dos anos 1960, diferem do movimento operário clássico porque:",
+          "alternativas": {
+            "A": "Concentram-se exclusivamente em questões econômicas e trabalhistas",
+            "B": "Baseiam-se em identidades (gênero, raça, orientação sexual) e questionam valores culturais",
+            "C": "São organizados apenas por partidos de esquerda",
+            "D": "Rejeitam qualquer forma de protesto ou mobilização",
+            "E": "Têm como único objetivo a tomada do poder do Estado"
+          },
+          "correta": "B",
+          "explicacao": "Os NMS (feminismo, movimento negro, LGBTQIA+, ambientalismo, etc.) diferem do movimento operário clássico: baseiam-se em identidades, não apenas em classe; questionam a cultura, os valores, os modos de vida, não só as relações econômicas; valorizam autonomia, horizontalidade, formas criativas de protesto. Não têm necessariamente a tomada do poder como objetivo, mas a transformação cultural e conquista de direitos.",
+          "dificuldade": "medio",
+          "tags": ["novos movimentos sociais", "identidade", "cultura"]
+        },
+        {
+          "id": "q107-3",
+          "enunciado": "T. H. Marshall distinguiu três dimensões da cidadania que se desenvolveram historicamente. Os direitos 'sociais', segundo Marshall, incluem:",
+          "alternativas": {
+            "A": "Liberdade de expressão, de religião e de ir e vir",
+            "B": "Direito de votar e ser votado",
+            "C": "Direito à educação, saúde, trabalho e bem-estar material",
+            "D": "Direito à propriedade privada",
+            "E": "Direito de organizar partidos políticos"
+          },
+          "correta": "C",
+          "explicacao": "Marshall distinguiu: direitos civis (séc. XVIII) - liberdades individuais: expressão, religião, propriedade, ir e vir; direitos políticos (séc. XIX) - participação política: votar, ser votado; direitos sociais (séc. XX) - bem-estar material: educação, saúde, trabalho, seguridade. Os direitos sociais são o que o Estado de bem-estar social busca garantir. No Brasil, a sequência histórica foi diferente.",
+          "dificuldade": "facil",
+          "tags": ["marshall", "cidadania", "direitos sociais"]
+        },
+        {
+          "id": "q107-4",
+          "enunciado": "O movimento feminista é um exemplo de movimento social que luta por igualdade de gênero. Entre as conquistas históricas do feminismo, pode-se citar:",
+          "alternativas": {
+            "A": "A manutenção das mulheres exclusivamente no espaço doméstico",
+            "B": "O direito ao voto feminino, acesso à educação e leis contra violência de gênero",
+            "C": "A proibição do trabalho feminino fora do lar",
+            "D": "A naturalização das diferenças salariais entre homens e mulheres",
+            "E": "A exclusão das mulheres da vida política"
+          },
+          "correta": "B",
+          "explicacao": "O movimento feminista, em suas diferentes 'ondas', conquistou: direito ao voto (sufragismo, primeira onda), acesso à educação e ao mercado de trabalho, direitos reprodutivos, leis contra violência doméstica (Lei Maria da Penha no Brasil), tipificação do feminicídio, políticas de igualdade salarial. A luta continua contra desigualdades que persistem em várias dimensões.",
+          "dificuldade": "facil",
+          "tags": ["feminismo", "movimento social", "direitos"]
+        },
+        {
+          "id": "q107-5",
+          "enunciado": "No Brasil, a Constituição de 1988 é frequentemente chamada de 'Constituição Cidadã'. Essa denominação deve-se ao fato de que ela:",
+          "alternativas": {
+            "A": "Reduziu os direitos sociais para priorizar a liberdade econômica",
+            "B": "Ampliou significativamente os direitos civis, políticos e sociais dos brasileiros",
+            "C": "Manteve as restrições ao voto existentes na ditadura militar",
+            "D": "Eliminou a participação popular na política",
+            "E": "Concentrou poderes no Executivo, reduzindo direitos"
+          },
+          "correta": "B",
+          "explicacao": "A Constituição de 1988, promulgada após a ditadura militar, ampliou direitos em todas as dimensões: direitos civis (habeas corpus, habeas data, etc.), políticos (voto universal aos 16 anos, plebiscito, referendo), sociais (educação, saúde, trabalho como direitos). Reconheceu direitos de povos indígenas, quilombolas. Foi chamada 'Cidadã' pelo deputado Ulysses Guimarães por consagrar amplos direitos de cidadania.",
+          "dificuldade": "facil",
+          "tags": ["constituição 1988", "cidadania", "brasil"]
+        }
+      ]
+    },
+    {
+      "id": "m108",
+      "titulo": "Poder, Estado e Democracia",
+      "resumo": "Conceitos de poder, formas de Estado, democracia e participação política",
+      "topicos": [
+        {
+          "titulo": "O Conceito de Poder",
+          "conteudo": "Poder é a capacidade de fazer com que outros ajam de determinada forma, mesmo contra sua vontade (Weber). Diferencia-se de autoridade (poder legítimo) e de violência (coerção física). Weber definiu Estado como detentor do monopólio legítimo da violência em um território. Foucault ampliou: poder não está só no Estado, mas difuso nas relações sociais (escola, família, medicina); é produtivo, não apenas repressivo; produz saberes e sujeitos. Bourdieu analisou o poder simbólico: dominação exercida através de categorias de percepção, linguagem, cultura."
+        },
+        {
+          "titulo": "Democracia e suas Formas",
+          "conteudo": "Democracia significa 'governo do povo'. Na democracia direta (Atenas antiga), os cidadãos decidem diretamente. Na democracia representativa (moderna), elegem representantes. Críticas: a representação pode distorcer a vontade popular; há desigualdade no acesso à política; a democracia pode ser apenas formal (eleições) sem ser substantiva (direitos efetivos). Democracia participativa propõe complementar a representação com mecanismos de participação direta (plebiscitos, conselhos, orçamento participativo). Democracia deliberativa (Habermas) enfatiza o debate racional na esfera pública."
+        },
+        {
+          "titulo": "Partidos, Eleições e Participação",
+          "conteudo": "Partidos políticos agregam interesses, selecionam candidatos, organizam o governo ou a oposição. Sistemas: bipartidarismo (EUA, Reino Unido), multipartidarismo (Brasil). Sistemas eleitorais: majoritário (vence quem tem mais votos - pode ser simples ou em dois turnos), proporcional (cadeiras distribuídas conforme a votação). No Brasil: sistema proporcional para legislativo, majoritário para executivo. A participação política vai além do voto: movimentos sociais, associações, conselhos de políticas públicas. Abstenção e descrença na política são desafios contemporâneos."
+        }
+      ],
+      "exemplos": [
+        "O poder disciplinar de Foucault em instituições como escola e prisão",
+        "Mecanismos de democracia participativa no Brasil",
+        "O sistema eleitoral brasileiro e suas características"
+      ],
+      "dicas": [
+        "ENEM relaciona poder, Estado e democracia",
+        "Entenda a diferença entre democracia direta e representativa",
+        "Conheça o sistema eleitoral brasileiro"
+      ],
+      "questoes": [
+        {
+          "id": "q108-1",
+          "enunciado": "Max Weber definiu o Estado moderno por uma característica fundamental. Segundo Weber, o Estado é a instituição que detém:",
+          "alternativas": {
+            "A": "O monopólio da produção econômica em um território",
+            "B": "O monopólio legítimo do uso da força física em um território",
+            "C": "O controle absoluto sobre a religião e as crenças",
+            "D": "A propriedade de todos os meios de comunicação",
+            "E": "A administração direta de todas as empresas"
+          },
+          "correta": "B",
+          "explicacao": "Para Weber, o que define o Estado moderno não é sua função (que varia), mas o meio específico que lhe é próprio: o uso da força física. O Estado é a única organização que pode legitimamente usar a violência (polícia, exército) ou autorizar outros a usá-la. É o 'monopólio legítimo da violência' em um território delimitado. Essa definição é descritiva, não normativa.",
+          "dificuldade": "facil",
+          "tags": ["weber", "estado", "poder"]
+        },
+        {
+          "id": "q108-2",
+          "enunciado": "Michel Foucault desenvolveu uma concepção de poder diferente da tradicional. Para Foucault, o poder:",
+          "alternativas": {
+            "A": "Está concentrado exclusivamente no Estado e em suas instituições",
+            "B": "Está difuso nas relações sociais e é exercido em múltiplos pontos (escola, família, medicina)",
+            "C": "É apenas repressivo, limitando-se a proibir e punir",
+            "D": "Não tem relação com o saber ou o conhecimento",
+            "E": "Pode ser eliminado completamente em uma sociedade ideal"
+          },
+          "correta": "B",
+          "explicacao": "Foucault argumentou que o poder não está só no Estado, mas difuso nas relações sociais: na escola, família, hospital, prisão. É exercido através de 'disciplinas' que moldam corpos e comportamentos. O poder não é apenas repressivo (proíbe), mas produtivo: produz saberes, discursos, identidades. Poder e saber estão interligados. Não há um lugar de onde eliminar o poder, pois está em toda parte.",
+          "dificuldade": "medio",
+          "tags": ["foucault", "poder", "disciplina"]
+        },
+        {
+          "id": "q108-3",
+          "enunciado": "A democracia representativa, predominante nas sociedades modernas, caracteriza-se por:",
+          "alternativas": {
+            "A": "Os cidadãos decidirem diretamente sobre todas as leis e políticas",
+            "B": "Os cidadãos elegerem representantes que tomam decisões em seu nome",
+            "C": "O poder ser exercido por um monarca hereditário",
+            "D": "A ausência de qualquer forma de participação popular",
+            "E": "O governo ser exercido por um partido único"
+          },
+          "correta": "B",
+          "explicacao": "Na democracia representativa, os cidadãos não decidem diretamente (como na democracia direta ateniense), mas elegem representantes (deputados, senadores, prefeitos, presidentes) que tomam decisões em seu nome. As eleições periódicas são o mecanismo principal de controle. Críticas apontam que a representação pode distorcer a vontade popular e favorecer elites. Mecanismos de democracia participativa (plebiscitos, conselhos) complementam a representação.",
+          "dificuldade": "facil",
+          "tags": ["democracia representativa", "eleições", "política"]
+        },
+        {
+          "id": "q108-4",
+          "enunciado": "No Brasil, o sistema eleitoral para a Câmara dos Deputados é proporcional. Isso significa que:",
+          "alternativas": {
+            "A": "Vence o candidato que obtiver mais votos em cada distrito",
+            "B": "As cadeiras são distribuídas aos partidos proporcionalmente aos votos recebidos",
+            "C": "Os deputados são indicados pelo presidente da República",
+            "D": "Apenas os dois partidos mais votados elegem representantes",
+            "E": "O eleitor vota apenas em partidos, não em candidatos"
+          },
+          "correta": "B",
+          "explicacao": "No sistema proporcional (usado para deputados e vereadores no Brasil), as cadeiras são distribuídas entre os partidos/coligações proporcionalmente aos votos que cada um recebeu. Um partido que recebe 20% dos votos tende a ficar com cerca de 20% das cadeiras. Favorece a representação de minorias e o multipartidarismo. Diferencia-se do sistema majoritário (usado para presidente, governador, senador, prefeito), onde vence quem tem mais votos.",
+          "dificuldade": "medio",
+          "tags": ["sistema eleitoral", "proporcional", "brasil"]
+        },
+        {
+          "id": "q108-5",
+          "enunciado": "A democracia participativa propõe complementar a democracia representativa com mecanismos de participação direta. Um exemplo de mecanismo de democracia participativa no Brasil é:",
+          "alternativas": {
+            "A": "As eleições para presidente da República",
+            "B": "O orçamento participativo, em que cidadãos deliberam sobre gastos públicos",
+            "C": "A nomeação de ministros pelo presidente",
+            "D": "O voto em representantes para o Congresso Nacional",
+            "E": "A indicação de juízes pelo Executivo"
+          },
+          "correta": "B",
+          "explicacao": "O orçamento participativo, implementado em Porto Alegre (1989) e depois em outras cidades, é um mecanismo de democracia participativa: os cidadãos participam diretamente na deliberação sobre parte do orçamento municipal. Outros mecanismos: plebiscitos, referendos, conselhos de políticas públicas (saúde, educação, assistência), audiências públicas. Complementam, mas não substituem, a democracia representativa.",
+          "dificuldade": "medio",
+          "tags": ["democracia participativa", "orçamento participativo", "brasil"]
+        }
+      ]
+    },
+    {
+      "id": "m109",
+      "titulo": "Trabalho e Sociedade",
+      "resumo": "Transformações no mundo do trabalho, precarização e novas formas laborais",
+      "topicos": [
+        {
+          "titulo": "O Trabalho na Sociedade Capitalista",
+          "conteudo": "O trabalho é central para a vida social: produz bens, cria identidades, organiza o tempo, distribui renda. No capitalismo, predomina o trabalho assalariado: o trabalhador vende sua força de trabalho em troca de salário. O fordismo (século XX) caracterizou-se por produção em massa, linha de montagem, trabalho padronizado, pleno emprego, sindicatos fortes, Estado de bem-estar social. A partir dos anos 1970, o pós-fordismo/toyotismo trouxe: produção flexível, just-in-time, polivalência do trabalhador, terceirização, enfraquecimento sindical, desregulamentação."
+        },
+        {
+          "titulo": "Precarização e Desemprego",
+          "conteudo": "A reestruturação produtiva gerou precarização do trabalho: contratos temporários, trabalho informal, subemprego, perda de direitos. O desemprego estrutural (tecnológico) elimina postos de trabalho permanentemente. A 'uberização' (economia de plataformas) disfarça vínculos empregatícios: trabalhadores sem direitos tratados como 'empreendedores'. O trabalho intermitente, legalizado pela reforma trabalhista de 2017 no Brasil, exemplifica a flexibilização. A informalidade afeta especialmente mulheres, negros e jovens. Debates: renda básica universal, redução da jornada, regulação de plataformas."
+        },
+        {
+          "titulo": "Trabalho, Gênero e Raça",
+          "conteudo": "O mercado de trabalho reproduz desigualdades de gênero e raça. Mulheres ganham menos que homens na mesma função, concentram-se em ocupações menos valorizadas e acumulam trabalho doméstico não remunerado. Negros têm maior desemprego, menores salários, maior informalidade. A divisão sexual do trabalho atribui às mulheres o trabalho de cuidado (reprodutivo), menos valorizado que o trabalho produtivo. Interseccionalidade: mulheres negras enfrentam desvantagens específicas. Políticas de igualdade salarial, licenças parentais igualitárias e ações afirmativas buscam reduzir essas desigualdades."
+        }
+      ],
+      "exemplos": [
+        "A 'uberização' e suas implicações trabalhistas",
+        "A desigualdade salarial entre homens e mulheres",
+        "O trabalho doméstico não remunerado e sua invisibilidade"
+      ],
+      "dicas": [
+        "ENEM relaciona transformações do trabalho a questões sociais",
+        "Entenda fordismo vs. pós-fordismo",
+        "A precarização e a informalidade são temas frequentes"
+      ],
+      "questoes": [
+        {
+          "id": "q109-1",
+          "enunciado": "O modelo fordista de produção, predominante no século XX, caracterizava-se por:",
+          "alternativas": {
+            "A": "Produção sob demanda, flexibilidade e trabalho em domicílio",
+            "B": "Produção em massa, linha de montagem e trabalho padronizado",
+            "C": "Terceirização ampla e contratos temporários",
+            "D": "Ausência de sindicatos e desregulamentação total",
+            "E": "Trabalho artesanal individualizado"
+          },
+          "correta": "B",
+          "explicacao": "O fordismo (de Henry Ford) caracterizou-se por: produção em massa de bens padronizados, linha de montagem, trabalho repetitivo e especializado, grandes fábricas, relações trabalhistas reguladas (sindicatos, convenções), Estado de bem-estar social, consumo de massas. Entrou em crise nos anos 1970, sendo substituído por modelos mais flexíveis (pós-fordismo, toyotismo).",
+          "dificuldade": "facil",
+          "tags": ["fordismo", "trabalho", "produção"]
+        },
+        {
+          "id": "q109-2",
+          "enunciado": "A 'uberização' do trabalho, termo derivado da empresa Uber, refere-se a um fenômeno contemporâneo em que:",
+          "alternativas": {
+            "A": "Os trabalhadores têm estabilidade no emprego e benefícios sociais garantidos",
+            "B": "Trabalhadores são tratados como autônomos, sem vínculo empregatício, em plataformas digitais",
+            "C": "As empresas fornecem todos os instrumentos de trabalho aos empregados",
+            "D": "Os sindicatos são fortalecidos e os direitos trabalhistas ampliados",
+            "E": "O Estado garante emprego a todos os cidadãos"
+          },
+          "correta": "B",
+          "explicacao": "A 'uberização' descreve um modelo em que empresas de plataformas digitais (Uber, iFood, etc.) conectam trabalhadores a clientes, mas tratam os trabalhadores como 'parceiros' ou 'autônomos', não como empregados. Assim, não pagam direitos trabalhistas (férias, 13º, FGTS, etc.). O trabalhador arca com custos (veículo, celular) e riscos. Há debates sobre regulamentação e reconhecimento de vínculo empregatício.",
+          "dificuldade": "facil",
+          "tags": ["uberização", "precarização", "plataformas"]
+        },
+        {
+          "id": "q109-3",
+          "enunciado": "A 'divisão sexual do trabalho' é um conceito que descreve como as sociedades distribuem tarefas entre homens e mulheres. Essa divisão tipicamente atribui às mulheres:",
+          "alternativas": {
+            "A": "Os trabalhos mais bem remunerados e de maior prestígio",
+            "B": "O trabalho reprodutivo/de cuidado, frequentemente não remunerado e menos valorizado",
+            "C": "Cargos de liderança e decisão nas empresas e governos",
+            "D": "As profissões nas áreas de ciência e tecnologia",
+            "E": "O trabalho em tempo integral fora de casa, sem responsabilidades domésticas"
+          },
+          "correta": "B",
+          "explicacao": "A divisão sexual do trabalho atribui às mulheres o trabalho reprodutivo: tarefas domésticas, cuidado de filhos, idosos, doentes. Esse trabalho é frequentemente não remunerado e invisibilizado, mas essencial para a sociedade funcionar. No mercado de trabalho, mulheres concentram-se em ocupações de 'cuidado' (enfermagem, educação), menos valorizadas. A dupla jornada (trabalho fora + trabalho doméstico) sobrecarrega as mulheres.",
+          "dificuldade": "medio",
+          "tags": ["divisão sexual", "trabalho", "gênero"]
+        },
+        {
+          "id": "q109-4",
+          "enunciado": "O desemprego estrutural, diferentemente do desemprego conjuntural (ligado a crises econômicas), caracteriza-se por:",
+          "alternativas": {
+            "A": "Ser temporário e resolver-se com a retomada do crescimento econômico",
+            "B": "Ser causado pela eliminação permanente de postos de trabalho devido a mudanças tecnológicas ou produtivas",
+            "C": "Afetar apenas trabalhadores sem qualificação",
+            "D": "Ser facilmente resolvido por políticas de transferência de renda",
+            "E": "Ocorrer apenas em países subdesenvolvidos"
+          },
+          "correta": "B",
+          "explicacao": "O desemprego estrutural resulta de mudanças na estrutura produtiva: automação, robotização, informatização, mudanças em setores econômicos. Postos de trabalho são eliminados permanentemente, não voltam com a recuperação econômica. Trabalhadores precisam se requalificar para outras funções. É diferente do desemprego conjuntural (friccional), ligado a flutuações econômicas temporárias. A 'quarta revolução industrial' (inteligência artificial) intensifica preocupações.",
+          "dificuldade": "medio",
+          "tags": ["desemprego estrutural", "tecnologia", "trabalho"]
+        },
+        {
+          "id": "q109-5",
+          "enunciado": "Dados mostram que trabalhadoras negras no Brasil têm, em média, os menores rendimentos do mercado de trabalho. Essa situação evidencia:",
+          "alternativas": {
+            "A": "Que não existe discriminação de gênero ou raça no mercado de trabalho brasileiro",
+            "B": "A intersecção de desigualdades de gênero e raça, que afetam especificamente mulheres negras",
+            "C": "Que as diferenças salariais são explicadas apenas por diferenças de qualificação",
+            "D": "Que políticas de igualdade de gênero são desnecessárias",
+            "E": "Que o mercado de trabalho funciona de forma meritocrática"
+          },
+          "correta": "B",
+          "explicacao": "A situação das mulheres negras ilustra a interseccionalidade: elas enfrentam simultaneamente racismo e sexismo, resultando em desvantagens específicas não redutíveis à soma de cada opressão. Dados mostram que homens brancos ganham mais que mulheres brancas, que ganham mais que homens negros, que ganham mais que mulheres negras. Políticas efetivas devem considerar essas intersecções.",
+          "dificuldade": "medio",
+          "tags": ["interseccionalidade", "trabalho", "desigualdade"]
+        }
+      ]
+    },
+    {
+      "id": "m110",
+      "titulo": "Sociologia no ENEM: Temas Contemporâneos",
+      "resumo": "Violência, mídia, redes sociais, meio ambiente e globalização",
+      "topicos": [
+        {
+          "titulo": "Violência e Segurança Pública",
+          "conteudo": "A violência é fenômeno complexo com múltiplas causas: desigualdade, exclusão, falhas institucionais, cultura de violência. No Brasil, as taxas de homicídio são muito altas, afetando especialmente jovens negros de periferia. A violência policial é problema grave: o Brasil é um dos países que mais mata e mais tem policiais mortos. Debates: encarceramento em massa (4ª maior população carcerária do mundo), seletividade penal (quem é preso?), 'guerra às drogas' e seus efeitos, políticas de segurança pública. Alternativas: policiamento comunitário, prevenção, desencarceramento, legalização de drogas."
+        },
+        {
+          "titulo": "Mídia, Redes Sociais e Sociedade",
+          "conteudo": "Os meios de comunicação (mídia) influenciam opiniões, comportamentos, agendas políticas. A concentração da mídia em poucos grupos é problema democrático. As redes sociais (Facebook, Twitter, Instagram, TikTok) transformaram a comunicação: qualquer um pode produzir conteúdo; algoritmos criam 'bolhas'; fake news se espalham rapidamente. A 'sociedade do espetáculo' (Debord) critica a mercantilização das imagens. O 'panóptico digital' (vigilância constante através de dados) levanta questões de privacidade. Educação midiática e alfabetização digital são respostas possíveis."
+        },
+        {
+          "titulo": "Globalização e Questões Ambientais",
+          "conteudo": "Globalização é a intensificação das conexões mundiais: economia (comércio, finanças, empresas transnacionais), cultura (mídia, consumo, migrações), política (organizações internacionais). Debates: homogeneização cultural ou hibridismos? Beneficia a todos ou aumenta desigualdades? As questões ambientais são globais: mudanças climáticas, desmatamento, perda de biodiversidade afetam o planeta todo. O 'Antropoceno' nomeia era em que humanos são força geológica. Justiça ambiental: os mais pobres sofrem mais com degradação ambiental. Sustentabilidade: conciliar desenvolvimento e preservação."
+        }
+      ],
+      "exemplos": [
+        "A seletividade do sistema penal brasileiro",
+        "Fake news e suas consequências políticas",
+        "Mudanças climáticas como problema sociológico"
+      ],
+      "dicas": [
+        "ENEM relaciona sociologia a temas contemporâneos",
+        "Violência e segurança pública são frequentes",
+        "Globalização e meio ambiente aparecem em questões interdisciplinares"
+      ],
+      "questoes": [
+        {
+          "id": "q110-1",
+          "enunciado": "Estudos mostram que o sistema de justiça criminal brasileiro é seletivo: certas populações são mais sujeitas à prisão que outras. Essa seletividade evidencia-se no fato de que a população carcerária é majoritariamente composta por:",
+          "alternativas": {
+            "A": "Pessoas de alta renda, com ensino superior completo",
+            "B": "Pessoas brancas, de regiões urbanas desenvolvidas",
+            "C": "Jovens negros, pobres, de baixa escolaridade",
+            "D": "Idosos de diferentes classes sociais",
+            "E": "Estrangeiros que cometeram crimes internacionais"
+          },
+          "correta": "C",
+          "explicacao": "Dados do sistema prisional brasileiro mostram que a maioria dos presos é: jovem (18-29 anos), negro (preto ou pardo), de baixa escolaridade, pobre, preso por crimes patrimoniais ou relacionados a drogas. Isso não significa que esses grupos cometam mais crimes, mas que são mais vigiados, abordados, presos e condenados. A seletividade penal reproduz desigualdades de classe e raça.",
+          "dificuldade": "facil",
+          "tags": ["seletividade penal", "sistema prisional", "desigualdade"]
+        },
+        {
+          "id": "q110-2",
+          "enunciado": "As redes sociais transformaram a forma como as pessoas se comunicam e se informam. Um fenômeno associado a essas plataformas é a formação de 'bolhas informacionais', que significa:",
+          "alternativas": {
+            "A": "A exposição a informações de diferentes pontos de vista",
+            "B": "O isolamento em ambientes onde só se tem contato com opiniões semelhantes às próprias",
+            "C": "O aumento da diversidade de fontes de informação consumidas",
+            "D": "A eliminação de notícias falsas pelos algoritmos das plataformas",
+            "E": "O fortalecimento do debate democrático e plural"
+          },
+          "correta": "B",
+          "explicacao": "Os algoritmos das redes sociais tendem a mostrar conteúdos que confirmam as preferências e opiniões do usuário, para mantê-lo engajado. Isso cria 'bolhas' ou 'câmaras de eco' onde a pessoa só tem contato com opiniões semelhantes às suas, reforçando crenças e dificultando o diálogo com visões diferentes. Contribui para polarização política e dificulta o debate democrático baseado em fatos compartilhados.",
+          "dificuldade": "facil",
+          "tags": ["redes sociais", "bolhas", "algoritmos"]
+        },
+        {
+          "id": "q110-3",
+          "enunciado": "O conceito de 'justiça ambiental' relaciona questões ambientais com desigualdades sociais. Segundo esse conceito:",
+          "alternativas": {
+            "A": "Os problemas ambientais afetam igualmente todas as classes sociais e regiões",
+            "B": "Os grupos mais pobres e marginalizados tendem a sofrer mais com a degradação ambiental",
+            "C": "A proteção ambiental deve ser prioridade apenas em países desenvolvidos",
+            "D": "Os mais ricos são os mais afetados pelas mudanças climáticas",
+            "E": "Não há relação entre desigualdade social e problemas ambientais"
+          },
+          "correta": "B",
+          "explicacao": "Justiça ambiental destaca que os impactos ambientais negativos (poluição, desastres, falta de saneamento, mudanças climáticas) não afetam todos igualmente: comunidades pobres e marginalizadas são mais expostas a riscos e têm menos recursos para se proteger. Lixões, indústrias poluentes, áreas de risco ficam em bairros pobres. Povos tradicionais sofrem com desmatamento. Justiça ambiental exige que benefícios e ônus ambientais sejam distribuídos equitativamente.",
+          "dificuldade": "medio",
+          "tags": ["justiça ambiental", "desigualdade", "meio ambiente"]
+        },
+        {
+          "id": "q110-4",
+          "enunciado": "O termo 'fake news' refere-se a notícias falsas que se disseminam especialmente através de redes sociais e aplicativos de mensagem. Do ponto de vista sociológico, esse fenômeno está relacionado a:",
+          "alternativas": {
+            "A": "O aumento da confiança nas instituições jornalísticas tradicionais",
+            "B": "A crise de confiança nas instituições, a polarização política e características das plataformas digitais",
+            "C": "A melhoria na qualidade da informação disponível para os cidadãos",
+            "D": "O fortalecimento da democracia e do debate público",
+            "E": "A diminuição da influência das redes sociais na formação de opinião"
+          },
+          "correta": "B",
+          "explicacao": "O fenômeno das fake news relaciona-se a vários fatores: crise de confiança em instituições (mídia, ciência, política), polarização política (pessoas acreditam no que confirma suas visões), características das redes sociais (viralização, bolhas, algoritmos), modelo de negócio (conteúdo sensacionalista gera cliques), letramento digital insuficiente. A 'pós-verdade' descreve um contexto em que fatos importam menos que emoções e crenças prévias.",
+          "dificuldade": "medio",
+          "tags": ["fake news", "pós-verdade", "redes sociais"]
+        },
+        {
+          "id": "q110-5",
+          "enunciado": "A globalização intensificou as conexões entre diferentes partes do mundo. Uma crítica frequente a esse processo é que ele:",
+          "alternativas": {
+            "A": "Isolou completamente as economias nacionais umas das outras",
+            "B": "Distribuiu os benefícios igualmente entre todos os países e pessoas",
+            "C": "Pode aumentar desigualdades entre países e dentro deles, beneficiando mais alguns grupos",
+            "D": "Eliminou todas as diferenças culturais entre os povos",
+            "E": "Fortaleceu a capacidade dos Estados nacionais de controlar suas economias"
+          },
+          "correta": "C",
+          "explicacao": "Críticos da globalização argumentam que seus benefícios são distribuídos desigualmente: países ricos e grandes empresas se beneficiam mais; trabalhadores de países desenvolvidos podem perder empregos para locais de mão de obra mais barata; países pobres podem ficar em posição subordinada. A globalização também pode aumentar desigualdades internas (elites globalizadas vs. maioria). Defensores argumentam que também gerou crescimento e redução da pobreza.",
+          "dificuldade": "medio",
+          "tags": ["globalização", "desigualdade", "crítica"]
+        }
+      ]
+    }
+  ]
+}

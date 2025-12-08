@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Desafio {
   id: string;
@@ -14,26 +15,27 @@ interface Desafio {
   icone: string;
 }
 
+// Economia rebalanceada v2.0 - recompensas ajustadas
 const DESAFIOS_BASE: Desafio[] = [
-  // Diarios
-  { id: 'd1', titulo: 'Maratonista de Questoes', descricao: 'Responda 20 questoes hoje', tipo: 'diario', meta: 20, progresso: 0, recompensaFP: 50, icone: '🎯' },
-  { id: 'd2', titulo: 'Simulado Express', descricao: 'Complete 1 simulado rapido', tipo: 'diario', meta: 1, progresso: 0, recompensaFP: 30, icone: '⚡' },
-  { id: 'd3', titulo: 'Revisor Dedicado', descricao: 'Estude 3 flashcards', tipo: 'diario', meta: 3, progresso: 0, recompensaFP: 20, icone: '🃏' },
-  { id: 'd4', titulo: 'Acertador', descricao: 'Acerte 10 questoes seguidas', tipo: 'diario', meta: 10, progresso: 0, recompensaFP: 75, icone: '🔥' },
-  // Semanais
-  { id: 's1', titulo: 'Dominador de Matematica', descricao: 'Acerte 50 questoes de matematica', tipo: 'semanal', meta: 50, progresso: 0, recompensaFP: 200, icone: '📐' },
-  { id: 's2', titulo: 'Mestre das Linguagens', descricao: 'Acerte 50 questoes de linguagens', tipo: 'semanal', meta: 50, progresso: 0, recompensaFP: 200, icone: '📚' },
-  { id: 's3', titulo: 'Cientista Humano', descricao: 'Acerte 50 questoes de humanas', tipo: 'semanal', meta: 50, progresso: 0, recompensaFP: 200, icone: '🌍' },
-  { id: 's4', titulo: 'Expert da Natureza', descricao: 'Acerte 50 questoes de natureza', tipo: 'semanal', meta: 50, progresso: 0, recompensaFP: 200, icone: '🔬' },
-  { id: 's5', titulo: 'Simulador Dedicado', descricao: 'Complete 5 simulados na semana', tipo: 'semanal', meta: 5, progresso: 0, recompensaFP: 300, icone: '🏆' },
-  // Mensais
-  { id: 'm1', titulo: 'Campeao do Mes', descricao: 'Acumule 1000 FP no mes', tipo: 'mensal', meta: 1000, progresso: 0, recompensaFP: 500, icone: '👑' },
-  { id: 'm2', titulo: 'Maratonista ENEM', descricao: 'Complete 20 simulados no mes', tipo: 'mensal', meta: 20, progresso: 0, recompensaFP: 750, icone: '🎖️' },
-  { id: 'm3', titulo: 'Estudante Consistente', descricao: 'Estude 20 dias no mes', tipo: 'mensal', meta: 20, progresso: 0, recompensaFP: 400, icone: '📅' },
-  // Especiais
-  { id: 'e1', titulo: 'Primeiro Passo', descricao: 'Complete seu primeiro simulado', tipo: 'especial', meta: 1, progresso: 0, recompensaFP: 100, icone: '🚀' },
-  { id: 'e2', titulo: 'Nota 1000', descricao: 'Tire nota maxima em um simulado', tipo: 'especial', meta: 1, progresso: 0, recompensaFP: 500, icone: '💯' },
-  { id: 'e3', titulo: 'Streak Master', descricao: 'Mantenha streak de 7 dias', tipo: 'especial', meta: 7, progresso: 0, recompensaFP: 350, icone: '🔥' },
+  // Diarios - mantidos baixos
+  { id: 'd1', titulo: 'Maratonista de Questoes', descricao: 'Responda 20 questoes hoje', tipo: 'diario', meta: 20, progresso: 0, recompensaFP: 25, icone: '🎯' },
+  { id: 'd2', titulo: 'Simulado Express', descricao: 'Complete 1 simulado rapido', tipo: 'diario', meta: 1, progresso: 0, recompensaFP: 15, icone: '⚡' },
+  { id: 'd3', titulo: 'Revisor Dedicado', descricao: 'Estude 3 flashcards', tipo: 'diario', meta: 3, progresso: 0, recompensaFP: 10, icone: '🃏' },
+  { id: 'd4', titulo: 'Acertador', descricao: 'Acerte 10 questoes seguidas', tipo: 'diario', meta: 10, progresso: 0, recompensaFP: 35, icone: '🔥' },
+  // Semanais - reduzidos de 200 para 75
+  { id: 's1', titulo: 'Dominador de Matematica', descricao: 'Acerte 50 questoes de matematica', tipo: 'semanal', meta: 50, progresso: 0, recompensaFP: 75, icone: '📐' },
+  { id: 's2', titulo: 'Mestre das Linguagens', descricao: 'Acerte 50 questoes de linguagens', tipo: 'semanal', meta: 50, progresso: 0, recompensaFP: 75, icone: '📚' },
+  { id: 's3', titulo: 'Cientista Humano', descricao: 'Acerte 50 questoes de humanas', tipo: 'semanal', meta: 50, progresso: 0, recompensaFP: 75, icone: '🌍' },
+  { id: 's4', titulo: 'Expert da Natureza', descricao: 'Acerte 50 questoes de natureza', tipo: 'semanal', meta: 50, progresso: 0, recompensaFP: 75, icone: '🔬' },
+  { id: 's5', titulo: 'Simulador Dedicado', descricao: 'Complete 5 simulados na semana', tipo: 'semanal', meta: 5, progresso: 0, recompensaFP: 100, icone: '🏆' },
+  // Mensais - reduzidos significativamente
+  { id: 'm1', titulo: 'Campeao do Mes', descricao: 'Acumule 1000 FP no mes', tipo: 'mensal', meta: 1000, progresso: 0, recompensaFP: 150, icone: '👑' },
+  { id: 'm2', titulo: 'Maratonista ENEM', descricao: 'Complete 20 simulados no mes', tipo: 'mensal', meta: 20, progresso: 0, recompensaFP: 200, icone: '🎖️' },
+  { id: 'm3', titulo: 'Estudante Consistente', descricao: 'Estude 20 dias no mes', tipo: 'mensal', meta: 20, progresso: 0, recompensaFP: 120, icone: '📅' },
+  // Especiais - reduzidos para intervalo 50-300 FP
+  { id: 'e1', titulo: 'Primeiro Passo', descricao: 'Complete seu primeiro simulado', tipo: 'especial', meta: 1, progresso: 0, recompensaFP: 50, icone: '🚀' },
+  { id: 'e2', titulo: 'Nota 1000', descricao: 'Tire nota maxima em um simulado', tipo: 'especial', meta: 1, progresso: 0, recompensaFP: 200, icone: '💯' },
+  { id: 'e3', titulo: 'Streak Master', descricao: 'Mantenha streak de 7 dias', tipo: 'especial', meta: 7, progresso: 0, recompensaFP: 100, icone: '🔥' },
 ];
 
 export default function DesafiosPage() {
@@ -105,6 +107,7 @@ export default function DesafiosPage() {
   if (loading) {
     return (
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80vh' }}>
+      <FloatingBackButton />
         <div style={{ textAlign: 'center' }}>
           <div className="spinner" style={{ margin: '0 auto 1rem' }}></div>
           <p>Carregando desafios...</p>
@@ -274,17 +277,18 @@ export default function DesafiosPage() {
 
   return (
     <div className="container">
+      <FloatingBackButton />
       {/* Header */}
       <div className="header">
         <h1>🎯 Central de Desafios</h1>
-        <p>Complete desafios e ganhe Focus Points extras!</p>
+        <p>Complete desafios e ganhe FP extras!</p>
       </div>
 
       {/* Stats Bar */}
       <div className="stats-bar">
         <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
           <div className="stat-number">{fpTotal}</div>
-          <div className="stat-label">Focus Points</div>
+          <div className="stat-label">FP</div>
         </div>
         <div className="stat-item" style={{ flexDirection: 'column', gap: '0' }}>
           <div className="stat-number" style={{ color: 'var(--accent-green)' }}>

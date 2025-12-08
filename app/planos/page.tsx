@@ -2,29 +2,34 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Check, X, Star, Zap, Crown, Sparkles } from 'lucide-react';
+import { Check, X, Star, Zap, Crown, Sparkles, Swords, Target, Trophy, Users } from 'lucide-react';
 
 interface Plano {
   id: string;
   nome: string;
   subtitulo: string;
-  preco: string;
-  precoAnual?: string;
+  precoMensal: string;
+  precoAnual: string;
+  precoAnualMes: string;
   periodo: string;
   destaque: boolean;
   badge?: string;
+  badgeColor?: string;
   icon: React.ReactNode;
   recursos: { nome: string; incluido: boolean; destaque?: boolean }[];
   cta: string;
   ctaLink: string;
 }
 
+// Precos atualizados v3.0 - Sistema completo ENEM PRO
 const PLANOS: Plano[] = [
   {
     id: 'lite',
     nome: 'ENEM PRO Lite',
     subtitulo: 'Para comecar a estudar',
-    preco: 'Gratis',
+    precoMensal: 'Gratis',
+    precoAnual: 'Gratis',
+    precoAnualMes: 'Gratis',
     periodo: 'para sempre',
     destaque: false,
     icon: <Star className="w-8 h-8" />,
@@ -36,9 +41,9 @@ const PLANOS: Plano[] = [
       { nome: 'Niveis ate Prata', incluido: true },
       { nome: 'Simulados ilimitados', incluido: false },
       { nome: 'Explicacoes por IA avancada', incluido: false },
-      { nome: 'Plano de estudos personalizado', incluido: false },
       { nome: 'Correcao de redacao por IA', incluido: false },
-      { nome: 'Suporte prioritario', incluido: false },
+      { nome: 'Desafios 1v1', incluido: false },
+      { nome: 'Convites para batalhas', incluido: false },
     ],
     cta: 'Comecar Gratis',
     ctaLink: '/cadastro',
@@ -46,57 +51,77 @@ const PLANOS: Plano[] = [
   {
     id: 'pro',
     nome: 'ENEM PRO',
-    subtitulo: 'O mais escolhido',
-    preco: 'R$ 29,90',
-    precoAnual: 'R$ 19,90',
+    subtitulo: 'O plano mais escolhido',
+    precoMensal: 'R$ 39,90',
+    precoAnual: 'R$ 399,00',
+    precoAnualMes: 'R$ 33,25',
     periodo: '/mes',
     destaque: true,
     badge: 'MAIS POPULAR',
+    badgeColor: 'yellow',
     icon: <Zap className="w-8 h-8" />,
     recursos: [
       { nome: 'Simulados ilimitados', incluido: true, destaque: true },
-      { nome: 'Explicacoes completas por IA', incluido: true, destaque: true },
-      { nome: 'Dashboard completo de desempenho', incluido: true },
-      { nome: 'Comparacao com notas de corte SISU', incluido: true, destaque: true },
-      { nome: 'Ranking global e desafios', incluido: true },
-      { nome: 'Plano de estudos personalizado', incluido: true, destaque: true },
-      { nome: 'Niveis ate Diamante', incluido: true },
-      { nome: 'Flashcards inteligentes', incluido: true },
-      { nome: '3 correcoes de redacao/mes', incluido: true },
-      { nome: 'Suporte prioritario', incluido: false },
+      { nome: 'Explicacoes por IA (todas as materias)', incluido: true, destaque: true },
+      { nome: 'Dashboard com evolucao e notas de corte', incluido: true },
+      { nome: '3 redacoes/mes com correcao IA', incluido: true, destaque: true },
+      { nome: 'Desafios 1v1 ilimitados (modo classico)', incluido: true, destaque: true },
+      { nome: 'Participacao na Arena Semanal', incluido: true },
+      { nome: '10 convites/mes para batalhas externas', incluido: true },
+      { nome: 'Banco de Questoes Essenciais (curadoria ENEM)', incluido: true },
+      { nome: 'Historico completo de desempenho', incluido: true },
+      { nome: 'Sistema de niveis SFP (Fernanda Points)', incluido: true },
+      { nome: 'Simulados TRI com nota real', incluido: false },
+      { nome: 'Modos Turbo, Maratona e Transmitido', incluido: false },
     ],
-    cta: 'Assinar Agora',
-    ctaLink: '/assinatura/mensal',
+    cta: 'Assinar PRO',
+    ctaLink: '/assinatura/pro',
   },
   {
     id: 'premium',
     nome: 'ENEM PRO Premium',
-    subtitulo: 'Para quem quer o maximo',
-    preco: 'R$ 49,90',
-    precoAnual: 'R$ 39,90',
+    subtitulo: 'Maximo desempenho e recursos exclusivos',
+    precoMensal: 'R$ 79,90',
+    precoAnual: 'R$ 799,00',
+    precoAnualMes: 'R$ 66,58',
     periodo: '/mes',
     destaque: false,
     badge: 'COMPLETO',
+    badgeColor: 'purple',
     icon: <Crown className="w-8 h-8" />,
     recursos: [
-      { nome: 'Tudo do ENEM PRO', incluido: true, destaque: true },
-      { nome: 'Correcoes de redacao ilimitadas', incluido: true, destaque: true },
-      { nome: 'Mentoria com IA personalizada', incluido: true, destaque: true },
-      { nome: 'Simulados cronometrados oficiais', incluido: true },
-      { nome: 'Relatorios detalhados por competencia', incluido: true },
-      { nome: 'Acesso a banco de 10.000+ questoes', incluido: true },
-      { nome: 'Videoaulas exclusivas', incluido: true },
-      { nome: 'Grupo VIP no WhatsApp', incluido: true },
-      { nome: 'Suporte prioritario 24h', incluido: true, destaque: true },
+      { nome: 'Tudo do plano PRO', incluido: true, destaque: true },
+      { nome: 'Redacoes ilimitadas com correcao avancada', incluido: true, destaque: true },
+      { nome: 'Simulados TRI com nota real estimada', incluido: true, destaque: true },
+      { nome: 'Cronograma personalizado adaptativo', incluido: true },
+      { nome: 'Banco completo de 150.000+ questoes', incluido: true },
+      { nome: 'Filtros por habilidade e competencia ENEM', incluido: true },
+      { nome: 'Relatorios de desempenho por competencia', incluido: true },
+      { nome: 'Desafios Turbo, Maratona e Transmitidos', incluido: true, destaque: true },
+      { nome: 'Modo AO VIVO com espectadores', incluido: true, destaque: true },
+      { nome: '30 convites/mes para batalhas externas', incluido: true },
+      { nome: '5 codigos de transmissoes publicas/mes', incluido: true },
+      { nome: 'Suporte prioritario 24h', incluido: true },
+      { nome: 'Acesso offline (PWA)', incluido: true },
       { nome: 'Garantia de satisfacao 30 dias', incluido: true },
     ],
     cta: 'Quero o Premium',
-    ctaLink: '/assinatura/anual',
+    ctaLink: '/assinatura/premium',
   },
 ];
 
 export default function PlanosPage() {
   const [periodoAnual, setPeriodoAnual] = useState(false);
+
+  const getPrecoExibido = (plano: Plano) => {
+    if (plano.id === 'lite') return 'Gratis';
+    return periodoAnual ? plano.precoAnualMes : plano.precoMensal;
+  };
+
+  const getPrecoTotal = (plano: Plano) => {
+    if (plano.id === 'lite') return null;
+    return periodoAnual ? plano.precoAnual : null;
+  };
 
   return (
     <div
@@ -143,7 +168,8 @@ export default function PlanosPage() {
             justifyContent: 'center',
             alignItems: 'center',
             gap: '1rem',
-            marginBottom: '3rem'
+            marginBottom: '3rem',
+            flexWrap: 'wrap'
           }}
         >
           <span
@@ -189,7 +215,7 @@ export default function PlanosPage() {
               fontFamily: 'var(--font-kalam)'
             }}
           >
-            Anual
+            Anual (a vista)
           </span>
           {periodoAnual && (
             <span
@@ -203,7 +229,7 @@ export default function PlanosPage() {
                 fontFamily: 'var(--font-kalam)'
               }}
             >
-              Economize 33%
+              Economize ~17%
             </span>
           )}
         </div>
@@ -212,7 +238,7 @@ export default function PlanosPage() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
             gap: '1.5rem',
             maxWidth: '1200px',
             margin: '0 auto'
@@ -224,17 +250,23 @@ export default function PlanosPage() {
               style={{
                 backgroundColor: plano.destaque
                   ? 'rgba(251, 191, 36, 0.1)'
-                  : 'rgba(255, 255, 255, 0.08)',
+                  : plano.badgeColor === 'purple'
+                    ? 'rgba(168, 85, 247, 0.1)'
+                    : 'rgba(255, 255, 255, 0.08)',
                 border: plano.destaque
                   ? '3px solid var(--accent-yellow)'
-                  : '3px solid rgba(255, 255, 255, 0.15)',
+                  : plano.badgeColor === 'purple'
+                    ? '3px solid rgba(168, 85, 247, 0.5)'
+                    : '3px solid rgba(255, 255, 255, 0.15)',
                 borderRadius: '20px',
                 padding: '2rem',
                 position: 'relative',
                 transform: plano.destaque ? 'scale(1.02)' : 'scale(1)',
                 boxShadow: plano.destaque
                   ? '0 10px 40px rgba(251, 191, 36, 0.2)'
-                  : '0 4px 20px rgba(0, 0, 0, 0.3)'
+                  : plano.badgeColor === 'purple'
+                    ? '0 10px 40px rgba(168, 85, 247, 0.15)'
+                    : '0 4px 20px rgba(0, 0, 0, 0.3)'
               }}
             >
               {/* Badge */}
@@ -245,8 +277,14 @@ export default function PlanosPage() {
                     top: '-12px',
                     left: '50%',
                     transform: 'translateX(-50%)',
-                    backgroundColor: plano.destaque ? 'var(--accent-yellow)' : 'rgba(255, 255, 255, 0.2)',
-                    color: plano.destaque ? 'var(--chalkboard-green)' : 'var(--chalk-white)',
+                    backgroundColor: plano.destaque
+                      ? 'var(--accent-yellow)'
+                      : plano.badgeColor === 'purple'
+                        ? '#a855f7'
+                        : 'rgba(255, 255, 255, 0.2)',
+                    color: plano.destaque || plano.badgeColor === 'purple'
+                      ? 'var(--chalkboard-green)'
+                      : 'var(--chalk-white)',
                     padding: '0.25rem 1rem',
                     borderRadius: '999px',
                     fontSize: '0.75rem',
@@ -267,12 +305,18 @@ export default function PlanosPage() {
                     borderRadius: '50%',
                     backgroundColor: plano.destaque
                       ? 'rgba(251, 191, 36, 0.2)'
-                      : 'rgba(255, 255, 255, 0.1)',
+                      : plano.badgeColor === 'purple'
+                        ? 'rgba(168, 85, 247, 0.2)'
+                        : 'rgba(255, 255, 255, 0.1)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     margin: '0 auto 1rem',
-                    color: plano.destaque ? 'var(--accent-yellow)' : 'var(--chalk-white)'
+                    color: plano.destaque
+                      ? 'var(--accent-yellow)'
+                      : plano.badgeColor === 'purple'
+                        ? '#a855f7'
+                        : 'var(--chalk-white)'
                   }}
                 >
                   {plano.icon}
@@ -281,7 +325,11 @@ export default function PlanosPage() {
                   style={{
                     fontSize: '1.5rem',
                     fontWeight: 'bold',
-                    color: plano.destaque ? 'var(--accent-yellow)' : 'var(--chalk-white)',
+                    color: plano.destaque
+                      ? 'var(--accent-yellow)'
+                      : plano.badgeColor === 'purple'
+                        ? '#c084fc'
+                        : 'var(--chalk-white)',
                     fontFamily: 'var(--font-kalam)',
                     marginBottom: '0.25rem'
                   }}
@@ -305,11 +353,15 @@ export default function PlanosPage() {
                   style={{
                     fontSize: '2.5rem',
                     fontWeight: 'bold',
-                    color: plano.destaque ? 'var(--accent-yellow)' : 'var(--chalk-white)',
+                    color: plano.destaque
+                      ? 'var(--accent-yellow)'
+                      : plano.badgeColor === 'purple'
+                        ? '#c084fc'
+                        : 'var(--chalk-white)',
                     fontFamily: 'var(--font-kalam)'
                   }}
                 >
-                  {periodoAnual && plano.precoAnual ? plano.precoAnual : plano.preco}
+                  {getPrecoExibido(plano)}
                 </div>
                 <div
                   style={{
@@ -320,16 +372,20 @@ export default function PlanosPage() {
                 >
                   {plano.periodo}
                 </div>
-                {periodoAnual && plano.precoAnual && (
+                {getPrecoTotal(plano) && (
                   <div
                     style={{
                       color: '#86efac',
-                      fontSize: '0.75rem',
-                      marginTop: '0.25rem',
-                      fontFamily: 'var(--font-kalam)'
+                      fontSize: '0.85rem',
+                      marginTop: '0.5rem',
+                      fontFamily: 'var(--font-kalam)',
+                      backgroundColor: 'rgba(34, 197, 94, 0.15)',
+                      padding: '0.25rem 0.75rem',
+                      borderRadius: '8px',
+                      display: 'inline-block'
                     }}
                   >
-                    Cobrado anualmente
+                    Total: {getPrecoTotal(plano)} (a vista)
                   </div>
                 )}
               </div>
@@ -341,7 +397,7 @@ export default function PlanosPage() {
                     key={idx}
                     style={{
                       display: 'flex',
-                      alignItems: 'center',
+                      alignItems: 'flex-start',
                       gap: '0.75rem',
                       padding: '0.5rem 0',
                       borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
@@ -349,12 +405,12 @@ export default function PlanosPage() {
                   >
                     {recurso.incluido ? (
                       <Check
-                        className="w-5 h-5 flex-shrink-0"
+                        className="w-5 h-5 flex-shrink-0 mt-0.5"
                         style={{ color: recurso.destaque ? 'var(--accent-yellow)' : '#86efac' }}
                       />
                     ) : (
                       <X
-                        className="w-5 h-5 flex-shrink-0"
+                        className="w-5 h-5 flex-shrink-0 mt-0.5"
                         style={{ color: 'rgba(255, 255, 255, 0.3)' }}
                       />
                     )}
@@ -381,7 +437,13 @@ export default function PlanosPage() {
                     padding: '1rem',
                     fontSize: '1rem',
                     fontWeight: 'bold',
-                    fontFamily: 'var(--font-kalam)'
+                    fontFamily: 'var(--font-kalam)',
+                    backgroundColor: plano.badgeColor === 'purple' && !plano.destaque
+                      ? '#a855f7'
+                      : undefined,
+                    borderColor: plano.badgeColor === 'purple' && !plano.destaque
+                      ? '#a855f7'
+                      : undefined
                   }}
                 >
                   {plano.cta}
@@ -389,6 +451,143 @@ export default function PlanosPage() {
               </Link>
             </div>
           ))}
+        </div>
+
+        {/* Comparativo de Batalhas */}
+        <div
+          style={{
+            maxWidth: '900px',
+            margin: '4rem auto 0',
+            padding: '2rem',
+            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            borderRadius: '20px',
+            border: '2px solid rgba(255, 255, 255, 0.1)'
+          }}
+        >
+          <h2
+            style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              color: 'var(--chalk-white)',
+              fontFamily: 'var(--font-kalam)',
+              marginBottom: '1.5rem',
+              textAlign: 'center',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.5rem'
+            }}
+          >
+            <Swords className="w-6 h-6" style={{ color: 'var(--accent-yellow)' }} />
+            Modos de Batalha 1v1
+          </h2>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+              gap: '1rem'
+            }}
+          >
+            {[
+              {
+                nome: 'Classico',
+                descricao: '10 questoes, 30s cada',
+                icon: <Target className="w-5 h-5" />,
+                pro: true,
+                premium: true
+              },
+              {
+                nome: 'Turbo',
+                descricao: '5 questoes, 15s cada',
+                icon: <Zap className="w-5 h-5" />,
+                pro: false,
+                premium: true
+              },
+              {
+                nome: 'Maratona',
+                descricao: '20 questoes, 45s cada',
+                icon: <Trophy className="w-5 h-5" />,
+                pro: false,
+                premium: true
+              },
+              {
+                nome: 'Transmitido',
+                descricao: 'Ao vivo com espectadores',
+                icon: <Users className="w-5 h-5" />,
+                pro: false,
+                premium: true
+              }
+            ].map((modo, idx) => (
+              <div
+                key={idx}
+                style={{
+                  padding: '1rem',
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  borderRadius: '12px',
+                  textAlign: 'center'
+                }}
+              >
+                <div
+                  style={{
+                    color: 'var(--accent-yellow)',
+                    marginBottom: '0.5rem',
+                    display: 'flex',
+                    justifyContent: 'center'
+                  }}
+                >
+                  {modo.icon}
+                </div>
+                <h4
+                  style={{
+                    color: 'var(--chalk-white)',
+                    fontWeight: 'bold',
+                    fontSize: '1rem',
+                    fontFamily: 'var(--font-kalam)',
+                    marginBottom: '0.25rem'
+                  }}
+                >
+                  {modo.nome}
+                </h4>
+                <p
+                  style={{
+                    color: 'var(--chalk-dim)',
+                    fontSize: '0.75rem',
+                    fontFamily: 'var(--font-kalam)',
+                    marginBottom: '0.5rem'
+                  }}
+                >
+                  {modo.descricao}
+                </p>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem' }}>
+                  <span
+                    style={{
+                      fontSize: '0.65rem',
+                      padding: '0.15rem 0.5rem',
+                      borderRadius: '4px',
+                      backgroundColor: modo.pro ? 'rgba(34, 197, 94, 0.2)' : 'rgba(239, 68, 68, 0.2)',
+                      color: modo.pro ? '#86efac' : '#fca5a5',
+                      fontFamily: 'var(--font-kalam)'
+                    }}
+                  >
+                    PRO: {modo.pro ? 'Sim' : 'Nao'}
+                  </span>
+                  <span
+                    style={{
+                      fontSize: '0.65rem',
+                      padding: '0.15rem 0.5rem',
+                      borderRadius: '4px',
+                      backgroundColor: modo.premium ? 'rgba(168, 85, 247, 0.2)' : 'rgba(239, 68, 68, 0.2)',
+                      color: modo.premium ? '#c084fc' : '#fca5a5',
+                      fontFamily: 'var(--font-kalam)'
+                    }}
+                  >
+                    Premium: {modo.premium ? 'Sim' : 'Nao'}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* FAQ */}
@@ -419,19 +618,31 @@ export default function PlanosPage() {
             {[
               {
                 pergunta: 'Posso cancelar a qualquer momento?',
-                resposta: 'Sim! Voce pode cancelar sua assinatura a qualquer momento pelo painel do aluno, sem multas ou burocracia.'
+                resposta: 'Sim. Voce pode cancelar sua assinatura a qualquer momento pelo painel do aluno, sem multas ou burocracia.'
               },
               {
                 pergunta: 'Preciso de cartao de credito para o plano gratuito?',
-                resposta: 'Nao! O plano Lite e 100% gratuito e nao requer nenhum dado de pagamento.'
+                resposta: 'Nao. O plano ENEM PRO Lite e 100% gratuito e nao exige cadastro de cartao de credito.'
               },
               {
                 pergunta: 'Como funciona a garantia de 30 dias?',
-                resposta: 'Se voce nao ficar satisfeito nos primeiros 30 dias do plano Premium, devolvemos 100% do seu dinheiro.'
+                resposta: 'Se voce nao ficar satisfeito com o plano ENEM PRO Premium nos primeiros 30 dias, devolvemos 100% do valor pago.'
               },
               {
-                pergunta: 'Posso trocar de plano depois?',
-                resposta: 'Claro! Voce pode fazer upgrade ou downgrade do seu plano a qualquer momento.'
+                pergunta: 'O que sao FP (Fernanda Points)?',
+                resposta: 'FP sao os pontos do sistema de gamificacao do ENEM PRO. Voce ganha FP ao estudar, vencer batalhas, completar desafios e subir no ranking. Use FP para desbloquear itens na loja e subir de nivel!'
+              },
+              {
+                pergunta: 'Como funcionam os convites para batalhas?',
+                resposta: 'Convites permitem desafiar amigos que nao sao assinantes para batalhas 1v1. O plano PRO inclui 10 convites/mes e o Premium inclui 30 convites/mes. Voce tambem pode comprar convites extras na loja com FP.'
+              },
+              {
+                pergunta: 'Qual a diferenca entre os modos de batalha?',
+                resposta: 'Classico (10 questoes, 30s) esta disponivel para PRO e Premium. Turbo (5 questoes, 15s), Maratona (20 questoes, 45s) e Transmitido (ao vivo) sao exclusivos do Premium.'
+              },
+              {
+                pergunta: 'O plano anual e cobrado de uma vez?',
+                resposta: 'Sim, o plano anual e pago a vista em uma unica cobranca, com desconto de aproximadamente 17% em relacao ao pagamento mensal.'
               }
             ].map((faq, idx) => (
               <div
@@ -498,12 +709,28 @@ export default function PlanosPage() {
               color: 'var(--chalk-dim)',
               fontSize: '1rem',
               fontFamily: 'var(--font-kalam)',
-              marginBottom: '1.5rem',
+              marginBottom: '1rem',
               maxWidth: '500px',
-              margin: '0 auto 1.5rem'
+              margin: '0 auto 1rem'
             }}
           >
             Junte-se a milhares de estudantes que ja estao se preparando com o ENEM PRO
+          </p>
+          <p
+            style={{
+              color: '#86efac',
+              fontSize: '0.9rem',
+              fontFamily: 'var(--font-kalam)',
+              marginBottom: '1.5rem',
+              maxWidth: '600px',
+              margin: '0 auto 1.5rem',
+              backgroundColor: 'rgba(34, 197, 94, 0.2)',
+              padding: '0.75rem 1rem',
+              borderRadius: '12px',
+              border: '1px solid rgba(34, 197, 94, 0.3)'
+            }}
+          >
+            🎁 Ganhe 200 FP ao criar sua conta + 100 FP ao completar o perfil + 200 FP ao concluir seu primeiro simulado!
           </p>
           <Link href="/cadastro">
             <button

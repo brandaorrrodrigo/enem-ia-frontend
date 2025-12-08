@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import FloatingBackButton from '@/components/FloatingBackButton';
+import {useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import FloatingNav from '@/components/FloatingNav';
@@ -19,7 +20,8 @@ import {
   Palette,
   Rocket,
   Shield,
-  ArrowLeft
+  ArrowLeft,
+  Users
 } from 'lucide-react';
 
 interface Reward {
@@ -52,7 +54,8 @@ const iconMap: Record<string, any> = {
   Sparkles,
   Palette,
   Rocket,
-  Shield
+  Shield,
+  Users
 };
 
 const categoriaStyles: Record<string, { bg: string; border: string; text: string }> = {
@@ -88,12 +91,13 @@ export default function LojaPage() {
         nivel: fpTotal >= 1000 ? "Gold" : "Bronze"
       });
 
+      // Economia rebalanceada v2.0 - preços ajustados
       setRewards([
         {
           id: "r1",
           nome: "Tema Escuro Premium",
           descricao: "Desbloqueie o tema escuro exclusivo para estudar a noite",
-          custoFP: 500,
+          custoFP: 1500, // Era 500
           icone: "Palette",
           categoria: "cosmetic",
           ativo: true,
@@ -103,7 +107,7 @@ export default function LojaPage() {
           id: "r2",
           nome: "Boost de FP 2x",
           descricao: "Ganhe o dobro de FP nos proximos 5 simulados",
-          custoFP: 300,
+          custoFP: 1000, // Era 300
           icone: "Zap",
           categoria: "boost",
           ativo: true,
@@ -113,7 +117,7 @@ export default function LojaPage() {
           id: "r3",
           nome: "Avatar Coruja",
           descricao: "Avatar especial de coruja sabida para seu perfil",
-          custoFP: 200,
+          custoFP: 800, // Era 200
           icone: "Star",
           categoria: "cosmetic",
           ativo: true,
@@ -123,7 +127,7 @@ export default function LojaPage() {
           id: "r4",
           nome: "Distintivo ENEM Master",
           descricao: "Mostre que voce e um mestre do ENEM com este distintivo raro",
-          custoFP: 1000,
+          custoFP: 3000, // Era 1000
           icone: "Trophy",
           categoria: "premium",
           ativo: true,
@@ -133,7 +137,7 @@ export default function LojaPage() {
           id: "r5",
           nome: "Dicas Extra IA",
           descricao: "Receba 10 dicas extras da IA nas questoes dificeis",
-          custoFP: 150,
+          custoFP: 500, // Era 150
           icone: "Sparkles",
           categoria: "item",
           ativo: true,
@@ -143,7 +147,7 @@ export default function LojaPage() {
           id: "r6",
           nome: "Escudo Anti-Streak",
           descricao: "Proteja sua streak por 1 dia caso esqueca de estudar",
-          custoFP: 250,
+          custoFP: 700, // Era 250
           icone: "Shield",
           categoria: "item",
           ativo: true,
@@ -153,7 +157,7 @@ export default function LojaPage() {
           id: "r7",
           nome: "Boost Ranking",
           descricao: "Ganhe 50% mais pontos no ranking por 3 dias",
-          custoFP: 400,
+          custoFP: 1200, // Era 400
           icone: "Rocket",
           categoria: "boost",
           ativo: true,
@@ -163,11 +167,31 @@ export default function LojaPage() {
           id: "r8",
           nome: "Coroa Dourada",
           descricao: "Coroa exclusiva que aparece no seu perfil e ranking",
-          custoFP: 800,
+          custoFP: 2500, // Era 800
           icone: "Crown",
           categoria: "premium",
           ativo: true,
           unico: true
+        },
+        {
+          id: "r9",
+          nome: "Pacote de Convites",
+          descricao: "5 convites extras para desafiar amigos em batalhas 1v1",
+          custoFP: 400,
+          icone: "Gift",
+          categoria: "item",
+          ativo: true,
+          unico: false
+        },
+        {
+          id: "r10",
+          nome: "Convite Avulso",
+          descricao: "1 convite para desafiar um amigo em batalha 1v1",
+          custoFP: 100,
+          icone: "Users",
+          categoria: "item",
+          ativo: true,
+          unico: false
         }
       ]);
     } catch (err) {
@@ -224,6 +248,7 @@ export default function LojaPage() {
           backgroundImage: 'var(--chalkboard-texture)'
         }}
       >
+      <FloatingBackButton />
         <div className="text-center">
           <div
             className="w-12 h-12 border-4 rounded-full animate-spin mx-auto mb-6"
@@ -279,7 +304,7 @@ export default function LojaPage() {
                   fontFamily: 'var(--font-kalam)'
                 }}
               >
-                Troque seus Focus Points por recompensas incriveis
+                Troque seus FP por recompensas incriveis
               </p>
             </div>
 
@@ -625,7 +650,7 @@ export default function LojaPage() {
                       fontFamily: 'var(--font-kalam)'
                     }}
                   >
-                    Complete simulados e ganhe ate 100 FP por prova
+                    Complete simulados e ganhe ate 65 FP por prova
                   </span>
                 </li>
                 <li className="flex items-center gap-2">

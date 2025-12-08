@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Material {
   id: string;
@@ -188,6 +189,7 @@ export default function MateriaisPage() {
   if (loading) {
     return (
       <div className="container" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <FloatingBackButton />
         <div style={{ textAlign: 'center' }}>
           <div className="loading-spinner" style={{ margin: '0 auto 24px' }}></div>
           <p style={{ fontSize: '1.125rem', fontWeight: 600, color: 'var(--chalk-white)' }}>Carregando materiais...</p>

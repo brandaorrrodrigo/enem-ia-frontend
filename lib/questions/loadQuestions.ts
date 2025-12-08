@@ -19,6 +19,8 @@ import {
 
 // Importar banco massivo de questões
 import bancoMassivo from '../../data/questoes-massivo.json';
+// Importar banco de questões ENEM reais
+import bancoEnemReais from '../../data/questoes-enem-reais.json';
 
 // Re-exportar tipos para compatibilidade
 export type { Questao, QuestaoLegacy, Area, Dificuldade } from './schema';
@@ -47,6 +49,66 @@ interface BancoMassivoData {
   versao: string;
   total_questoes: number;
   questoes: QuestaoMassivo[];
+}
+
+// ========================================
+// TIPOS DO BANCO ENEM REAIS
+// ========================================
+
+interface QuestaoEnemReal {
+  id: string;
+  ano: number;
+  area: string;
+  disciplina: string;
+  tema: string;
+  dificuldade: number;
+  enunciado: string;
+  alternativas: string[];
+  correta: string;
+  explicacao: string;
+  fonte: string;
+  tags: string[];
+}
+
+interface BancoEnemReaisData {
+  versao: string;
+  atualizacao: string;
+  total_questoes: number;
+  estatisticas: {
+    por_area: Record<string, number>;
+    por_disciplina: Record<string, number>;
+  };
+  questoes: QuestaoEnemReal[];
+}
+
+/**
+ * Converte questão ENEM real para o schema padrão
+ */
+function convertFromEnemReal(q: QuestaoEnemReal): Questao {
+  // Mapear área para o formato padrão
+  const areaMap: Record<string, Area> = {
+    'Ciências da Natureza': 'Natureza',
+    'Ciências Humanas': 'Humanas',
+    'Linguagens': 'Linguagens',
+    'Matemática': 'Matemática',
+  };
+
+  const area = areaMap[q.area] || 'Matemática';
+  const dificuldade = (q.dificuldade >= 1 && q.dificuldade <= 5 ? q.dificuldade : 3) as Dificuldade;
+
+  return {
+    id: q.id,
+    ano: q.ano,
+    area,
+    disciplina: q.disciplina,
+    tema: q.tema,
+    dificuldade,
+    enunciado: q.enunciado,
+    alternativas: q.alternativas as [string, string, string, string, string],
+    correta: q.correta as 'A' | 'B' | 'C' | 'D' | 'E',
+    explicacao: q.explicacao || '',
+    tags: q.tags || []
+  };
 }
 
 /**
@@ -134,9 +196,16 @@ function initializeFromLegacy(): void {
 
   // Carregar do banco massivo
   const banco = bancoMassivo as BancoMassivoData;
-  const questions = banco.questoes.map((q, idx) => convertFromMassivo(q, idx));
+  const questionsMassivo = banco.questoes.map((q, idx) => convertFromMassivo(q, idx));
 
-  console.log(`[DB] Banco inicializado com ${questions.length} questões em ${Date.now() - startTime}ms`);
+  // Carregar do banco ENEM reais
+  const bancoReais = bancoEnemReais as BancoEnemReaisData;
+  const questionsReais = bancoReais.questoes.map(q => convertFromEnemReal(q));
+
+  // Combinar os dois bancos (ENEM reais primeiro para prioridade)
+  const questions = [...questionsReais, ...questionsMassivo];
+
+  console.log(`[DB] Banco inicializado com ${questions.length} questões (${questionsReais.length} ENEM reais + ${questionsMassivo.length} massivo) em ${Date.now() - startTime}ms`);
 
   // Popular cache
   cache.questions = questions;

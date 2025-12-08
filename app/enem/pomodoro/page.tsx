@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 type TimerMode = 'foco' | 'pausa_curta' | 'pausa_longa';
 
@@ -163,6 +164,7 @@ export default function PomodoroPage() {
 
   return (
     <div className="container" style={{ minHeight: '100vh', paddingTop: '2rem', paddingBottom: '2rem' }}>
+      <FloatingBackButton />
       <FloatingNav />
       {/* Audio para notificacao */}
       <audio ref={audioRef} src="https://cdn.pixabay.com/audio/2022/03/24/audio_805cb8c25d.mp3" />

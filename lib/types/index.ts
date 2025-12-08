@@ -110,7 +110,7 @@ export interface AreaFraca {
 
 // GAMIFICACAO
 export interface UserGamification {
-  fp?: number; // Focus Points (novo sistema)
+  fp?: number;
   xp: number; // Mantido para compatibilidade
   level: number;
   pontos: number;
@@ -138,7 +138,7 @@ export interface Conquista {
   meta: number;
   concluida: boolean;
   dataConquista?: string;
-  fpRecompensa?: number; // Focus Points (novo sistema)
+  fpRecompensa?: number;
   xpRecompensa: number; // Mantido para compatibilidade
   pontosRecompensa: number;
 }
@@ -148,7 +148,7 @@ export interface RankingEntry {
   odUsuario: string;
   nome: string;
   avatar?: string;
-  fp?: number; // Focus Points (novo sistema)
+  fp?: number;
   xp: number; // Mantido para compatibilidade
   level: number;
   pontos: number;
@@ -225,7 +225,7 @@ export interface Desafio {
   tipo: 'diario' | 'semanal' | 'mensal' | 'especial';
   meta: number;
   progresso: number;
-  recompensaFP?: number; // Focus Points (novo sistema)
+  recompensaFP?: number;
   recompensaXP: number; // Mantido para compatibilidade
   recompensaPontos: number;
   dataInicio: string;

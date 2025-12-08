@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import AchievementPopup from '@/components/enem/AchievementPopup';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface ErroDetalhado {
   questao_id: number;
@@ -32,7 +33,7 @@ interface ResultadoData {
   nota: number;
   desempenho: string;
   erros_detalhados: ErroDetalhado[];
-  fp_ganhos?: number; // Focus Points ganhos neste simulado
+  fp_ganhos?: number;
   curso_alvo?: Course | null; // Curso alvo do usuário
   atingiu_nota_corte?: boolean; // Se atingiu nota de corte
   diferenca_nota?: number | null; // Diferença para nota de corte
@@ -116,6 +117,7 @@ export default function ResultadoPage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
+      <FloatingBackButton />
         <div className="text-center text-white">
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-yellow-400 mx-auto mb-4"></div>
           <p className="text-xl">Carregando resultado...</p>
@@ -205,10 +207,10 @@ export default function ResultadoPage() {
             </p>
             <p className="text-white/60 text-lg mt-2">de 1000 pontos</p>
 
-            {/* Focus Points Ganhos */}
+            {/* FP Ganhos */}
             {fpGanhos > 0 && (
               <div className="mt-6 bg-purple-500/20 border-2 border-purple-400 rounded-xl p-4">
-                <p className="text-purple-300 text-sm mb-1">Focus Points Ganhos</p>
+                <p className="text-purple-300 text-sm mb-1">FP Ganhos</p>
                 <p className="text-purple-200 text-3xl font-bold">+{fpGanhos} FP</p>
               </div>
             )}
@@ -371,6 +373,7 @@ export default function ResultadoPage() {
                                   : 'bg-white/5 border-white/10'
                               }`}
                             >
+      <FloatingBackButton />
                               <div className="flex items-start gap-3">
                                 <span
                                   className={`font-bold text-lg ${
@@ -472,7 +475,7 @@ export default function ResultadoPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400 mt-0.5">•</span>
-                <span>Mantenha uma rotina de estudos constante para ganhar mais Focus Points</span>
+                <span>Mantenha uma rotina de estudos constante para ganhar mais FP</span>
               </li>
             </ul>
           </div>
@@ -502,7 +505,7 @@ export default function ResultadoPage() {
           {/* Estatísticas Rápidas */}
           <div className="bg-white/5 rounded-xl p-4 border border-white/10 text-center">
             <p className="text-white/60 text-sm">
-              💪 Continue estudando para desbloquear mais conquistas e ganhar Focus Points!
+              💪 Continue estudando para desbloquear mais conquistas e ganhar FP!
             </p>
           </div>
         </div>

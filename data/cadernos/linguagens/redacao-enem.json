@@ -1,0 +1,1084 @@
+{
+  "id": "redacao-enem",
+  "slug": "redacao-enem",
+  "titulo": "Redação ENEM: Guia Completo",
+  "categoria": "linguagens",
+  "nivel": "intermediario",
+  "descricao": "Domine a redação do ENEM: estrutura dissertativo-argumentativa, competências avaliadas, estratégias de argumentação e proposta de intervenção.",
+  "icone": "PenTool",
+  "cor": "#E74C3C",
+  "tempoEstimado": "20 horas",
+  "fpRecompensa": 500,
+  "tags": ["redação", "dissertação", "argumentação", "ENEM", "escrita", "competências"],
+  "modulos": [
+    {
+      "id": "m161",
+      "titulo": "Estrutura da Redação ENEM",
+      "resumo": "Compreenda a estrutura do texto dissertativo-argumentativo exigido no ENEM.",
+      "topicos": [
+        {
+          "titulo": "O Texto Dissertativo-Argumentativo",
+          "conteudo": "A redação do ENEM exige um texto dissertativo-argumentativo em prosa. Dissertar significa expor ideias sobre um tema, analisando-o de forma crítica. Argumentar significa defender um ponto de vista com provas, exemplos e raciocínios. O texto deve ter: tema delimitado, posicionamento claro (tese), argumentos que sustentam a tese e proposta de intervenção. Diferencia-se de textos narrativos (que contam histórias) e descritivos (que caracterizam). Evite primeira pessoa do singular; prefira terceira pessoa ou primeira do plural impessoal."
+        },
+        {
+          "titulo": "Estrutura: Introdução, Desenvolvimento e Conclusão",
+          "conteudo": "Introdução (1 parágrafo): apresenta o tema, contextualiza e expõe a tese (posicionamento). Estratégias: alusão histórica, dados estatísticos, citação, comparação, conceituação. Desenvolvimento (2-3 parágrafos): cada parágrafo desenvolve um argumento que sustenta a tese. Estrutura: tópico frasal (ideia principal) + fundamentação + exemplificação + fechamento. Conclusão (1 parágrafo): retoma a tese, sintetiza argumentos e apresenta a proposta de intervenção detalhada. Total: 4-5 parágrafos, 7-30 linhas (ideal: 25-30)."
+        },
+        {
+          "titulo": "Coesão e Coerência",
+          "conteudo": "Coesão: ligação entre partes do texto através de conectivos, pronomes, sinônimos, repetições estratégicas. Conectivos de: adição (além disso, ademais), oposição (porém, contudo, entretanto), causa (pois, porque, visto que), consequência (logo, portanto, assim), exemplificação (por exemplo, como), conclusão (em suma, diante disso). Coerência: lógica interna do texto, progressão de ideias, não contradição, relação com o mundo. Um texto coeso não é necessariamente coerente, e vice-versa. Ambos são essenciais."
+        }
+      ],
+      "exemplos": [
+        "Introdução com dados: 'Segundo o IBGE, 30% dos brasileiros não têm acesso a saneamento básico, revelando um problema estrutural.'",
+        "Tópico frasal: 'Primeiramente, é fundamental analisar as causas históricas dessa problemática.'",
+        "Conectivo de oposição: 'Embora existam políticas públicas, sua implementação tem sido insuficiente.'"
+      ],
+      "dicas": [
+        "Planeje antes de escrever: faça um esboço com tese e argumentos.",
+        "Cada parágrafo de desenvolvimento = 1 argumento principal.",
+        "Não comece frases com 'Eu acho' ou 'Na minha opinião' - seja assertivo."
+      ],
+      "questoes": [
+        {
+          "id": "q161-1",
+          "enunciado": "A redação do ENEM exige qual tipo textual?",
+          "alternativas": {
+            "A": "Narrativo, com personagens e enredo",
+            "B": "Descritivo, caracterizando objetos ou pessoas",
+            "C": "Dissertativo-argumentativo, defendendo um ponto de vista",
+            "D": "Injuntivo, com instruções passo a passo",
+            "E": "Poético, com versos e estrofes"
+          },
+          "correta": "C",
+          "explicacao": "O ENEM exige texto dissertativo-argumentativo, onde o candidato deve analisar um tema, apresentar uma tese (posicionamento) e defendê-la com argumentos, além de propor uma intervenção.",
+          "dificuldade": "facil",
+          "tags": ["redação", "tipo textual", "estrutura"]
+        },
+        {
+          "id": "q161-2",
+          "enunciado": "A tese de uma redação dissertativo-argumentativa deve aparecer:",
+          "alternativas": {
+            "A": "Apenas na conclusão",
+            "B": "No desenvolvimento, depois dos argumentos",
+            "C": "Na introdução, apresentando o posicionamento do autor",
+            "D": "Em todos os parágrafos repetidamente",
+            "E": "Implícita, sem ser declarada diretamente"
+          },
+          "correta": "C",
+          "explicacao": "A tese deve ser apresentada na introdução, deixando claro o posicionamento do autor sobre o tema. O desenvolvimento irá defender essa tese com argumentos, e a conclusão a retomará.",
+          "dificuldade": "facil",
+          "tags": ["redação", "tese", "introdução"]
+        },
+        {
+          "id": "q161-3",
+          "enunciado": "O conectivo 'entretanto' indica relação de:",
+          "alternativas": {
+            "A": "Adição",
+            "B": "Causa",
+            "C": "Oposição/contraste",
+            "D": "Conclusão",
+            "E": "Exemplificação"
+          },
+          "correta": "C",
+          "explicacao": "'Entretanto' (assim como 'porém', 'contudo', 'todavia', 'no entanto') é um conectivo de oposição, indicando contraste ou ressalva em relação ao que foi dito anteriormente.",
+          "dificuldade": "facil",
+          "tags": ["redação", "conectivos", "coesão"]
+        },
+        {
+          "id": "q161-4",
+          "enunciado": "Qual a estrutura ideal de um parágrafo de desenvolvimento?",
+          "alternativas": {
+            "A": "Apenas exemplos sem explicação",
+            "B": "Tópico frasal + fundamentação + exemplificação",
+            "C": "Repetição da tese várias vezes",
+            "D": "Proposta de intervenção completa",
+            "E": "Citação sem conexão com o tema"
+          },
+          "correta": "B",
+          "explicacao": "Um parágrafo de desenvolvimento bem estruturado tem: tópico frasal (ideia central), fundamentação (explicação, desenvolvimento do argumento) e exemplificação (dados, citações, exemplos que comprovem).",
+          "dificuldade": "medio",
+          "tags": ["redação", "desenvolvimento", "estrutura"]
+        },
+        {
+          "id": "q161-5",
+          "enunciado": "A coerência textual refere-se a:",
+          "alternativas": {
+            "A": "Uso correto de vírgulas e pontos",
+            "B": "Lógica e sentido das ideias no texto",
+            "C": "Uso de conectivos entre frases",
+            "D": "Quantidade de linhas escritas",
+            "E": "Caligrafia legível"
+          },
+          "correta": "B",
+          "explicacao": "Coerência é a lógica interna do texto: as ideias fazem sentido, não se contradizem, progridem de forma lógica e se relacionam com a realidade. Difere da coesão, que trata das ligações linguísticas.",
+          "dificuldade": "medio",
+          "tags": ["redação", "coerência", "textualidade"]
+        }
+      ]
+    },
+    {
+      "id": "m162",
+      "titulo": "As 5 Competências do ENEM",
+      "resumo": "Entenda como sua redação é avaliada e o que cada competência exige.",
+      "topicos": [
+        {
+          "titulo": "Competência 1: Norma Culta",
+          "conteudo": "Demonstrar domínio da modalidade escrita formal da língua portuguesa. Avalia: ortografia, acentuação, concordância verbal e nominal, regência, pontuação, uso adequado de vocabulário, clareza e precisão. Evite: gírias, abreviações de internet, estrangeirismos desnecessários, repetições excessivas, oralidade ('a gente', 'né', 'tipo assim'). Use linguagem formal, vocabulário variado e estruturas sintáticas corretas. Erros gramaticais graves ou recorrentes reduzem significativamente a nota."
+        },
+        {
+          "titulo": "Competência 2: Compreensão do Tema",
+          "conteudo": "Compreender a proposta de redação e aplicar conceitos de várias áreas para desenvolver o tema, dentro dos limites estruturais do texto dissertativo-argumentativo. Avalia: adequação ao tema (não tangenciar nem fugir), uso de repertório sociocultural (citações, dados, alusões históricas, filosóficas, científicas, artísticas), pertinência do repertório ao tema, estrutura dissertativa. Repertório legitimado: informações de fontes confiáveis que ampliam a argumentação. Tangenciamento: abordar o tema superficialmente. Fuga: não abordar o tema (nota zero)."
+        },
+        {
+          "titulo": "Competência 3: Argumentação",
+          "conteudo": "Selecionar, relacionar, organizar e interpretar informações para defender um ponto de vista. Avalia: qualidade dos argumentos, organização lógica, progressão textual, defesa consistente da tese. Tipos de argumento: autoridade (citação de especialistas), exemplificação (casos concretos), dados estatísticos, comparação, causa e consequência, histórico. Projeto de texto: planejamento da estrutura argumentativa. Argumentos devem ser desenvolvidos, não apenas citados."
+        },
+        {
+          "titulo": "Competências 4 e 5: Coesão e Intervenção",
+          "conteudo": "Competência 4: Demonstrar conhecimento dos mecanismos linguísticos necessários para a construção da argumentação. Avalia: uso de conectivos, referenciação (pronomes, sinônimos), estruturação de parágrafos, articulação entre as partes do texto. Competência 5: Elaborar proposta de intervenção para o problema abordado, respeitando os direitos humanos. A proposta deve conter 5 elementos: ação (o que fazer), agente (quem fará), modo/meio (como), efeito/finalidade (para quê) e detalhamento de pelo menos um desses elementos. Deve ser viável, específica e respeitar direitos humanos."
+        },
+        {
+          "titulo": "Níveis de Pontuação",
+          "conteudo": "Cada competência vale 0-200 pontos, em níveis: 0 (desclassificação), 40 (precário), 80 (insuficiente), 120 (mediano), 160 (bom), 200 (excelente). Total: 0-1000 pontos. Nota zero: fuga total ao tema, não atendimento ao tipo textual, texto com menos de 7 linhas, cópia dos textos motivadores, impropérios/desenhos, desrespeito aos direitos humanos. Anulação: folha em branco, texto ilegível. Para nota máxima em cada competência, o desempenho deve ser excelente e consistente."
+        }
+      ],
+      "exemplos": [
+        "C1: 'A problemática do saneamento básico afeta milhões de brasileiros' (correto) vs 'A problematica do saneamento basico afeta...' (erros).",
+        "C2: Citar Hannah Arendt sobre 'banalidade do mal' em redação sobre violência mostra repertório filosófico.",
+        "C5: 'O Ministério da Educação (agente) deve implementar (ação) campanhas educativas em escolas (modo) para conscientizar sobre...(finalidade), por meio de palestras mensais (detalhamento).'"
+      ],
+      "dicas": [
+        "C5: lembre dos 5 elementos (ação, agente, modo, finalidade, detalhamento) - use a sigla AMMEF.",
+        "C2: tenha um repertório variado memorizado (filósofos, sociólogos, dados, obras).",
+        "C4: varie os conectivos - não use sempre 'além disso' ou 'portanto'."
+      ],
+      "questoes": [
+        {
+          "id": "q162-1",
+          "enunciado": "A Competência 1 da redação do ENEM avalia:",
+          "alternativas": {
+            "A": "Criatividade na escolha do tema",
+            "B": "Domínio da norma culta da língua portuguesa",
+            "C": "Capacidade de fazer uma proposta de intervenção",
+            "D": "Uso de repertório sociocultural",
+            "E": "Organização dos parágrafos"
+          },
+          "correta": "B",
+          "explicacao": "A Competência 1 avalia o domínio da modalidade escrita formal da língua portuguesa: ortografia, acentuação, concordância, regência, pontuação e uso adequado de vocabulário.",
+          "dificuldade": "facil",
+          "tags": ["redação", "competência 1", "norma culta"]
+        },
+        {
+          "id": "q162-2",
+          "enunciado": "A proposta de intervenção (Competência 5) deve conter:",
+          "alternativas": {
+            "A": "Apenas a ideia geral de solução",
+            "B": "Ação, agente, modo/meio, finalidade e detalhamento",
+            "C": "Citação de um filósofo",
+            "D": "Repetição da tese",
+            "E": "Crítica ao governo sem propor solução"
+          },
+          "correta": "B",
+          "explicacao": "Para nota máxima na C5, a proposta deve ter 5 elementos: ação (o que fazer), agente (quem fará), modo/meio (como), finalidade (para quê) e detalhamento de ao menos um desses elementos.",
+          "dificuldade": "medio",
+          "tags": ["redação", "competência 5", "intervenção"]
+        },
+        {
+          "id": "q162-3",
+          "enunciado": "O que significa 'tangenciar o tema' na redação do ENEM?",
+          "alternativas": {
+            "A": "Desenvolver o tema com profundidade",
+            "B": "Abordar o tema superficialmente, sem desenvolver adequadamente",
+            "C": "Fugir completamente do tema proposto",
+            "D": "Usar muitos exemplos sobre o tema",
+            "E": "Copiar os textos motivadores"
+          },
+          "correta": "B",
+          "explicacao": "Tangenciar significa tocar superficialmente no tema, sem desenvolvê-lo adequadamente. Não é fuga total (que zera), mas compromete a nota da Competência 2.",
+          "dificuldade": "medio",
+          "tags": ["redação", "competência 2", "tema"]
+        },
+        {
+          "id": "q162-4",
+          "enunciado": "O repertório sociocultural na redação do ENEM serve para:",
+          "alternativas": {
+            "A": "Mostrar que o candidato lê muito",
+            "B": "Preencher linhas quando faltam ideias",
+            "C": "Fundamentar e ampliar a argumentação",
+            "D": "Substituir a proposta de intervenção",
+            "E": "Demonstrar conhecimento em apenas uma área"
+          },
+          "correta": "C",
+          "explicacao": "O repertório sociocultural (citações, dados, referências) deve fundamentar os argumentos, ampliando a discussão e demonstrando conhecimento pertinente ao tema. Deve ser bem integrado ao texto.",
+          "dificuldade": "facil",
+          "tags": ["redação", "repertório", "argumentação"]
+        },
+        {
+          "id": "q162-5",
+          "enunciado": "Uma redação que desrespeita os direitos humanos:",
+          "alternativas": {
+            "A": "Perde apenas 40 pontos",
+            "B": "É avaliada normalmente nas outras competências",
+            "C": "Recebe nota zero total",
+            "D": "Perde pontos apenas na Competência 5",
+            "E": "Pode tirar nota máxima se bem argumentada"
+          },
+          "correta": "C",
+          "explicacao": "Redações que desrespeitam os direitos humanos (propostas de tortura, discriminação, violência, etc.) recebem nota zero em toda a redação, não apenas na Competência 5.",
+          "dificuldade": "medio",
+          "tags": ["redação", "direitos humanos", "nota zero"]
+        }
+      ]
+    },
+    {
+      "id": "m163",
+      "titulo": "Introdução: Estratégias e Modelos",
+      "resumo": "Aprenda diferentes formas de iniciar sua redação de maneira impactante.",
+      "topicos": [
+        {
+          "titulo": "Função e Estrutura da Introdução",
+          "conteudo": "A introdução tem três funções: contextualizar o tema, apresentar a tese e anunciar os argumentos (opcional). Estrutura básica: contextualização → problematização → tese. Tamanho ideal: 4-6 linhas. Deve ser atrativa, clara e direta. Evite: começar com 'Eu vou falar sobre...', afirmações óbvias ('Desde sempre...'), generalizações vazias ('A sociedade atual...' sem especificar), clichês ('Nos dias de hoje...')."
+        },
+        {
+          "titulo": "Estratégias de Abertura",
+          "conteudo": "1) Alusão histórica: relacionar o tema com fato histórico. 2) Citação: usar frase de autoridade (filósofo, escritor, cientista). 3) Dados/estatísticas: números que dimensionem o problema. 4) Comparação: contrastar realidades, épocas ou países. 5) Definição/conceituação: definir termo-chave do tema. 6) Alusão cinematográfica/literária: relacionar com obra cultural. 7) Pergunta retórica (com cautela): questionar para engajar. Cada estratégia deve conectar-se organicamente à tese."
+        },
+        {
+          "titulo": "Construindo a Tese",
+          "conteudo": "A tese é o posicionamento do autor sobre o tema. Deve ser: clara (não ambígua), específica (não genérica), defensável (não óbvia demais). Estruturas de tese: 'É necessário/fundamental que...', 'O problema X decorre de Y e Z...', 'A questão X revela [análise]...'. Pode anunciar os argumentos: 'A problemática decorre de fatores históricos e da ineficiência de políticas públicas.' Evite: teses muito radicais, óbvias ou impossíveis de defender."
+        }
+      ],
+      "exemplos": [
+        "Alusão histórica: 'No Brasil colonial, a exclusão social já marcava a sociedade. Atualmente, essa herança se manifesta na problemática do acesso à educação.'",
+        "Citação: 'Segundo o sociólogo Zygmunt Bauman, vivemos em uma \"sociedade líquida\" onde relações são frágeis. Nesse contexto, o isolamento social se torna...'",
+        "Dados: 'De acordo com o IBGE, 11 milhões de brasileiros vivem em favelas. Essa realidade evidencia a urgência de políticas habitacionais efetivas.'"
+      ],
+      "dicas": [
+        "Memorize 3-4 citações versáteis que se apliquem a vários temas.",
+        "A contextualização deve conectar-se logicamente à tese - não seja artificial.",
+        "Seja específico: 'a educação brasileira' é melhor que 'a educação no mundo'."
+      ],
+      "questoes": [
+        {
+          "id": "q163-1",
+          "enunciado": "Qual é a função principal da introdução em uma redação dissertativa?",
+          "alternativas": {
+            "A": "Apresentar a proposta de intervenção",
+            "B": "Contextualizar o tema e apresentar a tese",
+            "C": "Desenvolver os argumentos em profundidade",
+            "D": "Concluir o raciocínio apresentado",
+            "E": "Copiar informações dos textos motivadores"
+          },
+          "correta": "B",
+          "explicacao": "A introdução deve contextualizar o tema (situar o leitor) e apresentar a tese (posicionamento do autor). Os argumentos são desenvolvidos nos parágrafos seguintes.",
+          "dificuldade": "facil",
+          "tags": ["redação", "introdução", "função"]
+        },
+        {
+          "id": "q163-2",
+          "enunciado": "Iniciar a redação com 'Nos dias de hoje, a sociedade enfrenta muitos problemas...' é problemático porque:",
+          "alternativas": {
+            "A": "Usa vocabulário muito formal",
+            "B": "É uma generalização vaga e clichê",
+            "C": "Apresenta dados estatísticos demais",
+            "D": "Cita muitos autores",
+            "E": "É muito específico"
+          },
+          "correta": "B",
+          "explicacao": "Essa abertura é um clichê vago que não contextualiza especificamente o tema nem demonstra repertório. É genérica e aplicável a qualquer redação, o que empobrece o texto.",
+          "dificuldade": "facil",
+          "tags": ["redação", "introdução", "clichês"]
+        },
+        {
+          "id": "q163-3",
+          "enunciado": "A estratégia de alusão histórica consiste em:",
+          "alternativas": {
+            "A": "Inventar fatos históricos para impressionar",
+            "B": "Relacionar o tema com um evento ou período histórico relevante",
+            "C": "Copiar datas de livros de história",
+            "D": "Ignorar o passado e focar apenas no presente",
+            "E": "Citar nomes de historiadores famosos"
+          },
+          "correta": "B",
+          "explicacao": "A alusão histórica conecta o tema a um fato ou período histórico relevante, demonstrando repertório e contextualizando a problemática em uma perspectiva temporal mais ampla.",
+          "dificuldade": "facil",
+          "tags": ["redação", "introdução", "alusão histórica"]
+        },
+        {
+          "id": "q163-4",
+          "enunciado": "Uma boa tese deve ser:",
+          "alternativas": {
+            "A": "Óbvia, para que todos concordem",
+            "B": "Vaga, para permitir interpretações",
+            "C": "Clara, específica e defensável",
+            "D": "Extremamente radical e polêmica",
+            "E": "Igual à dos outros candidatos"
+          },
+          "correta": "C",
+          "explicacao": "A tese deve ser clara (sem ambiguidade), específica (não genérica) e defensável (possível de argumentar). Não deve ser óbvia demais nem tão radical que não possa ser sustentada.",
+          "dificuldade": "medio",
+          "tags": ["redação", "tese", "características"]
+        },
+        {
+          "id": "q163-5",
+          "enunciado": "O uso de citações na introdução é eficaz quando:",
+          "alternativas": {
+            "A": "A citação é inventada pelo candidato",
+            "B": "A citação se conecta ao tema e fundamenta a argumentação",
+            "C": "São usadas muitas citações seguidas",
+            "D": "A citação é de um autor desconhecido",
+            "E": "A citação substitui a tese do autor"
+          },
+          "correta": "B",
+          "explicacao": "A citação deve estar conectada ao tema e servir como ponto de partida para a argumentação, não sendo mero enfeite. O autor deve dialogar com a citação, não apenas reproduzi-la.",
+          "dificuldade": "medio",
+          "tags": ["redação", "citação", "repertório"]
+        }
+      ]
+    },
+    {
+      "id": "m164",
+      "titulo": "Desenvolvimento: Argumentação Eficaz",
+      "resumo": "Construa parágrafos de desenvolvimento sólidos com argumentos bem fundamentados.",
+      "topicos": [
+        {
+          "titulo": "Estrutura do Parágrafo de Desenvolvimento",
+          "conteudo": "Cada parágrafo de desenvolvimento deve conter: 1) Tópico frasal: frase inicial que apresenta a ideia central do parágrafo. 2) Fundamentação: explicação, análise e aprofundamento da ideia. 3) Comprovação: exemplos, dados, citações que validem o argumento. 4) Fechamento: frase que arremata e conecta ao tema/tese. Extensão ideal: 6-8 linhas por parágrafo. Use 2-3 parágrafos de desenvolvimento, cada um com um argumento diferente."
+        },
+        {
+          "titulo": "Tipos de Argumentos",
+          "conteudo": "Argumento de autoridade: citação de especialista, pensador, pesquisa. Argumento por exemplificação: casos concretos, históricos ou atuais. Argumento por dados/estatísticas: números que dimensionam o problema. Argumento por causa e consequência: análise de origens e efeitos do problema. Argumento por comparação: contraste entre épocas, países, situações. Argumento histórico: contextualização temporal do problema. Argumento por contra-argumentação: apresentar e refutar visão oposta."
+        },
+        {
+          "titulo": "Fundamentação e Exemplificação",
+          "conteudo": "Fundamentar significa explicar, aprofundar, analisar - não apenas afirmar. Exemplo mal fundamentado: 'A educação é importante. Isso é um problema.' Exemplo bem fundamentado: 'A precarização da educação, como aponta Paulo Freire, perpetua estruturas de desigualdade ao negar à população ferramentas de pensamento crítico.' Exemplifique com: dados de instituições (IBGE, ONU, OMS), fatos históricos, obras literárias/cinematográficas, pensadores. Evite exemplos pessoais ('Eu conheço alguém que...')."
+        }
+      ],
+      "exemplos": [
+        "Tópico frasal: 'Em primeiro lugar, é imprescindível analisar as raízes históricas do problema.'",
+        "Fundamentação: 'O sociólogo Jessé Souza argumenta que a desigualdade brasileira tem origens na escravidão, que criou uma hierarquia social ainda presente.'",
+        "Fechamento: 'Dessa forma, evidencia-se que a questão não pode ser resolvida sem considerar seu contexto histórico.'"
+      ],
+      "dicas": [
+        "Evite 'achismos': fundamente com dados, não com opinião pessoal.",
+        "Um argumento bem desenvolvido vale mais que três superficiais.",
+        "Use repertório variado: sociólogos, filósofos, dados, obras culturais."
+      ],
+      "questoes": [
+        {
+          "id": "q164-1",
+          "enunciado": "O tópico frasal em um parágrafo de desenvolvimento é:",
+          "alternativas": {
+            "A": "A última frase que fecha o parágrafo",
+            "B": "A frase inicial que apresenta a ideia central",
+            "C": "Uma citação de autoridade",
+            "D": "A proposta de intervenção",
+            "E": "Um dado estatístico"
+          },
+          "correta": "B",
+          "explicacao": "O tópico frasal é a frase inicial do parágrafo que apresenta a ideia central a ser desenvolvida. Funciona como uma 'mini-tese' do parágrafo.",
+          "dificuldade": "facil",
+          "tags": ["redação", "desenvolvimento", "tópico frasal"]
+        },
+        {
+          "id": "q164-2",
+          "enunciado": "O argumento de autoridade consiste em:",
+          "alternativas": {
+            "A": "Usar a própria experiência como prova",
+            "B": "Citar pensadores, especialistas ou pesquisas reconhecidas",
+            "C": "Apresentar dados estatísticos",
+            "D": "Comparar diferentes países",
+            "E": "Narrar um fato histórico"
+          },
+          "correta": "B",
+          "explicacao": "O argumento de autoridade usa citações ou referências a especialistas, pensadores ou pesquisas reconhecidas para dar credibilidade à argumentação.",
+          "dificuldade": "facil",
+          "tags": ["redação", "argumentação", "autoridade"]
+        },
+        {
+          "id": "q164-3",
+          "enunciado": "Fundamentar um argumento significa:",
+          "alternativas": {
+            "A": "Afirmar algo sem explicação",
+            "B": "Repetir a tese várias vezes",
+            "C": "Explicar, analisar e aprofundar a ideia apresentada",
+            "D": "Copiar os textos motivadores",
+            "E": "Usar gírias para ser mais informal"
+          },
+          "correta": "C",
+          "explicacao": "Fundamentar é ir além da simples afirmação: é explicar o porquê, analisar as causas e consequências, aprofundar com exemplos e conectar com a tese.",
+          "dificuldade": "medio",
+          "tags": ["redação", "argumentação", "fundamentação"]
+        },
+        {
+          "id": "q164-4",
+          "enunciado": "Qual afirmação está bem fundamentada?",
+          "alternativas": {
+            "A": "'A violência é ruim para a sociedade.'",
+            "B": "'Como demonstra a pesquisa Datafolha de 2023, 70% dos brasileiros sentem-se inseguros, revelando o impacto social da violência.'",
+            "C": "'Eu acho que a violência deveria acabar.'",
+            "D": "'A violência existe desde sempre.'",
+            "E": "'Todo mundo sabe que a violência é um problema.'"
+          },
+          "correta": "B",
+          "explicacao": "A opção B apresenta fonte confiável (Datafolha), dado específico (70%), contextualização temporal (2023) e análise (impacto social). As demais são vagas, opinativas ou sem comprovação.",
+          "dificuldade": "medio",
+          "tags": ["redação", "argumentação", "fundamentação"]
+        },
+        {
+          "id": "q164-5",
+          "enunciado": "O uso de exemplos pessoais ('Eu conheço uma pessoa que...') na redação do ENEM é:",
+          "alternativas": {
+            "A": "Recomendado para mostrar experiência",
+            "B": "Proibido e gera nota zero",
+            "C": "Desaconselhado por não ter valor argumentativo universal",
+            "D": "Obrigatório em todos os parágrafos",
+            "E": "Ideal para a conclusão"
+          },
+          "correta": "C",
+          "explicacao": "Exemplos pessoais e anedóticos não têm valor argumentativo universal e enfraquecem o texto. Prefira dados de fontes confiáveis, fatos históricos ou referências de obras e pensadores.",
+          "dificuldade": "medio",
+          "tags": ["redação", "argumentação", "exemplos"]
+        }
+      ]
+    },
+    {
+      "id": "m165",
+      "titulo": "Conclusão e Proposta de Intervenção",
+      "resumo": "Aprenda a elaborar conclusões eficientes e propostas de intervenção completas.",
+      "topicos": [
+        {
+          "titulo": "Estrutura da Conclusão",
+          "conteudo": "A conclusão deve: retomar a tese (sem repetir literalmente), sintetizar os argumentos apresentados e apresentar a proposta de intervenção. Estrutura: conectivo conclusivo (Portanto, Dessa forma, Diante do exposto...) + síntese + proposta de intervenção. Evite: iniciar com 'Concluindo...' ou 'Em conclusão...', apresentar argumentos novos, fazer perguntas, usar clichês finais. Tamanho ideal: 6-8 linhas."
+        },
+        {
+          "titulo": "Proposta de Intervenção Completa",
+          "conteudo": "A proposta de intervenção deve conter 5 elementos: 1) AÇÃO: o que deve ser feito (criar, implementar, promover, desenvolver...). 2) AGENTE: quem vai executar (Governo Federal, MEC, ONGs, mídia, escolas...). 3) MODO/MEIO: como será feito (por meio de, através de, mediante...). 4) FINALIDADE: para quê, qual o objetivo (a fim de, para que, com o intuito de...). 5) DETALHAMENTO: aprofundar um ou mais elementos anteriores. Todos os 5 elementos são necessários para nota máxima na Competência 5."
+        },
+        {
+          "titulo": "Erros Comuns e Como Evitá-los",
+          "conteudo": "Proposta genérica: 'O governo deve resolver o problema' (sem especificar como). Proposta inviável: 'Todos os brasileiros devem doar 10% do salário'. Proposta que viola direitos humanos: pena de morte, tortura, censura. Proposta desconectada: solução que não resolve o problema discutido. Proposta sem agente: 'Deve-se fazer...' (quem?). Para evitar: seja específico, realista, ético e coerente com o tema e argumentos. A proposta deve decorrer logicamente da discussão."
+        }
+      ],
+      "exemplos": [
+        "Proposta completa: 'Portanto, cabe ao Ministério da Educação [AGENTE] desenvolver campanhas educativas [AÇÃO] em escolas públicas e privadas, por meio de palestras mensais e materiais didáticos [MODO], a fim de conscientizar jovens sobre os perigos do problema X [FINALIDADE], utilizando linguagem acessível e recursos audiovisuais interativos [DETALHAMENTO].'",
+        "Síntese antes da proposta: 'Diante do exposto, evidencia-se que a questão X decorre de fatores históricos e da omissão estatal, exigindo ações urgentes.'",
+        "Múltiplos agentes: 'O Estado deve investir em políticas públicas, enquanto a mídia pode disseminar informações e as escolas educar as novas gerações.'"
+      ],
+      "dicas": [
+        "Use a sigla AMMEF: Ação, Modo, Meio, Efeito/Finalidade (+ detalhamento).",
+        "Agentes comuns: governo (federal, estadual, municipal), MEC, Ministério da Saúde, mídia, escolas, ONGs, empresas.",
+        "Detalhe o COMO: 'por meio de campanhas' vira 'por meio de campanhas nas redes sociais com influenciadores digitais'."
+      ],
+      "questoes": [
+        {
+          "id": "q165-1",
+          "enunciado": "Os 5 elementos obrigatórios para uma proposta de intervenção completa são:",
+          "alternativas": {
+            "A": "Tese, argumento, exemplo, citação e conclusão",
+            "B": "Ação, agente, modo/meio, finalidade e detalhamento",
+            "C": "Introdução, desenvolvimento 1, 2, 3 e conclusão",
+            "D": "Dados, citação, comparação, causa e efeito",
+            "E": "Problema, solução, exemplo, causa e consequência"
+          },
+          "correta": "B",
+          "explicacao": "Para nota máxima na Competência 5, a proposta deve conter: ação (o que fazer), agente (quem fará), modo/meio (como), finalidade (para quê) e detalhamento de pelo menos um elemento.",
+          "dificuldade": "facil",
+          "tags": ["redação", "proposta de intervenção", "elementos"]
+        },
+        {
+          "id": "q165-2",
+          "enunciado": "Na proposta: 'O governo deve criar políticas públicas', o elemento ausente é:",
+          "alternativas": {
+            "A": "Agente",
+            "B": "Ação",
+            "C": "Modo/meio e finalidade",
+            "D": "Conectivo",
+            "E": "Tese"
+          },
+          "correta": "C",
+          "explicacao": "A proposta tem agente (governo) e ação (criar políticas), mas falta o modo/meio (COMO criar), a finalidade (PARA QUÊ) e o detalhamento.",
+          "dificuldade": "medio",
+          "tags": ["redação", "proposta de intervenção", "elementos"]
+        },
+        {
+          "id": "q165-3",
+          "enunciado": "Qual proposta de intervenção é inválida no ENEM?",
+          "alternativas": {
+            "A": "Campanhas educativas nas escolas",
+            "B": "Investimento em políticas de saúde mental",
+            "C": "Pena de morte para criminosos",
+            "D": "Parceria entre governo e ONGs",
+            "E": "Fiscalização mais rigorosa"
+          },
+          "correta": "C",
+          "explicacao": "A pena de morte viola os direitos humanos e a Constituição brasileira. Propostas que sugerem tortura, censura ou discriminação também são inválidas e podem zerar a redação.",
+          "dificuldade": "facil",
+          "tags": ["redação", "proposta de intervenção", "direitos humanos"]
+        },
+        {
+          "id": "q165-4",
+          "enunciado": "Na conclusão, deve-se:",
+          "alternativas": {
+            "A": "Apresentar um argumento completamente novo",
+            "B": "Retomar a tese, sintetizar e propor intervenção",
+            "C": "Fazer uma pergunta sem responder",
+            "D": "Repetir a introdução palavra por palavra",
+            "E": "Criticar a banca do ENEM"
+          },
+          "correta": "B",
+          "explicacao": "A conclusão deve retomar a tese (reformulada), sintetizar os argumentos apresentados e apresentar a proposta de intervenção completa. Não deve trazer argumentos novos.",
+          "dificuldade": "facil",
+          "tags": ["redação", "conclusão", "estrutura"]
+        },
+        {
+          "id": "q165-5",
+          "enunciado": "Qual conectivo é mais adequado para iniciar a conclusão?",
+          "alternativas": {
+            "A": "Primeiramente",
+            "B": "Por exemplo",
+            "C": "Embora",
+            "D": "Diante do exposto",
+            "E": "Além disso"
+          },
+          "correta": "D",
+          "explicacao": "'Diante do exposto', 'Portanto', 'Dessa forma' são conectivos conclusivos adequados. 'Primeiramente' inicia desenvolvimento, 'por exemplo' exemplifica, 'embora' indica oposição, 'além disso' adiciona ideias.",
+          "dificuldade": "facil",
+          "tags": ["redação", "conclusão", "conectivos"]
+        }
+      ]
+    },
+    {
+      "id": "m166",
+      "titulo": "Repertório Sociocultural",
+      "resumo": "Construa um repertório diversificado de citações, dados e referências para usar em qualquer tema.",
+      "topicos": [
+        {
+          "titulo": "O que é Repertório Sociocultural",
+          "conteudo": "Repertório sociocultural são conhecimentos de diversas áreas (filosofia, sociologia, história, literatura, ciência, atualidades) que fundamentam a argumentação. Deve ser: pertinente (relacionado ao tema), legitimado (de fontes confiáveis), produtivo (bem integrado ao texto, não decorativo). Tipos: citações de pensadores, dados estatísticos, referências históricas, menções a obras (literárias, cinematográficas, artísticas), conceitos teóricos. Um bom repertório diferencia redações medianas de excelentes."
+        },
+        {
+          "titulo": "Pensadores e Conceitos Versáteis",
+          "conteudo": "Filosofia: Aristóteles (ética, política), Platão (Mito da Caverna - alienação), Kant (imperativo categórico - ética), Hannah Arendt (banalidade do mal, esfera pública), Foucault (poder, disciplina), Bauman (modernidade líquida). Sociologia: Durkheim (fato social, anomia), Weber (racionalização, burocracia), Marx (ideologia, luta de classes), Bourdieu (capital cultural), Jessé Souza (desigualdade). Educação: Paulo Freire (educação libertadora, oprimidos). Esses pensadores se aplicam a múltiplos temas."
+        },
+        {
+          "titulo": "Dados, História e Cultura",
+          "conteudo": "Fontes de dados: IBGE, IPEA, ONU, OMS, Datafolha. Sempre cite a instituição, não invente números. Referências históricas: Grécia Antiga (democracia), Brasil Colonial (escravidão, desigualdade), Ditadura Militar (censura, repressão), Constituição de 1988 (direitos). Obras culturais: '1984' de Orwell (vigilância, manipulação), 'O Cortiço' de Aluísio Azevedo (desigualdade), filmes como 'Que horas ela volta?' (trabalho doméstico), séries como 'Black Mirror' (tecnologia). A obra deve conectar-se ao tema, não ser citada aleatoriamente."
+        }
+      ],
+      "exemplos": [
+        "Bauman: 'Na sociedade líquida descrita por Zygmunt Bauman, as relações se tornaram frágeis e descartáveis, o que explica...'",
+        "Paulo Freire: 'Como afirmava Paulo Freire, a educação é um ato político, capaz de transformar ou perpetuar estruturas de opressão.'",
+        "Dados: 'Segundo dados do IBGE de 2022, mais de 47 milhões de brasileiros vivem abaixo da linha de pobreza.'",
+        "Obra literária: 'Assim como retratado no romance Vidas Secas, de Graciliano Ramos, a seca nordestina ainda expulsa famílias de suas terras.'"
+      ],
+      "dicas": [
+        "Memorize 5-10 citações versáteis que se adaptem a vários temas.",
+        "Não decore datas de dados - use 'segundo o IBGE' ou 'pesquisa recente'.",
+        "O repertório deve ARGUMENTAR, não apenas decorar o texto."
+      ],
+      "questoes": [
+        {
+          "id": "q166-1",
+          "enunciado": "O conceito de 'modernidade líquida' de Zygmunt Bauman refere-se a:",
+          "alternativas": {
+            "A": "Relações sólidas e duradouras na sociedade atual",
+            "B": "Fluidez e instabilidade das relações na contemporaneidade",
+            "C": "Volta aos valores tradicionais",
+            "D": "Superioridade da tecnologia sobre as pessoas",
+            "E": "Importância do trabalho manual"
+          },
+          "correta": "B",
+          "explicacao": "Bauman usa 'modernidade líquida' para descrever a sociedade contemporânea onde relações, instituições e identidades são fluidas, instáveis e efêmeras, em contraste com a 'solidez' do passado.",
+          "dificuldade": "medio",
+          "tags": ["repertório", "Bauman", "sociologia"]
+        },
+        {
+          "id": "q166-2",
+          "enunciado": "A frase 'Se a educação sozinha não transforma a sociedade, sem ela tampouco a sociedade muda' é de:",
+          "alternativas": {
+            "A": "Aristóteles",
+            "B": "Karl Marx",
+            "C": "Paulo Freire",
+            "D": "Zygmunt Bauman",
+            "E": "Michel Foucault"
+          },
+          "correta": "C",
+          "explicacao": "Paulo Freire, educador brasileiro, é autor dessa frase que destaca a educação como instrumento de transformação social, conceito central de sua pedagogia libertadora.",
+          "dificuldade": "facil",
+          "tags": ["repertório", "Paulo Freire", "educação"]
+        },
+        {
+          "id": "q166-3",
+          "enunciado": "O Mito da Caverna de Platão pode ser usado em redações sobre:",
+          "alternativas": {
+            "A": "Apenas filosofia antiga",
+            "B": "Exclusivamente religião",
+            "C": "Alienação, manipulação, ignorância e busca pelo conhecimento",
+            "D": "Economia e finanças",
+            "E": "Esportes e lazer"
+          },
+          "correta": "C",
+          "explicacao": "O Mito da Caverna é versátil: representa alienação (pessoas que veem apenas sombras/ilusões), manipulação pela mídia/fake news, ignorância social e a importância da educação para 'sair da caverna'.",
+          "dificuldade": "medio",
+          "tags": ["repertório", "Platão", "filosofia"]
+        },
+        {
+          "id": "q166-4",
+          "enunciado": "Qual é uma fonte confiável para dados estatísticos em redações?",
+          "alternativas": {
+            "A": "Redes sociais não verificadas",
+            "B": "Blogs pessoais",
+            "C": "IBGE, ONU, OMS, IPEA",
+            "D": "Comentários de YouTube",
+            "E": "Mensagens de WhatsApp"
+          },
+          "correta": "C",
+          "explicacao": "Instituições como IBGE, ONU, OMS, IPEA, Datafolha são fontes legitimadas para dados estatísticos. Evite inventar números ou usar fontes não confiáveis.",
+          "dificuldade": "facil",
+          "tags": ["repertório", "dados", "fontes"]
+        },
+        {
+          "id": "q166-5",
+          "enunciado": "O conceito de 'banalidade do mal' de Hannah Arendt aplica-se a discussões sobre:",
+          "alternativas": {
+            "A": "Apenas o holocausto nazista",
+            "B": "Violência, omissão e a naturalização de injustiças",
+            "C": "Matemática financeira",
+            "D": "Culinária internacional",
+            "E": "Astronomia e planetas"
+          },
+          "correta": "B",
+          "explicacao": "Arendt desenvolveu o conceito ao analisar Eichmann, mostrando que o mal pode ser praticado por pessoas 'comuns' que não questionam ordens. Aplica-se a temas de violência, omissão social, naturalização de injustiças.",
+          "dificuldade": "medio",
+          "tags": ["repertório", "Hannah Arendt", "filosofia"]
+        }
+      ]
+    },
+    {
+      "id": "m167",
+      "titulo": "Temas Recorrentes e Atualidades",
+      "resumo": "Prepare-se para os temas mais cobrados e mantenha-se atualizado.",
+      "topicos": [
+        {
+          "titulo": "Eixos Temáticos Frequentes",
+          "conteudo": "Educação: acesso, qualidade, tecnologia, evasão. Saúde: SUS, saúde mental, pandemia. Meio ambiente: desmatamento, sustentabilidade, mudanças climáticas. Sociedade: desigualdade, violência, discriminação (racial, gênero, LGBTQ+). Tecnologia: redes sociais, fake news, privacidade, inteligência artificial. Cidadania: democracia, participação política, direitos humanos. Trabalho: desemprego, trabalho informal, gig economy. Cultura: patrimônio, diversidade, acesso. O ENEM evita temas muito polêmicos ou que dividam opiniões de forma binária."
+        },
+        {
+          "titulo": "Análise de Temas Passados",
+          "conteudo": "Temas recentes: 'Desafios para valorização de comunidades e povos tradicionais' (2022), 'Invisibilidade e registro civil' (2021), 'Estigma da doença mental' (2020), 'Democratização do acesso ao cinema' (2019), 'Manipulação do comportamento pelo controle de dados' (2018). Padrões: questões sociais brasileiras, grupos vulneráveis, direitos, inclusão, tecnologia e sociedade. O ENEM valoriza visão crítica e propostas que respeitem direitos humanos."
+        },
+        {
+          "titulo": "Como Manter-se Atualizado",
+          "conteudo": "Fontes de informação: jornais (Folha, G1, BBC Brasil), revistas (Superinteressante, Scientific American Brasil), podcasts de notícias. Anote: dados relevantes, posicionamentos de especialistas, eventos importantes. Relacione: conecte notícias com conceitos de filosofia, sociologia, história. Prática: escreva sobre temas da atualidade usando a estrutura ENEM. Evite: extremismos, senso comum, informações não verificadas. O tema sempre terá recorte específico - não é 'educação', mas 'evasão escolar' ou 'educação à distância'."
+        }
+      ],
+      "exemplos": [
+        "Tema tecnologia: Pode cobrar uso ético de IA, regulamentação de redes sociais, inclusão digital.",
+        "Tema saúde: Pode cobrar saúde mental de jovens, acesso ao SUS, estigmas relacionados a doenças.",
+        "Tema sociedade: Pode cobrar envelhecimento populacional, direitos de pessoas com deficiência, combate ao racismo."
+      ],
+      "dicas": [
+        "Leia o recorte temático com atenção - não escreva sobre 'educação' se o tema é 'educação de jovens e adultos'.",
+        "Use os textos motivadores como ponto de partida, não como fonte única.",
+        "Tenha repertório para diferentes áreas: saúde, educação, meio ambiente, tecnologia, direitos."
+      ],
+      "questoes": [
+        {
+          "id": "q167-1",
+          "enunciado": "Qual foi o tema da redação do ENEM 2022?",
+          "alternativas": {
+            "A": "Democratização do acesso ao cinema",
+            "B": "Desafios para a valorização de comunidades e povos tradicionais",
+            "C": "Manipulação do comportamento pelo controle de dados",
+            "D": "O estigma associado às doenças mentais",
+            "E": "Invisibilidade e registro civil"
+          },
+          "correta": "B",
+          "explicacao": "Em 2022, o ENEM cobrou 'Desafios para a valorização de comunidades e povos tradicionais no Brasil', abordando questões de identidade, cultura e direitos desses grupos.",
+          "dificuldade": "facil",
+          "tags": ["temas ENEM", "atualidades", "2022"]
+        },
+        {
+          "id": "q167-2",
+          "enunciado": "Os temas da redação do ENEM geralmente:",
+          "alternativas": {
+            "A": "São muito polêmicos e dividem opiniões 50/50",
+            "B": "Abordam questões sociais brasileiras com viés de direitos humanos",
+            "C": "Pedem opinião pessoal sem necessidade de argumentação",
+            "D": "São sempre sobre tecnologia",
+            "E": "Exigem conhecimento técnico específico de uma área"
+          },
+          "correta": "B",
+          "explicacao": "O ENEM escolhe temas de relevância social brasileira que permitam discussão crítica e propostas que respeitem direitos humanos. Evita temas binários ou muito técnicos.",
+          "dificuldade": "medio",
+          "tags": ["temas ENEM", "características"]
+        },
+        {
+          "id": "q167-3",
+          "enunciado": "Ao se preparar para possíveis temas, o candidato deve:",
+          "alternativas": {
+            "A": "Tentar adivinhar o tema exato que cairá",
+            "B": "Estudar apenas um tema em profundidade",
+            "C": "Construir repertório variado e acompanhar atualidades",
+            "D": "Ignorar temas de anos anteriores",
+            "E": "Decorar redações prontas para copiar"
+          },
+          "correta": "C",
+          "explicacao": "A melhor preparação é ter repertório diversificado (filosofia, sociologia, dados) e acompanhar atualidades, relacionando-as com conceitos teóricos. Não é possível prever o tema exato.",
+          "dificuldade": "facil",
+          "tags": ["preparação", "repertório", "atualidades"]
+        },
+        {
+          "id": "q167-4",
+          "enunciado": "Os textos motivadores da prova de redação servem para:",
+          "alternativas": {
+            "A": "Serem copiados integralmente na redação",
+            "B": "Contextualizar o tema e oferecer pontos de partida para reflexão",
+            "C": "Substituir a necessidade de repertório próprio",
+            "D": "Serem ignorados pelo candidato",
+            "E": "Fornecer a tese que o candidato deve usar"
+          },
+          "correta": "B",
+          "explicacao": "Os textos motivadores contextualizam o tema e oferecem diferentes perspectivas como ponto de partida. Não devem ser copiados (anula ou reduz nota) nem substituem repertório próprio.",
+          "dificuldade": "facil",
+          "tags": ["redação", "textos motivadores", "preparação"]
+        },
+        {
+          "id": "q167-5",
+          "enunciado": "Um tema sobre 'educação' no ENEM provavelmente terá:",
+          "alternativas": {
+            "A": "Abordagem genérica sem recorte específico",
+            "B": "Recorte específico como 'evasão escolar' ou 'educação inclusiva'",
+            "C": "Foco apenas em educação superior",
+            "D": "Pedido de relato pessoal sobre experiência escolar",
+            "E": "Tema internacional sem relação com o Brasil"
+          },
+          "correta": "B",
+          "explicacao": "O ENEM sempre faz um recorte específico dentro de temas amplos. Não será 'educação' em geral, mas aspectos específicos como inclusão, tecnologia educacional, EJA, evasão, etc.",
+          "dificuldade": "medio",
+          "tags": ["temas ENEM", "recorte temático"]
+        }
+      ]
+    },
+    {
+      "id": "m168",
+      "titulo": "Erros Comuns e Como Evitá-los",
+      "resumo": "Identifique e evite os erros mais frequentes que prejudicam a nota.",
+      "topicos": [
+        {
+          "titulo": "Erros na Estrutura e Tipo Textual",
+          "conteudo": "Erros que comprometem o tipo textual: narrar em vez de dissertar, usar primeira pessoa ('eu acho'), fazer texto em formato de carta, usar versos/estrofes. Erros estruturais: não fazer parágrafos distintos, introdução sem tese, desenvolvimento sem argumentação, conclusão sem proposta de intervenção. Texto muito curto (menos de 7 linhas = zero) ou muito longo (ultrapassa limite = anulação do excedente). Falta de progressão: repetir a mesma ideia em todos os parágrafos."
+        },
+        {
+          "titulo": "Erros de Língua Portuguesa",
+          "conteudo": "Ortografia: palavras erradas, falta de acentuação. Concordância: 'os brasileiros é afetado', 'foi implementado políticas'. Regência: 'a medida que' (certo: 'à medida que'), 'visar o lucro' (certo: 'visar ao lucro'). Pontuação: vírgula separando sujeito de verbo, falta de vírgulas em apostos. Crase: 'a partir', 'aquele' com crase indevida. Vocabulário: gírias ('tipo', 'né'), estrangeirismos desnecessários, repetições ('coisa', 'muito'). Oralidade: 'a gente vai', 'pra', 'né'."
+        },
+        {
+          "titulo": "Erros de Argumentação e Conteúdo",
+          "conteudo": "Tangenciamento: abordar o tema superficialmente. Fuga: não abordar o tema (nota zero). Senso comum: 'a educação é a base de tudo' sem desenvolver. Generalização: 'todos os políticos são corruptos'. Repertório decorativo: citação sem conexão com o argumento. Proposta incompleta: sem agente, modo ou finalidade. Proposta genérica: 'o governo deve agir'. Proposta que viola direitos humanos: pena de morte, tortura, discriminação (nota zero). Contradição: defender posições opostas no mesmo texto."
+        }
+      ],
+      "exemplos": [
+        "ERRADO: 'Eu acho que a violência é um problema.' CERTO: 'É inegável que a violência constitui um problema social grave.'",
+        "ERRADO: 'A medida que o tempo passa...' CERTO: 'À medida que o tempo passa...'",
+        "ERRADO: 'O governo deve resolver.' CERTO: 'O Ministério da Educação deve criar campanhas nas escolas, por meio de palestras mensais, para conscientizar estudantes.'"
+      ],
+      "dicas": [
+        "Releia sua redação buscando especificamente erros de concordância e acentuação.",
+        "Evite começar frases com 'Isso', 'Essa questão' - seja mais específico.",
+        "Se não tiver certeza de uma palavra, use um sinônimo que você domina."
+      ],
+      "questoes": [
+        {
+          "id": "q168-1",
+          "enunciado": "Qual frase apresenta erro de concordância verbal?",
+          "alternativas": {
+            "A": "'Os jovens brasileiros enfrentam muitos desafios.'",
+            "B": "'A maioria dos estudantes dedicam-se aos estudos.'",
+            "C": "'Os problemas sociais afetam a população.'",
+            "D": "'As políticas públicas são necessárias.'",
+            "E": "'O governo implementou novas medidas.'"
+          },
+          "correta": "B",
+          "explicacao": "Com 'a maioria de', o verbo pode concordar com 'maioria' (singular) ou com o termo plural, mas 'dedicam-se' está no plural concordando só com 'estudantes'. O mais recomendado seria 'dedica-se' ou reformular.",
+          "dificuldade": "medio",
+          "tags": ["redação", "concordância", "gramática"]
+        },
+        {
+          "id": "q168-2",
+          "enunciado": "Usar a expressão 'a gente vai resolver' na redação é problemático porque:",
+          "alternativas": {
+            "A": "Está gramaticalmente incorreto",
+            "B": "É marca de oralidade inadequada para texto formal",
+            "C": "É uma generalização",
+            "D": "Falta pontuação",
+            "E": "Tem estrangeirismo"
+          },
+          "correta": "B",
+          "explicacao": "'A gente' é marca de oralidade/informalidade. Na redação formal do ENEM, deve-se preferir 'nós' ou construções impessoais como 'é necessário que se resolva'.",
+          "dificuldade": "facil",
+          "tags": ["redação", "oralidade", "formalidade"]
+        },
+        {
+          "id": "q168-3",
+          "enunciado": "Uma proposta de intervenção que sugere 'pena de morte para corruptos':",
+          "alternativas": {
+            "A": "É válida se bem argumentada",
+            "B": "Pode receber nota máxima na Competência 5",
+            "C": "Viola direitos humanos e pode zerar a redação",
+            "D": "É considerada criativa pela banca",
+            "E": "É adequada se mencionar a Constituição"
+          },
+          "correta": "C",
+          "explicacao": "Pena de morte viola os direitos humanos e a Constituição brasileira. Propostas que desrespeitem direitos humanos resultam em nota zero na redação inteira, não apenas na Competência 5.",
+          "dificuldade": "facil",
+          "tags": ["redação", "direitos humanos", "proposta"]
+        },
+        {
+          "id": "q168-4",
+          "enunciado": "Tangenciar o tema significa:",
+          "alternativas": {
+            "A": "Abordar o tema com profundidade",
+            "B": "Fugir completamente do tema",
+            "C": "Abordar o tema superficialmente, sem desenvolvê-lo adequadamente",
+            "D": "Copiar os textos motivadores",
+            "E": "Usar muitos exemplos sobre o tema"
+          },
+          "correta": "C",
+          "explicacao": "Tangenciar é 'tocar de leve' no tema, abordando-o superficialmente ou focando em aspectos periféricos. Não é fuga total (que zera), mas reduz significativamente a nota na Competência 2.",
+          "dificuldade": "medio",
+          "tags": ["redação", "tangenciamento", "tema"]
+        },
+        {
+          "id": "q168-5",
+          "enunciado": "Qual erro torna a redação do ENEM nula (nota zero)?",
+          "alternativas": {
+            "A": "Três erros de ortografia",
+            "B": "Texto com menos de 7 linhas",
+            "C": "Proposta de intervenção incompleta",
+            "D": "Uso de primeira pessoa",
+            "E": "Falta de conectivos"
+          },
+          "correta": "B",
+          "explicacao": "Texto com menos de 7 linhas, fuga ao tema, não atendimento ao tipo textual, texto em branco, impropérios, parte deliberadamente desconectada do tema e desrespeito aos direitos humanos resultam em nota zero.",
+          "dificuldade": "medio",
+          "tags": ["redação", "nota zero", "anulação"]
+        }
+      ]
+    },
+    {
+      "id": "m169",
+      "titulo": "Prática de Escrita e Revisão",
+      "resumo": "Desenvolva habilidades de escrita através de prática sistemática e revisão eficiente.",
+      "topicos": [
+        {
+          "titulo": "Processo de Escrita",
+          "conteudo": "1) Leitura da proposta: entenda o tema, o recorte e os textos motivadores (5 min). 2) Planejamento: defina tese e 2-3 argumentos, esboce a estrutura (10 min). 3) Rascunho: escreva a redação completa no rascunho (40 min). 4) Revisão: verifique erros, clareza e completude (10 min). 5) Passar a limpo: transcreva para a folha oficial com caligrafia legível (25 min). Tempo total: cerca de 90 minutos. Não comece a escrever sem planejar - o esboço evita perda de foco."
+        },
+        {
+          "titulo": "Checklist de Revisão",
+          "conteudo": "ESTRUTURA: Introdução com tese? Cada parágrafo com um argumento? Conclusão com proposta de intervenção completa? ARGUMENTAÇÃO: Os argumentos sustentam a tese? Há repertório sociocultural? Os exemplos comprovam os argumentos? COESÃO: Há conectivos entre parágrafos e ideias? Evitei repetições desnecessárias? LÍNGUA: Verifiquei concordância, regência, ortografia, acentuação? Evitei oralidade e gírias? PROPOSTA: Tem ação, agente, modo, finalidade e detalhamento?"
+        },
+        {
+          "titulo": "Dicas para o Dia da Prova",
+          "conteudo": "Administre o tempo: reserve 90 minutos para redação, deixando tempo para outras questões. Comece pelo que sabe: se o tema for difícil, escreva o que conseguir e melhore depois. Caligrafia legível: texto ilegível pode ser prejudicado. Use caneta preta. Respeite margens: não escreva fora do espaço delimitado. Não deixe em branco: mesmo uma redação fraca vale mais que zero. Conte as linhas: mínimo 7, ideal 25-30. Confie na preparação: use o repertório que estudou."
+        }
+      ],
+      "exemplos": [
+        "Esboço: Tema: Saúde mental. Tese: Problema grave negligenciado. Arg1: Estigma social. Arg2: Falta de políticas públicas. Proposta: MEC + campanhas + psicólogos nas escolas.",
+        "Revisão de concordância: 'As pessoas é afetada' → 'As pessoas são afetadas'",
+        "Melhoria de proposta: 'O governo deve agir' → 'O Ministério da Saúde deve implementar CAPs em todos os municípios, por meio de parceria com prefeituras, garantindo atendimento psicológico gratuito.'"
+      ],
+      "dicas": [
+        "Pratique cronometrando: 90 minutos para simular a prova.",
+        "Escreva pelo menos uma redação por semana durante a preparação.",
+        "Peça feedback: professores, colegas ou correções online podem apontar pontos cegos."
+      ],
+      "questoes": [
+        {
+          "id": "q169-1",
+          "enunciado": "Qual a ordem correta das etapas de escrita da redação?",
+          "alternativas": {
+            "A": "Escrever, planejar, revisar, passar a limpo",
+            "B": "Ler proposta, planejar, rascunho, revisar, passar a limpo",
+            "C": "Passar a limpo, rascunho, revisar, planejar",
+            "D": "Planejar, passar a limpo, revisar, escrever",
+            "E": "Revisar, ler proposta, escrever, planejar"
+          },
+          "correta": "B",
+          "explicacao": "A ordem correta é: ler e entender a proposta, planejar (tese e argumentos), escrever o rascunho, revisar e depois passar a limpo para a folha oficial.",
+          "dificuldade": "facil",
+          "tags": ["redação", "processo de escrita", "etapas"]
+        },
+        {
+          "id": "q169-2",
+          "enunciado": "Por que é importante fazer um esboço antes de escrever?",
+          "alternativas": {
+            "A": "Para preencher mais linhas",
+            "B": "Para organizar ideias e evitar perda de foco",
+            "C": "Porque a banca exige entrega do esboço",
+            "D": "Para copiar os textos motivadores",
+            "E": "Para decorar citações"
+          },
+          "correta": "B",
+          "explicacao": "O esboço organiza as ideias antes de escrever, evita que o texto perca o foco, garante que a estrutura esteja completa e que os argumentos sejam coerentes com a tese.",
+          "dificuldade": "facil",
+          "tags": ["redação", "planejamento", "esboço"]
+        },
+        {
+          "id": "q169-3",
+          "enunciado": "Na revisão, deve-se verificar prioritariamente:",
+          "alternativas": {
+            "A": "Se a caligrafia está bonita",
+            "B": "Se o texto tem exatamente 30 linhas",
+            "C": "Estrutura, argumentação, coesão, língua e proposta de intervenção",
+            "D": "Se todas as palavras têm mais de 5 letras",
+            "E": "Se há rimas no texto"
+          },
+          "correta": "C",
+          "explicacao": "A revisão deve verificar os elementos avaliados pelas 5 competências: norma culta, compreensão do tema e repertório, argumentação, coesão e proposta de intervenção.",
+          "dificuldade": "facil",
+          "tags": ["redação", "revisão", "checklist"]
+        },
+        {
+          "id": "q169-4",
+          "enunciado": "Quanto tempo deve ser reservado para a redação na prova do ENEM?",
+          "alternativas": {
+            "A": "30 minutos",
+            "B": "60 minutos",
+            "C": "Aproximadamente 90 minutos",
+            "D": "Todo o tempo da prova",
+            "E": "15 minutos"
+          },
+          "correta": "C",
+          "explicacao": "Recomenda-se cerca de 90 minutos para a redação: 15 para ler e planejar, 50 para escrever, 25 para revisar e passar a limpo. Isso deixa tempo para as demais questões.",
+          "dificuldade": "medio",
+          "tags": ["redação", "gestão de tempo", "prova"]
+        },
+        {
+          "id": "q169-5",
+          "enunciado": "Se um candidato não sabe nada sobre o tema proposto, ele deve:",
+          "alternativas": {
+            "A": "Deixar a redação em branco",
+            "B": "Copiar integralmente os textos motivadores",
+            "C": "Usar o repertório que possui e os textos motivadores como base",
+            "D": "Escrever sobre outro tema que domine",
+            "E": "Fazer apenas a introdução"
+          },
+          "correta": "C",
+          "explicacao": "Mesmo sem conhecimento profundo, o candidato deve usar os textos motivadores como base, aplicar repertório genérico que possua e construir argumentos a partir do que conseguir extrair da proposta. Nunca deixar em branco.",
+          "dificuldade": "medio",
+          "tags": ["redação", "estratégia", "dificuldades"]
+        }
+      ]
+    },
+    {
+      "id": "m170",
+      "titulo": "Modelo de Redação Nota 1000",
+      "resumo": "Analise a estrutura de uma redação exemplar e entenda o que a banca valoriza.",
+      "topicos": [
+        {
+          "titulo": "Análise de Redação Modelo",
+          "conteudo": "Uma redação nota 1000 apresenta: Introdução impactante com repertório, contextualização precisa e tese clara. Desenvolvimento com argumentos bem fundamentados, exemplificados e conectados à tese. Cada parágrafo com tópico frasal, desenvolvimento e fechamento. Uso variado e adequado de conectivos. Vocabulário rico sem rebuscamento artificial. Conclusão que retoma, sintetiza e apresenta proposta completa (5 elementos). Zero erros gramaticais ou pouquíssimos. Respeito total aos direitos humanos e à estrutura dissertativo-argumentativa."
+        },
+        {
+          "titulo": "Elementos que Diferenciam",
+          "conteudo": "O que eleva uma redação de 900 para 1000: Repertório diversificado e bem integrado (não decorativo). Argumentação original e aprofundada (não senso comum). Proposta de intervenção muito detalhada e específica. Coesão sofisticada com conectivos variados. Ausência de erros gramaticais. Projeto de texto evidente (organização clara e intencional). Autoria: a voz do autor é percebida, não parece texto genérico. Contextualização que demonstra conhecimento real sobre o tema."
+        },
+        {
+          "titulo": "Exercício: Construindo sua Redação Nota 1000",
+          "conteudo": "Passo 1: Escolha um tema atual e defina uma tese clara e específica. Passo 2: Liste 2-3 argumentos que sustentem essa tese. Passo 3: Para cada argumento, identifique um repertório sociocultural (dado, citação, referência). Passo 4: Escreva a introdução com contextualização + tese. Passo 5: Desenvolva cada argumento em um parágrafo (tópico frasal + fundamentação + exemplo). Passo 6: Escreva a conclusão com síntese + proposta de intervenção completa (5 elementos). Passo 7: Revise usando o checklist das 5 competências."
+        }
+      ],
+      "exemplos": [
+        "Introdução modelo: 'O filósofo Immanuel Kant afirmou que o ser humano é aquilo que a educação faz dele. Entretanto, no Brasil contemporâneo, a precarização do ensino público perpetua desigualdades históricas, impedindo a mobilidade social de milhões de jovens. Nesse contexto, é fundamental analisar as causas estruturais desse problema e propor soluções efetivas.'",
+        "Desenvolvimento modelo: 'Em primeiro lugar, é necessário compreender as raízes históricas da desigualdade educacional brasileira. Segundo o sociólogo Jessé Souza, a estrutura social do país foi construída sobre a escravidão, que relegou a população negra e pobre à exclusão sistemática. Essa herança se manifesta até hoje: dados do IBGE mostram que escolas de periferias têm infraestrutura 60% inferior às de bairros nobres. Dessa forma, evidencia-se que o problema transcende questões pontuais, exigindo intervenções estruturais.'",
+        "Proposta modelo: 'Portanto, cabe ao Ministério da Educação [AGENTE] desenvolver um programa de equalização de infraestrutura escolar [AÇÃO], por meio de parcerias público-privadas e direcionamento do FUNDEB [MODO], com o objetivo de garantir condições de ensino equivalentes em todas as escolas públicas do país [FINALIDADE], priorizando regiões com IDH mais baixo e estabelecendo metas quinquenais de melhoria monitoradas por índices de qualidade [DETALHAMENTO].'"
+      ],
+      "dicas": [
+        "Leia redações nota 1000 de anos anteriores - o INEP divulga exemplos.",
+        "Não tente ser 'diferente' com estruturas experimentais - domine o básico primeiro.",
+        "A nota 1000 vem da combinação: estrutura perfeita + conteúdo excelente + zero erros."
+      ],
+      "questoes": [
+        {
+          "id": "q170-1",
+          "enunciado": "Uma redação nota 1000 no ENEM necessariamente apresenta:",
+          "alternativas": {
+            "A": "Vocabulário extremamente rebuscado e difícil",
+            "B": "Estrutura perfeita, argumentação sólida, repertório e proposta completa",
+            "C": "Mais de 40 linhas de texto",
+            "D": "Críticas ao governo e às instituições",
+            "E": "Citações de pelo menos 10 autores diferentes"
+          },
+          "correta": "B",
+          "explicacao": "A nota 1000 exige excelência em todas as competências: domínio da norma culta, compreensão do tema com repertório, argumentação consistente, coesão adequada e proposta de intervenção completa.",
+          "dificuldade": "facil",
+          "tags": ["redação", "nota 1000", "características"]
+        },
+        {
+          "id": "q170-2",
+          "enunciado": "O 'projeto de texto' em uma redação refere-se a:",
+          "alternativas": {
+            "A": "A caligrafia do candidato",
+            "B": "A organização clara e intencional da estrutura argumentativa",
+            "C": "O número de linhas escritas",
+            "D": "A quantidade de citações usadas",
+            "E": "O tempo gasto para escrever"
+          },
+          "correta": "B",
+          "explicacao": "Projeto de texto é a organização intencional da redação: a tese é clara, os argumentos se conectam a ela, há progressão lógica, a proposta decorre dos argumentos. Demonstra planejamento, não escrita aleatória.",
+          "dificuldade": "medio",
+          "tags": ["redação", "projeto de texto", "organização"]
+        },
+        {
+          "id": "q170-3",
+          "enunciado": "Sobre o repertório em redações nota 1000:",
+          "alternativas": {
+            "A": "Deve ser usado mesmo sem conexão com o tema",
+            "B": "Quanto mais citações, melhor a nota",
+            "C": "Deve ser diversificado, pertinente e bem integrado à argumentação",
+            "D": "Só vale se for de filósofos gregos",
+            "E": "Substitui a necessidade de argumentação própria"
+          },
+          "correta": "C",
+          "explicacao": "O repertório em redações excelentes é diversificado (filosofia, dados, obras), pertinente ao tema e bem integrado ao texto - serve para fundamentar argumentos, não como decoração.",
+          "dificuldade": "medio",
+          "tags": ["redação", "repertório", "nota 1000"]
+        },
+        {
+          "id": "q170-4",
+          "enunciado": "A 'autoria' na redação significa:",
+          "alternativas": {
+            "A": "Assinar o texto com nome completo",
+            "B": "Copiar ideias de outros autores",
+            "C": "Apresentar posicionamento próprio e voz autoral no texto",
+            "D": "Usar apenas primeira pessoa do singular",
+            "E": "Evitar qualquer citação"
+          },
+          "correta": "C",
+          "explicacao": "Autoria é demonstrar posicionamento próprio, análise crítica e voz autoral. O texto não deve parecer genérico ou copiado, mas refletir a perspectiva e argumentação do candidato.",
+          "dificuldade": "medio",
+          "tags": ["redação", "autoria", "posicionamento"]
+        },
+        {
+          "id": "q170-5",
+          "enunciado": "Para alcançar nota 1000 na redação do ENEM, o candidato deve:",
+          "alternativas": {
+            "A": "Ter sorte com o corretor",
+            "B": "Preparar-se sistematicamente, praticando escrita e construindo repertório",
+            "C": "Copiar modelos de redações anteriores",
+            "D": "Escrever o máximo de linhas possível",
+            "E": "Ignorar a proposta de intervenção para focar nos argumentos"
+          },
+          "correta": "B",
+          "explicacao": "A nota 1000 é resultado de preparação sistemática: praticar escrita regularmente, construir repertório diversificado, estudar a estrutura exigida, revisar textos e aprender com feedbacks.",
+          "dificuldade": "facil",
+          "tags": ["redação", "preparação", "nota 1000"]
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import { useRouter, useParams } from 'next/navigation';
 import { Questao } from '@/lib/types';
 import { SimuladoConfig, salvarSimuladoEmAndamento, carregarSimuladoEmAndamento } from '@/lib/questions';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 export default function SimuladoPlayerPage() {
   const router = useRouter();
@@ -217,6 +218,7 @@ export default function SimuladoPlayerPage() {
         paddingLeft: '16px',
         paddingRight: '16px'
       }}>
+      <FloatingBackButton />
         <FloatingNav />
 
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>

@@ -1,0 +1,109 @@
+{
+  "cadernos": [
+    {
+      "id": "ling-1",
+      "slug": "interpretacao-texto",
+      "categoria": "linguagens",
+      "titulo": "Interpretacao de Texto",
+      "disponivel": true
+    },
+    {
+      "id": "ling-2",
+      "slug": "generos-textuais",
+      "categoria": "linguagens",
+      "titulo": "Generos Textuais",
+      "disponivel": false
+    },
+    {
+      "id": "ling-3",
+      "slug": "literatura-brasileira",
+      "categoria": "linguagens",
+      "titulo": "Literatura Brasileira",
+      "disponivel": false
+    },
+    {
+      "id": "hum-1",
+      "slug": "brasil-colonia",
+      "categoria": "humanas",
+      "titulo": "Brasil Colonia",
+      "disponivel": false
+    },
+    {
+      "id": "hum-2",
+      "slug": "brasil-imperio",
+      "categoria": "humanas",
+      "titulo": "Brasil Imperio",
+      "disponivel": false
+    },
+    {
+      "id": "hum-3",
+      "slug": "geografia-brasil",
+      "categoria": "humanas",
+      "titulo": "Geografia do Brasil",
+      "disponivel": false
+    },
+    {
+      "id": "nat-1",
+      "slug": "ecologia",
+      "categoria": "natureza",
+      "titulo": "Ecologia",
+      "disponivel": false
+    },
+    {
+      "id": "nat-2",
+      "slug": "quimica-organica",
+      "categoria": "natureza",
+      "titulo": "Quimica Organica",
+      "disponivel": false
+    },
+    {
+      "id": "nat-3",
+      "slug": "mecanica",
+      "categoria": "natureza",
+      "titulo": "Mecanica",
+      "disponivel": false
+    },
+    {
+      "id": "mat-1",
+      "slug": "funcoes",
+      "categoria": "matematica",
+      "titulo": "Funcoes - Fundamentos",
+      "disponivel": true
+    },
+    {
+      "id": "mat-2",
+      "slug": "geometria-plana",
+      "categoria": "matematica",
+      "titulo": "Geometria Plana",
+      "disponivel": false
+    },
+    {
+      "id": "mat-3",
+      "slug": "porcentagem-juros",
+      "categoria": "matematica",
+      "titulo": "Porcentagem e Juros",
+      "disponivel": false
+    },
+    {
+      "id": "red-1",
+      "slug": "estrutura-dissertativa",
+      "categoria": "redacao",
+      "titulo": "Estrutura Dissertativa",
+      "disponivel": true
+    },
+    {
+      "id": "red-2",
+      "slug": "repertorios-socioculturais",
+      "categoria": "redacao",
+      "titulo": "Repertorios Socioculturais",
+      "disponivel": false
+    },
+    {
+      "id": "red-3",
+      "slug": "proposta-intervencao",
+      "categoria": "redacao",
+      "titulo": "Proposta de Intervencao",
+      "disponivel": false
+    }
+  ]
+}

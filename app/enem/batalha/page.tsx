@@ -2,802 +2,404 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
 import FloatingNav from '@/components/FloatingNav';
+import FPCoin from '@/components/FPCoin';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
-interface Questao {
-  id: string;
-  enunciado: string;
-  alternativas: string[];
-  correta: number;
-  disciplina: string;
-}
+type BattleMode = 'classic' | 'turbo' | 'marathon';
 
-interface Oponente {
-  id: string;
-  nome: string;
-  pontosFP: number;
-  liga: string;
+interface BattleStats {
   vitorias: number;
   derrotas: number;
+  empates: number;
+  winStreak: number;
 }
 
-type BattleState = 'menu' | 'buscando' | 'batalha' | 'resultado';
-
-const mockOponentes: Oponente[] = [
-  { id: '1', nome: 'Ana Silva', pontosFP: 3200, liga: 'Ouro', vitorias: 45, derrotas: 23 },
-  { id: '2', nome: 'Pedro Costa', pontosFP: 2800, liga: 'Ouro', vitorias: 38, derrotas: 31 },
-  { id: '3', nome: 'Maria Santos', pontosFP: 4100, liga: 'Platina', vitorias: 67, derrotas: 19 },
-  { id: '4', nome: 'Lucas Lima', pontosFP: 2500, liga: 'Prata', vitorias: 28, derrotas: 35 },
-];
-
-const questoesBatalha: Questao[] = [
-  {
-    id: '1',
-    enunciado: 'Se f(x) = 2x + 3, qual e o valor de f(5)?',
-    alternativas: ['10', '13', '15', '8'],
-    correta: 1,
-    disciplina: 'Matematica',
+const MODE_CONFIG = {
+  classic: {
+    name: 'Classico',
+    icon: '⚔️',
+    description: '5 questoes, 30s cada',
+    color: '#22c55e',
+    questions: 5,
+    time: 30,
   },
-  {
-    id: '2',
-    enunciado: 'Qual e o principal gas responsavel pelo efeito estufa?',
-    alternativas: ['Oxigenio', 'Nitrogenio', 'Dioxido de Carbono', 'Hidrogenio'],
-    correta: 2,
-    disciplina: 'Ciencias da Natureza',
+  turbo: {
+    name: 'Turbo',
+    icon: '⚡',
+    description: '3 questoes, 15s cada',
+    color: '#fbbf24',
+    questions: 3,
+    time: 15,
   },
-  {
-    id: '3',
-    enunciado: 'Quem foi o primeiro presidente do Brasil?',
-    alternativas: ['Getulio Vargas', 'Deodoro da Fonseca', 'Floriano Peixoto', 'Prudente de Morais'],
-    correta: 1,
-    disciplina: 'Historia',
+  marathon: {
+    name: 'Maratona',
+    icon: '🏃',
+    description: '10 questoes, 45s cada',
+    color: '#3b82f6',
+    questions: 10,
+    time: 45,
   },
-  {
-    id: '4',
-    enunciado: 'Qual figura de linguagem consiste em atribuir caracteristicas humanas a seres nao humanos?',
-    alternativas: ['Metafora', 'Personificacao', 'Hiperbole', 'Ironia'],
-    correta: 1,
-    disciplina: 'Linguagens',
-  },
-  {
-    id: '5',
-    enunciado: 'Qual e a formula da velocidade media?',
-    alternativas: ['v = d/t', 'v = d.t', 'v = t/d', 'v = d + t'],
-    correta: 0,
-    disciplina: 'Fisica',
-  },
-];
+};
 
 export default function BatalhaPage() {
   const router = useRouter();
-  const [battleState, setBattleState] = useState<BattleState>('menu');
-  const [oponente, setOponente] = useState<Oponente | null>(null);
-  const [questaoAtual, setQuestaoAtual] = useState(0);
-  const [minhasRespostas, setMinhasRespostas] = useState<(number | null)[]>([]);
-  const [oponenteRespostas, setOponenteRespostas] = useState<(number | null)[]>([]);
-  const [meuTempo, setMeuTempo] = useState<number[]>([]);
-  const [oponenteTempo, setOponenteTempo] = useState<number[]>([]);
-  const [tempoQuestao, setTempoQuestao] = useState(15);
-  const [respondeu, setRespondeu] = useState(false);
-  const [oponenteRespondeu, setOponenteRespondeu] = useState(false);
-  const [meusStats, setMeusStats] = useState({ vitorias: 0, derrotas: 0, empates: 0 });
+  const [playerId, setPlayerId] = useState('');
+  const [playerName, setPlayerName] = useState('');
+  const [codigoSala, setCodigoSala] = useState('');
+  const [selectedMode, setSelectedMode] = useState<BattleMode>('classic');
+  const [isCreating, setIsCreating] = useState(false);
+  const [isJoining, setIsJoining] = useState(false);
+  const [showModeSelect, setShowModeSelect] = useState(false);
+  const [stats, setStats] = useState<BattleStats>({ vitorias: 0, derrotas: 0, empates: 0, winStreak: 0 });
+  const [error, setError] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    // Carregar stats
+    // Load player ID
+    let id = localStorage.getItem('enem-pro-player-id');
+    if (!id) {
+      id = `player_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+      localStorage.setItem('enem-pro-player-id', id);
+    }
+    setPlayerId(id);
+
+    // Load player name
+    const name = localStorage.getItem('enem-pro-player-name') || '';
+    setPlayerName(name);
+
+    // Load stats
     const statsLocal = localStorage.getItem('batalha_stats');
     if (statsLocal) {
-      setMeusStats(JSON.parse(statsLocal));
+      setStats(JSON.parse(statsLocal));
     }
   }, []);
 
-  useEffect(() => {
-    if (battleState === 'batalha' && !respondeu && tempoQuestao > 0) {
-      const timer = setInterval(() => {
-        setTempoQuestao((prev) => prev - 1);
-      }, 1000);
-      return () => clearInterval(timer);
-    } else if (tempoQuestao === 0 && !respondeu) {
-      // Tempo esgotado, resposta nula
-      responder(-1);
-    }
-  }, [battleState, tempoQuestao, respondeu]);
-
-  useEffect(() => {
-    // Simular resposta do oponente
-    if (battleState === 'batalha' && !oponenteRespondeu) {
-      const tempoResposta = Math.random() * 8 + 3; // 3-11 segundos
-      const timer = setTimeout(() => {
-        const acertou = Math.random() > 0.4; // 60% de chance de acertar
-        const resposta = acertou ? questoesBatalha[questaoAtual].correta : (questoesBatalha[questaoAtual].correta + 1) % 4;
-        setOponenteRespostas((prev) => [...prev, resposta]);
-        setOponenteTempo((prev) => [...prev, Math.round(tempoResposta)]);
-        setOponenteRespondeu(true);
-      }, tempoResposta * 1000);
-      return () => clearTimeout(timer);
-    }
-  }, [battleState, questaoAtual, oponenteRespondeu]);
-
-  useEffect(() => {
-    // Passar para proxima questao quando ambos responderem
-    if (respondeu && oponenteRespondeu) {
-      const timer = setTimeout(() => {
-        if (questaoAtual < questoesBatalha.length - 1) {
-          setQuestaoAtual((prev) => prev + 1);
-          setRespondeu(false);
-          setOponenteRespondeu(false);
-          setTempoQuestao(15);
-        } else {
-          finalizarBatalha();
-        }
-      }, 2000);
-      return () => clearTimeout(timer);
-    }
-  }, [respondeu, oponenteRespondeu, questaoAtual]);
-
-  const buscarOponente = () => {
-    setBattleState('buscando');
-    // Simular busca
-    setTimeout(() => {
-      const oponenteAleatorio = mockOponentes[Math.floor(Math.random() * mockOponentes.length)];
-      setOponente(oponenteAleatorio);
-      setTimeout(() => {
-        setBattleState('batalha');
-        setQuestaoAtual(0);
-        setMinhasRespostas([]);
-        setOponenteRespostas([]);
-        setMeuTempo([]);
-        setOponenteTempo([]);
-        setTempoQuestao(15);
-        setRespondeu(false);
-        setOponenteRespondeu(false);
-      }, 2000);
-    }, 3000);
-  };
-
-  const responder = (alternativa: number) => {
-    if (respondeu) return;
-    setMinhasRespostas((prev) => [...prev, alternativa]);
-    setMeuTempo((prev) => [...prev, 15 - tempoQuestao]);
-    setRespondeu(true);
-  };
-
-  const finalizarBatalha = () => {
-    setBattleState('resultado');
-
-    // Calcular resultado
-    const meusAcertos = minhasRespostas.filter((r, i) => r === questoesBatalha[i].correta).length;
-    const oponenteAcertos = oponenteRespostas.filter((r, i) => r === questoesBatalha[i].correta).length;
-
-    let novoStats = { ...meusStats };
-    let fpGanho = 0;
-
-    if (meusAcertos > oponenteAcertos) {
-      novoStats.vitorias++;
-      fpGanho = 50 + meusAcertos * 10;
-    } else if (meusAcertos < oponenteAcertos) {
-      novoStats.derrotas++;
-      fpGanho = meusAcertos * 5; // Menor recompensa por derrota
-    } else {
-      novoStats.empates++;
-      fpGanho = 25 + meusAcertos * 7;
+  const criarSala = async (mode: BattleMode) => {
+    if (!playerName.trim()) {
+      setError('Digite seu nome primeiro');
+      return;
     }
 
-    setMeusStats(novoStats);
-    localStorage.setItem('batalha_stats', JSON.stringify(novoStats));
+    setIsCreating(true);
+    setError(null);
+    localStorage.setItem('enem-pro-player-name', playerName);
 
-    // Adicionar FP
-    const userLocal = localStorage.getItem('user');
-    if (userLocal) {
-      const user = JSON.parse(userLocal);
-      user.pontosFP = (user.pontosFP || 0) + fpGanho;
-      localStorage.setItem('user', JSON.stringify(user));
+    try {
+      const res = await fetch('/api/battles', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'create',
+          playerId,
+          playerName,
+          mode,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success && data.roomCode) {
+        router.push(`/enem/batalha/sala/${data.roomCode}`);
+      } else {
+        setError(data.error || 'Erro ao criar sala');
+      }
+    } catch (err) {
+      setError('Erro de conexao');
+    } finally {
+      setIsCreating(false);
+      setShowModeSelect(false);
     }
   };
 
-  const calcularResultado = () => {
-    const meusAcertos = minhasRespostas.filter((r, i) => r === questoesBatalha[i].correta).length;
-    const oponenteAcertos = oponenteRespostas.filter((r, i) => r === questoesBatalha[i].correta).length;
-    const meuTempoTotal = meuTempo.reduce((a, b) => a + b, 0);
-    const oponenteTempoTotal = oponenteTempo.reduce((a, b) => a + b, 0);
-
-    let resultado: 'vitoria' | 'derrota' | 'empate';
-    let fpGanho = 0;
-
-    if (meusAcertos > oponenteAcertos) {
-      resultado = 'vitoria';
-      fpGanho = 50 + meusAcertos * 10;
-    } else if (meusAcertos < oponenteAcertos) {
-      resultado = 'derrota';
-      fpGanho = meusAcertos * 5;
-    } else {
-      resultado = 'empate';
-      fpGanho = 25 + meusAcertos * 7;
+  const entrarSala = async () => {
+    if (codigoSala.length !== 6) {
+      setError('Codigo deve ter 6 caracteres');
+      return;
     }
 
-    return { meusAcertos, oponenteAcertos, meuTempoTotal, oponenteTempoTotal, resultado, fpGanho };
+    if (!playerName.trim()) {
+      setError('Digite seu nome primeiro');
+      return;
+    }
+
+    setIsJoining(true);
+    setError(null);
+    localStorage.setItem('enem-pro-player-name', playerName);
+
+    router.push(`/enem/batalha/sala/${codigoSala.toUpperCase()}`);
   };
 
-  // Menu Principal
-  if (battleState === 'menu') {
-    return (
-      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
-        <FloatingNav />
+  const handleCopyCode = (code: string) => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
-        {/* Slogan */}
-        <div
-          className="card"
-          style={{
-            padding: '1rem',
-            marginBottom: '1.5rem',
-            marginTop: '4rem',
-            background: 'linear-gradient(to right, rgba(255, 217, 102, 0.2), rgba(255, 145, 77, 0.2))',
-            border: '2px solid rgba(255, 217, 102, 0.3)',
-            textAlign: 'center'
-          }}
-        >
-          <p style={{
-            color: 'var(--accent-yellow)',
-            fontWeight: 'bold',
-            fontStyle: 'italic',
-            margin: 0
-          }}>
-            "Diversao e conhecimento: a combinacao perfeita para sua aprovacao!"
-          </p>
-        </div>
+  const winRate = stats.vitorias + stats.derrotas > 0
+    ? ((stats.vitorias / (stats.vitorias + stats.derrotas)) * 100).toFixed(0)
+    : 0;
 
-        <div style={{ maxWidth: '32rem', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-            <div style={{ fontSize: '5rem', marginBottom: '1rem' }}>⚔️</div>
-            <div className="header">
-              <h1>Modo Batalha</h1>
-              <p>Desafie outros estudantes em tempo real!</p>
-            </div>
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-[#0d2818] to-[#1a472a] pb-24">
+      <FloatingBackButton />
+      <FloatingNav />
+
+      <div className="pt-20 px-4">
+        <div className="max-w-lg mx-auto">
+          {/* Header */}
+          <div className="text-center mb-6">
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              className="text-6xl mb-3"
+            >
+              ⚔️
+            </motion.div>
+            <h1
+              className="text-3xl font-bold text-white mb-2"
+              style={{ fontFamily: "'Patrick Hand', cursive" }}
+            >
+              Modo Batalha 1v1
+            </h1>
+            <p className="text-white/60">Desafie outros estudantes em tempo real!</p>
           </div>
 
-          {/* Stats */}
-          <div className="stats-bar" style={{ marginBottom: '2rem' }}>
-            <div className="stat-item" style={{
-              backgroundColor: 'rgba(34, 197, 94, 0.2)',
-              border: '1px solid rgba(34, 197, 94, 0.3)'
-            }}>
-              <span className="stat-number" style={{ color: '#22c55e' }}>{meusStats.vitorias}</span>
-              <span className="stat-label">Vitorias</span>
-            </div>
-            <div className="stat-item" style={{
-              backgroundColor: 'rgba(239, 68, 68, 0.2)',
-              border: '1px solid rgba(239, 68, 68, 0.3)'
-            }}>
-              <span className="stat-number" style={{ color: '#ef4444' }}>{meusStats.derrotas}</span>
-              <span className="stat-label">Derrotas</span>
-            </div>
-            <div className="stat-item" style={{
-              backgroundColor: 'rgba(255, 217, 102, 0.2)',
-              border: '1px solid rgba(255, 217, 102, 0.3)'
-            }}>
-              <span className="stat-number" style={{ color: 'var(--accent-yellow)' }}>{meusStats.empates}</span>
-              <span className="stat-label">Empates</span>
-            </div>
-          </div>
-
-          {/* Botao de Batalha */}
-          <button
-            onClick={buscarOponente}
-            className="btn btn-yellow"
-            style={{
-              width: '100%',
-              padding: '1.5rem',
-              fontSize: '1.25rem',
-              fontWeight: 'bold',
-              marginBottom: '1.5rem',
-              boxShadow: '0 8px 30px rgba(255, 217, 102, 0.4)'
-            }}
+          {/* Stats Bar */}
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className="grid grid-cols-4 gap-2 mb-6"
           >
-            ⚔️ ENCONTRAR OPONENTE
-          </button>
+            <div className="bg-[#22c55e]/20 border border-[#22c55e]/30 rounded-xl p-3 text-center">
+              <p className="text-2xl font-bold text-[#22c55e]">{stats.vitorias}</p>
+              <p className="text-xs text-white/60">Vitorias</p>
+            </div>
+            <div className="bg-[#ef4444]/20 border border-[#ef4444]/30 rounded-xl p-3 text-center">
+              <p className="text-2xl font-bold text-[#ef4444]">{stats.derrotas}</p>
+              <p className="text-xs text-white/60">Derrotas</p>
+            </div>
+            <div className="bg-[#fbbf24]/20 border border-[#fbbf24]/30 rounded-xl p-3 text-center">
+              <p className="text-2xl font-bold text-[#fbbf24]">{winRate}%</p>
+              <p className="text-xs text-white/60">Win Rate</p>
+            </div>
+            <div className="bg-white/10 border border-white/20 rounded-xl p-3 text-center">
+              <p className="text-2xl font-bold text-orange-400">
+                {stats.winStreak > 0 ? `${stats.winStreak}🔥` : '-'}
+              </p>
+              <p className="text-xs text-white/60">Streak</p>
+            </div>
+          </motion.div>
 
-          {/* Regras */}
-          <div className="card" style={{ padding: '1.5rem' }}>
-            <h3 className="card-title">📋 Como Funciona</h3>
-            <ul style={{
-              color: 'var(--chalk-dim)',
-              listStyle: 'none',
-              padding: 0,
-              margin: '1rem 0 0 0'
-            }}>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                <span style={{ color: 'var(--accent-yellow)' }}>1.</span>
-                <span>Voce sera pareado com um oponente de nivel similar</span>
+          {/* Player Name Input */}
+          <div className="mb-6">
+            <label className="text-white/60 text-sm mb-2 block">Seu nome</label>
+            <input
+              type="text"
+              value={playerName}
+              onChange={(e) => setPlayerName(e.target.value)}
+              placeholder="Digite seu nome"
+              maxLength={20}
+              className="w-full bg-[#0d2818] border-2 border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#22c55e] transition-colors"
+            />
+          </div>
+
+          {/* Error Message */}
+          <AnimatePresence>
+            {error && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="bg-red-500/20 border border-red-500/30 rounded-xl p-3 mb-4 text-red-400 text-center text-sm"
+              >
+                {error}
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Main Actions */}
+          <div className="space-y-3 mb-6">
+            {/* Create Battle Button */}
+            <button
+              onClick={() => setShowModeSelect(true)}
+              disabled={isCreating}
+              className="w-full bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] hover:from-[#f59e0b] hover:to-[#d97706] text-[#0d2818] px-6 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-[#fbbf24]/20 disabled:opacity-50"
+            >
+              {isCreating ? '⏳ Criando...' : '⚔️ CRIAR BATALHA'}
+            </button>
+
+            {/* Quick Turbo Button */}
+            <button
+              onClick={() => criarSala('turbo')}
+              disabled={isCreating}
+              className="w-full bg-[#fbbf24]/20 border-2 border-[#fbbf24] text-[#fbbf24] px-6 py-3 rounded-xl font-bold transition-all hover:bg-[#fbbf24]/30 disabled:opacity-50 flex items-center justify-center gap-2"
+            >
+              <span className="text-xl">⚡</span>
+              BATALHA RELAMPAGO (3 questoes, 15s)
+            </button>
+
+            {/* Join Room */}
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={codigoSala}
+                onChange={(e) => setCodigoSala(e.target.value.toUpperCase())}
+                placeholder="CODIGO"
+                maxLength={6}
+                className="flex-1 bg-[#0d2818] border-2 border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 font-mono text-center text-lg tracking-widest focus:outline-none focus:border-[#3b82f6] transition-colors uppercase"
+              />
+              <button
+                onClick={entrarSala}
+                disabled={codigoSala.length !== 6 || isJoining}
+                className="bg-[#3b82f6] hover:bg-[#2563eb] disabled:bg-white/10 disabled:text-white/30 text-white px-6 py-3 rounded-xl font-bold transition-all disabled:cursor-not-allowed"
+              >
+                {isJoining ? '...' : 'Entrar'}
+              </button>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="grid grid-cols-2 gap-3 mb-6">
+            <button
+              onClick={() => router.push('/enem/batalha/historico')}
+              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-4 text-left transition-all"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">📜</span>
+                <div>
+                  <p className="text-white font-bold">Historico</p>
+                  <p className="text-white/50 text-xs">Suas batalhas</p>
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => router.push('/enem/batalha/arena')}
+              className="bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 rounded-xl p-4 text-left transition-all"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🏟️</span>
+                <div>
+                  <p className="text-purple-300 font-bold">Arena Semanal</p>
+                  <p className="text-white/50 text-xs">Ranking Top 10</p>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          {/* Rules Card */}
+          <div className="bg-[#0d2818] rounded-xl p-4 border border-white/10">
+            <h3 className="text-white font-bold mb-3 flex items-center gap-2">
+              <span>📋</span> Como Funciona
+            </h3>
+            <ul className="space-y-2 text-white/70 text-sm">
+              <li className="flex items-start gap-2">
+                <span className="text-[#fbbf24]">1.</span>
+                <span>Crie uma sala ou entre com codigo de um amigo</span>
               </li>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                <span style={{ color: 'var(--accent-yellow)' }}>2.</span>
-                <span>Ambos respondem 5 questoes simultaneamente</span>
+              <li className="flex items-start gap-2">
+                <span className="text-[#fbbf24]">2.</span>
+                <span>Ambos respondem as mesmas questoes simultaneamente</span>
               </li>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                <span style={{ color: 'var(--accent-yellow)' }}>3.</span>
-                <span>15 segundos por questao - seja rapido!</span>
+              <li className="flex items-start gap-2">
+                <span className="text-[#fbbf24]">3.</span>
+                <span>Quem acertar mais ganha! Empate se igual</span>
               </li>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-                <span style={{ color: 'var(--accent-yellow)' }}>4.</span>
-                <span>Quem acertar mais, vence e ganha FP!</span>
+              <li className="flex items-start gap-2">
+                <span className="text-[#fbbf24]">4.</span>
+                <span>Ganhe FP e suba no ranking da Arena!</span>
               </li>
             </ul>
 
-            <div style={{
-              marginTop: '1rem',
-              padding: '0.75rem',
-              backgroundColor: 'rgba(255, 217, 102, 0.2)',
-              borderRadius: '0.75rem',
-              border: '1px solid rgba(255, 217, 102, 0.3)'
-            }}>
-              <p style={{
-                color: 'var(--accent-yellow)',
-                fontSize: '0.875rem',
-                fontWeight: 'bold',
-                textAlign: 'center',
-                margin: 0
-              }}>
-                🎁 Vitoria: +50 FP base + 10 FP por acerto
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Footer */}
-        <div className="footer">
-          <a
-            onClick={() => router.push('/enem')}
-            style={{
-              color: 'var(--accent-yellow)',
-              textDecoration: 'none',
-              cursor: 'pointer',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem'
-            }}
-          >
-            ← Voltar ao Menu
-          </a>
-        </div>
-      </div>
-    );
-  }
-
-  // Buscando Oponente
-  if (battleState === 'buscando') {
-    return (
-      <div className="container" style={{
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
-        <div style={{ textAlign: 'center' }}>
-          {!oponente ? (
-            <>
-              <div style={{
-                width: '64px',
-                height: '64px',
-                border: '4px solid rgba(255, 217, 102, 0.2)',
-                borderTop: '4px solid var(--accent-yellow)',
-                borderRadius: '50%',
-                animation: 'spin 1s linear infinite',
-                margin: '0 auto 1.5rem'
-              }} />
-              <h2 style={{
-                fontSize: '1.5rem',
-                fontWeight: 'bold',
-                color: 'var(--chalk-white)',
-                marginBottom: '1rem'
-              }}>
-                Buscando oponente...
-              </h2>
-              <p style={{ color: 'var(--chalk-dim)' }}>Encontrando alguem do seu nivel</p>
-            </>
-          ) : (
-            <>
-              <div style={{ fontSize: '5rem', marginBottom: '1.5rem' }}>⚔️</div>
-              <h2 style={{
-                fontSize: '1.5rem',
-                fontWeight: 'bold',
-                color: 'var(--chalk-white)',
-                marginBottom: '1rem'
-              }}>
-                Oponente Encontrado!
-              </h2>
-              <div className="card" style={{ padding: '1.5rem', maxWidth: '24rem', margin: '0 auto' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <div style={{
-                    width: '64px',
-                    height: '64px',
-                    borderRadius: '50%',
-                    background: 'linear-gradient(to bottom right, #ef4444, #f97316)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '1.5rem',
-                    fontWeight: 'bold',
-                    color: 'white'
-                  }}>
-                    {oponente.nome.charAt(0)}
-                  </div>
-                  <div style={{ textAlign: 'left' }}>
-                    <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', fontSize: '1.125rem', margin: '0 0 0.25rem 0' }}>
-                      {oponente.nome}
-                    </p>
-                    <p style={{ color: 'var(--accent-yellow)', margin: '0 0 0.25rem 0' }}>
-                      {oponente.pontosFP.toLocaleString()} FP
-                    </p>
-                    <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', margin: 0 }}>
-                      {oponente.vitorias}V / {oponente.derrotas}D
-                    </p>
-                  </div>
+            <div className="mt-4 bg-[#22c55e]/10 border border-[#22c55e]/30 rounded-lg p-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <FPCoin size="sm" />
+                  <span className="text-[#22c55e] font-bold">Vitoria</span>
                 </div>
+                <span className="text-[#fbbf24] font-bold">+100 FP</span>
               </div>
-              <p style={{ color: 'var(--chalk-dim)', marginTop: '1rem' }}>Preparando batalha...</p>
-            </>
-          )}
-        </div>
-
-        <style jsx>{`
-          @keyframes spin {
-            to { transform: rotate(360deg); }
-          }
-        `}</style>
-      </div>
-    );
-  }
-
-  // Batalha
-  if (battleState === 'batalha') {
-    const questao = questoesBatalha[questaoAtual];
-    const minhaResposta = minhasRespostas[questaoAtual];
-    const oponenteResposta = oponenteRespostas[questaoAtual];
-
-    return (
-      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
-        {/* Header com VS */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <div style={{
-              width: '48px',
-              height: '48px',
-              borderRadius: '50%',
-              background: 'linear-gradient(to bottom right, #3b82f6, #06b6d4)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontWeight: 'bold',
-              color: 'white',
-              fontSize: '0.875rem'
-            }}>
-              EU
-            </div>
-            <div>
-              <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', margin: 0 }}>Voce</p>
-              <p style={{ color: 'var(--accent-yellow)', fontSize: '0.875rem', margin: 0 }}>
-                {minhasRespostas.filter((r, i) => r === questoesBatalha[i].correta).length} acertos
-              </p>
-            </div>
-          </div>
-
-          <div style={{ textAlign: 'center' }}>
-            <span style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'var(--accent-yellow)' }}>VS</span>
-            <p style={{ color: 'var(--chalk-dim)', fontSize: '0.75rem', margin: 0 }}>
-              Questao {questaoAtual + 1}/5
-            </p>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <div style={{ textAlign: 'right' }}>
-              <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', margin: 0 }}>
-                {oponente?.nome}
-              </p>
-              <p style={{ color: '#ef4444', fontSize: '0.875rem', margin: 0 }}>
-                {oponenteRespostas.filter((r, i) => r === questoesBatalha[i].correta).length} acertos
-              </p>
-            </div>
-            <div style={{
-              width: '48px',
-              height: '48px',
-              borderRadius: '50%',
-              background: 'linear-gradient(to bottom right, #ef4444, #f97316)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontWeight: 'bold',
-              color: 'white'
-            }}>
-              {oponente?.nome.charAt(0)}
-            </div>
-          </div>
-        </div>
-
-        {/* Timer */}
-        <div style={{ marginBottom: '1.5rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-            <span style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem' }}>{questao.disciplina}</span>
-            <span style={{
-              fontSize: '1.25rem',
-              fontWeight: 'bold',
-              color: tempoQuestao <= 5 ? '#ef4444' : 'var(--accent-yellow)'
-            }}>
-              ⏱️ {tempoQuestao}s
-            </span>
-          </div>
-          <div style={{
-            width: '100%',
-            height: '8px',
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            borderRadius: '9999px',
-            overflow: 'hidden'
-          }}>
-            <div
-              style={{
-                height: '100%',
-                backgroundColor: tempoQuestao <= 5 ? '#ef4444' : 'var(--accent-yellow)',
-                transition: 'all 0.3s',
-                width: `${(tempoQuestao / 15) * 100}%`
-              }}
-            />
-          </div>
-        </div>
-
-        {/* Status dos jogadores */}
-        <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
-          <div style={{
-            flex: 1,
-            padding: '0.75rem',
-            borderRadius: '0.75rem',
-            textAlign: 'center',
-            backgroundColor: respondeu ? 'rgba(34, 197, 94, 0.2)' : 'rgba(255, 255, 255, 0.05)',
-            border: respondeu ? '1px solid rgba(34, 197, 94, 0.3)' : 'none'
-          }}>
-            <p style={{ color: 'var(--chalk-dim)', fontSize: '0.75rem', margin: '0 0 0.25rem 0' }}>Voce</p>
-            <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', margin: 0 }}>
-              {respondeu ? '✓ Respondeu' : '⏳ Aguardando'}
-            </p>
-          </div>
-          <div style={{
-            flex: 1,
-            padding: '0.75rem',
-            borderRadius: '0.75rem',
-            textAlign: 'center',
-            backgroundColor: oponenteRespondeu ? 'rgba(239, 68, 68, 0.2)' : 'rgba(255, 255, 255, 0.05)',
-            border: oponenteRespondeu ? '1px solid rgba(239, 68, 68, 0.3)' : 'none'
-          }}>
-            <p style={{ color: 'var(--chalk-dim)', fontSize: '0.75rem', margin: '0 0 0.25rem 0' }}>
-              {oponente?.nome}
-            </p>
-            <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', margin: 0 }}>
-              {oponenteRespondeu ? '✓ Respondeu' : '⏳ Aguardando'}
-            </p>
-          </div>
-        </div>
-
-        {/* Questao */}
-        <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
-          <p style={{ color: 'var(--chalk-white)', fontSize: '1.125rem', marginBottom: '1.5rem' }}>
-            {questao.enunciado}
-          </p>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            {questao.alternativas.map((alt, idx) => {
-              let backgroundColor = 'rgba(255, 255, 255, 0.05)';
-              let borderColor = 'rgba(255, 255, 255, 0.1)';
-              let hoverBorderColor = 'rgba(255, 255, 255, 0.3)';
-
-              if (respondeu && oponenteRespondeu) {
-                if (idx === questao.correta) {
-                  backgroundColor = 'rgba(34, 197, 94, 0.2)';
-                  borderColor = '#22c55e';
-                } else if (minhaResposta === idx || oponenteResposta === idx) {
-                  backgroundColor = 'rgba(239, 68, 68, 0.2)';
-                  borderColor = '#ef4444';
-                }
-              } else if (minhaResposta === idx) {
-                backgroundColor = 'rgba(255, 217, 102, 0.2)';
-                borderColor = 'var(--accent-yellow)';
-              }
-
-              return (
-                <button
-                  key={idx}
-                  onClick={() => responder(idx)}
-                  disabled={respondeu}
-                  style={{
-                    width: '100%',
-                    padding: '1rem',
-                    borderRadius: '0.75rem',
-                    textAlign: 'left',
-                    backgroundColor,
-                    border: `2px solid ${borderColor}`,
-                    cursor: respondeu ? 'default' : 'pointer',
-                    transition: 'all 0.2s',
-                    display: 'flex',
-                    alignItems: 'center'
-                  }}
-                  onMouseEnter={(e) => {
-                    if (!respondeu) {
-                      e.currentTarget.style.borderColor = hoverBorderColor;
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (!respondeu && minhaResposta !== idx) {
-                      e.currentTarget.style.borderColor = borderColor;
-                    }
-                  }}
-                >
-                  <span style={{ fontWeight: 'bold', marginRight: '0.75rem', color: 'var(--chalk-white)' }}>
-                    {String.fromCharCode(65 + idx)})
-                  </span>
-                  <span style={{ color: 'var(--chalk-white)', flex: 1 }}>{alt}</span>
-                  {respondeu && oponenteRespondeu && (
-                    <span>
-                      {minhaResposta === idx && '👤'}
-                      {oponenteResposta === idx && '👊'}
-                    </span>
-                  )}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // Resultado
-  if (battleState === 'resultado') {
-    const resultado = calcularResultado();
-
-    return (
-      <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
-        <div style={{ maxWidth: '32rem', margin: '0 auto' }}>
-          {/* Resultado Principal */}
-          <div className="card" style={{ padding: '2rem', textAlign: 'center', marginBottom: '1.5rem' }}>
-            <div style={{ fontSize: '5rem', marginBottom: '1rem' }}>
-              {resultado.resultado === 'vitoria' ? '🏆' : resultado.resultado === 'derrota' ? '😔' : '🤝'}
-            </div>
-            <h1 style={{
-              fontSize: '2rem',
-              fontWeight: 'bold',
-              marginBottom: '0.5rem',
-              color: resultado.resultado === 'vitoria' ? '#22c55e' :
-                     resultado.resultado === 'derrota' ? '#ef4444' : 'var(--accent-yellow)'
-            }}>
-              {resultado.resultado === 'vitoria' ? 'VITORIA!' :
-               resultado.resultado === 'derrota' ? 'DERROTA' : 'EMPATE!'}
-            </h1>
-
-            {/* Placar */}
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '2rem',
-              marginBottom: '1.5rem'
-            }}>
-              <div style={{ textAlign: 'center' }}>
-                <p style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#3b82f6', margin: 0 }}>
-                  {resultado.meusAcertos}
-                </p>
-                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', margin: 0 }}>Voce</p>
-              </div>
-              <div style={{ fontSize: '1.875rem', color: 'rgba(255, 255, 255, 0.3)' }}>VS</div>
-              <div style={{ textAlign: 'center' }}>
-                <p style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#ef4444', margin: 0 }}>
-                  {resultado.oponenteAcertos}
-                </p>
-                <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', margin: 0 }}>
-                  {oponente?.nome}
-                </p>
-              </div>
-            </div>
-
-            {/* FP Ganho */}
-            <div style={{
-              backgroundColor: 'rgba(255, 217, 102, 0.2)',
-              borderRadius: '0.75rem',
-              padding: '1rem',
-              border: '1px solid rgba(255, 217, 102, 0.3)'
-            }}>
-              <p style={{ color: 'var(--accent-yellow)', fontWeight: 'bold', fontSize: '1.5rem', margin: '0 0 0.25rem 0' }}>
-                +{resultado.fpGanho} FP
-              </p>
-              <p style={{ color: 'var(--chalk-dim)', fontSize: '0.875rem', margin: 0 }}>Pontos ganhos</p>
-            </div>
-          </div>
-
-          {/* Detalhes */}
-          <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
-            <h3 className="card-title">📊 Detalhes da Batalha</h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1rem' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--chalk-dim)' }}>Seus acertos</span>
-                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
-                  {resultado.meusAcertos}/5
-                </span>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--chalk-dim)' }}>Acertos do oponente</span>
-                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
-                  {resultado.oponenteAcertos}/5
-                </span>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--chalk-dim)' }}>Seu tempo total</span>
-                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
-                  {resultado.meuTempoTotal}s
-                </span>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--chalk-dim)' }}>Tempo do oponente</span>
-                <span style={{ color: 'var(--chalk-white)', fontWeight: 'bold' }}>
-                  {resultado.oponenteTempoTotal}s
-                </span>
+              <div className="flex items-center justify-between mt-1">
+                <span className="text-white/50 text-sm">Vitoria Perfeita</span>
+                <span className="text-purple-400 font-bold text-sm">+150 FP</span>
               </div>
             </div>
           </div>
 
-          {/* Botoes */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            <button
-              onClick={() => {
-                setBattleState('menu');
-                setOponente(null);
-              }}
-              className="btn btn-yellow"
-              style={{ width: '100%', padding: '1rem', fontSize: '1.125rem' }}
-            >
-              ⚔️ Nova Batalha
-            </button>
-            <button
-              onClick={() => router.push('/enem/feed')}
-              className="btn"
-              style={{
-                width: '100%',
-                padding: '1rem',
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                border: '2px solid rgba(255, 255, 255, 0.2)'
-              }}
-            >
-              📱 Compartilhar no Feed
-            </button>
+          {/* Back Button */}
+          <div className="mt-6 text-center">
             <button
               onClick={() => router.push('/enem')}
-              className="btn"
-              style={{
-                width: '100%',
-                padding: '1rem',
-                backgroundColor: 'transparent',
-                border: '2px solid var(--accent-yellow)',
-                color: 'var(--accent-yellow)'
-              }}
+              className="text-white/60 hover:text-white transition-colors"
             >
-              🏠 Voltar ao Menu
+              ← Voltar ao Menu
             </button>
           </div>
         </div>
-
-        {/* Footer */}
-        <div className="footer">
-          <a
-            onClick={() => router.push('/enem')}
-            style={{
-              color: 'var(--accent-yellow)',
-              textDecoration: 'none',
-              cursor: 'pointer',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem'
-            }}
-          >
-            ← Voltar ao Menu
-          </a>
-        </div>
       </div>
-    );
-  }
 
-  return null;
+      {/* Mode Selection Modal */}
+      <AnimatePresence>
+        {showModeSelect && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+            onClick={() => setShowModeSelect(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 20 }}
+              className="bg-gradient-to-b from-[#1a472a] to-[#0d2818] rounded-2xl p-6 max-w-md w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className="text-2xl font-bold text-white text-center mb-6" style={{ fontFamily: "'Patrick Hand', cursive" }}>
+                Escolha o Modo
+              </h2>
+
+              <div className="space-y-3">
+                {(Object.keys(MODE_CONFIG) as BattleMode[]).map((mode) => {
+                  const config = MODE_CONFIG[mode];
+                  return (
+                    <button
+                      key={mode}
+                      onClick={() => criarSala(mode)}
+                      disabled={isCreating}
+                      className="w-full p-4 rounded-xl text-left transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
+                      style={{
+                        backgroundColor: `${config.color}20`,
+                        border: `2px solid ${config.color}`,
+                      }}
+                    >
+                      <div className="flex items-center gap-4">
+                        <span className="text-4xl">{config.icon}</span>
+                        <div className="flex-1">
+                          <p className="text-white font-bold text-lg">{config.name}</p>
+                          <p className="text-white/60 text-sm">{config.description}</p>
+                        </div>
+                        <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+
+              <button
+                onClick={() => setShowModeSelect(false)}
+                className="w-full mt-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold transition-all"
+              >
+                Cancelar
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
 }

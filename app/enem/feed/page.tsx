@@ -6,6 +6,7 @@ import FloatingNav from '@/components/FloatingNav';
 import ActivityFeed from '@/components/social/ActivityFeed';
 import ProvocacaoCard from '@/components/social/ProvocacaoCard';
 import LeagueCard from '@/components/social/LeagueCard';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface UserStats {
   nome: string;
@@ -57,6 +58,7 @@ export default function FeedSocialPage() {
         background: 'var(--chalkboard-bg)',
         color: 'var(--chalk-white)'
       }}>
+      <FloatingBackButton />
         <div style={{ textAlign: 'center' }}>
           <div style={{
             width: '48px',
@@ -79,6 +81,7 @@ export default function FeedSocialPage() {
       background: 'var(--chalkboard-bg)',
       padding: '2rem 1rem'
     }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       {/* Container principal */}

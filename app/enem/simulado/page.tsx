@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import FloatingBackButton from '@/components/FloatingBackButton';
+import {useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { generateSimulado, salvarSimuladoEmAndamento } from '@/lib/questions';
@@ -71,6 +72,7 @@ export default function SimuladoInicioPage() {
       padding: '2rem 1rem',
       background: 'var(--chalkboard-bg)',
     }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       <div style={{ maxWidth: '48rem', margin: '0 auto', paddingTop: '2rem' }}>

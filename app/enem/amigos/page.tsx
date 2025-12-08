@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
 import ProfileCard from '@/components/social/ProfileCard';
 import FriendButton from '@/components/social/FriendButton';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Usuario {
   id: string;
@@ -95,6 +96,7 @@ function AmigosContent() {
         background: 'var(--chalkboard-bg)',
         padding: '2rem'
       }}>
+      <FloatingBackButton />
         <div style={{ textAlign: 'center' }}>
           <div style={{
             width: '48px',

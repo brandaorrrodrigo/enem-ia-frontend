@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import CourseSelector from '@/components/CourseSelector';
+import { useAuth } from '@/contexts/AuthContext';
+import CursoAlvoSelector from '@/components/CursoAlvoSelector';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Simulado {
   id: string;
@@ -15,39 +17,92 @@ interface Simulado {
   data: string;
 }
 
-interface UsuarioStats {
-  email: string;
-  nome: string;
-  pontosFP: number;
-  nivel: string;
-  streak: number;
-}
-
 interface DesempenhoPorArea {
   area: string;
   porcentagem: number;
   simulados: number;
 }
 
+// Mapa de niveis por FP
+const NIVEIS_FP = [
+  { min: 0, nome: 'Bronze', cor: '#cd7f32' },
+  { min: 500, nome: 'Prata', cor: '#c0c0c0' },
+  { min: 2000, nome: 'Ouro', cor: '#ffd700' },
+  { min: 5000, nome: 'Platina', cor: '#e5e4e2' },
+  { min: 10000, nome: 'Diamante', cor: '#b9f2ff' },
+];
+
+function getNivel(fp: number) {
+  for (let i = NIVEIS_FP.length - 1; i >= 0; i--) {
+    if (fp >= NIVEIS_FP[i].min) return NIVEIS_FP[i];
+  }
+  return NIVEIS_FP[0];
+}
+
+function getProximoNivel(fp: number) {
+  for (let i = 0; i < NIVEIS_FP.length; i++) {
+    if (fp < NIVEIS_FP[i].min) return NIVEIS_FP[i];
+  }
+  return null;
+}
+
 export default function DashboardPage() {
   const router = useRouter();
-  const [userId, setUserId] = useState<string>('');
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const { user, loading: authLoading, isAuthenticated, logout } = useAuth();
 
   const [simulados, setSimulados] = useState<Simulado[]>([]);
-  const [stats, setStats] = useState<UsuarioStats | null>(null);
   const [desempenhoPorArea, setDesempenhoPorArea] = useState<DesempenhoPorArea[]>([]);
-
-
+  const [dataLoading, setDataLoading] = useState(true);
 
   useEffect(() => {
-    const storedUserId = localStorage.getItem('user_email') || 'usuario@enem-ia.com';
-    setUserId(storedUserId);
-    loadDashboardData(storedUserId);
-  }, []);
+    if (!authLoading) {
+      loadDashboardData();
+    }
+  }, [authLoading, user]);
 
-  const loadDashboardData = (userId: string) => { setLoading(true); try { const historicoStr = localStorage.getItem("historico_simulados") || "[]"; const historico = JSON.parse(historicoStr); const simuladosFormatados = historico.map((h: any) => ({ id: h.id, disciplina: h.area === "todas" ? "Todas as Areas" : h.area, nota: h.nota, acertos: h.acertos, total: h.total, porcentagem: Math.round((h.acertos / h.total) * 100) + "%", data: new Date(h.data).toLocaleDateString("pt-BR") })); setSimulados(simuladosFormatados); const fpTotal = parseInt(localStorage.getItem("fp_total") || "0"); const streakDias = parseInt(localStorage.getItem("streak_dias") || "0"); let nivel = "Bronze"; if (fpTotal >= 5000) nivel = "Diamante"; else if (fpTotal >= 2000) nivel = "Platina"; else if (fpTotal >= 1000) nivel = "Gold"; else if (fpTotal >= 500) nivel = "Prata"; setStats({ email: userId, nome: "Estudante", pontosFP: fpTotal, nivel: nivel, streak: streakDias }); setDesempenhoPorArea([]); setLoading(false); } catch (err: any) { console.error("Erro:", err); setStats({ email: userId, nome: "Estudante", pontosFP: 0, nivel: "Bronze", streak: 0 }); setSimulados([]); setDesempenhoPorArea([]); setLoading(false); } };
+  const loadDashboardData = () => {
+    setDataLoading(true);
+    try {
+      // Carregar historico de simulados do localStorage
+      const historicoStr = localStorage.getItem('historico_simulados') || '[]';
+      const historico = JSON.parse(historicoStr);
+
+      const simuladosFormatados = historico.map((h: any) => ({
+        id: h.id,
+        disciplina: h.area === 'todas' ? 'Todas as Areas' : h.area,
+        nota: h.nota,
+        acertos: h.acertos,
+        total: h.total,
+        porcentagem: Math.round((h.acertos / h.total) * 100) + '%',
+        data: new Date(h.data).toLocaleDateString('pt-BR')
+      }));
+
+      setSimulados(simuladosFormatados);
+
+      // Calcular desempenho por area
+      const areaCounts: { [key: string]: { acertos: number; total: number; count: number } } = {};
+      historico.forEach((h: any) => {
+        const area = h.area || 'outras';
+        if (!areaCounts[area]) {
+          areaCounts[area] = { acertos: 0, total: 0, count: 0 };
+        }
+        areaCounts[area].acertos += h.acertos;
+        areaCounts[area].total += h.total;
+        areaCounts[area].count++;
+      });
+
+      const desempenho = Object.entries(areaCounts).map(([area, data]) => ({
+        area: area === 'todas' ? 'Geral' : area.charAt(0).toUpperCase() + area.slice(1),
+        porcentagem: Math.round((data.acertos / data.total) * 100),
+        simulados: data.count
+      }));
+
+      setDesempenhoPorArea(desempenho);
+    } catch (err) {
+      console.error('Erro ao carregar dados:', err);
+    }
+    setDataLoading(false);
+  };
 
   const calcularMediaNotas = (): number => {
     if (simulados.length === 0) return 0;
@@ -55,9 +110,11 @@ export default function DashboardPage() {
     return Math.round(soma / simulados.length);
   };
 
-  if (loading) {
+  // Loading state
+  if (authLoading || dataLoading) {
     return (
       <div className="container min-h-screen flex items-center justify-center">
+      <FloatingBackButton />
         <div className="text-center">
           <div
             className="spinner-ia mx-auto mb-6"
@@ -73,7 +130,7 @@ export default function DashboardPage() {
           <p style={{
             color: 'var(--chalk-white)',
             fontSize: '1.25rem',
-            fontFamily: 'var(--font-handwriting)'
+            fontFamily: 'var(--font-kalam)'
           }}>
             Carregando dashboard...
           </p>
@@ -82,38 +139,69 @@ export default function DashboardPage() {
     );
   }
 
+  // Se nao estiver autenticado, o AuthContext ja redireciona
+  const fp = user?.pontosFP || 0;
+  const nivelAtual = getNivel(fp);
+  const proximoNivel = getProximoNivel(fp);
+  const progressoNivel = proximoNivel
+    ? ((fp - nivelAtual.min) / (proximoNivel.min - nivelAtual.min)) * 100
+    : 100;
+  const pontosParaProximo = proximoNivel ? proximoNivel.min - fp : 0;
   const mediaNota = calcularMediaNotas();
 
   return (
     <div className="container min-h-screen py-8">
+      <FloatingBackButton />
       <FloatingNav />
 
-      {/* Slogan Oficial */}
+      {/* Header com Info do Usuario */}
       <div
-        className="p-4 mb-6 mt-16 text-center"
+        className="mt-16 mb-6 p-4"
         style={{
           background: 'linear-gradient(to right, rgba(255, 217, 102, 0.15), rgba(255, 153, 51, 0.15))',
           border: '2px solid rgba(255, 217, 102, 0.3)',
-          borderRadius: '12px',
-          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)'
+          borderRadius: '12px'
         }}
       >
-        <p style={{
-          color: 'var(--accent-yellow)',
-          fontWeight: 'bold',
-          fontSize: '1.25rem',
-          fontStyle: 'italic',
-          fontFamily: 'var(--font-handwriting)'
-        }}>
-          "Diversão e conhecimento: a combinação perfeita para sua aprovação!"
-        </p>
-        <p style={{
-          color: 'var(--chalk-dim)',
-          fontSize: '0.875rem',
-          marginTop: '0.25rem'
-        }}>
-          🎯 ENEM-IA - Onde aprender vira jogo
-        </p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+          <div>
+            <h2 style={{
+              color: 'var(--chalk-white)',
+              fontSize: '1.5rem',
+              fontFamily: 'var(--font-kalam)',
+              margin: 0
+            }}>
+              Ola, {user?.nome || 'Estudante'}! 👋
+            </h2>
+            <p style={{ color: 'var(--chalk-dim)', fontFamily: 'var(--font-kalam)', margin: '0.25rem 0 0 0' }}>
+              {user?.email}
+            </p>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            {/* Badge do Plano */}
+            <span
+              style={{
+                padding: '0.5rem 1rem',
+                borderRadius: '20px',
+                fontSize: '0.85rem',
+                fontWeight: 'bold',
+                fontFamily: 'var(--font-kalam)',
+                backgroundColor: user?.plano === 'premium' ? 'rgba(236, 72, 153, 0.2)' : user?.plano === 'pro' ? 'rgba(251, 191, 36, 0.2)' : 'rgba(255, 255, 255, 0.1)',
+                color: user?.plano === 'premium' ? '#f472b6' : user?.plano === 'pro' ? 'var(--accent-yellow)' : 'var(--chalk-dim)',
+                border: user?.plano === 'premium' ? '2px solid #f472b6' : user?.plano === 'pro' ? '2px solid var(--accent-yellow)' : '2px solid rgba(255, 255, 255, 0.2)'
+              }}
+            >
+              {user?.plano === 'premium' ? '👑 Premium' : user?.plano === 'pro' ? '⚡ PRO' : '🆓 Lite'}
+            </span>
+            <button
+              onClick={logout}
+              className="btn"
+              style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}
+            >
+              Sair
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Header */}
@@ -122,7 +210,7 @@ export default function DashboardPage() {
           fontSize: '2.5rem',
           fontWeight: 'bold',
           color: 'var(--chalk-white)',
-          fontFamily: 'var(--font-handwriting)',
+          fontFamily: 'var(--font-kalam)',
           marginBottom: '0.5rem'
         }}>
           📊 Dashboard
@@ -130,17 +218,27 @@ export default function DashboardPage() {
         <p style={{
           color: 'var(--chalk-dim)',
           fontSize: '1.125rem',
-          fontFamily: 'var(--font-handwriting)'
+          fontFamily: 'var(--font-kalam)'
         }}>
-          Acompanhe seu progresso e estatísticas
+          Acompanhe seu progresso e estatisticas
         </p>
       </div>
 
-      {/* Estatísticas Principais */}
+      {/* Curso Alvo */}
+      <div className="mb-6">
+        <CursoAlvoSelector
+          userId={user?.id || ''}
+          cursoAtual={user?.cursoAlvo?.nome || null}
+        />
+      </div>
+
+      {/* Estatisticas Principais */}
       <div className="stats-bar grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <div className="stat-item">
-          <span className="stat-number">{stats?.pontosFP || 0}</span>
-          <span className="stat-label">Pontos FP</span>
+          <span className="stat-number" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            ⭐ {fp.toLocaleString()}
+          </span>
+          <span className="stat-label">FP</span>
         </div>
 
         <div className="stat-item">
@@ -150,124 +248,146 @@ export default function DashboardPage() {
 
         <div className="stat-item">
           <span className="stat-number">{mediaNota}</span>
-          <span className="stat-label">Nota Média</span>
+          <span className="stat-label">Nota Media</span>
         </div>
 
         <div className="stat-item">
-          <span className="stat-number">{stats?.streak || 0}🔥</span>
+          <span className="stat-number">{user?.streak || 0}🔥</span>
           <span className="stat-label">Dias Seguidos</span>
         </div>
       </div>
 
       {/* Grid Principal */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
-        {/* Progresso Geral */}
+        {/* Progresso e Nivel */}
         <div className="card">
-          <h2 className="card-title mb-4">📈 Progresso Geral</h2>
+          <h2 className="card-title mb-4">📈 Nivel e Progresso</h2>
 
           <div className="space-y-4">
             <div>
-              <div className="flex justify-between text-sm mb-2">
-                <span style={{ color: 'var(--chalk-white)' }}>Nível Atual</span>
-                <span className="badge">{stats?.nivel || 'Iniciante'}</span>
+              <div className="flex justify-between items-center mb-2">
+                <span style={{ color: 'var(--chalk-white)', fontFamily: 'var(--font-kalam)' }}>
+                  Nivel Atual
+                </span>
+                <span
+                  className="badge"
+                  style={{
+                    backgroundColor: `${nivelAtual.cor}30`,
+                    color: nivelAtual.cor,
+                    border: `2px solid ${nivelAtual.cor}`
+                  }}
+                >
+                  {nivelAtual.nome}
+                </span>
               </div>
               <div style={{
                 width: '100%',
-                height: '8px',
+                height: '12px',
                 background: 'rgba(255, 255, 255, 0.1)',
-                borderRadius: '4px',
+                borderRadius: '6px',
                 overflow: 'hidden'
               }}>
                 <div style={{
-                  width: '65%',
+                  width: `${Math.min(progressoNivel, 100)}%`,
                   height: '100%',
-                  background: 'var(--accent-yellow)',
-                  transition: 'width 0.3s ease'
+                  background: `linear-gradient(to right, ${nivelAtual.cor}, ${proximoNivel?.cor || nivelAtual.cor})`,
+                  transition: 'width 0.5s ease'
                 }}></div>
               </div>
-              <p style={{
-                color: 'var(--chalk-dim)',
-                fontSize: '0.75rem',
-                marginTop: '0.5rem'
-              }}>
-                350 pontos para o próximo nível
-              </p>
+              {proximoNivel && (
+                <p style={{
+                  color: 'var(--chalk-dim)',
+                  fontSize: '0.85rem',
+                  marginTop: '0.5rem',
+                  fontFamily: 'var(--font-kalam)'
+                }}>
+                  {pontosParaProximo.toLocaleString()} FP para {proximoNivel.nome}
+                </p>
+              )}
             </div>
 
-            <div style={{
-              height: '1px',
-              background: 'rgba(255, 255, 255, 0.1)',
-              margin: '1rem 0'
-            }}></div>
+            <div style={{ height: '1px', background: 'rgba(255, 255, 255, 0.1)', margin: '1rem 0' }}></div>
 
+            {/* Conquistas Recentes */}
             <div>
               <p style={{
                 color: 'var(--chalk-white)',
                 marginBottom: '0.75rem',
                 fontWeight: 'bold',
-                fontFamily: 'var(--font-handwriting)'
+                fontFamily: 'var(--font-kalam)'
               }}>
                 Conquistas Recentes
               </p>
               <div className="space-y-2">
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  borderRadius: '8px'
-                }}>
-                  <span style={{ fontSize: '2rem' }}>🏆</span>
-                  <div>
-                    <p style={{
-                      color: 'var(--chalk-white)',
-                      fontWeight: 'bold',
-                      fontSize: '0.875rem'
+                {user?.badges && user.badges.length > 0 ? (
+                  user.badges.slice(0, 3).map((badge, idx) => (
+                    <div
+                      key={idx}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.75rem',
+                        padding: '0.75rem',
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        borderRadius: '8px'
+                      }}
+                    >
+                      <span style={{ fontSize: '2rem' }}>{badge.icone}</span>
+                      <div>
+                        <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', fontSize: '0.875rem' }}>
+                          {badge.nome}
+                        </p>
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem',
+                      padding: '0.75rem',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      borderRadius: '8px'
                     }}>
-                      Primeira Vitória
-                    </p>
-                    <p style={{
-                      color: 'var(--chalk-dim)',
-                      fontSize: '0.75rem'
+                      <span style={{ fontSize: '2rem' }}>🏆</span>
+                      <div>
+                        <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', fontSize: '0.875rem' }}>
+                          Primeira Vitoria
+                        </p>
+                        <p style={{ color: 'var(--chalk-dim)', fontSize: '0.75rem' }}>
+                          Complete seu primeiro simulado
+                        </p>
+                      </div>
+                    </div>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem',
+                      padding: '0.75rem',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      borderRadius: '8px'
                     }}>
-                      Complete seu primeiro simulado
-                    </p>
-                  </div>
-                </div>
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  padding: '0.75rem',
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  borderRadius: '8px'
-                }}>
-                  <span style={{ fontSize: '2rem' }}>🔥</span>
-                  <div>
-                    <p style={{
-                      color: 'var(--chalk-white)',
-                      fontWeight: 'bold',
-                      fontSize: '0.875rem'
-                    }}>
-                      Sequência de 7 dias
-                    </p>
-                    <p style={{
-                      color: 'var(--chalk-dim)',
-                      fontSize: '0.75rem'
-                    }}>
-                      Estude 7 dias consecutivos
-                    </p>
-                  </div>
-                </div>
+                      <span style={{ fontSize: '2rem' }}>🔥</span>
+                      <div>
+                        <p style={{ color: 'var(--chalk-white)', fontWeight: 'bold', fontSize: '0.875rem' }}>
+                          Sequencia de 7 dias
+                        </p>
+                        <p style={{ color: 'var(--chalk-dim)', fontSize: '0.75rem' }}>
+                          Estude 7 dias consecutivos
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </div>
         </div>
 
-        {/* Desempenho por Área */}
+        {/* Desempenho por Area */}
         <div className="card">
-          <h2 className="card-title mb-4">📚 Desempenho por Área</h2>
+          <h2 className="card-title mb-4">📚 Desempenho por Area</h2>
 
           {desempenhoPorArea.length > 0 ? (
             <div className="space-y-4">
@@ -277,7 +397,7 @@ export default function DashboardPage() {
                     <span style={{
                       color: 'var(--chalk-white)',
                       fontWeight: 'bold',
-                      fontFamily: 'var(--font-handwriting)'
+                      fontFamily: 'var(--font-kalam)'
                     }}>
                       {area.area}
                     </span>
@@ -298,7 +418,7 @@ export default function DashboardPage() {
                     <div style={{
                       width: `${area.porcentagem}%`,
                       height: '100%',
-                      background: 'var(--accent-yellow)',
+                      background: area.porcentagem >= 70 ? '#86efac' : area.porcentagem >= 50 ? 'var(--accent-yellow)' : '#fca5a5',
                       transition: 'width 0.3s ease'
                     }}></div>
                   </div>
@@ -317,7 +437,7 @@ export default function DashboardPage() {
               <p style={{
                 color: 'var(--chalk-dim)',
                 marginBottom: '1rem',
-                fontFamily: 'var(--font-handwriting)'
+                fontFamily: 'var(--font-kalam)'
               }}>
                 Nenhum simulado realizado ainda
               </p>
@@ -332,21 +452,13 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* Curso Alvo */}
-      <div className="mb-8">
-        <div className="card">
-          <h2 className="card-title mb-4">🎯 Curso Alvo</h2>
-          <CourseSelector userId={userId} />
-        </div>
-      </div>
-
-      {/* Histórico de Simulados */}
+      {/* Historico de Simulados */}
       <div className="card">
-        <h2 className="card-title mb-6">📝 Histórico de Simulados</h2>
+        <h2 className="card-title mb-6">📝 Historico de Simulados</h2>
 
         {simulados.length > 0 ? (
           <div className="space-y-3">
-            {simulados.map((sim) => (
+            {simulados.slice(0, 10).map((sim) => (
               <div
                 key={sim.id}
                 className="chalkboard-card"
@@ -365,7 +477,7 @@ export default function DashboardPage() {
                   <p style={{
                     color: 'var(--chalk-white)',
                     fontWeight: 'bold',
-                    fontFamily: 'var(--font-handwriting)'
+                    fontFamily: 'var(--font-kalam)'
                   }}>
                     {sim.disciplina}
                   </p>
@@ -373,7 +485,7 @@ export default function DashboardPage() {
                     color: 'var(--chalk-dim)',
                     fontSize: '0.875rem'
                   }}>
-                    {sim.acertos}/{sim.total} questões ({sim.porcentagem})
+                    {sim.acertos}/{sim.total} questoes ({sim.porcentagem})
                   </p>
                 </div>
                 <div style={{ textAlign: 'right' }}>
@@ -402,9 +514,9 @@ export default function DashboardPage() {
               fontSize: '1.875rem',
               fontWeight: 'bold',
               marginBottom: '0.75rem',
-              fontFamily: 'var(--font-handwriting)'
+              fontFamily: 'var(--font-kalam)'
             }}>
-              Você ainda não fez nenhum simulado
+              Voce ainda nao fez nenhum simulado
             </h3>
             <p style={{
               color: 'var(--chalk-dim)',
@@ -415,7 +527,7 @@ export default function DashboardPage() {
               marginRight: 'auto',
               lineHeight: '1.75'
             }}>
-              Que tal começar agora? Faça seu primeiro simulado e descubra seu nível de conhecimento!
+              Que tal comecar agora? Faca seu primeiro simulado e descubra seu nivel de conhecimento!
             </p>
             <button
               onClick={() => router.push('/enem/simulado')}

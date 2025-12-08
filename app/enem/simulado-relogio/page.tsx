@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Questao {
   id: string;
@@ -211,6 +212,7 @@ export default function SimuladoRelogioPage() {
 
     return (
       <div className="relative w-24 h-32 mx-auto">
+      <FloatingBackButton />
         {/* Contorno da ampulheta */}
         <svg viewBox="0 0 100 140" className="w-full h-full">
           {/* Parte superior */}
@@ -800,6 +802,7 @@ export default function SimuladoRelogioPage() {
                         : '1px solid rgba(239, 68, 68, 0.3)'
                     }}
                   >
+      <FloatingBackButton />
                     <div style={{
                       display: 'flex',
                       alignItems: 'center',

@@ -1,16 +1,28 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import { useAuth } from '@/contexts/AuthContext';
 
-export default function LoginPage() {
+function LoginContent() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const { login, isAuthenticated, loading: authLoading } = useAuth();
+
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [loading, setLoading] = useState(false);
   const [erro, setErro] = useState('');
   const [mostrarSenha, setMostrarSenha] = useState(false);
+
+  // Redirecionar se ja estiver logado
+  useEffect(() => {
+    if (!authLoading && isAuthenticated) {
+      const next = searchParams.get('next') || '/enem/dashboard';
+      router.push(next);
+    }
+  }, [authLoading, isAuthenticated, router, searchParams]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,22 +36,50 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      // Simulacao de login (substituir por API real)
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const result = await login(email, senha);
 
-      // Salvar dados no localStorage (demo)
-      localStorage.setItem('user_email', email);
-      localStorage.setItem('user_logado', 'true');
-      localStorage.setItem('user_nome', email.split('@')[0]);
-
-      // Redirecionar para dashboard
-      router.push('/enem');
+      if (result.success) {
+        const next = searchParams.get('next') || '/enem/dashboard';
+        router.push(next);
+      } else {
+        setErro(result.error || 'Erro ao fazer login');
+      }
     } catch (err) {
       setErro('Erro ao fazer login. Tente novamente.');
     } finally {
       setLoading(false);
     }
   };
+
+  // Mostrar loading enquanto verifica autenticacao
+  if (authLoading) {
+    return (
+      <div
+        className="min-h-screen flex items-center justify-center"
+        style={{
+          backgroundColor: 'var(--chalkboard-green)',
+          backgroundImage: 'var(--chalkboard-texture)'
+        }}
+      >
+        <div className="text-center">
+          <div
+            className="spinner-ia mx-auto mb-6"
+            style={{
+              width: '50px',
+              height: '50px',
+              border: '4px solid var(--chalk-dim)',
+              borderTop: '4px solid var(--accent-yellow)',
+              borderRadius: '50%',
+              animation: 'spin 1s linear infinite'
+            }}
+          ></div>
+          <p style={{ color: 'var(--chalk-white)', fontFamily: 'var(--font-kalam)' }}>
+            Carregando...
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -223,7 +263,9 @@ export default function LoginPage() {
                 fontSize: '1.125rem',
                 fontWeight: 'bold',
                 fontFamily: 'var(--font-kalam)',
-                marginBottom: '1.5rem'
+                marginBottom: '1.5rem',
+                opacity: loading ? 0.7 : 1,
+                cursor: loading ? 'not-allowed' : 'pointer'
               }}
             >
               {loading ? 'Entrando...' : 'Entrar'}
@@ -243,7 +285,7 @@ export default function LoginPage() {
               <div style={{ flex: 1, height: '1px', backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
             </div>
 
-            {/* Botoes Social Login */}
+            {/* Botoes Social Login (placeholder para futuro) */}
             <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
               <button
                 type="button"
@@ -254,8 +296,12 @@ export default function LoginPage() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: '0.5rem',
-                  padding: '0.75rem'
+                  padding: '0.75rem',
+                  opacity: 0.5,
+                  cursor: 'not-allowed'
                 }}
+                disabled
+                title="Em breve"
               >
                 <span style={{ fontSize: '1.25rem' }}>G</span>
                 Google
@@ -269,8 +315,12 @@ export default function LoginPage() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: '0.5rem',
-                  padding: '0.75rem'
+                  padding: '0.75rem',
+                  opacity: 0.5,
+                  cursor: 'not-allowed'
                 }}
+                disabled
+                title="Em breve"
               >
                 <span style={{ fontSize: '1.25rem' }}>f</span>
                 Facebook
@@ -317,5 +367,13 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: "var(--chalkboard-green)" }}><div style={{ color: "var(--chalk-white)" }}>Carregando...</div></div>}>
+      <LoginContent />
+    </Suspense>
   );
 }

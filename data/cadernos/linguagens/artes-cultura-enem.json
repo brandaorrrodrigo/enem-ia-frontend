@@ -1,0 +1,1193 @@
+{
+  "id": "artes-cultura-enem",
+  "slug": "artes-cultura-enem",
+  "titulo": "Artes e Cultura no ENEM",
+  "categoria": "linguagens",
+  "nivel": "intermediario",
+  "descricao": "Estudo das principais manifestações artísticas e culturais cobradas no ENEM, incluindo artes visuais, música, teatro, dança e cultura brasileira.",
+  "icone": "Palette",
+  "cor": "from-pink-600 to-rose-600",
+  "tempoEstimado": "12 horas",
+  "fpRecompensa": 600,
+  "tags": ["artes", "cultura", "música", "pintura", "ENEM"],
+  "modulos": [
+    {
+      "id": "m31",
+      "titulo": "Arte Brasileira Colonial e Imperial",
+      "resumo": "Das primeiras manifestações artísticas no Brasil até o fim do Império, incluindo Barroco, Rococó e Academia Imperial de Belas Artes.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A arte brasileira colonial e imperial reflete a formação cultural do país, mesclando influências europeias com elementos locais. No ENEM, esse período é frequentemente cobrado em questões que relacionam arte, história e identidade nacional. Compreender esse contexto é essencial para interpretar obras e movimentos artísticos."
+        },
+        {
+          "titulo": "O Barroco Brasileiro",
+          "conteudo": "O Barroco chegou ao Brasil no século XVII através dos colonizadores portugueses e missionários jesuítas. Características principais: dramaticidade, contraste de luz e sombra, temas religiosos, riqueza de detalhes. Em Minas Gerais, o Barroco ganhou características próprias com Aleijadinho (Antônio Francisco Lisboa), cujas obras em pedra-sabão e madeira são marcos da arte brasileira. Suas esculturas dos Doze Profetas em Congonhas e os trabalhos nas igrejas de Ouro Preto são Patrimônio da Humanidade. Mestre Ataíde complementou esse período com pinturas de tetos que apresentavam anjos mulatos, indigenizando a iconografia religiosa europeia."
+        },
+        {
+          "titulo": "A Missão Artística Francesa e a Academia Imperial",
+          "conteudo": "Em 1816, a Missão Artística Francesa chegou ao Brasil trazendo o Neoclassicismo. Liderada por Joachim Lebreton, incluía artistas como Jean-Baptiste Debret e Nicolas-Antoine Taunay. Debret documentou o cotidiano brasileiro em aquarelas que hoje são fontes históricas fundamentais. A Academia Imperial de Belas Artes, fundada em 1826, estabeleceu padrões acadêmicos europeus: técnica apurada, temas históricos e mitológicos, idealização das figuras. Victor Meirelles e Pedro Américo foram os grandes nomes da pintura histórica brasileira, com obras como 'Primeira Missa no Brasil' e 'Independência ou Morte'."
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra esse período de três formas principais: 1) Análise de obras de Aleijadinho relacionando com o contexto colonial mineiro e a religiosidade barroca; 2) Interpretação das aquarelas de Debret como documentos históricos sobre escravidão e costumes; 3) Crítica à pintura acadêmica como construção de narrativa nacional e idealização da história. Dica: sempre relacione a obra ao contexto social - o Barroco mineiro surge junto ao ciclo do ouro, e a pintura histórica imperial busca criar uma identidade nacional para o jovem país."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Profetas de Aleijadinho",
+          "descricao": "As 12 esculturas em pedra-sabão no adro do Santuário de Bom Jesus de Matosinhos, em Congonhas (MG), representam o auge do Barroco brasileiro. Note a expressividade dramática e os gestos teatrais típicos do estilo."
+        },
+        {
+          "titulo": "Aquarelas de Debret",
+          "descricao": "'Viagem Pitoresca e Histórica ao Brasil' documenta desde a família real até escravos urbanos. São fontes primárias que revelam hierarquias sociais, vestimentas e práticas cotidianas do Brasil imperial."
+        }
+      ],
+      "dicas": [
+        "Aleijadinho trabalhava com ferramentas amarradas às mãos devido a uma doença degenerativa - esse dado biográfico aparece em questões",
+        "Debret tinha visão europeia sobre o Brasil - suas obras devem ser lidas criticamente como representação, não como realidade objetiva",
+        "A pintura histórica imperial criava mitos fundadores - questione a 'verdade' dessas representações"
+      ],
+      "questoes": [
+        {
+          "id": "q31-1",
+          "enunciado": "As esculturas de Aleijadinho, especialmente os Profetas de Congonhas, representam o auge do Barroco mineiro. Uma característica fundamental dessas obras que as diferencia do Barroco europeu é:",
+          "alternativas": {
+            "A": "O uso exclusivo de materiais importados da Europa",
+            "B": "A adaptação às condições locais, utilizando pedra-sabão e madeira brasileiras",
+            "C": "A total ausência de temas religiosos",
+            "D": "A reprodução fiel dos modelos italianos sem qualquer modificação",
+            "E": "O abandono das técnicas escultóricas tradicionais"
+          },
+          "correta": "B",
+          "explicacao": "Aleijadinho adaptou o Barroco europeu às condições brasileiras, utilizando materiais locais como a pedra-sabão, abundante em Minas Gerais. Essa adaptação criou uma linguagem artística própria, considerada genuinamente brasileira, mantendo a temática religiosa mas com características únicas.",
+          "dificuldade": "medio",
+          "tags": ["barroco", "aleijadinho", "arte colonial"]
+        },
+        {
+          "id": "q31-2",
+          "enunciado": "Jean-Baptiste Debret, integrante da Missão Artística Francesa, produziu extenso registro visual do Brasil no século XIX. Sobre a função histórica de suas aquarelas, é correto afirmar que:",
+          "alternativas": {
+            "A": "São registros objetivos e neutros da realidade brasileira",
+            "B": "Focavam exclusivamente na elite imperial, ignorando outras classes",
+            "C": "Constituem documentos históricos que devem ser lidos criticamente, considerando a perspectiva europeia do artista",
+            "D": "Foram produzidas apenas para decoração dos palácios imperiais",
+            "E": "Retratavam apenas paisagens naturais, sem figuras humanas"
+          },
+          "correta": "C",
+          "explicacao": "As aquarelas de Debret são fontes históricas valiosas, mas devem ser analisadas criticamente. Como europeu, Debret tinha um olhar específico sobre o Brasil, muitas vezes exotizante ou etnocêntrico. Suas obras documentam diversos grupos sociais, mas a perspectiva do artista influencia a representação.",
+          "dificuldade": "medio",
+          "tags": ["debret", "missão francesa", "arte imperial"]
+        },
+        {
+          "id": "q31-3",
+          "enunciado": "A obra 'Independência ou Morte', de Pedro Américo, é um exemplo paradigmático da pintura histórica brasileira do século XIX. O principal objetivo desse tipo de pintura era:",
+          "alternativas": {
+            "A": "Documentar fotograficamente os eventos históricos",
+            "B": "Criticar o sistema monárquico e defender a república",
+            "C": "Construir uma narrativa visual que legitimasse e glorificasse a história nacional",
+            "D": "Representar apenas cenas do cotidiano popular",
+            "E": "Romper com todas as convenções artísticas europeias"
+          },
+          "correta": "C",
+          "explicacao": "A pintura histórica acadêmica tinha função ideológica: criar uma narrativa visual grandiosa que legitimasse o Estado brasileiro e seus heróis. 'Independência ou Morte' idealiza o momento da independência, transformando-o em cena épica, mesmo que a realidade histórica fosse mais prosaica.",
+          "dificuldade": "medio",
+          "tags": ["pintura histórica", "pedro américo", "arte imperial"]
+        },
+        {
+          "id": "q31-4",
+          "enunciado": "Mestre Ataíde foi um importante pintor do período colonial mineiro, conhecido por suas pinturas de teto em igrejas barrocas. Uma inovação significativa de sua obra foi:",
+          "alternativas": {
+            "A": "A introdução de técnicas abstratas na arte religiosa",
+            "B": "O uso exclusivo de tintas importadas da Europa",
+            "C": "A representação de anjos e figuras sagradas com traços mestiços e mulatos",
+            "D": "A recusa em trabalhar com temas religiosos",
+            "E": "A adoção do estilo neoclássico antes da Missão Francesa"
+          },
+          "correta": "C",
+          "explicacao": "Mestre Ataíde inovou ao representar anjos e madonas com traços mestiços, aproximando a iconografia religiosa europeia da realidade racial brasileira. Essa 'mulatização' do sagrado representa uma apropriação criativa e uma forma de identidade cultural.",
+          "dificuldade": "dificil",
+          "tags": ["mestre ataíde", "barroco", "arte colonial"]
+        },
+        {
+          "id": "q31-5",
+          "enunciado": "A Academia Imperial de Belas Artes, fundada no Rio de Janeiro em 1826, estabeleceu os padrões artísticos oficiais do Brasil imperial. Entre as características do academicismo brasileiro, destaca-se:",
+          "alternativas": {
+            "A": "A valorização da arte popular e indígena",
+            "B": "O incentivo às vanguardas e experimentações",
+            "C": "A ênfase na técnica apurada, temas históricos e padrões estéticos europeus",
+            "D": "A rejeição total da influência francesa",
+            "E": "O foco exclusivo em paisagens tropicais"
+          },
+          "correta": "C",
+          "explicacao": "O academicismo brasileiro seguia os padrões europeus trazidos pela Missão Francesa: técnica rigorosa baseada no desenho, temas considerados 'nobres' (história, mitologia, retratos), e idealização das figuras. A Academia formou gerações de artistas dentro dessa estética oficial.",
+          "dificuldade": "facil",
+          "tags": ["academicismo", "academia imperial", "arte imperial"]
+        }
+      ]
+    },
+    {
+      "id": "m32",
+      "titulo": "Modernismo nas Artes Visuais Brasileiras",
+      "resumo": "A Semana de Arte Moderna de 1922 e seus desdobramentos nas artes visuais, incluindo os principais artistas e movimentos modernistas brasileiros.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Modernismo brasileiro nas artes visuais representa uma ruptura com o academicismo do século XIX e a busca por uma identidade artística nacional. A Semana de Arte Moderna de 1922 é o marco inicial, mas o movimento se desenvolveu ao longo de décadas, produzindo artistas fundamentais para a cultura brasileira. No ENEM, esse tema aparece constantemente em questões de Linguagens e Humanas."
+        },
+        {
+          "titulo": "A Semana de Arte Moderna de 1922",
+          "conteudo": "Realizada no Teatro Municipal de São Paulo entre 13 e 17 de fevereiro de 1922, a Semana reuniu artistas, escritores e músicos que propunham renovação estética. Nas artes visuais, destacaram-se: Anita Malfatti (já criticada em 1917 por Monteiro Lobato), Di Cavalcanti (autor do cartaz da Semana), Victor Brecheret (escultura). O evento causou escândalo na elite paulistana, sendo vaiado e criticado pela imprensa conservadora. A proposta era romper com o passadismo acadêmico e criar uma arte brasileira moderna, dialogando com as vanguardas europeias (Expressionismo, Cubismo, Futurismo) mas buscando temas e formas nacionais."
+        },
+        {
+          "titulo": "Os Grandes Nomes do Modernismo Visual",
+          "conteudo": "Tarsila do Amaral: ícone máximo do Modernismo visual brasileiro. Fases principais: Pau-Brasil (cores tropicais, temas brasileiros) e Antropofágica ('Abaporu', 1928 - figura emblemática do movimento). Suas obras sintetizam a proposta de 'devorar' influências estrangeiras e transformá-las em arte genuinamente brasileira. Candido Portinari: maior muralista brasileiro, combinou técnicas modernas com temática social. 'Retirantes' e 'Café' denunciam a desigualdade brasileira. Os painéis 'Guerra e Paz' na ONU são sua obra mais conhecida internacionalmente. Di Cavalcanti: representou o povo brasileiro, especialmente mulatas, festas populares e o Rio de Janeiro boêmio. Lasar Segall: lituano radicado no Brasil, trouxe o Expressionismo europeu e desenvolveu obras sobre imigração e marginalização social."
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra Modernismo visual em três eixos: 1) Análise formal - identificar características modernistas (deformação expressiva, cores não-naturalistas, simplificação de formas); 2) Relação arte-sociedade - especialmente em Portinari, a arte como denúncia social; 3) Conceito de antropofagia - devorar o estrangeiro para criar o nacional. Estratégia: quando aparecer obra de Tarsila, pense em brasilidade e antropofagia; Portinari, pense em crítica social; Di Cavalcanti, pense em cultura popular brasileira."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Abaporu (Tarsila do Amaral, 1928)",
+          "descricao": "Figura com pé e mão enormes, cabeça pequena, ao lado de um cacto e sol. Inspirou o Manifesto Antropófago de Oswald de Andrade. O nome vem do tupi: 'aba' (homem) + 'poru' (que come) = antropófago."
+        },
+        {
+          "titulo": "Retirantes (Candido Portinari, 1944)",
+          "descricao": "Família de retirantes nordestinos em tons terrosos, figuras alongadas e expressivas, denunciando a miséria da seca. Expressionismo a serviço da crítica social."
+        }
+      ],
+      "dicas": [
+        "Tarsila não participou da Semana de 22 - estava em Paris. Mas tornou-se o maior nome visual do movimento",
+        "Antropofagia cultural = devorar influências estrangeiras + transformar em algo brasileiro",
+        "Portinari é o artista mais cobrado no ENEM - memorize 'Retirantes', 'Café' e 'Guerra e Paz'"
+      ],
+      "questoes": [
+        {
+          "id": "q32-1",
+          "enunciado": "A obra 'Abaporu', de Tarsila do Amaral (1928), tornou-se símbolo do Modernismo brasileiro. A desproporção da figura, com pés e mãos enormes e cabeça diminuta, pode ser interpretada como:",
+          "alternativas": {
+            "A": "Erro técnico da artista, ainda em formação",
+            "B": "Cópia fiel de modelos europeus renascentistas",
+            "C": "Valorização do trabalho braçal e do contato com a terra brasileira",
+            "D": "Representação realista do corpo humano",
+            "E": "Crítica à intelectualidade em favor do pensamento racional"
+          },
+          "correta": "C",
+          "explicacao": "A desproporção em 'Abaporu' é intencional e simbólica. Os pés e mãos enormes valorizam o contato com a terra e o trabalho manual, enquanto a cabeça pequena minimiza o intelectualismo. A obra celebra o Brasil telúrico, conectado à natureza, inspirando o movimento antropofágico.",
+          "dificuldade": "medio",
+          "tags": ["tarsila", "abaporu", "modernismo"]
+        },
+        {
+          "id": "q32-2",
+          "enunciado": "A Semana de Arte Moderna de 1922 é considerada um marco na cultura brasileira. Seu principal objetivo era:",
+          "alternativas": {
+            "A": "Reafirmar os valores do academicismo e da arte tradicional",
+            "B": "Promover exclusivamente artistas europeus no Brasil",
+            "C": "Romper com o passadismo e propor uma renovação estética com identidade nacional",
+            "D": "Defender o retorno às formas artísticas coloniais",
+            "E": "Eliminar qualquer influência estrangeira da arte brasileira"
+          },
+          "correta": "C",
+          "explicacao": "A Semana de 22 propunha romper com o 'passadismo' acadêmico e criar uma arte moderna com identidade brasileira. Não rejeitava as vanguardas europeias, mas propunha 'devorá-las' antropofagicamente, transformando-as em expressão nacional.",
+          "dificuldade": "facil",
+          "tags": ["semana de 22", "modernismo", "arte brasileira"]
+        },
+        {
+          "id": "q32-3",
+          "enunciado": "Candido Portinari é reconhecido como um dos maiores artistas brasileiros do século XX. A obra 'Retirantes' (1944) exemplifica uma característica marcante de sua produção:",
+          "alternativas": {
+            "A": "A celebração da elite cafeicultora paulista",
+            "B": "O uso exclusivo de técnicas acadêmicas tradicionais",
+            "C": "A abstração geométrica sem referência à realidade",
+            "D": "O compromisso com a denúncia das desigualdades sociais brasileiras",
+            "E": "A representação idealizada e otimista do povo brasileiro"
+          },
+          "correta": "D",
+          "explicacao": "Portinari utilizou sua arte para denunciar as mazelas sociais brasileiras. 'Retirantes' representa uma família nordestina fugindo da seca, com figuras magras, expressões de sofrimento e tons terrosos que enfatizam a miséria. A arte como instrumento de crítica social é marca de sua obra.",
+          "dificuldade": "facil",
+          "tags": ["portinari", "retirantes", "arte social"]
+        },
+        {
+          "id": "q32-4",
+          "enunciado": "O conceito de 'antropofagia cultural', proposto por Oswald de Andrade e visualmente representado por Tarsila do Amaral, propõe que a cultura brasileira deve:",
+          "alternativas": {
+            "A": "Rejeitar completamente qualquer influência estrangeira",
+            "B": "Copiar fielmente os modelos artísticos europeus",
+            "C": "Absorver influências externas e transformá-las em expressão cultural própria",
+            "D": "Retornar às formas artísticas indígenas pré-coloniais",
+            "E": "Privilegiar a arte popular em detrimento da erudita"
+          },
+          "correta": "C",
+          "explicacao": "A antropofagia cultural propõe 'devorar' as influências estrangeiras - não rejeitá-las nem copiá-las servilmente - e transformá-las em algo genuinamente brasileiro. Como o ritual antropofágico indígena, absorve-se a força do outro para fortalecer a própria cultura.",
+          "dificuldade": "medio",
+          "tags": ["antropofagia", "oswald de andrade", "modernismo"]
+        },
+        {
+          "id": "q32-5",
+          "enunciado": "Di Cavalcanti foi um dos organizadores da Semana de Arte Moderna e autor de seu cartaz. Sua obra se caracteriza principalmente pela:",
+          "alternativas": {
+            "A": "Representação de temas religiosos em estilo barroco",
+            "B": "Abstração geométrica influenciada pelo Construtivismo russo",
+            "C": "Celebração da cultura popular brasileira, especialmente carioca, com destaque para mulatas e festas",
+            "D": "Pintura de paisagens europeias idealizadas",
+            "E": "Crítica radical ao nacionalismo e à brasilidade"
+          },
+          "correta": "C",
+          "explicacao": "Di Cavalcanti é conhecido por representar a cultura popular brasileira, especialmente o Rio de Janeiro: mulatas, sambistas, festas populares, o carnaval. Suas figuras volumosas e coloridas celebram a sensualidade e a alegria do povo brasileiro.",
+          "dificuldade": "medio",
+          "tags": ["di cavalcanti", "modernismo", "cultura popular"]
+        }
+      ]
+    },
+    {
+      "id": "m33",
+      "titulo": "Arte Contemporânea Brasileira",
+      "resumo": "Principais movimentos e artistas da arte brasileira da segunda metade do século XX até a atualidade, incluindo Concretismo, Neoconcretismo e Arte Conceitual.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A arte contemporânea brasileira, a partir dos anos 1950, desenvolveu movimentos de vanguarda reconhecidos internacionalmente. Do rigor geométrico do Concretismo à participação do espectador no Neoconcretismo, até as provocações conceituais de artistas como Cildo Meireles e Adriana Varejão, o Brasil produziu contribuições originais para a arte mundial. O ENEM cobra esse período relacionando arte, sociedade e transformações culturais."
+        },
+        {
+          "titulo": "Concretismo e Neoconcretismo",
+          "conteudo": "Concretismo (anos 1950): surgiu em São Paulo com o Grupo Ruptura (Waldemar Cordeiro, Geraldo de Barros). Características: arte abstrata geométrica, racionalidade matemática, rejeição do subjetivismo, integração arte-design-arquitetura. Neoconcretismo (1959): dissidência carioca liderada por Lygia Clark, Lygia Pape e Hélio Oiticica. O Manifesto Neoconcreto criticava o excesso de racionalismo concreto e propunha: sensibilidade, participação do espectador, obra como experiência. Lygia Clark: 'Bichos' - esculturas de metal articuladas que o espectador manipula. Hélio Oiticica: 'Parangolés' - capas vestíveis que só existem com o movimento do corpo; 'Tropicália' - ambiente instalativo que deu nome ao movimento musical."
+        },
+        {
+          "titulo": "Arte Contemporânea e Conceitual",
+          "conteudo": "A partir dos anos 1960-70, a arte brasileira dialogou com tendências internacionais como Pop Art, Minimalismo e Arte Conceitual, sempre com inflexão crítica própria. Cildo Meireles: 'Inserções em Circuitos Ideológicos' (mensagens políticas em cédulas e garrafas de Coca-Cola durante a ditadura). Arte como guerrilha simbólica. Adriana Varejão: releitura crítica da história colonial através de azulejos que sangram, questionando a narrativa oficial. Ernesto Neto: instalações sensoriais com tecidos e especiarias que envolvem o espectador. Vik Muniz: fotografias de imagens recriadas com materiais inusitados (lixo, chocolate, açúcar), questionando representação e consumo."
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra arte contemporânea em três eixos: 1) Participação do espectador - especialmente Lygia Clark e Oiticica, a obra que só se completa com a interação; 2) Arte e política - Cildo Meireles e a resistência à ditadura através de intervenções sutis; 3) Crítica à história oficial - artistas que revisitam o passado colonial criticamente. Estratégia: quando a questão mencionar 'participação', 'interação' ou 'experiência', pense em Neoconcretismo. Quando mencionar crítica política sutil, pense em Cildo Meireles."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Parangolés (Hélio Oiticica)",
+          "descricao": "Capas, bandeiras e tendas vestíveis que o participante veste e movimenta, geralmente ao som de samba. A obra só existe na experiência corporal - não é objeto para contemplação passiva."
+        },
+        {
+          "titulo": "Inserções em Circuitos Ideológicos (Cildo Meireles)",
+          "descricao": "Projeto de 1970: carimbar 'Yankees Go Home' em cédulas e gravar mensagens políticas em garrafas de Coca-Cola retornáveis. Arte de guerrilha que infiltrava o sistema de circulação de mercadorias."
+        }
+      ],
+      "dicas": [
+        "Neoconcretismo = participação do espectador + sensibilidade + experiência corporal",
+        "Hélio Oiticica cunhou o termo 'Tropicália' para sua instalação - depois virou movimento musical",
+        "Cildo Meireles usava objetos do cotidiano como suporte para mensagens políticas durante a ditadura"
+      ],
+      "questoes": [
+        {
+          "id": "q33-1",
+          "enunciado": "Os 'Bichos' de Lygia Clark são esculturas de metal articuladas que o espectador pode manipular, alterando sua forma. Essa proposta artística representa uma característica central do Neoconcretismo:",
+          "alternativas": {
+            "A": "A valorização da contemplação passiva da obra de arte",
+            "B": "O retorno aos padrões acadêmicos de representação",
+            "C": "A participação ativa do espectador como elemento constitutivo da obra",
+            "D": "A rejeição total de qualquer materialidade na arte",
+            "E": "A reprodução mecânica de formas geométricas rígidas"
+          },
+          "correta": "C",
+          "explicacao": "O Neoconcretismo propunha que a obra de arte não é objeto para contemplação passiva, mas experiência que se completa com a participação do espectador. Os 'Bichos' de Lygia Clark exemplificam isso: só existem plenamente quando manipulados, tornando o espectador coautor da forma.",
+          "dificuldade": "medio",
+          "tags": ["lygia clark", "neoconcretismo", "participação"]
+        },
+        {
+          "id": "q33-2",
+          "enunciado": "O projeto 'Inserções em Circuitos Ideológicos' (1970), de Cildo Meireles, consistia em carimbar mensagens políticas em cédulas de dinheiro e garrafas de Coca-Cola. Essa obra pode ser compreendida como:",
+          "alternativas": {
+            "A": "Propaganda comercial para empresas multinacionais",
+            "B": "Arte de resistência que infiltrava circuitos de consumo com mensagens críticas durante a ditadura",
+            "C": "Vandalismo sem propósito artístico definido",
+            "D": "Celebração acrítica do capitalismo e do consumo",
+            "E": "Retorno às formas tradicionais de pintura de cavalete"
+          },
+          "correta": "B",
+          "explicacao": "Cildo Meireles criou uma forma de 'arte de guerrilha' durante a ditadura militar. Ao inserir mensagens críticas em objetos que circulavam anonimamente (dinheiro, garrafas retornáveis), burlava a censura e transformava o sistema de consumo em veículo de resistência política.",
+          "dificuldade": "medio",
+          "tags": ["cildo meireles", "arte conceitual", "ditadura"]
+        },
+        {
+          "id": "q33-3",
+          "enunciado": "O Concretismo brasileiro, surgido nos anos 1950, caracterizava-se principalmente por:",
+          "alternativas": {
+            "A": "Expressão emocional e subjetiva através de pinceladas gestuais",
+            "B": "Representação figurativa de temas sociais brasileiros",
+            "C": "Abstração geométrica rigorosa baseada em princípios matemáticos e racionais",
+            "D": "Retorno às tradições artísticas coloniais brasileiras",
+            "E": "Participação corporal do espectador na obra"
+          },
+          "correta": "C",
+          "explicacao": "O Concretismo brasileiro propunha uma arte abstrata geométrica, racional e objetiva, baseada em princípios matemáticos. Rejeitava o subjetivismo e a expressão emocional, buscando integração entre arte, design e arquitetura. A participação do espectador seria proposta depois pelo Neoconcretismo, como crítica ao excesso de racionalismo concreto.",
+          "dificuldade": "facil",
+          "tags": ["concretismo", "abstração", "arte brasileira"]
+        },
+        {
+          "id": "q33-4",
+          "enunciado": "Hélio Oiticica criou os 'Parangolés', capas e bandeiras vestíveis que propõem uma experiência artística corporal. Sobre essa proposta, é correto afirmar que:",
+          "alternativas": {
+            "A": "Mantém a separação tradicional entre obra e espectador",
+            "B": "Propõe que a arte existe apenas como objeto para contemplação visual",
+            "C": "Transforma o corpo do participante em parte constitutiva da obra, que só existe em movimento",
+            "D": "Representa um retorno ao academicismo do século XIX",
+            "E": "Rejeita qualquer relação com a cultura popular brasileira"
+          },
+          "correta": "C",
+          "explicacao": "Os Parangolés de Oiticica só existem como obra quando vestidos e movimentados - geralmente ao som de samba, incorporando a cultura popular. O corpo do participante torna-se parte da obra, dissolvendo a fronteira entre arte e vida, entre artista e espectador.",
+          "dificuldade": "medio",
+          "tags": ["hélio oiticica", "parangolés", "neoconcretismo"]
+        },
+        {
+          "id": "q33-5",
+          "enunciado": "O Manifesto Neoconcreto (1959) marcou a dissidência de artistas cariocas em relação ao Concretismo paulista. A principal crítica dos neoconcretos ao movimento concreto era:",
+          "alternativas": {
+            "A": "O excesso de emoção e subjetividade nas obras concretas",
+            "B": "A falta de rigor técnico e formal dos artistas concretos",
+            "C": "O racionalismo excessivo que reduzia a arte a mero exercício técnico, ignorando a sensibilidade",
+            "D": "O uso de cores e formas orgânicas pelos concretos",
+            "E": "A participação exagerada do público nas obras concretas"
+          },
+          "correta": "C",
+          "explicacao": "O Manifesto Neoconcreto criticava o excesso de racionalismo do Concretismo, que teria reduzido a arte a 'máquina' ou 'objeto'. Os neoconcretos propunham resgatar a sensibilidade, a subjetividade e a experiência sensorial, sem abandonar a abstração geométrica mas humanizando-a.",
+          "dificuldade": "dificil",
+          "tags": ["neoconcretismo", "manifesto", "arte brasileira"]
+        }
+      ]
+    },
+    {
+      "id": "m34",
+      "titulo": "Música Brasileira - Das Origens ao Modernismo",
+      "resumo": "História da música brasileira desde o período colonial até Villa-Lobos, incluindo formação da música popular e erudita nacional.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A música brasileira é resultado da fusão de três matrizes culturais: indígena, portuguesa e africana. Essa mistura produziu gêneros únicos que expressam a identidade nacional. No ENEM, questões sobre música geralmente relacionam gêneros musicais a contextos históricos e sociais, ou analisam letras como textos literários. Compreender a formação da música brasileira é essencial para essas questões."
+        },
+        {
+          "titulo": "Formação da Música Brasileira",
+          "conteudo": "Matriz indígena: instrumentos de percussão e sopro, cantos rituais, ritmos ligados à natureza. Matriz portuguesa: melodias, harmonias europeias, instrumentos de corda (viola, violão), formas como a modinha. Matriz africana: riqueza rítmica, síncope, instrumentos de percussão (atabaques, agogô, cuíca), o batuque que originou diversos gêneros. No período colonial, o lundu (fusão afro-portuguesa) tornou-se o primeiro gênero genuinamente brasileiro. O Padre José Maurício Nunes Garcia foi o maior compositor colonial, mestre de capela da Corte no Rio de Janeiro."
+        },
+        {
+          "titulo": "Século XIX e Início do XX",
+          "conteudo": "Com a chegada da Corte (1808), a música erudita europeia ganhou espaço oficial. Carlos Gomes tornou-se o primeiro compositor brasileiro reconhecido internacionalmente com a ópera 'O Guarani' (1870) - porém em estilo italiano, com tema indianista romantizado. Na música popular, surgem gêneros urbanos: o choro (Joaquim Callado, Chiquinha Gonzaga, Pixinguinha) - instrumental virtuosístico que funde elementos europeus e africanos. O maxixe: dança de origem popular, considerada 'imoral' pela elite, primeiro gênero de dança brasileiro. Ernesto Nazareth: compositor que transitava entre o popular e o erudito, seus 'tangos brasileiros' são na verdade maxixes estilizados."
+        },
+        {
+          "titulo": "Villa-Lobos e o Nacionalismo Musical",
+          "conteudo": "Heitor Villa-Lobos (1887-1959) é o maior nome da música erudita brasileira. Participou da Semana de 22 e desenvolveu um nacionalismo musical que incorporava elementos populares e folclóricos em linguagem moderna. Obras fundamentais: 'Bachianas Brasileiras' - fusão de Bach com música popular brasileira; 'Choros' - série que eleva o gênero popular a forma de concerto. Villa-Lobos pesquisou música folclórica pelo Brasil, incorporando cantigas, ritmos e melodias regionais. Durante o Estado Novo, dirigiu a educação musical e implantou o canto orfeônico nas escolas, com objetivo de formação cívica."
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra música brasileira em três formas: 1) Relação entre gêneros e contextos sociais (ex: o samba e a população negra urbana); 2) Villa-Lobos como paralelo musical do Modernismo literário e visual; 3) Análise de letras como texto. Estratégia: associe gêneros musicais a grupos sociais e períodos históricos. Lembre que Villa-Lobos = nacionalismo musical = devorar Bach e transformar em brasileiro (paralelo com antropofagia)."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Bachianas Brasileiras nº 5 (Villa-Lobos)",
+          "descricao": "Para soprano e orquestra de violoncelos, a Ária 'Cantilena' é uma das melodias mais conhecidas da música brasileira erudita. Funde a técnica contrapontística de Bach com melodia de caráter brasileiro."
+        },
+        {
+          "titulo": "Carinhoso (Pixinguinha)",
+          "descricao": "Choro de 1917 (letra de João de Barro adicionada em 1937) considerado um dos maiores clássicos da música brasileira. Demonstra a sofisticação harmônica e melódica do gênero."
+        }
+      ],
+      "dicas": [
+        "Villa-Lobos = nacionalismo musical = equivalente a Tarsila/Oswald na música",
+        "Choro = primeiro gênero instrumental urbano brasileiro, nascido no Rio de Janeiro",
+        "A síncope (deslocamento do acento rítmico) é herança africana presente em quase toda música brasileira"
+      ],
+      "questoes": [
+        {
+          "id": "q34-1",
+          "enunciado": "A música brasileira resulta da fusão de diferentes matrizes culturais. A característica rítmica conhecida como 'síncope', presente em gêneros como samba e choro, tem origem principalmente na matriz:",
+          "alternativas": {
+            "A": "Portuguesa, através das modinhas de salão",
+            "B": "Indígena, através dos cantos rituais",
+            "C": "Africana, através dos batuques trazidos pelos escravizados",
+            "D": "Italiana, através das óperas do século XIX",
+            "E": "Francesa, através das danças de corte"
+          },
+          "correta": "C",
+          "explicacao": "A síncope - deslocamento rítmico que acentua tempos fracos - é contribuição fundamental da matriz africana à música brasileira. Presente nos batuques dos escravizados, tornou-se característica definidora de gêneros como lundu, maxixe, samba e choro.",
+          "dificuldade": "facil",
+          "tags": ["música brasileira", "síncope", "matriz africana"]
+        },
+        {
+          "id": "q34-2",
+          "enunciado": "Heitor Villa-Lobos, maior compositor erudito brasileiro, desenvolveu um projeto de nacionalismo musical. Sua série 'Bachianas Brasileiras' representa:",
+          "alternativas": {
+            "A": "A rejeição total da música europeia em favor do folclore puro",
+            "B": "A cópia fiel do estilo de Johann Sebastian Bach sem modificações",
+            "C": "A fusão da técnica composicional de Bach com elementos da música popular brasileira",
+            "D": "A negação de qualquer influência da música popular na composição erudita",
+            "E": "O abandono da música nacionalista em favor do dodecafonismo"
+          },
+          "correta": "C",
+          "explicacao": "As 'Bachianas Brasileiras' de Villa-Lobos fundem a técnica contrapontística e formal de Bach com melodias, ritmos e caráter da música popular brasileira. É um exemplo de nacionalismo musical que 'devora' a tradição europeia e a transforma em expressão nacional.",
+          "dificuldade": "medio",
+          "tags": ["villa-lobos", "bachianas", "nacionalismo musical"]
+        },
+        {
+          "id": "q34-3",
+          "enunciado": "O choro, gênero instrumental surgido no Rio de Janeiro no final do século XIX, caracteriza-se por:",
+          "alternativas": {
+            "A": "Simplicidade harmônica e execução amadora",
+            "B": "Virtuosismo instrumental, improvisação e fusão de elementos europeus e africanos",
+            "C": "Uso exclusivo de instrumentos eletrônicos",
+            "D": "Letras de protesto político e social",
+            "E": "Rejeição de qualquer influência da música europeia"
+          },
+          "correta": "B",
+          "explicacao": "O choro caracteriza-se pelo virtuosismo técnico dos instrumentistas (flauta, cavaquinho, violão, pandeiro), improvisação sobre melodias estabelecidas, e fusão de danças europeias (polca, valsa) com a rítmica sincopada afro-brasileira. Pixinguinha é seu maior expoente.",
+          "dificuldade": "medio",
+          "tags": ["choro", "música popular", "pixinguinha"]
+        },
+        {
+          "id": "q34-4",
+          "enunciado": "Carlos Gomes alcançou reconhecimento internacional com a ópera 'O Guarani' (1870). Sobre essa obra e seu contexto, é correto afirmar:",
+          "alternativas": {
+            "A": "Utilizava linguagem musical de vanguarda, rompendo com a tradição operística",
+            "B": "Apresentava tema indianista em estilo musical italiano, seguindo o padrão europeu da época",
+            "C": "Incorporava ritmos populares brasileiros como o lundu e o maxixe",
+            "D": "Foi rejeitada pelo público europeu por seu caráter nacionalista radical",
+            "E": "Marcou o início do nacionalismo musical brasileiro que seria desenvolvido por Villa-Lobos"
+          },
+          "correta": "B",
+          "explicacao": "Carlos Gomes compôs 'O Guarani' em estilo italiano, seguindo a tradição operística europeia de Verdi. O tema era indianista (baseado no romance de José de Alencar), mas a linguagem musical era europeia. O verdadeiro nacionalismo musical brasileiro só viria com Villa-Lobos no século XX.",
+          "dificuldade": "dificil",
+          "tags": ["carlos gomes", "ópera", "romantismo"]
+        },
+        {
+          "id": "q34-5",
+          "enunciado": "Durante o Estado Novo (1937-1945), Villa-Lobos dirigiu a educação musical e implantou o canto orfeônico nas escolas brasileiras. O objetivo principal dessa política era:",
+          "alternativas": {
+            "A": "Formar músicos profissionais para orquestras sinfônicas",
+            "B": "Preservar exclusivamente a música folclórica regional",
+            "C": "Promover a formação cívica e disciplinar através do canto coletivo",
+            "D": "Introduzir a música de vanguarda europeia nas escolas",
+            "E": "Combater a influência da música popular urbana"
+          },
+          "correta": "C",
+          "explicacao": "O canto orfeônico no Estado Novo tinha função cívica e disciplinar: o canto coletivo de hinos e canções patrióticas visava formar cidadãos ordeiros e nacionalistas. Villa-Lobos adaptou seu nacionalismo musical aos objetivos do regime varguista, organizando grandes concentrações corais.",
+          "dificuldade": "dificil",
+          "tags": ["villa-lobos", "estado novo", "educação musical"]
+        }
+      ]
+    },
+    {
+      "id": "m35",
+      "titulo": "MPB, Tropicália e Música de Protesto",
+      "resumo": "A música popular brasileira dos anos 1960-70, incluindo a Bossa Nova, os festivais da canção, o Tropicalismo e a música de resistência à ditadura.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "Os anos 1960-70 foram o período mais rico e politicamente engajado da música popular brasileira. Da sofisticação intimista da Bossa Nova à explosão antropofágica da Tropicália, passando pelas canções de protesto, a música tornou-se veículo de expressão cultural, estética e política. No ENEM, esse período é frequentemente cobrado, especialmente nas relações entre arte, política e identidade nacional."
+        },
+        {
+          "titulo": "Bossa Nova",
+          "conteudo": "Surgida no final dos anos 1950 no Rio de Janeiro, a Bossa Nova revolucionou a música brasileira e conquistou o mundo. Características: harmonia sofisticada influenciada pelo jazz, batida sincopada do violão (João Gilberto), canto intimista ('voz e violão'), letras coloquiais sobre temas cotidianos. Principais nomes: João Gilberto (criador da batida), Tom Jobim (compositor), Vinicius de Moraes (letrista). 'Chega de Saudade' (1958) é considerada a canção inaugural. 'Garota de Ipanema' tornou-se uma das músicas mais gravadas do mundo. A Bossa Nova representava o Brasil moderno, cosmopolita e otimista do governo JK."
+        },
+        {
+          "titulo": "Festivais e Canção de Protesto",
+          "conteudo": "Os festivais de música da TV (Record e Globo) nos anos 1960 revelaram uma geração engajada politicamente contra a ditadura militar. A canção de protesto, influenciada pela Bossa Nova mas com temática social, tinha como expoentes: Geraldo Vandré ('Pra Não Dizer que Não Falei das Flores', hino contra a ditadura), Edu Lobo, Nara Leão, Elis Regina, Chico Buarque (mestre da metáfora para burlar a censura: 'Cálice' = cale-se). Essas canções utilizavam linguagem poética para transmitir mensagens políticas que a censura dificilmente percebia, tornando-se forma de resistência cultural."
+        },
+        {
+          "titulo": "Tropicália",
+          "conteudo": "O Tropicalismo (1967-1968) foi uma revolução estética que 'devorou' antropofagicamente todas as influências. Liderado por Caetano Veloso e Gilberto Gil, incluía Tom Zé, Os Mutantes, Gal Costa, Torquato Neto, os maestros Rogério Duprat e Julio Medaglia. Proposta: misturar Beatles e baião, guitarra elétrica e berimbau, vanguarda e cultura popular, o 'bom gosto' e o 'mau gosto'. 'Tropicália' (canção de Caetano) e 'Alegria, Alegria' inauguraram o movimento. O álbum-manifesto 'Tropicália ou Panis et Circensis' (1968) é marco histórico. Caetano e Gil foram presos e exilados após o AI-5. O movimento dividia a esquerda: para uns, era alienação; para outros, revolução comportamental."
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra esse período em três eixos: 1) Bossa Nova como expressão do Brasil moderno de JK, com sua sofisticação e otimismo; 2) Canção de protesto e a relação arte-política durante a ditadura, especialmente o uso de metáforas para burlar a censura; 3) Tropicália como movimento antropofágico que misturava influências, questionando dicotomias (nacional/estrangeiro, erudito/popular, engajado/alienado). Dica: se a questão mencionar mistura de referências, guitarra elétrica + tradição, pense em Tropicália."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Cálice (Chico Buarque e Gilberto Gil, 1973)",
+          "descricao": "Censurada por sete anos, a canção usa 'cálice' (objeto) como metáfora de 'cale-se' (ordem de silêncio). Exemplo máximo de como artistas burlavam a censura com linguagem poética de duplo sentido."
+        },
+        {
+          "titulo": "Alegria, Alegria (Caetano Veloso, 1967)",
+          "descricao": "Canção inaugural do Tropicalismo, causou polêmica ao ser apresentada com guitarras elétricas (associadas ao rock imperialista). A letra mistura referências: Brigitte Bardot, Coca-Cola, guerrilhas, cardinales - colagem pop de fragmentos da realidade."
+        }
+      ],
+      "dicas": [
+        "Bossa Nova = Brasil moderno de JK, otimismo, sofisticação, classe média carioca",
+        "Canção de protesto = metáforas para burlar censura, engajamento político direto",
+        "Tropicália = mistura antropofágica, guitarras + berimbau, questiona dicotomias"
+      ],
+      "questoes": [
+        {
+          "id": "q35-1",
+          "enunciado": "A Bossa Nova surgiu no final dos anos 1950 e representou uma renovação na música popular brasileira. Seu surgimento pode ser relacionado ao contexto histórico do governo de Juscelino Kubitschek porque:",
+          "alternativas": {
+            "A": "Expressava o pessimismo e a crise econômica do período",
+            "B": "Rejeitava qualquer influência estrangeira na música brasileira",
+            "C": "Refletia o otimismo modernizador e cosmopolita do Brasil dos '50 anos em 5'",
+            "D": "Representava a resistência cultural contra a ditadura militar",
+            "E": "Propunha o retorno às formas musicais tradicionais do século XIX"
+          },
+          "correta": "C",
+          "explicacao": "A Bossa Nova surgiu no contexto otimista do governo JK, com sua modernização acelerada, construção de Brasília e abertura ao capital estrangeiro. A sofisticação harmônica, o diálogo com o jazz e o clima intimista refletiam o Brasil urbano, moderno e cosmopolita daquele momento.",
+          "dificuldade": "medio",
+          "tags": ["bossa nova", "JK", "contexto histórico"]
+        },
+        {
+          "id": "q35-2",
+          "enunciado": "Durante a ditadura militar, a canção 'Cálice', de Chico Buarque e Gilberto Gil, foi censurada. O recurso utilizado pelos compositores para criticar a repressão foi:",
+          "alternativas": {
+            "A": "Denúncia explícita e direta do regime militar",
+            "B": "Uso de metáfora e duplo sentido ('cálice' como 'cale-se')",
+            "C": "Letras em língua estrangeira para escapar dos censores",
+            "D": "Abandono da palavra em favor de música apenas instrumental",
+            "E": "Composição de hinos de apoio ao governo"
+          },
+          "correta": "B",
+          "explicacao": "'Cálice' usa o duplo sentido: 'cálice' (objeto religioso, referência bíblica a Cristo pedindo que o cálice de sofrimento passasse) soa como 'cale-se' (ordem de silêncio imposta pela censura). Esse recurso poético permitia criticar a ditadura de forma velada, ainda que os censores tenham percebido e proibido a canção.",
+          "dificuldade": "facil",
+          "tags": ["chico buarque", "censura", "ditadura"]
+        },
+        {
+          "id": "q35-3",
+          "enunciado": "O movimento Tropicalista (1967-1968) propunha uma renovação estética radical na música brasileira. Uma característica central do Tropicalismo era:",
+          "alternativas": {
+            "A": "A defesa da pureza da música nacional contra influências estrangeiras",
+            "B": "O uso exclusivo de instrumentos acústicos tradicionais",
+            "C": "A mistura antropofágica de referências diversas: rock, baião, vanguarda, kitsch",
+            "D": "O engajamento político direto e panfletário contra a ditadura",
+            "E": "A continuidade estética da Bossa Nova sem rupturas"
+          },
+          "correta": "C",
+          "explicacao": "O Tropicalismo propunha devorar antropofagicamente todas as influências, sem hierarquias entre nacional/estrangeiro, erudito/popular, bom/mau gosto. Guitarras elétricas conviviam com berimbau, Beatles com Luiz Gonzaga, vanguarda com música brega. Essa mistura radical era sua marca.",
+          "dificuldade": "medio",
+          "tags": ["tropicália", "antropofagia", "caetano"]
+        },
+        {
+          "id": "q35-4",
+          "enunciado": "Os festivais de música da televisão brasileira nos anos 1960 foram importantes porque:",
+          "alternativas": {
+            "A": "Promoviam exclusivamente música estrangeira no Brasil",
+            "B": "Revelaram artistas engajados e tornaram-se palco de debates estéticos e políticos",
+            "C": "Defendiam o regime militar através de canções patrióticas",
+            "D": "Restringiam-se à música erudita, ignorando a produção popular",
+            "E": "Evitavam qualquer polêmica ou discussão sobre a realidade brasileira"
+          },
+          "correta": "B",
+          "explicacao": "Os festivais (TV Record, TV Globo) foram palco de efervescência cultural: revelaram Chico Buarque, Caetano, Gil, Elis Regina, Edu Lobo. Eram também arena de debates: a polêmica das guitarras elétricas, a tensão entre canção de protesto e Tropicália, tudo televisionado para milhões de espectadores.",
+          "dificuldade": "facil",
+          "tags": ["festivais", "MPB", "anos 60"]
+        },
+        {
+          "id": "q35-5",
+          "enunciado": "A canção 'Pra Não Dizer que Não Falei das Flores' (Caminhando), de Geraldo Vandré, tornou-se hino contra a ditadura militar. Em comparação com o Tropicalismo de Caetano e Gil, a canção de Vandré se caracterizava por:",
+          "alternativas": {
+            "A": "Experimentação sonora e mistura de gêneros musicais",
+            "B": "Uso de guitarras elétricas e referências ao rock internacional",
+            "C": "Engajamento político direto e mobilização popular através de linguagem acessível",
+            "D": "Sofisticação harmônica derivada da Bossa Nova",
+            "E": "Ironia e paródia como formas de crítica ao sistema"
+          },
+          "correta": "C",
+          "explicacao": "Vandré representava a canção de protesto de engajamento direto, com linguagem acessível e convocação explícita à luta ('Vem, vamos embora / Que esperar não é saber'). Contrastava com a ironia tropicalista e a sofisticação da Bossa Nova, privilegiando a comunicação política direta com o público.",
+          "dificuldade": "medio",
+          "tags": ["vandré", "canção de protesto", "ditadura"]
+        }
+      ]
+    },
+    {
+      "id": "m36",
+      "titulo": "Teatro Brasileiro",
+      "resumo": "História do teatro no Brasil, dos autos jesuíticos ao Teatro de Arena e Oficina, incluindo principais dramaturgos e movimentos teatrais.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O teatro brasileiro desenvolveu-se desde o período colonial até tornar-se instrumento de reflexão crítica sobre a sociedade. No ENEM, questões sobre teatro geralmente relacionam obras e movimentos a contextos históricos, ou analisam trechos de peças como textos literários. Conhecer os principais momentos da história teatral brasileira é fundamental para essas questões."
+        },
+        {
+          "titulo": "Do Colonial ao Século XIX",
+          "conteudo": "Teatro Colonial: os jesuítas utilizavam autos (peças religiosas) para catequizar indígenas, misturando português e tupi. José de Anchieta foi o principal autor desses autos. Século XIX: com a chegada da Corte (1808), o teatro ganhou espaço institucional. João Caetano foi o grande ator do período. Martins Pena criou a comédia de costumes brasileira, satirizando a sociedade carioca em peças como 'O Juiz de Paz da Roça'. O Romantismo trouxe dramas históricos de Gonçalves Dias e Castro Alves. No final do século, Arthur Azevedo consolidou o teatro de revista e a opereta popular."
+        },
+        {
+          "titulo": "Modernização do Teatro Brasileiro (1940-1960)",
+          "conteudo": "Os Comediantes (1943): grupo carioca que renovou a cena com a montagem de 'Vestido de Noiva', de Nelson Rodrigues, dirigida por Ziembinski. Marco do teatro moderno brasileiro. Teatro Brasileiro de Comédia - TBC (1948): profissionalizou o teatro em São Paulo, com repertório internacional de qualidade e grandes atores. Nelson Rodrigues: maior dramaturgo brasileiro, revolucionou a linguagem teatral. Obras como 'Vestido de Noiva' (inovação formal), 'A Falecida', 'Toda Nudez Será Castigada' expõem a hipocrisia da família brasileira com linguagem ousada. Seus personagens expressam desejos reprimidos e a moral burguesa é desnudada."
+        },
+        {
+          "titulo": "Teatro de Arena e Teatro Oficina",
+          "conteudo": "Teatro de Arena (São Paulo, 1953): democratizou o teatro com palco em arena (público ao redor), ingressos populares e dramaturgia brasileira engajada. Gianfrancesco Guarnieri ('Eles Não Usam Black-Tie'), Augusto Boal (criador do Teatro do Oprimido), Oduvaldo Vianna Filho (Vianinha). O Arena politizou o teatro brasileiro, discutindo luta de classes e realidade nacional. Teatro Oficina (1958): liderado por José Celso Martinez Corrêa, radicalizou a experimentação. A montagem de 'O Rei da Vela' (Oswald de Andrade), em 1967, foi marco do teatro tropicalista: antropofagia cênica, agressividade, provocação ao público. Após o AI-5, ambos os grupos foram perseguidos, e artistas partiram para o exílio."
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra teatro em três eixos: 1) Nelson Rodrigues como renovador da linguagem teatral e crítico da moral burguesa; 2) Teatro de Arena e a dramaturgia engajada dos anos 1960; 3) Análise de trechos de peças como texto literário. Estratégia: Nelson Rodrigues = hipocrisia da família brasileira, desejo reprimido. Arena = teatro político, popular, engajado. Oficina = experimentação radical, tropicalismo cênico."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Vestido de Noiva (Nelson Rodrigues, 1943)",
+          "descricao": "Revolucionou o teatro brasileiro com sua estrutura em três planos (realidade, memória e alucinação) que se interpenetram. Conta a história de Alaíde, atropelada, enquanto memórias e fantasias se misturam em cena."
+        },
+        {
+          "titulo": "Eles Não Usam Black-Tie (Gianfrancesco Guarnieri, 1958)",
+          "descricao": "Marco do teatro político brasileiro. Retrata conflito entre pai (operário grevista) e filho (que fura a greve) em família de trabalhadores. Primeira peça brasileira a colocar operários como protagonistas."
+        }
+      ],
+      "dicas": [
+        "Nelson Rodrigues = crítica à moral burguesa, temas tabus (adultério, incesto, desejo)",
+        "Teatro de Arena = engajamento político, dramaturgia nacional, palco democrático",
+        "Augusto Boal criou o Teatro do Oprimido, método que transforma espectadores em 'espect-atores'"
+      ],
+      "questoes": [
+        {
+          "id": "q36-1",
+          "enunciado": "A peça 'Vestido de Noiva' (1943), de Nelson Rodrigues, é considerada o marco do teatro moderno brasileiro. A inovação fundamental dessa obra foi:",
+          "alternativas": {
+            "A": "O uso exclusivo de cenários realistas e lineares",
+            "B": "A estrutura em planos simultâneos (realidade, memória, alucinação) que se interpenetram",
+            "C": "A temática religiosa e moralizante típica dos autos coloniais",
+            "D": "A representação idealizada da família brasileira",
+            "E": "A adaptação de textos clássicos europeus para o contexto nacional"
+          },
+          "correta": "B",
+          "explicacao": "'Vestido de Noiva' inovou ao estruturar a narrativa em três planos que se alternam e se interpenetram: a realidade do hospital, as memórias da protagonista e suas alucinações/fantasias. Essa fragmentação da narrativa e do tempo trouxe o teatro brasileiro para a modernidade.",
+          "dificuldade": "medio",
+          "tags": ["nelson rodrigues", "vestido de noiva", "teatro moderno"]
+        },
+        {
+          "id": "q36-2",
+          "enunciado": "O Teatro de Arena de São Paulo, fundado em 1953, representou uma renovação importante na cena brasileira. Uma característica fundamental desse grupo era:",
+          "alternativas": {
+            "A": "O foco exclusivo em comédias de entretenimento sem conteúdo político",
+            "B": "A encenação apenas de textos clássicos europeus em tradução",
+            "C": "O engajamento político e a valorização da dramaturgia nacional sobre temas sociais",
+            "D": "O uso de tecnologia cenográfica sofisticada e ingressos caros",
+            "E": "A recusa em formar novos atores e diretores brasileiros"
+          },
+          "correta": "C",
+          "explicacao": "O Arena tinha projeto político claro: democratizar o teatro (palco em arena, ingressos populares) e desenvolver dramaturgia nacional engajada. Peças como 'Eles Não Usam Black-Tie' discutiam luta de classes e realidade brasileira, formando uma geração de artistas politizados.",
+          "dificuldade": "medio",
+          "tags": ["teatro de arena", "teatro político", "guarnieri"]
+        },
+        {
+          "id": "q36-3",
+          "enunciado": "A dramaturgia de Nelson Rodrigues frequentemente escandalizou o público brasileiro. Uma temática recorrente em suas peças é:",
+          "alternativas": {
+            "A": "A celebração da moral tradicional e dos valores familiares",
+            "B": "A exposição da hipocrisia burguesa e dos desejos reprimidos sob a aparência de moralidade",
+            "C": "A defesa do regime militar e da ordem estabelecida",
+            "D": "A representação idealizada do amor romântico",
+            "E": "A crítica ao capitalismo através de personagens operários"
+          },
+          "correta": "B",
+          "explicacao": "Nelson Rodrigues desnuda a hipocrisia da família burguesa brasileira: sob a aparência de moralidade, seus personagens escondem desejos reprimidos, adultérios, incestos, obsessões. Suas peças revelam o que a moral oficial esconde, provocando escândalo e censura.",
+          "dificuldade": "facil",
+          "tags": ["nelson rodrigues", "dramaturgia", "crítica social"]
+        },
+        {
+          "id": "q36-4",
+          "enunciado": "A peça 'Eles Não Usam Black-Tie' (1958), de Gianfrancesco Guarnieri, é marco do teatro político brasileiro. Sua importância histórica reside em:",
+          "alternativas": {
+            "A": "Introduzir técnicas do teatro épico de Brecht no Brasil",
+            "B": "Apresentar pela primeira vez operários como protagonistas na dramaturgia nacional",
+            "C": "Romper com qualquer forma de engajamento político no teatro",
+            "D": "Recuperar as formas teatrais do período colonial",
+            "E": "Adaptar clássicos shakespearianos para o contexto brasileiro"
+          },
+          "correta": "B",
+          "explicacao": "'Eles Não Usam Black-Tie' foi pioneira ao colocar uma família operária como protagonista, discutindo greve, luta de classes e conflitos de geração entre trabalhadores. Rompeu com a tradição de representar apenas a elite ou tipos caricatos das classes populares.",
+          "dificuldade": "medio",
+          "tags": ["guarnieri", "black-tie", "teatro político"]
+        },
+        {
+          "id": "q36-5",
+          "enunciado": "O Teatro Oficina, sob direção de José Celso Martinez Corrêa, montou 'O Rei da Vela' (1967), de Oswald de Andrade. Essa montagem pode ser relacionada ao Tropicalismo porque:",
+          "alternativas": {
+            "A": "Seguia fielmente os padrões do teatro realista tradicional",
+            "B": "Evitava qualquer provocação ou experimentação formal",
+            "C": "Propunha uma antropofagia cênica, misturando referências e agredindo convenções",
+            "D": "Defendia a pureza da cultura nacional contra influências estrangeiras",
+            "E": "Representava o engajamento político direto e panfletário"
+          },
+          "correta": "C",
+          "explicacao": "A montagem de 'O Rei da Vela' pelo Oficina foi marco do teatro tropicalista: recuperava a antropofagia de Oswald de Andrade, misturava referências cultas e populares, agredia o bom gosto burguês, provocava o público. Era o equivalente cênico do que Caetano e Gil faziam na música.",
+          "dificuldade": "dificil",
+          "tags": ["teatro oficina", "tropicalismo", "oswald de andrade"]
+        }
+      ]
+    },
+    {
+      "id": "m37",
+      "titulo": "Cinema Brasileiro",
+      "resumo": "História do cinema no Brasil, da Bela Época ao Cinema Novo e contemporâneo, incluindo principais diretores, movimentos e filmes.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O cinema brasileiro, apesar das dificuldades de competir com Hollywood, produziu movimentos originais e reconhecidos internacionalmente. Do Cinema Novo de Glauber Rocha ao sucesso comercial da Retomada nos anos 1990, o cinema nacional reflete e questiona a realidade brasileira. No ENEM, questões sobre cinema relacionam filmes a contextos históricos ou analisam a linguagem cinematográfica como forma de expressão artística."
+        },
+        {
+          "titulo": "Primeiras Décadas e Chanchadas",
+          "conteudo": "Bela Época do Cinema Brasileiro (1908-1912): primeiros filmes de ficção, como 'Os Estranguladores' (1908). Ciclos regionais nos anos 1920-30: Recife, Cataguases, Campinas. Vera Cruz (1949-1954): estúdio paulista que tentou fazer cinema de qualidade nos moldes de Hollywood. Produziu 'O Cangaceiro' (Lima Barreto, 1953), premiado em Cannes. Chanchadas: comédias musicais populares da Atlântida (RJ) com Oscarito, Grande Otelo, Zé Trindade. Desprezadas pela crítica na época, hoje são valorizadas como registro cultural. Misturavam humor, música popular e paródia de filmes americanos."
+        },
+        {
+          "titulo": "Cinema Novo",
+          "conteudo": "O Cinema Novo (anos 1960) foi o mais importante movimento cinematográfico brasileiro. Lema: 'Uma câmera na mão e uma ideia na cabeça' - cinema de baixo orçamento mas com proposta estética e política radical. Glauber Rocha: líder do movimento, teórico da 'estética da fome'. Filmes: 'Deus e o Diabo na Terra do Sol' (1964), 'Terra em Transe' (1967). Cinema alegórico, barroco, que discute poder, religião e revolução no Brasil. Nelson Pereira dos Santos: 'Vidas Secas' (1963), adaptação de Graciliano Ramos, marco do realismo crítico. 'Rio, 40 Graus' (1955) já antecipava o Cinema Novo. Outros nomes: Cacá Diegues, Ruy Guerra, Joaquim Pedro de Andrade ('Macunaíma', 1969 - antropofagia tropicalista). O movimento dialogava com a Nouvelle Vague francesa e o Neorrealismo italiano, mas buscava linguagem própria para a realidade brasileira."
+        },
+        {
+          "titulo": "Da Embrafilme à Retomada",
+          "conteudo": "Anos 1970-80: a Embrafilme (estatal) financiou produções que oscilavam entre o cinema de autor e o comercial. Pornochanchadas dominaram o mercado popular. Anos 1990: o governo Collor extinguiu a Embrafilme, quase destruindo o cinema nacional. Retomada (a partir de 1994): com leis de incentivo (Rouanet, Audiovisual), o cinema brasileiro ressurgiu. 'Carlota Joaquina' (Carla Camurati, 1995) marca o início. Sucessos: 'Central do Brasil' (Walter Salles, 1998) - indicado ao Oscar; 'Cidade de Deus' (Fernando Meirelles, 2002) - reconhecimento internacional. Cinema contemporâneo: diversificado, inclui produções de gênero, documentários, cinema de periferia. Kleber Mendonça Filho ('Bacurau', 2019) representa o cinema autoral premiado internacionalmente."
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra cinema em três eixos: 1) Cinema Novo como movimento estético e político, especialmente Glauber Rocha e a 'estética da fome'; 2) Relação entre filmes e contexto histórico (chanchadas e populismo, Cinema Novo e pré-64, Retomada e redemocratização); 3) Análise de linguagem cinematográfica como texto. Estratégia: Cinema Novo = 'câmera na mão, ideia na cabeça', estética da fome, sertão e favela, Glauber Rocha."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Deus e o Diabo na Terra do Sol (Glauber Rocha, 1964)",
+          "descricao": "Épico sobre o sertão nordestino que mistura cangaço, messianismo e revolução. Linguagem barroca, influência de western e teatro épico. Representa a 'estética da fome': fazer do subdesenvolvimento linguagem artística."
+        },
+        {
+          "titulo": "Vidas Secas (Nelson Pereira dos Santos, 1963)",
+          "descricao": "Adaptação do romance de Graciliano Ramos. Retrato cru da família de retirantes nordestinos, com fotografia estourada (sol inclemente) e narrativa despojada. Marco do realismo crítico no Cinema Novo."
+        }
+      ],
+      "dicas": [
+        "Cinema Novo = baixo orçamento + proposta política + linguagem inovadora",
+        "Glauber Rocha teorizou a 'estética da fome': transformar a miséria em linguagem cinematográfica original",
+        "'Central do Brasil' e 'Cidade de Deus' são marcos da Retomada dos anos 90-2000"
+      ],
+      "questoes": [
+        {
+          "id": "q37-1",
+          "enunciado": "O Cinema Novo brasileiro, movimento dos anos 1960, tinha como lema 'uma câmera na mão e uma ideia na cabeça'. Essa frase expressa:",
+          "alternativas": {
+            "A": "A busca por superprodações nos moldes de Hollywood",
+            "B": "A recusa de qualquer conteúdo político ou social nos filmes",
+            "C": "A proposta de fazer cinema autoral e engajado com recursos mínimos",
+            "D": "A defesa do cinema de entretenimento puro e comercial",
+            "E": "O retorno às formas narrativas clássicas do cinema americano"
+          },
+          "correta": "C",
+          "explicacao": "O lema do Cinema Novo expressa sua proposta: fazer cinema autoral e politicamente engajado sem depender de grandes orçamentos. A 'câmera na mão' indica produção leve e ágil; a 'ideia na cabeça' indica conteúdo reflexivo e crítico. Era possível fazer grande cinema com poucos recursos.",
+          "dificuldade": "facil",
+          "tags": ["cinema novo", "glauber rocha", "cinema brasileiro"]
+        },
+        {
+          "id": "q37-2",
+          "enunciado": "Glauber Rocha, principal nome do Cinema Novo, desenvolveu o conceito de 'estética da fome'. Essa proposta significava:",
+          "alternativas": {
+            "A": "Copiar a estética dos filmes de Hollywood sobre pobreza",
+            "B": "Evitar qualquer representação da miséria brasileira nos filmes",
+            "C": "Transformar as condições de subdesenvolvimento em linguagem cinematográfica original",
+            "D": "Produzir filmes apenas para o público internacional",
+            "E": "Fazer cinema de alto orçamento sobre temas sociais"
+          },
+          "correta": "C",
+          "explicacao": "A 'estética da fome' de Glauber Rocha propõe que o cinema brasileiro transforme suas condições de subdesenvolvimento (técnico, econômico) em linguagem artística original, em vez de tentar imitar o cinema rico. A fome e a miséria não são apenas temas, mas moldam a própria forma do filme.",
+          "dificuldade": "medio",
+          "tags": ["glauber rocha", "estética da fome", "cinema novo"]
+        },
+        {
+          "id": "q37-3",
+          "enunciado": "As chanchadas produzidas pela Atlântida nos anos 1940-50 eram caracterizadas por:",
+          "alternativas": {
+            "A": "Dramas sociais sobre a realidade brasileira em linguagem realista",
+            "B": "Comédias musicais populares com humor, música e paródias de filmes americanos",
+            "C": "Documentários etnográficos sobre povos indígenas",
+            "D": "Filmes de arte experimental influenciados pelas vanguardas europeias",
+            "E": "Adaptações literárias de clássicos da literatura brasileira"
+          },
+          "correta": "B",
+          "explicacao": "As chanchadas eram comédias musicais populares, com atores como Oscarito e Grande Otelo, que misturavam humor, números musicais e paródias de filmes hollywoodianos. Desprezadas pela crítica na época, são hoje valorizadas como registro da cultura popular urbana brasileira.",
+          "dificuldade": "facil",
+          "tags": ["chanchadas", "atlântida", "cinema popular"]
+        },
+        {
+          "id": "q37-4",
+          "enunciado": "O filme 'Vidas Secas' (1963), de Nelson Pereira dos Santos, é marco do Cinema Novo. Sua importância está em:",
+          "alternativas": {
+            "A": "Introduzir efeitos especiais sofisticados no cinema brasileiro",
+            "B": "Representar a elite brasileira em comédias de costumes",
+            "C": "Adaptar Graciliano Ramos com linguagem realista que expressa a aridez do sertão",
+            "D": "Propor uma visão otimista e romantizada do Nordeste",
+            "E": "Utilizar exclusivamente atores estrangeiros no elenco"
+          },
+          "correta": "C",
+          "explicacao": "'Vidas Secas' adapta o romance de Graciliano Ramos com linguagem cinematográfica que expressa a aridez: fotografia estourada pelo sol, narrativa despojada, silêncios. A forma do filme traduz a experiência da seca e da miséria, sendo marco do realismo crítico do Cinema Novo.",
+          "dificuldade": "medio",
+          "tags": ["vidas secas", "nelson pereira", "cinema novo"]
+        },
+        {
+          "id": "q37-5",
+          "enunciado": "A chamada 'Retomada' do cinema brasileiro, nos anos 1990, refere-se a:",
+          "alternativas": {
+            "A": "O retorno aos padrões estéticos do Cinema Novo dos anos 1960",
+            "B": "A recuperação da produção nacional após a crise causada pelo fim da Embrafilme",
+            "C": "A volta das chanchadas como gênero dominante",
+            "D": "A estatização completa da produção cinematográfica",
+            "E": "O abandono de qualquer forma de incentivo governamental ao cinema"
+          },
+          "correta": "B",
+          "explicacao": "A 'Retomada' refere-se ao ressurgimento do cinema brasileiro nos anos 1990, após a crise causada pelo governo Collor (que extinguiu a Embrafilme). Com novas leis de incentivo fiscal, a produção recuperou-se, resultando em filmes como 'Central do Brasil' e 'Cidade de Deus'.",
+          "dificuldade": "medio",
+          "tags": ["retomada", "cinema brasileiro", "anos 90"]
+        }
+      ]
+    },
+    {
+      "id": "m38",
+      "titulo": "Dança e Expressão Corporal",
+      "resumo": "História da dança no Brasil e no mundo, incluindo danças populares brasileiras, balé clássico, dança moderna e contemporânea.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A dança é forma de expressão presente em todas as culturas, do ritual ao espetáculo. No ENEM, questões sobre dança geralmente relacionam manifestações a contextos culturais, analisam a dança como linguagem corporal ou discutem seu papel social (identidade, resistência, celebração). Compreender os principais gêneros e suas características é essencial para essas questões."
+        },
+        {
+          "titulo": "Danças Populares Brasileiras",
+          "conteudo": "O Brasil possui rica diversidade de danças populares, resultado da mistura de matrizes indígena, africana e europeia. Samba: originário dos batuques africanos, desenvolveu-se no Rio de Janeiro. O samba de roda do Recôncavo Baiano é Patrimônio Imaterial da Humanidade. Frevo: dança acrobática de Pernambuco, surgida no carnaval de Recife, com passos atléticos e sombrinha colorida. Também Patrimônio Imaterial. Maracatu: cortejo de origem afro-brasileira, com reis, rainhas e caboclos de lança. Bumba-meu-boi/Boi-bumbá: auto dramático-coreográfico presente em todo o país com variações regionais. Capoeira: arte marcial-dança-jogo de origem africana, tornou-se símbolo de resistência cultural negra. Patrimônio Imaterial da Humanidade."
+        },
+        {
+          "titulo": "Balé Clássico e Moderno",
+          "conteudo": "Balé clássico: originou-se nas cortes europeias do Renascimento, codificando-se na França do século XVII. Características: posições e passos codificados, sapatilhas de ponta, busca de leveza e elevação, narrativas de contos de fadas e mitos. No Brasil, o Theatro Municipal do Rio (1909) e a vinda de companhias estrangeiras difundiram o balé. Dança moderna: surgiu no início do século XX como ruptura com o balé clássico. Isadora Duncan libertou o corpo das sapatilhas e dos movimentos codificados. Martha Graham desenvolveu técnica baseada em contração e liberação, expressando emoções através do movimento. No Brasil, a dança moderna chegou pelos anos 1930-40."
+        },
+        {
+          "titulo": "Dança Contemporânea no Brasil",
+          "conteudo": "A dança contemporânea brasileira desenvolveu-se a partir dos anos 1970-80, dialogando com tendências internacionais mas incorporando elementos da cultura brasileira. Grupo Corpo (BH, 1975): companhia mais importante do país, funde técnica clássica com música brasileira (trilhas de artistas como Marco Antônio Guimarães, Tom Zé, Arnaldo Antunes). Deborah Colker: coreógrafa que incorpora elementos circenses e teatrais, conhecida por espetáculos como 'Velox'. Dança de rua/hip-hop: expressão da cultura de periferia, presente em batalhas de break, desenvolveu linguagem própria. Dança afro-brasileira: grupos como Balé Folclórico da Bahia preservam e recriam danças de matriz africana."
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra dança em três eixos: 1) Danças populares brasileiras como expressão de identidade cultural e resistência (especialmente capoeira e samba); 2) Ruptura da dança moderna com o balé clássico (libertação do corpo, expressão individual); 3) Dança contemporânea como linguagem híbrida. Estratégia: danças populares = identidade, memória, resistência. Balé = técnica codificada, tradição europeia. Moderna/contemporânea = ruptura, expressão, fusão."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Capoeira",
+          "descricao": "Manifestação afro-brasileira que combina dança, luta, jogo e música. Desenvolvida por escravizados como forma de resistência disfarçada. A roda de capoeira e o ofício de mestre são Patrimônios Imateriais da Humanidade (UNESCO)."
+        },
+        {
+          "titulo": "Grupo Corpo",
+          "descricao": "Companhia mineira fundada em 1975, referência internacional em dança contemporânea. Seus espetáculos fundem técnica clássica/moderna com trilhas de músicos brasileiros, criando linguagem única que expressa brasilidade."
+        }
+      ],
+      "dicas": [
+        "Capoeira = resistência cultural negra + patrimônio imaterial + jogo/luta/dança",
+        "Dança moderna = ruptura com balé, libertação do corpo, expressão individual",
+        "Frevo e samba de roda são Patrimônios Imateriais da Humanidade pela UNESCO"
+      ],
+      "questoes": [
+        {
+          "id": "q38-1",
+          "enunciado": "A capoeira, reconhecida como Patrimônio Imaterial da Humanidade pela UNESCO, pode ser compreendida historicamente como:",
+          "alternativas": {
+            "A": "Dança folclórica de origem europeia trazida pelos colonizadores",
+            "B": "Forma de resistência cultural desenvolvida por africanos escravizados no Brasil",
+            "C": "Esporte olímpico criado no século XX por educadores físicos",
+            "D": "Ritual religioso exclusivo dos povos indígenas brasileiros",
+            "E": "Arte marcial oriental adaptada ao contexto brasileiro"
+          },
+          "correta": "B",
+          "explicacao": "A capoeira desenvolveu-se entre africanos escravizados no Brasil como forma de resistência cultural e física. Disfarçada de dança/jogo, preservava técnicas de luta e expressava identidade cultural. Foi perseguida até o século XX, tornando-se depois símbolo de brasilidade e patrimônio cultural.",
+          "dificuldade": "facil",
+          "tags": ["capoeira", "cultura afro-brasileira", "patrimônio"]
+        },
+        {
+          "id": "q38-2",
+          "enunciado": "A dança moderna, surgida no início do século XX com pioneiras como Isadora Duncan, representou uma ruptura com o balé clássico ao propor:",
+          "alternativas": {
+            "A": "O retorno às danças de corte do Renascimento europeu",
+            "B": "A codificação ainda mais rígida de posições e movimentos",
+            "C": "A libertação do corpo das convenções do balé, buscando expressão individual e natural",
+            "D": "O uso obrigatório de sapatilhas de ponta em todas as apresentações",
+            "E": "A exclusão de qualquer relação entre dança e emoção"
+          },
+          "correta": "C",
+          "explicacao": "A dança moderna rompeu com as convenções do balé clássico: abandonou sapatilhas de ponta, movimentos codificados e posições rígidas. Pioneiras como Isadora Duncan buscavam movimento natural, expressão individual e conexão entre dança e emoção, libertando o corpo das fórmulas tradicionais.",
+          "dificuldade": "medio",
+          "tags": ["dança moderna", "isadora duncan", "ruptura"]
+        },
+        {
+          "id": "q38-3",
+          "enunciado": "O frevo, dança típica do carnaval de Pernambuco, caracteriza-se por:",
+          "alternativas": {
+            "A": "Movimentos lentos e contemplativos acompanhados de música sacra",
+            "B": "Passos codificados do balé clássico executados com sapatilhas de ponta",
+            "C": "Passos acrobáticos e atléticos executados ao som de orquestra de metais",
+            "D": "Coreografia em pares típica das danças de salão europeias",
+            "E": "Movimentos rituais de origem exclusivamente indígena"
+          },
+          "correta": "C",
+          "explicacao": "O frevo é dança acrobática e atlética típica do carnaval de Recife e Olinda. Caracteriza-se por passos como tesoura, dobradiça, pontinha, executados ao som de orquestra de frevo (metais). O passista geralmente usa sombrinha colorida. É Patrimônio Imaterial da Humanidade.",
+          "dificuldade": "facil",
+          "tags": ["frevo", "pernambuco", "dança popular"]
+        },
+        {
+          "id": "q38-4",
+          "enunciado": "O Grupo Corpo, companhia de dança contemporânea de Belo Horizonte, é reconhecido internacionalmente por:",
+          "alternativas": {
+            "A": "Reproduzir fielmente os balés clássicos do repertório europeu",
+            "B": "Rejeitar qualquer técnica formal em favor da improvisação total",
+            "C": "Fundir técnica clássica e moderna com trilhas de músicos brasileiros, criando linguagem própria",
+            "D": "Apresentar exclusivamente danças folclóricas tradicionais",
+            "E": "Utilizar apenas bailarinos estrangeiros em suas produções"
+          },
+          "correta": "C",
+          "explicacao": "O Grupo Corpo desenvolveu linguagem única que funde técnica de balé clássico e dança moderna com brasilidade. Suas trilhas são compostas por músicos brasileiros (Marco Antônio Guimarães, Tom Zé, Arnaldo Antunes), criando espetáculos que expressam identidade nacional em linguagem contemporânea.",
+          "dificuldade": "medio",
+          "tags": ["grupo corpo", "dança contemporânea", "brasil"]
+        },
+        {
+          "id": "q38-5",
+          "enunciado": "O samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Imaterial da Humanidade. Esse reconhecimento valoriza:",
+          "alternativas": {
+            "A": "Apenas o aspecto comercial e turístico da manifestação",
+            "B": "A importação de danças europeias para o contexto brasileiro",
+            "C": "A memória, identidade e resistência cultural da comunidade afro-brasileira",
+            "D": "A padronização e homogeneização das expressões culturais",
+            "E": "O abandono das tradições em favor da modernização"
+          },
+          "correta": "C",
+          "explicacao": "O reconhecimento como Patrimônio Imaterial valoriza o samba de roda como expressão da memória, identidade e resistência cultural da comunidade afro-brasileira do Recôncavo Baiano. É manifestação viva que preserva saberes, práticas e cosmovisão transmitidos entre gerações.",
+          "dificuldade": "medio",
+          "tags": ["samba de roda", "patrimônio", "cultura afro-brasileira"]
+        }
+      ]
+    },
+    {
+      "id": "m39",
+      "titulo": "Cultura Popular e Patrimônio Cultural",
+      "resumo": "Conceitos de cultura popular, folclore, patrimônio material e imaterial, políticas culturais e a questão da identidade nacional.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O estudo da cultura popular e do patrimônio cultural envolve conceitos fundamentais para compreender a identidade brasileira e as políticas de preservação. No ENEM, esse tema aparece em questões que discutem a relação entre cultura erudita e popular, a importância do patrimônio, e as tensões entre tradição e modernidade. Compreender esses conceitos é essencial para uma leitura crítica da cultura."
+        },
+        {
+          "titulo": "Cultura Popular e Cultura Erudita",
+          "conteudo": "Tradicionalmente, distinguia-se cultura erudita (das elites, letrada, formal) de cultura popular (do povo, oral, informal). Essa dicotomia é hoje questionada: as fronteiras são fluidas, há trocas constantes entre os níveis culturais. Folclore: termo criado no século XIX para designar as tradições populares. No Brasil, o movimento folclorista (Câmara Cascudo, Mário de Andrade) pesquisou e valorizou manifestações populares. Cultura de massa: produzida pela indústria cultural para consumo amplo. Teóricos da Escola de Frankfurt criticaram sua padronização; estudos culturais posteriores reconheceram também suas possibilidades criativas e de resistência."
+        },
+        {
+          "titulo": "Patrimônio Cultural",
+          "conteudo": "Patrimônio Material: bens tangíveis - edificações, monumentos, obras de arte, documentos. No Brasil, o IPHAN (Instituto do Patrimônio Histórico e Artístico Nacional), criado em 1937, é responsável pelo tombamento. Patrimônio Imaterial: bens intangíveis - saberes, celebrações, formas de expressão, lugares. Registro como patrimônio imaterial é mais recente (Decreto 3.551/2000). Exemplos brasileiros registrados: samba de roda, frevo, capoeira, modo de fazer viola de cocho, festa do Divino. A UNESCO também reconhece patrimônios da humanidade, materiais e imateriais. O conceito ampliou-se: de monumentos excepcionais para incluir o cotidiano, o popular, o imaterial."
+        },
+        {
+          "titulo": "Identidade Cultural Brasileira",
+          "conteudo": "A questão da identidade cultural brasileira atravessa nossa história intelectual. Romantismo: buscou no índio idealizado a origem da nacionalidade. Modernismo: propôs a antropofagia - devorar influências para criar cultura própria. Gilberto Freyre: valorizou a mestiçagem em 'Casa-Grande & Senzala'. Debates contemporâneos: questionam narrativas de harmonia racial, valorizam a diversidade e as vozes marginalizadas. A cultura brasileira é plural, resultado de encontros (muitas vezes violentos) entre povos e tradições. Não existe 'uma' identidade, mas múltiplas identidades em constante negociação."
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra esse tema em três eixos: 1) Conceito de patrimônio imaterial e exemplos brasileiros (capoeira, frevo, samba de roda); 2) Crítica à dicotomia cultura erudita x popular; 3) Discussão sobre identidade nacional e diversidade cultural. Estratégia: patrimônio imaterial = saberes, práticas, celebrações transmitidos entre gerações. Questione visões essencialistas de identidade - a cultura é dinâmica e plural."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Tombamento vs. Registro",
+          "descricao": "Tombamento protege bens materiais (prédios, obras de arte), impedindo alterações. Registro reconhece bens imateriais (saberes, festas), documentando e apoiando sua continuidade, mas sem 'congelar' - a cultura viva se transforma."
+        },
+        {
+          "titulo": "Antropofagia Cultural",
+          "descricao": "Conceito modernista que propõe 'devorar' influências estrangeiras e transformá-las em cultura brasileira. Metáfora do ritual antropofágico indígena: absorver a força do outro para fortalecer-se. Opõe-se tanto à cópia servil quanto à rejeição xenófoba."
+        }
+      ],
+      "dicas": [
+        "Patrimônio imaterial = saberes, festas, expressões - não são objetos físicos",
+        "A dicotomia erudito x popular é questionada - há trocas e hibridismos constantes",
+        "Identidade cultural não é fixa nem única - é construção histórica e plural"
+      ],
+      "questoes": [
+        {
+          "id": "q39-1",
+          "enunciado": "O conceito de patrimônio cultural imaterial, adotado pela UNESCO e pelo IPHAN, refere-se a:",
+          "alternativas": {
+            "A": "Edificações e monumentos históricos de valor arquitetônico",
+            "B": "Obras de arte e documentos preservados em museus",
+            "C": "Saberes, celebrações, formas de expressão e lugares de referência cultural",
+            "D": "Apenas manifestações culturais de origem europeia",
+            "E": "Bens culturais que perderam seu valor e foram abandonados"
+          },
+          "correta": "C",
+          "explicacao": "Patrimônio imaterial são bens intangíveis: saberes e modos de fazer (artesanato, culinária), celebrações (festas religiosas e populares), formas de expressão (música, dança, literatura oral), lugares (feiras, mercados, santuários). São transmitidos entre gerações e constituem referência de identidade.",
+          "dificuldade": "facil",
+          "tags": ["patrimônio imaterial", "cultura", "IPHAN"]
+        },
+        {
+          "id": "q39-2",
+          "enunciado": "A dicotomia tradicional entre 'cultura erudita' e 'cultura popular' é questionada por estudiosos contemporâneos porque:",
+          "alternativas": {
+            "A": "A cultura popular deixou de existir na sociedade contemporânea",
+            "B": "A cultura erudita sempre foi superior e mais valiosa que a popular",
+            "C": "Existem trocas, influências mútuas e hibridismos entre os diferentes níveis culturais",
+            "D": "Apenas a cultura de massa tem valor na sociedade atual",
+            "E": "As manifestações populares devem ser erradicadas em favor da alta cultura"
+          },
+          "correta": "C",
+          "explicacao": "Estudiosos contemporâneos questionam a rígida separação entre erudito e popular porque, na prática, há constantes trocas, apropriações e hibridismos. A cultura popular influencia a erudita e vice-versa; a indústria cultural recria ambas. As fronteiras são fluidas e historicamente construídas.",
+          "dificuldade": "medio",
+          "tags": ["cultura popular", "cultura erudita", "hibridismo"]
+        },
+        {
+          "id": "q39-3",
+          "enunciado": "O conceito de 'antropofagia cultural', proposto pelos modernistas brasileiros, sugere que a cultura nacional deve:",
+          "alternativas": {
+            "A": "Rejeitar completamente qualquer influência estrangeira",
+            "B": "Copiar fielmente os modelos culturais europeus",
+            "C": "Absorver criticamente influências externas e transformá-las em expressão própria",
+            "D": "Preservar apenas as tradições indígenas pré-coloniais",
+            "E": "Eliminar toda herança africana da formação cultural"
+          },
+          "correta": "C",
+          "explicacao": "A antropofagia cultural modernista propõe 'devorar' influências estrangeiras - não rejeitá-las nem copiá-las servilmente - transformando-as em cultura genuinamente brasileira. Como no ritual antropofágico, absorve-se a força do outro para fortalecer a própria cultura.",
+          "dificuldade": "medio",
+          "tags": ["antropofagia", "modernismo", "identidade"]
+        },
+        {
+          "id": "q39-4",
+          "enunciado": "O IPHAN (Instituto do Patrimônio Histórico e Artístico Nacional) foi criado em 1937 e é responsável pela proteção do patrimônio cultural brasileiro. A diferença entre tombamento e registro de patrimônio é que:",
+          "alternativas": {
+            "A": "Tombamento e registro são sinônimos para o mesmo procedimento",
+            "B": "Tombamento protege bens materiais; registro reconhece bens imateriais",
+            "C": "Registro é mais restritivo que tombamento",
+            "D": "Tombamento aplica-se apenas a bens naturais, não culturais",
+            "E": "Registro impede qualquer transformação na manifestação cultural"
+          },
+          "correta": "B",
+          "explicacao": "Tombamento é o instrumento de proteção de bens materiais (edificações, obras, documentos), restringindo alterações. Registro é o instrumento de reconhecimento de bens imateriais (saberes, festas, expressões), que documenta e apoia a continuidade sem 'congelar' - pois a cultura viva se transforma.",
+          "dificuldade": "medio",
+          "tags": ["IPHAN", "tombamento", "registro"]
+        },
+        {
+          "id": "q39-5",
+          "enunciado": "A discussão sobre identidade cultural brasileira envolve diferentes perspectivas ao longo da história. Uma visão contemporânea crítica sobre essa questão reconhece que:",
+          "alternativas": {
+            "A": "Existe uma única e verdadeira identidade brasileira a ser descoberta",
+            "B": "A identidade nacional foi definitivamente estabelecida pelo Romantismo do século XIX",
+            "C": "A cultura brasileira é plural, resultado de encontros diversos, e a identidade é construção histórica em constante transformação",
+            "D": "Apenas a herança portuguesa define a identidade cultural brasileira",
+            "E": "As diferenças regionais devem ser eliminadas em favor de uma cultura nacional homogênea"
+          },
+          "correta": "C",
+          "explicacao": "Perspectivas contemporâneas reconhecem que não existe 'uma' identidade brasileira essencial, mas múltiplas identidades em constante negociação. A cultura brasileira resulta de encontros (muitas vezes violentos) entre povos e tradições. A identidade é construção histórica, não essência fixa, e a diversidade é constitutiva.",
+          "dificuldade": "dificil",
+          "tags": ["identidade cultural", "diversidade", "brasil"]
+        }
+      ]
+    },
+    {
+      "id": "m40",
+      "titulo": "Arte e Tecnologia no Século XXI",
+      "resumo": "Novas formas de expressão artística na era digital, incluindo arte digital, videoarte, interatividade, NFTs e o impacto da tecnologia na produção e consumo de arte.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A tecnologia digital transformou radicalmente a produção, circulação e consumo de arte no século XXI. Novas formas de expressão surgiram, fronteiras entre arte e comunicação se diluíram, e o papel do espectador se transformou. No ENEM, questões sobre esse tema relacionam tecnologia, arte e sociedade, discutindo tanto as possibilidades quanto os desafios das novas mídias."
+        },
+        {
+          "titulo": "Arte Digital e Novas Mídias",
+          "conteudo": "Arte digital: produzida com ferramentas computacionais, inclui desde ilustração digital até obras geradas por algoritmos e inteligência artificial. Videoarte: surgiu nos anos 1960 (Nam June Paik), hoje incorpora projeções, mapeamento de vídeo em arquitetura (video mapping) e instalações imersivas. Arte generativa: criada por algoritmos e sistemas autônomos que geram formas, sons ou comportamentos. Net art: arte criada para e na internet, utilizando a rede como meio e tema. Realidade virtual e aumentada: criam experiências imersivas e híbridas entre real e virtual. NFTs (Non-Fungible Tokens): certificados digitais de autenticidade em blockchain, transformaram o mercado de arte digital ao permitir comercialização de obras originais virtuais."
+        },
+        {
+          "titulo": "Interatividade e Participação",
+          "conteudo": "As tecnologias digitais intensificaram a participação do público, já proposta por movimentos como o Neoconcretismo. Instalações interativas: respondem à presença e ações do espectador através de sensores e programação. Arte colaborativa online: projetos que agregam contribuições de participantes dispersos geograficamente. Redes sociais como meio artístico: artistas utilizam Instagram, TikTok e outras plataformas como espaço de criação e exposição. A distinção entre artista e público se dilui em práticas colaborativas e de remix cultural."
+        },
+        {
+          "titulo": "Desafios e Questões Críticas",
+          "conteudo": "Autoria e originalidade: em tempos de remix, sampling e IA generativa, como definir autoria? Reprodutibilidade: Walter Benjamin já discutia a 'aura' da obra única; na era digital, a cópia perfeita é trivial. Acesso e exclusão: tecnologias democratizam ou criam novas formas de exclusão digital? Obsolescência: obras digitais dependem de hardware e software que rapidamente se tornam obsoletos - como preservá-las? Vigilância e privacidade: arte que usa dados pessoais levanta questões éticas. Inteligência artificial: ferramentas como DALL-E e Midjourney geram imagens a partir de texto - isso é arte? Quem é o autor?"
+        },
+        {
+          "titulo": "Aplicações e Estratégias de Prova",
+          "conteudo": "O ENEM cobra esse tema em três eixos: 1) Novas formas de expressão artística possibilitadas pela tecnologia; 2) Transformação da relação entre artista, obra e público (interatividade, participação); 3) Questões críticas: autoria, reprodutibilidade, acesso, preservação. Estratégia: relacione tecnologias digitais com transformações sociais e culturais mais amplas. Questione tanto o otimismo tecnológico quanto a rejeição nostálgica."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Eduardo Kac - Arte Transgênica",
+          "descricao": "Artista brasileiro pioneiro em bioarte. 'GFP Bunny' (2000) é uma coelha geneticamente modificada que brilha sob luz UV. Questiona fronteiras entre arte, ciência, natureza e ética."
+        },
+        {
+          "titulo": "Beeple - 'Everydays: The First 5000 Days'",
+          "descricao": "Colagem digital vendida como NFT por 69 milhões de dólares em 2021. Marco no mercado de arte digital, demonstrou que NFTs podem certificar e comercializar obras virtuais como originais."
+        }
+      ],
+      "dicas": [
+        "Arte digital não é apenas ferramenta - é também tema e linguagem própria",
+        "A interatividade intensifica propostas já presentes no Neoconcretismo (participação do espectador)",
+        "NFTs são certificados de autenticidade em blockchain - permitem comercializar arte digital como 'original'"
+      ],
+      "questoes": [
+        {
+          "id": "q40-1",
+          "enunciado": "As tecnologias digitais transformaram a relação entre artista, obra e público. Uma característica das novas mídias artísticas é:",
+          "alternativas": {
+            "A": "O retorno à contemplação passiva típica dos museus tradicionais",
+            "B": "A eliminação de qualquer forma de participação do espectador",
+            "C": "A intensificação da interatividade e participação do público na constituição da obra",
+            "D": "A dependência exclusiva de materiais tradicionais como tela e pincel",
+            "E": "A recusa de qualquer relação com tecnologias computacionais"
+          },
+          "correta": "C",
+          "explicacao": "As novas mídias intensificam a participação do público: instalações interativas respondem à presença do espectador, obras online incorporam contribuições de usuários, a distinção entre criador e público se dilui. Isso radicaliza propostas já presentes em movimentos como o Neoconcretismo.",
+          "dificuldade": "facil",
+          "tags": ["arte digital", "interatividade", "novas mídias"]
+        },
+        {
+          "id": "q40-2",
+          "enunciado": "Os NFTs (Non-Fungible Tokens) transformaram o mercado de arte digital ao:",
+          "alternativas": {
+            "A": "Eliminar qualquer possibilidade de comercialização de obras virtuais",
+            "B": "Permitir certificar a autenticidade e propriedade de obras digitais através de blockchain",
+            "C": "Proibir a reprodução de qualquer imagem na internet",
+            "D": "Substituir completamente as galerias e museus físicos",
+            "E": "Tornar toda arte digital gratuita e de domínio público"
+          },
+          "correta": "B",
+          "explicacao": "NFTs são certificados digitais de autenticidade registrados em blockchain (tecnologia de registro distribuído). Permitem identificar o 'original' de uma obra digital e rastrear sua propriedade, possibilitando a comercialização de arte virtual como peça única, mesmo que copiável.",
+          "dificuldade": "medio",
+          "tags": ["NFT", "blockchain", "arte digital"]
+        },
+        {
+          "id": "q40-3",
+          "enunciado": "A arte generativa, que utiliza algoritmos e sistemas computacionais para criar obras, levanta questões sobre:",
+          "alternativas": {
+            "A": "A impossibilidade de qualquer forma de criação artística com computadores",
+            "B": "Autoria e criatividade quando a obra é gerada por processos autônomos",
+            "C": "A superioridade absoluta da arte tradicional sobre qualquer forma digital",
+            "D": "A ausência de qualquer valor estético em obras algorítmicas",
+            "E": "A necessidade de eliminar toda tecnologia do campo artístico"
+          },
+          "correta": "B",
+          "explicacao": "A arte generativa questiona noções tradicionais de autoria: se um algoritmo gera a obra, quem é o autor - o programador, o sistema, o acaso? Quando inteligências artificiais criam imagens, essas questões se intensificam, desafiando conceitos de criatividade e originalidade.",
+          "dificuldade": "medio",
+          "tags": ["arte generativa", "algoritmo", "autoria"]
+        },
+        {
+          "id": "q40-4",
+          "enunciado": "A preservação de obras de arte digital enfrenta um desafio específico que obras tradicionais não apresentam:",
+          "alternativas": {
+            "A": "A impossibilidade de catalogar obras em acervos",
+            "B": "A obsolescência de hardware e software necessários para executar as obras",
+            "C": "A ausência de interesse de instituições culturais por arte digital",
+            "D": "A facilidade excessiva de preservação que torna o trabalho desnecessário",
+            "E": "A proibição legal de arquivar qualquer obra em formato digital"
+          },
+          "correta": "B",
+          "explicacao": "Obras digitais dependem de hardware, software e formatos de arquivo que se tornam obsoletos rapidamente. Um CD-ROM de 1995 pode ser ilegível hoje; um software antigo pode não rodar em sistemas atuais. Preservar arte digital exige estratégias como migração de formatos e emulação de sistemas.",
+          "dificuldade": "medio",
+          "tags": ["preservação", "obsolescência", "arte digital"]
+        },
+        {
+          "id": "q40-5",
+          "enunciado": "O uso de inteligência artificial para gerar imagens artísticas (como DALL-E e Midjourney) intensifica debates sobre:",
+          "alternativas": {
+            "A": "A irrelevância de qualquer discussão sobre tecnologia e arte",
+            "B": "A necessidade de proibir toda forma de arte computacional",
+            "C": "Autoria, criatividade e o papel do artista humano na criação de obras",
+            "D": "A superioridade incontestável da IA sobre artistas humanos",
+            "E": "A impossibilidade de máquinas produzirem qualquer resultado visual"
+          },
+          "correta": "C",
+          "explicacao": "IAs generativas de imagem levantam questões fundamentais: quem é o autor - quem digita o prompt, quem programou a IA, os artistas cujas obras treinaram o sistema? O que é criatividade quando uma máquina 'cria'? Qual o papel do artista humano? Esses debates não têm respostas simples e desafiam conceitos tradicionais de arte.",
+          "dificuldade": "dificil",
+          "tags": ["inteligência artificial", "autoria", "criatividade"]
+        }
+      ]
+    }
+  ]
+}

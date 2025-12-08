@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface QuestaoGerada {
   id: string;
@@ -210,6 +211,7 @@ export default function GeradorQuestoesPage() {
 
   return (
     <div className="min-h-screen py-8 px-4" style={{ background: 'var(--chalkboard-bg)' }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       {/* Container principal */}

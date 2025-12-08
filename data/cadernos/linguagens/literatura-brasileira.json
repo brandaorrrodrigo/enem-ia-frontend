@@ -1,0 +1,1016 @@
+{
+  "id": "ling-003",
+  "slug": "literatura-brasileira",
+  "titulo": "Literatura Brasileira",
+  "categoria": "linguagens",
+  "nivel": "Avancado",
+  "descricao": "Domine os movimentos literarios e autores mais cobrados no ENEM.",
+  "icone": "📚",
+  "cor": "from-purple-500 to-pink-500",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 400,
+  "tags": ["literatura", "brasileira", "movimentos", "autores", "enem"],
+  "modulos": [
+    {
+      "id": "m21",
+      "titulo": "Quinhentismo e Literatura Informativa",
+      "resumo": "A literatura dos primeiros seculos de colonizacao portuguesa no Brasil.",
+      "topicos": [
+        "PERIODO: Seculo XVI (1500-1601)",
+        "LITERATURA DE INFORMACAO: Cartas, cronicas e relatos dos viajantes",
+        "CARTA DE PERO VAZ DE CAMINHA: Primeiro documento sobre o Brasil (1500)",
+        "LITERATURA DE CATEQUESE: Textos dos jesuitas para converter indigenas",
+        "PADRE JOSE DE ANCHIETA: Teatro e poesia para catequese",
+        "CARACTERISTICAS: Descricao da terra, exaltacao da natureza, visao europeia"
+      ],
+      "exemplos": [
+        "Carta de Caminha: 'Esta terra, Senhor, parece-me que, da ponta que mais contra o sul vimos, ate a outra ponta que contra o norte vem, sera tamanha que havera nela bem vinte ou vinte e cinco leguas de costa.'",
+        "Anchieta: Poemas e pecas teatrais em tupi, portugues e espanhol",
+        "Hans Staden: 'Duas Viagens ao Brasil' - relato de aventura"
+      ],
+      "dicas": [
+        "ENEM relaciona Carta de Caminha com visao colonizadora europeia",
+        "Nao e literatura 'brasileira' propriamente - e literatura SOBRE o Brasil",
+        "Textos revelam estranhamento diante do 'outro' (indigena)"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m21",
+          "enunciado": "A Carta de Pero Vaz de Caminha e considerada:",
+          "alternativas": {
+            "A": "O primeiro romance brasileiro",
+            "B": "O primeiro documento escrito sobre o Brasil",
+            "C": "Uma obra de ficcao sobre a colonizacao",
+            "D": "Um texto de catequese indigena",
+            "E": "Uma cronica do seculo XIX"
+          },
+          "correta": "B",
+          "explicacao": "A Carta de Caminha (1500) e o PRIMEIRO DOCUMENTO escrito sobre o Brasil, relatando ao rei de Portugal o 'achamento' da nova terra. E literatura de informacao.",
+          "dificuldade": "facil",
+          "tags": ["quinhentismo", "caminha"]
+        },
+        {
+          "id": "q2-m21",
+          "enunciado": "A literatura de catequese tinha como principal objetivo:",
+          "alternativas": {
+            "A": "Descrever a fauna e flora brasileiras",
+            "B": "Converter os indigenas ao cristianismo",
+            "C": "Criticar a colonizacao portuguesa",
+            "D": "Exaltar a cultura indigena",
+            "E": "Registrar a historia dos bandeirantes"
+          },
+          "correta": "B",
+          "explicacao": "A literatura de CATEQUESE, produzida principalmente por jesuitas como Anchieta, tinha o objetivo de CONVERTER os indigenas ao cristianismo atraves de teatro, poesia e ensino.",
+          "dificuldade": "facil",
+          "tags": ["quinhentismo", "catequese"]
+        },
+        {
+          "id": "q3-m21",
+          "enunciado": "Padre Jose de Anchieta se destacou na literatura colonial por:",
+          "alternativas": {
+            "A": "Escrever romances de aventura",
+            "B": "Criar poesia e teatro para catequese em varias linguas",
+            "C": "Fundar a Academia Brasileira de Letras",
+            "D": "Introduzir o Romantismo no Brasil",
+            "E": "Escrever a primeira gramatica portuguesa"
+          },
+          "correta": "B",
+          "explicacao": "ANCHIETA escreveu poesia e teatro para CATEQUESE em tupi, portugues e espanhol, adaptando elementos da cultura indigena para transmitir a mensagem crista.",
+          "dificuldade": "medio",
+          "tags": ["quinhentismo", "anchieta"]
+        },
+        {
+          "id": "q4-m21",
+          "enunciado": "Uma caracteristica marcante da literatura de informacao e:",
+          "alternativas": {
+            "A": "A critica social brasileira",
+            "B": "A descricao da terra sob perspectiva europeia",
+            "C": "O nacionalismo exacerbado",
+            "D": "A valorizacao da cultura indigena",
+            "E": "O uso de linguagem coloquial brasileira"
+          },
+          "correta": "B",
+          "explicacao": "A literatura de informacao DESCREVE o Brasil sob a PERSPECTIVA EUROPEIA - olhar de estranhamento, exotismo e interesse economico. Nao e visao brasileira ainda.",
+          "dificuldade": "medio",
+          "tags": ["quinhentismo", "caracteristicas"]
+        },
+        {
+          "id": "q5-m21",
+          "enunciado": "Por que a literatura do Quinhentismo nao e considerada genuinamente 'brasileira'?",
+          "alternativas": {
+            "A": "Porque foi escrita em latim",
+            "B": "Porque foi produzida por europeus com visao colonizadora",
+            "C": "Porque tratava apenas de temas religiosos",
+            "D": "Porque nao havia imprensa no Brasil",
+            "E": "Porque os textos eram muito curtos"
+          },
+          "correta": "B",
+          "explicacao": "E literatura SOBRE o Brasil, nao DO Brasil. Foi produzida por EUROPEUS com VISAO COLONIZADORA, descrevendo a terra como objeto de exploracao e conquista.",
+          "dificuldade": "medio",
+          "tags": ["quinhentismo", "contexto"]
+        }
+      ]
+    },
+    {
+      "id": "m22",
+      "titulo": "Barroco Brasileiro",
+      "resumo": "A arte dos contrastes e conflitos entre fe e razao no Brasil colonial.",
+      "topicos": [
+        "PERIODO: Seculo XVII (1601-1768)",
+        "CONTEXTO: Contrarreforma, tensao entre espiritualidade e materialismo",
+        "CARACTERISTICAS: Dualismo, antiteses, conflito carne x espirito, rebuscamento",
+        "GREGORIO DE MATOS: 'Boca do Inferno' - poesia lirica, satirica e religiosa",
+        "PADRE ANTONIO VIEIRA: Sermoes com oratoria elaborada",
+        "FIGURAS: Antitese, paradoxo, hiperbole, metaforas complexas"
+      ],
+      "exemplos": [
+        "Gregorio de Matos: 'Nasce o sol, e nao dura mais que um dia / Depois da luz se segue a noite escura / Em tristes sombras morre a formosura / Em continuas tristezas a alegria.'",
+        "Vieira: 'Sermao da Sexagesima' - critica aos pregadores de seu tempo"
+      ],
+      "dicas": [
+        "GREGORIO DE MATOS: lirico (amor), satirico (critica social), religioso (fe)",
+        "BARROCO = CONTRASTES: luz/sombra, carne/espirito, vida/morte",
+        "ENEM cobra a relacao entre o estilo rebuscado e o contexto historico"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m22",
+          "enunciado": "O Barroco brasileiro se caracteriza principalmente por:",
+          "alternativas": {
+            "A": "Linguagem simples e objetiva",
+            "B": "Conflito entre valores opostos e linguagem rebuscada",
+            "C": "Valorizacao da razao sobre a emocao",
+            "D": "Nacionalismo e exaltacao da patria",
+            "E": "Descricao realista da sociedade"
+          },
+          "correta": "B",
+          "explicacao": "O BARROCO se caracteriza pelo CONFLITO entre valores opostos (carne x espirito, fe x razao) e LINGUAGEM REBUSCADA com muitas figuras de linguagem.",
+          "dificuldade": "facil",
+          "tags": ["barroco", "caracteristicas"]
+        },
+        {
+          "id": "q2-m22",
+          "enunciado": "Gregorio de Matos foi apelidado de 'Boca do Inferno' por causa de sua poesia:",
+          "alternativas": {
+            "A": "Religiosa e devota",
+            "B": "Satirica e critica a sociedade colonial",
+            "C": "Amorosa e sentimental",
+            "D": "Epica e nacionalista",
+            "E": "Filosofica e racional"
+          },
+          "correta": "B",
+          "explicacao": "Gregorio foi chamado 'BOCA DO INFERNO' por sua poesia SATIRICA que criticava duramente a sociedade colonial baiana: politicos, religiosos, costumes.",
+          "dificuldade": "facil",
+          "tags": ["barroco", "gregorio"]
+        },
+        {
+          "id": "q3-m22",
+          "enunciado": "Padre Antonio Vieira se destacou no Barroco por seus:",
+          "alternativas": {
+            "A": "Romances historicos",
+            "B": "Poemas epicos",
+            "C": "Sermoes com oratoria elaborada",
+            "D": "Contos satiricos",
+            "E": "Dramas teatrais"
+          },
+          "correta": "C",
+          "explicacao": "VIEIRA foi o maior orador sacro em lingua portuguesa. Seus SERMOES apresentam argumentacao elaborada, metaforas complexas e critica social/politica.",
+          "dificuldade": "facil",
+          "tags": ["barroco", "vieira"]
+        },
+        {
+          "id": "q4-m22",
+          "enunciado": "'A vida e sonho, e os sonhos, sonhos sao.' Esta frase exemplifica a figura barroca chamada:",
+          "alternativas": {
+            "A": "Metafora",
+            "B": "Antitese",
+            "C": "Paradoxo",
+            "D": "Hiperbole",
+            "E": "Metonimia"
+          },
+          "correta": "C",
+          "explicacao": "O PARADOXO apresenta ideias aparentemente contraditorias que coexistem. Afirmar que 'a vida e sonho' e 'sonhos sao sonhos' cria uma contradicao filosofica tipicamente barroca.",
+          "dificuldade": "medio",
+          "tags": ["barroco", "figuras"]
+        },
+        {
+          "id": "q5-m22",
+          "enunciado": "O contexto historico do Barroco brasileiro inclui:",
+          "alternativas": {
+            "A": "A Proclamacao da Republica",
+            "B": "A Contrarreforma e o dominio portugues",
+            "C": "A Revolucao Industrial",
+            "D": "A Independencia do Brasil",
+            "E": "A Semana de Arte Moderna"
+          },
+          "correta": "B",
+          "explicacao": "O Barroco surge no contexto da CONTRARREFORMA (reacao da Igreja Catolica) e do DOMINIO PORTUGUES no Brasil colonial, refletindo tensoes religiosas e sociais.",
+          "dificuldade": "medio",
+          "tags": ["barroco", "contexto"]
+        }
+      ]
+    },
+    {
+      "id": "m23",
+      "titulo": "Arcadismo",
+      "resumo": "A poesia bucolica e o ideal de vida simples no seculo XVIII.",
+      "topicos": [
+        "PERIODO: Seculo XVIII (1768-1836)",
+        "CONTEXTO: Iluminismo, Inconfidencia Mineira, ouro em Minas Gerais",
+        "CARACTERISTICAS: Bucolismo, pastoralismo, carpe diem, fugere urbem, aurea mediocritas",
+        "PSEUDONIMOS PASTORAIS: Poetas adotavam nomes de pastores (Dirceu, Marilia)",
+        "CLAUDIO MANUEL DA COSTA: Introdutor do Arcadismo no Brasil",
+        "TOMAS ANTONIO GONZAGA: 'Marilia de Dirceu' - poesia lirica amorosa"
+      ],
+      "exemplos": [
+        "Gonzaga: 'Eu, Marilia, nao sou algum vaqueiro / Que viva de guardar alheio gado / De tosco trato, de expressoes grosseiro / Dos frios gelado e dos sois queimado.'",
+        "Carpe diem: 'Aproveite o dia presente'",
+        "Locus amoenus: Lugar idealizado, natureza perfeita"
+      ],
+      "dicas": [
+        "ARCADISMO = SIMPLICIDADE (oposto ao rebuscamento barroco)",
+        "BUCOLISMO: valorizacao da vida no campo, pastores, natureza idealizada",
+        "Poetas arcades participaram da INCONFIDENCIA MINEIRA"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m23",
+          "enunciado": "O Arcadismo brasileiro se opoe ao Barroco ao valorizar:",
+          "alternativas": {
+            "A": "A linguagem rebuscada e complexa",
+            "B": "A simplicidade, o equilibrio e a natureza",
+            "C": "Os conflitos entre carne e espirito",
+            "D": "A religiosidade exacerbada",
+            "E": "O nacionalismo romantico"
+          },
+          "correta": "B",
+          "explicacao": "O ARCADISMO se opoe ao rebuscamento barroco, valorizando SIMPLICIDADE, EQUILIBRIO e a NATUREZA idealizada. Busca clareza e harmonia.",
+          "dificuldade": "facil",
+          "tags": ["arcadismo", "caracteristicas"]
+        },
+        {
+          "id": "q2-m23",
+          "enunciado": "'Carpe diem' e um tema arcadico que significa:",
+          "alternativas": {
+            "A": "Fugir para o campo",
+            "B": "Aproveitar o dia presente",
+            "C": "Buscar a vida eterna",
+            "D": "Viver na mediocridade",
+            "E": "Sofrer por amor"
+          },
+          "correta": "B",
+          "explicacao": "'CARPE DIEM' (latim) significa 'aproveite o dia'. E um tema que valoriza o presente, os prazeres da vida, diante da brevidade da existencia.",
+          "dificuldade": "facil",
+          "tags": ["arcadismo", "temas"]
+        },
+        {
+          "id": "q3-m23",
+          "enunciado": "A obra 'Marilia de Dirceu', de Tomas Antonio Gonzaga, e um exemplo de poesia:",
+          "alternativas": {
+            "A": "Epica e heroica",
+            "B": "Lirica amorosa com elementos pastorais",
+            "C": "Satirica e critica",
+            "D": "Religiosa e mistica",
+            "E": "Realista e social"
+          },
+          "correta": "B",
+          "explicacao": "'Marilia de Dirceu' e poesia LIRICA AMOROSA com elementos PASTORAIS - o eu-lirico (Dirceu) canta seu amor por Marilia em cenario bucolico idealizado.",
+          "dificuldade": "medio",
+          "tags": ["arcadismo", "gonzaga"]
+        },
+        {
+          "id": "q4-m23",
+          "enunciado": "Os poetas arcades usavam pseudonimos pastorais porque:",
+          "alternativas": {
+            "A": "Eram perseguidos politicamente",
+            "B": "Queriam imitar a tradicao classica greco-latina",
+            "C": "Nao sabiam escrever seus nomes",
+            "D": "Eram todos religiosos",
+            "E": "A lei proibia poesia no Brasil"
+          },
+          "correta": "B",
+          "explicacao": "Os PSEUDONIMOS PASTORAIS (Dirceu, Marilia, Glauceste) imitavam a TRADICAO CLASSICA greco-latina, onde pastores cantavam em cenarios bucolicos idealizados.",
+          "dificuldade": "medio",
+          "tags": ["arcadismo", "pseudonimos"]
+        },
+        {
+          "id": "q5-m23",
+          "enunciado": "Muitos poetas arcades brasileiros participaram de qual movimento politico?",
+          "alternativas": {
+            "A": "Revolucao Farroupilha",
+            "B": "Inconfidencia Mineira",
+            "C": "Proclamacao da Republica",
+            "D": "Revolucao de 1930",
+            "E": "Guerra do Paraguai"
+          },
+          "correta": "B",
+          "explicacao": "Varios arcades (Gonzaga, Claudio Manuel, Alvarenga Peixoto) participaram da INCONFIDENCIA MINEIRA (1789), movimento pela independencia de Minas Gerais.",
+          "dificuldade": "medio",
+          "tags": ["arcadismo", "historia"]
+        }
+      ]
+    },
+    {
+      "id": "m24",
+      "titulo": "Romantismo - 1a Geracao",
+      "resumo": "O nacionalismo e o indianismo na primeira fase romantica brasileira.",
+      "topicos": [
+        "PERIODO: 1836-1881 (Romantismo geral)",
+        "1a GERACAO: Nacionalista/Indianista (1836-1850)",
+        "CARACTERISTICAS: Nacionalismo, indianismo, natureza brasileira, religiosidade",
+        "GONCALVES DIAS: 'Cancao do Exilio', 'I-Juca-Pirama'",
+        "JOSE DE ALENCAR: Romances indianistas ('Iracema', 'O Guarani')",
+        "INDIO COMO HEROI: Figura idealizada, nobre, corajoso"
+      ],
+      "exemplos": [
+        "Goncalves Dias: 'Minha terra tem palmeiras / Onde canta o sabia / As aves que aqui gorjeiam / Nao gorjeiam como la.'",
+        "Alencar - Iracema: 'Iracema, a virgem dos labios de mel, que tinha os cabelos mais negros que a asa da grauna...'",
+        "Heroi indigena: I-Juca-Pirama, Peri, Iracema"
+      ],
+      "dicas": [
+        "1a GERACAO = NACIONALISMO + INDIANISMO",
+        "O indio e IDEALIZADO como simbolo nacional (heroi puro e nobre)",
+        "ENEM relaciona indianismo com construcao da identidade nacional"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m24",
+          "enunciado": "A primeira geracao romantica brasileira e conhecida como:",
+          "alternativas": {
+            "A": "Geracao do mal-do-seculo",
+            "B": "Geracao condoreira",
+            "C": "Geracao nacionalista/indianista",
+            "D": "Geracao parnasiana",
+            "E": "Geracao modernista"
+          },
+          "correta": "C",
+          "explicacao": "A 1a GERACAO romantica e NACIONALISTA/INDIANISTA - exalta a patria brasileira e idealiza o indio como simbolo da identidade nacional.",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "geracoes"]
+        },
+        {
+          "id": "q2-m24",
+          "enunciado": "Na 'Cancao do Exilio', Goncalves Dias expressa principalmente:",
+          "alternativas": {
+            "A": "Critica a escravidao",
+            "B": "Saudade e exaltacao da patria brasileira",
+            "C": "Desejo de morte",
+            "D": "Amor impossivel",
+            "E": "Luta por liberdade politica"
+          },
+          "correta": "B",
+          "explicacao": "A 'Cancao do Exilio' expressa SAUDADE da terra natal e EXALTACAO da natureza brasileira - 'Minha terra tem palmeiras' - escrita quando Goncalves Dias estudava em Portugal.",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "goncalves"]
+        },
+        {
+          "id": "q3-m24",
+          "enunciado": "Jose de Alencar contribuiu para o indianismo com os romances:",
+          "alternativas": {
+            "A": "Memorias Postumas de Bras Cubas e Dom Casmurro",
+            "B": "Iracema e O Guarani",
+            "C": "A Moreninha e O Seminarista",
+            "D": "Lucíola e Senhora",
+            "E": "O Cortico e O Mulato"
+          },
+          "correta": "B",
+          "explicacao": "'IRACEMA' e 'O GUARANI' sao romances INDIANISTAS de Alencar, que idealizam o indio brasileiro. (Alencar tambem escreveu romances urbanos como 'Senhora').",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "alencar"]
+        },
+        {
+          "id": "q4-m24",
+          "enunciado": "O indianismo romantico apresentava o indio de forma:",
+          "alternativas": {
+            "A": "Realista, mostrando sua condicao de explorado",
+            "B": "Idealizada, como heroi nobre e puro",
+            "C": "Negativa, como selvagem perigoso",
+            "D": "Comica, para divertimento",
+            "E": "Indiferente, sem importancia"
+          },
+          "correta": "B",
+          "explicacao": "O indianismo IDEALIZAVA o indio como HEROI NOBRE E PURO, simbolo da nacionalidade brasileira. Era uma visao romantica, nao realista da condicao indigena.",
+          "dificuldade": "medio",
+          "tags": ["romantismo", "indianismo"]
+        },
+        {
+          "id": "q5-m24",
+          "enunciado": "O indianismo romantico tinha como funcao principal:",
+          "alternativas": {
+            "A": "Denunciar a exploracao indigena",
+            "B": "Criar uma identidade nacional brasileira",
+            "C": "Defender a cultura portuguesa",
+            "D": "Criticar a monarquia",
+            "E": "Promover a abolicao da escravidao"
+          },
+          "correta": "B",
+          "explicacao": "O indianismo buscava CRIAR UMA IDENTIDADE NACIONAL, diferenciando o Brasil de Portugal. O indio era simbolo do 'brasileiro original', antes da colonizacao.",
+          "dificuldade": "medio",
+          "tags": ["romantismo", "nacionalismo"]
+        }
+      ]
+    },
+    {
+      "id": "m25",
+      "titulo": "Romantismo - 2a e 3a Geracoes",
+      "resumo": "O mal-do-seculo e a poesia social condoreira.",
+      "topicos": [
+        "2a GERACAO: Ultra-romantica/Mal-do-seculo (1850-1860)",
+        "CARACTERISTICAS 2a: Pessimismo, morte, tedio, amor impossivel, egocentrismo",
+        "ALVARES DE AZEVEDO: 'Lira dos Vinte Anos', 'Noite na Taverna'",
+        "3a GERACAO: Condoreira/Social (1860-1881)",
+        "CARACTERISTICAS 3a: Poesia social, abolicionismo, liberdade, condor como simbolo",
+        "CASTRO ALVES: 'O Navio Negreiro', 'Vozes d'Africa' - poesia abolicionista"
+      ],
+      "exemplos": [
+        "Alvares de Azevedo: 'Se eu morresse amanha, viria ao menos / Fechar meus olhos minha triste irmã'",
+        "Castro Alves: 'Senhor Deus dos desgraçados! / Dizei-me vós, Senhor Deus! / Se é loucura... se é verdade / Tanto horror perante os céus!'",
+        "Condor: Ave que voa alto - simbolo de liberdade"
+      ],
+      "dicas": [
+        "2a GERACAO = MORTE, TEDIO, AMOR IMPOSSIVEL (influencia de Byron)",
+        "3a GERACAO = POESIA SOCIAL, ABOLICIONISMO (Castro Alves)",
+        "ENEM cobra muito Castro Alves e a denuncia da escravidao"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m25",
+          "enunciado": "A segunda geracao romantica e conhecida como 'mal-do-seculo' por causa:",
+          "alternativas": {
+            "A": "Das doencas da epoca",
+            "B": "Do pessimismo, tedio e fascinio pela morte",
+            "C": "Da luta politica",
+            "D": "Do nacionalismo exagerado",
+            "E": "Da critica a sociedade"
+          },
+          "correta": "B",
+          "explicacao": "O 'MAL-DO-SECULO' refere-se ao PESSIMISMO, TEDIO e FASCINIO PELA MORTE caracteristicos da 2a geracao. Poetas morriam jovens, escreviam sobre morte e amor impossivel.",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "mal-seculo"]
+        },
+        {
+          "id": "q2-m25",
+          "enunciado": "Alvares de Azevedo e representante da segunda geracao por sua poesia:",
+          "alternativas": {
+            "A": "Nacionalista e indianista",
+            "B": "Social e abolicionista",
+            "C": "Pessimista, com temas de morte e amor impossivel",
+            "D": "Parnasiana e objetiva",
+            "E": "Modernista e vanguardista"
+          },
+          "correta": "C",
+          "explicacao": "ALVARES DE AZEVEDO representa o 'mal-do-seculo' com poesia PESSIMISTA, temas de MORTE e AMOR IMPOSSIVEL. Morreu aos 20 anos.",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "azevedo"]
+        },
+        {
+          "id": "q3-m25",
+          "enunciado": "Castro Alves e chamado 'poeta dos escravos' porque:",
+          "alternativas": {
+            "A": "Era descendente de escravos",
+            "B": "Escreveu poesia abolicionista denunciando a escravidao",
+            "C": "Foi escravizado quando jovem",
+            "D": "Defendia a manutencao da escravidao",
+            "E": "Escrevia sobre a Africa antiga"
+          },
+          "correta": "B",
+          "explicacao": "CASTRO ALVES e o 'POETA DOS ESCRAVOS' por sua poesia ABOLICIONISTA que denunciava os horrores da escravidao ('O Navio Negreiro', 'Vozes d'Africa').",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "castro-alves"]
+        },
+        {
+          "id": "q4-m25",
+          "enunciado": "'O Navio Negreiro' de Castro Alves e um poema que:",
+          "alternativas": {
+            "A": "Exalta a navegacao portuguesa",
+            "B": "Denuncia o trafico de escravos africanos",
+            "C": "Descreve uma viagem turistica",
+            "D": "Narra uma historia de amor",
+            "E": "Critica o indianismo"
+          },
+          "correta": "B",
+          "explicacao": "'O NAVIO NEGREIRO' e um poema ABOLICIONISTA que DENUNCIA os horrores do trafico de escravos africanos, descrevendo as condicoes desumanas da travessia.",
+          "dificuldade": "facil",
+          "tags": ["romantismo", "navio-negreiro"]
+        },
+        {
+          "id": "q5-m25",
+          "enunciado": "A terceira geracao romantica e chamada 'condoreira' porque:",
+          "alternativas": {
+            "A": "Os poetas criavam condores",
+            "B": "O condor simboliza voo alto e liberdade",
+            "C": "Era uma escola de poesia chilena",
+            "D": "Condor era o pseudonimo de Castro Alves",
+            "E": "Refere-se a uma doenca da epoca"
+          },
+          "correta": "B",
+          "explicacao": "O CONDOR, ave que voa alto nos Andes, simboliza LIBERDADE e ideais elevados. A poesia 'condoreira' buscava causas nobres como a abolicao.",
+          "dificuldade": "medio",
+          "tags": ["romantismo", "condoreira"]
+        }
+      ]
+    },
+    {
+      "id": "m26",
+      "titulo": "Realismo e Naturalismo",
+      "resumo": "A literatura de analise social e psicologica no final do seculo XIX.",
+      "topicos": [
+        "PERIODO: 1881-1893",
+        "REALISMO: Analise psicologica, critica social, objetividade",
+        "NATURALISMO: Determinismo, zoomorfizacao, patologias sociais",
+        "MACHADO DE ASSIS: Maior escritor brasileiro - 'Dom Casmurro', 'Memorias Postumas'",
+        "ALUISIO AZEVEDO: 'O Cortico' - romance naturalista",
+        "CARACTERISTICAS: Ironia, narracao em 1a pessoa nao confiavel, critica a burguesia"
+      ],
+      "exemplos": [
+        "Machado: 'Marcela amou-me durante quinze meses e onze contos de reis'",
+        "Dom Casmurro: Capitu traiu ou nao? (narrador nao confiavel)",
+        "O Cortico: Descricao do cortico como organismo vivo"
+      ],
+      "dicas": [
+        "MACHADO DE ASSIS: ironia, pessimismo, narrador nao confiavel",
+        "NATURALISMO: influencia do meio, raca, momento (determinismo)",
+        "ENEM cobra muito a ironia machadiana e a critica social"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m26",
+          "enunciado": "O Realismo brasileiro se caracteriza principalmente por:",
+          "alternativas": {
+            "A": "Idealizacao da realidade e sentimentalismo",
+            "B": "Analise psicologica, objetividade e critica social",
+            "C": "Nacionalismo e indianismo",
+            "D": "Pessimismo e fascinio pela morte",
+            "E": "Rebuscamento linguistico e religiosidade"
+          },
+          "correta": "B",
+          "explicacao": "O REALISMO busca ANALISE PSICOLOGICA dos personagens, OBJETIVIDADE na descricao e CRITICA SOCIAL, opondo-se ao sentimentalismo romantico.",
+          "dificuldade": "facil",
+          "tags": ["realismo", "caracteristicas"]
+        },
+        {
+          "id": "q2-m26",
+          "enunciado": "Machado de Assis e considerado o maior escritor brasileiro. Uma de suas caracteristicas e:",
+          "alternativas": {
+            "A": "Linguagem rebuscada e barroca",
+            "B": "Ironia fina e narrador nao confiavel",
+            "C": "Indianismo e nacionalismo",
+            "D": "Poesia abolicionista",
+            "E": "Determinismo cientifico"
+          },
+          "correta": "B",
+          "explicacao": "MACHADO DE ASSIS usa IRONIA FINA e frequentemente um NARRADOR NAO CONFIAVEL (como Bentinho em Dom Casmurro), deixando o leitor em duvida.",
+          "dificuldade": "facil",
+          "tags": ["realismo", "machado"]
+        },
+        {
+          "id": "q3-m26",
+          "enunciado": "Em 'Dom Casmurro', a grande questao que permanece sem resposta e:",
+          "alternativas": {
+            "A": "Quem matou Escobar",
+            "B": "Se Capitu traiu ou nao Bentinho",
+            "C": "Por que Bentinho ficou rico",
+            "D": "Quando a historia aconteceu",
+            "E": "Onde morava a familia"
+          },
+          "correta": "B",
+          "explicacao": "A grande questao de 'DOM CASMURRO' e se CAPITU TRAIU OU NAO Bentinho. O narrador (Bentinho) e nao confiavel, deixando a duvida para o leitor.",
+          "dificuldade": "facil",
+          "tags": ["realismo", "dom-casmurro"]
+        },
+        {
+          "id": "q4-m26",
+          "enunciado": "O Naturalismo se diferencia do Realismo por enfatizar:",
+          "alternativas": {
+            "A": "A religiosidade e espiritualidade",
+            "B": "O determinismo biologico e social",
+            "C": "O amor romantico idealizado",
+            "D": "A liberdade individual",
+            "E": "O nacionalismo patriotico"
+          },
+          "correta": "B",
+          "explicacao": "O NATURALISMO enfatiza o DETERMINISMO - o ser humano e determinado pelo meio, pela raca e pelo momento historico. Ha enfase em patologias e instintos.",
+          "dificuldade": "medio",
+          "tags": ["naturalismo", "determinismo"]
+        },
+        {
+          "id": "q5-m26",
+          "enunciado": "'O Cortico' de Aluisio Azevedo e um romance naturalista que retrata:",
+          "alternativas": {
+            "A": "A vida da elite carioca",
+            "B": "A habitacao coletiva como organismo vivo",
+            "C": "O amor entre nobres",
+            "D": "A escravidao nas fazendas",
+            "E": "A vida dos indios"
+          },
+          "correta": "B",
+          "explicacao": "'O CORTICO' retrata a HABITACAO COLETIVA como um ORGANISMO VIVO, onde o meio determina o comportamento dos moradores. E retrato naturalista das classes baixas.",
+          "dificuldade": "medio",
+          "tags": ["naturalismo", "cortico"]
+        }
+      ]
+    },
+    {
+      "id": "m27",
+      "titulo": "Parnasianismo e Simbolismo",
+      "resumo": "A arte pela arte e a poesia das sensacoes no fim do seculo XIX.",
+      "topicos": [
+        "PARNASIANISMO (1882-1893): Arte pela arte, forma perfeita, objetividade",
+        "CARACTERISTICAS PARNASIANAS: Culto a forma, rimas ricas, sonetos, temas classicos",
+        "OLAVO BILAC: 'Profissao de Fe', 'Via Lactea' - maior parnasiano brasileiro",
+        "SIMBOLISMO (1893-1902): Subjetividade, musicalidade, sinestesia",
+        "CRUZ E SOUSA: 'Broqueis' - maior simbolista brasileiro, poeta negro",
+        "ALPHONSUS DE GUIMARAENS: Poesia mistica e religiosa"
+      ],
+      "exemplos": [
+        "Bilac: 'Ora (direis) ouvir estrelas! Certo / Perdeste o senso!'",
+        "Cruz e Sousa: 'Vozes veladas, veludosas vozes' (aliteracao)",
+        "Parnasiano: Descreve uma estatua grega com precisao",
+        "Simbolista: Sugere sensacoes, usa sinestesia"
+      ],
+      "dicas": [
+        "PARNASIANISMO: FORMA perfeita, OBJETIVIDADE, DESCREVE",
+        "SIMBOLISMO: SENSACOES, SUBJETIVIDADE, SUGERE",
+        "ENEM diferencia os dois movimentos pela abordagem"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m27",
+          "enunciado": "O Parnasianismo brasileiro valorizava principalmente:",
+          "alternativas": {
+            "A": "A expressao de sentimentos pessoais",
+            "B": "A perfeicao formal e a objetividade",
+            "C": "A musicalidade e a subjetividade",
+            "D": "O nacionalismo e o indianismo",
+            "E": "A critica social e politica"
+          },
+          "correta": "B",
+          "explicacao": "O PARNASIANISMO valoriza a PERFEICAO FORMAL (rimas, metricas, sonetos) e a OBJETIVIDADE. Lema: 'arte pela arte' - forma sobre conteudo.",
+          "dificuldade": "facil",
+          "tags": ["parnasianismo", "caracteristicas"]
+        },
+        {
+          "id": "q2-m27",
+          "enunciado": "Olavo Bilac e considerado o principal poeta parnasiano brasileiro. Sua poesia se caracteriza por:",
+          "alternativas": {
+            "A": "Versos livres e coloquiais",
+            "B": "Sonetos com rigor formal e temas classicos",
+            "C": "Poesia mistica e religiosa",
+            "D": "Critica social direta",
+            "E": "Nacionalismo exacerbado"
+          },
+          "correta": "B",
+          "explicacao": "BILAC escreveu SONETOS com RIGOR FORMAL e frequentemente abordou TEMAS CLASSICOS (Grecia, Roma). Foi o 'principe dos poetas brasileiros'.",
+          "dificuldade": "facil",
+          "tags": ["parnasianismo", "bilac"]
+        },
+        {
+          "id": "q3-m27",
+          "enunciado": "O Simbolismo se diferencia do Parnasianismo por valorizar:",
+          "alternativas": {
+            "A": "A forma perfeita e objetiva",
+            "B": "A sugestao, musicalidade e subjetividade",
+            "C": "A descricao precisa da realidade",
+            "D": "Os temas greco-romanos",
+            "E": "A clareza e o racionalismo"
+          },
+          "correta": "B",
+          "explicacao": "O SIMBOLISMO valoriza SUGESTAO (nao descricao), MUSICALIDADE dos versos e SUBJETIVIDADE. Busca expressar sensacoes, nao descrever objetos.",
+          "dificuldade": "medio",
+          "tags": ["simbolismo", "caracteristicas"]
+        },
+        {
+          "id": "q4-m27",
+          "enunciado": "Cruz e Sousa, maior simbolista brasileiro, era:",
+          "alternativas": {
+            "A": "Um nobre portugues",
+            "B": "Um poeta negro filho de escravos libertos",
+            "C": "Um padre jesuita",
+            "D": "Um politico abolicionista",
+            "E": "Um imigrante italiano"
+          },
+          "correta": "B",
+          "explicacao": "CRUZ E SOUSA era POETA NEGRO, filho de escravos libertos. Apesar do preconceito da epoca, tornou-se o maior simbolista brasileiro com obras como 'Broqueis'.",
+          "dificuldade": "medio",
+          "tags": ["simbolismo", "cruz-sousa"]
+        },
+        {
+          "id": "q5-m27",
+          "enunciado": "'Vozes veladas, veludosas vozes' (Cruz e Sousa) exemplifica a figura de linguagem chamada:",
+          "alternativas": {
+            "A": "Metafora",
+            "B": "Aliteracao",
+            "C": "Antitese",
+            "D": "Hiperbole",
+            "E": "Ironia"
+          },
+          "correta": "B",
+          "explicacao": "ALITERACAO e a repeticao de sons CONSONANTAIS (V-V-V). O Simbolismo usa muito esse recurso para criar MUSICALIDADE e sugerir sensacoes.",
+          "dificuldade": "facil",
+          "tags": ["simbolismo", "aliteracao"]
+        }
+      ]
+    },
+    {
+      "id": "m28",
+      "titulo": "Pre-Modernismo",
+      "resumo": "A transicao entre o seculo XIX e o Modernismo de 1922.",
+      "topicos": [
+        "PERIODO: 1902-1922",
+        "CARACTERISTICAS: Nao e escola, e periodo de transicao com obras diversas",
+        "EUCLIDES DA CUNHA: 'Os Sertoes' - denuncia de Canudos, linguagem cientifica",
+        "LIMA BARRETO: 'Triste Fim de Policarpo Quaresma' - critica social, linguagem simples",
+        "MONTEIRO LOBATO: 'Urupes' - Jeca Tatu, critica ao abandono do interior",
+        "AUGUSTO DOS ANJOS: Poesia com vocabulario cientifico, pessimismo"
+      ],
+      "exemplos": [
+        "Euclides: 'O sertanejo e, antes de tudo, um forte.'",
+        "Lima Barreto: Policarpo Quaresma - nacionalista ingenuo destruido pelo sistema",
+        "Monteiro Lobato: Jeca Tatu - caboclo doente e abandonado",
+        "Augusto dos Anjos: 'Verminose' - poesia com termos medicos"
+      ],
+      "dicas": [
+        "PRE-MODERNISMO: autores diferentes com CRITICA SOCIAL em comum",
+        "'Os Sertoes': literatura + sociologia + historia (obra hibrida)",
+        "ENEM cobra a visao critica desses autores sobre o Brasil"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m28",
+          "enunciado": "O Pre-Modernismo e considerado um periodo de:",
+          "alternativas": {
+            "A": "Uma escola literaria com regras definidas",
+            "B": "Transicao entre o seculo XIX e o Modernismo",
+            "C": "Apogeu do Parnasianismo",
+            "D": "Inicio do Romantismo",
+            "E": "Movimento exclusivamente poetico"
+          },
+          "correta": "B",
+          "explicacao": "O PRE-MODERNISMO nao e uma escola, mas um PERIODO DE TRANSICAO (1902-1922) com obras que preparam terreno para o Modernismo.",
+          "dificuldade": "facil",
+          "tags": ["pre-modernismo", "caracteristicas"]
+        },
+        {
+          "id": "q2-m28",
+          "enunciado": "'Os Sertoes' de Euclides da Cunha trata principalmente:",
+          "alternativas": {
+            "A": "Da escravidao nas fazendas",
+            "B": "Da Guerra de Canudos e do sertanejo nordestino",
+            "C": "Da vida na cidade de Sao Paulo",
+            "D": "Do indianismo romantico",
+            "E": "Da imigracao europeia"
+          },
+          "correta": "B",
+          "explicacao": "'OS SERTOES' relata a GUERRA DE CANUDOS (1896-1897) e analisa o SERTANEJO nordestino. 'O sertanejo e, antes de tudo, um forte.'",
+          "dificuldade": "facil",
+          "tags": ["pre-modernismo", "euclides"]
+        },
+        {
+          "id": "q3-m28",
+          "enunciado": "O personagem Jeca Tatu, de Monteiro Lobato, representa:",
+          "alternativas": {
+            "A": "O indio idealizado",
+            "B": "O caboclo doente e abandonado pelo poder publico",
+            "C": "O imigrante italiano",
+            "D": "O escravo liberto",
+            "E": "O sertanejo heroico"
+          },
+          "correta": "B",
+          "explicacao": "JECA TATU representa o CABOCLO DOENTE e ABANDONADO pelo poder publico. Lobato criticava o abandono do interior, nao o caboclo em si.",
+          "dificuldade": "medio",
+          "tags": ["pre-modernismo", "lobato"]
+        },
+        {
+          "id": "q4-m28",
+          "enunciado": "Lima Barreto, em 'Triste Fim de Policarpo Quaresma', critica:",
+          "alternativas": {
+            "A": "O nacionalismo ingenuo e a burocracia",
+            "B": "A escravidao e o racismo",
+            "C": "O sertao nordestino",
+            "D": "A poesia parnasiana",
+            "E": "O indianismo romantico"
+          },
+          "correta": "A",
+          "explicacao": "'TRISTE FIM DE POLICARPO QUARESMA' critica o NACIONALISMO INGENUO do protagonista e a BUROCRACIA que o destrói. E uma critica a sociedade brasileira.",
+          "dificuldade": "medio",
+          "tags": ["pre-modernismo", "lima-barreto"]
+        },
+        {
+          "id": "q5-m28",
+          "enunciado": "Augusto dos Anjos se diferencia dos outros pre-modernistas por sua:",
+          "alternativas": {
+            "A": "Poesia nacionalista e ufanista",
+            "B": "Poesia com vocabulario cientifico e pessimismo extremo",
+            "C": "Prosa regionalista",
+            "D": "Poesia romantica e sentimental",
+            "E": "Prosa abolicionista"
+          },
+          "correta": "B",
+          "explicacao": "AUGUSTO DOS ANJOS escreveu poesia com VOCABULARIO CIENTIFICO (termos de medicina, biologia) e PESSIMISMO EXTREMO, temas incomuns na poesia.",
+          "dificuldade": "medio",
+          "tags": ["pre-modernismo", "augusto"]
+        }
+      ]
+    },
+    {
+      "id": "m29",
+      "titulo": "Modernismo - 1a Fase",
+      "resumo": "A Semana de 22 e a revolucao na literatura brasileira.",
+      "topicos": [
+        "SEMANA DE ARTE MODERNA: Fevereiro de 1922, Sao Paulo",
+        "CARACTERISTICAS: Ruptura com o passado, nacionalismo critico, humor, coloquialismo",
+        "MARIO DE ANDRADE: 'Macunaima' - heroi sem nenhum carater",
+        "OSWALD DE ANDRADE: 'Pau-Brasil', 'Manifesto Antropofagico'",
+        "MANUEL BANDEIRA: 'Libertinagem' - poesia do cotidiano",
+        "MOVIMENTOS: Pau-Brasil, Antropofagia, Verde-Amarelo"
+      ],
+      "exemplos": [
+        "Oswald: 'Pronominais' - 'Me da um cigarro / Diz a gramatica / Do professor e do aluno / E do mulato sabido / Mas o bom negro e o bom branco / Da Nacao Brasileira / Dizem todos os dias / Deixa disso camarada / Me da um cigarro'",
+        "Mario: Macunaima - 'Ai que preguica!'",
+        "Bandeira: 'Vou-me embora pra Pasargada'"
+      ],
+      "dicas": [
+        "1a FASE = DESTRUICAO dos padroes antigos, experimentacao",
+        "ANTROPOFAGIA: 'devorar' a cultura estrangeira e criar algo brasileiro",
+        "ENEM cobra a RUPTURA e o NACIONALISMO CRITICO (nao ufanista)"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m29",
+          "enunciado": "A Semana de Arte Moderna de 1922 aconteceu em:",
+          "alternativas": {
+            "A": "Rio de Janeiro",
+            "B": "Sao Paulo",
+            "C": "Salvador",
+            "D": "Belo Horizonte",
+            "E": "Recife"
+          },
+          "correta": "B",
+          "explicacao": "A SEMANA DE ARTE MODERNA aconteceu em SAO PAULO, em fevereiro de 1922, no Teatro Municipal. Foi o marco inicial do Modernismo brasileiro.",
+          "dificuldade": "facil",
+          "tags": ["modernismo", "semana-22"]
+        },
+        {
+          "id": "q2-m29",
+          "enunciado": "O 'Manifesto Antropofagico' de Oswald de Andrade propunha:",
+          "alternativas": {
+            "A": "Copiar a cultura europeia",
+            "B": "Devorar criticamente a cultura estrangeira e criar algo brasileiro",
+            "C": "Rejeitar toda influencia externa",
+            "D": "Voltar ao indianismo romantico",
+            "E": "Abandonar a literatura"
+          },
+          "correta": "B",
+          "explicacao": "A ANTROPOFAGIA propunha 'DEVORAR' a cultura estrangeira, assimilando-a criticamente e transformando-a em algo genuinamente brasileiro.",
+          "dificuldade": "medio",
+          "tags": ["modernismo", "antropofagia"]
+        },
+        {
+          "id": "q3-m29",
+          "enunciado": "'Macunaima', de Mario de Andrade, e subtitulado 'o heroi sem nenhum carater' porque:",
+          "alternativas": {
+            "A": "O protagonista e um vilao",
+            "B": "Representa a mistura de culturas sem identidade fixa",
+            "C": "E uma critica ao analfabetismo",
+            "D": "O autor nao conseguiu definir o personagem",
+            "E": "E uma traducao de obra estrangeira"
+          },
+          "correta": "B",
+          "explicacao": "'Heroi SEM NENHUM CARATER' significa sem carater fixo - Macunaima REPRESENTA A MISTURA de culturas brasileiras (indigena, africana, europeia) sem identidade unica.",
+          "dificuldade": "medio",
+          "tags": ["modernismo", "macunaima"]
+        },
+        {
+          "id": "q4-m29",
+          "enunciado": "A primeira fase do Modernismo (1922-1930) se caracteriza principalmente por:",
+          "alternativas": {
+            "A": "Conservadorismo e tradicao",
+            "B": "Ruptura, experimentacao e irreverencia",
+            "C": "Poesia parnasiana",
+            "D": "Romance regionalista",
+            "E": "Teatro classico"
+          },
+          "correta": "B",
+          "explicacao": "A 1a FASE modernista e de RUPTURA com o passado, EXPERIMENTACAO formal e IRREVERENCIA. Os artistas queriam 'destruir' para depois construir.",
+          "dificuldade": "facil",
+          "tags": ["modernismo", "1a-fase"]
+        },
+        {
+          "id": "q5-m29",
+          "enunciado": "Manuel Bandeira, poeta modernista, inovou ao usar:",
+          "alternativas": {
+            "A": "Apenas sonetos parnasianos",
+            "B": "Linguagem coloquial e temas do cotidiano",
+            "C": "Apenas temas religiosos",
+            "D": "Vocabulario cientifico",
+            "E": "Formas classicas rigorosas"
+          },
+          "correta": "B",
+          "explicacao": "MANUEL BANDEIRA usou LINGUAGEM COLOQUIAL e TEMAS DO COTIDIANO, rompendo com a linguagem elevada da poesia tradicional. Versos livres e tom intimista.",
+          "dificuldade": "facil",
+          "tags": ["modernismo", "bandeira"]
+        }
+      ]
+    },
+    {
+      "id": "m30",
+      "titulo": "Modernismo - 2a e 3a Fases",
+      "resumo": "O romance de 30 e a Geracao de 45.",
+      "topicos": [
+        "2a FASE (1930-1945): Romance regionalista, poesia intimista",
+        "ROMANCE DE 30: Graciliano Ramos, Jorge Amado, Rachel de Queiroz, Jose Lins",
+        "GRACILIANO RAMOS: 'Vidas Secas' - seca nordestina, linguagem seca",
+        "CARLOS DRUMMOND: Poesia reflexiva, 'No meio do caminho'",
+        "3a FASE/GERACAO 45 (1945-1960): Retorno a forma, Joao Cabral",
+        "JOAO CABRAL: 'Morte e Vida Severina' - poesia social, linguagem precisa"
+      ],
+      "exemplos": [
+        "Graciliano - Vidas Secas: Fabiano, Sinha Vitoria, os meninos, Baleia",
+        "Drummond: 'No meio do caminho tinha uma pedra / Tinha uma pedra no meio do caminho'",
+        "Joao Cabral: 'Severino retirante' - a vida e a morte no sertao"
+      ],
+      "dicas": [
+        "2a FASE = CONSTRUCAO (romance social, Neo-Realismo)",
+        "VIDAS SECAS: seca na linguagem reflete a seca do sertao",
+        "ENEM cobra muito Graciliano Ramos e a denuncia social"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m30",
+          "enunciado": "A segunda fase do Modernismo (1930-1945) se destaca pelo:",
+          "alternativas": {
+            "A": "Experimentalismo da Semana de 22",
+            "B": "Romance regionalista e engajamento social",
+            "C": "Retorno ao Parnasianismo",
+            "D": "Teatro de vanguarda",
+            "E": "Poesia concreta"
+          },
+          "correta": "B",
+          "explicacao": "A 2a FASE se destaca pelo ROMANCE REGIONALISTA (Nordeste principalmente) e ENGAJAMENTO SOCIAL. E a fase de 'construcao' apos a 'destruicao' da 1a fase.",
+          "dificuldade": "facil",
+          "tags": ["modernismo", "2a-fase"]
+        },
+        {
+          "id": "q2-m30",
+          "enunciado": "'Vidas Secas' de Graciliano Ramos retrata:",
+          "alternativas": {
+            "A": "A vida urbana em Sao Paulo",
+            "B": "A familia de retirantes nordestinos fugindo da seca",
+            "C": "O indianismo romantico",
+            "D": "A escravidao no seculo XIX",
+            "E": "A imigracao italiana"
+          },
+          "correta": "B",
+          "explicacao": "'VIDAS SECAS' retrata uma FAMILIA DE RETIRANTES (Fabiano, Sinha Vitoria, os meninos e a cachorra Baleia) FUGINDO DA SECA no sertao nordestino.",
+          "dificuldade": "facil",
+          "tags": ["modernismo", "graciliano"]
+        },
+        {
+          "id": "q3-m30",
+          "enunciado": "Carlos Drummond de Andrade e considerado um dos maiores poetas brasileiros por sua poesia:",
+          "alternativas": {
+            "A": "Exclusivamente nacionalista",
+            "B": "Reflexiva, com temas existenciais e sociais",
+            "C": "Exclusivamente romantica",
+            "D": "Parnasiana e objetiva",
+            "E": "Religiosa e mistica"
+          },
+          "correta": "B",
+          "explicacao": "DRUMMOND e conhecido por poesia REFLEXIVA que aborda temas EXISTENCIAIS (o sentido da vida) e SOCIAIS (desigualdade, politica). Vasta obra, varios temas.",
+          "dificuldade": "facil",
+          "tags": ["modernismo", "drummond"]
+        },
+        {
+          "id": "q4-m30",
+          "enunciado": "'Morte e Vida Severina' de Joao Cabral de Melo Neto e:",
+          "alternativas": {
+            "A": "Um romance regionalista",
+            "B": "Um auto de Natal pernambucano sobre a migracao nordestina",
+            "C": "Uma peca de teatro absurdista",
+            "D": "Um manifesto politico",
+            "E": "Uma coletanea de contos"
+          },
+          "correta": "B",
+          "explicacao": "'MORTE E VIDA SEVERINA' e um AUTO DE NATAL PERNAMBUCANO que narra a MIGRACAO de Severino do sertao para o litoral, retratando a vida e morte no Nordeste.",
+          "dificuldade": "medio",
+          "tags": ["modernismo", "joao-cabral"]
+        },
+        {
+          "id": "q5-m30",
+          "enunciado": "Uma caracteristica de 'Vidas Secas' de Graciliano Ramos e:",
+          "alternativas": {
+            "A": "Linguagem rebuscada e ornamentada",
+            "B": "Linguagem seca que reflete a aridez do sertao",
+            "C": "Narracao em primeira pessoa",
+            "D": "Final feliz e otimista",
+            "E": "Cenario urbano e moderno"
+          },
+          "correta": "B",
+          "explicacao": "Em 'VIDAS SECAS', a LINGUAGEM SECA, sem adornos, REFLETE A ARIDEZ do sertao e a dificuldade de comunicacao dos personagens. Forma e conteudo se espelham.",
+          "dificuldade": "medio",
+          "tags": ["modernismo", "vidas-secas"]
+        }
+      ]
+    }
+  ]
+}

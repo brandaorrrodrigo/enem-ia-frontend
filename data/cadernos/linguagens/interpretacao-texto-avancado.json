@@ -1,0 +1,1027 @@
+{
+  "id": "ling-001",
+  "slug": "interpretacao-texto-avancado",
+  "titulo": "Interpretacao de Texto - Nivel Avancado",
+  "categoria": "linguagens",
+  "nivel": "Avancado",
+  "descricao": "Domine as tecnicas avancadas de leitura e interpretacao textual para gabaritar no ENEM.",
+  "icone": "📖",
+  "cor": "from-blue-500 to-cyan-500",
+  "tempoEstimado": "4h",
+  "fpRecompensa": 300,
+  "tags": ["interpretacao", "texto", "leitura", "enem", "linguagens"],
+  "modulos": [
+    {
+      "id": "m1",
+      "titulo": "Identificacao de Tese e Argumentos",
+      "resumo": "Aprenda a identificar a tese central e os argumentos que a sustentam em textos dissertativos.",
+      "topicos": [
+        "TESE: Ideia central que o autor defende no texto",
+        "ARGUMENTO: Razoes e evidencias que sustentam a tese",
+        "TESE EXPLICITA: Aparece claramente no texto, geralmente na introducao ou conclusao",
+        "TESE IMPLICITA: Precisa ser inferida a partir dos argumentos apresentados",
+        "HIERARQUIA: Tese principal vs teses secundarias",
+        "PALAVRAS-CHAVE: 'defendo que', 'acredito que', 'e necessario', 'portanto'"
+      ],
+      "exemplos": [
+        "Tese explicita: 'A educacao e a base do desenvolvimento nacional.'",
+        "Tese implicita: Texto que apresenta dados de paises desenvolvidos com boa educacao → infere-se a importancia da educacao",
+        "Argumento de autoridade: 'Segundo Paulo Freire, a educacao liberta.'"
+      ],
+      "dicas": [
+        "A tese geralmente responde: 'O que o autor quer me convencer?'",
+        "Procure a tese no primeiro ou ultimo paragrafo",
+        "Cada paragrafo de desenvolvimento costuma trazer um argumento"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m1",
+          "enunciado": "Leia o trecho: 'A tecnologia nas escolas nao substitui o professor, mas potencializa seu trabalho. Estudos mostram que alunos com acesso a recursos digitais apresentam melhor desempenho. Portanto, investir em tecnologia educacional e investir no futuro.' Qual e a tese do texto?",
+          "alternativas": {
+            "A": "A tecnologia substitui o professor",
+            "B": "Estudos mostram melhor desempenho dos alunos",
+            "C": "Investir em tecnologia educacional e investir no futuro",
+            "D": "Alunos precisam de recursos digitais",
+            "E": "O professor e potencializado pela tecnologia"
+          },
+          "correta": "C",
+          "explicacao": "A tese e a ideia central defendida, marcada por 'Portanto' que introduz a conclusao: investir em tecnologia educacional e investir no futuro. As outras opcoes sao argumentos ou informacoes secundarias.",
+          "dificuldade": "medio",
+          "tags": ["tese", "argumentacao"]
+        },
+        {
+          "id": "q2-m1",
+          "enunciado": "Em um texto argumentativo, a funcao dos argumentos e:",
+          "alternativas": {
+            "A": "Apresentar o tema de forma neutra",
+            "B": "Sustentar e comprovar a tese defendida",
+            "C": "Narrar fatos em ordem cronologica",
+            "D": "Descrever caracteristicas do objeto",
+            "E": "Questionar a posicao do leitor"
+          },
+          "correta": "B",
+          "explicacao": "Argumentos sao razoes, evidencias e exemplos usados para sustentar e comprovar a tese que o autor defende. Eles dao credibilidade e fundamentacao ao ponto de vista apresentado.",
+          "dificuldade": "facil",
+          "tags": ["argumento", "funcao"]
+        },
+        {
+          "id": "q3-m1",
+          "enunciado": "Quando a tese de um texto nao aparece explicitamente, dizemos que ela e:",
+          "alternativas": {
+            "A": "Ausente",
+            "B": "Contraditoria",
+            "C": "Implicita",
+            "D": "Invalida",
+            "E": "Secundaria"
+          },
+          "correta": "C",
+          "explicacao": "Tese implicita e aquela que nao aparece diretamente no texto, mas pode ser inferida/deduzida a partir dos argumentos e informacoes apresentadas pelo autor.",
+          "dificuldade": "facil",
+          "tags": ["tese", "implicito"]
+        },
+        {
+          "id": "q4-m1",
+          "enunciado": "'De acordo com pesquisa do IBGE, 70% dos brasileiros nao praticam atividade fisica regular.' Este trecho representa:",
+          "alternativas": {
+            "A": "Uma tese",
+            "B": "Uma opiniao pessoal",
+            "C": "Um argumento de autoridade/dados",
+            "D": "Uma conclusao",
+            "E": "Uma introducao"
+          },
+          "correta": "C",
+          "explicacao": "Trata-se de um argumento baseado em dados estatisticos de fonte confiavel (IBGE). Argumentos de autoridade/dados usam pesquisas, estatisticas e especialistas para dar credibilidade.",
+          "dificuldade": "medio",
+          "tags": ["argumento", "autoridade", "dados"]
+        },
+        {
+          "id": "q5-m1",
+          "enunciado": "Qual palavra/expressao tipicamente introduz uma tese ou conclusao?",
+          "alternativas": {
+            "A": "Primeiramente",
+            "B": "Por exemplo",
+            "C": "Entretanto",
+            "D": "Portanto",
+            "E": "Alem disso"
+          },
+          "correta": "D",
+          "explicacao": "'Portanto' e um conectivo conclusivo que tipicamente introduz a tese/conclusao do texto. 'Primeiramente' e 'Alem disso' introduzem argumentos, 'Por exemplo' introduz exemplificacao, 'Entretanto' indica oposicao.",
+          "dificuldade": "facil",
+          "tags": ["conectivos", "conclusao"]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "titulo": "Intertextualidade",
+      "resumo": "Compreenda as relacoes entre textos e como um texto dialoga com outros.",
+      "topicos": [
+        "INTERTEXTUALIDADE: Dialogo entre textos - um texto faz referencia a outro",
+        "CITACAO: Reproducao literal de trecho de outro texto",
+        "ALUSAO: Referencia indireta a outro texto, obra ou autor",
+        "PARODIA: Imitacao comica/critica de outro texto",
+        "PARAFRASE: Reescrita de um texto com outras palavras, mantendo o sentido",
+        "EPÍGRAFE: Citacao no inicio de obra que antecipa tema ou tom"
+      ],
+      "exemplos": [
+        "Citacao: 'Como disse Machado de Assis: \"Algum dinheiro e remedio para todos os males.\"'",
+        "Alusao: 'Ele era um Dom Quixote lutando contra moinhos de vento' (referencia a Cervantes)",
+        "Parodia: Propaganda que imita cena famosa de filme de forma comica"
+      ],
+      "dicas": [
+        "ENEM adora questoes de intertextualidade com obras classicas",
+        "Conheca os classicos da literatura brasileira e universal",
+        "Parodia = humor/critica; Parafrase = mesmo sentido, palavras diferentes"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m2",
+          "enunciado": "Quando um texto faz uma referencia indireta a outro texto, obra ou personagem sem cita-lo explicitamente, temos:",
+          "alternativas": {
+            "A": "Citacao",
+            "B": "Parodia",
+            "C": "Alusao",
+            "D": "Parafrase",
+            "E": "Plagio"
+          },
+          "correta": "C",
+          "explicacao": "Alusao e a referencia indireta a outro texto, obra, autor ou personagem. O leitor precisa de repertorio cultural para identificar a referencia. Citacao seria a transcricao direta.",
+          "dificuldade": "medio",
+          "tags": ["intertextualidade", "alusao"]
+        },
+        {
+          "id": "q2-m2",
+          "enunciado": "'Minha terra tem palmeiras onde canta o sabia... de lata, em cima do telhado de zinco.' Este trecho faz uma relacao intertextual de:",
+          "alternativas": {
+            "A": "Citacao com a Cancao do Exilio",
+            "B": "Parodia com a Cancao do Exilio",
+            "C": "Parafrase com a Cancao do Exilio",
+            "D": "Alusao a Machado de Assis",
+            "E": "Plagio de Goncalves Dias"
+          },
+          "correta": "B",
+          "explicacao": "O texto retoma a Cancao do Exilio de Goncalves Dias, mas modifica com humor critico (sabia de lata, telhado de zinco), caracterizando uma PARODIA - imitacao comica/critica.",
+          "dificuldade": "medio",
+          "tags": ["intertextualidade", "parodia"]
+        },
+        {
+          "id": "q3-m2",
+          "enunciado": "A parafrase se diferencia da citacao porque:",
+          "alternativas": {
+            "A": "Copia o texto original palavra por palavra",
+            "B": "Reescreve o texto com outras palavras mantendo o sentido",
+            "C": "Faz critica humoristica ao texto original",
+            "D": "Referencia indiretamente outro texto",
+            "E": "Inverte completamente o sentido original"
+          },
+          "correta": "B",
+          "explicacao": "Parafrase e a reescrita de um texto usando outras palavras, mas preservando o mesmo sentido/ideia. Citacao seria a copia literal; parodia adiciona humor/critica.",
+          "dificuldade": "facil",
+          "tags": ["parafrase", "citacao"]
+        },
+        {
+          "id": "q4-m2",
+          "enunciado": "Uma epigrafe em um livro tem a funcao de:",
+          "alternativas": {
+            "A": "Resumir toda a obra",
+            "B": "Antecipar o tema ou tom da obra atraves de citacao",
+            "C": "Apresentar a biografia do autor",
+            "D": "Explicar o titulo escolhido",
+            "E": "Listar as referencias bibliograficas"
+          },
+          "correta": "B",
+          "explicacao": "Epigrafe e uma citacao colocada no inicio de uma obra (ou capitulo) que antecipa o tema, o tom ou estabelece um dialogo intertextual que sera desenvolvido.",
+          "dificuldade": "medio",
+          "tags": ["epigrafe", "funcao"]
+        },
+        {
+          "id": "q5-m2",
+          "enunciado": "Para identificar relacoes intertextuais, o leitor precisa principalmente de:",
+          "alternativas": {
+            "A": "Conhecimento gramatical avancado",
+            "B": "Repertorio cultural e conhecimento de outras obras",
+            "C": "Dominio de linguas estrangeiras",
+            "D": "Formacao em literatura",
+            "E": "Acesso ao texto original citado"
+          },
+          "correta": "B",
+          "explicacao": "A identificacao de intertextualidade depende do repertorio cultural do leitor - conhecer obras literarias, filmes, musicas, eventos historicos para reconhecer as referencias.",
+          "dificuldade": "facil",
+          "tags": ["intertextualidade", "repertorio"]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "titulo": "Funcoes da Linguagem",
+      "resumo": "Identifique as seis funcoes da linguagem e como aparecem nos textos do ENEM.",
+      "topicos": [
+        "EMOTIVA/EXPRESSIVA: Foco no emissor, expressa emocoes e opinioes (1a pessoa)",
+        "APELATIVA/CONATIVA: Foco no receptor, busca convencer ou ordenar (voce, imperativo)",
+        "REFERENCIAL/DENOTATIVA: Foco no contexto, informa de forma objetiva (3a pessoa)",
+        "METALINGUISTICA: Foco no codigo, linguagem fala sobre si mesma",
+        "FATICA: Foco no canal, testa ou mantem a comunicacao",
+        "POETICA: Foco na mensagem, elaboracao estetica da linguagem"
+      ],
+      "exemplos": [
+        "Emotiva: 'Estou tao feliz com essa conquista!'",
+        "Apelativa: 'Vote consciente. O futuro depende de voce.'",
+        "Referencial: 'O Brasil tem 26 estados e um Distrito Federal.'",
+        "Metalinguistica: 'Substantivo e a palavra que nomeia seres.'",
+        "Fatica: 'Alo? Esta me ouvindo?'",
+        "Poetica: 'Voar e acordar na nuvem do impossivel.'"
+      ],
+      "dicas": [
+        "ENEM pergunta muito sobre funcao APELATIVA em propagandas",
+        "Funcao REFERENCIAL domina textos jornalisticos e cientificos",
+        "Funcao POETICA nao e exclusiva de poesia - esta na elaboracao estetica"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m3",
+          "enunciado": "'Nao deixe para amanha o que voce pode fazer hoje. Comece sua dieta agora!' A funcao da linguagem predominante e:",
+          "alternativas": {
+            "A": "Emotiva",
+            "B": "Referencial",
+            "C": "Apelativa",
+            "D": "Metalinguistica",
+            "E": "Fatica"
+          },
+          "correta": "C",
+          "explicacao": "A funcao APELATIVA foca no receptor, buscando convence-lo ou leva-lo a agir. Marcas: uso de 'voce', verbos no imperativo ('Nao deixe', 'Comece'), tom persuasivo.",
+          "dificuldade": "facil",
+          "tags": ["funcoes", "apelativa"]
+        },
+        {
+          "id": "q2-m3",
+          "enunciado": "'Verbo e a palavra que expressa acao, estado ou fenomeno da natureza.' Este enunciado apresenta funcao:",
+          "alternativas": {
+            "A": "Poetica",
+            "B": "Emotiva",
+            "C": "Apelativa",
+            "D": "Metalinguistica",
+            "E": "Fatica"
+          },
+          "correta": "D",
+          "explicacao": "Funcao METALINGUISTICA ocorre quando a linguagem fala sobre si mesma - o codigo explica o codigo. Definicoes gramaticais e dicionarios sao exemplos tipicos.",
+          "dificuldade": "facil",
+          "tags": ["funcoes", "metalinguistica"]
+        },
+        {
+          "id": "q3-m3",
+          "enunciado": "'Que saudade que eu sinto da minha terra natal!' A funcao predominante e:",
+          "alternativas": {
+            "A": "Referencial",
+            "B": "Emotiva",
+            "C": "Apelativa",
+            "D": "Fatica",
+            "E": "Metalinguistica"
+          },
+          "correta": "B",
+          "explicacao": "Funcao EMOTIVA/EXPRESSIVA foca no emissor, expressando sentimentos e emocoes. Marcas: 1a pessoa ('eu'), exclamacao, expressao de sentimento ('Que saudade').",
+          "dificuldade": "facil",
+          "tags": ["funcoes", "emotiva"]
+        },
+        {
+          "id": "q4-m3",
+          "enunciado": "'Alo? Alo? Voce ainda esta ai? A ligacao esta ruim.' A funcao predominante e:",
+          "alternativas": {
+            "A": "Referencial",
+            "B": "Emotiva",
+            "C": "Poetica",
+            "D": "Fatica",
+            "E": "Apelativa"
+          },
+          "correta": "D",
+          "explicacao": "Funcao FATICA foca no canal de comunicacao - serve para testar, iniciar, manter ou encerrar o contato. 'Alo', 'Esta me ouvindo?', 'Entendeu?' sao exemplos.",
+          "dificuldade": "medio",
+          "tags": ["funcoes", "fatica"]
+        },
+        {
+          "id": "q5-m3",
+          "enunciado": "Um texto jornalistico que informa objetivamente sobre um acontecimento apresenta predominantemente a funcao:",
+          "alternativas": {
+            "A": "Emotiva",
+            "B": "Poetica",
+            "C": "Referencial",
+            "D": "Fatica",
+            "E": "Metalinguistica"
+          },
+          "correta": "C",
+          "explicacao": "Funcao REFERENCIAL/DENOTATIVA foca no contexto/assunto, transmitindo informacao de forma objetiva. E predominante em textos jornalisticos, cientificos e didaticos.",
+          "dificuldade": "facil",
+          "tags": ["funcoes", "referencial"]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "titulo": "Figuras de Linguagem - Parte 1",
+      "resumo": "Domine as principais figuras de linguagem cobradas no ENEM.",
+      "topicos": [
+        "METAFORA: Comparacao implicita entre elementos (A e B)",
+        "COMPARACAO/SIMILE: Comparacao explicita com conectivo (A e como B)",
+        "METONIMIA: Substituicao de um termo por outro com relacao de proximidade",
+        "PERSONIFICACAO/PROSOPOPEIA: Atribuir caracteristicas humanas a seres inanimados",
+        "HIPERBOLE: Exagero intencional para enfatizar",
+        "EUFEMISMO: Suavizar uma expressao desagradavel"
+      ],
+      "exemplos": [
+        "Metafora: 'A vida e uma viagem sem mapa.'",
+        "Comparacao: 'Seus olhos brilham como estrelas.'",
+        "Metonimia: 'Li Machado de Assis' (= a obra de Machado)",
+        "Personificacao: 'O sol sorria para nos naquela manha.'",
+        "Hiperbole: 'Estou morrendo de fome!'",
+        "Eufemismo: 'Ele passou desta para melhor.' (= morreu)"
+      ],
+      "dicas": [
+        "Metafora NAO tem 'como', 'tal qual', 'parece' - comparacao tem",
+        "Metonimia: autor pela obra, parte pelo todo, marca pelo produto",
+        "ENEM adora perguntar sobre efeito de sentido das figuras"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m4",
+          "enunciado": "'O tempo e dinheiro.' Esta frase apresenta:",
+          "alternativas": {
+            "A": "Comparacao",
+            "B": "Metonimia",
+            "C": "Metafora",
+            "D": "Hiperbole",
+            "E": "Eufemismo"
+          },
+          "correta": "C",
+          "explicacao": "METAFORA e uma comparacao implicita (sem conectivo comparativo). O tempo E dinheiro - estabelece uma equivalencia direta entre dois elementos de universos diferentes.",
+          "dificuldade": "facil",
+          "tags": ["figuras", "metafora"]
+        },
+        {
+          "id": "q2-m4",
+          "enunciado": "'Bebi dois copos de agua.' A figura presente e:",
+          "alternativas": {
+            "A": "Metafora",
+            "B": "Metonimia",
+            "C": "Hiperbole",
+            "D": "Comparacao",
+            "E": "Eufemismo"
+          },
+          "correta": "B",
+          "explicacao": "METONIMIA: substituicao de um termo por outro com relacao de proximidade. 'Copos' (continente) substitui 'agua' (conteudo). Bebi a agua que estava nos copos.",
+          "dificuldade": "medio",
+          "tags": ["figuras", "metonimia"]
+        },
+        {
+          "id": "q3-m4",
+          "enunciado": "'O vento sussurrava segredos entre as arvores.' A figura de linguagem e:",
+          "alternativas": {
+            "A": "Hiperbole",
+            "B": "Metafora",
+            "C": "Personificacao",
+            "D": "Metonimia",
+            "E": "Eufemismo"
+          },
+          "correta": "C",
+          "explicacao": "PERSONIFICACAO/PROSOPOPEIA atribui caracteristicas humanas a seres inanimados ou irracionais. O vento (inanimado) 'sussurrava segredos' (acao humana).",
+          "dificuldade": "facil",
+          "tags": ["figuras", "personificacao"]
+        },
+        {
+          "id": "q4-m4",
+          "enunciado": "'Ela era forte como uma rocha.' Esta figura e:",
+          "alternativas": {
+            "A": "Metafora",
+            "B": "Comparacao",
+            "C": "Metonimia",
+            "D": "Hiperbole",
+            "E": "Personificacao"
+          },
+          "correta": "B",
+          "explicacao": "COMPARACAO/SIMILE usa conectivo comparativo explicito (como, tal qual, parece, feito). 'Forte COMO uma rocha' - a comparacao e explicita.",
+          "dificuldade": "facil",
+          "tags": ["figuras", "comparacao"]
+        },
+        {
+          "id": "q5-m4",
+          "enunciado": "'Ele foi descansar para sempre.' Esta expressao e um exemplo de:",
+          "alternativas": {
+            "A": "Hiperbole",
+            "B": "Metafora",
+            "C": "Ironia",
+            "D": "Eufemismo",
+            "E": "Metonimia"
+          },
+          "correta": "D",
+          "explicacao": "EUFEMISMO suaviza uma expressao desagradavel ou chocante. 'Descansar para sempre' e uma forma suave de dizer que alguem morreu.",
+          "dificuldade": "facil",
+          "tags": ["figuras", "eufemismo"]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "titulo": "Figuras de Linguagem - Parte 2",
+      "resumo": "Conheca mais figuras de linguagem importantes para o ENEM.",
+      "topicos": [
+        "IRONIA: Dizer o contrario do que se pensa para criticar",
+        "ANTITESE: Aproximacao de termos com sentidos opostos",
+        "PARADOXO: Ideias contraditorias que coexistem",
+        "GRADACAO: Sequencia de termos em ordem crescente ou decrescente",
+        "ANAFORA: Repeticao de palavra no inicio de frases/versos",
+        "ALITERACAO: Repeticao de sons consonantais"
+      ],
+      "exemplos": [
+        "Ironia: 'Que belo exemplo de cidadao!' (sobre alguem corrupto)",
+        "Antitese: 'E noite e dia, choro e riso, amor e odio.'",
+        "Paradoxo: 'Amor e fogo que arde sem se ver.' (Camoes)",
+        "Gradacao: 'Olhou, sorriu, acenou, correu, abracou.'",
+        "Anafora: 'E paz. / E tristeza. / E solidao.'",
+        "Aliteracao: 'O rato roeu a roupa do rei de Roma.'"
+      ],
+      "dicas": [
+        "Antitese: oposicao de palavras; Paradoxo: oposicao de ideias",
+        "Ironia exige contexto para ser identificada",
+        "ENEM cobra muito ironia em charges e textos criticos"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m5",
+          "enunciado": "'Parabens! Voce conseguiu reprovar em todas as materias!' (dito com tom de critica). A figura e:",
+          "alternativas": {
+            "A": "Eufemismo",
+            "B": "Hiperbole",
+            "C": "Ironia",
+            "D": "Metafora",
+            "E": "Metonimia"
+          },
+          "correta": "C",
+          "explicacao": "IRONIA consiste em dizer o contrario do que se pensa, geralmente para criticar. 'Parabens' por reprovar e ironico - o sentido literal e oposto ao sentido pretendido.",
+          "dificuldade": "facil",
+          "tags": ["figuras", "ironia"]
+        },
+        {
+          "id": "q2-m5",
+          "enunciado": "'A vida e morte, o amor e odio, a paz e guerra.' A figura predominante e:",
+          "alternativas": {
+            "A": "Paradoxo",
+            "B": "Antitese",
+            "C": "Gradacao",
+            "D": "Anafora",
+            "E": "Metafora"
+          },
+          "correta": "B",
+          "explicacao": "ANTITESE e a aproximacao de termos com sentidos opostos: vida/morte, amor/odio, paz/guerra. Diferente do paradoxo, que une ideias contraditorias numa mesma afirmacao.",
+          "dificuldade": "medio",
+          "tags": ["figuras", "antitese"]
+        },
+        {
+          "id": "q3-m5",
+          "enunciado": "'Amor e fogo que arde sem se ver, e ferida que doi e nao se sente.' (Camoes). A figura principal e:",
+          "alternativas": {
+            "A": "Antitese",
+            "B": "Ironia",
+            "C": "Paradoxo",
+            "D": "Hiperbole",
+            "E": "Gradacao"
+          },
+          "correta": "C",
+          "explicacao": "PARADOXO apresenta ideias contraditorias que coexistem: fogo que arde sem se ver, ferida que doi e nao se sente. Sao afirmacoes aparentemente impossiveis, mas poeticamente verdadeiras.",
+          "dificuldade": "medio",
+          "tags": ["figuras", "paradoxo"]
+        },
+        {
+          "id": "q4-m5",
+          "enunciado": "'E o vento. / E a chuva. / E a tempestade. / E o fim.' A repeticao do 'E' no inicio configura:",
+          "alternativas": {
+            "A": "Aliteracao",
+            "B": "Gradacao",
+            "C": "Antitese",
+            "D": "Anafora",
+            "E": "Paradoxo"
+          },
+          "correta": "D",
+          "explicacao": "ANAFORA e a repeticao de uma palavra ou expressao no inicio de frases, versos ou periodos consecutivos. O 'E' se repete no inicio de cada frase.",
+          "dificuldade": "medio",
+          "tags": ["figuras", "anafora"]
+        },
+        {
+          "id": "q5-m5",
+          "enunciado": "'Veio, viu, venceu.' Esta sequencia representa:",
+          "alternativas": {
+            "A": "Anafora",
+            "B": "Antitese",
+            "C": "Gradacao",
+            "D": "Paradoxo",
+            "E": "Ironia"
+          },
+          "correta": "C",
+          "explicacao": "GRADACAO e uma sequencia de termos em ordem crescente (climax) ou decrescente (anticlimax) de intensidade. 'Veio, viu, venceu' mostra uma progressao de acoes ate a vitoria.",
+          "dificuldade": "medio",
+          "tags": ["figuras", "gradacao"]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "titulo": "Coesao Textual",
+      "resumo": "Entenda os mecanismos que conectam as partes de um texto.",
+      "topicos": [
+        "COESAO: Ligacao entre elementos linguisticos do texto",
+        "COESAO REFERENCIAL: Retomada de termos (pronomes, sinonimos, hiperonimos)",
+        "COESAO SEQUENCIAL: Conexao entre ideias (conectivos, conjuncoes)",
+        "ANAFORA: Retomada de termo anterior (ele, este, o qual)",
+        "CATAFORA: Antecipacao de termo posterior (eis o que penso: ...)",
+        "ELIPSE: Omissao de termo ja mencionado"
+      ],
+      "exemplos": [
+        "Anafora: 'Maria chegou. ELA estava cansada.' (ela = Maria)",
+        "Catafora: 'So quero ISTO: paz.' (isto = paz)",
+        "Sinonimia: 'O presidente... O mandatario...' (retoma por sinonimo)",
+        "Hiperonimo: 'O cachorro... O animal...' (retoma por termo geral)"
+      ],
+      "dicas": [
+        "ENEM pergunta: 'A que termo X se refere?'",
+        "Pronomes demonstrativos: ESTE (proximo), ESSE (distante), AQUELE (mais distante)",
+        "Conectivos de oposicao: mas, porem, contudo, entretanto, todavia"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m6",
+          "enunciado": "'O Brasil e um pais diverso. ESSE territorio abriga diversas culturas.' O termo 'ESSE territorio' retoma:",
+          "alternativas": {
+            "A": "Um termo posterior no texto",
+            "B": "O termo 'Brasil' por referencia anaforica",
+            "C": "O termo 'culturas'",
+            "D": "Uma ideia implicita",
+            "E": "O titulo do texto"
+          },
+          "correta": "B",
+          "explicacao": "ANAFORA e a retomada de um termo anterior. 'ESSE territorio' retoma 'O Brasil' mencionado na frase anterior, mantendo a coesao textual.",
+          "dificuldade": "facil",
+          "tags": ["coesao", "anafora"]
+        },
+        {
+          "id": "q2-m6",
+          "enunciado": "'So desejo uma coisa: felicidade.' O termo 'uma coisa' antecipa 'felicidade'. Isso e:",
+          "alternativas": {
+            "A": "Anafora",
+            "B": "Catafora",
+            "C": "Elipse",
+            "D": "Sinonimia",
+            "E": "Antonimia"
+          },
+          "correta": "B",
+          "explicacao": "CATAFORA e a referencia antecipada a um termo que sera mencionado depois. 'Uma coisa' antecipa 'felicidade', que vem em seguida.",
+          "dificuldade": "medio",
+          "tags": ["coesao", "catafora"]
+        },
+        {
+          "id": "q3-m6",
+          "enunciado": "'Maria estuda muito. Pedro tambem ____.' (subentende-se 'estuda muito'). A omissao configura:",
+          "alternativas": {
+            "A": "Catafora",
+            "B": "Anafora",
+            "C": "Elipse",
+            "D": "Pleonasmo",
+            "E": "Hiperbole"
+          },
+          "correta": "C",
+          "explicacao": "ELIPSE e a omissao de um termo que pode ser facilmente recuperado pelo contexto. 'Pedro tambem' omite 'estuda muito', evitando repeticao desnecessaria.",
+          "dificuldade": "medio",
+          "tags": ["coesao", "elipse"]
+        },
+        {
+          "id": "q4-m6",
+          "enunciado": "'Adoro cachorros. Os CANINOS sao leais.' A palavra 'caninos' retoma 'cachorros' por:",
+          "alternativas": {
+            "A": "Pronome",
+            "B": "Sinonimia",
+            "C": "Antonimia",
+            "D": "Elipse",
+            "E": "Catafora"
+          },
+          "correta": "B",
+          "explicacao": "SINONIMIA e a retomada por palavra de sentido equivalente. 'Caninos' e sinonimo de 'cachorros', mantendo a coesao sem repetir a mesma palavra.",
+          "dificuldade": "facil",
+          "tags": ["coesao", "sinonimia"]
+        },
+        {
+          "id": "q5-m6",
+          "enunciado": "Qual conectivo indica OPOSICAO de ideias?",
+          "alternativas": {
+            "A": "Portanto",
+            "B": "Porque",
+            "C": "Entretanto",
+            "D": "Assim",
+            "E": "Quando"
+          },
+          "correta": "C",
+          "explicacao": "'Entretanto' e um conectivo adversativo que indica oposicao de ideias (assim como mas, porem, contudo, todavia). 'Portanto' e conclusivo, 'porque' e causal.",
+          "dificuldade": "facil",
+          "tags": ["coesao", "conectivos"]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "titulo": "Coerencia Textual",
+      "resumo": "Compreenda como as ideias se organizam logicamente em um texto.",
+      "topicos": [
+        "COERENCIA: Sentido logico e articulacao de ideias do texto",
+        "COERENCIA SEMANTICA: Compatibilidade de sentido entre as partes",
+        "COERENCIA SINTATICA: Estrutura gramatical adequada",
+        "COERENCIA PRAGMATICA: Adequacao ao contexto comunicativo",
+        "CONTRADICAO: Informacoes incompativeis que quebram a coerencia",
+        "SEQUENCIA LOGICA: Ordenacao adequada de ideias e argumentos"
+      ],
+      "exemplos": [
+        "Incoerente: 'Ele e vegetariano, por isso come muita carne.' (contradicao)",
+        "Incoerente: 'Nao tenho dinheiro. Vou comprar um carro novo.' (falta de logica)",
+        "Coerente: 'Esta chovendo, portanto levarei guarda-chuva.' (logica causa-efeito)"
+      ],
+      "dicas": [
+        "Coesao = ligacao linguistica | Coerencia = ligacao logica/sentido",
+        "Um texto pode ter coesao e nao ter coerencia (e vice-versa)",
+        "ENEM pergunta sobre 'quebra de expectativa' ou 'ruptura logica'"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m7",
+          "enunciado": "A diferenca fundamental entre coesao e coerencia e:",
+          "alternativas": {
+            "A": "Coesao trata do sentido, coerencia trata da forma",
+            "B": "Coesao trata dos conectivos, coerencia trata do sentido logico",
+            "C": "Sao a mesma coisa, apenas nomes diferentes",
+            "D": "Coesao e obrigatoria, coerencia e opcional",
+            "E": "Coerencia e gramatical, coesao e semantica"
+          },
+          "correta": "B",
+          "explicacao": "COESAO refere-se aos mecanismos linguisticos de ligacao (conectivos, pronomes, etc.). COERENCIA refere-se ao sentido logico e articulacao das ideias.",
+          "dificuldade": "medio",
+          "tags": ["coerencia", "coesao"]
+        },
+        {
+          "id": "q2-m7",
+          "enunciado": "'Paulo e muito honesto. Ontem ele roubou uma carteira.' O problema deste trecho e:",
+          "alternativas": {
+            "A": "Falta de coesao",
+            "B": "Falta de coerencia (contradicao)",
+            "C": "Erro gramatical",
+            "D": "Falta de pontuacao",
+            "E": "Uso inadequado de conectivo"
+          },
+          "correta": "B",
+          "explicacao": "Ha uma CONTRADICAO que quebra a coerencia: ser 'muito honesto' e 'roubar' sao ideias incompativeis. O texto tem coesao (conectivo 'ontem'), mas falta coerencia.",
+          "dificuldade": "facil",
+          "tags": ["coerencia", "contradicao"]
+        },
+        {
+          "id": "q3-m7",
+          "enunciado": "Um texto pode ter todas as palavras ligadas por conectivos e ainda assim ser incoerente. Isso acontece quando:",
+          "alternativas": {
+            "A": "Os conectivos estao errados",
+            "B": "Falta pontuacao adequada",
+            "C": "As ideias nao fazem sentido logico entre si",
+            "D": "O texto e muito curto",
+            "E": "Ha muitas repeticoes"
+          },
+          "correta": "C",
+          "explicacao": "Coesao (ligacao formal) nao garante coerencia (sentido logico). Um texto pode usar conectivos corretamente, mas apresentar ideias contraditorias ou sem logica.",
+          "dificuldade": "medio",
+          "tags": ["coerencia", "logica"]
+        },
+        {
+          "id": "q4-m7",
+          "enunciado": "Para que um texto seja coerente, e necessario que:",
+          "alternativas": {
+            "A": "Todas as frases sejam longas",
+            "B": "Haja conectivos em todas as frases",
+            "C": "As informacoes sejam compativeis e logicamente articuladas",
+            "D": "O texto tenha muitos paragrafos",
+            "E": "Seja escrito em linguagem formal"
+          },
+          "correta": "C",
+          "explicacao": "Coerencia exige que as informacoes sejam compativeis entre si (sem contradicao) e que estejam logicamente articuladas (em sequencia que faca sentido).",
+          "dificuldade": "facil",
+          "tags": ["coerencia", "requisitos"]
+        },
+        {
+          "id": "q5-m7",
+          "enunciado": "'A menina era muda. Ela cantava lindamente.' O problema de coerencia presente e:",
+          "alternativas": {
+            "A": "Falta de conectivo",
+            "B": "Contradicao semantica",
+            "C": "Erro de concordancia",
+            "D": "Falta de referente",
+            "E": "Ambiguidade"
+          },
+          "correta": "B",
+          "explicacao": "Ha CONTRADICAO SEMANTICA: 'muda' (que nao fala) e 'cantava' sao informacoes incompativeis. A segunda frase contradiz a primeira, quebrando a coerencia.",
+          "dificuldade": "facil",
+          "tags": ["coerencia", "contradicao"]
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "titulo": "Variacoes Linguisticas",
+      "resumo": "Entenda as diferentes formas de uso da lingua portuguesa.",
+      "topicos": [
+        "VARIACAO GEOGRAFICA/DIATOPICA: Diferencas regionais (sotaque, vocabulario)",
+        "VARIACAO SOCIAL/DIASTRATICA: Diferencas por grupo social (gírias, jargoes)",
+        "VARIACAO HISTORICA/DIACRONICA: Mudancas ao longo do tempo",
+        "VARIACAO SITUACIONAL/DIAFASICA: Adequacao ao contexto (formal x informal)",
+        "NORMA CULTA: Variedade de prestigio, usada em contextos formais",
+        "PRECONCEITO LINGUISTICO: Discriminacao baseada na forma de falar"
+      ],
+      "exemplos": [
+        "Diatopica: 'aipim' (Sul), 'mandioca' (Sudeste), 'macaxeira' (Nordeste)",
+        "Diastratica: girias de jovens, jargao medico, linguagem academica",
+        "Diafasica: 'Oi, beleza?' (informal) vs 'Bom dia, como vai?' (formal)",
+        "Diacronica: 'vossa merce' → 'vosmice' → 'voce'"
+      ],
+      "dicas": [
+        "ENEM NAO considera erro as variacoes - questiona adequacao ao contexto",
+        "Nenhuma variacao e 'melhor' ou 'pior' - sao diferentes",
+        "ENEM critica o preconceito linguistico"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m8",
+          "enunciado": "A variacao que se refere as diferencas regionais de uma lingua e chamada de:",
+          "alternativas": {
+            "A": "Diastratica",
+            "B": "Diafasica",
+            "C": "Diacronica",
+            "D": "Diatopica",
+            "E": "Sincronica"
+          },
+          "correta": "D",
+          "explicacao": "Variacao DIATOPICA (ou geografica) refere-se as diferencas regionais: sotaques, vocabulario tipico de cada regiao do pais.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "diatopica"]
+        },
+        {
+          "id": "q2-m8",
+          "enunciado": "Um medico usando termos tecnicos com colegas e um exemplo de variacao:",
+          "alternativas": {
+            "A": "Diatopica",
+            "B": "Diastratica",
+            "C": "Diacronica",
+            "D": "Geografica",
+            "E": "Historica"
+          },
+          "correta": "B",
+          "explicacao": "Variacao DIASTRATICA (ou social) relaciona-se a grupos sociais especificos. O jargao medico e uma variedade usada por um grupo profissional.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "diastratica"]
+        },
+        {
+          "id": "q3-m8",
+          "enunciado": "Usar linguagem formal em uma entrevista de emprego e informal com amigos e exemplo de variacao:",
+          "alternativas": {
+            "A": "Diatopica",
+            "B": "Diacronica",
+            "C": "Diafasica",
+            "D": "Diastratica",
+            "E": "Geografica"
+          },
+          "correta": "C",
+          "explicacao": "Variacao DIAFASICA (ou situacional) refere-se a adequacao da linguagem ao contexto comunicativo - mais formal ou informal conforme a situacao.",
+          "dificuldade": "medio",
+          "tags": ["variacao", "diafasica"]
+        },
+        {
+          "id": "q4-m8",
+          "enunciado": "A evolucao de 'vossa merce' para 'voce' ao longo dos seculos e um exemplo de variacao:",
+          "alternativas": {
+            "A": "Diatopica",
+            "B": "Diastratica",
+            "C": "Diafasica",
+            "D": "Diacronica",
+            "E": "Sincronica"
+          },
+          "correta": "D",
+          "explicacao": "Variacao DIACRONICA (ou historica) refere-se as mudancas que a lingua sofre ao longo do tempo. Palavras mudam de forma e significado atraves dos seculos.",
+          "dificuldade": "facil",
+          "tags": ["variacao", "diacronica"]
+        },
+        {
+          "id": "q5-m8",
+          "enunciado": "O preconceito linguistico consiste em:",
+          "alternativas": {
+            "A": "Preferir a norma culta em contextos formais",
+            "B": "Discriminar pessoas pela forma como falam",
+            "C": "Estudar as variacoes da lingua",
+            "D": "Usar girias com amigos",
+            "E": "Escrever de forma coloquial"
+          },
+          "correta": "B",
+          "explicacao": "PRECONCEITO LINGUISTICO e a discriminacao de pessoas baseada em sua forma de falar. E criticado pelo ENEM, que defende o respeito a todas as variacoes.",
+          "dificuldade": "facil",
+          "tags": ["variacao", "preconceito"]
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "titulo": "Generos Textuais Digitais",
+      "resumo": "Conheca os generos textuais que surgiram com a internet e tecnologia.",
+      "topicos": [
+        "E-MAIL: Comunicacao escrita digital, pode ser formal ou informal",
+        "POST/PUBLICACAO: Texto em redes sociais, geralmente curto e opinativo",
+        "TWEET: Texto muito curto (280 caracteres), direto e impactante",
+        "MEME: Imagem + texto com humor, critica social ou politica",
+        "BLOG: Textos pessoais ou tematicos em plataforma digital",
+        "PODCAST/VIDEOCAST: Conteudo em audio/video, linguagem oral planejada"
+      ],
+      "exemplos": [
+        "E-mail formal: 'Prezado Sr. Fulano, Venho por meio deste...'",
+        "Tweet: 'A educacao transforma. Invista no futuro. #EducacaoJa'",
+        "Meme: Imagem de situacao cotidiana com legenda ironica",
+        "Post: 'Gente, vocês viram o que aconteceu hoje? Absurdo!'"
+      ],
+      "dicas": [
+        "ENEM inclui generos digitais como memes e posts em suas provas",
+        "Analise a funcao social: meme = critica/humor, post = opiniao, etc.",
+        "Linguagem pode ser informal, mas atende a proposito comunicativo"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m9",
+          "enunciado": "Um meme que circula nas redes sociais geralmente tem a funcao de:",
+          "alternativas": {
+            "A": "Informar de forma neutra e objetiva",
+            "B": "Fazer humor e/ou critica social",
+            "C": "Substituir textos jornalisticos",
+            "D": "Ensinar conteudos academicos",
+            "E": "Documentar fatos historicos"
+          },
+          "correta": "B",
+          "explicacao": "MEMES combinam imagem e texto para fazer humor e/ou critica social, politica, comportamental. Usam ironia, parodia e referencias culturais compartilhadas.",
+          "dificuldade": "facil",
+          "tags": ["generos", "meme"]
+        },
+        {
+          "id": "q2-m9",
+          "enunciado": "A principal caracteristica do tweet que o diferencia de outros generos e:",
+          "alternativas": {
+            "A": "Uso obrigatorio de imagens",
+            "B": "Limitacao de caracteres que exige concisao",
+            "C": "Linguagem sempre formal",
+            "D": "Extensao ilimitada",
+            "E": "Uso exclusivo de audio"
+          },
+          "correta": "B",
+          "explicacao": "O TWEET tem limite de 280 caracteres, o que exige linguagem concisa, direta e impactante. Essa restricao molda sua estrutura e estilo.",
+          "dificuldade": "facil",
+          "tags": ["generos", "tweet"]
+        },
+        {
+          "id": "q3-m9",
+          "enunciado": "Um e-mail enviado ao departamento de recursos humanos de uma empresa deve usar linguagem:",
+          "alternativas": {
+            "A": "Informal com girias",
+            "B": "Com muitos emojis",
+            "C": "Formal e objetiva",
+            "D": "Poetica e subjetiva",
+            "E": "Coloquial com abreviacoes"
+          },
+          "correta": "C",
+          "explicacao": "E-mails profissionais/institucionais exigem linguagem FORMAL e objetiva, com tratamento adequado (Prezado, Atenciosamente), clareza e correcao gramatical.",
+          "dificuldade": "facil",
+          "tags": ["generos", "email"]
+        },
+        {
+          "id": "q4-m9",
+          "enunciado": "O que caracteriza a linguagem dos posts em redes sociais?",
+          "alternativas": {
+            "A": "Sempre segue a norma culta rigidamente",
+            "B": "E predominantemente informal e subjetiva",
+            "C": "Usa apenas linguagem tecnica",
+            "D": "Evita totalmente opinioes pessoais",
+            "E": "Segue formato jornalistico"
+          },
+          "correta": "B",
+          "explicacao": "Posts em redes sociais sao predominantemente INFORMAIS e SUBJETIVOS, expressando opinioes, emocoes e experiencias pessoais dos usuarios.",
+          "dificuldade": "facil",
+          "tags": ["generos", "post"]
+        },
+        {
+          "id": "q5-m9",
+          "enunciado": "Por que o ENEM inclui generos digitais como memes em suas provas?",
+          "alternativas": {
+            "A": "Para testar conhecimentos de informatica",
+            "B": "Porque sao generos atuais com funcao social relevante",
+            "C": "Para substituir textos literarios",
+            "D": "Apenas para tornar a prova mais facil",
+            "E": "Porque sao mais importantes que generos tradicionais"
+          },
+          "correta": "B",
+          "explicacao": "O ENEM inclui generos digitais porque sao ATUAIS e tem FUNCAO SOCIAL relevante na comunicacao contemporanea, circulando amplamente na sociedade.",
+          "dificuldade": "medio",
+          "tags": ["generos", "enem"]
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "titulo": "Estrategias de Leitura para o ENEM",
+      "resumo": "Tecnicas praticas para interpretar textos com eficiencia na prova.",
+      "topicos": [
+        "LEITURA DO ENUNCIADO: Leia primeiro para saber o que procurar no texto",
+        "LEITURA GLOBAL: Identifique tema, genero e proposito do texto",
+        "PALAVRAS-CHAVE: Sublinhe termos importantes no texto e no enunciado",
+        "ELIMINACAO: Descarte alternativas obviamente incorretas",
+        "CONTEXTO: Use pistas contextuais para inferir significados",
+        "VERIFICACAO: Releia o trecho especifico se a questao pedir"
+      ],
+      "exemplos": [
+        "Enunciado pede 'tese' → procure posicao defendida pelo autor",
+        "Enunciado pede 'funcao' → identifique o proposito do texto",
+        "Palavra desconhecida → deduza pelo contexto antes de chutar"
+      ],
+      "dicas": [
+        "Nao leia o texto inteiro primeiro - leia o ENUNCIADO para direcionar",
+        "Alternativas muito radicais ('sempre', 'nunca', 'todos') geralmente estao erradas",
+        "A resposta esta NO TEXTO - nao invente informacoes"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m10",
+          "enunciado": "Qual e a primeira coisa que voce deve fazer ao resolver uma questao de interpretacao no ENEM?",
+          "alternativas": {
+            "A": "Ler todo o texto com atencao",
+            "B": "Ler o enunciado para saber o que procurar",
+            "C": "Ler todas as alternativas",
+            "D": "Marcar a primeira opcao que parecer certa",
+            "E": "Pular para a proxima questao"
+          },
+          "correta": "B",
+          "explicacao": "Ler o ENUNCIADO primeiro direciona sua leitura do texto. Voce sabera o que procurar (tese, funcao, significado de palavra, etc.) e economizara tempo.",
+          "dificuldade": "facil",
+          "tags": ["estrategia", "leitura"]
+        },
+        {
+          "id": "q2-m10",
+          "enunciado": "Alternativas com termos como 'sempre', 'nunca', 'todos', 'nenhum' geralmente:",
+          "alternativas": {
+            "A": "Estao corretas por serem absolutas",
+            "B": "Devem ser marcadas imediatamente",
+            "C": "Devem ser vistas com desconfianca pois generalizacoes extremas raramente sao verdadeiras",
+            "D": "Indicam resposta certa",
+            "E": "Sao as mais faceis"
+          },
+          "correta": "C",
+          "explicacao": "Termos ABSOLUTOS (sempre, nunca, todos, nenhum) indicam generalizacoes extremas, que raramente sao verdadeiras. Desconfie dessas alternativas.",
+          "dificuldade": "medio",
+          "tags": ["estrategia", "eliminacao"]
+        },
+        {
+          "id": "q3-m10",
+          "enunciado": "Se voce encontrar uma palavra desconhecida no texto, a melhor estrategia e:",
+          "alternativas": {
+            "A": "Pular a questao imediatamente",
+            "B": "Chutar qualquer alternativa",
+            "C": "Tentar deduzir o significado pelo contexto",
+            "D": "Perguntar ao fiscal",
+            "E": "Marcar a alternativa mais longa"
+          },
+          "correta": "C",
+          "explicacao": "O CONTEXTO oferece pistas para deduzir significados. Veja as palavras ao redor, a logica da frase e o tema do texto para inferir o sentido.",
+          "dificuldade": "facil",
+          "tags": ["estrategia", "contexto"]
+        },
+        {
+          "id": "q4-m10",
+          "enunciado": "Ao usar a tecnica de eliminacao, voce deve:",
+          "alternativas": {
+            "A": "Eliminar todas as alternativas",
+            "B": "Descartar apenas uma alternativa",
+            "C": "Descartar alternativas claramente incorretas para aumentar chances de acerto",
+            "D": "Nunca eliminar nenhuma opcao",
+            "E": "Eliminar a alternativa mais curta"
+          },
+          "correta": "C",
+          "explicacao": "ELIMINACAO consiste em descartar alternativas claramente incorretas (contradicoes com o texto, generalizacoes, informacoes inventadas) para aumentar as chances.",
+          "dificuldade": "facil",
+          "tags": ["estrategia", "eliminacao"]
+        },
+        {
+          "id": "q5-m10",
+          "enunciado": "A resposta correta em questoes de interpretacao deve:",
+          "alternativas": {
+            "A": "Expressar sua opiniao pessoal",
+            "B": "Estar baseada em informacoes do proprio texto",
+            "C": "Contradizer o texto para mostrar senso critico",
+            "D": "Inventar informacoes que completem o texto",
+            "E": "Ignorar o que o texto diz"
+          },
+          "correta": "B",
+          "explicacao": "A resposta deve estar BASEADA NO TEXTO. Nao invente informacoes nem use opiniao pessoal - busque sempre evidencias no proprio texto para justificar sua escolha.",
+          "dificuldade": "facil",
+          "tags": ["estrategia", "texto"]
+        }
+      ]
+    }
+  ]
+}

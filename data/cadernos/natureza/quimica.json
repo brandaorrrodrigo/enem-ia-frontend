@@ -1,0 +1,1075 @@
+{
+  "id": "quimica",
+  "slug": "quimica",
+  "titulo": "Química para o ENEM",
+  "categoria": "natureza",
+  "nivel": "intermediario",
+  "descricao": "Química geral, inorgânica, orgânica e físico-química aplicadas ao cotidiano",
+  "icone": "FlaskConical",
+  "cor": "#9B59B6",
+  "tempoEstimado": "25 horas",
+  "fpRecompensa": 550,
+  "tags": ["química", "reações", "orgânica", "ambiente", "ENEM"],
+  "modulos": [
+    {
+      "id": "m121",
+      "titulo": "Estrutura Atômica e Tabela Periódica",
+      "resumo": "Modelos atômicos, distribuição eletrônica e propriedades periódicas",
+      "topicos": [
+        {
+          "titulo": "Modelos Atômicos",
+          "conteudo": "Dalton (1803): átomo como esfera maciça indivisível. Thomson (1897): descobriu o elétron; modelo 'pudim de passas' (carga positiva com elétrons incrustados). Rutherford (1911): experimento da folha de ouro; núcleo pequeno, denso e positivo, com elétrons ao redor. Bohr (1913): elétrons em órbitas definidas (níveis de energia); ao absorver energia, o elétron salta para nível mais externo, ao emitir, volta. Modelo quântico atual: orbitais (regiões de probabilidade), números quânticos definem o estado do elétron."
+        },
+        {
+          "titulo": "Distribuição Eletrônica",
+          "conteudo": "Os elétrons distribuem-se em camadas (K, L, M, N, O, P, Q) e subníveis (s, p, d, f). Ordem de preenchimento (diagrama de Linus Pauling): 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰... O número atômico (Z) = número de prótons = número de elétrons (átomo neutro). Elétrons de valência são os da última camada, determinam propriedades químicas. Exemplo: Na (Z=11): 1s² 2s² 2p⁶ 3s¹ → 1 elétron de valência, tende a perder (forma Na⁺)."
+        },
+        {
+          "titulo": "Tabela Periódica e Propriedades",
+          "conteudo": "A tabela organiza elementos por Z crescente; elementos no mesmo grupo (coluna) têm propriedades semelhantes. Grupos importantes: 1 (metais alcalinos), 2 (alcalino-terrosos), 16 (calcogênios), 17 (halogênios), 18 (gases nobres). Metais (esquerda): condutores, brilho, perdem elétrons. Não-metais (direita): ganham elétrons. Propriedades periódicas: raio atômico (aumenta para baixo e para esquerda), eletronegatividade (aumenta para cima e para direita - exceto gases nobres), energia de ionização (energia para remover elétron - aumenta para cima e direita)."
+        }
+      ],
+      "exemplos": [
+        "Distribuição eletrônica do ferro (Z=26) e sua aplicação",
+        "Por que o sódio reage violentamente com água",
+        "A eletronegatividade explica a polaridade das ligações"
+      ],
+      "dicas": [
+        "ENEM cobra distribuição eletrônica e propriedades periódicas",
+        "Decore a ordem de preenchimento dos subníveis",
+        "Eletronegatividade: F > O > N > Cl > Br > I > S > C > H"
+      ],
+      "questoes": [
+        {
+          "id": "q121-1",
+          "enunciado": "O modelo atômico de Rutherford foi proposto a partir do experimento de bombardeamento de uma fina folha de ouro com partículas alfa. A principal conclusão desse experimento foi que:",
+          "alternativas": {
+            "A": "O átomo é uma esfera maciça e indivisível",
+            "B": "O átomo possui um núcleo pequeno, denso e positivo",
+            "C": "Os elétrons estão distribuídos em camadas de energia definida",
+            "D": "A carga positiva está distribuída uniformemente no átomo",
+            "E": "O átomo não possui partículas negativas"
+          },
+          "correta": "B",
+          "explicacao": "No experimento, a maioria das partículas alfa atravessou a folha sem desviar (o átomo é quase todo vazio), algumas desviaram (próximas ao núcleo) e raras retornaram (chocaram-se com o núcleo). Rutherford concluiu que a massa e carga positiva estão concentradas em um núcleo pequeno e denso.",
+          "dificuldade": "facil",
+          "tags": ["rutherford", "modelo atômico", "núcleo"]
+        },
+        {
+          "id": "q121-2",
+          "enunciado": "A distribuição eletrônica de um átomo no estado fundamental com 17 elétrons é:",
+          "alternativas": {
+            "A": "1s² 2s² 2p⁶ 3s² 3p⁵",
+            "B": "1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹",
+            "C": "1s² 2s² 2p⁶ 3s² 3p⁶",
+            "D": "1s² 2s² 2p⁶ 3s¹",
+            "E": "1s² 2s² 2p⁶ 3s² 3d⁵"
+          },
+          "correta": "A",
+          "explicacao": "Seguindo o diagrama de Pauling: 1s² (2) + 2s² (4) + 2p⁶ (10) + 3s² (12) + 3p⁵ (17). O elemento é o cloro (Cl, Z=17), um halogênio com 7 elétrons de valência, que tende a ganhar 1 elétron para completar o octeto.",
+          "dificuldade": "medio",
+          "tags": ["distribuição eletrônica", "pauling", "cloro"]
+        },
+        {
+          "id": "q121-3",
+          "enunciado": "Os elementos do grupo 17 (halogênios) da tabela periódica são conhecidos por:",
+          "alternativas": {
+            "A": "Serem metais que perdem facilmente elétrons",
+            "B": "Serem gases nobres com camada de valência completa",
+            "C": "Serem não-metais com 7 elétrons de valência, altamente eletronegativos",
+            "D": "Serem metais de transição com propriedades magnéticas",
+            "E": "Serem metais alcalinos que reagem com água"
+          },
+          "correta": "C",
+          "explicacao": "Os halogênios (F, Cl, Br, I, At) possuem 7 elétrons na camada de valência, precisando de apenas 1 elétron para completar o octeto. Por isso, são altamente eletronegativos e reativos, tendendo a ganhar elétrons ou compartilhá-los em ligações covalentes. O flúor é o elemento mais eletronegativo.",
+          "dificuldade": "facil",
+          "tags": ["halogênios", "tabela periódica", "eletronegatividade"]
+        },
+        {
+          "id": "q121-4",
+          "enunciado": "Na tabela periódica, a eletronegatividade dos elementos geralmente:",
+          "alternativas": {
+            "A": "Aumenta da direita para a esquerda e de cima para baixo",
+            "B": "Aumenta da esquerda para a direita e de baixo para cima",
+            "C": "É constante em todos os elementos",
+            "D": "Diminui da esquerda para a direita nos períodos",
+            "E": "É maior nos metais alcalinos"
+          },
+          "correta": "B",
+          "explicacao": "A eletronegatividade (tendência de atrair elétrons em uma ligação) aumenta da esquerda para a direita no período (mais elétrons de valência, menor raio) e de baixo para cima no grupo (menor raio, núcleo mais próximo da ligação). O flúor é o mais eletronegativo. Gases nobres geralmente não são considerados na escala.",
+          "dificuldade": "facil",
+          "tags": ["eletronegatividade", "propriedades periódicas", "tabela"]
+        },
+        {
+          "id": "q121-5",
+          "enunciado": "Um átomo neutro possui 20 prótons. Esse átomo pertence ao elemento químico:",
+          "alternativas": {
+            "A": "Magnésio (Mg)",
+            "B": "Cálcio (Ca)",
+            "C": "Potássio (K)",
+            "D": "Argônio (Ar)",
+            "E": "Escândio (Sc)"
+          },
+          "correta": "B",
+          "explicacao": "O número atômico (Z) é o número de prótons e identifica o elemento. Z = 20 corresponde ao cálcio (Ca), um metal alcalino-terroso do grupo 2. Sua distribuição eletrônica é 1s² 2s² 2p⁶ 3s² 3p⁶ 4s², com 2 elétrons de valência.",
+          "dificuldade": "facil",
+          "tags": ["número atômico", "cálcio", "identificação"]
+        }
+      ]
+    },
+    {
+      "id": "m122",
+      "titulo": "Ligações Químicas",
+      "resumo": "Ligações iônicas, covalentes, metálicas e forças intermoleculares",
+      "topicos": [
+        {
+          "titulo": "Ligação Iônica",
+          "conteudo": "Ocorre entre metal (baixa eletronegatividade) e não-metal (alta eletronegatividade). O metal perde elétrons (forma cátion), o não-metal ganha (forma ânion); a atração eletrostática une os íons. Compostos iônicos: sólidos cristalinos, altos pontos de fusão e ebulição, conduzem eletricidade quando fundidos ou em solução (íons livres). Exemplos: NaCl (sal de cozinha), CaO (cal viva), MgCl₂."
+        },
+        {
+          "titulo": "Ligação Covalente",
+          "conteudo": "Ocorre quando átomos compartilham pares de elétrons, geralmente entre não-metais. Covalente simples: 1 par compartilhado (H-H). Dupla: 2 pares (O=O). Tripla: 3 pares (N≡N). Covalente dativa (coordenada): um átomo fornece os dois elétrons do par (H₃O⁺, SO₃). Moléculas têm pontos de fusão/ebulição menores que compostos iônicos. Polaridade: depende da diferença de eletronegatividade (H-Cl é polar, H-H é apolar). Geometria molecular: VSEPR (repulsão dos pares de elétrons)."
+        },
+        {
+          "titulo": "Ligação Metálica e Forças Intermoleculares",
+          "conteudo": "Ligação metálica: cátions metálicos em um 'mar de elétrons' deslocalizados. Explica: condutividade elétrica e térmica, maleabilidade, ductilidade, brilho. Ligas: misturas de metais (bronze = Cu + Sn, aço = Fe + C). Forças intermoleculares (entre moléculas): dipolo permanente (moléculas polares), dipolo induzido ou forças de London (todas as moléculas), ligações de hidrogênio (H ligado a F, O, N - mais forte). A água tem alto ponto de ebulição devido às ligações de hidrogênio."
+        }
+      ],
+      "exemplos": [
+        "Por que o sal se dissolve em água mas não em óleo",
+        "A ligação de hidrogênio e o alto ponto de ebulição da água",
+        "Propriedades dos metais explicadas pela ligação metálica"
+      ],
+      "dicas": [
+        "ENEM relaciona tipo de ligação a propriedades dos materiais",
+        "Ligação iônica: metal + não-metal",
+        "Ligações de hidrogênio: H-F, H-O, H-N"
+      ],
+      "questoes": [
+        {
+          "id": "q122-1",
+          "enunciado": "O cloreto de sódio (NaCl) é um composto iônico. As propriedades típicas desse tipo de composto incluem:",
+          "alternativas": {
+            "A": "Baixo ponto de fusão e condução de eletricidade no estado sólido",
+            "B": "Alto ponto de fusão e condução de eletricidade quando fundido ou em solução",
+            "C": "Estado gasoso em condições ambientes e baixa solubilidade em água",
+            "D": "Maleabilidade e brilho metálico característico",
+            "E": "Baixo ponto de ebulição e insolubilidade em solventes polares"
+          },
+          "correta": "B",
+          "explicacao": "Compostos iônicos formam redes cristalinas com forte atração eletrostática, resultando em altos pontos de fusão e ebulição. No estado sólido, os íons estão fixos e não conduzem; quando fundidos ou dissolvidos em água, os íons ficam livres para conduzir eletricidade.",
+          "dificuldade": "facil",
+          "tags": ["ligação iônica", "propriedades", "NaCl"]
+        },
+        {
+          "id": "q122-2",
+          "enunciado": "A água (H₂O) tem ponto de ebulição anormalmente alto para uma molécula pequena. Isso é explicado pela presença de:",
+          "alternativas": {
+            "A": "Ligações covalentes muito fortes entre H e O",
+            "B": "Ligações iônicas entre as moléculas de água",
+            "C": "Ligações de hidrogênio entre as moléculas de água",
+            "D": "Forças de London muito intensas",
+            "E": "Ligações metálicas entre os átomos de hidrogênio"
+          },
+          "correta": "C",
+          "explicacao": "A água forma ligações de hidrogênio intermoleculares: o H (parcialmente positivo) de uma molécula atrai o O (parcialmente negativo) de outra. Essas ligações são mais fortes que outras forças intermoleculares, exigindo mais energia para separar as moléculas (maior ponto de ebulição). Comparando: H₂O ferve a 100°C, enquanto H₂S (sem lig. H) ferve a -60°C.",
+          "dificuldade": "medio",
+          "tags": ["ligação de hidrogênio", "água", "ponto de ebulição"]
+        },
+        {
+          "id": "q122-3",
+          "enunciado": "A ligação covalente é caracterizada por:",
+          "alternativas": {
+            "A": "Transferência completa de elétrons de um átomo para outro",
+            "B": "Compartilhamento de pares de elétrons entre átomos",
+            "C": "Atração eletrostática entre cátions e ânions",
+            "D": "Elétrons deslocalizados formando um 'mar de elétrons'",
+            "E": "Forças de atração entre dipolos temporários"
+          },
+          "correta": "B",
+          "explicacao": "Na ligação covalente, dois átomos compartilham um ou mais pares de elétrons, de modo que cada átomo completa sua camada de valência. Ocorre tipicamente entre não-metais. A alternativa A descreve ligação iônica; C também é iônica; D é ligação metálica; E são forças de London.",
+          "dificuldade": "facil",
+          "tags": ["ligação covalente", "compartilhamento", "elétrons"]
+        },
+        {
+          "id": "q122-4",
+          "enunciado": "Os metais são bons condutores de eletricidade porque:",
+          "alternativas": {
+            "A": "Possuem íons livres em sua estrutura sólida",
+            "B": "Apresentam elétrons deslocalizados que se movem facilmente",
+            "C": "Formam ligações covalentes polares",
+            "D": "Têm estrutura cristalina iônica",
+            "E": "Possuem ligações de hidrogênio entre seus átomos"
+          },
+          "correta": "B",
+          "explicacao": "Na ligação metálica, os elétrons de valência não pertencem a átomos individuais, mas formam um 'mar de elétrons' deslocalizado entre os cátions metálicos. Esses elétrons se movem livremente quando um campo elétrico é aplicado, permitindo a condução de corrente elétrica.",
+          "dificuldade": "facil",
+          "tags": ["ligação metálica", "condutividade", "elétrons"]
+        },
+        {
+          "id": "q122-5",
+          "enunciado": "As moléculas de CO₂ são apolares, enquanto as de H₂O são polares. Isso ocorre porque:",
+          "alternativas": {
+            "A": "CO₂ é composto iônico e H₂O é covalente",
+            "B": "CO₂ tem geometria linear e simétrica, enquanto H₂O tem geometria angular",
+            "C": "O carbono é mais eletronegativo que o oxigênio",
+            "D": "A água não possui diferença de eletronegatividade entre H e O",
+            "E": "O CO₂ possui ligações iônicas e H₂O possui ligações covalentes"
+          },
+          "correta": "B",
+          "explicacao": "Ambas as moléculas têm ligações polares (diferença de eletronegatividade). Porém, no CO₂ (O=C=O), a geometria linear faz com que os momentos de dipolo se cancelem, resultando em molécula apolar. Na H₂O, a geometria angular (≈104,5°) faz com que os dipolos não se cancelem, resultando em molécula polar.",
+          "dificuldade": "medio",
+          "tags": ["polaridade", "geometria molecular", "CO2 H2O"]
+        }
+      ]
+    },
+    {
+      "id": "m123",
+      "titulo": "Reações Químicas e Estequiometria",
+      "resumo": "Tipos de reações, balanceamento, cálculos estequiométricos e rendimento",
+      "topicos": [
+        {
+          "titulo": "Tipos de Reações Químicas",
+          "conteudo": "Síntese (adição): A + B → AB (ex: 2H₂ + O₂ → 2H₂O). Decomposição (análise): AB → A + B (ex: 2H₂O → 2H₂ + O₂). Simples troca: A + BC → AC + B (ex: Zn + 2HCl → ZnCl₂ + H₂). Dupla troca: AB + CD → AD + CB (ex: NaCl + AgNO₃ → AgCl↓ + NaNO₃). Combustão: substância + O₂ → óxidos (ex: CH₄ + 2O₂ → CO₂ + 2H₂O). Oxirredução: envolve transferência de elétrons (oxidação = perda, redução = ganho)."
+        },
+        {
+          "titulo": "Balanceamento de Equações",
+          "conteudo": "As equações devem estar balanceadas: mesma quantidade de cada elemento nos reagentes e produtos (conservação da massa - Lavoisier). Método de tentativa: ajustar coeficientes começando por elementos que aparecem em menos substâncias. Para oxirredução: método do íon-elétron (balanceia elétrons transferidos). Exemplo: _Fe + _O₂ → _Fe₂O₃. Balanceando: 4Fe + 3O₂ → 2Fe₂O₃ (4 Fe de cada lado, 6 O de cada lado)."
+        },
+        {
+          "titulo": "Cálculos Estequiométricos",
+          "conteudo": "A estequiometria relaciona quantidades de reagentes e produtos. Mol: 1 mol = 6,02×10²³ partículas (número de Avogadro). Massa molar (M): massa de 1 mol em g/mol (numericamente igual à massa atômica). Ex: M(H₂O) = 2×1 + 16 = 18 g/mol. Os coeficientes da equação balanceada dão a proporção em mols. Exemplo: 2H₂ + O₂ → 2H₂O significa que 2 mol de H₂ reagem com 1 mol de O₂ para formar 2 mol de H₂O. Regra de três relaciona massas, mols, moléculas."
+        }
+      ],
+      "exemplos": [
+        "Calcular massa de produto conhecendo massa de reagente",
+        "Identificar reagente limitante em uma reação",
+        "Calcular rendimento de uma reação industrial"
+      ],
+      "dicas": [
+        "ENEM cobra cálculos estequiométricos contextualizados",
+        "Sempre balanceie a equação antes de fazer cálculos",
+        "Use a proporção molar dada pelos coeficientes"
+      ],
+      "questoes": [
+        {
+          "id": "q123-1",
+          "enunciado": "A reação 2H₂ + O₂ → 2H₂O representa qual tipo de reação química?",
+          "alternativas": {
+            "A": "Decomposição",
+            "B": "Simples troca",
+            "C": "Síntese (adição)",
+            "D": "Dupla troca",
+            "E": "Neutralização"
+          },
+          "correta": "C",
+          "explicacao": "Na síntese (ou adição), duas ou mais substâncias se combinam para formar um único produto. H₂ + O₂ → H₂O mostra duas substâncias simples (H₂ e O₂) formando uma composta (H₂O). A decomposição seria o inverso.",
+          "dificuldade": "facil",
+          "tags": ["tipos de reação", "síntese", "classificação"]
+        },
+        {
+          "id": "q123-2",
+          "enunciado": "A equação N₂ + H₂ → NH₃ quando balanceada tem os coeficientes:",
+          "alternativas": {
+            "A": "1, 1, 1",
+            "B": "1, 3, 2",
+            "C": "2, 6, 4",
+            "D": "1, 2, 2",
+            "E": "2, 3, 2"
+          },
+          "correta": "B",
+          "explicacao": "Balanceando: N₂ + 3H₂ → 2NH₃. Verificando: 2 N nos reagentes (N₂) = 2 N nos produtos (2×NH₃). 6 H nos reagentes (3×H₂) = 6 H nos produtos (2×3). Os menores coeficientes inteiros são 1, 3, 2.",
+          "dificuldade": "medio",
+          "tags": ["balanceamento", "amônia", "equação"]
+        },
+        {
+          "id": "q123-3",
+          "enunciado": "Quantos mols de água são produzidos quando 4 mols de hidrogênio reagem completamente com oxigênio em excesso, segundo a equação: 2H₂ + O₂ → 2H₂O?",
+          "alternativas": {
+            "A": "1 mol",
+            "B": "2 mols",
+            "C": "4 mols",
+            "D": "8 mols",
+            "E": "16 mols"
+          },
+          "correta": "C",
+          "explicacao": "Pela equação balanceada: 2 mol H₂ → 2 mol H₂O (proporção 1:1). Se temos 4 mol de H₂, produzimos 4 mol de H₂O. A regra de três: 2 mol H₂ — 2 mol H₂O; 4 mol H₂ — x mol H₂O → x = 4 mol.",
+          "dificuldade": "facil",
+          "tags": ["estequiometria", "mols", "proporção"]
+        },
+        {
+          "id": "q123-4",
+          "enunciado": "Na reação de combustão completa do metano (CH₄), os produtos são:",
+          "alternativas": {
+            "A": "CO e H₂",
+            "B": "C e H₂O",
+            "C": "CO₂ e H₂O",
+            "D": "CO₂ e H₂",
+            "E": "C e H₂"
+          },
+          "correta": "C",
+          "explicacao": "A combustão completa de hidrocarbonetos produz CO₂ e H₂O: CH₄ + 2O₂ → CO₂ + 2H₂O. Na combustão incompleta (falta de O₂), pode-se formar CO (monóxido de carbono, tóxico) ou C (fuligem) em vez de CO₂.",
+          "dificuldade": "facil",
+          "tags": ["combustão", "metano", "produtos"]
+        },
+        {
+          "id": "q123-5",
+          "enunciado": "A massa molar do ácido sulfúrico (H₂SO₄) é: (Massas atômicas: H = 1, S = 32, O = 16)",
+          "alternativas": {
+            "A": "49 g/mol",
+            "B": "82 g/mol",
+            "C": "96 g/mol",
+            "D": "98 g/mol",
+            "E": "100 g/mol"
+          },
+          "correta": "D",
+          "explicacao": "Massa molar = soma das massas atômicas × quantidade de cada elemento: M(H₂SO₄) = 2×1 + 1×32 + 4×16 = 2 + 32 + 64 = 98 g/mol. A massa molar é fundamental para cálculos estequiométricos.",
+          "dificuldade": "facil",
+          "tags": ["massa molar", "cálculo", "H2SO4"]
+        }
+      ]
+    },
+    {
+      "id": "m124",
+      "titulo": "Soluções e Concentração",
+      "resumo": "Tipos de soluções, concentração, diluição e propriedades coligativas",
+      "topicos": [
+        {
+          "titulo": "Soluções e Solubilidade",
+          "conteudo": "Solução é mistura homogênea de soluto (dissolvido) e solvente (dissolve). A água é o 'solvente universal' (dissolve muitas substâncias). Solubilidade: quantidade máxima de soluto que se dissolve em certa quantidade de solvente (geralmente aumenta com a temperatura para sólidos, diminui para gases). Solução insaturada: pode dissolver mais soluto; saturada: limite atingido; supersaturada: mais soluto que o limite (instável). Coeficiente de solubilidade: g de soluto / 100g de solvente."
+        },
+        {
+          "titulo": "Concentrações",
+          "conteudo": "Concentração comum (C): massa de soluto / volume de solução (g/L). Molaridade ou concentração molar (M): mols de soluto / volume de solução em litros (mol/L). Título em massa: massa de soluto / massa de solução. Partes por milhão (ppm): mg/L ou mg/kg (usada para soluções muito diluídas, poluentes). Relação C = M × massa molar. Exemplo: solução 0,5 mol/L de NaCl (M = 58,5 g/mol) tem C = 0,5 × 58,5 = 29,25 g/L."
+        },
+        {
+          "titulo": "Diluição e Propriedades Coligativas",
+          "conteudo": "Diluição: adicionar solvente, diminuindo a concentração. A quantidade de soluto é constante: C₁V₁ = C₂V₂ ou M₁V₁ = M₂V₂. Propriedades coligativas dependem apenas da quantidade de partículas do soluto, não de sua natureza: ebulioscopia (aumento do ponto de ebulição), crioscopia (abaixamento do ponto de congelamento), osmose (passagem de solvente pela membrana do menos para o mais concentrado), tonoscopia (abaixamento da pressão de vapor). Exemplo: sal na estrada abaixa o ponto de congelamento da água."
+        }
+      ],
+      "exemplos": [
+        "Calcular a molaridade de uma solução",
+        "Diluir um reagente concentrado",
+        "Por que colocamos sal no gelo para fazer sorvete (crioscopia)"
+      ],
+      "dicas": [
+        "ENEM cobra cálculos de concentração contextualizados",
+        "Molaridade = mol/L; concentração comum = g/L",
+        "Diluição: C₁V₁ = C₂V₂ (a quantidade de soluto não muda)"
+      ],
+      "questoes": [
+        {
+          "id": "q124-1",
+          "enunciado": "Uma solução contém 40 g de NaOH (M = 40 g/mol) dissolvidos em água suficiente para completar 500 mL de solução. A molaridade dessa solução é:",
+          "alternativas": {
+            "A": "0,5 mol/L",
+            "B": "1 mol/L",
+            "C": "2 mol/L",
+            "D": "4 mol/L",
+            "E": "8 mol/L"
+          },
+          "correta": "C",
+          "explicacao": "Primeiro, calcular mols: n = m/M = 40/40 = 1 mol. Volume = 500 mL = 0,5 L. Molaridade = n/V = 1/0,5 = 2 mol/L.",
+          "dificuldade": "medio",
+          "tags": ["molaridade", "concentração", "cálculo"]
+        },
+        {
+          "id": "q124-2",
+          "enunciado": "Para diluir 100 mL de uma solução de concentração 2 mol/L para obter solução 0,5 mol/L, deve-se adicionar água até o volume final de:",
+          "alternativas": {
+            "A": "200 mL",
+            "B": "300 mL",
+            "C": "400 mL",
+            "D": "500 mL",
+            "E": "800 mL"
+          },
+          "correta": "C",
+          "explicacao": "Usando M₁V₁ = M₂V₂: 2 × 100 = 0,5 × V₂ → V₂ = 200/0,5 = 400 mL. Adiciona-se água até completar 400 mL (ou seja, mais 300 mL de água aos 100 mL iniciais).",
+          "dificuldade": "medio",
+          "tags": ["diluição", "concentração", "volume"]
+        },
+        {
+          "id": "q124-3",
+          "enunciado": "Em regiões de clima frio, costuma-se adicionar sal às estradas para evitar a formação de gelo. O princípio químico envolvido é:",
+          "alternativas": {
+            "A": "Ebulioscopia - elevação do ponto de ebulição",
+            "B": "Crioscopia - abaixamento do ponto de congelamento",
+            "C": "Osmose - passagem de solvente através de membrana",
+            "D": "Tonoscopia - diminuição da pressão de vapor",
+            "E": "Neutralização - reação ácido-base"
+          },
+          "correta": "B",
+          "explicacao": "A adição de soluto (sal) à água abaixa seu ponto de congelamento (crioscopia ou efeito crioscópico). A água salgada congela a temperaturas menores que 0°C, evitando a formação de gelo nas estradas. É uma propriedade coligativa, dependendo do número de partículas dissolvidas.",
+          "dificuldade": "facil",
+          "tags": ["crioscopia", "propriedades coligativas", "aplicação"]
+        },
+        {
+          "id": "q124-4",
+          "enunciado": "Uma solução saturada a determinada temperatura:",
+          "alternativas": {
+            "A": "Pode dissolver mais soluto sem precipitação",
+            "B": "Contém a quantidade máxima de soluto dissolvido",
+            "C": "É sempre muito concentrada",
+            "D": "Não contém soluto dissolvido",
+            "E": "Tem soluto em excesso que pode ser dissolvido"
+          },
+          "correta": "B",
+          "explicacao": "Uma solução saturada atingiu o limite de dissolução do soluto naquela temperatura. Se mais soluto for adicionado, não se dissolverá (ficará no fundo ou precipitará). Uma solução pode ser saturada e ainda assim ser diluída, se o coeficiente de solubilidade do soluto for baixo.",
+          "dificuldade": "facil",
+          "tags": ["solução saturada", "solubilidade", "conceito"]
+        },
+        {
+          "id": "q124-5",
+          "enunciado": "A concentração de um poluente na água é de 5 ppm (partes por milhão). Isso equivale a:",
+          "alternativas": {
+            "A": "5 g/L",
+            "B": "5 mg/L",
+            "C": "5 μg/L",
+            "D": "0,5 g/L",
+            "E": "50 mg/L"
+          },
+          "correta": "B",
+          "explicacao": "Partes por milhão (ppm) em soluções aquosas equivale a mg/L (ou μg/mL, ou g/m³). 5 ppm = 5 mg de soluto por litro de solução. É uma unidade usada para concentrações muito baixas, como poluentes, contaminantes ou elementos-traço.",
+          "dificuldade": "medio",
+          "tags": ["ppm", "concentração", "poluentes"]
+        }
+      ]
+    },
+    {
+      "id": "m125",
+      "titulo": "Ácidos, Bases, Sais e Óxidos",
+      "resumo": "Funções inorgânicas, nomenclatura, propriedades e reações",
+      "topicos": [
+        {
+          "titulo": "Ácidos e Bases",
+          "conteudo": "Arrhenius: ácido libera H⁺ em água (HCl → H⁺ + Cl⁻); base libera OH⁻ (NaOH → Na⁺ + OH⁻). Brønsted-Lowry: ácido doa H⁺, base recebe H⁺ (não precisa de água). pH: escala de 0 a 14; pH < 7 ácido, pH = 7 neutro, pH > 7 básico. pH = -log[H⁺]. Ácidos fortes: HCl, HNO₃, H₂SO₄ (ionizam completamente). Fracos: H₃PO₄, H₂CO₃, CH₃COOH. Bases fortes: NaOH, KOH. Indicadores mudam de cor conforme pH (fenolftaleína: incolor em ácido, rosa em base)."
+        },
+        {
+          "titulo": "Sais e Reações de Neutralização",
+          "conteudo": "Sais: compostos iônicos formados por cátion diferente de H⁺ e ânion diferente de OH⁻. Formados na neutralização: ácido + base → sal + água. HCl + NaOH → NaCl + H₂O. Nomenclatura: ânion (derivado do ácido) + cátion (derivado da base). Exemplos: NaCl (cloreto de sódio), CaCO₃ (carbonato de cálcio), Na₂SO₄ (sulfato de sódio). Sais podem ser neutros, ácidos (hidrogenossais) ou básicos (hidroxissais) conforme a neutralização seja total ou parcial."
+        },
+        {
+          "titulo": "Óxidos",
+          "conteudo": "Óxidos: compostos binários de oxigênio com outro elemento. Óxidos ácidos (de não-metais): reagem com água formando ácidos (CO₂ + H₂O → H₂CO₃) ou com bases formando sal + água. Óxidos básicos (de metais): reagem com água formando bases (CaO + H₂O → Ca(OH)₂) ou com ácidos formando sal + água. Óxidos anfóteros: reagem tanto com ácidos quanto com bases (Al₂O₃, ZnO). Óxidos neutros: não reagem com água, ácidos ou bases (CO, NO). Peróxidos: O₂²⁻ (H₂O₂). Óxidos no cotidiano: CO₂ (efeito estufa), SO₂ (chuva ácida)."
+        }
+      ],
+      "exemplos": [
+        "Neutralização de acidez estomacal com antiácido",
+        "Formação de chuva ácida por óxidos de enxofre e nitrogênio",
+        "Escala de pH de substâncias do cotidiano"
+      ],
+      "dicas": [
+        "ENEM relaciona ácidos e bases a situações práticas",
+        "Neutralização: ácido + base → sal + água",
+        "Óxidos de não-metais são geralmente ácidos; de metais, básicos"
+      ],
+      "questoes": [
+        {
+          "id": "q125-1",
+          "enunciado": "De acordo com a teoria de Arrhenius, um ácido é uma substância que, em solução aquosa:",
+          "alternativas": {
+            "A": "Libera íons OH⁻",
+            "B": "Libera íons H⁺ (ou H₃O⁺)",
+            "C": "Recebe par de elétrons",
+            "D": "Não conduz eletricidade",
+            "E": "Aumenta o pH da solução"
+          },
+          "correta": "B",
+          "explicacao": "Pela definição de Arrhenius, ácidos são substâncias que, em solução aquosa, liberam íons H⁺ (ou hidrogênio, que na verdade se associa à água formando H₃O⁺, o íon hidrônio). Bases liberam OH⁻. A liberação de H⁺ diminui o pH (solução ácida tem pH < 7).",
+          "dificuldade": "facil",
+          "tags": ["ácido", "arrhenius", "definição"]
+        },
+        {
+          "id": "q125-2",
+          "enunciado": "A chuva ácida é causada principalmente pela presença de óxidos na atmosfera que reagem com a água. Os principais responsáveis são:",
+          "alternativas": {
+            "A": "CO e NO",
+            "B": "CO₂ e H₂O",
+            "C": "SO₂ e NOₓ",
+            "D": "Na₂O e CaO",
+            "E": "Al₂O₃ e Fe₂O₃"
+          },
+          "correta": "C",
+          "explicacao": "A chuva ácida é formada quando óxidos ácidos (SO₂, SO₃, NO₂) reagem com a água da chuva: SO₂ + H₂O → H₂SO₃ (ácido sulfuroso); 2NO₂ + H₂O → HNO₃ + HNO₂. Esses óxidos vêm principalmente da queima de combustíveis fósseis. A chuva ácida corrói construções, prejudica ecossistemas.",
+          "dificuldade": "facil",
+          "tags": ["chuva ácida", "óxidos", "ambiente"]
+        },
+        {
+          "id": "q125-3",
+          "enunciado": "Na reação de neutralização HCl + NaOH → NaCl + H₂O, os produtos formados são:",
+          "alternativas": {
+            "A": "Um ácido e uma base",
+            "B": "Dois sais diferentes",
+            "C": "Um sal e água",
+            "D": "Um óxido e um hidróxido",
+            "E": "Dois óxidos diferentes"
+          },
+          "correta": "C",
+          "explicacao": "Na neutralização, um ácido (HCl) reage com uma base (NaOH) formando um sal (NaCl - cloreto de sódio) e água (H₂O). Os H⁺ do ácido combinam-se com os OH⁻ da base formando água; o cátion da base (Na⁺) combina-se com o ânion do ácido (Cl⁻) formando o sal.",
+          "dificuldade": "facil",
+          "tags": ["neutralização", "sal", "reação"]
+        },
+        {
+          "id": "q125-4",
+          "enunciado": "Uma solução aquosa tem pH = 3. Sobre essa solução, pode-se afirmar que:",
+          "alternativas": {
+            "A": "É uma solução neutra",
+            "B": "É uma solução básica (alcalina)",
+            "C": "É uma solução ácida",
+            "D": "Não contém íons H⁺",
+            "E": "Contém mais íons OH⁻ que H⁺"
+          },
+          "correta": "C",
+          "explicacao": "A escala de pH vai de 0 a 14. pH < 7 indica solução ácida (excesso de H⁺); pH = 7 é neutro; pH > 7 é básico (excesso de OH⁻). pH = 3 é fortemente ácido, com [H⁺] = 10⁻³ mol/L. Exemplos: suco de limão (pH ≈ 2-3), vinagre (pH ≈ 3).",
+          "dificuldade": "facil",
+          "tags": ["pH", "ácido", "escala"]
+        },
+        {
+          "id": "q125-5",
+          "enunciado": "O óxido de cálcio (CaO), conhecido como cal viva, reage com a água formando:",
+          "alternativas": {
+            "A": "Ácido carbônico",
+            "B": "Hidróxido de cálcio (cal apagada)",
+            "C": "Carbonato de cálcio",
+            "D": "Cloreto de cálcio",
+            "E": "Sulfato de cálcio"
+          },
+          "correta": "B",
+          "explicacao": "CaO é um óxido básico (óxido de metal). Reage com água formando a base correspondente: CaO + H₂O → Ca(OH)₂ (hidróxido de cálcio, cal hidratada ou cal apagada). A reação libera calor (exotérmica). A cal é usada em construção civil, tratamento de água, agricultura.",
+          "dificuldade": "medio",
+          "tags": ["óxido básico", "CaO", "hidróxido"]
+        }
+      ]
+    },
+    {
+      "id": "m126",
+      "titulo": "Eletroquímica",
+      "resumo": "Oxirredução, pilhas, eletrólise e aplicações",
+      "topicos": [
+        {
+          "titulo": "Reações de Oxirredução",
+          "conteudo": "Oxirredução envolve transferência de elétrons. Oxidação: perda de elétrons (aumento do NOX). Redução: ganho de elétrons (diminuição do NOX). O agente oxidante se reduz (ganha elétrons); o agente redutor se oxida (perde elétrons). NOX (número de oxidação): carga real ou aparente do elemento. Regras: elemento livre = 0; íon monoatômico = carga; O = -2 (exceto peróxidos = -1); H = +1 (exceto hidretos = -1). A soma dos NOX em molécula neutra = 0; em íon = carga do íon."
+        },
+        {
+          "titulo": "Pilhas e Células Galvânicas",
+          "conteudo": "Pilhas convertem energia química em elétrica através de reações redox espontâneas. Ânodo: eletrodo onde ocorre oxidação (polo negativo). Cátodo: onde ocorre redução (polo positivo). Ponte salina ou membrana porosa fecha o circuito. A força eletromotriz (fem ou ddp) depende dos potenciais de redução dos eletrodos: E°pilha = E°cátodo - E°ânodo. Quanto mais negativo o potencial, mais facilmente o metal oxida (é melhor redutor). Pilhas comuns: Leclanché (Zn-MnO₂), alcalina, de lítio."
+        },
+        {
+          "titulo": "Eletrólise",
+          "conteudo": "Eletrólise: usa energia elétrica para forçar reação não espontânea (inverso da pilha). No cátodo (polo negativo) ocorre redução; no ânodo (polo positivo) ocorre oxidação. Eletrólise ígnea: eletrólito fundido (ex: produção de Al a partir de Al₂O₃). Eletrólise aquosa: eletrólito dissolvido em água (ex: produção de NaOH e Cl₂ a partir de NaCl). Leis de Faraday: massa depositada proporcional à carga (Q = i·t) e à massa molar/número de elétrons. Aplicações: galvanoplastia (revestimento metálico), purificação de metais."
+        }
+      ],
+      "exemplos": [
+        "Funcionamento de pilha comum",
+        "Eletrólise para produção de alumínio",
+        "Corrosão como processo eletroquímico"
+      ],
+      "dicas": [
+        "ENEM relaciona eletroquímica a energia e ambiente",
+        "Na pilha: ânodo oxida, cátodo reduz; elétrons vão de ânodo para cátodo",
+        "Na eletrólise, o processo é inverso (não espontâneo)"
+      ],
+      "questoes": [
+        {
+          "id": "q126-1",
+          "enunciado": "Em uma reação de oxirredução, o agente redutor é a espécie que:",
+          "alternativas": {
+            "A": "Ganha elétrons e se reduz",
+            "B": "Perde elétrons e se oxida",
+            "C": "Não participa da transferência de elétrons",
+            "D": "Diminui seu número de oxidação",
+            "E": "Recebe elétrons do agente oxidante"
+          },
+          "correta": "B",
+          "explicacao": "O agente redutor é a espécie que causa a redução de outra. Para isso, ele doa elétrons e, portanto, se oxida (perde elétrons, seu NOX aumenta). Analogamente, o agente oxidante causa oxidação de outro ao receber elétrons, sofrendo redução.",
+          "dificuldade": "medio",
+          "tags": ["oxirredução", "agente redutor", "elétrons"]
+        },
+        {
+          "id": "q126-2",
+          "enunciado": "Em uma pilha galvânica, o eletrodo onde ocorre a oxidação é chamado de:",
+          "alternativas": {
+            "A": "Cátodo e é o polo positivo",
+            "B": "Ânodo e é o polo negativo",
+            "C": "Cátodo e é o polo negativo",
+            "D": "Ânodo e é o polo positivo",
+            "E": "Eletrodo neutro, sem polaridade"
+          },
+          "correta": "B",
+          "explicacao": "Na pilha (célula galvânica): ânodo é onde ocorre oxidação (perda de elétrons), é o polo negativo (elétrons saem dele pelo circuito externo); cátodo é onde ocorre redução (ganho de elétrons), é o polo positivo. Memorize: ânodo - oxidação; cátodo - redução.",
+          "dificuldade": "medio",
+          "tags": ["pilha", "ânodo", "cátodo"]
+        },
+        {
+          "id": "q126-3",
+          "enunciado": "A eletrólise ígnea do NaCl produz:",
+          "alternativas": {
+            "A": "Na metálico no cátodo e Cl₂ no ânodo",
+            "B": "NaOH no cátodo e HCl no ânodo",
+            "C": "H₂ no cátodo e O₂ no ânodo",
+            "D": "Na₂O no cátodo e Cl₂O no ânodo",
+            "E": "NaCl sólido precipitado"
+          },
+          "correta": "A",
+          "explicacao": "Na eletrólise ígnea (NaCl fundido), os íons estão livres. No cátodo (redução): Na⁺ + e⁻ → Na (sódio metálico). No ânodo (oxidação): 2Cl⁻ → Cl₂ + 2e⁻ (gás cloro). A eletrólise ígnea é usada para obter metais muito reativos (Na, Mg, Al) que não podem ser obtidos por redução com carbono.",
+          "dificuldade": "medio",
+          "tags": ["eletrólise", "ígnea", "NaCl"]
+        },
+        {
+          "id": "q126-4",
+          "enunciado": "O número de oxidação (NOX) do manganês no íon permanganato (MnO₄⁻) é:",
+          "alternativas": {
+            "A": "+2",
+            "B": "+4",
+            "C": "+5",
+            "D": "+7",
+            "E": "-1"
+          },
+          "correta": "D",
+          "explicacao": "No MnO₄⁻: cada O = -2, total de O = 4 × (-2) = -8. A soma dos NOX deve ser igual à carga do íon (-1). Então: NOX(Mn) + (-8) = -1 → NOX(Mn) = +7. O permanganato é um forte agente oxidante devido ao Mn em alto estado de oxidação.",
+          "dificuldade": "medio",
+          "tags": ["NOX", "permanganato", "cálculo"]
+        },
+        {
+          "id": "q126-5",
+          "enunciado": "A corrosão do ferro (formação de ferrugem) é um processo que pode ser classificado como:",
+          "alternativas": {
+            "A": "Reação de síntese, sem transferência de elétrons",
+            "B": "Reação de neutralização ácido-base",
+            "C": "Processo eletroquímico de oxirredução",
+            "D": "Reação de decomposição do ferro",
+            "E": "Processo físico, sem mudança química"
+          },
+          "correta": "C",
+          "explicacao": "A corrosão do ferro é um processo eletroquímico: o ferro se oxida (Fe → Fe²⁺ + 2e⁻), funcionando como ânodo. O oxigênio do ar se reduz (O₂ + 2H₂O + 4e⁻ → 4OH⁻), funcionando como cátodo. Água e eletrólitos (sal) aceleram o processo. A ferrugem é principalmente Fe₂O₃·xH₂O.",
+          "dificuldade": "facil",
+          "tags": ["corrosão", "oxirredução", "ferro"]
+        }
+      ]
+    },
+    {
+      "id": "m127",
+      "titulo": "Cinética Química",
+      "resumo": "Velocidade de reação, fatores que influenciam e catalisadores",
+      "topicos": [
+        {
+          "titulo": "Velocidade de Reação",
+          "conteudo": "A velocidade de uma reação química mede quão rápido reagentes se transformam em produtos. Velocidade média: v = Δ[concentração]/Δt ou v = Δn/Δt (variação de quantidade por tempo). Teoria das colisões: para reagir, moléculas devem colidir com energia suficiente (energia de ativação) e orientação adequada. Complexo ativado: estado de transição entre reagentes e produtos, ponto de máxima energia no perfil energético."
+        },
+        {
+          "titulo": "Fatores que Afetam a Velocidade",
+          "conteudo": "1) Concentração: maior concentração → mais colisões → maior velocidade. Lei da velocidade: v = k[A]ᵃ[B]ᵇ (k = constante, expoentes determinados experimentalmente). 2) Temperatura: aumentar temperatura aumenta energia e frequência de colisões; regra prática: +10°C dobra a velocidade. 3) Pressão (gases): aumentar pressão = aumentar concentração. 4) Superfície de contato: maior área superficial (pó vs. bloco) → maior velocidade. 5) Natureza dos reagentes: ligações mais fracas reagem mais rápido."
+        },
+        {
+          "titulo": "Catalisadores",
+          "conteudo": "Catalisadores aumentam a velocidade da reação sem serem consumidos. Atuam diminuindo a energia de ativação, oferecendo um caminho alternativo. Catálise homogênea: catalisador na mesma fase dos reagentes. Catálise heterogênea: catalisador em fase diferente (ex: conversores catalíticos em automóveis). Enzimas são catalisadores biológicos, extremamente específicos e eficientes. Inibidores diminuem a velocidade (ex: conservantes de alimentos)."
+        }
+      ],
+      "exemplos": [
+        "Por que alimentos estragam mais rápido fora da geladeira",
+        "Conversor catalítico reduzindo poluição de automóveis",
+        "Efervescente dissolve mais rápido em pó do que em comprimido"
+      ],
+      "dicas": [
+        "ENEM relaciona cinética a situações práticas",
+        "Catalisador diminui Ea, mas não altera ΔH da reação",
+        "Temperatura é o fator mais importante na velocidade"
+      ],
+      "questoes": [
+        {
+          "id": "q127-1",
+          "enunciado": "Alimentos se conservam melhor na geladeira porque a baixa temperatura:",
+          "alternativas": {
+            "A": "Mata todos os microrganismos presentes",
+            "B": "Diminui a velocidade das reações de decomposição",
+            "C": "Aumenta a energia de ativação das reações",
+            "D": "Impede qualquer reação química de ocorrer",
+            "E": "Aumenta a pressão sobre os alimentos"
+          },
+          "correta": "B",
+          "explicacao": "A baixa temperatura diminui a energia cinética das moléculas, resultando em menos colisões efetivas e menor velocidade das reações químicas (incluindo a decomposição dos alimentos e o metabolismo dos microrganismos). Os microrganismos não são mortos, apenas desacelerados.",
+          "dificuldade": "facil",
+          "tags": ["temperatura", "velocidade", "conservação"]
+        },
+        {
+          "id": "q127-2",
+          "enunciado": "Um catalisador acelera uma reação química porque:",
+          "alternativas": {
+            "A": "Aumenta a energia dos produtos",
+            "B": "Fornece energia de ativação adicional",
+            "C": "Oferece um caminho alternativo com menor energia de ativação",
+            "D": "Aumenta a temperatura do sistema",
+            "E": "É consumido na reação, liberando energia"
+          },
+          "correta": "C",
+          "explicacao": "O catalisador proporciona um mecanismo alternativo de reação com menor energia de ativação. Assim, mais moléculas têm energia suficiente para reagir. O catalisador não é consumido (participa, mas é regenerado ao final), não altera o ΔH da reação nem a posição de equilíbrio.",
+          "dificuldade": "medio",
+          "tags": ["catalisador", "energia de ativação", "mecanismo"]
+        },
+        {
+          "id": "q127-3",
+          "enunciado": "Um comprimido efervescente se dissolve mais rapidamente quando triturado porque:",
+          "alternativas": {
+            "A": "A temperatura aumenta com a trituração",
+            "B": "A concentração dos reagentes aumenta",
+            "C": "A superfície de contato com a água aumenta",
+            "D": "A energia de ativação diminui",
+            "E": "A pressão do sistema aumenta"
+          },
+          "correta": "C",
+          "explicacao": "Triturar o comprimido aumenta a superfície de contato (área superficial) entre o sólido e a água. Mais partículas do comprimido ficam expostas à água, permitindo mais colisões simultâneas e, portanto, reação mais rápida.",
+          "dificuldade": "facil",
+          "tags": ["superfície de contato", "velocidade", "área"]
+        },
+        {
+          "id": "q127-4",
+          "enunciado": "A teoria das colisões explica que uma reação química ocorre quando as moléculas:",
+          "alternativas": {
+            "A": "Estão em repouso absoluto",
+            "B": "Colidem com qualquer energia e em qualquer direção",
+            "C": "Colidem com energia suficiente e orientação adequada",
+            "D": "São separadas por um catalisador",
+            "E": "Perdem toda sua energia cinética"
+          },
+          "correta": "C",
+          "explicacao": "Segundo a teoria das colisões, não basta as moléculas colidirem; a colisão deve ter energia igual ou maior que a energia de ativação (colisão efetiva) e orientação geométrica adequada para que as ligações sejam rompidas/formadas. Aumentar temperatura ou concentração aumenta a frequência de colisões efetivas.",
+          "dificuldade": "medio",
+          "tags": ["teoria das colisões", "energia de ativação", "orientação"]
+        },
+        {
+          "id": "q127-5",
+          "enunciado": "Os conversores catalíticos dos automóveis têm a função de:",
+          "alternativas": {
+            "A": "Aumentar a potência do motor",
+            "B": "Diminuir o consumo de combustível",
+            "C": "Acelerar a conversão de gases poluentes em substâncias menos nocivas",
+            "D": "Impedir a combustão incompleta",
+            "E": "Resfriar os gases de escape"
+          },
+          "correta": "C",
+          "explicacao": "Os conversores catalíticos usam catalisadores (Pt, Pd, Rh) para acelerar reações que transformam gases poluentes (CO, NOₓ, hidrocarbonetos não queimados) em substâncias menos nocivas (CO₂, N₂, H₂O). É catálise heterogênea (gases sobre sólido). Exemplo: 2CO + O₂ → 2CO₂.",
+          "dificuldade": "facil",
+          "tags": ["conversor catalítico", "poluição", "catálise"]
+        }
+      ]
+    },
+    {
+      "id": "m128",
+      "titulo": "Equilíbrio Químico",
+      "resumo": "Equilíbrio reversível, constante de equilíbrio e Princípio de Le Chatelier",
+      "topicos": [
+        {
+          "titulo": "Conceito de Equilíbrio Químico",
+          "conteudo": "Em reações reversíveis (⇌), quando a velocidade da reação direta iguala a da reação inversa, atinge-se o equilíbrio químico. No equilíbrio, as concentrações permanecem constantes (equilíbrio dinâmico: reações continuam ocorrendo). Constante de equilíbrio (Kc): para aA + bB ⇌ cC + dD, Kc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ. Kc grande: equilíbrio favorece produtos. Kc pequeno: favorece reagentes. Kc depende apenas da temperatura (não de concentrações ou pressão)."
+        },
+        {
+          "titulo": "Princípio de Le Chatelier",
+          "conteudo": "Quando um sistema em equilíbrio sofre perturbação, ele se desloca para minimizar essa perturbação. Perturbações: 1) Concentração: adicionar reagente desloca para produtos; remover produto desloca para produtos. 2) Pressão (gases): aumentar pressão desloca para o lado com menos mols de gás. 3) Temperatura: aumentar temperatura favorece reação endotérmica; diminuir favorece exotérmica. Catalisadores aceleram ambas as direções igualmente, não alteram a posição de equilíbrio."
+        },
+        {
+          "titulo": "Equilíbrio Iônico",
+          "conteudo": "Ácidos e bases fracos estabelecem equilíbrio de ionização. Ka (constante de acidez): maior Ka = ácido mais forte. Kb (constante de basicidade): maior Kb = base mais forte. Kw = [H⁺][OH⁻] = 10⁻¹⁴ a 25°C (produto iônico da água). pH = -log[H⁺]; pOH = -log[OH⁻]; pH + pOH = 14. Soluções-tampão (buffer): resistem a mudanças de pH ao adicionar ácido ou base (importante em sistemas biológicos). Efeito do íon comum: adição de íon já presente desloca equilíbrio."
+        }
+      ],
+      "exemplos": [
+        "Produção industrial de amônia (processo Haber)",
+        "Soluções-tampão no sangue",
+        "Efeito da pressão no equilíbrio N₂ + 3H₂ ⇌ 2NH₃"
+      ],
+      "dicas": [
+        "ENEM cobra Le Chatelier em contextos industriais e ambientais",
+        "Kc só depende da temperatura",
+        "Catalisador não altera posição de equilíbrio"
+      ],
+      "questoes": [
+        {
+          "id": "q128-1",
+          "enunciado": "Para o equilíbrio N₂(g) + 3H₂(g) ⇌ 2NH₃(g) (ΔH < 0), um aumento na pressão do sistema:",
+          "alternativas": {
+            "A": "Desloca o equilíbrio para a formação de N₂ e H₂",
+            "B": "Desloca o equilíbrio para a formação de NH₃",
+            "C": "Não afeta o equilíbrio",
+            "D": "Diminui a constante de equilíbrio",
+            "E": "Aumenta a temperatura do sistema"
+          },
+          "correta": "B",
+          "explicacao": "Pelo princípio de Le Chatelier, aumento de pressão desloca o equilíbrio para o lado com menos mols de gás. À esquerda: 1 + 3 = 4 mols. À direita: 2 mols. O equilíbrio desloca-se para a direita (formação de NH₃), diminuindo o número de mols e aliviando a pressão.",
+          "dificuldade": "medio",
+          "tags": ["le chatelier", "pressão", "amônia"]
+        },
+        {
+          "id": "q128-2",
+          "enunciado": "Em um sistema em equilíbrio químico, a adição de um catalisador:",
+          "alternativas": {
+            "A": "Desloca o equilíbrio para a direita",
+            "B": "Desloca o equilíbrio para a esquerda",
+            "C": "Aumenta a constante de equilíbrio",
+            "D": "Faz o equilíbrio ser atingido mais rapidamente, sem alterar sua posição",
+            "E": "Aumenta a concentração dos produtos"
+          },
+          "correta": "D",
+          "explicacao": "O catalisador acelera igualmente as reações direta e inversa (diminui a energia de ativação de ambas). Portanto, o equilíbrio é atingido mais rapidamente, mas a posição final do equilíbrio (concentrações, Kc) permanece a mesma. O catalisador não aparece na expressão de Kc.",
+          "dificuldade": "medio",
+          "tags": ["catalisador", "equilíbrio", "velocidade"]
+        },
+        {
+          "id": "q128-3",
+          "enunciado": "Para uma reação endotérmica em equilíbrio, um aumento de temperatura:",
+          "alternativas": {
+            "A": "Desloca o equilíbrio para os reagentes",
+            "B": "Desloca o equilíbrio para os produtos",
+            "C": "Não afeta a posição de equilíbrio",
+            "D": "Apenas acelera a reação direta",
+            "E": "Diminui o valor de Kc"
+          },
+          "correta": "B",
+          "explicacao": "Em reações endotérmicas, o calor pode ser visto como 'reagente'. Pelo princípio de Le Chatelier, aumentar temperatura (adicionar calor) desloca o equilíbrio para consumir esse calor, ou seja, para o lado que absorve calor (reação direta endotérmica = formação de produtos). Isso também aumenta Kc.",
+          "dificuldade": "medio",
+          "tags": ["temperatura", "endotérmica", "le chatelier"]
+        },
+        {
+          "id": "q128-4",
+          "enunciado": "O produto iônico da água (Kw) a 25°C é 10⁻¹⁴. Em uma solução com [H⁺] = 10⁻³ mol/L, a concentração de [OH⁻] é:",
+          "alternativas": {
+            "A": "10⁻³ mol/L",
+            "B": "10⁻⁷ mol/L",
+            "C": "10⁻¹¹ mol/L",
+            "D": "10⁻¹⁴ mol/L",
+            "E": "10⁻¹ mol/L"
+          },
+          "correta": "C",
+          "explicacao": "Kw = [H⁺][OH⁻] = 10⁻¹⁴. Se [H⁺] = 10⁻³, então [OH⁻] = 10⁻¹⁴ / 10⁻³ = 10⁻¹¹ mol/L. A solução é ácida (pH = 3, pOH = 11), com excesso de H⁺ em relação a OH⁻.",
+          "dificuldade": "medio",
+          "tags": ["Kw", "pH", "concentração"]
+        },
+        {
+          "id": "q128-5",
+          "enunciado": "A constante de equilíbrio (Kc) de uma reação:",
+          "alternativas": {
+            "A": "Depende das concentrações iniciais dos reagentes",
+            "B": "Aumenta quando se adiciona mais reagentes",
+            "C": "Varia apenas com a temperatura",
+            "D": "É sempre maior que 1",
+            "E": "Depende da pressão do sistema"
+          },
+          "correta": "C",
+          "explicacao": "A constante de equilíbrio Kc é uma propriedade do sistema que depende apenas da temperatura. Não é afetada por mudanças de concentração ou pressão (essas mudanças podem deslocar o equilíbrio, mas o novo estado terá o mesmo Kc). Kc pode ser maior ou menor que 1, dependendo da reação.",
+          "dificuldade": "medio",
+          "tags": ["Kc", "temperatura", "equilíbrio"]
+        }
+      ]
+    },
+    {
+      "id": "m129",
+      "titulo": "Química Orgânica: Introdução e Hidrocarbonetos",
+      "resumo": "Compostos de carbono, classificação de cadeias e funções orgânicas básicas",
+      "topicos": [
+        {
+          "titulo": "Introdução à Química Orgânica",
+          "conteudo": "A química orgânica estuda compostos de carbono. O carbono é tetravalente (faz 4 ligações), forma cadeias longas e estáveis, liga-se a si mesmo e a outros elementos (H, O, N, S, halogênios). Hibridização: sp³ (4 ligações simples, geometria tetraédrica), sp² (dupla + simples, trigonal plana), sp (tripla, linear). Cadeias carbônicas: abertas (acíclicas) ou fechadas (cíclicas); normais ou ramificadas; saturadas (só ligações simples) ou insaturadas (duplas ou triplas); homogêneas ou heterogêneas (heteroátomo na cadeia)."
+        },
+        {
+          "titulo": "Hidrocarbonetos",
+          "conteudo": "Hidrocarbonetos: contêm apenas C e H. Alcanos (CₙH₂ₙ₊₂): saturados, terminação -ano (metano CH₄, etano C₂H₆). Alcenos (CₙH₂ₙ): 1 dupla ligação, terminação -eno (eteno C₂H₄). Alcinos (CₙH₂ₙ₋₂): 1 tripla ligação, terminação -ino (etino C₂H₂). Alcadienos: 2 duplas. Ciclanos: cíclicos saturados. Aromáticos: anel benzênico (C₆H₆). Os hidrocarbonetos são apolares, insolúveis em água, solúveis em solventes orgânicos. Principal fonte: petróleo."
+        },
+        {
+          "titulo": "Nomenclatura IUPAC",
+          "conteudo": "Nomenclatura IUPAC: prefixo (nº de carbonos: met-, et-, prop-, but-, pent-, hex-...) + infixo (tipo de ligação: -an-, -en-, -in-) + sufixo (função: -o para hidrocarb., -ol para álcool, etc.). Para cadeias ramificadas: 1) identifique a cadeia principal (mais longa, com insaturação, com grupo funcional); 2) numere da extremidade mais próxima da ramificação ou insaturação; 3) nomeie ramificações como prefixos (metil-, etil-) com posição. Exemplo: 2-metilbutano."
+        }
+      ],
+      "exemplos": [
+        "Estrutura e nomenclatura de hidrocarbonetos do petróleo",
+        "O metano como combustível e gás do efeito estufa",
+        "Benzeno e compostos aromáticos"
+      ],
+      "dicas": [
+        "ENEM cobra nomenclatura básica e relação com combustíveis/ambiente",
+        "Memorize prefixos: met(1), et(2), prop(3), but(4), pent(5)",
+        "Alcanos terminam em -ano, alcenos em -eno, alcinos em -ino"
+      ],
+      "questoes": [
+        {
+          "id": "q129-1",
+          "enunciado": "O hidrocarboneto de fórmula molecular C₃H₈ é classificado como:",
+          "alternativas": {
+            "A": "Alceno",
+            "B": "Alcino",
+            "C": "Alcano",
+            "D": "Ciclano",
+            "E": "Aromático"
+          },
+          "correta": "C",
+          "explicacao": "A fórmula geral dos alcanos é CₙH₂ₙ₊₂. Para n = 3: C₃H₂×₃₊₂ = C₃H₈. Portanto, é um alcano (propano). Alcanos são saturados (só ligações simples entre carbonos) e têm nomenclatura terminada em -ano.",
+          "dificuldade": "facil",
+          "tags": ["alcano", "fórmula molecular", "classificação"]
+        },
+        {
+          "id": "q129-2",
+          "enunciado": "O nome IUPAC do hidrocarboneto CH₃-CH₂-CH₂-CH₃ é:",
+          "alternativas": {
+            "A": "Metano",
+            "B": "Etano",
+            "C": "Propano",
+            "D": "Butano",
+            "E": "Pentano"
+          },
+          "correta": "D",
+          "explicacao": "A molécula tem 4 carbonos em cadeia linear, todos com ligações simples. O prefixo para 4 carbonos é 'but-', o infixo para saturado é '-an-', e o sufixo para hidrocarboneto é '-o'. Logo: butano.",
+          "dificuldade": "facil",
+          "tags": ["nomenclatura", "butano", "IUPAC"]
+        },
+        {
+          "id": "q129-3",
+          "enunciado": "O eteno (etileno), CH₂=CH₂, apresenta uma ligação dupla entre os carbonos. Cada carbono tem hibridização:",
+          "alternativas": {
+            "A": "sp³",
+            "B": "sp²",
+            "C": "sp",
+            "D": "s",
+            "E": "p"
+          },
+          "correta": "B",
+          "explicacao": "Em uma ligação dupla C=C, cada carbono forma 3 ligações sigma (1 com o outro C, 2 com H) e 1 ligação pi. Isso requer hibridização sp² (3 orbitais híbridos para ligações sigma + 1 orbital p puro para a ligação pi). A geometria é trigonal plana (120°).",
+          "dificuldade": "medio",
+          "tags": ["hibridização", "eteno", "ligação dupla"]
+        },
+        {
+          "id": "q129-4",
+          "enunciado": "O benzeno (C₆H₆) é um hidrocarboneto aromático com estrutura de anel. Sobre o benzeno, é correto afirmar que:",
+          "alternativas": {
+            "A": "É um alcano cíclico saturado",
+            "B": "Possui ligações duplas alternadas fixas no anel",
+            "C": "Apresenta ressonância, com elétrons pi deslocalizados",
+            "D": "É solúvel em água devido a sua polaridade",
+            "E": "Não reage em reações de substituição"
+          },
+          "correta": "C",
+          "explicacao": "O benzeno tem estrutura com 6 carbonos em anel, cada um com hibridização sp². Os elétrons pi não estão em duplas alternadas fixas, mas deslocalizados em nuvem acima e abaixo do anel (ressonância). Isso confere estabilidade especial (aromaticidade). É apolar, insolúvel em água, e prefere reações de substituição a adição.",
+          "dificuldade": "medio",
+          "tags": ["benzeno", "ressonância", "aromático"]
+        },
+        {
+          "id": "q129-5",
+          "enunciado": "O nome IUPAC do composto CH₃-CH(CH₃)-CH₃ é:",
+          "alternativas": {
+            "A": "Propano",
+            "B": "Butano",
+            "C": "2-metilpropano",
+            "D": "Metilpropano",
+            "E": "Isobutano"
+          },
+          "correta": "C",
+          "explicacao": "A cadeia principal mais longa tem 3 carbonos (propano). Há uma ramificação metil (-CH₃) no carbono 2. Pelo IUPAC: 2-metilpropano. 'Isobutano' é nome comum/trivial para o mesmo composto, mas não é IUPAC.",
+          "dificuldade": "medio",
+          "tags": ["nomenclatura", "ramificação", "IUPAC"]
+        }
+      ]
+    },
+    {
+      "id": "m130",
+      "titulo": "Funções Orgânicas e Química Ambiental",
+      "resumo": "Principais funções oxigenadas e nitrogenadas, polímeros e química ambiental",
+      "topicos": [
+        {
+          "titulo": "Funções Oxigenadas",
+          "conteudo": "Álcoois (R-OH): hidroxila ligada a C saturado (etanol, metanol). Fenóis: OH ligado a anel aromático. Éteres (R-O-R'): oxigênio entre dois carbonos. Aldeídos (R-CHO): carbonila (C=O) na ponta da cadeia. Cetonas (R-CO-R'): carbonila no meio da cadeia. Ácidos carboxílicos (R-COOH): carboxila (COOH). Ésteres (R-COO-R'): de ácido + álcool, óleos e gorduras. Cada função tem propriedades específicas: álcoois fazem ligações de hidrogênio, são solúveis em água; éteres não."
+        },
+        {
+          "titulo": "Funções Nitrogenadas e Polímeros",
+          "conteudo": "Aminas (R-NH₂, R₂NH, R₃N): derivadas da amônia, base orgânica. Amidas (R-CO-NH₂): carbonila + NH₂, ligação peptídica. Polímeros: macromoléculas formadas por repetição de monômeros. Polímeros de adição: monômeros se unem sem perda de átomos (polietileno, PVC, polipropileno). Polímeros de condensação: monômeros se unem com eliminação de molécula pequena (náilon, poliéster, proteínas). Polímeros naturais: amido, celulose, borracha, proteínas, DNA."
+        },
+        {
+          "titulo": "Química Ambiental",
+          "conteudo": "Efeito estufa: gases (CO₂, CH₄, N₂O, CFCs) absorvem radiação infravermelha, aquecendo a atmosfera. Aquecimento global: aumento do efeito estufa por atividades humanas (queima de combustíveis fósseis, desmatamento). Chuva ácida: óxidos de S e N formam ácidos na atmosfera. Camada de ozônio (O₃): protege contra UV; CFCs destroem ozônio. Poluição da água: esgoto (eutrofização), metais pesados, petróleo. Química verde: princípios para química sustentável (reduzir resíduos, usar catalisadores, fontes renováveis)."
+        }
+      ],
+      "exemplos": [
+        "Etanol como biocombustível",
+        "Polímeros no cotidiano (plásticos, fibras)",
+        "Efeito estufa e mudanças climáticas"
+      ],
+      "dicas": [
+        "ENEM relaciona química orgânica a combustíveis e ambiente",
+        "Identifique grupos funcionais para nomear compostos",
+        "Questões ambientais são muito frequentes"
+      ],
+      "questoes": [
+        {
+          "id": "q130-1",
+          "enunciado": "O etanol (C₂H₅OH) e o éter dimetílico (CH₃-O-CH₃) têm a mesma fórmula molecular (C₂H₆O), mas propriedades diferentes. Isso ocorre porque são:",
+          "alternativas": {
+            "A": "Isótopos",
+            "B": "Isômeros de função",
+            "C": "Isômeros de posição",
+            "D": "Alótropos",
+            "E": "Íons diferentes"
+          },
+          "correta": "B",
+          "explicacao": "Isômeros de função têm mesma fórmula molecular, mas pertencem a funções orgânicas diferentes. O etanol é um álcool (OH ligado a carbono); o éter dimetílico é um éter (O entre dois carbonos). Por isso têm propriedades muito diferentes: etanol faz ligações de hidrogênio, tem ponto de ebulição alto (78°C); o éter não faz, tem PE baixo (-25°C).",
+          "dificuldade": "medio",
+          "tags": ["isomeria", "função", "etanol éter"]
+        },
+        {
+          "id": "q130-2",
+          "enunciado": "O principal gás responsável pelo efeito estufa antropogênico (causado pelo homem) é:",
+          "alternativas": {
+            "A": "Oxigênio (O₂)",
+            "B": "Nitrogênio (N₂)",
+            "C": "Dióxido de carbono (CO₂)",
+            "D": "Argônio (Ar)",
+            "E": "Vapor de água (H₂O)"
+          },
+          "correta": "C",
+          "explicacao": "Embora o vapor de água seja o principal gás de efeito estufa natural, o CO₂ é o principal gás de efeito estufa antropogênico (emitido por atividades humanas: queima de combustíveis fósseis, desmatamento). Outros gases importantes: CH₄ (metano), N₂O (óxido nitroso), CFCs. O aumento de CO₂ é a principal causa do aquecimento global.",
+          "dificuldade": "facil",
+          "tags": ["efeito estufa", "CO2", "ambiente"]
+        },
+        {
+          "id": "q130-3",
+          "enunciado": "O ácido acetilsalicílico (aspirina) possui os grupos funcionais ácido carboxílico e éster. A fórmula estrutural de um ácido carboxílico é caracterizada pelo grupo:",
+          "alternativas": {
+            "A": "-OH (hidroxila)",
+            "B": "-CHO (aldeído)",
+            "C": "-COOH (carboxila)",
+            "D": "-CO- (carbonila)",
+            "E": "-NH₂ (amina)"
+          },
+          "correta": "C",
+          "explicacao": "O grupo funcional dos ácidos carboxílicos é a carboxila (-COOH), que combina uma carbonila (C=O) com uma hidroxila (OH) no mesmo carbono. Os ácidos carboxílicos são ácidos fracos, formam ésteres com álcoois, e estão presentes em ácido acético (vinagre), ácidos graxos, aminoácidos.",
+          "dificuldade": "facil",
+          "tags": ["ácido carboxílico", "grupo funcional", "carboxila"]
+        },
+        {
+          "id": "q130-4",
+          "enunciado": "O polietileno, usado em sacolas plásticas, é um polímero de adição obtido a partir do monômero:",
+          "alternativas": {
+            "A": "Etanol (C₂H₅OH)",
+            "B": "Etano (C₂H₆)",
+            "C": "Eteno ou etileno (CH₂=CH₂)",
+            "D": "Ácido acético (CH₃COOH)",
+            "E": "Benzeno (C₆H₆)"
+          },
+          "correta": "C",
+          "explicacao": "O polietileno é formado pela polimerização de adição do eteno (etileno, CH₂=CH₂). As duplas ligações se abrem e os monômeros se unem: n(CH₂=CH₂) → [-CH₂-CH₂-]ₙ. Não há eliminação de átomos - todos os átomos do monômero ficam no polímero (polímero de adição).",
+          "dificuldade": "facil",
+          "tags": ["polímero", "polietileno", "adição"]
+        },
+        {
+          "id": "q130-5",
+          "enunciado": "Os CFCs (clorofluorcarbonos) foram banidos pelo Protocolo de Montreal porque:",
+          "alternativas": {
+            "A": "São o principal gás do efeito estufa",
+            "B": "Causam chuva ácida ao reagir com a água atmosférica",
+            "C": "Destroem a camada de ozônio estratosférico",
+            "D": "Contaminam lençóis freáticos com metais pesados",
+            "E": "São radioativos e causam mutações"
+          },
+          "correta": "C",
+          "explicacao": "Os CFCs (usados em refrigeração, aerossóis, espumas) liberam cloro na estratosfera, que catalisa a destruição do ozônio (O₃): Cl + O₃ → ClO + O₂; ClO + O → Cl + O₂. Um átomo de Cl pode destruir milhares de moléculas de O₃. A camada de ozônio protege contra radiação UV. O Protocolo de Montreal (1987) baniu os CFCs, e a camada está se recuperando.",
+          "dificuldade": "facil",
+          "tags": ["CFCs", "ozônio", "protocolo de montreal"]
+        }
+      ]
+    }
+  ]
+}

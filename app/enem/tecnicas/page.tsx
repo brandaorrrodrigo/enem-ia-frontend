@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Tecnica {
   id: string;
@@ -292,6 +293,7 @@ export default function TecnicasPage() {
 
   return (
     <div className="min-h-screen" style={{ background: 'var(--chalkboard-bg)', padding: '2rem 1rem' }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       {/* Container principal */}

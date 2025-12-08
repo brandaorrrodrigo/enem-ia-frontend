@@ -1,0 +1,152 @@
+{
+  "id": "mat-1",
+  "slug": "funcoes",
+  "titulo": "Funcoes - Fundamentos",
+  "categoria": "matematica",
+  "nivel": "Basico",
+  "descricao": "Domine os conceitos fundamentais de funcoes: dominio, imagem, graficos e tipos.",
+  "icone": "📈",
+  "cor": "from-yellow-500 to-orange-500",
+  "tempoEstimado": "3h",
+  "fpRecompensa": 200,
+  "tags": ["funcoes", "matematica", "graficos", "enem"],
+  "modulos": [
+    {
+      "id": "m1",
+      "titulo": "Conceito de Funcao",
+      "resumo": "Uma funcao e uma relacao entre dois conjuntos onde cada elemento do primeiro conjunto (dominio) corresponde a exatamente um elemento do segundo conjunto (contradominio).",
+      "topicos": [
+        "DOMINIO (D): Conjunto de todos os valores de entrada (x) possiveis",
+        "CONTRADOMINIO (CD): Conjunto de todos os valores de saida possiveis",
+        "IMAGEM (Im): Subconjunto do contradominio que e efetivamente alcancado",
+        "NOTACAO: f: A → B ou y = f(x)",
+        "TESTE DA RETA VERTICAL: Se uma reta vertical corta o grafico em mais de um ponto, NAO e funcao"
+      ],
+      "exemplos": [
+        "f(x) = 2x + 1 → Para x=3, f(3) = 2(3)+1 = 7",
+        "f(x) = x² → Dominio: R, Imagem: [0, +∞)",
+        "f(x) = 1/x → Dominio: R - {0} (x nao pode ser zero)"
+      ],
+      "dicas": [
+        "ENEM cobra muito identificacao de dominio e imagem pelo grafico",
+        "Atencao com divisao por zero e raiz de numero negativo",
+        "Dominio natural: valores onde a funcao 'faz sentido'"
+      ],
+      "formula": "y = f(x) onde x ∈ D(f)",
+      "questoes": [
+        {
+          "id": "q1-func",
+          "enunciado": "Qual e o dominio da funcao f(x) = √(x - 4)?",
+          "alternativas": {
+            "A": "x > 4",
+            "B": "x >= 4",
+            "C": "x < 4",
+            "D": "x <= 4",
+            "E": "Todos os reais"
+          },
+          "correta": "B",
+          "explicacao": "Para raiz quadrada, o radicando deve ser maior ou igual a zero. Assim: x - 4 >= 0, logo x >= 4. O dominio e [4, +∞).",
+          "dificuldade": "facil",
+          "tags": ["dominio", "raiz"]
+        },
+        {
+          "id": "q2-func",
+          "enunciado": "Qual e o dominio da funcao f(x) = 1/(x² - 9)?",
+          "alternativas": {
+            "A": "R - {3}",
+            "B": "R - {-3}",
+            "C": "R - {3, -3}",
+            "D": "R - {9}",
+            "E": "Todos os reais"
+          },
+          "correta": "C",
+          "explicacao": "O denominador nao pode ser zero. x² - 9 = 0 quando x² = 9, ou seja, x = 3 ou x = -3. O dominio e R - {-3, 3}.",
+          "dificuldade": "medio",
+          "tags": ["dominio", "fracao"]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "titulo": "Funcao Afim (1º Grau)",
+      "resumo": "Funcao do tipo f(x) = ax + b, onde a e b sao constantes reais e a ≠ 0. O grafico e uma reta.",
+      "topicos": [
+        "FORMA: f(x) = ax + b",
+        "COEFICIENTE ANGULAR (a): Determina a inclinacao da reta",
+        "COEFICIENTE LINEAR (b): Ponto onde a reta corta o eixo y",
+        "a > 0: funcao CRESCENTE (reta 'sobe')",
+        "a < 0: funcao DECRESCENTE (reta 'desce')",
+        "RAIZ: valor de x onde f(x) = 0, ou seja, x = -b/a"
+      ],
+      "exemplos": [
+        "f(x) = 2x + 3 → a=2 (crescente), b=3 (corta y em 3), raiz: x=-3/2",
+        "f(x) = -x + 5 → a=-1 (decrescente), b=5, raiz: x=5",
+        "Taxa de variacao constante: Δy/Δx = a"
+      ],
+      "dicas": [
+        "ENEM adora contextos de custo, lucro, velocidade",
+        "Se a > 0, quanto maior x, maior f(x)",
+        "Dois pontos determinam uma reta: use para achar a e b"
+      ],
+      "formula": "f(x) = ax + b | Raiz: x = -b/a",
+      "questoes": [
+        {
+          "id": "q1-afim",
+          "enunciado": "Uma empresa cobra R$ 50,00 fixos mais R$ 2,00 por km rodado. Qual funcao representa o custo C em funcao dos km rodados (x)?",
+          "alternativas": {
+            "A": "C(x) = 50x + 2",
+            "B": "C(x) = 2x + 50",
+            "C": "C(x) = 52x",
+            "D": "C(x) = 50 - 2x",
+            "E": "C(x) = 2x - 50"
+          },
+          "correta": "B",
+          "explicacao": "Custo = valor fixo + (valor por km × km). C(x) = 50 + 2x, ou seja, C(x) = 2x + 50. O coeficiente angular (2) multiplica x, e o linear (50) e somado.",
+          "dificuldade": "facil",
+          "tags": ["funcao-afim", "contexto"]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "titulo": "Funcao Quadratica (2º Grau)",
+      "resumo": "Funcao do tipo f(x) = ax² + bx + c, onde a ≠ 0. O grafico e uma parabola.",
+      "topicos": [
+        "FORMA: f(x) = ax² + bx + c",
+        "a > 0: parabola com concavidade para CIMA (∪)",
+        "a < 0: parabola com concavidade para BAIXO (∩)",
+        "VERTICE: ponto de maximo (a<0) ou minimo (a>0)",
+        "Xv = -b/(2a) e Yv = -Δ/(4a)",
+        "RAIZES: valores de x onde f(x) = 0"
+      ],
+      "exemplos": [
+        "f(x) = x² - 4x + 3 → a=1, b=-4, c=3",
+        "Raizes: x = (4 ± √4)/2 = (4±2)/2 → x=1 ou x=3",
+        "Vertice: Xv = 4/2 = 2, Yv = f(2) = 4-8+3 = -1"
+      ],
+      "dicas": [
+        "ENEM cobra muito problemas de OTIMIZACAO (maximo/minimo)",
+        "Lancamento obliquo usa funcao quadratica!",
+        "Delta (Δ = b²-4ac) indica numero de raizes reais"
+      ],
+      "formula": "f(x) = ax² + bx + c | Δ = b² - 4ac | x = (-b ± √Δ)/(2a)",
+      "questoes": [
+        {
+          "id": "q1-quad",
+          "enunciado": "O lucro de uma empresa e dado por L(x) = -x² + 20x - 75, onde x e a quantidade vendida. Qual quantidade maximiza o lucro?",
+          "alternativas": {
+            "A": "5 unidades",
+            "B": "10 unidades",
+            "C": "15 unidades",
+            "D": "20 unidades",
+            "E": "25 unidades"
+          },
+          "correta": "B",
+          "explicacao": "Como a = -1 < 0, a parabola tem concavidade para baixo, logo o vertice e ponto de MAXIMO. Xv = -b/(2a) = -20/(2×(-1)) = -20/(-2) = 10 unidades.",
+          "dificuldade": "medio",
+          "tags": ["funcao-quadratica", "otimizacao"]
+        }
+      ]
+    }
+  ]
+}

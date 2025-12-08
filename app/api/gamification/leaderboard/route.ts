@@ -3,7 +3,7 @@ import { determinarLiga, calcularLevel } from '@/lib/gamification';
 
 export async function GET() {
   try {
-    // Ranking usando FP (Focus Points)
+    // Ranking usando FP
     const mockRanking = [
       { posicao: 1, nome: 'Maria Silva', fp: 4500, xp: 4500, pontos: 2200, liga: 'ouro' },
       { posicao: 2, nome: 'Joao Pedro', fp: 3800, xp: 3800, pontos: 1900, liga: 'prata' },

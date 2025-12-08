@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Competencia {
   id: number;
@@ -285,6 +286,7 @@ export default function AnalisadorRedacaoPage() {
       paddingTop: '4rem',
       paddingBottom: '6rem'
     }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       <div className="container" style={{

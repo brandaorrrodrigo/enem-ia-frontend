@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Plataforma {
   id: string;
@@ -185,6 +186,7 @@ export default function VideoaulasPage() {
 
   return (
     <div className="container">
+      <FloatingBackButton />
       {/* Header */}
       <div className="header">
         <h1>🎬 Videoaulas</h1>

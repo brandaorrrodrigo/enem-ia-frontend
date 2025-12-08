@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface QuestaoComentada {
   id: string;
@@ -214,6 +215,7 @@ export default function QuestoesComentadasPage() {
   if (loading) {
     return (
       <div className="container" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <FloatingBackButton />
         <div style={{ textAlign: 'center' }}>
           <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>⏳</div>
           <p style={{ color: 'var(--chalk-white)', fontSize: '1.2rem' }}>Carregando questoes...</p>
@@ -432,6 +434,7 @@ export default function QuestoesComentadasPage() {
                                 transition: 'all 0.3s ease'
                               }}
                             >
+      <FloatingBackButton />
                               <span style={{ fontWeight: 'bold', color: 'var(--accent-yellow)', marginRight: '0.75rem' }}>
                                 {letra})
                               </span>

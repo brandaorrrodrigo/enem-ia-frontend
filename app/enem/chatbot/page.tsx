@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Message {
   id: string;
@@ -290,6 +291,7 @@ Como posso te ajudar?`;
 
   return (
     <div className="container" style={{ minHeight: '100vh', padding: '2rem 1rem' }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       {/* Header */}

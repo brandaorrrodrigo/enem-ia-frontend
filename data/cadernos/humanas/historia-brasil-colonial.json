@@ -1,0 +1,1165 @@
+{
+  "id": "historia-brasil-colonial",
+  "slug": "historia-brasil-colonial",
+  "titulo": "História do Brasil Colonial",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "Estudo do período colonial brasileiro, desde a chegada dos portugueses até a independência, incluindo economia, sociedade, política e resistências.",
+  "icone": "Landmark",
+  "cor": "from-amber-600 to-orange-600",
+  "tempoEstimado": "10 horas",
+  "fpRecompensa": 500,
+  "tags": ["história", "brasil colonial", "colonização", "ENEM"],
+  "modulos": [
+    {
+      "id": "m41",
+      "titulo": "Povos Indígenas e Pré-Colonização",
+      "resumo": "Os povos originários do Brasil antes da chegada dos europeus, suas culturas, organizações sociais e o impacto do contato colonial.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "Antes da chegada dos portugueses em 1500, o território que hoje é o Brasil era habitado por milhões de indígenas de centenas de povos diferentes. No ENEM, esse tema é cobrado tanto em História quanto em questões interdisciplinares, exigindo compreensão das sociedades indígenas em seus próprios termos, não apenas como 'pré-história' do Brasil."
+        },
+        {
+          "titulo": "Diversidade dos Povos Originários",
+          "conteudo": "Estima-se que havia entre 2 e 5 milhões de indígenas no território brasileiro em 1500, falando cerca de 1.300 línguas diferentes. Principais troncos linguísticos: Tupi (litoral), Macro-Jê (planalto central), Aruak e Karib (Amazônia). Os Tupi-Guarani dominavam a costa e foram os primeiros contatados pelos portugueses. Cada povo tinha organização social, cosmologia, tecnologias e práticas culturais próprias. Não eram sociedades 'primitivas', mas complexas organizações adaptadas aos seus ambientes."
+        },
+        {
+          "titulo": "Organização Social e Cultura",
+          "conteudo": "A maioria dos povos indígenas brasileiros vivia em aldeias, praticando agricultura de coivara (queima e plantio), caça, pesca e coleta. Culturas desenvolvidas: mandioca (base alimentar), milho, amendoim, tabaco, algodão. Tecnologias: cerâmica, tecelagem, construção de canoas, armas (arco e flecha, borduna). Organização social: geralmente sem Estado centralizado, com poder distribuído entre lideranças (caciques, pajés). Religiosidade: xamanismo, culto aos ancestrais, rituais de passagem. A terra era de uso coletivo, não havia propriedade privada no sentido europeu."
+        },
+        {
+          "titulo": "Impacto da Colonização",
+          "conteudo": "A chegada dos europeus foi catastrófica para os povos indígenas. Genocídio: guerras de extermínio, escravização. Epidemias: doenças como varíola, sarampo e gripe dizimaram populações sem imunidade (até 90% de mortalidade em algumas regiões). Desestruturação social: aldeamentos missionários, trabalho forçado, perda de territórios. Resistência: guerras (Confederação dos Tamoios, Guerra dos Bárbaros), fugas, manutenção de práticas culturais. Apesar da violência colonial, os povos indígenas não desapareceram: hoje são mais de 300 povos e quase 900 mil pessoas."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Confederação dos Tamoios (1554-1567)",
+          "descricao": "Aliança de povos Tupinambá contra os portugueses no Rio de Janeiro. Uniram-se aos franceses, mas foram derrotados. Exemplo de resistência indígena organizada contra a colonização."
+        },
+        {
+          "titulo": "Aldeamentos Jesuítas",
+          "descricao": "Os jesuítas reuniam indígenas em aldeias (reduções) para catequização. Protegiam da escravização direta, mas impunham trabalho, religião e costumes europeus, desestruturando culturas originais."
+        }
+      ],
+      "dicas": [
+        "Não existia 'o índio' genérico - eram centenas de povos diferentes com culturas distintas",
+        "As epidemias mataram mais que as guerras - doenças europeias devastaram populações sem imunidade",
+        "Povos indígenas não são 'passado' - existem hoje e lutam por direitos"
+      ],
+      "questoes": [
+        {
+          "id": "q41-1",
+          "enunciado": "Sobre os povos indígenas que habitavam o território brasileiro antes da chegada dos portugueses, é correto afirmar que:",
+          "alternativas": {
+            "A": "Constituíam uma única nação homogênea com cultura uniforme",
+            "B": "Eram centenas de povos diferentes, com línguas, culturas e organizações sociais distintas",
+            "C": "Não possuíam qualquer forma de organização social ou tecnologia",
+            "D": "Viviam exclusivamente da caça, sem conhecimento de agricultura",
+            "E": "Habitavam apenas a região amazônica, não o litoral"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil pré-colonial era habitado por centenas de povos indígenas diferentes, pertencentes a diversos troncos linguísticos (Tupi, Macro-Jê, Aruak, Karib), cada um com sua própria cultura, organização social, cosmologia e tecnologias. A ideia de 'índio' genérico é construção colonial.",
+          "dificuldade": "facil",
+          "tags": ["povos indígenas", "diversidade", "pré-colonial"]
+        },
+        {
+          "id": "q41-2",
+          "enunciado": "A principal causa da drástica redução da população indígena nos primeiros séculos de colonização foi:",
+          "alternativas": {
+            "A": "A emigração voluntária para outros continentes",
+            "B": "As epidemias de doenças trazidas pelos europeus, para as quais não tinham imunidade",
+            "C": "A baixa taxa de natalidade dos povos indígenas",
+            "D": "A conversão em massa ao catolicismo, que proibia a reprodução",
+            "E": "A migração para o interior do continente por escolha própria"
+          },
+          "correta": "B",
+          "explicacao": "As epidemias de doenças europeias (varíola, sarampo, gripe) foram a principal causa de morte entre os indígenas. Sem contato prévio com essas doenças, não tinham imunidade, e a mortalidade chegou a 90% em algumas populações. As guerras e a escravização também contribuíram, mas em menor escala.",
+          "dificuldade": "facil",
+          "tags": ["epidemias", "colonização", "genocídio"]
+        },
+        {
+          "id": "q41-3",
+          "enunciado": "Os aldeamentos jesuítas reuniam indígenas para catequização. Sobre essa prática, é correto afirmar que:",
+          "alternativas": {
+            "A": "Respeitava integralmente as culturas e crenças indígenas originais",
+            "B": "Era apoiada pelos colonos que queriam escravizar os indígenas",
+            "C": "Protegia da escravização direta, mas impunha religião e costumes europeus, desestruturando culturas",
+            "D": "Não interferia na organização social dos povos aldeados",
+            "E": "Permitia que os indígenas mantivessem suas práticas religiosas tradicionais"
+          },
+          "correta": "C",
+          "explicacao": "Os aldeamentos jesuítas tinham função ambígua: protegiam os indígenas da escravização pelos colonos, mas impunham trabalho disciplinado, religião católica e costumes europeus. Isso desestruturava as culturas originais, proibindo práticas tradicionais e impondo novos modos de vida.",
+          "dificuldade": "medio",
+          "tags": ["jesuítas", "aldeamentos", "catequização"]
+        },
+        {
+          "id": "q41-4",
+          "enunciado": "A agricultura de coivara, praticada por diversos povos indígenas brasileiros, consistia em:",
+          "alternativas": {
+            "A": "Irrigação intensiva de grandes áreas desérticas",
+            "B": "Uso de arados e tração animal para cultivo extensivo",
+            "C": "Queima controlada da vegetação e plantio nas cinzas, com rotação de áreas",
+            "D": "Cultivo em terraços nas encostas de montanhas",
+            "E": "Monocultura extensiva de cana-de-açúcar"
+          },
+          "correta": "C",
+          "explicacao": "A coivara (ou agricultura de queimada) consiste em derrubar e queimar a vegetação, plantando nas cinzas fertilizadas. Após alguns anos, a área é abandonada para regeneração e nova área é preparada. É sistema sustentável adaptado à floresta tropical, muito diferente da agricultura europeia.",
+          "dificuldade": "medio",
+          "tags": ["coivara", "agricultura", "povos indígenas"]
+        },
+        {
+          "id": "q41-5",
+          "enunciado": "A Confederação dos Tamoios (1554-1567) foi:",
+          "alternativas": {
+            "A": "Uma aliança entre portugueses e indígenas contra os franceses",
+            "B": "Um acordo comercial entre diferentes aldeias jesuítas",
+            "C": "Uma aliança de povos Tupinambá contra a colonização portuguesa, com apoio francês",
+            "D": "Uma organização religiosa para conversão de colonos ao xamanismo",
+            "E": "Um tratado de paz definitivo entre portugueses e indígenas"
+          },
+          "correta": "C",
+          "explicacao": "A Confederação dos Tamoios foi uma aliança de povos Tupinambá que resistiu à colonização portuguesa na região do Rio de Janeiro. Contaram com apoio dos franceses (que também disputavam o território). Foram derrotados, mas representam importante exemplo de resistência indígena organizada.",
+          "dificuldade": "dificil",
+          "tags": ["confederação dos tamoios", "resistência", "tupinambá"]
+        }
+      ]
+    },
+    {
+      "id": "m42",
+      "titulo": "Colonização Portuguesa e Economia Colonial",
+      "resumo": "O processo de colonização do Brasil, o sistema colonial mercantilista, os ciclos econômicos e a estrutura da economia colonial.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A colonização portuguesa do Brasil foi parte da expansão marítima europeia e inseriu o território no sistema colonial mercantilista. Compreender a lógica desse sistema - o pacto colonial, os monopólios, a exploração de recursos - é fundamental para entender a formação econômica e social brasileira. No ENEM, esse tema é central em História do Brasil."
+        },
+        {
+          "titulo": "O Sistema Colonial Mercantilista",
+          "conteudo": "O mercantilismo era a política econômica das monarquias europeias nos séculos XVI-XVIII. Princípios: acúmulo de metais preciosos, balança comercial favorável, protecionismo. O pacto colonial estabelecia que a colônia só podia comerciar com a metrópole, fornecendo matérias-primas baratas e comprando manufaturados caros. Monopólios: o comércio colonial era controlado pela Coroa ou por companhias privilegiadas. O Brasil existia para gerar lucros para Portugal, não para desenvolver-se autonomamente."
+        },
+        {
+          "titulo": "Ciclo do Pau-Brasil e Início da Colonização",
+          "conteudo": "Período pré-colonial (1500-1530): exploração de pau-brasil através do escambo com indígenas. Feitorias no litoral, sem ocupação efetiva. A ameaça francesa (que também extraía pau-brasil) levou Portugal a iniciar a colonização efetiva. Capitanias Hereditárias (1534): divisão do território em 15 capitanias doadas a particulares (donatários). Sistema fracassou na maioria dos casos. Apenas Pernambuco (Duarte Coelho) e São Vicente prosperaram. Governo-Geral (1548): centralização administrativa com a criação do cargo de governador-geral (Tomé de Sousa foi o primeiro). Salvador tornou-se capital."
+        },
+        {
+          "titulo": "Ciclo do Açúcar",
+          "conteudo": "O açúcar foi o principal produto colonial brasileiro nos séculos XVI e XVII. Condições favoráveis: solo massapê do Nordeste, clima tropical, experiência portuguesa (já produziam em ilhas atlânticas), financiamento holandês. Estrutura: plantation - latifúndio monocultor escravista voltado para exportação. Engenho: unidade produtiva que incluía casa-grande, senzala, capela, canaviais e moendas. Sociedade açucareira: senhores de engenho no topo, escravizados africanos na base, homens livres pobres à margem. A produção entrou em crise no século XVII com a concorrência antilhana (após expulsão dos holandeses do Brasil)."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "O Engenho Colonial",
+          "descricao": "O engenho era a unidade produtiva do açúcar: incluía terras de plantio, moendas, casa de purgar, casa-grande (residência do senhor), senzala (moradia forçada dos escravizados), capela. Era um mundo fechado e hierárquico."
+        },
+        {
+          "titulo": "Pacto Colonial",
+          "descricao": "O Brasil só podia comerciar com Portugal: exportava açúcar, tabaco, ouro a preços controlados e importava manufaturados europeus com altos preços. Era proibido produzir manufaturas na colônia."
+        }
+      ],
+      "dicas": [
+        "Pacto colonial = colônia só comercia com metrópole, exclusividade comercial",
+        "Plantation = latifúndio + monocultura + trabalho escravo + exportação",
+        "O fracasso das capitanias levou ao Governo-Geral, mas não as eliminou"
+      ],
+      "questoes": [
+        {
+          "id": "q42-1",
+          "enunciado": "O pacto colonial estabelecido entre Portugal e Brasil determinava que:",
+          "alternativas": {
+            "A": "A colônia tinha liberdade para comerciar com qualquer nação europeia",
+            "B": "A colônia só podia comerciar com a metrópole, garantindo monopólio português",
+            "C": "O Brasil podia desenvolver manufaturas para competir com produtos europeus",
+            "D": "Portugal deveria investir na industrialização da colônia",
+            "E": "Os colonos brasileiros definiam os preços dos produtos exportados"
+          },
+          "correta": "B",
+          "explicacao": "O pacto colonial (ou exclusivo metropolitano) determinava que a colônia só podia comerciar com a metrópole. O Brasil vendia matérias-primas a preços controlados e comprava manufaturados caros de Portugal. Era proibido comerciar com outros países ou produzir manufaturas.",
+          "dificuldade": "facil",
+          "tags": ["pacto colonial", "mercantilismo", "economia colonial"]
+        },
+        {
+          "id": "q42-2",
+          "enunciado": "A estrutura produtiva do açúcar colonial brasileiro era baseada no sistema de plantation, que se caracterizava por:",
+          "alternativas": {
+            "A": "Pequenas propriedades familiares com produção diversificada",
+            "B": "Cooperativas de trabalhadores livres assalariados",
+            "C": "Latifúndio monocultor com trabalho escravo voltado para exportação",
+            "D": "Agricultura de subsistência sem vínculos com o mercado externo",
+            "E": "Indústrias de beneficiamento com tecnologia avançada"
+          },
+          "correta": "C",
+          "explicacao": "O sistema de plantation combinava: latifúndio (grandes propriedades), monocultura (um único produto - açúcar), trabalho escravo (africanos escravizados) e produção voltada para exportação (mercado europeu). Essa estrutura marcou a formação social brasileira.",
+          "dificuldade": "facil",
+          "tags": ["plantation", "açúcar", "economia colonial"]
+        },
+        {
+          "id": "q42-3",
+          "enunciado": "As Capitanias Hereditárias, sistema implantado em 1534, fracassaram na maior parte do território porque:",
+          "alternativas": {
+            "A": "Os donatários recusaram as terras oferecidas pela Coroa",
+            "B": "Portugal investiu pesadamente, mas a terra era improdutiva",
+            "C": "Faltavam recursos aos donatários e havia resistência indígena e dificuldades de ocupação",
+            "D": "Os indígenas já haviam desenvolvido agricultura extensiva em todo território",
+            "E": "O sistema foi imediatamente substituído pela República"
+          },
+          "correta": "C",
+          "explicacao": "O sistema de capitanias hereditárias fracassou porque os donatários particulares não tinham recursos para colonizar vastos territórios, enfrentavam resistência indígena e dificuldades geográficas. Apenas Pernambuco e São Vicente prosperaram. O fracasso levou à criação do Governo-Geral em 1548.",
+          "dificuldade": "medio",
+          "tags": ["capitanias hereditárias", "colonização", "administração"]
+        },
+        {
+          "id": "q42-4",
+          "enunciado": "O mercantilismo, política econômica que orientava a colonização portuguesa, tinha como princípio fundamental:",
+          "alternativas": {
+            "A": "O livre comércio entre todas as nações sem restrições",
+            "B": "O acúmulo de metais preciosos e a balança comercial favorável à metrópole",
+            "C": "A industrialização das colônias para aumentar a produção",
+            "D": "A distribuição igualitária de riquezas entre metrópole e colônia",
+            "E": "A autonomia econômica das colônias para seu desenvolvimento"
+          },
+          "correta": "B",
+          "explicacao": "O mercantilismo buscava o enriquecimento da metrópole através do acúmulo de metais preciosos (ouro, prata), balança comercial favorável (exportar mais do que importar) e controle monopolista do comércio colonial. A colônia existia para gerar riqueza para a metrópole.",
+          "dificuldade": "medio",
+          "tags": ["mercantilismo", "economia", "sistema colonial"]
+        },
+        {
+          "id": "q42-5",
+          "enunciado": "A crise da economia açucareira brasileira no século XVII foi causada principalmente por:",
+          "alternativas": {
+            "A": "A abolição da escravidão nas colônias portuguesas",
+            "B": "O esgotamento total dos solos do Nordeste brasileiro",
+            "C": "A concorrência do açúcar produzido nas Antilhas holandesas, francesas e inglesas",
+            "D": "A descoberta de adoçantes artificiais na Europa",
+            "E": "A proibição do consumo de açúcar pela Igreja Católica"
+          },
+          "correta": "C",
+          "explicacao": "Após serem expulsos do Nordeste brasileiro (1654), os holandeses levaram conhecimentos técnicos para suas colônias no Caribe. O açúcar antilhano, mais barato e próximo da Europa, passou a concorrer com o brasileiro, causando a crise da economia açucareira colonial.",
+          "dificuldade": "medio",
+          "tags": ["açúcar", "crise", "antilhas"]
+        }
+      ]
+    },
+    {
+      "id": "m43",
+      "titulo": "Escravidão Africana no Brasil",
+      "resumo": "O tráfico atlântico, a escravidão africana no Brasil colonial, as condições de vida dos escravizados e as formas de resistência.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A escravidão africana foi a base do sistema colonial brasileiro, fornecendo a mão de obra para as principais atividades econômicas. O Brasil foi o maior importador de africanos escravizados nas Américas e o último país a abolir a escravidão (1888). Compreender esse sistema e suas consequências é fundamental para entender a formação social brasileira e as desigualdades que persistem."
+        },
+        {
+          "titulo": "O Tráfico Atlântico de Escravizados",
+          "conteudo": "Entre os séculos XVI e XIX, cerca de 4,8 milhões de africanos foram trazidos forçadamente para o Brasil - quase metade de todos os escravizados nas Américas. O tráfico era um negócio altamente lucrativo, envolvendo mercadores portugueses, brasileiros, africanos e de outras nações. Rotas principais: da África Ocidental (Guiné, Costa da Mina) e da África Central (Congo, Angola) para os portos brasileiros (Recife, Salvador, Rio de Janeiro). A travessia (passagem do meio) era brutal: navios superlotados, doenças, mortalidade alta."
+        },
+        {
+          "titulo": "Condições de Vida e Trabalho",
+          "conteudo": "Os escravizados trabalhavam nas mais diversas atividades: agricultura (açúcar, café, algodão), mineração, trabalho doméstico, ofícios urbanos. O trabalho era brutal, com jornadas extenuantes, castigos físicos (açoites, tronco, marcas a ferro), alimentação e moradia precárias. A expectativa de vida era baixa; a taxa de mortalidade superava a de natalidade. Os escravizados eram considerados legalmente como propriedade, sem direitos. Mulheres sofriam exploração sexual sistemática. Famílias eram separadas por vendas."
+        },
+        {
+          "titulo": "Resistências à Escravidão",
+          "conteudo": "A resistência foi constante, assumindo múltiplas formas. Quilombos: comunidades de fugitivos; Palmares (Alagoas, século XVII) chegou a ter 20 mil habitantes e resistiu por quase um século. Revoltas: levantes armados como a Revolta dos Malês (Bahia, 1835), liderada por africanos muçulmanos. Resistência cotidiana: trabalho mal feito, sabotagens, fugas individuais, suicídios, abortos. Resistência cultural: manutenção de religiões (candomblé, umbanda), línguas, músicas, práticas africanas. Compra de alforria: alguns escravizados conseguiam comprar sua liberdade."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Quilombo dos Palmares",
+          "descricao": "Maior quilombo brasileiro, localizado na Serra da Barriga (Alagoas). Existiu por quase 100 anos (1597-1694), chegando a 20 mil habitantes. Zumbi, seu último líder, é símbolo da resistência negra. O 20 de novembro (morte de Zumbi) é o Dia da Consciência Negra."
+        },
+        {
+          "titulo": "Revolta dos Malês (1835)",
+          "descricao": "Levante de africanos escravizados e libertos em Salvador, muitos deles muçulmanos (malês). Planejavam tomar a cidade e libertar escravizados. Foi reprimida, mas demonstrou a capacidade de organização e resistência dos africanos."
+        }
+      ],
+      "dicas": [
+        "Brasil = maior receptor de africanos escravizados nas Américas (4,8 milhões)",
+        "Resistência foi constante: quilombos, revoltas, resistência cotidiana, cultura",
+        "Palmares durou quase 100 anos - não foi exceção isolada, mas símbolo de resistência"
+      ],
+      "questoes": [
+        {
+          "id": "q43-1",
+          "enunciado": "Sobre o tráfico atlântico de escravizados para o Brasil, é correto afirmar que:",
+          "alternativas": {
+            "A": "O Brasil recebeu poucos africanos, sendo a escravidão indígena predominante",
+            "B": "O Brasil foi o maior receptor de africanos escravizados nas Américas, com cerca de 4,8 milhões de pessoas",
+            "C": "O tráfico era realizado apenas por portugueses, sem participação de outras nações",
+            "D": "Os africanos eram trazidos voluntariamente em busca de trabalho",
+            "E": "O tráfico cessou completamente no século XVII"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil foi o maior destino do tráfico atlântico de escravizados, recebendo cerca de 4,8 milhões de africanos entre os séculos XVI e XIX - quase metade de todos os escravizados trazidos para as Américas. Esse dado demonstra a centralidade da escravidão na formação brasileira.",
+          "dificuldade": "facil",
+          "tags": ["tráfico atlântico", "escravidão", "brasil"]
+        },
+        {
+          "id": "q43-2",
+          "enunciado": "Os quilombos no Brasil colonial representavam:",
+          "alternativas": {
+            "A": "Aldeias indígenas aliadas aos portugueses",
+            "B": "Comunidades de africanos escravizados fugitivos que resistiam à escravidão",
+            "C": "Fazendas administradas pelos jesuítas",
+            "D": "Portos de embarque do tráfico atlântico",
+            "E": "Missões religiosas para conversão de africanos"
+          },
+          "correta": "B",
+          "explicacao": "Quilombos eram comunidades formadas por africanos escravizados que fugiam do cativeiro. Representavam forma de resistência à escravidão, organizando sociedades alternativas com produção própria. Palmares foi o maior, mas existiram milhares de quilombos pelo Brasil.",
+          "dificuldade": "facil",
+          "tags": ["quilombos", "resistência", "escravidão"]
+        },
+        {
+          "id": "q43-3",
+          "enunciado": "A Revolta dos Malês (Salvador, 1835) foi significativa porque:",
+          "alternativas": {
+            "A": "Foi o único levante de escravizados na história do Brasil",
+            "B": "Conseguiu abolir a escravidão na Bahia",
+            "C": "Demonstrou a capacidade de organização dos africanos escravizados, muitos deles muçulmanos letrados",
+            "D": "Foi liderada por senhores de engenho insatisfeitos",
+            "E": "Contou com apoio oficial do governo imperial"
+          },
+          "correta": "C",
+          "explicacao": "A Revolta dos Malês demonstrou a capacidade de organização e articulação dos africanos escravizados. Muitos participantes eram muçulmanos (malês) letrados em árabe, que planejaram a revolta com sofisticação. Embora reprimida, a revolta abalou a elite baiana e mostrou a resistência ativa dos escravizados.",
+          "dificuldade": "medio",
+          "tags": ["revolta dos malês", "resistência", "bahia"]
+        },
+        {
+          "id": "q43-4",
+          "enunciado": "Além dos quilombos e revoltas, os africanos escravizados resistiam à escravidão através de:",
+          "alternativas": {
+            "A": "Aceitação passiva de sua condição sem qualquer forma de oposição",
+            "B": "Formas cotidianas como trabalho mal feito, sabotagens, fugas, manutenção de práticas culturais africanas",
+            "C": "Apoio irrestrito aos senhores para conquistar benefícios",
+            "D": "Abandono completo de suas culturas de origem",
+            "E": "Participação nas câmaras municipais coloniais"
+          },
+          "correta": "B",
+          "explicacao": "A resistência escrava ia além de quilombos e revoltas. O cotidiano era marcado por resistência: trabalho mal feito, quebra de ferramentas, fugas individuais, suicídios. A resistência cultural preservava religiões, línguas, músicas e práticas africanas, mantendo identidades e comunidades.",
+          "dificuldade": "medio",
+          "tags": ["resistência cotidiana", "cultura", "escravidão"]
+        },
+        {
+          "id": "q43-5",
+          "enunciado": "O Quilombo dos Palmares foi destruído em 1694 após quase um século de existência. Sobre essa comunidade, é correto afirmar que:",
+          "alternativas": {
+            "A": "Era uma pequena comunidade com poucas dezenas de habitantes",
+            "B": "Chegou a ter cerca de 20 mil habitantes e organizou sociedade alternativa à colonial",
+            "C": "Aceitava apenas africanos, excluindo indígenas e brancos pobres",
+            "D": "Era aliada dos senhores de engenho pernambucanos",
+            "E": "Foi abandonada pacificamente por seus habitantes"
+          },
+          "correta": "B",
+          "explicacao": "Palmares foi o maior quilombo brasileiro, chegando a 20 mil habitantes organizados em múltiplos núcleos (mocambos). Desenvolveu agricultura, comércio e estrutura política própria. Resistiu por quase 100 anos a diversas expedições militares, sendo destruído apenas em 1694.",
+          "dificuldade": "medio",
+          "tags": ["palmares", "quilombo", "zumbi"]
+        }
+      ]
+    },
+    {
+      "id": "m44",
+      "titulo": "Ciclo do Ouro e Expansão Territorial",
+      "resumo": "A descoberta do ouro em Minas Gerais, a sociedade mineradora, a interiorização da colonização e a expansão das fronteiras.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A descoberta de ouro em Minas Gerais no final do século XVII transformou a colônia brasileira. O ciclo do ouro deslocou o eixo econômico do Nordeste açucareiro para o Centro-Sul, promoveu intensa urbanização, gerou sociedade mais complexa e diversificada, e intensificou o controle metropolitano. No ENEM, esse período é frequentemente cobrado por suas características distintas do Brasil açucareiro."
+        },
+        {
+          "titulo": "A Descoberta e Exploração do Ouro",
+          "conteudo": "O ouro foi descoberto em Minas Gerais na década de 1690 por bandeirantes paulistas. A notícia provocou corrida do ouro que atraiu milhares de pessoas de todo o Brasil e de Portugal. Principais regiões: Vila Rica (Ouro Preto), Mariana, Sabará, São João del-Rei. A extração era feita em lavras (minas de superfície) e faisqueiras (rios). O auge da produção foi entre 1735-1754. A Coroa portuguesa criou a Intendência das Minas para controlar a extração e cobrar impostos (quinto - 20% do ouro)."
+        },
+        {
+          "titulo": "Sociedade Mineradora",
+          "conteudo": "A sociedade mineradora era mais urbana, complexa e móvel que a açucareira. Urbanização: vilas e cidades surgiram rapidamente, com comércio, serviços, vida cultural. Composição social: além de mineradores e escravizados, havia comerciantes, artesãos, profissionais liberais, funcionários, clérigos. Escravidão: o trabalho escravo era predominante nas minas, mas havia maior número de alforrias e libertos. Mulheres negras e mulatas exerciam comércio (quitandeiras). A Igreja teve papel central na vida social, financiando arte barroca."
+        },
+        {
+          "titulo": "Controle Metropolitano e Conflitos",
+          "conteudo": "Portugal intensificou o controle sobre a região mineradora. Impostos: quinto (20%), casas de fundição (1719), derrama (cobrança de quotas atrasadas). Guerra dos Emboabas (1707-1709): conflito entre paulistas (descobridores) e emboabas (forasteiros, principalmente portugueses) pelo controle das minas. Revolta de Vila Rica (1720): contra as casas de fundição, liderada por Filipe dos Santos, enforcado. Inconfidência Mineira (1789): conspiração de elite local influenciada pelo Iluminismo, abortada pela delação, resultou na execução de Tiradentes."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Quinto e Casas de Fundição",
+          "descricao": "O quinto era o imposto de 20% sobre o ouro devido à Coroa. As casas de fundição (1719) obrigavam a fundir todo ouro em barras oficiais, facilitando a cobrança. Quem circulasse com ouro em pó era considerado contrabandista."
+        },
+        {
+          "titulo": "Urbanização Mineira",
+          "descricao": "Diferente do Brasil açucareiro (rural), Minas Gerais desenvolveu intensa urbanização. Vilas como Ouro Preto tinham vida cultural rica: teatro, música, literatura. As igrejas barrocas decoradas por Aleijadinho e Mestre Ataíde são patrimônio dessa sociedade."
+        }
+      ],
+      "dicas": [
+        "Sociedade mineradora = mais urbana, complexa e diversificada que a açucareira",
+        "Quinto = 20% do ouro para a Coroa; derrama = cobrança de quotas atrasadas",
+        "Inconfidência Mineira = elite ilustrada, não revolução popular"
+      ],
+      "questoes": [
+        {
+          "id": "q44-1",
+          "enunciado": "A sociedade mineradora do século XVIII diferenciava-se da sociedade açucareira porque:",
+          "alternativas": {
+            "A": "Não utilizava trabalho escravo em nenhuma atividade",
+            "B": "Era mais urbana, com maior diversidade social e mobilidade",
+            "C": "Era exclusivamente rural, baseada em latifúndios",
+            "D": "Não tinha qualquer relação comercial com Portugal",
+            "E": "Era composta apenas por portugueses nascidos em Portugal"
+          },
+          "correta": "B",
+          "explicacao": "A sociedade mineradora era mais urbana que a açucareira: vilas e cidades surgiram rapidamente. Era mais diversificada socialmente: além de mineradores e escravizados, havia comerciantes, artesãos, profissionais, funcionários. Havia maior mobilidade social e mais alforrias, embora a escravidão permanecesse central.",
+          "dificuldade": "medio",
+          "tags": ["sociedade mineradora", "urbanização", "ouro"]
+        },
+        {
+          "id": "q44-2",
+          "enunciado": "O quinto era um imposto colonial que determinava:",
+          "alternativas": {
+            "A": "A entrega de um quinto de toda produção agrícola à Igreja",
+            "B": "O pagamento de 20% de todo ouro extraído à Coroa portuguesa",
+            "C": "A divisão igualitária da produção entre mineradores",
+            "D": "A exportação de um quinto do açúcar para a Holanda",
+            "E": "O imposto sobre a venda de escravizados"
+          },
+          "correta": "B",
+          "explicacao": "O quinto era o imposto de 20% sobre o ouro extraído, devido à Coroa portuguesa. Para garantir a cobrança, foram criadas as casas de fundição, onde todo ouro deveria ser transformado em barras oficiais. A sonegação era punida severamente.",
+          "dificuldade": "facil",
+          "tags": ["quinto", "impostos", "mineração"]
+        },
+        {
+          "id": "q44-3",
+          "enunciado": "A Guerra dos Emboabas (1707-1709) foi um conflito entre:",
+          "alternativas": {
+            "A": "Portugueses e holandeses pelo controle do açúcar",
+            "B": "Paulistas (descobridores das minas) e forasteiros (emboabas) pelo controle da região aurífera",
+            "C": "Escravizados e senhores de engenho no Nordeste",
+            "D": "Jesuítas e colonos pela posse das missões",
+            "E": "Brasil e Espanha pela região do Prata"
+          },
+          "correta": "B",
+          "explicacao": "A Guerra dos Emboabas opôs paulistas (que descobriram as minas e queriam exclusividade) aos emboabas (forasteiros, principalmente portugueses e nordestinos, que chegaram atraídos pelo ouro). Os emboabas venceram, e a Coroa criou a Capitania de Minas Gerais para controlar a região.",
+          "dificuldade": "medio",
+          "tags": ["guerra dos emboabas", "minas gerais", "conflito"]
+        },
+        {
+          "id": "q44-4",
+          "enunciado": "A Inconfidência Mineira (1789) foi uma conspiração que:",
+          "alternativas": {
+            "A": "Pretendia abolir a escravidão e distribuir terras aos pobres",
+            "B": "Era liderada por escravizados fugitivos das minas",
+            "C": "Reunia membros da elite local influenciados pelo Iluminismo, contra impostos e domínio português",
+            "D": "Conseguiu proclamar a independência de Minas Gerais",
+            "E": "Tinha apoio oficial do governo português"
+          },
+          "correta": "C",
+          "explicacao": "A Inconfidência Mineira reunia membros da elite local (advogados, padres, militares, fazendeiros) influenciados pelo Iluminismo e pela independência dos EUA. Protestavam contra impostos (especialmente a derrama) e planejavam independência. Foi descoberta por delação, e Tiradentes (o de menor status) foi executado.",
+          "dificuldade": "medio",
+          "tags": ["inconfidência mineira", "tiradentes", "independência"]
+        },
+        {
+          "id": "q44-5",
+          "enunciado": "A derrama, que motivou em parte a Inconfidência Mineira, era:",
+          "alternativas": {
+            "A": "Uma festa religiosa popular nas vilas mineradoras",
+            "B": "A cobrança forçada de impostos atrasados quando a quota anual de ouro não era atingida",
+            "C": "O nome dado às minas abandonadas",
+            "D": "Um título de nobreza concedido aos mineradores ricos",
+            "E": "O processo de fundição do ouro em barras"
+          },
+          "correta": "B",
+          "explicacao": "A derrama era a cobrança forçada de impostos atrasados quando a produção de ouro não atingia a quota anual estabelecida pela Coroa. As autoridades podiam confiscar bens dos habitantes para completar o valor. A ameaça de derrama em 1789 foi um dos gatilhos da Inconfidência Mineira.",
+          "dificuldade": "medio",
+          "tags": ["derrama", "impostos", "inconfidência"]
+        }
+      ]
+    },
+    {
+      "id": "m45",
+      "titulo": "Invasões Estrangeiras e Defesa Colonial",
+      "resumo": "As tentativas de colonização francesa e holandesa no Brasil, as guerras de defesa e suas consequências para a colônia.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil colonial foi alvo de tentativas de ocupação por outras potências europeias, especialmente França e Holanda. Essas invasões revelam a disputa pelo controle de rotas comerciais e produtos coloniais. No ENEM, esse tema é cobrado em relação às rivalidades europeias e suas consequências para a formação colonial brasileira."
+        },
+        {
+          "titulo": "Invasões Francesas",
+          "conteudo": "França Antártica (1555-1567): franceses sob Nicolas de Villegagnon ocuparam a Baía de Guanabara (Rio de Janeiro). Contaram com aliança dos Tamoios (Confederação dos Tamoios). Foram expulsos por Mem de Sá, governador-geral, com apoio de José de Anchieta e Manuel da Nóbrega. A cidade do Rio de Janeiro foi fundada (1565) para garantir a posse. França Equinocial (1612-1615): franceses ocuparam o Maranhão, fundando São Luís. Foram expulsos rapidamente por forças luso-brasileiras."
+        },
+        {
+          "titulo": "Invasões Holandesas",
+          "conteudo": "Contexto: União Ibérica (1580-1640) - Portugal sob domínio espanhol. A Holanda, em guerra contra a Espanha, atacou possessões portuguesas. Companhia das Índias Ocidentais (WIC): empresa holandesa criada para conquistar e explorar colônias. Invasão da Bahia (1624-1625): holandeses tomaram Salvador, mas foram expulsos no ano seguinte. Invasão de Pernambuco (1630-1654): ocupação mais duradoura, sob comando de Maurício de Nassau (1637-1644)."
+        },
+        {
+          "titulo": "O Brasil Holandês e a Expulsão",
+          "conteudo": "Maurício de Nassau modernizou Recife: urbanização, saneamento, tolerância religiosa (judeus, católicos, protestantes), estímulo às artes e ciências (pintores como Frans Post e Albert Eckhout documentaram o Brasil). Emprestou dinheiro a senhores de engenho para manter a produção açucareira. Após sua saída (1644), a WIC endureceu a cobrança de dívidas. Insurreição Pernambucana (1645-1654): senhores de engenho, com apoio popular (negros, indígenas, brancos), lutaram contra os holandeses. Batalhas decisivas: Guararapes (1648, 1649). Expulsão em 1654. Consequência: holandeses levaram técnicas açucareiras para o Caribe, gerando concorrência ao açúcar brasileiro."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Maurício de Nassau em Pernambuco",
+          "descricao": "Governador holandês (1637-1644), modernizou Recife com urbanização, pontes, saneamento. Praticou tolerância religiosa inédita na América. Patrocinou artistas e cientistas que documentaram a natureza e sociedade brasileiras."
+        },
+        {
+          "titulo": "Batalhas dos Guararapes (1648-1649)",
+          "descricao": "Batalhas decisivas da Insurreição Pernambucana contra os holandeses. Forças mistas de portugueses, negros (como Henrique Dias) e indígenas (como Felipe Camarão) venceram os holandeses. São consideradas símbolo de formação da identidade brasileira."
+        }
+      ],
+      "dicas": [
+        "França Antártica = Rio de Janeiro (1555-1567), aliança com Tamoios",
+        "Holandeses em Pernambuco (1630-1654) = Nassau, tolerância, arte",
+        "Expulsão dos holandeses = concorrência antilhana ao açúcar brasileiro"
+      ],
+      "questoes": [
+        {
+          "id": "q45-1",
+          "enunciado": "A França Antártica (1555-1567) foi uma tentativa francesa de colonização no Brasil. Sobre esse episódio, é correto afirmar que:",
+          "alternativas": {
+            "A": "Os franceses ocuparam a região amazônica e fundaram Belém",
+            "B": "Os franceses se estabeleceram na Baía de Guanabara e aliaram-se aos Tamoios",
+            "C": "A ocupação francesa durou mais de um século",
+            "D": "Os franceses eram aliados dos portugueses contra os holandeses",
+            "E": "A ocupação foi pacífica e aceita pela Coroa portuguesa"
+          },
+          "correta": "B",
+          "explicacao": "A França Antártica foi a tentativa francesa de colonizar a região da Baía de Guanabara (atual Rio de Janeiro). Os franceses, liderados por Villegagnon, aliaram-se aos Tamoios (Confederação dos Tamoios) contra os portugueses. Foram expulsos por Mem de Sá, e o Rio de Janeiro foi fundado para garantir a posse.",
+          "dificuldade": "medio",
+          "tags": ["frança antártica", "invasão francesa", "rio de janeiro"]
+        },
+        {
+          "id": "q45-2",
+          "enunciado": "A ocupação holandesa em Pernambuco (1630-1654) ocorreu no contexto de:",
+          "alternativas": {
+            "A": "Aliança entre Portugal e Holanda contra a Espanha",
+            "B": "União Ibérica, quando Portugal estava sob domínio espanhol e a Holanda combatia a Espanha",
+            "C": "Independência do Brasil, que buscava apoio holandês",
+            "D": "Descoberta de ouro em Pernambuco, cobiçado pelos holandeses",
+            "E": "Acordo comercial entre senhores de engenho e a WIC"
+          },
+          "correta": "B",
+          "explicacao": "A invasão holandesa ocorreu durante a União Ibérica (1580-1640), quando Portugal estava sob domínio da Espanha. A Holanda, em guerra de independência contra a Espanha, atacou possessões portuguesas. A Companhia das Índias Ocidentais (WIC) visava controlar a produção açucareira.",
+          "dificuldade": "medio",
+          "tags": ["holandeses", "união ibérica", "pernambuco"]
+        },
+        {
+          "id": "q45-3",
+          "enunciado": "O governo de Maurício de Nassau em Pernambuco (1637-1644) caracterizou-se por:",
+          "alternativas": {
+            "A": "Repressão violenta e intolerância religiosa",
+            "B": "Abandono da produção açucareira em favor da mineração",
+            "C": "Modernização urbana, tolerância religiosa e patronato das artes e ciências",
+            "D": "Expulsão de todos os portugueses da região",
+            "E": "Aliança com os quilombos contra os senhores de engenho"
+          },
+          "correta": "C",
+          "explicacao": "Nassau modernizou Recife (urbanização, pontes, saneamento), praticou tolerância religiosa (permitindo culto católico, protestante e judaico), e patrocinou artistas e cientistas (Frans Post, Albert Eckhout) que documentaram o Brasil. Sua administração foi mais pragmática que ideológica.",
+          "dificuldade": "facil",
+          "tags": ["nassau", "holandeses", "pernambuco"]
+        },
+        {
+          "id": "q45-4",
+          "enunciado": "A Insurreição Pernambucana (1645-1654) que expulsou os holandeses foi significativa porque:",
+          "alternativas": {
+            "A": "Foi conduzida exclusivamente por tropas enviadas de Portugal",
+            "B": "Reuniu portugueses, negros e indígenas em luta conjunta, sendo considerada símbolo de formação da identidade brasileira",
+            "C": "Foi liderada pelos holandeses arrependidos da ocupação",
+            "D": "Resultou na independência de Pernambuco como nação",
+            "E": "Contou com apoio militar da França"
+          },
+          "correta": "B",
+          "explicacao": "A Insurreição Pernambucana reuniu diferentes grupos: portugueses (senhores de engenho), negros (como Henrique Dias) e indígenas (como Felipe Camarão) lutando juntos contra os holandeses. As Batalhas dos Guararapes são consideradas símbolo de formação da identidade brasileira, pela união de diferentes grupos.",
+          "dificuldade": "medio",
+          "tags": ["insurreição pernambucana", "guararapes", "identidade"]
+        },
+        {
+          "id": "q45-5",
+          "enunciado": "Uma consequência importante da expulsão dos holandeses do Brasil (1654) para a economia colonial foi:",
+          "alternativas": {
+            "A": "O início imediato do ciclo do ouro em Minas Gerais",
+            "B": "A concorrência do açúcar antilhano, produzido com técnicas levadas pelos holandeses",
+            "C": "O aumento dos preços do açúcar brasileiro na Europa",
+            "D": "A proibição do tráfico de escravizados para o Brasil",
+            "E": "A transferência da capital para Recife"
+          },
+          "correta": "B",
+          "explicacao": "Após a expulsão, os holandeses levaram conhecimentos técnicos sobre produção açucareira para suas colônias no Caribe (Antilhas). O açúcar antilhano, produzido mais perto da Europa e com técnicas aperfeiçoadas, passou a concorrer com o brasileiro, causando a crise da economia açucareira.",
+          "dificuldade": "medio",
+          "tags": ["holandeses", "açúcar", "antilhas"]
+        }
+      ]
+    },
+    {
+      "id": "m46",
+      "titulo": "Movimentos de Resistência Colonial",
+      "resumo": "As revoltas coloniais, desde os motins locais até as conjurações de fins do século XVIII, seus contextos e significados.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O período colonial foi marcado por diversas revoltas e movimentos de resistência, com diferentes motivações e composições sociais. Distinguem-se os movimentos nativistas (séculos XVII-XVIII, sem projeto de independência) das conjurações de fins do XVIII (influenciadas pelo Iluminismo, com ideais separatistas). No ENEM, esse tema exige compreender contextos, participantes e projetos de cada movimento."
+        },
+        {
+          "titulo": "Movimentos Nativistas",
+          "conteudo": "Os movimentos nativistas protestavam contra abusos específicos, sem questionar o domínio colonial. Revolta de Beckman (Maranhão, 1684): contra o monopólio da Companhia de Comércio do Maranhão e os jesuítas (que impediam escravização indígena). Guerra dos Emboabas (Minas, 1707-1709): paulistas x forasteiros pelas minas de ouro. Guerra dos Mascates (Pernambuco, 1710-1711): senhores de engenho de Olinda x comerciantes portugueses de Recife. Revolta de Vila Rica (1720): contra as casas de fundição, Filipe dos Santos executado."
+        },
+        {
+          "titulo": "Conjuração Mineira (1789)",
+          "conteudo": "Contexto: crise da mineração, ameaça de derrama, influência do Iluminismo e da independência dos EUA. Participantes: elite local - advogados (Tomás Antônio Gonzaga, Cláudio Manuel da Costa), militares (Tiradentes), padres, fazendeiros, mineradores. Projeto: república independente em Minas (não no Brasil todo), manutenção da escravidão (maioria), capital em São João del-Rei, universidade. Desfecho: denunciada por Joaquim Silvério dos Reis (em troca de perdão de dívidas), abortada antes de começar. Tiradentes, de menor status social, foi o único executado (enforcado e esquartejado em 1792). Os demais foram degredados para a África."
+        },
+        {
+          "titulo": "Conjuração Baiana (1798)",
+          "conteudo": "Também chamada Revolta dos Alfaiates ou Conjuração dos Búzios. Contexto: influência da Revolução Francesa, crise econômica na Bahia. Participantes: diferente da Inconfidência Mineira, incluía camadas populares - alfaiates, soldados, artesãos, libertos, escravizados. Muitos eram mulatos e negros. Projeto: república independente, fim da escravidão, igualdade racial, livre comércio. Desfecho: reprimida, quatro líderes executados (todos negros ou mulatos: Lucas Dantas, Luiz Gonzaga das Virgens, João de Deus, Manuel Faustino). A composição social e o projeto abolicionista tornaram a repressão mais violenta."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Inconfidência Mineira x Conjuração Baiana",
+          "descricao": "A Inconfidência (1789) era de elite, sem abolicionismo. A Conjuração Baiana (1798) era popular, com participação de negros e mulatos, e propunha fim da escravidão. A repressão foi mais dura na Bahia: 4 executados (negros/mulatos) contra 1 em Minas (Tiradentes)."
+        },
+        {
+          "titulo": "Tiradentes como Símbolo",
+          "descricao": "Joaquim José da Silva Xavier, o Tiradentes, era alferes (militar de baixa patente) e dentista prático. Foi o único executado porque era o de menor status social. A República transformou-o em herói nacional, mártir da independência."
+        }
+      ],
+      "dicas": [
+        "Movimentos nativistas = protestos locais, sem separatismo",
+        "Inconfidência Mineira = elite, sem abolicionismo, Tiradentes único executado",
+        "Conjuração Baiana = popular, abolicionista, 4 executados (negros/mulatos)"
+      ],
+      "questoes": [
+        {
+          "id": "q46-1",
+          "enunciado": "Os movimentos nativistas do período colonial brasileiro caracterizavam-se por:",
+          "alternativas": {
+            "A": "Projetos claros de independência e formação de república",
+            "B": "Protestos contra abusos específicos, sem questionar o domínio colonial português",
+            "C": "Liderança de escravizados e indígenas contra os colonos",
+            "D": "Apoio irrestrito da Coroa portuguesa",
+            "E": "Influência direta da Revolução Francesa"
+          },
+          "correta": "B",
+          "explicacao": "Os movimentos nativistas (Beckman, Emboabas, Mascates, Vila Rica) protestavam contra abusos específicos - monopólios, impostos, conflitos locais - mas não questionavam o domínio português nem propunham independência. Diferem das conjurações de fins do XVIII, que tinham projetos separatistas.",
+          "dificuldade": "medio",
+          "tags": ["nativismo", "revoltas coloniais", "brasil colonial"]
+        },
+        {
+          "id": "q46-2",
+          "enunciado": "A Inconfidência Mineira (1789) diferenciava-se da Conjuração Baiana (1798) principalmente porque:",
+          "alternativas": {
+            "A": "A Inconfidência era popular e abolicionista; a Conjuração Baiana era elitista",
+            "B": "A Inconfidência reunia a elite local e não propunha abolição; a Conjuração Baiana tinha participação popular e defendia o fim da escravidão",
+            "C": "Ambas tinham a mesma composição social e os mesmos objetivos",
+            "D": "A Conjuração Baiana foi apoiada pela Coroa portuguesa",
+            "E": "A Inconfidência conseguiu proclamar a independência de Minas Gerais"
+          },
+          "correta": "B",
+          "explicacao": "A Inconfidência Mineira era movimento da elite (advogados, padres, mineradores) e não propunha fim da escravidão. A Conjuração Baiana tinha participação popular (alfaiates, artesãos, soldados, libertos, escravizados) e propunha abolição da escravidão e igualdade racial. A diferença social refletiu-se na repressão.",
+          "dificuldade": "medio",
+          "tags": ["inconfidência", "conjuração baiana", "comparação"]
+        },
+        {
+          "id": "q46-3",
+          "enunciado": "Tiradentes foi o único inconfidente executado em 1792. Isso se explica porque:",
+          "alternativas": {
+            "A": "Era o líder intelectual e planejador do movimento",
+            "B": "Tinha o menor status social entre os conspiradores, servindo de exemplo sem atingir a elite",
+            "C": "Confessou crimes de todos os outros conspiradores",
+            "D": "Era o único que propunha a abolição da escravidão",
+            "E": "Era português e não brasileiro"
+          },
+          "correta": "B",
+          "explicacao": "Tiradentes (Joaquim José da Silva Xavier) era alferes e dentista prático, o de menor status entre os inconfidentes. Sua execução servia de exemplo e aviso sem punir severamente a elite local (advogados, padres, fazendeiros), que foi degredada. O sistema colonial protegia seus estratos superiores.",
+          "dificuldade": "medio",
+          "tags": ["tiradentes", "inconfidência", "execução"]
+        },
+        {
+          "id": "q46-4",
+          "enunciado": "A Conjuração Baiana (1798) é também conhecida como Revolta dos Alfaiates porque:",
+          "alternativas": {
+            "A": "Era um movimento de trabalhadores da indústria têxtil baiana",
+            "B": "Vários participantes eram alfaiates e artesãos, refletindo a composição popular do movimento",
+            "C": "Os conspiradores usavam roupas especiais para se identificar",
+            "D": "O objetivo era monopolizar o comércio de tecidos em Salvador",
+            "E": "Os líderes fabricavam bandeiras para a nova república"
+          },
+          "correta": "B",
+          "explicacao": "A Conjuração Baiana ficou conhecida como Revolta dos Alfaiates porque muitos participantes eram alfaiates e outros artesãos, além de soldados, libertos e escravizados. Essa composição popular diferenciava o movimento da Inconfidência Mineira, de caráter elitista.",
+          "dificuldade": "facil",
+          "tags": ["conjuração baiana", "alfaiates", "movimento popular"]
+        },
+        {
+          "id": "q46-5",
+          "enunciado": "A Guerra dos Mascates (Pernambuco, 1710-1711) foi um conflito entre:",
+          "alternativas": {
+            "A": "Escravizados e senhores de engenho pelo fim da escravidão",
+            "B": "Senhores de engenho de Olinda e comerciantes portugueses de Recife por poder político",
+            "C": "Portugueses e holandeses pelo controle do açúcar",
+            "D": "Paulistas e emboabas pelo controle das minas de ouro",
+            "E": "Jesuítas e colonos pela posse dos aldeamentos"
+          },
+          "correta": "B",
+          "explicacao": "A Guerra dos Mascates opôs a aristocracia rural de Olinda (senhores de engenho endividados) aos comerciantes portugueses de Recife (mascates, credores). A elevação de Recife a vila (1709) deu poder político aos comerciantes, provocando reação violenta dos olindenses. Era conflito entre grupos coloniais, não contra Portugal.",
+          "dificuldade": "medio",
+          "tags": ["guerra dos mascates", "pernambuco", "conflito colonial"]
+        }
+      ]
+    },
+    {
+      "id": "m47",
+      "titulo": "Período Joanino e Independência",
+      "resumo": "A vinda da família real portuguesa, as transformações no Brasil e o processo de independência (1808-1822).",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A transferência da Corte portuguesa para o Brasil em 1808 transformou profundamente a colônia e criou as condições para a independência. O período joanino (1808-1821) representa a transição entre colônia e nação independente. No ENEM, esse tema é fundamental para compreender o processo peculiar de independência brasileira."
+        },
+        {
+          "titulo": "A Vinda da Família Real (1808)",
+          "conteudo": "Contexto: guerras napoleônicas; Napoleão decretou o Bloqueio Continental contra a Inglaterra. Portugal, tradicional aliado inglês, recusou aderir. Tropas francesas invadiram Portugal (1807). Solução: a Corte portuguesa (cerca de 15 mil pessoas, com D. João à frente) embarcou para o Brasil sob escolta inglesa. A família real chegou a Salvador (janeiro de 1808) e depois ao Rio de Janeiro (março), que tornou-se sede do império português."
+        },
+        {
+          "titulo": "Transformações do Período Joanino",
+          "conteudo": "A presença da Corte transformou o Brasil: Abertura dos Portos (1808): fim do monopólio português, comércio com nações amigas (especialmente Inglaterra). Tratados de 1810 com a Inglaterra: privilégios comerciais britânicos. Criação de instituições: Banco do Brasil, Imprensa Régia, Biblioteca Real, Jardim Botânico, Academia Militar, Escola de Medicina. Missão Artística Francesa (1816): artistas e arquitetos para modernizar a Corte. Elevação a Reino Unido (1815): Brasil deixou de ser colônia, tornando-se Reino Unido a Portugal e Algarves."
+        },
+        {
+          "titulo": "Processo de Independência",
+          "conteudo": "Revolução Liberal do Porto (1820): em Portugal, revolução exigiu retorno de D. João VI e elaboração de constituição. As Cortes (parlamento) queriam recolonizar o Brasil, anulando os avanços. D. João VI retornou a Portugal (1821), deixando o príncipe D. Pedro como regente. Dia do Fico (9/jan/1822): D. Pedro recusou ordens de retornar a Portugal. Independência (7/set/1822): às margens do Ipiranga, D. Pedro declarou a independência. Aclamado imperador em outubro (D. Pedro I). Características: independência conservadora, sem ruptura social; continuidade da dinastia Bragança; manutenção da escravidão e da estrutura social."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Abertura dos Portos (1808)",
+          "descricao": "Primeiro ato de D. João no Brasil, ainda em Salvador. Abriu os portos ao comércio com 'nações amigas', rompendo o monopólio português. A Inglaterra foi a principal beneficiária. É considerado o início do fim do sistema colonial."
+        },
+        {
+          "titulo": "Independência Conservadora",
+          "descricao": "A independência brasileira foi peculiar: proclamada por um príncipe português, manteve a monarquia, a dinastia Bragança, a escravidão e a estrutura social. Não houve revolução popular nem ruptura radical como nas colônias espanholas."
+        }
+      ],
+      "dicas": [
+        "1808: abertura dos portos = fim do monopólio = início do fim do sistema colonial",
+        "1815: Brasil = Reino Unido a Portugal (não mais colônia)",
+        "Independência conservadora: mesma dinastia, escravidão mantida, sem ruptura social"
+      ],
+      "questoes": [
+        {
+          "id": "q47-1",
+          "enunciado": "A transferência da Corte portuguesa para o Brasil em 1808 ocorreu devido:",
+          "alternativas": {
+            "A": "À descoberta de ouro no Rio de Janeiro",
+            "B": "À invasão francesa de Portugal no contexto das guerras napoleônicas",
+            "C": "À independência de colônias espanholas na América",
+            "D": "A um acordo comercial com a Holanda",
+            "E": "À abolição da escravidão em Portugal"
+          },
+          "correta": "B",
+          "explicacao": "A Corte portuguesa transferiu-se para o Brasil porque tropas francesas de Napoleão invadiram Portugal em 1807. Portugal, aliado tradicional da Inglaterra, recusara aderir ao Bloqueio Continental. A fuga para o Brasil, sob escolta inglesa, salvou a monarquia e transformou a colônia.",
+          "dificuldade": "facil",
+          "tags": ["família real", "1808", "napoleão"]
+        },
+        {
+          "id": "q47-2",
+          "enunciado": "A Abertura dos Portos às Nações Amigas (1808) foi significativa porque:",
+          "alternativas": {
+            "A": "Reforçou o monopólio comercial português sobre o Brasil",
+            "B": "Rompeu o exclusivo colonial, permitindo comércio direto com outras nações, especialmente a Inglaterra",
+            "C": "Proibiu qualquer comércio entre Brasil e Europa",
+            "D": "Estabeleceu o livre comércio apenas com colônias espanholas",
+            "E": "Foi uma medida temporária revogada no mesmo ano"
+          },
+          "correta": "B",
+          "explicacao": "A Abertura dos Portos rompeu o exclusivo colonial (pacto colonial), que obrigava o Brasil a comerciar apenas com Portugal. O comércio direto com outras nações, especialmente a Inglaterra, foi permitido. É considerada o início do fim do sistema colonial brasileiro.",
+          "dificuldade": "facil",
+          "tags": ["abertura dos portos", "1808", "comércio"]
+        },
+        {
+          "id": "q47-3",
+          "enunciado": "A elevação do Brasil a Reino Unido a Portugal e Algarves em 1815 significou que:",
+          "alternativas": {
+            "A": "O Brasil tornou-se independente de Portugal",
+            "B": "O Brasil deixou de ser colônia, passando a ter status igual ao de Portugal na monarquia",
+            "C": "Portugal tornou-se colônia do Brasil",
+            "D": "O Brasil foi anexado pela Espanha",
+            "E": "A escravidão foi abolida no Brasil"
+          },
+          "correta": "B",
+          "explicacao": "A elevação a Reino Unido (1815) transformou o Brasil de colônia em reino, com status formalmente igual ao de Portugal dentro da monarquia dos Bragança. Foi reconhecimento das transformações ocorridas desde 1808 e preparou o terreno para a independência.",
+          "dificuldade": "medio",
+          "tags": ["reino unido", "1815", "status"]
+        },
+        {
+          "id": "q47-4",
+          "enunciado": "A independência do Brasil em 1822 pode ser caracterizada como conservadora porque:",
+          "alternativas": {
+            "A": "Foi resultado de longa guerra popular contra Portugal",
+            "B": "Aboliu a escravidão e distribuiu terras aos camponeses",
+            "C": "Manteve a monarquia, a dinastia Bragança, a escravidão e a estrutura social colonial",
+            "D": "Estabeleceu uma república federativa democrática",
+            "E": "Foi liderada por escravizados e indígenas contra a elite"
+          },
+          "correta": "C",
+          "explicacao": "A independência brasileira foi conservadora: proclamada por um príncipe português (D. Pedro), manteve a forma monárquica, a mesma dinastia (Bragança), a escravidão (até 1888) e a estrutura social hierárquica. Não houve ruptura revolucionária como em outras independências americanas.",
+          "dificuldade": "medio",
+          "tags": ["independência", "conservadora", "1822"]
+        },
+        {
+          "id": "q47-5",
+          "enunciado": "O Dia do Fico (9 de janeiro de 1822) foi importante no processo de independência porque:",
+          "alternativas": {
+            "A": "D. Pedro I declarou a independência do Brasil",
+            "B": "D. João VI retornou de Portugal para o Brasil",
+            "C": "D. Pedro desobedeceu às ordens das Cortes portuguesas de retornar a Portugal, permanecendo no Brasil",
+            "D": "Foi assinada a primeira constituição brasileira",
+            "E": "O Brasil foi reconhecido internacionalmente como nação independente"
+          },
+          "correta": "C",
+          "explicacao": "No Dia do Fico, D. Pedro respondeu às ordens das Cortes portuguesas (que queriam seu retorno e a recolonização do Brasil) com a frase 'Se é para o bem de todos e felicidade geral da nação, diga ao povo que fico'. Essa desobediência foi passo decisivo para a independência.",
+          "dificuldade": "facil",
+          "tags": ["dia do fico", "d. pedro", "independência"]
+        }
+      ]
+    },
+    {
+      "id": "m48",
+      "titulo": "Igreja e Religiosidade Colonial",
+      "resumo": "O papel da Igreja Católica na colonização, a catequese, a religiosidade popular e as tensões entre religião oficial e práticas sincréticas.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A Igreja Católica foi instituição central na colonização portuguesa do Brasil, legitimando a conquista, catequizando indígenas e africanos, e controlando aspectos fundamentais da vida colonial. Ao mesmo tempo, desenvolveu-se rica religiosidade popular que mesclava catolicismo com práticas indígenas e africanas. No ENEM, esse tema aparece em questões sobre o papel da Igreja e o sincretismo religioso."
+        },
+        {
+          "titulo": "Igreja e Colonização",
+          "conteudo": "O Padroado: acordo entre Coroa portuguesa e Vaticano que dava ao rei de Portugal o direito de administrar a Igreja nas colônias. A Coroa nomeava bispos, recolhia dízimos, autorizava construção de igrejas. Igreja e Estado eram aliados. Justificativa da colonização: a evangelização dos 'gentios' legitimava a conquista territorial e a dominação dos povos. Ordem dos Jesuítas: principal ordem missionária, responsável pela catequese de indígenas em aldeamentos. Controlavam colégios e exerciam grande influência. Foram expulsos em 1759 (reformas pombalinas)."
+        },
+        {
+          "titulo": "Catequese e Ação Missionária",
+          "conteudo": "Os missionários (principalmente jesuítas, mas também franciscanos, carmelitas, beneditinos) buscavam converter indígenas e africanos ao catolicismo. Métodos: aldeamentos (reunir indígenas em missões), aprendizado de línguas nativas (José de Anchieta escreveu gramática tupi), uso de música e teatro (autos para ensinar doutrina). Tensões: jesuítas entravam em conflito com colonos por protegerem indígenas da escravização; ao mesmo tempo, os aldeamentos desestruturavam culturas originais."
+        },
+        {
+          "titulo": "Religiosidade Popular e Sincretismo",
+          "conteudo": "A religiosidade colonial não se limitava ao catolicismo oficial. Surgiu rica tradição popular que mesclava elementos: Sincretismo afro-católico: orixás identificados com santos católicos (Iemanjá/Nossa Senhora, Ogum/São Jorge). Candomblé, umbanda e outras religiões afro-brasileiras desenvolveram-se apesar da perseguição. Festas populares: procissões, folias, congadas misturavam devoção católica com expressões culturais africanas e indígenas. Catolicismo popular: devoção a santos padroeiros, promessas, benzedeiras, curandeiros - práticas à margem da ortodoxia oficial. Inquisição: o Santo Ofício visitou o Brasil periodicamente para perseguir heresias, judaísmo secreto (cristãos-novos), práticas africanas e indígenas."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Padroado",
+          "descricao": "O Padroado dava ao rei de Portugal controle sobre a Igreja nas colônias: nomeava bispos, administrava dízimos, autorizava construções religiosas. Igreja e Estado eram aliados na colonização."
+        },
+        {
+          "titulo": "Sincretismo Religioso",
+          "descricao": "Para preservar suas religiões sob perseguição, africanos escravizados identificaram orixás com santos católicos. Assim, cultuavam Iemanjá sob a imagem de Nossa Senhora, Ogum sob São Jorge. Essa estratégia de sobrevivência cultural originou religiões afro-brasileiras."
+        }
+      ],
+      "dicas": [
+        "Padroado = Coroa controlava a Igreja; não havia separação Igreja-Estado",
+        "Jesuítas: catequese + proteção de indígenas x colonos; expulsos em 1759",
+        "Sincretismo = estratégia de sobrevivência cultural de africanos escravizados"
+      ],
+      "questoes": [
+        {
+          "id": "q48-1",
+          "enunciado": "O Padroado régio, que vigorou no Brasil colonial, estabelecia que:",
+          "alternativas": {
+            "A": "A Igreja Católica tinha total autonomia em relação à Coroa portuguesa",
+            "B": "A Coroa portuguesa administrava a Igreja nas colônias, nomeando bispos e controlando dízimos",
+            "C": "Havia separação completa entre Igreja e Estado",
+            "D": "O Papa governava diretamente os territórios coloniais",
+            "E": "Todas as religiões eram toleradas igualmente nas colônias"
+          },
+          "correta": "B",
+          "explicacao": "O Padroado era o acordo que dava à Coroa portuguesa o direito de administrar a Igreja Católica nas colônias. O rei nomeava bispos, recolhia dízimos, autorizava construções de igrejas. Igreja e Estado eram aliados, e a evangelização legitimava a colonização.",
+          "dificuldade": "medio",
+          "tags": ["padroado", "igreja", "estado"]
+        },
+        {
+          "id": "q48-2",
+          "enunciado": "Os jesuítas desempenharam papel central na colonização do Brasil, destacando-se por:",
+          "alternativas": {
+            "A": "Apoiar irrestritamente a escravização de indígenas pelos colonos",
+            "B": "Catequizar indígenas em aldeamentos, entrando em conflito com colonos que queriam escravizá-los",
+            "C": "Recusar qualquer contato com povos indígenas",
+            "D": "Liderar revoltas contra o domínio português",
+            "E": "Defender a liberdade religiosa para todas as crenças"
+          },
+          "correta": "B",
+          "explicacao": "Os jesuítas dedicaram-se à catequese de indígenas, reunindo-os em aldeamentos (missões). Ao protegerem os indígenas da escravização direta, entravam em conflito com colonos. Porém, os aldeamentos também desestruturavam culturas originais ao impor religião e costumes europeus.",
+          "dificuldade": "medio",
+          "tags": ["jesuítas", "catequese", "indígenas"]
+        },
+        {
+          "id": "q48-3",
+          "enunciado": "O sincretismo religioso afro-brasileiro, que identificou orixás africanos com santos católicos, pode ser compreendido como:",
+          "alternativas": {
+            "A": "Abandono completo das religiões africanas em favor do catolicismo",
+            "B": "Imposição da Igreja Católica aceita passivamente pelos africanos",
+            "C": "Estratégia de sobrevivência cultural que permitiu preservar práticas religiosas sob perseguição",
+            "D": "Invenção recente sem raízes no período colonial",
+            "E": "Política oficial da Coroa portuguesa para facilitar a conversão"
+          },
+          "correta": "C",
+          "explicacao": "O sincretismo foi estratégia de resistência cultural: sob perseguição da Igreja e do Estado, africanos escravizados identificaram orixás com santos católicos para manter suas práticas religiosas. Aparentavam cultuar santos católicos enquanto preservavam suas tradições. Isso originou religiões afro-brasileiras.",
+          "dificuldade": "medio",
+          "tags": ["sincretismo", "religião", "resistência"]
+        },
+        {
+          "id": "q48-4",
+          "enunciado": "A expulsão dos jesuítas do Brasil em 1759, durante as reformas pombalinas, deveu-se principalmente a:",
+          "alternativas": {
+            "A": "Seu apoio à independência das colônias americanas",
+            "B": "Sua recusa em catequizar indígenas",
+            "C": "Seu poder econômico e político, visto como obstáculo ao controle estatal pelo Marquês de Pombal",
+            "D": "Sua aliança com os holandeses contra Portugal",
+            "E": "Sua defesa da escravidão africana contra a vontade da Coroa"
+          },
+          "correta": "C",
+          "explicacao": "O Marquês de Pombal, ministro de D. José I, expulsou os jesuítas (1759) porque a Companhia de Jesus acumulara grande poder econômico (fazendas, colégios) e político, sendo vista como obstáculo ao fortalecimento do Estado absolutista. A expulsão foi parte das reformas iluministas pombalinas.",
+          "dificuldade": "dificil",
+          "tags": ["jesuítas", "pombal", "expulsão"]
+        },
+        {
+          "id": "q48-5",
+          "enunciado": "A Inquisição atuou no Brasil colonial principalmente para:",
+          "alternativas": {
+            "A": "Promover o diálogo inter-religioso entre diferentes crenças",
+            "B": "Perseguir heresias, judaísmo secreto e práticas religiosas africanas e indígenas consideradas diabólicas",
+            "C": "Defender os direitos dos povos indígenas contra os colonos",
+            "D": "Estabelecer a liberdade de culto na colônia",
+            "E": "Apoiar as revoltas coloniais contra Portugal"
+          },
+          "correta": "B",
+          "explicacao": "O Santo Ofício (Inquisição) visitou o Brasil para perseguir o que considerava heresias: cristãos-novos (judeus convertidos suspeitos de praticar judaísmo em segredo), práticas religiosas africanas e indígenas, e outros 'desvios' da ortodoxia católica. Era instrumento de controle religioso e social.",
+          "dificuldade": "medio",
+          "tags": ["inquisição", "perseguição", "religião"]
+        }
+      ]
+    },
+    {
+      "id": "m49",
+      "titulo": "Sociedade Colonial: Estrutura e Cotidiano",
+      "resumo": "A organização social da colônia, hierarquias, vida cotidiana, papel da família, condição feminina e grupos marginalizados.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A sociedade colonial brasileira era hierárquica, escravista e patriarcal. A posição social era determinada por nascimento, cor, propriedade e ocupação. Compreender essa estrutura é fundamental para entender a formação social brasileira e as desigualdades que persistem. No ENEM, esse tema aparece em questões sobre hierarquias sociais, cotidiano e grupos marginalizados."
+        },
+        {
+          "titulo": "Hierarquia Social Colonial",
+          "conteudo": "A sociedade colonial era dividida em estamentos (grupos com diferentes direitos legais): Elite: grandes proprietários (senhores de engenho, mineradores), altos funcionários, comerciantes ricos. Geralmente brancos. Camadas intermediárias: pequenos proprietários, comerciantes, artesãos, funcionários menores, clérigos. Incluía brancos pobres, mestiços livres. Escravizados: africanos e seus descendentes, juridicamente considerados propriedade, base da produção colonial. Indígenas: posição ambígua - livres por lei (desde 1570, com exceções), mas aldeados ou marginalizados. A cor da pele era marcador social fundamental: quanto mais escura, menor o status (com exceções individuais)."
+        },
+        {
+          "titulo": "Família Patriarcal e Condição Feminina",
+          "conteudo": "A família patriarcal era o núcleo da sociedade colonial, especialmente entre a elite rural. O patriarca (homem, chefe de família) exercia autoridade sobre esposa, filhos, agregados e escravizados. A Casa-Grande era o centro desse poder. Condição feminina: mulheres brancas da elite tinham vida restrita ao ambiente doméstico (esposa-mãe-administradora do lar). Pouca educação formal, casamentos arranjados. Viúvas poderiam administrar propriedades. Mulheres negras e mestiças: trabalhavam no serviço doméstico, no campo, no comércio urbano (quitandeiras). Sofriam exploração sexual. Algumas conseguiam alforria e acumulavam pequenos recursos."
+        },
+        {
+          "titulo": "Cotidiano e Grupos Marginalizados",
+          "conteudo": "A vida cotidiana variava enormemente conforme a posição social: Elite: moradia confortável (Casa-Grande ou sobrados urbanos), alimentação farta, vestuário europeu, acesso a educação (meninos), festas e sociabilidade. Pobres livres: moradia precária, alimentação limitada, trabalhos diversos, frequentemente à margem da sociedade formal. Escravizados: moradia nas senzalas, trabalho forçado, alimentação insuficiente, castigos físicos, negação de humanidade. Grupos marginalizados: vadios (sem ocupação fixa), prostitutas, deficientes, portadores de doenças (lepra), condenados, ciganos, judeus. Eram perseguidos ou excluídos. A religião católica e suas festas organizavam o calendário e a vida social."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Casa-Grande e Senzala",
+          "descricao": "A Casa-Grande era a residência do senhor de engenho, centro de poder. A Senzala era a moradia forçada dos escravizados. A proximidade física não significava igualdade - ao contrário, expressava a dominação. Gilberto Freyre analisou essa relação em obra clássica (que hoje é lida criticamente)."
+        },
+        {
+          "titulo": "Quitandeiras",
+          "descricao": "Mulheres negras (escravizadas, libertas ou livres) que vendiam alimentos nas ruas das cidades coloniais. Tinham alguma autonomia econômica e eram fundamentais para o abastecimento urbano. Algumas conseguiam acumular recursos e comprar alforria."
+        }
+      ],
+      "dicas": [
+        "Sociedade colonial = hierárquica, escravista, patriarcal",
+        "Cor da pele = marcador social fundamental (branco > mestiço > negro)",
+        "Família patriarcal: autoridade masculina, mulheres subordinadas (com variações por classe/cor)"
+      ],
+      "questoes": [
+        {
+          "id": "q49-1",
+          "enunciado": "A sociedade colonial brasileira caracterizava-se por:",
+          "alternativas": {
+            "A": "Mobilidade social intensa e igualdade de oportunidades",
+            "B": "Hierarquia rígida baseada em nascimento, cor da pele, propriedade e ocupação",
+            "C": "Democracia e participação política de todos os habitantes",
+            "D": "Abolição da escravidão e trabalho livre assalariado",
+            "E": "Igualdade jurídica entre todos os grupos sociais"
+          },
+          "correta": "B",
+          "explicacao": "A sociedade colonial era hierárquica e estamental: a posição social era determinada pelo nascimento, pela cor da pele (brancos no topo, negros na base), pela propriedade e pela ocupação. A mobilidade social era limitada, e diferentes grupos tinham diferentes direitos legais.",
+          "dificuldade": "facil",
+          "tags": ["sociedade colonial", "hierarquia", "estrutura social"]
+        },
+        {
+          "id": "q49-2",
+          "enunciado": "A família patriarcal colonial caracterizava-se por:",
+          "alternativas": {
+            "A": "Igualdade de poder entre homens e mulheres no núcleo familiar",
+            "B": "Autoridade do patriarca (homem chefe) sobre esposa, filhos, agregados e escravizados",
+            "C": "Predomínio da autoridade feminina nas decisões domésticas e econômicas",
+            "D": "Ausência de hierarquias no ambiente familiar",
+            "E": "Separação completa entre vida familiar e estrutura de produção econômica"
+          },
+          "correta": "B",
+          "explicacao": "A família patriarcal colonial era centrada na autoridade do patriarca (pai/marido/senhor), que exercia poder sobre a esposa, os filhos, os agregados e os escravizados. A Casa-Grande era o centro desse poder, unindo vida familiar e produção econômica sob controle masculino.",
+          "dificuldade": "facil",
+          "tags": ["família patriarcal", "autoridade", "colonial"]
+        },
+        {
+          "id": "q49-3",
+          "enunciado": "A condição das mulheres na sociedade colonial variava conforme sua posição social e cor. É correto afirmar que:",
+          "alternativas": {
+            "A": "Todas as mulheres tinham os mesmos direitos e oportunidades",
+            "B": "Mulheres brancas da elite tinham vida restrita ao âmbito doméstico, enquanto mulheres negras trabalhavam em diversas atividades e sofriam exploração adicional",
+            "C": "Mulheres negras eram protegidas por leis especiais contra abusos",
+            "D": "Não havia diferença na condição de mulheres brancas e negras",
+            "E": "Mulheres brancas trabalhavam no campo enquanto negras administravam as casas"
+          },
+          "correta": "B",
+          "explicacao": "A condição feminina variava por classe e cor. Mulheres brancas da elite tinham vida doméstica restrita (esposa, mãe, administradora do lar). Mulheres negras (escravizadas ou livres) trabalhavam no serviço doméstico, campo, comércio urbano, e sofriam exploração sexual sistemática, além da violência da escravidão.",
+          "dificuldade": "medio",
+          "tags": ["mulheres", "condição feminina", "colonial"]
+        },
+        {
+          "id": "q49-4",
+          "enunciado": "As quitandeiras eram mulheres que:",
+          "alternativas": {
+            "A": "Administravam os engenhos de açúcar durante a ausência dos senhores",
+            "B": "Vendiam alimentos nas ruas das cidades coloniais, tendo alguma autonomia econômica",
+            "C": "Trabalhavam exclusivamente na extração de ouro nas minas",
+            "D": "Eram religiosas que administravam conventos",
+            "E": "Dedicavam-se exclusivamente ao trabalho agrícola nos engenhos"
+          },
+          "correta": "B",
+          "explicacao": "As quitandeiras eram mulheres negras (escravizadas, libertas ou livres) que vendiam alimentos e produtos diversos nas ruas das cidades coloniais. Tinham relativa autonomia econômica e algumas conseguiam acumular recursos para comprar sua alforria ou de familiares.",
+          "dificuldade": "medio",
+          "tags": ["quitandeiras", "mulheres negras", "comércio"]
+        },
+        {
+          "id": "q49-5",
+          "enunciado": "Na sociedade colonial brasileira, a cor da pele funcionava como:",
+          "alternativas": {
+            "A": "Elemento irrelevante para a posição social",
+            "B": "Marcador social fundamental, associando pele mais escura a menor status",
+            "C": "Critério para distribuição igualitária de terras",
+            "D": "Fator de valorização dos africanos na hierarquia social",
+            "E": "Elemento considerado apenas em questões religiosas"
+          },
+          "correta": "B",
+          "explicacao": "A cor da pele era marcador social fundamental na colônia. Havia gradação hierárquica: brancos no topo, mestiços em posições intermediárias, negros na base (geralmente escravizados). A associação entre negritude e escravidão marcou profundamente a formação social brasileira.",
+          "dificuldade": "facil",
+          "tags": ["cor da pele", "hierarquia", "racismo"]
+        }
+      ]
+    },
+    {
+      "id": "m50",
+      "titulo": "Expansão Territorial e Tratados de Limites",
+      "resumo": "A expansão das fronteiras coloniais, bandeirantes, missões jesuíticas e os tratados de limites entre Portugal e Espanha.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O território brasileiro expandiu-se muito além dos limites estabelecidos pelo Tratado de Tordesilhas (1494). Bandeirantes, missionários, criadores de gado e mineradores avançaram sobre terras espanholas, definindo aproximadamente as fronteiras atuais. Diversos tratados foram assinados para regularizar essa expansão. No ENEM, esse tema exige compreender os agentes e processos de interiorização colonial."
+        },
+        {
+          "titulo": "Bandeirantes",
+          "conteudo": "Os bandeirantes eram expedições organizadas em São Paulo para o interior do continente. Tipos principais: Bandeiras de apresamento: caça a indígenas para escravização, especialmente nas missões jesuíticas espanholas (Guerra Guaranítica). Bandeiras de prospecção: busca por metais preciosos - descobriram ouro em Minas Gerais (1690s), Goiás e Mato Grosso. Sertanismo de contrato: expedições contratadas para combater quilombos (como Palmares) ou indígenas hostis. Os bandeirantes foram agentes fundamentais da expansão territorial, embora sua atividade principal fosse a escravização de indígenas. Figuras como Fernão Dias, Borba Gato e Raposo Tavares expandiram as fronteiras."
+        },
+        {
+          "titulo": "Outros Vetores de Expansão",
+          "conteudo": "Pecuária: a criação de gado expandiu-se pelo sertão nordestino e sulino, ocupando terras além de Tordesilhas. O gado não competia com a cana-de-açúcar e avançou pelo interior. Missões jesuíticas: os jesuítas estabeleceram missões no sul (Sete Povos) e na Amazônia, ocupando territórios. As missões espanholas foram destruídas por bandeirantes paulistas. Drogas do sertão: a coleta de produtos amazônicos (cacau, canela, cravo) levou portugueses a ocupar a região norte, além de Tordesilhas."
+        },
+        {
+          "titulo": "Tratados de Limites",
+          "conteudo": "Tratado de Tordesilhas (1494): dividiu o mundo entre Portugal e Espanha; o Brasil português limitava-se ao litoral. Tratado de Utrecht (1713): definiu limites com a França (Amapá) e reconheceu a Colônia do Sacramento (Portugal). Tratado de Madri (1750): principal tratado, reconheceu a ocupação efetiva (uti possidetis). Portugal ficou com territórios além de Tordesilhas (Amazônia, Centro-Oeste); Espanha ficou com a Colônia do Sacramento e os Sete Povos das Missões (o que gerou a Guerra Guaranítica). Tratado de Santo Ildefonso (1777): após conflitos, revisou fronteiras; Portugal devolveu territórios no sul. Tratado de Badajoz (1801): definiu limites aproximadamente como os atuais."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Uti Possidetis",
+          "descricao": "Princípio jurídico adotado no Tratado de Madri (1750): 'quem possui, de fato, deve possuir de direito'. Reconhecia a ocupação efetiva como base para definir fronteiras. Beneficiou Portugal, que ocupara territórios além de Tordesilhas."
+        },
+        {
+          "titulo": "Guerra Guaranítica (1754-1756)",
+          "descricao": "Conflito decorrente do Tratado de Madri: os Sete Povos das Missões (jesuítas e guaranis) deveriam passar à Espanha. Guaranis resistiram e foram massacrados por forças luso-espanholas. Episódio trágico da história colonial."
+        }
+      ],
+      "dicas": [
+        "Bandeirantes = expansão territorial + escravização de indígenas",
+        "Tratado de Madri (1750) = uti possidetis = quem ocupa, possui",
+        "O Brasil atual é muito maior que o Brasil de Tordesilhas"
+      ],
+      "questoes": [
+        {
+          "id": "q50-1",
+          "enunciado": "As bandeiras paulistas foram fundamentais para a expansão territorial brasileira. Sua atividade principal era:",
+          "alternativas": {
+            "A": "Estabelecer relações comerciais pacíficas com os indígenas",
+            "B": "Capturar indígenas para escravização e buscar metais preciosos",
+            "C": "Proteger as missões jesuíticas contra invasores",
+            "D": "Construir estradas ligando o litoral ao interior",
+            "E": "Defender as fronteiras contra invasões espanholas"
+          },
+          "correta": "B",
+          "explicacao": "Os bandeirantes dedicavam-se principalmente à captura de indígenas para escravização (bandeiras de apresamento), atacando inclusive missões jesuíticas espanholas, e à busca de metais preciosos (bandeiras de prospecção). Foram agentes da expansão territorial, mas à custa de violência contra povos indígenas.",
+          "dificuldade": "facil",
+          "tags": ["bandeirantes", "expansão", "escravização"]
+        },
+        {
+          "id": "q50-2",
+          "enunciado": "O princípio do 'uti possidetis', adotado no Tratado de Madri (1750), estabelecia que:",
+          "alternativas": {
+            "A": "As fronteiras seriam definidas por linhas imaginárias como no Tratado de Tordesilhas",
+            "B": "A posse de um território pertenceria a quem efetivamente o ocupasse",
+            "C": "Portugal devolveria todos os territórios além de Tordesilhas",
+            "D": "A Espanha teria soberania sobre toda a América do Sul",
+            "E": "As fronteiras seriam definidas por acidentes geográficos exclusivamente"
+          },
+          "correta": "B",
+          "explicacao": "O uti possidetis ('quem possui de fato, deve possuir de direito') reconhecia a ocupação efetiva como base para definir fronteiras. Esse princípio beneficiou Portugal, que ocupara vastos territórios além da linha de Tordesilhas através de bandeirantes, missionários e criadores de gado.",
+          "dificuldade": "medio",
+          "tags": ["uti possidetis", "tratado de madri", "fronteiras"]
+        },
+        {
+          "id": "q50-3",
+          "enunciado": "A expansão da pecuária contribuiu para a interiorização colonial porque:",
+          "alternativas": {
+            "A": "O gado exigia as mesmas terras férteis que a cana-de-açúcar",
+            "B": "A criação de gado podia desenvolver-se no interior, em terras inadequadas para a cana, ocupando vastos territórios",
+            "C": "A pecuária era a atividade econômica mais lucrativa da colônia",
+            "D": "Os pecuaristas recebiam incentivos especiais da Coroa para expandir fronteiras",
+            "E": "O gado era exportado vivo para a Europa em grande quantidade"
+          },
+          "correta": "B",
+          "explicacao": "A pecuária expandiu-se pelo interior porque não competia com a agricultura açucareira do litoral. O gado podia criar-se em terras menos férteis, ocupando o sertão nordestino e o sul. Essa expansão integrou economicamente regiões distantes e ocupou territórios além de Tordesilhas.",
+          "dificuldade": "medio",
+          "tags": ["pecuária", "interiorização", "expansão"]
+        },
+        {
+          "id": "q50-4",
+          "enunciado": "A Guerra Guaranítica (1754-1756) foi consequência de:",
+          "alternativas": {
+            "A": "Invasão holandesa no sul do Brasil",
+            "B": "Conflito entre Portugal e Espanha pelo controle do ouro",
+            "C": "Resistência dos guaranis e jesuítas à transferência dos Sete Povos das Missões para a Espanha, conforme o Tratado de Madri",
+            "D": "Revolta de bandeirantes contra a Coroa portuguesa",
+            "E": "Tentativa de independência das missões jesuíticas"
+          },
+          "correta": "C",
+          "explicacao": "O Tratado de Madri (1750) determinou que os Sete Povos das Missões (na atual região sul) passariam de Portugal para a Espanha, e os guaranis deveriam abandonar suas terras. Os guaranis, apoiados por jesuítas, resistiram e foram massacrados por forças conjuntas luso-espanholas.",
+          "dificuldade": "medio",
+          "tags": ["guerra guaranítica", "missões", "guaranis"]
+        },
+        {
+          "id": "q50-5",
+          "enunciado": "O Tratado de Tordesilhas (1494) estabelecia limites territoriais que foram amplamente ultrapassados pela colonização portuguesa porque:",
+          "alternativas": {
+            "A": "A Espanha autorizou formalmente a expansão portuguesa desde o início",
+            "B": "O tratado foi anulado logo após sua assinatura",
+            "C": "A ocupação efetiva por bandeirantes, missionários e criadores de gado avançou muito além da linha divisória",
+            "D": "Portugal conquistou a Espanha e unificou as Américas",
+            "E": "A linha de Tordesilhas passava pelo Oceano Pacífico"
+          },
+          "correta": "C",
+          "explicacao": "O Tratado de Tordesilhas limitava a América portuguesa ao litoral, mas bandeirantes (em busca de indígenas e ouro), missionários (nas regiões norte e sul) e criadores de gado (no sertão) ocuparam efetivamente territórios muito além dessa linha. O Tratado de Madri (1750) reconheceu essa ocupação.",
+          "dificuldade": "medio",
+          "tags": ["tordesilhas", "expansão", "fronteiras"]
+        }
+      ]
+    }
+  ]
+}

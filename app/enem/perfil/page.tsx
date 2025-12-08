@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
 import LeagueCard from '@/components/social/LeagueCard';
 import ShareButton from '@/components/social/ShareButton';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface UserProfile {
   id: string;
@@ -85,6 +86,7 @@ export default function PerfilPage() {
         justifyContent: 'center',
         background: 'var(--chalkboard-green)'
       }}>
+      <FloatingBackButton />
         <div style={{ textAlign: 'center' }}>
           <div style={{
             width: '48px',
@@ -113,6 +115,7 @@ export default function PerfilPage() {
       padding: '2rem 1rem',
       background: 'var(--chalkboard-green)'
     }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       <div style={{ paddingTop: '4rem' }}></div>

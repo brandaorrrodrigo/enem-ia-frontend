@@ -404,7 +404,7 @@ export function calcularResultado(simulado: SimuladoConfig): SimuladoResultado {
   const fim = simulado.fim ? new Date(simulado.fim) : new Date();
   const tempoMinutos = Math.round((fim.getTime() - inicio.getTime()) / 60000);
 
-  // Calcular FP (Focus Points) e pontos
+  // Calcular FP e pontos
   const fpBase = acertos * 10;
   const bonusTempo = tempoMinutos < (simulado.tempoLimite || 60) ? Math.round(fpBase * 0.1) : 0;
   const bonusNota = nota >= 70 ? Math.round(fpBase * 0.2) : 0;

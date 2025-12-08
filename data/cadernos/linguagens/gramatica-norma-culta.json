@@ -1,0 +1,1031 @@
+{
+  "id": "ling-002",
+  "slug": "gramatica-norma-culta",
+  "titulo": "Gramatica e Norma Culta",
+  "categoria": "linguagens",
+  "nivel": "Intermediario",
+  "descricao": "Domine os principais topicos de gramatica cobrados no ENEM.",
+  "icone": "📝",
+  "cor": "from-blue-500 to-indigo-500",
+  "tempoEstimado": "5h",
+  "fpRecompensa": 350,
+  "tags": ["gramatica", "norma-culta", "concordancia", "regencia", "enem"],
+  "modulos": [
+    {
+      "id": "m11",
+      "titulo": "Concordancia Verbal - Regras Fundamentais",
+      "resumo": "O verbo deve concordar em numero e pessoa com o sujeito da oracao.",
+      "topicos": [
+        "REGRA GERAL: Verbo concorda com o sujeito em numero e pessoa",
+        "SUJEITO COMPOSTO ANTES: Verbo no plural (Maria e Joao FORAM)",
+        "SUJEITO COMPOSTO DEPOIS: Verbo pode concordar com o mais proximo ou ir ao plural",
+        "SUJEITO COLETIVO: Verbo no singular (A multidao GRITOU)",
+        "SUJEITO COLETIVO + ESPECIFICADOR: Pode ir ao plural (A maioria dos alunos FALTOU/FALTARAM)",
+        "EXPRESSOES PARTITIVAS: 'A maioria de', 'grande parte de' → singular ou plural"
+      ],
+      "exemplos": [
+        "Os alunos ESTUDARAM muito. (sujeito plural → verbo plural)",
+        "CHEGARAM o professor e os alunos. (sujeito depois → concorda com mais proximo ou plural)",
+        "A turma COMEMOROU a vitoria. (coletivo → singular)",
+        "A maioria dos deputados VOTOU/VOTARAM a favor. (partitivo → ambos aceitos)"
+      ],
+      "dicas": [
+        "ENEM cobra casos especiais como sujeito posposto e expressoes partitivas",
+        "Identifique SEMPRE o sujeito antes de analisar a concordancia",
+        "Cuidado com sujeito distante do verbo - armadilha classica"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m11",
+          "enunciado": "Assinale a frase com concordancia verbal CORRETA:",
+          "alternativas": {
+            "A": "Fazem dois anos que nao o vejo.",
+            "B": "Houveram muitos problemas na reuniao.",
+            "C": "Existem vagas disponiveis para o curso.",
+            "D": "Aluga-se apartamentos neste predio.",
+            "E": "Haviam muitas pessoas na fila."
+          },
+          "correta": "C",
+          "explicacao": "'Existem vagas' esta correto - verbo EXISTIR concorda com sujeito 'vagas'. HAVER no sentido de existir e FAZER indicando tempo sao impessoais (singular). 'Alugam-se apartamentos' seria o correto.",
+          "dificuldade": "medio",
+          "tags": ["concordancia", "verbal"]
+        },
+        {
+          "id": "q2-m11",
+          "enunciado": "'A maioria dos estudantes _____ a prova.' Complete com a forma CORRETA:",
+          "alternativas": {
+            "A": "Apenas 'fez' esta correto",
+            "B": "Apenas 'fizeram' esta correto",
+            "C": "Tanto 'fez' quanto 'fizeram' estao corretos",
+            "D": "Nenhuma forma esta correta",
+            "E": "'Fazem' esta correto"
+          },
+          "correta": "C",
+          "explicacao": "Com expressoes partitivas (a maioria de, grande parte de), o verbo pode concordar com o nucleo da expressao (singular) ou com o especificador (plural). Ambas as formas sao aceitas.",
+          "dificuldade": "medio",
+          "tags": ["concordancia", "partitivo"]
+        },
+        {
+          "id": "q3-m11",
+          "enunciado": "'_____ varios candidatos para a vaga.' O verbo correto e:",
+          "alternativas": {
+            "A": "Havia",
+            "B": "Haviam",
+            "C": "Houveram",
+            "D": "Haveriam",
+            "E": "Ha de haver"
+          },
+          "correta": "A",
+          "explicacao": "HAVER no sentido de EXISTIR e impessoal - fica sempre no singular. 'Havia varios candidatos' (havia = existiam). Nunca use 'haviam' nesse sentido.",
+          "dificuldade": "facil",
+          "tags": ["concordancia", "haver"]
+        },
+        {
+          "id": "q4-m11",
+          "enunciado": "'_____ fazer tres meses que ela viajou.' Complete corretamente:",
+          "alternativas": {
+            "A": "Vao",
+            "B": "Vai",
+            "C": "Foram",
+            "D": "Fazem",
+            "E": "Faz"
+          },
+          "correta": "B",
+          "explicacao": "O verbo IR acompanhando FAZER (tempo) tambem fica no singular: 'VAI fazer tres meses'. FAZER indicando tempo e impessoal.",
+          "dificuldade": "medio",
+          "tags": ["concordancia", "fazer"]
+        },
+        {
+          "id": "q5-m11",
+          "enunciado": "'Vendem-se casas' ou 'Vende-se casas'. Qual esta correto?",
+          "alternativas": {
+            "A": "Apenas 'Vendem-se casas'",
+            "B": "Apenas 'Vende-se casas'",
+            "C": "Ambas estao corretas",
+            "D": "Nenhuma esta correta",
+            "E": "'Vende-se casa' seria o unico correto"
+          },
+          "correta": "A",
+          "explicacao": "Na voz passiva sintetica, o verbo concorda com o sujeito paciente. 'Casas' e sujeito, portanto 'VENDEM-se casas'. Casas sao vendidas.",
+          "dificuldade": "medio",
+          "tags": ["concordancia", "voz-passiva"]
+        }
+      ]
+    },
+    {
+      "id": "m12",
+      "titulo": "Concordancia Nominal",
+      "resumo": "Adjetivos, artigos, numerais e pronomes concordam com o substantivo.",
+      "topicos": [
+        "REGRA GERAL: Determinantes concordam com substantivo em genero e numero",
+        "ADJETIVO + SUBSTANTIVOS: Concorda com mais proximo ou vai ao masculino plural",
+        "SUBSTANTIVOS + ADJETIVO: Concorda com mais proximo ou masculino plural",
+        "E PROIBIDO/E NECESSARIO: Invariavel com sujeito sem artigo, variavel com artigo",
+        "BASTANTE/MEIO/MUITO: Adverbio (invariavel) ou adjetivo (variavel)",
+        "ANEXO/INCLUSO/OBRIGADO: Concordam com o substantivo"
+      ],
+      "exemplos": [
+        "Comprei camisa e calcas NOVAS/NOVOS. (concorda com proximo ou plural masc.)",
+        "E PROIBIDO entrada. / E PROIBIDA a entrada. (sem/com artigo)",
+        "Ela esta MEIO cansada. (adverbio = invariavel)",
+        "Seguem ANEXAS as fotos. (adjetivo = concorda)",
+        "Muito OBRIGADA, disse ela. (concorda com quem fala)"
+      ],
+      "dicas": [
+        "MEIO = adverbio (invariavel): 'Ela esta meio cansada'",
+        "MEIA = adjetivo (variavel): 'Tomei meia garrafa'",
+        "ENEM cobra muito 'E proibido/necessario' e 'anexo/obrigado'"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m12",
+          "enunciado": "'E _____ paciencia para lidar com criancas.' Complete corretamente:",
+          "alternativas": {
+            "A": "necessaria",
+            "B": "necessario",
+            "C": "necessarias",
+            "D": "necessarios",
+            "E": "Qualquer opcao esta correta"
+          },
+          "correta": "B",
+          "explicacao": "'E NECESSARIO paciencia' - quando o sujeito nao tem artigo, a expressao fica invariavel (masculino singular). Se fosse 'E necessariA A paciencia', teria artigo.",
+          "dificuldade": "medio",
+          "tags": ["concordancia", "nominal"]
+        },
+        {
+          "id": "q2-m12",
+          "enunciado": "'Seguem _____ os documentos solicitados.' A forma correta e:",
+          "alternativas": {
+            "A": "anexo",
+            "B": "anexos",
+            "C": "em anexo",
+            "D": "anexas",
+            "E": "Todas estao corretas"
+          },
+          "correta": "B",
+          "explicacao": "ANEXO e adjetivo e concorda com o substantivo. 'Documentos' e masculino plural, logo 'ANEXOS'. 'Em anexo' tambem e aceito como locucao adverbial invariavel.",
+          "dificuldade": "facil",
+          "tags": ["concordancia", "anexo"]
+        },
+        {
+          "id": "q3-m12",
+          "enunciado": "'Ela ficou _____ nervosa com a noticia.' Complete:",
+          "alternativas": {
+            "A": "meia",
+            "B": "meio",
+            "C": "meias",
+            "D": "meios",
+            "E": "uma meia"
+          },
+          "correta": "B",
+          "explicacao": "MEIO aqui e adverbio (= um pouco), modificando o adjetivo 'nervosa'. Advérbios sao invariaveis. 'Ela ficou MEIO nervosa' = um pouco nervosa.",
+          "dificuldade": "facil",
+          "tags": ["concordancia", "meio"]
+        },
+        {
+          "id": "q4-m12",
+          "enunciado": "Uma mulher, ao agradecer, deve dizer:",
+          "alternativas": {
+            "A": "Muito obrigado",
+            "B": "Muito obrigada",
+            "C": "Muito obrigados",
+            "D": "Muita obrigada",
+            "E": "Tanto 'obrigado' quanto 'obrigada'"
+          },
+          "correta": "B",
+          "explicacao": "OBRIGADO e adjetivo e concorda com quem fala. Mulher diz 'obrigadA', homem diz 'obrigadO'. 'Muito' aqui e adverbio (intensificador), entao e invariavel.",
+          "dificuldade": "facil",
+          "tags": ["concordancia", "obrigado"]
+        },
+        {
+          "id": "q5-m12",
+          "enunciado": "'Encontrei camisas e sapatos _____ na loja.' A concordancia correta permite:",
+          "alternativas": {
+            "A": "Apenas 'baratos'",
+            "B": "Apenas 'baratas'",
+            "C": "'baratos' ou 'baratas'",
+            "D": "Apenas 'barato'",
+            "E": "'baratos', 'baratas' ou 'barato'"
+          },
+          "correta": "C",
+          "explicacao": "Adjetivo apos substantivos de generos diferentes pode concordar com o mais proximo (baratAS - camisas) ou ir ao masculino plural (baratOS). Ambas corretas.",
+          "dificuldade": "medio",
+          "tags": ["concordancia", "nominal"]
+        }
+      ]
+    },
+    {
+      "id": "m13",
+      "titulo": "Regencia Verbal",
+      "resumo": "Estude a relacao entre verbos e seus complementos (com ou sem preposicao).",
+      "topicos": [
+        "REGENCIA: Relacao de dependencia entre verbo/nome e seu complemento",
+        "VERBO TRANSITIVO DIRETO (VTD): Nao exige preposicao (Eu VI o filme)",
+        "VERBO TRANSITIVO INDIRETO (VTI): Exige preposicao (Eu GOSTO DE voce)",
+        "VERBO TRANSITIVO DIRETO E INDIRETO (VTDI): Dois complementos",
+        "VERBOS PROBLEMATICOS: Assistir, visar, aspirar, obedecer, preferir",
+        "MUDANCA DE SENTIDO: Alguns verbos mudam de sentido conforme a regencia"
+      ],
+      "exemplos": [
+        "ASSISTIR ao filme (VTI - ver) / ASSISTIR o doente (VTD - ajudar)",
+        "ASPIRAR o ar (VTD - respirar) / ASPIRAR ao cargo (VTI - desejar)",
+        "VISAR o alvo (VTD - mirar) / VISAR ao sucesso (VTI - almejar)",
+        "PREFERIR cafe A cha (e nao 'do que')",
+        "OBEDECER ao regulamento (sempre VTI)"
+      ],
+      "dicas": [
+        "ASSISTIR (ver) = preposicao A: 'Assisti AO jogo'",
+        "PREFERIR = A (e nao 'do que'): 'Prefiro cafe A cha'",
+        "ENEM cobra muito ASSISTIR, VISAR, ASPIRAR e PREFERIR"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m13",
+          "enunciado": "Assinale a regencia verbal CORRETA:",
+          "alternativas": {
+            "A": "Assistimos o filme ontem a noite.",
+            "B": "Prefiro mais cafe do que cha.",
+            "C": "Ele aspira ao cargo de diretor.",
+            "D": "Ela namora com o Pedro.",
+            "E": "Eu obedeco o regulamento."
+          },
+          "correta": "C",
+          "explicacao": "'ASPIRAR AO cargo' (desejar) exige preposicao A. Assistir filme = AO filme; Preferir = A (nao 'do que'); Namorar = sem preposicao; Obedecer = AO.",
+          "dificuldade": "medio",
+          "tags": ["regencia", "verbal"]
+        },
+        {
+          "id": "q2-m13",
+          "enunciado": "'Os alunos _____ as regras da escola.' Complete com regencia correta:",
+          "alternativas": {
+            "A": "obedeceram",
+            "B": "obedeceram as",
+            "C": "obedeceram as",
+            "D": "obedeceram a",
+            "E": "obedeceram a + as = as"
+          },
+          "correta": "E",
+          "explicacao": "OBEDECER e VTI - exige preposicao A. 'Obedecer A + as regras' = 'Obedecer AS regras' (crase obrigatoria: A + as = as).",
+          "dificuldade": "medio",
+          "tags": ["regencia", "obedecer"]
+        },
+        {
+          "id": "q3-m13",
+          "enunciado": "'Prefiro estudar _____ trabalhar.' A forma correta e:",
+          "alternativas": {
+            "A": "do que",
+            "B": "que",
+            "C": "a",
+            "D": "de",
+            "E": "'do que' ou 'a'"
+          },
+          "correta": "C",
+          "explicacao": "PREFERIR exige a preposicao A, e nao 'do que' ou 'que'. 'Prefiro X A Y'. 'Prefiro estudar A trabalhar'.",
+          "dificuldade": "facil",
+          "tags": ["regencia", "preferir"]
+        },
+        {
+          "id": "q4-m13",
+          "enunciado": "'O medico _____ o paciente durante a cirurgia.' O verbo ASSISTIR aqui significa:",
+          "alternativas": {
+            "A": "Ver - exige preposicao A",
+            "B": "Ajudar/socorrer - nao exige preposicao",
+            "C": "Morar - exige preposicao EM",
+            "D": "Pertencer - exige preposicao A",
+            "E": "Caber - nao exige preposicao"
+          },
+          "correta": "B",
+          "explicacao": "ASSISTIR = ajudar/socorrer e VTD (sem preposicao): 'assistir o paciente'. ASSISTIR = ver/presenciar e VTI: 'assistir AO filme'.",
+          "dificuldade": "medio",
+          "tags": ["regencia", "assistir"]
+        },
+        {
+          "id": "q5-m13",
+          "enunciado": "'Ele visa _____ promocao.' Complete corretamente:",
+          "alternativas": {
+            "A": "a",
+            "B": "a (crase)",
+            "C": "na",
+            "D": "pela",
+            "E": "com a"
+          },
+          "correta": "B",
+          "explicacao": "VISAR no sentido de 'almejar/desejar' e VTI com preposicao A. 'Visar A + a promocao' = 'Visar A promocao' (crase obrigatoria).",
+          "dificuldade": "medio",
+          "tags": ["regencia", "visar", "crase"]
+        }
+      ]
+    },
+    {
+      "id": "m14",
+      "titulo": "Crase",
+      "resumo": "Entenda quando usar o acento grave indicativo de crase.",
+      "topicos": [
+        "CRASE: Fusao da preposicao A com artigo A ou pronome demonstrativo",
+        "OCORRE: Preposicao A + artigo A (feminino) = A",
+        "NUNCA OCORRE: Antes de masculino, verbo, pronomes em geral, palavras repetidas",
+        "CASOS ESPECIAIS: Horas, locucoes femininas, nomes de lugares",
+        "FACULTATIVA: Antes de pronomes possessivos femininos e nomes proprios femininos",
+        "DICA DE SUBSTITUICAO: Troque por 'ao' - se funcionar, ha crase"
+      ],
+      "exemplos": [
+        "Fui A escola. (Fui AO colegio → crase)",
+        "Refiro-me A aluna. (Refiro-me AO aluno → crase)",
+        "Cheguei as 8 horas. (horas → crase obrigatoria)",
+        "Vou a Roma. (sem artigo) / Vou a Roma antiga. (com artigo → crase)",
+        "Fiz a prova a caneta. (locucao adverbial feminina → crase)"
+      ],
+      "dicas": [
+        "MACETE: Substitua A por AO. Se couber AO, use crase.",
+        "Antes de HORAS: sempre crase (as 10h, a meia-noite)",
+        "Locucoes femininas: a mao, a vista, as pressas, a noite → crase"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m14",
+          "enunciado": "'Entregarei o relatorio ___ diretora amanha.' Usa-se crase?",
+          "alternativas": {
+            "A": "Nao, pois 'diretora' e pessoa",
+            "B": "Sim, pois ha preposicao A + artigo A",
+            "C": "Nao, pois o verbo e transitivo direto",
+            "D": "Sim, pois e antes de hora",
+            "E": "Facultativo neste caso"
+          },
+          "correta": "B",
+          "explicacao": "Entregar algo A alguem (VTI). 'Entregar A + a diretora' = 'A diretora'. Teste: 'Entregarei AO diretor' funciona, logo ha crase.",
+          "dificuldade": "facil",
+          "tags": ["crase", "regra"]
+        },
+        {
+          "id": "q2-m14",
+          "enunciado": "'A reuniao comecara ___ 14 horas.' Quanto a crase:",
+          "alternativas": {
+            "A": "Nao se usa antes de numeros",
+            "B": "E facultativa antes de horas",
+            "C": "E obrigatoria antes de horas definidas",
+            "D": "Depende do contexto",
+            "E": "Nunca se usa com horas"
+          },
+          "correta": "C",
+          "explicacao": "Antes de HORAS DEFINIDAS, a crase e OBRIGATORIA: 'as 14 horas', 'a meia-noite', 'as 8h'. E uma regra especial.",
+          "dificuldade": "facil",
+          "tags": ["crase", "horas"]
+        },
+        {
+          "id": "q3-m14",
+          "enunciado": "'Fui ___ Paris.' Usa-se crase?",
+          "alternativas": {
+            "A": "Sim, sempre antes de cidades",
+            "B": "Nao, pois Paris nao admite artigo",
+            "C": "Sim, pois e lugar",
+            "D": "Facultativo",
+            "E": "Sim, por ser nome proprio"
+          },
+          "correta": "B",
+          "explicacao": "Nomes de lugares que NAO admitem artigo nao tem crase. 'Fui a Paris' (Voltei DE Paris). Se fosse 'Paris das luzes' (com especificador), teria artigo e crase.",
+          "dificuldade": "medio",
+          "tags": ["crase", "lugares"]
+        },
+        {
+          "id": "q4-m14",
+          "enunciado": "'Comprei o carro ___ vista.' A crase e:",
+          "alternativas": {
+            "A": "Proibida",
+            "B": "Obrigatoria (locucao adverbial feminina)",
+            "C": "Facultativa",
+            "D": "Depende do contexto",
+            "E": "Opcional na linguagem informal"
+          },
+          "correta": "B",
+          "explicacao": "Locucoes adverbiais femininas levam crase: 'a vista', 'a noite', 'as pressas', 'a mao', 'a toa'. E regra, nao excecao.",
+          "dificuldade": "facil",
+          "tags": ["crase", "locucao"]
+        },
+        {
+          "id": "q5-m14",
+          "enunciado": "'Refiro-me ___ sua proposta.' A crase e:",
+          "alternativas": {
+            "A": "Obrigatoria",
+            "B": "Proibida",
+            "C": "Facultativa (pronome possessivo feminino)",
+            "D": "Errada gramaticalmente",
+            "E": "Depende da regiao"
+          },
+          "correta": "C",
+          "explicacao": "Antes de PRONOMES POSSESSIVOS FEMININOS (sua, minha, nossa), a crase e FACULTATIVA. 'Refiro-me a sua proposta' ou 'Refiro-me a sua proposta'.",
+          "dificuldade": "medio",
+          "tags": ["crase", "facultativa"]
+        }
+      ]
+    },
+    {
+      "id": "m15",
+      "titulo": "Pontuacao - Virgula",
+      "resumo": "Domine o uso da virgula, o sinal de pontuacao mais cobrado no ENEM.",
+      "topicos": [
+        "SEPARA ELEMENTOS DE ENUMERACAO: 'Comprei banana, maca, uva.'",
+        "ISOLA APOSTO EXPLICATIVO: 'Machado de Assis, grande escritor, nasceu no Rio.'",
+        "ISOLA VOCATIVO: 'Maria, venha aqui!'",
+        "ISOLA ADJUNTO ADVERBIAL DESLOCADO: 'Ontem, fui ao cinema.'",
+        "SEPARA ORACOES COORDENADAS: 'Estudou muito, mas nao passou.'",
+        "NUNCA SEPARA: Sujeito do verbo, verbo do complemento"
+      ],
+      "exemplos": [
+        "ENUMERACAO: 'Ela fala ingles, espanhol, frances e italiano.'",
+        "APOSTO: 'O Brasil, maior pais da America do Sul, tem muita diversidade.'",
+        "VOCATIVO: 'Professor, posso fazer uma pergunta?'",
+        "ADJUNTO DESLOCADO: 'No ano passado, viajamos para a Europa.'",
+        "ERRO: 'O menino, foi ao parque.' (virgula separando sujeito do verbo)"
+      ],
+      "dicas": [
+        "NUNCA coloque virgula entre sujeito e verbo!",
+        "Adjunto adverbial NO INICIO = virgula; NO FIM = opcional",
+        "Vocativo SEMPRE isolado por virgula"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m15",
+          "enunciado": "Qual frase esta com a virgula usada CORRETAMENTE?",
+          "alternativas": {
+            "A": "O professor, explicou a materia.",
+            "B": "Maria gosta de, estudar matematica.",
+            "C": "Joao, meu melhor amigo, viajou ontem.",
+            "D": "Eu comprei, banana maca e uva.",
+            "E": "Ela disse, que viria."
+          },
+          "correta": "C",
+          "explicacao": "'Meu melhor amigo' e um APOSTO EXPLICATIVO, que deve ser isolado por virgulas. As outras opcoes separam sujeito de verbo ou verbo de complemento, o que e erro.",
+          "dificuldade": "facil",
+          "tags": ["pontuacao", "virgula"]
+        },
+        {
+          "id": "q2-m15",
+          "enunciado": "'No ultimo sabado fui ao cinema com meus amigos.' A virgula deve ser colocada:",
+          "alternativas": {
+            "A": "Apos 'sabado' (adjunto adverbial deslocado)",
+            "B": "Apos 'cinema'",
+            "C": "Apos 'fui'",
+            "D": "Nao precisa de virgula",
+            "E": "Apos 'ultimo'"
+          },
+          "correta": "A",
+          "explicacao": "Adjunto adverbial deslocado para o inicio da frase deve ser seguido de virgula: 'No ultimo sabado, fui ao cinema...'",
+          "dificuldade": "facil",
+          "tags": ["pontuacao", "adjunto"]
+        },
+        {
+          "id": "q3-m15",
+          "enunciado": "'Criancas venham almocar!' A pontuacao correta e:",
+          "alternativas": {
+            "A": "Criancas venham, almocar!",
+            "B": "Criancas, venham almocar!",
+            "C": "Criancas venham almocar,!",
+            "D": "Esta correta como apresentada",
+            "E": ",Criancas venham almocar!"
+          },
+          "correta": "B",
+          "explicacao": "'Criancas' e VOCATIVO (chamamento), que SEMPRE deve ser isolado por virgula: 'Criancas, venham almocar!'",
+          "dificuldade": "facil",
+          "tags": ["pontuacao", "vocativo"]
+        },
+        {
+          "id": "q4-m15",
+          "enunciado": "E INCORRETO usar virgula para separar:",
+          "alternativas": {
+            "A": "Elementos de uma enumeracao",
+            "B": "Sujeito do verbo",
+            "C": "Aposto explicativo",
+            "D": "Oracoes coordenadas",
+            "E": "Adjunto adverbial deslocado"
+          },
+          "correta": "B",
+          "explicacao": "NUNCA se separa sujeito do verbo com virgula. 'O menino foi ao parque.' (correto) / 'O menino, foi ao parque.' (incorreto)",
+          "dificuldade": "facil",
+          "tags": ["pontuacao", "regra"]
+        },
+        {
+          "id": "q5-m15",
+          "enunciado": "'Estudou muito mas nao passou.' A virgula e:",
+          "alternativas": {
+            "A": "Proibida antes de 'mas'",
+            "B": "Obrigatoria antes de 'mas'",
+            "C": "Facultativa antes de 'mas'",
+            "D": "Deve vir depois de 'mas'",
+            "E": "Depende do contexto"
+          },
+          "correta": "B",
+          "explicacao": "Antes de conjuncoes adversativas (mas, porem, contudo) que iniciam oracao coordenada, a virgula e OBRIGATORIA: 'Estudou muito, mas nao passou.'",
+          "dificuldade": "medio",
+          "tags": ["pontuacao", "conjuncao"]
+        }
+      ]
+    },
+    {
+      "id": "m16",
+      "titulo": "Pontuacao - Outros Sinais",
+      "resumo": "Conheca o uso de ponto e virgula, dois-pontos, travessao e aspas.",
+      "topicos": [
+        "PONTO E VIRGULA: Separa itens de enumeracao complexa; oracoes coordenadas longas",
+        "DOIS-PONTOS: Introduz citacao, enumeracao, explicacao, fala de personagem",
+        "TRAVESSAO: Isola aposto/comentario; indica fala em dialogos; da enfase",
+        "ASPAS: Citacao literal; ironia; palavras estrangeiras; titulos",
+        "PARENTESES: Informacao adicional/explicativa; podem ser substituidos por travessoes",
+        "RETICENCIAS: Interrupcao; hesitacao; continuidade implicita"
+      ],
+      "exemplos": [
+        "PONTO E VIRGULA: 'Comprei frutas: banana, maca; legumes: cenoura, brocolis.'",
+        "DOIS-PONTOS: 'Ele disse: \"Vou sair.\"' / 'Preciso de: papel, caneta e borracha.'",
+        "TRAVESSAO: 'O Brasil — maior pais da America do Sul — tem muita diversidade.'",
+        "ASPAS: 'O \"jeitinho brasileiro\" e cultural.' (ironia/destaque)"
+      ],
+      "dicas": [
+        "TRAVESSAO pode substituir virgulas em apostos (da mais enfase)",
+        "DOIS-PONTOS introduz o que vem a seguir (explicacao, lista, fala)",
+        "ENEM cobra muito a funcao dos sinais, nao so identificacao"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m16",
+          "enunciado": "Os dois-pontos podem ser usados para:",
+          "alternativas": {
+            "A": "Apenas separar oracoes coordenadas",
+            "B": "Introduzir citacao, enumeracao ou explicacao",
+            "C": "Substituir a virgula em qualquer contexto",
+            "D": "Apenas em dialogos",
+            "E": "Indicar hesitacao do falante"
+          },
+          "correta": "B",
+          "explicacao": "Os DOIS-PONTOS introduzem o que vem a seguir: citacoes diretas, enumeracoes, explicacoes, fala de personagem. Anunciam uma sequencia.",
+          "dificuldade": "facil",
+          "tags": ["pontuacao", "dois-pontos"]
+        },
+        {
+          "id": "q2-m16",
+          "enunciado": "O TRAVESSAO pode exercer a mesma funcao de:",
+          "alternativas": {
+            "A": "Ponto final",
+            "B": "Virgula (isolando apostos) e parenteses",
+            "C": "Dois-pontos apenas",
+            "D": "Ponto e virgula",
+            "E": "Aspas"
+          },
+          "correta": "B",
+          "explicacao": "O TRAVESSAO pode isolar apostos/comentarios (funcao da virgula) e informacoes adicionais (funcao dos parenteses), conferindo mais destaque.",
+          "dificuldade": "medio",
+          "tags": ["pontuacao", "travessao"]
+        },
+        {
+          "id": "q3-m16",
+          "enunciado": "'Ele disse que o filme era \"maravilhoso\", mas nao gostou.' As aspas indicam:",
+          "alternativas": {
+            "A": "Citacao de outro autor",
+            "B": "Titulo de obra",
+            "C": "Ironia ou destaque",
+            "D": "Palavra estrangeira",
+            "E": "Erro proposital"
+          },
+          "correta": "C",
+          "explicacao": "As ASPAS em 'maravilhoso' indicam IRONIA - ele disse que era maravilhoso mas nao gostou, entao nao achou realmente maravilhoso.",
+          "dificuldade": "medio",
+          "tags": ["pontuacao", "aspas"]
+        },
+        {
+          "id": "q4-m16",
+          "enunciado": "O ponto e virgula e adequado para:",
+          "alternativas": {
+            "A": "Introduzir fala de personagem",
+            "B": "Separar itens de enumeracao complexa",
+            "C": "Isolar vocativo",
+            "D": "Indicar ironia",
+            "E": "Introduzir citacao direta"
+          },
+          "correta": "B",
+          "explicacao": "O PONTO E VIRGULA separa itens de ENUMERACAO COMPLEXA (quando os itens ja tem virgulas internas) e oracoes coordenadas longas.",
+          "dificuldade": "medio",
+          "tags": ["pontuacao", "ponto-virgula"]
+        },
+        {
+          "id": "q5-m16",
+          "enunciado": "As RETICENCIAS indicam:",
+          "alternativas": {
+            "A": "Final definitivo da frase",
+            "B": "Erro de digitacao",
+            "C": "Interrupcao, hesitacao ou continuidade implicita",
+            "D": "Citacao de autor",
+            "E": "Inicio de paragrafo"
+          },
+          "correta": "C",
+          "explicacao": "RETICENCIAS (...) indicam interrupcao do pensamento, hesitacao, suspensao, ou sugerem que algo mais poderia ser dito (continuidade implicita).",
+          "dificuldade": "facil",
+          "tags": ["pontuacao", "reticencias"]
+        }
+      ]
+    },
+    {
+      "id": "m17",
+      "titulo": "Colocacao Pronominal",
+      "resumo": "Saiba quando usar proclise, mesoclise e enclise.",
+      "topicos": [
+        "PROCLISE: Pronome ANTES do verbo (Ela ME viu)",
+        "ENCLISE: Pronome DEPOIS do verbo (Viu-ME)",
+        "MESOCLISE: Pronome NO MEIO do verbo - futuro (Ver-ME-a)",
+        "FATORES DE PROCLISE: Palavras negativas, advérbios, pronomes relativos/indefinidos, conjuncoes subordinativas",
+        "ENCLISE OBRIGATORIA: Inicio de frase, apos pausa, imperativo afirmativo",
+        "PROIBIDO: Comecar frase com pronome obliquo atono"
+      ],
+      "exemplos": [
+        "PROCLISE: 'Nao ME disseram nada.' (palavra negativa atrai)",
+        "PROCLISE: 'Tudo SE resolve.' (pronome indefinido atrai)",
+        "ENCLISE: 'Disseram-ME a verdade.' (inicio de frase)",
+        "MESOCLISE: 'Dir-LHE-ei a verdade.' (futuro do presente)"
+      ],
+      "dicas": [
+        "MACETE: Palavra negativa, adverbio, 'que' → pronome ANTES (proclise)",
+        "NUNCA comece frase com: me, te, se, o, a, lhe, nos, vos",
+        "No Brasil falado, proclise predomina; na escrita formal, enclise"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m17",
+          "enunciado": "'Ninguem ___ viu na festa.' A colocacao correta e:",
+          "alternativas": {
+            "A": "viu-o",
+            "B": "o viu",
+            "C": "viu-lhe",
+            "D": "lhe viu",
+            "E": "ver-o-ia"
+          },
+          "correta": "B",
+          "explicacao": "'Ninguem' e pronome indefinido negativo, que ATRAI o pronome para antes do verbo (proclise). 'Ninguem O viu.'",
+          "dificuldade": "facil",
+          "tags": ["colocacao", "proclise"]
+        },
+        {
+          "id": "q2-m17",
+          "enunciado": "'___ disseram que voce viria.' Qual alternativa preenche corretamente?",
+          "alternativas": {
+            "A": "Me",
+            "B": "Disseram-me",
+            "C": "Mim",
+            "D": "Eu",
+            "E": "Nenhuma esta correta"
+          },
+          "correta": "B",
+          "explicacao": "Nao se inicia frase com pronome obliquo atono (me, te, se...). No inicio da frase, usa-se ENCLISE: 'Disseram-me que...'",
+          "dificuldade": "medio",
+          "tags": ["colocacao", "enclise"]
+        },
+        {
+          "id": "q3-m17",
+          "enunciado": "A palavra 'nao' exige que o pronome fique:",
+          "alternativas": {
+            "A": "Depois do verbo (enclise)",
+            "B": "Antes do verbo (proclise)",
+            "C": "No meio do verbo (mesoclise)",
+            "D": "Tanto antes quanto depois",
+            "E": "Depende do tempo verbal"
+          },
+          "correta": "B",
+          "explicacao": "Palavras NEGATIVAS (nao, nunca, jamais, ninguem) sao FATORES DE PROCLISE - atraem o pronome para antes do verbo. 'Nao ME disse nada.'",
+          "dificuldade": "facil",
+          "tags": ["colocacao", "proclise"]
+        },
+        {
+          "id": "q4-m17",
+          "enunciado": "'Emprestar-___ o livro amanha.' A forma correta para futuro e:",
+          "alternativas": {
+            "A": "Emprestar-lhe-ia",
+            "B": "Emprestaria-lhe",
+            "C": "Lhe emprestaria",
+            "D": "Emprestar-lhe-ei",
+            "E": "Emprestarlheei"
+          },
+          "correta": "D",
+          "explicacao": "Com verbos no FUTURO (presente ou preterito), usa-se MESOCLISE: o pronome vai NO MEIO. Emprestar + lhe + ei = 'Emprestar-LHE-ei'.",
+          "dificuldade": "medio",
+          "tags": ["colocacao", "mesoclise"]
+        },
+        {
+          "id": "q5-m17",
+          "enunciado": "Qual frase tem colocacao pronominal INCORRETA?",
+          "alternativas": {
+            "A": "Nao me contaram a verdade.",
+            "B": "Disseram-me a verdade.",
+            "C": "Me disseram a verdade.",
+            "D": "Alguem me contou isso.",
+            "E": "Tudo se resolve com dialogo."
+          },
+          "correta": "C",
+          "explicacao": "'Me disseram' esta INCORRETO na norma culta - nao se inicia frase com pronome obliquo atono. O correto e 'Disseram-me' (enclise no inicio).",
+          "dificuldade": "facil",
+          "tags": ["colocacao", "erro"]
+        }
+      ]
+    },
+    {
+      "id": "m18",
+      "titulo": "Vozes Verbais",
+      "resumo": "Entenda voz ativa, passiva e reflexiva e suas transformacoes.",
+      "topicos": [
+        "VOZ ATIVA: Sujeito pratica a acao (O aluno FEZ a prova)",
+        "VOZ PASSIVA ANALITICA: Sujeito sofre a acao (A prova FOI FEITA pelo aluno)",
+        "VOZ PASSIVA SINTETICA: Verbo + SE (Fez-SE a prova / Fizeram-SE as provas)",
+        "VOZ REFLEXIVA: Sujeito pratica e sofre a acao (Ela SE machucou)",
+        "TRANSFORMACAO: Ativa → Passiva (OD vira sujeito, sujeito vira agente da passiva)",
+        "AGENTE DA PASSIVA: Introduzido por 'por/pelo' na voz passiva"
+      ],
+      "exemplos": [
+        "ATIVA: 'O governo aprovou a lei.'",
+        "PASSIVA ANALITICA: 'A lei foi aprovada pelo governo.'",
+        "PASSIVA SINTETICA: 'Aprovou-se a lei.' / 'Aprovaram-se as leis.'",
+        "REFLEXIVA: 'O menino se cortou com a faca.'"
+      ],
+      "dicas": [
+        "Na passiva sintetica, o verbo concorda com o sujeito paciente",
+        "ENEM pede para identificar a voz ou transformar entre elas",
+        "Nem todo SE indica passiva - pode ser reflexivo ou indice de indeterminacao"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m18",
+          "enunciado": "'Os documentos foram assinados pelo diretor.' Esta frase esta na voz:",
+          "alternativas": {
+            "A": "Ativa",
+            "B": "Passiva analitica",
+            "C": "Passiva sintetica",
+            "D": "Reflexiva",
+            "E": "Reciproca"
+          },
+          "correta": "B",
+          "explicacao": "VOZ PASSIVA ANALITICA usa verbo SER + PARTICIPIO: 'foram assinados'. O sujeito 'documentos' sofre a acao; 'pelo diretor' e o agente da passiva.",
+          "dificuldade": "facil",
+          "tags": ["vozes", "passiva"]
+        },
+        {
+          "id": "q2-m18",
+          "enunciado": "Transforme para a voz passiva: 'O cientista descobriu a formula.'",
+          "alternativas": {
+            "A": "A formula foi descoberta pelo cientista.",
+            "B": "Descobriu-se o cientista.",
+            "C": "O cientista foi descoberto.",
+            "D": "A formula descobriu o cientista.",
+            "E": "Descoberta foi a formula."
+          },
+          "correta": "A",
+          "explicacao": "Na transformacao: OD (formula) vira sujeito; verbo vai para SER + participio (foi descoberta); sujeito (cientista) vira agente da passiva (pelo cientista).",
+          "dificuldade": "medio",
+          "tags": ["vozes", "transformacao"]
+        },
+        {
+          "id": "q3-m18",
+          "enunciado": "'Vendem-se apartamentos.' A classificacao desta voz e:",
+          "alternativas": {
+            "A": "Voz ativa",
+            "B": "Voz passiva analitica",
+            "C": "Voz passiva sintetica",
+            "D": "Voz reflexiva",
+            "E": "Voz reciproca"
+          },
+          "correta": "C",
+          "explicacao": "VOZ PASSIVA SINTETICA usa verbo + SE (pronome apassivador). 'Apartamentos' e sujeito paciente, por isso o verbo vai ao plural: 'Vendem-se apartamentos'.",
+          "dificuldade": "medio",
+          "tags": ["vozes", "sintetica"]
+        },
+        {
+          "id": "q4-m18",
+          "enunciado": "'Maria se maquiou para a festa.' A voz verbal e:",
+          "alternativas": {
+            "A": "Ativa",
+            "B": "Passiva analitica",
+            "C": "Passiva sintetica",
+            "D": "Reflexiva",
+            "E": "Reciproca"
+          },
+          "correta": "D",
+          "explicacao": "VOZ REFLEXIVA: o sujeito pratica E sofre a acao simultaneamente. Maria maquiou a si mesma. O SE e pronome reflexivo.",
+          "dificuldade": "facil",
+          "tags": ["vozes", "reflexiva"]
+        },
+        {
+          "id": "q5-m18",
+          "enunciado": "Na voz passiva, o termo introduzido por 'por/pelo' chama-se:",
+          "alternativas": {
+            "A": "Sujeito",
+            "B": "Objeto direto",
+            "C": "Objeto indireto",
+            "D": "Agente da passiva",
+            "E": "Adjunto adverbial"
+          },
+          "correta": "D",
+          "explicacao": "O AGENTE DA PASSIVA e quem pratica a acao na voz passiva, introduzido por 'por/pelo'. E o sujeito da voz ativa transformado.",
+          "dificuldade": "facil",
+          "tags": ["vozes", "agente"]
+        }
+      ]
+    },
+    {
+      "id": "m19",
+      "titulo": "Conectivos e Relacoes Logicas",
+      "resumo": "Domine os conectivos e as relacoes de sentido que estabelecem.",
+      "topicos": [
+        "ADICAO: e, nem, tambem, alem disso, bem como",
+        "OPOSICAO/ADVERSIDADE: mas, porem, contudo, entretanto, todavia, no entanto",
+        "CAUSA: porque, pois, ja que, uma vez que, visto que",
+        "CONSEQUENCIA: logo, portanto, assim, por isso, de modo que",
+        "CONDICAO: se, caso, desde que, contanto que",
+        "CONCESSAO: embora, apesar de, ainda que, mesmo que"
+      ],
+      "exemplos": [
+        "ADICAO: 'Estudou E trabalhou.' / 'Nao come NEM bebe.'",
+        "OPOSICAO: 'Estudou, MAS nao passou.'",
+        "CAUSA: 'Faltou PORQUE estava doente.'",
+        "CONSEQUENCIA: 'Estudou muito, PORTANTO passou.'",
+        "CONDICAO: 'SE estudar, passara.'",
+        "CONCESSAO: 'EMBORA tenha estudado, nao passou.'"
+      ],
+      "dicas": [
+        "CAUSA responde 'por que?'; CONSEQUENCIA responde 'qual o resultado?'",
+        "CONCESSAO = fato que deveria impedir, mas nao impediu",
+        "ENEM pede para substituir conectivos mantendo o sentido"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m19",
+          "enunciado": "'Estudou muito; _____, nao passou.' O conectivo adequado e:",
+          "alternativas": {
+            "A": "porque",
+            "B": "portanto",
+            "C": "entretanto",
+            "D": "assim",
+            "E": "logo"
+          },
+          "correta": "C",
+          "explicacao": "Ha OPOSICAO entre estudar muito e nao passar (resultado inesperado). 'Entretanto' e conectivo adversativo (assim como mas, porem, contudo).",
+          "dificuldade": "facil",
+          "tags": ["conectivos", "oposicao"]
+        },
+        {
+          "id": "q2-m19",
+          "enunciado": "'_____ estudasse, nao conseguiria passar.' O conectivo que indica CONCESSAO e:",
+          "alternativas": {
+            "A": "Se",
+            "B": "Porque",
+            "C": "Ainda que",
+            "D": "Quando",
+            "E": "Ja que"
+          },
+          "correta": "C",
+          "explicacao": "'Ainda que' indica CONCESSAO - apresenta um fato que, apesar de existir, nao impede o resultado. Mesmo estudando, nao passaria.",
+          "dificuldade": "medio",
+          "tags": ["conectivos", "concessao"]
+        },
+        {
+          "id": "q3-m19",
+          "enunciado": "A relacao entre 'Choveu muito' e 'a rua alagou' e de:",
+          "alternativas": {
+            "A": "Oposicao",
+            "B": "Causa e consequencia",
+            "C": "Concessao",
+            "D": "Condicao",
+            "E": "Adicao"
+          },
+          "correta": "B",
+          "explicacao": "'Choveu muito' e a CAUSA; 'a rua alagou' e a CONSEQUENCIA. Um fato provoca o outro. Poderia ser: 'Choveu muito, por isso a rua alagou.'",
+          "dificuldade": "facil",
+          "tags": ["conectivos", "causa"]
+        },
+        {
+          "id": "q4-m19",
+          "enunciado": "'Se voce estudar, passara.' A relacao expressa e de:",
+          "alternativas": {
+            "A": "Causa",
+            "B": "Consequencia",
+            "C": "Condicao",
+            "D": "Concessao",
+            "E": "Tempo"
+          },
+          "correta": "C",
+          "explicacao": "'Se' introduz CONDICAO - apresenta uma hipotese da qual depende a realizacao de outra acao. Estudar e condicao para passar.",
+          "dificuldade": "facil",
+          "tags": ["conectivos", "condicao"]
+        },
+        {
+          "id": "q5-m19",
+          "enunciado": "Qual conectivo pode substituir 'portanto' mantendo o sentido?",
+          "alternativas": {
+            "A": "Mas",
+            "B": "Porque",
+            "C": "Embora",
+            "D": "Logo",
+            "E": "Quando"
+          },
+          "correta": "D",
+          "explicacao": "'Portanto' e conectivo CONCLUSIVO (indica consequencia/conclusao). 'Logo' tem o mesmo valor: 'Estudou, PORTANTO/LOGO passou.'",
+          "dificuldade": "facil",
+          "tags": ["conectivos", "conclusao"]
+        }
+      ]
+    },
+    {
+      "id": "m20",
+      "titulo": "Semantica - Sinonimia, Antonimia e Polissemia",
+      "resumo": "Estude as relacoes de sentido entre as palavras.",
+      "topicos": [
+        "SINONIMIA: Palavras com sentidos semelhantes (casa/residencia, belo/bonito)",
+        "ANTONIMIA: Palavras com sentidos opostos (bom/mau, claro/escuro)",
+        "POLISSEMIA: Uma palavra com varios sentidos (manga: fruta ou parte da roupa)",
+        "HOMONIMIA: Palavras iguais na forma, diferentes na origem (banco: assento/instituicao)",
+        "PARONIMIA: Palavras parecidas na forma (iminente/eminente, comprimento/cumprimento)",
+        "DENOTACAO: Sentido literal / CONOTACAO: Sentido figurado"
+      ],
+      "exemplos": [
+        "SINONIMOS: feliz/contente, rapido/veloz, casa/lar",
+        "ANTONIMOS: alto/baixo, rico/pobre, amor/odio",
+        "POLISSEMIA: 'pe' = parte do corpo, base de objeto, unidade de medida",
+        "PARONIMOS: 'ratificar' (confirmar) / 'retificar' (corrigir)"
+      ],
+      "dicas": [
+        "ENEM pede para substituir palavras por sinonimos no contexto",
+        "Cuidado com PARONIMOS - palavras parecidas com sentidos diferentes",
+        "Sinonimos PERFEITOS sao raros - o contexto define a equivalencia"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m20",
+          "enunciado": "'Ele mora em uma RESIDENCIA luxuosa.' Um sinonimo de 'residencia' e:",
+          "alternativas": {
+            "A": "Presidencia",
+            "B": "Resistencia",
+            "C": "Moradia",
+            "D": "Permanencia",
+            "E": "Frequencia"
+          },
+          "correta": "C",
+          "explicacao": "'Residencia' e 'moradia' sao SINONIMOS - ambos significam lugar onde se mora. As outras palavras sao parecidas na forma (paronimos) mas tem sentidos diferentes.",
+          "dificuldade": "facil",
+          "tags": ["semantica", "sinonimo"]
+        },
+        {
+          "id": "q2-m20",
+          "enunciado": "A palavra 'cabo' em 'cabo de vassoura' e 'cabo do exercito' exemplifica:",
+          "alternativas": {
+            "A": "Sinonimia",
+            "B": "Antonimia",
+            "C": "Polissemia ou homonimia",
+            "D": "Paronimia",
+            "E": "Denotacao"
+          },
+          "correta": "C",
+          "explicacao": "'Cabo' com diferentes significados (parte de objeto / patente militar) exemplifica POLISSEMIA (uma palavra, varios sentidos) ou HOMONIMIA (palavras de origens diferentes).",
+          "dificuldade": "medio",
+          "tags": ["semantica", "polissemia"]
+        },
+        {
+          "id": "q3-m20",
+          "enunciado": "'IMINENTE' significa 'prestes a acontecer'. 'EMINENTE' significa 'ilustre'. Essas palavras sao:",
+          "alternativas": {
+            "A": "Sinonimas",
+            "B": "Antonimas",
+            "C": "Polissemicas",
+            "D": "Paronimas",
+            "E": "Homonimas"
+          },
+          "correta": "D",
+          "explicacao": "PARONIMOS sao palavras com grafia/pronuncia PARECIDAS, mas significados DIFERENTES. Iminente/eminente, comprimento/cumprimento, descriminar/discriminar.",
+          "dificuldade": "medio",
+          "tags": ["semantica", "paronimos"]
+        },
+        {
+          "id": "q4-m20",
+          "enunciado": "'Aquele homem tem um coracao de pedra.' A expressao 'coracao de pedra' esta em sentido:",
+          "alternativas": {
+            "A": "Denotativo (literal)",
+            "B": "Conotativo (figurado)",
+            "C": "Ambiguo",
+            "D": "Tecnico",
+            "E": "Regional"
+          },
+          "correta": "B",
+          "explicacao": "'Coracao de pedra' e sentido CONOTATIVO/FIGURADO - significa pessoa insensivel, sem emocao. O coracao nao e literalmente de pedra.",
+          "dificuldade": "facil",
+          "tags": ["semantica", "conotacao"]
+        },
+        {
+          "id": "q5-m20",
+          "enunciado": "Qual par apresenta ANTONIMOS?",
+          "alternativas": {
+            "A": "Casa / residencia",
+            "B": "Rapido / veloz",
+            "C": "Claro / escuro",
+            "D": "Belo / bonito",
+            "E": "Feliz / contente"
+          },
+          "correta": "C",
+          "explicacao": "ANTONIMOS sao palavras com sentidos OPOSTOS. 'Claro' e 'escuro' sao opostos. As outras opcoes sao pares de sinonimos.",
+          "dificuldade": "facil",
+          "tags": ["semantica", "antonimos"]
+        }
+      ]
+    }
+  ]
+}

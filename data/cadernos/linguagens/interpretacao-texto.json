@@ -1,0 +1,131 @@
+{
+  "id": "ling-1",
+  "slug": "interpretacao-texto",
+  "titulo": "Interpretacao de Texto",
+  "categoria": "linguagens",
+  "nivel": "Basico",
+  "descricao": "Domine as tecnicas de leitura e interpretacao textual para o ENEM.",
+  "icone": "📝",
+  "cor": "from-blue-500 to-cyan-500",
+  "tempoEstimado": "2h",
+  "fpRecompensa": 150,
+  "tags": ["interpretacao", "texto", "leitura", "enem"],
+  "modulos": [
+    {
+      "id": "m1",
+      "titulo": "Tipos de Texto",
+      "resumo": "Os textos podem ser classificados em diferentes tipos conforme sua funcao comunicativa e estrutura.",
+      "topicos": [
+        "NARRATIVO: Conta uma historia com personagens, tempo, espaco e enredo. Ex: contos, romances, cronicas.",
+        "DESCRITIVO: Detalha caracteristicas de pessoas, objetos ou lugares. Usa adjetivos e linguagem sensorial.",
+        "DISSERTATIVO: Expoe ideias e argumentos. Pode ser expositivo (informa) ou argumentativo (convence).",
+        "INJUNTIVO: Da instrucoes ou ordens. Ex: receitas, manuais, leis.",
+        "DIALOGAL: Apresenta conversas entre personagens. Ex: entrevistas, pecas teatrais."
+      ],
+      "exemplos": [
+        "Narrativo: \"Era uma vez uma menina que morava na floresta...\"",
+        "Descritivo: \"A casa era grande, com paredes brancas e janelas azuis...\"",
+        "Dissertativo: \"A educacao e fundamental para o desenvolvimento social...\""
+      ],
+      "dicas": [
+        "No ENEM, identifique o tipo textual pela INTENCAO do autor",
+        "Textos podem misturar tipos - identifique o PREDOMINANTE",
+        "Preste atencao nos verbos: narrar usa passado, injuntivo usa imperativo"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m1",
+          "enunciado": "Leia o trecho: 'A cidade acordou cinzenta naquela manha de inverno. As ruas, ainda molhadas pela chuva da noite, refletiam as primeiras luzes dos postes.' Qual tipo textual predomina neste trecho?",
+          "alternativas": {
+            "A": "Narrativo",
+            "B": "Descritivo",
+            "C": "Dissertativo",
+            "D": "Injuntivo",
+            "E": "Dialogal"
+          },
+          "correta": "B",
+          "explicacao": "O trecho e predominantemente DESCRITIVO pois detalha caracteristicas do ambiente (cidade cinzenta, ruas molhadas, luzes dos postes) usando linguagem sensorial e adjetivos, sem desenvolver uma acao ou argumento.",
+          "dificuldade": "facil",
+          "tags": ["tipos-textuais", "descritivo"]
+        },
+        {
+          "id": "q2-m1",
+          "enunciado": "Em um texto que apresenta instrucoes para montar um movel, qual tipo textual predomina?",
+          "alternativas": {
+            "A": "Narrativo",
+            "B": "Descritivo",
+            "C": "Dissertativo argumentativo",
+            "D": "Injuntivo",
+            "E": "Dialogal"
+          },
+          "correta": "D",
+          "explicacao": "Textos com instrucoes, ordens ou comandos sao INJUNTIVOS. Manuais de montagem usam verbos no imperativo ('encaixe', 'aperte', 'posicione') para guiar o leitor nas acoes.",
+          "dificuldade": "facil",
+          "tags": ["tipos-textuais", "injuntivo"]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "titulo": "Inferencia e Deducao",
+      "resumo": "Inferir e deduzir significa 'ler nas entrelinhas' - entender o que o texto sugere sem dizer explicitamente.",
+      "topicos": [
+        "INFERENCIA: Conclusao baseada em pistas do texto + conhecimento previo",
+        "DEDUCAO: Conclusao logica a partir de premissas apresentadas",
+        "PRESSUPOSTOS: Informacoes implicitas necessarias para entender o texto",
+        "SUBENTENDIDOS: Informacoes sugeridas, mas nao ditas diretamente"
+      ],
+      "exemplos": [
+        "\"Joao parou de fumar\" → Pressuposto: Joao fumava antes",
+        "\"Maria chegou atrasada DE NOVO\" → Pressuposto: Ja chegou atrasada outras vezes",
+        "\"O time jogou bem, MAS perdeu\" → Subentendido: Esperava-se vitoria"
+      ],
+      "dicas": [
+        "Palavras como 'ainda', 'ja', 'de novo' indicam pressupostos",
+        "Conjuncoes adversativas (mas, porem) indicam quebra de expectativa",
+        "Pergunte-se: 'O que o autor quer que eu entenda sem dizer?'"
+      ],
+      "questoes": [
+        {
+          "id": "q1-m2",
+          "enunciado": "Na frase 'Pedro deixou de ser vegetariano', qual e o pressuposto?",
+          "alternativas": {
+            "A": "Pedro come carne atualmente",
+            "B": "Pedro era vegetariano antes",
+            "C": "Pedro nao gosta de vegetais",
+            "D": "Pedro sempre comeu carne",
+            "E": "Pedro e contra o vegetarianismo"
+          },
+          "correta": "B",
+          "explicacao": "O verbo 'deixou de' pressupoe que a acao existia antes. Para 'deixar de ser vegetariano', Pedro necessariamente ERA vegetariano anteriormente. Este e o pressuposto da frase.",
+          "dificuldade": "medio",
+          "tags": ["inferencia", "pressuposto"]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "titulo": "Generos Textuais",
+      "resumo": "Generos textuais sao formas concretas de textos que circulam socialmente, cada um com caracteristicas proprias.",
+      "topicos": [
+        "CRONICA: Texto curto sobre cotidiano, tom leve ou reflexivo",
+        "EDITORIAL: Opiniao do jornal sobre tema atual, sem assinatura",
+        "ARTIGO DE OPINIAO: Texto assinado com argumentacao sobre tema",
+        "CARTA DO LEITOR: Resposta/opiniao de leitor para publicacao",
+        "RESENHA: Analise critica de obra (livro, filme, etc)",
+        "REPORTAGEM: Texto jornalistico aprofundado sobre tema",
+        "NOTICIA: Texto jornalistico breve, objetivo, factual"
+      ],
+      "exemplos": [
+        "Cronica: textos de Rubem Braga, Luis Fernando Verissimo",
+        "Editorial: 'Este jornal defende que...' (sem autor)",
+        "Artigo: 'Na minha opiniao...' - Fulano de Tal"
+      ],
+      "dicas": [
+        "ENEM adora perguntar sobre funcao social do genero",
+        "Identifique: Onde circula? Para quem? Com que objetivo?",
+        "Editorial x Artigo: editorial nao tem autor, artigo tem"
+      ]
+    }
+  ]
+}

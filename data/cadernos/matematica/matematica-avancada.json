@@ -1,0 +1,1075 @@
+{
+  "id": "matematica-avancada-enem",
+  "slug": "matematica-avancada-enem",
+  "titulo": "Matemática Avançada para o ENEM",
+  "categoria": "matematica",
+  "nivel": "avancado",
+  "descricao": "Aprofunde seus conhecimentos em geometria, trigonometria, análise combinatória, probabilidade e estatística para o ENEM.",
+  "icone": "PieChart",
+  "cor": "#9B59B6",
+  "tempoEstimado": "22 horas",
+  "fpRecompensa": 550,
+  "tags": ["matemática", "geometria", "trigonometria", "probabilidade", "estatística", "enem"],
+  "modulos": [
+    {
+      "id": "m151",
+      "titulo": "Geometria Plana: Áreas e Perímetros",
+      "resumo": "Domine o cálculo de áreas e perímetros das principais figuras planas.",
+      "topicos": [
+        {
+          "titulo": "Triângulos",
+          "conteudo": "Perímetro: P = a + b + c (soma dos lados). Área do triângulo: A = (base × altura)/2. Fórmula de Herão: A = √[s(s-a)(s-b)(s-c)], onde s = (a+b+c)/2 (semiperímetro). Triângulo equilátero: A = (L²√3)/4. Triângulo retângulo: A = (cateto₁ × cateto₂)/2. Relações métricas no triângulo retângulo: a² = b² + c² (Pitágoras), h² = m·n, b² = a·m, c² = a·n, onde h é altura relativa à hipotenusa, m e n são projeções dos catetos."
+        },
+        {
+          "titulo": "Quadriláteros",
+          "conteudo": "Quadrado: A = L², P = 4L, diagonal = L√2. Retângulo: A = b·h, P = 2(b+h), diagonal = √(b²+h²). Paralelogramo: A = b·h (h perpendicular à base). Losango: A = (D·d)/2 (produto das diagonais dividido por 2). Trapézio: A = [(B+b)·h]/2 (soma das bases vezes altura dividido por 2). Círculo: A = πr², perímetro (circunferência) = 2πr. Setor circular: A = (θ/360°)·πr² ou A = (θ·r²)/2 (θ em radianos)."
+        },
+        {
+          "titulo": "Polígonos Regulares e Figuras Compostas",
+          "conteudo": "Polígono regular de n lados: soma dos ângulos internos = (n-2)·180°, cada ângulo interno = (n-2)·180°/n. Hexágono regular: A = (3L²√3)/2. Área por decomposição: divida figuras complexas em figuras conhecidas e some as áreas. Área por complemento: calcule a área total e subtraia partes removidas. Relação entre áreas de figuras semelhantes: se a razão de semelhança é k, a razão das áreas é k²."
+        }
+      ],
+      "exemplos": [
+        "Triângulo com base 10 cm e altura 6 cm: A = (10×6)/2 = 30 cm².",
+        "Losango com diagonais 8 cm e 6 cm: A = (8×6)/2 = 24 cm².",
+        "Círculo de raio 5 cm: A = π(5)² = 25π ≈ 78,5 cm²."
+      ],
+      "dicas": [
+        "Pitágoras é essencial: a² = b² + c² para triângulos retângulos.",
+        "Losango e trapézio: memorize as fórmulas, são frequentes no ENEM.",
+        "Figuras semelhantes: se o lado dobra, a área quadruplica (k²)."
+      ],
+      "questoes": [
+        {
+          "id": "q151-1",
+          "enunciado": "A área de um triângulo equilátero de lado 6 cm é:",
+          "alternativas": {
+            "A": "9√3 cm²",
+            "B": "12√3 cm²",
+            "C": "18√3 cm²",
+            "D": "36√3 cm²",
+            "E": "6√3 cm²"
+          },
+          "correta": "A",
+          "explicacao": "A = (L²√3)/4 = (36√3)/4 = 9√3 cm².",
+          "dificuldade": "medio",
+          "tags": ["geometria", "triângulo", "área"]
+        },
+        {
+          "id": "q151-2",
+          "enunciado": "Um retângulo tem diagonal de 10 cm e um lado de 6 cm. Sua área é:",
+          "alternativas": {
+            "A": "24 cm²",
+            "B": "32 cm²",
+            "C": "48 cm²",
+            "D": "60 cm²",
+            "E": "40 cm²"
+          },
+          "correta": "C",
+          "explicacao": "Por Pitágoras: 10² = 6² + b² → 100 = 36 + b² → b² = 64 → b = 8. Área = 6 × 8 = 48 cm².",
+          "dificuldade": "medio",
+          "tags": ["geometria", "retângulo", "Pitágoras"]
+        },
+        {
+          "id": "q151-3",
+          "enunciado": "A área de um trapézio com bases de 8 cm e 12 cm e altura de 5 cm é:",
+          "alternativas": {
+            "A": "40 cm²",
+            "B": "50 cm²",
+            "C": "60 cm²",
+            "D": "80 cm²",
+            "E": "100 cm²"
+          },
+          "correta": "B",
+          "explicacao": "A = [(B+b)·h]/2 = [(12+8)·5]/2 = (20·5)/2 = 50 cm².",
+          "dificuldade": "facil",
+          "tags": ["geometria", "trapézio", "área"]
+        },
+        {
+          "id": "q151-4",
+          "enunciado": "Se um quadrado tem diagonal de 10 cm, sua área é:",
+          "alternativas": {
+            "A": "25 cm²",
+            "B": "50 cm²",
+            "C": "100 cm²",
+            "D": "10√2 cm²",
+            "E": "20 cm²"
+          },
+          "correta": "B",
+          "explicacao": "Diagonal = L√2 → 10 = L√2 → L = 10/√2 = 5√2. Área = L² = (5√2)² = 50 cm². Ou: A = d²/2 = 100/2 = 50 cm².",
+          "dificuldade": "medio",
+          "tags": ["geometria", "quadrado", "diagonal"]
+        },
+        {
+          "id": "q151-5",
+          "enunciado": "A soma dos ângulos internos de um hexágono é:",
+          "alternativas": {
+            "A": "540°",
+            "B": "720°",
+            "C": "900°",
+            "D": "360°",
+            "E": "1080°"
+          },
+          "correta": "B",
+          "explicacao": "Soma = (n-2)·180° = (6-2)·180° = 4·180° = 720°.",
+          "dificuldade": "facil",
+          "tags": ["geometria", "polígono", "ângulos"]
+        }
+      ]
+    },
+    {
+      "id": "m152",
+      "titulo": "Geometria Espacial: Volumes e Áreas",
+      "resumo": "Calcule volumes e áreas de superfície dos principais sólidos geométricos.",
+      "topicos": [
+        {
+          "titulo": "Prismas e Cilindros",
+          "conteudo": "Prisma: duas bases paralelas e congruentes, faces laterais retangulares. Volume: V = Ab × h (área da base vezes altura). Área lateral: perímetro da base × altura. Área total: área lateral + 2 × área da base. Paralelepípedo retângulo: V = a·b·c, diagonal = √(a²+b²+c²). Cubo: V = a³, diagonal = a√3. Cilindro: V = πr²h, área lateral = 2πrh, área total = 2πrh + 2πr² = 2πr(h+r)."
+        },
+        {
+          "titulo": "Pirâmides e Cones",
+          "conteudo": "Pirâmide: uma base e faces laterais triangulares convergindo no vértice. Volume: V = (Ab × h)/3. Pirâmide regular: faces laterais são triângulos isósceles. Área lateral = (perímetro da base × apótema da pirâmide)/2. Cone: V = (πr²h)/3, área lateral = πrg (g = geratriz), área total = πr(g+r). Relação: g² = h² + r² (geratriz, altura e raio)."
+        },
+        {
+          "titulo": "Esfera e Sólidos Compostos",
+          "conteudo": "Esfera: V = (4πr³)/3, área da superfície = 4πr². Semiesfera: V = (2πr³)/3, área = 2πr² + πr² = 3πr². Tronco de cone: V = (πh/3)(R² + Rr + r²). Tronco de pirâmide: V = (h/3)(AB + √(AB·Ab) + Ab). Sólidos inscritos e circunscritos: relações entre dimensões. Ex: esfera inscrita no cubo tem diâmetro = aresta; esfera circunscrita tem diâmetro = diagonal."
+        }
+      ],
+      "exemplos": [
+        "Cilindro com r = 3 cm e h = 10 cm: V = π(9)(10) = 90π cm³.",
+        "Cone com r = 4 cm e h = 3 cm: geratriz g = 5 cm (por Pitágoras), V = (π·16·3)/3 = 16π cm³.",
+        "Esfera de raio 6 cm: V = (4π·216)/3 = 288π cm³."
+      ],
+      "dicas": [
+        "Prisma e cilindro: V = base × altura. Pirâmide e cone: V = (base × altura)/3.",
+        "Cone e pirâmide têm 1/3 do volume do cilindro e prisma de mesma base e altura.",
+        "Geratriz do cone: use Pitágoras (g² = h² + r²)."
+      ],
+      "questoes": [
+        {
+          "id": "q152-1",
+          "enunciado": "O volume de um cilindro de raio 5 cm e altura 8 cm é:",
+          "alternativas": {
+            "A": "40π cm³",
+            "B": "80π cm³",
+            "C": "200π cm³",
+            "D": "100π cm³",
+            "E": "160π cm³"
+          },
+          "correta": "C",
+          "explicacao": "V = πr²h = π(25)(8) = 200π cm³.",
+          "dificuldade": "facil",
+          "tags": ["geometria espacial", "cilindro", "volume"]
+        },
+        {
+          "id": "q152-2",
+          "enunciado": "Uma pirâmide de base quadrada com lado 6 cm e altura 10 cm tem volume:",
+          "alternativas": {
+            "A": "360 cm³",
+            "B": "120 cm³",
+            "C": "180 cm³",
+            "D": "60 cm³",
+            "E": "240 cm³"
+          },
+          "correta": "B",
+          "explicacao": "Área da base = 36 cm². V = (36 × 10)/3 = 360/3 = 120 cm³.",
+          "dificuldade": "medio",
+          "tags": ["geometria espacial", "pirâmide", "volume"]
+        },
+        {
+          "id": "q152-3",
+          "enunciado": "O volume de uma esfera de raio 3 cm é:",
+          "alternativas": {
+            "A": "36π cm³",
+            "B": "27π cm³",
+            "C": "18π cm³",
+            "D": "12π cm³",
+            "E": "9π cm³"
+          },
+          "correta": "A",
+          "explicacao": "V = (4πr³)/3 = (4π·27)/3 = 108π/3 = 36π cm³.",
+          "dificuldade": "medio",
+          "tags": ["geometria espacial", "esfera", "volume"]
+        },
+        {
+          "id": "q152-4",
+          "enunciado": "A diagonal de um paralelepípedo retângulo de dimensões 3, 4 e 12 cm mede:",
+          "alternativas": {
+            "A": "13 cm",
+            "B": "15 cm",
+            "C": "17 cm",
+            "D": "19 cm",
+            "E": "5 cm"
+          },
+          "correta": "A",
+          "explicacao": "Diagonal = √(3² + 4² + 12²) = √(9 + 16 + 144) = √169 = 13 cm.",
+          "dificuldade": "medio",
+          "tags": ["geometria espacial", "paralelepípedo", "diagonal"]
+        },
+        {
+          "id": "q152-5",
+          "enunciado": "Um cone tem raio da base 6 cm e geratriz 10 cm. Sua altura é:",
+          "alternativas": {
+            "A": "4 cm",
+            "B": "6 cm",
+            "C": "8 cm",
+            "D": "10 cm",
+            "E": "12 cm"
+          },
+          "correta": "C",
+          "explicacao": "Por Pitágoras: g² = h² + r² → 100 = h² + 36 → h² = 64 → h = 8 cm.",
+          "dificuldade": "medio",
+          "tags": ["geometria espacial", "cone", "Pitágoras"]
+        }
+      ]
+    },
+    {
+      "id": "m153",
+      "titulo": "Trigonometria no Triângulo Retângulo",
+      "resumo": "Aprenda as razões trigonométricas e suas aplicações em triângulos retângulos.",
+      "topicos": [
+        {
+          "titulo": "Razões Trigonométricas Básicas",
+          "conteudo": "No triângulo retângulo, para um ângulo agudo θ: Seno: sen(θ) = cateto oposto / hipotenusa. Cosseno: cos(θ) = cateto adjacente / hipotenusa. Tangente: tg(θ) = cateto oposto / cateto adjacente = sen(θ)/cos(θ). Relação fundamental: sen²θ + cos²θ = 1. Cossecante: csc(θ) = 1/sen(θ). Secante: sec(θ) = 1/cos(θ). Cotangente: cotg(θ) = 1/tg(θ) = cos(θ)/sen(θ)."
+        },
+        {
+          "titulo": "Ângulos Notáveis",
+          "conteudo": "Valores para memorizar: sen(30°) = 1/2, cos(30°) = √3/2, tg(30°) = √3/3. sen(45°) = √2/2, cos(45°) = √2/2, tg(45°) = 1. sen(60°) = √3/2, cos(60°) = 1/2, tg(60°) = √3. Relações: sen(θ) = cos(90°-θ) e cos(θ) = sen(90°-θ) (ângulos complementares). Tabela: 30°-45°-60° correspondem a √1/2, √2/2, √3/2 para seno (ordem crescente) e ordem inversa para cosseno."
+        },
+        {
+          "titulo": "Aplicações Práticas",
+          "conteudo": "Problemas de altura e distância: identificar o triângulo retângulo, o ângulo conhecido e as medidas. Ângulo de elevação: ângulo acima da horizontal (olhando para cima). Ângulo de depressão: ângulo abaixo da horizontal (olhando para baixo). Rampas e inclinações: a inclinação é a tangente do ângulo. Sombra: envolve tangente (altura/sombra). Escadas e telhados: usam seno, cosseno ou tangente conforme os dados."
+        }
+      ],
+      "exemplos": [
+        "Torre de 30m com ângulo de elevação de 60°: distância = 30/tg(60°) = 30/√3 = 10√3 m.",
+        "Escada de 5m forma 60° com o chão: altura = 5·sen(60°) = 5·√3/2 = 2,5√3 m.",
+        "Rampa com 30% de inclinação: tg(θ) = 0,30, θ ≈ 16,7°."
+      ],
+      "dicas": [
+        "SOH-CAH-TOA: Seno=Oposto/Hipotenusa, Cosseno=Adjacente/Hipotenusa, Tangente=Oposto/Adjacente.",
+        "30° e 60° vêm do triângulo equilátero dividido; 45° vem do quadrado diagonal.",
+        "Se conhece oposto e adjacente → use tangente. Se conhece um cateto e hipotenusa → seno ou cosseno."
+      ],
+      "questoes": [
+        {
+          "id": "q153-1",
+          "enunciado": "Em um triângulo retângulo, o cateto oposto a um ângulo de 30° mede 5 cm. A hipotenusa mede:",
+          "alternativas": {
+            "A": "10 cm",
+            "B": "5√3 cm",
+            "C": "5√2 cm",
+            "D": "2,5 cm",
+            "E": "10√3 cm"
+          },
+          "correta": "A",
+          "explicacao": "sen(30°) = cateto oposto / hipotenusa → 1/2 = 5/h → h = 10 cm.",
+          "dificuldade": "facil",
+          "tags": ["trigonometria", "seno", "ângulo notável"]
+        },
+        {
+          "id": "q153-2",
+          "enunciado": "Uma escada de 6 metros está apoiada em uma parede, formando um ângulo de 60° com o chão. A altura que ela alcança na parede é:",
+          "alternativas": {
+            "A": "3 m",
+            "B": "3√3 m",
+            "C": "6√3 m",
+            "D": "3√2 m",
+            "E": "2√3 m"
+          },
+          "correta": "B",
+          "explicacao": "sen(60°) = altura/6 → √3/2 = h/6 → h = 6·√3/2 = 3√3 m.",
+          "dificuldade": "medio",
+          "tags": ["trigonometria", "aplicação", "escada"]
+        },
+        {
+          "id": "q153-3",
+          "enunciado": "O valor de sen²(45°) + cos²(45°) é:",
+          "alternativas": {
+            "A": "0",
+            "B": "1/2",
+            "C": "1",
+            "D": "√2",
+            "E": "2"
+          },
+          "correta": "C",
+          "explicacao": "Pela identidade fundamental, sen²θ + cos²θ = 1 para qualquer ângulo. Verificando: (√2/2)² + (√2/2)² = 1/2 + 1/2 = 1.",
+          "dificuldade": "facil",
+          "tags": ["trigonometria", "identidade", "fundamental"]
+        },
+        {
+          "id": "q153-4",
+          "enunciado": "Uma pessoa observa o topo de um prédio com um ângulo de elevação de 45°. Se ela está a 30 metros do prédio, a altura do prédio é:",
+          "alternativas": {
+            "A": "15 m",
+            "B": "30 m",
+            "C": "30√2 m",
+            "D": "15√2 m",
+            "E": "60 m"
+          },
+          "correta": "B",
+          "explicacao": "tg(45°) = altura/distância → 1 = h/30 → h = 30 m.",
+          "dificuldade": "medio",
+          "tags": ["trigonometria", "tangente", "ângulo de elevação"]
+        },
+        {
+          "id": "q153-5",
+          "enunciado": "Se tg(θ) = 3/4 em um triângulo retângulo, o valor de sen(θ) é:",
+          "alternativas": {
+            "A": "3/4",
+            "B": "4/5",
+            "C": "3/5",
+            "D": "5/3",
+            "E": "4/3"
+          },
+          "correta": "C",
+          "explicacao": "Se tg = 3/4, os catetos são proporcionais a 3 e 4. A hipotenusa = √(9+16) = 5. Sen = oposto/hipotenusa = 3/5.",
+          "dificuldade": "medio",
+          "tags": ["trigonometria", "razões", "Pitágoras"]
+        }
+      ]
+    },
+    {
+      "id": "m154",
+      "titulo": "Trigonometria no Ciclo Trigonométrico",
+      "resumo": "Estude funções trigonométricas, identidades e o ciclo trigonométrico.",
+      "topicos": [
+        {
+          "titulo": "Ciclo Trigonométrico",
+          "conteudo": "Ciclo trigonométrico: circunferência de raio 1 centrada na origem. Um ângulo θ parte do eixo x positivo (sentido anti-horário = positivo). Coordenadas do ponto: (cos θ, sen θ). Domínio de seno e cosseno: todos os reais. Imagem: [-1, 1]. Sinais nos quadrantes: 1º (0° a 90°): sen+, cos+, tg+. 2º (90° a 180°): sen+, cos-, tg-. 3º (180° a 270°): sen-, cos-, tg+. 4º (270° a 360°): sen-, cos+, tg-."
+        },
+        {
+          "titulo": "Funções Trigonométricas",
+          "conteudo": "Função seno: f(x) = sen(x), período 2π, amplitude 1, passa pela origem. Função cosseno: f(x) = cos(x), período 2π, amplitude 1, começa em 1. Função tangente: f(x) = tg(x), período π, assíntotas em x = π/2 + kπ. Transformações: f(x) = a·sen(bx + c) + d, onde |a| = amplitude, 2π/|b| = período, c = deslocamento de fase, d = deslocamento vertical. Radianos: π rad = 180°, então 1 rad ≈ 57,3°."
+        },
+        {
+          "titulo": "Identidades e Equações",
+          "conteudo": "Identidades fundamentais: sen²θ + cos²θ = 1, 1 + tg²θ = sec²θ, 1 + cotg²θ = csc²θ. Arcos complementares: sen(90°-θ) = cos(θ). Arcos suplementares: sen(180°-θ) = sen(θ), cos(180°-θ) = -cos(θ). Fórmulas de adição: sen(a±b) = sen(a)cos(b) ± cos(a)sen(b), cos(a±b) = cos(a)cos(b) ∓ sen(a)sen(b). Arco duplo: sen(2θ) = 2sen(θ)cos(θ), cos(2θ) = cos²θ - sen²θ."
+        }
+      ],
+      "exemplos": [
+        "sen(150°) = sen(180°-30°) = sen(30°) = 1/2.",
+        "cos(240°) = cos(180°+60°) = -cos(60°) = -1/2.",
+        "Período de f(x) = sen(2x) é 2π/2 = π."
+      ],
+      "dicas": [
+        "1º quadrante: tudo +. 2º: só seno +. 3º: só tangente +. 4º: só cosseno +.",
+        "Seno é ímpar: sen(-x) = -sen(x). Cosseno é par: cos(-x) = cos(x).",
+        "Para memorizar sinais: 'All Students Take Calculus' (All, Sen, Tan, Cos)."
+      ],
+      "questoes": [
+        {
+          "id": "q154-1",
+          "enunciado": "O valor de sen(120°) é:",
+          "alternativas": {
+            "A": "1/2",
+            "B": "-1/2",
+            "C": "√3/2",
+            "D": "-√3/2",
+            "E": "√2/2"
+          },
+          "correta": "C",
+          "explicacao": "120° está no 2º quadrante, onde seno é positivo. sen(120°) = sen(180°-60°) = sen(60°) = √3/2.",
+          "dificuldade": "medio",
+          "tags": ["ciclo trigonométrico", "seno", "quadrantes"]
+        },
+        {
+          "id": "q154-2",
+          "enunciado": "O valor de cos(225°) é:",
+          "alternativas": {
+            "A": "√2/2",
+            "B": "-√2/2",
+            "C": "1/2",
+            "D": "-1/2",
+            "E": "0"
+          },
+          "correta": "B",
+          "explicacao": "225° = 180° + 45° (3º quadrante, cosseno negativo). cos(225°) = -cos(45°) = -√2/2.",
+          "dificuldade": "medio",
+          "tags": ["ciclo trigonométrico", "cosseno", "quadrantes"]
+        },
+        {
+          "id": "q154-3",
+          "enunciado": "A função f(x) = 3sen(2x) tem amplitude e período, respectivamente:",
+          "alternativas": {
+            "A": "3 e 2π",
+            "B": "2 e 3π",
+            "C": "3 e π",
+            "D": "6 e π",
+            "E": "3 e π/2"
+          },
+          "correta": "C",
+          "explicacao": "Amplitude = |a| = 3. Período = 2π/|b| = 2π/2 = π.",
+          "dificuldade": "medio",
+          "tags": ["função trigonométrica", "amplitude", "período"]
+        },
+        {
+          "id": "q154-4",
+          "enunciado": "A conversão de 60° para radianos é:",
+          "alternativas": {
+            "A": "π/6 rad",
+            "B": "π/4 rad",
+            "C": "π/3 rad",
+            "D": "π/2 rad",
+            "E": "2π/3 rad"
+          },
+          "correta": "C",
+          "explicacao": "180° = π rad, então 60° = 60·π/180 = π/3 rad.",
+          "dificuldade": "facil",
+          "tags": ["trigonometria", "radianos", "conversão"]
+        },
+        {
+          "id": "q154-5",
+          "enunciado": "O valor de sen(30°)·cos(60°) + cos(30°)·sen(60°) é:",
+          "alternativas": {
+            "A": "0",
+            "B": "1/2",
+            "C": "1",
+            "D": "√3/2",
+            "E": "√2/2"
+          },
+          "correta": "C",
+          "explicacao": "Pela fórmula de adição: sen(a+b) = sen(a)cos(b) + cos(a)sen(b). Então: sen(30°+60°) = sen(90°) = 1.",
+          "dificuldade": "medio",
+          "tags": ["trigonometria", "fórmula de adição", "seno"]
+        }
+      ]
+    },
+    {
+      "id": "m155",
+      "titulo": "Análise Combinatória: Princípios e Arranjos",
+      "resumo": "Domine os princípios de contagem, arranjos e permutações.",
+      "topicos": [
+        {
+          "titulo": "Princípios Fundamentais de Contagem",
+          "conteudo": "Princípio Multiplicativo: se um evento pode ocorrer de m maneiras e outro de n maneiras (independentes), ambos ocorrem de m × n maneiras. Princípio Aditivo: se um evento pode ocorrer de m maneiras OU de n maneiras (exclusivas), há m + n maneiras. Diagrama de árvore: útil para visualizar todas as possibilidades. Exemplo: 3 camisas e 4 calças = 3 × 4 = 12 combinações de roupa."
+        },
+        {
+          "titulo": "Fatorial e Permutações",
+          "conteudo": "Fatorial: n! = n × (n-1) × (n-2) × ... × 2 × 1. Convenção: 0! = 1. Permutação simples: número de maneiras de ordenar n elementos distintos: Pn = n!. Permutação com repetição: quando há elementos repetidos: P = n!/(n₁! × n₂! × ...). Permutação circular: arranjos em círculo (fixa um elemento): (n-1)!. Exemplo: anagramas de 'CASA' = 4!/2! = 12 (A se repete 2 vezes)."
+        },
+        {
+          "titulo": "Arranjos",
+          "conteudo": "Arranjo simples: escolher p elementos de n e ordenar: An,p = n!/(n-p)!. A ordem importa! Arranjo com repetição: n^p (cada posição tem n opções). Exemplo: senha de 4 dígitos com dígitos de 0-9 = 10⁴ = 10.000 possibilidades. Exemplo sem repetição: 10!/(10-4)! = 10!/6! = 5.040 senhas. Aplicações: placas de carro, senhas, rankings, pódios."
+        }
+      ],
+      "exemplos": [
+        "Anagramas de 'AMOR': 4! = 24 anagramas distintos.",
+        "Placas antigas (3 letras + 4 números): 26³ × 10⁴ = 175.760.000 placas.",
+        "Pódio (1º, 2º, 3º) de 10 atletas: A10,3 = 10 × 9 × 8 = 720 resultados."
+      ],
+      "dicas": [
+        "Arranjo = ordem importa. Combinação = ordem NÃO importa.",
+        "Permutação é caso especial de arranjo onde p = n.",
+        "Se pode repetir: use potenciação. Se não pode: use fatorial/arranjo."
+      ],
+      "questoes": [
+        {
+          "id": "q155-1",
+          "enunciado": "O número de anagramas da palavra 'LIVRO' é:",
+          "alternativas": {
+            "A": "60",
+            "B": "120",
+            "C": "24",
+            "D": "720",
+            "E": "5"
+          },
+          "correta": "B",
+          "explicacao": "São 5 letras distintas: P5 = 5! = 120 anagramas.",
+          "dificuldade": "facil",
+          "tags": ["combinatória", "permutação", "anagrama"]
+        },
+        {
+          "id": "q155-2",
+          "enunciado": "Quantas senhas de 3 dígitos diferentes podem ser formadas com os algarismos 1, 2, 3, 4, 5?",
+          "alternativas": {
+            "A": "125",
+            "B": "60",
+            "C": "15",
+            "D": "10",
+            "E": "27"
+          },
+          "correta": "B",
+          "explicacao": "Arranjo sem repetição: A5,3 = 5 × 4 × 3 = 60 senhas.",
+          "dificuldade": "medio",
+          "tags": ["combinatória", "arranjo", "senha"]
+        },
+        {
+          "id": "q155-3",
+          "enunciado": "O número de anagramas da palavra 'BANANA' é:",
+          "alternativas": {
+            "A": "720",
+            "B": "60",
+            "C": "120",
+            "D": "30",
+            "E": "360"
+          },
+          "correta": "B",
+          "explicacao": "6 letras com repetições: A (3×), N (2×), B (1×). P = 6!/(3!×2!×1!) = 720/(6×2) = 60.",
+          "dificuldade": "medio",
+          "tags": ["combinatória", "permutação com repetição"]
+        },
+        {
+          "id": "q155-4",
+          "enunciado": "De quantas maneiras 6 pessoas podem se sentar em uma mesa circular?",
+          "alternativas": {
+            "A": "720",
+            "B": "120",
+            "C": "360",
+            "D": "60",
+            "E": "24"
+          },
+          "correta": "B",
+          "explicacao": "Permutação circular: (n-1)! = (6-1)! = 5! = 120.",
+          "dificuldade": "medio",
+          "tags": ["combinatória", "permutação circular"]
+        },
+        {
+          "id": "q155-5",
+          "enunciado": "Um restaurante oferece 4 entradas, 6 pratos principais e 3 sobremesas. O número de refeições diferentes (1 de cada) é:",
+          "alternativas": {
+            "A": "13",
+            "B": "72",
+            "C": "24",
+            "D": "36",
+            "E": "18"
+          },
+          "correta": "B",
+          "explicacao": "Princípio multiplicativo: 4 × 6 × 3 = 72 refeições diferentes.",
+          "dificuldade": "facil",
+          "tags": ["combinatória", "princípio multiplicativo"]
+        }
+      ]
+    },
+    {
+      "id": "m156",
+      "titulo": "Análise Combinatória: Combinações",
+      "resumo": "Aprenda combinações simples e suas aplicações em problemas diversos.",
+      "topicos": [
+        {
+          "titulo": "Combinação Simples",
+          "conteudo": "Combinação: escolha de p elementos de n, sem importar a ordem. Fórmula: Cn,p = n!/[p!(n-p)!]. Também escrita como (n p) ou 'n escolhe p'. Propriedade: Cn,p = Cn,n-p (ex: C10,3 = C10,7). Relação com arranjo: Cn,p = An,p/p! (divide pelo número de ordenações). Triângulo de Pascal: cada número é a soma dos dois acima: Cn,p = Cn-1,p-1 + Cn-1,p."
+        },
+        {
+          "titulo": "Aplicações de Combinações",
+          "conteudo": "Quando usar combinação: grupos, comissões, escolhas onde ordem não importa. Exemplo: escolher 3 pessoas de 10 para um comitê: C10,3 = 120. Jogos de loteria: escolher 6 números de 60 = C60,6. Diagonais de polígono: D = Cn,2 - n = n(n-3)/2. Retas por n pontos (sem colineares): C n,2 = n(n-1)/2. Problemas de divisão: dividir em grupos distinguíveis vs. não distinguíveis."
+        },
+        {
+          "titulo": "Combinações Complementares e Binômio",
+          "conteudo": "Complementar: escolher quem NÃO vai. Exemplo: de 10, escolher 3 = escolher 7 para ficar fora. Binômio de Newton: (a+b)ⁿ = Σ Cn,k · aⁿ⁻ᵏ · bᵏ. Termo geral: Tk+1 = Cn,k · aⁿ⁻ᵏ · bᵏ. Soma dos coeficientes: substitua a=b=1, obtém 2ⁿ. Problemas com restrições: subtraia casos indesejados ou some casos válidos."
+        }
+      ],
+      "exemplos": [
+        "Comissão de 4 pessoas de 10: C10,4 = 210 comissões possíveis.",
+        "Mega-Sena (6 de 60): C60,6 = 50.063.860 combinações.",
+        "Diagonais de octógono: D = 8(8-3)/2 = 20 diagonais."
+      ],
+      "dicas": [
+        "Ordem importa → Arranjo. Ordem não importa → Combinação.",
+        "Cn,p = Cn,n-p: escolher 2 de 5 = escolher 3 para deixar de fora.",
+        "Comitês, times, grupos → Combinação. Rankings, senhas → Arranjo."
+      ],
+      "questoes": [
+        {
+          "id": "q156-1",
+          "enunciado": "De quantas maneiras podemos escolher 3 livros de uma prateleira com 8 livros diferentes?",
+          "alternativas": {
+            "A": "56",
+            "B": "336",
+            "C": "24",
+            "D": "120",
+            "E": "84"
+          },
+          "correta": "A",
+          "explicacao": "Combinação (ordem não importa): C8,3 = 8!/(3!×5!) = (8×7×6)/(3×2×1) = 336/6 = 56.",
+          "dificuldade": "facil",
+          "tags": ["combinatória", "combinação"]
+        },
+        {
+          "id": "q156-2",
+          "enunciado": "Quantas diagonais tem um decágono (polígono de 10 lados)?",
+          "alternativas": {
+            "A": "45",
+            "B": "35",
+            "C": "40",
+            "D": "50",
+            "E": "30"
+          },
+          "correta": "B",
+          "explicacao": "D = n(n-3)/2 = 10×7/2 = 35 diagonais. Ou: C10,2 - 10 = 45 - 10 = 35.",
+          "dificuldade": "medio",
+          "tags": ["combinatória", "diagonal", "polígono"]
+        },
+        {
+          "id": "q156-3",
+          "enunciado": "Em um grupo de 12 pessoas, de quantas maneiras podemos formar uma comissão de 5 pessoas?",
+          "alternativas": {
+            "A": "792",
+            "B": "95.040",
+            "C": "60",
+            "D": "220",
+            "E": "252"
+          },
+          "correta": "A",
+          "explicacao": "C12,5 = 12!/(5!×7!) = (12×11×10×9×8)/(5×4×3×2×1) = 95040/120 = 792.",
+          "dificuldade": "medio",
+          "tags": ["combinatória", "comissão"]
+        },
+        {
+          "id": "q156-4",
+          "enunciado": "O coeficiente do termo x³ na expansão de (1+x)⁵ é:",
+          "alternativas": {
+            "A": "5",
+            "B": "10",
+            "C": "15",
+            "D": "20",
+            "E": "1"
+          },
+          "correta": "B",
+          "explicacao": "Termo com x³: C5,3 × 1² × x³ = C5,3 × x³. C5,3 = 10.",
+          "dificuldade": "medio",
+          "tags": ["combinatória", "binômio de Newton"]
+        },
+        {
+          "id": "q156-5",
+          "enunciado": "Uma urna tem 6 bolas vermelhas e 4 azuis. O número de maneiras de escolher 3 bolas vermelhas e 2 azuis é:",
+          "alternativas": {
+            "A": "60",
+            "B": "120",
+            "C": "180",
+            "D": "240",
+            "E": "90"
+          },
+          "correta": "B",
+          "explicacao": "C6,3 × C4,2 = 20 × 6 = 120.",
+          "dificuldade": "medio",
+          "tags": ["combinatória", "escolha múltipla"]
+        }
+      ]
+    },
+    {
+      "id": "m157",
+      "titulo": "Probabilidade",
+      "resumo": "Domine conceitos de probabilidade, eventos e suas aplicações.",
+      "topicos": [
+        {
+          "titulo": "Conceitos Básicos",
+          "conteudo": "Experimento aleatório: resultado imprevisível. Espaço amostral (S): conjunto de todos os resultados possíveis. Evento (A): subconjunto do espaço amostral. Probabilidade: P(A) = n(A)/n(S) = casos favoráveis / casos possíveis. Propriedades: 0 ≤ P(A) ≤ 1, P(S) = 1, P(∅) = 0. Evento certo: P = 1. Evento impossível: P = 0. Evento complementar: P(Ā) = 1 - P(A)."
+        },
+        {
+          "titulo": "Probabilidade de União e Interseção",
+          "conteudo": "Eventos mutuamente exclusivos: não podem ocorrer juntos (A ∩ B = ∅). P(A ∪ B) = P(A) + P(B). Eventos não exclusivos: P(A ∪ B) = P(A) + P(B) - P(A ∩ B). Eventos independentes: ocorrência de um não afeta o outro. P(A ∩ B) = P(A) × P(B). Eventos dependentes: P(A ∩ B) = P(A) × P(B|A), onde P(B|A) é probabilidade condicional de B dado A."
+        },
+        {
+          "titulo": "Probabilidade Condicional e Aplicações",
+          "conteudo": "Probabilidade condicional: P(B|A) = P(A ∩ B)/P(A). É a probabilidade de B sabendo que A ocorreu. Teorema de Bayes: P(A|B) = P(B|A)×P(A)/P(B). Aplicações: jogos de dados (36 resultados), cartas (52), moedas, urnas, loterias. Lançamento de dois dados: P(soma=7) = 6/36 = 1/6. Baralho: P(ás ou copas) = 4/52 + 13/52 - 1/52 = 16/52 = 4/13."
+        }
+      ],
+      "exemplos": [
+        "Dado: P(par) = 3/6 = 1/2. P(maior que 4) = 2/6 = 1/3.",
+        "Duas moedas: P(duas caras) = 1/2 × 1/2 = 1/4.",
+        "Urna com 3 brancas e 2 pretas: P(2 brancas sem reposição) = 3/5 × 2/4 = 6/20 = 3/10."
+      ],
+      "dicas": [
+        "P(pelo menos um) = 1 - P(nenhum). Evite contar todos os casos.",
+        "Com reposição: eventos independentes. Sem reposição: eventos dependentes.",
+        "Some probabilidades para 'ou'. Multiplique para 'e'."
+      ],
+      "questoes": [
+        {
+          "id": "q157-1",
+          "enunciado": "Ao lançar um dado, a probabilidade de obter um número maior que 4 é:",
+          "alternativas": {
+            "A": "1/6",
+            "B": "1/3",
+            "C": "1/2",
+            "D": "2/3",
+            "E": "5/6"
+          },
+          "correta": "B",
+          "explicacao": "Números maiores que 4: {5, 6}. P = 2/6 = 1/3.",
+          "dificuldade": "facil",
+          "tags": ["probabilidade", "dado"]
+        },
+        {
+          "id": "q157-2",
+          "enunciado": "Uma moeda é lançada 3 vezes. A probabilidade de obter exatamente 2 caras é:",
+          "alternativas": {
+            "A": "1/8",
+            "B": "1/4",
+            "C": "3/8",
+            "D": "1/2",
+            "E": "5/8"
+          },
+          "correta": "C",
+          "explicacao": "Espaço amostral: 2³ = 8. Casos favoráveis: {CCK, CKC, KCC} = 3. Ou C3,2 × (1/2)³ = 3/8.",
+          "dificuldade": "medio",
+          "tags": ["probabilidade", "moeda", "combinatória"]
+        },
+        {
+          "id": "q157-3",
+          "enunciado": "Uma urna tem 4 bolas brancas e 6 pretas. Retirando 2 bolas sem reposição, a probabilidade de ambas serem brancas é:",
+          "alternativas": {
+            "A": "4/25",
+            "B": "2/15",
+            "C": "4/15",
+            "D": "1/5",
+            "E": "6/25"
+          },
+          "correta": "B",
+          "explicacao": "P = (4/10) × (3/9) = 12/90 = 2/15. Sem reposição: a segunda depende da primeira.",
+          "dificuldade": "medio",
+          "tags": ["probabilidade", "urna", "dependentes"]
+        },
+        {
+          "id": "q157-4",
+          "enunciado": "Dois dados são lançados. A probabilidade de a soma ser 7 é:",
+          "alternativas": {
+            "A": "1/36",
+            "B": "5/36",
+            "C": "1/6",
+            "D": "7/36",
+            "E": "1/12"
+          },
+          "correta": "C",
+          "explicacao": "Casos com soma 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 casos. Total: 36. P = 6/36 = 1/6.",
+          "dificuldade": "medio",
+          "tags": ["probabilidade", "dados", "soma"]
+        },
+        {
+          "id": "q157-5",
+          "enunciado": "A probabilidade de um evento A é 0,3. A probabilidade de NÃO ocorrer A é:",
+          "alternativas": {
+            "A": "0,3",
+            "B": "0,7",
+            "C": "0,9",
+            "D": "0,1",
+            "E": "0,6"
+          },
+          "correta": "B",
+          "explicacao": "P(Ā) = 1 - P(A) = 1 - 0,3 = 0,7.",
+          "dificuldade": "facil",
+          "tags": ["probabilidade", "complementar"]
+        }
+      ]
+    },
+    {
+      "id": "m158",
+      "titulo": "Estatística: Medidas de Tendência Central",
+      "resumo": "Aprenda a calcular e interpretar média, moda e mediana.",
+      "topicos": [
+        {
+          "titulo": "Média Aritmética",
+          "conteudo": "Média aritmética simples: x̄ = (x₁ + x₂ + ... + xₙ)/n = Σxᵢ/n. Média ponderada: x̄ = (x₁f₁ + x₂f₂ + ... + xₙfₙ)/(f₁ + f₂ + ... + fₙ) = Σxᵢfᵢ/Σfᵢ. Propriedades: se todos valores aumentam k, média aumenta k. Se todos multiplicam por k, média multiplica por k. A média é sensível a valores extremos (outliers)."
+        },
+        {
+          "titulo": "Mediana e Moda",
+          "conteudo": "Mediana (Md): valor central quando dados ordenados. Se n ímpar: valor do meio. Se n par: média dos dois centrais. A mediana não é afetada por valores extremos - mais robusta que a média. Moda (Mo): valor mais frequente. Pode não existir (amodal), ser única (unimodal) ou múltipla (bimodal, multimodal). Comparação: em distribuições simétricas, média ≈ mediana ≈ moda. Em assimétricas à direita: média > mediana > moda."
+        },
+        {
+          "titulo": "Aplicações e Interpretação",
+          "conteudo": "Quando usar cada medida: Média - distribuições simétricas, cálculo de totais. Mediana - dados com outliers, salários, preços de imóveis. Moda - dados categóricos, tamanho mais vendido. Média de dados agrupados: use o ponto médio de cada classe. Para mediana em dados agrupados: identifique a classe mediana e interpole. A escolha da medida afeta a interpretação: 'salário médio' vs 'salário mediano' podem ser bem diferentes."
+        }
+      ],
+      "exemplos": [
+        "Dados: 2, 4, 6, 8, 10. Média = 30/5 = 6. Mediana = 6 (valor central). Moda: amodal.",
+        "Notas com pesos: 7×2 + 8×3 + 9×5 = 83. Média = 83/10 = 8,3.",
+        "Dados: 3, 5, 5, 7, 100. Média = 24. Mediana = 5. (Mediana melhor representa o típico.)"
+      ],
+      "dicas": [
+        "Mediana é melhor para dados com valores muito diferentes (outliers).",
+        "Moda é a única para dados qualitativos (ex: cor favorita).",
+        "Para mediana: primeiro ordene os dados!"
+      ],
+      "questoes": [
+        {
+          "id": "q158-1",
+          "enunciado": "A média aritmética dos números 4, 7, 8, 12 e 9 é:",
+          "alternativas": {
+            "A": "7",
+            "B": "8",
+            "C": "9",
+            "D": "10",
+            "E": "7,5"
+          },
+          "correta": "B",
+          "explicacao": "Média = (4 + 7 + 8 + 12 + 9)/5 = 40/5 = 8.",
+          "dificuldade": "facil",
+          "tags": ["estatística", "média"]
+        },
+        {
+          "id": "q158-2",
+          "enunciado": "A mediana do conjunto {3, 7, 8, 5, 12, 9} é:",
+          "alternativas": {
+            "A": "7",
+            "B": "7,5",
+            "C": "8",
+            "D": "8,5",
+            "E": "6"
+          },
+          "correta": "B",
+          "explicacao": "Ordenando: 3, 5, 7, 8, 9, 12. N = 6 (par), mediana = (7+8)/2 = 7,5.",
+          "dificuldade": "facil",
+          "tags": ["estatística", "mediana"]
+        },
+        {
+          "id": "q158-3",
+          "enunciado": "Em um conjunto de dados, a moda é 5. Isso significa que:",
+          "alternativas": {
+            "A": "5 é o maior valor",
+            "B": "5 é o valor central",
+            "C": "5 é o valor mais frequente",
+            "D": "5 é a média dos dados",
+            "E": "Há 5 dados no conjunto"
+          },
+          "correta": "C",
+          "explicacao": "A moda é o valor que aparece com maior frequência no conjunto de dados.",
+          "dificuldade": "facil",
+          "tags": ["estatística", "moda"]
+        },
+        {
+          "id": "q158-4",
+          "enunciado": "Um aluno teve notas 6, 7 e 8 com pesos 2, 3 e 5, respectivamente. Sua média ponderada é:",
+          "alternativas": {
+            "A": "7,0",
+            "B": "7,2",
+            "C": "7,4",
+            "D": "7,5",
+            "E": "7,1"
+          },
+          "correta": "B",
+          "explicacao": "Média = (6×2 + 7×3 + 8×5)/(2+3+5) = (12 + 21 + 40)/10 = 73/10 = 7,3... ≈ 7,2.",
+          "dificuldade": "medio",
+          "tags": ["estatística", "média ponderada"]
+        },
+        {
+          "id": "q158-5",
+          "enunciado": "Os salários de 5 funcionários são: R$ 1.200, R$ 1.500, R$ 1.800, R$ 2.000 e R$ 15.000. A medida mais adequada para representar o salário típico é:",
+          "alternativas": {
+            "A": "Média, pois considera todos os valores",
+            "B": "Moda, pois é o mais frequente",
+            "C": "Mediana, pois não é afetada pelo valor extremo",
+            "D": "Desvio padrão, pois mede dispersão",
+            "E": "Amplitude, pois mostra a variação"
+          },
+          "correta": "C",
+          "explicacao": "O salário de R$ 15.000 é um outlier que distorce a média. A mediana (R$ 1.800) representa melhor o valor típico, não sendo afetada pelo extremo.",
+          "dificuldade": "medio",
+          "tags": ["estatística", "mediana", "outlier"]
+        }
+      ]
+    },
+    {
+      "id": "m159",
+      "titulo": "Estatística: Medidas de Dispersão",
+      "resumo": "Compreenda variância, desvio padrão e outras medidas de dispersão.",
+      "topicos": [
+        {
+          "titulo": "Amplitude e Quartis",
+          "conteudo": "Amplitude: diferença entre maior e menor valor (At = máx - mín). Simples mas sensível a extremos. Quartis: dividem dados ordenados em 4 partes iguais. Q1 (25%), Q2 = mediana (50%), Q3 (75%). Intervalo interquartil: IQR = Q3 - Q1, mede dispersão central. Outliers: valores abaixo de Q1 - 1,5×IQR ou acima de Q3 + 1,5×IQR. Boxplot: gráfico que mostra mínimo, Q1, mediana, Q3, máximo e outliers."
+        },
+        {
+          "titulo": "Variância e Desvio Padrão",
+          "conteudo": "Variância (σ² ou s²): média dos quadrados dos desvios em relação à média. σ² = Σ(xᵢ - x̄)²/n. Fórmula alternativa: σ² = (Σxᵢ²/n) - x̄². Desvio padrão (σ ou s): raiz quadrada da variância. Tem a mesma unidade dos dados. Coeficiente de variação: CV = (σ/x̄) × 100%, permite comparar dispersões de diferentes conjuntos. Propriedades: se soma k a todos valores, σ não muda. Se multiplica por k, σ multiplica por |k|."
+        },
+        {
+          "titulo": "Interpretação e Aplicações",
+          "conteudo": "Desvio padrão baixo: dados concentrados próximos à média. Desvio padrão alto: dados espalhados. Regra empírica (distribuição normal): 68% dos dados em x̄ ± σ, 95% em x̄ ± 2σ, 99,7% em x̄ ± 3σ. Aplicações: controle de qualidade, análise de riscos, comparação de desempenhos. O CV permite comparar variabilidades entre grandezas diferentes (ex: altura vs peso)."
+        }
+      ],
+      "exemplos": [
+        "Dados: 2, 4, 6, 8, 10. Média = 6. Variância = [(16+4+0+4+16)/5] = 8. DP = √8 ≈ 2,83.",
+        "Notas: Turma A média 7 (DP=1), Turma B média 7 (DP=3). Turma A é mais homogênea.",
+        "Salários: média R$3.000, DP R$600. CV = 20%. Cerca de 68% ganham entre R$2.400 e R$3.600."
+      ],
+      "dicas": [
+        "Variância está em unidade², desvio padrão está na unidade original.",
+        "CV permite comparar dispersões de conjuntos com médias diferentes.",
+        "Se todos os valores são iguais, variância = desvio padrão = 0."
+      ],
+      "questoes": [
+        {
+          "id": "q159-1",
+          "enunciado": "A variância de um conjunto de dados é 16. O desvio padrão é:",
+          "alternativas": {
+            "A": "2",
+            "B": "4",
+            "C": "8",
+            "D": "256",
+            "E": "32"
+          },
+          "correta": "B",
+          "explicacao": "Desvio padrão = √variância = √16 = 4.",
+          "dificuldade": "facil",
+          "tags": ["estatística", "desvio padrão", "variância"]
+        },
+        {
+          "id": "q159-2",
+          "enunciado": "Dos conjuntos abaixo, qual tem maior dispersão em relação à média?",
+          "alternativas": {
+            "A": "{5, 5, 5, 5, 5}",
+            "B": "{4, 5, 5, 5, 6}",
+            "C": "{3, 4, 5, 6, 7}",
+            "D": "{1, 3, 5, 7, 9}",
+            "E": "{2, 4, 5, 6, 8}"
+          },
+          "correta": "D",
+          "explicacao": "Conjunto D tem amplitude 8 e valores mais afastados da média (5). Todos têm média 5, mas D tem maior dispersão (desvio padrão ≈ 2,83).",
+          "dificuldade": "medio",
+          "tags": ["estatística", "dispersão"]
+        },
+        {
+          "id": "q159-3",
+          "enunciado": "A amplitude do conjunto {12, 18, 15, 20, 8, 25} é:",
+          "alternativas": {
+            "A": "8",
+            "B": "13",
+            "C": "17",
+            "D": "25",
+            "E": "33"
+          },
+          "correta": "C",
+          "explicacao": "Amplitude = máximo - mínimo = 25 - 8 = 17.",
+          "dificuldade": "facil",
+          "tags": ["estatística", "amplitude"]
+        },
+        {
+          "id": "q159-4",
+          "enunciado": "Se todos os valores de um conjunto são multiplicados por 2, o desvio padrão:",
+          "alternativas": {
+            "A": "Não se altera",
+            "B": "Dobra",
+            "C": "Quadruplica",
+            "D": "Reduz pela metade",
+            "E": "Aumenta 2 unidades"
+          },
+          "correta": "B",
+          "explicacao": "Se multiplicar todos os valores por k, o desvio padrão multiplica por |k|. Então, multiplicando por 2, o DP dobra.",
+          "dificuldade": "medio",
+          "tags": ["estatística", "desvio padrão", "propriedades"]
+        },
+        {
+          "id": "q159-5",
+          "enunciado": "O coeficiente de variação é útil para:",
+          "alternativas": {
+            "A": "Calcular a média de um conjunto",
+            "B": "Comparar dispersões de conjuntos com médias diferentes",
+            "C": "Determinar o valor máximo",
+            "D": "Encontrar a mediana",
+            "E": "Calcular probabilidades"
+          },
+          "correta": "B",
+          "explicacao": "O CV = (σ/x̄)×100% é uma medida relativa de dispersão, permitindo comparar variabilidades de conjuntos com médias e/ou unidades diferentes.",
+          "dificuldade": "medio",
+          "tags": ["estatística", "coeficiente de variação"]
+        }
+      ]
+    },
+    {
+      "id": "m160",
+      "titulo": "Matemática Financeira Avançada",
+      "resumo": "Aprofunde seus conhecimentos em aplicações financeiras e análise de investimentos.",
+      "topicos": [
+        {
+          "titulo": "Sistemas de Amortização",
+          "conteudo": "SAC (Sistema de Amortização Constante): amortização fixa, juros decrescentes, parcelas decrescentes. Amortização = Principal/n. Parcela = Amortização + Juros do período. Tabela Price (Sistema Francês): parcelas fixas, amortização crescente, juros decrescentes. Parcela calculada por: PMT = PV × [i(1+i)ⁿ]/[(1+i)ⁿ-1]. Comparação: no SAC, paga-se menos juros totais, mas parcelas iniciais são maiores."
+        },
+        {
+          "titulo": "Valor Presente e Valor Futuro",
+          "conteudo": "Valor Futuro (VF ou FV): quanto um valor presente valerá no futuro. VF = VP(1+i)ⁿ. Valor Presente (VP ou PV): quanto um valor futuro vale hoje. VP = VF/(1+i)ⁿ. Séries de pagamentos: VP de anuidade = PMT × [(1+i)ⁿ-1]/[i(1+i)ⁿ]. Taxa equivalente: taxas que produzem mesmo montante em períodos diferentes. (1+iₐ) = (1+iₘ)¹². Taxa nominal vs efetiva: nominal é declarada, efetiva considera capitalização."
+        },
+        {
+          "titulo": "Análise de Investimentos",
+          "conteudo": "VPL (Valor Presente Líquido): soma dos fluxos de caixa trazidos a valor presente, menos investimento inicial. VPL > 0: projeto viável. TIR (Taxa Interna de Retorno): taxa que faz VPL = 0. TIR > taxa mínima de atratividade: projeto viável. Payback: tempo para recuperar o investimento. Inflação: taxa real ≈ taxa nominal - inflação. Fórmula exata: (1+real) = (1+nominal)/(1+inflação)."
+        }
+      ],
+      "exemplos": [
+        "Empréstimo R$12.000 em 12× pelo SAC a 2% a.m.: Amortização = R$1.000/mês. 1ª parcela = 1000 + 240 = R$1.240.",
+        "R$1.000 aplicados a 1% a.m. por 12 meses: VF = 1000×(1,01)¹² ≈ R$1.126,83.",
+        "Taxa de 12% a.a. = taxa mensal de (1,12)^(1/12) - 1 ≈ 0,949% a.m."
+      ],
+      "dicas": [
+        "SAC: parcelas diminuem. Price: parcelas constantes.",
+        "Valor presente 'desconta' para hoje. Valor futuro 'capitaliza' para o futuro.",
+        "Taxa efetiva mensal: não simplesmente dividir a anual por 12 em juros compostos!"
+      ],
+      "questoes": [
+        {
+          "id": "q160-1",
+          "enunciado": "Um empréstimo de R$ 10.000 será pago em 10 parcelas pelo SAC com taxa de 1% a.m. O valor da primeira parcela é:",
+          "alternativas": {
+            "A": "R$ 1.000,00",
+            "B": "R$ 1.100,00",
+            "C": "R$ 1.010,00",
+            "D": "R$ 900,00",
+            "E": "R$ 1.050,00"
+          },
+          "correta": "B",
+          "explicacao": "No SAC: Amortização = 10.000/10 = R$ 1.000. Juros da 1ª parcela = 10.000 × 0,01 = R$ 100. Parcela = 1.000 + 100 = R$ 1.100.",
+          "dificuldade": "medio",
+          "tags": ["matemática financeira", "SAC", "amortização"]
+        },
+        {
+          "id": "q160-2",
+          "enunciado": "Qual o valor presente de R$ 1.331,00 a ser recebido daqui a 3 anos, a uma taxa de 10% a.a.?",
+          "alternativas": {
+            "A": "R$ 1.000,00",
+            "B": "R$ 1.100,00",
+            "C": "R$ 1.210,00",
+            "D": "R$ 900,00",
+            "E": "R$ 1.200,00"
+          },
+          "correta": "A",
+          "explicacao": "VP = VF/(1+i)ⁿ = 1331/(1,1)³ = 1331/1,331 = R$ 1.000,00.",
+          "dificuldade": "medio",
+          "tags": ["matemática financeira", "valor presente"]
+        },
+        {
+          "id": "q160-3",
+          "enunciado": "A taxa mensal equivalente a 60% ao ano, em juros compostos, é aproximadamente:",
+          "alternativas": {
+            "A": "5%",
+            "B": "4%",
+            "C": "4,5%",
+            "D": "3,9%",
+            "E": "6%"
+          },
+          "correta": "D",
+          "explicacao": "(1+im)¹² = 1,60 → 1+im = 1,60^(1/12) ≈ 1,039 → im ≈ 3,9% a.m.",
+          "dificuldade": "dificil",
+          "tags": ["matemática financeira", "taxa equivalente"]
+        },
+        {
+          "id": "q160-4",
+          "enunciado": "Um investimento rende 15% ao ano nominalmente. Se a inflação foi de 5%, a taxa de juros real aproximada é:",
+          "alternativas": {
+            "A": "10%",
+            "B": "9,5%",
+            "C": "20%",
+            "D": "5%",
+            "E": "7,5%"
+          },
+          "correta": "B",
+          "explicacao": "(1+real) = (1+nominal)/(1+inflação) = 1,15/1,05 ≈ 1,095. Taxa real ≈ 9,5%.",
+          "dificuldade": "medio",
+          "tags": ["matemática financeira", "inflação", "taxa real"]
+        },
+        {
+          "id": "q160-5",
+          "enunciado": "Comparando SAC e Tabela Price para um mesmo empréstimo, prazo e taxa, pode-se afirmar que:",
+          "alternativas": {
+            "A": "No SAC, as parcelas são constantes",
+            "B": "Na Price, paga-se menos juros totais",
+            "C": "No SAC, as parcelas iniciais são menores",
+            "D": "No SAC, paga-se menos juros totais",
+            "E": "Na Price, as parcelas são decrescentes"
+          },
+          "correta": "D",
+          "explicacao": "No SAC, como a amortização é constante e os juros incidem sobre saldo devedor decrescente, o total de juros pagos é menor que na Price. Porém, as parcelas iniciais do SAC são maiores.",
+          "dificuldade": "medio",
+          "tags": ["matemática financeira", "SAC", "Price"]
+        }
+      ]
+    }
+  ]
+}

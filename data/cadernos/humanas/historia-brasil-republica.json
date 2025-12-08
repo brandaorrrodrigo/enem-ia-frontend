@@ -1,0 +1,1165 @@
+{
+  "id": "historia-brasil-republica",
+  "slug": "historia-brasil-republica",
+  "titulo": "História do Brasil República",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "O Brasil republicano desde 1889 até a atualidade: República Velha, Era Vargas, Democracia, Ditadura Militar e Nova República.",
+  "icone": "Flag",
+  "cor": "from-green-600 to-emerald-600",
+  "tempoEstimado": "12 horas",
+  "fpRecompensa": 600,
+  "tags": ["história", "república", "vargas", "ditadura", "democracia", "ENEM"],
+  "modulos": [
+    {
+      "id": "m61",
+      "titulo": "República Velha - Política dos Governadores",
+      "resumo": "A Primeira República (1889-1930), a política café com leite, o coronelismo e as estruturas de poder oligárquico.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A República Velha (1889-1930) foi dominada pelas oligarquias estaduais, especialmente de São Paulo e Minas Gerais. O sistema político era excludente, com fraudes eleitorais e domínio dos coronéis. No ENEM, esse período é fundamental para entender as bases políticas brasileiras e suas contradições."
+        },
+        {
+          "titulo": "República da Espada (1889-1894)",
+          "conteudo": "Os dois primeiros presidentes foram militares: Deodoro da Fonseca (1889-1891) e Floriano Peixoto (1891-1894). Período de consolidação: Constituição de 1891 (federalista, presidencialista, laica, voto descoberto masculino). Encilhamento: política econômica de Rui Barbosa que gerou especulação e crise. Revoltas: Revolução Federalista (RS), Revolta da Armada (RJ). Os militares não conseguiram estabilizar o regime, abrindo caminho para as oligarquias civis."
+        },
+        {
+          "titulo": "Política dos Governadores e Café com Leite",
+          "conteudo": "A partir de Campos Sales (1898-1902), estabeleceu-se a 'política dos governadores': o presidente apoiava os governadores estaduais, que garantiam maioria parlamentar favorável. Coronelismo: poder local dos coronéis (chefes políticos rurais) que controlavam votos através de favores e ameaças. Voto de cabresto: eleitores votavam conforme determinação do coronel (voto descoberto facilitava controle). Comissão de Verificação: validava ou anulava eleições, garantindo eleição dos candidatos oficiais. Café com Leite: alternância entre paulistas (café) e mineiros (leite) na presidência, dominando a política nacional."
+        },
+        {
+          "titulo": "Economia e Política do Café",
+          "conteudo": "O café era base da economia (70% das exportações). A política econômica servia aos interesses cafeeiros. Convênio de Taubaté (1906): acordo entre SP, MG e RJ para valorização do café - o governo comprava excedentes para manter preços altos, socializando prejuízos. Consequência: superprodução crônica, dependência externa, negligência de outros setores. A Crise de 1929 devastaria esse modelo."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Coronelismo",
+          "descricao": "Sistema de poder local em que coronéis (grandes proprietários rurais) controlavam os votos de sua região através de favores (empregos, proteção) e ameaças. O voto descoberto permitia verificar se o eleitor obedecia. Os coronéis se articulavam com governadores (política dos governadores)."
+        },
+        {
+          "titulo": "Convênio de Taubaté (1906)",
+          "descricao": "Acordo de valorização do café: governos estaduais compravam excedentes com empréstimos externos para manter preços altos. Os lucros eram privatizados (cafeicultores), os prejuízos socializados (dívida pública). Modelo insustentável que colapsaria em 1929."
+        }
+      ],
+      "dicas": [
+        "Política dos governadores = presidente apoia governadores em troca de maioria parlamentar",
+        "Coronelismo = poder local + voto de cabresto + troca de favores",
+        "Café com Leite = alternância SP (café) e MG (leite) na presidência"
+      ],
+      "questoes": [
+        {
+          "id": "q61-1",
+          "enunciado": "A 'política dos governadores', estabelecida na República Velha, consistia em:",
+          "alternativas": {
+            "A": "Eleições diretas em que o povo escolhia livremente os governadores",
+            "B": "Acordo em que o presidente apoiava os governadores estaduais, que garantiam maioria parlamentar favorável",
+            "C": "Sistema em que os governadores elegiam o presidente sem participação popular",
+            "D": "Oposição permanente entre presidente e governadores",
+            "E": "Extinção dos governos estaduais em favor de centralização"
+          },
+          "correta": "B",
+          "explicacao": "A política dos governadores era acordo entre presidente e governadores estaduais: o presidente apoiava as oligarquias estaduais, que em troca garantiam eleição de deputados federais favoráveis ao governo. A Comissão de Verificação garantia a 'degola' de candidatos de oposição.",
+          "dificuldade": "medio",
+          "tags": ["política dos governadores", "oligarquias", "república velha"]
+        },
+        {
+          "id": "q61-2",
+          "enunciado": "O coronelismo na República Velha caracterizava-se por:",
+          "alternativas": {
+            "A": "Poder militar dos coronéis do Exército sobre a política nacional",
+            "B": "Controle político local por grandes proprietários rurais através de favores e voto de cabresto",
+            "C": "Sistema democrático com eleições livres e transparentes",
+            "D": "Oposição dos coronéis ao governo federal",
+            "E": "Poder exclusivo dos coronéis nas capitais estaduais"
+          },
+          "correta": "B",
+          "explicacao": "Coronelismo era sistema de poder local: coronéis (título da Guarda Nacional, geralmente grandes proprietários) controlavam votos em suas áreas através de favores (empregos, proteção) e ameaças. O voto descoberto (aberto) permitia verificar se eleitores obedeciam. Era base do sistema oligárquico.",
+          "dificuldade": "facil",
+          "tags": ["coronelismo", "voto de cabresto", "poder local"]
+        },
+        {
+          "id": "q61-3",
+          "enunciado": "A expressão 'café com leite' referia-se à:",
+          "alternativas": {
+            "A": "Política de incentivo à produção leiteira em São Paulo",
+            "B": "Alternância de paulistas e mineiros na presidência, representando as oligarquias do café (SP) e do leite (MG)",
+            "C": "Aliança entre cafeicultores e indústria de laticínios",
+            "D": "Dieta alimentar imposta aos trabalhadores rurais",
+            "E": "Política de distribuição de alimentos aos pobres"
+          },
+          "correta": "B",
+          "explicacao": "Café com Leite era o acordo (nem sempre cumprido) de alternância na presidência entre São Paulo (maior produtor de café) e Minas Gerais (maior produtor de leite, também com café). Representava o domínio das duas maiores oligarquias estaduais sobre a política nacional.",
+          "dificuldade": "facil",
+          "tags": ["café com leite", "oligarquias", "alternância"]
+        },
+        {
+          "id": "q61-4",
+          "enunciado": "O Convênio de Taubaté (1906) estabeleceu:",
+          "alternativas": {
+            "A": "A abolição do trabalho imigrante nas fazendas de café",
+            "B": "Política de valorização do café através da compra de excedentes pelo governo para manter preços altos",
+            "C": "A nacionalização de todas as fazendas de café",
+            "D": "Acordo de livre comércio com os Estados Unidos",
+            "E": "Proibição da exportação de café"
+          },
+          "correta": "B",
+          "explicacao": "O Convênio de Taubaté foi acordo entre SP, MG e RJ para valorização do café: os governos comprariam excedentes da produção (com empréstimos externos) para reduzir oferta e manter preços altos no mercado internacional. Socializava prejuízos e privatizava lucros.",
+          "dificuldade": "medio",
+          "tags": ["taubaté", "valorização", "café"]
+        },
+        {
+          "id": "q61-5",
+          "enunciado": "A Constituição de 1891, primeira da República, estabelecia:",
+          "alternativas": {
+            "A": "Monarquia parlamentarista com voto universal",
+            "B": "República federativa, presidencialista, com separação Igreja-Estado e voto masculino descoberto",
+            "C": "República unitária com forte centralização no Rio de Janeiro",
+            "D": "Manutenção do Poder Moderador e do padroado",
+            "E": "Voto feminino e secreto para todos os brasileiros"
+          },
+          "correta": "B",
+          "explicacao": "A Constituição de 1891 estabeleceu: república federativa (estados com autonomia), presidencialismo, separação Estado-Igreja (fim do padroado), voto masculino descoberto (excluindo analfabetos, mulheres, soldados, religiosos). Era liberal na forma, oligárquica na prática.",
+          "dificuldade": "medio",
+          "tags": ["constituição 1891", "federalismo", "república"]
+        }
+      ]
+    },
+    {
+      "id": "m62",
+      "titulo": "República Velha - Movimentos Sociais e Crise",
+      "resumo": "Os movimentos sociais da República Velha, o tenentismo e a crise que levou à Revolução de 1930.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A República Velha, apesar do domínio oligárquico, foi marcada por importantes movimentos sociais que contestavam a ordem estabelecida. Revoltas populares, movimento operário e tenentismo expressavam tensões da sociedade em transformação. A crise de 1929 e a Revolução de 1930 encerraram o período."
+        },
+        {
+          "titulo": "Revoltas Populares",
+          "conteudo": "Canudos (Bahia, 1896-1897): comunidade liderada por Antônio Conselheiro no sertão baiano. Resistiu a quatro expedições militares. Foi destruída pelo Exército em campanha brutal. Euclides da Cunha narrou em 'Os Sertões'. Contestado (SC/PR, 1912-1916): conflito na fronteira por terras (coronéis x posseiros) com liderança messiânica (monges). Brutal repressão. Revolta da Vacina (RJ, 1904): contra vacinação obrigatória no contexto da reforma urbana de Pereira Passos. Expressava tensões da modernização excludente. Revolta da Chibata (RJ, 1910): marinheiros (maioria negra) contra castigos corporais, liderada por João Cândido."
+        },
+        {
+          "titulo": "Movimento Operário",
+          "conteudo": "A industrialização incipiente criou classe operária urbana, principalmente em SP e RJ. Condições: jornadas de 12-16 horas, trabalho infantil, salários baixos, sem direitos. Anarquismo: ideologia predominante até anos 1920, trazida por imigrantes italianos e espanhóis. Defendia ação direta (greves) e rejeição do Estado. Greve Geral de 1917 (SP): paralisou a cidade, com repressão violenta, mas conquistou algumas melhorias. PCB (1922): fundação do Partido Comunista Brasileiro, que disputaria hegemonia com anarquistas. Reação governamental: 'questão social é caso de polícia' (frase atribuída a Washington Luís)."
+        },
+        {
+          "titulo": "Tenentismo e Crise da República Velha",
+          "conteudo": "Tenentismo: movimento de jovens oficiais (tenentes) contra a República oligárquica. Queriam moralização política, voto secreto, centralização. Revoltas: Revolta do Forte de Copacabana (1922, 'Os 18 do Forte'), Revolução de 1924 (SP), Coluna Prestes (1925-1927, marchou pelo Brasil). Crise de 1929: a quebra da bolsa de NY devastou a economia cafeeira (queda de preços, estoques encalhados). O modelo agroexportador entrou em colapso. Eleição de 1930: oligarquia paulista indicou Júlio Prestes, quebrando acordo com MG. A oposição (Aliança Liberal: MG, RS, PB) lançou Getúlio Vargas. Prestes venceu (fraude), mas a Revolução de 1930 depôs Washington Luís e impediu sua posse."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Guerra de Canudos",
+          "descricao": "Comunidade de Antônio Conselheiro no sertão baiano resistiu a 4 expedições militares (1896-1897). Foi destruída pela última, com milhares de mortos. Euclides da Cunha, enviado como correspondente, narrou em 'Os Sertões', denunciando o massacre."
+        },
+        {
+          "titulo": "Coluna Prestes",
+          "descricao": "Marcha de tenentes rebeldes (1925-1927) pelo interior do Brasil, percorrendo 25 mil km sem ser derrotada. Liderada por Luís Carlos Prestes ('Cavaleiro da Esperança'), buscava sublevar a população contra as oligarquias. Não conseguiu, mas tornou Prestes herói popular."
+        }
+      ],
+      "dicas": [
+        "Canudos e Contestado = revoltas messiânicas do sertão contra modernização excludente",
+        "Tenentismo = jovens oficiais contra oligarquias, queriam moralização",
+        "Revolução de 1930 = crise do café + ruptura do café com leite + tenentismo"
+      ],
+      "questoes": [
+        {
+          "id": "q62-1",
+          "enunciado": "A Guerra de Canudos (1896-1897) foi um conflito que expressou:",
+          "alternativas": {
+            "A": "Aliança entre sertanejos e o governo federal contra invasores estrangeiros",
+            "B": "Tensões sociais do sertão nordestino contra a República oligárquica e excludente",
+            "C": "Revolta de cafeicultores paulistas contra impostos federais",
+            "D": "Movimento operário urbano por melhores condições de trabalho",
+            "E": "Conflito entre católicos e protestantes pela hegemonia religiosa"
+          },
+          "correta": "B",
+          "explicacao": "Canudos expressava tensões do sertão: população pobre, marginalizada pela República que não lhes oferecia nada, reuniu-se em comunidade alternativa sob liderança messiânica de Antônio Conselheiro. A República enviou o Exército para destruir o que via como ameaça à ordem.",
+          "dificuldade": "medio",
+          "tags": ["canudos", "sertão", "exclusão"]
+        },
+        {
+          "id": "q62-2",
+          "enunciado": "O movimento tenentista caracterizava-se por:",
+          "alternativas": {
+            "A": "Apoio irrestrito às oligarquias estaduais e à política do café com leite",
+            "B": "Contestação da República oligárquica por jovens oficiais que queriam moralização política e voto secreto",
+            "C": "Movimento de trabalhadores rurais por reforma agrária",
+            "D": "Aliança entre tenentes e coronéis para manter o poder local",
+            "E": "Defesa da restauração da monarquia"
+          },
+          "correta": "B",
+          "explicacao": "O tenentismo foi movimento de jovens oficiais (tenentes) contra a República oligárquica. Criticavam a corrupção, fraudes eleitorais e domínio das oligarquias. Defendiam voto secreto, moralização, centralização. Revoltas como Copacabana (1922), SP (1924) e Coluna Prestes expressaram esse movimento.",
+          "dificuldade": "medio",
+          "tags": ["tenentismo", "jovens oficiais", "moralização"]
+        },
+        {
+          "id": "q62-3",
+          "enunciado": "A Greve Geral de 1917 em São Paulo foi significativa porque:",
+          "alternativas": {
+            "A": "Foi a primeira greve da história brasileira",
+            "B": "Paralisou a cidade e demonstrou a força do movimento operário, embora duramente reprimida",
+            "C": "Foi liderada pelo governo para controlar os trabalhadores",
+            "D": "Resultou na imediata conquista de todos os direitos trabalhistas",
+            "E": "Foi apoiada pelos cafeicultores paulistas"
+          },
+          "correta": "B",
+          "explicacao": "A Greve Geral de 1917 paralisou São Paulo, demonstrando a força do nascente movimento operário (influenciado pelo anarquismo). Foi reprimida com violência, mas conquistou algumas melhorias. Mostrou que a 'questão social' não era apenas 'caso de polícia'.",
+          "dificuldade": "medio",
+          "tags": ["greve 1917", "movimento operário", "anarquismo"]
+        },
+        {
+          "id": "q62-4",
+          "enunciado": "A Revolução de 1930 pôs fim à República Velha devido a:",
+          "alternativas": {
+            "A": "Eleição democrática de Getúlio Vargas com ampla margem",
+            "B": "Crise econômica (1929), ruptura do acordo café com leite e articulação de oposição (tenentes + oligarquias dissidentes)",
+            "C": "Intervenção militar estrangeira que derrubou o governo",
+            "D": "Morte natural de todos os líderes oligárquicos",
+            "E": "Revolução popular liderada por trabalhadores urbanos"
+          },
+          "correta": "B",
+          "explicacao": "A Revolução de 1930 resultou de múltiplos fatores: a Crise de 1929 devastou a economia cafeeira; SP rompeu o acordo com MG ao indicar outro paulista (Júlio Prestes); a Aliança Liberal (MG, RS, PB + tenentes) articulou-se em torno de Vargas; após fraude eleitoral e assassinato de João Pessoa, houve levante armado.",
+          "dificuldade": "medio",
+          "tags": ["revolução 1930", "crise", "vargas"]
+        },
+        {
+          "id": "q62-5",
+          "enunciado": "A Revolta da Chibata (1910) foi um levante de:",
+          "alternativas": {
+            "A": "Cafeicultores paulistas contra impostos federais",
+            "B": "Marinheiros, em sua maioria negros, contra os castigos corporais ainda aplicados na Marinha",
+            "C": "Operários têxteis por melhores salários",
+            "D": "Tenentes do Exército contra o governo oligárquico",
+            "E": "Sertanejos contra a vacinação obrigatória"
+          },
+          "correta": "B",
+          "explicacao": "A Revolta da Chibata foi levante de marinheiros (maioria negra e pobre) contra os castigos corporais (chibatadas) ainda aplicados na Marinha brasileira, herança da escravidão. Liderados por João Cândido, tomaram navios e ameaçaram bombardear o Rio. Foram anistiados, depois traídos e perseguidos.",
+          "dificuldade": "facil",
+          "tags": ["revolta da chibata", "joão cândido", "marinheiros"]
+        }
+      ]
+    },
+    {
+      "id": "m63",
+      "titulo": "Era Vargas (1930-1945)",
+      "resumo": "O governo de Getúlio Vargas desde a Revolução de 1930 até o fim do Estado Novo, incluindo política, economia e trabalhismo.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A Era Vargas (1930-1945) transformou o Brasil: centralização política, industrialização, legislação trabalhista, mas também autoritarismo e repressão. Vargas dominou a política brasileira por 15 anos contínuos e retornaria eleito (1951-1954). No ENEM, esse período é essencial para entender a formação do Brasil contemporâneo."
+        },
+        {
+          "titulo": "Governo Provisório (1930-1934)",
+          "conteudo": "Vargas assumiu como chefe do Governo Provisório após a Revolução de 1930. Medidas centralizadoras: interventores nos estados (substituindo governadores eleitos), fechamento de legislativos. Revolução Constitucionalista de 1932: São Paulo exigiu constituição e eleições. Foi derrotado militarmente, mas conseguiu a convocação da Constituinte. Constituição de 1934: avançada para a época - voto feminino, justiça eleitoral, direitos trabalhistas constitucionalizados, nacionalismo econômico. Vargas foi eleito presidente pelo Congresso."
+        },
+        {
+          "titulo": "Período Constitucional e Golpe (1934-1937)",
+          "conteudo": "O período foi marcado pela polarização: Ação Integralista Brasileira (AIB): movimento fascista liderado por Plínio Salgado. Uniforme verde, saudação 'anauê', nacionalismo autoritário. Aliança Nacional Libertadora (ANL): frente antifascista com participação comunista, liderada por Prestes. Foi fechada em 1935. Intentona Comunista (1935): levantes militares em Natal, Recife e Rio, rapidamente derrotados. Deu pretexto para repressão e estado de sítio. Golpe do Estado Novo (1937): usando pretexto de plano comunista falso (Plano Cohen), Vargas deu golpe, fechou Congresso, outorgou nova constituição e instalou ditadura."
+        },
+        {
+          "titulo": "Estado Novo (1937-1945)",
+          "conteudo": "Ditadura varguista: constituição outorgada ('Polaca' - inspirada no fascismo), censura (DIP - Departamento de Imprensa e Propaganda), repressão a oposições, prisões políticas (Olga Benário entregue aos nazistas). Política trabalhista: CLT (1943) consolidou direitos trabalhistas, salário mínimo (1940), carteira de trabalho, Justiça do Trabalho. O trabalhador foi incorporado como cidadão, mas sob controle estatal (sindicatos atrelados). Industrialização: substituição de importações, CSN (siderurgia), Vale do Rio Doce (mineração). Brasil na II Guerra: após hesitação, declarou guerra ao Eixo (1942). Enviou a FEB (Força Expedicionária Brasileira) à Itália. A contradição de lutar pela democracia e viver em ditadura acelerou o fim do Estado Novo (1945)."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "CLT (1943)",
+          "descricao": "A Consolidação das Leis do Trabalho reuniu legislação trabalhista: jornada de 8 horas, férias, décimo terceiro, proteção ao trabalho feminino e do menor, sindicatos. Era conquista, mas também controle: sindicatos eram tutelados pelo Estado (unicidade sindical, imposto sindical)."
+        },
+        {
+          "titulo": "DIP",
+          "descricao": "O Departamento de Imprensa e Propaganda era órgão de censura e propaganda do Estado Novo. Controlava imprensa, rádio, cinema, teatro. Produzia material de exaltação a Vargas ('pai dos pobres'). Hora do Brasil era obrigatória."
+        }
+      ],
+      "dicas": [
+        "Era Vargas = centralização + industrialização + trabalhismo + autoritarismo",
+        "CLT = direitos trabalhistas, mas sindicatos controlados pelo Estado",
+        "Estado Novo = ditadura (1937-1945), inspiração fascista, DIP, repressão"
+      ],
+      "questoes": [
+        {
+          "id": "q63-1",
+          "enunciado": "A Revolução Constitucionalista de 1932, em São Paulo, tinha como principal reivindicação:",
+          "alternativas": {
+            "A": "A restauração da monarquia e volta de D. Pedro II",
+            "B": "A convocação de Assembleia Constituinte e eleições, contra o governo provisório de Vargas",
+            "C": "A independência de São Paulo como nação separada",
+            "D": "A implantação do comunismo no Brasil",
+            "E": "A manutenção de Vargas no poder sem eleições"
+          },
+          "correta": "B",
+          "explicacao": "A Revolução de 1932 em São Paulo exigia constitucionalização (assembleia constituinte, constituição, eleições), contra o Governo Provisório de Vargas que governava por decreto com interventores. SP foi derrotado militarmente, mas conseguiu a convocação da Constituinte (1933) que fez a Constituição de 1934.",
+          "dificuldade": "medio",
+          "tags": ["revolução 1932", "constituinte", "são paulo"]
+        },
+        {
+          "id": "q63-2",
+          "enunciado": "O Estado Novo (1937-1945) foi:",
+          "alternativas": {
+            "A": "Período de democracia plena com eleições livres e liberdade de imprensa",
+            "B": "Ditadura varguista com constituição outorgada, censura (DIP) e repressão a oposições",
+            "C": "Governo parlamentarista com primeiro-ministro escolhido pelo Congresso",
+            "D": "Período de anarquia sem qualquer forma de governo central",
+            "E": "Restauração da República Velha com retorno das oligarquias ao poder"
+          },
+          "correta": "B",
+          "explicacao": "O Estado Novo foi ditadura: Vargas deu golpe (1937), fechou Congresso, outorgou constituição autoritária ('Polaca'), instalou censura (DIP), prendeu opositores. Não havia eleições, partidos ou liberdades políticas. Durou até 1945, quando Vargas foi deposto.",
+          "dificuldade": "facil",
+          "tags": ["estado novo", "ditadura", "vargas"]
+        },
+        {
+          "id": "q63-3",
+          "enunciado": "A CLT (Consolidação das Leis do Trabalho), de 1943, representou:",
+          "alternativas": {
+            "A": "Abolição de todos os direitos trabalhistas existentes",
+            "B": "Reunião e ampliação de direitos trabalhistas, mas com sindicatos tutelados pelo Estado",
+            "C": "Liberdade total para sindicatos sem qualquer intervenção estatal",
+            "D": "Proibição de greves e de qualquer organização operária",
+            "E": "Importação integral da legislação trabalhista americana"
+          },
+          "correta": "B",
+          "explicacao": "A CLT consolidou legislação trabalhista: jornada de 8 horas, férias, décimo terceiro, proteções diversas. Era conquista real, mas os sindicatos eram tutelados: unicidade sindical (um sindicato por categoria), imposto sindical obrigatório, intervenção do Ministério do Trabalho. Direitos com controle.",
+          "dificuldade": "medio",
+          "tags": ["CLT", "trabalhismo", "sindicatos"]
+        },
+        {
+          "id": "q63-4",
+          "enunciado": "Durante o Estado Novo, a política econômica de Vargas caracterizou-se por:",
+          "alternativas": {
+            "A": "Total abertura ao capital estrangeiro e abandono da indústria nacional",
+            "B": "Industrialização por substituição de importações, com criação de estatais como CSN e Vale do Rio Doce",
+            "C": "Retorno ao modelo agroexportador baseado exclusivamente no café",
+            "D": "Privatização de todas as empresas estatais existentes",
+            "E": "Proibição de qualquer atividade industrial no território nacional"
+          },
+          "correta": "B",
+          "explicacao": "A Era Vargas promoveu industrialização por substituição de importações: produzir no Brasil o que antes era importado. Criou estatais estratégicas: CSN (Companhia Siderúrgica Nacional, siderurgia), Vale do Rio Doce (mineração). Era nacionalismo econômico com forte papel do Estado.",
+          "dificuldade": "facil",
+          "tags": ["industrialização", "CSN", "estatais"]
+        },
+        {
+          "id": "q63-5",
+          "enunciado": "A participação do Brasil na Segunda Guerra Mundial contribuiu para o fim do Estado Novo porque:",
+          "alternativas": {
+            "A": "O Brasil foi derrotado na guerra e obrigado a mudar de regime",
+            "B": "A contradição de lutar pela democracia na Europa enquanto vivia sob ditadura interna fortaleceu pressões por democratização",
+            "C": "Vargas foi morto em combate na Itália",
+            "D": "Os Estados Unidos invadiram o Brasil e impuseram novo governo",
+            "E": "A guerra não teve qualquer relação com a política interna brasileira"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil entrou na guerra ao lado dos Aliados (EUA, Inglaterra) contra o Eixo fascista. A contradição era evidente: lutar contra o fascismo na Europa enquanto vivia sob ditadura com inspiração fascista (Estado Novo). Isso fortaleceu pressões internas por democratização, contribuindo para a queda de Vargas em 1945.",
+          "dificuldade": "medio",
+          "tags": ["segunda guerra", "democratização", "contradição"]
+        }
+      ]
+    },
+    {
+      "id": "m64",
+      "titulo": "República Populista (1945-1964)",
+      "resumo": "O período democrático entre o fim do Estado Novo e o golpe de 1964, incluindo governos de Dutra, Vargas, JK, Jânio e Jango.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O período 1945-1964 é chamado de República Populista ou Democracia Populista: havia eleições, mas líderes carismáticos mobilizavam as massas com promessas de benefícios. Foi período de industrialização acelerada (JK), crises políticas e crescente polarização que culminou no golpe de 1964."
+        },
+        {
+          "titulo": "Redemocratização e Governo Dutra (1945-1951)",
+          "conteudo": "Vargas foi deposto (1945) e eleições foram realizadas. Partidos da era: PSD (situação varguista), UDN (oposição liberal), PTB (trabalhismo varguista), PCB (comunistas, cassado em 1947). Constituição de 1946: democrática, restabeleceu liberdades, federalismo, direitos sociais. Eurico Gaspar Dutra (PSD): governo conservador, alinhamento aos EUA (Guerra Fria), cassação do PCB, contenção salarial. Economia: início da industrialização de bens de consumo duráveis."
+        },
+        {
+          "titulo": "Segundo Governo Vargas e Suicídio (1951-1954)",
+          "conteudo": "Vargas voltou eleito pelo voto popular (1950), com discurso nacionalista e trabalhista. Políticas: criação da Petrobras (1953), proposta de Eletrobras, aumento do salário mínimo (100%). Oposição: UDN e setores conservadores atacavam o 'populismo' e o nacionalismo. Crise: atentado da Rua Tonelero (contra Carlos Lacerda, matou major da Aeronáutica) envolveu guarda-costas de Vargas. Pressionado por militares a renunciar, Vargas suicidou-se (24/agosto/1954), deixando carta-testamento que denunciava 'forças ocultas' e 'campanha subterrânea dos grupos internacionais'. O suicídio gerou comoção popular e salvou o legado varguista."
+        },
+        {
+          "titulo": "JK, Jânio e Jango",
+          "conteudo": "Juscelino Kubitschek (1956-1961): desenvolvimentismo, Plano de Metas ('50 anos em 5'), construção de Brasília, indústria automobilística. Crescimento acelerado com inflação e dívida. Jânio Quadros (1961): eleito pela UDN, renunciou após 7 meses em manobra que fracassou. João Goulart (1961-1964): vice de Jânio, quase impedido de assumir (Campanha da Legalidade, RS). Governou primeiro em parlamentarismo imposto, depois presidencialismo (plebiscito 1963). Reformas de Base: agrária, urbana, tributária, educacional, eleitoral. Polarização: esquerda pressionava por reformas radicais; direita (UDN, militares, empresários, classe média, Igreja) via comunismo. Em 31/março/1964, golpe militar depôs Jango."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Carta-Testamento de Vargas",
+          "descricao": "Antes de se suicidar (1954), Vargas deixou carta denunciando grupos internacionais e campanha contra seu governo nacionalista. A frase 'Saio da vida para entrar na História' tornou-se célebre. O suicídio reverteu a crise contra seus opositores."
+        },
+        {
+          "titulo": "Plano de Metas (JK)",
+          "descricao": "O Plano de Metas de JK tinha 31 objetivos em energia, transportes, alimentação, indústria de base e educação. A 'meta síntese' era Brasília. Priorizou rodovias e indústria automobilística. '50 anos em 5' foi o lema, com crescimento acelerado mas também inflação e dívida."
+        }
+      ],
+      "dicas": [
+        "Vargas voltou eleito (1950-1954), suicidou-se pressionado, carta-testamento",
+        "JK = desenvolvimentismo, Plano de Metas, Brasília, '50 anos em 5'",
+        "Jango = Reformas de Base, polarização, golpe de 1964"
+      ],
+      "questoes": [
+        {
+          "id": "q64-1",
+          "enunciado": "O suicídio de Getúlio Vargas em 1954 teve como consequência política:",
+          "alternativas": {
+            "A": "A imediata tomada do poder pelos militares",
+            "B": "O fortalecimento da oposição udenista e consolidação de seu projeto",
+            "C": "Comoção popular que reverteu a crise contra os opositores e preservou o legado varguista",
+            "D": "O fim definitivo do trabalhismo na política brasileira",
+            "E": "A restauração da monarquia por breve período"
+          },
+          "correta": "C",
+          "explicacao": "O suicídio de Vargas gerou comoção popular e reverteu a crise contra seus opositores. A carta-testamento denunciando 'forças ocultas' e 'grupos internacionais' mobilizou as massas. Em vez de enterrar o varguismo, o suicídio preservou e fortaleceu seu legado político.",
+          "dificuldade": "medio",
+          "tags": ["vargas", "suicídio", "consequências"]
+        },
+        {
+          "id": "q64-2",
+          "enunciado": "O governo de Juscelino Kubitschek (1956-1961) ficou marcado por:",
+          "alternativas": {
+            "A": "Estagnação econômica e abandono de projetos de infraestrutura",
+            "B": "Desenvolvimentismo acelerado, Plano de Metas e construção de Brasília",
+            "C": "Ruptura com o capitalismo e implantação do socialismo",
+            "D": "Fechamento do Congresso e instalação de ditadura",
+            "E": "Retorno ao modelo agroexportador sem industrialização"
+          },
+          "correta": "B",
+          "explicacao": "JK promoveu desenvolvimentismo acelerado: Plano de Metas com 31 objetivos em diversos setores, construção de Brasília (inaugurada em 1960), atração de indústrias automobilísticas. O lema '50 anos em 5' expressava a ambição. Houve crescimento, mas também inflação e aumento da dívida.",
+          "dificuldade": "facil",
+          "tags": ["JK", "desenvolvimentismo", "brasília"]
+        },
+        {
+          "id": "q64-3",
+          "enunciado": "As 'Reformas de Base' propostas pelo governo João Goulart incluíam:",
+          "alternativas": {
+            "A": "Manutenção da estrutura agrária sem alterações",
+            "B": "Reformas agrária, urbana, tributária, educacional e eleitoral para transformar estruturas do país",
+            "C": "Privatização de todas as empresas estatais",
+            "D": "Alinhamento incondicional aos Estados Unidos na Guerra Fria",
+            "E": "Retorno à monarquia constitucional"
+          },
+          "correta": "B",
+          "explicacao": "As Reformas de Base de Jango propunham transformações estruturais: reforma agrária (distribuição de terras), urbana (regulação do espaço urbano), tributária (justiça fiscal), educacional (alfabetização, acesso), eleitoral (voto de analfabetos). Foram vistas pela direita como ameaça comunista.",
+          "dificuldade": "medio",
+          "tags": ["reformas de base", "jango", "polarização"]
+        },
+        {
+          "id": "q64-4",
+          "enunciado": "A Petrobras foi criada em 1953, durante o segundo governo Vargas, com o objetivo de:",
+          "alternativas": {
+            "A": "Entregar a exploração de petróleo a empresas estrangeiras",
+            "B": "Monopolizar a exploração de petróleo no Brasil como política nacionalista",
+            "C": "Privatizar o setor de energia herdado do Estado Novo",
+            "D": "Importar todo o petróleo necessário ao país",
+            "E": "Substituir o petróleo por outras fontes de energia"
+          },
+          "correta": "B",
+          "explicacao": "A Petrobras foi criada em 1953 com monopólio estatal da exploração, refino e transporte de petróleo. Era expressão do nacionalismo econômico varguista. A campanha 'O petróleo é nosso!' mobilizou setores populares pela criação da estatal contra interesses de empresas estrangeiras.",
+          "dificuldade": "facil",
+          "tags": ["petrobras", "nacionalismo", "vargas"]
+        },
+        {
+          "id": "q64-5",
+          "enunciado": "O golpe militar de 1964 que depôs João Goulart teve apoio de:",
+          "alternativas": {
+            "A": "Apenas setores militares, sem qualquer apoio civil",
+            "B": "Setores militares, empresariais, da classe média, da Igreja e apoio dos Estados Unidos",
+            "C": "Apenas trabalhadores urbanos organizados em sindicatos",
+            "D": "Movimentos de esquerda que queriam acelerar as reformas",
+            "E": "Exclusivamente governos estrangeiros sem participação brasileira"
+          },
+          "correta": "B",
+          "explicacao": "O golpe de 1964 teve ampla base de apoio: militares anticomunistas, empresários (IPES/IBAD), setores da classe média assustados com inflação e 'ameaça comunista', parte da Igreja, governadores (MG, SP), e apoio dos EUA (operação Brother Sam). Foi golpe civil-militar.",
+          "dificuldade": "medio",
+          "tags": ["golpe 1964", "civil-militar", "apoio"]
+        }
+      ]
+    },
+    {
+      "id": "m65",
+      "titulo": "Ditadura Militar (1964-1985)",
+      "resumo": "O regime militar brasileiro, os Atos Institucionais, repressão, resistência, milagre econômico e abertura.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A Ditadura Militar (1964-1985) foi período de autoritarismo, repressão a oposições, censura, tortura, mas também de transformações econômicas e sociais. Durou 21 anos, com diferentes fases de maior ou menor abertura. No ENEM, esse tema é frequente e exige conhecimento dos mecanismos de poder, resistência e transição."
+        },
+        {
+          "titulo": "Instalação e Atos Institucionais",
+          "conteudo": "Castelo Branco (1964-1967): 'ditadura envergonhada', pretendia ser temporária. AI-1: cassações, suspensão de direitos políticos. AI-2 (1965): extinção de partidos, bipartidarismo (ARENA x MDB), eleições indiretas para presidente. AI-3 e AI-4: controle de estados e nova constituição (1967). Costa e Silva (1967-1969): endurecimento. Protestos de 1968 (estudantes, Passeata dos Cem Mil). AI-5 (dezembro/1968): o mais duro, fechou Congresso, cassou mandatos, suspendeu habeas corpus, institucionalizou tortura. Durou até 1978."
+        },
+        {
+          "titulo": "Anos de Chumbo e Milagre Econômico",
+          "conteudo": "Médici (1969-1974): auge da repressão e do crescimento econômico. Anos de Chumbo: tortura sistemática (DOI-CODI), mortes e desaparecimentos, guerrilhas urbanas e rurais (Araguaia) derrotadas. Milagre Econômico (1969-1973): crescimento de 10% ao ano, obras faraônicas (Transamazônica, Itaipu), Copa de 1970 usada para propaganda ('Brasil, ame-o ou deixe-o'). O milagre baseava-se em: concentração de renda, endividamento externo, arrocho salarial. Beneficiou mais as classes médias que os pobres."
+        },
+        {
+          "titulo": "Abertura e Redemocratização",
+          "conteudo": "Geisel (1974-1979): início da 'abertura lenta, gradual e segura'. Fim do AI-5 (1978), anistia (1979), mas também repressão (mortes de Herzog e Manoel Fiel Filho). Pacote de Abril (1977): casuísmos eleitorais. Figueiredo (1979-1985): continuou abertura. Lei de Anistia (1979): libertou presos políticos, mas também anistiou torturadores. Pluripartidarismo (1979): novos partidos (PT, PDT, PTB, PP). Campanha das Diretas Já (1984): mobilização popular por eleições diretas, mas emenda Dante de Oliveira foi derrotada. Colégio eleitoral elegeu Tancredo Neves (morreu antes de assumir); José Sarney assumiu (1985), encerrando formalmente a ditadura."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "AI-5 (1968)",
+          "descricao": "O Ato Institucional nº 5 foi o mais duro: fechou Congresso, permitia cassação de mandatos e direitos políticos sem limites, suspendeu habeas corpus para crimes políticos, institucionalizou a tortura. Durou 10 anos, até 1978."
+        },
+        {
+          "titulo": "Diretas Já (1984)",
+          "descricao": "Campanha popular por eleições diretas para presidente. Comícios gigantescos (milhões nas ruas) em SP, RJ e outras capitais. A emenda Dante de Oliveira foi derrotada no Congresso, mas a mobilização enfraqueceu o regime. Eleição indireta escolheu Tancredo."
+        }
+      ],
+      "dicas": [
+        "AI-5 (1968) = auge da repressão, fechou Congresso, tortura institucionalizada",
+        "Milagre econômico = crescimento + concentração de renda + dívida",
+        "Diretas Já (1984) = mobilização popular, mas eleição foi indireta (Tancredo)"
+      ],
+      "questoes": [
+        {
+          "id": "q65-1",
+          "enunciado": "O Ato Institucional nº 5 (AI-5), de dezembro de 1968, representou:",
+          "alternativas": {
+            "A": "O início do processo de abertura política e democratização",
+            "B": "O endurecimento máximo da ditadura, com fechamento do Congresso, suspensão de habeas corpus e institucionalização da tortura",
+            "C": "A restauração das eleições diretas e liberdades civis",
+            "D": "O fim do regime militar e convocação de eleições",
+            "E": "A aliança entre militares e movimento estudantil"
+          },
+          "correta": "B",
+          "explicacao": "O AI-5 (13/dezembro/1968) foi o mais repressivo dos Atos Institucionais: fechou o Congresso, permitia cassação de mandatos e direitos políticos sem limitações, suspendeu habeas corpus para crimes políticos, censurou imprensa, institucionalizou a tortura. Marcou o início dos 'Anos de Chumbo'.",
+          "dificuldade": "facil",
+          "tags": ["AI-5", "repressão", "ditadura"]
+        },
+        {
+          "id": "q65-2",
+          "enunciado": "O 'Milagre Econômico' (1969-1973) caracterizou-se por:",
+          "alternativas": {
+            "A": "Crescimento econômico acelerado combinado com distribuição igualitária de renda",
+            "B": "Alto crescimento econômico (cerca de 10% ao ano) com concentração de renda, endividamento externo e arrocho salarial",
+            "C": "Estagnação econômica total durante todo o período",
+            "D": "Redistribuição de terras e reforma agrária ampla",
+            "E": "Redução da dívida externa e equilíbrio das contas públicas"
+          },
+          "correta": "B",
+          "explicacao": "O Milagre Econômico teve crescimento alto (média de 10% ao ano), mas às custas de: concentração de renda (os ricos ficaram mais ricos), endividamento externo massivo, arrocho salarial dos trabalhadores. A frase 'o bolo precisa crescer para depois dividir' (Delfim Netto) expressava a política. A divisão nunca veio.",
+          "dificuldade": "medio",
+          "tags": ["milagre econômico", "crescimento", "desigualdade"]
+        },
+        {
+          "id": "q65-3",
+          "enunciado": "A campanha das 'Diretas Já' (1984) mobilizou milhões de brasileiros. Seu objetivo era:",
+          "alternativas": {
+            "A": "Manter o sistema de eleições indiretas pelo Colégio Eleitoral",
+            "B": "Aprovar emenda constitucional (Dante de Oliveira) para eleições diretas para presidente",
+            "C": "Prolongar o mandato do presidente militar Figueiredo",
+            "D": "Restaurar a monarquia no Brasil",
+            "E": "Fechar o Congresso Nacional definitivamente"
+          },
+          "correta": "B",
+          "explicacao": "As Diretas Já foi campanha popular pela aprovação da emenda Dante de Oliveira, que restabeleceria eleições diretas para presidente. Comícios reuniram milhões de pessoas. A emenda foi derrotada no Congresso (não alcançou quórum), mas a mobilização enfraqueceu o regime e acelerou a transição.",
+          "dificuldade": "facil",
+          "tags": ["diretas já", "dante de oliveira", "mobilização"]
+        },
+        {
+          "id": "q65-4",
+          "enunciado": "A Lei de Anistia de 1979 é criticada porque:",
+          "alternativas": {
+            "A": "Não libertou nenhum preso político",
+            "B": "Anistiou tanto perseguidos políticos quanto agentes do Estado que cometeram crimes como tortura",
+            "C": "Estabeleceu punições severas para os torturadores",
+            "D": "Foi rejeitada pelo movimento pela anistia",
+            "E": "Impediu o retorno de exilados políticos"
+          },
+          "correta": "B",
+          "explicacao": "A Lei de Anistia (1979) permitiu a volta de exilados e libertou presos políticos, mas é criticada por ter anistiado também agentes do Estado que cometeram tortura e assassinatos. A interpretação de 'crimes conexos' protegeu torturadores, que nunca foram julgados. A lei é considerada 'anistia recíproca'.",
+          "dificuldade": "medio",
+          "tags": ["anistia", "tortura", "impunidade"]
+        },
+        {
+          "id": "q65-5",
+          "enunciado": "A 'abertura lenta, gradual e segura' promovida por Geisel e Figueiredo significava:",
+          "alternativas": {
+            "A": "Democratização imediata com eleições diretas e fim da censura",
+            "B": "Processo controlado pelos militares de transição para a democracia, sem rupturas",
+            "C": "Endurecimento ainda maior do regime com novos Atos Institucionais",
+            "D": "Aliança dos militares com a guerrilha de esquerda",
+            "E": "Revolução popular que derrubou os militares"
+          },
+          "correta": "B",
+          "explicacao": "A 'abertura lenta, gradual e segura' era o processo controlado pelos militares de transição para a democracia: eles conduziam a abertura no ritmo que quisessem, evitando rupturas ou punições. Assim, anistiaram torturadores, elegeram o primeiro presidente civil indiretamente e mantiveram influência na Nova República.",
+          "dificuldade": "medio",
+          "tags": ["abertura", "transição", "controle"]
+        }
+      ]
+    },
+    {
+      "id": "m66",
+      "titulo": "Nova República e Redemocratização",
+      "resumo": "A Nova República desde 1985, a Constituição de 1988, governos Sarney, Collor, Itamar, FHC e a estabilização econômica.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A Nova República iniciou-se em 1985 com o fim formal da ditadura militar. O período foi marcado pela Constituição de 1988, crises econômicas (hiperinflação), planos de estabilização e consolidação democrática. No ENEM, esse período é cobrado em relação à Constituição, aos planos econômicos e à construção da democracia."
+        },
+        {
+          "titulo": "Sarney e Constituinte (1985-1990)",
+          "conteudo": "José Sarney (vice de Tancredo, que morreu) assumiu a presidência. Crise econômica: inflação alta herdada da ditadura. Plano Cruzado (1986): congelamento de preços, nova moeda, euforia inicial. Fracassou após as eleições (inflação voltou). Assembleia Constituinte (1987-1988): elaborou nova constituição. Constituição de 1988 ('Constituição Cidadã'): ampliou direitos sociais (saúde, educação, previdência), direitos trabalhistas, direitos dos povos indígenas, proteção ambiental, voto aos 16 anos, racismo como crime inafiançável. Mandato de 5 anos para Sarney gerou polêmica."
+        },
+        {
+          "titulo": "Collor e Itamar (1990-1994)",
+          "conteudo": "Fernando Collor: primeiro presidente eleito diretamente após a ditadura. Plano Collor: confisco da poupança (bloqueio de ativos), abertura econômica abrupta. Gerou recessão sem acabar com inflação. Impeachment (1992): denúncias de corrupção (PC Farias), mobilização popular (caras-pintadas), Collor renunciou antes da votação final. Itamar Franco (1992-1994): vice que assumiu. Estabilidade política, preparação do Plano Real. Plano Real (1994): nova moeda (Real), desindexação da economia, âncora cambial. Controlou a hiperinflação que assolava o Brasil há décadas. Fernando Henrique Cardoso, ministro da Fazenda, foi eleito presidente."
+        },
+        {
+          "titulo": "Governos FHC (1995-2002)",
+          "conteudo": "Fernando Henrique Cardoso (PSDB): dois mandatos (emenda da reeleição em 1997). Estabilização: Plano Real consolidado, inflação baixa. Privatizações: Vale do Rio Doce, Telebrás, bancos estaduais. Controvertidas, geraram recursos mas também críticas. Reformas: previdência, administrativa. Lei de Responsabilidade Fiscal. Crises externas: México (1994), Ásia (1997), Rússia (1998) exigiram ajustes. Desvalorização do Real (1999). Críticas: desemprego, juros altos, dívida pública crescente, apagão (2001). FHC consolidou democracia e estabilidade, mas deixou problemas sociais."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Constituição de 1988",
+          "descricao": "Chamada 'Constituição Cidadã' por ampliar direitos: SUS (saúde universal), direitos trabalhistas, proteção à infância, direitos indígenas, meio ambiente, fim da censura. Foi fruto de ampla participação social na Constituinte."
+        },
+        {
+          "titulo": "Plano Real (1994)",
+          "descricao": "Plano de estabilização que controlou a hiperinflação. Criou nova moeda (Real), eliminou indexação automática, usou âncora cambial. Após décadas de inflação descontrolada, brasileiros puderam planejar e poupar. Elegeu FHC presidente."
+        }
+      ],
+      "dicas": [
+        "Constituição de 1988 = 'Cidadã', ampliou direitos sociais",
+        "Plano Real (1994) = controlou hiperinflação, elegeu FHC",
+        "Impeachment de Collor (1992) = primeira destituição de presidente eleito"
+      ],
+      "questoes": [
+        {
+          "id": "q66-1",
+          "enunciado": "A Constituição de 1988 é chamada de 'Constituição Cidadã' porque:",
+          "alternativas": {
+            "A": "Restringiu direitos sociais e trabalhistas",
+            "B": "Ampliou significativamente direitos sociais, trabalhistas, políticos e de minorias",
+            "C": "Foi imposta pelos militares sem participação popular",
+            "D": "Manteve a censura e restrições à liberdade de expressão",
+            "E": "Excluiu os direitos dos povos indígenas"
+          },
+          "correta": "B",
+          "explicacao": "A Constituição de 1988 é chamada 'Cidadã' (expressão de Ulysses Guimarães) porque ampliou direitos: criou o SUS, garantiu direitos trabalhistas, protegeu infância e adolescência, reconheceu direitos de povos indígenas, criminalizou racismo, protegeu meio ambiente. Foi elaborada com participação popular na Constituinte.",
+          "dificuldade": "facil",
+          "tags": ["constituição 1988", "cidadã", "direitos"]
+        },
+        {
+          "id": "q66-2",
+          "enunciado": "O impeachment de Fernando Collor (1992) ocorreu devido a:",
+          "alternativas": {
+            "A": "Divergências com os militares sobre política econômica",
+            "B": "Denúncias de corrupção envolvendo PC Farias e mobilização popular (caras-pintadas)",
+            "C": "Sua recusa em aplicar o Plano Real",
+            "D": "Apoio a movimentos de esquerda na América Latina",
+            "E": "Tentativa de fechar o Congresso Nacional"
+          },
+          "correta": "B",
+          "explicacao": "O impeachment de Collor resultou de denúncias de corrupção (esquema de PC Farias, tesoureiro de campanha). A CPI investigou, a população mobilizou-se (jovens 'caras-pintadas'), e a Câmara autorizou o processo. Collor renunciou antes da votação final no Senado, mas teve direitos políticos cassados por 8 anos.",
+          "dificuldade": "medio",
+          "tags": ["collor", "impeachment", "corrupção"]
+        },
+        {
+          "id": "q66-3",
+          "enunciado": "O Plano Real (1994) conseguiu controlar a hiperinflação brasileira através de:",
+          "alternativas": {
+            "A": "Confisco de poupanças e contas bancárias",
+            "B": "Criação de nova moeda, fim da indexação automática e âncora cambial",
+            "C": "Aumento dos gastos públicos e emissão de moeda",
+            "D": "Congelamento permanente de todos os preços e salários",
+            "E": "Estatização de todas as empresas privadas"
+          },
+          "correta": "B",
+          "explicacao": "O Plano Real criou nova moeda (Real) após período de transição (URV), eliminou a indexação automática (que realimentava a inflação), e usou âncora cambial (Real valorizado). Diferente de planos anteriores, não congelou preços nem confiscou poupanças. Controlou a inflação que chegara a milhares de % ao ano.",
+          "dificuldade": "medio",
+          "tags": ["plano real", "inflação", "estabilização"]
+        },
+        {
+          "id": "q66-4",
+          "enunciado": "As privatizações realizadas durante os governos FHC (1995-2002) incluíram:",
+          "alternativas": {
+            "A": "Petrobras, Banco do Brasil e Caixa Econômica Federal",
+            "B": "Vale do Rio Doce, sistema Telebrás e bancos estaduais",
+            "C": "Todas as universidades públicas federais",
+            "D": "Forças Armadas e polícias estaduais",
+            "E": "Sistema Único de Saúde (SUS)"
+          },
+          "correta": "B",
+          "explicacao": "As privatizações de FHC incluíram a Companhia Vale do Rio Doce (mineração), o sistema Telebrás (telecomunicações, dividido em várias empresas), e diversos bancos estaduais. A Petrobras não foi privatizada, mas perdeu o monopólio. As privatizações foram controversas, com críticas sobre subvalorização e processo.",
+          "dificuldade": "medio",
+          "tags": ["privatizações", "FHC", "neoliberalismo"]
+        },
+        {
+          "id": "q66-5",
+          "enunciado": "O Plano Cruzado (1986), do governo Sarney, fracassou porque:",
+          "alternativas": {
+            "A": "Não conseguiu nenhum efeito sobre a inflação desde o início",
+            "B": "O congelamento de preços foi insustentável e a inflação voltou com força após as eleições",
+            "C": "Foi imediatamente rejeitado pela população",
+            "D": "Provocou hiperinflação imediata no primeiro mês",
+            "E": "Foi vetado pelo Congresso Nacional antes de entrar em vigor"
+          },
+          "correta": "B",
+          "explicacao": "O Plano Cruzado teve sucesso inicial: congelou preços, criou nova moeda, gerou euforia ('fiscais do Sarney'). Mas o congelamento era insustentável (gerando desabastecimento) e foi mantido artificialmente até as eleições de 1986. Depois, preços foram liberados e a inflação voltou com força (Plano Cruzado II fracassou).",
+          "dificuldade": "medio",
+          "tags": ["plano cruzado", "sarney", "fracasso"]
+        }
+      ]
+    },
+    {
+      "id": "m67",
+      "titulo": "Brasil Contemporâneo (2003-presente)",
+      "resumo": "Os governos Lula, Dilma, Temer e Bolsonaro, políticas sociais, crises políticas e a democracia no século XXI.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil do século XXI passou por transformações significativas: redução da pobreza, ampliação de direitos, mas também crises políticas profundas. Os governos petistas (2003-2016), o impeachment de Dilma, os governos Temer e Bolsonaro marcaram o período. No ENEM, esse tema exige análise crítica de políticas públicas e processos políticos recentes."
+        },
+        {
+          "titulo": "Governos Lula (2003-2010)",
+          "conteudo": "Luiz Inácio Lula da Silva (PT): ex-metalúrgico, primeiro presidente de origem operária. Política econômica: continuidade inicial da estabilização de FHC, depois políticas mais desenvolvimentistas. Superávit primário, pagamento do FMI. Políticas sociais: Bolsa Família (transferência de renda condicionada), aumento real do salário mínimo, expansão do crédito, PROUNI (acesso a universidades), cotas raciais. Milhões saíram da pobreza. Política externa: protagonismo internacional (BRICS, G20, relações Sul-Sul). Crises: Mensalão (2005) - escândalo de compra de votos de parlamentares. Lula terminou com alta popularidade (87%), elegendo sua sucessora."
+        },
+        {
+          "titulo": "Governo Dilma e Impeachment (2011-2016)",
+          "conteudo": "Dilma Rousseff (PT): primeira mulher presidente do Brasil. Continuidade das políticas sociais, PAC, Copa/Olimpíadas. Crise econômica: desaceleração a partir de 2013, recessão em 2015-16 (PIB negativo). Manifestações de 2013: inicialmente contra aumento de passagens, ampliaram-se para diversas pautas. Operação Lava Jato (2014): investigação de corrupção na Petrobras, atingiu políticos de vários partidos. Impeachment (2016): Dilma afastada por 'pedaladas fiscais' (atrasos de repasses), votação no Congresso. Processo controverso, visto por apoiadores como golpe e por opositores como legal."
+        },
+        {
+          "titulo": "Governos Temer e Bolsonaro",
+          "conteudo": "Michel Temer (2016-2018): assumiu após impeachment. Reformas: trabalhista (flexibilização), teto de gastos (EC 95). Baixíssima popularidade, denunciado por corrupção. Jair Bolsonaro (2019-2022): extrema-direita, ex-militar. Política econômica liberal (Guedes), reformas (previdência). Pandemia COVID-19: mais de 700 mil mortes, negacionismo, conflitos com governadores. Ataques a instituições, imprensa, eleições. Eleição 2022: Lula voltou, vencendo Bolsonaro no segundo turno. Atos antidemocráticos de 8/janeiro/2023."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Bolsa Família",
+          "descricao": "Programa de transferência de renda condicionada (criado 2003): famílias pobres recebem benefício desde que mantenham filhos na escola e em dia com vacinas. Reduz pobreza extrema e promove acesso a saúde e educação. Reconhecido internacionalmente."
+        },
+        {
+          "titulo": "Operação Lava Jato",
+          "descricao": "Investigação iniciada em 2014 sobre corrupção na Petrobras. Revelou esquema envolvendo empreiteiras e políticos de vários partidos. Prendeu empresários e políticos, mas também foi criticada por excessos e parcialidade. Gerou debate sobre combate à corrupção e devido processo legal."
+        }
+      ],
+      "dicas": [
+        "Lula = políticas sociais (Bolsa Família), redução da pobreza, Mensalão",
+        "Dilma = impeachment (2016), Lava Jato, crise econômica",
+        "Período recente exige análise equilibrada de diferentes perspectivas"
+      ],
+      "questoes": [
+        {
+          "id": "q67-1",
+          "enunciado": "O programa Bolsa Família, implementado a partir de 2003, caracteriza-se por:",
+          "alternativas": {
+            "A": "Transferência de renda sem qualquer condicionalidade",
+            "B": "Transferência de renda condicionada a frequência escolar e acompanhamento de saúde dos filhos",
+            "C": "Distribuição de terras para famílias pobres",
+            "D": "Emprego garantido pelo governo para todos os beneficiários",
+            "E": "Benefício exclusivo para idosos aposentados"
+          },
+          "correta": "B",
+          "explicacao": "O Bolsa Família é programa de transferência de renda condicionada: famílias em situação de pobreza recebem benefício mensal desde que mantenham filhos na escola e com vacinação em dia. Combina combate à pobreza imediata com incentivo a educação e saúde. Foi expandido e renomeado ao longo dos anos.",
+          "dificuldade": "facil",
+          "tags": ["bolsa família", "transferência de renda", "políticas sociais"]
+        },
+        {
+          "id": "q67-2",
+          "enunciado": "O impeachment de Dilma Rousseff em 2016 foi justificado formalmente por:",
+          "alternativas": {
+            "A": "Crimes de corrupção comprovados em processo judicial",
+            "B": "Crime de responsabilidade fiscal ('pedaladas fiscais' - atrasos em repasses a bancos públicos)",
+            "C": "Golpe militar que a depôs pela força",
+            "D": "Renúncia voluntária ao cargo",
+            "E": "Decisão do Supremo Tribunal Federal anulando sua eleição"
+          },
+          "correta": "B",
+          "explicacao": "O impeachment de Dilma foi baseado em crime de responsabilidade fiscal: 'pedaladas fiscais' (atrasos de repasses do Tesouro a bancos públicos) e decretos de crédito suplementar sem autorização do Congresso. A acusação foi aprovada pela Câmara e Senado. O processo é controverso, visto por uns como legal e por outros como golpe.",
+          "dificuldade": "medio",
+          "tags": ["dilma", "impeachment", "pedaladas"]
+        },
+        {
+          "id": "q67-3",
+          "enunciado": "A Operação Lava Jato, iniciada em 2014, investigou principalmente:",
+          "alternativas": {
+            "A": "Crimes ambientais na Amazônia",
+            "B": "Corrupção envolvendo a Petrobras, empreiteiras e políticos de diversos partidos",
+            "C": "Fraudes eleitorais nas eleições de 2014",
+            "D": "Evasão fiscal de pequenas empresas",
+            "E": "Tráfico de drogas nas fronteiras brasileiras"
+          },
+          "correta": "B",
+          "explicacao": "A Lava Jato investigou grande esquema de corrupção centrado na Petrobras: empreiteiras pagavam propina a diretores da estatal e a políticos de vários partidos em troca de contratos superfaturados. Prendeu empresários e políticos, mas também foi criticada por métodos e parcialidade.",
+          "dificuldade": "facil",
+          "tags": ["lava jato", "petrobras", "corrupção"]
+        },
+        {
+          "id": "q67-4",
+          "enunciado": "Durante os governos Lula (2003-2010), a política externa brasileira caracterizou-se por:",
+          "alternativas": {
+            "A": "Isolamento internacional e conflitos com todos os vizinhos",
+            "B": "Alinhamento automático aos Estados Unidos em todas as questões",
+            "C": "Protagonismo internacional, fortalecimento de relações Sul-Sul e participação em fóruns como BRICS",
+            "D": "Rompimento de relações com todos os países latino-americanos",
+            "E": "Abandono de todas as organizações internacionais"
+          },
+          "correta": "C",
+          "explicacao": "A política externa de Lula buscou protagonismo: Brasil candidatou-se ao Conselho de Segurança da ONU, fortaleceu relações Sul-Sul (África, América Latina, países árabes), participou de novos fóruns (BRICS, G20). O comércio internacional diversificou-se, reduzindo dependência dos países ricos tradicionais.",
+          "dificuldade": "medio",
+          "tags": ["política externa", "lula", "BRICS"]
+        },
+        {
+          "id": "q67-5",
+          "enunciado": "As manifestações de junho de 2013 no Brasil iniciaram-se com protestos contra:",
+          "alternativas": {
+            "A": "A realização da Copa do Mundo de 2014",
+            "B": "O aumento das tarifas de transporte público",
+            "C": "A reeleição de Dilma Rousseff",
+            "D": "A Operação Lava Jato",
+            "E": "O impeachment de Fernando Collor"
+          },
+          "correta": "B",
+          "explicacao": "As manifestações de junho de 2013 começaram em São Paulo contra o aumento das passagens de ônibus, lideradas pelo Movimento Passe Livre (MPL). Após repressão policial violenta, ampliaram-se para milhões de pessoas e múltiplas pautas (corrupção, saúde, educação, Copa). Marcaram novo ciclo de mobilização social.",
+          "dificuldade": "facil",
+          "tags": ["2013", "manifestações", "passe livre"]
+        }
+      ]
+    },
+    {
+      "id": "m68",
+      "titulo": "Questões Sociais Contemporâneas",
+      "resumo": "Desigualdade, racismo estrutural, questões de gênero, povos indígenas e quilombolas no Brasil contemporâneo.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "O Brasil contemporâneo enfrenta desafios sociais históricos: desigualdade de renda, racismo estrutural, violência de gênero, direitos de minorias. A Constituição de 1988 avançou em direitos, mas a efetivação é lenta e desigual. No ENEM, esses temas aparecem frequentemente, exigindo análise crítica e conhecimento de dados e políticas."
+        },
+        {
+          "titulo": "Desigualdade e Pobreza",
+          "conteudo": "O Brasil é um dos países mais desiguais do mundo. Concentração de renda: os 10% mais ricos detêm quase metade da renda; os 50% mais pobres ficam com menos de 15%. Causas históricas: escravidão, concentração fundiária, industrialização excludente, políticas econômicas. Avanços recentes: programas de transferência de renda reduziram pobreza extrema; aumento real do salário mínimo. Mas a desigualdade estrutural persiste: acesso desigual a educação de qualidade, saúde, moradia, segurança."
+        },
+        {
+          "titulo": "Racismo Estrutural",
+          "conteudo": "O mito da 'democracia racial' encobre desigualdades persistentes. Dados: negros (pretos e pardos) têm menor renda, menor escolaridade, maior desemprego, maior encarceramento, maior mortalidade por violência que brancos. Racismo estrutural: não é apenas preconceito individual, mas sistema que reproduz desigualdades através de instituições. Políticas afirmativas: cotas em universidades e concursos públicos buscam corrigir desigualdades históricas. Geram debate, mas estudos mostram que cotistas têm desempenho igual ou superior."
+        },
+        {
+          "titulo": "Gênero, Indígenas e Quilombolas",
+          "conteudo": "Questões de gênero: violência contra mulheres (feminicídio, agressões), desigualdade salarial, sub-representação política. Lei Maria da Penha (2006) e tipificação do feminicídio (2015) são avanços legais, mas violência persiste. Direitos LGBTQIA+ avançaram (casamento, criminalização da homofobia), mas preconceito e violência continuam. Povos indígenas: Constituição de 1988 reconheceu direitos, mas demarcação de terras é lenta e contestada. Conflitos por invasões, garimpo, desmatamento. Quilombolas: comunidades remanescentes de quilombos têm direito constitucional às terras, mas titulação é morosa. Preservam cultura e resistem."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Cotas Raciais",
+          "descricao": "Políticas de ação afirmativa que reservam vagas em universidades e concursos para negros (pretos e pardos). Visam corrigir desigualdades históricas. O STF confirmou sua constitucionalidade. Estudos mostram que cotistas têm desempenho acadêmico equivalente aos demais."
+        },
+        {
+          "titulo": "Lei Maria da Penha (2006)",
+          "descricao": "Lei que cria mecanismos para coibir violência doméstica e familiar contra mulheres. Estabelece medidas protetivas (afastamento do agressor), agrava penas, cria juizados especiais. Nomeada em homenagem a Maria da Penha Maia Fernandes, vítima de violência doméstica."
+        }
+      ],
+      "dicas": [
+        "Brasil = um dos países mais desiguais; desigualdade tem raízes históricas",
+        "Racismo estrutural = reprodução de desigualdades através de instituições, não apenas preconceito individual",
+        "Cotas, Lei Maria da Penha, direitos indígenas = avanços com desafios de implementação"
+      ],
+      "questoes": [
+        {
+          "id": "q68-1",
+          "enunciado": "O conceito de 'racismo estrutural' significa que o racismo:",
+          "alternativas": {
+            "A": "É apenas preconceito individual de algumas pessoas",
+            "B": "Não existe no Brasil devido à miscigenação",
+            "C": "Está inscrito nas estruturas sociais e instituições, reproduzindo desigualdades independentemente de preconceitos individuais",
+            "D": "Afeta apenas as relações pessoais, não as instituições",
+            "E": "Foi completamente eliminado após a abolição da escravidão"
+          },
+          "correta": "C",
+          "explicacao": "Racismo estrutural significa que o racismo não é apenas preconceito individual, mas está inscrito nas estruturas sociais e instituições: mercado de trabalho, sistema de justiça, educação, saúde, mídia. Essas estruturas reproduzem desigualdades raciais mesmo sem intenção racista explícita dos indivíduos.",
+          "dificuldade": "medio",
+          "tags": ["racismo estrutural", "desigualdade", "estrutura"]
+        },
+        {
+          "id": "q68-2",
+          "enunciado": "A Lei Maria da Penha (2006) foi criada para:",
+          "alternativas": {
+            "A": "Regular o mercado de trabalho feminino",
+            "B": "Coibir violência doméstica e familiar contra mulheres, com medidas protetivas e agravamento de penas",
+            "C": "Estabelecer cotas para mulheres em universidades",
+            "D": "Proibir o divórcio no Brasil",
+            "E": "Regular a propaganda eleitoral"
+          },
+          "correta": "B",
+          "explicacao": "A Lei Maria da Penha criou mecanismos para coibir violência doméstica e familiar contra mulheres: medidas protetivas de urgência (afastamento do agressor), agravamento de penas, criação de juizados especializados, rede de atendimento. Foi avanço legal importante, embora a violência persista.",
+          "dificuldade": "facil",
+          "tags": ["maria da penha", "violência doméstica", "mulheres"]
+        },
+        {
+          "id": "q68-3",
+          "enunciado": "As políticas de cotas raciais em universidades brasileiras têm como objetivo:",
+          "alternativas": {
+            "A": "Privilegiar candidatos brancos no acesso ao ensino superior",
+            "B": "Corrigir desigualdades históricas garantindo acesso de negros a espaços de formação de elite",
+            "C": "Eliminar o vestibular para todos os candidatos",
+            "D": "Reduzir o número de vagas nas universidades públicas",
+            "E": "Transferir todas as universidades para o setor privado"
+          },
+          "correta": "B",
+          "explicacao": "As cotas raciais visam corrigir desigualdades históricas: como negros foram sistematicamente excluídos de educação de qualidade ao longo de séculos, a reserva de vagas busca garantir seu acesso a universidades, formando profissionais e lideranças negras. Estudos mostram que cotistas têm bom desempenho.",
+          "dificuldade": "facil",
+          "tags": ["cotas", "ação afirmativa", "universidade"]
+        },
+        {
+          "id": "q68-4",
+          "enunciado": "A Constituição de 1988 reconheceu aos povos indígenas:",
+          "alternativas": {
+            "A": "O direito a propriedade individual de terras em qualquer lugar do país",
+            "B": "Os direitos sobre as terras que tradicionalmente ocupam, sua organização social, costumes, línguas e crenças",
+            "C": "A obrigação de abandonar suas culturas e integrar-se à sociedade nacional",
+            "D": "A cidadania somente após conclusão de ensino superior",
+            "E": "O direito de votar apenas em eleições municipais"
+          },
+          "correta": "B",
+          "explicacao": "A Constituição de 1988 reconheceu aos povos indígenas direitos sobre as terras que tradicionalmente ocupam, sua organização social, costumes, línguas, crenças e tradições. Rompeu com a visão assimilacionista que pretendia 'integrar' (eliminar) culturas indígenas. Mas a demarcação de terras é lenta e conflituosa.",
+          "dificuldade": "medio",
+          "tags": ["povos indígenas", "constituição 1988", "direitos"]
+        },
+        {
+          "id": "q68-5",
+          "enunciado": "A desigualdade de renda no Brasil caracteriza-se por:",
+          "alternativas": {
+            "A": "Distribuição igualitária da renda entre todos os brasileiros",
+            "B": "Concentração extrema, com os mais ricos detendo quase metade da renda e os mais pobres uma fração mínima",
+            "C": "Redução total após a abolição da escravidão",
+            "D": "Situação igual à de países desenvolvidos europeus",
+            "E": "Inexistência de pobreza extrema no território nacional"
+          },
+          "correta": "B",
+          "explicacao": "O Brasil é um dos países mais desiguais do mundo: os 10% mais ricos detêm quase metade da renda nacional, enquanto os 50% mais pobres ficam com menos de 15%. Essa desigualdade tem raízes históricas (escravidão, concentração fundiária) e se reproduz através de estruturas educacionais, trabalhistas e tributárias.",
+          "dificuldade": "facil",
+          "tags": ["desigualdade", "concentração de renda", "pobreza"]
+        }
+      ]
+    },
+    {
+      "id": "m69",
+      "titulo": "Cidadania e Direitos Humanos",
+      "resumo": "Conceito de cidadania, direitos humanos, movimentos sociais contemporâneos e participação política no Brasil.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "Cidadania e direitos humanos são conceitos centrais para compreender a democracia contemporânea. No Brasil, a construção da cidadania foi longa e desigual, marcada por exclusões históricas. No ENEM, esses temas aparecem em questões que exigem reflexão sobre direitos, deveres e participação política."
+        },
+        {
+          "titulo": "Conceito de Cidadania",
+          "conteudo": "Cidadania: condição de pertencimento a uma comunidade política com direitos e deveres. Dimensões (T.H. Marshall): cidadania civil (liberdades individuais - séc. XVIII), cidadania política (voto, participação - séc. XIX), cidadania social (educação, saúde, trabalho - séc. XX). No Brasil: cidadania construída de forma invertida e incompleta - direitos sociais vieram antes (Era Vargas) de cidadania política plena; direitos civis sempre precários para pobres e negros."
+        },
+        {
+          "titulo": "Direitos Humanos",
+          "conteudo": "Direitos Humanos: direitos inerentes a todos os seres humanos, independente de nacionalidade, sexo, etnia, religião. Declaração Universal (ONU, 1948): após horrores da II Guerra, estabeleceu direitos fundamentais. Brasil: signatário de tratados internacionais, incorporou direitos humanos na Constituição de 1988. Desafios: violência policial, sistema prisional, tortura persistem. Direitos humanos são para todos - o discurso de 'direitos humanos para humanos direitos' contraria seu fundamento universal."
+        },
+        {
+          "titulo": "Movimentos Sociais e Participação",
+          "conteudo": "Movimentos sociais: formas organizadas de ação coletiva que buscam transformações sociais. Exemplos brasileiros: movimento negro, feminista, indígena, LGBTQIA+, sem-terra (MST), sem-teto, ambientalista. Participação política: além do voto, inclui militância em partidos e movimentos, participação em conselhos, orçamento participativo, manifestações, petições. Desafios: desigualdade de acesso à participação, criminalização de movimentos, desinformação."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Cidadania Invertida (José Murilo de Carvalho)",
+          "descricao": "No Brasil, a construção da cidadania foi 'invertida': direitos sociais vieram antes (CLT na Era Vargas) de cidadania política plena (voto universal só em 1988 com analfabetos). Direitos civis permanecem precários para pobres. Cidadania foi 'regulada' pelo Estado, não conquistada pela sociedade."
+        },
+        {
+          "titulo": "MST (Movimento dos Trabalhadores Rurais Sem Terra)",
+          "descricao": "Movimento social que luta por reforma agrária através de ocupações de terras improdutivas. Fundado em 1984, é um dos maiores movimentos sociais da América Latina. Organiza assentamentos, escolas, cooperativas. Controverso, mas reconhecido como ator político relevante."
+        }
+      ],
+      "dicas": [
+        "Cidadania = direitos civis + políticos + sociais (Marshall)",
+        "Direitos humanos = universais, para todos, sem exceção",
+        "Movimentos sociais = ação coletiva organizada por transformação"
+      ],
+      "questoes": [
+        {
+          "id": "q69-1",
+          "enunciado": "Segundo a tipologia de T.H. Marshall, a cidadania plena compreende três dimensões de direitos:",
+          "alternativas": {
+            "A": "Direitos econômicos, culturais e religiosos",
+            "B": "Direitos civis, políticos e sociais",
+            "C": "Direitos individuais, coletivos e difusos",
+            "D": "Direitos nacionais, internacionais e supranacionais",
+            "E": "Direitos naturais, positivos e consuetudinários"
+          },
+          "correta": "B",
+          "explicacao": "T.H. Marshall propôs que a cidadania plena compreende: direitos civis (liberdades individuais - expressão, propriedade, justiça), direitos políticos (participação - voto, candidatura) e direitos sociais (bem-estar - educação, saúde, trabalho). Historicamente, desenvolveram-se nessa ordem na Inglaterra, mas de forma diferente em outros países.",
+          "dificuldade": "medio",
+          "tags": ["cidadania", "marshall", "direitos"]
+        },
+        {
+          "id": "q69-2",
+          "enunciado": "A Declaração Universal dos Direitos Humanos (1948) estabelece que os direitos humanos são:",
+          "alternativas": {
+            "A": "Válidos apenas para cidadãos de países desenvolvidos",
+            "B": "Inerentes a todos os seres humanos, independentemente de qualquer condição",
+            "C": "Aplicáveis somente a pessoas que 'merecem' por seu comportamento",
+            "D": "Criados individualmente por cada país sem padrão universal",
+            "E": "Exclusivos para membros de determinadas religiões"
+          },
+          "correta": "B",
+          "explicacao": "A Declaração Universal estabelece que direitos humanos são inerentes a todos os seres humanos, sem distinção de nacionalidade, sexo, raça, religião, classe ou qualquer outra condição. São universais (para todos), inalienáveis (não podem ser tirados) e indivisíveis (civis, políticos e sociais são interdependentes).",
+          "dificuldade": "facil",
+          "tags": ["direitos humanos", "declaração universal", "universalidade"]
+        },
+        {
+          "id": "q69-3",
+          "enunciado": "O historiador José Murilo de Carvalho argumenta que a cidadania no Brasil foi construída de forma 'invertida' porque:",
+          "alternativas": {
+            "A": "Direitos civis foram os primeiros a ser plenamente garantidos",
+            "B": "Direitos sociais foram concedidos antes de cidadania política plena, e direitos civis permanecem precários",
+            "C": "O Brasil nunca teve qualquer forma de direitos",
+            "D": "A cidadania brasileira é idêntica à dos países europeus",
+            "E": "Os direitos foram conquistados pela sociedade, não concedidos pelo Estado"
+          },
+          "correta": "B",
+          "explicacao": "José Murilo de Carvalho argumenta que no Brasil a cidadania foi 'invertida': direitos sociais vieram antes (Era Vargas, CLT) de cidadania política plena (voto universal só em 1988). Direitos civis permanecem precários para pobres e negros (violência policial, acesso à justiça). A cidadania foi 'regulada' pelo Estado.",
+          "dificuldade": "medio",
+          "tags": ["cidadania invertida", "josé murilo", "brasil"]
+        },
+        {
+          "id": "q69-4",
+          "enunciado": "Os movimentos sociais são importantes para a democracia porque:",
+          "alternativas": {
+            "A": "Substituem completamente os partidos políticos e o voto",
+            "B": "Organizam demandas de grupos sociais e pressionam por transformações, ampliando a participação política",
+            "C": "Impedem qualquer forma de conflito na sociedade",
+            "D": "Defendem exclusivamente interesses econômicos de empresas",
+            "E": "São controlados diretamente pelo governo"
+          },
+          "correta": "B",
+          "explicacao": "Movimentos sociais são formas de ação coletiva que organizam demandas de grupos sociais (trabalhadores, mulheres, negros, indígenas, LGBTQIA+, ambientalistas) e pressionam por mudanças. Ampliam a participação política para além do voto, colocando pautas na agenda pública e fiscalizando o Estado.",
+          "dificuldade": "facil",
+          "tags": ["movimentos sociais", "democracia", "participação"]
+        },
+        {
+          "id": "q69-5",
+          "enunciado": "O argumento de que 'direitos humanos são para humanos direitos' contradiz o conceito de direitos humanos porque:",
+          "alternativas": {
+            "A": "Direitos humanos realmente só valem para pessoas que não cometeram crimes",
+            "B": "Direitos humanos são, por definição, universais e inalienáveis, não condicionados a comportamento",
+            "C": "Direitos humanos foram criados apenas para criminosos",
+            "D": "Não existe conceito definido de direitos humanos",
+            "E": "Direitos humanos são decisão de cada indivíduo"
+          },
+          "correta": "B",
+          "explicacao": "O argumento de 'direitos humanos para humanos direitos' contradiz a essência dos direitos humanos, que são universais (para todos, sem exceção) e inalienáveis (não podem ser perdidos por comportamento). Se fossem condicionados a bom comportamento, não seriam direitos, mas prêmios. Mesmo criminosos têm direitos (contra tortura, por exemplo).",
+          "dificuldade": "medio",
+          "tags": ["direitos humanos", "universalidade", "falácia"]
+        }
+      ]
+    },
+    {
+      "id": "m70",
+      "titulo": "Democracia e Instituições Políticas",
+      "resumo": "O funcionamento da democracia brasileira, poderes, sistema eleitoral, partidos e desafios contemporâneos.",
+      "topicos": [
+        {
+          "titulo": "Introdução",
+          "conteudo": "A democracia brasileira, restabelecida após a ditadura, consolidou-se com a Constituição de 1988. Compreender seu funcionamento - os poderes, o sistema eleitoral, os partidos - é essencial para a cidadania. No ENEM, esse tema aparece em questões sobre instituições e desafios democráticos."
+        },
+        {
+          "titulo": "Poderes da República",
+          "conteudo": "Separação de poderes (Montesquieu): Executivo, Legislativo, Judiciário, independentes e harmônicos. Executivo: presidente (federal), governadores (estadual), prefeitos (municipal). Administra o Estado, executa políticas. Legislativo: Congresso Nacional (Câmara dos Deputados + Senado), Assembleias Legislativas, Câmaras Municipais. Faz leis, fiscaliza o Executivo, aprova orçamento. Judiciário: STF no topo, depois STJ, TRFs, TJs. Julga conflitos, interpreta leis, protege direitos. Ministério Público: fiscal da lei, não é poder, mas função essencial à justiça."
+        },
+        {
+          "titulo": "Sistema Eleitoral",
+          "conteudo": "Eleições diretas para todos os cargos executivos e legislativos (exceto senador, majoritário). Sistema majoritário: vence quem tem mais votos. Usado para Executivo (presidente, governador, prefeito) e Senado. Dois turnos se ninguém atinge 50%+1 (cidades grandes e estados). Sistema proporcional: vagas distribuídas proporcionalmente aos votos dos partidos/federações. Usado para Câmara, Assembleias, Câmaras Municipais. Coeficiente eleitoral define quantos votos elegem um deputado. Voto obrigatório para maiores de 18 e menores de 70, facultativo para 16-18 e maiores de 70."
+        },
+        {
+          "titulo": "Partidos e Desafios",
+          "conteudo": "Multipartidarismo: Brasil tem muitos partidos (30+), exigindo coalizões para governar ('presidencialismo de coalizão'). Partidos deveriam representar ideologias e programas, mas muitos são pragmáticos/fisiológicos. Financiamento público (Fundo Partidário, Fundo Eleitoral) após proibição de doações empresariais. Desafios contemporâneos: desinformação e fake news, ataques a instituições, polarização extrema, descrença na política, desigualdade de representação (sub-representação de mulheres, negros). Cláusula de barreira tenta reduzir fragmentação partidária."
+        }
+      ],
+      "exemplos": [
+        {
+          "titulo": "Presidencialismo de Coalizão",
+          "descricao": "Sistema em que o presidente precisa formar coalizões com vários partidos para obter maioria no Congresso e governar. Exige negociação constante (cargos, emendas). Sérgio Abranches cunhou o termo em 1988. É característica do sistema político brasileiro com seu multipartidarismo fragmentado."
+        },
+        {
+          "titulo": "Sistema Proporcional",
+          "descricao": "No sistema proporcional (Câmara, Assembleias), as vagas são distribuídas proporcionalmente aos votos dos partidos. O quociente eleitoral (total de votos válidos / número de vagas) define quantos votos elegem um representante. Favorece representatividade, mas pode fragmentar o legislativo."
+        }
+      ],
+      "dicas": [
+        "Três poderes: Executivo (administra), Legislativo (leis), Judiciário (julga)",
+        "Majoritário = Executivo e Senado; Proporcional = Câmara e vereadores",
+        "Presidencialismo de coalizão = presidente precisa de alianças para governar"
+      ],
+      "questoes": [
+        {
+          "id": "q70-1",
+          "enunciado": "Na democracia brasileira, o Poder Legislativo tem como funções principais:",
+          "alternativas": {
+            "A": "Julgar crimes e conflitos entre cidadãos",
+            "B": "Elaborar leis, fiscalizar o Executivo e aprovar o orçamento público",
+            "C": "Administrar o Estado e executar políticas públicas",
+            "D": "Comandar as Forças Armadas e a política externa",
+            "E": "Nomear ministros do Supremo Tribunal Federal sem aprovação"
+          },
+          "correta": "B",
+          "explicacao": "O Poder Legislativo (Congresso Nacional, Assembleias, Câmaras) tem como funções: elaborar leis, fiscalizar o Poder Executivo (CPIs, convocação de ministros), aprovar o orçamento público, autorizar empréstimos, julgar presidente em impeachment (Senado). É essencial ao equilíbrio democrático.",
+          "dificuldade": "facil",
+          "tags": ["legislativo", "funções", "democracia"]
+        },
+        {
+          "id": "q70-2",
+          "enunciado": "O sistema proporcional, utilizado para eleição de deputados e vereadores no Brasil, caracteriza-se por:",
+          "alternativas": {
+            "A": "Eleger o candidato mais votado independentemente de partido",
+            "B": "Distribuir vagas proporcionalmente aos votos obtidos pelos partidos",
+            "C": "Realizar segundo turno quando nenhum candidato atinge 50%",
+            "D": "Eleger apenas candidatos indicados pelo presidente",
+            "E": "Garantir vaga a todos os candidatos que se inscrevem"
+          },
+          "correta": "B",
+          "explicacao": "No sistema proporcional, as vagas são distribuídas proporcionalmente aos votos dos partidos/federações. O quociente eleitoral define quantos votos elegem um representante. Assim, um partido com 30% dos votos terá aproximadamente 30% das vagas. Favorece representatividade de minorias, mas fragmenta o legislativo.",
+          "dificuldade": "medio",
+          "tags": ["sistema proporcional", "eleições", "deputados"]
+        },
+        {
+          "id": "q70-3",
+          "enunciado": "O conceito de 'presidencialismo de coalizão' descreve:",
+          "alternativas": {
+            "A": "Sistema em que o presidente governa sozinho sem apoio do Congresso",
+            "B": "Sistema em que o presidente precisa formar coalizões partidárias para obter maioria e governar",
+            "C": "Fusão do presidencialismo com a monarquia parlamentar",
+            "D": "Governo exclusivo do partido mais votado nas eleições",
+            "E": "Eleição indireta do presidente pelo Congresso"
+          },
+          "correta": "B",
+          "explicacao": "Presidencialismo de coalizão (termo de Sérgio Abranches) descreve o sistema brasileiro: com multipartidarismo fragmentado, nenhum partido obtém maioria sozinho. O presidente precisa formar coalizões com vários partidos (distribuindo cargos, atendendo demandas) para conseguir maioria no Congresso e aprovar suas políticas.",
+          "dificuldade": "medio",
+          "tags": ["presidencialismo de coalizão", "governo", "congresso"]
+        },
+        {
+          "id": "q70-4",
+          "enunciado": "O voto no Brasil é obrigatório para:",
+          "alternativas": {
+            "A": "Todos os brasileiros sem exceção",
+            "B": "Brasileiros entre 18 e 70 anos alfabetizados ou não",
+            "C": "Apenas brasileiros com ensino superior",
+            "D": "Apenas homens maiores de 21 anos",
+            "E": "Apenas militares e funcionários públicos"
+          },
+          "correta": "B",
+          "explicacao": "O voto é obrigatório para brasileiros entre 18 e 70 anos. É facultativo para analfabetos, maiores de 70 anos e jovens entre 16 e 18 anos. A Constituição de 1988 estendeu o voto aos analfabetos (facultativo) e aos jovens de 16 anos (facultativo), ampliando a participação política.",
+          "dificuldade": "facil",
+          "tags": ["voto obrigatório", "eleições", "cidadania"]
+        },
+        {
+          "id": "q70-5",
+          "enunciado": "Um desafio contemporâneo para a democracia brasileira é:",
+          "alternativas": {
+            "A": "O excesso de participação popular nas decisões políticas",
+            "B": "A desinformação e fake news que distorcem o debate público e as eleições",
+            "C": "A completa igualdade de representação entre todos os grupos sociais",
+            "D": "A ausência de qualquer conflito ou divergência política",
+            "E": "O funcionamento perfeito de todas as instituições sem falhas"
+          },
+          "correta": "B",
+          "explicacao": "A desinformação e fake news são desafios graves para a democracia contemporânea: distorcem o debate público, manipulam eleitores, atacam adversários com mentiras, minam a confiança nas instituições. Redes sociais amplificam a propagação. Combater a desinformação preservando a liberdade de expressão é desafio complexo.",
+          "dificuldade": "facil",
+          "tags": ["desinformação", "fake news", "democracia"]
+        }
+      ]
+    }
+  ]
+}

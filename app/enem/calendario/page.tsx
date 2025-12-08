@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Evento {
   id: string;
@@ -89,6 +90,7 @@ export default function CalendarioPage() {
 
   return (
     <div className="container">
+      <FloatingBackButton />
       <FloatingNav />
 
       <div className="header">
@@ -330,6 +332,7 @@ export default function CalendarioPage() {
                   background: `${cor}15`
                 }}
               >
+      <FloatingBackButton />
                 <span style={{ fontSize: '1.5rem' }}>{getTipoEmoji(evento.tipo)}</span>
                 <span style={{
                   color: 'var(--chalk-white)',

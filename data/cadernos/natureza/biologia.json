@@ -1,0 +1,1075 @@
+{
+  "id": "biologia-enem",
+  "slug": "biologia-enem",
+  "titulo": "Biologia para o ENEM",
+  "categoria": "natureza",
+  "nivel": "intermediario",
+  "descricao": "Domine os principais temas de Biologia cobrados no ENEM: citologia, genética, ecologia, evolução, fisiologia humana e muito mais.",
+  "icone": "Dna",
+  "cor": "#27AE60",
+  "tempoEstimado": "20 horas",
+  "fpRecompensa": 500,
+  "tags": ["biologia", "citologia", "genética", "ecologia", "evolução", "fisiologia", "enem"],
+  "modulos": [
+    {
+      "id": "m131",
+      "titulo": "Citologia: A Base da Vida",
+      "resumo": "Estudo das células, suas estruturas e funções fundamentais para todos os seres vivos.",
+      "topicos": [
+        {
+          "titulo": "Teoria Celular e Tipos de Células",
+          "conteudo": "A teoria celular estabelece que todos os seres vivos são formados por células, a célula é a unidade funcional da vida e toda célula se origina de outra preexistente. Existem dois tipos principais: células procariontes (sem núcleo definido, como bactérias) e eucariontes (com núcleo delimitado por membrana, como animais, vegetais e fungos). As células procariontes são mais simples, possuindo DNA circular no nucleoide, ribossomos 70S e parede celular. As eucariontes são mais complexas, com organelas membranosas especializadas."
+        },
+        {
+          "titulo": "Organelas Celulares e Suas Funções",
+          "conteudo": "As principais organelas incluem: núcleo (armazena DNA e controla atividades celulares), mitocôndrias (respiração celular e produção de ATP), ribossomos (síntese proteica), retículo endoplasmático rugoso (síntese de proteínas para exportação), retículo liso (síntese de lipídios e desintoxicação), complexo de Golgi (modificação e empacotamento de substâncias), lisossomos (digestão intracelular), peroxissomos (degradação de substâncias tóxicas), cloroplastos (fotossíntese em vegetais), vacúolos (armazenamento) e citoesqueleto (sustentação e movimento)."
+        },
+        {
+          "titulo": "Membrana Plasmática e Transporte",
+          "conteudo": "A membrana plasmática é formada por uma bicamada fosfolipídica com proteínas inseridas (modelo do mosaico fluido). O transporte pode ser passivo (sem gasto de energia): difusão simples, difusão facilitada e osmose; ou ativo (com gasto de ATP): bomba de sódio-potássio, endocitose (fagocitose e pinocitose) e exocitose. A osmose é especialmente importante: em meio hipotônico a célula animal pode sofrer lise, enquanto em meio hipertônico ocorre crenação. Células vegetais em meio hipotônico ficam túrgidas devido à parede celular."
+        }
+      ],
+      "exemplos": [
+        "Bactérias são procariontes e não possuem mitocôndrias, realizando respiração na membrana plasmática.",
+        "Células do fígado possuem muito retículo endoplasmático liso para desintoxicação do álcool.",
+        "A hemácia em água destilada (hipotônica) sofre hemólise por entrada excessiva de água."
+      ],
+      "dicas": [
+        "Memorize: procariontes = antes do núcleo (sem carioteca); eucariontes = núcleo verdadeiro.",
+        "Mitocôndrias e cloroplastos têm DNA próprio - evidência da teoria endossimbiótica.",
+        "Transporte ativo sempre consome ATP e vai contra o gradiente de concentração."
+      ],
+      "questoes": [
+        {
+          "id": "q131-1",
+          "enunciado": "Uma característica que diferencia células procariontes de eucariontes é:",
+          "alternativas": {
+            "A": "Presença de membrana plasmática",
+            "B": "Presença de ribossomos",
+            "C": "Ausência de carioteca nas procariontes",
+            "D": "Capacidade de realizar síntese proteica",
+            "E": "Presença de material genético"
+          },
+          "correta": "C",
+          "explicacao": "A principal diferença é que procariontes não possuem carioteca (membrana nuclear), tendo o DNA disperso no citoplasma (nucleoide). Ambos os tipos possuem membrana plasmática, ribossomos, material genético e realizam síntese proteica.",
+          "dificuldade": "facil",
+          "tags": ["citologia", "procariontes", "eucariontes"]
+        },
+        {
+          "id": "q131-2",
+          "enunciado": "Ao colocar hemácias em uma solução de NaCl a 0,9% (isotônica), em água destilada e em solução de NaCl a 3%, espera-se que as células, respectivamente:",
+          "alternativas": {
+            "A": "Permaneçam normais, sofram crenação, sofram lise",
+            "B": "Sofram lise, permaneçam normais, sofram crenação",
+            "C": "Permaneçam normais, sofram lise, sofram crenação",
+            "D": "Sofram crenação, sofram lise, permaneçam normais",
+            "E": "Sofram lise, sofram crenação, permaneçam normais"
+          },
+          "correta": "C",
+          "explicacao": "Em solução isotônica (0,9%), não há movimento líquido de água e a célula permanece normal. Em água destilada (hipotônica), a água entra na célula por osmose, causando lise. Em solução hipertônica (3%), a água sai da célula, causando crenação (murcha).",
+          "dificuldade": "medio",
+          "tags": ["citologia", "osmose", "transporte"]
+        },
+        {
+          "id": "q131-3",
+          "enunciado": "A organela responsável pela produção de ATP através da respiração celular aeróbica é:",
+          "alternativas": {
+            "A": "Ribossomo",
+            "B": "Complexo de Golgi",
+            "C": "Retículo endoplasmático",
+            "D": "Mitocôndria",
+            "E": "Lisossomo"
+          },
+          "correta": "D",
+          "explicacao": "A mitocôndria é a organela responsável pela respiração celular aeróbica, onde ocorre o ciclo de Krebs e a cadeia respiratória, produzindo a maior parte do ATP celular. É conhecida como a 'usina de energia' da célula.",
+          "dificuldade": "facil",
+          "tags": ["citologia", "mitocôndria", "respiração"]
+        },
+        {
+          "id": "q131-4",
+          "enunciado": "O modelo do mosaico fluido, proposto por Singer e Nicolson, descreve a estrutura da membrana plasmática como:",
+          "alternativas": {
+            "A": "Uma camada simples de fosfolipídios com proteínas externas",
+            "B": "Uma bicamada lipídica rígida com proteínas fixas",
+            "C": "Uma bicamada fosfolipídica com proteínas que se movem lateralmente",
+            "D": "Uma estrutura de carboidratos com lipídios inseridos",
+            "E": "Uma membrana formada exclusivamente por proteínas"
+          },
+          "correta": "C",
+          "explicacao": "O modelo do mosaico fluido propõe que a membrana é uma bicamada de fosfolipídios com consistência fluida, onde proteínas integrais e periféricas podem se mover lateralmente, como peças de um mosaico em um fluido viscoso.",
+          "dificuldade": "medio",
+          "tags": ["citologia", "membrana plasmática", "mosaico fluido"]
+        },
+        {
+          "id": "q131-5",
+          "enunciado": "A bomba de sódio-potássio é um exemplo de transporte ativo porque:",
+          "alternativas": {
+            "A": "Transporta íons a favor do gradiente de concentração",
+            "B": "Não necessita de proteínas transportadoras",
+            "C": "Utiliza ATP para transportar íons contra o gradiente de concentração",
+            "D": "Depende apenas da diferença de concentração entre os meios",
+            "E": "Ocorre por difusão facilitada através de canais iônicos"
+          },
+          "correta": "C",
+          "explicacao": "A bomba de sódio-potássio é transporte ativo porque utiliza energia do ATP para bombear 3 íons Na⁺ para fora e 2 íons K⁺ para dentro da célula, ambos contra seus gradientes de concentração. Isso mantém o potencial de membrana.",
+          "dificuldade": "medio",
+          "tags": ["citologia", "transporte ativo", "bomba sódio-potássio"]
+        }
+      ]
+    },
+    {
+      "id": "m132",
+      "titulo": "Metabolismo Energético",
+      "resumo": "Compreenda os processos de obtenção e transformação de energia: fotossíntese, respiração celular e fermentação.",
+      "topicos": [
+        {
+          "titulo": "Fotossíntese",
+          "conteudo": "A fotossíntese ocorre nos cloroplastos e converte energia luminosa em energia química. Divide-se em duas fases: a fase clara (fotoquímica), que ocorre nos tilacoides e produz ATP e NADPH através da fotólise da água e do transporte de elétrons; e a fase escura (química ou ciclo de Calvin), que ocorre no estroma e utiliza ATP e NADPH para fixar CO₂ em glicose. A equação geral é: 6CO₂ + 12H₂O + luz → C₆H₁₂O₆ + 6O₂ + 6H₂O. Os fatores que influenciam a taxa fotossintética são: intensidade luminosa, concentração de CO₂, temperatura e disponibilidade de água."
+        },
+        {
+          "titulo": "Respiração Celular Aeróbica",
+          "conteudo": "A respiração celular aeróbica ocorre em três etapas: 1) Glicólise (no citoplasma): quebra da glicose em 2 piruvatos, produzindo 2 ATP e 2 NADH; 2) Ciclo de Krebs (na matriz mitocondrial): oxidação do acetil-CoA, produzindo 2 ATP, 6 NADH e 2 FADH₂; 3) Cadeia respiratória (nas cristas mitocondriais): transferência de elétrons do NADH e FADH₂ para o O₂, produzindo cerca de 26-28 ATP por fosforilação oxidativa. O saldo total é de aproximadamente 30-32 ATP por molécula de glicose. A equação geral é: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP)."
+        },
+        {
+          "titulo": "Fermentação",
+          "conteudo": "A fermentação é um processo anaeróbico que ocorre no citoplasma quando não há oxigênio disponível. Após a glicólise, o piruvato é convertido em diferentes produtos dependendo do organismo: fermentação alcoólica (leveduras) produz etanol e CO₂, utilizada na produção de pães, cervejas e vinhos; fermentação lática (bactérias e músculos) produz ácido lático, usado na produção de iogurtes e queijos. O saldo energético é de apenas 2 ATP (da glicólise), muito menor que a respiração aeróbica. A fermentação lática nos músculos causa fadiga e dor muscular."
+        }
+      ],
+      "exemplos": [
+        "Plantas aquáticas em aquários iluminados liberam bolhas de O₂ - produto da fotossíntese.",
+        "Atletas em exercício intenso produzem ácido lático por fermentação nos músculos.",
+        "O fermento biológico (Saccharomyces) faz o pão crescer liberando CO₂ na fermentação alcoólica."
+      ],
+      "dicas": [
+        "Fotossíntese e respiração são processos inversos: uma produz O₂ e consome CO₂, a outra faz o oposto.",
+        "Na fermentação, o saldo é só 2 ATP porque não há cadeia respiratória.",
+        "O ponto de compensação fótico é quando fotossíntese = respiração em uma planta."
+      ],
+      "questoes": [
+        {
+          "id": "q132-1",
+          "enunciado": "Durante a fotossíntese, a fase clara ocorre nos tilacoides e tem como produtos:",
+          "alternativas": {
+            "A": "Glicose e oxigênio",
+            "B": "ATP, NADPH e oxigênio",
+            "C": "CO₂ e água",
+            "D": "Piruvato e ATP",
+            "E": "Ácido lático e CO₂"
+          },
+          "correta": "B",
+          "explicacao": "A fase clara (fotoquímica) ocorre nos tilacoides, onde a energia luminosa é captada pela clorofila. A fotólise da água libera O₂, e o transporte de elétrons produz ATP e NADPH, que serão usados na fase escura para fixar CO₂.",
+          "dificuldade": "medio",
+          "tags": ["fotossíntese", "fase clara", "metabolismo"]
+        },
+        {
+          "id": "q132-2",
+          "enunciado": "A respiração celular aeróbica produz mais ATP que a fermentação porque:",
+          "alternativas": {
+            "A": "A fermentação não realiza glicólise",
+            "B": "A respiração utiliza CO₂ como aceptor final de elétrons",
+            "C": "A respiração inclui o ciclo de Krebs e a cadeia respiratória",
+            "D": "A fermentação ocorre apenas em organismos procariontes",
+            "E": "A respiração não necessita de glicose"
+          },
+          "correta": "C",
+          "explicacao": "A respiração aeróbica produz cerca de 30-32 ATP porque, além da glicólise (2 ATP), inclui o ciclo de Krebs e a cadeia respiratória, onde a maior parte do ATP é produzida. A fermentação para na glicólise, produzindo apenas 2 ATP.",
+          "dificuldade": "medio",
+          "tags": ["respiração", "fermentação", "ATP"]
+        },
+        {
+          "id": "q132-3",
+          "enunciado": "Na produção de pães, o fermento biológico realiza fermentação alcoólica. O gás responsável pelo crescimento da massa é:",
+          "alternativas": {
+            "A": "Oxigênio",
+            "B": "Nitrogênio",
+            "C": "Gás carbônico",
+            "D": "Hidrogênio",
+            "E": "Metano"
+          },
+          "correta": "C",
+          "explicacao": "Na fermentação alcoólica realizada por leveduras (Saccharomyces cerevisiae), a glicose é convertida em etanol e gás carbônico (CO₂). O CO₂ liberado forma bolhas na massa, fazendo-a crescer. O álcool evapora durante o cozimento.",
+          "dificuldade": "facil",
+          "tags": ["fermentação", "alcoólica", "biotecnologia"]
+        },
+        {
+          "id": "q132-4",
+          "enunciado": "O ciclo de Calvin, que ocorre na fase escura da fotossíntese, tem como função principal:",
+          "alternativas": {
+            "A": "Produzir oxigênio a partir da água",
+            "B": "Captar energia luminosa pela clorofila",
+            "C": "Fixar CO₂ atmosférico em compostos orgânicos",
+            "D": "Transportar elétrons na cadeia respiratória",
+            "E": "Converter piruvato em acetil-CoA"
+          },
+          "correta": "C",
+          "explicacao": "O ciclo de Calvin ocorre no estroma do cloroplasto e utiliza ATP e NADPH (da fase clara) para fixar CO₂ atmosférico em moléculas orgânicas, principalmente glicose. É também chamado de fase de fixação do carbono.",
+          "dificuldade": "medio",
+          "tags": ["fotossíntese", "ciclo de Calvin", "fase escura"]
+        },
+        {
+          "id": "q132-5",
+          "enunciado": "Durante exercício físico intenso, quando o suprimento de oxigênio é insuficiente, as células musculares realizam fermentação lática. Isso explica:",
+          "alternativas": {
+            "A": "O aumento da produção de ATP nas mitocôndrias",
+            "B": "A sensação de fadiga e dor muscular",
+            "C": "A liberação de gás carbônico pelos músculos",
+            "D": "O aumento da eficiência energética celular",
+            "E": "A produção de etanol nos tecidos"
+          },
+          "correta": "B",
+          "explicacao": "Quando há déficit de oxigênio, os músculos realizam fermentação lática, produzindo ácido lático. O acúmulo de ácido lático diminui o pH muscular, causando fadiga e dor. Após o exercício, o ácido lático é metabolizado no fígado.",
+          "dificuldade": "facil",
+          "tags": ["fermentação lática", "exercício", "fadiga"]
+        }
+      ]
+    },
+    {
+      "id": "m133",
+      "titulo": "Divisão Celular: Mitose e Meiose",
+      "resumo": "Entenda os processos de divisão celular, suas fases, importância e diferenças fundamentais.",
+      "topicos": [
+        {
+          "titulo": "Ciclo Celular e Mitose",
+          "conteudo": "O ciclo celular inclui a interfase (G1, S e G2) e a divisão celular. Na interfase, a célula cresce (G1), duplica o DNA (S) e se prepara para dividir (G2). A mitose é uma divisão equacional que produz duas células-filhas geneticamente idênticas à célula-mãe (2n → 2n). Suas fases são: Prófase (condensação dos cromossomos, desaparecimento da carioteca, formação do fuso), Metáfase (cromossomos na placa equatorial), Anáfase (separação das cromátides-irmãs) e Telófase (descondensação, reaparecimento da carioteca, citocinese). A mitose é importante para crescimento, regeneração e reprodução assexuada."
+        },
+        {
+          "titulo": "Meiose",
+          "conteudo": "A meiose é uma divisão reducional que produz quatro células-filhas haploides a partir de uma célula diploide (2n → n). Ocorre em duas divisões sucessivas: Meiose I (reducional) - os cromossomos homólogos se separam, reduzindo o número cromossômico pela metade. Na Prófase I ocorre o crossing-over (permutação), importante fonte de variabilidade genética. Meiose II (equacional) - semelhante à mitose, onde as cromátides-irmãs se separam. A meiose ocorre na formação de gametas (gametogênese) e esporos, sendo fundamental para a reprodução sexuada e variabilidade genética."
+        },
+        {
+          "titulo": "Comparação e Importância Biológica",
+          "conteudo": "Principais diferenças: Mitose produz 2 células diploides idênticas; meiose produz 4 células haploides diferentes. Mitose ocorre em células somáticas; meiose em células germinativas. Mitose não tem crossing-over; meiose tem (na Prófase I). A meiose gera variabilidade genética por: crossing-over (troca de segmentos entre cromossomos homólogos), segregação independente (distribuição aleatória dos homólogos) e fecundação (combinação aleatória de gametas). Erros na meiose podem causar aneuploidias como a Síndrome de Down (trissomia do 21)."
+        }
+      ],
+      "exemplos": [
+        "Células da pele se dividem por mitose para cicatrização de feridas.",
+        "Na espermatogênese, a meiose produz 4 espermatozoides a partir de um espermatócito.",
+        "A Síndrome de Down ocorre por não-disjunção na meiose, resultando em trissomia do cromossomo 21."
+      ],
+      "dicas": [
+        "Mitose = Multiplicação (células idênticas para crescimento). Meiose = Metade (reduz cromossomos para gametas).",
+        "PMAT: Prófase, Metáfase, Anáfase, Telófase - ordem das fases da mitose.",
+        "Crossing-over só ocorre na meiose I (prófase I) entre cromossomos homólogos."
+      ],
+      "questoes": [
+        {
+          "id": "q133-1",
+          "enunciado": "Uma célula com 2n = 46 cromossomos sofre meiose. Ao final do processo, cada célula-filha terá:",
+          "alternativas": {
+            "A": "46 cromossomos",
+            "B": "92 cromossomos",
+            "C": "23 cromossomos",
+            "D": "12 cromossomos",
+            "E": "69 cromossomos"
+          },
+          "correta": "C",
+          "explicacao": "A meiose é uma divisão reducional que reduz o número de cromossomos pela metade. Uma célula com 2n = 46 produzirá gametas com n = 23 cromossomos. Isso é essencial para manter o número cromossômico da espécie após a fecundação.",
+          "dificuldade": "facil",
+          "tags": ["meiose", "cromossomos", "divisão celular"]
+        },
+        {
+          "id": "q133-2",
+          "enunciado": "O crossing-over é um evento que ocorre durante a meiose e contribui para a variabilidade genética porque:",
+          "alternativas": {
+            "A": "Duplica o material genético das células",
+            "B": "Promove troca de segmentos entre cromossomos homólogos",
+            "C": "Separa as cromátides-irmãs na anáfase",
+            "D": "Aumenta o número de cromossomos nas células-filhas",
+            "E": "Impede a formação de gametas defeituosos"
+          },
+          "correta": "B",
+          "explicacao": "O crossing-over (ou permutação) ocorre na prófase I da meiose, quando cromossomos homólogos trocam segmentos entre si. Isso cria novas combinações de alelos, aumentando a variabilidade genética dos gametas formados.",
+          "dificuldade": "medio",
+          "tags": ["meiose", "crossing-over", "variabilidade"]
+        },
+        {
+          "id": "q133-3",
+          "enunciado": "A fase da mitose em que os cromossomos se alinham na região equatorial da célula é denominada:",
+          "alternativas": {
+            "A": "Prófase",
+            "B": "Metáfase",
+            "C": "Anáfase",
+            "D": "Telófase",
+            "E": "Interfase"
+          },
+          "correta": "B",
+          "explicacao": "Na metáfase, os cromossomos atingem seu grau máximo de condensação e se alinham na placa equatorial (ou metafásica) da célula, presos às fibras do fuso pelos centrômeros. É a melhor fase para observar e contar cromossomos.",
+          "dificuldade": "facil",
+          "tags": ["mitose", "metáfase", "cromossomos"]
+        },
+        {
+          "id": "q133-4",
+          "enunciado": "A não-disjunção cromossômica durante a meiose pode resultar em:",
+          "alternativas": {
+            "A": "Células com número normal de cromossomos",
+            "B": "Aumento da variabilidade por crossing-over",
+            "C": "Aneuploidias como a Síndrome de Down",
+            "D": "Duplicação do DNA durante a interfase",
+            "E": "Formação de células diploides nos gametas"
+          },
+          "correta": "C",
+          "explicacao": "A não-disjunção é a falha na separação dos cromossomos durante a meiose, resultando em gametas com cromossomos a mais ou a menos. Quando um gameta com 24 cromossomos (incluindo dois cromossomos 21) é fecundado, origina um indivíduo com trissomia do 21 (Síndrome de Down).",
+          "dificuldade": "medio",
+          "tags": ["meiose", "não-disjunção", "aneuploidia"]
+        },
+        {
+          "id": "q133-5",
+          "enunciado": "Comparando mitose e meiose, é correto afirmar que:",
+          "alternativas": {
+            "A": "Ambas produzem células haploides",
+            "B": "A mitose ocorre apenas em células germinativas",
+            "C": "A meiose produz células geneticamente idênticas",
+            "D": "A mitose mantém o número de cromossomos da célula-mãe",
+            "E": "A meiose não contribui para a variabilidade genética"
+          },
+          "correta": "D",
+          "explicacao": "A mitose é uma divisão equacional que produz duas células-filhas com o mesmo número de cromossomos da célula-mãe (2n → 2n). Já a meiose é reducional (2n → n) e produz células geneticamente diferentes devido ao crossing-over e segregação independente.",
+          "dificuldade": "medio",
+          "tags": ["mitose", "meiose", "comparação"]
+        }
+      ]
+    },
+    {
+      "id": "m134",
+      "titulo": "Genética Mendeliana",
+      "resumo": "Aprenda as leis de Mendel, conceitos fundamentais de hereditariedade e resolução de problemas genéticos.",
+      "topicos": [
+        {
+          "titulo": "Conceitos Básicos e Primeira Lei de Mendel",
+          "conteudo": "Gregor Mendel, o pai da genética, estabeleceu as bases da hereditariedade estudando ervilhas. Conceitos fundamentais: Gene (unidade hereditária), Alelo (formas alternativas de um gene), Homozigoto (alelos iguais: AA ou aa), Heterozigoto (alelos diferentes: Aa), Dominante (se expressa em heterozigotos), Recessivo (só se expressa em homozigotos), Genótipo (constituição genética), Fenótipo (característica observável). A Primeira Lei de Mendel (Lei da Segregação dos Fatores) afirma que cada característica é determinada por um par de fatores que se separam na formação dos gametas, indo um fator para cada gameta."
+        },
+        {
+          "titulo": "Segunda Lei de Mendel e Outros Padrões",
+          "conteudo": "A Segunda Lei de Mendel (Lei da Segregação Independente) afirma que genes localizados em cromossomos diferentes segregam independentemente durante a meiose. Válida para genes não ligados. Cruzamento diíbrido (AaBb x AaBb) produz proporção 9:3:3:1. Outros padrões de herança: Dominância incompleta (heterozigoto tem fenótipo intermediário, ex: flores rosas), Codominância (ambos alelos se expressam, ex: sangue AB), Alelos múltiplos (mais de dois alelos para um gene, ex: sistema ABO com alelos IA, IB, i), Alelos letais (causam morte quando homozigotos)."
+        },
+        {
+          "titulo": "Heredogramas e Resolução de Problemas",
+          "conteudo": "Heredogramas (genealogias) são diagramas que representam a herança de características em famílias. Símbolos: quadrado (homem), círculo (mulher), preenchido (afetado), vazio (normal), linha horizontal (casamento), linha vertical (descendência). Para determinar se uma característica é dominante ou recessiva: se pais normais têm filho afetado, a característica é recessiva. Para calcular probabilidades: use o quadro de Punnett ou regra do 'E' (multiplica) e 'OU' (soma). Probabilidade de Aa x Aa ter filho aa = 1/4. Probabilidade de ter dois filhos aa = 1/4 × 1/4 = 1/16."
+        }
+      ],
+      "exemplos": [
+        "Ervilhas amarelas (VV ou Vv) são dominantes sobre verdes (vv) - experimento clássico de Mendel.",
+        "Tipo sanguíneo AB demonstra codominância: alelos IA e IB ambos se expressam.",
+        "Cruzamento de flores vermelhas (VV) com brancas (BB) produz rosas (VB) - dominância incompleta."
+      ],
+      "dicas": [
+        "Para identificar genótipo dominante: se tem filho recessivo (aa), os pais são Aa.",
+        "Sistema ABO: A e B são codominantes entre si, mas dominantes sobre O.",
+        "Probabilidade de eventos independentes: multiplique. Aa x Aa = AA (1/4), Aa (2/4), aa (1/4)."
+      ],
+      "questoes": [
+        {
+          "id": "q134-1",
+          "enunciado": "Em ervilhas, a cor amarela (V) é dominante sobre a cor verde (v). Do cruzamento entre duas plantas heterozigotas (Vv x Vv), qual a proporção esperada de plantas com sementes amarelas?",
+          "alternativas": {
+            "A": "100%",
+            "B": "75%",
+            "C": "50%",
+            "D": "25%",
+            "E": "0%"
+          },
+          "correta": "B",
+          "explicacao": "Cruzando Vv x Vv: 1 VV (amarela) + 2 Vv (amarelas) + 1 vv (verde). Proporção fenotípica: 3 amarelas : 1 verde. Portanto, 75% serão amarelas (VV e Vv) e 25% verdes (vv).",
+          "dificuldade": "facil",
+          "tags": ["genética", "primeira lei", "Mendel"]
+        },
+        {
+          "id": "q134-2",
+          "enunciado": "Um casal tem tipo sanguíneo A (genótipo IAi) e tipo B (genótipo IBi). A probabilidade de terem um filho com tipo sanguíneo O é:",
+          "alternativas": {
+            "A": "0%",
+            "B": "25%",
+            "C": "50%",
+            "D": "75%",
+            "E": "100%"
+          },
+          "correta": "B",
+          "explicacao": "Cruzamento IAi x IBi produz: IAIB (AB), IAi (A), IBi (B), ii (O). Cada genótipo tem probabilidade de 1/4 (25%). Portanto, a chance de filho tipo O (ii) é 25%.",
+          "dificuldade": "medio",
+          "tags": ["genética", "sistema ABO", "probabilidade"]
+        },
+        {
+          "id": "q134-3",
+          "enunciado": "Em um heredograma, observa-se que pais normais tiveram um filho afetado por uma doença. Pode-se concluir que:",
+          "alternativas": {
+            "A": "A doença é causada por alelo dominante",
+            "B": "A doença é ligada ao cromossomo Y",
+            "C": "A doença é causada por alelo recessivo",
+            "D": "Os pais são homozigotos dominantes",
+            "E": "A doença não é hereditária"
+          },
+          "correta": "C",
+          "explicacao": "Se pais não afetados têm filho afetado, a característica é recessiva. Os pais são heterozigotos (Aa), portadores do alelo recessivo sem manifestá-lo. O filho afetado é homozigoto recessivo (aa).",
+          "dificuldade": "facil",
+          "tags": ["genética", "heredograma", "recessivo"]
+        },
+        {
+          "id": "q134-4",
+          "enunciado": "A Segunda Lei de Mendel se aplica a genes que:",
+          "alternativas": {
+            "A": "Estão localizados no mesmo cromossomo",
+            "B": "Estão em cromossomos diferentes ou distantes no mesmo cromossomo",
+            "C": "Apresentam dominância completa",
+            "D": "São responsáveis pela mesma característica",
+            "E": "Não sofrem crossing-over"
+          },
+          "correta": "B",
+          "explicacao": "A Segunda Lei de Mendel (Segregação Independente) só é válida para genes localizados em cromossomos diferentes ou muito distantes no mesmo cromossomo. Genes ligados (próximos no mesmo cromossomo) não segregam independentemente.",
+          "dificuldade": "medio",
+          "tags": ["genética", "segunda lei", "segregação independente"]
+        },
+        {
+          "id": "q134-5",
+          "enunciado": "Na espécie humana, um casal heterozigoto para albinismo (Aa x Aa) já tem dois filhos normais. A probabilidade de o terceiro filho ser albino é:",
+          "alternativas": {
+            "A": "1/16",
+            "B": "1/8",
+            "C": "1/4",
+            "D": "1/2",
+            "E": "3/4"
+          },
+          "correta": "C",
+          "explicacao": "Cada gestação é um evento independente. A probabilidade de nascer um filho albino (aa) do cruzamento Aa x Aa é sempre 1/4 (25%), independentemente do fenótipo dos filhos anteriores. O histórico familiar não altera as probabilidades de futuras gestações.",
+          "dificuldade": "medio",
+          "tags": ["genética", "probabilidade", "eventos independentes"]
+        }
+      ]
+    },
+    {
+      "id": "m135",
+      "titulo": "Genética Molecular e Biotecnologia",
+      "resumo": "Estude a estrutura do DNA, síntese proteica, mutações e aplicações da biotecnologia moderna.",
+      "topicos": [
+        {
+          "titulo": "Estrutura e Replicação do DNA",
+          "conteudo": "O DNA (ácido desoxirribonucleico) é uma dupla hélice formada por nucleotídeos. Cada nucleotídeo possui: fosfato, desoxirribose (açúcar) e uma base nitrogenada (Adenina, Timina, Guanina ou Citosina). As bases se pareiam por pontes de hidrogênio: A=T (duas pontes) e G≡C (três pontes). A replicação é semiconservativa: cada fita serve de molde para uma nova, resultando em duas moléculas idênticas, cada uma com uma fita antiga e uma nova. A enzima DNA polimerase catalisa a síntese na direção 5'→3'. A replicação ocorre na fase S da interfase."
+        },
+        {
+          "titulo": "Síntese Proteica: Transcrição e Tradução",
+          "conteudo": "A informação genética flui: DNA → RNA → Proteína (dogma central). Transcrição (núcleo): a RNA polimerase usa uma fita de DNA como molde para sintetizar RNA mensageiro (mRNA). No RNA, a Uracila substitui a Timina. Tradução (citoplasma/ribossomos): o mRNA é lido em códons (trinca de bases), cada códon especifica um aminoácido. O RNA transportador (tRNA) traz os aminoácidos com seu anticódon complementar ao códon. O código genético é universal (mesmo para todos os seres), degenerado (vários códons para um aminoácido) e não ambíguo (um códon = um aminoácido)."
+        },
+        {
+          "titulo": "Biotecnologia e Engenharia Genética",
+          "conteudo": "A biotecnologia utiliza organismos ou seus componentes para desenvolver produtos úteis. Técnicas importantes: Enzimas de restrição (cortam DNA em sequências específicas), DNA recombinante (inserção de genes de um organismo em outro), PCR (amplificação de fragmentos de DNA), Eletroforese (separação de fragmentos por tamanho), Transgênicos/OGMs (organismos com genes de outras espécies), Clonagem (cópia genética de um organismo), Terapia gênica (correção de genes defeituosos). Aplicações: produção de insulina por bactérias, plantas resistentes a pragas, diagnóstico de doenças genéticas, testes de paternidade (DNA fingerprinting)."
+        }
+      ],
+      "exemplos": [
+        "Se uma fita de DNA tem sequência ATGCCA, a fita complementar será TACGGT.",
+        "Insulina humana é produzida por bactérias transgênicas que receberam o gene humano.",
+        "O teste de COVID-19 por PCR amplifica o material genético do vírus para detecção."
+      ],
+      "dicas": [
+        "Pareamento: A-T (ou A-U no RNA) e G-C. Some A+T e G+C para verificar proporções.",
+        "Códon AUG = início e metionina. UAA, UAG, UGA = códons de parada.",
+        "DNA tem Timina, RNA tem Uracila. DNA é dupla-fita, RNA é fita simples."
+      ],
+      "questoes": [
+        {
+          "id": "q135-1",
+          "enunciado": "Em uma molécula de DNA, se a porcentagem de adenina é 30%, a porcentagem de guanina será:",
+          "alternativas": {
+            "A": "30%",
+            "B": "20%",
+            "C": "40%",
+            "D": "10%",
+            "E": "15%"
+          },
+          "correta": "B",
+          "explicacao": "Pela regra de Chargaff, A=T e G=C. Se A=30%, então T=30% também. O total de A+T = 60%. Sobram 40% para G+C. Como G=C, cada um tem 20%.",
+          "dificuldade": "medio",
+          "tags": ["DNA", "Chargaff", "bases nitrogenadas"]
+        },
+        {
+          "id": "q135-2",
+          "enunciado": "O dogma central da biologia molecular estabelece que a informação genética flui na seguinte direção:",
+          "alternativas": {
+            "A": "RNA → DNA → Proteína",
+            "B": "Proteína → RNA → DNA",
+            "C": "DNA → RNA → Proteína",
+            "D": "RNA → Proteína → DNA",
+            "E": "Proteína → DNA → RNA"
+          },
+          "correta": "C",
+          "explicacao": "O dogma central, proposto por Crick, estabelece que a informação genética flui do DNA para o RNA (transcrição) e do RNA para a proteína (tradução). Exceções existem, como a transcriptase reversa em retrovírus (RNA → DNA).",
+          "dificuldade": "facil",
+          "tags": ["dogma central", "síntese proteica", "biologia molecular"]
+        },
+        {
+          "id": "q135-3",
+          "enunciado": "A técnica de PCR (Reação em Cadeia da Polimerase) é utilizada para:",
+          "alternativas": {
+            "A": "Separar proteínas por eletroforese",
+            "B": "Clonar organismos inteiros",
+            "C": "Amplificar fragmentos específicos de DNA",
+            "D": "Produzir insulina em bactérias",
+            "E": "Cortar DNA com enzimas de restrição"
+          },
+          "correta": "C",
+          "explicacao": "A PCR permite amplificar (fazer milhões de cópias) de um fragmento específico de DNA em poucas horas. É amplamente usada em diagnósticos (como testes de COVID), medicina forense, pesquisa e testes de paternidade.",
+          "dificuldade": "facil",
+          "tags": ["PCR", "biotecnologia", "DNA"]
+        },
+        {
+          "id": "q135-4",
+          "enunciado": "Durante a tradução, a molécula responsável por transportar os aminoácidos até os ribossomos é o:",
+          "alternativas": {
+            "A": "DNA",
+            "B": "mRNA (RNA mensageiro)",
+            "C": "tRNA (RNA transportador)",
+            "D": "rRNA (RNA ribossômico)",
+            "E": "snRNA (RNA nuclear pequeno)"
+          },
+          "correta": "C",
+          "explicacao": "O tRNA (RNA transportador) possui um anticódon que se pareia com o códon do mRNA e carrega o aminoácido correspondente. Cada tRNA é específico para um aminoácido e reconhece códons específicos.",
+          "dificuldade": "facil",
+          "tags": ["tradução", "tRNA", "síntese proteica"]
+        },
+        {
+          "id": "q135-5",
+          "enunciado": "A produção de insulina humana por bactérias transgênicas é um exemplo de aplicação da biotecnologia que envolve:",
+          "alternativas": {
+            "A": "Clonagem reprodutiva de bactérias",
+            "B": "Seleção natural de microrganismos",
+            "C": "Tecnologia do DNA recombinante",
+            "D": "Cruzamentos seletivos tradicionais",
+            "E": "Mutações induzidas por radiação"
+          },
+          "correta": "C",
+          "explicacao": "A insulina humana é produzida inserindo o gene humano da insulina em bactérias (E. coli) através da tecnologia do DNA recombinante. As bactérias transgênicas passam a produzir insulina humana, que é purificada para uso médico.",
+          "dificuldade": "medio",
+          "tags": ["biotecnologia", "DNA recombinante", "transgênicos"]
+        }
+      ]
+    },
+    {
+      "id": "m136",
+      "titulo": "Evolução Biológica",
+      "resumo": "Compreenda as teorias evolutivas, evidências da evolução e mecanismos de especiação.",
+      "topicos": [
+        {
+          "titulo": "Teorias Evolutivas: Lamarck e Darwin",
+          "conteudo": "Lamarck propôs a Lei do Uso e Desuso (órgãos usados se desenvolvem, não usados atrofiam) e Herança dos Caracteres Adquiridos (características adquiridas em vida são transmitidas aos descendentes) - esta teoria foi refutada. Darwin e Wallace propuseram a Seleção Natural: indivíduos com variações favoráveis têm maior chance de sobreviver e se reproduzir, transmitindo essas características. Pontos da teoria darwiniana: variabilidade nas populações, luta pela sobrevivência, seleção dos mais aptos, reprodução diferencial. A Teoria Sintética (Neodarwinismo) une Darwin com a genética: variabilidade vem de mutações e recombinação, e a seleção natural atua sobre essa variação."
+        },
+        {
+          "titulo": "Evidências da Evolução",
+          "conteudo": "Fósseis: registram a história da vida e mostram formas intermediárias. Anatomia comparada: órgãos homólogos (mesma origem, funções diferentes - ex: braço humano e asa de morcego) indicam ancestralidade comum; órgãos análogos (origens diferentes, mesma função - ex: asa de inseto e asa de ave) indicam evolução convergente. Órgãos vestigiais (sem função atual - ex: apêndice humano) sugerem ancestrais onde eram funcionais. Embriologia comparada: embriões de vertebrados são semelhantes nos estágios iniciais. Bioquímica/Genética molecular: quanto mais próximas as espécies, mais semelhantes são suas proteínas e DNA."
+        },
+        {
+          "titulo": "Especiação e Mecanismos Evolutivos",
+          "conteudo": "Especiação é a formação de novas espécies. Especiação alopátrica: isolamento geográfico separa populações que evoluem independentemente até se tornarem incompatíveis reprodutivamente. Especiação simpátrica: ocorre sem isolamento geográfico, por isolamento reprodutivo (comportamental, temporal, mecânico). Mecanismos evolutivos: Mutação (fonte primária de variação), Seleção natural (direcional, estabilizadora ou disruptiva), Deriva genética (mudanças aleatórias em populações pequenas), Fluxo gênico (migração entre populações). O equilíbrio de Hardy-Weinberg descreve populações que não evoluem (condições ideais sem esses fatores)."
+        }
+      ],
+      "exemplos": [
+        "Bico dos tentilhões de Galápagos: diferentes formas adaptadas a diferentes alimentos - seleção natural.",
+        "Resistência de bactérias a antibióticos: seleção natural de variantes já existentes na população.",
+        "Baleia com ossos vestigiais de membros posteriores: evidência de ancestrais terrestres."
+      ],
+      "dicas": [
+        "Lamarck: 'a girafa esticou o pescoço'. Darwin: 'girafas com pescoço maior sobreviveram melhor'.",
+        "Homologia = ancestral comum (divergência). Analogia = evolução convergente (mesma pressão seletiva).",
+        "Mutação cria variação, seleção natural direciona a evolução."
+      ],
+      "questoes": [
+        {
+          "id": "q136-1",
+          "enunciado": "Segundo a teoria de Darwin, a resistência de bactérias a antibióticos ocorre porque:",
+          "alternativas": {
+            "A": "O antibiótico induz mutações nas bactérias",
+            "B": "As bactérias desenvolvem resistência pelo uso do antibiótico",
+            "C": "Bactérias naturalmente resistentes são selecionadas pelo antibiótico",
+            "D": "O antibiótico ensina as bactérias a se defenderem",
+            "E": "As bactérias herdam a resistência adquirida pelos pais"
+          },
+          "correta": "C",
+          "explicacao": "Pela seleção natural, a variação (resistência) já existe na população antes da exposição ao antibiótico. O antibiótico atua como agente seletivo, eliminando bactérias sensíveis e permitindo que as resistentes sobrevivam e se reproduzam.",
+          "dificuldade": "medio",
+          "tags": ["evolução", "seleção natural", "Darwin"]
+        },
+        {
+          "id": "q136-2",
+          "enunciado": "O braço humano e a asa do morcego são considerados órgãos homólogos porque:",
+          "alternativas": {
+            "A": "Desempenham a mesma função",
+            "B": "Têm a mesma origem embrionária e ancestral",
+            "C": "São resultado de evolução convergente",
+            "D": "Possuem estruturas completamente diferentes",
+            "E": "São órgãos vestigiais sem função"
+          },
+          "correta": "B",
+          "explicacao": "Órgãos homólogos têm a mesma origem embrionária e derivam de um ancestral comum, mas podem ter funções diferentes (braço para manipular, asa para voar). Isso evidencia ancestralidade comum e evolução divergente.",
+          "dificuldade": "facil",
+          "tags": ["evolução", "homologia", "anatomia comparada"]
+        },
+        {
+          "id": "q136-3",
+          "enunciado": "A especiação alopátrica ocorre quando:",
+          "alternativas": {
+            "A": "Populações se isolam comportamentalmente",
+            "B": "Uma barreira geográfica separa populações",
+            "C": "Espécies diferentes hibridizam",
+            "D": "Mutações são induzidas artificialmente",
+            "E": "Não há variação genética na população"
+          },
+          "correta": "B",
+          "explicacao": "Na especiação alopátrica, uma barreira geográfica (rio, montanha, etc.) separa uma população em duas. As populações isoladas evoluem independentemente por seleção natural e deriva genética, podendo se tornar espécies distintas.",
+          "dificuldade": "medio",
+          "tags": ["evolução", "especiação", "isolamento geográfico"]
+        },
+        {
+          "id": "q136-4",
+          "enunciado": "A teoria sintética da evolução (Neodarwinismo) difere da teoria original de Darwin por incorporar:",
+          "alternativas": {
+            "A": "A lei do uso e desuso de Lamarck",
+            "B": "A herança de caracteres adquiridos",
+            "C": "Conhecimentos de genética mendeliana e molecular",
+            "D": "A negação da seleção natural",
+            "E": "A criação especial das espécies"
+          },
+          "correta": "C",
+          "explicacao": "A teoria sintética (ou Neodarwinismo) une a seleção natural de Darwin com a genética de Mendel e a genética molecular. Explica que a variação vem de mutações e recombinação gênica, e a seleção natural atua sobre essa variação.",
+          "dificuldade": "medio",
+          "tags": ["evolução", "neodarwinismo", "teoria sintética"]
+        },
+        {
+          "id": "q136-5",
+          "enunciado": "A deriva genética é um mecanismo evolutivo que tem maior efeito em:",
+          "alternativas": {
+            "A": "Populações muito grandes",
+            "B": "Populações pequenas e isoladas",
+            "C": "Espécies com alta taxa de mutação",
+            "D": "Organismos com reprodução sexuada apenas",
+            "E": "Ambientes com forte pressão seletiva"
+          },
+          "correta": "B",
+          "explicacao": "A deriva genética são mudanças aleatórias nas frequências alélicas, independentes de seleção natural. Em populações pequenas, eventos ao acaso têm grande impacto, podendo fixar ou eliminar alelos. Em populações grandes, esses efeitos são diluídos.",
+          "dificuldade": "medio",
+          "tags": ["evolução", "deriva genética", "populações"]
+        }
+      ]
+    },
+    {
+      "id": "m137",
+      "titulo": "Ecologia: Conceitos Básicos e Relações Ecológicas",
+      "resumo": "Estude os níveis de organização ecológica, cadeias alimentares e relações entre os seres vivos.",
+      "topicos": [
+        {
+          "titulo": "Níveis de Organização e Conceitos Fundamentais",
+          "conteudo": "A ecologia estuda as relações entre os seres vivos e o ambiente. Níveis de organização: Organismo → População (indivíduos da mesma espécie) → Comunidade (populações diferentes) → Ecossistema (comunidade + fatores abióticos) → Biosfera (todos os ecossistemas). Conceitos importantes: Habitat (onde o organismo vive), Nicho ecológico (papel funcional - o que faz, come, quando está ativo), Fatores bióticos (seres vivos), Fatores abióticos (luz, temperatura, água, solo). O princípio da exclusão competitiva afirma que duas espécies não podem ocupar o mesmo nicho indefinidamente."
+        },
+        {
+          "titulo": "Cadeias e Teias Alimentares",
+          "conteudo": "Cadeia alimentar: sequência linear de transferência de energia. Níveis tróficos: Produtores (autótrofos - fotossintetizantes) → Consumidores primários (herbívoros) → Consumidores secundários (carnívoros) → Consumidores terciários → Decompositores (fungos e bactérias). Teia alimentar: conjunto de cadeias interligadas. A energia diminui a cada nível (regra dos 10%: apenas 10% passa ao próximo nível). Pirâmides ecológicas: de números, biomassa e energia. A pirâmide de energia é sempre ascendente (base maior). Biomagnificação: acúmulo de substâncias tóxicas ao longo da cadeia."
+        },
+        {
+          "titulo": "Relações Ecológicas",
+          "conteudo": "Relações intraespecíficas (mesma espécie): Sociedade (divisão de trabalho - abelhas), Colônia (união física - corais). Relações interespecíficas (espécies diferentes): Harmônicas (+/+ ou +/0): Mutualismo (ambos beneficiados, obrigatório - líquens), Protocooperação (benefício mútuo, facultativo - pássaro e crocodilo), Comensalismo (um beneficia, outro neutro - rêmora e tubarão), Inquilinismo (moradia - orquídea em árvore). Desarmônicas (+/- ou -/-): Predação (predador mata presa), Parasitismo (parasita prejudica hospedeiro), Competição (disputa por recursos), Amensalismo (um prejudica outro sem benefício - eucalipto e plantas)."
+        }
+      ],
+      "exemplos": [
+        "Liquens são mutualismo entre fungos (absorção) e algas (fotossíntese).",
+        "DDT se acumula em aves de rapina (topo da cadeia) por biomagnificação, causando ovos frágeis.",
+        "O pássaro-palito come restos de comida dos dentes do crocodilo - protocooperação."
+      ],
+      "dicas": [
+        "Nicho é a 'profissão' do organismo (o que faz), habitat é o 'endereço' (onde vive).",
+        "Mutualismo é obrigatório, protocooperação é facultativa - ambos são +/+.",
+        "Biomagnificação: quanto mais alto na cadeia, maior a concentração de toxinas."
+      ],
+      "questoes": [
+        {
+          "id": "q137-1",
+          "enunciado": "Em um ecossistema, os organismos responsáveis pela reciclagem da matéria orgânica são os:",
+          "alternativas": {
+            "A": "Produtores",
+            "B": "Consumidores primários",
+            "C": "Consumidores terciários",
+            "D": "Decompositores",
+            "E": "Parasitas"
+          },
+          "correta": "D",
+          "explicacao": "Os decompositores (fungos e bactérias) degradam a matéria orgânica de organismos mortos e excretas, devolvendo nutrientes ao ambiente. Sem eles, a matéria ficaria acumulada e os ciclos biogeoquímicos seriam interrompidos.",
+          "dificuldade": "facil",
+          "tags": ["ecologia", "decompositores", "cadeia alimentar"]
+        },
+        {
+          "id": "q137-2",
+          "enunciado": "A relação ecológica entre fungos e algas que formam os liquens é classificada como:",
+          "alternativas": {
+            "A": "Parasitismo",
+            "B": "Comensalismo",
+            "C": "Mutualismo",
+            "D": "Competição",
+            "E": "Predação"
+          },
+          "correta": "C",
+          "explicacao": "Nos liquens, fungos e algas vivem em mutualismo: a alga realiza fotossíntese e fornece compostos orgânicos ao fungo, que fornece água, sais minerais e proteção à alga. Ambos se beneficiam e a associação é obrigatória.",
+          "dificuldade": "facil",
+          "tags": ["ecologia", "mutualismo", "líquens"]
+        },
+        {
+          "id": "q137-3",
+          "enunciado": "O fenômeno da biomagnificação explica por que:",
+          "alternativas": {
+            "A": "Produtores têm mais energia que consumidores",
+            "B": "Animais do topo da cadeia alimentar acumulam mais toxinas",
+            "C": "Herbívoros são mais numerosos que carnívoros",
+            "D": "A matéria é reciclada nos ecossistemas",
+            "E": "Espécies competem pelo mesmo nicho ecológico"
+          },
+          "correta": "B",
+          "explicacao": "Na biomagnificação, substâncias não biodegradáveis (como DDT e mercúrio) se acumulam progressivamente ao longo da cadeia alimentar. Predadores do topo, que consomem muitas presas contaminadas, concentram níveis tóxicos dessas substâncias.",
+          "dificuldade": "medio",
+          "tags": ["ecologia", "biomagnificação", "cadeia alimentar"]
+        },
+        {
+          "id": "q137-4",
+          "enunciado": "O princípio da exclusão competitiva de Gause afirma que:",
+          "alternativas": {
+            "A": "Duas espécies podem ocupar o mesmo nicho indefinidamente",
+            "B": "A competição sempre leva à extinção de uma espécie",
+            "C": "Duas espécies não coexistem ocupando o mesmo nicho",
+            "D": "Espécies diferentes nunca competem entre si",
+            "E": "Nichos ecológicos são fixos e imutáveis"
+          },
+          "correta": "C",
+          "explicacao": "Gause demonstrou que duas espécies com nichos idênticos não podem coexistir indefinidamente: uma será eliminada pela competição ou haverá diferenciação de nicho. Isso promove a diversificação das espécies.",
+          "dificuldade": "medio",
+          "tags": ["ecologia", "competição", "nicho"]
+        },
+        {
+          "id": "q137-5",
+          "enunciado": "A relação entre a rêmora (peixe) que se fixa no tubarão para se alimentar de restos de suas presas é um exemplo de:",
+          "alternativas": {
+            "A": "Parasitismo",
+            "B": "Mutualismo",
+            "C": "Predação",
+            "D": "Comensalismo",
+            "E": "Competição"
+          },
+          "correta": "D",
+          "explicacao": "No comensalismo, uma espécie se beneficia (+) e a outra não é afetada (0). A rêmora ganha transporte e alimento (restos), enquanto o tubarão não é prejudicado nem beneficiado significativamente.",
+          "dificuldade": "facil",
+          "tags": ["ecologia", "comensalismo", "relações"]
+        }
+      ]
+    },
+    {
+      "id": "m138",
+      "titulo": "Ciclos Biogeoquímicos e Problemas Ambientais",
+      "resumo": "Entenda os ciclos da matéria na natureza e os principais problemas ambientais contemporâneos.",
+      "topicos": [
+        {
+          "titulo": "Ciclos Biogeoquímicos",
+          "conteudo": "Os ciclos biogeoquímicos descrevem a circulação de elementos químicos entre os seres vivos e o ambiente. Ciclo da água: evaporação, condensação, precipitação, infiltração, transpiração. Ciclo do carbono: fotossíntese fixa CO₂, respiração e decomposição liberam CO₂, combustíveis fósseis armazenam carbono. Ciclo do nitrogênio: fixação (bactérias convertem N₂ em NH₃), nitrificação (NH₃ → NO₂⁻ → NO₃⁻), assimilação (plantas absorvem NO₃⁻), desnitrificação (retorno de N₂ à atmosfera). Ciclo do oxigênio: produzido na fotossíntese, consumido na respiração e combustão."
+        },
+        {
+          "titulo": "Problemas Ambientais Globais",
+          "conteudo": "Efeito estufa e aquecimento global: gases (CO₂, CH₄, N₂O) retêm calor na atmosfera; intensificado pela queima de combustíveis fósseis e desmatamento. Destruição da camada de ozônio: CFCs destroem O₃ na estratosfera, aumentando radiação UV. Chuva ácida: óxidos de enxofre e nitrogênio (indústrias, veículos) reagem com água formando ácidos, danificando ecossistemas e construções. Eutrofização: excesso de nutrientes (esgoto, fertilizantes) causa proliferação de algas, redução de O₂ e morte de organismos aquáticos. Desmatamento: perda de biodiversidade, erosão, alteração do ciclo da água, liberação de CO₃."
+        },
+        {
+          "titulo": "Biomas e Conservação",
+          "conteudo": "Biomas brasileiros: Amazônia (maior biodiversidade, clima equatorial), Cerrado (savana, duas estações definidas, muito ameaçado), Mata Atlântica (biodiversidade, muito fragmentada), Caatinga (semiárido, plantas xerófitas), Pampa (campos, clima temperado), Pantanal (alagável, biodiversidade de aves). Unidades de conservação: proteção integral (parques nacionais) e uso sustentável (APAs, reservas extrativistas). Desenvolvimento sustentável: atender necessidades atuais sem comprometer as futuras gerações. Os 3 Rs: Reduzir, Reutilizar, Reciclar."
+        }
+      ],
+      "exemplos": [
+        "Bactérias Rhizobium em raízes de leguminosas fixam nitrogênio atmosférico em amônia.",
+        "O derretimento das geleiras polares é consequência do aquecimento global por efeito estufa intensificado.",
+        "A proliferação de algas em lagos próximos a áreas agrícolas indica eutrofização por fertilizantes."
+      ],
+      "dicas": [
+        "Efeito estufa natural é benéfico (mantém a Terra aquecida); o problema é a intensificação por ação humana.",
+        "CFCs foram substituídos pelo Protocolo de Montreal para proteger a camada de ozônio.",
+        "Leguminosas (feijão, soja) são importantes na rotação de culturas por fixarem nitrogênio no solo."
+      ],
+      "questoes": [
+        {
+          "id": "q138-1",
+          "enunciado": "A fixação biológica do nitrogênio é realizada por:",
+          "alternativas": {
+            "A": "Plantas durante a fotossíntese",
+            "B": "Animais durante a respiração",
+            "C": "Bactérias como Rhizobium e cianobactérias",
+            "D": "Fungos decompositores no solo",
+            "E": "Raios e descargas elétricas atmosféricas"
+          },
+          "correta": "C",
+          "explicacao": "A fixação biológica do nitrogênio é realizada por bactérias fixadoras (Rhizobium em simbiose com leguminosas, Azotobacter no solo) e cianobactérias. Elas convertem N₂ atmosférico em amônia (NH₃), forma utilizável pelas plantas.",
+          "dificuldade": "facil",
+          "tags": ["ciclo do nitrogênio", "bactérias", "fixação"]
+        },
+        {
+          "id": "q138-2",
+          "enunciado": "O principal gás responsável pela intensificação do efeito estufa é:",
+          "alternativas": {
+            "A": "Oxigênio (O₂)",
+            "B": "Nitrogênio (N₂)",
+            "C": "Dióxido de carbono (CO₂)",
+            "D": "Hidrogênio (H₂)",
+            "E": "Ozônio (O₃)"
+          },
+          "correta": "C",
+          "explicacao": "O CO₂ é o principal gás de efeito estufa emitido por atividades humanas (queima de combustíveis fósseis, desmatamento). Outros gases importantes são metano (CH₄), óxido nitroso (N₂O) e CFCs.",
+          "dificuldade": "facil",
+          "tags": ["efeito estufa", "CO₂", "aquecimento global"]
+        },
+        {
+          "id": "q138-3",
+          "enunciado": "A eutrofização de um lago pode ser causada pelo excesso de:",
+          "alternativas": {
+            "A": "Oxigênio dissolvido",
+            "B": "Nutrientes como nitrogênio e fósforo",
+            "C": "Gases tóxicos industriais",
+            "D": "Radiação ultravioleta",
+            "E": "Predadores aquáticos"
+          },
+          "correta": "B",
+          "explicacao": "A eutrofização ocorre quando nutrientes em excesso (nitrogênio e fósforo de esgotos e fertilizantes) chegam aos corpos d'água, causando proliferação excessiva de algas. Quando morrem, sua decomposição consome O₂, causando morte de peixes.",
+          "dificuldade": "medio",
+          "tags": ["eutrofização", "poluição", "ecologia"]
+        },
+        {
+          "id": "q138-4",
+          "enunciado": "O bioma brasileiro que ocupa a maior extensão territorial e apresenta a maior biodiversidade é:",
+          "alternativas": {
+            "A": "Cerrado",
+            "B": "Caatinga",
+            "C": "Amazônia",
+            "D": "Mata Atlântica",
+            "E": "Pantanal"
+          },
+          "correta": "C",
+          "explicacao": "A Amazônia é o maior bioma brasileiro (cerca de 49% do território) e abriga a maior biodiversidade do planeta. Possui clima equatorial quente e úmido, com floresta densa e grande variedade de espécies animais e vegetais.",
+          "dificuldade": "facil",
+          "tags": ["biomas", "Amazônia", "biodiversidade"]
+        },
+        {
+          "id": "q138-5",
+          "enunciado": "A destruição da camada de ozônio é causada principalmente por:",
+          "alternativas": {
+            "A": "Dióxido de carbono",
+            "B": "Clorofluorcarbonos (CFCs)",
+            "C": "Óxidos de enxofre",
+            "D": "Metano",
+            "E": "Vapor d'água"
+          },
+          "correta": "B",
+          "explicacao": "Os CFCs (usados em aerossóis, refrigeração e ar-condicionado) liberam átomos de cloro na estratosfera que destroem moléculas de ozônio (O₃). Um átomo de cloro pode destruir milhares de moléculas de O₃. O Protocolo de Montreal (1987) restringiu o uso de CFCs.",
+          "dificuldade": "medio",
+          "tags": ["ozônio", "CFCs", "poluição"]
+        }
+      ]
+    },
+    {
+      "id": "m139",
+      "titulo": "Fisiologia Humana: Sistemas Digestório e Respiratório",
+      "resumo": "Estude a anatomia e fisiologia dos sistemas digestório e respiratório humanos.",
+      "topicos": [
+        {
+          "titulo": "Sistema Digestório",
+          "conteudo": "O sistema digestório processa alimentos em nutrientes absorvíveis. Boca: digestão mecânica (mastigação) e química (amilase salivar quebra amido). Faringe e esôfago: conduzem o bolo alimentar por peristaltismo. Estômago: suco gástrico (HCl + pepsina) inicia digestão de proteínas, forma o quimo. Intestino delgado: principal local de digestão e absorção; recebe bile (emulsifica gorduras) e suco pancreático (amilase, lipase, tripsina); vilosidades aumentam absorção. Intestino grosso: absorve água e sais, forma fezes, flora bacteriana produz vitaminas K e B. Fígado: produz bile, metaboliza nutrientes, desintoxicação."
+        },
+        {
+          "titulo": "Sistema Respiratório",
+          "conteudo": "O sistema respiratório realiza trocas gasosas (O₂ e CO₂). Vias aéreas: fossas nasais (filtram, umedecem, aquecem ar), faringe, laringe (cordas vocais), traqueia, brônquios, bronquíolos. Pulmões: alvéolos são os locais de trocas gasosas por difusão; paredes finas, rica vascularização. Mecânica respiratória: inspiração (diafragma contrai, desce; músculos intercostais contraem; volume aumenta, pressão diminui, ar entra); expiração (relaxamento, ar sai). Transporte de gases: O₂ ligado à hemoglobina (oxiemoglobina); CO₂ como íon bicarbonato, dissolvido ou ligado à hemoglobina (carboemoglobina)."
+        },
+        {
+          "titulo": "Integração e Problemas de Saúde",
+          "conteudo": "Digestão e respiração estão integradas: a respiração celular usa nutrientes e O₂ para produzir ATP. Problemas digestórios: gastrite e úlcera (excesso de HCl, H. pylori), refluxo, cirrose (álcool), hepatite (vírus). Problemas respiratórios: asma (broncoconstrição), enfisema (destruição de alvéolos, comum em fumantes), bronquite, pneumonia (infecção), tuberculose (bactéria Mycobacterium). O tabagismo danifica os cílios das vias aéreas, aumenta muco e destrói alvéolos, causando DPOC. A hematose é a troca de gases nos alvéolos: O₂ passa para o sangue e CO₂ passa para os alvéolos."
+        }
+      ],
+      "exemplos": [
+        "A digestão do amido começa na boca com a amilase salivar e termina no intestino delgado.",
+        "Pessoas em alta altitude têm mais hemácias para compensar o ar rarefeito (menos O₂).",
+        "O soluço ocorre por contrações involuntárias do diafragma."
+      ],
+      "dicas": [
+        "Estômago digere proteínas (pepsina em pH ácido); pâncreas digere tudo (ambiente alcalino).",
+        "Hemoglobina: 4 grupos heme, cada um liga 1 O₂ = 4 O₂ por hemoglobina.",
+        "Bile não tem enzima - apenas emulsifica gorduras para a lipase agir."
+      ],
+      "questoes": [
+        {
+          "id": "q139-1",
+          "enunciado": "A digestão química de proteínas inicia-se no estômago pela ação da enzima:",
+          "alternativas": {
+            "A": "Amilase",
+            "B": "Lipase",
+            "C": "Pepsina",
+            "D": "Tripsina",
+            "E": "Maltase"
+          },
+          "correta": "C",
+          "explicacao": "A pepsina é a enzima que inicia a digestão de proteínas no estômago. Ela é ativada pelo HCl do suco gástrico, que também desnatura proteínas. A digestão proteica continua no intestino delgado com tripsina e outras enzimas.",
+          "dificuldade": "facil",
+          "tags": ["digestão", "proteínas", "pepsina"]
+        },
+        {
+          "id": "q139-2",
+          "enunciado": "Durante a inspiração, ocorre:",
+          "alternativas": {
+            "A": "Contração do diafragma e diminuição do volume torácico",
+            "B": "Relaxamento do diafragma e aumento da pressão pulmonar",
+            "C": "Contração do diafragma e aumento do volume torácico",
+            "D": "Relaxamento do diafragma e diminuição do volume torácico",
+            "E": "Expulsão de ar devido à contração muscular"
+          },
+          "correta": "C",
+          "explicacao": "Na inspiração, o diafragma contrai e desce, os músculos intercostais externos contraem elevando as costelas. Isso aumenta o volume torácico, diminui a pressão interna e o ar entra nos pulmões.",
+          "dificuldade": "medio",
+          "tags": ["respiração", "inspiração", "diafragma"]
+        },
+        {
+          "id": "q139-3",
+          "enunciado": "A principal função das vilosidades intestinais é:",
+          "alternativas": {
+            "A": "Produzir enzimas digestivas",
+            "B": "Secretar bile para digestão de gorduras",
+            "C": "Aumentar a superfície de absorção de nutrientes",
+            "D": "Realizar movimentos peristálticos",
+            "E": "Produzir ácido clorídrico"
+          },
+          "correta": "C",
+          "explicacao": "As vilosidades são projeções da mucosa intestinal que aumentam enormemente a superfície de absorção (cerca de 300m²). Cada vilosidade possui microvilosidades, vasos sanguíneos e linfáticos para absorção eficiente de nutrientes.",
+          "dificuldade": "facil",
+          "tags": ["digestão", "intestino", "absorção"]
+        },
+        {
+          "id": "q139-4",
+          "enunciado": "O transporte de oxigênio no sangue é realizado principalmente pela:",
+          "alternativas": {
+            "A": "Albumina plasmática",
+            "B": "Hemoglobina nas hemácias",
+            "C": "Plasma sanguíneo dissolvido",
+            "D": "Leucócitos no sangue",
+            "E": "Plaquetas sanguíneas"
+          },
+          "correta": "B",
+          "explicacao": "Cerca de 97% do O₂ é transportado ligado à hemoglobina dentro das hemácias, formando oxiemoglobina. Apenas 3% é transportado dissolvido no plasma. A hemoglobina possui 4 grupos heme que ligam 4 moléculas de O₂.",
+          "dificuldade": "facil",
+          "tags": ["respiração", "hemoglobina", "transporte"]
+        },
+        {
+          "id": "q139-5",
+          "enunciado": "A bile, produzida pelo fígado e armazenada na vesícula biliar, tem como função:",
+          "alternativas": {
+            "A": "Digerir proteínas no estômago",
+            "B": "Neutralizar a acidez do quimo",
+            "C": "Emulsificar gorduras no intestino",
+            "D": "Absorver vitaminas hidrossolúveis",
+            "E": "Produzir enzimas pancreáticas"
+          },
+          "correta": "C",
+          "explicacao": "A bile não contém enzimas digestivas. Sua função é emulsificar gorduras, transformando-as em gotículas menores, aumentando a superfície de ação da lipase pancreática. Também ajuda na absorção de vitaminas lipossolúveis (A, D, E, K).",
+          "dificuldade": "medio",
+          "tags": ["digestão", "bile", "fígado"]
+        }
+      ]
+    },
+    {
+      "id": "m140",
+      "titulo": "Fisiologia Humana: Sistemas Circulatório e Excretor",
+      "resumo": "Compreenda o funcionamento do coração, circulação sanguínea e mecanismos de excreção.",
+      "topicos": [
+        {
+          "titulo": "Sistema Circulatório",
+          "conteudo": "O sistema circulatório transporta nutrientes, gases, hormônios e remove resíduos. Coração: 4 câmaras (2 átrios, 2 ventrículos); lado direito bombeia sangue para os pulmões (pequena circulação), lado esquerdo bombeia para o corpo (grande circulação). Vasos: artérias (saem do coração, paredes grossas), veias (chegam ao coração, possuem válvulas), capilares (trocas). Pequena circulação: ventrículo direito → artéria pulmonar → pulmões → veias pulmonares → átrio esquerdo. Grande circulação: ventrículo esquerdo → aorta → corpo → veias cavas → átrio direito. Sangue: plasma + elementos figurados (hemácias, leucócitos, plaquetas)."
+        },
+        {
+          "titulo": "Sistema Excretor",
+          "conteudo": "O sistema excretor elimina resíduos metabólicos e regula a homeostase. Rins: filtram o sangue e produzem urina. Néfron: unidade funcional do rim; glomérulo (filtração do plasma), túbulo contorcido proximal (reabsorção de glicose, aminoácidos, sais), alça de Henle (concentração da urina), túbulo contorcido distal (ajustes finais), ducto coletor (coleta urina). Urina: água, ureia, ácido úrico, sais, creatinina. Ureter conduz urina à bexiga; uretra elimina para o exterior. Hormônios: ADH (antidiurético - aumenta reabsorção de água), Aldosterona (reabsorção de Na⁺). Hemodiálise substitui função renal em pacientes com insuficiência."
+        },
+        {
+          "titulo": "Controle e Integração",
+          "conteudo": "Pressão arterial: força do sangue contra as paredes das artérias. Sistólica (contração ventricular, ~120mmHg) e diastólica (relaxamento, ~80mmHg). Hipertensão é fator de risco para AVC e infarto. Ciclo cardíaco: sístole (contração) e diástole (relaxamento); nó sinoatrial é o marca-passo natural. Regulação da excreção: quando há desidratação, hipotálamo libera ADH, rins reabsorvem mais água (urina concentrada). Na ingestão excessiva de água, menos ADH é liberado (urina diluída). Rins também regulam pH sanguíneo, excretando H⁺ ou HCO₃⁻."
+        }
+      ],
+      "exemplos": [
+        "Na pequena circulação, artérias pulmonares levam sangue venoso (pobre em O₂) - exceção à regra.",
+        "Diabéticos podem ter glicose na urina quando a glicemia ultrapassa o limiar de reabsorção renal.",
+        "Cafeína e álcool são diuréticos porque inibem a liberação de ADH."
+      ],
+      "dicas": [
+        "Artérias: saem do coração (Afastam). Veias: vão para o coração (Vêm).",
+        "Átrios recebem sangue (letra A = Atrium = entrada). Ventrículos bombeiam (têm paredes mais grossas).",
+        "ADH = Antidiurético = menos urina = mais reabsorção de água."
+      ],
+      "questoes": [
+        {
+          "id": "q140-1",
+          "enunciado": "Na pequena circulação (circulação pulmonar), o sangue sai do coração pela:",
+          "alternativas": {
+            "A": "Artéria aorta",
+            "B": "Veia cava superior",
+            "C": "Artéria pulmonar",
+            "D": "Veia pulmonar",
+            "E": "Veia cava inferior"
+          },
+          "correta": "C",
+          "explicacao": "Na pequena circulação, o sangue venoso (pobre em O₂) sai do ventrículo direito pela artéria pulmonar, vai aos pulmões para oxigenação e retorna ao átrio esquerdo pelas veias pulmonares (ricas em O₂).",
+          "dificuldade": "medio",
+          "tags": ["circulação", "coração", "pequena circulação"]
+        },
+        {
+          "id": "q140-2",
+          "enunciado": "A unidade funcional do rim, responsável pela filtração do sangue, é o:",
+          "alternativas": {
+            "A": "Ureter",
+            "B": "Glomérulo",
+            "C": "Néfron",
+            "D": "Ducto coletor",
+            "E": "Pelve renal"
+          },
+          "correta": "C",
+          "explicacao": "O néfron é a unidade funcional do rim, composto por glomérulo (onde ocorre filtração), túbulos (reabsorção e secreção) e ducto coletor (coleta a urina). Cada rim possui cerca de 1 milhão de néfrons.",
+          "dificuldade": "facil",
+          "tags": ["excreção", "rim", "néfron"]
+        },
+        {
+          "id": "q140-3",
+          "enunciado": "O hormônio antidiurético (ADH) atua nos rins promovendo:",
+          "alternativas": {
+            "A": "Aumento da produção de urina",
+            "B": "Maior reabsorção de água",
+            "C": "Excreção de sódio",
+            "D": "Filtração glomerular",
+            "E": "Secreção de potássio"
+          },
+          "correta": "B",
+          "explicacao": "O ADH (vasopressina) é liberado pela neurohipófise quando há desidratação. Ele aumenta a permeabilidade dos ductos coletores à água, promovendo maior reabsorção de água e produzindo urina mais concentrada.",
+          "dificuldade": "medio",
+          "tags": ["excreção", "ADH", "hormônios"]
+        },
+        {
+          "id": "q140-4",
+          "enunciado": "A câmara cardíaca que bombeia sangue para todo o corpo através da artéria aorta é o:",
+          "alternativas": {
+            "A": "Átrio direito",
+            "B": "Átrio esquerdo",
+            "C": "Ventrículo direito",
+            "D": "Ventrículo esquerdo",
+            "E": "Seio coronário"
+          },
+          "correta": "D",
+          "explicacao": "O ventrículo esquerdo bombeia sangue oxigenado para a circulação sistêmica (grande circulação) através da artéria aorta. Possui parede mais espessa que o direito devido à maior pressão necessária para irrigar todo o corpo.",
+          "dificuldade": "facil",
+          "tags": ["circulação", "coração", "ventrículo"]
+        },
+        {
+          "id": "q140-5",
+          "enunciado": "Uma pessoa com pressão arterial de 180/110 mmHg apresenta:",
+          "alternativas": {
+            "A": "Pressão arterial normal",
+            "B": "Hipotensão",
+            "C": "Hipertensão arterial",
+            "D": "Bradicardia",
+            "E": "Arritmia cardíaca"
+          },
+          "correta": "C",
+          "explicacao": "Valores acima de 140/90 mmHg caracterizam hipertensão arterial. Com 180/110 mmHg, a pessoa tem hipertensão grave, fator de risco para AVC, infarto, insuficiência renal e cardíaca. O tratamento inclui medicamentos, dieta e exercícios.",
+          "dificuldade": "facil",
+          "tags": ["circulação", "pressão arterial", "hipertensão"]
+        }
+      ]
+    }
+  ]
+}

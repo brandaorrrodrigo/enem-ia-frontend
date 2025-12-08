@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Questao {
   id: string;
@@ -152,6 +153,7 @@ export default function QuizDiarioPage() {
   if (jaFezHoje && !quizIniciado) {
     return (
       <div className="container min-h-screen py-8 px-4" style={{ background: 'var(--chalkboard)' }}>
+      <FloatingBackButton />
         <FloatingNav />
 
         <div className="max-w-2xl mx-auto mt-16">
@@ -503,6 +505,7 @@ export default function QuizDiarioPage() {
 
   return (
     <div className="container min-h-screen py-8 px-4" style={{ background: 'var(--chalkboard)' }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       <div className="max-w-3xl mx-auto mt-8">

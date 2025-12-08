@@ -1,6 +1,6 @@
 import { Badge, UserGamification } from '../types';
 
-// FP (FOCUS POINTS) E LEVEL
+// FP E LEVEL
 export function fpParaProximoLevel(level: number): number {
   return Math.floor(100 * Math.pow(1.5, level - 1));
 }
@@ -18,10 +18,11 @@ export function calcularLevel(fpTotal: number): number {
 export function calcularFPSimulado(resultado: { acertos: number; total: number; tempoMinutos?: number }): number {
   const { acertos, total } = resultado;
   const porcentagem = (acertos / total) * 100;
-  let fpBase = acertos * 10;
-  if (porcentagem >= 90) fpBase += 100;
-  else if (porcentagem >= 70) fpBase += 50;
-  else if (porcentagem >= 50) fpBase += 25;
+  // Economia rebalanceada v2.0 - evitar hiperinflação
+  let fpBase = acertos * 5; // Reduzido de 10 para 5
+  if (porcentagem >= 90) fpBase += 40; // Reduzido de 100 para 40
+  else if (porcentagem >= 70) fpBase += 20; // Reduzido de 50 para 20
+  else if (porcentagem >= 50) fpBase += 10; // Reduzido de 25 para 10
   return fpBase;
 }
 
@@ -48,7 +49,12 @@ export function verificarStreak(ultimoAcesso: string, streakAtual: number): { no
   if (diffDias === 0) return { novoStreak: streakAtual, perdeuStreak: false, bonusStreak: 0 };
   if (diffDias === 1) {
     const novoStreak = streakAtual + 1;
-    const bonusStreak = novoStreak >= 7 ? 50 : novoStreak >= 3 ? 20 : 10;
+    // Economia rebalanceada v2.0
+    let bonusStreak = 10; // 1-2 dias: 10 FP (mantido)
+    if (novoStreak >= 100) bonusStreak = 300; // 100+ dias: 300 FP (reduzido de 1000)
+    else if (novoStreak >= 30) bonusStreak = 100; // 30+ dias: 100 FP (reduzido de 300)
+    else if (novoStreak >= 7) bonusStreak = 25; // 7+ dias: 25 FP (reduzido de 50)
+    else if (novoStreak >= 3) bonusStreak = 20; // 3-6 dias: 20 FP (mantido)
     return { novoStreak, perdeuStreak: false, bonusStreak };
   }
   return { novoStreak: 1, perdeuStreak: true, bonusStreak: 0 };

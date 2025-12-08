@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Ferramenta {
   id: string;
@@ -72,6 +73,7 @@ export default function FerramentasPage() {
 
   return (
     <div className="min-h-screen py-8 px-4" style={{ backgroundColor: 'var(--chalkboard-bg)' }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       {/* Header */}

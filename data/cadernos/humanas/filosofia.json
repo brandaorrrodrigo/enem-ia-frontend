@@ -1,0 +1,1075 @@
+{
+  "id": "filosofia",
+  "slug": "filosofia",
+  "titulo": "Filosofia",
+  "categoria": "humanas",
+  "nivel": "intermediario",
+  "descricao": "Dos pré-socráticos aos contemporâneos: pensamento crítico, ética, política e conhecimento",
+  "icone": "Lightbulb",
+  "cor": "#6B5B95",
+  "tempoEstimado": "18 horas",
+  "fpRecompensa": 450,
+  "tags": ["filosofia", "ética", "política", "conhecimento", "ENEM"],
+  "modulos": [
+    {
+      "id": "m91",
+      "titulo": "Filosofia Antiga: Pré-Socráticos e Sofistas",
+      "resumo": "O nascimento da filosofia e a busca pelo princípio de todas as coisas",
+      "topicos": [
+        {
+          "titulo": "O Surgimento da Filosofia",
+          "conteudo": "A filosofia surgiu na Grécia Antiga (século VI a.C.) como passagem do mito ao logos (razão). Os primeiros filósofos buscavam explicar a natureza (physis) através de princípios racionais, não mais por narrativas mitológicas. A filosofia nasce com espanto (thaumazein) e com a pergunta: qual é o princípio (arché) de todas as coisas? As condições da Grécia favoreceram esse surgimento: cidades-estado, comércio, navegação (contato com outras culturas), ausência de casta sacerdotal dogmática, e a democracia ateniense que incentivava o debate público."
+        },
+        {
+          "titulo": "Os Filósofos Pré-Socráticos",
+          "conteudo": "Os pré-socráticos investigavam a natureza e o cosmos. Tales de Mileto considerava a água como arché (princípio); Anaximandro, o ápeiron (ilimitado); Anaxímenes, o ar. Pitágoras via nos números a essência da realidade. Heráclito de Éfeso ensinava que tudo flui (panta rhei), o devir constante e a luta dos contrários ('o conflito é pai de todas as coisas'). Parmênides de Eleia, ao contrário, afirmava que o ser é único, imóvel e eterno - o movimento é ilusão. Demócrito desenvolveu o atomismo: toda realidade é composta de átomos indivisíveis movendo-se no vazio."
+        },
+        {
+          "titulo": "Os Sofistas",
+          "conteudo": "Os sofistas (século V a.C.) eram mestres itinerantes que ensinavam retórica e eloquência em troca de pagamento. Deslocaram o foco da natureza para o ser humano e a sociedade. Protágoras afirmava que 'o homem é a medida de todas as coisas' (relativismo). Górgias questionava a possibilidade do conhecimento verdadeiro (ceticismo). Distinguiam entre physis (natureza) e nomos (convenção/lei), argumentando que muitas normas sociais eram convenções, não verdades naturais. Foram criticados por Sócrates e Platão por relativismo moral e por subordinar a verdade à persuasão."
+        }
+      ],
+      "exemplos": [
+        "O pensamento de Heráclito aplicado a mudanças sociais contemporâneas",
+        "O relativismo dos sofistas e os debates atuais sobre verdade",
+        "A oposição entre Heráclito e Parmênides como paradigmas de pensamento"
+      ],
+      "dicas": [
+        "ENEM cobra o relativismo de Protágoras e a distinção physis/nomos",
+        "Entenda as diferentes concepções de arché dos pré-socráticos",
+        "Heráclito x Parmênides: devir vs. permanência"
+      ],
+      "questoes": [
+        {
+          "id": "q91-1",
+          "enunciado": "Os primeiros filósofos gregos, chamados pré-socráticos, buscavam explicar a origem e a constituição do universo. Essa busca representava uma mudança em relação ao pensamento mítico porque:",
+          "alternativas": {
+            "A": "Aceitavam as explicações dos deuses sem questionamento",
+            "B": "Buscavam explicações racionais baseadas em princípios naturais",
+            "C": "Negavam qualquer possibilidade de conhecer a realidade",
+            "D": "Valorizavam exclusivamente a tradição oral e os rituais religiosos",
+            "E": "Rejeitavam a observação da natureza como fonte de conhecimento"
+          },
+          "correta": "B",
+          "explicacao": "Os pré-socráticos marcam a passagem do mito ao logos: em vez de explicar fenômenos naturais através de narrativas sobre deuses, buscavam princípios racionais (arché) que fundamentassem toda a realidade. Tales propôs a água, Anaxímenes o ar, Heráclito o fogo, etc. Essa busca por causas naturais e racionais caracteriza o nascimento do pensamento filosófico e científico.",
+          "dificuldade": "facil",
+          "tags": ["pré-socráticos", "mito", "logos"]
+        },
+        {
+          "id": "q91-2",
+          "enunciado": "Heráclito de Éfeso, filósofo pré-socrático, é conhecido pela afirmação de que 'não se pode entrar duas vezes no mesmo rio'. Essa frase expressa a ideia de que:",
+          "alternativas": {
+            "A": "A realidade é estática e imutável",
+            "B": "O conhecimento verdadeiro é impossível",
+            "C": "Tudo está em constante transformação (devir)",
+            "D": "Os sentidos nos enganam completamente",
+            "E": "A água é o princípio de todas as coisas"
+          },
+          "correta": "C",
+          "explicacao": "Para Heráclito, a realidade fundamental é o devir - a mudança constante. O rio não é o mesmo porque suas águas fluem continuamente, e nem mesmo nós somos os mesmos ao entrar novamente. O logos (razão universal) governa essa transformação através da luta dos contrários. O fogo, símbolo de transformação, era seu elemento fundamental. Essa concepção opõe-se ao pensamento de Parmênides, que defendia a imutabilidade do ser.",
+          "dificuldade": "facil",
+          "tags": ["heráclito", "devir", "pré-socráticos"]
+        },
+        {
+          "id": "q91-3",
+          "enunciado": "O sofista Protágoras afirmava que 'o homem é a medida de todas as coisas'. Essa frase expressa uma posição filosófica conhecida como:",
+          "alternativas": {
+            "A": "Dogmatismo, pois afirma uma verdade absoluta sobre a realidade",
+            "B": "Relativismo, pois a verdade varia conforme a perspectiva de cada indivíduo",
+            "C": "Materialismo, pois reduz toda a realidade à matéria",
+            "D": "Teocentrismo, pois coloca Deus como medida de todas as coisas",
+            "E": "Determinismo, pois nega a liberdade humana"
+          },
+          "correta": "B",
+          "explicacao": "A frase de Protágoras é a expressão clássica do relativismo: não há verdade absoluta, independente do sujeito. O que é verdadeiro, bom ou belo depende da perspectiva de cada pessoa ou cultura. Os sofistas aplicavam isso também às leis e normas sociais, considerando-as convenções humanas (nomos), não verdades da natureza (physis). Esse relativismo foi criticado por Sócrates e Platão.",
+          "dificuldade": "medio",
+          "tags": ["protágoras", "relativismo", "sofistas"]
+        },
+        {
+          "id": "q91-4",
+          "enunciado": "Parmênides de Eleia, em oposição a Heráclito, defendia que o ser é único, imóvel e eterno. Para Parmênides, o movimento e a mudança são:",
+          "alternativas": {
+            "A": "A única realidade verdadeira, enquanto a permanência é ilusão",
+            "B": "Meras aparências ou ilusões dos sentidos",
+            "C": "Prova da existência de múltiplos princípios na natureza",
+            "D": "O fundamento da ética e da política",
+            "E": "Compatíveis com a unidade e imobilidade do ser"
+          },
+          "correta": "B",
+          "explicacao": "Para Parmênides, através da razão (e não dos sentidos) chegamos à verdade: o ser é, o não-ser não é. O ser é uno, contínuo, imóvel, eterno - não pode haver movimento ou mudança, pois isso implicaria que o ser viesse do não-ser, o que é logicamente impossível. O que os sentidos percebem como movimento e pluralidade é aparência, ilusão. Essa posição fundou o racionalismo e influenciou Platão.",
+          "dificuldade": "medio",
+          "tags": ["parmênides", "ser", "movimento"]
+        },
+        {
+          "id": "q91-5",
+          "enunciado": "Os sofistas distinguiam entre physis (natureza) e nomos (convenção/lei). Essa distinção tinha implicações importantes porque:",
+          "alternativas": {
+            "A": "Reforçava a ideia de que as leis sociais são imutáveis e naturais",
+            "B": "Negava qualquer diferença entre o natural e o convencional",
+            "C": "Sugeria que muitas normas sociais são criações humanas, podendo ser questionadas e mudadas",
+            "D": "Afirmava que apenas a natureza tem valor, sendo as convenções desprezíveis",
+            "E": "Impedia qualquer crítica às instituições e costumes estabelecidos"
+          },
+          "correta": "C",
+          "explicacao": "A distinção physis/nomos foi revolucionária: ao mostrar que muitas normas, costumes e instituições são convenções humanas (nomos), não verdades da natureza (physis), os sofistas abriam espaço para o questionamento e a mudança. O que uma sociedade considera justo pode ser diferente em outra - não há uma justiça natural absoluta. Isso tinha implicações democráticas, mas também foi criticado por relativizar a moral.",
+          "dificuldade": "dificil",
+          "tags": ["sofistas", "physis", "nomos"]
+        }
+      ]
+    },
+    {
+      "id": "m92",
+      "titulo": "Sócrates e Platão",
+      "resumo": "O conhecimento de si, a dialética e a teoria das ideias",
+      "topicos": [
+        {
+          "titulo": "Sócrates e o Método Socrático",
+          "conteudo": "Sócrates (469-399 a.C.) não deixou escritos; é conhecido através de Platão e Xenofonte. Sua máxima 'conhece-te a ti mesmo' expressa a virada para a interioridade humana. O método socrático (maiêutica) consiste em fazer perguntas que levam o interlocutor a descobrir contradições em suas opiniões e, assim, dar à luz conhecimentos que já possui. A ironia socrática começa com 'só sei que nada sei' - fingindo ignorância para questionar os que se julgam sábios. Sócrates buscava definições universais de conceitos como justiça, virtude, coragem, opondo-se ao relativismo sofístico. Foi condenado à morte por 'corromper a juventude e não crer nos deuses'."
+        },
+        {
+          "titulo": "Platão e a Teoria das Ideias",
+          "conteudo": "Platão (427-347 a.C.) fundou a Academia em Atenas. Sua teoria das Ideias (ou Formas) distingue dois mundos: o mundo sensível (aparências, mutável, conhecido pelos sentidos) e o mundo inteligível (Ideias perfeitas, eternas, conhecidas pela razão). As coisas sensíveis são cópias imperfeitas das Ideias. A Ideia do Bem é suprema, como o sol que ilumina as outras ideias. O 'Mito da Caverna' (República) ilustra essa teoria: prisioneiros tomam sombras por realidade; o filósofo liberto contempla o sol (Bem) e deve retornar para guiar os outros. A alma, imortal, conhece as Ideias antes de nascer (teoria da reminiscência)."
+        },
+        {
+          "titulo": "A Filosofia Política de Platão",
+          "conteudo": "Na 'República', Platão descreve a cidade ideal (Kallipolis). A sociedade divide-se em três classes conforme as partes da alma: governantes-filósofos (razão, sabedoria), guerreiros (ímpeto, coragem) e produtores (apetites, temperança). A justiça é cada um cumprir sua função. A educação forma os guardiões. A crítica de Platão à democracia ateniense (que condenou Sócrates) é forte: ela dá poder a quem não tem conhecimento. O filósofo-rei, que contemplou a Ideia do Bem, deve governar. A comunidade de bens e mulheres entre os guardiões evita interesses particulares."
+        }
+      ],
+      "exemplos": [
+        "O método socrático e o pensamento crítico contemporâneo",
+        "A alegoria da caverna e a manipulação midiática",
+        "A crítica platônica à democracia e debates políticos atuais"
+      ],
+      "dicas": [
+        "ENEM cobra o Mito da Caverna frequentemente",
+        "Entenda a distinção entre mundo sensível e inteligível",
+        "A maiêutica como método de descoberta do conhecimento"
+      ],
+      "questoes": [
+        {
+          "id": "q92-1",
+          "enunciado": "A frase 'só sei que nada sei', atribuída a Sócrates, expressa uma posição filosófica que:",
+          "alternativas": {
+            "A": "Nega qualquer possibilidade de conhecimento verdadeiro",
+            "B": "Afirma a sabedoria como reconhecimento dos limites do próprio conhecimento",
+            "C": "Defende o relativismo moral dos sofistas",
+            "D": "Rejeita a importância do diálogo na busca pela verdade",
+            "E": "Valoriza o conhecimento técnico acima da reflexão filosófica"
+          },
+          "correta": "B",
+          "explicacao": "A 'douta ignorância' de Sócrates não é negação do conhecimento, mas consciência de seus limites. O oráculo de Delfos declarou Sócrates o mais sábio; ele interpretou: era sábio porque, diferentemente dos que se julgavam conhecedores, reconhecia sua ignorância. Essa consciência é ponto de partida para a busca genuína do conhecimento, enquanto quem se julga sábio não investiga mais.",
+          "dificuldade": "facil",
+          "tags": ["sócrates", "douta ignorância", "sabedoria"]
+        },
+        {
+          "id": "q92-2",
+          "enunciado": "O método socrático, conhecido como maiêutica, consiste em:",
+          "alternativas": {
+            "A": "Transmitir conhecimentos prontos do mestre para o discípulo",
+            "B": "Fazer perguntas que levam o interlocutor a descobrir a verdade por si mesmo",
+            "C": "Usar a força da retórica para convencer sem buscar a verdade",
+            "D": "Contemplar as Ideias perfeitas no mundo inteligível",
+            "E": "Aceitar as opiniões comuns sem questionamento"
+          },
+          "correta": "B",
+          "explicacao": "Maiêutica significa 'arte de partejar' - assim como a parteira ajuda a dar à luz, Sócrates ajuda o interlocutor a 'dar à luz' conhecimentos que já possui em sua alma. Através de perguntas, Sócrates faz o outro perceber contradições em suas opiniões e, refletindo, chegar a definições mais verdadeiras. O conhecimento não é transferido, mas descoberto através do diálogo.",
+          "dificuldade": "facil",
+          "tags": ["maiêutica", "sócrates", "método"]
+        },
+        {
+          "id": "q92-3",
+          "enunciado": "Na alegoria da caverna, apresentada por Platão na obra 'A República', os prisioneiros que veem apenas sombras na parede representam:",
+          "alternativas": {
+            "A": "Os filósofos que contemplaram a verdade e retornaram para ensinar",
+            "B": "Os governantes ideais que conhecem o Bem e a Justiça",
+            "C": "As pessoas que tomam as aparências sensíveis como a verdadeira realidade",
+            "D": "Os educadores que libertam os outros da ignorância",
+            "E": "Os deuses que criaram o mundo sensível e o inteligível"
+          },
+          "correta": "C",
+          "explicacao": "Na alegoria, prisioneiros acorrentados desde a infância veem apenas sombras projetadas na parede e pensam que isso é a realidade. Representam as pessoas comuns, presas ao mundo sensível, que tomam as aparências por verdade. O prisioneiro que se liberta, sai da caverna e vê o sol (Ideia do Bem) representa o filósofo. Ao retornar para libertar os outros, é incompreendido - alusão à condenação de Sócrates.",
+          "dificuldade": "medio",
+          "tags": ["mito da caverna", "platão", "conhecimento"]
+        },
+        {
+          "id": "q92-4",
+          "enunciado": "A teoria das Ideias de Platão estabelece uma distinção fundamental entre dois níveis de realidade. Segundo essa teoria:",
+          "alternativas": {
+            "A": "O mundo sensível é a única realidade existente e as Ideias são abstrações sem existência",
+            "B": "O mundo inteligível contém as Ideias perfeitas e eternas, das quais o mundo sensível é cópia imperfeita",
+            "C": "Não há diferença entre o conhecimento sensível e o racional",
+            "D": "As Ideias são criadas pela mente humana e não têm existência independente",
+            "E": "O mundo sensível é mais real e verdadeiro que o mundo das Ideias"
+          },
+          "correta": "B",
+          "explicacao": "Para Platão, as Ideias (ou Formas) são entidades perfeitas, eternas, imutáveis, que existem no mundo inteligível, acessível apenas pela razão. O mundo sensível (que percebemos pelos sentidos) contém cópias imperfeitas das Ideias - uma cadeira particular participa da Ideia de Cadeira, mas é imperfeita e perecível. O conhecimento verdadeiro (episteme) é das Ideias; dos objetos sensíveis temos apenas opinião (doxa).",
+          "dificuldade": "medio",
+          "tags": ["teoria das ideias", "platão", "metafísica"]
+        },
+        {
+          "id": "q92-5",
+          "enunciado": "Na cidade ideal descrita por Platão em 'A República', o governo deveria ser exercido por filósofos. Essa proposta se justifica porque, para Platão:",
+          "alternativas": {
+            "A": "Os filósofos são os mais ricos e, portanto, mais interessados no bem comum",
+            "B": "Apenas os filósofos, por conhecerem a Ideia do Bem, podem governar com justiça",
+            "C": "A democracia é sempre a melhor forma de governo, e filósofos são democratas",
+            "D": "Os filósofos representam a vontade da maioria da população",
+            "E": "O conhecimento filosófico garante habilidades militares superiores"
+          },
+          "correta": "B",
+          "explicacao": "Para Platão, governar exige conhecimento do Bem - do que é verdadeiramente bom para a cidade. Apenas os filósofos, após longa formação que culmina na contemplação da Ideia do Bem, possuem esse conhecimento. A democracia ateniense, que entregava decisões ao povo sem formação filosófica (e que condenou Sócrates), era criticada por Platão. O filósofo-rei governaria visando o bem comum, não interesses particulares.",
+          "dificuldade": "medio",
+          "tags": ["filósofo-rei", "platão", "política"]
+        }
+      ]
+    },
+    {
+      "id": "m93",
+      "titulo": "Aristóteles e a Filosofia Helenística",
+      "resumo": "A lógica, a ética das virtudes, a política e as escolas helenísticas",
+      "topicos": [
+        {
+          "titulo": "Aristóteles: Lógica e Metafísica",
+          "conteudo": "Aristóteles (384-322 a.C.), discípulo de Platão, desenvolveu um sistema filosófico abrangente. Criou a lógica formal (silogismo: premissa maior + premissa menor = conclusão). Em metafísica, criticou a teoria das Ideias de Platão: as formas não existem separadas das coisas, mas nelas (hilemorfismo: tudo é composto de matéria e forma). Distinguiu quatro causas: material (de que é feito), formal (a forma/essência), eficiente (quem fez) e final (para que serve). O 'Motor Imóvel' é causa primeira que move tudo sem ser movido. Diferenciou ato (realização) e potência (possibilidade): uma semente é árvore em potência."
+        },
+        {
+          "titulo": "A Ética e a Política de Aristóteles",
+          "conteudo": "A ética aristotélica é teleológica (orientada para um fim): o fim último humano é a eudaimonia (felicidade/bem-viver), que consiste em viver conforme a virtude. A virtude é um hábito (hexis) que se adquire pela prática - é o meio-termo entre extremos (ex.: coragem é meio entre covardia e temeridade). A virtude suprema é a contemplação (theoria). Em política, Aristóteles analisou as formas de governo: monarquia, aristocracia, politeia (boas); tirania, oligarquia, democracia (degeneradas). O ser humano é 'animal político' (zoon politikon): só se realiza na pólis. A política visa a vida boa, não apenas a sobrevivência."
+        },
+        {
+          "titulo": "Filosofia Helenística",
+          "conteudo": "Com as conquistas de Alexandre, a filosofia expandiu-se pelo mundo helenístico, focando na ética individual. O epicurismo (Epicuro) buscava a ataraxia (serenidade) através do prazer moderado - não hedonismo, mas ausência de dor física e perturbação mental. O estoicismo (Zenão, Sêneca, Marco Aurélio, Epicteto) ensinava a aceitar o destino com serenidade (apatheia), distinguindo o que depende de nós (julgamentos) do que não depende (eventos externos); viver conforme a natureza e a razão. O ceticismo (Pirro) suspendia o juízo sobre tudo, buscando a tranquilidade pela epoché (suspensão). Essas escolas influenciaram o pensamento posterior."
+        }
+      ],
+      "exemplos": [
+        "A lógica aristotélica como base do pensamento científico",
+        "A ética das virtudes aplicada à formação de caráter",
+        "O estoicismo e técnicas contemporâneas de resiliência"
+      ],
+      "dicas": [
+        "ENEM cobra a ética do meio-termo de Aristóteles",
+        "Entenda as diferenças entre Platão e Aristóteles",
+        "Epicurismo e estoicismo são frequentemente comparados"
+      ],
+      "questoes": [
+        {
+          "id": "q93-1",
+          "enunciado": "Aristóteles desenvolveu a teoria das quatro causas para explicar por que as coisas são como são. A 'causa final' refere-se:",
+          "alternativas": {
+            "A": "Ao material de que algo é feito",
+            "B": "À forma ou essência que define algo",
+            "C": "Ao agente que produz algo",
+            "D": "Ao propósito ou finalidade para a qual algo existe",
+            "E": "Ao primeiro movimento que originou o universo"
+          },
+          "correta": "D",
+          "explicacao": "As quatro causas de Aristóteles são: material (de que é feito - ex.: bronze de uma estátua), formal (a forma/essência - formato da estátua), eficiente (quem produziu - o escultor) e final (a finalidade/propósito - decoração ou homenagem). A causa final é característica do pensamento aristotélico: tudo tem um telos (fim) para o qual tende. Isso se aplica também aos seres vivos e ao ser humano.",
+          "dificuldade": "medio",
+          "tags": ["aristóteles", "quatro causas", "teleologia"]
+        },
+        {
+          "id": "q93-2",
+          "enunciado": "Na ética aristotélica, a virtude é definida como:",
+          "alternativas": {
+            "A": "Obediência cega às leis estabelecidas pela sociedade",
+            "B": "O meio-termo entre dois extremos viciosos, adquirido pelo hábito",
+            "C": "A negação de todos os prazeres em nome do dever",
+            "D": "O conhecimento teórico das Ideias perfeitas",
+            "E": "A maximização do prazer individual a qualquer custo"
+          },
+          "correta": "B",
+          "explicacao": "Para Aristóteles, a virtude (areté) é uma disposição habitual de escolher o meio-termo (mesotés) entre dois vícios - um por excesso e outro por falta. A coragem é meio entre covardia (falta) e temeridade (excesso); a generosidade, entre avareza e prodigalidade. A virtude não é inata - adquire-se pelo hábito, praticando atos virtuosos até que se tornem segunda natureza. A prudência (phronesis) determina o meio-termo em cada situação.",
+          "dificuldade": "facil",
+          "tags": ["aristóteles", "virtude", "meio-termo"]
+        },
+        {
+          "id": "q93-3",
+          "enunciado": "Aristóteles afirmou que 'o ser humano é um animal político' (zoon politikon). Essa afirmação significa que:",
+          "alternativas": {
+            "A": "Os seres humanos são naturalmente inclinados a disputar o poder",
+            "B": "A vida política é opcional e pode ser evitada pelo sábio",
+            "C": "O ser humano só se realiza plenamente vivendo em comunidade (pólis)",
+            "D": "A política é uma invenção artificial contrária à natureza humana",
+            "E": "Os animais e os humanos têm a mesma forma de organização social"
+          },
+          "correta": "C",
+          "explicacao": "Para Aristóteles, o ser humano é por natureza um ser que vive em comunidade (pólis). Diferentemente de animais gregários, o humano possui logos (razão/linguagem), que permite deliberar sobre o justo e o injusto, o bem e o mal. Quem vive fora da pólis é 'ou um deus ou um animal'. A cidade existe não apenas para a sobrevivência, mas para a vida boa, o florescimento humano (eudaimonia).",
+          "dificuldade": "facil",
+          "tags": ["aristóteles", "política", "zoon politikon"]
+        },
+        {
+          "id": "q93-4",
+          "enunciado": "O estoicismo, escola filosófica helenística, ensinava que a felicidade (eudaimonia) consiste em:",
+          "alternativas": {
+            "A": "Buscar o máximo de prazer e evitar qualquer dor",
+            "B": "Acumular riquezas e poder para garantir segurança",
+            "C": "Viver conforme a razão e a natureza, aceitando serenamente o destino",
+            "D": "Suspender o juízo sobre todas as questões para evitar o erro",
+            "E": "Participar ativamente da vida política e das assembleias públicas"
+          },
+          "correta": "C",
+          "explicacao": "Os estoicos ensinavam que a felicidade (eudaimonia) consiste em viver conforme a natureza e a razão, que governa o cosmos. Devemos aceitar com serenidade (apatheia) o que não depende de nós (eventos externos, doenças, morte) e cuidar do que depende (nossos julgamentos, escolhas, atitudes). A virtude é o único bem; vícios, o único mal; o resto (saúde, riqueza) é indiferente. Sêneca, Epicteto e Marco Aurélio são estoicos famosos.",
+          "dificuldade": "medio",
+          "tags": ["estoicismo", "ética", "helenismo"]
+        },
+        {
+          "id": "q93-5",
+          "enunciado": "Aristóteles discordava de Platão em relação à teoria das Ideias. Para Aristóteles:",
+          "alternativas": {
+            "A": "As Ideias existem em um mundo separado, acessível apenas pela razão",
+            "B": "As formas não existem separadas das coisas, mas nelas mesmas",
+            "C": "Não existem formas ou essências, apenas aparências sensíveis",
+            "D": "As Ideias são mais reais que os objetos do mundo sensível",
+            "E": "O conhecimento verdadeiro vem apenas da reminiscência da alma"
+          },
+          "correta": "B",
+          "explicacao": "Aristóteles criticou a teoria platônica das Ideias separadas. Para ele, as formas existem nas próprias coisas (hilemorfismo): cada ser é composto de matéria (hyle) e forma (morphé). A forma 'cavalo' não existe separada dos cavalos individuais, mas é o que faz cada cavalo ser cavalo. O conhecimento parte da experiência sensível (empirismo), por abstração chegamos às formas universais. 'Platão é meu amigo, mas mais amiga é a verdade'.",
+          "dificuldade": "medio",
+          "tags": ["aristóteles", "platão", "formas"]
+        }
+      ]
+    },
+    {
+      "id": "m94",
+      "titulo": "Filosofia Medieval: Fé e Razão",
+      "resumo": "Santo Agostinho, São Tomás de Aquino e a síntese entre filosofia e teologia",
+      "topicos": [
+        {
+          "titulo": "Santo Agostinho e a Patrística",
+          "conteudo": "A filosofia medieval buscou conciliar fé cristã e razão filosófica. A Patrística (séculos II-VIII) desenvolveu a doutrina cristã usando filosofia grega. Santo Agostinho (354-430) é o principal pensador. Convertido do maniqueísmo, sintetizou cristianismo e neoplatonismo. Suas obras ('Confissões', 'A Cidade de Deus') tratam do problema do mal (privação do bem), do livre-arbítrio, da predestinação, da iluminação divina (Deus ilumina a mente para conhecer verdades eternas). A história divide-se entre Cidade de Deus (orientada para Deus) e Cidade Terrena (orientada para si). 'Crê para entender, entende para crer'."
+        },
+        {
+          "titulo": "São Tomás de Aquino e a Escolástica",
+          "conteudo": "A Escolástica (séculos IX-XIV) desenvolveu-se nas universidades medievais, com método de disputas e comentários. São Tomás de Aquino (1225-1274) realizou a síntese entre aristotelismo e cristianismo. Na 'Suma Teológica', apresentou as 'cinco vias' para provar a existência de Deus: do movimento (primeiro motor), da causalidade (causa primeira), da contingência (ser necessário), dos graus de perfeição, da finalidade (ordenador). Distinguia verdades acessíveis à razão (filosofia) e verdades reveladas (teologia), mas ambas não podem se contradizer, pois vêm do mesmo Deus. A lei divide-se em eterna, natural, humana e divina."
+        },
+        {
+          "titulo": "A Crise da Escolástica",
+          "conteudo": "A Escolástica tardia questionou a harmonia entre fé e razão. Duns Scotus (1265-1308) limitou o alcance da razão em questões teológicas, enfatizando a vontade (voluntarismo). Guilherme de Ockham (1285-1347) foi mais radical: a 'navalha de Ockham' (não multiplicar entidades desnecessariamente) criticou os universais (nominalismo: só existem indivíduos, universais são nomes). Fé e razão são domínios separados (dupla verdade). Essa crise preparou o terreno para a ciência moderna e a Reforma: se a razão não alcança verdades teológicas, resta a fé (sola fide)."
+        }
+      ],
+      "exemplos": [
+        "As 'cinco vias' de Tomás de Aquino e argumentos contemporâneos sobre Deus",
+        "O problema do mal em Agostinho e teodiceias atuais",
+        "A navalha de Ockham e o princípio de parcimônia na ciência"
+      ],
+      "dicas": [
+        "ENEM cobra a relação entre fé e razão na filosofia medieval",
+        "Entenda as diferenças entre Agostinho (platonismo) e Tomás (aristotelismo)",
+        "A navalha de Ockham é princípio importante na filosofia da ciência"
+      ],
+      "questoes": [
+        {
+          "id": "q94-1",
+          "enunciado": "Santo Agostinho, importante filósofo da Patrística, buscou explicar a origem do mal moral no mundo. Para ele, o mal:",
+          "alternativas": {
+            "A": "É uma substância criada por Deus ao lado do bem",
+            "B": "É uma privação ou ausência do bem, não uma substância positiva",
+            "C": "Não existe, sendo apenas uma ilusão da mente humana",
+            "D": "Vem de um deus maligno em luta contra o Deus bom",
+            "E": "É necessário para que o bem possa existir"
+          },
+          "correta": "B",
+          "explicacao": "Agostinho, contra o maniqueísmo (que postulava dois princípios: bem e mal), argumentou que o mal não é uma substância, mas privação (privatio boni). Assim como a escuridão é ausência de luz, o mal é ausência de bem. Deus, sumamente bom, só cria bens. O mal moral vem do livre-arbítrio humano que, ao se afastar de Deus (sumo bem), volta-se para bens menores ou para si mesmo.",
+          "dificuldade": "medio",
+          "tags": ["agostinho", "mal", "teodiceia"]
+        },
+        {
+          "id": "q94-2",
+          "enunciado": "São Tomás de Aquino apresentou cinco argumentos (as 'cinco vias') para demonstrar a existência de Deus. A 'primeira via', baseada no movimento, argumenta que:",
+          "alternativas": {
+            "A": "A beleza do mundo prova a existência de um Criador artista",
+            "B": "Tudo que se move é movido por outro, e deve haver um primeiro motor imóvel",
+            "C": "A consciência moral humana exige a existência de um legislador divino",
+            "D": "A existência de graus de perfeição exige um ser perfeitíssimo",
+            "E": "O universo começou a existir em um momento e precisa de uma causa"
+          },
+          "correta": "B",
+          "explicacao": "A primeira via parte da observação do movimento (mudança): tudo que se move é movido por outro (nada passa da potência ao ato por si mesmo). Mas não se pode ir ao infinito na série de motores. Logo, deve haver um primeiro motor, não movido por nenhum outro, que é Deus. Esse argumento deriva de Aristóteles (Motor Imóvel). As outras vias tratam de causalidade, contingência, graus de perfeição e finalidade.",
+          "dificuldade": "medio",
+          "tags": ["tomás de aquino", "cinco vias", "deus"]
+        },
+        {
+          "id": "q94-3",
+          "enunciado": "A Escolástica medieval caracterizou-se pela tentativa de conciliar fé e razão. Para São Tomás de Aquino:",
+          "alternativas": {
+            "A": "A fé e a razão são completamente incompatíveis e pertencem a domínios separados",
+            "B": "A razão deve ser abandonada em favor da fé cega em questões religiosas",
+            "C": "Fé e razão, vindas do mesmo Deus, não podem se contradizer e complementam-se",
+            "D": "A razão é superior à fé e deve julgar todas as verdades religiosas",
+            "E": "Apenas os pagãos usam a razão; cristãos devem usar só a fé"
+          },
+          "correta": "C",
+          "explicacao": "Tomás de Aquino distinguia verdades acessíveis à razão natural (existência de Deus, lei natural) e verdades reveladas (Trindade, Encarnação), que só conhecemos pela fé. Mas como ambas vêm do mesmo Deus (criador da razão e autor da revelação), não podem se contradizer. A filosofia (razão) é 'serva da teologia', preparando e auxiliando. Se aparente contradição houver, há erro no raciocínio ou má interpretação da Escritura.",
+          "dificuldade": "facil",
+          "tags": ["fé e razão", "tomás de aquino", "escolástica"]
+        },
+        {
+          "id": "q94-4",
+          "enunciado": "O princípio conhecido como 'navalha de Ockham', formulado pelo filósofo medieval Guilherme de Ockham, estabelece que:",
+          "alternativas": {
+            "A": "A verdade é relativa e depende da perspectiva de cada indivíduo",
+            "B": "Não se devem multiplicar entidades além do necessário para explicar algo",
+            "C": "A razão humana pode demonstrar todas as verdades da fé cristã",
+            "D": "Os universais existem em um mundo separado das coisas particulares",
+            "E": "A dúvida sistemática é o melhor método para alcançar a verdade"
+          },
+          "correta": "B",
+          "explicacao": "A 'navalha de Ockham' (ou princípio de parcimônia) afirma: 'entia non sunt multiplicanda praeter necessitatem' - não se devem multiplicar entidades além do necessário. Entre duas explicações que dão conta dos mesmos fenômenos, prefira a mais simples. Ockham usava o princípio contra os universais dos realistas: se podemos explicar o conhecimento sem postular entidades universais, não devemos postulá-las. O princípio é fundamental na ciência moderna.",
+          "dificuldade": "medio",
+          "tags": ["ockham", "navalha", "parcimônia"]
+        },
+        {
+          "id": "q94-5",
+          "enunciado": "Santo Agostinho sintetizou elementos do cristianismo com a filosofia de Platão (via neoplatonismo). Uma influência platônica no pensamento agostiniano é:",
+          "alternativas": {
+            "A": "A valorização do corpo e dos prazeres sensíveis como caminho para Deus",
+            "B": "A teoria da iluminação divina para o conhecimento de verdades eternas",
+            "C": "A identificação do ser humano apenas com sua dimensão corporal",
+            "D": "A negação da existência de verdades universais e eternas",
+            "E": "A defesa do relativismo moral e cognitivo"
+          },
+          "correta": "B",
+          "explicacao": "Agostinho adaptou o platonismo ao cristianismo. Assim como em Platão a alma conhece as Ideias (verdades eternas), para Agostinho conhecemos verdades eternas (matemáticas, morais) por iluminação divina - Deus ilumina nossa mente como o sol ilumina os olhos. As Ideias platônicas tornam-se ideias na mente de Deus. O dualismo alma-corpo, a desvalorização do sensível e a busca da interioridade também mostram influência platônica.",
+          "dificuldade": "dificil",
+          "tags": ["agostinho", "platão", "iluminação"]
+        }
+      ]
+    },
+    {
+      "id": "m95",
+      "titulo": "Filosofia Moderna: Racionalismo e Empirismo",
+      "resumo": "Descartes, Locke, Hume e a revolução no conhecimento",
+      "topicos": [
+        {
+          "titulo": "Descartes e o Racionalismo",
+          "conteudo": "A filosofia moderna (séculos XVII-XVIII) focou no problema do conhecimento (epistemologia). René Descartes (1596-1650) buscava um fundamento certo para o conhecimento. Pelo método da dúvida metódica, duvidou de tudo: sentidos (enganam), mundo (pode ser sonho), matemática (gênio maligno). Mas não pode duvidar de que duvida: 'Penso, logo existo' (cogito ergo sum) - primeira certeza. Deus (provado ontologicamente) garante as ideias claras e distintas. Dualismo: mente (res cogitans) e corpo (res extensa) são substâncias distintas. O conhecimento vem de ideias inatas na mente (racionalismo)."
+        },
+        {
+          "titulo": "Locke, Berkeley e Hume: Empirismo",
+          "conteudo": "O empirismo britânico afirmava que todo conhecimento vem da experiência sensível. John Locke (1632-1704) rejeitou ideias inatas: a mente é uma 'tábula rasa' (folha em branco) preenchida pela experiência. Ideias simples vêm da sensação e reflexão; ideias complexas são combinações. George Berkeley (1685-1753) radicalizou: só existem ideias e mentes que as percebem - 'ser é ser percebido' (idealismo). David Hume (1711-1776) levou o empirismo ao ceticismo: conhecemos apenas impressões e ideias (cópias fracas); causalidade é apenas hábito de associação; o 'eu' é um feixe de percepções. Razão é 'escrava das paixões'."
+        },
+        {
+          "titulo": "Kant e a Síntese Crítica",
+          "conteudo": "Immanuel Kant (1724-1804) buscou superar a oposição racionalismo/empirismo. Na 'Crítica da Razão Pura', argumentou: o conhecimento começa com a experiência, mas não deriva todo dela. O sujeito contribui com formas a priori da sensibilidade (espaço e tempo) e categorias do entendimento (causalidade, substância). Conhecemos fenômenos (como as coisas aparecem para nós), não a coisa-em-si (noúmeno). A metafísica tradicional (Deus, alma, mundo como totalidade) é impossível como ciência. A 'revolução copernicana' de Kant: o objeto gira em torno do sujeito cognoscente, não o contrário."
+        }
+      ],
+      "exemplos": [
+        "A dúvida metódica de Descartes e o ceticismo contemporâneo",
+        "O empirismo de Locke e o método científico",
+        "Kant e os limites do conhecimento científico"
+      ],
+      "dicas": [
+        "ENEM cobra o cogito de Descartes frequentemente",
+        "Entenda a oposição entre racionalismo e empirismo",
+        "A 'revolução copernicana' de Kant é conceito importante"
+      ],
+      "questoes": [
+        {
+          "id": "q95-1",
+          "enunciado": "Descartes, no 'Discurso do Método', chegou à famosa conclusão 'Penso, logo existo' (cogito ergo sum). Essa proposição foi alcançada através:",
+          "alternativas": {
+            "A": "Da aceitação imediata das opiniões tradicionais e do senso comum",
+            "B": "Da dúvida metódica, que questionou todo conhecimento até encontrar uma certeza indubitável",
+            "C": "Da observação empírica sistemática dos fenômenos naturais",
+            "D": "Da revelação divina e da autoridade das Escrituras",
+            "E": "Do consenso entre os filósofos de sua época"
+          },
+          "correta": "B",
+          "explicacao": "Descartes buscava um fundamento absolutamente certo para o conhecimento. Pelo método da dúvida metódica, duvidou de tudo que pudesse ser duvidado: os sentidos enganam, podemos estar sonhando, um gênio maligno pode nos iludir até em matemática. Mas de uma coisa não posso duvidar: de que estou duvidando, pensando. Se penso, existo. O 'cogito' é a primeira certeza, ponto de partida para reconstruir o conhecimento.",
+          "dificuldade": "facil",
+          "tags": ["descartes", "cogito", "dúvida metódica"]
+        },
+        {
+          "id": "q95-2",
+          "enunciado": "O filósofo empirista John Locke afirmava que a mente humana, ao nascer, é uma 'tábula rasa'. Essa expressão significa que:",
+          "alternativas": {
+            "A": "Nascemos com ideias inatas que independem da experiência",
+            "B": "A mente é vazia de ideias ao nascer; todo conhecimento vem da experiência sensível",
+            "C": "O conhecimento matemático é independente de qualquer experiência",
+            "D": "A razão é capaz de conhecer verdades eternas sem recurso aos sentidos",
+            "E": "As categorias do entendimento são a priori e estruturam a experiência"
+          },
+          "correta": "B",
+          "explicacao": "Locke, empirista, rejeitou as ideias inatas de Descartes. A mente ao nascer é uma 'folha em branco' (tabula rasa), sem nenhum conteúdo. Todo o material do conhecimento vem da experiência: sensação (percepções externas) e reflexão (percepção das operações da própria mente). Ideias simples vêm diretamente da experiência; ideias complexas são combinações feitas pela mente.",
+          "dificuldade": "facil",
+          "tags": ["locke", "empirismo", "tábula rasa"]
+        },
+        {
+          "id": "q95-3",
+          "enunciado": "David Hume, levando o empirismo às últimas consequências, questionou o conceito de causalidade. Para Hume, quando dizemos que 'A causa B':",
+          "alternativas": {
+            "A": "Temos conhecimento racional de uma conexão necessária entre A e B",
+            "B": "Percebemos diretamente a força causal que liga A a B",
+            "C": "Apenas observamos que A e B ocorrem juntos, e o hábito nos faz esperar B após A",
+            "D": "Demonstramos logicamente que A deve necessariamente produzir B",
+            "E": "Conhecemos a essência de A e de B e suas relações necessárias"
+          },
+          "correta": "C",
+          "explicacao": "Hume analisou a causalidade empiricamente: o que realmente observamos? Vemos que A precede B e que sempre que ocorre A, segue-se B (conjunção constante). Mas não percebemos nenhuma 'conexão necessária' ou 'força' que faça A produzir B. A crença na causalidade vem do hábito: a repetição cria expectativa. Não há fundamento racional para inferir que o futuro será como o passado (problema da indução).",
+          "dificuldade": "medio",
+          "tags": ["hume", "causalidade", "empirismo"]
+        },
+        {
+          "id": "q95-4",
+          "enunciado": "Kant afirmou ter realizado uma 'revolução copernicana' na filosofia. Essa revolução consistiu em:",
+          "alternativas": {
+            "A": "Afirmar que a Terra gira em torno do Sol",
+            "B": "Propor que os objetos giram em torno do sujeito cognoscente, que constitui ativamente o conhecimento",
+            "C": "Retornar à filosofia aristotélica contra a ciência moderna",
+            "D": "Negar qualquer possibilidade de conhecimento seguro",
+            "E": "Demonstrar que todo conhecimento vem exclusivamente da experiência"
+          },
+          "correta": "B",
+          "explicacao": "Kant comparou sua revolução à de Copérnico: assim como Copérnico explicou os movimentos celestes colocando o Sol no centro (não a Terra), Kant explicou o conhecimento colocando o sujeito no centro. Os objetos não são conhecidos como são em si mesmos, mas conforme as estruturas a priori do sujeito (espaço, tempo, categorias). O sujeito constitui ativamente a experiência. Conhecemos fenômenos (como aparecem), não a coisa-em-si.",
+          "dificuldade": "medio",
+          "tags": ["kant", "revolução copernicana", "epistemologia"]
+        },
+        {
+          "id": "q95-5",
+          "enunciado": "O dualismo cartesiano estabelece uma distinção fundamental entre mente e corpo. Segundo Descartes:",
+          "alternativas": {
+            "A": "Mente e corpo são a mesma substância, diferindo apenas em grau",
+            "B": "Mente (res cogitans) e corpo (res extensa) são substâncias completamente distintas",
+            "C": "O corpo não existe, sendo apenas uma ilusão da mente",
+            "D": "A mente é uma função do corpo e não pode existir sem ele",
+            "E": "Não há como conhecer nada sobre a relação entre mente e corpo"
+          },
+          "correta": "B",
+          "explicacao": "O dualismo cartesiano distingue duas substâncias: res cogitans (coisa pensante - mente) e res extensa (coisa extensa - corpo). A mente é não-espacial, indivisível, definida pelo pensamento. O corpo é espacial, divisível, definido pela extensão. São substâncias completamente diferentes que, no ser humano, interagem (problema mente-corpo). Descartes situou a interação na glândula pineal, solução insatisfatória que gerou muito debate posterior.",
+          "dificuldade": "facil",
+          "tags": ["descartes", "dualismo", "mente-corpo"]
+        }
+      ]
+    },
+    {
+      "id": "m96",
+      "titulo": "Filosofia Política Moderna",
+      "resumo": "Maquiavel, Hobbes, Locke, Rousseau e as teorias do contrato social",
+      "topicos": [
+        {
+          "titulo": "Maquiavel e o Realismo Político",
+          "conteudo": "Nicolau Maquiavel (1469-1527) é considerado fundador da ciência política moderna. Em 'O Príncipe', separou política de moral e religião, analisando o poder como ele é, não como deveria ser (realismo). O governante deve saber usar a força (leão) e a astúcia (raposa). 'Os fins justificam os meios' (atribuída, não literalmente sua): o que importa é conquistar e manter o poder; a moralidade comum não se aplica ao príncipe. A virtù (capacidade de ação) deve dominar a fortuna (acaso). Maquiavel foi republicano ('Discursos sobre Tito Lívio'), mas 'O Príncipe' trata de principados novos em contexto de divisão italiana."
+        },
+        {
+          "titulo": "Hobbes e o Contrato Social Absolutista",
+          "conteudo": "Thomas Hobbes (1588-1679), em 'Leviatã', desenvolveu uma teoria contratualista. No estado de natureza (hipotético), sem poder comum, haveria 'guerra de todos contra todos' - a vida seria 'solitária, pobre, sórdida, brutal e curta'. Os homens, por medo da morte e desejo de paz, fazem um pacto (contrato social) transferindo todos os direitos a um soberano (Leviatã), que detém poder absoluto. O soberano não é parte do contrato - não pode ser deposto. Apenas se não garantir segurança, rompe-se o pacto. A obediência ao soberano é racional, não moral ou divina."
+        },
+        {
+          "titulo": "Locke e Rousseau: Liberalismo e Soberania Popular",
+          "conteudo": "John Locke (1632-1704), em 'Segundo Tratado sobre o Governo', propôs contratualismo liberal. No estado de natureza, há direitos naturais (vida, liberdade, propriedade) e lei natural que os protege. O contrato cria um governo limitado para garantir esses direitos; se o governo os violar, o povo tem direito à revolução. Influenciou as revoluções americana e francesa. Jean-Jacques Rousseau (1712-1778), em 'O Contrato Social', viu o estado de natureza como pacífico (bom selvagem), corrompido pela propriedade privada. O contrato cria a soberania popular: a 'vontade geral' (bem comum) é soberana. Cada um, obedecendo à vontade geral, obedece a si mesmo."
+        }
+      ],
+      "exemplos": [
+        "O realismo de Maquiavel e a política contemporânea",
+        "O contrato social e a legitimidade dos governos democráticos",
+        "Hobbes vs. Locke: segurança vs. liberdade nos debates atuais"
+      ],
+      "dicas": [
+        "ENEM compara frequentemente Hobbes, Locke e Rousseau",
+        "Entenda as diferenças entre os estados de natureza de cada autor",
+        "O direito à revolução em Locke é conceito importante"
+      ],
+      "questoes": [
+        {
+          "id": "q96-1",
+          "enunciado": "Maquiavel, em 'O Príncipe', inaugurou uma nova forma de pensar a política. Uma característica fundamental de seu pensamento é:",
+          "alternativas": {
+            "A": "A subordinação da política aos preceitos morais e religiosos",
+            "B": "A análise do poder político como ele efetivamente é, separado da moral",
+            "C": "A defesa da democracia direta como única forma legítima de governo",
+            "D": "A crença na bondade natural do ser humano em sociedade",
+            "E": "A teoria do contrato social como origem do Estado"
+          },
+          "correta": "B",
+          "explicacao": "Maquiavel separou política de moral e religião, analisando o poder de forma realista: como é conquistado e mantido, não como deveria ser segundo ideais morais. O príncipe deve fazer o necessário para manter o Estado, incluindo ações que seriam condenáveis na moral comum. Isso não significa que Maquiavel fosse imoral, mas que a lógica da política tem autonomia. Fundou a ciência política moderna.",
+          "dificuldade": "facil",
+          "tags": ["maquiavel", "realismo político", "política"]
+        },
+        {
+          "id": "q96-2",
+          "enunciado": "Para Thomas Hobbes, no estado de natureza (antes do surgimento do Estado), a condição humana seria de 'guerra de todos contra todos'. Essa concepção justifica:",
+          "alternativas": {
+            "A": "A anarquia como melhor forma de organização social",
+            "B": "O poder absoluto do soberano para garantir a paz e a segurança",
+            "C": "A democracia direta como única forma legítima de governo",
+            "D": "O direito natural à liberdade e à propriedade contra o Estado",
+            "E": "A revolução como direito permanente do povo contra os governantes"
+          },
+          "correta": "B",
+          "explicacao": "Para Hobbes, no estado de natureza, sem poder comum, os homens, iguais em força e ambição, competem por recursos escassos. Cada um tem direito a tudo, o que significa que ninguém está seguro. Por medo da morte e desejo de paz, fazem um contrato transferindo todos os poderes a um soberano (Leviatã), cujo poder absoluto é necessário para garantir segurança. A obediência ao soberano é racional.",
+          "dificuldade": "medio",
+          "tags": ["hobbes", "estado de natureza", "contrato social"]
+        },
+        {
+          "id": "q96-3",
+          "enunciado": "John Locke desenvolveu uma teoria contratualista que influenciou profundamente o liberalismo político. Segundo Locke, os direitos naturais que o Estado deve proteger são:",
+          "alternativas": {
+            "A": "Honra, glória e poder",
+            "B": "Vida, liberdade e propriedade",
+            "C": "Igualdade, fraternidade e solidariedade",
+            "D": "Segurança, ordem e obediência",
+            "E": "Trabalho, moradia e alimentação"
+          },
+          "correta": "B",
+          "explicacao": "Para Locke, os direitos naturais (que existem antes do Estado, no estado de natureza) são vida, liberdade e propriedade. O Estado é criado pelo contrato social para garantir esses direitos. Se o governo os violar, o povo tem direito de resistência e revolução. Locke influenciou a Declaração de Independência americana (Jefferson substituiu 'propriedade' por 'busca da felicidade') e o constitucionalismo liberal.",
+          "dificuldade": "facil",
+          "tags": ["locke", "direitos naturais", "liberalismo"]
+        },
+        {
+          "id": "q96-4",
+          "enunciado": "Rousseau, em 'O Contrato Social', desenvolve o conceito de 'vontade geral'. Esse conceito refere-se:",
+          "alternativas": {
+            "A": "À vontade do governante que representa o povo",
+            "B": "À soma das vontades particulares de todos os indivíduos",
+            "C": "À vontade coletiva que visa o bem comum, não interesses particulares",
+            "D": "À vontade da maioria em qualquer votação",
+            "E": "Aos desejos naturais de cada indivíduo antes do contrato"
+          },
+          "correta": "C",
+          "explicacao": "A vontade geral não é a soma das vontades particulares (que visa interesses privados), mas a vontade do corpo político como um todo, que visa o bem comum. Um cidadão pode ter vontade particular (interesse próprio) e participar da vontade geral (interesse comum). A soberania pertence ao povo reunido expressando a vontade geral. Leis legítimas expressam a vontade geral; cada um, ao obedecê-las, obedece a si mesmo.",
+          "dificuldade": "medio",
+          "tags": ["rousseau", "vontade geral", "soberania popular"]
+        },
+        {
+          "id": "q96-5",
+          "enunciado": "Hobbes e Locke, embora ambos contratualistas, diferem em relação às características do estado de natureza e às consequências para a organização política. Uma diferença fundamental entre eles é que:",
+          "alternativas": {
+            "A": "Ambos defendem o poder absoluto do soberano",
+            "B": "Ambos negam a existência de direitos naturais anteriores ao Estado",
+            "C": "Para Hobbes o estado de natureza é de guerra, justificando poder absoluto; para Locke é de relativa paz, justificando governo limitado",
+            "D": "Locke defende monarquia absoluta enquanto Hobbes defende democracia",
+            "E": "Ambos defendem o direito à revolução contra o soberano"
+          },
+          "correta": "C",
+          "explicacao": "Para Hobbes, o estado de natureza é de guerra de todos contra todos, justificando o poder absoluto do soberano para garantir paz. Para Locke, no estado de natureza há relativa paz, direitos naturais e lei natural; o inconveniente é a falta de juiz imparcial. O contrato cria governo limitado para garantir direitos. Se o governo violar direitos, o povo pode resistir - direito à revolução que Hobbes nega.",
+          "dificuldade": "dificil",
+          "tags": ["hobbes", "locke", "contrato social"]
+        }
+      ]
+    },
+    {
+      "id": "m97",
+      "titulo": "Ética: Kant, Utilitarismo e Ética Contemporânea",
+      "resumo": "Diferentes abordagens sobre o que devemos fazer e por quê",
+      "topicos": [
+        {
+          "titulo": "A Ética Deontológica de Kant",
+          "conteudo": "Immanuel Kant desenvolveu uma ética do dever (deontológica). O valor moral de uma ação não está nas consequências, mas na intenção de agir por dever. A boa vontade, que age por dever (não por inclinação ou interesse), é o único bem incondicional. A lei moral é descoberta pela razão e expressa-se no imperativo categórico: 'Age apenas segundo a máxima pela qual possas ao mesmo tempo querer que ela se torne lei universal'. Formulações: universalizabilidade, humanidade como fim em si ('trata a humanidade sempre como fim, nunca apenas como meio'), autonomia. A moralidade é autônoma: a razão dá a lei a si mesma."
+        },
+        {
+          "titulo": "O Utilitarismo",
+          "conteudo": "O utilitarismo (Bentham, Mill) é uma ética consequencialista: o certo é o que produz as melhores consequências. O princípio da utilidade: 'a maior felicidade para o maior número'. Para Jeremy Bentham (1748-1832), felicidade é prazer e ausência de dor; propôs o 'cálculo felicífico' (quantificar prazer). John Stuart Mill (1806-1873) distinguiu prazeres superiores (intelectuais) e inferiores (corporais): 'É melhor ser Sócrates insatisfeito do que um tolo satisfeito'. O utilitarismo influencia políticas públicas, economia do bem-estar e bioética. Críticas: pode justificar injustiças se produzirem maior felicidade total."
+        },
+        {
+          "titulo": "Ética Contemporânea",
+          "conteudo": "No século XX, surgiram novas abordagens. A metaética analisa a linguagem moral: o emotivismo (Ayer) vê juízos morais como expressões de emoção, não de verdades. O prescritivismo (Hare) os vê como prescrições universalizáveis. A ética aplicada trata de questões práticas (bioética, ética ambiental, ética profissional). A ética das virtudes (MacIntyre, Foot) retoma Aristóteles: a questão central não é 'o que devo fazer?' mas 'que tipo de pessoa devo ser?'. Rawls ('Teoria da Justiça') propôs princípios de justiça escolhidos sob 'véu de ignorância'. A ética do discurso (Habermas, Apel) fundamenta normas no consenso racional."
+        }
+      ],
+      "exemplos": [
+        "O imperativo categórico aplicado a dilemas morais",
+        "O utilitarismo em políticas públicas de saúde",
+        "A ética das virtudes na formação profissional"
+      ],
+      "dicas": [
+        "ENEM compara frequentemente Kant e o utilitarismo",
+        "Entenda a diferença entre ética deontológica e consequencialista",
+        "O imperativo categórico é conceito central para o ENEM"
+      ],
+      "questoes": [
+        {
+          "id": "q97-1",
+          "enunciado": "O imperativo categórico de Kant, em uma de suas formulações, estabelece: 'Age apenas segundo a máxima pela qual possas ao mesmo tempo querer que ela se torne lei universal'. Essa formulação significa que:",
+          "alternativas": {
+            "A": "Devemos agir conforme nossos desejos e inclinações pessoais",
+            "B": "Devemos calcular as consequências de nossas ações para o maior número",
+            "C": "Devemos agir apenas de formas que poderíamos querer que todos agissem",
+            "D": "Devemos obedecer às leis do Estado independentemente de seu conteúdo",
+            "E": "Devemos seguir os costumes e tradições da nossa sociedade"
+          },
+          "correta": "C",
+          "explicacao": "O imperativo categórico é um teste de universalizabilidade: antes de agir, pergunte se você poderia querer que todos agissem da mesma forma. Se não, a ação é imoral. Por exemplo: posso universalizar a mentira? Não, pois se todos mentissem, a própria mentira perderia sentido. A fórmula não depende de consequências, mas da forma da ação - se ela pode ser universalizada sem contradição.",
+          "dificuldade": "medio",
+          "tags": ["kant", "imperativo categórico", "ética"]
+        },
+        {
+          "id": "q97-2",
+          "enunciado": "O utilitarismo, desenvolvido por Bentham e Mill, é uma teoria ética que avalia as ações com base:",
+          "alternativas": {
+            "A": "Na intenção do agente de cumprir o dever moral",
+            "B": "Nas consequências da ação para a felicidade geral",
+            "C": "Na conformidade com mandamentos divinos",
+            "D": "No caráter virtuoso do agente que pratica a ação",
+            "E": "Na obediência às leis do Estado e às tradições"
+          },
+          "correta": "B",
+          "explicacao": "O utilitarismo é consequencialista: julga ações pelas suas consequências. O princípio da utilidade afirma que a ação correta é aquela que produz a maior felicidade (prazer, bem-estar) para o maior número de pessoas afetadas. Não importa a intenção ou o caráter do agente, mas o resultado da ação. Por isso, dois atos com mesma consequência têm o mesmo valor moral, independentemente das intenções.",
+          "dificuldade": "facil",
+          "tags": ["utilitarismo", "consequencialismo", "ética"]
+        },
+        {
+          "id": "q97-3",
+          "enunciado": "Para Kant, a única coisa boa sem restrição é a 'boa vontade'. Isso significa que:",
+          "alternativas": {
+            "A": "As consequências boas de uma ação são o que a torna moralmente valiosa",
+            "B": "A intenção de agir por dever, não por inclinação ou interesse, é o que dá valor moral",
+            "C": "A vontade de Deus é o único critério para julgar ações morais",
+            "D": "Qualquer ação que produza prazer é moralmente boa",
+            "E": "O hábito de praticar virtudes é mais importante que a intenção"
+          },
+          "correta": "B",
+          "explicacao": "Para Kant, talentos (inteligência), dons (riqueza) e até a felicidade podem ser usados para o mal. Só a boa vontade é incondicionalmente boa. A boa vontade é a vontade determinada pelo dever, que age por respeito à lei moral, não por inclinações (simpatia, interesse). Uma pessoa pode ajudar outra por inclinação ou interesse - não há valor moral. Se ajuda por dever, mesmo sem inclinação, há valor moral.",
+          "dificuldade": "medio",
+          "tags": ["kant", "boa vontade", "dever"]
+        },
+        {
+          "id": "q97-4",
+          "enunciado": "John Stuart Mill, ao desenvolver o utilitarismo, introduziu uma distinção entre tipos de prazeres. Segundo Mill:",
+          "alternativas": {
+            "A": "Todos os prazeres têm o mesmo valor, diferindo apenas em quantidade",
+            "B": "Prazeres intelectuais e morais são qualitativamente superiores aos prazeres corporais",
+            "C": "Apenas prazeres corporais são verdadeiros; prazeres intelectuais são ilusões",
+            "D": "A quantidade de prazer é mais importante que sua qualidade",
+            "E": "Não devemos buscar prazer algum, pois todo prazer é imoral"
+          },
+          "correta": "B",
+          "explicacao": "Mill modificou o utilitarismo de Bentham, que media prazer apenas quantitativamente. Para Mill, há diferenças qualitativas: prazeres 'superiores' (intelectuais, estéticos, morais) são preferíveis a prazeres 'inferiores' (corporais), independentemente da quantidade. 'É melhor ser Sócrates insatisfeito do que um tolo satisfeito'. Quem conhece ambos os tipos prefere os superiores.",
+          "dificuldade": "medio",
+          "tags": ["mill", "utilitarismo", "prazeres"]
+        },
+        {
+          "id": "q97-5",
+          "enunciado": "A ética das virtudes, retomada por filósofos contemporâneos como Alasdair MacIntyre, propõe uma abordagem diferente das éticas deontológica e utilitarista. Sua pergunta central é:",
+          "alternativas": {
+            "A": "'Quais são as consequências de minhas ações?'",
+            "B": "'Qual é meu dever nesta situação?'",
+            "C": "'Que tipo de pessoa devo ser?'",
+            "D": "'O que a lei determina que eu faça?'",
+            "E": "'Qual é a vontade de Deus para mim?'"
+          },
+          "correta": "C",
+          "explicacao": "A ética das virtudes (de origem aristotélica, revivida por MacIntyre, Foot, entre outros) desloca o foco: em vez de perguntar 'o que devo fazer?' (como Kant e utilitaristas), pergunta 'que tipo de pessoa devo ser?'. O importante é desenvolver o caráter virtuoso (coragem, justiça, temperança, prudência). A pessoa virtuosa agirá corretamente nas situações, não por seguir regras, mas por ter as disposições certas.",
+          "dificuldade": "medio",
+          "tags": ["ética das virtudes", "macintyre", "caráter"]
+        }
+      ]
+    },
+    {
+      "id": "m98",
+      "titulo": "Marx, Nietzsche e a Crítica da Modernidade",
+      "resumo": "A crítica do capitalismo, dos valores e das ilusões da razão",
+      "topicos": [
+        {
+          "titulo": "Marx e a Crítica do Capitalismo",
+          "conteudo": "Karl Marx (1818-1883) desenvolveu uma crítica filosófica, econômica e política do capitalismo. O materialismo histórico vê a história como sucessão de modos de produção, movida pela luta de classes. A infraestrutura econômica (forças e relações de produção) determina a superestrutura (Estado, direito, ideologia, religião). No capitalismo, a burguesia detém os meios de produção; o proletariado vende sua força de trabalho. A mais-valia é o trabalho não pago apropriado pelo capitalista. A alienação ocorre em quatro dimensões: do produto, do processo, da essência humana e dos outros. A revolução proletária aboliria classes e propriedade privada, levando ao comunismo."
+        },
+        {
+          "titulo": "Nietzsche e a Crítica dos Valores",
+          "conteudo": "Friedrich Nietzsche (1844-1900) fez uma genealogia da moral, investigando a origem dos valores. 'Deus está morto': os fundamentos transcendentes da moral (cristã, platônica) perderam credibilidade, gerando niilismo. A moral judaico-cristã é 'moral de escravos' - ressentimento que inverteu os valores: o fraco é 'bom', o forte é 'mau'. Nietzsche propõe a 'transvaloração de todos os valores': superar o niilismo afirmando a vida. O Übermensch (super-homem) cria seus próprios valores. O eterno retorno é o teste: você viveria sua vida infinitas vezes? A vontade de poder é o impulso fundamental de todo vivente."
+        },
+        {
+          "titulo": "A Escola de Frankfurt e a Teoria Crítica",
+          "conteudo": "A Escola de Frankfurt (Adorno, Horkheimer, Marcuse, Habermas) desenvolveu a teoria crítica, combinando Marx, Freud e Weber. A 'Dialética do Esclarecimento' (Adorno e Horkheimer) argumenta que a razão moderna, que prometia libertação, tornou-se instrumento de dominação (razão instrumental). A indústria cultural (mass media) produz conformismo e falsa consciência. Marcuse, em 'O Homem Unidimensional', mostrou como a sociedade capitalista avançada integra a oposição e cria 'necessidades falsas'. Habermas distingue razão instrumental (técnica) e razão comunicativa (entendimento mútuo), defendendo o potencial emancipatório do diálogo."
+        }
+      ],
+      "exemplos": [
+        "A alienação do trabalho em contextos contemporâneos",
+        "A crítica de Nietzsche à moral aplicada a debates atuais",
+        "A indústria cultural e a manipulação midiática hoje"
+      ],
+      "dicas": [
+        "ENEM cobra conceitos de Marx: alienação, mais-valia, ideologia",
+        "A morte de Deus e o niilismo em Nietzsche são temas frequentes",
+        "Indústria cultural e razão instrumental da Escola de Frankfurt"
+      ],
+      "questoes": [
+        {
+          "id": "q98-1",
+          "enunciado": "Marx desenvolveu o conceito de 'alienação' para descrever a condição do trabalhador no capitalismo. A alienação do produto do trabalho significa que:",
+          "alternativas": {
+            "A": "O trabalhador escolhe livremente o que produzir e como",
+            "B": "O produto do trabalho pertence ao trabalhador que o criou",
+            "C": "O trabalhador não reconhece o produto de seu trabalho como seu; pertence ao capitalista",
+            "D": "O trabalho é uma atividade prazerosa e realizadora",
+            "E": "Os meios de produção são compartilhados por todos os trabalhadores"
+          },
+          "correta": "C",
+          "explicacao": "Para Marx, no capitalismo o trabalhador é alienado em quatro dimensões. A alienação do produto: o trabalhador produz mercadorias que não lhe pertencem - pertencem ao capitalista. O produto aparece como algo estranho, hostil. Quanto mais o trabalhador produz, mais enriquece o capitalista e mais empobrece. As outras dimensões são: alienação do processo (não controla como trabalha), da essência humana (trabalho deveria realizar, mas embrutece) e dos outros (competição).",
+          "dificuldade": "medio",
+          "tags": ["marx", "alienação", "trabalho"]
+        },
+        {
+          "id": "q98-2",
+          "enunciado": "A frase 'Deus está morto', de Nietzsche, não significa simplesmente ateísmo. No contexto de sua filosofia, essa afirmação expressa:",
+          "alternativas": {
+            "A": "A vitória do cristianismo sobre outras religiões",
+            "B": "A perda dos fundamentos transcendentes da moral e do sentido, gerando niilismo",
+            "C": "A demonstração científica da inexistência de Deus",
+            "D": "A necessidade de restaurar a fé religiosa tradicional",
+            "E": "A substituição de Deus pelo Estado como autoridade suprema"
+          },
+          "correta": "B",
+          "explicacao": "Para Nietzsche, 'Deus está morto' significa que os fundamentos transcendentes que sustentavam a moral e o sentido ocidentais (o Deus cristão, mas também o 'mundo verdadeiro' platônico) perderam credibilidade. O resultado é o niilismo: nada tem valor, tudo é vazio de sentido. Nietzsche vê isso como crise e oportunidade: superar o niilismo requer criar novos valores afirmadores da vida, não buscar substitutos para Deus.",
+          "dificuldade": "medio",
+          "tags": ["nietzsche", "morte de deus", "niilismo"]
+        },
+        {
+          "id": "q98-3",
+          "enunciado": "O conceito de 'indústria cultural', desenvolvido por Adorno e Horkheimer da Escola de Frankfurt, refere-se:",
+          "alternativas": {
+            "A": "À produção industrial de bens materiais nas fábricas",
+            "B": "À produção massificada de bens culturais que promove conformismo e manipulação",
+            "C": "Ao incentivo estatal à produção de arte erudita e alta cultura",
+            "D": "À cultura autêntica e espontânea produzida pelo povo",
+            "E": "Ao desenvolvimento da educação e das ciências nas universidades"
+          },
+          "correta": "B",
+          "explicacao": "A indústria cultural é a produção de cultura (cinema, rádio, TV, música popular) segundo a lógica da mercadoria e da padronização industrial. Para Adorno e Horkheimer, ela não democratiza a cultura, mas manipula as massas, criando falsa consciência e conformismo. Os produtos parecem variados, mas são padronizados. O consumidor pensa escolher, mas é condicionado. A indústria cultural integra as pessoas ao sistema capitalista e impede o pensamento crítico.",
+          "dificuldade": "medio",
+          "tags": ["indústria cultural", "frankfurt", "adorno"]
+        },
+        {
+          "id": "q98-4",
+          "enunciado": "Para Marx, a mais-valia é a base da exploração capitalista. Ela consiste:",
+          "alternativas": {
+            "A": "No salário pago ao trabalhador por seu trabalho",
+            "B": "No valor produzido pelo trabalhador além do necessário para sua subsistência, apropriado pelo capitalista",
+            "C": "Nos impostos pagos pelo capitalista ao Estado",
+            "D": "No lucro obtido pelo trabalhador na venda de mercadorias",
+            "E": "No valor dos meios de produção pertencentes ao trabalhador"
+          },
+          "correta": "B",
+          "explicacao": "A mais-valia é o trabalho não pago. O trabalhador produz valor (trabalho objetivado em mercadorias), mas recebe como salário apenas o necessário para reproduzir sua força de trabalho (subsistência). A diferença entre o valor produzido e o salário é a mais-valia, apropriada gratuitamente pelo capitalista. É a fonte do lucro e da acumulação de capital. A exploração está no fato de que o trabalhador produz mais do que recebe.",
+          "dificuldade": "medio",
+          "tags": ["marx", "mais-valia", "capitalismo"]
+        },
+        {
+          "id": "q98-5",
+          "enunciado": "Nietzsche, em sua 'genealogia da moral', distingue entre 'moral de senhores' e 'moral de escravos'. A 'moral de escravos' caracteriza-se por:",
+          "alternativas": {
+            "A": "Afirmar a vida, a força, a nobreza e a excelência",
+            "B": "Valorizar a fraqueza, a humildade e o ressentimento contra os fortes",
+            "C": "Criar valores de forma autônoma e independente",
+            "D": "Celebrar a vontade de poder e a superação de si mesmo",
+            "E": "Rejeitar toda forma de moralidade e viver sem valores"
+          },
+          "correta": "B",
+          "explicacao": "Nietzsche via a moral judaico-cristã como 'moral de escravos': nascida do ressentimento dos fracos contra os fortes, ela inverte os valores. O que era 'bom' (força, nobreza, afirmação) torna-se 'mau'; o que era 'ruim' (fraqueza, pobreza) torna-se 'bom' (humildade, mansidão). É uma moral reativa, que nega a vida e os instintos. A 'moral de senhores', ao contrário, afirma e cria valores ativamente.",
+          "dificuldade": "dificil",
+          "tags": ["nietzsche", "genealogia moral", "ressentimento"]
+        }
+      ]
+    },
+    {
+      "id": "m99",
+      "titulo": "Fenomenologia e Existencialismo",
+      "resumo": "Husserl, Heidegger, Sartre e a questão da existência humana",
+      "topicos": [
+        {
+          "titulo": "Husserl e a Fenomenologia",
+          "conteudo": "Edmund Husserl (1859-1938) fundou a fenomenologia, método filosófico que busca descrever os fenômenos como aparecem à consciência. O lema é 'voltar às coisas mesmas', abandonando teorias prévias. A consciência é sempre intencional: consciência de algo. A redução fenomenológica (epoché) suspende a 'atitude natural' (crença na existência do mundo) para focar na estrutura da experiência. O objetivo é descrever a essência (eidos) dos fenômenos - não fatos contingentes, mas estruturas necessárias. A fenomenologia influenciou existencialismo, hermenêutica, ciências sociais interpretativas e filosofia da mente."
+        },
+        {
+          "titulo": "Heidegger: Ser e Tempo",
+          "conteudo": "Martin Heidegger (1889-1976), aluno de Husserl, propôs uma 'ontologia fundamental' em 'Ser e Tempo' (1927). A tradição esqueceu a questão do ser, confundindo-a com questão dos entes. O ente privilegiado para investigar o ser é o Dasein (ser-aí), o ser humano, que se interroga sobre seu próprio ser. O Dasein é 'ser-no-mundo', não sujeito separado de objetos. É 'ser-para-a-morte': a angústia revela a finitude e a possibilidade de existência autêntica (decidir por si) ou inautêntica (perder-se no 'impessoal', no que 'a gente' faz e pensa). A temporalidade é o horizonte do ser."
+        },
+        {
+          "titulo": "Sartre e o Existencialismo",
+          "conteudo": "Jean-Paul Sartre (1905-1980) é o principal representante do existencialismo. Em 'O Ser e o Nada' e 'O Existencialismo é um Humanismo', afirma: 'a existência precede a essência' - o ser humano não tem natureza predefinida, faz-se através de suas escolhas. 'Estamos condenados a ser livres': não podemos não escolher (não escolher é escolha). Daí a angústia e a responsabilidade total. A 'má-fé' é fingir não ser livre, atribuindo escolhas a destino, natureza ou Deus. O 'olhar do outro' me objetifica. O 'engajamento' é a ação política consequente da liberdade."
+        }
+      ],
+      "exemplos": [
+        "A liberdade e responsabilidade sartriana e escolhas existenciais",
+        "A autenticidade e inautenticidade em Heidegger no contexto atual",
+        "A fenomenologia aplicada a estudos de experiência subjetiva"
+      ],
+      "dicas": [
+        "ENEM cobra a frase 'a existência precede a essência' de Sartre",
+        "Entenda os conceitos de liberdade, angústia e má-fé",
+        "A distinção autenticidade/inautenticidade em Heidegger"
+      ],
+      "questoes": [
+        {
+          "id": "q99-1",
+          "enunciado": "A afirmação de Sartre de que 'a existência precede a essência' é central para o existencialismo. Ela significa que:",
+          "alternativas": {
+            "A": "O ser humano tem uma natureza fixa que determina suas escolhas",
+            "B": "O ser humano primeiro existe e depois se define através de suas escolhas livres",
+            "C": "A essência do ser humano é determinada por Deus antes de nascer",
+            "D": "O ser humano é produto de forças biológicas e sociais que escapam ao seu controle",
+            "E": "Existência e essência são a mesma coisa no ser humano"
+          },
+          "correta": "B",
+          "explicacao": "Para Sartre, diferentemente de objetos fabricados (cuja essência/projeto precede a existência), o ser humano primeiro existe, surge no mundo, e depois se define através de suas escolhas e ações. Não há natureza humana predefinida, nem Deus que defina o que devemos ser. 'O homem é o que ele faz de si mesmo'. Isso implica liberdade radical e responsabilidade total pelas próprias escolhas.",
+          "dificuldade": "medio",
+          "tags": ["sartre", "existencialismo", "essência"]
+        },
+        {
+          "id": "q99-2",
+          "enunciado": "Sartre afirma que 'estamos condenados a ser livres'. Essa expressão paradoxal indica que:",
+          "alternativas": {
+            "A": "A liberdade é opcional e podemos escolher não ser livres",
+            "B": "A liberdade é uma carga inevitável, pois não podemos não escolher",
+            "C": "A sociedade deve nos libertar das obrigações e responsabilidades",
+            "D": "A liberdade só existe após a morte, não durante a vida",
+            "E": "Somos livres apenas quando obedecemos às leis da natureza"
+          },
+          "correta": "B",
+          "explicacao": "Para Sartre, a liberdade não é benção, mas fardo. Não escolhemos ser livres - somos 'condenados' à liberdade. Não podemos não escolher: mesmo não fazer nada é uma escolha. Não podemos transferir a responsabilidade a Deus, destino, natureza ou circunstâncias. Daí a angústia: diante da liberdade total e da ausência de fundamento para as escolhas. A má-fé é tentar fugir dessa liberdade.",
+          "dificuldade": "medio",
+          "tags": ["sartre", "liberdade", "angústia"]
+        },
+        {
+          "id": "q99-3",
+          "enunciado": "O conceito de 'má-fé' (mauvaise foi) em Sartre refere-se a:",
+          "alternativas": {
+            "A": "Mentir deliberadamente para outras pessoas por interesse",
+            "B": "Negar a própria liberdade, fingindo ser determinado por forças externas",
+            "C": "Ter crenças religiosas consideradas falsas pelo filósofo",
+            "D": "Agir de forma imoral segundo os padrões sociais convencionais",
+            "E": "Não cumprir promessas feitas a outras pessoas"
+          },
+          "correta": "B",
+          "explicacao": "A má-fé é a fuga da liberdade e da angústia. É mentir para si mesmo, fingindo não ser livre. Exemplos: 'Não tive escolha', 'É minha natureza', 'Fui criado assim', 'O destino quis'. O garçom que age como se fosse apenas garçom, sem liberdade além do papel social, está em má-fé. A má-fé é diferente da mentira comum: não engano apenas os outros, mas também a mim mesmo.",
+          "dificuldade": "medio",
+          "tags": ["sartre", "má-fé", "liberdade"]
+        },
+        {
+          "id": "q99-4",
+          "enunciado": "Para Heidegger, o ser humano (Dasein) pode existir de forma 'autêntica' ou 'inautêntica'. A existência inautêntica caracteriza-se por:",
+          "alternativas": {
+            "A": "Assumir a própria finitude e decidir por si mesmo",
+            "B": "Perder-se no 'impessoal' (das Man), fazendo e pensando o que 'a gente' faz e pensa",
+            "C": "Viver de acordo com princípios morais elevados",
+            "D": "Buscar conhecimento filosófico e científico",
+            "E": "Rejeitar toda forma de vida em sociedade"
+          },
+          "correta": "B",
+          "explicacao": "A existência inautêntica é a perda de si no 'impessoal' (das Man - o 'a gente'): fazemos o que 'se' faz, pensamos o que 'se' pensa, divertimo-nos como 'se' diverte. Evitamos a angústia da finitude e das decisões próprias. A existência autêntica implica assumir a própria morte (ser-para-a-morte), o que revela a singularidade irrepetível de cada existência e abre para decisões próprias.",
+          "dificuldade": "dificil",
+          "tags": ["heidegger", "autenticidade", "dasein"]
+        },
+        {
+          "id": "q99-5",
+          "enunciado": "A fenomenologia de Husserl propõe a 'redução fenomenológica' (epoché). Essa operação consiste em:",
+          "alternativas": {
+            "A": "Reduzir todos os fenômenos a átomos materiais",
+            "B": "Suspender a crença na existência do mundo para descrever como os fenômenos aparecem à consciência",
+            "C": "Eliminar toda experiência subjetiva em favor da objetividade científica",
+            "D": "Explicar a consciência através de causas físicas e químicas",
+            "E": "Aceitar o senso comum como fonte última de verdade"
+          },
+          "correta": "B",
+          "explicacao": "A epoché (suspensão) põe 'entre parênteses' a 'atitude natural' - a crença espontânea na existência do mundo. Não se nega o mundo, mas se suspende a questão de sua existência para focar em como ele aparece à consciência. Isso permite descrever as estruturas essenciais da experiência (fenômenos), independentemente de teorias prévias. O lema é 'às coisas mesmas' - descrever o que se mostra, como se mostra.",
+          "dificuldade": "dificil",
+          "tags": ["husserl", "fenomenologia", "epoché"]
+        }
+      ]
+    },
+    {
+      "id": "m100",
+      "titulo": "Filosofia no ENEM: Temas Transversais",
+      "resumo": "Direitos humanos, cidadania, tecnologia, ética aplicada e questões contemporâneas",
+      "topicos": [
+        {
+          "titulo": "Direitos Humanos e Cidadania",
+          "conteudo": "Os direitos humanos são conquistas históricas que estabelecem a dignidade como valor universal. A Declaração Universal dos Direitos Humanos (1948) proclama direitos civis, políticos, econômicos, sociais e culturais. O conceito de cidadania evoluiu: da cidadania antiga (participação política de poucos) à cidadania moderna (direitos civis, políticos, sociais - T. H. Marshall). A luta por direitos envolve movimentos sociais, resistência e conquistas. No Brasil, a Constituição de 1988 é a 'Constituição Cidadã'. Debates atuais: direitos de minorias (LGBTQIA+, povos indígenas, afrodescendentes), direito à diversidade, tensões entre universalismo e particularismo cultural."
+        },
+        {
+          "titulo": "Ética, Tecnologia e Bioética",
+          "conteudo": "A tecnologia transforma a vida humana, gerando questões éticas inéditas. Hans Jonas propôs uma 'ética da responsabilidade' para a era tecnológica: devemos considerar os efeitos de longo prazo sobre as gerações futuras. A bioética trata de dilemas em saúde e ciências da vida: eutanásia, aborto, clonagem, células-tronco, manipulação genética. Princípios bioéticos: autonomia (respeito às decisões do paciente), beneficência, não-maleficência, justiça. A ética ambiental questiona o antropocentrismo: a natureza tem valor intrínseco? A inteligência artificial levanta questões sobre privacidade, viés algorítmico, futuro do trabalho."
+        },
+        {
+          "titulo": "Democracia, Mídia e Opinião Pública",
+          "conteudo": "A democracia contemporânea enfrenta desafios: crise de representação, populismo, desinformação. Habermas desenvolveu o conceito de 'esfera pública': espaço de debate racional entre cidadãos, essencial para a democracia. A mídia tradicional e as redes sociais moldam a opinião pública. Fake news, bolhas informacionais e polarização ameaçam o debate democrático. A pós-verdade (palavra do ano Oxford 2016) refere-se a contextos em que fatos objetivos são menos influentes que apelos emocionais. O pensamento crítico, a verificação de fontes e a educação midiática são respostas filosóficas e educacionais a esses desafios."
+        }
+      ],
+      "exemplos": [
+        "A Declaração Universal de 1948 e os direitos humanos hoje",
+        "Dilemas bioéticos em casos concretos (eutanásia, transplantes)",
+        "Fake news e pós-verdade nas eleições e debates públicos"
+      ],
+      "dicas": [
+        "ENEM relaciona filosofia a temas contemporâneos",
+        "Direitos humanos e cidadania são temas frequentes",
+        "Questões sobre tecnologia e ética estão em alta"
+      ],
+      "questoes": [
+        {
+          "id": "q100-1",
+          "enunciado": "A Declaração Universal dos Direitos Humanos (1948), adotada pela ONU após a Segunda Guerra Mundial, representa um marco porque:",
+          "alternativas": {
+            "A": "Estabelece direitos apenas para cidadãos de países desenvolvidos",
+            "B": "Proclama direitos universais inerentes a todos os seres humanos, independentemente de nacionalidade",
+            "C": "Substitui as constituições nacionais como lei suprema em todos os países",
+            "D": "Defende apenas os direitos civis e políticos, ignorando direitos sociais",
+            "E": "Foi imposta pelas potências coloniais para manter seu domínio"
+          },
+          "correta": "B",
+          "explicacao": "A Declaração de 1948 proclama que todos os seres humanos nascem livres e iguais em dignidade e direitos. É universal: aplica-se a todos, independentemente de raça, sexo, religião, nacionalidade. Inclui direitos civis e políticos (liberdade, igualdade perante a lei) e econômicos, sociais e culturais (trabalho, educação, saúde). Foi resposta aos horrores da Segunda Guerra e do Holocausto, estabelecendo padrões internacionais de direitos humanos.",
+          "dificuldade": "facil",
+          "tags": ["direitos humanos", "DUDH", "cidadania"]
+        },
+        {
+          "id": "q100-2",
+          "enunciado": "A bioética é o campo que reflete sobre dilemas morais nas ciências da vida e na saúde. Um de seus princípios fundamentais é a 'autonomia', que significa:",
+          "alternativas": {
+            "A": "O direito do médico de decidir o melhor tratamento sem consultar o paciente",
+            "B": "A obrigação de fazer o bem e evitar o mal ao paciente",
+            "C": "O respeito à capacidade do paciente de tomar decisões informadas sobre sua saúde",
+            "D": "A distribuição justa dos recursos de saúde entre a população",
+            "E": "A proibição de qualquer intervenção médica sem garantia de sucesso"
+          },
+          "correta": "C",
+          "explicacao": "O princípio da autonomia estabelece que pessoas competentes têm direito de tomar decisões sobre sua própria vida e saúde, sendo respeitadas suas escolhas. Isso exige consentimento informado: o paciente deve receber informações adequadas para decidir. Outros princípios bioéticos são: beneficência (fazer o bem), não-maleficência (não causar dano) e justiça (distribuição equitativa).",
+          "dificuldade": "medio",
+          "tags": ["bioética", "autonomia", "saúde"]
+        },
+        {
+          "id": "q100-3",
+          "enunciado": "O termo 'pós-verdade', escolhido palavra do ano pelo Dicionário Oxford em 2016, refere-se a contextos em que:",
+          "alternativas": {
+            "A": "A verdade objetiva foi finalmente alcançada pela ciência",
+            "B": "Fatos objetivos têm menos influência na opinião pública do que apelos emocionais e crenças pessoais",
+            "C": "As mentiras foram completamente eliminadas do debate público",
+            "D": "A filosofia descobriu verdades absolutas e universais",
+            "E": "A tecnologia permite verificar todas as informações instantaneamente"
+          },
+          "correta": "B",
+          "explicacao": "Na era da pós-verdade, fatos objetivos e verificáveis têm menos poder de convencer do que apelos emocionais, preconceitos e crenças prévias. As pessoas tendem a acreditar no que confirma suas opiniões (viés de confirmação), independentemente das evidências. Fake news, bolhas informacionais nas redes sociais e a desconfiança nas instituições (imprensa, ciência) contribuem para esse fenômeno. É um desafio para a democracia e o pensamento crítico.",
+          "dificuldade": "medio",
+          "tags": ["pós-verdade", "fake news", "epistemologia"]
+        },
+        {
+          "id": "q100-4",
+          "enunciado": "O filósofo Hans Jonas propôs uma 'ética da responsabilidade' adequada à era tecnológica. Segundo Jonas, devemos:",
+          "alternativas": {
+            "A": "Usar a tecnologia sem preocupação com consequências, pois o progresso é sempre benéfico",
+            "B": "Rejeitar toda tecnologia e retornar a modos de vida pré-industriais",
+            "C": "Considerar os efeitos de nossas ações sobre as gerações futuras e a natureza",
+            "D": "Delegar todas as decisões éticas aos especialistas em tecnologia",
+            "E": "Ignorar a natureza, pois ela existe apenas para servir aos humanos"
+          },
+          "correta": "C",
+          "explicacao": "Hans Jonas argumentou que a ética tradicional era insuficiente para a era tecnológica, que nos dá poder de afetar a natureza e as gerações futuras de formas sem precedentes. O 'princípio responsabilidade' afirma: 'Aja de modo que os efeitos de tua ação sejam compatíveis com a permanência de autêntica vida humana sobre a Terra'. Devemos considerar consequências de longo prazo e adotar o princípio da precaução diante de riscos.",
+          "dificuldade": "medio",
+          "tags": ["hans jonas", "responsabilidade", "tecnologia"]
+        },
+        {
+          "id": "q100-5",
+          "enunciado": "O conceito de 'esfera pública', desenvolvido por Jürgen Habermas, é importante para compreender a democracia. A esfera pública refere-se a:",
+          "alternativas": {
+            "A": "Os órgãos do Estado responsáveis pela administração pública",
+            "B": "O espaço de debate racional entre cidadãos sobre assuntos de interesse comum",
+            "C": "As repartições públicas onde os funcionários trabalham",
+            "D": "O setor econômico controlado pelo governo",
+            "E": "As forças policiais que garantem a ordem pública"
+          },
+          "correta": "B",
+          "explicacao": "Para Habermas, a esfera pública é o espaço (não físico necessariamente) onde cidadãos privados se reúnem para debater racionalmente assuntos de interesse comum, formando opinião pública que influencia o poder político. Historicamente, surgiu com a burguesia (cafés, salões, imprensa). A mídia de massa e as redes sociais transformam a esfera pública. A democracia deliberativa depende de uma esfera pública saudável, ameaçada por manipulação e desinformação.",
+          "dificuldade": "medio",
+          "tags": ["habermas", "esfera pública", "democracia"]
+        }
+      ]
+    }
+  ]
+}

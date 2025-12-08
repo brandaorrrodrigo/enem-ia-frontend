@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface Meta {
   id: string;
@@ -187,6 +188,7 @@ export default function OrganizacaoPage() {
         justifyContent: 'center',
         padding: '2rem'
       }}>
+      <FloatingBackButton />
         <div style={{ textAlign: 'center' }}>
           <div style={{
             width: '48px',
@@ -672,6 +674,7 @@ export default function OrganizacaoPage() {
                         justifyContent: 'space-between'
                       }}
                     >
+      <FloatingBackButton />
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                         <button
                           onClick={() => toggleHabitoHoje(habito.id)}

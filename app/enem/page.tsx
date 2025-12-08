@@ -2,6 +2,9 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import ConvitesCard from '@/components/ConvitesCard';
+import SeasonPassCard from '@/components/SeasonPassCard';
+import { Season, PlayerSeasonProgress, SeasonChallenge, SeasonReward } from '@/lib/season/types';
 
 export default function ENEMHomePage() {
   const [streak, setStreak] = useState(7);
@@ -11,6 +14,14 @@ export default function ENEMHomePage() {
   const [rankingDrop, setRankingDrop] = useState<number | null>(null);
   const [metaTempo, setMetaTempo] = useState(120);
   const [progressoMeta, setProgressoMeta] = useState(45);
+  const [planoUsuario, setPlanoUsuario] = useState<'lite' | 'pro' | 'premium'>('pro');
+
+  // Season Pass state
+  const [season, setSeason] = useState<Season | null>(null);
+  const [seasonProgress, setSeasonProgress] = useState<PlayerSeasonProgress | null>(null);
+  const [seasonDesafios, setSeasonDesafios] = useState<SeasonChallenge[]>([]);
+  const [seasonRecompensas, setSeasonRecompensas] = useState<SeasonReward[]>([]);
+  const [seasonTempoRestante, setSeasonTempoRestante] = useState(0);
 
   // Fechar popup de ranking
   const fecharNotificacao = () => {
@@ -23,8 +34,10 @@ export default function ENEMHomePage() {
     // Carregar dados do localStorage
     const fpTotal = parseInt(localStorage.getItem('fp_total') || '2450');
     const streakDias = parseInt(localStorage.getItem('streak_dias') || '7');
+    const planoSalvo = localStorage.getItem('plano_usuario') as 'lite' | 'pro' | 'premium' | null;
     setFp(fpTotal);
     setStreak(streakDias);
+    if (planoSalvo) setPlanoUsuario(planoSalvo);
 
     // Verificar se houve queda no ranking (logica contextual)
     const ultimaPosicao = parseInt(localStorage.getItem('ultima_posicao_ranking') || '0');
@@ -51,7 +64,49 @@ export default function ENEMHomePage() {
 
     // Salvar posicao atual como ultima posicao para proxima verificacao
     localStorage.setItem('ultima_posicao_ranking', String(posicaoAtual));
+
+    // Carregar dados do Season Pass
+    loadSeasonData();
   }, []);
+
+  const loadSeasonData = async () => {
+    try {
+      const playerId = 'player_demo_1';
+
+      // Carregar info da temporada
+      const infoRes = await fetch(`/api/season?action=info&playerId=${playerId}`);
+      const infoData = await infoRes.json();
+
+      if (infoData.success) {
+        setSeason(infoData.season);
+        setSeasonProgress(infoData.progresso);
+        setSeasonTempoRestante(infoData.tempoRestante);
+      }
+
+      // Carregar desafios ativos
+      const desafiosRes = await fetch(`/api/season?action=desafios&playerId=${playerId}`);
+      const desafiosData = await desafiosRes.json();
+
+      if (desafiosData.success) {
+        setSeasonDesafios(desafiosData.desafios);
+      }
+
+      // Carregar recompensas
+      const recompensasRes = await fetch(`/api/season?action=recompensas&playerId=${playerId}`);
+      const recompensasData = await recompensasRes.json();
+
+      if (recompensasData.success) {
+        // Pegar as proximas 4 recompensas disponiveis
+        const allRewards = [...recompensasData.free, ...recompensasData.premium];
+        const nextRewards = allRewards
+          .filter((r: SeasonReward) => r.status !== 'claimed')
+          .slice(0, 4);
+        setSeasonRecompensas(nextRewards);
+      }
+    } catch (error) {
+      console.error('Erro ao carregar Season Pass:', error);
+    }
+  };
 
   const setarMeta = (minutos: number) => {
     setMetaTempo(minutos);
@@ -188,6 +243,27 @@ export default function ENEMHomePage() {
           </div>
         </div>
       </div>
+
+      {/* Season Pass Card */}
+      {season && seasonProgress && (
+        <div className="card" style={{ padding: 0, overflow: 'hidden', background: 'transparent', border: 'none' }}>
+          <SeasonPassCard
+            season={season}
+            progress={seasonProgress}
+            desafiosAtivos={seasonDesafios}
+            proximasRecompensas={seasonRecompensas}
+            tempoRestante={seasonTempoRestante}
+            compact
+          />
+        </div>
+      )}
+
+      {/* Sistema de Convites para Desafios */}
+      <ConvitesCard
+        plano={planoUsuario}
+        userId="user_demo"
+        userName="Estudante ENEM"
+      />
 
       {/* Grupos de Estudo */}
       <div className="card">
@@ -328,6 +404,12 @@ export default function ENEMHomePage() {
             <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🛒</div>
             <h3>Loja</h3>
             <p style={{ fontSize: '0.85rem', opacity: 0.7 }}>Troque seus pontos</p>
+          </Link>
+
+          <Link href="/enem/temporada" className="chalkboard-card text-center" style={{ background: 'rgba(251, 191, 36, 0.15)', borderColor: 'var(--accent-yellow)' }}>
+            <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🎓</div>
+            <h3>Temporada</h3>
+            <p style={{ fontSize: '0.85rem', opacity: 0.7 }}>Season Pass</p>
           </Link>
         </div>
       </div>

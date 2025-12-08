@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import FloatingNav from '@/components/FloatingNav';
+import FloatingBackButton from '@/components/FloatingBackButton';
 
 interface TecnicaTempo {
   id: string;
@@ -185,6 +186,7 @@ export default function GestaoTempoPage() {
       padding: '2rem 1rem',
       minHeight: '100vh'
     }}>
+      <FloatingBackButton />
       <FloatingNav />
 
       {/* Container principal */}

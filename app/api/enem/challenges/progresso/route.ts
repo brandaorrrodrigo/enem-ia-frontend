@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
+import { PrismaClient } from '@prisma/client';
+
+type TransactionClient = Omit<PrismaClient, '$connect' | '$disconnect' | '$on' | '$transaction' | '$extends'>;
 
 /**
  * POST /api/enem/challenges/progresso
@@ -95,7 +98,7 @@ export async function POST(request: NextRequest) {
     // Atualizar progresso (e se completou, fazer transação para dar recompensa)
     let resultado;
     if (completou) {
-      resultado = await prisma.$transaction(async (tx) => {
+      resultado = await prisma.$transaction(async (tx: TransactionClient) => {
         // 1. Marcar desafio como concluído
         const progressoAtualizado = await tx.userWeeklyProgress.update({
           where: {

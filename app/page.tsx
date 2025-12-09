@@ -50,8 +50,8 @@ export default function HomePage() {
     <div className="container">
       {/* Header */}
       <div className="header">
-        <h1>ENEM Pro - Sistema Completo de Preparacao</h1>
-        <p>Tudo que voce precisa para conquistar sua aprovacao!</p>
+        <h1>ENEM Pro - Sistema Completo de Preparação</h1>
+        <p>Tudo que você precisa para conquistar sua aprovação!</p>
       </div>
 
       {/* Estatisticas */}
@@ -342,8 +342,8 @@ export default function HomePage() {
 
       {/* Footer */}
       <div className="footer">
-        <p><strong>Sistema Completo de Preparacao ENEM Pro</strong></p>
-        <p>Desenvolvido para voce alcancar seus objetivos</p>
+        <p><strong>Sistema Completo de Preparação ENEM Pro</strong></p>
+        <p>Desenvolvido para você alcançar seus objetivos</p>
         <p style={{ marginTop: '15px' }}>
           <Link href="/enem" className="btn btn-yellow">
             Acessar Painel Principal

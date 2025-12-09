@@ -9,27 +9,28 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "ENEM Pro - Sistema Completo de Preparacao",
-  description: "Plataforma de estudos gamificada para o ENEM com simulados inteligentes, explicacoes via IA e plano de estudos personalizado.",
-  keywords: ["ENEM", "simulado", "inteligencia artificial", "estudos", "vestibular", "questoes ENEM", "gamificacao"],
+  title: "ENEM Pro - Sistema Completo de Preparação",
+  description: "Plataforma de estudos gamificada para o ENEM com simulados inteligentes, explicações via IA e plano de estudos personalizado.",
+  keywords: ["ENEM", "simulado", "inteligência artificial", "estudos", "vestibular", "questões ENEM", "gamificação"],
   authors: [{ name: "ENEM Pro" }],
   creator: "ENEM Pro",
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    title: "ENEM Pro - Sistema Completo de Preparacao",
+    title: "ENEM Pro - Sistema Completo de Preparação",
     description: "Plataforma de estudos gamificada para o ENEM com simulados inteligentes e IA.",
     siteName: "ENEM Pro",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ENEM Pro - Sistema Completo de Preparacao",
+    title: "ENEM Pro - Sistema Completo de Preparação",
     description: "Plataforma de estudos gamificada para o ENEM com simulados inteligentes e IA.",
   },
   robots: {
     index: true,
     follow: true,
   },
+  metadataBase: new URL('https://enem-pro.com'),
 };
 
 export default function RootLayout({
@@ -39,6 +40,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <meta charSet="UTF-8" />
+      </head>
       <body className="antialiased">
         <AuthProvider>
           {/* Vinheta escura nas bordas */}

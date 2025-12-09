@@ -68,6 +68,24 @@ export default function MicroQuiz({ questions, materia, capitulo, onComplete }: 
     setShowExplanation(true);
   };
 
+  const calculateFP = (totalAcertos: number, totalQuestoes: number): number => {
+    if (totalQuestoes === 3) {
+      // Sistema para 3 questões
+      if (totalAcertos === 3) return 10;
+      if (totalAcertos === 2) return 5;
+      if (totalAcertos === 1) return 1;
+      return 0;
+    }
+    // Sistema para 2 questões
+    if (totalQuestoes === 2) {
+      if (totalAcertos === 2) return 6;
+      if (totalAcertos === 1) return 2;
+      return 0;
+    }
+    // Fallback para outras quantidades
+    return Math.floor((totalAcertos / totalQuestoes) * 10);
+  };
+
   const handleNext = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
@@ -77,6 +95,11 @@ export default function MicroQuiz({ questions, materia, capitulo, onComplete }: 
       setQuizCompleted(true);
       const quizKey = `microquiz_${materia}_${capitulo}`;
       localStorage.setItem(quizKey, 'true');
+
+      // Calcular e salvar FP
+      const fp = calculateFP(acertos, questions.length);
+      // Aqui você pode adicionar a lógica para atualizar o FP do usuário no backend
+
       if (onComplete) {
         onComplete(acertos);
       }
@@ -409,11 +432,57 @@ export default function MicroQuiz({ questions, materia, capitulo, onComplete }: 
                     fontFamily: "'Poppins', sans-serif",
                     fontSize: '18px',
                     color: 'rgba(255, 255, 255, 0.8)',
-                    marginBottom: '24px',
+                    marginBottom: '16px',
                   }}
                 >
                   Você acertou {acertos} de {questions.length} questões
                 </p>
+
+                {/* Badge de FP Ganho */}
+                {calculateFP(acertos, questions.length) > 0 && (
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: 0.2, type: 'spring', stiffness: 200, damping: 10 }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      padding: '12px 24px',
+                      background: 'linear-gradient(135deg, rgba(250, 204, 21, 0.2) 0%, rgba(251, 191, 36, 0.3) 100%)',
+                      border: '2px solid rgba(250, 204, 21, 0.5)',
+                      borderRadius: '24px',
+                      marginBottom: '24px',
+                      boxShadow: '0 0 20px rgba(250, 204, 21, 0.3)',
+                    }}
+                  >
+                    <span style={{ fontSize: '24px' }}>⚡</span>
+                    <span
+                      style={{
+                        fontFamily: "'Patrick Hand', cursive",
+                        fontSize: '24px',
+                        color: '#facc15',
+                        fontWeight: 'bold',
+                        textShadow: '0 0 10px rgba(250, 204, 21, 0.5)',
+                      }}
+                    >
+                      +{calculateFP(acertos, questions.length)} FP
+                    </span>
+                  </motion.div>
+                )}
+
+                {calculateFP(acertos, questions.length) === 0 && (
+                  <p
+                    style={{
+                      fontFamily: "'Poppins', sans-serif",
+                      fontSize: '14px',
+                      color: 'rgba(255, 255, 255, 0.6)',
+                      marginBottom: '24px',
+                    }}
+                  >
+                    Continue estudando para ganhar FP! 💪
+                  </p>
+                )}
 
                 {acertos < questions.length && (
                   <p

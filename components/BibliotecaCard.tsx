@@ -9,7 +9,6 @@ interface BibliotecaCardProps {
   slug: string;
   materia: string;
   descricao: string;
-  fpPotencial: number;
   icon?: string;
 }
 
@@ -18,7 +17,6 @@ export default function BibliotecaCard({
   slug,
   materia,
   descricao,
-  fpPotencial,
   icon = '📚'
 }: BibliotecaCardProps) {
   const router = useRouter();
@@ -138,7 +136,7 @@ export default function BibliotecaCard({
         </div>
       </div>
 
-      {/* FP Potencial */}
+      {/* Mensagem informativa */}
       <div
         style={{
           display: 'flex',
@@ -146,22 +144,20 @@ export default function BibliotecaCard({
           gap: '8px',
           marginBottom: '16px',
           padding: '8px 12px',
-          background: 'rgba(250, 204, 21, 0.15)',
-          border: '2px solid rgba(250, 204, 21, 0.4)',
+          background: 'rgba(59, 130, 246, 0.15)',
+          border: '2px solid rgba(59, 130, 246, 0.4)',
           borderRadius: '8px',
         }}
       >
-        <span style={{ fontSize: '20px' }}>⚡</span>
+        <span style={{ fontSize: '20px' }}>🎓</span>
         <span
           style={{
             fontFamily: "'Patrick Hand', cursive",
-            fontSize: '16px',
-            color: '#facc15',
-            fontWeight: 'bold',
-            textShadow: '0 0 10px rgba(250, 204, 21, 0.5)',
+            fontSize: '14px',
+            color: 'rgba(255, 255, 255, 0.9)',
           }}
         >
-          +{fpPotencial} FP ao completar
+          Este módulo contribui para seu domínio da disciplina
         </span>
       </div>
 

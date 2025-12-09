@@ -170,29 +170,25 @@ export default function FuncoesPage() {
           </p>
         </div>
 
-        {/* Badge de FP */}
+        {/* IMPORTANTE: SEM BADGE DE FP NA BIBLIOTECA */}
         <div
           style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '8px',
-            padding: '12px 24px',
-            background: 'rgba(250, 204, 21, 0.15)',
-            border: '2px solid rgba(250, 204, 21, 0.4)',
-            borderRadius: '24px',
+            padding: '16px',
+            background: 'rgba(59, 130, 246, 0.1)',
+            border: '2px solid rgba(59, 130, 246, 0.3)',
+            borderRadius: '12px',
             marginBottom: '32px',
+            textAlign: 'center',
           }}
         >
-          <span style={{ fontSize: '24px' }}>⚡</span>
           <span
             style={{
-              fontFamily: "'Patrick Hand', cursive",
-              fontSize: '18px',
-              color: '#facc15',
-              fontWeight: 'bold',
+              fontFamily: "'Poppins', sans-serif",
+              fontSize: '14px',
+              color: 'rgba(255, 255, 255, 0.9)',
             }}
           >
-            +50 FP ao completar este capítulo
+            💡 Este módulo contribui para seu domínio da disciplina.
           </span>
         </div>
 

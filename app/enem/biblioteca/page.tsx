@@ -3,329 +3,15 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import BibliotecaCard from '@/components/BibliotecaCard';
+import { MATERIAS } from '@/data/biblioteca';
 
 type Secao = 'cadernos' | 'resumos' | 'formulas';
-
-interface Capitulo {
-  title: string;
-  slug: string;
-  descricao: string;
-  fpPotencial: number;
-  icon: string;
-}
-
-const materias = [
-  { id: 'matematica', nome: 'Matemática', icon: '🔢', color: '#3b82f6' },
-  { id: 'portugues', nome: 'Português', icon: '📖', color: '#8b5cf6' },
-  { id: 'fisica', nome: 'Física', icon: '⚛️', color: '#10b981' },
-  { id: 'quimica', nome: 'Química', icon: '🧪', color: '#f59e0b' },
-  { id: 'biologia', nome: 'Biologia', icon: '🧬', color: '#22c55e' },
-  { id: 'historia', nome: 'História', icon: '🏛️', color: '#ef4444' },
-  { id: 'geografia', nome: 'Geografia', icon: '🌍', color: '#06b6d4' },
-  { id: 'filosofia', nome: 'Filosofia', icon: '🤔', color: '#a855f7' },
-  { id: 'sociologia', nome: 'Sociologia', icon: '👥', color: '#ec4899' },
-  { id: 'redacao', nome: 'Redação', icon: '✍️', color: '#f97316' },
-];
-
-const capitulosPorMateria: Record<string, Capitulo[]> = {
-  matematica: [
-    {
-      title: 'Funções',
-      slug: 'funcoes',
-      descricao: 'Tipos de funções, domínio, imagem e gráficos',
-      fpPotencial: 50,
-      icon: '📊',
-    },
-    {
-      title: 'Razão e Proporção',
-      slug: 'razao-proporcao',
-      descricao: 'Regra de três, porcentagem e aplicações',
-      fpPotencial: 40,
-      icon: '⚖️',
-    },
-    {
-      title: 'Geometria Espacial',
-      slug: 'geometria-espacial',
-      descricao: 'Volumes e áreas de sólidos geométricos',
-      fpPotencial: 60,
-      icon: '🎲',
-    },
-    {
-      title: 'Trigonometria',
-      slug: 'trigonometria',
-      descricao: 'Seno, cosseno, tangente e aplicações',
-      fpPotencial: 55,
-      icon: '📐',
-    },
-    {
-      title: 'Estatística',
-      slug: 'estatistica',
-      descricao: 'Média, mediana, moda e gráficos',
-      fpPotencial: 45,
-      icon: '📈',
-    },
-  ],
-  portugues: [
-    {
-      title: 'Interpretação de Texto',
-      slug: 'interpretacao-texto',
-      descricao: 'Técnicas de leitura e compreensão textual',
-      fpPotencial: 50,
-      icon: '🔍',
-    },
-    {
-      title: 'Gramática',
-      slug: 'gramatica',
-      descricao: 'Sintaxe, morfologia e concordância',
-      fpPotencial: 45,
-      icon: '📝',
-    },
-    {
-      title: 'Literatura Brasileira',
-      slug: 'literatura-brasileira',
-      descricao: 'Movimentos literários e obras importantes',
-      fpPotencial: 55,
-      icon: '📚',
-    },
-    {
-      title: 'Figuras de Linguagem',
-      slug: 'figuras-linguagem',
-      descricao: 'Metáfora, metonímia e outras figuras',
-      fpPotencial: 40,
-      icon: '🎭',
-    },
-  ],
-  fisica: [
-    {
-      title: 'Cinemática',
-      slug: 'cinematica',
-      descricao: 'Movimento uniforme e variado',
-      fpPotencial: 50,
-      icon: '🚗',
-    },
-    {
-      title: 'Dinâmica',
-      slug: 'dinamica',
-      descricao: 'Leis de Newton e aplicações',
-      fpPotencial: 55,
-      icon: '⚡',
-    },
-    {
-      title: 'Eletricidade',
-      slug: 'eletricidade',
-      descricao: 'Circuitos elétricos e corrente',
-      fpPotencial: 60,
-      icon: '💡',
-    },
-    {
-      title: 'Óptica',
-      slug: 'optica',
-      descricao: 'Reflexão, refração e lentes',
-      fpPotencial: 45,
-      icon: '🔦',
-    },
-  ],
-  quimica: [
-    {
-      title: 'Química Orgânica',
-      slug: 'quimica-organica',
-      descricao: 'Funções orgânicas e nomenclatura',
-      fpPotencial: 60,
-      icon: '🧪',
-    },
-    {
-      title: 'Estequiometria',
-      slug: 'estequiometria',
-      descricao: 'Cálculos químicos e mol',
-      fpPotencial: 55,
-      icon: '⚗️',
-    },
-    {
-      title: 'Termoquímica',
-      slug: 'termoquimica',
-      descricao: 'Entalpia e reações exotérmicas',
-      fpPotencial: 50,
-      icon: '🔥',
-    },
-    {
-      title: 'Eletroquímica',
-      slug: 'eletroquimica',
-      descricao: 'Pilhas e eletrólise',
-      fpPotencial: 55,
-      icon: '🔋',
-    },
-  ],
-  biologia: [
-    {
-      title: 'Citologia',
-      slug: 'citologia',
-      descricao: 'Estrutura e função celular',
-      fpPotencial: 50,
-      icon: '🔬',
-    },
-    {
-      title: 'Genética',
-      slug: 'genetica',
-      descricao: 'Leis de Mendel e hereditariedade',
-      fpPotencial: 60,
-      icon: '🧬',
-    },
-    {
-      title: 'Ecologia',
-      slug: 'ecologia',
-      descricao: 'Ecossistemas e relações ecológicas',
-      fpPotencial: 55,
-      icon: '🌿',
-    },
-    {
-      title: 'Evolução',
-      slug: 'evolucao',
-      descricao: 'Teorias evolutivas e seleção natural',
-      fpPotencial: 50,
-      icon: '🦎',
-    },
-  ],
-  historia: [
-    {
-      title: 'Brasil Colônia',
-      slug: 'brasil-colonia',
-      descricao: 'Descobrimento e colonização',
-      fpPotencial: 50,
-      icon: '⛵',
-    },
-    {
-      title: 'Revolução Industrial',
-      slug: 'revolucao-industrial',
-      descricao: 'Transformações econômicas e sociais',
-      fpPotencial: 55,
-      icon: '🏭',
-    },
-    {
-      title: 'Guerras Mundiais',
-      slug: 'guerras-mundiais',
-      descricao: 'Primeira e Segunda Guerra Mundial',
-      fpPotencial: 60,
-      icon: '⚔️',
-    },
-    {
-      title: 'Ditadura Militar',
-      slug: 'ditadura-militar',
-      descricao: 'Brasil no período militar',
-      fpPotencial: 55,
-      icon: '🪖',
-    },
-  ],
-  geografia: [
-    {
-      title: 'Geologia',
-      slug: 'geologia',
-      descricao: 'Estrutura da Terra e relevo',
-      fpPotencial: 50,
-      icon: '🏔️',
-    },
-    {
-      title: 'Climatologia',
-      slug: 'climatologia',
-      descricao: 'Climas e fenômenos atmosféricos',
-      fpPotencial: 55,
-      icon: '🌤️',
-    },
-    {
-      title: 'Geografia Urbana',
-      slug: 'geografia-urbana',
-      descricao: 'Urbanização e problemas urbanos',
-      fpPotencial: 50,
-      icon: '🏙️',
-    },
-    {
-      title: 'Geopolítica',
-      slug: 'geopolitica',
-      descricao: 'Conflitos e relações internacionais',
-      fpPotencial: 60,
-      icon: '🗺️',
-    },
-  ],
-  filosofia: [
-    {
-      title: 'Filosofia Antiga',
-      slug: 'filosofia-antiga',
-      descricao: 'Sócrates, Platão e Aristóteles',
-      fpPotencial: 50,
-      icon: '🏛️',
-    },
-    {
-      title: 'Ética e Moral',
-      slug: 'etica-moral',
-      descricao: 'Teorias éticas e valores',
-      fpPotencial: 45,
-      icon: '⚖️',
-    },
-    {
-      title: 'Filosofia Moderna',
-      slug: 'filosofia-moderna',
-      descricao: 'Descartes, Kant e Iluminismo',
-      fpPotencial: 55,
-      icon: '💡',
-    },
-  ],
-  sociologia: [
-    {
-      title: 'Estratificação Social',
-      slug: 'estratificacao-social',
-      descricao: 'Classes sociais e desigualdade',
-      fpPotencial: 50,
-      icon: '📊',
-    },
-    {
-      title: 'Movimentos Sociais',
-      slug: 'movimentos-sociais',
-      descricao: 'Manifestações e transformações sociais',
-      fpPotencial: 55,
-      icon: '✊',
-    },
-    {
-      title: 'Cultura e Sociedade',
-      slug: 'cultura-sociedade',
-      descricao: 'Identidade cultural e diversidade',
-      fpPotencial: 50,
-      icon: '🎭',
-    },
-  ],
-  redacao: [
-    {
-      title: 'Estrutura da Redação',
-      slug: 'estrutura-redacao',
-      descricao: 'Introdução, desenvolvimento e conclusão',
-      fpPotencial: 60,
-      icon: '📄',
-    },
-    {
-      title: 'Argumentação',
-      slug: 'argumentacao',
-      descricao: 'Tipos de argumentos e persuasão',
-      fpPotencial: 65,
-      icon: '💬',
-    },
-    {
-      title: 'Proposta de Intervenção',
-      slug: 'proposta-intervencao',
-      descricao: 'Como criar soluções eficazes',
-      fpPotencial: 70,
-      icon: '🎯',
-    },
-    {
-      title: 'Repertório Sociocultural',
-      slug: 'repertorio-sociocultural',
-      descricao: 'Como usar referências na redação',
-      fpPotencial: 55,
-      icon: '📚',
-    },
-  ],
-};
 
 export default function BibliotecaPage() {
   const [secaoAtiva, setSecaoAtiva] = useState<Secao>('cadernos');
   const [materiaAtiva, setMateriaAtiva] = useState('matematica');
+
+  const materiaAtualData = MATERIAS.find((m) => m.id === materiaAtiva);
 
   return (
     <div
@@ -445,7 +131,7 @@ export default function BibliotecaPage() {
             border: '2px solid rgba(139, 90, 43, 0.3)',
           }}
         >
-          {materias.map((materia) => (
+          {MATERIAS.map((materia) => (
             <button
               key={materia.id}
               onClick={() => setMateriaAtiva(materia.id)}
@@ -491,28 +177,26 @@ export default function BibliotecaPage() {
             gap: '24px',
           }}
         >
-          {capitulosPorMateria[materiaAtiva]?.map((capitulo, index) => (
+          {materiaAtualData?.modulos.map((modulo, index) => (
             <motion.div
-              key={capitulo.slug}
+              key={modulo.slug}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
               <BibliotecaCard
-                title={capitulo.title}
-                slug={capitulo.slug}
+                title={modulo.title}
+                slug={modulo.slug}
                 materia={materiaAtiva}
-                descricao={capitulo.descricao}
-                fpPotencial={capitulo.fpPotencial}
-                icon={capitulo.icon}
+                descricao={modulo.descricao}
+                icon={modulo.icon}
               />
             </motion.div>
           ))}
         </motion.div>
 
         {/* Mensagem se não houver capítulos */}
-        {(!capitulosPorMateria[materiaAtiva] ||
-          capitulosPorMateria[materiaAtiva].length === 0) && (
+        {(!materiaAtualData || materiaAtualData.modulos.length === 0) && (
           <div
             style={{
               textAlign: 'center',

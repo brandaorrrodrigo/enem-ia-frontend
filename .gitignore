@@ -55,6 +55,11 @@ enem-pro-chalkboard-kit.zip
 .next/
 dist/
 out/
-prisma/
+
+# Prisma (ignorar apenas banco local e arquivos gerados)
+prisma/dev.db
+prisma/dev.db-journal
+prisma/*.db
+prisma/*.db-journal
 
 .vercel

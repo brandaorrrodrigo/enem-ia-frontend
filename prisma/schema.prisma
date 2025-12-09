@@ -1,0 +1,368 @@
+// ----------------------------------------------
+//  DataSource + Generator
+// ----------------------------------------------
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ----------------------------------------------
+//  MODELOS
+// ----------------------------------------------
+
+// Questões individuais do ENEM
+model Questao {
+  id           Int      @id @default(autoincrement())
+  enunciado    String
+  alternativas Json
+  correta      Int
+
+  simulados    SimuladoQuestao[]
+}
+
+// Simulado criado por disciplina
+model Simulado {
+  id          String            @id @default(cuid())
+  disciplina  String
+  createdAt   DateTime          @default(now())
+
+  questoes    SimuladoQuestao[]
+}
+
+// Tabela pivô ligando Simulado <-> Questao
+model SimuladoQuestao {
+  id          Int      @id @default(autoincrement())
+  simuladoId  String
+  questaoId   Int
+
+  simulado    Simulado @relation(fields: [simuladoId], references: [id])
+  questao     Questao  @relation(fields: [questaoId], references: [id])
+}
+
+// Usuário do sistema
+model Usuario {
+  id        String   @id @default(cuid())
+  nome      String?
+  email     String   @unique
+  senha     String
+  avatarUrl String?  // URL da foto de perfil do aluno
+  createdAt DateTime @default(now())
+
+  // Gamificação
+  pontosFP  Int      @default(0)
+  nivel     String   @default("Bronze")
+
+  // Streaks - Sequência de dias estudando
+  streakAtual       Int      @default(0)
+  streakMaximo      Int      @default(0)
+  ultimoEstudo      DateTime?
+
+  // Curso alvo do usuário
+  cursoAlvoId String?
+  cursoAlvo   Course? @relation(fields: [cursoAlvoId], references: [id])
+
+  // Relações
+  simulados         UsuarioSimulado[]
+  respostas         UsuarioResposta[]
+  recompensas       UserReward[]
+  desafiosProgresso UserWeeklyProgress[]
+  eventos           GamificationEvent[]
+  badges            UserBadge[]
+  score             UserScore?
+
+  // Social
+  shareLogs         ShareLog[]
+  inviteCode        InviteCode?
+
+  // Pagamentos
+  subscription      Subscription?
+  payments          Payment[]
+}
+
+// Simulado realizado por usuário
+model UsuarioSimulado {
+  id          String    @id @default(cuid())
+  usuarioId   String
+  simuladoId  String
+  status      String    @default("em_andamento")
+  nota        Float?
+  acertos     Int?
+  total       Int?
+  createdAt   DateTime  @default(now())
+  finishedAt  DateTime?
+
+  usuario   Usuario   @relation(fields: [usuarioId], references: [id])
+  respostas UsuarioResposta[]
+}
+
+// Resposta individual do usuário a uma questão
+model UsuarioResposta {
+  id                Int       @id @default(autoincrement())
+  usuarioSimuladoId String
+  usuarioId         String
+  questaoId         Int
+  alternativaMarcada Int?
+  createdAt         DateTime  @default(now())
+
+  usuarioSimulado UsuarioSimulado @relation(fields: [usuarioSimuladoId], references: [id])
+  usuario         Usuario @relation(fields: [usuarioId], references: [id])
+}
+
+// Cursos com notas de corte (SISU/ProUni)
+model Course {
+  id             String   @id @default(cuid())
+  nome           String
+  ies            String
+  campus         String?
+  turno          String?
+  anoReferencia  Int      @default(2024)
+  notaCorte      Float
+  modalidade     String   @default("ampla_concorrencia")
+  ativo          Boolean  @default(true)
+  createdAt      DateTime @default(now())
+
+  usuarios       Usuario[]
+
+  @@index([nome, ies])
+}
+
+// ----------------------------------------------
+//  GAMIFICAÇÃO - RECOMPENSAS E DESAFIOS
+// ----------------------------------------------
+
+// Recompensas disponíveis na loja
+model Reward {
+  id          String   @id @default(cuid())
+  nome        String
+  descricao   String
+  custoFP     Int
+  icone       String?
+  categoria   String   @default("item")
+  ativo       Boolean  @default(true)
+  unico       Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  resgates    UserReward[]
+}
+
+// Recompensas resgatadas pelos usuários
+model UserReward {
+  id          String   @id @default(cuid())
+  usuarioId   String
+  rewardId    String
+  dataResgate DateTime @default(now())
+
+  usuario     Usuario  @relation(fields: [usuarioId], references: [id])
+  reward      Reward   @relation(fields: [rewardId], references: [id])
+}
+
+// Desafios semanais
+model WeeklyChallenge {
+  id              String   @id @default(cuid())
+  titulo          String
+  descricao       String
+  metaSimulados   Int
+  metaFP          Int
+  recompensaFP    Int
+  semanaRef       String
+  ativo           Boolean  @default(true)
+  createdAt       DateTime @default(now())
+
+  progressos      UserWeeklyProgress[]
+}
+
+// Progresso dos usuários nos desafios semanais
+model UserWeeklyProgress {
+  id              String   @id @default(cuid())
+  usuarioId       String
+  challengeId     String
+  simuladosFeitos Int      @default(0)
+  fpGanhos        Int      @default(0)
+  concluido       Boolean  @default(false)
+  dataInicio      DateTime @default(now())
+  dataConclusao   DateTime?
+
+  usuario         Usuario          @relation(fields: [usuarioId], references: [id])
+  challenge       WeeklyChallenge  @relation(fields: [challengeId], references: [id])
+
+  @@unique([usuarioId, challengeId])
+}
+
+// ----------------------------------------------
+//  GAMIFICAÇÃO - EVENTOS, BADGES E SCORE
+// ----------------------------------------------
+
+// Eventos de gamificação (cada ação que ganha pontos)
+model GamificationEvent {
+  id          String   @id @default(cuid())
+  usuarioId   String
+  eventType   String
+  points      Int
+  metadata    Json?
+  createdAt   DateTime @default(now())
+
+  usuario     Usuario  @relation(fields: [usuarioId], references: [id])
+
+  @@index([usuarioId, eventType])
+  @@index([createdAt])
+}
+
+// Badges/Conquistas disponíveis
+model Badge {
+  id          String   @id @default(cuid())
+  codigo      String   @unique
+  nome        String
+  descricao   String
+  icone       String
+  categoria   String   @default("conquista")
+  pontos      Int      @default(0)
+  ordem       Int      @default(0)
+  ativo       Boolean  @default(true)
+  createdAt   DateTime @default(now())
+
+  usuarios    UserBadge[]
+}
+
+// Badges desbloqueados pelos usuários
+model UserBadge {
+  id          String   @id @default(cuid())
+  usuarioId   String
+  badgeId     String
+  unlockedAt  DateTime @default(now())
+
+  usuario     Usuario  @relation(fields: [usuarioId], references: [id])
+  badge       Badge    @relation(fields: [badgeId], references: [id])
+
+  @@unique([usuarioId, badgeId])
+}
+
+// Score agregado do usuário (para ranking e dashboard)
+model UserScore {
+  id              String   @id @default(cuid())
+  usuarioId       String   @unique
+  totalPoints     Int      @default(0)
+  level           Int      @default(1)
+  fp              Int      @default(0)
+  totalFpGanho    Int      @default(0)
+
+  // Estatísticas gerais
+  simuladosTotal  Int      @default(0)
+  simuladosSemana Int      @default(0)
+  mediaNotas      Float    @default(0)
+  melhorNota      Float    @default(0)
+
+  // Performance por área
+  acertosMatematica    Int @default(0)
+  totalMatematica      Int @default(0)
+  acertosLinguagens    Int @default(0)
+  totalLinguagens      Int @default(0)
+  acertosHumanas       Int @default(0)
+  totalHumanas         Int @default(0)
+  acertosNatureza      Int @default(0)
+  totalNatureza        Int @default(0)
+
+  updatedAt       DateTime @updatedAt
+
+  usuario         Usuario  @relation(fields: [usuarioId], references: [id])
+}
+
+// ----------------------------------------------
+//  SOCIAL - COMPARTILHAMENTO E CONVITES
+// ----------------------------------------------
+
+// Log de compartilhamentos sociais
+model ShareLog {
+  id           String   @id @default(cuid())
+  usuarioId    String
+  platform     String   // whatsapp, twitter, telegram, instagram, tiktok, download, copy
+  shareType    String   // battle_win, badge_unlock, simulado_complete, etc.
+  metadata     String?  // JSON com dados adicionais
+  bonusApplied Boolean  @default(false)
+  bonusAmount  Int      @default(0)
+  createdAt    DateTime @default(now())
+
+  usuario      Usuario  @relation(fields: [usuarioId], references: [id])
+
+  @@index([usuarioId, createdAt])
+  @@index([platform])
+}
+
+// Código de convite dos usuários
+model InviteCode {
+  id           String   @id @default(cuid())
+  usuarioId    String   @unique
+  codigo       String   @unique
+  usosTotal    Int      @default(0)
+  fpGanhoTotal Int      @default(0)
+  ativo        Boolean  @default(true)
+  createdAt    DateTime @default(now())
+
+  usuario      Usuario  @relation(fields: [usuarioId], references: [id])
+  usos         InviteUse[]
+}
+
+// Registro de uso de convites
+model InviteUse {
+  id              String   @id @default(cuid())
+  inviteCodeId    String
+  novoUsuarioId   String
+  fpConvidante    Int      @default(50)
+  fpConvidado     Int      @default(25)
+  createdAt       DateTime @default(now())
+
+  inviteCode      InviteCode @relation(fields: [inviteCodeId], references: [id])
+
+  @@unique([inviteCodeId, novoUsuarioId])
+}
+
+// ----------------------------------------------
+//  PAGAMENTOS - STRIPE SUBSCRIPTIONS
+// ----------------------------------------------
+
+// Assinatura do usuario
+model Subscription {
+  id                   String    @id @default(cuid())
+  usuarioId            String    @unique
+  stripeCustomerId     String    @unique
+  stripeSubscriptionId String?   @unique
+  stripePriceId        String?
+  
+  // Status da assinatura
+  status               String    @default("inactive") // active, canceled, past_due, trialing, inactive
+  plano                String    @default("free")     // free, pro, premium
+  
+  // Datas importantes
+  currentPeriodStart   DateTime?
+  currentPeriodEnd     DateTime?
+  cancelAtPeriodEnd    Boolean   @default(false)
+  canceledAt           DateTime?
+  
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+
+  usuario              Usuario   @relation(fields: [usuarioId], references: [id])
+
+  @@index([stripeCustomerId])
+  @@index([status])
+}
+
+// Historico de pagamentos
+model Payment {
+  id                   String   @id @default(cuid())
+  usuarioId            String
+  stripePaymentId      String   @unique
+  amount               Int      // em centavos
+  currency             String   @default("brl")
+  status               String   // succeeded, pending, failed
+  
+  createdAt            DateTime @default(now())
+
+  usuario              Usuario  @relation(fields: [usuarioId], references: [id])
+
+  @@index([usuarioId])
+  @@index([status])
+}

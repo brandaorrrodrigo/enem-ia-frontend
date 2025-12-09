@@ -1,930 +1,549 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
-import FloatingBackButton from '@/components/FloatingBackButton';
-import FloatingNav from '@/components/FloatingNav';
-import {
-  BookOpen,
-  Clock,
-  Star,
-  ChevronRight,
-  Filter,
-  Search,
-  CheckCircle,
-  Lock,
-  Play,
-  Award
-} from 'lucide-react';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import BibliotecaCard from '@/components/BibliotecaCard';
 
-interface Modulo {
-  id: string;
-  titulo: string;
-  concluido: boolean;
-}
+type Secao = 'cadernos' | 'resumos' | 'formulas';
 
-interface Caderno {
-  id: string;
-  titulo: string;
-  materia: string;
-  categoria: string;
-  nivel: 'Basico' | 'Intermediario' | 'Avancado';
+interface Capitulo {
+  title: string;
+  slug: string;
   descricao: string;
-  icone: string;
-  cor: string;
-  modulos: Modulo[];
-  progresso: number;
-  tempoEstimado: string;
-  fpRecompensa: number;
+  fpPotencial: number;
+  icon: string;
 }
 
-const CATEGORIAS = [
-  { id: 'todos', nome: 'Todos', emoji: '📚', cor: '#8b5cf6' },
-  { id: 'linguagens', nome: 'Linguagens', emoji: '📖', cor: '#3b82f6' },
-  { id: 'humanas', nome: 'Humanas', emoji: '🌍', cor: '#f59e0b' },
-  { id: 'natureza', nome: 'Natureza', emoji: '🔬', cor: '#10b981' },
-  { id: 'matematica', nome: 'Matematica', emoji: '📐', cor: '#ef4444' },
-  { id: 'redacao', nome: 'Redacao', emoji: '✍️', cor: '#ec4899' },
+const materias = [
+  { id: 'matematica', nome: 'Matemática', icon: '🔢', color: '#3b82f6' },
+  { id: 'portugues', nome: 'Português', icon: '📖', color: '#8b5cf6' },
+  { id: 'fisica', nome: 'Física', icon: '⚛️', color: '#10b981' },
+  { id: 'quimica', nome: 'Química', icon: '🧪', color: '#f59e0b' },
+  { id: 'biologia', nome: 'Biologia', icon: '🧬', color: '#22c55e' },
+  { id: 'historia', nome: 'História', icon: '🏛️', color: '#ef4444' },
+  { id: 'geografia', nome: 'Geografia', icon: '🌍', color: '#06b6d4' },
+  { id: 'filosofia', nome: 'Filosofia', icon: '🤔', color: '#a855f7' },
+  { id: 'sociologia', nome: 'Sociologia', icon: '👥', color: '#ec4899' },
+  { id: 'redacao', nome: 'Redação', icon: '✍️', color: '#f97316' },
 ];
 
-// FPs corrigidos: 500->20, 600->25, 450->15, 400->10
-const CADERNOS_DATA: Caderno[] = [
-  // ==================== LINGUAGENS ====================
-  {
-    id: 'ling-1',
-    titulo: 'Interpretacao de Texto',
-    materia: 'Portugues',
-    categoria: 'linguagens',
-    nivel: 'Basico',
-    descricao: 'Domine as tecnicas de leitura e interpretacao textual.',
-    icone: '📝',
-    cor: '#3b82f6',
-    modulos: [
-      { id: 'm1', titulo: 'Tipos de Texto', concluido: false },
-      { id: 'm2', titulo: 'Inferencia e Deducao', concluido: false },
-      { id: 'm3', titulo: 'Figuras de Linguagem', concluido: false },
-      { id: 'm4', titulo: 'Contexto e Intertextualidade', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '4h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'ling-2',
-    titulo: 'Literatura Brasileira',
-    materia: 'Literatura',
-    categoria: 'linguagens',
-    nivel: 'Intermediario',
-    descricao: 'Explore os movimentos literarios e obras essenciais.',
-    icone: '📚',
-    cor: '#3b82f6',
-    modulos: [
-      { id: 'm1', titulo: 'Barroco e Arcadismo', concluido: false },
-      { id: 'm2', titulo: 'Romantismo', concluido: false },
-      { id: 'm3', titulo: 'Realismo e Naturalismo', concluido: false },
-      { id: 'm4', titulo: 'Modernismo', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '6h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'ling-3',
-    titulo: 'Gramatica Aplicada',
-    materia: 'Portugues',
-    categoria: 'linguagens',
-    nivel: 'Intermediario',
-    descricao: 'Gramatica focada nas questoes do ENEM.',
-    icone: '✏️',
-    cor: '#3b82f6',
-    modulos: [
-      { id: 'm1', titulo: 'Concordancia Verbal e Nominal', concluido: false },
-      { id: 'm2', titulo: 'Regencia e Crase', concluido: false },
-      { id: 'm3', titulo: 'Pontuacao', concluido: false },
-      { id: 'm4', titulo: 'Coesao e Coerencia', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'ling-4',
-    titulo: 'Ingles para o ENEM',
-    materia: 'Ingles',
-    categoria: 'linguagens',
-    nivel: 'Basico',
-    descricao: 'Estrategias de leitura em ingles.',
-    icone: '🇬🇧',
-    cor: '#3b82f6',
-    modulos: [
-      { id: 'm1', titulo: 'Cognatos e Falsos Cognatos', concluido: false },
-      { id: 'm2', titulo: 'Skimming e Scanning', concluido: false },
-      { id: 'm3', titulo: 'Conectivos e Marcadores', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '3h',
-    fpRecompensa: 0
-  },
-
-  // ==================== HUMANAS ====================
-  {
-    id: 'hum-1',
-    titulo: 'Historia do Brasil',
-    materia: 'Historia',
-    categoria: 'humanas',
-    nivel: 'Intermediario',
-    descricao: 'Do Brasil Colonia a Republica.',
-    icone: '🇧🇷',
-    cor: '#f59e0b',
-    modulos: [
-      { id: 'm1', titulo: 'Brasil Colonia', concluido: false },
-      { id: 'm2', titulo: 'Imperio Brasileiro', concluido: false },
-      { id: 'm3', titulo: 'Republica Velha', concluido: false },
-      { id: 'm4', titulo: 'Era Vargas', concluido: false },
-      { id: 'm5', titulo: 'Ditadura Militar', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '8h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'hum-2',
-    titulo: 'Historia Geral',
-    materia: 'Historia',
-    categoria: 'humanas',
-    nivel: 'Avancado',
-    descricao: 'Principais eventos da historia mundial.',
-    icone: '🌐',
-    cor: '#f59e0b',
-    modulos: [
-      { id: 'm1', titulo: 'Revolucoes Burguesas', concluido: false },
-      { id: 'm2', titulo: 'Imperialismo e Guerras', concluido: false },
-      { id: 'm3', titulo: 'Guerra Fria', concluido: false },
-      { id: 'm4', titulo: 'Mundo Contemporaneo', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '6h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'hum-3',
-    titulo: 'Geografia Fisica',
-    materia: 'Geografia',
-    categoria: 'humanas',
-    nivel: 'Basico',
-    descricao: 'Clima, relevo, vegetacao e hidrografia.',
-    icone: '🏔️',
-    cor: '#f59e0b',
-    modulos: [
-      { id: 'm1', titulo: 'Clima e Tempo', concluido: false },
-      { id: 'm2', titulo: 'Relevo Brasileiro', concluido: false },
-      { id: 'm3', titulo: 'Biomas e Vegetacao', concluido: false },
-      { id: 'm4', titulo: 'Hidrografia', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'hum-4',
-    titulo: 'Geografia Humana',
-    materia: 'Geografia',
-    categoria: 'humanas',
-    nivel: 'Intermediario',
-    descricao: 'Populacao, urbanizacao e economia.',
-    icone: '🏙️',
-    cor: '#f59e0b',
-    modulos: [
-      { id: 'm1', titulo: 'Demografia', concluido: false },
-      { id: 'm2', titulo: 'Urbanizacao', concluido: false },
-      { id: 'm3', titulo: 'Migracao', concluido: false },
-      { id: 'm4', titulo: 'Globalizacao', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'hum-5',
-    titulo: 'Filosofia Essencial',
-    materia: 'Filosofia',
-    categoria: 'humanas',
-    nivel: 'Intermediario',
-    descricao: 'Principais pensadores e correntes filosoficas.',
-    icone: '🤔',
-    cor: '#f59e0b',
-    modulos: [
-      { id: 'm1', titulo: 'Filosofia Antiga', concluido: false },
-      { id: 'm2', titulo: 'Filosofia Moderna', concluido: false },
-      { id: 'm3', titulo: 'Etica e Politica', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '4h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'hum-6',
-    titulo: 'Sociologia',
-    materia: 'Sociologia',
-    categoria: 'humanas',
-    nivel: 'Intermediario',
-    descricao: 'Conceitos sociologicos fundamentais.',
-    icone: '👥',
-    cor: '#f59e0b',
-    modulos: [
-      { id: 'm1', titulo: 'Classicos da Sociologia', concluido: false },
-      { id: 'm2', titulo: 'Cultura e Sociedade', concluido: false },
-      { id: 'm3', titulo: 'Trabalho e Desigualdade', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '4h',
-    fpRecompensa: 0
-  },
-
-  // ==================== NATUREZA ====================
-  {
-    id: 'nat-1',
-    titulo: 'Biologia Celular',
-    materia: 'Biologia',
-    categoria: 'natureza',
-    nivel: 'Basico',
-    descricao: 'Estrutura e funcionamento das celulas.',
-    icone: '🔬',
-    cor: '#10b981',
-    modulos: [
-      { id: 'm1', titulo: 'Celula Procarionte e Eucarionte', concluido: false },
-      { id: 'm2', titulo: 'Organelas Celulares', concluido: false },
-      { id: 'm3', titulo: 'Divisao Celular', concluido: false },
-      { id: 'm4', titulo: 'Metabolismo Energetico', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'nat-2',
-    titulo: 'Genetica',
-    materia: 'Biologia',
-    categoria: 'natureza',
-    nivel: 'Intermediario',
-    descricao: 'Hereditariedade e genetica molecular.',
-    icone: '🧬',
-    cor: '#10b981',
-    modulos: [
-      { id: 'm1', titulo: 'Leis de Mendel', concluido: false },
-      { id: 'm2', titulo: 'DNA e RNA', concluido: false },
-      { id: 'm3', titulo: 'Sintese Proteica', concluido: false },
-      { id: 'm4', titulo: 'Biotecnologia', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '6h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'nat-3',
-    titulo: 'Ecologia',
-    materia: 'Biologia',
-    categoria: 'natureza',
-    nivel: 'Intermediario',
-    descricao: 'Ecossistemas e questoes ambientais.',
-    icone: '🌱',
-    cor: '#10b981',
-    modulos: [
-      { id: 'm1', titulo: 'Cadeias e Teias Alimentares', concluido: false },
-      { id: 'm2', titulo: 'Ciclos Biogeoquimicos', concluido: false },
-      { id: 'm3', titulo: 'Problemas Ambientais', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '4h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'nat-4',
-    titulo: 'Quimica Geral',
-    materia: 'Quimica',
-    categoria: 'natureza',
-    nivel: 'Basico',
-    descricao: 'Fundamentos da quimica.',
-    icone: '⚗️',
-    cor: '#10b981',
-    modulos: [
-      { id: 'm1', titulo: 'Estrutura Atomica', concluido: false },
-      { id: 'm2', titulo: 'Tabela Periodica', concluido: false },
-      { id: 'm3', titulo: 'Ligacoes Quimicas', concluido: false },
-      { id: 'm4', titulo: 'Funcoes Inorganicas', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'nat-5',
-    titulo: 'Quimica Organica',
-    materia: 'Quimica',
-    categoria: 'natureza',
-    nivel: 'Avancado',
-    descricao: 'Compostos de carbono e suas reacoes.',
-    icone: '🧪',
-    cor: '#10b981',
-    modulos: [
-      { id: 'm1', titulo: 'Hidrocarbonetos', concluido: false },
-      { id: 'm2', titulo: 'Funcoes Organicas', concluido: false },
-      { id: 'm3', titulo: 'Isomeria', concluido: false },
-      { id: 'm4', titulo: 'Reacoes Organicas', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '6h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'nat-6',
-    titulo: 'Fisica: Mecanica',
-    materia: 'Fisica',
-    categoria: 'natureza',
-    nivel: 'Basico',
-    descricao: 'Movimento, forca e energia.',
-    icone: '⚙️',
-    cor: '#10b981',
-    modulos: [
-      { id: 'm1', titulo: 'Cinematica', concluido: false },
-      { id: 'm2', titulo: 'Leis de Newton', concluido: false },
-      { id: 'm3', titulo: 'Trabalho e Energia', concluido: false },
-      { id: 'm4', titulo: 'Gravitacao', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '6h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'nat-7',
-    titulo: 'Fisica: Eletricidade',
-    materia: 'Fisica',
-    categoria: 'natureza',
-    nivel: 'Intermediario',
-    descricao: 'Eletrostatica, corrente e circuitos.',
-    icone: '⚡',
-    cor: '#10b981',
-    modulos: [
-      { id: 'm1', titulo: 'Eletrostatica', concluido: false },
-      { id: 'm2', titulo: 'Corrente Eletrica', concluido: false },
-      { id: 'm3', titulo: 'Circuitos Eletricos', concluido: false },
-      { id: 'm4', titulo: 'Eletromagnetismo', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-
-  // ==================== MATEMATICA ====================
-  {
-    id: 'mat-1',
-    titulo: 'Aritmetica e Algebra',
-    materia: 'Matematica',
-    categoria: 'matematica',
-    nivel: 'Basico',
-    descricao: 'Numeros, operacoes e equacoes.',
-    icone: '🔢',
-    cor: '#ef4444',
-    modulos: [
-      { id: 'm1', titulo: 'Conjuntos Numericos', concluido: false },
-      { id: 'm2', titulo: 'Razao e Proporcao', concluido: false },
-      { id: 'm3', titulo: 'Equacoes de 1o e 2o Grau', concluido: false },
-      { id: 'm4', titulo: 'Sistemas de Equacoes', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'mat-2',
-    titulo: 'Funcoes',
-    materia: 'Matematica',
-    categoria: 'matematica',
-    nivel: 'Intermediario',
-    descricao: 'Funcoes de 1o, 2o grau, exponencial e log.',
-    icone: '📈',
-    cor: '#ef4444',
-    modulos: [
-      { id: 'm1', titulo: 'Funcao Afim', concluido: false },
-      { id: 'm2', titulo: 'Funcao Quadratica', concluido: false },
-      { id: 'm3', titulo: 'Funcao Exponencial', concluido: false },
-      { id: 'm4', titulo: 'Funcao Logaritmica', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '6h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'mat-3',
-    titulo: 'Geometria Plana',
-    materia: 'Matematica',
-    categoria: 'matematica',
-    nivel: 'Intermediario',
-    descricao: 'Areas, perimetros e teoremas.',
-    icone: '📐',
-    cor: '#ef4444',
-    modulos: [
-      { id: 'm1', titulo: 'Triangulos', concluido: false },
-      { id: 'm2', titulo: 'Quadrilateros', concluido: false },
-      { id: 'm3', titulo: 'Circunferencia', concluido: false },
-      { id: 'm4', titulo: 'Teorema de Pitagoras', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'mat-4',
-    titulo: 'Geometria Espacial',
-    materia: 'Matematica',
-    categoria: 'matematica',
-    nivel: 'Avancado',
-    descricao: 'Volumes e areas de solidos.',
-    icone: '🎲',
-    cor: '#ef4444',
-    modulos: [
-      { id: 'm1', titulo: 'Prismas e Cilindros', concluido: false },
-      { id: 'm2', titulo: 'Piramides e Cones', concluido: false },
-      { id: 'm3', titulo: 'Esfera', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '4h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'mat-5',
-    titulo: 'Estatistica e Probabilidade',
-    materia: 'Matematica',
-    categoria: 'matematica',
-    nivel: 'Intermediario',
-    descricao: 'Media, moda, mediana e probabilidade.',
-    icone: '📊',
-    cor: '#ef4444',
-    modulos: [
-      { id: 'm1', titulo: 'Medidas de Tendencia Central', concluido: false },
-      { id: 'm2', titulo: 'Graficos e Tabelas', concluido: false },
-      { id: 'm3', titulo: 'Probabilidade', concluido: false },
-      { id: 'm4', titulo: 'Analise Combinatoria', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-
-  // ==================== REDACAO ====================
-  {
-    id: 'red-1',
-    titulo: 'Estrutura da Redacao',
-    materia: 'Redacao',
-    categoria: 'redacao',
-    nivel: 'Basico',
-    descricao: 'Como estruturar uma dissertacao-argumentativa.',
-    icone: '✍️',
-    cor: '#ec4899',
-    modulos: [
-      { id: 'm1', titulo: 'Introducao', concluido: false },
-      { id: 'm2', titulo: 'Desenvolvimento', concluido: false },
-      { id: 'm3', titulo: 'Conclusao e Proposta', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '3h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'red-2',
-    titulo: 'Competencias do ENEM',
-    materia: 'Redacao',
-    categoria: 'redacao',
-    nivel: 'Intermediario',
-    descricao: 'Domine as 5 competencias avaliadas.',
-    icone: '🎯',
-    cor: '#ec4899',
-    modulos: [
-      { id: 'm1', titulo: 'Competencia 1: Norma Culta', concluido: false },
-      { id: 'm2', titulo: 'Competencia 2: Tema e Genero', concluido: false },
-      { id: 'm3', titulo: 'Competencia 3: Argumentacao', concluido: false },
-      { id: 'm4', titulo: 'Competencia 4: Coesao', concluido: false },
-      { id: 'm5', titulo: 'Competencia 5: Proposta', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '5h',
-    fpRecompensa: 0
-  },
-  {
-    id: 'red-3',
-    titulo: 'Repertorio Sociocultural',
-    materia: 'Redacao',
-    categoria: 'redacao',
-    nivel: 'Avancado',
-    descricao: 'Citacoes, dados e referencias para usar.',
-    icone: '💡',
-    cor: '#ec4899',
-    modulos: [
-      { id: 'm1', titulo: 'Filosofos e Pensadores', concluido: false },
-      { id: 'm2', titulo: 'Dados e Estatisticas', concluido: false },
-      { id: 'm3', titulo: 'Referencias Culturais', concluido: false }
-    ],
-    progresso: 0,
-    tempoEstimado: '4h',
-    fpRecompensa: 0
-  }
-];
+const capitulosPorMateria: Record<string, Capitulo[]> = {
+  matematica: [
+    {
+      title: 'Funções',
+      slug: 'funcoes',
+      descricao: 'Tipos de funções, domínio, imagem e gráficos',
+      fpPotencial: 50,
+      icon: '📊',
+    },
+    {
+      title: 'Razão e Proporção',
+      slug: 'razao-proporcao',
+      descricao: 'Regra de três, porcentagem e aplicações',
+      fpPotencial: 40,
+      icon: '⚖️',
+    },
+    {
+      title: 'Geometria Espacial',
+      slug: 'geometria-espacial',
+      descricao: 'Volumes e áreas de sólidos geométricos',
+      fpPotencial: 60,
+      icon: '🎲',
+    },
+    {
+      title: 'Trigonometria',
+      slug: 'trigonometria',
+      descricao: 'Seno, cosseno, tangente e aplicações',
+      fpPotencial: 55,
+      icon: '📐',
+    },
+    {
+      title: 'Estatística',
+      slug: 'estatistica',
+      descricao: 'Média, mediana, moda e gráficos',
+      fpPotencial: 45,
+      icon: '📈',
+    },
+  ],
+  portugues: [
+    {
+      title: 'Interpretação de Texto',
+      slug: 'interpretacao-texto',
+      descricao: 'Técnicas de leitura e compreensão textual',
+      fpPotencial: 50,
+      icon: '🔍',
+    },
+    {
+      title: 'Gramática',
+      slug: 'gramatica',
+      descricao: 'Sintaxe, morfologia e concordância',
+      fpPotencial: 45,
+      icon: '📝',
+    },
+    {
+      title: 'Literatura Brasileira',
+      slug: 'literatura-brasileira',
+      descricao: 'Movimentos literários e obras importantes',
+      fpPotencial: 55,
+      icon: '📚',
+    },
+    {
+      title: 'Figuras de Linguagem',
+      slug: 'figuras-linguagem',
+      descricao: 'Metáfora, metonímia e outras figuras',
+      fpPotencial: 40,
+      icon: '🎭',
+    },
+  ],
+  fisica: [
+    {
+      title: 'Cinemática',
+      slug: 'cinematica',
+      descricao: 'Movimento uniforme e variado',
+      fpPotencial: 50,
+      icon: '🚗',
+    },
+    {
+      title: 'Dinâmica',
+      slug: 'dinamica',
+      descricao: 'Leis de Newton e aplicações',
+      fpPotencial: 55,
+      icon: '⚡',
+    },
+    {
+      title: 'Eletricidade',
+      slug: 'eletricidade',
+      descricao: 'Circuitos elétricos e corrente',
+      fpPotencial: 60,
+      icon: '💡',
+    },
+    {
+      title: 'Óptica',
+      slug: 'optica',
+      descricao: 'Reflexão, refração e lentes',
+      fpPotencial: 45,
+      icon: '🔦',
+    },
+  ],
+  quimica: [
+    {
+      title: 'Química Orgânica',
+      slug: 'quimica-organica',
+      descricao: 'Funções orgânicas e nomenclatura',
+      fpPotencial: 60,
+      icon: '🧪',
+    },
+    {
+      title: 'Estequiometria',
+      slug: 'estequiometria',
+      descricao: 'Cálculos químicos e mol',
+      fpPotencial: 55,
+      icon: '⚗️',
+    },
+    {
+      title: 'Termoquímica',
+      slug: 'termoquimica',
+      descricao: 'Entalpia e reações exotérmicas',
+      fpPotencial: 50,
+      icon: '🔥',
+    },
+    {
+      title: 'Eletroquímica',
+      slug: 'eletroquimica',
+      descricao: 'Pilhas e eletrólise',
+      fpPotencial: 55,
+      icon: '🔋',
+    },
+  ],
+  biologia: [
+    {
+      title: 'Citologia',
+      slug: 'citologia',
+      descricao: 'Estrutura e função celular',
+      fpPotencial: 50,
+      icon: '🔬',
+    },
+    {
+      title: 'Genética',
+      slug: 'genetica',
+      descricao: 'Leis de Mendel e hereditariedade',
+      fpPotencial: 60,
+      icon: '🧬',
+    },
+    {
+      title: 'Ecologia',
+      slug: 'ecologia',
+      descricao: 'Ecossistemas e relações ecológicas',
+      fpPotencial: 55,
+      icon: '🌿',
+    },
+    {
+      title: 'Evolução',
+      slug: 'evolucao',
+      descricao: 'Teorias evolutivas e seleção natural',
+      fpPotencial: 50,
+      icon: '🦎',
+    },
+  ],
+  historia: [
+    {
+      title: 'Brasil Colônia',
+      slug: 'brasil-colonia',
+      descricao: 'Descobrimento e colonização',
+      fpPotencial: 50,
+      icon: '⛵',
+    },
+    {
+      title: 'Revolução Industrial',
+      slug: 'revolucao-industrial',
+      descricao: 'Transformações econômicas e sociais',
+      fpPotencial: 55,
+      icon: '🏭',
+    },
+    {
+      title: 'Guerras Mundiais',
+      slug: 'guerras-mundiais',
+      descricao: 'Primeira e Segunda Guerra Mundial',
+      fpPotencial: 60,
+      icon: '⚔️',
+    },
+    {
+      title: 'Ditadura Militar',
+      slug: 'ditadura-militar',
+      descricao: 'Brasil no período militar',
+      fpPotencial: 55,
+      icon: '🪖',
+    },
+  ],
+  geografia: [
+    {
+      title: 'Geologia',
+      slug: 'geologia',
+      descricao: 'Estrutura da Terra e relevo',
+      fpPotencial: 50,
+      icon: '🏔️',
+    },
+    {
+      title: 'Climatologia',
+      slug: 'climatologia',
+      descricao: 'Climas e fenômenos atmosféricos',
+      fpPotencial: 55,
+      icon: '🌤️',
+    },
+    {
+      title: 'Geografia Urbana',
+      slug: 'geografia-urbana',
+      descricao: 'Urbanização e problemas urbanos',
+      fpPotencial: 50,
+      icon: '🏙️',
+    },
+    {
+      title: 'Geopolítica',
+      slug: 'geopolitica',
+      descricao: 'Conflitos e relações internacionais',
+      fpPotencial: 60,
+      icon: '🗺️',
+    },
+  ],
+  filosofia: [
+    {
+      title: 'Filosofia Antiga',
+      slug: 'filosofia-antiga',
+      descricao: 'Sócrates, Platão e Aristóteles',
+      fpPotencial: 50,
+      icon: '🏛️',
+    },
+    {
+      title: 'Ética e Moral',
+      slug: 'etica-moral',
+      descricao: 'Teorias éticas e valores',
+      fpPotencial: 45,
+      icon: '⚖️',
+    },
+    {
+      title: 'Filosofia Moderna',
+      slug: 'filosofia-moderna',
+      descricao: 'Descartes, Kant e Iluminismo',
+      fpPotencial: 55,
+      icon: '💡',
+    },
+  ],
+  sociologia: [
+    {
+      title: 'Estratificação Social',
+      slug: 'estratificacao-social',
+      descricao: 'Classes sociais e desigualdade',
+      fpPotencial: 50,
+      icon: '📊',
+    },
+    {
+      title: 'Movimentos Sociais',
+      slug: 'movimentos-sociais',
+      descricao: 'Manifestações e transformações sociais',
+      fpPotencial: 55,
+      icon: '✊',
+    },
+    {
+      title: 'Cultura e Sociedade',
+      slug: 'cultura-sociedade',
+      descricao: 'Identidade cultural e diversidade',
+      fpPotencial: 50,
+      icon: '🎭',
+    },
+  ],
+  redacao: [
+    {
+      title: 'Estrutura da Redação',
+      slug: 'estrutura-redacao',
+      descricao: 'Introdução, desenvolvimento e conclusão',
+      fpPotencial: 60,
+      icon: '📄',
+    },
+    {
+      title: 'Argumentação',
+      slug: 'argumentacao',
+      descricao: 'Tipos de argumentos e persuasão',
+      fpPotencial: 65,
+      icon: '💬',
+    },
+    {
+      title: 'Proposta de Intervenção',
+      slug: 'proposta-intervencao',
+      descricao: 'Como criar soluções eficazes',
+      fpPotencial: 70,
+      icon: '🎯',
+    },
+    {
+      title: 'Repertório Sociocultural',
+      slug: 'repertorio-sociocultural',
+      descricao: 'Como usar referências na redação',
+      fpPotencial: 55,
+      icon: '📚',
+    },
+  ],
+};
 
 export default function BibliotecaPage() {
-  const router = useRouter();
-  const [categoriaAtiva, setCategoriaAtiva] = useState('todos');
-  const [busca, setBusca] = useState('');
-  const [cadernos, setCadernos] = useState<Caderno[]>(CADERNOS_DATA);
-
-  // Carregar progresso do localStorage
-  useEffect(() => {
-    const savedProgress = localStorage.getItem('biblioteca_progresso');
-    if (savedProgress) {
-      try {
-        const progress = JSON.parse(savedProgress);
-        setCadernos(prev => prev.map(c => ({
-          ...c,
-          progresso: progress[c.id] || 0
-        })));
-      } catch (e) {}
-    }
-  }, []);
-
-  const cadernosFiltrados = cadernos.filter(c => {
-    const matchCategoria = categoriaAtiva === 'todos' || c.categoria === categoriaAtiva;
-    const matchBusca = !busca ||
-      c.titulo.toLowerCase().includes(busca.toLowerCase()) ||
-      c.materia.toLowerCase().includes(busca.toLowerCase()) ||
-      c.descricao.toLowerCase().includes(busca.toLowerCase());
-    return matchCategoria && matchBusca;
-  });
-
-  const getNivelCor = (nivel: string) => {
-    switch (nivel) {
-      case 'Basico': return '#10b981';
-      case 'Intermediario': return '#f59e0b';
-      case 'Avancado': return '#ef4444';
-      default: return '#6b7280';
-    }
-  };
+  const [secaoAtiva, setSecaoAtiva] = useState<Secao>('cadernos');
+  const [materiaAtiva, setMateriaAtiva] = useState('matematica');
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #1a2e1a 0%, #0d1f0d 50%, #1a2e1a 100%)',
-      padding: '1rem',
-    }}>
-      <FloatingBackButton />
-      <FloatingNav />
-
-      <div style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '2rem' }}>
-        {/* Header */}
+    <div
+      style={{
+        minHeight: '100vh',
+        background: 'linear-gradient(135deg, #0e2a18 0%, #1a3d28 50%, #0e2a18 100%)',
+        padding: '40px 20px',
+      }}
+    >
+      <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+        {/* Cabeçalho */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          style={{ textAlign: 'center', marginBottom: '2rem' }}
+          transition={{ duration: 0.5 }}
+          style={{ marginBottom: '40px', textAlign: 'center' }}
         >
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.75rem',
-            marginBottom: '1rem',
-          }}>
-            <div style={{
-              width: '3.5rem',
-              height: '3.5rem',
-              borderRadius: '1rem',
-              background: 'rgba(139, 92, 246, 0.2)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
-              <BookOpen size={28} color="#8b5cf6" />
-            </div>
-          </div>
-          <h1 style={{
-            fontFamily: "'Patrick Hand', cursive",
-            color: '#ffd700',
-            fontSize: '2.5rem',
-            textShadow: '0 0 10px rgba(255, 215, 0, 0.3)',
-            marginBottom: '0.5rem',
-          }}>
-            Biblioteca de Cadernos
+          <h1
+            style={{
+              fontFamily: "'Patrick Hand', cursive",
+              fontSize: '48px',
+              color: '#fff',
+              marginBottom: '16px',
+              textShadow: '3px 3px 6px rgba(0, 0, 0, 0.5)',
+            }}
+          >
+            📚 Biblioteca ENEM PRO
           </h1>
-          <p style={{ color: '#a3a3a3', fontSize: '1rem' }}>
-            Estude os conteudos mais cobrados no ENEM
+          <p
+            style={{
+              fontFamily: "'Poppins', sans-serif",
+              fontSize: '18px',
+              color: 'rgba(255, 255, 255, 0.8)',
+              maxWidth: '600px',
+              margin: '0 auto',
+            }}
+          >
+            Todo o conteúdo do ENEM organizado para você estudar de forma eficiente
           </p>
         </motion.div>
 
-        {/* Busca */}
+        {/* Seções Principais */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          style={{
-            background: 'rgba(0,0,0,0.4)',
-            borderRadius: '1rem',
-            padding: '1rem',
-            marginBottom: '1.5rem',
-            border: '1px solid rgba(255,255,255,0.1)',
-          }}
-        >
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.75rem',
-            background: 'rgba(255,255,255,0.05)',
-            borderRadius: '0.75rem',
-            padding: '0.75rem 1rem',
-          }}>
-            <Search size={20} color="#6b7280" />
-            <input
-              type="text"
-              placeholder="Buscar cadernos..."
-              value={busca}
-              onChange={(e) => setBusca(e.target.value)}
-              style={{
-                flex: 1,
-                background: 'transparent',
-                border: 'none',
-                outline: 'none',
-                color: '#f5f5dc',
-                fontSize: '1rem',
-              }}
-            />
-          </div>
-        </motion.div>
-
-        {/* Categorias */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           style={{
             display: 'flex',
-            gap: '0.75rem',
-            marginBottom: '2rem',
-            overflowX: 'auto',
-            paddingBottom: '0.5rem',
+            justifyContent: 'center',
+            gap: '16px',
+            marginBottom: '32px',
+            flexWrap: 'wrap',
           }}
         >
-          {CATEGORIAS.map((cat) => (
-            <motion.button
-              key={cat.id}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => setCategoriaAtiva(cat.id)}
+          {[
+            { id: 'cadernos' as Secao, nome: 'CADERNOS DE ESTUDO', icon: '📖' },
+            { id: 'resumos' as Secao, nome: 'RESUMOS / MAPAS MENTAIS', icon: '🗺️' },
+            { id: 'formulas' as Secao, nome: 'FÓRMULAS / MEMORIZAÇÃO', icon: '🧠' },
+          ].map((secao) => (
+            <button
+              key={secao.id}
+              onClick={() => setSecaoAtiva(secao.id)}
               style={{
-                padding: '0.75rem 1.25rem',
-                borderRadius: '0.75rem',
-                border: categoriaAtiva === cat.id ? `2px solid ${cat.cor}` : '2px solid rgba(255,255,255,0.1)',
-                background: categoriaAtiva === cat.id ? `${cat.cor}20` : 'rgba(0,0,0,0.3)',
-                color: '#f5f5dc',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
-                whiteSpace: 'nowrap',
-                transition: 'all 0.2s',
-              }}
-            >
-              <span>{cat.emoji}</span>
-              <span style={{ fontFamily: "'Poppins', sans-serif" }}>{cat.nome}</span>
-            </motion.button>
-          ))}
-        </motion.div>
-
-        {/* Grid de Cadernos */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-          gap: '1.5rem',
-        }}>
-          {cadernosFiltrados.map((caderno, index) => (
-            <motion.div
-              key={caderno.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * (index % 6) }}
-              whileHover={{ scale: 1.02, y: -5 }}
-              onClick={() => router.push(`/enem/biblioteca/${caderno.id}`)}
-              style={{
-                background: 'rgba(0,0,0,0.4)',
-                borderRadius: '1rem',
-                padding: '1.5rem',
-                border: '1px solid rgba(255,255,255,0.1)',
+                padding: '16px 32px',
+                background:
+                  secaoAtiva === secao.id
+                    ? 'linear-gradient(135deg, #8b5a2b 0%, #a0714d 100%)'
+                    : 'rgba(255, 255, 255, 0.1)',
+                border:
+                  secaoAtiva === secao.id
+                    ? '3px solid rgba(139, 90, 43, 0.8)'
+                    : '3px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: '12px',
+                color: '#fff',
+                fontFamily: "'Patrick Hand', cursive",
+                fontSize: '16px',
+                fontWeight: 'bold',
                 cursor: 'pointer',
                 transition: 'all 0.3s',
+                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+                boxShadow:
+                  secaoAtiva === secao.id
+                    ? '0 6px 20px rgba(139, 90, 43, 0.4)'
+                    : '0 4px 12px rgba(0, 0, 0, 0.3)',
+              }}
+              onMouseEnter={(e) => {
+                if (secaoAtiva !== secao.id) {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (secaoAtiva !== secao.id) {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }
               }}
             >
-              {/* Header do Card */}
-              <div style={{
-                display: 'flex',
-                alignItems: 'flex-start',
-                justifyContent: 'space-between',
-                marginBottom: '1rem',
-              }}>
-                <div style={{
-                  width: '3rem',
-                  height: '3rem',
-                  borderRadius: '0.75rem',
-                  background: `${caderno.cor}20`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '1.5rem',
-                }}>
-                  {caderno.icone}
-                </div>
-                <span style={{
-                  padding: '0.25rem 0.75rem',
-                  borderRadius: '999px',
-                  background: `${getNivelCor(caderno.nivel)}20`,
-                  color: getNivelCor(caderno.nivel),
-                  fontSize: '0.75rem',
-                  fontWeight: '500',
-                }}>
-                  {caderno.nivel}
-                </span>
-              </div>
-
-              {/* Materia */}
-              <span style={{
-                padding: '0.25rem 0.5rem',
-                borderRadius: '0.25rem',
-                background: 'rgba(255,255,255,0.1)',
-                color: '#a3a3a3',
-                fontSize: '0.7rem',
-                marginBottom: '0.5rem',
-                display: 'inline-block',
-              }}>
-                {caderno.materia}
-              </span>
-
-              {/* Titulo */}
-              <h3 style={{
-                color: '#f5f5dc',
-                fontSize: '1.1rem',
-                fontWeight: '600',
-                marginBottom: '0.5rem',
-                fontFamily: "'Poppins', sans-serif",
-              }}>
-                {caderno.titulo}
-              </h3>
-
-              {/* Descricao */}
-              <p style={{
-                color: '#a3a3a3',
-                fontSize: '0.85rem',
-                marginBottom: '1rem',
-                lineHeight: 1.5,
-              }}>
-                {caderno.descricao}
-              </p>
-
-              {/* Modulos */}
-              <div style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                gap: '0.5rem',
-                marginBottom: '1rem',
-              }}>
-                {caderno.modulos.slice(0, 3).map((mod, i) => (
-                  <span key={i} style={{
-                    padding: '0.25rem 0.5rem',
-                    borderRadius: '0.25rem',
-                    background: 'rgba(255,255,255,0.05)',
-                    color: '#6b7280',
-                    fontSize: '0.7rem',
-                  }}>
-                    {mod.titulo}
-                  </span>
-                ))}
-                {caderno.modulos.length > 3 && (
-                  <span style={{
-                    padding: '0.25rem 0.5rem',
-                    borderRadius: '0.25rem',
-                    background: 'rgba(255,255,255,0.05)',
-                    color: '#6b7280',
-                    fontSize: '0.7rem',
-                  }}>
-                    +{caderno.modulos.length - 3}
-                  </span>
-                )}
-              </div>
-
-              {/* Barra de Progresso */}
-              <div style={{
-                height: '4px',
-                background: 'rgba(255,255,255,0.1)',
-                borderRadius: '2px',
-                marginBottom: '1rem',
-                overflow: 'hidden',
-              }}>
-                <div style={{
-                  width: `${caderno.progresso}%`,
-                  height: '100%',
-                  background: caderno.cor,
-                  borderRadius: '2px',
-                  transition: 'width 0.3s',
-                }} />
-              </div>
-
-              {/* Footer do Card */}
-              <div style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}>
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '1rem',
-                }}>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.25rem',
-                    color: '#6b7280',
-                    fontSize: '0.8rem',
-                  }}>
-                    <Clock size={14} />
-                    {caderno.tempoEstimado}
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.25rem',
-                    color: '#fbbf24',
-                    fontSize: '0.8rem',
-                    fontWeight: '600',
-                  }}>
-                    <Star size={14} fill="#fbbf24" />
-                    {caderno.fpRecompensa} FP
-                  </div>
-                </div>
-                <ChevronRight size={20} color="#6b7280" />
-              </div>
-            </motion.div>
+              {secao.icon} {secao.nome}
+            </button>
           ))}
-        </div>
+        </motion.div>
 
-        {/* Empty State */}
-        {cadernosFiltrados.length === 0 && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            style={{
-              textAlign: 'center',
-              padding: '3rem',
-              color: '#6b7280',
-            }}
-          >
-            <BookOpen size={48} style={{ marginBottom: '1rem', opacity: 0.5 }} />
-            <p>Nenhum caderno encontrado</p>
-          </motion.div>
-        )}
-
-        {/* Stats */}
+        {/* Abas de Matérias */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           style={{
-            marginTop: '3rem',
-            background: 'rgba(0,0,0,0.4)',
-            borderRadius: '1rem',
-            padding: '1.5rem',
-            border: '1px solid rgba(255,255,255,0.1)',
+            display: 'flex',
+            gap: '12px',
+            marginBottom: '32px',
+            overflowX: 'auto',
+            padding: '16px',
+            background: 'rgba(0, 0, 0, 0.2)',
+            borderRadius: '16px',
+            border: '2px solid rgba(139, 90, 43, 0.3)',
           }}
         >
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-            gap: '1.5rem',
-            textAlign: 'center',
-          }}>
-            <div>
-              <div style={{ color: '#8b5cf6', fontSize: '2rem', fontWeight: 'bold' }}>
-                {cadernos.length}
-              </div>
-              <div style={{ color: '#a3a3a3', fontSize: '0.85rem' }}>Cadernos</div>
-            </div>
-            <div>
-              <div style={{ color: '#10b981', fontSize: '2rem', fontWeight: 'bold' }}>
-                {cadernos.reduce((acc, c) => acc + c.modulos.length, 0)}
-              </div>
-              <div style={{ color: '#a3a3a3', fontSize: '0.85rem' }}>Modulos</div>
-            </div>
-            <div>
-              <div style={{ color: '#fbbf24', fontSize: '2rem', fontWeight: 'bold' }}>
-                {cadernos.reduce((acc, c) => acc + c.fpRecompensa, 0)}
-              </div>
-              <div style={{ color: '#a3a3a3', fontSize: '0.85rem' }}>FP Disponiveis</div>
-            </div>
-          </div>
+          {materias.map((materia) => (
+            <button
+              key={materia.id}
+              onClick={() => setMateriaAtiva(materia.id)}
+              style={{
+                padding: '12px 24px',
+                background:
+                  materiaAtiva === materia.id
+                    ? materia.color
+                    : 'rgba(255, 255, 255, 0.1)',
+                border: '2px solid',
+                borderColor:
+                  materiaAtiva === materia.id
+                    ? materia.color
+                    : 'rgba(255, 255, 255, 0.2)',
+                borderRadius: '24px',
+                color: '#fff',
+                fontFamily: "'Poppins', sans-serif",
+                fontSize: '14px',
+                fontWeight: '600',
+                cursor: 'pointer',
+                transition: 'all 0.3s',
+                whiteSpace: 'nowrap',
+                boxShadow:
+                  materiaAtiva === materia.id
+                    ? `0 4px 16px ${materia.color}40`
+                    : 'none',
+              }}
+            >
+              {materia.icon} {materia.nome}
+            </button>
+          ))}
         </motion.div>
+
+        {/* Grid de Capítulos */}
+        <motion.div
+          key={materiaAtiva}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+            gap: '24px',
+          }}
+        >
+          {capitulosPorMateria[materiaAtiva]?.map((capitulo, index) => (
+            <motion.div
+              key={capitulo.slug}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+            >
+              <BibliotecaCard
+                title={capitulo.title}
+                slug={capitulo.slug}
+                materia={materiaAtiva}
+                descricao={capitulo.descricao}
+                fpPotencial={capitulo.fpPotencial}
+                icon={capitulo.icon}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Mensagem se não houver capítulos */}
+        {(!capitulosPorMateria[materiaAtiva] ||
+          capitulosPorMateria[materiaAtiva].length === 0) && (
+          <div
+            style={{
+              textAlign: 'center',
+              padding: '60px 20px',
+              background: 'rgba(255, 255, 255, 0.05)',
+              borderRadius: '16px',
+              border: '2px dashed rgba(255, 255, 255, 0.2)',
+            }}
+          >
+            <div style={{ fontSize: '64px', marginBottom: '16px' }}>🚧</div>
+            <h3
+              style={{
+                fontFamily: "'Patrick Hand', cursive",
+                fontSize: '24px',
+                color: 'rgba(255, 255, 255, 0.7)',
+                marginBottom: '8px',
+              }}
+            >
+              Em breve!
+            </h3>
+            <p
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                fontSize: '14px',
+                color: 'rgba(255, 255, 255, 0.5)',
+              }}
+            >
+              Estamos preparando conteúdo incrível para esta matéria
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

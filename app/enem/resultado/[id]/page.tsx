@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import AchievementPopup from '@/components/enem/AchievementPopup';
 import FloatingBackButton from '@/components/FloatingBackButton';
+import TutorExplicacao from '@/components/TutorExplicacao';
 
 interface ErroDetalhado {
   questao_id: number;
@@ -407,6 +408,20 @@ export default function ResultadoPage() {
                             </div>
                           );
                         })}
+                      </div>
+
+                      {/* Tutor IA - Explicação */}
+                      <div className="mt-6 border-t border-white/10 pt-4">
+                        <TutorExplicacao
+                          questaoId={erro.questao_id}
+                          respostaUsuario={
+                            erro.marcada !== null
+                              ? (String.fromCharCode(65 + erro.marcada) as 'A' | 'B' | 'C' | 'D' | 'E')
+                              : 'A'
+                          }
+                          respostaCorreta={String.fromCharCode(65 + erro.correta) as 'A' | 'B' | 'C' | 'D' | 'E'}
+                          enunciado={erro.enunciado}
+                        />
                       </div>
                     </div>
                   ))}

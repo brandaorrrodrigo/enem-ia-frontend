@@ -47,6 +47,10 @@ export default function AritmeticaBasicaPage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const handleComplete = (acertos: number) => {
     console.log(`Quiz completo! Acertos: ${acertos}/${questions.length}`);
   };

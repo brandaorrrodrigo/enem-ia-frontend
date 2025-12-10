@@ -29,6 +29,7 @@ const questions = [
 export default function GeologiaPage() {
   const router = useRouter();
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,12 +38,20 @@ export default function GeologiaPage() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const progress = (scrollTop / (documentHeight - windowHeight)) * 100;
       setScrollProgress(Math.min(progress, 100));
+      setShowScrollTop(scrollTop > 300);
       localStorage.setItem('biblioteca_geografia_geologia', Math.floor(progress).toString());
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+
+  const scrollToTop = () => {
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  };
 
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0e2a18 0%, #1a3d28 50%, #0e2a18 100%)', padding: '40px 20px', position: 'relative' }}>

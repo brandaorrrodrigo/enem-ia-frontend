@@ -44,6 +44,7 @@ const questions = [
 export default function FuncoesPage() {
   const router = useRouter();
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,6 +53,7 @@ export default function FuncoesPage() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const progress = (scrollTop / (documentHeight - windowHeight)) * 100;
       setScrollProgress(Math.min(progress, 100));
+      setShowScrollTop(scrollTop > 300);
 
       // Salvar progresso no localStorage
       localStorage.setItem('biblioteca_matematica_funcoes', Math.floor(progress).toString());
@@ -566,6 +568,37 @@ export default function FuncoesPage() {
         capitulo="funcoes"
         onComplete={handleComplete}
       />
+      {showScrollTop && (
+        <motion.button
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0 }}
+          onClick={scrollToTop}
+          style={{
+            position: 'fixed',
+            bottom: '32px',
+            right: '32px',
+            width: '56px',
+            height: '56px',
+            borderRadius: '50%',
+            background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
+            border: '2px solid rgba(255, 255, 255, 0.2)',
+            color: '#fff',
+            fontSize: '24px',
+            cursor: 'pointer',
+            boxShadow: '0 8px 24px rgba(59, 130, 246, 0.4)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+            transition: 'all 0.3s'
+          }}
+          whileHover={{ scale: 1.1, boxShadow: '0 12px 32px rgba(59, 130, 246, 0.6)' }}
+          whileTap={{ scale: 0.95 }}
+        >
+          ↑
+        </motion.button>
+      )}
     </div>
   );
 }

@@ -397,12 +397,12 @@ export class GeradorPlanos {
     let topicoIndex = 0;
 
     for (let semana = 1; semana <= totalSemanas; semana++) {
-      const topicosS emana: string[] = [];
+      const topicosSemana: string[] = [];
       let cargaHoraria = 0;
 
       while (cargaHoraria < horasSemanais && topicoIndex < topicos.length) {
         const topico = topicos[topicoIndex];
-        topicos Semana.push(topico.tema);
+        topicosSemana.push(topico.tema);
         cargaHoraria += topico.tempo_estimado;
         topicoIndex++;
       }
@@ -513,7 +513,7 @@ export async function exemploGeracaoPlano() {
   const estatisticas: EstatisticaTopico[] = []; // Dados reais
   const probabilidades: ProbabilidadeTopico[] = []; // Dados reais
 
-  const plano = gerador.gerarPlano(perfil Exemplo, estatisticas, probabilidades);
+  const plano = gerador.gerarPlano(perfilExemplo, estatisticas, probabilidades);
 
   console.log('Plano Gerado:', JSON.stringify(plano, null, 2));
 }

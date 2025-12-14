@@ -10,10 +10,10 @@ import type { DashboardAluno } from '@/types/dashboard';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { userId: string } }
+  { params }: { params: Promise<{ userId: string }> }
 ) {
   try {
-    const { userId } = params;
+    const { userId } = await params;
 
     // TODO: Buscar dados reais do banco de dados
     // const aluno = await db.aluno.findUnique({ where: { id: userId } });

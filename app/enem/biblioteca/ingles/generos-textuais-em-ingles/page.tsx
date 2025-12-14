@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, BookOpen, CheckCircle2, Brain, Target } from 'lucide-react'
 import { MicroQuiz } from '@/components/MicroQuiz'
 
-export default function BrasilColoniaPage() {
+export default function GenerosTextuaisEmInglesPage() {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [showQuiz, setShowQuiz] = useState(false)
 
@@ -30,7 +30,7 @@ export default function BrasilColoniaPage() {
   const questoes = []
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-900 to-red-700 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 to-blue-700 text-white">
       {/* Barra de progresso */}
       <div className="fixed top-0 left-0 w-full h-1 bg-white/10 z-50">
         <div
@@ -63,7 +63,7 @@ export default function BrasilColoniaPage() {
         {/* Título */}
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
-            Brasil Colônia
+            Gêneros textuais em inglês
           </h1>
           <div className="flex items-center gap-2 text-white/60">
             <Target className="w-5 h-5" />
@@ -75,8 +75,8 @@ export default function BrasilColoniaPage() {
         <section className="mb-12">
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-#dc2626/20 rounded-lg">
-                <BookOpen className="w-6 h-6 text-#dc2626" style={{ color: '#dc2626' }} />
+              <div className="p-2 bg-#2563eb/20 rounded-lg">
+                <BookOpen className="w-6 h-6 text-#2563eb" style={{ color: '#2563eb' }} />
               </div>
               <h2 className="text-2xl font-bold">Visão Geral</h2>
             </div>
@@ -143,7 +143,7 @@ export default function BrasilColoniaPage() {
                     <div className="space-y-2">
                       {q.alternativas.map((alt, altIdx) => (
                         <div key={altIdx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
-                          <span className="font-medium text-#dc2626" style={{ color: '#dc2626' }}>
+                          <span className="font-medium text-#2563eb" style={{ color: '#2563eb' }}>
                             {String.fromCharCode(65 + altIdx)})
                           </span>
                           <span className="text-white/80">{alt}</span>
@@ -174,7 +174,7 @@ export default function BrasilColoniaPage() {
         {showQuiz && (
           <section className="mb-12">
             <MicroQuiz
-              moduloSlug="historia_brasil-colonia"
+              moduloSlug="ingles_generos-textuais-em-ingles"
               questoes={questoes}
             />
           </section>

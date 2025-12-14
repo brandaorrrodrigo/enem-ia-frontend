@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, BookOpen, CheckCircle2, Brain, Target } from 'lucide-react'
 import { MicroQuiz } from '@/components/MicroQuiz'
 
-export default function BrasilColoniaPage() {
+export default function DitaduraMilitar19641985RepressaoMilagreEconomicoEResistenciaPage() {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [showQuiz, setShowQuiz] = useState(false)
 
@@ -63,7 +63,7 @@ export default function BrasilColoniaPage() {
         {/* Título */}
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
-            Brasil Colônia
+            Ditadura Militar (1964–1985): repressão, milagre econômico e resistência
           </h1>
           <div className="flex items-center gap-2 text-white/60">
             <Target className="w-5 h-5" />
@@ -174,7 +174,7 @@ export default function BrasilColoniaPage() {
         {showQuiz && (
           <section className="mb-12">
             <MicroQuiz
-              moduloSlug="historia_brasil-colonia"
+              moduloSlug="historia_ditadura-militar-19641985-repressao-milagre-economico-e-resistencia"
               questoes={questoes}
             />
           </section>

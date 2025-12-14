@@ -1,371 +1,185 @@
-'use client';
+'use client'
 
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import MicroQuiz from '@/components/MicroQuiz';
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { ArrowLeft, BookOpen, CheckCircle2, Brain, Target } from 'lucide-react'
+import { MicroQuiz } from '@/components/MicroQuiz'
 
 export default function ConectoresPage() {
-  const [progresso, setProgresso] = useState(0);
-  const [scrollPercent, setScrollPercent] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState(0)
+  const [showQuiz, setShowQuiz] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight - windowHeight;
-      const scrolled = window.scrollY;
-      const percent = (scrolled / documentHeight) * 100;
-      setScrollPercent(Math.min(percent, 100));
+      const windowHeight = window.innerHeight
+      const documentHeight = document.documentElement.scrollHeight - windowHeight
+      const scrolled = window.scrollY
+      const progress = (scrolled / documentHeight) * 100
+      setScrollProgress(progress)
 
-      if (percent > progresso) {
-        setProgresso(Math.floor(percent));
-        localStorage.setItem('biblioteca_espanhol_conectores', Math.floor(percent).toString());
+      // Mostrar quiz quando rolar 80% da página
+      if (progress > 80 && !showQuiz) {
+        setShowQuiz(true)
       }
-    };
-
-    const savedProgress = localStorage.getItem('biblioteca_espanhol_conectores');
-    if (savedProgress) {
-      setProgresso(parseInt(savedProgress));
     }
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [progresso]);
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [showQuiz])
+
+  const questoes = []
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0d2818] to-[#1b3d29] text-white font-['Poppins'] relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-red-900 to-red-700 text-white">
       {/* Barra de progresso */}
       <div className="fixed top-0 left-0 w-full h-1 bg-white/10 z-50">
-        <motion.div
-          className="h-full"
-          style={{ background: `linear-gradient(90deg, #dc2626 0%, #fa4444 100%)` }}
-          initial={{ width: 0 }}
-          animate={{ width: `${scrollPercent}%` }}
-          transition={{ duration: 0.1 }}
+        <div
+          className="h-full bg-gradient-to-r from-green-400 to-emerald-500 transition-all duration-300"
+          style={{ width: `${scrollProgress}%` }}
         />
       </div>
 
       {/* Header */}
-      <motion.div
-        className="relative pt-32 pb-16 px-8"
-        style={{ background: `linear-gradient(135deg, #be0808 0%, #dc2626 100%)` }}
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <div className="max-w-4xl mx-auto">
-          <Link href="/enem/biblioteca" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
-            <span className="mr-2">←</span> Voltar para Biblioteca
-          </Link>
-
-          <div className="flex items-center gap-4 mb-4">
-            <span className="text-6xl">🔗</span>
-            <div>
-              <h1 className="text-5xl font-bold font-['Patrick_Hand']">Vocabulario - Conectores</h1>
-              <p className="text-xl text-white/80 mt-2">Conectores y marcadores discursivos</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4 mt-6">
-            <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-              <span className="text-sm">📚 Espanhol</span>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-              <span className="text-sm">⏱️ Leitura: ~10 min</span>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-              <span className="text-sm">🎯 Progresso: {progresso}%</span>
+      <header className="border-b border-white/10 bg-black/20 backdrop-blur-sm sticky top-0 z-40">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
+            <Link
+              href="/enem/biblioteca"
+              className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              <span className="font-medium">Voltar para Biblioteca</span>
+            </Link>
+            <div className="flex items-center gap-2 text-sm text-white/60">
+              <BookOpen className="w-4 h-4" />
+              <span>{Math.round(scrollProgress)}% concluído</span>
             </div>
           </div>
         </div>
-      </motion.div>
+      </header>
 
-      {/* Conteúdo */}
-      <div className="max-w-4xl mx-auto px-8 py-12">
-        {/* Resumo */}
-        <motion.div
-          className="mb-12 p-8 bg-white/5 backdrop-blur-sm rounded-2xl border-2"
-          style={{ borderColor: '#dc2626' }}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-3xl font-bold font-['Patrick_Hand'] mb-4 flex items-center gap-2">
-            <span>📖</span> Resumo
-          </h2>
-          <p className="text-lg text-white/90 leading-relaxed">Conectores ligam ideias no texto e são essenciais para compreensão. Indicam relações de adição, contraste, causa, consequência e conclusão.</p>
-        </motion.div>
-
-        {/* Tópicos */}
-        <motion.div
-          className="mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
-          <h2 className="text-3xl font-bold font-['Patrick_Hand'] mb-6 flex items-center gap-2">
-            <span>📚</span> Tópicos Principais
-          </h2>
-          <div className="space-y-4">
-            
-            <motion.div
-              className="p-6 bg-white/5 backdrop-blur-sm rounded-xl border-l-4 hover:bg-white/10 transition-all"
-              style={{ borderLeftColor: '#dc2626' }}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0 }}
-            >
-              <h3 className="text-xl font-bold mb-2">Adición</h3>
-              <p className="text-white/80">Y, también, además, asimismo, igualmente. Ex: "Me gusta el café. Además, tomo té."</p>
-            </motion.div>
-            
-            <motion.div
-              className="p-6 bg-white/5 backdrop-blur-sm rounded-xl border-l-4 hover:bg-white/10 transition-all"
-              style={{ borderLeftColor: '#dc2626' }}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              <h3 className="text-xl font-bold mb-2">Contraste</h3>
-              <p className="text-white/80">Pero, sin embargo, no obstante, aunque, a pesar de. Ex: "Estudié mucho, pero no aprobé."</p>
-            </motion.div>
-            
-            <motion.div
-              className="p-6 bg-white/5 backdrop-blur-sm rounded-xl border-l-4 hover:bg-white/10 transition-all"
-              style={{ borderLeftColor: '#dc2626' }}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <h3 className="text-xl font-bold mb-2">Causa</h3>
-              <p className="text-white/80">Porque, ya que, puesto que, debido a. Ex: "No fui porque estaba enfermo."</p>
-            </motion.div>
-            
-            <motion.div
-              className="p-6 bg-white/5 backdrop-blur-sm rounded-xl border-l-4 hover:bg-white/10 transition-all"
-              style={{ borderLeftColor: '#dc2626' }}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.30000000000000004 }}
-            >
-              <h3 className="text-xl font-bold mb-2">Consecuencia</h3>
-              <p className="text-white/80">Por lo tanto, por eso, así que, entonces. Ex: "Llovió, por lo tanto nos quedamos en casa."</p>
-            </motion.div>
-            
+      {/* Conteúdo Principal */}
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Título */}
+        <div className="mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
+            Conectores
+          </h1>
+          <div className="flex items-center gap-2 text-white/60">
+            <Target className="w-5 h-5" />
+            <span className="text-sm uppercase tracking-wider">Biblioteca ENEM PRO</span>
           </div>
-        </motion.div>
+        </div>
 
-        {/* Exemplos */}
-        <motion.div
-          className="mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <h2 className="text-3xl font-bold font-['Patrick_Hand'] mb-6 flex items-center gap-2">
-            <span>💡</span> Exemplos
-          </h2>
-          <div className="space-y-6">
-            
-            <motion.div
-              className="p-6 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl"
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0 }}
-            >
-              <h3 className="text-xl font-bold mb-3">Contraste</h3>
-              <div className="mb-3">
-                <strong className="text-white/90">Problema:</strong>
-                <p className="text-white/70 mt-1">___ hacía frío, salimos.</p>
+        {/* Visão Geral */}
+        <section className="mb-12">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 bg-#dc2626/20 rounded-lg">
+                <BookOpen className="w-6 h-6 text-#dc2626" style={{ color: '#dc2626' }} />
               </div>
-              <div>
-                <strong className="text-white/90">Solução:</strong>
-                <p className="text-white/70 mt-1">Aunque hacía frío, salimos. (apesar de)</p>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              className="p-6 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl"
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              <h3 className="text-xl font-bold mb-3">Causa</h3>
-              <div className="mb-3">
-                <strong className="text-white/90">Problema:</strong>
-                <p className="text-white/70 mt-1">No vine ___ estaba enfermo.</p>
-              </div>
-              <div>
-                <strong className="text-white/90">Solução:</strong>
-                <p className="text-white/70 mt-1">No vine porque estaba enfermo. (porque = causa)</p>
-              </div>
-            </motion.div>
-            
+              <h2 className="text-2xl font-bold">Visão Geral</h2>
+            </div>
+            <p className="text-white/80 leading-relaxed text-lg">
+              
+            </p>
           </div>
-        </motion.div>
+        </section>
 
+        {/* Tópicos-Chave */}
+        <section className="mb-12">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 bg-emerald-500/20 rounded-lg">
+                <CheckCircle2 className="w-6 h-6 text-emerald-400" />
+              </div>
+              <h2 className="text-2xl font-bold">Tópicos-Chave</h2>
+            </div>
+            <ul className="space-y-3">
+              
+            </ul>
+          </div>
+        </section>
+
+        {/* Explicação */}
+        <section className="mb-12">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+            <h2 className="text-2xl font-bold mb-6">Explicação Detalhada</h2>
+            <p className="text-white/80 leading-relaxed text-lg">
+              
+            </p>
+          </div>
+        </section>
+
+        {/* Exemplo ENEM */}
+        <section className="mb-12">
+          <div className="bg-gradient-to-br from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 bg-amber-500/20 rounded-lg">
+                <Target className="w-6 h-6 text-amber-400" />
+              </div>
+              <h2 className="text-2xl font-bold">Exemplo ENEM</h2>
+            </div>
+            <p className="text-white/90 leading-relaxed text-lg">
+              
+            </p>
+          </div>
+        </section>
+
+        {/* Questões de Fixação */}
+        {questoes.length > 0 && (
+          <section className="mb-12">
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 bg-blue-500/20 rounded-lg">
+                  <Brain className="w-6 h-6 text-blue-400" />
+                </div>
+                <h2 className="text-2xl font-bold">Questões de Fixação</h2>
+              </div>
+              <div className="space-y-6">
+                {questoes.map((q, idx) => (
+                  <div key={idx} className="bg-white/5 rounded-xl p-6">
+                    <p className="font-semibold mb-4 text-lg">{idx + 1}. {q.enunciado}</p>
+                    <div className="space-y-2">
+                      {q.alternativas.map((alt, altIdx) => (
+                        <div key={altIdx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                          <span className="font-medium text-#dc2626" style={{ color: '#dc2626' }}>
+                            {String.fromCharCode(65 + altIdx)})
+                          </span>
+                          <span className="text-white/80">{alt}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Mapa Mental */}
         
 
-        {/* Dicas */}
-        <motion.div
-          className="mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <h2 className="text-3xl font-bold font-['Patrick_Hand'] mb-6 flex items-center gap-2">
-            <span>💡</span> Dicas para o ENEM
-          </h2>
-          <div className="grid gap-4">
-            
-            <motion.div
-              className="flex items-start gap-3 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0 }}
-            >
-              <span className="text-2xl">✓</span>
-              <p className="text-white/90">Identifique relação lógica entre frases</p>
-            </motion.div>
-            
-            <motion.div
-              className="flex items-start gap-3 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.05 }}
-            >
-              <span className="text-2xl">✓</span>
-              <p className="text-white/90">Sin embargo, por lo tanto = início de frase</p>
-            </motion.div>
-            
-            <motion.div
-              className="flex items-start gap-3 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              <span className="text-2xl">✓</span>
-              <p className="text-white/90">Pero, así que = meio de frase</p>
-            </motion.div>
-            
-            <motion.div
-              className="flex items-start gap-3 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.15000000000000002 }}
-            >
-              <span className="text-2xl">✓</span>
-              <p className="text-white/90">Aunque = apesar de (contraste)</p>
-            </motion.div>
-            
-            <motion.div
-              className="flex items-start gap-3 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <span className="text-2xl">✓</span>
-              <p className="text-white/90">Porque vs por qué vs porqué</p>
-            </motion.div>
-            
+        {/* Resumo */}
+        <section className="mb-12">
+          <div className="bg-gradient-to-br from-emerald-500/10 to-green-500/10 border border-emerald-500/20 rounded-2xl p-8">
+            <h2 className="text-2xl font-bold mb-4">Resumo</h2>
+            <p className="text-white/90 leading-relaxed text-lg">
+              
+            </p>
           </div>
-        </motion.div>
+        </section>
 
-        {/* Erros Comuns */}
-        <motion.div
-          className="mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <h2 className="text-3xl font-bold font-['Patrick_Hand'] mb-6 flex items-center gap-2">
-            <span>⚠️</span> Erros Comuns
-          </h2>
-          <div className="grid gap-4">
-            
-            <motion.div
-              className="flex items-start gap-3 p-4 bg-red-500/10 backdrop-blur-sm rounded-xl border border-red-500/30"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0 }}
-            >
-              <span className="text-2xl">✗</span>
-              <p className="text-white/90">Confundir "porque" (causa) com "¿por qué?" (pergunta)</p>
-            </motion.div>
-            
-            <motion.div
-              className="flex items-start gap-3 p-4 bg-red-500/10 backdrop-blur-sm rounded-xl border border-red-500/30"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.05 }}
-            >
-              <span className="text-2xl">✗</span>
-              <p className="text-white/90">Usar múltiplos conectores de contraste juntos</p>
-            </motion.div>
-            
-            <motion.div
-              className="flex items-start gap-3 p-4 bg-red-500/10 backdrop-blur-sm rounded-xl border border-red-500/30"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              <span className="text-2xl">✗</span>
-              <p className="text-white/90">Estrutura errada após "a pesar de"</p>
-            </motion.div>
-            
-          </div>
-        </motion.div>
-
-        {/* Quiz */}
-        <motion.div
-          className="mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-        >
-          <MicroQuiz
-            materia="espanhol"
-            capitulo="conectores"
-            questions={[{"pergunta":"Estudié mucho, ___ no aprobé.","opcoes":["y","pero","porque","entonces"],"respostaCorreta":1,"explicacao":""},
-              {"pergunta":"___ tenía sueño, seguí estudiando.","opcoes":["Porque","Sin embargo","Aunque","Por lo tanto"],"respostaCorreta":2,"explicacao":""},
-              {"pergunta":"Llovió. ___, el partido fue cancelado.","opcoes":["Además","Sin embargo","Por lo tanto","Aunque"],"respostaCorreta":2,"explicacao":""}
-            ]}
-          />
-        </motion.div>
-
-        {/* Mensagem final */}
-        <motion.div
-          className="text-center p-8 bg-gradient-to-r from-#dc2626/20 to-#fa4444/20 backdrop-blur-sm rounded-2xl"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <p className="text-lg text-white/80">
-            💡 Complete este módulo e ganhe até 10 FP no quiz final!
-          </p>
-        </motion.div>
-      </div>
+        {/* MicroQuiz */}
+        {showQuiz && (
+          <section className="mb-12">
+            <MicroQuiz
+              moduloSlug="espanhol_conectores"
+              questoes={questoes}
+            />
+          </section>
+        )}
+      </main>
     </div>
-  );
+  )
 }

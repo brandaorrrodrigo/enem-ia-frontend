@@ -366,7 +366,14 @@ export default function VerbTensesPresentPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Complete: She ___ to school every day.","opcoes":["go","goes","is going","has gone"],"correta":1},{"pergunta":"I ___ English for 5 years.","opcoes":["study","am studying","have studied","studied"],"correta":2},{"pergunta":"What ___ you ___ right now?","opcoes":["do/do","are/doing","have/done","did/do"],"correta":1}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="verb-tenses-present"
+            questions={[{"pergunta":"Complete: She ___ to school every day.","opcoes":["go","goes","is going","has gone"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"I ___ English for 5 years.","opcoes":["study","am studying","have studied","studied"],"respostaCorreta":2,"explicacao":""},
+              {"pergunta":"What ___ you ___ right now?","opcoes":["do/do","are/doing","have/done","did/do"],"respostaCorreta":1,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

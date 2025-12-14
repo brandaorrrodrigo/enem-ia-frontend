@@ -343,7 +343,14 @@ export default function FalseFriendsPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"I'm ___ studying English. (atualmente)","opcoes":["actually","currently","presently","lately"],"correta":1},{"pergunta":"\"Library\" significa:","opcoes":["Livraria","Biblioteca","Livro","Livreiro"],"correta":1},{"pergunta":"\"Parents\" são:","opcoes":["Parentes","Pais","Aparentes","Parte"],"correta":1}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="false-friends"
+            questions={[{"pergunta":"I'm ___ studying English. (atualmente)","opcoes":["actually","currently","presently","lately"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"\"Library\" significa:","opcoes":["Livraria","Biblioteca","Livro","Livreiro"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"\"Parents\" são:","opcoes":["Parentes","Pais","Aparentes","Parte"],"respostaCorreta":1,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

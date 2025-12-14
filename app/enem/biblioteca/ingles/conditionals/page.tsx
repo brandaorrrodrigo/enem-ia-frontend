@@ -377,7 +377,14 @@ export default function ConditionalsPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"If I ___ rich, I ___ a house.","opcoes":["am/buy","were/would buy","had been/would have bought","will be/buy"],"correta":1},{"pergunta":"If it ___ tomorrow, we ___ home.","opcoes":["rains/will stay","rained/would stay","will rain/stay","had rained/would stay"],"correta":0},{"pergunta":"If you heat water to 100°C, it ___.","opcoes":["boils","will boil","would boil","boiled"],"correta":0}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="conditionals"
+            questions={[{"pergunta":"If I ___ rich, I ___ a house.","opcoes":["am/buy","were/would buy","had been/would have bought","will be/buy"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"If it ___ tomorrow, we ___ home.","opcoes":["rains/will stay","rained/would stay","will rain/stay","had rained/would stay"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"If you heat water to 100°C, it ___.","opcoes":["boils","will boil","would boil","boiled"],"respostaCorreta":0,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

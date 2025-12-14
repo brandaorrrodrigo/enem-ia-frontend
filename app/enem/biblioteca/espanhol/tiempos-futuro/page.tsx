@@ -362,7 +362,14 @@ export default function TiemposFuturoPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Mañana yo ___ a la playa.","opcoes":["iré","iría","iba","fui"],"correta":0},{"pergunta":"Nosotros ___ tiempo mañana.","opcoes":["tenemos","teníamos","tendremos","tuvimos"],"correta":2},{"pergunta":"Ellos ___ a viajar pronto.","opcoes":["irán","van","iban","fueron"],"correta":1}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="tiempos-futuro"
+            questions={[{"pergunta":"Mañana yo ___ a la playa.","opcoes":["iré","iría","iba","fui"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"Nosotros ___ tiempo mañana.","opcoes":["tenemos","teníamos","tendremos","tuvimos"],"respostaCorreta":2,"explicacao":""},
+              {"pergunta":"Ellos ___ a viajar pronto.","opcoes":["irán","van","iban","fueron"],"respostaCorreta":1,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

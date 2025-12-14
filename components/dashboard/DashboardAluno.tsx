@@ -411,14 +411,14 @@ function HeaderDashboard({ nome, curso, universidade, atualizadoEm }: any) {
 }
 
 // Funções auxiliares
-function getCorStatus(status: string): string {
-  const cores: Record<string, string> = {
+function getCorStatus(status: string): "blue" | "gray" | "green" | "purple" | "red" | "yellow" {
+  const cores: Record<string, "blue" | "gray" | "green" | "purple" | "red" | "yellow"> = {
     'Crítico': 'red',
     'Atenção': 'yellow',
     'No Caminho': 'blue',
     'Excelente': 'green'
   };
-  return cores[status] || 'gray';
+  return (cores[status] as "blue" | "gray" | "green" | "purple" | "red" | "yellow") || 'gray';
 }
 
 function getTendenciaCor(direcao: string): string {

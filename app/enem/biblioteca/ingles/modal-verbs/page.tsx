@@ -362,7 +362,14 @@ export default function ModalVerbsPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"You ___ smoke here. (proibido)","opcoes":["mustn't","don't have to","shouldn't","can't"],"correta":0},{"pergunta":"___ I use your phone? (pedido educado)","opcoes":["Can","Could","May","Might"],"correta":1},{"pergunta":"You ___ see a doctor. (conselho)","opcoes":["must","have to","should","can"],"correta":2}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="modal-verbs"
+            questions={[{"pergunta":"You ___ smoke here. (proibido)","opcoes":["mustn't","don't have to","shouldn't","can't"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"___ I use your phone? (pedido educado)","opcoes":["Can","Could","May","Might"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"You ___ see a doctor. (conselho)","opcoes":["must","have to","should","can"],"respostaCorreta":2,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

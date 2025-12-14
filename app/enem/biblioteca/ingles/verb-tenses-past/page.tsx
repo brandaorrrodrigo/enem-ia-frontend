@@ -366,7 +366,14 @@ export default function VerbTensesPastPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"I ___ my homework last night.","opcoes":["do","did","was doing","have done"],"correta":1},{"pergunta":"They ___ TV when I arrived.","opcoes":["watched","were watching","have watched","had watched"],"correta":1},{"pergunta":"She ___ already ___ when I got there.","opcoes":["has/left","was/leaving","had/left","did/leave"],"correta":2}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="verb-tenses-past"
+            questions={[{"pergunta":"I ___ my homework last night.","opcoes":["do","did","was doing","have done"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"They ___ TV when I arrived.","opcoes":["watched","were watching","have watched","had watched"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"She ___ already ___ when I got there.","opcoes":["has/left","was/leaving","had/left","did/leave"],"respostaCorreta":2,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

@@ -343,7 +343,14 @@ export default function ConectoresPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Estudié mucho, ___ no aprobé.","opcoes":["y","pero","porque","entonces"],"correta":1},{"pergunta":"___ tenía sueño, seguí estudiando.","opcoes":["Porque","Sin embargo","Aunque","Por lo tanto"],"correta":2},{"pergunta":"Llovió. ___, el partido fue cancelado.","opcoes":["Además","Sin embargo","Por lo tanto","Aunque"],"correta":2}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="conectores"
+            questions={[{"pergunta":"Estudié mucho, ___ no aprobé.","opcoes":["y","pero","porque","entonces"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"___ tenía sueño, seguí estudiando.","opcoes":["Porque","Sin embargo","Aunque","Por lo tanto"],"respostaCorreta":2,"explicacao":""},
+              {"pergunta":"Llovió. ___, el partido fue cancelado.","opcoes":["Además","Sin embargo","Por lo tanto","Aunque"],"respostaCorreta":2,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

@@ -370,7 +370,14 @@ export default function PassiveVoicePage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Ativa: \"They built this house in 1900.\" → Passiva:","opcoes":["This house built in 1900","This house is built in 1900","This house was built in 1900","This house has built in 1900"],"correta":2},{"pergunta":"The window ___ by the boy.","opcoes":["broke","was broken","has broken","is breaking"],"correta":1},{"pergunta":"English ___ all over the world.","opcoes":["speaks","is spoken","has spoken","was spoken"],"correta":1}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="passive-voice"
+            questions={[{"pergunta":"Ativa: \"They built this house in 1900.\" → Passiva:","opcoes":["This house built in 1900","This house is built in 1900","This house was built in 1900","This house has built in 1900"],"respostaCorreta":2,"explicacao":""},
+              {"pergunta":"The window ___ by the boy.","opcoes":["broke","was broken","has broken","is breaking"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"English ___ all over the world.","opcoes":["speaks","is spoken","has spoken","was spoken"],"respostaCorreta":1,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

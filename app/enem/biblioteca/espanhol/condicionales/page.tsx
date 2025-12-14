@@ -362,7 +362,14 @@ export default function CondicionalesPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Si ___ rico, ___ un coche.","opcoes":["soy/compro","fuera/compraría","hubiera sido/habría comprado","seré/compraré"],"correta":1},{"pergunta":"Si llueve mañana, no ___.","opcoes":["iré","iría","voy","fuera"],"correta":0},{"pergunta":"Si ___ estudiado, ___ aprobado.","opcoes":["he/he","había/había","hubiera/habría","haya/haya"],"correta":2}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="condicionales"
+            questions={[{"pergunta":"Si ___ rico, ___ un coche.","opcoes":["soy/compro","fuera/compraría","hubiera sido/habría comprado","seré/compraré"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"Si llueve mañana, no ___.","opcoes":["iré","iría","voy","fuera"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"Si ___ estudiado, ___ aprobado.","opcoes":["he/he","había/había","hubiera/habría","haya/haya"],"respostaCorreta":2,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

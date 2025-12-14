@@ -377,7 +377,14 @@ export default function ReportedSpeechPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Direct: \"I will help you.\" → Reported:","opcoes":["He said he will help me","He said he would help me","He said he helps me","He said he helped me"],"correta":1},{"pergunta":"Direct: \"Do you like pizza?\" → Reported:","opcoes":["He asked do I like pizza","He asked if I liked pizza","He asked if I like pizza","He asked I like pizza"],"correta":1},{"pergunta":"She ___ me she was happy.","opcoes":["said","told","asked","spoke"],"correta":1}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="reported-speech"
+            questions={[{"pergunta":"Direct: \"I will help you.\" → Reported:","opcoes":["He said he will help me","He said he would help me","He said he helps me","He said he helped me"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"Direct: \"Do you like pizza?\" → Reported:","opcoes":["He asked do I like pizza","He asked if I liked pizza","He asked if I like pizza","He asked I like pizza"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"She ___ me she was happy.","opcoes":["said","told","asked","spoke"],"respostaCorreta":1,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

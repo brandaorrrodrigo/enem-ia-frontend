@@ -366,7 +366,14 @@ export default function TiemposPresentePage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Yo ___ (ser) estudiante.","opcoes":["soy","estoy","eres","es"],"correta":0},{"pergunta":"Quiero que tú ___ (estudiar).","opcoes":["estudias","estudies","estudia","estudiar"],"correta":1},{"pergunta":"Nosotros ___ (tener) una casa.","opcoes":["tenemos","tienen","teníamos","tendremos"],"correta":0}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="tiempos-presente"
+            questions={[{"pergunta":"Yo ___ (ser) estudiante.","opcoes":["soy","estoy","eres","es"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"Quiero que tú ___ (estudiar).","opcoes":["estudias","estudies","estudia","estudiar"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"Nosotros ___ (tener) una casa.","opcoes":["tenemos","tienen","teníamos","tendremos"],"respostaCorreta":0,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

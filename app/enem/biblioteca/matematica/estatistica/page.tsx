@@ -81,7 +81,7 @@ export default function EstatisticaPage() {
           <section style={{ marginBottom: '40px' }}>
             <h2 style={{ fontFamily: "'Patrick Hand', cursive", fontSize: '32px', color: '#3b82f6', marginBottom: '20px', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>📈 Média Aritmética</h2>
             <p><strong>Fórmula:</strong> Média = (soma de todos os valores) ÷ (quantidade de valores)</p>
-            <p><strong>Exemplo:</strong> Média de {2, 4, 6, 8} = (2+4+6+8) ÷ 4 = 20 ÷ 4 = 5</p>
+            <p><strong>Exemplo:</strong> Média de 2, 4, 6, 8 = (2+4+6+8) ÷ 4 = 20 ÷ 4 = 5</p>
           </section>
 
           <section style={{ marginBottom: '40px' }}>
@@ -89,14 +89,14 @@ export default function EstatisticaPage() {
             <p>A mediana é o valor central de um conjunto de dados ordenados.</p>
             <p><strong>Se quantidade ímpar:</strong> é o valor do meio</p>
             <p><strong>Se quantidade par:</strong> é a média dos dois valores centrais</p>
-            <p><strong>Exemplo:</strong> {1, 3, 5, 7, 9} → Mediana = 5</p>
-            <p><strong>Exemplo:</strong> {2, 4, 6, 8} → Mediana = (4+6)/2 = 5</p>
+            <p><strong>Exemplo:</strong> {'{1, 3, 5, 7, 9}'} → Mediana = 5</p>
+            <p><strong>Exemplo:</strong> {'{2, 4, 6, 8}'} → Mediana = (4+6)/2 = 5</p>
           </section>
 
           <section style={{ marginBottom: '40px' }}>
             <h2 style={{ fontFamily: "'Patrick Hand', cursive", fontSize: '32px', color: '#3b82f6', marginBottom: '20px', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>🔢 Moda</h2>
             <p>A moda é o valor que mais se repete no conjunto de dados.</p>
-            <p><strong>Exemplo:</strong> {3, 5, 5, 7, 9, 5, 3} → Moda = 5 (aparece 3 vezes)</p>
+            <p><strong>Exemplo:</strong> {'{3, 5, 5, 7, 9, 5, 3}'} → Moda = 5 (aparece 3 vezes)</p>
             <p><strong>Amodal:</strong> quando nenhum valor se repete</p>
             <p><strong>Bimodal:</strong> quando dois valores têm a mesma frequência máxima</p>
           </section>
@@ -106,7 +106,7 @@ export default function EstatisticaPage() {
             <div style={{ background: 'rgba(34, 197, 94, 0.1)', border: '2px solid rgba(34, 197, 94, 0.3)', borderRadius: '12px', padding: '20px', marginBottom: '20px' }}>
               <p><strong>As notas de um aluno foram: 7, 8, 6, 8, 9, 8. Calcule média, mediana e moda.</strong></p>
               <p style={{ marginTop: '12px' }}><strong>Média:</strong> (7+8+6+8+9+8) ÷ 6 = 46 ÷ 6 ≈ 7,67</p>
-              <p><strong>Mediana:</strong> Ordenando {6, 7, 8, 8, 8, 9} → (8+8) ÷ 2 = 8</p>
+              <p><strong>Mediana:</strong> Ordenando {'{6, 7, 8, 8, 8, 9}'} → (8+8) ÷ 2 = 8</p>
               <p><strong>Moda:</strong> 8 (aparece 3 vezes)</p>
             </div>
           </section>

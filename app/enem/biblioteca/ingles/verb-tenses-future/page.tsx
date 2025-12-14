@@ -366,7 +366,14 @@ export default function VerbTensesFuturePage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"I ___ help you with that. (decisão agora)","opcoes":["will","am going to","am","going"],"correta":0},{"pergunta":"We ___ Paris next summer. (plano)","opcoes":["will visit","are going to visit","visit","visited"],"correta":1},{"pergunta":"The movie ___ at 7pm. (horário fixo)","opcoes":["will start","is going to start","starts","is starting"],"correta":2}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="verb-tenses-future"
+            questions={[{"pergunta":"I ___ help you with that. (decisão agora)","opcoes":["will","am going to","am","going"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"We ___ Paris next summer. (plano)","opcoes":["will visit","are going to visit","visit","visited"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"The movie ___ at 7pm. (horário fixo)","opcoes":["will start","is going to start","starts","is starting"],"respostaCorreta":2,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

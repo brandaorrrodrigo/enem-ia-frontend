@@ -343,7 +343,14 @@ export default function HeterosemanticosPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"\"Embarazada\" significa:","opcoes":["Embaraçada","Grávida","Envergonhada","Confusa"],"correta":1},{"pergunta":"\"Largo\" significa:","opcoes":["Largo","Comprido","Alto","Grosso"],"correta":1},{"pergunta":"\"Oficina\" significa:","opcoes":["Oficina mecânica","Escritório","Loja","Workshop"],"correta":1}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="heterosemanticos"
+            questions={[{"pergunta":"\"Embarazada\" significa:","opcoes":["Embaraçada","Grávida","Envergonhada","Confusa"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"\"Largo\" significa:","opcoes":["Largo","Comprido","Alto","Grosso"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"\"Oficina\" significa:","opcoes":["Oficina mecânica","Escritório","Loja","Workshop"],"respostaCorreta":1,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

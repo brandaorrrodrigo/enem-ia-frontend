@@ -354,7 +354,14 @@ export default function PreposicionesPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Estudio ___ aprobar.","opcoes":["por","para","a","en"],"correta":1},{"pergunta":"Trabajo ___ la noche.","opcoes":["por","para","a","en"],"correta":0},{"pergunta":"Voy ___ la playa.","opcoes":["por","para","a","en"],"correta":2}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="preposiciones"
+            questions={[{"pergunta":"Estudio ___ aprobar.","opcoes":["por","para","a","en"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"Trabajo ___ la noche.","opcoes":["por","para","a","en"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"Voy ___ la playa.","opcoes":["por","para","a","en"],"respostaCorreta":2,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

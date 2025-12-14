@@ -332,7 +332,14 @@ export default function PronombresPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"___ hermano es médico.","opcoes":["Mi","Mío","Me","Yo"],"correta":0},{"pergunta":"Ella ___ llama María.","opcoes":["le","la","se","me"],"correta":2},{"pergunta":"___ libro (aquí) es nuevo.","opcoes":["Este","Ese","Aquel","Esto"],"correta":0}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="pronombres"
+            questions={[{"pergunta":"___ hermano es médico.","opcoes":["Mi","Mío","Me","Yo"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"Ella ___ llama María.","opcoes":["le","la","se","me"],"respostaCorreta":2,"explicacao":""},
+              {"pergunta":"___ libro (aquí) es nuevo.","opcoes":["Este","Ese","Aquel","Esto"],"respostaCorreta":0,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

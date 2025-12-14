@@ -577,7 +577,7 @@ export function CardCenario({
   data,
 }: {
   tipo: 'otimista' | 'realista' | 'critico';
-  data: PrevisaoResultado['cenarios']['otimista'];
+  data: PrevisaoResultado['cenarios']['otimista'] | PrevisaoResultado['cenarios']['realista'] | PrevisaoResultado['cenarios']['critico'];
 }) {
   const getConfig = () => {
     if (tipo === 'otimista') {
@@ -630,7 +630,7 @@ export function CardCenario({
           {tipo === 'critico' ? 'Riscos:' : 'Requisitos:'}
         </p>
         <ul className="space-y-1">
-          {(tipo === 'critico' ? (data as any).riscos : data.requisitos)?.map((item: string, idx: number) => (
+          {(tipo === 'critico' ? (data as any).riscos : (data as any).requisitos)?.map((item: string, idx: number) => (
             <li key={idx} className="text-xs text-slate-600 flex items-start gap-2">
               <span>{tipo === 'critico' ? '⚠️' : '✓'}</span>
               <span>{item}</span>

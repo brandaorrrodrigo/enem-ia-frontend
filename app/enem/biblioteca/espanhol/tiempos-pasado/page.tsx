@@ -370,7 +370,14 @@ export default function TiemposPasadoPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Ayer ___ al mercado.","opcoes":["fui","iba","he ido","iré"],"correta":0},{"pergunta":"Cuando era joven, ___ en Madrid.","opcoes":["viví","vivía","he vivido","vivo"],"correta":1},{"pergunta":"Esta semana ___ mucho.","opcoes":["trabajé","trabajaba","he trabajado","trabajo"],"correta":2}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="tiempos-pasado"
+            questions={[{"pergunta":"Ayer ___ al mercado.","opcoes":["fui","iba","he ido","iré"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"Cuando era joven, ___ en Madrid.","opcoes":["viví","vivía","he vivido","vivo"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"Esta semana ___ mucho.","opcoes":["trabajé","trabajaba","he trabajado","trabajo"],"respostaCorreta":2,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

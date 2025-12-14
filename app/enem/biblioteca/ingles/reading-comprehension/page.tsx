@@ -354,7 +354,14 @@ export default function ReadingComprehensionPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Qual estratégia usar para identificar o tema geral?","opcoes":["Scanning","Skimming","Tradução literal","Ignorar título"],"correta":1},{"pergunta":"Cognato verdadeiro:","opcoes":["Actually (na verdade)","Pretend (fingir)","Library (biblioteca)","Parents (pais)"],"correta":2},{"pergunta":"Para encontrar data específica, use:","opcoes":["Skimming","Scanning","Leitura completa","Tradução"],"correta":1}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="reading-comprehension"
+            questions={[{"pergunta":"Qual estratégia usar para identificar o tema geral?","opcoes":["Scanning","Skimming","Tradução literal","Ignorar título"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"Cognato verdadeiro:","opcoes":["Actually (na verdade)","Pretend (fingir)","Library (biblioteca)","Parents (pais)"],"respostaCorreta":2,"explicacao":""},
+              {"pergunta":"Para encontrar data específica, use:","opcoes":["Skimming","Scanning","Leitura completa","Tradução"],"respostaCorreta":1,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

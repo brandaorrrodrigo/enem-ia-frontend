@@ -343,7 +343,14 @@ export default function VerbosIrregularesPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"Yo ___ estudiante.","opcoes":["soy","estoy","tengo","hago"],"correta":0},{"pergunta":"Ella ___ enferma hoy.","opcoes":["es","está","tiene","hace"],"correta":1},{"pergunta":"Nosotros ___ una casa grande.","opcoes":["somos","estamos","tenemos","hacemos"],"correta":2}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="verbos-irregulares"
+            questions={[{"pergunta":"Yo ___ estudiante.","opcoes":["soy","estoy","tengo","hago"],"respostaCorreta":0,"explicacao":""},
+              {"pergunta":"Ella ___ enferma hoy.","opcoes":["es","está","tiene","hace"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"Nosotros ___ una casa grande.","opcoes":["somos","estamos","tenemos","hacemos"],"respostaCorreta":2,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

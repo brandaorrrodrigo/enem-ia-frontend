@@ -389,7 +389,7 @@ function gerarDashboardMock(userId: string): DashboardAluno {
           seu_desempenho: 85,
           gap_conhecimento: -15,
           icone: '⚠️',
-          badge: null,
+          badge: undefined,
           cor_badge: '',
           tempo_estimado: 2,
           recursos: {
@@ -411,7 +411,7 @@ function gerarDashboardMock(userId: string): DashboardAluno {
           seu_desempenho: 70,
           gap_conhecimento: -5,
           icone: '⚠️',
-          badge: null,
+          badge: undefined,
           cor_badge: '',
           tempo_estimado: 3,
           recursos: {
@@ -455,7 +455,7 @@ function gerarDashboardMock(userId: string): DashboardAluno {
           seu_desempenho: 80,
           gap_conhecimento: -15,
           icone: '⚠️',
-          badge: null,
+          badge: undefined,
           cor_badge: '',
           tempo_estimado: 2,
           recursos: {

@@ -332,7 +332,14 @@ export default function ConnectivesPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"I was tired, ___ I kept working.","opcoes":["so","but","because","since"],"correta":1},{"pergunta":"___ it was late, he continued.","opcoes":["Despite","However","Although","Because"],"correta":2},{"pergunta":"It rained. ___, the game was cancelled.","opcoes":["Moreover","However","Therefore","Although"],"correta":2}]} />
+          <MicroQuiz
+            materia="ingles"
+            capitulo="connectives"
+            questions={[{"pergunta":"I was tired, ___ I kept working.","opcoes":["so","but","because","since"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"___ it was late, he continued.","opcoes":["Despite","However","Although","Because"],"respostaCorreta":2,"explicacao":""},
+              {"pergunta":"It rained. ___, the game was cancelled.","opcoes":["Moreover","However","Therefore","Although"],"respostaCorreta":2,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

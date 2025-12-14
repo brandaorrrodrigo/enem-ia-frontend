@@ -354,7 +354,15 @@ export default function ComprensionLectoraPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <MicroQuiz questoes={[{"pergunta":"\"Largo\" em espanhol significa:","opcoes":["Largo","Comprido","Longo","Grande"],"correta":1},{"pergunta":"\"Oficina\" significa:","opcoes":["Oficina mecânica","Escritório","Loja","Fábrica"],"correta":1},{"pergunta":"Para encontrar ideia principal:","opcoes":["Ler tudo devagar","Ler título + 1º parágrafo","Traduzir cada palavra","Ignorar o texto"],"correta":1}]} />
+          <MicroQuiz
+            materia="espanhol"
+            capitulo="comprension-lectora"
+            questions={[
+              {"pergunta":"\"Largo\" em espanhol significa:","opcoes":["Largo","Comprido","Longo","Grande"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"\"Oficina\" significa:","opcoes":["Oficina mecânica","Escritório","Loja","Fábrica"],"respostaCorreta":1,"explicacao":""},
+              {"pergunta":"Para encontrar ideia principal:","opcoes":["Ler tudo devagar","Ler título + 1º parágrafo","Traduzir cada palavra","Ignorar o texto"],"respostaCorreta":1,"explicacao":""}
+            ]}
+          />
         </motion.div>
 
         {/* Mensagem final */}

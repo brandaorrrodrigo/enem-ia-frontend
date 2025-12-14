@@ -47,7 +47,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) prever futuro com certeza",
       "D) provar que tudo é genética"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto diz: “o desemprego não é apenas falha individual, mas resultado do modelo econômico”. Tema: **problema social com causas estruturais**. "
   },
   {
@@ -90,7 +90,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) prever futuro com certeza",
       "D) provar que tudo é genética"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, Sociologia é interpretação crítica de textos, charges e situações do cotidiano. ",
     "dificuldade": "média"
   },
@@ -154,7 +154,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) opinião de um grupo pequeno",
       "D) evento natural"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão sobre aumento de suicídios em crise social → **anomia**. "
   },
   {
@@ -197,7 +197,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) opinião de um grupo pequeno",
       "D) evento natural"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Durkheim é cobrado para explicar normas sociais e crises de integração. ",
     "dificuldade": "média"
   },
@@ -259,7 +259,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) leis e regras impessoais",
       "D) sorteio"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão sobre funcionamento do Estado por leis e instituições → **dominação legal-racional**. "
   },
   {
@@ -302,7 +302,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) leis e regras impessoais",
       "D) sorteio"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, Weber aparece em textos sobre Estado, poder, liderança e racionalização. ",
     "dificuldade": "média"
   },
@@ -366,7 +366,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) azar",
       "D) genética"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “o trabalhador produz riqueza, mas não a desfruta”. Tema: **mais-valia/alienação**. "
   },
   {
@@ -409,7 +409,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) azar",
       "D) genética"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Marx é cobrado para interpretar desigualdade, trabalho e críticas ao capitalismo. ",
     "dificuldade": "média"
   },
@@ -473,7 +473,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) neutralidade total",
       "D) estudo científico"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão com charge ridicularizando costumes indígenas → **etnocentrismo**. "
   },
   {
@@ -516,7 +516,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) neutralidade total",
       "D) estudo científico"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM: cultura é diversidade + crítica ao preconceito. ",
     "dificuldade": "média"
   },
@@ -580,7 +580,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) no Estado",
       "D) em universidades"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto sobre padrões de beleza impostos por redes → **mídia e socialização**. "
   },
   {
@@ -623,7 +623,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) no Estado",
       "D) em universidades"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, socialização aparece ligada a educação, mídia, juventude e consumo. ",
     "dificuldade": "média"
   },
@@ -687,7 +687,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) herança familiar",
       "D) cargos públicos"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão sobre SUS e universalização → **direito social**. "
   },
   {
@@ -730,7 +730,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) herança familiar",
       "D) cargos públicos"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM: cidadania = direitos + participação + combate à desigualdade. ",
     "dificuldade": "média"
   },
@@ -794,7 +794,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) trocar de escola",
       "D) mudar de time"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Gráfico mostra maior desemprego entre mulheres negras → **desigualdade interseccional**. "
   },
   {
@@ -837,7 +837,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) trocar de escola",
       "D) mudar de time"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM usa textos e dados para cobrar leitura crítica de desigualdades. ",
     "dificuldade": "média"
   },
@@ -901,7 +901,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) salário fixo garantido",
       "D) aposentadoria imediata"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “trabalhador de app sem vínculo, remuneração variável”. Tema: **precarização/uberização**. "
   },
   {
@@ -944,7 +944,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) salário fixo garantido",
       "D) aposentadoria imediata"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM: trabalho contemporâneo é tema central para cidadania e economia. ",
     "dificuldade": "média"
   },
@@ -1008,7 +1008,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) defender exclusão",
       "D) impedir debate público"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão sobre mobilização por moradia e acesso à cidade → **movimento social urbano**. "
   },
   {
@@ -1051,7 +1051,7 @@ export const SOCIOLOGIA_CONTEUDO = {
       "C) defender exclusão",
       "D) impedir debate público"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM destaca movimentos sociais como parte da cidadania e da democracia. FIM DO BLOCO 6 — SOCIOLOGIA ",
     "dificuldade": "média"
   },

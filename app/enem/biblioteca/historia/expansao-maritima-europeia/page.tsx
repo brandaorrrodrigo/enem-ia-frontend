@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, BookOpen, CheckCircle2, Brain, Target } from 'lucide-react'
-import { MicroQuiz } from '@/components/MicroQuiz'
+import MicroQuiz from '@/components/MicroQuiz'
 
 export default function ExpansaoMaritimaEuropeiaPage() {
   const [scrollProgress, setScrollProgress] = useState(0)

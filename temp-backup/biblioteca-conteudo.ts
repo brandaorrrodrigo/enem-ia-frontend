@@ -800,7 +800,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Garantia o fim da escravidão.",
       "D) Regulamentava apenas a produção de ouro."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Um enunciado menciona: “grandes propriedades monocultoras, voltadas à exportação, com uso intensivo de mão de obra escravizada”. Pergunta: Esse modelo descreve principalmente: A) a mineração aurífera no século XVIII. B) a economia cafeeira do século XIX. C) a economia açucareira do período colonial. D) a pequena produção mercantil no Sul. Resolução comentada: A descrição combina latifúndio, monocultura e escravidão voltada à exportação, características típicas do ciclo do açúcar no Brasil colonial. Resposta: **C**. Exemplo 2 Um texto cita o senhor de engenho como “uma espécie de pequeno rei nos domínios rurais”, com poder econômico, político e religioso. Pergunta: Esse trecho revela: A) a centralidade das câmaras municipais. B) a força do poder local e da elite rural. C) a democracia social no meio rural. D) o enfraquecimento da monarquia portuguesa. Comentário: O senhor de engenho acumulava poder econômico, social e político local. Resposta: **B**. "
   },
   {
@@ -811,7 +811,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) escravizada africana.",
       "D) servil europeia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Um enunciado menciona: “grandes propriedades monocultoras, voltadas à exportação, com uso intensivo de mão de obra escravizada”. Pergunta: Esse modelo descreve principalmente: A) a mineração aurífera no século XVIII. B) a economia cafeeira do século XIX. C) a economia açucareira do período colonial. D) a pequena produção mercantil no Sul. Resolução comentada: A descrição combina latifúndio, monocultura e escravidão voltada à exportação, características típicas do ciclo do açúcar no Brasil colonial. Resposta: **C**. Exemplo 2 Um texto cita o senhor de engenho como “uma espécie de pequeno rei nos domínios rurais”, com poder econômico, político e religioso. Pergunta: Esse trecho revela: A) a centralidade das câmaras municipais. B) a força do poder local e da elite rural. C) a democracia social no meio rural. D) o enfraquecimento da monarquia portuguesa. Comentário: O senhor de engenho acumulava poder econômico, social e político local. Resposta: **B**. "
   }
 ],
@@ -825,7 +825,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) urbana e industrializada.",
       "D) composta majoritariamente por pequenos proprietários."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -836,7 +836,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) introduziu técnicas de refino e crédito.",
       "D) substituiu Portugal como metrópole."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -877,7 +877,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Garantia o fim da escravidão.",
       "D) Regulamentava apenas a produção de ouro."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Brasil Colônia foi estruturado para servir economicamente à metrópole portuguesa, com destaque para a produção de açúcar em grandes propriedades escravistas. A sociedade era profundamente desigual e hierarquizada. A presença holandesa impulsionou a modernização do setor, mas, após a expulsão, o Brasil enfrentou forte concorrência internacional. Esse modelo de economia exportadora escravista deixou marcas profundas na formação social e econômica do país. ",
     "dificuldade": "média"
   },
@@ -889,7 +889,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) escravizada africana.",
       "D) servil europeia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Brasil Colônia foi estruturado para servir economicamente à metrópole portuguesa, com destaque para a produção de açúcar em grandes propriedades escravistas. A sociedade era profundamente desigual e hierarquizada. A presença holandesa impulsionou a modernização do setor, mas, após a expulsão, o Brasil enfrentou forte concorrência internacional. Esse modelo de economia exportadora escravista deixou marcas profundas na formação social e econômica do país. ",
     "dificuldade": "média"
   },
@@ -901,7 +901,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) urbana e industrializada.",
       "D) composta majoritariamente por pequenos proprietários."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Brasil Colônia foi estruturado para servir economicamente à metrópole portuguesa, com destaque para a produção de açúcar em grandes propriedades escravistas. A sociedade era profundamente desigual e hierarquizada. A presença holandesa impulsionou a modernização do setor, mas, após a expulsão, o Brasil enfrentou forte concorrência internacional. Esse modelo de economia exportadora escravista deixou marcas profundas na formação social e econômica do país. ",
     "dificuldade": "média"
   }
@@ -955,7 +955,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Sudeste.",
       "D) Centro-Oeste exclusivamente."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão menciona que a Coroa portuguesa exigia o envio de 100 arrobas anuais de ouro e ameaçava cobrar o imposto atrasado à força. Pergunta: Esse mecanismo é conhecido como: A) capitação. B) quinto. C) derrama. D) finta. Comentário: A cobrança compulsória dos impostos atrasados, quando a meta anual não era atingida, é chamada de derrama. Resposta: **C**. Exemplo 2 Um texto fala sobre a formação de vilas, circulação de ideias ilustradas e novas práticas culturais nas áreas de mineração. Pergunta: Isso expressa: A) ruralização da colônia. B) urbanização e diversificação social. C) retorno à economia açucareira. D) isolamento das capitanias. Resposta: **B**. "
   },
   {
@@ -966,7 +966,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fundir o ouro, cunhar barras e cobrar impostos.",
       "D) registrar sesmarias."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão menciona que a Coroa portuguesa exigia o envio de 100 arrobas anuais de ouro e ameaçava cobrar o imposto atrasado à força. Pergunta: Esse mecanismo é conhecido como: A) capitação. B) quinto. C) derrama. D) finta. Comentário: A cobrança compulsória dos impostos atrasados, quando a meta anual não era atingida, é chamada de derrama. Resposta: **C**. Exemplo 2 Um texto fala sobre a formação de vilas, circulação de ideias ilustradas e novas práticas culturais nas áreas de mineração. Pergunta: Isso expressa: A) ruralização da colônia. B) urbanização e diversificação social. C) retorno à economia açucareira. D) isolamento das capitanias. Resposta: **B**. "
   }
 ],
@@ -980,7 +980,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) aumento da urbanização e da mobilidade.",
       "D) fim da dependência de Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -991,7 +991,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) aboliu o quinto.",
       "D) concedia mais autonomia às vilas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1032,7 +1032,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Sudeste.",
       "D) Centro-Oeste exclusivamente."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração reorganizou o espaço, a economia e a sociedade colonial, aproximando a colônia de debates ilustrados e intensificando o controle metropolitano. O auge e a crise do ouro reforçaram conflitos que alimentaram movimentos de contestação à dominação portuguesa. ",
     "dificuldade": "média"
   },
@@ -1044,7 +1044,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fundir o ouro, cunhar barras e cobrar impostos.",
       "D) registrar sesmarias."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração reorganizou o espaço, a economia e a sociedade colonial, aproximando a colônia de debates ilustrados e intensificando o controle metropolitano. O auge e a crise do ouro reforçaram conflitos que alimentaram movimentos de contestação à dominação portuguesa. ",
     "dificuldade": "média"
   },
@@ -1056,7 +1056,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) aumento da urbanização e da mobilidade.",
       "D) fim da dependência de Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração reorganizou o espaço, a economia e a sociedade colonial, aproximando a colônia de debates ilustrados e intensificando o controle metropolitano. O auge e a crise do ouro reforçaram conflitos que alimentaram movimentos de contestação à dominação portuguesa. ",
     "dificuldade": "média"
   }
@@ -1110,7 +1110,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) abolição da escravidão nas colônias.",
       "D) criação da República no Brasil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Um texto destaca que a Independência do Brasil manteve a escravidão, a grande propriedade e a estrutura social. Pergunta: Isso indica que a Independência foi, sobretudo: A) uma revolução social. B) uma ruptura radical com as estruturas coloniais. C) um acordo de elites para manter privilégios. D) um movimento popular sem participação da elite. Resposta: **C**. Exemplo 2 A Constituição de 1824 criou o Poder Moderador, que: A) enfraquecia o imperador. B) permitia ao imperador intervir nos demais poderes. C) era exercido apenas pelo Parlamento. D) garantia a separação absoluta entre os poderes. Resposta: **B**. "
   },
   {
@@ -1121,7 +1121,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a decisão de D. Pedro de permanecer no Brasil.",
       "D) a coroação de D. Pedro I."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Um texto destaca que a Independência do Brasil manteve a escravidão, a grande propriedade e a estrutura social. Pergunta: Isso indica que a Independência foi, sobretudo: A) uma revolução social. B) uma ruptura radical com as estruturas coloniais. C) um acordo de elites para manter privilégios. D) um movimento popular sem participação da elite. Resposta: **C**. Exemplo 2 A Constituição de 1824 criou o Poder Moderador, que: A) enfraquecia o imperador. B) permitia ao imperador intervir nos demais poderes. C) era exercido apenas pelo Parlamento. D) garantia a separação absoluta entre os poderes. Resposta: **B**. "
   }
 ],
@@ -1135,7 +1135,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) uma guerra entre Brasil e Portugal.",
       "D) um pacto de apoio ao absolutismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1146,7 +1146,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) instaurou uma república federativa.",
       "D) extinguiu o Poder Moderador."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1187,7 +1187,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) abolição da escravidão nas colônias.",
       "D) criação da República no Brasil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência consolidou a autonomia política do Brasil, mas preservou estruturas sociais excludentes. O Primeiro Reinado evidenciou tensões entre centralização imperial e demandas regionais, preparando o terreno para novas experiências políticas no período regencial. ",
     "dificuldade": "média"
   },
@@ -1199,7 +1199,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a decisão de D. Pedro de permanecer no Brasil.",
       "D) a coroação de D. Pedro I."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência consolidou a autonomia política do Brasil, mas preservou estruturas sociais excludentes. O Primeiro Reinado evidenciou tensões entre centralização imperial e demandas regionais, preparando o terreno para novas experiências políticas no período regencial. ",
     "dificuldade": "média"
   },
@@ -1211,7 +1211,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) uma guerra entre Brasil e Portugal.",
       "D) um pacto de apoio ao absolutismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência consolidou a autonomia política do Brasil, mas preservou estruturas sociais excludentes. O Primeiro Reinado evidenciou tensões entre centralização imperial e demandas regionais, preparando o terreno para novas experiências políticas no período regencial. ",
     "dificuldade": "média"
   }
@@ -1265,7 +1265,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) isolar o Brasil do comércio mundial.",
       "D) acelerar o fim da escravidão em 1800."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um gráfico de exportações no século XIX com forte crescimento do café. Pergunta: Esse fenômeno está associado: A) à industrialização pesada brasileira. B) à diminuição da integração ao mercado internacional. C) à formação de uma elite cafeeira poderosa. D) ao fim da economia agroexportadora. Resposta: **C**. Exemplo 2 Uma lei proibia o tráfico negreiro a partir de 1850. Pergunta: Trata-se da: A) Lei do Ventre Livre. B) Lei Eusébio de Queirós. C) Lei dos Sexagenários. D) Lei Áurea. Resposta: **B**. "
   },
   {
@@ -1276,7 +1276,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Oeste Paulista.",
       "D) Sertão nordestino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um gráfico de exportações no século XIX com forte crescimento do café. Pergunta: Esse fenômeno está associado: A) à industrialização pesada brasileira. B) à diminuição da integração ao mercado internacional. C) à formação de uma elite cafeeira poderosa. D) ao fim da economia agroexportadora. Resposta: **C**. Exemplo 2 Uma lei proibia o tráfico negreiro a partir de 1850. Pergunta: Trata-se da: A) Lei do Ventre Livre. B) Lei Eusébio de Queirós. C) Lei dos Sexagenários. D) Lei Áurea. Resposta: **B**. "
   }
 ],
@@ -1290,7 +1290,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) o isolamento internacional do Brasil.",
       "D) os laços com Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1301,7 +1301,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) rejeição total da imprensa.",
       "D) defesa unânime dos fazendeiros."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1342,7 +1342,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) isolar o Brasil do comércio mundial.",
       "D) acelerar o fim da escravidão em 1800."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Segundo Reinado foi o auge da economia cafeeira e da monarquia, mas também o período em que se acumularam contradições sociais, raciais e políticas. A combinação de modernização econômica, manutenção da escravidão até 1888 e tensões entre elites e monarquia resultou na queda do regime imperial. ",
     "dificuldade": "média"
   },
@@ -1354,7 +1354,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Oeste Paulista.",
       "D) Sertão nordestino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Segundo Reinado foi o auge da economia cafeeira e da monarquia, mas também o período em que se acumularam contradições sociais, raciais e políticas. A combinação de modernização econômica, manutenção da escravidão até 1888 e tensões entre elites e monarquia resultou na queda do regime imperial. ",
     "dificuldade": "média"
   },
@@ -1366,7 +1366,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) o isolamento internacional do Brasil.",
       "D) os laços com Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Segundo Reinado foi o auge da economia cafeeira e da monarquia, mas também o período em que se acumularam contradições sociais, raciais e políticas. A combinação de modernização econômica, manutenção da escravidão até 1888 e tensões entre elites e monarquia resultou na queda do regime imperial. ",
     "dificuldade": "média"
   }
@@ -1420,7 +1420,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) regime de partidos fortes e independentes.",
       "D) sistema de eleições secretas e livres."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma charge mostra coronéis conduzindo eleitores como gado até as urnas. Pergunta: A crítica se refere a: A) voto secreto. B) voto de cabresto. C) sufrágio universal. D) plebiscito popular. Resposta: **B**. Exemplo 2 Uma questão relaciona café-com-leite à alternância de presidentes. Comentário: A expressão descreve a hegemonia de São Paulo (café) e Minas Gerais (leite) na presidência. "
   },
   {
@@ -1431,7 +1431,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) redistribuição igualitária de renda.",
       "D) política de seguridade social."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma charge mostra coronéis conduzindo eleitores como gado até as urnas. Pergunta: A crítica se refere a: A) voto secreto. B) voto de cabresto. C) sufrágio universal. D) plebiscito popular. Resposta: **B**. Exemplo 2 Uma questão relaciona café-com-leite à alternância de presidentes. Comentário: A expressão descreve a hegemonia de São Paulo (café) e Minas Gerais (leite) na presidência. "
   }
 ],
@@ -1445,7 +1445,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Bahia.",
       "D) Rio Grande do Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1456,7 +1456,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) crise do café e desgaste das oligarquias.",
       "D) fim da industrialização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1497,7 +1497,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) regime de partidos fortes e independentes.",
       "D) sistema de eleições secretas e livres."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha consolidou um sistema político excludente, controlado por poucas famílias e grupos regionais. A falta de participação popular e o uso da máquina pública para sustentar interesses privados prepararam o terreno para mudanças profundas em 1930. ",
     "dificuldade": "média"
   },
@@ -1509,7 +1509,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) redistribuição igualitária de renda.",
       "D) política de seguridade social."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha consolidou um sistema político excludente, controlado por poucas famílias e grupos regionais. A falta de participação popular e o uso da máquina pública para sustentar interesses privados prepararam o terreno para mudanças profundas em 1930. ",
     "dificuldade": "média"
   },
@@ -1521,7 +1521,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Bahia.",
       "D) Rio Grande do Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha consolidou um sistema político excludente, controlado por poucas famílias e grupos regionais. A falta de participação popular e o uso da máquina pública para sustentar interesses privados prepararam o terreno para mudanças profundas em 1930. ",
     "dificuldade": "média"
   }
@@ -1575,7 +1575,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a República Velha oligárquica.",
       "D) a Ditadura Militar."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a carteira de trabalho, férias remuneradas e jornada regulada. Pergunta: Essas medidas se relacionam à: A) política agrária da República Velha. B) CLT na Era Vargas. C) escravidão no Império. D) reformas liberais da década de 1990. Resposta: **B**. Exemplo 2 O Estado Novo (1937–1945) pode ser caracterizado como: A) república parlamentar. B) democracia liberal plena. C) regime ditatorial centralizado. D) monarquia constitucional. Resposta: **C**. "
   },
   {
@@ -1586,7 +1586,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) uma reforma tributária.",
       "D) uma lei apenas simbólica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a carteira de trabalho, férias remuneradas e jornada regulada. Pergunta: Essas medidas se relacionam à: A) política agrária da República Velha. B) CLT na Era Vargas. C) escravidão no Império. D) reformas liberais da década de 1990. Resposta: **B**. Exemplo 2 O Estado Novo (1937–1945) pode ser caracterizado como: A) república parlamentar. B) democracia liberal plena. C) regime ditatorial centralizado. D) monarquia constitucional. Resposta: **C**. "
   }
 ],
@@ -1600,7 +1600,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) restaurou a monarquia.",
       "D) implantou voto direto para todos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1611,7 +1611,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) terceirização total.",
       "D) proibição do sindicalismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1652,7 +1652,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a República Velha oligárquica.",
       "D) a Ditadura Militar."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas representou uma virada na relação entre Estado, economia e sociedade, com a criação de direitos trabalhistas e reforço do poder central. O período deixou heranças duradouras na legislação social e na configuração política brasileira. ",
     "dificuldade": "média"
   },
@@ -1664,7 +1664,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) uma reforma tributária.",
       "D) uma lei apenas simbólica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas representou uma virada na relação entre Estado, economia e sociedade, com a criação de direitos trabalhistas e reforço do poder central. O período deixou heranças duradouras na legislação social e na configuração política brasileira. ",
     "dificuldade": "média"
   },
@@ -1676,7 +1676,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) restaurou a monarquia.",
       "D) implantou voto direto para todos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas representou uma virada na relação entre Estado, economia e sociedade, com a criação de direitos trabalhistas e reforço do poder central. O período deixou heranças duradouras na legislação social e na configuração política brasileira. ",
     "dificuldade": "média"
   }
@@ -1731,7 +1731,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) unanimidade popular.",
       "D) apenas estudantes."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão fala em crescimento econômico acelerado, grande endividamento e aumento da desigualdade nos anos 1970. Trata-se do: A) milagre econômico. B) Plano Real. C) Encilhamento. D) Plano de Metas. Resposta: **A**. Exemplo 2 Um trecho menciona: “suspensão de garantias constitucionais, intervenção nos Estados, censura e repressão a opositores”. Refere-se ao: A) AI-5. B) voto distrital. C) Constituição de 1946. D) Ato da Anistia. Resposta: **A**. "
   },
   {
@@ -1742,7 +1742,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) partido único.",
       "D) proibição completa de partidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão fala em crescimento econômico acelerado, grande endividamento e aumento da desigualdade nos anos 1970. Trata-se do: A) milagre econômico. B) Plano Real. C) Encilhamento. D) Plano de Metas. Resposta: **A**. Exemplo 2 Um trecho menciona: “suspensão de garantias constitucionais, intervenção nos Estados, censura e repressão a opositores”. Refere-se ao: A) AI-5. B) voto distrital. C) Constituição de 1946. D) Ato da Anistia. Resposta: **A**. "
   }
 ],
@@ -1756,7 +1756,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) crescimento econômico com desigualdade.",
       "D) fim das exportações."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1767,7 +1767,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) censura à imprensa.",
       "D) fortalecimento do regime militar."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1808,7 +1808,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) unanimidade popular.",
       "D) apenas estudantes."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Ditadura Militar marcou profundamente a política, a economia e os direitos humanos no Brasil. O regime combinou autoritarismo, modernização econômica e forte repressão, gerando debates e memórias que ainda influenciam a sociedade brasileira. ",
     "dificuldade": "média"
   },
@@ -1820,7 +1820,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) partido único.",
       "D) proibição completa de partidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Ditadura Militar marcou profundamente a política, a economia e os direitos humanos no Brasil. O regime combinou autoritarismo, modernização econômica e forte repressão, gerando debates e memórias que ainda influenciam a sociedade brasileira. ",
     "dificuldade": "média"
   },
@@ -1832,7 +1832,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) crescimento econômico com desigualdade.",
       "D) fim das exportações."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Ditadura Militar marcou profundamente a política, a economia e os direitos humanos no Brasil. O regime combinou autoritarismo, modernização econômica e forte repressão, gerando debates e memórias que ainda influenciam a sociedade brasileira. ",
     "dificuldade": "média"
   }
@@ -1886,7 +1886,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) consolidou o AI-5.",
       "D) aboliu os partidos políticos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão cita a Constituição de 1988 como “Cidadã” por: A) restaurar o absolutismo. B) restringir direitos trabalhistas. C) ampliar direitos sociais e garantias fundamentais. D) instaurar a censura. Resposta: **C**. Exemplo 2 Diretas Já representou: A) movimento pela volta da monarquia. B) campanha por eleições diretas para presidente. C) apoio ao AI-5. D) defesa do bipartidarismo. Resposta: **B**. "
   },
   {
@@ -1897,7 +1897,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) foram um movimento isolado de militares.",
       "D) visavam à manutenção do regime."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão cita a Constituição de 1988 como “Cidadã” por: A) restaurar o absolutismo. B) restringir direitos trabalhistas. C) ampliar direitos sociais e garantias fundamentais. D) instaurar a censura. Resposta: **C**. Exemplo 2 Diretas Já representou: A) movimento pela volta da monarquia. B) campanha por eleições diretas para presidente. C) apoio ao AI-5. D) defesa do bipartidarismo. Resposta: **B**. "
   }
 ],
@@ -1911,7 +1911,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) foi elaborada por militares.",
       "D) extinguiu eleições diretas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1922,7 +1922,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) retorno ao voto censitário.",
       "D) concentração de poderes no Executivo absoluto."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1963,7 +1963,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) consolidou o AI-5.",
       "D) aboliu os partidos políticos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização consolidou um novo marco institucional, com ampliação de direitos e fortalecimento das instituições democráticas. A Constituição de 1988 tornou-se referência para o exercício da cidadania e para as lutas sociais contemporâneas. ",
     "dificuldade": "média"
   },
@@ -1975,7 +1975,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) foram um movimento isolado de militares.",
       "D) visavam à manutenção do regime."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização consolidou um novo marco institucional, com ampliação de direitos e fortalecimento das instituições democráticas. A Constituição de 1988 tornou-se referência para o exercício da cidadania e para as lutas sociais contemporâneas. ",
     "dificuldade": "média"
   },
@@ -1987,7 +1987,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) foi elaborada por militares.",
       "D) extinguiu eleições diretas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização consolidou um novo marco institucional, com ampliação de direitos e fortalecimento das instituições democráticas. A Constituição de 1988 tornou-se referência para o exercício da cidadania e para as lutas sociais contemporâneas. ",
     "dificuldade": "média"
   }
@@ -2040,7 +2040,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) proibida aos cidadãos.",
       "D) similar ao voto moderno feminino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão apresenta um esquema da democracia ateniense, em que apenas homens livres, maiores de idade e nascidos em Atenas participam da Assembleia. Comentário: Democracia direta, porém restrita. Exemplo 2 Um texto fala da importância do direito romano para a organização das leis modernas. Pergunta: Essa herança é chamada de: A) legado jurídico. B) legado mitológico apenas. C) herança agrícola. D) continuidade tribal. Resposta: **A**. "
   },
   {
@@ -2051,7 +2051,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) filosofia especulativa.",
       "D) democracia ampla."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão apresenta um esquema da democracia ateniense, em que apenas homens livres, maiores de idade e nascidos em Atenas participam da Assembleia. Comentário: Democracia direta, porém restrita. Exemplo 2 Um texto fala da importância do direito romano para a organização das leis modernas. Pergunta: Essa herança é chamada de: A) legado jurídico. B) legado mitológico apenas. C) herança agrícola. D) continuidade tribal. Resposta: **A**. "
   }
 ],
@@ -2065,7 +2065,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) era composto por escravizados.",
       "D) era um órgão religioso."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2076,7 +2076,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) apenas soldados.",
       "D) os magistrados."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2117,7 +2117,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) proibida aos cidadãos.",
       "D) similar ao voto moderno feminino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Grécia e Roma oferecem modelos de organização política, jurídica e cultural que continuam a ser referência até hoje, ao mesmo tempo em que revelam sistemas de cidadania profundamente excludentes, tema frequente em questões de interpretação crítica no ENEM. ",
     "dificuldade": "média"
   },
@@ -2129,7 +2129,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) filosofia especulativa.",
       "D) democracia ampla."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Grécia e Roma oferecem modelos de organização política, jurídica e cultural que continuam a ser referência até hoje, ao mesmo tempo em que revelam sistemas de cidadania profundamente excludentes, tema frequente em questões de interpretação crítica no ENEM. ",
     "dificuldade": "média"
   },
@@ -2141,7 +2141,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) era composto por escravizados.",
       "D) era um órgão religioso."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Grécia e Roma oferecem modelos de organização política, jurídica e cultural que continuam a ser referência até hoje, ao mesmo tempo em que revelam sistemas de cidadania profundamente excludentes, tema frequente em questões de interpretação crítica no ENEM. ",
     "dificuldade": "média"
   }
@@ -2194,7 +2194,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) retorno da servidão medieval.",
       "D) expansão do feudalismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão cita “liberdade, igualdade e fraternidade” como lema de um movimento revolucionário. Pergunta: Trata-se da: A) Revolução Francesa. B) Revolução Industrial. C) Revolução Russa. D) Revolução Cubana. Resposta: **A**. Exemplo 2 Um texto sobre a Independência dos EUA menciona a recusa das colônias em aceitar impostos sem representação no Parlamento. Comentário: Expressa o princípio “no taxation without representation”, ligado ao liberalismo político. "
   },
   {
@@ -2205,7 +2205,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim do capitalismo.",
       "D) fortalecimento das corporações de ofício."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão cita “liberdade, igualdade e fraternidade” como lema de um movimento revolucionário. Pergunta: Trata-se da: A) Revolução Francesa. B) Revolução Industrial. C) Revolução Russa. D) Revolução Cubana. Resposta: **A**. Exemplo 2 Um texto sobre a Independência dos EUA menciona a recusa das colônias em aceitar impostos sem representação no Parlamento. Comentário: Expressa o princípio “no taxation without representation”, ligado ao liberalismo político. "
   }
 ],
@@ -2219,7 +2219,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) economia planificada estatal.",
       "D) ausência de mercado."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2230,7 +2230,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) instaurar o comunismo.",
       "D) negar qualquer influência iluminista."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2271,7 +2271,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) retorno da servidão medieval.",
       "D) expansão do feudalismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "As revoluções burguesas inauguram uma nova etapa da história política, marcada por constituições, declarações de direitos e governos baseados em representação. No entanto, a universalização desses direitos foi lenta e cheia de contradições, tema central em discussões cobradas no ENEM. FIM DO BLOCO 1 – HISTÓRIA (10 temas) Pronto para você enviar ao Claude para transformar em HTML e distribuir nos cadernos de História da Biblioteca do ENEM Pro. Quando quiser, posso fazer: - Bloco 2 – Geografia (10 temas) - Bloco 3 – Sociologia - Bloco 4 – Filosofia - Blocos para Inglês, Espanhol e Artes. ",
     "dificuldade": "média"
   },
@@ -2283,7 +2283,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim do capitalismo.",
       "D) fortalecimento das corporações de ofício."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "As revoluções burguesas inauguram uma nova etapa da história política, marcada por constituições, declarações de direitos e governos baseados em representação. No entanto, a universalização desses direitos foi lenta e cheia de contradições, tema central em discussões cobradas no ENEM. FIM DO BLOCO 1 – HISTÓRIA (10 temas) Pronto para você enviar ao Claude para transformar em HTML e distribuir nos cadernos de História da Biblioteca do ENEM Pro. Quando quiser, posso fazer: - Bloco 2 – Geografia (10 temas) - Bloco 3 – Sociologia - Bloco 4 – Filosofia - Blocos para Inglês, Espanhol e Artes. ",
     "dificuldade": "média"
   },
@@ -2295,7 +2295,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) economia planificada estatal.",
       "D) ausência de mercado."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "As revoluções burguesas inauguram uma nova etapa da história política, marcada por constituições, declarações de direitos e governos baseados em representação. No entanto, a universalização desses direitos foi lenta e cheia de contradições, tema central em discussões cobradas no ENEM. FIM DO BLOCO 1 – HISTÓRIA (10 temas) Pronto para você enviar ao Claude para transformar em HTML e distribuir nos cadernos de História da Biblioteca do ENEM Pro. Quando quiser, posso fazer: - Bloco 2 – Geografia (10 temas) - Bloco 3 – Sociologia - Bloco 4 – Filosofia - Blocos para Inglês, Espanhol e Artes. ",
     "dificuldade": "média"
   }
@@ -2348,7 +2348,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a produção açucareira voltada ao mercado externo.",
       "D) a pecuária de corte."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca que a economia açucareira colonial combinava grande propriedade, mão de obra escrava e produção voltada ao mercado externo. Pergunta: Esse modelo é conhecido como: A) minifúndio policultor para subsistência. B) plantation. C) agricultura familiar. D) parceria agrícola. Comentário: Plantation = monocultura, latifúndio, escravidão, exportação. Resposta: **B**. Exemplo 2 Um texto menciona condições precárias nos navios negreiros e a lucratividade do comércio de escravos. Pergunta: Esse trecho refere-se ao: A) escambo indígena. B) bandeirismo de apresamento. C) tráfico atlântico de africanos escravizados. D) imigração europeia no século XIX. Resposta: **C**. "
   },
   {
@@ -2359,7 +2359,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) agricultura familiar e subsistência.",
       "D) produção comunitária e cooperativismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca que a economia açucareira colonial combinava grande propriedade, mão de obra escrava e produção voltada ao mercado externo. Pergunta: Esse modelo é conhecido como: A) minifúndio policultor para subsistência. B) plantation. C) agricultura familiar. D) parceria agrícola. Comentário: Plantation = monocultura, latifúndio, escravidão, exportação. Resposta: **B**. Exemplo 2 Um texto menciona condições precárias nos navios negreiros e a lucratividade do comércio de escravos. Pergunta: Esse trecho refere-se ao: A) escambo indígena. B) bandeirismo de apresamento. C) tráfico atlântico de africanos escravizados. D) imigração europeia no século XIX. Resposta: **C**. "
   }
 ],
@@ -2373,7 +2373,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a colônia servia à metrópole como fornecedora de matérias-primas e consumidora de manufaturados.",
       "D) a metrópole e a colônia eram economicamente iguais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2384,7 +2384,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Nordeste litorâneo.",
       "D) Centro-Oeste."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2425,7 +2425,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a produção açucareira voltada ao mercado externo.",
       "D) a pecuária de corte."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A compreensão da economia açucareira e da escravidão africana é essencial para entender a formação social, a desigualdade e o racismo estrutural no Brasil, temas frequentemente cobrados no ENEM. ",
     "dificuldade": "média"
   },
@@ -2437,7 +2437,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) agricultura familiar e subsistência.",
       "D) produção comunitária e cooperativismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A compreensão da economia açucareira e da escravidão africana é essencial para entender a formação social, a desigualdade e o racismo estrutural no Brasil, temas frequentemente cobrados no ENEM. ",
     "dificuldade": "média"
   },
@@ -2449,7 +2449,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a colônia servia à metrópole como fornecedora de matérias-primas e consumidora de manufaturados.",
       "D) a metrópole e a colônia eram economicamente iguais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A compreensão da economia açucareira e da escravidão africana é essencial para entender a formação social, a desigualdade e o racismo estrutural no Brasil, temas frequentemente cobrados no ENEM. ",
     "dificuldade": "média"
   }
@@ -2502,7 +2502,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a região Sul.",
       "D) a Amazônia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a derrama como medida impopular em Minas Gerais. Pergunta: A derrama consistia em: A) distribuição de terras entre mineradores pobres. B) perdão de dívidas fiscais antigas. C) cobrança compulsória do ouro devido à Coroa quando a cota anual não era atingida. D) suspensão da coleta de impostos. Resposta: **C**. Exemplo 2 Um texto descreve o surgimento de vilas e maior urbanização na região mineradora. Comentário: A mineração favoreceu urbanização, circulação de ideias e formação de uma elite letrada. "
   },
   {
@@ -2513,7 +2513,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) 20% do ouro devido à Coroa.",
       "D) 50%."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a derrama como medida impopular em Minas Gerais. Pergunta: A derrama consistia em: A) distribuição de terras entre mineradores pobres. B) perdão de dívidas fiscais antigas. C) cobrança compulsória do ouro devido à Coroa quando a cota anual não era atingida. D) suspensão da coleta de impostos. Resposta: **C**. Exemplo 2 Um texto descreve o surgimento de vilas e maior urbanização na região mineradora. Comentário: A mineração favoreceu urbanização, circulação de ideias e formação de uma elite letrada. "
   }
 ],
@@ -2527,7 +2527,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) cobrança forçada do ouro não recolhido.",
       "D) taxa sobre produtos ingleses."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2538,7 +2538,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim da escravidão.",
       "D) industrialização imediata."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2579,7 +2579,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a região Sul.",
       "D) a Amazônia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração transformou a colônia, fortaleceu o controle da Coroa e criou um ambiente propício à contestação política, fundamental para entender os movimentos de emancipação. ",
     "dificuldade": "média"
   },
@@ -2591,7 +2591,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) 20% do ouro devido à Coroa.",
       "D) 50%."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração transformou a colônia, fortaleceu o controle da Coroa e criou um ambiente propício à contestação política, fundamental para entender os movimentos de emancipação. ",
     "dificuldade": "média"
   },
@@ -2603,7 +2603,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) cobrança forçada do ouro não recolhido.",
       "D) taxa sobre produtos ingleses."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração transformou a colônia, fortaleceu o controle da Coroa e criou um ambiente propício à contestação política, fundamental para entender os movimentos de emancipação. ",
     "dificuldade": "média"
   }
@@ -2657,7 +2657,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) 1822.",
       "D) 1889."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão aponta a Independência do Brasil como “conservadora” em muitos aspectos. Comentário: Manteve-se a escravidão, o latifúndio e a monarquia; a ruptura foi política, mas não social. Exemplo 2 Pergunta: O “Dia do Fico” (1822) foi importante porque: A) declarou a imediata abolição da escravidão. B) marcou a decisão de Dom Pedro de permanecer no Brasil, contrariando as Cortes. C) proclamou a República. D) extinguiu o poder moderador. Resposta: **B**. "
   },
   {
@@ -2668,7 +2668,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) permissão de comércio com “nações amigas”, rompendo o exclusivo metropolitano.",
       "D) proibição de comércio com a Inglaterra."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão aponta a Independência do Brasil como “conservadora” em muitos aspectos. Comentário: Manteve-se a escravidão, o latifúndio e a monarquia; a ruptura foi política, mas não social. Exemplo 2 Pergunta: O “Dia do Fico” (1822) foi importante porque: A) declarou a imediata abolição da escravidão. B) marcou a decisão de Dom Pedro de permanecer no Brasil, contrariando as Cortes. C) proclamou a República. D) extinguiu o poder moderador. Resposta: **B**. "
   }
 ],
@@ -2682,7 +2682,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) extinguiu a monarquia.",
       "D) aboliu a escravidão."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2693,7 +2693,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) reforma agrária ampla.",
       "D) República federativa."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2734,7 +2734,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) 1822.",
       "D) 1889."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência e o Primeiro Reinado aparecem no ENEM conectados à formação do Estado nacional, à manutenção de estruturas sociais e às tensões políticas do século XIX. ",
     "dificuldade": "média"
   },
@@ -2746,7 +2746,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) permissão de comércio com “nações amigas”, rompendo o exclusivo metropolitano.",
       "D) proibição de comércio com a Inglaterra."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência e o Primeiro Reinado aparecem no ENEM conectados à formação do Estado nacional, à manutenção de estruturas sociais e às tensões políticas do século XIX. ",
     "dificuldade": "média"
   },
@@ -2758,7 +2758,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) extinguiu a monarquia.",
       "D) aboliu a escravidão."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência e o Primeiro Reinado aparecem no ENEM conectados à formação do Estado nacional, à manutenção de estruturas sociais e às tensões políticas do século XIX. ",
     "dificuldade": "média"
   }
@@ -2811,7 +2811,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) café.",
       "D) borracha."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão descreve a transição do trabalho escravo para o imigrante assalariado nas fazendas cafeeiras paulistas. Comentário: Esse processo insere o Brasil em nova lógica de trabalho, mantendo, porém, desigualdades e exploração. Exemplo 2 Pergunta: A Lei Áurea (1888) A) previa indenização aos ex-escravos. B) previa ampla reforma agrária. C) aboliu oficialmente a escravidão, sem políticas de inclusão aos libertos. D) criou escolas obrigatórias a todos os ex-escravos. Resposta: **C**. "
   },
   {
@@ -2822,7 +2822,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) libertou todos os escravos sexagenários.",
       "D) libertou crianças nascidas de mães escravas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão descreve a transição do trabalho escravo para o imigrante assalariado nas fazendas cafeeiras paulistas. Comentário: Esse processo insere o Brasil em nova lógica de trabalho, mantendo, porém, desigualdades e exploração. Exemplo 2 Pergunta: A Lei Áurea (1888) A) previa indenização aos ex-escravos. B) previa ampla reforma agrária. C) aboliu oficialmente a escravidão, sem políticas de inclusão aos libertos. D) criou escolas obrigatórias a todos os ex-escravos. Resposta: **C**. "
   }
 ],
@@ -2836,7 +2836,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) somente os idosos seriam libertos.",
       "D) apenas escravos urbanos seriam livres."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2847,7 +2847,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) questões religiosa, militar e crescimento do republicanismo.",
       "D) fim do café como produto de exportação."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2888,7 +2888,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) café.",
       "D) borracha."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo do café, da abolição e da transição para o trabalho livre é fundamental para compreender a formação do mercado de trabalho e das desigualdades sociais no Brasil, temas frequentes no ENEM. ",
     "dificuldade": "média"
   },
@@ -2900,7 +2900,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) libertou todos os escravos sexagenários.",
       "D) libertou crianças nascidas de mães escravas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo do café, da abolição e da transição para o trabalho livre é fundamental para compreender a formação do mercado de trabalho e das desigualdades sociais no Brasil, temas frequentes no ENEM. ",
     "dificuldade": "média"
   },
@@ -2912,7 +2912,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) somente os idosos seriam libertos.",
       "D) apenas escravos urbanos seriam livres."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo do café, da abolição e da transição para o trabalho livre é fundamental para compreender a formação do mercado de trabalho e das desigualdades sociais no Brasil, temas frequentes no ENEM. ",
     "dificuldade": "média"
   }
@@ -2965,7 +2965,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) São Paulo e Minas Gerais.",
       "D) São Paulo e Rio Grande do Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: O coronelismo pode ser definido como: A) domínio de militares sobre a política. B) controle de grandes proprietários rurais sobre votos e poder local. C) influência da Igreja na República. D) domínio dos operários. Resposta: **B**. Exemplo 2 Uma questão sobre Canudos destaca um movimento sertanejo liderado por Antônio Conselheiro, reprimido pelo Exército. Comentário: Exemplo de conflito entre populações pobres do sertão e o Estado republicano. "
   },
   {
@@ -2976,7 +2976,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) voto eletrônico.",
       "D) voto obrigatório."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: O coronelismo pode ser definido como: A) domínio de militares sobre a política. B) controle de grandes proprietários rurais sobre votos e poder local. C) influência da Igreja na República. D) domínio dos operários. Resposta: **B**. Exemplo 2 Uma questão sobre Canudos destaca um movimento sertanejo liderado por Antônio Conselheiro, reprimido pelo Exército. Comentário: Exemplo de conflito entre populações pobres do sertão e o Estado republicano. "
   }
 ],
@@ -2990,7 +2990,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) abolição da escravidão.",
       "D) redemocratização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -3001,7 +3001,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Amazônia.",
       "D) Sul do Brasil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -3042,7 +3042,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) São Paulo e Minas Gerais.",
       "D) São Paulo e Rio Grande do Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha evidencia como o poder político se articulava com elites rurais e como setores populares resistiram a esse modelo, temas recorrentes em questões de cidadania e democracia no ENEM. ",
     "dificuldade": "média"
   },
@@ -3054,7 +3054,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) voto eletrônico.",
       "D) voto obrigatório."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha evidencia como o poder político se articulava com elites rurais e como setores populares resistiram a esse modelo, temas recorrentes em questões de cidadania e democracia no ENEM. ",
     "dificuldade": "média"
   },
@@ -3066,7 +3066,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) abolição da escravidão.",
       "D) redemocratização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha evidencia como o poder político se articulava com elites rurais e como setores populares resistiram a esse modelo, temas recorrentes em questões de cidadania e democracia no ENEM. ",
     "dificuldade": "média"
   }
@@ -3119,7 +3119,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a Proclamação da República.",
       "D) a abolição da escravidão."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a CLT (Consolidação das Leis do Trabalho) e o reconhecimento de direitos trabalhistas. Comentário: Embora importante, o sistema sindical mantinha forte controle estatal. Exemplo 2 Pergunta: O Estado Novo (1937–1945) caracterizou-se por: A) ampla democracia e liberdade de imprensa. B) regime autoritário, com censura e culto ao líder. C) parlamentarismo estável. D) ausência de propaganda oficial. Resposta: **B**. "
   },
   {
@@ -3130,7 +3130,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) uma monarquia.",
       "D) um governo anarquista."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a CLT (Consolidação das Leis do Trabalho) e o reconhecimento de direitos trabalhistas. Comentário: Embora importante, o sistema sindical mantinha forte controle estatal. Exemplo 2 Pergunta: O Estado Novo (1937–1945) caracterizou-se por: A) ampla democracia e liberdade de imprensa. B) regime autoritário, com censura e culto ao líder. C) parlamentarismo estável. D) ausência de propaganda oficial. Resposta: **B**. "
   }
 ],
@@ -3144,7 +3144,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) não teve relação com Vargas.",
       "D) tratou apenas de impostos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -3155,7 +3155,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) apenas capital estrangeiro.",
       "D) primazia da agricultura."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -3196,7 +3196,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a Proclamação da República.",
       "D) a abolição da escravidão."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas é central para entender a formação do Estado nacional desenvolvimentista, o trabalhismo e a industrialização brasileira, temas frequentes em provas do ENEM. ",
     "dificuldade": "média"
   },
@@ -3208,7 +3208,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) uma monarquia.",
       "D) um governo anarquista."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas é central para entender a formação do Estado nacional desenvolvimentista, o trabalhismo e a industrialização brasileira, temas frequentes em provas do ENEM. ",
     "dificuldade": "média"
   },
@@ -3220,7 +3220,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) não teve relação com Vargas.",
       "D) tratou apenas de impostos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas é central para entender a formação do Estado nacional desenvolvimentista, o trabalhismo e a industrialização brasileira, temas frequentes em provas do ENEM. ",
     "dificuldade": "média"
   }
@@ -3274,7 +3274,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) implantação de socialismo.",
       "D) desmilitarização do Estado."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: O AI-5 ficou conhecido por: A) ampliar a liberdade de expressão. B) suspender direitos políticos e permitir fechamento do Congresso. C) instaurar eleições diretas para presidente. D) abolir a censura. Resposta: **B**. Exemplo 2 Uma questão analisa o “milagre econômico” destacando crescimento e aumento da desigualdade. Comentário: Crescimento sem distribuição de renda e com endividamento externo. "
   },
   {
@@ -3285,7 +3285,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim da censura.",
       "D) legalização de todos os partidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: O AI-5 ficou conhecido por: A) ampliar a liberdade de expressão. B) suspender direitos políticos e permitir fechamento do Congresso. C) instaurar eleições diretas para presidente. D) abolir a censura. Resposta: **B**. Exemplo 2 Uma questão analisa o “milagre econômico” destacando crescimento e aumento da desigualdade. Comentário: Crescimento sem distribuição de renda e com endividamento externo. "
   }
 ],
@@ -3299,7 +3299,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ausência de partidos.",
       "D) apenas para eleições municipais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -3310,7 +3310,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) significou distribuição ampla de renda.",
       "D) reduziu todas as desigualdades."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -3351,7 +3351,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) implantação de socialismo.",
       "D) desmilitarização do Estado."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A ditadura militar é tema recorrente no ENEM, conectando política, direitos humanos, economia e memória histórica. Saber relacionar o período à redemocratização é essencial. ",
     "dificuldade": "média"
   },
@@ -3363,7 +3363,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim da censura.",
       "D) legalização de todos os partidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A ditadura militar é tema recorrente no ENEM, conectando política, direitos humanos, economia e memória histórica. Saber relacionar o período à redemocratização é essencial. ",
     "dificuldade": "média"
   },
@@ -3375,7 +3375,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ausência de partidos.",
       "D) apenas para eleições municipais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A ditadura militar é tema recorrente no ENEM, conectando política, direitos humanos, economia e memória histórica. Saber relacionar o período à redemocratização é essencial. ",
     "dificuldade": "média"
   }
@@ -3429,7 +3429,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a volta do Império.",
       "D) a independência de Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão descreve a Constituição de 1988 como “Cidadã”. Comentário: O termo enfatiza o foco em direitos e cidadania, associando texto constitucional às lutas sociais dos anos 1970–80. Exemplo 2 Pergunta: A Constituição de 1988 assegurou: A) voto apenas masculino. B) fim do SUS. C) direitos sociais como saúde e educação universal. D) volta do regime militar. Resposta: **C**. "
   },
   {
@@ -3440,7 +3440,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) saúde restrita às Forças Armadas.",
       "D) saúde apenas para trabalhadores formais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão descreve a Constituição de 1988 como “Cidadã”. Comentário: O termo enfatiza o foco em direitos e cidadania, associando texto constitucional às lutas sociais dos anos 1970–80. Exemplo 2 Pergunta: A Constituição de 1988 assegurou: A) voto apenas masculino. B) fim do SUS. C) direitos sociais como saúde e educação universal. D) volta do regime militar. Resposta: **C**. "
   }
 ],
@@ -3454,7 +3454,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) possibilidade de existência de vários partidos.",
       "D) partido único."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -3465,7 +3465,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) aboliu direitos trabalhistas.",
       "D) limitou participação política."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -3506,7 +3506,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a volta do Império.",
       "D) a independência de Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização e a Constituição de 1988 são fundamentais para questões sobre cidadania, direitos humanos e políticas públicas no ENEM. ",
     "dificuldade": "média"
   },
@@ -3518,7 +3518,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) saúde restrita às Forças Armadas.",
       "D) saúde apenas para trabalhadores formais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização e a Constituição de 1988 são fundamentais para questões sobre cidadania, direitos humanos e políticas públicas no ENEM. ",
     "dificuldade": "média"
   },
@@ -3530,7 +3530,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) possibilidade de existência de vários partidos.",
       "D) partido único."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização e a Constituição de 1988 são fundamentais para questões sobre cidadania, direitos humanos e políticas públicas no ENEM. ",
     "dificuldade": "média"
   }
@@ -3583,7 +3583,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Inglaterra.",
       "D) Estados Unidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão menciona trabalhadores destruindo máquinas no século XIX. Comentário: Trata-se do ludismo, forma inicial de resistência à mecanização. Exemplo 2 Pergunta: A Primeira Revolução Industrial ficou marcada pelo uso de: A) energia nuclear. B) máquinas a vapor movidas a carvão. C) energia solar. D) internet. Resposta: **B**. "
   },
   {
@@ -3594,7 +3594,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) criação de sindicatos estatais.",
       "D) greve pacífica apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão menciona trabalhadores destruindo máquinas no século XIX. Comentário: Trata-se do ludismo, forma inicial de resistência à mecanização. Exemplo 2 Pergunta: A Primeira Revolução Industrial ficou marcada pelo uso de: A) energia nuclear. B) máquinas a vapor movidas a carvão. C) energia solar. D) internet. Resposta: **B**. "
   }
 ],
@@ -3608,7 +3608,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) trabalho voluntário.",
       "D) ausência de trabalho."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -3619,7 +3619,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) apenas energia eólica.",
       "D) somente tecnologia digital."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -3660,7 +3660,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) Inglaterra.",
       "D) Estados Unidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Revolução Industrial é tema central no ENEM para relacionar tecnologia, trabalho, urbanização, desigualdades e meio ambiente. ",
     "dificuldade": "média"
   },
@@ -3672,7 +3672,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) criação de sindicatos estatais.",
       "D) greve pacífica apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Revolução Industrial é tema central no ENEM para relacionar tecnologia, trabalho, urbanização, desigualdades e meio ambiente. ",
     "dificuldade": "média"
   },
@@ -3684,7 +3684,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) trabalho voluntário.",
       "D) ausência de trabalho."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Revolução Industrial é tema central no ENEM para relacionar tecnologia, trabalho, urbanização, desigualdades e meio ambiente. ",
     "dificuldade": "média"
   }
@@ -3738,7 +3738,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim de todas as colônias.",
       "D) apenas comércio pacífico."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão fala da partilha da África em conferências europeias sem consultar povos africanos. Comentário: Exemplo clássico do neocolonialismo imperialista. Exemplo 2 Pergunta: A Guerra Fria caracterizou-se por: A) guerra direta EUA x URSS. B) tensão permanente, corrida armamentista e conflitos indiretos. C) ausência de rivalidade ideológica. D) domínio total de um único bloco. Resposta: **B**. "
   },
   {
@@ -3749,7 +3749,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) hegemonia pacífica de um só país.",
       "D) inexistência de alianças militares."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão fala da partilha da África em conferências europeias sem consultar povos africanos. Comentário: Exemplo clássico do neocolonialismo imperialista. Exemplo 2 Pergunta: A Guerra Fria caracterizou-se por: A) guerra direta EUA x URSS. B) tensão permanente, corrida armamentista e conflitos indiretos. C) ausência de rivalidade ideológica. D) domínio total de um único bloco. Resposta: **B**. "
   }
 ],
@@ -3763,7 +3763,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) defesa dos direitos humanos.",
       "D) fim de qualquer tipo de preconceito."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -3774,7 +3774,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) substituir todos os Estados nacionais.",
       "D) controlar apenas a economia mundial."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -3815,7 +3815,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim de todas as colônias.",
       "D) apenas comércio pacífico."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Imperialismo, Guerras Mundiais e Guerra Fria são pilares da história contemporânea e aparecem no ENEM conectados a geopolítica, direitos humanos, descolonização e organização do mundo atual. FIM DO BLOCO 3 – HISTÓRIA (10 temas) ",
     "dificuldade": "média"
   },
@@ -3827,7 +3827,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) hegemonia pacífica de um só país.",
       "D) inexistência de alianças militares."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Imperialismo, Guerras Mundiais e Guerra Fria são pilares da história contemporânea e aparecem no ENEM conectados a geopolítica, direitos humanos, descolonização e organização do mundo atual. FIM DO BLOCO 3 – HISTÓRIA (10 temas) ",
     "dificuldade": "média"
   },
@@ -3839,7 +3839,7 @@ export const HISTORIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) defesa dos direitos humanos.",
       "D) fim de qualquer tipo de preconceito."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Imperialismo, Guerras Mundiais e Guerra Fria são pilares da história contemporânea e aparecem no ENEM conectados a geopolítica, direitos humanos, descolonização e organização do mundo atual. FIM DO BLOCO 3 – HISTÓRIA (10 temas) ",
     "dificuldade": "média"
   }
@@ -5813,7 +5813,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) 5 km",
       "D) 500 km"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 – Escala Um mapa apresenta escala 1:100.000. A distância entre duas cidades no mapa é de 3 cm. Pergunta: Qual a distância real? Cálculo: 1 cm → 100.000 cm = 1 km 3 cm → 3 km Resposta: **3 km**. Exemplo 2 – Projeções Uma questão mostra um mapa-múndi em que a Groenlândia parece quase do tamanho da África. Pergunta: Essa projeção provavelmente é: A) de Peters, enfatizando áreas. B) azimutal, enfatizando distâncias. C) de Mercator, com exagero em altas latitudes. D) cônica, sem distorções. Comentário: Mercator “aumenta” regiões próximas aos polos. Resposta: **C**. "
   },
   {
@@ -5824,7 +5824,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) representa isóbaras e isotermas.",
       "D) não contém legenda."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 – Escala Um mapa apresenta escala 1:100.000. A distância entre duas cidades no mapa é de 3 cm. Pergunta: Qual a distância real? Cálculo: 1 cm → 100.000 cm = 1 km 3 cm → 3 km Resposta: **3 km**. Exemplo 2 – Projeções Uma questão mostra um mapa-múndi em que a Groenlândia parece quase do tamanho da África. Pergunta: Essa projeção provavelmente é: A) de Peters, enfatizando áreas. B) azimutal, enfatizando distâncias. C) de Mercator, com exagero em altas latitudes. D) cônica, sem distorções. Comentário: Mercator “aumenta” regiões próximas aos polos. Resposta: **C**. "
   }
 ],
@@ -5838,7 +5838,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ausência de detalhes.",
       "D) ausência de redução."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -5849,7 +5849,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) azimutal polar.",
       "D) Robinson (compromisso)."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -5890,7 +5890,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) 5 km",
       "D) 500 km"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Cartografia é a base da leitura espacial no ENEM. Dominar escalas e projeções permite interpretar criticamente mapas, identificar distorções e compreender a intencionalidade nas representações do mundo. ",
     "dificuldade": "média"
   },
@@ -5902,7 +5902,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) representa isóbaras e isotermas.",
       "D) não contém legenda."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Cartografia é a base da leitura espacial no ENEM. Dominar escalas e projeções permite interpretar criticamente mapas, identificar distorções e compreender a intencionalidade nas representações do mundo. ",
     "dificuldade": "média"
   },
@@ -5914,7 +5914,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ausência de detalhes.",
       "D) ausência de redução."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Cartografia é a base da leitura espacial no ENEM. Dominar escalas e projeções permite interpretar criticamente mapas, identificar distorções e compreender a intencionalidade nas representações do mundo. ",
     "dificuldade": "média"
   }
@@ -5968,7 +5968,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ao Equador.",
       "D) ao Trópico de Câncer."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 – Latitude Uma questão mostra dois pontos: - Ponto A: 10° N - Ponto B: 30° S Pergunta: Qual é a afirmação correta? A) A está no hemisfério Norte e B no Sul. B) Ambos estão no Norte. C) Ambos estão no Sul. D) Estão sobre o Equador. Resposta: **A**. Exemplo 2 – Fusos Se em Londres (0°) são 12h, que horas são em um lugar a 45° O, considerando fusos teóricos e desconsiderando ajustes políticos? 45° / 15° = 3 fusos → 3 horas a menos (a oeste). 12h – 3h = **9h**. "
   },
   {
@@ -5979,7 +5979,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ao Círculo Polar Ártico.",
       "D) ao Trópico de Capricórnio."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 – Latitude Uma questão mostra dois pontos: - Ponto A: 10° N - Ponto B: 30° S Pergunta: Qual é a afirmação correta? A) A está no hemisfério Norte e B no Sul. B) Ambos estão no Norte. C) Ambos estão no Sul. D) Estão sobre o Equador. Resposta: **A**. Exemplo 2 – Fusos Se em Londres (0°) são 12h, que horas são em um lugar a 45° O, considerando fusos teóricos e desconsiderando ajustes políticos? 45° / 15° = 3 fusos → 3 horas a menos (a oeste). 12h – 3h = **9h**. "
   }
 ],
@@ -5993,7 +5993,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) não muda.",
       "D) volta para 0h sempre."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -6004,7 +6004,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) no Polo Norte.",
       "D) no Polo Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -6045,7 +6045,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ao Equador.",
       "D) ao Trópico de Câncer."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Coordenadas e fusos horários são ferramentas fundamentais para questões que envolvem localização, transportes, globalização e geopolítica. Entender a lógica dos graus e das horas permite resolver problemas típicos do ENEM com segurança. ",
     "dificuldade": "média"
   },
@@ -6057,7 +6057,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ao Círculo Polar Ártico.",
       "D) ao Trópico de Capricórnio."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Coordenadas e fusos horários são ferramentas fundamentais para questões que envolvem localização, transportes, globalização e geopolítica. Entender a lógica dos graus e das horas permite resolver problemas típicos do ENEM com segurança. ",
     "dificuldade": "média"
   },
@@ -6069,7 +6069,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) não muda.",
       "D) volta para 0h sempre."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Coordenadas e fusos horários são ferramentas fundamentais para questões que envolvem localização, transportes, globalização e geopolítica. Entender a lógica dos graus e das horas permite resolver problemas típicos do ENEM com segurança. ",
     "dificuldade": "média"
   }
@@ -6122,7 +6122,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) acumularem apenas areia recente.",
       "D) apresentarem petróleo sempre."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão aborda a Serra do Mar e o Planalto Central brasileiro, classificando-os como: A) planícies recentes de origem marinha. B) dobramentos modernos com vulcanismo intenso. C) planaltos de estrutura antiga. D) bacias sedimentares jovens. Resposta: **C**. Exemplo 2 Um mapa indica Bacia do Paraná e Bacia Amazônica. Pergunta: Essas áreas são: A) escudos cristalinos. B) bacias sedimentares. C) dobramentos modernos. D) áreas de vulcanismo recente. Resposta: **B**. "
   },
   {
@@ -6133,7 +6133,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) podem conter petróleo, gás e aquíferos.",
       "D) não têm relevância econômica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão aborda a Serra do Mar e o Planalto Central brasileiro, classificando-os como: A) planícies recentes de origem marinha. B) dobramentos modernos com vulcanismo intenso. C) planaltos de estrutura antiga. D) bacias sedimentares jovens. Resposta: **C**. Exemplo 2 Um mapa indica Bacia do Paraná e Bacia Amazônica. Pergunta: Essas áreas são: A) escudos cristalinos. B) bacias sedimentares. C) dobramentos modernos. D) áreas de vulcanismo recente. Resposta: **B**. "
   }
 ],
@@ -6147,7 +6147,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) escudos muito antigos.",
       "D) ausência de sismos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -6158,7 +6158,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) planícies glaciares recentes.",
       "D) predomínio de vulcanismo ativo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -6199,7 +6199,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) acumularem apenas areia recente.",
       "D) apresentarem petróleo sempre."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo da estrutura geológica e do relevo permite relacionar recursos naturais, atividades econômicas e riscos ambientais. No ENEM, isso aparece associado à mineração, ocupação do território e impactos ambientais. ",
     "dificuldade": "média"
   },
@@ -6211,7 +6211,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) podem conter petróleo, gás e aquíferos.",
       "D) não têm relevância econômica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo da estrutura geológica e do relevo permite relacionar recursos naturais, atividades econômicas e riscos ambientais. No ENEM, isso aparece associado à mineração, ocupação do território e impactos ambientais. ",
     "dificuldade": "média"
   },
@@ -6223,7 +6223,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) escudos muito antigos.",
       "D) ausência de sismos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo da estrutura geológica e do relevo permite relacionar recursos naturais, atividades econômicas e riscos ambientais. No ENEM, isso aparece associado à mineração, ocupação do território e impactos ambientais. ",
     "dificuldade": "média"
   }
@@ -6276,7 +6276,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) temperaturas abaixo de 0 °C sempre.",
       "D) baixa insolação."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um gráfico com chuvas abundantes o ano todo e altas temperaturas. Pergunta: Esse padrão é típico de qual clima brasileiro? A) Semiárido. B) Subtropical. C) Equatorial. D) Tropical de altitude. Resposta: **C**. Exemplo 2 Um texto menciona o aquecimento anômalo das águas do Pacífico Equatorial e impactos como secas no Nordeste e cheias no Sul. Trata-se de: A) El Niño. B) La Niña. C) Monções. D) Furacões tropicais. Resposta: **A**. "
   },
   {
@@ -6287,7 +6287,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) apenas no Nordeste.",
       "D) apenas na Amazônia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um gráfico com chuvas abundantes o ano todo e altas temperaturas. Pergunta: Esse padrão é típico de qual clima brasileiro? A) Semiárido. B) Subtropical. C) Equatorial. D) Tropical de altitude. Resposta: **C**. Exemplo 2 Um texto menciona o aquecimento anômalo das águas do Pacífico Equatorial e impactos como secas no Nordeste e cheias no Sul. Trata-se de: A) El Niño. B) La Niña. C) Monções. D) Furacões tropicais. Resposta: **A**. "
   }
 ],
@@ -6301,7 +6301,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) são idênticos em todos os lugares.",
       "D) só valem em regiões polares."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -6312,7 +6312,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) frio extremo na Amazônia.",
       "D) neve na região Norte."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -6353,7 +6353,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) temperaturas abaixo de 0 °C sempre.",
       "D) baixa insolação."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Compreender climas e fenômenos climáticos é essencial para interpretar questões de agricultura, disponibilidade de água, riscos de desastres e mudanças climáticas, temas recorrentes no ENEM. ",
     "dificuldade": "média"
   },
@@ -6365,7 +6365,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) apenas no Nordeste.",
       "D) apenas na Amazônia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Compreender climas e fenômenos climáticos é essencial para interpretar questões de agricultura, disponibilidade de água, riscos de desastres e mudanças climáticas, temas recorrentes no ENEM. ",
     "dificuldade": "média"
   },
@@ -6377,7 +6377,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) são idênticos em todos os lugares.",
       "D) só valem em regiões polares."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Compreender climas e fenômenos climáticos é essencial para interpretar questões de agricultura, disponibilidade de água, riscos de desastres e mudanças climáticas, temas recorrentes no ENEM. ",
     "dificuldade": "média"
   }
@@ -6430,7 +6430,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) é desabitado.",
       "D) não sofre pressão antrópica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma imagem mostra árvores altas, grande diversidade, clima quente e úmido. Pergunta: Trata-se provavelmente de: A) Mata de Araucária. B) Caatinga. C) Floresta Amazônica. D) Campos Sulinos. Resposta: **C**. Exemplo 2 Uma questão cita um bioma com clima semiárido e vegetação xerófila (plantas adaptadas à falta de água). Pergunta: É o bioma: A) Cerrado. B) Pampa. C) Caatinga. D) Pantanal. Resposta: **C**. "
   },
   {
@@ -6441,7 +6441,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ocupa apenas a região Norte.",
       "D) não é relevante ao ENEM."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma imagem mostra árvores altas, grande diversidade, clima quente e úmido. Pergunta: Trata-se provavelmente de: A) Mata de Araucária. B) Caatinga. C) Floresta Amazônica. D) Campos Sulinos. Resposta: **C**. Exemplo 2 Uma questão cita um bioma com clima semiárido e vegetação xerófila (plantas adaptadas à falta de água). Pergunta: É o bioma: A) Cerrado. B) Pampa. C) Caatinga. D) Pantanal. Resposta: **C**. "
   }
 ],
@@ -6455,7 +6455,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) clima polar.",
       "D) clima mediterrâneo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -6466,7 +6466,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) uma cordilheira recente.",
       "D) um escudo cristalino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -6507,7 +6507,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) é desabitado.",
       "D) não sofre pressão antrópica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Biomas e vegetação aparecem no ENEM ligados à biodiversidade, mudanças climáticas, agronegócio e conservação. Entender características e ameaças é crucial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   },
@@ -6519,7 +6519,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ocupa apenas a região Norte.",
       "D) não é relevante ao ENEM."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Biomas e vegetação aparecem no ENEM ligados à biodiversidade, mudanças climáticas, agronegócio e conservação. Entender características e ameaças é crucial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   },
@@ -6531,7 +6531,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) clima polar.",
       "D) clima mediterrâneo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Biomas e vegetação aparecem no ENEM ligados à biodiversidade, mudanças climáticas, agronegócio e conservação. Entender características e ameaças é crucial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   }
@@ -6585,7 +6585,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a área drenada por um rio principal e seus afluentes.",
       "D) o lago de uma cidade."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca um rio com grandes desníveis, aproveitado para hidrelétricas. Pergunta: Esse rio é típico de: A) planície. B) planalto. C) manguezal. D) delta. Resposta: **B**. Exemplo 2 Um mapa mostra a Bacia do São Francisco e fala em “rio da integração nacional”. Comentário: O São Francisco atravessa diferentes regiões e é central em projetos de transposição para o semiárido. "
   },
   {
@@ -6596,7 +6596,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) leito mais regular e maior navegação.",
       "D) ausência de meandros."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca um rio com grandes desníveis, aproveitado para hidrelétricas. Pergunta: Esse rio é típico de: A) planície. B) planalto. C) manguezal. D) delta. Resposta: **B**. Exemplo 2 Um mapa mostra a Bacia do São Francisco e fala em “rio da integração nacional”. Comentário: O São Francisco atravessa diferentes regiões e é central em projetos de transposição para o semiárido. "
   }
 ],
@@ -6610,7 +6610,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ser a menor do Brasil.",
       "D) não ter relevância econômica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -6621,7 +6621,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) é um rio da Amazônia.",
       "D) é um lago no Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -6662,7 +6662,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a área drenada por um rio principal e seus afluentes.",
       "D) o lago de uma cidade."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões de hidrografia no ENEM relacionam água, energia, agricultura, cidades e conflitos socioambientais. Ler mapas, gráficos e textos sobre bacias e usos da água é uma habilidade central. ",
     "dificuldade": "média"
   },
@@ -6674,7 +6674,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) leito mais regular e maior navegação.",
       "D) ausência de meandros."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões de hidrografia no ENEM relacionam água, energia, agricultura, cidades e conflitos socioambientais. Ler mapas, gráficos e textos sobre bacias e usos da água é uma habilidade central. ",
     "dificuldade": "média"
   },
@@ -6686,7 +6686,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) ser a menor do Brasil.",
       "D) não ter relevância econômica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões de hidrografia no ENEM relacionam água, energia, agricultura, cidades e conflitos socioambientais. Ler mapas, gráficos e textos sobre bacias e usos da água é uma habilidade central. ",
     "dificuldade": "média"
   }
@@ -6741,7 +6741,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) imigração – emigração.",
       "D) crescimento total + migração."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma pirâmide etária com base larga e topo estreito indica: A) população envelhecida. B) alto percentual de idosos. C) população jovem, com elevada taxa de natalidade. D) queda acelerada da natalidade. Resposta: **C**. Exemplo 2 Um texto descreve deslocamento em massa de trabalhadores rurais para grandes cidades industriais ao longo do século XX. Comentário: Trata-se de êxodo rural, típico do processo de urbanização brasileira. "
   },
   {
@@ -6752,7 +6752,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a taxa de natalidade.",
       "D) a mortalidade infantil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma pirâmide etária com base larga e topo estreito indica: A) população envelhecida. B) alto percentual de idosos. C) população jovem, com elevada taxa de natalidade. D) queda acelerada da natalidade. Resposta: **C**. Exemplo 2 Um texto descreve deslocamento em massa de trabalhadores rurais para grandes cidades industriais ao longo do século XX. Comentário: Trata-se de êxodo rural, típico do processo de urbanização brasileira. "
   }
 ],
@@ -6766,7 +6766,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) migração internacional.",
       "D) migração forçada apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -6777,7 +6777,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) só taxa de natalidade.",
       "D) apenas número de médicos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -6818,7 +6818,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) imigração – emigração.",
       "D) crescimento total + migração."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões demográficas no ENEM misturam leitura de gráficos, interpretação de pirâmides e análise de problemas sociais. Compreender a transição demográfica brasileira é chave para entender debates sobre previdência, saúde e planejamento urbano. ",
     "dificuldade": "média"
   },
@@ -6830,7 +6830,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) a taxa de natalidade.",
       "D) a mortalidade infantil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões demográficas no ENEM misturam leitura de gráficos, interpretação de pirâmides e análise de problemas sociais. Compreender a transição demográfica brasileira é chave para entender debates sobre previdência, saúde e planejamento urbano. ",
     "dificuldade": "média"
   },
@@ -6842,7 +6842,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) migração internacional.",
       "D) migração forçada apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões demográficas no ENEM misturam leitura de gráficos, interpretação de pirâmides e análise de problemas sociais. Compreender a transição demográfica brasileira é chave para entender debates sobre previdência, saúde e planejamento urbano. ",
     "dificuldade": "média"
   }
@@ -6896,7 +6896,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) apenas no século XIX.",
       "D) inexistente."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um mapa com duas cidades que cresceram até se unirem fisicamente. Pergunta: Isso descreve: A) descentralização rural. B) conurbação. C) êxodo rural. D) gentrificação. Resposta: **B**. Exemplo 2 Um texto aborda expulsão de moradores pobres de áreas centrais valorizadas e substituição por grupos de maior renda. Trata-se de: A) favelização. B) gentrificação. C) conurbação rural. D) metropolização agrícola. Resposta: **B**. "
   },
   {
@@ -6907,7 +6907,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) apenas deslocamento de turistas.",
       "D) fenômeno rural."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um mapa com duas cidades que cresceram até se unirem fisicamente. Pergunta: Isso descreve: A) descentralização rural. B) conurbação. C) êxodo rural. D) gentrificação. Resposta: **B**. Exemplo 2 Um texto aborda expulsão de moradores pobres de áreas centrais valorizadas e substituição por grupos de maior renda. Trata-se de: A) favelização. B) gentrificação. C) conurbação rural. D) metropolização agrícola. Resposta: **B**. "
   }
 ],
@@ -6921,7 +6921,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) queda do preço da terra.",
       "D) pouca urbanização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -6932,7 +6932,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) migração internacional.",
       "D) apenas expansão vertical."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -6973,7 +6973,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) apenas no século XIX.",
       "D) inexistente."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Urbanização e problemas urbanos aparecem no ENEM em textos, mapas e gráficos, conectando geografia com cidadania, políticas públicas e qualidade de vida. ",
     "dificuldade": "média"
   },
@@ -6985,7 +6985,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) apenas deslocamento de turistas.",
       "D) fenômeno rural."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Urbanização e problemas urbanos aparecem no ENEM em textos, mapas e gráficos, conectando geografia com cidadania, políticas públicas e qualidade de vida. ",
     "dificuldade": "média"
   },
@@ -6997,7 +6997,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) queda do preço da terra.",
       "D) pouca urbanização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Urbanização e problemas urbanos aparecem no ENEM em textos, mapas e gráficos, conectando geografia com cidadania, políticas públicas e qualidade de vida. ",
     "dificuldade": "média"
   }
@@ -7051,7 +7051,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) grande propriedade, muitas vezes voltada à monocultura.",
       "D) propriedade pública apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma tabela mostra poucas propriedades com grande área e muitas propriedades com pouca área. Pergunta: Isso indica: A) estrutura fundiária igualitária. B) concentração fundiária. C) coletivização da terra. D) reforma agrária total. Resposta: **B**. Exemplo 2 Uma questão associa crescimento da produção de grãos à expansão sobre Cerrado e uso de máquinas, sementes selecionadas e insumos. Comentário: Descreve o agronegócio moderno, fruto da Revolução Verde. "
   },
   {
@@ -7062,7 +7062,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) não empregar ninguém.",
       "D) ser irrelevante na produção."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma tabela mostra poucas propriedades com grande área e muitas propriedades com pouca área. Pergunta: Isso indica: A) estrutura fundiária igualitária. B) concentração fundiária. C) coletivização da terra. D) reforma agrária total. Resposta: **B**. Exemplo 2 Uma questão associa crescimento da produção de grãos à expansão sobre Cerrado e uso de máquinas, sementes selecionadas e insumos. Comentário: Descreve o agronegócio moderno, fruto da Revolução Verde. "
   }
 ],
@@ -7076,7 +7076,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) recuperação de todos os biomas.",
       "D) fim do agronegócio."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -7087,7 +7087,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim da mecanização.",
       "D) plantio manual apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -7128,7 +7128,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) grande propriedade, muitas vezes voltada à monocultura.",
       "D) propriedade pública apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Agropecuária e questão agrária são temas clássicos do ENEM, conectando economia, ambiente e conflitos sociais. Entender a lógica do agronegócio e da agricultura familiar é essencial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   },
@@ -7140,7 +7140,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) não empregar ninguém.",
       "D) ser irrelevante na produção."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Agropecuária e questão agrária são temas clássicos do ENEM, conectando economia, ambiente e conflitos sociais. Entender a lógica do agronegócio e da agricultura familiar é essencial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   },
@@ -7152,7 +7152,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) recuperação de todos os biomas.",
       "D) fim do agronegócio."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Agropecuária e questão agrária são temas clássicos do ENEM, conectando economia, ambiente e conflitos sociais. Entender a lógica do agronegócio e da agricultura familiar é essencial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   }
@@ -7206,7 +7206,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) comércio e serviços.",
       "D) mineração."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra uma empresa que projeta um produto em um país, fabrica peças em outros e monta em um terceiro, vendendo globalmente. Comentário: Exemplo clássico de globalização produtiva e de cadeias globais de valor. Exemplo 2 Um texto aborda a migração de fábricas da Região Metropolitana de São Paulo para o interior e outros estados. Pergunta: Isso ilustra: A) concentração industrial. B) desconcentração industrial. C) fim da indústria. D) migração rural. Resposta: **B**. "
   },
   {
@@ -7217,7 +7217,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim do comércio internacional.",
       "D) autossuficiência total dos países."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra uma empresa que projeta um produto em um país, fabrica peças em outros e monta em um terceiro, vendendo globalmente. Comentário: Exemplo clássico de globalização produtiva e de cadeias globais de valor. Exemplo 2 Um texto aborda a migração de fábricas da Região Metropolitana de São Paulo para o interior e outros estados. Pergunta: Isso ilustra: A) concentração industrial. B) desconcentração industrial. C) fim da indústria. D) migração rural. Resposta: **B**. "
   }
 ],
@@ -7231,7 +7231,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) áreas totalmente isoladas.",
       "D) apenas zonas rurais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -7242,7 +7242,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) período imperial escravista.",
       "D) ditadura militar sem indústria."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -7283,7 +7283,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) comércio e serviços.",
       "D) mineração."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Indústria, serviços e globalização aparecem no ENEM em questões que cruzam economia, tecnologia, geopolítica e trabalho. Compreender como o Brasil se insere nessas dinâmicas é fundamental para interpretar textos e gráficos sobre desenvolvimento e desigualdade. FIM DO BLOCO 2 – GEOGRAFIA (10 temas) ",
     "dificuldade": "média"
   },
@@ -7295,7 +7295,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) fim do comércio internacional.",
       "D) autossuficiência total dos países."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Indústria, serviços e globalização aparecem no ENEM em questões que cruzam economia, tecnologia, geopolítica e trabalho. Compreender como o Brasil se insere nessas dinâmicas é fundamental para interpretar textos e gráficos sobre desenvolvimento e desigualdade. FIM DO BLOCO 2 – GEOGRAFIA (10 temas) ",
     "dificuldade": "média"
   },
@@ -7307,7 +7307,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) áreas totalmente isoladas.",
       "D) apenas zonas rurais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Indústria, serviços e globalização aparecem no ENEM em questões que cruzam economia, tecnologia, geopolítica e trabalho. Compreender como o Brasil se insere nessas dinâmicas é fundamental para interpretar textos e gráficos sobre desenvolvimento e desigualdade. FIM DO BLOCO 2 – GEOGRAFIA (10 temas) ",
     "dificuldade": "média"
   }
@@ -7357,7 +7357,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) 200 m  B) 2 km  C) 20 km  D) 200 km"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 — Escala Mapa em escala 1:50.000. Distância no mapa: 6 cm. Real: 6 × 50.000 = 300.000 cm = 3.000 m = 3 km. Resposta: **3 km**. Exemplo 2 — Interpretação Em um mapa temático, áreas em vermelho indicam maior densidade populacional. Pergunta: Vermelho representa: **maior concentração de habitantes**. "
   },
   {
@@ -7365,7 +7365,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) mais detalhado  B) menos detalhado  C) igual  D) impossível ler"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 — Escala Mapa em escala 1:50.000. Distância no mapa: 6 cm. Real: 6 × 50.000 = 300.000 cm = 3.000 m = 3 km. Resposta: **3 km**. Exemplo 2 — Interpretação Em um mapa temático, áreas em vermelho indicam maior densidade populacional. Pergunta: Vermelho representa: **maior concentração de habitantes**. "
   }
 ],
@@ -7376,7 +7376,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) Leste/Oeste  B) Norte/Sul  C) altitude  D) relevo"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -7411,7 +7411,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) 200 m  B) 2 km  C) 20 km  D) 200 km"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, cartografia é leitura e cálculo: escala, legenda e coordenadas aparecem com frequência em itens contextualizados. ",
     "dificuldade": "média"
   },
@@ -7420,7 +7420,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) mais detalhado  B) menos detalhado  C) igual  D) impossível ler"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, cartografia é leitura e cálculo: escala, legenda e coordenadas aparecem com frequência em itens contextualizados. ",
     "dificuldade": "média"
   },
@@ -7429,7 +7429,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) Leste/Oeste  B) Norte/Sul  C) altitude  D) relevo"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, cartografia é leitura e cálculo: escala, legenda e coordenadas aparecem com frequência em itens contextualizados. ",
     "dificuldade": "média"
   }
@@ -7478,7 +7478,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) dobramentos modernos  B) bacias sedimentares  C) vulcões ativos  D) geleiras"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: Onde predominam rochas sedimentares e grandes bacias? Resposta: **Em grande parte do território brasileiro (bacias sedimentares)**. Exemplo 2 Minérios metálicos (ferro, manganês) tendem a aparecer em: Resposta: **escudos cristalinos**. "
   },
   {
@@ -7486,7 +7486,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) escudos cristalinos  B) oceanos  C) planícies alagadas  D) geleiras"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: Onde predominam rochas sedimentares e grandes bacias? Resposta: **Em grande parte do território brasileiro (bacias sedimentares)**. Exemplo 2 Minérios metálicos (ferro, manganês) tendem a aparecer em: Resposta: **escudos cristalinos**. "
   }
 ],
@@ -7524,7 +7524,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) dobramentos modernos  B) bacias sedimentares  C) vulcões ativos  D) geleiras"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Entender relevo e geologia ajuda a explicar recursos naturais e ocupação econômica do território — abordagem típica do ENEM. ",
     "dificuldade": "média"
   },
@@ -7533,7 +7533,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) escudos cristalinos  B) oceanos  C) planícies alagadas  D) geleiras"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Entender relevo e geologia ajuda a explicar recursos naturais e ocupação econômica do território — abordagem típica do ENEM. ",
     "dificuldade": "média"
   },
@@ -7592,7 +7592,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) semiárido  B) equatorial  C) subtropical  D) desértico"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo: Texto descreve “chuvas escassas e irregulares” e “longos períodos de seca”. Pergunta: Clima? **Semiárido**. "
   },
   {
@@ -7600,7 +7600,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) inverno chuvoso  B) verão chuvoso e inverno seco  C) chuva o ano todo  D) neve"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo: Texto descreve “chuvas escassas e irregulares” e “longos períodos de seca”. Pergunta: Clima? **Semiárido**. "
   }
 ],
@@ -7638,7 +7638,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) semiárido  B) equatorial  C) subtropical  D) desértico"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O ENEM cobra clima associado a impactos humanos e políticas públicas (seca, abastecimento, riscos urbanos). ",
     "dificuldade": "média"
   },
@@ -7647,7 +7647,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) inverno chuvoso  B) verão chuvoso e inverno seco  C) chuva o ano todo  D) neve"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O ENEM cobra clima associado a impactos humanos e políticas públicas (seca, abastecimento, riscos urbanos). ",
     "dificuldade": "média"
   },
@@ -7707,7 +7707,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) Pampa  B) Cerrado  C) Pantanal  D) Caatinga"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “vegetação adaptada à seca, folhas pequenas, espinhos e perda de folhas no período seco”. Bioma: **Caatinga**. "
   },
   {
@@ -7715,7 +7715,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) Pantanal  B) Amazônia  C) Pampa  D) Mata Atlântica"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “vegetação adaptada à seca, folhas pequenas, espinhos e perda de folhas no período seco”. Bioma: **Caatinga**. "
   }
 ],
@@ -7753,7 +7753,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) Pampa  B) Cerrado  C) Pantanal  D) Caatinga"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A chave é ligar bioma a impactos humanos (agro, mineração, urbanização) e a estratégias de preservação. ",
     "dificuldade": "média"
   },
@@ -7762,7 +7762,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) Pantanal  B) Amazônia  C) Pampa  D) Mata Atlântica"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A chave é ligar bioma a impactos humanos (agro, mineração, urbanização) e a estratégias de preservação. ",
     "dificuldade": "média"
   },
@@ -7821,7 +7821,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) enriquecimento do centro  B) expansão de moradias para áreas distantes e baratas  C) fim das favelas  D) ruralização"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão: “crescimento urbano sem infraestrutura, ocupação irregular de encostas e várzeas.” Tema: **urbanização acelerada + risco ambiental + desigualdade urbana**. "
   },
   {
@@ -7858,7 +7858,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) enriquecimento do centro  B) expansão de moradias para áreas distantes e baratas  C) fim das favelas  D) ruralização"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O ENEM conecta urbanização à cidadania: mobilidade, saneamento, moradia e desigualdade. ",
     "dificuldade": "média"
   },
@@ -7917,7 +7917,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) produção totalmente local  B) cadeias internacionais de produção  C) fim do comércio  D) isolamento"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “produção fragmentada em vários países com logística integrada”. Tema: **cadeias globais de valor / globalização produtiva**. "
   },
   {
@@ -7954,7 +7954,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) produção totalmente local  B) cadeias internacionais de produção  C) fim do comércio  D) isolamento"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Globalização é tema de geopolítica, economia e trabalho no ENEM, quase sempre com análise crítica. ",
     "dificuldade": "média"
   },
@@ -8013,7 +8013,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) monocultura para exportação  B) diversidade e forte uso de mão de obra familiar  C) ausência de alimentos  D) mineração"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “expansão de soja no Cerrado com mecanização e exportação.” Tema: **agronegócio e fronteira agrícola**. "
   },
   {
@@ -8050,7 +8050,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) monocultura para exportação  B) diversidade e forte uso de mão de obra familiar  C) ausência de alimentos  D) mineração"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O ENEM costuma pedir comparação crítica: produtividade e exportação versus impactos socioambientais e segurança alimentar. ",
     "dificuldade": "média"
   },
@@ -8109,7 +8109,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) nuclear  B) hidrelétrica  C) carvão  D) geotérmica"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão: “acionamento de termelétricas durante seca prolongada aumenta conta de luz e emissões.” Tema: **dependência hidrelétrica + crise hídrica + termelétrica**. "
   },
   {
@@ -8146,7 +8146,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) nuclear  B) hidrelétrica  C) carvão  D) geotérmica"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Energia no ENEM aparece conectada a ambiente, economia e políticas públicas. ",
     "dificuldade": "média"
   },
@@ -8205,7 +8205,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) migração cidade→campo  B) migração campo→cidade  C) turismo  D) imigração europeia"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “pessoas fogem de guerra e buscam proteção em outro país.” Resposta: **refugiados / migração forçada**. "
   },
   {
@@ -8242,7 +8242,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) migração cidade→campo  B) migração campo→cidade  C) turismo  D) imigração europeia"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Migrações são cobradas com leitura de contexto: por que migram e que efeitos geram no território e na sociedade. ",
     "dificuldade": "média"
   },
@@ -8301,7 +8301,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "alternativas": [
       "A) ausência de recursos  B) disputa por território/recursos  C) falta de Estado  D) apenas religião"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão: “conflito em região rica em petróleo com interferência internacional.” Tema: **recursos estratégicos + geopolítica do petróleo**. "
   },
   {
@@ -8338,7 +8338,7 @@ export const GEOGRAFIA_CONTEUDO: Record<string, ConteudoModulo> = {
     "opcoes": [
       "A) ausência de recursos  B) disputa por território/recursos  C) falta de Estado  D) apenas religião"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Geopolítica no ENEM é interpretação de cenário: recursos, fronteiras, influência e consequências humanas. FIM DO BLOCO 4 – GEOGRAFIA (10 temas) ",
     "dificuldade": "média"
   },
@@ -9486,7 +9486,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) prever futuro com certeza",
       "D) provar que tudo é genética"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto diz: “o desemprego não é apenas falha individual, mas resultado do modelo econômico”. Tema: **problema social com causas estruturais**. "
   },
   {
@@ -9529,7 +9529,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) prever futuro com certeza",
       "D) provar que tudo é genética"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, Sociologia é interpretação crítica de textos, charges e situações do cotidiano. ",
     "dificuldade": "média"
   },
@@ -9593,7 +9593,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) opinião de um grupo pequeno",
       "D) evento natural"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão sobre aumento de suicídios em crise social → **anomia**. "
   },
   {
@@ -9636,7 +9636,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) opinião de um grupo pequeno",
       "D) evento natural"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Durkheim é cobrado para explicar normas sociais e crises de integração. ",
     "dificuldade": "média"
   },
@@ -9698,7 +9698,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) leis e regras impessoais",
       "D) sorteio"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão sobre funcionamento do Estado por leis e instituições → **dominação legal-racional**. "
   },
   {
@@ -9741,7 +9741,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) leis e regras impessoais",
       "D) sorteio"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, Weber aparece em textos sobre Estado, poder, liderança e racionalização. ",
     "dificuldade": "média"
   },
@@ -9805,7 +9805,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) azar",
       "D) genética"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “o trabalhador produz riqueza, mas não a desfruta”. Tema: **mais-valia/alienação**. "
   },
   {
@@ -9848,7 +9848,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) azar",
       "D) genética"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Marx é cobrado para interpretar desigualdade, trabalho e críticas ao capitalismo. ",
     "dificuldade": "média"
   },
@@ -9912,7 +9912,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) neutralidade total",
       "D) estudo científico"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão com charge ridicularizando costumes indígenas → **etnocentrismo**. "
   },
   {
@@ -9955,7 +9955,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) neutralidade total",
       "D) estudo científico"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM: cultura é diversidade + crítica ao preconceito. ",
     "dificuldade": "média"
   },
@@ -10019,7 +10019,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) no Estado",
       "D) em universidades"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto sobre padrões de beleza impostos por redes → **mídia e socialização**. "
   },
   {
@@ -10062,7 +10062,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) no Estado",
       "D) em universidades"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, socialização aparece ligada a educação, mídia, juventude e consumo. ",
     "dificuldade": "média"
   },
@@ -10126,7 +10126,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) herança familiar",
       "D) cargos públicos"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão sobre SUS e universalização → **direito social**. "
   },
   {
@@ -10169,7 +10169,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) herança familiar",
       "D) cargos públicos"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM: cidadania = direitos + participação + combate à desigualdade. ",
     "dificuldade": "média"
   },
@@ -10233,7 +10233,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) trocar de escola",
       "D) mudar de time"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Gráfico mostra maior desemprego entre mulheres negras → **desigualdade interseccional**. "
   },
   {
@@ -10276,7 +10276,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) trocar de escola",
       "D) mudar de time"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM usa textos e dados para cobrar leitura crítica de desigualdades. ",
     "dificuldade": "média"
   },
@@ -10340,7 +10340,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) salário fixo garantido",
       "D) aposentadoria imediata"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “trabalhador de app sem vínculo, remuneração variável”. Tema: **precarização/uberização**. "
   },
   {
@@ -10383,7 +10383,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) salário fixo garantido",
       "D) aposentadoria imediata"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM: trabalho contemporâneo é tema central para cidadania e economia. ",
     "dificuldade": "média"
   },
@@ -10447,7 +10447,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) defender exclusão",
       "D) impedir debate público"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão sobre mobilização por moradia e acesso à cidade → **movimento social urbano**. "
   },
   {
@@ -10490,7 +10490,7 @@ export const SOCIOLOGIA_CONTEUDO: Record<string, ConteudoModulo> = {
       "C) defender exclusão",
       "D) impedir debate público"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "ENEM destaca movimentos sociais como parte da cidadania e da democracia. FIM DO BLOCO 6 — SOCIOLOGIA ",
     "dificuldade": "média"
   },

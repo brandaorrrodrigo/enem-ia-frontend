@@ -50,7 +50,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Garantia o fim da escravidão.",
       "D) Regulamentava apenas a produção de ouro."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Um enunciado menciona: “grandes propriedades monocultoras, voltadas à exportação, com uso intensivo de mão de obra escravizada”. Pergunta: Esse modelo descreve principalmente: A) a mineração aurífera no século XVIII. B) a economia cafeeira do século XIX. C) a economia açucareira do período colonial. D) a pequena produção mercantil no Sul. Resolução comentada: A descrição combina latifúndio, monocultura e escravidão voltada à exportação, características típicas do ciclo do açúcar no Brasil colonial. Resposta: **C**. Exemplo 2 Um texto cita o senhor de engenho como “uma espécie de pequeno rei nos domínios rurais”, com poder econômico, político e religioso. Pergunta: Esse trecho revela: A) a centralidade das câmaras municipais. B) a força do poder local e da elite rural. C) a democracia social no meio rural. D) o enfraquecimento da monarquia portuguesa. Comentário: O senhor de engenho acumulava poder econômico, social e político local. Resposta: **B**. "
   },
   {
@@ -61,7 +61,7 @@ export const HISTORIA_CONTEUDO = {
       "C) escravizada africana.",
       "D) servil europeia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Um enunciado menciona: “grandes propriedades monocultoras, voltadas à exportação, com uso intensivo de mão de obra escravizada”. Pergunta: Esse modelo descreve principalmente: A) a mineração aurífera no século XVIII. B) a economia cafeeira do século XIX. C) a economia açucareira do período colonial. D) a pequena produção mercantil no Sul. Resolução comentada: A descrição combina latifúndio, monocultura e escravidão voltada à exportação, características típicas do ciclo do açúcar no Brasil colonial. Resposta: **C**. Exemplo 2 Um texto cita o senhor de engenho como “uma espécie de pequeno rei nos domínios rurais”, com poder econômico, político e religioso. Pergunta: Esse trecho revela: A) a centralidade das câmaras municipais. B) a força do poder local e da elite rural. C) a democracia social no meio rural. D) o enfraquecimento da monarquia portuguesa. Comentário: O senhor de engenho acumulava poder econômico, social e político local. Resposta: **B**. "
   }
 ],
@@ -75,7 +75,7 @@ export const HISTORIA_CONTEUDO = {
       "C) urbana e industrializada.",
       "D) composta majoritariamente por pequenos proprietários."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -86,7 +86,7 @@ export const HISTORIA_CONTEUDO = {
       "C) introduziu técnicas de refino e crédito.",
       "D) substituiu Portugal como metrópole."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -127,7 +127,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Garantia o fim da escravidão.",
       "D) Regulamentava apenas a produção de ouro."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Brasil Colônia foi estruturado para servir economicamente à metrópole portuguesa, com destaque para a produção de açúcar em grandes propriedades escravistas. A sociedade era profundamente desigual e hierarquizada. A presença holandesa impulsionou a modernização do setor, mas, após a expulsão, o Brasil enfrentou forte concorrência internacional. Esse modelo de economia exportadora escravista deixou marcas profundas na formação social e econômica do país. ",
     "dificuldade": "média"
   },
@@ -139,7 +139,7 @@ export const HISTORIA_CONTEUDO = {
       "C) escravizada africana.",
       "D) servil europeia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Brasil Colônia foi estruturado para servir economicamente à metrópole portuguesa, com destaque para a produção de açúcar em grandes propriedades escravistas. A sociedade era profundamente desigual e hierarquizada. A presença holandesa impulsionou a modernização do setor, mas, após a expulsão, o Brasil enfrentou forte concorrência internacional. Esse modelo de economia exportadora escravista deixou marcas profundas na formação social e econômica do país. ",
     "dificuldade": "média"
   },
@@ -151,7 +151,7 @@ export const HISTORIA_CONTEUDO = {
       "C) urbana e industrializada.",
       "D) composta majoritariamente por pequenos proprietários."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Brasil Colônia foi estruturado para servir economicamente à metrópole portuguesa, com destaque para a produção de açúcar em grandes propriedades escravistas. A sociedade era profundamente desigual e hierarquizada. A presença holandesa impulsionou a modernização do setor, mas, após a expulsão, o Brasil enfrentou forte concorrência internacional. Esse modelo de economia exportadora escravista deixou marcas profundas na formação social e econômica do país. ",
     "dificuldade": "média"
   }
@@ -205,7 +205,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Sudeste.",
       "D) Centro-Oeste exclusivamente."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão menciona que a Coroa portuguesa exigia o envio de 100 arrobas anuais de ouro e ameaçava cobrar o imposto atrasado à força. Pergunta: Esse mecanismo é conhecido como: A) capitação. B) quinto. C) derrama. D) finta. Comentário: A cobrança compulsória dos impostos atrasados, quando a meta anual não era atingida, é chamada de derrama. Resposta: **C**. Exemplo 2 Um texto fala sobre a formação de vilas, circulação de ideias ilustradas e novas práticas culturais nas áreas de mineração. Pergunta: Isso expressa: A) ruralização da colônia. B) urbanização e diversificação social. C) retorno à economia açucareira. D) isolamento das capitanias. Resposta: **B**. "
   },
   {
@@ -216,7 +216,7 @@ export const HISTORIA_CONTEUDO = {
       "C) fundir o ouro, cunhar barras e cobrar impostos.",
       "D) registrar sesmarias."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão menciona que a Coroa portuguesa exigia o envio de 100 arrobas anuais de ouro e ameaçava cobrar o imposto atrasado à força. Pergunta: Esse mecanismo é conhecido como: A) capitação. B) quinto. C) derrama. D) finta. Comentário: A cobrança compulsória dos impostos atrasados, quando a meta anual não era atingida, é chamada de derrama. Resposta: **C**. Exemplo 2 Um texto fala sobre a formação de vilas, circulação de ideias ilustradas e novas práticas culturais nas áreas de mineração. Pergunta: Isso expressa: A) ruralização da colônia. B) urbanização e diversificação social. C) retorno à economia açucareira. D) isolamento das capitanias. Resposta: **B**. "
   }
 ],
@@ -230,7 +230,7 @@ export const HISTORIA_CONTEUDO = {
       "C) aumento da urbanização e da mobilidade.",
       "D) fim da dependência de Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -241,7 +241,7 @@ export const HISTORIA_CONTEUDO = {
       "C) aboliu o quinto.",
       "D) concedia mais autonomia às vilas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -282,7 +282,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Sudeste.",
       "D) Centro-Oeste exclusivamente."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração reorganizou o espaço, a economia e a sociedade colonial, aproximando a colônia de debates ilustrados e intensificando o controle metropolitano. O auge e a crise do ouro reforçaram conflitos que alimentaram movimentos de contestação à dominação portuguesa. ",
     "dificuldade": "média"
   },
@@ -294,7 +294,7 @@ export const HISTORIA_CONTEUDO = {
       "C) fundir o ouro, cunhar barras e cobrar impostos.",
       "D) registrar sesmarias."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração reorganizou o espaço, a economia e a sociedade colonial, aproximando a colônia de debates ilustrados e intensificando o controle metropolitano. O auge e a crise do ouro reforçaram conflitos que alimentaram movimentos de contestação à dominação portuguesa. ",
     "dificuldade": "média"
   },
@@ -306,7 +306,7 @@ export const HISTORIA_CONTEUDO = {
       "C) aumento da urbanização e da mobilidade.",
       "D) fim da dependência de Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração reorganizou o espaço, a economia e a sociedade colonial, aproximando a colônia de debates ilustrados e intensificando o controle metropolitano. O auge e a crise do ouro reforçaram conflitos que alimentaram movimentos de contestação à dominação portuguesa. ",
     "dificuldade": "média"
   }
@@ -360,7 +360,7 @@ export const HISTORIA_CONTEUDO = {
       "C) abolição da escravidão nas colônias.",
       "D) criação da República no Brasil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Um texto destaca que a Independência do Brasil manteve a escravidão, a grande propriedade e a estrutura social. Pergunta: Isso indica que a Independência foi, sobretudo: A) uma revolução social. B) uma ruptura radical com as estruturas coloniais. C) um acordo de elites para manter privilégios. D) um movimento popular sem participação da elite. Resposta: **C**. Exemplo 2 A Constituição de 1824 criou o Poder Moderador, que: A) enfraquecia o imperador. B) permitia ao imperador intervir nos demais poderes. C) era exercido apenas pelo Parlamento. D) garantia a separação absoluta entre os poderes. Resposta: **B**. "
   },
   {
@@ -371,7 +371,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a decisão de D. Pedro de permanecer no Brasil.",
       "D) a coroação de D. Pedro I."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Um texto destaca que a Independência do Brasil manteve a escravidão, a grande propriedade e a estrutura social. Pergunta: Isso indica que a Independência foi, sobretudo: A) uma revolução social. B) uma ruptura radical com as estruturas coloniais. C) um acordo de elites para manter privilégios. D) um movimento popular sem participação da elite. Resposta: **C**. Exemplo 2 A Constituição de 1824 criou o Poder Moderador, que: A) enfraquecia o imperador. B) permitia ao imperador intervir nos demais poderes. C) era exercido apenas pelo Parlamento. D) garantia a separação absoluta entre os poderes. Resposta: **B**. "
   }
 ],
@@ -385,7 +385,7 @@ export const HISTORIA_CONTEUDO = {
       "C) uma guerra entre Brasil e Portugal.",
       "D) um pacto de apoio ao absolutismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -396,7 +396,7 @@ export const HISTORIA_CONTEUDO = {
       "C) instaurou uma república federativa.",
       "D) extinguiu o Poder Moderador."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -437,7 +437,7 @@ export const HISTORIA_CONTEUDO = {
       "C) abolição da escravidão nas colônias.",
       "D) criação da República no Brasil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência consolidou a autonomia política do Brasil, mas preservou estruturas sociais excludentes. O Primeiro Reinado evidenciou tensões entre centralização imperial e demandas regionais, preparando o terreno para novas experiências políticas no período regencial. ",
     "dificuldade": "média"
   },
@@ -449,7 +449,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a decisão de D. Pedro de permanecer no Brasil.",
       "D) a coroação de D. Pedro I."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência consolidou a autonomia política do Brasil, mas preservou estruturas sociais excludentes. O Primeiro Reinado evidenciou tensões entre centralização imperial e demandas regionais, preparando o terreno para novas experiências políticas no período regencial. ",
     "dificuldade": "média"
   },
@@ -461,7 +461,7 @@ export const HISTORIA_CONTEUDO = {
       "C) uma guerra entre Brasil e Portugal.",
       "D) um pacto de apoio ao absolutismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência consolidou a autonomia política do Brasil, mas preservou estruturas sociais excludentes. O Primeiro Reinado evidenciou tensões entre centralização imperial e demandas regionais, preparando o terreno para novas experiências políticas no período regencial. ",
     "dificuldade": "média"
   }
@@ -515,7 +515,7 @@ export const HISTORIA_CONTEUDO = {
       "C) isolar o Brasil do comércio mundial.",
       "D) acelerar o fim da escravidão em 1800."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um gráfico de exportações no século XIX com forte crescimento do café. Pergunta: Esse fenômeno está associado: A) à industrialização pesada brasileira. B) à diminuição da integração ao mercado internacional. C) à formação de uma elite cafeeira poderosa. D) ao fim da economia agroexportadora. Resposta: **C**. Exemplo 2 Uma lei proibia o tráfico negreiro a partir de 1850. Pergunta: Trata-se da: A) Lei do Ventre Livre. B) Lei Eusébio de Queirós. C) Lei dos Sexagenários. D) Lei Áurea. Resposta: **B**. "
   },
   {
@@ -526,7 +526,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Oeste Paulista.",
       "D) Sertão nordestino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um gráfico de exportações no século XIX com forte crescimento do café. Pergunta: Esse fenômeno está associado: A) à industrialização pesada brasileira. B) à diminuição da integração ao mercado internacional. C) à formação de uma elite cafeeira poderosa. D) ao fim da economia agroexportadora. Resposta: **C**. Exemplo 2 Uma lei proibia o tráfico negreiro a partir de 1850. Pergunta: Trata-se da: A) Lei do Ventre Livre. B) Lei Eusébio de Queirós. C) Lei dos Sexagenários. D) Lei Áurea. Resposta: **B**. "
   }
 ],
@@ -540,7 +540,7 @@ export const HISTORIA_CONTEUDO = {
       "C) o isolamento internacional do Brasil.",
       "D) os laços com Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -551,7 +551,7 @@ export const HISTORIA_CONTEUDO = {
       "C) rejeição total da imprensa.",
       "D) defesa unânime dos fazendeiros."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -592,7 +592,7 @@ export const HISTORIA_CONTEUDO = {
       "C) isolar o Brasil do comércio mundial.",
       "D) acelerar o fim da escravidão em 1800."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Segundo Reinado foi o auge da economia cafeeira e da monarquia, mas também o período em que se acumularam contradições sociais, raciais e políticas. A combinação de modernização econômica, manutenção da escravidão até 1888 e tensões entre elites e monarquia resultou na queda do regime imperial. ",
     "dificuldade": "média"
   },
@@ -604,7 +604,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Oeste Paulista.",
       "D) Sertão nordestino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Segundo Reinado foi o auge da economia cafeeira e da monarquia, mas também o período em que se acumularam contradições sociais, raciais e políticas. A combinação de modernização econômica, manutenção da escravidão até 1888 e tensões entre elites e monarquia resultou na queda do regime imperial. ",
     "dificuldade": "média"
   },
@@ -616,7 +616,7 @@ export const HISTORIA_CONTEUDO = {
       "C) o isolamento internacional do Brasil.",
       "D) os laços com Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O Segundo Reinado foi o auge da economia cafeeira e da monarquia, mas também o período em que se acumularam contradições sociais, raciais e políticas. A combinação de modernização econômica, manutenção da escravidão até 1888 e tensões entre elites e monarquia resultou na queda do regime imperial. ",
     "dificuldade": "média"
   }
@@ -670,7 +670,7 @@ export const HISTORIA_CONTEUDO = {
       "C) regime de partidos fortes e independentes.",
       "D) sistema de eleições secretas e livres."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma charge mostra coronéis conduzindo eleitores como gado até as urnas. Pergunta: A crítica se refere a: A) voto secreto. B) voto de cabresto. C) sufrágio universal. D) plebiscito popular. Resposta: **B**. Exemplo 2 Uma questão relaciona café-com-leite à alternância de presidentes. Comentário: A expressão descreve a hegemonia de São Paulo (café) e Minas Gerais (leite) na presidência. "
   },
   {
@@ -681,7 +681,7 @@ export const HISTORIA_CONTEUDO = {
       "C) redistribuição igualitária de renda.",
       "D) política de seguridade social."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma charge mostra coronéis conduzindo eleitores como gado até as urnas. Pergunta: A crítica se refere a: A) voto secreto. B) voto de cabresto. C) sufrágio universal. D) plebiscito popular. Resposta: **B**. Exemplo 2 Uma questão relaciona café-com-leite à alternância de presidentes. Comentário: A expressão descreve a hegemonia de São Paulo (café) e Minas Gerais (leite) na presidência. "
   }
 ],
@@ -695,7 +695,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Bahia.",
       "D) Rio Grande do Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -706,7 +706,7 @@ export const HISTORIA_CONTEUDO = {
       "C) crise do café e desgaste das oligarquias.",
       "D) fim da industrialização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -747,7 +747,7 @@ export const HISTORIA_CONTEUDO = {
       "C) regime de partidos fortes e independentes.",
       "D) sistema de eleições secretas e livres."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha consolidou um sistema político excludente, controlado por poucas famílias e grupos regionais. A falta de participação popular e o uso da máquina pública para sustentar interesses privados prepararam o terreno para mudanças profundas em 1930. ",
     "dificuldade": "média"
   },
@@ -759,7 +759,7 @@ export const HISTORIA_CONTEUDO = {
       "C) redistribuição igualitária de renda.",
       "D) política de seguridade social."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha consolidou um sistema político excludente, controlado por poucas famílias e grupos regionais. A falta de participação popular e o uso da máquina pública para sustentar interesses privados prepararam o terreno para mudanças profundas em 1930. ",
     "dificuldade": "média"
   },
@@ -771,7 +771,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Bahia.",
       "D) Rio Grande do Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha consolidou um sistema político excludente, controlado por poucas famílias e grupos regionais. A falta de participação popular e o uso da máquina pública para sustentar interesses privados prepararam o terreno para mudanças profundas em 1930. ",
     "dificuldade": "média"
   }
@@ -825,7 +825,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a República Velha oligárquica.",
       "D) a Ditadura Militar."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a carteira de trabalho, férias remuneradas e jornada regulada. Pergunta: Essas medidas se relacionam à: A) política agrária da República Velha. B) CLT na Era Vargas. C) escravidão no Império. D) reformas liberais da década de 1990. Resposta: **B**. Exemplo 2 O Estado Novo (1937–1945) pode ser caracterizado como: A) república parlamentar. B) democracia liberal plena. C) regime ditatorial centralizado. D) monarquia constitucional. Resposta: **C**. "
   },
   {
@@ -836,7 +836,7 @@ export const HISTORIA_CONTEUDO = {
       "C) uma reforma tributária.",
       "D) uma lei apenas simbólica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a carteira de trabalho, férias remuneradas e jornada regulada. Pergunta: Essas medidas se relacionam à: A) política agrária da República Velha. B) CLT na Era Vargas. C) escravidão no Império. D) reformas liberais da década de 1990. Resposta: **B**. Exemplo 2 O Estado Novo (1937–1945) pode ser caracterizado como: A) república parlamentar. B) democracia liberal plena. C) regime ditatorial centralizado. D) monarquia constitucional. Resposta: **C**. "
   }
 ],
@@ -850,7 +850,7 @@ export const HISTORIA_CONTEUDO = {
       "C) restaurou a monarquia.",
       "D) implantou voto direto para todos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -861,7 +861,7 @@ export const HISTORIA_CONTEUDO = {
       "C) terceirização total.",
       "D) proibição do sindicalismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -902,7 +902,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a República Velha oligárquica.",
       "D) a Ditadura Militar."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas representou uma virada na relação entre Estado, economia e sociedade, com a criação de direitos trabalhistas e reforço do poder central. O período deixou heranças duradouras na legislação social e na configuração política brasileira. ",
     "dificuldade": "média"
   },
@@ -914,7 +914,7 @@ export const HISTORIA_CONTEUDO = {
       "C) uma reforma tributária.",
       "D) uma lei apenas simbólica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas representou uma virada na relação entre Estado, economia e sociedade, com a criação de direitos trabalhistas e reforço do poder central. O período deixou heranças duradouras na legislação social e na configuração política brasileira. ",
     "dificuldade": "média"
   },
@@ -926,7 +926,7 @@ export const HISTORIA_CONTEUDO = {
       "C) restaurou a monarquia.",
       "D) implantou voto direto para todos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas representou uma virada na relação entre Estado, economia e sociedade, com a criação de direitos trabalhistas e reforço do poder central. O período deixou heranças duradouras na legislação social e na configuração política brasileira. ",
     "dificuldade": "média"
   }
@@ -981,7 +981,7 @@ export const HISTORIA_CONTEUDO = {
       "C) unanimidade popular.",
       "D) apenas estudantes."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão fala em crescimento econômico acelerado, grande endividamento e aumento da desigualdade nos anos 1970. Trata-se do: A) milagre econômico. B) Plano Real. C) Encilhamento. D) Plano de Metas. Resposta: **A**. Exemplo 2 Um trecho menciona: “suspensão de garantias constitucionais, intervenção nos Estados, censura e repressão a opositores”. Refere-se ao: A) AI-5. B) voto distrital. C) Constituição de 1946. D) Ato da Anistia. Resposta: **A**. "
   },
   {
@@ -992,7 +992,7 @@ export const HISTORIA_CONTEUDO = {
       "C) partido único.",
       "D) proibição completa de partidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão fala em crescimento econômico acelerado, grande endividamento e aumento da desigualdade nos anos 1970. Trata-se do: A) milagre econômico. B) Plano Real. C) Encilhamento. D) Plano de Metas. Resposta: **A**. Exemplo 2 Um trecho menciona: “suspensão de garantias constitucionais, intervenção nos Estados, censura e repressão a opositores”. Refere-se ao: A) AI-5. B) voto distrital. C) Constituição de 1946. D) Ato da Anistia. Resposta: **A**. "
   }
 ],
@@ -1006,7 +1006,7 @@ export const HISTORIA_CONTEUDO = {
       "C) crescimento econômico com desigualdade.",
       "D) fim das exportações."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1017,7 +1017,7 @@ export const HISTORIA_CONTEUDO = {
       "C) censura à imprensa.",
       "D) fortalecimento do regime militar."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1058,7 +1058,7 @@ export const HISTORIA_CONTEUDO = {
       "C) unanimidade popular.",
       "D) apenas estudantes."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Ditadura Militar marcou profundamente a política, a economia e os direitos humanos no Brasil. O regime combinou autoritarismo, modernização econômica e forte repressão, gerando debates e memórias que ainda influenciam a sociedade brasileira. ",
     "dificuldade": "média"
   },
@@ -1070,7 +1070,7 @@ export const HISTORIA_CONTEUDO = {
       "C) partido único.",
       "D) proibição completa de partidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Ditadura Militar marcou profundamente a política, a economia e os direitos humanos no Brasil. O regime combinou autoritarismo, modernização econômica e forte repressão, gerando debates e memórias que ainda influenciam a sociedade brasileira. ",
     "dificuldade": "média"
   },
@@ -1082,7 +1082,7 @@ export const HISTORIA_CONTEUDO = {
       "C) crescimento econômico com desigualdade.",
       "D) fim das exportações."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Ditadura Militar marcou profundamente a política, a economia e os direitos humanos no Brasil. O regime combinou autoritarismo, modernização econômica e forte repressão, gerando debates e memórias que ainda influenciam a sociedade brasileira. ",
     "dificuldade": "média"
   }
@@ -1136,7 +1136,7 @@ export const HISTORIA_CONTEUDO = {
       "C) consolidou o AI-5.",
       "D) aboliu os partidos políticos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão cita a Constituição de 1988 como “Cidadã” por: A) restaurar o absolutismo. B) restringir direitos trabalhistas. C) ampliar direitos sociais e garantias fundamentais. D) instaurar a censura. Resposta: **C**. Exemplo 2 Diretas Já representou: A) movimento pela volta da monarquia. B) campanha por eleições diretas para presidente. C) apoio ao AI-5. D) defesa do bipartidarismo. Resposta: **B**. "
   },
   {
@@ -1147,7 +1147,7 @@ export const HISTORIA_CONTEUDO = {
       "C) foram um movimento isolado de militares.",
       "D) visavam à manutenção do regime."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão cita a Constituição de 1988 como “Cidadã” por: A) restaurar o absolutismo. B) restringir direitos trabalhistas. C) ampliar direitos sociais e garantias fundamentais. D) instaurar a censura. Resposta: **C**. Exemplo 2 Diretas Já representou: A) movimento pela volta da monarquia. B) campanha por eleições diretas para presidente. C) apoio ao AI-5. D) defesa do bipartidarismo. Resposta: **B**. "
   }
 ],
@@ -1161,7 +1161,7 @@ export const HISTORIA_CONTEUDO = {
       "C) foi elaborada por militares.",
       "D) extinguiu eleições diretas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1172,7 +1172,7 @@ export const HISTORIA_CONTEUDO = {
       "C) retorno ao voto censitário.",
       "D) concentração de poderes no Executivo absoluto."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1213,7 +1213,7 @@ export const HISTORIA_CONTEUDO = {
       "C) consolidou o AI-5.",
       "D) aboliu os partidos políticos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização consolidou um novo marco institucional, com ampliação de direitos e fortalecimento das instituições democráticas. A Constituição de 1988 tornou-se referência para o exercício da cidadania e para as lutas sociais contemporâneas. ",
     "dificuldade": "média"
   },
@@ -1225,7 +1225,7 @@ export const HISTORIA_CONTEUDO = {
       "C) foram um movimento isolado de militares.",
       "D) visavam à manutenção do regime."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização consolidou um novo marco institucional, com ampliação de direitos e fortalecimento das instituições democráticas. A Constituição de 1988 tornou-se referência para o exercício da cidadania e para as lutas sociais contemporâneas. ",
     "dificuldade": "média"
   },
@@ -1237,7 +1237,7 @@ export const HISTORIA_CONTEUDO = {
       "C) foi elaborada por militares.",
       "D) extinguiu eleições diretas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização consolidou um novo marco institucional, com ampliação de direitos e fortalecimento das instituições democráticas. A Constituição de 1988 tornou-se referência para o exercício da cidadania e para as lutas sociais contemporâneas. ",
     "dificuldade": "média"
   }
@@ -1290,7 +1290,7 @@ export const HISTORIA_CONTEUDO = {
       "C) proibida aos cidadãos.",
       "D) similar ao voto moderno feminino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão apresenta um esquema da democracia ateniense, em que apenas homens livres, maiores de idade e nascidos em Atenas participam da Assembleia. Comentário: Democracia direta, porém restrita. Exemplo 2 Um texto fala da importância do direito romano para a organização das leis modernas. Pergunta: Essa herança é chamada de: A) legado jurídico. B) legado mitológico apenas. C) herança agrícola. D) continuidade tribal. Resposta: **A**. "
   },
   {
@@ -1301,7 +1301,7 @@ export const HISTORIA_CONTEUDO = {
       "C) filosofia especulativa.",
       "D) democracia ampla."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão apresenta um esquema da democracia ateniense, em que apenas homens livres, maiores de idade e nascidos em Atenas participam da Assembleia. Comentário: Democracia direta, porém restrita. Exemplo 2 Um texto fala da importância do direito romano para a organização das leis modernas. Pergunta: Essa herança é chamada de: A) legado jurídico. B) legado mitológico apenas. C) herança agrícola. D) continuidade tribal. Resposta: **A**. "
   }
 ],
@@ -1315,7 +1315,7 @@ export const HISTORIA_CONTEUDO = {
       "C) era composto por escravizados.",
       "D) era um órgão religioso."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1326,7 +1326,7 @@ export const HISTORIA_CONTEUDO = {
       "C) apenas soldados.",
       "D) os magistrados."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1367,7 +1367,7 @@ export const HISTORIA_CONTEUDO = {
       "C) proibida aos cidadãos.",
       "D) similar ao voto moderno feminino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Grécia e Roma oferecem modelos de organização política, jurídica e cultural que continuam a ser referência até hoje, ao mesmo tempo em que revelam sistemas de cidadania profundamente excludentes, tema frequente em questões de interpretação crítica no ENEM. ",
     "dificuldade": "média"
   },
@@ -1379,7 +1379,7 @@ export const HISTORIA_CONTEUDO = {
       "C) filosofia especulativa.",
       "D) democracia ampla."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Grécia e Roma oferecem modelos de organização política, jurídica e cultural que continuam a ser referência até hoje, ao mesmo tempo em que revelam sistemas de cidadania profundamente excludentes, tema frequente em questões de interpretação crítica no ENEM. ",
     "dificuldade": "média"
   },
@@ -1391,7 +1391,7 @@ export const HISTORIA_CONTEUDO = {
       "C) era composto por escravizados.",
       "D) era um órgão religioso."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Grécia e Roma oferecem modelos de organização política, jurídica e cultural que continuam a ser referência até hoje, ao mesmo tempo em que revelam sistemas de cidadania profundamente excludentes, tema frequente em questões de interpretação crítica no ENEM. ",
     "dificuldade": "média"
   }
@@ -1444,7 +1444,7 @@ export const HISTORIA_CONTEUDO = {
       "C) retorno da servidão medieval.",
       "D) expansão do feudalismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão cita “liberdade, igualdade e fraternidade” como lema de um movimento revolucionário. Pergunta: Trata-se da: A) Revolução Francesa. B) Revolução Industrial. C) Revolução Russa. D) Revolução Cubana. Resposta: **A**. Exemplo 2 Um texto sobre a Independência dos EUA menciona a recusa das colônias em aceitar impostos sem representação no Parlamento. Comentário: Expressa o princípio “no taxation without representation”, ligado ao liberalismo político. "
   },
   {
@@ -1455,7 +1455,7 @@ export const HISTORIA_CONTEUDO = {
       "C) fim do capitalismo.",
       "D) fortalecimento das corporações de ofício."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão cita “liberdade, igualdade e fraternidade” como lema de um movimento revolucionário. Pergunta: Trata-se da: A) Revolução Francesa. B) Revolução Industrial. C) Revolução Russa. D) Revolução Cubana. Resposta: **A**. Exemplo 2 Um texto sobre a Independência dos EUA menciona a recusa das colônias em aceitar impostos sem representação no Parlamento. Comentário: Expressa o princípio “no taxation without representation”, ligado ao liberalismo político. "
   }
 ],
@@ -1469,7 +1469,7 @@ export const HISTORIA_CONTEUDO = {
       "C) economia planificada estatal.",
       "D) ausência de mercado."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1480,7 +1480,7 @@ export const HISTORIA_CONTEUDO = {
       "C) instaurar o comunismo.",
       "D) negar qualquer influência iluminista."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1521,7 +1521,7 @@ export const HISTORIA_CONTEUDO = {
       "C) retorno da servidão medieval.",
       "D) expansão do feudalismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "As revoluções burguesas inauguram uma nova etapa da história política, marcada por constituições, declarações de direitos e governos baseados em representação. No entanto, a universalização desses direitos foi lenta e cheia de contradições, tema central em discussões cobradas no ENEM. FIM DO BLOCO 1 – HISTÓRIA (10 temas) Pronto para você enviar ao Claude para transformar em HTML e distribuir nos cadernos de História da Biblioteca do ENEM Pro. Quando quiser, posso fazer: - Bloco 2 – Geografia (10 temas) - Bloco 3 – Sociologia - Bloco 4 – Filosofia - Blocos para Inglês, Espanhol e Artes. ",
     "dificuldade": "média"
   },
@@ -1533,7 +1533,7 @@ export const HISTORIA_CONTEUDO = {
       "C) fim do capitalismo.",
       "D) fortalecimento das corporações de ofício."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "As revoluções burguesas inauguram uma nova etapa da história política, marcada por constituições, declarações de direitos e governos baseados em representação. No entanto, a universalização desses direitos foi lenta e cheia de contradições, tema central em discussões cobradas no ENEM. FIM DO BLOCO 1 – HISTÓRIA (10 temas) Pronto para você enviar ao Claude para transformar em HTML e distribuir nos cadernos de História da Biblioteca do ENEM Pro. Quando quiser, posso fazer: - Bloco 2 – Geografia (10 temas) - Bloco 3 – Sociologia - Bloco 4 – Filosofia - Blocos para Inglês, Espanhol e Artes. ",
     "dificuldade": "média"
   },
@@ -1545,7 +1545,7 @@ export const HISTORIA_CONTEUDO = {
       "C) economia planificada estatal.",
       "D) ausência de mercado."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "As revoluções burguesas inauguram uma nova etapa da história política, marcada por constituições, declarações de direitos e governos baseados em representação. No entanto, a universalização desses direitos foi lenta e cheia de contradições, tema central em discussões cobradas no ENEM. FIM DO BLOCO 1 – HISTÓRIA (10 temas) Pronto para você enviar ao Claude para transformar em HTML e distribuir nos cadernos de História da Biblioteca do ENEM Pro. Quando quiser, posso fazer: - Bloco 2 – Geografia (10 temas) - Bloco 3 – Sociologia - Bloco 4 – Filosofia - Blocos para Inglês, Espanhol e Artes. ",
     "dificuldade": "média"
   }
@@ -1598,7 +1598,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a produção açucareira voltada ao mercado externo.",
       "D) a pecuária de corte."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca que a economia açucareira colonial combinava grande propriedade, mão de obra escrava e produção voltada ao mercado externo. Pergunta: Esse modelo é conhecido como: A) minifúndio policultor para subsistência. B) plantation. C) agricultura familiar. D) parceria agrícola. Comentário: Plantation = monocultura, latifúndio, escravidão, exportação. Resposta: **B**. Exemplo 2 Um texto menciona condições precárias nos navios negreiros e a lucratividade do comércio de escravos. Pergunta: Esse trecho refere-se ao: A) escambo indígena. B) bandeirismo de apresamento. C) tráfico atlântico de africanos escravizados. D) imigração europeia no século XIX. Resposta: **C**. "
   },
   {
@@ -1609,7 +1609,7 @@ export const HISTORIA_CONTEUDO = {
       "C) agricultura familiar e subsistência.",
       "D) produção comunitária e cooperativismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca que a economia açucareira colonial combinava grande propriedade, mão de obra escrava e produção voltada ao mercado externo. Pergunta: Esse modelo é conhecido como: A) minifúndio policultor para subsistência. B) plantation. C) agricultura familiar. D) parceria agrícola. Comentário: Plantation = monocultura, latifúndio, escravidão, exportação. Resposta: **B**. Exemplo 2 Um texto menciona condições precárias nos navios negreiros e a lucratividade do comércio de escravos. Pergunta: Esse trecho refere-se ao: A) escambo indígena. B) bandeirismo de apresamento. C) tráfico atlântico de africanos escravizados. D) imigração europeia no século XIX. Resposta: **C**. "
   }
 ],
@@ -1623,7 +1623,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a colônia servia à metrópole como fornecedora de matérias-primas e consumidora de manufaturados.",
       "D) a metrópole e a colônia eram economicamente iguais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1634,7 +1634,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Nordeste litorâneo.",
       "D) Centro-Oeste."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1675,7 +1675,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a produção açucareira voltada ao mercado externo.",
       "D) a pecuária de corte."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A compreensão da economia açucareira e da escravidão africana é essencial para entender a formação social, a desigualdade e o racismo estrutural no Brasil, temas frequentemente cobrados no ENEM. ",
     "dificuldade": "média"
   },
@@ -1687,7 +1687,7 @@ export const HISTORIA_CONTEUDO = {
       "C) agricultura familiar e subsistência.",
       "D) produção comunitária e cooperativismo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A compreensão da economia açucareira e da escravidão africana é essencial para entender a formação social, a desigualdade e o racismo estrutural no Brasil, temas frequentemente cobrados no ENEM. ",
     "dificuldade": "média"
   },
@@ -1699,7 +1699,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a colônia servia à metrópole como fornecedora de matérias-primas e consumidora de manufaturados.",
       "D) a metrópole e a colônia eram economicamente iguais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A compreensão da economia açucareira e da escravidão africana é essencial para entender a formação social, a desigualdade e o racismo estrutural no Brasil, temas frequentemente cobrados no ENEM. ",
     "dificuldade": "média"
   }
@@ -1752,7 +1752,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a região Sul.",
       "D) a Amazônia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a derrama como medida impopular em Minas Gerais. Pergunta: A derrama consistia em: A) distribuição de terras entre mineradores pobres. B) perdão de dívidas fiscais antigas. C) cobrança compulsória do ouro devido à Coroa quando a cota anual não era atingida. D) suspensão da coleta de impostos. Resposta: **C**. Exemplo 2 Um texto descreve o surgimento de vilas e maior urbanização na região mineradora. Comentário: A mineração favoreceu urbanização, circulação de ideias e formação de uma elite letrada. "
   },
   {
@@ -1763,7 +1763,7 @@ export const HISTORIA_CONTEUDO = {
       "C) 20% do ouro devido à Coroa.",
       "D) 50%."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a derrama como medida impopular em Minas Gerais. Pergunta: A derrama consistia em: A) distribuição de terras entre mineradores pobres. B) perdão de dívidas fiscais antigas. C) cobrança compulsória do ouro devido à Coroa quando a cota anual não era atingida. D) suspensão da coleta de impostos. Resposta: **C**. Exemplo 2 Um texto descreve o surgimento de vilas e maior urbanização na região mineradora. Comentário: A mineração favoreceu urbanização, circulação de ideias e formação de uma elite letrada. "
   }
 ],
@@ -1777,7 +1777,7 @@ export const HISTORIA_CONTEUDO = {
       "C) cobrança forçada do ouro não recolhido.",
       "D) taxa sobre produtos ingleses."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1788,7 +1788,7 @@ export const HISTORIA_CONTEUDO = {
       "C) fim da escravidão.",
       "D) industrialização imediata."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1829,7 +1829,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a região Sul.",
       "D) a Amazônia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração transformou a colônia, fortaleceu o controle da Coroa e criou um ambiente propício à contestação política, fundamental para entender os movimentos de emancipação. ",
     "dificuldade": "média"
   },
@@ -1841,7 +1841,7 @@ export const HISTORIA_CONTEUDO = {
       "C) 20% do ouro devido à Coroa.",
       "D) 50%."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração transformou a colônia, fortaleceu o controle da Coroa e criou um ambiente propício à contestação política, fundamental para entender os movimentos de emancipação. ",
     "dificuldade": "média"
   },
@@ -1853,7 +1853,7 @@ export const HISTORIA_CONTEUDO = {
       "C) cobrança forçada do ouro não recolhido.",
       "D) taxa sobre produtos ingleses."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A mineração transformou a colônia, fortaleceu o controle da Coroa e criou um ambiente propício à contestação política, fundamental para entender os movimentos de emancipação. ",
     "dificuldade": "média"
   }
@@ -1907,7 +1907,7 @@ export const HISTORIA_CONTEUDO = {
       "C) 1822.",
       "D) 1889."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão aponta a Independência do Brasil como “conservadora” em muitos aspectos. Comentário: Manteve-se a escravidão, o latifúndio e a monarquia; a ruptura foi política, mas não social. Exemplo 2 Pergunta: O “Dia do Fico” (1822) foi importante porque: A) declarou a imediata abolição da escravidão. B) marcou a decisão de Dom Pedro de permanecer no Brasil, contrariando as Cortes. C) proclamou a República. D) extinguiu o poder moderador. Resposta: **B**. "
   },
   {
@@ -1918,7 +1918,7 @@ export const HISTORIA_CONTEUDO = {
       "C) permissão de comércio com “nações amigas”, rompendo o exclusivo metropolitano.",
       "D) proibição de comércio com a Inglaterra."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão aponta a Independência do Brasil como “conservadora” em muitos aspectos. Comentário: Manteve-se a escravidão, o latifúndio e a monarquia; a ruptura foi política, mas não social. Exemplo 2 Pergunta: O “Dia do Fico” (1822) foi importante porque: A) declarou a imediata abolição da escravidão. B) marcou a decisão de Dom Pedro de permanecer no Brasil, contrariando as Cortes. C) proclamou a República. D) extinguiu o poder moderador. Resposta: **B**. "
   }
 ],
@@ -1932,7 +1932,7 @@ export const HISTORIA_CONTEUDO = {
       "C) extinguiu a monarquia.",
       "D) aboliu a escravidão."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1943,7 +1943,7 @@ export const HISTORIA_CONTEUDO = {
       "C) reforma agrária ampla.",
       "D) República federativa."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1984,7 +1984,7 @@ export const HISTORIA_CONTEUDO = {
       "C) 1822.",
       "D) 1889."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência e o Primeiro Reinado aparecem no ENEM conectados à formação do Estado nacional, à manutenção de estruturas sociais e às tensões políticas do século XIX. ",
     "dificuldade": "média"
   },
@@ -1996,7 +1996,7 @@ export const HISTORIA_CONTEUDO = {
       "C) permissão de comércio com “nações amigas”, rompendo o exclusivo metropolitano.",
       "D) proibição de comércio com a Inglaterra."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência e o Primeiro Reinado aparecem no ENEM conectados à formação do Estado nacional, à manutenção de estruturas sociais e às tensões políticas do século XIX. ",
     "dificuldade": "média"
   },
@@ -2008,7 +2008,7 @@ export const HISTORIA_CONTEUDO = {
       "C) extinguiu a monarquia.",
       "D) aboliu a escravidão."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Independência e o Primeiro Reinado aparecem no ENEM conectados à formação do Estado nacional, à manutenção de estruturas sociais e às tensões políticas do século XIX. ",
     "dificuldade": "média"
   }
@@ -2061,7 +2061,7 @@ export const HISTORIA_CONTEUDO = {
       "C) café.",
       "D) borracha."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão descreve a transição do trabalho escravo para o imigrante assalariado nas fazendas cafeeiras paulistas. Comentário: Esse processo insere o Brasil em nova lógica de trabalho, mantendo, porém, desigualdades e exploração. Exemplo 2 Pergunta: A Lei Áurea (1888) A) previa indenização aos ex-escravos. B) previa ampla reforma agrária. C) aboliu oficialmente a escravidão, sem políticas de inclusão aos libertos. D) criou escolas obrigatórias a todos os ex-escravos. Resposta: **C**. "
   },
   {
@@ -2072,7 +2072,7 @@ export const HISTORIA_CONTEUDO = {
       "C) libertou todos os escravos sexagenários.",
       "D) libertou crianças nascidas de mães escravas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão descreve a transição do trabalho escravo para o imigrante assalariado nas fazendas cafeeiras paulistas. Comentário: Esse processo insere o Brasil em nova lógica de trabalho, mantendo, porém, desigualdades e exploração. Exemplo 2 Pergunta: A Lei Áurea (1888) A) previa indenização aos ex-escravos. B) previa ampla reforma agrária. C) aboliu oficialmente a escravidão, sem políticas de inclusão aos libertos. D) criou escolas obrigatórias a todos os ex-escravos. Resposta: **C**. "
   }
 ],
@@ -2086,7 +2086,7 @@ export const HISTORIA_CONTEUDO = {
       "C) somente os idosos seriam libertos.",
       "D) apenas escravos urbanos seriam livres."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2097,7 +2097,7 @@ export const HISTORIA_CONTEUDO = {
       "C) questões religiosa, militar e crescimento do republicanismo.",
       "D) fim do café como produto de exportação."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2138,7 +2138,7 @@ export const HISTORIA_CONTEUDO = {
       "C) café.",
       "D) borracha."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo do café, da abolição e da transição para o trabalho livre é fundamental para compreender a formação do mercado de trabalho e das desigualdades sociais no Brasil, temas frequentes no ENEM. ",
     "dificuldade": "média"
   },
@@ -2150,7 +2150,7 @@ export const HISTORIA_CONTEUDO = {
       "C) libertou todos os escravos sexagenários.",
       "D) libertou crianças nascidas de mães escravas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo do café, da abolição e da transição para o trabalho livre é fundamental para compreender a formação do mercado de trabalho e das desigualdades sociais no Brasil, temas frequentes no ENEM. ",
     "dificuldade": "média"
   },
@@ -2162,7 +2162,7 @@ export const HISTORIA_CONTEUDO = {
       "C) somente os idosos seriam libertos.",
       "D) apenas escravos urbanos seriam livres."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo do café, da abolição e da transição para o trabalho livre é fundamental para compreender a formação do mercado de trabalho e das desigualdades sociais no Brasil, temas frequentes no ENEM. ",
     "dificuldade": "média"
   }
@@ -2215,7 +2215,7 @@ export const HISTORIA_CONTEUDO = {
       "C) São Paulo e Minas Gerais.",
       "D) São Paulo e Rio Grande do Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: O coronelismo pode ser definido como: A) domínio de militares sobre a política. B) controle de grandes proprietários rurais sobre votos e poder local. C) influência da Igreja na República. D) domínio dos operários. Resposta: **B**. Exemplo 2 Uma questão sobre Canudos destaca um movimento sertanejo liderado por Antônio Conselheiro, reprimido pelo Exército. Comentário: Exemplo de conflito entre populações pobres do sertão e o Estado republicano. "
   },
   {
@@ -2226,7 +2226,7 @@ export const HISTORIA_CONTEUDO = {
       "C) voto eletrônico.",
       "D) voto obrigatório."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: O coronelismo pode ser definido como: A) domínio de militares sobre a política. B) controle de grandes proprietários rurais sobre votos e poder local. C) influência da Igreja na República. D) domínio dos operários. Resposta: **B**. Exemplo 2 Uma questão sobre Canudos destaca um movimento sertanejo liderado por Antônio Conselheiro, reprimido pelo Exército. Comentário: Exemplo de conflito entre populações pobres do sertão e o Estado republicano. "
   }
 ],
@@ -2240,7 +2240,7 @@ export const HISTORIA_CONTEUDO = {
       "C) abolição da escravidão.",
       "D) redemocratização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2251,7 +2251,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Amazônia.",
       "D) Sul do Brasil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2292,7 +2292,7 @@ export const HISTORIA_CONTEUDO = {
       "C) São Paulo e Minas Gerais.",
       "D) São Paulo e Rio Grande do Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha evidencia como o poder político se articulava com elites rurais e como setores populares resistiram a esse modelo, temas recorrentes em questões de cidadania e democracia no ENEM. ",
     "dificuldade": "média"
   },
@@ -2304,7 +2304,7 @@ export const HISTORIA_CONTEUDO = {
       "C) voto eletrônico.",
       "D) voto obrigatório."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha evidencia como o poder político se articulava com elites rurais e como setores populares resistiram a esse modelo, temas recorrentes em questões de cidadania e democracia no ENEM. ",
     "dificuldade": "média"
   },
@@ -2316,7 +2316,7 @@ export const HISTORIA_CONTEUDO = {
       "C) abolição da escravidão.",
       "D) redemocratização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A República Velha evidencia como o poder político se articulava com elites rurais e como setores populares resistiram a esse modelo, temas recorrentes em questões de cidadania e democracia no ENEM. ",
     "dificuldade": "média"
   }
@@ -2369,7 +2369,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a Proclamação da República.",
       "D) a abolição da escravidão."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a CLT (Consolidação das Leis do Trabalho) e o reconhecimento de direitos trabalhistas. Comentário: Embora importante, o sistema sindical mantinha forte controle estatal. Exemplo 2 Pergunta: O Estado Novo (1937–1945) caracterizou-se por: A) ampla democracia e liberdade de imprensa. B) regime autoritário, com censura e culto ao líder. C) parlamentarismo estável. D) ausência de propaganda oficial. Resposta: **B**. "
   },
   {
@@ -2380,7 +2380,7 @@ export const HISTORIA_CONTEUDO = {
       "C) uma monarquia.",
       "D) um governo anarquista."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca a CLT (Consolidação das Leis do Trabalho) e o reconhecimento de direitos trabalhistas. Comentário: Embora importante, o sistema sindical mantinha forte controle estatal. Exemplo 2 Pergunta: O Estado Novo (1937–1945) caracterizou-se por: A) ampla democracia e liberdade de imprensa. B) regime autoritário, com censura e culto ao líder. C) parlamentarismo estável. D) ausência de propaganda oficial. Resposta: **B**. "
   }
 ],
@@ -2394,7 +2394,7 @@ export const HISTORIA_CONTEUDO = {
       "C) não teve relação com Vargas.",
       "D) tratou apenas de impostos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2405,7 +2405,7 @@ export const HISTORIA_CONTEUDO = {
       "C) apenas capital estrangeiro.",
       "D) primazia da agricultura."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2446,7 +2446,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a Proclamação da República.",
       "D) a abolição da escravidão."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas é central para entender a formação do Estado nacional desenvolvimentista, o trabalhismo e a industrialização brasileira, temas frequentes em provas do ENEM. ",
     "dificuldade": "média"
   },
@@ -2458,7 +2458,7 @@ export const HISTORIA_CONTEUDO = {
       "C) uma monarquia.",
       "D) um governo anarquista."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas é central para entender a formação do Estado nacional desenvolvimentista, o trabalhismo e a industrialização brasileira, temas frequentes em provas do ENEM. ",
     "dificuldade": "média"
   },
@@ -2470,7 +2470,7 @@ export const HISTORIA_CONTEUDO = {
       "C) não teve relação com Vargas.",
       "D) tratou apenas de impostos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Era Vargas é central para entender a formação do Estado nacional desenvolvimentista, o trabalhismo e a industrialização brasileira, temas frequentes em provas do ENEM. ",
     "dificuldade": "média"
   }
@@ -2524,7 +2524,7 @@ export const HISTORIA_CONTEUDO = {
       "C) implantação de socialismo.",
       "D) desmilitarização do Estado."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: O AI-5 ficou conhecido por: A) ampliar a liberdade de expressão. B) suspender direitos políticos e permitir fechamento do Congresso. C) instaurar eleições diretas para presidente. D) abolir a censura. Resposta: **B**. Exemplo 2 Uma questão analisa o “milagre econômico” destacando crescimento e aumento da desigualdade. Comentário: Crescimento sem distribuição de renda e com endividamento externo. "
   },
   {
@@ -2535,7 +2535,7 @@ export const HISTORIA_CONTEUDO = {
       "C) fim da censura.",
       "D) legalização de todos os partidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: O AI-5 ficou conhecido por: A) ampliar a liberdade de expressão. B) suspender direitos políticos e permitir fechamento do Congresso. C) instaurar eleições diretas para presidente. D) abolir a censura. Resposta: **B**. Exemplo 2 Uma questão analisa o “milagre econômico” destacando crescimento e aumento da desigualdade. Comentário: Crescimento sem distribuição de renda e com endividamento externo. "
   }
 ],
@@ -2549,7 +2549,7 @@ export const HISTORIA_CONTEUDO = {
       "C) ausência de partidos.",
       "D) apenas para eleições municipais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2560,7 +2560,7 @@ export const HISTORIA_CONTEUDO = {
       "C) significou distribuição ampla de renda.",
       "D) reduziu todas as desigualdades."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2601,7 +2601,7 @@ export const HISTORIA_CONTEUDO = {
       "C) implantação de socialismo.",
       "D) desmilitarização do Estado."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A ditadura militar é tema recorrente no ENEM, conectando política, direitos humanos, economia e memória histórica. Saber relacionar o período à redemocratização é essencial. ",
     "dificuldade": "média"
   },
@@ -2613,7 +2613,7 @@ export const HISTORIA_CONTEUDO = {
       "C) fim da censura.",
       "D) legalização de todos os partidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A ditadura militar é tema recorrente no ENEM, conectando política, direitos humanos, economia e memória histórica. Saber relacionar o período à redemocratização é essencial. ",
     "dificuldade": "média"
   },
@@ -2625,7 +2625,7 @@ export const HISTORIA_CONTEUDO = {
       "C) ausência de partidos.",
       "D) apenas para eleições municipais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A ditadura militar é tema recorrente no ENEM, conectando política, direitos humanos, economia e memória histórica. Saber relacionar o período à redemocratização é essencial. ",
     "dificuldade": "média"
   }
@@ -2679,7 +2679,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a volta do Império.",
       "D) a independência de Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão descreve a Constituição de 1988 como “Cidadã”. Comentário: O termo enfatiza o foco em direitos e cidadania, associando texto constitucional às lutas sociais dos anos 1970–80. Exemplo 2 Pergunta: A Constituição de 1988 assegurou: A) voto apenas masculino. B) fim do SUS. C) direitos sociais como saúde e educação universal. D) volta do regime militar. Resposta: **C**. "
   },
   {
@@ -2690,7 +2690,7 @@ export const HISTORIA_CONTEUDO = {
       "C) saúde restrita às Forças Armadas.",
       "D) saúde apenas para trabalhadores formais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão descreve a Constituição de 1988 como “Cidadã”. Comentário: O termo enfatiza o foco em direitos e cidadania, associando texto constitucional às lutas sociais dos anos 1970–80. Exemplo 2 Pergunta: A Constituição de 1988 assegurou: A) voto apenas masculino. B) fim do SUS. C) direitos sociais como saúde e educação universal. D) volta do regime militar. Resposta: **C**. "
   }
 ],
@@ -2704,7 +2704,7 @@ export const HISTORIA_CONTEUDO = {
       "C) possibilidade de existência de vários partidos.",
       "D) partido único."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2715,7 +2715,7 @@ export const HISTORIA_CONTEUDO = {
       "C) aboliu direitos trabalhistas.",
       "D) limitou participação política."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2756,7 +2756,7 @@ export const HISTORIA_CONTEUDO = {
       "C) a volta do Império.",
       "D) a independência de Portugal."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização e a Constituição de 1988 são fundamentais para questões sobre cidadania, direitos humanos e políticas públicas no ENEM. ",
     "dificuldade": "média"
   },
@@ -2768,7 +2768,7 @@ export const HISTORIA_CONTEUDO = {
       "C) saúde restrita às Forças Armadas.",
       "D) saúde apenas para trabalhadores formais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização e a Constituição de 1988 são fundamentais para questões sobre cidadania, direitos humanos e políticas públicas no ENEM. ",
     "dificuldade": "média"
   },
@@ -2780,7 +2780,7 @@ export const HISTORIA_CONTEUDO = {
       "C) possibilidade de existência de vários partidos.",
       "D) partido único."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A redemocratização e a Constituição de 1988 são fundamentais para questões sobre cidadania, direitos humanos e políticas públicas no ENEM. ",
     "dificuldade": "média"
   }
@@ -2833,7 +2833,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Inglaterra.",
       "D) Estados Unidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão menciona trabalhadores destruindo máquinas no século XIX. Comentário: Trata-se do ludismo, forma inicial de resistência à mecanização. Exemplo 2 Pergunta: A Primeira Revolução Industrial ficou marcada pelo uso de: A) energia nuclear. B) máquinas a vapor movidas a carvão. C) energia solar. D) internet. Resposta: **B**. "
   },
   {
@@ -2844,7 +2844,7 @@ export const HISTORIA_CONTEUDO = {
       "C) criação de sindicatos estatais.",
       "D) greve pacífica apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão menciona trabalhadores destruindo máquinas no século XIX. Comentário: Trata-se do ludismo, forma inicial de resistência à mecanização. Exemplo 2 Pergunta: A Primeira Revolução Industrial ficou marcada pelo uso de: A) energia nuclear. B) máquinas a vapor movidas a carvão. C) energia solar. D) internet. Resposta: **B**. "
   }
 ],
@@ -2858,7 +2858,7 @@ export const HISTORIA_CONTEUDO = {
       "C) trabalho voluntário.",
       "D) ausência de trabalho."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -2869,7 +2869,7 @@ export const HISTORIA_CONTEUDO = {
       "C) apenas energia eólica.",
       "D) somente tecnologia digital."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -2910,7 +2910,7 @@ export const HISTORIA_CONTEUDO = {
       "C) Inglaterra.",
       "D) Estados Unidos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Revolução Industrial é tema central no ENEM para relacionar tecnologia, trabalho, urbanização, desigualdades e meio ambiente. ",
     "dificuldade": "média"
   },
@@ -2922,7 +2922,7 @@ export const HISTORIA_CONTEUDO = {
       "C) criação de sindicatos estatais.",
       "D) greve pacífica apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Revolução Industrial é tema central no ENEM para relacionar tecnologia, trabalho, urbanização, desigualdades e meio ambiente. ",
     "dificuldade": "média"
   },
@@ -2934,7 +2934,7 @@ export const HISTORIA_CONTEUDO = {
       "C) trabalho voluntário.",
       "D) ausência de trabalho."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A Revolução Industrial é tema central no ENEM para relacionar tecnologia, trabalho, urbanização, desigualdades e meio ambiente. ",
     "dificuldade": "média"
   }
@@ -2988,7 +2988,7 @@ export const HISTORIA_CONTEUDO = {
       "C) fim de todas as colônias.",
       "D) apenas comércio pacífico."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão fala da partilha da África em conferências europeias sem consultar povos africanos. Comentário: Exemplo clássico do neocolonialismo imperialista. Exemplo 2 Pergunta: A Guerra Fria caracterizou-se por: A) guerra direta EUA x URSS. B) tensão permanente, corrida armamentista e conflitos indiretos. C) ausência de rivalidade ideológica. D) domínio total de um único bloco. Resposta: **B**. "
   },
   {
@@ -2999,7 +2999,7 @@ export const HISTORIA_CONTEUDO = {
       "C) hegemonia pacífica de um só país.",
       "D) inexistência de alianças militares."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão fala da partilha da África em conferências europeias sem consultar povos africanos. Comentário: Exemplo clássico do neocolonialismo imperialista. Exemplo 2 Pergunta: A Guerra Fria caracterizou-se por: A) guerra direta EUA x URSS. B) tensão permanente, corrida armamentista e conflitos indiretos. C) ausência de rivalidade ideológica. D) domínio total de um único bloco. Resposta: **B**. "
   }
 ],
@@ -3013,7 +3013,7 @@ export const HISTORIA_CONTEUDO = {
       "C) defesa dos direitos humanos.",
       "D) fim de qualquer tipo de preconceito."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -3024,7 +3024,7 @@ export const HISTORIA_CONTEUDO = {
       "C) substituir todos os Estados nacionais.",
       "D) controlar apenas a economia mundial."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -3065,7 +3065,7 @@ export const HISTORIA_CONTEUDO = {
       "C) fim de todas as colônias.",
       "D) apenas comércio pacífico."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Imperialismo, Guerras Mundiais e Guerra Fria são pilares da história contemporânea e aparecem no ENEM conectados a geopolítica, direitos humanos, descolonização e organização do mundo atual. FIM DO BLOCO 3 – HISTÓRIA (10 temas) ",
     "dificuldade": "média"
   },
@@ -3077,7 +3077,7 @@ export const HISTORIA_CONTEUDO = {
       "C) hegemonia pacífica de um só país.",
       "D) inexistência de alianças militares."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Imperialismo, Guerras Mundiais e Guerra Fria são pilares da história contemporânea e aparecem no ENEM conectados a geopolítica, direitos humanos, descolonização e organização do mundo atual. FIM DO BLOCO 3 – HISTÓRIA (10 temas) ",
     "dificuldade": "média"
   },
@@ -3089,7 +3089,7 @@ export const HISTORIA_CONTEUDO = {
       "C) defesa dos direitos humanos.",
       "D) fim de qualquer tipo de preconceito."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Imperialismo, Guerras Mundiais e Guerra Fria são pilares da história contemporânea e aparecem no ENEM conectados a geopolítica, direitos humanos, descolonização e organização do mundo atual. FIM DO BLOCO 3 – HISTÓRIA (10 temas) ",
     "dificuldade": "média"
   }

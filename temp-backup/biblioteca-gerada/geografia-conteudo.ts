@@ -48,7 +48,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) 5 km",
       "D) 500 km"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 – Escala Um mapa apresenta escala 1:100.000. A distância entre duas cidades no mapa é de 3 cm. Pergunta: Qual a distância real? Cálculo: 1 cm → 100.000 cm = 1 km 3 cm → 3 km Resposta: **3 km**. Exemplo 2 – Projeções Uma questão mostra um mapa-múndi em que a Groenlândia parece quase do tamanho da África. Pergunta: Essa projeção provavelmente é: A) de Peters, enfatizando áreas. B) azimutal, enfatizando distâncias. C) de Mercator, com exagero em altas latitudes. D) cônica, sem distorções. Comentário: Mercator “aumenta” regiões próximas aos polos. Resposta: **C**. "
   },
   {
@@ -59,7 +59,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) representa isóbaras e isotermas.",
       "D) não contém legenda."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 – Escala Um mapa apresenta escala 1:100.000. A distância entre duas cidades no mapa é de 3 cm. Pergunta: Qual a distância real? Cálculo: 1 cm → 100.000 cm = 1 km 3 cm → 3 km Resposta: **3 km**. Exemplo 2 – Projeções Uma questão mostra um mapa-múndi em que a Groenlândia parece quase do tamanho da África. Pergunta: Essa projeção provavelmente é: A) de Peters, enfatizando áreas. B) azimutal, enfatizando distâncias. C) de Mercator, com exagero em altas latitudes. D) cônica, sem distorções. Comentário: Mercator “aumenta” regiões próximas aos polos. Resposta: **C**. "
   }
 ],
@@ -73,7 +73,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ausência de detalhes.",
       "D) ausência de redução."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -84,7 +84,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) azimutal polar.",
       "D) Robinson (compromisso)."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -125,7 +125,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) 5 km",
       "D) 500 km"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Cartografia é a base da leitura espacial no ENEM. Dominar escalas e projeções permite interpretar criticamente mapas, identificar distorções e compreender a intencionalidade nas representações do mundo. ",
     "dificuldade": "média"
   },
@@ -137,7 +137,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) representa isóbaras e isotermas.",
       "D) não contém legenda."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Cartografia é a base da leitura espacial no ENEM. Dominar escalas e projeções permite interpretar criticamente mapas, identificar distorções e compreender a intencionalidade nas representações do mundo. ",
     "dificuldade": "média"
   },
@@ -149,7 +149,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ausência de detalhes.",
       "D) ausência de redução."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Cartografia é a base da leitura espacial no ENEM. Dominar escalas e projeções permite interpretar criticamente mapas, identificar distorções e compreender a intencionalidade nas representações do mundo. ",
     "dificuldade": "média"
   }
@@ -203,7 +203,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ao Equador.",
       "D) ao Trópico de Câncer."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 – Latitude Uma questão mostra dois pontos: - Ponto A: 10° N - Ponto B: 30° S Pergunta: Qual é a afirmação correta? A) A está no hemisfério Norte e B no Sul. B) Ambos estão no Norte. C) Ambos estão no Sul. D) Estão sobre o Equador. Resposta: **A**. Exemplo 2 – Fusos Se em Londres (0°) são 12h, que horas são em um lugar a 45° O, considerando fusos teóricos e desconsiderando ajustes políticos? 45° / 15° = 3 fusos → 3 horas a menos (a oeste). 12h – 3h = **9h**. "
   },
   {
@@ -214,7 +214,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ao Círculo Polar Ártico.",
       "D) ao Trópico de Capricórnio."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 – Latitude Uma questão mostra dois pontos: - Ponto A: 10° N - Ponto B: 30° S Pergunta: Qual é a afirmação correta? A) A está no hemisfério Norte e B no Sul. B) Ambos estão no Norte. C) Ambos estão no Sul. D) Estão sobre o Equador. Resposta: **A**. Exemplo 2 – Fusos Se em Londres (0°) são 12h, que horas são em um lugar a 45° O, considerando fusos teóricos e desconsiderando ajustes políticos? 45° / 15° = 3 fusos → 3 horas a menos (a oeste). 12h – 3h = **9h**. "
   }
 ],
@@ -228,7 +228,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) não muda.",
       "D) volta para 0h sempre."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -239,7 +239,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) no Polo Norte.",
       "D) no Polo Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -280,7 +280,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ao Equador.",
       "D) ao Trópico de Câncer."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Coordenadas e fusos horários são ferramentas fundamentais para questões que envolvem localização, transportes, globalização e geopolítica. Entender a lógica dos graus e das horas permite resolver problemas típicos do ENEM com segurança. ",
     "dificuldade": "média"
   },
@@ -292,7 +292,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ao Círculo Polar Ártico.",
       "D) ao Trópico de Capricórnio."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Coordenadas e fusos horários são ferramentas fundamentais para questões que envolvem localização, transportes, globalização e geopolítica. Entender a lógica dos graus e das horas permite resolver problemas típicos do ENEM com segurança. ",
     "dificuldade": "média"
   },
@@ -304,7 +304,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) não muda.",
       "D) volta para 0h sempre."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Coordenadas e fusos horários são ferramentas fundamentais para questões que envolvem localização, transportes, globalização e geopolítica. Entender a lógica dos graus e das horas permite resolver problemas típicos do ENEM com segurança. ",
     "dificuldade": "média"
   }
@@ -357,7 +357,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) acumularem apenas areia recente.",
       "D) apresentarem petróleo sempre."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão aborda a Serra do Mar e o Planalto Central brasileiro, classificando-os como: A) planícies recentes de origem marinha. B) dobramentos modernos com vulcanismo intenso. C) planaltos de estrutura antiga. D) bacias sedimentares jovens. Resposta: **C**. Exemplo 2 Um mapa indica Bacia do Paraná e Bacia Amazônica. Pergunta: Essas áreas são: A) escudos cristalinos. B) bacias sedimentares. C) dobramentos modernos. D) áreas de vulcanismo recente. Resposta: **B**. "
   },
   {
@@ -368,7 +368,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) podem conter petróleo, gás e aquíferos.",
       "D) não têm relevância econômica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão aborda a Serra do Mar e o Planalto Central brasileiro, classificando-os como: A) planícies recentes de origem marinha. B) dobramentos modernos com vulcanismo intenso. C) planaltos de estrutura antiga. D) bacias sedimentares jovens. Resposta: **C**. Exemplo 2 Um mapa indica Bacia do Paraná e Bacia Amazônica. Pergunta: Essas áreas são: A) escudos cristalinos. B) bacias sedimentares. C) dobramentos modernos. D) áreas de vulcanismo recente. Resposta: **B**. "
   }
 ],
@@ -382,7 +382,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) escudos muito antigos.",
       "D) ausência de sismos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -393,7 +393,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) planícies glaciares recentes.",
       "D) predomínio de vulcanismo ativo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -434,7 +434,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) acumularem apenas areia recente.",
       "D) apresentarem petróleo sempre."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo da estrutura geológica e do relevo permite relacionar recursos naturais, atividades econômicas e riscos ambientais. No ENEM, isso aparece associado à mineração, ocupação do território e impactos ambientais. ",
     "dificuldade": "média"
   },
@@ -446,7 +446,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) podem conter petróleo, gás e aquíferos.",
       "D) não têm relevância econômica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo da estrutura geológica e do relevo permite relacionar recursos naturais, atividades econômicas e riscos ambientais. No ENEM, isso aparece associado à mineração, ocupação do território e impactos ambientais. ",
     "dificuldade": "média"
   },
@@ -458,7 +458,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) escudos muito antigos.",
       "D) ausência de sismos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O estudo da estrutura geológica e do relevo permite relacionar recursos naturais, atividades econômicas e riscos ambientais. No ENEM, isso aparece associado à mineração, ocupação do território e impactos ambientais. ",
     "dificuldade": "média"
   }
@@ -511,7 +511,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) temperaturas abaixo de 0 °C sempre.",
       "D) baixa insolação."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um gráfico com chuvas abundantes o ano todo e altas temperaturas. Pergunta: Esse padrão é típico de qual clima brasileiro? A) Semiárido. B) Subtropical. C) Equatorial. D) Tropical de altitude. Resposta: **C**. Exemplo 2 Um texto menciona o aquecimento anômalo das águas do Pacífico Equatorial e impactos como secas no Nordeste e cheias no Sul. Trata-se de: A) El Niño. B) La Niña. C) Monções. D) Furacões tropicais. Resposta: **A**. "
   },
   {
@@ -522,7 +522,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) apenas no Nordeste.",
       "D) apenas na Amazônia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um gráfico com chuvas abundantes o ano todo e altas temperaturas. Pergunta: Esse padrão é típico de qual clima brasileiro? A) Semiárido. B) Subtropical. C) Equatorial. D) Tropical de altitude. Resposta: **C**. Exemplo 2 Um texto menciona o aquecimento anômalo das águas do Pacífico Equatorial e impactos como secas no Nordeste e cheias no Sul. Trata-se de: A) El Niño. B) La Niña. C) Monções. D) Furacões tropicais. Resposta: **A**. "
   }
 ],
@@ -536,7 +536,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) são idênticos em todos os lugares.",
       "D) só valem em regiões polares."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -547,7 +547,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) frio extremo na Amazônia.",
       "D) neve na região Norte."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -588,7 +588,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) temperaturas abaixo de 0 °C sempre.",
       "D) baixa insolação."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Compreender climas e fenômenos climáticos é essencial para interpretar questões de agricultura, disponibilidade de água, riscos de desastres e mudanças climáticas, temas recorrentes no ENEM. ",
     "dificuldade": "média"
   },
@@ -600,7 +600,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) apenas no Nordeste.",
       "D) apenas na Amazônia."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Compreender climas e fenômenos climáticos é essencial para interpretar questões de agricultura, disponibilidade de água, riscos de desastres e mudanças climáticas, temas recorrentes no ENEM. ",
     "dificuldade": "média"
   },
@@ -612,7 +612,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) são idênticos em todos os lugares.",
       "D) só valem em regiões polares."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Compreender climas e fenômenos climáticos é essencial para interpretar questões de agricultura, disponibilidade de água, riscos de desastres e mudanças climáticas, temas recorrentes no ENEM. ",
     "dificuldade": "média"
   }
@@ -665,7 +665,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) é desabitado.",
       "D) não sofre pressão antrópica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma imagem mostra árvores altas, grande diversidade, clima quente e úmido. Pergunta: Trata-se provavelmente de: A) Mata de Araucária. B) Caatinga. C) Floresta Amazônica. D) Campos Sulinos. Resposta: **C**. Exemplo 2 Uma questão cita um bioma com clima semiárido e vegetação xerófila (plantas adaptadas à falta de água). Pergunta: É o bioma: A) Cerrado. B) Pampa. C) Caatinga. D) Pantanal. Resposta: **C**. "
   },
   {
@@ -676,7 +676,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ocupa apenas a região Norte.",
       "D) não é relevante ao ENEM."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma imagem mostra árvores altas, grande diversidade, clima quente e úmido. Pergunta: Trata-se provavelmente de: A) Mata de Araucária. B) Caatinga. C) Floresta Amazônica. D) Campos Sulinos. Resposta: **C**. Exemplo 2 Uma questão cita um bioma com clima semiárido e vegetação xerófila (plantas adaptadas à falta de água). Pergunta: É o bioma: A) Cerrado. B) Pampa. C) Caatinga. D) Pantanal. Resposta: **C**. "
   }
 ],
@@ -690,7 +690,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) clima polar.",
       "D) clima mediterrâneo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -701,7 +701,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) uma cordilheira recente.",
       "D) um escudo cristalino."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -742,7 +742,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) é desabitado.",
       "D) não sofre pressão antrópica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Biomas e vegetação aparecem no ENEM ligados à biodiversidade, mudanças climáticas, agronegócio e conservação. Entender características e ameaças é crucial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   },
@@ -754,7 +754,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ocupa apenas a região Norte.",
       "D) não é relevante ao ENEM."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Biomas e vegetação aparecem no ENEM ligados à biodiversidade, mudanças climáticas, agronegócio e conservação. Entender características e ameaças é crucial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   },
@@ -766,7 +766,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) clima polar.",
       "D) clima mediterrâneo."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Biomas e vegetação aparecem no ENEM ligados à biodiversidade, mudanças climáticas, agronegócio e conservação. Entender características e ameaças é crucial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   }
@@ -820,7 +820,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) a área drenada por um rio principal e seus afluentes.",
       "D) o lago de uma cidade."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca um rio com grandes desníveis, aproveitado para hidrelétricas. Pergunta: Esse rio é típico de: A) planície. B) planalto. C) manguezal. D) delta. Resposta: **B**. Exemplo 2 Um mapa mostra a Bacia do São Francisco e fala em “rio da integração nacional”. Comentário: O São Francisco atravessa diferentes regiões e é central em projetos de transposição para o semiárido. "
   },
   {
@@ -831,7 +831,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) leito mais regular e maior navegação.",
       "D) ausência de meandros."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão destaca um rio com grandes desníveis, aproveitado para hidrelétricas. Pergunta: Esse rio é típico de: A) planície. B) planalto. C) manguezal. D) delta. Resposta: **B**. Exemplo 2 Um mapa mostra a Bacia do São Francisco e fala em “rio da integração nacional”. Comentário: O São Francisco atravessa diferentes regiões e é central em projetos de transposição para o semiárido. "
   }
 ],
@@ -845,7 +845,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ser a menor do Brasil.",
       "D) não ter relevância econômica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -856,7 +856,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) é um rio da Amazônia.",
       "D) é um lago no Sul."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -897,7 +897,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) a área drenada por um rio principal e seus afluentes.",
       "D) o lago de uma cidade."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões de hidrografia no ENEM relacionam água, energia, agricultura, cidades e conflitos socioambientais. Ler mapas, gráficos e textos sobre bacias e usos da água é uma habilidade central. ",
     "dificuldade": "média"
   },
@@ -909,7 +909,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) leito mais regular e maior navegação.",
       "D) ausência de meandros."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões de hidrografia no ENEM relacionam água, energia, agricultura, cidades e conflitos socioambientais. Ler mapas, gráficos e textos sobre bacias e usos da água é uma habilidade central. ",
     "dificuldade": "média"
   },
@@ -921,7 +921,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) ser a menor do Brasil.",
       "D) não ter relevância econômica."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões de hidrografia no ENEM relacionam água, energia, agricultura, cidades e conflitos socioambientais. Ler mapas, gráficos e textos sobre bacias e usos da água é uma habilidade central. ",
     "dificuldade": "média"
   }
@@ -976,7 +976,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) imigração – emigração.",
       "D) crescimento total + migração."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma pirâmide etária com base larga e topo estreito indica: A) população envelhecida. B) alto percentual de idosos. C) população jovem, com elevada taxa de natalidade. D) queda acelerada da natalidade. Resposta: **C**. Exemplo 2 Um texto descreve deslocamento em massa de trabalhadores rurais para grandes cidades industriais ao longo do século XX. Comentário: Trata-se de êxodo rural, típico do processo de urbanização brasileira. "
   },
   {
@@ -987,7 +987,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) a taxa de natalidade.",
       "D) a mortalidade infantil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma pirâmide etária com base larga e topo estreito indica: A) população envelhecida. B) alto percentual de idosos. C) população jovem, com elevada taxa de natalidade. D) queda acelerada da natalidade. Resposta: **C**. Exemplo 2 Um texto descreve deslocamento em massa de trabalhadores rurais para grandes cidades industriais ao longo do século XX. Comentário: Trata-se de êxodo rural, típico do processo de urbanização brasileira. "
   }
 ],
@@ -1001,7 +1001,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) migração internacional.",
       "D) migração forçada apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1012,7 +1012,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) só taxa de natalidade.",
       "D) apenas número de médicos."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1053,7 +1053,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) imigração – emigração.",
       "D) crescimento total + migração."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões demográficas no ENEM misturam leitura de gráficos, interpretação de pirâmides e análise de problemas sociais. Compreender a transição demográfica brasileira é chave para entender debates sobre previdência, saúde e planejamento urbano. ",
     "dificuldade": "média"
   },
@@ -1065,7 +1065,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) a taxa de natalidade.",
       "D) a mortalidade infantil."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões demográficas no ENEM misturam leitura de gráficos, interpretação de pirâmides e análise de problemas sociais. Compreender a transição demográfica brasileira é chave para entender debates sobre previdência, saúde e planejamento urbano. ",
     "dificuldade": "média"
   },
@@ -1077,7 +1077,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) migração internacional.",
       "D) migração forçada apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Questões demográficas no ENEM misturam leitura de gráficos, interpretação de pirâmides e análise de problemas sociais. Compreender a transição demográfica brasileira é chave para entender debates sobre previdência, saúde e planejamento urbano. ",
     "dificuldade": "média"
   }
@@ -1131,7 +1131,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) apenas no século XIX.",
       "D) inexistente."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um mapa com duas cidades que cresceram até se unirem fisicamente. Pergunta: Isso descreve: A) descentralização rural. B) conurbação. C) êxodo rural. D) gentrificação. Resposta: **B**. Exemplo 2 Um texto aborda expulsão de moradores pobres de áreas centrais valorizadas e substituição por grupos de maior renda. Trata-se de: A) favelização. B) gentrificação. C) conurbação rural. D) metropolização agrícola. Resposta: **B**. "
   },
   {
@@ -1142,7 +1142,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) apenas deslocamento de turistas.",
       "D) fenômeno rural."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra um mapa com duas cidades que cresceram até se unirem fisicamente. Pergunta: Isso descreve: A) descentralização rural. B) conurbação. C) êxodo rural. D) gentrificação. Resposta: **B**. Exemplo 2 Um texto aborda expulsão de moradores pobres de áreas centrais valorizadas e substituição por grupos de maior renda. Trata-se de: A) favelização. B) gentrificação. C) conurbação rural. D) metropolização agrícola. Resposta: **B**. "
   }
 ],
@@ -1156,7 +1156,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) queda do preço da terra.",
       "D) pouca urbanização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1167,7 +1167,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) migração internacional.",
       "D) apenas expansão vertical."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1208,7 +1208,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) apenas no século XIX.",
       "D) inexistente."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Urbanização e problemas urbanos aparecem no ENEM em textos, mapas e gráficos, conectando geografia com cidadania, políticas públicas e qualidade de vida. ",
     "dificuldade": "média"
   },
@@ -1220,7 +1220,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) apenas deslocamento de turistas.",
       "D) fenômeno rural."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Urbanização e problemas urbanos aparecem no ENEM em textos, mapas e gráficos, conectando geografia com cidadania, políticas públicas e qualidade de vida. ",
     "dificuldade": "média"
   },
@@ -1232,7 +1232,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) queda do preço da terra.",
       "D) pouca urbanização."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Urbanização e problemas urbanos aparecem no ENEM em textos, mapas e gráficos, conectando geografia com cidadania, políticas públicas e qualidade de vida. ",
     "dificuldade": "média"
   }
@@ -1286,7 +1286,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) grande propriedade, muitas vezes voltada à monocultura.",
       "D) propriedade pública apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma tabela mostra poucas propriedades com grande área e muitas propriedades com pouca área. Pergunta: Isso indica: A) estrutura fundiária igualitária. B) concentração fundiária. C) coletivização da terra. D) reforma agrária total. Resposta: **B**. Exemplo 2 Uma questão associa crescimento da produção de grãos à expansão sobre Cerrado e uso de máquinas, sementes selecionadas e insumos. Comentário: Descreve o agronegócio moderno, fruto da Revolução Verde. "
   },
   {
@@ -1297,7 +1297,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) não empregar ninguém.",
       "D) ser irrelevante na produção."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma tabela mostra poucas propriedades com grande área e muitas propriedades com pouca área. Pergunta: Isso indica: A) estrutura fundiária igualitária. B) concentração fundiária. C) coletivização da terra. D) reforma agrária total. Resposta: **B**. Exemplo 2 Uma questão associa crescimento da produção de grãos à expansão sobre Cerrado e uso de máquinas, sementes selecionadas e insumos. Comentário: Descreve o agronegócio moderno, fruto da Revolução Verde. "
   }
 ],
@@ -1311,7 +1311,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) recuperação de todos os biomas.",
       "D) fim do agronegócio."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1322,7 +1322,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) fim da mecanização.",
       "D) plantio manual apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1363,7 +1363,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) grande propriedade, muitas vezes voltada à monocultura.",
       "D) propriedade pública apenas."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Agropecuária e questão agrária são temas clássicos do ENEM, conectando economia, ambiente e conflitos sociais. Entender a lógica do agronegócio e da agricultura familiar é essencial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   },
@@ -1375,7 +1375,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) não empregar ninguém.",
       "D) ser irrelevante na produção."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Agropecuária e questão agrária são temas clássicos do ENEM, conectando economia, ambiente e conflitos sociais. Entender a lógica do agronegócio e da agricultura familiar é essencial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   },
@@ -1387,7 +1387,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) recuperação de todos os biomas.",
       "D) fim do agronegócio."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Agropecuária e questão agrária são temas clássicos do ENEM, conectando economia, ambiente e conflitos sociais. Entender a lógica do agronegócio e da agricultura familiar é essencial para interpretar textos, mapas e gráficos. ",
     "dificuldade": "média"
   }
@@ -1441,7 +1441,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) comércio e serviços.",
       "D) mineração."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra uma empresa que projeta um produto em um país, fabrica peças em outros e monta em um terceiro, vendendo globalmente. Comentário: Exemplo clássico de globalização produtiva e de cadeias globais de valor. Exemplo 2 Um texto aborda a migração de fábricas da Região Metropolitana de São Paulo para o interior e outros estados. Pergunta: Isso ilustra: A) concentração industrial. B) desconcentração industrial. C) fim da indústria. D) migração rural. Resposta: **B**. "
   },
   {
@@ -1452,7 +1452,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) fim do comércio internacional.",
       "D) autossuficiência total dos países."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Uma questão mostra uma empresa que projeta um produto em um país, fabrica peças em outros e monta em um terceiro, vendendo globalmente. Comentário: Exemplo clássico de globalização produtiva e de cadeias globais de valor. Exemplo 2 Um texto aborda a migração de fábricas da Região Metropolitana de São Paulo para o interior e outros estados. Pergunta: Isso ilustra: A) concentração industrial. B) desconcentração industrial. C) fim da indústria. D) migração rural. Resposta: **B**. "
   }
 ],
@@ -1466,7 +1466,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) áreas totalmente isoladas.",
       "D) apenas zonas rurais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1477,7 +1477,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) período imperial escravista.",
       "D) ditadura militar sem indústria."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "média"
   },
   {
@@ -1518,7 +1518,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) comércio e serviços.",
       "D) mineração."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Indústria, serviços e globalização aparecem no ENEM em questões que cruzam economia, tecnologia, geopolítica e trabalho. Compreender como o Brasil se insere nessas dinâmicas é fundamental para interpretar textos e gráficos sobre desenvolvimento e desigualdade. FIM DO BLOCO 2 – GEOGRAFIA (10 temas) ",
     "dificuldade": "média"
   },
@@ -1530,7 +1530,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) fim do comércio internacional.",
       "D) autossuficiência total dos países."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Indústria, serviços e globalização aparecem no ENEM em questões que cruzam economia, tecnologia, geopolítica e trabalho. Compreender como o Brasil se insere nessas dinâmicas é fundamental para interpretar textos e gráficos sobre desenvolvimento e desigualdade. FIM DO BLOCO 2 – GEOGRAFIA (10 temas) ",
     "dificuldade": "média"
   },
@@ -1542,7 +1542,7 @@ export const GEOGRAFIA_CONTEUDO = {
       "C) áreas totalmente isoladas.",
       "D) apenas zonas rurais."
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Indústria, serviços e globalização aparecem no ENEM em questões que cruzam economia, tecnologia, geopolítica e trabalho. Compreender como o Brasil se insere nessas dinâmicas é fundamental para interpretar textos e gráficos sobre desenvolvimento e desigualdade. FIM DO BLOCO 2 – GEOGRAFIA (10 temas) ",
     "dificuldade": "média"
   }
@@ -1592,7 +1592,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) 200 m  B) 2 km  C) 20 km  D) 200 km"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 — Escala Mapa em escala 1:50.000. Distância no mapa: 6 cm. Real: 6 × 50.000 = 300.000 cm = 3.000 m = 3 km. Resposta: **3 km**. Exemplo 2 — Interpretação Em um mapa temático, áreas em vermelho indicam maior densidade populacional. Pergunta: Vermelho representa: **maior concentração de habitantes**. "
   },
   {
@@ -1600,7 +1600,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) mais detalhado  B) menos detalhado  C) igual  D) impossível ler"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 — Escala Mapa em escala 1:50.000. Distância no mapa: 6 cm. Real: 6 × 50.000 = 300.000 cm = 3.000 m = 3 km. Resposta: **3 km**. Exemplo 2 — Interpretação Em um mapa temático, áreas em vermelho indicam maior densidade populacional. Pergunta: Vermelho representa: **maior concentração de habitantes**. "
   }
 ],
@@ -1611,7 +1611,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) Leste/Oeste  B) Norte/Sul  C) altitude  D) relevo"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "dificuldade": "fácil"
   },
   {
@@ -1646,7 +1646,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) 200 m  B) 2 km  C) 20 km  D) 200 km"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, cartografia é leitura e cálculo: escala, legenda e coordenadas aparecem com frequência em itens contextualizados. ",
     "dificuldade": "média"
   },
@@ -1655,7 +1655,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) mais detalhado  B) menos detalhado  C) igual  D) impossível ler"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, cartografia é leitura e cálculo: escala, legenda e coordenadas aparecem com frequência em itens contextualizados. ",
     "dificuldade": "média"
   },
@@ -1664,7 +1664,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) Leste/Oeste  B) Norte/Sul  C) altitude  D) relevo"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "No ENEM, cartografia é leitura e cálculo: escala, legenda e coordenadas aparecem com frequência em itens contextualizados. ",
     "dificuldade": "média"
   }
@@ -1713,7 +1713,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) dobramentos modernos  B) bacias sedimentares  C) vulcões ativos  D) geleiras"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: Onde predominam rochas sedimentares e grandes bacias? Resposta: **Em grande parte do território brasileiro (bacias sedimentares)**. Exemplo 2 Minérios metálicos (ferro, manganês) tendem a aparecer em: Resposta: **escudos cristalinos**. "
   },
   {
@@ -1721,7 +1721,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) escudos cristalinos  B) oceanos  C) planícies alagadas  D) geleiras"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo 1 Pergunta: Onde predominam rochas sedimentares e grandes bacias? Resposta: **Em grande parte do território brasileiro (bacias sedimentares)**. Exemplo 2 Minérios metálicos (ferro, manganês) tendem a aparecer em: Resposta: **escudos cristalinos**. "
   }
 ],
@@ -1759,7 +1759,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) dobramentos modernos  B) bacias sedimentares  C) vulcões ativos  D) geleiras"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Entender relevo e geologia ajuda a explicar recursos naturais e ocupação econômica do território — abordagem típica do ENEM. ",
     "dificuldade": "média"
   },
@@ -1768,7 +1768,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) escudos cristalinos  B) oceanos  C) planícies alagadas  D) geleiras"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Entender relevo e geologia ajuda a explicar recursos naturais e ocupação econômica do território — abordagem típica do ENEM. ",
     "dificuldade": "média"
   },
@@ -1827,7 +1827,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) semiárido  B) equatorial  C) subtropical  D) desértico"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo: Texto descreve “chuvas escassas e irregulares” e “longos períodos de seca”. Pergunta: Clima? **Semiárido**. "
   },
   {
@@ -1835,7 +1835,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) inverno chuvoso  B) verão chuvoso e inverno seco  C) chuva o ano todo  D) neve"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Exemplo: Texto descreve “chuvas escassas e irregulares” e “longos períodos de seca”. Pergunta: Clima? **Semiárido**. "
   }
 ],
@@ -1873,7 +1873,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) semiárido  B) equatorial  C) subtropical  D) desértico"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O ENEM cobra clima associado a impactos humanos e políticas públicas (seca, abastecimento, riscos urbanos). ",
     "dificuldade": "média"
   },
@@ -1882,7 +1882,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) inverno chuvoso  B) verão chuvoso e inverno seco  C) chuva o ano todo  D) neve"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O ENEM cobra clima associado a impactos humanos e políticas públicas (seca, abastecimento, riscos urbanos). ",
     "dificuldade": "média"
   },
@@ -1942,7 +1942,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) Pampa  B) Cerrado  C) Pantanal  D) Caatinga"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “vegetação adaptada à seca, folhas pequenas, espinhos e perda de folhas no período seco”. Bioma: **Caatinga**. "
   },
   {
@@ -1950,7 +1950,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) Pantanal  B) Amazônia  C) Pampa  D) Mata Atlântica"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “vegetação adaptada à seca, folhas pequenas, espinhos e perda de folhas no período seco”. Bioma: **Caatinga**. "
   }
 ],
@@ -1988,7 +1988,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) Pampa  B) Cerrado  C) Pantanal  D) Caatinga"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A chave é ligar bioma a impactos humanos (agro, mineração, urbanização) e a estratégias de preservação. ",
     "dificuldade": "média"
   },
@@ -1997,7 +1997,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) Pantanal  B) Amazônia  C) Pampa  D) Mata Atlântica"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "A chave é ligar bioma a impactos humanos (agro, mineração, urbanização) e a estratégias de preservação. ",
     "dificuldade": "média"
   },
@@ -2056,7 +2056,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) enriquecimento do centro  B) expansão de moradias para áreas distantes e baratas  C) fim das favelas  D) ruralização"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão: “crescimento urbano sem infraestrutura, ocupação irregular de encostas e várzeas.” Tema: **urbanização acelerada + risco ambiental + desigualdade urbana**. "
   },
   {
@@ -2093,7 +2093,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) enriquecimento do centro  B) expansão de moradias para áreas distantes e baratas  C) fim das favelas  D) ruralização"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O ENEM conecta urbanização à cidadania: mobilidade, saneamento, moradia e desigualdade. ",
     "dificuldade": "média"
   },
@@ -2152,7 +2152,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) produção totalmente local  B) cadeias internacionais de produção  C) fim do comércio  D) isolamento"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “produção fragmentada em vários países com logística integrada”. Tema: **cadeias globais de valor / globalização produtiva**. "
   },
   {
@@ -2189,7 +2189,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) produção totalmente local  B) cadeias internacionais de produção  C) fim do comércio  D) isolamento"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Globalização é tema de geopolítica, economia e trabalho no ENEM, quase sempre com análise crítica. ",
     "dificuldade": "média"
   },
@@ -2248,7 +2248,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) monocultura para exportação  B) diversidade e forte uso de mão de obra familiar  C) ausência de alimentos  D) mineração"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “expansão de soja no Cerrado com mecanização e exportação.” Tema: **agronegócio e fronteira agrícola**. "
   },
   {
@@ -2285,7 +2285,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) monocultura para exportação  B) diversidade e forte uso de mão de obra familiar  C) ausência de alimentos  D) mineração"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "O ENEM costuma pedir comparação crítica: produtividade e exportação versus impactos socioambientais e segurança alimentar. ",
     "dificuldade": "média"
   },
@@ -2344,7 +2344,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) nuclear  B) hidrelétrica  C) carvão  D) geotérmica"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão: “acionamento de termelétricas durante seca prolongada aumenta conta de luz e emissões.” Tema: **dependência hidrelétrica + crise hídrica + termelétrica**. "
   },
   {
@@ -2381,7 +2381,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) nuclear  B) hidrelétrica  C) carvão  D) geotérmica"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Energia no ENEM aparece conectada a ambiente, economia e políticas públicas. ",
     "dificuldade": "média"
   },
@@ -2440,7 +2440,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) migração cidade→campo  B) migração campo→cidade  C) turismo  D) imigração europeia"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Texto: “pessoas fogem de guerra e buscam proteção em outro país.” Resposta: **refugiados / migração forçada**. "
   },
   {
@@ -2477,7 +2477,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) migração cidade→campo  B) migração campo→cidade  C) turismo  D) imigração europeia"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Migrações são cobradas com leitura de contexto: por que migram e que efeitos geram no território e na sociedade. ",
     "dificuldade": "média"
   },
@@ -2536,7 +2536,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "alternativas": [
       "A) ausência de recursos  B) disputa por território/recursos  C) falta de Estado  D) apenas religião"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "resolucao": "Questão: “conflito em região rica em petróleo com interferência internacional.” Tema: **recursos estratégicos + geopolítica do petróleo**. "
   },
   {
@@ -2573,7 +2573,7 @@ export const GEOGRAFIA_CONTEUDO = {
     "opcoes": [
       "A) ausência de recursos  B) disputa por território/recursos  C) falta de Estado  D) apenas religião"
     ],
-    "respostaCorreta": null,
+    "respostaCorreta": 1,
     "explicacao": "Geopolítica no ENEM é interpretação de cenário: recursos, fronteiras, influência e consequências humanas. FIM DO BLOCO 4 – GEOGRAFIA (10 temas) ",
     "dificuldade": "média"
   },

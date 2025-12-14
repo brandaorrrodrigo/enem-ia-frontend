@@ -1,0 +1,6 @@
+temp-backup
+*.backup
+*.log
+.git
+.env.local
+node_modules

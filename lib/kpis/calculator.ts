@@ -95,7 +95,7 @@ export function calcularEvolucaoAcademica(
 
   // Calcular tempo para marcos de evolução
   const tempoParaEvolucao = {
-    dias50Pontos: encontrarTempoPara Marco(simuladosOrdenados, 50),
+    dias50Pontos: encontrarTempoParaMarco(simuladosOrdenados, 50),
     dias100Pontos: encontrarTempoParaMarco(simuladosOrdenados, 100),
     sairDePatamar: calcularTempoSaidaPatamar(simuladosOrdenados),
   }
@@ -452,7 +452,7 @@ export function agregarKPIsAnonimos(
   }
 
   const mediasEngajamento = {
-    frequenciaSemanalMedia:
+    frequenciaSemanalmedia:
       kpis.reduce(
         (acc, k) => acc + k.engajamentoInteligente.frequenciaSemanal.diasAtivos,
         0

@@ -43,7 +43,7 @@ export interface RelatorioAnualImpacto {
       segundaTentativa: number
       terceiraTentativaOuMais: number
     }
-    cursosPreten didos: { [curso: string]: number }
+    cursosPretendidos: { [curso: string]: number }
     tempoMedioEstudoSemanal: number
     distribuicaoPorNivel: {
       iniciante: number
@@ -235,7 +235,7 @@ A IA ajusta as estimativas considerando:
     },
 
     engajamentoConsistencia: {
-      frequenciaSemanalMedia: metricas.medias.engajamento.frequenciaSemanalMedia,
+      frequenciaSemanalmedia: metricas.medias.engajamento.frequenciaSemanalmedia,
       taxaRetencaoMensal: 0, // A ser calculado
       simuladosRealizadosPorAluno: metricas.medias.engajamento.simuladosConcluidos,
       streakMedio: metricas.medias.engajamento.streakMedio,
@@ -393,7 +393,7 @@ ${relatorio.metodologia.calculoNotasEstimadas}
 ## 6. Engajamento e Consistência
 
 ### Frequência Semanal Média
-**${relatorio.engajamentoConsistencia.frequenciaSemanalMedia.toFixed(1)} dias/semana**
+**${relatorio.engajamentoConsistencia.frequenciaSemanalmedia.toFixed(1)} dias/semana**
 
 ### Taxa de Retenção Mensal
 **${relatorio.engajamentoConsistencia.taxaRetencaoMensal.toFixed(1)}%**

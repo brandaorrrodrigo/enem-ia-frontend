@@ -219,7 +219,7 @@ export interface MetricasAgregadas {
     resultados: {
       percentualAtingiramAlvo: number
       percentualAprovados: number
-      evolucaoEntretentativas: number
+      evolucaoEntreTentativas: number
     }
   }
 

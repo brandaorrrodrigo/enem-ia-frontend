@@ -963,6 +963,75 @@ export const MATERIAS: Materia[] = [
       },
     ],
   },
+  {
+    id: 'artes',
+    nome: 'Artes',
+    nomeCompleto: 'Linguagens e Códigos - Artes',
+    icon: '🎨',
+    color: '#f472b6',
+    modulos: [
+      {
+        title: 'Arte e Linguagem',
+        slug: 'arte-e-linguagem',
+        descricao: 'A arte como forma de expressão e comunicação',
+        icon: '💬',
+      },
+      {
+        title: 'Elementos das Artes Visuais',
+        slug: 'elementos-das-artes-visuais',
+        descricao: 'Linha, forma, cor e textura',
+        icon: '🎨',
+      },
+      {
+        title: 'Arte na Pré-História',
+        slug: 'arte-na-pre-historia',
+        descricao: 'Pinturas rupestres e primeiras manifestações',
+        icon: '🦴',
+      },
+      {
+        title: 'Arte na Antiguidade',
+        slug: 'arte-na-antiguidade',
+        descricao: 'Arte grega, romana e egípcia',
+        icon: '🏛️',
+      },
+      {
+        title: 'Arte Medieval',
+        slug: 'arte-medieval',
+        descricao: 'Arte bizantina, românica e gótica',
+        icon: '⛪',
+      },
+      {
+        title: 'Renascimento Artístico',
+        slug: 'renascimento-artistico',
+        descricao: 'Humanismo e renovação das artes',
+        icon: '🖼️',
+      },
+      {
+        title: 'Arte Moderna',
+        slug: 'arte-moderna',
+        descricao: 'Vanguardas europeias e modernismo',
+        icon: '🎭',
+      },
+      {
+        title: 'Arte Contemporânea',
+        slug: 'arte-contemporanea',
+        descricao: 'Tendências artísticas atuais',
+        icon: '🖌️',
+      },
+      {
+        title: 'Arte e Tecnologia',
+        slug: 'arte-e-tecnologia',
+        descricao: 'Arte digital e novas mídias',
+        icon: '💻',
+      },
+      {
+        title: 'Arte e Sociedade',
+        slug: 'arte-e-sociedade',
+        descricao: 'Função social da arte',
+        icon: '👥',
+      },
+    ],
+  },
 ];
 
 export function getMateriaById(id: string): Materia | undefined {

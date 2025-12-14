@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import FloatingBackButton from '@/components/FloatingBackButton';
+import { RESUMOS_ENEM } from '@/data/resumos-enem';
 
 interface Material {
   id: string;
@@ -48,8 +49,21 @@ export default function MateriaisPage() {
   }, []);
 
   const carregarMateriais = () => {
-    // Importar dados reais da biblioteca
-    const materiaisData: Material[] = [
+    // Converter resumos ENEM para o formato Material
+    const materiaisData: Material[] = RESUMOS_ENEM.map(resumo => ({
+      id: resumo.id,
+      titulo: resumo.titulo,
+      tipo: 'resumo',
+      disciplina: resumo.disciplina,
+      descricao: resumo.descricao,
+      icone: resumo.icone,
+      downloads: resumo.downloads,
+      premium: resumo.premium,
+      url: `/enem/materiais/${resumo.slug}`
+    }));
+
+    // Adicionar materiais hardcoded adicionais se necessário
+    const materiaisAdicionais: Material[] = [
       // RESUMOS MATEMÁTICA
       {
         id: 'res-mat-001',
@@ -573,7 +587,9 @@ export default function MateriaisPage() {
       },
     ];
 
-    setMateriais(materiaisData);
+    // Combinar resumos ENEM com materiais adicionais
+    const todosMateriais = [...materiaisData, ...materiaisAdicionais];
+    setMateriais(todosMateriais);
     setLoading(false);
   };
 

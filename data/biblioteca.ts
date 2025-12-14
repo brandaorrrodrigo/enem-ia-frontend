@@ -1032,6 +1032,87 @@ export const MATERIAS: Materia[] = [
       },
     ],
   },
+  {
+    id: 'formulas-memorizacao',
+    nome: 'Fórmulas & Memorização',
+    nomeCompleto: 'Fórmulas & Memorização - Revisão Rápida',
+    icon: '🧠',
+    color: '#f59e0b',
+    modulos: [
+      {
+        title: 'Matemática - Fórmulas',
+        slug: 'matematica-formulas',
+        descricao: 'Porcentagem, juros, funções e geometria',
+        icon: '🔢',
+      },
+      {
+        title: 'Física - Fórmulas',
+        slug: 'fisica-formulas',
+        descricao: 'Cinemática, dinâmica, trabalho e potência',
+        icon: '⚛️',
+      },
+      {
+        title: 'Química - Memorização',
+        slug: 'quimica-memorizacao',
+        descricao: 'Ácidos, bases, pH e atomística',
+        icon: '🧪',
+      },
+      {
+        title: 'Biologia - Memorização',
+        slug: 'biologia-memorizacao',
+        descricao: 'Fotossíntese, respiração, mitose e meiose',
+        icon: '🧬',
+      },
+      {
+        title: 'História - Linhas do Tempo',
+        slug: 'historia-linhas',
+        descricao: 'Períodos históricos do Brasil',
+        icon: '🏛️',
+      },
+      {
+        title: 'Geografia - Memorização',
+        slug: 'geografia-memorizacao',
+        descricao: 'Climas, setores econômicos',
+        icon: '🌍',
+      },
+      {
+        title: 'Sociologia - Conceitos',
+        slug: 'sociologia-conceitos',
+        descricao: 'Bourdieu, Durkheim e fato social',
+        icon: '👥',
+      },
+      {
+        title: 'Filosofia - Pensadores',
+        slug: 'filosofia-pensadores',
+        descricao: 'Sócrates, Platão e Aristóteles',
+        icon: '🤔',
+      },
+      {
+        title: 'Inglês - Tempos Verbais',
+        slug: 'ingles-verbos',
+        descricao: 'Present, past, future e cognatos',
+        icon: '🇬🇧',
+      },
+      {
+        title: 'Espanhol - Falsos Cognatos',
+        slug: 'espanhol-cognatos',
+        descricao: 'Heterosemánticos e tempos verbais',
+        icon: '🇪🇸',
+      },
+      {
+        title: 'Artes - Movimentos',
+        slug: 'artes-movimentos',
+        descricao: 'Principais movimentos artísticos',
+        icon: '🎨',
+      },
+      {
+        title: 'Redação - Estrutura',
+        slug: 'redacao-estrutura',
+        descricao: 'Proposta de intervenção completa',
+        icon: '✍️',
+      },
+    ],
+  },
 ];
 
 export function getMateriaById(id: string): Materia | undefined {

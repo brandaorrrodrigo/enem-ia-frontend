@@ -11,7 +11,22 @@ export default function BibliotecaPage() {
   const [secaoAtiva, setSecaoAtiva] = useState<Secao>('cadernos');
   const [materiaAtiva, setMateriaAtiva] = useState('matematica');
 
-  const materiaAtualData = MATERIAS.find((m) => m.id === materiaAtiva);
+  // Se a seção for "formulas", mostra apenas a matéria de Fórmulas & Memorização
+  const materiasExibidas = secaoAtiva === 'formulas'
+    ? MATERIAS.filter((m) => m.id === 'formulas-memorizacao')
+    : MATERIAS.filter((m) => m.id !== 'formulas-memorizacao');
+
+  // Quando mudar de seção, ajusta a matéria ativa
+  const handleSecaoChange = (secao: Secao) => {
+    setSecaoAtiva(secao);
+    if (secao === 'formulas') {
+      setMateriaAtiva('formulas-memorizacao');
+    } else if (materiaAtiva === 'formulas-memorizacao') {
+      setMateriaAtiva('matematica');
+    }
+  };
+
+  const materiaAtualData = materiasExibidas.find((m) => m.id === materiaAtiva);
 
   return (
     <div
@@ -73,7 +88,7 @@ export default function BibliotecaPage() {
           ].map((secao) => (
             <button
               key={secao.id}
-              onClick={() => setSecaoAtiva(secao.id)}
+              onClick={() => handleSecaoChange(secao.id)}
               style={{
                 padding: '16px 32px',
                 background:
@@ -131,7 +146,7 @@ export default function BibliotecaPage() {
             border: '2px solid rgba(139, 90, 43, 0.3)',
           }}
         >
-          {MATERIAS.map((materia) => (
+          {materiasExibidas.map((materia) => (
             <button
               key={materia.id}
               onClick={() => setMateriaAtiva(materia.id)}

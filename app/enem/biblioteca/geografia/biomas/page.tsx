@@ -5,6 +5,13 @@ import Link from 'next/link'
 import { ArrowLeft, BookOpen, CheckCircle2, Brain, Target } from 'lucide-react'
 import MicroQuiz from '@/components/MicroQuiz'
 
+interface Question {
+  pergunta: string
+  opcoes: string[]
+  respostaCorreta: number
+  explicacao: string
+}
+
 export default function BiomasPage() {
   const [scrollProgress, setScrollProgress] = useState(0)
   const [showQuiz, setShowQuiz] = useState(false)
@@ -27,7 +34,7 @@ export default function BiomasPage() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [showQuiz])
 
-  const questoes = []
+  const questoes: Question[] = []
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-900 to-green-700 text-white">
@@ -139,9 +146,9 @@ export default function BiomasPage() {
               <div className="space-y-6">
                 {questoes.map((q, idx) => (
                   <div key={idx} className="bg-white/5 rounded-xl p-6">
-                    <p className="font-semibold mb-4 text-lg">{idx + 1}. {q.enunciado}</p>
+                    <p className="font-semibold mb-4 text-lg">{idx + 1}. {q.pergunta}</p>
                     <div className="space-y-2">
-                      {q.alternativas.map((alt, altIdx) => (
+                      {q.opcoes.map((alt, altIdx) => (
                         <div key={altIdx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
                           <span className="font-medium text-#059669" style={{ color: '#059669' }}>
                             {String.fromCharCode(65 + altIdx)})
@@ -171,11 +178,12 @@ export default function BiomasPage() {
         </section>
 
         {/* MicroQuiz */}
-        {showQuiz && (
+        {showQuiz && questoes.length > 0 && (
           <section className="mb-12">
             <MicroQuiz
-              moduloSlug="geografia_biomas"
-              questoes={questoes}
+              materia="geografia"
+              capitulo="biomas"
+              questions={questoes}
             />
           </section>
         )}

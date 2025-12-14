@@ -140,9 +140,10 @@ function gerarPaginaTSX(tema, disciplina) {
     const respostaCorreta = gabarito ? gabarito.match(/[A-D]/)[0] : 'A';
 
     return {
-      enunciado: enunciado.replace(/^\d+\)\s*/, ''),
-      alternativas: alternativas.map(alt => alt.replace(/^[A-D]\)\s*/, '')),
-      respostaCorreta: ['A', 'B', 'C', 'D'].indexOf(respostaCorreta)
+      pergunta: enunciado.replace(/^\d+\)\s*/, ''),
+      opcoes: alternativas.map(alt => alt.replace(/^[A-D]\)\s*/, '')),
+      respostaCorreta: ['A', 'B', 'C', 'D'].indexOf(respostaCorreta),
+      explicacao: 'Questão baseada no conteúdo estudado.'
     };
   });
 
@@ -152,6 +153,13 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, BookOpen, CheckCircle2, Brain, Target } from 'lucide-react'
 import MicroQuiz from '@/components/MicroQuiz'
+
+interface Question {
+  pergunta: string
+  opcoes: string[]
+  respostaCorreta: number
+  explicacao: string
+}
 
 export default function ${tema.slug.split('-').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join('')}Page() {
   const [scrollProgress, setScrollProgress] = useState(0)
@@ -175,7 +183,7 @@ export default function ${tema.slug.split('-').map(p => p.charAt(0).toUpperCase(
     return () => window.removeEventListener('scroll', handleScroll)
   }, [showQuiz])
 
-  const questoes = ${JSON.stringify(questoesFormatadas, null, 2)}
+  const questoes: Question[] = ${JSON.stringify(questoesFormatadas, null, 2)}
 
   return (
     <div className="min-h-screen bg-gradient-to-br ${cores.gradient} text-white">
@@ -290,9 +298,9 @@ export default function ${tema.slug.split('-').map(p => p.charAt(0).toUpperCase(
               <div className="space-y-6">
                 {questoes.map((q, idx) => (
                   <div key={idx} className="bg-white/5 rounded-xl p-6">
-                    <p className="font-semibold mb-4 text-lg">{idx + 1}. {q.enunciado}</p>
+                    <p className="font-semibold mb-4 text-lg">{idx + 1}. {q.pergunta}</p>
                     <div className="space-y-2">
-                      {q.alternativas.map((alt, altIdx) => (
+                      {q.opcoes.map((alt, altIdx) => (
                         <div key={altIdx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
                           <span className="font-medium text-${cores.primary}" style={{ color: '${cores.primary}' }}>
                             {String.fromCharCode(65 + altIdx)})
@@ -329,11 +337,12 @@ ${tema.mapaMental.trim()}
         </section>
 
         {/* MicroQuiz */}
-        {showQuiz && (
+        {showQuiz && questoes.length > 0 && (
           <section className="mb-12">
             <MicroQuiz
-              moduloSlug="${disciplina}_${tema.slug}"
-              questoes={questoes}
+              materia="${disciplina}"
+              capitulo="${tema.slug}"
+              questions={questoes}
             />
           </section>
         )}

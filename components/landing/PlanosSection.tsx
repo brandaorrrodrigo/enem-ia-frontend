@@ -90,12 +90,12 @@ export default function PlanosSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-20 px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:py-14"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">
             Escolha seu <span className="text-[var(--accent-yellow)]">plano</span>
           </h2>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-['Caveat'] text-[var(--chalk-dim)] max-w-3xl mx-auto relative z-10">
+          <p className="text-xl sm:text-2xl lg:text-3xl font-['Caveat'] text-[var(--chalk-dim)] max-w-3xl mx-auto relative z-10 leading-relaxed">
             Todos os planos garantem acesso à melhor plataforma de estudos para o ENEM
           </p>
         </motion.div>
@@ -121,27 +121,27 @@ export default function PlanosSection() {
                 )}
 
                 {/* Gradiente de fundo */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${cor.gradient} opacity-50 rounded-lg`} />
+                <div className={`absolute inset-0 bg-gradient-to-br ${cor.gradient} opacity-50 rounded-lg z-0`} />
 
-                <div className="relative z-10">
+                <div className="relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8">
                   {/* Nome do plano */}
-                  <h3 className={`text-4xl sm:text-5xl font-['Patrick_Hand'] ${cor.text} mb-3 text-center`}>
+                  <h3 className={`text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] ${cor.text} mb-3 text-center leading-tight`}>
                     {plano.nome}
                   </h3>
 
                   {/* Descrição */}
-                  <p className="text-[var(--chalk-dim)] font-['Poppins'] text-base sm:text-lg text-center mb-8">
+                  <p className="text-[var(--chalk-dim)] font-['Poppins'] text-base sm:text-lg text-center mb-8 leading-relaxed">
                     {plano.descricao}
                   </p>
 
                   {/* Preço */}
                   <div className="text-center mb-8">
                     <div className="flex items-end justify-center gap-2">
-                      <span className="text-6xl sm:text-7xl font-['Patrick_Hand'] font-bold text-[var(--chalk-white)]">
+                      <span className="text-5xl sm:text-6xl lg:text-7xl font-['Patrick_Hand'] font-bold text-[var(--chalk-white)]">
                         {plano.preco}
                       </span>
                       {plano.periodo && (
-                        <span className="text-2xl sm:text-3xl text-[var(--chalk-dim)] mb-3 font-['Caveat']">
+                        <span className="text-xl sm:text-2xl lg:text-3xl text-[var(--chalk-dim)] mb-3 font-['Caveat']">
                           {plano.periodo}
                         </span>
                       )}
@@ -158,9 +158,9 @@ export default function PlanosSection() {
                     {plano.recursos.map((recurso, idx) => (
                       <li
                         key={idx}
-                        className="flex items-start gap-4 text-[var(--chalk-white)] font-['Poppins'] text-base sm:text-lg"
+                        className="flex items-start gap-4 text-[var(--chalk-white)] font-['Poppins'] text-base sm:text-lg leading-relaxed"
                       >
-                        <span className="text-[var(--accent-green)] text-xl sm:text-2xl mt-1">✓</span>
+                        <span className="text-[var(--accent-green)] text-xl sm:text-2xl mt-1 flex-shrink-0">✓</span>
                         <span>{recurso}</span>
                       </li>
                     ))}
@@ -169,7 +169,7 @@ export default function PlanosSection() {
                   {/* CTA */}
                   <Link
                     href={plano.link}
-                    className={`block w-full text-center py-5 rounded-full font-['Poppins'] font-bold text-xl sm:text-2xl transition-all hover:scale-105 hover:shadow-2xl ${
+                    className={`block w-full text-center px-6 py-4 sm:px-8 sm:py-5 min-h-[48px] rounded-full font-['Poppins'] font-bold text-base sm:text-lg lg:text-xl transition-all hover:scale-105 hover:shadow-2xl ${
                       plano.popular
                         ? 'bg-[var(--accent-yellow)] text-[#1a3328] shadow-lg hover:shadow-[0_10px_30px_rgba(255,215,0,0.5)]'
                         : 'bg-[rgba(255,255,255,0.15)] text-[var(--chalk-white)] border border-[rgba(255,255,255,0.3)] hover:bg-[rgba(255,255,255,0.25)]'
@@ -189,12 +189,12 @@ export default function PlanosSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-16"
+          className="text-center mt-16 px-5 sm:px-8 lg:px-14"
         >
-          <p className="text-[var(--chalk-dim)] font-['Caveat'] text-2xl sm:text-3xl mb-3">
+          <p className="text-[var(--chalk-dim)] font-['Caveat'] text-xl sm:text-2xl lg:text-3xl mb-3 leading-relaxed">
             💡 Economia de até 26% no plano anual
           </p>
-          <p className="text-[var(--chalk-dim)] font-['Poppins'] text-base sm:text-lg">
+          <p className="text-[var(--chalk-dim)] font-['Poppins'] text-base sm:text-lg leading-relaxed">
             Todos os planos podem ser cancelados a qualquer momento
           </p>
         </motion.div>

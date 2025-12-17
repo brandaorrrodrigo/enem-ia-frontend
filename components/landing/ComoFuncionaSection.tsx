@@ -42,12 +42,12 @@ export default function ComoFuncionaSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-20 px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:py-14"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">
             Como o <span className="text-[var(--accent-yellow)]">ENEM PRO</span> Funciona
           </h2>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-['Caveat'] text-[var(--chalk-dim)] max-w-3xl mx-auto relative z-10">
+          <p className="text-xl sm:text-2xl lg:text-3xl font-['Caveat'] text-[var(--chalk-dim)] max-w-3xl mx-auto relative z-10 leading-relaxed">
             Apenas 3 passos para transformar seus estudos e conquistar a aprovação
           </p>
         </motion.div>
@@ -68,48 +68,50 @@ export default function ComoFuncionaSection() {
                 <div className="hidden md:block absolute top-16 left-[60%] w-[80%] h-[2px] bg-gradient-to-r from-[var(--accent-yellow)] to-transparent opacity-30" />
               )}
 
-              <div className="card hover:scale-105 transition-transform duration-300 h-full">
-                {/* Número */}
-                <div className="flex justify-center mb-4">
-                  <div
-                    className="w-20 h-20 rounded-full flex items-center justify-center text-4xl font-['Patrick_Hand'] font-bold"
-                    style={{
-                      background: `linear-gradient(135deg, var(--accent-yellow) 0%, #ffd700 100%)`,
-                      color: '#1a3328',
-                      boxShadow: '0 8px 24px rgba(255, 215, 0, 0.3)'
-                    }}
-                  >
-                    {step.number}
-                  </div>
-                </div>
-
-                {/* Ícone */}
-                <div className="text-7xl text-center mb-6">
-                  {step.icon}
-                </div>
-
-                {/* Título */}
-                <h3 className="text-2xl sm:text-3xl font-['Patrick_Hand'] text-[var(--accent-yellow)] text-center mb-6">
-                  {step.title}
-                </h3>
-
-                {/* Descrição */}
-                <p className="text-base sm:text-lg md:text-xl text-[var(--chalk-dim)] font-['Poppins'] text-center mb-8 leading-relaxed">
-                  {step.description}
-                </p>
-
-                {/* Features */}
-                <ul className="space-y-3">
-                  {step.features.map((feature, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-center gap-3 text-[var(--chalk-white)] font-['Poppins'] text-base sm:text-lg"
+              <div className="card hover:scale-105 transition-transform duration-300 h-full relative">
+                <div className="relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8">
+                  {/* Número */}
+                  <div className="flex justify-center mb-4">
+                    <div
+                      className="w-24 h-24 sm:w-28 sm:h-28 rounded-full flex items-center justify-center text-4xl sm:text-5xl font-['Patrick_Hand'] font-bold"
+                      style={{
+                        background: `linear-gradient(135deg, var(--accent-yellow) 0%, #ffd700 100%)`,
+                        color: '#1a3328',
+                        boxShadow: '0 8px 24px rgba(255, 215, 0, 0.3)'
+                      }}
                     >
-                      <span className="text-[var(--accent-green)]">✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                      {step.number}
+                    </div>
+                  </div>
+
+                  {/* Ícone */}
+                  <div className="text-6xl sm:text-7xl text-center mb-6">
+                    {step.icon}
+                  </div>
+
+                  {/* Título */}
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-['Patrick_Hand'] text-[var(--accent-yellow)] text-center mb-6 leading-tight">
+                    {step.title}
+                  </h3>
+
+                  {/* Descrição */}
+                  <p className="text-base sm:text-lg lg:text-xl text-[var(--chalk-dim)] font-['Poppins'] text-center mb-8 leading-relaxed">
+                    {step.description}
+                  </p>
+
+                  {/* Features */}
+                  <ul className="space-y-3">
+                    {step.features.map((feature, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-center gap-3 text-[var(--chalk-white)] font-['Poppins'] text-base sm:text-lg leading-relaxed"
+                      >
+                        <span className="text-[var(--accent-green)] text-xl sm:text-2xl">✓</span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -121,8 +123,9 @@ export default function ComoFuncionaSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
+          className="px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:px-14"
         >
-          <h3 className="text-3xl sm:text-4xl font-['Patrick_Hand'] text-center text-[var(--chalk-white)] mb-10">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-['Patrick_Hand'] text-center text-[var(--chalk-white)] mb-10 leading-tight">
             Tudo que você precisa em um só lugar
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -134,11 +137,11 @@ export default function ComoFuncionaSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
                 whileHover={{ scale: 1.1, rotate: 5 }}
-                className="chalkboard-card text-center p-10"
+                className="chalkboard-card text-center p-6 sm:p-8 lg:p-10"
               >
-                <div className="text-6xl mb-4">{card.icon}</div>
+                <div className="text-5xl sm:text-6xl lg:text-7xl mb-4">{card.icon}</div>
                 <div
-                  className="text-2xl sm:text-3xl font-['Patrick_Hand'] font-bold"
+                  className="text-xl sm:text-2xl lg:text-3xl font-['Patrick_Hand'] font-bold leading-tight"
                   style={{ color: card.color }}
                 >
                   {card.title}

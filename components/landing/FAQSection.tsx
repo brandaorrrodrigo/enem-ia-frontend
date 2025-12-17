@@ -49,12 +49,12 @@ export default function FAQSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-20 px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:py-14"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">
             Perguntas <span className="text-[var(--accent-yellow)]">Frequentes</span>
           </h2>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-['Caveat'] text-[var(--chalk-dim)] relative z-10">
+          <p className="text-xl sm:text-2xl lg:text-3xl font-['Caveat'] text-[var(--chalk-dim)] relative z-10 leading-relaxed">
             Tudo que você precisa saber antes de começar
           </p>
         </motion.div>
@@ -67,36 +67,38 @@ export default function FAQSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="card cursor-pointer overflow-hidden"
+              className="card cursor-pointer overflow-hidden relative"
               onClick={() => setActiveIndex(activeIndex === index ? null : index)}
             >
-              <div className="flex items-center justify-between gap-6">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-['Patrick_Hand'] text-[var(--chalk-white)] flex-1">
-                  {faq.pergunta}
-                </h3>
+              <div className="relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8">
+                <div className="flex items-center justify-between gap-6">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-['Patrick_Hand'] text-[var(--chalk-white)] flex-1 leading-tight">
+                    {faq.pergunta}
+                  </h3>
+                  <motion.div
+                    animate={{ rotate: activeIndex === index ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="text-3xl sm:text-4xl text-[var(--accent-yellow)] flex-shrink-0"
+                  >
+                    {activeIndex === index ? '−' : '+'}
+                  </motion.div>
+                </div>
+
                 <motion.div
-                  animate={{ rotate: activeIndex === index ? 180 : 0 }}
+                  initial={false}
+                  animate={{
+                    height: activeIndex === index ? 'auto' : 0,
+                    opacity: activeIndex === index ? 1 : 0,
+                    marginTop: activeIndex === index ? 20 : 0
+                  }}
                   transition={{ duration: 0.3 }}
-                  className="text-4xl text-[var(--accent-yellow)]"
+                  className="overflow-hidden"
                 >
-                  {activeIndex === index ? '−' : '+'}
+                  <p className="text-base sm:text-lg lg:text-xl text-[var(--chalk-dim)] font-['Poppins'] leading-relaxed">
+                    {faq.resposta}
+                  </p>
                 </motion.div>
               </div>
-
-              <motion.div
-                initial={false}
-                animate={{
-                  height: activeIndex === index ? 'auto' : 0,
-                  opacity: activeIndex === index ? 1 : 0,
-                  marginTop: activeIndex === index ? 20 : 0
-                }}
-                transition={{ duration: 0.3 }}
-                className="overflow-hidden"
-              >
-                <p className="text-base sm:text-lg md:text-xl text-[var(--chalk-dim)] font-['Poppins'] leading-relaxed">
-                  {faq.resposta}
-                </p>
-              </motion.div>
             </motion.div>
           ))}
         </div>
@@ -107,12 +109,12 @@ export default function FAQSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-16"
+          className="text-center mt-16 px-5 sm:px-8 lg:px-14"
         >
-          <p className="text-3xl sm:text-4xl font-['Caveat'] text-[var(--chalk-dim)] mb-6">
+          <p className="text-2xl sm:text-3xl lg:text-4xl font-['Caveat'] text-[var(--chalk-dim)] mb-6 leading-relaxed">
             Ainda tem dúvidas?
           </p>
-          <p className="text-xl sm:text-2xl text-[var(--chalk-white)] font-['Poppins']">
+          <p className="text-lg sm:text-xl lg:text-2xl text-[var(--chalk-white)] font-['Poppins'] leading-relaxed">
             Experimente grátis e veja por você mesmo →
           </p>
         </motion.div>

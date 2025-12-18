@@ -110,35 +110,13 @@ export default function CTAFinalSection() {
             </Link>
           </motion.div>
 
-          {/* Badges de garantia */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 1.4 }}
-            className="flex flex-wrap justify-center items-center gap-8 text-[var(--chalk-dim)] font-['Poppins'] text-base sm:text-lg px-5 sm:px-8 lg:px-14"
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-[var(--accent-green)] text-xl sm:text-2xl">✓</span>
-              <span className="text-base sm:text-lg lg:text-xl">Sem cartão necessário</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="text-[var(--accent-green)] text-xl sm:text-2xl">✓</span>
-              <span className="text-base sm:text-lg lg:text-xl">Cancele quando quiser</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="text-[var(--accent-green)] text-xl sm:text-2xl">✓</span>
-              <span className="text-base sm:text-lg lg:text-xl">100% seguro</span>
-            </div>
-          </motion.div>
-
           {/* Mensagem final com moldura */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 1.6 }}
-            className="mt-20 max-w-3xl mx-auto"
+            transition={{ duration: 0.8, delay: 1.4 }}
+            className="mt-16 mb-12 max-w-3xl mx-auto relative z-30"
           >
             <div className="card text-center relative">
               <div className="relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8">
@@ -149,6 +127,28 @@ export default function CTAFinalSection() {
                   Junte-se aos milhares de estudantes que escolheram estudar com inteligência
                 </p>
               </div>
+            </div>
+          </motion.div>
+
+          {/* Badges de garantia */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 1.6 }}
+            className="flex flex-wrap justify-center items-center gap-8 sm:gap-10 lg:gap-12 text-[var(--chalk-dim)] font-['Poppins'] px-5 sm:px-8 lg:px-14 relative z-20"
+          >
+            <div className="flex items-center gap-3 sm:gap-4">
+              <span className="text-[var(--accent-green)] text-2xl sm:text-3xl lg:text-4xl">✓</span>
+              <span className="text-lg sm:text-xl lg:text-2xl font-medium">Sem cartão necessário</span>
+            </div>
+            <div className="flex items-center gap-3 sm:gap-4">
+              <span className="text-[var(--accent-green)] text-2xl sm:text-3xl lg:text-4xl">✓</span>
+              <span className="text-lg sm:text-xl lg:text-2xl font-medium">Cancele quando quiser</span>
+            </div>
+            <div className="flex items-center gap-3 sm:gap-4">
+              <span className="text-[var(--accent-green)] text-2xl sm:text-3xl lg:text-4xl">✓</span>
+              <span className="text-lg sm:text-xl lg:text-2xl font-medium">100% seguro</span>
             </div>
           </motion.div>
         </motion.div>

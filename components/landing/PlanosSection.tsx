@@ -100,7 +100,7 @@ export default function PlanosSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto pt-8">
           {planos.map((plano, index) => {
             const cor = cores[plano.cor as keyof typeof cores];
 
@@ -115,7 +115,7 @@ export default function PlanosSection() {
               >
                 {/* Badge "Mais Popular" */}
                 {plano.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[var(--accent-yellow)] text-[#1a3328] px-8 py-3 rounded-full font-['Patrick_Hand'] text-base sm:text-lg font-bold shadow-lg">
+                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[var(--accent-yellow)] text-[#1a3328] px-8 py-3 rounded-full font-['Patrick_Hand'] text-base sm:text-lg font-bold shadow-lg whitespace-nowrap z-20">
                     MAIS POPULAR
                   </div>
                 )}

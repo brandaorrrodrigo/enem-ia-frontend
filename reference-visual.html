@@ -35,6 +35,7 @@
             padding: 25px;
             position: relative;
             overflow-x: hidden;
+            font-size: 18px;
         }
 
         /* Textura de lousa realista */
@@ -90,19 +91,19 @@
         }
         .header h1 {
             font-family: 'Patrick Hand', cursive;
-            font-size: 3.2em;
+            font-size: 4.5em;
             color: var(--chalk-white);
             text-shadow:
                 2px 2px 0px rgba(0,0,0,0.3),
                 0 0 20px rgba(255,255,255,0.1),
                 0 0 40px rgba(255,255,255,0.05);
             letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             animation: chalkWrite 1s ease-out;
         }
         .header p {
             font-family: 'Caveat', cursive;
-            font-size: 1.6em;
+            font-size: 2.2em;
             color: var(--accent-yellow);
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
             animation: fadeInUp 1s ease-out 0.3s both;
@@ -129,12 +130,12 @@
         .stats-bar {
             background: linear-gradient(180deg, rgba(40, 75, 55, 0.98) 0%, rgba(30, 60, 45, 0.98) 100%);
             border-radius: 4px;
-            padding: 30px 40px;
+            padding: 50px 60px;
             margin-bottom: 35px;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            gap: 25px;
+            gap: 35px;
             position: relative;
             border: 3px solid #1a3025;
             box-shadow:
@@ -159,15 +160,17 @@
         }
         .stat-item {
             text-align: center;
-            padding: 10px 20px;
+            padding: 15px 30px;
             transition: transform 0.3s ease;
+            position: relative;
+            z-index: 1;
         }
         .stat-item:hover {
             transform: scale(1.1);
         }
         .stat-number {
             font-family: 'Patrick Hand', cursive;
-            font-size: 3em;
+            font-size: 5em;
             font-weight: bold;
             color: var(--accent-yellow);
             text-shadow:
@@ -178,15 +181,15 @@
         .stat-label {
             font-family: 'Caveat', cursive;
             color: var(--chalk-dim);
-            font-size: 1.2em;
-            margin-top: 5px;
+            font-size: 1.8em;
+            margin-top: 10px;
         }
 
         /* CATEGORIAS - Seções do quadro */
         .category {
             background: linear-gradient(180deg, rgba(40, 75, 55, 0.95) 0%, rgba(32, 62, 47, 0.95) 100%);
             border-radius: 4px;
-            padding: 35px;
+            padding: 50px 45px;
             margin-bottom: 35px;
             position: relative;
             border: 3px solid #1a3025;
@@ -219,19 +222,20 @@
 
         .category-title {
             font-family: 'Patrick Hand', cursive;
-            font-size: 2em;
+            font-size: 2.8em;
             color: var(--chalk-white);
-            margin-bottom: 25px;
-            padding-bottom: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
             border-bottom: 2px dashed rgba(255, 255, 255, 0.25);
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 20px;
             text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
             position: relative;
+            z-index: 1;
         }
         .category-title span {
-            font-size: 1.2em;
+            font-size: 1.3em;
             filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
         }
         .category-title::after {
@@ -250,13 +254,15 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
+            position: relative;
+            z-index: 1;
         }
 
         /* CARDS - Post-its / Notas */
         .card {
             background: linear-gradient(145deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.06) 100%);
             border-radius: 8px;
-            padding: 28px;
+            padding: 35px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: pointer;
             border: 1px solid rgba(255,255,255,0.15);
@@ -290,8 +296,8 @@
             opacity: 1;
         }
         .card-icon {
-            font-size: 2.8em;
-            margin-bottom: 15px;
+            font-size: 4.5em;
+            margin-bottom: 20px;
             display: block;
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
             transition: transform 0.3s ease;
@@ -301,17 +307,17 @@
         }
         .card-title {
             font-family: 'Patrick Hand', cursive;
-            font-size: 1.5em;
+            font-size: 2em;
             font-weight: bold;
             color: var(--chalk-white);
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         .card-description {
             font-family: 'Caveat', cursive;
             color: var(--chalk-dim);
-            font-size: 1.15em;
-            line-height: 1.5;
+            font-size: 1.5em;
+            line-height: 1.6;
         }
 
         /* FOOTER */
@@ -325,8 +331,8 @@
         .footer p {
             font-family: 'Caveat', cursive;
             color: var(--chalk-dim);
-            font-size: 1.3em;
-            margin-bottom: 10px;
+            font-size: 1.8em;
+            margin-bottom: 15px;
         }
         .footer strong {
             color: var(--chalk-white);
@@ -377,15 +383,15 @@
             color: var(--chalk-white);
             text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
         }
-        h1 { font-size: 2.5em; text-align: center; margin-bottom: 15px; }
-        h2 { font-size: 2em; margin-bottom: 20px; }
-        h3 { font-size: 1.5em; margin-bottom: 15px; }
+        h1 { font-size: 3.5em; text-align: center; margin-bottom: 20px; }
+        h2 { font-size: 2.8em; margin-bottom: 25px; }
+        h3 { font-size: 2.2em; margin-bottom: 20px; }
 
         .subtitle {
             text-align: center;
             font-family: 'Caveat', cursive;
             color: var(--accent-yellow);
-            font-size: 1.4em;
+            font-size: 2em;
             margin-bottom: 40px;
         }
 
@@ -396,20 +402,20 @@
             font-family: 'Patrick Hand', cursive;
             background: rgba(255, 255, 255, 0.08);
             color: var(--chalk-white);
-            padding: 18px 25px;
+            padding: 25px 35px;
             border-radius: 5px;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            border-left: 4px solid var(--accent-yellow);
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            border-left: 6px solid var(--accent-yellow);
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
         .video-card, .card-item, .item-card, .content-card, .ebook-card, .tool-card {
             background: rgba(255, 255, 255, 0.08);
             border-radius: 10px;
-            padding: 22px;
-            margin-bottom: 18px;
-            border-left: 3px solid var(--accent-blue);
+            padding: 30px;
+            margin-bottom: 22px;
+            border-left: 4px solid var(--accent-blue);
             transition: all 0.3s ease;
             backdrop-filter: blur(5px);
         }
@@ -422,25 +428,25 @@
         .video-title, .item-title, .ebook-title, .tool-title {
             font-family: 'Patrick Hand', cursive;
             color: var(--chalk-white);
-            font-size: 1.35em;
-            margin-bottom: 10px;
+            font-size: 1.9em;
+            margin-bottom: 12px;
         }
         .video-info, .card-info, .item-info, .ebook-info, .tool-info {
             font-family: 'Caveat', cursive;
             color: var(--chalk-faint);
-            font-size: 1.1em;
-            margin-bottom: 12px;
+            font-size: 1.5em;
+            margin-bottom: 15px;
         }
 
         .badge {
             display: inline-block;
             background: rgba(255, 255, 255, 0.12);
             color: var(--accent-yellow);
-            padding: 5px 14px;
+            padding: 8px 18px;
             border-radius: 20px;
-            font-size: 0.85em;
-            margin-right: 8px;
-            margin-bottom: 8px;
+            font-size: 1.1em;
+            margin-right: 10px;
+            margin-bottom: 10px;
             border: 1px solid rgba(255, 235, 150, 0.3);
             font-family: 'Poppins', sans-serif;
         }
@@ -449,13 +455,14 @@
             background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 100%);
             color: var(--chalk-white);
             border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 12px 28px;
+            padding: 16px 35px;
             border-radius: 25px;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin-top: 12px;
+            margin-top: 15px;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
+            font-size: 1.1em;
         }
         .btn-assistir:hover, .btn-action:hover, .btn-primary:hover, button:hover {
             background: rgba(255, 255, 255, 0.25);
@@ -466,16 +473,17 @@
         .back-btn {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             background: rgba(255, 255, 255, 0.1);
             color: var(--chalk-white);
-            padding: 14px 32px;
+            padding: 18px 40px;
             border-radius: 30px;
             text-decoration: none;
             transition: all 0.3s ease;
             margin-top: 25px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             font-family: 'Poppins', sans-serif;
+            font-size: 1.1em;
         }
         .back-btn:hover {
             background: rgba(255, 255, 255, 0.2);
@@ -484,7 +492,8 @@
 
         p, li {
             color: var(--chalk-dim);
-            line-height: 1.7;
+            line-height: 1.8;
+            font-size: 1.15em;
         }
         a {
             color: var(--accent-yellow);
@@ -509,12 +518,13 @@
             background: rgba(255, 255, 255, 0.08);
             border: 2px solid rgba(255, 255, 255, 0.2);
             color: var(--chalk-white);
-            padding: 14px 18px;
+            padding: 18px 24px;
             border-radius: 10px;
             width: 100%;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             font-family: 'Poppins', sans-serif;
             transition: all 0.3s ease;
+            font-size: 1.1em;
         }
         input::placeholder, textarea::placeholder {
             color: var(--chalk-faint);
@@ -528,9 +538,9 @@
         label {
             font-family: 'Caveat', cursive;
             color: var(--chalk-dim);
-            font-size: 1.2em;
+            font-size: 1.6em;
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         /* Scrollbar personalizada */
@@ -558,29 +568,42 @@
         @media (max-width: 768px) {
             body {
                 padding: 15px;
+                font-size: 16px;
             }
             .header h1 {
-                font-size: 2.2em;
+                font-size: 3em;
             }
             .header p {
-                font-size: 1.3em;
+                font-size: 1.8em;
             }
             .cards-grid {
                 grid-template-columns: 1fr;
             }
             .stats-bar {
                 flex-direction: column;
-                gap: 20px;
-                padding: 25px;
+                gap: 25px;
+                padding: 35px 25px;
             }
             .category {
-                padding: 25px;
+                padding: 35px 25px;
             }
             .category-title {
-                font-size: 1.6em;
+                font-size: 2.2em;
             }
             .stat-number {
-                font-size: 2.5em;
+                font-size: 4em;
+            }
+            .stat-label {
+                font-size: 1.5em;
+            }
+            .card-icon {
+                font-size: 3.5em;
+            }
+            .card-title {
+                font-size: 1.7em;
+            }
+            .card-description {
+                font-size: 1.3em;
             }
         }
 

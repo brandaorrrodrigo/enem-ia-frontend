@@ -74,8 +74,8 @@ export default function HeroSection() {
                 transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
                 className="flex items-center gap-3 bg-[rgba(255,255,255,0.08)] backdrop-blur-sm px-5 py-4 rounded-lg border border-[rgba(255,255,255,0.15)]"
               >
-                <span className="flex-shrink-0" style={{ fontSize: '80px' }}>{item.icon}</span>
-                <span className="text-base sm:text-lg lg:text-xl text-[var(--chalk-white)] font-['Poppins'] font-medium text-left">
+                <span className="flex-shrink-0" style={{ fontSize: '120px' }}>{item.icon}</span>
+                <span className="text-xl sm:text-2xl lg:text-3xl text-[var(--chalk-white)] font-['Poppins'] font-medium text-left">
                   {item.text}
                 </span>
               </motion.div>

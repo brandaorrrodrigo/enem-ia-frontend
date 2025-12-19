@@ -115,7 +115,7 @@ export default function PlanosSection() {
               >
                 {/* Badge "Mais Popular" */}
                 {plano.popular && (
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[var(--accent-yellow)] text-[#1a3328] px-8 py-3 rounded-full font-['Patrick_Hand'] text-base sm:text-lg font-bold shadow-lg whitespace-nowrap z-20">
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[var(--accent-yellow)] text-[#1a3328] px-8 py-3 rounded-full font-['Patrick_Hand'] text-base sm:text-lg font-bold shadow-lg whitespace-nowrap z-20">
                     MAIS POPULAR
                   </div>
                 )}
@@ -123,7 +123,7 @@ export default function PlanosSection() {
                 {/* Gradiente de fundo */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${cor.gradient} opacity-50 rounded-lg z-0`} />
 
-                <div className="relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8">
+                <div className={`relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8 ${plano.popular ? 'pt-10' : ''}`}>
                   {/* Nome do plano */}
                   <h3 className={`text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] ${cor.text} mb-3 text-center leading-tight`}>
                     {plano.nome}

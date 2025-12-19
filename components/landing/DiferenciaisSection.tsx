@@ -93,7 +93,7 @@ export default function DiferenciaisSection() {
                 </div>
 
                 {/* Ícone */}
-                <div className="text-8xl sm:text-9xl lg:text-[10rem] mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+                <div className="mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300" style={{ fontSize: '180px' }}>
                   {item.icon}
                 </div>
 

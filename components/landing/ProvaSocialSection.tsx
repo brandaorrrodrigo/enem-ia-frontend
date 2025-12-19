@@ -53,7 +53,7 @@ export default function ProvaSocialSection() {
               className="card text-center group hover:scale-105 transition-transform duration-300 relative"
             >
               <div className="relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8">
-                <div className="text-8xl sm:text-9xl lg:text-[10rem] mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300" style={{ fontSize: '180px' }}>
                   {badge.icon}
                 </div>
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-['Patrick_Hand'] text-[var(--accent-yellow)] mb-4 leading-tight">
@@ -113,7 +113,7 @@ export default function ProvaSocialSection() {
                   transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
                   className="flex items-start gap-5 p-6 bg-[rgba(255,255,255,0.05)] rounded-lg"
                 >
-                  <div className="text-6xl sm:text-7xl lg:text-8xl">{item.icon}</div>
+                  <div style={{ fontSize: '120px' }}>{item.icon}</div>
                   <div>
                     <h4 className="text-xl sm:text-2xl lg:text-3xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-2 leading-tight">
                       {item.title}

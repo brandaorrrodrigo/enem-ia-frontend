@@ -73,8 +73,11 @@ export default function ComoFuncionaSection() {
                   {/* Número */}
                   <div className="flex justify-center mb-4">
                     <div
-                      className="w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full flex items-center justify-center text-9xl sm:text-[8rem] lg:text-[10rem] font-['Patrick_Hand'] font-bold"
+                      className="rounded-full flex items-center justify-center font-['Patrick_Hand'] font-bold"
                       style={{
+                        width: '400px',
+                        height: '400px',
+                        fontSize: '200px',
                         background: `linear-gradient(135deg, var(--accent-yellow) 0%, #ffd700 100%)`,
                         color: '#1a3328',
                         boxShadow: '0 8px 24px rgba(255, 215, 0, 0.3)'
@@ -85,7 +88,7 @@ export default function ComoFuncionaSection() {
                   </div>
 
                   {/* Ícone */}
-                  <div className="text-9xl sm:text-[10rem] lg:text-[12rem] text-center mb-6">
+                  <div className="text-center mb-6" style={{ fontSize: '250px' }}>
                     {step.icon}
                   </div>
 

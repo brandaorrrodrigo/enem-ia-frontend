@@ -52,7 +52,7 @@ export default function CTAFinalSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-[96px] font-['Caveat'] text-[var(--chalk-dim)] mb-16 max-w-4xl mx-auto relative z-40 leading-relaxed px-5 sm:px-8 lg:px-14"
+            className="text-xl sm:text-2xl lg:text-3xl font-['Caveat'] text-[var(--chalk-dim)] mb-16 max-w-4xl mx-auto relative z-40 leading-relaxed px-5 sm:px-8 lg:px-14"
           >
             Cada dia conta. Cada questão importa. Cada decisão molda seu futuro.
           </motion.p>

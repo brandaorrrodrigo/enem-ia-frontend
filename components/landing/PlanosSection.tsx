@@ -115,7 +115,7 @@ export default function PlanosSection() {
               >
                 {/* Badge "Mais Popular" */}
                 {plano.popular && (
-                  <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 bg-[var(--accent-yellow)] text-[#1a3328] px-8 py-3 rounded-full font-['Patrick_Hand'] text-base sm:text-lg font-bold shadow-lg whitespace-nowrap z-20">
+                  <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 bg-[var(--accent-yellow)] text-[#1a3328] px-8 py-3 rounded-full font-['Patrick_Hand'] text-2xl sm:text-3xl lg:text-4xl font-bold shadow-lg whitespace-nowrap z-20">
                     MAIS POPULAR
                   </div>
                 )}

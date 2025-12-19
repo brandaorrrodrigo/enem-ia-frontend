@@ -35,7 +35,7 @@ export default function ProvaSocialSection() {
             Comprometidos com sua{' '}
             <span className="text-[var(--accent-yellow)]">aprovação</span>
           </h2>
-          <p className="text-5xl sm:text-6xl lg:text-7xl font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto leading-relaxed relative z-40">
+          <p className="text-7xl font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto leading-relaxed relative z-40">
             "Estamos construindo a plataforma que vai provar, com dados,
             quem realmente ajuda na aprovação."
           </p>

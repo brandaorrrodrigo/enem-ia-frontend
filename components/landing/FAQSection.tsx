@@ -54,7 +54,7 @@ export default function FAQSection() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">
             Perguntas <span className="text-[var(--accent-yellow)]">Frequentes</span>
           </h2>
-          <p className="text-5xl sm:text-6xl lg:text-7xl font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
+          <p className="text-7xl font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
             Tudo que você precisa saber antes de começar
           </p>
         </motion.div>

@@ -140,7 +140,7 @@ export default function CTAFinalSection() {
           >
             <div className="flex items-center gap-3 sm:gap-4">
               <span className="text-[var(--accent-green)]" style={{ fontSize: '60px' }}>✓</span>
-              <span className="text-[44px] font-medium">Sem cartão necessário</span>
+              <span className="text-lg sm:text-xl lg:text-2xl font-medium">Sem cartão necessário</span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4">
               <span className="text-[var(--accent-green)]" style={{ fontSize: '60px' }}>✓</span>

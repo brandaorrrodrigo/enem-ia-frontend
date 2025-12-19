@@ -111,7 +111,7 @@ export default function FAQSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-16 px-5 sm:px-8 lg:px-14"
         >
-          <p className="text-2xl sm:text-3xl lg:text-4xl font-['Caveat'] text-[var(--chalk-dim)] mb-6 leading-relaxed">
+          <p className="text-7xl font-['Caveat'] text-[var(--chalk-dim)] mb-6 leading-relaxed">
             Ainda tem dúvidas?
           </p>
           <p className="text-lg sm:text-xl lg:text-2xl text-[var(--chalk-white)] font-['Poppins'] leading-relaxed">

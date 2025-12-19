@@ -54,7 +54,7 @@ export default function FAQSection() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">
             Perguntas <span className="text-[var(--accent-yellow)]">Frequentes</span>
           </h2>
-          <p className="text-7xl font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
+          <p className="text-[96px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
             Tudo que você precisa saber antes de começar
           </p>
         </motion.div>
@@ -111,7 +111,7 @@ export default function FAQSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-16 px-5 sm:px-8 lg:px-14"
         >
-          <p className="text-9xl font-['Caveat'] text-[var(--chalk-dim)] mb-6 leading-relaxed">
+          <p className="text-[96px] font-['Caveat'] text-[var(--chalk-dim)] mb-6 leading-relaxed">
             Ainda tem dúvidas?
           </p>
           <p className="text-lg sm:text-xl lg:text-2xl text-[var(--chalk-white)] font-['Poppins'] leading-relaxed">

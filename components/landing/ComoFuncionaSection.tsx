@@ -75,9 +75,9 @@ export default function ComoFuncionaSection() {
                     <div
                       className="rounded-full flex items-center justify-center font-['Patrick_Hand'] font-bold"
                       style={{
-                        width: '120px',
-                        height: '120px',
-                        fontSize: '50px',
+                        width: '100px',
+                        height: '100px',
+                        fontSize: '40px',
                         background: `linear-gradient(135deg, var(--accent-yellow) 0%, #ffd700 100%)`,
                         color: '#1a3328',
                         boxShadow: '0 8px 24px rgba(255, 215, 0, 0.3)'
@@ -128,7 +128,7 @@ export default function ComoFuncionaSection() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:px-14"
         >
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-['Patrick_Hand'] text-center text-[var(--chalk-white)] mb-10 leading-tight">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-['Patrick_Hand'] text-center text-[var(--chalk-white)] mb-16 leading-tight">
             Tudo que você precisa em um só lugar
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

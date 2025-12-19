@@ -56,7 +56,7 @@ export default function DiferenciaisSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20 px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:py-14"
+          className="text-center mb-28 px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:py-14"
         >
           <div className="inline-block px-8 py-3 bg-[var(--accent-yellow)] text-[#1a3328] rounded-full font-['Patrick_Hand'] text-lg sm:text-xl lg:text-2xl font-bold mb-8">
             O QUE NINGUÉM TEM

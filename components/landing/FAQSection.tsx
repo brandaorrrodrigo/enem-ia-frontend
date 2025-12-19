@@ -49,7 +49,7 @@ export default function FAQSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20 px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:py-14"
+          className="text-center mb-28 px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:py-14"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">
             Perguntas <span className="text-[var(--accent-yellow)]">Frequentes</span>

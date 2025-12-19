@@ -65,7 +65,7 @@ export default function DiferenciaisSection() {
             Diferenciais que fazem a{' '}
             <span className="text-[var(--accent-yellow)]">diferença</span>
           </h2>
-          <p className="text-xl sm:text-2xl lg:text-3xl font-['Caveat'] text-[var(--chalk-dim)] max-w-3xl mx-auto relative z-10 leading-relaxed">
+          <p className="text-2xl sm:text-3xl lg:text-4xl font-['Caveat'] text-[var(--chalk-dim)] max-w-3xl mx-auto relative z-40 leading-relaxed">
             Recursos que você não encontra em nenhuma outra plataforma
           </p>
         </motion.div>

@@ -95,7 +95,7 @@ export default function PlanosSection() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">
             Escolha seu <span className="text-[var(--accent-yellow)]">plano</span>
           </h2>
-          <p className="text-xl sm:text-2xl lg:text-3xl font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
+          <p className="text-[48px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
             Todos os planos garantem acesso à melhor plataforma de estudos para o ENEM
           </p>
         </motion.div>

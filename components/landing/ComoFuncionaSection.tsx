@@ -75,9 +75,9 @@ export default function ComoFuncionaSection() {
                     <div
                       className="rounded-full flex items-center justify-center font-['Patrick_Hand'] font-bold"
                       style={{
-                        width: '200px',
-                        height: '200px',
-                        fontSize: '70px',
+                        width: '120px',
+                        height: '120px',
+                        fontSize: '50px',
                         background: `linear-gradient(135deg, var(--accent-yellow) 0%, #ffd700 100%)`,
                         color: '#1a3328',
                         boxShadow: '0 8px 24px rgba(255, 215, 0, 0.3)'

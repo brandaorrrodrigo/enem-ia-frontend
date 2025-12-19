@@ -120,7 +120,7 @@ export default function CTAFinalSection() {
           >
             <div className="card text-center relative">
               <div className="relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8">
-                <p className="text-2xl sm:text-3xl lg:text-4xl font-['Caveat'] text-[var(--accent-yellow)] mb-6 leading-relaxed">
+                <p className="text-[44px] font-['Caveat'] text-[var(--accent-yellow)] mb-6 leading-relaxed">
                   "A diferença entre o sonho e a realidade é ação"
                 </p>
                 <p className="text-base sm:text-lg lg:text-xl text-[var(--chalk-dim)] font-['Poppins'] leading-relaxed">

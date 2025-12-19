@@ -91,7 +91,7 @@ export default function HeroSection() {
           >
             <Link
               href="/cadastro"
-              className="btn-yellow px-12 py-5 sm:px-14 sm:py-6 text-base sm:text-lg lg:text-xl font-bold rounded-full shadow-2xl transform transition-all hover:scale-110 hover:shadow-[0_10px_40px_rgba(255,215,0,0.6)] inline-block min-h-[48px] whitespace-nowrap"
+              className="btn-yellow px-14 sm:px-18 lg:px-28 py-6 sm:py-7 lg:py-9 text-base sm:text-lg lg:text-xl font-bold rounded-full shadow-2xl transform transition-all hover:scale-110 hover:shadow-[0_10px_40px_rgba(255,215,0,0.6)] inline-block min-h-[48px] whitespace-nowrap"
             >
               Começar Grátis
             </Link>

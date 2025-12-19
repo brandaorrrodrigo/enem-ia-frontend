@@ -47,7 +47,7 @@ export default function ComoFuncionaSection() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">
             Como o <span className="text-[var(--accent-yellow)]">ENEM PRO</span> Funciona
           </h2>
-          <p className="text-2xl sm:text-3xl lg:text-4xl font-['Caveat'] text-[var(--chalk-dim)] max-w-3xl mx-auto relative z-40 leading-relaxed">
+          <p className="text-5xl sm:text-6xl lg:text-7xl font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
             Apenas 3 passos para transformar seus estudos e conquistar a aprovação
           </p>
         </motion.div>

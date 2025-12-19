@@ -26,9 +26,9 @@ export default function CTAFinalSection() {
             className="mb-10 px-5 sm:px-8 lg:px-14"
           >
             <div className="inline-flex items-center gap-4">
-              <span style={{ fontSize: '180px' }}>🎯</span>
-              <span style={{ fontSize: '180px' }}>📚</span>
-              <span style={{ fontSize: '180px' }}>🏆</span>
+              <span style={{ fontSize: '100px' }}>🎯</span>
+              <span style={{ fontSize: '100px' }}>📚</span>
+              <span style={{ fontSize: '100px' }}>🏆</span>
             </div>
           </motion.div>
 
@@ -83,7 +83,7 @@ export default function CTAFinalSection() {
                       transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
                       className="flex items-center gap-4 text-left"
                     >
-                      <span className="text-[var(--accent-yellow)] flex-shrink-0" style={{ fontSize: '80px' }}>{item.icon}</span>
+                      <span className="text-[var(--accent-yellow)] flex-shrink-0" style={{ fontSize: '50px' }}>{item.icon}</span>
                       <span className="text-base sm:text-lg lg:text-xl font-['Poppins'] text-[var(--chalk-white)] font-medium leading-relaxed">
                         {item.text}
                       </span>
@@ -139,15 +139,15 @@ export default function CTAFinalSection() {
             className="flex flex-wrap justify-center items-center gap-8 sm:gap-10 lg:gap-12 text-[var(--chalk-dim)] font-['Poppins'] px-5 sm:px-8 lg:px-14 relative z-20"
           >
             <div className="flex items-center gap-3 sm:gap-4">
-              <span className="text-[var(--accent-green)]" style={{ fontSize: '100px' }}>✓</span>
+              <span className="text-[var(--accent-green)]" style={{ fontSize: '60px' }}>✓</span>
               <span className="text-[44px] font-medium">Sem cartão necessário</span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4">
-              <span className="text-[var(--accent-green)]" style={{ fontSize: '100px' }}>✓</span>
+              <span className="text-[var(--accent-green)]" style={{ fontSize: '60px' }}>✓</span>
               <span className="text-lg sm:text-xl lg:text-2xl font-medium">Cancele quando quiser</span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4">
-              <span className="text-[var(--accent-green)]" style={{ fontSize: '100px' }}>✓</span>
+              <span className="text-[var(--accent-green)]" style={{ fontSize: '60px' }}>✓</span>
               <span className="text-lg sm:text-xl lg:text-2xl font-medium">100% seguro</span>
             </div>
           </motion.div>
@@ -155,10 +155,10 @@ export default function CTAFinalSection() {
       </div>
 
       {/* Partículas decorativas */}
-      <div className="absolute top-20 left-10 opacity-20" style={{ fontSize: '150px' }}>✨</div>
-      <div className="absolute top-40 right-20 opacity-20" style={{ fontSize: '150px' }}>🌟</div>
-      <div className="absolute bottom-20 left-1/4 opacity-20" style={{ fontSize: '150px' }}>💫</div>
-      <div className="absolute bottom-32 right-1/3 opacity-20" style={{ fontSize: '150px' }}>⭐</div>
+      <div className="absolute top-20 left-10 opacity-20" style={{ fontSize: '80px' }}>✨</div>
+      <div className="absolute top-40 right-20 opacity-20" style={{ fontSize: '80px' }}>🌟</div>
+      <div className="absolute bottom-20 left-1/4 opacity-20" style={{ fontSize: '80px' }}>💫</div>
+      <div className="absolute bottom-32 right-1/3 opacity-20" style={{ fontSize: '80px' }}>⭐</div>
     </section>
   );
 }

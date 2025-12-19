@@ -75,9 +75,9 @@ export default function ComoFuncionaSection() {
                     <div
                       className="rounded-full flex items-center justify-center font-['Patrick_Hand'] font-bold"
                       style={{
-                        width: '400px',
-                        height: '400px',
-                        fontSize: '200px',
+                        width: '250px',
+                        height: '250px',
+                        fontSize: '100px',
                         background: `linear-gradient(135deg, var(--accent-yellow) 0%, #ffd700 100%)`,
                         color: '#1a3328',
                         boxShadow: '0 8px 24px rgba(255, 215, 0, 0.3)'
@@ -88,7 +88,7 @@ export default function ComoFuncionaSection() {
                   </div>
 
                   {/* Ícone */}
-                  <div className="text-center mb-6" style={{ fontSize: '250px' }}>
+                  <div className="text-center mb-6" style={{ fontSize: '120px' }}>
                     {step.icon}
                   </div>
 

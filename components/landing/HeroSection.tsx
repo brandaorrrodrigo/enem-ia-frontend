@@ -8,9 +8,9 @@ export default function HeroSection() {
     <section className="relative overflow-hidden py-16 sm:py-20 lg:py-24 px-6 z-10">
       {/* Decoração de fundo */}
       <div className="absolute inset-0 opacity-5 z-0">
-        <div className="absolute top-10 left-10" style={{ fontSize: '200px' }}>📚</div>
-        <div className="absolute top-40 right-20" style={{ fontSize: '200px' }}>🎯</div>
-        <div className="absolute bottom-20 left-1/4" style={{ fontSize: '200px' }}>🏆</div>
+        <div className="absolute top-10 left-10" style={{ fontSize: '100px' }}>📚</div>
+        <div className="absolute top-40 right-20" style={{ fontSize: '100px' }}>🎯</div>
+        <div className="absolute bottom-20 left-1/4" style={{ fontSize: '100px' }}>🏆</div>
       </div>
 
       <div className="container max-w-6xl mx-auto relative z-10">
@@ -74,7 +74,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
                 className="flex items-center gap-3 bg-[rgba(255,255,255,0.08)] backdrop-blur-sm px-5 py-4 rounded-lg border border-[rgba(255,255,255,0.15)]"
               >
-                <span className="flex-shrink-0" style={{ fontSize: '120px' }}>{item.icon}</span>
+                <span className="flex-shrink-0" style={{ fontSize: '80px' }}>{item.icon}</span>
                 <span className="text-base sm:text-lg lg:text-xl text-[var(--chalk-white)] font-['Poppins'] font-medium text-left">
                   {item.text}
                 </span>

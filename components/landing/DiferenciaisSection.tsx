@@ -58,7 +58,7 @@ export default function DiferenciaisSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-28 px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:py-14"
         >
-          <div className="inline-block px-8 py-3 bg-[var(--accent-yellow)] text-[#1a3328] rounded-full font-['Patrick_Hand'] text-2xl sm:text-3xl lg:text-4xl font-bold mb-8">
+          <div className="inline-block px-8 py-3 bg-[var(--accent-yellow)] text-[#1a3328] rounded-full font-['Patrick_Hand'] font-bold mb-8" style={{ fontSize: '32px' }}>
             O QUE NINGUÉM TEM
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">

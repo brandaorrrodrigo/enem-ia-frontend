@@ -128,7 +128,7 @@ export default function ComoFuncionaSection() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="px-5 sm:px-8 lg:px-14 py-8 sm:py-10 lg:px-14"
         >
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-['Patrick_Hand'] text-center text-[var(--chalk-white)] mb-16 leading-tight">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-['Patrick_Hand'] text-center text-[var(--chalk-white)] mb-24 leading-tight">
             Tudo que você precisa em um só lugar
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -142,10 +142,10 @@ export default function ComoFuncionaSection() {
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 className="chalkboard-card text-center p-6 sm:p-8 lg:p-10"
               >
-                <div className="text-5xl sm:text-6xl lg:text-7xl mb-4">{card.icon}</div>
+                <div className="mb-4" style={{ fontSize: '100px' }}>{card.icon}</div>
                 <div
-                  className="text-xl sm:text-2xl lg:text-3xl font-['Patrick_Hand'] font-bold leading-tight"
-                  style={{ color: card.color }}
+                  className="font-['Patrick_Hand'] font-bold leading-tight"
+                  style={{ color: card.color, fontSize: '44px' }}
                 >
                   {card.title}
                 </div>

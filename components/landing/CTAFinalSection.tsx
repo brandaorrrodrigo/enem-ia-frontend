@@ -52,7 +52,7 @@ export default function CTAFinalSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-[48px] font-['Caveat'] text-[var(--chalk-dim)] mb-16 max-w-4xl mx-auto relative z-40 leading-relaxed px-5 sm:px-8 lg:px-14"
+            className="text-[44px] font-['Caveat'] text-[var(--chalk-dim)] mb-16 max-w-4xl mx-auto relative z-40 leading-relaxed px-5 sm:px-8 lg:px-14"
           >
             Cada dia conta. Cada questão importa. Cada decisão molda seu futuro.
           </motion.p>
@@ -140,7 +140,7 @@ export default function CTAFinalSection() {
           >
             <div className="flex items-center gap-3 sm:gap-4">
               <span className="text-[var(--accent-green)] text-2xl sm:text-3xl lg:text-4xl">✓</span>
-              <span className="text-lg sm:text-xl lg:text-2xl font-medium">Sem cartão necessário</span>
+              <span className="text-[44px] font-medium">Sem cartão necessário</span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4">
               <span className="text-[var(--accent-green)] text-2xl sm:text-3xl lg:text-4xl">✓</span>

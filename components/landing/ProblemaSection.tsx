@@ -112,7 +112,7 @@ export default function ProblemaSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-12"
         >
-          <p className="text-xl sm:text-2xl lg:text-3xl font-['Caveat'] text-[var(--accent-yellow)] mb-6 leading-relaxed">
+          <p className="text-[44px] font-['Caveat'] text-[var(--accent-yellow)] mb-6 leading-relaxed">
             Pare de estudar às cegas. Comece a estudar com inteligência.
           </p>
         </motion.div>

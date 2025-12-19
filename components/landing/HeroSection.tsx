@@ -46,7 +46,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl sm:text-2xl lg:text-3xl font-['Caveat'] text-[var(--chalk-dim)] mb-12 max-w-4xl mx-auto leading-relaxed"
+            className="text-[44px] font-['Caveat'] text-[var(--chalk-dim)] mb-12 max-w-4xl mx-auto leading-relaxed"
           >
             A primeira plataforma que une IA, estatística real do ENEM, simulados inteligentes
             e gamificação para maximizar sua nota.
@@ -108,7 +108,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.6 }}
-            className="mt-6 text-[var(--chalk-dim)] font-['Caveat'] text-lg sm:text-xl"
+            className="mt-6 text-[var(--chalk-dim)] font-['Caveat'] text-[44px]"
           >
             ✓ Sem cartão necessário para começar
           </motion.p>

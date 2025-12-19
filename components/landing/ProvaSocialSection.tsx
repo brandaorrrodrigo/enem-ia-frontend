@@ -35,7 +35,7 @@ export default function ProvaSocialSection() {
             Comprometidos com sua{' '}
             <span className="text-[var(--accent-yellow)]">aprovação</span>
           </h2>
-          <p className="text-[48px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto leading-relaxed relative z-40">
+          <p className="text-[44px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto leading-relaxed relative z-40">
             "Estamos construindo a plataforma que vai provar, com dados,
             quem realmente ajuda na aprovação."
           </p>
@@ -137,7 +137,7 @@ export default function ProvaSocialSection() {
           className="text-center mt-16 px-5 sm:px-8 lg:px-14"
         >
           <div className="inline-block px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg:py-8 bg-gradient-to-r from-[var(--accent-yellow)]/20 to-[var(--accent-blue)]/20 rounded-2xl border-2 border-[var(--accent-yellow)]">
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-['Caveat'] text-[var(--chalk-white)] mb-3 leading-relaxed">
+            <p className="text-[44px] font-['Caveat'] text-[var(--chalk-white)] mb-3 leading-relaxed">
               Cada aluno que passa é nossa maior conquista
             </p>
             <p className="text-base sm:text-lg lg:text-xl text-[var(--chalk-dim)] font-['Poppins'] leading-relaxed">

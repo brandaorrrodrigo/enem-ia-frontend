@@ -65,7 +65,7 @@ export default function DiferenciaisSection() {
             Diferenciais que fazem a{' '}
             <span className="text-[var(--accent-yellow)]">diferença</span>
           </h2>
-          <p className="text-[48px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
+          <p className="text-[44px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
             Recursos que você não encontra em nenhuma outra plataforma
           </p>
         </motion.div>
@@ -120,7 +120,7 @@ export default function DiferenciaisSection() {
           className="text-center mt-20 px-5 sm:px-8 lg:px-14"
         >
           <div className="inline-block px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg:py-8 bg-[rgba(255,255,255,0.08)] rounded-2xl border border-[rgba(255,255,255,0.2)]">
-            <p className="text-xl sm:text-2xl lg:text-3xl font-['Caveat'] text-[var(--chalk-white)] mb-3 leading-relaxed">
+            <p className="text-[44px] font-['Caveat'] text-[var(--chalk-white)] mb-3 leading-relaxed">
               E tudo isso com uma interface linda e intuitiva
             </p>
             <p className="text-base sm:text-lg lg:text-xl text-[var(--chalk-dim)] font-['Poppins'] leading-relaxed">

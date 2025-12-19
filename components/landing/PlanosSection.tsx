@@ -95,12 +95,12 @@ export default function PlanosSection() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] text-[var(--chalk-white)] mb-8 relative z-10 leading-tight">
             Escolha seu <span className="text-[var(--accent-yellow)]">plano</span>
           </h2>
-          <p className="text-[44px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
+          <p className="text-[44px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed mb-12">
             Todos os planos garantem acesso à melhor plataforma de estudos para o ENEM
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto pt-8">
+        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto pt-16">
           {planos.map((plano, index) => {
             const cor = cores[plano.cor as keyof typeof cores];
 
@@ -115,7 +115,7 @@ export default function PlanosSection() {
               >
                 {/* Badge "Mais Popular" */}
                 {plano.popular && (
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[var(--accent-yellow)] text-[#1a3328] px-8 py-3 rounded-full font-['Patrick_Hand'] text-base sm:text-lg font-bold shadow-lg whitespace-nowrap z-20">
+                  <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 bg-[var(--accent-yellow)] text-[#1a3328] px-8 py-3 rounded-full font-['Patrick_Hand'] text-base sm:text-lg font-bold shadow-lg whitespace-nowrap z-20">
                     MAIS POPULAR
                   </div>
                 )}
@@ -123,7 +123,7 @@ export default function PlanosSection() {
                 {/* Gradiente de fundo */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${cor.gradient} opacity-50 rounded-lg z-0`} />
 
-                <div className={`relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8 ${plano.popular ? 'pt-10' : ''}`}>
+                <div className={`relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8 ${plano.popular ? 'pt-16' : ''}`}>
                   {/* Nome do plano */}
                   <h3 className={`text-3xl sm:text-4xl lg:text-5xl font-['Patrick_Hand'] ${cor.text} mb-3 text-center leading-tight`}>
                     {plano.nome}

@@ -65,7 +65,7 @@ export default function DiferenciaisSection() {
             Diferenciais que fazem a{' '}
             <span className="text-[var(--accent-yellow)]">diferença</span>
           </h2>
-          <p className="text-[44px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed">
+          <p className="text-[44px] font-['Caveat'] text-[var(--chalk-dim)] max-w-4xl mx-auto relative z-40 leading-relaxed mb-12">
             Recursos que você não encontra em nenhuma outra plataforma
           </p>
         </motion.div>
@@ -93,7 +93,7 @@ export default function DiferenciaisSection() {
                 </div>
 
                 {/* Ícone */}
-                <div className="text-6xl sm:text-7xl mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+                <div className="text-8xl sm:text-9xl lg:text-[10rem] mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
                   {item.icon}
                 </div>
 

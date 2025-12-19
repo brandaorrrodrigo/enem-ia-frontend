@@ -116,13 +116,15 @@ export default function LandingPage() {
           </div>
 
           {/* Copyright */}
-          <div className="pt-8 border-t-2 border-dashed border-[rgba(255,255,255,0.2)] text-center">
-            <p className="text-base sm:text-lg text-[var(--chalk-dim)] font-['Poppins']">
-              &copy; {new Date().getFullYear()} ENEM PRO. Todos os direitos reservados.
-            </p>
-            <p className="text-lg sm:text-xl text-[var(--chalk-dim)] font-['Caveat'] mt-2">
-              Feito com 💚 para estudantes que querem resultados reais
-            </p>
+          <div className="card text-center mt-8 relative">
+            <div className="relative z-10 px-5 sm:px-6 lg:px-8 py-6 sm:py-7 lg:py-8">
+              <p className="text-base sm:text-lg text-[var(--chalk-dim)] font-['Poppins']">
+                &copy; {new Date().getFullYear()} ENEM PRO. Todos os direitos reservados.
+              </p>
+              <p className="text-lg sm:text-xl text-[var(--chalk-dim)] font-['Caveat'] mt-2">
+                Feito com 💚 para estudantes que querem resultados reais
+              </p>
+            </div>
           </div>
           </div>
         </div>

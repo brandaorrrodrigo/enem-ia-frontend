@@ -34,9 +34,11 @@ export default function ENEMHomePage() {
     // Carregar dados do localStorage
     const fpTotal = parseInt(localStorage.getItem('fp_total') || '2450');
     const streakDias = parseInt(localStorage.getItem('streak_dias') || '7');
+    const metaSalva = parseInt(localStorage.getItem('meta_tempo') || '120');
     const planoSalvo = localStorage.getItem('plano_usuario') as 'lite' | 'pro' | 'premium' | null;
     setFp(fpTotal);
     setStreak(streakDias);
+    setMetaTempo(metaSalva);
     if (planoSalvo) setPlanoUsuario(planoSalvo);
 
     // Verificar se houve queda no ranking (logica contextual)
@@ -110,6 +112,8 @@ export default function ENEMHomePage() {
 
   const setarMeta = (minutos: number) => {
     setMetaTempo(minutos);
+    // Salvar no localStorage
+    localStorage.setItem('meta_tempo', String(minutos));
     alert(`Meta definida: ${minutos >= 60 ? Math.floor(minutos / 60) + 'h' + (minutos % 60 > 0 ? ' ' + (minutos % 60) + 'min' : '') : minutos + ' min'} de estudo hoje!`);
   };
 

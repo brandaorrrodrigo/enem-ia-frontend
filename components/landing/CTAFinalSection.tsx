@@ -104,8 +104,7 @@ export default function CTAFinalSection() {
           >
             <Link
               href="/cadastro"
-              className="inline-block btn-yellow px-14 sm:px-18 lg:px-28 py-6 sm:py-7 lg:py-9 min-h-[48px] font-bold rounded-full shadow-2xl transform transition-all hover:scale-110 hover:shadow-[0_15px_50px_rgba(255,215,0,0.6)] whitespace-nowrap"
-              style={{ fontSize: '32px' }}
+              className="inline-block btn-yellow px-8 sm:px-14 lg:px-28 py-5 sm:py-6 lg:py-9 min-h-[48px] font-bold rounded-full shadow-2xl transform transition-all hover:scale-110 hover:shadow-[0_15px_50px_rgba(255,215,0,0.6)] whitespace-nowrap text-lg sm:text-2xl lg:text-3xl"
             >
               COMEÇAR GRÁTIS AGORA
             </Link>

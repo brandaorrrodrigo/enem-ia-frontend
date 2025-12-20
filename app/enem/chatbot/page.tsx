@@ -79,10 +79,36 @@ export default function ChatbotPage() {
     setLoading(true);
 
     try {
-      // Simular resposta da IA
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Mapear disciplina para area da API
+      const areaMap: Record<string, string> = {
+        'Matematica': 'matematica',
+        'Linguagens': 'linguagens',
+        'Ciencias Humanas': 'humanas',
+        'Ciencias da Natureza': 'natureza',
+        'Redacao': 'redacao',
+        'geral': ''
+      };
 
-      const respostaIA = gerarRespostaIA(input, disciplinaSelecionada);
+      // Chamar API real de IA
+      const response = await fetch('/api/enem/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: input,
+          area: areaMap[disciplinaSelecionada] || '',
+          history: messages.filter(m => m.id !== '0').map(m => ({
+            role: m.role,
+            content: m.content
+          }))
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao comunicar com a IA');
+      }
+
+      const data = await response.json();
+      const respostaIA = data.response || 'Desculpe, nao consegui gerar uma resposta.';
 
       const mensagemAssistente: Message = {
         id: (Date.now() + 1).toString(),
@@ -100,179 +126,21 @@ export default function ChatbotPage() {
       });
     } catch (error) {
       console.error('Erro ao enviar mensagem:', error);
+
+      // Adicionar mensagem de erro
+      const mensagemErro: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: 'Desculpe, houve um erro ao processar sua mensagem. Verifique sua conexao e tente novamente.',
+        timestamp: new Date(),
+      };
+
+      setMessages(prev => [...prev, mensagemErro]);
     } finally {
       setLoading(false);
     }
   };
 
-  const gerarRespostaIA = (pergunta: string, disciplina: string): string => {
-    const perguntaLower = pergunta.toLowerCase();
-
-    // Respostas baseadas em palavras-chave
-    if (perguntaLower.includes('bhaskara')) {
-      return `A Formula de Bhaskara e usada para encontrar as raizes de uma equacao do 2o grau (ax² + bx + c = 0).
-
-A formula e: x = (-b ± √(b² - 4ac)) / 2a
-
-Passo a passo:
-1. Identifique os coeficientes a, b e c
-2. Calcule o discriminante: Δ = b² - 4ac
-3. Se Δ > 0: duas raizes reais diferentes
-4. Se Δ = 0: duas raizes reais iguais
-5. Se Δ < 0: nao ha raizes reais
-
-Exemplo: x² - 5x + 6 = 0
-a = 1, b = -5, c = 6
-Δ = 25 - 24 = 1
-x = (5 ± 1) / 2
-x₁ = 3 e x₂ = 2
-
-Quer que eu resolva algum exercicio especifico?`;
-    }
-
-    if (perguntaLower.includes('redacao') || perguntaLower.includes('redação')) {
-      return `Para conseguir nota 1000 na redacao do ENEM, siga estas dicas:
-
-📝 ESTRUTURA:
-- Introducao (1 paragrafo): Apresente o tema e sua tese
-- Desenvolvimento (2 paragrafos): Argumentos com repertorio sociocultural
-- Conclusao (1 paragrafo): Proposta de intervencao detalhada
-
-✅ COMPETENCIAS AVALIADAS:
-1. Dominio da norma culta
-2. Compreensao do tema
-3. Argumentacao
-4. Coesao textual
-5. Proposta de intervencao
-
-💡 DICAS IMPORTANTES:
-- Use conectivos para ligar ideias
-- Cite filosofos, dados, leis (repertorio)
-- Proposta deve ter: AGENTE + ACAO + MODO + EFEITO
-- Respeite os direitos humanos
-- Escreva entre 7 e 30 linhas
-
-Quer que eu explique alguma competencia em detalhes?`;
-    }
-
-    if (perguntaLower.includes('grafico') || perguntaLower.includes('gráfico')) {
-      return `Para interpretar graficos no ENEM, siga estes passos:
-
-📊 ANALISE INICIAL:
-1. Leia o titulo do grafico
-2. Identifique as variaveis nos eixos (X e Y)
-3. Observe as unidades de medida
-4. Leia a legenda (se houver)
-
-📈 TIPOS COMUNS:
-- Grafico de linhas: mostra evolucao/tendencia
-- Grafico de barras: compara quantidades
-- Grafico de pizza: mostra proporcoes (%)
-- Histograma: distribuicao de frequencias
-
-⚠️ ATENCAO:
-- Cuidado com escalas manipuladas
-- Verifique se comeca do zero
-- Observe intervalos no eixo X
-- Relacione com o texto da questao
-
-Quer que eu analise algum tipo especifico de grafico?`;
-    }
-
-    if (perguntaLower.includes('historia') || perguntaLower.includes('história') || perguntaLower.includes('brasil')) {
-      return `Os principais temas de Historia do Brasil no ENEM:
-
-🇧🇷 PERIODO COLONIAL (1500-1822):
-- Ciclos economicos (pau-brasil, acucar, ouro)
-- Escravidao e resistencia (quilombos)
-- Invasoes estrangeiras
-
-🏛️ IMPERIO (1822-1889):
-- Independencia e Primeiro Reinado
-- Periodo Regencial
-- Segundo Reinado e abolicao
-
-🗳️ REPUBLICA:
-- Republica Velha (cafe com leite)
-- Era Vargas (1930-1945)
-- Ditadura Militar (1964-1985)
-- Redemocratizacao
-
-💡 DICA: O ENEM cobra muito a relacao entre passado e presente, especialmente em questoes de cidadania e direitos.
-
-Quer que eu aprofunde em algum periodo?`;
-    }
-
-    if (perguntaLower.includes('regra de tres') || perguntaLower.includes('regra de três')) {
-      return `A Regra de Tres e uma das ferramentas mais uteis no ENEM!
-
-📐 REGRA DE TRES SIMPLES:
-Usada quando temos duas grandezas proporcionais.
-
-Exemplo: Se 3 canetas custam R$ 15, quanto custam 7 canetas?
-3 canetas --- R$ 15
-7 canetas --- x
-
-Grandezas diretamente proporcionais (mais canetas = mais dinheiro)
-3/7 = 15/x
-x = (7 × 15) / 3 = R$ 35
-
-📐 REGRA DE TRES COMPOSTA:
-Quando temos 3 ou mais grandezas.
-
-PASSOS:
-1. Monte a tabela com as grandezas
-2. Identifique se sao direta ou inversamente proporcionais
-3. Multiplique as colunas corretamente
-
-💡 MACETE: Setas na mesma direcao = multiplica reto
-Setas em direcoes opostas = multiplica cruzado
-
-Quer que eu resolva algum exercicio?`;
-    }
-
-    if (perguntaLower.includes('ohm') || perguntaLower.includes('eletricidade')) {
-      return `A Lei de Ohm e fundamental em Fisica!
-
-⚡ LEI DE OHM:
-U = R × i
-
-Onde:
-- U = tensao (Volts - V)
-- R = resistencia (Ohms - Ω)
-- i = corrente (Amperes - A)
-
-📊 OUTRAS FORMULAS IMPORTANTES:
-- Potencia: P = U × i = R × i² = U²/R
-- Energia: E = P × t
-- Resistencia equivalente em serie: Req = R1 + R2 + R3...
-- Resistencia equivalente em paralelo: 1/Req = 1/R1 + 1/R2...
-
-💡 DICAS PARA O ENEM:
-- Circuitos em serie: mesma corrente em todos
-- Circuitos em paralelo: mesma tensao em todos
-- Atencao as unidades (mA, kΩ, etc)
-
-Quer que eu explique circuitos em serie ou paralelo?`;
-    }
-
-    // Resposta padrao
-    return `Boa pergunta sobre "${pergunta}"!
-
-Para te ajudar melhor, preciso de mais detalhes. Voce pode:
-
-1. 📝 Especificar a materia ou tema
-2. 📸 Descrever uma questao especifica
-3. 🎯 Me dizer qual e sua maior dificuldade
-
-Estou aqui para:
-- Explicar conceitos
-- Resolver exercicios passo a passo
-- Dar dicas de estudo
-- Tirar duvidas sobre o ENEM
-
-Como posso te ajudar?`;
-  };
 
   const limparHistorico = () => {
     localStorage.removeItem('chatbot_historico');

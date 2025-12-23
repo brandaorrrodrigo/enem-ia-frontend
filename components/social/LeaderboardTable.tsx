@@ -171,18 +171,19 @@ export default function LeaderboardTable({
               </div>
 
               {/* FP */}
-              <div className="text-right">
+              <div className="text-right flex items-center gap-1 justify-end">
+                <img src="/moedafp1.png" alt="FP" style={{ width: '16px', height: '16px', objectFit: 'contain' }} />
                 <span className="text-yellow-300 font-bold">{user.pontosFP.toLocaleString()}</span>
-                <span className="text-white/50 text-xs ml-1">FP</span>
               </div>
             </div>
 
             {/* Provocacao (para usuarios proximos) */}
             {showProvocations && user.isCurrentUser && index > 0 && (
               <div className="mt-3 pt-3 border-t border-white/10">
-                <p className="text-white/70 text-sm">
+                <p className="text-white/70 text-sm flex items-center gap-1 flex-wrap">
                   ⚡ <span className="text-yellow-300">{ranking[index - 1].nome}</span> esta apenas{' '}
-                  <span className="text-yellow-300 font-bold">
+                  <span className="text-yellow-300 font-bold flex items-center gap-1">
+                    <img src="/moedafp1.png" alt="FP" style={{ width: '14px', height: '14px', objectFit: 'contain' }} />
                     {(ranking[index - 1].pontosFP - user.pontosFP).toLocaleString()} FP
                   </span>{' '}
                   a sua frente! Bora ultrapassar?

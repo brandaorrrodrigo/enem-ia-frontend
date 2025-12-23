@@ -14,17 +14,31 @@ export const metadata: Metadata = {
   keywords: ["ENEM", "simulado", "inteligência artificial", "estudos", "vestibular", "questões ENEM", "gamificação"],
   authors: [{ name: "ENEM Pro" }],
   creator: "ENEM Pro",
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     type: "website",
     locale: "pt_BR",
     title: "ENEM Pro - Sistema Completo de Preparação",
     description: "Plataforma de estudos gamificada para o ENEM com simulados inteligentes e IA.",
     siteName: "ENEM Pro",
+    images: [
+      {
+        url: '/logo.png',
+        width: 1200,
+        height: 1200,
+        alt: 'ENEM Pro Logo',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ENEM Pro - Sistema Completo de Preparação",
     description: "Plataforma de estudos gamificada para o ENEM com simulados inteligentes e IA.",
+    images: ['/logo.png'],
   },
   robots: {
     index: true,

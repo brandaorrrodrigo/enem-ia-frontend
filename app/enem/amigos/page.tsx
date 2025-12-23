@@ -550,7 +550,10 @@ function AmigosContent() {
                         fontSize: '0.875rem',
                         marginTop: '0.25rem'
                       }}>
-                        <span style={{ color: '#fbbf24' }}>{usuario.pontosFP.toLocaleString()} FP</span>
+                        <span style={{ color: '#fbbf24', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                          <img src="/moedafp1.png" alt="FP" style={{ width: '16px', height: '16px', objectFit: 'contain' }} />
+                          {usuario.pontosFP.toLocaleString()} FP
+                        </span>
                         <span style={{ color: 'rgba(255, 255, 255, 0.5)' }}>#{usuario.posicaoRanking}</span>
                         <span style={{ color: '#fb923c' }}>{usuario.streakAtual}🔥</span>
                       </div>

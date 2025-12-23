@@ -2,9 +2,10 @@
 
 import { useState } from 'react';
 
-// Componente FPCoin v2.0 - Moeda de FP estilo giz com animacoes refinadas
+// Componente FPCoin v3.0 - Moeda de FP com imagens reais
 // Uso: <FPCoin /> ou <FPCoin size="sm" /> ou <FPCoin size="lg" />
 // Para animacao de ganho: <FPCoin animate="gain" />
+// Variante: <FPCoin variant={1} /> ou <FPCoin variant={2} />
 
 interface FPCoinProps {
   size?: 'sm' | 'md' | 'lg';
@@ -12,6 +13,7 @@ interface FPCoinProps {
   showValue?: boolean;
   className?: string;
   animate?: 'none' | 'gain' | 'idle';
+  variant?: 1 | 2;
 }
 
 export default function FPCoin({
@@ -19,17 +21,19 @@ export default function FPCoin({
   value,
   showValue = false,
   className = '',
-  animate = 'idle'
+  animate = 'idle',
+  variant = 1
 }: FPCoinProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   const sizes = {
-    sm: { coin: 20, font: 8, valueFontSize: '0.75rem' },
-    md: { coin: 28, font: 11, valueFontSize: '1rem' },
-    lg: { coin: 40, font: 16, valueFontSize: '1.25rem' }
+    sm: { coin: 20, valueFontSize: '0.75rem' },
+    md: { coin: 28, valueFontSize: '1rem' },
+    lg: { coin: 40, valueFontSize: '1.25rem' }
   };
 
   const s = sizes[size];
+  const imageSrc = variant === 1 ? '/moedafp1.png' : '/moedafp2.png';
 
   // Determinar animacao baseado no estado
   const getAnimation = () => {
@@ -48,7 +52,7 @@ export default function FPCoin({
       }}
     >
       <span
-        className="fp-coin"
+        className="fp-coin-container"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         style={{
@@ -57,49 +61,26 @@ export default function FPCoin({
           justifyContent: 'center',
           width: `${s.coin}px`,
           height: `${s.coin}px`,
-          borderRadius: '50%',
-          background: 'linear-gradient(145deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)',
-          boxShadow: isHovered
-            ? `
-              inset 0 2px 4px rgba(255, 255, 255, 0.5),
-              inset 0 -2px 4px rgba(0, 0, 0, 0.2),
-              0 3px 8px rgba(0, 0, 0, 0.35),
-              0 0 16px rgba(251, 191, 36, 0.5)
-            `
-            : `
-              inset 0 2px 4px rgba(255, 255, 255, 0.4),
-              inset 0 -2px 4px rgba(0, 0, 0, 0.2),
-              0 2px 6px rgba(0, 0, 0, 0.3),
-              0 0 10px rgba(251, 191, 36, 0.25)
-            `,
-          border: '2px solid #d97706',
-          fontFamily: "'Patrick Hand', cursive",
-          fontSize: `${s.font}px`,
-          fontWeight: 700,
-          color: '#fff',
-          textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-          animation: getAnimation(),
           position: 'relative',
-          overflow: 'hidden',
           cursor: 'default',
+          animation: getAnimation(),
           // Hover: bounce suave
           transform: isHovered ? 'translateY(-2px) scale(1.05)' : 'translateY(0) scale(1)',
-          transition: 'transform 0.18s ease-out, box-shadow 0.18s ease-out'
+          transition: 'transform 0.18s ease-out, filter 0.18s ease-out',
+          filter: isHovered
+            ? 'drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35)) drop-shadow(0 0 16px rgba(251, 191, 36, 0.5))'
+            : 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(251, 191, 36, 0.25))'
         }}
         title="FP"
       >
-        <span style={{ position: 'relative', zIndex: 2 }}>FP</span>
-        {/* Brilho - apenas no hover */}
-        <span
+        <img
+          src={imageSrc}
+          alt="FP"
           style={{
-            position: 'absolute',
-            top: 0,
-            left: isHovered ? '100%' : '-100%',
             width: '100%',
             height: '100%',
-            background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent)',
-            transition: 'left 0.5s ease-out',
-            pointerEvents: 'none'
+            objectFit: 'contain',
+            display: 'block'
           }}
         />
       </span>
@@ -122,27 +103,15 @@ export default function FPCoin({
         @keyframes fpCoinGain {
           0% {
             transform: scale(1);
-            box-shadow:
-              inset 0 2px 4px rgba(255, 255, 255, 0.4),
-              inset 0 -2px 4px rgba(0, 0, 0, 0.2),
-              0 2px 6px rgba(0, 0, 0, 0.3),
-              0 0 10px rgba(251, 191, 36, 0.25);
+            filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(251, 191, 36, 0.25));
           }
           40% {
             transform: scale(1.2);
-            box-shadow:
-              inset 0 2px 6px rgba(255, 255, 255, 0.6),
-              inset 0 -2px 4px rgba(0, 0, 0, 0.2),
-              0 4px 12px rgba(0, 0, 0, 0.4),
-              0 0 25px rgba(251, 191, 36, 0.7);
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 25px rgba(251, 191, 36, 0.7)) brightness(1.1);
           }
           100% {
             transform: scale(1);
-            box-shadow:
-              inset 0 2px 4px rgba(255, 255, 255, 0.4),
-              inset 0 -2px 4px rgba(0, 0, 0, 0.2),
-              0 2px 6px rgba(0, 0, 0, 0.3),
-              0 0 10px rgba(251, 191, 36, 0.25);
+            filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(251, 191, 36, 0.25));
           }
         }
       `}</style>

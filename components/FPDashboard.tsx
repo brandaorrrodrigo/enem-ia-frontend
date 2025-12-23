@@ -114,19 +114,22 @@ export default function FPDashboard({ userId }: FPDashboardProps) {
       >
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-yellow-400">
+            <div className="text-3xl md:text-4xl font-bold text-yellow-400 flex items-center justify-center gap-2">
+              <img src="/moedafp1.png" alt="FP" style={{ width: '28px', height: '28px', objectFit: 'contain' }} />
               {data.totalFP}
             </div>
             <div className="text-white/70 text-sm">FP Total</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-green-400">
+            <div className="text-2xl md:text-3xl font-bold text-green-400 flex items-center justify-center gap-2">
+              <img src="/moedafp1.png" alt="FP" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />
               +{data.weeklyFP}
             </div>
             <div className="text-white/70 text-sm">Esta Semana</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-blue-400">
+            <div className="text-2xl md:text-3xl font-bold text-blue-400 flex items-center justify-center gap-2">
+              <img src="/moedafp1.png" alt="FP" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />
               +{data.monthlyFP}
             </div>
             <div className="text-white/70 text-sm">Este Mes</div>
@@ -182,8 +185,9 @@ export default function FPDashboard({ userId }: FPDashboardProps) {
             />
             <StatCard
               label="Maior Ganho"
-              value={`+${data.stats.biggestWin}`}
+              value={`+${data.stats.biggestWin} FP`}
               icon="🏆"
+              useCoin={true}
             />
           </div>
 
@@ -303,7 +307,10 @@ export default function FPDashboard({ userId }: FPDashboardProps) {
                         </div>
                       </div>
                     </div>
-                    <div className="text-green-400 font-bold">+{c.fpEarned} FP</div>
+                    <div className="text-green-400 font-bold flex items-center gap-1">
+                      <img src="/moedafp1.png" alt="FP" style={{ width: '16px', height: '16px', objectFit: 'contain' }} />
+                      +{c.fpEarned} FP
+                    </div>
                   </div>
                 ))
               )}
@@ -350,10 +357,11 @@ export default function FPDashboard({ userId }: FPDashboardProps) {
                       </div>
                     </div>
                     <div
-                      className={`font-bold ${
+                      className={`font-bold flex items-center gap-1 ${
                         b.status === 'win' ? 'text-green-400' : 'text-red-400'
                       }`}
                     >
+                      <img src={b.status === 'win' ? '/moedafp1.png' : '/moedafp1.png'} alt="FP" style={{ width: '16px', height: '16px', objectFit: 'contain' }} />
                       {b.fpDelta > 0 ? '+' : ''}{b.fpDelta} FP
                     </div>
                   </div>
@@ -405,7 +413,7 @@ export default function FPDashboard({ userId }: FPDashboardProps) {
 }
 
 // Componente de Card de Estatistica
-function StatCard({ label, value, icon }: { label: string; value: string; icon: string }) {
+function StatCard({ label, value, icon, useCoin }: { label: string; value: string; icon: string; useCoin?: boolean }) {
   return (
     <div
       className="rounded-xl p-4 text-center"
@@ -415,7 +423,10 @@ function StatCard({ label, value, icon }: { label: string; value: string; icon: 
       }}
     >
       <div className="text-2xl mb-1">{icon}</div>
-      <div className="text-xl font-bold text-white">{value}</div>
+      <div className="text-xl font-bold text-white flex items-center justify-center gap-1">
+        {useCoin && <img src="/moedafp1.png" alt="FP" style={{ width: '18px', height: '18px', objectFit: 'contain' }} />}
+        {value}
+      </div>
       <div className="text-white/50 text-xs">{label}</div>
     </div>
   );

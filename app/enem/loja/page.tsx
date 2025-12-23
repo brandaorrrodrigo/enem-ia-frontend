@@ -318,10 +318,7 @@ export default function LojaPage() {
                     border: '2px solid rgba(251, 191, 36, 0.3)'
                   }}
                 >
-                  <Sparkles
-                    className="w-7 h-7"
-                    style={{ color: 'var(--accent-yellow)' }}
-                  />
+                  <img src="/moedafp1.png" alt="FP" style={{ width: '32px', height: '32px', objectFit: 'contain' }} />
                 </div>
                 <div>
                   <p
@@ -543,10 +540,7 @@ export default function LojaPage() {
                   {/* Preco e botao */}
                   <div className="mt-auto space-y-3">
                     <div className="flex items-center justify-center gap-2">
-                      <Sparkles
-                        className="w-5 h-5"
-                        style={{ color: 'var(--accent-yellow)' }}
-                      />
+                      <img src="/moedafp1.png" alt="FP" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />
                       <span
                         className="text-2xl font-bold"
                         style={{

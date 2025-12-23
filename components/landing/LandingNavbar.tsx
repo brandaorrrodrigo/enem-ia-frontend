@@ -32,7 +32,18 @@ export default function LandingNavbar() {
       <div className="container max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-3">
+            <motion.img
+              src="/logo.png"
+              alt="ENEM PRO"
+              whileHover={{ scale: 1.05 }}
+              style={{
+                width: '50px',
+                height: '50px',
+                objectFit: 'contain',
+                filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.3))'
+              }}
+            />
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="text-2xl md:text-3xl font-['Patrick_Hand'] font-bold text-[var(--accent-yellow)]"

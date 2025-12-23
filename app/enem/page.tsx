@@ -122,7 +122,15 @@ export default function ENEMHomePage() {
       {/* Header com Logo e Stats */}
       <div className="stats-bar" style={{ marginBottom: '35px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-          <span style={{ fontSize: '2rem' }}>🎓</span>
+          <img
+            src="/logo.png"
+            alt="ENEM Pro"
+            style={{
+              width: '50px',
+              height: '50px',
+              objectFit: 'contain'
+            }}
+          />
           <div className="logo">ENEM Pro</div>
         </div>
         <div className="user-info">
@@ -131,7 +139,18 @@ export default function ENEMHomePage() {
             <span className="stat-value">{streak}</span>
           </div>
           <div className="stat-item">
-            <span>⭐ FP:</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <img
+                src="/moedafp1.png"
+                alt="FP"
+                style={{
+                  width: '20px',
+                  height: '20px',
+                  objectFit: 'contain'
+                }}
+              />
+              FP:
+            </span>
             <span className="stat-value">{fp.toLocaleString()}</span>
           </div>
           <div className="stat-item">

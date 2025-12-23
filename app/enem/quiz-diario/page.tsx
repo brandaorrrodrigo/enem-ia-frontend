@@ -282,7 +282,10 @@ export default function QuizDiarioPage() {
                 <p className="stat-label">Tempo</p>
               </div>
               <div className="stat-item">
-                <p className="stat-number" style={{ color: 'var(--accent-yellow)' }}>+75</p>
+                <p className="stat-number" style={{ color: 'var(--accent-yellow)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+                  <img src="/moedafp1.png" alt="FP" style={{ width: '20px', height: '20px', objectFit: 'contain' }} />
+                  +75
+                </p>
                 <p className="stat-label">FP Max</p>
               </div>
             </div>
@@ -384,8 +387,13 @@ export default function QuizDiarioPage() {
               }}>
                 <p className="stat-number" style={{
                   fontSize: '2.5rem',
-                  color: 'var(--accent-yellow)'
+                  color: 'var(--accent-yellow)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px'
                 }}>
+                  <img src="/moedafp1.png" alt="FP" style={{ width: '32px', height: '32px', objectFit: 'contain' }} />
                   +{resultado.fpGanho}
                 </p>
                 <p className="stat-label">FP Ganhos</p>
@@ -417,8 +425,9 @@ export default function QuizDiarioPage() {
                 marginBottom: '1.5rem',
                 border: '1px solid rgba(168, 85, 247, 0.3)'
               }}>
-                <p style={{ color: '#c084fc', fontWeight: 'bold' }}>
-                  ⭐ Bonus Perfeito: +25 FP
+                <p style={{ color: '#c084fc', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+                  <img src="/moedafp2.png" alt="FP" style={{ width: '20px', height: '20px', objectFit: 'contain' }} />
+                  Bonus Perfeito: +25 FP
                 </p>
               </div>
             )}

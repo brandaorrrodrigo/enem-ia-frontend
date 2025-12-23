@@ -319,11 +319,17 @@ export default function BatalhaPage() {
                   <FPCoin size="sm" />
                   <span className="text-[#22c55e] font-bold">Vitoria</span>
                 </div>
-                <span className="text-[#fbbf24] font-bold">+100 FP</span>
+                <span className="text-[#fbbf24] font-bold flex items-center gap-1">
+                  <img src="/moedafp1.png" alt="FP" style={{ width: '16px', height: '16px', objectFit: 'contain' }} />
+                  +100 FP
+                </span>
               </div>
               <div className="flex items-center justify-between mt-1">
                 <span className="text-white/50 text-sm">Vitoria Perfeita</span>
-                <span className="text-purple-400 font-bold text-sm">+150 FP</span>
+                <span className="text-purple-400 font-bold text-sm flex items-center gap-1">
+                  <img src="/moedafp2.png" alt="FP" style={{ width: '16px', height: '16px', objectFit: 'contain' }} />
+                  +150 FP
+                </span>
               </div>
             </div>
           </div>

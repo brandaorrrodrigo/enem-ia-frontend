@@ -235,7 +235,15 @@ export default function DesafiosPage() {
             gap: '0.5rem',
             color: 'var(--accent-yellow)'
           }}>
-            <span>🏆</span>
+            <img
+              src="/moedafp1.png"
+              alt="FP"
+              style={{
+                width: '24px',
+                height: '24px',
+                objectFit: 'contain'
+              }}
+            />
             <span style={{ fontWeight: 'bold' }}>+{desafio.recompensaFP} FP</span>
           </div>
 

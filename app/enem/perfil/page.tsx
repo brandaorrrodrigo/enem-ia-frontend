@@ -427,7 +427,8 @@ export default function PerfilPage() {
         {/* Stats Bar */}
         <div className="stats-bar" style={{ marginBottom: '1.5rem' }}>
           <div className="stat-item">
-            <div className="stat-number" style={{ color: 'var(--accent-yellow)' }}>
+            <div className="stat-number" style={{ color: 'var(--accent-yellow)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+              <img src="/moedafp1.png" alt="FP" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />
               {profile.pontosFP.toLocaleString()}
             </div>
             <div className="stat-label">FP Total</div>

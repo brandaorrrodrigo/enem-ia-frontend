@@ -848,7 +848,10 @@ export default function ArenaPage() {
                       <span style={{ fontSize: '1.5rem' }}>{p.avatar}</span>
                       <div style={{ flex: 1 }}>
                         <div style={{ fontWeight: 'bold', color: 'var(--chalk-white)' }}>{p.nome}</div>
-                        <div style={{ fontSize: '0.75rem', color: 'var(--accent-yellow)' }}>{p.fp} FP</div>
+                        <div style={{ fontSize: '0.75rem', color: 'var(--accent-yellow)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                          <img src="/moedafp1.png" alt="FP" style={{ width: '14px', height: '14px', objectFit: 'contain' }} />
+                          {p.fp} FP
+                        </div>
                       </div>
                       {i === 0 && (
                         <span className="badge" style={{ fontSize: '0.75rem' }}>
@@ -873,7 +876,8 @@ export default function ArenaPage() {
               {sala.status === 'finalizado' && (
                 <div className="card" style={{ padding: '1rem', textAlign: 'center', marginBottom: '1rem' }}>
                   <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🏆</div>
-                  <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--accent-yellow)', marginBottom: '0.25rem' }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--accent-yellow)', marginBottom: '0.25rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+                    <img src="/moedafp1.png" alt="FP" style={{ width: '28px', height: '28px', objectFit: 'contain' }} />
                     {fpGanho} FP
                   </div>
                   <div style={{ color: 'var(--chalk-dim)' }}>conquistados!</div>
@@ -943,7 +947,10 @@ export default function ArenaPage() {
             </div>
             <div className="stat-item">
               <div className="stat-label">FP</div>
-              <div className="stat-number" style={{ color: 'var(--accent-yellow)' }}>{fpGanho}</div>
+              <div className="stat-number" style={{ color: 'var(--accent-yellow)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+                <img src="/moedafp1.png" alt="FP" style={{ width: '20px', height: '20px', objectFit: 'contain' }} />
+                {fpGanho}
+              </div>
             </div>
             {streak >= 2 && (
               <div className="stat-item">
@@ -981,7 +988,8 @@ export default function ArenaPage() {
               }}>
                 {questaoAtual.dificuldade.toUpperCase()}
               </span>
-              <span style={{ color: 'var(--accent-yellow)', fontWeight: 'bold' }}>
+              <span style={{ color: 'var(--accent-yellow)', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <img src="/moedafp1.png" alt="FP" style={{ width: '16px', height: '16px', objectFit: 'contain' }} />
                 +{questaoAtual.fpValor} FP
               </span>
             </div>

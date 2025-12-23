@@ -210,18 +210,27 @@ export default function ArenaSemanalPage() {
               <div className="bg-[#ffd700]/10 border border-[#ffd700]/30 rounded-lg p-3 text-center">
                 <span className="text-2xl">🥇</span>
                 <p className="text-[#ffd700] font-bold text-sm">1o Lugar</p>
-                <p className="text-white/60 text-xs">+200 FP</p>
+                <p className="text-white/60 text-xs flex items-center justify-center gap-1">
+                  <img src="/moedafp1.png" alt="FP" style={{ width: '14px', height: '14px', objectFit: 'contain' }} />
+                  +200 FP
+                </p>
                 <p className="text-purple-400 text-xs">👑 Badge</p>
               </div>
               <div className="bg-[#c0c0c0]/10 border border-[#c0c0c0]/30 rounded-lg p-3 text-center">
                 <span className="text-2xl">🥈🥉</span>
                 <p className="text-[#c0c0c0] font-bold text-sm">2o-3o Lugar</p>
-                <p className="text-white/60 text-xs">+50 FP</p>
+                <p className="text-white/60 text-xs flex items-center justify-center gap-1">
+                  <img src="/moedafp1.png" alt="FP" style={{ width: '14px', height: '14px', objectFit: 'contain' }} />
+                  +50 FP
+                </p>
               </div>
               <div className="bg-[#cd7f32]/10 border border-[#cd7f32]/30 rounded-lg p-3 text-center">
                 <span className="text-2xl">🏅</span>
                 <p className="text-[#cd7f32] font-bold text-sm">Top 10</p>
-                <p className="text-white/60 text-xs">+50 FP</p>
+                <p className="text-white/60 text-xs flex items-center justify-center gap-1">
+                  <img src="/moedafp1.png" alt="FP" style={{ width: '14px', height: '14px', objectFit: 'contain' }} />
+                  +50 FP
+                </p>
                 <p className="text-purple-400 text-xs">🏆 Badge</p>
               </div>
             </div>

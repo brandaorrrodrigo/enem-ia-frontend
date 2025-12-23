@@ -135,6 +135,8 @@ function EditorRedacao() {
   const enviarParaCorrecao = async () => {
     if (!redacaoId) {
       await salvarRascunho();
+      // Esperar um pouco para garantir que o ID foi definido
+      await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
     if (redacaoId) {
@@ -145,11 +147,14 @@ function EditorRedacao() {
           body: JSON.stringify({ id: redacaoId, status: 'enviada' })
         });
 
-        alert('📝 Redação enviada para correção! Em breve você receberá seu feedback.');
-        router.push('/enem/redacao');
+        // Redirecionar para página de resultado (que iniciará a correção automaticamente)
+        router.push(`/enem/redacao/resultado/${redacaoId}`);
       } catch (error) {
         console.error('Erro ao enviar redação:', error);
+        alert('❌ Erro ao enviar redação. Tente novamente.');
       }
+    } else {
+      alert('❌ Erro: não foi possível identificar sua redação. Tente salvar manualmente primeiro.');
     }
   };
 

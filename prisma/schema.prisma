@@ -17,11 +17,27 @@ generator client {
 // Questões individuais do ENEM
 model Questao {
   id           Int      @id @default(autoincrement())
-  enunciado    String
+  enunciado    String   @db.Text
   alternativas Json
   correta      Int
 
+  // Metadados da questão
+  banca        String   @default("ENEM")
+  ano          Int
+  dia          Int?
+  numero       Int?
+  disciplina   String?
+  tipo         String   @default("oficial")
+  fonte        String?
+  gabarito     String?  // Letra A-E do gabarito
+
+  createdAt    DateTime @default(now())
+
   simulados    SimuladoQuestao[]
+
+  @@index([ano])
+  @@index([disciplina])
+  @@index([banca])
 }
 
 // Simulado criado por disciplina
@@ -81,6 +97,9 @@ model Usuario {
   // Pagamentos
   subscription      Subscription?
   payments          Payment[]
+
+  // Redação
+  redacoes          RedacaoUsuario[]
 }
 
 // Simulado realizado por usuário
@@ -364,5 +383,58 @@ model Payment {
   usuario              Usuario  @relation(fields: [usuarioId], references: [id])
 
   @@index([usuarioId])
+  @@index([status])
+}
+
+// ----------------------------------------------
+//  REDAÇÃO ENEM - PROPOSTAS E GUIA
+// ----------------------------------------------
+
+// Propostas de Redação do ENEM por ano
+model PropostaRedacao {
+  id                      String   @id @default(cuid())
+  ano                     Int
+  edicao                  String   // "1ª aplicação", "2ª aplicação"
+  tema                    String   @db.Text
+  tipoTexto               String   @default("Dissertativo-argumentativo")
+  requisitos              Json     // Array de strings com os requisitos
+  textosMotivadores       Json     // Array de objetos com textos de apoio
+  orientacoesEspecificas  Json?    // Array de strings com orientações
+  ativo                   Boolean  @default(true)
+  createdAt               DateTime @default(now())
+
+  redacoes                RedacaoUsuario[]
+
+  @@index([ano])
+  @@index([ativo])
+}
+
+// Redações escritas pelos usuários
+model RedacaoUsuario {
+  id              String   @id @default(cuid())
+  usuarioId       String
+  propostaId      String
+  texto           String   @db.Text
+
+  // Avaliação (cada competência vale 0-200)
+  nota1           Int?     // Domínio da norma culta
+  nota2           Int?     // Compreender e desenvolver o tema
+  nota3           Int?     // Selecionar e organizar argumentos
+  nota4           Int?     // Coesão
+  nota5           Int?     // Proposta de intervenção
+  notaFinal       Int?     // Soma das 5 competências (0-1000)
+
+  feedback        String?  @db.Text
+  status          String   @default("rascunho") // rascunho, enviada, avaliada
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  avaliadoEm      DateTime?
+
+  usuario         Usuario         @relation(fields: [usuarioId], references: [id])
+  proposta        PropostaRedacao @relation(fields: [propostaId], references: [id])
+
+  @@index([usuarioId])
+  @@index([propostaId])
   @@index([status])
 }

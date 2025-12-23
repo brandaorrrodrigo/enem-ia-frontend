@@ -25,6 +25,13 @@ export default function FPCoin({
   variant = 1
 }: FPCoinProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [clicks, setClicks] = useState(0);
+
+  const handleClick = () => {
+    setClicks(prev => prev + 1);
+    // Reset após 300ms
+    setTimeout(() => setClicks(0), 300);
+  };
 
   const sizes = {
     sm: { coin: 20, valueFontSize: '0.75rem' },
@@ -55,6 +62,7 @@ export default function FPCoin({
         className="fp-coin-container"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={handleClick}
         style={{
           display: 'inline-flex',
           alignItems: 'center',
@@ -62,16 +70,20 @@ export default function FPCoin({
           width: `${s.coin}px`,
           height: `${s.coin}px`,
           position: 'relative',
-          cursor: 'default',
+          cursor: 'pointer',
           animation: getAnimation(),
-          // Hover: bounce suave
-          transform: isHovered ? 'translateY(-2px) scale(1.05)' : 'translateY(0) scale(1)',
-          transition: 'transform 0.18s ease-out, filter 0.18s ease-out',
+          // Hover: bounce suave + efeito de clique
+          transform: clicks > 0
+            ? 'translateY(-4px) scale(1.15) rotate(10deg)'
+            : isHovered
+            ? 'translateY(-2px) scale(1.08)'
+            : 'translateY(0) scale(1)',
+          transition: 'transform 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55), filter 0.18s ease-out',
           filter: isHovered
-            ? 'drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35)) drop-shadow(0 0 16px rgba(251, 191, 36, 0.5))'
+            ? 'drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 20px rgba(251, 191, 36, 0.7)) brightness(1.1)'
             : 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(251, 191, 36, 0.25))'
         }}
-        title="FP"
+        title="FP - Clique para efeito!"
       >
         <img
           src={imageSrc}

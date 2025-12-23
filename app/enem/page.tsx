@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import ConvitesCard from '@/components/ConvitesCard';
 import SeasonPassCard from '@/components/SeasonPassCard';
+import FPCelebration from '@/components/FPCelebration';
+import FPProgressBar from '@/components/FPProgressBar';
 import { Season, PlayerSeasonProgress, SeasonChallenge, SeasonReward } from '@/lib/season/types';
 
 export default function ENEMHomePage() {
@@ -15,6 +17,7 @@ export default function ENEMHomePage() {
   const [metaTempo, setMetaTempo] = useState(120);
   const [progressoMeta, setProgressoMeta] = useState(45);
   const [planoUsuario, setPlanoUsuario] = useState<'lite' | 'pro' | 'premium'>('pro');
+  const [showCelebration, setShowCelebration] = useState(false);
 
   // Season Pass state
   const [season, setSeason] = useState<Season | null>(null);
@@ -158,6 +161,57 @@ export default function ENEMHomePage() {
             <span className="stat-value">#{rank}</span>
           </div>
         </div>
+      </div>
+
+      {/* FP Celebration Component */}
+      <FPCelebration
+        isActive={showCelebration}
+        onComplete={() => setShowCelebration(false)}
+        coinCount={40}
+        duration={4000}
+      />
+
+      {/* Celebration Trigger Button */}
+      <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+        <button
+          onClick={() => setShowCelebration(true)}
+          disabled={showCelebration}
+          className="btn"
+          style={{
+            background: showCelebration
+              ? 'rgba(255, 255, 255, 0.1)'
+              : 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)',
+            color: showCelebration ? 'var(--chalk-dim)' : 'var(--chalkboard-green)',
+            border: '2px solid var(--accent-yellow)',
+            padding: '12px 24px',
+            fontSize: '1rem',
+            fontWeight: 'bold',
+            boxShadow: showCelebration ? 'none' : '0 4px 20px rgba(251, 191, 36, 0.4)',
+            cursor: showCelebration ? 'not-allowed' : 'pointer',
+            transition: 'all 0.3s ease',
+            fontFamily: "'Patrick Hand', cursive"
+          }}
+        >
+          {showCelebration ? '🎉 Celebrando...' : '🎊 Trigger Celebration!'}
+        </button>
+      </div>
+
+      {/* FP Progress to Next Level */}
+      <div className="card" style={{ marginBottom: '20px' }}>
+        <h2 className="card-title">📊 Progresso para Próximo Nível</h2>
+        <FPProgressBar
+          current={fp}
+          max={3000}
+          label="Nível Ouro → Nível Platina"
+          showValue={true}
+          height={28}
+          animated={true}
+          showSparkles={true}
+          onLevelUp={() => {
+            setShowCelebration(true);
+            alert('🎉 LEVEL UP! Você alcançou o nível Platina!');
+          }}
+        />
       </div>
 
       {/* Notificacao de Queda no Ranking (contextual, fechavel) */}
